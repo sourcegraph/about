@@ -25,8 +25,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                         <ul className="nav flex-column">
                             <li className="nav-item">
                                 <Link href="/use-cases" passHref={true}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
+                                        href="#none"
                                         title="Use cases"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.footer}
@@ -38,8 +38,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                             </li>
                             <li className="nav-item">
                                 <Link href="/case-studies" passHref={true}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
+                                        href="#none"
                                         title="Case studies"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.footer}
@@ -51,8 +51,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                             </li>
                             <li className="nav-item">
                                 <Link href="/pricing" passHref={true}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
+                                        href="#none"
                                         title="Pricing"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.footer}
@@ -64,8 +64,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                             </li>
                             <li className="nav-item">
                                 <Link href="/handouts/Sourcegraph-Overview.pdf" passHref={true}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
+                                        href="#none"
                                         title="Sourcegraph overview"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.footer}
@@ -83,8 +83,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                         <ul className="nav flex-column">
                             <li className="nav-item">
                                 <Link href="/blog" passHref={true}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
+                                        href="#none"
                                         title="Blog"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.footer}
@@ -129,8 +129,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                             </li>
                             <li className="nav-item">
                                 <Link href="/podcast" passHref={true}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
+                                        href="#none"
                                         title="Podcast"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.footer}
@@ -142,8 +142,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                             </li>
                             <li className="nav-item">
                                 <Link href="/dev-tools-quiz" passHref={true}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
+                                        href="#none"
                                         title="Dev tools quiz"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.footer}
@@ -155,8 +155,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                             </li>
                             <li className="nav-item">
                                 <Link href="/community">
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
+                                        href="#none"
                                         title="Community"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.footer}
@@ -182,20 +182,43 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                 <Link href="/contact">Contact</Link>
                             </li>
                             <li className="nav-item">
-                                <a href="https://handbook.sourcegraph.com">Handbook</a>
+                                <a
+                                    href="https://handbook.sourcegraph.com"
+                                    title="Handbook"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.footer}
+                                    data-button-type="cta"
+                                >
+                                    Handbook
+                                </a>
                             </li>
                             <li className="nav-item">
                                 <Link href="/news">News</Link>
                             </li>
                             <li className="nav-item">
-                                <a href="https://handbook.sourcegraph.com/company/strategy">Sourcegraph strategy</a>
+                                <a
+                                    href="https://handbook.sourcegraph.com/company/strategy"
+                                    title="Sourcegraph strategy"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.footer}
+                                    data-button-type="cta"
+                                >
+                                    Sourcegraph strategy
+                                </a>
                             </li>
                         </ul>
                     </div>
 
                     <div className="col-12 col-lg-3 mb-5 order-md-1">
                         <Link href="/" passHref={true}>
-                            <a href="#none" className="row footer__logo ml-1 ">
+                            <a
+                                href="#none"
+                                className="row footer__logo ml-1"
+                                title="Sourcegraph - Universal code search"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.footer}
+                                data-button-type="cta"
+                            >
                                 <span role="img" aria-label="Sourcegraph - Universal code search">
                                     {' '}
                                 </span>
@@ -209,6 +232,10 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                     target="_blank"
                                     rel="nofollow noreferrer"
                                     aria-label="GitHub"
+                                    title="GitHub"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.footer}
+                                    data-button-type="cta"
                                 >
                                     <GithubIcon />
                                 </a>
@@ -219,6 +246,10 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                     target="_blank"
                                     rel="nofollow noreferrer"
                                     aria-label="Twitter"
+                                    title="Twitter"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.footer}
+                                    data-button-type="cta"
                                 >
                                     <TwitterIcon />
                                 </a>
@@ -229,6 +260,10 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                     target="_blank"
                                     rel="nofollow noreferrer"
                                     aria-label="LinkedIn"
+                                    title="LinkedIn"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.footer}
+                                    data-button-type="cta"
                                 >
                                     <LinkedinIcon />
                                 </a>
@@ -239,6 +274,10 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                     target="_blank"
                                     rel="nofollow noreferrer"
                                     aria-label="YouTube"
+                                    title="Youtube"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.footer}
+                                    data-button-type="cta"
                                 >
                                     <YouTubeIcon />
                                 </a>
@@ -249,6 +288,10 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                     target="_blank"
                                     rel="nofollow noreferrer"
                                     aria-label="Twitch"
+                                    title="Twitch"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.footer}
+                                    data-button-type="cta"
                                 >
                                     <TwitchIcon />
                                 </a>
@@ -259,6 +302,10 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                     target="_blank"
                                     rel="nofollow noreferrer"
                                     aria-label="Spotify"
+                                    title="Spotify"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.footer}
+                                    data-button-type="cta"
                                 >
                                     <SpotifyIcon />
                                 </a>
@@ -277,21 +324,42 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                     <li className="nav-item mr-3">&copy; {new Date().getFullYear()} Sourcegraph</li>
                     <li className="nav-item">
                         <Link href="/terms" passHref={true}>
-                            <a href="#none" className="nav-link text-gray-5">
+                            <a
+                                href="#none"
+                                className="nav-link text-gray-5"
+                                title="Terms"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.footer}
+                                data-button-type="cta"
+                            >
                                 Terms
                             </a>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link href="/terms/security" passHref={true}>
-                            <a href="#none" className="nav-link text-gray-5">
+                            <a
+                                href="#none"
+                                className="nav-link text-gray-5"
+                                title="Security"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.footer}
+                                data-button-type="cta"
+                            >
                                 Security
                             </a>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link href="/terms/privacy" passHref={true}>
-                            <a href="#none" className="nav-link text-gray-5">
+                            <a
+                                href="#none"
+                                className="nav-link text-gray-5"
+                                title="Privacy"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.footer}
+                                data-button-type="cta"
+                            >
                                 Privacy
                             </a>
                         </Link>
