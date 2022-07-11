@@ -6,7 +6,7 @@ export const Workshops: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Coreboot + Sourcegraph Workshop',
-            description: '',
+            description: 'Learn how to use Sourcegraph to facilitate your contributions to Coreboot',
         }}
     >
         <GatedResourceLayout
