@@ -11,6 +11,8 @@ import guideMobileBg from './assets/hero/bg-code-aquamarine-mobile.png'
 import guideBg from './assets/hero/bg-code-aquamarine.png'
 import webinarMobileBg from './assets/hero/bg-code-mars-mobile.png'
 import webinarBg from './assets/hero/bg-code-mars.png'
+import workshopMobileBg from './assets/hero/bg-dark-nebulous-gradient-3-mobile.png'
+import workshopBg from './assets/hero/bg-dark-nebulous-gradient-3.png'
 import defaultMobileBg from './assets/hero/bg-code-venus-mobile.png'
 import defaultBg from './assets/hero/bg-code-venus.png'
 
@@ -64,6 +66,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
 
     const isWebinarPg = pathname.split('/').slice(1)[0] === 'webinars'
     const isGuidePg = pathname.split('/').slice(1)[0] === 'guides'
+    const isWorkshopPg = pathname.split('/').slice(1)[0] === 'workshops'
     const hasWatchNowQuery = Object.keys(query).includes('watch-now')
 
     const hubSpotConfig: HubSpotForm | null = {
@@ -90,6 +93,10 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             // Guides
             return isMdOrDown ? guideMobileBg : guideBg
         }
+        if (isWorkshopPg) {
+            // Workshop
+            return isMdOrDown ? workshopMobileBg : workshopBg
+        }
         return isMdOrDown ? defaultMobileBg : defaultBg
     }
 
@@ -99,7 +106,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 // Hero bg differs if Guide vs. Webinar vs. Generic
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ backgroundImage: `url('${heroImage().src}')` }}
-                className={classNames('bg-cover py-6 py-md-7', isGuidePg && 'text-white')}
+                className={classNames('bg-cover py-6 py-md-7', isGuidePg || isWorkshopPg && 'text-white')}
             >
                 <div className="container px-0 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {customer && (

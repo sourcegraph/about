@@ -5,22 +5,28 @@ import { Layout, GatedResourceLayout } from '@components'
 export const Workshops: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph Workshops',
+            title: 'Coreboot + Sourcegraph Workshop',
             description: '',
         }}
     >
         <GatedResourceLayout
-            title="Sourcegraph Workshops"
-            formLabel="Sign up"
+            title="Coreboot + Sourcegraph Workshop"
+            formLabel="Register now or get a recording"
             form={{
                 formId: '3f61adb5-bcdc-4511-83cb-9be6a2e7a947',
             }}
             description={
                 <section className="col-md-6 col-12 pr-lg-6">
-                    <h3 className="font-weight-normal pb-5">
-                        Coreboot + Sourcegraph Workshop:<br/>
-                        July 22 <br/>1pm PT / 2pm MT / 4pm ET / 10pm CET
-                    </h3>
+                    <h4 className="pb-5">
+                        July 26, 8am PT / 11pm ET / 5pm CET
+                    </h4>
+                    <p>Sourcegraph is a code intelligence platform that unlocks developer velocity by helping engineering teams understand, fix, and automate across their entire codebase.</p>
+
+                    <ul>
+                        <li>Understand: Understand your entire codebase. Search and find whatever you need instantly and visualize trends across your entire codebase.</li>
+                        <li>Fix: Secure vulnerabilities and resolve incidents faster.</li>
+                        <li>Automate: Automate key workflows and reduce repetitive work.</li>
+                    </ul>
                     <p>Join us for a workshop on how Sourcegraph can make contributing to Coreboot easier.</p>
                     <p> You'll learn:</p>
                     <ul>
