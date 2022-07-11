@@ -15,4 +15,5 @@ export const buttonLocation = {
     bodyDemo: 3,
     trySourcegraph: 4,
     body: 5,
+    footer: 6,
 }

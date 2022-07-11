@@ -84,7 +84,13 @@ const Hero: FunctionComponent = () => {
 
                 <p className="mt-5">
                     Product or installation questions?{' '}
-                    <a href="https://info.sourcegraph.com/talk-to-a-developer" title="Talk to an expert">
+                    <a
+                        href="https://info.sourcegraph.com/talk-to-a-developer"
+                        title="Talk to an expert"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.hero}
+                        data-button-type="cta"
+                    >
                         Talk to an expert
                     </a>
                     .
@@ -100,17 +106,28 @@ const Hero: FunctionComponent = () => {
                     Over{' '}
                     <Link href="/case-studies" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a className="text-vivid-violet">1.2M engineers</a>
+                        <a
+                            className="text-vivid-violet"
+                            title="1.2 Million engineers"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.hero}
+                            data-button-type="cta"
+                        >
+                            1.2M engineers
+                        </a>
                     </Link>{' '}
                     use Sourcegraph to build software you rely on
                 </h2>
-                <Link
-                    href="/case-studies"
-                    data-button-style={buttonStyle.text}
-                    data-button-location={buttonLocation.hero}
-                    data-button-type="cta"
-                >
-                    Learn how our customers use Sourcegraph
+                <Link href="/case-studies" passHref={true}>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a
+                        title="Learn how our customers use Sourcegraph"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.hero}
+                        data-button-type="cta"
+                    >
+                        Learn how our customers use Sourcegraph
+                    </a>
                 </Link>
             </div>
         </div>

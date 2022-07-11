@@ -112,13 +112,16 @@ const UseCases: FunctionComponent = () => {
                             <div className="text-lg">
                                 <p className="m-0">{useCase.description}</p>
                                 {useCase.link && (
-                                    <Link
-                                        href={useCase.link.href}
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.body}
-                                        data-button-type="cta"
-                                    >
-                                        {useCase.link.text}
+                                    <Link href={useCase.link.href}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a
+                                            title={useCase.link.text}
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            {useCase.link.text}
+                                        </a>
                                     </Link>
                                 )}
                             </div>
@@ -137,8 +140,30 @@ const UseCases: FunctionComponent = () => {
                     Want to use Sourcegraph at your company?
                 </h3>
                 <p className="text-xl">
-                    <Link href="/get-started/self-hosted">Get started</Link> for free with up to 10 teammates or{' '}
-                    <Link href="/demo">request a demo</Link> to learn about our enterprise plan and to see Sourcegraph
+                    <Link href="/get-started/self-hosted" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            title="Get started"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                            >
+                            Get started
+                        </a>
+                    </Link>
+                    {' '}for free with up to 10 teammates or{' '}
+                    <Link href="/demo">
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            title="Request a demo"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                        request a demo
+                        </a>
+                    </Link>
+                    {' '}to learn about our enterprise plan and to see Sourcegraph
                     in your own environment.
                     <Link href="/demo" passHref={true}>
                         <a

@@ -8,6 +8,8 @@ import TwitterIcon from 'mdi-react/TwitterIcon'
 import YouTubeIcon from 'mdi-react/YoutubeIcon'
 import Link from 'next/link'
 
+import { buttonStyle, buttonLocation } from '@data'
+
 interface Props {
     minimal?: boolean
     className?: string
@@ -22,16 +24,56 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                         <h3 className="footer__nav-header text-lg font-weight-bold">About Sourcegraph</h3>
                         <ul className="nav flex-column">
                             <li className="nav-item">
-                                <Link href="/use-cases">Use cases</Link>
+                                <Link href="/use-cases" passHref={true}>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                    <a
+                                        title="Use cases"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.footer}
+                                        data-button-type="cta"
+                                    >
+                                        Use cases
+                                    </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="/case-studies">Case studies</Link>
+                                <Link href="/case-studies" passHref={true}>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                    <a
+                                        title="Case studies"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.footer}
+                                        data-button-type="cta"
+                                    >
+                                        Case studies
+                                    </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="/pricing">Pricing</Link>
+                                <Link href="/pricing" passHref={true}>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                    <a
+                                        title="Pricing"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.footer}
+                                        data-button-type="cta"
+                                    >
+                                        Pricing
+                                    </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="/handouts/Sourcegraph-Overview.pdf">Sourcegraph overview</Link>
+                                <Link href="/handouts/Sourcegraph-Overview.pdf" passHref={true}>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                    <a
+                                        title="Sourcegraph overview"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.footer}
+                                        data-button-type="cta"
+                                    >
+                                        Sourcegraph overview
+                                    </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -40,27 +82,89 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                         <h3 className="footer__nav-header text-lg font-weight-bold">Resources</h3>
                         <ul className="nav flex-column">
                             <li className="nav-item">
-                                <Link href="/blog">Blog</Link>
+                                <Link href="/blog" passHref={true}>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                    <a
+                                        title="Blog"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.footer}
+                                        data-button-type="cta"
+                                    >
+                                        Blog
+                                    </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md">
+                                <a
+                                    href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
+                                    title="Changelog"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.footer}
+                                    data-button-type="cta"
+                                >
                                     Changelog
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a href="https://docs.sourcegraph.com">Documentation</a>
+                                <a
+                                    href="https://docs.sourcegraph.com"
+                                    title="Documentation"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.footer}
+                                    data-button-type="cta"
+                                >
+                                    Documentation
+                                </a>
                             </li>
                             <li className="nav-item">
-                                <a href="https://learn.sourcegraph.com">Learn</a>
+                                <a
+                                    href="https://learn.sourcegraph.com"
+                                    title="Learn"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.footer}
+                                    data-button-type="cta"
+                                >
+                                    Learn
+                                </a>
                             </li>
                             <li className="nav-item">
-                                <Link href="/podcast">Podcast</Link>
+                                <Link href="/podcast" passHref={true}>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                    <a
+                                        title="Podcast"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.footer}
+                                        data-button-type="cta"
+                                    >
+                                        Podcast
+                                    </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="/dev-tools-quiz">Dev tools quiz</Link>
+                                <Link href="/dev-tools-quiz" passHref={true}>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                    <a
+                                        title="Dev tools quiz"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.footer}
+                                        data-button-type="cta"
+                                    >
+                                        Dev tools quiz
+                                    </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="/community">Community</Link>
+                                <Link href="/community">
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                    <a
+                                        title="Community"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.footer}
+                                        data-button-type="cta"
+                                    >
+                                        Community
+                                    </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

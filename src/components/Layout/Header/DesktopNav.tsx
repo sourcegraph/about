@@ -20,11 +20,27 @@ const DesktopNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton }
                 navLink.items.length === 1 ? (
                     navLink.items.map((item: { href: string; title: string }) =>
                         item.href.includes('http') ? (
-                            <Nav.Link key={camelCase(item.title)} href={item.href} target="_blank" rel="noreferrer">
+                            <Nav.Link
+                                key={camelCase(item.title)}
+                                href={item.href}
+                                target="_blank"
+                                rel="noreferrer"
+                                title={item.title}
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.nav}
+                                data-button-type="cta"
+                            >
                                 {item.title}
                             </Nav.Link>
                         ) : (
-                            <Nav.Link key={camelCase(item.title)} href={item.href}>
+                            <Nav.Link
+                                key={camelCase(item.title)}
+                                href={item.href}
+                                title={item.title}
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.nav}
+                                data-button-type="cta"
+                            >
                                 {item.title}
                             </Nav.Link>
                         )
@@ -38,11 +54,22 @@ const DesktopNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton }
                                     href={item.href}
                                     target="_blank"
                                     rel="noreferrer"
+                                    title={item.title}
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.nav}
+                                    data-button-type="cta"
                                 >
                                     {item.title}
                                 </NavDropdown.Item>
                             ) : (
-                                <NavDropdown.Item key={camelCase(item.title)} href={item.href}>
+                                <NavDropdown.Item
+                                    key={camelCase(item.title)}
+                                    href={item.href}
+                                    title={item.title}
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.nav}
+                                    data-button-type="cta"
+                                >
                                     {item.title}
                                 </NavDropdown.Item>
                             )
