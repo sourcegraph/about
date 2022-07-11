@@ -92,7 +92,8 @@ export const CodeSearchPage: FunctionComponent = () => (
                                 data-button-type="cta"
                             >
                                 extensions
-                            </a>.
+                            </a>
+                            .
                         </li>
                     </ul>
                 </div>

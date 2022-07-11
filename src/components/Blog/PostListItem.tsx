@@ -23,7 +23,9 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
             <h1 className={titleClassName}>
                 {renderTitleAsLink === true ? (
                     <Link href={`/${blogType}/${slugPath}`} passHref={true}>
-                        <a className={`d-block ${titleLinkClassName}`} href="#none" title={frontmatter.title}>{frontmatter.title}</a>
+                        <a className={`d-block ${titleLinkClassName}`} href="#none" title={frontmatter.title}>
+                            {frontmatter.title}
+                        </a>
                     </Link>
                 ) : (
                     frontmatter.title
@@ -70,7 +72,9 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                         )}
                         <div className="text-center text-sm-left">
                             <Link href={`/${blogType}/${slugPath}`} passHref={true}>
-                                <a className="font-weight-bold" href="#none" title="Read more">Read more</a>
+                                <a className="font-weight-bold" href="#none" title="Read more">
+                                    Read more
+                                </a>
                             </Link>
                         </div>
                     </div>

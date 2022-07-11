@@ -121,7 +121,8 @@ export const Community: FunctionComponent = () => (
                                         data-button-type="cta"
                                     >
                                         GopherCon 2022
-                                    </a> - 10/6 - 10/8
+                                    </a>{' '}
+                                    - 10/6 - 10/8
                                 </li>
                             </ul>
                         </div>
@@ -141,8 +142,8 @@ export const Community: FunctionComponent = () => (
                                     title="YouTube Channel"
                                 >
                                     YouTube channel
-                                </a> and subscribe to
-                                keep up with new episodes.
+                                </a>{' '}
+                                and subscribe to keep up with new episodes.
                             </p>
                         </div>
                     </div>
@@ -181,7 +182,8 @@ export const Community: FunctionComponent = () => (
                                     title="Spotify"
                                 >
                                     Spotify
-                                </a>&nbsp;
+                                </a>
+                                &nbsp;
                                 <a
                                     href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw=="
                                     data-button-style={buttonStyle.text}

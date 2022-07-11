@@ -78,7 +78,9 @@ export const ReleasePost: FunctionComponent<Props> = ({
                 <h1 className={titleClassName}>
                     {renderTitleAsLink === true ? (
                         <Link href={url} passHref={true}>
-                            <a className={`d-block ${titleLinkClassName}`} href="#none">{post.frontmatter.title}</a>
+                            <a className={`d-block ${titleLinkClassName}`} href="#none">
+                                {post.frontmatter.title}
+                            </a>
                         </Link>
                     ) : (
                         post.frontmatter.title

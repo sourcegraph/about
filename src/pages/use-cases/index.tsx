@@ -393,7 +393,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
-                                >
+                            >
                                 Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </Link>

@@ -46,9 +46,9 @@ const items = [
                                 Code Search
                             </a>
                         </Link>
-                        , you can find vulnerabilities across your
-                        repositories in a single search. Relieve your engineers from manual work, get a headstart on
-                        remediation, and act confidently knowing that you've located all affected code.
+                        , you can find vulnerabilities across your repositories in a single search. Relieve your
+                        engineers from manual work, get a headstart on remediation, and act confidently knowing that
+                        you've located all affected code.
                     </p>
                 }
             />
@@ -75,9 +75,8 @@ const items = [
                                 Batch Changes
                             </a>
                         </Link>
-                        , you can automate the merging and deployment of
-                        fixes. Move faster than your competitors, free up your engineers, and return your codebase to a
-                        healthy state.
+                        , you can automate the merging and deployment of fixes. Move faster than your competitors, free
+                        up your engineers, and return your codebase to a healthy state.
                     </p>
                 }
             />
@@ -100,9 +99,9 @@ const items = [
                         >
                             code monitoring
                         </a>
-                        , get alerts whenever
-                        specified patterns enter your codebase. Monitors ensure new occurrences are detected immediately
-                        and allow you to catch them before merging—and before customers have reason to worry.
+                        , get alerts whenever specified patterns enter your codebase. Monitors ensure new occurrences
+                        are detected immediately and allow you to catch them before merging—and before customers have
+                        reason to worry.
                     </p>
                 }
             />
@@ -129,8 +128,8 @@ const items = [
                                 Code Insights
                             </a>
                         </Link>
-                        , you can measure the progress of applying
-                        longer-term fixes for vulnerabilities and incidents across all your code.
+                        , you can measure the progress of applying longer-term fixes for vulnerabilities and incidents
+                        across all your code.
                     </p>
                 }
             />

@@ -10,7 +10,9 @@ export const BlogHeader: FunctionComponent<Props> = ({ title, belowTitle, baseUr
     <div>
         <h1 className="display-4 font-weight-bold mt-3">
             <Link href={baseUrl} passHref={true}>
-                <a className="text-body" href="#none">{title}</a>
+                <a className="text-body" href="#none">
+                    {title}
+                </a>
             </Link>
         </h1>
 

@@ -30,7 +30,7 @@ export const TrySourcegraph: FunctionComponent<Props> = ({ demoFormURL = '/demo'
                             data-button-style={buttonStyle.outline}
                             data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
-                            >
+                        >
                             Schedule a demo
                         </a>
                     </Link>

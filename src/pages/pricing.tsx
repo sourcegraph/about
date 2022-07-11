@@ -211,7 +211,7 @@ const PricingPage: FunctionComponent = () => (
                         <p>
                             Sourcegraph supports the work of educational organizations and nonprofits.
                             <br />
-                            Please {' '}
+                            Please{' '}
                             <Link href="/demo">
                                 <a
                                     href="#none"
@@ -222,8 +222,8 @@ const PricingPage: FunctionComponent = () => (
                                 >
                                     contact us
                                 </a>
-                            </Link>
-                            {' '}about discounts for your development teams.
+                            </Link>{' '}
+                            about discounts for your development teams.
                         </p>
                     </div>
 

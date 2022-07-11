@@ -291,7 +291,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                        Read the Cloudflare case study
+                                    Read the Cloudflare case study
                                 </a>
                             </Link>
                             <img

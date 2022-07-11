@@ -152,7 +152,10 @@ const Support: FunctionComponent = () => (
                                     href="/contact/request-info/?form_submission_source=support-enterprise"
                                     passHref={true}
                                 >
-                                    <a className="font-size-base btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex" href="#none">
+                                    <a
+                                        className="font-size-base btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex"
+                                        href="#none"
+                                    >
                                         Contact us
                                     </a>
                                 </Link>

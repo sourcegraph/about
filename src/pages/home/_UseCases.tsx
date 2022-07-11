@@ -147,11 +147,11 @@ const UseCases: FunctionComponent = () => {
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.trySourcegraph}
                             data-button-type="cta"
-                            >
+                        >
                             Get started
                         </a>
-                    </Link>
-                    {' '}for free with up to 10 teammates or{' '}
+                    </Link>{' '}
+                    for free with up to 10 teammates or{' '}
                     <Link href="/demo">
                         <a
                             href="#none"
@@ -160,11 +160,10 @@ const UseCases: FunctionComponent = () => {
                             data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
                         >
-                        request a demo
+                            request a demo
                         </a>
-                    </Link>
-                    {' '}to learn about our enterprise plan and to see Sourcegraph
-                    in your own environment.
+                    </Link>{' '}
+                    to learn about our enterprise plan and to see Sourcegraph in your own environment.
                     <Link href="/demo" passHref={true}>
                         <a
                             className="btn btn-primary mt-5 d-block d-sm-inline-block"
