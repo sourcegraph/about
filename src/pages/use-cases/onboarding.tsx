@@ -311,7 +311,14 @@ const UseCasePage: FunctionComponent = () => (
                             </a>
                         </Link>
                         <Link href="/use-cases" passHref={true}>
-                            <a className="d-flex justify-content-center mt-4 font-weight-bold" href="#none" title="Explore other use cases">
+                            <a
+                                className="d-flex justify-content-center mt-4 font-weight-bold"
+                                href="#none"
+                                title="Explore other use cases"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 Explore other use cases
                             </a>
                         </Link>

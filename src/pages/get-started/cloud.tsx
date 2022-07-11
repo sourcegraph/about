@@ -4,6 +4,7 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
 import { Layout, BackButton } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 import { useQueryString } from '@hooks'
 
 import { DesignedForTitle } from '.'
@@ -61,7 +62,14 @@ export const CloudPage: FunctionComponent = () => {
                             >
                                 <h3 className="mb-3">Search open source code</h3>
                                 <p className="mb-5">No account required.</p>
-                                <a href="https://sourcegraph.com/search" className="btn btn-primary">
+                                <a
+                                    href="https://sourcegraph.com/search"
+                                    className="btn btn-primary"
+                                    title="Start searching now"
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
                                     Start searching now <ArrowRightIcon />
                                 </a>
                             </div>
@@ -73,6 +81,9 @@ export const CloudPage: FunctionComponent = () => {
                                     <a
                                         href="https://sourcegraph.com/.auth/github/login?pc=https%3A%2F%2Fgithub.com%2F%3A%3Ae917b2b7fa9040e1edd4&redirect=%2Fwelcome"
                                         className="btn bg-black text-white w-100 text-center mt-3"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
                                     >
                                         <img
                                             src="/external-logos/GitHub-Mark-Light-32px.png"
@@ -87,6 +98,9 @@ export const CloudPage: FunctionComponent = () => {
                                     <a
                                         href="https://sourcegraph.com/.auth/gitlab/login?pc=https%3A%2F%2Fgitlab.com%2F%3A%3A013395a61a639f4c3eb3668b89c96039637a86ebb6831f1e141627df3d55384d&redirect=%2Fwelcome"
                                         className={`btn text-white mt-3 w-100 ${styles.gitLab}`}
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
                                     >
                                         <img
                                             src="/external-logos/gitlab-mark.svg"
@@ -105,6 +119,9 @@ export const CloudPage: FunctionComponent = () => {
                                         href="https://sourcegraph.com/sign-up?_ga=2.155066808.1628120401.1642532503-600077800.1642532503&showEmail=true"
                                         title="continue with email"
                                         className="text-reset text-black underline mt-3"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
                                     >
                                         continue with email
                                     </a>
@@ -114,15 +131,27 @@ export const CloudPage: FunctionComponent = () => {
                                     <small>
                                         By registering, you agree to our{' '}
                                         <Link href="/terms" passHref={true}>
-                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                            <a className="text-reset text-black text-decoration-underline">
+                                            <a
+                                                className="text-reset text-black text-decoration-underline"
+                                                href="#none"
+                                                data-button-style={buttonStyle.text}
+                                                data-button-location={buttonLocation.body}
+                                                data-button-type="cta"
+                                            >
                                                 Terms of Service
                                             </a>
                                         </Link>{' '}
                                         and{' '}
                                         <Link href="/privacy" passHref={true}>
-                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                            <a className="text-reset text-black underline">Privacy Policy</a>
+                                            <a
+                                                className="text-reset text-black underline"
+                                                href="#none"
+                                                data-button-style={buttonStyle.text}
+                                                data-button-location={buttonLocation.body}
+                                                data-button-type="cta"
+                                            >
+                                                Privacy Policy
+                                            </a>
                                         </Link>
                                         .
                                     </small>
@@ -136,6 +165,9 @@ export const CloudPage: FunctionComponent = () => {
                                         href="https://sourcegraph.com/sign-in"
                                         title="Search public code with Sourcegraph Cloud"
                                         className="text-reset text-black underline"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
                                     >
                                         Log in
                                     </a>

@@ -193,6 +193,10 @@ const PricingPage: FunctionComponent = () => (
                                         <a
                                             className="btn btn-outline-primary col-lg-7 col-10 mx-auto my-0"
                                             href="https://info.sourcegraph.com/team-pricing"
+                                            title="Contact us"
+                                            data-button-style={buttonStyle.outline}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
                                         >
                                             Contact us
                                         </a>
@@ -207,7 +211,19 @@ const PricingPage: FunctionComponent = () => (
                         <p>
                             Sourcegraph supports the work of educational organizations and nonprofits.
                             <br />
-                            Please <Link href="/demo">contact us</Link> about discounts for your development teams.
+                            Please {' '}
+                            <Link href="/demo">
+                                <a
+                                    href="#none"
+                                    title="Contact us"
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    contact us
+                                </a>
+                            </Link>
+                            {' '}about discounts for your development teams.
                         </p>
                     </div>
 
@@ -242,9 +258,9 @@ const PricingPage: FunctionComponent = () => (
                     </div>
                     <div className="col-md-6 pt-3 align-self-center text-center">
                         <Link href="/get-started/self-hosted" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-primary mx-2 mb-3"
+                                href="#none"
                                 title="Try Sourcegraph now"
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.trySourcegraph}

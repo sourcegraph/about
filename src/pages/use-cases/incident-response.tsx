@@ -283,7 +283,16 @@ const IncidentResponsePage: FunctionComponent = () => (
                                 href="/case-studies/cloudflare-accelerates-debugging-and-improves-security"
                                 passHref={true}
                             >
-                                <a className="font-weight-bold" href="#none" title="Read the Cloudflare case study">Read the Cloudflare case study</a>
+                                <a
+                                    className="font-weight-bold"
+                                    href="#none"
+                                    title="Read the Cloudflare case study"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                        Read the Cloudflare case study
+                                </a>
                             </Link>
                             <img
                                 src="/external-logos/cloudflare-logo.svg"
@@ -330,7 +339,14 @@ const IncidentResponsePage: FunctionComponent = () => (
                             </a>
                         </Link>
                         <Link href="/use-cases" passHref={true}>
-                            <a className="d-flex justify-content-center mt-4 font-weight-bold" href="#none" title="Explore other use cases">
+                            <a
+                                className="d-flex justify-content-center mt-4 font-weight-bold"
+                                href="#none"
+                                title="Explore other use cases"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 Explore other use cases
                             </a>
                         </Link>

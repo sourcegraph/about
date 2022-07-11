@@ -42,13 +42,28 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
         )}
         {link &&
             (link.href.includes('http') ? (
-                <a href={link.href} target="_blank" rel="nofollow noreferrer">
+                <a
+                    href={link.href}
+                    target="_blank"
+                    rel="nofollow noreferrer"
+                    title={link.text}
+                    data-button-style={buttonStyle.textWithArrow}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                >
                     {link.text}
                     <ArrowRightIcon className="icon-inline ml-1" />
                 </a>
             ) : (
                 <Link href={link.href} passHref={true}>
-                    <a className="d-flex justify-content-center mt-3" href="#none">
+                    <a
+                        className="d-flex justify-content-center mt-3"
+                        href="#none"
+                        title={link.text}
+                        data-button-style={buttonStyle.textWithArrow}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
                         <p className="font-weight-bold">{link.text}</p>
                         <ArrowRightIcon className="icon-inline ml-1" />
                     </a>
@@ -109,7 +124,15 @@ export const BlockquoteWithBorder: FunctionComponent<{
             ))}
         {link &&
             (link?.href.includes('http') ? (
-                <a href={link.href} target="_blank" rel="nofollow noreferrer">
+                <a
+                    href={link.href}
+                    target="_blank"
+                    rel="nofollow noreferrer"
+                    title={link.text}
+                    data-button-style={buttonStyle.textWithArrow}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                >
                     {link.text}
                     <ArrowRightIcon className="icon-inline ml-1" />
                 </a>

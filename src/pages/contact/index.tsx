@@ -8,6 +8,7 @@ import TwitterIcon from 'mdi-react/TwitterIcon'
 import Link from 'next/link'
 
 import { Layout, ContentSection, ContentPage } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const title = 'Sourcegraph - Contact Sourcegraph'
 const description = 'Contact a real human being on our team.'
@@ -59,8 +60,16 @@ const ContactHome: FunctionComponent = () => (
                             <div className="card-body">
                                 <p className="card-text">For information about products and purchasing:</p>
                                 <Link href="/demo" passHref={true}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a className="btn btn-outline-primary stretched-link">Contact sales</a>
+                                    <a
+                                        className="btn btn-outline-primary stretched-link"
+                                        href="#none"
+                                        title="Contact sales"
+                                        data-button-style={buttonStyle.outline}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
+                                        Contact sales
+                                    </a>
                                 </Link>
                             </div>
                         </div>
@@ -73,6 +82,10 @@ const ContactHome: FunctionComponent = () => (
                                 <a
                                     href="https://boards.greenhouse.io/sourcegraph91"
                                     className="btn btn-outline-primary stretched-link"
+                                    title="See career opportunities"
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     See career opportunities
                                 </a>

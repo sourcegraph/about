@@ -29,10 +29,10 @@ export const Community: FunctionComponent = () => (
                         </p>
                         <a
                             className="btn btn-primary"
+                            href="https://discord.gg/rDPqBejz93"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.hero}
                             data-button-type="cta"
-                            href="https://discord.gg/rDPqBejz93"
                             title="Join our Discord"
                         >
                             Join our Discord
@@ -84,7 +84,14 @@ export const Community: FunctionComponent = () => (
                         </li>
                         <li className="mt-2">Share the road less traveled so that everyone can learn</li>
                     </ul>
-                    <a className="btn btn-primary" href="https://discord.gg/rDPqBejz93" title="Join us on Discord">
+                    <a
+                        className="btn btn-primary"
+                        href="https://discord.gg/rDPqBejz93"
+                        title="Join us on Discord"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.hero}
+                        data-button-type="cta"
+                    >
                         Join us on Discord
                     </a>
                 </div>
@@ -106,7 +113,15 @@ export const Community: FunctionComponent = () => (
                             </p>
                             <ul>
                                 <li>
-                                    <a href="https://www.gophercon.com/">GopherCon 2022</a> - 10/6 - 10/8
+                                    <a
+                                        href="https://www.gophercon.com/"
+                                        title="GopherCon 2022"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
+                                        GopherCon 2022
+                                    </a> - 10/6 - 10/8
                                 </li>
                             </ul>
                         </div>
@@ -118,7 +133,15 @@ export const Community: FunctionComponent = () => (
                             <YouTube title="Dev Tool Time" id="QNYoOCLocAI" />
                             <p className="pt-3">
                                 Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
-                                <a href="https://srcgr.ph/dev-tool-time-playlist">YouTube channel</a> and subscribe to
+                                <a
+                                    href="https://srcgr.ph/dev-tool-time-playlist"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                    title="YouTube Channel"
+                                >
+                                    YouTube channel
+                                </a> and subscribe to
                                 keep up with new episodes.
                             </p>
                         </div>
@@ -130,20 +153,54 @@ export const Community: FunctionComponent = () => (
                             <YouTube title="Sourcegraph Podcast" id="VgVDMd2VlaU" />
                             <p className="pt-3">
                                 <strong>Subscribe:</strong>&nbsp;
-                                <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA">
+                                <a
+                                    href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                    title="YouTube"
+                                >
                                     YouTube
                                 </a>
                                 &nbsp;
-                                <a href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009">
+                                <a
+                                    href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                    title="Apple"
+                                >
                                     Apple
                                 </a>
                                 &nbsp;
-                                <a href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6">Spotify</a>&nbsp;
-                                <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw==">
+                                <a
+                                    href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                    title="Spotify"
+                                >
+                                    Spotify
+                                </a>&nbsp;
+                                <a
+                                    href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw=="
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                    title="Google"
+                                >
                                     Google
                                 </a>
                                 &nbsp;
-                                <a href="https://feeds.buzzsprout.com/1097978.rss">RSS</a>
+                                <a
+                                    href="https://feeds.buzzsprout.com/1097978.rss"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                    title="RSS"
+                                >
+                                    RSS
+                                </a>
                             </p>
                         </div>
                     </div>
