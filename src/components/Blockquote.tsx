@@ -24,7 +24,7 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
     link?: Link
 }> = ({ quote, header, author, logo, link }) => (
     <>
-        {header && <h1 className="font-weight-bold">{header}</h1>}
+        {header && <h2 className="font-weight-bold">{header}</h2>}
         <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
             <h2 className="font-weight-bold">&ldquo;{quote}&rdquo;</h2>
             {author && <figcaption className="pt-3 text-muted text-center">&mdash; {author}</figcaption>}
@@ -77,7 +77,7 @@ export const BlockquoteWithLogoTop: FunctionComponent<{
         )}
         <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
             <h2 className="display-3 font-weight-bold">&ldquo;{quote}&rdquo;</h2>
-            {author && <figcaption className="pt-3 text-muted text-center">&mdash; {author}</figcaption>}
+            {author && <figcaption className="pt-3 text-gray-5 text-center">&mdash; {author}</figcaption>}
         </blockquote>
     </>
 )

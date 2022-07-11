@@ -164,26 +164,22 @@ export const PricingPlan: FunctionComponent<Props> = ({
     buttonHref,
 }) => {
     const button = (
-        <a
-            className={`pricing-plan__button btn ${buttonClassName} w-100 mx-auto my-0 justify-content-center text-center d-flex`}
-            href={buttonHref}
-            onClick={buttonOnClick}
-        >
+        <a className={`btn ${buttonClassName} w-50 min-w-250`} href={buttonHref} onClick={buttonOnClick}>
             {buttonLabel}
         </a>
     )
 
     return (
-        <div className={`pricing-plan card ${className}`}>
-            <h2 className="card-title mt-3 mb-1 text-center pricing-plan__title">{name}</h2>
-            <div className="card-body pt-3 text-center d-flex flex-column align-items-center">
+        <div className={`h-100 card ${className}`}>
+            <h2 className="mt-3 mb-1 text-center display-2 font-weight-bolder">{name}</h2>
+            <div className="py-3 text-center d-flex flex-column align-items-center">
                 {button}
-                <div className="mt-4 mb-2 pb-2 pricing-plan__price text-muted">{price}</div>
+                <div className="mt-4 mb-2 pb-2 text-xl text-muted">{price}</div>
                 {planProperties}
             </div>
-            <ol className="pricing-plan__features list-group list-group-flush py-3">
+            <ol className="list-group list-group-flush py-3 px-6">
                 {!isFree ? (
-                    <li className="pricing-plan-feature list-group-item bg-transparent border-0 px-0">
+                    <li className="list-group-item bg-transparent text-xl border-0 px-0">
                         Everything in the Free tier, plus:
                     </li>
                 ) : null}
@@ -193,7 +189,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
                             info={FEATURE_INFO[feature]}
                             value={features[feature]}
                             tag="li"
-                            className="list-group-item bg-transparent border-0 px-0"
+                            className="list-group-item bg-transparent text-xl border-0 px-0"
                         />
                     </div>
                 ))}

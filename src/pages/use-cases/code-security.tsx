@@ -243,7 +243,7 @@ const UseCasePage: FunctionComponent = () => (
                                         </Link>
                                     </div>
                                     <div className="ml-md-3">
-                                        <Link href="/get-started" passHref={true}>
+                                        <Link href="/get-started/self-hosted" passHref={true}>
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
                                                 className="btn btn-outline-primary w-100 max-w-350"
@@ -272,7 +272,7 @@ const UseCasePage: FunctionComponent = () => (
             <ContentSection className="py-7">
                 <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h2 className="mb-4 display-3 font-weight-bold mw-400">
+                        <h2 className="mb-4 display-3 font-weight-bold max-w-400">
                             Identifying & resolving security vulnerabilities is painful
                         </h2>
                         <p>
@@ -380,7 +380,7 @@ const UseCasePage: FunctionComponent = () => (
 
         <ContentSection>
             <div className="d-flex justify-content-center mb-lg-6">
-                <Link href="/get-started" passHref={true}>
+                <Link href="/get-started/self-hosted" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         className="btn btn-primary"

@@ -32,7 +32,7 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
         belowTitle: (
             <>
                 <p className="mb-1">Conversations, stories, and insights from dev tool creators</p>
-                <PodcastSubscribeLinks className="text-muted" linkClassName="mx-1" />
+                <PodcastSubscribeLinks linkClassName="mx-1" />
             </>
         ),
         baseUrl: '/podcast',

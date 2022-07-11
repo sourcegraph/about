@@ -45,7 +45,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                                     Request a demo
                                 </a>
                             </Link>
-                            <Link href="/get-started" passHref={true}>
+                            <Link href="/get-started/self-hosted" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
                                     className="btn btn-outline-primary w-md-100"

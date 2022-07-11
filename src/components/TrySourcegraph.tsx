@@ -20,14 +20,14 @@ export const TrySourcegraph: FunctionComponent<Props> = ({ demoFormURL = '/demo'
                 </p>
             </div>
             <div className="col-md-6 pt-3 align-self-center text-center">
-                {demoFormURL !== '' && (
+                {demoFormURL && (
                     <Link href={demoFormURL} passHref={true}>
-                        <a href="#none" className="btn btn-outline-secondary mx-2 mb-3" title="Schedule a demo">
+                        <a href="#none" className="btn btn-outline-gray-5 mx-2 mb-3" title="Schedule a demo">
                             Schedule a demo
                         </a>
                     </Link>
                 )}
-                <Link href="/get-started" passHref={true}>
+                <Link href="/get-started/self-hosted" passHref={true}>
                     <a href="#none" className="btn btn-primary mx-2 mb-3" title="Try Sourcegraph now">
                         Try Sourcegraph now
                     </a>

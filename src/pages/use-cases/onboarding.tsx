@@ -195,7 +195,7 @@ const UseCasePage: FunctionComponent = () => (
                                         </Link>
                                     </div>
                                     <div className="ml-md-3">
-                                        <Link href="/get-started" passHref={true}>
+                                        <Link href="/get-started/self-hosted" passHref={true}>
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
                                                 className="btn btn-outline-primary w-100 max-w-350"
@@ -224,7 +224,7 @@ const UseCasePage: FunctionComponent = () => (
             <ContentSection className="py-7">
                 <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h2 className="mb-4 mw-400 display-3 font-weight-bold">
+                        <h2 className="mb-4 max-w-400 display-3 font-weight-bold">
                             Developer onboarding is slow and expensive
                         </h2>
                         <p>
@@ -341,7 +341,7 @@ const UseCasePage: FunctionComponent = () => (
                 <h2 className="w-100 display-3 font-weight-bold mb-4">
                     Better onboarding is only a few searches away.
                 </h2>
-                <Link href="/get-started" passHref={true}>
+                <Link href="/get-started/self-hosted" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         className="btn btn-primary"
