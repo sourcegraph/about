@@ -83,8 +83,16 @@ export const CodeSearchPage: FunctionComponent = () => (
                         <li className="mt-3">
                             <strong>Extensible.</strong> Connect all your other tools to get things like test coverage,
                             1-click open file in editor, custom highlighting, and information from your other favorite
-                            services all in one place with
-                            <a href="https://sourcegraph.com/extensions?category=All"> extensions</a>.
+                            services all in one place with{' '}
+                            <a
+                                href="https://sourcegraph.com/extensions?category=All"
+                                title="extensions"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                extensions
+                            </a>.
                         </li>
                     </ul>
                 </div>
@@ -168,7 +176,12 @@ export const CodeSearchPage: FunctionComponent = () => (
                     <div className="mt-4">
                         <Link href="/case-studies/criteo-tackles-big-code" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a>
+                            <a
+                                title="Criteo Tackles Big Code"
+                                data-button-style={buttonStyle.textWithArrow}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 Criteo Tackles Big Code <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </Link>
@@ -198,6 +211,10 @@ export const CodeSearchPage: FunctionComponent = () => (
                                 target="_blank"
                                 rel="noreferrer"
                                 href="https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/+f:dockerfile+apt-get%7Capk&patternType=regexp"
+                                title="installing packages in a Dockerfile"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
                             >
                                 installing packages in a Dockerfile
                             </a>

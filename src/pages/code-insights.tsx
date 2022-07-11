@@ -489,6 +489,9 @@ const CodeInsightsPage: FunctionComponent = () => {
                             className="btn btn-link px-0 py-4 col-7 docs-cta font-weight-bold"
                             href="https://docs.sourcegraph.com/code_insights"
                             title="Code Insights on docs."
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
                         >
                             See Docs for more use cases
                         </a>
@@ -527,6 +530,9 @@ const CodeInsightsPage: FunctionComponent = () => {
                             className="btn btn-link px-0 py-4 col-7 docs-cta font-weight-bold"
                             href="https://docs.sourcegraph.com/code_insights"
                             title="Code Insights on docs."
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
                         >
                             See Docs for more use cases
                         </a>

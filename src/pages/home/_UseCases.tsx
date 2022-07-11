@@ -145,7 +145,7 @@ const UseCases: FunctionComponent = () => {
                         <a
                             title="Get started"
                             data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
+                            data-button-location={buttonLocation.trySourcegraph}
                             data-button-type="cta"
                             >
                             Get started
@@ -157,7 +157,7 @@ const UseCases: FunctionComponent = () => {
                         <a
                             title="Request a demo"
                             data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
+                            data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
                         >
                         request a demo
