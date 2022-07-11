@@ -78,8 +78,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                 <h1 className={titleClassName}>
                     {renderTitleAsLink === true ? (
                         <Link href={url} passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className={`d-block ${titleLinkClassName}`}>{post.frontmatter.title}</a>
+                            <a className={`d-block ${titleLinkClassName}`} href="#none">{post.frontmatter.title}</a>
                         </Link>
                     ) : (
                         post.frontmatter.title

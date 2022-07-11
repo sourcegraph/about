@@ -111,8 +111,9 @@ const BetterDeveloperOnboarding: FunctionComponent = () => {
                     <h1 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h1>
                     <p>
                         <Link href="/get-started/self-hosted" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
+                                href="#none"
+                                title="Get started"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
@@ -122,10 +123,11 @@ const BetterDeveloperOnboarding: FunctionComponent = () => {
                         </Link>{' '}
                         for free with up to 10 teammates or{' '}
                         <Link href="/demo" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
+                                href="#none"
+                                title="Request a demo"
                                 data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
+                                data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
                             >
                                 request a demo
