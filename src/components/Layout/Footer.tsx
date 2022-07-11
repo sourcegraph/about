@@ -165,9 +165,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
             )}
 
             <div
-                className={`footer__postscript d-flex justify-content-between ${
-                    minimal ? 'py-3' : 'pt-4 pb-2'
-                } small`}
+                className={`footer__postscript d-flex justify-content-between ${minimal ? 'py-3' : 'pt-4 pb-2'} small`}
             >
                 <ul className="nav">
                     <li className="nav-item mr-3">&copy; {new Date().getFullYear()} Sourcegraph</li>
