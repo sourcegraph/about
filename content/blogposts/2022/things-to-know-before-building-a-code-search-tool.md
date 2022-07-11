@@ -1,5 +1,5 @@
 ---
-title: '3 things to know before building a custom, in-house code search tool '
+title: '3 things to know before building a custom, in-house code search tool'
 authors:
   - name: Quinn Slack
     url: https://twitter.com/sqs
