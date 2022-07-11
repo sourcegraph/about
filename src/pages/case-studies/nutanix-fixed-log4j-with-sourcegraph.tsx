@@ -37,7 +37,7 @@ export const CaseStudy: FunctionComponent = () => (
             description:
                 'Nutanix case study. Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their code base.',
         }}
-        heroAndHeaderClassName="case-study-hero-and-header"
+        heroAndHeaderClassName="bg-code-venus"
         hero={
             <NewCaseStudyJumbotron
                 className="text-black height-md-450 height-auto p-2"

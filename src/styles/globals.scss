@@ -293,6 +293,16 @@ $positions: ('top', 'right', 'bottom', 'left');
     }
 }
 
+/* ==================== Background Images ==================== */
+.bg-code-venus {
+    background-image: url('/bg-images/bg-code-venus.png');
+    background-size: cover;
+    @include media-breakpoint-down(lg) {
+        background-image: url('/bg-images/bg-code-venus-mobile.png');
+        background-size: cover;
+    }
+}
+
 /* ==================== Borders ==================== */
 // TODO: On Tailwind migration, trade out these styles for border-x utility classes"
 .border-2 {
@@ -309,7 +319,7 @@ $positions: ('top', 'right', 'bottom', 'left');
 }
 
 /* ==================== Tailwind placeholders ==================== */
-// TODO: After Tailwind migration this class can be deleted
+// TODO: After Tailwind migration these classes can be deleted
 .bg-cover {
     background-size: cover !important;
 }

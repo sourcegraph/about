@@ -43,7 +43,7 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, logo, q
 
             {children}
 
-            <div className="py-7">
+            <div className="py-7 bg-code-venus">
                 <RequestDemoTrySourcegraph />
             </div>
 
