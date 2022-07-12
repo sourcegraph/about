@@ -6,7 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 
 import { buttonStyle, buttonLocation } from '@data'
 
-import { NavLink } from './navLinks'
+import { NavLink } from '../navLinks'
 
 interface Props {
     navLinks: NavLink[]

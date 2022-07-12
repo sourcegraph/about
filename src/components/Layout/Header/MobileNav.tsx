@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
 
-import { NavLink } from './navLinks'
+import { NavLink } from '../navLinks'
 
 interface Props {
     navLinks: NavLink[]
