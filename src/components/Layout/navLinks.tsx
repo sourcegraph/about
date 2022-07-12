@@ -8,7 +8,7 @@ import TwitterIcon from 'mdi-react/TwitterIcon'
 import YouTubeIcon from 'mdi-react/YoutubeIcon'
 
 export interface NavLink {
-    section?: string
+    section: string
     items: {
         title: string
         href: string
@@ -132,7 +132,7 @@ export const footerLinks: NavLink[] = [
                 title: 'Sourcegraph overview',
                 href: '/handouts/Sourcegraph-Overview.pdf',
             },
-        ]
+        ],
     },
     {
         section: 'Resources',
@@ -165,7 +165,7 @@ export const footerLinks: NavLink[] = [
                 title: 'Community',
                 href: '/community',
             },
-        ]
+        ],
     },
     {
         section: 'Company',
@@ -175,7 +175,7 @@ export const footerLinks: NavLink[] = [
                 href: '/about',
             },
             {
-                title: 'Careers - We\'re Hiring!',
+                title: "Careers - We're Hiring!",
                 href: '/jobs',
             },
             {
@@ -194,46 +194,48 @@ export const footerLinks: NavLink[] = [
                 title: 'Sourcegraph strategy',
                 href: 'https://handbook.sourcegraph.com/company/strategy',
             },
-        ]
+        ],
     },
 ]
 
 export const socialLinks: NavLink = {
+    section: 'Socials',
     items: [
         {
             title: 'GitHub',
             href: 'https://github.com/sourcegraph',
-            icon: <GithubIcon />
+            icon: <GithubIcon />,
         },
         {
             title: 'Twitter',
             href: 'https://twitter.com/sourcegraph',
-            icon: <TwitterIcon />
+            icon: <TwitterIcon />,
         },
         {
             title: 'LinkedIn',
             href: 'https://www.linkedin.com/company/4803356/',
-            icon: <LinkedinIcon />
+            icon: <LinkedinIcon />,
         },
         {
             title: 'YouTube',
             href: 'https://www.youtube.com/c/Sourcegraph/featured',
-            icon: <YouTubeIcon />
+            icon: <YouTubeIcon />,
         },
         {
             title: 'Twitch',
             href: 'https://www.twitch.tv/sourcegraph',
-            icon: <TwitchIcon />
+            icon: <TwitchIcon />,
         },
         {
             title: 'Spotify',
             href: 'https://open.spotify.com/user/p3ntuomfda8r7czdbsgy36ogk?si=8095204aefc24587',
-            icon: <SpotifyIcon />
+            icon: <SpotifyIcon />,
         },
-    ]
+    ],
 }
 
 export const postscriptLinks: NavLink = {
+    section: 'Legal',
     items: [
         {
             title: 'Terms',
@@ -247,5 +249,5 @@ export const postscriptLinks: NavLink = {
             title: 'Privacy',
             href: '/terms/privacy',
         },
-    ]
+    ],
 }
