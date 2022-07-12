@@ -26,7 +26,7 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
     <>
         {header && <h2 className="font-weight-bold">{header}</h2>}
         <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
-            <h2 className="font-weight-bold">&ldquo;{quote}&rdquo;</h2>
+            <h3 className={header ? 'font-weight-normal text-2xl' : 'font-weight-bold text-3xl'}>&ldquo;{quote}&rdquo;</h3>
             {author && <figcaption className="pt-3 text-muted text-center">&mdash; {author}</figcaption>}
         </blockquote>
         {logo && (

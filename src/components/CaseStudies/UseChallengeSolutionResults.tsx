@@ -62,7 +62,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                         <ClipboardTextOutlineIcon size={40} className="p-1 text-blurple" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
-                        <h5 className="font-weight-bold">Use case</h5>
+                        <h4 className="font-weight-semibold">Use case</h4>
                         {useCases.length > 1 ? (
                             <ul className="pl-4 mb-0">
                                 {useCases.map(useCase => (
@@ -81,7 +81,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                         <FlagOutlineIcon size={40} className="p-1 text-blurple" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
-                        <h5 className="font-weight-bold">Challenge</h5>
+                        <h4 className="font-weight-semibold">Challenge</h4>
                         {challenges.length > 1 ? (
                             <ul className="pl-4 mb-0">
                                 {challenges.map(challenge => (
@@ -102,7 +102,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                         <CheckCircleOutlineIcon size={40} className="p-1 text-blurple" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
-                        <h5 className="font-weight-bold">Solution</h5>
+                        <h4 className="font-weight-semibold">Solution</h4>
                         {solutions.length > 1 ? (
                             <ul className="pl-4 mb-0">
                                 {solutions.map(solution => (
@@ -129,7 +129,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                         <ChartBarIcon size={40} className="p-1 text-blurple" />
                     </div>
                     <div className="pl-3 col-lg-11 col-12">
-                        <h5 className="font-weight-bold">Results</h5>
+                        <h4 className="font-weight-semibold">Results</h4>
                         {results.length > 1 ? (
                             <ul className="pl-4 mb-0">
                                 {results.map(result => (

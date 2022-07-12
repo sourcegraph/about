@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
 import styles from './CaseStudyCard.module.scss'
@@ -103,7 +104,7 @@ export const CASESTUDIES: CaseStudy[] = [
 ]
 
 export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boolean }> = ({
-    study: { name, logo, altTitle, title, url, linkText = 'Learn more' },
+    study: { name, logo, altTitle, title, url, linkText = 'Read the case study' },
     bwLogo,
 }) => (
     <div className="flex-grow-1">
@@ -119,13 +120,17 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                 {title}{' '}
                 <span className="text-nowrap">
                     {url.includes('http') ? (
-                        <a href={url} className="card-link" target="_blank" rel="nofollow noreferrer">
-                            {linkText}.
+                        <a href={url} className="card-link d-flex align-items-center" target="_blank" rel="nofollow noreferrer">
+                            {linkText}
+                            <ArrowRightIcon size={20} className="ml-1" />
                         </a>
                     ) : (
                         <Link href={url} passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="card-link">{linkText}.</a>
+                            <a className="card-link d-flex align-items-center">
+                                {linkText}
+                                <ArrowRightIcon size={20} className="ml-1" />
+                            </a>
                         </Link>
                     )}
                 </span>
