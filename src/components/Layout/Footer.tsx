@@ -60,7 +60,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                 <Link href="/dev-tools-quiz">Dev tools quiz</Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="/community">Discord</Link>
+                                <Link href="/community">Community</Link>
                             </li>
                         </ul>
                     </div>
