@@ -1,9 +1,9 @@
 import React from 'react'
 
+import DiscordIcon from 'mdi-react/DiscordIcon'
 import GithubIcon from 'mdi-react/GithubIcon'
 import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import SpotifyIcon from 'mdi-react/SpotifyIcon'
-import TwitchIcon from 'mdi-react/TwitchIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import YouTubeIcon from 'mdi-react/YoutubeIcon'
 
@@ -222,9 +222,9 @@ export const socialLinks: NavLink = {
             icon: <YouTubeIcon />,
         },
         {
-            title: 'Twitch',
-            href: 'https://www.twitch.tv/sourcegraph',
-            icon: <TwitchIcon />,
+            title: 'Discord',
+            href: 'https://discord.gg/s2qDtYGnAE',
+            icon: <DiscordIcon />,
         },
         {
             title: 'Spotify',
