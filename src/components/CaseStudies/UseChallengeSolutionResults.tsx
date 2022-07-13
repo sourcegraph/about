@@ -1,9 +1,9 @@
 import { FunctionComponent, useEffect, useRef, useState } from 'react'
 
-import ChartBarIcon from 'mdi-react/ChartBarIcon'
-import CheckCircleOutlineIcon from 'mdi-react/CheckCircleOutlineIcon'
-import ClipboardTextOutlineIcon from 'mdi-react/ClipboardTextOutlineIcon'
-import FlagOutlineIcon from 'mdi-react/FlagOutlineIcon'
+import AlertIcon from 'mdi-react/AlertIcon'
+import ChartLineVariantIcon from 'mdi-react/ChartLineVariantIcon'
+import CheckCircleIcon from 'mdi-react/CheckCircleIcon'
+import ClipboardTextIcon from 'mdi-react/ClipboardTextIcon'
 import Link from 'next/link'
 
 import { useWindowWidth } from '@hooks'
@@ -58,11 +58,11 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
         <section className="position-relative container d-flex flex-lg-row flex-column bg-light-gray-4-2 py-7">
             <div className="col-lg-6 col-12">
                 <div className="mb-5 d-flex flex-column flex-lg-row justify-content-lg-end">
-                    <div className="d-flex bg-white align-self-start mb-3 col-1 col-lg-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                        <ClipboardTextOutlineIcon size={40} className="p-1 text-blurple" />
+                    <div className="d-flex bg-violet-1 align-self-start mb-3 col-1 col-lg-2 justify-content-center align-items-center p-0 rounded text-center p-1 max-w-50">
+                        <ClipboardTextIcon size={40} className="p-1 text-vivid-violet" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
-                        <h4 className="font-weight-semibold">Use case</h4>
+                        <h4 className="font-weight-bold">Use case</h4>
                         {useCases.length > 1 ? (
                             <ul className="pl-4 mb-0">
                                 {useCases.map(useCase => (
@@ -77,11 +77,11 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     </div>
                 </div>
                 <div className="mb-lg-0 mb-5 d-flex flex-column flex-lg-row justify-content-lg-end">
-                    <div className="d-flex bg-white align-self-start mb-3 col-1 col-lg-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                        <FlagOutlineIcon size={40} className="p-1 text-blurple" />
+                    <div className="d-flex bg-violet-1 align-self-start mb-3 col-1 col-lg-2 justify-content-center align-items-center p-0 rounded text-center p-1 max-w-50">
+                        <AlertIcon size={40} className="p-1 text-vivid-violet" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
-                        <h4 className="font-weight-semibold">Challenge</h4>
+                        <h4 className="font-weight-bold">Challenge</h4>
                         {challenges.length > 1 ? (
                             <ul className="pl-4 mb-0">
                                 {challenges.map(challenge => (
@@ -98,11 +98,11 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
             </div>
             <div className="col-lg-6 col-12">
                 <div className="mb-lg-0 mb-5 d-flex flex-column flex-lg-row justify-content-xl-center">
-                    <div className="d-flex bg-white align-self-start mb-3 col-1 col-lg-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                        <CheckCircleOutlineIcon size={40} className="p-1 text-blurple" />
+                    <div className="d-flex bg-violet-1 align-self-start mb-3 col-1 col-lg-2 justify-content-center align-items-center p-0 rounded text-center p-1 max-w-50">
+                        <CheckCircleIcon size={40} className="p-1 text-vivid-violet" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
-                        <h4 className="font-weight-semibold">Solution</h4>
+                        <h4 className="font-weight-bold">Solution</h4>
                         {solutions.length > 1 ? (
                             <ul className="pl-4 mb-0">
                                 {solutions.map(solution => (
@@ -125,11 +125,11 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                 className="col-5 bg-gradient-venus lg-absolute right-0 bottom-0 max-w-xl-500 max-w-lg-450 max-w-700 mx-auto p-5"
             >
                 <div className="ml-lg-0 d-flex flex-column flex-lg-row">
-                    <div className="d-flex bg-white align-self-start mb-3 col-1 col-lg-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                        <ChartBarIcon size={40} className="p-1 text-blurple" />
+                    <div className="d-flex bg-violet-1 align-self-start mb-3 col-1 col-lg-2 justify-content-center align-items-center p-0 rounded text-center p-1 max-w-50">
+                        <ChartLineVariantIcon size={40} className="p-1 text-vivid-violet" />
                     </div>
                     <div className="pl-3 pr-0 col-lg-10 col-11">
-                        <h4 className="font-weight-semibold">Results</h4>
+                        <h4 className="font-weight-bold">Results</h4>
                         {results.length > 1 ? (
                             <ul className="pl-4 mb-0">
                                 {results.map(result => (
