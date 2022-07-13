@@ -295,12 +295,8 @@ $positions: ('top', 'right', 'bottom', 'left');
 
 /* ==================== Background Images ==================== */
 .bg-code-venus {
-    background-image: url('/bg-images/bg-code-venus.png');
+    background-image: url('/bg-images/bg-code-venus.svg');
     background-size: cover;
-    @include media-breakpoint-down(lg) {
-        background-image: url('/bg-images/bg-code-venus-mobile.png');
-        background-size: cover;
-    }
 }
 
 /* ==================== Borders ==================== */

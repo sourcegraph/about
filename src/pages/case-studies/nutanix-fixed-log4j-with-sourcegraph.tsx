@@ -94,7 +94,7 @@ export const CaseStudy: FunctionComponent = () => (
             />
 
             <ContentSection color="white" className="pt-lg-8 py-7 max-w-700 col-xl-5">
-                <p className="mt-8">
+                <p className="mt-lg-7 mt-md-5 mt-6">
                     As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the complexity
                     involved in securing the multitude of applications and solutions required to power such a large
                     organization. “Security is something that we care about intensely here at Nutanix,” Jon said,

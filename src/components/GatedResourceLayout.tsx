@@ -83,7 +83,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             // Guides
             return isMdOrDown ? '/bg-images/bg-code-aquamarine-mobile.png' : '/bg-images/bg-code-aquamarine.png'
         }
-        return isMdOrDown ? '/bg-images/bg-code-venus-mobile.png' : '/bg-images/bg-code-venus.png'
+        return '/bg-images/bg-code-venus.svg'
     }
 
     return (
