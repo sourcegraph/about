@@ -68,7 +68,7 @@ Developer onboarding is one of those things that can be overlooked when growing 
 
 If your open source project could benefit from the value that NativeScript has unlocked, [join our Disord](https://discord.gg/rDPqBejz93) or email [community@sourcegreaph.com](mailto:community@sourcegreaph.com?subject=Onboarding+for+my+FOSS+Project).  We’d love to see how we can help!
 
-If you need help with onboarding at work, [read this guide](https://about.sourcegraph.com/guides/dev-onboarding-how-is-it-unique?utm_source=nativescript-blog-set-up-demo&utm_medium=nativescript-blog) with an engineer.
+If you need help with onboarding at work, [read this guide](https://about.sourcegraph.com/guides/dev-onboarding-how-is-it-unique?utm_source=nativescript-blog-set-up-demo&utm_medium=nativescript-blog).
 
 ---
 
