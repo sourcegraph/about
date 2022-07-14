@@ -8,11 +8,11 @@ description: 'Developer onboarding is one of those things that can be overlooked
 tags: [blog, ospo]
 slug: 'how-nativeScript-onboards-new-open-source-contributors'
 published: true
-heroImage: https://p21.p4.n0.cdn.getcloudapp.com/items/Wnu7mP29/9ba0dca3-ad86-45d5-977d-ff8d099db4b1.jpg
-socialImage: https://p21.p4.n0.cdn.getcloudapp.com/items/Wnu7mP29/9ba0dca3-ad86-45d5-977d-ff8d099db4b1.jpg
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/nativescript-open-source-onboarding-blog-hs.jpg
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/nativescript-open-source-onboarding-blog-hs.jpg
 ---
 
-![](https://p21.p4.n0.cdn.getcloudapp.com/items/Wnu7mP29/9ba0dca3-ad86-45d5-977d-ff8d099db4b1.jpg)
+![](https://storage.googleapis.com/sourcegraph-assets/blog/nativescript-open-source-onboarding-blog-hs.jpg)
 
 From my experience working with open source projects over the years, I noticed many of them (including popular ones) don't have an onboarding process. I get it, it's a lot of work, and when you have 300+ issues to triage over the weekend that’s the last thing on your mind.
 
