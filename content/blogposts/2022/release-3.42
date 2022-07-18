@@ -13,6 +13,7 @@ changelogItems:
 
 Sourcegraph 3.42 is now available! For this release, we introduced:
 
-## Feature 1
+## Improved search-based navigation for Python non-locals
+We previously announced we’d [improved our search-based support for Python locals in Sourcegraph 3.40(https://about.sourcegraph.com/blog/release/3.40) by using tree-sitter. We've now extended this improvement for jump-to-definition to more kinds of variables such as class fields.
 
 ## Feature 2
