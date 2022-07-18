@@ -59,3 +59,7 @@ You can reach me at [sqs@sourcegraph.com](mailto:sqs@sourcegraph.com). And when 
 ## Other similar articles
 - [Build vs. buy: Should you build in-house or choose a 3rd-party SaaS solution? | Appcues Blog](https://www.appcues.com/blog/build-vs-buy-third-party-software)
   - [The User Onboarding Cost Calculator](https://www.appcues.com/resources/user-onboarding-cost-calculator)
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

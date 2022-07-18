@@ -210,3 +210,7 @@ Upgrading from 2.x or 3.0.0? [See the migration guide](https://docs.sourcegraph.
 ---
 
 From the entire Sourcegraph team ([@sourcegraph](https://twitter.com/sourcegraph)), happy coding!
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._
