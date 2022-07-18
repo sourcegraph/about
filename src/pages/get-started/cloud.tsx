@@ -26,7 +26,7 @@ export const CloudPage: FunctionComponent = () => {
                     <h1 className="display-1 mb-2">
                         <strong>What's best for you?</strong>
                     </h1>
-                    <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
+                    <p>From GE to Uber, the world's best developers use Sourcegraph every day.</p>
                 </div>
             }
             heroAndHeaderClassName={styles.hero}

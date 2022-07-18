@@ -32,3 +32,7 @@ And that’s it--you're ready to start searching across your Bitbucket Server re
 For all configuration options for Bitbucket Server, see the [Bitbucket Server integration documentation](https://docs.sourcegraph.com/integration/bitbucket_server).
 
 [Sourcegraph](https://docs.sourcegraph.com) helps development teams build better software with code search and intelligence. It's free, self-hosted, and takes 5 minutes to set up. Read the [Sourcegraph 2.6 announcement blog post](/blog/introducing-sourcegraph-server-2-6) to see more new features from our latest release.
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

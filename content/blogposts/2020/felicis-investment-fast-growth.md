@@ -40,3 +40,7 @@ We're hiring for many roles (and we're a permanently [all-remote company](https:
 *   And [more](https://github.com/sourcegraph/careers/blob/master/README.md)
 
 Want to help us build the future of coding? Apply now to work at Sourcegraph or share with your friends and former colleagues. You can also go ahead and try [Sourcegraph Cloud](https://sourcegraph.com/search) to easily search public, open source code. Or get started searching your own code by [self-hosting Sourcegraph](https://about.sourcegraph.com/get-started/self-hosted) – free up to 10 users. Please feel free to ask us questions either via posting on [Twitter](https://twitter.com/sourcegraph) or sending an email to [hi@sourcegraph.com](mailto:hi@sourcegraph.com).
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

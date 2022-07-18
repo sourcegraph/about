@@ -102,3 +102,7 @@ Appdash is completely open source. You can [view the source here](https://github
 Appdash is an incredibly versatile and easy-to-deploy performance and debug tracing suite for web applications. It supports Go and Python, and we’d love to add more languages with help from the community. It’s being used today in production applications at Sourcegraph, and we hope you’ll find it useful for your own web app.
 
 So [check out the source](https://github.com/sourcegraph/appdash), or [file an issue or feature request](https://github.com/sourcegraph/appdash/issues). And while you’re at it, [check out Sourcegraph](https://sourcegraph.com/), which is the best way to discover and understand code — and which was the first site to ever use Appdash.
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

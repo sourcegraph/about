@@ -112,3 +112,7 @@ To use Batch Changes and Code Insights to apply mass fixes and track progress, o
 ---
 
 _Thanks to the following people for helping with this post: Olaf Geirsson, Rebecca Dodd, Thorsten Ball, Erica Lindberg, Malo Marrec, Victoria Yunger, Beyang Liu. We welcome [edits to this post](https://github.com/sourcegraph/about/tree/main/blogposts/2021/log4j-log4-shell-0-day.md)._
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._
