@@ -16,4 +16,13 @@ Sourcegraph 3.42 is now available! For this release, we introduced:
 ## Improved search-based navigation for Python non-locals
 We previously announced we’d [improved our search-based support for Python locals in Sourcegraph 3.40(https://about.sourcegraph.com/blog/release/3.40) by using tree-sitter. We've now extended this improvement for jump-to-definition to more kinds of variables such as class fields.
 
-## Feature 2
+## Searching by repository descriptions
+We've introduced a new search predicate that enables searching by repository description, for example: `repo:has.description(machine learning)`. Now you can search for interesting repository topics, even if you don't know their names.
+![](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/repo-description-search.png)
+
+## New search suggestions
+We've moved to [CodeMirror](https://codemirror.net/) from Monaco for all our search query inputs. We're very excited about the performance and extensibility offered by CodeMirror and look forwaard to shipping all the improvements its flexibility enables. You can switch abck to using Monaco at any time by setting `experimentalFeatures.editor: "monaco"` in your settings menu.
+
+## Lucky search
+We have a new search type available experimentally, called "Lucky search". It does some really cool things to improve the quality of your search experience, but the most obvious one is that it gives smart suggestions for alternate queries, and runs them automatically to make sure they have results. You can enable it by setting `"search.defaultPatternType": "lucky"` in settings.
+![](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/lucky-search.png)
