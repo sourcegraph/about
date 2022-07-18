@@ -14,7 +14,7 @@ socialImage: /blog/exgoogler-campfire.jpg
 published: true
 ---
 
-Many years ago, I did a brief stint at Google–yes, I’m an ex-Googler or Xoogler. A lot has changed since then, but even that brief exposure to Google's internal tools left a lasting impression on me. In many ways, the dev tools inside Google are the most advanced in the world. Google has been a pioneer not only in scaling their own software systems but in figuring out how to build software effectively at scale. They've dealt with issues related to codebase volume, code discoverability, organizational knowledge sharing, and multi-service deployment at a level of sophistication that most other companies have not yet reached. (For reference, see <a href="https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791" rel="nofollow" target="_blank">Software Engineering at Google</a>.)
+Many years ago, I did a brief stint at Google. A lot has changed since then, but even that brief exposure to Google's internal tools left a lasting impression on me. In many ways, the dev tools inside Google are the most advanced in the world. Google has been a pioneer not only in scaling their own software systems but in figuring out how to build software effectively at scale. They've dealt with issues related to codebase volume, code discoverability, organizational knowledge sharing, and multi-service deployment at a level of sophistication that most other companies have not yet reached. (For reference, see <a href="https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791" rel="nofollow" target="_blank">Software Engineering at Google</a>.)
 
 <Figure 
   src="/blog/exgoogler-campfire.jpg"
@@ -50,7 +50,7 @@ At every stage in this process, there is typically a tool that anchors the devel
 |-----------------------------------------------------|--------------------|------------------------------|
 | Identify feature or bug                             | Issue Tracker       | GitHub issues, Jira         |
 | Read code                                           | Code search        | Your editor, <a href="https://oracle.github.io/opengrok/" rel="nofollow" target="_blank">OpenGrok</a>, <a href="https://github.com/hound-search/hound" rel="nofollow" target="_blank">Hound</a>, [Sourcegraph](https://about.sourcegraph.com)   |
-| Write code                                          | Critique, IntelliJ, Emacs, Vim, VS Code    | Everything except Critique      |
+| Write code                                          | Cider, IntelliJ, Emacs, Vim, VS Code    | Same, except no Cider <br /> *(Editor's update: since publication, Cloud IDEs like Gitpod and Codespaces have gained more traction)*      |
 | Test code                                           | Blaze              | A bit of the Wild West, but <a href="https://bazel.build/" rel="nofollow" target="_blank">Bazel</a> is gaining traction      |
 | Review code                                         | Critique           | <a href="http://github.com/" rel="nofollow" target="_blank">GitHub</a> PRs, <a href="https://www.gerritcodereview.com/" rel="nofollow" target="_blank">Gerrit</a>, <a href="https://www.phacility.com/phabricator/" rel="nofollow" target="_blank">Phabricator</a>, <a href="https://reviewable.io/" rel="nofollow" target="_blank">Reviewable</a>     |
 | Deployment                                          | Borg               | <a href="https://kubernetes.io/" rel="nofollow" target="_blank">Kubernetes</a>   |
