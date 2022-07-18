@@ -16,44 +16,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
         <div className="container-xl">
             {!minimal && (
                 <div className="row footer__nav-sections">
-                    {footerLinks.map((section, index) => (
-                        <div className={`col-sm-6 col-md-3 col-lg-2 mb-3 order-md-${index + 2}`} key={section.section}>
-                            <h3 className="footer__nav-header text-lg font-weight-bold">{section.section}</h3>
-                            <ul className="nav flex-column">
-                                {section.items.map(item => (
-                                    <li className="nav-item" key={item.title}>
-                                        {item.href.includes('http') ? (
-                                            <a
-                                                href={item.href}
-                                                target="_blank"
-                                                rel="noreferrer"
-                                                title={item.title}
-                                                data-button-style={buttonStyle.text}
-                                                data-button-location={buttonLocation.footer}
-                                                data-button-type="cta"
-                                            >
-                                                {item.title}
-                                            </a>
-                                        ) : (
-                                            <Link href={item.href} passHref={true}>
-                                                <a
-                                                    href="#none"
-                                                    title={item.title}
-                                                    data-button-style={buttonStyle.text}
-                                                    data-button-location={buttonLocation.footer}
-                                                    data-button-type="cta"
-                                                >
-                                                    {item.title}
-                                                </a>
-                                            </Link>
-                                        )}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
-
-                    <div className="col-12 col-lg-3 mb-5 order-md-1">
+                    <div className="col-12 col-lg-3 mb-5">
                         <Link href="/" passHref={true}>
                             <a
                                 href="#none"
@@ -88,6 +51,43 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                             ))}
                         </ul>
                     </div>
+
+                    {footerLinks.map(section => (
+                        <div className="col-sm-6 col-md-3 col-lg-2 mb-3" key={section.section}>
+                            <h3 className="footer__nav-header text-lg font-weight-bold">{section.section}</h3>
+                            <ul className="nav flex-column">
+                                {section.items.map(item => (
+                                    <li className="nav-item" key={item.title}>
+                                        {item.href.includes('http') ? (
+                                            <a
+                                                href={item.href}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                title={item.title}
+                                                data-button-style={buttonStyle.text}
+                                                data-button-location={buttonLocation.footer}
+                                                data-button-type="cta"
+                                            >
+                                                {item.title}
+                                            </a>
+                                        ) : (
+                                            <Link href={item.href} passHref={true}>
+                                                <a
+                                                    href="#none"
+                                                    title={item.title}
+                                                    data-button-style={buttonStyle.text}
+                                                    data-button-location={buttonLocation.footer}
+                                                    data-button-type="cta"
+                                                >
+                                                    {item.title}
+                                                </a>
+                                            </Link>
+                                        )}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
                 </div>
             )}
 
