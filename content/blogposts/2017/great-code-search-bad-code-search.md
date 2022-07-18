@@ -23,3 +23,7 @@ Great code search understands your code and integrates well with your editor and
 Great code search helps you find usage examples, debug issues, understand code, assess the impact of changes, and see who to ask. It helps you write better code—and it lets your entire organization build better software more quickly.
 
 At Sourcegraph, we’ve taken these lessons to heart. Sourcegraph gives you great code search for your organization’s code. Whether you've already seen great code search for yourself, or whether this post just speaks to you, you can [install Sourcegraph for free](https://docs.sourcegraph.com) and start using it today.
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._
