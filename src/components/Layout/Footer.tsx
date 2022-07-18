@@ -29,7 +29,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                                 rel="noreferrer"
                                                 title={item.title}
                                                 data-button-style={buttonStyle.text}
-                                                data-button-location={buttonLocation.nav}
+                                                data-button-location={buttonLocation.footer}
                                                 data-button-type="cta"
                                             >
                                                 {item.title}
