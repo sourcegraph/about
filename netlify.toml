@@ -166,4 +166,8 @@
   from = "/get-started/cloud"
   to = "/get-started/self-hosted"
   force = true
+
+[[redirects]]
+  from = "/mysterybox"
+  to = "https://view.ceros.com/sourcegraph/mysterybox/p/1"
 # ========== END INDIVIDUAL REDIRECTS ==========
