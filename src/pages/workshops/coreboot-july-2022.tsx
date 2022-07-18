@@ -28,15 +28,15 @@ export const Workshops: FunctionComponent = () => (
                         <li>Automate: Automate key workflows and reduce repetitive work.</li>
                     </ul>
                     <p>Join us for a workshop on how Sourcegraph can make contributing to Coreboot easier.</p>
-                    <p> You'll learn:</p>
+                    <p>You'll learn:</p>
                     <ul>
-                        <li> How to get access to Sourcegraph</li>
-                        <li> Different search types</li>
-                        <li> How to solve codebase challenges</li>
-                        <li> How to use code intelligence to navigate code efficiently</li>
-                        <li> How to do large-scale changes</li>
-                        <li> Documenting on Notebooks</li>
-                        <li> Code Insights</li>
+                        <li>How to get access to Sourcegraph</li>
+                        <li>Different search types</li>
+                        <li>How to solve codebase challenges</li>
+                        <li>How to use code intelligence to navigate code efficiently</li>
+                        <li>How to do large-scale changes</li>
+                        <li>Documenting on Notebooks</li>
+                        <li>Code Insights</li>
                     </ul>
                 </section>
             }
