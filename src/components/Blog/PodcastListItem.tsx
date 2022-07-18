@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import { PostListItem, PodcastAudioPlayer } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 import { PostIndexItemProps } from '@interfaces/posts'
 
 /**
@@ -44,18 +45,39 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                     <div className="flex-1">
                         <div>
                             <Link href={`/podcast/${slugPath}`} passHref={true}>
-                                <a className="text-muted mr-4 font-weight-bold" href="#none" title="Permalink">
+                                <a
+                                    className="text-muted mr-4 font-weight-bold"
+                                    href="#none"
+                                    title="Permalink"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
                                     Permalink
                                 </a>
                             </Link>
 
                             <Link href={`/podcast/${slugPath}#notes`} passHref={true}>
-                                <a className="text-muted mr-4 font-weight-bold" href="#none" title="Show notes">
+                                <a
+                                    className="text-muted mr-4 font-weight-bold"
+                                    href="#none"
+                                    title="Show notes"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
                                     Show notes
                                 </a>
                             </Link>
                             <Link href={`/podcast/${slugPath}#transcript`} passHref={true}>
-                                <a className="text-muted mr-4 font-weight-bold" href="#none" title="Transcript">
+                                <a
+                                    className="text-muted mr-4 font-weight-bold"
+                                    href="#none"
+                                    title="Transcript"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
                                     Transcript
                                 </a>
                             </Link>
@@ -65,6 +87,9 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                                     className="text-muted mr-4 font-weight-bold"
                                     target="_blank"
                                     rel="noreferrer"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     Watch the video
                                 </a>

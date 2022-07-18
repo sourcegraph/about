@@ -131,7 +131,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                             data-button-location={buttonLocation.body}
                             data-button-type="cta"
                         >
-                            {linkText}.
+                            {linkText}
                         </a>
                     ) : (
                         <Link href={url} passHref={true}>
@@ -143,11 +143,11 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                {linkText}.
+                                {linkText}
                             </a>
                         </Link>
                     )}
-                </span>
+                </span>.
             </p>
         </div>
     </div>

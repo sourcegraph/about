@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import { truncate } from 'lodash'
 import Link from 'next/link'
 
+import { buttonStyle, buttonLocation } from '@data'
 import { PostIndexItemProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 
@@ -72,7 +73,14 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                         )}
                         <div className="text-center text-sm-left">
                             <Link href={`/${blogType}/${slugPath}`} passHref={true}>
-                                <a className="font-weight-bold" href="#none" title="Read more">
+                                <a
+                                    className="font-weight-bold"
+                                    href="#none"
+                                    title="Read more"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
                                     Read more
                                 </a>
                             </Link>
