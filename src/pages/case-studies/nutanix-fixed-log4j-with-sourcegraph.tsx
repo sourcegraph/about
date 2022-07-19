@@ -9,6 +9,7 @@ import {
     NewCaseStudyLayout,
     ContentSection,
     Blockquote,
+    BlockquoteWithLogoBottom,
     ThreeUpText,
     UseChallengeSolutionResults,
 } from '@components'
@@ -50,17 +51,19 @@ export const CaseStudy: FunctionComponent = () => (
             </NewCaseStudyJumbotron>
         }
     >
-        <NewCaseStudyLayout
-            customer="Nutanix"
-            quote={{
-                text: 'Sourcegraph was the right product at the right time.',
-                author: 'Jon Kohler, Technical Director of Solution Engineering at Nutanix',
-            }}
-            logo={{
-                img: '/external-logos/nutanix-logo.svg',
-                href: 'https://nutanix.com',
-            }}
-        >
+        <NewCaseStudyLayout customer="Nutanix">
+            <ContentSection color="white" className="py-7 text-center max-w-600">
+                <BlockquoteWithLogoBottom
+                    quote="Sourcegraph was the right product at the right time."
+                    author="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
+                    logo={{
+                        src: '/external-logos/nutanix-logo.svg',
+                        alt: 'Nutanix',
+                        href: 'https://nutanix.com',
+                    }}
+                />
+            </ContentSection>
+
             <UseChallengeSolutionResults
                 useCases={[
                     {

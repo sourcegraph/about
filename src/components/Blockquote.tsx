@@ -34,10 +34,10 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
             <div className="d-flex justify-content-center">
                 {logo.href ? (
                     <a href={logo.href} className="btn">
-                        <img src={logo.src} width="110px" alt={logo.alt} />
+                        <img src={logo.src} width="140px" alt={logo.alt} />
                     </a>
                 ) : (
-                    <img src={logo.src} width="110px" alt={logo.alt} />
+                    <img src={logo.src} width="140px" alt={logo.alt} />
                 )}
             </div>
         )}

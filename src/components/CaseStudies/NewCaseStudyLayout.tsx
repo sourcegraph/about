@@ -1,46 +1,21 @@
 import { FunctionComponent } from 'react'
 
-import { ContentSection, RequestDemoTrySourcegraph, BlockquoteWithLogoBottom } from '@components'
+import { ContentSection, RequestDemoTrySourcegraph } from '@components'
 
 import { CaseStudyCard, CASESTUDIES } from './CaseStudyCard'
-interface Quote {
-    text: string
-    author: string
-}
-
-interface Logo {
-    img: string
-    href: string
-}
 
 interface Props {
     customer: string
-    logo?: Logo
-    quote?: Quote
     pdf?: string
     children?: React.ReactNode
 }
 
-export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, logo, quote = null, children }) => {
+export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, children }) => {
     // CaseStudy preview list NOT including current CaseStudy page
     const uniqueCaseStudyList = CASESTUDIES.filter(study => study.name !== customer).slice(0, 4)
 
     return (
         <>
-            {quote && (
-                <ContentSection color="white" className="py-7 text-center max-w-600">
-                    <BlockquoteWithLogoBottom
-                        quote={quote.text}
-                        author={quote.author}
-                        logo={{
-                            src: logo?.img || '',
-                            alt: customer,
-                            href: logo?.href,
-                        }}
-                    />
-                </ContentSection>
-            )}
-
             {children}
 
             <div className="py-7 bg-code-venus">
