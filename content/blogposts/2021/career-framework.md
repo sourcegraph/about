@@ -87,7 +87,7 @@ The framework provided concreteness, which shifted the evaluation process closer
 
 ## How we researched the landscape of career development frameworks
 
-We didn’t start from a blank page. Many companies, Soucegraph now among them, have published their career development frameworks online for anyone to see and borrow from (examples of which we link to below).
+We didn’t start from a blank page. Many companies, Sourcegraph now among them, have published their career development frameworks online for anyone to see and borrow from (examples of which we link to below).
 
 We didn’t want Sourcegraph to be a place where we unthinkingly copy what someone else did. The career framework was an opportunity for us to innovate and to produce something new for the industry.
 

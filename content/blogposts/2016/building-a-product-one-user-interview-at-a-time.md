@@ -108,3 +108,7 @@ But often looks more like this:
 _research + insights = assumptions challenged, new questions raised_
 
 The overturned assumptions and new questions are the fuel for the next cycle of your product development. User research won’t give you the answers, but it will guide you to be sure you’re attempting to answer the right questions.
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._
