@@ -198,7 +198,7 @@ const loadAllScripts = async (chiliPiper?: boolean): Promise<void> => {
                 chiliPiperWindow?.submit(chiliPiperDomain, chiliPiperRouter, {
                     map: true,
                     lead,
-                    closeOnOutside: true
+                    closeOnOutside: true,
                 })
             }
         })
