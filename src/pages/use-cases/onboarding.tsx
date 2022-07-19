@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 import {
     BackButtonBold,
-    InContentBlockquote,
+    Blockquote,
     BlockquoteWithLogoBottom,
     BlogResourceItem,
     CustomCarousel,
@@ -247,7 +247,7 @@ const UseCasePage: FunctionComponent = () => (
                         </ul>
                     </div>
                     <div className="col-lg-5 mt-lg-0 mt-7 text-center">
-                        <InContentBlockquote
+                        <Blockquote
                             quote="Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues. This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked."
                             author="Bjørn Hal Sørensen, Web Architect at Lunar"
                             logo={{

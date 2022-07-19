@@ -8,7 +8,7 @@ import {
     NewCaseStudyJumbotron,
     NewCaseStudyLayout,
     ContentSection,
-    InContentBlockquote,
+    Blockquote,
     ThreeUpText,
     UseChallengeSolutionResults,
 } from '@components'
@@ -171,7 +171,7 @@ export const CaseStudy: FunctionComponent = () => (
                 </p>
 
                 <div className="py-7">
-                    <InContentBlockquote
+                    <Blockquote
                         quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
                         better than having to say, 'Well, boss, I think we got it all.'"
                         author="Jon Kohler"

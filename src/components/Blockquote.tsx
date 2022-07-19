@@ -82,8 +82,8 @@ export const BlockquoteWithLogoTop: FunctionComponent<{
     </>
 )
 
-export const InContentBlockquote: FunctionComponent<{
-    quote: string
+export const Blockquote: FunctionComponent<{
+    quote: string | ReactFragment
     author?: string
     logo?: Logo
     link?: Link

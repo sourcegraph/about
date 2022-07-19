@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
+import { Layout, CaseStudyLayout, ContentSection, Blockquote } from '@components'
 
 export const CaseStudy: FunctionComponent = () => {
     const jaredHodge = 'Jared Hodge, Senior Manager, Developer Experience'
@@ -91,7 +91,7 @@ export const CaseStudy: FunctionComponent = () => {
                             so they could review.
                         </p>
 
-                        <InContentBlockquote
+                        <Blockquote
                             quote="If I can reduce the amount of work a product team has to do by 90%, that is a huge win. Not only do they have to do less work — we're asking them to spend 10 minutes on a code review as opposed to spending the next six hours doing this change — they also don't have to spend time figuring out how to prioritize the different requests they're getting."
                             author={jaredHodge}
                         />
@@ -109,7 +109,7 @@ export const CaseStudy: FunctionComponent = () => {
                             it would take days.
                         </p>
 
-                        <InContentBlockquote
+                        <Blockquote
                             quote="On average, I'd say that for every automated merge request that we're able to merge we save an hour. That's a rough but conservative estimate. It shows, though, that if we are doing several thousand automated merges in a year, we're saving several employee's worth of time."
                             author={jaredHodge}
                         />

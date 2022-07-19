@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
+import { Layout, CaseStudyLayout, ContentSection, Blockquote } from '@components'
 
 export const CaseStudy: FunctionComponent = () => {
     const derrickFaunce = 'Derrick Faunce, Associate Director of Developer Services'
@@ -77,7 +77,7 @@ export const CaseStudy: FunctionComponent = () => {
                             </div>
                         </div>
 
-                        <InContentBlockquote
+                        <Blockquote
                             quote="With Sourcegraph, we were able to make a smooth transition from Perforce to GitHub."
                             author={derrickFaunce}
                         />
@@ -126,7 +126,7 @@ export const CaseStudy: FunctionComponent = () => {
                             times in any given day,'” Faunce said. Now, over 500 FactSet developers use Sourcegraph.
                         </p>
 
-                        <InContentBlockquote
+                        <Blockquote
                             quote="For developers, Sourcegraph is a must-have tool一we need it at arm's length at all times."
                             author={derrickFaunce}
                         />

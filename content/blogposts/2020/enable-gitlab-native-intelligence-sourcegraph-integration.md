@@ -14,7 +14,7 @@ published: true
 ---
 
 <section className="text-center">
-  <InContentBlockquote
+  <Blockquote
     quote="Sourcegraph has the best find-definition, find-references, and intelligent code navigation capability on the planet - and they brought it to GitLab."
     author="Sid Sijbrandij, GitLab CEO"
   />

@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 import {
     BackButtonBold,
-    InContentBlockquote,
+    Blockquote,
     BlogResourceItem,
     ContentSection,
     CustomCarousel,
@@ -242,7 +242,7 @@ const CodeReusePage: FunctionComponent = () => (
                         </ul>
                     </div>
                     <div className="col-lg-5 mt-lg-8 mt-5 text-center">
-                        <InContentBlockquote
+                        <Blockquote
                             quote="If I’m developing code for a library that might draw charts, for example, we don’t want
                             30 different ways to draw a chart at FactSet. With Sourcegraph, I can search the code to
                             find other chart examples, and simply copy the code. This saves us time and ensures
