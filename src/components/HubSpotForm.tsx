@@ -261,7 +261,7 @@ const onFormReady = (form: HTMLFormElement): void => {
             .reduce((key, string) => Object.assign(key, { [string.split('=')[0].trim()]: string.split('=')[1] }), {})
         const { sourcegraphAnonymousUid, sourcegraphSourceUrl } = getAllCookies
         const landingSource: string = sessionStorage.getItem('landingSource') || ''
-        const firstSourceURL: string = sourcegraphSourceUrl?.includes('redacted') ? landingSource : sourcegraphSourceUrl
+        const firstSourceURL: string = sourcegraphSourceUrl?.includes('redacted') || !sourcegraphSourceUrl ? landingSource : sourcegraphSourceUrl
 
         populateHiddenFormField('anonymous_user_id', sourcegraphAnonymousUid)
         populateHiddenFormField('first_source_url', firstSourceURL)
