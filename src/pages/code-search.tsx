@@ -147,12 +147,13 @@ export const CodeSearchPage: FunctionComponent = () => (
                     <h5>Mitigate security and compliance risks</h5>
                     <p>Get alerts for vulnerabilities and then automate security fixes across your entire codebase.</p>
                 </div>
-                <div className="col-lg-6 text-center">
+                <div className="col-lg-6">
                     <Blockquote
                         quote="At Criteo, developer happiness is our top priority-not just productivity. By providing them
                         with the right tools, like Sourcegraph, we've found that increased productivity is a natural
                         byproduct."
                         author="Francois Jehl, Senior Engineering Manager, Criteo"
+                        center={true}
                         logo={{
                             src: '/external-logos/criteo-logo.svg',
                             alt: 'Criteo',

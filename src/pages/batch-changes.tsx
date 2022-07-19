@@ -116,12 +116,13 @@ export const BatchChangesPage: FunctionComponent = () => (
         {/* Social proof */}
         <ContentSection className="py-4 pt-md-8 pb-md-5">
             <div className="row justify-content-center">
-                <div className="col-lg-10 text-center">
+                <div className="col-lg-10">
                     <Blockquote
                         quote="The ability to automate downstream changes that Sourcegraph Batch Changes provides is a key
                         capability for reducing the hidden burden of updates pushed across teams and enabling us to
                         increase our engineering velocity."
                         author="Jared Hodge, Sr. Manager Developer Experience"
+                        center={true}
                         logo={{
                             src: '/external-logos/indeed-logo.svg',
                             alt: 'Indeed',
@@ -214,12 +215,13 @@ export const BatchChangesPage: FunctionComponent = () => (
         {/* Social proof */}
         <ContentSection className="py-4">
             <div className="row justify-content-center pt-md-4">
-                <div className="col-lg-10 text-center">
+                <div className="col-lg-10">
                     <Blockquote
                         quote="Sourcegraph Batch Changes gives us the confidence we need to understand the total impact of
                         large-scale code changes before we make them. This enables the entire team to make more
                         impactful decisions more often."
                         author="Trent Grover, Director of Architecture - Client Technologies, Workiva"
+                        center={true}
                         logo={{
                             src: '/external-logos/workiva-vector-logo.svg',
                             alt: 'Workiva',

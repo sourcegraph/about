@@ -122,10 +122,11 @@ const UseCases: React.FunctionComponent = () => (
                             </a>
                         </Link>
                     </div>
-                    <div className="col-lg-6 mt-8 px-6 text-center">
+                    <div className="col-lg-6 mt-8 px-6">
                         <Blockquote
                             quote="[Sourcegraph] is the best way to prove we're not vulnerable to a particular CVE, if and when we get asked by an auditor."
                             author="David Haynes, Security Engineer at Cloudflare"
+                            center={true}
                             logo={{
                                 src: '/external-logos/cloudflare-logo.svg',
                                 alt: 'Cloudflare',
@@ -140,10 +141,11 @@ const UseCases: React.FunctionComponent = () => (
 
             <ContentSection id="onboarding" className="py-4">
                 <div className="row justify-content-center pt-md-4">
-                    <div className="col-lg-6 mt-8 px-6 text-center">
+                    <div className="col-lg-6 mt-8 px-6">
                         <Blockquote
                             quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
                             author="Owen Kim, Senior Software Engineer, Convoy"
+                            center={true}
                             logo={{
                                 src: '/external-logos/convoy-logo.svg',
                                 alt: 'Convoy',
@@ -249,10 +251,11 @@ const UseCases: React.FunctionComponent = () => (
                             </a>
                         </Link>
                     </div>
-                    <div className="col-lg-6 mt-6 px-6 text-center">
+                    <div className="col-lg-6 mt-6 px-6">
                         <Blockquote
                             quote="Sourcegraph's search gave us confidence because we knew we wouldn't overlook anything: Sourcegraph returns all search results, it doesn't drop or elide them."
                             author="Simon Law, Staff Software Engineer, Quantcast"
+                            center={true}
                             logo={{
                                 src: '/external-logos/quantcast-logo.svg',
                                 alt: 'Quantcast',
@@ -267,13 +270,14 @@ const UseCases: React.FunctionComponent = () => (
 
             <ContentSection id="code-reuse" className="py-4">
                 <div className="row justify-content-center pt-md-4">
-                    <div className="col-lg-6 px-6 mt-6 text-center">
+                    <div className="col-lg-6 px-6 mt-6">
                         <Blockquote
                             quote="If I'm developing code for a library that might draw charts, for example, we
                             don't want 30 different ways to draw a chart at FactSet. With Sourcegraph, I can search
                             the code to find other chart examples, and simply copy the code. This saves us time and
                             ensures consistency."
                             author="Joseph Majesky, Software Engineer, FactSet"
+                            center={true}
                             logo={{
                                 src: '/external-logos/factset-logo.svg',
                                 alt: 'Factset',
@@ -381,10 +385,11 @@ const UseCases: React.FunctionComponent = () => (
                             <a className="btn btn-link">Learn more</a>
                         </Link>
                     </div>
-                    <div className="col-lg-6 mt-6 px-6 text-center">
+                    <div className="col-lg-6 mt-6 px-6">
                         <Blockquote
                             quote="With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove unused attributes that lived in different repositories, ultimately simplifying our APIs and speeding up developer iteration time."
                             author="Justin Phillips, Software Engineer, Lyft"
+                            center={true}
                             logo={{
                                 src: '/external-logos/lyft-logo.svg',
                                 alt: 'Lyft',

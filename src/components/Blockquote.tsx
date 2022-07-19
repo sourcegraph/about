@@ -1,5 +1,6 @@
 import { FunctionComponent, ReactFragment } from 'react'
 
+import classNames from 'classnames'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
@@ -89,9 +90,10 @@ export const Blockquote: FunctionComponent<{
     link?: Link
     headline?: string
     largeText?: boolean
-}> = ({ quote, author, logo, link, headline, largeText = false }) => (
+    center?: boolean
+}> = ({ quote, author, logo, link, headline, largeText = false, center = false }) => (
     <>
-        <blockquote className="border-left border-3 border-vivid-violet">
+        <blockquote className={classNames('border-left border-3 border-vivid-violet', center && 'text-center')}>
             {headline && <h4 className="font-weight-bold mb-4 px-4">{headline}</h4>}
             {largeText ? (
                 <h3 className="font-weight-normal px-4">&ldquo;{quote}&rdquo;</h3>

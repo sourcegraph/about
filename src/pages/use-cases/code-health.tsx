@@ -305,11 +305,12 @@ const UseCasePage: FunctionComponent = () => (
                             </li>
                         </ul>
                     </div>
-                    <div className="col-lg-5 mt-lg-8 mt-5 text-center">
+                    <div className="col-lg-5 mt-lg-8 mt-5">
                         <Blockquote
                             quote="With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove unused attributes that lived in different repositories, ultimately simplifying our APIs and speeding up developer iteration time."
                             author="Justin Phillips, Software Engineer at Lyft"
                             headline="Lyft boosts code health and accelerates developer velocity"
+                            center={true}
                             logo={{
                                 src: '/external-logos/lyft-logo.svg',
                                 alt: 'Lyft logo',
