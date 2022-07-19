@@ -37,7 +37,7 @@ The A-Z format introduces simple concepts in a fun and easy-to-understand way so
 />
 
 <section className="text-center">
-  <InContentBlockquote
+  <Blockquote
     quote="Dinosaurs, llamas, and dump trucks are cool—but so is coding. At Sourcegraph, many of us, myself included, have young children who now see us working on the computer all day. We love software development and wrote this book as a fun way to share our passion for coding with our kids."
     author='Quinn Slack'
   />
