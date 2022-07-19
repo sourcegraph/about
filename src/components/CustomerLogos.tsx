@@ -10,8 +10,8 @@ interface Logo {
 
 const logos: Logo[] = [
     {
-        name: 'Amazon',
-        src: '/external-logos/amazon-logo.svg',
+        name: 'Uber',
+        src: '/external-logos/uber-logo.svg',
     },
     {
         name: 'GE',
@@ -35,8 +35,8 @@ const logos: Logo[] = [
         src: '/external-logos/canva-logo.svg',
     },
     {
-        name: 'Uber',
-        src: '/external-logos/uber-logo.svg',
+        name: 'Indeed',
+        src: '/external-logos/indeed-logo.svg',
     },
     {
         name: 'Plaid',
@@ -49,6 +49,7 @@ const logos: Logo[] = [
     {
         name: 'Cloudflare',
         src: '/external-logos/cloudflare-logo.svg',
+        link: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
     },
     {
         name: 'Mercado Libre',

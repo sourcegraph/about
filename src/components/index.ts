@@ -23,17 +23,6 @@ export { TrySourcegraph } from './TrySourcegraph'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
 
-// Actions
-export {
-    ContactPresalesSupportAction,
-    GetSourcegraphNowActions,
-    RequestCodeChangeManagementDemoAction,
-    RequestDemoAction,
-    StartAFreeTrialAction,
-    SubmitEmailForm,
-    ViewDeveloperDocumentationAction,
-} from './Actions'
-
 // Blog
 export {
     BLOG_TYPE_TO_INFO,

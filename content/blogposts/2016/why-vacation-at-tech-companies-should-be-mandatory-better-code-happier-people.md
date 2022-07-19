@@ -77,3 +77,7 @@ Our current policy is that Sourcegraphers have unlimited vacation days and must 
 If you’re interested in building [a better way for developers to discover and understand code](https://sourcegraph.com)—and you enjoy some guilt-free time in the sun — [we’d love to hear from you](https://sourcegraph.com/contact).
 
 _Our mandatory vacation policy was also featured by the_ [_BBC_](http://www.bbc.com/capital/story/20140903-relax-or-else)_._
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

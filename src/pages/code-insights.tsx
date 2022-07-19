@@ -20,14 +20,15 @@ import {
 import { CodeInsightExampleType } from '@code-insights/types'
 import {
     BlogResourceItem,
+    BlockquoteWithLogoBottom,
     ContentSection,
     CustomCarousel,
+    HubSpotForm,
     Layout,
     TabCarousel,
     TemplateCodeBlock,
     YouTube,
     Video,
-    HubSpotForm,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -293,7 +294,7 @@ const blogResourceItems = [
 const CodeInsightsPage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph - Code Insights',
+            title: 'Sourcegraph | Code Insights',
             description:
                 'Draw insights from your codebase about how different initiatives are tracking over time. Code Insights is now generally available for teams of all sizes.',
         }}
@@ -310,8 +311,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                                 Track what really matters to you and your team.
                             </h1>
                             <h4 className="mb-5">
-                                Transform your code into a queryable database to create customizable, visual dashboards
-                                in seconds.
+                                Transform your code into a queryable database to create customizable, visual
+                                dashboards in seconds.
                             </h4>
                             <div className="d-flex flex-column pt-1 max-w-400">
                                 <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
@@ -335,8 +336,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                     <p>
                         Forget about inaccurate spreadsheets, manual processes, and missing historical data. You can{' '}
                         <strong>track everything in your codebase</strong>, from migrations to code smells, in a
-                        seamless and precise way. Make data-driven decisions using visualizations based on the power and
-                        accuracy of Sourcegraph Code Search.
+                        seamless and precise way. Make data-driven decisions using visualizations based on the power
+                        and accuracy of Sourcegraph Code Search.
                     </p>
                 </div>
                 <div className="col-lg-7 mb-md-4 pl-lg-5 d-flex align-items-center video-container">
@@ -351,28 +352,17 @@ const CodeInsightsPage: FunctionComponent = () => (
         </ContentSection>
 
         <div className="bg-gradient-venus-radial py-4">
-            <ContentSection className="py-lg-6">
-                <div className="row d-flex text-center justify-content-center px-lg-7 py-6">
-                    <div className="w-100">
-                        <p className="font-weight-bold display-3">Trusted by engineering teams worldwide</p>
-                    </div>
-                    <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
-                        <h4 className="font-weight-normal">
-                            &ldquo;As we've grown, so has the need to better track and communicate our progress and
-                            goals across the engineering team and broader company. With Code Insights, our data and
-                            migration tracking is accurate across our entire codebase, and our engineers and managers
-                            can shift out of manual spreadsheets and spend more time working on code.&rdquo;
-                        </h4>
-                        <div className="pt-3 text-muted text-center">
-                            &mdash; Balázs Tóthfalussy, Engineering Manager, Prezi
-                        </div>
-                    </blockquote>
-                    <div className="d-flex justify-content-center">
-                        <a href="https://prezi.com" className="btn">
-                            <img src="/external-logos/prezi-logo.svg" width="110px" alt="Prezi" />
-                        </a>
-                    </div>
-                </div>
+            <ContentSection className="py-lg-6 col-lg-8 text-center">
+                <BlockquoteWithLogoBottom
+                    header="Trusted by engineering teams worldwide"
+                    quote="As we've grown, so has the need to better track and communicate our progress and
+                    goals across the engineering team and broader company. With Code Insights, our data and
+                    migration tracking is accurate across our entire codebase, and our engineers and
+                    managers can shift out of manual spreadsheets and spend more time working on
+                    code."
+                    author="Balázs Tóthfalussy, Engineering Manager, Prezi"
+                    logo={{ src: '/external-logos/prezi-logo.svg', alt: 'Prezi logo', href: 'https://prezi.com' }}
+                />
             </ContentSection>
         </div>
 
@@ -382,8 +372,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                     Engineering leadership with superpowers
                 </h2>
                 <p className="icon-subheader w-100 text-center">
-                    Code Insights provides reliable real-time reporting directly from the codebase, making engineering
-                    leaders and their teams more effective.
+                    Code Insights provides reliable real-time reporting directly from the codebase, making
+                    engineering leaders and their teams more effective.
                 </p>
                 <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                     <div className="d-flex py-lg-5 py-3">
@@ -541,8 +531,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                     <div className="col-lg-8 mb-5 d-flex flex-column justify-content-start">
                         <h2 className="display-3 font-weight-bold">Get started with Code Insights</h2>
                         <p>
-                            Create a code insight in 60 seconds and get historical data for previously untracked metrics
-                            — data backfills automatically.
+                            Create a code insight in 60 seconds and get historical data for previously untracked
+                            metrics — data backfills automatically.
                         </p>
                     </div>
                     <div className="col-lg-7 d-flex flex-column pt-1">
