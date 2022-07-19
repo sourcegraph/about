@@ -3,14 +3,7 @@ import React, { FunctionComponent } from 'react'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import Link from 'next/link'
 
-import {
-    ContentSection,
-    Blockquote,
-    IntegrationsSection,
-    Layout,
-    SelfHostedSection,
-    YouTube,
-} from '@components'
+import { ContentSection, Blockquote, IntegrationsSection, Layout, SelfHostedSection, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 export const CodeSearchPage: FunctionComponent = () => (

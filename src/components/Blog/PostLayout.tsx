@@ -3,16 +3,7 @@ import { FunctionComponent } from 'react'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
-import {
-    Alert,
-    Blockquote,
-    EmbeddedHubSpot,
-    Figure,
-    TableWrapper,
-    Video,
-    YouTube,
-    TrySourcegraph,
-} from '@components'
+import { Alert, Blockquote, EmbeddedHubSpot, Figure, TableWrapper, Video, YouTube, TrySourcegraph } from '@components'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 

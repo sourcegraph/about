@@ -64,9 +64,13 @@ export const CaseStudy: FunctionComponent = () => {
                         <Blockquote
                             quote={
                                 <>
-                                    During our decomp efforts, we also spent time to refactor our APIs. Many of these APIs were undocumented and lacked a formalized contract.
-                                    <br/><br/>
-                                    With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove unused attributes that lived in different repositories, ultimately simplifying our APIs and speeding up developer iteration time.
+                                    During our decomp efforts, we also spent time to refactor our APIs. Many of these
+                                    APIs were undocumented and lacked a formalized contract.
+                                    <br />
+                                    <br />
+                                    With the help of Sourcegraph, we were able to quickly look at all clients of an API
+                                    and remove unused attributes that lived in different repositories, ultimately
+                                    simplifying our APIs and speeding up developer iteration time.
                                 </>
                             }
                             author={justinPhilips}
@@ -85,9 +89,15 @@ export const CaseStudy: FunctionComponent = () => {
                         <Blockquote
                             quote={
                                 <>
-                                    Lyft teams are constantly innovating and building new systems, necessitating decomposing and migrating off of older ones. Sourcegraph gives us the ability to search for and refactor references to deprecated services, libraries, URL patterns, and more across our 2000+ repositories, and the confidence that we're not leaving anyone behind.
-                                    <br /><br />
-                                    Sourcegraph makes it easy to survey and understand existing use cases to make sure we build the right thing.
+                                    Lyft teams are constantly innovating and building new systems, necessitating
+                                    decomposing and migrating off of older ones. Sourcegraph gives us the ability to
+                                    search for and refactor references to deprecated services, libraries, URL patterns,
+                                    and more across our 2000+ repositories, and the confidence that we're not leaving
+                                    anyone behind.
+                                    <br />
+                                    <br />
+                                    Sourcegraph makes it easy to survey and understand existing use cases to make sure
+                                    we build the right thing.
                                 </>
                             }
                             author="Aneesh Agrawal, Software Engineer, Lyft"

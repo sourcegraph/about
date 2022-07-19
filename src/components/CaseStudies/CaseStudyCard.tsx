@@ -120,7 +120,12 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                 {title}{' '}
                 <span className="text-nowrap">
                     {url.includes('http') ? (
-                        <a href={url} className="card-link d-flex align-items-center" target="_blank" rel="nofollow noreferrer">
+                        <a
+                            href={url}
+                            className="card-link d-flex align-items-center"
+                            target="_blank"
+                            rel="nofollow noreferrer"
+                        >
                             {linkText}
                             <ArrowRightIcon size={20} className="ml-1" />
                         </a>
