@@ -245,8 +245,8 @@ const onFormReady = (form: HTMLFormElement): void => {
      * @param value - the value to populate
      */
     const populateHiddenFormField = (formField: string, value: string): void => {
-        const input = form[0].querySelector(`input[name="${formField}"]`) as HTMLInputElement
-        if (input && input.value === '') {
+        const input = form.querySelector(`input[name="${formField}"]`) as HTMLInputElement
+        if (input && !input.value) {
             input.value = value || ''
         }
     }
@@ -265,7 +265,7 @@ const onFormReady = (form: HTMLFormElement): void => {
 
         populateHiddenFormField('anonymous_user_id', sourcegraphAnonymousUid)
         populateHiddenFormField('first_source_url', firstSourceURL)
-        populateHiddenFormField('form_submission_source', window.location.href)
+        populateHiddenFormField('form_submission_source', window.location.pathname)
     }
 }
 
