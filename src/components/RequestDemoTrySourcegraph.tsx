@@ -14,7 +14,6 @@ interface Props {
 
 export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
     <ContentSection className="container col-xl-6 justify-content-center">
-        {/* <section className="container col-xl-6 justify-content-center"> */}
         <div className="mb-5 d-flex flex-column">
             <h1 className="text-center font-weight-bold">Get started with Sourcegraph</h1>
             <p className="text-center">Understand, fix, and automate changes across your entire codebase.</p>
@@ -36,6 +35,5 @@ export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
                 </a>
             </Link>
         </div>
-        {/* </section> */}
     </ContentSection>
 )
