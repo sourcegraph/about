@@ -4,6 +4,7 @@ import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
 import { Alert, Figure } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 
@@ -42,6 +43,10 @@ export const ReleasePost: FunctionComponent<Props> = ({
                         href={url}
                         className="release-post__item d-md-flex list-group-item list-group-item-action"
                         key={url}
+                        title={`${category}: ${description}`}
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
                     >
                         <span className="release-post__item-category mb-2 mb-md-0">
                             <span className="release-post__item-category-badge">{category}</span>
@@ -53,14 +58,36 @@ export const ReleasePost: FunctionComponent<Props> = ({
 
             <ul className="card-body list-unstyled d-flex flex-wrap mb-0">
                 <li className="release-post__help-item">
-                    <a href="https://docs.sourcegraph.com/admin/install">How to install</a>
+                    <a
+                        href="https://docs.sourcegraph.com/admin/install"
+                        title="How to install"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        How to install
+                    </a>
                 </li>
                 <li className="release-post__help-item">
-                    <a href="https://docs.sourcegraph.com/admin/updates">How to upgrade</a>
+                    <a
+                        href="https://docs.sourcegraph.com/admin/updates"
+                        title="How to upgrade"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        How to upgrade
+                    </a>
                 </li>
                 <li className="flex-1" />
                 <li className="release-post__help-item">
-                    <a href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md">
+                    <a
+                        href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
+                        title="Full changelog"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
                         Full changelog
                     </a>
                 </li>
@@ -79,7 +106,13 @@ export const ReleasePost: FunctionComponent<Props> = ({
                     {renderTitleAsLink === true ? (
                         <Link href={url} passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className={`d-block ${titleLinkClassName}`}>
+                            <a
+                                className={`d-block ${titleLinkClassName}`}
+                                title={post.frontmatter.title}
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 {post.frontmatter.title}
                             </a>
                         </Link>

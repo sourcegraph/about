@@ -93,6 +93,7 @@ const items = [
                         Get ahead of vulnerabilities. With{' '}
                         <a
                             href="https://docs.sourcegraph.com/code_monitoring"
+                            title="Code monitoring"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
                             data-button-type="cta"

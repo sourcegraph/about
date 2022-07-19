@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
+import { buttonStyle, buttonLocation } from '@data'
 import { PostComponentProps } from '@interfaces/posts'
 
 interface Props extends PostComponentProps {
@@ -44,7 +45,13 @@ export const LinkPost: FunctionComponent<Props> = ({
             <div className="card-footer bg-transparent border-top-0 pt-0">
                 <Link href={url} passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a className={`text-gray-5 ${titleLinkClassName}`}>
+                    <a
+                        className={`text-gray-5 ${titleLinkClassName}`}
+                        title={post.frontmatter.publishDate}
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
                         {post.frontmatter.publishDate}
                     </a>
                 </Link>

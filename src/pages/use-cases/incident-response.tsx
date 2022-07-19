@@ -37,8 +37,16 @@ const items = [
                         No heroics required: Quickly understand all the context and dependencies around your codebase
                         with <Link href="/code-search">Code Search</Link> so you can find the root cause of an incident
                         with confidence and speed. Document work in progress with{' '}
-                        <a href="https://docs.sourcegraph.com/notebooks">Notebooks</a> so teammates can get up to speed
-                        quickly.
+                        <a
+                            href="https://docs.sourcegraph.com/notebooks"
+                            title="Notebooks"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Notebooks
+                        </a>
+                        {' '}so teammates can get up to speed quickly.
                     </p>
                 }
             />
@@ -87,8 +95,16 @@ const items = [
                 text={
                     <p className="py-3">
                         Close the loop on your incident response efforts. After finding the root cause, use{' '}
-                        <a href="https://docs.sourcegraph.com/code_monitoring">code monitoring</a> to track whether
-                        similarly unsafe code is ever merged. Get alerts and stop incidents before they occur.
+                        <a
+                            href="https://docs.sourcegraph.com/code_monitoring"
+                            title="Code monitoring"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            code monitoring
+                        </a>
+                        {' '}to track whether similarly unsafe code is ever merged. Get alerts and stop incidents before they occur.
                     </p>
                 }
             />

@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import { Layout, CaseStudyCard, FormLegal, BlogResourceItem } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 import { useHubSpot, useChiliPiper } from '@hooks'
 
 const blogResourceItems = [
@@ -148,6 +149,10 @@ const PartnerPodcastPage: FunctionComponent = () => {
                 <a
                     href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
                     className="rounded btn btn-primary border-white mt-md-0 mt-4"
+                    title="Changelog"
+                    data-button-style={buttonStyle.primary}
+                    data-button-location={buttonLocation.hero}
+                    data-button-type="cta"
                 >
                     Changelog
                 </a>

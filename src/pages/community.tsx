@@ -31,7 +31,7 @@ export const Community: FunctionComponent = () => (
                             className="btn btn-primary"
                             href="https://discord.gg/rDPqBejz93"
                             data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.hero}
+                            data-button-location={buttonLocation.body}
                             data-button-type="cta"
                             title="Join our Discord"
                         >
@@ -53,15 +53,46 @@ export const Community: FunctionComponent = () => (
             <h2 className="display-3 font-weight-bold mt-5 mb-3">Get up to speed</h2>
             <div className="row justify-content-center">
                 <p className="col-md-8">
-                    We can’t give you a 25-hour day, but here is a <a href="http://srcgr.ph/cheatsheet">speed sheet</a>{' '}
-                    with the most useful Sourcegraph shortcuts. Need even more speed? Fasten your seat belt and dive
-                    into our curated <a href="https://learn.sourcegraph.com/tags/sourcegraph">tutorials</a> &#38; other{' '}
-                    <a href="https://docs.sourcegraph.com/">tip documents</a>.
+                    We can’t give you a 25-hour day, but here is a{' '}
+                    <a
+                        href="http://srcgr.ph/cheatsheet"
+                        title="Speed sheet"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        speed sheet
+                    </a>
+                    {' '}with the most useful Sourcegraph shortcuts. Need even more speed? Fasten your seat belt and dive into our curated{' '}
+                    <a
+                        href="https://learn.sourcegraph.com/tags/sourcegraph"
+                        title="Tutorials"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        tutorials
+                    </a>
+                    {' '}&#38; other{' '}
+                    <a
+                        href="https://docs.sourcegraph.com/"
+                        title="Tip documents"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        tip documents
+                    </a>.
                 </p>
             </div>
             <div className="row">
                 <div className="col-12 mt-4">
-                    <a href="http://srcgr.ph/cheatsheet">
+                    <a
+                        href="http://srcgr.ph/cheatsheet"
+                        data-button-style={buttonStyle.image}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
                         <Figure
                             src="/community/cheatsheet_top.png"
                             alt="Sourcegraph Cheatsheet"
@@ -89,7 +120,7 @@ export const Community: FunctionComponent = () => (
                         href="https://discord.gg/rDPqBejz93"
                         title="Join us on Discord"
                         data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.hero}
+                        data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
                         Join us on Discord
@@ -215,8 +246,16 @@ export const Community: FunctionComponent = () => (
                 <div className="col-lg-7">
                     <h2 className="display-3 font-weight-bold mb-3">We’d love to hear from you!</h2>
                     <br />
-                    Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn,
-                    or email us at <a href="mailto:community@sourcegraph.com">community@sourcegraph.com</a>.
+                    Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn, or email us at{' '}
+                    <a
+                        href="mailto:community@sourcegraph.com"
+                        title="community@sourcegraph.com"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
+                    >
+                        community@sourcegraph.com
+                    </a>.
                 </div>
                 <div className="col-lg-5 mt-3">
                     <a

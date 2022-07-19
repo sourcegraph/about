@@ -168,6 +168,7 @@ const UseCases: FunctionComponent = () => {
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
                             className="btn btn-primary mt-5 d-block d-sm-inline-block"
+                            title="Request a demo"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"

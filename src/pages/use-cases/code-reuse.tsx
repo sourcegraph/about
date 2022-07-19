@@ -82,10 +82,17 @@ const items = [
                 header="Alert for deprecated code use"
                 text={
                     <p className="py-3">
-                        Catch deprecated code as it’s committed with
-                        <a href="https://docs.sourcegraph.com/code_monitoring"> code monitoring</a>. Monitor and get
-                        alerts when someone uses out-of-date libraries or deprecated functions, so you know who to work
-                        with on updates and adoption.
+                        Catch deprecated code as it’s committed with{' '}
+                        <a
+                            href="https://docs.sourcegraph.com/code_monitoring"
+                            title="Code monitoring"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            code monitoring
+                        </a>
+                        . Monitor and get alerts when someone uses out-of-date libraries or deprecated functions, so you know who to work with on updates and adoption.
                     </p>
                 }
             />

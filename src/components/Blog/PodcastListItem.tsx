@@ -87,6 +87,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                                     className="text-muted mr-4 font-weight-bold"
                                     target="_blank"
                                     rel="noreferrer"
+                                    title="Watch the video"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"

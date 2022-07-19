@@ -9,8 +9,7 @@ interface Props {
 
 export const ContactPresalesSupportAction: FunctionComponent<Props> = ({ className = '' }) => (
     <Link href="/demo" passHref={true}>
-        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a className={`d-flex align-items-center text-decoration-none ${className}`}>
+        <a href="#none" className={`d-flex align-items-center text-decoration-none ${className}`}>
             Talk to a product specialist
             <ArrowRightBoxIcon className="text-primary ml-1" />
         </a>

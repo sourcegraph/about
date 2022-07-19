@@ -40,6 +40,10 @@ const ContactHome: FunctionComponent = () => (
                                     href="https://github.com/sourcegraph/sourcegraph/issues"
                                     target="_blank"
                                     rel="noreferrer"
+                                    title="File a public issue"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     <GithubIcon /> File a public issue
                                 </a>
@@ -48,6 +52,10 @@ const ContactHome: FunctionComponent = () => (
                                     href="mailto:support@sourcegraph.com"
                                     target="_blank"
                                     rel="noreferrer"
+                                    title="Email support@sourcegraph.com"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     <EmailIcon /> Email support@sourcegraph.com
                                 </a>
@@ -101,6 +109,10 @@ const ContactHome: FunctionComponent = () => (
                                     href="mailto:hi@sourcegraph.com"
                                     target="_blank"
                                     rel="noreferrer"
+                                    title="hi@sourcegraph.com"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     <EmailIcon /> hi@sourcegraph.com
                                 </a>
@@ -109,6 +121,10 @@ const ContactHome: FunctionComponent = () => (
                                     href="https://twitter.com/sourcegraph"
                                     target="_blank"
                                     rel="noreferrer"
+                                    title="@sourcegraph"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     <TwitterIcon /> @sourcegraph
                                 </a>
@@ -117,6 +133,10 @@ const ContactHome: FunctionComponent = () => (
                                     target="_blank"
                                     href="https://github.com/sourcegraph"
                                     rel="noreferrer"
+                                    title="github.com/sourcegraph"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     <GithubIcon /> github.com/sourcegraph
                                 </a>
@@ -125,6 +145,10 @@ const ContactHome: FunctionComponent = () => (
                                     target="_blank"
                                     href="https://www.linkedin.com/company/sourcegraph"
                                     rel="noreferrer"
+                                    title="Sourcegraph on LinkedIn"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     <LinkedinIcon /> Sourcegraph on LinkedIn
                                 </a>
@@ -142,6 +166,10 @@ const ContactHome: FunctionComponent = () => (
                                                 target="_blank"
                                                 href="https://goo.gl/maps/LqTFnekUjRb9N12q6"
                                                 rel="noreferrer"
+                                                title="View on Google Maps"
+                                                data-button-style={buttonStyle.text}
+                                                data-button-location={buttonLocation.body}
+                                                data-button-type="cta"
                                             >
                                                 View on Google Maps
                                             </a>

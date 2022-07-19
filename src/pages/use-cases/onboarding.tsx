@@ -98,9 +98,17 @@ const items = [
                 header="Document and share actionable code snippets"
                 text={
                     <p className="py-3">
-                        With <a href="https://docs.sourcegraph.com/notebooks"> Notebooks</a>, teams can create always
-                        up-to-date, living documentation with familiar features like Markdown and novel capabilities
-                        like embedded searches, snippets, and symbols.
+                        With{' '}
+                        <a
+                            href="https://docs.sourcegraph.com/notebooks"
+                            title="Notebooks"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Notebooks
+                        </a>
+                        , teams can create always up-to-date, living documentation with familiar features like Markdown and novel capabilities like embedded searches, snippets, and symbols.
                     </p>
                 }
             />

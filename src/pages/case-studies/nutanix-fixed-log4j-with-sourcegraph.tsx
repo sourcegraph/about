@@ -11,6 +11,7 @@ import {
     ThreeUpText,
     UseChallengeSolutionResults,
 } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const threeUpTextItems = [
     {
@@ -95,7 +96,15 @@ export const CaseStudy: FunctionComponent = () => (
                     <span className="font-weight-bold">In December of 2021, </span>
                     software companies around the world discovered that Log4j, an open-source logging library bundled in
                     many software packages, contained significant vulnerabilities, one of which was a{' '}
-                    <a target="_blank" rel="noreferrer" href="https://logging.apache.org/log4j/2.x/security.html">
+                    <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://logging.apache.org/log4j/2.x/security.html"
+                        title="10/10 on the CVSS scale"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
                         10/10 on the CVSS scale
                     </a>
                     {'. '}
@@ -104,6 +113,10 @@ export const CaseStudy: FunctionComponent = () => (
                         target="_blank"
                         rel="noreferrer"
                         href="https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2022/01/ftc-warns-companies-remediate-log4j-security-vulnerability"
+                        title="ubiquitous"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
                     >
                         ubiquitous
                     </a>
@@ -139,6 +152,10 @@ export const CaseStudy: FunctionComponent = () => (
                         target="_blank"
                         rel="noreferrer"
                         href="https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/net/JMSAppender.html"
+                        title="JMSAppender"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
                     >
                         {' '}
                         JMSAppender

@@ -91,8 +91,16 @@ const items = [
                 text={
                     <p className="py-3">
                         Create living, actionable documentation with{' '}
-                        <a href="https://docs.sourcegraph.com/notebooks">Notebooks</a> that show your best practices
-                        with real-life examples you can share with your team.
+                        <a
+                            href="https://docs.sourcegraph.com/notebooks"
+                            title="Notebooks"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Notebooks
+                        </a>
+                        {' '}that show your best practices with real-life examples you can share with your team.
                     </p>
                 }
             />
@@ -108,7 +116,15 @@ const items = [
                     <p className="py-3">
                         Make sure deprecated endpoints don't sneak back into your code. Get alerts for new occurrences
                         of deprecated methods or restricted patterns with{' '}
-                        <a href="https://docs.sourcegraph.com/code_monitoring">code monitoring</a>.
+                        <a
+                            href="https://docs.sourcegraph.com/code_monitoring"
+                            title="Code monitoring"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            code monitoring
+                        </a>.
                     </p>
                 }
             />

@@ -81,6 +81,7 @@ export const CloudPage: FunctionComponent = () => {
                                     <a
                                         href="https://sourcegraph.com/.auth/github/login?pc=https%3A%2F%2Fgithub.com%2F%3A%3Ae917b2b7fa9040e1edd4&redirect=%2Fwelcome"
                                         className="btn bg-black text-white w-100 text-center mt-3"
+                                        title="Continue with GitHub"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.body}
                                         data-button-type="cta"
@@ -98,6 +99,7 @@ export const CloudPage: FunctionComponent = () => {
                                     <a
                                         href="https://sourcegraph.com/.auth/gitlab/login?pc=https%3A%2F%2Fgitlab.com%2F%3A%3A013395a61a639f4c3eb3668b89c96039637a86ebb6831f1e141627df3d55384d&redirect=%2Fwelcome"
                                         className={`btn text-white mt-3 w-100 ${styles.gitLab}`}
+                                        title="Continue with GitLab"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.body}
                                         data-button-type="cta"
@@ -134,6 +136,7 @@ export const CloudPage: FunctionComponent = () => {
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
                                                 className="text-reset text-black text-decoration-underline"
+                                                title="Terms of Service"
                                                 data-button-style={buttonStyle.text}
                                                 data-button-location={buttonLocation.body}
                                                 data-button-type="cta"
@@ -146,6 +149,7 @@ export const CloudPage: FunctionComponent = () => {
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
                                                 className="text-reset text-black underline"
+                                                title="Privacy Policy"
                                                 data-button-style={buttonStyle.text}
                                                 data-button-location={buttonLocation.body}
                                                 data-button-type="cta"

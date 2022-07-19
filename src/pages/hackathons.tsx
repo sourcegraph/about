@@ -3,6 +3,7 @@ import React, { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import { Layout } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 import { useHubSpot, useChiliPiper } from '@hooks'
 
 export const Pricing: FunctionComponent = () => {
@@ -47,7 +48,15 @@ export const Pricing: FunctionComponent = () => {
 
                         <p>
                             Fill out the form or tweet us{' '}
-                            <a href="https://twitter.com/sourcegraph" target="_blank" rel="nofollow noreferrer">
+                            <a
+                                href="https://twitter.com/sourcegraph"
+                                target="_blank"
+                                rel="nofollow noreferrer"
+                                title="@sourcegraph"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 @sourcegraph
                             </a>
                             , and we'll get back to you ASAP on how to get started!
@@ -59,9 +68,13 @@ export const Pricing: FunctionComponent = () => {
                                     target="_blank"
                                     rel="noreferrer"
                                     href="https://docs.sourcegraph.com/admin/install/docker"
+                                    title="Installation docs"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
-                                    installation docs.
-                                </a>
+                                    installation docs
+                                </a>.
                             </p>
                             <p>
                                 When you're ready to present, check out the{' '}
@@ -69,6 +82,10 @@ export const Pricing: FunctionComponent = () => {
                                     target="_blank"
                                     rel="noreferrer"
                                     href="https://docs.sourcegraph.com/getting-started/tour"
+                                    title="Sourcegraph tour"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     Sourcegraph tour
                                 </a>{' '}

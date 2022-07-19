@@ -25,7 +25,13 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                 {renderTitleAsLink === true ? (
                     <Link href={`/${blogType}/${slugPath}`} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a className={`d-block ${titleLinkClassName}`} title={frontmatter.title}>
+                        <a
+                            className={`d-block ${titleLinkClassName}`}
+                            title={frontmatter.title}
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             {frontmatter.title}
                         </a>
                     </Link>
@@ -40,7 +46,15 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                         <span key={a.name} data-author={a.name}>
                             {a.url ? (
                                 a.url.includes('http') ? (
-                                    <a href={a.url} target="_blank" rel="nofollow noreferrer">
+                                    <a
+                                        href={a.url}
+                                        target="_blank"
+                                        rel="nofollow noreferrer"
+                                        title={a.name}
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
                                         {a.name}
                                     </a>
                                 ) : (
@@ -91,7 +105,12 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                     <div className="col-md-3 d-flex">
                         <Link href={`/${blogType}/${slugPath}`} passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a>
+                            <a
+                                title={frontmatter.title}
+                                data-button-style={buttonStyle.image}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 <img
                                     className="w-100"
                                     src={

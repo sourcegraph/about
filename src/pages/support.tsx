@@ -4,6 +4,7 @@ import CheckIcon from 'mdi-react/CheckIcon'
 import Link from 'next/link'
 
 import { ContentSection, Layout, TrySourcegraph } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const CLASS_NAMES = {
     featureOffered: 'list-group-item bg-transparent border-0',
@@ -51,6 +52,10 @@ const Support: FunctionComponent = () => (
                                 <a
                                     className="font-size-base btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex"
                                     href="https://docs.sourcegraph.com#quickstart-guide"
+                                    title="Deploy"
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     Deploy
                                 </a>
@@ -59,7 +64,13 @@ const Support: FunctionComponent = () => (
                                 <li className={CLASS_NAMES.featureOffered}>
                                     <CheckIcon className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.communitySupport}
-                                    <a href="https://github.com/sourcegraph/sourcegraph/issues">
+                                    <a
+                                        href="https://github.com/sourcegraph/sourcegraph/issues"
+                                        title={SUPPORT_FEATURES.publicIssueTracker}
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
                                         {SUPPORT_FEATURES.publicIssueTracker}
                                     </a>
                                 </li>
@@ -101,6 +112,10 @@ const Support: FunctionComponent = () => (
                                 <a
                                     className="font-size-base btn btn-success w-100 justify-content-center text-center d-inline-flex"
                                     href="https://sourcegraph.com/subscriptions/new"
+                                    title="Buy now"
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     Buy now
                                 </a>
@@ -109,7 +124,13 @@ const Support: FunctionComponent = () => (
                                 <li className={CLASS_NAMES.featureOffered}>
                                     <CheckIcon className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.communitySupport}
-                                    <a href="https://github.com/sourcegraph/sourcegraph/issues">
+                                    <a
+                                        href="https://github.com/sourcegraph/sourcegraph/issues"
+                                        title={SUPPORT_FEATURES.publicIssueTracker}
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
                                         {SUPPORT_FEATURES.publicIssueTracker}
                                     </a>
                                 </li>
@@ -153,7 +174,13 @@ const Support: FunctionComponent = () => (
                                     passHref={true}
                                 >
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a className="font-size-base btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex">
+                                    <a
+                                        className="font-size-base btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex"
+                                        title="Contact us"
+                                        data-button-style={buttonStyle.outline}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
                                         Contact us
                                     </a>
                                 </Link>
@@ -162,7 +189,13 @@ const Support: FunctionComponent = () => (
                                 <li className={CLASS_NAMES.featureOffered}>
                                     <CheckIcon className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.communitySupport}
-                                    <a href="https://github.com/sourcegraph/sourcegraph/issues">
+                                    <a
+                                        href="https://github.com/sourcegraph/sourcegraph/issues"
+                                        title={SUPPORT_FEATURES.publicIssueTracker}
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
                                         {SUPPORT_FEATURES.publicIssueTracker}
                                     </a>
                                 </li>
@@ -209,7 +242,15 @@ const Support: FunctionComponent = () => (
                 <p className="mx-4">
                     * We will use commercially reasonable efforts to adhere to the SLAs and uptime defined above. SLAs
                     apply to tickets submitted via email to{' '}
-                    <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
+                    <a
+                        href="mailto:support@sourcegraph.com"
+                        title="support@sourcegraph.com"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        support@sourcegraph.com
+                    </a>.
                 </p>
                 <hr className="my-4" />
             </div>

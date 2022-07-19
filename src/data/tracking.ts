@@ -7,6 +7,7 @@ export const buttonStyle = {
     textWithBoxedArrow: 4,
     outlineWithArrow: 5,
     text: 6,
+    image: 7,
 }
 
 export const buttonLocation = {

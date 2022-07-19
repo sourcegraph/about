@@ -61,6 +61,7 @@ export const SelfHostedPage: FunctionComponent = () => {
                         <div className="d-flex flex-column align-items-start">
                             <a
                                 className="btn p-0 mt-5 text-primary"
+                                title="Talk to an engineer"
                                 data-button-style={buttonStyle.textWithArrow}
                                 data-button-location={buttonLocation.hero}
                                 data-button-type="cta"
