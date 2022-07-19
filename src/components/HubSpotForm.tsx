@@ -265,7 +265,7 @@ const onFormReady = (form: HTMLFormElement): void => {
 
         populateHiddenFormField('anonymous_user_id', sourcegraphAnonymousUid)
         populateHiddenFormField('first_source_url', firstSourceURL)
-        populateHiddenFormField('form_submission_source', window.location.pathname)
+        populateHiddenFormField('form_submission_source', window.location.href)
     }
 }
 
