@@ -24,6 +24,9 @@ In 3.42, we are releasing a completely redesigned user analytics experience for 
 ## Improved search-based navigation for Python non-locals
 We previously announced we’d [improved our search-based support for Python locals in Sourcegraph 3.40(https://about.sourcegraph.com/blog/release/3.40) by using tree-sitter. We've now extended this improvement for jump-to-definition to more kinds of variables such as class fields.
 
+## Beta UI improvements
+We're fixing UX papercuts and cleaning up our UI. 3.42 will have an optional Beta UI, which can be enabled via a toggle in the avatar menu. It's disabled by default but we encourage you to give it a spin! We think you'll find it cleaner and easier to use. You can find the toggle just below the theme dropdown in the avatar menu.
+
 ## Searching by repository descriptions
 We've introduced a new search predicate that enables searching by repository description, for example: `repo:has.description(machine learning)`. Now you can search for interesting repository topics, even if you don't know their names.
 ![](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/repo-description-search.png)
