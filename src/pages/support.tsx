@@ -152,10 +152,8 @@ const Support: FunctionComponent = () => (
                                     href="/contact/request-info/?form_submission_source=support-enterprise"
                                     passHref={true}
                                 >
-                                    <a
-                                        className="font-size-base btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex"
-                                        href="#none"
-                                    >
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                    <a className="font-size-base btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex">
                                         Contact us
                                     </a>
                                 </Link>

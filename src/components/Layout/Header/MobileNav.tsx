@@ -45,9 +45,9 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                             ) : (
                                 <li className="nav-item" role="presentation" key={camelCase(item.title)}>
                                     <Link href={item.href}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a
                                             className="nav-link"
-                                            href="#none"
                                             title={item.title}
                                             data-button-style={buttonStyle.text}
                                             data-button-location={buttonLocation.nav}
@@ -108,8 +108,8 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                                     ) : (
                                         <li key={camelCase(item.title)} className="nav-link" role="presentation">
                                             <Link href={item.href} passHref={true}>
+                                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                                 <a
-                                                    href="#none"
                                                     title={item.title}
                                                     data-button-style={buttonStyle.text}
                                                     data-button-location={buttonLocation.nav}
@@ -154,9 +154,9 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                 )}
                 <li className="align-items-center nav-item" role="presentation">
                     <Link href="/demo" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
                             className="nav-link"
-                            href="#none"
                             title="Request a demo"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.nav}
@@ -169,9 +169,9 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                 {!hideGetStartedButton && (
                     <li className="align-items-center nav-item" role="presentation">
                         <Link href="/get-started/self-hosted" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="nav-link"
-                                href="#none"
                                 title="Get started"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.nav}

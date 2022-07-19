@@ -25,9 +25,9 @@ export const GetStartedPage: FunctionComponent = () => {
 
     const GetStartedCTA: FunctionComponent<{ href: string }> = ({ href }) => (
         <Link href={routerHook.queryString ? `${href}?${routerHook.queryString}` : href}>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a
                 className="btn btn-primary my-2"
-                href="#none"
                 title="Get started for free"
                 data-button-style={buttonStyle.primary}
                 data-button-location={buttonLocation.trySourcegraph}

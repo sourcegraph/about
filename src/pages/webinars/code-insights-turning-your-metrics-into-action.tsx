@@ -94,9 +94,9 @@ const Webinar: FunctionComponent = () => {
                     <ContentSection className="d-flex flex-column align-items-center py-7">
                         <h1 className="font-weight-bold text-center">Want to learn more about Code Insights?</h1>
                         <Link href="/contact/request-code-insights-demo" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-primary mt-4 col-12 col-md-3 col-xl-2"
-                                href="#none"
                                 title="Request a Demo"
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.bodyDemo}

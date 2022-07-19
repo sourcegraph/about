@@ -43,7 +43,8 @@ export const LinkPost: FunctionComponent<Props> = ({
 
             <div className="card-footer bg-transparent border-top-0 pt-0">
                 <Link href={url} passHref={true}>
-                    <a className={`text-gray-5 ${titleLinkClassName}`} href="#none">
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a className={`text-gray-5 ${titleLinkClassName}`}>
                         {post.frontmatter.publishDate}
                     </a>
                 </Link>

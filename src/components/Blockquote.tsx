@@ -56,9 +56,9 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
                 </a>
             ) : (
                 <Link href={link.href} passHref={true}>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         className="d-flex justify-content-center mt-3"
-                        href="#none"
                         title={link.text}
                         data-button-style={buttonStyle.textWithArrow}
                         data-button-location={buttonLocation.body}
@@ -113,7 +113,8 @@ export const BlockquoteWithBorder: FunctionComponent<{
         {logo &&
             (logo.href ? (
                 <Link href={logo.href} passHref={true}>
-                    <a href="#none" className="btn">
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a className="btn">
                         <img src={logo.src} width="110px" alt={logo.alt} />
                     </a>
                 </Link>
@@ -138,9 +139,9 @@ export const BlockquoteWithBorder: FunctionComponent<{
                 </a>
             ) : (
                 <Link href={link.href} passHref={true}>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         className="d-flex justify-content-center mt-3"
-                        href="#none"
                         title={link.text}
                         data-button-style={buttonStyle.textWithArrow}
                         data-button-location={buttonLocation.body}

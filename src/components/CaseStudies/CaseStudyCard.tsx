@@ -135,9 +135,9 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                         </a>
                     ) : (
                         <Link href={url} passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="card-link"
-                                href="#none"
                                 title={linkText + ': ' + title}
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}

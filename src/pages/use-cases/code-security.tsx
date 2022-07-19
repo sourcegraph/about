@@ -36,8 +36,8 @@ const items = [
                     <p className="py-3">
                         Vulnerabilities are inevitable, but they don't have to be disruptive. With{' '}
                         <Link href="/code-search">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                href="#none"
                                 title="Code Search"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
@@ -65,8 +65,8 @@ const items = [
                     <p className="py-3">
                         Deploy fixes at scale. Don't let the size and complexity of your codebase hold you back. With{' '}
                         <Link href="/batch-changes">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                href="#none"
                                 title="Batch Changes"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
@@ -118,8 +118,8 @@ const items = [
                         Get the full picture of an incident. Track how long the vulnerable code has been in your
                         codebase and how quickly you're removing it. With{' '}
                         <Link href="/code-insights">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                href="#none"
                                 title="Code Insights"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
@@ -270,9 +270,9 @@ const UseCasePage: FunctionComponent = () => (
                                 <div className="flex-column flex-md-row d-md-flex text-center">
                                     <div className="mb-3 mb-md-0">
                                         <Link href="/demo" passHref={true}>
+                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
                                                 className="btn btn-primary w-100 max-w-350"
-                                                href="#none"
                                                 title="Request a Demo."
                                                 data-button-style={buttonStyle.primary}
                                                 data-button-location={buttonLocation.hero}
@@ -284,9 +284,9 @@ const UseCasePage: FunctionComponent = () => (
                                     </div>
                                     <div className="ml-md-3">
                                         <Link href="/get-started/self-hosted" passHref={true}>
+                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
                                                 className="btn btn-outline-primary w-100 max-w-350"
-                                                href="#none"
                                                 title="Try Sourcegraph."
                                                 data-button-style={buttonStyle.outline}
                                                 data-button-location={buttonLocation.hero}
@@ -350,9 +350,9 @@ const UseCasePage: FunctionComponent = () => (
                             </p>
                             <h6>Learn how to use Sourcegraph to identify and resolve every instance of Log4j.</h6>
                             <Link href="/blog/log4j-log4shell-0-day" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
                                     className="font-weight-bold"
-                                    href="#none"
                                     title="Read the blog post"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
@@ -389,9 +389,9 @@ const UseCasePage: FunctionComponent = () => (
                     </div>
                     <div className="text-center col-12 px-0">
                         <Link href="/demo" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-primary max-w-350 w-100"
-                                href="#none"
                                 title="Request a Demo."
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.bodyDemo}
@@ -401,9 +401,9 @@ const UseCasePage: FunctionComponent = () => (
                             </a>
                         </Link>
                         <Link href="/use-cases" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="d-flex justify-content-center mt-4 font-weight-bold"
-                                href="#none"
                                 title="Explore other use cases"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
@@ -435,9 +435,9 @@ const UseCasePage: FunctionComponent = () => (
         <ContentSection>
             <div className="d-flex justify-content-center mb-lg-6">
                 <Link href="/get-started/self-hosted" passHref={true}>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         className="btn btn-primary"
-                        href="#none"
                         title="Ready to get started?"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}

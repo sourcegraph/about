@@ -74,7 +74,8 @@ export const CustomerLogos: FunctionComponent = () => (
     <div className="d-flex flex-wrap align-items-center justify-content-center max-w-1000 mx-auto user-select-none">
         {logos.map((logo: Logo) => (
             <Link key={logo.name} href={logo.link ? logo.link : '/case-studies'} passHref={true}>
-                <a className="max-w-100 max-h-100 my-3 mx-4 flex-shrink-0" href="#none">
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a className="max-w-100 max-h-100 my-3 mx-4 flex-shrink-0">
                     <img
                         src={logo.src}
                         alt={`${logo.name} logo`}

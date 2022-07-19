@@ -73,9 +73,9 @@ const FixingVulnerabilities: FunctionComponent = () => {
 
                 <div className="mt-5 max-w-400 mx-auto">
                     <Link href="/demo">
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
                             className="btn btn-primary mt-5 d-block d-sm-inline-block"
-                            href="#none"
                             title="Request a demo"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.bodyDemo}

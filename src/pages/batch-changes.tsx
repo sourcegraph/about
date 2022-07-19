@@ -29,9 +29,9 @@ export const BatchChangesPage: FunctionComponent = () => (
                             of your repositories with Batch Changes.
                         </p>
                         <Link href={batchChangesDemoFormURL} passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-primary"
-                                href="#none"
                                 title="Request a demo"
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.hero}

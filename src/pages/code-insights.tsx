@@ -552,9 +552,9 @@ const CodeInsightsPage: FunctionComponent = () => {
                         </div>
                         <div className="col-lg-7 d-flex flex-column pt-1">
                             <Link href="/contact/request-code-insights-demo" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
                                     className="btn btn-primary col-4 mr-3"
-                                    href="#none"
                                     title="Request a Demo of Code Insights."
                                     data-button-style={buttonStyle.primary}
                                     data-button-location={buttonLocation.trySourcegraph}

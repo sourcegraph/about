@@ -34,9 +34,9 @@ export const CodeSearchPage: FunctionComponent = () => (
                         </p>
                         <div className="d-flex flex-column flex-lg-row max-w-sm-400 pt-1">
                             <Link href="/demo" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
                                     className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
-                                    href="#none"
                                     title="Request a Demo"
                                     data-button-style={buttonStyle.primary}
                                     data-button-location={buttonLocation.hero}
@@ -46,9 +46,9 @@ export const CodeSearchPage: FunctionComponent = () => (
                                 </a>
                             </Link>
                             <Link href="/get-started/self-hosted" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
                                     className="btn btn-outline-primary w-md-100"
-                                    href="#none"
                                     title="Try Sourcegraph"
                                     data-button-style={buttonStyle.outline}
                                     data-button-location={buttonLocation.hero}
@@ -176,8 +176,8 @@ export const CodeSearchPage: FunctionComponent = () => (
                     />
                     <div className="mt-4">
                         <Link href="/case-studies/criteo-tackles-big-code" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                href="#none"
                                 title="Criteo Tackles Big Code"
                                 data-button-style={buttonStyle.textWithArrow}
                                 data-button-location={buttonLocation.body}

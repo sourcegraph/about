@@ -60,9 +60,9 @@ const ContactHome: FunctionComponent = () => (
                             <div className="card-body">
                                 <p className="card-text">For information about products and purchasing:</p>
                                 <Link href="/demo" passHref={true}>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
                                         className="btn btn-outline-primary stretched-link"
-                                        href="#none"
                                         title="Contact sales"
                                         data-button-style={buttonStyle.outline}
                                         data-button-location={buttonLocation.body}

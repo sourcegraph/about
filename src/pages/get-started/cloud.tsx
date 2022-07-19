@@ -131,9 +131,9 @@ export const CloudPage: FunctionComponent = () => {
                                     <small>
                                         By registering, you agree to our{' '}
                                         <Link href="/terms" passHref={true}>
+                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
                                                 className="text-reset text-black text-decoration-underline"
-                                                href="#none"
                                                 data-button-style={buttonStyle.text}
                                                 data-button-location={buttonLocation.body}
                                                 data-button-type="cta"
@@ -143,9 +143,9 @@ export const CloudPage: FunctionComponent = () => {
                                         </Link>{' '}
                                         and{' '}
                                         <Link href="/privacy" passHref={true}>
+                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
                                                 className="text-reset text-black underline"
-                                                href="#none"
                                                 data-button-style={buttonStyle.text}
                                                 data-button-location={buttonLocation.body}
                                                 data-button-type="cta"

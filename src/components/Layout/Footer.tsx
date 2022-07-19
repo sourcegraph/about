@@ -18,8 +18,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                 <div className="row footer__nav-sections">
                     <div className="col-12 col-lg-3 mb-5">
                         <Link href="/" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                href="#none"
                                 className="row footer__logo ml-1"
                                 title="Sourcegraph - Universal code search"
                                 data-button-style={buttonStyle.text}
@@ -72,8 +72,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                             </a>
                                         ) : (
                                             <Link href={item.href} passHref={true}>
+                                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                                 <a
-                                                    href="#none"
                                                     title={item.title}
                                                     data-button-style={buttonStyle.text}
                                                     data-button-location={buttonLocation.footer}
@@ -100,8 +100,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                     {postscriptLinks.items.map(item => (
                         <li className="nav-item" key={item.title}>
                             <Link href={item.href} passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    href="#none"
                                     className="nav-link text-gray-5"
                                     title={item.title}
                                     data-button-style={buttonStyle.text}

@@ -54,9 +54,9 @@ const Hero: FunctionComponent = () => {
                 <div className="max-w-350 mx-auto flex-column flex-sm-row d-sm-flex align-items-center">
                     <div className="col-sm-6 px-sm-0 mb-3 mb-sm-0 mr-sm-3">
                         <Link href="/get-started/self-hosted" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-primary w-100"
-                                href="#none"
                                 title="Get started"
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.hero}
@@ -68,9 +68,9 @@ const Hero: FunctionComponent = () => {
                     </div>
                     <div className="col-sm-6 px-sm-0">
                         <Link href="/demo" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-outline-primary w-100"
-                                href="#none"
                                 title="Request a demo"
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.hero}
@@ -105,9 +105,9 @@ const Hero: FunctionComponent = () => {
                 <h2 className="font-weight-bold">
                     Over{' '}
                     <Link href="/case-studies" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
                             className="text-vivid-violet"
-                            href="#none"
                             title="1.2 Million engineers"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.hero}
@@ -119,8 +119,8 @@ const Hero: FunctionComponent = () => {
                     use Sourcegraph to build software you rely on
                 </h2>
                 <Link href="/case-studies" passHref={true}>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
-                        href="#none"
                         title="Learn how our customers use Sourcegraph"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.hero}
