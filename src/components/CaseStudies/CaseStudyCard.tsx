@@ -1,7 +1,6 @@
 import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
