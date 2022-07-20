@@ -105,8 +105,8 @@ export const ReleasePost: FunctionComponent<Props> = ({
                     >
                         contact Sourcegraph
                     </a>
-                </Link>
-                {' '}with any licensing questions.
+                </Link>{' '}
+                with any licensing questions.
             </div>
         </>
     )

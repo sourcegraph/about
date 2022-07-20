@@ -63,8 +63,8 @@ const About: FunctionComponent = () => (
                             data-button-type="cta"
                         >
                             Sourcegraph handbook
-                        </a>
-                        {' '}has everything from our high-level{' '}
+                        </a>{' '}
+                        has everything from our high-level{' '}
                         <a
                             href="https://handbook.sourcegraph.com/strategy-goals/strategy"
                             title="Strategy"
@@ -73,8 +73,8 @@ const About: FunctionComponent = () => (
                             data-button-type="cta"
                         >
                             strategy
-                        </a>
-                        {' '}and{' '}
+                        </a>{' '}
+                        and{' '}
                         <a
                             href="https://handbook.sourcegraph.com/company/values"
                             title="Values"
@@ -93,8 +93,8 @@ const About: FunctionComponent = () => (
                             data-button-type="cta"
                         >
                             messaging
-                        </a>
-                        {' '}and{' '}
+                        </a>{' '}
+                        and{' '}
                         <a
                             href="https://handbook.sourcegraph.com/departments/product-engineering/engineering/process/principles-and-practices"
                             title="Engineering principles"
@@ -130,8 +130,8 @@ const About: FunctionComponent = () => (
                         data-button-type="cta"
                     >
                         all-remote
-                    </a>
-                    {' '}company, working asynchronously across time zones and continents. Meet our{' '}
+                    </a>{' '}
+                    company, working asynchronously across time zones and continents. Meet our{' '}
                     <a
                         href="https://handbook.sourcegraph.com/company/team"
                         title="Team members"
@@ -140,8 +140,8 @@ const About: FunctionComponent = () => (
                         data-button-type="cta"
                     >
                         team members
-                    </a>
-                    {' '}and learn about our commitment to{' '}
+                    </a>{' '}
+                    and learn about our commitment to{' '}
                     <a
                         href="https://handbook.sourcegraph.com/communication/code_of_conduct#our-standards"
                         title="Inclusion"
@@ -150,7 +150,8 @@ const About: FunctionComponent = () => (
                         data-button-type="cta"
                     >
                         inclusion
-                    </a>.
+                    </a>
+                    .
                 </p>
                 <a
                     className="btn btn-primary mt-3"

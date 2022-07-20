@@ -64,8 +64,8 @@ const items = [
                                 Code Search
                             </a>
                         </Link>
-                        , you can find examples to learn from across
-                        all of your company's private repositories and the open source universe.
+                        , you can find examples to learn from across all of your company's private repositories and the
+                        open source universe.
                     </p>
                 }
             />
@@ -105,8 +105,9 @@ const items = [
                             >
                                 Code Insights
                             </a>
-                        </Link>
-                        {' '} allows onboarding developers to understand in-process work and visualize how their contributions advance team goals.
+                        </Link>{' '}
+                        allows onboarding developers to understand in-process work and visualize how their contributions
+                        advance team goals.
                     </p>
                 }
             />
@@ -130,7 +131,8 @@ const items = [
                         >
                             Notebooks
                         </a>
-                        , teams can create always up-to-date, living documentation with familiar features like Markdown and novel capabilities like embedded searches, snippets, and symbols.
+                        , teams can create always up-to-date, living documentation with familiar features like Markdown
+                        and novel capabilities like embedded searches, snippets, and symbols.
                     </p>
                 }
             />

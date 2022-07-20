@@ -40,7 +40,8 @@ export const CaseStudy: FunctionComponent = () => (
                         also saw an increase in issues due to overlooked code interdependencies when newer engineers
                         committed their code changes. The need for fast and accurate code search and cross-repository
                         code navigation led the engineering team to install Sourcegraph. As a FinTech company that
-                        contains highly sensitive data from their customers, SoFi emphasizes on security and appreciated Sourcegraph's{' '}
+                        contains highly sensitive data from their customers, SoFi emphasizes on security and appreciated
+                        Sourcegraph's{' '}
                         <Link href="/blog/from-saas-to-on-premises" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
@@ -49,9 +50,10 @@ export const CaseStudy: FunctionComponent = () => (
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                            on-prem solution
+                                on-prem solution
                             </a>
-                        </Link>.
+                        </Link>
+                        .
                     </p>
                     <h2 className="pt-5 pb-1">Move fast and don't break things</h2>
                     <p>

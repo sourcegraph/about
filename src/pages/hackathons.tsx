@@ -82,7 +82,8 @@ export const Pricing: FunctionComponent = () => {
                                     data-button-type="cta"
                                 >
                                     installation docs
-                                </a>.
+                                </a>
+                                .
                             </p>
                             <p>
                                 When you're ready to present, check out the{' '}

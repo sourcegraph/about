@@ -62,8 +62,9 @@ export const Community: FunctionComponent = () => (
                         data-button-type="cta"
                     >
                         speed sheet
-                    </a>
-                    {' '}with the most useful Sourcegraph shortcuts. Need even more speed? Fasten your seat belt and dive into our curated{' '}
+                    </a>{' '}
+                    with the most useful Sourcegraph shortcuts. Need even more speed? Fasten your seat belt and dive
+                    into our curated{' '}
                     <a
                         href="https://learn.sourcegraph.com/tags/sourcegraph"
                         title="Tutorials"
@@ -72,8 +73,8 @@ export const Community: FunctionComponent = () => (
                         data-button-type="cta"
                     >
                         tutorials
-                    </a>
-                    {' '}&#38; other{' '}
+                    </a>{' '}
+                    &#38; other{' '}
                     <a
                         href="https://docs.sourcegraph.com/"
                         title="Tip documents"
@@ -82,7 +83,8 @@ export const Community: FunctionComponent = () => (
                         data-button-type="cta"
                     >
                         tip documents
-                    </a>.
+                    </a>
+                    .
                 </p>
             </div>
             <div className="row">
@@ -246,7 +248,8 @@ export const Community: FunctionComponent = () => (
                 <div className="col-lg-7">
                     <h2 className="display-3 font-weight-bold mb-3">We’d love to hear from you!</h2>
                     <br />
-                    Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn, or email us at{' '}
+                    Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn,
+                    or email us at{' '}
                     <a
                         href="mailto:community@sourcegraph.com"
                         title="community@sourcegraph.com"
@@ -255,7 +258,8 @@ export const Community: FunctionComponent = () => (
                         data-button-type="cta"
                     >
                         community@sourcegraph.com
-                    </a>.
+                    </a>
+                    .
                 </div>
                 <div className="col-lg-5 mt-3">
                     <a

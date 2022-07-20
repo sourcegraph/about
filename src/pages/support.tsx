@@ -51,8 +51,8 @@ const Support: FunctionComponent = () => (
                         >
                             Pricing
                         </a>
-                    </Link>
-                    {' '}to learn more about these tiers.
+                    </Link>{' '}
+                    to learn more about these tiers.
                 </p>
             </ContentSection>
             <div className="container-fluid my-0 mx-auto max-w-1000">
@@ -234,7 +234,10 @@ const Support: FunctionComponent = () => (
                                 <li className={CLASS_NAMES.featureOffered}>
                                     <CheckIcon className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.sharedSlackChannelContact}{' '}
-                                    <Link href="/contact/request-info/?form_submission_source=support-enterprise" passHref={true}>
+                                    <Link
+                                        href="/contact/request-info/?form_submission_source=support-enterprise"
+                                        passHref={true}
+                                    >
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a
                                             title="contact us"
@@ -250,7 +253,10 @@ const Support: FunctionComponent = () => (
                                 <li className={CLASS_NAMES.featureOffered}>
                                     <CheckIcon className={CLASS_NAMES.featureChecked} />
                                     Dedicated customer engineer assigned to you (available,{' '}
-                                    <Link href="/contact/request-info/?form_submission_source=support-enterprise" passHref={true}>
+                                    <Link
+                                        href="/contact/request-info/?form_submission_source=support-enterprise"
+                                        passHref={true}
+                                    >
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a
                                             title="contact us"
@@ -278,7 +284,8 @@ const Support: FunctionComponent = () => (
                         data-button-type="cta"
                     >
                         support@sourcegraph.com
-                    </a>.
+                    </a>
+                    .
                 </p>
                 <hr className="my-4" />
             </div>

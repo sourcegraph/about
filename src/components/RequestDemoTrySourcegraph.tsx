@@ -40,7 +40,7 @@ export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
                             data-button-type="cta"
                         >
                             <p className="mt-4 btn font-weight-bold text-curious-blue">Try Sourcegraph now</p>
-                        </a>   
+                        </a>
                     </Link>
                 </div>
             </div>

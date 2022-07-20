@@ -88,7 +88,8 @@ const items = [
                             >
                                 Batch Changes
                             </a>
-                        </Link>.
+                        </Link>
+                        .
                     </p>
                 }
             />
@@ -112,7 +113,8 @@ const items = [
                         >
                             code monitoring
                         </a>
-                        . Monitor and get alerts when someone uses out-of-date libraries or deprecated functions, so you know who to work with on updates and adoption.
+                        . Monitor and get alerts when someone uses out-of-date libraries or deprecated functions, so you
+                        know who to work with on updates and adoption.
                     </p>
                 }
             />
@@ -126,7 +128,8 @@ const items = [
                 header="Track your code reuse efforts "
                 text={
                     <p className="py-3">
-                        Get visibility into code reuse progress. Track the prevalence of shared code in your codebase over time with{' '}
+                        Get visibility into code reuse progress. Track the prevalence of shared code in your codebase
+                        over time with{' '}
                         <Link href="/code-insights" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
@@ -137,7 +140,8 @@ const items = [
                             >
                                 Code Insights
                             </a>
-                        </Link>.
+                        </Link>
+                        .
                     </p>
                 }
             />

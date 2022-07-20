@@ -133,8 +133,8 @@ const PartnerPodcastPage: FunctionComponent = () => {
                                     Get started
                                 </a>
                             </Link>
-                        </span>
-                        {' '}for free with up to 10 teammates or{' '}
+                        </span>{' '}
+                        for free with up to 10 teammates or{' '}
                         <span>
                             <Link href="/demo" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -147,8 +147,8 @@ const PartnerPodcastPage: FunctionComponent = () => {
                                     request a demo
                                 </a>
                             </Link>
-                        </span>
-                        {' '}to learn about our enterprise plan and to see Sourcegraph in your own environment.
+                        </span>{' '}
+                        to learn about our enterprise plan and to see Sourcegraph in your own environment.
                     </h5>
                 </section>
             </div>

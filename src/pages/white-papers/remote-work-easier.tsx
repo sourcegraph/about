@@ -37,8 +37,8 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                             data-button-type="cta"
                         >
                             teammates
-                        </a>
-                        {' '}on how to live your best distributed work life!
+                        </a>{' '}
+                        on how to live your best distributed work life!
                     </p>
                     <h2 className="pt-5 pb-1">Tips for working remotely</h2>
                     <h3 className="pt-5 pb-1">Home office and desk setup</h3>
@@ -177,7 +177,8 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                             data-button-type="cta"
                         >
                             Sourcegraph handbook
-                        </a>.
+                        </a>
+                        .
                     </p>
                     <h3 className="pt-5 pb-1">Share code more easily</h3>
                     <p>
@@ -211,8 +212,8 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                             data-button-type="cta"
                         >
                             browser search engine shortcuts
-                        </a>
-                        {' '}to quickly search across your entire organization's code. Both allow you to instantly get a link
+                        </a>{' '}
+                        to quickly search across your entire organization's code. Both allow you to instantly get a link
                         to that code that you can share with a coworker.
                     </p>
                     <Figure
@@ -269,8 +270,8 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                                 data-button-type="cta"
                             >
                                 Tweet
-                            </a>
-                            {' '}and let us know!
+                            </a>{' '}
+                            and let us know!
                         </h5>
                     </div>
                 </div>

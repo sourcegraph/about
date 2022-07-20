@@ -147,7 +147,8 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                             </a>
                         </Link>
                     )}
-                </span>.
+                </span>
+                .
             </p>
         </div>
     </div>

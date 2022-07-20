@@ -112,8 +112,8 @@ export const AbcsEbook: FunctionComponent = () => (
                             data-button-type="cta"
                         >
                             via Twitter
-                        </a>
-                        {' '}or{' '}
+                        </a>{' '}
+                        or{' '}
                         <a
                             href="mailto:hi+abc@sourcegraph.com"
                             title="Email"
@@ -122,7 +122,8 @@ export const AbcsEbook: FunctionComponent = () => (
                             data-button-type="cta"
                         >
                             email
-                        </a>.
+                        </a>
+                        .
                     </p>
 
                     <p className="text-center">
@@ -165,7 +166,8 @@ export const AbcsEbook: FunctionComponent = () => (
                 <div className="col-md-10">
                     <h3 className="text-center">About Sourcegraph</h3>
                     <p>
-                        Sourcegraph empowers all developers to explore, navigate and better understand all code, faster, with{' '}
+                        Sourcegraph empowers all developers to explore, navigate and better understand all code, faster,
+                        with{' '}
                         <Link href="/universal-code-search" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
@@ -177,7 +179,8 @@ export const AbcsEbook: FunctionComponent = () => (
                                 Universal Code Search
                             </a>
                         </Link>
-                        . Sourcegraph's mission is to make it easier and faster for developers to work on solving problems.
+                        . Sourcegraph's mission is to make it easier and faster for developers to work on solving
+                        problems.
                     </p>
                     <p>
                         To learn more, get our ebook:{' '}

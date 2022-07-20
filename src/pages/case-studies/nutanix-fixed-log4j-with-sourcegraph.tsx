@@ -163,17 +163,17 @@ export const CaseStudy: FunctionComponent = () => (
                     . Jon used Sourcegraph to see where JMSAppender existed, fixed it, and sent out a release. “That
                     took almost less than five minutes,” Jon said. Sourcegraph released a{' '}
                     <Link href="/blog/log4j-log4shell-0-day/" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="blog post"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                blog post
-                            </a>
-                    </Link>
-                    {' '}that explained how other companies addressing Log4j could use code search for similar benefits.
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            title="blog post"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            blog post
+                        </a>
+                    </Link>{' '}
+                    that explained how other companies addressing Log4j could use code search for similar benefits.
                 </p>
                 <p>This speed gave the team a head start on mitigation.</p>
                 <p>Deploying these fixes required quality assurance and testing as well as discovery and fixing.</p>
@@ -234,9 +234,9 @@ export const CaseStudy: FunctionComponent = () => (
                                 search contexts
                             </a>
                         </Link>
-                        , Jon was able to share
-                        relevant contexts and queries, showing the team how they could verify whether a given Log4j
-                        instance was present or absent. He could show them precisely what they changed.
+                        , Jon was able to share relevant contexts and queries, showing the team how they could verify
+                        whether a given Log4j instance was present or absent. He could show them precisely what they
+                        changed.
                     </p>
                     <p>
                         “We used Sourcegraph contexts to see specifically where a service was at any given point in
@@ -286,7 +286,8 @@ export const CaseStudy: FunctionComponent = () => (
                             >
                                 find and fix the next vulnerability
                             </a>
-                        </Link>.
+                        </Link>
+                        .
                     </p>
                 </section>
             </ContentSection>
