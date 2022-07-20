@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
@@ -132,6 +133,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                             data-button-type="cta"
                         >
                             {linkText}
+                            <ArrowRightIcon size={20} className="ml-1" />
                         </a>
                     ) : (
                         <Link href={url} passHref={true}>
@@ -144,6 +146,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                                 data-button-type="cta"
                             >
                                 {linkText}
+                                <ArrowRightIcon size={20} className="ml-1" />
                             </a>
                         </Link>
                     )}

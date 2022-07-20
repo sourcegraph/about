@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
 import { ContentSection } from '@components'
@@ -38,7 +39,10 @@ export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        <p className="mt-4 btn font-weight-bold text-curious-blue">Try Sourcegraph now</p>
+                        <p className="mt-4 btn font-weight-bold text-curious-blue">
+                            Try Sourcegraph now
+                            <ArrowRightIcon className="ml-2" />
+                        </p>
                     </a>
                 </Link>
             </div>
