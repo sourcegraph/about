@@ -39,6 +39,9 @@
         color.adjust($blue-mist, $alpha: -0.7) 81.79%
     );
 }
+@mixin GradientSaturn {
+    background: linear-gradient(90deg, $violet-mist, $blue-mist);
+}
 
 // Gradients not listed in our Brand Guidelines
 @mixin GradientGreenBlue {
@@ -81,6 +84,9 @@
 }
 .bg-gradient-saturn-reversed {
     @include GradientSaturnReversedSaturated;
+}
+.bg-gradient-saturn {
+    @include GradientSaturn;
 }
 
 // Gradients not listed in our Brand Guidelines - utility classes

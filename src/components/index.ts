@@ -3,7 +3,7 @@ export { Install } from './Install'
 export { Jumbotron } from './Jumbotron'
 export { Alert } from './Alert'
 export { BackButton, BackButtonBold, BackButtonLight } from './BackButton'
-export { BlockquoteWithBorder, BlockquoteWithLogoTop, BlockquoteWithLogoBottom } from './Blockquote'
+export { BlockquoteWithLogoTop, BlockquoteWithLogoBottom, Blockquote } from './Blockquote'
 export { BlogResourceItem } from './BlogResourceItem'
 export { BoardSection } from './BoardSection'
 export { ContentSection } from './ContentSection'
@@ -47,8 +47,8 @@ export {
     CaseStudyJumbotron,
     CaseStudyLayout,
     CaseStudyCard,
-    InContentBlockquote,
     MediaQuote,
+    NewCaseStudyJumbotron,
     NewCaseStudyLayout,
     UseChallengeSolutionResults,
 } from './CaseStudies'

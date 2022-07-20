@@ -8,8 +8,8 @@ import { ContentSection, Layout, TrySourcegraph } from '@components'
 const CLASS_NAMES = {
     featureOffered: 'list-group-item bg-transparent border-0',
     featureNotOffered: 'list-group-item bg-transparent border-0 text-muted',
-    featureChecked: 'icon-inline text-success',
-    featureNotChecked: 'icon-inline invisible',
+    featureChecked: 'text-success',
+    featureNotChecked: 'invisible',
 }
 
 const SUPPORT_FEATURES = {

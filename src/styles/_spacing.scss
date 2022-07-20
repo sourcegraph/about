@@ -48,7 +48,7 @@ $maxBreakpoint: map.get($grid-breakpoints, 'xl');
                     min-width: #{$spacing}px;
                 }
                 .max-w-#{$breakpoint}-#{$spacing} {
-                    max-width: #{$spacing}px;
+                    max-width: #{$spacing}px !important;
                 }
             }
         }
