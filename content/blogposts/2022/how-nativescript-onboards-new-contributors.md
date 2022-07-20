@@ -52,7 +52,7 @@ The team has mentioned that having more hands-on sessions with regular contribut
 
 ### What Makes for a Successful Contribution?
 
-NativeScript has a wide range of use cases so contributions that show a nuanced understanding of the ones that are the most valuable. Typically this requires the contributor to take special care of the existing conditions in the code and leverage the functionality to create something new. Unfortunately, those who don’t pay attention to these conventions make things much more difficult than they need to be.
+NativeScript has a wide range of use cases, and contributions that show a nuanced understanding of these are the most valuable. Typically this requires the contributor to take special care of the existing conditions in the code and leverage the functionality to create something new. Unfortunately, those who don’t pay attention to these conventions make things much more difficult than they need to be.
 
 Taking some time here to align a contribution with the existing code style is a surefire way to be helpful and useful – and it's something that is greatly appreciated by the NativeScript team.
 
