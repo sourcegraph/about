@@ -3,9 +3,10 @@ import { FunctionComponent, useState, useEffect } from 'react'
 import classNames from 'classnames'
 import Navbar from 'react-bootstrap/Navbar'
 
+import { NavLink, navLinks } from '../navLinks'
+
 import DesktopNav from './DesktopNav'
 import MobileNav from './MobileNav'
-import { NavLink, navLinks } from './navLinks'
 
 interface Props {
     isHome?: boolean

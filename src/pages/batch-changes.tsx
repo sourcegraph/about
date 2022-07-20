@@ -90,7 +90,15 @@ export const BatchChangesPage: FunctionComponent = () => (
                         <ul>
                             <li className="mt-2">
                                 Find all occurrences of code to change with Sourcegraph{' '}
-                                <a href="http://about.sourcegraph.com/">universal code search</a>
+                                <a
+                                    href="http://about.sourcegraph.com/"
+                                    title="universal code search"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    universal code search
+                                </a>
                             </li>
                             <li className="mt-2">
                                 Programmatically define changes by creating a declarative specification file

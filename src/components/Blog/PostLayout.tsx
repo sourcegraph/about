@@ -4,6 +4,7 @@ import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
 import { Alert, Blockquote, EmbeddedHubSpot, Figure, TableWrapper, Video, YouTube, TrySourcegraph } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 
@@ -32,7 +33,15 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                 {renderTitleAsLink === true ? (
                     <Link href={url} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a className={`d-block ${titleLinkClassName}`}>{post.frontmatter.title}</a>
+                        <a
+                            className={`d-block ${titleLinkClassName}`}
+                            title={post.frontmatter.title}
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            {post.frontmatter.title}
+                        </a>
                     </Link>
                 ) : (
                     post.frontmatter.title
@@ -45,11 +54,29 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                         <span key={a.name} data-author={a.name}>
                             {a.url ? (
                                 a.url.includes('http') ? (
-                                    <a href={a.url} target="_blank" rel="nofollow noreferrer">
+                                    <a
+                                        href={a.url}
+                                        target="_blank"
+                                        rel="nofollow noreferrer"
+                                        title={a.name}
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
                                         {a.name}
                                     </a>
                                 ) : (
-                                    <Link href={a.url}>{a.name}</Link>
+                                    <Link href={a.url} passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a
+                                            title={a.name}
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            {a.name}
+                                        </a>
+                                    </Link>
                                 )
                             ) : (
                                 a.name

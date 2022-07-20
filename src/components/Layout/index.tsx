@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 import Footer from './Footer'
 import { Header } from './Header'
-import { navLinks } from './Header/navLinks'
+import { navLinks } from './navLinks'
 
 interface LayoutProps {
     meta?: {

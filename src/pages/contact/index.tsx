@@ -8,6 +8,7 @@ import TwitterIcon from 'mdi-react/TwitterIcon'
 import Link from 'next/link'
 
 import { Layout, ContentSection, ContentPage } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const title = 'Sourcegraph - Contact Sourcegraph'
 const description = 'Contact a real human being on our team.'
@@ -39,6 +40,10 @@ const ContactHome: FunctionComponent = () => (
                                     href="https://github.com/sourcegraph/sourcegraph/issues"
                                     target="_blank"
                                     rel="noreferrer"
+                                    title="File a public issue"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     <GithubIcon /> File a public issue
                                 </a>
@@ -47,6 +52,10 @@ const ContactHome: FunctionComponent = () => (
                                     href="mailto:support@sourcegraph.com"
                                     target="_blank"
                                     rel="noreferrer"
+                                    title="Email support@sourcegraph.com"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     <EmailIcon /> Email support@sourcegraph.com
                                 </a>
@@ -60,7 +69,15 @@ const ContactHome: FunctionComponent = () => (
                                 <p className="card-text">For information about products and purchasing:</p>
                                 <Link href="/demo" passHref={true}>
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a className="btn btn-outline-primary stretched-link">Contact sales</a>
+                                    <a
+                                        className="btn btn-outline-primary stretched-link"
+                                        title="Contact sales"
+                                        data-button-style={buttonStyle.outline}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
+                                        Contact sales
+                                    </a>
                                 </Link>
                             </div>
                         </div>
@@ -73,6 +90,10 @@ const ContactHome: FunctionComponent = () => (
                                 <a
                                     href="https://boards.greenhouse.io/sourcegraph91"
                                     className="btn btn-outline-primary stretched-link"
+                                    title="See career opportunities"
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     See career opportunities
                                 </a>
@@ -88,6 +109,10 @@ const ContactHome: FunctionComponent = () => (
                                     href="mailto:hi@sourcegraph.com"
                                     target="_blank"
                                     rel="noreferrer"
+                                    title="hi@sourcegraph.com"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     <EmailIcon /> hi@sourcegraph.com
                                 </a>
@@ -96,6 +121,10 @@ const ContactHome: FunctionComponent = () => (
                                     href="https://twitter.com/sourcegraph"
                                     target="_blank"
                                     rel="noreferrer"
+                                    title="@sourcegraph"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     <TwitterIcon /> @sourcegraph
                                 </a>
@@ -104,6 +133,10 @@ const ContactHome: FunctionComponent = () => (
                                     target="_blank"
                                     href="https://github.com/sourcegraph"
                                     rel="noreferrer"
+                                    title="github.com/sourcegraph"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     <GithubIcon /> github.com/sourcegraph
                                 </a>
@@ -112,6 +145,10 @@ const ContactHome: FunctionComponent = () => (
                                     target="_blank"
                                     href="https://www.linkedin.com/company/sourcegraph"
                                     rel="noreferrer"
+                                    title="Sourcegraph on LinkedIn"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     <LinkedinIcon /> Sourcegraph on LinkedIn
                                 </a>
@@ -129,6 +166,10 @@ const ContactHome: FunctionComponent = () => (
                                                 target="_blank"
                                                 href="https://goo.gl/maps/LqTFnekUjRb9N12q6"
                                                 rel="noreferrer"
+                                                title="View on Google Maps"
+                                                data-button-style={buttonStyle.text}
+                                                data-button-location={buttonLocation.body}
+                                                data-button-type="cta"
                                             >
                                                 View on Google Maps
                                             </a>

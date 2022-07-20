@@ -52,8 +52,20 @@ const items = [
                 header="Enable developers to learn by example"
                 text={
                     <p className="py-3">
-                        With <Link href="/code-search">Code Search</Link>, you can find examples to learn from across
-                        all of your company's private repositories and the open source universe.
+                        With{' '}
+                        <Link href="/code-search" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Search"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Search
+                            </a>
+                        </Link>
+                        , you can find examples to learn from across all of your company's private repositories and the
+                        open source universe.
                     </p>
                 }
             />
@@ -83,8 +95,19 @@ const items = [
                 header="Visualize contributions and chart team progress"
                 text={
                     <p className="py-3">
-                        <Link href="/code-insights">Code Insights</Link> allows onboarding developers to understand
-                        in-process work and visualize how their contributions advance team goals.
+                        <Link href="/code-insights" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Insights"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Insights
+                            </a>
+                        </Link>{' '}
+                        allows onboarding developers to understand in-process work and visualize how their contributions
+                        advance team goals.
                     </p>
                 }
             />
@@ -98,9 +121,18 @@ const items = [
                 header="Document and share actionable code snippets"
                 text={
                     <p className="py-3">
-                        With <a href="https://docs.sourcegraph.com/notebooks"> Notebooks</a>, teams can create always
-                        up-to-date, living documentation with familiar features like Markdown and novel capabilities
-                        like embedded searches, snippets, and symbols.
+                        With{' '}
+                        <a
+                            href="https://docs.sourcegraph.com/notebooks"
+                            title="Notebooks"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Notebooks
+                        </a>
+                        , teams can create always up-to-date, living documentation with familiar features like Markdown
+                        and novel capabilities like embedded searches, snippets, and symbols.
                     </p>
                 }
             />
@@ -313,7 +345,13 @@ const UseCasePage: FunctionComponent = () => (
                         </Link>
                         <Link href="/use-cases" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="d-flex justify-content-center mt-4 font-weight-bold">
+                            <a
+                                className="d-flex justify-content-center mt-4 font-weight-bold"
+                                title="Explore other use cases"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 Explore other use cases
                             </a>
                         </Link>
@@ -346,6 +384,7 @@ const UseCasePage: FunctionComponent = () => (
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         className="btn btn-primary"
+                        title="Ready to get started?"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"

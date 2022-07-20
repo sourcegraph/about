@@ -2,6 +2,8 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
+import { buttonStyle, buttonLocation } from '@data'
+
 interface Logo {
     name: string
     src: string
@@ -75,7 +77,13 @@ export const CustomerLogos: FunctionComponent = () => (
         {logos.map((logo: Logo) => (
             <Link key={logo.name} href={logo.link ? logo.link : '/case-studies'} passHref={true}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="max-w-100 max-h-100 my-3 mx-4 flex-shrink-0">
+                <a
+                    className="max-w-100 max-h-100 my-3 mx-4 flex-shrink-0"
+                    title={`${logo.name} logo`}
+                    data-button-style={buttonStyle.image}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                >
                     <img
                         src={logo.src}
                         alt={`${logo.name} logo`}
