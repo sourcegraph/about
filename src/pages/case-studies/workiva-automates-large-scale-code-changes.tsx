@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 export const CaseStudy: FunctionComponent = () => {
     const trentGrover = 'Trent Grover, Director of Architecture, Workiva'
@@ -70,8 +71,19 @@ export const CaseStudy: FunctionComponent = () => {
                         <h2 className="pt-5 pb-1">Automating large-scale updates with Batch Changes</h2>
 
                         <p>
-                            As an organization that values paying down tech debt, Workiva's Client Platform team started
-                            using Sourcegraph <Link href="/batch-changes">Batch Changes</Link> to help them efficiently
+                            As an organization that values paying down tech debt, Workiva's Client Platform team started using Sourcegraph{' '}
+                            <Link href="/batch-changes" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    title="Batch Changes"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    Batch Changes
+                                </a>
+                            </Link>
+                            {' '}to help them efficiently
                             propagate updates to dependencies across all of their repositories without any ongoing
                             maintenance. The team has already used Batch Changes to:
                         </p>

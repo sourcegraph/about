@@ -165,14 +165,32 @@ export const AbcsEbook: FunctionComponent = () => (
                 <div className="col-md-10">
                     <h3 className="text-center">About Sourcegraph</h3>
                     <p>
-                        Sourcegraph empowers all developers to explore, navigate and better understand all code, faster,
-                        with <Link href="/universal-code-search">Universal Code Search</Link>. Sourcegraph's mission is
-                        to make it easier and faster for developers to work on solving problems.
+                        Sourcegraph empowers all developers to explore, navigate and better understand all code, faster, with{' '}
+                        <Link href="/universal-code-search" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Universal Code Search"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Universal Code Search
+                            </a>
+                        </Link>
+                        . Sourcegraph's mission is to make it easier and faster for developers to work on solving problems.
                     </p>
                     <p>
                         To learn more, get our ebook:{' '}
-                        <Link href="/resources/universal-code-search-ebook/?utm_source=abc">
-                            Sourcegraph: Universal code search and intelligence
+                        <Link href="/resources/universal-code-search-ebook/?utm_source=abc" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Sourcegraph: Universal code search and intelligence"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Sourcegraph: Universal code search and intelligence
+                            </a>
                         </Link>
                         .
                     </p>

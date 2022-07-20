@@ -40,7 +40,19 @@ const Support: FunctionComponent = () => (
             <ContentSection className="hero-section text-center py-5">
                 <h1 className="display-2 font-weight-bold">Sourcegraph Support</h1>
                 <p>
-                    See <Link href="/pricing">Pricing</Link> to learn more about these tiers.
+                    See{' '}
+                    <Link href="/pricing" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            title="Pricing"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Pricing
+                        </a>
+                    </Link>
+                    {' '}to learn more about these tiers.
                 </p>
             </ContentSection>
             <div className="container-fluid my-0 mx-auto max-w-1000">
@@ -222,16 +234,32 @@ const Support: FunctionComponent = () => (
                                 <li className={CLASS_NAMES.featureOffered}>
                                     <CheckIcon className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.sharedSlackChannelContact}{' '}
-                                    <Link href="/contact/request-info/?form_submission_source=support-enterprise">
-                                        contact us
+                                    <Link href="/contact/request-info/?form_submission_source=support-enterprise" passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a
+                                            title="contact us"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            contact us
+                                        </a>
                                     </Link>
                                     )
                                 </li>
                                 <li className={CLASS_NAMES.featureOffered}>
                                     <CheckIcon className={CLASS_NAMES.featureChecked} />
                                     Dedicated customer engineer assigned to you (available,{' '}
-                                    <Link href="/contact/request-info/?form_submission_source=support-enterprise">
-                                        contact us
+                                    <Link href="/contact/request-info/?form_submission_source=support-enterprise" passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a
+                                            title="contact us"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            contact us
+                                        </a>
                                     </Link>
                                     )
                                 </li>

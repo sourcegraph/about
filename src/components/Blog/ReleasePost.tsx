@@ -94,7 +94,19 @@ export const ReleasePost: FunctionComponent<Props> = ({
             </ul>
 
             <div className="card-body release-post__body">
-                * Please <Link href="/demo">contact Sourcegraph</Link> with any licensing questions.
+                * Please{' '}
+                <Link href="/demo" passHref={true}>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a
+                        title="contact Sourcegraph"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        contact Sourcegraph
+                    </a>
+                </Link>
+                {' '}with any licensing questions.
             </div>
         </>
     )

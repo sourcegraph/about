@@ -39,7 +39,15 @@ export const Pricing: FunctionComponent = () => {
                             <li>
                                 We'll give you access to all of our{' '}
                                 <Link href="/pricing" passHref={true}>
-                                    Enterprise features
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                    <a
+                                        title="Enterprise features"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
+                                        Enterprise features
+                                    </a>
                                 </Link>
                             </li>
                             <li>We'll give you live tech support</li>

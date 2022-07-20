@@ -18,7 +18,18 @@ const News: FunctionComponent = () => (
             <div className="text-center py-5">
                 <h1 className="display-2 font-weight-bold">Sourcegraph News</h1>
                 <p>
-                    The latest Sourcegraph news and <Link href="/press-release">press releases</Link>
+                    The latest Sourcegraph news and{' '}
+                    <Link href="/press-release" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            title="press releases"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            press releases
+                        </a>
+                    </Link>
                 </p>
 
                 <div className="container">

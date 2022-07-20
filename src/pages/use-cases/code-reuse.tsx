@@ -35,8 +35,18 @@ const items = [
                 text={
                     <p className="py-3">
                         Find out if a teammate has already solved your problem. With{' '}
-                        <Link href="/code-search">Code Search</Link>, you can quickly search across all your
-                        repositories to find the code you need.
+                        <Link href="/code-search" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Search"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Search
+                            </a>
+                        </Link>
+                        , you can quickly search across all your repositories to find the code you need.
                     </p>
                 }
             />
@@ -68,7 +78,17 @@ const items = [
                     <p className="py-3">
                         Spend less time on manual updates. Whether refactoring duplicate code or updating a shared
                         library, automate changes seamlessly across your entire codebase with{' '}
-                        <Link href="/batch-changes">Batch Changes</Link>.
+                        <Link href="/batch-changes" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Batch Changes"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Batch Changes
+                            </a>
+                        </Link>.
                     </p>
                 }
             />
@@ -106,8 +126,18 @@ const items = [
                 header="Track your code reuse efforts "
                 text={
                     <p className="py-3">
-                        Get visibility into code reuse progress. Track the prevalence of shared code in your codebase
-                        over time with <Link href="/code-insights">Code Insights</Link>..
+                        Get visibility into code reuse progress. Track the prevalence of shared code in your codebase over time with{' '}
+                        <Link href="/code-insights" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Insights"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Insights
+                            </a>
+                        </Link>.
                     </p>
                 }
             />

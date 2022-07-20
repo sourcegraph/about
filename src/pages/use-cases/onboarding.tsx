@@ -52,7 +52,19 @@ const items = [
                 header="Enable developers to learn by example"
                 text={
                     <p className="py-3">
-                        With <Link href="/code-search">Code Search</Link>, you can find examples to learn from across
+                        With{' '}
+                        <Link href="/code-search" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Search"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Search
+                            </a>
+                        </Link>
+                        , you can find examples to learn from across
                         all of your company's private repositories and the open source universe.
                     </p>
                 }
@@ -83,8 +95,18 @@ const items = [
                 header="Visualize contributions and chart team progress"
                 text={
                     <p className="py-3">
-                        <Link href="/code-insights">Code Insights</Link> allows onboarding developers to understand
-                        in-process work and visualize how their contributions advance team goals.
+                        <Link href="/code-insights" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Insights"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Insights
+                            </a>
+                        </Link>
+                        {' '} allows onboarding developers to understand in-process work and visualize how their contributions advance team goals.
                     </p>
                 }
             />

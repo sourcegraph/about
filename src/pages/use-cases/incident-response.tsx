@@ -34,9 +34,19 @@ const items = [
                 header="Response to incidents faster"
                 text={
                     <p className="py-3">
-                        No heroics required: Quickly understand all the context and dependencies around your codebase
-                        with <Link href="/code-search">Code Search</Link> so you can find the root cause of an incident
-                        with confidence and speed. Document work in progress with{' '}
+                        No heroics required: Quickly understand all the context and dependencies around your codebase with{' '}
+                        <Link href="/code-search" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Search"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                            Code Search
+                            </a>
+                        </Link>
+                        {' '}so you can find the root cause of an incident with confidence and speed. Document work in progress with{' '}
                         <a
                             href="https://docs.sourcegraph.com/notebooks"
                             title="Notebooks"
@@ -62,9 +72,18 @@ const items = [
                 text={
                     <p className="py-3">
                         Automate the deployment of fixes everywhere and at scale. With{' '}
-                        <Link href="/batch-changes">Batch Changes</Link>, you can automate code changes and monitor the
-                        merge status of each resulting PR. Refactor code to replace insecure functions, update
-                        vulnerable packages, or modify container configurations across hundreds of repositories.
+                        <Link href="/batch-changes" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Batch Changes"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Batch Changes
+                            </a>
+                        </Link>
+                        , you can automate code changes and monitor the merge status of each resulting PR. Refactor code to replace insecure functions, update vulnerable packages, or modify container configurations across hundreds of repositories.
                     </p>
                 }
             />
@@ -79,8 +98,18 @@ const items = [
                 text={
                     <p className="py-3">
                         Visualize fixes in progress and track their deployment. With{' '}
-                        <Link href="/code-insights">Code Insights</Link>, get visibility into remediation efforts and
-                        share progress with team leaders and all of your customers.
+                        <Link href="/code-insights" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Insights"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Insights
+                            </a>
+                        </Link>
+                        , get visibility into remediation efforts and share progress with team leaders and all of your customers.
                     </p>
                 }
             />

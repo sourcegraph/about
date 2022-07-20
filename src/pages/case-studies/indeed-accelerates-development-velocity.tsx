@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 export const CaseStudy: FunctionComponent = () => {
     const jaredHodge = 'Jared Hodge, Senior Manager, Developer Experience'
@@ -84,9 +85,19 @@ export const CaseStudy: FunctionComponent = () => {
                             to be changed, but the internal platforms team had no real power to ensure the changes
                             happened or to even nudge them towards completion. “I actually did a bit of prototyping to
                             see if I could create JIRA issues based on the code searches,” Hodge said, as part of a
-                            search for a way to help other team members actually make the changes that need to happen.
-                            When Sourcegraph's <Link href="/blog/introducing-batch-changes/">Batch Changes</Link> came
-                            out, Hodge immediately saw the value in further removing friction by letting one person
+                            search for a way to help other team members actually make the changes that need to happen. When Sourcegraph's{' '}
+                            <Link href="/blog/introducing-batch-changes/" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    title="Batch Changes"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    Batch Changes
+                                </a>
+                            </Link>
+                            {' '}came out, Hodge immediately saw the value in further removing friction by letting one person
                             update all versions of a library across the codebase and then notify all the service owners
                             so they could review.
                         </p>

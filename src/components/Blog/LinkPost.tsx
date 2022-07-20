@@ -25,7 +25,17 @@ export const LinkPost: FunctionComponent<Props> = ({
     const titleClassName = 'text-base link-post__html d-inline'
     const title = post.frontmatter.canonical ? (
         <h2 className={titleClassName}>
-            <Link href={post.frontmatter.canonical}>{post.frontmatter.title}</Link>
+            <Link href={post.frontmatter.canonical} passHref={true}>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a
+                    title={post.frontmatter.title}
+                    data-button-style={buttonStyle.text}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                >
+                    {post.frontmatter.title}
+                </a>
+            </Link>
         </h2>
     ) : (
         <h2 className={titleClassName}>{post.frontmatter.title}</h2>

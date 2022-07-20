@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import { ContentSection } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 interface Props {
     title?: string
@@ -20,10 +21,26 @@ export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
                 </div>
                 <div className="d-flex flex-column">
                     <Link href="/demo" passHref={true}>
-                        <div className="btn btn-primary">Request a demo</div>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            title="Request a demo"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            <div className="btn btn-primary">Request a demo</div>
+                        </a>
                     </Link>
                     <Link href="/get-started/self-hosted" passHref={true}>
-                        <p className="mt-4 btn font-weight-bold text-curious-blue">Try Sourcegraph now</p>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            title="Try Sourcegraph now"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            <p className="mt-4 btn font-weight-bold text-curious-blue">Try Sourcegraph now</p>
+                        </a>   
                     </Link>
                 </div>
             </div>

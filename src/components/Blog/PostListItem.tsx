@@ -58,7 +58,17 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                                         {a.name}
                                     </a>
                                 ) : (
-                                    <Link href={a.url}>{a.name}</Link>
+                                    <Link href={a.url} passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a
+                                            title={a.name}
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            {a.name}
+                                        </a>
+                                    </Link>
                                 )
                             ) : (
                                 a.name

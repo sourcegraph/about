@@ -122,13 +122,33 @@ const PartnerPodcastPage: FunctionComponent = () => {
                     <h1 className="display-3 font-weight-bold pt-2">Want to use Sourcegraph at your company?</h1>
                     <h5 className="pt-4 pb-1 mx-auto max-w-550 font-weight-normal">
                         <span>
-                            <Link href="/get-started/self-hosted">Get started </Link>
+                            <Link href="/get-started/self-hosted" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    title="Get started"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    Get started
+                                </a>
+                            </Link>
                         </span>
-                        for free with up to 10 teammates or
+                        {' '}for free with up to 10 teammates or{' '}
                         <span>
-                            <Link href="/demo"> request a demo </Link>
+                            <Link href="/demo" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    title="Request a demo"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    request a demo
+                                </a>
+                            </Link>
                         </span>
-                        to learn about our enterprise plan and to see Sourcegraph in your own environment.
+                        {' '}to learn about our enterprise plan and to see Sourcegraph in your own environment.
                     </h5>
                 </section>
             </div>

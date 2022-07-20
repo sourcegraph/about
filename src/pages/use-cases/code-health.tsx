@@ -138,8 +138,18 @@ const items = [
                 header="Develop a data-driven relationship with your code"
                 text={
                     <p className="py-3">
-                        Create dashboards to track mitigations, package use, version adoption, code smells, codebase
-                        size, and more to understand code health with <Link href="/code-insights">Code Insights</Link>.
+                        Create dashboards to track mitigations, package use, version adoption, code smells, codebase size, and more to understand code health with{' '}
+                        <Link href="/code-insights" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Insights"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Insights
+                            </a>
+                        </Link>.
                     </p>
                 }
             />
