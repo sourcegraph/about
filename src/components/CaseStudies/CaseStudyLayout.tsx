@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import { kebabCase } from 'lodash'
 
 import { ContentSection, RequestDemoForm } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 import { CaseStudyJumbotron } from './CaseStudyJumbotron'
 
@@ -43,7 +44,14 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                 {heroImage && (
                     <div className="case-studies__quote row pt-3">
                         <div className="col-lg-3">
-                            <a href={heroLink} rel="nofollow">
+                            <a
+                                href={heroLink}
+                                rel="nofollow"
+                                title={customer}
+                                data-button-style={buttonStyle.image}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 <img className="img-fluid mx-auto d-block" src={heroImage} alt={customer} />
                             </a>
                         </div>
@@ -79,7 +87,16 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                     </div>
                 )}
                 {pdf && (
-                    <a href={pdf} className="btn btn-primary mt-3" rel="nofollow noreferrer" target="_blank">
+                    <a
+                        href={pdf}
+                        className="btn btn-primary mt-3"
+                        rel="nofollow noreferrer"
+                        target="_blank"
+                        title="Download PDF"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
                         <i className="fa fa-file-pdf pr-2" />
                         Download PDF
                     </a>

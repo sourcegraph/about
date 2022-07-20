@@ -4,6 +4,8 @@ import classNames from 'classnames'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
+import { buttonStyle, buttonLocation } from '@data'
+
 import styles from './CaseStudyCard.module.scss'
 
 interface CaseStudy {
@@ -122,9 +124,13 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                     {url.includes('http') ? (
                         <a
                             href={url}
-                            className="card-link d-flex align-items-center"
+                            className="card-link"
                             target="_blank"
                             rel="nofollow noreferrer"
+                            title={linkText + ': ' + title}
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
                         >
                             {linkText}
                             <ArrowRightIcon size={20} className="ml-1" />
@@ -132,13 +138,20 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                     ) : (
                         <Link href={url} passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="card-link d-flex align-items-center">
+                            <a
+                                className="card-link"
+                                title={linkText + ': ' + title}
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 {linkText}
                                 <ArrowRightIcon size={20} className="ml-1" />
                             </a>
                         </Link>
                     )}
                 </span>
+                .
             </p>
         </div>
     </div>

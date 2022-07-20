@@ -4,6 +4,7 @@ import TwitterIcon from 'mdi-react/TwitterIcon'
 import Link from 'next/link'
 
 import { Layout, WhitePaperPage, ContentSection, Blockquote, Figure } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 export const RemoteWorkEasier: FunctionComponent = () => (
     <Layout
@@ -28,8 +29,16 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                     </p>
                     <p>
                         We have compiled some excellent tips and tricks from fellow{' '}
-                        <a href="https://handbook.sourcegraph.com/company/team">teammates</a> on how to live your best
-                        distributed work life!
+                        <a
+                            href="https://handbook.sourcegraph.com/company/team"
+                            title="teammates"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            teammates
+                        </a>{' '}
+                        on how to live your best distributed work life!
                     </p>
                     <h2 className="pt-5 pb-1">Tips for working remotely</h2>
                     <h3 className="pt-5 pb-1">Home office and desk setup</h3>
@@ -162,7 +171,17 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         Sourcegraph's search also makes it more likely that you will discover documentation that is
                         stored inside your repositories but outside your code. This increases traffic to documentation
                         and leads to people relying on it more, which in turn causes people to improve it. We have seen
-                        this extensively in the <a href="https://handbook.sourcegraph.com">Sourcegraph handbook</a>.
+                        this extensively in the{' '}
+                        <a
+                            href="https://handbook.sourcegraph.com"
+                            title="Sourcegraph handbook"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Sourcegraph handbook
+                        </a>
+                        .
                     </p>
                     <h3 className="pt-5 pb-1">Share code more easily</h3>
                     <p>
@@ -177,10 +196,25 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         center={false}
                     />
                     <p>
-                        With <a href="https://docs.sourcegraph.com/integration/editor">Sourcegraph editor extensions</a>
+                        With{' '}
+                        <a
+                            href="https://docs.sourcegraph.com/integration/editor"
+                            title="Sourcegraph editor extensions"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Sourcegraph editor extensions
+                        </a>
                         , you can easily use a shortcut key to open your current selection on Sourcegraph. You can also
                         use our{' '}
-                        <a href="https://docs.sourcegraph.com/integration/browser_search_engine">
+                        <a
+                            href="https://docs.sourcegraph.com/integration/browser_search_engine"
+                            title="browser search engine shortcuts"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             browser search engine shortcuts
                         </a>{' '}
                         to quickly search across your entire organization's code. Both allow you to instantly get a link
@@ -213,7 +247,15 @@ export const RemoteWorkEasier: FunctionComponent = () => (
             <ContentSection color="black" className="py-5">
                 <div className="row justify-content-md-center">
                     <div className="col-md-3 text-center">
-                        <a href="https://twitter.com/sourcegraph" target="_blank" rel="noreferrer">
+                        <a
+                            href="https://twitter.com/sourcegraph"
+                            target="_blank"
+                            rel="noreferrer"
+                            title="Twitter icon"
+                            data-button-style={buttonStyle.image}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             <TwitterIcon size={72} />
                         </a>
                     </div>
@@ -223,10 +265,14 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                             <a
                                 href="https://twitter.com/share?ref_src=twsrc%5Etfw"
                                 className="twitter-share-button"
+                                title="Tweet"
                                 data-text='Great read on "Remote software development made easier" — @sourcegraph has helped me with ...'
                                 data-url="https://about.sourgraph.com/white-papers/remote-work-easier"
                                 data-related="sourcegraph"
                                 data-show-count="false"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
                             >
                                 Tweet
                             </a>{' '}
@@ -257,7 +303,13 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                             passHref={true}
                         >
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="btn btn-lg btn-outline-light universal-code-search__btn mt-3 font-weight-normal">
+                            <a
+                                className="btn btn-lg btn-outline-light universal-code-search__btn mt-3 font-weight-normal"
+                                title="Free download"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 Free download
                             </a>
                         </Link>

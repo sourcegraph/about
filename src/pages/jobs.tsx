@@ -5,6 +5,7 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Carousel from 'react-bootstrap/Carousel'
 
 import { Layout, ContentSection, QuoteCarousel } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const CareersPage: FunctionComponent = () => {
     const glassdoorReviewItems = [
@@ -199,6 +200,9 @@ const CareersPage: FunctionComponent = () => {
                         title="Explore our jobs"
                         target="_blank"
                         rel="nofollow noreferrer"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.hero}
+                        data-button-type="cta"
                     >
                         Explore our jobs
                         <ArrowRightIcon className="ml-3" />
@@ -235,6 +239,10 @@ const CareersPage: FunctionComponent = () => {
                                     rel="noreferrer"
                                     className="handbook-benefits-link"
                                     href="https://handbook.sourcegraph.com/benefits-pay-perks/benefits-perks"
+                                    title="our handbook"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     our handbook
                                 </a>
@@ -349,6 +357,9 @@ const CareersPage: FunctionComponent = () => {
                             title="Explore our jobs"
                             target="_blank"
                             rel="nofollow noreferrer"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
                         >
                             Explore our jobs
                             <ArrowRightIcon className="ml-3" />

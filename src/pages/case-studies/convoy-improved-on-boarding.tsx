@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import { Layout, CaseStudyLayout, ContentSection, Blockquote } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 export const CaseStudy: FunctionComponent = () => (
     <Layout
@@ -33,7 +34,13 @@ export const CaseStudy: FunctionComponent = () => (
                         For Brandon Bloom, a new hire who was eager to start contributing, using GitHub's native search
                         across Convoy's voluminous repositories rarely gave him the results he needed. His frustration
                         led him to Sourcegraph. As an{' '}
-                        <a href="https://about.sourcegraph.com/blog/from-saas-to-on-premises">
+                        <a
+                            href="https://about.sourcegraph.com/blog/from-saas-to-on-premises"
+                            title="on-prem and self-hosted product"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             on-prem and self-hosted product
                         </a>
                         , he could safely and independently set up a Sourcegraph instance locally, and was able to get

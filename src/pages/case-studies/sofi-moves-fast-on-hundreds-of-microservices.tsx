@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import { Layout, CaseStudyLayout, ContentSection } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 export const CaseStudy: FunctionComponent = () => (
     <Layout
@@ -40,7 +41,19 @@ export const CaseStudy: FunctionComponent = () => (
                         committed their code changes. The need for fast and accurate code search and cross-repository
                         code navigation led the engineering team to install Sourcegraph. As a FinTech company that
                         contains highly sensitive data from their customers, SoFi emphasizes on security and appreciated
-                        Sourcegraph's <Link href="/blog/from-saas-to-on-premises">on-prem solution</Link>.
+                        Sourcegraph's{' '}
+                        <Link href="/blog/from-saas-to-on-premises" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="on-prem solution"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                on-prem solution
+                            </a>
+                        </Link>
+                        .
                     </p>
                     <h2 className="pt-5 pb-1">Move fast and don't break things</h2>
                     <p>

@@ -1,5 +1,7 @@
 import { FunctionComponent } from 'react'
 
+import { buttonStyle, buttonLocation } from '@data'
+
 interface Props {
     blog: Blog
 }
@@ -20,7 +22,14 @@ interface Blog {
 export const BlogResourceItem: FunctionComponent<Props> = ({ blog }) => (
     <div className="w-100 row mx-0 mb-5 pb-4 border-bottom">
         <div className="col-sm-8 col-md-9">
-            <a className="posts-list__post-title-link" href={blog.href}>
+            <a
+                className="posts-list__post-title-link"
+                href={blog.href}
+                title={blog.title}
+                data-button-style={buttonStyle.text}
+                data-button-location={buttonLocation.body}
+                data-button-type="cta"
+            >
                 <h3 className="font-weight-bold">{blog.title}</h3>
             </a>
             <p className="text-gray-5">{blog.type}</p>

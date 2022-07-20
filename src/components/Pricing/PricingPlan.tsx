@@ -1,5 +1,7 @@
 import { ReactFragment, FunctionComponent } from 'react'
 
+import { buttonStyle, buttonLocation } from '@data'
+
 import { Features, FeatureInfo } from './interfaces'
 import { PricingPlanFeature } from './PricingPlanFeature'
 
@@ -164,7 +166,15 @@ export const PricingPlan: FunctionComponent<Props> = ({
     buttonHref,
 }) => {
     const button = (
-        <a className={`btn ${buttonClassName} w-50 min-w-250`} href={buttonHref} onClick={buttonOnClick}>
+        <a
+            className={`btn ${buttonClassName} w-50 min-w-250`}
+            href={buttonHref}
+            onClick={buttonOnClick}
+            title={buttonLabel}
+            data-button-style={buttonStyle.outline}
+            data-button-location={buttonLocation.body}
+            data-button-type="cta"
+        >
             {buttonLabel}
         </a>
     )
