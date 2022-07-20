@@ -177,6 +177,7 @@ export const FeatureWalkthrough: FunctionComponent = () => {
                                 target="_blank"
                                 rel="noreferrer"
                                 className="btn btn-outline-primary mt-2"
+                                title={`Learn more about ${startCase(feature.productFeature)}`}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
@@ -185,9 +186,10 @@ export const FeatureWalkthrough: FunctionComponent = () => {
                             </a>
                         ) : (
                             <Link href={feature.ctaLink} passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
                                     className="btn btn-outline-primary mt-2"
-                                    href="#none"
+                                    title={'Learn more about ' + startCase(feature.productFeature)}
                                     data-button-style={buttonStyle.outline}
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"

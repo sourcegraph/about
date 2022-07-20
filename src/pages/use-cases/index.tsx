@@ -59,6 +59,7 @@ const UseCases: React.FunctionComponent = () => (
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
                                         className="list-group-item list-group-item-action d-flex justify-content-between align-items-center text-decoration-none"
+                                        title={feature.description}
                                         data-button-style={buttonStyle.textWithArrow}
                                         data-button-location={buttonLocation.hero}
                                         data-button-type="cta"
@@ -95,7 +96,17 @@ const UseCases: React.FunctionComponent = () => (
                             <li>Reduce time to recovery with a single search</li>
                             <li>
                                 Automate fixing, merging, and deploying changes with{' '}
-                                <Link href="/batch-changes/">Batch Changes</Link>
+                                <Link href="/batch-changes/">
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                    <a
+                                        title="Batch Changes"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
+                                        Batch Changes
+                                    </a>
+                                </Link>
                             </li>
                             <li>Alert for known vulnerabilities and risky code changes with code monitoring</li>
                         </ul>
@@ -103,6 +114,7 @@ const UseCases: React.FunctionComponent = () => (
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-outline-primary"
+                                title="Request a demo"
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
@@ -114,6 +126,7 @@ const UseCases: React.FunctionComponent = () => (
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-link font-weight-bold"
+                                title="Learn more"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
@@ -178,6 +191,7 @@ const UseCases: React.FunctionComponent = () => (
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-outline-primary"
+                                title="Request a demo"
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
@@ -189,6 +203,7 @@ const UseCases: React.FunctionComponent = () => (
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-link font-weight-bold"
+                                title="Learn more"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
@@ -232,6 +247,7 @@ const UseCases: React.FunctionComponent = () => (
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-outline-primary"
+                                title="Request a demo"
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
@@ -243,6 +259,7 @@ const UseCases: React.FunctionComponent = () => (
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-link font-weight-bold"
+                                title="Learn more"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
@@ -307,6 +324,7 @@ const UseCases: React.FunctionComponent = () => (
                                 <Link href="/batch-changes/" passHref={true}>
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
+                                        title="Batch Changes"
                                         data-button-style={buttonStyle.primary}
                                         data-button-location={buttonLocation.bodyDemo}
                                         data-button-type="cta"
@@ -321,6 +339,7 @@ const UseCases: React.FunctionComponent = () => (
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-outline-primary"
+                                title="Request a demo"
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
@@ -332,6 +351,7 @@ const UseCases: React.FunctionComponent = () => (
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-link font-weight-bold"
+                                title="Learn more"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
@@ -373,6 +393,7 @@ const UseCases: React.FunctionComponent = () => (
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-outline-primary"
+                                title="Request a demo"
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
@@ -382,7 +403,15 @@ const UseCases: React.FunctionComponent = () => (
                         </Link>
                         <Link href="/use-cases/code-health" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="btn btn-link">Learn more</a>
+                            <a
+                                className="btn btn-link font-weight-bold"
+                                title="Learn more"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Learn more
+                            </a>
                         </Link>
                     </div>
                     <div className="col-lg-6 mt-6 px-6">

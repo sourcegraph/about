@@ -1,6 +1,7 @@
 import { FunctionComponent, ReactNode } from 'react'
 
 import { ContentSection } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const codeHosts: string[] = [
     'GitLab.com',
@@ -98,7 +99,14 @@ export const IntegrationsSection: FunctionComponent = () => (
                 <ul className="list-inline d-inline-flex flex-wrap">
                     {renderListItems(codeHosts)}
                     <li className="d-block">
-                        <a href="mailto:feedback@sourcegraph.com" className="small text-gray-5">
+                        <a
+                            href="mailto:feedback@sourcegraph.com"
+                            className="small text-gray-5"
+                            title="Have a repository not covered here?"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             Have a repository not covered here?
                         </a>
                     </li>
@@ -111,7 +119,14 @@ export const IntegrationsSection: FunctionComponent = () => (
                 <ul className="list-inline d-inline-flex flex-wrap">
                     {renderListItems(languages)}
                     <li className="d-block">
-                        <a href="mailto:feedback@sourcegraph.com" className="d-inline-block small text-gray-5">
+                        <a
+                            href="mailto:feedback@sourcegraph.com"
+                            className="d-inline-block small text-gray-5"
+                            title="Need a different language?"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             Need a different language?
                         </a>
                     </li>
@@ -124,7 +139,14 @@ export const IntegrationsSection: FunctionComponent = () => (
                 <ul className="list-inline d-inline-flex flex-wrap">
                     {renderListItems(tools)}
                     <li className="d-block">
-                        <a href="https://docs.sourcegraph.com/integration" className="small text-gray-5">
+                        <a
+                            href="https://docs.sourcegraph.com/integration"
+                            className="small text-gray-5"
+                            title="See all integrations or build your own"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             See all integrations or build your own
                         </a>
                     </li>
@@ -149,7 +171,14 @@ export const IntegrationsSection: FunctionComponent = () => (
                     </li>
 
                     <li className="d-block">
-                        <a href="https://docs.sourcegraph.com/admin/install" className="small text-gray-5">
+                        <a
+                            href="https://docs.sourcegraph.com/admin/install"
+                            className="small text-gray-5"
+                            title="Learn about deploying Sourcegraph"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             Learn about deploying Sourcegraph
                         </a>
                     </li>

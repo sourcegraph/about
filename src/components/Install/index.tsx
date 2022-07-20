@@ -70,6 +70,7 @@ export const Install: FunctionComponent = () => {
                 <a
                     className="d-inline-block text-lg"
                     href="https://docs.sourcegraph.com"
+                    title="Deploy to a server or cluster"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.trySourcegraph}
                     data-button-type="cta"

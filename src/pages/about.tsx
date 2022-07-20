@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import { BoardSection, ContentSection, Layout, LeadershipSection } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const INVESTORS: {
     name: string
@@ -53,16 +54,64 @@ const About: FunctionComponent = () => (
                 <ContentSection className="container py-6">
                     <h2>Learn all about Sourcegraph</h2>
                     <p>
-                        The <a href="https://handbook.sourcegraph.com">Sourcegraph handbook</a> has everything from our
-                        high-level <a href="https://handbook.sourcegraph.com/strategy-goals/strategy">strategy</a> and{' '}
-                        <a href="https://handbook.sourcegraph.com/company/values">values</a>, to documentation of
-                        business processes including{' '}
-                        <a href="https://handbook.sourcegraph.com/marketing/messaging">messaging</a> and{' '}
-                        <a href="https://handbook.sourcegraph.com/departments/product-engineering/engineering/process/principles-and-practices">
+                        The{' '}
+                        <a
+                            href="https://handbook.sourcegraph.com"
+                            title="Sourcegraph handbook"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Sourcegraph handbook
+                        </a>{' '}
+                        has everything from our high-level{' '}
+                        <a
+                            href="https://handbook.sourcegraph.com/strategy-goals/strategy"
+                            title="Strategy"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            strategy
+                        </a>{' '}
+                        and{' '}
+                        <a
+                            href="https://handbook.sourcegraph.com/company/values"
+                            title="Values"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            values
+                        </a>
+                        , to documentation of business processes including{' '}
+                        <a
+                            href="https://handbook.sourcegraph.com/marketing/messaging"
+                            title="Messaging"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            messaging
+                        </a>{' '}
+                        and{' '}
+                        <a
+                            href="https://handbook.sourcegraph.com/departments/product-engineering/engineering/process/principles-and-practices"
+                            title="Engineering principles"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             engineering principles
                         </a>
                         . It's public for everyone to read because we are{' '}
-                        <a href="https://handbook.sourcegraph.com/company/values#open-and-transparent">
+                        <a
+                            href="https://handbook.sourcegraph.com/company/values#open-and-transparent"
+                            title="open and transparent"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             open and transparent
                         </a>
                         .
@@ -72,14 +121,46 @@ const About: FunctionComponent = () => (
             <ContentSection className="container py-5 mb-5">
                 <h2>Sourcegraph team</h2>
                 <p>
-                    Sourcegraph is an <a href="https://handbook.sourcegraph.com/company/remote">all-remote</a> company,
-                    working asynchronously across time zones and continents. Meet our{' '}
-                    <a href="https://handbook.sourcegraph.com/company/team">team members</a> and learn about our
-                    commitment to{' '}
-                    <a href="https://handbook.sourcegraph.com/communication/code_of_conduct#our-standards">inclusion</a>
+                    Sourcegraph is an{' '}
+                    <a
+                        href="https://handbook.sourcegraph.com/company/remote"
+                        title="All remote"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        all-remote
+                    </a>{' '}
+                    company, working asynchronously across time zones and continents. Meet our{' '}
+                    <a
+                        href="https://handbook.sourcegraph.com/company/team"
+                        title="Team members"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        team members
+                    </a>{' '}
+                    and learn about our commitment to{' '}
+                    <a
+                        href="https://handbook.sourcegraph.com/communication/code_of_conduct#our-standards"
+                        title="Inclusion"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        inclusion
+                    </a>
                     .
                 </p>
-                <a className="btn btn-primary mt-3" href="https://boards.greenhouse.io/sourcegraph91">
+                <a
+                    className="btn btn-primary mt-3"
+                    href="https://boards.greenhouse.io/sourcegraph91"
+                    title="Open roles - we're hiring!"
+                    data-button-style={buttonStyle.primary}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                >
                     Open roles - we're hiring!
                 </a>
             </ContentSection>

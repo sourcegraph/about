@@ -236,6 +236,19 @@ table tbody + tbody {
     border-bottom-width: 1px;
 }
 
+.tab-header {
+    background-color: transparent;
+    color: $black;
+    font-weight: 600 !important;
+}
+.nav-tabs .nav-link.active {
+    color: $black !important;
+    background-color: transparent !important;
+    @include media-breakpoint-up(md) {
+        border-bottom: solid $vivid-violet 3px;
+    }
+}
+
 /* ==================== Misc ==================== */
 
 .virtual-br::before {
