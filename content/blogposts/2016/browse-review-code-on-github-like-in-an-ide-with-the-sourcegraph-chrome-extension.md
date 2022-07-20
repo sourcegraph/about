@@ -53,4 +53,4 @@ After installing, view some code on GitHub and hover your mouse over identifiers
 *   JavaScript: [https://github.com/jquery/jquery/blob/master/src/core.js](https://github.com/jquery/jquery/blob/master/src/core.js)
 *   Pull request: [https://github.com/bitly/go-hostpool/pull/1/files](https://github.com/bitly/go-hostpool/pull/1/files)
 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="//platform.twitter.com/widgets.js" charSet="utf-8"></script>
