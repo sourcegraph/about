@@ -62,7 +62,11 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                         <div className="case-studies__quote row justify-content-center">
                             {quote.image && (
                                 <div className="col-12 col-lg-9">
-                                    <img className="rounded-circle img-fluid mx-auto d-block mb-3" src={quote.image} alt={quote.author} />
+                                    <img
+                                        className="rounded-circle img-fluid mx-auto d-block mb-3"
+                                        src={quote.image}
+                                        alt={quote.author}
+                                    />
                                 </div>
                             )}
                             <div className="col-12 col-lg-9">
