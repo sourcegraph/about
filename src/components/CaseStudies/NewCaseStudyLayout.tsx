@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { ContentSection, RequestDemoTrySourcegraph, BlockquoteWithLogoBottom } from '@components'
+import { ContentSection, RequestDemoTrySourcegraph, Blockquote } from '@components'
 
 import { CaseStudyCard, CASESTUDIES } from './CaseStudyCard'
 interface Quote {
@@ -28,10 +28,13 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, logo, q
     return (
         <>
             {quote && (
-                <ContentSection color="white" className="py-7 text-center max-w-600">
-                    <BlockquoteWithLogoBottom
+                <ContentSection color="white" className="py-7 max-w-600">
+                    <Blockquote
                         quote={quote.text}
                         author={quote.author}
+                        largeText={true}
+                        border={false}
+                        center={true}
                         logo={{
                             src: logo?.img || '',
                             alt: customer,
