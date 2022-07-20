@@ -8,7 +8,7 @@ import {
     PricingPlan,
     PricingPlanFeature,
     PricingPlanProperty,
-    BlockquoteWithBorder,
+    Blockquote,
     Features,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
@@ -129,13 +129,14 @@ const PricingPage: FunctionComponent = () => (
                     </div>
 
                     <div className="row justify-content-center pt-md-4">
-                        <div className="col-md-8 text-center">
-                            <BlockquoteWithBorder
+                        <div className="col-md-8">
+                            <Blockquote
                                 quote="Sourcegraph gives us the ability to search for and refactor
                                 references to deprecated services, libraries, URL patterns, and more across
                                 our 2000+ repositories, and the confidence that we're not leaving anyone
                                 behind."
                                 author="Aneesh Agrawal, Software Engineer, Lyft"
+                                center={true}
                                 logo={{
                                     src: '/external-logos/lyft-logo.svg',
                                     alt: 'Lyft logo: Read the case study',
@@ -230,10 +231,11 @@ const PricingPage: FunctionComponent = () => (
                     <hr className="my-4" />
 
                     <div className="row justify-content-center pt-md-4">
-                        <div className="col-md-8 text-center">
-                            <BlockquoteWithBorder
+                        <div className="col-md-8">
+                            <Blockquote
                                 quote="Sourcegraph pays for itself many times over—it's a game changer."
                                 author="François Jehl, Senior Engineering Manager, Criteo"
+                                center={true}
                                 logo={{
                                     src: '/external-logos/criteo-logo.svg',
                                     alt: 'Criteo logo: Read the case study',

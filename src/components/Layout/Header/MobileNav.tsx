@@ -82,7 +82,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                                 tabIndex={0}
                             >
                                 {navLink.section}
-                                <ChevronDownIcon className="icon-inline ml-1" />
+                                <ChevronDownIcon className="ml-1" />
                             </span>
                             <ul
                                 id={navLink.section.split(' ').join('-').toLowerCase() + '-menu'}

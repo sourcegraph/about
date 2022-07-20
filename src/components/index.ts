@@ -3,7 +3,7 @@ export { Install } from './Install'
 export { Jumbotron } from './Jumbotron'
 export { Alert } from './Alert'
 export { BackButton, BackButtonBold, BackButtonLight } from './BackButton'
-export { BlockquoteWithBorder, BlockquoteWithLogoTop, BlockquoteWithLogoBottom } from './Blockquote'
+export { BlockquoteWithLogoTop, BlockquoteWithLogoBottom, Blockquote } from './Blockquote'
 export { BlogResourceItem } from './BlogResourceItem'
 export { BoardSection } from './BoardSection'
 export { ContentSection } from './ContentSection'
@@ -23,17 +23,6 @@ export { ThreeUpText } from './ThreeUpText'
 export { TrySourcegraph } from './TrySourcegraph'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
-
-// Actions
-export {
-    ContactPresalesSupportAction,
-    GetSourcegraphNowActions,
-    RequestCodeChangeManagementDemoAction,
-    RequestDemoAction,
-    StartAFreeTrialAction,
-    SubmitEmailForm,
-    ViewDeveloperDocumentationAction,
-} from './Actions'
 
 // Blog
 export {
@@ -58,8 +47,8 @@ export {
     CaseStudyJumbotron,
     CaseStudyLayout,
     CaseStudyCard,
-    InContentBlockquote,
     MediaQuote,
+    NewCaseStudyJumbotron,
     NewCaseStudyLayout,
     UseChallengeSolutionResults,
 } from './CaseStudies'

@@ -1,5 +1,6 @@
 import { FunctionComponent, ReactFragment } from 'react'
 
+import classNames from 'classnames'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
@@ -26,8 +27,8 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
     <>
         {header && <h2 className="font-weight-bold">{header}</h2>}
         <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
-            <h4 className="font-weight-normal">&ldquo;{quote}&rdquo;</h4>
-            {author && <figcaption className="pt-3 text-gray-5 text-center">&mdash; {author}</figcaption>}
+            <h3 className={`font-weight-normal ${header ? 'text-2xl' : 'text-3xl'}`}>&ldquo;{quote}&rdquo;</h3>
+            {author && <figcaption className="pt-3 text-muted text-center">&mdash; {author}</figcaption>}
         </blockquote>
         {logo && (
             <div className="d-flex justify-content-center">
@@ -52,7 +53,7 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
                     data-button-type="cta"
                 >
                     {link.text}
-                    <ArrowRightIcon className="icon-inline ml-1" />
+                    <ArrowRightIcon className="ml-1" />
                 </a>
             ) : (
                 <Link href={link.href} passHref={true}>
@@ -65,7 +66,7 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
                         data-button-type="cta"
                     >
                         <p className="font-weight-bold">{link.text}</p>
-                        <ArrowRightIcon className="icon-inline ml-1" />
+                        <ArrowRightIcon className="ml-1" />
                     </a>
                 </Link>
             ))}
@@ -96,19 +97,24 @@ export const BlockquoteWithLogoTop: FunctionComponent<{
     </>
 )
 
-export const BlockquoteWithBorder: FunctionComponent<{
-    quote: string
-    author?: string | ReactFragment
+export const Blockquote: FunctionComponent<{
+    quote: string | ReactFragment
+    author?: string
     logo?: Logo
     link?: Link
     headline?: string
-    bold?: boolean
-}> = ({ quote, author, logo, headline, link, bold }) => (
+    largeText?: boolean
+    center?: boolean
+}> = ({ quote, author, logo, link, headline, largeText = false, center = false }) => (
     <>
-        <blockquote className="px-3 mb-5 text-center border-left border-3 border-vermillion">
-            {headline && <h4 className="font-weight-bold mb-4">{headline}</h4>}
-            <h5 className={`font-weight-${bold ? 'bold' : 'normal'} mb-3`}>&ldquo;{quote}&rdquo;</h5>
-            {author && <figcaption className="text-center text-gray-5 mt-5">&mdash; {author}</figcaption>}
+        <blockquote className={classNames('border-left border-3 border-vivid-violet', center && 'text-center')}>
+            {headline && <h4 className="font-weight-bold mb-4 px-4">{headline}</h4>}
+            {largeText ? (
+                <h3 className="font-weight-normal px-4">&ldquo;{quote}&rdquo;</h3>
+            ) : (
+                <h5 className="font-weight-normal px-4">&ldquo;{quote}&rdquo;</h5>
+            )}
+            {author && <figcaption className="text-muted px-4 pt-3">&mdash; {author}</figcaption>}
         </blockquote>
         {logo &&
             (logo.href ? (
@@ -135,7 +141,7 @@ export const BlockquoteWithBorder: FunctionComponent<{
                     data-button-type="cta"
                 >
                     {link.text}
-                    <ArrowRightIcon className="icon-inline ml-1" />
+                    <ArrowRightIcon className="ml-1" />
                 </a>
             ) : (
                 <Link href={link.href} passHref={true}>
@@ -148,7 +154,7 @@ export const BlockquoteWithBorder: FunctionComponent<{
                         data-button-type="cta"
                     >
                         <p className="font-weight-bold">{link.text}</p>
-                        <ArrowRightIcon className="icon-inline ml-1" />
+                        <ArrowRightIcon className="ml-1" />
                     </a>
                 </Link>
             ))}

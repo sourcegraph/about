@@ -5,9 +5,10 @@ import Link from 'next/link'
 import {
     AuthorBio,
     Layout,
+    NewCaseStudyJumbotron,
     NewCaseStudyLayout,
     ContentSection,
-    BlockquoteWithLogoBottom,
+    Blockquote,
     ThreeUpText,
     UseChallengeSolutionResults,
 } from '@components'
@@ -15,17 +16,17 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const threeUpTextItems = [
     {
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold text-curious-blue">{'<'} 5 min</h4>,
+        subtitle: <h3 className="pb-3 mx-md-auto max-w-300 display-3 font-weight-bold text-blurple">5 minutes</h3>,
         description:
             'Nutanix was able to see where JMSAppender existed, fix it, and send out a release in less than 5 minutes.',
     },
     {
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold text-curious-blue">4 days</h4>,
+        subtitle: <h3 className="pb-3 mx-md-auto max-w-300 display-3 font-weight-bold text-blurple">4 days</h3>,
         description:
             'Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.',
     },
     {
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold text-curious-blue">100% confidence</h4>,
+        subtitle: <h3 className="pb-3 mx-md-auto max-w-300 display-3 font-weight-bold text-blurple">100%</h3>,
         description: 'Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.',
     },
 ]
@@ -37,10 +38,21 @@ export const CaseStudy: FunctionComponent = () => (
             description:
                 'Nutanix case study. Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their code base.',
         }}
+        heroAndHeaderClassName="bg-code-venus"
+        hero={
+            <NewCaseStudyJumbotron
+                className="text-black height-md-450 height-auto p-2"
+                customer="Nutanix"
+                color="white"
+            >
+                <h1 className="pt-2 display-2 font-weight-bold max-w-800">
+                    Nutanix fixed Log4j quickly and confidently with Sourcegraph
+                </h1>
+            </NewCaseStudyJumbotron>
+        }
     >
         <NewCaseStudyLayout
             customer="Nutanix"
-            title="Nutanix fixed Log4j quickly and confidently with Sourcegraph"
             quote={{
                 text: 'Sourcegraph was the right product at the right time.',
                 author: 'Jon Kohler, Technical Director of Solution Engineering at Nutanix',
@@ -82,16 +94,16 @@ export const CaseStudy: FunctionComponent = () => (
                 ]}
             />
 
-            <ContentSection color="white" className="py-6 max-w-700 col-xl-5">
-                <p>
+            <ContentSection color="white" className="pt-lg-8 py-7 max-w-700 col-xl-5">
+                <p className="mt-lg-7 mt-md-5 mt-6">
                     As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the complexity
                     involved in securing the multitude of applications and solutions required to power such a large
                     organization. “Security is something that we care about intensely here at Nutanix,” Jon said,
                     “because it’s part of our bedrock. It's why customers like us, and we have to take it seriously.”
                 </p>
-                <h2 className="mt-6 mb-4 display-4 font-weight-bold max-w-600">
+                <h3 className="mt-6 mb-4 display-4 font-weight-normal max-w-600">
                     Log4j: The vulnerability that rocked an industry
-                </h2>
+                </h3>
                 <p>
                     <span className="font-weight-bold">In December of 2021, </span>
                     software companies around the world discovered that Log4j, an open-source logging library bundled in
@@ -131,12 +143,10 @@ export const CaseStudy: FunctionComponent = () => (
                     large monorepo with many component branches and hundreds of git repositories. In under four days,
                     Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.
                 </p>
-            </ContentSection>
 
-            <ContentSection className="py-6 max-w-700 col-xl-5">
-                <h2 className="mb-4 display-4 font-weight-bold max-w-600">
+                <h3 className="mt-6 mb-4 display-4 font-weight-normal max-w-600">
                     Nutanix used Sourcegraph to identify every instance of Log4j within 2 days
-                </h2>
+                </h3>
                 <p>
                     <span className="font-weight-bold">Speed was of the essence, </span>
                     but the timing of the Log4j news, which broke right before many employees go on vacation for the
@@ -186,119 +196,94 @@ export const CaseStudy: FunctionComponent = () => (
                     “We tried to take a measured approach,” Jon said. “We wanted to get things done quickly but without
                     completely flying by the seats of our pants.”
                 </p>
+
+                <div className="py-7">
+                    <Blockquote
+                        quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
+                        better than having to say, 'Well, boss, I think we got it all.'"
+                        author="Jon Kohler"
+                        largeText={true}
+                    />
+                </div>
+
+                <h3 className="mb-4 display-4 font-weight-normal max-w-600">
+                    Nutanix has renewed confidence in its vulnerability remediation
+                </h3>
+                <p>
+                    <span className="font-weight-bold">Tracking down the Log4j vulnerability was, </span>
+                    in Jon's words, like “herding cats who were herding mice at the same time.”
+                </p>
+                <p>
+                    Without Sourcegraph, Jon would have either been tracking down whoever built each component to ask
+                    them how and where they used Log4j or stumbling through all of the company's repositories.
+                </p>
+                <p>
+                    Using Sourcegraph, Jon discovered every instance of Log4j and was fully confident in the results.
+                    “It's nice,” Jon said, “when you can just run a report and say, 'Here it is,'' or 'Here it isn't.''
+                    It's much better than having to say, 'Well, boss, I think we got it all.’”
+                </p>
+                <p>
+                    Nutanix needed that confidence because of its sprawling codebase. One thing that made Log4j
+                    especially complicated for Nutanix—as it does for other large-scale enterprises—is that there were
+                    multiple source control systems in play. Sourcegraph provided them with “unified visibility,”
+                    according to Jon. “I can't imagine the pain of having to do that either with grep or OpenGrok,” he
+                    added.
+                </p>
+                <p>
+                    Confidence spread from Jon to the rest of the team and throughout the company. With
+                    <Link href="/blog/introducing-search-contexts/"> search contexts</Link>, Jon was able to share
+                    relevant contexts and queries, showing the team how they could verify whether a given Log4j instance
+                    was present or absent. He could show them precisely what they changed.
+                </p>
+                <p>
+                    “We used Sourcegraph contexts to see specifically where a service was at any given point in time,”
+                    Jon said. Without Sourcegraph, the team would've had to use code scanning, which takes a lot of
+                    time, or manual build inspections, which aren't foolproof.
+                </p>
             </ContentSection>
 
-            <ContentSection color="white" className="py-6 max-w-700 col-xl-5 text-pale-sky text-center">
-                <BlockquoteWithLogoBottom
-                    quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
-                    better than having to say, 'Well, boss, I think we got it all.'"
-                    author="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
-                />
-            </ContentSection>
-
-            <ContentSection className="py-6 max-w-700 col-xl-5">
-                <section>
-                    <h2 className="mb-4 display-4 font-weight-bold max-w-600">
-                        Nutanix has renewed confidence in its vulnerability remediation
-                    </h2>
-                    <p>
-                        <span className="font-weight-bold">Tracking down the Log4j vulnerability was, </span>
-                        in Jon's words, like “herding cats who were herding mice at the same time.”
-                    </p>
-                    <p>
-                        Without Sourcegraph, Jon would have either been tracking down whoever built each component to
-                        ask them how and where they used Log4j or stumbling through all of the company's repositories.
-                    </p>
-                    <p>
-                        Using Sourcegraph, Jon discovered every instance of Log4j and was fully confident in the
-                        results. “It's nice,” Jon said, “when you can just run a report and say, 'Here it is,'' or 'Here
-                        it isn't.'' It's much better than having to say, 'Well, boss, I think we got it all.’”
-                    </p>
-                    <p>
-                        Nutanix needed that confidence because of its sprawling codebase. One thing that made Log4j
-                        especially complicated for Nutanix—as it does for other large-scale enterprises—is that there
-                        were multiple source control systems in play. Sourcegraph provided them with “unified
-                        visibility,” according to Jon. “I can't imagine the pain of having to do that either with grep
-                        or OpenGrok,” he added.
-                    </p>
-                    <p>
-                        Confidence spread from Jon to the rest of the team and throughout the company. With{' '}
-                        <Link href="/blog/introducing-search-contexts/" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="search contexts"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                search contexts
-                            </a>
-                        </Link>
-                        , Jon was able to share relevant contexts and queries, showing the team how they could verify
-                        whether a given Log4j instance was present or absent. He could show them precisely what they
-                        changed.
-                    </p>
-                    <p>
-                        “We used Sourcegraph contexts to see specifically where a service was at any given point in
-                        time,” Jon said. Without Sourcegraph, the team would've had to use code scanning, which takes a
-                        lot of time, or manual build inspections, which aren't foolproof.
-                    </p>
-                </section>
-            </ContentSection>
-
-            <div className="bg-gradient-venus-radial py-5">
-                <ContentSection className="my-lg-5">
+            <div className="bg-gradient-saturn py-7">
+                <ContentSection>
                     <ThreeUpText title="Results" items={threeUpTextItems} />
                 </ContentSection>
             </div>
 
-            <ContentSection color="white" className="py-6 max-w-700 col-xl-5">
-                <section>
-                    <h2 className="mb-4 display-4 font-weight-bold max-w-600">
-                        Log4j is the tip of the open-source vulnerability iceberg
-                    </h2>
-                    <p>
-                        <span className="font-weight-bold">With Sourcegraph's help, </span>
-                        Nutanix was able to transform a trust-threatening risk into a trust-building opportunity. Their
-                        customers, Jon explained, were worried about hundreds of other vendors, all of whom were likely
-                        affected by Log4j.
-                    </p>
-                    <p>
-                        “That's hopefully something customers will remember us for,” Jon said. “We quickly either
-                        provided them with clarity or gave them a line on the next available patch because we were able
-                        to identify the issue and start fixing it ASAP.”
-                    </p>
-                    <p>
-                        Jon explained that, at many enterprises, dependencies are unseen and forgotten. “You might check
-                        in on a dependency and find it hasn't been reviewed for four, five, six, or even ten years. But
-                        it works, so why update it?”
-                    </p>
-                    <p>
-                        Log4j is one of many reasons why monitoring and updating is now a renewed priority. “Companies
-                        will have to be more diligent,” Jon said. With Sourcegraph, Nutanix is prepared to{' '}
-                        <Link href="/use-cases/code-security" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="find and fix the next vulnerability"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                find and fix the next vulnerability
-                            </a>
-                        </Link>
-                        .
-                    </p>
-                </section>
+            <ContentSection color="white" className="py-7 max-w-700 col-xl-5">
+                <h3 className="mb-4 display-4 font-weight-normal max-w-650">
+                    Log4j is the tip of the open-source vulnerability iceberg
+                </h3>
+                <p>
+                    <span className="font-weight-bold">With Sourcegraph's help, </span>
+                    Nutanix was able to transform a trust-threatening risk into a trust-building opportunity. Their
+                    customers, Jon explained, were worried about hundreds of other vendors, all of whom were likely
+                    affected by Log4j.
+                </p>
+                <p>
+                    “That's hopefully something customers will remember us for,” Jon said. “We quickly either provided
+                    them with clarity or gave them a line on the next available patch because we were able to identify
+                    the issue and start fixing it ASAP.”
+                </p>
+                <p>
+                    Jon explained that, at many enterprises, dependencies are unseen and forgotten. “You might check in
+                    on a dependency and find it hasn't been reviewed for four, five, six, or even ten years. But it
+                    works, so why update it?”
+                </p>
+                <p>
+                    Log4j is one of many reasons why monitoring and updating is now a renewed priority. “Companies will
+                    have to be more diligent,” Jon said. With Sourcegraph, Nutanix is prepared to
+                    <Link href="/use-cases/code-security"> find and fix the next vulnerability</Link>.
+                </p>
             </ContentSection>
 
-            <AuthorBio
-                customer="Nutanix"
-                image="/case-studies/jon-kohler.png"
-                author="Jon Kohler"
-                title="Technical Director of Solution Engineering at Nutanix"
-                about="Nutanix has 20,000 customers, an annual revenue of nearly $1.394 billion, and over 6,000 employees. Organizations around the world rely on Nutanix software as a single platform to manage any app at any scale for their hybrid multicloud environments."
-            />
+            <ContentSection color="white" className="pb-7 max-w-700">
+                <AuthorBio
+                    customer="Nutanix"
+                    image="/case-studies/jon-kohler.png"
+                    author="Jon Kohler"
+                    title="Technical Director of Solution Engineering at Nutanix"
+                    about="Nutanix has 20,000 customers, an annual revenue of nearly $1.394 billion, and over 6,000 employees. Organizations around the world rely on Nutanix software as a single platform to manage any app at any scale for their hybrid multicloud environments."
+                />
+            </ContentSection>
         </NewCaseStudyLayout>
     </Layout>
 )

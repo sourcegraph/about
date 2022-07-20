@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
+import { Layout, CaseStudyLayout, ContentSection, Blockquote } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 export const CaseStudy: FunctionComponent = () => (
@@ -51,11 +51,11 @@ export const CaseStudy: FunctionComponent = () => (
                         It didn't take long for other engineers in his team to realize the immense benefits Sourcegraph
                         provided when it came to understanding Convoy's growing code base.
                     </p>
-                    <InContentBlockquote
+                    <Blockquote
                         quote="It's helped me out a lot. Made going through other people's code much easier and was better for learning different patterns used in other repos."
                         author="Aamir Jawaid, Software Engineer, Convoy"
                     />
-                    <InContentBlockquote
+                    <Blockquote
                         quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
                         author="Owen Kim, Senior Software Engineer, Convoy"
                     />
@@ -64,12 +64,12 @@ export const CaseStudy: FunctionComponent = () => (
                         complex logistical problems.
                     </p>
 
-                    <InContentBlockquote
+                    <Blockquote
                         quote="Fast, org-wide code search is a necessity in any organization, and tooling for this is especially necessary when we've chosen a multi-repo approach to code organization.
                         The time I would otherwise spend using either GitHub's slow search or finding and cloning repos is worth a lot."
                         author="James Reggio, Principal Engineer, Convoy"
                     />
-                    <InContentBlockquote
+                    <Blockquote
                         quote="It's fast, which is super nice. It's faster than any other tool I've ever used for code search. I've become more productive with Sourcegraph."
                         author="Ethan Hall, Senior Software Engineer, Convoy"
                     />

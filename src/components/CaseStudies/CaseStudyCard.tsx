@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
@@ -105,7 +106,7 @@ export const CASESTUDIES: CaseStudy[] = [
 ]
 
 export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boolean }> = ({
-    study: { name, logo, altTitle, title, url, linkText = 'Learn more' },
+    study: { name, logo, altTitle, title, url, linkText = 'Read the case study' },
     bwLogo,
 }) => (
     <div className="flex-grow-1">

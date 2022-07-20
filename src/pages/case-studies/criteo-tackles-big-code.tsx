@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection, Figure, InContentBlockquote } from '@components'
+import { Layout, CaseStudyLayout, ContentSection, Figure, Blockquote } from '@components'
 
 export const CaseStudy: FunctionComponent = () => (
     <Layout
@@ -52,16 +52,16 @@ export const CaseStudy: FunctionComponent = () => (
                             />
                         </div>
                     </div>
-                    <InContentBlockquote
+                    <Blockquote
                         quote="Before Sourcegraph, we were struggling to search code in an accurate and timely manner. The legacy text-based search we relied on had security issues, and its performance was poor in terms of the quality of searches and response times."
                         author="Loic Teikiteetini-Vaysse"
                     />
-                    <InContentBlockquote
+                    <Blockquote
                         quote="When looking for alternatives, the general consensus was 'If you're a giant like Google, you can simply build your own code search engine. If that's not you, then buy Sourcegraph."
                         author="François Jehl"
                     />
                     <h2 className="pt-5 pb-1">Prioritize developer happiness and productivity follows</h2>
-                    <InContentBlockquote
+                    <Blockquote
                         quote="At Criteo, developer happiness is our top priority—not just productivity. We want to tackle the things that developers see as hurdles in their day-to-day life. By providing them with the right tools, like Sourcegraph, we've found that increased productivity is a natural byproduct."
                         author="François Jehl"
                     />
@@ -87,7 +87,7 @@ export const CaseStudy: FunctionComponent = () => (
                         55 percent of respondents said Sourcegraph saved them a few dozen minutes per day, while 18
                         percent stated they saved over an hour per day.
                     </p>
-                    <InContentBlockquote
+                    <Blockquote
                         quote="The feedback we received was overwhelmingly positive. We had employees saying 'I've dreamt of a tool like Sourcegraph!', 'Please buy it!', 'It saved my life!', 'It literally saved me hours per day!' We're thrilled that it's given us the ability to make our developers happier and more productive in their roles."
                         author="François Jehl"
                     />
@@ -95,7 +95,7 @@ export const CaseStudy: FunctionComponent = () => (
                         As codebases grow larger, Sourcegraph will continue to serve as the backbone to help developers
                         at Criteo quickly search through code to understand what's happening within its ecosystem.
                     </p>
-                    <InContentBlockquote
+                    <Blockquote
                         quote="The quality of the Sourcegraph UI and its code intelligence are two game-changer features for us. It's like having an online IDE for browsing code."
                         author="Loic Teikiteetini-Vaysse"
                     />

@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
+import { Layout, CaseStudyLayout, ContentSection, Blockquote } from '@components'
 
 export const CaseStudy: FunctionComponent = () => (
     <Layout
@@ -41,7 +41,7 @@ export const CaseStudy: FunctionComponent = () => (
                         Determining which code relied on legacy architecture was difficult. Developers took too long to
                         ensure that changes to legacy systems didn't affect production stability.
                     </p>
-                    <InContentBlockquote quote="Ensuring that changes to legacy systems didn't affect production stability was taking too long." />
+                    <Blockquote quote="Ensuring that changes to legacy systems didn't affect production stability was taking too long." />
 
                     <p>
                         Over 9,000 officers in 38 countries rely on Thorn to identify child victims of sexual abuse. Any
@@ -72,7 +72,7 @@ export const CaseStudy: FunctionComponent = () => (
 
                     <p>Sourcegraph is now essential to their code review process. </p>
 
-                    <InContentBlockquote quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed, giving the reviewer confidence that the code is safe to merge." />
+                    <Blockquote quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed, giving the reviewer confidence that the code is safe to merge." />
 
                     <h2 className="pt-5 pb-1">Deprecated systems were taken offline without downtime</h2>
                     <p>

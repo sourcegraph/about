@@ -5,22 +5,18 @@ export const AuthorBio: React.FunctionComponent<{
     title: string
     about: string
 }> = ({ customer, image, author, title, about }) => (
-    <div className="d-flex flex-column flex-md-row align-items-center align-items-md-start container-xl py-6 py-md-8">
+    <div className="d-flex flex-column flex-md-row align-items-start">
         {image && (
-            <div className="col-md-3 col-xl-2 text-center text-md-right">
-                <img
-                    className="p-1 rounded-circle border border-3 border-pacific-blue max-w-150"
-                    src={image}
-                    alt={author}
-                />
+            <div className="col-md-3">
+                <img className="rounded-circle max-w-150" src={image} alt={author} />
             </div>
         )}
-        <div className="col-md-4 col-xl-3 text-center text-md-left">
-            <h5 className="font-weight-bold pt-5">{author}</h5>
-            <p>{title}</p>
-        </div>
-        <div className="col-md-5 col-xl-6 mr-xl-0 mx-md-auto text-center text-md-left">
-            <h5 className="font-weight-bold pt-5">About {customer}</h5>
+        <div className="col-md-9 pl-md-5 pl-0">
+            <h6 className="pt-md-2 pt-4 font-weight-bold">AUTHOR</h6>
+            <h3 className="font-weight-normal">{author}</h3>
+            <p className="text-muted">{title}</p>
+
+            <h5 className="font-weight-bold">About {customer}</h5>
             <p>{about}</p>
         </div>
     </div>
