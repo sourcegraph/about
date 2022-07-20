@@ -225,7 +225,7 @@ const CareersPage: FunctionComponent = () => {
                 <div className="benefits">
                     <div className="d-flex flex-wrap">
                         <div className="m-auto">
-                            <h2 className="col-lg-10 display-2 text-center mx-auto">
+                            <h2 className="col-lg-10 display-2 font-weight-bold text-center mx-auto">
                                 Happy, healthy, and always in the flow.
                             </h2>
                             <p className="col-lg-6 text-center mx-auto">
@@ -325,7 +325,7 @@ const CareersPage: FunctionComponent = () => {
                             <Carousel.Item key={item.value}>
                                 <div className="d-flex flex-column align-items-center min-h-550 py-7">
                                     <h5 className="display-5 font-weight-bold text-uppercase">We value:</h5>
-                                    <h2 className="display-4">{item.value}</h2>
+                                    <h2 className="display-3 font-weight-bold">{item.value}</h2>
                                     <p className="col-8 display-5 text-center">{item.description}</p>
                                     {item.img}
                                 </div>
@@ -344,7 +344,7 @@ const CareersPage: FunctionComponent = () => {
                     <ContentSection>
                         <div className="row">
                             <div className="col-lg-12">
-                                <h2 className="display-2">What you seek is seeking you</h2>
+                                <h2 className="display-2 font-weight-bold">What you seek is seeking you</h2>
                                 <p>
                                     We're looking forward to reminding you that "you're on mute"{' '}
                                     <img src="../SmileyWink.svg" alt="Smiling winky face emoji" />

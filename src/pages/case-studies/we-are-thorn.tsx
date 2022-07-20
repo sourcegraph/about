@@ -41,7 +41,10 @@ export const CaseStudy: FunctionComponent = () => (
                         Determining which code relied on legacy architecture was difficult. Developers took too long to
                         ensure that changes to legacy systems didn't affect production stability.
                     </p>
-                    <Blockquote quote="Ensuring that changes to legacy systems didn't affect production stability was taking too long." />
+                    <Blockquote
+                        quote="Ensuring that changes to legacy systems didn't affect production stability was taking too long."
+                        center={false}
+                    />
 
                     <p>
                         Over 9,000 officers in 38 countries rely on Thorn to identify child victims of sexual abuse. Any
@@ -72,7 +75,10 @@ export const CaseStudy: FunctionComponent = () => (
 
                     <p>Sourcegraph is now essential to their code review process. </p>
 
-                    <Blockquote quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed, giving the reviewer confidence that the code is safe to merge." />
+                    <Blockquote
+                        quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed, giving the reviewer confidence that the code is safe to merge."
+                        center={false}
+                    />
 
                     <h2 className="pt-5 pb-1">Deprecated systems were taken offline without downtime</h2>
                     <p>

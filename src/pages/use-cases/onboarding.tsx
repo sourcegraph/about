@@ -8,7 +8,6 @@ import Link from 'next/link'
 import {
     BackButtonBold,
     Blockquote,
-    BlockquoteWithLogoBottom,
     BlogResourceItem,
     CustomCarousel,
     ContentSection,
@@ -300,11 +299,12 @@ const UseCasePage: FunctionComponent = () => (
 
         <div className="bg-gradient-saturn-saturated py-8">
             <ContentSection>
-                <div className="d-flex flex-column justify-content-center text-center px-lg-8">
-                    <BlockquoteWithLogoBottom
+                <div className="d-flex flex-column justify-content-center px-lg-8">
+                    <Blockquote
+                        headline="Convoy knows its codebase inside and out"
                         quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
-                        header="Convoy knows its codebase inside and out"
                         author="Owen Kim, Senior Software Engineer at Convoy"
+                        border={false}
                         logo={{
                             src: '/external-logos/convoy-logo.svg',
                             alt: 'Convoy',

@@ -20,7 +20,7 @@ import {
 import { CodeInsightExampleType } from '@code-insights/types'
 import {
     BlogResourceItem,
-    BlockquoteWithLogoBottom,
+    Blockquote,
     ContentSection,
     CustomCarousel,
     Layout,
@@ -360,15 +360,16 @@ const CodeInsightsPage: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <div className="bg-gradient-venus-radial py-4">
-                <ContentSection className="py-lg-6 col-lg-8 text-center">
-                    <BlockquoteWithLogoBottom
-                        header="Trusted by engineering teams worldwide"
+            <div className="bg-gradient-venus-radial py-7">
+                <ContentSection className="col-lg-8">
+                    <Blockquote
+                        headline="Trusted by engineering teams worldwide"
                         quote="As we've grown, so has the need to better track and communicate our progress and
                         goals across the engineering team and broader company. With Code Insights, our data and
                         migration tracking is accurate across our entire codebase, and our engineers and
                         managers can shift out of manual spreadsheets and spend more time working on
                         code."
+                        border={false}
                         author="Balázs Tóthfalussy, Engineering Manager, Prezi"
                         logo={{ src: '/external-logos/prezi-logo.svg', alt: 'Prezi logo', href: 'https://prezi.com' }}
                     />

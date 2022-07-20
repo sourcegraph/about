@@ -19,7 +19,6 @@ published: true
 <Blockquote
   quote="Sourcegraph has the best find-definition, find-references, and intelligent code navigation capability on the planet - and they brought it to GitLab."
   author="Sid Sijbrandij, GitLab CEO"
-  center={true}
 />
 
 Check out the below video where Quinn sat down with GitLab CEO Sid Sijbrandij to discuss the native GitLab integration, and why Sourcegraph's code intelligence means better code reviews and improved code quality for [GitLab Enterprise](https://about.gitlab.com/solutions/enterprise-class/) customers and open source projects on [GitLab.com](https://gitlab.com/explore).
