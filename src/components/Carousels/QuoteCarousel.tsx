@@ -43,7 +43,6 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items }) 
                             headline={item.header}
                             author={item.by}
                             border={false}
-                            center={true}
                             logo={{
                                 src: item.logoImage || '',
                                 alt: item.logoAlt || '',

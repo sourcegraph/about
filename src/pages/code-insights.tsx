@@ -370,7 +370,6 @@ const CodeInsightsPage: FunctionComponent = () => {
                         managers can shift out of manual spreadsheets and spend more time working on
                         code."
                         border={false}
-                        center={true}
                         author="Balázs Tóthfalussy, Engineering Manager, Prezi"
                         logo={{ src: '/external-logos/prezi-logo.svg', alt: 'Prezi logo', href: 'https://prezi.com' }}
                     />

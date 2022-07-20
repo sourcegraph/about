@@ -136,7 +136,6 @@ const PricingPage: FunctionComponent = () => (
                                 our 2000+ repositories, and the confidence that we're not leaving anyone
                                 behind."
                                 author="Aneesh Agrawal, Software Engineer, Lyft"
-                                center={true}
                                 logo={{
                                     src: '/external-logos/lyft-logo.svg',
                                     alt: 'Lyft logo: Read the case study',
@@ -219,7 +218,6 @@ const PricingPage: FunctionComponent = () => (
                             <Blockquote
                                 quote="Sourcegraph pays for itself many times over—it's a game changer."
                                 author="François Jehl, Senior Engineering Manager, Criteo"
-                                center={true}
                                 logo={{
                                     src: '/external-logos/criteo-logo.svg',
                                     alt: 'Criteo logo: Read the case study',

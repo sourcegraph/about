@@ -49,6 +49,7 @@ export const CaseStudy: FunctionComponent = () => {
                             quote="We were trying to answer questions like who was using specific dependencies and different libraries and where are 
                             these lines of code or log lines coming from. We needed to be able to search thousands of repos to find them."
                             author={terinStock}
+                            center={false}
                         />
 
                         <p>
@@ -113,6 +114,7 @@ export const CaseStudy: FunctionComponent = () => {
                                     of controls or checks are happening. With Sourcegraph, I can jump into another engineer's project and 
                                     quickly explore and better understand the code faster."
                             author="David Haynes, Security Engineer"
+                            center={false}
                         />
 
                         <p>

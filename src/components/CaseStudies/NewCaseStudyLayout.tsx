@@ -34,7 +34,6 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, logo, q
                         author={quote.author}
                         largeText={true}
                         border={false}
-                        center={true}
                         logo={{
                             src: logo?.img || '',
                             alt: customer,

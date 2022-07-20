@@ -58,6 +58,7 @@ const FixingVulnerabilities: FunctionComponent = () => {
                         if and when we get asked by an auditor."
                         author="David Haynes, Security Engineer at Cloudflare"
                         border={false}
+                        center={false}
                         logo={{ src: '/external-logos/cloudflare-logo.svg', alt: 'Cloudflare logo' }}
                         link={{
                             text: 'Read the full case study',

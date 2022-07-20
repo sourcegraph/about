@@ -250,7 +250,6 @@ const UseCasePage: FunctionComponent = () => (
                             headline="Lunar makes every developer autonomous"
                             quote="Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues. This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked."
                             author="Bjørn Hal Sørensen, Web Architect at Lunar"
-                            center={true}
                             logo={{
                                 src: '/external-logos/lunar.svg',
                                 alt: 'Lunar',
@@ -267,7 +266,7 @@ const UseCasePage: FunctionComponent = () => (
 
         <div className="bg-gradient-saturn-saturated py-8">
             <ContentSection>
-                <div className="d-flex flex-column justify-content-center text-center px-lg-8">
+                <div className="d-flex flex-column justify-content-center px-lg-8">
                     <Blockquote
                         headline="Convoy knows its codebase inside and out"
                         quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
