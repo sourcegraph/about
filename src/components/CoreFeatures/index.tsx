@@ -52,7 +52,7 @@ export const features: Features[] = [
         },
     },
     {
-        productFeature: 'code intelligence',
+        productFeature: 'code navigation',
         title: 'Navigate your codebase and your dependencies',
         description:
             'Follow symbol definitions and references across packages, dependencies, and repositories seamlessly.',
@@ -61,7 +61,7 @@ export const features: Features[] = [
             'Navigate your code in your web browser to see any commit, on any branch, of any repository instantly',
             'Follow dependencies across repositories with confidence using precompiled data for speed and precision',
         ],
-        ctaLink: 'https://docs.sourcegraph.com/code_intelligence',
+        ctaLink: '/code-search',
         video: {
             mp4: codeIntelMp4,
             webm: codeIntelWebm,
