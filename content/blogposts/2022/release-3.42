@@ -28,6 +28,8 @@ We're fixing UX papercuts and cleaning up our UI. 3.42 will have an optional Bet
 ![](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/beta-ui.gif)
 ## Searching by repository descriptions
 We've introduced a new search predicate that enables searching by repository description, for example: `repo:has.description(machine learning)`. Now you can search for interesting repository topics, even if you don't know their names.
+
+This is especially useful for engineers joining new teams or onboarding to a codebase at a new company, so you can quickly find repositories without knowing exactly what you're looking for.
 ![](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/repo-description-search.png)
 
 ## New search suggestions
