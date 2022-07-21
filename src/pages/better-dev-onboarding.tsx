@@ -7,7 +7,7 @@ import {
     BlogResourceItem,
     ContentSection,
     CustomerLogos,
-    FeatureWalkthrough,
+    CoreFeatures,
     IntegrationsSection,
     Layout,
 } from '@components'
@@ -88,7 +88,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection className="pb-8">
-                <FeatureWalkthrough />
+                <CoreFeatures />
             </ContentSection>
 
             <div className="bg-light-gray-3">

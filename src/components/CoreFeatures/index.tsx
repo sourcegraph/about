@@ -105,7 +105,7 @@ export const features: Features[] = [
     },
 ]
 
-export const FeatureWalkthrough: FunctionComponent = () => {
+export const CoreFeatures: FunctionComponent = () => {
     useEffect(() => {
         const videos = features.map(
             (vid, index): VideoElement => ({
