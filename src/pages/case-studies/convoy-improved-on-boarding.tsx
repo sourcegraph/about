@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
+import { Layout, CaseStudyLayout, ContentSection, Blockquote } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 export const CaseStudy: FunctionComponent = () => (
     <Layout
@@ -33,7 +34,13 @@ export const CaseStudy: FunctionComponent = () => (
                         For Brandon Bloom, a new hire who was eager to start contributing, using GitHub's native search
                         across Convoy's voluminous repositories rarely gave him the results he needed. His frustration
                         led him to Sourcegraph. As an{' '}
-                        <a href="https://about.sourcegraph.com/blog/from-saas-to-on-premises">
+                        <a
+                            href="https://about.sourcegraph.com/blog/from-saas-to-on-premises"
+                            title="on-prem and self-hosted product"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             on-prem and self-hosted product
                         </a>
                         , he could safely and independently set up a Sourcegraph instance locally, and was able to get
@@ -44,27 +51,31 @@ export const CaseStudy: FunctionComponent = () => (
                         It didn't take long for other engineers in his team to realize the immense benefits Sourcegraph
                         provided when it came to understanding Convoy's growing code base.
                     </p>
-                    <InContentBlockquote
+                    <Blockquote
                         quote="It's helped me out a lot. Made going through other people's code much easier and was better for learning different patterns used in other repos."
                         author="Aamir Jawaid, Software Engineer, Convoy"
+                        center={false}
                     />
-                    <InContentBlockquote
+                    <Blockquote
                         quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
                         author="Owen Kim, Senior Software Engineer, Convoy"
+                        center={false}
                     />
                     <p>
                         The usage grew organically and so did the speed in which they were able to ship solutions for
                         complex logistical problems.
                     </p>
 
-                    <InContentBlockquote
+                    <Blockquote
                         quote="Fast, org-wide code search is a necessity in any organization, and tooling for this is especially necessary when we've chosen a multi-repo approach to code organization.
                         The time I would otherwise spend using either GitHub's slow search or finding and cloning repos is worth a lot."
                         author="James Reggio, Principal Engineer, Convoy"
+                        center={false}
                     />
-                    <InContentBlockquote
+                    <Blockquote
                         quote="It's fast, which is super nice. It's faster than any other tool I've ever used for code search. I've become more productive with Sourcegraph."
                         author="Ethan Hall, Senior Software Engineer, Convoy"
+                        center={false}
                     />
                     <br />
                 </div>

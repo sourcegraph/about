@@ -54,7 +54,7 @@ export const Install: FunctionComponent = () => {
                         onClick={copy}
                         onKeyDown={copy}
                         role="button"
-                        className={classNames(styles.icon, 'icon-inline ml-4 align-text-top')}
+                        className={classNames(styles.icon, 'ml-4 align-text-top')}
                         tabIndex={0}
                     >
                         <CopyIcon />
@@ -70,6 +70,7 @@ export const Install: FunctionComponent = () => {
                 <a
                     className="d-inline-block text-lg"
                     href="https://docs.sourcegraph.com"
+                    title="Deploy to a server or cluster"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.trySourcegraph}
                     data-button-type="cta"

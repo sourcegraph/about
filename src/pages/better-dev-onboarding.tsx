@@ -105,6 +105,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
                     <Link href="/get-started/self-hosted" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
+                            title="Get started"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
                             data-button-type="cta"
@@ -116,8 +117,9 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
+                            title="Request a demo"
                             data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
+                            data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
                         >
                             request a demo

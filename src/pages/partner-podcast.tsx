@@ -2,7 +2,8 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, CaseStudyCard, BlogResourceItem, HubSpotForm } from '@components'
+import { Layout, CaseStudyCard, HubSpotForm, BlogResourceItem } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const blogResourceItems = [
     {
@@ -75,7 +76,7 @@ const caseStudyItems = [
 const PartnerPodcastPage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Code Intelligence Platform - Sourcegraph',
+            title: 'Code Intelligence Platform | Sourcegraph',
             description:
                 'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Sourcegraph.',
         }}
@@ -111,37 +112,32 @@ const PartnerPodcastPage: FunctionComponent = () => (
                 <h1 className="display-3 font-weight-bold pt-2">Want to use Sourcegraph at your company?</h1>
                 <h5 className="pt-4 pb-1 mx-auto max-w-550 font-weight-normal">
                     <span>
-                        <Link href="/get-started/self-hosted">Get started </Link>
-                    </span>
-                    for free with up to 10 teammates or
+                        <Link href="/get-started/self-hosted" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Get started"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Get started
+                            </a>
+                        </Link>
+                    </span>{' '}
+                    for free with up to 10 teammates or{' '}
                     <span>
-                        <Link href="/demo"> request a demo </Link>
-                    </span>
-                    to learn about our enterprise plan and to see Sourcegraph in your own environment.
-                </h5>
-            </section>
-        </div>
-
-        <div className="container max-w-900 my-md-8 my-6 px-0">
-            <div className="col-lg-6">
-                <h1 className="mb-5 font-weight-bold">Related resources</h1>
-            </div>
-            {blogResourceItems.map(item => (
-                <BlogResourceItem key={item.title} blog={item} />
-            ))}
-        </div>
-
-        <div className="bg-gradient-venus-saturated py-6">
-            <section className="container max-w-900 text-center">
-                <h1 className="display-3 font-weight-bold pt-2">Want to use Sourcegraph at your company?</h1>
-                <h5 className="pt-4 pb-1 mx-auto max-w-550 font-weight-normal">
-                    <span>
-                        <Link href="/get-started">Get started </Link>
-                    </span>
-                    for free with up to 10 teammates or
-                    <span>
-                        <Link href="/demo"> request a demo </Link>
-                    </span>
+                        <Link href="/demo" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Request a demo"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                request a demo
+                            </a>
+                        </Link>
+                    </span>{' '}
                     to learn about our enterprise plan and to see Sourcegraph in your own environment.
                 </h5>
             </section>
@@ -163,6 +159,10 @@ const PartnerPodcastPage: FunctionComponent = () => (
             <a
                 href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
                 className="rounded btn btn-primary border-white mt-md-0 mt-4"
+                title="Changelog"
+                data-button-style={buttonStyle.primary}
+                data-button-location={buttonLocation.hero}
+                data-button-type="cta"
             >
                 Changelog
             </a>

@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
+import { Layout, CaseStudyLayout, ContentSection, Blockquote } from '@components'
 
 export const CaseStudy: FunctionComponent = () => (
     <Layout
@@ -67,7 +67,10 @@ export const CaseStudy: FunctionComponent = () => (
                         </pre>
                     </div>
 
-                    <InContentBlockquote quote="Unlike other tools, Sourcegraph doesn't just search for keywords, it searches for regular expressions. This familiar query language allowed us to zero-in on exactly what we wanted and filter out false matches." />
+                    <Blockquote
+                        quote="Unlike other tools, Sourcegraph doesn't just search for keywords, it searches for regular expressions. This familiar query language allowed us to zero-in on exactly what we wanted and filter out false matches."
+                        center={false}
+                    />
 
                     <p>
                         For every project, the team created a burndown list of issues and provided links to Sourcegraph
@@ -76,7 +79,10 @@ export const CaseStudy: FunctionComponent = () => (
                         they were each examined individually.
                     </p>
 
-                    <InContentBlockquote quote="Sourcegraph's search gave us confidence because we knew we wouldn't overlook anything: Sourcegraph returns all search results, it doesn't drop or elide them, unlike GitHub Enterprise." />
+                    <Blockquote
+                        quote="Sourcegraph's search gave us confidence because we knew we wouldn't overlook anything: Sourcegraph returns all search results, it doesn't drop or elide them, unlike GitHub Enterprise."
+                        center={false}
+                    />
 
                     <p>
                         Each team was able to use the Sourcegraph searches to confirm that all of their outstanding
@@ -95,7 +101,10 @@ export const CaseStudy: FunctionComponent = () => (
                         alerts before any changes that affect personal data are merged.
                     </p>
 
-                    <InContentBlockquote quote="Saved searches allow us to constantly monitor code that manages personal data, organization wide, before changes land in production." />
+                    <Blockquote
+                        quote="Saved searches allow us to constantly monitor code that manages personal data, organization wide, before changes land in production."
+                        center={false}
+                    />
 
                     <h2 className="pt-5 pb-1">
                         Large scale refactoring is now possible without risking production stability

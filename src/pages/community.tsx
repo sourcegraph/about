@@ -29,10 +29,10 @@ export const Community: FunctionComponent = () => (
                         </p>
                         <a
                             className="btn btn-primary"
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.hero}
-                            data-button-type="cta"
                             href="https://discord.gg/rDPqBejz93"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
                             title="Join our Discord"
                         >
                             Join our Discord
@@ -53,15 +53,48 @@ export const Community: FunctionComponent = () => (
             <h2 className="display-3 font-weight-bold mt-5 mb-3">Get up to speed</h2>
             <div className="row justify-content-center">
                 <p className="col-md-8">
-                    We can’t give you a 25-hour day, but here is a <a href="http://srcgr.ph/cheatsheet">speed sheet</a>{' '}
+                    We can’t give you a 25-hour day, but here is a{' '}
+                    <a
+                        href="http://srcgr.ph/cheatsheet"
+                        title="Speed sheet"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        speed sheet
+                    </a>{' '}
                     with the most useful Sourcegraph shortcuts. Need even more speed? Fasten your seat belt and dive
-                    into our curated <a href="https://learn.sourcegraph.com/tags/sourcegraph">tutorials</a> &#38; other{' '}
-                    <a href="https://docs.sourcegraph.com/">tip documents</a>.
+                    into our curated{' '}
+                    <a
+                        href="https://learn.sourcegraph.com/tags/sourcegraph"
+                        title="Tutorials"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        tutorials
+                    </a>{' '}
+                    &#38; other{' '}
+                    <a
+                        href="https://docs.sourcegraph.com/"
+                        title="Tip documents"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        tip documents
+                    </a>
+                    .
                 </p>
             </div>
             <div className="row">
                 <div className="col-12 mt-4">
-                    <a href="http://srcgr.ph/cheatsheet">
+                    <a
+                        href="http://srcgr.ph/cheatsheet"
+                        data-button-style={buttonStyle.image}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
                         <Figure
                             src="/community/cheatsheet_top.png"
                             alt="Sourcegraph Cheatsheet"
@@ -84,7 +117,14 @@ export const Community: FunctionComponent = () => (
                         </li>
                         <li className="mt-2">Share the road less traveled so that everyone can learn</li>
                     </ul>
-                    <a className="btn btn-primary" href="https://discord.gg/rDPqBejz93" title="Join us on Discord">
+                    <a
+                        className="btn btn-primary"
+                        href="https://discord.gg/rDPqBejz93"
+                        title="Join us on Discord"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
                         Join us on Discord
                     </a>
                 </div>
@@ -106,7 +146,16 @@ export const Community: FunctionComponent = () => (
                             </p>
                             <ul>
                                 <li>
-                                    <a href="https://www.gophercon.com/">GopherCon 2022</a> - 10/6 - 10/8
+                                    <a
+                                        href="https://www.gophercon.com/"
+                                        title="GopherCon 2022"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
+                                        GopherCon 2022
+                                    </a>{' '}
+                                    - 10/6 - 10/8
                                 </li>
                             </ul>
                         </div>
@@ -118,8 +167,16 @@ export const Community: FunctionComponent = () => (
                             <YouTube title="Dev Tool Time" id="QNYoOCLocAI" />
                             <p className="pt-3">
                                 Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
-                                <a href="https://srcgr.ph/dev-tool-time-playlist">YouTube channel</a> and subscribe to
-                                keep up with new episodes.
+                                <a
+                                    href="https://srcgr.ph/dev-tool-time-playlist"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                    title="YouTube Channel"
+                                >
+                                    YouTube channel
+                                </a>{' '}
+                                and subscribe to keep up with new episodes.
                             </p>
                         </div>
                     </div>
@@ -130,20 +187,55 @@ export const Community: FunctionComponent = () => (
                             <YouTube title="Sourcegraph Podcast" id="VgVDMd2VlaU" />
                             <p className="pt-3">
                                 <strong>Subscribe:</strong>&nbsp;
-                                <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA">
+                                <a
+                                    href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                    title="YouTube"
+                                >
                                     YouTube
                                 </a>
                                 &nbsp;
-                                <a href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009">
+                                <a
+                                    href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                    title="Apple"
+                                >
                                     Apple
                                 </a>
                                 &nbsp;
-                                <a href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6">Spotify</a>&nbsp;
-                                <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw==">
+                                <a
+                                    href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                    title="Spotify"
+                                >
+                                    Spotify
+                                </a>
+                                &nbsp;
+                                <a
+                                    href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw=="
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                    title="Google"
+                                >
                                     Google
                                 </a>
                                 &nbsp;
-                                <a href="https://feeds.buzzsprout.com/1097978.rss">RSS</a>
+                                <a
+                                    href="https://feeds.buzzsprout.com/1097978.rss"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                    title="RSS"
+                                >
+                                    RSS
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -157,7 +249,17 @@ export const Community: FunctionComponent = () => (
                     <h2 className="display-3 font-weight-bold mb-3">We’d love to hear from you!</h2>
                     <br />
                     Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn,
-                    or email us at <a href="mailto:community@sourcegraph.com">community@sourcegraph.com</a>.
+                    or email us at{' '}
+                    <a
+                        href="mailto:community@sourcegraph.com"
+                        title="community@sourcegraph.com"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
+                    >
+                        community@sourcegraph.com
+                    </a>
+                    .
                 </div>
                 <div className="col-lg-5 mt-3">
                     <a

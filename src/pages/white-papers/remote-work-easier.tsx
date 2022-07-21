@@ -3,7 +3,8 @@ import { FunctionComponent } from 'react'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import Link from 'next/link'
 
-import { Layout, WhitePaperPage, ContentSection, BlockquoteWithBorder, Figure } from '@components'
+import { Layout, WhitePaperPage, ContentSection, Blockquote, Figure } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 export const RemoteWorkEasier: FunctionComponent = () => (
     <Layout
@@ -28,8 +29,16 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                     </p>
                     <p>
                         We have compiled some excellent tips and tricks from fellow{' '}
-                        <a href="https://handbook.sourcegraph.com/company/team">teammates</a> on how to live your best
-                        distributed work life!
+                        <a
+                            href="https://handbook.sourcegraph.com/company/team"
+                            title="teammates"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            teammates
+                        </a>{' '}
+                        on how to live your best distributed work life!
                     </p>
                     <h2 className="pt-5 pb-1">Tips for working remotely</h2>
                     <h3 className="pt-5 pb-1">Home office and desk setup</h3>
@@ -117,9 +126,10 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         src="/white-papers/remotework_codereview.png"
                         alt="Sourcegraph's go to definition and find references hover tooltip on a code review"
                     />
-                    <BlockquoteWithBorder
+                    <Blockquote
                         quote="Having Sourcegraph is an improvement for several reasons. It's an easy way to share pointers to code and searches on code. When working remotely, I can't easily have someone look over my shoulder as I would in person. Screen sharing is possible (but with much higher-friction), and the results are harder to reproduce offline. Links to Sourcegraph are much more useful when trying to add in context for a Slack thread that blew up when I wasn't paying attention. Sourcegraph is also a better way to explore unfamiliar code. It costs more to get someone's attention when asking a question (because of timezones, async channels), so when I do need to ask someone for help, I want to respect their time by doing due diligence first. Sourcegraph helps me explore the code more effectively on my own than I could with only local clones and GitHub search."
                         author="Michael Fromberger, Software Engineer at Sourcegraph"
+                        center={false}
                     />
                     <h3 className="pt-5 pb-1">Find the right people</h3>
                     <p>
@@ -140,9 +150,10 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         src="/white-papers/remotework_commithistory.png"
                         alt="A commit history search with highlighted code authors in Sourcegraph"
                     />
-                    <BlockquoteWithBorder
+                    <Blockquote
                         quote="As a Product Manager, I care about everything--features, bug fixes, improvements--that go into the product. I use a saved search in Sourcegraph to be notified by email every time there is an update to our CHANGELOG. This lets me keep track of what and when features get in and makes sure I know who to talk to about that change if I have any questions. It also removes unnecessary communication cycles between the engineering team and me because rather than needing to interrupt each team member, or require them to reach out to me to find out what is going on, I am proactively informed."
                         author="Christina Forney, Product Manager at Sourcegraph"
+                        center={false}
                     />
                     <h3 className="pt-5 pb-1">Write better documentation</h3>
                     <p>
@@ -151,15 +162,26 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         functions), you are more likely to improve the documentation of that code to make understanding
                         it easier at a glance.
                     </p>
-                    <BlockquoteWithBorder
+                    <Blockquote
                         quote="As we've grown, I've needed to hand off a lot of code ownership and processes to other people. This meant writing a lot of docs (in code and in Markdown files). Having code search makes me more likely and happier to write docs because I believe that people will be more likely to actually discover and read them."
                         author="Quinn Slack, CEO of Sourcegraph"
+                        center={false}
                     />
                     <p>
                         Sourcegraph's search also makes it more likely that you will discover documentation that is
                         stored inside your repositories but outside your code. This increases traffic to documentation
                         and leads to people relying on it more, which in turn causes people to improve it. We have seen
-                        this extensively in the <a href="https://handbook.sourcegraph.com">Sourcegraph handbook</a>.
+                        this extensively in the{' '}
+                        <a
+                            href="https://handbook.sourcegraph.com"
+                            title="Sourcegraph handbook"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Sourcegraph handbook
+                        </a>
+                        .
                     </p>
                     <h3 className="pt-5 pb-1">Share code more easily</h3>
                     <p>
@@ -168,15 +190,31 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         you're looking at? Walk over to her desk? Navigate through the GitHub user interface to find the
                         right file?
                     </p>
-                    <BlockquoteWithBorder
+                    <Blockquote
                         quote="It's nice to be able to share links to code with Sourcegraph. It's important for remote work because your conversation partner often cannot look at your screen."
                         author="Uwe Hoffmann, Software Engineer at Sourcegraph"
+                        center={false}
                     />
                     <p>
-                        With <a href="https://docs.sourcegraph.com/integration/editor">Sourcegraph editor extensions</a>
+                        With{' '}
+                        <a
+                            href="https://docs.sourcegraph.com/integration/editor"
+                            title="Sourcegraph editor extensions"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Sourcegraph editor extensions
+                        </a>
                         , you can easily use a shortcut key to open your current selection on Sourcegraph. You can also
                         use our{' '}
-                        <a href="https://docs.sourcegraph.com/integration/browser_search_engine">
+                        <a
+                            href="https://docs.sourcegraph.com/integration/browser_search_engine"
+                            title="browser search engine shortcuts"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             browser search engine shortcuts
                         </a>{' '}
                         to quickly search across your entire organization's code. Both allow you to instantly get a link
@@ -198,9 +236,10 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         <li>Showcases code dependencies to ensure informed communication</li>
                         <li>Enables link sharing to code, facilitating remote and asynchronous conversations</li>
                     </ul>
-                    <BlockquoteWithBorder
+                    <Blockquote
                         quote="Any tool that empowers you to find the answer to your own question is good for remote work, and Sourcegraph is such a tool. The alternative is waiting for someone else to tell you the answer, which means you are blocked in the meantime, or you have to task-switch, which is costly."
                         author="Nick Snyder, VP Engineering at Sourcegraph"
+                        center={false}
                     />
                     <br />
                 </div>
@@ -208,7 +247,15 @@ export const RemoteWorkEasier: FunctionComponent = () => (
             <ContentSection color="black" className="py-5">
                 <div className="row justify-content-md-center">
                     <div className="col-md-3 text-center">
-                        <a href="https://twitter.com/sourcegraph" target="_blank" rel="noreferrer">
+                        <a
+                            href="https://twitter.com/sourcegraph"
+                            target="_blank"
+                            rel="noreferrer"
+                            title="Twitter icon"
+                            data-button-style={buttonStyle.image}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             <TwitterIcon size={72} />
                         </a>
                     </div>
@@ -218,10 +265,14 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                             <a
                                 href="https://twitter.com/share?ref_src=twsrc%5Etfw"
                                 className="twitter-share-button"
+                                title="Tweet"
                                 data-text='Great read on "Remote software development made easier" — @sourcegraph has helped me with ...'
                                 data-url="https://about.sourgraph.com/white-papers/remote-work-easier"
                                 data-related="sourcegraph"
                                 data-show-count="false"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
                             >
                                 Tweet
                             </a>{' '}
@@ -252,7 +303,13 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                             passHref={true}
                         >
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="btn btn-lg btn-outline-light universal-code-search__btn mt-3 font-weight-normal">
+                            <a
+                                className="btn btn-lg btn-outline-light universal-code-search__btn mt-3 font-weight-normal"
+                                title="Free download"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 Free download
                             </a>
                         </Link>

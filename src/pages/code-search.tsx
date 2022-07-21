@@ -3,14 +3,7 @@ import React, { FunctionComponent } from 'react'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import Link from 'next/link'
 
-import {
-    ContentSection,
-    BlockquoteWithBorder,
-    IntegrationsSection,
-    Layout,
-    SelfHostedSection,
-    YouTube,
-} from '@components'
+import { ContentSection, Blockquote, IntegrationsSection, Layout, SelfHostedSection, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 export const CodeSearchPage: FunctionComponent = () => (
@@ -37,7 +30,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
                                     className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
-                                    title="Request a Demo."
+                                    title="Request a Demo"
                                     data-button-style={buttonStyle.primary}
                                     data-button-location={buttonLocation.hero}
                                     data-button-type="cta"
@@ -49,7 +42,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
                                     className="btn btn-outline-primary w-md-100"
-                                    title="Try Sourcegraph."
+                                    title="Try Sourcegraph"
                                     data-button-style={buttonStyle.outline}
                                     data-button-location={buttonLocation.hero}
                                     data-button-type="cta"
@@ -83,8 +76,17 @@ export const CodeSearchPage: FunctionComponent = () => (
                         <li className="mt-3">
                             <strong>Extensible.</strong> Connect all your other tools to get things like test coverage,
                             1-click open file in editor, custom highlighting, and information from your other favorite
-                            services all in one place with
-                            <a href="https://sourcegraph.com/extensions?category=All"> extensions</a>.
+                            services all in one place with{' '}
+                            <a
+                                href="https://sourcegraph.com/extensions?category=All"
+                                title="extensions"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                extensions
+                            </a>
+                            .
                         </li>
                     </ul>
                 </div>
@@ -154,12 +156,13 @@ export const CodeSearchPage: FunctionComponent = () => (
                     <h5>Mitigate security and compliance risks</h5>
                     <p>Get alerts for vulnerabilities and then automate security fixes across your entire codebase.</p>
                 </div>
-                <div className="col-lg-6 text-center">
-                    <BlockquoteWithBorder
-                        quote={`At Criteo, developer happiness is our top priority-not just productivity. By providing them
+                <div className="col-lg-6">
+                    <Blockquote
+                        quote="At Criteo, developer happiness is our top priority-not just productivity. By providing them
                         with the right tools, like Sourcegraph, we've found that increased productivity is a natural
-                        byproduct.`}
+                        byproduct."
                         author="Francois Jehl, Senior Engineering Manager, Criteo"
+                        center={true}
                         logo={{
                             src: '/external-logos/criteo-logo.svg',
                             alt: 'Criteo',
@@ -168,7 +171,12 @@ export const CodeSearchPage: FunctionComponent = () => (
                     <div className="mt-4">
                         <Link href="/case-studies/criteo-tackles-big-code" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a>
+                            <a
+                                title="Criteo Tackles Big Code"
+                                data-button-style={buttonStyle.textWithArrow}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 Criteo Tackles Big Code <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </Link>
@@ -198,6 +206,10 @@ export const CodeSearchPage: FunctionComponent = () => (
                                 target="_blank"
                                 rel="noreferrer"
                                 href="https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/+f:dockerfile+apt-get%7Capk&patternType=regexp"
+                                title="installing packages in a Dockerfile"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
                             >
                                 installing packages in a Dockerfile
                             </a>

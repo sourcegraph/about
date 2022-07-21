@@ -35,9 +35,20 @@ const items = [
                 text={
                     <p className="py-3">
                         Vulnerabilities are inevitable, but they don't have to be disruptive. With{' '}
-                        <Link href="/code-search">Code Search</Link>, you can find vulnerabilities across your
-                        repositories in a single search. Relieve your engineers from manual work, get a headstart on
-                        remediation, and act confidently knowing that you've located all affected code.
+                        <Link href="/code-search">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Search"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Search
+                            </a>
+                        </Link>
+                        , you can find vulnerabilities across your repositories in a single search. Relieve your
+                        engineers from manual work, get a headstart on remediation, and act confidently knowing that
+                        you've located all affected code.
                     </p>
                 }
             />
@@ -53,9 +64,19 @@ const items = [
                 text={
                     <p className="py-3">
                         Deploy fixes at scale. Don't let the size and complexity of your codebase hold you back. With{' '}
-                        <Link href="/batch-changes">Batch Changes</Link>, you can automate the merging and deployment of
-                        fixes. Move faster than your competitors, free up your engineers, and return your codebase to a
-                        healthy state.
+                        <Link href="/batch-changes">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Batch Changes"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Batch Changes
+                            </a>
+                        </Link>
+                        , you can automate the merging and deployment of fixes. Move faster than your competitors, free
+                        up your engineers, and return your codebase to a healthy state.
                     </p>
                 }
             />
@@ -69,10 +90,19 @@ const items = [
                 header="Proactively monitor for the presence of vulnerable code"
                 text={
                     <p className="py-3">
-                        Get ahead of vulnerabilities. With
-                        <a href="https://docs.sourcegraph.com/code_monitoring"> code monitoring</a>, get alerts whenever
-                        specified patterns enter your codebase. Monitors ensure new occurrences are detected immediately
-                        and allow you to catch them before merging—and before customers have reason to worry.
+                        Get ahead of vulnerabilities. With{' '}
+                        <a
+                            href="https://docs.sourcegraph.com/code_monitoring"
+                            title="Code monitoring"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            code monitoring
+                        </a>
+                        , get alerts whenever specified patterns enter your codebase. Monitors ensure new occurrences
+                        are detected immediately and allow you to catch them before merging—and before customers have
+                        reason to worry.
                     </p>
                 }
             />
@@ -88,8 +118,19 @@ const items = [
                     <p className="py-3">
                         Get the full picture of an incident. Track how long the vulnerable code has been in your
                         codebase and how quickly you're removing it. With{' '}
-                        <Link href="/code-insights">Code Insights</Link>, you can measure the progress of applying
-                        longer-term fixes for vulnerabilities and incidents across all your code.
+                        <Link href="/code-insights">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Insights"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Insights
+                            </a>
+                        </Link>
+                        , you can measure the progress of applying longer-term fixes for vulnerabilities and incidents
+                        across all your code.
                     </p>
                 }
             />
@@ -311,7 +352,15 @@ const UseCasePage: FunctionComponent = () => (
                             <h6>Learn how to use Sourcegraph to identify and resolve every instance of Log4j.</h6>
                             <Link href="/blog/log4j-log4shell-0-day" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a className="font-weight-bold">Read the blog post.</a>
+                                <a
+                                    className="font-weight-bold"
+                                    title="Read the blog post"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    Read the blog post.
+                                </a>
                             </Link>
                         </div>
                     </div>
@@ -354,7 +403,13 @@ const UseCasePage: FunctionComponent = () => (
                         </Link>
                         <Link href="/use-cases" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="d-flex justify-content-center mt-4 font-weight-bold">
+                            <a
+                                className="d-flex justify-content-center mt-4 font-weight-bold"
+                                title="Explore other use cases"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 Explore other use cases
                             </a>
                         </Link>
@@ -384,6 +439,7 @@ const UseCasePage: FunctionComponent = () => (
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         className="btn btn-primary"
+                        title="Ready to get started?"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
-import { BlockquoteWithBorder, ContentSection, Figure, Layout, Video, TrySourcegraph, YouTube } from '@components'
+import { Blockquote, ContentSection, Figure, Layout, Video, TrySourcegraph, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const batchChangesDemoFormURL = '/contact/request-batch-changes-demo'
@@ -90,7 +90,15 @@ export const BatchChangesPage: FunctionComponent = () => (
                         <ul>
                             <li className="mt-2">
                                 Find all occurrences of code to change with Sourcegraph{' '}
-                                <a href="http://about.sourcegraph.com/">universal code search</a>
+                                <a
+                                    href="http://about.sourcegraph.com/"
+                                    title="universal code search"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    universal code search
+                                </a>
                             </li>
                             <li className="mt-2">
                                 Programmatically define changes by creating a declarative specification file
@@ -116,17 +124,17 @@ export const BatchChangesPage: FunctionComponent = () => (
         {/* Social proof */}
         <ContentSection className="py-4 pt-md-8 pb-md-5">
             <div className="row justify-content-center">
-                <div className="col-lg-10 text-center">
-                    <BlockquoteWithBorder
-                        quote={`The ability to automate downstream changes that Sourcegraph Batch Changes provides is a key
+                <div className="col-lg-10">
+                    <Blockquote
+                        quote="The ability to automate downstream changes that Sourcegraph Batch Changes provides is a key
                         capability for reducing the hidden burden of updates pushed across teams and enabling us to
-                        increase our engineering velocity.`}
+                        increase our engineering velocity."
                         author="Jared Hodge, Sr. Manager Developer Experience"
+                        center={true}
                         logo={{
                             src: '/external-logos/indeed-logo.svg',
                             alt: 'Indeed',
                         }}
-                        bold={true}
                     />
                 </div>
             </div>
@@ -215,17 +223,17 @@ export const BatchChangesPage: FunctionComponent = () => (
         {/* Social proof */}
         <ContentSection className="py-4">
             <div className="row justify-content-center pt-md-4">
-                <div className="col-lg-10 text-center">
-                    <BlockquoteWithBorder
-                        quote={`Sourcegraph Batch Changes gives us the confidence we need to understand the total impact of
+                <div className="col-lg-10">
+                    <Blockquote
+                        quote="Sourcegraph Batch Changes gives us the confidence we need to understand the total impact of
                         large-scale code changes before we make them. This enables the entire team to make more
-                        impactful decisions more often.`}
+                        impactful decisions more often."
                         author="Trent Grover, Director of Architecture - Client Technologies, Workiva"
+                        center={true}
                         logo={{
                             src: '/external-logos/workiva-vector-logo.svg',
                             alt: 'Workiva',
                         }}
-                        bold={true}
                     />
                 </div>
             </div>

@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { BlockquoteWithLogoBottom, Layout, HubSpotForm, YouTube } from '@components'
+import { Blockquote, Layout, HubSpotForm, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const AccelerateDevOnboarding: FunctionComponent = () => (
@@ -40,14 +40,15 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
             </div>
         </div>
 
-        <div className="bg-gradient-saturn-saturated text-center">
+        <div className="bg-gradient-saturn-saturated">
             <div className="container py-7 max-w-650">
-                <BlockquoteWithLogoBottom
-                    header="Learn how Convoy increases the efficiency and confidence of entry level developers"
+                <Blockquote
+                    headline="Learn how Convoy increases the efficiency and confidence of entry level developers"
                     quote="For our new developers, Sourcegraph has been invaluable to get to know the repository
                     structure, to track down where code lives, and self-service during their
                     investigations."
                     author="Owen Kim, Senior Software Engineer at Convoy"
+                    border={false}
                     logo={{ src: '/external-logos/convoy-logo.svg', alt: 'Convoy logo' }}
                     link={{ text: 'Read the full case study', href: '/case-studies/convoy-improved-on-boarding' }}
                 />
@@ -63,8 +64,10 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
                             className="btn btn-primary mt-5 d-block d-sm-inline-block"
+                            title="Request a demo"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
                         >
                             Request a demo
                         </a>

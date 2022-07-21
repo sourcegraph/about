@@ -38,9 +38,10 @@ export const SelfHostedSection: FunctionComponent = () => (
                     </ul>
 
                     <Link href="/get-started/self-hosted" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
                             className="d-inline-block text-lg"
-                            href="#none"
+                            title="Learn about self-hosted"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.trySourcegraph}
                             data-button-type="cta"
@@ -54,6 +55,7 @@ export const SelfHostedSection: FunctionComponent = () => (
                     <a
                         className="btn btn-primary d-inline-flex"
                         href="https://info.sourcegraph.com/talk-to-a-developer"
+                        title="Talk to an engineer"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"

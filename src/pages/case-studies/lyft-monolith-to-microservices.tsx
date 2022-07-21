@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
+import { Layout, CaseStudyLayout, ContentSection, Blockquote } from '@components'
 
 export const CaseStudy: FunctionComponent = () => {
     const justinPhilips = 'Justin Phillips, Software Engineer, Lyft'
@@ -36,9 +36,10 @@ export const CaseStudy: FunctionComponent = () => {
                             efficiency, while protecting, and enhancing code quality.
                         </p>
 
-                        <InContentBlockquote
+                        <Blockquote
                             quote="Decomposition or migrating a service is a high-risk endeavor, often involving changes in hundreds of repositories, so a high level of accuracy is needed."
                             author={justinPhilips}
+                            center={false}
                         />
 
                         <h2 className="pt-5 pb-1">From monolith to microservices</h2>
@@ -61,11 +62,20 @@ export const CaseStudy: FunctionComponent = () => {
                             unused API and database fields.
                         </p>
 
-                        <InContentBlockquote
-                            quote="During our decomp efforts, we also spent time to refactor our APIs. Many of these APIs were undocumented and lacked a formalized contract.
-                            <br/><br/>
-                            With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove unused attributes that lived in different repositories, ultimately simplifying our APIs and speeding up developer iteration time."
+                        <Blockquote
+                            quote={
+                                <>
+                                    During our decomp efforts, we also spent time to refactor our APIs. Many of these
+                                    APIs were undocumented and lacked a formalized contract.
+                                    <br />
+                                    <br />
+                                    With the help of Sourcegraph, we were able to quickly look at all clients of an API
+                                    and remove unused attributes that lived in different repositories, ultimately
+                                    simplifying our APIs and speeding up developer iteration time.
+                                </>
+                            }
                             author={justinPhilips}
+                            center={false}
                         />
 
                         <h2 className="pt-5 pb-1">
@@ -78,11 +88,22 @@ export const CaseStudy: FunctionComponent = () => {
                             systems.
                         </p>
 
-                        <InContentBlockquote
-                            quote="Lyft teams are constantly innovating and building new systems, necessitating decomposing and migrating off of older ones. Sourcegraph gives us the ability to search for and refactor references to deprecated services, libraries, URL patterns, and more across our 2000+ repositories, and the confidence that we're not leaving anyone behind.
-                            <br /><br />
-                            “Sourcegraph makes it easy to survey and understand existing use cases to make sure we build the right thing."
+                        <Blockquote
+                            quote={
+                                <>
+                                    Lyft teams are constantly innovating and building new systems, necessitating
+                                    decomposing and migrating off of older ones. Sourcegraph gives us the ability to
+                                    search for and refactor references to deprecated services, libraries, URL patterns,
+                                    and more across our 2000+ repositories, and the confidence that we're not leaving
+                                    anyone behind.
+                                    <br />
+                                    <br />
+                                    Sourcegraph makes it easy to survey and understand existing use cases to make sure
+                                    we build the right thing.
+                                </>
+                            }
                             author="Aneesh Agrawal, Software Engineer, Lyft"
+                            center={false}
                         />
 
                         <p className="pb-5">

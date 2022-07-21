@@ -3,8 +3,9 @@ import React, { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import { Layout, HubSpotForm } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
-export const Pricing: FunctionComponent = () => (
+export const Hackathons: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Sourcegraph - Set up Sourcegraph at a Hackathon',
@@ -18,6 +19,7 @@ export const Pricing: FunctionComponent = () => (
                 your team.
             </p>
         </section>
+
         <section className="d-flex justify-content-around flex-column flex-lg-row bg-white max-w-1100 p-4 m-auto">
             <div className="mr-lg-5 mt-0 mb-2">
                 <div className="d-flex flex-column bg-light-gray-2 rounded p-5">
@@ -54,20 +56,76 @@ export const Pricing: FunctionComponent = () => (
                                 installation docs.
                             </a>
                         </p>
+                        <ul>
+                            <li>
+                                We'll give you access to all of our{' '}
+                                <Link href="/pricing" passHref={true}>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                    <a
+                                        title="Enterprise features"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
+                                        Enterprise features
+                                    </a>
+                                </Link>
+                            </li>
+                            <li>We'll give you live tech support</li>
+                            <li>We'll ship you a bag of stickers, shirts, socks, and other great swag!</li>
+                        </ul>
+
                         <p>
-                            When you're ready to present, check out the{' '}
+                            Fill out the form or tweet us{' '}
                             <a
+                                href="https://twitter.com/sourcegraph"
                                 target="_blank"
-                                rel="noreferrer"
-                                href="https://docs.sourcegraph.com/getting-started/tour"
+                                rel="nofollow noreferrer"
+                                title="@sourcegraph"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
                             >
-                                Sourcegraph tour
-                            </a>{' '}
-                            for example use-cases to show off.
+                                @sourcegraph
+                            </a>
+                            , and we'll get back to you ASAP on how to get started!
                         </p>
+                        <div className="border-top border-light-9">
+                            <p className="pt-4">
+                                Get started with the{' '}
+                                <a
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    href="https://docs.sourcegraph.com/admin/install/docker"
+                                    title="Installation docs"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    installation docs
+                                </a>
+                                .
+                            </p>
+                            <p>
+                                When you're ready to present, check out the{' '}
+                                <a
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    href="https://docs.sourcegraph.com/getting-started/tour"
+                                    title="Sourcegraph tour"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    Sourcegraph tour
+                                </a>{' '}
+                                for example use-cases to show off.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div>
                 <HubSpotForm
                     masterFormName="contactMulti"
@@ -89,4 +147,4 @@ export const Pricing: FunctionComponent = () => (
     </Layout>
 )
 
-export default Pricing
+export default Hackathons

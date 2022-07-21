@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { BlockquoteWithLogoBottom, Layout, HubSpotForm, YouTube } from '@components'
+import { Blockquote, Layout, HubSpotForm, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const FixingVulnerabilities: FunctionComponent = () => (
@@ -42,11 +42,13 @@ const FixingVulnerabilities: FunctionComponent = () => (
 
         <div className="bg-gradient-venus-saturated text-center">
             <div className="container py-7 max-w-650">
-                <BlockquoteWithLogoBottom
-                    header="Cloudflare proves to auditors that its code isn't vulnerable"
+                <Blockquote
+                    headline="Cloudflare proves to auditors that its code isn't vulnerable"
                     quote="[Sourcegraph] is the best way to prove that we're not vulnerable to a particular CVE,
                     if and when we get asked by an auditor."
                     author="David Haynes, Security Engineer at Cloudflare"
+                    border={false}
+                    center={false}
                     logo={{ src: '/external-logos/cloudflare-logo.svg', alt: 'Cloudflare logo' }}
                     link={{
                         text: 'Read the full case study',
@@ -66,6 +68,7 @@ const FixingVulnerabilities: FunctionComponent = () => (
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         className="btn btn-primary mt-5 d-block d-sm-inline-block"
+                        title="Request a demo"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.bodyDemo}
                         data-button-type="cta"

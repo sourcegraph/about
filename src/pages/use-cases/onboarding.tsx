@@ -7,8 +7,7 @@ import Link from 'next/link'
 
 import {
     BackButtonBold,
-    BlockquoteWithBorder,
-    BlockquoteWithLogoBottom,
+    Blockquote,
     BlogResourceItem,
     CustomCarousel,
     ContentSection,
@@ -52,8 +51,20 @@ const items = [
                 header="Enable developers to learn by example"
                 text={
                     <p className="py-3">
-                        With <Link href="/code-search">Code Search</Link>, you can find examples to learn from across
-                        all of your company's private repositories and the open source universe.
+                        With{' '}
+                        <Link href="/code-search" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Search"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Search
+                            </a>
+                        </Link>
+                        , you can find examples to learn from across all of your company's private repositories and the
+                        open source universe.
                     </p>
                 }
             />
@@ -83,8 +94,19 @@ const items = [
                 header="Visualize contributions and chart team progress"
                 text={
                     <p className="py-3">
-                        <Link href="/code-insights">Code Insights</Link> allows onboarding developers to understand
-                        in-process work and visualize how their contributions advance team goals.
+                        <Link href="/code-insights" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Insights"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Insights
+                            </a>
+                        </Link>{' '}
+                        allows onboarding developers to understand in-process work and visualize how their contributions
+                        advance team goals.
                     </p>
                 }
             />
@@ -98,9 +120,18 @@ const items = [
                 header="Document and share actionable code snippets"
                 text={
                     <p className="py-3">
-                        With <a href="https://docs.sourcegraph.com/notebooks"> Notebooks</a>, teams can create always
-                        up-to-date, living documentation with familiar features like Markdown and novel capabilities
-                        like embedded searches, snippets, and symbols.
+                        With{' '}
+                        <a
+                            href="https://docs.sourcegraph.com/notebooks"
+                            title="Notebooks"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Notebooks
+                        </a>
+                        , teams can create always up-to-date, living documentation with familiar features like Markdown
+                        and novel capabilities like embedded searches, snippets, and symbols.
                     </p>
                 }
             />
@@ -247,14 +278,15 @@ const UseCasePage: FunctionComponent = () => (
                         </ul>
                     </div>
                     <div className="col-lg-5 mt-lg-0 mt-7">
-                        <BlockquoteWithBorder
+                        <Blockquote
+                            headline="Lunar makes every developer autonomous"
                             quote="Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues. This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked."
                             author="Bjørn Hal Sørensen, Web Architect at Lunar"
+                            center={true}
                             logo={{
                                 src: '/external-logos/lunar.svg',
                                 alt: 'Lunar',
                             }}
-                            headline="Lunar makes every developer autonomous"
                         />
                     </div>
                 </div>
@@ -267,11 +299,12 @@ const UseCasePage: FunctionComponent = () => (
 
         <div className="bg-gradient-saturn-saturated py-8">
             <ContentSection>
-                <div className="d-flex flex-column justify-content-center text-center px-lg-8">
-                    <BlockquoteWithLogoBottom
+                <div className="d-flex flex-column justify-content-center px-lg-8">
+                    <Blockquote
+                        headline="Convoy knows its codebase inside and out"
                         quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
-                        header="Convoy knows its codebase inside and out"
                         author="Owen Kim, Senior Software Engineer at Convoy"
+                        border={false}
                         logo={{
                             src: '/external-logos/convoy-logo.svg',
                             alt: 'Convoy',
@@ -312,7 +345,13 @@ const UseCasePage: FunctionComponent = () => (
                         </Link>
                         <Link href="/use-cases" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="d-flex justify-content-center mt-4 font-weight-bold">
+                            <a
+                                className="d-flex justify-content-center mt-4 font-weight-bold"
+                                title="Explore other use cases"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 Explore other use cases
                             </a>
                         </Link>
@@ -345,6 +384,7 @@ const UseCasePage: FunctionComponent = () => (
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         className="btn btn-primary"
+                        title="Ready to get started?"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"
