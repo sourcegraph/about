@@ -13,7 +13,7 @@ changelogItems:
 
 Sourcegraph 3.42 is now available! For this release, we introduced:
 
-## All-new Admin Analytics 
+## All-new admin analytics 
 
 We believe providing a world-class admin-experience is critical to the future of Sourcegraph customers around the world. This starts with empowering administrators to measure and track the value of Sourcegraph within their organization.
 
@@ -21,8 +21,7 @@ Historically, Sourcegraph administrators rely on word-of-mouth feedback from dev
 
 In 3.42, we are releasing a completely redesigned user analytics experience for administrators. These visualizations will make it easier to understand developer engagement, identify power users, and convey value to their internal leaders. 
 
-## Improved search-based navigation for Python non-locals
-We previously announced we’d [improved our search-based support for Python locals in Sourcegraph 3.40(https://about.sourcegraph.com/blog/release/3.40) by using tree-sitter. We've now extended this improvement for jump-to-definition to more kinds of variables such as class fields.
+![Admin analytics page](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.42/admin_analytics.png)
 
 ## Beta UI improvements
 We're fixing UX papercuts and cleaning up our UI. 3.42 will have an optional Beta UI, which can be enabled via a toggle in the avatar menu. It's disabled by default but we encourage you to give it a spin! We think you'll find it cleaner and easier to use. You can find the toggle just below the theme dropdown in the avatar menu.
