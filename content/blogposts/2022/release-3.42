@@ -35,7 +35,7 @@ We've moved to [CodeMirror](https://codemirror.net/) from Monaco for all our sea
 
 ## Lucky search
 We have a new search type available experimentally, called "Lucky search". It does some really cool things to improve the quality of your search experience, but the most obvious one is that it gives smart suggestions for alternate queries, and runs them automatically to make sure they have results. You can enable it by setting `"search.defaultPatternType": "lucky"` in settings.
-![](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/lucky-search.png)
+![Search suggestion example](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/lucky-search.png)
 
 ## Code Insights scoped to explicit repository lists load faster and include more historical datapoints
 
