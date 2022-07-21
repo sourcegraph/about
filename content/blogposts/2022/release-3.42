@@ -8,7 +8,18 @@ published: false
 heroImage: 
 socialImage: 
 changelogItems:
-
+  - description: 'Further improved search-based code navigation for Python using tree-sitter. The upgrades to jump-to-definition have been extended to more kinds of variables such as class fields for more accurate cross-file navigation.'
+    url: https://github.com/sourcegraph/sourcegraph/pull/38459
+    category: Search
+  - description: 'The homepage UI has been cleaned up, and panels such as recent searches are no longer visible by default. They can be re-enabled by setting "experimentalFeatures.showEnterpriseHomePanels" to true.'
+    url: https://github.com/sourcegraph/sourcegraph/pull/37984
+    category: Search
+  - description: 'Added experimental support for exporting traces to an OpenTelemetry collector by adding "observability.tracing": { "type": "opentelemetry" } to the site config.'
+    url: https://github.com/sourcegraph/sourcegraph/pull/37984
+    category: Admin
+  - description: 'Gitserver endpoint access logs can now be enabled for added visbility by adding "log": { "gitserver.accessLogs": true } to the site config.'
+    url: https://github.com/sourcegraph/sourcegraph/pull/
+    category: Search
 ---
 
 Sourcegraph 3.42 is now available! For this release, we introduced:
