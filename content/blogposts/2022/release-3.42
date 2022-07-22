@@ -19,13 +19,12 @@ changelogItems:
     category: Admin
   - description: 'Gitserver endpoint access logs can now be enabled for added visbility by adding "log": { "gitserver.accessLogs": true } to the site config.'
     url: https://github.com/sourcegraph/sourcegraph/pull/
-    category: Search
+    category: Admin
 ---
 
 Sourcegraph 3.42 is now available! For this release, we introduced:
 
 ## All-new admin analytics 
-
 We believe providing a world-class admin-experience is critical to the future of Sourcegraph customers around the world. This starts with empowering administrators to measure and track the value of Sourcegraph within their organization.
 
 Historically, Sourcegraph administrators rely on word-of-mouth feedback from developers, leading to a poor understanding of the value of Sourcegraph within an organization. 
@@ -34,9 +33,10 @@ In 3.42, we are releasing a completely redesigned user analytics experience for 
 
 ![Admin analytics page](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.42/admin_analytics.png)
 
-## Beta UI improvements
-We're fixing UX papercuts and cleaning up our UI. 3.42 will have an optional Beta UI, which can be enabled via a toggle in the avatar menu. It's disabled by default but we encourage you to give it a spin! We think you'll find it cleaner and easier to use. You can find the toggle just below the theme dropdown in the avatar menu.
+## New search UI, now in Beta
+We're fixing UX papercuts and working to improve the core search experience. 3.42 includes a new, optional Beta UI, which can be enabled via a toggle in the avatar menu. It's disabled by default but we encourage you to give it a try. We think you'll find it cleaner and easier to use. You can find the toggle just below the theme dropdown in the avatar menu.
 ![](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/beta-ui.gif)
+
 ## Searching by repository descriptions
 We've introduced a new search predicate that enables searching by repository description, for example: `repo:has.description(machine learning)`. Now you can search for interesting repository topics, even if you don't know their names.
 
