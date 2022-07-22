@@ -31,7 +31,7 @@ Sourcegraph 3.42 is now available! For this release, we introduced:
 
 We believe providing a world-class admin-experience is critical to the future of Sourcegraph customers around the world. This starts with empowering administrators to measure and track the value of Sourcegraph within their organization.
 
-Historically, Sourcegraph administrators rely on word-of-mouth feedback from developers, leading to a poor understanding of the value of Sourcegraph within an organization. 
+Historically, Sourcegraph administrators relied on word-of-mouth feedback from developers, leading to a poor understanding of the value of Sourcegraph within an organization. 
 
 In 3.42, we are releasing a completely redesigned analytics experience for administrators. These visualizations will make it easier to understand developer engagement, identify power users, and measure the value of Sourcegraph. 
 
