@@ -1,4 +1,5 @@
 // Common
+export { Background } from './Background'
 export { Install } from './Install'
 export { Jumbotron } from './Jumbotron'
 export { Alert } from './Alert'
@@ -14,6 +15,7 @@ export { FormLegal } from './FormLegal'
 export { EmbeddedHubSpot } from './HubSpot'
 export { IntegrationsSection } from './IntegrationsSection'
 export { LeadershipSection } from './LeadershipSection'
+export { ProductHero } from './ProductHero'
 export { RequestDemoForm } from './RequestDemoForm'
 export { RequestDemoTrySourcegraph } from './RequestDemoTrySourcegraph'
 export { SelfHostedSection } from './SelfHostedSection'
