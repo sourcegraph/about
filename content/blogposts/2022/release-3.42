@@ -50,13 +50,13 @@ We've moved to [CodeMirror](https://codemirror.net/) from Monaco for all our sea
 We have a new search type available experimentally, called "Lucky search". It improves the quality of your search experience by giving you smart suggestions for alternate queries, and it even runs them automatically to make sure they have results before recommending them. You can enable it by setting `"search.defaultPatternType": "lucky"` in settings.
 ![Search suggestion example](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/lucky-search.png)
 
-## Code Insights scoped to explicit repository lists load faster and include more historical datapoints
+## Code insights scoped to explicit repository lists load faster and include more historical datapoints
 
 <p><video autoplay loop muted playsinline style="width:600px">
 <source src="https://storage.googleapis.com/sourcegraph-assets/blog/3.42/3.42InsightsSpeedImprovements.mp4" type="video/mp4">
 </video></p>
 
-Code insights running over an explicit list of repos now behave like code insights running over all repositories. 
+Code insights running over an explicit list of repos now behave like insights running over all repositories. 
 
 They: 
 - Backfill 12 historical datapoints (instead of 7)
@@ -66,4 +66,4 @@ They:
 
 ## Code Insights better supports large monorepos 
 
-Code insights now better supports running insights over large monorepos. Code insights now use our streaming endpoints to avoid being limited by global network timeouts, have improved retry behavior, and send insights running over explicitly-listed individual monorepos to our persistent backend (see the prior paragraph above). 
+Code Insights now better supports running insights over large monorepos. Insights now use our streaming endpoints to avoid being limited by global network timeouts, have improved retry behavior, and send insights running over explicitly-listed individual monorepos to our persistent backend (see prior highlight above). 
