@@ -1,52 +1,42 @@
 import React, { FunctionComponent } from 'react'
 
-import { Layout, YouTube } from '@components'
-import { useHubSpot, useChiliPiper } from '@hooks'
+import { Layout, YouTube, HubSpotForm } from '@components'
 
-const Demo: FunctionComponent = () => {
-    useHubSpot({
-        portalId: '2762526',
-        formId: 'baf7d112-bb19-4b95-851e-a83e7b214b9b',
-        targetId: 'form',
-    })
-    useChiliPiper()
+const Demo: FunctionComponent = () => (
+    <Layout
+        meta={{
+            title: 'Request a Demo - Sourcegraph',
+            description:
+                "From developer onboarding to incident response, see how companies of all sizes use Sourcegraph to solve the industry's most challenging code problems.",
+        }}
+        heroAndHeaderClassName="bg-gradient-green-blue"
+        hero={
+            <div className="container pt-6 pb-4">
+                <h1 className="font-weight-bolder">Request a demo</h1>
+                <p className="max-w-450">Want to see Sourcegraph in action? Schedule time with a Sourcegraph expert.</p>
+            </div>
+        }
+    >
+        <div className="container pt-6">
+            <div className="row">
+                <div className="col-lg-6">
+                    <h2 className="font-weight-bold">Let us show you around</h2>
+                    <p>Watch this quick video to see what Sourcegraph can do</p>
 
-    return (
-        <Layout
-            meta={{
-                title: 'Request a Demo | Sourcegraph',
-                description:
-                    "From developer onboarding to incident response, see how companies of all sizes use Sourcegraph to solve the industry's most challenging code problems.",
-            }}
-            heroAndHeaderClassName="bg-gradient-green-blue"
-            hero={
-                <div className="container pt-6 pb-4">
-                    <h1 className="font-weight-bolder">Request a demo</h1>
-                    <p className="max-w-450">
-                        Want to see Sourcegraph in action? Schedule time with a Sourcegraph expert.
-                    </p>
+                    <YouTube title="Sourcegraph Product Tour" id="Kk1ea2-l8Hk" className="my-5" />
                 </div>
-            }
-        >
-            <div className="container pt-6">
-                <div className="row">
-                    <div className="col-lg-6">
-                        <h2 className="font-weight-bold">Let us show you around</h2>
-                        <p>Watch this quick video to see what Sourcegraph can do</p>
 
-                        <YouTube title="Sourcegraph Product Tour" id="Kk1ea2-l8Hk" className="my-5" />
+                <div className="col-lg-6 pl-lg-7 mt-5 mt-lg-0">
+                    <h2 className="font-weight-bold">Like what you see?</h2>
+                    <p className="mb-5">
+                        Get a live demo in your environment! Just fill out the form to request a demo.
+                    </p>
 
-                        <h2 className="font-weight-bold">Like what you see?</h2>
-                        <p>Get a live demo in your environment! Just fill out the form to request a demo.</p>
-                    </div>
-
-                    <div className="col-lg-6 pl-lg-7 mt-5 mt-lg-0">
-                        <div id="form" />
-                    </div>
+                    <HubSpotForm masterFormName="contactMulti" chiliPiper={true} />
                 </div>
             </div>
-        </Layout>
-    )
-}
+        </div>
+    </Layout>
+)
 
 export default Demo

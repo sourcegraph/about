@@ -249,7 +249,7 @@ const blogResourceItems = [
 const UseCasePage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Improve Code Health | Sourcegraph',
+            title: 'Improve Code Health - Sourcegraph',
             description:
                 'Tackle refactoring efforts and tech debt from legacy systems with automated pull requests across your entire codebase to boost code health.',
         }}

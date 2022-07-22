@@ -251,7 +251,7 @@ const blogResourceItems = [
 const UseCasePage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Code Security: Find & Fix Vulnerabilities | Sourcegraph',
+            title: 'Code Security: Find & Fix Vulnerabilities - Sourcegraph',
             description:
                 'Search your repositories and find vulnerabilities in minutes, not days. Learn more about Sourcegraph for code security.',
         }}
