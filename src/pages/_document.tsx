@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
                     <link rel="icon" type="image/png" href="/favicon.png" />
 
                     {/* TODO Implement RSS Feed */}
-                    {/* <link rel="alternate" type="application/rss+xml" title="Universal Code Search | Sourcegraph" href="/rss.xml" /> */}
+                    {/* <link rel="alternate" type="application/rss+xml" title="Universal Code Search - Sourcegraph" href="/rss.xml" /> */}
 
                     {/* Sourcegraph Chrome Extension */}
                     <link

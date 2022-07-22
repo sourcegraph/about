@@ -5,7 +5,7 @@ import { Layout, GatedResourceLayout } from '@components'
 export const Guide: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'How Google and others find and fix vulnerabilities | Sourcegraph',
+            title: 'How Google and others find and fix vulnerabilities - Sourcegraph',
             description:
                 'See how tech companies large and small address code security. In this post, we explore how Google, Microsoft, Lyft, GitLab, and Atlassian find and fix vulnerabilities.',
         }}
@@ -14,10 +14,7 @@ export const Guide: FunctionComponent = () => (
         <GatedResourceLayout
             title="How Google, Microsoft, Lyft, GitLab, and Atlassian find and fix vulnerabilities"
             formLabel="Download the e-book"
-            form={{
-                formId: '610debf1-bbce-45d6-a492-6858b5b3db18',
-                onFormSubmitted: () => window.open('/guides/sg-how-companies-fix-vulnerabilities.pdf'),
-            }}
+            resource="/guides/sg-how-companies-fix-vulnerabilities.pdf"
             description={
                 <section className="col-md-6 col-12 pr-lg-6">
                     <p>

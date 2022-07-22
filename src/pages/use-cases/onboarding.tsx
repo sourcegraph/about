@@ -193,7 +193,7 @@ const threeUpTextItems = [
 const UseCasePage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Accelerate developer onboarding | Sourcegraph',
+            title: 'Accelerate developer onboarding - Sourcegraph',
             description:
                 'Decrease time to first commit for new developers, help existing engineers master your codebase, and fast-track full codebase understanding.',
         }}
