@@ -19,22 +19,22 @@ import insights from './assets/illustrations/insights.svg'
 import navigation from './assets/illustrations/navigation.svg'
 
 export interface Background {
-    variant: 
-        'auroraGrid' | 
-        'darkMultiGrid' |
-        'lightNebulousAurora' |
-        'lightNebulousMars' |
-        'lightNebulousVenus2' |
-        'marsCode' |
-        'saturnCode' |
-        'venusCode'
+    variant:
+        | 'auroraGrid'
+        | 'darkMultiGrid'
+        | 'lightNebulousAurora'
+        | 'lightNebulousMars'
+        | 'lightNebulousVenus2'
+        | 'marsCode'
+        | 'saturnCode'
+        | 'venusCode'
     children: ReactNode
     illustration?: 'changes' | 'insights' | 'navigation'
     className?: string
     displayUnderNav?: boolean
 }
 
-const backgrounds: {[key: string]: StaticImageData} = {
+const backgrounds: { [key: string]: StaticImageData } = {
     auroraGrid,
     darkMultiGrid,
     lightNebulousAurora,
@@ -53,11 +53,10 @@ export const Background: FunctionComponent<Background> = ({
     children,
     illustration,
     className,
-    displayUnderNav = false
+    displayUnderNav = false,
 }) => {
-
     const [navHeight, setNavHeight] = useState(74)
-    
+
     useEffect(() => {
         const nav = document.querySelector('.navbar')
         setNavHeight(nav?.getBoundingClientRect().height || 74)
@@ -68,14 +67,16 @@ export const Background: FunctionComponent<Background> = ({
 
     let background = `url("${backgrounds[variant].src}") center / cover no-repeat`
     if (illustration) {
-        background = `url(${illustrations[illustration]}) center right 10% / ${isMobile ? 'cover' : '45%'} no-repeat, ${background}`
+        background = `url(${illustrations[illustration]}) center right 10% / ${
+            isMobile ? 'cover' : '45%'
+        } no-repeat, ${background}`
     }
 
     const style = { background, marginTop: '' }
-    if (displayUnderNav) {            
+    if (displayUnderNav) {
         style.marginTop = `-${navHeight}px`
     }
-    
+
     return (
         <div
             // eslint-disable-next-line react/forbid-dom-props

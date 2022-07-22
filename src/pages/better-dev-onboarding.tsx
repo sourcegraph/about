@@ -3,14 +3,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import {
-    BlogResourceItem,
-    ContentSection,
-    CustomerLogos,
-    CoreFeatures,
-    IntegrationsSection,
-    Layout,
-} from '@components'
+import { BlogResourceItem, ContentSection, CustomerLogos, CoreFeatures, IntegrationsSection, Layout } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { useHubSpot, useChiliPiper } from '@hooks'
 

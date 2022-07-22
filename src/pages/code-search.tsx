@@ -6,7 +6,8 @@ export const CodeSearchPage: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Sourcegraph - Code Search',
-            description: 'Onboard to a new codebase, find answers faster, and identify security risks with Sourcegraph Code Search. Search across all the repositories you work with.',
+            description:
+                'Onboard to a new codebase, find answers faster, and identify security risks with Sourcegraph Code Search. Search across all the repositories you work with.',
         }}
         hero={
             <ProductHero
