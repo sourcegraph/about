@@ -5,8 +5,8 @@ description: "Sourcegraph 3.42 introduces new admin analytics, a new search UI i
 tags: [blog, release]
 slug: "release/3.42"
 published: true
-heroImage: 
-socialImage: 
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.42/sourcegraph-3-42.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.42/sourcegraph-3-42.png
 changelogItems:
   - description: 'Further improved search-based code navigation for Python using tree-sitter. The upgrades to jump-to-definition have been extended to more kinds of variables such as class fields for more accurate cross-file navigation.'
     url: https://github.com/sourcegraph/sourcegraph/pull/38459
