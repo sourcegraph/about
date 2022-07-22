@@ -14,13 +14,13 @@ changelogItems:
   - description: 'The homepage UI has been cleaned up, and panels such as recent searches are no longer visible by default. They can be re-enabled by setting "experimentalFeatures.showEnterpriseHomePanels" to true.'
     url: https://github.com/sourcegraph/sourcegraph/pull/37984
     category: Search
-  - description: 'Added experimental support for exporting traces to an OpenTelemetry collector by adding "observability.tracing": { "type": "opentelemetry" } to the site config.'
+  - description: 'We've moved to CodeMirror from Monaco for all our search query inputs, resulting in faster and better quality search suggestions. You can switch back to Monaco by setting "experimentalFeatures.editor": "monaco" in the config.'
+    url: https://github.com/sourcegraph/sourcegraph/pull/38584
+    category: Search
+  - description: 'Added experimental support for exporting traces to an OpenTelemetry collector by adding "observability.tracing": { "type": "opentelemetry" } to the config.'
     url: https://github.com/sourcegraph/sourcegraph/pull/37984
     category: Admin
-  - description: 'Added experimental support for exporting traces to an OpenTelemetry collector by adding "observability.tracing": { "type": "opentelemetry" } to the site config.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/37984
-    category: Admin
-  - description: 'Gitserver endpoint access logs can now be enabled for added visbility by adding "log": { "gitserver.accessLogs": true } to the site config.'
+  - description: 'Gitserver endpoint access logs can now be enabled for added visbility by adding "log": { "gitserver.accessLogs": true } to the config.'
     url: https://github.com/sourcegraph/sourcegraph/pull/
     category: Admin
 ---
@@ -41,7 +41,7 @@ In 3.42, we are releasing a completely redesigned user analytics experience for 
 We're fixing UX papercuts and working to improve the core search experience. 3.42 includes a new, optional Beta UI, which can be enabled via a toggle in the avatar menu. It's disabled by default but we encourage you to give it a try. We think you'll find it cleaner and easier to use. You can find the toggle just below the theme dropdown in the avatar menu.
 ![](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/beta-ui.gif)
 
-## Searching by repository descriptions
+## Search by repository descriptions
 
 We've introduced a new search predicate that enables searching by repository description, for example: `repo:has.description(machine learning)`. Now you can search for interesting repository topics, even if you don't know their names.
 
@@ -50,7 +50,7 @@ This is especially useful for engineers joining new teams or onboarding to a cod
 
 ## New search suggestions
 
-We've moved to [CodeMirror](https://codemirror.net/) from Monaco for all our search query inputs. We're very excited about the performance and extensibility offered by CodeMirror and look forwaard to shipping all the improvements its flexibility enables. You can switch abck to using Monaco at any time by setting `experimentalFeatures.editor: "monaco"` in your settings menu.
+
 
 ## Lucky search
 
