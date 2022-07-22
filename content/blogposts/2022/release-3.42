@@ -1,10 +1,10 @@
 ---
 title: "Sourcegraph 3.42 release"
 publishDate: 2022-07-22T10:00-07:00
-description: "Sourcegraph 3.42 introduces UPDATE"
+description: "Sourcegraph 3.42 introduces new admin analytics, a new search UI in Beta, alternate search suggestions, and upgrades for code insights running on repo lists and monorepos."
 tags: [blog, release]
 slug: "release/3.42"
-published: false
+published: true
 heroImage: 
 socialImage: 
 changelogItems:
@@ -48,7 +48,7 @@ We've introduced a new search predicate that enables searching by repository des
 This is especially useful for engineers joining new teams or onboarding to a codebase at a new company, so you can quickly find repositories without knowing exactly what you're looking for.
 ![](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/repo-description-search.png)
 
-## Lucky search
+## Smart search suggestions with lucky search
 
 We have a new search type available experimentally, called "Lucky search". It improves the quality of your search experience by giving you smart suggestions for alternate queries, and it even runs them automatically to make sure they have results before recommending them. You can enable it by setting `"search.defaultPatternType": "lucky"` in settings.
 ![Search suggestion example](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/lucky-search.png)
