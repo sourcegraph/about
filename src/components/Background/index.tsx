@@ -1,6 +1,5 @@
 import { FunctionComponent, useEffect, useState, ReactNode } from 'react'
 
-import classNames from 'classnames'
 import { StaticImageData } from 'next/image'
 
 import { breakpoints } from '@data'
@@ -72,16 +71,17 @@ export const Background: FunctionComponent<Background> = ({
         } no-repeat, ${background}`
     }
 
-    const style = { background, marginTop: '' }
+    const style = { background, marginTop: '', paddingTop: '' }
     if (displayUnderNav) {
         style.marginTop = `-${navHeight}px`
+        style.paddingTop = `${navHeight}px`
     }
 
     return (
         <div
             // eslint-disable-next-line react/forbid-dom-props
             style={style}
-            className={classNames('min-h-600', className)}
+            className={className}
         >
             {children}
         </div>
