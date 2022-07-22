@@ -33,7 +33,7 @@ We believe providing a world-class admin-experience is critical to the future of
 
 Historically, Sourcegraph administrators rely on word-of-mouth feedback from developers, leading to a poor understanding of the value of Sourcegraph within an organization. 
 
-In 3.42, we are releasing a completely redesigned user analytics experience for administrators. These visualizations will make it easier to understand developer engagement, identify power users, and convey value to their internal leaders. 
+In 3.42, we are releasing a completely redesigned analytics experience for administrators. These visualizations will make it easier to understand developer engagement, identify power users, and measure the value of Sourcegraph. 
 
 ![Admin analytics page](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.42/admin_analytics.png)
 
