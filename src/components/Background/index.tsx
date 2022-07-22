@@ -47,6 +47,12 @@ const backgrounds: { [key: string]: StaticImageData } = {
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 const illustrations: { [key: string]: string } = { changes, insights, navigation }
 
+const illustrationSizes = {
+    changes: '28%',
+    insights: '50%', // TODO
+    navigation: '45%',
+}
+
 export const Background: FunctionComponent<Background> = ({
     variant,
     children,
@@ -54,11 +60,12 @@ export const Background: FunctionComponent<Background> = ({
     className,
     displayUnderNav = false,
 }) => {
-    const [navHeight, setNavHeight] = useState(74)
+    const defaultNavHeight = 74
+    const [navHeight, setNavHeight] = useState(defaultNavHeight)
 
     useEffect(() => {
         const nav = document.querySelector('.navbar')
-        setNavHeight(nav?.getBoundingClientRect().height || 74)
+        setNavHeight(nav?.getBoundingClientRect().height || defaultNavHeight)
     }, [])
 
     const windowWidth = useWindowWidth()
@@ -66,8 +73,8 @@ export const Background: FunctionComponent<Background> = ({
 
     let background = `url("${backgrounds[variant].src}") center / cover no-repeat`
     if (illustration) {
-        background = `url(${illustrations[illustration]}) center right 10% / ${
-            isMobile ? 'cover' : '45%'
+        background = `url(${illustrations[illustration]}) center right 20% / ${
+            isMobile ? 'cover' : illustrationSizes[illustration]
         } no-repeat, ${background}`
     }
 

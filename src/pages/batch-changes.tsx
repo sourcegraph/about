@@ -1,10 +1,9 @@
 import { FunctionComponent } from 'react'
 
-import Link from 'next/link'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
-import { Blockquote, ContentSection, Figure, Layout, Video, TrySourcegraph, YouTube } from '@components'
+import { Blockquote, ContentSection, Figure, Layout, Video, TrySourcegraph, YouTube, ProductHero } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const batchChangesDemoFormURL = '/contact/request-batch-changes-demo'
@@ -19,30 +18,14 @@ export const BatchChangesPage: FunctionComponent = () => (
         className="batch-changes-page"
         heroAndHeaderClassName="batch-changes-page__hero-and-header navbar-light"
         hero={
-            <div className="container pb-4">
-                <div className="row">
-                    <div className="col-lg-7 mb-lg-6 mt-6">
-                        <div className="text-uppercase">Batch Changes</div>
-                        <h1 className="display-2 font-weight-bold mb-0">Automate large-scale code&nbsp;changes</h1>
-                        <p className="my-5 display-4">
-                            Keep your code up to date, fix critical security issues, and pay down tech debt across all
-                            of your repositories with Batch Changes.
-                        </p>
-                        <Link href={batchChangesDemoFormURL} passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="btn btn-primary"
-                                title="Request a demo"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
-                                Request a demo
-                            </a>
-                        </Link>
-                    </div>
-                </div>
-            </div>
+            <ProductHero
+                variant="lightNebulousAurora"
+                illustration="changes"
+                product="batch changes"
+                title={'Automate large-scale\ncode changes'}
+                description="Keep your code up to date, fix critical security issues, and pay down tech debt across all of your repositories with Batch Changes."
+                displayUnderNav={true}
+            />
         }
     >
         {/* Overview */}
