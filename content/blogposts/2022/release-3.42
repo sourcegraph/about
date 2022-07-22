@@ -52,7 +52,11 @@ We have a new search type available experimentally, called "Lucky search". It im
 
 ## Code Insights scoped to explicit repository lists load faster and include more historical datapoints
 
-[Gif TODO – need to mock up old and new state next to each other]
+<p><video autoplay loop muted playsinline style="width:600px">
+<source src="https://storage.googleapis.com/sourcegraph-assets/blog/3.42/3.42InsightsSpeedImprovements.mp4" type="video/mp4">
+</video></p>
+
+
 
 Code insights running over an explicit list of repos now behave like code insights running over all repositories. 
 
