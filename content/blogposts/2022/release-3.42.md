@@ -14,7 +14,7 @@ changelogItems:
   - description: 'The homepage UI has been cleaned up, and panels such as recent searches are no longer visible by default. They can be re-enabled by setting "experimentalFeatures.showEnterpriseHomePanels" to true.'
     url: https://github.com/sourcegraph/sourcegraph/pull/37984
     category: Search
-  - description: 'We've moved to CodeMirror from Monaco for all our search query inputs, resulting in faster and better quality search suggestions. You can switch back to Monaco by setting "experimentalFeatures.editor": "monaco" in the config.'
+  - description: 'We have moved to CodeMirror from Monaco for all our search query inputs, resulting in faster and better quality search suggestions. You can switch back to Monaco by setting "experimentalFeatures.editor": "monaco" in the config.'
     url: https://github.com/sourcegraph/sourcegraph/pull/38584
     category: Search
   - description: 'Added experimental support for exporting traces to an OpenTelemetry collector by adding "observability.tracing": { "type": "opentelemetry" } to the config.'
