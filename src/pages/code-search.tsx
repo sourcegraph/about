@@ -12,7 +12,6 @@ export const CodeSearchPage: FunctionComponent = () => (
         hero={
             <ProductHero
                 variant="lightNebulousMars"
-                illustration="navigation"
                 product="code search"
                 title={'Search your code.\nAll of it.'}
                 description="Onboard to a new codebase, understand code faster, and identify security risks with universal code search."

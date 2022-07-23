@@ -11,16 +11,13 @@ const batchChangesDemoFormURL = '/contact/request-batch-changes-demo'
 export const BatchChangesPage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph Batch Changes | Large-Scale Code Changes',
+            title: 'Sourcegraph Batch Changes - Large-Scale Code Changes',
             description:
                 'Automate large-scale changes with Sourcegraph Batch Changes. Keep your code up to date and pay down tech debt across all repositories and code hosts.',
         }}
-        className="batch-changes-page"
-        heroAndHeaderClassName="batch-changes-page__hero-and-header navbar-light"
         hero={
             <ProductHero
                 variant="lightNebulousAurora"
-                illustration="changes"
                 product="batch changes"
                 title={'Automate large-scale\ncode changes'}
                 description="Keep your code up to date, fix critical security issues, and pay down tech debt across all of your repositories with Batch Changes."
