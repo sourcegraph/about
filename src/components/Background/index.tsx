@@ -59,18 +59,18 @@ interface IllustrationStyle {
 
 // Illustration style for size and positioning
 const illustrationStyle: IllustrationStyle = {
-    'search': {
+    search: {
         size: '700px',
-        position: '30%'
+        position: '30%',
     },
-    'changes': {
+    changes: {
         size: '520px',
-        position: '30%'
+        position: '30%',
     },
-    'insights': {
+    insights: {
         size: '1200px',
-        position: '5%'
-    }
+        position: '5%',
+    },
 }
 
 /**
@@ -82,13 +82,7 @@ const illustrationStyle: IllustrationStyle = {
  * @param style - optional CSS style properties
  * @returns ReactNode
  */
-export const Background: FunctionComponent<Background> = ({
-    variant,
-    children,
-    illustration,
-    className,
-    style,
-}) => {    
+export const Background: FunctionComponent<Background> = ({ variant, children, illustration, className, style }) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
 

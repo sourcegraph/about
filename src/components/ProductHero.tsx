@@ -31,7 +31,7 @@ export const ProductHero: FunctionComponent<Omit<ProductHero, 'className' | 'chi
     if (displayUnderNav) {
         Object.assign(style, {
             marginTop: `-${navHeight}px`,
-            paddingTop: `${navHeight}px`
+            paddingTop: `${navHeight}px`,
         })
     }
 
