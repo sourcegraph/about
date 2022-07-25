@@ -39,7 +39,9 @@ In 3.42, we are releasing a completely redesigned analytics experience for admin
 
 ## New search UI, now in Beta
 
-We're fixing UX papercuts and working to improve the core search experience. 3.42 includes a new, optional Beta UI, which can be enabled via a toggle in the avatar menu. It's disabled by default but we encourage you to give it a try. We think you'll find it cleaner and easier to use. You can find the toggle just below the theme dropdown in the avatar menu.
+We're fixing UX papercuts and working to improve the core search experience. 3.42 includes a new, optional Beta UI, which can be enabled via a toggle in the avatar menu. Filters have moved to the right and are now collapsible, search results are more compact and individually expandable, and buttons in the header have been combined to reduce clutter.
+
+This UI is disabled by default but we encourage you to give it a try. We think you'll find it cleaner and easier to use. You can find the toggle below the theme dropdown in the avatar menu.
 
 ![](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/beta-ui.gif)
 
@@ -57,13 +59,13 @@ We have a new search type available experimentally, called "Lucky search." It im
 
 ![Search suggestion example](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/lucky-search.png)
 
-## Code insights scoped to explicit repository lists load faster and include more historical datapoints
+## Insights load faster and include more historical datapoints
 
 <video className="blog-image" title="Faster code insights" alt="An example of code insights loading faster" autoplay loop muted playsinline>
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/3.42/3.42InsightsSpeedImprovements.mp4" />
 </video>
 
-Code insights running over an explicit list of repos now behave like insights running over all repositories. 
+Insights running over an explicit list of repos now behave like insights running over all repositories. 
 
 They: 
 - Backfill 12 historical datapoints (instead of 7)
