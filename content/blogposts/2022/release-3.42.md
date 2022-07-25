@@ -1,6 +1,6 @@
 ---
 title: "Sourcegraph 3.42 release"
-publishDate: 2022-07-22T10:00-07:00
+publishDate: 2022-07-25T10:00-07:00
 description: "Sourcegraph 3.42 introduces new admin analytics, a new search UI in Beta, alternate search suggestions, and upgrades for Code Insights running on repo lists and monorepos."
 tags: [blog, release]
 slug: "release/3.42"
