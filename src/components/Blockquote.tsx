@@ -36,7 +36,7 @@ export const Blockquote: FunctionComponent<{
         ) : null}
 
         {largeText ? (
-            <h3 className="font-weight-normal text-3xl px-4">&ldquo;{quote}&rdquo;</h3>
+            <h3 className="font-weight-normal display-4 px-4">&ldquo;{quote}&rdquo;</h3>
         ) : (
             <h5 className="font-weight-normal px-4">&ldquo;{quote}&rdquo;</h5>
         )}
