@@ -34,6 +34,13 @@ export interface Background {
     style?: CSSProperties
 }
 
+interface IllustrationStyle {
+    [key: string]: {
+        size: string
+        position: string
+    }
+}
+
 // Background variant to image mapping
 const backgrounds: { [key: string]: StaticImageData } = {
     auroraGrid,
@@ -49,13 +56,6 @@ const backgrounds: { [key: string]: StaticImageData } = {
 // Illustration to svg mapping
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 const illustrations: { [key: string]: string } = { changes, insights, search }
-
-interface IllustrationStyle {
-    [key: string]: {
-        size: string
-        position: string
-    }
-}
 
 // Illustration style for size and positioning
 const illustrationStyle: IllustrationStyle = {
