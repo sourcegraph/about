@@ -14,7 +14,7 @@ interface Props {
 
 export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
     <ContentSection className="container col-xl-6 justify-content-center">
-        <div className="row d-flex flex-column mx-4 mx-lg-0 py-5 py-md-7 align-items-lg-center align-items-left">
+        <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-md-center align-items-left">
             <div className="mb-5 d-flex flex-column">
                 <h1 className="text-center font-weight-bold">Get started with Sourcegraph</h1>
                 <p className="text-center">Understand, fix, and automate changes across your entire codebase.</p>
@@ -24,25 +24,25 @@ export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         title="Request a demo"
+                        className="btn btn-primary"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        <div className="btn btn-primary">Request a demo</div>
+                        Request a demo
                     </a>
                 </Link>
                 <Link href="/get-started/self-hosted" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         title="Try Sourcegraph now"
+                        className="mt-4 font-weight-bold"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        <p className="mt-4 btn font-weight-bold text-curious-blue">
-                            Try Sourcegraph now
-                            <ArrowRightIcon className="ml-2" />
-                        </p>
+                        Try Sourcegraph now
+                        <ArrowRightIcon className="ml-2" />
                     </a>
                 </Link>
             </div>
