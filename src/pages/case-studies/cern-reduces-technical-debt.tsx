@@ -53,6 +53,7 @@ export const CaseStudy: FunctionComponent = () => (
                     <Blockquote
                         quote="I was recently tasked with something that I, admittedly, had no idea how to do, but I was sure that someone at CERN must've already done it at some point. Sourcegraph universal code search took me directly to the code I was looking for so I could repurpose it. It's also an invaluable tool for enabling our developers to learn from one another."
                         author="Vito Baggiolini"
+                        center={false}
                     />
                     <div className="row pt-3">
                         <div className="col-md-3 pt-5">
@@ -66,6 +67,7 @@ export const CaseStudy: FunctionComponent = () => (
                             <Blockquote
                                 quote="Sourcegraph helps us with technical debt reduction and the consolidation of our codebase by letting us avoid duplication, spot the usage of deprecated APIs or internal (non-API) library code, and identify general purpose code in specific projects (such as utility classes) that can be factored out and shared in a core library."
                                 author="Chris Roderick, Applications and Services Section Leader, CERN"
+                                center={false}
                             />
                         </div>
                     </div>
@@ -73,6 +75,7 @@ export const CaseStudy: FunctionComponent = () => (
                     <Blockquote
                         quote="Sourcegraph lets us make informed decisions on how to evolve our codebase. For example, a library owner knows exactly how all other developers use their API, and can therefore make educated decisions on how to evolve it."
                         author="Chris Roderick"
+                        center={false}
                     />
                     <p>
                         The Large Hadron Collider (LHC) at CERN features five-year operational periods and the software
@@ -90,6 +93,7 @@ export const CaseStudy: FunctionComponent = () => (
                     <Blockquote
                         quote="Our solution prior to Sourcegraph didn't let us do detailed and precise searches on how and where a method of a specific class is used. As a result, we were unable to measure the impact that a planned API change would have on the rest of our huge codebase. This put us in a position where we weren't making necessary changes because we were unsure of the effect they would have."
                         author="Vito Baggiolini"
+                        center={false}
                     />
                     <p>
                         Universal code search lets developers at CERN make changes to their code, including those with

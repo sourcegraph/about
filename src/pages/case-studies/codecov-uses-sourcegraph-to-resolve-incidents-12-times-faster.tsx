@@ -1,13 +1,11 @@
 import { FunctionComponent } from 'react'
 
 import {
-    AuthorBio,
     Layout,
     NewCaseStudyJumbotron,
     NewCaseStudyLayout,
     ContentSection,
     Blockquote,
-    BlockquoteWithLogoBottom,
     ThreeUpText,
     UseChallengeSolutionResults,
 } from '@components'
@@ -49,7 +47,7 @@ export const CaseStudy: FunctionComponent = () => (
     >
         <NewCaseStudyLayout customer="Codecov">
             <ContentSection color="white" className="py-7 text-center max-w-900">
-                <BlockquoteWithLogoBottom
+                <Blockquote
                     quote="Sourcegraph allows us to be more efficient with our time, whether it's code review, answering security-related questions from clients quite quickly, or searching for things in the code much more easily than we could through our code host's native search functionality."
                     author="Jeff Holland, Security Engineer at Codecov"
                     logo={{
@@ -178,16 +176,6 @@ export const CaseStudy: FunctionComponent = () => (
                 <p>
                     As Codecov, and its codebase, grows, Sourcegraph will be a key way the startup can remain nimble. “Sourcegraph was an unlock for us,” explained Jarrod. Codecov is growing and ready to further realize this unlocked potential.
                 </p>
-            </ContentSection>
-
-            <ContentSection color="white" className="pb-7 max-w-700">
-                <AuthorBio
-                    customer="Codecov"
-                    image="/case-studies/jon-kohler.png"
-                    author="Jerrod Engelberg"
-                    title="CEO at Codecov"
-                    about="Codecov is a small organization making an outsized impact on the lives of over one million developers. In over 29,000 companies across the globe, Codecov customers are able to ship healthier code using its code coverage tool. Developers rely on Codecov to provide actionable visibility into their code coverage across any tech stack."
-                />
             </ContentSection>
         </NewCaseStudyLayout>
     </Layout>

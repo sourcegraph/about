@@ -80,6 +80,7 @@ export const CaseStudy: FunctionComponent = () => {
                         <Blockquote
                             quote="With Sourcegraph, we were able to make a smooth transition from Perforce to GitHub."
                             author={derrickFaunce}
+                            center={false}
                         />
 
                         <h2 className="pt-5 pb-1">Migrating from monolith to microservices</h2>
@@ -129,6 +130,7 @@ export const CaseStudy: FunctionComponent = () => {
                         <Blockquote
                             quote="For developers, Sourcegraph is a must-have tool一we need it at arm's length at all times."
                             author={derrickFaunce}
+                            center={false}
                         />
 
                         <p>

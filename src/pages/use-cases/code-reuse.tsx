@@ -203,7 +203,7 @@ const blogResourceItems = [
 const CodeReusePage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Code Reuse | Sourcegraph',
+            title: 'Code Reuse - Sourcegraph',
             description:
                 'Find existing code libraries for reuse and avoid spending time on problems a teammate already solved for a more secure and coherent codebase.',
         }}
@@ -290,7 +290,6 @@ const CodeReusePage: FunctionComponent = () => (
                             find other chart examples, and simply copy the code. This saves us time and ensures
                             consistency."
                             author="Joseph Majesky, Software Engineer at FactSet"
-                            center={true}
                             logo={{
                                 src: '/external-logos/factset-logo.svg',
                                 alt: 'Factset',

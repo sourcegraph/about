@@ -128,6 +128,18 @@
   to = "/demo"
 
 [[redirects]]
+  from = "/contact/product-specialist"
+  to = "/demo"
+
+[[redirects]]
+  from = "/contact/request-demo"
+  to = "/demo"
+
+[[redirects]]
+  from = "/contact/request-code-change-management-demo"
+  to = "/demo"
+
+[[redirects]]
   from = "/customers"
   to = "/use-cases"
 
@@ -138,10 +150,6 @@
 [[redirects]]
   from = "/cloud-beta"
   to = "/"
-
-[[redirects]]
-  from = "/contact/product-specialist"
-  to = "/demo"
 
 [[redirects]]
   from = "/use-cases/vulnerabilities"

@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import { kebabCase } from 'lodash'
 
-import { ContentSection, RequestDemoForm, MediaQuote } from '@components'
+import { ContentSection, RequestDemoForm } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 import { CaseStudyJumbotron } from './CaseStudyJumbotron'
@@ -65,7 +65,27 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                         </div>
                     </div>
                 )}
-                {quote && !heroImage && <MediaQuote quote={quote.text} author={quote.author} image={quote.image} />}
+                {quote && !heroImage && (
+                    <div className="container pt-3">
+                        <div className="case-studies__quote row justify-content-center">
+                            {quote.image && (
+                                <div className="col-12 col-lg-9">
+                                    <img
+                                        className="rounded-circle img-fluid mx-auto d-block mb-3"
+                                        src={quote.image}
+                                        alt={quote.author}
+                                    />
+                                </div>
+                            )}
+                            <div className="col-12 col-lg-9">
+                                <blockquote className="blockquote">
+                                    <p className="text-light">{quote.text}</p>
+                                    <footer className="blockquote-footer text-light mt-1">{quote.author}</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                )}
                 {pdf && (
                     <a
                         href={pdf}

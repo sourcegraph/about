@@ -33,23 +33,16 @@ const Webinar: FunctionComponent = () => {
             }}
         >
             <GatedResourceLayout
-                title={
-                    <>
-                        Sourcegraph Code Insights:
-                        <br /> Turning Metrics into Action
-                    </>
-                }
+                title={'Sourcegraph Code Insights: \n Turning Metrics into Action'}
                 subtitle="How to track what really matters to you and your team"
                 speakers={speakers}
                 formLabel="Watch the on-demand webinar"
-                form={{
-                    formId: '66361163-5e08-4be3-8ab0-6590b70df69e',
-                    onFormSubmitted: () =>
-                        router.push({
-                            pathname: router.pathname,
-                            query: 'watch-now',
-                        }),
-                }}
+                onFormSubmitted={() =>
+                    router.push({
+                        pathname: router.pathname,
+                        query: 'watch-now',
+                    })
+                }
                 description={
                     <section className="col-md-6 col-12 pr-lg-6">
                         <p>

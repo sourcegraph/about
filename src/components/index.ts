@@ -1,18 +1,17 @@
 // Common
-export { Install } from './Install'
-export { Jumbotron } from './Jumbotron'
 export { Alert } from './Alert'
 export { BackButton, BackButtonBold, BackButtonLight } from './BackButton'
-export { BlockquoteWithLogoTop, BlockquoteWithLogoBottom, Blockquote } from './Blockquote'
+export { Blockquote } from './Blockquote'
 export { BlogResourceItem } from './BlogResourceItem'
 export { BoardSection } from './BoardSection'
 export { ContentSection } from './ContentSection'
 export { CustomerLogos } from './CustomerLogos'
 export { FeatureWalkthrough } from './FeatureWalkthrough'
 export { Figure } from './Figure'
-export { FormLegal } from './FormLegal'
-export { EmbeddedHubSpot } from './HubSpot'
+export { HubSpotForm, type HubSpotFormProps } from './HubSpotForm'
+export { Install } from './Install'
 export { IntegrationsSection } from './IntegrationsSection'
+export { Jumbotron } from './Jumbotron'
 export { LeadershipSection } from './LeadershipSection'
 export { RequestDemoForm } from './RequestDemoForm'
 export { RequestDemoTrySourcegraph } from './RequestDemoTrySourcegraph'
@@ -47,7 +46,6 @@ export {
     CaseStudyJumbotron,
     CaseStudyLayout,
     CaseStudyCard,
-    MediaQuote,
     NewCaseStudyJumbotron,
     NewCaseStudyLayout,
     UseChallengeSolutionResults,
