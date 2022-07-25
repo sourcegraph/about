@@ -8,7 +8,7 @@ published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.42/sourcegraph-3-42.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.42/sourcegraph-3-42.png
 changelogItems:
-  - description: 'Further improved search-based code navigation for Python using tree-sitter. The upgrades to jump-to-definition have been extended to more kinds of variables such as class fields for more accurate cross-file navigation.'
+  - description: 'We further improved search-based code navigation for Python using tree-sitter. The upgrades to jump-to-definition have been extended to more kinds of variables such as class fields for more accurate cross-file navigation.'
     url: https://github.com/sourcegraph/sourcegraph/pull/38459
     category: Search
   - description: 'The homepage UI has been cleaned up, and panels such as recent searches are no longer visible by default. They can be re-enabled by setting "experimentalFeatures.showEnterpriseHomePanels" to true.'
@@ -35,7 +35,7 @@ Historically, Sourcegraph administrators relied on word-of-mouth feedback from d
 
 In 3.42, we are releasing a completely redesigned analytics experience for administrators. These visualizations will make it easier to understand developer engagement, identify power users, and measure the value of Sourcegraph. 
 
-![Admin analytics page](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.42/admin_analytics.png)
+![Admin analytics page](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.42/admin_analytics_v2.png)
 
 ## New search UI, now in Beta
 
@@ -51,7 +51,7 @@ This is especially useful for engineers joining new teams or onboarding to a cod
 
 ## Smart search suggestions with lucky search
 
-We have a new search type available experimentally, called "Lucky search". It improves the quality of your search experience by giving you smart suggestions for alternate queries, and it even runs them automatically to make sure they have results before recommending them. You can enable it by setting `"search.defaultPatternType": "lucky"` in settings.
+We have a new search type available experimentally, called "Lucky search." It improves the quality of your search experience by giving you smart suggestions for alternate queries, and it even runs them automatically to make sure they have results before recommending them. You can enable it by setting `"search.defaultPatternType": "lucky"` in settings.
 ![Search suggestion example](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/lucky-search.png)
 
 ## Code insights scoped to explicit repository lists load faster and include more historical datapoints
