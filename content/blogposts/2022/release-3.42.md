@@ -59,7 +59,7 @@ We have a new search type available experimentally, called "Lucky search." It im
 
 ![Search suggestion example](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/lucky-search.png)
 
-## Insights load faster and include more historical datapoints
+## Code Insights load faster and include more historical datapoints
 
 <video className="blog-image" title="Faster code insights" alt="An example of code insights loading faster" autoplay loop muted playsinline>
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/3.42/3.42InsightsSpeedImprovements.mp4" />
