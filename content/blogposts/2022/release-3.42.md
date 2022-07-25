@@ -1,14 +1,14 @@
 ---
 title: "Sourcegraph 3.42 release"
 publishDate: 2022-07-22T10:00-07:00
-description: "Sourcegraph 3.42 introduces new admin analytics, a new search UI in Beta, alternate search suggestions, and upgrades for code insights running on repo lists and monorepos."
+description: "Sourcegraph 3.42 introduces new admin analytics, a new search UI in Beta, alternate search suggestions, and upgrades for Code Insights running on repo lists and monorepos."
 tags: [blog, release]
 slug: "release/3.42"
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.42/sourcegraph-3-42.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.42/sourcegraph-3-42.png
 changelogItems:
-  - description: 'We further improved search-based code navigation for Python using tree-sitter. The upgrades to jump-to-definition have been extended to more kinds of variables such as class fields for more accurate cross-file navigation.'
+  - description: 'We further improved search-based code navigation for Python using tree-sitter. The upgrades to jump-to-definition have been extended to more kinds of variables, such as class fields, for more accurate cross-file navigation.'
     url: https://github.com/sourcegraph/sourcegraph/pull/38459
     category: Search
   - description: 'The homepage UI has been cleaned up, and panels such as recent searches are no longer visible by default. They can be re-enabled by setting "experimentalFeatures.showEnterpriseHomePanels" to true.'
@@ -27,7 +27,7 @@ changelogItems:
 
 Sourcegraph 3.42 is now available! For this release, we introduced:
 
-## All-new admin analytics
+## Measure the value of Sourcegraph with admin analytics
 
 We believe providing a world-class admin experience is critical for the success of Sourcegraph customers. This starts with enabling administrators to measure and track the value of Sourcegraph within their organization.
 
