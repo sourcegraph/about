@@ -162,7 +162,6 @@ export const CodeSearchPage: FunctionComponent = () => (
                         with the right tools, like Sourcegraph, we've found that increased productivity is a natural
                         byproduct."
                         author="Francois Jehl, Senior Engineering Manager, Criteo"
-                        center={true}
                         logo={{
                             src: '/external-logos/criteo-logo.svg',
                             alt: 'Criteo',

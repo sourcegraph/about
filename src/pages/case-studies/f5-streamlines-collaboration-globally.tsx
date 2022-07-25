@@ -34,7 +34,6 @@ export const CaseStudy: FunctionComponent = () => (
                     <h2 className="pt-5 pb-1">Knocking down silos</h2>
                     <Blockquote
                         quote="Before Sourcegraph, each of our teams was siloed. Developers could understand their own codebase, but it was difficult for them to see and understand other team members' code."
-                        center={false}
                     />
                     <p>
                         Sourcegraph supports collaboration across F5's teams by indexing code so that developers can
@@ -42,7 +41,6 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
                     <Blockquote
                         quote="If I want to have a dialogue with a developer on a different team, it's as simple as pulling up Sourcegraph and walking through the code."
-                        center={false}
                     />
                     <h2 className="pt-5 pb-1">Overcoming API boundaries</h2>
                     <p>
@@ -52,7 +50,6 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
                     <Blockquote
                         quote="When implementing a feature and testing an API, we use Sourcegraph to go through the API and how it's implemented, see different parameters, read through the code around that API, and understand it better so that we can be better testers. If there are bugs, it's easy to understand the conditions around the error message and give meaningful feedback to our developers."
-                        center={false}
                     />
                     <h2 className="pt-5 pb-1">Bringing teams together</h2>
                     <p>
@@ -61,11 +58,9 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
                     <Blockquote
                         quote="When I work with remote teams and I want to give them an example of a piece or pattern of code, I use Sourcegraph to find the code snippets I need and simply send them the links. This is especially helpful because I can see who wrote the code and find out their thinking behind it."
-                        center={false}
                     />
                     <Blockquote
                         quote="We are developing software faster than ever, with aggressive schedules, and across boundaries. Things that used to be worked out in a closed room now need to be done while teams are spread out across the globe. Sourcegraph is essential in this environment, and I can't imagine being proficient at my job without it."
-                        center={false}
                     />
                     <p>
                         With Sourcegraph, F5's global workforce can stay better connected and quickly solve problems

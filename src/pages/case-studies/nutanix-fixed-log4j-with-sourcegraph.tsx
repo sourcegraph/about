@@ -205,7 +205,6 @@ export const CaseStudy: FunctionComponent = () => (
                         better than having to say, 'Well, boss, I think we got it all.'"
                         author="Jon Kohler"
                         largeText={true}
-                        center={false}
                     />
                 </div>
 

@@ -69,7 +69,6 @@ export const CaseStudy: FunctionComponent = () => (
 
                     <Blockquote
                         quote="Unlike other tools, Sourcegraph doesn't just search for keywords, it searches for regular expressions. This familiar query language allowed us to zero-in on exactly what we wanted and filter out false matches."
-                        center={false}
                     />
 
                     <p>
@@ -81,7 +80,6 @@ export const CaseStudy: FunctionComponent = () => (
 
                     <Blockquote
                         quote="Sourcegraph's search gave us confidence because we knew we wouldn't overlook anything: Sourcegraph returns all search results, it doesn't drop or elide them, unlike GitHub Enterprise."
-                        center={false}
                     />
 
                     <p>
@@ -103,7 +101,6 @@ export const CaseStudy: FunctionComponent = () => (
 
                     <Blockquote
                         quote="Saved searches allow us to constantly monitor code that manages personal data, organization wide, before changes land in production."
-                        center={false}
                     />
 
                     <h2 className="pt-5 pb-1">
