@@ -40,6 +40,7 @@ In 3.42, we are releasing a completely redesigned analytics experience for admin
 ## New search UI, now in Beta
 
 We're fixing UX papercuts and working to improve the core search experience. 3.42 includes a new, optional Beta UI, which can be enabled via a toggle in the avatar menu. It's disabled by default but we encourage you to give it a try. We think you'll find it cleaner and easier to use. You can find the toggle just below the theme dropdown in the avatar menu.
+
 ![](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/beta-ui.gif)
 
 ## Search by repository descriptions
@@ -47,11 +48,13 @@ We're fixing UX papercuts and working to improve the core search experience. 3.4
 We've introduced a new search predicate that enables searching by repository description, for example: `repo:has.description(machine learning)`. Now you can search for interesting repository topics, even if you don't know their names.
 
 This is especially useful for engineers joining new teams or onboarding to a codebase at a new company, so you can quickly find repositories without knowing exactly what you're looking for.
-![](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/repo-description-search.png)
+
+![Search for repository by description](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/repo-description-search.png)
 
 ## Smart search suggestions with lucky search
 
 We have a new search type available experimentally, called "Lucky search." It improves the quality of your search experience by giving you smart suggestions for alternate queries, and it even runs them automatically to make sure they have results before recommending them. You can enable it by setting `"search.defaultPatternType": "lucky"` in settings.
+
 ![Search suggestion example](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/lucky-search.png)
 
 ## Code insights scoped to explicit repository lists load faster and include more historical datapoints
