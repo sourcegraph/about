@@ -61,15 +61,19 @@ We have a new search type available experimentally, called "Lucky search." It im
 
 ## Code Insights load faster and include more historical datapoints
 
-<Video
-  title="Faster code insights"
-  caption="An example of code insights loading faster"
-  source={{
-    mp4: "blog/3.42/3.42InsightsSpeedImprovements"
-    webm: "blog/3.42/3.42InsightsSpeedImprovements"
-  }}
-  loop={true}
-/>
+<figure>
+  <video
+    className="w-100 h-auto shadow"
+    title="An example of code insights loading faster"
+    autoPlay
+    loop
+    muted
+    playsInline
+  >
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/3.42/3.42InsightsSpeedImprovements.mp4" type="video/mp4" data-cookieconsent="ignore"/>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/3.42/3.42InsightsSpeedImprovements.webm" type="video/webm" data-cookieconsent="ignore"/>
+  </video>
+</figure>
 
 Insights running over an explicit list of repos now behave like insights running over all repositories. 
 
