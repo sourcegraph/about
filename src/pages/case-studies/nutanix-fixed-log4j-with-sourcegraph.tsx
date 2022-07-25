@@ -52,7 +52,7 @@ export const CaseStudy: FunctionComponent = () => (
         }
     >
         <NewCaseStudyLayout customer="Nutanix">
-            <ContentSection color="white" className="py-7 text-center max-w-600">
+            <ContentSection color="white" className="py-7 max-w-600">
                 <Blockquote
                     quote="Sourcegraph was the right product at the right time."
                     author="Jon Kohler, Technical Director of Solution Engineering at Nutanix"

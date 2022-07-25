@@ -45,12 +45,8 @@ export const CaseStudy: FunctionComponent = () => (
                         Prior to using Sourcegraph, Convoy's engineers had to clone repos locally in order to find
                         necessary data. This would cause problems, as Owen, a Senior Software Engineer, recalls:
                     </p>
-                    <Blockquote
-                        quote="I was asked to provide the max size of our database connection pulls from our clients. To get this number I used my IDE to search through a repository I had cloned locally before. I didn't notice that the repository was outdated and the data I was providing was already a few days old. It consisted of only half of the actual amount which led to a wrong estimation, overprovisioning of a fleet, and messed up database connections. An expensive mistake."
-                    />
-                    <Blockquote
-                        quote="Now that we are using Sourcegraph, we don't need to worry about data being out of date."
-                    />
+                    <Blockquote quote="I was asked to provide the max size of our database connection pulls from our clients. To get this number I used my IDE to search through a repository I had cloned locally before. I didn't notice that the repository was outdated and the data I was providing was already a few days old. It consisted of only half of the actual amount which led to a wrong estimation, overprovisioning of a fleet, and messed up database connections. An expensive mistake." />
+                    <Blockquote quote="Now that we are using Sourcegraph, we don't need to worry about data being out of date." />
                     <Blockquote
                         quote="Sourcegraph helps you find out who is using what, making it much easier to deprecate, update or iterate on it. You can easily find who to talk to about the use of a certain component. To be able to answer this question in code is extremely powerful and people call it out all the time."
                         author="Owen Kim - Senior Software Engineer, Convoy"

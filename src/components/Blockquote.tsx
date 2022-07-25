@@ -26,9 +26,7 @@ export const Blockquote: FunctionComponent<{
     largeText?: boolean
     border?: boolean
 }> = ({ quote, author, logo, link, headline, largeText = false, border = true }) => (
-    <blockquote
-        className={classNames(border && 'border-left border-3 border-vivid-violet mb-0')}
-    >
+    <blockquote className={classNames(border && 'border-left border-3 border-vivid-violet mb-0')}>
         {headline ? (
             largeText ? (
                 <h2 className="font-weight-bold">{headline}</h2>
