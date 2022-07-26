@@ -112,4 +112,4 @@ The indexing performance is varied across codebases, particularly depending on t
 
 Scip-python is available publicly today. If you’re a Sourcegraph user, you can implement scip-python to enable precise code navigation for your Python repositories. 
 
-If you’re not a Sourcegraph user but are interested in trying it out for navigating Python code (or a number of other languages), you can [install it locally for free](https://about.sourcegraph.com/get-started/), or [reach out to our team for a demo](https://about.sourcegraph.com/demo).
+If you’re not a Sourcegraph user but are interested in trying it out for navigating Python code (or a [number of other languages](https://docs.sourcegraph.com/code_intelligence/references/indexers)), you can [install it locally for free](https://about.sourcegraph.com/get-started/), or [reach out to our team for a demo](https://about.sourcegraph.com/demo).
