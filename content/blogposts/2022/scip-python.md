@@ -23,6 +23,11 @@ This represents a significant advance in Python navigation for Sourcegraph. Prev
 
 Precise Python addresses all of those, giving you equivalent code navigation quality to what you get with the Python language server in VS Code or PyCharm (and of course Neovim 😉).
 
+<YouTube
+  id="uhFO-j7SV_0"
+  title="Precise Python navigation between dependencies"
+/>
+
 Some of the key features of `scip-python` include: 
 - **Correctness:** scip-python re-uses the type checking and analysis of `pyright`. 
 - **Cross-repository navigation:** scip-python is designed to support navigating between your codebase and python libraries.
