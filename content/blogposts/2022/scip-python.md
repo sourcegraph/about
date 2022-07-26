@@ -1,6 +1,8 @@
 ---
 title: 'scip-python: a precise Python indexer'
-description: "Announcing scip-python, a new SCIP indexer for Python."
+description: "Announcing scip-python, a new SCIP indexer for Python built on top of the excellent Pyright type checker."
+
+Announcing scip-python, a new SCIP indexer for Python."
 authors:
   - name: TJ Devries
     url: https://github.com/tjdevries
@@ -102,13 +104,13 @@ Feel free to navigate around in the code on Sourcegraph and leave any issues tha
 
 The indexing performance is varied across codebases, particularly depending on the amount of dependencies and their usage across the project (scip-python will attempt to gain any possible hover documentation and references to these dependencies while indexing). Below is a snapshot of several different repos and their corresponding indexing time (including environment and dependency analysis).
 
-| Project    | Lines of code | scip-python index(es) | index loc/s |
+| Project    | Lines of code | scip-python index(es) | Index loc/s |
 |------------|---------------|-----------------------|-------------|
 | Django     | 101218        | 39                    | 2595        |
 | Rich       | 18923         | 10                    | 1892        |
 | Pre-commit | 4801          | 5                     | 960         |
 
-## scip-python is available today
+## Scip-python is available today
 
 Scip-python is available publicly today. If you’re a Sourcegraph user, you can implement scip-python to enable precise code navigation for your Python repositories. 
 
