@@ -12,7 +12,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero
 published: false
 ---
 
-<Figure 
+<Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png"
   alt="Blog Post Starter Pack"
 />
@@ -73,12 +73,12 @@ To set the thumbnails for this post, link to an image file using `socialImage` a
 The Sourcegraph Blog is implemented in Next.js and MDX. One strength of this implementation is the ability to incorporate components in Markdown. The following components are available for blog posts:
 
 1. Alert
-2. BlockquoteWithBorder
+2. Blockquote
 3. Figure
 4. TableWrapper
 5. Video
 6. YouTube
-7. EmbeddedHubSpot
+7. HubSpotForm
 
 Use these components to bring our blog post to life. Here are a few examples:
 
@@ -108,12 +108,12 @@ Or, you may want to include a link within your Alert:
 
 ### Blockquote
 
-Include a `BlockquoteWithBorder` to highlight a key quote. Optionally, you can also provide context above the quote with a `headline`. 
+Include a `Blockquote` to highlight a key quote. Optionally, you can also provide context above the quote with a `headline`. 
 
-<BlockquoteWithBorder
+<Blockquote
+  headline="Search your code. All of it."
   quote="Onboard to a new codebase, find answers faster, and identify security risks with universal code search."
   author="Sourcegraph"
-  headline="Search your code. All of it."
 />
 
 
@@ -200,12 +200,13 @@ The `Video` component supports .mp4 and .webm files. First, upload the two versi
 
 ### HubSpot Form Example
 
-Use the `EmbeddedHubSpot` component to drop a custom HubSpot form into your post. In most cases, the `formId` is the only property that needs to be updated. This is the same `formId` dictated by the HubSpot console. Once added to your post, the HubSpot form will render wherever you place the `div` using the specified `id` value.
+Use the `HubSpotForm` component to drop a custom HubSpot form into your post. In most cases, the `formId` is the only property that needs to be updated. This is the same `formId` dictated by the HubSpot console. Once added to your post, the HubSpot form will render wherever you place the `div` using the specified `id` value.
 
-<EmbeddedHubSpot 
+<HubSpotForm 
   portalId='2762526' 
   formId='08e6c442-0e7c-4892-a262-76dae55ab497' 
-  targetId='#sign-up-form' />
+  targetId='#sign-up-form'
+/>
 
 <div id="sign-up-form"></div>
 
