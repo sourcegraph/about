@@ -22,6 +22,7 @@ export { TableWrapper } from './TableWrapper'
 export { TemplateCodeBlock } from './TemplateCodeBlock'
 export { ThreeUpText } from './ThreeUpText'
 export { TrySourcegraph } from './TrySourcegraph'
+export { TwoColumnSection } from './TwoColumnSection'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
 
