@@ -50,15 +50,15 @@ The first case is to examine when and where some “BaseClass” is used as a pa
 
 For a concrete example, see the rich package, where we’re viewing the `MarkdownElement`.
 
-![]()
+![](https://storage.googleapis.com/sourcegraph-assets/blog/scip-python/class-markdownelement.png)
 
 The references of MarkdownElement are shown below:
 
-![]()
+![](https://storage.googleapis.com/sourcegraph-assets/blog/scip-python/class-references.png)
 
 However, if you were looking to find out what classes inherit from this element, we can use the `Implementations pane` to view that information:
 
-![]()
+![](https://storage.googleapis.com/sourcegraph-assets/blog/scip-python/class-implementations.png)
 
 Additionally, if any child classes implement or override a particular class method they can be found using the “Implementations” panel in Sourcegraph. For a class method, it will only show child classes that have an explicit implementation in their definition, not wherever the function is called.
 
