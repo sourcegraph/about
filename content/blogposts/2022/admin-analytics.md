@@ -11,3 +11,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/admin-analytic
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/admin-analytics/Admin_Analytics_Blog.png
 published: true
 ---
+
+![Admin analytics](https://storage.googleapis.com/sourcegraph-assets/blog/admin-analytics/Admin_Analytics_Blog.png)
+
+![Time saved calculator](https://storage.googleapis.com/sourcegraph-assets/blog/admin-analytics/time-saved-calculator.png)
