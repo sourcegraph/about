@@ -1,5 +1,5 @@
 ---
-title: 'How we analyzed hundreds of repositories to ensure they had open source licenses'
+title: 'Three years at Sourcegraph as a software engineer'
 authors:
   - name: Joe Chen
     url: https://twitter.com/jc_unknwon
@@ -12,9 +12,9 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/three-years-at
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/three-years-at-sourcegraph.jpg
 ---
 
-## My story with Sourcegraph
+![](https://storage.googleapis.com/sourcegraph-assets/blog/three-years-at-sourcegraph.jpg)
 
-### An email from a random cool guy 
+### An email from a random cool guy
 
 The story all started with an email, it was 2013, and I just started learning Go, wrote a website ([which has been archived](https://github.com/unknwon/gowalker) after running it for 9 years) to practice my knowledge, and someone named “sqs” shot me some lines around “Hey, the website you built looks cool, we at Sourcegraph are doing something similar, we should definitely chat.” Sorry that I’ve lost that email and couldn’t recall the content exactly.
 
@@ -22,8 +22,7 @@ I was in Boston, who (still) loves sitting in my little dark room, with minimal 
 
 Wait, what about the “cool guy” part? I judged based on Quinn’s profile image on GitHub. I think he used it for many years before the current one (yeah, no other CEO uses a tourist-like picture taken at night and put it on the profile).
 
-
-### GopherCon 2014 
+### GopherCon 2014
 
 There were a lot of things that happened in 2014, one of them was the GopherCon 2014, the first ever GopherCon. Quinn emailed me that he and his co-founder Beyang were going to this conference, they also very kindly offered sponsorship for my ticket (PS: I never cashed the check, because they looked cool, and the name of the bank was also cool to me, “First Republic Bank”, think about a 21-year old young man first time received a check in his life, before had a Bank of America debit card, what a collection!)
 
@@ -39,32 +38,22 @@ No doubt Matt asked the famous question regarding my GitHub handle that if the t
 
 Alright, this section is getting too noisy, finishing it up in two short stories:
 
-
-
 1. Because I knew no one else, I was basically following Quinn and Beyang. Then there was a guy who spoke to us for about an hour or maybe less, and I literally couldn’t catch up to understand 99% of what he said. The only thing I could remember (or I could guess-stand) was something, something like serving ZIP files over HTTP protocol?
 2. During the after party, we went to four bars for drinks and socializing, but because I don’t drink, I had about five or six bottles of water. 😒 Then there was a really nice guy, he couldn’t stand it anymore and bought me a coke in the last bar.
 
-
-### The elevator story 
+### The elevator story
 
 Funnily enough, I first heard different versions from different people and I really didn’t put a thought when the “story” happened.
 
 After we met at the GopherCon, I decided to visit Sourcegraph office in San Francisco before I flew back to China for the summer vacation. In the building, there was an elevator I would rather believe was one century old, it did not have buttons I could push for certain floors rather a bunch of switches to manually control the direction and speed of the vehicle (yeah, a vehicle goes up and down…) 😳
 
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
+![Elevator Control](https://storage.googleapis.com/sourcegraph-assets/blog/elevator-control.png)
 
 This is the closest one I could find to match my fading memory, but you get the point. Long story short, I’m pretty sure I did something wrong (no wonder there were elevator operators), and it stopped, I mean, stuck in the middle of nowhere.
 
 I thought, “OK, not too bad, at least I have my backpack and laptop with me, just tell me your WiFi password and I’ll sit and do some coding.”
 
-
-### At 3AM 
+### At 3AM
 
 Fast forward to 2016, I had my summer internship at Sourcegraph in the SF office. Worked with some of today’s coworkers, and it was an enjoyable and amazing experience (though in hindsight I don’t think I accomplished as much as I could have), everyone was (and still is) trying to help each other and be really supportive, which ultimately made me want to join as a full-time employee after finishing my study of master’s degree.
 
@@ -74,30 +63,21 @@ Developers stay up late countless nights to write bugs, and that was an average 
 
 Then I saw Quinn walk in.
 
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
+![WTH](https://storage.googleapis.com/sourcegraph-assets/blog/wth-joe-chen.png)
 
 We neither talked nor made eye-contact. I think he was doing some thinking and walked straight to his desk and started coding (judging by his typing on the keyboard). In case you’re curious, we also have never discussed that night.
 
 That’s the moment when I would have faith in a person and the company he is building, no? (Apart from people yelling at each other at the end of every meeting with “developers, developers, developers!” I’m not the type of person who would do this kind of yelling, but I like it.)
 
+## Being part of hyper growth
 
-## Being part of hyper growth 
-
-
-### First day 
+### First day
 
 1st July, 2019 was a memorable date, not because it was my first day, but because I locked out myself while taking my delivery and ended up shaking my body for two hours to stay warm until my landlord went off work to save my ass.
 
 There were around 25 people on the team. As of today, we have grown more than 10 times the number of people within the company. We did not have any security engineer, no full-time sales representative, many successful product ideas yet to come ([Batch Changes](https://docs.sourcegraph.com/batch_changes), formerly Campaigns, formerly Automation, as well as [Code Insights](https://docs.sourcegraph.com/code_insights), [Notebooks](https://docs.sourcegraph.com/notebooks)). Our main site ([sourcegraph.com](https://sourcegraph.com/)) also went down during the very moment my manager (at the time) [Nick Snyder](https://twitter.com/nickdsnyder) was doing engineering onboarding with me due to an unexpected GCP Kubernetes cluster upgrade 😄 (PS: we couldn’t turn it off, as it was forced by GCP.)
 
-
-### Technical side of things 
+### Technical side of things
 
 I wouldn’t fight back if someone claims our overall architecture of the system hasn’t changed much, we added some services, horizontally scaled some services, but nothing fundamentally changed (for good or bad), “[frontend](https://github.com/sourcegraph/sourcegraph/tree/main/cmd/frontend)” is still the backend.
 
@@ -107,8 +87,7 @@ We still do RFCs, push code to GitHub, review through GitHub pull requests, usin
 
 Maybe I forgot to mention something important while writing these lines because I’m just so used to things I do on a daily basis as an IC, but look at the scroll bar, you have a lot to read already, don’t mind these details.
 
-
-### People, hiring and teams 
+### People, hiring and teams
 
 Our People team has always been the best (both when I was an intern and as a full-time employee), if not the bestest. They do care about people, not just procedures. There is an unimaginable number of things to be managed and sorted out on this hyper-speed train, and they do it frictionlessly.
 
@@ -118,8 +97,7 @@ In the software industry, I feel truly lucky that one consistent way to work thi
 
 With more people, more teams are formed to be dedicated to an area of focus. First we need a head of engineering, then we need engineering managers, then we need engineering directors, then we need engineering pro, max, ultra… No no no, every engineer gets a [16-inch MacBook Pro M1 Max with 64 GB RAM and 1 TB SSD](https://handbook.sourcegraph.com/benefits-pay-perks/benefits-perks/spending-company-money/#engineering-team-laptops).
 
-
-### Priorities, priorities, priorities 
+### Priorities, priorities, priorities
 
 I haven’t changed my team since, but the team “changed” 5 times. From Core Services, to Cloud (I couldn’t recall what that was for), to Core Application, to Cloud SaaS, to IAM and Admin Experience, currently landing at IAM (as part of overall Admin Experience organization). For the record, I’m completely comfortable with changing team focus caused by a change of company strategy, it just isn’t ideal.
 
@@ -127,12 +105,9 @@ If I have to name one thing I learned or realized what’s the single most impor
 
 “The secret to accomplishing many things is to do one thing at a time.”
 
-
-## Living up to our values 
+## Living up to our values
 
 Our seven company values are [documented in our handbook](https://handbook.sourcegraph.com/company-info-and-process/values/) (there were five the last time I did my 360 review a couple of months back but anyway). I’m not going to copy-paste their definitions and detailed explanations, just listing them out here for your references:
-
-
 
 * Customer-first
 * Work as a team
@@ -142,8 +117,7 @@ Our seven company values are [documented in our handbook](https://handbook.sourc
 * Open and transparent
 * Continuously grow
 
-
-### Role models 
+### Role models
 
 Our values are (first of all) great for both their meanings and intentions, but documenting company values is not the end of the story, it’s just a starting point, people need to live with it unless the company goes extinct.
 
@@ -153,8 +127,7 @@ One extremely effective example in my opinion is that whenever and whoever takes
 
 As Quinn used to say, “it’s a marathon not a sprint”, be sustainable.
 
-
-### “Better to ask for forgiveness than permission” 
+### “Better to ask for forgiveness than permission”
 
 I learned this saying from my (previous) manager [Rafal Leszczynski](https://www.linkedin.com/in/rleszcz/), I think this is a key thing to remember for being able to act at a reasonable speed with high agency. You can’t just wait for things to happen, especially while being accountable.
 
@@ -162,14 +135,11 @@ Come up with a communication plan, pull in stakeholders, provide context, be cle
 
 Individuals and teams are making decisions all the time, but while moving fast, just be mindful about r[eversible and irreversible decisions](https://fs.blog/reversible-irreversible-decisions/#:~:text=Reversible%20decisions%20are%20doors%20that,the%20invested%20time%20and%20resources).). If something isn’t reversible or the cost is too high to be reversed, it doesn’t hurt to have a second thought before getting buy-ins from the leadership.
 
-
-### Transparency and sense of safety 
+### Transparency and sense of safety
 
 Transparency unintuitively is one of the hardest things to achieve and maintain in an organization, and it is much easier said than done, especially true for a company with hyper growth (changes are happening at a very fast rate). Sometimes things move a bit slower in the short-term for the sake of transparency, but the benefit of being transparent pays off in the longer-term. Not because transparency itself, but because being transparent forces people to think about processes/decisions/changes more thoroughly, and document them very well for references.
 
 There are many aspects of transparency, just to name a few notable ones:
-
-
 
 * Communication transparency
 * Policy transparency
@@ -193,15 +163,13 @@ The sense of safety needs to be built upon transparency, in an environment where
 
 Just to remind you again that being transparent does not mean reaching consensus every single time.
 
-
-### Values are iterable 
+### Values are iterable
 
 “The Only Constant in Life Is Change.”
 
 While living up to the values, make sure their meanings and intentions are desired. [Values themselves are iterable](https://github.com/sourcegraph/handbook/pull/2506), as time changes, at different stages, under different circumstances, adjust wisely and accordingly.
 
-
-## Software engineering at Sourcegraph 
+## Software engineering at Sourcegraph
 
 This is a big topic, by no means I want nor can I write a book about this, but “there are a thousand Hamlets in the eyes of a thousand people.” I would be comfortable to claim that there are a thousand software engineering methodologies in the eyes of a thousand people, or in a thousand teams, or a thousand organizations.
 
@@ -209,18 +177,15 @@ Previously in 2019, I wrote a blog post in Chinese about “[what is it like to 
 
 What makes now different? 3 is a magical number.
 
-
-### Organization hierarchy 
+### Organization hierarchy
 
 We just reorged (yet again within a year), our latest org chart is documented in our handhook. Within the Engineering department, we have multiple organizations each accompanied with one director and one group PM, then we have one or more teams within each organization consisting of one EM, one PM, one product designer and multiple ICs (Note: Not all teams are fully staffed, and we just get rid of the organization layer at the time of publish).
 
 The product designer of my team (IAM) has been loaned to form a tiger team before the reorg, and we just lost our EM and one IC to form a new team under the Cloud department during this reorg, and our PM has stepped up to be the group PM of the Admin Experience organization. What a sad story! 😅 Is this the “darkest” moment I’ve experienced here? Not quite, there was a brief period of time that I was the only one left on the team.
 
+### Project management
 
-### Project management 
-
-
-#### The curse of GitHub 
+#### The curse of GitHub
 
 GitHub has been our choice of code host since the very beginning, all of our repositories are stored in the [Sourcegraph](https://github.com/sourcegraph) organization, and all sources of truth of engineering tasks, customer issues, security reports are in the form of GitHub issues.
 
@@ -228,16 +193,13 @@ Admittedly, GitHub really sucks as a project management tool (at the time of wri
 
 Unfortunately, we have abandoned using or consider using other tools for project management purpose for the time being in regards to three primary reasons:
 
-
-
 1. Inconsistent sources of truth
 2. Violates our value of transparency (either can’t see or comment without being invited to the project)
 3. Cut costs
 
 We are being pretty creative on GitHub issues, some teams use the concept of [tracking issues](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+label%3Atracking+) (due to lack of epic), some teams enable [in-house automations](https://github.com/sourcegraph/sourcegraph/pull/35453), some teams use the GitHub project, some teams use a flexible combination of some.
 
-
-#### “Agile” 
+#### “Agile”
 
 When I first joined, our development cycles were coupled with our release cadence, meaning every development cycle is one-month long and starts/ends with a monthly release. At one point, one team started trialing two-week sprints, which effectively decouples development cycles from our releases, and to embrace more on our [Continuous Releasability Contract](https://handbook.sourcegraph.com/departments/engineering/dev/tools/continuous_releasability/) and alleviate tension for “squeezing in” changes in hurry.
 
@@ -255,15 +217,13 @@ You’ll find things explicitly marked as missing, that is fine because we know 
 
 One thing I want to call out is the “grooming” phase of issues, at when the acceptance criterias are defined. It is very important to get acceptance criterias correct because this is where the expectation is aligned, it informs what’s the just-right state of the task and prevents over-thinking, in other words, tells people when to stop.
 
-
-#### Release 
+#### Release
 
 We have been doing [monthly releases](https://handbook.sourcegraph.com/departments/engineering/dev/process/releases/) for many years as the vast majority of our customers are using on-premise installations, it hasn’t been a trivial work to facilitate by anyone or any team. The ownership of our release most recently fell under the [Release Guild](https://handbook.sourcegraph.com/departments/engineering/dev/process/releases/release_guild/) as a voluntary group of people, but as you may tell, the voluntary group doesn’t have commitments on engineering efforts, it means things aren’t getting improved in practical terms, as we are just loading “shits” to another truck, fingers crossed for things to get better by themselves.
 
 The good news is, it has caught the leadership team’s attention (after giving feedback to the leadership) and I hope we will see more resources being allocated, since in my opinion release is on the critical path of delivering our developed values to the hands of our customers. It means nothing if the feature isn’t being appreciated by targeted users, no matter how great it is (in the eyes of ours).
 
-
-### Communication 
+### Communication
 
 Communication is hard, it needs to be clear in intentions, surrounded by contexts, and expressed with empathy.
 
@@ -277,16 +237,13 @@ There are [many ways and various mediums](https://handbook.sourcegraph.com/compa
 
 All of this is not saying every communication should be asynchronous. Choose the most effective approach, like anything else.
 
+### Collaboration
 
-### Collaboration 
-
-
-#### With product designers 
+#### With product designers
 
 Figma is the de facto tool for presenting both low and high fidelity designs from our product designer to engineers, most of the time. Other times, Excalidraw is also used but at the time of writing, it is a disaster for collaboration due to the lack of commenting and notification system. For flow charts and group feedback, Miro is often used, but now there is also FigJam, and can be purchased independently from Figma and about 50% cheaper than Miro from what I can tell.
 
-
-#### With other ICs 
+#### With other ICs
 
 Most of the time, people default to using [RFCs](https://handbook.sourcegraph.com/company-info-and-process/communication/rfcs/) (as one of many means) to communicate and collect feedback for changes that have more than a handful of stakeholders, though it is also important to document thinking at the time for referencing back in the future as historical context. It could be a Google Doc (default form), or a GitHub pull request, or a Miro board, or whatever that makes the communication clear and effective.
 
@@ -296,8 +253,6 @@ Instead of using [code owners](https://docs.github.com/en/repositories/managing-
 
 GitHub pull requests with a small number of conceptual changes are always encouraged. This could be a standalone post by itself but I want to express few important benefits I care the most:
 
-
-
 1. Easier to review. Small and focused set of changes really gives reviewers a chance to follow along and think through.
 2. Easier to get review approved. With more conceptual changes, there is more likely to have arguments or push backs, and more delays caused to ship other changes unnecessarily bundled within the same pull request.
 3. Easier to revert. Bugs are everywhere.
@@ -306,42 +261,30 @@ I first learned [stacked pull requests](https://blog.logrocket.com/using-stacked
 
 Well, then how to review pull requests that produce large diffs?
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
-
+![Review PR](https://storage.googleapis.com/sourcegraph-assets/blog/review-large-pr.png)
 
 I’m looking forward to trying out products like [Graphite](https://graphite.dev/) and [PLZ.REVIEW](https://www.plz.review/). I haven’t used them in any meaningful ways because:
-
-
 
 * Graphite only has a dark theme, and it is killing my eyes.
 * PLZ.REVIEW does not two-way sync with GitHub, hurts adoption really badly.
 
-
-#### With leadership 
+#### With leadership
 
 The leadership team answers questions that come from anonymous form submissions at every company meeting that happens biweekly. We also have a Slack channel called #exec-ama. I’ve heard how ineffective these approaches are from many people working at other companies but you’ll be surprised how direct and honest some of the questions, feedback and answers are at Sourcegraph.
 
 Speak up your concerns, and push back with your proposals. I know this is easier said than done, but when you see other teammates, managers, directors and executives have arguments in public channels and threads, they are great examples and immense encouragement for anyone to be like that for the better outcome of all of us.
 
-
-### Team building and career growth 
+### Team building and career growth
 
 Team offsites with [company sponsored travel](https://handbook.sourcegraph.com/benefits-pay-perks/benefits-perks/travel/) are happening all the time in different teams, the last all-hands offsite was at San Diego for GopherCon 2019. I still remember that I mistakenly took Rijnard’s drink (sorry!!) for lunch, and it was [Eric Fritz](https://www.linkedin.com/in/eric-fritz-414a9411/)’s first day on this offsite (what a first day!).
 
 We’ve also developed an [engineering career development framework](https://handbook.sourcegraph.com/departments/engineering/dev/career-development/framework/) and made up spaces for [early-career engineers](https://handbook.sourcegraph.com/departments/engineering/dev/hiring/early-career-engineers/).
 
-
-## Remote working vs. work from home 
+## Remote working vs. work from home
 
 It is probably unobvious to realize remote working is a fundamentally different thing from working from home, they look very similar on the surface, but the running mechanisms aren’t the same in my opinion. If you are impatient to read my stories, jump right to the “Takeaways”.
 
-
-### Revert relocation 
+### Revert relocation
 
 I spent my first five months working at our office in San Francisco, there were about five to six different combinations of people regularly at the office more than half of the time. I managed to ship everything through USPS from Boston to SF on June 30th, and took the flight in the evening.
 
@@ -351,15 +294,13 @@ Then, I reverted my relocation during Thanksgiving. Shipping everything back, fo
 
 That was the busiest two-week I’ve ever had in terms of taking flights. First, I flew back to Boston, then in three days, I flew back to SF for our annual party, then I flew back (again) to Boston after the annual party, then I flew back (again) to SF for a connecting flight to China.
 
-
-### COVID-19 
+### COVID-19
 
 Originally, I planned to stay about three months in China, then on the day of Chinese New Year, the pandemic was revealed and every city was essentially locked down. Before the pandemic hit really badly in the US, we [officially went from remote-first to all-remote](https://twitter.com/nickdsnyder/status/1230528851719028736). In hindsight, it was a smart move and I wasn’t surprised given we already had about half of engineers working remotely from EMEA.
 
 Around the same time, lots of Chinese companies started encouraging people to work from home, but the overall sentiment from people and from what I observed is that, work from home is generally more stressful than not. Why? Because I think the way companies are operating is not ready for managing and more importantly communicating effectively through IMs. It is often clear the work is over after leaving the office, but there is no such boundary anymore. Managers are concerned that people aren’t working hard enough in the absence of physical presence, though I’m very doubtful that “working hard at office” is even true for people under those managers. At places where people are afraid of leaving the office before their managers, now need to be always online because managers have nothing else to do other than checking statuses frequently.
 
-
-### Trust, transparency and fairness 
+### Trust, transparency and fairness
 
 What I believe is the root cause of many companies having more stressful “work from home” scenarios is the lack of trust. To say it in another way, the obsession of micromanagement from their managers.
 
@@ -371,8 +312,7 @@ Remote working also strictly implies value other people’s time, respect everyo
 
 Some companies offer remote positions just because they can pay talents at the local market rate, and they don’t really care about how to improve communication, operation and productivity through remote working. We [don’t believe in location-dependent compensation](https://handbook.sourcegraph.com/benefits-pay-perks/pay-expenses/compensation/#location-independent) to stay competitive and attractive to best talents from anywhere you are.
 
-
-### Work life balance 
+### Work life balance
 
 The first question I get asked when people know that I work remotely is “when do you work?” Well, it depends who I am answering to.
 
@@ -386,8 +326,7 @@ The whole point here is that it is flexible, you may get more insprisions and in
 
 Of course, remote working isn’t for everyone, sometimes I also miss working at an office environment, that is why we also have [up to 500 USD per month for you to rent a coworking space](https://handbook.sourcegraph.com/benefits-pay-perks/benefits-perks/spending-company-money/#recurring-expenses).
 
-
-### Takeaways 
+### Takeaways
 
 In short, remote working is a different way of working from working at the office, where work from home is just a change of work location which happens to be not at the office.
 
@@ -395,8 +334,7 @@ Similar to communications, it should be made crystal clear that converting to re
 
 If you want to learn more about how to transform your company’s working style to remote working, I highly recommend the course [How to Manage a Remote Team](https://www.coursera.org/learn/remote-team-management) by GitLab.
 
-
-## What’s sad and what’s wrong? 
+## What’s sad and what’s wrong?
 
 It wouldn’t be so honest if I only talk about good things (as if they are the only things), which sadly and inevitably, are not true.
 
@@ -408,8 +346,7 @@ Constant changing of the team focus loses team momentum and breaks long-term own
 
 One last thing I’d like to call out here is the language barrier for talents that previously do not speak English in professional settings. I feel sad about not being able to source good candidates.
 
-
-## Personal growth 
+## Personal growth
 
 I wouldn’t hesitate to admit it is a dream place to work at and to grow with the company. It is a precious opportunity to experience different stages of a company, which has been what I wanted before I started my professional career.
 
@@ -417,8 +354,7 @@ In addition to my continuous learning of professional skills, the experience of 
 
 “If you want to go fast, go alone, if you want to go far, go together.”
 
-
-## Beyond 3, 30, and 300 
+## Beyond 3, 30, and 300
 
 In celebration and the coincidence of my three year anniversary, my age of 30, and 300-people mark of the company, I’m going to tell you a truth, I’m not yet 30 but rounded it up (by 1) to make the title look better.
 
@@ -427,8 +363,6 @@ In celebration and the coincidence of my three year anniversary, my age of 30, a
 Sourcegraph is an inspiring place to work at with truly amazing, empathetic and thoughtful leadership and teammates. I’m looking forward to continuing making my contributions and greater impact in the foreseeable future, with many years to come.
 
 It is a place where I perceive most people are willing to spend years for their career. Of course I have my very own reasons, for transparency, I give them away honestly:
-
-
 
 * I have faith in the mission, to make it so “everyone can code”, and “being able to code will become a basic life skill like reading was centuries ago”.
 * There is probably no better place where I am surrounded by talented people and being able to work with them pleasantly.
@@ -451,28 +385,15 @@ I’ll wrap up with an old joke.
 
 Thanks for reading this far, and have a nice day!
 
-
 ---
 
-Special thanks to Beyang Liu, Lishi He, Yaohui Wang, and Tianzhou Liu for their proofreadings and thoughtful feedback!
-
-For transparency: comments are not discouraged, but it is extremely likely that I will not reply.
-
-
----
-
-_Thanks to the following people for helping with this post: Erik Seliger, Daniel Marques, Malo Marrec, Kalid Azad, Marcos Placona, Fabiana Castellanos, and Tammy Zhu._
+_Special thanks to Beyang Liu, Lishi He, Yaohui Wang, and Tianzhou Liu for their proofreadings and thoughtful feedback!_
 
 #### About the author
 
-Justin Dorfman is Sourcegraph’s Open Source Program Manager and is responsible for
-fostering the adoption of code intelligence in the open source community. You can chat with Justin on Twitter [@jdorfman](https://twitter.com/jdorfman) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)
+Joe Chen is Software Engineer and maintainer of the open source project Gogs, a painless self-hosted Git service. You can chat with Joe on Twitter [@jc_unknwon](https://twitter.com/jc_unknwon) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)
 
 ### More posts like this
 
-- [Interact with Sourcegraph from the command line faster with Fig](https://about.sourcegraph.com/blog/why-fig-autocomplete-is-awesome)
-- [No Secrets! Quickly find sensitive files in your GitHub repo](https://about.sourcegraph.com/blog/no-more-secrets)
-
-<iframe height="0" frameborder="0">
-    <img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=a18bf656-9e70-4ab1-b2a5-1440b6646e1f" />
-</iframe>
+* [A dev's thoughts on developer productivity](https://about.sourcegraph.com/blog/developer-productivity-thoughts)
+* [3 things to know before building a custom, in-house code search tool](https://about.sourcegraph.com/blog/things-to-know-before-building-a-code-search-tool)
