@@ -6,15 +6,6 @@ import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
 
-import batchChangesMp4 from './animations/batch-changes.mp4'
-import batchChangesWebm from './animations/batch-changes.webm'
-import codeInsightsMp4 from './animations/code-insights.mp4'
-import codeInsightsWebm from './animations/code-insights.webm'
-import codeIntelMp4 from './animations/code-intel.mp4'
-import codeIntelWebm from './animations/code-intel.webm'
-import codeSearchMp4 from './animations/code-search.mp4'
-import codeSearchWebm from './animations/code-search.webm'
-
 interface Video {
     mp4: string
     webm: string
@@ -47,8 +38,8 @@ export const features: Features[] = [
         ],
         ctaLink: '/code-search',
         video: {
-            mp4: codeSearchMp4,
-            webm: codeSearchWebm,
+            mp4: '/animations/code-search.mp4',
+            webm: '/animations/code-search.webm',
         },
     },
     {
@@ -63,8 +54,8 @@ export const features: Features[] = [
         ],
         ctaLink: '/code-search',
         video: {
-            mp4: codeIntelMp4,
-            webm: codeIntelWebm,
+            mp4: '/animations/code-intel.mp4',
+            webm: '/animations/code-intel.webm',
         },
     },
     {
@@ -83,8 +74,8 @@ export const features: Features[] = [
         ],
         ctaLink: '/batch-changes',
         video: {
-            mp4: batchChangesMp4,
-            webm: batchChangesWebm,
+            mp4: '/animations/batch-changes.mp4',
+            webm: '/animations/batch-changes.webm',
         },
     },
     {
@@ -99,8 +90,8 @@ export const features: Features[] = [
         ],
         ctaLink: '/code-insights',
         video: {
-            mp4: codeInsightsMp4,
-            webm: codeInsightsWebm,
+            mp4: '/animations/code-insights.mp4',
+            webm: '/animations/code-insights.webm',
         },
     },
 ]
