@@ -1,10 +1,8 @@
 import { FunctionComponent } from 'react'
 
 interface Video {
-    source: {
-        webm: string
-        mp4: string
-    }
+    mp4: string,
+    webm: string,
     loop: boolean
     showCaption?: boolean
     caption: string
@@ -14,7 +12,8 @@ interface Video {
 }
 
 export const Video: FunctionComponent<Video> = ({
-    source,
+    mp4,
+    webm,
     loop,
     caption,
     showCaption = false,
@@ -38,12 +37,12 @@ export const Video: FunctionComponent<Video> = ({
         >
             <source
                 type="video/mp4"
-                src={`https://storage.googleapis.com/sourcegraph-assets/${source.mp4}.mp4`}
+                src={mp4}
                 data-cookieconsent="ignore"
             />
             <source
                 type="video/webm"
-                src={`https://storage.googleapis.com/sourcegraph-assets/${source.webm}.webm`}
+                src={webm}
                 data-cookieconsent="ignore"
             />
             {caption && caption}
