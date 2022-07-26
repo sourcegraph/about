@@ -3,14 +3,16 @@ title: 'scip-python: a precise Python indexer'
 description: "Announcing scip-python, a new SCIP indexer for Python."
 authors:
   - name: TJ Devries
-    url: 
-publishDate: 2022-07-25T18:00+02:00
+    url: https://github.com/tjdevries
+publishDate: 2022-07-27T18:00+02:00
 tags: [blog]
 slug: scip-python
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-python-logo.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-python-logo.png
 published: true
 ---
+
+![](https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-python-logo.png)
 
 We are excited to announce the release of `scip-python`, a new SCIP indexer for Python built on top of the excellent [Pyright](https://github.com/microsoft/pyright) type checker. 
 
@@ -110,4 +112,4 @@ The indexing performance is varied across codebases, particularly depending on t
 
 Scip-python is available publicly today. If you’re a Sourcegraph user, you can implement scip-python to enable precise code navigation for your Python repositories. 
 
-If you’re not a Sourcegraph user but are interested in trying it out for navigating Python code (or a number of other languages), you can install it locally for free, or reach out to our team for a demo.
+If you’re not a Sourcegraph user but are interested in trying it out for navigating Python code (or a number of other languages), you can [install it locally for free](https://about.sourcegraph.com/get-started/), or [reach out to our team for a demo](https://about.sourcegraph.com/demo).
