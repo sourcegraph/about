@@ -13,13 +13,6 @@ interface FigureProps {
 export const Figure: FunctionComponent<FigureProps> = ({ src, alt, caption, link, className }) => (
     <figure>
         <img src={src} alt={alt} className={classNames(className, 'mb-0')} />
-        {caption && (
-            <figcaption>
-                {link ?
-                    <a href={link}>{caption}</a> :
-                    caption
-                }
-            </figcaption>
-        )}
+        {caption && <figcaption>{link ? <a href={link}>{caption}</a> : caption}</figcaption>}
     </figure>
 )
