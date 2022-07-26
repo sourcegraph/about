@@ -1,8 +1,6 @@
 ---
 title: 'scip-python: a precise Python indexer'
 description: "Announcing scip-python, a new SCIP indexer for Python built on top of the excellent Pyright type checker."
-
-Announcing scip-python, a new SCIP indexer for Python."
 authors:
   - name: TJ Devries
     url: https://github.com/tjdevries
