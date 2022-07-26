@@ -102,11 +102,11 @@ Feel free to navigate around in the code on Sourcegraph and leave any issues tha
 
 The indexing performance is varied across codebases, particularly depending on the amount of dependencies and their usage across the project (scip-python will attempt to gain any possible hover documentation and references to these dependencies while indexing). Below is a snapshot of several different repos and their corresponding indexing time (including environment and dependency analysis).
 
-| Project    | Lines of code | scip-python index(es) | index loc/s |   |
-|------------|---------------|-----------------------|-------------|---|
-| Django     | 101218        | 39                    | 2595        |   |
-| Rich       | 18923         | 10                    | 1892        |   |
-| Pre-commit | 4801          | 5                     | 960         |   |
+| Project    | Lines of code | scip-python index(es) | index loc/s |
+|------------|---------------|-----------------------|-------------|
+| Django     | 101218        | 39                    | 2595        |
+| Rich       | 18923         | 10                    | 1892        |
+| Pre-commit | 4801          | 5                     | 960         |
 
 ## Get started with scip-python today!
 
