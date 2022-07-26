@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 import {
     BackButtonBold,
-    BlockquoteWithBorder,
+    Blockquote,
     BlogResourceItem,
     ContentSection,
     CustomCarousel,
@@ -39,6 +39,7 @@ const items = [
                         <Link href="/code-search" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
+                                title="Code Search"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
@@ -66,6 +67,7 @@ const items = [
                         <Link href="/batch-changes">
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
+                                title="Batch Changes"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
@@ -89,8 +91,16 @@ const items = [
                 text={
                     <p className="py-3">
                         Create living, actionable documentation with{' '}
-                        <a href="https://docs.sourcegraph.com/notebooks">Notebooks</a> that show your best practices
-                        with real-life examples you can share with your team.
+                        <a
+                            href="https://docs.sourcegraph.com/notebooks"
+                            title="Notebooks"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Notebooks
+                        </a>{' '}
+                        that show your best practices with real-life examples you can share with your team.
                     </p>
                 }
             />
@@ -106,7 +116,16 @@ const items = [
                     <p className="py-3">
                         Make sure deprecated endpoints don't sneak back into your code. Get alerts for new occurrences
                         of deprecated methods or restricted patterns with{' '}
-                        <a href="https://docs.sourcegraph.com/code_monitoring">code monitoring</a>.
+                        <a
+                            href="https://docs.sourcegraph.com/code_monitoring"
+                            title="Code monitoring"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            code monitoring
+                        </a>
+                        .
                     </p>
                 }
             />
@@ -121,7 +140,19 @@ const items = [
                 text={
                     <p className="py-3">
                         Create dashboards to track mitigations, package use, version adoption, code smells, codebase
-                        size, and more to understand code health with <Link href="/code-insights">Code Insights</Link>.
+                        size, and more to understand code health with{' '}
+                        <Link href="/code-insights" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Insights"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Insights
+                            </a>
+                        </Link>
+                        .
                     </p>
                 }
             />
@@ -218,7 +249,7 @@ const blogResourceItems = [
 const UseCasePage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Improve Code Health | Sourcegraph',
+            title: 'Improve Code Health - Sourcegraph',
             description:
                 'Tackle refactoring efforts and tech debt from legacy systems with automated pull requests across your entire codebase to boost code health.',
         }}
@@ -253,7 +284,7 @@ const UseCasePage: FunctionComponent = () => (
                                         </Link>
                                     </div>
                                     <div className="ml-md-3">
-                                        <Link href="/get-started" passHref={true}>
+                                        <Link href="/get-started/self-hosted" passHref={true}>
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
                                                 className="btn btn-outline-primary w-100 max-w-350"
@@ -306,10 +337,11 @@ const UseCasePage: FunctionComponent = () => (
                         </ul>
                     </div>
                     <div className="col-lg-5 mt-lg-8 mt-5">
-                        <BlockquoteWithBorder
+                        <Blockquote
                             quote="With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove unused attributes that lived in different repositories, ultimately simplifying our APIs and speeding up developer iteration time."
                             author="Justin Phillips, Software Engineer at Lyft"
                             headline="Lyft boosts code health and accelerates developer velocity"
+                            center={true}
                             logo={{
                                 src: '/external-logos/lyft-logo.svg',
                                 alt: 'Lyft logo',
@@ -358,6 +390,7 @@ const UseCasePage: FunctionComponent = () => (
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="d-flex justify-content-center mt-4"
+                                title="Explore other use cases"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
@@ -389,7 +422,7 @@ const UseCasePage: FunctionComponent = () => (
             <div className="d-flex flex-wrap justify-content-center text-center mb-md-4">
                 <h2 className="w-100 font-weight-bold mb-4 mx-4 mx-lg-0">Ready to build a healthier codebase?</h2>
                 <div className="d-flex justify-content-center mb-lg-6">
-                    <Link href="/get-started" passHref={true}>
+                    <Link href="/get-started/self-hosted" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
                             className="btn btn-primary"

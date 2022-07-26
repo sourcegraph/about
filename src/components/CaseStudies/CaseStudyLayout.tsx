@@ -2,7 +2,8 @@ import { FunctionComponent } from 'react'
 
 import { kebabCase } from 'lodash'
 
-import { ContentSection, RequestDemoForm, MediaQuote } from '@components'
+import { ContentSection, RequestDemoForm } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 import { CaseStudyJumbotron } from './CaseStudyJumbotron'
 
@@ -43,7 +44,14 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                 {heroImage && (
                     <div className="case-studies__quote row pt-3">
                         <div className="col-lg-3">
-                            <a href={heroLink} rel="nofollow">
+                            <a
+                                href={heroLink}
+                                rel="nofollow"
+                                title={customer}
+                                data-button-style={buttonStyle.image}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 <img className="img-fluid mx-auto d-block" src={heroImage} alt={customer} />
                             </a>
                         </div>
@@ -57,9 +65,38 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                         </div>
                     </div>
                 )}
-                {quote && !heroImage && <MediaQuote quote={quote.text} author={quote.author} image={quote.image} />}
+                {quote && !heroImage && (
+                    <div className="container pt-3">
+                        <div className="case-studies__quote row justify-content-center">
+                            {quote.image && (
+                                <div className="col-12 col-lg-9">
+                                    <img
+                                        className="rounded-circle img-fluid mx-auto d-block mb-3"
+                                        src={quote.image}
+                                        alt={quote.author}
+                                    />
+                                </div>
+                            )}
+                            <div className="col-12 col-lg-9">
+                                <blockquote className="blockquote">
+                                    <p className="text-light">{quote.text}</p>
+                                    <footer className="blockquote-footer text-light mt-1">{quote.author}</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                )}
                 {pdf && (
-                    <a href={pdf} className="btn btn-primary mt-3" rel="nofollow noreferrer" target="_blank">
+                    <a
+                        href={pdf}
+                        className="btn btn-primary mt-3"
+                        rel="nofollow noreferrer"
+                        target="_blank"
+                        title="Download PDF"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
                         <i className="fa fa-file-pdf pr-2" />
                         Download PDF
                     </a>

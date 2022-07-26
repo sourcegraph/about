@@ -1,6 +1,6 @@
 ---
 layout: markdown
-title: Sourcegraph Privacy Policy
+title: Privacy Policy
 ---
 
 Last modified: March 28, 2022

@@ -66,3 +66,7 @@ Key insights:
 *   Linting: Almost all of the teams brought up the value of linting running automatically on pull requests, but none of the teams had set up a linting service.
 *   Code and comment history: Have you ever commented on a pull request, only to lose the entire set of comments and code history after a force push? The ideal code review tool would give developers access to this archived history quickly and easily to help provide more context for future code reviews.
 *   The social side of code review: Code review comments are one of the main emotional outlets of writing code. The frustration, the pain, and the excitement of pushing new code comes across in discussion comments. The ideal code review tool would recognize the human side of the process, so even the most banal pull request can be enjoyable.
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

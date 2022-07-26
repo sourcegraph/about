@@ -35,10 +35,30 @@ const items = [
                 text={
                     <p className="py-3">
                         No heroics required: Quickly understand all the context and dependencies around your codebase
-                        with <Link href="/code-search">Code Search</Link> so you can find the root cause of an incident
-                        with confidence and speed. Document work in progress with{' '}
-                        <a href="https://docs.sourcegraph.com/notebooks">Notebooks</a> so teammates can get up to speed
-                        quickly.
+                        with{' '}
+                        <Link href="/code-search" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Search"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Search
+                            </a>
+                        </Link>{' '}
+                        so you can find the root cause of an incident with confidence and speed. Document work in
+                        progress with{' '}
+                        <a
+                            href="https://docs.sourcegraph.com/notebooks"
+                            title="Notebooks"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Notebooks
+                        </a>{' '}
+                        so teammates can get up to speed quickly.
                     </p>
                 }
             />
@@ -54,9 +74,20 @@ const items = [
                 text={
                     <p className="py-3">
                         Automate the deployment of fixes everywhere and at scale. With{' '}
-                        <Link href="/batch-changes">Batch Changes</Link>, you can automate code changes and monitor the
-                        merge status of each resulting PR. Refactor code to replace insecure functions, update
-                        vulnerable packages, or modify container configurations across hundreds of repositories.
+                        <Link href="/batch-changes" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Batch Changes"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Batch Changes
+                            </a>
+                        </Link>
+                        , you can automate code changes and monitor the merge status of each resulting PR. Refactor code
+                        to replace insecure functions, update vulnerable packages, or modify container configurations
+                        across hundreds of repositories.
                     </p>
                 }
             />
@@ -71,8 +102,19 @@ const items = [
                 text={
                     <p className="py-3">
                         Visualize fixes in progress and track their deployment. With{' '}
-                        <Link href="/code-insights">Code Insights</Link>, get visibility into remediation efforts and
-                        share progress with team leaders and all of your customers.
+                        <Link href="/code-insights" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Insights"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Insights
+                            </a>
+                        </Link>
+                        , get visibility into remediation efforts and share progress with team leaders and all of your
+                        customers.
                     </p>
                 }
             />
@@ -87,8 +129,17 @@ const items = [
                 text={
                     <p className="py-3">
                         Close the loop on your incident response efforts. After finding the root cause, use{' '}
-                        <a href="https://docs.sourcegraph.com/code_monitoring">code monitoring</a> to track whether
-                        similarly unsafe code is ever merged. Get alerts and stop incidents before they occur.
+                        <a
+                            href="https://docs.sourcegraph.com/code_monitoring"
+                            title="Code monitoring"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            code monitoring
+                        </a>{' '}
+                        to track whether similarly unsafe code is ever merged. Get alerts and stop incidents before they
+                        occur.
                     </p>
                 }
             />
@@ -178,7 +229,7 @@ const threeUpTextItems = [
 const IncidentResponsePage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Incident Response | Sourcegraph',
+            title: 'Incident Response - Sourcegraph',
             description:
                 'Identify the root cause of an incident, understand its potential impact, fix the issue everywhere in your codebase. Incident response from Sourcegraph.',
         }}
@@ -212,7 +263,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                                     </Link>
                                 </div>
                                 <div className="ml-md-3">
-                                    <Link href="/get-started" passHref={true}>
+                                    <Link href="/get-started/self-hosted" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a
                                             className="btn btn-outline-primary w-100 max-w-350"
@@ -284,7 +335,15 @@ const IncidentResponsePage: FunctionComponent = () => (
                                 passHref={true}
                             >
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a className="font-weight-bold">Read the Cloudflare case study</a>
+                                <a
+                                    className="font-weight-bold"
+                                    title="Read the Cloudflare case study"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    Read the Cloudflare case study
+                                </a>
                             </Link>
                             <img
                                 src="/external-logos/cloudflare-logo.svg"
@@ -332,7 +391,13 @@ const IncidentResponsePage: FunctionComponent = () => (
                         </Link>
                         <Link href="/use-cases" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="d-flex justify-content-center mt-4 font-weight-bold">
+                            <a
+                                className="d-flex justify-content-center mt-4 font-weight-bold"
+                                title="Explore other use cases"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 Explore other use cases
                             </a>
                         </Link>
@@ -361,10 +426,11 @@ const IncidentResponsePage: FunctionComponent = () => (
                 <h2 className="font-weight-bold display-3 mb-4 mx-4 mx-lg-0">
                     Respond to incidents faster and more effectively.
                 </h2>
-                <Link href="/get-started" passHref={true}>
+                <Link href="/get-started/self-hosted" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         className="btn btn-primary"
+                        title="Ready to get started?"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"

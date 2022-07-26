@@ -126,3 +126,7 @@ See the [Sourcegraph changelog](https://sourcegraph.com/github.com/sourcegraph/s
 **Ready to install or upgrade? [Get Sourcegraph 2.8.](https://docs.sourcegraph.com/#quickstart)**
 
 Questions/feedback/complaints/requests? Contact us at [@sourcegraph](https://twitter.com/sourcegraph) or support@sourcegraph.com, or file issues on our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues). We're planning for our next release, Sourcegraph 2.9 in mid-June, right now. The sooner we hear from you, the better!
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

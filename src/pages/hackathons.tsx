@@ -2,43 +2,73 @@ import React, { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout } from '@components'
-import { useHubSpot, useChiliPiper } from '@hooks'
+import { Layout, HubSpotForm } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
-export const Pricing: FunctionComponent = () => {
-    useHubSpot({
-        portalId: '2762526',
-        formId: '7d6c55af-3de3-4e57-a5df-a0de341a4814',
-        targetId: 'trial-form',
-    })
-    useChiliPiper()
+export const Hackathons: FunctionComponent = () => (
+    <Layout
+        meta={{
+            title: 'Sourcegraph - Set up Sourcegraph at a Hackathon',
+            description: 'Set up Sourcegraph at a Hackathon',
+        }}
+    >
+        <section className="text-center mb-0 px-5">
+            <h1 className="mt-4">Set up Sourcegraph during a hackathon</h1>
+            <p>
+                We'll give you access to Sourcegraph Enterprise features so you can ship code search and intelligence to
+                your team.
+            </p>
+        </section>
 
-    return (
-        <Layout
-            meta={{
-                title: 'Sourcegraph | Set up Sourcegraph at a Hackathon',
-                description: 'Set up Sourcegraph at a Hackathon',
-            }}
-        >
-            <section className="text-center mb-0 px-5">
-                <h1 className="mt-4">Set up Sourcegraph during a hackathon</h1>
-                <p>
-                    We'll give you access to Sourcegraph Enterprise features so you can ship code search and
-                    intelligence to your team.
-                </p>
-            </section>
-            <section className="d-flex justify-content-around flex-column flex-lg-row bg-white max-w-1100 p-4 m-auto">
-                <div className="mr-lg-5 mt-0 mb-2">
-                    <div className="d-flex flex-column bg-light-gray-2 rounded p-5">
-                        <p>
-                            Want to win your hackathon? Set up Sourcegraph and bring the power of code search and code
-                            intelligence to your engineering team!
+        <section className="d-flex justify-content-around flex-column flex-lg-row bg-white max-w-1100 p-4 m-auto">
+            <div className="mr-lg-5 mt-0 mb-2">
+                <div className="d-flex flex-column bg-light-gray-2 rounded p-5">
+                    <p>
+                        Want to win your hackathon? Set up Sourcegraph and bring the power of code search and code
+                        intelligence to your engineering team!
+                    </p>
+                    <ul>
+                        <li>
+                            We'll give you access to all of our{' '}
+                            <Link href="/pricing" passHref={true}>
+                                Enterprise features
+                            </Link>
+                        </li>
+                        <li>We'll give you live tech support</li>
+                        <li>We'll ship you a bag of stickers, shirts, socks, and other great swag!</li>
+                    </ul>
+
+                    <p>
+                        Fill out the form or tweet us{' '}
+                        <a href="https://twitter.com/sourcegraph" target="_blank" rel="nofollow noreferrer">
+                            @sourcegraph
+                        </a>
+                        , and we'll get back to you ASAP on how to get started!
+                    </p>
+                    <div className="border-top border-light-9">
+                        <p className="pt-4">
+                            Get started with the{' '}
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://docs.sourcegraph.com/admin/install/docker"
+                            >
+                                installation docs.
+                            </a>
                         </p>
                         <ul>
                             <li>
                                 We'll give you access to all of our{' '}
                                 <Link href="/pricing" passHref={true}>
-                                    Enterprise features
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                    <a
+                                        title="Enterprise features"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
+                                        Enterprise features
+                                    </a>
                                 </Link>
                             </li>
                             <li>We'll give you live tech support</li>
@@ -47,7 +77,15 @@ export const Pricing: FunctionComponent = () => {
 
                         <p>
                             Fill out the form or tweet us{' '}
-                            <a href="https://twitter.com/sourcegraph" target="_blank" rel="nofollow noreferrer">
+                            <a
+                                href="https://twitter.com/sourcegraph"
+                                target="_blank"
+                                rel="nofollow noreferrer"
+                                title="@sourcegraph"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 @sourcegraph
                             </a>
                             , and we'll get back to you ASAP on how to get started!
@@ -59,9 +97,14 @@ export const Pricing: FunctionComponent = () => {
                                     target="_blank"
                                     rel="noreferrer"
                                     href="https://docs.sourcegraph.com/admin/install/docker"
+                                    title="Installation docs"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
-                                    installation docs.
+                                    installation docs
                                 </a>
+                                .
                             </p>
                             <p>
                                 When you're ready to present, check out the{' '}
@@ -69,6 +112,10 @@ export const Pricing: FunctionComponent = () => {
                                     target="_blank"
                                     rel="noreferrer"
                                     href="https://docs.sourcegraph.com/getting-started/tour"
+                                    title="Sourcegraph tour"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     Sourcegraph tour
                                 </a>{' '}
@@ -77,12 +124,27 @@ export const Pricing: FunctionComponent = () => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div id="trial-form" />
-                </div>
-            </section>
-        </Layout>
-    )
-}
+            </div>
 
-export default Pricing
+            <div>
+                <HubSpotForm
+                    masterFormName="contactMulti"
+                    chiliPiper={true}
+                    inlineMessage={`
+                        <p>Thank you for your interest in Sourcegraph. We will be in contact with you soon!</p>
+                        
+                        <p>Get started today:</p>
+
+                        <ul>
+                            <li><a href="https://docs.sourcegraph.com/admin/deploy/docker-single-container" target="_blank" rel="noopener noreferrer">Install Sourcegraph with Docker</a> <b>(recommended, easiest)</b></li>
+                            <li><a href="https://docs.sourcegraph.com" target="_blank" rel="noopener noreferrer">Review the documentation</a></li>
+                            <li>Check your email for your 30-day license key.</li>
+                        </ul>
+                    `}
+                />
+            </div>
+        </section>
+    </Layout>
+)
+
+export default Hackathons

@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import { Layout } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 import articles from './articles'
 
@@ -17,7 +18,18 @@ const News: FunctionComponent = () => (
             <div className="text-center py-5">
                 <h1 className="display-2 font-weight-bold">Sourcegraph News</h1>
                 <p>
-                    The latest Sourcegraph news and <Link href="/press-release">press releases</Link>
+                    The latest Sourcegraph news and{' '}
+                    <Link href="/press-release" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            title="press releases"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            press releases
+                        </a>
+                    </Link>
                 </p>
 
                 <div className="container">
@@ -25,7 +37,15 @@ const News: FunctionComponent = () => (
                         <div className="col mt-5">
                             <h3>Media contact</h3>
                             <p>
-                                <a href="mailto:press@sourcegraph.com">press@sourcegraph.com</a>
+                                <a
+                                    href="mailto:press@sourcegraph.com"
+                                    title="press@sourcegraph.com"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
+                                    press@sourcegraph.com
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -48,7 +68,15 @@ const News: FunctionComponent = () => (
                             {article.articles.map(a => (
                                 <article className="row border-bottom d-flex py-3" key={a.newsLink}>
                                     <div className="col-sm-4 col-lg-2 text-center d-flex align-items-center mb-2 mb-md-0">
-                                        <a href={a.newsLink} target="_blank" rel="nofollow noreferrer">
+                                        <a
+                                            href={a.newsLink}
+                                            target="_blank"
+                                            rel="nofollow noreferrer"
+                                            title={a.newsTitle}
+                                            data-button-style={buttonStyle.image}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
                                             <img
                                                 className="max-w-100 max-w-sm-150 w-100"
                                                 src={a.newsImage}
@@ -61,7 +89,7 @@ const News: FunctionComponent = () => (
                                         <h6 className="d-inline-block mb-2">{a.newsSource}</h6>{' '}
                                         <time
                                             dateTime={new Date(a.newsDate).toISOString().split('T')[0]}
-                                            className="ml-2 text-muted"
+                                            className="ml-2 text-gray-5"
                                         >
                                             {a.newsDate}
                                         </time>
@@ -71,6 +99,10 @@ const News: FunctionComponent = () => (
                                                 href={a.newsLink}
                                                 target="_blank"
                                                 rel="nofollow noreferrer"
+                                                title={a.newsTitle}
+                                                data-button-style={buttonStyle.text}
+                                                data-button-location={buttonLocation.body}
+                                                data-button-type="cta"
                                             >
                                                 {a.newsTitle}
                                             </a>

@@ -6,7 +6,7 @@ import { Layout, GatedResourceLayout } from '@components'
 export const Guide: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Developer onboarding: How is it unique? | Sourcegraph',
+            title: 'Developer onboarding: How is it unique? - Sourcegraph',
             description:
                 'A guide to understanding how to create a developer onboarding program that differs from general employee onboarding and creates an engaged development team.',
         }}
@@ -16,10 +16,7 @@ export const Guide: FunctionComponent = () => (
             title="Developer onboarding: What makes it unique?"
             subtitle="A guide to creating an effective developer onboarding program"
             formLabel="Download the guide"
-            form={{
-                formId: '25249bac-6544-4f50-9fc0-559745de5334',
-                onFormSubmitted: () => window.open('/guides/sg-dev-onboarding-what-makes-it-unique.pdf'),
-            }}
+            resource="/guides/sg-dev-onboarding-what-makes-it-unique.pdf"
             description={
                 <section className="col-md-6 col-12 pr-lg-6">
                     <p>

@@ -29,3 +29,7 @@ Our series will cover how we do:
 - Customer feedback and technical support
 
 **[Subscribe to email updates](http://eepurl.com/doKVs9)** to get notified when the next posts in the series are published. [Tell us @sourcegraph](https://twitter.com/sourcegraph) if there are other topics you'd like to hear about. We're looking forward to sharing our team's culture and processes!
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

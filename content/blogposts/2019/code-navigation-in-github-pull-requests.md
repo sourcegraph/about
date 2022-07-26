@@ -55,3 +55,7 @@ Next, run a Sourcegraph server yourself to use code navigation for your organiza
 That's it! Now [deploy Sourcegraph for your team](https://docs.sourcegraph.com/admin) so everyone at your organization can use it.
 
 Any other questions? [File an issue](https://github.com/sourcegraph/sourcegraph/issues) or [contact us](https://about.sourcegraph.com/contact).
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

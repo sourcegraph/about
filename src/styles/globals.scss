@@ -149,28 +149,6 @@ body {
     fill: currentColor;
 }
 
-/* Formats an icon so that it appears inline in the text with height matching the text */
-.icon-inline {
-    /* SVGs already include padding to account for text baseline,
-     so align with the bottom of the text */
-    vertical-align: bottom;
-    display: inline-flex;
-    align-items: center;
-}
-svg.icon-inline,
-img.icon-inline,
-.icon-inline svg,
-.icon-inline img {
-    /* TODO find a better way to scale icons that is not proportional to the font size
-     14px font size -> 20px icon size */
-    // stylelint-disable-next-line declaration-property-unit-whitelist
-    width: (20em / 14);
-    // stylelint-disable-next-line declaration-property-unit-whitelist
-    height: (20em / 14);
-    /* Match color of the text */
-    fill: currentColor;
-}
-
 /* ==================== Tables ==================== */
 
 table {
@@ -203,7 +181,6 @@ table tbody + tbody {
 @import 'components/blog/PodcastPost';
 @import 'components/blog/PostsList';
 @import 'components/blog/ReleasePost';
-@import 'components/pricing/index';
 @import 'components/product/EventsSection';
 @import 'components/product/GitLabIntegrationSection';
 @import 'components/product/IntegratesWithSection';
@@ -223,7 +200,6 @@ table tbody + tbody {
 @import 'pages/jobs';
 @import 'pages/landing-page';
 @import 'pages/podcast';
-@import 'pages/pricing';
 @import 'pages/product/code-search-navigation';
 @import 'pages/product/code-change-management';
 @import 'pages/universal-code-search';
@@ -258,6 +234,19 @@ table tbody + tbody {
     font-weight: 600;
     font-size: 1.25em;
     border-bottom-width: 1px;
+}
+
+.tab-header {
+    background-color: transparent;
+    color: $black;
+    font-weight: 600 !important;
+}
+.nav-tabs .nav-link.active {
+    color: $black !important;
+    background-color: transparent !important;
+    @include media-breakpoint-up(md) {
+        border-bottom: solid $vivid-violet 3px;
+    }
 }
 
 /* ==================== Misc ==================== */
@@ -317,6 +306,12 @@ $positions: ('top', 'right', 'bottom', 'left');
     }
 }
 
+/* ==================== Background Images ==================== */
+.bg-code-venus {
+    background-image: url('/bg-images/bg-code-venus.svg');
+    background-size: cover;
+}
+
 /* ==================== Borders ==================== */
 // TODO: On Tailwind migration, trade out these styles for border-x utility classes"
 .border-2 {
@@ -333,7 +328,7 @@ $positions: ('top', 'right', 'bottom', 'left');
 }
 
 /* ==================== Tailwind placeholders ==================== */
-// TODO: After Tailwind migration this class can be deleted
+// TODO: After Tailwind migration these classes can be deleted
 .bg-cover {
     background-size: cover !important;
 }
@@ -344,4 +339,8 @@ $positions: ('top', 'right', 'bottom', 'left');
 
 .overflow-x-auto {
     overflow-x: auto;
+}
+
+.whitespace-pre-line {
+    white-space: pre-line;
 }

@@ -2,6 +2,7 @@ import { FunctionComponent, ReactNode } from 'react'
 
 import classNames from 'classnames'
 
+import { buttonStyle, buttonLocation } from '@data'
 import { TrySourcegraph } from 'components/TrySourcegraph'
 
 import styles from './whitePaperPage.module.scss'
@@ -27,7 +28,16 @@ export const WhitePaperPage: FunctionComponent<Props> = ({ title, className, pdf
                 <span className="d-block mt-1 text-uppercase font-weight-bold">white paper</span>
                 <h1>{title}</h1>
                 {pdf && (
-                    <a href={pdf} className="btn btn-primary mt-4" rel="noreferrer nofollow" target="_blank">
+                    <a
+                        href={pdf}
+                        className="btn btn-primary mt-4"
+                        rel="noreferrer nofollow"
+                        target="_blank"
+                        title="Download PDF"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
                         <i className="fa fa-file-pdf pr-2" />
                         Download PDF
                     </a>

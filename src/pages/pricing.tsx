@@ -2,7 +2,15 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { ContentSection, Layout, PricingPlan, PricingPlanFeature, PricingPlanProperty, Features } from '@components'
+import {
+    ContentSection,
+    Layout,
+    PricingPlan,
+    PricingPlanFeature,
+    PricingPlanProperty,
+    Blockquote,
+    Features,
+} from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 /** The Starter feature set. */
@@ -68,16 +76,15 @@ const PricingPage: FunctionComponent = () => (
         }}
     >
         <div className="text-dark">
-            <div className="pricing-page mt-2">
+            <div className="mt-2">
                 <ContentSection className="hero-section text-center py-5">
                     <h1 className="display-2 font-weight-bold">Sourcegraph Pricing</h1>
                     <h4 className="font-weight-normal pt-2">Self-hosted code intelligence platform</h4>
                 </ContentSection>
-                <div className="container-fluid pricing-page__plans">
+                <div className="container">
                     <div className="row pt-4">
-                        <div className="col-md-6 mx-auto mb-4">
+                        <div className="col-lg-6 mx-auto mb-4">
                             <PricingPlan
-                                className="pricing-page__plan"
                                 name="Free"
                                 price={<div className="text-center">$0/mo</div>}
                                 planProperties={
@@ -98,9 +105,8 @@ const PricingPage: FunctionComponent = () => (
                             />
                         </div>
 
-                        <div className="col-md-6 mx-auto mb-4">
+                        <div className="col-lg-6 mx-auto mb-4">
                             <PricingPlan
-                                className="pricing-page__plan"
                                 name="Enterprise"
                                 price={<div className="text-center">Custom pricing</div>}
                                 planProperties={
@@ -123,49 +129,40 @@ const PricingPage: FunctionComponent = () => (
                     </div>
 
                     <div className="row justify-content-center pt-md-4">
-                        <div className="col-lg-10">
-                            <Link href="/case-studies/lyft-monolith-to-microservices" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a className="pricing-page__quote-link">
-                                    <blockquote className="blockquote text-dark text-center">
-                                        <p className="text-left font-weight-bold border-left border-3 border-vermillion px-4">
-                                            &ldquo;Sourcegraph gives us the ability to search for and refactor
-                                            references to deprecated services, libraries, URL patterns, and more across
-                                            our 2000+ repositories, and the confidence that we're not leaving anyone
-                                            behind.&rdquo;
-                                        </p>
-                                        <small className="text-muted">
-                                            &mdash; Aneesh Agrawal, Software Engineer, Lyft
-                                        </small>
-                                        <img
-                                            src="/external-logos/lyft-logo.svg"
-                                            className="d-block mx-auto my-4"
-                                            width="87px"
-                                            alt="Lyft logo"
-                                        />
-                                    </blockquote>
-                                </a>
-                            </Link>
+                        <div className="col-md-8">
+                            <Blockquote
+                                quote="Sourcegraph gives us the ability to search for and refactor
+                                references to deprecated services, libraries, URL patterns, and more across
+                                our 2000+ repositories, and the confidence that we're not leaving anyone
+                                behind."
+                                author="Aneesh Agrawal, Software Engineer, Lyft"
+                                center={true}
+                                logo={{
+                                    src: '/external-logos/lyft-logo.svg',
+                                    alt: 'Lyft logo: Read the case study',
+                                    href: '/case-studies/criteo-tackles-big-code',
+                                }}
+                            />
                         </div>
                     </div>
 
                     <div className="row pt-4">
                         <div className="col-md-12 mx-auto mb-4">
-                            <div className="pricing-plan pricing-plan--team card">
-                                <h2 className="card-title mt-3 mb-3 pricing-plan__title">Team</h2>
+                            <div className="px-6 card">
+                                <h2 className="my-3 display-2 font-weight-bolder">Team</h2>
 
                                 <div className="row">
-                                    <div className="col-md-6 mx-auto mb-4 pr-5">
+                                    <div className="col-md-6 text-xl mx-auto mb-4 pr-5">
                                         If you have more than 10 users, you can upgrade to the Team plan. This includes
                                         all of the features of the Free plan, plus:
                                     </div>
-                                    <div className="col-md-6 mx-auto mb-4 pl-6">
+                                    <div className="col-md-6 text-xl mx-auto mb-4 pl-md-6">
                                         Contact us to get started with the Team plan.
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="col-md-6 mx-auto mb-4 pr-5">
-                                        <ol className="pricing-plan__features list-group list-group-flush mr-5">
+                                    <div className="col-md-6 mx-auto mb-4">
+                                        <ol className="list-group list-group-flush mr-lg-5">
                                             <PricingPlanFeature
                                                 key="team-feature-1"
                                                 info={{ label: 'Up to 25 users', description: '' }}
@@ -195,8 +192,12 @@ const PricingPage: FunctionComponent = () => (
                                     </div>
                                     <div className="col-md-6 mx-auto mb-4 pl-6">
                                         <a
-                                            className="pricing-plan__button btn btn-outline-primary w-100 mx-auto my-0"
+                                            className="btn btn-outline-primary col-lg-7 col-10 mx-auto my-0"
                                             href="https://info.sourcegraph.com/team-pricing"
+                                            title="Contact us"
+                                            data-button-style={buttonStyle.outline}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
                                         >
                                             Contact us
                                         </a>
@@ -211,33 +212,36 @@ const PricingPage: FunctionComponent = () => (
                         <p>
                             Sourcegraph supports the work of educational organizations and nonprofits.
                             <br />
-                            Please <Link href="/demo">contact us</Link> about discounts for your development teams.
+                            Please{' '}
+                            <Link href="/demo">
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    title="Contact us"
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    contact us
+                                </a>
+                            </Link>{' '}
+                            about discounts for your development teams.
                         </p>
                     </div>
 
                     <hr className="my-4" />
 
                     <div className="row justify-content-center pt-md-4">
-                        <div className="col-lg-10">
-                            <Link href="/case-studies/criteo-tackles-big-code" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a className="pricing-page__quote-link">
-                                    <blockquote className="blockquote text-dark text-center">
-                                        <p className="text-left font-weight-bold border-left border-3 border-vermillion px-4">
-                                            Sourcegraph pays for itself many times over—it's a game changer.
-                                        </p>
-                                        <small className="text-muted">
-                                            &mdash; François Jehl, Senior Engineering Manager, Criteo
-                                        </small>
-                                        <img
-                                            src="/external-logos/criteo-logo.svg"
-                                            className="d-block mx-auto my-4"
-                                            width="156px"
-                                            alt="Criteo logo"
-                                        />
-                                    </blockquote>
-                                </a>
-                            </Link>
+                        <div className="col-md-8">
+                            <Blockquote
+                                quote="Sourcegraph pays for itself many times over—it's a game changer."
+                                author="François Jehl, Senior Engineering Manager, Criteo"
+                                center={true}
+                                logo={{
+                                    src: '/external-logos/criteo-logo.svg',
+                                    alt: 'Criteo logo: Read the case study',
+                                    href: '/case-studies/criteo-tackles-big-code',
+                                }}
+                            />
                         </div>
                     </div>
 
@@ -255,7 +259,7 @@ const PricingPage: FunctionComponent = () => (
                         </p>
                     </div>
                     <div className="col-md-6 pt-3 align-self-center text-center">
-                        <Link href="/get-started" passHref={true}>
+                        <Link href="/get-started/self-hosted" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-primary mx-2 mb-3"

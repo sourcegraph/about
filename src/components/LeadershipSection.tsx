@@ -4,6 +4,8 @@ import GithubIcon from 'mdi-react/GithubIcon'
 import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 
+import { buttonStyle, buttonLocation } from '@data'
+
 const LEADERS: {
     name: string
     image: string
@@ -93,7 +95,13 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
         <div className="row my-5">
             {LEADERS.map(staff => (
                 <div key={`${staff.name.replace(' ', '-').toLowerCase()}`} className="col-lg-4 my-4">
-                    <a href={staff.bio}>
+                    <a
+                        href={staff.bio}
+                        title={`Sourcegraph team: ${staff.name} - ${staff.title}`}
+                        data-button-style={buttonStyle.image}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
                         <img
                             className="max-w-200 rounded-circle mb-4"
                             src={staff.image}
@@ -101,7 +109,14 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                         />
                     </a>
                     <h5>
-                        <a href={staff.bio} className="text-dark">
+                        <a
+                            href={staff.bio}
+                            className="text-dark"
+                            title={staff.name}
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             {staff.name}
                         </a>
                     </h5>
@@ -114,6 +129,10 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                                 rel="nofollow noreferrer"
                                 aria-label="GitHub"
                                 className="text-dark"
+                                title="Github icon"
+                                data-button-style={buttonStyle.image}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
                             >
                                 <GithubIcon />
                             </a>
@@ -125,6 +144,10 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                                 rel="nofollow noreferrer"
                                 aria-label="Twitter"
                                 className="text-dark"
+                                title="Twitter icon"
+                                data-button-style={buttonStyle.image}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
                             >
                                 <TwitterIcon />
                             </a>
@@ -136,6 +159,10 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                                 rel="nofollow noreferrer"
                                 aria-label="LinkedIn"
                                 className="text-dark"
+                                title="Linkedin icon"
+                                data-button-style={buttonStyle.image}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
                             >
                                 <LinkedinIcon />
                             </a>

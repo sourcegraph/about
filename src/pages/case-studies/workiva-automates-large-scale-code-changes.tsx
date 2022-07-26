@@ -2,7 +2,8 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
+import { Layout, CaseStudyLayout, ContentSection, Blockquote } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 export const CaseStudy: FunctionComponent = () => {
     const trentGrover = 'Trent Grover, Director of Architecture, Workiva'
@@ -51,9 +52,10 @@ export const CaseStudy: FunctionComponent = () => {
                             didn't provide end-to-end visibility into the path to completion.
                         </p>
 
-                        <InContentBlockquote
+                        <Blockquote
                             quote="Every time I used [our internal tool], I had to fiddle with something just to get it to work."
                             author="Corwin Sheahan, Senior Software Engineer, Workiva"
+                            center={false}
                         />
 
                         <p>
@@ -62,18 +64,30 @@ export const CaseStudy: FunctionComponent = () => {
                             process, or add the update to their backlog.
                         </p>
 
-                        <InContentBlockquote
+                        <Blockquote
                             quote="We fell into the habit of letting tech debt accumulate to the point where all of the sudden we'd have to bring everything to a screeching halt and do nothing for a month or sprint or even a quarter and clean up tech debt around a certain area. The easier the tooling, the faster we can release breaking changes."
                             author={trentGrover}
+                            center={false}
                         />
 
                         <h2 className="pt-5 pb-1">Automating large-scale updates with Batch Changes</h2>
 
                         <p>
                             As an organization that values paying down tech debt, Workiva's Client Platform team started
-                            using Sourcegraph <Link href="/batch-changes">Batch Changes</Link> to help them efficiently
-                            propagate updates to dependencies across all of their repositories without any ongoing
-                            maintenance. The team has already used Batch Changes to:
+                            using Sourcegraph{' '}
+                            <Link href="/batch-changes" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    title="Batch Changes"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    Batch Changes
+                                </a>
+                            </Link>{' '}
+                            to help them efficiently propagate updates to dependencies across all of their repositories
+                            without any ongoing maintenance. The team has already used Batch Changes to:
                         </p>
 
                         <ul className="mt-3">
@@ -89,9 +103,10 @@ export const CaseStudy: FunctionComponent = () => {
                             </li>
                         </ul>
 
-                        <InContentBlockquote
+                        <Blockquote
                             quote="The fact that Batch Changes runs each step via Docker is super powerful. As long as there's a tool out there that does what you need, you can incorporate it into Batch Changes with minimal effort, and that's been awesome for us."
                             author="Evan Weible, Staff Software Engineer, Workiva"
+                            center={false}
                         />
 
                         <h2 className="pt-5 pb-1">
@@ -105,9 +120,10 @@ export const CaseStudy: FunctionComponent = () => {
                             code changes by 80%.
                         </p>
 
-                        <InContentBlockquote
+                        <Blockquote
                             quote="Updating all of our repositories with Batch Changes saves time, is less error-prone, and gives us confidence that everything is going to plan."
                             author="Joe Bingham, Software Engineer, Workiva"
+                            center={false}
                         />
 
                         <p>
@@ -115,9 +131,10 @@ export const CaseStudy: FunctionComponent = () => {
                             Batch Changes going forward.
                         </p>
 
-                        <InContentBlockquote
+                        <Blockquote
                             quote="Using a tool that isn't maintained by us saves us time and drives better adoption. In comparison to the tool we built internally, it's much easier to work with, more feature complete, and well documented."
                             author="Evan Weible, Staff Software Engineer, Workiva"
+                            center={false}
                         />
                         <br />
                     </div>

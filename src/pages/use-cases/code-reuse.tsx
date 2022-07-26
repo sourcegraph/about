@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 import {
     BackButtonBold,
-    BlockquoteWithBorder,
+    Blockquote,
     BlogResourceItem,
     ContentSection,
     CustomCarousel,
@@ -35,8 +35,18 @@ const items = [
                 text={
                     <p className="py-3">
                         Find out if a teammate has already solved your problem. With{' '}
-                        <Link href="/code-search">Code Search</Link>, you can quickly search across all your
-                        repositories to find the code you need.
+                        <Link href="/code-search" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Search"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Search
+                            </a>
+                        </Link>
+                        , you can quickly search across all your repositories to find the code you need.
                     </p>
                 }
             />
@@ -68,7 +78,18 @@ const items = [
                     <p className="py-3">
                         Spend less time on manual updates. Whether refactoring duplicate code or updating a shared
                         library, automate changes seamlessly across your entire codebase with{' '}
-                        <Link href="/batch-changes">Batch Changes</Link>.
+                        <Link href="/batch-changes" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Batch Changes"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Batch Changes
+                            </a>
+                        </Link>
+                        .
                     </p>
                 }
             />
@@ -82,10 +103,18 @@ const items = [
                 header="Alert for deprecated code use"
                 text={
                     <p className="py-3">
-                        Catch deprecated code as it’s committed with
-                        <a href="https://docs.sourcegraph.com/code_monitoring"> code monitoring</a>. Monitor and get
-                        alerts when someone uses out-of-date libraries or deprecated functions, so you know who to work
-                        with on updates and adoption.
+                        Catch deprecated code as it’s committed with{' '}
+                        <a
+                            href="https://docs.sourcegraph.com/code_monitoring"
+                            title="Code monitoring"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            code monitoring
+                        </a>
+                        . Monitor and get alerts when someone uses out-of-date libraries or deprecated functions, so you
+                        know who to work with on updates and adoption.
                     </p>
                 }
             />
@@ -100,7 +129,19 @@ const items = [
                 text={
                     <p className="py-3">
                         Get visibility into code reuse progress. Track the prevalence of shared code in your codebase
-                        over time with <Link href="/code-insights">Code Insights</Link>..
+                        over time with{' '}
+                        <Link href="/code-insights" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Insights"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Insights
+                            </a>
+                        </Link>
+                        .
                     </p>
                 }
             />
@@ -162,7 +203,7 @@ const blogResourceItems = [
 const CodeReusePage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Code Reuse | Sourcegraph',
+            title: 'Code Reuse - Sourcegraph',
             description:
                 'Find existing code libraries for reuse and avoid spending time on problems a teammate already solved for a more secure and coherent codebase.',
         }}
@@ -194,7 +235,7 @@ const CodeReusePage: FunctionComponent = () => (
                                     </Link>
                                 </div>
                                 <div className="ml-md-3">
-                                    <Link href="/get-started" passHref={true}>
+                                    <Link href="/get-started/self-hosted" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a
                                             className="btn btn-outline-primary w-100 max-w-350"
@@ -242,13 +283,13 @@ const CodeReusePage: FunctionComponent = () => (
                         </ul>
                     </div>
                     <div className="col-lg-5 mt-lg-8 mt-5">
-                        <BlockquoteWithBorder
+                        <Blockquote
+                            headline="FactSet ensures consistency across its entire codebase"
                             quote="If I’m developing code for a library that might draw charts, for example, we don’t want
                             30 different ways to draw a chart at FactSet. With Sourcegraph, I can search the code to
                             find other chart examples, and simply copy the code. This saves us time and ensures
                             consistency."
                             author="Joseph Majesky, Software Engineer at FactSet"
-                            headline="FactSet ensures consistency across its entire codebase"
                             logo={{
                                 src: '/external-logos/factset-logo.svg',
                                 alt: 'Factset',
@@ -292,7 +333,13 @@ const CodeReusePage: FunctionComponent = () => (
                         </Link>
                         <Link href="/use-cases" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="d-flex justify-content-center mt-4 font-weight-bold">
+                            <a
+                                className="d-flex justify-content-center mt-4 font-weight-bold"
+                                title="Explore other use cases"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 Explore other use cases
                             </a>
                         </Link>
@@ -319,10 +366,11 @@ const CodeReusePage: FunctionComponent = () => (
         <ContentSection>
             <div className="text-center">
                 <h2 className="display-3 font-weight-bold mb-6">Make the most of your existing code.</h2>
-                <Link href="/get-started" passHref={true}>
+                <Link href="/get-started/self-hosted" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         className="btn btn-primary"
+                        title="Ready to get started?"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"

@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import { ContentSection } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 interface Props {
     title?: string
@@ -17,7 +18,14 @@ export const RequestDemoForm: FunctionComponent<Props> = ({
         <div className="container text-center pt-6">
             <h3 className="display-3 font-weight-bold">{title}</h3>
             <p>{description}</p>
-            <a href={demoFormURL} className="btn btn-primary mx-2 mb-3" title="Request a demo">
+            <a
+                href={demoFormURL}
+                className="btn btn-primary mx-2 mb-3"
+                title="Request a demo"
+                data-button-style={buttonStyle.primary}
+                data-button-location={buttonLocation.bodyDemo}
+                data-button-type="cta"
+            >
                 Schedule a demo
             </a>
         </div>

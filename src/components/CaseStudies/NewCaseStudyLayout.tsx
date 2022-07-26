@@ -1,11 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import { kebabCase } from 'lodash'
-
-import { CaseStudyJumbotron, ContentSection, RequestDemoTrySourcegraph, BlockquoteWithLogoTop } from '@components'
+import { ContentSection, RequestDemoTrySourcegraph, Blockquote } from '@components'
 
 import { CaseStudyCard, CASESTUDIES } from './CaseStudyCard'
-
 interface Quote {
     text: string
     author: string
@@ -18,64 +15,39 @@ interface Logo {
 
 interface Props {
     customer: string
-    title: string
     logo?: Logo
     quote?: Quote
     pdf?: string
-    heroImage?: string
-    heroLink?: string
-    className?: string
-    titleClassName?: string
     children?: React.ReactNode
 }
 
-export const NewCaseStudyLayout: FunctionComponent<Props> = ({
-    customer,
-    title,
-    logo,
-    quote = null,
-    className = 'case-study',
-    pdf,
-    children,
-}) => {
+export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, logo, quote = null, children }) => {
     // CaseStudy preview list NOT including current CaseStudy page
     const uniqueCaseStudyList = CASESTUDIES.filter(study => study.name !== customer).slice(0, 4)
 
     return (
         <>
-            <div className={`${kebabCase(customer)}-${className} ${className}`}>
-                <CaseStudyJumbotron
-                    className="bg-gradient-saturn-saturated text-black height-md-450 height-auto p-2"
-                    customer={customer}
-                    color="white"
-                >
-                    <h1 className="pt-5 pb-6 display-2 font-weight-bold max-w-600 mx-auto">{title}</h1>
-                    {pdf && (
-                        <a href={pdf} className="btn btn-primary mt-3" rel="nofollow noreferrer" target="_blank">
-                            <i className="fa fa-file-pdf pr-2" />
-                            Download PDF
-                        </a>
-                    )}
-                </CaseStudyJumbotron>
+            {quote && (
+                <ContentSection color="white" className="py-7 max-w-600">
+                    <Blockquote
+                        quote={quote.text}
+                        author={quote.author}
+                        largeText={true}
+                        border={false}
+                        logo={{
+                            src: logo?.img || '',
+                            alt: customer,
+                            href: logo?.href,
+                        }}
+                    />
+                </ContentSection>
+            )}
 
-                {quote && (
-                    <ContentSection color="white" className="py-6 text-center max-w-600">
-                        <BlockquoteWithLogoTop
-                            quote={quote.text}
-                            author={quote.author}
-                            logo={{
-                                src: logo?.img || '',
-                                alt: customer,
-                                href: logo?.href,
-                            }}
-                        />
-                    </ContentSection>
-                )}
+            {children}
 
-                {children}
+            <div className="py-7 bg-code-venus">
+                <RequestDemoTrySourcegraph />
             </div>
-
-            <RequestDemoTrySourcegraph />
 
             <ContentSection color="white" className="py-lg-7 py-5 col-xl-6">
                 <h1 className="pl-5 pb-5 display-3 font-weight-bold">Explore other case studies</h1>

@@ -5,8 +5,9 @@ import { ContentPage, ContentSection, Layout } from '@components'
 const CookiePolicy: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph cookie policy',
-            description: 'About.sourcegraph.com uses cookies.',
+            title: 'Sourcegraph - Cookie Policy',
+            description:
+                'At Sourcegraph, your privacy is important to us. We use cookies to personalize content and ads, to provide social media features and to analyze our traffic.',
         }}
     >
         <ContentPage title="Sourcegraph cookie policy" description="How we use cookies.">

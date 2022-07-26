@@ -4,6 +4,7 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
 import { Layout } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 import { useQueryString } from '@hooks'
 
 import styles from './getStarted.module.scss'
@@ -25,7 +26,13 @@ export const GetStartedPage: FunctionComponent = () => {
     const GetStartedCTA: FunctionComponent<{ href: string }> = ({ href }) => (
         <Link href={routerHook.queryString ? `${href}?${routerHook.queryString}` : href}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a className="btn btn-primary my-2">
+            <a
+                className="btn btn-primary my-2"
+                title="Get started for free"
+                data-button-style={buttonStyle.primary}
+                data-button-location={buttonLocation.trySourcegraph}
+                data-button-type="cta"
+            >
                 Get started for free <ArrowRightIcon />
             </a>
         </Link>
@@ -43,7 +50,7 @@ export const GetStartedPage: FunctionComponent = () => {
                     <h1 className="display-1 mb-2">
                         <strong>What's best for you?</strong>
                     </h1>
-                    <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
+                    <p>From GE to Uber, the world's best developers use Sourcegraph every day.</p>
                 </div>
             }
             heroAndHeaderClassName={styles.hero}
@@ -91,9 +98,12 @@ export const GetStartedPage: FunctionComponent = () => {
                             <p className="mt-3">
                                 Already have a Sourcegraph Cloud account?{' '}
                                 <a
+                                    className="text-reset text-black underline"
                                     href="https://sourcegraph.com/sign-in"
                                     title="Search public code with Sourcegraph Cloud"
-                                    className="text-reset text-black underline"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     Sign in
                                 </a>

@@ -36,3 +36,7 @@ Sourcegraph indexes code at a semantic level, which means it parses and understa
 If you’re an author (or user) of an open source project or library, you should [sign up and index the code on Sourcegraph](https://sourcegraph.com). This lets contributors and users of your libraries search and browse the code on Sourcegraph. These features can help your users save hours by letting them quickly find and understand pieces of code. A single good usage example can be worth a thousand words of documentation. Indexing repositories is free and always will be for open source (and private code).
 
 ### [Start using Sourcegraph!](https://sourcegraph.com)
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

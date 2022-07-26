@@ -85,3 +85,7 @@ Then, as we built from concept to prototype to Beta to General Availability toda
 Code Insights is a core part of our growth this year. More than 1.275 million devs used Sourcegraph over the last 12 months, including many of the world's leading engineering teams, like 3/5 FAANG, Reddit, Uber, GE, PayPal, and Dropbox. Those teams first came to Sourcegraph for Code Search, which remains foundational to everything we do as we’ve expanded our product with Code Insights and [Batch Changes](https://about.sourcegraph.com/blog/introducing-batch-changes/).
 
 As we look ahead in 2022, we’re working on more ways to leverage search across Sourcegraph and give developers a more complete understanding of their codebase—so they can secure vulnerabilities, resolve incidents faster, automate key workflows, and ultimately do their best work.
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

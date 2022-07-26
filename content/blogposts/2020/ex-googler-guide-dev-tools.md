@@ -14,7 +14,7 @@ socialImage: /blog/exgoogler-campfire.jpg
 published: true
 ---
 
-Many years ago, I did a brief stint at Google–yes, I’m an ex-Googler or Xoogler. A lot has changed since then, but even that brief exposure to Google's internal tools left a lasting impression on me. In many ways, the dev tools inside Google are the most advanced in the world. Google has been a pioneer not only in scaling their own software systems but in figuring out how to build software effectively at scale. They've dealt with issues related to codebase volume, code discoverability, organizational knowledge sharing, and multi-service deployment at a level of sophistication that most other companies have not yet reached. (For reference, see <a href="https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791" rel="nofollow" target="_blank">Software Engineering at Google</a>.)
+Many years ago, I did a brief stint at Google. A lot has changed since then, but even that brief exposure to Google's internal tools left a lasting impression on me. In many ways, the dev tools inside Google are the most advanced in the world. Google has been a pioneer not only in scaling their own software systems but in figuring out how to build software effectively at scale. They've dealt with issues related to codebase volume, code discoverability, organizational knowledge sharing, and multi-service deployment at a level of sophistication that most other companies have not yet reached. (For reference, see <a href="https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791" rel="nofollow" target="_blank">Software Engineering at Google</a>.)
 
 <Figure 
   src="/blog/exgoogler-campfire.jpg"
@@ -50,7 +50,7 @@ At every stage in this process, there is typically a tool that anchors the devel
 |-----------------------------------------------------|--------------------|------------------------------|
 | Identify feature or bug                             | Issue Tracker       | GitHub issues, Jira         |
 | Read code                                           | Code search        | Your editor, <a href="https://oracle.github.io/opengrok/" rel="nofollow" target="_blank">OpenGrok</a>, <a href="https://github.com/hound-search/hound" rel="nofollow" target="_blank">Hound</a>, [Sourcegraph](https://about.sourcegraph.com)   |
-| Write code                                          | Critique, IntelliJ, Emacs, Vim, VS Code    | Everything except Critique      |
+| Write code                                          | Cider, IntelliJ, Emacs, Vim, VS Code    | Same, except no Cider <br /> *(Editor's update: since publication, Cloud IDEs like Gitpod and Codespaces have gained more traction)*      |
 | Test code                                           | Blaze              | A bit of the Wild West, but <a href="https://bazel.build/" rel="nofollow" target="_blank">Bazel</a> is gaining traction      |
 | Review code                                         | Critique           | <a href="http://github.com/" rel="nofollow" target="_blank">GitHub</a> PRs, <a href="https://www.gerritcodereview.com/" rel="nofollow" target="_blank">Gerrit</a>, <a href="https://www.phacility.com/phabricator/" rel="nofollow" target="_blank">Phabricator</a>, <a href="https://reviewable.io/" rel="nofollow" target="_blank">Reviewable</a>     |
 | Deployment                                          | Borg               | <a href="https://kubernetes.io/" rel="nofollow" target="_blank">Kubernetes</a>   |
@@ -90,7 +90,7 @@ Here are the common code search engines we've seen in use:
 * <a href="https://oracle.github.io/opengrok/" rel="nofollow" target="_blank">OpenGrok</a>: a fairly old but persistent code search engine now maintained by Oracle
 * <a href="https://github.com/hound-search/hound" rel="nofollow" target="_blank">Hound</a>: a code search engine created and open-sourced by engineers at Etsy
 * <a href="https://livegrep.com/search/linux" rel="nofollow" target="_blank">Livegrep</a>: a code search engine created by Nelson Elhage at Stripe
-* And of course, [Sourcegraph](https://about.sourcegraph.com/get-started)
+* And of course, [Sourcegraph](https://about.sourcegraph.com/get-started/self-hosted)
 
 ## Get good monitoring
 
@@ -161,7 +161,7 @@ Building software at scale is hard. As everyone who has read <a href="https://en
 &nbsp;
 <hr/>
 
-**Try out Sourcegraph.** Get started searching your code by [self-hosting Sourcegraph](https://about.sourcegraph.com/get-started/) – free up to 10 users. Or try [Sourcegraph Cloud](https://sourcegraph.com/search) to easily search public, open source code.  
+**Try out Sourcegraph.** Get started searching your code by [self-hosting Sourcegraph](https://about.sourcegraph.com/get-started/self-hosted) – free up to 10 users. Or try [Sourcegraph Cloud](https://sourcegraph.com/search) to easily search public, open source code.  
 
 Please feel free to ask us questions either via posting on Twitter[@sourcegraph](https://twitter.com/sourcegraph) or sending an email to [hi@sourcegraph.com](mailto:hi@sourcegraph.com).
 

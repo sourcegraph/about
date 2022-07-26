@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
 
-import { NavLink } from './navLinks'
+import { NavLink } from '../navLinks'
 
 interface Props {
     navLinks: NavLink[]
@@ -28,16 +28,16 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                     navLink.items.length === 1 ? (
                         navLink.items.map(item =>
                             item.href.includes('http') ? (
-                                <li
-                                    className="nav-item"
-                                    role="presentation"
-                                    key={item.title}
-                                >
+                                <li className="nav-item" role="presentation" key={item.title}>
                                     <a
                                         className="nav-link"
                                         href={item.href}
                                         target="_blank"
                                         rel="noreferrer"
+                                        title={item.title}
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.nav}
+                                        data-button-type="cta"
                                     >
                                         {item.title}
                                     </a>
@@ -46,7 +46,15 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                                 <li className="nav-item" role="presentation" key={camelCase(item.title)}>
                                     <Link href={item.href}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a className="nav-link">{item.title}</a>
+                                        <a
+                                            className="nav-link"
+                                            title={item.title}
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.nav}
+                                            data-button-type="cta"
+                                        >
+                                            {item.title}
+                                        </a>
                                     </Link>
                                 </li>
                             )
@@ -74,7 +82,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                                 tabIndex={0}
                             >
                                 {navLink.section}
-                                <ChevronDownIcon className="icon-inline ml-1" />
+                                <ChevronDownIcon className="ml-1" />
                             </span>
                             <ul
                                 id={navLink.section.split(' ').join('-').toLowerCase() + '-menu'}
@@ -85,13 +93,31 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                                 {navLink.items.map(item =>
                                     item.href.includes('http') ? (
                                         <li key={camelCase(item.title)} className="nav-link" role="presentation">
-                                            <a href={item.href} target="_blank" rel="noreferrer">
+                                            <a
+                                                href={item.href}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                title={item.title}
+                                                data-button-style={buttonStyle.text}
+                                                data-button-location={buttonLocation.nav}
+                                                data-button-type="cta"
+                                            >
                                                 {item.title}
                                             </a>
                                         </li>
                                     ) : (
                                         <li key={camelCase(item.title)} className="nav-link" role="presentation">
-                                            <Link href={item.href}>{item.title}</Link>
+                                            <Link href={item.href} passHref={true}>
+                                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                                <a
+                                                    title={item.title}
+                                                    data-button-style={buttonStyle.text}
+                                                    data-button-location={buttonLocation.nav}
+                                                    data-button-type="cta"
+                                                >
+                                                    {item.title}
+                                                </a>
+                                            </Link>
                                         </li>
                                     )
                                 )}
@@ -103,6 +129,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                     <a
                         className="nav-link"
                         href="https://sourcegraph.com/sign-in"
+                        title="Sign in"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.nav}
                         data-button-type="cta"
@@ -116,6 +143,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                         <a
                             className="nav-link"
                             href="https://sourcegraph.com/search"
+                            title="Search code"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.nav}
                             data-button-type="cta"
@@ -129,6 +157,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
                             className="nav-link"
+                            title="Request a demo"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.nav}
                             data-button-type="cta"
@@ -143,6 +172,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="nav-link"
+                                title="Get started"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.nav}
                                 data-button-type="cta"

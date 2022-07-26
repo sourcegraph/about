@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
+import { Layout, CaseStudyLayout, ContentSection, Blockquote } from '@components'
 
 export const CaseStudy: FunctionComponent = () => {
     const terinStock = 'Terin Stock, Systems Engineer'
@@ -45,10 +45,11 @@ export const CaseStudy: FunctionComponent = () => {
                             including spaces, were completely ignored and there was no way to filter results based on
                             file types, folder names, or code logic.
                         </p>
-                        <InContentBlockquote
+                        <Blockquote
                             quote="We were trying to answer questions like who was using specific dependencies and different libraries and where are 
                             these lines of code or log lines coming from. We needed to be able to search thousands of repos to find them."
                             author={terinStock}
+                            center={false}
                         />
 
                         <p>
@@ -107,12 +108,13 @@ export const CaseStudy: FunctionComponent = () => {
                             address security risks and root-cause incidents.
                         </p>
 
-                        <InContentBlockquote
+                        <Blockquote
                             quote="When a potential security issue comes up, I often have to go into another engineer's project to quickly 
                                     understand how the code works to understand the critical functions, where the data is flowing, what sort
                                     of controls or checks are happening. With Sourcegraph, I can jump into another engineer's project and 
                                     quickly explore and better understand the code faster."
                             author="David Haynes, Security Engineer"
+                            center={false}
                         />
 
                         <p>
