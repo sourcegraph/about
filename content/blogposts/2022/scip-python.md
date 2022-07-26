@@ -89,7 +89,7 @@ src lsif upload
 ```
 For more information, please see the [scip-python](https://github.com/sourcegraph/scip-python) repository.
 
-## Projects Ready To Explore On Sourcegraph.com
+## Projects ready to explore on Sourcegraph.com
 
 We are currently indexing the following projects with `scip-python`:
 - [textualize/rich](https://sourcegraph.com/github.com/Textualize/rich)
@@ -108,7 +108,7 @@ The indexing performance is varied across codebases, particularly depending on t
 | Rich       | 18923         | 10                    | 1892        |
 | Pre-commit | 4801          | 5                     | 960         |
 
-## Get started with scip-python today!
+## scip-python is available today
 
 Scip-python is available publicly today. If you’re a Sourcegraph user, you can implement scip-python to enable precise code navigation for your Python repositories. 
 
