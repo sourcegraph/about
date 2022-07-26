@@ -200,16 +200,18 @@ The `Video` component supports .mp4 and .webm files. First, upload the two versi
 
 ### HubSpot Form Example
 
-Use the `HubSpotForm` component to drop a custom HubSpot form into your post. In most cases, the `formId` is the only property that needs to be updated. This is the same `formId` dictated by the HubSpot console. Once added to your post, the HubSpot form will render wherever you place the `div` using the specified `id` value.
+Use the `HubSpotForm` component to drop a custom HubSpot form into your post. In most cases, the `masterFormName` and `chiliPiper` props are the only properties that need to be updated. Once added to your post, the HubSpot form will render in its place. All the options for this component are:
 
-<HubSpotForm 
-  portalId='2762526' 
-  formId='08e6c442-0e7c-4892-a262-76dae55ab497' 
-  targetId='#sign-up-form'
+- `formId` - an optional form ID if the form doesn't fall under one of our [master forms](https://docs.google.com/document/d/1qa393uAW_tjwNtH9jHf_d__PCJgmbsxNoxi9cO4XOcE/edit)
+- `masterFormName` - an optional master form name; `contactMulti`, `contactEmail`, `gatedMulti`, or `gatedEmail` for general contact forms and gated forms that have multi fields or an email field
+- `onFormSubmitted` - an optional callback function for triggering an action after a form is submitted
+- `inlineMessage` - an optional message to display after a form is submitted. We have a [generic fallback](https://github.com/sourcegraph/about/blob/main/src/components/HubSpotForm.tsx#L288) if none is provided. 
+- `chiliPiper` - an optional boolean (`true`/`false`) to enable Chili Piper. This is false by default.
+
+<HubSpotForm
+  masterFormName="contactEmail"
+  chiliPiper={true}
 />
-
-<div id="sign-up-form"></div>
-
 
 ## Code
 
