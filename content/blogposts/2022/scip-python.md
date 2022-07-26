@@ -37,6 +37,10 @@ Some of the key features of `scip-python` include:
 
 ### Correctness
 
+`pyright` supports a very impressive list of features. `scip-python` was implemented with very few changes (primarily just exposing some internal functions) to the `pyright` library, which allows `scip-python` to take full advantage of the type checking and semantic analysis available in the `pyright` library -- including new Python features as they are supported.
+
+### Cross-repository navigation
+
 When `scip-python` is run in a Python environment with your dependencies available it will generate stable references to your dependencies. For example, if you were using the `PyYAML` package’s `format` function for the 6.0 release, `scip-python` would generate a symbol value of:
 
 <pre>> scip-python python PyYAML 6.0 yaml/dump().</pre>
