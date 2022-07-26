@@ -17,7 +17,7 @@ We believe that great code search is an essential solution for all software deve
 
 Over the last year, we’ve invested heavily in developing a managed version of Sourcegraph. This will enable more teams—including the teams that are not able to host their own code search solution—to access a full-featured code intelligence platform.
 
-We invested in managed Sourcegraph in two ways. First, we expanded Sourcegraph.com. This site is a massive, multi-tenant instance of Sourcegraph, originally built as a way to search open source code. We pushed the scale of Sourcegraph.com in several ways: 
+We invested in managed Sourcegraph in two ways. First, we expanded [Sourcegraph.com](https://sourcegraph.com/). This site is a massive, multi-tenant instance of Sourcegraph, originally built as a way to search open source code. We pushed the scale of Sourcegraph.com in several ways: 
 - We indexed millions of open source repositories across multiple code hosts and made them searchable.
 - We launched a beta allowing users to add their own public and private repositories.
 - We launched a second beta allowing teams to use Sourcegraph.com collaboratively.
