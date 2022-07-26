@@ -236,15 +236,18 @@ Add links with an anchor tag as you usually would:
   <a href="https://www.sourcegraph.com/search">Check out Sourcegraph Search!</a>
 </div>
 
-If you are wrapping an image in a link, please include a `title` on the anchor tag for accessibility, this way screen readers can pick up all the content.
+Instead of linking images, please link the image's caption. This will allow our Figure components to be more accessible to screen readers. To add a link to an image, provide a `caption` and `link` property to the `Figure` component.
 
-<a href="https://www.sourcegraph.com/search" title="Go to Sourcegraph Code Search">
-  <Figure 
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png"
-    alt="Sourcegraph thumbnail"
-  />
-</a>
+<Figure 
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png"
+  alt="Sourcegraph thumbnail"
+  caption="Check out Sourcegraph Search!"
+  link="https://www.sourcegraph.com/search"
+/>
 
+## About the author
+
+_Author blurb information goes here. You can chat with [author] on Twitter [@author-name](https://twitter.com/) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._
 
 ## TrySourcegraph CTA
 
