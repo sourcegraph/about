@@ -37,8 +37,9 @@ export const CodeSearchPage: FunctionComponent = () => (
                 reverseOnMobile={true}
                 leftColumn={
                     <Video
-                        mp4="/animations/code-search.mp4"
-                        webm="/animations/code-search.webm"
+                        host="self"
+                        mp4="/animations/code-search"
+                        webm="/animations/code-search"
                         title="Sourcegraph Code Search"
                         caption="Sourcegraph Code Search"
                         loop={true}
@@ -135,8 +136,9 @@ export const CodeSearchPage: FunctionComponent = () => (
                 }
                 rightColumn={
                     <Video
-                        mp4="/animations/code-intel.mp4"
-                        webm="/animations/code-intel.webm"
+                        host="self"
+                        mp4="/animations/code-intel"
+                        webm="/animations/code-intel"
                         title="Sourcegraph Code Intelligence"
                         caption="Sourcegraph Code Intelligence"
                         loop={true}
@@ -150,8 +152,9 @@ export const CodeSearchPage: FunctionComponent = () => (
                 reverseOnMobile={true}
                 leftColumn={
                     <Video
-                        mp4="/animations/notebooks.mp4"
-                        webm="/animations/notebooks.webm"
+                        host="self"
+                        mp4="/animations/notebooks"
+                        webm="/animations/notebooks"
                         title="Sourcegraph Notebooks"
                         caption="Sourcegraph Notebooks"
                         loop={true}
