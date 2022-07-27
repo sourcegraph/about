@@ -70,7 +70,7 @@ To set the thumbnails for this post, link to an image file using `socialImage` a
 
 ## Components
 
-The Sourcegraph Blog is implemented in Next.js and MDX. One strength of this implementation is the ability to incorporate components in Markdown. The following components are available for blog posts:
+The Sourcegraph Blog is implemented with Next.js with MDX support. One strength of this implementation is the ability to incorporate our custom components in Markdown. The following components are available for blog posts:
 
 1. Alert
 2. Blockquote
