@@ -144,7 +144,7 @@ I first heard this saying from my (previous) manager [Rafal Leszczynski](https:/
 
 Come up with a communication plan, pull in stakeholders, provide context, be clear about the things to ask for, set expectations, and propose a deadline. Reaching consensus isn’t always possible, but it’s important to make people feel heard with their feedback.
 
-Individuals and teams make decisions all the time. While moving fast, be mindful of [reversible and irreversible decisions](https://fs.blog/reversible-irreversible-decisions/#:~:text=Reversible%20decisions%20are%20doors%20that,the%20invested%20time%20and%20resources).). If something isn’t reversible, or the cost is too high to reverse it, it doesn’t hurt to give it a second review before getting buy-in from leadership.
+Individuals and teams make decisions all the time. While moving fast, be mindful of [reversible and irreversible decisions](https://fs.blog/reversible-irreversible-decisions/#:~:text=Reversible%20decisions%20are%20doors%20that,the%20invested%20time%20and%20resources). If something isn’t reversible, or the cost is too high to reverse it, it doesn’t hurt to give it a second review before getting buy-in from leadership.
 
 ### Transparency and sense of safety
 
