@@ -66,6 +66,8 @@ At the moment, auto-indexing is supported for Go, TypeScript, JavaScript and Pyt
 
 ## Get started with auto-indexing
 
-Auto-indexing is now available in beta for all Sourcegraph customers, starting at version 3.42. If you’re already using Sourcegraph Self-hosted and on version 3.42 or later, you can [read about setting up auto-indexing in the docs](https://docs.sourcegraph.com/code_intelligence/explanations/auto_indexing). We also provide experimental support for executors on Sourcegraph Cloud. If you’re a Sourcegraph Cloud customer, you can reach out to your CE to get auto-indexing turned on for your instance.
+Auto-indexing is now available in beta for all Sourcegraph customers, starting at version 3.42. If you’re already using Sourcegraph Self-hosted and on version 3.42 or later, you can [read about setting up auto-indexing in the docs](https://docs.sourcegraph.com/code_intelligence/explanations/auto_indexing). 
+
+We also provide experimental support for executors on Sourcegraph Cloud. If you’re a Sourcegraph Cloud customer, you can reach out to your CE to get auto-indexing turned on for your instance.
 
 If you’re not already a Sourcegraph customer, you can [get in touch with our team for a demo](https://about.sourcegraph.com/demo).
