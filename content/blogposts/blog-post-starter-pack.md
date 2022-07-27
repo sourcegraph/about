@@ -77,7 +77,7 @@ The Sourcegraph Blog is implemented with Next.js with MDX support. One strength 
 3. Figure
 4. TableWrapper
 5. Video
-6. YouTube
+6. YouTube, and;
 7. HubSpotForm
 
 Use these components to bring our blog post to life. Here are a few examples:
