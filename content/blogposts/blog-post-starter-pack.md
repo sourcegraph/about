@@ -191,7 +191,11 @@ The `id` value is found at the end of the URL for any YouTube video.
 
 ### Video
 
-The `Video` component supports .mp4 and .webm files. First, upload the two versions of the video to Google Cloud. Then, add the root names of these files to the `source` property, without including their extensions. You can choose to repeat a video by including the `loop` property, or display the caption using the `showCaption` property.
+The required properties for the `Video` component are `mp4`, `webm`, `loop`, `caption`, and `title`. 
+
+Since the component supports both `.mp4` and `.webm` files, you'll need to upload the two versions of the video to our Google Cloud [assets bucket](https://console.cloud.google.com/storage/browser/sourcegraph-assets/blog) under an appropriate sub directory. Then, add the file path from the Public URL of these files to the `mp4` and `webm` properties without their file extensions.
+
+You can choose to repeat a video by including the `loop` property, optionally auto play the video by including the `autoPlay` property, or optionally display the caption using the `showCaption` property.
 
 <Video 
   mp4="/blog/shift-left/01-code-reuse"
