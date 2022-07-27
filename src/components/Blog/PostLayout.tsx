@@ -99,7 +99,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                     <MDXRemote {...content} components={components as PostComponents} />
                 </div>
 
-                <TrySourcegraph />
+                <TrySourcegraph className="px-0 justify-content-between" />
             </div>
         )}
     </Tag>
