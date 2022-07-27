@@ -30,7 +30,10 @@ export const Blockquote: FunctionComponent<{
     inline?: boolean
 }> = ({ quote, author, logo, link, headline, largeText = false, border = true, borderColor }) => (
     <blockquote
-        className={classNames(border && 'border-left border-3', border && borderColor ? `border-vivid-${borderColor}` : 'border-vivid-violet')}
+        className={classNames(
+            border && 'border-left border-3',
+            border && borderColor ? `border-vivid-${borderColor}` : 'border-vivid-violet'
+        )}
     >
         {headline ? (
             largeText ? (
