@@ -241,7 +241,7 @@ Add links with an anchor tag as you usually would:
   <a href="https://www.sourcegraph.com/search">Check out Sourcegraph Search!</a>
 </div>
 
-Instead of linking images, please link the image's caption. This will allow our Figure components to be more accessible to screen readers. To add a link to an image, provide a `caption` and `link` property to the `Figure` component.
+Instead of linking images using Markdown, please use the Figure component. This will allow our images to be more accessible to screen readers. To add a link to an image, provide a `caption` and `link` property to the `Figure` component.
 
 <Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png"
