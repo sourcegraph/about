@@ -194,7 +194,8 @@ The `id` value is found at the end of the URL for any YouTube video.
 The `Video` component supports .mp4 and .webm files. First, upload the two versions of the video to Google Cloud. Then, add the root names of these files to the `source` property, without including their extensions. You can choose to repeat a video by including the `loop` property, or display the caption using the `showCaption` property.
 
 <Video 
-  source={{webm: 'blog/shift-left/01-code-reuse', mp4: 'blog/shift-left/01-code-reuse'}} 
+  mp4="/blog/shift-left/01-code-reuse"
+  webm="/blog/shift-left/01-code-reuse"
   loop={true}
   title="Code reuse"
   caption="An example of code search with Sourcegraph"
