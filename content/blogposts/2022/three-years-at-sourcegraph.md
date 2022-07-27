@@ -3,7 +3,7 @@ title: 'Three years at Sourcegraph as a software engineer'
 authors:
   - name: Joe Chen
     url: https://twitter.com/jc_unknwon
-publishDate: 2022-07-27T10:00-07:00
+publishDate: 2022-07-28T10:00-07:00
 description: 'Joe Chen is a Sourcegraph Software Engineer and the creator of Gogs, a painless self-hosted Git service. This is his story.”'
 tags: [blog]
 slug: 'three-years-at-sourcegraph'
