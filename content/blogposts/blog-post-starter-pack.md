@@ -27,44 +27,68 @@ To start a new blog post, create a new `[slug].md` file under the current year's
 
 ## Frontmatter
 
-At the top of this Markdown file is a section called `frontmatter`. These properties configure the post metadata. 
+This section is called `frontmatter` and it provides the post's metadata.
 
 ```json
 ---
 title: Blog Post Starter Pack
 description: This is a template for writing content for the Sourcegraph blog!
 authors:
-  - name: Sourcegraph
-    url: https://twitter.com/sourcegraph
+  - name: The author name
+    url: https://example.com/
+  - name: Second authors name (optional)
+    url: https://example-2.com/
 publishDate: 2022-07-01T18:00+02:00
 tags: [blog]
 slug: starter-pack
 published: true
+heroImage: /blog/thumbnail-image.jpg
+socialImage: Use to set large social image i.e.  https://about.sourcegraph.com/blog/sourcegraph-social-img.png
+canonical: Use to override the canonical link i.e. https://www.fastcompany.com/90565930/im-deaf-and-this-is-what-happens-when-i-get-on-a-zoom-call
+videoID: 'dQw4w9WgXcQ'
 ---
+
+Your markdown content goes here
 ```
 
-### `title` & `description`
+##### `title` & `description`
 
 The `title` will automatically appear at the top of your post. The description will appear on the published list of posts at `/blog`.
 
-### `slug`
-
-Determine a unique URL for your post using the `slug`. For example, `slug: my-blog-post` will set the URL to `/blog/my-blog-post`.
-
-### `author`
+##### `author`
 
 Blog posts support multiple authors using [YAML syntax](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html#yaml-syntax). Add another author using `- name`.
 
-### `published`
+##### `publishDate`
+
+The `publishDate` field must be in the exact format above. Don't worry about the time, just change the date.
+
+##### `tags`
+
+The `tags` field should be left as blog until we incorporate filtering posts via tags.
+
+##### `slug`
+
+Determine a unique URL for your post using the `slug`. For example, `slug: my-blog-post` will set the URL to `/blog/my-blog-post`.
+
+##### `published`
 
 A post with `published: true` will appear in the list of published posts at `/blog`. To unpublish a post, set `published: false`.
 
-### `socialImage` & `heroImage`
+##### `socialImage` & `heroImage`
 
 To set the thumbnails for this post, link to an image file using `socialImage` and `heroImage`. By default, blog posts use the Sourcegraph OG image. Using these properties in the frontmatter overrides the default. 
 
 - `socialImage` determines the image appearing on shareable links
 - `heroImage` determines the cover image appearing on `/blog`
+
+##### `canonical`
+
+The `canonical` field is optional and only required to override the canonical link. Important for cross-posting blogs from personal blogs or published news sites. By default, set to `https://about.sourcegraph.com/blog/the-blog-slug`.
+
+##### `videoID`
+
+The `videoID` field is an optional YouTube video ID and will take priority even if the `socialImage` is present. This will generate an inline video preview card when sharing on social media. This is supported for all types of posts; blog, podcast, and release posts.
 
 <hr/>
 
