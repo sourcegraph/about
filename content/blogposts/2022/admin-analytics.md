@@ -1,10 +1,10 @@
 ---
 title: "Understand the value of Sourcegraph with admin analytics"
-description: "Sourcegraph’s new admin analytics make it easier for administrators to understand user engagement, measure efficiencies, and quantify the value of Sourcegraph."
+description: "Sourcegraph’s new admin analytics make it easier for admins to understand user engagement, measure efficiencies, and quantify the value of Sourcegraph."
 authors:
   - name: Rob Rhyne
     url: https://twitter.com/robrhyne
-publishDate: 2022-07-26T18:00+02:00
+publishDate: 2022-07-27T18:00+02:00
 tags: [blog]
 slug: admin-analytics
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/admin-analytics/Admin_Analytics_Blog.png
@@ -16,7 +16,7 @@ Sourcegraph was created to improve developer efficiency. By providing the abilit
 
 Delivering that efficiency to end users requires talented and dedicated admins who also deserve great tools. In recognition, we’ve recently taken on the goal of building a world-class product admin experience and we’re excited to release improved admin analytics to help admins understand the value of Sourcegraph. 
 
-![Admin analytics](https://storage.googleapis.com/sourcegraph-assets/blog/admin-analytics/Admin_Analytics_Blog.png)
+![Screenshot of the admin analytics page in Sourcegraph](https://storage.googleapis.com/sourcegraph-assets/blog/admin-analytics/Admin_Analytics_Blog.png)
 
 Our new analytics feature will make it easier for admins to do three main things: understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. Admins will be able to quickly see how many searches have been run, the number of users who have done so, the usage of code navigation across several key use cases, and other feature-level data. We’ve also made it easy to calculate the developer time saved by each feature and give admins the flexibility to determine that calculation for themselves.  
 
@@ -37,7 +37,7 @@ All charts feature a date range selector and a toggle to allow users to view the
 
 The feature value calculators use data derived from the event logs and are designed to allow users to edit the default time-saved values. We’ve designed it in this way to allow users to adjust to conditions in their environment. 
 
-![Time saved calculator](https://storage.googleapis.com/sourcegraph-assets/blog/admin-analytics/time-saved-calculator.png)
+![Sreenshot of the time saved calculator](https://storage.googleapis.com/sourcegraph-assets/blog/admin-analytics/time-saved-calculator.png)
 
 Additionally, we are calculating the daily, weekly, and monthly active users and displaying the average days used. These metrics should help admins determine the level of adoption among users. 
 
