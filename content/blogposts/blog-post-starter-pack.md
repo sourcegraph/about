@@ -53,7 +53,7 @@ Determine a unique URL for your post using the `slug`. For example, `slug: my-bl
 
 ### `author`
 
-Blog posts support multiple authors. Add another author using `- name`.
+Blog posts support multiple authors using [YAML syntax](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html#yaml-syntax). Add another author using `- name`.
 
 ### `published`
 
