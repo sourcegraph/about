@@ -41,7 +41,7 @@ Some of the key features of `scip-python` include:
 
 ### Cross-repository navigation
 
-When `scip-python` is run in a Python environment with your dependencies available it will generate stable references to your dependencies. For example, if you were using the `PyYAML` package’s `format` function for the 6.0 release, `scip-python` would generate a symbol value of:
+When `scip-python` is run in a Python environment with your dependencies available it will generate stable references to your dependencies. For example, if you were using the `PyYAML` package’s `dump` function for the 6.0 release, `scip-python` would generate a symbol value of:
 
 <pre>> scip-python python PyYAML 6.0 yaml/dump().</pre>
 
