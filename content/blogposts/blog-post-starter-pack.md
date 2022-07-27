@@ -49,7 +49,7 @@ The `title` will automatically appear at the top of your post. The description w
 
 ### `slug`
 
-Determine the URL for your post using the `slug`. For example, `slug: my-blog-post` will set the URL to `/blog/my-blog-post`.
+Determine a unique URL for your post using the `slug`. For example, `slug: my-blog-post` will set the URL to `/blog/my-blog-post`.
 
 ### `author`
 
