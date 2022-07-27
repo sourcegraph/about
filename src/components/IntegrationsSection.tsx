@@ -102,9 +102,7 @@ export const IntegrationsSection: FunctionComponent = () => (
             <div className="col-lg-6 mb-5">
                 <h3 className="h5 font-weight-bold">All your repositories + 2M open source (and counting)</h3>
 
-                <ul className="list-inline d-inline-flex flex-wrap">
-                    {renderListItems(codeHosts)}
-                </ul>
+                <ul className="list-inline d-inline-flex flex-wrap">{renderListItems(codeHosts)}</ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     className="text-primary"
@@ -120,9 +118,7 @@ export const IntegrationsSection: FunctionComponent = () => (
             <div className="col-lg-6 mb-5">
                 <h3 className="h5 font-weight-bold">All your languages</h3>
 
-                <ul className="list-inline d-inline-flex flex-wrap">
-                    {renderListItems(languages)}
-                </ul>
+                <ul className="list-inline d-inline-flex flex-wrap">{renderListItems(languages)}</ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     className="text-primary"
@@ -138,9 +134,7 @@ export const IntegrationsSection: FunctionComponent = () => (
             <div className="col-lg-6 mb-5">
                 <h3 className="h5 font-weight-bold">All your tools</h3>
 
-                <ul className="list-inline d-inline-flex flex-wrap">
-                    {renderListItems(tools)}
-                </ul>
+                <ul className="list-inline d-inline-flex flex-wrap">{renderListItems(tools)}</ul>
                 <a
                     href="https://docs.sourcegraph.com/integration"
                     className="text-primary"

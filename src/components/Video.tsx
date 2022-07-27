@@ -1,8 +1,8 @@
 import { FunctionComponent } from 'react'
 
 interface Video {
-    mp4: string,
-    webm: string,
+    mp4: string
+    webm: string
     loop: boolean
     showCaption?: boolean
     caption: string
@@ -35,16 +35,8 @@ export const Video: FunctionComponent<Video> = ({
             // GCS does not set cookies, so we don't want Cookiebot to block this video based on consent
             data-cookieconsent="ignore"
         >
-            <source
-                type="video/mp4"
-                src={mp4}
-                data-cookieconsent="ignore"
-            />
-            <source
-                type="video/webm"
-                src={webm}
-                data-cookieconsent="ignore"
-            />
+            <source type="video/mp4" src={mp4} data-cookieconsent="ignore" />
+            <source type="video/webm" src={webm} data-cookieconsent="ignore" />
             {caption && caption}
         </video>
         {showCaption && <figcaption>{caption}</figcaption>}
