@@ -81,6 +81,14 @@ const tools: string[] = [
     'SonarQube',
 ]
 
+const selfHostedOptions: string[] = [
+    'Kubernetes cluster',
+    'Amazon EKS or EC2',
+    'Google GKE',
+    'Microsoft Azure AKS',
+    'Docker Compose',
+]
+
 const renderListItems = (items: string[]): ReactNode =>
     items.map((item: string) => (
         <li key={item} className="list-inline-item my-2 mr-2">
@@ -153,16 +161,12 @@ export const IntegrationsSection: FunctionComponent = () => (
                 <ul className="list-inline d-inline-flex flex-wrap">
                     <li className="list-inline-item text-wrap">
                         <h6 className="font-weight-normal">Self-hosted by you:</h6>
-                        <code className="border rounded px-1">Kubernetes cluster</code>{' '}
-                        <code className="border rounded px-1">Amazon EKS or EC2</code>{' '}
-                        <code className="border rounded px-1">Google GKE</code>{' '}
-                        <code className="border rounded px-1">Microsoft Azure AKS</code>{' '}
-                        <code className="border rounded px-1">Docker Compose</code>{' '}
+                        {renderListItems(selfHostedOptions)}
                     </li>
 
                     <li className="list-inline-item text-wrap">
                         <h6 className="font-weight-normal mt-3">Managed and hosted by us:</h6>
-                        <code className="border rounded px-1">Docker Compose in GCP</code>
+                        {renderListItems(['Docker Compose in GCP'])}
                     </li>
                 </ul>
                 <a
