@@ -264,5 +264,5 @@ Note: A footer that includes the "Try Sourcegraph" CTA is automatically included
 
 ## Need support?
 
-Please reach out to the Content Platform Team in #content-platform with any questions!
+If you have any questions, concerns, or requests, please reach out to the Content Platform Team in #content-platform!
 
