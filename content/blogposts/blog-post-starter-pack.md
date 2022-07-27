@@ -198,8 +198,7 @@ Since the component supports both `.mp4` and `.webm` files, you'll need to uploa
 You can choose to repeat a video by including the `loop` property, optionally auto play the video by including the `autoPlay` property, or optionally display the caption using the `showCaption` property.
 
 <Video 
-  mp4="/blog/shift-left/01-code-reuse"
-  webm="/blog/shift-left/01-code-reuse"
+  source={{webm: 'blog/shift-left/01-code-reuse', mp4: 'blog/shift-left/01-code-reuse'}} 
   loop={true}
   title="Code reuse"
   caption="An example of code search with Sourcegraph"
