@@ -2,7 +2,17 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Background, Blockquote, BlogResourceItem, ContentSection, IntegrationsSection, Layout, ProductHero, TwoColumnSection, Video } from '@components'
+import {
+    Background,
+    Blockquote,
+    BlogResourceItem,
+    ContentSection,
+    IntegrationsSection,
+    Layout,
+    ProductHero,
+    TwoColumnSection,
+    Video,
+} from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 export const CodeSearchPage: FunctionComponent = () => (
@@ -38,9 +48,18 @@ export const CodeSearchPage: FunctionComponent = () => (
                     <>
                         <h2 className="mb-4">Find and fix code in any code host, language, or repository</h2>
                         <ul>
-                            <li className="mb-3">Be more efficient by reusing high-quality code. Find code across thousands of repositories and multiple code hosts in seconds.</li>
-                            <li className="mb-3">Resolve issues and incidents faster by pinpointing root causes with symbol, commit, and diff searches.</li>
-                            <li className="mb-3">Discover every instance of vulnerable or buggy code in milliseconds and have complete confidence in what's in your codebase.</li>
+                            <li className="mb-3">
+                                Be more efficient by reusing high-quality code. Find code across thousands of
+                                repositories and multiple code hosts in seconds.
+                            </li>
+                            <li className="mb-3">
+                                Resolve issues and incidents faster by pinpointing root causes with symbol, commit, and
+                                diff searches.
+                            </li>
+                            <li className="mb-3">
+                                Discover every instance of vulnerable or buggy code in milliseconds and have complete
+                                confidence in what's in your codebase.
+                            </li>
                         </ul>
                     </>
                 }
@@ -55,13 +74,22 @@ export const CodeSearchPage: FunctionComponent = () => (
                             <h2 className="mb-4">Move faster with Sourcegraph</h2>
 
                             <h6>Onboard 2.5x quicker</h6>
-                            <p>Search across every repository and code host to get to know the repository structure and learn from other developers' code.</p>
-                            
+                            <p>
+                                Search across every repository and code host to get to know the repository structure and
+                                learn from other developers' code.
+                            </p>
+
                             <h6>Improve developer happiness and productivity</h6>
-                            <p>Get answers faster without waiting for context from teammates or dealing with stale local clones.</p>
+                            <p>
+                                Get answers faster without waiting for context from teammates or dealing with stale
+                                local clones.
+                            </p>
 
                             <h6>Mitigate security and compliance risks</h6>
-                            <p>Get alerts for vulnerabilities and then automate security fixes across your entire codebase.</p>
+                            <p>
+                                Get alerts for vulnerabilities and then automate security fixes across your entire
+                                codebase.
+                            </p>
                         </>
                     }
                     rightColumn={
@@ -72,11 +100,11 @@ export const CodeSearchPage: FunctionComponent = () => (
                             logo={{
                                 src: '/external-logos/criteo-logo.svg',
                                 alt: 'Criteo logo',
-                                href: '/case-studies/criteo-tackles-big-code'
+                                href: '/case-studies/criteo-tackles-big-code',
                             }}
                             link={{
                                 href: '/case-studies/criteo-tackles-big-code',
-                                text: 'Read the case study'
+                                text: 'Read the case study',
                             }}
                         />
                     }
@@ -90,9 +118,18 @@ export const CodeSearchPage: FunctionComponent = () => (
                     <>
                         <h2 className="mb-4">Understand your code and its dependencies</h2>
                         <ul>
-                            <li className="mb-3">Onboard to codebases faster with cross-repository code navigation features like “Go to definition” and "Find references."</li>
-                            <li className="mb-3">Complete code reviews, get up to speed on unfamiliar code, and determine the impact of code changes with the confidence of compiler-accurate code navigation.</li>
-                            <li className="mb-3">Determine root causes quickly with code navigation that tracks dependencies and references across repositories.</li>
+                            <li className="mb-3">
+                                Onboard to codebases faster with cross-repository code navigation features like “Go to
+                                definition” and "Find references."
+                            </li>
+                            <li className="mb-3">
+                                Complete code reviews, get up to speed on unfamiliar code, and determine the impact of
+                                code changes with the confidence of compiler-accurate code navigation.
+                            </li>
+                            <li className="mb-3">
+                                Determine root causes quickly with code navigation that tracks dependencies and
+                                references across repositories.
+                            </li>
                         </ul>
                     </>
                 }
@@ -124,9 +161,18 @@ export const CodeSearchPage: FunctionComponent = () => (
                     <>
                         <h2 className="mb-4">Create evergreen documentation with Notebooks</h2>
                         <ul>
-                            <li className="mb-3">Enable engineers to commit their first line of code faster through living documentation that references live code.</li>
-                            <li className="mb-3">Resolve incidents quickly with web-based documentation that is collaborative and shareable.</li>
-                            <li className="mb-3">Spend less time updating stale docs. Embed notebooks anywhere you can embed HTML, like your own internal docs tooling.</li>
+                            <li className="mb-3">
+                                Enable engineers to commit their first line of code faster through living documentation
+                                that references live code.
+                            </li>
+                            <li className="mb-3">
+                                Resolve incidents quickly with web-based documentation that is collaborative and
+                                shareable.
+                            </li>
+                            <li className="mb-3">
+                                Spend less time updating stale docs. Embed notebooks anywhere you can embed HTML, like
+                                your own internal docs tooling.
+                            </li>
                         </ul>
                     </>
                 }
@@ -175,19 +221,21 @@ export const CodeSearchPage: FunctionComponent = () => (
             {[
                 {
                     title: 'Key traits of a code intelligence platform',
-                    description: 'Sourcegraph is more than search. Engage and enable your teams by helping developers get unblocked, resolve issues faster, and gain codebase insights.',
+                    description:
+                        'Sourcegraph is more than search. Engage and enable your teams by helping developers get unblocked, resolve issues faster, and gain codebase insights.',
                     type: 'Guide',
                     href: '/guides/key-traits-of-a-code-intelligence-platform.pdf',
                 },
                 {
                     title: 'How we used Notebooks to make our CI more accessible and understandable',
-                    description: 'Learn how Notebooks — Sourcegraphs in-app living documentaiton—makes it easier to document complex codebases.',
+                    description:
+                        'Learn how Notebooks — Sourcegraphs in-app living documentaiton—makes it easier to document complex codebases.',
                     type: 'Blog post',
                     href: '/blog/notebooks-ci',
                     img: {
                         src: '/blog/thumbnails/notebooks-ci.jpg',
-                        alt: 'Sourcegraph Noebooks CI'
-                    }
+                        alt: 'Sourcegraph Noebooks CI',
+                    },
                 },
                 {
                     title: 'Dive into documentation',
@@ -195,8 +243,9 @@ export const CodeSearchPage: FunctionComponent = () => (
                     type: 'Docs',
                     href: 'https://docs.sourcegraph.com/code_search',
                 },
-            ].map(post =>
-                <BlogResourceItem key={post.title} blog={post} />)}
+            ].map(post => (
+                <BlogResourceItem key={post.title} blog={post} />
+            ))}
         </ContentSection>
     </Layout>
 )
