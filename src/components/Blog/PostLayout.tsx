@@ -27,7 +27,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
 }) => (
     <Tag className={`blog-post ${className}`}>
         <header className={headerClassName}>
-            <h1 className="text-h2">
+            <h2 className="text-4xl">
                 {renderTitleAsLink === true ? (
                     <Link href={url} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -44,7 +44,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                 ) : (
                     post.frontmatter.title
                 )}
-            </h1>
+            </h2>
 
             {post.frontmatter.authors?.length && (
                 <p className="text-align-center text-secondary mb-0">

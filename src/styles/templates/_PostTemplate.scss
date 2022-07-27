@@ -1,10 +1,5 @@
 .post-template {
     &__post {
-        h1 {
-            font-size: 2.25rem;
-            margin-bottom: 0.75rem;
-        }
-
         min-height: 60vh;
 
         &-title {
@@ -35,18 +30,6 @@
         p {
             line-height: 1.8;
             margin-bottom: 1.25rem;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        h3 {
-            font-size: 1.25rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
         }
 
         ul,

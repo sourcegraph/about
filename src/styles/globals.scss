@@ -265,8 +265,12 @@ table tbody + tbody {
 }
 
 code.border {
-    background-color: $light-gray-3;
+    background-color: $light-gray-4;
     font-size: 80%;
+}
+
+pre {
+    border: 1px solid $gray-2;
 }
 
 .list-spaced > li {
