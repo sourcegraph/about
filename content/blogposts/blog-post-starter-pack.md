@@ -29,7 +29,7 @@ To start a new blog post, create a new `[slug].md` file under the current year's
 
 At the top of this Markdown file is a section called `frontmatter`. These properties configure the post metadata. 
 
-```
+```json
 ---
 title: Blog Post Starter Pack
 description: This is a template for writing content for the Sourcegraph blog!
