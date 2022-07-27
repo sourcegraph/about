@@ -176,7 +176,11 @@ This is the same table, but written in **HTML**:
 
 ### YouTube
 
-You can easily embed YouTube videos using the `YouTube` component. The `id` value is found at the end of the URL for any YouTube video. To display the title below the video, add the `showTitle` property.
+You can easily embed YouTube videos using the `YouTube` component. The two required properties are `title` and `id`.
+
+A title should be descriptive for your YouTube video and is used for accessibility and the caption. It is also hidden by default. To optionally display the title below the video as a caption, add the `showTitle` property.
+
+The `id` value is found at the end of the URL for any YouTube video.
 
 <YouTube
   title="Accelerate developer onboarding with Sourcegraph" 
