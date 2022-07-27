@@ -23,7 +23,11 @@
         radial-gradient(ellipse at bottom right, rgba($green-mist, 0.5), transparent);
 }
 @mixin GradientVenus {
-    background: linear-gradient(90deg, $green-mist, $blue-mist);
+    background: linear-gradient(
+        90deg,
+        rgba($green-mist, 0.5) 0.12%,
+        rgba($blue-mist, 0.5) 99.95%),
+        #ffffff;
 }
 @mixin GradientSaturnSaturated {
     background: linear-gradient(

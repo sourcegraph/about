@@ -72,6 +72,7 @@ export const Blockquote: FunctionComponent<{
                     data-button-style={buttonStyle.textWithArrow}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
+                    className={classNames('d-flex mt-3', center && 'justify-content-center')}
                 >
                     {link.text}
                     <ArrowRightIcon className="ml-1" />
@@ -80,7 +81,7 @@ export const Blockquote: FunctionComponent<{
                 <Link href={link.href} passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
-                        className="d-flex justify-content-center mt-3"
+                        className={classNames('d-flex mt-3', center && 'justify-content-center')}
                         title={link.text}
                         data-button-style={buttonStyle.textWithArrow}
                         data-button-location={buttonLocation.body}
