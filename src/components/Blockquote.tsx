@@ -50,7 +50,7 @@ export const Blockquote: FunctionComponent<{
     }
 
     return (
-        <blockquote className={getBorderStyle()} >
+        <blockquote className={getBorderStyle()}>
             {headline ? (
                 largeText ? (
                     <h2 className="font-weight-bold">{headline}</h2>
