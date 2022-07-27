@@ -192,6 +192,7 @@ export const CaseStudy: FunctionComponent = () => (
                         quote="With Sourcegraph, onboarding is certainly faster and certainly better. It provided a significant value to us in understanding our codebase at large."
                         author="Mitchell Borrego, Security Engineer, CodeCov"
                         largeText={true}
+                        center={false}
                     />
                 </div>
 
