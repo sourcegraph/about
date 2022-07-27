@@ -1,5 +1,5 @@
 ---
-title: 'Configure precise code navigation for your all your repositories in minutes with auto-indexing'
+title: 'Configure precise code navigation for all your repositories in minutes with auto-indexing'
 description: 'Auto-indexing is now available, making it easy to enable precise code navigation for all of your repositories in minutes.'
 authors:
   - name: María Craig
