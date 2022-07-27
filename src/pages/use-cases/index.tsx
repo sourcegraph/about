@@ -151,23 +151,10 @@ const UseCases: React.FunctionComponent = () => (
                 </div>
             </ContentSection>
 
-            <hr className="mt-8 mb-6" />
+            <hr className="my-7" />
 
-            <ContentSection id="onboarding" className="py-4">
-                <div className="row justify-content-center pt-md-4">
-                    <div className="col-lg-6 mt-7 px-lg-6">
-                        <Blockquote
-                            quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
-                            author="Owen Kim, Senior Software Engineer, Convoy"
-                            borderColor="vermillion"
-                            inline={false}
-                            logo={{
-                                src: '/external-logos/convoy-logo.svg',
-                                alt: 'Convoy',
-                                href: '/case-studies/convoy-improved-on-boarding',
-                            }}
-                        />
-                    </div>
+            <ContentSection id="onboarding">
+                <div className="row flex-lg-row-reverse justify-content-center">
                     <div className="col-lg-6">
                         <h2 className="display-3 font-weight-bold mb-3">Accelerate developer onboarding</h2>
                         <h5>
@@ -214,13 +201,26 @@ const UseCases: React.FunctionComponent = () => (
                             </a>
                         </Link>
                     </div>
+                    <div className="col-lg-6 mt-7 px-lg-6">
+                        <Blockquote
+                            quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
+                            author="Owen Kim, Senior Software Engineer, Convoy"
+                            borderColor="vermillion"
+                            inline={false}
+                            logo={{
+                                src: '/external-logos/convoy-logo.svg',
+                                alt: 'Convoy',
+                                href: '/case-studies/convoy-improved-on-boarding',
+                            }}
+                        />
+                    </div>
                 </div>
             </ContentSection>
 
-            <hr className="mt-8 mb-6" />
+            <hr className="my-7" />
 
-            <ContentSection id="incident-response" className="py-4">
-                <div className="row justify-content-center pt-md-4">
+            <ContentSection id="incident-response">
+                <div className="row justify-content-center">
                     <div className="col-lg-6">
                         <h2 className="display-3 font-weight-bold mb-3">Resolve incidents faster</h2>
                         <h5>Identify the root cause in code and fix the issue everywhere.</h5>
@@ -286,26 +286,10 @@ const UseCases: React.FunctionComponent = () => (
                 </div>
             </ContentSection>
 
-            <hr className="mt-8 mb-6" />
+            <hr className="my-7" />
 
-            <ContentSection id="code-reuse" className="py-4">
-                <div className="row justify-content-center pt-md-4">
-                    <div className="col-lg-6 mt-7 px-lg-6">
-                        <Blockquote
-                            quote="If I'm developing code for a library that might draw charts, for example, we
-                            don't want 30 different ways to draw a chart at FactSet. With Sourcegraph, I can search
-                            the code to find other chart examples, and simply copy the code. This saves us time and
-                            ensures consistency."
-                            author="Joseph Majesky, Software Engineer, FactSet"
-                            borderColor="vermillion"
-                            inline={false}
-                            logo={{
-                                src: '/external-logos/factset-logo.svg',
-                                alt: 'Factset',
-                                href: '/case-studies/factset-migrates-from-perforce-to-github',
-                            }}
-                        />
-                    </div>
+            <ContentSection id="code-reuse">
+                <div className="row flex-lg-row-reverse justify-content-center">
                     <div className="col-lg-6">
                         <h2 className="display-3 font-weight-bold mb-3">Streamline code reuse</h2>
                         <h5>Stop wasting time rewriting code.</h5>
@@ -364,13 +348,29 @@ const UseCases: React.FunctionComponent = () => (
                             </a>
                         </Link>
                     </div>
+                    <div className="col-lg-6 mt-7 px-lg-6">
+                        <Blockquote
+                            quote="If I'm developing code for a library that might draw charts, for example, we
+                            don't want 30 different ways to draw a chart at FactSet. With Sourcegraph, I can search
+                            the code to find other chart examples, and simply copy the code. This saves us time and
+                            ensures consistency."
+                            author="Joseph Majesky, Software Engineer, FactSet"
+                            borderColor="vermillion"
+                            inline={false}
+                            logo={{
+                                src: '/external-logos/factset-logo.svg',
+                                alt: 'Factset',
+                                href: '/case-studies/factset-migrates-from-perforce-to-github',
+                            }}
+                        />
+                    </div>
                 </div>
             </ContentSection>
 
-            <hr className="mt-8 mb-6" />
+            <hr className="my-7" />
 
-            <ContentSection id="code-health" className="py-4">
-                <div className="row justify-content-center pt-md-4">
+            <ContentSection id="code-health">
+                <div className="row justify-content-center">
                     <div className="col-lg-6">
                         <h2 className="display-3 font-weight-bold mb-3">Boost code health</h2>
                         <h5>
