@@ -24,24 +24,29 @@ export const Blockquote: FunctionComponent<{
     link?: Link
     headline?: string
     largeText?: boolean
+    center?: boolean
     border?: boolean
-}> = ({ quote, author, logo, link, headline, largeText = false, border = true }) => (
-    <blockquote className={classNames(border && 'border-left border-3 border-vivid-violet mb-0')}>
-        {headline ? (
-            largeText ? (
-                <h2 className="font-weight-bold">{headline}</h2>
+}> = ({ quote, author, logo, link, headline, largeText = false, center = true, border = true }) => (
+    <div className={classNames(center && 'text-center')}>
+        <blockquote
+            className={classNames(border && 'border-left border-3 border-vivid-violet', center && 'text-center')}
+        >
+            {headline ? (
+                largeText ? (
+                    <h2 className="font-weight-bold">{headline}</h2>
+                ) : (
+                    <h4 className="font-weight-bold mb-4 px-4">{headline}</h4>
+                )
+            ) : null}
+
+            {largeText ? (
+                <h3 className="font-weight-normal text-3xl px-4">&ldquo;{quote}&rdquo;</h3>
             ) : (
-                <h4 className="font-weight-bold mb-4 px-4">{headline}</h4>
-            )
-        ) : null}
+                <h5 className="font-weight-normal px-4">&ldquo;{quote}&rdquo;</h5>
+            )}
 
-        {largeText ? (
-            <h3 className="font-weight-normal display-4 px-4">&ldquo;{quote}&rdquo;</h3>
-        ) : (
-            <h5 className="font-weight-normal px-4">&ldquo;{quote}&rdquo;</h5>
-        )}
-
-        {author && <figcaption className="text-muted px-4 pt-3">&mdash; {author}</figcaption>}
+            {author && <figcaption className="text-muted px-4 pt-3">&mdash; {author}</figcaption>}
+        </blockquote>
 
         {logo &&
             (logo.href ? (
@@ -86,5 +91,5 @@ export const Blockquote: FunctionComponent<{
                     </a>
                 </Link>
             ))}
-    </blockquote>
+    </div>
 )
