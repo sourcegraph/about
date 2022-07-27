@@ -21,7 +21,7 @@ published: false
 
 This template surfaces components and patterns commonly used in the Sourcegraph Blog. All of the sections below are ready for you to copy and paste into your blog post today!
 
-To start a new blog post, create a new `[slug].md` file under the current year's directory.
+To start a new blog post, create a new `[slug].md` file under the current year's sub directory within the `/content/blogposts/` directory.
 
 <hr/>
 
