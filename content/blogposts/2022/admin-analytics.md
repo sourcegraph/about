@@ -12,9 +12,9 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/admin-analyt
 published: true
 ---
 
-Sourcegraph was created to improve developer efficiency. By providing the ability to see how frequently an API is used across a company’s code, by making it incredibly fast to find and share examples of how an API is used, or understand the scope of a vulnerability and fix it, we’re reducing duplicated efforts, reducing time spent looking for knowledge, and generally making development more efficient. 
+Sourcegraph was created to improve developer efficiency. By providing the ability to see how frequently an API is used across a company’s code, by making it incredibly fast to find and share examples of how a function is used, or understand the scope of a vulnerability and fix it, we’re reducing duplicated efforts, reducing time spent looking for knowledge, and generally making development more efficient. 
 
-Delivering that efficiency to end users requires talented and dedicated admins who also deserve great tools. In recognition, we’ve recently taken on the goal of building a world-class product admin experience and we’re excited to release improved admin analytics to help admins understand the value of Sourcegraph. 
+Delivering that efficiency to end users requires talented and dedicated admins who also deserve great tools. In recognition, we’ve recently taken on the goal of building a world-class product admin experience and we’re excited to release improved admin analytics as the first step towards that goal. 
 
 ![Screenshot of the admin analytics page in Sourcegraph](https://storage.googleapis.com/sourcegraph-assets/blog/admin-analytics/Admin_Analytics_Blog.png)
 
