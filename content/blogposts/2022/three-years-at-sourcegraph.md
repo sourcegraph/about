@@ -395,12 +395,12 @@ I can say all this publicly and fearlessly because I feel safe working at Source
 
 I’ll wrap up with an old joke.
 
-“What do you do for a living?”
-“Surfing.”
-“Surfing?” (You don't look like a human who does surfing, do you?)
-“Yes, surfing the internet”
-“...”
-(One person has left the chat group)
+“What do you do for a living?” <br />
+“Surfing.” <br />
+“Surfing?” (You don't look like a human who does surfing, do you?) <br />
+“Yes, surfing the internet” <br />
+“...” <br />
+_(One person has left the chat group)_
 
 Thanks for reading this far, have a nice day!
 
