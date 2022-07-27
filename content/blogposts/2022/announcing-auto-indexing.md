@@ -32,7 +32,7 @@ Auto-indexing makes it easy to set up repository indexing in minutes and get pre
 
 It works like this: thanks to our executors service, auto-indexing can be configured to automatically analyze your repository contents. Once auto-indexing policies are configured to fit your needs, repositories will be periodically cloned into an executor sandbox, analyzed, and the resulting index file will be uploaded back to the Sourcegraph instance to power precise code navigation.
 
-Executors provide a sandbox that can run resource-intensive or untrusted tasks on behalf of the Sourcegraph instance. We use them to power features like auto-indexing and [server-side batch changes](https://docs.sourcegraph.com/batch_changes/explanations/server_side). 
+Executors provide a sandbox that can run resource-intensive or untrusted tasks on behalf of the Sourcegraph instance. We use them to power features like auto-indexing and [running batch changes server-side](https://docs.sourcegraph.com/batch_changes/explanations/server_side). 
 
 Auto-indexing jobs, in particular, require the invocation of arbitrary and untrusted code to support the resolution of project dependencies. Instead of performing this work within the Sourcegraph instance, where code is available on disk and unprotected internal services are available over the local network, we move untrusted compute into a sandboxed environment. This environment—the executor—has access only to the clone of a single repository on disk (its workspace) and to the public internet. 
 
