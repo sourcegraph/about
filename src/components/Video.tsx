@@ -14,7 +14,7 @@ interface Video {
 
 const hosts = {
     gcp: 'https://storage.googleapis.com/sourcegraph-assets',
-    self: ''
+    self: '',
 }
 
 export const Video: FunctionComponent<Video> = ({
