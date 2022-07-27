@@ -28,7 +28,7 @@ export const TrySourcegraph: FunctionComponent<Props> = ({ demoFormURL = '/demo'
                     data-button-style={buttonStyle.primary}
                     data-button-location={buttonLocation.trySourcegraph}
                     data-button-type="cta"
-                    >
+                >
                     Try Sourcegraph now
                 </a>
             </Link>
