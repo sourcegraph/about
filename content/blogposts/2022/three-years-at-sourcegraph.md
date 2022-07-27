@@ -385,7 +385,7 @@ It’s a place where I see most people willing to spend years for their career. 
 
 * I have faith in the mission: making it so “everyone can code” and realizing “being able to code will become a basic life skill, like reading was centuries ago”.
 
-* There’s probably no better place to be surrounded by talented people and working with them pleasantly
+* There’s probably no better place to be surrounded by talented people and working with them pleasantly.
 
 * I don’t like to move my base, and I feel really bad when people change jobs for the sake of more compensation. As a data point, I only voluntarily moved to a new home once during my 9-year stay in Boston (there was an involuntary move, but that’s a story for another time).
 
