@@ -1,5 +1,5 @@
 ---
-title: 'Cloud cose optimization: How Sourcegraph helps'
+title: 'Cloud cost optimization: How Sourcegraph helps'
 authors:
   - name: Christina Forney
     url: https://handbook.sourcegraph.com/team/#christina-forney
@@ -28,12 +28,14 @@ Whether you are starting your journey to the cloud, or just looking to better op
 Infrastructure as code (IaC) is the process of managing and provisioning cloud infrastructure through machine-readable definition files like Terraform ([open source repositories with examples](https://sourcegraph.com/search?q=context:global+lang:Terraform+select:repo&patternType=literal), [example files](https://sourcegraph.com/search?q=context:global+lang:Terraform+&patternType=literal)) and AWS CloudFormation ([open source repositories with examples](https://sourcegraph.com/search?q=context:global+select:repo+AWSTemplateFormatVersion&patternType=literal), [example files](https://sourcegraph.com/search?q=context:global+AWSTemplateFormatVersion&patternType=literal)), rather than physical hardware configuration or interactive configuration tools [1]. These definition files make it possible to have visibility of all your provisioned infrastructure, especially if you have a [universal code search solution](http://sourcegraph.com) inside your organization.
 
 <Figure 
-  src="https://about.sourcegraph.com/blog/google-cloud-settings-form.png"
+  src="/blog/google-cloud-settings-form.png"
   alt="Google cloud settings form"
+  caption="Creating a new GCP VM using the GCP web console"
 />
 <Figure 
-  src="https://about.sourcegraph.com/blog/sourcegraph-cloud-settings.png"
+  src="/blog/sourcegraph-cloud-settings.png"
   alt="Sourcegraph cloud settings json"
+  caption="Configuring a new or existing GCP VM using a Terraform configuration file"
 />
 
 According to [Gartner research](https://www.gartner.com/en/documents/3992065), less than 5% of server provisioning utilized IaC in 2020, and only 40% is expected to do so by 2023. This means that the vast majority of cloud infrastructure is manually provisioned, built on a huge amount of untraceable scripts, or manually configured in the cloud provider interface.
@@ -53,9 +55,8 @@ Doing a one-time audit of your cloud infrastructure is beneficial for cutting co
           <ul>
             <li>
               [Example](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/GoogleCloudPlatform/terraformer%24+terraformer+import&patternType=regexp) export commands for all cloud providers from Terraformer docs:
-              <br />
-              <Figure 
-                src="https://about.sourcegraph.com/blog/sourcegraph-search-all-terraform-imports.png"
+              <Figure
+                src="/blog/sourcegraph-search-all-terraform-imports.png"
                 alt="Sourcegraph search results: export commands for all cloud providers from Terraformer docs"
               />
             </li>
@@ -66,9 +67,8 @@ Doing a one-time audit of your cloud infrastructure is beneficial for cutting co
           <ul>
             <li>
               [Examples](https://sourcegraph.com/search?q=context:global+%22terraformer+import%22+-lang:Markdown+&patternType=regexp) of scripts that reference `terraformer import`:
-              <br />
-              <Figure 
-                src="https://about.sourcegraph.com/blog/sourcegraph-search-results-terraform-imports.png"
+              <Figure
+                src="/blog/sourcegraph-search-results-terraform-imports.png"
                 alt="Sourcegraph search results scripts that reference terraformer import"
               />
             </li>
@@ -99,6 +99,4 @@ _Christina Forney is product advisor at Sourcegraph, and has 10+ years working i
 
 
 <h6 className="mt-6">Footer</h6>
-<p>
   (1) https://www.hpe.com/us/en/insights/articles/you-need-strong-talent-to-achieve-infrastructure-as-code-1809.html
-</p>
