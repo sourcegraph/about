@@ -252,6 +252,8 @@ Instead of linking images using Markdown, please use the Figure component. This 
 
 ## About the author
 
+We encourage our authors to include an "about the author" section to their blog posts. Use the following Markdown for consistency throughout our blog posts.
+
 _Author blurb information goes here. You can chat with [author] on Twitter [@author-name](https://twitter.com/) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._
 
 ## TrySourcegraph CTA
