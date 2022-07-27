@@ -31,7 +31,7 @@ const threeUpTextItems = [
 export const CaseStudy: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Codecov uses Sourcegraph to resolve incidents 12 times faster',
+            title: 'Codecov uses Sourcegraph to resolve incidents faster',
             description:
                 'Codecov case study. Learn how Codecov use Sourcegraph to resolve incidents like Log4j 12x faster than with a native code search tool and report absolute confidence in that resolution to their customers.',
         }}
@@ -43,7 +43,7 @@ export const CaseStudy: FunctionComponent = () => (
                 color="white"
             >
                 <h1 className="pt-2 display-2 font-weight-bold max-w-800">
-                    Codecov uses Sourcegraph to resolve incidents 12 times faster
+                    Codecov uses Sourcegraph to resolve incidents faster
                 </h1>
             </NewCaseStudyJumbotron>
         }
@@ -52,7 +52,7 @@ export const CaseStudy: FunctionComponent = () => (
             <ContentSection color="white" className="py-7 text-center max-w-900">
                 <Blockquote
                     quote="Sourcegraph allows us to be more efficient with our time, whether it's code review, answering security-related questions from clients quite quickly, or searching for things in the code much more easily than we could through our code host's native search functionality."
-                    author="Jeff Holland, Security Engineer at Codecov"
+                    author="Jeff Holland, Lead Security Engineer at Codecov"
                     logo={{
                         src: '/external-logos/codecov-logo.svg',
                         alt: 'Codecov',
@@ -190,7 +190,7 @@ export const CaseStudy: FunctionComponent = () => (
                 <div className="py-7">
                     <Blockquote
                         quote="With Sourcegraph, onboarding is certainly faster and certainly better. It provided a significant value to us in understanding our codebase at large."
-                        author="Mitchell Borrego, Security Engineer, CodeCov"
+                        author="Mitchell Borrego, Security Engineer, Codecov"
                         largeText={true}
                         center={false}
                     />
@@ -234,17 +234,16 @@ export const CaseStudy: FunctionComponent = () => (
 
             <ContentSection color="white" className="py-7 max-w-700 col-xl-5">
                 <h3 className="mb-4 display-4 font-weight-normal max-w-650">
-                    Sourcegraph was the right fit for a growing team
+                    Sourcegraph Cloud was the right fit for a growing team
                 </h3>
                 <p>
-                    The Codecov team got started with Sourcegraph quickly and now, they're excited to expand. Already,
-                    support engineers are using Sourcegraph to quickly answer customer questions and the team is looking
-                    to share Sourcegraph with new engineers to help them become code search masters too.
+                    Codecov wanted something they could get up and running quickly, so they turned to Sourcegraph Cloud.
                 </p>
                 <p>
-                    As Codecov, and its codebase, grows, Sourcegraph will be a key way the startup can remain nimble.
-                    “Sourcegraph was an unlock for us,” explained Jarrod. Codecov is growing and ready to further
-                    realize this unlocked potential.
+                    “Sourcegraph Cloud was an unlock for us,” explained Jerrod. “We didn't feel like Sourcegraph was a product that we needed to run on our own infrastructure."
+                </p>
+                <p>
+                    Sourcegraph Cloud enabled the Codecov team to get started with Sourcegraph quickly and now, they’re excited to expand. Already, support engineers are using Sourcegraph to quickly answer customer questions and the team is looking to share Sourcegraph with new engineers to help them become code search pros too.
                 </p>
             </ContentSection>
 
