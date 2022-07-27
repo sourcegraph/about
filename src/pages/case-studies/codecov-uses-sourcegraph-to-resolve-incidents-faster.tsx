@@ -51,7 +51,7 @@ export const CaseStudy: FunctionComponent = () => (
         <NewCaseStudyLayout customer="Codecov">
             <ContentSection color="white" className="py-7 text-center max-w-900">
                 <Blockquote
-                    quote="Sourcegraph allows us to be more efficient with our time, whether it's code review, answering security-related questions from clients quite quickly, or searching for things in the code much more easily than we could through our code host's native search functionality."
+                    quote="Sourcegraph allows us to be more efficient with our time, whether it's code review, answering security-related questions from clients, or searching for things in the code much more easily than we could through our code host's native search functionality."
                     author="Jeff Holland, Lead Security Engineer at Codecov"
                     logo={{
                         src: '/external-logos/codecov-logo.svg',
@@ -110,11 +110,10 @@ export const CaseStudy: FunctionComponent = () => (
                 </p>
                 <p>
                     Key to their efforts? Sourcegraph. According to Jeff, “Sourcegraph allows us to be more efficient
-                    with our time, whether it's code review, quickly answering security-related questions from clients
-                    quite quickly, or searching for things in the code more easily than we could through other tools.”
+                    with our time, whether it's code review, quickly answering security-related questions from clients, or searching for things in the code more easily than we could through other tools.”
                 </p>
                 <h3 className="mt-6 mb-4 display-4 font-weight-normal max-w-600">
-                    Codecov reduced time-to-resolution 100% when facing Log4j
+                    Codecov reduced time to resolution with 100% confidence when facing Log4j
                 </h3>
                 <p>
                     In December of 2021, researchers discovered that Log4j, an otherwise nondescript open source logging
