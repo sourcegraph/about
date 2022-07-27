@@ -41,36 +41,35 @@ import insights from './assets/illustrations/insights.svg'
 import search from './assets/illustrations/search.svg'
 
 export interface Background {
-    variant:
-    // Light Nebulous Variants
+    variant: // Light Nebulous Variants
     | 'lightNebulousSaturn1'
-    | 'lightNebulousSaturn2'
-    | 'lightNebulousVenus1'
-    | 'lightNebulousVenus2'
-    | 'lightNebulousMars'
-    | 'lightNebulousAurora'
-    // Dark Nebulous Variants
-    | 'darkNebulous1'
-    | 'darkNebulous1Md'
-    | 'darkNebulous1Sm'
-    | 'darkNebulous2'
-    | 'darkNebulous2Md'
-    | 'darkNebulous2Sm'
-    | 'darkNebulous3'
-    | 'darkNebulous3Md'
-    | 'darkNebulous3Sm'
-    | 'darkNebulous4'
-    | 'darkNebulous4Md'
-    | 'darkNebulous4Sm'
-    // Code Variants
-    | 'venusCode'
-    | 'venusCode2'
-    | 'saturnCode'
-    | 'marsCode'
-    // Grid Variants
-    | 'darkMultiGrid'
-    | 'darkSimpleGrid'
-    | 'auroraGrid'
+        | 'lightNebulousSaturn2'
+        | 'lightNebulousVenus1'
+        | 'lightNebulousVenus2'
+        | 'lightNebulousMars'
+        | 'lightNebulousAurora'
+        // Dark Nebulous Variants
+        | 'darkNebulous1'
+        | 'darkNebulous1Md'
+        | 'darkNebulous1Sm'
+        | 'darkNebulous2'
+        | 'darkNebulous2Md'
+        | 'darkNebulous2Sm'
+        | 'darkNebulous3'
+        | 'darkNebulous3Md'
+        | 'darkNebulous3Sm'
+        | 'darkNebulous4'
+        | 'darkNebulous4Md'
+        | 'darkNebulous4Sm'
+        // Code Variants
+        | 'venusCode'
+        | 'venusCode2'
+        | 'saturnCode'
+        | 'marsCode'
+        // Grid Variants
+        | 'darkMultiGrid'
+        | 'darkSimpleGrid'
+        | 'auroraGrid'
     children?: ReactNode
     illustration?: 'search' | 'changes' | 'insights'
     className?: string
@@ -138,7 +137,7 @@ const illustrationStyle: IllustrationStyle = {
 
 /**
  * This is a Background component as described in our DLS.
- * 
+ *
  * @param props - props
  * @param props.variant - a required string for a background variant
  * @param props.children - ReactNode
@@ -152,7 +151,7 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
     const isMobile = windowWidth < breakpoints.lg
 
     const backgroundSource: string = backgrounds[variant].src
-    
+
     let background = `url("${backgroundSource}") center / cover no-repeat`
     if (illustration) {
         const illustrationSource: string = illustrations[illustration]
