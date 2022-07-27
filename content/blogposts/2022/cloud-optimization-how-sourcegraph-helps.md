@@ -25,9 +25,16 @@ Whether you are starting your journey to the cloud, or just looking to better op
 2. **Application refactoring** – Review application architecture and resource utilization.  Often applications are monolithic and not designed to be cloud native.  Hyperscalers provide compute, memory, and storage, as well as new standardized services, technologies, and approaches that were not available in the traditional data center environments. This requires insights into the  portions of your code that can leverage the newly available technologies and the ability to rapidly update patterns in code across the organization. At the very least, organizations need to identify and optimize their workloads to run more efficiently in the new hyperscale environment (covered in parts 3 and 4 – coming soon).
 
 ### Infrastructure as code 
-Infrastructure as code (IaC) is the process of managing and provisioning cloud infrastructure through machine-readable definition files like Terraform ([open source repositories with examples](https://sourcegraph.com/search?q=context:global+lang:Terraform+select:repo&patternType=literal), [example files](https://sourcegraph.com/search?q=context:global+lang:Terraform+&patternType=literal)) and AWS CloudFormation ([open source repositories with examples](https://sourcegraph.com/search?q=context:global+select:repo+AWSTemplateFormatVersion&patternType=literal), [example files](https://sourcegraph.com/search?q=context:global+AWSTemplateFormatVersion&patternType=literal)), rather than physical hardware configuration or interactive configuration tools1. These definition files make it possible to have visibility of all your provisioned infrastructure, especially if you have a [universal code search solution](http://sourcegraph.com) inside your organization.
+Infrastructure as code (IaC) is the process of managing and provisioning cloud infrastructure through machine-readable definition files like Terraform ([open source repositories with examples](https://sourcegraph.com/search?q=context:global+lang:Terraform+select:repo&patternType=literal), [example files](https://sourcegraph.com/search?q=context:global+lang:Terraform+&patternType=literal)) and AWS CloudFormation ([open source repositories with examples](https://sourcegraph.com/search?q=context:global+select:repo+AWSTemplateFormatVersion&patternType=literal), [example files](https://sourcegraph.com/search?q=context:global+AWSTemplateFormatVersion&patternType=literal)), rather than physical hardware configuration or interactive configuration tools [1]. These definition files make it possible to have visibility of all your provisioned infrastructure, especially if you have a [universal code search solution](http://sourcegraph.com) inside your organization.
 
-TODO: 2 figures
+<Figure 
+  src="https://about.sourcegraph.com/blog/google-cloud-settings-form.png"
+  alt="Google cloud settings form"
+/>
+<Figure 
+  src="https://about.sourcegraph.com/blog/sourcegraph-cloud-settings.png"
+  alt="Sourcegraph cloud settings json"
+/>
 
 According to [Gartner research](https://www.gartner.com/en/documents/3992065), less than 5% of server provisioning utilized IaC in 2020, and only 40% is expected to do so by 2023. This means that the vast majority of cloud infrastructure is manually provisioned, built on a huge amount of untraceable scripts, or manually configured in the cloud provider interface.
 
@@ -37,11 +44,50 @@ If your organization has not adopted IaC (which is the majority – you’re not
 
 Doing a one-time audit of your cloud infrastructure is beneficial for cutting costs, but if you want to continually review for cost reduction, you’ll want to have automation in place to regularly export your config into a Git repository. We’ve pulled together some helpful resources that should make this setup a bit easier.
 
-1. Export all cluster config into a Git repository – use a tool like CloudFormation or Terraform (provisioning tools).
-
-2. Export all services config into a Git repository – use a tool like Chef, Puppet, Ansible, or Kubernetes (configuration management tools) to export the services configuration.
-
-3. Set up a CronJob to regularly snapshot the configuration files from the first two steps into the Git repos. By regularly updating, you will be able to have better traceability of changes over time, and it will allow you to better understand the entire system. Additionally, you have now moved one small step closer to infrastructure as code.
+<ol>
+  <li>
+    Export all cluster config into a Git repository – use a tool like CloudFormation or Terraform (provisioning tools).
+    <ul>
+      <li>
+        First, choose the provisioning tool you want to export to. We recommend Terraform. Here is a [helpful blog series on choosing Terraform over other provisioning tools](https://blog.gruntwork.io/why-we-use-terraform-and-not-chef-puppet-ansible-saltstack-or-cloudformation-7989dad2865c).
+          <ul>
+            <li>
+              [Example](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/GoogleCloudPlatform/terraformer%24+terraformer+import&patternType=regexp) export commands for all cloud providers from Terraformer docs:
+              <br />
+              <Figure 
+                src="https://about.sourcegraph.com/blog/sourcegraph-search-all-terraform-imports.png"
+                alt="Sourcegraph search results: export commands for all cloud providers from Terraformer docs"
+              />
+            </li>
+          </ul>
+      </li>
+      <li>
+        [Terraformer](https://github.com/GoogleCloudPlatform/terraformer) is a CLI to export config to Terraform on any cloud provider.
+          <ul>
+            <li>
+              [Examples](https://sourcegraph.com/search?q=context:global+%22terraformer+import%22+-lang:Markdown+&patternType=regexp) of scripts that reference `terraformer import`:
+              <br />
+              <Figure 
+                src="https://about.sourcegraph.com/blog/sourcegraph-search-results-terraform-imports.png"
+                alt="Sourcegraph search results scripts that reference terraformer import"
+              />
+            </li>
+          </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    Export all services config into a Git repository – use a tool like Chef, Puppet, Ansible, or Kubernetes (configuration management tools) to export the services configuration.
+  </li>
+  <li>
+    Set up a CronJob to regularly snapshot the configuration files from the first two steps into the Git repos. By regularly updating, you will be able to have better traceability of changes over time, and it will allow you to better understand the entire system. Additionally, you have now moved one small step closer to infrastructure as code.
+    <ul>
+      <li>
+        We deploy Sourcegraph.com with Kubernetes, and use [kube-backup](https://github.com/pieterlange/kube-backup) to export  and backup this configuration.
+      </li>
+    </ul>
+  </li>
+</ol>
 
 Visibility and awareness are the first steps toward greater cost savings across your organization and extend to include both direct costs of cloud infrastructure as well as operational savings.  The next step is to identify targets for optimization and to monitor changes over time.  We will cover approaches and practical examples of  this in part 2.
 
@@ -49,4 +95,10 @@ Thanks to the following people for helping with this post: Mark McCauley, and Ni
 
 ### About the author
 
-_Christina Forney is product advisor at Sourcegraph, and has 10+ years working in developer and product roles in the developer tools space. You can reach Christina by email (christina@sourcegraph.com) on Twitter [@christina4nee](https://twitter.com/christina4nee)._
+_Christina Forney is product advisor at Sourcegraph, and has 10+ years working in developer and product roles in the developer tools space. You can reach Christina by [email](christina@sourcegraph.com) or on Twitter [@christina4nee](https://twitter.com/christina4nee)._
+
+
+<h6 className="mt-6">Footer</h6>
+<p>
+  (1) https://www.hpe.com/us/en/insights/articles/you-need-strong-talent-to-achieve-infrastructure-as-code-1809.html
+</p>
