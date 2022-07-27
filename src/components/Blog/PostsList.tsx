@@ -16,8 +16,6 @@ export const PostsList: FunctionComponent<Props> = ({ posts }) => {
     const postProps: Omit<PostComponentProps, 'post' | 'url'> = {
         className: 'posts-list__post card',
         headerClassName: 'card-header bg-white border-bottom-0 text-center',
-        titleClassName: 'posts-list__post-title',
-        titleLinkClassName: 'posts-list__post-title-link',
         tag: 'li',
         content: null,
     }

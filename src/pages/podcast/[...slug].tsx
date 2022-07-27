@@ -42,12 +42,12 @@ const PodcastPage: NextPage<PageProps> = ({ post, content }) => {
                     <BlogHeader {...podcastInfo} />
                 </div>
                 <div className="post-template mt-5 bg-white">
-                    <div className="container-lg max-w-650">
+                    <div className="container-lg">
                         <PostTemplate
                             post={post}
                             content={content}
                             url={urlToPost(post)}
-                            className="post-template__post podcast-post"
+                            className="post-template__post podcast-post max-w-750 mx-auto"
                             headerClassName="card-header bg-white border-bottom-0 text-center pt-5"
                             contentClassName="podcast-post__body"
                         />

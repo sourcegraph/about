@@ -23,7 +23,6 @@ export const ReleasePost: FunctionComponent<Props> = ({
     className = '',
     headerClassName = '',
     titleClassName = '',
-    titleLinkClassName = '',
     tag: Tag = 'div',
     renderTitleAsLink = false,
 }) => {
@@ -119,7 +118,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                         <Link href={url} passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className={`d-block ${titleLinkClassName}`}
+                                className="d-block"
                                 title={post.frontmatter.title}
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}

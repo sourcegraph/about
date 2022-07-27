@@ -20,12 +20,24 @@ export const TrySourcegraph: FunctionComponent<Props> = ({ demoFormURL = '/demo'
                     local and secure).
                 </p>
             </div>
-            <div className="col-md-6 pt-3 align-self-center text-center">
+            <div className="col-md-6 pt-3 align-self-center">
+                <Link href="/get-started/self-hosted" passHref={true}>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a
+                        className="btn btn-primary mx-2 mb-3"
+                        title="Try Sourcegraph now"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
+                        >
+                        Try Sourcegraph now
+                    </a>
+                </Link>
                 {demoFormURL && (
                     <Link href={demoFormURL} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="btn btn-outline-gray-5 mx-2 mb-3"
+                            className="btn btn-outline-primary mx-2 mb-3"
                             title="Schedule a demo"
                             data-button-style={buttonStyle.outline}
                             data-button-location={buttonLocation.bodyDemo}
@@ -35,18 +47,6 @@ export const TrySourcegraph: FunctionComponent<Props> = ({ demoFormURL = '/demo'
                         </a>
                     </Link>
                 )}
-                <Link href="/get-started/self-hosted" passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a
-                        className="btn btn-primary mx-2 mb-3"
-                        title="Try Sourcegraph now"
-                        data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.trySourcegraph}
-                        data-button-type="cta"
-                    >
-                        Try Sourcegraph now
-                    </a>
-                </Link>
             </div>
         </div>
     </ContentSection>

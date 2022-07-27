@@ -19,7 +19,6 @@ export const LinkPost: FunctionComponent<Props> = ({
     content,
     url,
     className = '',
-    titleLinkClassName = '',
     tag: Tag = 'div',
 }) => {
     const titleClassName = 'text-base link-post__html d-inline'
@@ -56,7 +55,7 @@ export const LinkPost: FunctionComponent<Props> = ({
                 <Link href={url} passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
-                        className={`text-gray-5 ${titleLinkClassName}`}
+                        className="text-gray-5"
                         title={post.frontmatter.publishDate}
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}

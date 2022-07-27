@@ -21,20 +21,18 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
     url,
     className = '',
     headerClassName = '',
-    titleClassName = '',
-    titleLinkClassName = '',
     tag: Tag = 'article',
     renderTitleAsLink = false,
     contentClassName = '',
 }) => (
     <Tag className={`blog-post ${className}`}>
         <header className={headerClassName}>
-            <h1 className={titleClassName}>
+            <h1 className="text-h2">
                 {renderTitleAsLink === true ? (
                     <Link href={url} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className={`d-block ${titleLinkClassName}`}
+                            className="d-block"
                             title={post.frontmatter.title}
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
@@ -96,12 +94,13 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
         </header>
 
         {content && (
-            <div className="card-body max-w-650">
+            <div className="card-body">
                 <div className={`blog-post__html ${contentClassName}`}>
                     <MDXRemote {...content} components={components as PostComponents} />
                 </div>
+
+                <TrySourcegraph />
             </div>
         )}
-        <TrySourcegraph />
     </Tag>
 )

@@ -71,7 +71,6 @@ export interface PostComponentProps {
 
     headerClassName?: string
     titleClassName?: string
-    titleLinkClassName?: string
     renderTitleAsLink?: boolean
     className?: string
     tag?: 'li' | 'div' | 'article'
@@ -90,7 +89,6 @@ export interface PostIndexItemProps {
     className?: string
     headerClassName?: string
     titleClassName?: string
-    titleLinkClassName?: string
     tag?: 'li' | 'div' | 'article'
     renderTitleAsLink?: boolean
     blogType: BlogType

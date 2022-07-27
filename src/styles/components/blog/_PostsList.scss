@@ -1,12 +1,5 @@
 .posts-list {
     &__post {
         margin-bottom: map-get($spacers, 5);
-
-        &-title {
-            font-size: $h5-font-size;
-            &-link {
-                color: $dark-8;
-            }
-        }
     }
 }
