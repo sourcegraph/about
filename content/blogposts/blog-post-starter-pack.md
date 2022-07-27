@@ -258,7 +258,7 @@ _Author blurb information goes here. You can chat with [author] on Twitter [@aut
 
 ## TrySourcegraph CTA
 
-Note: A footer that includes the "Try Sourcegraph" CTA is automatically included at the end of each blog post.
+Note: A footer that includes the "Try Sourcegraph" CTA is automatically included at the end of each blog post so there is no need to include it manually.
 
 <hr/>
 
