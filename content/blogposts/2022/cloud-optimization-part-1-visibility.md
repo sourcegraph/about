@@ -1,16 +1,14 @@
 ---
-title: 'Cloud cost optimization: How Sourcegraph helps'
+title: 'Cloud cost optimization: Part 1 - Create visibility'
 authors:
   - name: Christina Forney
     url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2022-07-28T10:00-07:00
 description: 'The first part in a four part series on how you can reduce cloud costs. The first piece reviews the importance of creating visibility and practical ways you can do this using Sourcegraph.'
 tags: [blog, infrastructure as code, devops, cloud cost reduction]
-slug: 'cloud-optimization-how-sourcegraph-helps'
+slug: 'cloud-optimization-part-1-visibility'
 published: true
 ---
-## Cloud cost optimization: Part 1 Create visibility
-<hr />
 *This is the first part in a four-part series covering practical steps to optimize cloud costs across your organization.*
 
 There is a growing trend for organizations of all sizes to get out of the business of running their own data centers and move their infrastructure and application workloads to the cloud. This typically includes a transition to software as a service (SaaS) as well as leveraging infrastructure as a service (IaaS).  IaaS providers are often referenced as “Hyperscalers” and include Google Cloud Platform (GCP), Amazon AWS, and Microsoft Azure.  The advantages of and motivations for adopting cloud applications and infrastructure are often to achieve cost savings through [a shift from a CapEx to an OpEx](https://www.10thmagnitude.com/opex-vs-capex-the-real-cloud-computing-cost-advantage/) financial model and the opportunity to only pay for the resources and infrastructure you need or use.
