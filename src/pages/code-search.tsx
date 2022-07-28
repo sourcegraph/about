@@ -34,6 +34,7 @@ export const CodeSearchPage: FunctionComponent = () => (
     >
         <ContentSection color="white">
             <TwoColumnSection
+                centerContent={true}
                 reverseOnMobile={true}
                 leftColumn={
                     <Video
@@ -117,6 +118,7 @@ export const CodeSearchPage: FunctionComponent = () => (
 
         <ContentSection color="white">
             <TwoColumnSection
+                centerContent={true}
                 leftColumn={
                     <>
                         <h2 className="mb-4">Understand your code and its dependencies</h2>
@@ -153,6 +155,7 @@ export const CodeSearchPage: FunctionComponent = () => (
 
         <ContentSection color="white" className="pt-0">
             <TwoColumnSection
+                centerContent={true}
                 reverseOnMobile={true}
                 leftColumn={
                     <Video
