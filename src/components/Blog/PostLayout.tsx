@@ -96,12 +96,13 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
         </header>
 
         {content && (
-            <div className="card-body max-w-650">
+            <div className="card-body">
                 <div className={`blog-post__html ${contentClassName}`}>
                     <MDXRemote {...content} components={components as PostComponents} />
                 </div>
+
+                <TrySourcegraph />
             </div>
         )}
-        <TrySourcegraph />
     </Tag>
 )
