@@ -28,12 +28,12 @@ Infrastructure as code (IaC) is the process of managing and provisioning cloud i
 <Figure 
   src="/blog/cloud-optimization-part-1-visibility/google-cloud-settings-form.png"
   alt="Google cloud settings form"
-  caption="Creating a new GCP VM using the GCP web console"
+  caption="Creating a new GCP VM using the GCP web console (https://console.cloud.google.com/compute/instancesAdd)"
 />
 <Figure 
   src="/blog/cloud-optimization-part-1-visibility/sourcegraph-cloud-settings.png"
   alt="Sourcegraph cloud settings json"
-  caption="Configuring a new or existing GCP VM using a Terraform configuration file"
+  caption="Configuring a new or existing GCP VM using a Terraform configuration file (tutorial: https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/getting_started#provisioning-your-resources)"
 />
 
 According to [Gartner research](https://www.gartner.com/en/documents/3992065), less than 5% of server provisioning utilized IaC in 2020, and only 40% is expected to do so by 2023. This means that the vast majority of cloud infrastructure is manually provisioned, built on a huge amount of untraceable scripts, or manually configured in the cloud provider interface.
@@ -50,6 +50,9 @@ Doing a one-time audit of your cloud infrastructure is beneficial for cutting co
     <ul>
       <li>
         First, choose the provisioning tool you want to export to. We recommend Terraform. Here is a [helpful blog series on choosing Terraform over other provisioning tools](https://blog.gruntwork.io/why-we-use-terraform-and-not-chef-puppet-ansible-saltstack-or-cloudformation-7989dad2865c).
+      </li>
+      <li>
+        [Terraformer](https://github.com/GoogleCloudPlatform/terraformer) is a CLI to export config to Terraform on any cloud provider.
           <ul>
             <li>
               [Example](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/GoogleCloudPlatform/terraformer%24+terraformer+import&patternType=regexp) export commands for all cloud providers from Terraformer docs:
@@ -58,11 +61,6 @@ Doing a one-time audit of your cloud infrastructure is beneficial for cutting co
                 alt="Sourcegraph search results: export commands for all cloud providers from Terraformer docs"
               />
             </li>
-          </ul>
-      </li>
-      <li>
-        [Terraformer](https://github.com/GoogleCloudPlatform/terraformer) is a CLI to export config to Terraform on any cloud provider.
-          <ul>
             <li>
               [Examples](https://sourcegraph.com/search?q=context:global+%22terraformer+import%22+-lang:Markdown+&patternType=regexp) of scripts that reference `terraformer import`:
               <Figure
@@ -76,20 +74,24 @@ Doing a one-time audit of your cloud infrastructure is beneficial for cutting co
   </li>
   <li>
     Export all services config into a Git repository – use a tool like Chef, Puppet, Ansible, or Kubernetes (configuration management tools) to export the services configuration.
-  </li>
-  <li>
-    Set up a CronJob to regularly snapshot the configuration files from the first two steps into the Git repos. By regularly updating, you will be able to have better traceability of changes over time, and it will allow you to better understand the entire system. Additionally, you have now moved one small step closer to infrastructure as code.
     <ul>
       <li>
         We deploy Sourcegraph.com with Kubernetes, and use [kube-backup](https://github.com/pieterlange/kube-backup) to export  and backup this configuration.
       </li>
     </ul>
   </li>
+  <li>
+    Set up a CronJob to regularly snapshot the configuration files from the first two steps into the Git repos. By regularly updating, you will be able to have better traceability of changes over time, and it will allow you to better understand the entire system. Additionally, you have now moved one small step closer to infrastructure as code.
+  </li>
 </ol>
+
+### Conclusion
 
 Visibility and awareness are the first steps toward greater cost savings across your organization and extend to include both direct costs of cloud infrastructure as well as operational savings.  The next step is to identify targets for optimization and to monitor changes over time.  We will cover approaches and practical examples of  this in part 2.
 
-Thanks to the following people for helping with this post: Mark McCauley, and Nick Snyder. 
+<hr/>
+
+Thanks to the following people for helping with this post: Mark McCauley, Rafal Gajdulewicz, and Nick Snyder.
 
 ### About the author
 
