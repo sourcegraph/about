@@ -25,6 +25,13 @@ $font-weight-bolder: 700; /* uses Source Sans Pro Bold */
 
 $headings-font-weight: 700; /* uses Source Sans Pro Bold */
 
+$h1-font-size: 3.25rem; // 72px
+$h2-font-size: 2.5rem; // 40px
+$h3-font-size: 1.875rem; // 30px
+$h4-font-size: 1.5rem; // 24px
+$h5-font-size: 1.25rem; // 20px
+$h6-font-size: 1.125rem; // 18px
+
 $input-btn-padding-y: 0.55rem;
 
 @import 'node_modules/bootstrap/scss/variables';
