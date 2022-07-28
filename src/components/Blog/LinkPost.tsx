@@ -14,14 +14,7 @@ interface Props extends PostComponentProps {
  * A blog post that consists of short text (with no headline, only an emphasized first sentence).
  * This post always displays its full text and never hides it behind a "Read more" link.
  */
-export const LinkPost: FunctionComponent<Props> = ({
-    post,
-    content,
-    url,
-    className = '',
-    titleLinkClassName = '',
-    tag: Tag = 'div',
-}) => {
+export const LinkPost: FunctionComponent<Props> = ({ post, content, url, className = '', tag: Tag = 'div' }) => {
     const titleClassName = 'text-base link-post__html d-inline'
     const title = post.frontmatter.canonical ? (
         <h2 className={titleClassName}>
@@ -56,7 +49,7 @@ export const LinkPost: FunctionComponent<Props> = ({
                 <Link href={url} passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
-                        className={`text-gray-5 ${titleLinkClassName}`}
+                        className="text-gray-5"
                         title={post.frontmatter.publishDate}
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}

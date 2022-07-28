@@ -278,8 +278,12 @@ table tbody + tbody {
 }
 
 code.border {
-    background-color: $light-gray-3;
+    background-color: $light-gray-4;
     font-size: 80%;
+}
+
+pre {
+    border: 1px solid $gray-2;
 }
 
 .list-spaced > li {
@@ -295,6 +299,12 @@ code.border {
 
 code {
     font-family: 'Source Code Pro', monospace !important;
+    background-color: $light-gray-4;
+    color: $curious-blue;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    border-radius: 3px;
 }
 
 /* ==================== Positioning ==================== */
