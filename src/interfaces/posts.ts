@@ -44,6 +44,7 @@ export interface FrontMatter {
     externalDescription?: string
     canonical?: string
     publishDate?: string
+    published?: boolean
     heroImage?: string
     authors?: {
         name: string
