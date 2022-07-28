@@ -4,7 +4,7 @@ authors:
   - name: Christina Forney
     url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2022-07-28T10:00-07:00
-description: 'How to reduce cloud costs'
+description: 'The first part in a four part series on how you can reduce cloud costs. The first piece reviews the importance of creating visibility and practical ways you can do this using Sourcegraph.'
 tags: [blog, infrastructure as code, devops, cloud cost reduction]
 slug: 'cloud-optimization-how-sourcegraph-helps'
 published: true
