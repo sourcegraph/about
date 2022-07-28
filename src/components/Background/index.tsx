@@ -123,7 +123,7 @@ const illustrations: { [key: string]: string } = { changes, insights, search }
 const illustrationStyle: IllustrationStyle = {
     search: {
         size: '700px',
-        position: '30%',
+        position: '25%',
     },
     changes: {
         size: '520px',
