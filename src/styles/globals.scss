@@ -105,6 +105,13 @@ $card-spacer-x: 1.25 * $spacer;
 
 $grid-gutter-width: 2rem;
 
+$container-max-widths: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+);
+
 :root {
     --body-color: #{$dark-8};
     --border-color: #{$border-color};
