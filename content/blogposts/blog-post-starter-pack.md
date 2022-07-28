@@ -4,7 +4,7 @@ description: This is a template for writing content on the Sourcegraph blog!
 authors:
   - name: Sourcegraph
     url: https://twitter.com/sourcegraph
-publishDate: 2022-07-01T18:00+02:00
+publishDate: 2013-01-01T18:00+02:00
 tags: [blog]
 slug: starter-pack
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
@@ -17,7 +17,7 @@ published: false
   alt="Blog Post Starter Pack"
 />
 
-<Alert>To preview this template, set the frontmatter to `published: true` and visit `/blog/starter-pack`.</Alert>
+<Alert>To preview this template visit [`/blog/starter-pack`](https://about.sourcegraph.com/blog/starter-pack).</Alert>
 
 This template surfaces components and patterns commonly used in the Sourcegraph Blog. All of the sections below are ready for you to copy and paste into your blog post today!
 
