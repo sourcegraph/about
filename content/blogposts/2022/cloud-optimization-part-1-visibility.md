@@ -26,12 +26,12 @@ Whether you are starting your journey to the cloud, or just looking to better op
 Infrastructure as code (IaC) is the process of managing and provisioning cloud infrastructure through machine-readable definition files like Terraform ([open source repositories with examples](https://sourcegraph.com/search?q=context:global+lang:Terraform+select:repo&patternType=literal), [example files](https://sourcegraph.com/search?q=context:global+lang:Terraform+&patternType=literal)) and AWS CloudFormation ([open source repositories with examples](https://sourcegraph.com/search?q=context:global+select:repo+AWSTemplateFormatVersion&patternType=literal), [example files](https://sourcegraph.com/search?q=context:global+AWSTemplateFormatVersion&patternType=literal)), rather than physical hardware configuration or interactive configuration tools [1]. These definition files make it possible to have visibility of all your provisioned infrastructure, especially if you have a [universal code search solution](http://sourcegraph.com) inside your organization.
 
 <Figure 
-  src="/blog/cloud-optimization-how-sourcegraph-helps/google-cloud-settings-form.png"
+  src="/blog/cloud-optimization-part-1-visibility/google-cloud-settings-form.png"
   alt="Google cloud settings form"
   caption="Creating a new GCP VM using the GCP web console"
 />
 <Figure 
-  src="/blog/cloud-optimization-how-sourcegraph-helps/sourcegraph-cloud-settings.png"
+  src="/blog/cloud-optimization-part-1-visibility/sourcegraph-cloud-settings.png"
   alt="Sourcegraph cloud settings json"
   caption="Configuring a new or existing GCP VM using a Terraform configuration file"
 />
@@ -54,7 +54,7 @@ Doing a one-time audit of your cloud infrastructure is beneficial for cutting co
             <li>
               [Example](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/GoogleCloudPlatform/terraformer%24+terraformer+import&patternType=regexp) export commands for all cloud providers from Terraformer docs:
               <Figure
-                src="/blog/cloud-optimization-how-sourcegraph-helps/sourcegraph-search-all-terraform-imports.png"
+                src="/blog/cloud-optimization-part-1-visibility/sourcegraph-search-all-terraform-imports.png"
                 alt="Sourcegraph search results: export commands for all cloud providers from Terraformer docs"
               />
             </li>
@@ -66,7 +66,7 @@ Doing a one-time audit of your cloud infrastructure is beneficial for cutting co
             <li>
               [Examples](https://sourcegraph.com/search?q=context:global+%22terraformer+import%22+-lang:Markdown+&patternType=regexp) of scripts that reference `terraformer import`:
               <Figure
-                src="/blog/cloud-optimization-how-sourcegraph-helps/sourcegraph-search-results-terraform-imports.png"
+                src="/blog/cloud-optimization-part-1-visibility/sourcegraph-search-results-terraform-imports.png"
                 alt="Sourcegraph search results scripts that reference terraformer import"
               />
             </li>
