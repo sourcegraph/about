@@ -23,11 +23,11 @@ This template surfaces components and patterns commonly used in the Sourcegraph 
 
 To start a new blog post, create a new `[slug].md` file under the current year's sub directory within the `/content/blogposts/` directory.
 
-<hr/>
+<hr className="my-6" />
 
 ## Frontmatter
 
-This section is called `frontmatter` and it provides the post's metadata.
+This section is called `frontmatter`, it provides the post's metadata.
 
 ```yaml
 ---
@@ -64,7 +64,7 @@ Your markdown content goes here
 * The `canonical` field is optional and only required to override the canonical link. Important for cross-posting blogs from personal blogs or published news sites. By default, set to `https://about.sourcegraph.com/blog/the-blog-slug`.
 * The `videoID` field is an optional YouTube video ID and will take priority even if the `socialImage` is present. This will generate an inline video preview card when sharing on social media. This is supported for all types of posts; blog, podcast, and release posts.
 
-<hr/>
+<hr className="my-6" />
 
 ## Components
 
@@ -88,14 +88,7 @@ Sometimes a piece of information needs to stick out. You can use the `Alert` com
 
 You can also change the color of the Alert by setting its `type`. You can choose between:
 
-- `primary`
-- `secondary`
-- `success`
-- `danger`
-- `warning`
-- `info`
-- `light`
-- `dark`
+`primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, or`dark`
 
 <Alert type="info">This Alert is blue!</Alert>
 
@@ -238,7 +231,7 @@ export const BlogPost<BlogPostProps> = ({title, text}) = {
 
 Add links with an anchor tag as you usually would: 
 
-<div className="text-center mb-5">
+<div className="text-center mb-6">
   <a href="https://www.sourcegraph.com/search">Check out Sourcegraph Search!</a>
 </div>
 
@@ -251,17 +244,19 @@ Instead of linking images using Markdown, please use the Figure component. This 
   link="https://www.sourcegraph.com/search"
 />
 
+<div className="mt-6" />
 ## About the author
 
 We encourage our authors to include an "about the author" section to their blog posts. Use the following Markdown for consistency throughout our blog posts.
 
 _Author blurb information goes here. You can chat with [author] on Twitter [@author-name](https://twitter.com/) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._
 
+<div className="mt-6" />
 ## TrySourcegraph CTA
 
 Note: A footer that includes the "Try Sourcegraph" CTA is automatically included at the end of each blog post so there is no need to include it manually.
 
-<hr/>
+<hr className="my-6" />
 
 ## Need support?
 
