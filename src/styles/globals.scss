@@ -23,7 +23,7 @@ $font-weight-semibold: 600;
 $font-weight-bold: $font-weight-semibold; /* uses Source Sans Pro Semi-bold */
 $font-weight-bolder: 700; /* uses Source Sans Pro Bold */
 
-$headings-font-weight: 700; /* uses Source Sans Pro Bold */
+$headings-font-weight: $font-weight-semibold;
 
 $h1-font-size: 3.25rem; // 72px
 $h2-font-size: 2.5rem; // 40px
