@@ -38,8 +38,10 @@ export const CodeSearchPage: FunctionComponent = () => (
                 leftColumn={
                     <Video
                         host="self"
-                        mp4="/animations/code-search"
-                        webm="/animations/code-search"
+                        source={{
+                            mp4: '/animations/code-search',
+                            webm: '/animations/code-search',
+                        }}
                         title="Sourcegraph Code Search"
                         caption="Sourcegraph Code Search"
                         loop={true}
@@ -137,8 +139,10 @@ export const CodeSearchPage: FunctionComponent = () => (
                 rightColumn={
                     <Video
                         host="self"
-                        mp4="/animations/code-intel"
-                        webm="/animations/code-intel"
+                        source={{
+                            mp4: '/animations/code-intel',
+                            webm: '/animations/code-intel',
+                        }}
                         title="Sourcegraph Code Intelligence"
                         caption="Sourcegraph Code Intelligence"
                         loop={true}
@@ -153,8 +157,10 @@ export const CodeSearchPage: FunctionComponent = () => (
                 leftColumn={
                     <Video
                         host="self"
-                        mp4="/animations/notebooks"
-                        webm="/animations/notebooks"
+                        source={{
+                            mp4: '/animations/notebooks',
+                            webm: '/animations/notebooks',
+                        }}
                         title="Sourcegraph Notebooks"
                         caption="Sourcegraph Notebooks"
                         loop={true}

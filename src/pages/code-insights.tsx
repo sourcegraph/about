@@ -328,8 +328,10 @@ const CodeInsightsPage: FunctionComponent = () => (
                 </div>
                 <div className="col-lg-7 mb-md-4 pl-lg-5 d-flex align-items-center video-container">
                     <Video
-                        mp4="/code_insights/code-insights-720"
-                        webm="/code_insights/code-insights-720"
+                        source={{
+                            mp4: 'code_insights/code-insights-720',
+                            webm: 'code_insights/code-insights-720',
+                        }}
                         title="Code Insights"
                         caption="Code Insights"
                         loop={true}

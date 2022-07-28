@@ -91,8 +91,10 @@ export const BatchChangesPage: FunctionComponent = () => (
                     </div>
                     <div className="col-lg-7">
                         <Video
-                            mp4="/batch-changes/how-it-works"
-                            webm="/batch-changes/how-it-works"
+                            source={{
+                                mp4: 'batch-changes/how-it-works',
+                                webm: 'batch-changes/how-it-works',
+                            }}
                             loop={true}
                             title="Batch Changes: How it works"
                             caption="Search, define, execute, and track code changes"
@@ -134,8 +136,10 @@ export const BatchChangesPage: FunctionComponent = () => (
                 </div>
                 <div className="col-lg-7">
                     <Video
-                        mp4="/batch-changes/creation-to-merge"
-                        webm="/batch-changes/creation-to-merge"
+                        source={{
+                            mp4: 'batch-changes/creation-to-merge',
+                            webm: 'batch-changes/creation-to-merge',
+                        }}
                         loop={true}
                         title="Batch Changes: Creation to merge"
                         caption="Automatically track changeset lifecycle status"
