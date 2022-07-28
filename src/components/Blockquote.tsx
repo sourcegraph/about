@@ -72,12 +72,12 @@ export const Blockquote: FunctionComponent<{
                 (logo.href ? (
                     <Link href={logo.href} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a className="btn">
-                            <img src={logo.src} width="110px" alt={logo.alt} />
+                        <a>
+                            <img src={logo.src} className="pt-3" width="110px" alt={logo.alt} />
                         </a>
                     </Link>
                 ) : (
-                    <img src={logo.src} className="pt-2" width="110px" alt={logo.alt} />
+                    <img src={logo.src} className="pt-3" width="110px" alt={logo.alt} />
                 ))}
 
             {link &&
