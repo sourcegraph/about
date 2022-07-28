@@ -110,7 +110,8 @@ export const CaseStudy: FunctionComponent = () => (
                 </p>
                 <p>
                     Key to their efforts? Sourcegraph. According to Jeff, “Sourcegraph allows us to be more efficient
-                    with our time, whether it's code review, quickly answering security-related questions from clients, or searching for things in the code more easily than we could through other tools.”
+                    with our time, whether it's code review, quickly answering security-related questions from clients,
+                    or searching for things in the code more easily than we could through other tools.”
                 </p>
                 <h3 className="mt-6 mb-4 display-4 font-weight-normal max-w-600">
                     Codecov reduced time to resolution with 100% confidence when facing Log4j
@@ -191,7 +192,6 @@ export const CaseStudy: FunctionComponent = () => (
                         quote="With Sourcegraph, onboarding is certainly faster and certainly better. It provided a significant value to us in understanding our codebase at large."
                         author="Mitchell Borrego, Security Engineer, Codecov"
                         largeText={true}
-                        center={false}
                     />
                 </div>
 
@@ -239,10 +239,14 @@ export const CaseStudy: FunctionComponent = () => (
                     Codecov wanted something they could get up and running quickly, so they turned to Sourcegraph Cloud.
                 </p>
                 <p>
-                    “Sourcegraph Cloud was an unlock for us,” explained Jerrod. “We didn't feel like Sourcegraph was a product that we needed to run on our own infrastructure."
+                    “Sourcegraph Cloud was an unlock for us,” explained Jerrod. “We didn't feel like Sourcegraph was a
+                    product that we needed to run on our own infrastructure."
                 </p>
                 <p>
-                    Sourcegraph Cloud enabled the Codecov team to get started with Sourcegraph quickly and now, they’re excited to expand. Already, support engineers are using Sourcegraph to quickly answer customer questions and the team is looking to share Sourcegraph with new engineers to help them become code search pros too.
+                    Sourcegraph Cloud enabled the Codecov team to get started with Sourcegraph quickly and now, they’re
+                    excited to expand. Already, support engineers are using Sourcegraph to quickly answer customer
+                    questions and the team is looking to share Sourcegraph with new engineers to help them become code
+                    search pros too.
                 </p>
             </ContentSection>
 

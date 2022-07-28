@@ -37,7 +37,7 @@ export const getStaticProps: GetStaticProps = async ({ preview = false }) => {
     )
     // Don't show unpublished posts in index. Proper fix coming in: https://github.com/sourcegraph/about/issues/5620
     const publishedPosts = posts.filter(post => post.frontmatter.published)
-    
+
     return {
         props: {
             allPosts: publishedPosts,
