@@ -25,6 +25,10 @@ changelogItems:
     category: Admin
 ---
 
+<Alert>
+  <strong>Update as of July 27:</strong> We identified a bug in Sourcegraph 3.42 that can cause issues with gitserver. We are working to fix this in an upcoming patch. In the meantime, we recommend running version 3.41.
+</Alert>
+
 Sourcegraph 3.42 is now available! For this release, we introduced:
 
 ## Measure the value of Sourcegraph with admin analytics
