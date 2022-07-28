@@ -153,7 +153,7 @@ export const CodeSearchPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white" className="pb-7">
+        <ContentSection color="white">
             <TwoColumnSection
                 centerContent={true}
                 reverseOnMobile={true}
