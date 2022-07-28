@@ -61,7 +61,7 @@ export const Install: FunctionComponent = () => {
                     </span>
                 </h3>
 
-                <code className="d-block my-4 pr-5 text-lg">
+                <code className="d-block my-4 pr-5 text-lg text-dark-9 bg-white">
                     <small className={copied ? classNames(styles.flashBackground, 'text-break') : 'text-break'}>
                         {installText}
                     </small>

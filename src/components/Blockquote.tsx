@@ -80,6 +80,8 @@ export const Blockquote: FunctionComponent<{
                         <img src={logo.src} width="110px" alt={logo.alt} />
                     </div>
                 ))}
+            
+            <br />
 
             {link &&
                 (link?.href.includes('http') ? (
@@ -91,7 +93,7 @@ export const Blockquote: FunctionComponent<{
                         data-button-style={buttonStyle.textWithArrow}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
-                        className="d-inline-block"
+                        className="d-inline-flex"
                     >
                         {link.text}
                         <ArrowRightIcon className="ml-1" />
@@ -100,7 +102,7 @@ export const Blockquote: FunctionComponent<{
                     <Link href={link.href} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="d-flex mx-4 my-2"
+                            className="d-inline-flex mx-4 my-2"
                             title={link.text}
                             data-button-style={buttonStyle.textWithArrow}
                             data-button-location={buttonLocation.body}
