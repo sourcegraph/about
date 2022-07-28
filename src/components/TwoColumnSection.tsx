@@ -16,7 +16,7 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
     centerContent = false
 }) => (
     <div className={classNames(
-            'd-flex py-7',
+            'd-flex',
             {
                 'flex-column-reverse flex-lg-row': reverseOnMobile,
                 'row': !reverseOnMobile,

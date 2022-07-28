@@ -32,7 +32,7 @@ export const CodeSearchPage: FunctionComponent = () => (
             />
         }
     >
-        <ContentSection color="white">
+        <ContentSection color="white" className="py-7">
             <TwoColumnSection
                 centerContent={true}
                 reverseOnMobile={true}
@@ -70,26 +70,27 @@ export const CodeSearchPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <div className="bg-gradient-venus">
+        <div className="bg-gradient-venus py-7">
             <div className="container">
                 <TwoColumnSection
+                    centerContent={true}
                     leftColumn={
                         <>
                             <h2 className="mb-4">Move faster with Sourcegraph</h2>
 
-                            <h6>Onboard 2.5x quicker</h6>
+                            <h5>Onboard 2.5x quicker</h5>
                             <p>
                                 Search across every repository and code host to get to know the repository structure and
                                 learn from other developers' code.
                             </p>
 
-                            <h6>Improve developer happiness and productivity</h6>
+                            <h5>Improve developer happiness and productivity</h5>
                             <p>
                                 Get answers faster without waiting for context from teammates or dealing with stale
                                 local clones.
                             </p>
 
-                            <h6>Mitigate security and compliance risks</h6>
+                            <h5>Mitigate security and compliance risks</h5>
                             <p>
                                 Get alerts for vulnerabilities and then automate security fixes across your entire
                                 codebase.
@@ -115,7 +116,7 @@ export const CodeSearchPage: FunctionComponent = () => (
             </div>
         </div>
 
-        <ContentSection color="white">
+        <ContentSection color="white" className="py-7">
             <TwoColumnSection
                 centerContent={true}
                 leftColumn={
@@ -152,7 +153,7 @@ export const CodeSearchPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white" className="pt-0">
+        <ContentSection color="white" className="pb-7">
             <TwoColumnSection
                 centerContent={true}
                 reverseOnMobile={true}
