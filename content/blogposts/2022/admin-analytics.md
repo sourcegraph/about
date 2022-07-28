@@ -4,7 +4,7 @@ description: "Sourcegraph’s new admin analytics make it easier for admins to u
 authors:
   - name: Rob Rhyne
     url: https://twitter.com/robrhyne
-publishDate: 2022-07-27T18:00+02:00
+publishDate: 2022-07-29T18:00+02:00
 tags: [blog]
 slug: admin-analytics
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/admin-analytics/Admin_Analytics_Blog.png
