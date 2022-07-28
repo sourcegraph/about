@@ -551,7 +551,7 @@ const CodeInsightsPage: FunctionComponent = () => (
 
         <ContentSection className="py-lg-7 py-5">
             <div className="row d-flex">
-                <div className="col-lg-6">
+                <div className="col-lg-6 pl-0">
                     <h2 className="mb-5 display-3 font-weight-bold">Learn more</h2>
                 </div>
                 {blogResourceItems.map(item => (
