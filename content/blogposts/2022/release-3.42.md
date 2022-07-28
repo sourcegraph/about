@@ -25,6 +25,10 @@ changelogItems:
     category: Admin
 ---
 
+<Alert>
+  <strong>Update as of July 27:</strong> We identified a bug in Sourcegraph 3.42 that can cause issues with gitserver. We are working to fix this in an upcoming patch. In the meantime, we recommend running version 3.41.
+</Alert>
+
 Sourcegraph 3.42 is now available! For this release, we introduced:
 
 ## Measure the value of Sourcegraph with admin analytics
@@ -61,19 +65,15 @@ We have a new search type available experimentally, called "Lucky search." It im
 
 ## Code Insights load faster and include more historical datapoints
 
-<figure>
-  <video
-    className="w-100 h-auto shadow"
-    title="An example of code insights loading faster"
-    autoPlay
-    loop
-    muted
-    playsInline
-  >
-    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/3.42/3.42InsightsSpeedImprovements.mp4" type="video/mp4" data-cookieconsent="ignore"/>
-    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/3.42/3.42InsightsSpeedImprovements.webm" type="video/webm" data-cookieconsent="ignore"/>
-  </video>
-</figure>
+<Video
+  title="Faster code insights"
+  caption="An example of code insights loading faster"
+  source={{
+    mp4: "blog/3.42/3.42InsightsSpeedImprovements",
+    webm: "blog/3.42/3.42InsightsSpeedImprovements"
+  }}
+  loop={true}
+/>
 
 Insights running over an explicit list of repos now behave like insights running over all repositories. 
 

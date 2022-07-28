@@ -49,8 +49,6 @@ const PressReleasePage: NextPage<PageProps> = ({ post, content }) => {
                             url={urlToPost(post)}
                             className="post-template__post blog-post max-w-750 mx-auto overflow-hidden pb-2"
                             headerClassName="card-header bg-white border-bottom-0 text-center pt-5"
-                            titleClassName=""
-                            titleLinkClassName="post-template__post-title-link"
                         />
                     </div>
                 </div>

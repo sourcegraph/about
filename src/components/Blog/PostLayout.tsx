@@ -21,20 +21,18 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
     url,
     className = '',
     headerClassName = '',
-    titleClassName = '',
-    titleLinkClassName = '',
     tag: Tag = 'article',
     renderTitleAsLink = false,
     contentClassName = '',
 }) => (
     <Tag className={`blog-post ${className}`}>
         <header className={headerClassName}>
-            <h1 className={titleClassName}>
+            <h2 className="text-4xl">
                 {renderTitleAsLink === true ? (
                     <Link href={url} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className={`d-block ${titleLinkClassName}`}
+                            className="d-block"
                             title={post.frontmatter.title}
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
@@ -46,7 +44,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                 ) : (
                     post.frontmatter.title
                 )}
-            </h1>
+            </h2>
 
             {post.frontmatter.authors?.length && (
                 <p className="text-align-center text-secondary mb-0">
@@ -101,7 +99,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                     <MDXRemote {...content} components={components as PostComponents} />
                 </div>
 
-                <TrySourcegraph />
+                <TrySourcegraph className="px-0 justify-content-between" />
             </div>
         )}
     </Tag>
