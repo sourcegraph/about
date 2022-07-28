@@ -182,14 +182,21 @@ The `id` value is found at the end of the URL for any YouTube video.
 
 ### Video
 
-The required properties for the `Video` component are `mp4`, `webm`, `loop`, `caption`, and `title`. 
+The required properties for the `Video` component are `source`, `loop`, `caption`, and `title`. 
 
-Since the component supports both `.mp4` and `.webm` files, you'll need to upload the two versions of the video to our Google Cloud [assets bucket](https://console.cloud.google.com/storage/browser/sourcegraph-assets/blog) under an appropriate sub directory. Then, add the file path from the Public URL of these files to the `mp4` and `webm` properties without their file extensions.
+Since the component supports both `.mp4` and `.webm` file formats, you'll need to upload the two file formats of the video to our Google Cloud [assets bucket](https://console.cloud.google.com/storage/browser/sourcegraph-assets/blog) under an appropriate sub directory. We recommend both files to have the same filename. Then, add the file path starting after `/sourcegraph-assets/` from the Public URL of these files to the `source` property under `mp4` and `webm` respectively, without the file extensions.
 
 You can choose to repeat a video by including the `loop` property, optionally auto play the video by including the `autoPlay` property, or optionally display the caption using the `showCaption` property.
 
+This example is based on both the `mp4` and `webm` file formats living at the following URLs with the same filenames:
+- `https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/01-code-reuse.mp4`
+- `https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/01-code-reuse.webm`
+
 <Video 
-  source={{webm: 'blog/shift-left/01-code-reuse', mp4: 'blog/shift-left/01-code-reuse'}} 
+  source={{
+    webm: 'blog/shift-left/01-code-reuse',
+    mp4: 'blog/shift-left/01-code-reuse'
+  }}
   loop={true}
   title="Code reuse"
   caption="An example of code search with Sourcegraph"
