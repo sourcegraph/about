@@ -290,6 +290,8 @@ const CodeReusePage: FunctionComponent = () => (
                             find other chart examples, and simply copy the code. This saves us time and ensures
                             consistency."
                             author="Joseph Majesky, Software Engineer at FactSet"
+                            borderColor="vermillion"
+                            inline={false}
                             logo={{
                                 src: '/external-logos/factset-logo.svg',
                                 alt: 'Factset',

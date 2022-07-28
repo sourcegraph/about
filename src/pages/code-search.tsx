@@ -100,7 +100,6 @@ export const CodeSearchPage: FunctionComponent = () => (
                         <Blockquote
                             quote="At Criteo, developer happiness is our top priority-not just productivity. By providing them with the right tools, like Sourcegraph, we've found that increased productivity is a natural byproduct."
                             author="Francois Jehl, Senior Engineering Manager at Criteo"
-                            center={false}
                             logo={{
                                 src: '/external-logos/criteo-logo.svg',
                                 alt: 'Criteo logo',

@@ -39,7 +39,6 @@ export const CaseStudy: FunctionComponent = () => {
                         <Blockquote
                             quote="Decomposition or migrating a service is a high-risk endeavor, often involving changes in hundreds of repositories, so a high level of accuracy is needed."
                             author={justinPhilips}
-                            center={false}
                         />
 
                         <h2 className="pt-5 pb-1">From monolith to microservices</h2>
@@ -75,7 +74,6 @@ export const CaseStudy: FunctionComponent = () => {
                                 </>
                             }
                             author={justinPhilips}
-                            center={false}
                         />
 
                         <h2 className="pt-5 pb-1">
@@ -103,7 +101,6 @@ export const CaseStudy: FunctionComponent = () => {
                                 </>
                             }
                             author="Aneesh Agrawal, Software Engineer, Lyft"
-                            center={false}
                         />
 
                         <p className="pb-5">
