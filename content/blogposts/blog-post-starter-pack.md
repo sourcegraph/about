@@ -4,7 +4,7 @@ description: This is a template for writing content on the Sourcegraph blog!
 authors:
   - name: Sourcegraph
     url: https://twitter.com/sourcegraph
-publishDate: 2013-01-19T00:00
+publishDate: 2013-04-19T00:00
 tags: [blog]
 slug: starter-pack
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
@@ -38,7 +38,7 @@ authors:
     url: https://example.com/
   - name: Second authors name (optional)
     url: https://example-2.com/
-publishDate: 2013-01-19T00:00
+publishDate: 2013-04-19T00:00
 tags: [blog]
 slug: starter-pack
 published: true
