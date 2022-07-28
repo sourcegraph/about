@@ -38,7 +38,7 @@ authors:
     url: https://example.com/
   - name: Second authors name (optional)
     url: https://example-2.com/
-publishDate: 2022-07-01T18:00+02:00
+publishDate: 2013-01-19T00:00
 tags: [blog]
 slug: starter-pack
 published: true
