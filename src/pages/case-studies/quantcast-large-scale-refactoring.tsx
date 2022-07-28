@@ -67,7 +67,7 @@ export const CaseStudy: FunctionComponent = () => (
                         </pre>
                     </div>
 
-                    <Blockquote quote="Unlike other tools, Sourcegraph doesn't just search for keywords, it searches for regular expressions. This familiar query language allowed us to zero-in on exactly what we wanted and filter out false matches." center={false} />
+                    <Blockquote quote="Unlike other tools, Sourcegraph doesn't just search for keywords, it searches for regular expressions. This familiar query language allowed us to zero-in on exactly what we wanted and filter out false matches." />
 
                     <p>
                         For every project, the team created a burndown list of issues and provided links to Sourcegraph
@@ -76,7 +76,7 @@ export const CaseStudy: FunctionComponent = () => (
                         they were each examined individually.
                     </p>
 
-                    <Blockquote quote="Sourcegraph's search gave us confidence because we knew we wouldn't overlook anything: Sourcegraph returns all search results, it doesn't drop or elide them, unlike GitHub Enterprise." center={false} />
+                    <Blockquote quote="Sourcegraph's search gave us confidence because we knew we wouldn't overlook anything: Sourcegraph returns all search results, it doesn't drop or elide them, unlike GitHub Enterprise." />
 
                     <p>
                         Each team was able to use the Sourcegraph searches to confirm that all of their outstanding
@@ -95,7 +95,7 @@ export const CaseStudy: FunctionComponent = () => (
                         alerts before any changes that affect personal data are merged.
                     </p>
 
-                    <Blockquote quote="Saved searches allow us to constantly monitor code that manages personal data, organization wide, before changes land in production." center={false} />
+                    <Blockquote quote="Saved searches allow us to constantly monitor code that manages personal data, organization wide, before changes land in production." />
 
                     <h2 className="pt-5 pb-1">
                         Large scale refactoring is now possible without risking production stability
