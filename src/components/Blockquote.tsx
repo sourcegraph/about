@@ -27,7 +27,7 @@ export const Blockquote: FunctionComponent<{
     largeText?: boolean
     border?: boolean
     borderColor?: string
-    inline?: boolean
+    inline?: boolean // inline vs. col layout
 }> = ({ quote, author, logo, link, headline, largeText = false, border = true, borderColor, inline = true }) => {
     const windowWidth = useWindowWidth()
     const isMdOrDown = windowWidth < breakpoints.lg
