@@ -44,6 +44,7 @@ export interface FrontMatter {
     externalDescription?: string
     canonical?: string
     publishDate?: string
+    published?: boolean
     heroImage?: string
     authors?: {
         name: string
@@ -71,7 +72,6 @@ export interface PostComponentProps {
 
     headerClassName?: string
     titleClassName?: string
-    titleLinkClassName?: string
     renderTitleAsLink?: boolean
     className?: string
     tag?: 'li' | 'div' | 'article'
@@ -90,7 +90,6 @@ export interface PostIndexItemProps {
     className?: string
     headerClassName?: string
     titleClassName?: string
-    titleLinkClassName?: string
     tag?: 'li' | 'div' | 'article'
     renderTitleAsLink?: boolean
     blogType: BlogType

@@ -13,20 +13,18 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
     slugPath,
     className,
     headerClassName,
-    titleClassName,
-    titleLinkClassName = '',
     renderTitleAsLink = false,
     blogType,
     children,
 }) => (
     <article className={className}>
         <header className={headerClassName}>
-            <h1 className={titleClassName}>
+            <h3 className="text-xl">
                 {renderTitleAsLink === true ? (
                     <Link href={`/${blogType}/${slugPath}`} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className={`d-block ${titleLinkClassName}`}
+                            className="d-block text-black"
                             title={frontmatter.title}
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
@@ -38,7 +36,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                 ) : (
                     frontmatter.title
                 )}
-            </h1>
+            </h3>
 
             {frontmatter.authors?.length && (
                 <p className="text-align-center text-secondary mb-0">
