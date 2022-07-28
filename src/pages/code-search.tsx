@@ -147,7 +147,7 @@ export const CodeSearchPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white">
+        <ContentSection color="white" className="pt-0">
             <TwoColumnSection
                 reverseOnMobile={true}
                 leftColumn={
@@ -232,7 +232,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                 {
                     title: 'How we used Notebooks to make our CI more accessible and understandable',
                     description:
-                        'Learn how Notebooks — Sourcegraphs in-app living documentaiton—makes it easier to document complex codebases.',
+                        'Learn how Notebooks—Sourcegraph’s in-app living documentaiton—makes it easier to document complex codebases.',
                     type: 'Blog post',
                     href: '/blog/notebooks-ci',
                     img: {
