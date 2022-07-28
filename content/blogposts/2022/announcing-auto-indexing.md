@@ -44,23 +44,23 @@ Once executors are set up and [auto-indexing is enabled](https://docs.sourcegrap
 
 From the targeted repository’s index page, navigate to code graph settings.
 
-![Screenshot 1 of the auto-indexing user interface]()
+![Screenshot 1 of the auto-indexing user interface](https://storage.googleapis.com/sourcegraph-assets/blog/auto-indexing/repo-page-1.png)
 
 The settings page will show all policies that apply to the given repository, including both repository-specific policies as well as global policies that match the repository (see [applying indexing policies globally](https://docs.sourcegraph.com/code_intelligence/how-to/configure_auto_indexing#applying-indexing-policies-globally)). You can create your new policy from here.
 
-![Screenshot 2 of the auto-indexing user interface]()
+![Screenshot 2 of the auto-indexing user interface](https://storage.googleapis.com/sourcegraph-assets/blog/auto-indexing/policies-page-2.png)
 
 In this example, we’ll create an indexing policy that applies to all versioned tags in our `sourcegraph/sourcegraph` repo (those prefixed with v).
 
-![Screenshot 3 of the auto-indexing user interface]()
+![Screenshot 3 of the auto-indexing user interface](https://storage.googleapis.com/sourcegraph-assets/blog/auto-indexing/create-config-3.png)
 
 We’ll also set the **Retention** and **Auto-indexing** fields to ensure all commits visible from matching tagged commit will be kept indexed (and not removed due to age).
 
-![Screenshot 4 of the auto-indexing user interface]()
+![Screenshot 4 of the auto-indexing user interface](https://storage.googleapis.com/sourcegraph-assets/blog/auto-indexing/save-config-4.png)
 
 When we’ve finished creating this policy, it will be visible from the **Configuration policies** view.
 
-![Screenshot 5 of the auto-indexing user interface]()
+![Screenshot 5 of the auto-indexing user interface](https://storage.googleapis.com/sourcegraph-assets/blog/auto-indexing/final-page-5.png)
 
 At the moment, auto-indexing is supported for Go, TypeScript, JavaScript and Python. A complete list of auto-indexing support can be found [in our docs](https://docs.sourcegraph.com/code_intelligence/explanations/auto_indexing).
 
