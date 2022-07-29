@@ -3,9 +3,10 @@ import { FunctionComponent, ReactNode, useEffect, useRef } from 'react'
 import { Background, HubSpotForm } from '@components'
 
 interface ProductHero extends Background {
-    product: 'code search' | 'batch changes' | 'code insights'
+    product?: 'code search' | 'batch changes' | 'code insights'
     title: string | ReactNode
-    description: string
+    backButton?: ReactNode
+    description?: string
     displayUnderNav?: boolean
 }
 
@@ -13,11 +14,15 @@ export const ProductHero: FunctionComponent<Omit<ProductHero, 'className' | 'chi
     variant,
     product,
     title,
+    backButton,
     description,
     displayUnderNav = false,
-}) => {    
-    const illustrationName: string = product.split(' ')[1]
-    const illustration: Background['illustration'] = illustrationName as Background['illustration']
+}) => {
+    let illustration: Background['illustration']
+    if (product) {
+        const illustrationName: string = product.split(' ')[1]
+        illustration = illustrationName as Background['illustration']
+    }
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const rootReference = useRef<any>(null)
@@ -49,7 +54,8 @@ export const ProductHero: FunctionComponent<Omit<ProductHero, 'className' | 'chi
                 className="d-flex align-items-center min-h-600"
             >
                 <div className="container">
-                    <div className="max-w-600 w-100">
+                    <div className="max-w-700 w-100">
+                        {backButton}
                         <div className="d-flex flex-column-reverse">
                             <h1 className="display-2 font-weight-bold mb-4 whitespace-pre-line">{title}</h1>
                             <div className="text-uppercase mb-2 font-weight-bold">{product}</div>

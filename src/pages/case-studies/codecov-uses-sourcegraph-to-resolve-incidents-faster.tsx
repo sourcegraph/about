@@ -2,7 +2,8 @@ import { FunctionComponent } from 'react'
 
 import {
     Layout,
-    NewCaseStudyJumbotron,
+    BackButton,
+    ProductHero,
     NewCaseStudyLayout,
     ContentSection,
     Blockquote,
@@ -35,17 +36,15 @@ export const CaseStudy: FunctionComponent = () => (
             description:
                 'Codecov case study. Learn how Codecov uses Sourcegraph to resolve incidents like Log4j 12x faster and with 100% confidence.',
         }}
-        heroAndHeaderClassName="bg-code-venus"
         hero={
-            <NewCaseStudyJumbotron
-                className="text-black height-md-450 height-auto p-2"
-                customer="Nutanix"
-                color="white"
-            >
-                <h1 className="pt-2 display-2 font-weight-bold max-w-800">
-                    Codecov uses Sourcegraph to resolve incidents faster
-                </h1>
-            </NewCaseStudyJumbotron>
+            <ProductHero
+                backButton={
+                    <BackButton href="/case-studies" text="Case Studies" />
+                }
+                variant="venusCode"
+                title="Codecov uses Sourcegraph to resolve incidents faster"
+                displayUnderNav={true}
+            />
         }
     >
         <NewCaseStudyLayout customer="Codecov">

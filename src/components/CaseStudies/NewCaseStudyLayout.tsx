@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { ContentSection, RequestDemoTrySourcegraph } from '@components'
+import { Background, ContentSection, RequestDemoTrySourcegraph } from '@components'
 
 import { CaseStudyCard, CASESTUDIES } from './CaseStudyCard'
 
@@ -18,9 +18,9 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, childre
         <>
             {children}
 
-            <div className="py-7 bg-code-venus">
+            <Background variant="venusCode" className="py-7">
                 <RequestDemoTrySourcegraph />
-            </div>
+            </Background>
 
             <ContentSection color="white" className="py-7 py-5 col-xl-6">
                 <h1 className="pl-5 pb-5 display-3 font-weight-bold">Explore other case studies</h1>

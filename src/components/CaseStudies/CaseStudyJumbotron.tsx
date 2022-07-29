@@ -33,12 +33,3 @@ export const CaseStudyJumbotron: FunctionComponent<Props> = ({
         </div>
     </div>
 )
-
-export const NewCaseStudyJumbotron: FunctionComponent<Props> = ({ children }) => (
-    <div className="py-7">
-        <div className="container">
-            <BackButton href="/case-studies" text="Case Studies" />
-            {children}
-        </div>
-    </div>
-)
