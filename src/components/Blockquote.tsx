@@ -77,7 +77,7 @@ export const Blockquote: FunctionComponent<{
                         </a>
                     </Link>
                 ) : (
-                    <img src={logo.src} className="pt-3" width="110px" alt={logo.alt} />
+                    <img src={logo.src} className="mt-3" width="110px" alt={logo.alt} />
                 ))}
 
             {link &&
