@@ -1,4 +1,5 @@
 ---
+<!--- Product/Eng planning for 4.0 found here: https://docs.google.com/spreadsheets/d/1fy0A659qSvVP9-7Y-p2VrJKJfph3LI0DTvYMUJ82Iu0/edit#gid=0 -->
 title: "Sourcegraph 4.0"
 publishDate: 
 description: Announcing Sourcegraph 4.0
