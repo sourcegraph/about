@@ -45,6 +45,7 @@ Just run a search query, provide a pattern to find and replace, and get a live p
 
 <!-- @malomarrec: this is a placeholder -->
 <img width="1497" alt="placeholder-sourcegraph-find-and-replace" src="https://user-images.githubusercontent.com/25070988/181726971-13007592-c3b9-4f69-a8f3-54e0cf13b7ea.png">
+
 ### See high-level aggregations of your search results set, to quickly answer questions about usage and structure
 
 Sourcegraph returns an exhaustive list of search results – but sometimes you need to know things like: 
