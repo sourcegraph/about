@@ -42,7 +42,7 @@ This feature requires admins to set up executors (much like CI agents), which So
 
 IDEs can find and replace strings across your local files. Sourcegraph can find and replace strings across _all_ your code. Change boilerplate, fix typos, or update configuration across all your code, without having to write a script or pull your code locally!
 
-Just run a search query, provide a pattern to find and replace, and get a live preview of the diff. If the changes look good, Batch Changes can send them for review to your team, then automatically and safely open changesets across all your repositories, and let you track them until they get merged. 
+Just run a search query, provide a pattern to find and replace, and get a live preview of the diff. If the changes look good, Batch Changes can send them to your team for review, then automatically and safely open changesets across all your repositories, and let you track them until they get merged. 
 
 <!-- @malomarrec: this is a placeholder -->
 <img width="1497" alt="placeholder-sourcegraph-find-and-replace" src="https://user-images.githubusercontent.com/25070988/181726971-13007592-c3b9-4f69-a8f3-54e0cf13b7ea.png">
