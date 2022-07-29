@@ -26,7 +26,7 @@ changelogItems:
 ---
 
 <Alert>
-  <strong>Update as of July 29:</strong> Patch 3.42.1 has been released, which fixes the issue below.
+  <strong>Update as of July 29:</strong> Patch 3.42.1 has been released, which fixes the issue below. If you previously download 3.42.0 and turned off `sgm`, we recommend upgrading to 3.42.1 and turning on `sgm` to fix any repo corruption.
 </Alert>
 
 <Alert>
