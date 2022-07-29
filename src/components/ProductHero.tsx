@@ -56,7 +56,7 @@ export const ProductHero: FunctionComponent<Omit<ProductHero, 'className' | 'chi
                             <h1 className="display-2 font-weight-bold mb-4 whitespace-pre-line">{title}</h1>
                             <div className="text-uppercase mb-2 font-weight-bold">{product}</div>
                         </div>
-                        <h5 className="mb-5 font-weight-normal">{description}</h5>
+                        <h5 className="mb-5 max-w-600 font-weight-normal">{description}</h5>
                         <div className="d-flex flex-column pt-1 max-w-400">
                             <HubSpotForm masterFormName="contactEmail" />
                         </div>
