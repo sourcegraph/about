@@ -45,4 +45,15 @@ Just run a search query, provide a pattern to find and replace, and get a live p
 
 <!-- @malomarrec: this is a placeholder -->
 <img width="1497" alt="placeholder-sourcegraph-find-and-replace" src="https://user-images.githubusercontent.com/25070988/181726971-13007592-c3b9-4f69-a8f3-54e0cf13b7ea.png">
+### See high-level aggregations of your search results set, to quickly answer questions about usage and structure
 
+Sourcegraph returns an exhaustive list of search results – but sometimes you need to know things like: 
+
+- Which files have the bulk of these search results? 
+- Which repos is this library used in most? 
+- Which subcomponents are used most from this library?
+- Who is using our new innersource library?  
+- Which areas of the code added back in these regressions? 
+- What are all the possible arguments we can pass to this function? 
+
+To answer these questions, Sourcegraph now shows you your search results grouped by location (repo or file), author, and arbitrary capture group pattern. If you want to save any aggregations for future reference, you can 1-click save the results to a code insights dashboard.
