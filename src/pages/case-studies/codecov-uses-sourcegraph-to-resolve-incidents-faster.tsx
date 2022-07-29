@@ -33,7 +33,7 @@ export const CaseStudy: FunctionComponent = () => (
         meta={{
             title: 'Codecov uses Sourcegraph to resolve incidents faster',
             description:
-                'Codecov case study. Learn how Codecov use Sourcegraph to resolve incidents like Log4j 12x faster than with a native code search tool and report absolute confidence in that resolution to their customers.',
+                'Codecov case study. Learn how Codecov uses Sourcegraph to resolve incidents like Log4j 12x faster and with 100% confidence.',
         }}
         heroAndHeaderClassName="bg-code-venus"
         hero={
