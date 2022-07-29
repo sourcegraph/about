@@ -20,7 +20,7 @@ const threeUpTextItems = [
     {
         subtitle: <h3 className="pb-3 mx-md-auto display-3 font-weight-bold text-blurple">12x faster</h3>,
         description:
-            'Codecov was able to resolve Log4j 12x faster than with their code host\'s native search functionality and report absolute confidence in that resolution to their customers.',
+            "Codecov was able to resolve Log4j 12x faster than with their code host's native search functionality and report absolute confidence in that resolution to their customers.",
     },
     {
         subtitle: <h3 className="pb-3 mx-md-auto display-3 font-weight-bold text-blurple">100% confidence</h3>,
@@ -38,9 +38,7 @@ export const CaseStudy: FunctionComponent = () => (
         }}
         hero={
             <ProductHero
-                backButton={
-                    <BackButton href="/case-studies" text="Case Studies" />
-                }
+                backButton={<BackButton href="/case-studies" text="Case Studies" />}
                 variant="venusCode"
                 title="Codecov uses Sourcegraph to resolve incidents faster"
                 displayUnderNav={true}

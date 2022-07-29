@@ -41,9 +41,7 @@ export const CaseStudy: FunctionComponent = () => (
         }}
         hero={
             <ProductHero
-                backButton={
-                    <BackButton href="/case-studies" text="Case Studies" />
-                }
+                backButton={<BackButton href="/case-studies" text="Case Studies" />}
                 variant="venusCode"
                 title="Nutanix fixed Log4j quickly and confidently with Sourcegraph"
                 displayUnderNav={true}

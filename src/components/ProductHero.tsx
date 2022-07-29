@@ -31,11 +31,11 @@ export const ProductHero: FunctionComponent<Omit<ProductHero, 'className' | 'chi
         const defaultNavHeight = 74
         const nav = document.querySelector('.navbar')
         const navHeight = nav?.getBoundingClientRect().height || defaultNavHeight
-        
-        if (displayUnderNav) {            
+
+        if (displayUnderNav) {
             // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
             const rootElement = rootReference?.current
-            
+
             // TODO: Improve this with Tailwind
             if (rootElement) {
                 // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
@@ -48,11 +48,7 @@ export const ProductHero: FunctionComponent<Omit<ProductHero, 'className' | 'chi
 
     return (
         <div ref={rootReference}>
-            <Background
-                variant={variant}
-                illustration={illustration}
-                className="d-flex align-items-center min-h-600"
-            >
+            <Background variant={variant} illustration={illustration} className="d-flex align-items-center min-h-600">
                 <div className="container">
                     <div className="max-w-700 w-100">
                         {backButton}

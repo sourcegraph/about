@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { BackButtonBold, BackButton, BackButtonLight } from '@components'
+import { BackButtonBold, BackButtonLight } from '@components'
 
 import { COLORS } from '../Jumbotron'
 
