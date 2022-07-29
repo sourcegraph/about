@@ -8,6 +8,7 @@ import {
     BlogResourceItem,
     ContentSection,
     IntegrationsSection,
+    HubSpotForm,
     Layout,
     ProductHero,
     TwoColumnSection,
@@ -28,6 +29,9 @@ export const CodeSearchPage: FunctionComponent = () => (
                 product="code search"
                 title={'Search your code.\nAll of it.'}
                 description="Onboard to a new codebase, understand code faster, and identify security risks with universal code search."
+                cta={
+                    <HubSpotForm masterFormName="contactEmail" />
+                }
                 displayUnderNav={true}
             />
         }

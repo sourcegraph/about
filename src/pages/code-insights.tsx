@@ -23,6 +23,7 @@ import {
     Blockquote,
     ContentSection,
     CustomCarousel,
+    HubSpotForm,
     Layout,
     ProductHero,
     TabCarousel,
@@ -305,6 +306,9 @@ const CodeInsightsPage: FunctionComponent = () => (
                 product="code insights"
                 title={'Track what really matters\nto you and your team.'}
                 description="Transform your code into a queryable database to create customizable, visual dashboards in seconds."
+                cta={
+                    <HubSpotForm masterFormName="contactEmail" />
+                }
                 displayUnderNav={true}
             />
         }
