@@ -30,7 +30,10 @@ We're introducing the ability to run batch changes server-side instead of locall
 - Get a better debugging experience, with logs being streamed directly into Sourcegraph.
 - Simplify setup for local users (no local src-cli) by having the Sourcegraph admin manage server-side setup.
 
-![Server-side](https://storage.googleapis.com/sourcegraph-assets/blog/4.0/side-by-side.mp4)
+<video loop autoPlay muted playsInline>
+  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/4.0/side-by-side.mp4" type="video/mp4" data-cookieconsent="ignore" />
+</video>
+
 
 This feature requires admins to set up executors (much like CI agents), which Sourcegraph will use to offload expensive tasks. Executors can also be used to run [Code Intelligence auto-indexing](#TODO-link-to-section-or-docs). If you're on cloud, one or more executors are available by default on your instance.
 
