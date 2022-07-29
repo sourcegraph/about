@@ -99,6 +99,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                     }
                     rightColumn={
                         <Blockquote
+                            inline={false}
                             quote="At Criteo, developer happiness is our top priority-not just productivity. By providing them with the right tools, like Sourcegraph, we've found that increased productivity is a natural byproduct."
                             author="Francois Jehl, Senior Engineering Manager at Criteo"
                             logo={{
@@ -132,7 +133,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                                 code changes with the confidence of compiler-accurate code navigation.
                             </li>
                             <li className="mb-3">
-                                Determine root causes quickly with code navigation that tracks dependencies and
+                                Determine root causes quickly with precise code navigation that tracks dependencies and
                                 references across repositories.
                             </li>
                         </ul>
@@ -198,7 +199,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                 <h2 className="mb-3">Get started with Code Search</h2>
                 <p>Connect your code hosts and experience universal code search.</p>
 
-                <div className="d-flex flex-column flex-sm-row mt-2">
+                <div className="d-flex flex-column flex-sm-row mt-2 col-12 w-100">
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
@@ -206,7 +207,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
-                            className="btn btn-primary mb-3 mb-sm-0"
+                            className="btn btn-primary mb-3 mb-sm-0 ml-sm-auto"
                         >
                             Request a demo
                         </a>
@@ -218,7 +219,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                             data-button-style={buttonStyle.outline}
                             data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
-                            className="btn btn-outline-primary ml-0 ml-sm-3"
+                            className="btn btn-outline-primary ml-0 ml-sm-3 mr-sm-auto"
                         >
                             Try Sourcegraph now
                         </a>

@@ -153,9 +153,7 @@ export const CoreFeatures: FunctionComponent = () => {
                         })}
                     >
                         <small className="text-uppercase font-weight-bold d-block mb-2">{feature.productFeature}</small>
-                        <h2 className={classNames('font-weight-bold', { 'max-w-350': index !== 0 })}>
-                            {feature.title}
-                        </h2>
+                        <h2>{feature.title}</h2>
                         <p>{feature.description}</p>
                         <ul>
                             {feature.details.map(detail => (
