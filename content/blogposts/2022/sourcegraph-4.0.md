@@ -58,3 +58,10 @@ Sourcegraph returns an exhaustive list of search results – but sometimes you n
 - What are all the possible arguments we can pass to this function? 
 
 To answer these questions, Sourcegraph now shows you your search results grouped by location (repo or file), author, and arbitrary capture group pattern. If you want to save any aggregations for future reference, you can 1-click save the results to a code insights dashboard.
+
+### Best-in-class performance
+
+<!-- @taylorsperry within the next couple weeks, we'll have a better understanding of the performance claims we can make against our competition -->
+Sourcegraph is now faster than ever. We're using the latest in React, lazy loading, and priority rendering to deliver best-in-class performance across the app. Faster rendering means faster answers to any question about your code.
+
+<!-- TODO before/after or sg/gh comparison gifs -->
