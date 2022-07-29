@@ -28,12 +28,14 @@ Infrastructure as code (IaC) is the process of managing and provisioning cloud i
 <Figure 
   src="/blog/cloud-optimization-part-1-visibility/google-cloud-settings-form.png"
   alt="Google cloud settings form"
-  caption="Creating a new GCP VM using the GCP web console (https://console.cloud.google.com/compute/instancesAdd)"
+  caption="Creating a new GCP VM using the GCP web console"
+  link="https://console.cloud.google.com/compute/instancesAdd"
 />
 <Figure 
   src="/blog/cloud-optimization-part-1-visibility/sourcegraph-cloud-settings.png"
   alt="Sourcegraph cloud settings json"
-  caption="Configuring a new or existing GCP VM using a Terraform configuration file (tutorial: https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/getting_started#provisioning-your-resources)"
+  caption="Configuring a new or existing GCP VM using a Terraform configuration file"
+  link="https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/getting_started#provisioning-your-resources"
 />
 
 According to [Gartner research](https://www.gartner.com/en/documents/3992065), less than 5% of server provisioning utilized IaC in 2020, and only 40% is expected to do so by 2023. This means that the vast majority of cloud infrastructure is manually provisioned, built on a huge amount of untraceable scripts, or manually configured in the cloud provider interface.
