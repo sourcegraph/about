@@ -228,7 +228,9 @@ export const CodeSearchPage: FunctionComponent = () => (
         </Background>
 
         <ContentSection color="white" className="py-7">
-            <h2 className="font-weight-bold mb-6">Learn more</h2>
+            <div className="col-lg-6">
+                <h2 className="font-weight-bold mb-6">Learn more</h2>
+            </div>
 
             {[
                 {
