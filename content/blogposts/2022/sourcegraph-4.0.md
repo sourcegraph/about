@@ -28,7 +28,7 @@ We're introducing the ability to run batch changes server-side instead of locall
 - Run large-scale or resource intensive batch changes without clogging your local machine.
 - Run large batch changes fast by distributing them across an autoscaled pool of compute instances.
 - Get a better debugging experience, with logs being streamed directly into Sourcegraph.
-- Simplify setup for local users (no local src-cli) by having the Sourcegraph admin manage server-side setup.
+- Simplify setup for end users.
 
 <video loop autoPlay muted playsInline>
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/4.0/side-by-side.mp4" type="video/mp4" data-cookieconsent="ignore" />
