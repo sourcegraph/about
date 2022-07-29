@@ -24,7 +24,7 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
             }
         )}
     >
-        <div className={classNames('col-lg-6 pr-lg-4 pl-lg-0', { 'mb-4 mb-lg-0': !reverseOnMobile })}>{leftColumn}</div>
-        <div className={classNames('col-lg-6 pl-lg-4 pr-lg-0', { 'mb-4 mb-lg-0': reverseOnMobile })}>{rightColumn}</div>
+        <div className={classNames('col-lg-6 pr-lg-4', { 'mb-4 mb-lg-0': !reverseOnMobile })}>{leftColumn}</div>
+        <div className={classNames('col-lg-6 pl-lg-4', { 'mb-4 mb-lg-0': reverseOnMobile })}>{rightColumn}</div>
     </div>
 )
