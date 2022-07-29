@@ -119,22 +119,6 @@ const backgrounds: { [key: string]: StaticImageData } = {
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 const illustrations: { [key: string]: string } = { changes, insights, search }
 
-// Illustration style for size and positioning
-const illustrationStyle: IllustrationStyle = {
-    search: {
-        size: '700px',
-        position: '25%',
-    },
-    changes: {
-        size: '520px',
-        position: '30%',
-    },
-    insights: {
-        size: '1200px',
-        position: '5%',
-    },
-}
-
 /**
  * This is a Background component as described in our DLS.
  *
@@ -143,30 +127,46 @@ const illustrationStyle: IllustrationStyle = {
  * @param props.children - ReactNode
  * @param props.illustration - an optional string for an illustration bg image
  * @param props.className - optional classNames
- * @param props.style - optional CSS style properties
  * @returns ReactNode
  */
-export const Background: FunctionComponent<Background> = ({ variant, children, illustration, className, style }) => {
+export const Background: FunctionComponent<Background> = ({ variant, children, illustration, className }) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
+    const isLargeDesktop = windowWidth > 1600
+
+    // Illustration style for size and positioning
+    const illustrationStyle: IllustrationStyle = {
+        search: {
+            size: '650px',
+            position: isLargeDesktop ? '20%' : '5%'
+        },
+        changes: {
+            size: '520px',
+            position: '30%',
+        },
+        insights: {
+            size: '1200px',
+            position: '5%',
+        },
+    }
 
     const backgroundSource: string = backgrounds[variant].src
-
     let background = `url("${backgroundSource}") center / cover no-repeat`
     if (illustration) {
         const illustrationSource: string = illustrations[illustration]
         const illustrationSize: string = illustrationStyle[illustration].size
         const illustrationPosition: string = illustrationStyle[illustration].position
 
-        background = `url(${illustrationSource}) center right ${illustrationPosition} / ${
-            isMobile ? 'contain' : illustrationSize
-        } no-repeat, ${background}`
+        if (!isMobile) {
+            background = `url(${illustrationSource}) center right ${illustrationPosition} / ${illustrationSize} no-repeat, ${background}`
+        }
     }
 
     return (
         <div
+            // TODO: Remove style when Tailwind is in
             // eslint-disable-next-line react/forbid-dom-props
-            style={{ background, ...style }}
+            style={{ background }}
             className={className}
         >
             {children}
