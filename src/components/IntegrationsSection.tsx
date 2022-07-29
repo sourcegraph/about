@@ -161,16 +161,12 @@ export const IntegrationsSection: FunctionComponent = () => (
                 <ul className="list-inline d-inline-flex flex-wrap">
                     <li className="list-inline-item text-wrap">
                         <h6 className="font-weight-normal">Self-hosted by you:</h6>
-                        <ul className="p-0">
-                            {renderListItems(selfHostedOptions)}
-                        </ul>
+                        <ul className="p-0">{renderListItems(selfHostedOptions)}</ul>
                     </li>
 
                     <li className="list-inline-item text-wrap">
                         <h6 className="font-weight-normal mt-3">Managed and hosted by us:</h6>
-                        <ul className="p-0">
-                            {renderListItems(['Docker Compose in GCP'])}
-                        </ul>
+                        <ul className="p-0">{renderListItems(['Docker Compose in GCP'])}</ul>
                     </li>
                 </ul>
                 <a

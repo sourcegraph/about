@@ -49,7 +49,6 @@ export {
     CaseStudyJumbotron,
     CaseStudyLayout,
     CaseStudyCard,
-    NewCaseStudyJumbotron,
     NewCaseStudyLayout,
     UseChallengeSolutionResults,
 } from './CaseStudies'

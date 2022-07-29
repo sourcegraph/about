@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
-import { Blockquote, ContentSection, Figure, Layout, Video, TrySourcegraph, YouTube, ProductHero } from '@components'
+import { Blockquote, ContentSection, Figure, Layout, HubSpotForm, Video, TrySourcegraph, YouTube, ProductHero } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const batchChangesDemoFormURL = '/contact/request-batch-changes-demo'
@@ -21,6 +21,9 @@ export const BatchChangesPage: FunctionComponent = () => (
                 product="batch changes"
                 title={'Automate large-scale\ncode changes'}
                 description="Keep your code up to date, fix critical security issues, and pay down tech debt across all of your repositories with Batch Changes."
+                cta={
+                    <HubSpotForm masterFormName="contactEmail" />
+                }
                 displayUnderNav={true}
             />
         }

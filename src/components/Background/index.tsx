@@ -138,7 +138,7 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
     const illustrationStyle: IllustrationStyle = {
         search: {
             size: '650px',
-            position: isLargeDesktop ? '20%' : '5%'
+            position: isLargeDesktop ? '20%' : '5%',
         },
         changes: {
             size: '520px',

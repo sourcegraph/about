@@ -20,6 +20,12 @@ interface CaseStudy {
 // TODO: This data will eventually live in our CMS
 export const CASESTUDIES: CaseStudy[] = [
     {
+        name: 'Codecov',
+        logo: '/external-logos/codecov-logo.svg',
+        title: 'Codecov uses Sourcegraph to resolve incidents 12 times faster.',
+        url: '/case-studies/codecov-uses-sourcegraph-to-resolve-incidents-faster',
+    },
+    {
         name: 'Nutanix',
         logo: '/external-logos/nutanix-logo.svg',
         title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph.',
@@ -151,7 +157,6 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                         </Link>
                     )}
                 </span>
-                .
             </p>
         </div>
     </div>
