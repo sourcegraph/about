@@ -20,7 +20,7 @@ changelogItems:
 
 ### Run batch changes server-side
 
-<!-- @malomarrec: The title is the feature, as opposed to the benefit, because there's multiple benefits. Another angle would be to focus on the primary benefit and title this "Run batch changes at large scales" --!>
+<!-- @malomarrec: The title is the feature, as opposed to the benefit, because there's multiple benefits. Another angle would be to focus on the primary benefit and title this "Run batch changes at large scales" -->
 
 Batch Changes can now run across thousands of repositories, and features a much better development experience. Until now, you had to run `src-cli` locally to create batch changes: `src-cli` would pull repo archives through Sourcegraph, and kick off docker containers locally to run your batch change. For large amounts of repositories or resource-intensive code rewrites, running src-cli locally could take an impractical amount of time or be brittle.
 
@@ -40,6 +40,6 @@ IDEs can find and replace strings across you local files. Sourcegraph can find a
 
 Just run a search query, provide a pattern to find and replace, and get a live preview of the diff. If the changes look good, Batch Changes can send them for review to your team, then automatically and safely open changesets across all your repositories, and let you track them until they get merged. 
 
-<!-- @malomarrec: this is a placeholder>
+<!-- @malomarrec: this is a placeholder -->
 <img width="1497" alt="placeholder-sourcegraph-find-and-replace" src="https://user-images.githubusercontent.com/25070988/181726971-13007592-c3b9-4f69-a8f3-54e0cf13b7ea.png">
 
