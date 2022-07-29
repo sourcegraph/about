@@ -3,7 +3,7 @@ title: 'Cloud cost optimization: Part 1 - Create visibility'
 authors:
   - name: Christina Forney
     url: https://handbook.sourcegraph.com/team/#christina-forney
-publishDate: 2022-07-28T10:00-07:00
+publishDate: 2022-07-29T10:00-07:00
 description: 'The first part in a four part series on how you can reduce cloud costs. The first piece reviews the importance of creating visibility and practical ways you can do this using Sourcegraph.'
 tags: [blog, infrastructure as code, devops, cloud cost reduction]
 slug: 'cloud-optimization-part-1-visibility'
