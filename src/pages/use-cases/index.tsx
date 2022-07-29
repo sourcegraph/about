@@ -172,7 +172,7 @@ const UseCases: React.FunctionComponent = () => (
                                 and production environments
                             </li>
                             <li>
-                                Navigate large codebases with definitions and references with advanced Code Intelligence
+                                Understand large codebases with definitions and references with advanced code navigation
                             </li>
                             <li>Get answers faster with shareable links to specific code</li>
                         </ul>

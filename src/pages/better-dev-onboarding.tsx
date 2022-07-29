@@ -7,10 +7,10 @@ import {
     BlogResourceItem,
     ContentSection,
     CustomerLogos,
-    FeatureWalkthrough,
+    CoreFeatures,
+    HubSpotForm,
     IntegrationsSection,
     Layout,
-    HubSpotForm,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -80,7 +80,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection className="pb-8">
-            <FeatureWalkthrough />
+            <CoreFeatures />
         </ContentSection>
 
         <div className="bg-light-gray-3">

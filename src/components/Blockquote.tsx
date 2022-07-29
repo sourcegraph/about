@@ -1,5 +1,6 @@
 import { FunctionComponent, ReactFragment } from 'react'
 
+import classNames from 'classnames'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
@@ -26,7 +27,7 @@ export const Blockquote: FunctionComponent<{
     largeText?: boolean
     border?: boolean
     borderColor?: string
-    inline?: boolean
+    inline?: boolean // inline vs. col layout
 }> = ({ quote, author, logo, link, headline, largeText = false, border = true, borderColor, inline = true }) => {
     const windowWidth = useWindowWidth()
     const isMdOrDown = windowWidth < breakpoints.lg
@@ -50,40 +51,41 @@ export const Blockquote: FunctionComponent<{
     }
 
     return (
-        <blockquote className={getBorderStyle()}>
+        <blockquote className={classNames(getBorderStyle(), 'px-4')}>
             {headline ? (
                 largeText ? (
                     <h2 className="font-weight-bold">{headline}</h2>
                 ) : (
-                    <h4 className="font-weight-bold mb-4 px-4">{headline}</h4>
+                    <h4 className="font-weight-bold mb-4">{headline}</h4>
                 )
             ) : null}
 
             {largeText ? (
-                <h3 className="font-weight-normal text-3xl px-4">&ldquo;{quote}&rdquo;</h3>
+                <h3 className="font-weight-normal text-3xl">&ldquo;{quote}&rdquo;</h3>
             ) : (
-                <h5 className="font-weight-normal px-4">&ldquo;{quote}&rdquo;</h5>
+                <h5 className="font-weight-normal">&ldquo;{quote}&rdquo;</h5>
             )}
 
-            {author && <figcaption className="text-muted px-4 pt-3">&mdash; {author}</figcaption>}
+            {author && <figcaption className="text-muted mt-3">&mdash; {author}</figcaption>}
 
             {logo &&
                 (logo.href ? (
                     <Link href={logo.href} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a className="btn">
-                            <img src={logo.src} width="110px" alt={logo.alt} />
+                        <a>
+                            <img src={logo.src} className="mt-3" width="110px" alt={logo.alt} />
                         </a>
                     </Link>
                 ) : (
-                    <div className="d-flex justify-content-center pt-2">
-                        <img src={logo.src} width="110px" alt={logo.alt} />
-                    </div>
+                    <img src={logo.src} className="mt-3" width="110px" alt={logo.alt} />
                 ))}
+            
+            <br />
 
             {link &&
                 (link?.href.includes('http') ? (
                     <a
+                        className={classNames('mt-3 d-flex', !border && 'justify-content-center')}
                         href={link.href}
                         target="_blank"
                         rel="nofollow noreferrer"
@@ -99,7 +101,7 @@ export const Blockquote: FunctionComponent<{
                     <Link href={link.href} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="d-flex justify-content-center mt-3"
+                            className={classNames('mt-3 d-flex', !border && 'justify-content-center')}
                             title={link.text}
                             data-button-style={buttonStyle.textWithArrow}
                             data-button-location={buttonLocation.body}

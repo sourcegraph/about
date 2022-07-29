@@ -16,7 +16,7 @@ import { buttonStyle, buttonLocation } from '@data'
 /** The Starter feature set. */
 const STARTER_FEATURES: Features = {
     codeSearch: true,
-    codeIntelligence: true,
+    codeNavigation: true,
     batchChanges: false,
     batchChangesTrial: true,
     codeInsights: false,
@@ -44,7 +44,7 @@ const TEAM_FEATURES: Features = { ...STARTER_FEATURES, singleSignOn: false, user
 
 const ENTERPRISE_FEATURES: Features = {
     codeSearch: false,
-    codeIntelligence: false,
+    codeNavigation: false,
     codeHostIntegration: false,
     api: true,
     selfHosted: false,

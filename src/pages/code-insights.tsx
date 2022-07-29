@@ -23,8 +23,8 @@ import {
     Blockquote,
     ContentSection,
     CustomCarousel,
-    HubSpotForm,
     Layout,
+    ProductHero,
     TabCarousel,
     TemplateCodeBlock,
     YouTube,
@@ -294,33 +294,19 @@ const blogResourceItems = [
 const CodeInsightsPage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph | Code Insights',
+            title: 'Sourcegraph - Code Insights',
             description:
                 'Draw insights from your codebase about how different initiatives are tracking over time. Code Insights is now generally available for teams of all sizes.',
         }}
         className="code-insights-page"
-        heroAndHeaderClassName="code-insights-page__hero-and-header navbar-light"
         hero={
-            <>
-                <div className="bg" />
-                <div className="container pb-4">
-                    <div className="row">
-                        <div className="col-lg-7">
-                            <div className="text-uppercase mb-2">Code Insights</div>
-                            <h1 className="display-2 font-weight-bold mb-4">
-                                Track what really matters to you and your team.
-                            </h1>
-                            <h4 className="mb-5">
-                                Transform your code into a queryable database to create customizable, visual dashboards
-                                in seconds.
-                            </h4>
-                            <div className="d-flex flex-column pt-1 max-w-400">
-                                <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </>
+            <ProductHero
+                variant="lightNebulousVenus2"
+                product="code insights"
+                title={'Track what really matters\nto you and your team.'}
+                description="Transform your code into a queryable database to create customizable, visual dashboards in seconds."
+                displayUnderNav={true}
+            />
         }
     >
         <ContentSection className="py-lg-8 py-7">
@@ -342,7 +328,10 @@ const CodeInsightsPage: FunctionComponent = () => (
                 </div>
                 <div className="col-lg-7 mb-md-4 pl-lg-5 d-flex align-items-center video-container">
                     <Video
-                        source={{ webm: 'code_insights/code-insights-720', mp4: 'code_insights/code-insights-720' }}
+                        source={{
+                            mp4: 'code_insights/code-insights-720',
+                            webm: 'code_insights/code-insights-720',
+                        }}
                         title="Code Insights"
                         caption="Code Insights"
                         loop={true}

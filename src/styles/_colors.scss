@@ -48,6 +48,10 @@ $gray-4: #8a8a8a;
 $gray-3: #c4c4c4;
 $gray-2: #e7e7e7;
 
+// New DLS colors
+$gray-200: #ebeff3;
+$gray-500: #484B51;
+
 $green-1: #d3f9d8;
 $green-5: #51cf66;
 $green-7: #37b24d;
@@ -112,6 +116,10 @@ $theme-colors: (
     'gray-5': $gray-5,
     'gray-4': $gray-4,
     'gray-3': $gray-3,
+    'gray-2': $gray-2,
+
+    'gray-200': $gray-200,
+    'gray-500': $gray-500,
 
     'green-1': $green-1,
     'green-5': $green-5,

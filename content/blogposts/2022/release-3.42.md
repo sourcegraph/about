@@ -57,12 +57,6 @@ This is especially useful for engineers joining new teams or onboarding to a cod
 
 ![Search for repository by description](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/repo-description-search.png)
 
-## Smart search suggestions with lucky search
-
-We have a new search type available experimentally, called "Lucky search." It improves the quality of your search experience by giving you smart suggestions for alternate queries, and it even runs them automatically to make sure they have results before recommending them. You can enable it by setting `"search.defaultPatternType": "lucky"` in settings.
-
-![Search suggestion example](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/lucky-search.png)
-
 ## Code Insights load faster and include more historical datapoints
 
 <Video
