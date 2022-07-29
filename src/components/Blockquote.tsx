@@ -66,7 +66,7 @@ export const Blockquote: FunctionComponent<{
                 <h5 className="font-weight-normal">&ldquo;{quote}&rdquo;</h5>
             )}
 
-            {author && <figcaption className="text-muted pt-3">&mdash; {author}</figcaption>}
+            {author && <figcaption className="text-muted mt-3">&mdash; {author}</figcaption>}
 
             {logo &&
                 (logo.href ? (
