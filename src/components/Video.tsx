@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 interface Video {
+    host?: 'gcp' | 'self'
     source: {
         webm: string
         mp4: string
@@ -13,7 +14,13 @@ interface Video {
     autoPlay?: boolean
 }
 
+const hosts = {
+    gcp: 'https://storage.googleapis.com/sourcegraph-assets/',
+    self: '',
+}
+
 export const Video: FunctionComponent<Video> = ({
+    host = 'gcp',
     source,
     loop,
     caption,
@@ -36,16 +43,8 @@ export const Video: FunctionComponent<Video> = ({
             // GCS does not set cookies, so we don't want Cookiebot to block this video based on consent
             data-cookieconsent="ignore"
         >
-            <source
-                type="video/mp4"
-                src={`https://storage.googleapis.com/sourcegraph-assets/${source.mp4}.mp4`}
-                data-cookieconsent="ignore"
-            />
-            <source
-                type="video/webm"
-                src={`https://storage.googleapis.com/sourcegraph-assets/${source.webm}.webm`}
-                data-cookieconsent="ignore"
-            />
+            <source type="video/webm" src={`${hosts[host]}${source.webm}.webm`} data-cookieconsent="ignore" />
+            <source type="video/mp4" src={`${hosts[host]}${source.mp4}.mp4`} data-cookieconsent="ignore" />
             {caption && caption}
         </video>
         {showCaption && <figcaption>{caption}</figcaption>}

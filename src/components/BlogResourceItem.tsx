@@ -20,8 +20,9 @@ interface Blog {
 }
 
 export const BlogResourceItem: FunctionComponent<Props> = ({ blog }) => (
-    <div className="w-100 row mx-0 mb-5 pb-4 border-bottom">
+    <div className="w-100 row mx-0 mb-5 pb-5 border-bottom">
         <div className="col-sm-8 col-md-9">
+            <h6 className="text-uppercase font-weight-bold text-primary">{blog.type}</h6>
             <a
                 href={blog.href}
                 title={blog.title}
@@ -29,13 +30,15 @@ export const BlogResourceItem: FunctionComponent<Props> = ({ blog }) => (
                 data-button-location={buttonLocation.body}
                 data-button-type="cta"
             >
-                <h3 className="font-weight-bold">{blog.title}</h3>
+                <h3 className="font-weight-normal text-black">{blog.title}</h3>
             </a>
-            <p className="text-gray-5">{blog.type}</p>
             <p>{blog.description}</p>
         </div>
         <div className="col-sm-4 col-md-3 d-flex align-items-center">
-            {blog.img && <img className="flex-1 w-100" alt={blog.img.alt} src={blog.img.src} />}
+            {/* eslint-disable-next-line react/forbid-dom-props */}
+            <div className="d-inline-block max-w-250 w-100 min-h-150" style={{ height: '100%' }}>
+                <img className="flex-1 w-100" alt={blog.img ? blog.img.alt : blog.title} src={blog.img ? blog.img.src : '/blog/thumbnails/default.png'} />
+            </div>
         </div>
     </div>
 )

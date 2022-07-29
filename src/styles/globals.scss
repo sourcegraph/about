@@ -23,7 +23,14 @@ $font-weight-semibold: 600;
 $font-weight-bold: $font-weight-semibold; /* uses Source Sans Pro Semi-bold */
 $font-weight-bolder: 700; /* uses Source Sans Pro Bold */
 
-$headings-font-weight: 700; /* uses Source Sans Pro Bold */
+$headings-font-weight: $font-weight-semibold;
+
+$h1-font-size: 3.25rem; // 72px
+$h2-font-size: 2.5rem; // 40px
+$h3-font-size: 1.875rem; // 30px
+$h4-font-size: 1.5rem; // 24px
+$h5-font-size: 1.25rem; // 20px
+$h6-font-size: 1.125rem; // 18px
 
 $input-btn-padding-y: 0.55rem;
 
@@ -97,6 +104,21 @@ $card-spacer-y: 1.25 * $spacer;
 $card-spacer-x: 1.25 * $spacer;
 
 $grid-gutter-width: 2rem;
+
+$container-max-widths: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+);
 
 :root {
     --body-color: #{$dark-8};
@@ -192,7 +214,6 @@ table tbody + tbody {
 @import 'components/TemplateCodeBlock';
 @import 'components/TestimonialCarousel';
 @import 'components/Tweets';
-@import 'pages/batch-changes';
 @import 'pages/community';
 @import 'pages/_case_studies';
 @import 'pages/content';

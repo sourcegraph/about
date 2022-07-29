@@ -6,15 +6,6 @@ import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
 
-import batchChangesMp4 from './animations/batch-changes.mp4'
-import batchChangesWebm from './animations/batch-changes.webm'
-import codeInsightsMp4 from './animations/code-insights.mp4'
-import codeInsightsWebm from './animations/code-insights.webm'
-import codeIntelMp4 from './animations/code-intel.mp4'
-import codeIntelWebm from './animations/code-intel.webm'
-import codeSearchMp4 from './animations/code-search.mp4'
-import codeSearchWebm from './animations/code-search.webm'
-
 interface Video {
     mp4: string
     webm: string
@@ -47,12 +38,12 @@ export const features: Features[] = [
         ],
         ctaLink: '/code-search',
         video: {
-            mp4: codeSearchMp4,
-            webm: codeSearchWebm,
+            mp4: '/animations/code-search.mp4',
+            webm: '/animations/code-search.webm',
         },
     },
     {
-        productFeature: 'code intelligence',
+        productFeature: 'code navigation',
         title: 'Navigate your codebase and your dependencies',
         description:
             'Follow symbol definitions and references across packages, dependencies, and repositories seamlessly.',
@@ -61,10 +52,10 @@ export const features: Features[] = [
             'Navigate your code in your web browser to see any commit, on any branch, of any repository instantly',
             'Follow dependencies across repositories with confidence using precompiled data for speed and precision',
         ],
-        ctaLink: 'https://docs.sourcegraph.com/code_intelligence',
+        ctaLink: '/code-search',
         video: {
-            mp4: codeIntelMp4,
-            webm: codeIntelWebm,
+            mp4: '/animations/code-intel.mp4',
+            webm: '/animations/code-intel.webm',
         },
     },
     {
@@ -83,8 +74,8 @@ export const features: Features[] = [
         ],
         ctaLink: '/batch-changes',
         video: {
-            mp4: batchChangesMp4,
-            webm: batchChangesWebm,
+            mp4: '/animations/batch-changes.mp4',
+            webm: '/animations/batch-changes.webm',
         },
     },
     {
@@ -99,13 +90,13 @@ export const features: Features[] = [
         ],
         ctaLink: '/code-insights',
         video: {
-            mp4: codeInsightsMp4,
-            webm: codeInsightsWebm,
+            mp4: '/animations/code-insights.mp4',
+            webm: '/animations/code-insights.webm',
         },
     },
 ]
 
-export const FeatureWalkthrough: FunctionComponent = () => {
+export const CoreFeatures: FunctionComponent = () => {
     useEffect(() => {
         const videos = features.map(
             (vid, index): VideoElement => ({
@@ -162,9 +153,7 @@ export const FeatureWalkthrough: FunctionComponent = () => {
                         })}
                     >
                         <small className="text-uppercase font-weight-bold d-block mb-2">{feature.productFeature}</small>
-                        <h2 className={classNames('font-weight-bold', { 'max-w-350': index !== 0 })}>
-                            {feature.title}
-                        </h2>
+                        <h2>{feature.title}</h2>
                         <p>{feature.description}</p>
                         <ul>
                             {feature.details.map(detail => (

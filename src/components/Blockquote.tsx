@@ -79,6 +79,8 @@ export const Blockquote: FunctionComponent<{
                 ) : (
                     <img src={logo.src} className="mt-3" width="110px" alt={logo.alt} />
                 ))}
+            
+            <br />
 
             {link &&
                 (link?.href.includes('http') ? (

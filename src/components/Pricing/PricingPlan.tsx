@@ -11,8 +11,8 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
         description:
             'Super-fast, intuitive, and powerful code search across 10,000s of repositories, with smart filters and more',
     },
-    codeIntelligence: {
-        label: 'Code intelligence',
+    codeNavigation: {
+        label: 'Code navigation',
         description: 'Code navigation for 30+ languages, with hovers, definitions, and references across repositories',
     },
     batchChanges: {
@@ -108,7 +108,7 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
 
 const FEATURE_ORDER: (keyof Features)[] = [
     'codeSearch',
-    'codeIntelligence',
+    'codeNavigation',
     'codeHostIntegration',
     'selfHosted',
     'multipleCodeHosts',
