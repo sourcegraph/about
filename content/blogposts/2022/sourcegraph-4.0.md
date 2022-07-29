@@ -18,7 +18,6 @@ changelogItems:
 ## Section 2
 
 
-
 ### Run batch changes server-side
 
 <!-- @malomarrec: The title is the feature, as opposed to the benefit, because there's multiple benefits. Another angle would be to focus on the primary benefit and title this "Run batch changes at large scales" -->
