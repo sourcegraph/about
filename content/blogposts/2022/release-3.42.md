@@ -26,6 +26,10 @@ changelogItems:
 ---
 
 <Alert>
+  <strong>Update as of July 29:</strong> Patch 3.42.1 has been released, which fixes the issue below. If you previously download 3.42.0 and turned off `sgm`, we recommend upgrading to 3.42.1 and turning on `sgm` to fix any repo corruption.
+</Alert>
+
+<Alert>
   <strong>Update as of July 27:</strong> We identified a bug in Sourcegraph 3.42 that can cause issues with gitserver. We are working to fix this in an upcoming patch. In the meantime, we recommend running version 3.41.
 </Alert>
 
