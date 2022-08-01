@@ -36,6 +36,7 @@ Missing from Adam’s current setup is the custom-built and programmed split key
   source={{webm: 'blog/dev-tool-time/adam-gordon-bell/custom-keyboard-struggle', mp4: 'blog/dev-tool-time/adam-gordon-bell/custom-keyboard-struggle'}} 
   loop={false}
   title="Adam’s custom keyboard and struggle" 
+  caption="Adam’s custom keyboard and struggle"
   controls={true}
   autoPlay={false}
 />
