@@ -4,7 +4,7 @@ description: 'Auto-indexing is now available, making it easy to enable precise c
 authors:
   - name: María Craig
     url: 
-publishDate: 2022-07-29T18:00+02:00
+publishDate: 2022-08-01T18:00+02:00
 tags: [blog]
 slug: announcing-auto-indexing
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/auto-indexing/auto-indexing-hero.png
