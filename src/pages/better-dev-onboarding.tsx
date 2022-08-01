@@ -87,7 +87,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
             <IntegrationsSection />
         </div>
 
-        <ContentSection className="py-lg-6 py-5">
+        <ContentSection className="py-7">
             <div className="row d-flex">
                 <div className="col-lg-6">
                     <h1 className="mb-5 font-weight-bold">Related resources</h1>

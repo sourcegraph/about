@@ -143,7 +143,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
             </section>
         </div>
 
-        <div className="container max-w-900 my-md-8 my-6 px-0">
+        <div className="container max-w-900 py-7 px-0">
             <div className="col-lg-6">
                 <h1 className="mb-5 font-weight-bold">Related resources</h1>
             </div>
