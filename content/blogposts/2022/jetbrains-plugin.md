@@ -11,3 +11,25 @@ published: true
 heroImage: /blog/thumbnail-image.jpg
 socialImage: Use to set large social image i.e.  https://about.sourcegraph.com/blog/sourcegraph-social-img.png
 ---
+
+<Video 
+  source={{
+    webm: 'blog/jetbrains-plugin/jetbrains-ide',
+    mp4: 'blog/jetbrains-plugin/jetbrains-ide'
+  }}
+  loop={true}
+  title="Code reuse"
+  caption="An example of searching code with the JetBrains IDE"
+  showCaption={true}
+/>
+
+<Video 
+  source={{
+    webm: 'blog/jetbrains-plugin/jetbrains-copy-link',
+    mp4: 'blog/jetbrains-plugin/jetbrains-copy-link'
+  }}
+  loop={true}
+  title="Code reuse"
+  caption="An example of copying a shareable Sourcegraph link within the IDE"
+  showCaption={true}
+/>
