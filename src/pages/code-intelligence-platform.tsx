@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, BlogResourceItem, ContentSection, TwoColumnSection, Video } from '@components'
+import { Layout, BlogResourceItem, ContentSection, TwoColumnSection, QuoteCarousel, Video } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const blogResourceItems = [
@@ -27,6 +27,27 @@ const blogResourceItems = [
             alt: 'Two people putting magnifying glasses into a shopping cart',
         },
         href: '/blog/things-to-know-before-building-a-code-search-tool',
+    },
+]
+
+const quoteCarouselItems = [
+    {
+        quote: 'For developers, Sourcegraph is a must-have tool 一 we need it at arm\'s length at all times.',
+        by: 'Derrick Faunce, Associate Director of Developer Services, Factset',
+        logoImage: '/external-logos/factset-logo.svg',
+        logoAlt: 'Factset Logo',
+    },
+    {
+        quote: 'Sourcegraph is our answer for sharing information and facilitating easy collaboration across teams, despite the boundaries of distance and time.',
+        by: 'Satish Surapaneni, Senior Manager, Engineering, F5',
+        logoImage: '/external-logos/f5-logo.svg',
+        logoAlt: 'F5 Logo',
+    },
+    {
+        quote: 'Sourcegraph gives us the ability to search for and refactor references to deprecated services, libraries, URL patterns, and move across our 2000+ repositories, and the confidence that we\'re not leaving anyone behind.',
+        by: 'Aneesh Agrawal, Software Engineer, Lyft',
+        logoImage: '/external-logos/lyft-logo.svg',
+        logoAlt: 'Lyft Logo',
     },
 ]
 
@@ -168,7 +189,11 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             />
         </ContentSection>
 
-        {/* TODO: Saturn quote carousel */}
+        <div className="bg-gradient-saturn">
+            <ContentSection>
+                <QuoteCarousel items={quoteCarouselItems} />
+            </ContentSection>
+        </div>
 
         <ContentSection className="py-7">
             <section className="max-w-800 mx-auto text-md-center">

@@ -82,7 +82,7 @@ export const Blockquote: FunctionComponent<{
 
             <br />
 
-            {link &&
+            {link?.href &&
                 (link?.href.includes('http') ? (
                     <a
                         className={classNames('mt-3 d-flex', !border && 'justify-content-center')}
