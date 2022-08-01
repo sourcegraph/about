@@ -33,7 +33,6 @@ ThePrimeagen is known for his Vim mastery, which he demonstrates on stream with 
   loop={false}
   title="Watch ThePrimeagen demonstrate his setup for navigating windows consistently" 
   caption="Watch ThePrimeagen demonstrate his setup for navigating windows consistently"
-  showCaption={true}
   controls={true}
   autoPlay={false}
 />
@@ -47,7 +46,6 @@ Configuration is personal, though, and while ThePrimeagen's [dotfiles](https://g
   loop={false}
   title="Listen to ThePrimeagen discuss the importance of reducing complexity to reduce unnecessary thinking" 
   caption="Listen to ThePrimeagen discuss the importance of reducing complexity to reduce unnecessary thinking"
-  showCaption={true}
   controls={true}
   autoPlay={false}
 />
@@ -61,7 +59,6 @@ Reducing cognitive overhead is as much about taking advantage of existing tools 
   loop={false}
   title="Watch ThePrimeagen demonstrate one of his favorite Git features: worktrees" 
   caption="Watch ThePrimeagen demonstrate one of his favorite Git features: worktrees"
-  showCaption={true}
   controls={true}
   autoPlay={false}
 />
@@ -75,7 +72,6 @@ In his VimConf 2020 talk, ["Vim Speed and Excellence"](https://www.youtube.com/w
   loop={false}
   title="Listen to ThePrimeagen's deep dive on Vim keybindings and time" 
   caption="Listen to ThePrimeagen's deep dive on Vim keybindings and time"
-  showCaption={true}
   controls={true}
   autoPlay={false}
 />

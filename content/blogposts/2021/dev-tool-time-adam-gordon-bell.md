@@ -36,8 +36,6 @@ Missing from Adam’s current setup is the custom-built and programmed split key
   source={{webm: 'blog/dev-tool-time/adam-gordon-bell/custom-keyboard-struggle', mp4: 'blog/dev-tool-time/adam-gordon-bell/custom-keyboard-struggle'}} 
   loop={false}
   title="Adam’s custom keyboard and struggle" 
-  caption="Adam’s custom keyboard and struggle"
-  showCaption={true}
   controls={true}
   autoPlay={false}
 />
@@ -53,7 +51,6 @@ Adam’s main writing environment isn’t Google Docs, or even a speciality Mark
   loop={false}
   title="See Vale in action detecting “corporate speak" 
   caption="See Vale in action detecting “corporate speak"
-  showCaption={true}
   controls={true}
   autoPlay={false}
 />
@@ -69,7 +66,6 @@ He uses [Earthly](https://earthly.dev/), which he describes as a Makefile and Do
   loop={false}
   title="Listen to Adam talk about two approaches to build pipelines" 
   caption="Listen to Adam talk about two approaches to build pipelines"
-  showCaption={true}
   controls={true}
   autoPlay={false}
 />

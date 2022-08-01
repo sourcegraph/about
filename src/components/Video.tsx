@@ -7,8 +7,7 @@ interface Video {
         mp4: string
     }
     loop: boolean
-    showCaption?: boolean
-    caption: string
+    caption?: string
     title: string
     controls?: boolean
     autoPlay?: boolean
@@ -24,7 +23,6 @@ export const Video: FunctionComponent<Video> = ({
     source,
     loop,
     caption,
-    showCaption = false,
     title,
     controls = false,
     autoPlay = true,
@@ -45,8 +43,7 @@ export const Video: FunctionComponent<Video> = ({
         >
             <source type="video/webm" src={`${hosts[host]}${source.webm}.webm`} data-cookieconsent="ignore" />
             <source type="video/mp4" src={`${hosts[host]}${source.mp4}.mp4`} data-cookieconsent="ignore" />
-            {caption && caption}
         </video>
-        {showCaption && <figcaption>{caption}</figcaption>}
+        {caption && <figcaption>{caption}</figcaption>}
     </figure>
 )

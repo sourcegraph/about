@@ -337,7 +337,6 @@ const CodeInsightsPage: FunctionComponent = () => (
                             webm: 'code_insights/code-insights-720',
                         }}
                         title="Code Insights"
-                        caption="Code Insights"
                         loop={true}
                     />
                 </div>
