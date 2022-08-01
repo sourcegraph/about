@@ -36,7 +36,7 @@ export const BlogResourceItem: FunctionComponent<Props> = ({ blog }) => (
         </div>
         <div className="col-sm-4 col-md-3 d-flex align-items-center">
             {/* eslint-disable-next-line react/forbid-dom-props */}
-            <div className="d-inline-block max-w-250 w-100 min-h-150" style={{ height: '100%' }}>
+            <div className="d-inline-block max-w-sm-250 w-100 min-h-150" style={{ height: '100%' }}>
                 <img
                     className="flex-1 w-100"
                     alt={blog.img ? blog.img.alt : blog.title}

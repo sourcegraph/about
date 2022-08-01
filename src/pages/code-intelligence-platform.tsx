@@ -12,10 +12,10 @@ const blogResourceItems = [
             'Sourcegraph relies on code hosts to exist, and code hosts benefit from the existence of a good, ventor-nutural code intelligence platform.',
         type: 'Blog post',
         img: {
-            src: '/src/components/Background/assets/backgrounds/dark-multi-grid.jpg',
+            src: '/backgrounds/dark-multi-grid.jpg',
             alt: 'Dark grid',
         },
-        href: '/guides/continuous-developer-onboarding',
+        href: "/blog/why-we're-friends-with-code-hosts",
     },
     {
         title: '3 things to know before building a custom, in-house code search tool',
