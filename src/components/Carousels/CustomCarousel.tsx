@@ -40,7 +40,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
             {title && (
                 <h2
                     className={classNames(
-                        'display-3 text-md-center font-weight-bold mt-lg-3',
+                        'display-3 text-md-center mx-md-auto max-w-700 font-weight-bold mt-lg-3',
                         props.hasImages ? 'mb-6' : 'mb-4',
                         isMdOrDown && 'text-uppercase text-base'
                     )}
