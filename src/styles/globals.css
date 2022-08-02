@@ -1,3 +1,13 @@
 @tailwind base;
+
+/* Base Styles */
+@layer base {
+    ul,
+    ol {
+        list-style-type: unset;
+        margin: 0 0 0 40px;
+    }
+}
+
 @tailwind components;
 @tailwind utilities;

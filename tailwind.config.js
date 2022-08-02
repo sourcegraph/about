@@ -72,7 +72,36 @@ module.exports = {
         500: '#C4147D',
         600: '#9E1769',
       },
-    })
+    }),
+
+    fontFamily: {
+      primary: ['Source Sans Pro', 'sans-serif'],
+      mono: ['Source Code Pro', 'monospace'],
+    },
+
+    // TODO
+    // fontSize: {
+    //   'display-h1': ''
+    // },
+
+    spacing: {
+      xxs: '16px',
+      xs: '24px',
+      sm: '32px',
+      md: '48px',
+      lg: '64px',
+      xl: '96px',
+    },
+
+    // This extends (not replaces) theme properties
+    extend: {
+
+      // Breakpoints and responsive modifiers
+      screens: {
+        xs: '480px',
+      }
+
+    }
   },
 
   /**
