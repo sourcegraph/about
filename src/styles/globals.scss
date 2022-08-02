@@ -370,3 +370,8 @@ $positions: ('top', 'right', 'bottom', 'left');
 .whitespace-pre-line {
     white-space: pre-line;
 }
+
+//https://tailwindcss.com/docs/transition-property
+.transition-5 {
+    transition: all .5s ease-in-out;
+}

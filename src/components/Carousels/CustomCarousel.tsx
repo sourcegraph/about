@@ -31,6 +31,8 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     const { items, autoAdvance, title } = props
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
+    const isAdvancing = carouselHook.isAdvancing
+    console.log(isAdvancing, carouselHook.carouselItems.currentItem)
 
     const windowWidth = useWindowWidth()
     const isMdOrDown = windowWidth < breakpoints.lg
@@ -85,19 +87,24 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                     <ArrowUpIcon
                         className="mb-4 cursor-pointer"
                         onClick={() => carouselHook.moveCarousel('decrement')}
+                        onKeyDown={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
+                        role="button"
+                        tabIndex={0}
                     />
                     {carouselItems.map((item, index) => (
                         <div
                             className={classNames(
                                 'custom-carousel-item cursor-pointer display-5 max-w-375 py-2 mb-0',
-                                item === carouselHook.carouselItems.currentItem ? 'text-black border-saturn border border-2 rounded px-2' : 'text-gray-300',
+                                item === carouselHook.carouselItems.currentItem ? 'transition-5 text-black border-saturn border border-2 px-2' : 'text-gray-300',
                                 index !== (carouselItems.length - 1) ? 'mb-2' : 'mb-0'
                             )}
                             key={index}
                             onClick={() => carouselHook.moveCarousel(index)}
                             onKeyDown={() => carouselHook.moveCarousel(index)}
-                            role="presentation"
+                            onMouseEnter={() => carouselHook.moveCarousel(index)}
+                            role="button"
+                            tabIndex={0}
                         >
                             {item.buttonLabel}
                         </div>
@@ -105,7 +112,10 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                     <ArrowDownIcon
                         className="mt-4 cursor-pointer"
                         onClick={() => carouselHook.moveCarousel()}
+                        onKeyDown={() => carouselHook.moveCarousel()}
                         color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
+                        role="button"
+                        tabIndex={0}    
                     />
                 </div>
 
@@ -118,7 +128,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                     {carouselItems.map((item, index) => (
                         <div
                             key={index}
-                            className={item === carouselHook.carouselItems.currentItem ? 'd-block' : 'd-none'}
+                            className={classNames(item === carouselHook.carouselItems.currentItem ? 'd-block' : 'd-none')}
                             onMouseOver={() => carouselHook.moveCarousel(index)}
                             onFocus={() => carouselHook.moveCarousel(index)}
                         >
