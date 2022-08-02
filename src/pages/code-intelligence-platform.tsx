@@ -20,7 +20,12 @@ const CarouselItem: FunctionComponent<{ icon: ReactNode; header: string; text: R
 
 const items = [
     {
-        buttonLabel: 'Full view of the codebase',
+        buttonLabel: (
+            <>
+                <h5 className="mb-1 text-lg">Full view of the codebase</h5>
+                <p className="mb-0">Exhaustive across all repositories and code hosts</p>
+            </>
+        ),
         text: (
             <CarouselItem
                 icon={
@@ -40,7 +45,12 @@ const items = [
         itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Accurate Results',
+        buttonLabel: (
+            <>
+                <h5 className="mb-1 text-lg">Accurate Results</h5>
+                <p className="mb-0">Trustworthy answers that help your team move fast</p>
+            </>
+        ),
         text: (
             <CarouselItem
                 icon={
@@ -59,7 +69,12 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Rich codebase context',
+        buttonLabel: (
+            <>
+                <h5 className="mb-1 text-lg">Rich codebase context</h5>
+                <p className="mb-0">Access powerful insights and rich context to make the best decisions</p>
+            </>
+        ),
         text: (
             <CarouselItem
                 icon={
@@ -78,7 +93,12 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Automated large-scale code changes',
+        buttonLabel: (
+            <>
+                <h5 className="mb-1 text-lg">Automated large-scale code changes</h5>
+                <p className="mb-0">Seamlessly make and track large-scale code changes</p>
+            </>
+        ),
         text: (
             <CarouselItem
                 icon={
@@ -97,7 +117,12 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Global view for leaders',
+        buttonLabel: (
+            <>
+                <h5 className="mb-1 text-lg">Global view for leaders</h5>
+                <p className="mb-0">Access real-time reports that can be customized to track codebase progress, trends, and goals</p>
+            </>
+        ),
         text: (
             <CarouselItem
                 icon={
@@ -192,7 +217,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             </section>
         }
     >
-        <ContentSection className="py-7">
+        <ContentSection color="white" className="py-7">
             <CustomCarousel items={items} autoAdvance={true} title="Enable and engage your development teams with Sourcegraph" />
         </ContentSection>
 

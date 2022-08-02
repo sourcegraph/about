@@ -21,7 +21,7 @@ interface CarouselProps {
 }
 
 interface CarouselItem {
-    buttonLabel: string
+    buttonLabel: string | ReactNode
     headerClass?: string
     text: ReactNode
     itemClass: string
@@ -40,19 +40,20 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
             {title && (
                 <h2
                     className={classNames(
-                        'display-3 text-md-center mx-md-auto max-w-700 font-weight-bold mt-lg-3',
-                        props.hasImages ? 'mb-6' : 'mb-4',
+                        'display-3 text-md-center mx-md-auto max-w-700 font-weight-bold mt-lg-3 mb-6',
                         isMdOrDown && 'text-uppercase text-base'
                     )}
                 >
                     {title}
                 </h2>
             )}
+
             <div
-                className={`d-flex flex-wrap align-items-center h-auto ${
-                    autoAdvance ? 'justify-content-between' : 'flex-lg-row flex-column py-8'
+                className={`d-flex flex-wrap align-items-center ${
+                    autoAdvance ? 'justify-content-center' : 'flex-lg-row flex-column py-8'
                 }`}
             >
+                {/* Mobile Image Caption (Button Label) */}
                 {props.hasImages && (
                     <div className="d-block d-lg-none mb-lg-0 mb-5 mx-md-auto">
                         {carouselItems.map((item, index) => (
@@ -62,7 +63,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                                     item === carouselHook.carouselItems.currentItem &&
                                         'd-block display-5 font-weight-bold'
                                 )}
-                                key={item.buttonLabel}
+                                key={index}
                                 onClick={() => carouselHook.moveCarousel(index)}
                                 onKeyDown={() => carouselHook.moveCarousel(index)}
                                 role="presentation"
@@ -72,48 +73,51 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         ))}
                     </div>
                 )}
+
+                {/* Web Indicators */}
                 <div
                     className={
                         carouselHook.autoAdvance
-                            ? 'd-lg-flex flex-column d-none col-md-2 m-0 px-0 col-lg-5'
-                            : 'd-lg-flex d-none ml-lg-7 col-lg-4 ml-md-5'
+                            ? 'd-lg-flex flex-column justify-content-between d-none col-md-2 m-0 px-0 col-lg-5'
+                            : 'd-lg-flex d-none ml-lg-7 col-lg-4 h-550'
                     }
                 >
                     <ArrowUpIcon
-                        className="ml-lg-5 mb-4 cursor-pointer"
+                        className="mb-4 cursor-pointer"
                         onClick={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
-                    <div className="ml-lg-5 mb-0">
-                        {carouselItems.map((item, index) => (
-                            <p
-                                className={classNames(
-                                    'custom-carousel-item font-weight-normal cursor-pointer display-5 py-2',
-                                    item === carouselHook.carouselItems.currentItem && 'font-weight-bolder'
-                                )}
-                                key={item.buttonLabel}
-                                onClick={() => carouselHook.moveCarousel(index)}
-                                onKeyDown={() => carouselHook.moveCarousel(index)}
-                                role="presentation"
-                            >
-                                {item.buttonLabel}
-                            </p>
-                        ))}
-                    </div>
+                    {carouselItems.map((item, index) => (
+                        <div
+                            className={classNames(
+                                'custom-carousel-item cursor-pointer display-5 max-w-375 py-2 mb-0',
+                                item === carouselHook.carouselItems.currentItem ? 'text-black border-saturn border border-2 rounded px-2' : 'text-gray-300',
+                                index !== (carouselItems.length - 1) ? 'mb-2' : 'mb-0'
+                            )}
+                            key={index}
+                            onClick={() => carouselHook.moveCarousel(index)}
+                            onKeyDown={() => carouselHook.moveCarousel(index)}
+                            role="presentation"
+                        >
+                            {item.buttonLabel}
+                        </div>
+                    ))}
                     <ArrowDownIcon
-                        className="ml-lg-5 mt-4 cursor-pointer"
+                        className="mt-4 cursor-pointer"
                         onClick={() => carouselHook.moveCarousel()}
                         color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
                 </div>
+
+                {/* Carousel Item */}
                 <div
                     className={`${
-                        props.hasImages ? 'h-500' : 'h-300'
-                    } col-lg-6 col-md-10 col-sm-12 mt-4 px-0 m-auto d-flex align-items-center justify-content-lg-start justify-content-center`}
+                        props.hasImages ? 'h-500' : 'bg-light-gray-5 h-550'
+                    } col-lg-5 col-md-10 col-sm-12 p-4 py-5 d-flex align-items-center justify-content-lg-start justify-content-center`}
                 >
                     {carouselItems.map((item, index) => (
                         <div
-                            key={item.buttonLabel}
+                            key={index}
                             className={item === carouselHook.carouselItems.currentItem ? 'd-block' : 'd-none'}
                             onMouseOver={() => carouselHook.moveCarousel(index)}
                             onFocus={() => carouselHook.moveCarousel(index)}
@@ -128,6 +132,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                     ))}
                 </div>
 
+                {/* Mobile Indicators */}
                 <div className="d-lg-none d-flex mx-auto my-4">
                     <ArrowLeftIcon
                         className="mr-4 cursor-pointer"
@@ -135,10 +140,10 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
                     <div>
-                        {carouselItems.map(item => (
+                        {carouselItems.map((item, index) => (
                             <CircleSmallIcon
                                 color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
-                                key={item.buttonLabel}
+                                key={index}
                                 className="cursor-pointer"
                             />
                         ))}
