@@ -32,7 +32,7 @@ With our new JetBrains plugin you can easily search across all your company’s 
 ## How it works
 
 ### Setting up the plugin
-Our JetBrains plugin is available on the J[etBrains marketplace](https://plugins.jetbrains.com/plugin/9682-sourcegraph) and can be quickly installed via the marketplace or directly within your IDE. 
+Our JetBrains plugin is available on the [JetBrains marketplace](https://plugins.jetbrains.com/plugin/9682-sourcegraph) and can be quickly installed via the marketplace or directly within your IDE. 
 
 After installation, you can configure a connection to your Sourcegraph instance by adding your instance URL and access token. This works for dedicated Sourcegraph instances as well as Sourcegraph.com accounts. Once configured, you’ll be able to search across all of the repositories that you’ve indexed directly from the IDE and without cloning those repositories locally.
 
