@@ -25,7 +25,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/jetbrains-pl
 
 Staying productive while being a developer is hard. You’re constantly bombarded by external interruptions taking you away from the task at hand. Slack messages, meetings that could’ve been emails, and alerts and notifications from any number of systems each cause an expensive context switch.  
 
-While Sourcegraph can’t eliminate all of your distractions, it can make it easier to find the information you need to write and ship code. Often when writing code, you know what you have to do but can’t remember exactly how. Sometimes you need a refresher of the syntax of a language you haven’t used in a while, or you need to find that one idiomatic way to solve a problem. 
+While Sourcegraph can’t eliminate all of your distractions, it can make it easier to find the information you need to write and ship code. Often when writing code, you know what you have to do but can’t remember exactly how. Sometimes you need a refresher on the syntax of a language you haven’t used in a while, or you need to find that one idiomatic way to solve a problem. 
 
 With our new JetBrains plugin you can easily search across all your company’s repositories, find the answers you need, and not be distracted by your countless open browser tabs or unread Slack count. You get all of the benefits of Sourcegraph directly in your IDE, so you can stay in flow with fewer interruptions.
 
