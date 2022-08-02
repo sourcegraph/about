@@ -4,12 +4,16 @@ description:
 authors:
   - name: Ryan Scott
     url: 
+  - name: David Veszelovszki
+    url: 
+  - name: Philipp Spiess
+    url: 
 publishDate: 2022-08-02T00:00
 tags: [blog]
 slug: jetbrains-plugin
 published: true
-heroImage: /blog/thumbnail-image.jpg
-socialImage: Use to set large social image i.e.  https://about.sourcegraph.com/blog/sourcegraph-social-img.png
+heroImage: /blog/jetbrains-plugin/jetbrains-announcement-hero.png
+socialImage: /blog/jetbrains-plugin/jetbrains-announcement-hero.png
 ---
 
 <Video 
