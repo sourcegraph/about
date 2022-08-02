@@ -79,11 +79,6 @@ module.exports = {
       mono: ['Source Code Pro', 'monospace'],
     },
 
-    // TODO
-    // fontSize: {
-    //   'display-h1': ''
-    // },
-
     spacing: {
       xxs: '16px',
       xs: '24px',
