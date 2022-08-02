@@ -31,12 +31,12 @@ With our new JetBrains plugin you can easily search across all your company’s 
 
 ## How it works
 
-### Setting up the plugin
+##### Setting up the plugin
 Our JetBrains plugin is available on the [JetBrains marketplace](https://plugins.jetbrains.com/plugin/9682-sourcegraph) and can be quickly installed via the marketplace or directly within your IDE. 
 
 After installation, you can configure a connection to your Sourcegraph instance by adding your instance URL and access token. This works for dedicated Sourcegraph instances as well as Sourcegraph.com accounts. Once configured, you’ll be able to search across all of the repositories that you’ve indexed directly from the IDE and without cloning those repositories locally.
 
-### Searching for code
+##### Searching for code
 You can trigger the plugin at any time by using the hotkey (bound to ⌥A on macOS and Alt-A on Windows / Linux) or via the command palette. From here you can instantly search across any of your indexed repositories. 
 
 Search contexts from your Sourcegraph account will automatically be accessible within the IDE. Search filters (such as `repo:` or `lang:`) will work in the IDE exactly as they do in Sourcegraph.
@@ -47,12 +47,12 @@ Search contexts from your Sourcegraph account will automatically be accessible w
     mp4: 'blog/jetbrains-plugin/jetbrains-ide'
   }}
   loop={true}
-  title="Code reuse"
+  title="Searching code in JetBrains IDE"
   caption="An example of searching code with the JetBrains IDE"
   showCaption={true}
 />
 
-### Sharing links
+##### Sharing links
 Sharing code from within your IDE is now incredibly easy. You can automatically generate a link to the code you’re currently working on via the context menu or by using the hotkey (bound to ⌥C on macOS and Alt-C on Windows / Linux).
 
 You can share the generated link with teammates, who will be taken to the exact line of code in Sourcegraph (as long as they are authenticated to the Sourcegraph instance). This makes it easy to share context and tackle problems together without having to screenshare or take screenshots.
@@ -63,7 +63,7 @@ You can share the generated link with teammates, who will be taken to the exact 
     mp4: 'blog/jetbrains-plugin/jetbrains-copy-link'
   }}
   loop={true}
-  title="Code reuse"
+  title="Copying a Sourcegraph link within the IDE"
   caption="An example of copying a shareable Sourcegraph link within the IDE"
   showCaption={true}
 />
