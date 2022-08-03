@@ -13,9 +13,6 @@ import { useCarousel, useWindowWidth } from '@hooks'
 interface CarouselProps {
     items: CarouselItem[]
     title?: string
-    currentItem?: CarouselItem
-    previousItem?: CarouselItem
-    currentItemIndex?: number
     autoAdvance?: boolean
     hasImages?: boolean
 }
@@ -27,8 +24,13 @@ interface CarouselItem {
     itemClass: string
 }
 
-export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
-    const { items, autoAdvance, title } = props
+export const CustomCarousel: FunctionComponent<CarouselProps> = ({
+    items,
+    title,
+    autoAdvance = true,
+    hasImages,
+
+}) => {
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
     const isAdvancing = carouselHook.isAdvancing
@@ -56,7 +58,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 }`}
             >
                 {/* Mobile Image Caption (Button Label) */}
-                {props.hasImages && (
+                {hasImages && (
                     <div className="d-block d-lg-none mb-lg-0 mb-5 mx-md-auto">
                         {carouselItems.map((item, index) => (
                             <h2
@@ -122,7 +124,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 {/* Carousel Item */}
                 <div
                     className={`${
-                        props.hasImages ? 'h-500' : 'bg-light-gray-5 h-550'
+                        hasImages ? 'h-500' : 'bg-light-gray-5 h-550'
                     } col-lg-5 col-md-10 col-sm-12 p-4 py-5 d-flex align-items-center justify-content-lg-start justify-content-center`}
                 >
                     {carouselItems.map((item, index) => (

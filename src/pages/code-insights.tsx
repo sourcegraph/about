@@ -418,7 +418,6 @@ const CodeInsightsPage: FunctionComponent = () => (
             <ContentSection>
                 <CustomCarousel
                     items={items}
-                    autoAdvance={true}
                     hasImages={true}
                     title="How engineering teams use Code Insights"
                 />
@@ -491,22 +490,22 @@ const CodeInsightsPage: FunctionComponent = () => (
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
                     <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
                         <div className="w-100 mt-5 justify-content-center">
-                            <TabCarousel items={templates.migrations} autoAdvance={true} />
+                            <TabCarousel items={templates.migrations} />
                         </div>
                     </Tab>
                     <Tab eventKey="version-tracking" title="Version Tracking" tabClassName="tab-header">
                         <div className="w-100 mt-5 justify-content-center">
-                            <TabCarousel items={templates.versionTracking} autoAdvance={true} />
+                            <TabCarousel items={templates.versionTracking} />
                         </div>
                     </Tab>
                     <Tab eventKey="security" title="Security" tabClassName="tab-header">
                         <div className="w-100 mt-5 justify-content-center">
-                            <TabCarousel items={templates.security} autoAdvance={true} />
+                            <TabCarousel items={templates.security} />
                         </div>
                     </Tab>
                     <Tab eventKey="code-health" title="Code Health" tabClassName="tab-header">
                         <div className="w-100 mt-5 justify-content-center">
-                            <TabCarousel items={templates.codeHealth} autoAdvance={true} />
+                            <TabCarousel items={templates.codeHealth} />
                         </div>
                     </Tab>
                 </Tabs>

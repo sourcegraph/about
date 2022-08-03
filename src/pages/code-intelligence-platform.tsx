@@ -218,7 +218,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
         }
     >
         <ContentSection color="white" className="py-7">
-            <CustomCarousel items={items} autoAdvance={true} title="Enable and engage your development teams with Sourcegraph" />
+            <CustomCarousel items={items} title="Enable and engage your development teams with Sourcegraph" />
         </ContentSection>
 
         <ContentSection color="white" className="py-7">

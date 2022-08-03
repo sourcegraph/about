@@ -22,7 +22,7 @@ interface Template {
     queries: ReactNode[]
 }
 
-export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAdvance }) => {
+export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAdvance = true }) => {
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as Template[]
 
