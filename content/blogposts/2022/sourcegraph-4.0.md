@@ -74,4 +74,14 @@ This will be a breaking change for customers - for example, for tracing today, w
 
 In the future we can leverage a similar OpenTelemetry-by-default approach to integrate logs, metrics, and more in the same manner.
 
+<!-- @macraig: this is a draft --> 
+### Precise IDE-like code navigation across 9 different languages
+- Go, Java, Scala, Kotlin, Python, TypeScript, JavaScript
+- New: Ruby, Rust
+
+### New code navigation admin analytics
+Introducing an improved version of the code navigation admin dashboard that helps admins understand their percentage of precise navigation coverage and get precise code graph data configured for all repositories.
+
+### Auto-indexing is now available by default for all Cloud customers
+Auto-indexing allows customers to set up precise code navigation for any chosen repositories with the click of a button in the Sourcegraph UI. Now, all Cloud teams can enjoy precise code navigation with only minutes of setup, and any member of a team can turn it on for their respective repositories.
 
