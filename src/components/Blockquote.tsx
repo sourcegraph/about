@@ -34,18 +34,18 @@ export const Blockquote: FunctionComponent<{
 
     const getBorderStyle = (): string => {
         // Reference DLS: https://www.figma.com/file/o1QRtdQI0ozKq0n7ATrKlx/Marketing-DLS?node-id=3368%3A16865
-        const color: string = borderColor || 'vivid-violet'
+        const color: string = borderColor || 'violet-400'
 
         if (border) {
             // Inline Blockquote have more border padding
             if (inline) {
-                return `py-2 border-left border-3 border-${color}`
+                return `py-2 tw-border-l-3 tw-border-${color}`
             }
             // Blockquotes in column: Border flips to horizontal for mobile
             if (isMdOrDown) {
-                return `border-top border-3 pt-6 mb-0 border-${color}`
+                return `pt-6 mb-0 tw-border-t-3 tw-border-${color}`
             }
-            return `border-left border-3 border-${color}`
+            return `tw-border-l-3 tw-border-${color}`
         }
         return 'text-center'
     }
