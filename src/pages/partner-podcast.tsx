@@ -95,7 +95,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
             </section>
         </div>
 
-        <div className="container max-w-900 mt-6">
+        <div className="container max-w-900 mt-7">
             <h2 className="font-weight-bold">Move fast — even in big code bases</h2>
             <h5 className="font-weight-normal py-3">Learn how these software companies used Sourcegraph</h5>
             <div className="d-flex flex-wrap pt-4 position-relative">
@@ -107,7 +107,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
             </div>
         </div>
 
-        <div className="bg-gradient-venus-saturated py-6">
+        <div className="bg-gradient-venus-saturated py-7">
             <section className="container max-w-900 text-center">
                 <h2 className="font-weight-bold pt-2">Want to use Sourcegraph at your company?</h2>
                 <h5 className="pt-4 pb-1 mx-auto max-w-550 font-weight-normal">

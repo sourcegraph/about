@@ -23,7 +23,7 @@ export const TrySourcegraph: FunctionComponent<Props> = ({ demoFormURL = '/demo'
             <Link href="/get-started/self-hosted" passHref={true}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a
-                    className="btn btn-primary col-lg-8 min-w-200 mb-3"
+                    className="btn btn-primary col-lg-8 w-md-200 mb-3"
                     title="Try Sourcegraph now"
                     data-button-style={buttonStyle.primary}
                     data-button-location={buttonLocation.trySourcegraph}
@@ -36,7 +36,7 @@ export const TrySourcegraph: FunctionComponent<Props> = ({ demoFormURL = '/demo'
                 <Link href={demoFormURL} passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
-                        className="btn btn-outline-primary col-lg-6 min-w-200"
+                        className="btn btn-outline-primary col-md-6 w-md-200"
                         title="Schedule a demo"
                         data-button-style={buttonStyle.outline}
                         data-button-location={buttonLocation.bodyDemo}

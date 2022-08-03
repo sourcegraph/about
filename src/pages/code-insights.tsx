@@ -476,7 +476,7 @@ const CodeInsightsPage: FunctionComponent = () => (
         </div>
 
         {/* Use Cases Carousel */}
-        <div className="bg-gradient-venus-radial py-4 d-block d-lg-none d-md-none">
+        <div className="bg-gradient-venus-radial d-block d-lg-none d-md-none">
             <ContentSection className="py-4 py-md-7">
                 <h2 className="mb-5 display-3 font-weight-bold text-center">Popular Code Insights templates</h2>
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
@@ -518,7 +518,7 @@ const CodeInsightsPage: FunctionComponent = () => (
 
         <div className="bg-light-gray-3">
             <ContentSection>
-                <div className="row d-flex flex-column justify-content-start py-lg-8 py-7">
+                <div className="row d-flex flex-column justify-content-start py-7">
                     <div className="col-lg-8 mb-5 d-flex flex-column justify-content-start">
                         <h2 className="display-3 font-weight-bold">Get started with Code Insights</h2>
                         <p>

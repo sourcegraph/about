@@ -303,7 +303,7 @@ const UseCasePage: FunctionComponent = () => (
             </>
         }
     >
-        <ContentSection className="my-lg-5">
+        <ContentSection className="py-7">
             <ThreeUpText title="Identify, resolve, and monitor with confidence" items={threeUpTextItems} />
         </ContentSection>
 

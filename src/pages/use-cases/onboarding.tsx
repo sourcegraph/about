@@ -245,7 +245,7 @@ const UseCasePage: FunctionComponent = () => (
             </>
         }
     >
-        <ContentSection className="my-lg-5">
+        <ContentSection className="my-7">
             <ThreeUpText title="Make your codebase accessible for your entire team" items={threeUpTextItems} />
         </ContentSection>
 
