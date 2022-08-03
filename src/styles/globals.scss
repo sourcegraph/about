@@ -373,7 +373,7 @@ $positions: ('top', 'right', 'bottom', 'left');
 
 //https://tailwindcss.com/docs/transition-property
 .transition-5 {
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .transition-1 {
     transition: all 1s ease-in-out;

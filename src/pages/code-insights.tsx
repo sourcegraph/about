@@ -304,9 +304,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                 product="code insights"
                 title={'Track what really matters\nto you and your team.'}
                 description="Transform your code into a queryable database to create customizable, visual dashboards in seconds."
-                cta={
-                    <HubSpotForm masterFormName="contactEmail" />
-                }
+                cta={<HubSpotForm masterFormName="contactEmail" />}
                 displayUnderNav={true}
             />
         }
@@ -414,11 +412,7 @@ const CodeInsightsPage: FunctionComponent = () => (
 
         <div className="bg-light-gray-3 py-7">
             <ContentSection>
-                <CustomCarousel
-                    items={items}
-                    hasImages={true}
-                    title="How engineering teams use Code Insights"
-                />
+                <CustomCarousel items={items} hasImages={true} title="How engineering teams use Code Insights" />
             </ContentSection>
         </div>
 

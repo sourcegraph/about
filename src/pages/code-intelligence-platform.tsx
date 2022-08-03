@@ -7,10 +7,22 @@ import ReiterateIcon from 'mdi-react/ReiterateIcon'
 import ViewDashboardIcon from 'mdi-react/ViewDashboardIcon'
 import Link from 'next/link'
 
-import { Layout, BlogResourceItem, ContentSection, CustomCarousel, TwoColumnSection, QuoteCarousel, Video } from '@components'
+import {
+    Layout,
+    BlogResourceItem,
+    ContentSection,
+    CustomCarousel,
+    TwoColumnSection,
+    QuoteCarousel,
+    Video,
+} from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
-const CarouselItem: FunctionComponent<{ icon: ReactNode; header: string; text: ReactNode }> = ({ icon, header, text }) => (
+const CarouselItem: FunctionComponent<{ icon: ReactNode; header: string; text: ReactNode }> = ({
+    icon,
+    header,
+    text,
+}) => (
     <>
         {icon}
         <h3 className="font-weight-bold mb-lg-0 mb-5">{header}</h3>
@@ -32,7 +44,10 @@ const items = [
                 header="Full view of the codebase"
                 text={
                     <p className="py-3">
-                        High-fidelity search is applied across all repositories and code hosts to provide a holistic view of sprawling code. Developers are in control of how they prefer to navigate the codebase with multiple pattern types, including symbol search, structural search, and precise code navigation.
+                        High-fidelity search is applied across all repositories and code hosts to provide a holistic
+                        view of sprawling code. Developers are in control of how they prefer to navigate the codebase
+                        with multiple pattern types, including symbol search, structural search, and precise code
+                        navigation.
                     </p>
                 }
             />
@@ -51,7 +66,10 @@ const items = [
                 header="Accurate Results"
                 text={
                     <p className="py-3">
-                        Exhaustive and relevant search results are returned in a fraction of a second with a variety of information, including repositories, files, diffs, and commits. When your development teams are stuck, they’re empowered to find answers on their own through robust search and living documentation with interactive code snippets that are always up-to-date.
+                        Exhaustive and relevant search results are returned in a fraction of a second with a variety of
+                        information, including repositories, files, diffs, and commits. When your development teams are
+                        stuck, they’re empowered to find answers on their own through robust search and living
+                        documentation with interactive code snippets that are always up-to-date.
                     </p>
                 }
             />
@@ -71,7 +89,9 @@ const items = [
                 header="Rich codebase context"
                 text={
                     <p className="py-3">
-                        Leverage insights across your entire codebase through rich context about functions, variables, and cross-references. Accurate documentation with live code queries provide additional information when developers need it the most.
+                        Leverage insights across your entire codebase through rich context about functions, variables,
+                        and cross-references. Accurate documentation with live code queries provide additional
+                        information when developers need it the most.
                     </p>
                 }
             />
@@ -91,7 +111,10 @@ const items = [
                 header="Automated large-scale code changes"
                 text={
                     <p className="py-3">
-                        Large-scale code refactors can be applied across the codebase with just a few clicks. Save your team time resolving vulnerabilities, keeping code updated, or paying down technical debt. Track code changes all the way to merge from a powerful dashboard, instead of doing manual project management work.
+                        Large-scale code refactors can be applied across the codebase with just a few clicks. Save your
+                        team time resolving vulnerabilities, keeping code updated, or paying down technical debt. Track
+                        code changes all the way to merge from a powerful dashboard, instead of doing manual project
+                        management work.
                     </p>
                 }
             />
@@ -111,7 +134,9 @@ const items = [
                 header="Global view for leaders"
                 text={
                     <p className="py-3">
-                        Set up customizable, visual dashboards in sixty seconds that turn your codebase into a database. Leaders can track the status of migrations and deprecations while preventing future vulnerabilities through alerts when specific code is added by the team.
+                        Set up customizable, visual dashboards in sixty seconds that turn your codebase into a database.
+                        Leaders can track the status of migrations and deprecations while preventing future
+                        vulnerabilities through alerts when specific code is added by the team.
                     </p>
                 }
             />
@@ -122,7 +147,7 @@ const items = [
 
 const quoteCarouselItems = [
     {
-        quote: 'For developers, Sourcegraph is a must-have tool 一 we need it at arm\'s length at all times.',
+        quote: "For developers, Sourcegraph is a must-have tool 一 we need it at arm's length at all times.",
         by: 'Derrick Faunce, Associate Director of Developer Services, Factset',
         logoImage: '/external-logos/factset-logo.svg',
         logoAlt: 'Factset Logo',
@@ -134,7 +159,7 @@ const quoteCarouselItems = [
         logoAlt: 'F5 Logo',
     },
     {
-        quote: 'Sourcegraph gives us the ability to search for and refactor references to deprecated services, libraries, URL patterns, and move across our 2000+ repositories, and the confidence that we\'re not leaving anyone behind.',
+        quote: "Sourcegraph gives us the ability to search for and refactor references to deprecated services, libraries, URL patterns, and move across our 2000+ repositories, and the confidence that we're not leaving anyone behind.",
         by: 'Aneesh Agrawal, Software Engineer, Lyft',
         logoImage: '/external-logos/lyft-logo.svg',
         logoAlt: 'Lyft Logo',
@@ -177,7 +202,10 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             <section className="bg-gradient-saturn">
                 <div className="container py-7 text-md-center">
                     <h1 className="font-weight-bold">Key traits of a code intelligence platform</h1>
-                    <h3 className="font-weight-normal py-4 mx-md-auto max-w-750">Sourcegraph helps developers save time and move faster, regardless of how complex your codebase is: any code host, any language, and any repository.</h3>
+                    <h3 className="font-weight-normal py-4 mx-md-auto max-w-750">
+                        Sourcegraph helps developers save time and move faster, regardless of how complex your codebase
+                        is: any code host, any language, and any repository.
+                    </h3>
 
                     <Link href="/demo">
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -196,7 +224,11 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
         }
     >
         <ContentSection color="white" className="py-7">
-            <CustomCarousel items={items} animateTransition={true} title="Enable and engage your development teams with Sourcegraph" />
+            <CustomCarousel
+                items={items}
+                animateTransition={true}
+                title="Enable and engage your development teams with Sourcegraph"
+            />
         </ContentSection>
 
         <ContentSection color="white" className="py-7">
@@ -209,10 +241,12 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                         <h2 className="mb-4">Get unblocked</h2>
                         <ul>
                             <li className="mb-3">
-                                Sourcegraph helps developers uncover answers, understand code, and take actions in the codebase without interrupting teammates.
+                                Sourcegraph helps developers uncover answers, understand code, and take actions in the
+                                codebase without interrupting teammates.
                             </li>
                             <li className="mb-3">
-                                Developers at <i>a well-known American social news site</i> save 30 – 60 minutes a day with faster access to answers.
+                                Developers at <i>a well-known American social news site</i> save 30 – 60 minutes a day
+                                with faster access to answers.
                             </li>
                         </ul>
                     </>
@@ -253,7 +287,8 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                         <h2 className="mb-4">Save time resolving issues</h2>
                         <ul>
                             <li className="mb-3">
-                                Sourcegraph helps development teams quickly identify, resolve, and proactively prevent issues from happening again.
+                                Sourcegraph helps development teams quickly identify, resolve, and proactively prevent
+                                issues from happening again.
                             </li>
                             <li className="mb-3">
                                 <Link href="/case-studies/indeed-accelerates-development-velocity">
@@ -266,8 +301,8 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                                     >
                                         Indeed
                                     </a>
-                                </Link>
-                                {' '}saw a 90% reduction in manual work required for large-scale code changes.
+                                </Link>{' '}
+                                saw a 90% reduction in manual work required for large-scale code changes.
                             </li>
                         </ul>
                     </>
@@ -283,10 +318,13 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                         <h2 className="mb-4">Gain insights and track progress</h2>
                         <ul>
                             <li className="mb-3">
-                                Developers use insights to track migration and deprecation projects to completion and visualize version spread and security vulnerabilities, while leaders rely on analytics to make data-driven decisions and create clear success metrics for their teams. 
+                                Developers use insights to track migration and deprecation projects to completion and
+                                visualize version spread and security vulnerabilities, while leaders rely on analytics
+                                to make data-driven decisions and create clear success metrics for their teams.
                             </li>
                             <li className="mb-3">
-                                A <i>top hybrid multi-cloud provider</i> resolves security vulnerabilities 4x faster and measures progress each step of the way.
+                                A <i>top hybrid multi-cloud provider</i> resolves security vulnerabilities 4x faster and
+                                measures progress each step of the way.
                             </li>
                         </ul>
                     </>
@@ -316,19 +354,22 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             <section className="max-w-800 mx-auto text-md-center">
                 <h2>Sourcegraph’s code intelligence platform is more than simply search.</h2>
 
-                <p className="max-w-md-450 my-5 mx-md-auto">The platform drives velocity by helping development teams quickly get unblocked, save time resolving issues, and gain insights to make better decisions.</p>
+                <p className="max-w-md-450 my-5 mx-md-auto">
+                    The platform drives velocity by helping development teams quickly get unblocked, save time resolving
+                    issues, and gain insights to make better decisions.
+                </p>
 
                 <Link href="/demo">
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className="btn btn-primary max-w-md-200 w-100"
-                            title="Request a demo"
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.bodyDemo}
-                            data-button-type="cta"
-                        >
-                            Request a demo
-                        </a>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a
+                        className="btn btn-primary max-w-md-200 w-100"
+                        title="Request a demo"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.bodyDemo}
+                        data-button-type="cta"
+                    >
+                        Request a demo
+                    </a>
                 </Link>
             </section>
         </ContentSection>

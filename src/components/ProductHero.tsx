@@ -53,7 +53,11 @@ export const ProductHero: FunctionComponent<Omit<ProductHero, 'className' | 'chi
     return (
         <div ref={rootReference}>
             {/* TODO: Make the hero height styling more dynamic, easy to follow */}
-            <Background variant={variant} illustration={illustration} className={classNames('d-flex align-items-center', product && 'min-h-600')}>
+            <Background
+                variant={variant}
+                illustration={illustration}
+                className={classNames('d-flex align-items-center', product && 'min-h-600')}
+            >
                 <div className={classNames('container', !product && 'py-7')}>
                     <div className="max-w-700 w-100">
                         {backButton}
@@ -65,11 +69,7 @@ export const ProductHero: FunctionComponent<Omit<ProductHero, 'className' | 'chi
 
                         {description && <h5 className="mb-5 max-w-600 font-weight-normal">{description}</h5>}
 
-                        {cta && (
-                            <div className="d-flex flex-column pt-1 max-w-400">
-                                {cta}
-                            </div>
-                        )}
+                        {cta && <div className="d-flex flex-column pt-1 max-w-400">{cta}</div>}
                     </div>
                 </div>
             </Background>

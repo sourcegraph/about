@@ -2,7 +2,7 @@ import { useEffect, useState, ReactNode, useCallback, useRef } from 'react'
 
 interface CarouselItems {
     items: CarouselItem[] | ReactNode[]
-    currentItem?: CarouselItem | Template[]
+    currentItem?: CarouselItem | Template
     previousItem?: CarouselItem | ReactNode
     currentItemIndex?: number
     autoAdvance?: boolean
@@ -27,7 +27,7 @@ interface CarouselHookObject {
 }
 
 export const useCarousel = (
-    initialItems: CarouselItem[]| Template[],
+    initialItems: CarouselItem[] | Template[],
     initialAutoAdvance: boolean
 ): CarouselHookObject => {
     const [carouselItems, setCarouselItems] = useState<CarouselItems>({
