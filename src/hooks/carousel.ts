@@ -1,5 +1,7 @@
 import { useEffect, useState, ReactNode, useCallback, useRef } from 'react'
 
+import { Template } from '@components'
+
 interface CarouselItems {
     items: CarouselItem[] | ReactNode[]
     currentItem?: CarouselItem | Template
@@ -14,11 +16,6 @@ interface CarouselItem {
     text: string | ReactNode
 }
 
-interface Template {
-    header: string
-    description: string
-    queries: ReactNode[]
-}
 interface CarouselHookObject {
     autoAdvance: boolean
     isAdvancing: boolean

@@ -73,10 +73,10 @@ export const Blockquote: FunctionComponent<{
                     <Link href={logo.href} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a>
-                            {/* eslint-disable-next-line react/forbid-dom-props */}
                             <img
                                 src={logo.src}
                                 className="mt-3 max-w-150"
+                                // eslint-disable-next-line react/forbid-dom-props
                                 style={{ height: '4.5rem' }}
                                 alt={logo.alt}
                             />

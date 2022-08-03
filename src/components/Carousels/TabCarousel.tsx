@@ -4,9 +4,8 @@ import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import CircleSmallIcon from 'mdi-react/CircleSmallIcon'
 
+import { Template, TemplateCodeBlock } from '@components'
 import { useCarousel } from '@hooks'
-
-import { TemplateCodeBlock } from '../TemplateCodeBlock'
 
 interface TabCarouselProps {
     items: Template[]
@@ -14,12 +13,6 @@ interface TabCarouselProps {
     previousItem?: ReactNode
     currentItemIndex?: number
     autoAdvance?: boolean
-}
-
-interface Template {
-    header: string
-    description: string
-    queries: ReactNode[]
 }
 
 export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAdvance }) => {
