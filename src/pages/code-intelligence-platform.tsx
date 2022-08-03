@@ -20,12 +20,8 @@ const CarouselItem: FunctionComponent<{ icon: ReactNode; header: string; text: R
 
 const items = [
     {
-        buttonLabel: (
-            <>
-                <h5 className="mb-1 text-lg">Full view of the codebase</h5>
-                <p className="mb-0">Exhaustive across all repositories and code hosts</p>
-            </>
-        ),
+        title: 'Full view of the codebase',
+        subtitle: 'Exhaustive across all repositories and code hosts',
         text: (
             <CarouselItem
                 icon={
@@ -41,16 +37,10 @@ const items = [
                 }
             />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: (
-            <>
-                <h5 className="mb-1 text-lg">Accurate Results</h5>
-                <p className="mb-0">Trustworthy answers that help your team move fast</p>
-            </>
-        ),
+        title: 'Accurate Results',
+        subtitle: 'Trustworthy answers that help your team move fast',
         text: (
             <CarouselItem
                 icon={
@@ -69,12 +59,8 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: (
-            <>
-                <h5 className="mb-1 text-lg">Rich codebase context</h5>
-                <p className="mb-0">Access powerful insights and rich context to make the best decisions</p>
-            </>
-        ),
+        title: 'Rich codebase context',
+        subtitle: 'Access powerful insights and rich context to make the best decisions',
         text: (
             <CarouselItem
                 icon={
@@ -93,12 +79,8 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: (
-            <>
-                <h5 className="mb-1 text-lg">Automated large-scale code changes</h5>
-                <p className="mb-0">Seamlessly make and track large-scale code changes</p>
-            </>
-        ),
+        title: 'Automated large-scale code changes',
+        subtitle: 'Seamlessly make and track large-scale code changes',
         text: (
             <CarouselItem
                 icon={
@@ -117,12 +99,8 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: (
-            <>
-                <h5 className="mb-1 text-lg">Global view for leaders</h5>
-                <p className="mb-0">Access real-time reports that can be customized to track codebase progress, trends, and goals</p>
-            </>
-        ),
+        title: 'Global view for leaders',
+        subtitle: 'Access real-time reports that can be customized to track codebase progress',
         text: (
             <CarouselItem
                 icon={
@@ -218,7 +196,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
         }
     >
         <ContentSection color="white" className="py-7">
-            <CustomCarousel items={items} title="Enable and engage your development teams with Sourcegraph" />
+            <CustomCarousel items={items} animateTransition={true} title="Enable and engage your development teams with Sourcegraph" />
         </ContentSection>
 
         <ContentSection color="white" className="py-7">

@@ -29,7 +29,7 @@ const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ 
 
 const items = [
     {
-        buttonLabel: 'Find old versions easily',
+        title: 'Find old versions easily',
         text: (
             <CarouselItem
                 header="Find old versions easily"
@@ -53,11 +53,9 @@ const items = [
                 }
             />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Automate version updates and communications',
+        title: 'Automate version updates and communications',
         text: (
             <CarouselItem
                 header="Automate version updates and communications"
@@ -84,7 +82,7 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Get everyone on the same page with living docs',
+        title: 'Get everyone on the same page with living docs',
         text: (
             <CarouselItem
                 header="Get everyone on the same page with living docs"
@@ -108,7 +106,7 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Monitor for deprecated code',
+        title: 'Monitor for deprecated code',
         text: (
             <CarouselItem
                 header="Monitor for deprecated code"
@@ -133,7 +131,7 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Develop a data-driven relationship with your code',
+        title: 'Develop a data-driven relationship with your code',
         text: (
             <CarouselItem
                 header="Develop a data-driven relationship with your code"

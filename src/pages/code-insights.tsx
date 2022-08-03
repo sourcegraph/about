@@ -35,35 +35,33 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const items = [
     {
-        buttonLabel: 'Track migrations, adoption, and deprecations',
+        title: 'Track migrations, adoption, and deprecations',
         text: (
             <CodeInsightExample type={CodeInsightExampleType.Search} data={SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA} />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Detect and track versions of languages or packages',
+        title: 'Detect and track versions of languages or packages',
         text: <CodeInsightExample type={CodeInsightExampleType.Capture} data={ALPINE_VERSIONS_INSIGHT} />,
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Ensure removal of security vulnerabilities',
+        title: 'Ensure removal of security vulnerabilities',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LOG_4_J_INCIDENT_INSIGHT} />,
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Understand code by team',
+        title: 'Understand code by team',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={DEPRECATED_API_USAGE_BY_TEAM} />,
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Track code smells and health',
+        title: 'Track code smells and health',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LINTER_OVERRIDES} />,
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Visualize configurations and services',
+        title: 'Visualize configurations and services',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={REPOS_WITH_CI_SYSTEM} />,
         itemClass: 'd-none',
     },

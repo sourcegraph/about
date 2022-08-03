@@ -28,7 +28,7 @@ const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ 
 
 const items = [
     {
-        buttonLabel: 'Find code to reuse',
+        title: 'Find code to reuse',
         text: (
             <CarouselItem
                 header="Find code to reuse"
@@ -51,11 +51,9 @@ const items = [
                 }
             />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Improve code stability and trustworthiness',
+        title: 'Improve code stability and trustworthiness',
         text: (
             <CarouselItem
                 header="Improve code stability and trustworthiness"
@@ -70,7 +68,7 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Automate PRs to make code consistent',
+        title: 'Automate PRs to make code consistent',
         text: (
             <CarouselItem
                 header="Automate PRs to make code consistent"
@@ -97,7 +95,7 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Alert for deprecated code use',
+        title: 'Alert for deprecated code use',
         text: (
             <CarouselItem
                 header="Alert for deprecated code use"
@@ -122,7 +120,7 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Track your code reuse efforts ',
+        title: 'Track your code reuse efforts ',
         text: (
             <CarouselItem
                 header="Track your code reuse efforts "

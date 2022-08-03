@@ -15,13 +15,13 @@ interface CarouselProps {
     title?: string
     autoAdvance?: boolean
     hasImages?: boolean
+    animateTransition?: boolean
 }
 
 interface CarouselItem {
-    buttonLabel: string | ReactNode
-    headerClass?: string
+    title: string
+    subtitle?: string
     text: ReactNode
-    itemClass: string
 }
 
 export const CustomCarousel: FunctionComponent<CarouselProps> = ({
@@ -29,7 +29,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
     title,
     autoAdvance = true,
     hasImages,
-
+    animateTransition = false
 }) => {
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
@@ -53,9 +53,10 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
             )}
 
             <div
-                className={`d-flex flex-wrap align-items-center ${
-                    autoAdvance ? 'justify-content-center' : 'flex-lg-row flex-column py-8'
-                }`}
+                className={classNames(
+                  'd-flex flex-wrap align-items-center',
+                  autoAdvance ? 'justify-content-center' : 'flex-lg-row flex-column py-8'
+                )}
             >
                 {/* Mobile Image Caption (Button Label) */}
                 {hasImages && (
@@ -64,15 +65,14 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                             <h2
                                 className={classNames(
                                     'd-none',
-                                    item === carouselHook.carouselItems.currentItem &&
-                                        'd-block display-5 font-weight-bold'
+                                    item === carouselHook.carouselItems.currentItem && 'd-block display-5 font-weight-bold'
                                 )}
-                                key={index}
+                                key={item.title}
                                 onClick={() => carouselHook.moveCarousel(index)}
                                 onKeyDown={() => carouselHook.moveCarousel(index)}
                                 role="presentation"
                             >
-                                {item.buttonLabel}
+                                {item.title}
                             </h2>
                         ))}
                     </div>
@@ -98,17 +98,19 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                         <div
                             className={classNames(
                                 'custom-carousel-item cursor-pointer display-5 max-w-375 py-2 mb-0',
-                                item === carouselHook.carouselItems.currentItem ? 'transition-5 text-black border-saturn border border-2 px-2' : 'text-gray-300',
+                                animateTransition ? item === carouselHook.carouselItems.currentItem ? 'transition-5 text-black border-saturn border border-2 px-2' : 'text-gray-300' : '',
+                                !animateTransition && item === carouselHook.carouselItems.currentItem ? 'font-weight-bold text-black' : 'text-black',
                                 index !== (carouselItems.length - 1) ? 'mb-2' : 'mb-0'
                             )}
-                            key={index}
+                            key={item.title}
                             onClick={() => carouselHook.moveCarousel(index)}
                             onKeyDown={() => carouselHook.moveCarousel(index)}
                             onMouseEnter={() => carouselHook.moveCarousel(index)}
                             role="button"
                             tabIndex={0}
                         >
-                            {item.buttonLabel}
+                            <h5 className="mb-1 text-lg">{item.title}</h5>
+                            {item.subtitle && <p className="mb-0">{item.subtitle}</p>}
                         </div>
                     ))}
                     <ArrowDownIcon
@@ -123,20 +125,21 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
 
                 {/* Carousel Item */}
                 <div
-                    className={`${
-                        hasImages ? 'h-500' : 'bg-light-gray-5 h-550'
-                    } col-lg-5 col-md-10 col-sm-12 p-4 py-5 d-flex align-items-center justify-content-lg-start justify-content-center`}
+                    className={classNames(
+                      'col-lg-5 col-md-10 col-sm-12 p-4 py-5 d-flex align-items-center justify-content-lg-start justify-content-center',
+                      hasImages ? 'h-500' : animateTransition ? 'bg-light-gray-5 h-550' : ''
+                    )}
                 >
                     {carouselItems.map((item, index) => (
                         <div
-                            key={index}
+                            key={item.title}
                             className={classNames(item === carouselHook.carouselItems.currentItem ? 'd-block' : 'd-none')}
                             onMouseOver={() => carouselHook.moveCarousel(index)}
                             onFocus={() => carouselHook.moveCarousel(index)}
                         >
                             {!autoAdvance && (
                                 <h1 className={classNames('font-weight-bold mb-lg-4', !autoAdvance && 'display-2')}>
-                                    {item.buttonLabel}
+                                    {item.title}
                                 </h1>
                             )}
                             <div>{item.text}</div>
@@ -155,7 +158,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                         {carouselItems.map((item, index) => (
                             <CircleSmallIcon
                                 color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
-                                key={index}
+                                key={item.title}
                                 className="cursor-pointer"
                             />
                         ))}

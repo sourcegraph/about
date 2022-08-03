@@ -28,7 +28,7 @@ const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ 
 
 const items = [
     {
-        buttonLabel: 'Make knowledge self-serve',
+        title: 'Make knowledge self-serve',
         text: (
             <CarouselItem
                 header="Make knowledge self-serve"
@@ -41,11 +41,9 @@ const items = [
                 }
             />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Enable developers to learn by example',
+        title: 'Enable developers to learn by example',
         text: (
             <CarouselItem
                 header="Enable developers to learn by example"
@@ -72,7 +70,7 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Get code history and ownership at a glance',
+        title: 'Get code history and ownership at a glance',
         text: (
             <CarouselItem
                 header="Get code history and ownership at a glance"
@@ -88,7 +86,7 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Visualize contributions and chart team progress',
+        title: 'Visualize contributions and chart team progress',
         text: (
             <CarouselItem
                 header="Visualize contributions and chart team progress"
@@ -114,7 +112,7 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Document and share actionable code snippets',
+        title: 'Document and share actionable code snippets',
         text: (
             <CarouselItem
                 header="Document and share actionable code snippets"

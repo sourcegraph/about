@@ -28,7 +28,7 @@ const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ 
 
 const items = [
     {
-        buttonLabel: 'Respond to incidents faster',
+        title: 'Respond to incidents faster',
         text: (
             <CarouselItem
                 header="Response to incidents faster"
@@ -63,11 +63,9 @@ const items = [
                 }
             />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Limit the impact of incidents',
+        title: 'Limit the impact of incidents',
         text: (
             <CarouselItem
                 header="Limit the impact of incidents"
@@ -95,7 +93,7 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Track remediation progress',
+        title: 'Track remediation progress',
         text: (
             <CarouselItem
                 header="Track remediation progress"
@@ -122,7 +120,7 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Monitor for unsafe code',
+        title: 'Monitor for unsafe code',
         text: (
             <CarouselItem
                 header="Monitor for unsafe code"
