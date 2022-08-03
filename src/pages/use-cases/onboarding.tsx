@@ -163,6 +163,17 @@ const blogResourceItems = [
         },
         href: '/blog/software-engineer-career-ladder',
     },
+    {
+        title: '5 key traits of a code intelligence platform',
+        description:
+            'Sourcegraph is more than search. Learn how the code intelligence platform helps development teams quickly get unblocked, resolve issues faster, and gain insights to make better decisions.',
+        type: 'Guide',
+        img: {
+            src: '/backgrounds/dark-multi-grid.jpg',
+            alt: 'Grid background with abstract blue and pink hues',
+        },
+        href: '/guides/key-traits-of-a-code-intelligence-platform.pdf',
+    },
 ]
 
 const threeUpTextItems = [

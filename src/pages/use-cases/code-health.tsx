@@ -234,15 +234,15 @@ const blogResourceItems = [
         href: '/blog/migrating-to-css-modules-with-codemods-and-code-insights',
     },
     {
-        title: 'How we added backend integration testing to our CI pipeline',
+        title: '5 key traits of a code intelligence platform',
         description:
-            "Here's the story and the lessons learned from our work to remove all existing backend-related end-to-end tests and reliably run their corresponding unit and integration tests as part of our CI pipeline on all branches.",
-        type: 'Blog post',
+            'Sourcegraph is more than search. Learn how the code intelligence platform helps development teams quickly get unblocked, resolve issues faster, and gain insights to make better decisions.',
+        type: 'Guide',
         img: {
-            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/backend-integration-testing/backend-integration-testing.png',
-            alt: 'Backend integration testing blog thumbnail',
+            src: '/backgrounds/dark-multi-grid.jpg',
+            alt: 'Grid background with abstract blue and pink hues',
         },
-        href: '/blog/integration-testing',
+        href: '/guides/key-traits-of-a-code-intelligence-platform.pdf',
     },
 ]
 

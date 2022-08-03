@@ -271,14 +271,15 @@ const blogResourceItems = [
         href: '/blog/migrating-to-css-modules-with-codemods-and-code-insights',
     },
     {
-        title: 'Announcing Code Insights: analytics for engineering teams to understand and visualize their codebase over time',
-        description: 'Learn about why we built Code Insights from our CEO.',
-        type: 'Blog post',
+        title: '5 key traits of a code intelligence platform',
+        description:
+            'Sourcegraph is more than search. Learn how the code intelligence platform helps development teams quickly get unblocked, resolve issues faster, and gain insights to make better decisions.',
+        type: 'Guide',
         img: {
-            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/announcement-header.png',
-            alt: 'Announcing code insights blog thumbnail',
+            src: '/backgrounds/dark-multi-grid.jpg',
+            alt: 'Grid background with abstract blue and pink hues',
         },
-        href: '/blog/announcing-code-insights',
+        href: '/guides/key-traits-of-a-code-intelligence-platform.pdf',
     },
     {
         title: 'Dive into documentation',
