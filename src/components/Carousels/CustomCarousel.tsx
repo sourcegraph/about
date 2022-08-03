@@ -139,7 +139,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                             key={item.title}
                             className={classNames(
                                 animateTransition && 'position-absolute',
-                                animateTransition ? item === carouselHook.carouselItems.currentItem ? 'transition-5 opacity-100 w-xl-450 w-lg-350' : 'opacity-0' : '',
+                                animateTransition ? item === carouselHook.carouselItems.currentItem ? 'transition-1 opacity-100 w-xl-450 w-lg-350' : 'opacity-0' : '',
                                 !animateTransition ? item === carouselHook.carouselItems.currentItem ? 'd-block' : 'd-none' : ''
                             )}
                             onMouseOver={() => carouselHook.moveCarousel(index)}

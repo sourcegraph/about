@@ -96,7 +96,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
         </div>
 
         <div className="container max-w-900 mt-6">
-            <h1 className="display-3 font-weight-bold">Move fast — even in big code bases</h1>
+            <h2 className="font-weight-bold">Move fast — even in big code bases</h2>
             <h5 className="font-weight-normal py-3">Learn how these software companies used Sourcegraph</h5>
             <div className="d-flex flex-wrap pt-4 position-relative">
                 {caseStudyItems.map(study => (
@@ -109,7 +109,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
 
         <div className="bg-gradient-venus-saturated py-6">
             <section className="container max-w-900 text-center">
-                <h1 className="display-3 font-weight-bold pt-2">Want to use Sourcegraph at your company?</h1>
+                <h2 className="font-weight-bold pt-2">Want to use Sourcegraph at your company?</h2>
                 <h5 className="pt-4 pb-1 mx-auto max-w-550 font-weight-normal">
                     <span>
                         <Link href="/get-started/self-hosted" passHref={true}>
@@ -145,7 +145,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
 
         <div className="container max-w-900 py-7 px-0">
             <div className="col-lg-6">
-                <h1 className="mb-5 font-weight-bold">Related resources</h1>
+                <h2 className="mb-5 font-weight-bold">Related resources</h2>
             </div>
             {blogResourceItems.map(item => (
                 <BlogResourceItem key={item.title} blog={item} />
