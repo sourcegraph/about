@@ -22,17 +22,17 @@ interface Template {
     queries: ReactNode[]
 }
 
-export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAdvance = true }) => {
+export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAdvance }) => {
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as Template[]
 
     return (
         <div className="tab-carousel">
             <div>
-                {carouselItems.map(item => (
+                {carouselItems.map((item, index) => (
                     <div
                         key={item.header}
-                        className={item === carouselHook.carouselItems.currentItem ? 'd-block h-400' : 'd-none'}
+                        className={index === carouselHook.carouselItems.currentItemIndex ? 'd-block h-400' : 'd-none'}
                     >
                         <TemplateCodeBlock template={item} />
                     </div>
@@ -46,9 +46,9 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
                     color={carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                 />
                 <div>
-                    {carouselItems.map(item => (
+                    {carouselItems.map((item, index) => (
                         <CircleSmallIcon
-                            color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
+                            color={index === carouselHook.carouselItems.currentItemIndex ? '#000' : '#D0D0D0'}
                             key={item.header}
                         />
                     ))}

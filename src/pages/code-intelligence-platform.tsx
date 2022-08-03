@@ -240,8 +240,8 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                     <Video
                         host="self"
                         source={{
-                            mp4: '/animations/code-search',
-                            webm: '/animations/code-search',
+                            mp4: '/animations/batch-changes',
+                            webm: '/animations/batch-changes',
                         }}
                         title="Sourcegraph Code Search"
                         caption="Sourcegraph Code Search"
@@ -295,8 +295,8 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                     <Video
                         host="self"
                         source={{
-                            mp4: '/animations/code-search',
-                            webm: '/animations/code-search',
+                            mp4: '/animations/code-insights',
+                            webm: '/animations/code-insights',
                         }}
                         title="Sourcegraph Code Search"
                         caption="Sourcegraph Code Search"
