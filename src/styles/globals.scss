@@ -375,3 +375,12 @@ $positions: ('top', 'right', 'bottom', 'left');
 .transition-5 {
     transition: all .5s ease-in-out;
 }
+
+//https://getbootstrap.com/docs/5.1/utilities/opacity/
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
