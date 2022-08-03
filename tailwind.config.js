@@ -2,7 +2,7 @@
 module.exports = {
 
   // Files run through Tailwind
-  content: ['./pages/**/*.tsx', './components/**/*.tsx'],
+  content: ['./src/pages/**/*.tsx', './src/components/**/*.tsx'],
   
   // Theme based on our Marketing DLS
   theme: {
@@ -94,6 +94,10 @@ module.exports = {
       // Breakpoints and responsive modifiers
       screens: {
         xs: '480px',
+      },
+
+      borderWidth: {
+        '3': '3px'
       }
 
     }

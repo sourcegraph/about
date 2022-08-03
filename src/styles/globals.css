@@ -31,7 +31,7 @@
     /* List Elements */
     ul,
     ol {
-        list-style-type: unset;
+        list-style: revert;
         margin: 0 0 0 40px;
     }
 }
