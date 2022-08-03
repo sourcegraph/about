@@ -67,6 +67,7 @@ Sourcegraph is now faster than ever. We're using the latest in React, lazy loadi
 <!-- TODO before/after or sg/gh comparison gifs -->
 
 ### DevX: OpenTelemetry and Sourcegraph 4.0
+<!--@jhchabran @bobheadxi Here is draft for the blog post.-->
 Today we have a myriad of tooling-specific ways for exporting observability data. OpenTelemetry (OTEL) is an open standard and set of tools that enable adopters to easily switch between different platforms for observability data, as well as extend it to fit their own backends. By adopting OpenTelemetry as a default, changing the way we export observability data, and updating various deployment methods accordingly, we can unify our internal infrastructure, eliminate technical debt, and enable customers to easily feed observability data into their own systems.
 
 This will be a breaking change for customers - for example, for tracing today, we only export Jaeger-specific traces and ship Sourcegraph with Jaeger-specific sidecars and agents. By adopting OpenTelemetry, we would swap this out with an OpenTelemetry instance, and remove the need to have Jaeger shipped with every deployment of Sourcegraph, making Jaeger an opt-in deployment, and prompting customers to bring their own tracing backend by default.
