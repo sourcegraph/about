@@ -85,8 +85,8 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                                 // Show SG & Customer logo for customer-based webinars
                                 <div className="pb-5 col-lg-4 col-12 text-lg-center px-lg-0 pb-lg-0">
                                     <img
-                                        className={`border-right border-black tw-inline tw-max-w-[65px] md:tw-max-w-[95px] ${
-                                            isMdOrDown ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'
+                                        className={`tw-border-solid tw-border-r-black tw-inline tw-max-w-[65px] md:tw-max-w-[95px] ${
+                                            isMdOrDown ? 'tw-border-r-2 mr-3 pr-3' : 'tw-border-r-3 mr-4 pr-4'
                                         }`}
                                         src="/sourcegraph/sourcegraph-mark.svg"
                                         alt="Sourcegraph mark"
@@ -140,7 +140,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
 
                         <div className="pb-6 col-md-6 col-12 pb-md-0">
                             <h2 className="font-weight-bold">{formLabel}</h2>
-                            <div className="px-0 px-4 py-4 mt-3 border shadow-sm border-saturn border-3">
+                            <div className="px-0 px-4 py-4 mt-3 shadow-sm border-saturn tw-border-solid tw-border-3">
                                 {!hasWatchNowQuery && (
                                     <HubSpotForm
                                         masterFormName="gatedMulti"

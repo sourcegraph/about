@@ -1,31 +1,30 @@
+/**
+ * These are our Tailwind CSS Base styles. Please reference our DLS for
+ * defining specifications and avoid one-off styles in this stylesheet.
+ */
+
 @tailwind base;
 
 /* Base Styles */
 @layer base {
-    /* TODO */
-    /* Typography */
-    h1 {
-        
+    /* Typography utility classes */
+    .text-h1 {
+        @apply tw-font-sans tw-text-7xl tw-tracking-normal tw-font-semibold;
     }
-
-    h2 {
-
+    .text-h2 {
+        @apply tw-font-sans tw-text-5xl tw-tracking-normal tw-font-semibold;
     }
-
-    h3 {
-
+    .text-h3 {
+        @apply tw-font-sans tw-text-3xl tw-tracking-normal tw-font-normal;
     }
-
-    h4 {
-
+    .text-h4 {
+        @apply tw-font-sans tw-text-2xl tw-tracking-normal tw-font-normal;
     }
-
-    h5 {
-
+    .text-h5 {
+        @apply tw-font-sans tw-text-xl tw-tracking-normal tw-font-normal;
     }
-
-    h6 {
-
+    .text-h6 {
+        @apply tw-font-sans tw-text-lg tw-tracking-wide tw-font-normal tw-uppercase;
     }
 
     /* List Elements */
@@ -33,6 +32,10 @@
     ol {
         list-style: revert;
         margin: 0 0 0 40px;
+    }
+
+    code {
+        @apply tw-font-mono tw-text-base tw-font-medium tw-tracking-tightest;
     }
 }
 

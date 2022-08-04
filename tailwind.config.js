@@ -120,6 +120,14 @@ module.exports = {
       '8xl': ['4.5rem', { lineHeight: '5.375rem' }], // 72px / 86px
     },
 
+    letterSpacing: {
+      tightest: '-0.02em',
+      tighter: '-0.01em',
+      tight: '-0.005em',
+      normal: 0,
+      wide: '0.03em',
+    },
+
     // This extends (not replaces) theme properties
     extend: {
       // Breakpoints and responsive modifiers

@@ -301,11 +301,6 @@ pre {
     max-width: 100%;
 }
 
-code {
-    font-family: 'Source Code Pro', monospace !important;
-    background-color: $light-gray-4;
-}
-
 /* ==================== Positioning ==================== */
 
 $positions: ('top', 'right', 'bottom', 'left');
@@ -335,15 +330,6 @@ $positions: ('top', 'right', 'bottom', 'left');
 }
 
 /* ==================== Borders ==================== */
-// TODO: On Tailwind migration, trade out these styles for border-x utility classes"
-.border-2 {
-    border-width: 2px !important;
-}
-
-.border-3 {
-    border-width: 3px !important;
-}
-
 .border-saturn {
     border-image-slice: 1 !important;
     border-image-source: linear-gradient(to right, $violet-mist, $blue-mist) !important;

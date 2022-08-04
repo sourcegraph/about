@@ -28,7 +28,7 @@ const Hero: FunctionComponent = () => {
     })
 
     return (
-        <div className="bg-white py-5 py-md-7 px-2 position-relative">
+        <div className="px-2 py-5 bg-white py-md-7 position-relative">
             {[meshLeft, meshRight].map((image, index) => (
                 <div
                     key={image.src}
@@ -42,17 +42,17 @@ const Hero: FunctionComponent = () => {
                 </div>
             ))}
 
-            <div className="text-center max-w-750 mx-auto">
+            <div className="mx-auto text-center max-w-750">
                 <h1 className={classNames(styles.heading, 'font-weight-bold')}>
-                    <span className="d-block mb-2 text-transparent bg-clip-text text-gradient">{headline}</span> across
+                    <span className="mb-2 text-transparent d-block bg-clip-text text-gradient">{headline}</span> across
                     your entire codebase
                 </h1>
-                <p className="font-weight-bold my-5 max-w-700 mx-auto">
+                <p className="mx-auto my-5 font-weight-bold max-w-700">
                     Understand, fix, and automate across your codebase with Sourcegraph's code intelligence platform
                 </p>
 
-                <div className="max-w-350 mx-auto flex-column flex-sm-row d-sm-flex align-items-center">
-                    <div className="col-sm-6 px-sm-0 mb-3 mb-sm-0 mr-sm-3">
+                <div className="mx-auto max-w-350 flex-column flex-sm-row d-sm-flex align-items-center">
+                    <div className="mb-3 col-sm-6 px-sm-0 mb-sm-0 mr-sm-3">
                         <Link href="/get-started/self-hosted" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
@@ -101,7 +101,7 @@ const Hero: FunctionComponent = () => {
                 <CustomerLogos />
             </div>
 
-            <div className="max-w-600 mx-auto text-center">
+            <div className="mx-auto text-center max-w-600">
                 <h2 className="font-weight-bold">
                     Over{' '}
                     <Link href="/case-studies" passHref={true}>
