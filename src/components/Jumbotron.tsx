@@ -1,11 +1,9 @@
 import { FunctionComponent } from 'react'
 
-import styles from './jumbotron.module.scss'
-
 export const COLORS = {
     white: '',
-    dark: 'bg-black text-light',
-    purple: 'bg-vivid-violet text-light',
+    dark: 'tw-bg-black tw-text-white',
+    purple: 'tw-bg-violet-400 tw-text-white',
 }
 
 interface Props {
@@ -23,15 +21,15 @@ export const Jumbotron: FunctionComponent<Props> = ({
     color = 'white',
     logomark = true,
     title,
-    titleClassName = 'display-3 font-weight-bold',
+    titleClassName = 'tw-text-5xl tw-font-semibold',
     description,
     children,
 }) => (
-    <div className={`jumbotron rounded-0 ${COLORS[color]} ${className}`}>
-        <div className="container text-center pt-4 pb-5">
+    <div className={`jumbotron tw-rounded-none ${COLORS[color]} ${className}`}>
+        <div className="tw-container mx-auto tw-text-center tw-pt-6 tw-pb-8">
             {logomark && (
                 <img
-                    className={`jumbotron__logo mb-1 ${styles.logo}`}
+                    className="tw-mb-1 tw-w-8 tw-h-8 tw-mx-auto"
                     src="/sourcegraph/sourcegraph-mark.svg"
                     aria-hidden="true"
                     alt="Sourcegraph mark"

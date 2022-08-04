@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection, Figure, Blockquote } from '@components'
+import { Layout, CaseStudyLayout, ContentSection, Blockquote } from '@components'
 
 export const CaseStudy: FunctionComponent = () => (
     <Layout
@@ -36,20 +36,26 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
                     <div className="row justify-content-md-center pt-3">
                         <div className="col-md-4">
-                            <Figure
-                                src="/case-studies/francois-jehl-criteo.jpg"
-                                alt="François Jehl, Senior Engineering Manager, Criteo"
-                                caption="François Jehl, Senior Engineering Manager, Criteo"
-                                className="w-100 rounded-circle img-fluid mx-auto d-block mb-3"
-                            />
+                            <figure>
+                                <img
+                                    src="/case-studies/francois-jehl-criteo.jpg"
+                                    alt="François Jehl, Senior Engineering Manager, Criteo"
+                                    title="François Jehl, Senior Engineering Manager, Criteo"
+                                    className="w-100 rounded-circle img-fluid mx-auto d-block mb-3"
+                                />
+                                <figcaption>François Jehl, Senior Engineering Manager, Criteo</figcaption>
+                            </figure>
                         </div>
                         <div className="col-md-4">
-                            <Figure
-                                src="/case-studies/loic-teikiteetini-vaysse-criteo.jpg"
-                                alt="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
-                                caption="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
-                                className="w-100 rounded-circle img-fluid mx-auto d-block mb-3"
-                            />
+                            <figure>
+                                <img
+                                    src="/case-studies/loic-teikiteetini-vaysse-criteo.jpg"
+                                    alt="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
+                                    title="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
+                                    className="w-100 rounded-circle img-fluid mx-auto d-block mb-3"
+                                />
+                                <figcaption>Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo</figcaption>
+                            </figure>
                         </div>
                     </div>
                     <Blockquote

@@ -110,7 +110,7 @@ export const IntegrationsSection: FunctionComponent = () => (
             <div className="col-lg-6 mb-5">
                 <h3 className="h5 font-weight-bold">All your repositories + 2M open source (and counting)</h3>
 
-                <ul className="list-inline d-inline-flex flex-wrap">{renderListItems(codeHosts)}</ul>
+                <ul className="tw-list-none tw-m-0">{renderListItems(codeHosts)}</ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     className="text-primary"
@@ -126,7 +126,7 @@ export const IntegrationsSection: FunctionComponent = () => (
             <div className="col-lg-6 mb-5">
                 <h3 className="h5 font-weight-bold">All your languages</h3>
 
-                <ul className="list-inline d-inline-flex flex-wrap">{renderListItems(languages)}</ul>
+                <ul className="tw-list-none tw-m-0">{renderListItems(languages)}</ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     className="text-primary"
@@ -142,7 +142,7 @@ export const IntegrationsSection: FunctionComponent = () => (
             <div className="col-lg-6 mb-5">
                 <h3 className="h5 font-weight-bold">All your tools</h3>
 
-                <ul className="list-inline d-inline-flex flex-wrap">{renderListItems(tools)}</ul>
+                <ul className="tw-list-none tw-m-0">{renderListItems(tools)}</ul>
                 <a
                     href="https://docs.sourcegraph.com/integration"
                     className="text-primary"
@@ -158,15 +158,15 @@ export const IntegrationsSection: FunctionComponent = () => (
             <div className="col-lg-6 mb-5">
                 <h4 className="font-weight-bold">Deployment options</h4>
 
-                <ul className="list-inline d-inline-flex flex-wrap">
+                <ul className="tw-list-none tw-m-0">
                     <li className="list-inline-item text-wrap">
                         <h6 className="font-weight-normal">Self-hosted by you:</h6>
-                        <ul className="p-0">{renderListItems(selfHostedOptions)}</ul>
+                        <ul className="tw-list-none tw-m-0">{renderListItems(selfHostedOptions)}</ul>
                     </li>
 
-                    <li className="list-inline-item text-wrap">
+                    <li className="tw-list-none tw-m-0">
                         <h6 className="font-weight-normal mt-3">Managed and hosted by us:</h6>
-                        <ul className="p-0">{renderListItems(['Docker Compose in GCP'])}</ul>
+                        <ul className="tw-list-none tw-m-0">{renderListItems(['Docker Compose in GCP'])}</ul>
                     </li>
                 </ul>
                 <a

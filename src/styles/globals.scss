@@ -64,8 +64,6 @@ $spacers: (
     ),
 );
 
-$border-color: $gray-300;
-
 $display1-size: 4rem;
 $display2-size: 3.25rem;
 $display3-size: 2.5rem;
@@ -122,7 +120,6 @@ $grid-breakpoints: (
 
 :root {
     --body-color: #{$dark-8};
-    --border-color: #{$border-color};
 }
 
 @import 'node_modules/bootstrap/scss/root';
@@ -222,7 +219,6 @@ table tbody + tbody {
 @import 'pages/landing-page';
 @import 'pages/podcast';
 @import 'pages/product/code-search-navigation';
-@import 'pages/product/code-change-management';
 @import 'pages/universal-code-search';
 @import 'templates/PostTemplate';
 @import 'pages/code-insights';

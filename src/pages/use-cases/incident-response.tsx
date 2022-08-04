@@ -6,7 +6,7 @@ import WebIcon from 'mdi-react/WebIcon'
 import Link from 'next/link'
 
 import {
-    BackButtonBold,
+    BackButton,
     BlogResourceItem,
     ContentSection,
     CustomCarousel,
@@ -14,6 +14,7 @@ import {
     Layout,
     QuoteCarousel,
     ThreeUpText,
+    TwoColumnSection,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -207,19 +208,19 @@ const blogResourceItems = [
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="mb-4 text-blurple" size={40} />,
+        icon: <MagnifyIcon className="mb-4 text-blurple tw-inline" size={40} />,
         subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Assess incidents quickly</h4>,
         description:
             "Pinpoint the code responsible for the incident and find the root cause in your codebase. Understand the code's functionality to verify the issue.",
     },
     {
-        icon: <ClockTimeThreeOutlineIcon className="mb-4 text-blurple" size={40} />,
+        icon: <ClockTimeThreeOutlineIcon className="mb-4 text-blurple tw-inline" size={40} />,
         subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Plan your remediation</h4>,
         description:
             'Reduce time to resolution by supplying response teams with actionable details, like links to all affected code.',
     },
     {
-        icon: <WebIcon className="mb-4 text-blurple" size={40} />,
+        icon: <WebIcon className="mb-4 text-blurple tw-inline" size={40} />,
         subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Execute your plan globally</h4>,
         description:
             "Fix the root cause and confirm the same issue doesn't reoccur in other areas by locating the code pattern and automating fixes across your entire codebase.",
@@ -239,7 +240,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                 <div className="container">
                     <div className="row">
                         <div className="col-md-7 my-7">
-                            <BackButtonBold href="/use-cases" text="USE CASES" />
+                            <BackButton href="/use-cases" text="USE CASES" />
                             <h1 className="display-2 font-weight-bold mb-4">
                                 Resolve incidents quickly and confidently
                             </h1>
@@ -292,36 +293,38 @@ const IncidentResponsePage: FunctionComponent = () => (
 
         <div className="bg-gradient-venus-radial">
             <ContentSection className="py-7">
-                <div className="row flex-column flex-lg-row justify-content-between px-0">
-                    <div className="p-lg-0 col-lg-6 px-4">
-                        <h2 className="mb-4 display-3 font-weight-bold max-w-500">
-                            Incident response is stressful and overwhelming
-                        </h2>
-                        <p>
-                            Current tools don't enable teams to quickly get to the root cause of an incident and ensure
-                            it doesn't reoccur. What does that mean for you?
-                        </p>
-                        <ul>
-                            <li className="mt-1">
-                                Outages and degraded performance persist while development teams look for causes,
-                                leading to lost revenue and frustrated customers.
-                            </li>
-                            <li className="mt-1">
-                                Incidents can reoccur if developers can't find the root cause, leaving your company with
-                                a reputation for unreliability and missed SLAs.
-                            </li>
-                            <li className="mt-1">
-                                Incident response often relies on knowledge silos, which are neither scalable nor
-                                sustainable.
-                            </li>
-                            <li className="mt-1">
-                                Company leaders struggle to gain visibility into in-progress incident responses and
-                                communicate timelines to stakeholders.
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="col-lg-5">
-                        <div className="bg-white p-5 mt-lg-0 mt-5">
+                <TwoColumnSection
+                    leftColumn={
+                        <>
+                            <h2 className="mb-4 display-3 font-weight-bold max-w-500">
+                                Incident response is stressful and overwhelming
+                            </h2>
+                            <p>
+                                Current tools don't enable teams to quickly get to the root cause of an incident and
+                                ensure it doesn't reoccur. What does that mean for you?
+                            </p>
+                            <ul>
+                                <li className="mt-1">
+                                    Outages and degraded performance persist while development teams look for causes,
+                                    leading to lost revenue and frustrated customers.
+                                </li>
+                                <li className="mt-1">
+                                    Incidents can reoccur if developers can't find the root cause, leaving your company
+                                    with a reputation for unreliability and missed SLAs.
+                                </li>
+                                <li className="mt-1">
+                                    Incident response often relies on knowledge silos, which are neither scalable nor
+                                    sustainable.
+                                </li>
+                                <li className="mt-1">
+                                    Company leaders struggle to gain visibility into in-progress incident responses and
+                                    communicate timelines to stakeholders.
+                                </li>
+                            </ul>
+                        </>
+                    }
+                    rightColumn={
+                        <div className="bg-white tw-p-8 lg:tw-ml-10">
                             <h4>Cloudflare quickly addresses root-cause incidents</h4>
                             <p>
                                 Cloudflare engineers use Sourcegraph's code intelligence platform to refactor and debug
@@ -351,8 +354,8 @@ const IncidentResponsePage: FunctionComponent = () => (
                                 className="d-flex mx-auto max-w-150 mt-3"
                             />
                         </div>
-                    </div>
-                </div>
+                    }
+                />
             </ContentSection>
         </div>
 

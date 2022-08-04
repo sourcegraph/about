@@ -131,6 +131,7 @@ const PricingPage: FunctionComponent = () => (
                     <div className="row justify-content-center pt-md-4">
                         <div className="col-md-8">
                             <Blockquote
+                                border={false}
                                 quote="Sourcegraph gives us the ability to search for and refactor
                                 references to deprecated services, libraries, URL patterns, and more across
                                 our 2000+ repositories, and the confidence that we're not leaving anyone
@@ -232,6 +233,7 @@ const PricingPage: FunctionComponent = () => (
                     <div className="row justify-content-center pt-md-4">
                         <div className="col-md-8">
                             <Blockquote
+                                border={false}
                                 quote="Sourcegraph pays for itself many times over—it's a game changer."
                                 author="François Jehl, Senior Engineering Manager, Criteo"
                                 logo={{

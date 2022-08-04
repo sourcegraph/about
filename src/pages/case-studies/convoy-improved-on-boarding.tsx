@@ -22,7 +22,7 @@ export const CaseStudy: FunctionComponent = () => (
                 image: '/case-studies/brandon-bloom-convoy.jpg',
             }}
         >
-            <ContentSection color="white" className="col-md-6">
+            <ContentSection color="white">
                 <div className="container">
                     <p>
                         Founded in 2015, Convoy has quickly grown to over 500 employees. However, their accelerated team

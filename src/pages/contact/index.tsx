@@ -20,12 +20,7 @@ const ContactHome: FunctionComponent = () => (
             description,
         }}
     >
-        <ContentPage
-            title={title}
-            description={description}
-            className="text-dark"
-            titleClassName="display-2 font-weight-bold"
-        >
+        <ContentPage title={title} description={description} titleClassName="tw-text-7xl tw-font-semibold">
             <ContentSection className="pt-6 pb-2">
                 <div className="row">
                     <div className="col-md-6 mb-4 pb-1">
@@ -45,7 +40,7 @@ const ContactHome: FunctionComponent = () => (
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <GithubIcon /> File a public issue
+                                    <GithubIcon className="tw-inline" /> File a public issue
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
@@ -57,7 +52,7 @@ const ContactHome: FunctionComponent = () => (
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <EmailIcon /> Email support@sourcegraph.com
+                                    <EmailIcon className="tw-inline" /> Email support@sourcegraph.com
                                 </a>
                             </div>
                         </div>
@@ -114,7 +109,7 @@ const ContactHome: FunctionComponent = () => (
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <EmailIcon /> hi@sourcegraph.com
+                                    <EmailIcon className="tw-inline" /> hi@sourcegraph.com
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
@@ -126,7 +121,7 @@ const ContactHome: FunctionComponent = () => (
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <TwitterIcon /> @sourcegraph
+                                    <TwitterIcon className="tw-inline" /> @sourcegraph
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
@@ -138,7 +133,7 @@ const ContactHome: FunctionComponent = () => (
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <GithubIcon /> github.com/sourcegraph
+                                    <GithubIcon className="tw-inline" /> github.com/sourcegraph
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
@@ -150,10 +145,10 @@ const ContactHome: FunctionComponent = () => (
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <LinkedinIcon /> Sourcegraph on LinkedIn
+                                    <LinkedinIcon className="tw-inline" /> Sourcegraph on LinkedIn
                                 </a>
                                 <div className="list-group-item d-flex p-relative">
-                                    <MapMarkerIcon className="mr-1" />
+                                    <MapMarkerIcon className="tw-inline tw-mr-1" />
                                     <div>
                                         Sourcegraph
                                         <br />

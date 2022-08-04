@@ -26,7 +26,7 @@ export const CaseStudy: FunctionComponent = () => {
                 }}
                 pdf="https://sourcegraphstatic.com/Lyft-Sourcegraph-case-study.pdf"
             >
-                <ContentSection color="white" className="col-md-6">
+                <ContentSection color="white">
                     <div className="container">
                         <p>
                             Lyft's mission is to improve people's lives with the world's best transportation. With over

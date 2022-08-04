@@ -28,6 +28,7 @@ import {
     ProductHero,
     TabCarousel,
     TemplateCodeBlock,
+    TwoColumnSection,
     YouTube,
     Video,
 } from '@components'
@@ -306,31 +307,32 @@ const CodeInsightsPage: FunctionComponent = () => (
                 product="code insights"
                 title={'Track what really matters\nto you and your team.'}
                 description="Transform your code into a queryable database to create customizable, visual dashboards in seconds."
-                cta={
-                    <HubSpotForm masterFormName="contactEmail" />
-                }
+                cta={<HubSpotForm masterFormName="contactEmail" />}
                 displayUnderNav={true}
             />
         }
     >
         <ContentSection className="py-lg-8 py-7">
-            <div className="row justify-content-between">
-                <div className="col-lg-5 pl-lg-0">
-                    <h2 className="mb-3 display-3 font-weight-bold">
-                        Finally, useful engineering metrics{' '}
-                        <span>
-                            <i>you</i>
-                        </span>{' '}
-                        define.
-                    </h2>
-                    <p>
-                        Forget about inaccurate spreadsheets, manual processes, and missing historical data. You can{' '}
-                        <strong>track everything in your codebase</strong>, from migrations to code smells, in a
-                        seamless and precise way. Make data-driven decisions using visualizations based on the power and
-                        accuracy of Sourcegraph Code Search.
-                    </p>
-                </div>
-                <div className="col-lg-7 mb-md-4 pl-lg-5 d-flex align-items-center video-container">
+            <TwoColumnSection
+                centerContent={true}
+                leftColumn={
+                    <>
+                        <h2 className="mb-3 display-3 font-weight-bold">
+                            Finally, useful engineering metrics{' '}
+                            <span>
+                                <i>you</i>
+                            </span>{' '}
+                            define.
+                        </h2>
+                        <p>
+                            Forget about inaccurate spreadsheets, manual processes, and missing historical data. You can{' '}
+                            <strong>track everything in your codebase</strong>, from migrations to code smells, in a
+                            seamless and precise way. Make data-driven decisions using visualizations based on the power
+                            and accuracy of Sourcegraph Code Search.
+                        </p>
+                    </>
+                }
+                rightColumn={
                     <Video
                         source={{
                             mp4: 'code_insights/code-insights-720',
@@ -340,8 +342,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                         caption="Code Insights"
                         loop={true}
                     />
-                </div>
-            </div>
+                }
+            />
         </ContentSection>
 
         <div className="bg-gradient-venus-radial py-7">

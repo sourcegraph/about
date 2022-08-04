@@ -6,7 +6,7 @@ import XmlIcon from 'mdi-react/XmlIcon'
 import Link from 'next/link'
 
 import {
-    BackButtonBold,
+    BackButton,
     Blockquote,
     BlogResourceItem,
     ContentSection,
@@ -14,6 +14,7 @@ import {
     CustomerLogos,
     Layout,
     ThreeUpText,
+    TwoColumnSection,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -152,13 +153,13 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <XmlIcon className="mb-4 text-blurple" size={40} />,
+        icon: <XmlIcon className="mb-4 text-blurple tw-inline" size={40} />,
         subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Quickly find trustworthy code to reuse</h4>,
         description:
             'Search your entire codebase to discover existing code to reuse. Gather crucial context, like who wrote the code, when, and where it’s used.',
     },
     {
-        icon: <FolderUploadOutlineIcon className="mb-4 text-blurple" size={40} />,
+        icon: <FolderUploadOutlineIcon className="mb-4 text-blurple tw-inline" size={40} />,
         subtitle: (
             <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Safely maintain and improve shared libraries</h4>
         ),
@@ -166,7 +167,7 @@ const threeUpTextItems = [
             'Automate PRs to push global updates. Get alerts when out-of-date libraries or deprecated functions are used, and eliminate duplicative code.',
     },
     {
-        icon: <AccountGroupOutlineIcon className="mb-4 text-blurple" size={40} />,
+        icon: <AccountGroupOutlineIcon className="mb-4 text-blurple tw-inline" size={40} />,
         subtitle: (
             <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Understand your team’s code reuse efforts</h4>
         ),
@@ -213,7 +214,7 @@ const CodeReusePage: FunctionComponent = () => (
                 <div className="container">
                     <div className="row">
                         <div className="col-md-7 my-7">
-                            <BackButtonBold href="/use-cases" text="USE CASES" />
+                            <BackButton href="/use-cases" text="USE CASES" />
                             <h1 className="display-2 font-weight-bold mb-4">Find and use code that already exists</h1>
                             <div className="display-4 font-weight-normal mb-5">
                                 Identify existing code libraries for reuse and use innersourcing to avoid spending time
@@ -261,28 +262,30 @@ const CodeReusePage: FunctionComponent = () => (
 
         <div className="bg-gradient-venus-radial">
             <ContentSection className="py-7">
-                <div className="row flex-column flex-lg-row justify-content-between px-0">
-                    <div className="p-lg-0 col-xl-6 col-lg-7 px-4">
-                        <h2 className="mb-4 display-3 font-weight-bold max-w-600">
-                            Finding reliable, reusable code is tedious and inefficient
-                        </h2>
-                        <p className="mt-5">
-                            Current tools don’t fully enable teams to innersource and use existing code to develop a
-                            more secure and coherent codebase. What does that mean for you and your team?
-                        </p>
-                        <ul>
-                            <li>Finding idiomatic code examples is tough if you don't know where to look.</li>
-                            <li>
-                                Without easy access to existing patterns, developers default to executing from scratch,
-                                increasing complexity and confusion in the codebase.
-                            </li>
-                            <li>
-                                Engineering leaders lack the visibility needed to ensure teams adopt recommended
-                                packages and retire deprecated ones.
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="col-lg-5 mt-lg-8 mt-5">
+                <TwoColumnSection
+                    leftColumn={
+                        <>
+                            <h2 className="mb-4 display-3 font-weight-bold max-w-600">
+                                Finding reliable, reusable code is tedious and inefficient
+                            </h2>
+                            <p className="mt-5">
+                                Current tools don’t fully enable teams to innersource and use existing code to develop a
+                                more secure and coherent codebase. What does that mean for you and your team?
+                            </p>
+                            <ul>
+                                <li>Finding idiomatic code examples is tough if you don't know where to look.</li>
+                                <li>
+                                    Without easy access to existing patterns, developers default to executing from
+                                    scratch, increasing complexity and confusion in the codebase.
+                                </li>
+                                <li>
+                                    Engineering leaders lack the visibility needed to ensure teams adopt recommended
+                                    packages and retire deprecated ones.
+                                </li>
+                            </ul>
+                        </>
+                    }
+                    rightColumn={
                         <Blockquote
                             headline="FactSet ensures consistency across its entire codebase"
                             quote="If I’m developing code for a library that might draw charts, for example, we don’t want
@@ -290,8 +293,8 @@ const CodeReusePage: FunctionComponent = () => (
                             find other chart examples, and simply copy the code. This saves us time and ensures
                             consistency."
                             author="Joseph Majesky, Software Engineer at FactSet"
-                            borderColor="vermillion"
                             inline={false}
+                            borderColor="vermillion-400"
                             logo={{
                                 src: '/external-logos/factset-logo.svg',
                                 alt: 'Factset',
@@ -301,8 +304,8 @@ const CodeReusePage: FunctionComponent = () => (
                                 href: '/case-studies/factset-migrates-from-perforce-to-github',
                             }}
                         />
-                    </div>
-                </div>
+                    }
+                />
             </ContentSection>
         </div>
 

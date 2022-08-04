@@ -87,7 +87,7 @@ Have an idea for a search scope that would be useful to your community? Tweet us
 <Figure 
   src="//images.contentful.com/le3mxztn6yoo/6ayRkpUW2IMyiQIg4G0IOq/f2d68c1040778fc62b024266e374a46e/scopePage.png"
   alt="SearchScopePage"
-  className="shadow-none"
+  shadow={false}
 />
 
 ### Integrations settings page
@@ -97,7 +97,7 @@ We've made it easier to connect your Sourcegraph instance to the Sourcegraph bro
 <Figure 
   src="//images.contentful.com/le3mxztn6yoo/2X1iVhIUcUoMcsCCk4YeAw/67e3e6c0f2807fb38beb3bb63ba37b7f/CodeIntelPR.png"
   alt="CodeIntelPR"
-  className="shadow-none"
+  shadow={false}
 />
 
 ## Changelog

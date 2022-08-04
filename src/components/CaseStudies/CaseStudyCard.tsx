@@ -152,7 +152,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                                 data-button-type="cta"
                             >
                                 {linkText}
-                                <ArrowRightIcon size={20} className="ml-1" />
+                                <ArrowRightIcon size={20} className="ml-1 tw-inline" />
                             </a>
                         </Link>
                     )}

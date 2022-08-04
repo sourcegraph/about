@@ -48,6 +48,6 @@ You can read more about this change and how to migrate your version contexts to 
 Previously, the Code Intelligence UI was only available to site-admins (except for hovers and reference panels). This conflicted with our users' need to add precise Code Intelligence to their own repositories. They could upload LSIF data and get precise Code Intelligence results, but couldn't visualize the status of that data. We now allow users to see uploads and indexes for repositories they have access to, helping them easily keep track of the status of all their LSIF data.
 
 <Figure 
-src="https://user-images.githubusercontent.com/1657213/137551018-de2aaa21-7afe-46ed-9040-f62af536d53c.png" 
-alt="The Code Intelligence uploads UI<" 
+  src="https://user-images.githubusercontent.com/1657213/137551018-de2aaa21-7afe-46ed-9040-f62af536d53c.png" 
+  alt="The Code Intelligence uploads UI"
 />

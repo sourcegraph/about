@@ -20,7 +20,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
             pdf="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-remote-software-development-made-easier.pdf"
             heroBackgroundImage="/white-papers/remote-easier-bg_1680x300.png"
         >
-            <ContentSection color="white" className="col-md-6 pt-5">
+            <ContentSection color="white" className="pt-5">
                 <div className="container">
                     <p>
                         Sourcegraph has been remote-friendly from the beginning — our two longest-tenured teammates have
@@ -122,7 +122,6 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         ensure your questions are specific to what the author has changed.
                     </p>
                     <Figure
-                        className="w-100 shadow0"
                         src="/white-papers/remotework_codereview.png"
                         alt="Sourcegraph's go to definition and find references hover tooltip on a code review"
                     />
@@ -145,7 +144,6 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         your code's history.
                     </p>
                     <Figure
-                        className="w-100 shadow0"
                         src="/white-papers/remotework_commithistory.png"
                         alt="A commit history search with highlighted code authors in Sourcegraph"
                     />
@@ -217,7 +215,6 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         to that code that you can share with a coworker.
                     </p>
                     <Figure
-                        className="w-100 shadow0"
                         src="/white-papers/remotework_codelinksharing.png"
                         alt="With Sourcegraph, you can share a direct link to the code you want to discuss"
                     />
@@ -239,6 +236,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                     <br />
                 </div>
             </ContentSection>
+
             <ContentSection color="black" className="py-5">
                 <div className="row justify-content-md-center">
                     <div className="col-md-3 text-center">

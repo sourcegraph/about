@@ -205,20 +205,20 @@ const CareersPage: FunctionComponent = () => {
                         data-button-type="cta"
                     >
                         Explore our jobs
-                        <ArrowRightIcon className="ml-3" />
+                        <ArrowRightIcon className="ml-3 tw-inline" />
                     </a>
                 </ContentSection>
 
-                <div className="text-center">
+                <div className="tw-text-center">
                     <img
                         src="../careers/careers_hero_img.jpg"
                         alt="Sourcegraph team members jumping"
-                        className="hero-image"
+                        className="tw-max-w-screen-2xl tw-w-full tw-hidden md:tw-inline"
                     />
                     <img
                         src="../careers/careers_hero_img_mobile.jpg"
                         alt="Sourcegraph team members jumping"
-                        className="hero-image-mobile"
+                        className="tw-w-full tw-inline md:tw-hidden"
                     />
                 </div>
 
@@ -347,7 +347,7 @@ const CareersPage: FunctionComponent = () => {
                                 <h2 className="display-2 font-weight-bold">What you seek is seeking you</h2>
                                 <p>
                                     We're looking forward to reminding you that "you're on mute"{' '}
-                                    <img src="../SmileyWink.svg" alt="Smiling winky face emoji" />
+                                    <img src="../SmileyWink.svg" alt="Smiling winky face emoji" className="tw-inline" />
                                 </p>
                             </div>
                         </div>
@@ -362,7 +362,7 @@ const CareersPage: FunctionComponent = () => {
                             data-button-type="cta"
                         >
                             Explore our jobs
-                            <ArrowRightIcon className="ml-3" />
+                            <ArrowRightIcon className="ml-3 tw-inline" />
                         </a>
                     </ContentSection>
                 </div>

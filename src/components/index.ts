@@ -1,7 +1,7 @@
 // Common
 export { Alert } from './Alert'
 export { Background } from './Background'
-export { BackButton, BackButtonBold, BackButtonLight } from './BackButton'
+export { BackButton } from './BackButton'
 export { Blockquote } from './Blockquote'
 export { BlogResourceItem } from './BlogResourceItem'
 export { BoardSection } from './BoardSection'

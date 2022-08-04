@@ -6,7 +6,7 @@ import WrenchOutlineIcon from 'mdi-react/WrenchOutlineIcon'
 import Link from 'next/link'
 
 import {
-    BackButtonBold,
+    BackButton,
     Blockquote,
     BlogResourceItem,
     ContentSection,
@@ -15,6 +15,7 @@ import {
     Layout,
     QuoteCarousel,
     ThreeUpText,
+    TwoColumnSection,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -163,19 +164,19 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="mb-4 text-blurple" size={40} />,
+        icon: <MagnifyIcon className="mb-4 text-blurple tw-inline" size={40} />,
         subtitle: <h4 className="font-weight-bold">Find unhealthy code</h4>,
         description:
             'Build a healthier codebase by finding references to deprecated services, libraries, URL patterns, and more across all your repositories.',
     },
     {
-        icon: <WrenchOutlineIcon className="mb-4 text-blurple" size={40} />,
+        icon: <WrenchOutlineIcon className="mb-4 text-blurple tw-inline" size={40} />,
         subtitle: <h4 className="font-weight-bold">Remediate code health issues</h4>,
         description:
             'Tackle refactoring efforts and tech debt from legacy systems and acquisitions with automated pull requests across your entire codebase.',
     },
     {
-        icon: <ClipBoardPulseOutlineIcon className="mb-4 text-blurple" size={40} />,
+        icon: <ClipBoardPulseOutlineIcon className="mb-4 text-blurple tw-inline" size={40} />,
         subtitle: <h4 className="font-weight-bold">Monitor code health initiatives</h4>,
         description:
             'Stay on top of code health changes. Monitor and measure code health initiatives and get actionable insights into the impact of large-scale changes.',
@@ -260,7 +261,7 @@ const UseCasePage: FunctionComponent = () => (
                     <div className="container pb-4">
                         <div className="row">
                             <div className="col-md-7 my-7">
-                                <BackButtonBold href="/use-cases" text="USE CASES" />
+                                <BackButton href="/use-cases" text="USE CASES" />
                                 <h1 className="display-2 font-weight-bold mb-4 max-w-250 max-w-sm-275 max-w-lg-400">
                                     Healthy code, happy teams
                                 </h1>
@@ -311,37 +312,39 @@ const UseCasePage: FunctionComponent = () => (
 
         <div className="bg-gradient-venus-radial">
             <ContentSection className="py-7">
-                <div className="row flex-column flex-lg-row justify-content-between">
-                    <div className="p-lg-0 col-lg-6 px-4">
-                        <h2 className="mb-md-4 display-3 font-weight-bold max-w-500">
-                            Improving code health can be daunting
-                        </h2>
-                        <p className="max-w-500">
-                            Engineering teams need to track and measure code quality consistently to monitor code health
-                            across their entire codebase, but current tools don't make this easy. What does that mean
-                            for you?
-                        </p>
-                        <ul>
-                            <li className="mt-1">
-                                Old versions, libraries, or functions are littered throughout your code, resulting in
-                                incidents and backward compatibility issues.
-                            </li>
-                            <li className="mt-1">
-                                Unclear code ownership leads to unclear responsibility, making it hard for developers to
-                                find the right domain expert when they need help.
-                            </li>
-                            <li className="mt-1">
-                                Engineering managers struggle to justify prioritizing and addressing tech debt because
-                                success is difficult to track and measure.
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="col-lg-5 mt-lg-8 mt-5">
+                <TwoColumnSection
+                    leftColumn={
+                        <>
+                            <h2 className="mb-md-4 display-3 font-weight-bold max-w-500">
+                                Improving code health can be daunting
+                            </h2>
+                            <p className="max-w-500">
+                                Engineering teams need to track and measure code quality consistently to monitor code
+                                health across their entire codebase, but current tools don't make this easy. What does
+                                that mean for you?
+                            </p>
+                            <ul>
+                                <li className="mt-1">
+                                    Old versions, libraries, or functions are littered throughout your code, resulting
+                                    in incidents and backward compatibility issues.
+                                </li>
+                                <li className="mt-1">
+                                    Unclear code ownership leads to unclear responsibility, making it hard for
+                                    developers to find the right domain expert when they need help.
+                                </li>
+                                <li className="mt-1">
+                                    Engineering managers struggle to justify prioritizing and addressing tech debt
+                                    because success is difficult to track and measure.
+                                </li>
+                            </ul>
+                        </>
+                    }
+                    rightColumn={
                         <Blockquote
                             quote="With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove unused attributes that lived in different repositories, ultimately simplifying our APIs and speeding up developer iteration time."
                             author="Justin Phillips, Software Engineer at Lyft"
                             headline="Lyft boosts code health and accelerates developer velocity"
-                            borderColor="vermillion"
+                            borderColor="vermillion-400"
                             inline={false}
                             logo={{
                                 src: '/external-logos/lyft-logo.svg',
@@ -352,8 +355,8 @@ const UseCasePage: FunctionComponent = () => (
                                 href: '/case-studies/lyft-monolith-to-microservices',
                             }}
                         />
-                    </div>
-                </div>
+                    }
+                />
             </ContentSection>
         </div>
 

@@ -22,7 +22,7 @@ export const CaseStudy: FunctionComponent = () => (
             }}
             pdf="https://sourcegraphstatic.com/Quantcast-Sourcegraph-case-study.pdf"
         >
-            <ContentSection color="white" className="col-md-6">
+            <ContentSection color="white">
                 <div className="container">
                     <p>
                         Quantcast uses machine-learning-driven, real-time audience insights to radically simplify

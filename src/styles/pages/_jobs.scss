@@ -22,24 +22,6 @@
         margin-bottom: 10px;
     }
 
-    .hero-image {
-        width: 100%;
-        max-width: 1500px;
-
-        @media only screen and (max-width: 768px) {
-            display: none;
-        }
-    }
-
-    .hero-image-mobile {
-        display: none;
-
-        @media only screen and (max-width: 768px) {
-            display: inline-block;
-            width: 100%;
-        }
-    }
-
     .benefits {
         padding: 170px 0;
 

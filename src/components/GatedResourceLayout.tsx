@@ -85,25 +85,24 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                                 // Show SG & Customer logo for customer-based webinars
                                 <div className="col-lg-4 col-12 text-lg-center px-lg-0 pb-5 pb-lg-0">
                                     <img
-                                        className={`border-right border-black ${
+                                        className={`border-right border-black tw-inline tw-max-w-[65px] md:tw-max-w-[95px] ${
                                             isMdOrDown ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'
                                         }`}
-                                        width={isMdOrDown ? '65' : '95'}
                                         src="/sourcegraph/sourcegraph-mark.svg"
                                         alt="Sourcegraph mark"
                                     />
                                     <img
-                                        height={isMdOrDown ? '15' : '22'}
                                         src={customer.logo}
                                         alt={`${customer.name} logo`}
+                                        className="tw-inline tw-max-h-[15px] md:tw-max-h-[22px] tw-w-auto"
                                     />
                                 </div>
                             ) : (
                                 <div className="col-lg-2 col-12 px-lg-0 pb-2 pb-lg-0">
                                     <img
-                                        height={isMdOrDown ? '170' : '150'}
                                         src={customer.logo}
                                         alt={`${customer.name} logo`}
+                                        className="tw-inline tw-max-h-[170px] md:tw-max-h-[150px] tw-w-auto"
                                     />
                                 </div>
                             )}

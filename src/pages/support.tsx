@@ -9,7 +9,7 @@ import { buttonStyle, buttonLocation } from '@data'
 const CLASS_NAMES = {
     featureOffered: 'list-group-item bg-transparent border-0',
     featureNotOffered: 'list-group-item bg-transparent border-0 text-muted',
-    featureChecked: 'text-success',
+    featureChecked: 'text-success tw-inline',
     featureNotChecked: 'invisible',
 }
 

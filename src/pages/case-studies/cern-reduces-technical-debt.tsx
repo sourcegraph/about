@@ -38,7 +38,6 @@ export const CaseStudy: FunctionComponent = () => (
                                 src="/case-studies/cern-image-lhc-cc.jpg"
                                 alt="Large Hadron Collider, image by CERN"
                                 caption="Large Hadron Collider, image by CERN"
-                                className="w-100 img-fluid d-block mb-3"
                             />
                         </div>
                     </div>
@@ -56,9 +55,10 @@ export const CaseStudy: FunctionComponent = () => (
                     />
                     <div className="row pt-3">
                         <div className="col-md-3 pt-5">
-                            <Figure
+                            <img
                                 src="/case-studies/chris-roderick-cern.jpg"
                                 alt="Chris Roderick, Applications and Services Section Leader, CERN"
+                                title="Chris Roderick, Applications and Services Section Leader, CERN"
                                 className="w-100 rounded-circle img-fluid mx-auto d-block mb-3"
                             />
                         </div>
