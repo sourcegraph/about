@@ -141,7 +141,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                         hasImages ? 'h-500' : animateTransition && !isMdOrDown ? 'bg-light-gray-5 h-550' : 'h-300'
                     )}
                 >
-                    {carouselItems.map((item, index) => (
+                    {carouselItems.map(item => (
                         <div
                             key={item.title}
                             className={classNames(
@@ -157,8 +157,6 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                                         : 'd-none'
                                     : ''
                             )}
-                            onMouseOver={() => carouselHook.moveCarousel(index)}
-                            onFocus={() => carouselHook.moveCarousel(index)}
                         >
                             {!autoAdvance && (
                                 <h1 className={classNames('font-weight-bold mb-lg-4', !autoAdvance && 'display-2')}>
