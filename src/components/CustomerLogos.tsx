@@ -39,6 +39,7 @@ const logos: Logo[] = [
     {
         name: 'Indeed',
         src: '/external-logos/indeed-logo.svg',
+        link: '/case-studies/indeed-accelerates-development-velocity',
     },
     {
         name: 'Plaid',
