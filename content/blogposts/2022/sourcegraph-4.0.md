@@ -92,6 +92,12 @@ We will be deprecating our current Sourcegraph extensions framework so that we c
 
 In this release your favorite extensions (git-extras, open-in-editor and search-exports) will become part of the core application. Making them faster, more discoverable and ensuring they continue to be improved upon.
 
+### Promoting usage of Browser and IDE extensions
+
+We've added a page to our admin analytics to help you understand the adoption and amount of time saved from using IDE and Browser extensions across your organization. 
+
+To make it easier to roll out our VS Code extension organization wide, we've created an example batch change that adds the extension to your repository’s recommended extensions. Once added, users will be recommended the Sourcegraph extension when opening the repository if they don't have it installed already. 
+
 
 <!-- First cut from Repo/IAM/Admin Analytics team -->
 
