@@ -91,3 +91,19 @@ Auto-indexing allows customers to set up precise code navigation for any chosen 
 We will be deprecating our current Sourcegraph extensions framework so that we can make way for a new model that allows a deeper integration throughout our entire code intelligence platform.
 
 In this release your favorite extensions (git-extras, open-in-editor and search-exports) will become part of the core application. Making them faster, more discoverable and ensuring they continue to be improved upon.
+
+
+<!-- First cut from Repo/IAM/Admin Analytics team -->
+
+### Complete Admin Analytics
+
+With 3.42, we introduced an all-new admin analytics including. Now with 4.0, we're significantly improving on the initial release. 4.0 includes dozens of updates including pages for all Sourcegraph features, annual projections for dev-time-saved, data exports, individual user usage table, and much more. 
+
+### 1-click log export 
+
+We would love if everything always worked with Sourcegraph, but no matter how much you test, bugs will always arise. With the introduction of 1-click log exports, we're making it simple to export all logs associated with Sourcegraph to ease the debugging process. 
+
+### Repo config Experience (such as Repo syncing status)
+
+Configuring code host connections and permissions syncing is a core prat of the admin experience, and historically, it has been painful to do. With Sourcegraph 4.0, we have introduced more than X quality of life improvements to help admins understand the current state of repository and permissions syncing. 
+
