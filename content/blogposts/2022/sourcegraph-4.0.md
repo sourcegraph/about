@@ -107,3 +107,13 @@ We would love if everything always worked with Sourcegraph, but no matter how mu
 
 Configuring code host connections and permissions syncing is a core prat of the admin experience, and historically, it has been painful to do. With Sourcegraph 4.0, we have introduced more than X quality of life improvements to help admins understand the current state of repository and permissions syncing. 
 
+<!-- @benvenker draft -->
+### Smarter code search
+Search is now more intelligent by defaul and automtically generates and runs alternative queries when your initial query doesn't have many results. This can be disabled so you still get only literal or structural matches when you need to, but in many cases the new smarter search is likely to be better. This will especially benefit new users of Sourcegraph who don't yet know the query syntax. The default query syntax is also simplified, allowing you to combine literal search terms and regular expressions with `/`'s like so: `authentication /^my|regex$/`.
+
+### Simplified UI
+We've made a number of small usabilty improvements to simplify the search UI and make Sourcegraph feel less complex.
+
+### Repository metadata
+In 4.0, you'll be able to add arbitrary key value pairs to repository metadata via the API and access them through code search. This is part of a larger effort to improve our search predicates, eventually unlocking concepts like user-defined code ownership and searching on code host metadata.
+
