@@ -100,7 +100,6 @@ export const BatchChangesPage: FunctionComponent = () => (
                             }}
                             loop={true}
                             title="Batch Changes: How it works"
-                            caption="Search, define, execute, and track code changes"
                         />
                     </div>
                 </div>
@@ -144,7 +143,6 @@ export const BatchChangesPage: FunctionComponent = () => (
                         }}
                         loop={true}
                         title="Batch Changes: Creation to merge"
-                        caption="Automatically track changeset lifecycle status"
                     />
                 </div>
             </div>

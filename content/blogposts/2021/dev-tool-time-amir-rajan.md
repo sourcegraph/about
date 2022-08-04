@@ -31,7 +31,6 @@ Over the next few years, he refined his hardware for comfort, work, and more eff
   loop={false}
   title="See Amir's setup over the years" 
   caption="See Amir's setup over the years"
-  showCaption={true}
   controls={true}
   autoPlay={false}
 />
@@ -55,7 +54,6 @@ DragonRuby Game Toolkit emerged from a desire for a game engine with a fast feed
   loop={false}
   title="Hear Amir explain why he started writing games in Ruby" 
   caption="Hear Amir explain why he started writing games in Ruby"
-  showCaption={true}
   controls={true}
   autoPlay={false}
 />
@@ -71,7 +69,6 @@ In designing and adapting for comfort, health, and efficiency, Amir isn't focuse
   loop={false}
   title="Listen to Amir talk about the long-game of ergonomics" 
   caption="Listen to Amir talk about the long-game of ergonomics"
-  showCaption={true}
   controls={true}
   autoPlay={false}
 />

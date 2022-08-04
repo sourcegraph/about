@@ -38,7 +38,6 @@ The quality of mouse, and its reliability after heavy use, is important to Rog. 
   loop={false}
   title="Opening files feels like magic." 
   caption="Opening files feels like magic."
-  showCaption={true}
   controls={true}
   autoPlay={false}
 />
@@ -50,7 +49,6 @@ As Rog shows, these patterns are remarkably powerful in Acme. In every window, t
   loop={false}
   title="Watch Rog demonstrate structural regular expressions." 
   caption="Watch Rog demonstrate structural regular expressions."
-  showCaption={true}
   controls={true}
   autoPlay={false}
 />
@@ -64,7 +62,6 @@ For Rog, the driving benefit of Acme is its simplicity. As he notes, in Acme, ev
   loop={false}
   title="Listen to Rog talk about the power of text." 
   caption="Listen to Rog talk about the power of text."
-  showCaption={true}
   controls={true}
   autoPlay={false}
 />

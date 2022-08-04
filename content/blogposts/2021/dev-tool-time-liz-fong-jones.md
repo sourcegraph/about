@@ -47,7 +47,6 @@ This automation goes hand in hand with Liz’s attention to [observability](http
   loop={false}
   title="Watch Liz use Honeycomb as part of her dev workflow." 
   caption="Watch Liz use Honeycomb as part of her dev workflow."
-  showCaption={true}
   controls={true}
   autoPlay={false}
 />
@@ -65,7 +64,6 @@ The use of ARM64 is compelling, not just for the performance and cost. It’s al
   loop={false}
   title="Hear Liz discuss the benefits and limitations of ARM64 in the current development ecosystem." 
   caption="Hear Liz discuss the benefits and limitations of ARM64 in the current development ecosystem."
-  showCaption={true}
   controls={true}
   autoPlay={false}
 />
