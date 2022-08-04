@@ -49,7 +49,6 @@ Search contexts from your Sourcegraph account will automatically be accessible w
   loop={true}
   title="Searching code in JetBrains IDE"
   caption="An example of searching code with the JetBrains IDE"
-  showCaption={true}
 />
 
 ##### Sharing links
@@ -65,7 +64,6 @@ You can share the generated link with teammates, who will be taken to the exact 
   loop={true}
   title="Copying a Sourcegraph link within the IDE"
   caption="An example of copying a shareable Sourcegraph link within the IDE"
-  showCaption={true}
 />
 
 ## Get started with the JetBrains plugin
