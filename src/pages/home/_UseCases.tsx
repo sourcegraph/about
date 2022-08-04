@@ -95,18 +95,18 @@ const UseCases: FunctionComponent = () => {
     }, [])
 
     return (
-        <ContentSection className="position-relative pt-5 pt-md-7">
+        <ContentSection className="pt-5 tw-relative pt-md-7">
             <div className="text-center">
                 <h1 className="font-weight-bold">Move fast &mdash; even in big codebases</h1>
             </div>
 
-            <div className="row max-w-900 mx-auto mt-6">
+            <div className="mx-auto mt-6 row max-w-900">
                 {useCases.map(useCase => (
                     <div
                         key={useCase.title}
-                        className="col-sm-6 d-flex flex-column flex-sm-row align-items-center align-items-sm-start mb-6"
+                        className="mb-6 col-sm-6 d-flex flex-column flex-sm-row align-items-center align-items-sm-start"
                     >
-                        <useCase.icon className="text-vivid-violet w-100 max-w-50 h-auto mr-sm-3 mb-4 mb-sm-0" />
+                        <useCase.icon className="h-auto mb-4 text-vivid-violet w-100 max-w-50 mr-sm-3 mb-sm-0" />
                         <div className="text-center text-sm-left">
                             <h4 className="font-weight-bold">{useCase.title}</h4>
                             <div className="text-lg">
@@ -133,10 +133,10 @@ const UseCases: FunctionComponent = () => {
             <div
                 ref={box}
                 // eslint-disable-next-line react/forbid-dom-props
-                style={{ marginBottom: boxHalfHeight, width: '90%' }}
-                className="col-6 bg-gradient-venus px-4 py-6 p-sm-6 px-xl-7 py-xl-6 mx-auto mx-xl-0 xl-absolute right-0 max-w-550 bottom-0 text-center text-sm-left"
+                style={{ marginBottom: boxHalfHeight }}
+                className="tw-px-6 tw-py-16 tw-mx-auto tw-text-center bg-gradient-venus sm:tw-p-16 xl:tw-px-24 xl:tw-py-16 xl:tw-mx-0 xl:tw-absolute tw-right-0 tw-max-w-[550px] tw-bottom-0 sm:tw-text-left tw-w-[90%]"
             >
-                <h3 className="font-weight-bold mb-4 pr-sm-0 pr-md-7 pr-xl-4">
+                <h3 className="mb-4 font-weight-bold pr-sm-0 pr-md-7 pr-xl-4">
                     Want to use Sourcegraph at your company?
                 </h3>
                 <p className="text-xl">
@@ -167,7 +167,7 @@ const UseCases: FunctionComponent = () => {
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="btn btn-primary mt-5 d-block d-sm-inline-block"
+                            className="tw-mt-8 btn btn-primary tw-block sm:tw-inline-block"
                             title="Request a demo"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.bodyDemo}

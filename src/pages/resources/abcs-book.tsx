@@ -22,13 +22,13 @@ export const AbcsEbook: FunctionComponent = () => (
                     <p className="text-center">
                         <img
                             src="/other/abcs-book/our-abcs-hero.png"
-                            className="w-100 px-2 mb-3"
+                            className="px-2 mb-3 w-100"
                             role="presentation"
                             alt="Our ABCs: Always Be Coding book"
                         />
                     </p>
                     <h1 className="text-center">Our ABCs: Always Be Coding children's book</h1>
-                    <p className="text-center my-5">
+                    <p className="my-5 text-center">
                         <a
                             className="button btn btn-primary"
                             id="abc-dlbook"
@@ -44,7 +44,7 @@ export const AbcsEbook: FunctionComponent = () => (
                     <hr />
                 </div>
             </div>
-            <div className="row justify-content-md-center mt-3">
+            <div className="mt-3 row justify-content-md-center">
                 <div className="col-md-8">
                     <YouTube id="6bCO63O4swI" title="Our ABCs: Always Be Coding children's book by Sourcegraph" />
                     <p className="mt-5">
@@ -84,13 +84,13 @@ export const AbcsEbook: FunctionComponent = () => (
                         >
                             <img
                                 src="/other/abcs-book/our-abcs.png"
-                                className="img-drop-shadow mb-0"
+                                className="tw-mt-10 tw-mx-auto tw-shadow-xl"
                                 width="350px"
                                 alt="Book cover: Our ABCs"
                             />
                         </a>
                     </p>
-                    <p className="text-center my-5">
+                    <p className="my-5 text-center">
                         <a
                             className="button btn btn-primary"
                             id="abc-dlbook"
@@ -145,14 +145,14 @@ export const AbcsEbook: FunctionComponent = () => (
 
                     <p>We've had quite a few folks reach out with questions about this book and future ones.</p>
 
-                    <h3 className="h4 pt-3">Do you plan on selling this as a physical book?</h3>
+                    <h3 className="pt-3 h4">Do you plan on selling this as a physical book?</h3>
                     <p>
                         We want to make it easy for folks to get a physical copy and while we don't (yet) have plans to
                         print and distribute, we're looking into vendors that can print and ship on demand. In any case,
                         the PDF is high-resolution so you can print it yourself.
                     </p>
 
-                    <h3 className="h4 pt-3">Do you have any other books like this planned?</h3>
+                    <h3 className="pt-3 h4">Do you have any other books like this planned?</h3>
                     <p>
                         We've been blown away by the response to this book and while we'd love to add "children's book
                         authoring" to the list of Sourcegraph capabilities, we haven't yet decided if we plan to turn
@@ -161,7 +161,7 @@ export const AbcsEbook: FunctionComponent = () => (
                 </div>
             </div>
             <hr />
-            <div className="row justify-content-md-center mt-5">
+            <div className="mt-5 row justify-content-md-center">
                 <div className="col-md-10">
                     <h3 className="text-center">About Sourcegraph</h3>
                     <p>

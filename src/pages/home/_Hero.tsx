@@ -28,13 +28,13 @@ const Hero: FunctionComponent = () => {
     })
 
     return (
-        <div className="px-2 py-5 bg-white py-md-7 position-relative">
+        <div className="px-2 py-5 bg-white py-md-7 tw-relative">
             {[meshLeft, meshRight].map((image, index) => (
                 <div
                     key={image.src}
-                    className={classNames(styles.mesh, 'd-none d-lg-block position-absolute top-0', {
-                        ['left-0']: index === 0,
-                        ['right-0']: index === 1,
+                    className={classNames(styles.mesh, 'd-none d-lg-block tw-absolute tw-top-0', {
+                        ['tw-left-0']: index === 0,
+                        ['tw-right-0']: index === 1,
                     })}
                 >
                     <img src={image.src} alt="" draggable={false} className="w-100 h-500" />

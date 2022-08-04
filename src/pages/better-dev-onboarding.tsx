@@ -54,16 +54,16 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
                 <div className={styles.pageHeader}>
                     <div className="container pb-4">
                         <div className="row">
-                            <div className="col-lg-7 mb-6 mt-7">
-                                <h1 className="display-2 font-weight-bold mb-4">
+                            <div className="mb-6 col-lg-7 mt-7">
+                                <h1 className="mb-4 display-2 font-weight-bold">
                                     Give your team a complete onboarding experience
                                 </h1>
-                                <div className="display-4 font-weight-normal mb-5">
+                                <div className="mb-5 display-4 font-weight-normal">
                                     With self-serve onboarding, codebase exploration, and knowledge sharing, developers
                                     can find their own answers without waiting for someone to point them to the relevant
                                     code.
                                 </div>
-                                <div className="d-flex flex-column pt-1 max-w-400">
+                                <div className="pt-1 d-flex flex-column max-w-400">
                                     <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                                 </div>
                             </div>
@@ -74,7 +74,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         }
     >
         <ContentSection>
-            <div className="mt-6 brightness-0">
+            <div className="mt-6 tw-brightness-0">
                 <CustomerLogos />
             </div>
         </ContentSection>
@@ -87,7 +87,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
             <IntegrationsSection />
         </div>
 
-        <ContentSection className="py-lg-6 py-5">
+        <ContentSection className="py-5 py-lg-6">
             <div className="row d-flex">
                 <div className="col-lg-6">
                     <h1 className="mb-5 font-weight-bold">Related resources</h1>
@@ -99,7 +99,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection>
-            <div className="col-3 col-md-12 text-center max-w-550 mx-auto">
+            <div className="mx-auto text-center col-3 col-md-12 max-w-550">
                 <h1 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h1>
                 <p>
                     <Link href="/get-started/self-hosted" passHref={true}>

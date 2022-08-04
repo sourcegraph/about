@@ -118,7 +118,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
     <div className="flex-grow-1">
         <div className="card-body">
             <img
-                className={classNames(styles.logo, 'max-w-200 mb-4', { 'brightness-0': bwLogo })}
+                className={classNames(styles.logo, 'max-w-200 mb-4', { 'tw-brightness-0': bwLogo })}
                 height="60"
                 src={logo}
                 alt={`${name} logo`}

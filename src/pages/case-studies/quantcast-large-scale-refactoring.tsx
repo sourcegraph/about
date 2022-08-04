@@ -9,7 +9,7 @@ export const CaseStudy: FunctionComponent = () => (
             description:
                 'Learn how after discovering and deploying Sourcegraph, Quantcast was able to do major refactors with confidence.',
         }}
-        className="navbar-dark bg-black"
+        className="bg-black navbar-dark"
     >
         <CaseStudyLayout
             customer="Quantcast"
@@ -56,13 +56,13 @@ export const CaseStudy: FunctionComponent = () => (
                         Instead, Sourcegraph can search for fields within objects with:
                         <br />
                         <br />
-                        <pre className="language-regex">
+                        <pre className="language-regex tw-border-gray-200 tw-border">
                             <code className="language-regex">{'\\w+\\.ip(addr)?\\b'}</code>
                         </pre>
                         or addresses themselves with:
                         <br />
                         <br />
-                        <pre className="language-regex">
+                        <pre className="language-regex tw-border-gray-200 tw-border">
                             <code className="language-regex">{'\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\b'}</code>
                         </pre>
                     </div>

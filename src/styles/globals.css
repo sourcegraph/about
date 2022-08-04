@@ -1,29 +1,31 @@
 /**
- * These are our Tailwind CSS Base styles. Please reference our DLS for
- * defining specifications and avoid one-off styles in this stylesheet.
+ * These are our Tailwind CSS global styles. Please reference our DLS for
+ * specifications and avoid one-off styles in this stylesheet.
  */
 
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Base Styles */
 @layer base {
-    /* Typography utility classes */
-    .text-h1 {
+    /* Typography */
+    h1 {
         @apply tw-font-sans tw-text-7xl tw-tracking-normal tw-font-semibold;
     }
-    .text-h2 {
+    h2 {
         @apply tw-font-sans tw-text-5xl tw-tracking-normal tw-font-semibold;
     }
-    .text-h3 {
+    h3 {
         @apply tw-font-sans tw-text-3xl tw-tracking-normal tw-font-normal;
     }
-    .text-h4 {
+    h4 {
         @apply tw-font-sans tw-text-2xl tw-tracking-normal tw-font-normal;
     }
-    .text-h5 {
+    h5 {
         @apply tw-font-sans tw-text-xl tw-tracking-normal tw-font-normal;
     }
-    .text-h6 {
+    h6 {
         @apply tw-font-sans tw-text-lg tw-tracking-wide tw-font-normal tw-uppercase;
     }
 
@@ -34,10 +36,18 @@
         margin: 0 0 0 40px;
     }
 
+    /* Code Blocks */
     code {
         @apply tw-font-mono tw-text-base tw-font-medium tw-tracking-tightest;
     }
 }
 
-@tailwind components;
-@tailwind utilities;
+/* Custom Utilities */
+@layer utilities {
+
+    /* Gradient borders not available in Tailwind */
+    .border-saturn {
+        border-image-slice: 1 !important;
+        border-image-source: linear-gradient(to right, theme(colors.violet.200), theme(colors.blue.200)) !important;
+    }
+}

@@ -93,11 +93,6 @@ $input-focus-box-shadow: none;
 
 $list-group-action-hover-color: $link-hover-color;
 
-$popover-arrow-width: 0;
-$popover-arrow-color: transparent;
-$popover-arrow-outer-color: transparent;
-$popover-max-width: 400px;
-
 $card-spacer-y: 1.25 * $spacer;
 $card-spacer-x: 1.25 * $spacer;
 
@@ -117,10 +112,6 @@ $grid-breakpoints: (
     lg: 1024px,
     xl: 1280px,
 );
-
-:root {
-    --body-color: #{$dark-8};
-}
 
 @import 'node_modules/bootstrap/scss/root';
 @import 'node_modules/bootstrap/scss/reboot';
@@ -228,31 +219,12 @@ table tbody + tbody {
 @import 'spacing';
 @import 'typography';
 
-/* ==================== Filters ==================== */
-// TODO: After Tailwind migration this class can be deleted
-.brightness-0 {
-    filter: brightness(0);
-}
-
 /* ==================== Bootstrap Components ==================== */
-.popover {
-    /* Prevent a child element with non-rounded corners from extruding.
-     overflow: hidden; */
-    border: 0;
-}
-
-.popover-body {
-    border: solid 1px $gray-200;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 0 9px 3px;
-    background-color: $white;
-}
-
 .nav-tabs {
     font-weight: 600;
     font-size: 1.25em;
     border-bottom-width: 1px;
 }
-
 .tab-header {
     background-color: transparent;
     color: $black;
@@ -266,71 +238,8 @@ table tbody + tbody {
     }
 }
 
-/* ==================== Misc ==================== */
-
-.virtual-br::before {
-    content: '\A';
-}
-
-.img-drop-shadow {
-    max-width: calc(100% - 10px);
-    max-height: 100vh;
-    box-shadow: 0 4px 18px 0 #0000001a, 0 6px 20px 0 #00000017;
-    margin: 40px auto;
-    display: block;
-    border-style: none;
-}
-
-code.border {
-    background-color: $light-gray-4;
-    font-size: 80%;
-}
-
-pre {
-    border: 1px solid $gray-2;
-}
-
-.list-spaced > li {
-    margin-bottom: 1rem;
-}
-
-.blog-image {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid $gray-200;
-    max-width: 100%;
-}
-
-/* ==================== Positioning ==================== */
-
-$positions: ('top', 'right', 'bottom', 'left');
-@each $position in $positions {
-    // Zero positions
-    .#{$position}-0 {
-        #{$position}: 0;
-    }
-}
-
-/* ==================== Breakpoint-based positions ==================== */
-@each $breakpoint, $width in $grid-breakpoints {
-    @media (min-width: $width) {
-        .#{$breakpoint}-absolute {
-            position: absolute;
-        }
-        .#{$breakpoint}-relative {
-            position: relative;
-        }
-    }
-}
-
 /* ==================== Background Images ==================== */
 .bg-code-venus {
     background-image: url('/bg-images/bg-code-venus.svg');
     background-size: cover;
-}
-
-/* ==================== Borders ==================== */
-.border-saturn {
-    border-image-slice: 1 !important;
-    border-image-source: linear-gradient(to right, $violet-mist, $blue-mist) !important;
 }

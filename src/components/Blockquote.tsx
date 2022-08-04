@@ -37,13 +37,13 @@ export const Blockquote: FunctionComponent<{
 
         if (border) {
             if (inline) {
-                return `tw-py-sm tw-border-solid tw-border-l-3 tw-border-l-${color}`
+                return `tw-py-sm tw-border-l-solid tw-border-l-3 tw-border-l-${color}`
             }
             // Blockquotes in column: Border flips to horizontal for mobile
             if (isMdOrDown) {
-                return `tw-pt-lg tw-pb-0 tw-mb-0 tw-border-l-0 tw-border-t-3 tw-border-t-${color}`
+                return `tw-pt-lg tw-pb-0 tw-mb-0 tw-border-t-solid tw-border-l-0 tw-border-t-3 tw-border-t-${color}`
             }
-            return `tw-border-l-3 tw-border-l-${color}`
+            return `tw-border-l-solid tw-border-l-3 tw-border-l-${color}`
         }
         return 'tw-text-center'
     }
@@ -54,7 +54,7 @@ export const Blockquote: FunctionComponent<{
                 largeText ? (
                     <h2 className="tw-font-semibold">{headline}</h2>
                 ) : (
-                    <h4 className="tw-font-semibold mb-4">{headline}</h4>
+                    <h4 className="mb-4 tw-font-semibold">{headline}</h4>
                 )
             ) : null}
 

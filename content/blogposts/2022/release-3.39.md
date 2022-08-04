@@ -34,7 +34,7 @@ Sourcegraph 3.39 is now available! Here are some highlights from this release:
 
 Built with onboarding in mind, the Notebooks feature allows you to integrate search results and Markdown to enable documentation that is easy to create and doesn't get stale. The feature is inspired by the Jupyter Notebooks project and features four unique block types, an intelligent notepad for creating notebooks on the fly, and deep integration with Code Search, so you can always find the code you need.
 
-<video className="blog-image" title="Notebooks overview" alt="An example of using a notebook." loop autoplay muted playsinline>
+<video title="Notebooks overview" alt="An example of using a notebook." loop autoplay muted playsinline>
   <source src="https://storage.googleapis.com/sourcegraph-assets/notebooks/notebooks_overview_release_post.mp4" />
 </video>
 
@@ -67,7 +67,7 @@ Any managed database solution that supports the [official Sourcegraph PostgreSQL
 
 We've added tree-sitter to our search-based Code Intelligence, meaning that local navigation for Java is now faster and more precise.
 
-<video className="blog-image" title="Java code Intelligence" alt="An example of using Java Code Intelligence within the sourcegraph/sourcegraph repo." loop autoplay muted playsinline>
+<video title="Java code Intelligence" alt="An example of using Java Code Intelligence within the sourcegraph/sourcegraph repo." loop autoplay muted playsinline>
   <source src="https://user-images.githubusercontent.com/1657213/163855878-4355bcb0-5407-4307-b3f2-4581e1ab2fe2.mp4" />
 </video>
 

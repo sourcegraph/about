@@ -168,4 +168,7 @@ module.exports = {
    * TODO: Remove this once Bootstrap is removed completely
    */
   prefix: 'tw-',
+
+  // Remove this when Bootstrap and custom CSS tech debt is removed completely
+  important: true,
 }
