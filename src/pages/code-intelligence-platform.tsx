@@ -173,7 +173,7 @@ const blogResourceItems = [
             'Sourcegraph relies on code hosts to exist, and code hosts benefit from the existence of a good, ventor-nutural code intelligence platform.',
         type: 'Blog post',
         img: {
-            src: '/backgrounds/dark-multi-grid.jpg',
+            src: '/blog/thumbnails/dark-multi-grid.jpg',
             alt: 'Dark grid',
         },
         href: "/blog/why-we're-friends-with-code-hosts",
