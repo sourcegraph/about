@@ -84,7 +84,11 @@ Introducing an improved version of the code navigation admin dashboard that help
 
 ### Auto-indexing is now available by default for all Cloud customers
 Auto-indexing allows customers to set up precise code navigation for any chosen repositories with the click of a button in the Sourcegraph UI. Now, all Cloud teams can enjoy precise code navigation with only minutes of setup, and any member of a team can turn it on for their respective repositories.
+### New version of the reference panel 
+TBD
 
+### Introducing multi-version upgrades
+Upgrading a Sourcegraph instance has historically been an eventful and hands-on process for site admins. This means that a considerable amount of our customers struggle to upgrade their instances, and are missing out on a lot of the improvements and new features we've shipped in our latest versions. Starting in 4.0, customers will be able to seamlessly upgrade from any 3.29+ version to 4.0 onwards.
 <!-- First cut from integrations team -->
 ### Sunsetting of the Sourcegraph extensions
 
