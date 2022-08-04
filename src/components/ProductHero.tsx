@@ -63,13 +63,13 @@ export const ProductHero: FunctionComponent<Omit<ProductHero, 'className' | 'chi
                         {backButton}
 
                         <div className="d-flex flex-column-reverse">
-                            <h1 className="display-2 font-weight-bold mb-4 whitespace-pre-line">{title}</h1>
-                            {product && <div className="text-uppercase mb-2 font-weight-bold">{product}</div>}
+                            <h1 className="mb-4 display-2 font-weight-bold tw-whitespace-pre-line">{title}</h1>
+                            {product && <div className="mb-2 text-uppercase font-weight-bold">{product}</div>}
                         </div>
 
                         {description && <h5 className="mb-5 max-w-600 font-weight-normal">{description}</h5>}
 
-                        {cta && <div className="d-flex flex-column pt-1 max-w-400">{cta}</div>}
+                        {cta && <div className="pt-1 d-flex flex-column max-w-400">{cta}</div>}
                     </div>
                 </div>
             </Background>

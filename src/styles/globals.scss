@@ -348,21 +348,3 @@ $positions: ('top', 'right', 'bottom', 'left');
     border-image-slice: 1 !important;
     border-image-source: linear-gradient(to right, $violet-mist, $blue-mist) !important;
 }
-
-/* ==================== Tailwind placeholders ==================== */
-// TODO: After Tailwind migration these classes can be deleted
-.bg-cover {
-    background-size: cover !important;
-}
-
-.cursor-pointer {
-    cursor: pointer;
-}
-
-.overflow-x-auto {
-    overflow-x: auto;
-}
-
-.whitespace-pre-line {
-    white-space: pre-line;
-}

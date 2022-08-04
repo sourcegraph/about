@@ -76,14 +76,14 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 // Hero bg differs if Guide vs. Webinar vs. Generic
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ backgroundImage: `url('${heroImage()}')` }}
-                className={classNames('bg-cover py-6 py-md-7', isGuidePg && 'text-white')}
+                className={classNames('tw-bg-cover py-6 py-md-7', isGuidePg && 'text-white')}
             >
                 <div className="container px-0 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {customer && (
                         <>
                             {isWebinarPg ? (
                                 // Show SG & Customer logo for customer-based webinars
-                                <div className="col-lg-4 col-12 text-lg-center px-lg-0 pb-5 pb-lg-0">
+                                <div className="pb-5 col-lg-4 col-12 text-lg-center px-lg-0 pb-lg-0">
                                     <img
                                         className={`border-right border-black tw-inline tw-max-w-[65px] md:tw-max-w-[95px] ${
                                             isMdOrDown ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'
@@ -98,7 +98,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                                     />
                                 </div>
                             ) : (
-                                <div className="col-lg-2 col-12 px-lg-0 pb-2 pb-lg-0">
+                                <div className="pb-2 col-lg-2 col-12 px-lg-0 pb-lg-0">
                                     <img
                                         src={customer.logo}
                                         alt={`${customer.name} logo`}
@@ -110,7 +110,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                     )}
 
                     <div className={classNames('col-12', customer && 'col-lg-8')}>
-                        <h1 className="display-2 font-weight-bold mb-4 mb-md-2 whitespace-pre-line">{title}</h1>
+                        <h1 className="mb-4 tw-whitespace-pre-line display-2 font-weight-bold mb-md-2">{title}</h1>
                         {subtitle && <h3 className="font-weight-normal max-w-800">{subtitle}</h3>}
                     </div>
                 </div>
@@ -119,7 +119,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             {hasWatchNowQuery ? (
                 // ---- RECORDING BODY VARIATION ----
                 <div className="bg-white">
-                    <section className="py-6 py-lg-7 container video-embed embed-responsive embed-responsive-16by9">
+                    <section className="container py-6 py-lg-7 video-embed embed-responsive embed-responsive-16by9">
                         <iframe
                             className="p-md-7 embed-responsive-item"
                             src={videoSrc}
@@ -134,13 +134,13 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 </div>
             ) : (
                 // ---- DEFAULT BODY VARIATION ----
-                <section className="bg-white py-6 py-lg-7">
-                    <ContentSection className="d-flex flex-column-reverse flex-md-row px-0">
+                <section className="py-6 bg-white py-lg-7">
+                    <ContentSection className="px-0 d-flex flex-column-reverse flex-md-row">
                         {description}
 
-                        <div className="col-md-6 col-12 pb-md-0 pb-6">
+                        <div className="pb-6 col-md-6 col-12 pb-md-0">
                             <h2 className="font-weight-bold">{formLabel}</h2>
-                            <div className="border-saturn border border-3 shadow-sm py-4 px-4 mt-3 px-0">
+                            <div className="px-0 px-4 py-4 mt-3 border shadow-sm border-saturn border-3">
                                 {!hasWatchNowQuery && (
                                     <HubSpotForm
                                         masterFormName="gatedMulti"
@@ -161,16 +161,16 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             )}
 
             {speakers?.length && (
-                <section className="bg-white py-6 py-lg-7">
+                <section className="py-6 bg-white py-lg-7">
                     <ContentSection>
                         <h2 className="font-weight-bold">Speakers</h2>
 
-                        <section className="d-flex flex-wrap">
+                        <section className="flex-wrap d-flex">
                             {speakers.map((speaker: Speaker) => (
-                                <div key={speaker.name} className="col-lg-5 col-md-6 col-12 pl-0 pr-lg-7">
+                                <div key={speaker.name} className="pl-0 col-lg-5 col-md-6 col-12 pr-lg-7">
                                     <img className="py-4" width="140" src={speaker.img} alt={speaker.name} />
                                     <h5 className="font-weight-bold">{speaker.name}</h5>
-                                    <figcaption className="h6 font-weight-normal text-muted max-w-md-250 my-2">
+                                    <figcaption className="my-2 h6 font-weight-normal text-muted max-w-md-250">
                                         {speaker.title}
                                     </figcaption>
                                     <p>{speaker.bio}</p>
