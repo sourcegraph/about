@@ -327,7 +327,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             </ContentSection>
         </div>
 
-        <ContentSection color="white" className="container max-w-900 py-7 px-0">
+        <ContentSection color="white" className="container py-7 px-0">
             <div className="col-lg-6">
                 <h2 className="mb-5 font-weight-bold">Read more about dev tools that accelerate the dev cycle</h2>
             </div>
