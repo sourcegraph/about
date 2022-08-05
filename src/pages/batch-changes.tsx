@@ -172,7 +172,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                                 altering steps, migrating versions, or changing base images.
                             </p>
                             <img
-                                className="h-auto mt-4 w-100"
+                                className="tw-mt-6 tw-h-auto tw-w-full"
                                 width="750"
                                 height="400"
                                 src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/update-circle-ci-username.png"
@@ -189,7 +189,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                                 API and its function calls or replacing libraries entirely.
                             </p>
                             <img
-                                className="h-auto mt-4 w-100"
+                                className="tw-mt-6 tw-h-auto tw-w-full"
                                 width="850"
                                 height="380"
                                 src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/comby-sprintf-to-itoa.png"
@@ -206,7 +206,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                                 container configurations across hundreds of repositories.
                             </p>
                             <img
-                                className="h-auto mt-4 w-100"
+                                className="tw-mt-6 tw-h-auto tw-w-full"
                                 width="750"
                                 height="472"
                                 src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/pin-docker-images.png"

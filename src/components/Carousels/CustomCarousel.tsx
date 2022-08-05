@@ -49,7 +49,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 </h2>
             )}
             <div
-                className={`d-flex flex-wrap align-items-center h-auto ${
+                className={`d-flex flex-wrap align-items-center tw-h-auto ${
                     autoAdvance ? 'justify-content-between' : 'flex-lg-row flex-column py-8'
                 }`}
             >
