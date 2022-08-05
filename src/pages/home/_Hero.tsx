@@ -109,7 +109,7 @@ const Hero: FunctionComponent = () => {
                     <Link href="/case-studies" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="text-vivid-violet"
+                            className="tw-text-violet-400"
                             title="1.2 Million engineers"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.hero}

@@ -71,7 +71,7 @@
 /* Custom Utilities */
 @layer utilities {
 
-    /* Gradient borders not available in Tailwind */
+    /* Gradient borders not available in Tailwind syntax */
     .sg-border-gradient-saturn {
         border-image-slice: 1 !important;
         border-image-source: linear-gradient(to right, theme(colors.violet.200), theme(colors.blue.200)) !important;

@@ -1,11 +1,11 @@
 /**
- * Sourcegraph Brand Colors
- * See: https://handbook.sourcegraph.com/departments/marketing/brand/brand_guidelines/color/
+ * NOTICE
+ *
+ * These colours are considered deprecated. Please refernce colours
+ * via Tailwind CSS instead.
  */
 
 // Sourcegraph Primary Colors
-$sky-blue: #00cbec;
-$vivid-violet: #a112ff;
 $vermillion: #ff5543;
 
 // Sourcegraph Secondary Colors
@@ -75,8 +75,6 @@ $theme-colors: (
     'primary': $blurple,
 
     // Sourcegraph Primary Colors
-    'sky-blue': $sky-blue,
-    'vivid-violet': $vivid-violet,
     'vermillion': $vermillion,
 
     // Sourcegraph Secondary Colors

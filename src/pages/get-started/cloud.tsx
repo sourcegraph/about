@@ -70,7 +70,7 @@ export const CloudPage: FunctionComponent = () => {
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    Start searching now <ArrowRightIcon />
+                                    Start searching now <ArrowRightIcon className="tw-inline" />
                                 </a>
                             </div>
 
@@ -90,7 +90,7 @@ export const CloudPage: FunctionComponent = () => {
                                             src="/external-logos/GitHub-Mark-Light-32px.png"
                                             width="30"
                                             height="30"
-                                            className="mr-3"
+                                            className="mr-3 tw-inline"
                                             alt="GitHub"
                                         />
                                         Continue with GitHub
@@ -98,7 +98,7 @@ export const CloudPage: FunctionComponent = () => {
 
                                     <a
                                         href="https://sourcegraph.com/.auth/gitlab/login?pc=https%3A%2F%2Fgitlab.com%2F%3A%3A013395a61a639f4c3eb3668b89c96039637a86ebb6831f1e141627df3d55384d&redirect=%2Fwelcome"
-                                        className={`btn text-white mt-3 w-100 ${styles.gitLab}`}
+                                        className="mt-3 text-white btn w-100 tw-bg-blurple-400"
                                         title="Continue with GitLab"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.body}
@@ -108,7 +108,7 @@ export const CloudPage: FunctionComponent = () => {
                                             src="/external-logos/gitlab-mark.svg"
                                             width="32"
                                             height="32"
-                                            className="mr-3"
+                                            className="mr-3 tw-inline"
                                             alt="GitLab"
                                         />
                                         Continue with GitLab

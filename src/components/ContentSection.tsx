@@ -2,11 +2,11 @@ import { FunctionComponent, ReactNode } from 'react'
 
 const COLORS = {
     none: '',
-    white: 'bg-white text-dark',
-    black: 'bg-black text-light',
-    gray: 'bg-dark text-light',
-    purple: 'bg-vivid-violet text-light',
-    primary: 'bg-primary text-light',
+    white: 'tw-bg-white text-dark',
+    black: 'tw-bg-black tw-text-white',
+    gray: 'tw-bg-gray-500 tw-text-white',
+    purple: 'tw-bg-violet-400 tw-text-white',
+    primary: 'tw-bg-blurple-400 tw-text-white',
 }
 
 interface Props {

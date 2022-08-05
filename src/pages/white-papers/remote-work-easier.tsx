@@ -239,7 +239,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
 
             <ContentSection color="black" className="py-5">
                 <div className="row justify-content-md-center">
-                    <div className="col-md-3 text-center">
+                    <div className="text-center col-md-3">
                         <a
                             href="https://twitter.com/sourcegraph"
                             target="_blank"
@@ -274,14 +274,14 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection color="gray" className="py-5">
+            <ContentSection color="gray" className="py-6">
                 <div className="row justify-content-md-center">
-                    <div className="col-md-3 text-center">
+                    <div className="text-center col-md-3">
                         <img
                             src="/external-logos/sourcegraph-universal-code-search-ebook-v1.jpg"
                             alt="Download: Universal Code Search and Intelligence"
                             width="170"
-                            className="universal-code-search--glow"
+                            className="tw-shadow-lg tw-shadow-gray-300"
                         />
                     </div>
                     <div className="col-md-6">
@@ -297,7 +297,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         >
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="btn btn-lg btn-outline-light universal-code-search__btn mt-3 font-weight-normal"
+                                className="mt-3 btn btn-lg btn-outline-light universal-code-search__btn font-weight-normal"
                                 title="Free download"
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.body}
