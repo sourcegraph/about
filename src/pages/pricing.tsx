@@ -153,11 +153,11 @@ const PricingPage: FunctionComponent = () => (
                                 <h2 className="my-3 display-2 font-weight-bolder">Team</h2>
 
                                 <div className="row">
-                                    <div className="pr-5 mx-auto mb-4 text-xl col-md-6">
+                                    <div className="pr-5 mx-auto mb-4 tw-text-xl col-md-6">
                                         If you have more than 10 users, you can upgrade to the Team plan. This includes
                                         all of the features of the Free plan, plus:
                                     </div>
-                                    <div className="mx-auto mb-4 text-xl col-md-6 pl-md-6">
+                                    <div className="mx-auto mb-4 tw-text-xl col-md-6 pl-md-6">
                                         Contact us to get started with the Team plan.
                                     </div>
                                 </div>

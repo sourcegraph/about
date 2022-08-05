@@ -27,7 +27,7 @@ export const GetStartedPage: FunctionComponent = () => {
         <Link href={routerHook.queryString ? `${href}?${routerHook.queryString}` : href}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a
-                className="btn btn-primary my-2"
+                className="my-2 btn btn-primary"
                 title="Get started for free"
                 data-button-style={buttonStyle.primary}
                 data-button-location={buttonLocation.trySourcegraph}
@@ -46,8 +46,8 @@ export const GetStartedPage: FunctionComponent = () => {
                     "From Sourcegraph Self-hosted to Sourcegraph Cloud, choose the deployment model that's best for you and get started for free today.",
             }}
             hero={
-                <div className="container-xl py-5">
-                    <h1 className="display-1 mb-2">
+                <div className="py-5 container-xl">
+                    <h1 className="mb-2 display-1">
                         <strong>What's best for you?</strong>
                     </h1>
                     <p>From GE to Uber, the world's best developers use Sourcegraph every day.</p>
@@ -59,7 +59,7 @@ export const GetStartedPage: FunctionComponent = () => {
             <div className={`${styles.root} ${styles.getStartedPage}`}>
                 <div className="container-xl">
                     <div className="row">
-                        <section id="sg-self-hosted" className="col-lg-6 p-5">
+                        <section id="sg-self-hosted" className="p-5 col-lg-6">
                             <h1>Sourcegraph Self-Hosted</h1>
 
                             <MostPopularBadge />
@@ -80,7 +80,7 @@ export const GetStartedPage: FunctionComponent = () => {
                             <GetStartedCTA href="/get-started/self-hosted" />
                         </section>
 
-                        <section id="sg-cloud" className="col-lg-6 p-5">
+                        <section id="sg-cloud" className="p-5 col-lg-6">
                             <h1 className={styles.sgCloudHeading}>Sourcegraph Cloud</h1>
 
                             <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>
@@ -98,7 +98,7 @@ export const GetStartedPage: FunctionComponent = () => {
                             <p className="mt-3">
                                 Already have a Sourcegraph Cloud account?{' '}
                                 <a
-                                    className="text-reset text-black underline"
+                                    className="text-black text-reset tw-underline"
                                     href="https://sourcegraph.com/sign-in"
                                     title="Search public code with Sourcegraph Cloud"
                                     data-button-style={buttonStyle.text}

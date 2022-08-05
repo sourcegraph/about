@@ -22,8 +22,8 @@ export const CloudPage: FunctionComponent = () => {
                     'Search across your repositories and the open-source universe with Sourcegraph Cloud. No technical setup is required. Sign up for free.',
             }}
             hero={
-                <div className="container-xl py-5">
-                    <h1 className="display-1 mb-2">
+                <div className="py-5 container-xl">
+                    <h1 className="mb-2 display-1">
                         <strong>What's best for you?</strong>
                     </h1>
                     <p>From GE to Uber, the world's best developers use Sourcegraph every day.</p>
@@ -33,7 +33,7 @@ export const CloudPage: FunctionComponent = () => {
             hideGetStartedButton={true}
         >
             <div className={`${styles.root} bg-gradient-blue-green py-5`}>
-                <div className="row container-xl mx-auto py-5">
+                <div className="py-5 mx-auto row container-xl">
                     <div className="col-lg-6">
                         <div>
                             <BackButton
@@ -41,7 +41,7 @@ export const CloudPage: FunctionComponent = () => {
                                 text="Deployment Options"
                             />
 
-                            <h1 className="display-2 font-weight-bolder mb-4">Sourcegraph Cloud</h1>
+                            <h1 className="mb-4 display-2 font-weight-bolder">Sourcegraph Cloud</h1>
 
                             <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>
 
@@ -74,13 +74,13 @@ export const CloudPage: FunctionComponent = () => {
                                 </a>
                             </div>
 
-                            <div className="bg-white rounded pt-5 pb-1 px-5">
+                            <div className="px-5 pt-5 pb-1 bg-white rounded">
                                 <h3>Create a free Sourcegraph Cloud account to search your private code</h3>
 
                                 <div className="d-flex flex-column w-75">
                                     <a
                                         href="https://sourcegraph.com/.auth/github/login?pc=https%3A%2F%2Fgithub.com%2F%3A%3Ae917b2b7fa9040e1edd4&redirect=%2Fwelcome"
-                                        className="btn bg-black text-white w-100 text-center mt-3"
+                                        className="mt-3 text-center text-white bg-black btn w-100"
                                         title="Continue with GitHub"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.body}
@@ -115,12 +115,12 @@ export const CloudPage: FunctionComponent = () => {
                                     </a>
                                 </div>
 
-                                <p className="small-font my-3">
+                                <p className="my-3 small-font">
                                     Or,{' '}
                                     <a
                                         href="https://sourcegraph.com/sign-up?_ga=2.155066808.1628120401.1642532503-600077800.1642532503&showEmail=true"
                                         title="continue with email"
-                                        className="text-reset text-black underline mt-3"
+                                        className="mt-3 text-black tw-underline text-reset"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.body}
                                         data-button-type="cta"
@@ -135,7 +135,7 @@ export const CloudPage: FunctionComponent = () => {
                                         <Link href="/terms" passHref={true}>
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
-                                                className="text-reset text-black text-decoration-underline"
+                                                className="text-black text-reset tw-underline"
                                                 title="Terms of Service"
                                                 data-button-style={buttonStyle.text}
                                                 data-button-location={buttonLocation.body}
@@ -148,7 +148,7 @@ export const CloudPage: FunctionComponent = () => {
                                         <Link href="/privacy" passHref={true}>
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
-                                                className="text-reset text-black underline"
+                                                className="text-black tw-underline text-reset"
                                                 title="Privacy Policy"
                                                 data-button-style={buttonStyle.text}
                                                 data-button-location={buttonLocation.body}
@@ -168,7 +168,7 @@ export const CloudPage: FunctionComponent = () => {
                                     <a
                                         href="https://sourcegraph.com/sign-in"
                                         title="Search public code with Sourcegraph Cloud"
-                                        className="text-reset text-black underline"
+                                        className="text-black text-reset tw-underline"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.body}
                                         data-button-type="cta"

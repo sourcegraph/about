@@ -14,9 +14,9 @@ const selfHostedFeatures: string[] = [
 ]
 
 export const SelfHostedSection: FunctionComponent = () => (
-    <div className="bg-gradient-venus py-5 py-md-7">
+    <div className="py-5 bg-gradient-venus py-md-7">
         <div className="container">
-            <h1 className="font-weight-bold mb-6 text-center">Self-hosted deployment</h1>
+            <h1 className="mb-6 text-center font-weight-bold">Self-hosted deployment</h1>
 
             <div className="row">
                 <div className="col-lg-6">
@@ -26,7 +26,7 @@ export const SelfHostedSection: FunctionComponent = () => (
                 <div className="col-lg-6 pl-lg-7">
                     <h3 className="mt-6 mt-lg-0 font-weight-bold">Why choose self-hosted?</h3>
 
-                    <ul className="my-4 text-lg">
+                    <ul className="my-4 tw-text-lg">
                         {selfHostedFeatures.map((feature, index) => (
                             <li
                                 key={feature}
@@ -40,7 +40,7 @@ export const SelfHostedSection: FunctionComponent = () => (
                     <Link href="/get-started/self-hosted" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="d-inline-block text-lg"
+                            className="tw-text-lg d-inline-block"
                             title="Learn about self-hosted"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.trySourcegraph}

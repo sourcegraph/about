@@ -46,7 +46,7 @@ export const CaseStudy: FunctionComponent = () => (
         }
     >
         <NewCaseStudyLayout customer="Codecov">
-            <ContentSection color="white" className="py-7 text-center max-w-900">
+            <ContentSection color="white" className="text-center py-7 max-w-900">
                 <Blockquote
                     quote="Sourcegraph allows us to be more efficient with our time, whether it's code review, answering security-related questions from clients, or searching for things in the code much more easily than we could through our code host's native search functionality."
                     author="Jeff Holland, Lead Security Engineer at Codecov"
@@ -99,7 +99,7 @@ export const CaseStudy: FunctionComponent = () => (
             />
 
             <ContentSection color="white" className="pt-lg-8 py-7 max-w-700 col-xl-5">
-                <p className="mt-lg-7 mt-md-5 mt-6">
+                <p className="mt-6 mt-lg-7 mt-md-5">
                     In 2021, security engineers Mitchell Borrego and Jeff Holland joined Codecov with the goal of
                     creating a cutting-edge security program. Their responsibilities include security tooling,
                     compliance, and code review from a security perspective. Working with Jerrod Engelberg, CEO of
@@ -247,8 +247,8 @@ export const CaseStudy: FunctionComponent = () => (
                 </p>
             </ContentSection>
 
-            <ContentSection color="white" className="pb-7 max-w-700 col-xl-5 text-center">
-                <h5 className="mb-4 text-xl font-weight-bold max-w-650">About Codecov</h5>
+            <ContentSection color="white" className="text-center pb-7 max-w-700 col-xl-5">
+                <h5 className="mb-4 tw-text-xl font-weight-bold max-w-650">About Codecov</h5>
                 <p>
                     Codecov is a small organization making an outsized impact on the lives of over one million
                     developers. In over 29,000 companies across the globe, Codecov customers are able to ship healthier

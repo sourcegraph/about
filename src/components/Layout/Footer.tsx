@@ -54,7 +54,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
 
                     {footerLinks.map(section => (
                         <div className="mb-3 col-sm-6 col-md-3 col-lg-2" key={section.section}>
-                            <h3 className="text-lg footer__nav-header font-weight-bold">{section.section}</h3>
+                            <h3 className="tw-text-lg footer__nav-header font-weight-bold">{section.section}</h3>
                             <ul className="mx-0 nav flex-column">
                                 {section.items.map(item => (
                                     <li className="nav-item" key={item.title}>

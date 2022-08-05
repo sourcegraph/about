@@ -27,7 +27,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
 }) => (
     <Tag className={`blog-post ${className}`}>
         <header className={headerClassName}>
-            <h2 className="text-4xl">
+            <h2 className="tw-text-4xl">
                 {renderTitleAsLink === true ? (
                     <Link href={url} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

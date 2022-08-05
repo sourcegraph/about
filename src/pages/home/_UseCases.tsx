@@ -109,7 +109,7 @@ const UseCases: FunctionComponent = () => {
                         <useCase.icon className="h-auto mb-4 text-vivid-violet w-100 max-w-50 mr-sm-3 mb-sm-0" />
                         <div className="text-center text-sm-left">
                             <h4 className="font-weight-bold">{useCase.title}</h4>
-                            <div className="text-lg">
+                            <div className="tw-text-lg">
                                 <p className="m-0">{useCase.description}</p>
                                 {useCase.link && (
                                     <Link href={useCase.link.href}>
@@ -139,7 +139,7 @@ const UseCases: FunctionComponent = () => {
                 <h3 className="mb-4 font-weight-bold pr-sm-0 pr-md-7 pr-xl-4">
                     Want to use Sourcegraph at your company?
                 </h3>
-                <p className="text-xl">
+                <p className="tw-text-xl">
                     <Link href="/get-started/self-hosted" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a

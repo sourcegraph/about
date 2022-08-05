@@ -9,10 +9,10 @@
 
 /* Base Styles */
 @layer base {
+    /* Layout */
     html {
         @apply tw-font-sans tw-text-base tw-tracking-normal tw-font-normal tw-antialiased;
     }
-
     body {
         @apply tw-bg-gray-50;
     }
@@ -35,6 +35,12 @@
     }
     h6 {
         @apply tw-font-sans tw-text-lg tw-tracking-wide tw-font-normal tw-uppercase;
+    }
+
+    /* Links */
+    a {
+        @apply tw-text-blurple-400 hover:tw-underline tw-font-semibold;
+        /* TODO: regular links should be normal font weight, CTAs are bold */
     }
 
     /* List Elements */
