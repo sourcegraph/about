@@ -21,7 +21,13 @@ export const AuthorBio: React.FunctionComponent<{
                 <section className="d-md-flex d-block justify-content-between col-lg-9 mx-auto mt-6 p-0">
                     {authors.map(a => (
                         <div key={a.name}>
-                            <img className="rounded-circle max-w-150" width={150} height={150} src={a.image} alt={a.name} />
+                            <img
+                                className="rounded-circle max-w-150"
+                                width={150}
+                                height={150}
+                                src={a.image}
+                                alt={a.name}
+                            />
                             <h3 className="font-weight-normal">{a.name}</h3>
                             <p className="text-muted">{a.title}</p>
                         </div>
@@ -33,7 +39,12 @@ export const AuthorBio: React.FunctionComponent<{
             <div className="d-flex flex-column flex-md-row align-items-start">
                 {authors[0].image && (
                     <div className="col-md-3">
-                        <img className="rounded-circle p-0 max-w-150" width={100} src={authors[0].image} alt={authors[0].name} />
+                        <img
+                            className="rounded-circle p-0 max-w-150"
+                            width={100}
+                            src={authors[0].image}
+                            alt={authors[0].name}
+                        />
                     </div>
                 )}
 

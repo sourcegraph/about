@@ -282,8 +282,8 @@ export const CaseStudy: FunctionComponent = () => (
                         {
                             image: '/case-studies/jon-kohler.png',
                             name: 'Jon Kohler',
-                            title: 'Technical Director of Solution Engineering at Nutanix'
-                        }
+                            title: 'Technical Director of Solution Engineering at Nutanix',
+                        },
                     ]}
                 />
             </ContentSection>
