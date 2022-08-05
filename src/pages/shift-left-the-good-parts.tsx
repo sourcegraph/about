@@ -324,7 +324,7 @@ const ShiftLeftPage: FunctionComponent = () => (
 
         <ContentSection color="white" className="container py-7 px-0">
             <div className="col-lg-6">
-                <h2 className="mb-5 font-weight-bold">Related resources</h2>
+                <h2 className="mb-5 font-weight-bold">Read more about dev tools that accelerate the dev cycle</h2>
             </div>
             {blogResourceItems.map(item => (
                 <BlogResourceItem key={item.title} blog={item} />
