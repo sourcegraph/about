@@ -1,7 +1,10 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
-import { mdiEye, mdiChartBox, mdiClipboardCheck, mdiReiterate, mdiViewDashboard } from '@mdi/js'
-import Icon from '@mdi/react'
+import ChartBoxIcon from 'mdi-react/ChartBoxIcon'
+import ClipboardCheckIcon from 'mdi-react/ClipboardCheckIcon'
+import EyeIcon from 'mdi-react/EyeIcon'
+import ReiterateIcon from 'mdi-react/ReiterateIcon'
+import ViewDashboardIcon from 'mdi-react/ViewDashboardIcon'
 import Link from 'next/link'
 
 import {
@@ -15,10 +18,15 @@ import {
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
-const CarouselItem: FunctionComponent<{ icon: string; header: string; text: string }> = ({ icon, header, text }) => (
+const CarouselItem: FunctionComponent<{ icon: ReactNode; header: string; text: string }> = ({
+    icon,
+    header,
+    text,
+}) => (
     <>
-        <div className="bg-violet-1 rounded-circle text-center max-w-50 mb-3">
-            <Icon path={icon} size={2} className="text-vivid-violet p-2" />
+        <div className="bg-violet-1 rounded-circle max-w-50 text-center p-1 mb-3">
+            <icon />
+            {/* <icon size={40} className="p-1 text-vivid-violet" /> */}
         </div>
         <h3 className="font-weight-bold mb-lg-0 mb-5">{header}</h3>
         <p className="py-3">{text}</p>
@@ -31,7 +39,7 @@ const items = [
         subtitle: 'Exhaustive across all repositories and code hosts',
         text: (
             <CarouselItem
-                icon={mdiEye as string}
+                icon={EyeIcon}
                 header="Full view of the codebase"
                 text="High-fidelity search is applied across all repositories and code hosts to provide a holistic view of sprawling code. Developers are in control of how they prefer to navigate the codebase with multiple pattern types, including symbol search, structural search, and precise code navigation."
             />
@@ -42,7 +50,7 @@ const items = [
         subtitle: 'Trustworthy answers that help your team move fast',
         text: (
             <CarouselItem
-                icon={mdiClipboardCheck as string}
+                icon={ClipboardCheckIcon}
                 header="Accurate Results"
                 text="Exhaustive and relevant search results are returned in a fraction of a second with a variety of information, including repositories, files, diffs, and commits. When your development teams are stuck, they’re empowered to find answers on their own through robust search and living documentation with interactive code snippets that are always up-to-date."
             />
@@ -53,7 +61,7 @@ const items = [
         subtitle: 'Access powerful insights and rich context to make the best decisions',
         text: (
             <CarouselItem
-                icon={mdiChartBox as string}
+                icon={ChartBoxIcon}
                 header="Rich codebase context"
                 text="Leverage insights across your entire codebase through rich context about functions, variables, and cross-references. Accurate documentation with live code queries provide additional information when developers need it the most."
             />
@@ -64,7 +72,7 @@ const items = [
         subtitle: 'Seamlessly make and track large-scale code changes',
         text: (
             <CarouselItem
-                icon={mdiReiterate as string}
+                icon={ReiterateIcon}
                 header="Automated large-scale code changes"
                 text="Large-scale code refactors can be applied across the codebase with just a few clicks. Save your team time resolving vulnerabilities, keeping code updated, or paying down technical debt. Track code changes all the way to merge from a powerful dashboard, instead of doing manual project management work."
             />
@@ -75,7 +83,7 @@ const items = [
         subtitle: 'Access real-time reports that can be customized to track codebase progress',
         text: (
             <CarouselItem
-                icon={mdiViewDashboard as string}
+                icon={ViewDashboardIcon}
                 header="Global view for leaders"
                 text="Set up customizable, visual dashboards in sixty seconds that turn your codebase into a database. Leaders can track the status of migrations and deprecations while preventing future vulnerabilities through alerts when specific code is added by the team."
             />
