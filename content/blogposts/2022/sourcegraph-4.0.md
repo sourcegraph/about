@@ -10,9 +10,12 @@ socialImage:
 changelogItems:
 ---
 
-# Sourcegraph 4.0 Release Post
+# Sourcegraph 4.0
 
-{/* Product/Eng planning for 4.0 found here: https://docs.google.com/spreadsheets/d/1fy0A659qSvVP9-7Y-p2VrJKJfph3LI0DTvYMUJ82Iu0/edit#gid=0 */}
+> NOTE: This post is very WIP. It's a rough draft of what individual teams intend to ship.
+
+- [From code search toward a code intelligence platform](/blog/code-search-to-code-intelligence) - the longer-term vision/story
+- [Secure, easy, and scalable Sourcegraph Cloud managed instances for the enterprise](/blog/enterprise-cloud) - the Cloud announcement (including SOC2 Type 2, etc.) that coincides with 4.0
 
 ### Run batch changes server-side
 
