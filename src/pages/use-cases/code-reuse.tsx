@@ -65,7 +65,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Automate PRs to make code consistent',
@@ -92,7 +91,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Alert for deprecated code use',
@@ -117,7 +115,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Track your code reuse efforts ',
@@ -144,7 +141,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
 ]
 

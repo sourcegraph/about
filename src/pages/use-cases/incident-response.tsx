@@ -90,7 +90,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Track remediation progress',
@@ -117,7 +116,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Monitor for unsafe code',
@@ -142,7 +140,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
 ]
 

@@ -79,7 +79,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Proactively monitor for the presence of vulnerable code',
@@ -105,7 +104,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Ensure removal of security vulnerabilities',
@@ -133,7 +131,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Bring peace of mind to customers',
@@ -149,7 +146,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
 ]
 

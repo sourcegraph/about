@@ -67,7 +67,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Get code history and ownership at a glance',
@@ -83,7 +82,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Visualize contributions and chart team progress',
@@ -109,7 +107,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Document and share actionable code snippets',
@@ -134,7 +131,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
 ]
 

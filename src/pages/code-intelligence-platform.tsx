@@ -74,7 +74,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Rich codebase context',
@@ -96,7 +95,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Automated large-scale code changes',
@@ -119,7 +117,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Global view for leaders',
@@ -141,7 +138,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
 ]
 

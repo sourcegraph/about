@@ -79,7 +79,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Get everyone on the same page with living docs',
@@ -103,7 +102,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Monitor for deprecated code',
@@ -128,7 +126,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
         title: 'Develop a data-driven relationship with your code',
@@ -155,7 +152,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
 ]
 
