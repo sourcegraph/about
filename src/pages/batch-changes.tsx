@@ -1,18 +1,16 @@
 import { FunctionComponent } from 'react'
 
-import Tab from 'react-bootstrap/Tab'
-import Tabs from 'react-bootstrap/Tabs'
-
 import {
     Blockquote,
     ContentSection,
     Figure,
     Layout,
     HubSpotForm,
-    Video,
-    TrySourcegraph,
-    YouTube,
     ProductHero,
+    Tabs,
+    TrySourcegraph,
+    Video,
+    YouTube,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -163,59 +161,70 @@ export const BatchChangesPage: FunctionComponent = () => (
         {/* Use Cases */}
         <ContentSection className="py-4 py-md-7">
             <h1 className="mb-5 text-center">How developers are using Batch Changes </h1>
-            <Tabs defaultActiveKey="configuration" id="use-cases" className="justify-content-center">
-                <Tab eventKey="configuration" title="Configuration" className="bg-transparent ">
-                    <div className="mt-5 row justify-content-center">
-                        <div className="col-lg-8">
-                            <p>
-                                Quickly edit every CI, build, and other configuration files to make changes such as
-                                altering steps, migrating versions, or changing base images.
-                            </p>
-                            <img
-                                className="tw-mt-6 tw-h-auto tw-w-full"
-                                width="750"
-                                height="400"
-                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/update-circle-ci-username.png"
-                                alt="Batch spec for updating the username in Circle CI configurations"
-                            />
-                        </div>
-                    </div>
-                </Tab>
-                <Tab eventKey="refactoring" title="Refactoring">
-                    <div className="mt-5 row justify-content-center">
-                        <div className="col-lg-8">
-                            <p>
-                                Use language-aware tooling of your choice to perform complex refactors like updating an
-                                API and its function calls or replacing libraries entirely.
-                            </p>
-                            <img
-                                className="tw-mt-6 tw-h-auto tw-w-full"
-                                width="850"
-                                height="380"
-                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/comby-sprintf-to-itoa.png"
-                                alt="Batch spec for using Comby to refactor Go code"
-                            />
-                        </div>
-                    </div>
-                </Tab>
-                <Tab eventKey="security" title="Security">
-                    <div className="mt-5 row justify-content-center">
-                        <div className="col-lg-8">
-                            <p>
-                                Refactor code to replace insecure functions, update vulnerable packages, or modify
-                                container configurations across hundreds of repositories.
-                            </p>
-                            <img
-                                className="tw-mt-6 tw-h-auto tw-w-full"
-                                width="750"
-                                height="472"
-                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/pin-docker-images.png"
-                                alt="Batch spec for pinning Docker base images to specific versions"
-                            />
-                        </div>
-                    </div>
-                </Tab>
-            </Tabs>
+            <Tabs
+                tabs={[
+                    {
+                        title: 'Configuration',
+                        content: (
+                            <div className="mt-5 row justify-content-center">
+                                <div className="col-lg-8">
+                                    <p>
+                                        Quickly edit every CI, build, and other configuration files to make changes such as
+                                        altering steps, migrating versions, or changing base images.
+                                    </p>
+                                    <img
+                                        className="tw-mt-6 tw-h-auto tw-w-full"
+                                        width="750"
+                                        height="400"
+                                        src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/update-circle-ci-username.png"
+                                        alt="Batch spec for updating the username in Circle CI configurations"
+                                    />
+                                </div>
+                            </div>
+                        )
+                    },
+                    {
+                        title: 'Refactoring',
+                        content: (
+                            <div className="mt-5 row justify-content-center">
+                                <div className="col-lg-8">
+                                    <p>
+                                        Use language-aware tooling of your choice to perform complex refactors like updating an
+                                        API and its function calls or replacing libraries entirely.
+                                    </p>
+                                    <img
+                                        className="tw-mt-6 tw-h-auto tw-w-full"
+                                        width="850"
+                                        height="380"
+                                        src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/comby-sprintf-to-itoa.png"
+                                        alt="Batch spec for using Comby to refactor Go code"
+                                    />
+                                </div>
+                            </div>
+                        )
+                    },
+                    {
+                        title: 'Security',
+                        content: (
+                            <div className="mt-5 row justify-content-center">
+                                <div className="col-lg-8">
+                                    <p>
+                                        Refactor code to replace insecure functions, update vulnerable packages, or modify
+                                        container configurations across hundreds of repositories.
+                                    </p>
+                                    <img
+                                        className="tw-mt-6 tw-h-auto tw-w-full"
+                                        width="750"
+                                        height="472"
+                                        src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/pin-docker-images.png"
+                                        alt="Batch spec for pinning Docker base images to specific versions"
+                                    />
+                                </div>
+                            </div>
+                        )
+                    },
+                ]}
+            />
         </ContentSection>
 
         {/* Social proof */}

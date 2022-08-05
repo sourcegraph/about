@@ -72,8 +72,6 @@ $navbar-light-hover-color: $blurple;
 $navbar-dark-color: $light;
 $navbar-dark-hover-color: $blurple;
 
-$nav-tabs-border-width: 0;
-
 $btn-padding-x: 1.5rem;
 $btn-font-weight: 600;
 
@@ -164,22 +162,3 @@ $grid-breakpoints: (
 @import 'gradients';
 @import 'scripts';
 @import 'spacing';
-
-/* ==================== Bootstrap Components ==================== */
-.nav-tabs {
-    font-weight: 600;
-    font-size: 1.25em;
-    border-bottom-width: 1px;
-}
-.tab-header {
-    background-color: transparent;
-    color: $black;
-    font-weight: 600 !important;
-}
-.nav-tabs .nav-link.active {
-    color: $black !important;
-    background-color: transparent !important;
-    @include media-breakpoint-up(md) {
-        border-bottom: solid $vivid-violet 3px;
-    }
-}
