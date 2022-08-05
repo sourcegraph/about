@@ -6,7 +6,7 @@ const dlsColors = {
   gray: {
     50: '#F9FAFB',
     100: '#F5F7FB',
-    200: '#EBEFF3',
+    200: '#E6EBF2',
     300: '#ABB3C1',
     400: '#696B71',
     500: '#484B51',

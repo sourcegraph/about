@@ -57,14 +57,14 @@
 
     /* Tables */
     table {
-        @apply tw-w-full tw-max-w-full tw-mb-4 tw-bg-transparent tw-border-collapse tw-border tw-border-solid tw-border-[#ddd];
+        @apply tw-w-full tw-max-w-full tw-mb-4 tw-bg-transparent tw-border-collapse tw-border tw-border-solid tw-border-gray-200;
     }
     td,
     th {
-        @apply tw-p-3 tw-align-top tw-border tw-border-solid tw-border-[#ddd];
+        @apply tw-p-3 tw-align-top tw-border tw-border-solid tw-border-gray-200;
     }
     th {
-        @apply tw-align-middle tw-border-b tw-border-solid tw-border-b-[#ddd];
+        @apply tw-align-middle tw-border-b tw-border-solid tw-border-b-gray-200;
     }
 }
 
