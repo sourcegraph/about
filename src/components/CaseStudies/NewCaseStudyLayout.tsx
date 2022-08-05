@@ -22,11 +22,11 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, childre
                 <RequestDemoTrySourcegraph />
             </Background>
 
-            <ContentSection color="white" className="py-7 py-5 col-xl-6">
-                <h1 className="pl-5 pb-5 display-3 font-weight-bold">Explore other case studies</h1>
-                <div className="d-flex flex-wrap">
+            <ContentSection color="white" className="py-5 py-7 col-xl-6">
+                <h1 className="pb-5 pl-5 display-3 font-weight-bold">Explore other case studies</h1>
+                <div className="flex-wrap d-flex">
                     {uniqueCaseStudyList.map(study => (
-                        <div key={study.name} className="col-lg-6 mb-3">
+                        <div key={study.name} className="mb-3 col-lg-6">
                             <CaseStudyCard study={study} />
                         </div>
                     ))}

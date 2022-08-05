@@ -23,7 +23,7 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({
     value ? (
         <Tag className={`${className} d-flex justify-content-between`}>
             <div className="text-xl">
-                <CheckIcon className="icon-inline text-success mr-2 tw-inline" /> {label}
+                <CheckIcon className="mr-2 icon-inline text-success tw-inline" /> {label}
             </div>
             {description && (
                 <OverlayTrigger

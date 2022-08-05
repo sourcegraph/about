@@ -13,7 +13,6 @@
 $font-family-sans-serif: 'Source Sans Pro', sans-serif;
 $font-family-monospace: 'Source Code Pro', monospace;
 $font-family-base: $font-family-sans-serif;
-$headings-font-family: $font-family-base;
 
 $border-radius: 0.3125rem;
 $border-radius-lg: 0.25rem;
@@ -22,8 +21,6 @@ $border-radius-sm: 0.1rem;
 $font-weight-semibold: 600;
 $font-weight-bold: $font-weight-semibold; /* uses Source Sans Pro Semi-bold */
 $font-weight-bolder: 700; /* uses Source Sans Pro Bold */
-
-$headings-font-weight: $font-weight-semibold;
 
 $h1-font-size: 3.25rem; // 72px
 $h2-font-size: 2.5rem; // 40px
@@ -114,7 +111,6 @@ $grid-breakpoints: (
 );
 
 @import 'node_modules/bootstrap/scss/root';
-@import 'node_modules/bootstrap/scss/reboot';
 @import 'node_modules/bootstrap/scss/type';
 @import 'node_modules/bootstrap/scss/grid';
 @import 'node_modules/bootstrap/scss/forms';
@@ -134,55 +130,6 @@ $grid-breakpoints: (
 @import 'node_modules/bootstrap/scss/badge';
 @import 'node_modules/bootstrap/scss/dropdown';
 @import 'node_modules/bootstrap/scss/carousel';
-
-/* ==================== Layout ==================== */
-
-html,
-body {
-    -webkit-overflow-scrolling: touch;
-}
-
-.flex-1 {
-    flex: 1;
-}
-
-body {
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    background-color: $alabaster;
-}
-
-/* ==================== Icons ==================== */
-
-.material-icons {
-    margin-right: 4px;
-    fill: currentColor;
-}
-
-/* ==================== Tables ==================== */
-
-table {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 1rem;
-    background-color: transparent;
-    border-collapse: collapse;
-    border: 1px solid $light-gray-0;
-}
-table td,
-table th {
-    padding: 0.75rem;
-    vertical-align: top;
-    border: 1px solid $light-gray-1;
-    background-color: $white;
-}
-table thead th {
-    vertical-align: bottom;
-    border-bottom: 1px solid $light-gray-1;
-}
-table tbody + tbody {
-    border-top: 2px solid $light-gray-1;
-}
 
 /* ==================== BEM Pages/Components ==================== */
 

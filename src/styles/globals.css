@@ -9,6 +9,14 @@
 
 /* Base Styles */
 @layer base {
+    html {
+        @apply tw-font-sans tw-text-base tw-tracking-normal tw-font-normal tw-antialiased;
+    }
+
+    body {
+        @apply tw-bg-gray-50;
+    }
+
     /* Typography */
     h1 {
         @apply tw-font-sans tw-text-7xl tw-tracking-normal tw-font-semibold;
@@ -39,6 +47,18 @@
     /* Code Blocks */
     code {
         @apply tw-font-mono tw-text-base tw-font-medium tw-tracking-tightest;
+    }
+
+    /* Tables */
+    table {
+        @apply tw-w-full tw-max-w-full tw-mb-4 tw-bg-transparent tw-border-collapse tw-border tw-border-solid tw-border-[#ddd];
+    }
+    td,
+    th {
+        @apply tw-p-3 tw-align-top tw-border tw-border-solid tw-border-[#ddd];
+    }
+    th {
+        @apply tw-align-middle tw-border-b tw-border-solid tw-border-b-[#ddd];
     }
 }
 

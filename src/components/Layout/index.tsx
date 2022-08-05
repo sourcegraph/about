@@ -122,7 +122,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                 </div>
             )}
 
-            <section className="flex-1">{props.children}</section>
+            <section className="tw-flex-1">{props.children}</section>
 
             {!props.hideFooter && <Footer className={`${props.className || ''}`} minimal={props.minimal} />}
         </div>

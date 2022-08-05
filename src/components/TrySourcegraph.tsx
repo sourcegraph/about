@@ -2,7 +2,6 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { ContentSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 interface Props {
@@ -11,19 +10,22 @@ interface Props {
 }
 
 export const TrySourcegraph: FunctionComponent<Props> = ({ demoFormURL = '/demo', className = '' }) => (
-    <ContentSection className={`${className} d-lg-flex justify-content-around py-7`}>
-        <div className="col-lg-7 col-12 px-0">
-            <h3 className="display-4 font-weight-bold">Try Sourcegraph for free today</h3>
-            <p>
+    <div className={`${className} tw-py-24 tw-max-w-screen-lg sm:tw-grid sm:tw-grid-cols-2 tw-mx-auto tw-px-4`}>
+        <div className="sm:mb-0 sm:tw-pr-4">
+            <h3 className="font-weight-bold">Try Sourcegraph for free today</h3>
+            <p className="tw-max-w-md">
                 You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your code stays
                 local and secure).
             </p>
         </div>
-        <div className="col-lg-5 col-12 pt-3 px-lg-3 px-0 d-flex flex-column align-self-center">
+
+        {/*  */}
+
+        <div className="tw-flex tw-flex-col md:tw-items-center md:tw-flex-row md:tw-justify-center">
             <Link href="/get-started/self-hosted" passHref={true}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a
-                    className="btn btn-primary col-lg-8 min-w-200 mb-3"
+                    className="tw-mb-4 btn btn-primary md:tw-mr-4 md:tw-mb-0"
                     title="Try Sourcegraph now"
                     data-button-style={buttonStyle.primary}
                     data-button-location={buttonLocation.trySourcegraph}
@@ -32,11 +34,12 @@ export const TrySourcegraph: FunctionComponent<Props> = ({ demoFormURL = '/demo'
                     Try Sourcegraph now
                 </a>
             </Link>
+
             {demoFormURL && (
                 <Link href={demoFormURL} passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
-                        className="btn btn-outline-primary col-lg-6 min-w-200"
+                        className="btn btn-outline-primary"
                         title="Schedule a demo"
                         data-button-style={buttonStyle.outline}
                         data-button-location={buttonLocation.bodyDemo}
@@ -47,5 +50,5 @@ export const TrySourcegraph: FunctionComponent<Props> = ({ demoFormURL = '/demo'
                 </Link>
             )}
         </div>
-    </ContentSection>
+    </div>
 )

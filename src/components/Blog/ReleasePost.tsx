@@ -78,7 +78,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                         How to upgrade
                     </a>
                 </li>
-                <li className="flex-1" />
+                <li className="tw-flex-1" />
                 <li className="release-post__help-item">
                     <a
                         href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"

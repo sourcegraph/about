@@ -23,7 +23,7 @@ const ContactHome: FunctionComponent = () => (
         <ContentPage title={title} description={description} titleClassName="tw-text-7xl tw-font-semibold">
             <ContentSection className="pt-6 pb-2">
                 <div className="row">
-                    <div className="col-md-6 mb-4 pb-1">
+                    <div className="pb-1 mb-4 col-md-6">
                         <div className="card">
                             <h5 className="card-header">Product support</h5>
                             <div className="card-body">
@@ -57,11 +57,11 @@ const ContactHome: FunctionComponent = () => (
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 mb-4 pb-1">
+                    <div className="pb-1 mb-4 col-md-6">
                         <div className="card">
                             <h5 className="card-header">Sales</h5>
                             <div className="card-body">
-                                <p className="card-text">For information about products and purchasing:</p>
+                                <p className="card-text tw-mb-2">For information about products and purchasing:</p>
                                 <Link href="/demo" passHref={true}>
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
@@ -77,11 +77,11 @@ const ContactHome: FunctionComponent = () => (
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 mb-4 pb-1">
+                    <div className="pb-1 mb-4 col-md-6">
                         <div className="card">
                             <h5 className="card-header">Jobs</h5>
                             <div className="card-body">
-                                <p className="card-text">For information about joining our team:</p>
+                                <p className="card-text tw-mb-2">For information about joining our team:</p>
                                 <a
                                     href="https://boards.greenhouse.io/sourcegraph91"
                                     className="btn btn-outline-primary stretched-link"
@@ -95,7 +95,7 @@ const ContactHome: FunctionComponent = () => (
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 mb-4 pb-1">
+                    <div className="pb-1 mb-4 col-md-6">
                         <div className="card">
                             <h5 className="card-header">Everything else</h5>
                             <div className="list-group list-group-flush">

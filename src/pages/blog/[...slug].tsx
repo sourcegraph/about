@@ -41,13 +41,13 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
                 <div className="container-lg">
                     <BlogHeader {...blogInfo} />
                 </div>
-                <div className="post-template mt-5 bg-white">
+                <div className="mt-5 bg-white post-template">
                     <div className="container-lg">
                         <PostTemplate
                             post={post}
                             content={content}
                             url={urlToPost(post)}
-                            className="post-template__post blog-post max-w-750 mx-auto"
+                            className="mx-auto post-template__post blog-post tw-max-w-[800px]"
                             headerClassName="card-header bg-white border-bottom-0 text-center pt-5"
                         />
                     </div>

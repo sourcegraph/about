@@ -47,7 +47,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
             </h2>
 
             {post.frontmatter.authors?.length && (
-                <p className="text-align-center text-secondary mb-0">
+                <p className="mb-0 text-align-center text-secondary">
                     {post.frontmatter.authors.map((a, index) => (
                         <span key={a.name} data-author={a.name}>
                             {a.url ? (
@@ -87,7 +87,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
             )}
 
             {post.frontmatter.publishDate && (
-                <p className="text-align-center text-secondary mb-0">
+                <p className="mb-0 text-align-center text-secondary">
                     <time dateTime={post.frontmatter.publishDate}>{formatDate(post.frontmatter.publishDate)}</time>
                 </p>
             )}

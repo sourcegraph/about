@@ -91,9 +91,9 @@ const selfHostedOptions: string[] = [
 
 const renderListItems = (items: string[]): ReactNode =>
     items.map((item: string) => (
-        <li key={item} className="list-inline-item my-2 mr-2">
+        <li key={item} className="my-2 mr-2 list-inline-item">
             <code
-                className="bg-gray-200 text-gray-500 small rounded p-1"
+                className="p-1 text-gray-500 bg-gray-200 rounded small"
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ fontSize: '14px' }}
             >
@@ -104,13 +104,13 @@ const renderListItems = (items: string[]): ReactNode =>
 
 export const IntegrationsSection: FunctionComponent = () => (
     <ContentSection color="white" className="py-5 py-md-7">
-        <h2 className="display-3 font-weight-bold mb-3">Works with your code, infrastructure, and tools</h2>
+        <h2 className="mb-3 display-3 font-weight-bold">Works with your code, infrastructure, and tools</h2>
 
         <div className="row">
-            <div className="col-lg-6 mb-5">
+            <div className="mb-5 col-lg-6">
                 <h3 className="h5 font-weight-bold">All your repositories + 2M open source (and counting)</h3>
 
-                <ul className="tw-list-none tw-m-0">{renderListItems(codeHosts)}</ul>
+                <ul className="tw-list-none tw-ml-0">{renderListItems(codeHosts)}</ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     className="text-primary"
@@ -123,10 +123,10 @@ export const IntegrationsSection: FunctionComponent = () => (
                 </a>
             </div>
 
-            <div className="col-lg-6 mb-5">
+            <div className="mb-5 col-lg-6">
                 <h3 className="h5 font-weight-bold">All your languages</h3>
 
-                <ul className="tw-list-none tw-m-0">{renderListItems(languages)}</ul>
+                <ul className="tw-list-none tw-ml-0">{renderListItems(languages)}</ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     className="text-primary"
@@ -139,10 +139,10 @@ export const IntegrationsSection: FunctionComponent = () => (
                 </a>
             </div>
 
-            <div className="col-lg-6 mb-5">
+            <div className="mb-5 col-lg-6">
                 <h3 className="h5 font-weight-bold">All your tools</h3>
 
-                <ul className="tw-list-none tw-m-0">{renderListItems(tools)}</ul>
+                <ul className="tw-list-none tw-ml-0">{renderListItems(tools)}</ul>
                 <a
                     href="https://docs.sourcegraph.com/integration"
                     className="text-primary"
@@ -155,17 +155,17 @@ export const IntegrationsSection: FunctionComponent = () => (
                 </a>
             </div>
 
-            <div className="col-lg-6 mb-5">
+            <div className="mb-5 col-lg-6">
                 <h4 className="font-weight-bold">Deployment options</h4>
 
-                <ul className="tw-list-none tw-m-0">
+                <ul className="tw-list-none tw-ml-0">
                     <li className="list-inline-item text-wrap">
-                        <h6 className="font-weight-normal">Self-hosted by you:</h6>
+                        <h6 className="tw-capitalize">Self-hosted by you:</h6>
                         <ul className="tw-list-none tw-m-0">{renderListItems(selfHostedOptions)}</ul>
                     </li>
 
                     <li className="tw-list-none tw-m-0">
-                        <h6 className="font-weight-normal mt-3">Managed and hosted by us:</h6>
+                        <h6 className="mt-3 tw-capitalize">Managed and hosted by us:</h6>
                         <ul className="tw-list-none tw-m-0">{renderListItems(['Docker Compose in GCP'])}</ul>
                     </li>
                 </ul>

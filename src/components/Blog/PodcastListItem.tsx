@@ -38,7 +38,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                 <>
                     <PodcastAudioPlayer source={frontmatter.audioSrc} />
 
-                    <div className="flex-1">
+                    <div className="tw-flex-1">
                         <div>
                             <Link href={`/podcast/${slugPath}`} passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

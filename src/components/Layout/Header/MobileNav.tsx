@@ -23,7 +23,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
 
     return (
         <div id="mobile-navbar" className={`collapse navbar-collapse ${isOpen ? 'show' : 'hide'}`}>
-            <ul className="nav navbar-nav">
+            <ul className="ml-0 nav navbar-nav">
                 {navLinks.map(navLink =>
                     navLink.items.length === 1 ? (
                         navLink.items.map(item =>
@@ -82,11 +82,11 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                                 tabIndex={0}
                             >
                                 {navLink.section}
-                                <ChevronDownIcon className="ml-1" />
+                                <ChevronDownIcon className="ml-1 tw-inline" />
                             </span>
                             <ul
                                 id={navLink.section.split(' ').join('-').toLowerCase() + '-menu'}
-                                className={`sub-menu collapse navbar-collapse ${
+                                className={`sub-menu collapse navbar-collapse ml-2 ${
                                     openMobileMenu[camelCase(navLink.section)] ? 'show' : 'hide'
                                 }`}
                             >

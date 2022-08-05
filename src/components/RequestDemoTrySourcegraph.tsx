@@ -14,7 +14,7 @@ interface Props {
 
 export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
     <ContentSection className="container col-xl-6 justify-content-center">
-        <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-md-center align-items-left">
+        <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-md-center align-items-left">
             <div className="mb-5 d-flex flex-column">
                 <h1 className="text-center font-weight-bold">Get started with Sourcegraph</h1>
                 <p className="text-center">Understand, fix, and automate changes across your entire codebase.</p>
@@ -42,7 +42,7 @@ export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
                         data-button-type="cta"
                     >
                         Try Sourcegraph now
-                        <ArrowRightIcon className="ml-2" />
+                        <ArrowRightIcon className="ml-2 tw-inline" />
                     </a>
                 </Link>
             </div>

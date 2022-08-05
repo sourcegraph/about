@@ -42,16 +42,16 @@ const UseCases: React.FunctionComponent = () => (
         hero={
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-7 mb-lg-6 mt-6">
-                        <h1 className="display-2 font-weight-bold mb-0">Our customers move faster with Sourcegraph</h1>
+                    <div className="mt-6 col-lg-7 mb-lg-6">
+                        <h1 className="mb-0 display-2 font-weight-bold">Our customers move faster with Sourcegraph</h1>
                         <p className="my-5 display-4">
                             Companies of all sizes and in all industries use Sourcegraph's code intelligence platform to
                             understand, fix, and automate across their entire codebase.
                         </p>
                     </div>
 
-                    <div className="col-lg-5 mt-lg-6 pt-4 mb-6">
-                        <h4 className="font-weight-bold pb-2">See how customers use Sourcegraph to</h4>
+                    <div className="pt-4 mb-6 col-lg-5 mt-lg-6">
+                        <h4 className="pb-2 font-weight-bold">See how customers use Sourcegraph to</h4>
 
                         <div className="list-group">
                             {features.map((feature: { id: string; description: string }) => (
@@ -87,7 +87,7 @@ const UseCases: React.FunctionComponent = () => (
                     centerContent={true}
                     leftColumn={
                         <>
-                            <h2 className="display-3 font-weight-bold mb-3">Improve code security</h2>
+                            <h2 className="mb-3 display-3 font-weight-bold">Improve code security</h2>
                             <h5>Find, fix, and track vulnerable code quickly across your entire codebase.</h5>
                             <p>
                                 You can't fix what you can't find. Remediate vulnerabilities with confidence knowing you
@@ -176,7 +176,7 @@ const UseCases: React.FunctionComponent = () => (
                     }
                     rightColumn={
                         <>
-                            <h2 className="display-3 font-weight-bold mb-3">Accelerate developer onboarding</h2>
+                            <h2 className="mb-3 display-3 font-weight-bold">Accelerate developer onboarding</h2>
                             <h5>
                                 Decrease time to first commit with self-serve onboarding, codebase exploration, and
                                 knowledge sharing.
@@ -233,7 +233,7 @@ const UseCases: React.FunctionComponent = () => (
                     centerContent={true}
                     leftColumn={
                         <>
-                            <h2 className="display-3 font-weight-bold mb-3">Resolve incidents faster</h2>
+                            <h2 className="mb-3 display-3 font-weight-bold">Resolve incidents faster</h2>
                             <h5>Identify the root cause in code and fix the issue everywhere.</h5>
                             <p>
                                 &ldquo;Every minute matters when responding to a business-critical incident. Downtime =
@@ -322,7 +322,7 @@ const UseCases: React.FunctionComponent = () => (
                     }
                     rightColumn={
                         <>
-                            <h2 className="display-3 font-weight-bold mb-3">Streamline code reuse</h2>
+                            <h2 className="mb-3 display-3 font-weight-bold">Streamline code reuse</h2>
                             <h5>Stop wasting time rewriting code.</h5>
                             <p>
                                 With Sourcegraph, you can find existing code libraries for reuse and avoid spending time
@@ -392,7 +392,7 @@ const UseCases: React.FunctionComponent = () => (
                     centerContent={true}
                     leftColumn={
                         <>
-                            <h2 className="display-3 font-weight-bold mb-3">Boost code health</h2>
+                            <h2 className="mb-3 display-3 font-weight-bold">Boost code health</h2>
                             <h5>
                                 Improve code posture with large-scale changes and track code health initiatives towards
                                 completion.

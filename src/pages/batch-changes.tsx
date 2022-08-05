@@ -37,7 +37,7 @@ export const BatchChangesPage: FunctionComponent = () => (
         }
     >
         {/* Overview */}
-        <ContentSection className="py-4 py-md-7 text-center">
+        <ContentSection className="py-4 text-center py-md-7">
             <h1 className="mb-3">Change code everywhere with a single declarative file</h1>
             <div className="row justify-content-center">
                 <p className="col-md-8">
@@ -47,7 +47,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                 </p>
             </div>
             <div className="row">
-                <div className="col-md-6 mt-4">
+                <div className="mt-4 col-md-6">
                     <Figure
                         src="/batch-changes/asking_developers_to_update_repos.svg"
                         alt="Graphic of many developers individually updating repositories, while some are not updating their repositories."
@@ -59,7 +59,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                         centre={true}
                     />
                 </div>
-                <div className="col-md-6 mt-4">
+                <div className="mt-4 col-md-6">
                     <Figure
                         src="/batch-changes/using_batch_changes_to_update_repos.svg"
                         alt="Graphic of a single developer updating a lot of repositories."
@@ -75,7 +75,7 @@ export const BatchChangesPage: FunctionComponent = () => (
         </ContentSection>
 
         {/* Architecture */}
-        <div className="bg-gradient-green-blue py-4 py-md-7">
+        <div className="py-4 bg-gradient-green-blue py-md-7">
             <ContentSection>
                 <div className="row">
                     <div className="col-lg-5">
@@ -165,14 +165,14 @@ export const BatchChangesPage: FunctionComponent = () => (
             <h1 className="mb-5 text-center">How developers are using Batch Changes </h1>
             <Tabs defaultActiveKey="configuration" id="use-cases" className="justify-content-center">
                 <Tab eventKey="configuration" title="Configuration" className="bg-transparent ">
-                    <div className="row mt-5 justify-content-center">
+                    <div className="mt-5 row justify-content-center">
                         <div className="col-lg-8">
                             <p>
                                 Quickly edit every CI, build, and other configuration files to make changes such as
                                 altering steps, migrating versions, or changing base images.
                             </p>
                             <img
-                                className="w-100 h-auto mt-4"
+                                className="h-auto mt-4 w-100"
                                 width="750"
                                 height="400"
                                 src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/update-circle-ci-username.png"
@@ -182,14 +182,14 @@ export const BatchChangesPage: FunctionComponent = () => (
                     </div>
                 </Tab>
                 <Tab eventKey="refactoring" title="Refactoring">
-                    <div className="row mt-5 justify-content-center">
+                    <div className="mt-5 row justify-content-center">
                         <div className="col-lg-8">
                             <p>
                                 Use language-aware tooling of your choice to perform complex refactors like updating an
                                 API and its function calls or replacing libraries entirely.
                             </p>
                             <img
-                                className="w-100 h-auto mt-4"
+                                className="h-auto mt-4 w-100"
                                 width="850"
                                 height="380"
                                 src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/comby-sprintf-to-itoa.png"
@@ -199,14 +199,14 @@ export const BatchChangesPage: FunctionComponent = () => (
                     </div>
                 </Tab>
                 <Tab eventKey="security" title="Security">
-                    <div className="row mt-5 justify-content-center">
+                    <div className="mt-5 row justify-content-center">
                         <div className="col-lg-8">
                             <p>
                                 Refactor code to replace insecure functions, update vulnerable packages, or modify
                                 container configurations across hundreds of repositories.
                             </p>
                             <img
-                                className="w-100 h-auto mt-4"
+                                className="h-auto mt-4 w-100"
                                 width="750"
                                 height="472"
                                 src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/pin-docker-images.png"
@@ -246,7 +246,7 @@ export const BatchChangesPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <div className="border-top container my-md-6 my-5" />
+        <div className="container my-5 border-top my-md-6" />
 
         <ContentSection>
             <TrySourcegraph demoFormURL={batchChangesDemoFormURL} />

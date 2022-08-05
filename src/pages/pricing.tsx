@@ -10,6 +10,7 @@ import {
     PricingPlanProperty,
     Blockquote,
     Features,
+    TrySourcegraph,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -77,13 +78,13 @@ const PricingPage: FunctionComponent = () => (
     >
         <div className="text-dark">
             <div className="mt-2">
-                <ContentSection className="hero-section text-center py-5">
+                <ContentSection className="py-5 text-center hero-section">
                     <h1 className="display-2 font-weight-bold">Sourcegraph Pricing</h1>
-                    <h4 className="font-weight-normal pt-2">Self-hosted code intelligence platform</h4>
+                    <h4 className="pt-2 font-weight-normal">Self-hosted code intelligence platform</h4>
                 </ContentSection>
                 <div className="container">
-                    <div className="row pt-4">
-                        <div className="col-lg-6 mx-auto mb-4">
+                    <div className="pt-4 row">
+                        <div className="mx-auto mb-4 col-lg-6">
                             <PricingPlan
                                 name="Free"
                                 price={<div className="text-center">$0/mo</div>}
@@ -105,7 +106,7 @@ const PricingPage: FunctionComponent = () => (
                             />
                         </div>
 
-                        <div className="col-lg-6 mx-auto mb-4">
+                        <div className="mx-auto mb-4 col-lg-6">
                             <PricingPlan
                                 name="Enterprise"
                                 price={<div className="text-center">Custom pricing</div>}
@@ -146,29 +147,29 @@ const PricingPage: FunctionComponent = () => (
                         </div>
                     </div>
 
-                    <div className="row pt-4">
-                        <div className="col-md-12 mx-auto mb-4">
+                    <div className="pt-4 row">
+                        <div className="mx-auto mb-4 col-md-12">
                             <div className="px-6 card">
                                 <h2 className="my-3 display-2 font-weight-bolder">Team</h2>
 
                                 <div className="row">
-                                    <div className="col-md-6 text-xl mx-auto mb-4 pr-5">
+                                    <div className="pr-5 mx-auto mb-4 text-xl col-md-6">
                                         If you have more than 10 users, you can upgrade to the Team plan. This includes
                                         all of the features of the Free plan, plus:
                                     </div>
-                                    <div className="col-md-6 text-xl mx-auto mb-4 pl-md-6">
+                                    <div className="mx-auto mb-4 text-xl col-md-6 pl-md-6">
                                         Contact us to get started with the Team plan.
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="col-md-6 mx-auto mb-4">
+                                    <div className="mx-auto mb-4 col-md-6">
                                         <ol className="list-group list-group-flush mr-lg-5">
                                             <PricingPlanFeature
                                                 key="team-feature-1"
                                                 info={{ label: 'Up to 25 users', description: '' }}
                                                 value={true}
                                                 tag="li"
-                                                className="list-group-item bg-transparent border-0 px-0"
+                                                className="px-0 bg-transparent border-0 list-group-item"
                                             />
                                             <PricingPlanFeature
                                                 key="team-feature-2"
@@ -179,20 +180,20 @@ const PricingPage: FunctionComponent = () => (
                                                 }}
                                                 value={true}
                                                 tag="li"
-                                                className="list-group-item bg-transparent border-0 px-0"
+                                                className="px-0 bg-transparent border-0 list-group-item"
                                             />
                                             <PricingPlanFeature
                                                 key="team-feature-3"
                                                 info={{ label: 'Email support', description: '' }}
                                                 value={true}
                                                 tag="li"
-                                                className="list-group-item bg-transparent border-0 px-0"
+                                                className="px-0 bg-transparent border-0 list-group-item"
                                             />
                                         </ol>
                                     </div>
-                                    <div className="col-md-6 mx-auto mb-4 pl-6">
+                                    <div className="pl-6 mx-auto mb-4 col-md-6">
                                         <a
-                                            className="btn btn-outline-primary col-lg-7 col-10 mx-auto my-0"
+                                            className="mx-auto my-0 btn btn-outline-primary col-lg-7 col-10"
                                             href="https://info.sourcegraph.com/team-pricing"
                                             title="Contact us"
                                             data-button-style={buttonStyle.outline}
@@ -249,31 +250,7 @@ const PricingPage: FunctionComponent = () => (
                 </div>
             </div>
 
-            <ContentSection className="my-6">
-                <div className="row">
-                    <div className="col-md-6 pr-md-5">
-                        <h3 className="display-4 font-weight-bold">Try Sourcegraph for free today</h3>
-                        <p>
-                            You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your
-                            code stays local and secure).
-                        </p>
-                    </div>
-                    <div className="col-md-6 pt-3 align-self-center text-center">
-                        <Link href="/get-started/self-hosted" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="btn btn-primary mx-2 mb-3"
-                                title="Try Sourcegraph now"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.trySourcegraph}
-                                data-button-type="cta"
-                            >
-                                Try Sourcegraph now
-                            </a>
-                        </Link>
-                    </div>
-                </div>
-            </ContentSection>
+            <TrySourcegraph />
         </div>
     </Layout>
 )

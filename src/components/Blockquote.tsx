@@ -37,7 +37,7 @@ export const Blockquote: FunctionComponent<{
 
         if (border) {
             if (inline) {
-                return `tw-py-sm tw-border-l-solid tw-border-l-3 tw-border-l-${color}`
+                return `tw-border-l-solid tw-border-l-3 tw-border-l-${color}`
             }
             // Blockquotes in column: Border flips to horizontal for mobile
             if (isMdOrDown) {
@@ -103,7 +103,7 @@ export const Blockquote: FunctionComponent<{
                         data-button-type="cta"
                     >
                         {link.text}
-                        <ArrowRightIcon className="ml-1" />
+                        <ArrowRightIcon className="ml-1 tw-inline" />
                     </a>
                 ) : (
                     <Link href={link.href} passHref={true}>
@@ -116,7 +116,7 @@ export const Blockquote: FunctionComponent<{
                             data-button-type="cta"
                         >
                             <p className="tw-font-semibold tw-mb-0">{link.text}</p>
-                            <ArrowRightIcon className="tw-ml-1" />
+                            <ArrowRightIcon className="tw-ml-1 tw-inline" />
                         </a>
                     </Link>
                 ))}
