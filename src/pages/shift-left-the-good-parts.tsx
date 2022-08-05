@@ -94,7 +94,6 @@ const ShiftLeftPage: FunctionComponent = () => (
                 }
                 rightColumn={
                     <Video
-                        host="self"
                         source={{
                             mp4: 'blog/shift-left/01-code-reuse',
                             webm: 'blog/shift-left/01-code-reuse',
@@ -113,7 +112,6 @@ const ShiftLeftPage: FunctionComponent = () => (
                 reverseOnMobile={true}
                 leftColumn={
                     <Video
-                        host="self"
                         source={{
                             mp4: 'blog/shift-left/03-defs-and-refs',
                             webm: 'blog/shift-left/03-defs-and-refs',
@@ -178,7 +176,6 @@ const ShiftLeftPage: FunctionComponent = () => (
                 }
                 rightColumn={
                     <Video
-                        host="self"
                         source={{
                             mp4: 'blog/shift-left/07-test-coverage',
                             webm: 'blog/shift-left/07-test-coverage',
@@ -197,7 +194,6 @@ const ShiftLeftPage: FunctionComponent = () => (
                 reverseOnMobile={true}
                 leftColumn={
                     <Video
-                        host="self"
                         source={{
                             mp4: 'blog/shift-left/09-code-monitoring',
                             webm: 'blog/shift-left/09-code-monitoring',
@@ -271,7 +267,6 @@ const ShiftLeftPage: FunctionComponent = () => (
                 }
                 rightColumn={
                     <Video
-                        host="self"
                         source={{
                             mp4: 'blog/shift-left/10-code-reviews',
                             webm: 'blog/shift-left/10-code-reviews',
@@ -327,7 +322,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             </ContentSection>
         </div>
 
-        <ContentSection color="white" className="container max-w-900 py-7 px-0">
+        <ContentSection color="white" className="container py-7 px-0">
             <div className="col-lg-6">
                 <h2 className="mb-5 font-weight-bold">Related resources</h2>
             </div>
