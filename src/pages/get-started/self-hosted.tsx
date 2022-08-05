@@ -31,7 +31,7 @@ export const SelfHostedPage: FunctionComponent = () => {
             heroAndHeaderClassName={styles.hero}
             hideGetStartedButton={true}
         >
-            <div className={`${styles.root} bg-gradient-blue-violet-mist py-5`}>
+            <div className={`${styles.root} sg-bg-gradient-saturn py-5`}>
                 <div className="row container-xl mx-auto py-5">
                     <div className="col-lg-6 pr-lg-7">
                         <div>

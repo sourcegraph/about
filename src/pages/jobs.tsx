@@ -54,9 +54,9 @@ const CareersPage: FunctionComponent = () => {
     ]
     const cultureItems = [
         {
-            className: 'bg-gradient-blue-violet-mist',
+            className: 'sg-bg-gradient-saturn',
             text: (
-                <h2 className="col-lg-6 display-3 font-weight-bolder my-auto">
+                <h2 className="my-auto col-lg-6 display-3 font-weight-bolder">
                     Just because we're remote doesn't mean we're apart <br />
                     #life-at-sourcegraph
                 </h2>
@@ -70,18 +70,18 @@ const CareersPage: FunctionComponent = () => {
             ),
         },
         {
-            className: 'bg-gradient-violet-yellow-mist',
+            className: 'sg-bg-gradient-mars',
             text: (
-                <h2 className="col-lg-6 display-3 font-weight-bolder my-auto">
+                <h2 className="my-auto col-lg-6 display-3 font-weight-bolder">
                     We're moving <i>fast</i> to create a world in which everyone can code
                 </h2>
             ),
             img: <img className="w-100 max-w-450" src="/careers/culture2.png" alt="Group riding go karts" />,
         },
         {
-            className: 'bg-gradient-yellow-green-mist',
+            className: 'sg-bg-gradient-venus',
             text: (
-                <h2 className="col-lg-6 display-3 font-weight-bolder my-auto">
+                <h2 className="my-auto col-lg-6 display-3 font-weight-bolder">
                     Work whenever and wherever <br />
                     #life-is-beachy
                 </h2>
@@ -89,9 +89,9 @@ const CareersPage: FunctionComponent = () => {
             img: <img className="w-100 max-w-450" src="/careers/culture3.png" alt="Sourcegrapher on a beach" />,
         },
         {
-            className: 'bg-gradient-green-red-mist',
+            className: 'sg-bg-gradient-saturn',
             text: (
-                <h2 className="col-lg-6 display-3 font-weight-bolder my-auto">
+                <h2 className="my-auto col-lg-6 display-3 font-weight-bolder">
                     Our pets are Sourcegraph Teammates, too <br />
                     #pets-of-sourcegraph
                 </h2>
@@ -105,9 +105,9 @@ const CareersPage: FunctionComponent = () => {
             ),
         },
         {
-            className: 'bg-gradient-red-plum-mist',
+            className: 'sg-bg-gradient-mars',
             text: (
-                <h2 className="col-lg-6 display-3 font-weight-bolder my-auto">
+                <h2 className="my-auto col-lg-6 display-3 font-weight-bolder">
                     Creating the next generation of Sourcegraph coders, one baby at a time
                 </h2>
             ),
@@ -195,7 +195,7 @@ const CareersPage: FunctionComponent = () => {
                         </div>
                     </div>
                     <a
-                        className="btn btn-primary mt-4"
+                        className="mt-4 btn btn-primary"
                         href="https://grnh.se/c685479c4us"
                         title="Explore our jobs"
                         target="_blank"
@@ -223,16 +223,16 @@ const CareersPage: FunctionComponent = () => {
                 </div>
 
                 <div className="benefits">
-                    <div className="d-flex flex-wrap">
+                    <div className="flex-wrap d-flex">
                         <div className="m-auto">
-                            <h2 className="col-lg-10 display-2 font-weight-bold text-center mx-auto">
+                            <h2 className="mx-auto text-center col-lg-10 display-2 font-weight-bold">
                                 Happy, healthy, and always in the flow.
                             </h2>
-                            <p className="col-lg-6 text-center mx-auto">
+                            <p className="mx-auto text-center col-lg-6">
                                 Our Teammates are our most valuable resource. That's why we provide total rewards that
                                 are highly competitive and allow you to thrive both personally and professionally.
                             </p>
-                            <p className="text-center mt-3">
+                            <p className="mt-3 text-center">
                                 Learn more in{' '}
                                 <a
                                     target="_blank"
@@ -250,53 +250,53 @@ const CareersPage: FunctionComponent = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="d-flex flex-wrap benefits-row">
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/Remote.svg" alt="Map pin icon" />
+                    <div className="flex-wrap d-flex benefits-row">
+                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
+                            <img className="mx-auto my-2 icon" src="/careers/Remote.svg" alt="Map pin icon" />
                             <h3 className="my-2">Work fully remote</h3>
                             <p>Anywhere and at anytime</p>
                         </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/PTO.svg" alt="Sun icon" />
+                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
+                            <img className="mx-auto my-2 icon" src="/careers/PTO.svg" alt="Sun icon" />
                             <h3 className="my-2">Unlimited PTO</h3>
                             <p>...with a 30-day minimum</p>
                         </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/Travel.svg" alt="Airplane icon" />
+                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
+                            <img className="mx-auto my-2 icon" src="/careers/Travel.svg" alt="Airplane icon" />
                             <h3 className="my-2">Generous travel budgets</h3>
                             <p>Meet your team across the globe</p>
                         </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/Salary.svg" alt="Dollar bill icon" />
+                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
+                            <img className="mx-auto my-2 icon" src="/careers/Salary.svg" alt="Dollar bill icon" />
                             <h3 className="my-2">Competitive pay + equity</h3>
                             <p>So you can live your best life</p>
                         </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/Medical.svg" alt="Medical cross icon" />
+                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
+                            <img className="mx-auto my-2 icon" src="/careers/Medical.svg" alt="Medical cross icon" />
                             <h3 className="my-2">Medical, dental, and vision</h3>
                             <p>Got you covered 100% (US only)</p>
                         </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
+                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
                             <img
-                                className="icon my-2 mx-auto"
+                                className="mx-auto my-2 icon"
                                 src="/careers/ProfessionalDevelopment.svg"
                                 alt="Graduation cap icon"
                             />
                             <h3 className="my-2">Professional development</h3>
                             <p>Find your thing and we pay for it</p>
                         </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/OfficeBudget.svg" alt="Headphones icon" />
+                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
+                            <img className="mx-auto my-2 icon" src="/careers/OfficeBudget.svg" alt="Headphones icon" />
                             <h3 className="my-2">Office budget</h3>
                             <p>Create a space where you thrive</p>
                         </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/Wellness.svg" alt="Person jogging icon" />
+                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
+                            <img className="mx-auto my-2 icon" src="/careers/Wellness.svg" alt="Person jogging icon" />
                             <h3 className="my-2">Wellness budget</h3>
                             <p>Take care of yourself on our dime</p>
                         </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center mx-auto">
-                            <img className="icon my-2 mx-auto" src="/careers/FamilyPlanning.svg" alt="Baby icon" />
+                        <div className="mx-auto my-3 text-center benefit col-lg-3 col-md-5">
+                            <img className="mx-auto my-2 icon" src="/careers/FamilyPlanning.svg" alt="Baby icon" />
                             <h3 className="my-2">Family Planning benefits</h3>
                             <p>$25K, because family comes first</p>
                         </div>
@@ -306,7 +306,7 @@ const CareersPage: FunctionComponent = () => {
                 <Carousel controls={false}>
                     {cultureItems.map(item => (
                         <Carousel.Item className={item.className} key={item.className}>
-                            <div className="row px-md-8 px-5 py-7">
+                            <div className="px-5 row px-md-8 py-7">
                                 {item.text}
                                 <div className="col-lg-6 h-600 d-flex align-items-center">{item.img}</div>
                             </div>
@@ -326,7 +326,7 @@ const CareersPage: FunctionComponent = () => {
                                 <div className="d-flex flex-column align-items-center min-h-550 py-7">
                                     <h5 className="display-5 font-weight-bold text-uppercase">We value:</h5>
                                     <h2 className="display-3 font-weight-bold">{item.value}</h2>
-                                    <p className="col-8 display-5 text-center">{item.description}</p>
+                                    <p className="text-center col-8 display-5">{item.description}</p>
                                     {item.img}
                                 </div>
                             </Carousel.Item>
@@ -334,7 +334,7 @@ const CareersPage: FunctionComponent = () => {
                     </Carousel>
                 </ContentSection>
 
-                <div className="bg-gradient-saturn-saturated">
+                <div className="sg-bg-gradient-saturn">
                     <ContentSection>
                         <QuoteCarousel items={glassdoorReviewItems} />
                     </ContentSection>
@@ -352,7 +352,7 @@ const CareersPage: FunctionComponent = () => {
                             </div>
                         </div>
                         <a
-                            className="btn btn-primary my-2"
+                            className="my-2 btn btn-primary"
                             href="https://grnh.se/c685479c4us"
                             title="Explore our jobs"
                             target="_blank"

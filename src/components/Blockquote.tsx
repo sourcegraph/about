@@ -37,19 +37,19 @@ export const Blockquote: FunctionComponent<{
 
         if (border) {
             if (inline) {
-                return `tw-border-l-solid tw-border-l-3 tw-border-l-${color}`
+                return `tw-my-8 tw-border-solid tw-border-l-3 tw-border-l-${color}`
             }
             // Blockquotes in column: Border flips to horizontal for mobile
             if (isMdOrDown) {
-                return `tw-pt-lg tw-pb-0 tw-mb-0 tw-border-t-solid tw-border-l-0 tw-border-t-3 tw-border-t-${color}`
+                return `tw-pt-lg tw-pb-0 tw-mb-0 tw-border-solid tw-border-l-0 tw-border-t-3 tw-border-t-${color}`
             }
-            return `tw-border-l-solid tw-border-l-3 tw-border-l-${color}`
+            return `tw-border-solid tw-border-l-3 tw-border-l-${color}`
         }
         return 'tw-text-center'
     }
 
     return (
-        <blockquote className={classNames('tw-px-sm', getBorderStyle())}>
+        <blockquote className={classNames('tw-px-sm', )}>
             {headline ? (
                 largeText ? (
                     <h2 className="tw-font-semibold">{headline}</h2>

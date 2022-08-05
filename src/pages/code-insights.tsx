@@ -346,7 +346,7 @@ const CodeInsightsPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <div className="bg-gradient-venus-radial py-7">
+        <div className="sg-bg-gradient-venus py-7">
             <ContentSection className="col-lg-8 max-w-1000">
                 <Blockquote
                     headline="Trusted by engineering teams worldwide"
@@ -438,7 +438,7 @@ const CodeInsightsPage: FunctionComponent = () => (
         </ContentSection>
 
         {/* Use Cases */}
-        <div className="bg-gradient-venus-radial py-4 d-none d-lg-block d-md-block">
+        <div className="sg-bg-gradient-venus py-4 d-none d-lg-block d-md-block">
             <ContentSection className="py-4 py-md-7 h-lg-850 h-md-850">
                 <h2 className="mb-5 display-3 text-center font-weight-bold">Popular Code Insights templates</h2>
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
@@ -487,7 +487,7 @@ const CodeInsightsPage: FunctionComponent = () => (
         </div>
 
         {/* Use Cases Carousel */}
-        <div className="bg-gradient-venus-radial py-4 d-block d-lg-none d-md-none">
+        <div className="sg-bg-gradient-venus py-4 d-block d-lg-none d-md-none">
             <ContentSection className="py-4 py-md-7">
                 <h2 className="mb-5 display-3 font-weight-bold text-center">Popular Code Insights templates</h2>
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">

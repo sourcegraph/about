@@ -72,7 +72,7 @@ export const CodeSearchPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <div className="bg-gradient-venus py-7">
+        <div className="sg-bg-gradient-venus py-7">
             <div className="container">
                 <TwoColumnSection
                     centerContent={true}
@@ -201,7 +201,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                 <h2 className="mb-3">Get started with Code Search</h2>
                 <p>Connect your code hosts and experience universal code search.</p>
 
-                <div className="d-flex flex-column flex-sm-row mt-2 col-12 w-100">
+                <div className="mt-2 d-flex flex-column flex-sm-row col-12 w-100">
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
@@ -209,7 +209,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
-                            className="btn btn-primary mb-3 mb-sm-0 ml-sm-auto"
+                            className="mb-3 btn btn-primary mb-sm-0 ml-sm-auto"
                         >
                             Request a demo
                         </a>
@@ -221,7 +221,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                             data-button-style={buttonStyle.outline}
                             data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
-                            className="btn btn-outline-primary ml-0 ml-sm-3 mr-sm-auto"
+                            className="ml-0 btn btn-outline-primary ml-sm-3 mr-sm-auto"
                         >
                             Try Sourcegraph now
                         </a>
@@ -232,7 +232,7 @@ export const CodeSearchPage: FunctionComponent = () => (
 
         <ContentSection color="white" className="py-7">
             <div className="col-lg-6">
-                <h2 className="font-weight-bold mb-6">Learn more</h2>
+                <h2 className="mb-6 font-weight-bold">Learn more</h2>
             </div>
 
             {[

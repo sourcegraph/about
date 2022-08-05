@@ -15,25 +15,13 @@
 
 // Get started page index specific
 .getStartedPage {
-    background: linear-gradient(90deg, $light-blue 0%, $violet-mist 50%, $light-blue 50%, $light-green 100%);
+    @media only screen and (min-width: 1024px) {
+        background: linear-gradient(90deg, $light-blue 0%, $violet-mist 50%, $light-blue 50%, $light-green 100%);
+    }
 
     section h1 {
         font-size: 2.25rem;
         line-height: 3.25rem;
-    }
-
-    // Self hosted section
-    section:nth-of-type(1) {
-        @media only screen and (max-width: 990px) {
-            @include GradientBlueVioletMist;
-        }
-    }
-
-    // Cloud section
-    section:nth-of-type(2) {
-        @media only screen and (max-width: 990px) {
-            @include GradientBlueGreen;
-        }
     }
 }
 
@@ -55,7 +43,7 @@
 
 // For layout/copy alignment on desktop
 .sgCloudHeading {
-    @media only screen and (min-width: 990px) {
+    @media only screen and (min-width: 1024px) {
         margin-bottom: 51px;
     }
 }

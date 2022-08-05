@@ -32,7 +32,7 @@ export const CloudPage: FunctionComponent = () => {
             heroAndHeaderClassName={styles.hero}
             hideGetStartedButton={true}
         >
-            <div className={`${styles.root} bg-gradient-blue-green py-5`}>
+            <div className={`${styles.root} sg-bg-gradient-venus py-5`}>
                 <div className="py-5 mx-auto row container-xl">
                     <div className="col-lg-6">
                         <div>

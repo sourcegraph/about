@@ -73,7 +73,7 @@ export const BatchChangesPage: FunctionComponent = () => (
         </ContentSection>
 
         {/* Architecture */}
-        <div className="py-4 bg-gradient-green-blue py-md-7">
+        <div className="py-4 sg-bg-gradient-venus py-md-7">
             <ContentSection>
                 <div className="row">
                     <div className="col-lg-5">

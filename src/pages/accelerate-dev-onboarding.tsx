@@ -34,13 +34,13 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                     </div>
                 </div>
 
-                <div className="col-lg-6 mt-4 mt-lg-0">
+                <div className="mt-4 col-lg-6 mt-lg-0">
                     <YouTube title="Accelerate developer onboarding with Sourcegraph" id="DgwvhRW1Cbc" />
                 </div>
             </div>
         </div>
 
-        <div className="bg-gradient-saturn-saturated">
+        <div className="sg-bg-gradient-saturn">
             <div className="container py-7 max-w-650">
                 <Blockquote
                     headline="Learn how Convoy increases the efficiency and confidence of entry level developers"
@@ -59,11 +59,11 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
             <div className="container py-7 max-w-650">
                 <h2 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h2>
 
-                <div className="mt-5 max-w-400 mx-auto">
+                <div className="mx-auto mt-5 max-w-400">
                     <Link href="/demo">
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="btn btn-primary mt-5 d-block d-sm-inline-block"
+                            className="mt-5 btn btn-primary d-block d-sm-inline-block"
                             title="Request a demo"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.bodyDemo}

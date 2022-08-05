@@ -222,7 +222,7 @@ export const CaseStudy: FunctionComponent = () => (
                 </p>
             </ContentSection>
 
-            <div className="bg-gradient-saturn py-7">
+            <div className="sg-bg-gradient-saturn py-7">
                 <ContentSection>
                     <ThreeUpText title="Results" items={threeUpTextItems} />
                 </ContentSection>

@@ -50,7 +50,7 @@ const About: FunctionComponent = () => (
                     every day.
                 </p>
             </ContentSection>
-            <div className="bg-gradient-green-blue mb-5">
+            <div className="sg-bg-gradient-venus mb-5">
                 <ContentSection className="container py-6">
                     <h2>Learn all about Sourcegraph</h2>
                     <p>

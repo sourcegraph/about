@@ -40,7 +40,7 @@ const FixingVulnerabilities: FunctionComponent = () => (
             </div>
         </div>
 
-        <div className="bg-gradient-venus-saturated text-center">
+        <div className="text-center sg-bg-gradient-venus">
             <div className="container py-7 max-w-650">
                 <Blockquote
                     headline="Cloudflare proves to auditors that its code isn't vulnerable"
@@ -57,16 +57,16 @@ const FixingVulnerabilities: FunctionComponent = () => (
             </div>
         </div>
 
-        <div className="text-center container py-7 max-w-650">
+        <div className="container text-center py-7 max-w-650">
             <h2 className="font-weight-bold">
                 Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk.
             </h2>
 
-            <div className="mt-5 max-w-400 mx-auto">
+            <div className="mx-auto mt-5 max-w-400">
                 <Link href="/demo">
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
-                        className="btn btn-primary mt-5 d-block d-sm-inline-block"
+                        className="mt-5 btn btn-primary d-block d-sm-inline-block"
                         title="Request a demo"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.bodyDemo}

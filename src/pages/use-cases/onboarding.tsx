@@ -252,7 +252,7 @@ const UseCasePage: FunctionComponent = () => (
             <ThreeUpText title="Make your codebase accessible for your entire team" items={threeUpTextItems} />
         </ContentSection>
 
-        <div className="bg-gradient-venus-radial">
+        <div className="sg-bg-gradient-venus">
             <ContentSection className="py-7">
                 <TwoColumnSection
                     leftColumn={
@@ -301,7 +301,7 @@ const UseCasePage: FunctionComponent = () => (
             <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
         </ContentSection>
 
-        <div className="py-8 bg-gradient-saturn-saturated">
+        <div className="py-8 sg-bg-gradient-saturn">
             <ContentSection>
                 <div className="d-flex flex-column justify-content-center px-lg-8">
                     <Blockquote

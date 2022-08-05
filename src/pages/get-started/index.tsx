@@ -11,7 +11,7 @@ import styles from './getStarted.module.scss'
 
 export const MostPopularBadge: FunctionComponent = () => (
     <span className={`${styles.mostPopularBadge} badge text-white text-uppercase font-weight-bolder mb-3`}>
-        <img alt="star" src="/Star.svg" className="mr-2" />
+        <img alt="star" src="/Star.svg" className="mr-2 tw-inline" />
         <span>Most Popular</span>
     </span>
 )
@@ -33,7 +33,7 @@ export const GetStartedPage: FunctionComponent = () => {
                 data-button-location={buttonLocation.trySourcegraph}
                 data-button-type="cta"
             >
-                Get started for free <ArrowRightIcon />
+                Get started for free <ArrowRightIcon className="tw-inline" />
             </a>
         </Link>
     )
@@ -59,7 +59,7 @@ export const GetStartedPage: FunctionComponent = () => {
             <div className={`${styles.root} ${styles.getStartedPage}`}>
                 <div className="container-xl">
                     <div className="row">
-                        <section id="sg-self-hosted" className="p-5 col-lg-6">
+                        <section id="sg-self-hosted" className="p-5 col-lg-6 sg-bg-gradient-saturn lg:tw-bg-none">
                             <h1>Sourcegraph Self-Hosted</h1>
 
                             <MostPopularBadge />
@@ -80,7 +80,7 @@ export const GetStartedPage: FunctionComponent = () => {
                             <GetStartedCTA href="/get-started/self-hosted" />
                         </section>
 
-                        <section id="sg-cloud" className="p-5 col-lg-6">
+                        <section id="sg-cloud" className="p-5 col-lg-6 sg-bg-gradient-venus lg:tw-bg-none">
                             <h1 className={styles.sgCloudHeading}>Sourcegraph Cloud</h1>
 
                             <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>

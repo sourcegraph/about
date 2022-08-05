@@ -260,7 +260,7 @@ const CodeReusePage: FunctionComponent = () => (
             <ThreeUpText title="Identify, resolve, and monitor with confidence" items={threeUpTextItems} />
         </ContentSection>
 
-        <div className="bg-gradient-venus-radial">
+        <div className="sg-bg-gradient-venus">
             <ContentSection className="py-7">
                 <TwoColumnSection
                     leftColumn={

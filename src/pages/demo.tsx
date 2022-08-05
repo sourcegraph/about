@@ -9,7 +9,7 @@ const Demo: FunctionComponent = () => (
             description:
                 "From developer onboarding to incident response, see how companies of all sizes use Sourcegraph to solve the industry's most challenging code problems.",
         }}
-        heroAndHeaderClassName="bg-gradient-green-blue"
+        heroAndHeaderClassName="sg-bg-gradient-venus"
         hero={
             <div className="container pt-6 pb-4">
                 <h1 className="font-weight-bolder">Request a demo</h1>

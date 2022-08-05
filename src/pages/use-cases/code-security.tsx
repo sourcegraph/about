@@ -22,7 +22,7 @@ import styles from './useCases.module.scss'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2 className="display-5 font-weight-bold mb-lg-0 mb-5">{header}</h2>
+        <h2 className="mb-5 display-5 font-weight-bold mb-lg-0">{header}</h2>
         {text}
     </>
 )
@@ -264,12 +264,12 @@ const UseCasePage: FunctionComponent = () => (
                         <div className="row">
                             <div className="col-lg-7 my-7">
                                 <BackButton href="/use-cases" text="USE CASES" />
-                                <h1 className="display-2 font-weight-bold mb-4">Improve code security</h1>
-                                <div className="display-4 font-weight-normal mb-5">
+                                <h1 className="mb-4 display-2 font-weight-bold">Improve code security</h1>
+                                <div className="mb-5 display-4 font-weight-normal">
                                     Find, fix, and track vulnerable code across your entire codebase in minutes, not
                                     days
                                 </div>
-                                <div className="flex-column flex-md-row d-md-flex text-center">
+                                <div className="text-center flex-column flex-md-row d-md-flex">
                                     <div className="mb-3 mb-md-0">
                                         <Link href="/demo" passHref={true}>
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -310,7 +310,7 @@ const UseCasePage: FunctionComponent = () => (
             <ThreeUpText title="Identify, resolve, and monitor with confidence" items={threeUpTextItems} />
         </ContentSection>
 
-        <div className="bg-gradient-venus-radial">
+        <div className="sg-bg-gradient-venus">
             <ContentSection className="py-7">
                 <TwoColumnSection
                     leftColumn={
@@ -377,7 +377,7 @@ const UseCasePage: FunctionComponent = () => (
             <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
         </ContentSection>
 
-        <div className="bg-gradient-saturn-saturated">
+        <div className="sg-bg-gradient-saturn">
             <ContentSection>
                 <QuoteCarousel items={quoteCarouselItems} />
             </ContentSection>
@@ -385,15 +385,15 @@ const UseCasePage: FunctionComponent = () => (
 
         <div className="bg-light-gray-3 py-7">
             <ContentSection>
-                <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column text-start text-md-center mx-auto align-items-lg-center">
+                <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-lg-center align-items-left">
+                    <div className="mx-auto mb-5 d-flex flex-column text-start text-md-center align-items-lg-center">
                         <h2 className="display-3 font-weight-bold">Get started with Sourcegraph</h2>
                         <p className="max-w-450">
                             Find, fix, and track vulnerable code quickly across your entire codebase to improve code
                             security.
                         </p>
                     </div>
-                    <div className="text-center col-12 px-0">
+                    <div className="px-0 text-center col-12">
                         <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
@@ -409,7 +409,7 @@ const UseCasePage: FunctionComponent = () => (
                         <Link href="/use-cases" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="d-flex justify-content-center mt-4 font-weight-bold"
+                                className="mt-4 d-flex justify-content-center font-weight-bold"
                                 title="Explore other use cases"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
@@ -427,7 +427,7 @@ const UseCasePage: FunctionComponent = () => (
             </div>
         </div>
 
-        <ContentSection className="py-lg-7 py-5">
+        <ContentSection className="py-5 py-lg-7">
             <div className="row d-flex">
                 <div className="col-lg-6">
                     <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>

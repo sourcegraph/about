@@ -47,7 +47,7 @@
     ul,
     ol {
         list-style: revert;
-        margin: 0 0 0 40px;
+        margin-left: 40px;
     }
 
     /* Code Blocks */
@@ -72,8 +72,20 @@
 @layer utilities {
 
     /* Gradient borders not available in Tailwind */
-    .border-saturn {
+    .sg-border-gradient-saturn {
         border-image-slice: 1 !important;
         border-image-source: linear-gradient(to right, theme(colors.violet.200), theme(colors.blue.200)) !important;
     }
+
+    /* Gradient Backgrounds */
+    .sg-bg-gradient-venus {
+        @apply tw-bg-gradient-to-r tw-from-blue-200/50 tw-to-green-200/50;
+    }
+    .sg-bg-gradient-saturn {
+        @apply tw-bg-gradient-to-r tw-from-violet-200 tw-to-blue-200;
+    }
+    .sg-bg-gradient-mars {
+        @apply tw-bg-gradient-to-r tw-from-vermillion-200/70 tw-to-violet-200/70;
+    }
+
 }
