@@ -36,15 +36,6 @@ We're introducing the ability to run batch changes server-side instead of locall
 
 This feature requires admins to set up executors (much like CI agents), which Sourcegraph will use to offload expensive tasks. Executors can also be used to run [Code Intelligence auto-indexing](#TODO-link-to-section-or-docs). If you're on cloud, one or more executors are available by default on your instance.
 
-### Find and replace that feels like an IDE, across all your code
-
-IDEs can find and replace strings across your local files. Sourcegraph can find and replace strings across _all_ your code. Change boilerplate, fix typos, or update configuration across all your code, without having to write a script or pull your code locally!
-
-Just run a search query, provide a pattern to find and replace, and get a live preview of the diff. If the changes look good, Batch Changes can send them to your team for review, then automatically and safely open changesets across all your repositories, and let you track them until they get merged. 
-
-{/* @malomarrec: this is a placeholder */}
-<img width="1497" alt="placeholder-sourcegraph-find-and-replace" src="https://user-images.githubusercontent.com/25070988/181726971-13007592-c3b9-4f69-a8f3-54e0cf13b7ea.png" />
-
 ### See high-level aggregations of your search results set, to quickly answer questions about usage and structure
 
 Sourcegraph returns an exhaustive list of search results – but sometimes you need to know things like: 
