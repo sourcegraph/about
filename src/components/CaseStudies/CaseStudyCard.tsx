@@ -126,7 +126,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
             {altTitle && <h5 className="font-weight-bold">{altTitle}</h5>}
             <p className="card-text">
                 {title}{' '}
-                <span className="text-nowrap">
+                <div className="tw-mt-2">
                     {url.includes('http') ? (
                         <a
                             href={url}
@@ -139,7 +139,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                             data-button-type="cta"
                         >
                             {linkText}
-                            <ArrowRightIcon size={20} className="ml-1" />
+                            <ArrowRightIcon size={20} className="ml-1 tw-inline" />
                         </a>
                     ) : (
                         <Link href={url} passHref={true}>
@@ -156,7 +156,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                             </a>
                         </Link>
                     )}
-                </span>
+                </div>
             </p>
         </div>
     </div>

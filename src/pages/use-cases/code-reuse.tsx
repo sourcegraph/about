@@ -22,7 +22,7 @@ import styles from './useCases.module.scss'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2 className="display-5 font-weight-bold mb-lg-0 mb-5">{header}</h2>
+        <h2 className="mb-5 display-5 font-weight-bold mb-lg-0">{header}</h2>
         {text}
     </>
 )
@@ -215,12 +215,12 @@ const CodeReusePage: FunctionComponent = () => (
                     <div className="row">
                         <div className="col-md-7 my-7">
                             <BackButton href="/use-cases" text="USE CASES" />
-                            <h1 className="display-2 font-weight-bold mb-4">Find and use code that already exists</h1>
-                            <div className="display-4 font-weight-normal mb-5">
+                            <h1 className="mb-4 display-2 font-weight-bold">Find and use code that already exists</h1>
+                            <div className="mb-5 display-4 font-weight-normal">
                                 Identify existing code libraries for reuse and use innersourcing to avoid spending time
                                 on problems a teammate already solved.
                             </div>
-                            <div className="flex-column flex-md-row d-md-flex text-center">
+                            <div className="text-center flex-column flex-md-row d-md-flex">
                                 <div className="mb-3 mb-md-0">
                                     <Link href="/demo" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -294,7 +294,6 @@ const CodeReusePage: FunctionComponent = () => (
                             consistency."
                             author="Joseph Majesky, Software Engineer at FactSet"
                             inline={false}
-                            borderColor="vermillion-400"
                             logo={{
                                 src: '/external-logos/factset-logo.svg',
                                 alt: 'Factset',
@@ -315,15 +314,15 @@ const CodeReusePage: FunctionComponent = () => (
 
         <div className="bg-light-gray-3 py-7">
             <ContentSection>
-                <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column text-start text-md-center max-w-600 mx-auto">
+                <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-lg-center align-items-left">
+                    <div className="mx-auto mb-5 d-flex flex-column text-start text-md-center max-w-600">
                         <h2 className="display-3 font-weight-bold">Get started with Sourcegraph</h2>
                         <p>
                             Make it easier to discover trustworthy code for reuse so your teams can spend more time
                             solving new problems and less time rewriting code.
                         </p>
                     </div>
-                    <div className="text-center col-12 px-0">
+                    <div className="px-0 text-center col-12">
                         <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
@@ -339,7 +338,7 @@ const CodeReusePage: FunctionComponent = () => (
                         <Link href="/use-cases" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="d-flex justify-content-center mt-4 font-weight-bold"
+                                className="mt-4 d-flex justify-content-center font-weight-bold"
                                 title="Explore other use cases"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
@@ -357,7 +356,7 @@ const CodeReusePage: FunctionComponent = () => (
             </div>
         </div>
 
-        <ContentSection className="py-lg-7 py-5">
+        <ContentSection className="py-5 py-lg-7">
             <div className="row d-flex">
                 <div className="col-lg-6">
                     <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>
@@ -370,7 +369,7 @@ const CodeReusePage: FunctionComponent = () => (
 
         <ContentSection>
             <div className="text-center">
-                <h2 className="display-3 font-weight-bold mb-6">Make the most of your existing code.</h2>
+                <h2 className="mb-6 display-3 font-weight-bold">Make the most of your existing code.</h2>
                 <Link href="/get-started/self-hosted" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a

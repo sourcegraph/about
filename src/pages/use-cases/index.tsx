@@ -142,7 +142,6 @@ const UseCases: React.FunctionComponent = () => (
                     rightColumn={
                         <Blockquote
                             inline={false}
-                            borderColor="vermillion-300"
                             quote="[Sourcegraph] is the best way to prove we're not vulnerable to a particular CVE, if and when we get asked by an auditor."
                             author="David Haynes, Security Engineer at Cloudflare"
                             logo={{
@@ -164,7 +163,7 @@ const UseCases: React.FunctionComponent = () => (
                     leftColumn={
                         <Blockquote
                             inline={false}
-                            borderColor="vermillion-300"
+                            reverseBorder={true}
                             quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
                             author="Owen Kim, Senior Software Engineer, Convoy"
                             logo={{
@@ -285,7 +284,6 @@ const UseCases: React.FunctionComponent = () => (
                     rightColumn={
                         <Blockquote
                             inline={false}
-                            borderColor="vermillion-300"
                             quote="Sourcegraph's search gave us confidence because we knew we wouldn't overlook anything: Sourcegraph returns all search results, it doesn't drop or elide them."
                             author="Simon Law, Staff Software Engineer, Quantcast"
                             logo={{
@@ -306,8 +304,8 @@ const UseCases: React.FunctionComponent = () => (
                     reverseOnMobile={true}
                     leftColumn={
                         <Blockquote
+                            reverseBorder={true}
                             inline={false}
-                            borderColor="vermillion-300"
                             quote="If I'm developing code for a library that might draw charts, for example, we
                             don't want 30 different ways to draw a chart at FactSet. With Sourcegraph, I can search
                             the code to find other chart examples, and simply copy the code. This saves us time and
@@ -442,7 +440,6 @@ const UseCases: React.FunctionComponent = () => (
                     rightColumn={
                         <Blockquote
                             inline={false}
-                            borderColor="vermillion-300"
                             quote="With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove unused attributes that lived in different repositories, ultimately simplifying our APIs and speeding up developer iteration time."
                             author="Justin Phillips, Software Engineer, Lyft"
                             logo={{

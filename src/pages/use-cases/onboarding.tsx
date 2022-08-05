@@ -286,7 +286,6 @@ const UseCasePage: FunctionComponent = () => (
                             quote="Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues. This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked."
                             author="Bjørn Hal Sørensen, Web Architect at Lunar"
                             inline={false}
-                            borderColor="vermillion-400"
                             logo={{
                                 src: '/external-logos/lunar.svg',
                                 alt: 'Lunar',

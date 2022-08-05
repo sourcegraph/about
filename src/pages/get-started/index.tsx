@@ -10,7 +10,9 @@ import { useQueryString } from '@hooks'
 import styles from './getStarted.module.scss'
 
 export const MostPopularBadge: FunctionComponent = () => (
-    <span className={`${styles.mostPopularBadge} tw-bg-violet-400 badge text-white text-uppercase font-weight-bolder mb-3`}>
+    <span
+        className={`${styles.mostPopularBadge} tw-bg-violet-400 badge text-white text-uppercase font-weight-bolder mb-3`}
+    >
         <img alt="star" src="/Star.svg" className="mr-2 tw-inline" />
         <span>Most Popular</span>
     </span>

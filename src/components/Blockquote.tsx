@@ -26,30 +26,32 @@ export const Blockquote: FunctionComponent<{
     headline?: string
     largeText?: boolean
     border?: boolean
-    borderColor?: string
+    reverseBorder?: boolean
     inline?: boolean // inline vs. col layout
-}> = ({ quote, author, logo, link, headline, largeText = false, border = true, borderColor, inline = true }) => {
+}> = ({ quote, author, logo, link, headline, largeText = false, border = true, reverseBorder = false, inline = true }) => {
     const windowWidth = useWindowWidth()
     const isMdOrDown = windowWidth < breakpoints.lg
 
     const getBorderStyle = (): string => {
-        const color: string = borderColor || 'violet-400'
+        const borderColor = reverseBorder ? 'tw-border-r-violet-400' : 'tw-border-l-violet-400'
+        const borderLocation = reverseBorder ? 'tw-border-r-3' : 'tw-border-l-3'
+        const borderNone = reverseBorder ? 'tw-border-r-0' : 'tw-border-l-0'
 
         if (border) {
             if (inline) {
-                return `tw-my-8 tw-border-solid tw-border-l-3 tw-border-l-${color}`
+                return `tw-my-8 tw-border-solid ${borderLocation} ${borderColor}`
             }
             // Blockquotes in column: Border flips to horizontal for mobile
             if (isMdOrDown) {
-                return `tw-pt-lg tw-pb-0 tw-mb-0 tw-border-solid tw-border-l-0 tw-border-t-3 tw-border-t-${color}`
+                return `tw-pt-lg tw-pb-0 tw-mb-0 tw-border-solid ${borderNone} tw-border-t-3 tw-border-t-violet-400`
             }
-            return `tw-border-solid tw-border-l-3 tw-border-l-${color}`
+            return `tw-border-solid ${borderLocation} ${borderColor}`
         }
         return 'tw-text-center'
     }
 
     return (
-        <blockquote className={classNames('tw-px-sm', )}>
+        <blockquote className={classNames('tw-px-sm', getBorderStyle())}>
             {headline ? (
                 largeText ? (
                     <h2 className="tw-font-semibold">{headline}</h2>
