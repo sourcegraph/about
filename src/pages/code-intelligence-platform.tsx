@@ -15,11 +15,7 @@ import {
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
-const CarouselItem: FunctionComponent<{ icon: string; header: string; text: string }> = ({
-    icon,
-    header,
-    text,
-}) => (
+const CarouselItem: FunctionComponent<{ icon: string; header: string; text: string }> = ({ icon, header, text }) => (
     <>
         <div className="bg-violet-1 rounded-circle text-center max-w-50 mb-3">
             <Icon path={icon} size={2} className="text-vivid-violet p-2" />
@@ -46,7 +42,7 @@ const items = [
         subtitle: 'Trustworthy answers that help your team move fast',
         text: (
             <CarouselItem
-                icon as string={mdiClipboardCheck}
+                icon={mdiClipboardCheck as string}
                 header="Accurate Results"
                 text="Exhaustive and relevant search results are returned in a fraction of a second with a variety of information, including repositories, files, diffs, and commits. When your development teams are stuck, they’re empowered to find answers on their own through robust search and living documentation with interactive code snippets that are always up-to-date."
             />
