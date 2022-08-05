@@ -26,7 +26,7 @@ export const Tabs: FunctionComponent<Tabs> = ({ tabs }) => {
                         tabIndex={0}
                         className={classNames(
                             'tw-border-b-3 tw-border-solid tw-border-transparent tw-px-4 tw-py-2 tw-cursor-pointer tw-text-lg tw-font-semibold tw-bg-gray-100',
-                            {'tw-border-b-violet-400 tw-bg-transparent': currentTab === index}
+                            { 'tw-border-b-violet-400 tw-bg-transparent': currentTab === index }
                         )}
                     >
                         {tab.title}
@@ -40,7 +40,7 @@ export const Tabs: FunctionComponent<Tabs> = ({ tabs }) => {
                         key={tab.title}
                         className={classNames({
                             'tw-block': currentTab === index,
-                            'tw-hidden': currentTab !== index
+                            'tw-hidden': currentTab !== index,
                         })}
                     >
                         {tab.content}

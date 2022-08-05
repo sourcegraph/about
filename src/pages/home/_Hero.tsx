@@ -44,8 +44,10 @@ const Hero: FunctionComponent = () => {
 
             <div className="mx-auto text-center max-w-750">
                 <h1 className={classNames(styles.heading, 'font-weight-bold')}>
-                    <span className="mb-2 tw-text-transparent d-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">{headline}</span> across
-                    your entire codebase
+                    <span className="mb-2 tw-text-transparent d-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">
+                        {headline}
+                    </span>{' '}
+                    across your entire codebase
                 </h1>
                 <p className="mx-auto my-5 font-weight-bold max-w-700">
                     Understand, fix, and automate across your codebase with Sourcegraph's code intelligence platform

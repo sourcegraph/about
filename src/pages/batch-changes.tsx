@@ -169,8 +169,8 @@ export const BatchChangesPage: FunctionComponent = () => (
                             <div className="mt-5 row justify-content-center">
                                 <div className="col-lg-8">
                                     <p>
-                                        Quickly edit every CI, build, and other configuration files to make changes such as
-                                        altering steps, migrating versions, or changing base images.
+                                        Quickly edit every CI, build, and other configuration files to make changes such
+                                        as altering steps, migrating versions, or changing base images.
                                     </p>
                                     <img
                                         className="tw-mt-6 tw-h-auto tw-w-full"
@@ -181,7 +181,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                                     />
                                 </div>
                             </div>
-                        )
+                        ),
                     },
                     {
                         title: 'Refactoring',
@@ -189,8 +189,8 @@ export const BatchChangesPage: FunctionComponent = () => (
                             <div className="mt-5 row justify-content-center">
                                 <div className="col-lg-8">
                                     <p>
-                                        Use language-aware tooling of your choice to perform complex refactors like updating an
-                                        API and its function calls or replacing libraries entirely.
+                                        Use language-aware tooling of your choice to perform complex refactors like
+                                        updating an API and its function calls or replacing libraries entirely.
                                     </p>
                                     <img
                                         className="tw-mt-6 tw-h-auto tw-w-full"
@@ -201,7 +201,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                                     />
                                 </div>
                             </div>
-                        )
+                        ),
                     },
                     {
                         title: 'Security',
@@ -209,8 +209,8 @@ export const BatchChangesPage: FunctionComponent = () => (
                             <div className="mt-5 row justify-content-center">
                                 <div className="col-lg-8">
                                     <p>
-                                        Refactor code to replace insecure functions, update vulnerable packages, or modify
-                                        container configurations across hundreds of repositories.
+                                        Refactor code to replace insecure functions, update vulnerable packages, or
+                                        modify container configurations across hundreds of repositories.
                                     </p>
                                     <img
                                         className="tw-mt-6 tw-h-auto tw-w-full"
@@ -221,7 +221,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                                     />
                                 </div>
                             </div>
-                        )
+                        ),
                     },
                 ]}
             />
