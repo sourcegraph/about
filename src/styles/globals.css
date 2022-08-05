@@ -87,5 +87,13 @@
     .sg-bg-gradient-mars {
         @apply tw-bg-gradient-to-r tw-from-vermillion-200/70 tw-to-violet-200/70;
     }
-
+    .sg-bg-gradient-aquamarine {
+        @apply tw-bg-gradient-to-r tw-from-blue-300 tw-to-blurple-400;
+    }
+    .sg-bg-gradient-infrared {
+        @apply tw-bg-gradient-to-r tw-from-violet-400 tw-to-vermillion-300;
+    }
+    .sg-bg-gradient-aurora {
+        @apply tw-bg-gradient-to-r tw-from-blue-300 tw-to-violet-400;
+    }
 }
