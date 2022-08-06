@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
 import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
@@ -11,112 +12,135 @@ interface Props {
     className?: string
 }
 
-const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
-    <footer className={`${minimal ? '' : 'pt-6 pb-2'} ${className || ''}`}>
-        <div className="container-xl">
-            {!minimal && (
-                <div className="row footer__nav-sections">
-                    <div className="mb-5 col-12 col-lg-3">
-                        <Link href="/" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="ml-1 row footer__logo"
-                                title="Sourcegraph - Universal code search"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.footer}
-                                data-button-type="cta"
-                            >
-                                <span role="img" aria-label="Sourcegraph - Universal code search">
-                                    {' '}
-                                </span>
-                            </a>
-                        </Link>
+const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
+    const isDarkNav = className?.includes('navbar-dark')
 
-                        <ul className="mx-0 mt-1 nav footer__social">
-                            {socialLinks.items.map(item => (
-                                <li className="nav-item" key={item.title}>
+    return (
+        <footer className={classNames(className, { 'tw-pt-16 tw-pb-2': !minimal, 'tw-text-white': isDarkNav })}>
+            <div className="tw-max-w-screen-xl tw-mx-auto tw-px-4">
+                {!minimal && (
+                    <div className="tw-mb-8 tw-grid tw-grid-cols-6 md:tw-grid-cols-5">
+                        <div className="tw-col-span-5 md:tw-col-span-2">
+                            <Link href="/" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    title="Sourcegraph - Universal code search"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.footer}
+                                    data-button-type="cta"
+                                >
+                                    <img
+                                        src={isDarkNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
+                                        alt="Sourcegraph - Universal code search"
+                                        className="tw-max-w-[200px] tw-max-h-[40px] tw-w-full"
+                                        draggable={false}
+                                    />
+                                </a>
+                            </Link>
+
+                            <ul className="tw-mx-0 tw-mt-3 tw-list-none tw-flex">
+                                {socialLinks.items.map(item => (
+                                    <li className="tw-mr-3" key={item.title}>
+                                        <a
+                                            href={item.href}
+                                            target="_blank"
+                                            rel="nofollow noreferrer"
+                                            aria-label={item.title}
+                                            title={item.title}
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.footer}
+                                            data-button-type="cta"
+                                            className={classNames('tw-mr-3', {
+                                                'tw-text-gray-300 hover:tw-text-white': isDarkNav,
+                                                'tw-text-gray-400 hover:tw-text-black': !isDarkNav,
+                                            })}
+                                        >
+                                            {item.icon}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {footerLinks.map(section => (
+                            <div
+                                className="tw-mb-3 lg:tw-mb-0 tw-col-span-6 sm:tw-col-span-2 md:tw-col-span-1"
+                                key={section.section}
+                            >
+                                <h3 className="tw-text-lg tw-font-semibold">{section.section}</h3>
+                                <ul className="tw-ml-0 tw-list-none">
+                                    {section.items.map(item => (
+                                        <li className="tw-mb-2 tw-text-sm" key={item.title}>
+                                            {item.href.includes('http') ? (
+                                                <a
+                                                    href={item.href}
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                    title={item.title}
+                                                    data-button-style={buttonStyle.text}
+                                                    data-button-location={buttonLocation.footer}
+                                                    data-button-type="cta"
+                                                    className={classNames('tw-font-medium', {
+                                                        'tw-text-gray-300': isDarkNav,
+                                                        'tw-text-gray-500': !isDarkNav,
+                                                    })}
+                                                >
+                                                    {item.title}
+                                                </a>
+                                            ) : (
+                                                <Link href={item.href} passHref={true}>
+                                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                                    <a
+                                                        title={item.title}
+                                                        data-button-style={buttonStyle.text}
+                                                        data-button-location={buttonLocation.footer}
+                                                        data-button-type="cta"
+                                                        className={classNames('tw-font-medium', {
+                                                            'tw-text-gray-300': isDarkNav,
+                                                            'tw-text-gray-500': !isDarkNav,
+                                                        })}
+                                                    >
+                                                        {item.title}
+                                                    </a>
+                                                </Link>
+                                            )}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                )}
+
+                <div className={classNames('tw-text-sm', { 'tw-py-4': minimal, 'tw-pt-6 tw-pb-2': !minimal })}>
+                    <ul className="tw-ml-0 tw-list-none tw-flex">
+                        <li className="tw-mr-4">&copy; {new Date().getFullYear()} Sourcegraph</li>
+                        <li className="tw-mr-4">-</li>
+
+                        {postscriptLinks.items.map(item => (
+                            <li key={item.title}>
+                                <Link key={item.title} href={item.href} passHref={true}>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
-                                        href={item.href}
-                                        target="_blank"
-                                        rel="nofollow noreferrer"
-                                        aria-label={item.title}
+                                        className={classNames('tw-p-0 tw-mr-4', {
+                                            'tw-text-gray-300': isDarkNav,
+                                            'tw-text-gray-500': !isDarkNav,
+                                        })}
                                         title={item.title}
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.footer}
                                         data-button-type="cta"
                                     >
-                                        {item.icon}
+                                        {item.title}
                                     </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {footerLinks.map(section => (
-                        <div className="mb-3 col-sm-6 col-md-3 col-lg-2" key={section.section}>
-                            <h3 className="tw-text-lg footer__nav-header font-weight-bold">{section.section}</h3>
-                            <ul className="mx-0 nav flex-column">
-                                {section.items.map(item => (
-                                    <li className="nav-item" key={item.title}>
-                                        {item.href.includes('http') ? (
-                                            <a
-                                                href={item.href}
-                                                target="_blank"
-                                                rel="noreferrer"
-                                                title={item.title}
-                                                data-button-style={buttonStyle.text}
-                                                data-button-location={buttonLocation.footer}
-                                                data-button-type="cta"
-                                            >
-                                                {item.title}
-                                            </a>
-                                        ) : (
-                                            <Link href={item.href} passHref={true}>
-                                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                                <a
-                                                    title={item.title}
-                                                    data-button-style={buttonStyle.text}
-                                                    data-button-location={buttonLocation.footer}
-                                                    data-button-type="cta"
-                                                >
-                                                    {item.title}
-                                                </a>
-                                            </Link>
-                                        )}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
-            )}
-
-            <div
-                className={`footer__postscript d-flex justify-content-between ${minimal ? 'py-3' : 'pt-4 pb-2'} small`}
-            >
-                <ul className="nav">
-                    <li className="mr-3 nav-item">&copy; {new Date().getFullYear()} Sourcegraph</li>
-
-                    {postscriptLinks.items.map(item => (
-                        <li className="nav-item" key={item.title}>
-                            <Link href={item.href} passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="nav-link text-gray-5"
-                                    title={item.title}
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.footer}
-                                    data-button-type="cta"
-                                >
-                                    {item.title}
-                                </a>
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
             </div>
-        </div>
-    </footer>
-)
+        </footer>
+    )
+}
 
 export default Footer

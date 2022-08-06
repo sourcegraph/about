@@ -17,7 +17,9 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const threeUpTextItems = [
     {
-        subtitle: <h3 className="pb-3 mx-md-auto max-w-300 display-3 font-weight-bold tw-text-blurple-400">5 minutes</h3>,
+        subtitle: (
+            <h3 className="pb-3 mx-md-auto max-w-300 display-3 font-weight-bold tw-text-blurple-400">5 minutes</h3>
+        ),
         description:
             'Nutanix was able to see where JMSAppender existed, fix it, and send out a release in less than 5 minutes.',
     },
