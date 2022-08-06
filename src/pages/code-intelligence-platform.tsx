@@ -1,5 +1,6 @@
-import { FunctionComponent, ReactNode } from 'react'
+import { FunctionComponent } from 'react'
 
+import { MdiReactIconComponentType } from 'mdi-react'
 import ChartBoxIcon from 'mdi-react/ChartBoxIcon'
 import ClipboardCheckIcon from 'mdi-react/ClipboardCheckIcon'
 import EyeIcon from 'mdi-react/EyeIcon'
@@ -18,14 +19,13 @@ import {
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
-const CarouselItem: FunctionComponent<{ icon: ReactNode; header: string; text: string }> = ({
-    icon,
+const CarouselItem: FunctionComponent<{ icon: MdiReactIconComponentType; header: string; text: string }> = (props, {
     header,
     text,
 }) => (
     <>
         <div className="bg-violet-1 rounded-circle max-w-50 text-center p-1 mb-3">
-            <icon />
+            <props.icon />
             {/* <icon size={40} className="p-1 text-vivid-violet" /> */}
         </div>
         <h3 className="font-weight-bold mb-lg-0 mb-5">{header}</h3>
