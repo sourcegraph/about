@@ -135,7 +135,6 @@ $grid-breakpoints: (
 @import 'components/product/IntegratesWithSection';
 @import 'components/product/UseCasesTable';
 @import 'components/Events';
-@import 'components/SelfHostedSection';
 @import 'components/Header';
 @import 'components/TemplateCodeBlock';
 @import 'components/TestimonialCarousel';
@@ -145,10 +144,8 @@ $grid-breakpoints: (
 @import 'pages/community';
 @import 'pages/_case_studies';
 @import 'pages/content';
-@import 'pages/events';
 @import 'pages/jobs';
 @import 'pages/landing-page';
-@import 'pages/podcast';
 @import 'pages/product/code-search-navigation';
 @import 'pages/code-insights';
 @import 'templates/PostTemplate';

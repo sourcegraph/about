@@ -9,13 +9,7 @@
         justify-content: center;
     }
 
-    .template {
-        background-color: $white;
-        flex-grow: 1;
-    }
-
     .code {
-        background-color: $light-gray-3;
         font-family: sfmono-regular, consolas, menlo, dejavu sans mono, monospace;
         font-size: 11px;
         border: 1px solid #dfe2e6;

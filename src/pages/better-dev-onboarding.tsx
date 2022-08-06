@@ -83,7 +83,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
             <CoreFeatures />
         </ContentSection>
 
-        <div className="bg-light-gray-3">
+        <div className="tw-bg-gray-100">
             <IntegrationsSection />
         </div>
 

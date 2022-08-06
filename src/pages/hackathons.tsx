@@ -12,7 +12,7 @@ export const Hackathons: FunctionComponent = () => (
             description: 'Set up Sourcegraph at a Hackathon',
         }}
     >
-        <section className="text-center mb-0 px-5">
+        <section className="px-5 text-center tw-mb-7">
             <h1 className="mt-4">Set up Sourcegraph during a hackathon</h1>
             <p>
                 We'll give you access to Sourcegraph Enterprise features so you can ship code search and intelligence to
@@ -20,9 +20,9 @@ export const Hackathons: FunctionComponent = () => (
             </p>
         </section>
 
-        <section className="d-flex justify-content-around flex-column flex-lg-row bg-white max-w-1100 p-4 m-auto">
-            <div className="mr-lg-5 mt-0 mb-2">
-                <div className="d-flex flex-column bg-light-gray-2 rounded p-5">
+        <section className="p-4 m-auto bg-white d-flex justify-content-around flex-column flex-lg-row tw-max-w-screen-xl">
+            <div className="mt-0 mb-2 mr-lg-5">
+                <div className="p-5 rounded d-flex flex-column tw-bg-gray-100">
                     <p>
                         Want to win your hackathon? Set up Sourcegraph and bring the power of code search and code
                         intelligence to your engineering team!
@@ -45,7 +45,7 @@ export const Hackathons: FunctionComponent = () => (
                         </a>
                         , and we'll get back to you ASAP on how to get started!
                     </p>
-                    <div className="border-top border-light-9">
+                    <div className="tw-border-t tw-mt-6 tw-border-gray-300">
                         <p className="pt-4">
                             Get started with the{' '}
                             <a
@@ -90,7 +90,7 @@ export const Hackathons: FunctionComponent = () => (
                             </a>
                             , and we'll get back to you ASAP on how to get started!
                         </p>
-                        <div className="border-top border-light-9">
+                        <div className="tw-border-t tw-border-gray-300 tw-mt-6">
                             <p className="pt-4">
                                 Get started with the{' '}
                                 <a

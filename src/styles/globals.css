@@ -50,6 +50,10 @@
         margin-left: 40px;
     }
 
+    p {
+        @apply tw-my-3;
+    }
+
     /* Code Blocks */
     code {
         @apply tw-font-mono tw-text-base tw-font-medium tw-tracking-tightest;

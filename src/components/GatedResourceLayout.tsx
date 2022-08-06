@@ -130,7 +130,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                         />
                     </section>
 
-                    <div className="bg-light-gray-3">{learnMoreCTA}</div>
+                    <div className="tw-bg-gray-100">{learnMoreCTA}</div>
                 </div>
             ) : (
                 // ---- DEFAULT BODY VARIATION ----

@@ -30,7 +30,7 @@ export const UniversalCodeSearchEbook: FunctionComponent = () => (
                             </p>
 
                             <p>With this ebook, you will learn:</p>
-                            <ul>
+                            <ul className="my-3">
                                 <li>What is Universal Code Search</li>
                                 <li>Top reasons developers rely on Sourcegraph</li>
                                 <li>How to improve code reviews with code navigation</li>

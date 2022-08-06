@@ -32,7 +32,7 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
                 {carouselItems.map(item => (
                     <div
                         key={item.header}
-                        className={item === carouselHook.carouselItems.currentItem ? 'd-block h-400' : 'd-none'}
+                        className={item === carouselHook.carouselItems.currentItem ? 'd-block h-350' : 'd-none'}
                     >
                         <TemplateCodeBlock template={item} />
                     </div>
@@ -45,7 +45,7 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
                     onClick={() => carouselHook.moveCarousel('decrement')}
                     color={carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                 />
-                <div>
+                <div className="tw-flex">
                     {carouselItems.map(item => (
                         <CircleSmallIcon
                             color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}

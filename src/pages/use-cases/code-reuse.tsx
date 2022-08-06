@@ -312,7 +312,7 @@ const CodeReusePage: FunctionComponent = () => (
             <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
         </ContentSection>
 
-        <div className="bg-light-gray-3 py-7">
+        <div className="tw-bg-gray-100 py-7">
             <ContentSection>
                 <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-lg-center align-items-left">
                     <div className="mx-auto mb-5 d-flex flex-column text-start text-md-center max-w-600">
