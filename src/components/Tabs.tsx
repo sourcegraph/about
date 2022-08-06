@@ -34,7 +34,7 @@ export const Tabs: FunctionComponent<Tabs> = ({ tabs }) => {
                 ))}
             </div>
 
-            <div className="tw-flex tw-items-center tw-py-6">
+            <div className="tw-py-6">
                 {tabs.map((tab, index) => (
                     <div
                         key={tab.title}

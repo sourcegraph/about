@@ -153,13 +153,13 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <XmlIcon className="mb-4 text-blurple tw-inline" size={40} />,
+        icon: <XmlIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Quickly find trustworthy code to reuse</h4>,
         description:
             'Search your entire codebase to discover existing code to reuse. Gather crucial context, like who wrote the code, when, and where it’s used.',
     },
     {
-        icon: <FolderUploadOutlineIcon className="mb-4 text-blurple tw-inline" size={40} />,
+        icon: <FolderUploadOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: (
             <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Safely maintain and improve shared libraries</h4>
         ),
@@ -167,7 +167,7 @@ const threeUpTextItems = [
             'Automate PRs to push global updates. Get alerts when out-of-date libraries or deprecated functions are used, and eliminate duplicative code.',
     },
     {
-        icon: <AccountGroupOutlineIcon className="mb-4 text-blurple tw-inline" size={40} />,
+        icon: <AccountGroupOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: (
             <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Understand your team’s code reuse efforts</h4>
         ),

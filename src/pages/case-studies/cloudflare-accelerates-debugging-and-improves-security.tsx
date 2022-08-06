@@ -11,7 +11,7 @@ export const CaseStudy: FunctionComponent = () => {
                 title: 'Cloudflare accelerates debugging and improves security',
                 description: 'Cloudflare case study. Learn how Cloudflare accelerates debugging and improves security',
             }}
-            className="navbar-dark bg-black"
+            className="navbar-dark tw-bg-black"
         >
             <CaseStudyLayout
                 customer="Cloudflare"

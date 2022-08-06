@@ -237,7 +237,6 @@ const CareersPage: FunctionComponent = () => {
                                 <a
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="handbook-benefits-link"
                                     href="https://handbook.sourcegraph.com/benefits-pay-perks/benefits-perks"
                                     title="our handbook"
                                     data-button-style={buttonStyle.text}

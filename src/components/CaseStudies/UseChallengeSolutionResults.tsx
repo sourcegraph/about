@@ -58,7 +58,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
         <section className="container tw-relative d-flex flex-lg-row flex-column bg-light-gray-4-2 py-7">
             <div className="col-lg-6 col-12">
                 <div className="mb-5 d-flex flex-column flex-lg-row justify-content-lg-end">
-                    <div className="p-0 p-1 mb-3 text-center rounded d-flex bg-violet-1 align-self-start col-1 col-lg-2 justify-content-center align-items-center max-w-50">
+                    <div className="p-0 p-1 mb-3 text-center rounded d-flex tw-bg-violet-100 align-self-start col-1 col-lg-2 justify-content-center align-items-center max-w-50">
                         <ClipboardTextIcon size={40} className="p-1 tw-text-violet-400" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
@@ -77,7 +77,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     </div>
                 </div>
                 <div className="mb-5 mb-lg-0 d-flex flex-column flex-lg-row justify-content-lg-end">
-                    <div className="p-0 p-1 mb-3 text-center rounded d-flex bg-violet-1 align-self-start col-1 col-lg-2 justify-content-center align-items-center max-w-50">
+                    <div className="p-0 p-1 mb-3 text-center rounded d-flex tw-bg-violet-100 align-self-start col-1 col-lg-2 justify-content-center align-items-center max-w-50">
                         <AlertIcon size={40} className="p-1 tw-text-violet-400" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
@@ -98,7 +98,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
             </div>
             <div className="col-lg-6 col-12">
                 <div className="mb-5 mb-lg-0 d-flex flex-column flex-lg-row justify-content-xl-center">
-                    <div className="p-0 p-1 mb-3 text-center rounded d-flex bg-violet-1 align-self-start col-1 col-lg-2 justify-content-center align-items-center max-w-50">
+                    <div className="p-0 p-1 mb-3 text-center rounded d-flex tw-bg-violet-100 align-self-start col-1 col-lg-2 justify-content-center align-items-center max-w-50">
                         <CheckCircleIcon size={40} className="p-1 tw-text-violet-400" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
@@ -125,7 +125,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                 className="sg-bg-gradient-venus lg:tw-absolute tw-right-0 tw-bottom-0 xl:tw-max-w-[500px] lg:tw-max-w-[450px] tw-max-w-[700px] tw-mx-auto tw-p-8"
             >
                 <div className="ml-lg-0 d-flex flex-column flex-lg-row">
-                    <div className="p-0 p-1 mb-3 text-center rounded d-flex bg-violet-1 align-self-start col-1 col-lg-2 justify-content-center align-items-center max-w-50">
+                    <div className="p-0 p-1 mb-3 text-center rounded d-flex tw-bg-violet-100 align-self-start col-1 col-lg-2 justify-content-center align-items-center max-w-50">
                         <ChartLineVariantIcon size={40} className="p-1 tw-text-violet-400" />
                     </div>
                     <div className="pl-3 pr-0 col-lg-10 col-11">

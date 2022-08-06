@@ -24,7 +24,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                     <Link href={`/${blogType}/${slugPath}`} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="text-black d-block"
+                            className="tw-text-black d-block"
                             title={frontmatter.title}
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}

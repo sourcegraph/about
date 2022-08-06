@@ -15,7 +15,7 @@ export const CaseStudy: FunctionComponent = () => {
                 description:
                     'Workiva case study. Learn how Workiva uses Sourcegraph Batch Changes to reduce the time it takes to make large-scale code updates by 80%.',
             }}
-            className="navbar-dark bg-black"
+            className="navbar-dark tw-bg-black"
         >
             <CaseStudyLayout
                 customer="Workiva"

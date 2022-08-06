@@ -164,19 +164,19 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="mb-4 text-blurple tw-inline" size={40} />,
+        icon: <MagnifyIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: <h4 className="font-weight-bold">Find unhealthy code</h4>,
         description:
             'Build a healthier codebase by finding references to deprecated services, libraries, URL patterns, and more across all your repositories.',
     },
     {
-        icon: <WrenchOutlineIcon className="mb-4 text-blurple tw-inline" size={40} />,
+        icon: <WrenchOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: <h4 className="font-weight-bold">Remediate code health issues</h4>,
         description:
             'Tackle refactoring efforts and tech debt from legacy systems and acquisitions with automated pull requests across your entire codebase.',
     },
     {
-        icon: <ClipBoardPulseOutlineIcon className="mb-4 text-blurple tw-inline" size={40} />,
+        icon: <ClipBoardPulseOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: <h4 className="font-weight-bold">Monitor code health initiatives</h4>,
         description:
             'Stay on top of code health changes. Monitor and measure code health initiatives and get actionable insights into the impact of large-scale changes.',

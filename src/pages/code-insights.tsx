@@ -374,7 +374,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                 <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                     <div className="d-flex py-lg-5 py-3">
                         <div className="mr-4">
-                            <BullsEyeArrowIcon className="icon text-blurple" size={70} />
+                            <BullsEyeArrowIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
                         <div className="d-flex flex-column">
                             <div className="display-lg-3 font-weight-bold">Set goals</div>
@@ -383,7 +383,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     </div>
                     <div className="d-flex py-lg-5 py-3">
                         <div className="icon mr-4">
-                            <LighteningBoltOutlineIcon className="icon text-blurple" size={70} />
+                            <LighteningBoltOutlineIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
                         <div className="d-flex flex-column">
                             <div className="display-lg-3 font-weight-bold">Plan proactively</div>
@@ -396,7 +396,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                 <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                     <div className="d-flex py-lg-5 py-3">
                         <div className="mr-4">
-                            <TrendingUpIcon className="icon text-blurple" size={70} />
+                            <TrendingUpIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
                         <div className="d-flex flex-column">
                             <div className="display-lg-3 font-weight-bold">Track ownership & trends</div>
@@ -405,7 +405,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     </div>
                     <div className="d-flex py-lg-5 py-3">
                         <div className="mr-4">
-                            <RocketLaunchOutlineIcon className="icon text-blurple" size={70} />
+                            <RocketLaunchOutlineIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
                         <div className="d-flex flex-column">
                             <div className="display-lg-3 font-weight-bold">Celebrate progress</div>

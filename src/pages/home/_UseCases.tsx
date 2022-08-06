@@ -134,7 +134,7 @@ const UseCases: FunctionComponent = () => {
                 ref={box}
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ marginBottom: boxHalfHeight }}
-                className="tw-px-6 tw-py-16 tw-mx-auto tw-text-center bg-gradient-venus sm:tw-p-16 xl:tw-px-24 xl:tw-py-16 xl:tw-mx-0 xl:tw-absolute tw-right-0 tw-max-w-[550px] tw-bottom-0 sm:tw-text-left tw-w-[90%]"
+                className="tw-px-6 tw-py-16 tw-mx-auto tw-text-center sg-bg-gradient-venus sm:tw-p-16 xl:tw-px-24 xl:tw-py-16 xl:tw-mx-0 xl:tw-absolute tw-right-0 tw-max-w-[550px] tw-bottom-0 sm:tw-text-left tw-w-[90%]"
             >
                 <h3 className="mb-4 font-weight-bold pr-sm-0 pr-md-7 pr-xl-4">
                     Want to use Sourcegraph at your company?

@@ -1,24 +1,6 @@
-.community-page {
-    &__hero-and-header {
-        background-image: url('/community/hero_background.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-position: top left;
-    }
-
-    .nav-item {
-        button {
-            font-weight: 600;
-            background-color: transparent;
-            color: $blurple;
-
-            &:hover {
-                color: $blurple;
-
-                @media only screen and (max-width: 990px) {
-                    color: unset;
-                }
-            }
-        }
-    }
+.community-page__hero-and-header {
+    background-image: url('/community/hero_background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top left;
 }

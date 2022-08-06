@@ -13,17 +13,17 @@ import {
 
 const threeUpTextItems = [
     {
-        subtitle: <h3 className="pb-3 mx-md-auto display-3 font-weight-bold text-blurple">5 minutes</h3>,
+        subtitle: <h3 className="pb-3 mx-md-auto display-3 font-weight-bold tw-text-blurple-400">5 minutes</h3>,
         description:
             "Codecov reviewed their entire codebase and confirmed that they weren't exposed to the Log4j vulnerability.",
     },
     {
-        subtitle: <h3 className="pb-3 mx-md-auto display-3 font-weight-bold text-blurple">12x faster</h3>,
+        subtitle: <h3 className="pb-3 mx-md-auto display-3 font-weight-bold tw-text-blurple-400">12x faster</h3>,
         description:
             "Codecov was able to resolve Log4j 12x faster than with their code host's native search functionality and report absolute confidence in that resolution to their customers.",
     },
     {
-        subtitle: <h3 className="pb-3 mx-md-auto display-3 font-weight-bold text-blurple">100% confidence</h3>,
+        subtitle: <h3 className="pb-3 mx-md-auto display-3 font-weight-bold tw-text-blurple-400">100% confidence</h3>,
         description:
             'The security team at Codecov is able to complete code reviews independently and with complete confidence that their work is correct.',
     },

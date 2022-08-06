@@ -10,7 +10,7 @@ export const CaseStudy: FunctionComponent = () => (
             description:
                 'Sourcegraph case study: At Convoy, Sourcegraph helps improves the developer on-boarding process.',
         }}
-        className="navbar-dark bg-black"
+        className="navbar-dark tw-bg-black"
     >
         <CaseStudyLayout
             customer="Convoy"

@@ -5,24 +5,8 @@
  * via Tailwind CSS instead.
  */
 
-// Sourcegraph Primary Colors
-$vermillion: #ff5543;
-
 // Sourcegraph Secondary Colors
-$yellow-mist: #fff2cf;
-$red-mist: #ffc9c9;
-$violet-1: #eedfff;
-$violet-mist: #e8d1ff;
-$plum-mist: #bfbfff;
-$blue-mist: #c7ffff;
-$green-mist: #c4ffe8;
-$mint: #8fedcf;
 $blurple: #5033e1;
-$pacific-blue: #00a1c7;
-
-// Sourcegraph Colors for Website UI
-$pale-sky: #6c757d;
-$space-black: #000000;
 
 // Colors not listed in our Brand Guidelines
 $dark-9: #1d2535;
@@ -74,24 +58,8 @@ $theme-colors: (
     // Bootstrap overrides
     'primary': $blurple,
 
-    // Sourcegraph Primary Colors
-    'vermillion': $vermillion,
-
     // Sourcegraph Secondary Colors
-    'yellow-mist': $yellow-mist,
-    'red-mist': $red-mist,
-    'violet-1': $violet-1,
-    'violet-mist': $violet-mist,
-    'plum-mist': $plum-mist,
-    'blue-mist': $blue-mist,
-    'green-mist': $green-mist,
-    'mint': $mint,
     'blurple': $blurple,
-    'pacific-blue': $pacific-blue,
-
-    // Sourcegraph Colors for Website UI
-    'pale-sky': $pale-sky,
-    'black': $space-black,
 
     // Colors not listed in our Brand Guidelines
     'dark-9': $dark-9,

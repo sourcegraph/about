@@ -82,7 +82,7 @@ const DesktopNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton }
         <Nav className="right-nav justify-content-lg-end">
             {!hideGetStartedButton && (
                 <Nav.Link
-                    className="px-2 py-2 btn text-blurple font-weight-bolder"
+                    className="px-2 py-2 btn tw-text-blurple-400 font-weight-bolder"
                     href="https://sourcegraph.com/search"
                     title="Search code"
                     data-button-style={buttonStyle.text}

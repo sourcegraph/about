@@ -12,7 +12,7 @@ export const CaseStudy: FunctionComponent = () => {
                 description:
                     'FactSet case study. Learn how FactSet uses Sourcegraph after migrating from Perforce to GitHub.',
             }}
-            className="navbar-dark bg-black"
+            className="navbar-dark tw-bg-black"
         >
             <CaseStudyLayout
                 customer="FactSet"

@@ -72,7 +72,7 @@ export const Header: FunctionComponent<Props> = props => {
 
     const navStyle = classNames('header navbar py-3 w-100 fixed-top', props.className, {
         'bg-white shadow-sm': !isDarkNav && (sticky || isOpen),
-        'bg-black shadow-sm': isDarkNav && (sticky || isOpen),
+        'tw-bg-black shadow-sm': isDarkNav && (sticky || isOpen),
     })
 
     return (

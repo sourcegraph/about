@@ -30,7 +30,7 @@ export const BlogResourceItem: FunctionComponent<Props> = ({ blog }) => (
                 data-button-location={buttonLocation.body}
                 data-button-type="cta"
             >
-                <h3 className="font-weight-normal text-black">{blog.title}</h3>
+                <h3 className="font-weight-normal tw-text-black">{blog.title}</h3>
             </a>
             <p>{blog.description}</p>
         </div>

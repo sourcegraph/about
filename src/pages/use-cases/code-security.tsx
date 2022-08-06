@@ -158,13 +158,13 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <TimerOutlineIcon className="mb-4 text-blurple tw-inline" size={40} />,
+        icon: <TimerOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Reduce time to discovery and resolution</h4>,
         description:
             'Find every instance of a vulnerability and start remediating in minutes instead of days or weeks. Use that head start to deploy fixes sooner.',
     },
     {
-        icon: <AutoFixIcon className="mb-4 text-blurple tw-inline" size={40} />,
+        icon: <AutoFixIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: (
             <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Automate fixing, merging, and deploying fixes</h4>
         ),
@@ -172,7 +172,7 @@ const threeUpTextItems = [
             'Automate PRs to fix vulnerabilities across your entire codebase so you can be 100% confident you resolved every vulnerability.',
     },
     {
-        icon: <ShieldAlertOutlineIcon className="mb-4 text-blurple tw-inline" size={40} />,
+        icon: <ShieldAlertOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: (
             <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">
                 Alert for risky code changes & known vulnerabilities

@@ -100,7 +100,7 @@ export const GetStartedPage: FunctionComponent = () => {
                             <p className="mt-3">
                                 Already have a Sourcegraph Cloud account?{' '}
                                 <a
-                                    className="text-black text-reset tw-underline"
+                                    className="tw-text-black text-reset tw-underline"
                                     href="https://sourcegraph.com/sign-in"
                                     title="Search public code with Sourcegraph Cloud"
                                     data-button-style={buttonStyle.text}
