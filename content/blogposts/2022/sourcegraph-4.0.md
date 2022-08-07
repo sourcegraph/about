@@ -17,6 +17,35 @@ changelogItems:
 - [From code search toward a code intelligence platform](/blog/code-search-to-code-intelligence) - the longer-term vision/story
 - [Secure, easy, and scalable Sourcegraph Cloud managed instances for the enterprise](/blog/enterprise-cloud) - the Cloud announcement (including SOC2 Type 2, etc.) that coincides with 4.0
 
+## TL;DR
+
+`TODO(sqs): The section headers with emojis are what I think we should use, but the wording of the bullet points within are WIP`
+
+##### 🌅 Code intelligence: more useful, more times daily for every dev
+
+- The fastest and most scalable code search (search perf, page load perf, scalability: # repos, big monorepos, # code hosts, etc.)
+- TODO how to introduce the simple UI?
+- Smarter code search
+- High-level aggregations of search results
+- Precise code navigation for 9 languages (adding Ruby and Rust) with auto-indexing
+
+##### 🏗️ High-leverage ways to improve your entire codebase
+
+- Run batch changes server side
+- Something about the new packaging with batch changes and code insights
+
+##### ☁️ Enterprise Cloud dedicated(/managed?) instances
+
+- [Secure, easy, and scalable Sourcegraph Cloud dedicated(/managed?) instances for the enterprise](/blog/enterprise-cloud)
+
+##### 💖 For admins
+
+- Admin analytics
+- 1-click log export
+- OpenTelemetry
+- Easier repo config
+
+
 ### Run batch changes server-side
 
 {/* @malomarrec: The title is the feature, as opposed to the benefit, because there's multiple benefits. Another angle would be to focus on the primary benefit and title this "Run batch changes at large scales" */}
