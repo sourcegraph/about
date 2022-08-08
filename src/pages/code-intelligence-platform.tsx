@@ -19,17 +19,16 @@ import {
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
-const CarouselItem: FunctionComponent<{ icon: MdiReactIconComponentType; header: string; text: string }> = (props, {
-    header,
-    text,
-}) => (
+const CarouselItem: FunctionComponent<{ icon: MdiReactIconComponentType; header: string; text: string }> = props => (
     <>
-        <div className="bg-violet-1 rounded-circle max-w-50 text-center p-1 mb-3">
-            <props.icon />
-            {/* <icon size={40} className="p-1 text-vivid-violet" /> */}
+        {/* eslint-disable-next-line react/forbid-dom-props */}
+        <div className="bg-violet-1 rounded-circle text-center mb-3" style={{ maxWidth: '40px' }}>
+            <div className="text-vivid-violet p-2 d-flex justify-content-center">
+                <props.icon />
+            </div>
         </div>
-        <h3 className="font-weight-bold mb-lg-0 mb-5">{header}</h3>
-        <p className="py-3">{text}</p>
+        <h3 className="font-weight-bold mb-lg-0 mb-5">{props.header}</h3>
+        <p className="py-3">{props.text}</p>
     </>
 )
 
