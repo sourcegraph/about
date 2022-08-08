@@ -22,7 +22,7 @@ export const SelfHostedPage: FunctionComponent = () => {
             }}
             hero={
                 <div className="py-5 container-xl">
-                    <h1 className="mb-2 display-1">
+                    <h1 className="mb-2">
                         <strong>Get started</strong>
                     </h1>
                     <p>From GE to Uber, the world's best developers use Sourcegraph every day.</p>
@@ -35,10 +35,7 @@ export const SelfHostedPage: FunctionComponent = () => {
                 <div className="py-5 mx-auto row container-xl">
                     <div className="col-lg-6 pr-lg-7">
                         <div>
-                            <h1 className="mb-2 display-2 font-weight-bolder">
-                                Sourcegraph <br />
-                                Self-Hosted
-                            </h1>
+                            <h2 className="mb-2">Sourcegraph Self-Hosted</h2>
 
                             <p className="mt-4">
                                 Deploy and control Sourcegraph in your own infrastructure, or use Docker to install

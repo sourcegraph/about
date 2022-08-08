@@ -44,7 +44,7 @@ const About: FunctionComponent = () => (
         <div className="content-page bg-white text-dark">
             <ContentSection className="hero-section py-6">
                 <h1>About Sourcegraph</h1>
-                <p className="h4 font-weight-normal">
+                <p className="h4">
                     Sourcegraph builds universal code search for every developer and company so they can innovate
                     faster. We help developers and companies with billions of lines of code create the software you use
                     every day.

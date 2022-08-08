@@ -16,7 +16,7 @@ export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
     <ContentSection className="container col-xl-6 justify-content-center">
         <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-md-center align-items-left">
             <div className="mb-5 d-flex flex-column">
-                <h1 className="text-center font-weight-bold">Get started with Sourcegraph</h1>
+                <h2 className="text-center">Get started with Sourcegraph</h2>
                 <p className="text-center">Understand, fix, and automate changes across your entire codebase.</p>
             </div>
             <div className="d-flex flex-column">
@@ -36,7 +36,7 @@ export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         title="Try Sourcegraph now"
-                        className="mt-4 font-weight-bold"
+                        className="mt-4"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"

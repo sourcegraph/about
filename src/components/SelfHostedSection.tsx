@@ -16,7 +16,7 @@ const selfHostedFeatures: string[] = [
 export const SelfHostedSection: FunctionComponent = () => (
     <div className="py-5 sg-bg-gradient-venus py-md-7">
         <div className="container">
-            <h1 className="mb-6 text-center">Self-hosted deployment</h1>
+            <h2 className="mb-6 text-center">Self-hosted deployment</h2>
 
             <div className="row">
                 <div className="col-lg-6">

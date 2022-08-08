@@ -12,18 +12,18 @@ interface Props {
 }
 
 export const ThreeUpText: FunctionComponent<Props> = ({ title, items }) => (
-    <section className="row mx-lg-0 mx-4">
-        <h2 className="text-md-center col-12 max-w-lg-550 mx-auto mb-lg-4 px-0 font-weight-bold">{title}</h2>
+    <section className="mx-4 row mx-lg-0">
+        <h2 className="px-0 mx-auto text-md-center col-12 max-w-lg-550 mb-lg-4">{title}</h2>
 
-        <div className="d-flex flex-wrap justify-content-between">
+        <div className="flex-wrap d-flex justify-content-between">
             {items.map((item, index) => (
                 <div
                     key={`item-${index + 1}-${item.description}`}
-                    className="col-12 col-lg-4 max-w-lg-400 text-md-center pt-5 px-auto"
+                    className="pt-5 col-12 col-lg-4 max-w-lg-400 text-md-center px-auto"
                 >
                     {item.icon && item.icon}
                     {item.subtitle}
-                    <p className="max-w-md-400 mx-auto">{item.description}</p>
+                    <p className="mx-auto max-w-md-400">{item.description}</p>
                 </div>
             ))}
         </div>

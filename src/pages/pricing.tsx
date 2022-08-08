@@ -79,8 +79,8 @@ const PricingPage: FunctionComponent = () => (
         <div className="text-dark">
             <div className="mt-2">
                 <ContentSection className="py-5 text-center hero-section">
-                    <h1 className="display-2 font-weight-bold">Sourcegraph Pricing</h1>
-                    <h4 className="pt-2 font-weight-normal">Self-hosted code intelligence platform</h4>
+                    <h1>Sourcegraph Pricing</h1>
+                    <h4 className="pt-2">Self-hosted code intelligence platform</h4>
                 </ContentSection>
                 <div className="container">
                     <div className="pt-4 row">
@@ -150,7 +150,7 @@ const PricingPage: FunctionComponent = () => (
                     <div className="pt-4 row">
                         <div className="mx-auto mb-4 col-md-12">
                             <div className="px-6 card">
-                                <h2 className="my-3 display-2 font-weight-bolder">Team</h2>
+                                <h2 className="my-3 tw-font-semibold">Team</h2>
 
                                 <div className="row">
                                     <div className="pr-5 mx-auto mb-4 tw-text-xl col-md-6">

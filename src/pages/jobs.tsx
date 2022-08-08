@@ -56,7 +56,7 @@ const CareersPage: FunctionComponent = () => {
         {
             className: 'sg-bg-gradient-saturn',
             text: (
-                <h2 className="my-auto col-lg-6 display-3 font-weight-bolder">
+                <h2 className="my-auto col-lg-6">
                     Just because we're remote doesn't mean we're apart <br />
                     #life-at-sourcegraph
                 </h2>
@@ -72,7 +72,7 @@ const CareersPage: FunctionComponent = () => {
         {
             className: 'sg-bg-gradient-mars',
             text: (
-                <h2 className="my-auto col-lg-6 display-3 font-weight-bolder">
+                <h2 className="my-auto col-lg-6">
                     We're moving <i>fast</i> to create a world in which everyone can code
                 </h2>
             ),
@@ -81,7 +81,7 @@ const CareersPage: FunctionComponent = () => {
         {
             className: 'sg-bg-gradient-venus',
             text: (
-                <h2 className="my-auto col-lg-6 display-3 font-weight-bolder">
+                <h2 className="my-auto col-lg-6">
                     Work whenever and wherever <br />
                     #life-is-beachy
                 </h2>
@@ -91,7 +91,7 @@ const CareersPage: FunctionComponent = () => {
         {
             className: 'sg-bg-gradient-saturn',
             text: (
-                <h2 className="my-auto col-lg-6 display-3 font-weight-bolder">
+                <h2 className="my-auto col-lg-6">
                     Our pets are Sourcegraph Teammates, too <br />
                     #pets-of-sourcegraph
                 </h2>
@@ -107,7 +107,7 @@ const CareersPage: FunctionComponent = () => {
         {
             className: 'sg-bg-gradient-mars',
             text: (
-                <h2 className="my-auto col-lg-6 display-3 font-weight-bolder">
+                <h2 className="my-auto col-lg-6">
                     Creating the next generation of Sourcegraph coders, one baby at a time
                 </h2>
             ),
@@ -187,8 +187,8 @@ const CareersPage: FunctionComponent = () => {
                 <ContentSection className="hero-section">
                     <div className="row">
                         <div className="col-lg-10">
-                            <h1 className="display-2 title">Let's build the future together.</h1>
-                            <h1 className="display-2 font-weight-normal">
+                            <h1 className=" title">Let's build the future together.</h1>
+                            <h1 className="">
                                 We're developing the world's most advanced code search navigation platform with
                                 brilliant dreamers around the globe.
                             </h1>
@@ -225,9 +225,7 @@ const CareersPage: FunctionComponent = () => {
                 <div className="benefits">
                     <div className="flex-wrap d-flex">
                         <div className="m-auto">
-                            <h2 className="mx-auto text-center col-lg-10 display-2 font-weight-bold">
-                                Happy, healthy, and always in the flow.
-                            </h2>
+                            <h2 className="mx-auto text-center col-lg-10">Happy, healthy, and always in the flow.</h2>
                             <p className="mx-auto text-center col-lg-6">
                                 Our Teammates are our most valuable resource. That's why we provide total rewards that
                                 are highly competitive and allow you to thrive both personally and professionally.
@@ -323,9 +321,9 @@ const CareersPage: FunctionComponent = () => {
                         {valueItems.map(item => (
                             <Carousel.Item key={item.value}>
                                 <div className="d-flex flex-column align-items-center min-h-550 py-7">
-                                    <h5 className="display-5 font-weight-bold text-uppercase">We value:</h5>
-                                    <h2 className="display-3 font-weight-bold">{item.value}</h2>
-                                    <p className="text-center col-8 display-5">{item.description}</p>
+                                    <h5 className=" text-uppercase">We value:</h5>
+                                    <h2 className="">{item.value}</h2>
+                                    <p className="text-center col-8 ">{item.description}</p>
                                     {item.img}
                                 </div>
                             </Carousel.Item>
@@ -343,7 +341,7 @@ const CareersPage: FunctionComponent = () => {
                     <ContentSection>
                         <div className="row">
                             <div className="col-lg-12">
-                                <h2 className="display-2 font-weight-bold">What you seek is seeking you</h2>
+                                <h2 className="">What you seek is seeking you</h2>
                                 <p>
                                     We're looking forward to reminding you that "you're on mute"{' '}
                                     <img src="../SmileyWink.svg" alt="Smiling winky face emoji" className="tw-inline" />

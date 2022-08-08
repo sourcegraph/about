@@ -15,7 +15,7 @@ export const UniversalCodeSearchEbook: FunctionComponent = () => (
             title="Universal Code Search"
             description="Ship better software faster with Sourcegraph Universal Code Search with enhanced code search, review, and code change management."
             className="text-dark"
-            titleClassName="display-2 font-weight-bold"
+            titleClassName=""
         >
             <div className="bg-white text-dark">
                 <div className="px-5 py-6 container-lg">

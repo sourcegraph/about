@@ -55,7 +55,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                 ))}
             </div>
 
-            <ul className="flex-wrap mb-0 card-body list-unstyled d-flex">
+            <ul className="tw-mb-0 tw-py-4 tw-flex-wrap tw-list-none tw-flex-col md:tw-flex-row md:tw-flex">
                 <li className="release-post__help-item">
                     <a
                         href="https://docs.sourcegraph.com/admin/install"

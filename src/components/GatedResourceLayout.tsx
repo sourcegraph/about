@@ -110,8 +110,8 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                     )}
 
                     <div className={classNames('col-12', customer && 'col-lg-8')}>
-                        <h1 className="mb-4 tw-whitespace-pre-line display-2 mb-md-2">{title}</h1>
-                        {subtitle && <h3 className="font-weight-normal max-w-800">{subtitle}</h3>}
+                        <h1 className="mb-4 tw-whitespace-pre-line mb-md-2">{title}</h1>
+                        {subtitle && <h3 className="max-w-800">{subtitle}</h3>}
                     </div>
                 </div>
             </section>
@@ -139,7 +139,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                         {description}
 
                         <div className="pb-6 col-md-6 col-12 pb-md-0">
-                            <h2 className="font-weight-bold">{formLabel}</h2>
+                            <h2>{formLabel}</h2>
                             <div className="px-0 px-4 py-4 mt-3 shadow-sm sg-border-gradient-saturn tw-border-solid tw-border-3">
                                 {!hasWatchNowQuery && (
                                     <HubSpotForm
@@ -163,16 +163,14 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             {speakers?.length && (
                 <section className="py-6 bg-white py-lg-7">
                     <ContentSection>
-                        <h2 className="font-weight-bold">Speakers</h2>
+                        <h2>Speakers</h2>
 
                         <section className="flex-wrap d-flex">
                             {speakers.map((speaker: Speaker) => (
                                 <div key={speaker.name} className="pl-0 col-lg-5 col-md-6 col-12 pr-lg-7">
                                     <img className="py-4" width="140" src={speaker.img} alt={speaker.name} />
-                                    <h5 className="font-weight-bold">{speaker.name}</h5>
-                                    <figcaption className="my-2 h6 font-weight-normal text-muted max-w-md-250">
-                                        {speaker.title}
-                                    </figcaption>
+                                    <h5>{speaker.name}</h5>
+                                    <figcaption className="my-2 h6 text-muted max-w-md-250">{speaker.title}</figcaption>
                                     <p>{speaker.bio}</p>
                                 </div>
                             ))}

@@ -232,7 +232,7 @@ export const CodeSearchPage: FunctionComponent = () => (
 
         <ContentSection color="white" className="py-7">
             <div className="col-lg-6">
-                <h2 className="mb-6 font-weight-bold">Learn more</h2>
+                <h2 className="mb-6">Learn more</h2>
             </div>
 
             {[

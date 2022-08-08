@@ -21,7 +21,7 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2 className="mb-5 display-5 font-weight-bold mb-lg-0">{header}</h2>
+        <h2 className="mb-5 mb-lg-0">{header}</h2>
         {text}
     </>
 )
@@ -158,25 +158,19 @@ const items = [
 const threeUpTextItems = [
     {
         icon: <TimerOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Reduce time to discovery and resolution</h4>,
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Reduce time to discovery and resolution</h4>,
         description:
             'Find every instance of a vulnerability and start remediating in minutes instead of days or weeks. Use that head start to deploy fixes sooner.',
     },
     {
         icon: <AutoFixIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: (
-            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Automate fixing, merging, and deploying fixes</h4>
-        ),
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Automate fixing, merging, and deploying fixes</h4>,
         description:
             'Automate PRs to fix vulnerabilities across your entire codebase so you can be 100% confident you resolved every vulnerability.',
     },
     {
         icon: <ShieldAlertOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: (
-            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">
-                Alert for risky code changes & known vulnerabilities
-            </h4>
-        ),
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Alert for risky code changes & known vulnerabilities</h4>,
         description:
             'Get on top of vulnerabilities by monitoring your repositories for commits when risky patterns and known vulnerabilities enter your codebase.',
     },
@@ -262,8 +256,8 @@ const UseCasePage: FunctionComponent = () => (
                     <div className="row">
                         <div className="col-lg-7 my-7">
                             <BackButton href="/use-cases" text="USE CASES" />
-                            <h1 className="mb-4 display-2 font-weight-bold">Improve code security</h1>
-                            <div className="mb-5 display-4 font-weight-normal">
+                            <h1 className="mb-4">Improve code security</h1>
+                            <div className="mb-5">
                                 Find, fix, and track vulnerable code across your entire codebase in minutes, not days
                             </div>
                             <div className="text-center flex-column flex-md-row d-md-flex">
@@ -311,7 +305,7 @@ const UseCasePage: FunctionComponent = () => (
                 <TwoColumnSection
                     leftColumn={
                         <>
-                            <h2 className="mb-4 display-3 font-weight-bold max-w-400">
+                            <h2 className="mb-4 max-w-400">
                                 Identifying & resolving security vulnerabilities is painful
                             </h2>
                             <p>
@@ -382,7 +376,7 @@ const UseCasePage: FunctionComponent = () => (
             <ContentSection>
                 <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-lg-center align-items-left">
                     <div className="mx-auto mb-5 d-flex flex-column text-start text-md-center align-items-lg-center">
-                        <h2 className="display-3 font-weight-bold">Get started with Sourcegraph</h2>
+                        <h2>Get started with Sourcegraph</h2>
                         <p className="max-w-450">
                             Find, fix, and track vulnerable code quickly across your entire codebase to improve code
                             security.
@@ -404,7 +398,7 @@ const UseCasePage: FunctionComponent = () => (
                         <Link href="/use-cases" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="mt-4 d-flex justify-content-center font-weight-bold"
+                                className="mt-4 d-flex justify-content-center "
                                 title="Explore other use cases"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
@@ -425,7 +419,7 @@ const UseCasePage: FunctionComponent = () => (
         <ContentSection className="py-5 py-lg-7">
             <div className="row d-flex">
                 <div className="col-lg-6">
-                    <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>
+                    <h2 className="mb-5">Related resources</h2>
                 </div>
                 {blogResourceItems.map(item => (
                     <BlogResourceItem key={item.title} blog={item} />

@@ -16,7 +16,7 @@ export const RequestDemoForm: FunctionComponent<Props> = ({
 }) => (
     <ContentSection color="black" className="col-sm-12 col-md-9 col-lg-7">
         <div className="container pt-6 pb-2 text-center">
-            <h3 className="display-3 font-weight-bold">{title}</h3>
+            <h3>{title}</h3>
             <p>{description}</p>
             <a
                 href={demoFormURL}

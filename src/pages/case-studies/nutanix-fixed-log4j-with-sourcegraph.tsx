@@ -17,19 +17,17 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const threeUpTextItems = [
     {
-        subtitle: (
-            <h3 className="pb-3 mx-md-auto max-w-300 display-3 font-weight-bold tw-text-blurple-400">5 minutes</h3>
-        ),
+        subtitle: <h3 className="pb-3 mx-md-auto max-w-300 tw-text-blurple-400">5 minutes</h3>,
         description:
             'Nutanix was able to see where JMSAppender existed, fix it, and send out a release in less than 5 minutes.',
     },
     {
-        subtitle: <h3 className="pb-3 mx-md-auto max-w-300 display-3 font-weight-bold tw-text-blurple-400">4 days</h3>,
+        subtitle: <h3 className="pb-3 mx-md-auto max-w-300 tw-text-blurple-400">4 days</h3>,
         description:
             'Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.',
     },
     {
-        subtitle: <h3 className="pb-3 mx-md-auto max-w-300 display-3 font-weight-bold tw-text-blurple-400">100%</h3>,
+        subtitle: <h3 className="pb-3 mx-md-auto max-w-300 tw-text-blurple-400">100%</h3>,
         description: 'Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.',
     },
 ]
@@ -102,9 +100,7 @@ export const CaseStudy: FunctionComponent = () => (
                     organization. “Security is something that we care about intensely here at Nutanix,” Jon said,
                     “because it’s part of our bedrock. It's why customers like us, and we have to take it seriously.”
                 </p>
-                <h3 className="mt-6 mb-4 display-4 font-weight-normal max-w-600">
-                    Log4j: The vulnerability that rocked an industry
-                </h3>
+                <h3 className="mt-6 mb-4 max-w-600">Log4j: The vulnerability that rocked an industry</h3>
                 <p>
                     <span className="font-weight-bold">In December of 2021, </span>
                     software companies around the world discovered that Log4j, an open-source logging library bundled in
@@ -145,7 +141,7 @@ export const CaseStudy: FunctionComponent = () => (
                     Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.
                 </p>
 
-                <h3 className="mt-6 mb-4 display-4 font-weight-normal max-w-600">
+                <h3 className="mt-6 mb-4 max-w-600">
                     Nutanix used Sourcegraph to identify every instance of Log4j within 2 days
                 </h3>
                 <p>
@@ -207,9 +203,7 @@ export const CaseStudy: FunctionComponent = () => (
                     />
                 </div>
 
-                <h3 className="mb-4 display-4 font-weight-normal max-w-600">
-                    Nutanix has renewed confidence in its vulnerability remediation
-                </h3>
+                <h3 className="mb-4 max-w-600">Nutanix has renewed confidence in its vulnerability remediation</h3>
                 <p>
                     <span className="font-weight-bold">Tracking down the Log4j vulnerability was, </span>
                     in Jon's words, like “herding cats who were herding mice at the same time.”
@@ -250,9 +244,7 @@ export const CaseStudy: FunctionComponent = () => (
             </div>
 
             <ContentSection color="white" className="py-7 max-w-700 col-xl-5">
-                <h3 className="mb-4 display-4 font-weight-normal max-w-650">
-                    Log4j is the tip of the open-source vulnerability iceberg
-                </h3>
+                <h3 className="mb-4 max-w-650">Log4j is the tip of the open-source vulnerability iceberg</h3>
                 <p>
                     <span className="font-weight-bold">With Sourcegraph's help, </span>
                     Nutanix was able to transform a trust-threatening risk into a trust-building opportunity. Their

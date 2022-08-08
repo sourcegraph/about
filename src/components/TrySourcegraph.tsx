@@ -12,7 +12,7 @@ interface Props {
 export const TrySourcegraph: FunctionComponent<Props> = ({ demoFormURL = '/demo', className = '' }) => (
     <div className={`${className} tw-py-24 tw-max-w-screen-xl sm:tw-grid sm:tw-grid-cols-2 tw-mx-auto tw-px-4`}>
         <div className="tw-mb-4 sm:mb-0 sm:tw-pr-4">
-            <h3 className="font-weight-bold">Try Sourcegraph for free today</h3>
+            <h3>Try Sourcegraph for free today</h3>
             <p className="tw-max-w-md">
                 You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your code stays
                 local and secure).

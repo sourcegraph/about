@@ -36,7 +36,7 @@ export const BatchChangesPage: FunctionComponent = () => (
     >
         {/* Overview */}
         <ContentSection className="py-4 text-center py-md-7">
-            <h1 className="mb-3">Change code everywhere with a single declarative file</h1>
+            <h2 className="mb-3">Change code everywhere with a single declarative file</h2>
             <div className="row justify-content-center">
                 <p className="col-md-8">
                     Batch Changes gives you a declarative structure for finding and modifying code across all of your
@@ -77,7 +77,7 @@ export const BatchChangesPage: FunctionComponent = () => (
             <ContentSection>
                 <div className="row">
                     <div className="col-lg-5">
-                        <h1 className="mb-3">Search, define, execute, and track code changes</h1>
+                        <h2 className="mb-3">Search, define, execute, and track code changes</h2>
                         <ul>
                             <li className="mt-2">
                                 Find all occurrences of code to change with Sourcegraph{' '}
@@ -137,7 +137,7 @@ export const BatchChangesPage: FunctionComponent = () => (
         <ContentSection className="py-4 py-md-7">
             <div className="row">
                 <div className="col-lg-5">
-                    <h1 className="mb-3">Track changes from creation to merge</h1>
+                    <h2 className="mb-3">Track changes from creation to merge</h2>
                     <p>Tracking changes to many repositories requires spreadsheets and manual labor.</p>
                     <p>
                         With Batch Changes, you can automatically track changeset lifecycle status, like check state,
@@ -160,7 +160,7 @@ export const BatchChangesPage: FunctionComponent = () => (
 
         {/* Use Cases */}
         <ContentSection className="py-4 py-md-7">
-            <h1 className="mb-5 text-center">How developers are using Batch Changes </h1>
+            <h2 className="mb-5 text-center">How developers are using Batch Changes </h2>
             <Tabs
                 tabs={[
                     {
@@ -247,7 +247,7 @@ export const BatchChangesPage: FunctionComponent = () => (
 
         {/* Demo */}
         <ContentSection className="py-4 py-md-7">
-            <h1 className="mb-3 text-center">See Batch Changes in action</h1>
+            <h2 className="mb-3 text-center">See Batch Changes in action</h2>
             <div className="row justify-content-center pt-md-4">
                 <div className="col-lg-8">
                     <YouTube title="Sourcegraph Batch Changes demo" id="eOmiyXIWTCw" />

@@ -22,7 +22,7 @@ interface Blog {
 export const BlogResourceItem: FunctionComponent<Props> = ({ blog }) => (
     <div className="pb-5 mx-0 mb-5 w-100 row border-bottom">
         <div className="col-sm-8 col-md-9">
-            <h6 className="text-uppercase text-primary">{blog.type}</h6>
+            <h6 className="text-uppercase tw-text-blurple-400 tw-font-semibold">{blog.type}</h6>
             <a
                 href={blog.href}
                 title={blog.title}
@@ -30,7 +30,7 @@ export const BlogResourceItem: FunctionComponent<Props> = ({ blog }) => (
                 data-button-location={buttonLocation.body}
                 data-button-type="cta"
             >
-                <h3 className="font-weight-normal tw-text-black">{blog.title}</h3>
+                <h3 className="tw-text-black">{blog.title}</h3>
             </a>
             <p>{blog.description}</p>
         </div>

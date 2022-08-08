@@ -22,25 +22,6 @@ $theme-colors: (
 
 /* ==================== Bootstrap Overrides ==================== */
 
-$font-family-sans-serif: 'Source Sans Pro', sans-serif;
-$font-family-monospace: 'Source Code Pro', monospace;
-$font-family-base: $font-family-sans-serif;
-
-$border-radius: 0.3125rem;
-$border-radius-lg: 0.25rem;
-$border-radius-sm: 0.1rem;
-
-$font-weight-semibold: 600;
-$font-weight-bold: $font-weight-semibold; /* uses Source Sans Pro Semi-bold */
-$font-weight-bolder: 700; /* uses Source Sans Pro Bold */
-
-$h1-font-size: 3.25rem; // 72px
-$h2-font-size: 2.5rem; // 40px
-$h3-font-size: 1.875rem; // 30px
-$h4-font-size: 1.5rem; // 24px
-$h5-font-size: 1.25rem; // 20px
-$h6-font-size: 1.125rem; // 18px
-
 $input-btn-padding-y: 0.55rem;
 
 @import 'node_modules/bootstrap/scss/variables';
@@ -73,11 +54,6 @@ $spacers: (
     ),
 );
 
-$display1-size: 4rem;
-$display2-size: 3.25rem;
-$display3-size: 2.5rem;
-$display4-size: 1.75rem;
-
 $navbar-nav-link-padding-x: $spacer * 0.75;
 $navbar-light-color: $dark;
 $navbar-light-hover-color: $blurple;
@@ -86,8 +62,6 @@ $navbar-dark-hover-color: $blurple;
 
 $btn-padding-x: 1.5rem;
 $btn-font-weight: 600;
-
-$list-group-action-hover-color: $link-hover-color;
 
 $card-spacer-y: 1.25 * $spacer;
 $card-spacer-x: 1.25 * $spacer;
@@ -111,7 +85,6 @@ $grid-breakpoints: (
 
 /* ==================== Bootstrap Components ==================== */
 @import 'node_modules/bootstrap/scss/root';
-@import 'node_modules/bootstrap/scss/type';
 @import 'node_modules/bootstrap/scss/grid';
 @import 'node_modules/bootstrap/scss/button-group';
 @import 'node_modules/bootstrap/scss/input-group';

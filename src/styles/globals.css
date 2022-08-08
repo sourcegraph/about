@@ -35,7 +35,7 @@
         @apply tw-font-sans tw-text-lg tw-tracking-wide tw-font-semibold tw-uppercase;
     }
     code {
-        @apply tw-font-mono tw-text-base tw-font-medium tw-tracking-tightest;
+        @apply tw-font-mono tw-text-base tw-font-medium tw-tracking-tightest tw-break-words;
     }
     /* Inline Links */
     p a,

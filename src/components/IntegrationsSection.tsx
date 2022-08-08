@@ -93,7 +93,7 @@ const renderListItems = (items: string[]): ReactNode =>
     items.map((item: string) => (
         <li key={item} className="my-2 mr-2 list-inline-item">
             <code
-                className="p-1 rounded tw-text-gray-500 tw-bg-gray-200 small"
+                className="px-2 py-1 rounded tw-text-gray-500 tw-bg-gray-100 tw-border tw-border-solid tw-border-gray-200 small"
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ fontSize: '14px' }}
             >
@@ -110,7 +110,7 @@ export const IntegrationsSection: FunctionComponent = () => (
             <div className="mb-5 col-lg-6">
                 <h4>All your repositories + 2M open source (and counting)</h4>
 
-                <ul className="tw-list-none tw-ml-0">{renderListItems(codeHosts)}</ul>
+                <ul className="tw-list-none tw-ml-0 tw-flex tw-flex-wrap">{renderListItems(codeHosts)}</ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     title="Have a repository not covered here?"
@@ -125,7 +125,7 @@ export const IntegrationsSection: FunctionComponent = () => (
             <div className="mb-5 col-lg-6">
                 <h4>All your languages</h4>
 
-                <ul className="tw-list-none tw-ml-0">{renderListItems(languages)}</ul>
+                <ul className="tw-list-none tw-ml-0 tw-flex tw-flex-wrap">{renderListItems(languages)}</ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     title="Need a different language?"
@@ -140,7 +140,7 @@ export const IntegrationsSection: FunctionComponent = () => (
             <div className="mb-5 col-lg-6">
                 <h4>All your tools</h4>
 
-                <ul className="tw-list-none tw-ml-0">{renderListItems(tools)}</ul>
+                <ul className="tw-list-none tw-ml-0 tw-flex tw-flex-wrap">{renderListItems(tools)}</ul>
                 <a
                     href="https://docs.sourcegraph.com/integration"
                     title="See all integrations or build your own"
@@ -158,12 +158,16 @@ export const IntegrationsSection: FunctionComponent = () => (
                 <ul className="tw-list-none tw-ml-0">
                     <li className="list-inline-item text-wrap">
                         <h5>Self-hosted by you:</h5>
-                        <ul className="tw-list-none tw-m-0">{renderListItems(selfHostedOptions)}</ul>
+                        <ul className="tw-list-none tw-m-0 tw-flex tw-flex-wrap">
+                            {renderListItems(selfHostedOptions)}
+                        </ul>
                     </li>
 
                     <li className="tw-list-none tw-m-0">
                         <h5 className="mt-3">Managed and hosted by us:</h5>
-                        <ul className="tw-list-none tw-m-0">{renderListItems(['Docker Compose in GCP'])}</ul>
+                        <ul className="tw-list-none tw-m-0 tw-flex tw-flex-wrap">
+                            {renderListItems(['Docker Compose in GCP'])}
+                        </ul>
                     </li>
                 </ul>
                 <a

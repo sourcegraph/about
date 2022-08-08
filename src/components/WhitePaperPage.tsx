@@ -23,12 +23,15 @@ export const WhitePaperPage: FunctionComponent<Props> = ({ title, className, pdf
             style={heroBackgroundImage ? { backgroundImage: `url(${heroBackgroundImage})` } : undefined}
         >
             <div className="container py-5 text-center">
-                <span className="mt-1 d-block text-uppercase font-weight-bold">white paper</span>
-                <h1>{title}</h1>
+                <div className="tw-flex-col-reverse tw-flex">
+                    <h1>{title}</h1>
+                    <h6 className="tw-mb-1 tw-block">white paper</h6>
+                </div>
+
                 {pdf && (
                     <a
                         href={pdf}
-                        className="mt-4 btn btn-primary"
+                        className="tw-mt-3 btn btn-primary"
                         rel="noreferrer nofollow"
                         target="_blank"
                         title="Download PDF"
@@ -36,7 +39,6 @@ export const WhitePaperPage: FunctionComponent<Props> = ({ title, className, pdf
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        <i className="pr-2 fa fa-file-pdf" />
                         Download PDF
                     </a>
                 )}

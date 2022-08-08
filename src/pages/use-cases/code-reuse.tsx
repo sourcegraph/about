@@ -21,7 +21,7 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2 className="mb-5 display-5 font-weight-bold mb-lg-0">{header}</h2>
+        <h2 className="mb-5   mb-lg-0">{header}</h2>
         {text}
     </>
 )
@@ -153,23 +153,19 @@ const items = [
 const threeUpTextItems = [
     {
         icon: <XmlIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Quickly find trustworthy code to reuse</h4>,
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Quickly find trustworthy code to reuse</h4>,
         description:
             'Search your entire codebase to discover existing code to reuse. Gather crucial context, like who wrote the code, when, and where it’s used.',
     },
     {
         icon: <FolderUploadOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: (
-            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Safely maintain and improve shared libraries</h4>
-        ),
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Safely maintain and improve shared libraries</h4>,
         description:
             'Automate PRs to push global updates. Get alerts when out-of-date libraries or deprecated functions are used, and eliminate duplicative code.',
     },
     {
         icon: <AccountGroupOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: (
-            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Understand your team’s code reuse efforts</h4>
-        ),
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Understand your team’s code reuse efforts</h4>,
         description:
             'Code maintainers or stakeholders can easily track and understand innersourcing and code reuse trends within the team.',
     },
@@ -214,8 +210,8 @@ const CodeReusePage: FunctionComponent = () => (
                     <div className="row">
                         <div className="col-md-7 my-7">
                             <BackButton href="/use-cases" text="USE CASES" />
-                            <h1 className="mb-4 display-2 font-weight-bold">Find and use code that already exists</h1>
-                            <div className="mb-5 display-4 font-weight-normal">
+                            <h1 className="mb-4  ">Find and use code that already exists</h1>
+                            <div className="mb-5">
                                 Identify existing code libraries for reuse and use innersourcing to avoid spending time
                                 on problems a teammate already solved.
                             </div>
@@ -264,7 +260,7 @@ const CodeReusePage: FunctionComponent = () => (
                 <TwoColumnSection
                     leftColumn={
                         <>
-                            <h2 className="mb-4 display-3 font-weight-bold max-w-600">
+                            <h2 className="mb-4   max-w-600">
                                 Finding reliable, reusable code is tedious and inefficient
                             </h2>
                             <p className="mt-5">
@@ -315,7 +311,7 @@ const CodeReusePage: FunctionComponent = () => (
             <ContentSection>
                 <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-lg-center align-items-left">
                     <div className="mx-auto mb-5 d-flex flex-column text-start text-md-center max-w-600">
-                        <h2 className="display-3 font-weight-bold">Get started with Sourcegraph</h2>
+                        <h2 className=" ">Get started with Sourcegraph</h2>
                         <p>
                             Make it easier to discover trustworthy code for reuse so your teams can spend more time
                             solving new problems and less time rewriting code.
@@ -337,7 +333,7 @@ const CodeReusePage: FunctionComponent = () => (
                         <Link href="/use-cases" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="mt-4 d-flex justify-content-center font-weight-bold"
+                                className="mt-4 d-flex justify-content-center "
                                 title="Explore other use cases"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
@@ -358,7 +354,7 @@ const CodeReusePage: FunctionComponent = () => (
         <ContentSection className="py-5 py-lg-7">
             <div className="row d-flex">
                 <div className="col-lg-6">
-                    <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>
+                    <h2 className="mb-5  ">Related resources</h2>
                 </div>
                 {blogResourceItems.map(item => (
                     <BlogResourceItem key={item.title} blog={item} />
@@ -368,7 +364,7 @@ const CodeReusePage: FunctionComponent = () => (
 
         <ContentSection>
             <div className="text-center">
-                <h2 className="mb-6 display-3 font-weight-bold">Make the most of your existing code.</h2>
+                <h2 className="mb-6  ">Make the most of your existing code.</h2>
                 <Link href="/get-started/self-hosted" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a

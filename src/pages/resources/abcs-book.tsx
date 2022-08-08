@@ -55,7 +55,6 @@ export const AbcsEbook: FunctionComponent = () => (
                         That's why we created a new digital children's book titled{' '}
                         <a
                             href="https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf"
-                            className="font-weight-bolder"
                             title="Our ABCs: Always Be Coding"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}

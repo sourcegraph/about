@@ -13,17 +13,17 @@ import {
 
 const threeUpTextItems = [
     {
-        subtitle: <h3 className="pb-3 mx-md-auto display-3 font-weight-bold tw-text-blurple-400">5 minutes</h3>,
+        subtitle: <h3 className="pb-3 mx-md-auto tw-text-blurple-400">5 minutes</h3>,
         description:
             "Codecov reviewed their entire codebase and confirmed that they weren't exposed to the Log4j vulnerability.",
     },
     {
-        subtitle: <h3 className="pb-3 mx-md-auto display-3 font-weight-bold tw-text-blurple-400">12x faster</h3>,
+        subtitle: <h3 className="pb-3 mx-md-auto tw-text-blurple-400">12x faster</h3>,
         description:
             "Codecov was able to resolve Log4j 12x faster than with their code host's native search functionality and report absolute confidence in that resolution to their customers.",
     },
     {
-        subtitle: <h3 className="pb-3 mx-md-auto display-3 font-weight-bold tw-text-blurple-400">100% confidence</h3>,
+        subtitle: <h3 className="pb-3 mx-md-auto tw-text-blurple-400">100% confidence</h3>,
         description:
             'The security team at Codecov is able to complete code reviews independently and with complete confidence that their work is correct.',
     },
@@ -110,7 +110,7 @@ export const CaseStudy: FunctionComponent = () => (
                     with our time, whether it's code review, quickly answering security-related questions from clients,
                     or searching for things in the code more easily than we could through other tools.”
                 </p>
-                <h3 className="mt-6 mb-4 display-4 font-weight-normal max-w-600">
+                <h3 className="mt-6 mb-4 max-w-600">
                     Codecov reduced time to resolution with 100% confidence when facing Log4j
                 </h3>
                 <p>
@@ -160,9 +160,7 @@ export const CaseStudy: FunctionComponent = () => (
                     around trying to use other code search tools.”
                 </p>
 
-                <h3 className="mt-6 mb-4 display-4 font-weight-normal">
-                    Codecov makes code review secure and comprehensive
-                </h3>
+                <h3 className="mt-6 mb-4">Codecov makes code review secure and comprehensive</h3>
                 <p>
                     When he's not responding to the latest vulnerability, one of Mitchell's primary responsibilities is
                     performing security reviews on PRs and ensuring that other developers don't accidentally merge
@@ -192,7 +190,7 @@ export const CaseStudy: FunctionComponent = () => (
                     />
                 </div>
 
-                <h3 className="mb-4 display-4 font-weight-normal">
+                <h3 className="mb-4">
                     Codecov speeds up developer onboarding and saves senior developers time and effort
                 </h3>
                 <p>
@@ -229,9 +227,7 @@ export const CaseStudy: FunctionComponent = () => (
             </div>
 
             <ContentSection color="white" className="py-7 max-w-700 col-xl-5">
-                <h3 className="mb-4 display-4 font-weight-normal max-w-650">
-                    Sourcegraph Cloud was the right fit for a growing team
-                </h3>
+                <h3 className="mb-4 max-w-650">Sourcegraph Cloud was the right fit for a growing team</h3>
                 <p>
                     Codecov wanted something they could get up and running quickly, so they turned to Sourcegraph Cloud.
                 </p>
@@ -248,7 +244,7 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection color="white" className="text-center pb-7 max-w-700 col-xl-5">
-                <h5 className="mb-4 tw-text-xl font-weight-bold max-w-650">About Codecov</h5>
+                <h5 className="mb-4 tw-text-xl max-w-650">About Codecov</h5>
                 <p>
                     Codecov is a small organization making an outsized impact on the lives of over one million
                     developers. In over 29,000 companies across the globe, Codecov customers are able to ship healthier

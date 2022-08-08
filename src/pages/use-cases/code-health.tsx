@@ -22,7 +22,7 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2 className="mb-5 display-5 font-weight-bold mb-lg-0">{header}</h2>
+        <h2 className="mb-5   mb-lg-0">{header}</h2>
         {text}
     </>
 )
@@ -164,19 +164,19 @@ const items = [
 const threeUpTextItems = [
     {
         icon: <MagnifyIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="font-weight-bold">Find unhealthy code</h4>,
+        subtitle: <h4>Find unhealthy code</h4>,
         description:
             'Build a healthier codebase by finding references to deprecated services, libraries, URL patterns, and more across all your repositories.',
     },
     {
         icon: <WrenchOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="font-weight-bold">Remediate code health issues</h4>,
+        subtitle: <h4>Remediate code health issues</h4>,
         description:
             'Tackle refactoring efforts and tech debt from legacy systems and acquisitions with automated pull requests across your entire codebase.',
     },
     {
         icon: <ClipBoardPulseOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="font-weight-bold">Monitor code health initiatives</h4>,
+        subtitle: <h4>Monitor code health initiatives</h4>,
         description:
             'Stay on top of code health changes. Monitor and measure code health initiatives and get actionable insights into the impact of large-scale changes.',
     },
@@ -260,10 +260,8 @@ const UseCasePage: FunctionComponent = () => (
                     <div className="row">
                         <div className="col-md-7 my-7">
                             <BackButton href="/use-cases" text="USE CASES" />
-                            <h1 className="mb-4 display-2 font-weight-bold max-w-250 max-w-sm-275 max-w-lg-400">
-                                Healthy code, happy teams
-                            </h1>
-                            <div className="mb-5 display-4 font-weight-normal">
+                            <h1 className="mb-4   max-w-250 max-w-sm-275 max-w-lg-400">Healthy code, happy teams</h1>
+                            <div className="mb-5">
                                 Improve code health with large-scale changes and track key initiatives across your
                                 entire codebase.
                             </div>
@@ -312,9 +310,7 @@ const UseCasePage: FunctionComponent = () => (
                 <TwoColumnSection
                     leftColumn={
                         <>
-                            <h2 className="mb-md-4 display-3 font-weight-bold max-w-500">
-                                Improving code health can be daunting
-                            </h2>
+                            <h2 className="mb-md-4   max-w-500">Improving code health can be daunting</h2>
                             <p className="max-w-500">
                                 Engineering teams need to track and measure code quality consistently to monitor code
                                 health across their entire codebase, but current tools don't make this easy. What does
@@ -370,7 +366,7 @@ const UseCasePage: FunctionComponent = () => (
             <ContentSection>
                 <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-lg-center align-items-left">
                     <div className="mx-auto mb-5 d-flex flex-column text-start text-md-center max-w-600">
-                        <h2 className="display-3 font-weight-bold">Get started with Sourcegraph</h2>
+                        <h2 className=" ">Get started with Sourcegraph</h2>
                         <p>Give your team the tools they need to build a healthier codebase.</p>
                     </div>
                     <div className="px-0 text-center col-12">
@@ -395,7 +391,7 @@ const UseCasePage: FunctionComponent = () => (
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                <p className="font-weight-bold">Explore other use cases</p>
+                                <p>Explore other use cases</p>
                             </a>
                         </Link>
                     </div>
@@ -410,7 +406,7 @@ const UseCasePage: FunctionComponent = () => (
         <ContentSection className="py-5 py-lg-7">
             <div className="row d-flex">
                 <div className="col-lg-6">
-                    <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>
+                    <h2 className="mb-5  ">Related resources</h2>
                 </div>
                 {blogResourceItems.map(item => (
                     <BlogResourceItem key={item.title} blog={item} />
@@ -420,7 +416,7 @@ const UseCasePage: FunctionComponent = () => (
 
         <ContentSection>
             <div className="flex-wrap text-center d-flex justify-content-center mb-md-4">
-                <h2 className="mx-4 mb-4 w-100 font-weight-bold mx-lg-0">Ready to build a healthier codebase?</h2>
+                <h2 className="mx-4 mb-4 w-100  mx-lg-0">Ready to build a healthier codebase?</h2>
                 <div className="d-flex justify-content-center mb-lg-6">
                     <Link href="/get-started/self-hosted" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

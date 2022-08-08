@@ -38,15 +38,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     return (
         <div>
             {title && (
-                <h2
-                    className={classNames(
-                        'display-3 text-md-center font-weight-bold mt-lg-3',
-                        props.hasImages ? 'mb-6' : 'mb-4',
-                        isMdOrDown && 'text-uppercase tw-text-base'
-                    )}
-                >
-                    {title}
-                </h2>
+                <h2 className={classNames('text-md-center mt-lg-3', props.hasImages ? 'mb-6' : 'mb-4')}>{title}</h2>
             )}
             <div
                 className={`d-flex flex-wrap align-items-center tw-h-auto ${
@@ -59,8 +51,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                             <h2
                                 className={classNames(
                                     'd-none',
-                                    item === carouselHook.carouselItems.currentItem &&
-                                        'd-block display-5 font-weight-bold'
+                                    item === carouselHook.carouselItems.currentItem && 'd-block'
                                 )}
                                 key={item.buttonLabel}
                                 onClick={() => carouselHook.moveCarousel(index)}
@@ -88,8 +79,8 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         {carouselItems.map((item, index) => (
                             <p
                                 className={classNames(
-                                    'custom-carousel-item font-weight-normal tw-cursor-pointer display-5 py-2',
-                                    item === carouselHook.carouselItems.currentItem && 'font-weight-bolder'
+                                    'custom-carousel-item tw-cursor-pointer  py-2',
+                                    item === carouselHook.carouselItems.currentItem && 'font-weight-bold'
                                 )}
                                 key={item.buttonLabel}
                                 onClick={() => carouselHook.moveCarousel(index)}
@@ -118,11 +109,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                             onMouseOver={() => carouselHook.moveCarousel(index)}
                             onFocus={() => carouselHook.moveCarousel(index)}
                         >
-                            {!autoAdvance && (
-                                <h1 className={classNames('font-weight-bold mb-lg-4', !autoAdvance && 'display-2')}>
-                                    {item.buttonLabel}
-                                </h1>
-                            )}
+                            {!autoAdvance && <h1 className="mb-lg-4">{item.buttonLabel}</h1>}
                             <div>{item.text}</div>
                         </div>
                     ))}

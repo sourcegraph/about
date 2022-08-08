@@ -82,7 +82,7 @@ const DesktopNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton }
         <Nav className="right-nav justify-content-lg-end">
             {!hideGetStartedButton && (
                 <Nav.Link
-                    className="px-2 py-2 btn tw-text-blurple-400 font-weight-bolder"
+                    className="px-2 py-2 btn tw-text-blurple-400 font-weight-bold"
                     href="https://sourcegraph.com/search"
                     title="Search code"
                     data-button-style={buttonStyle.text}
@@ -94,7 +94,7 @@ const DesktopNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton }
             )}
 
             <Nav.Link
-                className="px-5 py-2 ml-3 btn btn-outline-primary font-weight-bolder"
+                className="px-5 py-2 ml-3 btn btn-outline-primary font-weight-bold"
                 href="/demo"
                 title="Request a demo"
                 data-button-style={buttonStyle.outline}
@@ -106,7 +106,7 @@ const DesktopNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton }
 
             {!hideGetStartedButton && (
                 <Nav.Link
-                    className="px-5 py-2 ml-3 btn btn-primary font-weight-bolder"
+                    className="px-5 py-2 ml-3 btn btn-primary font-weight-bold"
                     href="/get-started/self-hosted"
                     title="Get started"
                     data-button-style={buttonStyle.primary}

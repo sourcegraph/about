@@ -21,7 +21,7 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2 className="mb-5 display-5 font-weight-bold mb-lg-0">{header}</h2>
+        <h2 className="mb-5 mb-lg-0">{header}</h2>
         {text}
     </>
 )
@@ -208,19 +208,19 @@ const blogResourceItems = [
 const threeUpTextItems = [
     {
         icon: <MagnifyIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Assess incidents quickly</h4>,
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Assess incidents quickly</h4>,
         description:
             "Pinpoint the code responsible for the incident and find the root cause in your codebase. Understand the code's functionality to verify the issue.",
     },
     {
         icon: <ClockTimeThreeOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Plan your remediation</h4>,
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Plan your remediation</h4>,
         description:
             'Reduce time to resolution by supplying response teams with actionable details, like links to all affected code.',
     },
     {
         icon: <WebIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Execute your plan globally</h4>,
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Execute your plan globally</h4>,
         description:
             "Fix the root cause and confirm the same issue doesn't reoccur in other areas by locating the code pattern and automating fixes across your entire codebase.",
     },
@@ -240,10 +240,8 @@ const IncidentResponsePage: FunctionComponent = () => (
                     <div className="row">
                         <div className="col-md-7 my-7">
                             <BackButton href="/use-cases" text="USE CASES" />
-                            <h1 className="mb-4 display-2 font-weight-bold">
-                                Resolve incidents quickly and confidently
-                            </h1>
-                            <div className="mb-5 display-4 font-weight-normal">
+                            <h1 className="mb-4 ">Resolve incidents quickly and confidently</h1>
+                            <div className="mb-5">
                                 Identify the root cause of an incident, understand its potential impact on other
                                 services, and fix the issue everywhere in your codebase so it won't reoccur.
                             </div>
@@ -295,9 +293,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                 <TwoColumnSection
                     leftColumn={
                         <>
-                            <h2 className="mb-4 display-3 font-weight-bold max-w-500">
-                                Incident response is stressful and overwhelming
-                            </h2>
+                            <h2 className="mb-4 max-w-500">Incident response is stressful and overwhelming</h2>
                             <p>
                                 Current tools don't enable teams to quickly get to the root cause of an incident and
                                 ensure it doesn't reoccur. What does that mean for you?
@@ -371,7 +367,7 @@ const IncidentResponsePage: FunctionComponent = () => (
             <ContentSection>
                 <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-lg-center align-items-left">
                     <div className="mx-auto mb-5 d-flex flex-column text-start text-md-center max-w-600">
-                        <h2 className="display-3 font-weight-bold">Get started with Sourcegraph</h2>
+                        <h2 className="">Get started with Sourcegraph</h2>
                         <p>
                             Respond to incidents with confidence and speed, and remediate issues at their root to ensure
                             they don't reoccur.
@@ -393,7 +389,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                         <Link href="/use-cases" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="mt-4 d-flex justify-content-center font-weight-bold"
+                                className="mt-4 d-flex justify-content-center "
                                 title="Explore other use cases"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
@@ -414,7 +410,7 @@ const IncidentResponsePage: FunctionComponent = () => (
         <ContentSection className="py-5 py-lg-7">
             <div className="row d-flex">
                 <div className="col-lg-6">
-                    <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>
+                    <h2 className="mb-5 ">Related resources</h2>
                 </div>
                 {blogResourceItems.map(item => (
                     <BlogResourceItem key={item.title} blog={item} />
@@ -424,9 +420,7 @@ const IncidentResponsePage: FunctionComponent = () => (
 
         <ContentSection>
             <div className="text-center">
-                <h2 className="mx-4 mb-4 font-weight-bold display-3 mx-lg-0">
-                    Respond to incidents faster and more effectively.
-                </h2>
+                <h2 className="mx-4 mb-4 mx-lg-0">Respond to incidents faster and more effectively.</h2>
                 <Link href="/get-started/self-hosted" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a

@@ -15,8 +15,8 @@ const CaseStudiesHome: FunctionComponent = () => (
         >
             <div className="mt-2">
                 <ContentSection className="py-5 text-center hero-section">
-                    <h1 className="display-2 font-weight-bold">Sourcegraph case studies</h1>
-                    <h4 className="py-2 font-weight-normal">
+                    <h1 className="">Sourcegraph case studies</h1>
+                    <h4 className="py-2">
                         Learn how engineering teams understand, fix, and automate across their entire codebase
                     </h4>
                 </ContentSection>

@@ -16,8 +16,8 @@ const FixingVulnerabilities: FunctionComponent = () => (
         <div className="container py-7">
             <div className="row">
                 <div className="col-lg-6">
-                    <h1 className="mb-4 font-weight-bold">Find and fix security vulnerabilities faster</h1>
-                    <h4 className="font-weight-bold">You can't fix what you can't find</h4>
+                    <h1 className="mb-4">Find and fix security vulnerabilities faster</h1>
+                    <h4>You can't fix what you can't find</h4>
                     <p>
                         Search within and across your repositories to find and fix vulnerabilities in minutes, not
                         weeks. Deploy fixes with confidence, knowing you've found and remediated every instance of
@@ -58,9 +58,7 @@ const FixingVulnerabilities: FunctionComponent = () => (
         </div>
 
         <div className="container text-center py-7 max-w-650">
-            <h2 className="font-weight-bold">
-                Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk.
-            </h2>
+            <h2>Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk.</h2>
 
             <div className="mx-auto mt-5 max-w-400">
                 <Link href="/demo">

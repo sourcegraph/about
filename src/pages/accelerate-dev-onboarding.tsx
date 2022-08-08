@@ -17,12 +17,8 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
         <div className="container py-7">
             <div className="row">
                 <div className="col-lg-6 pr-lg-5">
-                    <h1 className="mb-4 font-weight-bold">
-                        Accelerate developer onboarding and decrease time to first commit
-                    </h1>
-                    <h4 className="font-weight-bold">
-                        Self-serve onboarding, codebase exploration, and knowledge sharing
-                    </h4>
+                    <h1 className="mb-4">Accelerate developer onboarding and decrease time to first commit</h1>
+                    <h4>Self-serve onboarding, codebase exploration, and knowledge sharing</h4>
                     <p>
                         With Sourcegraph, developers can find their own answers without waiting for someone to point
                         them to the relevant code. Get sharable links to help developers ask specific questions with
@@ -57,7 +53,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
 
         <div className="text-center">
             <div className="container py-7 max-w-650">
-                <h2 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h2>
+                <h2>Ready to accelerate developer onboarding? Let's talk.</h2>
 
                 <div className="mx-auto mt-5 max-w-400">
                     <Link href="/demo">

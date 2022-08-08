@@ -20,7 +20,7 @@ const ContactHome: FunctionComponent = () => (
             description,
         }}
     >
-        <ContentPage title={title} description={description} titleClassName="tw-text-7xl tw-font-semibold">
+        <ContentPage title={title} description={description}>
             <ContentSection className="pt-6 pb-2">
                 <div className="row">
                     <div className="pb-1 mb-4 col-md-6">

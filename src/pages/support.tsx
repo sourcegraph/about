@@ -37,8 +37,8 @@ const Support: FunctionComponent = () => (
         }}
     >
         <div className="mt-2">
-            <ContentSection className="hero-section text-center py-5">
-                <h1 className="display-2 font-weight-bold">Sourcegraph Support</h1>
+            <ContentSection className="py-5 text-center hero-section">
+                <h1>Sourcegraph Support</h1>
                 <p>
                     See{' '}
                     <Link href="/pricing" passHref={true}>
@@ -55,14 +55,14 @@ const Support: FunctionComponent = () => (
                     to learn more about these tiers.
                 </p>
             </ContentSection>
-            <div className="container-fluid my-0 mx-auto max-w-1000">
-                <div className="row pt-4">
-                    <div className="d-flex col-md-4 mx-auto mb-4">
+            <div className="tw-mx-auto tw-my-0 tw-max-w-screen-xl">
+                <div className="pt-4 row">
+                    <div className="mx-auto mb-4 d-flex col-md-4">
                         <div className="card h-100">
                             <div className="card-body">
-                                <h1 className="card-title mt-3 mb-3 text-center">Free</h1>
+                                <h1 className="mt-3 mb-3 text-center card-title">Free</h1>
                                 <a
-                                    className="font-size-base btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex"
+                                    className="text-center font-size-base btn btn-outline-primary w-100 justify-content-center d-inline-flex"
                                     href="https://docs.sourcegraph.com#quickstart-guide"
                                     title="Deploy"
                                     data-button-style={buttonStyle.outline}
@@ -72,7 +72,7 @@ const Support: FunctionComponent = () => (
                                     Deploy
                                 </a>
                             </div>
-                            <ol className="mt-4 list-group list-group-flush py-2 h-100">
+                            <ol className="py-2 mt-4 list-group list-group-flush h-100">
                                 <li className={CLASS_NAMES.featureOffered}>
                                     <CheckIcon className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.communitySupport}
@@ -117,12 +117,12 @@ const Support: FunctionComponent = () => (
                             </ol>
                         </div>
                     </div>
-                    <div className="d-flex col-md-4 mx-auto mb-4">
+                    <div className="mx-auto mb-4 d-flex col-md-4">
                         <div className="card">
                             <div className="card-body">
-                                <h1 className="card-title mt-3 mb-3 text-center">Team</h1>
+                                <h1 className="mt-3 mb-3 text-center card-title">Team</h1>
                                 <a
-                                    className="font-size-base btn btn-success w-100 justify-content-center text-center d-inline-flex"
+                                    className="text-center font-size-base btn btn-success w-100 justify-content-center d-inline-flex"
                                     href="https://sourcegraph.com/subscriptions/new"
                                     title="Buy now"
                                     data-button-style={buttonStyle.primary}
@@ -132,7 +132,7 @@ const Support: FunctionComponent = () => (
                                     Buy now
                                 </a>
                             </div>
-                            <ol className="mt-4 list-group list-group-flush py-2 h-100">
+                            <ol className="py-2 mt-4 list-group list-group-flush h-100">
                                 <li className={CLASS_NAMES.featureOffered}>
                                     <CheckIcon className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.communitySupport}
@@ -177,17 +177,17 @@ const Support: FunctionComponent = () => (
                             </ol>
                         </div>
                     </div>
-                    <div className="d-flex col-md-4 mx-auto mb-4">
+                    <div className="mx-auto mb-4 d-flex col-md-4">
                         <div className="card">
                             <div className="card-body">
-                                <h1 className="card-title mt-3 mb-3 text-center">Enterprise</h1>
+                                <h1 className="mt-3 mb-3 text-center card-title">Enterprise</h1>
                                 <Link
                                     href="/contact/request-info/?form_submission_source=support-enterprise"
                                     passHref={true}
                                 >
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
-                                        className="font-size-base btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex"
+                                        className="text-center font-size-base btn btn-outline-primary w-100 justify-content-center d-inline-flex"
                                         title="Contact us"
                                         data-button-style={buttonStyle.outline}
                                         data-button-location={buttonLocation.body}
@@ -197,7 +197,7 @@ const Support: FunctionComponent = () => (
                                     </a>
                                 </Link>
                             </div>
-                            <ol className="mt-4 list-group list-group-flush py-2 h-100">
+                            <ol className="py-2 mt-4 list-group list-group-flush h-100">
                                 <li className={CLASS_NAMES.featureOffered}>
                                     <CheckIcon className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.communitySupport}

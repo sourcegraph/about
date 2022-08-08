@@ -41,13 +41,13 @@ const Hero: FunctionComponent = () => {
             ))}
 
             <div className="mx-auto text-center max-w-750">
-                <h1 className="tw-font-semibold tw-text-4xl tw-leading-10 md:tw-text-6xl lg:tw-text-[3.75rem] lg:tw-leading-[1]">
+                <h1 className="tw-text-4xl tw-leading-10 md:tw-text-6xl lg:tw-text-[3.75rem] lg:tw-leading-[1]">
                     <span className="mb-2 tw-text-transparent d-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">
                         {headline}
                     </span>{' '}
                     across your entire codebase
                 </h1>
-                <p className="mx-auto my-5 font-weight-bold max-w-700">
+                <p className="mx-auto my-5 max-w-700">
                     Understand, fix, and automate across your codebase with Sourcegraph's code intelligence platform
                 </p>
 

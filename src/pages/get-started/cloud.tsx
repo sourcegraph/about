@@ -23,7 +23,7 @@ export const CloudPage: FunctionComponent = () => {
             }}
             hero={
                 <div className="py-5 container-xl">
-                    <h1 className="mb-2 display-1">
+                    <h1 className="mb-2 ">
                         <strong>What's best for you?</strong>
                     </h1>
                     <p>From GE to Uber, the world's best developers use Sourcegraph every day.</p>
@@ -41,7 +41,7 @@ export const CloudPage: FunctionComponent = () => {
                                 text="Deployment Options"
                             />
 
-                            <h1 className="mb-4 display-2 font-weight-bolder">Sourcegraph Cloud</h1>
+                            <h1 className="mb-4">Sourcegraph Cloud</h1>
 
                             <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>
 

@@ -297,7 +297,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         >
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="mt-3 btn btn-lg btn-outline-light universal-code-search__btn font-weight-normal"
+                                className="mt-3 btn btn-lg btn-outline-light universal-code-search__btn"
                                 title="Free download"
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.body}

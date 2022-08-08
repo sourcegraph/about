@@ -20,9 +20,7 @@ export const Report: FunctionComponent = () => (
             resource="https://www.gartner.com/doc/reprints?id=1-2A44UTV8&ct=220524&st=sb"
             description={
                 <section className="col-md-6 col-12 pr-lg-6">
-                    <h3 className="font-weight-normal pb-5">
-                        Get complimentary access to the 2022 Gartner® Cool Vendors™ report.
-                    </h3>
+                    <h3 className="pb-5">Get complimentary access to the 2022 Gartner® Cool Vendors™ report.</h3>
                     <p className="pb-2">
                         Learn how we believe Sourcegraph and other innovative tools help engineers and engineering
                         leaders boost developer productivity while mitigating security risks.

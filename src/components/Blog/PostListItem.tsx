@@ -19,12 +19,12 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
 }) => (
     <article className={className}>
         <header className={headerClassName}>
-            <h3 className="tw-text-xl">
+            <h4>
                 {renderTitleAsLink === true ? (
                     <Link href={`/${blogType}/${slugPath}`} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="tw-text-black d-block"
+                            className="tw-text-gray-600 d-block"
                             title={frontmatter.title}
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
@@ -36,7 +36,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                 ) : (
                     frontmatter.title
                 )}
-            </h3>
+            </h4>
 
             {frontmatter.authors?.length && (
                 <p className="mb-0 text-align-center text-secondary">
@@ -98,7 +98,6 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                             <Link href={`/${blogType}/${slugPath}`} passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="font-weight-bold"
                                     title="Read more"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}

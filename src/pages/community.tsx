@@ -17,8 +17,8 @@ export const Community: FunctionComponent = () => (
                 <div className="p-5 row">
                     <div className="col-lg-6">
                         <div className="text-uppercase">Join us</div>
-                        <h1 className="mb-0 display-2 font-weight-bold">Welcome to the Sourcegraph Community</h1>
-                        <p className="my-5 display-5">
+                        <h1 className="mb-0">Welcome to the Sourcegraph Community</h1>
+                        <p className="my-5 ">
                             Seek guidance. Share best practices. Ask questions. The Sourcegraph Community is your new
                             platform to connect with one of the world's most talented developer communities. Here, we
                             encourage everyone to learn from each other and share everything they know. Because when we
@@ -48,7 +48,7 @@ export const Community: FunctionComponent = () => (
         }
     >
         <ContentSection className="py-5 text-center">
-            <h2 className="mt-5 mb-3 display-3 font-weight-bold">Get up to speed</h2>
+            <h2 className="mt-5 mb-3">Get up to speed</h2>
             <div className="row justify-content-center">
                 <p className="col-md-8">
                     We can’t give you a 25-hour day, but here is a{' '}
@@ -107,7 +107,7 @@ export const Community: FunctionComponent = () => (
         <ContentSection className="py-7">
             <div className="row">
                 <div className="col-lg-6">
-                    <h2 className="mt-5 mb-3 display-3 font-weight-bold">DM us on Discord. We're here.</h2>
+                    <h2 className="mt-5 mb-3">DM us on Discord. We're here.</h2>
                     What you seek is seeking you — come, chat and collaborate with inspiring engineers like you.
                     <ul className="tw-my-3">
                         <li className="mt-2">Ask questions - any questions: what is the best sit-stand desk?</li>
@@ -134,7 +134,7 @@ export const Community: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection className="py-4">
-            <h2 className="mb-5 text-center display-3 font-weight-bold">What's next?</h2>
+            <h2 className="mb-5 text-center">What's next?</h2>
             <Tabs
                 tabs={[
                     {
@@ -250,7 +250,7 @@ export const Community: FunctionComponent = () => (
         <ContentSection className="py-5">
             <div className="tw-py-24 tw-max-w-screen-xl sm:tw-grid sm:tw-grid-cols-2 tw-mx-auto tw-px-4">
                 <div className="tw-mb-4 sm:mb-0 sm:tw-pr-4">
-                    <h2 className="mb-3 display-3 font-weight-bold">We’d love to hear from you!</h2>
+                    <h2 className="mb-3">We’d love to hear from you!</h2>
                     <br />
                     Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn,
                     or email us at{' '}

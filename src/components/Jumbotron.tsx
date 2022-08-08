@@ -21,12 +21,12 @@ export const Jumbotron: FunctionComponent<Props> = ({
     color = 'white',
     logomark = true,
     title,
-    titleClassName = 'tw-text-5xl tw-font-semibold',
+    titleClassName = '',
     description,
     children,
 }) => (
     <div className={`jumbotron tw-rounded-none ${COLORS[color]} ${className}`}>
-        <div className="tw-container mx-auto tw-text-center tw-pt-6 tw-pb-8">
+        <div className="mx-auto tw-container tw-text-center tw-pt-6 tw-pb-8">
             {logomark && (
                 <img
                     className="tw-mb-1 tw-w-8 tw-h-8 tw-mx-auto"

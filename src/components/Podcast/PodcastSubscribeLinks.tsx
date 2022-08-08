@@ -1,7 +1,5 @@
 import { FunctionComponent } from 'react'
 
-import classNames from 'classnames'
-
 import { buttonStyle, buttonLocation } from '@data'
 
 interface Props {
@@ -15,7 +13,7 @@ export const PodcastSubscribeLinks: FunctionComponent<Props> = ({ linkClassName 
             target="_blank"
             rel="noreferrer"
             href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA"
-            className={classNames(linkClassName, 'font-weight-bold')}
+            className={linkClassName}
             title="YouTube"
             data-button-style={buttonStyle.text}
             data-button-location={buttonLocation.body}
@@ -27,7 +25,7 @@ export const PodcastSubscribeLinks: FunctionComponent<Props> = ({ linkClassName 
             target="_blank"
             rel="noreferrer"
             href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009"
-            className={classNames(linkClassName, 'font-weight-bold')}
+            className={linkClassName}
             title="Apple"
             data-button-style={buttonStyle.text}
             data-button-location={buttonLocation.body}
@@ -39,7 +37,7 @@ export const PodcastSubscribeLinks: FunctionComponent<Props> = ({ linkClassName 
             target="_blank"
             rel="noreferrer"
             href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6"
-            className={classNames(linkClassName, 'font-weight-bold')}
+            className={linkClassName}
             title="Spotify"
             data-button-style={buttonStyle.text}
             data-button-location={buttonLocation.body}
@@ -51,7 +49,7 @@ export const PodcastSubscribeLinks: FunctionComponent<Props> = ({ linkClassName 
             target="_blank"
             rel="noreferrer"
             href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw=="
-            className={classNames(linkClassName, 'font-weight-bold')}
+            className={linkClassName}
             title="Google"
             data-button-style={buttonStyle.text}
             data-button-location={buttonLocation.body}
@@ -63,7 +61,7 @@ export const PodcastSubscribeLinks: FunctionComponent<Props> = ({ linkClassName 
             target="_blank"
             rel="noreferrer"
             href="https://feeds.buzzsprout.com/1097978.rss"
-            className={classNames(linkClassName, 'font-weight-bold')}
+            className={linkClassName}
             title="RSS"
             data-button-style={buttonStyle.text}
             data-button-location={buttonLocation.body}

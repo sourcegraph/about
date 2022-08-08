@@ -11,6 +11,7 @@ const installText =
 
 export const Install: FunctionComponent = () => {
     const [copied, setCopied] = useState(false)
+    const [close, setClose] = useState(false)
 
     const copy = async (): Promise<void> => {
         if (navigator.clipboard) {
@@ -37,11 +38,38 @@ export const Install: FunctionComponent = () => {
         return () => clearTimeout(resetCopied)
     }, [copied])
 
+    useEffect(() => {
+        const closeClicked = setTimeout(() => {
+            if (close) {
+                setClose(false)
+            }
+        }, 1000)
+        return () => clearTimeout(closeClicked)
+    }, [close])
+
     return (
-        <div className="tw-bg-white tw-rounded-[20px] tw-overflow-hidden tw-shadow-[-4px_4px_10px_0_rgba(0,0,0,0.25)]">
+        <div
+            className={classNames(
+                'tw-bg-white tw-rounded-[20px] tw-overflow-hidden tw-shadow-[-4px_4px_10px_0_rgba(0,0,0,0.25)]',
+                {
+                    'tw-animate-fadeOut': close,
+                }
+            )}
+        >
             <div className="tw-flex tw-items-center tw-px-4 tw-bg-[#f1f1f1] tw-h-11">
                 {['close', 'minimize', 'fullscreen'].map(action => (
-                    <span key={action} className="tw-bg-white tw-rounded-full tw-mr-2 tw-w-3.5 tw-h-3.5" />
+                    <span
+                        key={action}
+                        className={classNames('tw-bg-white tw-rounded-full tw-mr-2 tw-w-3.5 tw-h-3.5', {
+                            'hover:tw-bg-vermillion-300': action === 'close',
+                            'hover:tw-bg-lemon-300 tw-cursor-help': action === 'minimize',
+                            'hover:tw-bg-green-400 tw-cursor-help': action === 'fullscreen',
+                        })}
+                        onClick={action === 'close' ? () => setClose(true) : undefined}
+                        onKeyDown={action === 'close' ? () => setClose(true) : undefined}
+                        role="button"
+                        tabIndex={0}
+                    />
                 ))}
             </div>
 

@@ -10,16 +10,14 @@ import { useQueryString } from '@hooks'
 import styles from './getStarted.module.scss'
 
 export const MostPopularBadge: FunctionComponent = () => (
-    <span
-        className={`${styles.mostPopularBadge} tw-bg-violet-400 badge text-white text-uppercase font-weight-bolder mb-3`}
-    >
+    <span className={`${styles.mostPopularBadge} tw-bg-violet-400 badge text-white text-uppercase mb-3`}>
         <img alt="star" src="/Star.svg" className="mr-2 tw-inline" />
         <span>Most Popular</span>
     </span>
 )
 
 export const DesignedForTitle: FunctionComponent = () => (
-    <div className={`text-uppercase font-weight-bolder mb-1 ${styles.designedForTitle}`}>Designed For</div>
+    <div className={`text-uppercase mb-1 ${styles.designedForTitle}`}>Designed For</div>
 )
 
 export const GetStartedPage: FunctionComponent = () => {
@@ -49,7 +47,7 @@ export const GetStartedPage: FunctionComponent = () => {
             }}
             hero={
                 <div className="py-5 container-xl">
-                    <h1 className="mb-2 display-1">
+                    <h1 className="mb-2 ">
                         <strong>What's best for you?</strong>
                     </h1>
                     <p>From GE to Uber, the world's best developers use Sourcegraph every day.</p>

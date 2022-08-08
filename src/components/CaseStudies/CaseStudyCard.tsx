@@ -121,7 +121,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                 src={logo}
                 alt={`${name} logo`}
             />
-            {altTitle && <h5 className="font-weight-bold">{altTitle}</h5>}
+            {altTitle && <h5>{altTitle}</h5>}
             <p className="card-text">
                 {title}{' '}
                 <div className="tw-mt-2">
