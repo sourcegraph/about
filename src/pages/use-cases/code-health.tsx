@@ -7,6 +7,7 @@ import Link from 'next/link'
 
 import {
     BackButton,
+    Background,
     Blockquote,
     BlogResourceItem,
     ContentSection,
@@ -18,8 +19,6 @@ import {
     TwoColumnSection,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
-
-import styles from './useCases.module.scss'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
@@ -256,54 +255,52 @@ const UseCasePage: FunctionComponent = () => (
         }}
         className="use-cases-page navbar-light"
         hero={
-            <>
-                <div className={styles.pageHeader}>
-                    <div className="container pb-4">
-                        <div className="row">
-                            <div className="col-md-7 my-7">
-                                <BackButton href="/use-cases" text="USE CASES" />
-                                <h1 className="mb-4 display-2 font-weight-bold max-w-250 max-w-sm-275 max-w-lg-400">
-                                    Healthy code, happy teams
-                                </h1>
-                                <div className="mb-5 display-4 font-weight-normal">
-                                    Improve code health with large-scale changes and track key initiatives across your
-                                    entire codebase.
+            <Background variant="lightNebulousVenus2">
+                <div className="container pb-4">
+                    <div className="row">
+                        <div className="col-md-7 my-7">
+                            <BackButton href="/use-cases" text="USE CASES" />
+                            <h1 className="mb-4 display-2 font-weight-bold max-w-250 max-w-sm-275 max-w-lg-400">
+                                Healthy code, happy teams
+                            </h1>
+                            <div className="mb-5 display-4 font-weight-normal">
+                                Improve code health with large-scale changes and track key initiatives across your
+                                entire codebase.
+                            </div>
+                            <div className="text-center flex-column flex-md-row d-md-flex">
+                                <div className="mb-3 mb-md-0">
+                                    <Link href="/demo" passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a
+                                            className="btn btn-primary w-100 max-w-350"
+                                            title="Request a Demo."
+                                            data-button-style={buttonStyle.primary}
+                                            data-button-location={buttonLocation.hero}
+                                            data-button-type="cta"
+                                        >
+                                            Request a demo
+                                        </a>
+                                    </Link>
                                 </div>
-                                <div className="text-center flex-column flex-md-row d-md-flex">
-                                    <div className="mb-3 mb-md-0">
-                                        <Link href="/demo" passHref={true}>
-                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                            <a
-                                                className="btn btn-primary w-100 max-w-350"
-                                                title="Request a Demo."
-                                                data-button-style={buttonStyle.primary}
-                                                data-button-location={buttonLocation.hero}
-                                                data-button-type="cta"
-                                            >
-                                                Request a demo
-                                            </a>
-                                        </Link>
-                                    </div>
-                                    <div className="ml-md-3">
-                                        <Link href="/get-started/self-hosted" passHref={true}>
-                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                            <a
-                                                className="btn btn-outline-primary w-100 max-w-350"
-                                                title="Try Sourcegraph."
-                                                data-button-style={buttonStyle.outline}
-                                                data-button-location={buttonLocation.hero}
-                                                data-button-type="cta"
-                                            >
-                                                Try Sourcegraph now
-                                            </a>
-                                        </Link>
-                                    </div>
+                                <div className="ml-md-3">
+                                    <Link href="/get-started/self-hosted" passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a
+                                            className="btn btn-outline-primary w-100 max-w-350"
+                                            title="Try Sourcegraph."
+                                            data-button-style={buttonStyle.outline}
+                                            data-button-location={buttonLocation.hero}
+                                            data-button-type="cta"
+                                        >
+                                            Try Sourcegraph now
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </>
+            </Background>
         }
     >
         <ContentSection className="my-7">

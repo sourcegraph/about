@@ -41,7 +41,7 @@ export const UniversalCodeSearchEbook: FunctionComponent = () => (
                             <img
                                 src="/external-logos/sourcegraph-universal-code-search-ebook-v1.jpg"
                                 alt="Download: Universal Code Search and Intelligence"
-                                className="landing-page__img"
+                                className="tw-max-w-[250px] tw-mx-auto"
                             />
                         </div>
                         <div className="col-md-4">

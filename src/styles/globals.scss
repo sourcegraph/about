@@ -13,7 +13,12 @@
 @import 'node_modules/bootstrap/scss/functions';
 @import 'node_modules/bootstrap/scss/mixins';
 
-@import 'colors';
+/* ==================== Bootstrap Colors ==================== */
+$blurple: #5033e1;
+$theme-colors: (
+    'primary': $blurple,
+    'blurple': $blurple,
+);
 
 /* ==================== Bootstrap Overrides ==================== */
 
@@ -131,22 +136,13 @@ $grid-breakpoints: (
 @import 'components/blog/PodcastPost';
 @import 'components/blog/PostsList';
 @import 'components/blog/ReleasePost';
-@import 'components/product/EventsSection';
-@import 'components/product/IntegratesWithSection';
-@import 'components/product/UseCasesTable';
-@import 'components/Events';
 @import 'components/Header';
-@import 'components/TemplateCodeBlock';
 @import 'components/TestimonialCarousel';
-@import 'components/Tweets';
 
 /* ==================== Pages ==================== */
-@import 'pages/community';
 @import 'pages/_case_studies';
 @import 'pages/content';
 @import 'pages/jobs';
-@import 'pages/landing-page';
-@import 'pages/product/code-search-navigation';
 @import 'pages/code-insights';
 @import 'templates/PostTemplate';
 

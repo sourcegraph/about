@@ -55,7 +55,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
     }, [])
 
     return (
-        <section className="container tw-relative d-flex flex-lg-row flex-column bg-light-gray-4-2 py-7">
+        <section className="container tw-relative d-flex flex-lg-row flex-column py-7">
             <div className="col-lg-6 col-12">
                 <div className="mb-5 d-flex flex-column flex-lg-row justify-content-lg-end">
                     <div className="p-0 p-1 mb-3 text-center rounded d-flex tw-bg-violet-100 align-self-start col-1 col-lg-2 justify-content-center align-items-center max-w-50">

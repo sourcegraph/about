@@ -5,8 +5,6 @@ import classNames from 'classnames'
 import { buttonStyle, buttonLocation } from '@data'
 import { TrySourcegraph } from 'components/TrySourcegraph'
 
-import styles from './whitePaperPage.module.scss'
-
 interface Props {
     title: string
     pdf?: string
@@ -19,18 +17,18 @@ export const WhitePaperPage: FunctionComponent<Props> = ({ title, className, pdf
     <div className={className}>
         <div
             className={classNames('jumbotron rounded-0 min-h-250 d-flex align-items-center text-light', className, {
-                [styles.hero]: heroBackgroundImage,
+                ['tw-bg-n-repeat tw-bg-cover tw-bg-center']: heroBackgroundImage,
             })}
             // eslint-disable-next-line react/forbid-dom-props
             style={heroBackgroundImage ? { backgroundImage: `url(${heroBackgroundImage})` } : undefined}
         >
-            <div className="container text-center py-5">
-                <span className="d-block mt-1 text-uppercase font-weight-bold">white paper</span>
+            <div className="container py-5 text-center">
+                <span className="mt-1 d-block text-uppercase font-weight-bold">white paper</span>
                 <h1>{title}</h1>
                 {pdf && (
                     <a
                         href={pdf}
-                        className="btn btn-primary mt-4"
+                        className="mt-4 btn btn-primary"
                         rel="noreferrer nofollow"
                         target="_blank"
                         title="Download PDF"
@@ -38,7 +36,7 @@ export const WhitePaperPage: FunctionComponent<Props> = ({ title, className, pdf
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        <i className="fa fa-file-pdf pr-2" />
+                        <i className="pr-2 fa fa-file-pdf" />
                         Download PDF
                     </a>
                 )}

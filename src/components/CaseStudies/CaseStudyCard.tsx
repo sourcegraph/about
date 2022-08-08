@@ -6,8 +6,6 @@ import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
 
-import styles from './CaseStudyCard.module.scss'
-
 interface CaseStudy {
     name: string
     logo: string
@@ -118,7 +116,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
     <div className="flex-grow-1">
         <div className="card-body">
             <img
-                className={classNames(styles.logo, 'max-w-200 mb-4', { 'tw-brightness-0': bwLogo })}
+                className={classNames('tw-max-w-[135px] tw-h-[60px] mb-4', { 'tw-brightness-0': bwLogo })}
                 height="60"
                 src={logo}
                 alt={`${name} logo`}

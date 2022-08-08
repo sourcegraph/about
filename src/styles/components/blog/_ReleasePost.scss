@@ -11,11 +11,6 @@
         text-transform: uppercase;
     }
 
-    &__items {
-        border: solid 1px $gray-200;
-        border-width: 1px 0;
-    }
-
     &__item {
         &-category {
             display: inline-block;

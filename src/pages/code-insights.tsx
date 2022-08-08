@@ -76,14 +76,19 @@ const templates = {
             description: 'Track migration from global CSS to CSS modules.',
             queries: [
                 <>
-                    <span className="keyword">select:</span>file <span className="keyword">lang:</span>SCSS{' '}
-                    <span className="keyword">file:</span>module <span className="keyword">patterntype:</span>regexp{' '}
-                    <span className="keyword">archived:</span>no <span className="keyword">fork:</span>no
+                    <span className="tw-text-blue-400">select:</span>file{' '}
+                    <span className="tw-text-blue-400">lang:</span>SCSS <span className="tw-text-blue-400">file:</span>
+                    module <span className="tw-text-blue-400">patterntype:</span>regexp{' '}
+                    <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
                 <>
-                    <span className="keyword">type:</span>file <span className="keyword">lang:</span>scss
-                    <span className="keyword">-file:</span>module <span className="keyword">patterntype:</span>regexp{' '}
-                    <span className="keyword">archived:</span>no <span className="keyword">fork:</span>no
+                    <span className="tw-text-blue-400">type:</span>file <span className="tw-text-blue-400">lang:</span>
+                    scss
+                    <span className="tw-text-blue-400">-file:</span>module{' '}
+                    <span className="tw-text-blue-400">patterntype:</span>regexp{' '}
+                    <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -92,12 +97,12 @@ const templates = {
             description: 'How far along is the Python major version migration?',
             queries: [
                 <>
-                    #!/usr/bin/env python3 <span className="keyword">archived:</span>no{' '}
-                    <span className="keyword">fork:</span>no
+                    #!/usr/bin/env python3 <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
                 <>
-                    #!/usr/bin/env python2 <span className="keyword">archived:</span>no{' '}
-                    <span className="keyword">fork:</span>no
+                    #!/usr/bin/env python2 <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -106,12 +111,14 @@ const templates = {
             description: "What's the status of migrating to React function components from class components?",
             queries: [
                 <>
-                    <span className="keyword">patterntype:</span>regexp const\s\w+:\s(React\.)?FunctionComponent{' '}
-                    <span className="keyword">archived:</span>no <span className="keyword">fork:</span>no
+                    <span className="tw-text-blue-400">patterntype:</span>regexp
+                    const\s\w+:\s(React\.)?FunctionComponent <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
                 <>
-                    <span className="keyword">patterntype:</span>regexp extends\s(React\.)?(Pure)?Component{' '}
-                    <span className="keyword">archived:</span>no <span className="keyword">fork:</span>no
+                    <span className="tw-text-blue-400">patterntype:</span>regexp extends\s(React\.)?(Pure)?Component{' '}
+                    <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -120,9 +127,10 @@ const templates = {
             description: 'How many repos contain a config or docs file in a specific directory?',
             queries: [
                 <>
-                    <span className="keyword">select:</span>repo <span className="keyword">file:</span>
-                    docs/*/new_config_filename <span className="keyword">archived:</span>no{' '}
-                    <span className="keyword">fork:</span>no
+                    <span className="tw-text-blue-400">select:</span>repo{' '}
+                    <span className="tw-text-blue-400">file:</span>
+                    docs/*/new_config_filename <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -133,8 +141,8 @@ const templates = {
             description: 'Detect and track which Java versions are present or most popular in your code base.',
             queries: [
                 <>
-                    {'<java.version>(.*)</java.version>'} <span className="keyword">archived:</span>no{' '}
-                    <span className="keyword">fork:</span>no
+                    {'<java.version>(.*)</java.version>'} <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -143,8 +151,9 @@ const templates = {
             description: 'Which log4j versions are present, including vulnerable versions?',
             queries: [
                 <>
-                    <span className="keyword">lang:</span>gradle org\.apache\.logging\.log4j['"] 2\.([0-9]+)\.{' '}
-                    <span className="keyword">archived:</span>no <span className="keyword">fork:</span>no
+                    <span className="tw-text-blue-400">lang:</span>gradle org\.apache\.logging\.log4j['"] 2\.([0-9]+)\.{' '}
+                    <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -153,8 +162,9 @@ const templates = {
             description: 'See the breakdown of licenses from package.json files.',
             queries: [
                 <>
-                    <span className="keyword">file:</span>package.json "license":\s"(.*)"{' '}
-                    <span className="keyword">archived:</span>no <span className="keyword">fork:</span>no
+                    <span className="tw-text-blue-400">file:</span>package.json "license":\s"(.*)"{' '}
+                    <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -163,8 +173,8 @@ const templates = {
             description: "Which python versions are in use or haven't been updated?",
             queries: [
                 <>
-                    #!/usr/bin/env python([0-9]\.[0-9]+) <span className="keyword">archived:</span>no{' '}
-                    <span className="keyword">fork:</span>no
+                    #!/usr/bin/env python([0-9]\.[0-9]+) <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -176,8 +186,8 @@ const templates = {
                 'Confirm that a vulnerable open source library has been fully removed, or the speed of the deprecation.',
             queries: [
                 <>
-                    vulnerableLibrary@14.3.9 <span className="keyword">archived:</span>no{' '}
-                    <span className="keyword">fork:</span>no
+                    vulnerableLibrary@14.3.9 <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -186,8 +196,9 @@ const templates = {
             description: 'See how many tests have skip conditions.',
             queries: [
                 <>
-                    this.skip() <span className="keyword">patterntype:</span>literal{' '}
-                    <span className="keyword">archived:</span>no <span className="keyword">fork:</span>no
+                    this.skip() <span className="tw-text-blue-400">patterntype:</span>literal{' '}
+                    <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -196,10 +207,11 @@ const templates = {
             description: 'What vulnerable log4j versions are present?',
             queries: [
                 <>
-                    <span className="keyword">lang:</span>gradle org\.apache\.logging\.log4j['"]
+                    <span className="tw-text-blue-400">lang:</span>gradle org\.apache\.logging\.log4j['"]
                     2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16)(\.[0-9]+){' '}
-                    <span className="keyword">patterntype:</span>regexp <span className="keyword">archived:</span>no{' '}
-                    <span className="keyword">fork:</span>no
+                    <span className="tw-text-blue-400">patterntype:</span>regexp{' '}
+                    <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -208,8 +220,9 @@ const templates = {
             description: 'How quickly do we notice and remove API keys when they are committed?',
             queries: [
                 <>
-                    regexMatchingAPIKey <span className="keyword">patterntype:</span>regexp{' '}
-                    <span className="keyword">archived:</span>no <span className="keyword">fork:</span>no
+                    regexMatchingAPIKey <span className="tw-text-blue-400">patterntype:</span>regexp{' '}
+                    <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -220,7 +233,8 @@ const templates = {
             description: 'How many TODOs are in a specific part of the codebase (or all of it)?',
             queries: [
                 <>
-                    TODO <span className="keyword">archived:</span>no <span className="keyword">fork:</span>no
+                    TODO <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -229,8 +243,9 @@ const templates = {
             description: 'How frequently are there commits with “revert” in the commit message?',
             queries: [
                 <>
-                    <span className="keyword">type:</span>commit revert <span className="keyword">archived:</span>no{' '}
-                    <span className="keyword">fork:</span>no
+                    <span className="tw-text-blue-400">type:</span>commit revert{' '}
+                    <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -239,9 +254,10 @@ const templates = {
             description: 'How many linter override rules exist?',
             queries: [
                 <>
-                    <span className="keyword">file:</span>\.eslintignore .\n{' '}
-                    <span className="keyword">patterntype:</span>regexp <span className="keyword">archived:</span>no{' '}
-                    <span className="keyword">fork:</span>no
+                    <span className="tw-text-blue-400">file:</span>\.eslintignore .\n{' '}
+                    <span className="tw-text-blue-400">patterntype:</span>regexp{' '}
+                    <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -250,8 +266,9 @@ const templates = {
             description: 'How many times are deprecated calls used?',
             queries: [
                 <>
-                    <span className="keyword">lang:</span>java @deprecated <span className="keyword">archived:</span>no{' '}
-                    <span className="keyword">fork:</span>no
+                    <span className="tw-text-blue-400">lang:</span>java @deprecated{' '}
+                    <span className="tw-text-blue-400">archived:</span>no{' '}
+                    <span className="tw-text-blue-400">fork:</span>no
                 </>,
             ],
         },

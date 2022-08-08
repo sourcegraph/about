@@ -11,10 +11,9 @@ import {
     HubSpotForm,
     IntegrationsSection,
     Layout,
+    Background,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
-
-import styles from './use-cases/useCases.module.scss'
 
 const resourceItems = [
     {
@@ -50,27 +49,24 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         }}
         className="navbar-light"
         hero={
-            <>
-                <div className={styles.pageHeader}>
-                    <div className="container pb-4">
-                        <div className="row">
-                            <div className="mb-6 col-lg-7 mt-7">
-                                <h1 className="mb-4 display-2 font-weight-bold">
-                                    Give your team a complete onboarding experience
-                                </h1>
-                                <div className="mb-5 display-4 font-weight-normal">
-                                    With self-serve onboarding, codebase exploration, and knowledge sharing, developers
-                                    can find their own answers without waiting for someone to point them to the relevant
-                                    code.
-                                </div>
-                                <div className="pt-1 d-flex flex-column max-w-400">
-                                    <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
-                                </div>
+            <Background variant="lightNebulousVenus2">
+                <div className="container pb-4">
+                    <div className="row">
+                        <div className="mb-6 col-lg-7 mt-7">
+                            <h1 className="mb-4 display-2 font-weight-bold">
+                                Give your team a complete onboarding experience
+                            </h1>
+                            <div className="mb-5 display-4 font-weight-normal">
+                                With self-serve onboarding, codebase exploration, and knowledge sharing, developers can
+                                find their own answers without waiting for someone to point them to the relevant code.
+                            </div>
+                            <div className="pt-1 d-flex flex-column max-w-400">
+                                <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                             </div>
                         </div>
                     </div>
                 </div>
-            </>
+            </Background>
         }
     >
         <ContentSection>

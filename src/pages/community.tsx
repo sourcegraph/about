@@ -11,7 +11,7 @@ export const Community: FunctionComponent = () => (
                 "Sourcegraph is so much more than a universal code search engine. It's the story of new gen-developers who renaissance-d the way we work, live, and collaborate. It's our unparalleled thinking that creates endless possibilities, to rebuild, to disrupt and to innovate relentlessly despite all the complexities of the big code. But we're just getting started. Imagine the road ahead if we take this journey together.",
         }}
         className="community-page"
-        heroAndHeaderClassName="community-page__hero-and-header"
+        heroAndHeaderClassName="tw-bg-blue-200"
         hero={
             <div className="container pb-4">
                 <div className="p-5 row">

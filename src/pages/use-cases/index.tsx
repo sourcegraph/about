@@ -3,10 +3,16 @@ import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
-import { Layout, Blockquote, ContentSection, TrySourcegraph, CustomerLogos, TwoColumnSection } from '@components'
+import {
+    Layout,
+    Blockquote,
+    ContentSection,
+    TrySourcegraph,
+    CustomerLogos,
+    TwoColumnSection,
+    Background,
+} from '@components'
 import { buttonStyle, buttonLocation } from '@data'
-
-import styles from './useCases.module.scss'
 
 const features: { id: string; description: string }[] = [
     {
@@ -38,41 +44,44 @@ const UseCases: React.FunctionComponent = () => (
             description:
                 'See how the most productive dev teams use Sourcegraph to build software you rely on. From improving code security to streamlining code reuse, our customers use Sourcegraph to solve big code problems.',
         }}
-        heroAndHeaderClassName={styles.landingHeader}
         hero={
-            <div className="container">
-                <div className="row">
-                    <div className="mt-6 col-lg-7 mb-lg-6">
-                        <h1 className="mb-0 display-2 font-weight-bold">Our customers move faster with Sourcegraph</h1>
-                        <p className="my-5 display-4">
-                            Companies of all sizes and in all industries use Sourcegraph's code intelligence platform to
-                            understand, fix, and automate across their entire codebase.
-                        </p>
-                    </div>
+            <Background variant="lightNebulousAurora">
+                <div className="container">
+                    <div className="row">
+                        <div className="mt-6 col-lg-7 mb-lg-6">
+                            <h1 className="mb-0 display-2 font-weight-bold">
+                                Our customers move faster with Sourcegraph
+                            </h1>
+                            <p className="my-5 display-4">
+                                Companies of all sizes and in all industries use Sourcegraph's code intelligence
+                                platform to understand, fix, and automate across their entire codebase.
+                            </p>
+                        </div>
 
-                    <div className="pt-4 mb-6 col-lg-5 mt-lg-6">
-                        <h4 className="pb-2 font-weight-bold">See how customers use Sourcegraph to</h4>
+                        <div className="pt-4 mb-6 col-lg-5 mt-lg-6">
+                            <h4 className="pb-2 font-weight-bold">See how customers use Sourcegraph to</h4>
 
-                        <div className="list-group">
-                            {features.map((feature: { id: string; description: string }) => (
-                                <Link key={feature.id} href={`#${kebabCase(feature.id)}`} passHref={true}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a
-                                        className="list-group-item list-group-item-action d-flex justify-content-between align-items-center text-decoration-none"
-                                        title={feature.description}
-                                        data-button-style={buttonStyle.textWithArrow}
-                                        data-button-location={buttonLocation.hero}
-                                        data-button-type="cta"
-                                    >
-                                        {feature.description}
-                                        <ArrowRightIcon className="ml-1" />
-                                    </a>
-                                </Link>
-                            ))}
+                            <div className="list-group">
+                                {features.map((feature: { id: string; description: string }) => (
+                                    <Link key={feature.id} href={`#${kebabCase(feature.id)}`} passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a
+                                            className="list-group-item list-group-item-action d-flex justify-content-between align-items-center text-decoration-none"
+                                            title={feature.description}
+                                            data-button-style={buttonStyle.textWithArrow}
+                                            data-button-location={buttonLocation.hero}
+                                            data-button-type="cta"
+                                        >
+                                            {feature.description}
+                                            <ArrowRightIcon className="ml-1" />
+                                        </a>
+                                    </Link>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </Background>
         }
     >
         <div className="use-cases-page">

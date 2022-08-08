@@ -93,7 +93,7 @@ const renderListItems = (items: string[]): ReactNode =>
     items.map((item: string) => (
         <li key={item} className="my-2 mr-2 list-inline-item">
             <code
-                className="p-1 text-gray-500 bg-gray-200 rounded small"
+                className="p-1 rounded tw-text-gray-500 tw-bg-gray-200 small"
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ fontSize: '14px' }}
             >

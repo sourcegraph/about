@@ -9,8 +9,6 @@ import { buttonStyle, buttonLocation } from '@data'
 import meshLeft from './assets/hero/mesh-left.png'
 import meshRight from './assets/hero/mesh-right.png'
 
-import styles from './home.module.scss'
-
 const Hero: FunctionComponent = () => {
     const headlines: string[] = ['Understand and search', 'Fix vulnerabilities and issues', 'Automate key workflows']
     const [headlineIndex, setHeadlineIndex] = useState(0)
@@ -32,18 +30,18 @@ const Hero: FunctionComponent = () => {
             {[meshLeft, meshRight].map((image, index) => (
                 <div
                     key={image.src}
-                    className={classNames(styles.mesh, 'd-none d-lg-block tw-absolute tw-top-0', {
+                    className={classNames('d-none d-lg-block tw-absolute tw-top-0', {
                         ['tw-left-0']: index === 0,
                         ['tw-right-0']: index === 1,
                     })}
                 >
                     <img src={image.src} alt="" draggable={false} className="w-100 h-500" />
-                    <div className={styles.bottomFade} />
+                    <div className="tw-absolute tw-bottom-0 tw-left-0 tw-w-full tw-h-[80px] tw-bg-gradient-to-b tw-from-transparent tw-to-white" />
                 </div>
             ))}
 
             <div className="mx-auto text-center max-w-750">
-                <h1 className={classNames(styles.heading, 'font-weight-bold')}>
+                <h1 className="tw-font-semibold tw-text-4xl tw-leading-10 md:tw-text-6xl lg:tw-text-7xl lg:tw-leading-[1]">
                     <span className="mb-2 tw-text-transparent d-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">
                         {headline}
                     </span>{' '}

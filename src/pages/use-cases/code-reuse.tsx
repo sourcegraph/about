@@ -7,6 +7,7 @@ import Link from 'next/link'
 
 import {
     BackButton,
+    Background,
     Blockquote,
     BlogResourceItem,
     ContentSection,
@@ -17,8 +18,6 @@ import {
     TwoColumnSection,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
-
-import styles from './useCases.module.scss'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
@@ -210,7 +209,7 @@ const CodeReusePage: FunctionComponent = () => (
         }}
         className="use-cases-page navbar-light"
         hero={
-            <section className={styles.pageHeader}>
+            <Background variant="lightNebulousVenus2">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-7 my-7">
@@ -253,7 +252,7 @@ const CodeReusePage: FunctionComponent = () => (
                         </div>
                     </div>
                 </div>
-            </section>
+            </Background>
         }
     >
         <ContentSection className="my-7">
