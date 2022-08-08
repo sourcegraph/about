@@ -62,6 +62,30 @@ I’d just joined Sourcegraph in September 2020 as the first PM for the extensib
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc4?theme=light" frameBorder="0" sandbox="allow-scripts allow-same-origin allow-popups" style={{ width: '100%', height: '300px' }}></iframe>
 </p>
 
+### How big a problem are unversioned docs links, and how do I stop people from using them? 
+
+We built a system to version our docs links, but it turns out many people weren't aware of it and were using literal links to docs. (This is bad because it might take someone from an older version to the latest content, which may not be relevant to their version.) 
+ 
+ **Search:** First I ran [this search](https://sourcegraph.com/search?q=context:global+docs.sourcegraph.com+file:client/web/src/enterprise+r:github.com/sourcegraph/sourcegraph%24%403.36&patternType=standard) and found dozens of unversioned docs links. 
+ 
+ <p style={{ width: '100%' }}>
+    <iframe src="https://sourcegraph.com/embed/notebooks/ Tm90ZWJvb2s6MTU0Nw==?theme=light" frameBorder="0" sandbox="allow-scripts allow-same-origin allow-popups" style={{ width: '100%', height: '300px' }}></iframe>
+</p>
+
+Then, I: 
+
+1. Created a [code monitor](https://docs.sourcegraph.com/code_monitoring) to send off a slack message to our frontend channel whenever someone added another unversioned (bad) link, which looked like this: 
+
+![Code Monitor Docs Alert](https://storage.googleapis.com/sourcegraph-assets/blog/monitor_alert.png) 
+
+2. Migrated a bunch of links to the correct format, tracked them with `to="\/help file:client/web/src/enterprise`, and created a [code insight](https://docs.sourcegraph.com/code_insights) to monitor that migration and ensure it never became a problem again, which looked like this: 
+
+![Code Insights Docs Migration](https://storage.googleapis.com/sourcegraph-assets/blog/Insights_docs_migration.png)
+
+**Impact:** Users don't get lost or confused by landing on the wrong version of a docs page. 
+
+**Time Saved:** 10 minutes I would have spent manually pulling and checking the codebase the first time, plus the many days saved over preventing regression with more difficult or manual automation compared to code monitors and insights.
+
 ### I’m mid-conversation with a customer. Is another team’s feature affecting our feature?
 
 A customer was seeing incomplete result counts for the search results returned for a Code Insights feature, making it impossible to reason about their code based on these incomplete results.
@@ -102,9 +126,13 @@ I needed to add a contact email to some new documentation, but wasn’t sure wha
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTgy?theme=light" frameBorder="0" sandbox="allow-scripts allow-same-origin allow-popups" style={{ width: '100%', height: '300px' }}></iframe>
 </p>
 
-**Impact:** We learned we have a “feedback@sourcegraph” email that was better than the “support@” email I was about to use.
+In fact, I can also make a code insight that will automatically pull all email variations into a usage graph and show me trends over time for the pattern `mailto:(\w+@sourcegraph.com)` by email handle: 
 
-**Time Saved:** We saved hours or even days. The alternative solution would have involved searching every single repository or asking every long-tenured teammate to list what emails they recall seeing used.
+![Email Insight](https://storage.googleapis.com/sourcegraph-assets/blog/insight_email_usage.png) 
+
+**Impact:** We learned we have a “support@sourcegraph” email that was better than the “feedback@” email I was about to use.
+
+**Time Saved:** We saved hours to days of waiting for an answer. The alternative solution would have involved searching every single repository or asking every long-tenured teammate to list what emails they know are used.
 
 **Follow-up situation:** What anchor text do we generally use for the email link, or do we display the direct email? [Search](https://sourcegraph.com/search?q=context:global+r:sourcegraph/+mailto:feedback%40sourcegraph.com&patternType=literal):
 
