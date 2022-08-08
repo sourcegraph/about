@@ -26,13 +26,13 @@
         @apply tw-font-sans tw-text-3xl tw-tracking-normal tw-font-normal;
     }
     h4 {
-        @apply tw-font-sans tw-text-2xl tw-tracking-normal tw-font-normal;
+        @apply tw-font-sans tw-text-2xl tw-tracking-normal tw-font-semibold;
     }
     h5 {
-        @apply tw-font-sans tw-text-xl tw-tracking-normal tw-font-normal;
+        @apply tw-font-sans tw-text-xl tw-tracking-normal tw-font-semibold;
     }
     h6 {
-        @apply tw-font-sans tw-text-lg tw-tracking-wide tw-font-normal tw-uppercase;
+        @apply tw-font-sans tw-text-lg tw-tracking-wide tw-font-semibold tw-uppercase;
     }
     code {
         @apply tw-font-mono tw-text-base tw-font-medium tw-tracking-tightest;
