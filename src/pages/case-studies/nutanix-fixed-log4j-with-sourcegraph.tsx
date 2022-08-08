@@ -43,7 +43,7 @@ export const CaseStudy: FunctionComponent = () => (
             <Hero
                 backButton={<BackButton href="/case-studies" text="Case Studies" />}
                 variant="venusCode"
-                title="Nutanix fixed Log4j quickly and confidently with Sourcegraph"
+                title={'Nutanix fixed Log4j quickly and \n confidently with Sourcegraph'}
                 displayUnderNav={true}
             />
         }

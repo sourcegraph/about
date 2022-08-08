@@ -40,7 +40,7 @@ export const CaseStudy: FunctionComponent = () => (
             <Hero
                 backButton={<BackButton href="/case-studies" text="Case Studies" />}
                 variant="venusCode"
-                title="Codecov uses Sourcegraph to resolve incidents faster"
+                title={'Codecov uses Sourcegraph to \n resolve incidents faster'}
                 displayUnderNav={true}
             />
         }

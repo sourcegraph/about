@@ -38,7 +38,7 @@ const Webinar: FunctionComponent = () => {
                 <Hero
                     variant="marsCode"
                     title="Preparing for the Next Log4j"
-                    description="How Nutanix Remediated the Vulnerability in 4 Days"
+                    subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
                     leftCol={
                         <div className="col-lg-4 col-12 text-lg-center px-lg-0 pb-5 pb-lg-0">
                             <img

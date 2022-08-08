@@ -35,7 +35,7 @@ const Webinar: FunctionComponent = () => {
                 <Hero
                     variant="marsCode"
                     title={'Sourcegraph Code Insights: \n Turning Metrics into Action'}
-                    description="How to track what really matters to you and your team"
+                    subtitle="How to track what really matters to you and your team"
                 />
             }
         >

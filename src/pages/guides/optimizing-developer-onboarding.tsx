@@ -13,7 +13,7 @@ export const Guide: FunctionComponent = () => (
             <Hero
                 variant="darkSimpleGrid"
                 title="Optimizing developer onboarding"
-                description="Lessons learned and secrets to success from 31 companies and open source projects"
+                subtitle="Lessons learned and secrets to success from 31 companies and open source projects"
             />
         }
     >

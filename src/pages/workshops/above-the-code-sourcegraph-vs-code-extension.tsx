@@ -28,7 +28,7 @@ export const AboveTheCodeWorkshop: FunctionComponent = () => (
             <Hero
                 variant="darkSimpleGrid"
                 title="AboveTheCode: Sourcegraph's VSCode Extension"
-                description="Thursday, September 8th 2022 @ 11:00AM PDT"
+                subtitle="Thursday, September 8th 2022 @ 11:00AM PDT"
             />
         }
     >

@@ -9,6 +9,7 @@ interface Hero extends Background {
     title: string | ReactNode
     backButton?: ReactNode
     leftCol?: ReactNode
+    subtitle?: string
     description?: string
     cta?: ReactNode
     displayUnderNav?: boolean
@@ -20,6 +21,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
     title,
     backButton,
     leftCol,
+    subtitle,
     description,
     cta,
     displayUnderNav = false,
@@ -54,17 +56,19 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
 
     return (
         <div ref={rootReference}>
-            {/* TODO: Make the hero height styling more dynamic, easy to follow */}
             <Background variant={variant} illustration={illustration} className={classNames('d-flex align-items-center', product && 'min-h-600', variant.includes('dark') && 'text-white')}>
-                <div className={classNames('container', leftCol && 'd-flex flex-lg-row flex-column', !product && 'py-7')}>
+                <div className={classNames('container', leftCol && 'd-flex flex-lg-row flex-column align-items-center', !product && 'py-7')}>
                     {leftCol}
-                    <div className={classNames('max-w-700 w-100', leftCol && 'col-lg-8')}>
+
+                    <div className={classNames(product && 'max-w-700 w-100', leftCol && 'col-lg-8')}>
                         {backButton}
 
                         <div className="d-flex flex-column-reverse">
                             <h1 className="display-2 font-weight-bold mb-4 whitespace-pre-line">{title}</h1>
                             {product && <div className="text-uppercase mb-2 font-weight-bold">{product}</div>}
                         </div>
+
+                        {subtitle && <h3 className="font-weight-normal max-w-800">{subtitle}</h3>}
 
                         {description && <h5 className="mb-5 max-w-600 font-weight-normal">{description}</h5>}
 

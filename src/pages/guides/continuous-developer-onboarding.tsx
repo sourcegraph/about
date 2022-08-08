@@ -14,7 +14,7 @@ export const Guide: FunctionComponent = () => (
             <Hero
                 variant="darkSimpleGrid"
                 title="Continuous developer onboarding"
-                description="A guide to cultivating a culture of professional growth in your engineering organization"
+                subtitle="A guide to cultivating a culture of professional growth in your engineering organization"
             />
         }
     >

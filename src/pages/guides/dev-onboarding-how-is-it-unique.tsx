@@ -15,7 +15,7 @@ export const Guide: FunctionComponent = () => (
             <Hero
                 variant="darkSimpleGrid"
                 title="Developer onboarding: What makes it unique?"
-                description="A guide to creating an effective developer onboarding program"
+                subtitle="A guide to creating an effective developer onboarding program"
             />
         }
     >
