@@ -18,9 +18,9 @@ export const AuthorBio: React.FunctionComponent<{
                     <p>{about}</p>
                 </section>
 
-                <section className="d-md-flex d-block justify-content-between col-lg-9 mx-auto mt-6 p-0">
+                <section className="d-md-flex d-block justify-content-between col-lg-9 mx-auto p-0">
                     {authors.map(a => (
-                        <div key={a.name}>
+                        <div key={a.name} className="mt-6">
                             <img
                                 className="rounded-circle max-w-150"
                                 width={150}
@@ -28,7 +28,7 @@ export const AuthorBio: React.FunctionComponent<{
                                 src={a.image}
                                 alt={a.name}
                             />
-                            <h3 className="font-weight-normal">{a.name}</h3>
+                            <h3 className="font-weight-normal mt-4">{a.name}</h3>
                             <p className="text-muted">{a.title}</p>
                         </div>
                     ))}
