@@ -53,10 +53,8 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
                 <div className="container pb-4">
                     <div className="row">
                         <div className="mb-6 col-lg-7 mt-7">
-                            <h1 className="mb-4 display-2 font-weight-bold">
-                                Give your team a complete onboarding experience
-                            </h1>
-                            <div className="mb-5 display-4 font-weight-normal">
+                            <h1 className="mb-4">Give your team a complete onboarding experience</h1>
+                            <div className="mb-5">
                                 With self-serve onboarding, codebase exploration, and knowledge sharing, developers can
                                 find their own answers without waiting for someone to point them to the relevant code.
                             </div>
@@ -86,7 +84,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         <ContentSection className="py-5 py-lg-6">
             <div className="row d-flex">
                 <div className="col-lg-6">
-                    <h1 className="mb-5 font-weight-bold">Related resources</h1>
+                    <h1 className="mb-5">Related resources</h1>
                 </div>
                 {resourceItems.map(item => (
                     <BlogResourceItem key={item.title} blog={item} />
@@ -95,8 +93,8 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection>
-            <div className="mx-auto text-center col-3 col-md-12 max-w-550">
-                <h1 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h1>
+            <div className="tw-mx-auto tw-text-center tw-max-w-screen-md">
+                <h1>Ready to accelerate developer onboarding? Let's talk.</h1>
                 <p>
                     <Link href="/get-started/self-hosted" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

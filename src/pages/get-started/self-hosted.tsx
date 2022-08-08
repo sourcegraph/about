@@ -21,8 +21,8 @@ export const SelfHostedPage: FunctionComponent = () => {
                     'Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.',
             }}
             hero={
-                <div className="container-xl py-5">
-                    <h1 className="display-1 mb-2">
+                <div className="py-5 container-xl">
+                    <h1 className="mb-2 display-1">
                         <strong>Get started</strong>
                     </h1>
                     <p>From GE to Uber, the world's best developers use Sourcegraph every day.</p>
@@ -32,10 +32,10 @@ export const SelfHostedPage: FunctionComponent = () => {
             hideGetStartedButton={true}
         >
             <div className={`${styles.root} sg-bg-gradient-saturn py-5`}>
-                <div className="row container-xl mx-auto py-5">
+                <div className="py-5 mx-auto row container-xl">
                     <div className="col-lg-6 pr-lg-7">
                         <div>
-                            <h1 className="display-2 font-weight-bolder mb-2">
+                            <h1 className="mb-2 display-2 font-weight-bolder">
                                 Sourcegraph <br />
                                 Self-Hosted
                             </h1>
@@ -55,12 +55,12 @@ export const SelfHostedPage: FunctionComponent = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-6 py-4 py-lg-0">
+                    <div className="py-4 col-lg-6 py-lg-0">
                         <Install />
 
                         <div className="d-flex flex-column align-items-start">
                             <a
-                                className="btn p-0 mt-5 text-primary"
+                                className="p-0 mt-5"
                                 title="Talk to an engineer"
                                 data-button-style={buttonStyle.textWithArrow}
                                 data-button-location={buttonLocation.hero}

@@ -41,7 +41,7 @@ const Hero: FunctionComponent = () => {
             ))}
 
             <div className="mx-auto text-center max-w-750">
-                <h1 className="tw-font-semibold tw-text-4xl tw-leading-10 md:tw-text-6xl lg:tw-text-7xl lg:tw-leading-[1]">
+                <h1 className="tw-font-semibold tw-text-4xl tw-leading-10 md:tw-text-6xl lg:tw-text-[3.75rem] lg:tw-leading-[1]">
                     <span className="mb-2 tw-text-transparent d-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">
                         {headline}
                     </span>{' '}
@@ -102,7 +102,7 @@ const Hero: FunctionComponent = () => {
             </div>
 
             <div className="mx-auto text-center max-w-600">
-                <h2 className="font-weight-bold">
+                <h2>
                     Over{' '}
                     <Link href="/case-studies" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

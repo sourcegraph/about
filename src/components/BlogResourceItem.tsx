@@ -20,9 +20,9 @@ interface Blog {
 }
 
 export const BlogResourceItem: FunctionComponent<Props> = ({ blog }) => (
-    <div className="w-100 row mx-0 mb-5 pb-5 border-bottom">
+    <div className="pb-5 mx-0 mb-5 w-100 row border-bottom">
         <div className="col-sm-8 col-md-9">
-            <h6 className="text-uppercase font-weight-bold text-primary">{blog.type}</h6>
+            <h6 className="text-uppercase text-primary">{blog.type}</h6>
             <a
                 href={blog.href}
                 title={blog.title}

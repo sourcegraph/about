@@ -92,9 +92,9 @@ const LEADERS: {
 export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div id="leadership" className={`leadership-section ${className}`}>
         <h2>Leadership</h2>
-        <div className="row my-5">
+        <div className="my-5 row">
             {LEADERS.map(staff => (
-                <div key={`${staff.name.replace(' ', '-').toLowerCase()}`} className="col-lg-4 my-4">
+                <div key={`${staff.name.replace(' ', '-').toLowerCase()}`} className="my-4 col-lg-4">
                     <a
                         href={staff.bio}
                         title={`Sourcegraph team: ${staff.name} - ${staff.title}`}
@@ -103,11 +103,12 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                         data-button-type="cta"
                     >
                         <img
-                            className="max-w-200 rounded-circle mb-4"
+                            className="mb-4 max-w-200 rounded-circle"
                             src={staff.image}
                             alt={`Sourcegraph team: ${staff.name} - ${staff.title}`}
                         />
                     </a>
+
                     <h5>
                         <a
                             href={staff.bio}
@@ -120,9 +121,11 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                             {staff.name}
                         </a>
                     </h5>
+
                     <p className="mb-0">{staff.title}</p>
-                    <ul className="nav mt-1">
-                        <li className="nav-item p-1">
+
+                    <ul className="tw-ml-0 tw-mt-1 tw-list-none tw-flex">
+                        <li className="tw-mr-2">
                             <a
                                 href={staff.github}
                                 target="_blank"
@@ -137,7 +140,7 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                                 <GithubIcon />
                             </a>
                         </li>
-                        <li className="nav-item p-1">
+                        <li className="tw-mr-2">
                             <a
                                 href={staff.twitter}
                                 target="_blank"
@@ -152,7 +155,7 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                                 <TwitterIcon />
                             </a>
                         </li>
-                        <li className="nav-item p-1">
+                        <li className="tw-mr-2">
                             <a
                                 href={staff.linkedin}
                                 target="_blank"

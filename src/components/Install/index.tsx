@@ -46,7 +46,7 @@ export const Install: FunctionComponent = () => {
             </div>
 
             <div className="tw-p-8">
-                <h3 className="tw-font-semibold">
+                <h3>
                     Install Sourcegraph locally
                     <span
                         onClick={copy}

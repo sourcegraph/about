@@ -128,13 +128,13 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                     {url.includes('http') ? (
                         <a
                             href={url}
-                            className="card-link"
                             target="_blank"
                             rel="nofollow noreferrer"
                             title={linkText + ': ' + title}
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
                             data-button-type="cta"
+                            className="tw-font-bold tw-no-underline"
                         >
                             {linkText}
                             <ArrowRightIcon size={20} className="ml-1 tw-inline" />
@@ -143,11 +143,11 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                         <Link href={url} passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="card-link"
                                 title={linkText + ': ' + title}
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
+                                className="tw-font-bold tw-no-underline"
                             >
                                 {linkText}
                                 <ArrowRightIcon size={20} className="ml-1 tw-inline" />

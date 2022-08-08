@@ -49,7 +49,7 @@ export const LinkPost: FunctionComponent<Props> = ({ post, content, url, classNa
                 <Link href={url} passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
-                        className="text-gray-5"
+                        className="tw-text-gray-500"
                         title={post.frontmatter.publishDate}
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}

@@ -354,7 +354,6 @@ const UseCasePage: FunctionComponent = () => (
                             <Link href="/blog/log4j-log4shell-0-day" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="font-weight-bold"
                                     title="Read the blog post"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}

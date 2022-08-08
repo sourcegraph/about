@@ -501,9 +501,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                         },
                     ]}
                 />
-                <div className="w-100 d-flex justify-content-center">
+                <div className="tw-w-full tw-text-center">
                     <a
-                        className="px-0 py-4 btn btn-link col-7 docs-cta font-weight-bold"
                         href="https://docs.sourcegraph.com/code_insights"
                         title="Code Insights on docs."
                         data-button-style={buttonStyle.text}

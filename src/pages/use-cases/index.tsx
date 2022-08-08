@@ -137,7 +137,7 @@ const UseCases: React.FunctionComponent = () => (
                             <Link href="/use-cases/code-security" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="btn btn-link font-weight-bold"
+                                    className="tw-ml-8"
                                     title="Learn more"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
@@ -220,7 +220,7 @@ const UseCases: React.FunctionComponent = () => (
                             <Link href="/use-cases/onboarding" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="btn btn-link font-weight-bold"
+                                    className="tw-ml-8"
                                     title="Learn more"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
@@ -279,7 +279,7 @@ const UseCases: React.FunctionComponent = () => (
                             <Link href="/use-cases/incident-response" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="btn btn-link font-weight-bold"
+                                    className="tw-ml-8"
                                     title="Learn more"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
@@ -378,7 +378,7 @@ const UseCases: React.FunctionComponent = () => (
                             <Link href="/use-cases/code-reuse" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="btn btn-link font-weight-bold"
+                                    className="tw-ml-8"
                                     title="Learn more"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
@@ -435,7 +435,7 @@ const UseCases: React.FunctionComponent = () => (
                             <Link href="/use-cases/code-health" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="btn btn-link font-weight-bold"
+                                    className="tw-ml-8"
                                     title="Learn more"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}

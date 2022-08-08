@@ -104,16 +104,15 @@ const renderListItems = (items: string[]): ReactNode =>
 
 export const IntegrationsSection: FunctionComponent = () => (
     <ContentSection color="white" className="py-5 py-md-7">
-        <h2 className="mb-3 display-3 font-weight-bold">Works with your code, infrastructure, and tools</h2>
+        <h2 className="mb-3">Works with your code, infrastructure, and tools</h2>
 
         <div className="row">
             <div className="mb-5 col-lg-6">
-                <h3 className="h5 font-weight-bold">All your repositories + 2M open source (and counting)</h3>
+                <h4>All your repositories + 2M open source (and counting)</h4>
 
                 <ul className="tw-list-none tw-ml-0">{renderListItems(codeHosts)}</ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
-                    className="text-primary"
                     title="Have a repository not covered here?"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
@@ -124,12 +123,11 @@ export const IntegrationsSection: FunctionComponent = () => (
             </div>
 
             <div className="mb-5 col-lg-6">
-                <h3 className="h5 font-weight-bold">All your languages</h3>
+                <h4>All your languages</h4>
 
                 <ul className="tw-list-none tw-ml-0">{renderListItems(languages)}</ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
-                    className="text-primary"
                     title="Need a different language?"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
@@ -140,12 +138,11 @@ export const IntegrationsSection: FunctionComponent = () => (
             </div>
 
             <div className="mb-5 col-lg-6">
-                <h3 className="h5 font-weight-bold">All your tools</h3>
+                <h4>All your tools</h4>
 
                 <ul className="tw-list-none tw-ml-0">{renderListItems(tools)}</ul>
                 <a
                     href="https://docs.sourcegraph.com/integration"
-                    className="text-primary"
                     title="See all integrations or build your own"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
@@ -156,22 +153,21 @@ export const IntegrationsSection: FunctionComponent = () => (
             </div>
 
             <div className="mb-5 col-lg-6">
-                <h4 className="font-weight-bold">Deployment options</h4>
+                <h4>Deployment options</h4>
 
                 <ul className="tw-list-none tw-ml-0">
                     <li className="list-inline-item text-wrap">
-                        <h6 className="tw-capitalize">Self-hosted by you:</h6>
+                        <h5>Self-hosted by you:</h5>
                         <ul className="tw-list-none tw-m-0">{renderListItems(selfHostedOptions)}</ul>
                     </li>
 
                     <li className="tw-list-none tw-m-0">
-                        <h6 className="mt-3 tw-capitalize">Managed and hosted by us:</h6>
+                        <h5 className="mt-3">Managed and hosted by us:</h5>
                         <ul className="tw-list-none tw-m-0">{renderListItems(['Docker Compose in GCP'])}</ul>
                     </li>
                 </ul>
                 <a
                     href="https://docs.sourcegraph.com/admin/install"
-                    className="text-primary"
                     title="Learn about deploying Sourcegraph"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}

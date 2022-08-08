@@ -108,7 +108,7 @@ const UseCases: FunctionComponent = () => {
                     >
                         <useCase.icon className="mb-4 tw-h-auto tw-text-violet-400 w-100 max-w-50 mr-sm-3 mb-sm-0" />
                         <div className="text-center text-sm-left">
-                            <h4 className="font-weight-bold">{useCase.title}</h4>
+                            <h4>{useCase.title}</h4>
                             <div className="tw-text-lg">
                                 <p className="m-0">{useCase.description}</p>
                                 {useCase.link && (

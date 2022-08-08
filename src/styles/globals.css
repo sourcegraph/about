@@ -9,20 +9,18 @@
 
 /* Base Styles */
 @layer base {
-    /* Layout */
+    /* Typography */
     html {
         @apply tw-font-sans tw-text-base tw-tracking-normal tw-font-normal tw-antialiased;
     }
     body {
         @apply tw-bg-gray-50;
     }
-
-    /* Typography */
     h1 {
-        @apply tw-font-sans tw-text-7xl tw-tracking-normal tw-font-semibold;
+        @apply tw-font-sans tw-text-6xl md:tw-text-7xl tw-tracking-normal tw-font-semibold;
     }
     h2 {
-        @apply tw-font-sans tw-text-5xl tw-tracking-normal tw-font-semibold;
+        @apply tw-font-sans tw-text-4xl md:tw-text-5xl tw-tracking-normal tw-font-semibold;
     }
     h3 {
         @apply tw-font-sans tw-text-3xl tw-tracking-normal tw-font-normal;
@@ -36,27 +34,29 @@
     h6 {
         @apply tw-font-sans tw-text-lg tw-tracking-wide tw-font-normal tw-uppercase;
     }
-
-    /* Links */
+    code {
+        @apply tw-font-mono tw-text-base tw-font-medium tw-tracking-tightest;
+    }
+    /* Inline Links */
+    p a,
+    li a {
+        @apply tw-font-normal hover:tw-underline;
+    }
+    /* Standalone Links (Usually CTAs) */
     a {
-        @apply tw-text-blurple-400 hover:tw-underline tw-font-semibold;
-        /* TODO: regular links should be normal font weight, CTAs are bold */
+        @apply tw-text-blurple-400 tw-font-bold;
     }
 
-    /* List Elements */
+    /* Lists */
     ul,
     ol {
         list-style: revert;
         margin-left: 40px;
     }
 
+    /* Paragraphs */
     p {
-        @apply tw-my-3;
-    }
-
-    /* Code Blocks */
-    code {
-        @apply tw-font-mono tw-text-base tw-font-medium tw-tracking-tightest;
+        @apply tw-mb-3;
     }
 
     /* Tables */

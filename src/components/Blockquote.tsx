@@ -127,7 +127,7 @@ export const Blockquote: FunctionComponent<{
                             data-button-location={buttonLocation.body}
                             data-button-type="cta"
                         >
-                            <p className="tw-font-semibold tw-mb-0">{link.text}</p>
+                            <p className="tw-mb-0">{link.text}</p>
                             <ArrowRightIcon className="tw-ml-1 tw-inline" />
                         </a>
                     </Link>
