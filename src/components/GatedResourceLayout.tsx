@@ -162,7 +162,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             )}
 
             {speakers?.length && (
-                <section className="bg-white py-6 py-lg-7">
+                <section className="bg-white mb-7">
                     <ContentSection>
                         <h2 className="font-weight-bold">Speakers</h2>
 
