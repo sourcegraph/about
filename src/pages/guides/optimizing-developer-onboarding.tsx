@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, GatedResourceLayout } from '@components'
+import { Layout, GatedResourceLayout, Hero } from '@components'
 
 export const Guide: FunctionComponent = () => (
     <Layout
@@ -9,10 +9,16 @@ export const Guide: FunctionComponent = () => (
             description:
                 'Learn about challenges open source projects and private companies face onboarding developers and best practices to onboard new developers more effectively.',
         }}
+        hero={
+            <Hero
+                variant="darkSimpleGrid"
+                title="Optimizing developer onboarding"
+                description="Lessons learned and secrets to success from 31 companies and open source projects"
+            />
+        }
     >
         <GatedResourceLayout
             title="Optimizing developer onboarding"
-            subtitle="Lessons learned and secrets to success from 31 companies and open source projects"
             formLabel="Download the guide"
             resource="/guides/optimizing-developer-onboarding.pdf"
             description={

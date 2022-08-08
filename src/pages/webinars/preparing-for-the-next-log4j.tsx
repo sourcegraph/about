@@ -3,8 +3,9 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { Layout, ContentSection, GatedResourceLayout } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { Layout, ContentSection, GatedResourceLayout, Hero } from '@components'
+import { buttonStyle, buttonLocation, breakpoints } from '@data'
+import { useWindowWidth } from '@hooks'
 
 const speakers = [
     {
@@ -23,6 +24,8 @@ const speakers = [
 
 const Webinar: FunctionComponent = () => {
     const router = useRouter()
+    const windowWidth = useWindowWidth()
+    const isMdOrDown = windowWidth < breakpoints.lg
 
     return (
         <Layout
@@ -31,15 +34,34 @@ const Webinar: FunctionComponent = () => {
                 description:
                     'On-Demand Webinar. Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their code base.',
             }}
+            hero={
+                <Hero
+                    variant="marsCode"
+                    title="Preparing for the Next Log4j"
+                    description="How Nutanix Remediated the Vulnerability in 4 Days"
+                    leftCol={
+                        <div className="col-lg-4 col-12 text-lg-center px-lg-0 pb-5 pb-lg-0">
+                            <img
+                                className={`border-right border-black ${
+                                    isMdOrDown ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'
+                                }`}
+                                width={isMdOrDown ? '65' : '95'}
+                                src="/sourcegraph/sourcegraph-mark.svg"
+                                alt="Sourcegraph mark"
+                            />
+                            <img
+                                height={isMdOrDown ? '15' : '22'}
+                                src="/external-logos/nutanix-logo.svg"
+                                alt="Nutanix logo"
+                            />
+                        </div>
+                    }
+                />
+            }
         >
             <GatedResourceLayout
                 title="Preparing for the Next Log4j"
-                subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
                 speakers={speakers}
-                customer={{
-                    name: 'Nutanix',
-                    logo: '/external-logos/nutanix-logo.svg',
-                }}
                 formLabel="Watch the on-demand webinar"
                 onFormSubmitted={() =>
                     router.push({

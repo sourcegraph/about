@@ -4,20 +4,22 @@ import classNames from 'classnames'
 
 import { Background } from '@components'
 
-interface ProductHero extends Background {
+interface Hero extends Background {
     product?: 'code search' | 'batch changes' | 'code insights'
     title: string | ReactNode
     backButton?: ReactNode
+    leftCol?: ReactNode
     description?: string
     cta?: ReactNode
     displayUnderNav?: boolean
 }
 
-export const ProductHero: FunctionComponent<Omit<ProductHero, 'className' | 'children' | 'illustration'>> = ({
+export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illustration'>> = ({
     variant,
     product,
     title,
     backButton,
+    leftCol,
     description,
     cta,
     displayUnderNav = false,
@@ -53,9 +55,10 @@ export const ProductHero: FunctionComponent<Omit<ProductHero, 'className' | 'chi
     return (
         <div ref={rootReference}>
             {/* TODO: Make the hero height styling more dynamic, easy to follow */}
-            <Background variant={variant} illustration={illustration} className={classNames('d-flex align-items-center', product && 'min-h-600')}>
-                <div className={classNames('container', !product && 'py-7')}>
-                    <div className="max-w-700 w-100">
+            <Background variant={variant} illustration={illustration} className={classNames('d-flex align-items-center', product && 'min-h-600', variant.includes('dark') && 'text-white')}>
+                <div className={classNames('container', leftCol && 'd-flex flex-lg-row flex-column', !product && 'py-7')}>
+                    {leftCol}
+                    <div className={classNames('max-w-700 w-100', leftCol && 'col-lg-8')}>
                         {backButton}
 
                         <div className="d-flex flex-column-reverse">

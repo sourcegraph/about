@@ -1,7 +1,7 @@
 /* eslint-disable unicorn/prevent-abbreviations */
 import { FunctionComponent } from 'react'
 
-import { Layout, GatedResourceLayout } from '@components'
+import { Layout, GatedResourceLayout, Hero } from '@components'
 
 export const Guide: FunctionComponent = () => (
     <Layout
@@ -11,10 +11,16 @@ export const Guide: FunctionComponent = () => (
                 'A guide to understanding how to create a developer onboarding program that differs from general employee onboarding and creates an engaged development team.',
         }}
         className="bg-white"
+        hero={
+            <Hero
+                variant="darkSimpleGrid"
+                title="Developer onboarding: What makes it unique?"
+                description="A guide to creating an effective developer onboarding program"
+            />
+        }
     >
         <GatedResourceLayout
             title="Developer onboarding: What makes it unique?"
-            subtitle="A guide to creating an effective developer onboarding program"
             formLabel="Download the guide"
             resource="/guides/sg-dev-onboarding-what-makes-it-unique.pdf"
             description={

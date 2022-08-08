@@ -6,7 +6,7 @@ import {
     AuthorBio,
     Layout,
     BackButton,
-    ProductHero,
+    Hero,
     NewCaseStudyLayout,
     ContentSection,
     Blockquote,
@@ -40,7 +40,7 @@ export const CaseStudy: FunctionComponent = () => (
                 'Nutanix case study. Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their code base.',
         }}
         hero={
-            <ProductHero
+            <Hero
                 backButton={<BackButton href="/case-studies" text="Case Studies" />}
                 variant="venusCode"
                 title="Nutanix fixed Log4j quickly and confidently with Sourcegraph"

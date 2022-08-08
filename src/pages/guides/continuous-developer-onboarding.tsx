@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, GatedResourceLayout } from '@components'
+import { Layout, GatedResourceLayout, Hero } from '@components'
 
 export const Guide: FunctionComponent = () => (
     <Layout
@@ -10,10 +10,16 @@ export const Guide: FunctionComponent = () => (
                 'Continuous onboarding shifts traditional onboarding practices to cultivate an environment that enables developers to build themselves as flexible and resilient engineers.',
         }}
         className="bg-white"
+        hero={
+            <Hero
+                variant="darkSimpleGrid"
+                title="Continuous developer onboarding"
+                description="A guide to cultivating a culture of professional growth in your engineering organization"
+            />
+        }
     >
         <GatedResourceLayout
             title="Continuous developer onboarding"
-            subtitle="A guide to cultivating a culture of professional growth in your engineering organization"
             formLabel="Download the guide"
             resource="/guides/sg-continuous-developer-onboarding.pdf"
             description={

@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, GatedResourceLayout } from '@components'
+import { Layout, GatedResourceLayout, Hero } from '@components'
 
 const speakers = [
     {
@@ -24,24 +24,29 @@ export const AboveTheCodeWorkshop: FunctionComponent = () => (
             description:
                 'Learn all about how to leverage Sourcegraph within VSCode to search the wide universe of Open Source code right in the IDE',
         }}
+        hero={
+            <Hero
+                variant="darkSimpleGrid"
+                title="AboveTheCode: Sourcegraph's VSCode Extension"
+                description="Thursday, September 8th 2022 @ 11:00AM PDT"
+            />
+        }
     >
         <GatedResourceLayout
             title="AboveTheCode: Sourcegraph's VSCode Extension"
-            subtitle="Thursday, September 8th 2022 @ 11:00AM PDT"
             formLabel="Register now!"
-            resource="https://www.gartner.com/doc/reprints?id=1-2A44UTV8&ct=220524&st=sb"
             speakers={speakers}
             description={
                 <section className="col-md-6 col-12 pr-lg-6">
+                    <script async={true} id="demio-js" type="text/javascript" src="https://cdn.demio.com/production/dashboard/embed.bundle.js" />
+                    <span className="demio-embed-registration" data-hash="EPKkjeZ8F5wZT6sQ" data-api="api/v1" data-base-uri="https://my.demio.com/" data-form-width="100%" data-color="#5033E1" data-text="REGISTER" />
                     <p>
                         Join Sourcegraph experts Murat Sutunc, Engineering Manager of Integrations, and Emily Chapman, Senior Customer Training Engineer, to discuss Sourcegraph’s VSCode extension. 
                     </p>
                     <p>
                         Learn all about how to leverage Sourcegraph within VSCode to search the wide universe of Open Source code right in the IDE! Murat and Emily will demonstrate how to best use the tool and end with a live Q&A. 
                     </p>
-                    <p>
-                        We will discuss:
-                    </p>
+                    <p>We will discuss:</p>
                     <ul>
                         <li>How the Sourcegraph for VSCode extension can be used to search for code right in the editor, no local copy needed</li>
                         <li>Installing the extension</li>

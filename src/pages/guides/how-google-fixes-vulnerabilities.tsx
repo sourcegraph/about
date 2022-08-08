@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, GatedResourceLayout } from '@components'
+import { Layout, GatedResourceLayout, Hero } from '@components'
 
 export const Guide: FunctionComponent = () => (
     <Layout
@@ -10,6 +10,12 @@ export const Guide: FunctionComponent = () => (
                 'See how tech companies large and small address code security. In this post, we explore how Google, Microsoft, Lyft, GitLab, and Atlassian find and fix vulnerabilities.',
         }}
         className="bg-white"
+        hero={
+            <Hero
+                variant="darkSimpleGrid"
+                title="How Google, Microsoft, Lyft, GitLab, and Atlassian find and fix vulnerabilities"
+            />
+        }
     >
         <GatedResourceLayout
             title="How Google, Microsoft, Lyft, GitLab, and Atlassian find and fix vulnerabilities"

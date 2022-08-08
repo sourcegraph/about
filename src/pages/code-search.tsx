@@ -10,7 +10,7 @@ import {
     IntegrationsSection,
     HubSpotForm,
     Layout,
-    ProductHero,
+    Hero,
     TwoColumnSection,
     Video,
 } from '@components'
@@ -24,7 +24,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                 'Onboard to a new codebase, find answers faster, and identify security risks with Sourcegraph Code Search. Search across all the repositories you work with.',
         }}
         hero={
-            <ProductHero
+            <Hero
                 variant="lightNebulousMars"
                 product="code search"
                 title={'Search your code.\nAll of it.'}
