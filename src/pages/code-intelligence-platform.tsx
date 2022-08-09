@@ -319,7 +319,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             </section>
         </ContentSection>
 
-        <ContentSection color="white" className="container max-w-900 py-7 px-0">
+        <ContentSection color="white" className="py-7 px-0">
             <div className="col-lg-6">
                 <h2 className="mb-5 font-weight-bold">Related resources</h2>
             </div>
