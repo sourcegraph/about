@@ -37,7 +37,7 @@ const Support: FunctionComponent = () => (
         }}
     >
         <div className="mt-2">
-            <ContentSection className="py-5 text-center hero-section">
+            <ContentSection className="py-5 text-center">
                 <h1>Sourcegraph Support</h1>
                 <p>
                     See{' '}
