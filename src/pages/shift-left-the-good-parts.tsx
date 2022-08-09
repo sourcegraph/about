@@ -41,7 +41,7 @@ const ShiftLeftPage: FunctionComponent = () => (
         hero={
             <section className="bg-gradient-venus">
                 <div className="container py-lg-7 py-6 text-md-center">
-                    <h1 className="font-weight-bold">Shift left the good parts</h1>
+                    <h1 className="font-weight-bold">Shift Left: The good parts</h1>
                     <h3 className="font-weight-normal pt-4 mb-0 mx-md-auto max-w-750">
                         5 practical ways to help your org shift left
                     </h3>
