@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
+const plugin = require('tailwindcss/plugin')
+
 const dlsColors = {
   white: '#ffffff',
   black: '#000000',
@@ -180,4 +182,28 @@ module.exports = {
 
   // Remove this when Bootstrap and custom CSS tech debt is removed completely
   important: true,
+
+  plugins: [
+    plugin(({ addBase }) => {
+      const extractColors = (colors, colorGroup = '') => {
+        return Object.keys(colors).reduce((previousColors, colorKey) => {
+          const value = colors[colorKey]
+          const cssVariable = colorGroup
+            ? `--sg-color-${colorGroup}-${colorKey}`
+            : `--sg-color-${colorKey}`
+
+          const newColors = 
+            typeof value === 'string'
+              ? { [cssVariable]: value }
+              : extractColors(value, colorKey)
+          
+          return { ...previousColors, ...newColors }
+        }, {})
+      }
+
+      addBase({
+        ':root': extractColors(dlsColors)
+      })
+    })
+  ]
 }

@@ -32,6 +32,9 @@
             margin: 0;
             font-size: 85%;
             border-radius: 3px;
+            background: var(--sg-color-gray-100);
+            color: var(--sg-color-blue-500);
+            border: 1px solid var(--sg-color-gray-200);
         }
 
         p {
