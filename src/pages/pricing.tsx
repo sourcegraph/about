@@ -80,7 +80,7 @@ const PricingPage: FunctionComponent = () => (
             <div className="mt-2">
                 <ContentSection className="py-5 text-center hero-section">
                     <h1>Sourcegraph Pricing</h1>
-                    <h4 className="pt-2">Self-hosted code intelligence platform</h4>
+                    <h3 className="mt-2">Self-hosted code intelligence platform</h3>
                 </ContentSection>
                 <div className="container">
                     <div className="pt-4 row">
