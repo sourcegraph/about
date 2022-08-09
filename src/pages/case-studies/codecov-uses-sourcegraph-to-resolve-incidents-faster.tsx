@@ -268,7 +268,7 @@ export const CaseStudy: FunctionComponent = () => (
                             title: 'Lead Security Engineer at Codecov',
                         },
                         {
-                            image: '/case-studies/mitchell-borrego.png',
+                            image: '/case-studies/mitchell-borrego.jpg',
                             name: 'Mitchell Borrego',
                             title: 'Security Engineer at Codecov',
                         },
