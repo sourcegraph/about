@@ -94,7 +94,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                                     <img
                                         src={customer.logo}
                                         alt={`${customer.name} logo`}
-                                        className="tw-inline tw-max-h-[15px] md:tw-max-h-[22px] tw-w-auto"
+                                        className="tw-inline tw-h-full md:tw-h-[22px] tw-w-auto"
                                     />
                                 </div>
                             ) : (
