@@ -19,7 +19,7 @@ import {
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
-const CarouselItem: FunctionComponent<{ icon: MdiReactIconComponentType; header: string; text: string }> = props => (
+const CarouselItem: FunctionComponent<{ icon: MdiReactIconComponentType; header: string; subtitle: string; text: string }> = props => (
     <>
         {/* eslint-disable-next-line react/forbid-dom-props */}
         <div className="bg-violet-1 rounded-circle text-center mb-3" style={{ maxWidth: '40px' }}>
@@ -27,7 +27,8 @@ const CarouselItem: FunctionComponent<{ icon: MdiReactIconComponentType; header:
                 <props.icon />
             </div>
         </div>
-        <h3 className="font-weight-bold mb-lg-0 mb-5">{props.header}</h3>
+        <h3 className="font-weight-lg-bold font-weight-normal">{props.header}</h3>
+        <h4 className="d-lg-none d-block mb-lg-0 my-3">{props.subtitle}</h4>
         <p className="py-3">{props.text}</p>
     </>
 )
@@ -40,6 +41,7 @@ const items = [
             <CarouselItem
                 icon={EyeIcon}
                 header="Full view of the codebase"
+                subtitle="Exhaustive across all repositories and code hosts"
                 text="High-fidelity search is applied across all repositories and code hosts to provide a holistic view of sprawling code. Developers are in control of how they prefer to navigate the codebase with multiple pattern types, including symbol search, structural search, and precise code navigation."
             />
         ),
@@ -51,6 +53,7 @@ const items = [
             <CarouselItem
                 icon={ClipboardCheckIcon}
                 header="Accurate Results"
+                subtitle="Trustworthy answers that help your team move fast"
                 text="Exhaustive and relevant search results are returned in a fraction of a second with a variety of information, including repositories, files, diffs, and commits. When your development teams are stuck, they’re empowered to find answers on their own through robust search and living documentation with interactive code snippets that are always up-to-date."
             />
         ),
@@ -62,6 +65,7 @@ const items = [
             <CarouselItem
                 icon={ChartBoxIcon}
                 header="Rich codebase context"
+                subtitle="Access powerful insights and rich context to make the best decisions"
                 text="Leverage insights across your entire codebase through rich context about functions, variables, and cross-references. Accurate documentation with live code queries provide additional information when developers need it the most."
             />
         ),
@@ -73,6 +77,7 @@ const items = [
             <CarouselItem
                 icon={ReiterateIcon}
                 header="Automated large-scale code changes"
+                subtitle="Seamlessly make and track large-scale code changes"
                 text="Large-scale code refactors can be applied across the codebase with just a few clicks. Save your team time resolving vulnerabilities, keeping code updated, or paying down technical debt. Track code changes all the way to merge from a powerful dashboard, instead of doing manual project management work."
             />
         ),
@@ -84,6 +89,7 @@ const items = [
             <CarouselItem
                 icon={ViewDashboardIcon}
                 header="Global view for leaders"
+                subtitle="Access real-time reports that can be customized to track codebase progress"
                 text="Set up customizable, visual dashboards in sixty seconds that turn your codebase into a database. Leaders can track the status of migrations and deprecations while preventing future vulnerabilities through alerts when specific code is added by the team."
             />
         ),
