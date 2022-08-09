@@ -33,7 +33,7 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({
                     overlay={<Tooltip id="tooltip">{description}</Tooltip>}
                 >
                     {({ ref, ...triggerHandler }) => (
-                        <span {...triggerHandler} ref={ref} className="ml-2 tw-text-gray-500">
+                        <span {...triggerHandler} ref={ref} className="ml-2 tw-text-gray-400">
                             <QuestionMarkCircleOutlineIcon />
                         </span>
                     )}
