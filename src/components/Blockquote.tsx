@@ -53,7 +53,7 @@ export const Blockquote: FunctionComponent<{
             }
             // Blockquotes in column: Border flips to horizontal for mobile
             if (isMdOrDown) {
-                return `tw-pt-lg tw-pb-0 tw-mb-0 tw-border-solid ${borderNone} tw-border-t-3 tw-border-t-violet-400`
+                return `tw-pt-3xl tw-pb-0 tw-mb-0 tw-border-solid ${borderNone} tw-border-t-3 tw-border-t-violet-400`
             }
             return `tw-border-solid ${borderLocation} ${borderColor}`
         }
@@ -61,7 +61,7 @@ export const Blockquote: FunctionComponent<{
     }
 
     return (
-        <blockquote className={classNames('tw-px-sm', getBorderStyle())}>
+        <blockquote className={classNames('tw-px-md', getBorderStyle())}>
             {headline ? largeText ? <h2>{headline}</h2> : <h4 className="mb-4">{headline}</h4> : null}
 
             {largeText ? (

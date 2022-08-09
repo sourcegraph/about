@@ -136,12 +136,16 @@ module.exports = {
       },
 
       spacing: {
-        xxs: '1rem', // 16px
-        xs: '1.5rem', // 24px
-        sm: '2rem', // 32px
-        md: '3rem', // 48px
-        lg: '4rem', // 64px
-        xl: '6rem', // 96px
+        xxs: '0.5rem', // 8px
+        xs: '1rem', // 16px
+        sm: '1.5rem', // 24px
+        md: '2rem', // 32px
+        lg: '2.5rem', // 40px
+        xl: '3rem', // 48px
+        '2xl': '3.5rem', // 56px
+        '3xl': '4rem', // 64px
+        '4xl': '4.5rem', // 72px
+        '5xl': '6rem', // 96px
       },
 
       borderWidth: {
