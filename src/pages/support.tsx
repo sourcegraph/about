@@ -60,7 +60,7 @@ const Support: FunctionComponent = () => (
                     <div className="mx-auto mb-4 d-flex col-md-4">
                         <div className="card h-100">
                             <div className="card-body">
-                                <h1 className="tw-mt-xs tw-mb-xs tw-text-center">Free</h1>
+                                <h1 className="tw-my-xs tw-text-center">Free</h1>
                                 <a
                                     className="text-center font-size-base btn btn-outline-primary w-100 justify-content-center d-inline-flex"
                                     href="https://docs.sourcegraph.com#quickstart-guide"
@@ -120,7 +120,7 @@ const Support: FunctionComponent = () => (
                     <div className="mx-auto mb-4 d-flex col-md-4">
                         <div className="card">
                             <div className="card-body">
-                                <h1 className="tw-mt-xs tw-mb-xs tw-text-center">Team</h1>
+                                <h1 className="tw-my-xs tw-text-center">Team</h1>
                                 <a
                                     className="text-center font-size-base btn btn-success w-100 justify-content-center d-inline-flex"
                                     href="https://sourcegraph.com/subscriptions/new"
@@ -180,7 +180,7 @@ const Support: FunctionComponent = () => (
                     <div className="mx-auto mb-4 d-flex col-md-4">
                         <div className="card">
                             <div className="card-body">
-                                <h1 className="tw-mt-xs tw-mb-xs tw-text-center">Enterprise</h1>
+                                <h1 className="tw-my-xs tw-text-center">Enterprise</h1>
                                 <Link
                                     href="/contact/request-info/?form_submission_source=support-enterprise"
                                     passHref={true}
