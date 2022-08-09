@@ -277,10 +277,14 @@ export const CaseStudy: FunctionComponent = () => (
             <ContentSection color="white" className="pb-7 max-w-700">
                 <AuthorBio
                     customer="Nutanix"
-                    image="/case-studies/jon-kohler.png"
-                    author="Jon Kohler"
-                    title="Technical Director of Solution Engineering at Nutanix"
                     about="Nutanix has 20,000 customers, an annual revenue of nearly $1.394 billion, and over 6,000 employees. Organizations around the world rely on Nutanix software as a single platform to manage any app at any scale for their hybrid multicloud environments."
+                    authors={[
+                        {
+                            image: '/case-studies/jon-kohler.png',
+                            name: 'Jon Kohler',
+                            title: 'Technical Director of Solution Engineering at Nutanix',
+                        },
+                    ]}
                 />
             </ContentSection>
         </NewCaseStudyLayout>

@@ -56,8 +56,22 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
 
     return (
         <div ref={rootReference}>
-            <Background variant={variant} illustration={illustration} className={classNames('d-flex align-items-center', product && 'min-h-600', variant.includes('dark') && 'text-white')}>
-                <div className={classNames('container', leftCol && 'd-flex flex-lg-row flex-column align-items-center', !product && 'py-7')}>
+            <Background
+                variant={variant}
+                illustration={illustration}
+                className={classNames(
+                    'd-flex align-items-center',
+                    product && 'min-h-600',
+                    variant.includes('dark') && 'text-white'
+                )}
+            >
+                <div
+                    className={classNames(
+                        'container',
+                        leftCol && 'd-flex flex-lg-row flex-column align-items-center',
+                        !product && 'py-7'
+                    )}
+                >
                     {leftCol}
 
                     <div className={classNames(product && 'max-w-700 w-100', leftCol && 'col-lg-8')}>
@@ -72,11 +86,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
 
                         {description && <h5 className="mb-5 max-w-600 font-weight-normal">{description}</h5>}
 
-                        {cta && (
-                            <div className="d-flex flex-column pt-1 max-w-400">
-                                {cta}
-                            </div>
-                        )}
+                        {cta && <div className="d-flex flex-column pt-1 max-w-400">{cta}</div>}
                     </div>
                 </div>
             </Background>

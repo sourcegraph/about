@@ -38,24 +38,41 @@ export const AboveTheCodeWorkshop: FunctionComponent = () => (
             speakers={speakers}
             description={
                 <section className="col-md-6 col-12 pr-lg-6">
-                    <script async={true} id="demio-js" type="text/javascript" src="https://cdn.demio.com/production/dashboard/embed.bundle.js" />
-                    <span className="demio-embed-registration" data-hash="EPKkjeZ8F5wZT6sQ" data-api="api/v1" data-base-uri="https://my.demio.com/" data-form-width="100%" data-color="#5033E1" data-text="REGISTER" />
+                    <script
+                        async={true}
+                        id="demio-js"
+                        type="text/javascript"
+                        src="https://cdn.demio.com/production/dashboard/embed.bundle.js"
+                    />
+                    <span
+                        className="demio-embed-registration"
+                        data-hash="EPKkjeZ8F5wZT6sQ"
+                        data-api="api/v1"
+                        data-base-uri="https://my.demio.com/"
+                        data-form-width="100%"
+                        data-color="#5033E1"
+                        data-text="REGISTER"
+                    />
                     <p>
-                        Join Sourcegraph experts Murat Sutunc, Engineering Manager of Integrations, and Emily Chapman, Senior Customer Training Engineer, to discuss Sourcegraph’s VSCode extension. 
+                        Join Sourcegraph experts Murat Sutunc, Engineering Manager of Integrations, and Emily Chapman,
+                        Senior Customer Training Engineer, to discuss Sourcegraph’s VSCode extension.
                     </p>
                     <p>
-                        Learn all about how to leverage Sourcegraph within VSCode to search the wide universe of Open Source code right in the IDE! Murat and Emily will demonstrate how to best use the tool and end with a live Q&A. 
+                        Learn all about how to leverage Sourcegraph within VSCode to search the wide universe of Open
+                        Source code right in the IDE! Murat and Emily will demonstrate how to best use the tool and end
+                        with a live Q&A.
                     </p>
                     <p>We will discuss:</p>
                     <ul>
-                        <li>How the Sourcegraph for VSCode extension can be used to search for code right in the editor, no local copy needed</li>
+                        <li>
+                            How the Sourcegraph for VSCode extension can be used to search for code right in the editor,
+                            no local copy needed
+                        </li>
                         <li>Installing the extension</li>
                         <li>Running at least one search in VSCode for OSS Code</li>
                         <li>How to incorporate the extension into their day-to-day team programming workflow</li>
                     </ul>
-                    <p>
-                        Don't miss your chance to hear from our engineering experts in this edition of AboveTheCode! 
-                    </p>
+                    <p>Don't miss your chance to hear from our engineering experts in this edition of AboveTheCode!</p>
                 </section>
             }
         />
