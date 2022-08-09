@@ -40,16 +40,16 @@ const ShiftLeftPage: FunctionComponent = () => (
         className="bg-white"
         hero={
             <section className="bg-gradient-venus">
-                <div className="container py-7 text-md-center">
+                <div className="container py-lg-7 py-6 text-md-center">
                     <h1 className="font-weight-bold">Shift left the good parts</h1>
-                    <h3 className="font-weight-normal py-4 mx-md-auto max-w-750">
+                    <h3 className="font-weight-normal pt-4 mb-0 mx-md-auto max-w-750">
                         5 practical ways to help your org shift left
                     </h3>
                 </div>
             </section>
         }
     >
-        <ContentSection color="white" className="pt-7">
+        <ContentSection color="white" className="pt-lg-7 pt-6">
             <div className="max-w-md-650 mx-auto">
                 <p>
                     Everyone's telling us to "shift left" these days. This raises some questions. What's being shifted?
@@ -67,7 +67,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection color="white" className="py-7">
+        <ContentSection color="white" className="py-lg-7 py-6">
             <TwoColumnSection
                 centerContent={true}
                 leftColumn={
@@ -145,7 +145,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white" className="py-7">
+        <ContentSection color="white" className="py-lg-7 py-6">
             <TwoColumnSection
                 centerContent={true}
                 leftColumn={
@@ -238,7 +238,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white" className="py-7">
+        <ContentSection color="white" className="py-lg-7 py-6">
             <TwoColumnSection
                 centerContent={true}
                 leftColumn={
@@ -280,7 +280,7 @@ const ShiftLeftPage: FunctionComponent = () => (
         </ContentSection>
 
         <div className="bg-gradient-venus">
-            <ContentSection className="py-7">
+            <ContentSection className="py-lg-7 py-6">
                 <section className="max-w-800 mx-auto text-md-center">
                     <h2>Ready to shift left?</h2>
 
@@ -322,7 +322,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             </ContentSection>
         </div>
 
-        <ContentSection color="white" className="container py-7 px-0">
+        <ContentSection color="white" className="container py-lg-7 py-6 px-0">
             <div className="col-lg-6">
                 <h2 className="mb-5 font-weight-bold">Read more about dev tools that accelerate the dev cycle</h2>
             </div>
