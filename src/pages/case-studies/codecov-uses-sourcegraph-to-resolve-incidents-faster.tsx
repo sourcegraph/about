@@ -2,6 +2,7 @@ import { FunctionComponent } from 'react'
 
 import {
     Layout,
+    AuthorBio,
     BackButton,
     ProductHero,
     NewCaseStudyLayout,
@@ -36,6 +37,7 @@ export const CaseStudy: FunctionComponent = () => (
             description:
                 'Codecov case study. Learn how Codecov uses Sourcegraph to resolve incidents like Log4j 12x faster and with 100% confidence.',
         }}
+        className="bg-white"
         hero={
             <ProductHero
                 backButton={<BackButton href="/case-studies" text="Case Studies" />}
@@ -247,14 +249,31 @@ export const CaseStudy: FunctionComponent = () => (
                 </p>
             </ContentSection>
 
-            <ContentSection color="white" className="pb-7 max-w-700 col-xl-5 text-center">
-                <h5 className="mb-4 text-xl font-weight-bold max-w-650">About Codecov</h5>
-                <p>
-                    Codecov is a small organization making an outsized impact on the lives of over one million
+            <ContentSection color="white" className="mb-7 text-md-center">
+                <AuthorBio
+                    customer="Codecov"
+                    about="Codecov is a small organization making an outsized impact on the lives of over one million
                     developers. In over 29,000 companies across the globe, Codecov customers are able to ship healthier
                     code using its code coverage tool. Developers rely on Codecov to provide actionable visibility into
-                    their code coverage across any tech stack.
-                </p>
+                    their code coverage across any tech stack."
+                    authors={[
+                        {
+                            image: '/case-studies/jerrod-engelberg.png',
+                            name: 'Jerrod Engelberg',
+                            title: 'CEO at Codecov',
+                        },
+                        {
+                            image: '/case-studies/jeff-holland.png',
+                            name: 'Jeff Holland',
+                            title: 'Lead Security Engineer at Codecov',
+                        },
+                        {
+                            image: '/case-studies/mitchell-borrego.jpg',
+                            name: 'Mitchell Borrego',
+                            title: 'Security Engineer at Codecov',
+                        },
+                    ]}
+                />
             </ContentSection>
         </NewCaseStudyLayout>
     </Layout>
