@@ -151,7 +151,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
         }}
         hero={
             <section className="bg-gradient-saturn">
-                <div className="container py-7 text-md-center">
+                <div className="container py-lg-7 py-6 text-md-center">
                     <h1 className="font-weight-bold">Key traits of a code intelligence platform</h1>
                     <h3 className="font-weight-normal py-4 mx-md-auto max-w-750">
                         Sourcegraph helps developers save time and move faster, regardless of how complex your codebase
@@ -174,7 +174,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             </section>
         }
     >
-        <ContentSection color="white" className="py-7">
+        <ContentSection color="white" className="py-lg-7 py-6">
             <CustomCarousel
                 items={items}
                 animateTransition={true}
@@ -182,7 +182,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white" className="py-7">
+        <ContentSection color="white" className="pb-lg-7 pb-6">
             <h2 className="pb-5 px-0 col-12 col-lg-6">Sourcegraph helps enterprise development teams...</h2>
 
             <TwoColumnSection
@@ -261,7 +261,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white" className="py-7">
+        <ContentSection color="white" className="py-lg-7 py-6">
             <TwoColumnSection
                 centerContent={true}
                 leftColumn={
@@ -301,7 +301,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             </ContentSection>
         </div>
 
-        <ContentSection className="py-7">
+        <ContentSection className="py-lg-7 py-6">
             <section className="max-w-800 mx-auto text-md-center">
                 <h2>Sourcegraph’s code intelligence platform is more than simply search.</h2>
 
@@ -325,7 +325,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             </section>
         </ContentSection>
 
-        <ContentSection color="white" className="py-7 px-0">
+        <ContentSection color="white" className="py-lg-7 py-6 px-0">
             <div className="col-lg-6">
                 <h2 className="mb-5 font-weight-bold">Related resources</h2>
             </div>
