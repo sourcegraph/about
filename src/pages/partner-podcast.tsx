@@ -84,7 +84,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
         <div className="py-6 sg-bg-gradient-saturn">
             <section className="container max-w-900">
                 <h1 className=" max-w-800">Accelerate engineering velocity with Sourcegraph</h1>
-                <h5 className="py-4">See why over 1.2M engineers use Sourcegraph to build software you rely on</h5>
+                <h3 className="py-4 tw-max-w-[700px]">See why over 1.2M engineers use Sourcegraph to build software you rely on</h3>
                 <div className="pt-0 max-w-400 pt-md-4">
                     <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                 </div>
