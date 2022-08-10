@@ -4,7 +4,7 @@ import { MdiReactIconComponentType } from 'mdi-react'
 import ChartBoxIcon from 'mdi-react/ChartBoxIcon'
 import ClipboardCheckIcon from 'mdi-react/ClipboardCheckIcon'
 import EyeIcon from 'mdi-react/EyeIcon'
-import ReiterateIcon from 'mdi-react/ReiterateIcon'
+import SourceBranchIcon from 'mdi-react/SourceBranchIcon'
 import ViewDashboardIcon from 'mdi-react/ViewDashboardIcon'
 import Link from 'next/link'
 
@@ -63,7 +63,7 @@ const items = [
         subtitle: 'Access powerful insights and rich context to make the best decisions',
         text: (
             <CarouselItem
-                icon={ChartBoxIcon}
+                icon={ViewDashboardIcon}
                 header="Rich codebase context"
                 subtitle="Access powerful insights and rich context to make the best decisions"
                 text="Leverage insights across your entire codebase through rich context about functions, variables, and cross-references. Accurate documentation with live code queries provide additional information when developers need it the most."
@@ -75,7 +75,7 @@ const items = [
         subtitle: 'Seamlessly make and track large-scale code changes',
         text: (
             <CarouselItem
-                icon={ReiterateIcon}
+                icon={SourceBranchIcon}
                 header="Automated large-scale code changes"
                 subtitle="Seamlessly make and track large-scale code changes"
                 text="Large-scale code refactors can be applied across the codebase with just a few clicks. Save your team time resolving vulnerabilities, keeping code updated, or paying down technical debt. Track code changes all the way to merge from a powerful dashboard, instead of doing manual project management work."
@@ -87,7 +87,7 @@ const items = [
         subtitle: 'Access real-time reports that can be customized to track codebase progress',
         text: (
             <CarouselItem
-                icon={ViewDashboardIcon}
+                icon={ChartBoxIcon}
                 header="Global view for leaders"
                 subtitle="Access real-time reports that can be customized to track codebase progress"
                 text="Set up customizable, visual dashboards in sixty seconds that turn your codebase into a database. Leaders can track the status of migrations and deprecations while preventing future vulnerabilities through alerts when specific code is added by the team."
