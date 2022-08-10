@@ -87,10 +87,10 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
             <IntegrationsSection />
         </div>
 
-        <ContentSection className="py-lg-6 py-5">
+        <ContentSection className="py-7">
             <div className="row d-flex">
                 <div className="col-lg-6">
-                    <h1 className="mb-5 font-weight-bold">Related resources</h1>
+                    <h2 className="mb-5 font-weight-bold">Related resources</h2>
                 </div>
                 {resourceItems.map(item => (
                     <BlogResourceItem key={item.title} blog={item} />
@@ -100,7 +100,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
 
         <ContentSection>
             <div className="col-3 col-md-12 text-center max-w-550 mx-auto">
-                <h1 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h1>
+                <h2 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h2>
                 <p>
                     <Link href="/get-started/self-hosted" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

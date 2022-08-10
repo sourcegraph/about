@@ -28,7 +28,7 @@ const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ 
 
 const items = [
     {
-        buttonLabel: 'Find vulnerabilities',
+        title: 'Find vulnerabilities',
         text: (
             <CarouselItem
                 header="Find vulnerabilities"
@@ -53,11 +53,9 @@ const items = [
                 }
             />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Automatically merge and deploy fixes',
+        title: 'Automatically merge and deploy fixes',
         text: (
             <CarouselItem
                 header="Automatically merge and deploy fixes"
@@ -81,10 +79,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Proactively monitor for the presence of vulnerable code',
+        title: 'Proactively monitor for the presence of vulnerable code',
         text: (
             <CarouselItem
                 header="Proactively monitor for the presence of vulnerable code"
@@ -107,10 +104,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Ensure removal of security vulnerabilities',
+        title: 'Ensure removal of security vulnerabilities',
         text: (
             <CarouselItem
                 header="Ensure removal of security vulnerabilities"
@@ -135,10 +131,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Bring peace of mind to customers',
+        title: 'Bring peace of mind to customers',
         text: (
             <CarouselItem
                 header="Bring peace of mind to customers"
@@ -151,7 +146,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
 ]
 
@@ -305,7 +299,7 @@ const UseCasePage: FunctionComponent = () => (
             </>
         }
     >
-        <ContentSection className="my-lg-5">
+        <ContentSection className="py-7">
             <ThreeUpText title="Identify, resolve, and monitor with confidence" items={threeUpTextItems} />
         </ContentSection>
 
@@ -369,7 +363,7 @@ const UseCasePage: FunctionComponent = () => (
         </div>
 
         <ContentSection className="py-7">
-            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
+            <CustomCarousel items={items} title="How Sourcegraph helps" />
         </ContentSection>
 
         <div className="bg-gradient-saturn-saturated">
@@ -422,7 +416,7 @@ const UseCasePage: FunctionComponent = () => (
             </div>
         </div>
 
-        <ContentSection className="py-lg-7 py-5">
+        <ContentSection className="py-7">
             <div className="row d-flex">
                 <div className="col-lg-6">
                     <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>
