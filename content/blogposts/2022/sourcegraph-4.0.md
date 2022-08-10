@@ -136,7 +136,12 @@ We would love if everything always worked with Sourcegraph, but no matter how mu
 
 ### Repo config Experience (such as Repo syncing status)
 
-Configuring code host connections and permissions syncing is a core prat of the admin experience, and historically, it has been painful to do. With Sourcegraph 4.0, we have introduced more than X quality of life improvements to help admins understand the current state of repository and permissions syncing. 
+Configuring code host connections and permissions syncing is a core part of the admin experience, and historically, it has been painful to do. With Sourcegraph 4.0, we have introduced more than X quality of life improvements to help admins understand the current state of repository and permissions syncing. 
+
+### GitHub App for Site-level codehost config
+
+GitHub Apps are the recommended way to connect with GitHub leveraging more security and flexibility than a basic OAuth connection. Sourcegraph admins can now leverage this new connection type to sync repositories and permissions from GitHub instances. 
+
 
 {/* @benvenker Search Product and core workflow draftt */}
 ### Smarter code search
