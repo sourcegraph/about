@@ -2,7 +2,7 @@ import { FunctionComponent, ReactNode } from 'react'
 
 import { useRouter } from 'next/router'
 
-import { ContentSection, HubSpotForm } from '@components'
+import { ContentSection, HubSpotForm, DemioForm, DemioFormProps } from '@components'
 
 interface Speaker {
     name: string
@@ -16,6 +16,7 @@ interface Props {
     description?: ReactNode
     formLabel?: string
     onFormSubmitted?: () => void
+    demioForm?: DemioFormProps
     inlineMessage?: string
     learnMoreCTA?: ReactNode
     videoSrc?: string
@@ -29,6 +30,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
     description,
     formLabel,
     onFormSubmitted,
+    demioForm,
     inlineMessage,
     learnMoreCTA,
     videoSrc,
@@ -67,7 +69,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                         <div className="col-md-6 col-12 pb-md-0 pb-6">
                             <h2 className="font-weight-bold">{formLabel}</h2>
                             <div className="border-saturn border border-3 shadow-sm py-4 px-4 mt-3 px-0">
-                                {!hasWatchNowQuery && (
+                                {!hasWatchNowQuery && !demioForm && (
                                     <HubSpotForm
                                         masterFormName="gatedMulti"
                                         onFormSubmitted={onFormSubmitted}
@@ -76,6 +78,13 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                                             (resource &&
                                                 `Enjoy your copy of <a href="${resource}" target="_blank" rel="noopener noreferrer">${title}</a>`)
                                         }
+                                    />
+                                )}
+                                {!hasWatchNowQuery && demioForm && (
+                                    <DemioForm
+                                        formId={demioForm.formId}
+                                        formClassName={demioForm.formClassName}
+                                        buttonText={demioForm.buttonText || 'Submit'}
                                     />
                                 )}
                             </div>

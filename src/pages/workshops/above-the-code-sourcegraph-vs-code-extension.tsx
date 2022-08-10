@@ -34,25 +34,15 @@ export const AboveTheCodeWorkshop: FunctionComponent = () => (
     >
         <GatedResourceLayout
             title="AboveTheCode: Sourcegraph's VSCode Extension"
-            formLabel="Register now!"
             speakers={speakers}
+            formLabel="Register now!"
+            demioForm={{
+                formId: 'EPKkjeZ8F5wZT6sQ',
+                formClassName: 'demio-embed-registration',
+                buttonText: 'REGISTER',
+            }}
             description={
                 <section className="col-md-6 col-12 pr-lg-6">
-                    <script
-                        async={true}
-                        id="demio-js"
-                        type="text/javascript"
-                        src="https://cdn.demio.com/production/dashboard/embed.bundle.js"
-                    />
-                    <span
-                        className="demio-embed-registration"
-                        data-hash="EPKkjeZ8F5wZT6sQ"
-                        data-api="api/v1"
-                        data-base-uri="https://my.demio.com/"
-                        data-form-width="100%"
-                        data-color="#5033E1"
-                        data-text="REGISTER"
-                    />
                     <p>
                         Join Sourcegraph experts Murat Sutunc, Engineering Manager of Integrations, and Emily Chapman,
                         Senior Customer Training Engineer, to discuss Sourcegraph’s VSCode extension.
