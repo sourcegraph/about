@@ -56,12 +56,12 @@ const News: FunctionComponent = () => (
                 {articles.map(article => (
                     <div className="row" key={article.year}>
                         <div className="mt-5 col-lg-2 mt-lg-0">
-                            <h1 className="text-center d-block d-md-none">
+                            <h2 className="text-center d-block d-md-none">
                                 <time dateTime={article.year.toString()}>{article.year}</time>
-                            </h1>
-                            <h3 className="d-none d-md-block">
+                            </h2>
+                            <h2 className="d-none d-md-block">
                                 <time dateTime={article.year.toString()}>{article.year}</time>
-                            </h3>
+                            </h2>
                         </div>
 
                         <div className="col-lg-10">
@@ -86,7 +86,7 @@ const News: FunctionComponent = () => (
                                     </div>
 
                                     <div className="col-sm-10 col-lg-10 align-self-center">
-                                        <h6 className="mb-2 d-inline-block">{a.newsSource}</h6>{' '}
+                                        <h5 className="mb-2 d-inline-block">{a.newsSource}</h5>{' '}
                                         <time
                                             dateTime={new Date(a.newsDate).toISOString().split('T')[0]}
                                             className="ml-2 tw-text-gray-500"

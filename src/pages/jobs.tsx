@@ -347,7 +347,7 @@ const CareersPage: FunctionComponent = () => {
                             <div className="d-flex flex-column align-items-center min-h-550 py-7">
                                 <h5 className=" text-uppercase">We value:</h5>
                                 <h2 className="">{item.value}</h2>
-                                <p className="text-center col-8 ">{item.description}</p>
+                                <p className="text-center col-8">{item.description}</p>
                                 {item.img}
                             </div>
                         </Carousel.Item>

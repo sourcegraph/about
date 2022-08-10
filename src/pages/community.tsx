@@ -18,7 +18,7 @@ export const Community: FunctionComponent = () => (
                     <div className="col-lg-6">
                         <div className="text-uppercase">Join us</div>
                         <h1 className="mb-0">Welcome to the Sourcegraph Community</h1>
-                        <p className="my-5 ">
+                        <p className="my-5">
                             Seek guidance. Share best practices. Ask questions. The Sourcegraph Community is your new
                             platform to connect with one of the world's most talented developer communities. Here, we
                             encourage everyone to learn from each other and share everything they know. Because when we

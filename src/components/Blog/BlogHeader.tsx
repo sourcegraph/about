@@ -8,8 +8,8 @@ import { BlogTypeInfo } from '@interfaces/posts'
 interface Props extends Pick<BlogTypeInfo, 'title' | 'belowTitle' | 'baseUrl'> {}
 
 export const BlogHeader: FunctionComponent<Props> = ({ title, belowTitle, baseUrl }) => (
-    <div>
-        <h1 className="mt-3">
+    <div className="tw-py-sm">
+        <h1>
             <Link href={baseUrl} passHref={true}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a

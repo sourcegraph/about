@@ -200,7 +200,7 @@ const UseCasePage: FunctionComponent = () => (
                     <div className="row">
                         <div className="col-lg-7 my-7">
                             <BackButton href="/use-cases" text="USE CASES" />
-                            <h1 className="mb-4 ">Accelerate developer onboarding</h1>
+                            <h1 className="mb-4">Accelerate developer onboarding</h1>
                             <div className="mb-5">
                                 Decrease time to first commit for new developers, help existing engineers master your
                                 codebase, and fast-track full codebase understanding.
@@ -249,7 +249,7 @@ const UseCasePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="mb-4 max-w-400 ">Developer onboarding is slow and expensive</h2>
+                        <h2 className="mb-4 max-w-400">Developer onboarding is slow and expensive</h2>
                         <p>
                             Current tools and practices don't enable teams to onboard developers effectively or
                             efficiently.
@@ -354,7 +354,7 @@ const UseCasePage: FunctionComponent = () => (
 
         <ContentSection>
             <div className="flex-wrap text-center d-flex justify-content-center mb-lg-6">
-                <h2 className="mb-4 w-100 ">Better onboarding is only a few searches away.</h2>
+                <h2 className="mb-4 w-100">Better onboarding is only a few searches away.</h2>
                 <Link href="/get-started/self-hosted" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a

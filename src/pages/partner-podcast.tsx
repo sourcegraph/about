@@ -107,7 +107,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
 
         <ContentSection parentClassName="sg-bg-gradient-venus">
             <div className="tw-max-w-screen-xl tw-mx-auto tw-text-center">
-                <h2 className="pt-2 ">Want to use Sourcegraph at your company?</h2>
+                <h2 className="pt-2">Want to use Sourcegraph at your company?</h2>
                 <p className="pt-4 pb-1 mx-auto tw-max-w-[650px] tw-text-2xl">
                     <span>
                         <Link href="/get-started/self-hosted" passHref={true}>

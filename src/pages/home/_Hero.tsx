@@ -47,7 +47,7 @@ const Hero: FunctionComponent = () => {
                     </span>{' '}
                     across your entire codebase
                 </h1>
-                <p className="mx-auto my-5 max-w-700 tw-font-bold">
+                <p className="mx-auto my-5 max-w-700 tw-font-semibold">
                     Understand, fix, and automate across your codebase with Sourcegraph's code intelligence platform
                 </p>
 

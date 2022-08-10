@@ -134,7 +134,7 @@ const UseCases: FunctionComponent = () => {
                 style={{ marginBottom: boxHalfHeight }}
                 className="tw-px-6 tw-py-16 tw-mx-auto tw-text-center sg-bg-gradient-venus sm:tw-p-16 xl:tw-px-24 xl:tw-py-16 xl:tw-mx-0 xl:tw-absolute tw-right-0 tw-max-w-[550px] tw-bottom-0 sm:tw-text-left tw-w-[90%]"
             >
-                <h3 className="mb-4 pr-sm-0 pr-md-7 pr-xl-4">Want to use Sourcegraph at your company?</h3>
+                <h3 className="mb-4 pr-sm-0 pr-md-7 pr-xl-4 tw-font-semibold">Want to use Sourcegraph at your company?</h3>
                 <p className="tw-text-xl">
                     <Link href="/get-started/self-hosted" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

@@ -240,7 +240,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                     <div className="row">
                         <div className="col-md-7 my-7">
                             <BackButton href="/use-cases" text="USE CASES" />
-                            <h1 className="mb-4 ">Resolve incidents quickly and confidently</h1>
+                            <h1 className="mb-4">Resolve incidents quickly and confidently</h1>
                             <div className="mb-5">
                                 Identify the root cause of an incident, understand its potential impact on other
                                 services, and fix the issue everywhere in your codebase so it won't reoccur.

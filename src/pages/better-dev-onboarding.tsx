@@ -54,7 +54,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
                     <div className="row">
                         <div className="mb-6 col-lg-7 mt-7">
                             <h1 className="mb-4">Give your team a complete onboarding experience</h1>
-                            <div className="mb-5">
+                            <div className="mb-5 tw-text-xl">
                                 With self-serve onboarding, codebase exploration, and knowledge sharing, developers can
                                 find their own answers without waiting for someone to point them to the relevant code.
                             </div>

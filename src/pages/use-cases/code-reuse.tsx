@@ -210,7 +210,7 @@ const CodeReusePage: FunctionComponent = () => (
                     <div className="row">
                         <div className="col-md-7 my-7">
                             <BackButton href="/use-cases" text="USE CASES" />
-                            <h1 className="mb-4 ">Find and use code that already exists</h1>
+                            <h1 className="mb-4">Find and use code that already exists</h1>
                             <div className="mb-5">
                                 Identify existing code libraries for reuse and use innersourcing to avoid spending time
                                 on problems a teammate already solved.

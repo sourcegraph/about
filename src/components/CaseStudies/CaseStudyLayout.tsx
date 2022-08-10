@@ -55,7 +55,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                                 <img className="img-fluid mx-auto d-block" src={heroImage} alt={customer} />
                             </a>
                         </div>
-                        <div className="col-lg-9 ">
+                        <div className="col-lg-9">
                             {quote && (
                                 <div className="text-left">
                                     <p className="text-light">{quote.text}</p>
