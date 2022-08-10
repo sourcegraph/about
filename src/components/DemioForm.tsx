@@ -20,7 +20,7 @@ const loadScriptElement = (): Promise<HTMLScriptElement | Element | null> =>
             newScriptElement.setAttribute('id', 'demio-js')
             newScriptElement.setAttribute('async', '')
             newScriptElement.src = '//cdn.demio.com/production/dashboard/embed.bundle.js'
-            
+
             document.head.append(newScriptElement)
             resolve(newScriptElement)
         }
@@ -41,7 +41,7 @@ export const DemioForm: FunctionComponent<DemioFormProps> = ({
     useEffect(() => {
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
         loadScriptElement()
-    
+
         return () => {
             const scriptElement = document.querySelector('#demio-js')
             scriptElement?.remove()
