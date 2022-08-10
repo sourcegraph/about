@@ -9,7 +9,7 @@ import {
     BackButton,
     Background,
     Blockquote,
-    BlogResourceItem,
+    BlogResources,
     ContentSection,
     CustomCarousel,
     CustomerLogos,
@@ -21,7 +21,7 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2 className="mb-5   mb-lg-0">{header}</h2>
+        <h2 className="mb-5 mb-lg-0">{header}</h2>
         {text}
     </>
 )
@@ -153,19 +153,19 @@ const items = [
 const threeUpTextItems = [
     {
         icon: <XmlIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Quickly find trustworthy code to reuse</h4>,
+        subtitle: 'Quickly find trustworthy code to reuse',
         description:
             'Search your entire codebase to discover existing code to reuse. Gather crucial context, like who wrote the code, when, and where it’s used.',
     },
     {
         icon: <FolderUploadOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Safely maintain and improve shared libraries</h4>,
+        subtitle: 'Safely maintain and improve shared libraries',
         description:
             'Automate PRs to push global updates. Get alerts when out-of-date libraries or deprecated functions are used, and eliminate duplicative code.',
     },
     {
         icon: <AccountGroupOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Understand your team’s code reuse efforts</h4>,
+        subtitle: 'Understand your team’s code reuse efforts',
         description:
             'Code maintainers or stakeholders can easily track and understand innersourcing and code reuse trends within the team.',
     },
@@ -210,7 +210,7 @@ const CodeReusePage: FunctionComponent = () => (
                     <div className="row">
                         <div className="col-md-7 my-7">
                             <BackButton href="/use-cases" text="USE CASES" />
-                            <h1 className="mb-4  ">Find and use code that already exists</h1>
+                            <h1 className="mb-4 ">Find and use code that already exists</h1>
                             <div className="mb-5">
                                 Identify existing code libraries for reuse and use innersourcing to avoid spending time
                                 on problems a teammate already solved.
@@ -251,120 +251,105 @@ const CodeReusePage: FunctionComponent = () => (
             </Background>
         }
     >
-        <ContentSection className="my-7">
+        <ContentSection>
             <ThreeUpText title="Identify, resolve, and monitor with confidence" items={threeUpTextItems} />
         </ContentSection>
 
-        <div className="sg-bg-gradient-venus">
-            <ContentSection className="py-7">
-                <TwoColumnSection
-                    leftColumn={
-                        <>
-                            <h2 className="mb-4   max-w-600">
-                                Finding reliable, reusable code is tedious and inefficient
-                            </h2>
-                            <p className="mt-5">
-                                Current tools don’t fully enable teams to innersource and use existing code to develop a
-                                more secure and coherent codebase. What does that mean for you and your team?
-                            </p>
-                            <ul>
-                                <li>Finding idiomatic code examples is tough if you don't know where to look.</li>
-                                <li>
-                                    Without easy access to existing patterns, developers default to executing from
-                                    scratch, increasing complexity and confusion in the codebase.
-                                </li>
-                                <li>
-                                    Engineering leaders lack the visibility needed to ensure teams adopt recommended
-                                    packages and retire deprecated ones.
-                                </li>
-                            </ul>
-                        </>
-                    }
-                    rightColumn={
-                        <Blockquote
-                            headline="FactSet ensures consistency across its entire codebase"
-                            quote="If I’m developing code for a library that might draw charts, for example, we don’t want
-                            30 different ways to draw a chart at FactSet. With Sourcegraph, I can search the code to
-                            find other chart examples, and simply copy the code. This saves us time and ensures
-                            consistency."
-                            author="Joseph Majesky, Software Engineer at FactSet"
-                            inline={false}
-                            logo={{
-                                src: '/external-logos/factset-logo.svg',
-                                alt: 'Factset',
-                            }}
-                            link={{
-                                text: 'Read the case study',
-                                href: '/case-studies/factset-migrates-from-perforce-to-github',
-                            }}
-                        />
-                    }
-                />
-            </ContentSection>
-        </div>
-
-        <ContentSection className="py-7">
-            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
-        </ContentSection>
-
-        <div className="tw-bg-gray-100 py-7">
-            <ContentSection>
-                <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-lg-center align-items-left">
-                    <div className="mx-auto mb-5 d-flex flex-column text-start text-md-center max-w-600">
-                        <h2 className=" ">Get started with Sourcegraph</h2>
-                        <p>
-                            Make it easier to discover trustworthy code for reuse so your teams can spend more time
-                            solving new problems and less time rewriting code.
+        <ContentSection parentClassName="sg-bg-gradient-venus">
+            <TwoColumnSection
+                leftColumn={
+                    <>
+                        <h2 className="mb-4 max-w-600">Finding reliable, reusable code is tedious and inefficient</h2>
+                        <p className="mt-5">
+                            Current tools don’t fully enable teams to innersource and use existing code to develop a
+                            more secure and coherent codebase. What does that mean for you and your team?
                         </p>
-                    </div>
-                    <div className="px-0 text-center col-12">
-                        <Link href="/demo" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="btn btn-primary max-w-350 w-100"
-                                title="Request a Demo."
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.bodyDemo}
-                                data-button-type="cta"
-                            >
-                                Request a demo
-                            </a>
-                        </Link>
-                        <Link href="/use-cases" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="mt-4 d-flex justify-content-center "
-                                title="Explore other use cases"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Explore other use cases
-                            </a>
-                        </Link>
-                    </div>
-                </div>
-            </ContentSection>
-
-            <div className="mt-6">
-                <CustomerLogos />
-            </div>
-        </div>
-
-        <ContentSection className="py-5 py-lg-7">
-            <div className="row d-flex">
-                <div className="col-lg-6">
-                    <h2 className="mb-5  ">Related resources</h2>
-                </div>
-                {blogResourceItems.map(item => (
-                    <BlogResourceItem key={item.title} blog={item} />
-                ))}
-            </div>
+                        <ul>
+                            <li>Finding idiomatic code examples is tough if you don't know where to look.</li>
+                            <li>
+                                Without easy access to existing patterns, developers default to executing from scratch,
+                                increasing complexity and confusion in the codebase.
+                            </li>
+                            <li>
+                                Engineering leaders lack the visibility needed to ensure teams adopt recommended
+                                packages and retire deprecated ones.
+                            </li>
+                        </ul>
+                    </>
+                }
+                rightColumn={
+                    <Blockquote
+                        headline="FactSet ensures consistency across its entire codebase"
+                        quote="If I’m developing code for a library that might draw charts, for example, we don’t want
+                        30 different ways to draw a chart at FactSet. With Sourcegraph, I can search the code to
+                        find other chart examples, and simply copy the code. This saves us time and ensures
+                        consistency."
+                        author="Joseph Majesky, Software Engineer at FactSet"
+                        inline={false}
+                        logo={{
+                            src: '/external-logos/factset-logo.svg',
+                            alt: 'Factset',
+                        }}
+                        link={{
+                            text: 'Read the case study',
+                            href: '/case-studies/factset-migrates-from-perforce-to-github',
+                        }}
+                    />
+                }
+            />
         </ContentSection>
 
         <ContentSection>
+            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
+        </ContentSection>
+
+        <ContentSection parentClassName="tw-bg-gray-100">
+            <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-lg-center align-items-left">
+                <div className="mx-auto mb-5 d-flex flex-column text-start text-md-center max-w-600">
+                    <h2 className="">Get started with Sourcegraph</h2>
+                    <p>
+                        Make it easier to discover trustworthy code for reuse so your teams can spend more time solving
+                        new problems and less time rewriting code.
+                    </p>
+                </div>
+                <div className="px-0 text-center col-12">
+                    <Link href="/demo" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className="btn btn-primary max-w-350 w-100"
+                            title="Request a Demo."
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
+                        >
+                            Request a demo
+                        </a>
+                    </Link>
+                    <Link href="/use-cases" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className="mt-4 d-flex justify-content-center "
+                            title="Explore other use cases"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Explore other use cases
+                        </a>
+                    </Link>
+                </div>
+            </div>
+
+            <div className="tw-mt-4xl">
+                <CustomerLogos />
+            </div>
+        </ContentSection>
+
+        <BlogResources posts={blogResourceItems} />
+
+        <ContentSection>
             <div className="text-center">
-                <h2 className="mb-6  ">Make the most of your existing code.</h2>
+                <h2 className="mb-6">Make the most of your existing code.</h2>
                 <Link href="/get-started/self-hosted" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a

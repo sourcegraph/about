@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, CaseStudyCard, HubSpotForm, BlogResourceItem } from '@components'
+import { Layout, CaseStudyCard, HubSpotForm, BlogResources, ContentSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const blogResourceItems = [
@@ -81,19 +81,21 @@ const PartnerPodcastPage: FunctionComponent = () => (
                 'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Sourcegraph.',
         }}
     >
-        <div className="py-6 sg-bg-gradient-saturn">
-            <section className="container max-w-900">
+        <div className="sg-bg-gradient-saturn tw-px-6 tw-py-5xl">
+            <div className="tw-max-w-screen-xl tw-mx-auto">
                 <h1 className=" max-w-800">Accelerate engineering velocity with Sourcegraph</h1>
-                <h3 className="py-4 tw-max-w-[700px]">See why over 1.2M engineers use Sourcegraph to build software you rely on</h3>
+                <h3 className="py-4 tw-max-w-[700px]">
+                    See why over 1.2M engineers use Sourcegraph to build software you rely on
+                </h3>
                 <div className="pt-0 max-w-400 pt-md-4">
                     <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                 </div>
-            </section>
+            </div>
         </div>
 
-        <div className="container mt-6 max-w-900">
-            <h1 className="">Move fast — even in big code bases</h1>
-            <h5 className="py-3">Learn how these software companies used Sourcegraph</h5>
+        <ContentSection>
+            <h2>Move fast — even in big code bases</h2>
+            <h4 className="py-3">Learn how these software companies used Sourcegraph</h4>
             <div className="flex-wrap pt-4 d-flex tw-relative">
                 {caseStudyItems.map(study => (
                     <div key={study.name} className="px-0 mb-6 col-sm-6 col-md-4">
@@ -101,12 +103,12 @@ const PartnerPodcastPage: FunctionComponent = () => (
                     </div>
                 ))}
             </div>
-        </div>
+        </ContentSection>
 
-        <div className="py-6 sg-bg-gradient-venus">
-            <section className="container text-center max-w-900">
-                <h1 className="pt-2 ">Want to use Sourcegraph at your company?</h1>
-                <h5 className="pt-4 pb-1 mx-auto max-w-550">
+        <ContentSection parentClassName="sg-bg-gradient-venus">
+            <div className="tw-max-w-screen-xl tw-mx-auto tw-text-center">
+                <h2 className="pt-2 ">Want to use Sourcegraph at your company?</h2>
+                <p className="pt-4 pb-1 mx-auto tw-max-w-[650px] tw-text-2xl">
                     <span>
                         <Link href="/get-started/self-hosted" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -135,18 +137,11 @@ const PartnerPodcastPage: FunctionComponent = () => (
                         </Link>
                     </span>{' '}
                     to learn about our enterprise plan and to see Sourcegraph in your own environment.
-                </h5>
-            </section>
-        </div>
-
-        <div className="container px-0 my-6 max-w-900 my-md-8">
-            <div className="col-lg-6">
-                <h1 className="mb-5">Related resources</h1>
+                </p>
             </div>
-            {blogResourceItems.map(item => (
-                <BlogResourceItem key={item.title} blog={item} />
-            ))}
-        </div>
+        </ContentSection>
+
+        <BlogResources posts={blogResourceItems} />
 
         <div className="py-5 text-white d-flex flex-md-row flex-column align-items-center justify-content-center bg-primary">
             <h5 className="my-auto text-center max-w-250 max-w-md-400 pr-md-4">

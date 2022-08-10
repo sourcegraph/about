@@ -8,7 +8,6 @@ import Link from 'next/link'
 import {
     Layout,
     BackButton,
-    BlogResourceItem,
     ContentSection,
     CustomerLogos,
     CustomCarousel,
@@ -16,6 +15,7 @@ import {
     TwoColumnSection,
     QuoteCarousel,
     Background,
+    BlogResources,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -158,19 +158,19 @@ const items = [
 const threeUpTextItems = [
     {
         icon: <TimerOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Reduce time to discovery and resolution</h4>,
+        subtitle: 'Reduce time to discovery and resolution',
         description:
             'Find every instance of a vulnerability and start remediating in minutes instead of days or weeks. Use that head start to deploy fixes sooner.',
     },
     {
         icon: <AutoFixIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Automate fixing, merging, and deploying fixes</h4>,
+        subtitle: 'Automate fixing, merging, and deploying fixes',
         description:
             'Automate PRs to fix vulnerabilities across your entire codebase so you can be 100% confident you resolved every vulnerability.',
     },
     {
         icon: <ShieldAlertOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Alert for risky code changes & known vulnerabilities</h4>,
+        subtitle: 'Alert for risky code changes & known vulnerabilities',
         description:
             'Get on top of vulnerabilities by monitoring your repositories for commits when risky patterns and known vulnerabilities enter your codebase.',
     },
@@ -296,139 +296,120 @@ const UseCasePage: FunctionComponent = () => (
             </Background>
         }
     >
-        <ContentSection className="my-lg-5">
+        <ContentSection>
             <ThreeUpText title="Identify, resolve, and monitor with confidence" items={threeUpTextItems} />
         </ContentSection>
 
-        <div className="sg-bg-gradient-venus">
-            <ContentSection className="py-7">
-                <TwoColumnSection
-                    leftColumn={
-                        <>
-                            <h2 className="mb-4 max-w-400">
-                                Identifying & resolving security vulnerabilities is painful
-                            </h2>
-                            <p>
-                                Existing tooling doesn't enable teams to be agile and effective when responding to
-                                security vulnerabilities. What does that mean for you?
-                            </p>
-                            <ul>
-                                <li>
-                                    Finding vulnerabilities scattered across codebases takes extra time and resources.
-                                </li>
-                                <li>
-                                    Following dependencies across your codebase is inefficient with IDEs that aren't
-                                    connected to all code or up to date.
-                                </li>
-                                <li>
-                                    Whether you're making changes to 50 or 5,000 repositories, tracking and managing PRs
-                                    to completion is a manual and spreadsheet-heavy process.
-                                </li>
-                                <li>
-                                    The vulnerability management and remediation process remains cumbersome, unclear,
-                                    and stressful for all involved.
-                                </li>
-                            </ul>
-                        </>
-                    }
-                    rightColumn={
-                        <div className="tw-bg-white tw-p-8 lg:tw-ml-10">
-                            <h4>Log4j was the tip of the iceberg</h4>
-                            <p>
-                                Log4j is a prime example of how challenging it is to create a cohesive response across
-                                multiple teams in an org.
-                            </p>
-                            <p>
-                                Sourcegraph enables companies like Nutanix to completely remediate Log4j vulnerabilities
-                                across multiple build and artifact management systems, as well as a large monorepo with
-                                many component branches and hundreds of git repositories, in under four days, and with
-                                100% certainty.
-                            </p>
-                            <h6>Learn how to use Sourcegraph to identify and resolve every instance of Log4j.</h6>
-                            <Link href="/blog/log4j-log4shell-0-day" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    title="Read the blog post"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Read the blog post.
-                                </a>
-                            </Link>
-                        </div>
-                    }
-                />
-            </ContentSection>
-        </div>
-
-        <ContentSection className="py-7">
-            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
-        </ContentSection>
-
-        <div className="sg-bg-gradient-saturn">
-            <ContentSection>
-                <QuoteCarousel items={quoteCarouselItems} />
-            </ContentSection>
-        </div>
-
-        <div className="tw-bg-gray-100 py-7">
-            <ContentSection>
-                <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-lg-center align-items-left">
-                    <div className="mx-auto mb-5 d-flex flex-column text-start text-md-center align-items-lg-center">
-                        <h2>Get started with Sourcegraph</h2>
-                        <p className="max-w-450">
-                            Find, fix, and track vulnerable code quickly across your entire codebase to improve code
-                            security.
+        <ContentSection parentClassName="sg-bg-gradient-venus">
+            <TwoColumnSection
+                leftColumn={
+                    <>
+                        <h2 className="mb-4 max-w-400">Identifying & resolving security vulnerabilities is painful</h2>
+                        <p>
+                            Existing tooling doesn't enable teams to be agile and effective when responding to security
+                            vulnerabilities. What does that mean for you?
                         </p>
-                    </div>
-                    <div className="px-0 text-center col-12">
-                        <Link href="/demo" passHref={true}>
+                        <ul>
+                            <li>Finding vulnerabilities scattered across codebases takes extra time and resources.</li>
+                            <li>
+                                Following dependencies across your codebase is inefficient with IDEs that aren't
+                                connected to all code or up to date.
+                            </li>
+                            <li>
+                                Whether you're making changes to 50 or 5,000 repositories, tracking and managing PRs to
+                                completion is a manual and spreadsheet-heavy process.
+                            </li>
+                            <li>
+                                The vulnerability management and remediation process remains cumbersome, unclear, and
+                                stressful for all involved.
+                            </li>
+                        </ul>
+                    </>
+                }
+                rightColumn={
+                    <div className="tw-bg-white tw-p-8 lg:tw-ml-10">
+                        <h4>Log4j was the tip of the iceberg</h4>
+                        <p>
+                            Log4j is a prime example of how challenging it is to create a cohesive response across
+                            multiple teams in an org.
+                        </p>
+                        <p>
+                            Sourcegraph enables companies like Nutanix to completely remediate Log4j vulnerabilities
+                            across multiple build and artifact management systems, as well as a large monorepo with many
+                            component branches and hundreds of git repositories, in under four days, and with 100%
+                            certainty.
+                        </p>
+                        <h6>Learn how to use Sourcegraph to identify and resolve every instance of Log4j.</h6>
+                        <Link href="/blog/log4j-log4shell-0-day" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="btn btn-primary max-w-350 w-100"
-                                title="Request a Demo."
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.bodyDemo}
-                                data-button-type="cta"
-                            >
-                                Request a demo
-                            </a>
-                        </Link>
-                        <Link href="/use-cases" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="mt-4 d-flex justify-content-center "
-                                title="Explore other use cases"
+                                title="Read the blog post"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                Explore other use cases
+                                Read the blog post.
                             </a>
                         </Link>
                     </div>
-                </div>
-            </ContentSection>
-
-            <div className="mt-6">
-                <CustomerLogos />
-            </div>
-        </div>
-
-        <ContentSection className="py-5 py-lg-7">
-            <div className="row d-flex">
-                <div className="col-lg-6">
-                    <h2 className="mb-5">Related resources</h2>
-                </div>
-                {blogResourceItems.map(item => (
-                    <BlogResourceItem key={item.title} blog={item} />
-                ))}
-            </div>
+                }
+            />
         </ContentSection>
 
         <ContentSection>
-            <div className="d-flex justify-content-center mb-lg-6">
+            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
+        </ContentSection>
+
+        <ContentSection parentClassName="sg-bg-gradient-saturn">
+            <QuoteCarousel items={quoteCarouselItems} />
+        </ContentSection>
+
+        <ContentSection parentClassName="tw-bg-gray-100">
+            <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-lg-center align-items-left">
+                <div className="mx-auto mb-5 d-flex flex-column text-start text-md-center align-items-lg-center">
+                    <h2>Get started with Sourcegraph</h2>
+                    <p className="max-w-450">
+                        Find, fix, and track vulnerable code quickly across your entire codebase to improve code
+                        security.
+                    </p>
+                </div>
+                <div className="px-0 text-center col-12">
+                    <Link href="/demo" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className="btn btn-primary max-w-350 w-100"
+                            title="Request a Demo."
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
+                        >
+                            Request a demo
+                        </a>
+                    </Link>
+                    <Link href="/use-cases" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className="mt-4 d-flex justify-content-center "
+                            title="Explore other use cases"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Explore other use cases
+                        </a>
+                    </Link>
+                </div>
+            </div>
+
+            <div className="tw-mt-4xl">
+                <CustomerLogos />
+            </div>
+        </ContentSection>
+
+        <BlogResources posts={blogResourceItems} />
+
+        <ContentSection>
+            <div className="tw-text-center">
                 <Link href="/get-started/self-hosted" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a

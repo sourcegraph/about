@@ -47,8 +47,8 @@ export const Community: FunctionComponent = () => (
             </div>
         }
     >
-        <ContentSection className="py-5 text-center">
-            <h2 className="mt-5 mb-3">Get up to speed</h2>
+        <ContentSection color="white" className="tw-text-center">
+            <h2 className="mb-3">Get up to speed</h2>
             <div className="row justify-content-center">
                 <p className="col-md-8">
                     We can’t give you a 25-hour day, but here is a{' '}
@@ -104,7 +104,7 @@ export const Community: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection className="py-7">
+        <ContentSection>
             <div className="row">
                 <div className="col-lg-6">
                     <h2 className="mt-5 mb-3">DM us on Discord. We're here.</h2>
@@ -133,7 +133,7 @@ export const Community: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection className="py-4">
+        <ContentSection color="white">
             <h2 className="mb-5 text-center">What's next?</h2>
             <Tabs
                 tabs={[
@@ -247,8 +247,8 @@ export const Community: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection className="py-5">
-            <div className="tw-py-24 tw-max-w-screen-xl sm:tw-grid sm:tw-grid-cols-2 tw-mx-auto tw-px-4">
+        <ContentSection>
+            <div className="tw-max-w-screen-xl sm:tw-grid sm:tw-grid-cols-2 tw-mx-auto tw-px-4">
                 <div className="tw-mb-4 sm:mb-0 sm:tw-pr-4">
                     <h2 className="mb-3">We’d love to hear from you!</h2>
                     <br />

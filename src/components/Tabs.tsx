@@ -25,7 +25,7 @@ export const Tabs: FunctionComponent<Tabs> = ({ tabs }) => {
                         role="button"
                         tabIndex={0}
                         className={classNames(
-                            'tw-border-b-3 tw-border-solid tw-border-transparent tw-px-4 tw-py-2 tw-cursor-pointer tw-text-lg tw-font-semibold',
+                            'tw-border-b-3 tw-border-solid tw-border-transparent tw-px-4 tw-py-2 tw-cursor-pointer tw-text-lg tw-font-semibold tw-text-center',
                             { 'tw-border-b-violet-400 tw-bg-transparent': currentTab === index }
                         )}
                     >

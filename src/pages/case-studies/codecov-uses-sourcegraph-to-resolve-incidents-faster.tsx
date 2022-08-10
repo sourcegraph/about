@@ -13,17 +13,17 @@ import {
 
 const threeUpTextItems = [
     {
-        subtitle: <h3 className="pb-3 mx-md-auto tw-text-blurple-400">5 minutes</h3>,
+        subtitle: '5 minutes',
         description:
             "Codecov reviewed their entire codebase and confirmed that they weren't exposed to the Log4j vulnerability.",
     },
     {
-        subtitle: <h3 className="pb-3 mx-md-auto tw-text-blurple-400">12x faster</h3>,
+        subtitle: '12x faster',
         description:
             "Codecov was able to resolve Log4j 12x faster than with their code host's native search functionality and report absolute confidence in that resolution to their customers.",
     },
     {
-        subtitle: <h3 className="pb-3 mx-md-auto tw-text-blurple-400">100% confidence</h3>,
+        subtitle: '100% confidence',
         description:
             'The security team at Codecov is able to complete code reviews independently and with complete confidence that their work is correct.',
     },
@@ -46,7 +46,7 @@ export const CaseStudy: FunctionComponent = () => (
         }
     >
         <NewCaseStudyLayout customer="Codecov">
-            <ContentSection color="white" className="text-center py-7 max-w-900">
+            <ContentSection color="white" className="tw-max-w-4xl">
                 <Blockquote
                     quote="Sourcegraph allows us to be more efficient with our time, whether it's code review, answering security-related questions from clients, or searching for things in the code much more easily than we could through our code host's native search functionality."
                     author="Jeff Holland, Lead Security Engineer at Codecov"
@@ -98,7 +98,7 @@ export const CaseStudy: FunctionComponent = () => (
                 ]}
             />
 
-            <ContentSection color="white" className="pt-lg-8 py-7 max-w-700 col-xl-5">
+            <ContentSection color="white" className="tw-pt-5xl tw-max-w-2xl">
                 <p className="mt-6 mt-lg-7 mt-md-5">
                     In 2021, security engineers Mitchell Borrego and Jeff Holland joined Codecov with the goal of
                     creating a cutting-edge security program. Their responsibilities include security tooling,
@@ -182,7 +182,7 @@ export const CaseStudy: FunctionComponent = () => (
                     nothing is getting past me.”
                 </p>
 
-                <div className="py-7">
+                <div className="tw-py-5xl">
                     <Blockquote
                         quote="With Sourcegraph, onboarding is certainly faster and certainly better. It provided a significant value to us in understanding our codebase at large."
                         author="Mitchell Borrego, Security Engineer, Codecov"
@@ -220,13 +220,11 @@ export const CaseStudy: FunctionComponent = () => (
                 </p>
             </ContentSection>
 
-            <div className="sg-bg-gradient-saturn py-7">
-                <ContentSection>
-                    <ThreeUpText title="Results" items={threeUpTextItems} />
-                </ContentSection>
-            </div>
+            <ContentSection parentClassName="sg-bg-gradient-saturn">
+                <ThreeUpText title="Results" items={threeUpTextItems} />
+            </ContentSection>
 
-            <ContentSection color="white" className="py-7 max-w-700 col-xl-5">
+            <ContentSection color="white" className="tw-max-w-2xl">
                 <h3 className="mb-4 max-w-650">Sourcegraph Cloud was the right fit for a growing team</h3>
                 <p>
                     Codecov wanted something they could get up and running quickly, so they turned to Sourcegraph Cloud.
@@ -241,16 +239,16 @@ export const CaseStudy: FunctionComponent = () => (
                     questions and the team is looking to share Sourcegraph with new engineers to help them become code
                     search pros too.
                 </p>
-            </ContentSection>
 
-            <ContentSection color="white" className="text-center pb-7 max-w-700 col-xl-5">
-                <h5 className="mb-4 tw-text-xl max-w-650">About Codecov</h5>
-                <p>
-                    Codecov is a small organization making an outsized impact on the lives of over one million
-                    developers. In over 29,000 companies across the globe, Codecov customers are able to ship healthier
-                    code using its code coverage tool. Developers rely on Codecov to provide actionable visibility into
-                    their code coverage across any tech stack.
-                </p>
+                <div className="tw-text-center">
+                    <h5 className="tw-mb-6 tw-mt-5xl tw-text-xl">About Codecov</h5>
+                    <p>
+                        Codecov is a small organization making an outsized impact on the lives of over one million
+                        developers. In over 29,000 companies across the globe, Codecov customers are able to ship
+                        healthier code using its code coverage tool. Developers rely on Codecov to provide actionable
+                        visibility into their code coverage across any tech stack.
+                    </p>
+                </div>
             </ContentSection>
         </NewCaseStudyLayout>
     </Layout>

@@ -134,49 +134,45 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 </div>
             ) : (
                 // ---- DEFAULT BODY VARIATION ----
-                <section className="py-6 bg-white py-lg-7">
-                    <ContentSection className="px-0 d-flex flex-column-reverse flex-md-row">
-                        {description}
+                <ContentSection color="white" className="d-flex flex-column-reverse flex-md-row">
+                    {description}
 
-                        <div className="pb-6 col-md-6 col-12 pb-md-0">
-                            <h2>{formLabel}</h2>
-                            <div className="px-0 px-4 py-4 mt-3 shadow-sm sg-border-gradient-saturn tw-border-solid tw-border-3">
-                                {!hasWatchNowQuery && (
-                                    <HubSpotForm
-                                        masterFormName="gatedMulti"
-                                        onFormSubmitted={onFormSubmitted}
-                                        inlineMessage={
-                                            inlineMessage ||
-                                            (resource &&
-                                                `Enjoy your copy of <a href="${resource}" target="_blank" rel="noopener noreferrer">${title}</a>`)
-                                        }
-                                    />
-                                )}
-                            </div>
+                    <div className="pb-6 col-md-6 col-12 pb-md-0">
+                        <h2>{formLabel}</h2>
+                        <div className="px-0 px-4 py-4 mt-3 shadow-sm sg-border-gradient-saturn tw-border-solid tw-border-3">
+                            {!hasWatchNowQuery && (
+                                <HubSpotForm
+                                    masterFormName="gatedMulti"
+                                    onFormSubmitted={onFormSubmitted}
+                                    inlineMessage={
+                                        inlineMessage ||
+                                        (resource &&
+                                            `Enjoy your copy of <a href="${resource}" target="_blank" rel="noopener noreferrer">${title}</a>`)
+                                    }
+                                />
+                            )}
                         </div>
-                    </ContentSection>
+                    </div>
 
                     {children}
-                </section>
+                </ContentSection>
             )}
 
             {speakers?.length && (
-                <section className="py-6 bg-white py-lg-7">
-                    <ContentSection>
-                        <h2>Speakers</h2>
+                <ContentSection color="white" parentClassName={classNames({ 'tw-pt-0': !hasWatchNowQuery })}>
+                    <h2>Speakers</h2>
 
-                        <section className="flex-wrap d-flex">
-                            {speakers.map((speaker: Speaker) => (
-                                <div key={speaker.name} className="pl-0 col-lg-5 col-md-6 col-12 pr-lg-7">
-                                    <img className="py-4" width="140" src={speaker.img} alt={speaker.name} />
-                                    <h5>{speaker.name}</h5>
-                                    <figcaption className="my-2 h6 text-muted max-w-md-250">{speaker.title}</figcaption>
-                                    <p>{speaker.bio}</p>
-                                </div>
-                            ))}
-                        </section>
-                    </ContentSection>
-                </section>
+                    <section className="flex-wrap d-flex">
+                        {speakers.map((speaker: Speaker) => (
+                            <div key={speaker.name} className="pl-0 col-lg-5 col-md-6 col-12 pr-lg-7">
+                                <img className="py-4" width="140" src={speaker.img} alt={speaker.name} />
+                                <h5>{speaker.name}</h5>
+                                <figcaption className="my-2 h6 text-muted max-w-md-250">{speaker.title}</figcaption>
+                                <p>{speaker.bio}</p>
+                            </div>
+                        ))}
+                    </section>
+                </ContentSection>
             )}
         </>
     )

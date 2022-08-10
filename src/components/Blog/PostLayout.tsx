@@ -3,7 +3,17 @@ import { FunctionComponent } from 'react'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
-import { Alert, Blockquote, HubSpotForm, Figure, TableWrapper, Video, YouTube, TrySourcegraph } from '@components'
+import {
+    Alert,
+    Blockquote,
+    ContentSection,
+    HubSpotForm,
+    Figure,
+    TableWrapper,
+    Video,
+    YouTube,
+    TrySourcegraph,
+} from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
@@ -98,9 +108,11 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                 <div className={`blog-post__html ${contentClassName}`}>
                     <MDXRemote {...content} components={components as PostComponents} />
                 </div>
-
-                <TrySourcegraph className="px-0 justify-content-between" />
             </div>
         )}
+
+        <ContentSection>
+            <TrySourcegraph stackedButtons={true} />
+        </ContentSection>
     </Tag>
 )

@@ -16,7 +16,7 @@ export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
     <ContentSection className="container col-xl-6 justify-content-center">
         <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-md-center align-items-left">
             <div className="mb-5 d-flex flex-column">
-                <h2 className="text-center">Get started with Sourcegraph</h2>
+                <h2 className="text-center tw-mb-6">Get started with Sourcegraph</h2>
                 <p className="text-center">Understand, fix, and automate changes across your entire codebase.</p>
             </div>
             <div className="d-flex flex-column">

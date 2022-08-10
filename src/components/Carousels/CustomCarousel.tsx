@@ -7,8 +7,7 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import ArrowUpIcon from 'mdi-react/ArrowUpIcon'
 import CircleSmallIcon from 'mdi-react/CircleSmallIcon'
 
-import { breakpoints } from '@data'
-import { useCarousel, useWindowWidth } from '@hooks'
+import { useCarousel } from '@hooks'
 
 interface CarouselProps {
     items: CarouselItem[]
@@ -31,9 +30,6 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     const { items, autoAdvance, title } = props
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
-
-    const windowWidth = useWindowWidth()
-    const isMdOrDown = windowWidth < breakpoints.lg
 
     return (
         <div>
@@ -121,7 +117,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         onClick={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
-                    <div>
+                    <div className="tw-flex">
                         {carouselItems.map(item => (
                             <CircleSmallIcon
                                 color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}

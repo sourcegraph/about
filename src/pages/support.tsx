@@ -37,9 +37,9 @@ const Support: FunctionComponent = () => (
         }}
     >
         <div className="mt-2">
-            <ContentSection className="py-5 text-center">
+            <ContentSection className="text-center">
                 <h1>Sourcegraph Support</h1>
-                <p>
+                <p className="tw-text-xl tw-mt-2">
                     See{' '}
                     <Link href="/pricing" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -55,6 +55,7 @@ const Support: FunctionComponent = () => (
                     to learn more about these tiers.
                 </p>
             </ContentSection>
+
             <div className="tw-mx-auto tw-my-0 tw-max-w-screen-xl">
                 <div className="pt-4 row">
                     <div className="mx-auto mb-4 d-flex col-md-4">
@@ -290,7 +291,10 @@ const Support: FunctionComponent = () => (
                 <hr className="my-4" />
             </div>
         </div>
-        <TrySourcegraph className="my-6" />
+
+        <ContentSection>
+            <TrySourcegraph />
+        </ContentSection>
     </Layout>
 )
 

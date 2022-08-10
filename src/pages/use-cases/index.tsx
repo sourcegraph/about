@@ -47,7 +47,7 @@ const UseCases: React.FunctionComponent = () => (
         hero={
             <Background variant="lightNebulousAurora">
                 <div className="container">
-                    <div className="row">
+                    <div className="row tw-items-center">
                         <div className="mt-6 col-lg-7 mb-lg-6 md:tw-pr-12">
                             <h1 className="mb-0">Our customers move faster with Sourcegraph</h1>
                             <p className="my-5 ">
@@ -87,9 +87,9 @@ const UseCases: React.FunctionComponent = () => (
                 <CustomerLogos />
             </div>
 
-            <hr className="my-6" />
+            <hr className="tw-my-4xl" />
 
-            <ContentSection id="code-security" className="pt-8">
+            <ContentSection id="code-security">
                 <TwoColumnSection
                     centerContent={true}
                     leftColumn={
@@ -161,7 +161,7 @@ const UseCases: React.FunctionComponent = () => (
                 />
             </ContentSection>
 
-            <hr className="my-7" />
+            <hr />
 
             <ContentSection id="onboarding">
                 <TwoColumnSection
@@ -232,7 +232,7 @@ const UseCases: React.FunctionComponent = () => (
                 />
             </ContentSection>
 
-            <hr className="my-7" />
+            <hr />
 
             <ContentSection id="incident-response">
                 <TwoColumnSection
@@ -303,7 +303,7 @@ const UseCases: React.FunctionComponent = () => (
                 />
             </ContentSection>
 
-            <hr className="my-7" />
+            <hr />
 
             <ContentSection id="code-reuse">
                 <TwoColumnSection
@@ -390,7 +390,7 @@ const UseCases: React.FunctionComponent = () => (
                 />
             </ContentSection>
 
-            <hr className="my-7" />
+            <hr />
 
             <ContentSection id="code-health">
                 <TwoColumnSection
@@ -459,9 +459,9 @@ const UseCases: React.FunctionComponent = () => (
                 />
             </ContentSection>
 
-            <hr className="my-8" />
-
-            <TrySourcegraph className="mb-5" />
+            <ContentSection parentClassName="tw-border-t tw-border-t-gray-200">
+                <TrySourcegraph />
+            </ContentSection>
         </div>
     </Layout>
 )

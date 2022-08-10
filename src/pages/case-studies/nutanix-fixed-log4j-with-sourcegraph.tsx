@@ -17,17 +17,17 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const threeUpTextItems = [
     {
-        subtitle: <h3 className="pb-3 mx-md-auto max-w-300 tw-text-blurple-400">5 minutes</h3>,
+        subtitle: '5 minutes',
         description:
             'Nutanix was able to see where JMSAppender existed, fix it, and send out a release in less than 5 minutes.',
     },
     {
-        subtitle: <h3 className="pb-3 mx-md-auto max-w-300 tw-text-blurple-400">4 days</h3>,
+        subtitle: '4 days',
         description:
             'Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.',
     },
     {
-        subtitle: <h3 className="pb-3 mx-md-auto max-w-300 tw-text-blurple-400">100%</h3>,
+        subtitle: '100%',
         description: 'Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.',
     },
 ]
@@ -49,8 +49,9 @@ export const CaseStudy: FunctionComponent = () => (
         }
     >
         <NewCaseStudyLayout customer="Nutanix">
-            <ContentSection color="white" className="py-7 max-w-600">
+            <ContentSection color="white" className="tw-flex tw-justify-center">
                 <Blockquote
+                    inline={true}
                     quote="Sourcegraph was the right product at the right time."
                     author="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
                     logo={{
@@ -93,7 +94,7 @@ export const CaseStudy: FunctionComponent = () => (
                 ]}
             />
 
-            <ContentSection color="white" className="pt-lg-8 py-7 max-w-700 col-xl-5">
+            <ContentSection color="white" className="tw-pt-5xl tw-max-w-2xl">
                 <p className="mt-6 mt-lg-7 mt-md-5">
                     As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the complexity
                     involved in securing the multitude of applications and solutions required to power such a large
@@ -194,7 +195,7 @@ export const CaseStudy: FunctionComponent = () => (
                     completely flying by the seats of our pants.”
                 </p>
 
-                <div className="py-7">
+                <div className="tw-py-5xl">
                     <Blockquote
                         quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
                         better than having to say, 'Well, boss, I think we got it all.'"
@@ -203,7 +204,7 @@ export const CaseStudy: FunctionComponent = () => (
                     />
                 </div>
 
-                <h3 className="mb-4 max-w-600">Nutanix has renewed confidence in its vulnerability remediation</h3>
+                <h3 className="mb-4">Nutanix has renewed confidence in its vulnerability remediation</h3>
                 <p>
                     <span className="font-weight-bold">Tracking down the Log4j vulnerability was, </span>
                     in Jon's words, like “herding cats who were herding mice at the same time.”
@@ -237,14 +238,14 @@ export const CaseStudy: FunctionComponent = () => (
                 </p>
             </ContentSection>
 
-            <div className="sg-bg-gradient-saturn py-7">
+            <div className="sg-bg-gradient-saturn">
                 <ContentSection>
                     <ThreeUpText title="Results" items={threeUpTextItems} />
                 </ContentSection>
             </div>
 
-            <ContentSection color="white" className="py-7 max-w-700 col-xl-5">
-                <h3 className="mb-4 max-w-650">Log4j is the tip of the open-source vulnerability iceberg</h3>
+            <ContentSection color="white" className="tw-max-w-2xl">
+                <h3 className="mb-4">Log4j is the tip of the open-source vulnerability iceberg</h3>
                 <p>
                     <span className="font-weight-bold">With Sourcegraph's help, </span>
                     Nutanix was able to transform a trust-threatening risk into a trust-building opportunity. Their
@@ -266,16 +267,16 @@ export const CaseStudy: FunctionComponent = () => (
                     have to be more diligent,” Jon said. With Sourcegraph, Nutanix is prepared to
                     <Link href="/use-cases/code-security"> find and fix the next vulnerability</Link>.
                 </p>
-            </ContentSection>
 
-            <ContentSection color="white" className="pb-7 max-w-700">
-                <AuthorBio
-                    customer="Nutanix"
-                    image="/case-studies/jon-kohler.png"
-                    author="Jon Kohler"
-                    title="Technical Director of Solution Engineering at Nutanix"
-                    about="Nutanix has 20,000 customers, an annual revenue of nearly $1.394 billion, and over 6,000 employees. Organizations around the world rely on Nutanix software as a single platform to manage any app at any scale for their hybrid multicloud environments."
-                />
+                <div className="tw-mt-5xl">
+                    <AuthorBio
+                        customer="Nutanix"
+                        image="/case-studies/jon-kohler.png"
+                        author="Jon Kohler"
+                        title="Technical Director of Solution Engineering at Nutanix"
+                        about="Nutanix has 20,000 customers, an annual revenue of nearly $1.394 billion, and over 6,000 employees. Organizations around the world rely on Nutanix software as a single platform to manage any app at any scale for their hybrid multicloud environments."
+                    />
+                </div>
             </ContentSection>
         </NewCaseStudyLayout>
     </Layout>

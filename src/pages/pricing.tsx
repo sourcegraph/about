@@ -77,180 +77,175 @@ const PricingPage: FunctionComponent = () => (
         }}
     >
         <div className="text-dark">
-            <div className="mt-2">
-                <ContentSection className="py-5 text-center hero-section">
-                    <h1>Sourcegraph Pricing</h1>
-                    <h3 className="mt-2">Self-hosted code intelligence platform</h3>
+            <ContentSection className="text-center">
+                <h1>Sourcegraph Pricing</h1>
+                <h3 className="mt-2">Self-hosted code intelligence platform</h3>
+            </ContentSection>
+
+            <div className="container">
+                <div className="pt-4 row">
+                    <div className="mx-auto mb-4 col-lg-6">
+                        <PricingPlan
+                            name="Free"
+                            price={<div className="text-center">$0/mo</div>}
+                            planProperties={
+                                <>
+                                    <PricingPlanProperty>Up to 10 users</PricingPlanProperty>
+                                    <PricingPlanProperty className="mt-3">
+                                        Community support on our public issue tracker
+                                        <br />
+                                        &nbsp;
+                                    </PricingPlanProperty>
+                                </>
+                            }
+                            features={STARTER_FEATURES}
+                            isFree={true}
+                            buttonLabel="Deploy"
+                            buttonClassName="btn-outline-primary"
+                            buttonHref="https://docs.sourcegraph.com#quickstart-guide"
+                        />
+                    </div>
+
+                    <div className="mx-auto mb-4 col-lg-6">
+                        <PricingPlan
+                            name="Enterprise"
+                            price={<div className="text-center">Custom pricing</div>}
+                            planProperties={
+                                <>
+                                    <PricingPlanProperty>Unlimited users</PricingPlanProperty>
+                                    <PricingPlanProperty className="mt-3">
+                                        SLA with dedicated customer engineer
+                                        <br />
+                                        and private Slack channel
+                                    </PricingPlanProperty>
+                                </>
+                            }
+                            features={ENTERPRISE_FEATURES}
+                            isFree={false}
+                            buttonLabel="Contact us"
+                            buttonClassName="btn-outline-primary"
+                            buttonHref="/contact/request-info/?form_submission_source=pricing-enterprise"
+                        />
+                    </div>
+                </div>
+
+                <ContentSection className="tw-max-w-screen-sm">
+                    <Blockquote
+                        border={false}
+                        quote="Sourcegraph gives us the ability to search for and refactor
+                        references to deprecated services, libraries, URL patterns, and more across
+                        our 2000+ repositories, and the confidence that we're not leaving anyone
+                        behind."
+                        author="Aneesh Agrawal, Software Engineer, Lyft"
+                        logo={{
+                            src: '/external-logos/lyft-logo.svg',
+                            alt: 'Lyft logo: Read the case study',
+                            href: '/case-studies/criteo-tackles-big-code',
+                        }}
+                    />
                 </ContentSection>
-                <div className="container">
-                    <div className="pt-4 row">
-                        <div className="mx-auto mb-4 col-lg-6">
-                            <PricingPlan
-                                name="Free"
-                                price={<div className="text-center">$0/mo</div>}
-                                planProperties={
-                                    <>
-                                        <PricingPlanProperty>Up to 10 users</PricingPlanProperty>
-                                        <PricingPlanProperty className="mt-3">
-                                            Community support on our public issue tracker
-                                            <br />
-                                            &nbsp;
-                                        </PricingPlanProperty>
-                                    </>
-                                }
-                                features={STARTER_FEATURES}
-                                isFree={true}
-                                buttonLabel="Deploy"
-                                buttonClassName="btn-outline-primary"
-                                buttonHref="https://docs.sourcegraph.com#quickstart-guide"
-                            />
-                        </div>
 
-                        <div className="mx-auto mb-4 col-lg-6">
-                            <PricingPlan
-                                name="Enterprise"
-                                price={<div className="text-center">Custom pricing</div>}
-                                planProperties={
-                                    <>
-                                        <PricingPlanProperty>Unlimited users</PricingPlanProperty>
-                                        <PricingPlanProperty className="mt-3">
-                                            SLA with dedicated customer engineer
-                                            <br />
-                                            and private Slack channel
-                                        </PricingPlanProperty>
-                                    </>
-                                }
-                                features={ENTERPRISE_FEATURES}
-                                isFree={false}
-                                buttonLabel="Contact us"
-                                buttonClassName="btn-outline-primary"
-                                buttonHref="/contact/request-info/?form_submission_source=pricing-enterprise"
-                            />
-                        </div>
-                    </div>
+                <div className="row">
+                    <div className="mx-auto mb-4 col-md-12">
+                        <div className="px-6 card">
+                            <h2 className="my-3 tw-font-semibold">Team</h2>
 
-                    <div className="row justify-content-center pt-md-4">
-                        <div className="col-md-8">
-                            <Blockquote
-                                border={false}
-                                quote="Sourcegraph gives us the ability to search for and refactor
-                                references to deprecated services, libraries, URL patterns, and more across
-                                our 2000+ repositories, and the confidence that we're not leaving anyone
-                                behind."
-                                author="Aneesh Agrawal, Software Engineer, Lyft"
-                                logo={{
-                                    src: '/external-logos/lyft-logo.svg',
-                                    alt: 'Lyft logo: Read the case study',
-                                    href: '/case-studies/criteo-tackles-big-code',
-                                }}
-                            />
-                        </div>
-                    </div>
-
-                    <div className="pt-4 row">
-                        <div className="mx-auto mb-4 col-md-12">
-                            <div className="px-6 card">
-                                <h2 className="my-3 tw-font-semibold">Team</h2>
-
-                                <div className="row">
-                                    <div className="pr-5 mx-auto mb-4 tw-text-xl col-md-6">
-                                        If you have more than 10 users, you can upgrade to the Team plan. This includes
-                                        all of the features of the Free plan, plus:
-                                    </div>
-                                    <div className="mx-auto mb-4 tw-text-xl col-md-6 pl-md-6">
-                                        Contact us to get started with the Team plan.
-                                    </div>
+                            <div className="row">
+                                <div className="pr-5 mx-auto mb-4 tw-text-xl col-md-6">
+                                    If you have more than 10 users, you can upgrade to the Team plan. This includes all
+                                    of the features of the Free plan, plus:
                                 </div>
-                                <div className="row">
-                                    <div className="mx-auto mb-4 col-md-6">
-                                        <ol className="list-group list-group-flush mr-lg-5">
-                                            <PricingPlanFeature
-                                                key="team-feature-1"
-                                                info={{ label: 'Up to 25 users', description: '' }}
-                                                value={true}
-                                                tag="li"
-                                                className="px-0 bg-transparent border-0 list-group-item"
-                                            />
-                                            <PricingPlanFeature
-                                                key="team-feature-2"
-                                                info={{
-                                                    label: 'User and admin roles',
-                                                    description:
-                                                        'Allow only certain users (site admins) to view and edit site configuration and repository/code host credentials',
-                                                }}
-                                                value={true}
-                                                tag="li"
-                                                className="px-0 bg-transparent border-0 list-group-item"
-                                            />
-                                            <PricingPlanFeature
-                                                key="team-feature-3"
-                                                info={{ label: 'Email support', description: '' }}
-                                                value={true}
-                                                tag="li"
-                                                className="px-0 bg-transparent border-0 list-group-item"
-                                            />
-                                        </ol>
-                                    </div>
-                                    <div className="pl-6 mx-auto mb-4 col-md-6">
-                                        <a
-                                            className="mx-auto my-0 btn btn-outline-primary col-lg-7 col-10"
-                                            href="https://info.sourcegraph.com/team-pricing"
-                                            title="Contact us"
-                                            data-button-style={buttonStyle.outline}
-                                            data-button-location={buttonLocation.body}
-                                            data-button-type="cta"
-                                        >
-                                            Contact us
-                                        </a>
-                                    </div>
+                                <div className="mx-auto mb-4 tw-text-xl col-md-6 pl-md-6">
+                                    Contact us to get started with the Team plan.
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="mx-auto mb-4 col-md-6">
+                                    <ol className="list-group list-group-flush mr-lg-5">
+                                        <PricingPlanFeature
+                                            key="team-feature-1"
+                                            info={{ label: 'Up to 25 users', description: '' }}
+                                            value={true}
+                                            tag="li"
+                                            className="px-0 bg-transparent border-0 list-group-item"
+                                        />
+                                        <PricingPlanFeature
+                                            key="team-feature-2"
+                                            info={{
+                                                label: 'User and admin roles',
+                                                description:
+                                                    'Allow only certain users (site admins) to view and edit site configuration and repository/code host credentials',
+                                            }}
+                                            value={true}
+                                            tag="li"
+                                            className="px-0 bg-transparent border-0 list-group-item"
+                                        />
+                                        <PricingPlanFeature
+                                            key="team-feature-3"
+                                            info={{ label: 'Email support', description: '' }}
+                                            value={true}
+                                            tag="li"
+                                            className="px-0 bg-transparent border-0 list-group-item"
+                                        />
+                                    </ol>
+                                </div>
+                                <div className="pl-6 mx-auto mb-4 col-md-6">
+                                    <a
+                                        className="mx-auto my-0 btn btn-outline-primary col-lg-7 col-10"
+                                        href="https://info.sourcegraph.com/team-pricing"
+                                        title="Contact us"
+                                        data-button-style={buttonStyle.outline}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
+                                        Contact us
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div className="py-3 text-center">
-                        <h3>Education and nonprofit discounts</h3>
-                        <p>
-                            Sourcegraph supports the work of educational organizations and nonprofits.
-                            <br />
-                            Please{' '}
-                            <Link href="/demo">
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    title="Contact us"
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    contact us
-                                </a>
-                            </Link>{' '}
-                            about discounts for your development teams.
-                        </p>
-                    </div>
-
-                    <hr className="my-4" />
-
-                    <div className="row justify-content-center pt-md-4">
-                        <div className="col-md-8">
-                            <Blockquote
-                                border={false}
-                                quote="Sourcegraph pays for itself many times over—it's a game changer."
-                                author="François Jehl, Senior Engineering Manager, Criteo"
-                                logo={{
-                                    src: '/external-logos/criteo-logo.svg',
-                                    alt: 'Criteo logo: Read the case study',
-                                    href: '/case-studies/criteo-tackles-big-code',
-                                }}
-                            />
-                        </div>
-                    </div>
-
-                    <hr className="my-4" />
                 </div>
+
+                <div className="text-center tw-py-5xl">
+                    <h3>Education and nonprofit discounts</h3>
+                    <p>
+                        Sourcegraph supports the work of educational organizations and nonprofits.
+                        <br />
+                        Please{' '}
+                        <Link href="/demo">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Contact us"
+                                data-button-style={buttonStyle.outline}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                contact us
+                            </a>
+                        </Link>{' '}
+                        about discounts for your development teams.
+                    </p>
+                </div>
+
+                <hr className="my-4" />
+
+                <ContentSection>
+                    <Blockquote
+                        border={false}
+                        quote="Sourcegraph pays for itself many times over—it's a game changer."
+                        author="François Jehl, Senior Engineering Manager, Criteo"
+                        logo={{
+                            src: '/external-logos/criteo-logo.svg',
+                            alt: 'Criteo logo: Read the case study',
+                            href: '/case-studies/criteo-tackles-big-code',
+                        }}
+                    />
+                </ContentSection>
             </div>
 
-            <TrySourcegraph />
+            <ContentSection parentClassName="tw-border-t tw-border-t-gray-200">
+                <TrySourcegraph />
+            </ContentSection>
         </div>
     </Layout>
 )

@@ -17,7 +17,6 @@ import {
 } from '@code-insights/mock-data'
 import { CodeInsightExampleType } from '@code-insights/types'
 import {
-    BlogResourceItem,
     Blockquote,
     ContentSection,
     CustomCarousel,
@@ -30,6 +29,7 @@ import {
     TwoColumnSection,
     YouTube,
     Video,
+    BlogResources,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -323,12 +323,12 @@ const CodeInsightsPage: FunctionComponent = () => (
                 product="code insights"
                 title={'Track what really matters\nto you and your team.'}
                 description="Transform your code into a queryable database to create customizable, visual dashboards in seconds."
-                cta={<HubSpotForm masterFormName="contactEmail" />}
+                cta={<HubSpotForm masterFormName="contactEmail" chiliPiper={true} />}
                 displayUnderNav={true}
             />
         }
     >
-        <ContentSection className="py-lg-8 py-7">
+        <ContentSection>
             <TwoColumnSection
                 centerContent={true}
                 leftColumn={
@@ -362,8 +362,8 @@ const CodeInsightsPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <div className="sg-bg-gradient-venus py-7">
-            <ContentSection className="col-lg-8 max-w-1000">
+        <ContentSection parentClassName="sg-bg-gradient-venus">
+            <div className="tw-max-w-screen-lg tw-mx-auto">
                 <Blockquote
                     headline="Trusted by engineering teams worldwide"
                     quote="As we've grown, so has the need to better track and communicate our progress and
@@ -375,10 +375,10 @@ const CodeInsightsPage: FunctionComponent = () => (
                     author="Balázs Tóthfalussy, Engineering Manager, Prezi"
                     logo={{ src: '/external-logos/prezi-logo.svg', alt: 'Prezi logo', href: 'https://prezi.com' }}
                 />
-            </ContentSection>
-        </div>
+            </div>
+        </ContentSection>
 
-        <ContentSection className="py-7">
+        <ContentSection>
             <div className="flex-wrap d-flex">
                 <h2 className="mb-3 text-center w-100">Engineering leadership with superpowers</h2>
                 <p className="text-center icon-subheader w-100">
@@ -430,19 +430,16 @@ const CodeInsightsPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <div className="tw-bg-gray-100 py-7">
-            <ContentSection>
-                <CustomCarousel
-                    items={items}
-                    autoAdvance={true}
-                    hasImages={true}
-                    title="How engineering teams use Code Insights"
-                />
-            </ContentSection>
-        </div>
+        <ContentSection parentClassName="tw-bg-gray-100">
+            <CustomCarousel
+                items={items}
+                autoAdvance={true}
+                hasImages={true}
+                title="How engineering teams use Code Insights"
+            />
+        </ContentSection>
 
-        {/* Demo */}
-        <ContentSection className="py-7">
+        <ContentSection>
             <h2 className="mb-3 text-center">See Code Insights in action</h2>
             <div className="row justify-content-center pt-md-4">
                 <div className="col-lg-8">
@@ -451,161 +448,146 @@ const CodeInsightsPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        {/* Use Cases */}
-        <div className="py-4 sg-bg-gradient-venus d-none d-lg-block d-md-block">
-            <ContentSection className="py-4 py-md-7">
-                <h2 className="mb-5 text-center">Popular Code Insights templates</h2>
-                <Tabs
-                    tabs={[
-                        {
-                            title: 'Migrations',
-                            content: (
-                                <div className="flex-wrap mt-5 w-100 d-flex">
-                                    {templates.migrations.map(template => (
-                                        <TemplateCodeBlock key={template.header} template={template} />
-                                    ))}
-                                </div>
-                            ),
-                        },
-                        {
-                            title: 'Version Tracking',
-                            content: (
-                                <div className="flex-wrap mt-5 w-100 d-flex justify-content-center">
-                                    {templates.versionTracking.map(template => (
-                                        <TemplateCodeBlock key={template.header} template={template} />
-                                    ))}
-                                </div>
-                            ),
-                        },
-                        {
-                            title: 'Security',
-                            content: (
-                                <div className="flex-wrap mt-5 w-100 d-flex justify-content-center">
-                                    {templates.security.map(template => (
-                                        <TemplateCodeBlock key={template.header} template={template} />
-                                    ))}
-                                </div>
-                            ),
-                        },
-                        {
-                            title: 'Code Health',
-                            content: (
-                                <div className="flex-wrap mt-5 w-100 d-flex justify-content-center">
-                                    {templates.codeHealth.map(template => (
-                                        <TemplateCodeBlock key={template.header} template={template} />
-                                    ))}
-                                </div>
-                            ),
-                        },
-                    ]}
-                />
-                <div className="tw-w-full tw-text-center">
-                    <a
-                        href="https://docs.sourcegraph.com/code_insights"
-                        title="Code Insights on docs."
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        See Docs for more use cases
-                    </a>
-                </div>
-            </ContentSection>
-        </div>
+        <ContentSection parentClassName="sg-bg-gradient-venus tw-hidden md:tw-block">
+            <h2 className="mb-5 text-center">Popular Code Insights templates</h2>
+            <Tabs
+                tabs={[
+                    {
+                        title: 'Migrations',
+                        content: (
+                            <div className="flex-wrap mt-5 w-100 d-flex">
+                                {templates.migrations.map(template => (
+                                    <TemplateCodeBlock key={template.header} template={template} />
+                                ))}
+                            </div>
+                        ),
+                    },
+                    {
+                        title: 'Version Tracking',
+                        content: (
+                            <div className="flex-wrap mt-5 w-100 d-flex justify-content-center">
+                                {templates.versionTracking.map(template => (
+                                    <TemplateCodeBlock key={template.header} template={template} />
+                                ))}
+                            </div>
+                        ),
+                    },
+                    {
+                        title: 'Security',
+                        content: (
+                            <div className="flex-wrap mt-5 w-100 d-flex justify-content-center">
+                                {templates.security.map(template => (
+                                    <TemplateCodeBlock key={template.header} template={template} />
+                                ))}
+                            </div>
+                        ),
+                    },
+                    {
+                        title: 'Code Health',
+                        content: (
+                            <div className="flex-wrap mt-5 w-100 d-flex justify-content-center">
+                                {templates.codeHealth.map(template => (
+                                    <TemplateCodeBlock key={template.header} template={template} />
+                                ))}
+                            </div>
+                        ),
+                    },
+                ]}
+            />
 
-        {/* Use Cases Carousel */}
-        <div className="py-4 sg-bg-gradient-venus tw-block md:tw-hidden">
-            <ContentSection className="py-4 py-md-7">
-                <h2 className="mb-5 text-center">Popular Code Insights templates</h2>
-                <Tabs
-                    tabs={[
-                        {
-                            title: 'Migrations',
-                            content: (
-                                <div className="mt-5 w-100 justify-content-center">
-                                    <TabCarousel items={templates.migrations} autoAdvance={true} />
-                                </div>
-                            ),
-                        },
-                        {
-                            title: 'Version Tracking',
-                            content: (
-                                <div className="mt-5 w-100 justify-content-center">
-                                    <TabCarousel items={templates.versionTracking} autoAdvance={true} />
-                                </div>
-                            ),
-                        },
-                        {
-                            title: 'Security',
-                            content: (
-                                <div className="mt-5 w-100 justify-content-center">
-                                    <TabCarousel items={templates.security} autoAdvance={true} />
-                                </div>
-                            ),
-                        },
-                        {
-                            title: 'Code Health',
-                            content: (
-                                <div className="mt-5 w-100 justify-content-center">
-                                    <TabCarousel items={templates.codeHealth} autoAdvance={true} />
-                                </div>
-                            ),
-                        },
-                    ]}
-                />
-                <div className="w-100 d-flex justify-content-center">
-                    <a
-                        className="px-0 py-4 col-7"
-                        href="https://docs.sourcegraph.com/code_insights"
-                        title="Code Insights on docs."
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        See Docs for more use cases
-                    </a>
-                </div>
-            </ContentSection>
-        </div>
-
-        <div className="tw-bg-gray-100">
-            <ContentSection>
-                <div className="row d-flex flex-column justify-content-start py-lg-8 py-7">
-                    <div className="mb-5 col-lg-8 d-flex flex-column justify-content-start">
-                        <h2>Get started with Code Insights</h2>
-                        <p>
-                            Create a code insight in 60 seconds and get historical data for previously untracked metrics
-                            — data backfills automatically.
-                        </p>
-                    </div>
-                    <div className="pt-1 col-lg-7 d-flex flex-column">
-                        <Link href="/contact/request-code-insights-demo" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="mr-3 btn btn-primary col-4"
-                                title="Request a Demo of Code Insights."
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.trySourcegraph}
-                                data-button-type="cta"
-                            >
-                                Request a demo
-                            </a>
-                        </Link>
-                    </div>
-                </div>
-            </ContentSection>
-        </div>
-
-        <ContentSection className="py-5 py-lg-7">
-            <div className="row d-flex">
-                <div className="col-lg-6">
-                    <h2 className="mb-5">Learn more</h2>
-                </div>
-                {blogResourceItems.map(item => (
-                    <BlogResourceItem key={item.title} blog={item} />
-                ))}
+            <div className="tw-w-full tw-text-center">
+                <a
+                    href="https://docs.sourcegraph.com/code_insights"
+                    title="Code Insights on docs."
+                    data-button-style={buttonStyle.text}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                >
+                    See Docs for more use cases
+                </a>
             </div>
         </ContentSection>
+
+        {/* Use Cases Carousel */}
+        <ContentSection parentClassName="sg-bg-gradient-venus tw-block md:tw-hidden">
+            <h2 className="mb-5 text-center">Popular Code Insights templates</h2>
+            <Tabs
+                tabs={[
+                    {
+                        title: 'Migrations',
+                        content: (
+                            <div className="mt-5 w-100 justify-content-center">
+                                <TabCarousel items={templates.migrations} autoAdvance={true} />
+                            </div>
+                        ),
+                    },
+                    {
+                        title: 'Version Tracking',
+                        content: (
+                            <div className="mt-5 w-100 justify-content-center">
+                                <TabCarousel items={templates.versionTracking} autoAdvance={true} />
+                            </div>
+                        ),
+                    },
+                    {
+                        title: 'Security',
+                        content: (
+                            <div className="mt-5 w-100 justify-content-center">
+                                <TabCarousel items={templates.security} autoAdvance={true} />
+                            </div>
+                        ),
+                    },
+                    {
+                        title: 'Code Health',
+                        content: (
+                            <div className="mt-5 w-100 justify-content-center">
+                                <TabCarousel items={templates.codeHealth} autoAdvance={true} />
+                            </div>
+                        ),
+                    },
+                ]}
+            />
+            <div className="w-100 d-flex justify-content-center">
+                <a
+                    className="px-0 py-4 col-7"
+                    href="https://docs.sourcegraph.com/code_insights"
+                    title="Code Insights on docs."
+                    data-button-style={buttonStyle.text}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                >
+                    See Docs for more use cases
+                </a>
+            </div>
+        </ContentSection>
+
+        <ContentSection parentClassName="tw-bg-gray-100">
+            <div className="row d-flex flex-column justify-content-start">
+                <div className="mb-5 col-lg-8 d-flex flex-column justify-content-start">
+                    <h2>Get started with Code Insights</h2>
+                    <p>
+                        Create a code insight in 60 seconds and get historical data for previously untracked metrics —
+                        data backfills automatically.
+                    </p>
+                </div>
+                <div className="pt-1 col-lg-7 d-flex flex-column">
+                    <Link href="/contact/request-code-insights-demo" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className="mr-3 btn btn-primary col-4"
+                            title="Request a Demo of Code Insights."
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.trySourcegraph}
+                            data-button-type="cta"
+                        >
+                            Request a demo
+                        </a>
+                    </Link>
+                </div>
+            </div>
+        </ContentSection>
+
+        <BlogResources posts={blogResourceItems} title="Learn More" />
     </Layout>
 )
 

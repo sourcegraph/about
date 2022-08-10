@@ -8,7 +8,7 @@ import Link from 'next/link'
 import {
     BackButton,
     Background,
-    BlogResourceItem,
+    BlogResources,
     ContentSection,
     CustomCarousel,
     CustomerLogos,
@@ -208,19 +208,19 @@ const blogResourceItems = [
 const threeUpTextItems = [
     {
         icon: <MagnifyIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Assess incidents quickly</h4>,
+        subtitle: 'Assess incidents quickly',
         description:
             "Pinpoint the code responsible for the incident and find the root cause in your codebase. Understand the code's functionality to verify the issue.",
     },
     {
         icon: <ClockTimeThreeOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Plan your remediation</h4>,
+        subtitle: 'Plan your remediation',
         description:
             'Reduce time to resolution by supplying response teams with actionable details, like links to all affected code.',
     },
     {
         icon: <WebIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 ">Execute your plan globally</h4>,
+        subtitle: 'Execute your plan globally',
         description:
             "Fix the root cause and confirm the same issue doesn't reoccur in other areas by locating the code pattern and automating fixes across your entire codebase.",
     },
@@ -281,142 +281,127 @@ const IncidentResponsePage: FunctionComponent = () => (
             </Background>
         }
     >
-        <ContentSection className="my-7">
+        <ContentSection>
             <ThreeUpText
                 title="Identify the root cause of an incident and fix it everywhere, fast"
                 items={threeUpTextItems}
             />
         </ContentSection>
 
-        <div className="sg-bg-gradient-venus">
-            <ContentSection className="py-7">
-                <TwoColumnSection
-                    leftColumn={
-                        <>
-                            <h2 className="mb-4 max-w-500">Incident response is stressful and overwhelming</h2>
-                            <p>
-                                Current tools don't enable teams to quickly get to the root cause of an incident and
-                                ensure it doesn't reoccur. What does that mean for you?
-                            </p>
-                            <ul>
-                                <li className="mt-1">
-                                    Outages and degraded performance persist while development teams look for causes,
-                                    leading to lost revenue and frustrated customers.
-                                </li>
-                                <li className="mt-1">
-                                    Incidents can reoccur if developers can't find the root cause, leaving your company
-                                    with a reputation for unreliability and missed SLAs.
-                                </li>
-                                <li className="mt-1">
-                                    Incident response often relies on knowledge silos, which are neither scalable nor
-                                    sustainable.
-                                </li>
-                                <li className="mt-1">
-                                    Company leaders struggle to gain visibility into in-progress incident responses and
-                                    communicate timelines to stakeholders.
-                                </li>
-                            </ul>
-                        </>
-                    }
-                    rightColumn={
-                        <div className="bg-white tw-p-8 lg:tw-ml-10">
-                            <h4>Cloudflare quickly addresses root-cause incidents</h4>
-                            <p>
-                                Cloudflare engineers use Sourcegraph's code intelligence platform to refactor and debug
-                                faster. With Sourcegraph, they can quickly identify out-of-date code libraries by only
-                                searching certain repositories while excluding specific file types. And it's easier to
-                                search for error logs. As a result, the team can feel confident they've addressed each
-                                issue.
-                            </p>
-                            <Link
-                                href="/case-studies/cloudflare-accelerates-debugging-and-improves-security"
-                                passHref={true}
-                            >
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    title="Read the Cloudflare case study"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Read the Cloudflare case study
-                                </a>
-                            </Link>
-                            <img
-                                src="/external-logos/cloudflare-logo.svg"
-                                alt="Cloudflare logo"
-                                className="mx-auto mt-3 d-flex max-w-150"
-                            />
-                        </div>
-                    }
-                />
-            </ContentSection>
-        </div>
-
-        <ContentSection className="py-7">
-            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
-        </ContentSection>
-
-        <div className="sg-bg-gradient-saturn">
-            <ContentSection>
-                <QuoteCarousel items={quoteCarouselItems} />
-            </ContentSection>
-        </div>
-
-        <div className="tw-bg-gray-100 py-7">
-            <ContentSection>
-                <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-lg-center align-items-left">
-                    <div className="mx-auto mb-5 d-flex flex-column text-start text-md-center max-w-600">
-                        <h2 className="">Get started with Sourcegraph</h2>
+        <ContentSection parentClassName="sg-bg-gradient-venus">
+            <TwoColumnSection
+                leftColumn={
+                    <>
+                        <h2 className="mb-4 max-w-500">Incident response is stressful and overwhelming</h2>
                         <p>
-                            Respond to incidents with confidence and speed, and remediate issues at their root to ensure
-                            they don't reoccur.
+                            Current tools don't enable teams to quickly get to the root cause of an incident and ensure
+                            it doesn't reoccur. What does that mean for you?
                         </p>
-                    </div>
-                    <div className="px-0 text-center col-12">
-                        <Link href="/demo" passHref={true}>
+                        <ul>
+                            <li className="mt-1">
+                                Outages and degraded performance persist while development teams look for causes,
+                                leading to lost revenue and frustrated customers.
+                            </li>
+                            <li className="mt-1">
+                                Incidents can reoccur if developers can't find the root cause, leaving your company with
+                                a reputation for unreliability and missed SLAs.
+                            </li>
+                            <li className="mt-1">
+                                Incident response often relies on knowledge silos, which are neither scalable nor
+                                sustainable.
+                            </li>
+                            <li className="mt-1">
+                                Company leaders struggle to gain visibility into in-progress incident responses and
+                                communicate timelines to stakeholders.
+                            </li>
+                        </ul>
+                    </>
+                }
+                rightColumn={
+                    <div className="bg-white tw-p-8 lg:tw-ml-10">
+                        <h4>Cloudflare quickly addresses root-cause incidents</h4>
+                        <p>
+                            Cloudflare engineers use Sourcegraph's code intelligence platform to refactor and debug
+                            faster. With Sourcegraph, they can quickly identify out-of-date code libraries by only
+                            searching certain repositories while excluding specific file types. And it's easier to
+                            search for error logs. As a result, the team can feel confident they've addressed each
+                            issue.
+                        </p>
+                        <Link
+                            href="/case-studies/cloudflare-accelerates-debugging-and-improves-security"
+                            passHref={true}
+                        >
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="btn btn-primary max-w-350 w-100"
-                                title="Request a Demo."
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.bodyDemo}
-                                data-button-type="cta"
-                            >
-                                Request a demo
-                            </a>
-                        </Link>
-                        <Link href="/use-cases" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="mt-4 d-flex justify-content-center "
-                                title="Explore other use cases"
+                                title="Read the Cloudflare case study"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                Explore other use cases
+                                Read the Cloudflare case study
                             </a>
                         </Link>
+                        <img
+                            src="/external-logos/cloudflare-logo.svg"
+                            alt="Cloudflare logo"
+                            className="mx-auto mt-3 d-flex max-w-150"
+                        />
                     </div>
-                </div>
-            </ContentSection>
+                }
+            />
+        </ContentSection>
 
-            <div className="mt-6">
+        <ContentSection>
+            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
+        </ContentSection>
+
+        <ContentSection parentClassName="sg-bg-gradient-saturn">
+            <QuoteCarousel items={quoteCarouselItems} />
+        </ContentSection>
+
+        <ContentSection parentClassName="tw-bg-gray-100">
+            <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-lg-center align-items-left">
+                <div className="mx-auto mb-5 d-flex flex-column text-start text-md-center max-w-600">
+                    <h2 className="">Get started with Sourcegraph</h2>
+                    <p>
+                        Respond to incidents with confidence and speed, and remediate issues at their root to ensure
+                        they don't reoccur.
+                    </p>
+                </div>
+                <div className="px-0 text-center col-12">
+                    <Link href="/demo" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className="btn btn-primary max-w-350 w-100"
+                            title="Request a Demo."
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
+                        >
+                            Request a demo
+                        </a>
+                    </Link>
+                    <Link href="/use-cases" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className="mt-4 d-flex justify-content-center "
+                            title="Explore other use cases"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Explore other use cases
+                        </a>
+                    </Link>
+                </div>
+            </div>
+
+            <div className="tw-mt-4xl">
                 <CustomerLogos />
             </div>
-        </div>
-
-        <ContentSection className="py-5 py-lg-7">
-            <div className="row d-flex">
-                <div className="col-lg-6">
-                    <h2 className="mb-5 ">Related resources</h2>
-                </div>
-                {blogResourceItems.map(item => (
-                    <BlogResourceItem key={item.title} blog={item} />
-                ))}
-            </div>
         </ContentSection>
+
+        <BlogResources posts={blogResourceItems} />
 
         <ContentSection>
             <div className="text-center">

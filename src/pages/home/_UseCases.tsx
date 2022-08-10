@@ -10,7 +10,6 @@ import Link from 'next/link'
 
 import { ContentSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
-import { useWindowWidth } from '@hooks'
 
 interface UseCases {
     icon: MdiReactIconComponentType
@@ -73,8 +72,7 @@ const useCases: UseCases[] = [
 const UseCases: FunctionComponent = () => {
     const box = useRef<HTMLDivElement | null>(null)
     const [boxHeight, setBoxHeight] = useState<number>(0)
-    const windowWidth = useWindowWidth()
-    const boxHalfHeight = `-${boxHeight / 2}px`
+    const boxHalfHeight = `-${boxHeight / 2 + 96}px`
 
     function getBoxHeight(): void {
         if (box.current) {
@@ -95,7 +93,7 @@ const UseCases: FunctionComponent = () => {
     }, [])
 
     return (
-        <ContentSection className="pt-5 tw-relative pt-md-7">
+        <ContentSection className="tw-relative">
             <div className="text-center">
                 <h2>Move fast &mdash; even in big codebases</h2>
             </div>

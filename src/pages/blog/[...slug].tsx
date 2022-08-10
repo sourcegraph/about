@@ -42,7 +42,7 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
                     <BlogHeader {...blogInfo} />
                 </div>
                 <div className="mt-5 bg-white post-template">
-                    <div className="container-lg">
+                    <div className="tw-max-w-screen-xl tw-mx-auto">
                         <PostTemplate
                             post={post}
                             content={content}

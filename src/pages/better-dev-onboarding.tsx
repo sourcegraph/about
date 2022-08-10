@@ -4,7 +4,6 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import {
-    BlogResourceItem,
     ContentSection,
     CustomerLogos,
     CoreFeatures,
@@ -12,6 +11,7 @@ import {
     IntegrationsSection,
     Layout,
     Background,
+    BlogResources,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -81,21 +81,12 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
             <IntegrationsSection />
         </div>
 
-        <ContentSection className="py-5 py-lg-6">
-            <div className="row d-flex">
-                <div className="col-lg-6">
-                    <h1 className="mb-5">Related resources</h1>
-                </div>
-                {resourceItems.map(item => (
-                    <BlogResourceItem key={item.title} blog={item} />
-                ))}
-            </div>
-        </ContentSection>
+        <BlogResources posts={resourceItems} />
 
         <ContentSection>
             <div className="tw-mx-auto tw-text-center tw-max-w-screen-md">
-                <h1>Ready to accelerate developer onboarding? Let's talk.</h1>
-                <p>
+                <h2 className="tw-mb-xs">Ready to accelerate developer onboarding? Let's talk.</h2>
+                <p className="tw-max-w-lg tw-mx-auto">
                     <Link href="/get-started/self-hosted" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a

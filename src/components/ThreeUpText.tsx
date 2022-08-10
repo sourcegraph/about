@@ -1,31 +1,57 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, ReactElement, ReactHTML, ReactNode } from 'react'
+
+import classNames from 'classnames'
 
 interface Item {
-    icon?: React.ReactNode
-    subtitle: React.ReactNode
+    icon?: ReactNode
+    subtitle: string
     description: string
 }
 
-interface Props {
+interface ThreeUpText {
     title: string
+    subTitle?: string | ReactNode
     items: Item[]
 }
 
-export const ThreeUpText: FunctionComponent<Props> = ({ title, items }) => (
-    <section className="mx-4 row mx-lg-0">
-        <h2 className="px-0 mx-auto text-md-center col-12 max-w-lg-550 mb-lg-4">{title}</h2>
+interface ItemTitle {
+    text: string
+    small?: boolean
+}
 
-        <div className="flex-wrap d-flex justify-content-between">
+const ItemTitle = ({ text, small }: ItemTitle): ReactElement => {
+    const TagName = small ? 'h4' : 'h3'
+    const Tag = TagName as keyof ReactHTML
+
+    return (
+        <Tag
+            className={classNames('tw-mb-4', {
+                'tw-text-blurple-400': !small,
+                'tw-text-black': small,
+                'md:tw-max-w-xs md:tw-mx-auto': text.length > 20,
+            })}
+        >
+            {text}
+        </Tag>
+    )
+}
+
+export const ThreeUpText: FunctionComponent<ThreeUpText> = ({ title, subTitle, items }) => (
+    <div className="sm:tw-text-center">
+        <h2 className={classNames('md:text-center', { 'tw-mb-16': !subTitle, 'tw-mb-4': subTitle })}>{title}</h2>
+        {subTitle && <p className="tw-mb-16">{subTitle}</p>}
+
+        <div className="sm:tw-max-w-md sm:tw-mx-auto lg:tw-max-w-none lg:tw-grid lg:tw-grid-cols-12 lg:tw-gap-8">
             {items.map((item, index) => (
                 <div
                     key={`item-${index + 1}-${item.description}`}
-                    className="pt-5 col-12 col-lg-4 max-w-lg-400 text-md-center px-auto"
+                    className="tw-col-span-12 sm:tw-max-w-md sm:tw-w-full tw-mb-8 lg:tw-col-span-4 lg:tw-max-w-none"
                 >
                     {item.icon && item.icon}
-                    {item.subtitle}
-                    <p className="mx-auto max-w-md-400">{item.description}</p>
+                    <ItemTitle text={item.subtitle} small={!!item.icon} />
+                    <p>{item.description}</p>
                 </div>
             ))}
         </div>
-    </section>
+    </div>
 )

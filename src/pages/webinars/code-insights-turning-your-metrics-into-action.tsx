@@ -84,7 +84,7 @@ const Webinar: FunctionComponent = () => {
                 }
                 videoSrc="https://www.youtube.com/embed/dXKvetMozB0"
                 learnMoreCTA={
-                    <ContentSection className="d-flex flex-column align-items-center py-7">
+                    <ContentSection className="d-flex flex-column align-items-center">
                         <h1 className="text-center">Want to learn more about Code Insights?</h1>
                         <Link href="/contact/request-code-insights-demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

@@ -188,22 +188,17 @@ module.exports = {
       const extractColors = (colors, colorGroup = '') => {
         return Object.keys(colors).reduce((previousColors, colorKey) => {
           const value = colors[colorKey]
-          const cssVariable = colorGroup
-            ? `--sg-color-${colorGroup}-${colorKey}`
-            : `--sg-color-${colorKey}`
+          const cssVariable = colorGroup ? `--sg-color-${colorGroup}-${colorKey}` : `--sg-color-${colorKey}`
 
-          const newColors = 
-            typeof value === 'string'
-              ? { [cssVariable]: value }
-              : extractColors(value, colorKey)
-          
+          const newColors = typeof value === 'string' ? { [cssVariable]: value } : extractColors(value, colorKey)
+
           return { ...previousColors, ...newColors }
         }, {})
       }
 
       addBase({
-        ':root': extractColors(dlsColors)
+        ':root': extractColors(dlsColors),
       })
-    })
-  ]
+    }),
+  ],
 }

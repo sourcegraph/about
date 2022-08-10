@@ -3,7 +3,7 @@ import { FunctionComponent, useEffect, useState } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { CustomerLogos } from '@components'
+import { ContentSection, CustomerLogos } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 import meshLeft from './assets/hero/mesh-left.png'
@@ -26,7 +26,7 @@ const Hero: FunctionComponent = () => {
     })
 
     return (
-        <div className="px-2 py-5 bg-white py-md-7 tw-relative">
+        <ContentSection parentClassName="tw-relative" color="white">
             {[meshLeft, meshRight].map((image, index) => (
                 <div
                     key={image.src}
@@ -47,7 +47,7 @@ const Hero: FunctionComponent = () => {
                     </span>{' '}
                     across your entire codebase
                 </h1>
-                <p className="mx-auto my-5 max-w-700">
+                <p className="mx-auto my-5 max-w-700 tw-font-bold">
                     Understand, fix, and automate across your codebase with Sourcegraph's code intelligence platform
                 </p>
 
@@ -102,7 +102,7 @@ const Hero: FunctionComponent = () => {
             </div>
 
             <div className="mx-auto text-center max-w-600">
-                <h2>
+                <h2 className="tw-mb-2">
                     Over{' '}
                     <Link href="/case-studies" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -130,7 +130,7 @@ const Hero: FunctionComponent = () => {
                     </a>
                 </Link>
             </div>
-        </div>
+        </ContentSection>
     )
 }
 

@@ -11,6 +11,7 @@ import {
     TrySourcegraph,
     Video,
     YouTube,
+    TwoColumnSection,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -29,55 +30,58 @@ export const BatchChangesPage: FunctionComponent = () => (
                 product="batch changes"
                 title={'Automate large-scale\ncode changes'}
                 description="Keep your code up to date, fix critical security issues, and pay down tech debt across all of your repositories with Batch Changes."
-                cta={<HubSpotForm masterFormName="contactEmail" />}
+                cta={<HubSpotForm masterFormName="contactEmail" chiliPiper={true} />}
                 displayUnderNav={true}
             />
         }
     >
         {/* Overview */}
-        <ContentSection className="py-4 text-center py-md-7">
-            <h2 className="mb-3">Change code everywhere with a single declarative file</h2>
-            <div className="row justify-content-center">
-                <p className="col-md-8">
-                    Batch Changes gives you a declarative structure for finding and modifying code across all of your
-                    repositories. With a simple UI, it is easy to track and manage all of your changesets through checks
-                    and code reviews until each change is merged.
-                </p>
-            </div>
-            <div className="row">
-                <div className="mt-4 col-md-6">
-                    <Figure
-                        src="/batch-changes/asking_developers_to_update_repos.svg"
-                        alt="Graphic of many developers individually updating repositories, while some are not updating their repositories."
-                        caption={
-                            <div className="mt-5">
-                                Asking <strong>developers</strong> to update repositories
-                            </div>
-                        }
-                        centre={true}
-                    />
+        <ContentSection>
+            <div className="tw-text-center">
+                <h2 className="mb-3">Change code everywhere with a single declarative file</h2>
+                <div className="row justify-content-center">
+                    <p className="col-md-8">
+                        Batch Changes gives you a declarative structure for finding and modifying code across all of
+                        your repositories. With a simple UI, it is easy to track and manage all of your changesets
+                        through checks and code reviews until each change is merged.
+                    </p>
                 </div>
-                <div className="mt-4 col-md-6">
-                    <Figure
-                        src="/batch-changes/using_batch_changes_to_update_repos.svg"
-                        alt="Graphic of a single developer updating a lot of repositories."
-                        caption={
-                            <div className="mt-5">
-                                Using <strong className="text-purple">Batch Changes</strong> to update repositories
-                            </div>
-                        }
-                        centre={true}
-                    />
+                <div className="row">
+                    <div className="mt-4 col-md-6">
+                        <Figure
+                            src="/batch-changes/asking_developers_to_update_repos.svg"
+                            alt="Graphic of many developers individually updating repositories, while some are not updating their repositories."
+                            caption={
+                                <div className="mt-5">
+                                    Asking <strong>developers</strong> to update repositories
+                                </div>
+                            }
+                            centre={true}
+                        />
+                    </div>
+                    <div className="mt-4 col-md-6">
+                        <Figure
+                            src="/batch-changes/using_batch_changes_to_update_repos.svg"
+                            alt="Graphic of a single developer updating a lot of repositories."
+                            caption={
+                                <div className="mt-5">
+                                    Using <strong className="text-purple">Batch Changes</strong> to update repositories
+                                </div>
+                            }
+                            centre={true}
+                        />
+                    </div>
                 </div>
             </div>
         </ContentSection>
 
         {/* Architecture */}
-        <div className="py-4 sg-bg-gradient-venus py-md-7">
-            <ContentSection>
-                <div className="row">
-                    <div className="col-lg-5">
-                        <h2 className="mb-3">Search, define, execute, and track code changes</h2>
+        <ContentSection parentClassName="sg-bg-gradient-venus">
+            <TwoColumnSection
+                centerContent={true}
+                leftColumn={
+                    <>
+                        <h2 className="mb-3 tw-max-w-md">Search, define, execute, and track code changes</h2>
                         <ul>
                             <li className="mt-2">
                                 Find all occurrences of code to change with Sourcegraph{' '}
@@ -99,24 +103,24 @@ export const BatchChangesPage: FunctionComponent = () => (
                                 Track changeset lifecycle status across multiple code hosts via the Sourcegraph UI
                             </li>
                         </ul>
-                    </div>
-                    <div className="col-lg-7">
-                        <Video
-                            source={{
-                                mp4: 'batch-changes/how-it-works',
-                                webm: 'batch-changes/how-it-works',
-                            }}
-                            loop={true}
-                            title="Batch Changes: How it works"
-                            caption="Search, define, execute, and track code changes"
-                        />
-                    </div>
-                </div>
-            </ContentSection>
-        </div>
+                    </>
+                }
+                rightColumn={
+                    <Video
+                        source={{
+                            mp4: 'batch-changes/how-it-works',
+                            webm: 'batch-changes/how-it-works',
+                        }}
+                        loop={true}
+                        title="Batch Changes: How it works"
+                        caption="Search, define, execute, and track code changes"
+                    />
+                }
+            />
+        </ContentSection>
 
         {/* Social proof */}
-        <ContentSection className="py-4 pt-md-8 pb-md-5">
+        <ContentSection>
             <div className="row justify-content-center">
                 <div className="col-lg-10">
                     <Blockquote
@@ -134,17 +138,21 @@ export const BatchChangesPage: FunctionComponent = () => (
         </ContentSection>
 
         {/* Track */}
-        <ContentSection className="py-4 py-md-7">
-            <div className="row">
-                <div className="col-lg-5">
-                    <h2 className="mb-3">Track changes from creation to merge</h2>
-                    <p>Tracking changes to many repositories requires spreadsheets and manual labor.</p>
-                    <p>
-                        With Batch Changes, you can automatically track changeset lifecycle status, like check state,
-                        reviews, and merge status via the Sourcegraph UI so you can get the changesets merged.
-                    </p>
-                </div>
-                <div className="col-lg-7">
+        <ContentSection parentClassName="tw-bg-gray-100">
+            <TwoColumnSection
+                centerContent={true}
+                leftColumn={
+                    <>
+                        <h2 className="mb-3 tw-max-w-sm">Track changes from creation to merge</h2>
+                        <p>Tracking changes to many repositories requires spreadsheets and manual labor.</p>
+                        <p>
+                            With Batch Changes, you can automatically track changeset lifecycle status, like check
+                            state, reviews, and merge status via the Sourcegraph UI so you can get the changesets
+                            merged.
+                        </p>
+                    </>
+                }
+                rightColumn={
                     <Video
                         source={{
                             mp4: 'batch-changes/creation-to-merge',
@@ -154,12 +162,12 @@ export const BatchChangesPage: FunctionComponent = () => (
                         title="Batch Changes: Creation to merge"
                         caption="Automatically track changeset lifecycle status"
                     />
-                </div>
-            </div>
+                }
+            />
         </ContentSection>
 
         {/* Use Cases */}
-        <ContentSection className="py-4 py-md-7">
+        <ContentSection>
             <h2 className="mb-5 text-center">How developers are using Batch Changes </h2>
             <Tabs
                 tabs={[
@@ -228,7 +236,7 @@ export const BatchChangesPage: FunctionComponent = () => (
         </ContentSection>
 
         {/* Social proof */}
-        <ContentSection className="py-4">
+        <ContentSection parentClassName="tw-bg-gray-100">
             <div className="row justify-content-center pt-md-4">
                 <div className="col-lg-10">
                     <Blockquote
@@ -246,7 +254,7 @@ export const BatchChangesPage: FunctionComponent = () => (
         </ContentSection>
 
         {/* Demo */}
-        <ContentSection className="py-4 py-md-7">
+        <ContentSection>
             <h2 className="mb-3 text-center">See Batch Changes in action</h2>
             <div className="row justify-content-center pt-md-4">
                 <div className="col-lg-8">
@@ -255,9 +263,7 @@ export const BatchChangesPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <div className="container my-5 border-top my-md-6" />
-
-        <ContentSection>
+        <ContentSection parentClassName="tw-bg-gray-100">
             <TrySourcegraph demoFormURL={batchChangesDemoFormURL} />
         </ContentSection>
     </Layout>

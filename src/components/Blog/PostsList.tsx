@@ -20,7 +20,7 @@ export const PostsList: FunctionComponent<Props> = ({ posts }) => {
         content: null,
     }
     return (
-        <ul className="posts-list list-unstyled">
+        <ul className="posts-list list-unstyled tw-ml-0">
             {posts.map(post => {
                 const PostList = POST_INDEX_TYPE_TO_COMPONENT[postIndexType(post.frontmatter)]
 

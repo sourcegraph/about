@@ -4,7 +4,7 @@ import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Carousel from 'react-bootstrap/Carousel'
 
-import { Layout, ContentSection, QuoteCarousel } from '@components'
+import { Layout, ContentSection, QuoteCarousel, ThreeUpText } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const CareersPage: FunctionComponent = () => {
@@ -55,12 +55,7 @@ const CareersPage: FunctionComponent = () => {
     const cultureItems = [
         {
             className: 'sg-bg-gradient-saturn',
-            text: (
-                <h2 className="my-auto col-lg-6">
-                    Just because we're remote doesn't mean we're apart <br />
-                    #life-at-sourcegraph
-                </h2>
-            ),
+            text: "Just because we're remote doesn't mean we're apart \n#life-at-sourcegraph",
             img: (
                 <img
                     className="w-100 max-w-450"
@@ -72,30 +67,20 @@ const CareersPage: FunctionComponent = () => {
         {
             className: 'sg-bg-gradient-mars',
             text: (
-                <h2 className="my-auto col-lg-6">
+                <span>
                     We're moving <i>fast</i> to create a world in which everyone can code
-                </h2>
+                </span>
             ),
             img: <img className="w-100 max-w-450" src="/careers/culture2.png" alt="Group riding go karts" />,
         },
         {
             className: 'sg-bg-gradient-venus',
-            text: (
-                <h2 className="my-auto col-lg-6">
-                    Work whenever and wherever <br />
-                    #life-is-beachy
-                </h2>
-            ),
+            text: 'Work whenever and wherever \n#life-is-beachy',
             img: <img className="w-100 max-w-450" src="/careers/culture3.png" alt="Sourcegrapher on a beach" />,
         },
         {
             className: 'sg-bg-gradient-saturn',
-            text: (
-                <h2 className="my-auto col-lg-6">
-                    Our pets are Sourcegraph Teammates, too <br />
-                    #pets-of-sourcegraph
-                </h2>
-            ),
+            text: 'Our pets are Sourcegraph Teammates, too \n#pets-of-sourcegraph',
             img: (
                 <img
                     className="w-100 max-w-450"
@@ -106,11 +91,7 @@ const CareersPage: FunctionComponent = () => {
         },
         {
             className: 'sg-bg-gradient-mars',
-            text: (
-                <h2 className="my-auto col-lg-6">
-                    Creating the next generation of Sourcegraph coders, one baby at a time
-                </h2>
-            ),
+            text: 'Creating the next generation of Sourcegraph coders, one baby at a time',
             img: <img className="w-100 max-w-450" src="/careers/culture5.png" alt="Baby holding a coding babybook" />,
         },
     ]
@@ -182,188 +163,229 @@ const CareersPage: FunctionComponent = () => {
     ]
 
     return (
-        <Layout className="jobs-page">
-            <div>
-                <ContentSection className="hero-section">
-                    <div className="row">
-                        <div className="col-lg-10">
-                            <h1 className=" title">Let's build the future together.</h1>
-                            <h1 className="">
-                                We're developing the world's most advanced code search navigation platform with
-                                brilliant dreamers around the globe.
-                            </h1>
+        <Layout className="jobs-page" heroAndHeaderClassName="tw-bg-white">
+            <ContentSection color="white">
+                <div className="row">
+                    <div className="col-lg-10">
+                        <h1 className="tw-mb-xs">Let's build the future together.</h1>
+                        <h3>
+                            We're developing the world's most advanced code search navigation platform with brilliant
+                            dreamers around the globe.
+                        </h3>
+                    </div>
+                </div>
+                <a
+                    className="mt-4 btn btn-primary"
+                    href="https://grnh.se/c685479c4us"
+                    title="Explore our jobs"
+                    target="_blank"
+                    rel="nofollow noreferrer"
+                    data-button-style={buttonStyle.primary}
+                    data-button-location={buttonLocation.hero}
+                    data-button-type="cta"
+                >
+                    Explore our jobs
+                    <ArrowRightIcon className="ml-3 tw-inline" />
+                </a>
+            </ContentSection>
+
+            <div className="tw-text-center tw-bg-white">
+                <img
+                    src="../careers/careers_hero_img.jpg"
+                    alt="Sourcegraph team members jumping"
+                    className="tw-max-w-screen-2xl tw-w-full tw-hidden md:tw-inline"
+                />
+                <img
+                    src="../careers/careers_hero_img_mobile.jpg"
+                    alt="Sourcegraph team members jumping"
+                    className="tw-w-full tw-inline md:tw-hidden"
+                />
+            </div>
+
+            <ContentSection color="white">
+                <div className="flex-wrap d-flex">
+                    <div className="m-auto">
+                        <h2 className="tw-mx-auto tw-text-center tw-max-w-2xl tw-mb-6">
+                            Happy, healthy, and always in the flow.
+                        </h2>
+                        <p className="mx-auto text-center col-lg-6">
+                            Our Teammates are our most valuable resource. That's why we provide total rewards that are
+                            highly competitive and allow you to thrive both personally and professionally.
+                        </p>
+                        <p className="tw-mt-6 tw-text-center">
+                            Learn more in{' '}
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://handbook.sourcegraph.com/benefits-pay-perks/benefits-perks"
+                                title="our handbook"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                our handbook
+                            </a>
+                            .
+                        </p>
+                    </div>
+                </div>
+            </ContentSection>
+
+            <ContentSection>
+                <ThreeUpText
+                    title="Benefits"
+                    items={[
+                        {
+                            icon: (
+                                <img className="tw-mb-2 sm:tw-mx-auto" src="/careers/Remote.svg" alt="Map pin icon" />
+                            ),
+                            subtitle: 'Work fully remote',
+                            description: 'Anywhere and at anytime',
+                        },
+                        {
+                            icon: <img className="tw-mb-2 sm:tw-mx-auto" src="/careers/PTO.svg" alt="Sun icon" />,
+                            subtitle: 'Unlimited PTO',
+                            description: '...with a 30-day minimum',
+                        },
+                        {
+                            icon: (
+                                <img className="tw-mb-2 sm:tw-mx-auto" src="/careers/Travel.svg" alt="Airplane icon" />
+                            ),
+                            subtitle: 'Generous travel budgets',
+                            description: 'Meet your team across the globe',
+                        },
+                        {
+                            icon: (
+                                <img
+                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    src="/careers/Salary.svg"
+                                    alt="Dollar bill icon"
+                                />
+                            ),
+                            subtitle: 'Competitive pay + equity',
+                            description: 'So you can live your best life',
+                        },
+                        {
+                            icon: (
+                                <img
+                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    src="/careers/Medical.svg"
+                                    alt="Medical cross icon"
+                                />
+                            ),
+                            subtitle: 'Medical, dental, and vision',
+                            description: 'Got you covered 100% (US only)',
+                        },
+                        {
+                            icon: (
+                                <img
+                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    src="/careers/ProfessionalDevelopment.svg"
+                                    alt="Graduation cap icon"
+                                />
+                            ),
+                            subtitle: 'Professional development',
+                            description: 'Find your thing and we pay for it',
+                        },
+                        {
+                            icon: (
+                                <img
+                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    src="/careers/OfficeBudget.svg"
+                                    alt="Headphones icon"
+                                />
+                            ),
+                            subtitle: 'Office budget',
+                            description: 'Create a space where you thrive',
+                        },
+                        {
+                            icon: (
+                                <img
+                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    src="/careers/Wellness.svg"
+                                    alt="Person jogging icon"
+                                />
+                            ),
+                            subtitle: 'Wellness budget',
+                            description: 'Take care of yourself on our dime',
+                        },
+                        {
+                            icon: (
+                                <img
+                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    src="/careers/FamilyPlanning.svg"
+                                    alt="Baby icon"
+                                />
+                            ),
+                            subtitle: 'Family Planning benefits',
+                            description: '$25K, because family comes first',
+                        },
+                    ]}
+                />
+            </ContentSection>
+
+            <Carousel controls={false}>
+                {cultureItems.map(item => (
+                    <Carousel.Item className={item.className} key={item.className}>
+                        <div className="tw-flex tw-flex-col md:tw-flex-row tw-py-5xl tw-px-6 tw-max-w-screen-xl tw-mx-auto tw-items-center">
+                            <h2 className="tw-mb-6">{item.text}</h2>
+                            <div className="col-lg-6 max-h-600 tw-flex tw-justify-center">{item.img}</div>
+                        </div>
+                    </Carousel.Item>
+                ))}
+            </Carousel>
+
+            <ContentSection>
+                <Carousel
+                    prevIcon={<ArrowLeftIcon color="#808080" />}
+                    prevLabel=""
+                    nextIcon={<ArrowRightIcon color="#808080" />}
+                    nextLabel=""
+                >
+                    {valueItems.map(item => (
+                        <Carousel.Item key={item.value}>
+                            <div className="d-flex flex-column align-items-center min-h-550 py-7">
+                                <h5 className=" text-uppercase">We value:</h5>
+                                <h2 className="">{item.value}</h2>
+                                <p className="text-center col-8 ">{item.description}</p>
+                                {item.img}
+                            </div>
+                        </Carousel.Item>
+                    ))}
+                </Carousel>
+            </ContentSection>
+
+            <ContentSection parentClassName="sg-bg-gradient-saturn">
+                <QuoteCarousel items={glassdoorReviewItems} />
+            </ContentSection>
+
+            <ContentSection color="white">
+                <div className="tw-flex tw-flex-col tw-items-center tw-text-center">
+                    <div>
+                        <div className="col-lg-12">
+                            <h2 className="tw-mb-xs">What you seek is seeking you</h2>
+                            <p>
+                                We're looking forward to reminding you that "you're on mute"{' '}
+                                <img src="../SmileyWink.svg" alt="Smiling winky face emoji" className="tw-inline" />
+                            </p>
                         </div>
                     </div>
+
                     <a
-                        className="mt-4 btn btn-primary"
+                        className="my-2 btn btn-primary"
                         href="https://grnh.se/c685479c4us"
                         title="Explore our jobs"
                         target="_blank"
                         rel="nofollow noreferrer"
                         data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.hero}
+                        data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
                         Explore our jobs
                         <ArrowRightIcon className="ml-3 tw-inline" />
                     </a>
-                </ContentSection>
-
-                <div className="tw-text-center">
-                    <img
-                        src="../careers/careers_hero_img.jpg"
-                        alt="Sourcegraph team members jumping"
-                        className="tw-max-w-screen-2xl tw-w-full tw-hidden md:tw-inline"
-                    />
-                    <img
-                        src="../careers/careers_hero_img_mobile.jpg"
-                        alt="Sourcegraph team members jumping"
-                        className="tw-w-full tw-inline md:tw-hidden"
-                    />
                 </div>
-
-                <div className="benefits">
-                    <div className="flex-wrap d-flex">
-                        <div className="m-auto">
-                            <h2 className="mx-auto text-center col-lg-10">Happy, healthy, and always in the flow.</h2>
-                            <p className="mx-auto text-center col-lg-6">
-                                Our Teammates are our most valuable resource. That's why we provide total rewards that
-                                are highly competitive and allow you to thrive both personally and professionally.
-                            </p>
-                            <p className="mt-3 text-center">
-                                Learn more in{' '}
-                                <a
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    href="https://handbook.sourcegraph.com/benefits-pay-perks/benefits-perks"
-                                    title="our handbook"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    our handbook
-                                </a>
-                                .
-                            </p>
-                        </div>
-                    </div>
-                    <div className="flex-wrap d-flex benefits-row">
-                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
-                            <img className="mx-auto my-2 icon" src="/careers/Remote.svg" alt="Map pin icon" />
-                            <h3 className="my-2">Work fully remote</h3>
-                            <p>Anywhere and at anytime</p>
-                        </div>
-                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
-                            <img className="mx-auto my-2 icon" src="/careers/PTO.svg" alt="Sun icon" />
-                            <h3 className="my-2">Unlimited PTO</h3>
-                            <p>...with a 30-day minimum</p>
-                        </div>
-                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
-                            <img className="mx-auto my-2 icon" src="/careers/Travel.svg" alt="Airplane icon" />
-                            <h3 className="my-2">Generous travel budgets</h3>
-                            <p>Meet your team across the globe</p>
-                        </div>
-                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
-                            <img className="mx-auto my-2 icon" src="/careers/Salary.svg" alt="Dollar bill icon" />
-                            <h3 className="my-2">Competitive pay + equity</h3>
-                            <p>So you can live your best life</p>
-                        </div>
-                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
-                            <img className="mx-auto my-2 icon" src="/careers/Medical.svg" alt="Medical cross icon" />
-                            <h3 className="my-2">Medical, dental, and vision</h3>
-                            <p>Got you covered 100% (US only)</p>
-                        </div>
-                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
-                            <img
-                                className="mx-auto my-2 icon"
-                                src="/careers/ProfessionalDevelopment.svg"
-                                alt="Graduation cap icon"
-                            />
-                            <h3 className="my-2">Professional development</h3>
-                            <p>Find your thing and we pay for it</p>
-                        </div>
-                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
-                            <img className="mx-auto my-2 icon" src="/careers/OfficeBudget.svg" alt="Headphones icon" />
-                            <h3 className="my-2">Office budget</h3>
-                            <p>Create a space where you thrive</p>
-                        </div>
-                        <div className="my-3 text-center benefit col-lg-3 col-md-5">
-                            <img className="mx-auto my-2 icon" src="/careers/Wellness.svg" alt="Person jogging icon" />
-                            <h3 className="my-2">Wellness budget</h3>
-                            <p>Take care of yourself on our dime</p>
-                        </div>
-                        <div className="mx-auto my-3 text-center benefit col-lg-3 col-md-5">
-                            <img className="mx-auto my-2 icon" src="/careers/FamilyPlanning.svg" alt="Baby icon" />
-                            <h3 className="my-2">Family Planning benefits</h3>
-                            <p>$25K, because family comes first</p>
-                        </div>
-                    </div>
-                </div>
-
-                <Carousel controls={false}>
-                    {cultureItems.map(item => (
-                        <Carousel.Item className={item.className} key={item.className}>
-                            <div className="px-5 row px-md-8 py-7">
-                                {item.text}
-                                <div className="col-lg-6 h-600 d-flex align-items-center">{item.img}</div>
-                            </div>
-                        </Carousel.Item>
-                    ))}
-                </Carousel>
-
-                <ContentSection>
-                    <Carousel
-                        prevIcon={<ArrowLeftIcon color="#808080" />}
-                        prevLabel=""
-                        nextIcon={<ArrowRightIcon color="#808080" />}
-                        nextLabel=""
-                    >
-                        {valueItems.map(item => (
-                            <Carousel.Item key={item.value}>
-                                <div className="d-flex flex-column align-items-center min-h-550 py-7">
-                                    <h5 className=" text-uppercase">We value:</h5>
-                                    <h2 className="">{item.value}</h2>
-                                    <p className="text-center col-8 ">{item.description}</p>
-                                    {item.img}
-                                </div>
-                            </Carousel.Item>
-                        ))}
-                    </Carousel>
-                </ContentSection>
-
-                <div className="sg-bg-gradient-saturn">
-                    <ContentSection>
-                        <QuoteCarousel items={glassdoorReviewItems} />
-                    </ContentSection>
-                </div>
-
-                <div className="bg-white py-7">
-                    <ContentSection>
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <h2 className="">What you seek is seeking you</h2>
-                                <p>
-                                    We're looking forward to reminding you that "you're on mute"{' '}
-                                    <img src="../SmileyWink.svg" alt="Smiling winky face emoji" className="tw-inline" />
-                                </p>
-                            </div>
-                        </div>
-                        <a
-                            className="my-2 btn btn-primary"
-                            href="https://grnh.se/c685479c4us"
-                            title="Explore our jobs"
-                            target="_blank"
-                            rel="nofollow noreferrer"
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            Explore our jobs
-                            <ArrowRightIcon className="ml-3 tw-inline" />
-                        </a>
-                    </ContentSection>
-                </div>
-            </div>
+            </ContentSection>
         </Layout>
     )
 }
