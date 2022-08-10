@@ -69,14 +69,13 @@ This feature requires admins to set up executors (much like CI agents), which So
 
 Sourcegraph returns an exhaustive list of search results – but sometimes you need to know things like: 
 
-- Which files have the bulk of these search results? 
+- Which files have the majority of these search results? 
 - Which repos is this library used in most? 
-- Which subcomponents are used most from this library?
-- Who is using our new innersource library?  
-- Which areas of the code added back in these regressions? 
-- What are all the possible arguments we can pass to this function? 
+- Which library components are used most? By who?
+- What are all the possible arguments we pass to this function? 
+- And a number of [other examples](TODO ADD LINK TO SEARCH AGGREGATIONS TEMPLATES DOC – coming by late August after we test live on the feature). 
 
-To answer these questions, Sourcegraph now shows you your search results grouped by location (repo or file), author, and arbitrary capture group pattern. If you want to save any aggregations for future reference, you can 1-click save the results to a code insights dashboard.
+To answer these questions, you can choose to show your search results grouped by location (repo or file), author, and arbitrary capture group pattern. If you want to save any aggregations for future reference, you can 1-click save the results to a code insights dashboard.
 
 ### Best-in-class performance
 
