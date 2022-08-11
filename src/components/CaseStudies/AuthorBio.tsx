@@ -22,7 +22,7 @@ export const AuthorBio: React.FunctionComponent<{
                     {authors.map(a => (
                         <div key={a.name} className="md:tw-text-center">
                             <img
-                                className="rounded-circle max-w-150 tw-inline"
+                                className="tw-rounded-full max-w-150 tw-inline"
                                 width={150}
                                 height={150}
                                 src={a.image}
@@ -40,7 +40,7 @@ export const AuthorBio: React.FunctionComponent<{
                 {authors[0].image && (
                     <div className="col-md-3">
                         <img
-                            className="p-0 rounded-circle max-w-150"
+                            className="p-0 tw-rounded-full max-w-150"
                             width={100}
                             src={authors[0].image}
                             alt={authors[0].name}

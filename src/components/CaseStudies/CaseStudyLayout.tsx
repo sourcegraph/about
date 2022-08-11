@@ -71,7 +71,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                             {quote.image && (
                                 <div className="col-12 col-lg-9">
                                     <img
-                                        className="rounded-circle img-fluid tw-mx-auto tw-block mb-3"
+                                        className="tw-rounded-full img-fluid tw-mx-auto tw-block mb-3"
                                         src={quote.image}
                                         alt={quote.author}
                                     />

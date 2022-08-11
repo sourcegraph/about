@@ -41,7 +41,7 @@ export const CaseStudy: FunctionComponent = () => (
                                     src="/case-studies/francois-jehl-criteo.jpg"
                                     alt="François Jehl, Senior Engineering Manager, Criteo"
                                     title="François Jehl, Senior Engineering Manager, Criteo"
-                                    className="w-100 rounded-circle img-fluid tw-mx-auto tw-block mb-3"
+                                    className="w-100 tw-rounded-full img-fluid tw-mx-auto tw-block mb-3"
                                 />
                                 <figcaption>François Jehl, Senior Engineering Manager, Criteo</figcaption>
                             </figure>
@@ -52,7 +52,7 @@ export const CaseStudy: FunctionComponent = () => (
                                     src="/case-studies/loic-teikiteetini-vaysse-criteo.jpg"
                                     alt="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
                                     title="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
-                                    className="w-100 rounded-circle img-fluid tw-mx-auto tw-block mb-3"
+                                    className="w-100 tw-rounded-full img-fluid tw-mx-auto tw-block mb-3"
                                 />
                                 <figcaption>Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo</figcaption>
                             </figure>
