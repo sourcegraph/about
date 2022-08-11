@@ -76,17 +76,17 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 // Hero bg differs if Guide vs. Webinar vs. Generic
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ backgroundImage: `url('${heroImage()}')` }}
-                className={classNames('tw-bg-cover py-6 py-md-7', isGuidePg && 'text-white')}
+                className={classNames('tw-bg-cover tw-py-3xl md:tw-py-5xl', isGuidePg && 'text-white')}
             >
-                <div className="container px-0 tw-flex tw-flex-col lg:tw-flex-row tw-justify-around tw-items-center">
+                <div className="container tw-px-0 tw-flex tw-flex-col lg:tw-flex-row tw-justify-around tw-items-center">
                     {customer && (
                         <>
                             {isWebinarPg ? (
                                 // Show SG & Customer logo for customer-based webinars
-                                <div className="pb-5 col-lg-4 col-12 lg:tw-text-center px-lg-0 pb-lg-0">
+                                <div className="tw-pb-md col-lg-4 col-12 lg:tw-text-center lg:tw-px-0 lg:tw-pb-0">
                                     <img
                                         className={`tw-border-solid tw-border-r-black tw-inline tw-max-w-[65px] md:tw-max-w-[95px] ${
-                                            isMdOrDown ? 'tw-border-r-2 mr-3 pr-3' : 'tw-border-r-3 mr-4 pr-4'
+                                            isMdOrDown ? 'tw-border-r-2 mr-3 tw-pr-xs' : 'tw-border-r-3 mr-4 tw-pr-sm'
                                         }`}
                                         src="/sourcegraph/sourcegraph-mark.svg"
                                         alt="Sourcegraph mark"
@@ -98,7 +98,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                                     />
                                 </div>
                             ) : (
-                                <div className="pb-2 col-lg-2 col-12 px-lg-0 pb-lg-0">
+                                <div className="tw-pb-xxs col-lg-2 col-12 lg:tw-px-0 lg:tw-pb-0">
                                     <img
                                         src={customer.logo}
                                         alt={`${customer.name} logo`}
@@ -119,9 +119,9 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             {hasWatchNowQuery ? (
                 // ---- RECORDING BODY VARIATION ----
                 <div className="bg-white">
-                    <section className="container py-6 py-lg-7 video-embed embed-responsive embed-responsive-16by9">
+                    <section className="container py-6 lg:tw-py-5xl video-embed embed-responsive embed-responsive-16by9">
                         <iframe
-                            className="p-md-7 embed-responsive-item"
+                            className="md:tw-p-5xl embed-responsive-item"
                             src={videoSrc}
                             allowFullScreen={true}
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -137,9 +137,9 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 <ContentSection color="white" className="tw-flex tw-flex-col-reverse md:tw-flex-row">
                     {description}
 
-                    <div className="pb-6 col-md-6 col-12 pb-md-0">
+                    <div className="tw-pb-3xl col-md-6 col-12 md:tw-pb-0">
                         <h2>{formLabel}</h2>
-                        <div className="px-0 px-4 py-4 mt-3 shadow-sm sg-border-gradient-saturn tw-border-solid tw-border-3">
+                        <div className="px-4 py-4 mt-3 shadow-sm tw-px-0 sg-border-gradient-saturn tw-border-solid tw-border-3">
                             {!hasWatchNowQuery && (
                                 <HubSpotForm
                                     masterFormName="gatedMulti"
@@ -164,7 +164,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
 
                     <section className="flex-wrap tw-flex">
                         {speakers.map((speaker: Speaker) => (
-                            <div key={speaker.name} className="pl-0 col-lg-5 col-md-6 col-12 pr-lg-7">
+                            <div key={speaker.name} className="tw-pl-0 col-lg-5 col-md-6 col-12 lg:tw-pr-5xl">
                                 <img className="py-4" width="140" src={speaker.img} alt={speaker.name} />
                                 <h5>{speaker.name}</h5>
                                 <figcaption className="my-2 h6 text-muted max-w-md-250">{speaker.title}</figcaption>

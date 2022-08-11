@@ -21,9 +21,9 @@ const ContactHome: FunctionComponent = () => (
         }}
     >
         <ContentPage title={title} description={description}>
-            <ContentSection className="pt-6 pb-2">
+            <ContentSection className="tw-pt-3xl tw-pb-xxs">
                 <div className="row">
-                    <div className="pb-1 mb-4 col-md-6">
+                    <div className="tw-pb-1 mb-4 col-md-6">
                         <div className="card">
                             <h5 className="card-header">Product support</h5>
                             <div className="card-body">
@@ -57,7 +57,7 @@ const ContactHome: FunctionComponent = () => (
                             </div>
                         </div>
                     </div>
-                    <div className="pb-1 mb-4 col-md-6">
+                    <div className="tw-pb-1 mb-4 col-md-6">
                         <div className="card">
                             <h5 className="card-header">Sales</h5>
                             <div className="card-body">
@@ -77,7 +77,7 @@ const ContactHome: FunctionComponent = () => (
                             </div>
                         </div>
                     </div>
-                    <div className="pb-1 mb-4 col-md-6">
+                    <div className="tw-pb-1 mb-4 col-md-6">
                         <div className="card">
                             <h5 className="card-header">Jobs</h5>
                             <div className="card-body">
@@ -95,7 +95,7 @@ const ContactHome: FunctionComponent = () => (
                             </div>
                         </div>
                     </div>
-                    <div className="pb-1 mb-4 col-md-6">
+                    <div className="tw-pb-1 mb-4 col-md-6">
                         <div className="card">
                             <h5 className="card-header">Everything else</h5>
                             <div className="list-group list-group-flush">

@@ -236,7 +236,7 @@ export const BatchChangesPage: FunctionComponent = () => (
 
         {/* Social proof */}
         <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="row tw-justify-center pt-md-4">
+            <div className="row tw-justify-center md:tw-pt-sm">
                 <div className="col-lg-10">
                     <Blockquote
                         quote="Sourcegraph Batch Changes gives us the confidence we need to understand the total impact of
@@ -255,7 +255,7 @@ export const BatchChangesPage: FunctionComponent = () => (
         {/* Demo */}
         <ContentSection>
             <h2 className="mb-3 tw-text-center">See Batch Changes in action</h2>
-            <div className="row tw-justify-center pt-md-4">
+            <div className="row tw-justify-center md:tw-pt-sm">
                 <div className="col-lg-8">
                     <YouTube title="Sourcegraph Batch Changes demo" id="eOmiyXIWTCw" />
                 </div>

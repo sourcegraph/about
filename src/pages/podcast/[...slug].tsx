@@ -48,7 +48,7 @@ const PodcastPage: NextPage<PageProps> = ({ post, content }) => {
                             content={content}
                             url={urlToPost(post)}
                             className="post-template__post podcast-post max-w-750 tw-mx-auto"
-                            headerClassName="card-header bg-white border-bottom-0 tw-text-center pt-5"
+                            headerClassName="card-header bg-white border-bottom-0 tw-text-center tw-pt-md"
                             contentClassName="podcast-post__body"
                         />
                     </div>

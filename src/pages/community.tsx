@@ -13,7 +13,7 @@ export const Community: FunctionComponent = () => (
         className="community-page"
         heroAndHeaderClassName="tw-bg-blue-200"
         hero={
-            <div className="container pb-4">
+            <div className="container tw-pb-sm">
                 <div className="p-5 row">
                     <div className="col-lg-6">
                         <div className="text-uppercase">Join us</div>
@@ -167,7 +167,7 @@ export const Community: FunctionComponent = () => (
                         content: (
                             <div className="tw-max-w-xl tw-m-auto">
                                 <YouTube title="Dev Tool Time" id="QNYoOCLocAI" />
-                                <p className="pt-3">
+                                <p className="tw-pt-xs">
                                     Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
                                     <a
                                         href="https://srcgr.ph/dev-tool-time-playlist"
@@ -188,7 +188,7 @@ export const Community: FunctionComponent = () => (
                         content: (
                             <div className="tw-max-w-xl tw-m-auto">
                                 <YouTube title="Sourcegraph Podcast" id="VgVDMd2VlaU" />
-                                <p className="pt-3">
+                                <p className="tw-pt-xs">
                                     <strong>Subscribe:</strong>&nbsp;
                                     <a
                                         href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA"

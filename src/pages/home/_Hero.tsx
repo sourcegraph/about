@@ -47,12 +47,12 @@ const Hero: FunctionComponent = () => {
                     </span>{' '}
                     across your entire codebase
                 </h1>
-                <p className="tw-mx-auto my-5 max-w-700 tw-font-semibold">
+                <p className="my-5 tw-mx-auto max-w-700 tw-font-semibold">
                     Understand, fix, and automate across your codebase with Sourcegraph's code intelligence platform
                 </p>
 
                 <div className="tw-mx-auto max-w-350 tw-flex-col sm:tw-flex-row sm:tw-flex tw-items-center">
-                    <div className="mb-3 col-sm-6 px-sm-0 mb-sm-0 mr-sm-3">
+                    <div className="mb-3 col-sm-6 sm:tw-px-0 mb-sm-0 mr-sm-3">
                         <Link href="/get-started/self-hosted" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
@@ -66,7 +66,7 @@ const Hero: FunctionComponent = () => {
                             </a>
                         </Link>
                     </div>
-                    <div className="col-sm-6 px-sm-0">
+                    <div className="col-sm-6 sm:tw-px-0">
                         <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
@@ -97,7 +97,7 @@ const Hero: FunctionComponent = () => {
                 </p>
             </div>
 
-            <div className="py-5 py-md-7">
+            <div className="tw-py-md md:tw-py-5xl">
                 <CustomerLogos />
             </div>
 

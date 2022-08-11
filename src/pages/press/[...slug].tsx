@@ -47,8 +47,8 @@ const PressReleasePage: NextPage<PageProps> = ({ post, content }) => {
                             post={post}
                             content={content}
                             url={urlToPost(post)}
-                            className="pb-2 tw-mx-auto post-template__post blog-post max-w-750 tw-overflow-hidden"
-                            headerClassName="card-header bg-white border-bottom-0 tw-text-center pt-5"
+                            className="tw-pb-xxs tw-mx-auto post-template__post blog-post max-w-750 tw-overflow-hidden"
+                            headerClassName="card-header bg-white border-bottom-0 tw-text-center tw-pt-md"
                         />
                     </div>
                 </div>

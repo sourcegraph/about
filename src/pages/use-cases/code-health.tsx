@@ -250,7 +250,7 @@ const UseCasePage: FunctionComponent = () => (
         className="use-cases-page navbar-light"
         hero={
             <Background variant="lightNebulousVenus2">
-                <div className="container pb-4">
+                <div className="container tw-pb-sm">
                     <div className="row">
                         <div className="col-md-7 my-7">
                             <BackButton href="/use-cases" text="USE CASES" />
@@ -354,11 +354,11 @@ const UseCasePage: FunctionComponent = () => (
 
         <ContentSection parentClassName="tw-bg-gray-100">
             <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
-                <div className="tw-mx-auto mb-5 tw-flex tw-flex-col tw-text-center max-w-600">
+                <div className="mb-5 tw-mx-auto tw-flex tw-flex-col tw-text-center max-w-600">
                     <h2 className="">Get started with Sourcegraph</h2>
                     <p>Give your team the tools they need to build a healthier codebase.</p>
                 </div>
-                <div className="px-0 tw-text-center col-12">
+                <div className="tw-px-0 tw-text-center col-12">
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a

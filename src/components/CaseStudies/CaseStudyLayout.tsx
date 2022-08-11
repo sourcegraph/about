@@ -42,7 +42,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
         <div className={`${kebabCase(customer)}-${className} ${className}`}>
             <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
                 {heroImage && (
-                    <div className="case-studies__quote row pt-3">
+                    <div className="case-studies__quote row tw-pt-xs">
                         <div className="col-lg-3">
                             <a
                                 href={heroLink}
@@ -66,7 +66,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                     </div>
                 )}
                 {quote && !heroImage && (
-                    <div className="container pt-3">
+                    <div className="container tw-pt-xs">
                         <div className="case-studies__quote row tw-justify-center">
                             {quote.image && (
                                 <div className="col-12 col-lg-9">
@@ -97,14 +97,14 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        <i className="fa fa-file-pdf pr-2" />
+                        <i className="fa fa-file-pdf tw-pr-xxs" />
                         Download PDF
                     </a>
                 )}
             </CaseStudyJumbotron>
 
             <ContentSection color="white">
-                <div className="container pt-6 pb-4">
+                <div className="container tw-pt-3xl tw-pb-sm">
                     <h1 className={`${titleClassName}`}>{title}</h1>
                 </div>
             </ContentSection>

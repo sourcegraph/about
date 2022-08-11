@@ -367,7 +367,7 @@ const UseCasePage: FunctionComponent = () => (
                         security.
                     </p>
                 </div>
-                <div className="px-0 tw-text-center col-12">
+                <div className="tw-px-0 tw-text-center col-12">
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a

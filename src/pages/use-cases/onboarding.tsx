@@ -295,7 +295,7 @@ const UseCasePage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="sg-bg-gradient-saturn">
-            <div className="tw-flex tw-flex-col tw-justify-center px-lg-8">
+            <div className="tw-flex tw-flex-col tw-justify-center lg:tw-px-32">
                 <Blockquote
                     headline="Convoy knows its codebase inside and out"
                     quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
@@ -322,7 +322,7 @@ const UseCasePage: FunctionComponent = () => (
                         confidently, and stay in flow.
                     </p>
                 </div>
-                <div className="px-0 tw-text-center col-12">
+                <div className="tw-px-0 tw-text-center col-12">
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a

@@ -69,7 +69,7 @@ export const ProductHero: FunctionComponent<Omit<ProductHero, 'className' | 'chi
 
                         {description && <p className="mb-5 max-w-600 tw-text-xl">{description}</p>}
 
-                        {cta && <div className="pt-1 tw-flex tw-flex-col max-w-400">{cta}</div>}
+                        {cta && <div className="tw-pt-1 tw-flex tw-flex-col max-w-400">{cta}</div>}
                     </div>
                 </div>
             </Background>

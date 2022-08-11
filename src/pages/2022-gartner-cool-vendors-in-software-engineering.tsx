@@ -19,9 +19,9 @@ export const Report: FunctionComponent = () => (
             formLabel="Access the report"
             resource="https://www.gartner.com/doc/reprints?id=1-2A44UTV8&ct=220524&st=sb"
             description={
-                <section className="col-md-6 col-12 pr-lg-6">
-                    <h3 className="pb-5">Get complimentary access to the 2022 Gartner® Cool Vendors™ report.</h3>
-                    <p className="pb-2">
+                <section className="col-md-6 col-12 lg:tw-pr-3xl">
+                    <h3 className="tw-pb-md">Get complimentary access to the 2022 Gartner® Cool Vendors™ report.</h3>
+                    <p className="tw-pb-xxs">
                         Learn how we believe Sourcegraph and other innovative tools help engineers and engineering
                         leaders boost developer productivity while mitigating security risks.
                     </p>
@@ -35,7 +35,7 @@ export const Report: FunctionComponent = () => (
                         warranties, expressed or implied, with respect to this research, including any warranties of
                         merchantability or fitness for a particular purpose.
                     </p>
-                    <p className="pb-2 text-muted">
+                    <p className="tw-pb-xxs text-muted">
                         Gartner, Cool Vendors in Software Engineering: Enhancing Developer Productivity, Cool Vendors in
                         Software Engineering: Enhancing Developer Productivity, 16th May 2022.
                     </p>

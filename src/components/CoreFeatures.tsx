@@ -148,8 +148,8 @@ export const CoreFeatures: FunctionComponent = () => {
                 >
                     <div
                         className={classNames('col-lg-6', {
-                            'pr-lg-7 pl-lg-0': index % 2 === 0,
-                            'pl-lg-7 pr-lg-0': index % 2,
+                            'lg:tw-pr-5xl lg:tw-pl-0': index % 2 === 0,
+                            'lg:tw-pl-5xl lg:tw-pr-0': index % 2,
                         })}
                     >
                         <span className="tw-mb-2 tw-text-md tw-uppercase tw-font-semibold tw-block">
@@ -191,9 +191,9 @@ export const CoreFeatures: FunctionComponent = () => {
                         )}
                     </div>
 
-                    <div className="px-5 py-0 mb-6 col-lg-6 mb-lg-0">
+                    <div className="px-5 tw-py-0 mb-6 col-lg-6 mb-lg-0">
                         <video
-                            className={`shadow w-100 max-w-550 tw-block tw-mx-auto rounded video-${index}`}
+                            className={`shadow w-100 max-w-550 tw-block tw-mx-auto tw-rounded video-${index}`}
                             autoPlay={false}
                             muted={true}
                             loop={true}

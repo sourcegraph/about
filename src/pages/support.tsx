@@ -57,7 +57,7 @@ const Support: FunctionComponent = () => (
             </ContentSection>
 
             <div className="tw-mx-auto tw-my-0 tw-max-w-screen-xl">
-                <div className="pt-4 row">
+                <div className="tw-pt-sm row">
                     <div className="tw-mx-auto mb-4 tw-flex col-md-4">
                         <div className="card h-100">
                             <div className="card-body">

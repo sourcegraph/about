@@ -92,7 +92,7 @@ const selfHostedOptions: string[] = [
 const renderListItems = (items: string[]): ReactNode =>
     items.map((item: string) => (
         <li key={item} className="my-2 mr-2 list-inline-item">
-            <code className="px-2 py-1 rounded tw-text-gray-500 tw-bg-gray-100 tw-border tw-border-solid tw-border-gray-200 tw-text-sm">
+            <code className="px-2 py-1 tw-rounded tw-text-gray-500 tw-bg-gray-100 tw-border tw-border-solid tw-border-gray-200 tw-text-sm">
                 {item}
             </code>
         </li>

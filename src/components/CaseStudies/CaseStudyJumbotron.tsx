@@ -20,7 +20,7 @@ export const CaseStudyJumbotron: FunctionComponent<Props> = ({
     children,
 }) => (
     <div className={`jumbotron ${COLORS[color]} ${className}`}>
-        <div className="container pt-5 pl-sm-0">
+        <div className="container tw-pt-md sm:tw-pl-0">
             <BackButton href="/case-studies" text="Case Studies" light={color === 'dark'} />
         </div>
         <div className="container py-3 tw-text-center">

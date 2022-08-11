@@ -76,7 +76,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                 <div
                     className={
                         carouselHook.autoAdvance
-                            ? 'lg:tw-flex tw-flex-col tw-justify-between tw-hidden col-md-2 m-0 px-0 col-lg-5'
+                            ? 'lg:tw-flex tw-flex-col tw-justify-between tw-hidden col-md-2 m-0 tw-px-0 col-lg-5'
                             : 'lg:tw-flex tw-hidden ml-lg-7 col-lg-4 h-550'
                     }
                 >

@@ -31,7 +31,7 @@ export const CaseStudy: FunctionComponent = () => {
                             approximately 2,000 employees, a quarter of which are engineers.
                         </p>
 
-                        <h2 className="pt-5 pb-1">Looking for a new code search tool</h2>
+                        <h2 className="tw-pt-md tw-pb-1">Looking for a new code search tool</h2>
 
                         <p>
                             Cloudflare's engineering team builds and runs the software that powers and protects
@@ -64,7 +64,7 @@ export const CaseStudy: FunctionComponent = () => {
                             cloned the repos, they wouldn't have space left on their machine for other work.
                         </p>
 
-                        <h2 className="pt-5 pb-1">Finding Sourcegraph</h2>
+                        <h2 className="tw-pt-md tw-pb-1">Finding Sourcegraph</h2>
 
                         <p>
                             Stock, who was then on the Dev Tools team, and has since moved to Service Automation, knew
@@ -83,7 +83,7 @@ export const CaseStudy: FunctionComponent = () => {
                             understands how our code works," said Stock.
                         </p>
 
-                        <h3 className="pt-5 pb-1">Expanding throughout the team</h3>
+                        <h3 className="tw-pt-md tw-pb-1">Expanding throughout the team</h3>
 
                         <p>
                             Once Stock downloaded and began using the open source version of Sourcegraph, he started
@@ -100,7 +100,7 @@ export const CaseStudy: FunctionComponent = () => {
                             and feel confident they've addressed each issue.
                         </p>
 
-                        <h3 className="pt-5 pb-1">Finding and addressing security risks</h3>
+                        <h3 className="tw-pt-md tw-pb-1">Finding and addressing security risks</h3>
 
                         <p>
                             Sourcegraph has also become essential to how the Cloudflare security team can quickly
@@ -120,7 +120,7 @@ export const CaseStudy: FunctionComponent = () => {
                             particular CVE, if and when we get asked by an auditor.”
                         </p>
 
-                        <h3 className="pt-5 pb-1">Saving time, from days to minutes</h3>
+                        <h3 className="tw-pt-md tw-pb-1">Saving time, from days to minutes</h3>
 
                         <p>
                             Whether searching for instances of a library or refactoring an entire application, it's hard

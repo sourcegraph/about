@@ -87,7 +87,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
                 <h3 className="py-4 tw-max-w-[700px]">
                     See why over 1.2M engineers use Sourcegraph to build software you rely on
                 </h3>
-                <div className="pt-0 max-w-400 pt-md-4">
+                <div className="pt-0 max-w-400 md:tw-pt-sm">
                     <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                 </div>
             </div>
@@ -96,9 +96,9 @@ const PartnerPodcastPage: FunctionComponent = () => (
         <ContentSection>
             <h2>Move fast — even in big code bases</h2>
             <h4 className="py-3">Learn how these software companies used Sourcegraph</h4>
-            <div className="flex-wrap pt-4 tw-flex tw-relative">
+            <div className="flex-wrap tw-pt-sm tw-flex tw-relative">
                 {caseStudyItems.map(study => (
-                    <div key={study.name} className="px-0 mb-6 col-sm-6 col-md-4">
+                    <div key={study.name} className="mb-6 tw-px-0 col-sm-6 col-md-4">
                         <CaseStudyCard study={study} bwLogo={true} />
                     </div>
                 ))}
@@ -107,8 +107,8 @@ const PartnerPodcastPage: FunctionComponent = () => (
 
         <ContentSection parentClassName="sg-bg-gradient-venus">
             <div className="tw-max-w-screen-xl tw-mx-auto tw-text-center">
-                <h2 className="pt-2">Want to use Sourcegraph at your company?</h2>
-                <p className="pt-4 pb-1 tw-mx-auto tw-max-w-[650px] tw-text-2xl">
+                <h2 className="tw-pt-xxs">Want to use Sourcegraph at your company?</h2>
+                <p className="tw-pt-sm tw-pb-1 tw-mx-auto tw-max-w-[650px] tw-text-2xl">
                     <span>
                         <Link href="/get-started/self-hosted" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -144,12 +144,12 @@ const PartnerPodcastPage: FunctionComponent = () => (
         <BlogResources posts={blogResourceItems} />
 
         <div className="py-5 tw-text-white tw-flex md:tw-flex-row tw-flex-col tw-items-center tw-justify-center tw-bg-blurple-400">
-            <h5 className="tw-my-auto tw-text-center max-w-250 max-w-md-400 pr-md-4">
+            <h5 className="tw-my-auto tw-text-center max-w-250 max-w-md-400 md:tw-pr-sm">
                 Looking for our changelog? Look no further
             </h5>
             <a
                 href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
-                className="mt-4 border-white rounded btn btn-primary mt-md-0"
+                className="mt-4 border-white tw-rounded btn btn-primary mt-md-0"
                 title="Changelog"
                 data-button-style={buttonStyle.primary}
                 data-button-location={buttonLocation.hero}

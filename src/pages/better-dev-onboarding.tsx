@@ -50,7 +50,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         className="navbar-light"
         hero={
             <Background variant="lightNebulousVenus2">
-                <div className="container pb-4">
+                <div className="container tw-pb-sm">
                     <div className="row">
                         <div className="mb-6 col-lg-7 mt-7">
                             <h1 className="mb-4">Give your team a complete onboarding experience</h1>
@@ -58,7 +58,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
                                 With self-serve onboarding, codebase exploration, and knowledge sharing, developers can
                                 find their own answers without waiting for someone to point them to the relevant code.
                             </div>
-                            <div className="pt-1 tw-flex tw-flex-col max-w-400">
+                            <div className="tw-pt-1 tw-flex tw-flex-col max-w-400">
                                 <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                             </div>
                         </div>
@@ -73,7 +73,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection className="pb-8">
+        <ContentSection>
             <CoreFeatures />
         </ContentSection>
 

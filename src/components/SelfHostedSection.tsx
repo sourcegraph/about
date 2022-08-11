@@ -22,7 +22,7 @@ export const SelfHostedSection: FunctionComponent = () => (
                 <Install />
             </div>
 
-            <div className="col-lg-6 pl-lg-7">
+            <div className="col-lg-6 lg:tw-pl-5xl">
                 <h3 className="mt-6 mt-lg-0">Why choose self-hosted?</h3>
 
                 <ul className="my-4 tw-text-lg">

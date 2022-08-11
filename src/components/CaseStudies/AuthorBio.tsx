@@ -40,7 +40,7 @@ export const AuthorBio: React.FunctionComponent<{
                 {authors[0].image && (
                     <div className="col-md-3">
                         <img
-                            className="p-0 tw-rounded-full max-w-150"
+                            className="tw-p-0 tw-rounded-full max-w-150"
                             width={100}
                             src={authors[0].image}
                             alt={authors[0].name}
@@ -48,8 +48,8 @@ export const AuthorBio: React.FunctionComponent<{
                     </div>
                 )}
 
-                <div className="pl-0 col-md-9 pl-md-5">
-                    <h6 className="pt-4 pt-md-2">AUTHOR</h6>
+                <div className="tw-pl-0 col-md-9 md:tw-pl-md">
+                    <h6 className="tw-pt-sm md:tw-pt-xxs">AUTHOR</h6>
                     <h3>{authors[0].name}</h3>
                     <p className="text-muted">{authors[0].title}</p>
 

@@ -44,7 +44,7 @@ const Webinar: FunctionComponent = () => {
                     })
                 }
                 description={
-                    <section className="col-md-6 col-12 pr-lg-6">
+                    <section className="col-md-6 col-12 lg:tw-pr-3xl">
                         <p>
                             Learn how to use Code Insights to turn your most pressing analytics questions into KPIs you
                             can track with mere seconds of setup.

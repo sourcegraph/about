@@ -378,8 +378,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                     Code Insights provides reliable real-time reporting directly from the codebase, making engineering
                     leaders and their teams more effective.
                 </p>
-                <div className="tw-flex tw-flex-col col-lg-6 px-lg-6 tw-justify-around">
-                    <div className="py-3 tw-flex py-lg-5">
+                <div className="tw-flex tw-flex-col col-lg-6 lg:tw-px-3xl tw-justify-around">
+                    <div className="py-3 tw-flex lg:tw-py-md">
                         <div className="mr-4">
                             <BullsEyeArrowIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
@@ -388,7 +388,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                             <p className="icon-paragraph">Measure goals and progress in your codebase</p>
                         </div>
                     </div>
-                    <div className="py-3 tw-flex py-lg-5">
+                    <div className="py-3 tw-flex lg:tw-py-md">
                         <div className="mr-4 icon">
                             <LighteningBoltOutlineIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
@@ -400,8 +400,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                         </div>
                     </div>
                 </div>
-                <div className="tw-flex tw-flex-col col-lg-6 px-lg-6 tw-justify-around">
-                    <div className="py-3 tw-flex py-lg-5">
+                <div className="tw-flex tw-flex-col col-lg-6 lg:tw-px-3xl tw-justify-around">
+                    <div className="py-3 tw-flex lg:tw-py-md">
                         <div className="mr-4">
                             <TrendingUpIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
@@ -410,7 +410,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                             <p className="icon-paragraph">Tie trends and metrics to owners on the teams</p>
                         </div>
                     </div>
-                    <div className="py-3 tw-flex py-lg-5">
+                    <div className="py-3 tw-flex lg:tw-py-md">
                         <div className="mr-4">
                             <RocketLaunchOutlineIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
@@ -429,7 +429,7 @@ const CodeInsightsPage: FunctionComponent = () => (
 
         <ContentSection>
             <h2 className="mb-3 tw-text-center">See Code Insights in action</h2>
-            <div className="row tw-justify-center pt-md-4">
+            <div className="row tw-justify-center md:tw-pt-sm">
                 <div className="col-lg-8">
                     <YouTube id="fMCUJQHfbUA" title="Sourcegraph Code Insights demo" />
                 </div>
@@ -537,7 +537,7 @@ const CodeInsightsPage: FunctionComponent = () => (
             />
             <div className="tw-text-center">
                 <a
-                    className="px-0 py-4 col-7"
+                    className="tw-px-0 py-4 col-7"
                     href="https://docs.sourcegraph.com/code_insights"
                     title="Code Insights on docs."
                     data-button-style={buttonStyle.text}
@@ -558,7 +558,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                         data backfills automatically.
                     </p>
                 </div>
-                <div className="pt-1 col-lg-7 tw-flex tw-flex-col">
+                <div className="tw-pt-1 col-lg-7 tw-flex tw-flex-col">
                     <Link href="/contact/request-code-insights-demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a

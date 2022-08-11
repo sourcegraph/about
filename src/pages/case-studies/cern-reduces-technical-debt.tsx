@@ -21,7 +21,7 @@ export const CaseStudy: FunctionComponent = () => (
                 author: 'Vito Baggiolini, Senior Software Engineer, CERN',
             }}
         >
-            <ContentSection color="white" className="col-md-6 pb-5">
+            <ContentSection color="white" className="col-md-6 tw-pb-md">
                 <div className="container">
                     <p>
                         Physicists at CERN use some of the world's most powerful particle accelerators to discover what
@@ -32,7 +32,7 @@ export const CaseStudy: FunctionComponent = () => (
                         developers require a tool that lets them quickly and effectively search through their entire
                         codebase so they can easily change and reuse code where necessary.{' '}
                     </p>
-                    <div className="row md:tw-justify-center pt-3">
+                    <div className="row md:tw-justify-center tw-pt-xs">
                         <div className="col-md-8">
                             <Figure
                                 src="/case-studies/cern-image-lhc-cc.jpg"
@@ -41,7 +41,7 @@ export const CaseStudy: FunctionComponent = () => (
                             />
                         </div>
                     </div>
-                    <h2 className="pt-5 pb-1">Avoiding reinventing the wheel with universal code search</h2>
+                    <h2 className="tw-pt-md tw-pb-1">Avoiding reinventing the wheel with universal code search</h2>
                     <p>
                         Sourcegraph empowers developers at CERN to reuse code that already exists, avoiding duplication
                         and saving developers countless hours redoing work that has already been done. It takes search
@@ -53,8 +53,8 @@ export const CaseStudy: FunctionComponent = () => (
                         quote="I was recently tasked with something that I, admittedly, had no idea how to do, but I was sure that someone at CERN must've already done it at some point. Sourcegraph universal code search took me directly to the code I was looking for so I could repurpose it. It's also an invaluable tool for enabling our developers to learn from one another."
                         author="Vito Baggiolini"
                     />
-                    <div className="row pt-3">
-                        <div className="col-md-3 pt-5">
+                    <div className="row tw-pt-xs">
+                        <div className="col-md-3 tw-pt-md">
                             <img
                                 src="/case-studies/chris-roderick-cern.jpg"
                                 alt="Chris Roderick, Applications and Services Section Leader, CERN"
@@ -69,7 +69,7 @@ export const CaseStudy: FunctionComponent = () => (
                             />
                         </div>
                     </div>
-                    <h2 className="pt-5 pb-1">Tackling mission-critical code changes with ease</h2>
+                    <h2 className="tw-pt-md tw-pb-1">Tackling mission-critical code changes with ease</h2>
                     <Blockquote
                         quote="Sourcegraph lets us make informed decisions on how to evolve our codebase. For example, a library owner knows exactly how all other developers use their API, and can therefore make educated decisions on how to evolve it."
                         author="Chris Roderick"

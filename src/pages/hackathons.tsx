@@ -22,7 +22,7 @@ export const Hackathons: FunctionComponent = () => (
 
         <section className="p-4 bg-white tw-m-auto tw-flex tw-justify-around tw-flex-col lg:tw-flex-row tw-max-w-screen-xl">
             <div className="mt-0 mb-2 mr-lg-5">
-                <div className="p-5 rounded tw-flex tw-flex-col tw-bg-gray-100">
+                <div className="p-5 tw-rounded tw-flex tw-flex-col tw-bg-gray-100">
                     <p>
                         Want to win your hackathon? Set up Sourcegraph and bring the power of code search and code
                         intelligence to your engineering team!
@@ -46,7 +46,7 @@ export const Hackathons: FunctionComponent = () => (
                         , and we'll get back to you ASAP on how to get started!
                     </p>
                     <div className="tw-border-t tw-mt-6 tw-border-gray-300">
-                        <p className="pt-4">
+                        <p className="tw-pt-sm">
                             Get started with the{' '}
                             <a
                                 target="_blank"
@@ -91,7 +91,7 @@ export const Hackathons: FunctionComponent = () => (
                             , and we'll get back to you ASAP on how to get started!
                         </p>
                         <div className="tw-border-t tw-border-gray-300 tw-mt-6">
-                            <p className="pt-4">
+                            <p className="tw-pt-sm">
                                 Get started with the{' '}
                                 <a
                                     target="_blank"

@@ -34,7 +34,7 @@ export const CaseStudy: FunctionComponent = () => (
                         investigation times by 60%, ensuring that more children are found, faster.
                     </p>
 
-                    <h2 className="pt-5 pb-1">
+                    <h2 className="tw-pt-md tw-pb-1">
                         Sunsetting deprecated systems was costly and risked production stability
                     </h2>
                     <p>
@@ -48,7 +48,7 @@ export const CaseStudy: FunctionComponent = () => (
                         downtime reduced Thorn's ability to identify these children.
                     </p>
 
-                    <h2 className="pt-5 pb-1">Existing tooling was not sufficient</h2>
+                    <h2 className="tw-pt-md tw-pb-1">Existing tooling was not sufficient</h2>
 
                     <p>
                         Tech debt and upkeep of legacy code were problematic. Previous attempts, such as cloning all
@@ -58,7 +58,7 @@ export const CaseStudy: FunctionComponent = () => (
                         legacy application code was painful.
                     </p>
 
-                    <h2 className="pt-5 pb-1">
+                    <h2 className="tw-pt-md tw-pb-1">
                         Sourcegraph's multi-repository code search proved that no code referencing legacy systems
                         existed across the organization
                     </h2>
@@ -74,7 +74,7 @@ export const CaseStudy: FunctionComponent = () => (
 
                     <Blockquote quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed, giving the reviewer confidence that the code is safe to merge." />
 
-                    <h2 className="pt-5 pb-1">Deprecated systems were taken offline without downtime</h2>
+                    <h2 className="tw-pt-md tw-pb-1">Deprecated systems were taken offline without downtime</h2>
                     <p>
                         Thorn's developers removed or modified deprecated systems, eliminating huge amounts of tech
                         debt. This benefited all areas of the architecture, including not only application code, but
@@ -82,7 +82,7 @@ export const CaseStudy: FunctionComponent = () => (
                         and uptime of the application.
                     </p>
 
-                    <p className="pb-5">
+                    <p className="tw-pb-md">
                         Using Sourcegraph provides critical support to Thorn's mission. Every start-up has to make
                         choices about when to rebuild their systems and when to move forward accruing technical debt.
                         Modern microservice architecture makes the application deprecation process challenging.

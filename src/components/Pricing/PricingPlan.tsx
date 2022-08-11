@@ -184,12 +184,12 @@ export const PricingPlan: FunctionComponent<Props> = ({
             <h2 className="mt-3 mb-1 tw-text-center tw-font-semibold">{name}</h2>
             <div className="py-3 tw-text-center tw-flex tw-flex-col tw-items-center">
                 {button}
-                <div className="pb-2 mt-4 mb-2 tw-text-xl text-muted">{price}</div>
+                <div className="tw-pb-xxs mt-4 mb-2 tw-text-xl text-muted">{price}</div>
                 {planProperties}
             </div>
             <ol className="px-6 py-3 ml-0 list-group list-group-flush">
                 {!isFree ? (
-                    <li className="px-0 bg-transparent border-0 tw-text-xl list-group-item">
+                    <li className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-item">
                         Everything in the Free tier, plus:
                     </li>
                 ) : null}
@@ -199,7 +199,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
                             info={FEATURE_INFO[feature]}
                             value={features[feature]}
                             tag="li"
-                            className="px-0 bg-transparent border-0 tw-text-xl list-group-item"
+                            className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-item"
                         />
                     </div>
                 ))}

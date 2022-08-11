@@ -56,13 +56,13 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
         <div className="tw-relative tw-flex lg:tw-flex-row tw-flex-col">
             <div className="col-lg-6 col-12">
                 <div className="mb-5 tw-flex tw-flex-col lg:tw-flex-row lg:tw-justify-end">
-                    <div className="p-0 p-1 mb-3 tw-text-center rounded tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
-                        <ClipboardTextIcon size={40} className="p-1 tw-text-violet-400" />
+                    <div className="mb-3 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
+                        <ClipboardTextIcon size={40} className="tw-p-1 tw-text-violet-400" />
                     </div>
-                    <div className="pl-3 col-11 col-lg-9">
+                    <div className="tw-pl-xs col-11 col-lg-9">
                         <h4>Use case</h4>
                         {useCases.length > 1 ? (
-                            <ul className="pl-4 mb-0">
+                            <ul className="mb-0 tw-pl-sm">
                                 {useCases.map(useCase => (
                                     <ListItemType key={useCase.text} item={useCase} />
                                 ))}
@@ -75,13 +75,13 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     </div>
                 </div>
                 <div className="mb-5 mb-lg-0 tw-flex tw-flex-col lg:tw-flex-row lg:tw-justify-end">
-                    <div className="p-0 p-1 mb-3 tw-text-center rounded tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
-                        <AlertIcon size={40} className="p-1 tw-text-violet-400" />
+                    <div className="mb-3 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
+                        <AlertIcon size={40} className="tw-p-1 tw-text-violet-400" />
                     </div>
-                    <div className="pl-3 col-11 col-lg-9">
+                    <div className="tw-pl-xs col-11 col-lg-9">
                         <h4>Challenge</h4>
                         {challenges.length > 1 ? (
-                            <ul className="pl-4 mb-0">
+                            <ul className="mb-0 tw-pl-sm">
                                 {challenges.map(challenge => (
                                     <ListItemType key={challenge.text} item={challenge} />
                                 ))}
@@ -96,13 +96,13 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
             </div>
             <div className="col-lg-6 col-12">
                 <div className="mb-5 mb-lg-0 tw-flex tw-flex-col lg:tw-flex-row xl:tw-justify-center">
-                    <div className="p-0 p-1 mb-3 tw-text-center rounded tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
-                        <CheckCircleIcon size={40} className="p-1 tw-text-violet-400" />
+                    <div className="mb-3 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
+                        <CheckCircleIcon size={40} className="tw-p-1 tw-text-violet-400" />
                     </div>
-                    <div className="pl-3 col-11 col-lg-9">
+                    <div className="tw-pl-xs col-11 col-lg-9">
                         <h4>Solution</h4>
                         {solutions.length > 1 ? (
-                            <ul className="pl-4 mb-0">
+                            <ul className="mb-0 tw-pl-sm">
                                 {solutions.map(solution => (
                                     <ListItemType key={solution.text} item={solution} />
                                 ))}
@@ -123,10 +123,10 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                 className="sg-bg-gradient-venus lg:tw-absolute lg:tw-right-0 lg:tw-bottom-0 tw-max-w-[700px] lg:tw-max-w-[450px] xl:tw-max-w-[500px] tw-mx-auto tw-p-8 tw-w-[95%]"
             >
                 <div className="ml-lg-0 tw-flex tw-flex-col lg:tw-flex-row">
-                    <div className="p-0 p-1 mb-3 tw-text-center rounded tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
-                        <ChartLineVariantIcon size={40} className="p-1 tw-text-violet-400" />
+                    <div className="mb-3 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
+                        <ChartLineVariantIcon size={40} className="tw-p-1 tw-text-violet-400" />
                     </div>
-                    <div className="pl-3 pr-0 col-lg-10 col-11">
+                    <div className="pr-0 tw-pl-xs col-lg-10 col-11">
                         <h4>Results</h4>
                         {results.length > 1 ? (
                             <ul className="tw-pl-6 tw-mb-0 tw-ml-0">

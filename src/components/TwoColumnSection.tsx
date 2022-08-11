@@ -22,7 +22,7 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
             'tw-items-center': centerContent,
         })}
     >
-        <div className={classNames('col-lg-6 pr-lg-4', { 'mb-4 mb-lg-0': !reverseOnMobile })}>{leftColumn}</div>
-        <div className={classNames('col-lg-6 pl-lg-4', { 'mb-4 mb-lg-0': reverseOnMobile })}>{rightColumn}</div>
+        <div className={classNames('col-lg-6 lg:tw-pr-sm', { 'mb-4 mb-lg-0': !reverseOnMobile })}>{leftColumn}</div>
+        <div className={classNames('col-lg-6 lg:tw-pl-sm', { 'mb-4 mb-lg-0': reverseOnMobile })}>{rightColumn}</div>
     </div>
 )

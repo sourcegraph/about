@@ -16,7 +16,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
     >
         <div className="container py-7">
             <div className="row">
-                <div className="col-lg-6 pr-lg-5">
+                <div className="col-lg-6 lg:tw-pr-md">
                     <h1 className="mb-4">Accelerate developer onboarding and decrease time to first commit</h1>
                     <h4>Self-serve onboarding, codebase exploration, and knowledge sharing</h4>
                     <p>
@@ -55,7 +55,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
             <div className="container py-7 max-w-650">
                 <h2>Ready to accelerate developer onboarding? Let's talk.</h2>
 
-                <div className="tw-mx-auto mt-5 max-w-400">
+                <div className="mt-5 tw-mx-auto max-w-400">
                     <Link href="/demo">
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a

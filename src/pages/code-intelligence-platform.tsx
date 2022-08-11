@@ -155,7 +155,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
         }}
         hero={
             <div className="sg-bg-gradient-saturn">
-                <div className="container py-6 py-lg-7 md:tw-text-center">
+                <div className="container py-6 lg:tw-py-5xl md:tw-text-center">
                     <h1>Key traits of a code intelligence platform</h1>
                     <h3 className="py-4 md:tw-mx-auto max-w-750">
                         Sourcegraph helps developers save time and move faster, regardless of how complex your codebase
@@ -187,7 +187,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection color="white">
-            <h2 className="px-0 pb-5 col-12 col-lg-6">Sourcegraph helps enterprise development teams...</h2>
+            <h2 className="tw-px-0 tw-pb-md col-12 col-lg-6">Sourcegraph helps enterprise development teams...</h2>
 
             <TwoColumnSection
                 centerContent={true}

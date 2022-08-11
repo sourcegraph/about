@@ -40,7 +40,7 @@ export const CaseStudy: FunctionComponent = () => (
                         quote="As a data scientist, it allows me to find code in repos that are owned by engineers. I am able to make sure that the engineers are invoking the logic for my machine learning model correctly or verify how data is created or stored in our database."
                         author="Michael Frasco, Data Scientist, Convoy"
                     />
-                    <h2 className="pt-5 pb-1">Avoiding expensive mistakes</h2>
+                    <h2 className="tw-pt-md tw-pb-1">Avoiding expensive mistakes</h2>
                     <p>
                         Prior to using Sourcegraph, Convoy's engineers had to clone repos locally in order to find
                         necessary data. This would cause problems, as Owen, a Senior Software Engineer, recalls:

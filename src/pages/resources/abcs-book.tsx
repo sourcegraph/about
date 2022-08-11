@@ -145,14 +145,14 @@ export const AbcsEbook: FunctionComponent = () => (
 
                     <p>We've had quite a few folks reach out with questions about this book and future ones.</p>
 
-                    <h3 className="pt-3 h4">Do you plan on selling this as a physical book?</h3>
+                    <h3 className="tw-pt-xs">Do you plan on selling this as a physical book?</h3>
                     <p>
                         We want to make it easy for folks to get a physical copy and while we don't (yet) have plans to
                         print and distribute, we're looking into vendors that can print and ship on demand. In any case,
                         the PDF is high-resolution so you can print it yourself.
                     </p>
 
-                    <h3 className="pt-3 h4">Do you have any other books like this planned?</h3>
+                    <h3 className="tw-pt-xs">Do you have any other books like this planned?</h3>
                     <p>
                         We've been blown away by the response to this book and while we'd love to add "children's book
                         authoring" to the list of Sourcegraph capabilities, we haven't yet decided if we plan to turn

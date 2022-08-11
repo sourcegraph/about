@@ -18,7 +18,7 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
             <div className="container-lg">
                 <BlogHeader {...blogInfo} />
 
-                <div className="pt-4">
+                <div className="tw-pt-sm">
                     <PostsList posts={loadMoreHook.currentRecords} />
 
                     {loadMoreHook.currentRecords.length < allPosts.length && (

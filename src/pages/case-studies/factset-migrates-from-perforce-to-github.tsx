@@ -28,7 +28,7 @@ export const CaseStudy: FunctionComponent = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col">
-                                <h3 className="pt-5 pb-1">Before Sourcegraph</h3>
+                                <h3 className="tw-pt-md tw-pb-1">Before Sourcegraph</h3>
                                 <ul>
                                     <li>
                                         Inability to search across repositories after monolith to microservices
@@ -38,7 +38,7 @@ export const CaseStudy: FunctionComponent = () => {
                                     <li>Difficult to ensure consistency across the organization</li>
                                 </ul>
 
-                                <h3 className="pt-5 pb-1">After Sourcegraph</h3>
+                                <h3 className="tw-pt-md tw-pb-1">After Sourcegraph</h3>
                                 <ul>
                                     <li>
                                         Able to search all code in any language, including C++, across all 12,000+
@@ -82,7 +82,7 @@ export const CaseStudy: FunctionComponent = () => {
                             author={derrickFaunce}
                         />
 
-                        <h2 className="pt-5 pb-1">Migrating from monolith to microservices</h2>
+                        <h2 className="tw-pt-md tw-pb-1">Migrating from monolith to microservices</h2>
                         <p>
                             In 2019, FactSet's engineering team started a huge code migration project to transition from
                             a monolithic code repository in Perforce to microservices in GitHub. Part of the reason for
@@ -113,7 +113,7 @@ export const CaseStudy: FunctionComponent = () => {
                             Services at FactSet.
                         </p>
 
-                        <h2 className="pt-5 pb-1">Expanding throughout the organization</h2>
+                        <h2 className="tw-pt-md tw-pb-1">Expanding throughout the organization</h2>
                         <p>
                             Initially, the developer services team deployed Sourcegraph to the engineers responsible for
                             the real-time news and quotes engine. But after receiving positive feedback, the team gave

@@ -56,8 +56,8 @@ const UseCases: React.FunctionComponent = () => (
                             </p>
                         </div>
 
-                        <div className="pt-4 mb-6 col-lg-5 mt-lg-6">
-                            <h4 className="pb-2">See how customers use Sourcegraph to</h4>
+                        <div className="mb-6 tw-pt-sm col-lg-5 mt-lg-6">
+                            <h4 className="tw-pb-xxs">See how customers use Sourcegraph to</h4>
 
                             <div className="list-group">
                                 {features.map((feature: { id: string; description: string }) => (
@@ -83,7 +83,7 @@ const UseCases: React.FunctionComponent = () => (
         }
     >
         <div className="use-cases-page">
-            <div className="pt-6">
+            <div className="tw-pt-3xl">
                 <CustomerLogos />
             </div>
 

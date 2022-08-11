@@ -48,7 +48,7 @@ const Webinar: FunctionComponent = () => {
                     })
                 }
                 description={
-                    <section className="col-md-6 col-12 pr-lg-6">
+                    <section className="col-md-6 col-12 lg:tw-pr-3xl">
                         <p>
                             For Nutanix, when 20,000+ of the world's most advanced data centers rely on your company's
                             software, any security vulnerability is a concern. But when the Log4j vulnerability hit,
