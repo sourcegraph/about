@@ -41,13 +41,13 @@ const PressReleasePage: NextPage<PageProps> = ({ post, content }) => {
                 <div className="container-lg">
                     <BlogHeader {...pressReleaseInfo} />
                 </div>
-                <div className="post-template mt-5 bg-white">
+                <div className="mt-5 bg-white post-template">
                     <div className="container-lg">
                         <PostTemplate
                             post={post}
                             content={content}
                             url={urlToPost(post)}
-                            className="post-template__post blog-post max-w-750 mx-auto overflow-hidden pb-2"
+                            className="pb-2 mx-auto post-template__post blog-post max-w-750 tw-overflow-hidden"
                             headerClassName="card-header bg-white border-bottom-0 tw-text-center pt-5"
                         />
                     </div>
