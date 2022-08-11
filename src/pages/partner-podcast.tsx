@@ -87,7 +87,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
                 <h3 className="py-4 tw-max-w-[700px]">
                     See why over 1.2M engineers use Sourcegraph to build software you rely on
                 </h3>
-                <div className="pt-0 max-w-400 md:tw-pt-sm">
+                <div className="tw-pt-0 max-w-400 md:tw-pt-sm">
                     <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                 </div>
             </div>

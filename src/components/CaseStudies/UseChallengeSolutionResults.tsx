@@ -126,7 +126,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     <div className="mb-3 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
                         <ChartLineVariantIcon size={40} className="tw-p-1 tw-text-violet-400" />
                     </div>
-                    <div className="pr-0 tw-pl-xs col-lg-10 col-11">
+                    <div className="tw-pr-0 tw-pl-xs col-lg-10 col-11">
                         <h4>Results</h4>
                         {results.length > 1 ? (
                             <ul className="tw-pl-6 tw-mb-0 tw-ml-0">

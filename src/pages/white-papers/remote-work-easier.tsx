@@ -20,8 +20,8 @@ export const RemoteWorkEasier: FunctionComponent = () => (
             pdf="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-remote-software-development-made-easier.pdf"
             heroBackgroundImage="/white-papers/remote-easier-bg_1680x300.png"
         >
-            <ContentSection color="white" className="tw-pt-md">
-                <div className="container">
+            <ContentSection color="white">
+                <div className="tw-max-w-screen-md tw-mx-auto">
                     <p>
                         Sourcegraph has been remote-friendly from the beginning — our two longest-tenured teammates have
                         worked remotely since 2015 from Arizona and South Africa! We moved to remote-first in May of
@@ -218,7 +218,9 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         src="/white-papers/remotework_codelinksharing.png"
                         alt="With Sourcegraph, you can share a direct link to the code you want to discuss"
                     />
-                    <h3 className="tw-pb-1 tw-pt-md">Sourcegraph supports remote work environments in many ways. It:</h3>
+                    <h3 className="tw-pb-1 tw-pt-md">
+                        Sourcegraph supports remote work environments in many ways. It:
+                    </h3>
                     <ul>
                         <li>Empowers you to find answers to your own questions</li>
                         <li>
@@ -233,11 +235,10 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         quote="Any tool that empowers you to find the answer to your own question is good for remote work, and Sourcegraph is such a tool. The alternative is waiting for someone else to tell you the answer, which means you are blocked in the meantime, or you have to task-switch, which is costly."
                         author="Nick Snyder, VP Engineering at Sourcegraph"
                     />
-                    <br />
                 </div>
             </ContentSection>
 
-            <ContentSection color="black" className="py-5">
+            <ContentSection color="black">
                 <div className="row md:tw-justify-center">
                     <div className="tw-text-center col-md-3">
                         <a
@@ -274,7 +275,8 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection color="gray" className="py-6">
+
+            <ContentSection color="gray">
                 <div className="row md:tw-justify-center">
                     <div className="tw-text-center col-md-3">
                         <img

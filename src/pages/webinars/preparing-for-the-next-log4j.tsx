@@ -40,19 +40,16 @@ const Webinar: FunctionComponent = () => {
                     title="Preparing for the Next Log4j"
                     subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
                     leftCol={
-                        <div className="col-12 text-lg-center px-0 pb-5 pb-lg-0">
+                        <div className="tw-px-0 col-12 lg:tw-text-center tw-pb-md lg:tw-pb-0">
                             <img
-                                className={`border-right border-black ${
-                                    isMdOrDown ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'
-                                }`}
-                                width={isMdOrDown ? '65' : '95'}
+                                className="tw-border-r-2 md:tw-border-r-3 tw-border-r-black tw-inline tw-mr-xs tw-pr-xs md:tw-mr-sm md:tw-pr-sm tw-w-[65px] md:tw-w-[95px]"
                                 src="/sourcegraph/sourcegraph-mark.svg"
                                 alt="Sourcegraph mark"
                             />
                             <img
-                                height={isMdOrDown ? '15' : '22'}
                                 src="/external-logos/nutanix-logo.svg"
                                 alt="Nutanix logo"
+                                className="tw-inline tw-h-[15px] md:tw-h-[22px]"
                             />
                         </div>
                     }

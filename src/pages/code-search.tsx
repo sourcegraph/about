@@ -55,7 +55,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                 variant="lightNebulousMars"
                 product="code search"
                 title={'Search your code.\nAll of it.'}
-                description="Onboard to a new codebase, understand code faster, and identify security risks with universal code search."
+                subtitle="Onboard to a new codebase, understand code faster, and identify security risks with universal code search."
                 cta={<HubSpotForm masterFormName="contactEmail" chiliPiper={true} />}
                 displayUnderNav={true}
             />

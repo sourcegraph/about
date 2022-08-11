@@ -78,7 +78,7 @@ export const Header: FunctionComponent<Props> = props => {
     return (
         <nav className={navStyle}>
             <div className="container-xl tw-px-0">
-                <Navbar.Brand href="/" onContextMenu={onRightClickLogo} className="header mr-0 pt-0 tw-pb-1 tw-flex">
+                <Navbar.Brand href="/" onContextMenu={onRightClickLogo} className="mr-0 header tw-flex">
                     <img
                         src={isDarkNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
                         height={26}

@@ -86,7 +86,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
         </header>
 
         {slugPath && (
-            <div className="pt-0 card-body tw-flex flex-card tw-items-center">
+            <div className="tw-pt-0 card-body tw-flex flex-card tw-items-center">
                 <div className="row w-100">
                     <div className="tw-pb-xs col-md-9 md:tw-pb-0">
                         {frontmatter.description ? (

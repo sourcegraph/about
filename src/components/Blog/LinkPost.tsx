@@ -45,7 +45,7 @@ export const LinkPost: FunctionComponent<Props> = ({ post, content, url, classNa
                 )}
             </div>
 
-            <div className="pt-0 bg-transparent card-footer border-top-0">
+            <div className="tw-pt-0 bg-transparent card-footer border-top-0">
                 <Link href={url} passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a

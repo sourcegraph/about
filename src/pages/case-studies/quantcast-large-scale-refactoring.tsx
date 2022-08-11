@@ -86,7 +86,9 @@ export const CaseStudy: FunctionComponent = () => (
                         fewer and fewer results.
                     </p>
 
-                    <h2 className="tw-pt-md tw-pb-1">Preventing future issues with code monitoring and notifications</h2>
+                    <h2 className="tw-pt-md tw-pb-1">
+                        Preventing future issues with code monitoring and notifications
+                    </h2>
 
                     <p>
                         With more data privacy laws on the horizon (such as California's Consumer Privacy Act),
