@@ -40,7 +40,7 @@ const Webinar: FunctionComponent = () => {
                     title="Preparing for the Next Log4j"
                     subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
                     leftCol={
-                        <div className="col-lg-4 col-12 text-lg-center px-lg-0 pb-5 pb-lg-0">
+                        <div className="col-12 text-lg-center px-0 pb-5 pb-lg-0">
                             <img
                                 className={`border-right border-black ${
                                     isMdOrDown ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'

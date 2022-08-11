@@ -20,7 +20,7 @@ export const Report: FunctionComponent = () => {
                     variant="venusCode"
                     title="Cool Vendors in Software Engineering: Enhancing Developer Productivity"
                     leftCol={
-                        <div className="col-lg-2 col-12 px-lg-0 pb-2 pb-lg-0">
+                        <div className="col-12 px-0 pb-2 pb-lg-0">
                             <img
                                 height={isMdOrDown ? '170' : '150'}
                                 src="/external-logos/gartner-cool-vendor-2022.png"

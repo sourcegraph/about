@@ -2,7 +2,7 @@ import { FunctionComponent, ReactNode, useEffect, useRef } from 'react'
 
 import classNames from 'classnames'
 
-import { Background } from '@components'
+import { Background, TwoColumnSection } from '@components'
 
 interface Hero extends Background {
     product?: 'code search' | 'batch changes' | 'code insights'
@@ -54,6 +54,23 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
         }
     }, [rootReference, displayUnderNav])
 
+    const mainContent = (
+        <div className={classNames(product && 'max-w-700 w-100')}>
+            {backButton}
+
+            <div className="d-flex flex-column-reverse">
+                <h1 className="display-2 font-weight-bold mb-4 whitespace-pre-line">{title}</h1>
+                {product && <div className="text-uppercase mb-2 font-weight-bold">{product}</div>}
+            </div>
+
+            {subtitle && <h3 className="font-weight-normal max-w-800">{subtitle}</h3>}
+
+            {description && <h5 className="mb-5 max-w-600 font-weight-normal">{description}</h5>}
+
+            {cta && <div className="d-flex flex-column pt-1 max-w-400">{cta}</div>}
+        </div>
+    )
+
     return (
         <div ref={rootReference}>
             <Background
@@ -65,29 +82,18 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
                     variant.includes('dark') && 'text-white'
                 )}
             >
-                <div
-                    className={classNames(
-                        'container',
-                        leftCol && 'd-flex flex-lg-row flex-column align-items-center',
-                        !product && 'py-7'
+                <div className={classNames('container', !product && 'py-7')}>
+                    {leftCol ? (
+                        <TwoColumnSection
+                            centerContent={true}
+                            leftColumnSize="col-lg-4"
+                            rightColumnSize="col-lg-8"
+                            leftColumn={leftCol}
+                            rightColumn={mainContent}
+                        />
+                    ) : (
+                        mainContent
                     )}
-                >
-                    {leftCol}
-
-                    <div className={classNames(product && 'max-w-700 w-100', leftCol && 'col-lg-8')}>
-                        {backButton}
-
-                        <div className="d-flex flex-column-reverse">
-                            <h1 className="display-2 font-weight-bold mb-4 whitespace-pre-line">{title}</h1>
-                            {product && <div className="text-uppercase mb-2 font-weight-bold">{product}</div>}
-                        </div>
-
-                        {subtitle && <h3 className="font-weight-normal max-w-800">{subtitle}</h3>}
-
-                        {description && <h5 className="mb-5 max-w-600 font-weight-normal">{description}</h5>}
-
-                        {cta && <div className="d-flex flex-column pt-1 max-w-400">{cta}</div>}
-                    </div>
                 </div>
             </Background>
         </div>

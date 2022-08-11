@@ -19,7 +19,12 @@ import {
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
-const CarouselItem: FunctionComponent<{ icon: MdiReactIconComponentType; header: string; subtitle: string; text: string }> = props => (
+const CarouselItem: FunctionComponent<{
+    icon: MdiReactIconComponentType
+    header: string
+    subtitle: string
+    text: string
+}> = props => (
     <>
         {/* eslint-disable-next-line react/forbid-dom-props */}
         <div className="bg-violet-1 rounded-circle text-center mb-3" style={{ maxWidth: '40px' }}>
