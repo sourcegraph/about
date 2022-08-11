@@ -11,7 +11,7 @@ import {
     IntegrationsSection,
     Layout,
     Background,
-    BlogResources,
+    ResourceList,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -81,7 +81,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
             <IntegrationsSection />
         </div>
 
-        <BlogResources posts={resourceItems} />
+        <ResourceList items={resourceItems} />
 
         <ContentSection>
             <div className="tw-mx-auto tw-text-center tw-max-w-screen-md">

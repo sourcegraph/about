@@ -15,7 +15,7 @@ import {
     TwoColumnSection,
     QuoteCarousel,
     Background,
-    BlogResources,
+    ResourceList,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -400,7 +400,7 @@ const UseCasePage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <BlogResources posts={blogResourceItems} />
+        <ResourceList items={blogResourceItems} />
 
         <ContentSection>
             <div className="tw-text-center">

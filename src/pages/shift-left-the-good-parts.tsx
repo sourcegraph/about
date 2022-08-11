@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
-import { Layout, ContentSection, TwoColumnSection, Video, BlogResources } from '@components'
+import { Layout, ContentSection, TwoColumnSection, Video, ResourceList } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const blogResourceItems = [
@@ -317,7 +317,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <BlogResources posts={blogResourceItems} title="Read more about dev tools that accelerate the dev cycle" />
+        <ResourceList items={blogResourceItems} title="Read more about dev tools that accelerate the dev cycle" />
     </Layout>
 )
 

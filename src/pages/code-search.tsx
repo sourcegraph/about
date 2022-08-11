@@ -12,7 +12,7 @@ import {
     ProductHero,
     TwoColumnSection,
     Video,
-    BlogResources,
+    ResourceList,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -251,7 +251,7 @@ export const CodeSearchPage: FunctionComponent = () => (
             </div>
         </Background>
 
-        <BlogResources posts={blogResources} title="Learn More" />
+        <ResourceList items={blogResources} title="Learn More" />
     </Layout>
 )
 

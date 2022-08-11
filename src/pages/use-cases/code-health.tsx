@@ -9,7 +9,7 @@ import {
     BackButton,
     Background,
     Blockquote,
-    BlogResources,
+    ResourceList,
     ContentSection,
     CustomCarousel,
     CustomerLogos,
@@ -391,7 +391,7 @@ const UseCasePage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <BlogResources posts={blogResourceItems} />
+        <ResourceList items={blogResourceItems} />
 
         <ContentSection>
             <div className="flex-wrap tw-text-center tw-flex tw-justify-center mb-md-4">

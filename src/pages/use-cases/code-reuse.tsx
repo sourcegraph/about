@@ -9,7 +9,7 @@ import {
     BackButton,
     Background,
     Blockquote,
-    BlogResources,
+    ResourceList,
     ContentSection,
     CustomCarousel,
     CustomerLogos,
@@ -350,7 +350,7 @@ const CodeReusePage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <BlogResources posts={blogResourceItems} />
+        <ResourceList items={blogResourceItems} />
 
         <ContentSection>
             <div className="tw-text-center">

@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, CaseStudyCard, HubSpotForm, BlogResources, ContentSection } from '@components'
+import { Layout, CaseStudyCard, HubSpotForm, ResourceList, ContentSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const blogResourceItems = [
@@ -141,7 +141,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <BlogResources posts={blogResourceItems} />
+        <ResourceList items={blogResourceItems} />
 
         <div className="py-5 tw-text-white tw-flex md:tw-flex-row tw-flex-col tw-items-center tw-justify-center tw-bg-blurple-400">
             <h5 className="tw-my-auto tw-text-center max-w-250 max-w-md-400 md:tw-pr-sm">

@@ -29,7 +29,7 @@ import {
     TwoColumnSection,
     YouTube,
     Video,
-    BlogResources,
+    ResourceList,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -575,7 +575,7 @@ const CodeInsightsPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <BlogResources posts={blogResourceItems} title="Learn More" />
+        <ResourceList items={blogResourceItems} title="Learn More" />
     </Layout>
 )
 

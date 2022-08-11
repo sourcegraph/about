@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 import {
     Layout,
-    BlogResources,
+    ResourceList,
     ContentSection,
     CustomCarousel,
     TwoColumnSection,
@@ -324,7 +324,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <BlogResources posts={blogResourceItems} />
+        <ResourceList items={blogResourceItems} />
     </Layout>
 )
 

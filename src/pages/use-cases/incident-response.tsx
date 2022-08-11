@@ -8,7 +8,7 @@ import Link from 'next/link'
 import {
     BackButton,
     Background,
-    BlogResources,
+    ResourceList,
     ContentSection,
     CustomCarousel,
     CustomerLogos,
@@ -396,7 +396,7 @@ const IncidentResponsePage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <BlogResources posts={blogResourceItems} />
+        <ResourceList items={blogResourceItems} />
 
         <ContentSection>
             <div className="tw-text-center">
