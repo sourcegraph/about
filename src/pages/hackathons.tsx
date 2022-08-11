@@ -20,7 +20,7 @@ export const Hackathons: FunctionComponent = () => (
             </p>
         </section>
 
-        <section className="p-4 m-auto bg-white tw-flex justify-content-around tw-flex-col lg:tw-flex-row tw-max-w-screen-xl">
+        <section className="p-4 m-auto bg-white tw-flex tw-justify-around tw-flex-col lg:tw-flex-row tw-max-w-screen-xl">
             <div className="mt-0 mb-2 mr-lg-5">
                 <div className="p-5 rounded tw-flex tw-flex-col tw-bg-gray-100">
                     <p>

@@ -33,7 +33,7 @@ const News: FunctionComponent = () => (
                 </p>
 
                 <div className="container">
-                    <div className="row justify-content-md-center">
+                    <div className="row md:tw-justify-center">
                         <div className="mt-5 col">
                             <h3>Media contact</h3>
                             <p>

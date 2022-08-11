@@ -79,7 +79,7 @@ const DesktopNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton }
             )}
         </Nav>
 
-        <Nav className="right-nav justify-content-lg-end">
+        <Nav className="right-nav lg:tw-justify-end">
             {!hideGetStartedButton && (
                 <Nav.Link
                     className="px-2 py-2 btn tw-text-blurple-400 font-weight-bold"

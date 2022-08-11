@@ -34,7 +34,7 @@ export const CaseStudy: FunctionComponent = () => (
                         work in multiple repositories, this small-scale search strategy isn't sufficient and can be a
                         major time sink.
                     </p>
-                    <div className="row justify-content-md-center pt-3">
+                    <div className="row md:tw-justify-center pt-3">
                         <div className="col-md-4">
                             <figure>
                                 <img

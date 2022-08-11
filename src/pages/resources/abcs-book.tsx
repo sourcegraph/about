@@ -44,7 +44,7 @@ export const AbcsEbook: FunctionComponent = () => (
                 </p>
             </div>
 
-            <div className="mt-3 row justify-content-md-center">
+            <div className="mt-3 row md:tw-justify-center">
                 <div className="col-md-8">
                     <YouTube id="6bCO63O4swI" title="Our ABCs: Always Be Coding children's book by Sourcegraph" />
                     <p className="mt-5">

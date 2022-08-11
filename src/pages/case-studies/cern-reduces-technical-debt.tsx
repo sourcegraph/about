@@ -32,7 +32,7 @@ export const CaseStudy: FunctionComponent = () => (
                         developers require a tool that lets them quickly and effectively search through their entire
                         codebase so they can easily change and reuse code where necessary.{' '}
                     </p>
-                    <div className="row justify-content-md-center pt-3">
+                    <div className="row md:tw-justify-center pt-3">
                         <div className="col-md-8">
                             <Figure
                                 src="/case-studies/cern-image-lhc-cc.jpg"

@@ -378,7 +378,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     Code Insights provides reliable real-time reporting directly from the codebase, making engineering
                     leaders and their teams more effective.
                 </p>
-                <div className="tw-flex tw-flex-col col-lg-6 px-lg-6 justify-content-around">
+                <div className="tw-flex tw-flex-col col-lg-6 px-lg-6 tw-justify-around">
                     <div className="py-3 tw-flex py-lg-5">
                         <div className="mr-4">
                             <BullsEyeArrowIcon className="icon tw-text-blurple-400" size={70} />
@@ -400,7 +400,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                         </div>
                     </div>
                 </div>
-                <div className="tw-flex tw-flex-col col-lg-6 px-lg-6 justify-content-around">
+                <div className="tw-flex tw-flex-col col-lg-6 px-lg-6 tw-justify-around">
                     <div className="py-3 tw-flex py-lg-5">
                         <div className="mr-4">
                             <TrendingUpIcon className="icon tw-text-blurple-400" size={70} />
@@ -550,8 +550,8 @@ const CodeInsightsPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="row tw-flex tw-flex-col justify-content-start">
-                <div className="mb-5 col-lg-8 tw-flex tw-flex-col justify-content-start">
+            <div className="row tw-flex tw-flex-col tw-justify-start">
+                <div className="mb-5 col-lg-8 tw-flex tw-flex-col tw-justify-start">
                     <h2>Get started with Code Insights</h2>
                     <p>
                         Create a code insight in 60 seconds and get historical data for previously untracked metrics —

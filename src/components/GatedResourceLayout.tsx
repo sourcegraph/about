@@ -78,7 +78,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 style={{ backgroundImage: `url('${heroImage()}')` }}
                 className={classNames('tw-bg-cover py-6 py-md-7', isGuidePg && 'text-white')}
             >
-                <div className="container px-0 tw-flex tw-flex-col lg:tw-flex-row justify-content-around tw-items-center">
+                <div className="container px-0 tw-flex tw-flex-col lg:tw-flex-row tw-justify-around tw-items-center">
                     {customer && (
                         <>
                             {isWebinarPg ? (
