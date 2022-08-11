@@ -48,7 +48,7 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
                             content={content}
                             url={urlToPost(post)}
                             className="mx-auto post-template__post blog-post tw-max-w-[800px]"
-                            headerClassName="card-header bg-white border-bottom-0 text-center pt-5"
+                            headerClassName="card-header bg-white border-bottom-0 tw-text-center pt-5"
                         />
                     </div>
                 </div>

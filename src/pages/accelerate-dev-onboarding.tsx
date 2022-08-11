@@ -51,7 +51,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
             </div>
         </div>
 
-        <div className="text-center">
+        <div className="tw-text-center">
             <div className="container py-7 max-w-650">
                 <h2>Ready to accelerate developer onboarding? Let's talk.</h2>
 

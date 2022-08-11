@@ -373,8 +373,8 @@ const CodeInsightsPage: FunctionComponent = () => (
 
         <ContentSection>
             <div className="flex-wrap tw-flex">
-                <h2 className="mb-3 text-center w-100">Engineering leadership with superpowers</h2>
-                <p className="text-center icon-subheader w-100">
+                <h2 className="mb-3 tw-text-center w-100">Engineering leadership with superpowers</h2>
+                <p className="tw-text-center icon-subheader w-100">
                     Code Insights provides reliable real-time reporting directly from the codebase, making engineering
                     leaders and their teams more effective.
                 </p>
@@ -428,7 +428,7 @@ const CodeInsightsPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection>
-            <h2 className="mb-3 text-center">See Code Insights in action</h2>
+            <h2 className="mb-3 tw-text-center">See Code Insights in action</h2>
             <div className="row tw-justify-center pt-md-4">
                 <div className="col-lg-8">
                     <YouTube id="fMCUJQHfbUA" title="Sourcegraph Code Insights demo" />
@@ -437,7 +437,7 @@ const CodeInsightsPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="sg-bg-gradient-venus tw-hidden md:tw-block">
-            <h2 className="mb-5 text-center">Popular Code Insights templates</h2>
+            <h2 className="mb-5 tw-text-center">Popular Code Insights templates</h2>
             <Tabs
                 tabs={[
                     {
@@ -498,7 +498,7 @@ const CodeInsightsPage: FunctionComponent = () => (
 
         {/* Use Cases Carousel */}
         <ContentSection parentClassName="sg-bg-gradient-venus tw-block md:tw-hidden">
-            <h2 className="mb-5 text-center">Popular Code Insights templates</h2>
+            <h2 className="mb-5 tw-text-center">Popular Code Insights templates</h2>
             <Tabs
                 tabs={[
                     {

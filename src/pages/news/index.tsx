@@ -15,7 +15,7 @@ const News: FunctionComponent = () => (
         }}
     >
         <div className="container">
-            <div className="py-5 text-center">
+            <div className="py-5 tw-text-center">
                 <h1 className="">Sourcegraph News</h1>
                 <p>
                     The latest Sourcegraph news and{' '}
@@ -56,7 +56,7 @@ const News: FunctionComponent = () => (
                 {articles.map(article => (
                     <div className="row" key={article.year}>
                         <div className="mt-5 col-lg-2 mt-lg-0">
-                            <h2 className="text-center tw-block md:tw-hidden">
+                            <h2 className="tw-text-center tw-block md:tw-hidden">
                                 <time dateTime={article.year.toString()}>{article.year}</time>
                             </h2>
                             <h2 className="tw-hidden md:tw-block">
@@ -67,7 +67,7 @@ const News: FunctionComponent = () => (
                         <div className="col-lg-10">
                             {article.articles.map(a => (
                                 <article className="py-3 row border-bottom tw-flex" key={a.newsLink}>
-                                    <div className="mb-2 text-center col-sm-4 col-lg-2 tw-flex tw-items-center mb-md-0">
+                                    <div className="mb-2 tw-text-center col-sm-4 col-lg-2 tw-flex tw-items-center mb-md-0">
                                         <a
                                             href={a.newsLink}
                                             target="_blank"

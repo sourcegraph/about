@@ -18,9 +18,9 @@ export const AbcsEbook: FunctionComponent = () => (
     >
         <ContentSection>
             <div className="tw-max-w-5xl tw-mx-auto">
-                <h1 className="text-center tw-mb-sm">Our ABCs: Always Be Coding children's book</h1>
+                <h1 className="tw-text-center tw-mb-sm">Our ABCs: Always Be Coding children's book</h1>
 
-                <p className="text-center">
+                <p className="tw-text-center">
                     <img
                         src="/other/abcs-book/our-abcs-hero.png"
                         className="px-2 mb-3 w-100"
@@ -29,7 +29,7 @@ export const AbcsEbook: FunctionComponent = () => (
                     />
                 </p>
 
-                <p className="my-5 text-center">
+                <p className="my-5 tw-text-center">
                     <a
                         className="button btn btn-primary"
                         id="abc-dlbook"
@@ -71,7 +71,7 @@ export const AbcsEbook: FunctionComponent = () => (
                         how to code. Or at least it will provide an engaging and educational distraction to give you a
                         break for a few minutes!
                     </p>
-                    <p className="text-center">
+                    <p className="tw-text-center">
                         <a
                             href="https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf"
                             className="tw-block"
@@ -89,7 +89,7 @@ export const AbcsEbook: FunctionComponent = () => (
                             />
                         </a>
                     </p>
-                    <p className="my-5 text-center">
+                    <p className="my-5 tw-text-center">
                         <a
                             className="button btn btn-primary"
                             id="abc-dlbook"
@@ -164,7 +164,7 @@ export const AbcsEbook: FunctionComponent = () => (
 
         <ContentSection parentClassName="sg-bg-gradient-saturn">
             <div className="tw-max-w-4xl tw-mx-auto">
-                <h3 className="text-center tw-mb-6">About Sourcegraph</h3>
+                <h3 className="tw-text-center tw-mb-6">About Sourcegraph</h3>
                 <p>
                     Sourcegraph empowers all developers to explore, navigate and better understand all code, faster,
                     with{' '}

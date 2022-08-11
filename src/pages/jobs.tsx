@@ -208,7 +208,7 @@ const CareersPage: FunctionComponent = () => {
                         <h2 className="tw-mx-auto tw-text-center tw-max-w-2xl tw-mb-6">
                             Happy, healthy, and always in the flow.
                         </h2>
-                        <p className="mx-auto text-center col-lg-6">
+                        <p className="mx-auto tw-text-center col-lg-6">
                             Our Teammates are our most valuable resource. That's why we provide total rewards that are
                             highly competitive and allow you to thrive both personally and professionally.
                         </p>
@@ -347,7 +347,7 @@ const CareersPage: FunctionComponent = () => {
                             <div className="tw-flex tw-flex-col tw-items-center min-h-550 py-7">
                                 <h5 className=" text-uppercase">We value:</h5>
                                 <h2 className="">{item.value}</h2>
-                                <p className="text-center col-8">{item.description}</p>
+                                <p className="tw-text-center col-8">{item.description}</p>
                                 {item.img}
                             </div>
                         </Carousel.Item>

@@ -254,7 +254,7 @@ const UseCasePage: FunctionComponent = () => (
                             <div className="mb-5">
                                 Find, fix, and track vulnerable code across your entire codebase in minutes, not days
                             </div>
-                            <div className="text-center tw-flex-col md:tw-flex-row md:tw-flex">
+                            <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
                                 <div className="mb-3 mb-md-0">
                                     <Link href="/demo" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -360,14 +360,14 @@ const UseCasePage: FunctionComponent = () => (
 
         <ContentSection parentClassName="tw-bg-gray-100">
             <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 align-items-lg-center align-items-left">
-                <div className="mx-auto mb-5 tw-flex tw-flex-col text-start text-md-center align-items-lg-center">
+                <div className="mx-auto mb-5 tw-flex tw-flex-col text-start md:tw-text-center align-items-lg-center">
                     <h2>Get started with Sourcegraph</h2>
                     <p className="max-w-450">
                         Find, fix, and track vulnerable code quickly across your entire codebase to improve code
                         security.
                     </p>
                 </div>
-                <div className="px-0 text-center col-12">
+                <div className="px-0 tw-text-center col-12">
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a

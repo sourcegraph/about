@@ -40,7 +40,7 @@ const ShiftLeftPage: FunctionComponent = () => (
         className="bg-white"
         hero={
             <div className="sg-bg-gradient-venus">
-                <div className="container py-6 py-lg-7 text-md-center">
+                <div className="container py-6 py-lg-7 md:tw-text-center">
                     <h1>Shift Left: The good parts</h1>
                     <h3 className="mt-4 mb-0 mx-md-auto max-w-750">5 practical ways to help your org shift left</h3>
                 </div>
@@ -278,7 +278,7 @@ const ShiftLeftPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="sg-bg-gradient-venus">
-            <div className="mx-auto max-w-800 text-md-center">
+            <div className="mx-auto max-w-800 md:tw-text-center">
                 <h2>Ready to shift left?</h2>
 
                 <p className="my-5 max-w-650 mx-md-auto">
@@ -304,7 +304,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
                             title="Try Sourcegraph now"
-                            className="mt-4 text-center col-md-4"
+                            className="mt-4 tw-text-center col-md-4"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
                             data-button-type="cta"

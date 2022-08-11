@@ -40,7 +40,7 @@ const FixingVulnerabilities: FunctionComponent = () => (
             </div>
         </div>
 
-        <div className="text-center sg-bg-gradient-venus">
+        <div className="tw-text-center sg-bg-gradient-venus">
             <div className="container py-7 max-w-650">
                 <Blockquote
                     headline="Cloudflare proves to auditors that its code isn't vulnerable"
@@ -57,7 +57,7 @@ const FixingVulnerabilities: FunctionComponent = () => (
             </div>
         </div>
 
-        <div className="container text-center py-7 max-w-650">
+        <div className="container tw-text-center py-7 max-w-650">
             <h2>Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk.</h2>
 
             <div className="mx-auto mt-5 max-w-400">

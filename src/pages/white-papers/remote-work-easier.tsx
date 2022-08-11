@@ -239,7 +239,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
 
             <ContentSection color="black" className="py-5">
                 <div className="row justify-content-md-center">
-                    <div className="text-center col-md-3">
+                    <div className="tw-text-center col-md-3">
                         <a
                             href="https://twitter.com/sourcegraph"
                             target="_blank"
@@ -276,7 +276,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
             </ContentSection>
             <ContentSection color="gray" className="py-6">
                 <div className="row justify-content-md-center">
-                    <div className="text-center col-md-3">
+                    <div className="tw-text-center col-md-3">
                         <img
                             src="/external-logos/sourcegraph-universal-code-search-ebook-v1.jpg"
                             alt="Download: Universal Code Search and Intelligence"

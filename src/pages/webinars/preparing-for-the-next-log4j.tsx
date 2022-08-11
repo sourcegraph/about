@@ -82,7 +82,7 @@ const Webinar: FunctionComponent = () => {
                 videoSrc="https://www.youtube.com/embed/ANcbjQJ0OGI"
                 learnMoreCTA={
                     <ContentSection className="tw-flex tw-flex-col tw-items-center">
-                        <h1 className="text-center">Interesting in learning more?</h1>
+                        <h1 className="tw-text-center">Interesting in learning more?</h1>
                         <Link href="/case-studies/nutanix-fixed-log4j-with-sourcegraph" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a

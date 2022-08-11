@@ -5,7 +5,7 @@ import { Layout, HubSpotForm } from '@components'
 const Uninstall: FunctionComponent = () => (
     <Layout>
         <div>
-            <section className="text-center py-4 bg-dark text-light">
+            <section className="tw-text-center py-4 bg-dark text-light">
                 <h1>Thank you for using Sourcegraph</h1>
             </section>
             <section className="p-4 mx-auto max-w-500 bg-white text-dark">

@@ -259,7 +259,7 @@ const UseCasePage: FunctionComponent = () => (
                                 Improve code health with large-scale changes and track key initiatives across your
                                 entire codebase.
                             </div>
-                            <div className="text-center tw-flex-col md:tw-flex-row md:tw-flex">
+                            <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
                                 <div className="mb-3 mb-md-0">
                                     <Link href="/demo" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -354,11 +354,11 @@ const UseCasePage: FunctionComponent = () => (
 
         <ContentSection parentClassName="tw-bg-gray-100">
             <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 align-items-lg-center align-items-left">
-                <div className="mx-auto mb-5 tw-flex tw-flex-col text-start text-md-center max-w-600">
+                <div className="mx-auto mb-5 tw-flex tw-flex-col text-start md:tw-text-center max-w-600">
                     <h2 className="">Get started with Sourcegraph</h2>
                     <p>Give your team the tools they need to build a healthier codebase.</p>
                 </div>
-                <div className="px-0 text-center col-12">
+                <div className="px-0 tw-text-center col-12">
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
@@ -394,7 +394,7 @@ const UseCasePage: FunctionComponent = () => (
         <BlogResources posts={blogResourceItems} />
 
         <ContentSection>
-            <div className="flex-wrap text-center tw-flex tw-justify-center mb-md-4">
+            <div className="flex-wrap tw-text-center tw-flex tw-justify-center mb-md-4">
                 <h2 className="mx-4 mb-4 w-100 mx-lg-0">Ready to build a healthier codebase?</h2>
                 <div className="tw-flex tw-justify-center mb-lg-6">
                     <Link href="/get-started/self-hosted" passHref={true}>

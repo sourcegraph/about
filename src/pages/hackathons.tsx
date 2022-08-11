@@ -12,7 +12,7 @@ export const Hackathons: FunctionComponent = () => (
             description: 'Set up Sourcegraph at a Hackathon',
         }}
     >
-        <section className="px-5 text-center tw-mb-7">
+        <section className="px-5 tw-text-center tw-mb-7">
             <h1 className="mt-4">Set up Sourcegraph during a hackathon</h1>
             <p>
                 We'll give you access to Sourcegraph Enterprise features so you can ship code search and intelligence to

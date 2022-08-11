@@ -181,8 +181,8 @@ export const PricingPlan: FunctionComponent<Props> = ({
 
     return (
         <div className={`h-100 card ${className}`}>
-            <h2 className="mt-3 mb-1 text-center tw-font-semibold">{name}</h2>
-            <div className="py-3 text-center tw-flex tw-flex-col tw-items-center">
+            <h2 className="mt-3 mb-1 tw-text-center tw-font-semibold">{name}</h2>
+            <div className="py-3 tw-text-center tw-flex tw-flex-col tw-items-center">
                 {button}
                 <div className="pb-2 mt-4 mb-2 tw-text-xl text-muted">{price}</div>
                 {planProperties}

@@ -37,7 +37,7 @@ const Support: FunctionComponent = () => (
         }}
     >
         <div className="mt-2">
-            <ContentSection className="text-center">
+            <ContentSection className="tw-text-center">
                 <h1>Sourcegraph Support</h1>
                 <p className="tw-text-xl tw-mt-2">
                     See{' '}
@@ -63,7 +63,7 @@ const Support: FunctionComponent = () => (
                             <div className="card-body">
                                 <h1 className="tw-my-xs tw-text-center">Free</h1>
                                 <a
-                                    className="text-center font-size-base btn btn-outline-primary w-100 tw-justify-center tw-inline-flex"
+                                    className="tw-text-center font-size-base btn btn-outline-primary w-100 tw-justify-center tw-inline-flex"
                                     href="https://docs.sourcegraph.com#quickstart-guide"
                                     title="Deploy"
                                     data-button-style={buttonStyle.outline}
@@ -123,7 +123,7 @@ const Support: FunctionComponent = () => (
                             <div className="card-body">
                                 <h1 className="tw-my-xs tw-text-center">Team</h1>
                                 <a
-                                    className="text-center font-size-base btn btn-success w-100 tw-justify-center tw-inline-flex"
+                                    className="tw-text-center font-size-base btn btn-success w-100 tw-justify-center tw-inline-flex"
                                     href="https://sourcegraph.com/subscriptions/new"
                                     title="Buy now"
                                     data-button-style={buttonStyle.primary}
@@ -188,7 +188,7 @@ const Support: FunctionComponent = () => (
                                 >
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
-                                        className="text-center font-size-base btn btn-outline-primary w-100 tw-justify-center tw-inline-flex"
+                                        className="tw-text-center font-size-base btn btn-outline-primary w-100 tw-justify-center tw-inline-flex"
                                         title="Contact us"
                                         data-button-style={buttonStyle.outline}
                                         data-button-location={buttonLocation.body}

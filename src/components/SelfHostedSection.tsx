@@ -15,7 +15,7 @@ const selfHostedFeatures: string[] = [
 
 export const SelfHostedSection: FunctionComponent = () => (
     <ContentSection parentClassName="sg-bg-gradient-venus">
-        <h2 className="mb-6 text-center">Self-hosted deployment</h2>
+        <h2 className="mb-6 tw-text-center">Self-hosted deployment</h2>
 
         <div className="row">
             <div className="col-lg-6">

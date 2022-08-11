@@ -95,7 +95,7 @@ const UseCases: FunctionComponent = () => {
 
     return (
         <ContentSection className="tw-relative">
-            <div className="text-center">
+            <div className="tw-text-center">
                 <h2>Move fast &mdash; even in big codebases</h2>
             </div>
 
@@ -106,7 +106,7 @@ const UseCases: FunctionComponent = () => {
                         className="mb-6 col-sm-6 tw-flex tw-flex-col sm:tw-flex-row tw-items-center align-items-sm-start"
                     >
                         <useCase.icon className="mb-4 tw-h-auto tw-text-violet-400 w-100 max-w-50 mr-sm-3 mb-sm-0" />
-                        <div className="text-center text-sm-left">
+                        <div className="tw-text-center sm:tw-text-left">
                             <h4>{useCase.title}</h4>
                             <div className="tw-text-lg">
                                 <p className="m-0">{useCase.description}</p>

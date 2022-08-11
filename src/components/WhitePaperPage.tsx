@@ -22,7 +22,7 @@ export const WhitePaperPage: FunctionComponent<Props> = ({ title, className, pdf
             // eslint-disable-next-line react/forbid-dom-props
             style={heroBackgroundImage ? { backgroundImage: `url(${heroBackgroundImage})` } : undefined}
         >
-            <div className="container py-5 text-center">
+            <div className="container py-5 tw-text-center">
                 <div className="tw-flex-col-reverse tw-flex">
                     <h1>{title}</h1>
                     <h6 className="tw-mb-1 tw-block">white paper</h6>

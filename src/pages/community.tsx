@@ -134,7 +134,7 @@ export const Community: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection color="white">
-            <h2 className="mb-5 text-center">What's next?</h2>
+            <h2 className="mb-5 tw-text-center">What's next?</h2>
             <Tabs
                 tabs={[
                     {

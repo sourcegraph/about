@@ -167,7 +167,7 @@ export const BatchChangesPage: FunctionComponent = () => (
 
         {/* Use Cases */}
         <ContentSection>
-            <h2 className="mb-5 text-center">How developers are using Batch Changes </h2>
+            <h2 className="mb-5 tw-text-center">How developers are using Batch Changes </h2>
             <Tabs
                 tabs={[
                     {
@@ -254,7 +254,7 @@ export const BatchChangesPage: FunctionComponent = () => (
 
         {/* Demo */}
         <ContentSection>
-            <h2 className="mb-3 text-center">See Batch Changes in action</h2>
+            <h2 className="mb-3 tw-text-center">See Batch Changes in action</h2>
             <div className="row tw-justify-center pt-md-4">
                 <div className="col-lg-8">
                     <YouTube title="Sourcegraph Batch Changes demo" id="eOmiyXIWTCw" />

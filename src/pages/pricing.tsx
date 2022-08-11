@@ -77,7 +77,7 @@ const PricingPage: FunctionComponent = () => (
         }}
     >
         <div className="text-dark">
-            <ContentSection className="text-center">
+            <ContentSection className="tw-text-center">
                 <h1>Sourcegraph Pricing</h1>
                 <h3 className="mt-2">Self-hosted code intelligence platform</h3>
             </ContentSection>
@@ -87,7 +87,7 @@ const PricingPage: FunctionComponent = () => (
                     <div className="mx-auto mb-4 col-lg-6">
                         <PricingPlan
                             name="Free"
-                            price={<div className="text-center">$0/mo</div>}
+                            price={<div className="tw-text-center">$0/mo</div>}
                             planProperties={
                                 <>
                                     <PricingPlanProperty>Up to 10 users</PricingPlanProperty>
@@ -109,7 +109,7 @@ const PricingPage: FunctionComponent = () => (
                     <div className="mx-auto mb-4 col-lg-6">
                         <PricingPlan
                             name="Enterprise"
-                            price={<div className="text-center">Custom pricing</div>}
+                            price={<div className="tw-text-center">Custom pricing</div>}
                             planProperties={
                                 <>
                                     <PricingPlanProperty>Unlimited users</PricingPlanProperty>
@@ -206,7 +206,7 @@ const PricingPage: FunctionComponent = () => (
                     </div>
                 </div>
 
-                <div className="text-center tw-py-5xl">
+                <div className="tw-text-center tw-py-5xl">
                     <h3>Education and nonprofit discounts</h3>
                     <p>
                         Sourcegraph supports the work of educational organizations and nonprofits.

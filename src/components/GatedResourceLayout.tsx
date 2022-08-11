@@ -83,7 +83,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                         <>
                             {isWebinarPg ? (
                                 // Show SG & Customer logo for customer-based webinars
-                                <div className="pb-5 col-lg-4 col-12 text-lg-center px-lg-0 pb-lg-0">
+                                <div className="pb-5 col-lg-4 col-12 lg:tw-text-center px-lg-0 pb-lg-0">
                                     <img
                                         className={`tw-border-solid tw-border-r-black tw-inline tw-max-w-[65px] md:tw-max-w-[95px] ${
                                             isMdOrDown ? 'tw-border-r-2 mr-3 pr-3' : 'tw-border-r-3 mr-4 pr-4'

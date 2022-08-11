@@ -220,7 +220,7 @@ const CodeReusePage: FunctionComponent = () => (
                                 Identify existing code libraries for reuse and use innersourcing to avoid spending time
                                 on problems a teammate already solved.
                             </div>
-                            <div className="text-center tw-flex-col md:tw-flex-row md:tw-flex">
+                            <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
                                 <div className="mb-3 mb-md-0">
                                     <Link href="/demo" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -310,14 +310,14 @@ const CodeReusePage: FunctionComponent = () => (
 
         <ContentSection parentClassName="tw-bg-gray-100">
             <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 align-items-lg-center align-items-left">
-                <div className="mx-auto mb-5 tw-flex tw-flex-col text-start text-md-center max-w-600">
+                <div className="mx-auto mb-5 tw-flex tw-flex-col text-start md:tw-text-center max-w-600">
                     <h2 className="">Get started with Sourcegraph</h2>
                     <p>
                         Make it easier to discover trustworthy code for reuse so your teams can spend more time solving
                         new problems and less time rewriting code.
                     </p>
                 </div>
-                <div className="px-0 text-center col-12">
+                <div className="px-0 tw-text-center col-12">
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
@@ -353,7 +353,7 @@ const CodeReusePage: FunctionComponent = () => (
         <BlogResources posts={blogResourceItems} />
 
         <ContentSection>
-            <div className="text-center">
+            <div className="tw-text-center">
                 <h2 className="mb-6">Make the most of your existing code.</h2>
                 <Link href="/get-started/self-hosted" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
