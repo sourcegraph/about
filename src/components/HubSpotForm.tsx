@@ -46,7 +46,7 @@ interface CreateHubSpotFormProps {
     chiliPiper?: boolean
 }
 
-export interface HubSpotFormProps {
+export interface HubSpotForm {
     formId?: string
     masterFormName?: 'contactMulti' | 'contactEmail' | 'gatedMulti' | 'gatedEmail'
     onFormSubmitted?: () => void
@@ -281,13 +281,13 @@ const onFormReady = (form: HTMLFormElement): void => {
  * @param options.chiliPiper - a boolean prop to enable/disable ChiliPiper
  * @returns - a div element with an id where the HubSpot form renders
  */
-export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
+export const HubSpotForm: FunctionComponent<HubSpotForm> = ({
     formId,
     masterFormName,
     onFormSubmitted,
     inlineMessage = 'Thank you for your interest in Sourcegraph. We will be in contact with you soon!',
     chiliPiper,
-}: HubSpotFormProps) => {
+}: HubSpotForm) => {
     const [formCreated, setFormCreated] = useState<boolean>(false)
 
     useEffect(() => {

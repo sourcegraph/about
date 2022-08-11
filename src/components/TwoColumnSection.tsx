@@ -7,6 +7,8 @@ interface TwoColumnSection {
     rightColumn: ReactNode
     reverseOnMobile?: boolean
     centerContent?: boolean
+    leftColumnSize?: string
+    rightColumnSize?: string
 }
 
 export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
@@ -14,6 +16,8 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
     rightColumn,
     reverseOnMobile = false,
     centerContent = false,
+    leftColumnSize,
+    rightColumnSize,
 }) => (
     <div
         className={classNames('tw-flex', {
@@ -22,7 +26,11 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
             'tw-items-center': centerContent,
         })}
     >
-        <div className={classNames('col-lg-6 lg:tw-pr-sm', { 'mb-4 mb-lg-0': !reverseOnMobile })}>{leftColumn}</div>
-        <div className={classNames('col-lg-6 lg:tw-pl-sm', { 'mb-4 mb-lg-0': reverseOnMobile })}>{rightColumn}</div>
+        <div className={classNames(leftColumnSize ?? 'col-lg-6 lg:tw-pr-sm', { 'tw-mb-sm lg:tw-mb-0': !reverseOnMobile })}>
+            {leftColumn}
+        </div>
+        <div className={classNames(rightColumnSize ?? 'col-lg-6 lg:tw-pl-sm', { 'tw-mb-sm lg:tw-mb-0': reverseOnMobile })}>
+            {rightColumn}
+        </div>
     </div>
 )

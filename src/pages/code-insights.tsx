@@ -20,16 +20,16 @@ import {
     Blockquote,
     ContentSection,
     CustomCarousel,
+    Hero,
     HubSpotForm,
     Layout,
-    ProductHero,
-    Tabs,
+    ResourceList,
     TabCarousel,
+    Tabs,
     TemplateCodeBlock,
     TwoColumnSection,
-    YouTube,
     Video,
-    ResourceList,
+    YouTube,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -312,11 +312,11 @@ const CodeInsightsPage: FunctionComponent = () => (
         }}
         className="code-insights-page"
         hero={
-            <ProductHero
+            <Hero
                 variant="lightNebulousVenus2"
                 product="code insights"
                 title={'Track what really matters\nto you and your team.'}
-                description="Transform your code into a queryable database to create customizable, visual dashboards in seconds."
+                subtitle="Transform your code into a queryable database to create customizable, visual dashboards in seconds."
                 cta={<HubSpotForm masterFormName="contactEmail" chiliPiper={true} />}
                 displayUnderNav={true}
             />
@@ -537,7 +537,7 @@ const CodeInsightsPage: FunctionComponent = () => (
             />
             <div className="tw-text-center">
                 <a
-                    className="tw-px-0 py-4 col-7"
+                    className="py-4 tw-px-0 col-7"
                     href="https://docs.sourcegraph.com/code_insights"
                     title="Code Insights on docs."
                     data-button-style={buttonStyle.text}

@@ -213,7 +213,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                             mp4: '/animations/code-search',
                             webm: '/animations/code-search',
                         }}
-                        title="Sourcegraph Code Search"
+                        title="Sourcegraph code search"
                         loop={true}
                     />
                 }
@@ -231,7 +231,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                             mp4: '/animations/batch-changes',
                             webm: '/animations/batch-changes',
                         }}
-                        title="Sourcegraph Code Search"
+                        title="Sourcegraph batch changes"
                         loop={true}
                     />
                 }
@@ -289,7 +289,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                             mp4: '/animations/code-insights',
                             webm: '/animations/code-insights',
                         }}
-                        title="Sourcegraph Code Search"
+                        title="Sourcegraph code insights"
                         loop={true}
                     />
                 }

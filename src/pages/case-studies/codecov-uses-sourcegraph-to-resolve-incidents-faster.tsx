@@ -4,7 +4,7 @@ import {
     Layout,
     AuthorBio,
     BackButton,
-    ProductHero,
+    Hero,
     NewCaseStudyLayout,
     ContentSection,
     Blockquote,
@@ -38,10 +38,10 @@ export const CaseStudy: FunctionComponent = () => (
                 'Codecov case study. Learn how Codecov uses Sourcegraph to resolve incidents like Log4j 12x faster and with 100% confidence.',
         }}
         hero={
-            <ProductHero
+            <Hero
                 backButton={<BackButton href="/case-studies" text="Case Studies" />}
                 variant="venusCode"
-                title="Codecov uses Sourcegraph to resolve incidents faster"
+                title={'Codecov uses Sourcegraph to \n resolve incidents faster'}
                 displayUnderNav={true}
             />
         }

@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, GatedResourceLayout } from '@components'
+import { Layout, GatedResourceLayout, Hero } from '@components'
 
 export const Guide: FunctionComponent = () => (
     <Layout
@@ -10,6 +10,12 @@ export const Guide: FunctionComponent = () => (
                 'When finding security vulnerabilities, simplicity is key. Learn how to decrease recovery time with a single search by improving tooling and processes.',
         }}
         className="bg-white"
+        hero={
+            <Hero
+                variant="darkSimpleGrid"
+                title="Find and fix security vulnerabilities in the pursuit of healthy code"
+            />
+        }
     >
         <GatedResourceLayout
             title="Find and fix security vulnerabilities in the pursuit of healthy code"
