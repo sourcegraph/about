@@ -2,7 +2,7 @@ import { FunctionComponent, ReactNode } from 'react'
 
 import { useRouter } from 'next/router'
 
-import { ContentSection, HubSpotForm, DemioForm, DemioFormProps } from '@components'
+import { ContentSection, HubSpotForm, DemioForm } from '@components'
 
 interface Speaker {
     name: string
@@ -16,7 +16,7 @@ interface Props {
     description?: ReactNode
     formLabel?: string
     onFormSubmitted?: () => void
-    demioForm?: DemioFormProps
+    demioForm?: DemioForm
     inlineMessage?: string
     learnMoreCTA?: ReactNode
     videoSrc?: string

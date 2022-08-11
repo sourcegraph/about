@@ -1,6 +1,6 @@
 import { FunctionComponent, useEffect } from 'react'
 
-export interface DemioFormProps {
+export interface DemioForm {
     formId: string
     formClassName: string
     buttonText?: string
@@ -33,11 +33,11 @@ const loadScriptElement = (): Promise<HTMLScriptElement | Element | null> =>
  *
  * @returns - a span element with a className where the Demio form renders
  */
-export const DemioForm: FunctionComponent<DemioFormProps> = ({
+export const DemioForm: FunctionComponent<DemioForm> = ({
     formId,
     formClassName,
     buttonText = 'Submit',
-}: DemioFormProps) => {
+}: DemioForm) => {
     useEffect(() => {
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
         loadScriptElement()
