@@ -143,7 +143,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
 
         <BlogResources posts={blogResourceItems} />
 
-        <div className="py-5 text-white tw-flex md:tw-flex-row tw-flex-col tw-items-center tw-justify-center bg-primary">
+        <div className="py-5 tw-text-white tw-flex md:tw-flex-row tw-flex-col tw-items-center tw-justify-center tw-bg-blurple-400">
             <h5 className="tw-my-auto tw-text-center max-w-250 max-w-md-400 pr-md-4">
                 Looking for our changelog? Look no further
             </h5>
