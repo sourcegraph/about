@@ -49,7 +49,7 @@ export const DemioForm: FunctionComponent<DemioForm> = ({
     }, [formId, formClassName, buttonText])
 
     return (
-        <span
+        <div
             className={formClassName}
             data-hash={formId}
             data-text={buttonText}
