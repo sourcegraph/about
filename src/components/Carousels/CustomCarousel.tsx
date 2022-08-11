@@ -133,7 +133,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                 {/* Carousel Item */}
                 <div
                     className={classNames(
-                        'position-relative col-lg-5 col-md-10 col-sm-12 p-4 py-5 tw-flex tw-items-center lg:tw-justify-start tw-justify-center',
+                        'tw-relative col-lg-5 col-md-10 col-sm-12 p-4 py-5 tw-flex tw-items-center lg:tw-justify-start tw-justify-center',
                         hasImages
                             ? 'tw-min-h-[500px]'
                             : animateTransition && !isMdOrDown
@@ -145,7 +145,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                         <div
                             key={item.title}
                             className={classNames(
-                                animateTransition && 'position-absolute',
+                                animateTransition && 'tw-absolute',
                                 animateTransition
                                     ? item === carouselHook.carouselItems.currentItem
                                         ? 'tw-transition-all tw-duration-1000 tw-ease-in-out tw-opacity-100 w-xl-450 w-lg-350'
@@ -169,7 +169,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                 </div>
 
                 {/* Mobile Indicators */}
-                <div className="tw-mx-auto my-4 lg:tw-hidden tw-flex tw-items-center">
+                <div className="my-4 tw-mx-auto lg:tw-hidden tw-flex tw-items-center">
                     <ArrowLeftIcon
                         className="mr-4 tw-cursor-pointer"
                         onClick={() => carouselHook.moveCarousel('decrement')}
