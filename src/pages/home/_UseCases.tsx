@@ -103,7 +103,7 @@ const UseCases: FunctionComponent = () => {
                 {useCases.map(useCase => (
                     <div
                         key={useCase.title}
-                        className="mb-6 col-sm-6 tw-flex tw-flex-col sm:tw-flex-row tw-items-center align-items-sm-start"
+                        className="mb-6 col-sm-6 tw-flex tw-flex-col sm:tw-flex-row tw-items-center sm:tw-items-start"
                     >
                         <useCase.icon className="mb-4 tw-h-auto tw-text-violet-400 w-100 max-w-50 mr-sm-3 mb-sm-0" />
                         <div className="tw-text-center sm:tw-text-left">

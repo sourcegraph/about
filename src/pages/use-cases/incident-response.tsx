@@ -355,8 +355,8 @@ const IncidentResponsePage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 align-items-lg-center align-items-left">
-                <div className="mx-auto mb-5 tw-flex tw-flex-col text-start md:tw-text-center max-w-600">
+            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
+                <div className="mx-auto mb-5 tw-flex tw-flex-col tw-text-center max-w-600">
                     <h2 className="">Get started with Sourcegraph</h2>
                     <p>
                         Respond to incidents with confidence and speed, and remediate issues at their root to ensure

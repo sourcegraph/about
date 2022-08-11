@@ -85,7 +85,7 @@ const News: FunctionComponent = () => (
                                         </a>
                                     </div>
 
-                                    <div className="col-sm-10 col-lg-10 align-self-center">
+                                    <div className="col-sm-10 col-lg-10 tw-self-center">
                                         <h5 className="mb-2 tw-inline-block">{a.newsSource}</h5>{' '}
                                         <time
                                             dateTime={new Date(a.newsDate).toISOString().split('T')[0]}

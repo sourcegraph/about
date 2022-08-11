@@ -14,17 +14,17 @@ interface Props {
 
 export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
     <ContentSection className="container col-xl-6 tw-justify-center">
-        <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 align-items-md-center align-items-left">
+        <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
             <div className="mb-5 tw-flex tw-flex-col">
                 <h2 className="tw-text-center tw-mb-6">Get started with Sourcegraph</h2>
                 <p className="tw-text-center">Understand, fix, and automate changes across your entire codebase.</p>
             </div>
-            <div className="tw-flex tw-flex-col">
+            <div className="tw-flex tw-flex-col tw-mx-auto">
                 <Link href="/demo" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         title="Request a demo"
-                        className="btn btn-primary"
+                        className="btn btn-primary tw-inline-block"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
@@ -36,7 +36,7 @@ export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         title="Try Sourcegraph now"
-                        className="mt-4"
+                        className="mt-4 tw-inline-block"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"

@@ -359,8 +359,8 @@ const UseCasePage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 align-items-lg-center align-items-left">
-                <div className="mx-auto mb-5 tw-flex tw-flex-col text-start md:tw-text-center align-items-lg-center">
+            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
+                <div className="mx-auto mb-5 tw-flex tw-flex-col tw-text-center">
                     <h2>Get started with Sourcegraph</h2>
                     <p className="max-w-450">
                         Find, fix, and track vulnerable code quickly across your entire codebase to improve code
