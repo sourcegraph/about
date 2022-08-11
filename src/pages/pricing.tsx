@@ -84,7 +84,7 @@ const PricingPage: FunctionComponent = () => (
 
             <div className="container">
                 <div className="pt-4 row">
-                    <div className="mx-auto mb-4 col-lg-6">
+                    <div className="tw-mx-auto mb-4 col-lg-6">
                         <PricingPlan
                             name="Free"
                             price={<div className="tw-text-center">$0/mo</div>}
@@ -106,7 +106,7 @@ const PricingPage: FunctionComponent = () => (
                         />
                     </div>
 
-                    <div className="mx-auto mb-4 col-lg-6">
+                    <div className="tw-mx-auto mb-4 col-lg-6">
                         <PricingPlan
                             name="Enterprise"
                             price={<div className="tw-text-center">Custom pricing</div>}
@@ -146,21 +146,21 @@ const PricingPage: FunctionComponent = () => (
                 </ContentSection>
 
                 <div className="row">
-                    <div className="mx-auto mb-4 col-md-12">
+                    <div className="tw-mx-auto mb-4 col-md-12">
                         <div className="px-6 card">
                             <h2 className="my-3 tw-font-semibold">Team</h2>
 
                             <div className="row">
-                                <div className="pr-5 mx-auto mb-4 tw-text-xl col-md-6">
+                                <div className="pr-5 tw-mx-auto mb-4 tw-text-xl col-md-6">
                                     If you have more than 10 users, you can upgrade to the Team plan. This includes all
                                     of the features of the Free plan, plus:
                                 </div>
-                                <div className="mx-auto mb-4 tw-text-xl col-md-6 pl-md-6">
+                                <div className="tw-mx-auto mb-4 tw-text-xl col-md-6 pl-md-6">
                                     Contact us to get started with the Team plan.
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="mx-auto mb-4 col-md-6">
+                                <div className="tw-mx-auto mb-4 col-md-6">
                                     <ol className="list-group list-group-flush mr-lg-5">
                                         <PricingPlanFeature
                                             key="team-feature-1"
@@ -189,9 +189,9 @@ const PricingPage: FunctionComponent = () => (
                                         />
                                     </ol>
                                 </div>
-                                <div className="pl-6 mx-auto mb-4 col-md-6">
+                                <div className="pl-6 tw-mx-auto mb-4 col-md-6">
                                     <a
-                                        className="mx-auto my-0 btn btn-outline-primary col-lg-7 col-10"
+                                        className="tw-mx-auto my-0 btn btn-outline-primary col-lg-7 col-10"
                                         href="https://info.sourcegraph.com/team-pricing"
                                         title="Contact us"
                                         data-button-style={buttonStyle.outline}

@@ -97,7 +97,7 @@ export const Community: FunctionComponent = () => (
                             src="/community/cheatsheet_top.png"
                             alt="Sourcegraph Cheatsheet"
                             title="Sourcegraph Cheatsheet"
-                            className="mx-auto tw-max-w-3xl tw-w-full"
+                            className="tw-mx-auto tw-max-w-3xl tw-w-full"
                         />
                     </a>
                 </div>

@@ -59,7 +59,7 @@ export const CaseStudy: FunctionComponent = () => (
                                 src="/case-studies/chris-roderick-cern.jpg"
                                 alt="Chris Roderick, Applications and Services Section Leader, CERN"
                                 title="Chris Roderick, Applications and Services Section Leader, CERN"
-                                className="w-100 rounded-circle img-fluid mx-auto tw-block mb-3"
+                                className="w-100 rounded-circle img-fluid tw-mx-auto tw-block mb-3"
                             />
                         </div>
                         <div className="col-md-9">

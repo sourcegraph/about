@@ -99,7 +99,7 @@ const UseCases: FunctionComponent = () => {
                 <h2>Move fast &mdash; even in big codebases</h2>
             </div>
 
-            <div className="mx-auto mt-6 row max-w-900">
+            <div className="tw-mx-auto mt-6 row max-w-900">
                 {useCases.map(useCase => (
                     <div
                         key={useCase.title}

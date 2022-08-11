@@ -74,7 +74,7 @@ const logos: Logo[] = [
 ]
 
 export const CustomerLogos: FunctionComponent = () => (
-    <div className="flex-wrap mx-auto tw-flex tw-items-center tw-justify-center max-w-1000 user-select-none">
+    <div className="flex-wrap tw-mx-auto tw-flex tw-items-center tw-justify-center max-w-1000 user-select-none">
         {logos.map((logo: Logo) => (
             <Link key={logo.name} href={logo.link ? logo.link : '/case-studies'} passHref={true}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

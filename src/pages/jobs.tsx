@@ -204,11 +204,11 @@ const CareersPage: FunctionComponent = () => {
 
             <ContentSection color="white">
                 <div className="flex-wrap tw-flex">
-                    <div className="m-auto">
+                    <div className="tw-m-auto">
                         <h2 className="tw-mx-auto tw-text-center tw-max-w-2xl tw-mb-6">
                             Happy, healthy, and always in the flow.
                         </h2>
-                        <p className="mx-auto tw-text-center col-lg-6">
+                        <p className="tw-mx-auto tw-text-center col-lg-6">
                             Our Teammates are our most valuable resource. That's why we provide total rewards that are
                             highly competitive and allow you to thrive both personally and professionally.
                         </p>

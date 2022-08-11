@@ -44,7 +44,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
 
     return (
         <div>
-            {title && <h2 className="tw-mb-3xl tw-text-center mx-md-auto">{title}</h2>}
+            {title && <h2 className="tw-mb-3xl tw-text-center md:tw-mx-auto">{title}</h2>}
 
             <div
                 className={classNames(
@@ -54,7 +54,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
             >
                 {/* Mobile Image Caption (Button Label) */}
                 {hasImages && (
-                    <div className="mb-5 tw-block lg:tw-hidden mb-lg-0 mx-md-auto">
+                    <div className="mb-5 tw-block lg:tw-hidden mb-lg-0 md:tw-mx-auto">
                         {carouselItems.map((item, index) => (
                             <h3
                                 className={classNames(
@@ -169,7 +169,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                 </div>
 
                 {/* Mobile Indicators */}
-                <div className="mx-auto my-4 lg:tw-hidden tw-flex tw-items-center">
+                <div className="tw-mx-auto my-4 lg:tw-hidden tw-flex tw-items-center">
                     <ArrowLeftIcon
                         className="mr-4 tw-cursor-pointer"
                         onClick={() => carouselHook.moveCarousel('decrement')}

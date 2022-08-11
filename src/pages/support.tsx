@@ -58,7 +58,7 @@ const Support: FunctionComponent = () => (
 
             <div className="tw-mx-auto tw-my-0 tw-max-w-screen-xl">
                 <div className="pt-4 row">
-                    <div className="mx-auto mb-4 tw-flex col-md-4">
+                    <div className="tw-mx-auto mb-4 tw-flex col-md-4">
                         <div className="card h-100">
                             <div className="card-body">
                                 <h1 className="tw-my-xs tw-text-center">Free</h1>
@@ -118,7 +118,7 @@ const Support: FunctionComponent = () => (
                             </ol>
                         </div>
                     </div>
-                    <div className="mx-auto mb-4 tw-flex col-md-4">
+                    <div className="tw-mx-auto mb-4 tw-flex col-md-4">
                         <div className="card">
                             <div className="card-body">
                                 <h1 className="tw-my-xs tw-text-center">Team</h1>
@@ -178,7 +178,7 @@ const Support: FunctionComponent = () => (
                             </ol>
                         </div>
                     </div>
-                    <div className="mx-auto mb-4 tw-flex col-md-4">
+                    <div className="tw-mx-auto mb-4 tw-flex col-md-4">
                         <div className="card">
                             <div className="card-body">
                                 <h1 className="tw-my-xs tw-text-center">Enterprise</h1>

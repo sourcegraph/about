@@ -40,18 +40,18 @@ const Hero: FunctionComponent = () => {
                 </div>
             ))}
 
-            <div className="mx-auto tw-text-center max-w-750">
+            <div className="tw-mx-auto tw-text-center max-w-750">
                 <h1 className="tw-text-4xl tw-leading-10 md:tw-text-6xl lg:tw-text-[3.75rem] lg:tw-leading-[1]">
                     <span className="mb-2 tw-text-transparent tw-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">
                         {headline}
                     </span>{' '}
                     across your entire codebase
                 </h1>
-                <p className="mx-auto my-5 max-w-700 tw-font-semibold">
+                <p className="tw-mx-auto my-5 max-w-700 tw-font-semibold">
                     Understand, fix, and automate across your codebase with Sourcegraph's code intelligence platform
                 </p>
 
-                <div className="mx-auto max-w-350 tw-flex-col sm:tw-flex-row sm:tw-flex tw-items-center">
+                <div className="tw-mx-auto max-w-350 tw-flex-col sm:tw-flex-row sm:tw-flex tw-items-center">
                     <div className="mb-3 col-sm-6 px-sm-0 mb-sm-0 mr-sm-3">
                         <Link href="/get-started/self-hosted" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -101,7 +101,7 @@ const Hero: FunctionComponent = () => {
                 <CustomerLogos />
             </div>
 
-            <div className="mx-auto tw-text-center max-w-600">
+            <div className="tw-mx-auto tw-text-center max-w-600">
                 <h2 className="tw-mb-2">
                     Over{' '}
                     <Link href="/case-studies" passHref={true}>

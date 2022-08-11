@@ -132,7 +132,7 @@ export const CoreFeatures: FunctionComponent = () => {
         <>
             <div className="tw-text-center mb-7">
                 <h2>How teams use Sourcegraph</h2>
-                <p className="mx-auto max-w-500">
+                <p className="tw-mx-auto max-w-500">
                     Sourcegraph's code intelligence platform is built with features that help you understand, fix, and
                     automate across your entire codebase.
                 </p>
@@ -193,7 +193,7 @@ export const CoreFeatures: FunctionComponent = () => {
 
                     <div className="px-5 py-0 mb-6 col-lg-6 mb-lg-0">
                         <video
-                            className={`shadow w-100 max-w-550 tw-block mx-auto rounded video-${index}`}
+                            className={`shadow w-100 max-w-550 tw-block tw-mx-auto rounded video-${index}`}
                             autoPlay={false}
                             muted={true}
                             loop={true}

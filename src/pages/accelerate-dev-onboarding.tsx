@@ -55,7 +55,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
             <div className="container py-7 max-w-650">
                 <h2>Ready to accelerate developer onboarding? Let's talk.</h2>
 
-                <div className="mx-auto mt-5 max-w-400">
+                <div className="tw-mx-auto mt-5 max-w-400">
                     <Link href="/demo">
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a

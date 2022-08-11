@@ -42,13 +42,13 @@ const ShiftLeftPage: FunctionComponent = () => (
             <div className="sg-bg-gradient-venus">
                 <div className="container py-6 py-lg-7 md:tw-text-center">
                     <h1>Shift Left: The good parts</h1>
-                    <h3 className="mt-4 mb-0 mx-md-auto max-w-750">5 practical ways to help your org shift left</h3>
+                    <h3 className="mt-4 mb-0 md:tw-mx-auto max-w-750">5 practical ways to help your org shift left</h3>
                 </div>
             </div>
         }
     >
         <ContentSection color="white">
-            <div className="mx-auto max-w-md-650">
+            <div className="tw-mx-auto max-w-md-650">
                 <p>
                     Everyone's telling us to "shift left" these days. This raises some questions. What's being shifted?
                     Who's doing the shifting? How far left should we be shifting it?
@@ -278,10 +278,10 @@ const ShiftLeftPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="sg-bg-gradient-venus">
-            <div className="mx-auto max-w-800 md:tw-text-center">
+            <div className="tw-mx-auto max-w-800 md:tw-text-center">
                 <h2>Ready to shift left?</h2>
 
-                <p className="my-5 max-w-650 mx-md-auto">
+                <p className="my-5 max-w-650 md:tw-mx-auto">
                     Shifting left means getting a head start on some of the most important aspects of the development
                     process. Both the general philosophy and the specific process changes of shift left can be boosted
                     by using tools that enable the developer to take full charge of shipping a new feature or bug fix.

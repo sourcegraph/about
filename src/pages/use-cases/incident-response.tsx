@@ -339,7 +339,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                         <img
                             src="/external-logos/cloudflare-logo.svg"
                             alt="Cloudflare logo"
-                            className="mx-auto mt-3 tw-flex max-w-150"
+                            className="tw-mx-auto mt-3 tw-flex max-w-150"
                         />
                     </div>
                 }
@@ -356,7 +356,7 @@ const IncidentResponsePage: FunctionComponent = () => (
 
         <ContentSection parentClassName="tw-bg-gray-100">
             <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
-                <div className="mx-auto mb-5 tw-flex tw-flex-col tw-text-center max-w-600">
+                <div className="tw-mx-auto mb-5 tw-flex tw-flex-col tw-text-center max-w-600">
                     <h2 className="">Get started with Sourcegraph</h2>
                     <p>
                         Respond to incidents with confidence and speed, and remediate issues at their root to ensure

@@ -108,7 +108,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
         <ContentSection parentClassName="sg-bg-gradient-venus">
             <div className="tw-max-w-screen-xl tw-mx-auto tw-text-center">
                 <h2 className="pt-2">Want to use Sourcegraph at your company?</h2>
-                <p className="pt-4 pb-1 mx-auto tw-max-w-[650px] tw-text-2xl">
+                <p className="pt-4 pb-1 tw-mx-auto tw-max-w-[650px] tw-text-2xl">
                     <span>
                         <Link href="/get-started/self-hosted" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -144,7 +144,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
         <BlogResources posts={blogResourceItems} />
 
         <div className="py-5 text-white tw-flex md:tw-flex-row tw-flex-col tw-items-center tw-justify-center bg-primary">
-            <h5 className="my-auto tw-text-center max-w-250 max-w-md-400 pr-md-4">
+            <h5 className="tw-my-auto tw-text-center max-w-250 max-w-md-400 pr-md-4">
                 Looking for our changelog? Look no further
             </h5>
             <a

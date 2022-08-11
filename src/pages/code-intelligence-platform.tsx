@@ -157,7 +157,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             <div className="sg-bg-gradient-saturn">
                 <div className="container py-6 py-lg-7 md:tw-text-center">
                     <h1>Key traits of a code intelligence platform</h1>
-                    <h3 className="py-4 mx-md-auto max-w-750">
+                    <h3 className="py-4 md:tw-mx-auto max-w-750">
                         Sourcegraph helps developers save time and move faster, regardless of how complex your codebase
                         is: any code host, any language, and any repository.
                     </h3>
@@ -301,10 +301,10 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection>
-            <div className="mx-auto max-w-800 md:tw-text-center">
+            <div className="tw-mx-auto max-w-800 md:tw-text-center">
                 <h2>Sourcegraph’s code intelligence platform is more than simply search.</h2>
 
-                <p className="my-5 max-w-md-450 mx-md-auto">
+                <p className="my-5 max-w-md-450 md:tw-mx-auto">
                     The platform drives velocity by helping development teams quickly get unblocked, save time resolving
                     issues, and gain insights to make better decisions.
                 </p>

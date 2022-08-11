@@ -52,7 +52,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                <img className="img-fluid mx-auto tw-block" src={heroImage} alt={customer} />
+                                <img className="img-fluid tw-mx-auto tw-block" src={heroImage} alt={customer} />
                             </a>
                         </div>
                         <div className="col-lg-9">
@@ -71,7 +71,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                             {quote.image && (
                                 <div className="col-12 col-lg-9">
                                     <img
-                                        className="rounded-circle img-fluid mx-auto tw-block mb-3"
+                                        className="rounded-circle img-fluid tw-mx-auto tw-block mb-3"
                                         src={quote.image}
                                         alt={quote.author}
                                     />

@@ -13,7 +13,7 @@ export const AuthorBio: React.FunctionComponent<{
         {authors.length > 1 ? (
             // Multi author design
             <div>
-                <div className="mx-auto tw-max-w-screen-sm tw-mx-auto">
+                <div className="tw-mx-auto tw-max-w-screen-sm">
                     <h5 className="mb-4">About {customer}</h5>
                     <p>{about}</p>
                 </div>
