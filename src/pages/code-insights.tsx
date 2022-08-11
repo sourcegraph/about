@@ -25,7 +25,7 @@ import {
     CustomCarousel,
     HubSpotForm,
     Layout,
-    ProductHero,
+    Hero,
     TabCarousel,
     TemplateCodeBlock,
     YouTube,
@@ -295,7 +295,7 @@ const CodeInsightsPage: FunctionComponent = () => (
         }}
         className="code-insights-page"
         hero={
-            <ProductHero
+            <Hero
                 variant="lightNebulousVenus2"
                 product="code insights"
                 title={'Track what really matters\nto you and your team.'}

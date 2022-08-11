@@ -1,6 +1,6 @@
-import { HubSpotFormProps } from '@components'
+import { HubSpotForm } from '@components'
 
-export interface ContactPageProps extends HubSpotFormProps {
+export interface ContactPageProps extends HubSpotForm {
     title: string
     description: string
 }

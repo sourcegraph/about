@@ -19,7 +19,12 @@ import {
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
-const CarouselItem: FunctionComponent<{ icon: MdiReactIconComponentType; header: string; subtitle: string; text: string }> = props => (
+const CarouselItem: FunctionComponent<{
+    icon: MdiReactIconComponentType
+    header: string
+    subtitle: string
+    text: string
+}> = props => (
     <>
         {/* eslint-disable-next-line react/forbid-dom-props */}
         <div className="bg-violet-1 rounded-circle text-center mb-3" style={{ maxWidth: '40px' }}>
@@ -209,8 +214,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                             mp4: '/animations/code-search',
                             webm: '/animations/code-search',
                         }}
-                        title="Sourcegraph Code Search"
-                        caption="Sourcegraph Code Search"
+                        title="Sourcegraph code search"
                         loop={true}
                     />
                 }
@@ -228,8 +232,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                             mp4: '/animations/batch-changes',
                             webm: '/animations/batch-changes',
                         }}
-                        title="Sourcegraph Code Search"
-                        caption="Sourcegraph Code Search"
+                        title="Sourcegraph batch changes"
                         loop={true}
                     />
                 }
@@ -287,8 +290,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                             mp4: '/animations/code-insights',
                             webm: '/animations/code-insights',
                         }}
-                        title="Sourcegraph Code Search"
-                        caption="Sourcegraph Code Search"
+                        title="Sourcegraph code insights"
                         loop={true}
                     />
                 }

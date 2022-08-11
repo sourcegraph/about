@@ -12,7 +12,7 @@ import {
     Video,
     TrySourcegraph,
     YouTube,
-    ProductHero,
+    Hero,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -26,7 +26,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                 'Automate large-scale changes with Sourcegraph Batch Changes. Keep your code up to date and pay down tech debt across all repositories and code hosts.',
         }}
         hero={
-            <ProductHero
+            <Hero
                 variant="lightNebulousAurora"
                 product="batch changes"
                 title={'Automate large-scale\ncode changes'}

@@ -160,9 +160,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                         >
                             {!autoAdvance && (
                                 <>
-                                    <h1 className="font-weight-bold mb-lg-4 display-2">
-                                        {item.title}
-                                    </h1>
+                                    <h1 className="font-weight-bold mb-lg-4 display-2">{item.title}</h1>
                                 </>
                             )}
                             <div>{item.text}</div>
