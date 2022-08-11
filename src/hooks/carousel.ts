@@ -9,10 +9,9 @@ interface CarouselItems {
 }
 
 interface CarouselItem {
-    buttonLabel: string
-    headerClass: string
+    title: string
+    subtitle?: string
     text: string | ReactNode
-    itemClass: string
 }
 
 interface CarouselHookObject {

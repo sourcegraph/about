@@ -44,6 +44,6 @@ export const Video: FunctionComponent<Video> = ({
             <source type="video/webm" src={`${hosts[host]}${source.webm}.webm`} data-cookieconsent="ignore" />
             <source type="video/mp4" src={`${hosts[host]}${source.mp4}.mp4`} data-cookieconsent="ignore" />
         </video>
-        {caption && <figcaption>{caption}</figcaption>}
+        {caption && <figcaption className="mt-3">{caption}</figcaption>}
     </figure>
 )

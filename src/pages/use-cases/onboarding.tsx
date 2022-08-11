@@ -28,7 +28,7 @@ const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ 
 
 const items = [
     {
-        buttonLabel: 'Make knowledge self-serve',
+        title: 'Make knowledge self-serve',
         text: (
             <CarouselItem
                 header="Make knowledge self-serve"
@@ -41,11 +41,9 @@ const items = [
                 }
             />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Enable developers to learn by example',
+        title: 'Enable developers to learn by example',
         text: (
             <CarouselItem
                 header="Enable developers to learn by example"
@@ -69,10 +67,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Get code history and ownership at a glance',
+        title: 'Get code history and ownership at a glance',
         text: (
             <CarouselItem
                 header="Get code history and ownership at a glance"
@@ -85,10 +82,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Visualize contributions and chart team progress',
+        title: 'Visualize contributions and chart team progress',
         text: (
             <CarouselItem
                 header="Visualize contributions and chart team progress"
@@ -111,10 +107,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Document and share actionable code snippets',
+        title: 'Document and share actionable code snippets',
         text: (
             <CarouselItem
                 header="Document and share actionable code snippets"
@@ -136,7 +131,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
 ]
 
@@ -258,7 +252,7 @@ const UseCasePage: FunctionComponent = () => (
             </>
         }
     >
-        <ContentSection className="my-lg-5">
+        <ContentSection className="my-7">
             <ThreeUpText title="Make your codebase accessible for your entire team" items={threeUpTextItems} />
         </ContentSection>
 
@@ -306,7 +300,7 @@ const UseCasePage: FunctionComponent = () => (
         </div>
 
         <ContentSection className="py-7">
-            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
+            <CustomCarousel items={items} title="How Sourcegraph helps" />
         </ContentSection>
 
         <div className="bg-gradient-saturn-saturated py-8">
@@ -376,7 +370,7 @@ const UseCasePage: FunctionComponent = () => (
             </div>
         </div>
 
-        <ContentSection className="py-lg-7 py-5">
+        <ContentSection className="py-7">
             <div className="row d-flex">
                 <div className="col-lg-6">
                     <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>

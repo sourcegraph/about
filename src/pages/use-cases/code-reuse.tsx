@@ -28,7 +28,7 @@ const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ 
 
 const items = [
     {
-        buttonLabel: 'Find code to reuse',
+        title: 'Find code to reuse',
         text: (
             <CarouselItem
                 header="Find code to reuse"
@@ -51,11 +51,9 @@ const items = [
                 }
             />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Improve code stability and trustworthiness',
+        title: 'Improve code stability and trustworthiness',
         text: (
             <CarouselItem
                 header="Improve code stability and trustworthiness"
@@ -67,10 +65,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Automate PRs to make code consistent',
+        title: 'Automate PRs to make code consistent',
         text: (
             <CarouselItem
                 header="Automate PRs to make code consistent"
@@ -94,10 +91,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Alert for deprecated code use',
+        title: 'Alert for deprecated code use',
         text: (
             <CarouselItem
                 header="Alert for deprecated code use"
@@ -119,10 +115,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Track your code reuse efforts ',
+        title: 'Track your code reuse efforts ',
         text: (
             <CarouselItem
                 header="Track your code reuse efforts "
@@ -146,7 +141,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
 ]
 
@@ -318,7 +312,7 @@ const CodeReusePage: FunctionComponent = () => (
         </div>
 
         <ContentSection className="py-7">
-            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
+            <CustomCarousel items={items} title="How Sourcegraph helps" />
         </ContentSection>
 
         <div className="bg-light-gray-3 py-7">
@@ -365,7 +359,7 @@ const CodeReusePage: FunctionComponent = () => (
             </div>
         </div>
 
-        <ContentSection className="py-lg-7 py-5">
+        <ContentSection className="py-7">
             <div className="row d-flex">
                 <div className="col-lg-6">
                     <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>

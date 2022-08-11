@@ -35,37 +35,30 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const items = [
     {
-        buttonLabel: 'Track migrations, adoption, and deprecations',
+        title: 'Track migrations, adoption, and deprecations',
         text: (
             <CodeInsightExample type={CodeInsightExampleType.Search} data={SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA} />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Detect and track versions of languages or packages',
+        title: 'Detect and track versions of languages or packages',
         text: <CodeInsightExample type={CodeInsightExampleType.Capture} data={ALPINE_VERSIONS_INSIGHT} />,
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Ensure removal of security vulnerabilities',
+        title: 'Ensure removal of security vulnerabilities',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LOG_4_J_INCIDENT_INSIGHT} />,
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Understand code by team',
+        title: 'Understand code by team',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={DEPRECATED_API_USAGE_BY_TEAM} />,
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Track code smells and health',
+        title: 'Track code smells and health',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LINTER_OVERRIDES} />,
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Visualize configurations and services',
+        title: 'Visualize configurations and services',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={REPOS_WITH_CI_SYSTEM} />,
-        itemClass: 'd-none',
     },
 ]
 
@@ -414,12 +407,7 @@ const CodeInsightsPage: FunctionComponent = () => (
 
         <div className="bg-light-gray-3 py-7">
             <ContentSection>
-                <CustomCarousel
-                    items={items}
-                    autoAdvance={true}
-                    hasImages={true}
-                    title="How engineering teams use Code Insights"
-                />
+                <CustomCarousel items={items} hasImages={true} title="How engineering teams use Code Insights" />
             </ContentSection>
         </div>
 
@@ -483,28 +471,28 @@ const CodeInsightsPage: FunctionComponent = () => (
         </div>
 
         {/* Use Cases Carousel */}
-        <div className="bg-gradient-venus-radial py-4 d-block d-lg-none d-md-none">
+        <div className="bg-gradient-venus-radial d-block d-lg-none d-md-none">
             <ContentSection className="py-4 py-md-7">
                 <h2 className="mb-5 display-3 font-weight-bold text-center">Popular Code Insights templates</h2>
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
                     <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
                         <div className="w-100 mt-5 justify-content-center">
-                            <TabCarousel items={templates.migrations} autoAdvance={true} />
+                            <TabCarousel items={templates.migrations} />
                         </div>
                     </Tab>
                     <Tab eventKey="version-tracking" title="Version Tracking" tabClassName="tab-header">
                         <div className="w-100 mt-5 justify-content-center">
-                            <TabCarousel items={templates.versionTracking} autoAdvance={true} />
+                            <TabCarousel items={templates.versionTracking} />
                         </div>
                     </Tab>
                     <Tab eventKey="security" title="Security" tabClassName="tab-header">
                         <div className="w-100 mt-5 justify-content-center">
-                            <TabCarousel items={templates.security} autoAdvance={true} />
+                            <TabCarousel items={templates.security} />
                         </div>
                     </Tab>
                     <Tab eventKey="code-health" title="Code Health" tabClassName="tab-header">
                         <div className="w-100 mt-5 justify-content-center">
-                            <TabCarousel items={templates.codeHealth} autoAdvance={true} />
+                            <TabCarousel items={templates.codeHealth} />
                         </div>
                     </Tab>
                 </Tabs>
@@ -525,7 +513,7 @@ const CodeInsightsPage: FunctionComponent = () => (
 
         <div className="bg-light-gray-3">
             <ContentSection>
-                <div className="row d-flex flex-column justify-content-start py-lg-8 py-7">
+                <div className="row d-flex flex-column justify-content-start py-7">
                     <div className="col-lg-8 mb-5 d-flex flex-column justify-content-start">
                         <h2 className="display-3 font-weight-bold">Get started with Code Insights</h2>
                         <p>
@@ -551,7 +539,7 @@ const CodeInsightsPage: FunctionComponent = () => (
             </ContentSection>
         </div>
 
-        <ContentSection className="py-lg-7 py-5">
+        <ContentSection className="py-7">
             <div className="row d-flex">
                 <div className="col-lg-6">
                     <h2 className="mb-5 display-3 font-weight-bold">Learn more</h2>

@@ -28,7 +28,7 @@ const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ 
 
 const items = [
     {
-        buttonLabel: 'Respond to incidents faster',
+        title: 'Respond to incidents faster',
         text: (
             <CarouselItem
                 header="Response to incidents faster"
@@ -63,11 +63,9 @@ const items = [
                 }
             />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Limit the impact of incidents',
+        title: 'Limit the impact of incidents',
         text: (
             <CarouselItem
                 header="Limit the impact of incidents"
@@ -92,10 +90,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Track remediation progress',
+        title: 'Track remediation progress',
         text: (
             <CarouselItem
                 header="Track remediation progress"
@@ -119,10 +116,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Monitor for unsafe code',
+        title: 'Monitor for unsafe code',
         text: (
             <CarouselItem
                 header="Monitor for unsafe code"
@@ -144,7 +140,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
 ]
 
@@ -357,7 +352,7 @@ const IncidentResponsePage: FunctionComponent = () => (
         </div>
 
         <ContentSection className="py-7">
-            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
+            <CustomCarousel items={items} title="How Sourcegraph helps" />
         </ContentSection>
 
         <div className="bg-gradient-saturn-saturated">
@@ -410,7 +405,7 @@ const IncidentResponsePage: FunctionComponent = () => (
             </div>
         </div>
 
-        <ContentSection className="py-lg-7 py-5">
+        <ContentSection className="py-7">
             <div className="row d-flex">
                 <div className="col-lg-6">
                     <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>

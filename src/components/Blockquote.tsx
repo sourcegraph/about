@@ -73,16 +73,23 @@ export const Blockquote: FunctionComponent<{
                     <Link href={logo.href} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a>
-                            <img src={logo.src} className="mt-3" width="110px" alt={logo.alt} />
+                            <img
+                                src={logo.src}
+                                className="mt-3 max-w-150"
+                                // eslint-disable-next-line react/forbid-dom-props
+                                style={{ height: '4.5rem' }}
+                                alt={logo.alt}
+                            />
                         </a>
                     </Link>
                 ) : (
-                    <img src={logo.src} className="mt-3" width="110px" alt={logo.alt} />
+                    // eslint-disable-next-line react/forbid-dom-props
+                    <img src={logo.src} className="mt-3 max-w-150" style={{ height: '4.5rem' }} alt={logo.alt} />
                 ))}
 
             <br />
 
-            {link &&
+            {link?.href &&
                 (link?.href.includes('http') ? (
                     <a
                         className={classNames('mt-3 d-flex', !border && 'justify-content-center')}
