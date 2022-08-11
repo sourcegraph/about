@@ -160,7 +160,6 @@ export const BatchChangesPage: FunctionComponent = () => (
                         }}
                         loop={true}
                         title="Batch Changes: Creation to merge"
-                        caption="Automatically track changeset lifecycle status"
                     />
                 }
             />

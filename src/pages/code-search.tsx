@@ -73,7 +73,6 @@ export const CodeSearchPage: FunctionComponent = () => (
                             webm: '/animations/code-search',
                         }}
                         title="Sourcegraph Code Search"
-                        caption="Sourcegraph Code Search"
                         loop={true}
                     />
                 }
@@ -173,7 +172,6 @@ export const CodeSearchPage: FunctionComponent = () => (
                             webm: '/animations/code-intel',
                         }}
                         title="Sourcegraph Code Intelligence"
-                        caption="Sourcegraph Code Intelligence"
                         loop={true}
                     />
                 }
@@ -192,7 +190,6 @@ export const CodeSearchPage: FunctionComponent = () => (
                             webm: '/animations/notebooks',
                         }}
                         title="Sourcegraph Notebooks"
-                        caption="Sourcegraph Notebooks"
                         loop={true}
                     />
                 }

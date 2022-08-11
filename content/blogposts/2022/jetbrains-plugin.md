@@ -49,7 +49,6 @@ Search contexts from your Sourcegraph account will automatically be accessible w
   loop={true}
   title="Searching code in JetBrains IDE"
   caption="An example of searching code with the JetBrains IDE"
-  showCaption={true}
 />
 
 ##### Sharing links
@@ -65,13 +64,12 @@ You can share the generated link with teammates, who will be taken to the exact 
   loop={true}
   title="Copying a Sourcegraph link within the IDE"
   caption="An example of copying a shareable Sourcegraph link within the IDE"
-  showCaption={true}
 />
 
 ## Get started with the JetBrains plugin
 
 You can experience all the benefits of Sourcegraph in your IDE by [downloading the new JetBrains plugin today](https://plugins.jetbrains.com/plugin/9682-sourcegraph).
 
-If you’re not a JetBrains user, you can check out our recently released [VS Code extension](https://marketplace.visualstudio.com/items?itemName=sourcegraph.sourcegraph) or [request support for your favorite IDE](https://github.com/sourcegraph/sourcegraph/issues/new?title=New+IDE+extension+request&labels=team/integrations,editor-extension).
+If you’re interested in Sourcegraph for your IDE but are not a JetBrains user, you can also [request support for your favorite IDE](https://github.com/sourcegraph/sourcegraph/issues/new?title=New+IDE+extension+request&labels=team/integrations,editor-extension).
 
 If you’re not already a Sourcegraph customer, you can try it out for free with a [local installation](https://about.sourcegraph.com/get-started/self-hosted), or [get in touch to schedule a demo](https://about.sourcegraph.com/demo). 

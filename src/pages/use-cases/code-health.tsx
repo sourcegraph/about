@@ -22,14 +22,14 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2 className="mb-5 mb-lg-0">{header}</h2>
+        <h3 className="tw-mb-8 lg:tw-mb-0">{header}</h3>
         {text}
     </>
 )
 
 const items = [
     {
-        buttonLabel: 'Find old versions easily',
+        title: 'Find old versions easily',
         text: (
             <CarouselItem
                 header="Find old versions easily"
@@ -53,11 +53,9 @@ const items = [
                 }
             />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Automate version updates and communications',
+        title: 'Automate version updates and communications',
         text: (
             <CarouselItem
                 header="Automate version updates and communications"
@@ -81,10 +79,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Get everyone on the same page with living docs',
+        title: 'Get everyone on the same page with living docs',
         text: (
             <CarouselItem
                 header="Get everyone on the same page with living docs"
@@ -105,10 +102,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Monitor for deprecated code',
+        title: 'Monitor for deprecated code',
         text: (
             <CarouselItem
                 header="Monitor for deprecated code"
@@ -130,10 +126,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Develop a data-driven relationship with your code',
+        title: 'Develop a data-driven relationship with your code',
         text: (
             <CarouselItem
                 header="Develop a data-driven relationship with your code"
@@ -157,7 +152,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
 ]
 
@@ -234,15 +228,15 @@ const blogResourceItems = [
         href: '/blog/migrating-to-css-modules-with-codemods-and-code-insights',
     },
     {
-        title: 'How we added backend integration testing to our CI pipeline',
+        title: '5 key traits of a code intelligence platform',
         description:
-            "Here's the story and the lessons learned from our work to remove all existing backend-related end-to-end tests and reliably run their corresponding unit and integration tests as part of our CI pipeline on all branches.",
-        type: 'Blog post',
+            'Sourcegraph is more than search. Learn how the code intelligence platform helps development teams quickly get unblocked, resolve issues faster, and gain insights to make better decisions.',
+        type: 'Guide',
         img: {
-            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/backend-integration-testing/backend-integration-testing.png',
-            alt: 'Backend integration testing blog thumbnail',
+            src: '/blog/thumbnails/dark-multi-grid.jpg',
+            alt: 'Grid background with abstract blue and pink hues',
         },
-        href: '/blog/integration-testing',
+        href: '/guides/key-traits-of-a-code-intelligence-platform.pdf',
     },
 ]
 
@@ -351,7 +345,7 @@ const UseCasePage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection>
-            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
+            <CustomCarousel items={items} title="How Sourcegraph helps" />
         </ContentSection>
 
         <ContentSection parentClassName="sg-bg-gradient-saturn">

@@ -4,9 +4,8 @@ import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import CircleSmallIcon from 'mdi-react/CircleSmallIcon'
 
+import { Template, TemplateCodeBlock } from '@components'
 import { useCarousel } from '@hooks'
-
-import { TemplateCodeBlock } from '../TemplateCodeBlock'
 
 interface TabCarouselProps {
     items: Template[]
@@ -16,12 +15,6 @@ interface TabCarouselProps {
     autoAdvance?: boolean
 }
 
-interface Template {
-    header: string
-    description: string
-    queries: ReactNode[]
-}
-
 export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAdvance }) => {
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as Template[]
@@ -29,10 +22,10 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
     return (
         <div className="tab-carousel">
             <div>
-                {carouselItems.map(item => (
+                {carouselItems.map((item, index) => (
                     <div
                         key={item.header}
-                        className={item === carouselHook.carouselItems.currentItem ? 'd-block h-350' : 'd-none'}
+                        className={index === carouselHook.carouselItems.currentItemIndex ? 'd-block h-400' : 'd-none'}
                     >
                         <TemplateCodeBlock template={item} />
                     </div>
@@ -46,9 +39,9 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
                     color={carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                 />
                 <div className="tw-flex">
-                    {carouselItems.map(item => (
+                    {carouselItems.map((item, index) => (
                         <CircleSmallIcon
-                            color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
+                            color={index === carouselHook.carouselItems.currentItemIndex ? '#000' : '#D0D0D0'}
                             key={item.header}
                         />
                     ))}

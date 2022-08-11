@@ -79,7 +79,9 @@ export const Blockquote: FunctionComponent<{
                         <a>
                             <img
                                 src={logo.src}
-                                className={classNames('tw-mt-4', { 'tw-mx-auto': !border })}
+                                className={classNames('tw-mt-4 tw-max-w-[150px tw-h-[80px]]', {
+                                    'tw-mx-auto': !border,
+                                })}
                                 width="110px"
                                 alt={logo.alt}
                             />
@@ -88,7 +90,7 @@ export const Blockquote: FunctionComponent<{
                 ) : (
                     <img
                         src={logo.src}
-                        className={classNames('tw-mt-4', { 'tw-mx-auto': !border })}
+                        className={classNames('tw-mt-4 tw-max-w-[150px tw-h-[80px]]', { 'tw-mx-auto': !border })}
                         width="110px"
                         alt={logo.alt}
                     />
@@ -96,7 +98,7 @@ export const Blockquote: FunctionComponent<{
 
             <br />
 
-            {link &&
+            {link?.href &&
                 (link?.href.includes('http') ? (
                     <a
                         className={classNames('tw-mt-4 tw-flex', !border && 'tw-justify-center')}

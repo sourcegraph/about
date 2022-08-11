@@ -182,11 +182,11 @@ The `id` value is found at the end of the URL for any YouTube video.
 
 ### Video
 
-The required properties for the `Video` component are `source`, `loop`, `caption`, and `title`. 
+The required properties for the `Video` component are `source`, `loop`, and `title`. 
 
 Since the component supports both `.mp4` and `.webm` file formats, you'll need to upload the two file formats of the video to our Google Cloud [assets bucket](https://console.cloud.google.com/storage/browser/sourcegraph-assets/blog) under an appropriate sub directory. We recommend both files to have the same filename. Then, add the file path starting after `/sourcegraph-assets/` from the Public URL of these files to the `source` property under `mp4` and `webm` respectively, without the file extensions.
 
-You can choose to repeat a video by including the `loop` property, optionally auto play the video by including the `autoPlay` property, or optionally display the caption using the `showCaption` property.
+You can choose to repeat a video by including the `loop` property, optionally auto play the video by including the `autoPlay` property, or optionally display a caption under the video by passing a filled in `caption` property.
 
 This example is based on both the `mp4` and `webm` file formats living at the following URLs with the same filenames:
 - `https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/01-code-reuse.mp4`
@@ -198,9 +198,8 @@ This example is based on both the `mp4` and `webm` file formats living at the fo
     mp4: 'blog/shift-left/01-code-reuse'
   }}
   loop={true}
-  title="Code reuse"
-  caption="An example of code search with Sourcegraph"
-  showCaption={true}
+  title="Code reuse sample, title read by screen readers (make these short)"
+  caption="An example of code search with Sourcegraph, caption underneath video to further describe (can be the same or different from the title)"
 />
 
 

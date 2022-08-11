@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactNode } from 'react'
+import { FunctionComponent, ReactNode, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
 import ArrowDownIcon from 'mdi-react/ArrowDownIcon'
@@ -7,122 +7,182 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import ArrowUpIcon from 'mdi-react/ArrowUpIcon'
 import CircleSmallIcon from 'mdi-react/CircleSmallIcon'
 
-import { useCarousel } from '@hooks'
+import { breakpoints } from '@data'
+import { useCarousel, useWindowWidth } from '@hooks'
 
 interface CarouselProps {
     items: CarouselItem[]
     title?: string
-    currentItem?: CarouselItem
-    previousItem?: CarouselItem
-    currentItemIndex?: number
     autoAdvance?: boolean
     hasImages?: boolean
+    animateTransition?: boolean
 }
 
 interface CarouselItem {
-    buttonLabel: string
-    headerClass?: string
+    title: string
+    subtitle?: string
     text: ReactNode
-    itemClass: string
 }
 
-export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
-    const { items, autoAdvance, title } = props
+export const CustomCarousel: FunctionComponent<CarouselProps> = ({
+    items,
+    title,
+    autoAdvance = true,
+    hasImages,
+    animateTransition = false,
+}) => {
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
+    const [currentItem, setCurrentItem] = useState(carouselItems[0])
+
+    useEffect(() => {
+        setCurrentItem(carouselHook.carouselItems.currentItem as CarouselItem)
+    }, [carouselHook.carouselItems.currentItem])
+
+    const windowWidth = useWindowWidth()
+    const isMdOrDown = windowWidth < breakpoints.lg
 
     return (
         <div>
-            {title && (
-                <h2 className={classNames('text-md-center mt-lg-3', props.hasImages ? 'mb-6' : 'mb-4')}>{title}</h2>
-            )}
+            {title && <h2 className="tw-mb-3xl tw-text-center mx-md-auto">{title}</h2>}
+
             <div
-                className={`d-flex flex-wrap align-items-center tw-h-auto ${
-                    autoAdvance ? 'justify-content-between' : 'flex-lg-row flex-column py-8'
-                }`}
+                className={classNames(
+                    'd-flex flex-wrap align-items-center',
+                    autoAdvance ? 'justify-content-center' : 'flex-lg-row flex-column py-8'
+                )}
             >
-                {props.hasImages && (
+                {/* Mobile Image Caption (Button Label) */}
+                {hasImages && (
                     <div className="mb-5 d-block d-lg-none mb-lg-0 mx-md-auto">
                         {carouselItems.map((item, index) => (
-                            <h2
+                            <h3
                                 className={classNames(
-                                    'd-none',
+                                    'd-none tw-text-center',
                                     item === carouselHook.carouselItems.currentItem && 'd-block'
                                 )}
-                                key={item.buttonLabel}
+                                key={item.title}
                                 onClick={() => carouselHook.moveCarousel(index)}
                                 onKeyDown={() => carouselHook.moveCarousel(index)}
                                 role="presentation"
                             >
-                                {item.buttonLabel}
-                            </h2>
+                                {item.title}
+                            </h3>
                         ))}
                     </div>
                 )}
+
+                {/* Web Indicators */}
                 <div
                     className={
                         carouselHook.autoAdvance
-                            ? 'd-lg-flex flex-column d-none col-md-2 m-0 px-0 col-lg-5'
-                            : 'd-lg-flex d-none ml-lg-7 col-lg-4 ml-md-5'
+                            ? 'd-lg-flex flex-column justify-content-between d-none col-md-2 m-0 px-0 col-lg-5'
+                            : 'd-lg-flex d-none ml-lg-7 col-lg-4 h-550'
                     }
                 >
                     <ArrowUpIcon
-                        className="mb-4 ml-lg-5 tw-cursor-pointer"
+                        className="mb-4 tw-cursor-pointer"
                         onClick={() => carouselHook.moveCarousel('decrement')}
+                        onKeyDown={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
+                        role="button"
+                        tabIndex={0}
                     />
-                    <div className="mb-0 ml-lg-5">
-                        {carouselItems.map((item, index) => (
-                            <p
-                                className={classNames(
-                                    'custom-carousel-item tw-cursor-pointer  py-2',
-                                    item === carouselHook.carouselItems.currentItem && 'font-weight-bold'
-                                )}
-                                key={item.buttonLabel}
-                                onClick={() => carouselHook.moveCarousel(index)}
-                                onKeyDown={() => carouselHook.moveCarousel(index)}
-                                role="presentation"
-                            >
-                                {item.buttonLabel}
-                            </p>
-                        ))}
-                    </div>
-                    <ArrowDownIcon
-                        className="mt-4 ml-lg-5 tw-cursor-pointer"
-                        onClick={() => carouselHook.moveCarousel()}
-                        color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
-                    />
-                </div>
-                <div
-                    className={`${
-                        props.hasImages ? 'h-500' : 'h-300'
-                    } col-lg-6 col-md-10 col-sm-12 mt-4 px-0 m-auto d-flex align-items-center justify-content-lg-start justify-content-center`}
-                >
                     {carouselItems.map((item, index) => (
                         <div
-                            key={item.buttonLabel}
-                            className={item === carouselHook.carouselItems.currentItem ? 'd-block' : 'd-none'}
-                            onMouseOver={() => carouselHook.moveCarousel(index)}
-                            onFocus={() => carouselHook.moveCarousel(index)}
+                            className={classNames(
+                                'custom-carousel-item tw-cursor-pointer display-5 max-w-375 py-2 tw-mb-0',
+                                animateTransition
+                                    ? item === carouselHook.carouselItems.currentItem
+                                        ? 'tw-transition-all tw-duration-500 tw-ease-in-out tw-text-black sg-border-gradient-saturn tw-border-2 tw-border-solid tw-px-2'
+                                        : 'tw-text-gray-300'
+                                    : '',
+                                index !== carouselItems.length - 1 ? 'mb-2' : 'mb-0'
+                            )}
+                            key={item.title}
+                            onClick={() => carouselHook.moveCarousel(index)}
+                            onKeyDown={() => carouselHook.moveCarousel(index)}
+                            onMouseEnter={() => carouselHook.moveCarousel(index)}
+                            role="button"
+                            tabIndex={0}
                         >
-                            {!autoAdvance && <h1 className="mb-lg-4">{item.buttonLabel}</h1>}
+                            <h5
+                                className={classNames(
+                                    'mb-1',
+                                    animateTransition ? 'tw-text-lg' : 'font-weight-normal',
+                                    !animateTransition &&
+                                        item === carouselHook.carouselItems.currentItem &&
+                                        'font-weight-bold'
+                                )}
+                            >
+                                {item.title}
+                            </h5>
+                            {item.subtitle && <p className="mb-0">{item.subtitle}</p>}
+                        </div>
+                    ))}
+                    <ArrowDownIcon
+                        className="mt-4 tw-cursor-pointer"
+                        onClick={() => carouselHook.moveCarousel()}
+                        onKeyDown={() => carouselHook.moveCarousel()}
+                        color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
+                        role="button"
+                        tabIndex={0}
+                    />
+                </div>
+
+                {/* Carousel Item */}
+                <div
+                    className={classNames(
+                        'position-relative col-lg-5 col-md-10 col-sm-12 p-4 py-5 d-flex align-items-center justify-content-lg-start justify-content-center',
+                        hasImages
+                            ? 'tw-min-h-[500px]'
+                            : animateTransition && !isMdOrDown
+                            ? 'tw-bg-gray-50 h-550'
+                            : 'tw-min-h-[300px]'
+                    )}
+                >
+                    {carouselItems.map(item => (
+                        <div
+                            key={item.title}
+                            className={classNames(
+                                animateTransition && 'position-absolute',
+                                animateTransition
+                                    ? item === carouselHook.carouselItems.currentItem
+                                        ? 'tw-transition-all tw-duration-1000 tw-ease-in-out tw-opacity-100 w-xl-450 w-lg-350'
+                                        : 'tw-opacity-0'
+                                    : '',
+                                !animateTransition
+                                    ? item === carouselHook.carouselItems.currentItem
+                                        ? 'd-block'
+                                        : 'd-none'
+                                    : ''
+                            )}
+                        >
+                            {!autoAdvance && (
+                                <>
+                                    <h1 className="mb-lg-4">{item.title}</h1>
+                                </>
+                            )}
                             <div>{item.text}</div>
                         </div>
                     ))}
                 </div>
 
-                <div className="mx-auto my-4 d-lg-none d-flex">
+                {/* Mobile Indicators */}
+                <div className="mx-auto my-4 d-lg-none d-flex align-items-center">
                     <ArrowLeftIcon
                         className="mr-4 tw-cursor-pointer"
                         onClick={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
                     <div className="tw-flex">
-                        {carouselItems.map(item => (
+                        {carouselItems.map((item, index) => (
                             <CircleSmallIcon
                                 color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
-                                key={item.buttonLabel}
-                                className="tw-cursor-pointer"
+                                onClick={() => carouselHook.moveCarousel(index)}
+                                key={item.title}
+                                size={50}
+                                className="cursor-pointer"
                             />
                         ))}
                     </div>

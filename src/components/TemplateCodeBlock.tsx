@@ -4,7 +4,7 @@ interface Props {
     template: Template
 }
 
-interface Template {
+export interface Template {
     header: string
     description: string
     queries: ReactNode[]

@@ -21,14 +21,14 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2 className="mb-5 mb-lg-0">{header}</h2>
+        <h3 className="tw-mb-8 lg:tw-mb-0">{header}</h3>
         {text}
     </>
 )
 
 const items = [
     {
-        buttonLabel: 'Find code to reuse',
+        title: 'Find code to reuse',
         text: (
             <CarouselItem
                 header="Find code to reuse"
@@ -51,11 +51,9 @@ const items = [
                 }
             />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Improve code stability and trustworthiness',
+        title: 'Improve code stability and trustworthiness',
         text: (
             <CarouselItem
                 header="Improve code stability and trustworthiness"
@@ -67,10 +65,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Automate PRs to make code consistent',
+        title: 'Automate PRs to make code consistent',
         text: (
             <CarouselItem
                 header="Automate PRs to make code consistent"
@@ -94,10 +91,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Alert for deprecated code use',
+        title: 'Alert for deprecated code use',
         text: (
             <CarouselItem
                 header="Alert for deprecated code use"
@@ -119,10 +115,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Track your code reuse efforts ',
+        title: 'Track your code reuse efforts ',
         text: (
             <CarouselItem
                 header="Track your code reuse efforts "
@@ -146,7 +141,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
 ]
 
@@ -193,6 +187,17 @@ const blogResourceItems = [
             alt: 'Ways to use Sourcegraph Extension for VSCode blog thumbnail',
         },
         href: '/blog/ways-to-use-sourcegraph-extension-for-vs-code',
+    },
+    {
+        title: '5 key traits of a code intelligence platform',
+        description:
+            'Sourcegraph is more than search. Learn how the code intelligence platform helps development teams quickly get unblocked, resolve issues faster, and gain insights to make better decisions.',
+        type: 'Guide',
+        img: {
+            src: '/blog/thumbnails/dark-multi-grid.jpg',
+            alt: 'Grid background with abstract blue and pink hues',
+        },
+        href: '/guides/key-traits-of-a-code-intelligence-platform.pdf',
     },
 ]
 
@@ -300,7 +305,7 @@ const CodeReusePage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection>
-            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
+            <CustomCarousel items={items} title="How Sourcegraph helps" />
         </ContentSection>
 
         <ContentSection parentClassName="tw-bg-gray-100">

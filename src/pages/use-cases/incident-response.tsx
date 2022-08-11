@@ -21,14 +21,14 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2 className="mb-5 mb-lg-0">{header}</h2>
+        <h3 className="tw-mb-8 lg:tw-mb-0">{header}</h3>
         {text}
     </>
 )
 
 const items = [
     {
-        buttonLabel: 'Respond to incidents faster',
+        title: 'Respond to incidents faster',
         text: (
             <CarouselItem
                 header="Response to incidents faster"
@@ -63,11 +63,9 @@ const items = [
                 }
             />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Limit the impact of incidents',
+        title: 'Limit the impact of incidents',
         text: (
             <CarouselItem
                 header="Limit the impact of incidents"
@@ -92,10 +90,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Track remediation progress',
+        title: 'Track remediation progress',
         text: (
             <CarouselItem
                 header="Track remediation progress"
@@ -119,10 +116,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Monitor for unsafe code',
+        title: 'Monitor for unsafe code',
         text: (
             <CarouselItem
                 header="Monitor for unsafe code"
@@ -144,7 +140,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
 ]
 

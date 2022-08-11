@@ -65,7 +65,6 @@ This is especially useful for engineers joining new teams or onboarding to a cod
 
 <Video
   title="Faster code insights"
-  caption="An example of code insights loading faster"
   source={{
     mp4: "blog/3.42/3.42InsightsSpeedImprovements",
     webm: "blog/3.42/3.42InsightsSpeedImprovements"

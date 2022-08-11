@@ -35,37 +35,30 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const items = [
     {
-        buttonLabel: 'Track migrations, adoption, and deprecations',
+        title: 'Track migrations, adoption, and deprecations',
         text: (
             <CodeInsightExample type={CodeInsightExampleType.Search} data={SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA} />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Detect and track versions of languages or packages',
+        title: 'Detect and track versions of languages or packages',
         text: <CodeInsightExample type={CodeInsightExampleType.Capture} data={ALPINE_VERSIONS_INSIGHT} />,
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Ensure removal of security vulnerabilities',
+        title: 'Ensure removal of security vulnerabilities',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LOG_4_J_INCIDENT_INSIGHT} />,
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Understand code by team',
+        title: 'Understand code by team',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={DEPRECATED_API_USAGE_BY_TEAM} />,
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Track code smells and health',
+        title: 'Track code smells and health',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LINTER_OVERRIDES} />,
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Visualize configurations and services',
+        title: 'Visualize configurations and services',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={REPOS_WITH_CI_SYSTEM} />,
-        itemClass: 'd-none',
     },
 ]
 
@@ -288,14 +281,15 @@ const blogResourceItems = [
         href: '/blog/migrating-to-css-modules-with-codemods-and-code-insights',
     },
     {
-        title: 'Announcing Code Insights: analytics for engineering teams to understand and visualize their codebase over time',
-        description: 'Learn about why we built Code Insights from our CEO.',
-        type: 'Blog post',
+        title: '5 key traits of a code intelligence platform',
+        description:
+            'Sourcegraph is more than search. Learn how the code intelligence platform helps development teams quickly get unblocked, resolve issues faster, and gain insights to make better decisions.',
+        type: 'Guide',
         img: {
-            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/announcement-header.png',
-            alt: 'Announcing code insights blog thumbnail',
+            src: '/blog/thumbnails/dark-multi-grid.jpg',
+            alt: 'Grid background with abstract blue and pink hues',
         },
-        href: '/blog/announcing-code-insights',
+        href: '/guides/key-traits-of-a-code-intelligence-platform.pdf',
     },
     {
         title: 'Dive into documentation',
@@ -355,7 +349,6 @@ const CodeInsightsPage: FunctionComponent = () => (
                             webm: 'code_insights/code-insights-720',
                         }}
                         title="Code Insights"
-                        caption="Code Insights"
                         loop={true}
                     />
                 }
@@ -431,12 +424,7 @@ const CodeInsightsPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="tw-bg-gray-100">
-            <CustomCarousel
-                items={items}
-                autoAdvance={true}
-                hasImages={true}
-                title="How engineering teams use Code Insights"
-            />
+            <CustomCarousel items={items} hasImages={true} title="How engineering teams use Code Insights" />
         </ContentSection>
 
         <ContentSection>
@@ -547,7 +535,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     },
                 ]}
             />
-            <div className="w-100 d-flex justify-content-center">
+            <div className="tw-text-center">
                 <a
                     className="px-0 py-4 col-7"
                     href="https://docs.sourcegraph.com/code_insights"

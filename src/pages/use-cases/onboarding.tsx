@@ -21,14 +21,14 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2 className="mb-5 mb-lg-0">{header}</h2>
+        <h3 className="tw-mb-8 lg:tw-mb-0">{header}</h3>
         {text}
     </>
 )
 
 const items = [
     {
-        buttonLabel: 'Make knowledge self-serve',
+        title: 'Make knowledge self-serve',
         text: (
             <CarouselItem
                 header="Make knowledge self-serve"
@@ -41,11 +41,9 @@ const items = [
                 }
             />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Enable developers to learn by example',
+        title: 'Enable developers to learn by example',
         text: (
             <CarouselItem
                 header="Enable developers to learn by example"
@@ -69,10 +67,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Get code history and ownership at a glance',
+        title: 'Get code history and ownership at a glance',
         text: (
             <CarouselItem
                 header="Get code history and ownership at a glance"
@@ -85,10 +82,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Visualize contributions and chart team progress',
+        title: 'Visualize contributions and chart team progress',
         text: (
             <CarouselItem
                 header="Visualize contributions and chart team progress"
@@ -111,10 +107,9 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Document and share actionable code snippets',
+        title: 'Document and share actionable code snippets',
         text: (
             <CarouselItem
                 header="Document and share actionable code snippets"
@@ -136,7 +131,6 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
 ]
 
@@ -162,6 +156,17 @@ const blogResourceItems = [
             alt: 'Software engineer career ladder blog thumbnail',
         },
         href: '/blog/software-engineer-career-ladder',
+    },
+    {
+        title: '5 key traits of a code intelligence platform',
+        description:
+            'Sourcegraph is more than search. Learn how the code intelligence platform helps development teams quickly get unblocked, resolve issues faster, and gain insights to make better decisions.',
+        type: 'Guide',
+        img: {
+            src: '/blog/thumbnails/dark-multi-grid.jpg',
+            alt: 'Grid background with abstract blue and pink hues',
+        },
+        href: '/guides/key-traits-of-a-code-intelligence-platform.pdf',
     },
 ]
 
