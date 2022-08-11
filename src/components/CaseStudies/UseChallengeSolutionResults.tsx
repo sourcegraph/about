@@ -6,8 +6,6 @@ import CheckCircleIcon from 'mdi-react/CheckCircleIcon'
 import ClipboardTextIcon from 'mdi-react/ClipboardTextIcon'
 import Link from 'next/link'
 
-import { useWindowWidth } from '@hooks'
-
 interface TextLink {
     text: string
     href?: string
@@ -33,8 +31,8 @@ const ListItemType: FunctionComponent<ListItemProps> = ({ item }) => (
 export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases, challenges, solutions, results }) => {
     const box = useRef<HTMLDivElement | null>(null)
     const [boxHeight, setBoxHeight] = useState<number>(0)
-    const windowWidth = useWindowWidth()
-    const boxHalfHeight = `-${boxHeight / 2}px`
+    const bottomContainerPadding = 96
+    const boxHalfHeight = `-${boxHeight / 2 + bottomContainerPadding}px`
 
     function getBoxHeight(): void {
         if (box.current) {
@@ -55,7 +53,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
     }, [])
 
     return (
-        <section className="tw-max-w-screen-xl tw-mx-auto tw-relative d-flex flex-lg-row flex-column tw-py-5xl">
+        <div className="tw-relative d-flex flex-lg-row flex-column">
             <div className="col-lg-6 col-12">
                 <div className="mb-5 d-flex flex-column flex-lg-row justify-content-lg-end">
                     <div className="p-0 p-1 mb-3 text-center rounded d-flex tw-bg-violet-100 align-self-start col-1 col-lg-2 justify-content-center align-items-center max-w-50">
@@ -121,8 +119,8 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
             <div
                 ref={box}
                 // eslint-disable-next-line react/forbid-dom-props
-                style={{ marginBottom: boxHalfHeight, width: '95%' }}
-                className="sg-bg-gradient-venus lg:tw-absolute tw-right-0 tw-bottom-0 xl:tw-max-w-[500px] lg:tw-max-w-[450px] tw-max-w-[700px] tw-mx-auto tw-p-8"
+                style={{ marginBottom: boxHalfHeight }}
+                className="sg-bg-gradient-venus lg:tw-absolute lg:tw-right-0 lg:tw-bottom-0 tw-max-w-[700px] lg:tw-max-w-[450px] xl:tw-max-w-[500px] tw-mx-auto tw-p-8 tw-w-[95%]"
             >
                 <div className="ml-lg-0 d-flex flex-column flex-lg-row">
                     <div className="p-0 p-1 mb-3 text-center rounded d-flex tw-bg-violet-100 align-self-start col-1 col-lg-2 justify-content-center align-items-center max-w-50">
@@ -144,6 +142,6 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }

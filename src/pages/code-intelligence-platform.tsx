@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 import {
     Layout,
-    BlogResourceItem,
+    BlogResources,
     ContentSection,
     CustomCarousel,
     TwoColumnSection,
@@ -19,16 +19,20 @@ import {
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
-const CarouselItem: FunctionComponent<{ icon: MdiReactIconComponentType; header: string; subtitle: string; text: string }> = props => (
+const CarouselItem: FunctionComponent<{
+    icon: MdiReactIconComponentType
+    header: string
+    subtitle: string
+    text: string
+}> = props => (
     <>
-        {/* eslint-disable-next-line react/forbid-dom-props */}
-        <div className="bg-violet-1 rounded-circle text-center mb-3" style={{ maxWidth: '40px' }}>
-            <div className="text-vivid-violet p-2 d-flex justify-content-center">
+        <div className="tw-mb-4 tw-text-center tw-bg-violet-100 tw-rounded-full tw-max-w-[40px]">
+            <div className="p-2 tw-text-violet-400 d-flex justify-content-center">
                 <props.icon />
             </div>
         </div>
-        <h3 className="font-weight-lg-bold font-weight-normal">{props.header}</h3>
-        <h4 className="d-lg-none d-block mb-lg-0 my-3">{props.subtitle}</h4>
+        <h3>{props.header}</h3>
+        <h4 className="my-3 d-lg-none d-block mb-lg-0">{props.subtitle}</h4>
         <p className="py-3">{props.text}</p>
     </>
 )
@@ -150,10 +154,10 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                 "Sourcegraph's code intelligence platform is more than search. It helps developers save time and move faster regardless of how complex your codebase is.",
         }}
         hero={
-            <section className="bg-gradient-saturn">
-                <div className="container py-lg-7 py-6 text-md-center">
-                    <h1 className="font-weight-bold">Key traits of a code intelligence platform</h1>
-                    <h3 className="font-weight-normal py-4 mx-md-auto max-w-750">
+            <div className="sg-bg-gradient-saturn">
+                <div className="container py-6 py-lg-7 text-md-center">
+                    <h1>Key traits of a code intelligence platform</h1>
+                    <h3 className="py-4 mx-md-auto max-w-750">
                         Sourcegraph helps developers save time and move faster, regardless of how complex your codebase
                         is: any code host, any language, and any repository.
                     </h3>
@@ -171,10 +175,10 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                         </a>
                     </Link>
                 </div>
-            </section>
+            </div>
         }
     >
-        <ContentSection color="white" className="py-lg-7 py-6">
+        <ContentSection color="white">
             <CustomCarousel
                 items={items}
                 animateTransition={true}
@@ -182,8 +186,8 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white" className="pb-lg-7 pb-6">
-            <h2 className="pb-5 px-0 col-12 col-lg-6">Sourcegraph helps enterprise development teams...</h2>
+        <ContentSection color="white">
+            <h2 className="px-0 pb-5 col-12 col-lg-6">Sourcegraph helps enterprise development teams...</h2>
 
             <TwoColumnSection
                 centerContent={true}
@@ -210,7 +214,6 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                             webm: '/animations/code-search',
                         }}
                         title="Sourcegraph Code Search"
-                        caption="Sourcegraph Code Search"
                         loop={true}
                     />
                 }
@@ -229,7 +232,6 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                             webm: '/animations/batch-changes',
                         }}
                         title="Sourcegraph Code Search"
-                        caption="Sourcegraph Code Search"
                         loop={true}
                     />
                 }
@@ -261,7 +263,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white" className="py-lg-7 py-6">
+        <ContentSection color="white">
             <TwoColumnSection
                 centerContent={true}
                 leftColumn={
@@ -288,24 +290,21 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                             webm: '/animations/code-insights',
                         }}
                         title="Sourcegraph Code Search"
-                        caption="Sourcegraph Code Search"
                         loop={true}
                     />
                 }
             />
         </ContentSection>
 
-        <div className="bg-gradient-saturn">
-            <ContentSection>
-                <QuoteCarousel items={quoteCarouselItems} />
-            </ContentSection>
-        </div>
+        <ContentSection parentClassName="sg-bg-gradient-saturn">
+            <QuoteCarousel items={quoteCarouselItems} />
+        </ContentSection>
 
-        <ContentSection className="py-lg-7 py-6">
-            <section className="max-w-800 mx-auto text-md-center">
+        <ContentSection>
+            <div className="mx-auto max-w-800 text-md-center">
                 <h2>Sourcegraph’s code intelligence platform is more than simply search.</h2>
 
-                <p className="max-w-md-450 my-5 mx-md-auto">
+                <p className="my-5 max-w-md-450 mx-md-auto">
                     The platform drives velocity by helping development teams quickly get unblocked, save time resolving
                     issues, and gain insights to make better decisions.
                 </p>
@@ -322,17 +321,10 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                         Request a demo
                     </a>
                 </Link>
-            </section>
+            </div>
         </ContentSection>
 
-        <ContentSection color="white" className="py-lg-7 py-6 px-0">
-            <div className="col-lg-6">
-                <h2 className="mb-5 font-weight-bold">Related resources</h2>
-            </div>
-            {blogResourceItems.map(item => (
-                <BlogResourceItem key={item.title} blog={item} />
-            ))}
-        </ContentSection>
+        <BlogResources posts={blogResourceItems} />
     </Layout>
 )
 
