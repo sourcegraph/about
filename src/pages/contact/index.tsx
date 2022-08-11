@@ -147,7 +147,7 @@ const ContactHome: FunctionComponent = () => (
                                 >
                                     <LinkedinIcon className="tw-inline" /> Sourcegraph on LinkedIn
                                 </a>
-                                <div className="list-group-item d-flex p-relative">
+                                <div className="list-group-item tw-flex p-relative">
                                     <MapMarkerIcon className="tw-inline tw-mr-1" />
                                     <div>
                                         Sourcegraph

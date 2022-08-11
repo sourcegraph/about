@@ -203,7 +203,7 @@ const CareersPage: FunctionComponent = () => {
             </div>
 
             <ContentSection color="white">
-                <div className="flex-wrap d-flex">
+                <div className="flex-wrap tw-flex">
                     <div className="m-auto">
                         <h2 className="tw-mx-auto tw-text-center tw-max-w-2xl tw-mb-6">
                             Happy, healthy, and always in the flow.
@@ -344,7 +344,7 @@ const CareersPage: FunctionComponent = () => {
                 >
                     {valueItems.map(item => (
                         <Carousel.Item key={item.value}>
-                            <div className="d-flex flex-column align-items-center min-h-550 py-7">
+                            <div className="tw-flex tw-flex-col tw-items-center min-h-550 py-7">
                                 <h5 className=" text-uppercase">We value:</h5>
                                 <h2 className="">{item.value}</h2>
                                 <p className="text-center col-8">{item.description}</p>

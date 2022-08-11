@@ -40,7 +40,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                 {post.frontmatter.changelogItems?.map(({ url, category, description }) => (
                     <a
                         href={url}
-                        className="release-post__item d-md-flex list-group-item list-group-item-action"
+                        className="release-post__item md:tw-flex list-group-item list-group-item-action"
                         key={url}
                         title={`${category}: ${description}`}
                         data-button-style={buttonStyle.text}
@@ -118,7 +118,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                         <Link href={url} passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="d-block"
+                                className="tw-block"
                                 title={post.frontmatter.title}
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}

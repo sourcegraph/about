@@ -16,10 +16,10 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
     centerContent = false,
 }) => (
     <div
-        className={classNames('d-flex', {
-            'flex-column-reverse flex-lg-row': reverseOnMobile,
+        className={classNames('tw-flex', {
+            'tw-flex-col-reverse lg:tw-flex-row': reverseOnMobile,
             row: !reverseOnMobile,
-            'align-items-center': centerContent,
+            'tw-items-center': centerContent,
         })}
     >
         <div className={classNames('col-lg-6 pr-lg-4', { 'mb-4 mb-lg-0': !reverseOnMobile })}>{leftColumn}</div>

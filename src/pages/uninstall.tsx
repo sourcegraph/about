@@ -10,7 +10,7 @@ const Uninstall: FunctionComponent = () => (
             </section>
             <section className="p-4 mx-auto max-w-500 bg-white text-dark">
                 <div className="measure-wide center">
-                    <div className="d-flex flex-column p-4 mx-auto">
+                    <div className="tw-flex tw-flex-col p-4 mx-auto">
                         <h3>Why did you uninstall the Sourcegraph browser extension?</h3>
                         <p>Your feedback helps us improve the product for everyone.</p>
                         <HubSpotForm

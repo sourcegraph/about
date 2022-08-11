@@ -21,7 +21,7 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({
     className = '',
 }) =>
     value ? (
-        <Tag className={`${className} d-flex justify-content-between`}>
+        <Tag className={`${className} tw-flex justify-content-between`}>
             <div className="tw-text-xl">
                 <CheckIcon className="mr-2 icon-inline text-success tw-inline" /> {label}
             </div>

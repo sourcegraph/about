@@ -64,7 +64,7 @@ const UseCases: React.FunctionComponent = () => (
                                     <Link key={feature.id} href={`#${kebabCase(feature.id)}`} passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a
-                                            className="list-group-item list-group-item-action d-flex justify-content-between align-items-center text-decoration-none"
+                                            className="list-group-item list-group-item-action tw-flex justify-content-between tw-items-center text-decoration-none"
                                             title={feature.description}
                                             data-button-style={buttonStyle.textWithArrow}
                                             data-button-location={buttonLocation.hero}

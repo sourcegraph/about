@@ -36,7 +36,7 @@ export const AuthorBio: React.FunctionComponent<{
             </div>
         ) : (
             // Single author design
-            <div className="d-flex flex-column flex-md-row align-items-start">
+            <div className="tw-flex tw-flex-col md:tw-flex-row align-items-start">
                 {authors[0].image && (
                     <div className="col-md-3">
                         <img

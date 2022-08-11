@@ -74,7 +74,7 @@ export const AbcsEbook: FunctionComponent = () => (
                     <p className="text-center">
                         <a
                             href="https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf"
-                            className="d-block"
+                            className="tw-block"
                             id="abc-dlbook"
                             title="Book cover: Our ABCs"
                             data-button-style={buttonStyle.image}

@@ -372,27 +372,27 @@ const CodeInsightsPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection>
-            <div className="flex-wrap d-flex">
+            <div className="flex-wrap tw-flex">
                 <h2 className="mb-3 text-center w-100">Engineering leadership with superpowers</h2>
                 <p className="text-center icon-subheader w-100">
                     Code Insights provides reliable real-time reporting directly from the codebase, making engineering
                     leaders and their teams more effective.
                 </p>
-                <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
-                    <div className="py-3 d-flex py-lg-5">
+                <div className="tw-flex tw-flex-col col-lg-6 px-lg-6 justify-content-around">
+                    <div className="py-3 tw-flex py-lg-5">
                         <div className="mr-4">
                             <BullsEyeArrowIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
-                        <div className="d-flex flex-column">
+                        <div className="tw-flex tw-flex-col">
                             <h5>Set goals</h5>
                             <p className="icon-paragraph">Measure goals and progress in your codebase</p>
                         </div>
                     </div>
-                    <div className="py-3 d-flex py-lg-5">
+                    <div className="py-3 tw-flex py-lg-5">
                         <div className="mr-4 icon">
                             <LighteningBoltOutlineIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
-                        <div className="d-flex flex-column">
+                        <div className="tw-flex tw-flex-col">
                             <h5>Plan proactively</h5>
                             <p className="icon-paragraph">
                                 Stay on top of engineering initiatives and catch issues before they escalate
@@ -400,21 +400,21 @@ const CodeInsightsPage: FunctionComponent = () => (
                         </div>
                     </div>
                 </div>
-                <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
-                    <div className="py-3 d-flex py-lg-5">
+                <div className="tw-flex tw-flex-col col-lg-6 px-lg-6 justify-content-around">
+                    <div className="py-3 tw-flex py-lg-5">
                         <div className="mr-4">
                             <TrendingUpIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
-                        <div className="d-flex flex-column">
+                        <div className="tw-flex tw-flex-col">
                             <h5>Track ownership & trends</h5>
                             <p className="icon-paragraph">Tie trends and metrics to owners on the teams</p>
                         </div>
                     </div>
-                    <div className="py-3 d-flex py-lg-5">
+                    <div className="py-3 tw-flex py-lg-5">
                         <div className="mr-4">
                             <RocketLaunchOutlineIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
-                        <div className="d-flex flex-column">
+                        <div className="tw-flex tw-flex-col">
                             <h5>Celebrate progress</h5>
                             <p className="icon-paragraph">Visualize the momentum and motivate your teammates</p>
                         </div>
@@ -429,7 +429,7 @@ const CodeInsightsPage: FunctionComponent = () => (
 
         <ContentSection>
             <h2 className="mb-3 text-center">See Code Insights in action</h2>
-            <div className="row justify-content-center pt-md-4">
+            <div className="row tw-justify-center pt-md-4">
                 <div className="col-lg-8">
                     <YouTube id="fMCUJQHfbUA" title="Sourcegraph Code Insights demo" />
                 </div>
@@ -443,7 +443,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Migrations',
                         content: (
-                            <div className="flex-wrap mt-5 w-100 d-flex">
+                            <div className="flex-wrap mt-5 w-100 tw-flex">
                                 {templates.migrations.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -453,7 +453,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Version Tracking',
                         content: (
-                            <div className="flex-wrap mt-5 w-100 d-flex justify-content-center">
+                            <div className="flex-wrap mt-5 w-100 tw-flex tw-justify-center">
                                 {templates.versionTracking.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -463,7 +463,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Security',
                         content: (
-                            <div className="flex-wrap mt-5 w-100 d-flex justify-content-center">
+                            <div className="flex-wrap mt-5 w-100 tw-flex tw-justify-center">
                                 {templates.security.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -473,7 +473,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Code Health',
                         content: (
-                            <div className="flex-wrap mt-5 w-100 d-flex justify-content-center">
+                            <div className="flex-wrap mt-5 w-100 tw-flex tw-justify-center">
                                 {templates.codeHealth.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -504,7 +504,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Migrations',
                         content: (
-                            <div className="mt-5 w-100 justify-content-center">
+                            <div className="mt-5 w-100 tw-justify-center">
                                 <TabCarousel items={templates.migrations} autoAdvance={true} />
                             </div>
                         ),
@@ -512,7 +512,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Version Tracking',
                         content: (
-                            <div className="mt-5 w-100 justify-content-center">
+                            <div className="mt-5 w-100 tw-justify-center">
                                 <TabCarousel items={templates.versionTracking} autoAdvance={true} />
                             </div>
                         ),
@@ -520,7 +520,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Security',
                         content: (
-                            <div className="mt-5 w-100 justify-content-center">
+                            <div className="mt-5 w-100 tw-justify-center">
                                 <TabCarousel items={templates.security} autoAdvance={true} />
                             </div>
                         ),
@@ -528,7 +528,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Code Health',
                         content: (
-                            <div className="mt-5 w-100 justify-content-center">
+                            <div className="mt-5 w-100 tw-justify-center">
                                 <TabCarousel items={templates.codeHealth} autoAdvance={true} />
                             </div>
                         ),
@@ -550,15 +550,15 @@ const CodeInsightsPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="row d-flex flex-column justify-content-start">
-                <div className="mb-5 col-lg-8 d-flex flex-column justify-content-start">
+            <div className="row tw-flex tw-flex-col justify-content-start">
+                <div className="mb-5 col-lg-8 tw-flex tw-flex-col justify-content-start">
                     <h2>Get started with Code Insights</h2>
                     <p>
                         Create a code insight in 60 seconds and get historical data for previously untracked metrics —
                         data backfills automatically.
                     </p>
                 </div>
-                <div className="pt-1 col-lg-7 d-flex flex-column">
+                <div className="pt-1 col-lg-7 tw-flex tw-flex-col">
                     <Link href="/contact/request-code-insights-demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a

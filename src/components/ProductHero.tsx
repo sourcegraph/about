@@ -56,20 +56,20 @@ export const ProductHero: FunctionComponent<Omit<ProductHero, 'className' | 'chi
             <Background
                 variant={variant}
                 illustration={illustration}
-                className={classNames('d-flex align-items-center', product && 'min-h-600')}
+                className={classNames('tw-flex tw-items-center', product && 'min-h-600')}
             >
                 <div className={classNames('container', !product && 'py-7')}>
                     <div className="max-w-700 w-100">
                         {backButton}
 
-                        <div className="d-flex flex-column-reverse">
+                        <div className="tw-flex tw-flex-col-reverse">
                             <h1 className="mb-4 tw-whitespace-pre-line">{title}</h1>
                             {product && <div className="mb-2 text-uppercase">{product}</div>}
                         </div>
 
                         {description && <p className="mb-5 max-w-600 tw-text-xl">{description}</p>}
 
-                        {cta && <div className="pt-1 d-flex flex-column max-w-400">{cta}</div>}
+                        {cta && <div className="pt-1 tw-flex tw-flex-col max-w-400">{cta}</div>}
                     </div>
                 </div>
             </Background>

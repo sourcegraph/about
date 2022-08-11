@@ -96,7 +96,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
         <ContentSection>
             <h2>Move fast — even in big code bases</h2>
             <h4 className="py-3">Learn how these software companies used Sourcegraph</h4>
-            <div className="flex-wrap pt-4 d-flex tw-relative">
+            <div className="flex-wrap pt-4 tw-flex tw-relative">
                 {caseStudyItems.map(study => (
                     <div key={study.name} className="px-0 mb-6 col-sm-6 col-md-4">
                         <CaseStudyCard study={study} bwLogo={true} />
@@ -143,7 +143,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
 
         <BlogResources posts={blogResourceItems} />
 
-        <div className="py-5 text-white d-flex flex-md-row flex-column align-items-center justify-content-center bg-primary">
+        <div className="py-5 text-white tw-flex md:tw-flex-row tw-flex-col tw-items-center tw-justify-center bg-primary">
             <h5 className="my-auto text-center max-w-250 max-w-md-400 pr-md-4">
                 Looking for our changelog? Look no further
             </h5>

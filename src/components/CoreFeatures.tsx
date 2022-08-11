@@ -141,8 +141,8 @@ export const CoreFeatures: FunctionComponent = () => {
             {features.map((feature, index) => (
                 <div
                     key={feature.productFeature}
-                    className={classNames('row flex-column-reverse flex-lg-row', {
-                        'flex-lg-row-reverse': index % 2,
+                    className={classNames('row tw-flex-col-reverse lg:tw-flex-row', {
+                        'lg:tw-flex-row-reverse': index % 2,
                         'mb-8': index !== features.length - 1,
                     })}
                 >
@@ -193,7 +193,7 @@ export const CoreFeatures: FunctionComponent = () => {
 
                     <div className="px-5 py-0 mb-6 col-lg-6 mb-lg-0">
                         <video
-                            className={`shadow w-100 max-w-550 d-block mx-auto rounded video-${index}`}
+                            className={`shadow w-100 max-w-550 tw-block mx-auto rounded video-${index}`}
                             autoPlay={false}
                             muted={true}
                             loop={true}

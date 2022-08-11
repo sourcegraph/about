@@ -42,7 +42,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                     <Link href={url} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="d-block"
+                            className="tw-block"
                             title={post.frontmatter.title}
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}

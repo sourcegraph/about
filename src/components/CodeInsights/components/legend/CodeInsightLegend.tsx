@@ -13,7 +13,7 @@ interface LegendItemProps extends React.LiHTMLAttributes<HTMLLIElement> {
 }
 
 export const LegendItem: React.FunctionComponent<LegendItemProps> = props => (
-    <div className="d-flex">
+    <div className="tw-flex">
         <li className={classNames(props.className, styles.legendItem)}>
             <div
                 /* eslint-disable-next-line react/forbid-dom-props */

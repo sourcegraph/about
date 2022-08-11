@@ -49,7 +49,7 @@ export const Community: FunctionComponent = () => (
     >
         <ContentSection color="white" className="tw-text-center">
             <h2 className="mb-3">Get up to speed</h2>
-            <div className="row justify-content-center">
+            <div className="row tw-justify-center">
                 <p className="col-md-8">
                     We can’t give you a 25-hour day, but here is a{' '}
                     <a

@@ -74,12 +74,12 @@ const logos: Logo[] = [
 ]
 
 export const CustomerLogos: FunctionComponent = () => (
-    <div className="d-flex flex-wrap align-items-center justify-content-center max-w-1000 mx-auto user-select-none">
+    <div className="flex-wrap mx-auto tw-flex tw-items-center tw-justify-center max-w-1000 user-select-none">
         {logos.map((logo: Logo) => (
             <Link key={logo.name} href={logo.link ? logo.link : '/case-studies'} passHref={true}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a
-                    className="max-w-100 max-h-100 my-3 mx-4 flex-shrink-0"
+                    className="mx-4 my-3 max-w-100 max-h-100 tw-shrink-0"
                     title={`${logo.name} logo`}
                     data-button-style={buttonStyle.image}
                     data-button-location={buttonLocation.body}

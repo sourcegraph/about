@@ -27,12 +27,12 @@ const CarouselItem: FunctionComponent<{
 }> = props => (
     <>
         <div className="tw-mb-4 tw-text-center tw-bg-violet-100 tw-rounded-full tw-max-w-[40px]">
-            <div className="p-2 tw-text-violet-400 d-flex justify-content-center">
+            <div className="p-2 tw-text-violet-400 tw-flex tw-justify-center">
                 <props.icon />
             </div>
         </div>
         <h3>{props.header}</h3>
-        <h4 className="my-3 d-lg-none d-block mb-lg-0">{props.subtitle}</h4>
+        <h4 className="my-3 lg:tw-hidden tw-block mb-lg-0">{props.subtitle}</h4>
         <p className="py-3">{props.text}</p>
     </>
 )

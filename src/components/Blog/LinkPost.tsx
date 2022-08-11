@@ -15,7 +15,7 @@ interface Props extends PostComponentProps {
  * This post always displays its full text and never hides it behind a "Read more" link.
  */
 export const LinkPost: FunctionComponent<Props> = ({ post, content, url, className = '', tag: Tag = 'div' }) => {
-    const titleClassName = 'tw-text-base link-post__html d-inline'
+    const titleClassName = 'tw-text-base link-post__html tw-inline'
     const title = post.frontmatter.canonical ? (
         <h2 className={titleClassName}>
             <Link href={post.frontmatter.canonical} passHref={true}>
@@ -39,7 +39,7 @@ export const LinkPost: FunctionComponent<Props> = ({ post, content, url, classNa
             <div className="card-body">
                 {title}
                 {content && (
-                    <div className="link-post__html d-inline">
+                    <div className="link-post__html tw-inline">
                         <MDXRemote {...content} />
                     </div>
                 )}

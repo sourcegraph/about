@@ -287,7 +287,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                     by using tools that enable the developer to take full charge of shipping a new feature or bug fix.
                 </p>
 
-                <div className="d-flex flex-column align-items-center">
+                <div className="tw-flex tw-flex-col tw-items-center">
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a

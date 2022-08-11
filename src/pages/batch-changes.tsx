@@ -39,7 +39,7 @@ export const BatchChangesPage: FunctionComponent = () => (
         <ContentSection>
             <div className="tw-text-center">
                 <h2 className="mb-3">Change code everywhere with a single declarative file</h2>
-                <div className="row justify-content-center">
+                <div className="row tw-justify-center">
                     <p className="col-md-8">
                         Batch Changes gives you a declarative structure for finding and modifying code across all of
                         your repositories. With a simple UI, it is easy to track and manage all of your changesets
@@ -121,7 +121,7 @@ export const BatchChangesPage: FunctionComponent = () => (
 
         {/* Social proof */}
         <ContentSection>
-            <div className="row justify-content-center">
+            <div className="row tw-justify-center">
                 <div className="col-lg-10">
                     <Blockquote
                         quote="The ability to automate downstream changes that Sourcegraph Batch Changes provides is a key
@@ -173,7 +173,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                     {
                         title: 'Configuration',
                         content: (
-                            <div className="mt-5 row justify-content-center">
+                            <div className="mt-5 row tw-justify-center">
                                 <div className="col-lg-8">
                                     <p>
                                         Quickly edit every CI, build, and other configuration files to make changes such
@@ -193,7 +193,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                     {
                         title: 'Refactoring',
                         content: (
-                            <div className="mt-5 row justify-content-center">
+                            <div className="mt-5 row tw-justify-center">
                                 <div className="col-lg-8">
                                     <p>
                                         Use language-aware tooling of your choice to perform complex refactors like
@@ -213,7 +213,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                     {
                         title: 'Security',
                         content: (
-                            <div className="mt-5 row justify-content-center">
+                            <div className="mt-5 row tw-justify-center">
                                 <div className="col-lg-8">
                                     <p>
                                         Refactor code to replace insecure functions, update vulnerable packages, or
@@ -236,7 +236,7 @@ export const BatchChangesPage: FunctionComponent = () => (
 
         {/* Social proof */}
         <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="row justify-content-center pt-md-4">
+            <div className="row tw-justify-center pt-md-4">
                 <div className="col-lg-10">
                     <Blockquote
                         quote="Sourcegraph Batch Changes gives us the confidence we need to understand the total impact of
@@ -255,7 +255,7 @@ export const BatchChangesPage: FunctionComponent = () => (
         {/* Demo */}
         <ContentSection>
             <h2 className="mb-3 text-center">See Batch Changes in action</h2>
-            <div className="row justify-content-center pt-md-4">
+            <div className="row tw-justify-center pt-md-4">
                 <div className="col-lg-8">
                     <YouTube title="Sourcegraph Batch Changes demo" id="eOmiyXIWTCw" />
                 </div>

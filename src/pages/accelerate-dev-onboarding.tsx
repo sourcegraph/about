@@ -59,7 +59,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                     <Link href="/demo">
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="mt-5 btn btn-primary d-block d-sm-inline-block"
+                            className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
                             title="Request a demo"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.bodyDemo}

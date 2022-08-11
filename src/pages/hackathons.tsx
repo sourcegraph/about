@@ -20,9 +20,9 @@ export const Hackathons: FunctionComponent = () => (
             </p>
         </section>
 
-        <section className="p-4 m-auto bg-white d-flex justify-content-around flex-column flex-lg-row tw-max-w-screen-xl">
+        <section className="p-4 m-auto bg-white tw-flex justify-content-around tw-flex-col lg:tw-flex-row tw-max-w-screen-xl">
             <div className="mt-0 mb-2 mr-lg-5">
-                <div className="p-5 rounded d-flex flex-column tw-bg-gray-100">
+                <div className="p-5 rounded tw-flex tw-flex-col tw-bg-gray-100">
                     <p>
                         Want to win your hackathon? Set up Sourcegraph and bring the power of code search and code
                         intelligence to your engineering team!

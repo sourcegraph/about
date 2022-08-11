@@ -24,7 +24,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                     <Link href={`/${blogType}/${slugPath}`} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="tw-text-gray-600 d-block"
+                            className="tw-text-gray-600 tw-block"
                             title={frontmatter.title}
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
@@ -86,7 +86,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
         </header>
 
         {slugPath && (
-            <div className="pt-0 card-body d-flex flex-card align-items-center">
+            <div className="pt-0 card-body tw-flex flex-card tw-items-center">
                 <div className="row w-100">
                     <div className="pb-3 col-md-9 pb-md-0">
                         {frontmatter.description ? (
@@ -109,7 +109,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                         </div>
                     </div>
 
-                    <div className="col-md-3 d-flex">
+                    <div className="col-md-3 tw-flex">
                         <Link href={`/${blogType}/${slugPath}`} passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a

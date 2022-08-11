@@ -58,12 +58,12 @@ const Support: FunctionComponent = () => (
 
             <div className="tw-mx-auto tw-my-0 tw-max-w-screen-xl">
                 <div className="pt-4 row">
-                    <div className="mx-auto mb-4 d-flex col-md-4">
+                    <div className="mx-auto mb-4 tw-flex col-md-4">
                         <div className="card h-100">
                             <div className="card-body">
                                 <h1 className="tw-my-xs tw-text-center">Free</h1>
                                 <a
-                                    className="text-center font-size-base btn btn-outline-primary w-100 justify-content-center d-inline-flex"
+                                    className="text-center font-size-base btn btn-outline-primary w-100 tw-justify-center tw-inline-flex"
                                     href="https://docs.sourcegraph.com#quickstart-guide"
                                     title="Deploy"
                                     data-button-style={buttonStyle.outline}
@@ -118,12 +118,12 @@ const Support: FunctionComponent = () => (
                             </ol>
                         </div>
                     </div>
-                    <div className="mx-auto mb-4 d-flex col-md-4">
+                    <div className="mx-auto mb-4 tw-flex col-md-4">
                         <div className="card">
                             <div className="card-body">
                                 <h1 className="tw-my-xs tw-text-center">Team</h1>
                                 <a
-                                    className="text-center font-size-base btn btn-success w-100 justify-content-center d-inline-flex"
+                                    className="text-center font-size-base btn btn-success w-100 tw-justify-center tw-inline-flex"
                                     href="https://sourcegraph.com/subscriptions/new"
                                     title="Buy now"
                                     data-button-style={buttonStyle.primary}
@@ -178,7 +178,7 @@ const Support: FunctionComponent = () => (
                             </ol>
                         </div>
                     </div>
-                    <div className="mx-auto mb-4 d-flex col-md-4">
+                    <div className="mx-auto mb-4 tw-flex col-md-4">
                         <div className="card">
                             <div className="card-body">
                                 <h1 className="tw-my-xs tw-text-center">Enterprise</h1>
@@ -188,7 +188,7 @@ const Support: FunctionComponent = () => (
                                 >
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
-                                        className="text-center font-size-base btn btn-outline-primary w-100 justify-content-center d-inline-flex"
+                                        className="text-center font-size-base btn btn-outline-primary w-100 tw-justify-center tw-inline-flex"
                                         title="Contact us"
                                         data-button-style={buttonStyle.outline}
                                         data-button-location={buttonLocation.body}

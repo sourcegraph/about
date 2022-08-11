@@ -78,7 +78,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 style={{ backgroundImage: `url('${heroImage()}')` }}
                 className={classNames('tw-bg-cover py-6 py-md-7', isGuidePg && 'text-white')}
             >
-                <div className="container px-0 d-flex flex-column flex-lg-row justify-content-around align-items-center">
+                <div className="container px-0 tw-flex tw-flex-col lg:tw-flex-row justify-content-around tw-items-center">
                     {customer && (
                         <>
                             {isWebinarPg ? (
@@ -134,7 +134,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 </div>
             ) : (
                 // ---- DEFAULT BODY VARIATION ----
-                <ContentSection color="white" className="d-flex flex-column-reverse flex-md-row">
+                <ContentSection color="white" className="tw-flex tw-flex-col-reverse md:tw-flex-row">
                     {description}
 
                     <div className="pb-6 col-md-6 col-12 pb-md-0">
@@ -162,7 +162,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 <ContentSection color="white" parentClassName={classNames({ 'tw-pt-0': !hasWatchNowQuery })}>
                     <h2>Speakers</h2>
 
-                    <section className="flex-wrap d-flex">
+                    <section className="flex-wrap tw-flex">
                         {speakers.map((speaker: Speaker) => (
                             <div key={speaker.name} className="pl-0 col-lg-5 col-md-6 col-12 pr-lg-7">
                                 <img className="py-4" width="140" src={speaker.img} alt={speaker.name} />

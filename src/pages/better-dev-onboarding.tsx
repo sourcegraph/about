@@ -58,7 +58,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
                                 With self-serve onboarding, codebase exploration, and knowledge sharing, developers can
                                 find their own answers without waiting for someone to point them to the relevant code.
                             </div>
-                            <div className="pt-1 d-flex flex-column max-w-400">
+                            <div className="pt-1 tw-flex tw-flex-col max-w-400">
                                 <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                             </div>
                         </div>

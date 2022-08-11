@@ -60,7 +60,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                             )
                         )
                     ) : (
-                        <li className="align-items-center nav-item" role="presentation" key={navLink.section}>
+                        <li className="tw-items-center nav-item" role="presentation" key={navLink.section}>
                             <span
                                 role="button"
                                 className="nav-link navbar-toggle collapsed"
@@ -139,7 +139,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                 </li>
 
                 {!hideGetStartedButton && (
-                    <li className="align-items-center nav-item" role="presentation">
+                    <li className="tw-items-center nav-item" role="presentation">
                         <a
                             className="nav-link"
                             href="https://sourcegraph.com/search"
@@ -152,7 +152,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                         </a>
                     </li>
                 )}
-                <li className="align-items-center nav-item" role="presentation">
+                <li className="tw-items-center nav-item" role="presentation">
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
@@ -167,7 +167,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                     </Link>
                 </li>
                 {!hideGetStartedButton && (
-                    <li className="align-items-center nav-item" role="presentation">
+                    <li className="tw-items-center nav-item" role="presentation">
                         <Link href="/get-started/self-hosted" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a

@@ -25,14 +25,16 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
                 {carouselItems.map((item, index) => (
                     <div
                         key={item.header}
-                        className={index === carouselHook.carouselItems.currentItemIndex ? 'd-block h-400' : 'd-none'}
+                        className={
+                            index === carouselHook.carouselItems.currentItemIndex ? 'tw-block h-400' : 'tw-hidden'
+                        }
                     >
                         <TemplateCodeBlock template={item} />
                     </div>
                 ))}
             </div>
 
-            <div className="d-flex justify-content-center">
+            <div className="tw-flex tw-justify-center">
                 <ArrowLeftIcon
                     className="mr-4 tw-cursor-pointer"
                     onClick={() => carouselHook.moveCarousel('decrement')}

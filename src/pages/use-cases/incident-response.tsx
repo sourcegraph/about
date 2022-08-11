@@ -240,7 +240,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                                 Identify the root cause of an incident, understand its potential impact on other
                                 services, and fix the issue everywhere in your codebase so it won't reoccur.
                             </div>
-                            <div className="text-center flex-column flex-md-row d-md-flex">
+                            <div className="text-center tw-flex-col md:tw-flex-row md:tw-flex">
                                 <div className="mb-3 mb-md-0">
                                     <Link href="/demo" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -339,7 +339,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                         <img
                             src="/external-logos/cloudflare-logo.svg"
                             alt="Cloudflare logo"
-                            className="mx-auto mt-3 d-flex max-w-150"
+                            className="mx-auto mt-3 tw-flex max-w-150"
                         />
                     </div>
                 }
@@ -355,8 +355,8 @@ const IncidentResponsePage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="mx-4 row d-flex flex-column mx-lg-0 align-items-lg-center align-items-left">
-                <div className="mx-auto mb-5 d-flex flex-column text-start text-md-center max-w-600">
+            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 align-items-lg-center align-items-left">
+                <div className="mx-auto mb-5 tw-flex tw-flex-col text-start text-md-center max-w-600">
                     <h2 className="">Get started with Sourcegraph</h2>
                     <p>
                         Respond to incidents with confidence and speed, and remediate issues at their root to ensure
@@ -379,7 +379,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                     <Link href="/use-cases" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="mt-4 d-flex justify-content-center "
+                            className="mt-4 tw-flex tw-justify-center "
                             title="Explore other use cases"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
