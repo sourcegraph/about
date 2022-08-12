@@ -2,9 +2,7 @@ import { FunctionComponent } from 'react'
 
 import CloseCircleOutlineIcon from 'mdi-react/CloseCircleOutlineIcon'
 
-const contentTypes = ['blog post', 'guide', 'customer story', 'virtual event', 'video']
-
-const subjects = ['developer onboarding', 'code reuse', 'code health', 'incident response', 'code security']
+import { resourceItems } from '@components'
 
 interface Filter {
     text: string
@@ -14,6 +12,9 @@ interface FilterGroup {
     title: string
     filters: string[]
 }
+
+const contentTypes = [...new Set(resourceItems.map(resource => resource.contentType))].sort()
+const subjects = [...new Set(resourceItems.flatMap(resource => resource.subjects))].sort()
 
 const Filter: FunctionComponent<Filter> = ({ text }) => (
     <div className="tw-bg-white tw-text-gray-500 tw-py-[6px] tw-px-xs tw-text-sm tw-border tw-border-solid tw-border-gray-500 tw-rounded-lg tw-mr-xs tw-mb-xs hover:tw-bg-gray-500 hover:tw-text-white tw-cursor-pointer tw-transition-all tw-ease-out">

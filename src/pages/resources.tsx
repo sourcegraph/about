@@ -1,6 +1,12 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, Filters } from '@components'
+import {
+    Layout,
+    Filters,
+    Card,
+    resourceItems,
+    ContentSection
+} from '@components'
 
 const Resources: FunctionComponent = () => (
     <Layout
@@ -22,6 +28,12 @@ const Resources: FunctionComponent = () => (
         }
     >
         <Filters />
+
+        <ContentSection color="white">
+            {resourceItems.map(resource => (
+                <Card key={resource.title} />
+            ))}
+        </ContentSection>
     </Layout>
 )
 
