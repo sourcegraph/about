@@ -1,4 +1,4 @@
-
+---
 title: A new model for Sourcegraph integrations 
 description: Sourcegraph is making updates to our integrations and extensions with the upcoming September release of Sourcegraph 4.0. 
   - name: Ryan Scott
@@ -9,6 +9,7 @@ slug: integrations-update
 published: true
 heroImage: /blog/thumbnail-image.jpg
 socialImage: Use to set large social image i.e.  https://about.sourcegraph.com/blog/sourcegraph-social-img.png
+---
 
 With the upcoming launch of Sourcegraph 4.0 in September, 2022, we’re investing in a new model for integrations that will support deeper integrations with our code intelligence platform and make it easier to surface code context during the ideal moments in a developer’s workflow. 
 
