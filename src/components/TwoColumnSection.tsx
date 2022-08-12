@@ -19,7 +19,7 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
 }) => (
     <div
         className={classNames({
-            'tw-grid lg:tw-grid-cols-12 tw-gap-y-xl': !mergeColumns, // done
+            'tw-grid lg:tw-grid-cols-12 tw-gap-y-xl lg:tw-gap-x-xl ': !mergeColumns, // done
             'tw-flex tw-flex-col lg:tw-flex-row': mergeColumns, // done
             'tw-items-center': centerContent, // done
         })}
