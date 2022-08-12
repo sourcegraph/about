@@ -1,7 +1,8 @@
 ---
 title: "A new model for Sourcegraph integrations" 
 description: "Sourcegraph is making updates to our integrations and extensions with the upcoming September release of Sourcegraph 4.0." 
-  - name: Ryan Scott
+authors:
+    - name: Ryan Scott
     url: 
 publishDate: 2022-08-16 T18:00+02:00
 tags: [blog]
