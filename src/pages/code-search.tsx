@@ -5,7 +5,6 @@ import Link from 'next/link'
 import {
     Background,
     Blockquote,
-    BlogResourceItem,
     ContentSection,
     IntegrationsSection,
     HubSpotForm,
@@ -13,8 +12,36 @@ import {
     Hero,
     TwoColumnSection,
     Video,
+    ResourceList,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
+
+const blogResources = [
+    {
+        title: 'Key traits of a code intelligence platform',
+        description:
+            'Sourcegraph is more than search. Engage and enable your teams by helping developers get unblocked, resolve issues faster, and gain codebase insights.',
+        type: 'Guide',
+        href: '/guides/key-traits-of-a-code-intelligence-platform.pdf',
+    },
+    {
+        title: 'How we used Notebooks to make our CI more accessible and understandable',
+        description:
+            'Learn how Notebooks—Sourcegraph’s in-app living documentaiton—makes it easier to document complex codebases.',
+        type: 'Blog post',
+        href: '/blog/notebooks-ci',
+        img: {
+            src: '/blog/thumbnails/notebooks-ci.jpg',
+            alt: 'Sourcegraph Noebooks CI',
+        },
+    },
+    {
+        title: 'Dive into documentation',
+        description: 'Learn everything you need to know about Code Search.',
+        type: 'Docs',
+        href: 'https://docs.sourcegraph.com/code_search',
+    },
+]
 
 export const CodeSearchPage: FunctionComponent = () => (
     <Layout
@@ -28,13 +55,13 @@ export const CodeSearchPage: FunctionComponent = () => (
                 variant="lightNebulousMars"
                 product="code search"
                 title={'Search your code.\nAll of it.'}
-                description="Onboard to a new codebase, understand code faster, and identify security risks with universal code search."
-                cta={<HubSpotForm masterFormName="contactEmail" />}
+                subtitle="Onboard to a new codebase, understand code faster, and identify security risks with universal code search."
+                cta={<HubSpotForm masterFormName="contactEmail" chiliPiper={true} />}
                 displayUnderNav={true}
             />
         }
     >
-        <ContentSection color="white" className="py-7">
+        <ContentSection color="white">
             <TwoColumnSection
                 centerContent={true}
                 reverseOnMobile={true}
@@ -71,54 +98,51 @@ export const CodeSearchPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <div className="bg-gradient-venus py-7">
-            <div className="container">
-                <TwoColumnSection
-                    centerContent={true}
-                    leftColumn={
-                        <>
-                            <h2 className="mb-4">Move faster with Sourcegraph</h2>
+        <ContentSection parentClassName="sg-bg-gradient-venus">
+            <TwoColumnSection
+                centerContent={true}
+                leftColumn={
+                    <>
+                        <h2 className="mb-4">Move faster with Sourcegraph</h2>
 
-                            <h5>Onboard 2.5x quicker</h5>
-                            <p>
-                                Search across every repository and code host to get to know the repository structure and
-                                learn from other developers' code.
-                            </p>
+                        <h5>Onboard 2.5x quicker</h5>
+                        <p>
+                            Search across every repository and code host to get to know the repository structure and
+                            learn from other developers' code.
+                        </p>
 
-                            <h5>Improve developer happiness and productivity</h5>
-                            <p>
-                                Get answers faster without waiting for context from teammates or dealing with stale
-                                local clones.
-                            </p>
+                        <h5>Improve developer happiness and productivity</h5>
+                        <p>
+                            Get answers faster without waiting for context from teammates or dealing with stale local
+                            clones.
+                        </p>
 
-                            <h5>Mitigate security and compliance risks</h5>
-                            <p>
-                                Get alerts for vulnerabilities and then automate security fixes across your entire
-                                codebase.
-                            </p>
-                        </>
-                    }
-                    rightColumn={
-                        <Blockquote
-                            inline={false}
-                            quote="At Criteo, developer happiness is our top priority-not just productivity. By providing them with the right tools, like Sourcegraph, we've found that increased productivity is a natural byproduct."
-                            author="Francois Jehl, Senior Engineering Manager at Criteo"
-                            logo={{
-                                src: '/external-logos/criteo-logo.svg',
-                                alt: 'Criteo logo',
-                                href: '/case-studies/criteo-tackles-big-code',
-                            }}
-                            link={{
-                                href: '/case-studies/criteo-tackles-big-code',
-                                text: 'Read the case study',
-                            }}
-                        />
-                    }
-                />
-            </div>
-        </div>
+                        <h5>Mitigate security and compliance risks</h5>
+                        <p>
+                            Get alerts for vulnerabilities and then automate security fixes across your entire codebase.
+                        </p>
+                    </>
+                }
+                rightColumn={
+                    <Blockquote
+                        inline={false}
+                        quote="At Criteo, developer happiness is our top priority-not just productivity. By providing them with the right tools, like Sourcegraph, we've found that increased productivity is a natural byproduct."
+                        author="Francois Jehl, Senior Engineering Manager at Criteo"
+                        logo={{
+                            src: '/external-logos/criteo-logo.svg',
+                            alt: 'Criteo logo',
+                            href: '/case-studies/criteo-tackles-big-code',
+                        }}
+                        link={{
+                            href: '/case-studies/criteo-tackles-big-code',
+                            text: 'Read the case study',
+                        }}
+                    />
+                }
+            />
+        </ContentSection>
 
-        <ContentSection color="white" className="py-7">
+        <ContentSection color="white">
             <TwoColumnSection
                 centerContent={true}
                 leftColumn={
@@ -193,12 +217,12 @@ export const CodeSearchPage: FunctionComponent = () => (
 
         <IntegrationsSection />
 
-        <Background variant="lightNebulousMars" className="py-7">
-            <div className="container d-flex flex-column align-items-center">
-                <h2 className="mb-3">Get started with Code Search</h2>
+        <Background variant="lightNebulousMars">
+            <div className="tw-max-w-screen-xl tw-mx-auto tw-py-5xl tw-px-6 tw-text-center">
+                <h2 className="tw-mb-xs">Get started with Code Search</h2>
                 <p>Connect your code hosts and experience universal code search.</p>
 
-                <div className="d-flex flex-column flex-sm-row mt-2 col-12 w-100">
+                <div className="tw-mt-sm tw-flex tw-flex-col xs:tw-flex-row tw-justify-center">
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
@@ -206,7 +230,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
-                            className="btn btn-primary mb-3 mb-sm-0 ml-sm-auto"
+                            className="btn btn-primary tw-mb-xs xs:tw-mb-0 xs:tw-mr-xs"
                         >
                             Request a demo
                         </a>
@@ -218,7 +242,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                             data-button-style={buttonStyle.outline}
                             data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
-                            className="btn btn-outline-primary ml-0 ml-sm-3 mr-sm-auto"
+                            className="btn btn-outline-primary"
                         >
                             Try Sourcegraph now
                         </a>
@@ -227,40 +251,7 @@ export const CodeSearchPage: FunctionComponent = () => (
             </div>
         </Background>
 
-        <ContentSection color="white" className="py-7">
-            <div className="col-lg-6">
-                <h2 className="font-weight-bold mb-6">Learn more</h2>
-            </div>
-
-            {[
-                {
-                    title: 'Key traits of a code intelligence platform',
-                    description:
-                        'Sourcegraph is more than search. Engage and enable your teams by helping developers get unblocked, resolve issues faster, and gain codebase insights.',
-                    type: 'Guide',
-                    href: '/guides/key-traits-of-a-code-intelligence-platform.pdf',
-                },
-                {
-                    title: 'How we used Notebooks to make our CI more accessible and understandable',
-                    description:
-                        'Learn how Notebooks—Sourcegraph’s in-app living documentaiton—makes it easier to document complex codebases.',
-                    type: 'Blog post',
-                    href: '/blog/notebooks-ci',
-                    img: {
-                        src: '/blog/thumbnails/notebooks-ci.jpg',
-                        alt: 'Sourcegraph Noebooks CI',
-                    },
-                },
-                {
-                    title: 'Dive into documentation',
-                    description: 'Learn everything you need to know about Code Search.',
-                    type: 'Docs',
-                    href: 'https://docs.sourcegraph.com/code_search',
-                },
-            ].map(post => (
-                <BlogResourceItem key={post.title} blog={post} />
-            ))}
-        </ContentSection>
+        <ResourceList items={blogResources} title="Learn More" />
     </Layout>
 )
 

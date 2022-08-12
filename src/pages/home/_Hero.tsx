@@ -3,13 +3,11 @@ import { FunctionComponent, useEffect, useState } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { CustomerLogos } from '@components'
+import { ContentSection, CustomerLogos } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 import meshLeft from './assets/hero/mesh-left.png'
 import meshRight from './assets/hero/mesh-right.png'
-
-import styles from './home.module.scss'
 
 const Hero: FunctionComponent = () => {
     const headlines: string[] = ['Understand and search', 'Fix vulnerabilities and issues', 'Automate key workflows']
@@ -28,31 +26,33 @@ const Hero: FunctionComponent = () => {
     })
 
     return (
-        <div className="bg-white py-5 py-md-7 px-2 position-relative">
+        <ContentSection parentClassName="tw-relative" color="white">
             {[meshLeft, meshRight].map((image, index) => (
                 <div
                     key={image.src}
-                    className={classNames(styles.mesh, 'd-none d-lg-block position-absolute top-0', {
-                        ['left-0']: index === 0,
-                        ['right-0']: index === 1,
+                    className={classNames('tw-hidden lg:tw-block tw-absolute tw-top-0', {
+                        ['tw-left-0']: index === 0,
+                        ['tw-right-0']: index === 1,
                     })}
                 >
                     <img src={image.src} alt="" draggable={false} className="w-100 h-500" />
-                    <div className={styles.bottomFade} />
+                    <div className="tw-absolute tw-bottom-0 tw-left-0 tw-w-full tw-h-[80px] tw-bg-gradient-to-b tw-from-transparent tw-to-white" />
                 </div>
             ))}
 
-            <div className="text-center max-w-750 mx-auto">
-                <h1 className={classNames(styles.heading, 'font-weight-bold')}>
-                    <span className="d-block mb-2 text-transparent bg-clip-text text-gradient">{headline}</span> across
-                    your entire codebase
+            <div className="tw-mx-auto tw-text-center max-w-750">
+                <h1 className="tw-text-4xl tw-leading-10 md:tw-text-6xl lg:tw-text-[3.75rem] lg:tw-leading-[1]">
+                    <span className="mb-2 tw-text-transparent tw-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">
+                        {headline}
+                    </span>{' '}
+                    across your entire codebase
                 </h1>
-                <p className="font-weight-bold my-5 max-w-700 mx-auto">
+                <p className="my-5 tw-mx-auto max-w-700 tw-font-semibold">
                     Understand, fix, and automate across your codebase with Sourcegraph's code intelligence platform
                 </p>
 
-                <div className="max-w-350 mx-auto flex-column flex-sm-row d-sm-flex align-items-center">
-                    <div className="col-sm-6 px-sm-0 mb-3 mb-sm-0 mr-sm-3">
+                <div className="tw-mx-auto max-w-350 tw-flex-col sm:tw-flex-row sm:tw-flex tw-items-center">
+                    <div className="mb-3 col-sm-6 sm:tw-px-0 mb-sm-0 mr-sm-3">
                         <Link href="/get-started/self-hosted" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
@@ -66,7 +66,7 @@ const Hero: FunctionComponent = () => {
                             </a>
                         </Link>
                     </div>
-                    <div className="col-sm-6 px-sm-0">
+                    <div className="col-sm-6 sm:tw-px-0">
                         <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
@@ -97,17 +97,17 @@ const Hero: FunctionComponent = () => {
                 </p>
             </div>
 
-            <div className="py-5 py-md-7">
+            <div className="tw-py-md md:tw-py-5xl">
                 <CustomerLogos />
             </div>
 
-            <div className="max-w-600 mx-auto text-center">
-                <h2 className="font-weight-bold">
+            <div className="tw-mx-auto tw-text-center max-w-600">
+                <h2 className="tw-mb-2">
                     Over{' '}
                     <Link href="/case-studies" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="text-vivid-violet"
+                            className="tw-text-violet-400"
                             title="1.2 Million engineers"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.hero}
@@ -130,7 +130,7 @@ const Hero: FunctionComponent = () => {
                     </a>
                 </Link>
             </div>
-        </div>
+        </ContentSection>
     )
 }
 

@@ -77,7 +77,7 @@ The following shows a _very_ reduced Go AST for the EKS API from the Go AWS SDK 
   <Figure 
     src="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-ast.svg" 
     alt="Go AST" 
-    className="shadow-none" 
+    shadow={false}
   />
 </a>
 
@@ -166,7 +166,7 @@ The cost of indexing an entire package is high enough that there is obvious, tan
 <Figure 
   src="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-parallel.svg" 
   alt="Parallelism diagram" 
-  className="shadow-none" 
+  shadow={false}
 />
 
 In the current version of lsif-go, all writes to the file are synchronized by a single goroutine controlling the output buffer. This ensures that for any single goroutine emitting elements, the order of the elements they emit will hit disk in the same order. This is important as LSIF requires that edges refer only to a vertex that has already been indexed.
@@ -180,7 +180,7 @@ The following chart show the comparison between lsif-go v0.9.0 (the un-optimized
 <Figure 
   src="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-perf-3.png" 
   alt="performance comparison"
-  className="shadow-none"
+  shadow={false}
 />
 
 Dropping the un-optimized v0.9.0 release from our data set, we get the following chart with better readability for the index time required by lsif-go v1.0.
@@ -188,7 +188,7 @@ Dropping the un-optimized v0.9.0 release from our data set, we get the following
 <Figure 
   src="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-perf-2.png" 
   alt="performance comparison" 
-  className="shadow-none"
+  shadow={false}
 />
 
 We're still working on improving performance so every language, every codebase, and every programmer gets fast, precise code intelligence. If you thought this post was interesting or valuable, we'd appreciate it if you'd share it with others!

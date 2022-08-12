@@ -5,8 +5,6 @@ import classNames from 'classnames'
 import { buttonStyle, buttonLocation } from '@data'
 import { TrySourcegraph } from 'components/TrySourcegraph'
 
-import styles from './whitePaperPage.module.scss'
-
 interface Props {
     title: string
     pdf?: string
@@ -18,19 +16,22 @@ interface Props {
 export const WhitePaperPage: FunctionComponent<Props> = ({ title, className, pdf, children, heroBackgroundImage }) => (
     <div className={className}>
         <div
-            className={classNames('jumbotron rounded-0 min-h-250 d-flex align-items-center text-light', className, {
-                [styles.hero]: heroBackgroundImage,
+            className={classNames('jumbotron min-h-250 tw-flex tw-items-center text-light', className, {
+                ['tw-bg-n-repeat tw-bg-cover tw-bg-center']: heroBackgroundImage,
             })}
             // eslint-disable-next-line react/forbid-dom-props
             style={heroBackgroundImage ? { backgroundImage: `url(${heroBackgroundImage})` } : undefined}
         >
-            <div className="container text-center py-5">
-                <span className="d-block mt-1 text-uppercase font-weight-bold">white paper</span>
-                <h1>{title}</h1>
+            <div className="container py-5 tw-text-center">
+                <div className="tw-flex-col-reverse tw-flex">
+                    <h1>{title}</h1>
+                    <h6 className="tw-mb-1 tw-block">white paper</h6>
+                </div>
+
                 {pdf && (
                     <a
                         href={pdf}
-                        className="btn btn-primary mt-4"
+                        className="tw-mt-3 btn btn-primary"
                         rel="noreferrer nofollow"
                         target="_blank"
                         title="Download PDF"
@@ -38,7 +39,6 @@ export const WhitePaperPage: FunctionComponent<Props> = ({ title, className, pdf
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        <i className="fa fa-file-pdf pr-2" />
                         Download PDF
                     </a>
                 )}

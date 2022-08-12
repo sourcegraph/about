@@ -1,36 +1,29 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import Link from 'next/link'
 
 interface BackButtonProps {
     href: string
     text: string
+    light?: boolean
 }
 
-export const BackButton: FunctionComponent<BackButtonProps> = ({ href, text }) => (
+export const BackButton: FunctionComponent<BackButtonProps> = ({ href, text, light = false }) => (
     <Link href={href} passHref={true}>
-        <div className="btn p-0 text-uppercase mb-3">
-            <ArrowLeftIcon className="mb-1" />
-            <span className="h6 font-weight-bold ml-3">{text}</span>
-        </div>
-    </Link>
-)
-
-export const BackButtonBold: FunctionComponent<BackButtonProps> = ({ href, text }) => (
-    <Link href={href} passHref={true}>
-        <div className="btn p-0 text-uppercase mb-3">
-            <ArrowLeftIcon className="mb-1" />
-            <span className="h6 font-weight-bolder ml-3">{text}</span>
-        </div>
-    </Link>
-)
-
-export const BackButtonLight: FunctionComponent<BackButtonProps> = ({ href, text }) => (
-    <Link href={href} passHref={true}>
-        <div className="btn p-0 text-uppercase mb-3 text-white">
-            <ArrowLeftIcon className="mb-1" />
-            <span className="h6 font-weight-bolder ml-3">{text}</span>
+        <div className="tw-uppercase tw-mb-4 tw-cursor-pointer">
+            <ArrowLeftIcon
+                className={classNames('tw-mb-1 tw-inline', { 'tw-text-white': light, 'tw-text-black': !light })}
+            />
+            <span
+                className={classNames('tw-text-lg tw-ml-4 tw-font-semibold', {
+                    'tw-text-white': light,
+                    'tw-text-black': !light,
+                })}
+            >
+                {text}
+            </span>
         </div>
     </Link>
 )

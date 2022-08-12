@@ -38,12 +38,12 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                 <>
                     <PodcastAudioPlayer source={frontmatter.audioSrc} />
 
-                    <div className="flex-1">
+                    <div className="tw-flex-1">
                         <div>
                             <Link href={`/podcast/${slugPath}`} passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="text-muted mr-4 font-weight-bold"
+                                    className="mr-4 text-muted"
                                     title="Permalink"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
@@ -56,7 +56,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                             <Link href={`/podcast/${slugPath}#notes`} passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="text-muted mr-4 font-weight-bold"
+                                    className="mr-4 text-muted"
                                     title="Show notes"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
@@ -68,7 +68,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                             <Link href={`/podcast/${slugPath}#transcript`} passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="text-muted mr-4 font-weight-bold"
+                                    className="mr-4 text-muted"
                                     title="Transcript"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
@@ -80,7 +80,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                             {frontmatter.videoID && (
                                 <a
                                     href={`https://www.youtube.com/v/${frontmatter.videoID}`}
-                                    className="text-muted mr-4 font-weight-bold"
+                                    className="mr-4 text-muted"
                                     target="_blank"
                                     rel="noreferrer"
                                     title="Watch the video"

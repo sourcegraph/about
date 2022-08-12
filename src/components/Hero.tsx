@@ -8,11 +8,12 @@ interface Hero extends Background {
     product?: 'code search' | 'batch changes' | 'code insights'
     title: string | ReactNode
     backButton?: ReactNode
-    leftCol?: ReactNode
+    leftColumn?: ReactNode
     subtitle?: string
     description?: string
     cta?: ReactNode
     displayUnderNav?: boolean
+    mergeColumns?: boolean
 }
 
 export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illustration'>> = ({
@@ -20,11 +21,11 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
     product,
     title,
     backButton,
-    leftCol,
+    leftColumn,
     subtitle,
-    description,
     cta,
     displayUnderNav = false,
+    mergeColumns = false,
 }) => {
     let illustration: Background['illustration']
     if (product) {
@@ -55,19 +56,17 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
     }, [rootReference, displayUnderNav])
 
     const mainContent = (
-        <div className={classNames(product && 'max-w-700 w-100')}>
+        <div className={classNames(product && 'tw-max-w-[700px] tw-w-full')}>
             {backButton}
 
-            <div className="d-flex flex-column-reverse">
-                <h1 className="display-2 font-weight-bold mb-4 whitespace-pre-line">{title}</h1>
-                {product && <div className="text-uppercase mb-2 font-weight-bold">{product}</div>}
+            <div className="tw-flex tw-flex-col-reverse">
+                <h1 className="tw-whitespace-pre-line">{title}</h1>
+                {product && <h6 className="mb-2">{product}</h6>}
             </div>
 
-            {subtitle && <h3 className="font-weight-normal max-w-800">{subtitle}</h3>}
+            {subtitle && <h3 className="max-w-800 tw-mb-sm">{subtitle}</h3>}
 
-            {description && <h5 className="mb-5 max-w-600 font-weight-normal">{description}</h5>}
-
-            {cta && <div className="d-flex flex-column pt-1 max-w-400">{cta}</div>}
+            {cta && <div className="tw-mt-md tw-flex tw-flex-col max-w-400">{cta}</div>}
         </div>
     )
 
@@ -76,20 +75,14 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
             <Background
                 variant={variant}
                 illustration={illustration}
-                className={classNames(
-                    'd-flex align-items-center',
-                    product && 'min-h-600',
-                    variant.includes('dark') && 'text-white'
-                )}
+                className={classNames('tw-flex tw-items-center tw-px-sm', variant.includes('dark') && 'tw-text-white')}
             >
-                <div className={classNames('container', !product && 'py-7')}>
-                    {leftCol ? (
+                <div className="tw-max-w-screen-xl tw-w-full tw-mx-auto tw-my-5xl">
+                    {leftColumn ? (
                         <TwoColumnSection
-                            centerContent={true}
-                            leftColumnSize="col-lg-4"
-                            rightColumnSize="col-lg-8"
-                            leftColumn={leftCol}
+                            leftColumn={leftColumn}
                             rightColumn={mainContent}
+                            mergeColumns={mergeColumns}
                         />
                     ) : (
                         mainContent

@@ -4,8 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { Layout, ContentSection, GatedResourceLayout, Hero } from '@components'
-import { buttonStyle, buttonLocation, breakpoints } from '@data'
-import { useWindowWidth } from '@hooks'
+import { buttonStyle, buttonLocation } from '@data'
 
 const speakers = [
     {
@@ -24,8 +23,6 @@ const speakers = [
 
 const Webinar: FunctionComponent = () => {
     const router = useRouter()
-    const windowWidth = useWindowWidth()
-    const isMdOrDown = windowWidth < breakpoints.lg
 
     return (
         <Layout
@@ -39,23 +36,21 @@ const Webinar: FunctionComponent = () => {
                     variant="marsCode"
                     title="Preparing for the Next Log4j"
                     subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
-                    leftCol={
-                        <div className="col-12 text-lg-center px-0 pb-5 pb-lg-0">
+                    leftColumn={
+                        <div className="tw-flex tw-items-center tw-h-full">
                             <img
-                                className={`border-right border-black ${
-                                    isMdOrDown ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'
-                                }`}
-                                width={isMdOrDown ? '65' : '95'}
+                                className="tw-border-r-2 md:tw-border-r-3 tw-border-r-black tw-inline tw-mr-xs tw-pr-xs md:tw-mr-sm md:tw-pr-sm tw-w-[65px] md:tw-w-[95px]"
                                 src="/sourcegraph/sourcegraph-mark.svg"
                                 alt="Sourcegraph mark"
                             />
                             <img
-                                height={isMdOrDown ? '15' : '22'}
                                 src="/external-logos/nutanix-logo.svg"
                                 alt="Nutanix logo"
+                                className="tw-inline tw-h-[15px] md:tw-h-[22px]"
                             />
                         </div>
                     }
+                    mergeColumns={true}
                 />
             }
         >
@@ -70,7 +65,7 @@ const Webinar: FunctionComponent = () => {
                     })
                 }
                 description={
-                    <section className="col-md-6 col-12 pr-lg-6">
+                    <section className="col-md-6 col-12 lg:tw-pr-3xl">
                         <p>
                             For Nutanix, when 20,000+ of the world's most advanced data centers rely on your company's
                             software, any security vulnerability is a concern. But when the Log4j vulnerability hit,
@@ -103,12 +98,12 @@ const Webinar: FunctionComponent = () => {
                 }
                 videoSrc="https://www.youtube.com/embed/ANcbjQJ0OGI"
                 learnMoreCTA={
-                    <ContentSection className="d-flex flex-column align-items-center py-7">
-                        <h1 className="font-weight-bold text-center">Interesting in learning more?</h1>
+                    <ContentSection className="tw-flex tw-flex-col tw-items-center">
+                        <h1 className="tw-text-center">Interesting in learning more?</h1>
                         <Link href="/case-studies/nutanix-fixed-log4j-with-sourcegraph" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="btn btn-primary mt-4 col-12 col-md-5 col-xl-3"
+                                className="mt-4 btn btn-primary col-12 col-md-5 col-xl-3"
                                 title="Read the Nutanix Case Study"
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.body}

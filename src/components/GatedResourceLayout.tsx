@@ -1,5 +1,6 @@
 import { FunctionComponent, ReactNode } from 'react'
 
+import classNames from 'classnames'
 import { useRouter } from 'next/router'
 
 import { ContentSection, HubSpotForm, DemioForm } from '@components'
@@ -47,73 +48,67 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             {hasWatchNowQuery ? (
                 // ---- RECORDING BODY VARIATION ----
                 <div className="bg-white">
-                    <section className="py-6 py-lg-7 container video-embed embed-responsive embed-responsive-16by9">
+                    <div className="container tw-py-3xl lg:tw-py-5xl video-embed embed-responsive embed-responsive-16by9">
                         <iframe
-                            className="p-md-7 embed-responsive-item"
+                            className="md:tw-p-5xl embed-responsive-item"
                             src={videoSrc}
                             allowFullScreen={true}
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             frameBorder={0}
                             title={title}
                         />
-                    </section>
+                    </div>
 
-                    <div className="bg-light-gray-3">{learnMoreCTA}</div>
+                    <div className="tw-bg-gray-100">{learnMoreCTA}</div>
                 </div>
             ) : (
                 // ---- DEFAULT BODY VARIATION ----
-                <section className="bg-white py-6 py-lg-7">
-                    <ContentSection className="d-flex flex-column-reverse flex-md-row px-0">
-                        {description}
+                <ContentSection color="white" className="tw-flex tw-flex-col-reverse md:tw-flex-row">
+                    {description}
 
-                        <div className="col-md-6 col-12 pb-md-0 pb-6">
-                            <h2 className="font-weight-bold">{formLabel}</h2>
-                            <div className="border-saturn border border-3 shadow-sm py-4 px-4 mt-3 px-0">
-                                {!hasWatchNowQuery && !demioForm && (
-                                    <HubSpotForm
-                                        masterFormName="gatedMulti"
-                                        onFormSubmitted={onFormSubmitted}
-                                        inlineMessage={
-                                            inlineMessage ||
-                                            (resource &&
-                                                `Enjoy your copy of <a href="${resource}" target="_blank" rel="noopener noreferrer">${title}</a>`)
-                                        }
-                                    />
-                                )}
-                                {!hasWatchNowQuery && demioForm && (
-                                    <DemioForm
-                                        formId={demioForm.formId}
-                                        formClassName={demioForm.formClassName}
-                                        buttonText={demioForm.buttonText || 'Submit'}
-                                    />
-                                )}
-                            </div>
+                    <div className="tw-pb-3xl col-md-6 col-12 md:tw-pb-0">
+                        <h2>{formLabel}</h2>
+                        <div className="mt-3 tw-p-sm tw-drop-shadow sg-border-gradient-saturn tw-border-solid tw-border-3">
+                            {!hasWatchNowQuery && !demioForm && (
+                                <HubSpotForm
+                                    masterFormName="gatedMulti"
+                                    onFormSubmitted={onFormSubmitted}
+                                    inlineMessage={
+                                        inlineMessage ||
+                                        (resource &&
+                                            `Enjoy your copy of <a href="${resource}" target="_blank" rel="noopener noreferrer">${title}</a>`)
+                                    }
+                                />
+                            )}
+                            {!hasWatchNowQuery && demioForm && (
+                                <DemioForm
+                                    formId={demioForm.formId}
+                                    formClassName={demioForm.formClassName}
+                                    buttonText={demioForm.buttonText || 'Submit'}
+                                />
+                            )}
                         </div>
-                    </ContentSection>
+                    </div>
 
                     {children}
-                </section>
+                </ContentSection>
             )}
 
             {speakers?.length && (
-                <section className="bg-white pb-7">
-                    <ContentSection>
-                        <h2 className="font-weight-bold">Speakers</h2>
+                <ContentSection color="white" parentClassName={classNames({ 'tw-pt-0': !hasWatchNowQuery })}>
+                    <h2>Speakers</h2>
 
-                        <section className="d-flex flex-wrap">
-                            {speakers.map((speaker: Speaker) => (
-                                <div key={speaker.name} className="col-lg-5 col-md-6 col-12 pl-0 pr-lg-7">
-                                    <img className="py-4" width="140" src={speaker.img} alt={speaker.name} />
-                                    <h5 className="font-weight-bold">{speaker.name}</h5>
-                                    <figcaption className="h6 font-weight-normal text-muted max-w-md-250 my-2">
-                                        {speaker.title}
-                                    </figcaption>
-                                    <p>{speaker.bio}</p>
-                                </div>
-                            ))}
-                        </section>
-                    </ContentSection>
-                </section>
+                    <section className="tw-flex-wrap tw-flex">
+                        {speakers.map((speaker: Speaker) => (
+                            <div key={speaker.name} className="tw-pl-0 col-lg-5 col-md-6 col-12 lg:tw-pr-5xl">
+                                <img className="tw-py-sm" width="140" src={speaker.img} alt={speaker.name} />
+                                <h5>{speaker.name}</h5>
+                                <figcaption className="tw-my-xxs text-muted max-w-md-250">{speaker.title}</figcaption>
+                                <p>{speaker.bio}</p>
+                            </div>
+                        ))}
+                    </section>
+                </ContentSection>
             )}
         </>
     )

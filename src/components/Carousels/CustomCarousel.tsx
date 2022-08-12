@@ -41,29 +41,25 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
 
     const windowWidth = useWindowWidth()
     const isMdOrDown = windowWidth < breakpoints.lg
-    const isLgOrUp = windowWidth > breakpoints.md
 
     return (
         <div>
-            {title && (
-                <h2 className="display-3 text-md-center mx-md-auto max-w-700 font-weight-bold mt-lg-3 mb-6">{title}</h2>
-            )}
+            {title && <h2 className="tw-mb-3xl tw-text-center md:tw-mx-auto">{title}</h2>}
 
             <div
                 className={classNames(
-                    'd-flex flex-wrap align-items-center',
-                    autoAdvance ? 'justify-content-center' : 'flex-lg-row flex-column py-8'
+                    'tw-flex flex-wrap tw-items-center',
+                    autoAdvance ? 'tw-justify-center' : 'lg:tw-flex-row tw-flex-col py-8'
                 )}
             >
                 {/* Mobile Image Caption (Button Label) */}
                 {hasImages && (
-                    <div className="d-block d-lg-none mb-lg-0 mb-5 mx-md-auto">
+                    <div className="mb-5 tw-block lg:tw-hidden mb-lg-0 md:tw-mx-auto">
                         {carouselItems.map((item, index) => (
-                            <h2
+                            <h3
                                 className={classNames(
-                                    'd-none',
-                                    item === carouselHook.carouselItems.currentItem &&
-                                        'd-block display-5 font-weight-bold'
+                                    'tw-hidden tw-text-center',
+                                    item === carouselHook.carouselItems.currentItem && 'tw-block'
                                 )}
                                 key={item.title}
                                 onClick={() => carouselHook.moveCarousel(index)}
@@ -71,7 +67,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                                 role="presentation"
                             >
                                 {item.title}
-                            </h2>
+                            </h3>
                         ))}
                     </div>
                 )}
@@ -80,12 +76,12 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                 <div
                     className={
                         carouselHook.autoAdvance
-                            ? 'd-lg-flex flex-column justify-content-between d-none col-md-2 m-0 px-0 col-lg-5'
-                            : 'd-lg-flex d-none ml-lg-7 col-lg-4 h-550'
+                            ? 'lg:tw-flex tw-flex-col tw-justify-between tw-hidden col-md-2 m-0 tw-px-0 col-lg-5'
+                            : 'lg:tw-flex tw-hidden ml-lg-7 col-lg-4 h-550'
                     }
                 >
                     <ArrowUpIcon
-                        className="mb-4 cursor-pointer"
+                        className="mb-4 tw-cursor-pointer"
                         onClick={() => carouselHook.moveCarousel('decrement')}
                         onKeyDown={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
@@ -95,11 +91,11 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                     {carouselItems.map((item, index) => (
                         <div
                             className={classNames(
-                                'custom-carousel-item cursor-pointer display-5 max-w-375 py-2 mb-0',
+                                'custom-carousel-item tw-cursor-pointer display-5 max-w-375 py-2 tw-mb-0',
                                 animateTransition
                                     ? item === carouselHook.carouselItems.currentItem
-                                        ? 'transition-5 text-black border-saturn border border-2 px-2'
-                                        : 'text-gray-300'
+                                        ? 'tw-transition-all tw-duration-500 tw-ease-in-out tw-text-black sg-border-gradient-saturn tw-border-2 tw-border-solid tw-px-2'
+                                        : 'tw-text-gray-300'
                                     : '',
                                 index !== carouselItems.length - 1 ? 'mb-2' : 'mb-0'
                             )}
@@ -113,7 +109,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                             <h5
                                 className={classNames(
                                     'mb-1',
-                                    animateTransition ? 'text-lg' : 'font-weight-normal',
+                                    animateTransition ? 'tw-text-lg' : 'font-weight-normal',
                                     !animateTransition &&
                                         item === carouselHook.carouselItems.currentItem &&
                                         'font-weight-bold'
@@ -125,7 +121,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                         </div>
                     ))}
                     <ArrowDownIcon
-                        className="mt-4 cursor-pointer"
+                        className="mt-4 tw-cursor-pointer"
                         onClick={() => carouselHook.moveCarousel()}
                         onKeyDown={() => carouselHook.moveCarousel()}
                         color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
@@ -137,30 +133,34 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                 {/* Carousel Item */}
                 <div
                     className={classNames(
-                        'position-relative col-lg-5 col-md-10 col-sm-12 p-4 py-5 d-flex align-items-center justify-content-lg-start justify-content-center',
-                        hasImages ? 'h-500' : animateTransition && !isMdOrDown ? 'bg-light-gray-5 h-550' : 'h-300'
+                        'tw-relative col-lg-5 col-md-10 col-sm-12 p-4 py-5 tw-flex tw-items-center lg:tw-justify-start tw-justify-center',
+                        hasImages
+                            ? 'tw-min-h-[500px]'
+                            : animateTransition && !isMdOrDown
+                            ? 'tw-bg-gray-50 h-550'
+                            : 'tw-min-h-[300px]'
                     )}
                 >
                     {carouselItems.map(item => (
                         <div
                             key={item.title}
                             className={classNames(
-                                animateTransition && 'position-absolute',
+                                animateTransition && 'tw-absolute',
                                 animateTransition
                                     ? item === carouselHook.carouselItems.currentItem
-                                        ? 'transition-1 opacity-100 w-xl-450 w-lg-350'
-                                        : 'opacity-0'
+                                        ? 'tw-transition-all tw-duration-1000 tw-ease-in-out tw-opacity-100 w-xl-450 w-lg-350'
+                                        : 'tw-opacity-0'
                                     : '',
                                 !animateTransition
                                     ? item === carouselHook.carouselItems.currentItem
-                                        ? 'd-block'
-                                        : 'd-none'
+                                        ? 'tw-block'
+                                        : 'tw-hidden'
                                     : ''
                             )}
                         >
                             {!autoAdvance && (
                                 <>
-                                    <h1 className="font-weight-bold mb-lg-4 display-2">{item.title}</h1>
+                                    <h1 className="mb-lg-4">{item.title}</h1>
                                 </>
                             )}
                             <div>{item.text}</div>
@@ -169,13 +169,13 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                 </div>
 
                 {/* Mobile Indicators */}
-                <div className="d-lg-none d-flex align-items-center mx-auto my-4">
+                <div className="my-4 tw-mx-auto lg:tw-hidden tw-flex tw-items-center">
                     <ArrowLeftIcon
-                        className="mr-4 cursor-pointer"
+                        className="mr-4 tw-cursor-pointer"
                         onClick={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
-                    <div>
+                    <div className="tw-flex">
                         {carouselItems.map((item, index) => (
                             <CircleSmallIcon
                                 color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
@@ -187,7 +187,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                         ))}
                     </div>
                     <ArrowRightIcon
-                        className="ml-4 cursor-pointer"
+                        className="ml-4 tw-cursor-pointer"
                         onClick={() => carouselHook.moveCarousel()}
                         color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />

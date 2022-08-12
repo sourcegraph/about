@@ -15,12 +15,12 @@ export const RequestDemoForm: FunctionComponent<Props> = ({
     demoFormURL = '/demo',
 }) => (
     <ContentSection color="black" className="col-sm-12 col-md-9 col-lg-7">
-        <div className="container text-center pt-6">
-            <h3 className="display-3 font-weight-bold">{title}</h3>
+        <div className="container tw-pt-3xl tw-pb-xxs tw-text-center">
+            <h3>{title}</h3>
             <p>{description}</p>
             <a
                 href={demoFormURL}
-                className="btn btn-primary mx-2 mb-3"
+                className="tw-mt-3 btn btn-primary"
                 title="Request a demo"
                 data-button-style={buttonStyle.primary}
                 data-button-location={buttonLocation.bodyDemo}

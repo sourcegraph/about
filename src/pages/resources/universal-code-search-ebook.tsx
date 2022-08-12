@@ -15,11 +15,11 @@ export const UniversalCodeSearchEbook: FunctionComponent = () => (
             title="Universal Code Search"
             description="Ship better software faster with Sourcegraph Universal Code Search with enhanced code search, review, and code change management."
             className="text-dark"
-            titleClassName="display-2 font-weight-bold"
+            titleClassName=""
         >
             <div className="bg-white text-dark">
-                <div className="container-lg py-6 px-5">
-                    <div className="row flex-wrap-reverse">
+                <div className="px-5 py-6 container-lg">
+                    <div className="flex-wrap-reverse row">
                         <div className="col-md-4">
                             <p>By Quinn Slack and Beyang Liu</p>
                             <p>
@@ -30,7 +30,7 @@ export const UniversalCodeSearchEbook: FunctionComponent = () => (
                             </p>
 
                             <p>With this ebook, you will learn:</p>
-                            <ul>
+                            <ul className="my-3">
                                 <li>What is Universal Code Search</li>
                                 <li>Top reasons developers rely on Sourcegraph</li>
                                 <li>How to improve code reviews with code navigation</li>
@@ -41,11 +41,11 @@ export const UniversalCodeSearchEbook: FunctionComponent = () => (
                             <img
                                 src="/external-logos/sourcegraph-universal-code-search-ebook-v1.jpg"
                                 alt="Download: Universal Code Search and Intelligence"
-                                className="landing-page__img"
+                                className="tw-max-w-[250px] tw-mx-auto"
                             />
                         </div>
                         <div className="col-md-4">
-                            <h3 className="font-weight-light font-sans">Get your free ebook.</h3>
+                            <h3>Get your free ebook.</h3>
                             <div className="mt-5">
                                 <HubSpotForm
                                     masterFormName="gatedMulti"

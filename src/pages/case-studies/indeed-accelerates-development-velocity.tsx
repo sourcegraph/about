@@ -15,7 +15,7 @@ export const CaseStudy: FunctionComponent = () => {
                 description:
                     'Indeed case study. Learn how Indeed keeps code up to date and accelerates development velocity',
             }}
-            className="navbar-dark bg-black"
+            className="navbar-dark tw-bg-black"
         >
             <CaseStudyLayout
                 customer="Indeed"
@@ -27,7 +27,7 @@ export const CaseStudy: FunctionComponent = () => {
                     image: '/case-studies/jared-hodge-indeed.jpg',
                 }}
             >
-                <ContentSection color="white" className="col-md-6">
+                <ContentSection color="white">
                     <div className="container">
                         <p>
                             Indeed is a multinational job search website with over 11,000 employees and approximately
@@ -35,7 +35,7 @@ export const CaseStudy: FunctionComponent = () => {
                             countries.
                         </p>
 
-                        <h2 className="pt-5 pb-1">Finding and fixing problematic code</h2>
+                        <h2 className="tw-pt-md tw-pb-1">Finding and fixing problematic code</h2>
 
                         <p>
                             Developers at Indeed often need to either remove or update specific code patterns or
@@ -76,7 +76,7 @@ export const CaseStudy: FunctionComponent = () => {
                             accomplish.
                         </p>
 
-                        <h2 className="pt-5 pb-1">
+                        <h2 className="tw-pt-md tw-pb-1">
                             Reducing the manual work required for large-scale code updates by 90%
                         </h2>
 
@@ -113,7 +113,7 @@ export const CaseStudy: FunctionComponent = () => {
                             easier and faster than making the change manually.
                         </p>
 
-                        <h3 className="pt-5 pb-1">Saving engineering time</h3>
+                        <h3 className="tw-pt-md tw-pb-1">Saving engineering time</h3>
 
                         <p>
                             There's quite a bit of variability in the amount of work required to remove every instance
@@ -126,7 +126,7 @@ export const CaseStudy: FunctionComponent = () => {
                             author={jaredHodge}
                         />
 
-                        <h3 className="pt-5 pb-1">Reducing invisible taxes</h3>
+                        <h3 className="tw-pt-md tw-pb-1">Reducing invisible taxes</h3>
 
                         <p>
                             “There's all these little hidden things that tax the velocity of the teams,” Hodge said.

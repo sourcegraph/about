@@ -13,7 +13,7 @@ export const CaseStudy: FunctionComponent = () => {
                     'Sourcegraph case study: Learn how Sourcegraph helped Lyft ensure (largely) issue-free production deploys during their monolith to microservices decomposition',
                 // image: "https://about.sourcegraph.com/lyft-sourcegraph-case-study-og-embed.jpg"-pending approval
             }}
-            className="navbar-dark bg-black"
+            className="navbar-dark tw-bg-black"
         >
             <CaseStudyLayout
                 customer="Lyft"
@@ -26,7 +26,7 @@ export const CaseStudy: FunctionComponent = () => {
                 }}
                 pdf="https://sourcegraphstatic.com/Lyft-Sourcegraph-case-study.pdf"
             >
-                <ContentSection color="white" className="col-md-6">
+                <ContentSection color="white">
                     <div className="container">
                         <p>
                             Lyft's mission is to improve people's lives with the world's best transportation. With over
@@ -41,7 +41,7 @@ export const CaseStudy: FunctionComponent = () => {
                             author={justinPhilips}
                         />
 
-                        <h2 className="pt-5 pb-1">From monolith to microservices</h2>
+                        <h2 className="tw-pt-md tw-pb-1">From monolith to microservices</h2>
 
                         <p>
                             The largest refactoring effort in Lyft's 10-year history came in 2018 when the number one
@@ -76,7 +76,7 @@ export const CaseStudy: FunctionComponent = () => {
                             author={justinPhilips}
                         />
 
-                        <h2 className="pt-5 pb-1">
+                        <h2 className="tw-pt-md tw-pb-1">
                             The refactoring and the decomposition of legacy applications is constant
                         </h2>
 
@@ -103,7 +103,7 @@ export const CaseStudy: FunctionComponent = () => {
                             author="Aneesh Agrawal, Software Engineer, Lyft"
                         />
 
-                        <p className="pb-5">
+                        <p className="tw-pb-md">
                             Using Sourcegraph code search, Lyft software engineers were able to verify the migration and
                             deprecation of code from their monolith to microservices at scale, significantly reducing
                             the risk to production stability during deployment of the new microservices.

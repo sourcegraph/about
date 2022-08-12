@@ -22,7 +22,7 @@ export const Guide: FunctionComponent = () => (
             formLabel="Download the guide"
             resource="/guides/fixing-vulnerabilities-less-is-more.pdf"
             description={
-                <section className="col-md-6 col-12 pr-lg-6">
+                <section className="col-md-6 col-12 lg:tw-pr-3xl">
                     <p>
                         When your company first got word of Log4j and the Log4Shell vulnerability, did you have the
                         tools in place to immediately fix it across every line of code in your organization? When the

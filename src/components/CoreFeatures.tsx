@@ -130,9 +130,9 @@ export const CoreFeatures: FunctionComponent = () => {
 
     return (
         <>
-            <div className="text-center mt-8 pt-4 mb-7">
-                <h1 className="font-weight-bold">How teams use Sourcegraph</h1>
-                <p className="max-w-500 mx-auto">
+            <div className="tw-text-center mb-7">
+                <h2>How teams use Sourcegraph</h2>
+                <p className="tw-mx-auto max-w-500">
                     Sourcegraph's code intelligence platform is built with features that help you understand, fix, and
                     automate across your entire codebase.
                 </p>
@@ -141,21 +141,23 @@ export const CoreFeatures: FunctionComponent = () => {
             {features.map((feature, index) => (
                 <div
                     key={feature.productFeature}
-                    className={classNames('row flex-column-reverse flex-lg-row', {
-                        'flex-lg-row-reverse': index % 2,
+                    className={classNames('row tw-flex-col-reverse lg:tw-flex-row', {
+                        'lg:tw-flex-row-reverse': index % 2,
                         'mb-8': index !== features.length - 1,
                     })}
                 >
                     <div
                         className={classNames('col-lg-6', {
-                            'pr-lg-7 pl-lg-0': index % 2 === 0,
-                            'pl-lg-7 pr-lg-0': index % 2,
+                            'lg:tw-pr-5xl lg:tw-pl-0': index % 2 === 0,
+                            'lg:tw-pl-5xl lg:tw-pr-0': index % 2,
                         })}
                     >
-                        <small className="text-uppercase font-weight-bold d-block mb-2">{feature.productFeature}</small>
+                        <span className="tw-mb-2 tw-text-md tw-uppercase tw-font-semibold tw-block">
+                            {feature.productFeature}
+                        </span>
                         <h2>{feature.title}</h2>
                         <p>{feature.description}</p>
-                        <ul>
+                        <ul className="my-3">
                             {feature.details.map(detail => (
                                 <li key={detail}>{detail}</li>
                             ))}
@@ -165,7 +167,7 @@ export const CoreFeatures: FunctionComponent = () => {
                                 href={feature.ctaLink}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="btn btn-outline-primary mt-2"
+                                className="mt-2 btn btn-outline-primary"
                                 title={`Learn more about ${startCase(feature.productFeature)}`}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
@@ -177,7 +179,7 @@ export const CoreFeatures: FunctionComponent = () => {
                             <Link href={feature.ctaLink} passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="btn btn-outline-primary mt-2"
+                                    className="mt-2 btn btn-outline-primary"
                                     title={'Learn more about ' + startCase(feature.productFeature)}
                                     data-button-style={buttonStyle.outline}
                                     data-button-location={buttonLocation.body}
@@ -189,9 +191,9 @@ export const CoreFeatures: FunctionComponent = () => {
                         )}
                     </div>
 
-                    <div className="col-lg-6 mb-6 mb-lg-0 py-0 px-5">
+                    <div className="px-5 tw-py-0 mb-6 col-lg-6 mb-lg-0">
                         <video
-                            className={`shadow w-100 max-w-550 d-block mx-auto rounded video-${index}`}
+                            className={`shadow w-100 max-w-550 tw-block tw-mx-auto tw-rounded video-${index}`}
                             autoPlay={false}
                             muted={true}
                             loop={true}

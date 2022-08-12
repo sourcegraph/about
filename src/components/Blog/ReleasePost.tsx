@@ -34,20 +34,20 @@ export const ReleasePost: FunctionComponent<Props> = ({
                 </div>
             )}
 
-            <h3 className="card-body pb-2 pt-4 m-0 release-post__changelog-header">Changelog highlights</h3>
+            <h3 className="tw-pt-sm tw-pb-xxs m-0 card-body release-post__changelog-header">Changelog highlights</h3>
 
-            <div className="release-post__items list-group list-group-flush">
+            <div className="tw-border-y tw-border-solid tw-border-gray-200 list-group list-group-flush">
                 {post.frontmatter.changelogItems?.map(({ url, category, description }) => (
                     <a
                         href={url}
-                        className="release-post__item d-md-flex list-group-item list-group-item-action"
+                        className="release-post__item md:tw-flex list-group-item list-group-item-action"
                         key={url}
                         title={`${category}: ${description}`}
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        <span className="release-post__item-category mb-2 mb-md-0">
+                        <span className="mb-2 release-post__item-category mb-md-0">
                             <span className="release-post__item-category-badge">{category}</span>
                         </span>
                         <span className="release-post__item-description">{description}</span>
@@ -55,7 +55,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                 ))}
             </div>
 
-            <ul className="card-body list-unstyled d-flex flex-wrap mb-0">
+            <ul className="tw-mb-0 tw-py-4 tw-flex-wrap tw-list-none tw-flex-col md:tw-flex-row md:tw-flex">
                 <li className="release-post__help-item">
                     <a
                         href="https://docs.sourcegraph.com/admin/install"
@@ -78,7 +78,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                         How to upgrade
                     </a>
                 </li>
-                <li className="flex-1" />
+                <li className="tw-flex-1" />
                 <li className="release-post__help-item">
                     <a
                         href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
@@ -118,7 +118,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                         <Link href={url} passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="d-block"
+                                className="tw-block"
                                 title={post.frontmatter.title}
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}

@@ -13,29 +13,30 @@ const CaseStudiesHome: FunctionComponent = () => (
                     "Learn how engineering teams use Sourcegraph's code intelligence platform to understand, fix, and automate across their entire codebase.",
             }}
         >
-            <div className="mt-2">
-                <ContentSection className="hero-section text-center py-5">
-                    <h1 className="display-2 font-weight-bold">Sourcegraph case studies</h1>
-                    <h4 className="font-weight-normal py-2">
-                        Learn how engineering teams understand, fix, and automate across their entire codebase
-                    </h4>
-                </ContentSection>
+            <div>
+                <div className="tw-text-center tw-py-lg tw-px-6">
+                    <h1 className="tw-mb-xs">Sourcegraph case studies</h1>
+                    <h4>Learn how engineering teams understand, fix, and automate across their entire codebase</h4>
+                </div>
+
+                <div className="tw-max-w-screen-xl tw-mx-auto tw-px-6">
+                    <ul className="tw-flex-wrap tw-grid tw-grid-cols-12 tw-list-none tw-ml-0 tw-gap-6">
+                        {CASESTUDIES.map(study => (
+                            <li
+                                className="grid-cols-4 tw-flex tw-col-span-12 md:tw-col-span-6 lg:tw-col-span-4"
+                                key={study.name}
+                            >
+                                <div className="tw-bg-white tw-border tw-border-solid tw-border-gray-200 tw-w-full tw-p-sm">
+                                    <CaseStudyCard study={study} />
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
 
                 <ContentSection>
-                    <div className="container">
-                        <div className="d-flex flex-wrap">
-                            {CASESTUDIES.map(study => (
-                                <div className="d-flex col-md-6 col-lg-4 mb-6" key={study.name}>
-                                    <div className="card w-100">
-                                        <CaseStudyCard study={study} />
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                    <TrySourcegraph />
                 </ContentSection>
-
-                <TrySourcegraph className="my-6" />
             </div>
         </Layout>
     </>

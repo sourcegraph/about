@@ -6,8 +6,6 @@ import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
 
-import styles from './CaseStudyCard.module.scss'
-
 interface CaseStudy {
     name: string
     logo: string
@@ -115,48 +113,48 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
     study: { name, logo, altTitle, title, url, linkText = 'Read the case study' },
     bwLogo,
 }) => (
-    <div className="flex-grow-1">
-        <div className="card-body">
+    <div className="tw-grow">
+        <div className="md:tw-pr-12">
             <img
-                className={classNames(styles.logo, 'max-w-200 mb-4', { 'brightness-0': bwLogo })}
+                className={classNames('tw-max-w-[135px] tw-h-[60px] mb-4', { 'tw-brightness-0': bwLogo })}
                 height="60"
                 src={logo}
                 alt={`${name} logo`}
             />
-            {altTitle && <h5 className="font-weight-bold">{altTitle}</h5>}
+            {altTitle && <h5>{altTitle}</h5>}
             <p className="card-text">
                 {title}{' '}
-                <span className="text-nowrap">
+                <div className="tw-mt-2">
                     {url.includes('http') ? (
                         <a
                             href={url}
-                            className="card-link"
                             target="_blank"
                             rel="nofollow noreferrer"
                             title={linkText + ': ' + title}
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
                             data-button-type="cta"
+                            className="tw-font-bold tw-no-underline"
                         >
                             {linkText}
-                            <ArrowRightIcon size={20} className="ml-1" />
+                            <ArrowRightIcon size={20} className="ml-1 tw-inline" />
                         </a>
                     ) : (
                         <Link href={url} passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="card-link"
                                 title={linkText + ': ' + title}
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
+                                className="tw-font-bold tw-no-underline"
                             >
                                 {linkText}
-                                <ArrowRightIcon size={20} className="ml-1" />
+                                <ArrowRightIcon size={20} className="ml-1 tw-inline" />
                             </a>
                         </Link>
                     )}
-                </span>
+                </div>
             </p>
         </div>
     </div>

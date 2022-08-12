@@ -1,3 +1,10 @@
+/**
+ * NOTICE
+ *
+ * These spacings are considered deprecated. Please reference Tailwind CSS
+ * for width and height syntax.
+ */
+
 @use 'sass:map';
 
 $maxBreakpoint: map.get($grid-breakpoints, 'xl');
@@ -59,14 +66,4 @@ $maxBreakpoint: map.get($grid-breakpoints, 'xl');
             }
         }
     }
-}
-
-.h-auto {
-    height: auto;
-}
-.min-h-auto {
-    min-height: auto;
-}
-.min-w-auto {
-    min-width: auto;
 }

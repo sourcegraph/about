@@ -6,22 +6,22 @@ import UploadIcon from 'mdi-react/UploadIcon'
 import Link from 'next/link'
 
 import {
-    BackButtonBold,
+    BackButton,
     Blockquote,
-    BlogResourceItem,
     CustomCarousel,
     ContentSection,
     CustomerLogos,
     Layout,
     ThreeUpText,
+    TwoColumnSection,
+    Background,
+    ResourceList,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
-import styles from './useCases.module.scss'
-
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2 className="display-5 font-weight-bold mb-lg-0 mb-5">{header}</h2>
+        <h3 className="tw-mb-8 lg:tw-mb-0">{header}</h3>
         {text}
     </>
 )
@@ -172,24 +172,20 @@ const blogResourceItems = [
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="mb-4 text-blurple" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Find answers across all repositories</h4>,
+        icon: <MagnifyIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        subtitle: 'Find answers across all repositories',
         description:
             'Codebases grow increasingly complex over time. Sourcegraph enables developers to search everything at once without needing to clone and search locally.',
     },
     {
-        icon: <UploadIcon className="mb-4 text-blurple" size={40} />,
-        subtitle: (
-            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">
-                Share knowledge quickly with links to specific code
-            </h4>
-        ),
+        icon: <UploadIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        subtitle: 'Share knowledge quickly with links to specific code',
         description:
             'Knowledge sharing takes time. With Sourcegraph, developers can share links directly to specific lines of code and ask questions with context included.',
     },
     {
-        icon: <CompassOutlineIcon className="mb-4 text-blurple" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Navigate and understand large codebases</h4>,
+        icon: <CompassOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        subtitle: 'Navigate and understand large codebases',
         description:
             "Make new codebases approachable, not aggravating. Search across all your repositories in one place with Sourcegraph's IDE-inspired features.",
     },
@@ -204,65 +200,61 @@ const UseCasePage: FunctionComponent = () => (
         }}
         className="use-cases-page navbar-light"
         hero={
-            <>
-                <div className={styles.pageHeader}>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-7 my-7">
-                                <BackButtonBold href="/use-cases" text="USE CASES" />
-                                <h1 className="display-2 font-weight-bold mb-4">Accelerate developer onboarding</h1>
-                                <div className="display-4 font-weight-normal mb-5">
-                                    Decrease time to first commit for new developers, help existing engineers master
-                                    your codebase, and fast-track full codebase understanding.
+            <Background variant="lightNebulousVenus2">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-7 my-7">
+                            <BackButton href="/use-cases" text="USE CASES" />
+                            <h1 className="mb-4">Accelerate developer onboarding</h1>
+                            <div className="mb-5">
+                                Decrease time to first commit for new developers, help existing engineers master your
+                                codebase, and fast-track full codebase understanding.
+                            </div>
+                            <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
+                                <div className="mb-3 mb-md-0">
+                                    <Link href="/demo" passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a
+                                            className="btn btn-primary w-100 max-w-350"
+                                            title="Request a Demo."
+                                            data-button-style={buttonStyle.primary}
+                                            data-button-location={buttonLocation.hero}
+                                            data-button-type="cta"
+                                        >
+                                            Request a demo
+                                        </a>
+                                    </Link>
                                 </div>
-                                <div className="flex-column flex-md-row d-md-flex text-center">
-                                    <div className="mb-3 mb-md-0">
-                                        <Link href="/demo" passHref={true}>
-                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                            <a
-                                                className="btn btn-primary w-100 max-w-350"
-                                                title="Request a Demo."
-                                                data-button-style={buttonStyle.primary}
-                                                data-button-location={buttonLocation.hero}
-                                                data-button-type="cta"
-                                            >
-                                                Request a demo
-                                            </a>
-                                        </Link>
-                                    </div>
-                                    <div className="ml-md-3">
-                                        <Link href="/get-started/self-hosted" passHref={true}>
-                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                            <a
-                                                className="btn btn-outline-primary w-100 max-w-350"
-                                                title="Try Sourcegraph."
-                                                data-button-style={buttonStyle.outline}
-                                                data-button-location={buttonLocation.hero}
-                                                data-button-type="cta"
-                                            >
-                                                Try Sourcegraph now
-                                            </a>
-                                        </Link>
-                                    </div>
+                                <div className="ml-md-3">
+                                    <Link href="/get-started/self-hosted" passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a
+                                            className="btn btn-outline-primary w-100 max-w-350"
+                                            title="Try Sourcegraph."
+                                            data-button-style={buttonStyle.outline}
+                                            data-button-location={buttonLocation.hero}
+                                            data-button-type="cta"
+                                        >
+                                            Try Sourcegraph now
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </>
+            </Background>
         }
     >
-        <ContentSection className="my-7">
+        <ContentSection>
             <ThreeUpText title="Make your codebase accessible for your entire team" items={threeUpTextItems} />
         </ContentSection>
 
-        <div className="bg-gradient-venus-radial">
-            <ContentSection className="py-7">
-                <div className="row flex-column flex-lg-row justify-content-between">
-                    <div className="p-lg-0 col-lg-6 px-4">
-                        <h2 className="mb-4 max-w-400 display-3 font-weight-bold">
-                            Developer onboarding is slow and expensive
-                        </h2>
+        <ContentSection parentClassName="sg-bg-gradient-venus">
+            <TwoColumnSection
+                leftColumn={
+                    <>
+                        <h2 className="mb-4 max-w-400">Developer onboarding is slow and expensive</h2>
                         <p>
                             Current tools and practices don't enable teams to onboard developers effectively or
                             efficiently.
@@ -281,111 +273,93 @@ const UseCasePage: FunctionComponent = () => (
                                 they learn unfamiliar parts of the codebase.
                             </li>
                         </ul>
-                    </div>
-                    <div className="col-lg-5 mt-lg-0 mt-7">
-                        <Blockquote
-                            headline="Lunar makes every developer autonomous"
-                            quote="Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues. This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked."
-                            author="Bjørn Hal Sørensen, Web Architect at Lunar"
-                            borderColor="vermillion"
-                            inline={false}
-                            logo={{
-                                src: '/external-logos/lunar.svg',
-                                alt: 'Lunar',
-                            }}
-                        />
-                    </div>
-                </div>
-            </ContentSection>
-        </div>
-
-        <ContentSection className="py-7">
-            <CustomCarousel items={items} title="How Sourcegraph helps" />
-        </ContentSection>
-
-        <div className="bg-gradient-saturn-saturated py-8">
-            <ContentSection>
-                <div className="d-flex flex-column justify-content-center px-lg-8">
+                    </>
+                }
+                rightColumn={
                     <Blockquote
-                        headline="Convoy knows its codebase inside and out"
-                        quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
-                        author="Owen Kim, Senior Software Engineer at Convoy"
-                        border={false}
+                        headline="Lunar makes every developer autonomous"
+                        quote="Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues. This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked."
+                        author="Bjørn Hal Sørensen, Web Architect at Lunar"
+                        inline={false}
                         logo={{
-                            src: '/external-logos/convoy-logo.svg',
-                            alt: 'Convoy',
-                        }}
-                        link={{
-                            href: '/case-studies/convoy-improved-on-boarding',
-                            text: 'Read the case study',
+                            src: '/external-logos/lunar.svg',
+                            alt: 'Lunar',
                         }}
                     />
-                </div>
-            </ContentSection>
-        </div>
-
-        <div className="bg-light-gray-3 py-7">
-            <ContentSection>
-                <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column text-start text-md-center mx-auto max-w-550">
-                        <h2 className="display-3 font-weight-bold">
-                            Give your team the onboarding experience they deserve.
-                        </h2>
-                        <p>
-                            Enable all your devs to find the answers they need to work more efficiently, ship code more
-                            confidently, and stay in flow.
-                        </p>
-                    </div>
-                    <div className="text-center col-12 px-0">
-                        <Link href="/demo" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="btn btn-primary max-w-350 w-100"
-                                title="Request a Demo."
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.bodyDemo}
-                                data-button-type="cta"
-                            >
-                                Request a demo
-                            </a>
-                        </Link>
-                        <Link href="/use-cases" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="d-flex justify-content-center mt-4 font-weight-bold"
-                                title="Explore other use cases"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Explore other use cases
-                            </a>
-                        </Link>
-                    </div>
-                </div>
-            </ContentSection>
-
-            <div className="mt-6">
-                <CustomerLogos />
-            </div>
-        </div>
-
-        <ContentSection className="py-7">
-            <div className="row d-flex">
-                <div className="col-lg-6">
-                    <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>
-                </div>
-                {blogResourceItems.map(item => (
-                    <BlogResourceItem key={item.title} blog={item} />
-                ))}
-            </div>
+                }
+            />
         </ContentSection>
 
         <ContentSection>
-            <div className="d-flex flex-wrap justify-content-center text-center mb-lg-6">
-                <h2 className="w-100 display-3 font-weight-bold mb-4">
-                    Better onboarding is only a few searches away.
-                </h2>
+            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
+        </ContentSection>
+
+        <ContentSection parentClassName="sg-bg-gradient-saturn">
+            <div className="tw-flex tw-flex-col tw-justify-center lg:tw-px-32">
+                <Blockquote
+                    headline="Convoy knows its codebase inside and out"
+                    quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
+                    author="Owen Kim, Senior Software Engineer at Convoy"
+                    border={false}
+                    logo={{
+                        src: '/external-logos/convoy-logo.svg',
+                        alt: 'Convoy',
+                    }}
+                    link={{
+                        href: '/case-studies/convoy-improved-on-boarding',
+                        text: 'Read the case study',
+                    }}
+                />
+            </div>
+        </ContentSection>
+
+        <ContentSection parentClassName="tw-bg-gray-100">
+            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
+                <div className="mb-5 tw-mx-auto tw-flex tw-flex-col tw-text-center max-w-550">
+                    <h2 className="">Give your team the onboarding experience they deserve.</h2>
+                    <p>
+                        Enable all your devs to find the answers they need to work more efficiently, ship code more
+                        confidently, and stay in flow.
+                    </p>
+                </div>
+                <div className="tw-px-0 tw-text-center col-12">
+                    <Link href="/demo" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className="btn btn-primary max-w-350 w-100"
+                            title="Request a Demo."
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
+                        >
+                            Request a demo
+                        </a>
+                    </Link>
+                    <Link href="/use-cases" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className="mt-4 tw-flex tw-justify-center "
+                            title="Explore other use cases"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Explore other use cases
+                        </a>
+                    </Link>
+                </div>
+            </div>
+
+            <div className="tw-mt-4xl">
+                <CustomerLogos />
+            </div>
+        </ContentSection>
+
+        <ResourceList items={blogResourceItems} />
+
+        <ContentSection>
+            <div className="flex-wrap tw-text-center tw-flex tw-justify-center mb-lg-6">
+                <h2 className="mb-4 w-100">Better onboarding is only a few searches away.</h2>
                 <Link href="/get-started/self-hosted" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a

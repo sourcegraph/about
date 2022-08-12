@@ -15,7 +15,7 @@ export const CaseStudy: FunctionComponent = () => {
                 description:
                     'Workiva case study. Learn how Workiva uses Sourcegraph Batch Changes to reduce the time it takes to make large-scale code updates by 80%.',
             }}
-            className="navbar-dark bg-black"
+            className="navbar-dark tw-bg-black"
         >
             <CaseStudyLayout
                 customer="Workiva"
@@ -27,7 +27,7 @@ export const CaseStudy: FunctionComponent = () => {
                     image: '/case-studies/trent-grover-workiva.jpg',
                 }}
             >
-                <ContentSection color="white" className="col-md-6">
+                <ContentSection color="white">
                     <div className="container">
                         <p>
                             Founded in 2008, Workiva's platform enables thousands of enterprises around the world to
@@ -36,7 +36,7 @@ export const CaseStudy: FunctionComponent = () => {
                             better in the cloud.
                         </p>
 
-                        <h2 className="pt-5 pb-1">Paying down tech debt</h2>
+                        <h2 className="tw-pt-md tw-pb-1">Paying down tech debt</h2>
 
                         <p>
                             The Client Platform Team at Workiva is responsible for developing and maintaining the
@@ -68,7 +68,7 @@ export const CaseStudy: FunctionComponent = () => {
                             author={trentGrover}
                         />
 
-                        <h2 className="pt-5 pb-1">Automating large-scale updates with Batch Changes</h2>
+                        <h2 className="tw-pt-md tw-pb-1">Automating large-scale updates with Batch Changes</h2>
 
                         <p>
                             As an organization that values paying down tech debt, Workiva's Client Platform team started
@@ -106,7 +106,7 @@ export const CaseStudy: FunctionComponent = () => {
                             author="Evan Weible, Staff Software Engineer, Workiva"
                         />
 
-                        <h2 className="pt-5 pb-1">
+                        <h2 className="tw-pt-md tw-pb-1">
                             Workiva reduces the time it takes to make large-scale code changes by 80%
                         </h2>
 

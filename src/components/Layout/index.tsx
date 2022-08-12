@@ -61,7 +61,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
     }
 
     return (
-        <div className={`d-flex flex-column min-vh-100 ${props.className || ''}`}>
+        <div className={`tw-flex tw-flex-col min-vh-100 ${props.className || ''}`}>
             <Head>
                 <title>{meta.externalTitle || meta.title}</title>
                 <meta name="description" content={meta.externalDescription || meta.description} />
@@ -122,7 +122,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                 </div>
             )}
 
-            <section className="flex-1">{props.children}</section>
+            <section className="tw-flex-1">{props.children}</section>
 
             {!props.hideFooter && <Footer className={`${props.className || ''}`} minimal={props.minimal} />}
         </div>

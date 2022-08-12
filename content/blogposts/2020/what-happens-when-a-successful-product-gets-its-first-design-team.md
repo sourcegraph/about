@@ -32,8 +32,8 @@ You can visit our [handbook](https://handbook.sourcegraph.com/product/goals) to 
 It is also a good time to think about long term efforts. As Sourcegraph was growing really fast, thanks to the constant innovation and lean approach to development, some areas of the product lost their initial design coherence. It is a natural process for startups to generate some design debt over time. Our new design team is planning to focus on improving the consistency and reducing the design debt over the course of the next 6-8 months.
 
 <Figure 
-src="https://sourcegraphstatic.com/design-debt.png" 
-alt="Design debt illustration"
+  src="https://sourcegraphstatic.com/design-debt.png" 
+  alt="Design debt illustration"
 />
 
 ## Why is it important?

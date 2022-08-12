@@ -18,7 +18,7 @@ const Home: FunctionComponent = () => (
 
         <UseCases />
 
-        <ContentSection color="white" className="py-8 pb-7">
+        <ContentSection color="white" className="tw-mt-52">
             <CoreFeatures />
         </ContentSection>
 

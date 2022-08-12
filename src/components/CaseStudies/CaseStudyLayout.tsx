@@ -42,7 +42,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
         <div className={`${kebabCase(customer)}-${className} ${className}`}>
             <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
                 {heroImage && (
-                    <div className="case-studies__quote row pt-3">
+                    <div className="case-studies__quote row tw-pt-xs">
                         <div className="col-lg-3">
                             <a
                                 href={heroLink}
@@ -52,12 +52,12 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                <img className="img-fluid mx-auto d-block" src={heroImage} alt={customer} />
+                                <img className="img-fluid tw-mx-auto tw-block" src={heroImage} alt={customer} />
                             </a>
                         </div>
-                        <div className="col-lg-9 ">
+                        <div className="col-lg-9">
                             {quote && (
-                                <div className="text-left">
+                                <div className="tw-text-left">
                                     <p className="text-light">{quote.text}</p>
                                     <footer className="blockquote-footer text-light mt-1">{quote.author}</footer>
                                 </div>
@@ -66,12 +66,12 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                     </div>
                 )}
                 {quote && !heroImage && (
-                    <div className="container pt-3">
-                        <div className="case-studies__quote row justify-content-center">
+                    <div className="container tw-pt-xs">
+                        <div className="case-studies__quote row tw-justify-center">
                             {quote.image && (
                                 <div className="col-12 col-lg-9">
                                     <img
-                                        className="rounded-circle img-fluid mx-auto d-block mb-3"
+                                        className="tw-rounded-full img-fluid tw-mx-auto tw-block mb-3"
                                         src={quote.image}
                                         alt={quote.author}
                                     />
@@ -97,14 +97,14 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        <i className="fa fa-file-pdf pr-2" />
+                        <i className="fa fa-file-pdf tw-pr-xxs" />
                         Download PDF
                     </a>
                 )}
             </CaseStudyJumbotron>
 
-            <ContentSection color="white" className="col-sm-12 col-md-9 col-lg-7">
-                <div className="container pt-6 pb-4">
+            <ContentSection color="white">
+                <div className="container tw-pt-3xl tw-pb-sm">
                     <h1 className={`${titleClassName}`}>{title}</h1>
                 </div>
             </ContentSection>

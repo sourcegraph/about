@@ -4,17 +4,16 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import {
-    BlogResourceItem,
     ContentSection,
     CustomerLogos,
     CoreFeatures,
     HubSpotForm,
     IntegrationsSection,
     Layout,
+    Background,
+    ResourceList,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
-
-import styles from './use-cases/useCases.module.scss'
 
 const resourceItems = [
     {
@@ -50,58 +49,44 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         }}
         className="navbar-light"
         hero={
-            <>
-                <div className={styles.pageHeader}>
-                    <div className="container pb-4">
-                        <div className="row">
-                            <div className="col-lg-7 mb-6 mt-7">
-                                <h1 className="display-2 font-weight-bold mb-4">
-                                    Give your team a complete onboarding experience
-                                </h1>
-                                <div className="display-4 font-weight-normal mb-5">
-                                    With self-serve onboarding, codebase exploration, and knowledge sharing, developers
-                                    can find their own answers without waiting for someone to point them to the relevant
-                                    code.
-                                </div>
-                                <div className="d-flex flex-column pt-1 max-w-400">
-                                    <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
-                                </div>
+            <Background variant="lightNebulousVenus2">
+                <div className="container tw-pb-sm">
+                    <div className="row">
+                        <div className="mb-6 col-lg-7 mt-7">
+                            <h1 className="mb-4">Give your team a complete onboarding experience</h1>
+                            <div className="mb-5 tw-text-xl">
+                                With self-serve onboarding, codebase exploration, and knowledge sharing, developers can
+                                find their own answers without waiting for someone to point them to the relevant code.
+                            </div>
+                            <div className="tw-pt-1 tw-flex tw-flex-col max-w-400">
+                                <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                             </div>
                         </div>
                     </div>
                 </div>
-            </>
+            </Background>
         }
     >
         <ContentSection>
-            <div className="mt-6 brightness-0">
+            <div className="mt-6 tw-brightness-0">
                 <CustomerLogos />
             </div>
         </ContentSection>
 
-        <ContentSection className="pb-8">
+        <ContentSection>
             <CoreFeatures />
         </ContentSection>
 
-        <div className="bg-light-gray-3">
+        <div className="tw-bg-gray-100">
             <IntegrationsSection />
         </div>
 
-        <ContentSection className="py-7">
-            <div className="row d-flex">
-                <div className="col-lg-6">
-                    <h2 className="mb-5 font-weight-bold">Related resources</h2>
-                </div>
-                {resourceItems.map(item => (
-                    <BlogResourceItem key={item.title} blog={item} />
-                ))}
-            </div>
-        </ContentSection>
+        <ResourceList items={resourceItems} />
 
         <ContentSection>
-            <div className="col-3 col-md-12 text-center max-w-550 mx-auto">
-                <h2 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h2>
-                <p>
+            <div className="tw-mx-auto tw-text-center tw-max-w-screen-md">
+                <h2 className="tw-mb-xs">Ready to accelerate developer onboarding? Let's talk.</h2>
+                <p className="tw-max-w-lg tw-mx-auto">
                     <Link href="/get-started/self-hosted" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a

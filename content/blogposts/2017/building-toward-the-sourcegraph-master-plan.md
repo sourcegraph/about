@@ -64,7 +64,7 @@ published: true
     </div>
 </div>
 
-<div className="bg-light-11 br3 mv4 pa3 ph4">
+<div className="br3 mv4 pa3 ph4">
     <div>
         Our new funding will help us continue executing on our company roadmap, what we call our <a href="https://handbook.sourcegraph.com/company/strategy">Sourcegraph master plan</a>. Our goals are clear:
         <ul>

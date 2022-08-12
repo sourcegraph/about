@@ -18,15 +18,15 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, childre
         <>
             {children}
 
-            <Background variant="venusCode" className="py-7">
+            <Background variant="venusCode">
                 <RequestDemoTrySourcegraph />
             </Background>
 
-            <ContentSection color="white" className="py-7 py-5 col-xl-6">
-                <h1 className="pl-5 pb-5 display-3 font-weight-bold">Explore other case studies</h1>
-                <div className="d-flex flex-wrap">
+            <ContentSection color="white">
+                <h2 className="tw-mb-6">Explore other case studies</h2>
+                <div className="tw-grid tw-grid-cols-1 xs:tw-grid-cols-2 tw-gap-6">
                     {uniqueCaseStudyList.map(study => (
-                        <div key={study.name} className="col-lg-6 mb-3">
+                        <div key={study.name}>
                             <CaseStudyCard study={study} />
                         </div>
                     ))}

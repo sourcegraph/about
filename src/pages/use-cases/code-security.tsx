@@ -7,21 +7,21 @@ import Link from 'next/link'
 
 import {
     Layout,
-    BackButtonBold,
-    BlogResourceItem,
+    BackButton,
     ContentSection,
     CustomerLogos,
     CustomCarousel,
     ThreeUpText,
+    TwoColumnSection,
     QuoteCarousel,
+    Background,
+    ResourceList,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
-import styles from './useCases.module.scss'
-
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2 className="display-5 font-weight-bold mb-lg-0 mb-5">{header}</h2>
+        <h3 className="tw-mb-8 lg:tw-mb-0">{header}</h3>
         {text}
     </>
 )
@@ -151,26 +151,20 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <TimerOutlineIcon className="mb-4 text-blurple" size={40} />,
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Reduce time to discovery and resolution</h4>,
+        icon: <TimerOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        subtitle: 'Reduce time to discovery and resolution',
         description:
             'Find every instance of a vulnerability and start remediating in minutes instead of days or weeks. Use that head start to deploy fixes sooner.',
     },
     {
-        icon: <AutoFixIcon className="mb-4 text-blurple" size={40} />,
-        subtitle: (
-            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Automate fixing, merging, and deploying fixes</h4>
-        ),
+        icon: <AutoFixIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        subtitle: 'Automate fixing, merging, and deploying fixes',
         description:
             'Automate PRs to fix vulnerabilities across your entire codebase so you can be 100% confident you resolved every vulnerability.',
     },
     {
-        icon: <ShieldAlertOutlineIcon className="mb-4 text-blurple" size={40} />,
-        subtitle: (
-            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">
-                Alert for risky code changes & known vulnerabilities
-            </h4>
-        ),
+        icon: <ShieldAlertOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        subtitle: 'Alert for risky code changes & known vulnerabilities',
         description:
             'Get on top of vulnerabilities by monitoring your repositories for commits when risky patterns and known vulnerabilities enter your codebase.',
     },
@@ -251,65 +245,60 @@ const UseCasePage: FunctionComponent = () => (
         }}
         className="use-cases-page navbar-light"
         hero={
-            <>
-                <div className={styles.pageHeader}>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-7 my-7">
-                                <BackButtonBold href="/use-cases" text="USE CASES" />
-                                <h1 className="display-2 font-weight-bold mb-4">Improve code security</h1>
-                                <div className="display-4 font-weight-normal mb-5">
-                                    Find, fix, and track vulnerable code across your entire codebase in minutes, not
-                                    days
+            <Background variant="lightNebulousVenus2">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-7 my-7">
+                            <BackButton href="/use-cases" text="USE CASES" />
+                            <h1 className="mb-4">Improve code security</h1>
+                            <div className="mb-5">
+                                Find, fix, and track vulnerable code across your entire codebase in minutes, not days
+                            </div>
+                            <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
+                                <div className="mb-3 mb-md-0">
+                                    <Link href="/demo" passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a
+                                            className="btn btn-primary w-100 max-w-350"
+                                            title="Request a Demo."
+                                            data-button-style={buttonStyle.primary}
+                                            data-button-location={buttonLocation.hero}
+                                            data-button-type="cta"
+                                        >
+                                            Request a demo
+                                        </a>
+                                    </Link>
                                 </div>
-                                <div className="flex-column flex-md-row d-md-flex text-center">
-                                    <div className="mb-3 mb-md-0">
-                                        <Link href="/demo" passHref={true}>
-                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                            <a
-                                                className="btn btn-primary w-100 max-w-350"
-                                                title="Request a Demo."
-                                                data-button-style={buttonStyle.primary}
-                                                data-button-location={buttonLocation.hero}
-                                                data-button-type="cta"
-                                            >
-                                                Request a demo
-                                            </a>
-                                        </Link>
-                                    </div>
-                                    <div className="ml-md-3">
-                                        <Link href="/get-started/self-hosted" passHref={true}>
-                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                            <a
-                                                className="btn btn-outline-primary w-100 max-w-350"
-                                                title="Try Sourcegraph."
-                                                data-button-style={buttonStyle.outline}
-                                                data-button-location={buttonLocation.hero}
-                                                data-button-type="cta"
-                                            >
-                                                Try Sourcegraph now
-                                            </a>
-                                        </Link>
-                                    </div>
+                                <div className="ml-md-3">
+                                    <Link href="/get-started/self-hosted" passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a
+                                            className="btn btn-outline-primary w-100 max-w-350"
+                                            title="Try Sourcegraph."
+                                            data-button-style={buttonStyle.outline}
+                                            data-button-location={buttonLocation.hero}
+                                            data-button-type="cta"
+                                        >
+                                            Try Sourcegraph now
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </>
+            </Background>
         }
     >
-        <ContentSection className="py-7">
+        <ContentSection>
             <ThreeUpText title="Identify, resolve, and monitor with confidence" items={threeUpTextItems} />
         </ContentSection>
 
-        <div className="bg-gradient-venus-radial">
-            <ContentSection className="py-7">
-                <div className="row flex-column flex-lg-row justify-content-between">
-                    <div className="p-lg-0 col-lg-6 px-4">
-                        <h2 className="mb-4 display-3 font-weight-bold max-w-400">
-                            Identifying & resolving security vulnerabilities is painful
-                        </h2>
+        <ContentSection parentClassName="sg-bg-gradient-venus">
+            <TwoColumnSection
+                leftColumn={
+                    <>
+                        <h2 className="mb-4 max-w-400">Identifying & resolving security vulnerabilities is painful</h2>
                         <p>
                             Existing tooling doesn't enable teams to be agile and effective when responding to security
                             vulnerabilities. What does that mean for you?
@@ -329,106 +318,92 @@ const UseCasePage: FunctionComponent = () => (
                                 stressful for all involved.
                             </li>
                         </ul>
-                    </div>
-                    <div className="col-lg-5">
-                        <div className="bg-white p-5 mt-lg-0 mt-5">
-                            <h4>Log4j was the tip of the iceberg</h4>
-                            <p>
-                                Log4j is a prime example of how challenging it is to create a cohesive response across
-                                multiple teams in an org.
-                            </p>
-                            <p>
-                                Sourcegraph enables companies like Nutanix to completely remediate Log4j vulnerabilities
-                                across multiple build and artifact management systems, as well as a large monorepo with
-                                many component branches and hundreds of git repositories, in under four days, and with
-                                100% certainty.
-                            </p>
-                            <h6>Learn how to use Sourcegraph to identify and resolve every instance of Log4j.</h6>
-                            <Link href="/blog/log4j-log4shell-0-day" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="font-weight-bold"
-                                    title="Read the blog post"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Read the blog post.
-                                </a>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </ContentSection>
-        </div>
-
-        <ContentSection className="py-7">
-            <CustomCarousel items={items} title="How Sourcegraph helps" />
-        </ContentSection>
-
-        <div className="bg-gradient-saturn-saturated">
-            <ContentSection>
-                <QuoteCarousel items={quoteCarouselItems} />
-            </ContentSection>
-        </div>
-
-        <div className="bg-light-gray-3 py-7">
-            <ContentSection>
-                <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column text-start text-md-center mx-auto align-items-lg-center">
-                        <h2 className="display-3 font-weight-bold">Get started with Sourcegraph</h2>
-                        <p className="max-w-450">
-                            Find, fix, and track vulnerable code quickly across your entire codebase to improve code
-                            security.
+                    </>
+                }
+                rightColumn={
+                    <div className="tw-bg-white tw-p-8 lg:tw-ml-10">
+                        <h4>Log4j was the tip of the iceberg</h4>
+                        <p>
+                            Log4j is a prime example of how challenging it is to create a cohesive response across
+                            multiple teams in an org.
                         </p>
-                    </div>
-                    <div className="text-center col-12 px-0">
-                        <Link href="/demo" passHref={true}>
+                        <p>
+                            Sourcegraph enables companies like Nutanix to completely remediate Log4j vulnerabilities
+                            across multiple build and artifact management systems, as well as a large monorepo with many
+                            component branches and hundreds of git repositories, in under four days, and with 100%
+                            certainty.
+                        </p>
+                        <h6>Learn how to use Sourcegraph to identify and resolve every instance of Log4j.</h6>
+                        <Link href="/blog/log4j-log4shell-0-day" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="btn btn-primary max-w-350 w-100"
-                                title="Request a Demo."
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.bodyDemo}
-                                data-button-type="cta"
-                            >
-                                Request a demo
-                            </a>
-                        </Link>
-                        <Link href="/use-cases" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="d-flex justify-content-center mt-4 font-weight-bold"
-                                title="Explore other use cases"
+                                title="Read the blog post"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                Explore other use cases
+                                Read the blog post.
                             </a>
                         </Link>
                     </div>
-                </div>
-            </ContentSection>
-
-            <div className="mt-6">
-                <CustomerLogos />
-            </div>
-        </div>
-
-        <ContentSection className="py-7">
-            <div className="row d-flex">
-                <div className="col-lg-6">
-                    <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>
-                </div>
-                {blogResourceItems.map(item => (
-                    <BlogResourceItem key={item.title} blog={item} />
-                ))}
-            </div>
+                }
+            />
         </ContentSection>
 
         <ContentSection>
-            <div className="d-flex justify-content-center mb-lg-6">
+            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
+        </ContentSection>
+
+        <ContentSection parentClassName="sg-bg-gradient-saturn">
+            <QuoteCarousel items={quoteCarouselItems} />
+        </ContentSection>
+
+        <ContentSection parentClassName="tw-bg-gray-100">
+            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
+                <div className="tw-mx-auto mb-5 tw-flex tw-flex-col tw-text-center">
+                    <h2>Get started with Sourcegraph</h2>
+                    <p className="max-w-450">
+                        Find, fix, and track vulnerable code quickly across your entire codebase to improve code
+                        security.
+                    </p>
+                </div>
+                <div className="tw-px-0 tw-text-center col-12">
+                    <Link href="/demo" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className="btn btn-primary max-w-350 w-100"
+                            title="Request a Demo."
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
+                        >
+                            Request a demo
+                        </a>
+                    </Link>
+                    <Link href="/use-cases" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className="mt-4 tw-flex tw-justify-center "
+                            title="Explore other use cases"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Explore other use cases
+                        </a>
+                    </Link>
+                </div>
+            </div>
+
+            <div className="tw-mt-4xl">
+                <CustomerLogos />
+            </div>
+        </ContentSection>
+
+        <ResourceList items={blogResourceItems} />
+
+        <ContentSection>
+            <div className="tw-text-center">
                 <Link href="/get-started/self-hosted" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a

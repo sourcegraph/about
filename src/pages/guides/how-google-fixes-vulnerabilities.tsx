@@ -22,7 +22,7 @@ export const Guide: FunctionComponent = () => (
             formLabel="Download the e-book"
             resource="/guides/sg-how-companies-fix-vulnerabilities.pdf"
             description={
-                <section className="col-md-6 col-12 pr-lg-6">
+                <section className="col-md-6 col-12 lg:tw-pr-3xl">
                     <p>
                         Your organization's ability to find and fix vulnerabilities within the codebase has significant
                         financial implications, not to mention brand impact. Most companies have invested in security

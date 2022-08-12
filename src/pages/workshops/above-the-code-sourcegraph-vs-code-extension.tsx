@@ -42,7 +42,7 @@ export const AboveTheCodeWorkshop: FunctionComponent = () => (
                 buttonText: 'REGISTER',
             }}
             description={
-                <section className="col-md-6 col-12 pr-lg-6">
+                <section className="col-md-6 col-12 lg:tw-pr-3xl">
                     <p>
                         Join Sourcegraph experts Murat Sutunc, Engineering Manager of Integrations, and Emily Chapman,
                         Senior Customer Training Engineer, to discuss Sourcegraph’s VSCode extension.

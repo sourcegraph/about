@@ -25,20 +25,22 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
                 {carouselItems.map((item, index) => (
                     <div
                         key={item.header}
-                        className={index === carouselHook.carouselItems.currentItemIndex ? 'd-block h-400' : 'd-none'}
+                        className={
+                            index === carouselHook.carouselItems.currentItemIndex ? 'tw-block h-400' : 'tw-hidden'
+                        }
                     >
                         <TemplateCodeBlock template={item} />
                     </div>
                 ))}
             </div>
 
-            <div className="d-flex justify-content-center">
+            <div className="tw-flex tw-justify-center">
                 <ArrowLeftIcon
-                    className="mr-4 cursor-pointer"
+                    className="mr-4 tw-cursor-pointer"
                     onClick={() => carouselHook.moveCarousel('decrement')}
                     color={carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                 />
-                <div>
+                <div className="tw-flex">
                     {carouselItems.map((item, index) => (
                         <CircleSmallIcon
                             color={index === carouselHook.carouselItems.currentItemIndex ? '#000' : '#D0D0D0'}
@@ -47,7 +49,7 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
                     ))}
                 </div>
                 <ArrowRightIcon
-                    className="ml-4 cursor-pointer"
+                    className="ml-4 tw-cursor-pointer"
                     onClick={() => carouselHook.moveCarousel()}
                     color={carouselHook.isAdvancing ? '#000' : '#D0D0D0'}
                 />

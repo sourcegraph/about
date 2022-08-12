@@ -12,7 +12,7 @@ export const CaseStudy: FunctionComponent = () => (
             description:
                 'Sourcegraph case study: With Sourcegraph, SoFi can innovate and move quickly while keeping up with hundreds of microservices.',
         }}
-        className="navbar-dark bg-black"
+        className="navbar-dark tw-bg-black"
     >
         <CaseStudyLayout
             customer="SoFi"
@@ -25,7 +25,7 @@ export const CaseStudy: FunctionComponent = () => (
             }}
             pdf="https://sourcegraphstatic.com/sofi_case_study.pdf"
         >
-            <ContentSection color="white" className="col-md-6">
+            <ContentSection color="white">
                 <div className="container">
                     <p>
                         SoFi (Social Finance Inc.) helps its over 900,000 members achieve financial independence to
@@ -33,7 +33,7 @@ export const CaseStudy: FunctionComponent = () => (
                         their money. With Sourcegraph, SoFi can innovate and move quickly while keeping up with hundreds
                         of microservices.
                     </p>
-                    <h2 className="pt-5 pb-1">The need for cross-repository code search</h2>
+                    <h2 className="tw-pt-md tw-pb-1">The need for cross-repository code search</h2>
                     <p>
                         When SoFi decided to switch their code host from Bitbucket to GitLab they quickly realized they
                         would need a more powerful code search tool to search over their hundreds of repositories. They
@@ -55,7 +55,7 @@ export const CaseStudy: FunctionComponent = () => (
                         </Link>
                         .
                     </p>
-                    <h2 className="pt-5 pb-1">Move fast and don't break things</h2>
+                    <h2 className="tw-pt-md tw-pb-1">Move fast and don't break things</h2>
                     <p>
                         As a financial institution, SoFi needs to avoid downtime—but they also need to continuously
                         innovate to compete. SoFi runs hundreds of microservices. Their fast growth makes it difficult

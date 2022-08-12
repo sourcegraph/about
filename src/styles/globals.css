@@ -1,0 +1,103 @@
+/**
+ * These are our Tailwind CSS global styles. Please reference our DLS for
+ * specifications and avoid one-off styles in this stylesheet.
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Styles */
+@layer base {
+    /* Typography */
+    html {
+        @apply tw-font-sans tw-text-base tw-tracking-normal tw-font-normal tw-antialiased;
+    }
+    body {
+        @apply tw-bg-gray-50;
+    }
+    h1 {
+        @apply tw-font-sans tw-text-6xl md:tw-text-7xl tw-tracking-normal tw-font-semibold;
+    }
+    h2 {
+        @apply tw-font-sans tw-text-4xl md:tw-text-5xl tw-tracking-normal tw-font-semibold;
+    }
+    h3 {
+        @apply tw-font-sans tw-text-3xl tw-tracking-normal tw-font-normal;
+    }
+    h4 {
+        @apply tw-font-sans tw-text-2xl tw-tracking-normal tw-font-semibold;
+    }
+    h5 {
+        @apply tw-font-sans tw-text-xl tw-tracking-normal tw-font-semibold;
+    }
+    h6 {
+        @apply tw-font-sans tw-text-lg tw-tracking-wide tw-font-semibold tw-uppercase;
+    }
+    code {
+        @apply tw-font-mono tw-text-base tw-font-medium tw-tracking-tightest tw-break-words;
+    }
+    /* Inline Links */
+    p a,
+    li a {
+        @apply tw-font-normal hover:tw-underline;
+    }
+    /* Standalone Links (Usually CTAs) */
+    a {
+        @apply tw-text-blurple-400 tw-font-bold;
+    }
+
+    /* Lists */
+    ul,
+    ol {
+        list-style: revert;
+        margin-left: 40px;
+    }
+
+    /* Paragraphs */
+    p {
+        @apply tw-mb-3;
+    }
+
+    /* Tables */
+    table {
+        @apply tw-w-full tw-max-w-full tw-mb-4 tw-bg-transparent tw-border-collapse tw-border tw-border-solid tw-border-gray-200;
+    }
+    td,
+    th {
+        @apply tw-p-3 tw-align-top tw-border tw-border-solid tw-border-gray-200;
+    }
+    th {
+        @apply tw-align-middle tw-border-b tw-border-solid tw-border-b-gray-200;
+    }
+}
+
+/* Custom Utilities */
+@layer utilities {
+
+    /* Gradient borders not available in Tailwind syntax */
+    .sg-border-gradient-saturn {
+        border-image-slice: 1 !important;
+        border-image-source: linear-gradient(to right, theme(colors.violet.200), theme(colors.blue.200)) !important;
+    }
+
+    /* Gradient Backgrounds */
+    .sg-bg-gradient-venus {
+        @apply tw-bg-gradient-to-r tw-from-blue-200/50 tw-to-green-200/50;
+    }
+    .sg-bg-gradient-saturn {
+        @apply tw-bg-gradient-to-r tw-from-violet-200 tw-to-blue-200;
+    }
+    .sg-bg-gradient-mars {
+        @apply tw-bg-gradient-to-r tw-from-vermillion-200/70 tw-to-violet-200/70;
+    }
+    .sg-bg-gradient-aquamarine {
+        @apply tw-bg-gradient-to-r tw-from-blue-300 tw-to-blurple-400;
+    }
+    .sg-bg-gradient-infrared {
+        @apply tw-bg-gradient-to-r tw-from-violet-400 tw-to-vermillion-300;
+    }
+    .sg-bg-gradient-aurora {
+        @apply tw-bg-gradient-to-r tw-from-blue-300 tw-to-violet-400;
+    }
+}

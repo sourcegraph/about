@@ -9,38 +9,38 @@ export const AuthorBio: React.FunctionComponent<{
     about: string
     authors: Author[]
 }> = ({ customer, about, authors }) => (
-    <section>
+    <div>
         {authors.length > 1 ? (
             // Multi author design
             <div>
-                <section className="col-lg-6 mx-auto p-0 max-w-650">
-                    <h5 className="mb-4 text-xl font-weight-bold">About {customer}</h5>
+                <div className="tw-mx-auto tw-max-w-screen-sm">
+                    <h5 className="mb-4">About {customer}</h5>
                     <p>{about}</p>
-                </section>
+                </div>
 
-                <section className="d-md-flex d-block justify-content-between col-lg-9 mx-auto p-0">
+                <div className="tw-grid tw-gap-6 tw-grid-cols-1 md:tw-grid-cols-3 tw-mt-16 tw-max-w-screen-lg tw-mx-auto">
                     {authors.map(a => (
-                        <div key={a.name} className="mt-6">
+                        <div key={a.name} className="md:tw-text-center">
                             <img
-                                className="rounded-circle max-w-150"
+                                className="tw-rounded-full max-w-150 tw-inline"
                                 width={150}
                                 height={150}
                                 src={a.image}
                                 alt={a.name}
                             />
-                            <h3 className="font-weight-normal mt-4">{a.name}</h3>
+                            <h3 className="mt-4">{a.name}</h3>
                             <p className="text-muted">{a.title}</p>
                         </div>
                     ))}
-                </section>
+                </div>
             </div>
         ) : (
             // Single author design
-            <div className="d-flex flex-column flex-md-row align-items-start">
+            <div className="tw-flex tw-flex-col md:tw-flex-row">
                 {authors[0].image && (
                     <div className="col-md-3">
                         <img
-                            className="rounded-circle p-0 max-w-150"
+                            className="tw-p-0 tw-rounded-full max-w-150"
                             width={100}
                             src={authors[0].image}
                             alt={authors[0].name}
@@ -48,15 +48,15 @@ export const AuthorBio: React.FunctionComponent<{
                     </div>
                 )}
 
-                <div className="col-md-9 pl-md-5 pl-0">
-                    <h6 className="pt-md-2 pt-4 font-weight-bold">AUTHOR</h6>
-                    <h3 className="font-weight-normal">{authors[0].name}</h3>
+                <div className="tw-pl-0 col-md-9 md:tw-pl-md">
+                    <h6 className="tw-pt-sm md:tw-pt-xxs">AUTHOR</h6>
+                    <h3>{authors[0].name}</h3>
                     <p className="text-muted">{authors[0].title}</p>
 
-                    <h5 className="font-weight-bold">About {customer}</h5>
+                    <h5>About {customer}</h5>
                     <p>{about}</p>
                 </div>
             </div>
         )}
-    </section>
+    </div>
 )
