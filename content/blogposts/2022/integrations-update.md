@@ -7,8 +7,8 @@ publishDate: 2022-08-16 T18:00+02:00
 tags: [blog]
 slug: integrations-update
 published: true
-heroImage: /blog/thumbnail-image.jpg
-socialImage: Use to set large social image i.e.  https://about.sourcegraph.com/blog/sourcegraph-social-img.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/integrations-update/integrations-update-hero.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/integrations-update/integrations-update-social.png
 ---
 
 With the upcoming launch of Sourcegraph 4.0 in September, 2022, we’re investing in a new model for integrations that will support deeper integrations with our code intelligence platform and make it easier to surface code context during the ideal moments in a developer’s workflow. 
