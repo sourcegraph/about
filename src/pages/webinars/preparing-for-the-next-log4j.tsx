@@ -4,8 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { Layout, ContentSection, GatedResourceLayout, Hero } from '@components'
-import { buttonStyle, buttonLocation, breakpoints } from '@data'
-import { useWindowWidth } from '@hooks'
+import { buttonStyle, buttonLocation } from '@data'
 
 const speakers = [
     {
@@ -24,8 +23,6 @@ const speakers = [
 
 const Webinar: FunctionComponent = () => {
     const router = useRouter()
-    const windowWidth = useWindowWidth()
-    const isMdOrDown = windowWidth < breakpoints.lg
 
     return (
         <Layout
@@ -39,8 +36,8 @@ const Webinar: FunctionComponent = () => {
                     variant="marsCode"
                     title="Preparing for the Next Log4j"
                     subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
-                    leftCol={
-                        <div className="tw-px-0 col-12 lg:tw-text-center tw-pb-md lg:tw-pb-0">
+                    leftColumn={
+                        <div className="tw-flex tw-items-center tw-h-full">
                             <img
                                 className="tw-border-r-2 md:tw-border-r-3 tw-border-r-black tw-inline tw-mr-xs tw-pr-xs md:tw-mr-sm md:tw-pr-sm tw-w-[65px] md:tw-w-[95px]"
                                 src="/sourcegraph/sourcegraph-mark.svg"
@@ -53,6 +50,7 @@ const Webinar: FunctionComponent = () => {
                             />
                         </div>
                     }
+                    mergeColumns={true}
                 />
             }
         >

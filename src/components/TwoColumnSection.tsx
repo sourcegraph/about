@@ -7,8 +7,7 @@ interface TwoColumnSection {
     rightColumn: ReactNode
     reverseOnMobile?: boolean
     centerContent?: boolean
-    leftColumnSize?: string
-    rightColumnSize?: string
+    mergeColumns?: boolean
 }
 
 export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
@@ -16,26 +15,27 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
     rightColumn,
     reverseOnMobile = false,
     centerContent = false,
-    leftColumnSize,
-    rightColumnSize,
+    mergeColumns = false,
 }) => (
     <div
-        className={classNames('tw-flex', {
-            'tw-flex-col-reverse lg:tw-flex-row': reverseOnMobile,
-            row: !reverseOnMobile,
-            'tw-items-center': centerContent,
+        className={classNames({
+            'tw-grid lg:tw-grid-cols-12 tw-gap-y-xl': !mergeColumns, // done
+            'tw-flex tw-flex-col lg:tw-flex-row': mergeColumns, // done
+            'tw-items-center': centerContent, // done
         })}
     >
         <div
-            className={classNames(leftColumnSize ?? 'col-lg-6 lg:tw-pr-sm', {
-                'tw-mb-sm lg:tw-mb-0': !reverseOnMobile,
+            className={classNames({
+                'tw-col-span-12 lg:tw-col-span-6': !mergeColumns, // done
+                'tw-mb-sm lg:tw-mb-0 lg:tw-pr-xl': mergeColumns, // done
+                'tw-order-last lg:tw-order-first': reverseOnMobile,
             })}
         >
             {leftColumn}
         </div>
         <div
-            className={classNames(rightColumnSize ?? 'col-lg-6 lg:tw-pl-sm', {
-                'tw-mb-sm lg:tw-mb-0': reverseOnMobile,
+            className={classNames({
+                'tw-col-span-12 lg:tw-col-span-6': !mergeColumns,
             })}
         >
             {rightColumn}

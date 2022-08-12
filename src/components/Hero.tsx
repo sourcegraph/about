@@ -8,11 +8,12 @@ interface Hero extends Background {
     product?: 'code search' | 'batch changes' | 'code insights'
     title: string | ReactNode
     backButton?: ReactNode
-    leftCol?: ReactNode
+    leftColumn?: ReactNode
     subtitle?: string
     description?: string
     cta?: ReactNode
     displayUnderNav?: boolean
+    mergeColumns?: boolean
 }
 
 export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illustration'>> = ({
@@ -20,10 +21,11 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
     product,
     title,
     backButton,
-    leftCol,
+    leftColumn,
     subtitle,
     cta,
     displayUnderNav = false,
+    mergeColumns = false,
 }) => {
     let illustration: Background['illustration']
     if (product) {
@@ -58,11 +60,11 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
             {backButton}
 
             <div className="tw-flex tw-flex-col-reverse">
-                <h1 className="mb-4 tw-whitespace-pre-line">{title}</h1>
+                <h1 className="tw-whitespace-pre-line">{title}</h1>
                 {product && <h6 className="mb-2">{product}</h6>}
             </div>
 
-            {subtitle && <h3 className="max-w-800">{subtitle}</h3>}
+            {subtitle && <h3 className="max-w-800 tw-mb-sm">{subtitle}</h3>}
 
             {cta && <div className="tw-mt-md tw-flex tw-flex-col max-w-400">{cta}</div>}
         </div>
@@ -73,20 +75,14 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
             <Background
                 variant={variant}
                 illustration={illustration}
-                className={classNames(
-                    'tw-flex tw-items-center',
-                    product && 'tw-min-h-[650px]',
-                    variant.includes('dark') && 'tw-text-white'
-                )}
+                className={classNames('tw-flex tw-items-center tw-px-sm', variant.includes('dark') && 'tw-text-white')}
             >
-                <div className={classNames('container', !product && 'tw-py-5xl')}>
-                    {leftCol ? (
+                <div className="tw-max-w-screen-xl tw-w-full tw-mx-auto tw-my-5xl">
+                    {leftColumn ? (
                         <TwoColumnSection
-                            centerContent={true}
-                            leftColumnSize="col-lg-4"
-                            rightColumnSize="col-lg-8"
-                            leftColumn={leftCol}
+                            leftColumn={leftColumn}
                             rightColumn={mainContent}
+                            mergeColumns={mergeColumns}
                         />
                     ) : (
                         mainContent
