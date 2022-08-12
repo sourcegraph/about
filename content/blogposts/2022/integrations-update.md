@@ -7,9 +7,9 @@ authors:
 publishDate: 2022-08-16 T18:00+02:00
 tags: [blog]
 slug: integrations-update
-published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/integrations-update/integrations-update-hero.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/integrations-update/integrations-update-social.png
+published: true
 ---
 
 With the upcoming launch of Sourcegraph 4.0 in September, 2022, we’re investing in a new model for integrations that will support deeper integrations with our code intelligence platform and make it easier to surface code context during the ideal moments in a developer’s workflow. 
