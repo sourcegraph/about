@@ -1,7 +1,7 @@
 interface Resource {
     title: string
     description: string
-    thumbnail: string
+    thumbnail?: string
     contentType: string
     subjects: string[]
     featured: boolean
