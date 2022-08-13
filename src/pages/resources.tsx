@@ -5,8 +5,21 @@ import {
     Filters,
     Card,
     resourceItems,
-    ContentSection
+    ContentSection,
+    RequestDemoTrySourcegraph
 } from '@components'
+
+const topResources = [
+    ...resourceItems.filter(item => item.featured),
+    ...resourceItems.filter(item => !item.featured)
+        .slice(0, 3)
+        .sort((a, b) => new Date(a.publishDate).valueOf() - new Date(b.publishDate).valueOf())
+]
+
+const bottomResources = resourceItems.filter(item => !item.featured)
+    .splice(3)
+    // TODO: Add this when all dates are added to data
+    // .sort((a, b) => new Date(a.publishDate).valueOf() - new Date(b.publishDate).valueOf())
 
 const Resources: FunctionComponent = () => (
     <Layout
@@ -30,10 +43,31 @@ const Resources: FunctionComponent = () => (
         <Filters />
 
         <ContentSection color="white">
-            {resourceItems.map(resource => (
-                <Card key={resource.title} />
-            ))}
+            <div className="tw-grid md:tw-grid-cols-2 xl:tw-grid-cols-3 tw-gap-sm">
+                {topResources.map(resource => (
+                    <Card key={resource.title} resource={resource} />
+                ))}
+            </div>
         </ContentSection>
+
+        <RequestDemoTrySourcegraph
+            parentClassName="sg-bg-gradient-saturn"
+            description="Want to see Sourcegraph in action? Schedule time with a Sourcegraph expert or try Sourcegraph for free with up to 10 teammates."
+        />
+
+        <ContentSection color="white">
+            <div className="tw-grid md:tw-grid-cols-2 xl:tw-grid-cols-3 tw-gap-sm">
+                {bottomResources.map(resource => (
+                    <Card key={resource.title} resource={resource} />
+                ))}
+            </div>
+        </ContentSection>
+
+        <RequestDemoTrySourcegraph
+            centerContent={true}
+            parentClassName="sg-bg-gradient-saturn"
+            description="Want to see Sourcegraph in action? Schedule time with a Sourcegraph expert or try Sourcegraph for free with up to 10 teammates."
+        />
     </Layout>
 )
 
