@@ -1,25 +1,18 @@
 import { FunctionComponent } from 'react'
 
-import {
-    Layout,
-    Filters,
-    Card,
-    resourceItems,
-    ContentSection,
-    RequestDemoTrySourcegraph
-} from '@components'
+import { Layout, Filters, Card, resourceItems, ContentSection, RequestDemoTrySourcegraph } from '@components'
 
 const topResources = [
     ...resourceItems.filter(item => item.featured),
-    ...resourceItems.filter(item => !item.featured)
+    ...resourceItems
+        .filter(item => !item.featured)
         .slice(0, 3)
-        .sort((a, b) => new Date(a.publishDate).valueOf() - new Date(b.publishDate).valueOf())
+        .sort((a, b) => new Date(a.publishDate).valueOf() - new Date(b.publishDate).valueOf()),
 ]
 
-const bottomResources = resourceItems.filter(item => !item.featured)
-    .splice(3)
-    // TODO: Add this when all dates are added to data
-    // .sort((a, b) => new Date(a.publishDate).valueOf() - new Date(b.publishDate).valueOf())
+const bottomResources = resourceItems.filter(item => !item.featured).splice(3)
+// TODO: Add this when all dates are added to data
+// .sort((a, b) => new Date(a.publishDate).valueOf() - new Date(b.publishDate).valueOf())
 
 const Resources: FunctionComponent = () => (
     <Layout
