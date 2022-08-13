@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
@@ -10,23 +11,49 @@ interface Props {
     title?: string
     description?: string
     demoFormURL?: string
+    parentClassName?: string
+    centerContent?: boolean
 }
 
-export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
-    <ContentSection className="container col-xl-6 tw-justify-center">
-        <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
-            <div className="mb-5 tw-flex tw-flex-col">
-                <h2 className="tw-text-center tw-mb-6">Get started with Sourcegraph</h2>
-                <p className="tw-text-center">Understand, fix, and automate changes across your entire codebase.</p>
+export const RequestDemoTrySourcegraph: FunctionComponent<Props> = ({
+    title = 'Get started with Sourcegraph',
+    description = 'Understand, fix, and automate changes across your entire codebase.',
+    parentClassName,
+    centerContent = false,
+}) => (
+    <ContentSection parentClassName={parentClassName}>
+        <div
+            className={classNames({
+                'tw-flex tw-flex-col lg:tw-flex-row lg:tw-items-center': !centerContent,
+                'tw-flex tw-flex-col tw-max-w-lg tw-mx-auto tw-text-center tw-items-center': centerContent,
+            })}
+        >
+            <div
+                className={classNames({
+                    'tw-max-w-lg': !centerContent,
+                    'tw-mb-md': centerContent,
+                })}
+            >
+                <h2 className="tw-mb-sm">{title}</h2>
+                <p>{description}</p>
             </div>
-            <div className="tw-flex tw-flex-col tw-mx-auto">
+
+            <div
+                className={classNames({
+                    'tw-flex tw-flex-col xs:tw-flex-row xs:tw-items-center tw-mt-md lg:tw-mt-0 lg:tw-ml-auto':
+                        !centerContent,
+                    'tw-flex tw-flex-col': centerContent,
+                })}
+            >
                 <Link href="/demo" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         title="Request a demo"
-                        className="btn btn-primary tw-inline-block"
+                        className={classNames('btn btn-primary', {
+                            'tw-mb-sm xs:tw-mb-0 tw-mr-md': !centerContent,
+                        })}
                         data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
+                        data-button-location={buttonLocation.bodyDemo}
                         data-button-type="cta"
                     >
                         Request a demo
@@ -36,9 +63,9 @@ export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         title="Try Sourcegraph now"
-                        className="mt-4 tw-inline-block"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
+                        className={classNames({ 'tw-mt-md': centerContent })}
+                        data-button-style={buttonStyle.textWithArrow}
+                        data-button-location={buttonLocation.bodyDemo}
                         data-button-type="cta"
                     >
                         Try Sourcegraph now
