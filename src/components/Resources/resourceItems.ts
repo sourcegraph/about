@@ -187,7 +187,7 @@ export const resourceItems: Resource[] = [
     {
         featured: false,
         title: 'Code Intelligence Platform - Product Tour',
-        link: '/product-tour',
+        link: '/videos/product-tour',
         contentType: 'video',
         subjects: ['code security', 'developer onboarding', 'incident response', 'code reuse', 'code health'],
         description: 'Find and fix code across your codebase fast with Sourcegraph. Watch this video to see how.',
