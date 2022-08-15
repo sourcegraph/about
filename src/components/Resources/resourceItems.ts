@@ -32,18 +32,17 @@ export const resourceItems: Resource[] = [
         thumbnail: 'https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/Troy-overlay.jpeg',
         publishDate: '2022-05-10T18:00+02:00',
     },
-    // TODO: Unhide this when PR 5661 is merged
-    // {
-    //     featured: true,
-    //     title: 'Cloud cost optimization (Part 1)',
-    //     link: '/guides/cloud-cost-optimization-create-visibility.pdf',
-    //     contentType: 'guide',
-    //     subjects: ['code health'],
-    //     description:
-    //         'The first part in a four part series on how you can reduce cloud costs. This piece reviews the importance of creating visibility and practical ways you can do this using Sourcegraph',
-    //     thumbnail: '',
-    //     publishDate: '',
-    // },
+    {
+        featured: true,
+        title: 'Cloud cost optimization (Part 1)',
+        link: '/guides/cloud-cost-optimization-create-visibility.pdf',
+        contentType: 'guide',
+        subjects: ['code health'],
+        description:
+            'The first part in a four part series on how you can reduce cloud costs. This piece reviews the importance of creating visibility and practical ways you can do this using Sourcegraph',
+        thumbnail: '',
+        publishDate: '',
+    },
     {
         featured: false,
         title: 'Key traits of a Code Intelligence Platform',
