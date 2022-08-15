@@ -15,7 +15,7 @@ interface FilterGroup {
 
 /**
  * A Filter pill component displaying the filter type
- * 
+ *
  * @param props - component props
  * @param props.text - The text of the filter
  */
@@ -27,7 +27,7 @@ const Filter: FunctionComponent<Filter> = ({ text }) => (
 
 /**
  * A Filter Group displaying the title of filters and filter pills
- * 
+ *
  * @param props - component props
  * @param props.title - title of the filter group
  * @param props.filters - an array of filters
