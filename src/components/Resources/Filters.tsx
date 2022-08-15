@@ -1,11 +1,13 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
 import CloseCircleOutlineIcon from 'mdi-react/CloseCircleOutlineIcon'
 
 import { resourceItems } from '@components'
 
 interface Filter {
     text: string
+    checked?: boolean
 }
 
 interface FilterGroup {
@@ -17,10 +19,11 @@ interface FilterGroup {
  * A Filter pill component displaying the filter type
  *
  * @param props - component props
- * @param props.text - The text of the filter
+ * @param props.text - The text for the filter
+ * @param props.checked - The enabled/disabled status
  */
-const Filter: FunctionComponent<Filter> = ({ text }) => (
-    <div className="tw-bg-white tw-text-gray-500 tw-py-[6px] tw-px-xs tw-text-sm tw-border tw-border-solid tw-border-gray-500 tw-rounded-lg tw-mr-xs tw-mb-xs hover:tw-bg-gray-500 hover:tw-text-white tw-cursor-pointer tw-transition-all tw-ease-out first-letter:tw-capitalize tw-font-mono">
+const Filter: FunctionComponent<Filter> = ({ text, checked = false }) => (
+    <div className={classNames('tw-py-[6px] tw-px-xs tw-text-sm tw-border tw-border-solid tw-border-gray-500 tw-rounded-lg tw-mr-xs tw-mb-xs hover:tw-bg-gray-500 hover:tw-text-white tw-cursor-pointer tw-transition-all tw-ease-out first-letter:tw-capitalize tw-font-mono', { 'tw-text-white tw-bg-gray-500': checked, 'tw-bg-white tw-text-gray-500': !checked })}>
         {text}
     </div>
 )
