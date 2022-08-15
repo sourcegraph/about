@@ -70,7 +70,7 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                         style={{ backgroundImage: `url('${resource.thumbnail}')` }}
                     />
                 ) : (
-                    <Background variant={backgrounds[resource.contentType]} className="tw-h-full" />
+                    <Background variant={backgrounds[resource.contentType] || 'darkNebulous2Sm'} className="tw-h-full" />
                 )}
                 <div className="tw-absolute tw-top-xs tw-left-xs tw-px-xs tw-py-2 tw-bg-gray-500 tw-text-white tw-rounded-lg first-letter:tw-capitalize">
                     {resource.contentType}
