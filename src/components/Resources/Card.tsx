@@ -36,7 +36,7 @@ const FilterPill: FunctionComponent<FilterPill> = ({ text, light = false }) => {
 /**
  * This is the Card component rendered as a resource on the resources page.
  *
- * @param props - the component props
+ * @param props - component props
  * @param props.resource - a resource data object defined in resourceItems
  */
 export const Card: FunctionComponent<Card> = ({ resource }) => {
@@ -62,7 +62,7 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
     return (
         <div className="tw-bg-white tw-shadow-md tw-rounded-lg md:tw-min-h-[568px]">
             {/* Background */}
-            <div className="tw-relative tw-h-[172px] md:tw-h-1/3">
+            <div className="tw-relative tw-h-[172px] md:tw-h-1/3 tw-overflow-hidden tw-rounded-t-lg">
                 {resource.thumbnail ? (
                     <div
                         className="tw-bg-cover tw-h-full tw-bg-center"
