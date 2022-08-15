@@ -152,14 +152,14 @@ const ContactHome: FunctionComponent = () => (
                                     <div>
                                         Sourcegraph
                                         <br />
-                                        981 Mission St
+                                        548 Market St PMB 20739
                                         <br />
-                                        San Francisco, CA 94103 (USA)
+                                        San Francisco, CA 94104-5401 (USA)
                                         <br />
                                         <small>
                                             <a
                                                 target="_blank"
-                                                href="https://goo.gl/maps/LqTFnekUjRb9N12q6"
+                                                href="https://goo.gl/maps/6YT8WWAFQBPotMt77"
                                                 rel="noreferrer"
                                                 title="View on Google Maps"
                                                 data-button-style={buttonStyle.text}
