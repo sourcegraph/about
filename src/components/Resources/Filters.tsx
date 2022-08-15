@@ -20,7 +20,7 @@ interface FilterGroup {
  * @param props.text - The text of the filter
  */
 const Filter: FunctionComponent<Filter> = ({ text }) => (
-    <div className="tw-bg-white tw-text-gray-500 tw-py-[6px] tw-px-xs tw-text-sm tw-border tw-border-solid tw-border-gray-500 tw-rounded-lg tw-mr-xs tw-mb-xs hover:tw-bg-gray-500 hover:tw-text-white tw-cursor-pointer tw-transition-all tw-ease-out first-letter:tw-capitalize">
+    <div className="tw-bg-white tw-text-gray-500 tw-py-[6px] tw-px-xs tw-text-sm tw-border tw-border-solid tw-border-gray-500 tw-rounded-lg tw-mr-xs tw-mb-xs hover:tw-bg-gray-500 hover:tw-text-white tw-cursor-pointer tw-transition-all tw-ease-out first-letter:tw-capitalize tw-font-mono">
         {text}
     </div>
 )

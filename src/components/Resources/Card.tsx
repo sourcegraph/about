@@ -17,6 +17,22 @@ interface BackgroundVariant {
     [key: string]: Background['variant']
 }
 
+interface FilterPill {
+    text: string
+    light?: boolean
+}
+
+const FilterPill: FunctionComponent<FilterPill> = ({ text, light = false }) => {
+    const background = light ? 'tw-bg-gray-100' : 'tw-bg-gray-200'
+    return (
+        <div
+            className={`${background} tw-text-gray-500 tw-py-1 tw-px-2 tw-rounded-md tw-mr-2 tw-mb-2 tw-whitespace-nowrap first-letter:tw-capitalize tw-font-mono tw-text-xs`}
+        >
+            {text}
+        </div>
+    )
+}
+
 /**
  * This is the Card component rendered as a resource on the resources page.
  *
@@ -44,7 +60,7 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
     }
 
     return (
-        <div className="tw-bg-white tw-shadow-md tw-rounded-lg tw-overflow-hidden md:tw-min-h-[568px]">
+        <div className="tw-bg-white tw-shadow-md tw-rounded-lg md:tw-min-h-[568px]">
             {/* Background */}
             <div className="tw-relative tw-h-[172px] md:tw-h-1/3">
                 {resource.thumbnail ? (
@@ -66,14 +82,19 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                 <h4 className="tw-mb-xs">{resource.title}</h4>
 
                 <div className="flex-wrap tw-flex tw-mb-xs">
-                    {resource.subjects.map(subject => (
-                        <div
-                            key={subject}
-                            className="tw-bg-gray-200 tw-text-gray-500 tw-py-1 tw-px-2 tw-rounded-md tw-mr-2 tw-mb-2 tw-whitespace-nowrap first-letter:tw-capitalize"
-                        >
-                            {subject}
-                        </div>
+                    {resource.subjects.slice(0, 3).map(subject => (
+                        <FilterPill key={subject} text={subject} />
                     ))}
+                    {!!resource.subjects.slice(3).length && (
+                        <div className="tw-group tw-relative">
+                            <FilterPill text={`+${resource.subjects.slice(3).length}`} />
+                            <div className="tw-hidden group-hover:tw-flex group-hover:tw-animate-fadeIn tw-absolute tw-left-0 tw-top-0 tw-shadow-md tw-bg-white tw-pt-xxs tw-pl-xxs tw-rounded-md tw-flex-col tw-cursor-default">
+                                {resource.subjects.slice(3).map(subject => (
+                                    <FilterPill key={subject} text={subject} light={true} />
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </div>
 
                 <div className="tw-text-sm tw-mb-xs">{resource.description}</div>

@@ -52,7 +52,7 @@ export const Install: FunctionComponent = () => {
             className={classNames(
                 'tw-bg-white tw-rounded-[20px] tw-overflow-hidden tw-shadow-[-4px_4px_10px_0_rgba(0,0,0,0.25)]',
                 {
-                    'tw-animate-fadeOut': close,
+                    'tw-animate-fadeOutSlow': close,
                 }
             )}
         >
