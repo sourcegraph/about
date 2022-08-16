@@ -18,7 +18,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/design-appro
 
 C and C++ are everywhere, but the security issues and bugs caused by their lack of modern features are everywhere too (by some estimates, 80% of vulnerabilities are related to buffer overflows).
 
-Imagine you could wave a magic wand over your C or C++ codebase and make it better? With Zig, you can.
+What if you could wave a magic wand over your C or C++ codebase and make it better? This is the promise of Zig.
 
 Zig is a general-purpose programming language that can act as a drop-in replacement for C / C++, letting you incrementally improve your code base.
 
