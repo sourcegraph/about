@@ -1,10 +1,22 @@
 import { FunctionComponent } from 'react'
 
-// import AlertOutlineIcon from 'mdi-react/AlertOutlineIcon'
+import AlertOutlineIcon from 'mdi-react/AlertOutlineIcon'
+import Link from 'next/link'
 
-import { Layout, Filters, Card, resourceItems, ContentSection, RequestDemoTrySourcegraph } from '@components'
+import {
+    Layout,
+    Filters,
+    Card,
+    resourceItems,
+    ContentSection,
+    RequestDemoTrySourcegraph,
+    useFilters,
+} from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const Resources: FunctionComponent = () => {
+    const { filterGroups, setFilter } = useFilters()
+
     const topResources = [
         ...resourceItems.filter(item => item.featured),
         ...resourceItems
@@ -13,9 +25,10 @@ const Resources: FunctionComponent = () => {
             .sort((a, b) => new Date(a.publishDate).valueOf() - new Date(b.publishDate).valueOf()),
     ]
 
-    const bottomResources = resourceItems.filter(item => !item.featured).splice(3)
-    // TODO: Add this when all dates are added to data
-    // .sort((a, b) => new Date(a.publishDate).valueOf() - new Date(b.publishDate).valueOf())
+    const bottomResources = resourceItems
+        .filter(item => !item.featured)
+        .splice(3)
+        .sort((a, b) => new Date(a.publishDate).valueOf() - new Date(b.publishDate).valueOf())
 
     return (
         <Layout
@@ -36,16 +49,30 @@ const Resources: FunctionComponent = () => {
                 </div>
             }
         >
-            <Filters />
+            <Filters groups={filterGroups} setFilter={setFilter} />
 
             <ContentSection color="white">
-                {/* <div className="tw-text-center tw-max-w-xl tw-mx-auto tw-mb-3xl">
+                <div className="tw-text-center tw-max-w-xl tw-mx-auto tw-mb-3xl">
                     <span className="tw-bg-violet-100 tw-text-violet-400 tw-w-md tw-h-md tw-p-1 tw-rounded-full tw-inline-flex tw-items-center tw-justify-center tw-mb-xxs">
                         <AlertOutlineIcon className="tw-inline" size={18} />
                     </span>
                     <h4>We're stumped!</h4>
-                    <p className="tw-text-lg">We couldn't find any resource that matched all the filters chosen above — but maybe these will be of use...</p>
-                </div> */}
+                    <p className="tw-text-lg">
+                        Sorry, we don't have a match for that. Try adjusting the filters to expand the results. Can't
+                        find what you're looking for?{' '}
+                        <Link href="/demo" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Schedule a call
+                            </a>
+                        </Link>{' '}
+                        with a Sourcegraph teammate.
+                    </p>
+                </div>
 
                 <div className="tw-grid md:tw-grid-cols-2 xl:tw-grid-cols-3 tw-gap-sm">
                     {topResources.map(resource => (

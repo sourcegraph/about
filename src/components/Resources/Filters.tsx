@@ -3,27 +3,42 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import CloseCircleOutlineIcon from 'mdi-react/CloseCircleOutlineIcon'
 
-import { resourceItems } from '@components'
-
-interface Filter {
+export interface Filter {
     text: string
     checked?: boolean
+    onClick?: () => void
 }
 
 interface FilterGroup {
     title: string
-    filters: string[]
+    filters: Filter[]
+    setFilter?: (groupTitle: string, { text, checked }: Filter) => void
+}
+
+interface Filters {
+    groups: FilterGroup[]
+    setFilter?: (groupTitle: string, { text, checked }: Filter) => void
 }
 
 /**
- * A Filter pill component displaying the filter type
+ * A Filter component displaying the filter type
  *
  * @param props - component props
- * @param props.text - The text for the filter
- * @param props.checked - The enabled/disabled status
+ * @param props.text - the text for the filter
+ * @param props.checked - the enabled/disabled status
+ * @param props.onClick - the click function
  */
-const Filter: FunctionComponent<Filter> = ({ text, checked = false }) => (
-    <div className={classNames('tw-py-[6px] tw-px-xs tw-text-sm tw-border tw-border-solid tw-border-gray-500 tw-rounded-lg tw-mr-xs tw-mb-xs hover:tw-bg-gray-500 hover:tw-text-white tw-cursor-pointer tw-transition-all tw-ease-out first-letter:tw-capitalize tw-font-mono', { 'tw-text-white tw-bg-gray-500': checked, 'tw-bg-white tw-text-gray-500': !checked })}>
+const Filter: FunctionComponent<Filter> = ({ text, checked = false, onClick }) => (
+    <div
+        className={classNames(
+            'tw-py-[6px] tw-px-xs tw-text-sm tw-border tw-border-solid tw-border-gray-500 tw-rounded-lg tw-mr-xs tw-mb-xs hover:tw-bg-gray-500 hover:tw-text-white tw-cursor-pointer tw-transition-all tw-ease-out first-letter:tw-capitalize tw-font-mono',
+            { 'tw-text-white tw-bg-gray-500': checked, 'tw-bg-white tw-text-gray-500': !checked }
+        )}
+        onClick={onClick}
+        onKeyDown={onClick}
+        role="button"
+        tabIndex={0}
+    >
         {text}
     </div>
 )
@@ -34,38 +49,44 @@ const Filter: FunctionComponent<Filter> = ({ text, checked = false }) => (
  * @param props - component props
  * @param props.title - title of the filter group
  * @param props.filters - an array of filters
+ * @param props.setFilter - function to set a filter
  */
-const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters }) => (
+const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters, setFilter }) => (
     <div className="md:tw-grid md:tw-grid-cols-12">
         <h6 className="tw-mb-xs md:tw-mb-0 md:tw-mr-5xl md:tw-col-span-3 tw-whitespace-nowrap">{title}</h6>
 
         <div className="tw-flex tw-flex-wrap md:tw-col-span-9">
             {filters.map(filter => (
-                <Filter key={filter} text={filter} />
+                <Filter
+                    key={filter.text}
+                    text={filter.text}
+                    checked={filter.checked}
+                    onClick={() => setFilter(title, filter)}
+                />
             ))}
-            <Filter text="All" />
+            <Filter text="All" checked={filters.every(filter => !filter.checked)} />
         </div>
     </div>
 )
 
 /**
- * This is the Filters component that displays all filters.
+ * The Filters component that displays all filters.
+ *
+ * @param props - component props
+ * @param props.groups - an array of filter groups
+ * @param props.setFilter - function to set a filter
  */
-export const Filters: FunctionComponent = () => {
-    const contentTypes = [...new Set(resourceItems.map(resource => resource.contentType))].sort()
-    const subjects = [...new Set(resourceItems.flatMap(resource => resource.subjects))].sort()
-
-    return (
-        <div className="tw-bg-gray-50 tw-py-5xl tw-px-sm">
-            <div className="tw-max-w-5xl tw-mx-auto">
-                <div className="text-right tw-text-blurple-400 tw-mb-sm tw-cursor-pointer">
-                    <CloseCircleOutlineIcon size={24} className="tw-inline tw-mr-1 tw-align-top" />
-                    Clear
-                </div>
-
-                <FilterGroup title="Content Type" filters={contentTypes} />
-                <FilterGroup title="Subject" filters={subjects} />
+export const Filters: FunctionComponent<Filters> = ({ groups, setFilter }) => (
+    <div className="tw-bg-gray-50 tw-py-5xl tw-px-sm">
+        <div className="tw-max-w-5xl tw-mx-auto">
+            <div className="text-right tw-text-blurple-400 tw-mb-sm tw-cursor-pointer">
+                <CloseCircleOutlineIcon size={24} className="tw-inline tw-mr-1 tw-align-top" />
+                Clear
             </div>
+
+            {groups.map(group => (
+                <FilterGroup key={group.title} title={group.title} filters={group.filters} setFilter={setFilter} />
+            ))}
         </div>
-    )
-}
+    </div>
+)
