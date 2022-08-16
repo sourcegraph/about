@@ -86,8 +86,6 @@ By convention, Zig has a global allocator that you’re encouraged to use for al
 
 Zig is faster than C. This is partly a result of Andrew’s data-oriented design approach that led to performance-enhancing changes in Zig programming that would not be possible in other languages.
 
-![](https://p21.p4.n0.cdn.getcloudapp.com/items/mXuxkeKj/22c8c562-1f55-4018-898f-b8874a7d7c4e.gif?v=66c723218e54ac976de04910a4c2c162)
-
 Andrew’s model of how the cache system of CPUs work is intuitive: [The less memory is touched](https://youtu.be/gn3YsZ6HUHw?t=3958), the less pressure there will be on the CPU. Working from this observation, Andrew focused on reducing the amount of memory used by objects created in Zig’s self-hosted compiler. This means that less memory is used in the compiler and that there is less pressure on the cache of the CPU, making the code faster and improving Zig’s speed by as much as 35%.
 
 This type of optimization, Andrew explains, would not be possible in languages like Rust. One of the core components of Zig’s boost in performance is untagged unions. By putting the tags in a separate array, pressure on the cache is reduced. In Rust, however, you can’t use untagged unions without making your code unsafe.
