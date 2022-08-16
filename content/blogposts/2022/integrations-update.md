@@ -15,7 +15,7 @@ With the upcoming launch of Sourcegraph 4.0 in September, 2022, we’re investin
 
 This decision means that after the September 2022 release of Sourcegraph 4.0 the following changes will go into effect: 
 
-* Top used extensions, including code navigation, git-extras, open-in-editor, and search-exports, will become part of the core functionality. These enhancements will provide developers code context while staying in the flow within your preferred tools. 
+* Top used extensions, including code navigation, git-extras, open-in-editor, and search-exports, will become part of the core functionality. These enhancements will provide developers code context while staying in the flow within their preferred tools. 
 * By default, you won't be able to access the extensions registry to use or enable extensions. Note: If you still need access to extensions, you can enable a feature flag to do so until early 2023.
 * You will no longer be able to create extensions on a private registry unless you have enabled the feature flag.
 
