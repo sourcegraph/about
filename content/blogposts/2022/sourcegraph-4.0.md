@@ -157,3 +157,7 @@ Improved helpers on the homepage make it easier for new users to get started wit
 ### Improved search history
 Search history will be accessible from the search bar instead of only on the search homepage, making it easier to access.
 
+
+## Install Docker Compose on AWS with 1 Click
+Customers now enjoy a simplified installation process via Sourcegraph's 3 new Docker Compose Amazon Machine Images (AMI). With one click, Sourcegraph's intelligent code search installs on their AWS infrastructure. The 3 sizes of AMIs (Small, Medium, and Large) will be able to cater to instances that support up to thousands of concurrent users. Customers can expect other cloud images to be supported in the future.
+
