@@ -46,13 +46,13 @@ changelogItems:
 - Easier repo config
 
 
-### Run batch changes server-side
+### Run batch changes server-side (Beta)
 
 {/* @malomarrec: The title is the feature, as opposed to the benefit, because there's multiple benefits. Another angle would be to focus on the primary benefit and title this "Run batch changes at large scales" */}
 
 Batch Changes can now run across thousands of repositories, and features a much better development experience. Until now, you had to run `src-cli` locally to create batch changes: `src-cli` would pull repo archives through Sourcegraph, and kick off docker containers locally to run your batch change. For large amounts of repositories or resource-intensive code rewrites, running src-cli locally could take an impractical amount of time or be brittle.
 
-We're introducing the ability to run batch changes server-side instead of locally, which means you can:
+We're moving the ability to run batch changes server-side instead of locally to Beta, which means you can:
 - Run large-scale or resource intensive batch changes without clogging your local machine.
 - Run large batch changes fast by distributing them across an autoscaled pool of compute instances.
 - Get a better debugging experience, with logs being streamed directly into Sourcegraph.
