@@ -6,7 +6,6 @@ import CalendarBlankIcon from 'mdi-react/CalendarBlankIcon'
 import CloudUploadIcon from 'mdi-react/CloudUploadIcon'
 import HeartOutlineIcon from 'mdi-react/HeartOutlineIcon'
 import MagnifyIcon from 'mdi-react/MagnifyIcon'
-import SourceBranchIcon from 'mdi-react/SourceBranchIcon'
 import Link from 'next/link'
 
 import { ContentSection, CustomerLogos, HubSpotForm, Layout, ThreeUpText, TwoColumnSection } from '@components'
@@ -189,7 +188,7 @@ const Sourcegraph4: FunctionComponent = () => {
                             {
                                 icon: (
                                     <span className="tw-inline-block tw-bg-violet-100 tw-text-violet-400 tw-rounded-lg tw-p-3">
-                                        <SourceBranchIcon />
+                                        <img src="/icons/batch-changes.svg" alt="" width={24} height={24} />
                                     </span>
                                 ),
                                 subtitle: 'Server-side Batch Changes',
