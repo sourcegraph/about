@@ -1,10 +1,15 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import BarChartIcon from 'mdi-react/BarChartIcon'
 import CalendarBlankIcon from 'mdi-react/CalendarBlankIcon'
+import CloudUploadIcon from 'mdi-react/CloudUploadIcon'
+import HeartOutlineIcon from 'mdi-react/HeartOutlineIcon'
+import MagnifyIcon from 'mdi-react/MagnifyIcon'
+import SourceBranchIcon from 'mdi-react/SourceBranchIcon'
 import Link from 'next/link'
 
-import { ContentSection, CustomerLogos, HubSpotForm, Layout, TwoColumnSection } from '@components'
+import { ContentSection, CustomerLogos, HubSpotForm, Layout, ThreeUpText, TwoColumnSection } from '@components'
 import { buttonLocation, buttonStyle } from '@data'
 
 interface Time {
@@ -16,14 +21,16 @@ interface Time {
 const Time: FunctionComponent<Time> = ({ time, label, separator = true }) => (
     <>
         <div>
-            <div className="tw-text-4xl md:tw-text-6xl lg:tw-text-[10.75rem] lg:tw-leading-none">{time}</div>
-            <div className="tw-text-xl lg:tw-text-4xl tw-tracking-wide">
+            <div className="tw-text-4xl md:tw-text-6xl lg:tw-text-[8rem] xl:tw-text-[10.75rem] lg:tw-leading-none">
+                {time}
+            </div>
+            <div className="tw-text-xl lg:tw-text-3xl xl:tw-text-4xl tw-tracking-wide">
                 <span>{label.charAt(0)}</span>
                 <span className="tw-hidden xs:tw-inline">{label.slice(1)}</span>
             </div>
         </div>
         {separator && (
-            <span className="tw-text-3xl md:tw-text-6xl lg:tw-text-[10.75rem] tw-mb-md md:tw-mb-8 lg:tw-mb-14 tw-mx-xxs md:tw-mx-sm lg:tw-mx-xl lg:tw-leading-none">
+            <span className="tw-text-3xl md:tw-text-6xl lg:tw-text-[7rem] xl:tw-text-[10.75rem] tw-mb-md md:tw-mb-8 xl:tw-mb-14 tw-mx-xxs md:tw-mx-sm xl:tw-mx-xl xl:tw-leading-none">
                 :
             </span>
         )}
@@ -157,13 +164,62 @@ const Sourcegraph4: FunctionComponent = () => {
                     }
                 />
 
-                <div className="tw-text-center">
-                    <div className="tw-my-5xl">
-                        <h2 className="tw-max-w-2xl tw-mx-auto tw-mb-3xl">
-                            We handpicked a few enhancements that we know you’ll love
-                        </h2>
-                    </div>
+                <div className="tw-my-5xl">
+                    <ThreeUpText
+                        title="We handpicked a few enhancements that we know you’ll love"
+                        items={[
+                            {
+                                icon: (
+                                    <span className="tw-inline-block tw-bg-violet-100 tw-text-violet-400 tw-rounded-lg tw-p-3">
+                                        <MagnifyIcon />
+                                    </span>
+                                ),
+                                subtitle: 'Search improvements',
+                                description: 'A faster, simpler, and more streamlined search experience with a new UI',
+                            },
+                            {
+                                icon: (
+                                    <span className="tw-inline-block tw-bg-violet-100 tw-text-violet-400 tw-rounded-lg tw-p-3">
+                                        <CloudUploadIcon />
+                                    </span>
+                                ),
+                                subtitle: 'Cloud-first deployment',
+                                description: 'Secure, scalable, and dedicated cloud deployment on enterprise',
+                            },
+                            {
+                                icon: (
+                                    <span className="tw-inline-block tw-bg-violet-100 tw-text-violet-400 tw-rounded-lg tw-p-3">
+                                        <SourceBranchIcon />
+                                    </span>
+                                ),
+                                subtitle: 'Server-side Batch Changes',
+                                description:
+                                    ' Run large scale batch changes and iterate faster on updates across the codebase',
+                            },
+                            {
+                                icon: (
+                                    <span className="tw-inline-block tw-bg-violet-100 tw-text-violet-400 tw-rounded-lg tw-p-3">
+                                        <HeartOutlineIcon />
+                                    </span>
+                                ),
+                                subtitle: 'Improved admin experience',
+                                description: 'Enhanced usage analytics, OpenTelemetry, and more',
+                            },
+                            {
+                                icon: (
+                                    <span className="tw-inline-block tw-bg-violet-100 tw-text-violet-400 tw-rounded-lg tw-p-3">
+                                        <BarChartIcon />
+                                    </span>
+                                ),
+                                subtitle: 'Relevant search aggregations',
+                                description:
+                                    'Code Insights will provide relevant high-level aggregations over search results',
+                            },
+                        ]}
+                    />
+                </div>
 
+                <div className="tw-text-center">
                     <div className="tw-mb-3xl">
                         <h2 className="tw-mb-xs">Don’t just take it from us</h2>
                         <p className="tw-max-w-lg tw-mx-auto">

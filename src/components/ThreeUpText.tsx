@@ -38,7 +38,14 @@ const ItemTitle = ({ text, small }: ItemTitle): ReactElement => {
 
 export const ThreeUpText: FunctionComponent<ThreeUpText> = ({ title, subTitle, items }) => (
     <div className="sm:tw-text-center">
-        <h2 className={classNames('md:text-center', { 'tw-mb-16': !subTitle, 'tw-mb-4': subTitle })}>{title}</h2>
+        <h2
+            className={classNames('md:text-center tw-max-w-2xl tw-mx-auto', {
+                'tw-mb-16': !subTitle,
+                'tw-mb-4': subTitle,
+            })}
+        >
+            {title}
+        </h2>
         {subTitle && <p className="tw-mb-16">{subTitle}</p>}
 
         <div className="sm:tw-max-w-md sm:tw-mx-auto lg:tw-max-w-none lg:tw-grid lg:tw-grid-cols-12 lg:tw-gap-8">
