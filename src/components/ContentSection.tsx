@@ -25,7 +25,7 @@ export const ContentSection: FunctionComponent<Props> = ({
     className = '',
     children,
 }) => (
-    <div id={id} className={classNames('tw-px-sm tw-py-5xl', COLORS[color], parentClassName)}>
+    <div id={id} className={classNames('tw-px-sm tw-py-3xl md:tw-py-5xl', COLORS[color], parentClassName)}>
         <section className={`tw-max-w-screen-xl tw-mx-auto ${className}`}>{children}</section>
     </div>
 )
