@@ -56,7 +56,7 @@ export const ThreeUpText: FunctionComponent<ThreeUpText> = ({ title, subTitle, i
                 >
                     {item.icon && item.icon}
                     <ItemTitle text={item.subtitle} small={!!item.icon} />
-                    <p>{item.description}</p>
+                    <p className="tw-px-sm">{item.description}</p>
                 </div>
             ))}
         </div>
