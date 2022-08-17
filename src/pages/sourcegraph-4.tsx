@@ -77,7 +77,7 @@ const Sourcegraph4: FunctionComponent = () => {
         const countdown = setInterval(getRemainingTime, 1000)
 
         return () => clearInterval(countdown)
-    }, [])
+    })
 
     return (
         <Layout
