@@ -1,6 +1,5 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import BarChartIcon from 'mdi-react/BarChartIcon'
 import CalendarBlankIcon from 'mdi-react/CalendarBlankIcon'
 import CloudUploadIcon from 'mdi-react/CloudUploadIcon'
@@ -127,8 +126,8 @@ const Sourcegraph4: FunctionComponent = () => {
                         <div className="lg:tw-pr-5xl">
                             <h2 className="tw-mb-md">Stay up-to-date about Sourcegraph 4.0</h2>
                             <p className="tw-mb-md tw-text-lg">
-                                The new code intelligence platform helps you understand, visualize, and fix your
-                                codebase so you can ship code faster.
+                                In the first Sourcegraph Starship, we'll be launching the code intelligence platform for
+                                the modern development team.
                             </p>
 
                             <div className="tw-flex tw-flex-col">
@@ -143,17 +142,6 @@ const Sourcegraph4: FunctionComponent = () => {
                                 >
                                     Add to calendar
                                     <CalendarBlankIcon className="tw-inline tw-ml-xxs" />
-                                </a>
-                                <a
-                                    href="https://github.com/sourcegraph/about/pull/5623/files"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                >
-                                    Check out the PR for our release post to learn more
-                                    <ArrowRightIcon className="tw-inline tw-ml-xxs" />
                                 </a>
                             </div>
                         </div>
@@ -224,8 +212,17 @@ const Sourcegraph4: FunctionComponent = () => {
                     <div className="tw-mb-3xl">
                         <h2 className="tw-mb-xs">Don’t just take it from us</h2>
                         <p className="tw-max-w-lg tw-mx-auto">
-                            Developers at organizations around the globe rely on Sourcegraph to understand, fix, and
-                            automate their codebase.
+                            More than a million developers have hopped aboard with Sourcegraph.{' '}
+                            <a
+                                href={calendarInviteLink}
+                                rel="noopener noreferrer"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Join us
+                            </a>{' '}
+                            to find out more about where we're going with the universe of code.
                         </p>
                     </div>
                 </div>
