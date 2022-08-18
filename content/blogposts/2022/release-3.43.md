@@ -8,9 +8,21 @@ published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/sourcegraph-3-43.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/sourcegraph-3-43.png
 changelogItems:
-  - description: ''
-    url: 
+  - description: 'Search queries with patterns surrounded by /.../ will now be interpreted as regular expressions. Existing search links or code monitors are unaffected. In the rare event where older links rely on the literal meaning of /.../, the string will be automatically quoted it in a content filter, preserving the original meaning. If you happen to use an existing older link and want /.../ to work as a regular expression, add patterntype:standard to the query. New queries and code monitors will interpret /.../ as regular expressions.'
+    url: https://github.com/sourcegraph/sourcegraph/pull/38141
+    category: Search
+  - description: 'The experimental dependencies search feature has been removed, including the repo:deps(...) search predicate and the site configuration options codeIntelLockfileIndexing.enabled and experimentalFeatures.dependenciesSearch.'
+    url: https://github.com/sourcegraph/sourcegraph/pull/39742
+    category: Search
+  - description: 'Added the ROCKSKIP_MIN_REPO_SIZE_MB config option. Rockskip is automatically used for repositories over the set size (which defaults to 1GB).'
+    url: https://github.com/sourcegraph/sourcegraph/pull/38192
+    category: Code Navigation
+  - description: '"observability.tracing": { "urlTemplate": "..." } can now be set to configure generated trace URLs (for example those generated via &trace=1).'
+    url: https://github.com/sourcegraph/sourcegraph/pull/
     category: 
+  - description: 'Added experimental support for exporting traces to an OpenTelemetry collector with "observability.tracing": { "type": "opentelemetry" }.'
+    url: https://github.com/sourcegraph/sourcegraph/pull/37984
+    category: Observability
 ---
 
 Sourcegraph 3.43 is now available! For this release, we introduced:
