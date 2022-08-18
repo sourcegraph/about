@@ -5,6 +5,7 @@ import CalendarBlankIcon from 'mdi-react/CalendarBlankIcon'
 import CloudUploadIcon from 'mdi-react/CloudUploadIcon'
 import HeartOutlineIcon from 'mdi-react/HeartOutlineIcon'
 import MagnifyIcon from 'mdi-react/MagnifyIcon'
+import UpdateIcon from 'mdi-react/UpdateIcon'
 
 import { ContentSection, CustomerLogos, HubSpotForm, Layout, ThreeUpText, TwoColumnSection } from '@components'
 import { buttonLocation, buttonStyle } from '@data'
@@ -203,6 +204,16 @@ const Sourcegraph4: FunctionComponent = () => {
                                 subtitle: 'Relevant search aggregations',
                                 description:
                                     'Code Insights will provide relevant high-level aggregations over search results',
+                            },
+                            {
+                                icon: (
+                                    <span className="tw-inline-block tw-bg-violet-100 tw-text-violet-400 tw-rounded-lg tw-p-3">
+                                        <UpdateIcon />
+                                    </span>
+                                ),
+                                subtitle: 'Multi-version upgrades',
+                                description:
+                                    'Quickly upgrade your instance from 3.29 and higher to 4.0 in a few simple steps',
                             },
                         ]}
                     />
