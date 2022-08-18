@@ -6,7 +6,6 @@ import CalendarBlankIcon from 'mdi-react/CalendarBlankIcon'
 import CloudUploadIcon from 'mdi-react/CloudUploadIcon'
 import HeartOutlineIcon from 'mdi-react/HeartOutlineIcon'
 import MagnifyIcon from 'mdi-react/MagnifyIcon'
-import Link from 'next/link'
 
 import { ContentSection, CustomerLogos, HubSpotForm, Layout, ThreeUpText, TwoColumnSection } from '@components'
 import { buttonLocation, buttonStyle } from '@data'
@@ -35,6 +34,9 @@ const Time: FunctionComponent<Time> = ({ time, label, separator = true }) => (
         )}
     </>
 )
+
+const calendarInviteLink =
+    'https://calendar.google.com/event?action=TEMPLATE&tmeid=NmUwMGZiMGRtaHFqdWdjcjZyOXQwdmtrczQgY19lMDYwOW9xYzF2ZTRoczBhMjk5djdvNjR1MEBn&tmsrc=c_e0609oqc1ve4hs0a299v7o64u0%40group.calendar.google.com'
 
 const Sourcegraph4: FunctionComponent = () => {
     const [time, setTime] = useState({
@@ -93,18 +95,18 @@ const Sourcegraph4: FunctionComponent = () => {
                         <h3 className="tw-mb-md md:tw-mb-2xl tw-max-w-[850px] tw-mx-auto">
                             Buckle up and join us on the first Starship launch of Sourcegraph’s code intelligence
                             platform on{' '}
-                            <Link href="#" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                    className="tw-font-normal"
-                                >
-                                    September 27, 2022
-                                    <CalendarBlankIcon className="tw-inline tw-mb-1 tw-ml-xxs" size={24} />
-                                </a>
-                            </Link>
+                            <a
+                                href={calendarInviteLink}
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                                className="tw-font-normal"
+                            >
+                                September 27, 2022
+                                <CalendarBlankIcon className="tw-inline tw-mb-1 tw-ml-xxs" size={24} />
+                            </a>
                         </h3>
 
                         {!time.launched && (
@@ -130,29 +132,29 @@ const Sourcegraph4: FunctionComponent = () => {
                             </p>
 
                             <div className="tw-flex tw-flex-col">
-                                <Link href="#" passHref={true}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.hero}
-                                        data-button-type="cta"
-                                        className="tw-mb-xs"
-                                    >
-                                        Add to calendar
-                                        <CalendarBlankIcon className="tw-inline tw-ml-xxs" />
-                                    </a>
-                                </Link>
-                                <Link href="#" passHref={true}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.hero}
-                                        data-button-type="cta"
-                                    >
-                                        Read the PR
-                                        <ArrowRightIcon className="tw-inline tw-ml-xxs" />
-                                    </a>
-                                </Link>
+                                <a
+                                    href={calendarInviteLink}
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                    className="tw-mb-xs"
+                                >
+                                    Add to calendar
+                                    <CalendarBlankIcon className="tw-inline tw-ml-xxs" />
+                                </a>
+                                <a
+                                    href="https://github.com/sourcegraph/about/pull/5623/files"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
+                                    Check out the PR for our release post to learn more
+                                    <ArrowRightIcon className="tw-inline tw-ml-xxs" />
+                                </a>
                             </div>
                         </div>
                     }
@@ -182,8 +184,8 @@ const Sourcegraph4: FunctionComponent = () => {
                                         <CloudUploadIcon />
                                     </span>
                                 ),
-                                subtitle: 'Cloud-first deployment',
-                                description: 'Secure, scalable, and dedicated cloud deployment on enterprise',
+                                subtitle: 'Enterprise Cloud deployment',
+                                description: 'Secure, easy, and scalable dedicated Cloud instances',
                             },
                             {
                                 icon: (
@@ -193,7 +195,7 @@ const Sourcegraph4: FunctionComponent = () => {
                                 ),
                                 subtitle: 'Server-side Batch Changes',
                                 description:
-                                    ' Run large scale batch changes and iterate faster on updates across the codebase',
+                                    'Run large-scale batch changes and iterate faster on updates across the codebase',
                             },
                             {
                                 icon: (

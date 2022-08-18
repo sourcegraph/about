@@ -54,7 +54,7 @@ export const ThreeUpText: FunctionComponent<ThreeUpText> = ({ title, subTitle, i
                     key={`item-${index + 1}-${item.description}`}
                     className="tw-col-span-12 sm:tw-max-w-md sm:tw-w-full tw-mb-8 lg:tw-col-span-4 lg:tw-max-w-none"
                 >
-                    {item.icon && item.icon}
+                    {item.icon && <div className="tw-mb-sm">{item.icon}</div>}
                     <ItemTitle text={item.subtitle} small={!!item.icon} />
                     <p className="tw-px-sm">{item.description}</p>
                 </div>
