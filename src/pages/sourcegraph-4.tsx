@@ -7,7 +7,7 @@ import HeartOutlineIcon from 'mdi-react/HeartOutlineIcon'
 import MagnifyIcon from 'mdi-react/MagnifyIcon'
 import UpdateIcon from 'mdi-react/UpdateIcon'
 
-import { ContentSection, CustomerLogos, HubSpotForm, Layout, ThreeUpText, TwoColumnSection } from '@components'
+import { ContentSection, CtaSection, CustomerLogos, HubSpotForm, Layout, ThreeUpText } from '@components'
 import { buttonLocation, buttonStyle } from '@data'
 
 interface Time {
@@ -39,6 +39,7 @@ const calendarInviteLink =
     'https://calendar.google.com/event?action=TEMPLATE&tmeid=NmUwMGZiMGRtaHFqdWdjcjZyOXQwdmtrczQgY19lMDYwOW9xYzF2ZTRoczBhMjk5djdvNjR1MEBn&tmsrc=c_e0609oqc1ve4hs0a299v7o64u0%40group.calendar.google.com'
 
 const Sourcegraph4: FunctionComponent = () => {
+    const [modal, setModal] = useState(false)
     const [time, setTime] = useState({
         days: '0',
         hours: '0',
@@ -78,7 +79,7 @@ const Sourcegraph4: FunctionComponent = () => {
         const countdown = setInterval(getRemainingTime, 1000)
 
         return () => clearInterval(countdown)
-    })
+    }, [day, hour, minute, second, launchDate])
 
     return (
         <Layout
@@ -89,7 +90,7 @@ const Sourcegraph4: FunctionComponent = () => {
             }}
             heroAndHeaderClassName="tw-bg-white"
             hero={
-                <div className="tw-px-sm tw-py-3xl md:tw-py-5xl">
+                <div className="tw-px-sm tw-pt-3xl md:tw-pt-5xl">
                     <div className="tw-max-w-screen-xl tw-mx-auto tw-text-center">
                         <h1 className="tw-mb-md">The future of Sourcegraph is launching soon</h1>
                         <h3 className="tw-mb-md md:tw-mb-2xl tw-max-w-[850px] tw-mx-auto">
@@ -121,40 +122,28 @@ const Sourcegraph4: FunctionComponent = () => {
                 </div>
             }
         >
+            <CtaSection
+                title="Stay up-to-date about Sourcegraph 4.0"
+                description="In the first Sourcegraph Starship, we'll be launching the code intelligence platform for the modern development team."
+                cta1={{
+                    text: 'Remind me',
+                    button: true,
+                    onClick: () => setModal(true),
+                }}
+                cta2={{
+                    text: 'Add to calendar',
+                    icon: <CalendarBlankIcon />,
+                    link: calendarInviteLink,
+                }}
+            />
+
+            {/* TODO: Implement in modal */}
+            <div className="tw-hidden">
+                <HubSpotForm formId="10675181-7cbe-43a4-a1b9-3a00835f18c8" />
+            </div>
+
             <ContentSection color="white" parentClassName="tw-pt-0 md:tw-pt-0">
-                <TwoColumnSection
-                    leftColumn={
-                        <div className="lg:tw-pr-5xl">
-                            <h2 className="tw-mb-md">Stay up-to-date about Sourcegraph 4.0</h2>
-                            <p className="tw-mb-md tw-text-lg">
-                                In the first Sourcegraph Starship, we'll be launching the code intelligence platform for
-                                the modern development team.
-                            </p>
-
-                            <div className="tw-flex tw-flex-col">
-                                <a
-                                    href={calendarInviteLink}
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                    className="tw-mb-xs"
-                                >
-                                    Add to calendar
-                                    <CalendarBlankIcon className="tw-inline tw-ml-xxs" />
-                                </a>
-                            </div>
-                        </div>
-                    }
-                    rightColumn={
-                        <div className="tw-border-4 tw-border-solid sg-border-gradient-saturn tw-p-md">
-                            <HubSpotForm formId="10675181-7cbe-43a4-a1b9-3a00835f18c8" />
-                        </div>
-                    }
-                />
-
-                <div className="tw-my-5xl">
+                <div className="tw-mb-5xl">
                     <ThreeUpText
                         title="We handpicked a few enhancements that we know you’ll love"
                         items={[
