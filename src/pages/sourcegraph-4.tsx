@@ -217,6 +217,7 @@ const Sourcegraph4: FunctionComponent = () => {
                             <a
                                 href={calendarInviteLink}
                                 rel="noopener noreferrer"
+                                target="_blank"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
