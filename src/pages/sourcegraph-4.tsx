@@ -94,8 +94,7 @@ const Sourcegraph4: FunctionComponent = () => {
                     <div className="tw-max-w-screen-xl tw-mx-auto tw-text-center">
                         <h1 className="tw-mb-md">The future of Sourcegraph is launching soon</h1>
                         <h3 className="tw-mb-md md:tw-mb-2xl tw-max-w-[850px] tw-mx-auto">
-                            Buckle up and join us on the first Starship launch of Sourcegraph’s code intelligence
-                            platform on{' '}
+                            Join us for the first Sourcegraph Starship on{' '}
                             <a
                                 href={calendarInviteLink}
                                 rel="noopener noreferrer"
@@ -123,8 +122,8 @@ const Sourcegraph4: FunctionComponent = () => {
             }
         >
             <CtaSection
-                title="Stay up-to-date about Sourcegraph 4.0"
-                description="In the first Sourcegraph Starship, we'll be launching the code intelligence platform for the modern development team."
+                title="Sourcegraph 4.0"
+                description="In the first Sourcegraph Starship, we'll be launching the code intelligence platform for the modern development team. Stay up-to-date about the launch of Sourcegraph 4.0."
                 cta1={{
                     text: 'Remind me',
                     button: true,
@@ -145,7 +144,8 @@ const Sourcegraph4: FunctionComponent = () => {
             <ContentSection color="white" parentClassName="tw-pt-0 md:tw-pt-0">
                 <div className="tw-mb-5xl">
                     <ThreeUpText
-                        title="We handpicked a few enhancements that we know you’ll love"
+                        title="Here's a sneak peek at what we're launching"
+                        fullWidthTitle={true}
                         items={[
                             {
                                 icon: (
@@ -192,7 +192,7 @@ const Sourcegraph4: FunctionComponent = () => {
                                 ),
                                 subtitle: 'Relevant search aggregations',
                                 description:
-                                    'Code Insights will provide relevant high-level aggregations over search results',
+                                    'Aggregations of search results help to refine searches and illuminate usage patterns',
                             },
                             {
                                 icon: (
@@ -201,18 +201,19 @@ const Sourcegraph4: FunctionComponent = () => {
                                     </span>
                                 ),
                                 subtitle: 'Multi-version upgrades',
-                                description:
-                                    'Quickly upgrade your instance from 3.29 and higher to 4.0 in a few simple steps',
+                                description: 'Upgrade from Sourcegraph 3.29 to Sourcegraph 4.0 in a few simple steps ',
                             },
                         ]}
                     />
                 </div>
 
                 <div className="tw-text-center">
-                    <div className="tw-mb-3xl">
-                        <h2 className="tw-mb-xs">Don’t just take it from us</h2>
+                    <div className="tw-mb-5xl">
+                        <h2 className="tw-max-w-[680px] tw-mx-auto tw-mb-xs">
+                            Join these engineering orgs pushing forward modern software development
+                        </h2>
                         <p className="tw-max-w-lg tw-mx-auto">
-                            More than a million developers have hopped aboard with Sourcegraph.{' '}
+                            More than a million developers hopped aboard Sourcegraph.{' '}
                             <a
                                 href={calendarInviteLink}
                                 rel="noopener noreferrer"

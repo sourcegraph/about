@@ -10,6 +10,7 @@ interface Item {
 
 interface ThreeUpText {
     title: string
+    fullWidthTitle?: boolean
     subTitle?: string | ReactNode
     items: Item[]
 }
@@ -36,10 +37,11 @@ const ItemTitle = ({ text, small }: ItemTitle): ReactElement => {
     )
 }
 
-export const ThreeUpText: FunctionComponent<ThreeUpText> = ({ title, subTitle, items }) => (
+export const ThreeUpText: FunctionComponent<ThreeUpText> = ({ title, subTitle, items, fullWidthTitle = false }) => (
     <div className="sm:tw-text-center">
         <h2
-            className={classNames('md:text-center tw-max-w-2xl tw-mx-auto', {
+            className={classNames('md:text-center', {
+                'tw-max-w-2xl tw-mx-auto': !fullWidthTitle,
                 'tw-mb-16': !subTitle,
                 'tw-mb-4': subTitle,
             })}
@@ -56,7 +58,7 @@ export const ThreeUpText: FunctionComponent<ThreeUpText> = ({ title, subTitle, i
                 >
                     {item.icon && <div className="tw-mb-sm">{item.icon}</div>}
                     <ItemTitle text={item.subtitle} small={!!item.icon} />
-                    <p className="tw-px-sm">{item.description}</p>
+                    <p className="lg:tw-px-sm">{item.description}</p>
                 </div>
             ))}
         </div>
