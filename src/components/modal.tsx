@@ -1,7 +1,8 @@
-import { FunctionComponent, ReactNode, useEffect } from 'react'
+import { FunctionComponent, ReactNode, useEffect, useRef } from 'react'
 
 import classNames from 'classnames'
 import CloseIcon from 'mdi-react/CloseIcon'
+import useOnClickOutside from 'use-onclickoutside'
 
 import { Portal } from './Portal'
 
@@ -13,9 +14,13 @@ interface Modal {
 }
 
 export const Modal: FunctionComponent<Modal> = ({ title, children, open, handleClose }) => {
+    const modalReference = useRef(null)
+    useOnClickOutside(modalReference, handleClose)
+
     useEffect(() => {
         const closeOnEscapeKey = (event: { key: string }): void | null =>
             event.key === 'Escape' ? handleClose() : null
+
         document.body.addEventListener('keydown', closeOnEscapeKey)
         return () => {
             document.body.removeEventListener('keydown', closeOnEscapeKey)
@@ -30,7 +35,10 @@ export const Modal: FunctionComponent<Modal> = ({ title, children, open, handleC
                     { 'tw-hidden': !open, 'tw-block tw-animate-fadeIn': open }
                 )}
             >
-                <div className="tw-relative tw-max-w-2xl tw-w-full tw-mx-auto tw-bg-white tw-p-lg tw-rounded-lg">
+                <div
+                    className="tw-relative tw-max-w-2xl tw-w-full tw-mx-auto tw-bg-white tw-p-lg tw-rounded-lg"
+                    ref={modalReference}
+                >
                     <h4 className="tw-mb-md tw-pr-lg">{title}</h4>
                     <CloseIcon
                         className="tw-absolute tw-top-6 tw-right-6 tw-text-blurple-400 tw-cursor-pointer"

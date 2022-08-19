@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect, ReactPortal, ReactNode } from 'react'
+import { useState, useEffect, ReactPortal, ReactNode } from 'react'
 
 import { createPortal } from 'react-dom'
 
@@ -17,8 +17,8 @@ function createWrapper(id: string): HTMLDivElement {
 
 export const Portal = ({ children, id = 'portal' }: Portal): ReactPortal | null => {
     const [wrapperElement, setWrapperElement] = useState<Element | null>(null)
-
-    useLayoutEffect(() => {
+    
+    useEffect(() => {
         let element = document.querySelector(`#${id}`)
         let created = false
 
