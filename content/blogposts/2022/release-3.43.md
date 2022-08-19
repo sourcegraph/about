@@ -32,9 +32,9 @@ Sourcegraph 3.43 is now available! For this release, we introduced:
 
 ## An easier way for admins to manage users
 
-Admins are constantly on the lookout for better ways to manage users within Sourcegraph and in 3.43 we are introducing an additional tool: A redesigned user management page. This redesigned page allows admins to see user-level usage stats, sort and filter those users, and efficiently perform actions on a single or set of users. 
+Admins are constantly on the lookout for better ways to manage users within Sourcegraph and in 3.43 we are introducing a redesigned user management page to help. This updated page allows admins to see user-level usage stats, sort and filter those users, and efficiently perform actions on a single or set of users. 
 
-After upgrading to 3.43, site admins can find this new page under site admin > Users & Auth > Users. Looking towards Sourcegraph 4.0, we are excited to introduce more ways for admins to get the most out of Sourcegraph. 
+After upgrading to 3.43, site admins can find this enhanced page under site admin > Users & Auth > Users. Looking towards Sourcegraph 4.0, we are excited to introduce more ways for admins to get the most out of Sourcegraph. 
 
 ## Introducing usage trends and forecasts within admin analytics
 
