@@ -30,10 +30,10 @@ Admins are constantly on the lookout for better ways to manage users within Sour
 
 After upgrading to 3.43, site admins can find this enhanced page under site admin > Users & Auth > Users. Looking towards Sourcegraph 4.0, we are excited to introduce more ways for admins to get the most out of Sourcegraph. 
 
-<Figure 
+<p><Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/user_admin_page.png"
   alt="User administration page"
-/><br>
+/></p>
 
 
 ## Introducing usage trends and forecasts within admin analytics
