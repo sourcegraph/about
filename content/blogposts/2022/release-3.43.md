@@ -40,3 +40,8 @@ In 3.42, we introduced [all new admin analytics page](https://storage.googleapis
 Now in 3.43, we are introducing further updates: 
 - We have introduced yearly-projections to help admins further understand the value across an entire year. This builds on historical data captured and stored within the instance to show a full year of value. 
 - Graphs can be shown by day or by month to help admins more granularly understand trends in the data. 
+
+<Figure 
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/user_administration.png"
+  alt="User administration page"
+/>
