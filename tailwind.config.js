@@ -159,15 +159,20 @@ module.exports = {
           '0%': { background: dlsColors.lemon[200] },
           '100%': { backgroundColor: 'none' },
         },
-        fadeOut: {
+        fadeOutSlow: {
           '0%': { opacity: 1 },
           '100%': { opacity: 0 },
+        },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
         },
       },
 
       animation: {
         'flash-background': 'flashBackground 1s ease-out',
-        fadeOut: 'fadeOut 1s ease-out',
+        fadeOutSlow: 'fadeOut 1s ease-out',
+        fadeIn: 'fadeIn 0.175s ease-in forwards',
       },
     },
   },

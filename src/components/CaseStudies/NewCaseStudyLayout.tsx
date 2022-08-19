@@ -1,6 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import { Background, ContentSection, RequestDemoTrySourcegraph } from '@components'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+
+import { Background, ContentSection, CtaSection } from '@components'
 
 import { CaseStudyCard, CASESTUDIES } from './CaseStudyCard'
 
@@ -19,7 +21,19 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, childre
             {children}
 
             <Background variant="venusCode">
-                <RequestDemoTrySourcegraph />
+                <CtaSection
+                    centerContent={true}
+                    cta1={{
+                        text: 'Request a demo',
+                        button: true,
+                        link: '/demo',
+                    }}
+                    cta2={{
+                        text: 'Try Sourcegraph now',
+                        icon: <ArrowRightIcon />,
+                        link: '/get-started/self-hosted',
+                    }}
+                />
             </Background>
 
             <ContentSection color="white">
