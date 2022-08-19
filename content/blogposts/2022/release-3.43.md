@@ -36,6 +36,11 @@ Admins are constantly on the lookout for better ways to manage users within Sour
 
 After upgrading to 3.43, site admins can find this enhanced page under site admin > Users & Auth > Users. Looking towards Sourcegraph 4.0, we are excited to introduce more ways for admins to get the most out of Sourcegraph. 
 
+<Figure 
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/user_admin_page.png"
+  alt="User administration page"
+/>
+
 ## Introducing usage trends and forecasts within admin analytics
 
 In 3.42, we introduced an [all new admin analytics page](https://about.sourcegraph.com/blog/admin-analytics) to help admins understand and quantify the value of Sourcegraph to their organization. 
@@ -43,9 +48,3 @@ In 3.42, we introduced an [all new admin analytics page](https://about.sourcegra
 We've made additional improvements in 3.43 to include:
 - Yearly projections that help admins further understand the value across an entire year. This builds on historical data captured and stored within the instance to show a full year of value.
 - Graphs with usage trends that can be customized to show daily or monthly data.
-
-
-<Figure 
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/user_admin_page.png"
-  alt="User administration page"
-/>
