@@ -17,7 +17,7 @@ function createWrapper(id: string): HTMLDivElement {
 
 export const Portal = ({ children, id = 'portal' }: Portal): ReactPortal | null => {
     const [wrapperElement, setWrapperElement] = useState<Element | null>(null)
-    
+
     useEffect(() => {
         let element = document.querySelector(`#${id}`)
         let created = false

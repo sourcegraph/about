@@ -8,7 +8,7 @@ import HeartOutlineIcon from 'mdi-react/HeartOutlineIcon'
 import MagnifyIcon from 'mdi-react/MagnifyIcon'
 import UpdateIcon from 'mdi-react/UpdateIcon'
 
-import { ContentSection, CtaSection, CustomerLogos, HubSpotForm, Layout, ThreeUpText, Modal } from '@components'
+import { ContentSection, CtaSection, CustomerLogos, HubSpotForm, Layout, ThreeUpText, Modal, Badge } from '@components'
 import { buttonLocation, buttonStyle } from '@data'
 
 interface Time {
@@ -86,7 +86,8 @@ const Sourcegraph4: FunctionComponent = () => {
         <Layout
             meta={{
                 title: 'Sourcegraph - Sourcegraph 4.0',
-                description: 'Introducing Sourcegraph 4.0, the code intelligence platform for the modern development team.',
+                description:
+                    'Introducing Sourcegraph 4.0, the code intelligence platform for the modern development team.',
                 image: 'https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/meta/sourcegraph-4.png',
             }}
             heroAndHeaderClassName="tw-bg-white"
@@ -174,10 +175,7 @@ const Sourcegraph4: FunctionComponent = () => {
                                 ),
                                 subtitle: (
                                     <div>
-                                        Server-side Batch Changes{' '}
-                                        <span className="tw-text-sm tw-text-gray-500 tw-bg-gray-200 tw-px-2 tw-py-1 tw-rounded-md tw-ml-xxs tw-font-mono tw-align-middle -tw-tracking-tightest">
-                                            Beta
-                                        </span>
+                                        Server-side Batch Changes <Badge text="Beta" />
                                     </div>
                                 ),
                                 description:

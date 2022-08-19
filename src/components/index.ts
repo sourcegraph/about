@@ -2,6 +2,7 @@
 export { Alert } from './Alert'
 export { BackButton } from './BackButton'
 export { Background } from './Background'
+export { Badge } from './Badge'
 export { Blockquote } from './Blockquote'
 export { BoardSection } from './BoardSection'
 export { ContentSection } from './ContentSection'
