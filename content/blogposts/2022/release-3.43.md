@@ -19,10 +19,10 @@ changelogItems:
     category: Code Navigation
   - description: '"observability.tracing": { "urlTemplate": "..." } can now be set to configure generated trace URLs (for example those generated via &trace=1).'
     url: https://github.com/sourcegraph/sourcegraph/pull/
-    category: 
+    category: Admin
   - description: 'Added experimental support for exporting traces to an OpenTelemetry collector with "observability.tracing": { "type": "opentelemetry" }.'
     url: https://github.com/sourcegraph/sourcegraph/pull/37984
-    category: Observability
+    category: Admin
 ---
 
 Sourcegraph 3.43 is now available! For this release, we introduced:
