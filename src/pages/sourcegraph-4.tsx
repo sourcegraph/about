@@ -86,8 +86,7 @@ const Sourcegraph4: FunctionComponent = () => {
         <Layout
             meta={{
                 title: 'Sourcegraph - Sourcegraph 4.0',
-                description:
-                    'Sourcegraph 4.0 is a new code intelligence platform that helps developers understand, visualize, and fix their codebase. The platform is moving to Sourcegraph 4.0.',
+                description: 'Introducing Sourcegraph 4.0, the code intelligence platform for the modern development team.',
                 image: 'https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/meta/sourcegraph-4.png',
             }}
             heroAndHeaderClassName="tw-bg-white"

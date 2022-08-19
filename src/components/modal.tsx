@@ -20,12 +20,21 @@ export const Modal: FunctionComponent<Modal> = ({ title, children, open, handleC
     useEffect(() => {
         const closeOnEscapeKey = (event: { key: string }): void | null =>
             event.key === 'Escape' ? handleClose() : null
-
         document.body.addEventListener('keydown', closeOnEscapeKey)
+
+        if (open) {
+            document.body.style.overflowY = 'hidden'
+            document.documentElement.style.overflowY = 'hidden'
+            document.body.style.position = 'relative'
+        }
+
         return () => {
             document.body.removeEventListener('keydown', closeOnEscapeKey)
+            document.body.style.removeProperty('overflow-y')
+            document.documentElement.style.removeProperty('overflow-y')
+            document.body.style.removeProperty('position')
         }
-    }, [handleClose])
+    }, [handleClose, open])
 
     return (
         <Portal>
