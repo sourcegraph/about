@@ -42,6 +42,6 @@ Now in 3.43, we are introducing further updates:
 - Graphs can be shown by day or by month to help admins more granularly understand trends in the data. 
 
 <Figure 
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/user_administration.png"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/user_admin_page.png"
   alt="User administration page"
 />
