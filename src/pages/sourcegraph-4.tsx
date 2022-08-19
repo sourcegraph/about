@@ -173,7 +173,14 @@ const Sourcegraph4: FunctionComponent = () => {
                                         <img src="/icons/batch-changes.svg" alt="" width={24} height={24} />
                                     </span>
                                 ),
-                                subtitle: 'Server-side Batch Changes',
+                                subtitle: (
+                                    <div>
+                                        Server-side Batch Changes{' '}
+                                        <span className="tw-text-sm tw-text-gray-500 tw-bg-gray-200 tw-px-2 tw-py-1 tw-rounded-md tw-ml-xxs tw-font-mono tw-align-middle -tw-tracking-tightest">
+                                            Beta
+                                        </span>
+                                    </div>
+                                ),
                                 description:
                                     'Run large-scale batch changes and iterate faster on updates across the codebase',
                             },

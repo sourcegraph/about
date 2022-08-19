@@ -4,7 +4,7 @@ import classNames from 'classnames'
 
 interface Item {
     icon?: ReactNode
-    subtitle: string
+    subtitle: string | ReactNode
     description: string
 }
 
@@ -16,7 +16,7 @@ interface ThreeUpText {
 }
 
 interface ItemTitle {
-    text: string
+    text: string | ReactNode
     small?: boolean
 }
 
@@ -29,7 +29,7 @@ const ItemTitle = ({ text, small }: ItemTitle): ReactElement => {
             className={classNames('tw-mb-4', {
                 'tw-text-blurple-400': !small,
                 'tw-text-black': small,
-                'md:tw-max-w-xs md:tw-mx-auto': text.length > 20,
+                'md:tw-max-w-xs md:tw-mx-auto': typeof text === 'string' && text.length > 20,
             })}
         >
             {text}
