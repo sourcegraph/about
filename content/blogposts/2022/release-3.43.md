@@ -33,7 +33,8 @@ After upgrading to 3.43, site admins can find this enhanced page under site admi
 <Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/user_admin_page.png"
   alt="User administration page"
-/>
+/>  
+
 
 ## Introducing usage trends and forecasts within admin analytics
 
