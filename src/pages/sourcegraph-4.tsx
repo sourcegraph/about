@@ -1,5 +1,6 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
+import classNames from 'classnames'
 import BarChartIcon from 'mdi-react/BarChartIcon'
 import CalendarBlankIcon from 'mdi-react/CalendarBlankIcon'
 import CloudUploadIcon from 'mdi-react/CloudUploadIcon'
@@ -7,7 +8,7 @@ import HeartOutlineIcon from 'mdi-react/HeartOutlineIcon'
 import MagnifyIcon from 'mdi-react/MagnifyIcon'
 import UpdateIcon from 'mdi-react/UpdateIcon'
 
-import { ContentSection, CtaSection, CustomerLogos, HubSpotForm, Layout, ThreeUpText } from '@components'
+import { ContentSection, CtaSection, CustomerLogos, HubSpotForm, Layout, ThreeUpText, Modal } from '@components'
 import { buttonLocation, buttonStyle } from '@data'
 
 interface Time {
@@ -87,8 +88,10 @@ const Sourcegraph4: FunctionComponent = () => {
                 title: 'Sourcegraph - Sourcegraph 4.0',
                 description:
                     'Sourcegraph 4.0 is a new code intelligence platform that helps developers understand, visualize, and fix their codebase. The platform is moving to Sourcegraph 4.0.',
+                image: 'https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/meta/sourcegraph-4.png',
             }}
             heroAndHeaderClassName="tw-bg-white"
+            className={classNames({ 'tw-blur-[6px]': modal })}
             hero={
                 <div className="tw-px-sm tw-pt-3xl md:tw-pt-5xl">
                     <div className="tw-max-w-screen-xl tw-mx-auto tw-text-center">
@@ -136,10 +139,9 @@ const Sourcegraph4: FunctionComponent = () => {
                 }}
             />
 
-            {/* TODO: Implement in modal */}
-            <div className="tw-hidden">
+            <Modal title="Get notified when Sourcegraph 4.0 launches" open={modal} handleClose={() => setModal(false)}>
                 <HubSpotForm formId="10675181-7cbe-43a4-a1b9-3a00835f18c8" />
-            </div>
+            </Modal>
 
             <ContentSection color="white" parentClassName="tw-pt-0 md:tw-pt-0">
                 <div className="tw-mb-5xl">
