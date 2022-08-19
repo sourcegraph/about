@@ -17,8 +17,11 @@ changelogItems:
   - description: 'Added the ROCKSKIP_MIN_REPO_SIZE_MB config option. Rockskip is automatically used for repositories over the set size (which defaults to 1GB).'
     url: https://github.com/sourcegraph/sourcegraph/pull/38192
     category: Code Navigation
+  - description: By default, insights now get 12 historic data points in addition to a current daily value and future points that align with the defined interval.
+    url: https://github.com/sourcegraph/sourcegraph/pull/37756
+    category: Code Insights
   - description: '"observability.tracing": { "urlTemplate": "..." } can now be set to configure generated trace URLs (for example those generated via &trace=1).'
-    url: https://github.com/sourcegraph/sourcegraph/pull/
+    url: https://github.com/sourcegraph/sourcegraph/pull/39765
     category: Admin
   - description: 'Added experimental support for exporting traces to an OpenTelemetry collector with "observability.tracing": { "type": "opentelemetry" }.'
     url: https://github.com/sourcegraph/sourcegraph/pull/37984
