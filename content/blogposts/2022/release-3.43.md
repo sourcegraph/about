@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 3.43 release"
 publishDate: 2022-08-22T10:00-07:00
-description: "Sourcegraph 3.43 introduces new..."
+description: "Sourcegraph 3.43 introduces several new features for admins, including a newly redesigned user management page as well as annual forecasting for admin analytics."
 tags: [blog, release]
 slug: "release/3.43"
 published: true
