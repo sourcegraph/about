@@ -42,7 +42,7 @@ We've made additional improvements in 3.43 to include:
 - Annual projections of total times saved that help admins further understand the value of products within the code intelligence platform. This builds on historical data from the past three months that is captured and stored within the instance to show a full year of value.
 
 <p><Figure 
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/Total-Time-Save-Annual-Projection.png"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/time-saved.png"
   alt="Annual projection for Cloud Search"
 /></p>
 
