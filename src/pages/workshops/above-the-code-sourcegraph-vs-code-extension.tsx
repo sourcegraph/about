@@ -10,10 +10,10 @@ const speakers = [
         bio: 'Murat Sutunc is the Engineering Manager of the Integrations team at Sourcegraph, working towards bringing the value of Sourcegraph to all developers, everywhere they work with code, and bringing the value of other developer tools into Sourcegraph.',
     },
     {
-        name: 'Emily Chapman',
-        title: 'Senior Customer Training Engineer at Sourcegraph',
-        img: '/staff/emily-chapman.png',
-        bio: 'Emily Chapman is a Senior Customer Training Engineer at Sourcegraph, building training to empower some of today’s largest brands to solve the challenges of big code, developer velocity, and fixing vulnerabilities using Sourcegraph’s code intelligence platform.',
+        name: 'Max Wiederholt',
+        title: 'Customer Engineer at Sourcegraph',
+        img: '/staff/max-wiederholt.png',
+        bio: "Max Wiederholt is a customer engineer at Sourcegraph based in San Francisco, CA, where he helps developers better understand complex codebases. Prior to Sourcegraph, Max worked on Google's developer relations team, Confluent's sales team, and founded Mischief.app, an online marketplace for independent filmmakers.",
     },
 ]
 
@@ -44,12 +44,12 @@ export const AboveTheCodeWorkshop: FunctionComponent = () => (
             description={
                 <section className="col-md-6 col-12 lg:tw-pr-3xl">
                     <p>
-                        Join Sourcegraph experts Murat Sutunc, Engineering Manager of Integrations, and Emily Chapman,
-                        Senior Customer Training Engineer, to discuss Sourcegraph’s VSCode extension.
+                        Join Sourcegraph experts Murat Sutunc, Engineering Manager of Integrations, and Max Wiederholt,
+                        Customer Engineer, to discuss Sourcegraph’s VSCode extension.
                     </p>
                     <p>
                         Learn all about how to leverage Sourcegraph within VSCode to search the wide universe of Open
-                        Source code right in the IDE! Murat and Emily will demonstrate how to best use the tool and end
+                        Source code right in the IDE! Murat and Max will demonstrate how to best use the tool and end
                         with a live Q&A.
                     </p>
                     <p>We will discuss:</p>
