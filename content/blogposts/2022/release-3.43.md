@@ -14,7 +14,7 @@ changelogItems:
   - description: 'The experimental dependencies search feature has been removed, including the repo:deps(...) search predicate and the site configuration options codeIntelLockfileIndexing.enabled and experimentalFeatures.dependenciesSearch.'
     url: https://github.com/sourcegraph/sourcegraph/pull/39742
     category: Search
-  - description: 'Added the ROCKSKIP_MIN_REPO_SIZE_MB config option. Rockskip is automatically used for repositories over the set size (which defaults to 1GB) which helps to improve the loading speed of symbols for large repos.'
+  - description: 'Added the ROCKSKIP_MIN_REPO_SIZE_MB config option. Rockskip is automatically used for repositories over the set size (which defaults to 1GB) which helps to improve the loading speed of symbols for large repositories.'
     url: https://github.com/sourcegraph/sourcegraph/pull/38192
     category: Code Navigation
 ---
