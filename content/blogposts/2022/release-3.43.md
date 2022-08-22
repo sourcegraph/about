@@ -8,27 +8,24 @@ published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/sourcegraph-3-43.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/sourcegraph-3-43.png
 changelogItems:
-  - description: 'Search queries with patterns surrounded by /.../ will now be interpreted as regular expressions. Existing search links or code monitors are unaffected. In the rare event where older links rely on the literal meaning of /.../, the string will be automatically quoted it in a content filter, preserving the original meaning. If you happen to use an existing older link and want /.../ to work as a regular expression, add patterntype:standard to the query. New queries and code monitors will interpret /.../ as regular expressions.'
+  - description: 'Search queries with patterns surrounded by /.../ will now be interpreted as regular expressions. New queries and code monitors will interpret /.../ as regular expressions too. Existing search links or code monitors are unaffected. In the rare event where older links rely on the literal meaning of /.../, the string will be automatically quoted in a content filter, preserving the original meaning. If you happen to use an existing older link and want /.../ to work as a regular expression, add patterntype:standard to the query. '
     url: https://github.com/sourcegraph/sourcegraph/pull/38141
     category: Search
   - description: 'The experimental dependencies search feature has been removed, including the repo:deps(...) search predicate and the site configuration options codeIntelLockfileIndexing.enabled and experimentalFeatures.dependenciesSearch.'
     url: https://github.com/sourcegraph/sourcegraph/pull/39742
     category: Search
-  - description: 'Added the ROCKSKIP_MIN_REPO_SIZE_MB config option. Rockskip is automatically used for repositories over the set size (which defaults to 1GB).'
+  - description: 'Added the ROCKSKIP_MIN_REPO_SIZE_MB config option. Rockskip is automatically used for repositories over the set size (which defaults to 1GB) which helps to improve the loading speed of symbols for large repos.'
     url: https://github.com/sourcegraph/sourcegraph/pull/38192
     category: Code Navigation
-  - description: By default, insights now get 12 historic data points in addition to a current daily value and future points that align with the defined interval.
-    url: https://github.com/sourcegraph/sourcegraph/pull/37756
-    category: Code Insights
 ---
 
 Sourcegraph 3.43 is now available! For this release, we introduced:
 
 ## An easier way for admins to manage users
 
-Admins are constantly on the lookout for better ways to manage users within Sourcegraph and in 3.43 we are introducing a redesigned user management page to help. This updated page allows admins to see user-level usage stats, sort and filter those users, and efficiently perform actions on a single or set of users. 
+We are introducing a redesigned user management page to help Admins more effectively manage users of Sourcegraph. It allows Admins to quickly take action for a single user or a set of users and sort users by set criteria. Admins can instantly identify Site Admins and sort users by their number of events, last active date, and when the users was created. Admins save time by performing bulk actions such as force sign-out, reset password, promote a user to a Admin, and delete a user. 
 
-After upgrading to 3.43, site admins can find this enhanced page under site admin > Users & Auth > Users. Looking towards Sourcegraph 4.0, we are excited to introduce more ways for admins to get the most out of Sourcegraph. 
+After upgrading to 3.43, site admins can find this enhanced page under Site Admin > Users & Auth > Users. Looking towards [Sourcegraph 4.0](https://about.sourcegraph.com/sourcegraph-4), we will be introducing more ways for admins to get the most out of Sourcegraph. 
 
 <p><Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/user_admin_page.png"
