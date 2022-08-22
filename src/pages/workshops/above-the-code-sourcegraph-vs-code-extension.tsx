@@ -44,12 +44,12 @@ export const AboveTheCodeWorkshop: FunctionComponent = () => (
             description={
                 <section className="col-md-6 col-12 lg:tw-pr-3xl">
                     <p>
-                        Join Sourcegraph experts Murat Sutunc, Engineering Manager of Integrations, and Emily Chapman,
-                        Senior Customer Training Engineer, to discuss Sourcegraph’s VSCode extension.
+                        Join Sourcegraph experts Murat Sutunc, Engineering Manager of Integrations, and Max Wiederholt,
+                        Customer Engineer, to discuss Sourcegraph’s VSCode extension.
                     </p>
                     <p>
                         Learn all about how to leverage Sourcegraph within VSCode to search the wide universe of Open
-                        Source code right in the IDE! Murat and Emily will demonstrate how to best use the tool and end
+                        Source code right in the IDE! Murat and Max will demonstrate how to best use the tool and end
                         with a live Q&A.
                     </p>
                     <p>We will discuss:</p>
