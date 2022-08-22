@@ -23,7 +23,7 @@ Sourcegraph 3.43 is now available! For this release, we introduced:
 
 ## An easier way for admins to manage users
 
-We are introducing a redesigned user management page to help Admins more effectively manage users of Sourcegraph. It allows Admins to quickly take action for a single user or a set of users and sort users by set criteria. Admins can instantly identify Site Admins and sort users by their number of events, last active date, and when the users was created. Admins save time by performing bulk actions such as force sign-out, reset password, promote a user to a Admin, and delete a user. 
+We are introducing a redesigned user management page to help admins more effectively manage users of Sourcegraph. If you are a Sourcegraph admin, you can now easily sort and identify users based on the number of events performed, last active date, or when the user was created. From there, you can save time by performing bulk actions for a single user or a subset of users, such as forcing sign-out or password reset, promoting to an Admin role, or deleting the user(s). 
 
 After upgrading to 3.43, site admins can find this enhanced page under Site Admin > Users & Auth > Users. Looking towards [Sourcegraph 4.0](https://about.sourcegraph.com/sourcegraph-4), we will be introducing more ways for admins to get the most out of Sourcegraph. 
 
