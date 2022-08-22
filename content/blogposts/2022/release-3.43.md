@@ -39,7 +39,7 @@ In 3.42, we introduced an [all new admin analytics page](https://about.sourcegra
 
 We've made additional improvements in 3.43 to include:
 - Graphs with usage trends that can be customized to show daily or monthly data.
-- Annual projections of total times saved that help admins further understand the value of products within the code intelligence platform. This builds on historical data from the past three months that is captured and stored within the instance to show a full year of value.
+- Annual projections of total time saved to help admins further understand the value of using Sourcegraph. This builds on historical data from the past three months that is captured and stored within the instance to show a full year of value.
 
 <p><Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/time-saved.png"
