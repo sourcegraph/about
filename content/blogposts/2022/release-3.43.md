@@ -38,5 +38,12 @@ After upgrading to 3.43, site admins can find this enhanced page under Site Admi
 In 3.42, we introduced an [all new admin analytics page](https://about.sourcegraph.com/blog/admin-analytics) to help admins understand and quantify the value of Sourcegraph to their organization. 
 
 We've made additional improvements in 3.43 to include:
-- Yearly projections that help admins further understand the value across an entire year. This builds on historical data captured and stored within the instance to show a full year of value.
 - Graphs with usage trends that can be customized to show daily or monthly data.
+- Annual projections of total times saved to help admins further understand the value of all of our products within the code intelligence platform across an entire year. This builds on historical data from the past three months that is captured and stored within the instance to show a full year of value.
+
+<p><Figure 
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.43/Total-Time-Save-Annual-Projection.png"
+  alt="Annual projection for Cloud Search"
+/></p>
+
+
