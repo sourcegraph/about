@@ -10,10 +10,10 @@ const speakers = [
         bio: 'Murat Sutunc is the Engineering Manager of the Integrations team at Sourcegraph, working towards bringing the value of Sourcegraph to all developers, everywhere they work with code, and bringing the value of other developer tools into Sourcegraph.',
     },
     {
-        name: 'Emily Chapman',
-        title: 'Senior Customer Training Engineer at Sourcegraph',
-        img: '/staff/emily-chapman.png',
-        bio: 'Emily Chapman is a Senior Customer Training Engineer at Sourcegraph, building training to empower some of today’s largest brands to solve the challenges of big code, developer velocity, and fixing vulnerabilities using Sourcegraph’s code intelligence platform.',
+        name: 'Max Wiederholt',
+        title: 'Customer Engineer at Sourcegraph',
+        img: '/staff/max-wiederholt.png',
+        bio: "Max Wiederholt is a customer engineer at Sourcegraph based in San Francisco, CA, where he helps developers better understand complex codebases. Prior to Sourcegraph, Max worked on Google's developer relations team, Confluent's sales team, and founded Mischief.app, an online marketplace for independent filmmakers.",
     },
 ]
 
