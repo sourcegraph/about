@@ -44,7 +44,7 @@ Lay out a clear vision for what the end state of the migration looks like and ti
 
 Defining the end state also helps you justify the bigger changes that are necessary to make a real difference. Avoid the inertia of incrementalism by picking a desired end state that reflects your true architectural goals. For example, if your goal is to modularize the major components of a monolith, some pretty big changes will be necessary and you're unlikely to reach your goal if you limit yourself to local, conservative changes.
 
-Here is [a template](https://docs.google.com/document/d/1TbsQC7fFVdMKjkfNegU7OwUUglfB8j-jOeoN6ULAgE0/edit#) derived from a few examples of planning docs for large-scale migrations.
+Here is [a template](https://docs.google.com/document/d/13mVkvJWCIOaPizTOZtOp6EYuWQGqVaMVY1NXEfURo0E/edit) derived from a few examples of planning docs for large-scale migrations.
 
 ![Sample architecture diagram](https://storage.googleapis.com/sourcegraph-assets/blog/monolith-microservices/image5.png)
 
