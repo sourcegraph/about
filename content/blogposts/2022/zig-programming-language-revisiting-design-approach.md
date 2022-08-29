@@ -48,7 +48,7 @@ Zig’s design is a fundamental overhaul of the C programming language.
 
 “But why?” became Andrew’s catchphrase as he questioned C’s fundamental features and tackled programmers’ uninterrogated assumptions about them.
 
-For example, he asks, “Why use #define and not a constant?” Many programmers may not even think about why, or they’ll point out that the #define is a preprocessor directive but a constant is not. But this only explains what_is_ the case, not _why_ it needs to be like this.
+For example, he asks, “Why use #define and not a constant?” Many programmers may not even think about why, or they’ll point out that the #define is a preprocessor directive but a constant is not. But this only explains what _is_ the case, not _why_ it needs to be like this.
 
 “I’ll tell you the answer,” Andrew says. “The answer is because if you try to use a constant in a place that you'd expect to be able to use it, for example, just the length of an array, it won't work. It will give you a compile error.”
 
