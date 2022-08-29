@@ -5,8 +5,8 @@ authors:
     url: https://twitter.com/beyang
   - name: Justin Dorfman
     url: https://twitter.com/jdorfman
-publishDate: 2022-08-16T10:00-07:00
-description: 'Joe Chen is a Sourcegraph Software Engineer and the creator of Gogs, a painless self-hosted Git service. This is his story.”'
+publishDate: 2022-08-29T10:00-07:00
+description: 'Zig is a general-purpose programming language that can act as a drop-in replacement for C / C++, letting you incrementally improve your code base.'
 tags: [blog]
 slug: 'zig-programming-language-revisiting-design-approach'
 published: true
