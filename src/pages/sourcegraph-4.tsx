@@ -90,14 +90,29 @@ const Sourcegraph4: FunctionComponent = () => {
                     'Introducing Sourcegraph 4.0, the code intelligence platform for the modern development team.',
                 image: 'https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/meta/sourcegraph-4.png',
             }}
-            heroAndHeaderClassName="tw-bg-white"
-            className={classNames({ 'tw-blur-[6px]': modal })}
+            heroAndHeaderClassName="sg-bg-gradient-starship"
+            className={classNames('navbar-dark', { 'tw-blur-[6px]': modal })}
             hero={
-                <div className="tw-px-sm tw-pt-3xl md:tw-pt-5xl">
-                    <div className="tw-max-w-screen-xl tw-mx-auto tw-text-center">
-                        <h1 className="tw-mb-md">The future of Sourcegraph is launching soon</h1>
-                        <h3 className="tw-mb-md md:tw-mb-2xl tw-max-w-[850px] tw-mx-auto">
-                            Join us for the first Sourcegraph Starship on{' '}
+                <div className="tw-px-sm tw-py-3xl md:tw-pt-5xl">
+                    <div className="tw-max-w-screen-xl tw-mx-auto tw-text-center tw-text-white">
+                        <img
+                            src="/sourcegraph/sourcegraph-4-starship-reflected.svg"
+                            alt="Sourcegraph 4.0 Starship"
+                            className="tw-mx-auto tw-max-w-screen-md tw-w-full"
+                        />
+
+                        {!time.launched && (
+                            <div className="tw-flex tw-items-center tw-justify-center tw-mb-sm lg:tw-mb-4xl -tw-mt-[28%] md:-tw-mt-52">
+                                <Time time={time.days} label="Days" />
+                                <Time time={time.hours} label="Hours" />
+                                <Time time={time.minutes} label="Minutes" />
+                                <Time time={time.seconds} label="Seconds" separator={false} />
+                            </div>
+                        )}
+
+                        <h1 className="tw-mb-sm tw-font-light">The future of Sourcegraph is launching soon</h1>
+                        <h3>
+                            Join us for the first Sourcegraph Starship event on{' '}
                             <a
                                 href={calendarInviteLink}
                                 rel="noopener noreferrer"
@@ -105,21 +120,12 @@ const Sourcegraph4: FunctionComponent = () => {
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.hero}
                                 data-button-type="cta"
-                                className="tw-font-normal"
+                                className="tw-font-normal tw-text-white tw-underline"
                             >
                                 September 27, 2022
                                 <CalendarBlankIcon className="tw-inline tw-mb-1 tw-ml-xxs" size={24} />
                             </a>
                         </h3>
-
-                        {!time.launched && (
-                            <div className="sg-bg-gradient-aurora tw-font-semibold tw-text-white tw-rounded-2xl tw-shadow-xl tw-flex tw-items-center tw-justify-center tw-p-md lg:tw-py-4xl lg:tw-px-16">
-                                <Time time={time.days} label="Days" />
-                                <Time time={time.hours} label="Hours" />
-                                <Time time={time.minutes} label="Minutes" />
-                                <Time time={time.seconds} label="Seconds" separator={false} />
-                            </div>
-                        )}
                     </div>
                 </div>
             }
