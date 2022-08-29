@@ -52,7 +52,7 @@ export const CaseStudy: FunctionComponent = () => (
                         quote="By its nature and capabilities, Sourcegraph can be a tool to reduce friction, speed up feedback loops, and improve developer velocity."
                         author="Bryce Kalow, Senior Web Engineer, HashiCorp"
                         logo={{
-                            src: '/external-logos/codecov-logo.svg',
+                            src: '/external-logos/hashicorp-logo.svg',
                             alt: 'Codecov',
                             href: 'https://about.codecov.io/',
                         }}
@@ -65,38 +65,37 @@ export const CaseStudy: FunctionComponent = () => (
             <ContentSection>
                 <UseChallengeSolutionResults
                     useCases={[
-                        { text: 'Find and fix security vulnerabilities quickly across the codebase' },
-                        { text: 'Accelerate developer onboarding' },
+                        { text: 'Streamline code reuse' },
                     ]}
                     challenges={[
                         {
-                            text: 'Lack of confidence that no instances of the Log4j vulnerability existed in its codebase.',
+                            text: 'Excessive time and effort spent manually searching for code across multiple repositories',
                         },
                         {
-                            text: "Deficient code reviews that weren't always comprehensive or fast, especially from a security perspective.",
+                            text: 'Lack of confidence in the complete, consistent rollout of updates across all apps, leading to the possibility of dependency drift',
                         },
                         {
-                            text: 'Inefficient developer onboarding process that resulted in new developers monopolizing the time of senior developers.',
+                            text: 'Reluctance to address tech debt due to lack of efficient search capabilities',
                         },
                     ]}
                     solutions={[
                         {
-                            text: 'Ability to resolve Log4j 12x faster than with a native code search tool and report absolute confidence in that resolution to their customers.',
+                            text: 'Code Search simplifies and shortens cross-repository search, including pinpointing tech debt',
                         },
-                        { text: 'Efficient code reviews are completed faster and with greater confidence.' },
-                        {
-                            text: 'Streamlined developer onboarding that enables new developers to answer their own questions and allows senior developers to focus on more complex problems.',
-                        },
+                        { text: 'Batch Changes provides a fast, automated, and repeatable process for rolling out updates' },
                     ]}
                     results={[
                         {
-                            text: "Codecov reviewed their entire codebase in 5 minutes and confirmed that they weren't exposed to the Log4j vulnerability.",
+                            text: 'Code search enabled the team to map and manage dependencies across multiple teams and codebases.',
                         },
                         {
-                            text: 'Codecov was able to quickly & confidently report the absence of the Log4j vulnerability to their customers and partners.',
+                            text: 'Batch Changes sped up big refactors by an estimated 4x and combatted code ossification by making more large-scale changes possible.',
                         },
                         {
-                            text: 'The security team at Codecov is able to complete code reviews independently and with complete confidence that their work is correct.',
+                            text: 'Sourcegraph capabilities and insights encouraged the team to proactively eliminate unused code and technical debt.',
+                        },
+                        {
+                            text: 'The Sourcegraph API helped drive adoption of a new component library.',
                         },
                     ]}
                 />

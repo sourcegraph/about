@@ -19,7 +19,7 @@ interface CaseStudy {
 export const CASESTUDIES: CaseStudy[] = [
     {
         name: 'Hashicorp',
-        logo: '/external-logos/codecov-logo.svg',
+        logo: '/external-logos/hashicorp-logo.svg',
         title: 'HashiCorp streamlines cross-repository code search and fixes with Sourcegraph.',
         url: '/case-studies/hashicorp-uses-sourcegraph-to-streamline-cross-repository-code-search',
     },
