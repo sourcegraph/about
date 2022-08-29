@@ -100,4 +100,11 @@
     .sg-bg-gradient-aurora {
         @apply tw-bg-gradient-to-r tw-from-blue-300 tw-to-violet-400;
     }
+
+    /* One-off Gradient Backgrounds */
+    .sg-bg-gradient-starship {
+        background:
+            radial-gradient(15.69% 113.34% at -2.47% 109.42%, theme(colors.blurple.400) 0%, rgba(161, 18, 255, 0) 100%),
+            radial-gradient(11.18% 150.65% at 101.49% -19.48%, theme(colors.blurple.400) 0%, rgba(161, 18, 255, 0) 100%), #000000;
+    }
 }
