@@ -104,13 +104,13 @@
     /* One-off Gradient Backgrounds */
     .sg-bg-gradient-starship {
         background:
-            radial-gradient(60.1% 69.78% at 35% 120%, theme(colors.violet.400 / 60%) 0%, transparent 73.04%),
-            radial-gradient(60.1% 69.78% at -10% -10%, theme(colors.violet.400 / 60%) 0%, transparent 73.04%),
-            radial-gradient(60.1% 69.78% at 120% 50%, theme(colors.violet.400 / 60%) 0%, transparent 73.04%),
-            radial-gradient(60.1% 69.78% at 70% 120%, theme(colors.blurple.400 / 60%) 0%, transparent 73.04%),
-            radial-gradient(60.1% 69.78% at -10% 70%, theme(colors.blurple.400 / 60%) 0%, transparent 73.04%),
-            radial-gradient(60.1% 69.78% at 110% 0%, theme(colors.blurple.400 / 60%) 0%, transparent 73.04%),
-            radial-gradient(60.1% 69.78% at 30% -10%, theme(colors.blurple.400 / 60%) 0%, transparent 73.04%),
+            radial-gradient(41.89% 49.12% at 24.69% -6.44%, theme(colors.blurple.400 / 60%) 0%, transparent 73.04%),
+            radial-gradient(43.39% 113.4% at -8.15% 92.82%, theme(colors.blurple.400 / 60%) 0%, transparent 73.04%),
+            radial-gradient(38.39% 42.41% at 70.13% 106.06%, theme(colors.blurple.400 / 60%) 0%, transparent 73.04%),
+            radial-gradient(42.17% 46.57% at 100% 3.43%, theme(colors.blurple.400 / 60%) 0%, transparent 73.04%),
+            radial-gradient(40.94% 38.64% at 25.68% 102.5%, theme(colors.violet.400 / 60%) 0%, transparent 73.04%),
+            radial-gradient(24.75% 50% at -3.7% 0%, theme(colors.violet.400 / 60%) 0%, transparent 73.04%),
+            radial-gradient(29.03% 79.03% at 103.02% 53.38%, theme(colors.violet.400 / 60%) 0%, transparent 73.04%),
             #000000;
     }
 }
