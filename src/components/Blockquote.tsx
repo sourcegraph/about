@@ -96,25 +96,27 @@ export const Blockquote: FunctionComponent<{
                     />
                 ))}
 
-            <br />
-
             {link?.href &&
                 (link?.href.includes('http') ? (
-                    <a
-                        className={classNames('tw-mt-4 tw-flex', !border && 'tw-justify-center')}
-                        href={link.href}
-                        target="_blank"
-                        rel="nofollow noreferrer"
-                        title={link.text}
-                        data-button-style={buttonStyle.textWithArrow}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        {link.text}
-                        <ArrowRightIcon className="ml-1 tw-inline" />
-                    </a>
+                    <>
+                        <br />
+                        <a
+                            className={classNames('tw-mt-4 tw-flex', !border && 'tw-justify-center')}
+                            href={link.href}
+                            target="_blank"
+                            rel="nofollow noreferrer"
+                            title={link.text}
+                            data-button-style={buttonStyle.textWithArrow}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            {link.text}
+                            <ArrowRightIcon className="ml-1 tw-inline" />
+                        </a>
+                    </>
                 ) : (
                     <Link href={link.href} passHref={true}>
+                        <br />
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
                             className={classNames('tw-mt-4 tw-flex', !border && 'tw-justify-center')}

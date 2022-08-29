@@ -18,6 +18,12 @@ interface CaseStudy {
 // TODO: This data will eventually live in our CMS
 export const CASESTUDIES: CaseStudy[] = [
     {
+        name: 'Hashicorp',
+        logo: '/external-logos/codecov-logo.svg',
+        title: 'HashiCorp streamlines cross-repository code search and fixes with Sourcegraph.',
+        url: '/case-studies/hashicorp-uses-sourcegraph-to-streamline-cross-repository-code-search',
+    },
+    {
         name: 'Codecov',
         logo: '/external-logos/codecov-logo.svg',
         title: 'Codecov uses Sourcegraph to resolve incidents 12 times faster.',
