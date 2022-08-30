@@ -90,7 +90,7 @@ const Sourcegraph4: FunctionComponent = () => {
                     'Introducing Sourcegraph 4.0, the code intelligence platform for the modern development team.',
                 image: 'https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/meta/sourcegraph-4.png',
             }}
-            heroAndHeaderClassName="sg-bg-gradient-starship"
+            heroAndHeaderClassName="sg-bg-gradient-starship-large"
             className={classNames('navbar-dark', { 'tw-blur-[6px]': modal })}
             hero={
                 <div className="tw-px-sm tw-py-3xl md:tw-pt-5xl">
