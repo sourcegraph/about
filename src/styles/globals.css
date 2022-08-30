@@ -81,7 +81,7 @@
         border-image-source: linear-gradient(to right, theme(colors.violet.200), theme(colors.blue.200)) !important;
     }
 
-    /* Gradient Backgrounds */
+    /* Simple Gradient Backgrounds */
     .sg-bg-gradient-venus {
         @apply tw-bg-gradient-to-r tw-from-blue-200/50 tw-to-green-200/50;
     }

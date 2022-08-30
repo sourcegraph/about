@@ -93,7 +93,7 @@ const Sourcegraph4: FunctionComponent = () => {
             heroAndHeaderClassName="sg-bg-gradient-starship-large"
             className={classNames('navbar-dark', { 'tw-blur-[6px]': modal })}
             hero={
-                <div className="tw-px-sm tw-py-3xl md:tw-pt-5xl">
+                <div className="tw-px-sm tw-py-3xl md:tw-py-5xl">
                     <div className="tw-max-w-screen-xl tw-mx-auto tw-text-center tw-text-white">
                         <img
                             src="/sourcegraph/sourcegraph-4-starship-reflected.svg"
@@ -110,7 +110,7 @@ const Sourcegraph4: FunctionComponent = () => {
                             </div>
                         )}
 
-                        <h1 className="tw-mb-sm tw-font-light">The future of Sourcegraph is launching soon</h1>
+                        <h1 className="tw-mb-sm">The future of Sourcegraph is launching soon</h1>
                         <h3>
                             Join us for the first Sourcegraph Starship event on{' '}
                             <a
@@ -220,7 +220,7 @@ const Sourcegraph4: FunctionComponent = () => {
                 </div>
 
                 <div className="tw-text-center">
-                    <div className="tw-mb-5xl">
+                    <div className="tw-mb-3xl">
                         <h2 className="tw-max-w-[680px] tw-mx-auto tw-mb-xs">
                             Join these engineering orgs pushing forward modern software development
                         </h2>
