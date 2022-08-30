@@ -63,7 +63,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 </div>
             ) : (
                 // ---- DEFAULT BODY VARIATION ----
-                <ContentSection color="white" className="tw-flex tw-flex-col-reverse md:tw-flex-row">
+                <ContentSection background="white" className="tw-flex tw-flex-col-reverse md:tw-flex-row">
                     {description}
 
                     <div className="tw-pb-3xl col-md-6 col-12 md:tw-pb-0">
@@ -95,7 +95,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             )}
 
             {speakers?.length && (
-                <ContentSection color="white" parentClassName={classNames({ 'tw-pt-0': !hasWatchNowQuery })}>
+                <ContentSection background="white" parentClassName={classNames({ 'tw-pt-0': !hasWatchNowQuery })}>
                     <h2>Speakers</h2>
 
                     <section className="tw-flex-wrap tw-flex">

@@ -131,6 +131,7 @@ const Sourcegraph4: FunctionComponent = () => {
             }
         >
             <CtaSection
+                background="white"
                 title="Sourcegraph 4.0"
                 description="In the first Sourcegraph Starship, we'll be launching the code intelligence platform for the modern development team. Stay up-to-date about the launch of Sourcegraph 4.0."
                 cta1={{
@@ -149,7 +150,7 @@ const Sourcegraph4: FunctionComponent = () => {
                 <HubSpotForm formId="10675181-7cbe-43a4-a1b9-3a00835f18c8" />
             </Modal>
 
-            <ContentSection color="white" parentClassName="tw-pt-0 md:tw-pt-0">
+            <ContentSection background="white" parentClassName="tw-pt-0 md:tw-pt-0">
                 <div className="tw-mb-5xl">
                     <ThreeUpText
                         title="Here's a sneak peek at what we're launching"
@@ -243,6 +244,17 @@ const Sourcegraph4: FunctionComponent = () => {
 
                 <CustomerLogos />
             </ContentSection>
+
+            <CtaSection
+                background="starshipLaunchPills"
+                description="Respond to incidents with confidence and speed, and remediate issues at their root to ensure they don’t reoccur."
+                centerContent={true}
+                cta1={{
+                    text: 'Schedule a demo',
+                    button: true,
+                    link: '/demo',
+                }}
+            />
         </Layout>
     )
 }

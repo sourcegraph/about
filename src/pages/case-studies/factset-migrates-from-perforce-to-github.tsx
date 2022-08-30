@@ -24,7 +24,7 @@ export const CaseStudy: FunctionComponent = () => {
                     image: '/case-studies/derrick-faunce.png',
                 }}
             >
-                <ContentSection color="white">
+                <ContentSection background="white">
                     <div className="container">
                         <div className="row">
                             <div className="col">

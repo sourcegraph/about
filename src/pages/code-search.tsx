@@ -61,7 +61,7 @@ export const CodeSearchPage: FunctionComponent = () => (
             />
         }
     >
-        <ContentSection color="white">
+        <ContentSection background="white">
             <TwoColumnSection
                 centerContent={true}
                 reverseOnMobile={true}
@@ -142,7 +142,7 @@ export const CodeSearchPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white">
+        <ContentSection background="white">
             <TwoColumnSection
                 centerContent={true}
                 leftColumn={
@@ -178,7 +178,7 @@ export const CodeSearchPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white">
+        <ContentSection background="white">
             <TwoColumnSection
                 centerContent={true}
                 reverseOnMobile={true}

@@ -1,6 +1,7 @@
 /* eslint-disable import/order */
 import { CSSProperties, FunctionComponent, ReactNode } from 'react'
 
+import classNames from 'classnames'
 import { StaticImageData } from 'next/image'
 
 import { breakpoints } from '@data'
@@ -34,15 +35,22 @@ import marsCode from './assets/backgrounds/mars-code.jpg'
 // Grid Variants
 import darkMultiGrid from './assets/backgrounds/dark-multi-grid.jpg'
 import darkSimpleGrid from './assets/backgrounds/dark-simple-grid.jpg'
-import auroraGrid from './assets/backgrounds/aurora-grid.jpg'
+import darkAuroraGrid from './assets/backgrounds/dark-aurora-grid.jpg'
+// Starship Variants
+import starshipLaunchPills from './assets/backgrounds/starship-launch-pills.svg'
 // Illustrations
 import changes from './assets/illustrations/changes.svg'
 import insights from './assets/illustrations/insights.svg'
 import search from './assets/illustrations/search.svg'
 
 export interface Background {
-    variant: // Light Nebulous Variants
-    | 'lightNebulousSaturn1'
+    variant: // Standard Variants
+    | 'transparent'
+        | 'white'
+        | 'black'
+        | 'gray'
+        // Light Nebulous Variants
+        | 'lightNebulousSaturn1'
         | 'lightNebulousSaturn2'
         | 'lightNebulousVenus1'
         | 'lightNebulousVenus2'
@@ -69,7 +77,9 @@ export interface Background {
         // Grid Variants
         | 'darkMultiGrid'
         | 'darkSimpleGrid'
-        | 'auroraGrid'
+        | 'darkAuroraGrid'
+        // Starship Variants
+        | 'starshipLaunchPills'
     children?: ReactNode
     illustration?: 'search' | 'changes' | 'insights'
     className?: string
@@ -112,7 +122,10 @@ const backgrounds: { [key: string]: StaticImageData } = {
     // Grid Variants
     darkMultiGrid,
     darkSimpleGrid,
-    auroraGrid,
+    darkAuroraGrid,
+    // Starship Variants
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    starshipLaunchPills,
 }
 
 // Illustration to svg mapping
@@ -150,8 +163,10 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
         },
     }
 
-    const backgroundSource: string = backgrounds[variant].src
+    const backgroundVariant = backgrounds[variant]
+    const backgroundSource: string = typeof backgroundVariant === 'object' ? backgroundVariant.src : backgroundVariant
     let background = `url("${backgroundSource}") center / cover no-repeat`
+
     if (illustration) {
         const illustrationSource: string = illustrations[illustration]
         const illustrationSize: string = illustrationStyle[illustration].size
@@ -162,12 +177,19 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
         }
     }
 
+    const styleClasses = classNames(className, {
+        'tw-bg-white tw-text-black': variant === 'white',
+        'tw-bg-black tw-text-white': variant === 'black',
+        'tw-bg-gray-500 tw-text-white': variant === 'gray',
+        'tw-text-white': variant.includes('dark') || variant.includes('starship'),
+        'tw-text-black': (!variant.includes('dark') && !variant.includes('starship')) || variant === 'transparent',
+    })
+
     return (
         <div
-            // TODO: Remove style when Tailwind is in
             // eslint-disable-next-line react/forbid-dom-props
-            style={{ background }}
-            className={className}
+            style={backgroundVariant ? { background } : undefined}
+            className={styleClasses}
         >
             {children}
         </div>

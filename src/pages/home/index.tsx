@@ -21,7 +21,7 @@ const Home: FunctionComponent = () => (
 
         <UseCases />
 
-        <ContentSection color="white" className="tw-mt-52">
+        <ContentSection background="white" className="tw-mt-52">
             <CoreFeatures />
         </ContentSection>
 

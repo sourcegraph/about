@@ -49,7 +49,7 @@ export const CaseStudy: FunctionComponent = () => (
         }
     >
         <NewCaseStudyLayout customer="Nutanix">
-            <ContentSection color="white" className="tw-flex tw-justify-center">
+            <ContentSection background="white" className="tw-flex tw-justify-center">
                 <Blockquote
                     inline={true}
                     quote="Sourcegraph was the right product at the right time."
@@ -96,7 +96,7 @@ export const CaseStudy: FunctionComponent = () => (
                 />
             </ContentSection>
 
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="tw-max-w-2xl tw-mx-auto tw-pt-5xl">
                     <p className="mt-6 mt-lg-7 mt-md-5">
                         As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the
@@ -247,7 +247,7 @@ export const CaseStudy: FunctionComponent = () => (
                 <ThreeUpText title="Results" items={threeUpTextItems} />
             </ContentSection>
 
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="tw-max-w-2xl tw-mx-auto">
                     <h3 className="mb-4">Log4j is the tip of the open-source vulnerability iceberg</h3>
                     <p>

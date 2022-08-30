@@ -47,7 +47,7 @@ export const CaseStudy: FunctionComponent = () => (
         }
     >
         <NewCaseStudyLayout customer="Codecov">
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="tw-max-w-4xl tw-mx-auto">
                     <Blockquote
                         quote="Sourcegraph allows us to be more efficient with our time, whether it's code review, answering security-related questions from clients, or searching for things in the code much more easily than we could through our code host's native search functionality."
@@ -103,7 +103,7 @@ export const CaseStudy: FunctionComponent = () => (
                 />
             </ContentSection>
 
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="tw-max-w-2xl tw-mx-auto tw-pt-5xl">
                     <p className="mt-6 mt-lg-7 mt-md-5">
                         In 2021, security engineers Mitchell Borrego and Jeff Holland joined Codecov with the goal of
@@ -233,7 +233,7 @@ export const CaseStudy: FunctionComponent = () => (
                 <ThreeUpText title="Results" items={threeUpTextItems} />
             </ContentSection>
 
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="tw-max-w-2xl tw-mx-auto">
                     <h3 className="mb-4 max-w-650">Sourcegraph Cloud was the right fit for a growing team</h3>
                     <p>

@@ -103,7 +103,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                 )}
             </CaseStudyJumbotron>
 
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="container tw-pt-3xl tw-pb-sm">
                     <h1 className={`${titleClassName}`}>{title}</h1>
                 </div>

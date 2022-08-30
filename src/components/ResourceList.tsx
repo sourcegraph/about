@@ -19,7 +19,7 @@ interface ResourceList {
 }
 
 export const ResourceList: FunctionComponent<ResourceList> = ({ items, title = 'Related Resources' }) => (
-    <ContentSection color="white">
+    <ContentSection background="white">
         <h2 className="tw-mb-3xl">{title}</h2>
 
         {items.map(item => (

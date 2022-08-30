@@ -25,7 +25,7 @@ export const CaseStudy: FunctionComponent = () => (
             }}
             pdf="https://sourcegraphstatic.com/sofi_case_study.pdf"
         >
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="container">
                     <p>
                         SoFi (Social Finance Inc.) helps its over 900,000 members achieve financial independence to

@@ -27,7 +27,7 @@ export const CaseStudy: FunctionComponent = () => {
                     image: '/case-studies/jared-hodge-indeed.jpg',
                 }}
             >
-                <ContentSection color="white">
+                <ContentSection background="white">
                     <div className="container">
                         <p>
                             Indeed is a multinational job search website with over 11,000 employees and approximately

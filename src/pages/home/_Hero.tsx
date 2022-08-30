@@ -26,7 +26,7 @@ const Hero: FunctionComponent = () => {
     })
 
     return (
-        <ContentSection parentClassName="tw-relative" color="white">
+        <ContentSection background="white" parentClassName="tw-relative">
             {[meshLeft, meshRight].map((image, index) => (
                 <div
                     key={image.src}

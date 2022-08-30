@@ -20,7 +20,7 @@ export const CaseStudy: FunctionComponent = () => (
                 author: 'François Jehl, Senior Engineering Manager, Criteo',
             }}
         >
-            <ContentSection color="white" className="col-md-6 tw-pb-md">
+            <ContentSection background="white" className="col-md-6 tw-pb-md">
                 <div className="container">
                     <p>
                         Founded in France in 2005, Criteo partners with retailers to recommend products to potential

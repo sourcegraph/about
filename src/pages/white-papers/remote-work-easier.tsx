@@ -20,7 +20,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
             pdf="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-remote-software-development-made-easier.pdf"
             heroBackgroundImage="/white-papers/remote-easier-bg_1680x300.png"
         >
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="tw-max-w-screen-md tw-mx-auto">
                     <p>
                         Sourcegraph has been remote-friendly from the beginning — our two longest-tenured teammates have
@@ -238,7 +238,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                 </div>
             </ContentSection>
 
-            <ContentSection color="black">
+            <ContentSection background="black">
                 <div className="row md:tw-justify-center">
                     <div className="tw-text-center col-md-3">
                         <a
@@ -276,7 +276,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                 </div>
             </ContentSection>
 
-            <ContentSection color="gray">
+            <ContentSection background="gray">
                 <div className="row md:tw-justify-center">
                     <div className="tw-text-center col-md-3">
                         <img

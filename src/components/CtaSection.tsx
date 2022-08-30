@@ -15,6 +15,7 @@ interface Cta {
 }
 
 interface CtaSection {
+    background?: ContentSection['background']
     title?: string
     description?: string
     centerContent?: boolean
@@ -87,6 +88,7 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, button = false, link, onClick
  * This is our CTA Section as defined in our DLS. Please refer to it for specs.
  *
  * @param props - component props
+ * @param props.background - background for the section
  * @param props.title - a title for the section
  * @param props.description - a description for the section
  * @param props.centerContent - a boolean to center the content
@@ -94,13 +96,14 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, button = false, link, onClick
  * @param props.cta2 - cta item 2
  */
 export const CtaSection: FunctionComponent<CtaSection> = ({
+    background,
     title = 'Get started with Sourcegraph',
     description = 'Understand, fix, and automate changes across your entire codebase.',
     centerContent = false,
     cta1,
     cta2,
 }) => (
-    <ContentSection color="white" className="">
+    <ContentSection background={background}>
         <div
             className={classNames({
                 'tw-max-w-xl tw-mx-auto tw-text-center': centerContent,

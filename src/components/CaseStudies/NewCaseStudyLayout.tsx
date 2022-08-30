@@ -36,7 +36,7 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, childre
                 />
             </Background>
 
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <h2 className="tw-mb-6">Explore other case studies</h2>
                 <div className="tw-grid tw-grid-cols-1 xs:tw-grid-cols-2 tw-gap-6">
                     {uniqueCaseStudyList.map(study => (
