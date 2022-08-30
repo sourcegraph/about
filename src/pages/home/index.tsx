@@ -2,6 +2,7 @@ import { FunctionComponent } from 'react'
 
 import { ContentSection, CoreFeatures, Layout, IntegrationsSection, SelfHostedSection } from '@components'
 
+import Banner from './_Banner'
 import Hero from './_Hero'
 import UseCases from './_UseCases'
 
@@ -14,6 +15,8 @@ const Home: FunctionComponent = () => (
         }}
         heroAndHeaderClassName="bg-white"
     >
+        <Banner />
+
         <Hero />
 
         <UseCases />
