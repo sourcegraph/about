@@ -103,7 +103,7 @@ export const CaseStudy: FunctionComponent = () => (
 
             <ContentSection color="white">
                 <div className="tw-max-w-2xl tw-mx-auto tw-pt-5xl">
-                    <p className="tw-pt-3xl">
+                    <p className="tw-pt-3xl sm:tw-pt-5xl sm:tw-mt-0 tw-mt-5xl">
                         Every day, millions of developers and DevOps engineers rely on HashiCorp to efficiently
                         provision, manage, and secure their cloud infrastructure. HashiCorp is a company that has
                         brought best-in-class developer experience to infrastructure teams through its portfolio of

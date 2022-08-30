@@ -120,7 +120,8 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                 ref={box}
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ marginBottom: boxHalfHeight }}
-                className="sg-bg-gradient-venus lg:tw-absolute lg:tw-right-0 lg:tw-bottom-0 tw-max-w-[700px] lg:tw-max-w-[450px] xl:tw-max-w-[500px] tw-mx-auto tw-p-8 tw-w-[95%]"
+                // col-5 bg-gradient-venus lg-absolute right-0 bottom-0 max-w-xl-500 max-w-lg-450 max-w-700 mx-auto p-5
+                className="sg-bg-gradient-venus lg:tw-absolute xl:tw-right-5xl lg:tw-right-sm lg:tw-bottom-0 tw-max-w-[700px] lg:tw-max-w-[500px] tw-mx-auto tw-p-8 tw-w-[95%]"
             >
                 <div className="ml-lg-0 tw-flex tw-flex-col lg:tw-flex-row">
                     <div className="mb-3 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
