@@ -26,8 +26,9 @@ const ItemTitle = ({ text, small }: ItemTitle): ReactElement => {
 
     return (
         <Tag
-            className={classNames('tw-mb-4', {
-                'tw-text-blurple-400': !small,
+            className={classNames('tw-mb-4',
+            {
+                'tw-text-blurple-400 tw-font-semibold': !small,
                 'tw-text-black': small,
                 'md:tw-max-w-xs md:tw-mx-auto': typeof text === 'string' && text.length > 20,
             })}

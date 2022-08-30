@@ -91,7 +91,7 @@ const Sourcegraph4: FunctionComponent = () => {
                 image: 'https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/meta/sourcegraph-4.png',
             }}
             heroAndHeaderClassName="tw-bg-white"
-            className={classNames({ 'tw-blur-[6px]': modal })}
+            className={classNames('tw-bg-white', { 'tw-blur-[6px]': modal })}
             hero={
                 <div className="tw-px-sm tw-pt-3xl md:tw-pt-5xl">
                     <div className="tw-max-w-screen-xl tw-mx-auto tw-text-center">

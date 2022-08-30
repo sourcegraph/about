@@ -221,7 +221,7 @@ export const CaseStudy: FunctionComponent = () => (
                         level.”
                     </p>
 
-                    <h3 className="mb-4">Creating a new component library</h3>
+                    <h3 className="mt-6 mb-4">Creating a new component library</h3>
                     <p>
                         The Web Platform team is building an open-source component library for Next.js called Swingset.
                         Bryce explains, “Our applications are already using Swingset. It enables us to document our
