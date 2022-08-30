@@ -50,7 +50,7 @@ export { CustomCarousel, TabCarousel, QuoteCarousel } from './Carousels'
 
 // Case Studies
 export {
-    AuthorBio,
+    StaffSpotlight,
     CaseStudyJumbotron,
     CaseStudyLayout,
     CaseStudyCard,

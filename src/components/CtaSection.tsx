@@ -100,7 +100,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
     cta1,
     cta2,
 }) => (
-    <ContentSection color="white" className="">
+    <ContentSection color="white">
         <div
             className={classNames({
                 'tw-max-w-xl tw-mx-auto tw-text-center': centerContent,

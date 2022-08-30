@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import {
     Layout,
-    AuthorBio,
+    StaffSpotlight,
     BackButton,
     Hero,
     NewCaseStudyLayout,
@@ -253,13 +253,13 @@ export const CaseStudy: FunctionComponent = () => (
                 </div>
 
                 <div className="tw-mt-5xl">
-                    <AuthorBio
+                    <StaffSpotlight
                         customer="Codecov"
                         about="Codecov is a small organization making an outsized impact on the lives of over one million
                         developers. In over 29,000 companies across the globe, Codecov customers are able to ship healthier
                         code using its code coverage tool. Developers rely on Codecov to provide actionable visibility into
                         their code coverage across any tech stack."
-                        authors={[
+                        staff={[
                             {
                                 image: '/case-studies/jerrod-engelberg.png',
                                 name: 'Jerrod Engelberg',

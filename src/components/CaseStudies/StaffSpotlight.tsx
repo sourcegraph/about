@@ -1,17 +1,17 @@
-interface Author {
+interface Staff {
     image?: string
     name: string
     title: string
 }
 
-export const AuthorBio: React.FunctionComponent<{
+export const StaffSpotlight: React.FunctionComponent<{
     customer: string
     about: string
-    authors: Author[]
-}> = ({ customer, about, authors }) => (
+    staff: Staff[]
+}> = ({ customer, about, staff }) => (
     <div>
-        {authors.length > 1 ? (
-            // Multi author design
+        {staff.length > 1 ? (
+            // Multi staff design
             <div>
                 <div className="tw-mx-auto tw-max-w-screen-sm">
                     <h5 className="mb-4">About {customer}</h5>
@@ -19,7 +19,7 @@ export const AuthorBio: React.FunctionComponent<{
                 </div>
 
                 <div className="tw-grid tw-gap-6 tw-grid-cols-1 md:tw-grid-cols-3 tw-mt-16 tw-max-w-screen-lg tw-mx-auto">
-                    {authors.map(a => (
+                    {staff.map(a => (
                         <div key={a.name} className="md:tw-text-center">
                             <img
                                 className="tw-rounded-full max-w-150 tw-inline"
@@ -35,23 +35,22 @@ export const AuthorBio: React.FunctionComponent<{
                 </div>
             </div>
         ) : (
-            // Single author design
+            // Single staff design
             <div className="tw-flex tw-flex-col md:tw-flex-row">
-                {authors[0].image && (
+                {staff[0].image && (
                     <div className="col-md-3">
                         <img
                             className="tw-p-0 tw-rounded-full max-w-150"
                             width={100}
-                            src={authors[0].image}
-                            alt={authors[0].name}
+                            src={staff[0].image}
+                            alt={staff[0].name}
                         />
                     </div>
                 )}
 
                 <div className="tw-pl-0 col-md-9 md:tw-pl-md">
-                    <h6 className="tw-pt-sm md:tw-pt-xxs">AUTHOR</h6>
-                    <h3>{authors[0].name}</h3>
-                    <p className="text-muted">{authors[0].title}</p>
+                    <h3>{staff[0].name}</h3>
+                    <p className="text-muted">{staff[0].title}</p>
 
                     <h5>About {customer}</h5>
                     <p>{about}</p>

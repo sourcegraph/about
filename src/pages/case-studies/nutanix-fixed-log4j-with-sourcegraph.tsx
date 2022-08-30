@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import {
-    AuthorBio,
+    StaffSpotlight,
     Layout,
     BackButton,
     Hero,
@@ -272,10 +272,10 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
 
                     <div className="tw-mt-5xl">
-                        <AuthorBio
+                        <StaffSpotlight
                             customer="Nutanix"
                             about="Nutanix has 20,000 customers, an annual revenue of nearly $1.394 billion, and over 6,000 employees. Organizations around the world rely on Nutanix software as a single platform to manage any app at any scale for their hybrid multicloud environments."
-                            authors={[
+                            staff={[
                                 {
                                     image: '/case-studies/jon-kohler.png',
                                     name: 'Jon Kohler',

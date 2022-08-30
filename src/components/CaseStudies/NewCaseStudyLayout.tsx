@@ -15,6 +15,7 @@ interface Props {
 export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, children }) => {
     // CaseStudy preview list NOT including current CaseStudy page
     const uniqueCaseStudyList = CASESTUDIES.filter(study => study.name !== customer).slice(0, 4)
+    console.log(uniqueCaseStudyList)
 
     return (
         <>

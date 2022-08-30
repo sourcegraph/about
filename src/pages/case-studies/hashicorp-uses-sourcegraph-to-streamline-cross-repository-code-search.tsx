@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import {
     Layout,
-    AuthorBio,
+    StaffSpotlight,
     BackButton,
     Hero,
     NewCaseStudyLayout,
@@ -45,7 +45,7 @@ export const CaseStudy: FunctionComponent = () => (
             />
         }
     >
-        <NewCaseStudyLayout customer="Codecov">
+        <NewCaseStudyLayout customer="HashiCorp">
             <ContentSection color="white">
                 <div className="tw-max-w-4xl tw-mx-auto">
                     <Blockquote
@@ -53,8 +53,8 @@ export const CaseStudy: FunctionComponent = () => (
                         author="Bryce Kalow, Senior Web Engineer, HashiCorp"
                         logo={{
                             src: '/external-logos/hashicorp-logo.svg',
-                            alt: 'Codecov',
-                            href: 'https://about.codecov.io/',
+                            alt: 'HashiCorp',
+                            href: 'https://www.hashicorp.com/',
                         }}
                         border={false}
                         largeText={true}
@@ -243,13 +243,13 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection color="white">
-                <div className="tw-mt-5xl">
-                    <AuthorBio
+                <div className="tw-max-w-2xl tw-mx-auto">
+                    <StaffSpotlight
                         customer="HashiCorp"
                         about="HashiCorp (NASDAQ: HCP) is a provider of open-core software that developers use to manage cloud infrastructure. Based in San Francisco, Calif., the company offers solutions including Terraform, an infrastructure-as-code tool for managing cloud services, and Vault, a tool for securing, storing, and controlling access to tokens, passwords, and API keys. HashiCorp’s tools are downloaded tens of millions of times each year and are broadly adopted by the Global 2000."
-                        authors={[
+                        staff={[
                             {
-                                image: '/case-studies/jerrod-engelberg.png',
+                                image: '/case-studies/bryce-kallow.png',
                                 name: 'Bryce Kallow',
                                 title: 'Senior Web Engineer and Tech Lead; Web Platform Team at HashiCorp',
                             },

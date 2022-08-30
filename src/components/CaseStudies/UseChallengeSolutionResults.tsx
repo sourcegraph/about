@@ -62,7 +62,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     <div className="tw-pl-xs col-11 col-lg-9">
                         <h4>Use case</h4>
                         {useCases.length > 1 ? (
-                            <ul className="mb-0 tw-pl-sm">
+                            <ul className="mb-0 ml-0 tw-pl-sm">
                                 {useCases.map(useCase => (
                                     <ListItemType key={useCase.text} item={useCase} />
                                 ))}
@@ -81,7 +81,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     <div className="tw-pl-xs col-11 col-lg-9">
                         <h4>Challenge</h4>
                         {challenges.length > 1 ? (
-                            <ul className="mb-0 tw-pl-sm">
+                            <ul className="mb-0 ml-0 tw-pl-sm">
                                 {challenges.map(challenge => (
                                     <ListItemType key={challenge.text} item={challenge} />
                                 ))}
@@ -102,7 +102,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     <div className="tw-pl-xs col-11 col-lg-9">
                         <h4>Solution</h4>
                         {solutions.length > 1 ? (
-                            <ul className="mb-0 tw-pl-sm">
+                            <ul className="mb-0 ml-0 tw-pl-sm">
                                 {solutions.map(solution => (
                                     <ListItemType key={solution.text} item={solution} />
                                 ))}
