@@ -38,7 +38,10 @@ export const CaseStudy: FunctionComponent = () => (
         }}
         hero={
             <Hero
-                backButton={<BackButton href="/case-studies" text="Case Studies" />}
+                backButton={{
+                    text: 'Case Studies',
+                    link: '/case-studies',
+                }}
                 variant="venusCode"
                 title={'HashiCorp streamlines \n cross-repository code search \n and fixes with Sourcegraph'}
                 displayUnderNav={true}
@@ -46,7 +49,7 @@ export const CaseStudy: FunctionComponent = () => (
         }
     >
         <NewCaseStudyLayout customer="HashiCorp">
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="tw-max-w-4xl tw-mx-auto">
                     <Blockquote
                         quote="By its nature and capabilities, Sourcegraph can be a tool to reduce friction, speed up feedback loops, and improve developer velocity."
@@ -101,7 +104,7 @@ export const CaseStudy: FunctionComponent = () => (
                 />
             </ContentSection>
 
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="tw-max-w-2xl tw-mx-auto tw-pt-5xl">
                     <p className="tw-pt-3xl sm:tw-pt-5xl sm:tw-mt-0 tw-mt-5xl">
                         Every day, millions of developers and DevOps engineers rely on HashiCorp to efficiently
@@ -242,7 +245,7 @@ export const CaseStudy: FunctionComponent = () => (
                 <ThreeUpText title="Results" items={threeUpTextItems} />
             </ContentSection>
 
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="tw-max-w-2xl tw-mx-auto">
                     <StaffSpotlight
                         customer="HashiCorp"

@@ -21,7 +21,7 @@ export const CaseStudy: FunctionComponent = () => (
                 image: '/case-studies/satish-surapaneni-f5.jpg',
             }}
         >
-            <ContentSection color="white" className="col-md-6 tw-pb-md">
+            <ContentSection background="white" className="col-md-6 tw-pb-md">
                 <div className="container">
                     <p>
                         F5 focuses on the development, delivery, security, performance, and availability of web

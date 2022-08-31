@@ -3,13 +3,12 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import {
-    StaffSpotlight,
-    Layout,
-    BackButton,
-    Hero,
-    NewCaseStudyLayout,
-    ContentSection,
     Blockquote,
+    ContentSection,
+    Hero,
+    Layout,
+    NewCaseStudyLayout,
+    StaffSpotlight,
     ThreeUpText,
     UseChallengeSolutionResults,
 } from '@components'
@@ -41,7 +40,10 @@ export const CaseStudy: FunctionComponent = () => (
         }}
         hero={
             <Hero
-                backButton={<BackButton href="/case-studies" text="Case Studies" />}
+                backButton={{
+                    text: 'Case Studies',
+                    link: '/case-studies',
+                }}
                 variant="venusCode"
                 title={'Nutanix fixed Log4j quickly and \n confidently with Sourcegraph'}
                 displayUnderNav={true}
@@ -49,7 +51,7 @@ export const CaseStudy: FunctionComponent = () => (
         }
     >
         <NewCaseStudyLayout customer="Nutanix">
-            <ContentSection color="white" className="tw-flex tw-justify-center">
+            <ContentSection background="white" className="tw-flex tw-justify-center">
                 <Blockquote
                     inline={true}
                     quote="Sourcegraph was the right product at the right time."
@@ -96,7 +98,7 @@ export const CaseStudy: FunctionComponent = () => (
                 />
             </ContentSection>
 
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="tw-max-w-2xl tw-mx-auto tw-pt-5xl">
                     <p className="tw-pt-3xl sm:tw-mt-0 tw-mt-5xl">
                         As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the
@@ -247,7 +249,7 @@ export const CaseStudy: FunctionComponent = () => (
                 <ThreeUpText title="Results" items={threeUpTextItems} />
             </ContentSection>
 
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="tw-max-w-2xl tw-mx-auto">
                     <h3 className="mb-4">Log4j is the tip of the open-source vulnerability iceberg</h3>
                     <p>

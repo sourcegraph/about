@@ -99,7 +99,7 @@ const renderListItems = (items: string[]): ReactNode =>
     ))
 
 export const IntegrationsSection: FunctionComponent = () => (
-    <ContentSection color="white">
+    <ContentSection background="white">
         <h2 className="tw-mb-3xl">Works with your code, infrastructure, and tools</h2>
 
         <div className="row">

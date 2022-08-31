@@ -16,7 +16,9 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
     const isDarkNav = className?.includes('navbar-dark')
 
     return (
-        <footer className={classNames(className, { 'tw-pt-16 tw-pb-2': !minimal, 'tw-text-white': isDarkNav })}>
+        <footer
+            className={classNames(className, { 'tw-pt-16 tw-pb-2': !minimal, 'tw-bg-black tw-text-white': isDarkNav })}
+        >
             <div className="tw-max-w-screen-xl tw-mx-auto tw-px-4">
                 {!minimal && (
                     <div className="tw-mb-8 tw-grid tw-grid-cols-6 md:tw-grid-cols-5">

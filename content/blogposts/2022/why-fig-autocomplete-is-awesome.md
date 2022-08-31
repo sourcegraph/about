@@ -27,7 +27,7 @@ I’m in the process of creating a budget for sponsoring the dependencies that S
 <div style={{position: 'relative', paddingBottom: '51.13908872901679%', height: 0}}>
     <iframe
         src="https://www.loom.com/embed/46094880c87844958d74ef28b1d76719"
-        frameborder="0"
+        frameBorder="0"
         webkitallowfullscreen
         mozallowfullscreen
         allowfullscreen

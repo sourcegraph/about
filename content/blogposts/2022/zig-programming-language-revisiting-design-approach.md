@@ -14,7 +14,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/design-approac
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/design-approach-zig-language-1200x675-2.jpg
 ---
 
-<iframe width="100%" height="415" src="https://www.youtube.com/embed/gn3YsZ6HUHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/gn3YsZ6HUHw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
 
 C and C++ are everywhere, but the security issues and bugs caused by their lack of modern features are everywhere too (by some estimates, 80% of vulnerabilities are related to buffer overflows).
 
