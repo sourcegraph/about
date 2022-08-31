@@ -126,7 +126,7 @@ Zig challenges the assumptions that developers may take for granted on a daily b
 
 Check out Zig’s webpage to find out more about the language, and tune into the [Sourcegraph Podcast](https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA) to hear from other inspiring creators in the developer community.
 
-<iframe width="100%" height="415" src="https://www.youtube.com/embed/gn3YsZ6HUHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/gn3YsZ6HUHw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
 
 ---
 <br />
