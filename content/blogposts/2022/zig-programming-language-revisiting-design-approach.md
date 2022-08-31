@@ -14,7 +14,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/design-approac
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/design-approach-zig-language-1200x675-2.jpg
 ---
 
-![](https://storage.googleapis.com/sourcegraph-assets/blog/design-approach-zig-language-1200x675-2.jpg)
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/gn3YsZ6HUHw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
 
 C and C++ are everywhere, but the security issues and bugs caused by their lack of modern features are everywhere too (by some estimates, 80% of vulnerabilities are related to buffer overflows).
 
@@ -44,7 +44,7 @@ Zig’s design is a fundamental overhaul of the C programming language.
 
 ### Zig’s design approach in action
 
-<br />
+![](https://storage.googleapis.com/sourcegraph-assets/blog/design-approach-zig-language-1200x675-2.jpg)
 
 “But why?” became Andrew’s catchphrase as he questioned C’s fundamental features and tackled programmers’ uninterrogated assumptions about them.
 
@@ -125,8 +125,6 @@ Zig favors simplicity over multiple features, and there is often only one way to
 Zig challenges the assumptions that developers may take for granted on a daily basis, leading to a faster, innovative, and intuitive language that sets a precedent for what good design can do for programming languages.
 
 Check out Zig’s webpage to find out more about the language, and tune into the [Sourcegraph Podcast](https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA) to hear from other inspiring creators in the developer community.
-
-<iframe width="100%" height="415" src="https://www.youtube.com/embed/gn3YsZ6HUHw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
 
 ---
 <br />
