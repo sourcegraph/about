@@ -153,7 +153,7 @@ const Sourcegraph4: FunctionComponent = () => {
             <ContentSection background="white" parentClassName="tw-pt-0 md:tw-pt-0">
                 <div className="tw-mb-5xl">
                     <ThreeUpText
-                        title="Here's a sneak peek at what we're launching"
+                        title="Here are a few things we’re launching"
                         fullWidthTitle={true}
                         items={[
                             {
