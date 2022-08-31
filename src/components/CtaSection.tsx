@@ -126,7 +126,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
         <div
             className={classNames({
                 'tw-max-w-xl tw-mx-auto tw-text-center': centerContent,
-                'tw-grid tw-grid-cols-5': !centerContent,
+                'tw-grid tw-grid-cols-5': !centerContent && !slimWidth,
                 'tw-grid tw-grid-cols-12 tw-gap-sm tw-grid-flow-row tw-items-center': slimWidth,
             })}
         >
