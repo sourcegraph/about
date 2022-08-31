@@ -3,17 +3,7 @@ import { FunctionComponent } from 'react'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
-import {
-    Alert,
-    Blockquote,
-    ContentSection,
-    HubSpotForm,
-    Figure,
-    TableWrapper,
-    Video,
-    YouTube,
-    TrySourcegraph,
-} from '@components'
+import { Alert, Blockquote, CtaSection, Figure, HubSpotForm, TableWrapper, Video, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
@@ -111,8 +101,20 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
             </div>
         )}
 
-        <ContentSection>
-            <TrySourcegraph stackedButtons={true} />
-        </ContentSection>
+        <CtaSection
+            centerContent={true}
+            title="Try Sourcegraph for free today"
+            description="You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your code stays local and secure)."
+            cta1={{
+                text: 'Try Sourcegraph now',
+                link: '/get-started/self-hosted',
+                ctaStyle: 'primaryButton',
+            }}
+            cta2={{
+                text: 'Schedule a demo',
+                link: '/demo',
+                ctaStyle: 'outlineButton',
+            }}
+        />
     </Tag>
 )

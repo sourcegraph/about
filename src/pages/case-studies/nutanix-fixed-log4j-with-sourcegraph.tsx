@@ -4,12 +4,11 @@ import Link from 'next/link'
 
 import {
     AuthorBio,
-    Layout,
-    BackButton,
-    Hero,
-    NewCaseStudyLayout,
-    ContentSection,
     Blockquote,
+    ContentSection,
+    Hero,
+    Layout,
+    NewCaseStudyLayout,
     ThreeUpText,
     UseChallengeSolutionResults,
 } from '@components'
@@ -41,7 +40,10 @@ export const CaseStudy: FunctionComponent = () => (
         }}
         hero={
             <Hero
-                backButton={<BackButton href="/case-studies" text="Case Studies" />}
+                backButton={{
+                    text: 'Case Studies',
+                    link: '/case-studies',
+                }}
                 variant="venusCode"
                 title={'Nutanix fixed Log4j quickly and \n confidently with Sourcegraph'}
                 displayUnderNav={true}

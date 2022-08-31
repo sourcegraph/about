@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import Link from 'next/link'
 
-import { Layout, WhitePaperPage, ContentSection, Blockquote, Figure } from '@components'
+import { Layout, WhitePaperPage, ContentSection, Blockquote, Figure, TwoColumnSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 export const RemoteWorkEasier: FunctionComponent = () => (
@@ -253,7 +253,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                             <TwitterIcon size={72} />
                         </a>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 tw-text-white">
                         <h5>
                             How has Sourcegraph helped make your remote software development better?{' '}
                             <a
@@ -276,40 +276,44 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                 </div>
             </ContentSection>
 
-            <ContentSection background="gray">
-                <div className="row md:tw-justify-center">
-                    <div className="tw-text-center col-md-3">
+            <ContentSection background="darkNebulous3">
+                <TwoColumnSection
+                    leftColumn={
                         <img
                             src="/external-logos/sourcegraph-universal-code-search-ebook-v1.jpg"
                             alt="Download: Universal Code Search and Intelligence"
                             width="170"
-                            className="tw-shadow-lg tw-shadow-gray-300"
+                            className="tw-shadow-lg tw-shadow-gray-400"
+                            draggable={false}
                         />
-                    </div>
-                    <div className="col-md-6">
-                        <h5>EBOOK</h5>
-                        <h3>Universal code search and intelligence</h3>
-                        <h6>
-                            Learn more on how Sourcegraph Universal Code Search can improve your productivity and
-                            efficiency as a developer.
-                        </h6>
-                        <Link
-                            href="/resources/universal-code-search-ebook/?utm_medium=organic_search&utm_source=about&utm_content=universal-code-search"
-                            passHref={true}
-                        >
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="mt-3 btn btn-lg btn-outline-light universal-code-search__btn"
-                                title="Free download"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
+                    }
+                    rightColumn={
+                        <>
+                            <h5>EBOOK</h5>
+                            <h3>Universal code search and intelligence</h3>
+                            <p className="tw-text-lg tw-mt-xs">
+                                Learn more on how Sourcegraph Universal Code Search can improve your productivity and
+                                efficiency as a developer.
+                            </p>
+                            <Link
+                                href="/resources/universal-code-search-ebook/?utm_medium=organic_search&utm_source=about&utm_content=universal-code-search"
+                                passHref={true}
                             >
-                                Free download
-                            </a>
-                        </Link>
-                    </div>
-                </div>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    className="mt-3 btn btn-outline-light"
+                                    title="Free download"
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    Free download
+                                </a>
+                            </Link>
+                        </>
+                    }
+                    mergeColumns={true}
+                />
             </ContentSection>
         </WhitePaperPage>
     </Layout>

@@ -136,7 +136,7 @@ const Sourcegraph4: FunctionComponent = () => {
                 description="In the first Sourcegraph Starship, we'll be launching the code intelligence platform for the modern development team. Stay up-to-date about the launch of Sourcegraph 4.0."
                 cta1={{
                     text: 'Remind me',
-                    button: true,
+                    ctaStyle: 'primaryButton',
                     onClick: () => setModal(true),
                 }}
                 cta2={{
@@ -244,17 +244,6 @@ const Sourcegraph4: FunctionComponent = () => {
 
                 <CustomerLogos />
             </ContentSection>
-
-            <CtaSection
-                background="starshipLaunchPills"
-                description="Respond to incidents with confidence and speed, and remediate issues at their root to ensure they don’t reoccur."
-                centerContent={true}
-                cta1={{
-                    text: 'Schedule a demo',
-                    button: true,
-                    link: '/demo',
-                }}
-            />
         </Layout>
     )
 }

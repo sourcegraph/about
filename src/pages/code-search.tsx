@@ -1,9 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import Link from 'next/link'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import {
-    Background,
     Blockquote,
     ContentSection,
     IntegrationsSection,
@@ -13,8 +12,8 @@ import {
     TwoColumnSection,
     Video,
     ResourceList,
+    CtaSection,
 } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
 
 const blogResources = [
     {
@@ -217,39 +216,22 @@ export const CodeSearchPage: FunctionComponent = () => (
 
         <IntegrationsSection />
 
-        <Background variant="lightNebulousMars">
-            <div className="tw-max-w-screen-xl tw-mx-auto tw-py-5xl tw-px-6 tw-text-center">
-                <h2 className="tw-mb-xs">Get started with Code Search</h2>
-                <p>Connect your code hosts and experience universal code search.</p>
-
-                <div className="tw-mt-sm tw-flex tw-flex-col xs:tw-flex-row tw-justify-center">
-                    <Link href="/demo" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            title="Request a demo"
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.bodyDemo}
-                            data-button-type="cta"
-                            className="btn btn-primary tw-mb-xs xs:tw-mb-0 xs:tw-mr-xs"
-                        >
-                            Request a demo
-                        </a>
-                    </Link>
-                    <Link href="/get-started/self-hosted" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            title="Try Sourcegraph now"
-                            data-button-style={buttonStyle.outline}
-                            data-button-location={buttonLocation.bodyDemo}
-                            data-button-type="cta"
-                            className="btn btn-outline-primary"
-                        >
-                            Try Sourcegraph now
-                        </a>
-                    </Link>
-                </div>
-            </div>
-        </Background>
+        <CtaSection
+            centerContent={true}
+            title="Get started with Code Search"
+            background="lightNebulousMars"
+            description="Connect your code hosts and experience universal code search."
+            cta1={{
+                text: 'Request a demo',
+                link: '/demo',
+                ctaStyle: 'primaryButton',
+            }}
+            cta2={{
+                text: 'Try Sourcegraph now',
+                link: '/get-started/self-hosted',
+                icon: <ArrowRightIcon />,
+            }}
+        />
 
         <ResourceList items={blogResources} title="Learn More" />
     </Layout>

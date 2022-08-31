@@ -6,14 +6,13 @@ import WebIcon from 'mdi-react/WebIcon'
 import Link from 'next/link'
 
 import {
-    BackButton,
-    Background,
-    ResourceList,
     ContentSection,
     CustomCarousel,
     CustomerLogos,
+    Hero,
     Layout,
     QuoteCarousel,
+    ResourceList,
     ThreeUpText,
     TwoColumnSection,
 } from '@components'
@@ -230,50 +229,48 @@ const IncidentResponsePage: FunctionComponent = () => (
         }}
         className="use-cases-page navbar-light"
         hero={
-            <Background variant="lightNebulousVenus2">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-7 my-7">
-                            <BackButton href="/use-cases" text="USE CASES" />
-                            <h1 className="mb-4">Resolve incidents quickly and confidently</h1>
-                            <div className="mb-5">
-                                Identify the root cause of an incident, understand its potential impact on other
-                                services, and fix the issue everywhere in your codebase so it won't reoccur.
-                            </div>
-                            <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
-                                <div className="mb-3 mb-md-0">
-                                    <Link href="/demo" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            className="btn btn-primary w-100 max-w-350"
-                                            title="Request a Demo."
-                                            data-button-style={buttonStyle.primary}
-                                            data-button-location={buttonLocation.hero}
-                                            data-button-type="cta"
-                                        >
-                                            Request a demo
-                                        </a>
-                                    </Link>
-                                </div>
-                                <div className="ml-md-3">
-                                    <Link href="/get-started/self-hosted" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            className="btn btn-outline-primary w-100 max-w-350"
-                                            title="Try Sourcegraph."
-                                            data-button-style={buttonStyle.outline}
-                                            data-button-location={buttonLocation.hero}
-                                            data-button-type="cta"
-                                        >
-                                            Try Sourcegraph now
-                                        </a>
-                                    </Link>
-                                </div>
-                            </div>
+            <Hero
+                variant="lightNebulousVenus2"
+                backButton={{
+                    text: 'Use Cases',
+                    link: '/use-cases',
+                }}
+                title="Resolve incidents quickly and confidently"
+                subtitle="Identify the root cause of an incident, understand its potential impact on other
+                services, and fix the issue everywhere in your codebase so it won't reoccur."
+                cta={
+                    <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
+                        <div className="mb-3 mb-md-0">
+                            <Link href="/demo" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    className="btn btn-primary w-100 max-w-350"
+                                    title="Request a Demo."
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
+                                    Request a demo
+                                </a>
+                            </Link>
+                        </div>
+                        <div className="ml-md-3">
+                            <Link href="/get-started/self-hosted" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    className="btn btn-outline-primary w-100 max-w-350"
+                                    title="Try Sourcegraph."
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
+                                    Try Sourcegraph now
+                                </a>
+                            </Link>
                         </div>
                     </div>
-                </div>
-            </Background>
+                }
+            />
         }
     >
         <ContentSection>
@@ -339,7 +336,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                         <img
                             src="/external-logos/cloudflare-logo.svg"
                             alt="Cloudflare logo"
-                            className="tw-mx-auto mt-3 tw-flex max-w-150"
+                            className="mt-3 tw-mx-auto tw-flex max-w-150"
                         />
                     </div>
                 }
@@ -356,7 +353,7 @@ const IncidentResponsePage: FunctionComponent = () => (
 
         <ContentSection parentClassName="tw-bg-gray-100">
             <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
-                <div className="tw-mx-auto mb-5 tw-flex tw-flex-col tw-text-center max-w-600">
+                <div className="mb-5 tw-mx-auto tw-flex tw-flex-col tw-text-center max-w-600">
                     <h2 className="">Get started with Sourcegraph</h2>
                     <p>
                         Respond to incidents with confidence and speed, and remediate issues at their root to ensure

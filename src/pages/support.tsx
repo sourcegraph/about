@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import CheckIcon from 'mdi-react/CheckIcon'
 import Link from 'next/link'
 
-import { ContentSection, Layout, TrySourcegraph } from '@components'
+import { ContentSection, Layout, CtaSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const CLASS_NAMES = {
@@ -58,7 +58,7 @@ const Support: FunctionComponent = () => (
 
             <div className="tw-mx-auto tw-my-0 tw-max-w-screen-xl">
                 <div className="tw-pt-sm row">
-                    <div className="tw-mx-auto mb-4 tw-flex col-md-4">
+                    <div className="mb-4 tw-mx-auto tw-flex col-md-4">
                         <div className="card h-100">
                             <div className="card-body">
                                 <h1 className="tw-my-xs tw-text-center">Free</h1>
@@ -118,7 +118,7 @@ const Support: FunctionComponent = () => (
                             </ol>
                         </div>
                     </div>
-                    <div className="tw-mx-auto mb-4 tw-flex col-md-4">
+                    <div className="mb-4 tw-mx-auto tw-flex col-md-4">
                         <div className="card">
                             <div className="card-body">
                                 <h1 className="tw-my-xs tw-text-center">Team</h1>
@@ -178,7 +178,7 @@ const Support: FunctionComponent = () => (
                             </ol>
                         </div>
                     </div>
-                    <div className="tw-mx-auto mb-4 tw-flex col-md-4">
+                    <div className="mb-4 tw-mx-auto tw-flex col-md-4">
                         <div className="card">
                             <div className="card-body">
                                 <h1 className="tw-my-xs tw-text-center">Enterprise</h1>
@@ -292,9 +292,20 @@ const Support: FunctionComponent = () => (
             </div>
         </div>
 
-        <ContentSection>
-            <TrySourcegraph />
-        </ContentSection>
+        <CtaSection
+            title="Try Sourcegraph for free today"
+            description="You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your code stays local and secure)."
+            cta1={{
+                text: 'Try Sourcegraph now',
+                link: '/get-started/self-hosted',
+                ctaStyle: 'primaryButton',
+            }}
+            cta2={{
+                text: 'Schedule a demo',
+                link: '/demo',
+                ctaStyle: 'outlineButton',
+            }}
+        />
     </Layout>
 )
 

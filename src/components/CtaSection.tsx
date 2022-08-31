@@ -9,7 +9,7 @@ import { buttonStyle, buttonLocation } from '@data'
 interface Cta {
     text: string
     icon?: ReactNode
-    button?: boolean
+    ctaStyle?: 'primaryButton' | 'outlineButton'
     link?: string
     onClick?: () => void
 }
@@ -29,11 +29,11 @@ interface CtaSection {
  * @param props - component props
  * @param props.text - text for the cta
  * @param props.icon - icon node for the cta
- * @param props.button - boolean to display as a button
+ * @param props.ctaStyle - prop to display as a primary or outline button
  * @param props.link - href string
  * @param props.onClick - click function
  */
-const Cta: FunctionComponent<Cta> = ({ text, icon, button = false, link, onClick }) => {
+const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) => {
     const textAndIcon = (
         <div className={classNames({ 'tw-flex': icon })}>
             {text}
@@ -41,13 +41,24 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, button = false, link, onClick
         </div>
     )
     const externalLink = link?.includes('http')
+
+    let ctaTrackingStyle = buttonStyle.text
+    if (ctaStyle === 'primaryButton') {
+        ctaTrackingStyle = buttonStyle.primary
+    } else if (ctaStyle === 'outlineButton') {
+        ctaTrackingStyle = buttonStyle.outline
+    }
+
     const linkElement = (
         // eslint-disable-next-line react/jsx-no-target-blank
         <a
             title={text}
             href={link}
-            className={classNames({ 'btn btn-primary': button })}
-            data-button-style={buttonStyle.text}
+            className={classNames({
+                'btn btn-primary': ctaStyle === 'primaryButton',
+                'btn btn-outline-primary': ctaStyle === 'outlineButton',
+            })}
+            data-button-style={ctaTrackingStyle}
             data-button-location={buttonLocation.body}
             data-button-type="cta"
             target={externalLink ? '_blank' : undefined}
@@ -64,8 +75,9 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, button = false, link, onClick
                 onClick={onClick}
                 type="button"
                 className={classNames({
-                    'btn btn-primary': button,
-                    'tw-text-blurple-400 tw-font-bold': !button,
+                    'btn btn-primary': ctaStyle === 'primaryButton',
+                    'btn btn-outline-primary': ctaStyle === 'outlineButton',
+                    'tw-text-blurple-400 tw-font-bold': !ctaStyle,
                 })}
             >
                 {textAndIcon}

@@ -48,7 +48,6 @@ export interface Background {
     | 'transparent'
         | 'white'
         | 'black'
-        | 'gray'
         // Light Nebulous Variants
         | 'lightNebulousSaturn1'
         | 'lightNebulousSaturn2'
@@ -180,7 +179,6 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
     const styleClasses = classNames(className, {
         'tw-bg-white tw-text-black': variant === 'white',
         'tw-bg-black tw-text-white': variant === 'black',
-        'tw-bg-gray-500 tw-text-white': variant === 'gray',
         'tw-text-white': variant.includes('dark') || variant.includes('starship'),
         'tw-text-black': (!variant.includes('dark') && !variant.includes('starship')) || variant === 'transparent',
     })

@@ -1,13 +1,18 @@
-import { FunctionComponent, ReactNode, useEffect, useRef } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
 import classNames from 'classnames'
 
-import { Background, TwoColumnSection } from '@components'
+import { BackButton, Background, ContentSection, TwoColumnSection } from '@components'
+
+interface BackButton {
+    text: string
+    link: string
+}
 
 interface Hero extends Background {
     product?: 'code search' | 'batch changes' | 'code insights'
     title: string | ReactNode
-    backButton?: ReactNode
+    backButton?: BackButton
     leftColumn?: ReactNode
     subtitle?: string
     description?: string
@@ -22,6 +27,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
     title,
     backButton,
     leftColumn,
+    description,
     subtitle,
     cta,
     displayUnderNav = false,
@@ -33,62 +39,37 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
         illustration = illustrationName as Background['illustration']
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const rootReference = useRef<any>(null)
-
-    useEffect(() => {
-        const defaultNavHeight = 74
-        const nav = document.querySelector('.navbar')
-        const navHeight = nav?.getBoundingClientRect().height || defaultNavHeight
-
-        if (displayUnderNav) {
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            const rootElement = rootReference?.current
-
-            // TODO: Improve this with Tailwind
-            if (rootElement) {
-                // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-                rootElement.style.marginTop = `-${navHeight}px`
-                // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-                rootElement.firstChild.style.paddingTop = `${navHeight}px`
-            }
-        }
-    }, [rootReference, displayUnderNav])
-
     const mainContent = (
         <div className={classNames(product && 'tw-max-w-[700px] tw-w-full')}>
-            {backButton}
+            {backButton && <BackButton href={backButton.link} text={backButton.text} />}
 
             <div className="tw-flex tw-flex-col-reverse">
                 <h1 className="tw-whitespace-pre-line">{title}</h1>
                 {product && <h6 className="mb-2">{product}</h6>}
             </div>
 
-            {subtitle && <h3 className="max-w-800 tw-mb-sm">{subtitle}</h3>}
+            {description && <p className="tw-max-w-xl tw-mt-sm tw-text-lg">{description}</p>}
+
+            {subtitle && <h3 className="tw-max-w-3xl tw-mt-sm">{subtitle}</h3>}
 
             {cta && <div className="tw-mt-md tw-flex tw-flex-col max-w-400">{cta}</div>}
         </div>
     )
 
     return (
-        <div ref={rootReference}>
-            <Background
-                variant={variant}
-                illustration={illustration}
-                className={classNames('tw-flex tw-items-center tw-px-sm', variant.includes('dark') && 'tw-text-white')}
-            >
-                <div className="tw-max-w-screen-xl tw-w-full tw-mx-auto tw-my-5xl">
-                    {leftColumn ? (
-                        <TwoColumnSection
-                            leftColumn={leftColumn}
-                            rightColumn={mainContent}
-                            mergeColumns={mergeColumns}
-                        />
-                    ) : (
-                        mainContent
-                    )}
-                </div>
-            </Background>
-        </div>
+        <ContentSection
+            background={variant}
+            illustration={illustration}
+            parentClassName={classNames({
+                '-tw-mt-[68px] md:-tw-mt-[74px] tw-pt-5xl md:!tw-pt-[148px]': displayUnderNav,
+            })}
+            className="tw-flex tw-items-center"
+        >
+            {leftColumn ? (
+                <TwoColumnSection leftColumn={leftColumn} rightColumn={mainContent} mergeColumns={mergeColumns} />
+            ) : (
+                mainContent
+            )}
+        </ContentSection>
     )
 }
