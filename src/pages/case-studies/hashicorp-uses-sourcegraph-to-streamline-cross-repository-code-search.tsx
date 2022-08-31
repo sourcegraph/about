@@ -33,7 +33,7 @@ export const CaseStudy: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'HashiCorp streamlines cross-repository code search and fixes with Sourcegraph',
-            description: 
+            description:
                 'HashiCorp case study. Learn how Hashicorp uses Sourcegraph to speed up large refactors by an estimated 4x and proactively eliminate unused code and technical debt.',
         }}
         hero={
@@ -64,9 +64,7 @@ export const CaseStudy: FunctionComponent = () => (
 
             <ContentSection>
                 <UseChallengeSolutionResults
-                    useCases={[
-                        { text: 'Streamline code reuse' },
-                    ]}
+                    useCases={[{ text: 'Streamline code reuse' }]}
                     challenges={[
                         {
                             text: 'Excessive time and effort spent manually searching for code across multiple repositories',
@@ -82,7 +80,9 @@ export const CaseStudy: FunctionComponent = () => (
                         {
                             text: 'Code Search simplifies and shortens cross-repository search, including pinpointing tech debt',
                         },
-                        { text: 'Batch Changes provides a fast, automated, and repeatable process for rolling out updates' },
+                        {
+                            text: 'Batch Changes provides a fast, automated, and repeatable process for rolling out updates',
+                        },
                     ]}
                     results={[
                         {
