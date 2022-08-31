@@ -3,7 +3,8 @@ import { FunctionComponent, ReactNode } from 'react'
 import classNames from 'classnames'
 
 import { buttonStyle, buttonLocation } from '@data'
-import { TrySourcegraph } from 'components/TrySourcegraph'
+
+import { CtaSection } from './CtaSection'
 
 interface Props {
     title: string
@@ -47,8 +48,19 @@ export const WhitePaperPage: FunctionComponent<Props> = ({ title, className, pdf
 
         {children}
 
-        <div className="py-6">
-            <TrySourcegraph />
-        </div>
+        <CtaSection
+            title="Try Sourcegraph for free today"
+            description="You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your code stays local and secure)."
+            cta1={{
+                text: 'Try Sourcegraph now',
+                link: '/get-started/self-hosted',
+                ctaStyle: 'primaryButton',
+            }}
+            cta2={{
+                text: 'Schedule a demo',
+                link: '/demo',
+                ctaStyle: 'outlineButton',
+            }}
+        />
     </div>
 )

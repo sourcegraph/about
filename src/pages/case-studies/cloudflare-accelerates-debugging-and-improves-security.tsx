@@ -23,7 +23,7 @@ export const CaseStudy: FunctionComponent = () => {
                     image: '/case-studies/terin-stock-cloudflare.jpg',
                 }}
             >
-                <ContentSection color="white">
+                <ContentSection background="white">
                     <div className="container">
                         <p>
                             A web performance and security company, Cloudflare offers CDN, DNS, DDoS protection, and

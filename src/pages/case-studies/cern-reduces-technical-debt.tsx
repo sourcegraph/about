@@ -21,7 +21,7 @@ export const CaseStudy: FunctionComponent = () => (
                 author: 'Vito Baggiolini, Senior Software Engineer, CERN',
             }}
         >
-            <ContentSection color="white" className="col-md-6 tw-pb-md">
+            <ContentSection background="white" className="col-md-6 tw-pb-md">
                 <div className="container">
                     <p>
                         Physicists at CERN use some of the world's most powerful particle accelerators to discover what

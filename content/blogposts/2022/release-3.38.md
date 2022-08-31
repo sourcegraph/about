@@ -39,7 +39,7 @@ Any Sourcegraph instance can create up to two code insights, even without a tria
     src="https://www.youtube-nocookie.com/embed/fMCUJQHfbUA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
     allowfullscreen="true"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    frameborder="0"
+    frameBorder="0"
     title="Sourcegraph Code Insights demo"
   ></iframe>
 </div>

@@ -1,6 +1,7 @@
 /* eslint-disable import/order */
 import { CSSProperties, FunctionComponent, ReactNode } from 'react'
 
+import classNames from 'classnames'
 import { StaticImageData } from 'next/image'
 
 import { breakpoints } from '@data'
@@ -23,9 +24,6 @@ import darkNebulous2Sm from './assets/backgrounds/dark-nebulous-2-sm.jpg'
 import darkNebulous3 from './assets/backgrounds/dark-nebulous-3.jpg'
 import darkNebulous3Md from './assets/backgrounds/dark-nebulous-3-md.jpg'
 import darkNebulous3Sm from './assets/backgrounds/dark-nebulous-3-sm.jpg'
-import darkNebulous4 from './assets/backgrounds/dark-nebulous-4.jpg'
-import darkNebulous4Md from './assets/backgrounds/dark-nebulous-4-md.jpg'
-import darkNebulous4Sm from './assets/backgrounds/dark-nebulous-4-sm.jpg'
 // Code Variants
 import venusCode from './assets/backgrounds/venus-code.jpg'
 import venusCode2 from './assets/backgrounds/venus-code-2.jpg'
@@ -34,15 +32,21 @@ import marsCode from './assets/backgrounds/mars-code.jpg'
 // Grid Variants
 import darkMultiGrid from './assets/backgrounds/dark-multi-grid.jpg'
 import darkSimpleGrid from './assets/backgrounds/dark-simple-grid.jpg'
-import auroraGrid from './assets/backgrounds/aurora-grid.jpg'
+import darkAuroraGrid from './assets/backgrounds/dark-aurora-grid.jpg'
+// Starship Variants
+import starshipLaunchPills from './assets/backgrounds/starship-launch-pills.svg'
 // Illustrations
 import changes from './assets/illustrations/changes.svg'
 import insights from './assets/illustrations/insights.svg'
 import search from './assets/illustrations/search.svg'
 
 export interface Background {
-    variant: // Light Nebulous Variants
-    | 'lightNebulousSaturn1'
+    variant: // Standard Variants
+    | 'transparent'
+        | 'white'
+        | 'black'
+        // Light Nebulous Variants
+        | 'lightNebulousSaturn1'
         | 'lightNebulousSaturn2'
         | 'lightNebulousVenus1'
         | 'lightNebulousVenus2'
@@ -69,7 +73,9 @@ export interface Background {
         // Grid Variants
         | 'darkMultiGrid'
         | 'darkSimpleGrid'
-        | 'auroraGrid'
+        | 'darkAuroraGrid'
+        // Starship Variants
+        | 'starshipLaunchPills'
     children?: ReactNode
     illustration?: 'search' | 'changes' | 'insights'
     className?: string
@@ -83,8 +89,8 @@ interface IllustrationStyle {
     }
 }
 
-// Background variant to image mapping
-const backgrounds: { [key: string]: StaticImageData } = {
+// Background variant to image or gradient class mapping
+const backgrounds: { [key: string]: StaticImageData | string } = {
     lightNebulousSaturn1,
     lightNebulousSaturn2,
     lightNebulousVenus1,
@@ -101,9 +107,7 @@ const backgrounds: { [key: string]: StaticImageData } = {
     darkNebulous3,
     darkNebulous3Md,
     darkNebulous3Sm,
-    darkNebulous4,
-    darkNebulous4Md,
-    darkNebulous4Sm,
+    darkNebulous4: 'sg-bg-gradient-dark-nebulous-4',
     // Code Variants
     venusCode,
     venusCode2,
@@ -112,7 +116,10 @@ const backgrounds: { [key: string]: StaticImageData } = {
     // Grid Variants
     darkMultiGrid,
     darkSimpleGrid,
-    auroraGrid,
+    darkAuroraGrid,
+    // Starship Variants
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    starshipLaunchPills,
 }
 
 // Illustration to svg mapping
@@ -150,8 +157,12 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
         },
     }
 
-    const backgroundSource: string = backgrounds[variant].src
+    const backgroundVariant = backgrounds[variant]
+    const isCodeGradient = typeof backgroundVariant === 'string' && backgroundVariant.includes('-')
+    const codeGradient: string = (typeof backgroundVariant === 'string' && backgroundVariant) || ''
+    const backgroundSource: string = typeof backgroundVariant === 'object' ? backgroundVariant.src : backgroundVariant
     let background = `url("${backgroundSource}") center / cover no-repeat`
+
     if (illustration) {
         const illustrationSource: string = illustrations[illustration]
         const illustrationSize: string = illustrationStyle[illustration].size
@@ -162,12 +173,19 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
         }
     }
 
+    const styleClasses = classNames(className, {
+        [codeGradient]: isCodeGradient,
+        'tw-bg-white tw-text-black': variant === 'white',
+        'tw-bg-black tw-text-white': variant === 'black',
+        'tw-text-white': variant.includes('dark') || variant.includes('starship') || variant.includes('black'),
+        'tw-text-black': (!variant.includes('dark') && !variant.includes('starship')) || variant === 'transparent',
+    })
+
     return (
         <div
-            // TODO: Remove style when Tailwind is in
             // eslint-disable-next-line react/forbid-dom-props
-            style={{ background }}
-            className={className}
+            style={backgroundVariant && !isCodeGradient ? { background } : undefined}
+            className={styleClasses}
         >
             {children}
         </div>

@@ -47,7 +47,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             </div>
         }
     >
-        <ContentSection color="white">
+        <ContentSection background="white">
             <div className="tw-mx-auto max-w-md-650">
                 <p>
                     Everyone's telling us to "shift left" these days. This raises some questions. What's being shifted?
@@ -65,7 +65,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection color="white">
+        <ContentSection background="white">
             <TwoColumnSection
                 centerContent={true}
                 leftColumn={
@@ -104,7 +104,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white">
+        <ContentSection background="white">
             <TwoColumnSection
                 centerContent={true}
                 reverseOnMobile={true}
@@ -143,7 +143,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white">
+        <ContentSection background="white">
             <TwoColumnSection
                 centerContent={true}
                 leftColumn={
@@ -186,7 +186,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white">
+        <ContentSection background="white">
             <TwoColumnSection
                 centerContent={true}
                 reverseOnMobile={true}
@@ -236,7 +236,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white">
+        <ContentSection background="white">
             <TwoColumnSection
                 centerContent={true}
                 leftColumn={

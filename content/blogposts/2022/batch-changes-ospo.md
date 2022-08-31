@@ -130,6 +130,6 @@ fostering the adoption of code intelligence in the open source community. You ca
 - [Interact with Sourcegraph from the command line faster with Fig](https://about.sourcegraph.com/blog/why-fig-autocomplete-is-awesome)
 - [No Secrets! Quickly find sensitive files in your GitHub repo](https://about.sourcegraph.com/blog/no-more-secrets)
 
-<iframe height="0" frameborder="0">
+<iframe height="0" frameBorder="0">
     <img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=a18bf656-9e70-4ab1-b2a5-1440b6646e1f" />
 </iframe>

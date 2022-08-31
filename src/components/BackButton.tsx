@@ -4,6 +4,8 @@ import classNames from 'classnames'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import Link from 'next/link'
 
+import { buttonLocation, buttonStyle } from '@data'
+
 interface BackButtonProps {
     href: string
     text: string
@@ -12,7 +14,13 @@ interface BackButtonProps {
 
 export const BackButton: FunctionComponent<BackButtonProps> = ({ href, text, light = false }) => (
     <Link href={href} passHref={true}>
-        <div className="tw-uppercase tw-mb-4 tw-cursor-pointer">
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        <a
+            className="tw-uppercase tw-mb-xs tw-block tw-cursor-pointer"
+            data-button-style={buttonStyle.textWithArrow}
+            data-button-location={buttonLocation.hero}
+            data-button-type="cta"
+        >
             <ArrowLeftIcon
                 className={classNames('tw-mb-1 tw-inline', { 'tw-text-white': light, 'tw-text-black': !light })}
             />
@@ -24,6 +32,6 @@ export const BackButton: FunctionComponent<BackButtonProps> = ({ href, text, lig
             >
                 {text}
             </span>
-        </div>
+        </a>
     </Link>
 )
