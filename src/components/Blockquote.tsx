@@ -116,18 +116,20 @@ export const Blockquote: FunctionComponent<{
                     </>
                 ) : (
                     <Link href={link.href} passHref={true}>
-                        <br />
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className={classNames('tw-mt-4 tw-flex', !border && 'tw-justify-center')}
-                            title={link.text}
-                            data-button-style={buttonStyle.textWithArrow}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            <p className="tw-mb-0">{link.text}</p>
-                            <ArrowRightIcon className="tw-ml-1 tw-inline" />
-                        </a>
+                        <>
+                            <br />
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                className={classNames('tw-mt-4 tw-flex', !border && 'tw-justify-center')}
+                                title={link.text}
+                                data-button-style={buttonStyle.textWithArrow}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                <p className="tw-mb-0">{link.text}</p>
+                                <ArrowRightIcon className="tw-ml-1 tw-inline" />
+                            </a>
+                        </>
                     </Link>
                 ))}
         </blockquote>
