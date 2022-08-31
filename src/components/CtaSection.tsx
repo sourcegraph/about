@@ -127,20 +127,19 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
             className={classNames({
                 'tw-max-w-xl tw-mx-auto tw-text-center': centerContent,
                 'tw-grid tw-grid-cols-5': !centerContent && !slimWidth,
-                'tw-grid tw-grid-cols-12 tw-gap-sm tw-grid-flow-row tw-items-center': slimWidth,
+                'tw-max-w-[846px] tw-mx-auto tw-grid tw-grid-cols-2 tw-items-center': slimWidth,
             })}
         >
             <div
                 className={classNames({
-                    'tw-col-span-full md:tw-col-span-3': !centerContent,
-                    'tw-col-span-full md:tw-col-span-5 md:tw-col-start-3': slimWidth,
+                    'tw-col-span-full md:tw-col-span-3': !centerContent
                 })}
             >
                 {!slimWidth && <h2 className="tw-mb-sm">{title}</h2>}
                 {slimWidth && <h4 className="tw-mb-sm">{title}</h4>}
                 <p
                     className={classNames('tw-text-lg', {
-                        'tw-pr-2xl': !centerContent,
+                        'md:tw-pr-5xl': !centerContent,
                     })}
                 >
                     {description}
@@ -154,7 +153,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                         !centerContent && !slimWidth,
                     'lg:tw-justify-end': !centerContent && cta2,
                     'lg:tw-justify-center': !centerContent && !cta2,
-                    'tw-col-span-full md:tw-col-span-3 md:tw-col-start-9 tw-flex tw-flex-col': slimWidth,
+                    'tw-col-span-full md:tw-col-span-3 md:tw-col-start-9 tw-flex tw-flex-col tw-mt-md md:tw-mt-0': slimWidth,
                 })}
             >
                 {cta1 && (
