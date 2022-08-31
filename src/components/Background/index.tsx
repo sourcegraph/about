@@ -24,9 +24,6 @@ import darkNebulous2Sm from './assets/backgrounds/dark-nebulous-2-sm.jpg'
 import darkNebulous3 from './assets/backgrounds/dark-nebulous-3.jpg'
 import darkNebulous3Md from './assets/backgrounds/dark-nebulous-3-md.jpg'
 import darkNebulous3Sm from './assets/backgrounds/dark-nebulous-3-sm.jpg'
-import darkNebulous4 from './assets/backgrounds/dark-nebulous-4.jpg'
-import darkNebulous4Md from './assets/backgrounds/dark-nebulous-4-md.jpg'
-import darkNebulous4Sm from './assets/backgrounds/dark-nebulous-4-sm.jpg'
 // Code Variants
 import venusCode from './assets/backgrounds/venus-code.jpg'
 import venusCode2 from './assets/backgrounds/venus-code-2.jpg'
@@ -92,8 +89,8 @@ interface IllustrationStyle {
     }
 }
 
-// Background variant to image mapping
-const backgrounds: { [key: string]: StaticImageData } = {
+// Background variant to image or gradient class mapping
+const backgrounds: { [key: string]: StaticImageData | string } = {
     lightNebulousSaturn1,
     lightNebulousSaturn2,
     lightNebulousVenus1,
@@ -110,9 +107,7 @@ const backgrounds: { [key: string]: StaticImageData } = {
     darkNebulous3,
     darkNebulous3Md,
     darkNebulous3Sm,
-    darkNebulous4,
-    darkNebulous4Md,
-    darkNebulous4Sm,
+    darkNebulous4: 'sg-bg-gradient-dark-nebulous-4',
     // Code Variants
     venusCode,
     venusCode2,
@@ -163,6 +158,8 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
     }
 
     const backgroundVariant = backgrounds[variant]
+    const isCodeGradient = typeof backgroundVariant === 'string' && backgroundVariant.includes('-')
+    const codeGradient: string = (typeof backgroundVariant === 'string' && backgroundVariant) || ''
     const backgroundSource: string = typeof backgroundVariant === 'object' ? backgroundVariant.src : backgroundVariant
     let background = `url("${backgroundSource}") center / cover no-repeat`
 
@@ -177,6 +174,7 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
     }
 
     const styleClasses = classNames(className, {
+        [codeGradient]: isCodeGradient,
         'tw-bg-white tw-text-black': variant === 'white',
         'tw-bg-black tw-text-white': variant === 'black',
         'tw-text-white': variant.includes('dark') || variant.includes('starship') || variant.includes('black'),
@@ -186,7 +184,7 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
     return (
         <div
             // eslint-disable-next-line react/forbid-dom-props
-            style={backgroundVariant ? { background } : undefined}
+            style={backgroundVariant && !isCodeGradient ? { background } : undefined}
             className={styleClasses}
         >
             {children}

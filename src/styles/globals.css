@@ -81,6 +81,16 @@
         border-image-source: linear-gradient(to right, theme(colors.violet.200), theme(colors.blue.200)) !important;
     }
 
+    /* Dark Nebulous Gradient Backgrounds */
+    .sg-bg-gradient-dark-nebulous-4 {
+        background:
+        radial-gradient(67.89% 140.35% at 28.91% 4.07%, #000 46.35%, theme(colors.blue.300 / 19%) 71.11%, theme(colors.blurple.300 / 50%) 100%),
+        radial-gradient(50% 103.37% at 50% 50%, #000 39.3%, theme(colors.blurple.400 / 65%) 100%),
+        radial-gradient(29.47% 37.82% at 9.38% 119.12%, theme(colors.blue.300 / 80%) 0%, transparent 100%),
+        radial-gradient(30.6% 48.08% at 65.29% 125.09%, theme(colors.blue.300 / 46%) 0%, transparent 94.49%),
+        #000;
+    }
+
     /* Simple Gradient Backgrounds */
     .sg-bg-gradient-venus {
         @apply tw-bg-gradient-to-r tw-from-blue-200/50 tw-to-green-200/50;
@@ -105,7 +115,7 @@
     .sg-bg-gradient-starship-small {
         background:
             radial-gradient(15.69% 113.34% at -2.47% 109.42%, theme(colors.blurple.400) 0%, rgba(161, 18, 255, 0) 100%),
-            radial-gradient(11.18% 150.65% at 101.49% -19.48%, theme(colors.blurple.400) 0%, rgba(161, 18, 255, 0) 100%), #000000;
+            radial-gradient(11.18% 150.65% at 101.49% -19.48%, theme(colors.blurple.400) 0%, rgba(161, 18, 255, 0) 100%), #000;
     }
     .sg-bg-gradient-starship-large {
         background:
@@ -116,6 +126,6 @@
             radial-gradient(40.94% 38.64% at 25.68% 102.5%, theme(colors.violet.400 / 60%) 0%, transparent 73.04%),
             radial-gradient(24.75% 50% at -3.7% 0%, theme(colors.violet.400 / 60%) 0%, transparent 73.04%),
             radial-gradient(29.03% 79.03% at 103.02% 53.38%, theme(colors.violet.400 / 60%) 0%, transparent 73.04%),
-            #000000;
+            #000;
     }
 }
