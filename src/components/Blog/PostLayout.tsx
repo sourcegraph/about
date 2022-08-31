@@ -25,48 +25,38 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
     renderTitleAsLink = false,
     contentClassName = '',
 }) => (
-    <Tag className={`blog-post ${className}`}>
-        <header className={headerClassName}>
-            <h2>
-                {renderTitleAsLink === true ? (
-                    <Link href={url} passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className="tw-block"
-                            title={post.frontmatter.title}
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            {post.frontmatter.title}
-                        </a>
-                    </Link>
-                ) : (
-                    post.frontmatter.title
-                )}
-            </h2>
+    <>
+        <Tag className={`blog-post ${className}`}>
+            <header className={headerClassName}>
+                <h2>
+                    {renderTitleAsLink === true ? (
+                        <Link href={url} passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                className="tw-block"
+                                title={post.frontmatter.title}
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                {post.frontmatter.title}
+                            </a>
+                        </Link>
+                    ) : (
+                        post.frontmatter.title
+                    )}
+                </h2>
 
-            {post.frontmatter.authors?.length && (
-                <p className="mb-0 text-align-center text-secondary">
-                    {post.frontmatter.authors.map((a, index) => (
-                        <span key={a.name} data-author={a.name}>
-                            {a.url ? (
-                                a.url.includes('http') ? (
-                                    <a
-                                        href={a.url}
-                                        target="_blank"
-                                        rel="nofollow noreferrer"
-                                        title={a.name}
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.body}
-                                        data-button-type="cta"
-                                    >
-                                        {a.name}
-                                    </a>
-                                ) : (
-                                    <Link href={a.url} passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                {post.frontmatter.authors?.length && (
+                    <p className="mb-0 text-align-center text-secondary">
+                        {post.frontmatter.authors.map((a, index) => (
+                            <span key={a.name} data-author={a.name}>
+                                {a.url ? (
+                                    a.url.includes('http') ? (
                                         <a
+                                            href={a.url}
+                                            target="_blank"
+                                            rel="nofollow noreferrer"
                                             title={a.name}
                                             data-button-style={buttonStyle.text}
                                             data-button-location={buttonLocation.body}
@@ -74,37 +64,50 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                                         >
                                             {a.name}
                                         </a>
-                                    </Link>
-                                )
-                            ) : (
-                                a.name
-                            )}
-                            {/* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */}
-                            {index === post.frontmatter.authors!.length - 1 ? ' ' : ', '}
-                        </span>
-                    ))}
-                </p>
-            )}
+                                    ) : (
+                                        <Link href={a.url} passHref={true}>
+                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                            <a
+                                                title={a.name}
+                                                data-button-style={buttonStyle.text}
+                                                data-button-location={buttonLocation.body}
+                                                data-button-type="cta"
+                                            >
+                                                {a.name}
+                                            </a>
+                                        </Link>
+                                    )
+                                ) : (
+                                    a.name
+                                )}
+                                {/* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */}
+                                {index === post.frontmatter.authors!.length - 1 ? ' ' : ', '}
+                            </span>
+                        ))}
+                    </p>
+                )}
 
-            {post.frontmatter.publishDate && (
-                <p className="mb-0 text-align-center text-secondary">
-                    <time dateTime={post.frontmatter.publishDate}>{formatDate(post.frontmatter.publishDate)}</time>
-                </p>
-            )}
-        </header>
+                {post.frontmatter.publishDate && (
+                    <p className="mb-0 text-align-center text-secondary">
+                        <time dateTime={post.frontmatter.publishDate}>{formatDate(post.frontmatter.publishDate)}</time>
+                    </p>
+                )}
+            </header>
 
-        {content && (
-            <div className="card-body">
-                <div className={`blog-post__html ${contentClassName}`}>
-                    <MDXRemote {...content} components={components as PostComponents} />
+            {content && (
+                <div className="card-body">
+                    <div className={`blog-post__html ${contentClassName}`}>
+                        <MDXRemote {...content} components={components as PostComponents} />
+                    </div>
                 </div>
-            </div>
-        )}
+            )}
+        </Tag>
 
         <CtaSection
-            centerContent={true}
+            background="darkNebulous4"
             title="Try Sourcegraph for free today"
             description="You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your code stays local and secure)."
+            slimWidth={true}
             cta1={{
                 text: 'Try Sourcegraph now',
                 link: '/get-started/self-hosted',
@@ -116,5 +119,5 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                 ctaStyle: 'outlineButton',
             }}
         />
-    </Tag>
+    </>
 )

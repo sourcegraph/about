@@ -179,7 +179,7 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
     const styleClasses = classNames(className, {
         'tw-bg-white tw-text-black': variant === 'white',
         'tw-bg-black tw-text-white': variant === 'black',
-        'tw-text-white': variant.includes('dark') || variant.includes('starship'),
+        'tw-text-white': variant.includes('dark') || variant.includes('starship') || variant.includes('black'),
         'tw-text-black': (!variant.includes('dark') && !variant.includes('starship')) || variant === 'transparent',
     })
 
