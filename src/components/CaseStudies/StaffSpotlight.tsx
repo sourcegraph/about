@@ -40,7 +40,7 @@ export const StaffSpotlight: React.FunctionComponent<{
                 {staff[0].image && (
                     <div className="col-md-3">
                         <img
-                            className="tw-p-0 tw-rounded-full max-w-150"
+                            className="tw-p-0 tw-rounded-full tw-w-full max-w-150"
                             width={100}
                             src={staff[0].image}
                             alt={staff[0].name}

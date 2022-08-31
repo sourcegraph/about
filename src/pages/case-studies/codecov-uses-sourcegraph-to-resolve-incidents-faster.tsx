@@ -105,7 +105,7 @@ export const CaseStudy: FunctionComponent = () => (
 
             <ContentSection color="white">
                 <div className="tw-max-w-2xl tw-mx-auto tw-pt-5xl">
-                    <p className="mt-6 mt-lg-7 mt-md-5">
+                    <p className="tw-pt-3xl sm:tw-mt-0 tw-mt-5xl">
                         In 2021, security engineers Mitchell Borrego and Jeff Holland joined Codecov with the goal of
                         creating a cutting-edge security program. Their responsibilities include security tooling,
                         compliance, and code review from a security perspective. Working with Jerrod Engelberg, CEO of

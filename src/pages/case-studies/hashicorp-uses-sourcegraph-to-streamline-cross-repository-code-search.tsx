@@ -33,7 +33,7 @@ export const CaseStudy: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'HashiCorp streamlines cross-repository code search and fixes with Sourcegraph',
-            description:
+            description: 
                 'HashiCorp case study. Learn how Hashicorp uses Sourcegraph to speed up large refactors by an estimated 4x and proactively eliminate unused code and technical debt.',
         }}
         hero={
