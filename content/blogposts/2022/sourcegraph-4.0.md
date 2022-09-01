@@ -30,7 +30,7 @@ Media: provide a screenshot, gif, or video to help support the copy
 
 [Code Search]
 
-Documentation: provide a link to the documentation
+Docs: provide a link to the updated docs
 
 - Smarter code search
 - High-level aggregations of search results
