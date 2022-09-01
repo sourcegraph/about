@@ -23,13 +23,15 @@ changelogItems:
 
 ##### 🌅 Code intelligence: more useful, more times daily for every dev
 
-A faster, simpler search experience 
+### A faster, simpler search experience 
 We’ve improved the search UI to make the platform more intuitive with small usability improvements while making it easier for new users to get started with tips and recommendations on the revamped homepage. Performance across the platform saw a boost by using the latest in React, lazy loading, and priority rendering. These usability and performance enhancements help you get quick answers about your codebase and get unblocked faster. 
+
 Media: provide a screenshot, gif, or video to help support the copy
-Code Search]
+
+[Code Search]
 Documentation: provide a link to the documentation
 @benvenker 
-- TODO how to introduce the simple UI?
+
 - Smarter code search
 - High-level aggregations of search results
 - Precise code navigation for 9 languages (adding Ruby and Rust) with auto-indexing
