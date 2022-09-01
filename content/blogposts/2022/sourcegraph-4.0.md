@@ -120,7 +120,14 @@ Media: provide a screenshot, gif, or video to help support the copy
 [Admin]
 
 Docs: provide a link to the updated docs
+### Gain insights about precise code navigation with enhanced code navigation analytics
+Get a better understanding of precise navigation coverage and access precise code graph data configured for all of your repositories with the improved code navigation dashboard.
 
+Media: provide a screenshot, gif, or video to help support the copy
+
+[Admin]
+
+Docs: provide a link to the updated docs
 
 ### Run batch changes server-side (Beta)
 
