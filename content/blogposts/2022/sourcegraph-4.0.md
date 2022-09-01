@@ -112,7 +112,14 @@ Docs: provide a link to the updated docs
 [Admin]
 Docs: provide a link to the updated docs
 
-- Easier repo config
+### Quickly and easily get the status on your repository and sync permissions
+With Sourcegraph 4.0, we have introduced more than X quality of life improvements to help admins understand the current state of repository and permissions syncing. This helps to ensure users have the appropriate access to repositories so they can understand, fix, and automate the codebase, while admins can XYZ. 
+
+Media: provide a screenshot, gif, or video to help support the copy
+
+[Admin]
+
+Docs: provide a link to the updated docs
 
 
 ### Run batch changes server-side (Beta)
