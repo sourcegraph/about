@@ -66,7 +66,7 @@ export const CaseStudy: FunctionComponent = () => (
 
             <ContentSection>
                 <UseChallengeSolutionResults
-                    useCases={[{ text: 'Streamline code reuse' }]}
+                    useCases={[{ text: 'Streamline code reuse', href: '/use-cases/code-reuse' }]}
                     challenges={[
                         {
                             text: 'Excessive time and effort spent manually searching for code across multiple repositories',
@@ -81,9 +81,11 @@ export const CaseStudy: FunctionComponent = () => (
                     solutions={[
                         {
                             text: 'Code Search simplifies and shortens cross-repository search, including pinpointing tech debt',
+                            href: '/code-search',
                         },
                         {
                             text: 'Batch Changes provides a fast, automated, and repeatable process for rolling out updates',
+                            href: '/batch-changes',
                         },
                     ]}
                     results={[

@@ -68,7 +68,9 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                                 ))}
                             </ul>
                         ) : useCases[0].href ? (
-                            <Link href={useCases[0].href}>{useCases[0].text}</Link>
+                            <p className="tw-mb-0">
+                                <Link href={useCases[0].href}>{useCases[0].text}</Link>
+                            </p>
                         ) : (
                             <span>{useCases[0].text}</span>
                         )}
