@@ -103,7 +103,7 @@ Media: provide a screenshot, gif, or video to help support the copy
 [Admin]
 
 Docs: provide a link to the updated docs
-- 1-click log export
+- 1-click log export - at risk for 4.0 relase
 - OpenTelemetry
 - Easier repo config
 
