@@ -32,7 +32,7 @@ Media: provide a screenshot, gif, or video to help support the copy
 
 Docs: provide a link to the updated docs
 
-- Smarter code search
+- Smarter code search - blocked for 4.0
 ### Understand usage and search structure with high-level aggregations of search results
 High-level aggregations of search results powered by Code Insights are now displayed in addition to results. Responses to the query are now grouped by location (repo or file), author, and arbitrary capture group pattern to help answer to questions such as:
 
