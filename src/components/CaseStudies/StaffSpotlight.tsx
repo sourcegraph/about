@@ -22,7 +22,7 @@ export const StaffSpotlight: React.FunctionComponent<{
                     {staff.map(a => (
                         <div key={a.name} className="md:tw-text-center">
                             <img
-                                className="tw-rounded-full max-w-150 tw-inline"
+                                className="tw-rounded-full max-w-150 tw-inline tw-px-0 tw-pb-sm"
                                 width={150}
                                 height={150}
                                 src={a.image}
