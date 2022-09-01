@@ -79,11 +79,10 @@ const PricingPage: FunctionComponent = () => (
         <ContentSection className="row">
             <div className="mb-4 tw-mx-auto col-lg-6">
                 <PricingPlan
-                    name="Free"
-                    price={<div className="tw-text-center">$0/mo</div>}
+                    name="Business"
+                    price={<div className="tw-text-center">$79 per active user/month</div>}
                     planProperties={
                         <>
-                            <PricingPlanProperty>Up to 10 users</PricingPlanProperty>
                             <PricingPlanProperty className="mt-3">
                                 Community support on our public issue tracker
                                 <br />
@@ -105,7 +104,6 @@ const PricingPage: FunctionComponent = () => (
                     price={<div className="tw-text-center">Custom pricing</div>}
                     planProperties={
                         <>
-                            <PricingPlanProperty>Unlimited users</PricingPlanProperty>
                             <PricingPlanProperty className="mt-3">
                                 SLA with dedicated customer engineer
                                 <br />
