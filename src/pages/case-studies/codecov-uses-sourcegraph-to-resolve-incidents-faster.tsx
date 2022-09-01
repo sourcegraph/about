@@ -232,7 +232,7 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection parentClassName="sg-bg-gradient-saturn">
-                <ThreeUpText title="Results" items={threeUpTextItems} />
+                <ThreeUpText items={threeUpTextItems} />
             </ContentSection>
 
             <ContentSection background="white">
