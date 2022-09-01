@@ -38,7 +38,7 @@ export const StaffSpotlight: React.FunctionComponent<{
             // Single staff design
             <div className="tw-flex tw-flex-col md:tw-flex-row">
                 {staff[0].image && (
-                    <div className="tw-mb-sm md:tw-mb-0 tw-px-0">
+                    <div className="tw-mb-sm md:tw-mb-0">
                         <img
                             className="tw-rounded-full tw-w-full max-w-150"
                             width={150}
