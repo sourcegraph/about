@@ -49,7 +49,15 @@ Media: provide a screenshot, gif, or video to help support the copy
 [Code Insights]
 
 Docs: provide a link to the updated docs
-- Precise code navigation for 9 languages (adding Ruby and Rust) with auto-indexing
+### Configure precise code navigation for 9 languages in a matter of minutes with auto-indexing
+Code navigation allows you to quickly jump to symbol definitions, find references, dependencies, and more, so you can spend more time shipping code. Precise code navigation is the most powerful version of code navigation and it works cross-repository. We now support 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, JavaScript. Auto-indexing makes precise code navigation work across all of your code, automatically, and it’s turned on by default for our Cloud customers. 
+
+Media: provide a screenshot, gif, or video to help support the copy
+
+[Code Navigation]
+
+Docs: provide a link to the updated docs	
+
 
 ##### 🏗️ High-leverage ways to improve your entire codebase
 
