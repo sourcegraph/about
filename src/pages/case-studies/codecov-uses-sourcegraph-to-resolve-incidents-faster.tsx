@@ -2,7 +2,6 @@ import { FunctionComponent } from 'react'
 
 import {
     StaffSpotlight,
-    BackButton,
     Hero,
     NewCaseStudyLayout,
     ContentSection,

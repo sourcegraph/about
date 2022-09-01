@@ -3,7 +3,6 @@ import { FunctionComponent } from 'react'
 import {
     Layout,
     StaffSpotlight,
-    BackButton,
     Hero,
     NewCaseStudyLayout,
     ContentSection,
