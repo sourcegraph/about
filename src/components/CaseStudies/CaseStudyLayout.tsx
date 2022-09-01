@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import { kebabCase } from 'lodash'
 
-import { ContentSection, RequestDemoForm } from '@components'
+import { ContentSection, CtaSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 import { CaseStudyJumbotron } from './CaseStudyJumbotron'
@@ -59,7 +59,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                             {quote && (
                                 <div className="tw-text-left">
                                     <p className="text-light">{quote.text}</p>
-                                    <footer className="blockquote-footer text-light mt-1">{quote.author}</footer>
+                                    <footer className="mt-1 blockquote-footer text-light">{quote.author}</footer>
                                 </div>
                             )}
                         </div>
@@ -71,7 +71,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                             {quote.image && (
                                 <div className="col-12 col-lg-9">
                                     <img
-                                        className="tw-rounded-full img-fluid tw-mx-auto tw-block mb-3"
+                                        className="mb-3 tw-rounded-full img-fluid tw-mx-auto tw-block"
                                         src={quote.image}
                                         alt={quote.author}
                                     />
@@ -80,7 +80,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                             <div className="col-12 col-lg-9">
                                 <blockquote className="blockquote">
                                     <p className="text-light">{quote.text}</p>
-                                    <footer className="blockquote-footer text-light mt-1">{quote.author}</footer>
+                                    <footer className="mt-1 blockquote-footer text-light">{quote.author}</footer>
                                 </blockquote>
                             </div>
                         </div>
@@ -89,7 +89,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                 {pdf && (
                     <a
                         href={pdf}
-                        className="btn btn-primary mt-3"
+                        className="mt-3 btn btn-primary"
                         rel="nofollow noreferrer"
                         target="_blank"
                         title="Download PDF"
@@ -104,14 +104,22 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
             </CaseStudyJumbotron>
 
             <ContentSection background="white">
-                <div className="container tw-pt-3xl tw-pb-sm">
-                    <h1 className={`${titleClassName}`}>{title}</h1>
-                </div>
+                <h1 className={`${titleClassName}`}>{title}</h1>
             </ContentSection>
 
             {children}
         </div>
 
-        <RequestDemoForm />
+        <CtaSection
+            centerContent={true}
+            background="black"
+            title="See Sourcegraph in action."
+            description="Learn how companies of all sizes and in all industries use Sourcegraph to solve big code problems."
+            cta1={{
+                text: 'Request a demo',
+                link: '/demo',
+                ctaStyle: 'primaryButton',
+            }}
+        />
     </>
 )
