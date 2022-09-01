@@ -29,8 +29,8 @@ We’ve improved the search UI to make the platform more intuitive with small us
 Media: provide a screenshot, gif, or video to help support the copy
 
 [Code Search]
+
 Documentation: provide a link to the documentation
-@benvenker 
 
 - Smarter code search
 - High-level aggregations of search results
