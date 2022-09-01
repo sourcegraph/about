@@ -87,6 +87,12 @@ This feature requires admins to set up executors (much like CI agents), which So
 
 - [Secure, easy, and scalable Sourcegraph Cloud dedicated(/managed?) instances for the enterprise](/blog/enterprise-cloud)
 
+Headline: [Do X] with [Z]
+Description: 2 - 4 sentences on the feature, functionality and benefits
+Media: provide a screenshot, gif, or video to help support the copy
+Tag by product: [Code Search], [Batch Changes], [Code Navigation], [Code Insights], [Admin]
+Docs: provide a link to the updated docs
+
 ##### 💖 For admins
 
 - Admin analytics
