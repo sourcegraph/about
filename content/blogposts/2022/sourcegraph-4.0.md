@@ -68,19 +68,17 @@ Media: provide a screenshot, gif, or video to help support the copy
 Docs: provide a link to the updated docs	
 ##### 🏗️ High-leverage ways to improve your entire codebase
 
-- Make changes across all of your codebases at enterprise scale with server-side Batch Changes (beta)
+### Make changes across all of your codebases at enterprise scale with server-side Batch Changes (beta)
 Batch Changes can now run across thousands of repositories with a better development experience. Previously, you had to run src-cli locally to create batch changes. That could take an impractical amount of time or be brittle for large or resource-intensive batch changes. By running Batch Changes server-side you can:
 
 - Run large-scale or resource-intensive batch changes without clogging your local machine
-- 
 - Run large batch changes quickly by distributing them across an autoscaled pool of compute instances
-- 
 - Get a better debugging experience with the streaming of logs directly into Sourcegraph.
 
 This feature requires admins to set up executors (much like CI agents), which Sourcegraph will use to offload expensive tasks. Executors can also be used to run [Code Intelligence auto-indexing](https://github.com/sourcegraph/about/blob/bf341aafde75450c295aaec064470017020cdcd8/content/blogposts/2022/sourcegraph-4.0.md#TODO-link-to-section-or-docs) as well. One or more executors are available by default on Cloud instances of Sourcegraph.
 
- [Batch Changes]
-Documentation: https://docs.sourcegraph.com/batch_changes/explanations/server_side
+[Batch Changes]
+[Docs](https://docs.sourcegraph.com/batch_changes/explanations/server_side)
 - Something about the new packaging with batch changes and code insights
 
 ##### ☁️ Enterprise Cloud dedicated(/managed?) instances
