@@ -29,7 +29,7 @@ export const StaffSpotlight: React.FunctionComponent<{
                                 alt={a.name}
                             />
                             <h3 className="mt-4">{a.name}</h3>
-                            <p className="text-muted">{a.title}</p>
+                            <p className="tw-text-gray-400">{a.title}</p>
                         </div>
                     ))}
                 </div>
@@ -50,7 +50,7 @@ export const StaffSpotlight: React.FunctionComponent<{
 
                 <div className="tw-pl-0 col-md-9 md:tw-pl-md">
                     <h3>{staff[0].name}</h3>
-                    <p className="text-muted">{staff[0].title}</p>
+                    <p className="tw-text-gray-400">{staff[0].title}</p>
 
                     <h5>About {customer}</h5>
                     <p>{about}</p>
