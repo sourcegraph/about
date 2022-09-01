@@ -97,8 +97,11 @@ Docs: provide a link to the updated docs
 
 ### Get a deep understanding of usage and measure the value of our platform with new and enhanced in-product analytics
 With 3.42, we introduced an all-new analytics including [XYZ]. Our new analytics make it easier for admins to understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. We’ve significantly improved our in-product analytics to include the projected value and dev-time-saved for all Sourcegraph features, the ability to export data, individual user usage table, and much more. 
+
 Media: provide a screenshot, gif, or video to help support the copy
+
 [Admin]
+
 Docs: provide a link to the updated docs
 
 - 1-click log export - at risk for 4.0 relase
@@ -106,32 +109,46 @@ Docs: provide a link to the updated docs
 ### Easily export traces using OpenTelemetry
 
 [OpenTelemetry (OTEL)](https://opentelemetry.io/) is an open specification for exporting observability data into a user’s preferred systems. We aim to make OpenTelmetry the default way to quickly and easily export observability data from Sourcgraph, starting with tracing in Sourcegraph 4.0. This is a breaking change since we now require customers to export tracing using the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/), which will now be deployed by default in all Sourcegraph deployment methods, replacing the Jaeger agents and collectors we used to ship by default.
+
 [Admin]
+
 Docs: provide a link to the updated docs
 
 ### Save time upgrading to Sourcegraph 4.0 with multi-version upgrades
 With 3.42, we introduced an all-new analytics including [XYZ]. Our new analytics make it easier for admins to understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. We’ve significantly improved our in-product analytics to include the projected value and dev-time-saved for all Sourcegraph features, the ability to export data, individual user usage table, and much more. 
+
 Media: provide a screenshot, gif, or video to help support the copy
+
 [Admin]
+
 Docs: provide a link to the updated docs
 
 
 ### Quickly see the status on your repository and sync permissions
 With Sourcegraph 4.0, we have introduced more than X quality of life improvements to help admins understand the current state of repository and permissions syncing. This helps to ensure users have the appropriate access to repositories so they can understand, fix, and automate the codebase, while admins can XYZ. 
+
 Media: provide a screenshot, gif, or video to help support the copy[Admin]
+
 [Admin]
+
 Docs: provide a link to the updated docs
 
 ### Gain knowledge about precise code navigation with improved analytics
 Get a better understanding of precise navigation coverage and access precise code graph data configured for all of your repositories with the improved code navigation dashboard.
+
 Media: provide a screenshot, gif, or video to help support the copy
+
 [Admin]
+
 Docs: provide a link to the updated docs
 
 ### Uncover developer time saved using Browser and IDE extensions 
 Admins can now understand the adoption and amount of time saved from using IDE and Browser extensions across your organization. Additionally, to make it faster and easier to roll out our VS Code extension organization wide, we've created an example Batch Change that adds the extension to your repository’s recommended extensions. Once added, users will be recommended the Sourcegraph extension when opening the repository if they don't have it installed already. We’ve also updated our instructions on how to automatically install our Browser extensions for users in your Google Workspace organization. 
+
 Media: provide a screenshot, gif, or video to help support the copy
+
 [Admin]
+
 Docs: provide a link to the updated docs
 
 ### New version of the reference panel
@@ -148,14 +165,6 @@ We will be deprecating our current Sourcegraph extensions framework so that we c
 
 In this release your favorite extensions (git-extras, open-in-editor and search-exports) will become part of the core application. Making them faster, more discoverable and ensuring they continue to be improved upon.
 
-### Promoting usage of Browser and IDE extensions
-
-We've added a page to our admin analytics to help you understand the adoption and amount of time saved from using IDE and Browser extensions across your organization. 
-
-To make it easier to roll out our VS Code extension organization wide, we've created an example batch change that adds the extension to your repository’s recommended extensions. Once added, users will be recommended the Sourcegraph extension when opening the repository if they don't have it installed already. 
-
-
-{/* First cut from Repo/IAM/Admin Analytics team */}
 
 ### GitHub App for Site-level codehost config
 
