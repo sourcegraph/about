@@ -22,13 +22,13 @@ export const StaffSpotlight: React.FunctionComponent<{
                     {staff.map(a => (
                         <div key={a.name} className="md:tw-text-center">
                             <img
-                                className="tw-rounded-full max-w-150 tw-inline tw-px-0 tw-pb-sm"
+                                className="tw-rounded-full max-w-150 tw-inline tw-mb-sm"
                                 width={150}
                                 height={150}
                                 src={a.image}
                                 alt={a.name}
                             />
-                            <h3 className="mt-4">{a.name}</h3>
+                            <h3>{a.name}</h3>
                             <p className="tw-text-gray-400">{a.title}</p>
                         </div>
                     ))}
@@ -38,10 +38,10 @@ export const StaffSpotlight: React.FunctionComponent<{
             // Single staff design
             <div className="tw-flex tw-flex-col md:tw-flex-row">
                 {staff[0].image && (
-                    <div className="col-md-3">
+                    <div className="tw-mb-sm md:tw-mb-0 tw-px-0">
                         <img
-                            className="tw-p-0 tw-rounded-full tw-w-full max-w-150"
-                            width={100}
+                            className="tw-rounded-full tw-w-full max-w-150"
+                            width={150}
                             src={staff[0].image}
                             alt={staff[0].name}
                         />
