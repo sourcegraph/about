@@ -95,7 +95,14 @@ Docs: provide a link to the updated docs
 
 ##### 💖 For admins
 
-- Admin analytics
+### Get a deep understanding of usage and measure the value of our platform with new and enhanced in-product analytics
+With 3.42, we introduced an all-new analytics including [XYZ]. Our new analytics make it easier for admins to understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. We’ve significantly improved our in-product analytics to include the projected value and dev-time-saved for all Sourcegraph features, the ability to export data, individual user usage table, and much more. 
+
+Media: provide a screenshot, gif, or video to help support the copy
+
+[Admin]
+
+Docs: provide a link to the updated docs
 - 1-click log export
 - OpenTelemetry
 - Easier repo config
