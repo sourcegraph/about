@@ -62,13 +62,15 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     <div className="tw-pl-xs col-11 col-lg-9">
                         <h4>Use case</h4>
                         {useCases.length > 1 ? (
-                            <ul className="mb-0 tw-pl-sm">
+                            <ul className="mb-0 ml-0 tw-pl-sm">
                                 {useCases.map(useCase => (
                                     <ListItemType key={useCase.text} item={useCase} />
                                 ))}
                             </ul>
                         ) : useCases[0].href ? (
-                            <Link href={useCases[0].href}>{useCases[0].text}</Link>
+                            <p className="tw-mb-0">
+                                <Link href={useCases[0].href}>{useCases[0].text}</Link>
+                            </p>
                         ) : (
                             <span>{useCases[0].text}</span>
                         )}
@@ -81,7 +83,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     <div className="tw-pl-xs col-11 col-lg-9">
                         <h4>Challenge</h4>
                         {challenges.length > 1 ? (
-                            <ul className="mb-0 tw-pl-sm">
+                            <ul className="mb-0 ml-0 tw-pl-sm">
                                 {challenges.map(challenge => (
                                     <ListItemType key={challenge.text} item={challenge} />
                                 ))}
@@ -102,7 +104,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     <div className="tw-pl-xs col-11 col-lg-9">
                         <h4>Solution</h4>
                         {solutions.length > 1 ? (
-                            <ul className="mb-0 tw-pl-sm">
+                            <ul className="mb-0 ml-0 tw-pl-sm">
                                 {solutions.map(solution => (
                                     <ListItemType key={solution.text} item={solution} />
                                 ))}
@@ -120,7 +122,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                 ref={box}
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ marginBottom: boxHalfHeight }}
-                className="sg-bg-gradient-venus lg:tw-absolute lg:tw-right-0 lg:tw-bottom-0 tw-max-w-[700px] lg:tw-max-w-[450px] xl:tw-max-w-[500px] tw-mx-auto tw-p-8 tw-w-[95%]"
+                className="sg-bg-gradient-venus lg:tw-absolute xl:tw-right-5xl lg:tw-right-sm lg:tw-bottom-0 tw-max-w-[700px] lg:tw-max-w-[500px] tw-mx-auto tw-p-8 tw-w-[95%]"
             >
                 <div className="ml-lg-0 tw-flex tw-flex-col lg:tw-flex-row">
                     <div className="mb-3 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">

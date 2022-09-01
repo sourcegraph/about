@@ -1,4 +1,4 @@
-export * from './AuthorBio'
+export * from './StaffSpotlight'
 export * from './CaseStudyCard'
 export * from './CaseStudyJumbotron'
 export * from './CaseStudyLayout'
