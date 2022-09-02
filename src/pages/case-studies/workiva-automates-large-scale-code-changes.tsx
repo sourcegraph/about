@@ -27,7 +27,7 @@ export const CaseStudy: FunctionComponent = () => {
                     image: '/case-studies/trent-grover-workiva.jpg',
                 }}
             >
-                <ContentSection color="white">
+                <ContentSection background="white">
                     <div className="container">
                         <p>
                             Founded in 2008, Workiva's platform enables thousands of enterprises around the world to

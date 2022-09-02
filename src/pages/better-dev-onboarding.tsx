@@ -10,8 +10,8 @@ import {
     HubSpotForm,
     IntegrationsSection,
     Layout,
-    Background,
     ResourceList,
+    Hero,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -49,22 +49,14 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         }}
         className="navbar-light"
         hero={
-            <Background variant="lightNebulousVenus2">
-                <div className="container tw-pb-sm">
-                    <div className="row">
-                        <div className="mb-6 col-lg-7 mt-7">
-                            <h1 className="mb-4">Give your team a complete onboarding experience</h1>
-                            <div className="mb-5 tw-text-xl">
-                                With self-serve onboarding, codebase exploration, and knowledge sharing, developers can
-                                find their own answers without waiting for someone to point them to the relevant code.
-                            </div>
-                            <div className="tw-pt-1 tw-flex tw-flex-col max-w-400">
-                                <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </Background>
+            <Hero
+                variant="lightNebulousVenus2"
+                title={'Give your team a complete \n onboarding experience'}
+                description={
+                    'With self-serve onboarding, codebase exploration, and knowledge sharing,\n developers can find their own answers without waiting for someone to point them to the relevant code'
+                }
+                cta={<HubSpotForm masterFormName="contactEmail" chiliPiper={true} />}
+            />
         }
     >
         <ContentSection>

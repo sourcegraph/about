@@ -178,7 +178,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             </div>
         }
     >
-        <ContentSection color="white">
+        <ContentSection background="white">
             <CustomCarousel
                 items={items}
                 animateTransition={true}
@@ -186,7 +186,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white">
+        <ContentSection background="white">
             <h2 className="tw-px-0 tw-pb-md col-12 col-lg-6">Sourcegraph helps enterprise development teams...</h2>
 
             <TwoColumnSection
@@ -220,7 +220,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white">
+        <ContentSection background="white">
             <TwoColumnSection
                 centerContent={true}
                 reverseOnMobile={true}
@@ -263,7 +263,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection color="white">
+        <ContentSection background="white">
             <TwoColumnSection
                 centerContent={true}
                 leftColumn={

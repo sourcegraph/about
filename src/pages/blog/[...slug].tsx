@@ -3,7 +3,7 @@ import path from 'path'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import { Layout, BlogHeader, BLOG_TYPE_TO_INFO } from '@components'
+import { Layout, BlogHeader, BLOG_TYPE_TO_INFO, CtaSection } from '@components'
 import { Post, POST_TYPE_TO_COMPONENT, postType, urlToPost } from '@interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '@lib'
 
@@ -47,12 +47,29 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
                             post={post}
                             content={content}
                             url={urlToPost(post)}
-                            className="tw-mx-auto post-template__post blog-post tw-max-w-[800px]"
+                            className="tw-mx-auto post-template__post blog-post tw-max-w-[846px]"
                             headerClassName="card-header bg-white border-bottom-0 tw-text-center tw-pt-md"
                         />
                     </div>
                 </div>
             </article>
+
+            <CtaSection
+                background="darkNebulous4"
+                title="Try Sourcegraph for free today"
+                description="You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your code stays local and secure)."
+                slimWidth={true}
+                cta1={{
+                    text: 'Try Sourcegraph now',
+                    link: '/get-started/self-hosted',
+                    ctaStyle: 'primaryButton',
+                }}
+                cta2={{
+                    text: 'Schedule a demo',
+                    link: '/demo',
+                    ctaStyle: 'outlineButton',
+                }}
+            />
         </Layout>
     )
 }

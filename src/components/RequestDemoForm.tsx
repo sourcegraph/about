@@ -14,7 +14,7 @@ export const RequestDemoForm: FunctionComponent<Props> = ({
     description = 'Learn how companies of all sizes and in all industries use Sourcegraph to solve big code problems.',
     demoFormURL = '/demo',
 }) => (
-    <ContentSection color="black" className="col-sm-12 col-md-9 col-lg-7">
+    <ContentSection background="black" className="col-sm-12 col-md-9 col-lg-7">
         <div className="container tw-pt-3xl tw-pb-xxs tw-text-center">
             <h3>{title}</h3>
             <p>{description}</p>

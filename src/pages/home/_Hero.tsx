@@ -26,7 +26,7 @@ const Hero: FunctionComponent = () => {
     })
 
     return (
-        <ContentSection parentClassName="tw-relative" color="white">
+        <ContentSection background="white" parentClassName="tw-relative">
             {[meshLeft, meshRight].map((image, index) => (
                 <div
                     key={image.src}
@@ -108,12 +108,12 @@ const Hero: FunctionComponent = () => {
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
                             className="tw-text-violet-400"
-                            title="1.2 Million engineers"
+                            title="1.8 million engineers"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.hero}
                             data-button-type="cta"
                         >
-                            1.2M engineers
+                            1.8M engineers
                         </a>
                     </Link>{' '}
                     use Sourcegraph to build software you rely on

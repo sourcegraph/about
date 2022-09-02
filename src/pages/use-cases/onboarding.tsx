@@ -6,16 +6,15 @@ import UploadIcon from 'mdi-react/UploadIcon'
 import Link from 'next/link'
 
 import {
-    BackButton,
     Blockquote,
-    CustomCarousel,
     ContentSection,
+    CustomCarousel,
     CustomerLogos,
+    Hero,
     Layout,
+    ResourceList,
     ThreeUpText,
     TwoColumnSection,
-    Background,
-    ResourceList,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -200,50 +199,48 @@ const UseCasePage: FunctionComponent = () => (
         }}
         className="use-cases-page navbar-light"
         hero={
-            <Background variant="lightNebulousVenus2">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-7 my-7">
-                            <BackButton href="/use-cases" text="USE CASES" />
-                            <h1 className="mb-4">Accelerate developer onboarding</h1>
-                            <div className="mb-5">
-                                Decrease time to first commit for new developers, help existing engineers master your
-                                codebase, and fast-track full codebase understanding.
-                            </div>
-                            <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
-                                <div className="mb-3 mb-md-0">
-                                    <Link href="/demo" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            className="btn btn-primary w-100 max-w-350"
-                                            title="Request a Demo."
-                                            data-button-style={buttonStyle.primary}
-                                            data-button-location={buttonLocation.hero}
-                                            data-button-type="cta"
-                                        >
-                                            Request a demo
-                                        </a>
-                                    </Link>
-                                </div>
-                                <div className="ml-md-3">
-                                    <Link href="/get-started/self-hosted" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            className="btn btn-outline-primary w-100 max-w-350"
-                                            title="Try Sourcegraph."
-                                            data-button-style={buttonStyle.outline}
-                                            data-button-location={buttonLocation.hero}
-                                            data-button-type="cta"
-                                        >
-                                            Try Sourcegraph now
-                                        </a>
-                                    </Link>
-                                </div>
-                            </div>
+            <Hero
+                variant="lightNebulousVenus2"
+                backButton={{
+                    text: 'Use Cases',
+                    link: '/use-cases',
+                }}
+                title="Accelerate developer onboarding"
+                subtitle="Decrease time to first commit for new developers, help existing engineers master your
+                codebase, and fast-track full codebase understanding."
+                cta={
+                    <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
+                        <div className="mb-3 mb-md-0">
+                            <Link href="/demo" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    className="btn btn-primary w-100 max-w-350"
+                                    title="Request a Demo."
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
+                                    Request a demo
+                                </a>
+                            </Link>
+                        </div>
+                        <div className="ml-md-3">
+                            <Link href="/get-started/self-hosted" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    className="btn btn-outline-primary w-100 max-w-350"
+                                    title="Try Sourcegraph."
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
+                                    Try Sourcegraph now
+                                </a>
+                            </Link>
                         </div>
                     </div>
-                </div>
-            </Background>
+                }
+            />
         }
     >
         <ContentSection>

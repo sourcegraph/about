@@ -164,7 +164,7 @@ const CareersPage: FunctionComponent = () => {
 
     return (
         <Layout className="jobs-page" heroAndHeaderClassName="tw-bg-white">
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="row">
                     <div className="col-lg-10">
                         <h1 className="tw-mb-xs">Let's build the future together.</h1>
@@ -202,7 +202,7 @@ const CareersPage: FunctionComponent = () => {
                 />
             </div>
 
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="flex-wrap tw-flex">
                     <div className="tw-m-auto">
                         <h2 className="tw-mx-auto tw-text-center tw-max-w-2xl tw-mb-6">
@@ -359,7 +359,7 @@ const CareersPage: FunctionComponent = () => {
                 <QuoteCarousel items={glassdoorReviewItems} />
             </ContentSection>
 
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="tw-flex tw-flex-col tw-items-center tw-text-center">
                     <div>
                         <div className="col-lg-12">

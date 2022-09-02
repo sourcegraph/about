@@ -22,7 +22,7 @@ export const CaseStudy: FunctionComponent = () => (
             }}
             pdf="https://sourcegraphstatic.com/Thorn%20Sourcegraph%20case%20study%20v2.pdf"
         >
-            <ContentSection color="white">
+            <ContentSection background="white">
                 <div className="container">
                     <h2>Thorn defends children</h2>
 

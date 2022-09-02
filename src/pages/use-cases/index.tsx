@@ -4,13 +4,13 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
 import {
-    Layout,
+    Background,
     Blockquote,
     ContentSection,
-    TrySourcegraph,
+    CtaSection,
     CustomerLogos,
+    Layout,
     TwoColumnSection,
-    Background,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -459,9 +459,22 @@ const UseCases: React.FunctionComponent = () => (
                 />
             </ContentSection>
 
-            <ContentSection parentClassName="tw-border-t tw-border-t-gray-200">
-                <TrySourcegraph />
-            </ContentSection>
+            <div className="tw-border-t tw-border-t-gray-200">
+                <CtaSection
+                    title="Try Sourcegraph for free today"
+                    description="You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your code stays local and secure)."
+                    cta1={{
+                        text: 'Try Sourcegraph now',
+                        link: '/get-started/self-hosted',
+                        ctaStyle: 'primaryButton',
+                    }}
+                    cta2={{
+                        text: 'Schedule a demo',
+                        link: '/demo',
+                        ctaStyle: 'outlineButton',
+                    }}
+                />
+            </div>
         </div>
     </Layout>
 )

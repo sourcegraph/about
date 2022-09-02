@@ -1,29 +1,31 @@
 // Common
 export { Alert } from './Alert'
-export { Background } from './Background'
 export { BackButton } from './BackButton'
+export { Background } from './Background'
+export { Badge } from './Badge'
 export { Blockquote } from './Blockquote'
-export { ResourceList } from './ResourceList'
 export { BoardSection } from './BoardSection'
 export { ContentSection } from './ContentSection'
-export { CustomerLogos } from './CustomerLogos'
 export { CoreFeatures } from './CoreFeatures'
-export { Figure } from './Figure'
+export { CtaSection } from './CtaSection'
+export { CustomerLogos } from './CustomerLogos'
 export { DemioForm } from './DemioForm'
+export { Figure } from './Figure'
+export { Hero } from './Hero'
 export { HubSpotForm } from './HubSpotForm'
 export { Install } from './Install'
 export { IntegrationsSection } from './IntegrationsSection'
 export { Jumbotron } from './Jumbotron'
 export { LeadershipSection } from './LeadershipSection'
-export { Hero } from './Hero'
+export { Modal } from './modal'
+export { Portal } from './Portal'
 export { RequestDemoForm } from './RequestDemoForm'
-export { RequestDemoTrySourcegraph } from './RequestDemoTrySourcegraph'
+export { ResourceList } from './ResourceList'
 export { SelfHostedSection } from './SelfHostedSection'
 export { TableWrapper } from './TableWrapper'
 export { Tabs } from './Tabs'
 export { TemplateCodeBlock, type Template } from './TemplateCodeBlock'
 export { ThreeUpText } from './ThreeUpText'
-export { TrySourcegraph } from './TrySourcegraph'
 export { TwoColumnSection } from './TwoColumnSection'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
@@ -47,7 +49,7 @@ export { CustomCarousel, TabCarousel, QuoteCarousel } from './Carousels'
 
 // Case Studies
 export {
-    AuthorBio,
+    StaffSpotlight,
     CaseStudyJumbotron,
     CaseStudyLayout,
     CaseStudyCard,

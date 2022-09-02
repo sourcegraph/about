@@ -47,7 +47,7 @@ export const Community: FunctionComponent = () => (
             </div>
         }
     >
-        <ContentSection color="white" className="tw-text-center">
+        <ContentSection background="white" className="tw-text-center">
             <h2 className="mb-3">Get up to speed</h2>
             <div className="row tw-justify-center">
                 <p className="col-md-8">
@@ -133,7 +133,7 @@ export const Community: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection color="white">
+        <ContentSection background="white">
             <h2 className="mb-5 tw-text-center">What's next?</h2>
             <Tabs
                 tabs={[
