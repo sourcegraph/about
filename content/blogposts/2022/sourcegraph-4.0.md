@@ -58,8 +58,9 @@ Media: provide a screenshot, gif, or video to help support the copy
 
 Docs: provide a link to the updated docs	
 
-### Access code context while staying within the developer workflow 
-Top used extensions, including code navigation, git-extras, open-in-editor, and search-exports, are now part of the core functionality. These enhancements provide developers code context while staying in the flow within their preferred tools. Additionally, the current Sourcegraph extensions framework will be deprecated so that we can make way for a new model that allows a deeper integration throughout our entire code intelligence platform. Please note, these changes do not impact our IDE extensions. 
+### Your favorite extensions now available by default 
+The most used extensions including code navigation, git-extras, open-in-editor and, search-exports are now default functionality. These enhancements help streamline your workflow and easily switch between tools when needed. Additionally, the current Sourcegraph extensions framework will be deprecated as we work towards a new model of integrations that provides functionality throughout our entire code intelligence platform. Please note, these changes **do not** impact our IDE extensions.
+
 
 Media: provide a screenshot, gif, or video to help support the copy
 
