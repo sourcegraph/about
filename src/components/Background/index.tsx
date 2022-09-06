@@ -179,10 +179,9 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
     const styleClasses = classNames(className, {
         [utilityBackground]: isUtilityBackground,
         'tw-text-white':
-            !isUtilityBackground &&
             (variant.includes('dark') || variant.includes('starship') || variant.includes('black')),
         'tw-text-black':
-            (!isUtilityBackground && !variant.includes('dark') && !variant.includes('starship')) ||
+            (!variant.includes('dark') && !variant.includes('starship') && !variant.includes('black')) ||
             variant === 'transparent',
     })
 
