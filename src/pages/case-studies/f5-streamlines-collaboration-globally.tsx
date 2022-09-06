@@ -22,7 +22,7 @@ export const CaseStudy: FunctionComponent = () => (
             }}
         >
             <ContentSection background="white" className="col-md-6 tw-pb-md">
-                <div className="container">
+                <div className="container tw-max-w-4xl">
                     <p>
                         F5 focuses on the development, delivery, security, performance, and availability of web
                         applications across any multi-cloud environment. The team behind its next-gen software

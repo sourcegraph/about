@@ -28,7 +28,7 @@ export const CaseStudy: FunctionComponent = () => {
                 }}
             >
                 <ContentSection background="white">
-                    <div className="container">
+                    <div className="container tw-max-w-4xl">
                         <p>
                             Indeed is a multinational job search website with over 11,000 employees and approximately
                             2,000 engineers. Indeed's employment search features are available in 28 languages and 60

@@ -106,7 +106,7 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection background="white">
-                <div className="tw-max-w-2xl tw-mx-auto tw-pt-5xl">
+                <div className="tw-max-w-4xl tw-mx-auto tw-pt-5xl">
                     <p className="tw-pt-3xl sm:tw-mt-0 tw-mt-5xl">
                         In 2021, security engineers Mitchell Borrego and Jeff Holland joined Codecov with the goal of
                         creating a cutting-edge security program. Their responsibilities include security tooling,
@@ -236,7 +236,7 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection background="white">
-                <div className="tw-max-w-2xl tw-mx-auto">
+                <div className="tw-max-w-4xl tw-mx-auto">
                     <h3 className="mb-4 max-w-650">Sourcegraph Cloud was the right fit for a growing team</h3>
                     <p>
                         Codecov wanted something they could get up and running quickly, so they turned to Sourcegraph

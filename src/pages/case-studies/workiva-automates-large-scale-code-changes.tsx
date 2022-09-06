@@ -28,7 +28,7 @@ export const CaseStudy: FunctionComponent = () => {
                 }}
             >
                 <ContentSection background="white">
-                    <div className="container">
+                    <div className="container tw-max-w-4xl">
                         <p>
                             Founded in 2008, Workiva's platform enables thousands of enterprises around the world to
                             manage and report business data. Over 3,000 businesses use Workiva to bring together

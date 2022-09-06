@@ -23,7 +23,7 @@ export const CaseStudy: FunctionComponent = () => (
             }}
         >
             <ContentSection background="white">
-                <div className="container">
+                <div className="container tw-max-w-4xl">
                     <p>
                         Founded in 2015, Convoy has quickly grown to over 500 employees. However, their accelerated team
                         growth comes with challenges: new hires have to quickly learn how to contribute to a dynamic

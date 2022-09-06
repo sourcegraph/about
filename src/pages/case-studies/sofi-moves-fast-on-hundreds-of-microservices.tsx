@@ -26,7 +26,7 @@ export const CaseStudy: FunctionComponent = () => (
             pdf="https://sourcegraphstatic.com/sofi_case_study.pdf"
         >
             <ContentSection background="white">
-                <div className="container">
+                <div className="container tw-max-w-4xl">
                     <p>
                         SoFi (Social Finance Inc.) helps its over 900,000 members achieve financial independence to
                         realize their ambitions with products for borrowing, saving, spending, investing, and protecting

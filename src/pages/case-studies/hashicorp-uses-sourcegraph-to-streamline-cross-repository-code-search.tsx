@@ -106,7 +106,7 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection background="white">
-                <div className="tw-max-w-2xl tw-mx-auto tw-pt-5xl">
+                <div className="tw-max-w-4xl tw-mx-auto tw-pt-5xl">
                     <p className="tw-pt-3xl sm:tw-pt-5xl sm:tw-mt-0 tw-mt-5xl">
                         Every day, millions of developers and DevOps engineers rely on HashiCorp to efficiently
                         provision, manage, and secure their cloud infrastructure. HashiCorp is a company that has
@@ -247,7 +247,7 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection background="white">
-                <div className="tw-max-w-2xl tw-mx-auto">
+                <div className="tw-max-w-4xl tw-mx-auto">
                     <StaffSpotlight
                         customer="HashiCorp"
                         about="HashiCorp (NASDAQ: HCP) is a provider of open-core software that developers use to manage cloud infrastructure. Based in San Francisco, Calif., the company offers solutions including Terraform, an infrastructure-as-code tool for managing cloud services, and Vault, a tool for securing, storing, and controlling access to tokens, passwords, and API keys. HashiCorp’s tools are downloaded tens of millions of times each year and are broadly adopted by the Global 2000."

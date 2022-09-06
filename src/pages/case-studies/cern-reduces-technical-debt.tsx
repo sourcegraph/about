@@ -22,7 +22,7 @@ export const CaseStudy: FunctionComponent = () => (
             }}
         >
             <ContentSection background="white" className="col-md-6 tw-pb-md">
-                <div className="container">
+                <div className="container tw-max-w-4xl">
                     <p>
                         Physicists at CERN use some of the world's most powerful particle accelerators to discover what
                         the universe is made of and how it works. Over the last 18 years, the organization's Java

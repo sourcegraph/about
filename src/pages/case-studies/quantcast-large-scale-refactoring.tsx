@@ -23,7 +23,7 @@ export const CaseStudy: FunctionComponent = () => (
             pdf="https://sourcegraphstatic.com/Quantcast-Sourcegraph-case-study.pdf"
         >
             <ContentSection background="white">
-                <div className="container">
+                <div className="container tw-max-w-4xl">
                     <p>
                         Quantcast uses machine-learning-driven, real-time audience insights to radically simplify
                         advertising for brands and customers such as BuzzFeed, Dell, and Fiat Chrysler. Quantcast is the
