@@ -103,8 +103,8 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                 )}
             </CaseStudyJumbotron>
 
-            <ContentSection background="white">
-                <h1 className={`tw-max-w-4xl tw-mx-auto ${titleClassName}`}>{title}</h1>
+            <ContentSection background="white" slimWidth={true}>
+                <h1 className={titleClassName}>{title}</h1>
             </ContentSection>
 
             {children}
