@@ -58,15 +58,16 @@ Media: provide a screenshot, gif, or video to help support the copy
 
 Docs: provide a link to the updated docs	
 
-### Your favorite extensions now available by default 
+### Your favorite extensions are now available by default 
 The most used extensions including code navigation, git-extras, open-in-editor and, search-exports are now default functionality. These enhancements help streamline your workflow and easily switch between tools when needed. Additionally, the current Sourcegraph extensions framework will be deprecated as we work towards a new model of integrations that provides functionality throughout our entire code intelligence platform. Please note, these changes **do not** impact our IDE extensions.
 
 
-Media: provide a screenshot, gif, or video to help support the copy
+![Extensions within the core workflow](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Extensions_Default_Release_Post.png "Extensions within the core workflow")
 
-[Integrations]
+[Extensions]
 
 Docs: provide a link to the updated docs	
+
 ##### 🏗️ High-leverage ways to improve your entire codebase
 
 ### Make changes across all of your codebases at enterprise scale with server-side Batch Changes (beta)
@@ -105,8 +106,6 @@ Media: provide a screenshot, gif, or video to help support the copy
 
 Docs: provide a link to the updated docs
 
-- 1-click log export - at risk for 4.0 relase
-
 ### Easily export traces using OpenTelemetry
 
 [OpenTelemetry (OTEL)](https://opentelemetry.io/) is an open specification for exporting observability data into a user’s preferred systems. We aim to make OpenTelmetry the default way to quickly and easily export observability data from Sourcgraph, starting with tracing in Sourcegraph 4.0. This is a breaking change since we now require customers to export tracing using the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/), which will now be deployed by default in all Sourcegraph deployment methods, replacing the Jaeger agents and collectors we used to ship by default.
@@ -126,7 +125,7 @@ Docs: provide a link to the updated docs
 
 
 ### Quickly see the status on your repository and sync permissions
-With Sourcegraph 4.0, we have introduced more than X quality of life improvements to help admins understand the current state of repository and permissions syncing. This helps to ensure users have the appropriate access to repositories so they can understand, fix, and automate the codebase, while admins can XYZ. 
+With Sourcegraph 4.0, we have introduced more than X quality of life improvements to help admins understand the current state of repository and permissions syncing. This helps to ensure users have the appropriate to repositories so they can understand, fix, and automate the codebase, while admins can XYZ. 
 
 Media: provide a screenshot, gif, or video to help support the copy[Admin]
 
@@ -160,18 +159,10 @@ Media: provide a screenshot, gif, or video to help support the copy
 [Admin]
 Docs: provide a link to the updated docs
 
-
+-1-click log export - at risk for 4.0 relase
 
 We will be deprecating our current Sourcegraph extensions framework so that we can make way for a new model that allows a deeper integration throughout our entire code intelligence platform.
 
 In this release your favorite extensions (git-extras, open-in-editor and search-exports) will become part of the core application. Making them faster, more discoverable and ensuring they continue to be improved upon.
 
-
-### GitHub App for Site-level codehost config
-
-GitHub Apps are the recommended way to connect with GitHub leveraging more security and flexibility than a basic OAuth connection. Sourcegraph admins can now leverage this new connection type to sync repositories and permissions from GitHub instances. 
-
-
-## Install Docker Compose on AWS with 1 Click
-Customers now enjoy a simplified installation process via Sourcegraph's 3 new Docker Compose Amazon Machine Images (AMI). With one click, Sourcegraph's intelligent code search installs on their AWS infrastructure. The 3 sizes of AMIs (Small, Medium, and Large) will be able to cater to instances that support up to thousands of concurrent users. Customers can expect other cloud images to be supported in the future.
 
