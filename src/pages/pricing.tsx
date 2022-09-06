@@ -1,39 +1,66 @@
 import { FunctionComponent } from 'react'
 
+import Link from 'next/link'
+
 import {
     ContentSection,
     CtaSection,
     CustomerLogos,
-    Features,
+    Feature,
     Layout,
     PricingPlan,
 } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 /** Business feature set. */
-const BIZ_FEATURES: Features = {
-    codeSearch: true,
-    codeNavigation: true,
-    batchChanges: false,
-    batchChangesTrial: true,
-    codeInsights: false,
-    codeInsightsTrial: true,
-    codeHostIntegration: true,
-    api: false,
-    selfHosted: true,
-    userAndAdminRoles: false,
-    singleSignOn: false,
-    multipleCodeHosts: false,
-    repositoryPermissions: false,
-    optimizedRepositoryUpdates: false,
-    privateExtensions: false,
-    deploymentMetricsAndMonitoring: false,
-    backupRestore: false,
-    customBranding: false,
-    onlineTraining: false,
-    customContractLegalBillingTerms: false,
-    unlimitedCode: false,
-    managedInstance: false,
-}
+const BIZ_FEATURES: Feature[] = [
+    {
+        title: 'Code intelligence platform',
+        subFeatures: [
+            {
+                title: 'Code Search',
+                tooltip: 'test',
+            },
+            {
+                title: 'Code Navigation',
+                tooltip: '',
+            },
+            {
+                title: 'Batch Changes',
+                tooltip: '',
+            },
+            {
+                title: 'Code Insights',
+                tooltip: '',
+            },
+            {
+                title: 'Notebooks',
+                tooltip: '',
+            },
+            {
+                title: 'Code monitoring',
+                tooltip: '',
+            },
+            {
+                title: 'Comprehensive API',
+                tooltip: '',
+            },
+        ]
+    },
+    {
+        title: 'Code host integrations',
+        subFeatures: [
+            {
+                title: 'Unlimited standard Cloud hosts',
+                tooltip: '',
+            },
+            {
+                title: 'Unlimited repository connections',
+                tooltip: '',
+            },
+        ]
+    }
+]
 
 const ENTERPRISE_FEATURES: Features = {
     codeSearch: false,
@@ -74,7 +101,7 @@ const PricingPage: FunctionComponent = () => (
             </div>
         }
     >
-        {/* TODO: Redesign, box-shadow, tooltips */}
+        {/* TODO: Buttons, items, tooltips */}
         <ContentSection className="tw-flex tw-justify-center">
             <div className="tw-mr-sm tw-col-lg-6 tw-shadow-lg tw-border-t-16 tw-rounded tw-border-vermillion-300">
                 <PricingPlan
@@ -83,9 +110,20 @@ const PricingPage: FunctionComponent = () => (
                     description="Full platform access for teams and orgs, all on a dedicated Cloud instance."
                     features={BIZ_FEATURES}
                     isFree={true}
-                    buttonLabel="Get started"
-                    buttonClassName="btn-outline-primary"
-                    buttonHref="https://docs.sourcegraph.com#quickstart-guide"
+                    buttons={
+                        <Link href="/get-started/self-hosted" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                className="btn btn-primary"
+                                title="Get started"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.trySourcegraph}
+                                data-button-type="cta"
+                            >
+                                Get started
+                            </a>
+                        </Link>
+                    }
                 />
             </div>
 
@@ -94,11 +132,36 @@ const PricingPage: FunctionComponent = () => (
                     name="Enterprise"
                     price="Custom pricing"
                     description="Enterprise-grade security, scale, and support with custom deployment options."
-                    features={ENTERPRISE_FEATURES}
+                    features={BIZ_FEATURES}
                     isFree={false}
-                    buttonLabel="Contact us"
-                    buttonClassName="btn-outline-primary"
-                    buttonHref="/contact/request-info/?form_submission_source=pricing-enterprise"
+                    buttons={
+                        <div>
+                            <Link href="/get-started/self-hosted" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    className="btn btn-primary tw-mr-xs"
+                                    title="Get started"
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.trySourcegraph}
+                                    data-button-type="cta"
+                                >
+                                    Get started
+                                </a>
+                            </Link>
+                            <Link href="/demo" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    className="btn btn-outline-primary"
+                                    title="Request a demo"
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.bodyDemo}
+                                    data-button-type="cta"
+                                >
+                                    Request a demo
+                                </a>
+                            </Link>
+                        </div>
+                    }
                 />
             </div>
         </ContentSection>

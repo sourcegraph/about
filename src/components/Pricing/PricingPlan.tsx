@@ -1,8 +1,6 @@
-import { FunctionComponent } from 'react'
+import { ReactFragment, FunctionComponent } from 'react'
 
-import { buttonStyle, buttonLocation } from '@data'
-
-import { Features, FeatureInfo } from './interfaces'
+import { Feature, FeatureInfo } from './interfaces'
 import { PricingPlanFeature } from './PricingPlanFeature'
 
 const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
@@ -133,18 +131,12 @@ const FEATURE_ORDER: (keyof Features)[] = [
 
 interface Props {
     className?: string
-
     name: string
     description: string
     price: string
-    features: Features
-
+    features: Feature[]
+    buttons: ReactFragment
     isFree: boolean
-
-    buttonLabel: string
-    buttonClassName: string
-    buttonOnClick?: () => void
-    buttonHref: string
 }
 
 /**
@@ -152,57 +144,43 @@ interface Props {
  */
 export const PricingPlan: FunctionComponent<Props> = ({
     className = '',
-
     name,
     price,
     description,
     features,
-
+    buttons,
     isFree,
+}) => (
+    <div className={`h-100 card tw-p-md ${className}`}>
+        <h2 className="tw-mb-sm tw-font-semibold">{name}</h2>
+        <h3 className="tw-font-normal tw-max-w-sm">{description}</h3>
+        <h4 className="tw-my-sm">{price}</h4>
+        {buttons}
 
-    buttonLabel,
-    buttonClassName,
-    buttonOnClick,
-    buttonHref,
-}) => {
-    const button = (
-        <a
-            className={`btn ${buttonClassName} w-50 min-w-250`}
-            href={buttonHref}
-            onClick={buttonOnClick}
-            title={buttonLabel}
-            data-button-style={buttonStyle.outline}
-            data-button-location={buttonLocation.body}
-            data-button-type="cta"
-        >
-            {buttonLabel}
-        </a>
-    )
-
-    return (
-        <div className={`h-100 card tw-p-md ${className}`}>
-            <h2 className="tw-mb-sm tw-font-semibold">{name}</h2>
-            <h3 className="tw-font-normal tw-max-w-sm">{description}</h3>
-            <h4 className="tw-my-sm">{price}</h4>
-            {button}
-
-            <ol className="py-3 ml-0">
-                {!isFree ? (
-                    <li className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-item">
-                        Everything in the Free tier, plus:
-                    </li>
-                ) : null}
-                {FEATURE_ORDER.map(feature => (
-                    <div key={FEATURE_INFO[feature].label}>
-                        <PricingPlanFeature
-                            info={FEATURE_INFO[feature]}
-                            value={features[feature]}
-                            tag="li"
-                            className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-item"
-                        />
-                    </div>
-                ))}
-            </ol>
+        <div className="py-3 ml-0">
+            {!isFree ? (
+                <li className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-item">
+                    Everything in the Free tier, plus:
+                </li>
+            ) : null}
+            {features.map(feature => (
+                <div key={feature.title}>
+                    <PricingPlanFeature
+                        feature={feature}
+                        className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-item"
+                    />
+                </div>
+            ))}
+            {/* {FEATURE_ORDER.map(feature => (
+                <div key={FEATURE_INFO[feature].label}>
+                    <PricingPlanFeature
+                        info={FEATURE_INFO[feature]}
+                        value={features[feature]}
+                        tag="li"
+                        className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-item"
+                    />
+                </div>
+            ))} */}
         </div>
-    )
-}
+    </div>
+)
