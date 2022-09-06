@@ -62,30 +62,42 @@ const BIZ_FEATURES: Feature[] = [
     }
 ]
 
-const ENTERPRISE_FEATURES: Features = {
-    codeSearch: false,
-    codeNavigation: false,
-    codeHostIntegration: false,
-    api: true,
-    selfHosted: false,
-    batchChanges: true,
-    batchChangesTrial: false,
-    codeInsights: true,
-    codeInsightsTrial: false,
-    singleSignOn: true,
-    userAndAdminRoles: true,
-    multipleCodeHosts: true,
-    repositoryPermissions: true,
-    optimizedRepositoryUpdates: true,
-    privateExtensions: true,
-    deploymentMetricsAndMonitoring: true,
-    backupRestore: true,
-    customBranding: false,
-    onlineTraining: true,
-    customContractLegalBillingTerms: false,
-    unlimitedCode: true,
-    managedInstance: true,
-}
+const ENTERPRISE_FEATURES: Feature[] = [
+    {
+        title: 'Flexible deployment',
+        subFeatures: [
+            {
+                title: 'Secure and dedicated Cloud deployment',
+                tooltip: 'test',
+            },
+            {
+                title: 'Self-hosted deployment',
+                tooltip: '',
+            },
+        ]
+    },
+    {
+        title: 'Code host integrations',
+        subFeatures: [
+            {
+                title: 'Unlimited code hosts',
+                tooltip: '',
+            },
+            {
+                title: 'Connect to self-hosted code hosts',
+                tooltip: '',
+            },
+            {
+                title: 'Connect to enterprise-only code hosts',
+                tooltip: '',
+            },
+            {
+                title: 'Connect to private code hosts (self-hosted only)',
+                tooltip: '',
+            },
+        ]
+    }
+]
 
 const PricingPage: FunctionComponent = () => (
     <Layout
@@ -101,20 +113,20 @@ const PricingPage: FunctionComponent = () => (
             </div>
         }
     >
-        {/* TODO: Buttons, items, tooltips */}
-        <ContentSection className="tw-flex tw-justify-center">
-            <div className="tw-mr-sm tw-col-lg-6 tw-shadow-lg tw-border-t-16 tw-rounded tw-border-vermillion-300">
+        {/* TODO: Items, buttons, tooltips */}
+        <ContentSection className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-sm">
+            <div className="tw-mb-sm lg:tw-mb-0">
                 <PricingPlan
                     name="Business"
                     price="$79 per active user/month"
                     description="Full platform access for teams and orgs, all on a dedicated Cloud instance."
                     features={BIZ_FEATURES}
-                    isFree={true}
+                    isEnterprise={false}
                     buttons={
                         <Link href="/get-started/self-hosted" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="btn btn-primary"
+                                className="btn btn-primary tw-w-full md:tw-w-auto"
                                 title="Get started"
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.trySourcegraph}
@@ -127,19 +139,19 @@ const PricingPage: FunctionComponent = () => (
                 />
             </div>
 
-            <div className="tw-col-lg-6 tw-shadow-lg tw-border-t-16 tw-rounded tw-border-violet-400">
+            <div className="">
                 <PricingPlan
                     name="Enterprise"
                     price="Custom pricing"
                     description="Enterprise-grade security, scale, and support with custom deployment options."
-                    features={BIZ_FEATURES}
-                    isFree={false}
+                    features={ENTERPRISE_FEATURES}
+                    isEnterprise={true}
                     buttons={
                         <div>
                             <Link href="/get-started/self-hosted" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="btn btn-primary tw-mr-xs"
+                                    className="btn btn-primary tw-mr-xs tw-mb-xs md:tw-mb-0 tw-w-full md:tw-w-auto"
                                     title="Get started"
                                     data-button-style={buttonStyle.primary}
                                     data-button-location={buttonLocation.trySourcegraph}
@@ -151,7 +163,7 @@ const PricingPage: FunctionComponent = () => (
                             <Link href="/demo" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="btn btn-outline-primary"
+                                    className="btn btn-outline-primary tw-w-full md:tw-w-auto"
                                     title="Request a demo"
                                     data-button-style={buttonStyle.outline}
                                     data-button-location={buttonLocation.bodyDemo}
