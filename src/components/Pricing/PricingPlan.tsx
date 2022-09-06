@@ -1,4 +1,4 @@
-import { ReactFragment, FunctionComponent } from 'react'
+import { FunctionComponent } from 'react'
 
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -135,8 +135,8 @@ interface Props {
     className?: string
 
     name: string
-    planProperties: ReactFragment
-    price: ReactFragment
+    description: string
+    price: string
     features: Features
 
     isFree: boolean
@@ -155,7 +155,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
 
     name,
     price,
-    planProperties,
+    description,
     features,
 
     isFree,
@@ -180,14 +180,13 @@ export const PricingPlan: FunctionComponent<Props> = ({
     )
 
     return (
-        <div className={`h-100 card ${className}`}>
-            <h2 className="mt-3 mb-1 tw-text-center tw-font-semibold">{name}</h2>
-            <div className="py-3 tw-text-center tw-flex tw-flex-col tw-items-center">
-                {button}
-                <div className="tw-pb-xxs mt-4 mb-2 tw-text-xl text-muted">{price}</div>
-                {planProperties}
-            </div>
-            <ol className="px-6 py-3 ml-0 list-group list-group-flush">
+        <div className={`h-100 card tw-p-md ${className}`}>
+            <h2 className="tw-mb-sm tw-font-semibold">{name}</h2>
+            <h3 className="tw-font-normal tw-max-w-sm">{description}</h3>
+            <h4 className="tw-my-sm">{price}</h4>
+            {button}
+
+            <ol className="py-3 ml-0">
                 {!isFree ? (
                     <li className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-item">
                         Everything in the Free tier, plus:

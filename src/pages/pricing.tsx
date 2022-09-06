@@ -7,11 +7,10 @@ import {
     Features,
     Layout,
     PricingPlan,
-    PricingPlanProperty,
 } from '@components'
 
-/** The Starter feature set. */
-const STARTER_FEATURES: Features = {
+/** Business feature set. */
+const BIZ_FEATURES: Features = {
     codeSearch: true,
     codeNavigation: true,
     batchChanges: false,
@@ -76,41 +75,25 @@ const PricingPage: FunctionComponent = () => (
         }
     >
         {/* TODO: Redesign, box-shadow, tooltips */}
-        <ContentSection className="row">
-            <div className="mb-4 tw-mx-auto col-lg-6">
+        <ContentSection className="tw-flex tw-justify-center">
+            <div className="tw-mr-sm tw-col-lg-6 tw-shadow-lg tw-border-t-16 tw-rounded tw-border-vermillion-300">
                 <PricingPlan
                     name="Business"
-                    price={<div className="tw-text-center">$79 per active user/month</div>}
-                    planProperties={
-                        <>
-                            <PricingPlanProperty className="mt-3">
-                                Community support on our public issue tracker
-                                <br />
-                                &nbsp;
-                            </PricingPlanProperty>
-                        </>
-                    }
-                    features={STARTER_FEATURES}
+                    price="$79 per active user/month"
+                    description="Full platform access for teams and orgs, all on a dedicated Cloud instance."
+                    features={BIZ_FEATURES}
                     isFree={true}
-                    buttonLabel="Deploy"
+                    buttonLabel="Get started"
                     buttonClassName="btn-outline-primary"
                     buttonHref="https://docs.sourcegraph.com#quickstart-guide"
                 />
             </div>
 
-            <div className="mb-4 tw-mx-auto col-lg-6">
+            <div className="tw-col-lg-6 tw-shadow-lg tw-border-t-16 tw-rounded tw-border-violet-400">
                 <PricingPlan
                     name="Enterprise"
-                    price={<div className="tw-text-center">Custom pricing</div>}
-                    planProperties={
-                        <>
-                            <PricingPlanProperty className="mt-3">
-                                SLA with dedicated customer engineer
-                                <br />
-                                and private Slack channel
-                            </PricingPlanProperty>
-                        </>
-                    }
+                    price="Custom pricing"
+                    description="Enterprise-grade security, scale, and support with custom deployment options."
                     features={ENTERPRISE_FEATURES}
                     isFree={false}
                     buttonLabel="Contact us"
@@ -120,10 +103,8 @@ const PricingPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection>
-            <h2 className="tw-text-center tw-mx-auto tw-mb-5 tw-max-w-2xl">The code intelligence platform for modern dev teams</h2>
-            <CustomerLogos />
-        </ContentSection>
+        <h2 className="tw-text-center tw-mx-auto tw-mb-5 tw-max-w-2xl">The code intelligence platform for modern dev teams</h2>
+        <CustomerLogos />
 
         {/* TODO: Feature table */}
 

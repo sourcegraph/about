@@ -152,6 +152,7 @@ module.exports = {
 
       borderWidth: {
         3: '3px',
+        16: '16px',
       },
 
       keyframes: {
