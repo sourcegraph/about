@@ -52,42 +52,35 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
 
     // Content Type background mapping
     const backgrounds: BackgroundVariant = {
-        'virtual event': 'marsCode',
-        video: 'marsCode',
-        'blog post': 'darkNebulous1Sm',
-        guide: 'auroraGrid',
-        'customer story': 'venusCode',
+        'virtual event': 'saturn',
+        video: 'mars',
+        'blog post': 'infrared',
+        guide: 'aurora',
+        'customer story': 'venus',
     }
 
     return (
-        <div className="tw-bg-white tw-shadow-md tw-rounded-lg md:tw-min-h-[568px]">
-            {/* Background */}
-            <div className="tw-relative tw-h-[172px] md:tw-h-1/3 tw-overflow-hidden tw-rounded-t-lg">
-                {resource.thumbnail ? (
-                    <div
-                        className="tw-bg-cover tw-h-full tw-bg-center"
-                        // eslint-disable-next-line react/forbid-dom-props
-                        style={{ backgroundImage: `url('${resource.thumbnail}')` }}
-                    />
-                ) : (
-                    <Background
-                        variant={backgrounds[resource.contentType] || 'darkNebulous2Sm'}
-                        className="tw-h-full"
-                    />
-                )}
-                <div className="tw-absolute tw-top-xs tw-left-xs tw-px-xs tw-py-2 tw-bg-gray-500 tw-text-white tw-rounded-lg first-letter:tw-capitalize">
-                    {resource.contentType}
-                </div>
-            </div>
+        <div className="tw-bg-white tw-shadow-md tw-rounded-lg md:tw-min-h-[503px]">
+            <Background
+                variant={backgrounds[resource.contentType] || 'darkNebulous2Sm'}
+                className="tw-h-[10%] tw-overflow-hidden tw-rounded-t-lg tw-flex tw-items-center tw-px-sm"
+            >
+                <div className="first-letter:tw-capitalize tw-font-medium">{resource.contentType}</div>
+            </Background>
 
             {/* Card Info */}
-            <div className="tw-flex tw-flex-col tw-p-xs md:tw-h-2/3">
-                <h4 className="tw-mb-xs">{resource.title}</h4>
+            <div className="tw-flex tw-flex-col tw-p-sm tw-h-[90%]">
+                <h4 className="tw-mb-sm">
+                    {resource.title.length > 100 ? `${resource.title.slice(0, 97)}...` : resource.title}
+                </h4>
 
-                <div className="flex-wrap tw-flex tw-mb-xs">
-                    {resource.subjects.slice(0, 3).map(subject => (
-                        <FilterPill key={subject} text={subject} />
-                    ))}
+                <div className="flex-wrap tw-flex tw-mb-sm">
+                    {resource.subjects
+                        .slice(0, 3)
+                        .sort()
+                        .map(subject => (
+                            <FilterPill key={subject} text={subject} />
+                        ))}
                     {!!resource.subjects.slice(3).length && (
                         <div className="tw-group tw-relative">
                             <FilterPill text={`+${resource.subjects.slice(3).length}`} />
@@ -100,7 +93,11 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                     )}
                 </div>
 
-                <div className="tw-text-sm tw-mb-xs">{resource.description}</div>
+                <div className="tw-text-sm tw-mb-sm">
+                    {resource.description.length > 170
+                        ? `${resource.description.slice(0, 167)}...`
+                        : resource.description}
+                </div>
 
                 <div className="tw-flex tw-mt-auto">
                     <Link href={resource.link} passHref={true}>

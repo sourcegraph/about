@@ -53,9 +53,9 @@ const Filter: FunctionComponent<Filter> = ({ text, checked = false, onClick }) =
  */
 const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters, setFilter }) => (
     <div className="md:tw-grid md:tw-grid-cols-12">
-        <h6 className="tw-mb-xs md:tw-mb-0 md:tw-mr-5xl md:tw-col-span-3 tw-whitespace-nowrap">{title}</h6>
+        <h6 className="tw-mb-xs md:tw-mb-0 md:tw-mr-5xl md:tw-col-span-2 tw-whitespace-nowrap">{title}</h6>
 
-        <div className="tw-flex tw-flex-wrap md:tw-col-span-9">
+        <div className="tw-flex tw-flex-wrap md:tw-col-span-10">
             {filters.map(filter => (
                 <Filter
                     key={filter.text}
@@ -77,16 +77,18 @@ const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters, setFilter
  * @param props.setFilter - function to set a filter
  */
 export const Filters: FunctionComponent<Filters> = ({ groups, setFilter }) => (
-    <div className="tw-bg-gray-50 tw-py-5xl tw-px-sm">
-        <div className="tw-max-w-5xl tw-mx-auto">
-            <div className="text-right tw-text-blurple-400 tw-mb-sm tw-cursor-pointer">
+    <div className="tw-bg-gray-50 tw-py-3xl tw-px-sm">
+        <div className="tw-flex tw-max-w-5xl tw-mx-auto">
+            <div>
+                {groups.map(group => (
+                    <FilterGroup key={group.title} title={group.title} filters={group.filters} setFilter={setFilter} />
+                ))}
+            </div>
+
+            <div className="tw-text-blurple-400 tw-mb-sm tw-cursor-pointer tw-whitespace-nowrap">
                 <CloseCircleOutlineIcon size={24} className="tw-inline tw-mr-1 tw-align-top" />
                 Clear
             </div>
-
-            {groups.map(group => (
-                <FilterGroup key={group.title} title={group.title} filters={group.filters} setFilter={setFilter} />
-            ))}
         </div>
     </div>
 )
