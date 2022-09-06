@@ -19,7 +19,6 @@ export { Jumbotron } from './Jumbotron'
 export { LeadershipSection } from './LeadershipSection'
 export { Modal } from './modal'
 export { Portal } from './Portal'
-export { RequestDemoForm } from './RequestDemoForm'
 export { ResourceList } from './ResourceList'
 export { SelfHostedSection } from './SelfHostedSection'
 export { TableWrapper } from './TableWrapper'
@@ -49,7 +48,7 @@ export { CustomCarousel, TabCarousel, QuoteCarousel } from './Carousels'
 
 // Case Studies
 export {
-    AuthorBio,
+    StaffSpotlight,
     CaseStudyJumbotron,
     CaseStudyLayout,
     CaseStudyCard,

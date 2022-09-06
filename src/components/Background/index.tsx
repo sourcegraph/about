@@ -91,6 +91,9 @@ interface IllustrationStyle {
 
 // Background variant to image or gradient class mapping
 const backgrounds: { [key: string]: StaticImageData | string } = {
+    // Standard Variants
+    white: 'tw-bg-white tw-text-black',
+    black: 'tw-bg-black tw-text-white',
     lightNebulousSaturn1,
     lightNebulousSaturn2,
     lightNebulousVenus1,
@@ -158,8 +161,8 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
     }
 
     const backgroundVariant = backgrounds[variant]
-    const isCodeGradient = typeof backgroundVariant === 'string' && backgroundVariant.includes('-')
-    const codeGradient: string = (typeof backgroundVariant === 'string' && backgroundVariant) || ''
+    const isUtilityBackground = typeof backgroundVariant === 'string' && backgroundVariant.includes('-')
+    const utilityBackground: string = (typeof backgroundVariant === 'string' && backgroundVariant) || ''
     const backgroundSource: string = typeof backgroundVariant === 'object' ? backgroundVariant.src : backgroundVariant
     let background = `url("${backgroundSource}") center / cover no-repeat`
 
@@ -174,17 +177,19 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
     }
 
     const styleClasses = classNames(className, {
-        [codeGradient]: isCodeGradient,
-        'tw-bg-white tw-text-black': variant === 'white',
-        'tw-bg-black tw-text-white': variant === 'black',
-        'tw-text-white': variant.includes('dark') || variant.includes('starship') || variant.includes('black'),
-        'tw-text-black': (!variant.includes('dark') && !variant.includes('starship')) || variant === 'transparent',
+        [utilityBackground]: isUtilityBackground,
+        'tw-text-white':
+            !isUtilityBackground &&
+            (variant.includes('dark') || variant.includes('starship') || variant.includes('black')),
+        'tw-text-black':
+            (!isUtilityBackground && !variant.includes('dark') && !variant.includes('starship')) ||
+            variant === 'transparent',
     })
 
     return (
         <div
             // eslint-disable-next-line react/forbid-dom-props
-            style={backgroundVariant && !isCodeGradient ? { background } : undefined}
+            style={backgroundVariant && !isUtilityBackground ? { background } : undefined}
             className={styleClasses}
         >
             {children}

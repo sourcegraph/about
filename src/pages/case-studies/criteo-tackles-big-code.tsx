@@ -21,7 +21,7 @@ export const CaseStudy: FunctionComponent = () => (
             }}
         >
             <ContentSection background="white" className="col-md-6 tw-pb-md">
-                <div className="container">
+                <div className="container tw-max-w-4xl">
                     <p>
                         Founded in France in 2005, Criteo partners with retailers to recommend products to potential
                         customers through ad retargeting. The company has massive volumes of data stored in its

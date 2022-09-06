@@ -24,7 +24,7 @@ export const CaseStudy: FunctionComponent = () => {
                 }}
             >
                 <ContentSection background="white">
-                    <div className="container">
+                    <div className="container tw-max-w-4xl">
                         <p>
                             A web performance and security company, Cloudflare offers CDN, DNS, DDoS protection, and
                             security products and services to millions of customers worldwide. The company has

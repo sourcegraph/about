@@ -27,7 +27,7 @@ export const CaseStudy: FunctionComponent = () => {
                 pdf="https://sourcegraphstatic.com/Lyft-Sourcegraph-case-study.pdf"
             >
                 <ContentSection background="white">
-                    <div className="container">
+                    <div className="container tw-max-w-4xl">
                         <p>
                             Lyft's mission is to improve people's lives with the world's best transportation. With over
                             30 million riders in 2018, Lyft's business is growing, as are the numbers of engineers,

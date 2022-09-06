@@ -1,12 +1,12 @@
 import { FunctionComponent } from 'react'
 
 import {
-    AuthorBio,
-    Blockquote,
-    ContentSection,
+    StaffSpotlight,
     Hero,
-    Layout,
     NewCaseStudyLayout,
+    ContentSection,
+    Blockquote,
+    Layout,
     ThreeUpText,
     UseChallengeSolutionResults,
 } from '@components'
@@ -106,8 +106,8 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection background="white">
-                <div className="tw-max-w-2xl tw-mx-auto tw-pt-5xl">
-                    <p className="mt-6 mt-lg-7 mt-md-5">
+                <div className="tw-max-w-4xl tw-mx-auto tw-pt-5xl">
+                    <p className="tw-pt-3xl sm:tw-mt-0 tw-mt-5xl">
                         In 2021, security engineers Mitchell Borrego and Jeff Holland joined Codecov with the goal of
                         creating a cutting-edge security program. Their responsibilities include security tooling,
                         compliance, and code review from a security perspective. Working with Jerrod Engelberg, CEO of
@@ -232,11 +232,11 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection parentClassName="sg-bg-gradient-saturn">
-                <ThreeUpText title="Results" items={threeUpTextItems} />
+                <ThreeUpText items={threeUpTextItems} />
             </ContentSection>
 
             <ContentSection background="white">
-                <div className="tw-max-w-2xl tw-mx-auto">
+                <div className="tw-max-w-4xl tw-mx-auto">
                     <h3 className="mb-4 max-w-650">Sourcegraph Cloud was the right fit for a growing team</h3>
                     <p>
                         Codecov wanted something they could get up and running quickly, so they turned to Sourcegraph
@@ -255,13 +255,13 @@ export const CaseStudy: FunctionComponent = () => (
                 </div>
 
                 <div className="tw-mt-5xl">
-                    <AuthorBio
+                    <StaffSpotlight
                         customer="Codecov"
                         about="Codecov is a small organization making an outsized impact on the lives of over one million
                         developers. In over 29,000 companies across the globe, Codecov customers are able to ship healthier
                         code using its code coverage tool. Developers rely on Codecov to provide actionable visibility into
                         their code coverage across any tech stack."
-                        authors={[
+                        staff={[
                             {
                                 image: '/case-studies/jerrod-engelberg.png',
                                 name: 'Jerrod Engelberg',

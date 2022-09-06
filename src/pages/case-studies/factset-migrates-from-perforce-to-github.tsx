@@ -25,10 +25,10 @@ export const CaseStudy: FunctionComponent = () => {
                 }}
             >
                 <ContentSection background="white">
-                    <div className="container">
+                    <div className="container tw-max-w-4xl">
                         <div className="row">
                             <div className="col">
-                                <h3 className="tw-pt-md tw-pb-1">Before Sourcegraph</h3>
+                                <h3 className="tw-pb-1">Before Sourcegraph</h3>
                                 <ul>
                                     <li>
                                         Inability to search across repositories after monolith to microservices
@@ -50,7 +50,7 @@ export const CaseStudy: FunctionComponent = () => {
                             </div>
 
                             <div className="col">
-                                <table className="mt-5">
+                                <table>
                                     <tbody>
                                         <tr>
                                             <th className="bg-light">Languages</th>
