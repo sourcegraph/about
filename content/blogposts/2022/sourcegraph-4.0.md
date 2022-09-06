@@ -79,6 +79,8 @@ Batch Changes can now run across thousands of repositories with a better develop
 
 This feature requires admins to set up executors (much like CI agents), which Sourcegraph will use to offload expensive tasks. Executors can also be used to run [Code Intelligence auto-indexing](https://github.com/sourcegraph/about/blob/bf341aafde75450c295aaec064470017020cdcd8/content/blogposts/2022/sourcegraph-4.0.md#TODO-link-to-section-or-docs) as well. One or more executors are available by default on Cloud instances of Sourcegraph.
 
+![Server-Side Batch Changes](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Batch_Changes_Side_by_Side.mp4 "Server-Side Batch Changes")
+
 [Batch Changes]
 
 [Docs](https://docs.sourcegraph.com/batch_changes/explanations/server_side)
@@ -117,7 +119,7 @@ Docs: provide a link to the updated docs
 ### Save time upgrading to Sourcegraph 4.0 with multi-version upgrades
 With 3.42, we introduced an all-new analytics including [XYZ]. Our new analytics make it easier for admins to understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. We’ve significantly improved our in-product analytics to include the projected value and dev-time-saved for all Sourcegraph features, the ability to export data, individual user usage table, and much more. 
 
-Media: provide a screenshot, gif, or video to help support the copy
+![Multi-version upgrades](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Multi-version%20Upgrades.gif "Multi-version upgrades")
 
 [Admin]
 
