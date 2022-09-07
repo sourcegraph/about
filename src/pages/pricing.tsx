@@ -184,20 +184,134 @@ const PricingPage: FunctionComponent = () => (
         {/* TODO: Feature table */}
 
         <ContentSection>
-            <table className="tw-relative">
+            <table className="tw-relative tw-border-0">
                 <thead>
                     <tr>
-                        <th className="tw-sticky tw-top-16 tw-bg-white">Compare all features</th>
-                        <th className="tw-sticky tw-top-16 tw-bg-white">Business</th>
-                        <th className="tw-sticky tw-top-16 tw-bg-white">Enterprise</th>
+                        <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-w-1/3">
+                            <h2>Compare all features</h2>
+                        </th>
+                        <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-w-1/3">
+                            <div className="tw-border-t-16 tw-rounded tw-border-gray-200 tw-border-t-vermillion-300">
+                                <h2>Business</h2>
+                                <h4 className="tw-font-normal">$79 per active user/month</h4>
+                                <Link href="/get-started/self-hosted" passHref={true}>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                    <a
+                                        className="btn btn-primary tw-w-full md:tw-w-auto"
+                                        title="Get started"
+                                        data-button-style={buttonStyle.primary}
+                                        data-button-location={buttonLocation.trySourcegraph}
+                                        data-button-type="cta"
+                                    >
+                                        Get started
+                                    </a>
+                                </Link>
+                            </div>
+                        </th>
+                        <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-w-1/3">
+                            <div className="tw-border-t-16 tw-rounded tw-border-gray-200 tw-border-t-violet-400">
+                                <h2>Enterprise</h2>
+                                <h4 className="tw-font-normal">Custom pricing</h4>
+                                <div>
+                                    <Link href="/get-started/self-hosted" passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a
+                                            className="btn btn-primary tw-mr-xs tw-mb-xs md:tw-mb-0 tw-w-full md:tw-w-auto"
+                                            title="Get started"
+                                            data-button-style={buttonStyle.primary}
+                                            data-button-location={buttonLocation.trySourcegraph}
+                                            data-button-type="cta"
+                                        >
+                                            Get started
+                                        </a>
+                                    </Link>
+                                    <Link href="/demo" passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a
+                                            className="btn btn-outline-primary tw-w-full md:tw-w-auto"
+                                            title="Request a demo"
+                                            data-button-style={buttonStyle.outline}
+                                            data-button-location={buttonLocation.bodyDemo}
+                                            data-button-type="cta"
+                                        >
+                                            Request a demo
+                                        </a>
+                                    </Link>
+                                </div>
+                            </div>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr className="tw-sticky tw-top-24 tw-bg-white">
-                        Code intelligence platform
+                        <h3>Code intelligence platform</h3>
+                    </tr>
+                    <tr className="tw-border-0">
+                        <td className="tw-border-0">Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
                     </tr>
                     <tr>
                         <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    {/* BREAK */}
+                    <tr className="tw-sticky tw-top-24 tw-bg-white">
+                        <h3>Code host integrations</h3>
+                    </tr>
+                    <tr className="tw-border-0">
+                        <td className="tw-border-0">Code search</td>
                         <td>TEST</td>
                         <td>TEST</td>
                     </tr>

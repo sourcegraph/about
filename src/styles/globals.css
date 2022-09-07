@@ -70,6 +70,9 @@
     th {
         @apply tw-align-middle tw-border-b tw-border-solid tw-border-b-gray-200;
     }
+    tr:nth-child(even) {
+        @apply tw-bg-gray-100;
+    }
 }
 
 /* Custom Utilities */
