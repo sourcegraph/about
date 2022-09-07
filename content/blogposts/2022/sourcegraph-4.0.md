@@ -157,7 +157,7 @@ TBD
 Headline: [Do X] with [Z]
 We've introduced a new version of the reference panel for an improved code navigation experience. This new version stacks definitions and references in the same tab, has a brand new preview panel, and adds a filtering option for ease of navigation.
 Media: provide a screenshot, gif, or video to help support the copy
-[Admin]
+[Code Navigation]
 Docs: provide a link to the updated docs
 
 -1-click log export - at risk for 4.0 relase
