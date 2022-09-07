@@ -10,12 +10,17 @@ import { buttonStyle, buttonLocation } from '@data'
 const Resources: FunctionComponent = () => {
     const { filterGroups, setFilter } = useFilters()
 
-    const filteredResources = [
-        ...resourceItems.filter(item => item.featured),
-        ...resourceItems
-            .filter(item => !item.featured)
-            .sort((a, b) => new Date(a.publishDate).valueOf() - new Date(b.publishDate).valueOf()),
-    ]
+    const checkedContentTypes = filterGroups[0].filters.filter(filter => filter.checked).map(filter => filter.text)
+    const checkedSubjects = filterGroups[1].filters.filter(filter => filter.checked).map(filter => filter.text)
+
+    const featuredResources = resourceItems.filter(item => item.featured)
+    const filteredResources = [...featuredResources, ...resourceItems.filter(item => !item.featured)]
+        .filter(item => checkedContentTypes.some(type => type.includes(item.contentType)))
+        .filter(item =>
+            checkedSubjects.every(subject => item.subjects.some(itemSubjects => itemSubjects.includes(subject)))
+        )
+        .sort((a, b) => new Date(a.publishDate).valueOf() - new Date(b.publishDate).valueOf())
+    const resources = filteredResources.length > 0 ? filteredResources : featuredResources
 
     return (
         <Layout
@@ -35,9 +40,8 @@ const Resources: FunctionComponent = () => {
         >
             <Filters groups={filterGroups} setFilter={setFilter} />
 
-            <ContentSection background="white">
-                {/* TODO: Show when there are no results */}
-                {false && (
+            <ContentSection background="white" className="tw-max-w-[1062px]">
+                {!filteredResources.length && (
                     <div className="tw-text-center tw-max-w-xl tw-mx-auto tw-mb-3xl">
                         <span className="tw-bg-violet-100 tw-text-violet-400 tw-w-md tw-h-md tw-p-1 tw-rounded-full tw-inline-flex tw-items-center tw-justify-center tw-mb-xxs">
                             <AlertOutlineIcon className="tw-inline" size={18} />
@@ -62,7 +66,7 @@ const Resources: FunctionComponent = () => {
                 )}
 
                 <div className="tw-grid md:tw-grid-cols-2 xl:tw-grid-cols-3 tw-gap-sm">
-                    {filteredResources.map(resource => (
+                    {resources.map(resource => (
                         <Card key={resource.title} resource={resource} />
                     ))}
                 </div>

@@ -12,12 +12,15 @@ export interface Filter {
 interface FilterGroup {
     title: string
     filters: Filter[]
-    setFilter?: (groupTitle: string, { text, checked }: Filter) => void
+    setFilter: (groupTitle: string, { text, checked }: Filter) => void
 }
 
 interface Filters {
-    groups: FilterGroup[]
-    setFilter?: (groupTitle: string, { text, checked }: Filter) => void
+    groups: {
+        title: string
+        filters: Filter[]
+    }[]
+    setFilter: (groupTitle: string, { text, checked }: Filter) => void
 }
 
 /**
@@ -34,7 +37,7 @@ const Filter: FunctionComponent<Filter> = ({ text, checked = false, onClick }) =
             'tw-py-[6px] tw-px-xs tw-text-sm tw-border tw-border-solid tw-border-gray-500 tw-rounded-lg tw-mr-xs tw-mb-xs hover:tw-bg-gray-500 hover:tw-text-white tw-cursor-pointer tw-transition-all tw-ease-out first-letter:tw-capitalize tw-font-mono',
             { 'tw-text-white tw-bg-gray-500': checked, 'tw-bg-white tw-text-gray-500': !checked }
         )}
-        // onClick={onClick}
+        onClick={onClick}
         onKeyDown={onClick}
         role="button"
         tabIndex={0}
@@ -61,7 +64,7 @@ const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters, setFilter
                     key={filter.text}
                     text={filter.text}
                     checked={filter.checked}
-                    // onClick={() => setFilter(title, filter)}
+                    onClick={() => setFilter(title, filter)}
                 />
             ))}
             <Filter text="All" checked={filters.every(filter => !filter.checked)} />
@@ -78,15 +81,10 @@ const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters, setFilter
  */
 export const Filters: FunctionComponent<Filters> = ({ groups, setFilter }) => (
     <div className="tw-bg-gray-50 tw-py-3xl tw-px-sm">
-        <div className="tw-flex tw-max-w-screen-xl tw-mx-auto">
+        <div className="tw-flex tw-max-w-[1062px] tw-mx-auto">
             <div>
                 {groups.map(group => (
-                    <FilterGroup
-                        key={group.title}
-                        title={group.title}
-                        filters={group.filters}
-                        // setFilter={setFilter}
-                    />
+                    <FilterGroup key={group.title} title={group.title} filters={group.filters} setFilter={setFilter} />
                 ))}
             </div>
 
