@@ -23,7 +23,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
     buttons,
     isEnterprise,
 }) => (
-    <div className={`h-100 tw-p-md tw-shadow-lg tw-border-t-16 tw-rounded tw-border-gray-200 tw-border-${isEnterprise ? 'violet-400' : 'vermillion-300'}`}>
+    <div className={`h-100 tw-p-md tw-shadow-lg tw-border-t-16 tw-rounded tw-border-gray-200 ${isEnterprise ? 'tw-border-t-violet-400' : 'tw-border-t-vermillion-300'}`}>
         <h2 className="tw-mb-sm tw-font-semibold">{name}</h2>
         <h3 className="tw-font-normal tw-max-w-sm">{description}</h3>
         <h4 className="tw-my-sm">{price}</h4>
@@ -31,16 +31,15 @@ export const PricingPlan: FunctionComponent<Props> = ({
 
         <div className="py-3 ml-0">
             {isEnterprise &&
-                <li className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-item">
+                <div className="tw-text-xl tw-font-semibold">
                     Everything in Business, plus:
-                </li>
+                </div>
             }
             {features.map(feature => (
                 <div key={feature.title}>
                     <PricingPlanFeature
                         feature={feature}
                         isEnterprise={isEnterprise}
-                        className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-item"
                     />
                 </div>
             ))}

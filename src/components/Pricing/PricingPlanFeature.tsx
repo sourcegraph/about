@@ -10,15 +10,10 @@ import { Feature } from './interfaces'
 interface Props {
     feature: Feature
     isEnterprise: boolean
-    className?: string
 }
 
-export const PricingPlanFeature: FunctionComponent<Props> = ({
-    feature,
-    isEnterprise,
-    className = '',
-}) =>
-    <div className={`${className} tw-justify-between`}>
+export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, isEnterprise }) =>
+    <div className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-itemtw-justify-between">
         <div className="tw-text-xl tw-font-semibold">
             <CheckIcon className={`mr-2 icon-inline ${isEnterprise ? 'tw-text-violet-400' : 'tw-text-vermillion-300'} tw-inline`} /> {feature.title}
         </div>

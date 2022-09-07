@@ -113,7 +113,7 @@ const PricingPage: FunctionComponent = () => (
             </div>
         }
     >
-        {/* TODO: Items, buttons, tooltips */}
+        {/* TODO: Items, tooltips, li marker */}
         <ContentSection className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-sm">
             <div className="tw-mb-sm lg:tw-mb-0">
                 <PricingPlan
@@ -139,7 +139,7 @@ const PricingPage: FunctionComponent = () => (
                 />
             </div>
 
-            <div className="">
+            <div>
                 <PricingPlan
                     name="Enterprise"
                     price="Custom pricing"
