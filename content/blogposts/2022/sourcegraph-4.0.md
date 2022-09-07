@@ -155,7 +155,7 @@ Docs: provide a link to the updated docs
 ### New version of the reference panel
 TBD
 Headline: [Do X] with [Z]
-Description: 2 - 4 sentences on the feature, functionality and benefits
+We've introduced a new version of the reference panel for an improved code navigation experience. This new version stacks definitions and references in the same tab, has a brand new preview panel, and adds a filtering option for ease of navigation.
 Media: provide a screenshot, gif, or video to help support the copy
 [Admin]
 Docs: provide a link to the updated docs
