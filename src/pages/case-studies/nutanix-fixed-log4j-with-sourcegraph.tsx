@@ -98,8 +98,8 @@ export const CaseStudy: FunctionComponent = () => (
                 />
             </ContentSection>
 
-            <ContentSection background="white">
-                <div className="tw-max-w-2xl tw-mx-auto tw-pt-5xl">
+            <ContentSection background="white" slimWidth={true}>
+                <div className="tw-mx-auto tw-pt-5xl">
                     <p className="tw-pt-3xl sm:tw-mt-0 tw-mt-5xl">
                         As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the
                         complexity involved in securing the multitude of applications and solutions required to power
@@ -249,8 +249,8 @@ export const CaseStudy: FunctionComponent = () => (
                 <ThreeUpText items={threeUpTextItems} />
             </ContentSection>
 
-            <ContentSection background="white">
-                <div className="tw-max-w-2xl tw-mx-auto">
+            <ContentSection background="white" slimWidth={true}>
+                <div className="tw-mx-auto">
                     <h3 className="mb-4">Log4j is the tip of the open-source vulnerability iceberg</h3>
                     <p>
                         <b>With Sourcegraph's help,</b> Nutanix was able to transform a trust-threatening risk into a
