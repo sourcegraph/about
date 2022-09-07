@@ -89,9 +89,7 @@ This feature requires admins to set up executors (much like CI agents), which So
 ### Get started with Sourcegraph faster than ever
 After many years of building Sourcegraph into a secure and highly-scalable solution, we're ready to bring it to the cloud. Sourcegraph Cloud now offers dedicated, single-tenant instances of Sourcegraph, making it easier than ever for new teams to get started. You can read more in our announcement blog here[/blog/enterprise-cloud].
 
-Media: None
-
-Docs: https://docs.sourcegraph.com/cloud
+[Docs](https://docs.sourcegraph.com/cloud)
 
 ##### 💖 For admins
 
@@ -149,12 +147,10 @@ Media: provide a screenshot, gif, or video to help support the copy
 
 Docs: provide a link to the updated docs
 
-### New version of the reference panel
-TBD
-Headline: [Do X] with [Z]
-We've introduced a new version of the reference panel for an improved code navigation experience. This new version stacks definitions and references in the same tab, has a brand new preview panel, and adds a filtering option for ease of navigation.
-Media: provide a screenshot, gif, or video to help support the copy
+### Quickly access answers withing your codebase with a revamped reference panel 
+We've enhanced the code navigation experience with a new version of the reference panel. Updates include a new preview panel, the conslidation of definitions and references in the same tab, and allows for easier navigation through filters.
+
 [Code Navigation]
-Docs: [Find references](https://docs.sourcegraph.com/code_navigation/explanations/features#find-references)
+[Docs](https://docs.sourcegraph.com/code_navigation/explanations/features#find-references)
 
 
