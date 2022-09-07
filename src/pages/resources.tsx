@@ -8,16 +8,22 @@ import { Layout, Filters, Card, resourceItems, ContentSection, useFilters, Hero,
 import { buttonStyle, buttonLocation } from '@data'
 
 const Resources: FunctionComponent = () => {
-    const { filterGroups, setFilter } = useFilters()
+    const { filterGroups, setFilter, resetFilterGroup, resetFilterGroups } = useFilters()
 
-    const checkedContentTypes = filterGroups[0].filters.filter(filter => filter.checked).map(filter => filter.text)
-    const checkedSubjects = filterGroups[1].filters.filter(filter => filter.checked).map(filter => filter.text)
+    const checkedContentTypes = filterGroups
+        .find(group => group.title === 'Content Type')
+        ?.filters.filter(filter => filter.checked)
+        .map(filter => filter.text)
+    const checkedSubjects = filterGroups
+        .find(group => group.title === 'Subject')
+        ?.filters.filter(filter => filter.checked)
+        .map(filter => filter.text)
 
     const featuredResources = resourceItems.filter(item => item.featured)
     const filteredResources = [...featuredResources, ...resourceItems.filter(item => !item.featured)]
-        .filter(item => checkedContentTypes.some(type => type.includes(item.contentType)))
+        .filter(item => checkedContentTypes?.some(type => type.includes(item.contentType)))
         .filter(item =>
-            checkedSubjects.every(subject => item.subjects.some(itemSubjects => itemSubjects.includes(subject)))
+            checkedSubjects?.every(subject => item.subjects.some(itemSubjects => itemSubjects.includes(subject)))
         )
         .sort((a, b) => new Date(a.publishDate).valueOf() - new Date(b.publishDate).valueOf())
     const resources = filteredResources.length > 0 ? filteredResources : featuredResources
@@ -38,7 +44,12 @@ const Resources: FunctionComponent = () => {
                 />
             }
         >
-            <Filters groups={filterGroups} setFilter={setFilter} />
+            <Filters
+                groups={filterGroups}
+                setFilter={setFilter}
+                resetFilterGroup={resetFilterGroup}
+                resetFilterGroups={resetFilterGroups}
+            />
 
             <ContentSection background="white" className="tw-max-w-[1062px]">
                 {!filteredResources.length && (

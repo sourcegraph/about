@@ -8,10 +8,12 @@ interface UseFilters {
         filters: Filter[]
     }[]
     setFilter: (groupTitle: string, { text, checked }: Filter) => void
+    resetFilterGroup: (groupTitle: string) => void
+    resetFilterGroups: () => void
 }
 
 export const useFilters = (): UseFilters => {
-    const [filterGroups, setFilterGroups] = useState([
+    const defaultFilterGroups = [
         {
             title: 'Content Type',
             filters: [...new Set(resourceItems.map(resource => resource.contentType))]
@@ -24,8 +26,16 @@ export const useFilters = (): UseFilters => {
                 .map(subject => ({ text: subject, checked: false }))
                 .sort(),
         },
-    ])
+    ]
 
+    const [filterGroups, setFilterGroups] = useState(defaultFilterGroups)
+
+    /**
+     * This sets a filter based on the group title
+     *
+     * @param groupTitle - the title of the filter group
+     * @param filter - the filter to update
+     */
     const setFilter = (groupTitle: string, filter: Filter): void => {
         const updatedFilterGroup = {
             title: groupTitle,
@@ -43,10 +53,26 @@ export const useFilters = (): UseFilters => {
         const updatedFilterGroups = [
             updatedFilterGroup,
             ...filterGroups.filter(filterGroup => filterGroup.title !== groupTitle),
-        ].sort((a, b) => (a.title > b.title ? 1 : -1))
+        ]
 
         setFilterGroups(updatedFilterGroups)
     }
 
-    return { filterGroups, setFilter }
+    /**
+     * This resets a filter group by the group title
+     *
+     * @param groupTitle - the group title to reset the filter group
+     */
+    const resetFilterGroup = (groupTitle: string): void =>
+        setFilterGroups([
+            ...defaultFilterGroups.filter(filterGroup => filterGroup.title === groupTitle),
+            ...filterGroups.filter(filterGroup => filterGroup.title !== groupTitle),
+        ])
+
+    /**
+     * This resets all filter groups back to their default values
+     */
+    const resetFilterGroups = (): void => setFilterGroups(defaultFilterGroups)
+
+    return { filterGroups, setFilter, resetFilterGroup, resetFilterGroups }
 }
