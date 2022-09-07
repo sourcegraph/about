@@ -111,7 +111,7 @@ Docs: provide a link to the updated docs
 
 [Admin]
 
-Docs: provide a link to the updated docs
+[Docs](https://docs.sourcegraph.com/admin/observability/opentelemetry)
 
 ### Save time upgrading to Sourcegraph 4.0 with multi-version upgrades
 With 3.42, we introduced an all-new analytics including [XYZ]. Our new analytics make it easier for admins to understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. We’ve significantly improved our in-product analytics to include the projected value and dev-time-saved for all Sourcegraph features, the ability to export data, individual user usage table, and much more. 
