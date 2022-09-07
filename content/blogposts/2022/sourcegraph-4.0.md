@@ -84,15 +84,14 @@ This feature requires admins to set up executors (much like CI agents), which So
 [Docs](https://docs.sourcegraph.com/batch_changes/explanations/server_side)
 
 
-##### ☁️ Enterprise Cloud dedicated(/managed?) instances
+##### ☁️ Dedicated Sourcegraph Cloud instances for enterprise
 
-- [Secure, easy, and scalable Sourcegraph Cloud dedicated(/managed?) instances for the enterprise](/blog/enterprise-cloud)
+### Get started with Sourcegraph faster than ever
+After many years of building Sourcegraph into a secure and highly-scalable solution, we're ready to bring it to the cloud. Sourcegraph Cloud now offers dedicated, single-tenant instances of Sourcegraph, making it easier than ever for new teams to get started. You can read more in our announcement blog here[/blog/enterprise-cloud].
 
-Headline: [Do X] with [Z]
-Description: 2 - 4 sentences on the feature, functionality and benefits
-Media: provide a screenshot, gif, or video to help support the copy
-Tag by product: [Code Search], [Batch Changes], [Code Navigation], [Code Insights], [Admin]
-Docs: provide a link to the updated docs
+Media: None
+
+Docs: https://docs.sourcegraph.com/cloud
 
 ##### 💖 For admins
 
