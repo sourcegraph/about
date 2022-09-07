@@ -62,7 +62,7 @@ Docs: [Indexers page](https://docs.sourcegraph.com/code_navigation/references/in
 The most used extensions including code navigation, git-extras, open-in-editor and, search-exports are now default functionality. These enhancements help streamline your workflow and easily switch between tools when needed. Additionally, the current Sourcegraph extensions framework will be deprecated as we work towards a new model of integrations that provides functionality throughout our entire code intelligence platform. Please note, these changes **do not** impact our IDE extensions.
 
 
-![Extensions within the core workflow](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Extensions_Default_Release_Post.png "Extensions within the core workflow")
+![Git Blame](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/git_blame.png "Git Blame")
 
 [Extensions]
 
