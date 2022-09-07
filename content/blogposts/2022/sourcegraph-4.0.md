@@ -54,7 +54,7 @@ Code navigation allows you to quickly jump to symbol definitions, find reference
 
 [Code Navigation]
 
-Docs: [Indexers page](https://docs.sourcegraph.com/code_navigation/references/indexers)
+[Docs](https://docs.sourcegraph.com/code_navigation/references/indexers)
 
 ### Your favorite extensions are now available by default 
 The most used extensions including code navigation, git-extras, open-in-editor and, search-exports are now default functionality. These enhancements help streamline your workflow and easily switch between tools when needed. Additionally, the current Sourcegraph extensions framework will be deprecated as we work towards a new model of integrations that provides functionality throughout our entire code intelligence platform. Please note, these changes **do not** impact our IDE extensions.
