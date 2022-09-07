@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 
+import CheckIcon from 'mdi-react/CheckIcon'
 import Link from 'next/link'
 
 import {
@@ -15,85 +16,108 @@ import { buttonStyle, buttonLocation } from '@data'
 /** Business feature set. */
 const BIZ_FEATURES: Feature[] = [
     {
-        title: 'Code intelligence platform',
-        subFeatures: [
-            {
-                title: 'Code Search',
-                tooltip: 'test',
-            },
-            {
-                title: 'Code Navigation',
-                tooltip: '',
-            },
-            {
-                title: 'Batch Changes',
-                tooltip: '',
-            },
-            {
-                title: 'Code Insights',
-                tooltip: '',
-            },
-            {
-                title: 'Notebooks',
-                tooltip: '',
-            },
-            {
-                title: 'Code monitoring',
-                tooltip: '',
-            },
-            {
-                title: 'Comprehensive API',
-                tooltip: '',
-            },
+        topic: 'Code intelligence platform',
+        features: [
+            'Code Search',
+            'Code Navigation',
+            'Batch Changes',
+            'Code Insights',
+            'Notebooks',
+            'Code monitoring',
+            'Comprehensive API',
         ]
     },
     {
-        title: 'Code host integrations',
-        subFeatures: [
-            {
-                title: 'Unlimited standard Cloud hosts',
-                tooltip: '',
-            },
-            {
-                title: 'Unlimited repository connections',
-                tooltip: '',
-            },
+        topic: 'Code host integrations',
+        features: [
+            'Unlimited standard Cloud hosts',
+            'Unlimited repository connections',
         ]
     }
 ]
 
 const ENTERPRISE_FEATURES: Feature[] = [
     {
-        title: 'Flexible deployment',
-        subFeatures: [
+        topic: 'Flexible deployment',
+        features: [
+            'Secure and dedicated Cloud deployment',
+            'Self-hosted deployment',
+        ]
+    },
+    {
+        topic: 'Code host integrations',
+        features: [
+            'Unlimited code hosts',
+            'Connect to self-hosted code hosts',
+            'Connect to enterprise-only code hosts',
+            'Connect to private code hosts (self-hosted only)',
+        ]
+    }
+]
+
+const FEATURE_COMPARE_DATA = [
+    {
+        topic: 'Code intelligence platform',
+        features: [
             {
-                title: 'Secure and dedicated Cloud deployment',
-                tooltip: 'test',
+                label: 'Code Search',
+                business: true,
+                enterprise: true,
             },
             {
-                title: 'Self-hosted deployment',
-                tooltip: '',
+                label: 'Code Navigation',
+                business: true,
+                enterprise: true,
+            },
+            {
+                label: 'Batch Changes',
+                business: true,
+                enterprise: true,
+            },
+            {
+                label: 'Code Insights',
+                business: true,
+                enterprise: true,
+            },
+            {
+                label: 'Notebooks',
+                business: true,
+                enterprise: true,
+            },
+            {
+                label: 'Code Monitoring',
+                business: true,
+                enterprise: true,
+            },
+            {
+                label: 'Comprehensive API',
+                business: true,
+                enterprise: true,
             },
         ]
     },
     {
-        title: 'Code host integrations',
-        subFeatures: [
+        topic: 'Code host integrations',
+        features: [
             {
-                title: 'Unlimited code hosts',
-                tooltip: '',
+                label: '# of code host connections',
+                business: 'Unlimited',
+                enterprise: 'Unlimited',
             },
             {
-                title: 'Connect to self-hosted code hosts',
-                tooltip: '',
+                label: 'Cloud code hosts',
+                business: true,
+                enterprise: true,
             },
             {
-                title: 'Connect to enterprise-only code hosts',
-                tooltip: '',
+                label: 'Self-hosted code hosts',
+                business: false,
+                enterprise: true,
             },
             {
-                title: 'Connect to private code hosts (self-hosted only)',
-                tooltip: '',
+                label: 'Enterprise-only code hosts',
+                business: false,
+                enterprise: true,
             },
         ]
     }
@@ -181,19 +205,20 @@ const PricingPage: FunctionComponent = () => (
         <h2 className="tw-text-center tw-mx-auto tw-mb-5 tw-max-w-2xl">The code intelligence platform for modern dev teams</h2>
         <CustomerLogos />
 
-        {/* TODO: Feature table */}
-
+        {/* TODO: Table- mobile, topic widths, data cleanup: feature dictionary/tooltip, copy */}
         <ContentSection>
             <table className="tw-relative tw-border-0">
                 <thead>
                     <tr>
-                        <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-w-1/3">
-                            <h2>Compare all features</h2>
+                        <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 tw-w-1/3">
+                            <div className="tw-h-full tw-p-sm tw-border-b-2 tw-border-gray-200">
+                                <h2 className="tw-mt-sm tw-max-w-[200px]">Compare all features</h2>
+                            </div>
                         </th>
-                        <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-w-1/3">
-                            <div className="tw-border-t-16 tw-rounded tw-border-gray-200 tw-border-t-vermillion-300">
+                        <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 tw-w-1/3">
+                            <div className="tw-h-full tw-p-sm tw-border-t-16 tw-border-2 tw-border-gray-200 tw-border-t-vermillion-300">
                                 <h2>Business</h2>
-                                <h4 className="tw-font-normal">$79 per active user/month</h4>
+                                <h4 className="tw-font-normal tw-py-sm">$79 per active user/month</h4>
                                 <Link href="/get-started/self-hosted" passHref={true}>
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
@@ -208,10 +233,10 @@ const PricingPage: FunctionComponent = () => (
                                 </Link>
                             </div>
                         </th>
-                        <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-w-1/3">
-                            <div className="tw-border-t-16 tw-rounded tw-border-gray-200 tw-border-t-violet-400">
+                        <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 tw-w-1/3">
+                            <div className="tw-h-full tw-p-sm tw-border-t-16 tw-border-b-2 tw-border-gray-200 tw-border-t-violet-400">
                                 <h2>Enterprise</h2>
-                                <h4 className="tw-font-normal">Custom pricing</h4>
+                                <h4 className="tw-font-normal tw-py-sm">Custom pricing</h4>
                                 <div>
                                     <Link href="/get-started/self-hosted" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -243,133 +268,36 @@ const PricingPage: FunctionComponent = () => (
                     </tr>
                 </thead>
                 <tbody>
-                    <tr className="tw-sticky tw-top-24 tw-bg-white">
-                        <h3>Code intelligence platform</h3>
-                    </tr>
-                    <tr className="tw-border-0">
-                        <td className="tw-border-0">Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    {/* BREAK */}
-                    <tr className="tw-sticky tw-top-24 tw-bg-white">
-                        <h3>Code host integrations</h3>
-                    </tr>
-                    <tr className="tw-border-0">
-                        <td className="tw-border-0">Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
-                    <tr>
-                        <td>Code search</td>
-                        <td>TEST</td>
-                        <td>TEST</td>
-                    </tr>
+                    {FEATURE_COMPARE_DATA.map(topic => (
+                        <>
+                            <tr className="tw-sticky tw-top-72 tw-bg-white" key={topic.topic}>
+                                <div className="tw-p-xs">
+                                    <h3>{topic.topic}</h3>
+                                </div>
+                            </tr>
+                            {topic.features.map(feature => (
+                                <tr className="tw-border-0" key={feature.label}>
+                                    <td className="tw-border-0 tw-p-xs">
+                                        <h5>{feature.label}</h5>
+                                    </td>
+                                    <td className="tw-border-0 tw-border-x-2 tw-p-xs tw-text-center">
+                                        {typeof feature.business === 'string' ? feature.business :
+                                            feature.business ?
+                                            <CheckIcon className="mr-2 icon-inline tw-text-vermillion-300 tw-inline" /> :
+                                            null
+                                        }
+                                    </td>
+                                    <td className="tw-border-0 tw-p-xs tw-text-center">
+                                        {typeof feature.enterprise === 'string' ? feature.enterprise :
+                                            feature.enterprise ?
+                                            <CheckIcon className="mr-2 icon-inline tw-text-violet-400 tw-inline" /> :
+                                            null
+                                        }
+                                    </td>
+                                </tr>
+                            ))}
+                        </>
+                    ))}
                 </tbody>
             </table>
         </ContentSection>

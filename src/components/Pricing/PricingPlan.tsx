@@ -1,13 +1,15 @@
 import { ReactFragment, FunctionComponent } from 'react'
 
-import { Feature } from './interfaces'
+import CheckIcon from 'mdi-react/CheckIcon'
+
+import { FeatureCluster } from './interfaces'
 import { PricingPlanFeature } from './PricingPlanFeature'
 
 interface Props {
     name: string
     description: string
     price: string
-    features: Feature[]
+    features: FeatureCluster[]
     buttons: ReactFragment
     isEnterprise: boolean
 }
@@ -35,12 +37,16 @@ export const PricingPlan: FunctionComponent<Props> = ({
                     Everything in Business, plus:
                 </div>
             }
-            {features.map(feature => (
-                <div key={feature.title}>
-                    <PricingPlanFeature
-                        feature={feature}
-                        isEnterprise={isEnterprise}
-                    />
+            {features.map(node => (
+                <div key={node.topic} className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-itemtw-justify-between">
+                    <div className="tw-text-xl tw-font-semibold">
+                        <CheckIcon className={`mr-2 icon-inline ${isEnterprise ? 'tw-text-violet-400' : 'tw-text-vermillion-300'} tw-inline`} /> {node.topic}
+                    </div>
+                    {node.features.map(feature => (
+                        <div key={feature}>
+                            <PricingPlanFeature feature={feature} />
+                        </div>
+                    ))}
                 </div>
             ))}
             {/* {FEATURE_ORDER.map(feature => (
