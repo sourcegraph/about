@@ -32,8 +32,6 @@ Media: provide a screenshot, gif, or video to help support the copy
 
 Docs: provide a link to the updated docs
 
-- Smarter code search - blocked for 4.0
-
 ### Understand usage and search structure with high-level aggregations of search results
 High-level aggregations of search results powered by Code Insights are now displayed in addition to results. Responses to the query are now grouped by location (repo or file), author, and arbitrary capture group pattern to help answer to questions such as:
 - Which files have the bulk of these search results?
@@ -159,11 +157,5 @@ We've introduced a new version of the reference panel for an improved code navig
 Media: provide a screenshot, gif, or video to help support the copy
 [Code Navigation]
 Docs: provide a link to the updated docs
-
--1-click log export - at risk for 4.0 relase
-
-We will be deprecating our current Sourcegraph extensions framework so that we can make way for a new model that allows a deeper integration throughout our entire code intelligence platform.
-
-In this release your favorite extensions (git-extras, open-in-editor and search-exports) will become part of the core application. Making them faster, more discoverable and ensuring they continue to be improved upon.
 
 
