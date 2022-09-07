@@ -1,10 +1,10 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import StarIcon from 'mdi-react/StarIcon'
 import Link from 'next/link'
 
-import { Background } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 import { Resource } from '.'
@@ -14,7 +14,7 @@ interface Card {
 }
 
 interface BackgroundVariant {
-    [key: string]: Background['variant']
+    [key: string]: string
 }
 
 interface FilterPill {
@@ -52,21 +52,23 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
 
     // Content Type background mapping
     const backgrounds: BackgroundVariant = {
-        'virtual event': 'saturn',
-        video: 'mars',
-        'blog post': 'infrared',
-        guide: 'aurora',
-        'customer story': 'venus',
+        'virtual event': 'tw-from-vermillion-100 tw-to-violet-400',
+        video: 'tw-from-violet-100 tw-to-cerise-300',
+        'blog post': 'tw-from-violet-200 tw-to-vermillion-300',
+        guide: 'tw-from-blue-200 tw-to-violet-400',
+        'customer story': 'tw-from-green-100 tw-to-blue-300',
     }
 
     return (
-        <div className="tw-bg-white tw-shadow-md tw-rounded-lg md:tw-min-h-[503px]">
-            <Background
-                variant={backgrounds[resource.contentType] || 'darkNebulous2Sm'}
-                className="tw-h-[10%] tw-overflow-hidden tw-rounded-t-lg tw-flex tw-items-center tw-px-sm"
+        <div className="tw-bg-white tw-shadow-md tw-rounded-lg md:tw-min-h-[469px]">
+            <div
+                className={classNames(
+                    'tw-h-[10%] tw-overflow-hidden tw-rounded-t-lg tw-flex tw-items-center tw-px-sm tw-bg-gradient-to-r',
+                    backgrounds[resource.contentType]
+                )}
             >
                 <div className="first-letter:tw-capitalize tw-font-medium">{resource.contentType}</div>
-            </Background>
+            </div>
 
             {/* Card Info */}
             <div className="tw-flex tw-flex-col tw-p-sm tw-h-[90%]">

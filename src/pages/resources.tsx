@@ -35,7 +35,7 @@ const Resources: FunctionComponent = () => {
         >
             <Filters groups={filterGroups} setFilter={setFilter} />
 
-            <ContentSection background="white" className="tw-max-w-5xl">
+            <ContentSection background="white">
                 {/* TODO: Show when there are no results */}
                 {false && (
                     <div className="tw-text-center tw-max-w-xl tw-mx-auto tw-mb-3xl">

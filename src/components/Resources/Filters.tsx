@@ -78,7 +78,7 @@ const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters, setFilter
  */
 export const Filters: FunctionComponent<Filters> = ({ groups, setFilter }) => (
     <div className="tw-bg-gray-50 tw-py-3xl tw-px-sm">
-        <div className="tw-flex tw-max-w-5xl tw-mx-auto">
+        <div className="tw-flex tw-max-w-screen-xl tw-mx-auto">
             <div>
                 {groups.map(group => (
                     <FilterGroup key={group.title} title={group.title} filters={group.filters} setFilter={setFilter} />

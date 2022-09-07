@@ -9,17 +9,6 @@ export interface Resource {
 }
 
 export const resourceItems: Resource[] = [
-    // TODO: Test content
-    // {
-    //     featured: true,
-    //     title: 'This is the title of the resource. It can be up to 100 characters in length, which is about 4 lines long.',
-    //     link: '/webinars/preparing-for-the-next-log4j',
-    //     contentType: 'virtual event',
-    //     subjects: ['code security', 'developer onboarding', 'code health', 'code reuse', 'incident response'],
-    //     description:
-    //         'This is the description body of copy. It gives the reader a preview of what the content is about. It can be up to 170 characters, which is about 4 lines long.',
-    //     publishDate: '2022-06-09T19:29:40Z',
-    // },
     {
         featured: true,
         title: 'How Nutanix Remediated the Vulnerability in 4 Days',
