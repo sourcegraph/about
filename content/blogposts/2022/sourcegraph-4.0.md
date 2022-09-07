@@ -50,7 +50,7 @@ Docs: provide a link to the updated docs
 ### Configure precise code navigation for 9 languages in a matter of minutes with auto-indexing
 Code navigation allows you to quickly jump to symbol definitions, find references, dependencies, and more, so you can spend more time shipping code. Precise code navigation is the most powerful version of code navigation and it works cross-repository. We now support 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, JavaScript. Auto-indexing makes precise code navigation work across all of your code, automatically, and it’s turned on by default for our Cloud customers. 
 
-Media: ![ruby-precise](https://storage.googleapis.com/sourcegraph-assets/docs/images/code-intelligence/4.0/ruby-precise.gif "Ruby-precise-code-navigation)
+![ruby-precise](https://storage.googleapis.com/sourcegraph-assets/docs/images/code-intelligence/4.0/ruby-precise.gif "Ruby-precise-code-navigation")
 
 [Code Navigation]
 
