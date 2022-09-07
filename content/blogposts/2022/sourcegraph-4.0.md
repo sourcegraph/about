@@ -85,7 +85,6 @@ This feature requires admins to set up executors (much like CI agents), which So
 
 [Docs](https://docs.sourcegraph.com/batch_changes/explanations/server_side)
 
-- New packaging updates
 
 ##### ☁️ Enterprise Cloud dedicated(/managed?) instances
 
