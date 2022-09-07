@@ -50,7 +50,7 @@ Docs: provide a link to the updated docs
 ### Configure precise code navigation for 9 languages in a matter of minutes with auto-indexing
 Code navigation allows you to quickly jump to symbol definitions, find references, dependencies, and more, so you can spend more time shipping code. Precise code navigation is the most powerful version of code navigation and it works cross-repository. We now support 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, JavaScript. Auto-indexing makes precise code navigation work across all of your code, automatically, and it’s turned on by default for our Cloud customers. 
 
-Media: [gif](https://storage.googleapis.com/sourcegraph-assets/docs/images/code-intelligence/4.0/ruby-precise.gif)
+Media: ![ruby-precise](https://storage.googleapis.com/sourcegraph-assets/docs/images/code-intelligence/4.0/ruby-precise.gif "Ruby-precise-code-navigation)
 
 [Code Navigation]
 
@@ -114,7 +114,7 @@ Docs: provide a link to the updated docs
 [Docs](https://docs.sourcegraph.com/admin/observability/opentelemetry)
 
 ### Save time upgrading to Sourcegraph 4.0 with multi-version upgrades
-With 3.42, we introduced an all-new analytics including [XYZ]. Our new analytics make it easier for admins to understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. We’ve significantly improved our in-product analytics to include the projected value and dev-time-saved for all Sourcegraph features, the ability to export data, individual user usage table, and much more. 
+Multi-version upgrades help to reduce the burden and time required to upgrade to the latest version of Sourcegraph. Customers will now be able to seamlessly upgrade from any 3.20+ version to Sourcegraph 4.0 in just a few simple steps. With faster upgrades, customers can quickly start using the new features and enhancements that are released every month. 
 
 ![Multi-version upgrades](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Multi-version%20Upgrades.gif "Multi-version upgrades")
 
@@ -126,7 +126,7 @@ Docs: provide a link to the updated docs
 ### Quickly see the status on your repository and sync permissions
 With Sourcegraph 4.0, we have introduced more than X quality of life improvements to help admins understand the current state of repository and permissions syncing. This helps to ensure users have the appropriate to repositories so they can understand, fix, and automate the codebase, while admins can XYZ. 
 
-Media: provide a screenshot, gif, or video to help support the copy[Admin]
+Media: provide a screenshot, gif, or video to help support the copy
 
 [Admin]
 
