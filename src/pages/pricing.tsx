@@ -183,6 +183,83 @@ const PricingPage: FunctionComponent = () => (
 
         {/* TODO: Feature table */}
 
+        <ContentSection>
+            <table className="tw-relative">
+                <thead>
+                    <tr>
+                        <th className="tw-sticky tw-top-16 tw-bg-white">Compare all features</th>
+                        <th className="tw-sticky tw-top-16 tw-bg-white">Business</th>
+                        <th className="tw-sticky tw-top-16 tw-bg-white">Enterprise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr className="tw-sticky tw-top-24 tw-bg-white">
+                        Code intelligence platform
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Code search</td>
+                        <td>TEST</td>
+                        <td>TEST</td>
+                    </tr>
+                </tbody>
+            </table>
+        </ContentSection>
+
         <CtaSection
             background="lightNebulousMars"
             title="Free for small teams"
