@@ -122,12 +122,12 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
     cta1,
     cta2,
 }) => (
-    <ContentSection background={background}>
+    <ContentSection background={background} slimWidth={slimWidth}>
         <div
             className={classNames({
                 'tw-max-w-xl tw-mx-auto tw-text-center': centerContent,
                 'tw-grid tw-grid-cols-5': !centerContent && !slimWidth,
-                'tw-max-w-4xl tw-mx-auto tw-grid tw-grid-cols-2 tw-items-center': slimWidth,
+                'tw-mx-auto tw-grid tw-grid-cols-2 tw-items-center': slimWidth,
             })}
         >
             <div

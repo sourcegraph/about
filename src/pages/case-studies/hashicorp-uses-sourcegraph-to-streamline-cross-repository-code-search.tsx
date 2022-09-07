@@ -48,8 +48,8 @@ export const CaseStudy: FunctionComponent = () => (
         }
     >
         <NewCaseStudyLayout customer="HashiCorp">
-            <ContentSection background="white">
-                <div className="tw-max-w-4xl tw-mx-auto">
+            <ContentSection background="white" slimWidth={true}>
+                <div className="tw-mx-auto">
                     <Blockquote
                         quote="By its nature and capabilities, Sourcegraph can be a tool to reduce friction, speed up feedback loops, and improve developer velocity."
                         author="Bryce Kalow, Senior Web Engineer, HashiCorp"
@@ -105,8 +105,8 @@ export const CaseStudy: FunctionComponent = () => (
                 />
             </ContentSection>
 
-            <ContentSection background="white">
-                <div className="tw-max-w-4xl tw-mx-auto tw-pt-5xl">
+            <ContentSection background="white" slimWidth={true}>
+                <div className="tw-mx-auto tw-pt-5xl">
                     <p className="tw-pt-3xl sm:tw-pt-5xl sm:tw-mt-0 tw-mt-5xl">
                         Every day, millions of developers and DevOps engineers rely on HashiCorp to efficiently
                         provision, manage, and secure their cloud infrastructure. HashiCorp is a company that has
