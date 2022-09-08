@@ -1,3 +1,3 @@
 export * from './PricingPlan'
 export * from './PricingPlanFeature'
-export * from './interfaces'
+export * from './data'

@@ -3,130 +3,19 @@ import { FunctionComponent } from 'react'
 import CheckIcon from 'mdi-react/CheckIcon'
 import Link from 'next/link'
 
-import { ContentSection, CtaSection, CustomerLogos, FeatureCluster, Layout, PricingPlan } from '@components'
+import {
+    ContentSection,
+    CtaSection,
+    CustomerLogos,
+    Layout,
+    PricingPlan,
+    PricingPlanFeature,
+    FEATURE_INFO,
+    BIZ_FEATURES,
+    ENTERPRISE_FEATURES,
+    FEATURE_COMPARE_DATA,
+} from '@components'
 import { buttonStyle, buttonLocation } from '@data'
-
-/** Business feature set. */
-const BIZ_FEATURES: FeatureCluster[] = [
-    {
-        topic: 'Code intelligence platform',
-        features: [
-            'codeSearch',
-            'codeNavigation',
-            'batchChanges',
-            'codeInsights',
-            'notebooks',
-            'codeMonitoring',
-            'comprehensiveApi',
-        ],
-    },
-    {
-        topic: 'Code host integrations',
-        features: ['cloudHosts', 'repoConnections'],
-    },
-    {
-        topic: 'Security and admin',
-        features: ['ssoSaml', 'securityRoles', 'repoPerms', 'analytics'],
-    },
-    {
-        topic: 'Scale and performance',
-        features: ['businessStorage', 'businessExecutors'],
-    },
-    { topic: '24/5 support' },
-    { topic: 'Secure and dedicated Cloud deployment' },
-]
-
-const ENTERPRISE_FEATURES: FeatureCluster[] = [
-    {
-        topic: 'Flexible deployment',
-        features: ['cloudDeployment', 'selfDeployment'],
-    },
-    {
-        topic: 'Code host integrations',
-        features: ['unlimitedCodeHosts', 'selfHostedCodeHosts', 'enterpriseOnlyCodeHosts', 'privateCodeHosts'],
-    },
-    {
-        topic: 'Security and admin',
-        features: ['customPerms', 'privateInstance'],
-    },
-    {
-        topic: 'Scale and performance',
-        features: ['enterpriseStorage', 'enterpriseExecutors'],
-    },
-    {
-        topic: '24/5 priority support',
-        features: ['slaSupport', 'dedicatedCe'],
-    },
-    { topic: 'Enterprise add ons' },
-]
-
-const FEATURE_COMPARE_DATA = [
-    {
-        topic: 'Code intelligence platform',
-        features: [
-            {
-                label: 'Code Search',
-                business: true,
-                enterprise: true,
-            },
-            {
-                label: 'Code Navigation',
-                business: true,
-                enterprise: true,
-            },
-            {
-                label: 'Batch Changes',
-                business: true,
-                enterprise: true,
-            },
-            {
-                label: 'Code Insights',
-                business: true,
-                enterprise: true,
-            },
-            {
-                label: 'Notebooks',
-                business: true,
-                enterprise: true,
-            },
-            {
-                label: 'Code Monitoring',
-                business: true,
-                enterprise: true,
-            },
-            {
-                label: 'Comprehensive API',
-                business: true,
-                enterprise: true,
-            },
-        ],
-    },
-    {
-        topic: 'Code host integrations',
-        features: [
-            {
-                label: '# of code host connections',
-                business: 'Unlimited',
-                enterprise: 'Unlimited',
-            },
-            {
-                label: 'Cloud code hosts',
-                business: true,
-                enterprise: true,
-            },
-            {
-                label: 'Self-hosted code hosts',
-                business: false,
-                enterprise: true,
-            },
-            {
-                label: 'Enterprise-only code hosts',
-                business: false,
-                enterprise: true,
-            },
-        ],
-    },
-]
 
 const PricingPage: FunctionComponent = () => (
     <Layout
@@ -142,9 +31,9 @@ const PricingPage: FunctionComponent = () => (
             </div>
         }
     >
-        {/* TODO: Items, tooltips, li marker */}
-        <ContentSection className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-sm">
-            <div className="tw-mb-sm lg:tw-mb-0">
+        {/* TODO: Tooltips, li marker */}
+        <ContentSection className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-12 tw-gap-sm">
+            <div className="tw-mb-sm lg:tw-mb-0 tw-col-span-full md:tw-col-start-2 md:tw-col-span-5">
                 <PricingPlan
                     name="Business"
                     price="$79 per active user/month"
@@ -168,7 +57,7 @@ const PricingPage: FunctionComponent = () => (
                 />
             </div>
 
-            <div>
+            <div className="tw-col-span-full md:tw-col-start-7 md:tw-col-span-5">
                 <PricingPlan
                     name="Enterprise"
                     price="Custom pricing"
@@ -276,26 +165,26 @@ const PricingPage: FunctionComponent = () => (
                     </tr>
                 </thead>
                 <tbody>
-                    {FEATURE_COMPARE_DATA.map(topic => (
+                    {FEATURE_COMPARE_DATA.map(section => (
                         <>
-                            <tr className="tw-bg-white" key={topic.topic}>
+                            <tr className="tw-bg-white" key={section.topic}>
                                 <div className="tw-p-xs">
-                                    <h3>{topic.topic}</h3>
+                                    <h3>{section.topic}</h3>
                                 </div>
                             </tr>
-                            {topic.features.map(feature => (
+                            {section.features.map(feature => (
                                 <tr className="tw-border-0" key={feature.label}>
                                     <td className="tw-border-0 tw-p-xs">
-                                        <h5>{feature.label}</h5>
+                                        <PricingPlanFeature feature={FEATURE_INFO[feature.label]} tag="h5" />
                                     </td>
-                                    <td className="tw-border-0 tw-border-x-2 tw-p-xs tw-text-center">
+                                    <td className="tw-border-0 tw-border-x-2 tw-p-xs tw-text-center tw-align-middle">
                                         {typeof feature.business === 'string' ? (
                                             feature.business
                                         ) : feature.business ? (
                                             <CheckIcon className="mr-2 icon-inline tw-text-vermillion-300 tw-inline" />
                                         ) : null}
                                     </td>
-                                    <td className="tw-border-0 tw-p-xs tw-text-center">
+                                    <td className="tw-border-0 tw-p-xs tw-text-center tw-align-middle">
                                         {typeof feature.enterprise === 'string' ? (
                                             feature.enterprise
                                         ) : feature.enterprise ? (

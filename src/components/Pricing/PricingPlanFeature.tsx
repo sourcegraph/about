@@ -4,11 +4,11 @@ import InformationCircleOutlineIcon from 'mdi-react/InformationCircleOutlineIcon
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
 
-import { FeatureInfo } from './interfaces'
+import { FeatureInfo } from './data'
 
 interface Props {
     feature: FeatureInfo
-    tag: 'li'
+    tag: 'li' | 'h5'
 }
 
 export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag = 'li' }) => (
@@ -24,7 +24,7 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag
                     overlay={<Tooltip id="tooltip">{feature.description}</Tooltip>}
                 >
                     {({ ref, ...triggerHandler }) => (
-                        <span {...triggerHandler} ref={ref} className="tw-ml-2 tw-my-auto tw-text-gray-400">
+                        <span {...triggerHandler} ref={ref} className="tw-ml-xxs tw-my-auto tw-text-gray-400">
                             <InformationCircleOutlineIcon size={15} />
                         </span>
                     )}
