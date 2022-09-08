@@ -117,7 +117,7 @@ Multi-version upgrades help to reduce the burden and time required to upgrade to
 
 [Admin]
 
-Docs: provide a link to the updated docs
+[Docs](https://docs.sourcegraph.com/admin/updates#multi-version-upgrades)
 
 
 ### Quickly see the status on your repository and sync permissions
