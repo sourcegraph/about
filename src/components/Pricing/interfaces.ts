@@ -3,5 +3,10 @@
  */
 export interface FeatureCluster {
     topic: string;
-    features: string[];
+    features?: string[];
+}
+
+export interface FeatureInfo {
+    label: string
+    description?: string
 }

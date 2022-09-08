@@ -18,41 +18,81 @@ const BIZ_FEATURES: Feature[] = [
     {
         topic: 'Code intelligence platform',
         features: [
-            'Code Search',
-            'Code Navigation',
-            'Batch Changes',
-            'Code Insights',
-            'Notebooks',
-            'Code monitoring',
-            'Comprehensive API',
+            'codeSearch',
+            'codeNavigation',
+            'batchChanges',
+            'codeInsights',
+            'notebooks',
+            'codeMonitoring',
+            'comprehensiveApi',
         ]
     },
     {
         topic: 'Code host integrations',
         features: [
-            'Unlimited standard Cloud hosts',
-            'Unlimited repository connections',
+            'cloudHosts',
+            'repoConnections',
         ]
-    }
+    },
+    {
+        topic: 'Security and admin',
+        features: [
+            'ssoSaml',
+            'securityRoles',
+            'repoPerms',
+            'analytics',
+        ]
+    },
+    {
+        topic: 'Scale and performance',
+        features: [
+            'businessStorage',
+            'businessExecutors',
+        ]
+    },
+    { topic: '24/5 support' },
+    { topic: 'Secure and dedicated Cloud deployment' },
 ]
 
 const ENTERPRISE_FEATURES: Feature[] = [
     {
         topic: 'Flexible deployment',
         features: [
-            'Secure and dedicated Cloud deployment',
-            'Self-hosted deployment',
+            'cloudDeployment',
+            'selfDeployment',
         ]
     },
     {
         topic: 'Code host integrations',
         features: [
-            'Unlimited code hosts',
-            'Connect to self-hosted code hosts',
-            'Connect to enterprise-only code hosts',
-            'Connect to private code hosts (self-hosted only)',
+            'unlimitedCodeHosts',
+            'selfHostedCodeHosts',
+            'enterpriseOnlyCodeHosts',
+            'privateCodeHosts',
         ]
-    }
+    },
+    {
+        topic: 'Security and admin',
+        features: [
+            'customPerms',
+            'privateInstance',
+        ]
+    },
+    {
+        topic: 'Scale and performance',
+        features: [
+            'enterpriseStorage',
+            'enterpriseExecutors',
+        ]
+    },
+    {
+        topic: '24/5 priority support',
+        features: [
+            'slaSupport',
+            'dedicatedCe',
+        ]
+    },
+    { topic: 'Enterprise add ons' },
 ]
 
 const FEATURE_COMPARE_DATA = [
@@ -205,7 +245,8 @@ const PricingPage: FunctionComponent = () => (
         <h2 className="tw-text-center tw-mx-auto tw-mb-5 tw-max-w-2xl">The code intelligence platform for modern dev teams</h2>
         <CustomerLogos />
 
-        {/* TODO: Table- mobile, topic widths, data cleanup: feature dictionary/tooltip, copy */}
+        {/* TODO: Move data up a level, ref PricingPlanFeature w/ FEATURE_INFO dictionary */}
+        {/* TODO: Table- mobile */}
         <ContentSection>
             <table className="tw-relative tw-border-0">
                 <thead>
@@ -270,7 +311,7 @@ const PricingPage: FunctionComponent = () => (
                 <tbody>
                     {FEATURE_COMPARE_DATA.map(topic => (
                         <>
-                            <tr className="tw-sticky tw-top-72 tw-bg-white" key={topic.topic}>
+                            <tr className="tw-bg-white" key={topic.topic}>
                                 <div className="tw-p-xs">
                                     <h3>{topic.topic}</h3>
                                 </div>
@@ -318,7 +359,10 @@ const PricingPage: FunctionComponent = () => (
             }}
         />
 
-        {/* TODO: FAQ accordion */}
+        {/* TODO: FAQ accordion from Flowbite */}
+        <ContentSection className="tw-grid tw-grid-cols-5">
+            <h2 className="tw-col-span-full md:tw-col-span-2 tw-max-w-md">Frequently asked questions</h2>
+        </ContentSection>
     </Layout>
 )
 

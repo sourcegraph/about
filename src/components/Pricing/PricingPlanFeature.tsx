@@ -4,21 +4,24 @@ import InformationCircleOutlineIcon from 'mdi-react/InformationCircleOutlineIcon
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
 
+import { FeatureInfo } from './interfaces'
+
 interface Props {
-    feature: string
+    feature: FeatureInfo
+    tag: 'li'
 }
 
-export const PricingPlanFeature: FunctionComponent<Props> = ({ feature }) =>
-    <li key={feature} className="tw-flex">
-        <>
-            <div className="tw-text-lg">{feature}</div>
+export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag = 'li' }) =>
+    <Tag>
+        <div className="tw-flex tw-my-xxs">
+            <div className="tw-text-lg">{feature.label}</div>
 
-            {/* {subF.tooltip && (
+            {feature.description && (
                 <OverlayTrigger
                     placement="auto"
                     flip={true}
                     transition={false}
-                    overlay={<Tooltip id="tooltip">{subF.tooltip}</Tooltip>}
+                    overlay={<Tooltip id="tooltip">{feature.description}</Tooltip>}
                 >
                     {({ ref, ...triggerHandler }) => (
                         <span {...triggerHandler} ref={ref} className="tw-ml-2 tw-my-auto tw-text-gray-400">
@@ -26,6 +29,6 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({ feature }) =>
                         </span>
                     )}
                 </OverlayTrigger>
-            )} */}
-        </>
-    </li>
+            )}
+        </div>
+    </Tag>
