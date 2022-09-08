@@ -98,13 +98,8 @@ export const CaseStudy: FunctionComponent = () => (
                 />
             </ContentSection>
 
-<<<<<<< HEAD
-            <ContentSection background="white">
-                <div className="tw-max-w-4xl tw-mx-auto tw-pt-5xl">
-=======
             <ContentSection background="white" slimWidth={true}>
                 <div className="tw-mx-auto tw-pt-5xl">
->>>>>>> 1f0fe7a50d138cb6baf734def259e2a2337822c0
                     <p className="tw-pt-3xl sm:tw-mt-0 tw-mt-5xl">
                         As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the
                         complexity involved in securing the multitude of applications and solutions required to power

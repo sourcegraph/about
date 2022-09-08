@@ -29,26 +29,24 @@ export const CaseStudy: FunctionComponent = () => {
             >
                 <ContentSection background="white" slimWidth={true}>
                     <p>
-                        Founded in 2008, Workiva's platform enables thousands of enterprises around the world to
-                        manage and report business data. Over 3,000 businesses use Workiva to bring together
-                        everything their business needs—teammates, datasets, and data sources—so they can work
-                        better in the cloud.
+                        Founded in 2008, Workiva's platform enables thousands of enterprises around the world to manage
+                        and report business data. Over 3,000 businesses use Workiva to bring together everything their
+                        business needs—teammates, datasets, and data sources—so they can work better in the cloud.
                     </p>
 
                     <h2 className="tw-pt-md tw-pb-1">Paying down tech debt</h2>
 
                     <p>
-                        The Client Platform Team at Workiva is responsible for developing and maintaining the
-                        frameworks and shared libraries that all other products are built on. This includes a shared
-                        UI widget library and maintaining dozens of Dart packages to support Workiva's entire
-                        engineering team.
+                        The Client Platform Team at Workiva is responsible for developing and maintaining the frameworks
+                        and shared libraries that all other products are built on. This includes a shared UI widget
+                        library and maintaining dozens of Dart packages to support Workiva's entire engineering team.
                     </p>
 
                     <p>
                         Any time they shipped a release for one of their packages, they'd also have to propagate it
                         across 70+ repositories used by other teams to avoid breaking changes. While they developed
-                        their own internal tool to automate these changes, it required ongoing maintenance and
-                        didn't provide end-to-end visibility into the path to completion.
+                        their own internal tool to automate these changes, it required ongoing maintenance and didn't
+                        provide end-to-end visibility into the path to completion.
                     </p>
 
                     <Blockquote
@@ -91,12 +89,10 @@ export const CaseStudy: FunctionComponent = () => {
                         <li>Propagate a new version of React to all frontend repositories</li>
                         <li>Update API versions of Kubernetes resources</li>
                         <li>Migrate to a new CDN while updating all code references</li>
+                        <li>Update UI component syntax as necessary to support a new version of the Dart language</li>
                         <li>
-                            Update UI component syntax as necessary to support a new version of the Dart language
-                        </li>
-                        <li>
-                            Run test batch changes to ensure that new Chrome web browser releases wouldn't result in
-                            any software failures
+                            Run test batch changes to ensure that new Chrome web browser releases wouldn't result in any
+                            software failures
                         </li>
                     </ul>
 
@@ -110,10 +106,9 @@ export const CaseStudy: FunctionComponent = () => {
                     </h2>
 
                     <p>
-                        The Client Platform team has already used Batch Changes numerous times to propagate
-                        large-scale updates to the frameworks and shared libraries they maintain. In comparison to
-                        manually making these changes, Batch Changes reduces the time it takes to make large-scale
-                        code changes by 80%.
+                        The Client Platform team has already used Batch Changes numerous times to propagate large-scale
+                        updates to the frameworks and shared libraries they maintain. In comparison to manually making
+                        these changes, Batch Changes reduces the time it takes to make large-scale code changes by 80%.
                     </p>
 
                     <Blockquote
@@ -122,8 +117,8 @@ export const CaseStudy: FunctionComponent = () => {
                     />
 
                     <p>
-                        Instead of spending time maintaining their internal tool, the Workiva team will be using
-                        Batch Changes going forward.
+                        Instead of spending time maintaining their internal tool, the Workiva team will be using Batch
+                        Changes going forward.
                     </p>
 
                     <Blockquote

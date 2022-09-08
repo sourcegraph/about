@@ -11,7 +11,7 @@ interface Props {
     tag: 'li'
 }
 
-export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag = 'li' }) =>
+export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag = 'li' }) => (
     <Tag>
         <div className="tw-flex tw-my-xxs">
             <div className="tw-text-lg">{feature.label}</div>
@@ -32,3 +32,4 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag
             )}
         </div>
     </Tag>
+)

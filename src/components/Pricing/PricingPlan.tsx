@@ -35,15 +35,18 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     notebooks: {
         label: 'Notebooks',
-        description: 'Track and visualize trends in your entire codebase — with visualizations that are kept automatically up to date',
+        description:
+            'Track and visualize trends in your entire codebase — with visualizations that are kept automatically up to date',
     },
     codeMonitoring: {
         label: 'Code Monitoring',
-        description: 'Track and visualize trends in your entire codebase — with visualizations that are kept automatically up to date',
+        description:
+            'Track and visualize trends in your entire codebase — with visualizations that are kept automatically up to date',
     },
     comprehensiveApi: {
         label: 'Comprehensive API',
-        description: 'Track and visualize trends in your entire codebase — with visualizations that are kept automatically up to date',
+        description:
+            'Track and visualize trends in your entire codebase — with visualizations that are kept automatically up to date',
     },
 
     // Code host integrations
@@ -148,30 +151,35 @@ export const PricingPlan: FunctionComponent<Props> = ({
     buttons,
     isEnterprise,
 }) => (
-    <div className={`h-100 tw-p-md tw-shadow-lg tw-border-t-16 tw-rounded tw-border-gray-200 ${isEnterprise ? 'tw-border-t-violet-400' : 'tw-border-t-vermillion-300'}`}>
+    <div
+        className={`h-100 tw-p-md tw-shadow-lg tw-border-t-16 tw-rounded tw-border-gray-200 ${
+            isEnterprise ? 'tw-border-t-violet-400' : 'tw-border-t-vermillion-300'
+        }`}
+    >
         <h2 className="tw-mb-sm tw-font-semibold">{name}</h2>
         <h3 className="tw-font-normal tw-max-w-sm">{description}</h3>
         <h4 className="tw-my-sm">{price}</h4>
         {buttons}
 
         <div className="py-3 ml-0">
-            {isEnterprise &&
-                <div className="tw-text-xl tw-font-semibold">
-                    Everything in Business, plus:
-                </div>
-            }
+            {isEnterprise && <div className="tw-text-xl tw-font-semibold">Everything in Business, plus:</div>}
             {features.map(node => (
-                <div key={node.topic} className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-itemtw-justify-between">
+                <div
+                    key={node.topic}
+                    className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-itemtw-justify-between"
+                >
                     <div className="tw-text-xl tw-font-semibold tw-mt-xs tw-flex tw-items-center">
-                        <CheckIcon className={`mr-2 icon-inline ${isEnterprise ? 'tw-text-violet-400' : 'tw-text-vermillion-300'} tw-inline`} /> {node.topic}
+                        <CheckIcon
+                            className={`mr-2 icon-inline ${
+                                isEnterprise ? 'tw-text-violet-400' : 'tw-text-vermillion-300'
+                            } tw-inline`}
+                        />{' '}
+                        {node.topic}
                     </div>
                     <ul className="tw-ml-2xl">
                         {node?.features?.map(feature => (
                             <div key={feature}>
-                                <PricingPlanFeature
-                                    feature={FEATURE_INFO[feature]}
-                                    tag="li"
-                                />
+                                <PricingPlanFeature feature={FEATURE_INFO[feature]} tag="li" />
                             </div>
                         ))}
                     </ul>

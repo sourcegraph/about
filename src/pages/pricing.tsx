@@ -3,18 +3,11 @@ import { FunctionComponent } from 'react'
 import CheckIcon from 'mdi-react/CheckIcon'
 import Link from 'next/link'
 
-import {
-    ContentSection,
-    CtaSection,
-    CustomerLogos,
-    Feature,
-    Layout,
-    PricingPlan,
-} from '@components'
+import { ContentSection, CtaSection, CustomerLogos, FeatureCluster, Layout, PricingPlan } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 /** Business feature set. */
-const BIZ_FEATURES: Feature[] = [
+const BIZ_FEATURES: FeatureCluster[] = [
     {
         topic: 'Code intelligence platform',
         features: [
@@ -25,72 +18,44 @@ const BIZ_FEATURES: Feature[] = [
             'notebooks',
             'codeMonitoring',
             'comprehensiveApi',
-        ]
+        ],
     },
     {
         topic: 'Code host integrations',
-        features: [
-            'cloudHosts',
-            'repoConnections',
-        ]
+        features: ['cloudHosts', 'repoConnections'],
     },
     {
         topic: 'Security and admin',
-        features: [
-            'ssoSaml',
-            'securityRoles',
-            'repoPerms',
-            'analytics',
-        ]
+        features: ['ssoSaml', 'securityRoles', 'repoPerms', 'analytics'],
     },
     {
         topic: 'Scale and performance',
-        features: [
-            'businessStorage',
-            'businessExecutors',
-        ]
+        features: ['businessStorage', 'businessExecutors'],
     },
     { topic: '24/5 support' },
     { topic: 'Secure and dedicated Cloud deployment' },
 ]
 
-const ENTERPRISE_FEATURES: Feature[] = [
+const ENTERPRISE_FEATURES: FeatureCluster[] = [
     {
         topic: 'Flexible deployment',
-        features: [
-            'cloudDeployment',
-            'selfDeployment',
-        ]
+        features: ['cloudDeployment', 'selfDeployment'],
     },
     {
         topic: 'Code host integrations',
-        features: [
-            'unlimitedCodeHosts',
-            'selfHostedCodeHosts',
-            'enterpriseOnlyCodeHosts',
-            'privateCodeHosts',
-        ]
+        features: ['unlimitedCodeHosts', 'selfHostedCodeHosts', 'enterpriseOnlyCodeHosts', 'privateCodeHosts'],
     },
     {
         topic: 'Security and admin',
-        features: [
-            'customPerms',
-            'privateInstance',
-        ]
+        features: ['customPerms', 'privateInstance'],
     },
     {
         topic: 'Scale and performance',
-        features: [
-            'enterpriseStorage',
-            'enterpriseExecutors',
-        ]
+        features: ['enterpriseStorage', 'enterpriseExecutors'],
     },
     {
         topic: '24/5 priority support',
-        features: [
-            'slaSupport',
-            'dedicatedCe',
-        ]
+        features: ['slaSupport', 'dedicatedCe'],
     },
     { topic: 'Enterprise add ons' },
 ]
@@ -134,7 +99,7 @@ const FEATURE_COMPARE_DATA = [
                 business: true,
                 enterprise: true,
             },
-        ]
+        ],
     },
     {
         topic: 'Code host integrations',
@@ -159,8 +124,8 @@ const FEATURE_COMPARE_DATA = [
                 business: false,
                 enterprise: true,
             },
-        ]
-    }
+        ],
+    },
 ]
 
 const PricingPage: FunctionComponent = () => (
@@ -242,7 +207,9 @@ const PricingPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <h2 className="tw-text-center tw-mx-auto tw-mb-5 tw-max-w-2xl">The code intelligence platform for modern dev teams</h2>
+        <h2 className="tw-text-center tw-mx-auto tw-mb-5 tw-max-w-2xl">
+            The code intelligence platform for modern dev teams
+        </h2>
         <CustomerLogos />
 
         {/* TODO: Move data up a level, ref PricingPlanFeature w/ FEATURE_INFO dictionary */}
@@ -322,18 +289,18 @@ const PricingPage: FunctionComponent = () => (
                                         <h5>{feature.label}</h5>
                                     </td>
                                     <td className="tw-border-0 tw-border-x-2 tw-p-xs tw-text-center">
-                                        {typeof feature.business === 'string' ? feature.business :
-                                            feature.business ?
-                                            <CheckIcon className="mr-2 icon-inline tw-text-vermillion-300 tw-inline" /> :
-                                            null
-                                        }
+                                        {typeof feature.business === 'string' ? (
+                                            feature.business
+                                        ) : feature.business ? (
+                                            <CheckIcon className="mr-2 icon-inline tw-text-vermillion-300 tw-inline" />
+                                        ) : null}
                                     </td>
                                     <td className="tw-border-0 tw-p-xs tw-text-center">
-                                        {typeof feature.enterprise === 'string' ? feature.enterprise :
-                                            feature.enterprise ?
-                                            <CheckIcon className="mr-2 icon-inline tw-text-violet-400 tw-inline" /> :
-                                            null
-                                        }
+                                        {typeof feature.enterprise === 'string' ? (
+                                            feature.enterprise
+                                        ) : feature.enterprise ? (
+                                            <CheckIcon className="mr-2 icon-inline tw-text-violet-400 tw-inline" />
+                                        ) : null}
                                     </td>
                                 </tr>
                             ))}

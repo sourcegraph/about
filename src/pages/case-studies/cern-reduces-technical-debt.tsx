@@ -23,13 +23,13 @@ export const CaseStudy: FunctionComponent = () => (
         >
             <ContentSection background="white" slimWidth={true} className="tw-col-md-6 tw-pb-md">
                 <p>
-                    Physicists at CERN use some of the world's most powerful particle accelerators to discover what
-                    the universe is made of and how it works. Over the last 18 years, the organization's Java
-                    codebase for accelerator controls has grown to roughly 15 million lines of code. CERN operates
-                    within a self-contained software system that is developed and maintained by nearly 300 people,
-                    with all of its code in Sourcegraph. To achieve efficient development and safe upgrades,
-                    developers require a tool that lets them quickly and effectively search through their entire
-                    codebase so they can easily change and reuse code where necessary.{' '}
+                    Physicists at CERN use some of the world's most powerful particle accelerators to discover what the
+                    universe is made of and how it works. Over the last 18 years, the organization's Java codebase for
+                    accelerator controls has grown to roughly 15 million lines of code. CERN operates within a
+                    self-contained software system that is developed and maintained by nearly 300 people, with all of
+                    its code in Sourcegraph. To achieve efficient development and safe upgrades, developers require a
+                    tool that lets them quickly and effectively search through their entire codebase so they can easily
+                    change and reuse code where necessary.{' '}
                 </p>
                 <div className="row md:tw-justify-center tw-pt-xs">
                     <div className="col-md-8">
@@ -42,9 +42,9 @@ export const CaseStudy: FunctionComponent = () => (
                 </div>
                 <h2 className="tw-pt-md tw-pb-1">Avoiding reinventing the wheel with universal code search</h2>
                 <p>
-                    Sourcegraph empowers developers at CERN to reuse code that already exists, avoiding duplication
-                    and saving developers countless hours redoing work that has already been done. It takes search
-                    one step further by &quot;understanding&quot; the structure of the code (as opposed to just
+                    Sourcegraph empowers developers at CERN to reuse code that already exists, avoiding duplication and
+                    saving developers countless hours redoing work that has already been done. It takes search one step
+                    further by &quot;understanding&quot; the structure of the code (as opposed to just
                     &quot;seeing&quot; it as raw text), enabling the organization to do semantic searches that yield
                     accurate results.
                 </p>
@@ -74,17 +74,17 @@ export const CaseStudy: FunctionComponent = () => (
                     author="Chris Roderick"
                 />
                 <p>
-                    The Large Hadron Collider (LHC) at CERN features five-year operational periods and the software
-                    must be stable during this time. Sourcegraph helps developers make small, backward-compatible
-                    changes and ensures that any change made by a given team to one part of the codebase doesn't
-                    break (or require adaptations of) dependent code written by other people. It's essential that
-                    these changes are done correctly, as mistakes can stop the operation of the CERN accelerators
-                    and waste precious time for physics research.
+                    The Large Hadron Collider (LHC) at CERN features five-year operational periods and the software must
+                    be stable during this time. Sourcegraph helps developers make small, backward-compatible changes and
+                    ensures that any change made by a given team to one part of the codebase doesn't break (or require
+                    adaptations of) dependent code written by other people. It's essential that these changes are done
+                    correctly, as mistakes can stop the operation of the CERN accelerators and waste precious time for
+                    physics research.
                 </p>
                 <p>
                     The LHC also features upgrade periods of 1-2 years, during which developers typically make more
-                    radical changes. During these periods, Sourcegraph lets users identify redundant code (e.g.,
-                    utility methods) and assess the cost/benefit of doing breaking API changes.
+                    radical changes. During these periods, Sourcegraph lets users identify redundant code (e.g., utility
+                    methods) and assess the cost/benefit of doing breaking API changes.
                 </p>
                 <Blockquote
                     quote="Our solution prior to Sourcegraph didn't let us do detailed and precise searches on how and where a method of a specific class is used. As a result, we were unable to measure the impact that a planned API change would have on the rest of our huge codebase. This put us in a position where we weren't making necessary changes because we were unsure of the effect they would have."
@@ -92,9 +92,9 @@ export const CaseStudy: FunctionComponent = () => (
                 />
                 <p>
                     Universal code search lets developers at CERN make changes to their code, including those with
-                    potentially costly implications if done incorrectly, with ease and confidence. As the
-                    organization continues to uncover fascinating insights into how our universe works, Sourcegraph
-                    serves as its go-to tool for code reuse and code change management.{' '}
+                    potentially costly implications if done incorrectly, with ease and confidence. As the organization
+                    continues to uncover fascinating insights into how our universe works, Sourcegraph serves as its
+                    go-to tool for code reuse and code change management.{' '}
                 </p>
             </ContentSection>
         </CaseStudyLayout>
