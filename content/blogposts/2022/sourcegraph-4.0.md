@@ -113,7 +113,7 @@ Docs: provide a link to the updated docs
 ### Save time upgrading to Sourcegraph 4.0 with multi-version upgrades
 Multi-version upgrades help to reduce the burden and time required to upgrade to the latest version of Sourcegraph. Customers will now be able to seamlessly upgrade from any 3.20+ version to Sourcegraph 4.0 in just a few simple steps. With faster upgrades, customers can quickly start using the new features and enhancements that are released every month. 
 
-![Multi-version upgrades](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Multi-version%20Upgrades.gif "Multi-version upgrades")
+![Multi-version upgrades](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Multi-version%20Upgrades.mp4 "Multi-version upgrades")
 
 [Admin]
 
