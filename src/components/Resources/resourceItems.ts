@@ -17,7 +17,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code security'],
         description:
             'Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their codebase.',
-        publishDate: '2022-06-09T19:29:40Z',
+        publishDate: '2022-05-17T17:32:24Z',
     },
     {
         featured: true,
@@ -37,7 +37,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code health'],
         description:
             'The first part in a four part series on how you can reduce cloud costs. This piece reviews the importance of creating visibility and practical ways you can do this using Sourcegraph',
-        publishDate: '',
+        publishDate: '2022-08-15T21:19:11Z',
     },
     {
         featured: false,
@@ -47,7 +47,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code security', 'developer onboarding', 'incident response', 'code reuse', 'code health'],
         description:
             "Sourcegraph's code intelligence platform does more than search. It helps developers save time and move faster, regardless of how complex your codebase is.",
-        publishDate: '',
+        publishDate: '2022-07-12T16:37:10Z',
     },
     {
         featured: false,
@@ -56,7 +56,7 @@ export const resourceItems: Resource[] = [
         contentType: 'guide',
         subjects: ['code security', 'developer onboarding', 'incident response', 'code reuse', 'code health'],
         description: 'Go beyond search and transform your entire codebase into knowledge, actions, and insights.',
-        publishDate: '',
+        publishDate: '2022-08-03T13:12:47Z',
     },
     {
         featured: false,
@@ -65,7 +65,7 @@ export const resourceItems: Resource[] = [
         contentType: 'guide',
         subjects: ['code health', 'developer onboarding', 'code security'],
         description: 'Learn how frontend platform engineers can use Sourcegraph to visualize project progress.',
-        publishDate: '',
+        publishDate: '2022-07-28T20:11:11Z',
     },
     {
         featured: false,
@@ -75,7 +75,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code security', 'developer onboarding'],
         description:
             "Learn how Codecov uses Sourcegraph to resolve incidents like Log4j 12x faster than with their code host's native search  functionality, with 100% confidence.",
-        publishDate: '',
+        publishDate: '2022-07-29T21:40:56Z',
     },
     {
         featured: false,
@@ -85,7 +85,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code health', 'developer onboarding', 'code reuse'],
         description:
             'Your devs need code search to understand, fix, and automate across your company’s growing codebase. Three key questions to ask before building an in-house tool.',
-        publishDate: '',
+        publishDate: '2022-07-08T18:31:09Z',
     },
     {
         featured: false,
@@ -95,7 +95,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code security'],
         description:
             "What does shift left actually mean? What's being shifted? Who's doing the shifting? How far left should we shift it?",
-        publishDate: '',
+        publishDate: '2022-08-10T14:59:35Z',
     },
     {
         featured: false,
@@ -105,7 +105,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code health'],
         description:
             'Learn how to use Code Insights to turn your most pressing analytics questions into KPIs you can track with mere seconds of setup.',
-        publishDate: '',
+        publishDate: '2022-05-17T18:01:30Z',
     },
     {
         featured: false,
@@ -115,7 +115,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code security', 'developer onboarding', 'incident response', 'code reuse', 'code health'],
         description:
             'Learn how Sourcegraph and other innovative tools help engineers and engineering leaders boost developer productivity while mitigating security risks.',
-        publishDate: '',
+        publishDate: '2022-06-03T16:46:58Z',
     },
     {
         featured: false,
@@ -125,7 +125,7 @@ export const resourceItems: Resource[] = [
         subjects: ['developer onboarding'],
         description:
             'How continuous onboarding cultivates an environment that enables developers to build themselves as flexible and resilient engineers.',
-        publishDate: '',
+        publishDate: '2022-03-24T18:43:23Z',
     },
     {
         featured: false,
@@ -135,7 +135,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code security'],
         description:
             'When finding security vulnerabilities, simplicity is key. Learn how to decrease recovery time with a single search by improving tooling and processes.',
-        publishDate: '',
+        publishDate: '2022-05-27T00:15:52Z',
     },
     {
         featured: false,
@@ -145,7 +145,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code security'],
         description:
             'Code security at tech companies large and small: How Google, Microsoft, Lyft, GitLab, and Atlassian find and fix vulnerabilities.',
-        publishDate: '',
+        publishDate: '2022-06-23T20:46:12Z',
     },
     {
         featured: false,
@@ -155,7 +155,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code security'],
         description:
             'Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their codebase.',
-        publishDate: '',
+        publishDate: '2022-04-12T17:11:27Z',
     },
     {
         featured: false,
@@ -174,7 +174,8 @@ export const resourceItems: Resource[] = [
         contentType: 'video',
         subjects: ['code security', 'developer onboarding', 'incident response', 'code reuse', 'code health'],
         description: 'Find and fix code across your codebase fast with Sourcegraph. Watch this video to see how.',
-        publishDate: '',
+        publishDate: '2022-09-10T19:11:15Z',
+        // TODO ^ update to merge date of this PR
     },
     {
         featured: false,
@@ -184,7 +185,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code security', 'developer onboarding', 'incident response', 'code reuse', 'code health'],
         description:
             'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Sourcegraph.',
-        publishDate: '',
+        publishDate: '2022-03-08T23:02:35Z',
     },
     {
         featured: false,
@@ -194,7 +195,7 @@ export const resourceItems: Resource[] = [
         subjects: ['developer onboarding'],
         description:
             'Decrease time to first commit for new developers, help existing engineers master your codebase, and fast-track full codebase understanding.',
-        publishDate: '',
+        publishDate: '2022-07-20T18:12:51Z',
     },
     {
         featured: false,
@@ -204,7 +205,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code reuse'],
         description:
             'Find existing code libraries for reuse and avoid spending time on problems a teammate already solved for a more secure and coherent codebase.',
-        publishDate: '',
+        publishDate: '2022-07-20T18:12:51Z',
     },
     {
         featured: false,
@@ -214,7 +215,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code health'],
         description:
             'Tackle refactoring efforts and tech debt from legacy systems with automated pull requests across your entire codebase to boost code health.',
-        publishDate: '',
+        publishDate: '2022-07-20T18:12:51Z',
     },
     {
         featured: false,
@@ -224,7 +225,7 @@ export const resourceItems: Resource[] = [
         subjects: ['incident response'],
         description:
             'Identify the root cause of an incident, understand its potential impact, fix the issue everywhere in your codebase. Incident response from Sourcegraph.',
-        publishDate: '',
+        publishDate: '2022-07-20T18:12:51Z',
     },
     {
         featured: false,
@@ -233,7 +234,7 @@ export const resourceItems: Resource[] = [
         contentType: 'guide',
         subjects: ['code security'],
         description: 'Search across all your repositories to find and resolve vulnerabilities in minutes, not days.',
-        publishDate: '',
+        publishDate: '2022-07-20T18:12:51Z',
     },
     {
         featured: false,
@@ -242,7 +243,7 @@ export const resourceItems: Resource[] = [
         contentType: 'customer story',
         subjects: ['code reuse'],
         description: 'Learn how FactSet uses Sourcegraph after migrating from Perforce to GitHub.',
-        publishDate: '',
+        publishDate: '2021-09-01T21:14:48Z',
     },
     {
         featured: false,
@@ -251,7 +252,7 @@ export const resourceItems: Resource[] = [
         contentType: 'customer story',
         subjects: ['code health', 'code security', 'code reuse'],
         description: 'Learn how Cloudflare accelerates debugging and improves security.',
-        publishDate: '',
+        publishDate: '2021-05-21T00:50:08Z',
     },
     {
         featured: false,
@@ -260,7 +261,7 @@ export const resourceItems: Resource[] = [
         contentType: 'customer story',
         subjects: ['code security', 'code health'],
         description: 'Learn how Indeed keeps code up to date and accelerates development velocity.',
-        publishDate: '',
+        publishDate: '2021-04-29T18:53:55Z',
     },
     {
         featured: false,
@@ -270,7 +271,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code health'],
         description:
             'Learn how Workiva uses Sourcegraph Batch Changes to reduce the time it takes to make large-scale code updates by 80%.',
-        publishDate: '',
+        publishDate: '2021-03-24T12:17:20Z',
     },
     {
         featured: false,
@@ -280,7 +281,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code reuse', 'code health'],
         description:
             'Sourcegraph empowers developers at CERN to reuse existing code and manage mission-critical code changes with ease.',
-        publishDate: '',
+        publishDate: '2020-12-24T19:26:20Z',
     },
     {
         featured: false,
@@ -290,7 +291,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code health'],
         description:
             'Sourcegraph provides Criteo the ability to cross boundaries of different codebases and languages authored by different people with different tools.',
-        publishDate: '',
+        publishDate: '2020-10-27T18:12:04Z',
     },
     {
         featured: false,
@@ -300,7 +301,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code health'],
         description:
             "With Sourcegraph, F5's global workforce can stay better connected and quickly solve problems across the entire codebase.",
-        publishDate: '',
+        publishDate: '2020-10-12T22:15:04Z',
     },
     {
         featured: false,
@@ -309,7 +310,7 @@ export const resourceItems: Resource[] = [
         contentType: 'customer story',
         subjects: ['developer onboarding', 'code health'],
         description: 'At Convoy, Sourcegraph helps improve the developer on-boarding process.',
-        publishDate: '',
+        publishDate: '2019-11-11T17:12:10Z',
     },
     {
         featured: false,
@@ -319,7 +320,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code health'],
         description:
             'How Sourcegraph helped Lyft ensure (largely) issue-free production deploys during their monolith to microservices decomposition.',
-        publishDate: '',
+        publishDate: '2019-12-13T22:35:29Z',
     },
     {
         featured: false,
@@ -329,7 +330,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code health', 'code reuse'],
         description:
             'How Sourcegraph enables Quantcast to do major refactors with confidence over thousands of repositories.',
-        publishDate: '',
+        publishDate: '2019-08-06T20:36:42Z',
     },
     {
         featured: false,
@@ -339,7 +340,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code health', 'code reuse'],
         description:
             'With Sourcegraph, SoFi can innovate and move quickly while keeping up with hundreds of microservices.',
-        publishDate: '',
+        publishDate: '2019-11-21T22:22:32Z',
     },
     {
         featured: false,
@@ -349,6 +350,6 @@ export const resourceItems: Resource[] = [
         subjects: ['code health'],
         description:
             'How Sourcegraph code search enabled Thorn to systematically sunset legacy systems safely, removing huge amounts of tech debt in the process.',
-        publishDate: '',
+        publishDate: '2019-06-25T01:10:08Z',
     },
 ]
