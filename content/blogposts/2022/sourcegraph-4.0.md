@@ -47,10 +47,13 @@ Media: provide a screenshot, gif, or video to help support the copy
 [Code Insights]
 
 Docs: provide a link to the updated docs
+
 ### Configure precise code navigation for 9 languages in a matter of minutes with auto-indexing
 Code navigation allows you to quickly jump to symbol definitions, find references, dependencies, and more, so you can spend more time shipping code. Precise code navigation is the most powerful version of code navigation and it works cross-repository. We now support 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, JavaScript. Auto-indexing makes precise code navigation work across all of your code, automatically, and it’s turned on by default for our Cloud customers. 
 
-![ruby-precise](https://storage.googleapis.com/sourcegraph-assets/docs/images/code-intelligence/4.0/ruby-precise.gif "Ruby-precise-code-navigation")
+<video loop autoplay muted playsinline>
+<source src="https://storage.googleapis.com/sourcegraph-assets/docs/images/code-intelligence/4.0/ruby-precise.mp4" type="video/mp4" />
+</video>
 
 [Code Navigation]
 
@@ -77,7 +80,10 @@ Batch Changes can now run across thousands of repositories with a better develop
 
 This feature requires admins to set up executors (much like CI agents), which Sourcegraph will use to offload expensive tasks. Executors can also be used to run [Code Intelligence auto-indexing](https://github.com/sourcegraph/about/blob/bf341aafde75450c295aaec064470017020cdcd8/content/blogposts/2022/sourcegraph-4.0.md#TODO-link-to-section-or-docs) as well. One or more executors are available by default on Cloud instances of Sourcegraph.
 
-![Server-Side Batch Changes](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Batch_Changes_Side_by_Side.mp4 "Server-Side Batch Changes")
+<video loop autoplay muted playsinline>
+<source src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Batch_Changes_Side_by_Side.mp4" type="video/mp4" />
+</video>
+
 
 [Batch Changes]
 
@@ -113,7 +119,10 @@ Docs: provide a link to the updated docs
 ### Save time upgrading to Sourcegraph 4.0 with multi-version upgrades
 Multi-version upgrades help to reduce the burden and time required to upgrade to the latest version of Sourcegraph. Customers will now be able to seamlessly upgrade from any 3.20+ version to Sourcegraph 4.0 in just a few simple steps. With faster upgrades, customers can quickly start using the new features and enhancements that are released every month. 
 
-![Multi-version upgrades](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Multi-version%20Upgrades.mp4 "Multi-version upgrades")
+<video loop autoplay muted playsinline>
+<source src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Multi-version%20Upgrades.mp4" type="video/mp4" />
+</video>
+
 
 [Admin]
 
