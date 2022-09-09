@@ -16,13 +16,9 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
     >
         <div className="container py-7">
             <div className="row">
-                <div className="col-lg-6 pr-lg-5">
-                    <h1 className="mb-4 font-weight-bold">
-                        Accelerate developer onboarding and decrease time to first commit
-                    </h1>
-                    <h4 className="font-weight-bold">
-                        Self-serve onboarding, codebase exploration, and knowledge sharing
-                    </h4>
+                <div className="col-lg-6 lg:tw-pr-md">
+                    <h1 className="mb-4">Accelerate developer onboarding and decrease time to first commit</h1>
+                    <h4>Self-serve onboarding, codebase exploration, and knowledge sharing</h4>
                     <p>
                         With Sourcegraph, developers can find their own answers without waiting for someone to point
                         them to the relevant code. Get sharable links to help developers ask specific questions with
@@ -34,13 +30,13 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                     </div>
                 </div>
 
-                <div className="col-lg-6 mt-4 mt-lg-0">
+                <div className="mt-4 col-lg-6 mt-lg-0">
                     <YouTube title="Accelerate developer onboarding with Sourcegraph" id="DgwvhRW1Cbc" />
                 </div>
             </div>
         </div>
 
-        <div className="bg-gradient-saturn-saturated">
+        <div className="sg-bg-gradient-saturn">
             <div className="container py-7 max-w-650">
                 <Blockquote
                     headline="Learn how Convoy increases the efficiency and confidence of entry level developers"
@@ -55,15 +51,15 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
             </div>
         </div>
 
-        <div className="text-center">
+        <div className="tw-text-center">
             <div className="container py-7 max-w-650">
-                <h2 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h2>
+                <h2>Ready to accelerate developer onboarding? Let's talk.</h2>
 
-                <div className="mt-5 max-w-400 mx-auto">
+                <div className="mt-5 tw-mx-auto max-w-400">
                     <Link href="/demo">
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="btn btn-primary mt-5 d-block d-sm-inline-block"
+                            className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
                             title="Request a demo"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.bodyDemo}

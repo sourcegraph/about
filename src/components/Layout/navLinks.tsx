@@ -32,10 +32,6 @@ export const navLinks: NavLink[] = [
                 title: 'Code Insights',
                 href: '/code-insights',
             },
-            {
-                title: 'Code Intelligence',
-                href: 'https://docs.sourcegraph.com/code_intelligence',
-            },
         ],
     },
     {

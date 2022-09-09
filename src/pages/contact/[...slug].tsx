@@ -17,10 +17,10 @@ const ContactPage: NextPage<ContactPageProps> = ({ title, description, masterFor
         }}
     >
         <div className="bg-white text-dark">
-            <div className="container-xl py-5 px-5">
+            <div className="px-5 py-5 container-xl">
                 <div className="row">
                     <div className="col-md-6">
-                        <h1 className="display-3 font-weight-bold">{title}</h1>
+                        <h1>{title}</h1>
                         <h3 className="font-weight-light">{description}</h3>
 
                         <div className="mt-5">

@@ -26,6 +26,10 @@ changelogItems:
 ---
 
 <Alert>
+  <strong>Update as of July 29:</strong> Patch 3.42.1 has been released, which fixes the issue below. If you previously download 3.42.0 and turned off `sgm`, we recommend upgrading to 3.42.1 and turning on `sgm` to fix any repo corruption.
+</Alert>
+
+<Alert>
   <strong>Update as of July 27:</strong> We identified a bug in Sourcegraph 3.42 that can cause issues with gitserver. We are working to fix this in an upcoming patch. In the meantime, we recommend running version 3.41.
 </Alert>
 
@@ -57,17 +61,10 @@ This is especially useful for engineers joining new teams or onboarding to a cod
 
 ![Search for repository by description](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/repo-description-search.png)
 
-## Smart search suggestions with lucky search
-
-We have a new search type available experimentally, called "Lucky search." It improves the quality of your search experience by giving you smart suggestions for alternate queries, and it even runs them automatically to make sure they have results before recommending them. You can enable it by setting `"search.defaultPatternType": "lucky"` in settings.
-
-![Search suggestion example](https://storage.googleapis.com/sourcegraph-assets/docs/images/code_search/lucky-search.png)
-
 ## Code Insights load faster and include more historical datapoints
 
 <Video
   title="Faster code insights"
-  caption="An example of code insights loading faster"
   source={{
     mp4: "blog/3.42/3.42InsightsSpeedImprovements",
     webm: "blog/3.42/3.42InsightsSpeedImprovements"

@@ -72,8 +72,8 @@ This is the only thing that you need to know to understand the rest of this talk
 This is the "Guess the Number Game", a game that many of you played when you were kids. You'd ask your friends to guess a number within a specific range, like 1-100. Your friend would throw out a number like "57". Their first guess was generally wrong since the range is so broad, but you were allowed to tell them if their guess was higher or lower than the answer. They'd keep guessing new numbers, taking into account the hints that you'd give them, and eventually they'd guess the right answer.
 
 <Figure 
-alt="Binary search illustration" 
-src="https://user-images.githubusercontent.com/9022011/44758764-7b777000-aaf3-11e8-92d4-ebb4e92c2832.png"
+    alt="Binary search illustration" 
+    src="https://user-images.githubusercontent.com/9022011/44758764-7b777000-aaf3-11e8-92d4-ebb4e92c2832.png"
 />
 
 This guessing game is pretty much exactly what goes on during binary search. If you understand this guessing game, you also understand the core principal behind binary search tree algorithms. The numbers that they guessed are the numbers in the tree, and the "higher"/"lower" hints tell you the direction that you need to move: either to the right or left child node.

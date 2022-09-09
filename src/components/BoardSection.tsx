@@ -45,11 +45,15 @@ const BOARD: {
 export const BoardSection: FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div id="board" className={`${className}`}>
         <h2>Board of Directors</h2>
-        <div className="row my-5">
+
+        <div className="my-5 row">
             {BOARD.map(boardMembers => (
-                <div key={`${boardMembers.name.replace(' ', '-').toLowerCase()}`} className="col-lg-4 mb-6">
+                <div
+                    key={`${boardMembers.name.replace(' ', '-').toLowerCase()}`}
+                    className="mb-6 col-lg-4 tw-flex tw-flex-col"
+                >
                     <img
-                        className="max-w-200 rounded-circle mb-4"
+                        className="mb-4 max-w-200 tw-rounded-full"
                         src={boardMembers.image}
                         alt={`Sourcegraph Board of Directors: ${boardMembers.name} - ${boardMembers.title}`}
                     />

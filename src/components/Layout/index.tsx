@@ -45,7 +45,9 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
         description:
             props.meta?.description ||
             'Find and fix things across all of your code with Sourcegraph universal code search.',
-        image: props.meta?.image || 'https://storage.googleapis.com/sourcegraph-assets/sourcegraph-social-image.png',
+        image:
+            props.meta?.image ||
+            'https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/meta/sourcegraph-social.png',
         icon: props.meta?.icon || 'https://about.sourcegraph.com/favicon.png',
     }
 
@@ -61,7 +63,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
     }
 
     return (
-        <div className={`d-flex flex-column min-vh-100 ${props.className || ''}`}>
+        <div className={`tw-flex tw-flex-col min-vh-100 ${props.className || ''}`}>
             <Head>
                 <title>{meta.externalTitle || meta.title}</title>
                 <meta name="description" content={meta.externalDescription || meta.description} />
@@ -122,7 +124,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                 </div>
             )}
 
-            <section className="flex-1">{props.children}</section>
+            <section className="tw-flex-1">{props.children}</section>
 
             {!props.hideFooter && <Footer className={`${props.className || ''}`} minimal={props.minimal} />}
         </div>

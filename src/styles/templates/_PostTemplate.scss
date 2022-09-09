@@ -4,7 +4,7 @@
 
         &-title {
             &-link {
-                color: $dark-8;
+                color: #000;
             }
         }
 
@@ -25,6 +25,16 @@
             max-width: 100%;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        code {
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 85%;
+            border-radius: 3px;
+            background: var(--sg-color-gray-100);
+            color: var(--sg-color-blue-500);
+            border: 1px solid var(--sg-color-gray-200);
         }
 
         p {

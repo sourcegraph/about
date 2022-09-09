@@ -10,7 +10,6 @@ import Link from 'next/link'
 
 import { ContentSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
-import { useWindowWidth } from '@hooks'
 
 interface UseCases {
     icon: MdiReactIconComponentType
@@ -73,8 +72,8 @@ const useCases: UseCases[] = [
 const UseCases: FunctionComponent = () => {
     const box = useRef<HTMLDivElement | null>(null)
     const [boxHeight, setBoxHeight] = useState<number>(0)
-    const windowWidth = useWindowWidth()
-    const boxHalfHeight = `-${boxHeight / 2}px`
+    const bottomContainerPadding = 96
+    const boxHalfHeight = `-${boxHeight / 2 + bottomContainerPadding}px`
 
     function getBoxHeight(): void {
         if (box.current) {
@@ -95,21 +94,21 @@ const UseCases: FunctionComponent = () => {
     }, [])
 
     return (
-        <ContentSection className="position-relative pt-5 pt-md-7">
-            <div className="text-center">
-                <h1 className="font-weight-bold">Move fast &mdash; even in big codebases</h1>
+        <ContentSection className="tw-relative">
+            <div className="tw-text-center">
+                <h2>Move fast &mdash; even in big codebases</h2>
             </div>
 
-            <div className="row max-w-900 mx-auto mt-6">
+            <div className="tw-mx-auto mt-6 row max-w-900">
                 {useCases.map(useCase => (
                     <div
                         key={useCase.title}
-                        className="col-sm-6 d-flex flex-column flex-sm-row align-items-center align-items-sm-start mb-6"
+                        className="mb-6 col-sm-6 tw-flex tw-flex-col sm:tw-flex-row tw-items-center sm:tw-items-start"
                     >
-                        <useCase.icon className="text-vivid-violet w-100 max-w-50 h-auto mr-sm-3 mb-4 mb-sm-0" />
-                        <div className="text-center text-sm-left">
-                            <h4 className="font-weight-bold">{useCase.title}</h4>
-                            <div className="text-lg">
+                        <useCase.icon className="mb-4 tw-h-auto tw-text-violet-400 w-100 max-w-50 mr-sm-3 mb-sm-0" />
+                        <div className="tw-text-center sm:tw-text-left">
+                            <h4>{useCase.title}</h4>
+                            <div className="tw-text-lg">
                                 <p className="m-0">{useCase.description}</p>
                                 {useCase.link && (
                                     <Link href={useCase.link.href}>
@@ -133,13 +132,13 @@ const UseCases: FunctionComponent = () => {
             <div
                 ref={box}
                 // eslint-disable-next-line react/forbid-dom-props
-                style={{ marginBottom: boxHalfHeight, width: '90%' }}
-                className="col-6 bg-gradient-venus px-4 py-6 p-sm-6 px-xl-7 py-xl-6 mx-auto mx-xl-0 xl-absolute right-0 max-w-550 bottom-0 text-center text-sm-left"
+                style={{ marginBottom: boxHalfHeight }}
+                className="tw-px-6 tw-py-16 tw-mx-auto tw-text-center sg-bg-gradient-venus sm:tw-p-16 xl:tw-px-24 xl:tw-py-16 xl:tw-mx-0 xl:tw-absolute tw-right-0 tw-max-w-[550px] tw-bottom-0 sm:tw-text-left tw-w-[90%]"
             >
-                <h3 className="font-weight-bold mb-4 pr-sm-0 pr-md-7 pr-xl-4">
+                <h3 className="mb-4 pr-sm-0 pr-md-7 pr-xl-4 tw-font-semibold">
                     Want to use Sourcegraph at your company?
                 </h3>
-                <p className="text-xl">
+                <p className="tw-text-xl">
                     <Link href="/get-started/self-hosted" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
@@ -167,7 +166,7 @@ const UseCases: FunctionComponent = () => {
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="btn btn-primary mt-5 d-block d-sm-inline-block"
+                            className="tw-mt-8 btn btn-primary tw-block sm:tw-inline-block"
                             title="Request a demo"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.bodyDemo}

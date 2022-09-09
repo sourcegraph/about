@@ -5,12 +5,12 @@ import { Layout, HubSpotForm } from '@components'
 const Uninstall: FunctionComponent = () => (
     <Layout>
         <div>
-            <section className="text-center py-4 bg-dark text-light">
+            <section className="tw-text-center py-4 bg-dark text-light">
                 <h1>Thank you for using Sourcegraph</h1>
             </section>
-            <section className="p-4 mx-auto max-w-500 bg-white text-dark">
+            <section className="p-4 tw-mx-auto max-w-500 bg-white text-dark">
                 <div className="measure-wide center">
-                    <div className="d-flex flex-column p-4 mx-auto">
+                    <div className="tw-flex tw-flex-col p-4 tw-mx-auto">
                         <h3>Why did you uninstall the Sourcegraph browser extension?</h3>
                         <p>Your feedback helps us improve the product for everyone.</p>
                         <HubSpotForm

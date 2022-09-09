@@ -11,8 +11,8 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
         description:
             'Super-fast, intuitive, and powerful code search across 10,000s of repositories, with smart filters and more',
     },
-    codeIntelligence: {
-        label: 'Code intelligence',
+    codeNavigation: {
+        label: 'Code navigation',
         description: 'Code navigation for 30+ languages, with hovers, definitions, and references across repositories',
     },
     batchChanges: {
@@ -108,7 +108,7 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
 
 const FEATURE_ORDER: (keyof Features)[] = [
     'codeSearch',
-    'codeIntelligence',
+    'codeNavigation',
     'codeHostIntegration',
     'selfHosted',
     'multipleCodeHosts',
@@ -181,15 +181,15 @@ export const PricingPlan: FunctionComponent<Props> = ({
 
     return (
         <div className={`h-100 card ${className}`}>
-            <h2 className="mt-3 mb-1 text-center display-2 font-weight-bolder">{name}</h2>
-            <div className="py-3 text-center d-flex flex-column align-items-center">
+            <h2 className="mt-3 mb-1 tw-text-center tw-font-semibold">{name}</h2>
+            <div className="py-3 tw-text-center tw-flex tw-flex-col tw-items-center">
                 {button}
-                <div className="mt-4 mb-2 pb-2 text-xl text-muted">{price}</div>
+                <div className="tw-pb-xxs mt-4 mb-2 tw-text-xl text-muted">{price}</div>
                 {planProperties}
             </div>
-            <ol className="list-group list-group-flush py-3 px-6">
+            <ol className="px-6 py-3 ml-0 list-group list-group-flush">
                 {!isFree ? (
-                    <li className="list-group-item bg-transparent text-xl border-0 px-0">
+                    <li className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-item">
                         Everything in the Free tier, plus:
                     </li>
                 ) : null}
@@ -199,7 +199,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
                             info={FEATURE_INFO[feature]}
                             value={features[feature]}
                             tag="li"
-                            className="list-group-item bg-transparent text-xl border-0 px-0"
+                            className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-item"
                         />
                     </div>
                 ))}

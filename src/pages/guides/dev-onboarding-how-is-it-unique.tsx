@@ -1,7 +1,7 @@
 /* eslint-disable unicorn/prevent-abbreviations */
 import { FunctionComponent } from 'react'
 
-import { Layout, GatedResourceLayout } from '@components'
+import { Layout, GatedResourceLayout, Hero } from '@components'
 
 export const Guide: FunctionComponent = () => (
     <Layout
@@ -11,14 +11,20 @@ export const Guide: FunctionComponent = () => (
                 'A guide to understanding how to create a developer onboarding program that differs from general employee onboarding and creates an engaged development team.',
         }}
         className="bg-white"
+        hero={
+            <Hero
+                variant="darkSimpleGrid"
+                title="Developer onboarding: What makes it unique?"
+                subtitle="A guide to creating an effective developer onboarding program"
+            />
+        }
     >
         <GatedResourceLayout
             title="Developer onboarding: What makes it unique?"
-            subtitle="A guide to creating an effective developer onboarding program"
             formLabel="Download the guide"
             resource="/guides/sg-dev-onboarding-what-makes-it-unique.pdf"
             description={
-                <section className="col-md-6 col-12 pr-lg-6">
+                <section className="col-md-6 col-12 lg:tw-pr-3xl">
                     <p>
                         Your organization's ability to onboard new developers may be the difference between high
                         attrition rates and an engaged, productive development team. But designing effective, delightful

@@ -18,9 +18,7 @@ We split the recording of this episode into two parts: the first focuses on Paul
 
 Check out the first recording below, and be sure to [sign up for upcoming events](https://info.sourcegraph.com/dev-tool-time)!
 
-<div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/IBHjKNnEM1Q" title="YouTube video player"frameBorder="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowFullScreen></iframe>
-</div>
+<YouTube id="IBHjKNnEM1Q" />
 
 Let’s check out Paul’s desk:
 
@@ -92,6 +90,4 @@ By the end of his CUE tour, Paul said “We’ve barely scratched the surface.�
 
 Check out the recording of the CUE tour below, and be sure to [sign up for upcoming events](https://info.sourcegraph.com/dev-tool-time)!
 
-<div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mU-lEszuht0" title="YouTube video player"frameBorder="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowFullScreen></iframe>
-  </div>
+<YouTube id="mU-lEszuht0" />

@@ -1,14 +1,14 @@
 /* ======== Bootstrap Carousel style overrides ======== */
 .carousel {
     .carousel-indicators {
-        bottom: 5%;
+        bottom: -50px;
 
         .active {
             opacity: 1;
         }
 
         button {
-            background-color: $space-black;
+            background-color: #000;
             opacity: 0.5;
             width: 10px;
             height: 10px;

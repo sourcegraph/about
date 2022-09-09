@@ -23,7 +23,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
 
     return (
         <div id="mobile-navbar" className={`collapse navbar-collapse ${isOpen ? 'show' : 'hide'}`}>
-            <ul className="nav navbar-nav">
+            <ul className="ml-0 nav navbar-nav">
                 {navLinks.map(navLink =>
                     navLink.items.length === 1 ? (
                         navLink.items.map(item =>
@@ -60,7 +60,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                             )
                         )
                     ) : (
-                        <li className="align-items-center nav-item" role="presentation" key={navLink.section}>
+                        <li className="tw-items-center nav-item" role="presentation" key={navLink.section}>
                             <span
                                 role="button"
                                 className="nav-link navbar-toggle collapsed"
@@ -82,11 +82,11 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                                 tabIndex={0}
                             >
                                 {navLink.section}
-                                <ChevronDownIcon className="ml-1" />
+                                <ChevronDownIcon className="ml-1 tw-inline" />
                             </span>
                             <ul
                                 id={navLink.section.split(' ').join('-').toLowerCase() + '-menu'}
-                                className={`sub-menu collapse navbar-collapse ${
+                                className={`sub-menu collapse navbar-collapse ml-2 ${
                                     openMobileMenu[camelCase(navLink.section)] ? 'show' : 'hide'
                                 }`}
                             >
@@ -139,7 +139,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                 </li>
 
                 {!hideGetStartedButton && (
-                    <li className="align-items-center nav-item" role="presentation">
+                    <li className="tw-items-center nav-item" role="presentation">
                         <a
                             className="nav-link"
                             href="https://sourcegraph.com/search"
@@ -152,7 +152,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                         </a>
                     </li>
                 )}
-                <li className="align-items-center nav-item" role="presentation">
+                <li className="tw-items-center nav-item" role="presentation">
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
@@ -167,7 +167,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                     </Link>
                 </li>
                 {!hideGetStartedButton && (
-                    <li className="align-items-center nav-item" role="presentation">
+                    <li className="tw-items-center nav-item" role="presentation">
                         <Link href="/get-started/self-hosted" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a

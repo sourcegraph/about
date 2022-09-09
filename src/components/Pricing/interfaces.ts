@@ -3,7 +3,7 @@
  */
 export interface Features {
     codeSearch: boolean
-    codeIntelligence: boolean
+    codeNavigation: boolean
     batchChanges: boolean
     batchChangesTrial: boolean
     codeHostIntegration: boolean

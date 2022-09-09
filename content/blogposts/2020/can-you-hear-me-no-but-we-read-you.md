@@ -34,11 +34,16 @@ Our team has been growing quickly, expanding from just a single product manager 
 
 When we held our next product team sync, the whole team joined sans audio. We would all depend only on captions to follow the conversation.
 
-<blockquote className="border-left border-3 border-vermillion px-4">
-<p><strong>A quick caution</strong></p>
-<p>Most exercises to simulate the experience of living with a disability aren’t effective—or even a good idea—because they can never truly simulate what it’s like to live day-by-day, and can leave folks with a mistaken idea of the experience.</p>
-<p>But this idea was compelling because the unique nature of the hacky setup I’m using means that it’s not about <em>ability</em>, it’s about <em>technology</em>. It wasn’t about learning what it’s like to do video calls with a hearing problem: it was about learning what it’s like to rely on captions for video calls.</p>
-</blockquote>
+<Blockquote
+  headline="A quick caution"
+  quote={
+    <>
+      <p className="tw-inline">Most exercises to simulate the experience of living with a disability aren’t effective—or even a good idea—because they can never truly simulate what it’s like to live day-by-day, and can leave folks with a mistaken idea of the experience.</p>
+      <br /><br />
+      <p className="tw-inline">But this idea was compelling because the unique nature of the hacky setup I’m using means that it’s not about <em>ability</em>, it’s about <em>technology</em>. It wasn’t about learning what it’s like to do video calls with a hearing problem: it was about learning what it’s like to rely on captions for video calls.</p>
+    </>
+  }
+/>
 
 ## What we did
 

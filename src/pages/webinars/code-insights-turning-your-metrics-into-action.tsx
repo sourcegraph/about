@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { Layout, GatedResourceLayout, ContentSection } from '@components'
+import { Layout, GatedResourceLayout, ContentSection, Hero } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const speakers = [
@@ -31,10 +31,16 @@ const Webinar: FunctionComponent = () => {
                 description:
                     'Join Sourcegraph Product Manager Joel Kwartler and Customer Engineer Shawn King to learn how to use Code Insights to turn your most pressing analytics questions into KPIs you can track with mere seconds of setup.',
             }}
+            hero={
+                <Hero
+                    variant="marsCode"
+                    title={'Sourcegraph Code Insights: \n Turning Metrics into Action'}
+                    subtitle="How to track what really matters to you and your team"
+                />
+            }
         >
             <GatedResourceLayout
-                title={'Sourcegraph Code Insights: \n Turning Metrics into Action'}
-                subtitle="How to track what really matters to you and your team"
+                title="Sourcegraph Code Insights: Turning Metrics into Action"
                 speakers={speakers}
                 formLabel="Watch the on-demand webinar"
                 onFormSubmitted={() =>
@@ -44,7 +50,7 @@ const Webinar: FunctionComponent = () => {
                     })
                 }
                 description={
-                    <section className="col-md-6 col-12 pr-lg-6">
+                    <section className="col-md-6 col-12 lg:tw-pr-3xl">
                         <p>
                             Learn how to use Code Insights to turn your most pressing analytics questions into KPIs you
                             can track with mere seconds of setup.
@@ -84,12 +90,12 @@ const Webinar: FunctionComponent = () => {
                 }
                 videoSrc="https://www.youtube.com/embed/dXKvetMozB0"
                 learnMoreCTA={
-                    <ContentSection className="d-flex flex-column align-items-center py-7">
-                        <h1 className="font-weight-bold text-center">Want to learn more about Code Insights?</h1>
+                    <ContentSection className="tw-flex tw-flex-col tw-items-center">
+                        <h1 className="tw-text-center">Want to learn more about Code Insights?</h1>
                         <Link href="/contact/request-code-insights-demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="btn btn-primary mt-4 col-12 col-md-3 col-xl-2"
+                                className="mt-4 btn btn-primary col-12 col-md-3 col-xl-2"
                                 title="Request a Demo"
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.bodyDemo}

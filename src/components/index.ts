@@ -1,25 +1,31 @@
 // Common
 export { Alert } from './Alert'
-export { BackButton, BackButtonBold, BackButtonLight } from './BackButton'
+export { BackButton } from './BackButton'
+export { Background } from './Background'
+export { Badge } from './Badge'
 export { Blockquote } from './Blockquote'
-export { BlogResourceItem } from './BlogResourceItem'
 export { BoardSection } from './BoardSection'
 export { ContentSection } from './ContentSection'
+export { CoreFeatures } from './CoreFeatures'
+export { CtaSection } from './CtaSection'
 export { CustomerLogos } from './CustomerLogos'
-export { FeatureWalkthrough } from './FeatureWalkthrough'
+export { DemioForm } from './DemioForm'
 export { Figure } from './Figure'
-export { HubSpotForm, type HubSpotFormProps } from './HubSpotForm'
+export { Hero } from './Hero'
+export { HubSpotForm } from './HubSpotForm'
 export { Install } from './Install'
 export { IntegrationsSection } from './IntegrationsSection'
 export { Jumbotron } from './Jumbotron'
 export { LeadershipSection } from './LeadershipSection'
-export { RequestDemoForm } from './RequestDemoForm'
-export { RequestDemoTrySourcegraph } from './RequestDemoTrySourcegraph'
+export { Modal } from './modal'
+export { Portal } from './Portal'
+export { ResourceList } from './ResourceList'
 export { SelfHostedSection } from './SelfHostedSection'
 export { TableWrapper } from './TableWrapper'
-export { TemplateCodeBlock } from './TemplateCodeBlock'
+export { Tabs } from './Tabs'
+export { TemplateCodeBlock, type Template } from './TemplateCodeBlock'
 export { ThreeUpText } from './ThreeUpText'
-export { TrySourcegraph } from './TrySourcegraph'
+export { TwoColumnSection } from './TwoColumnSection'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
 
@@ -42,11 +48,10 @@ export { CustomCarousel, TabCarousel, QuoteCarousel } from './Carousels'
 
 // Case Studies
 export {
-    AuthorBio,
+    StaffSpotlight,
     CaseStudyJumbotron,
     CaseStudyLayout,
     CaseStudyCard,
-    NewCaseStudyJumbotron,
     NewCaseStudyLayout,
     UseChallengeSolutionResults,
 } from './CaseStudies'

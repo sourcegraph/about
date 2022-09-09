@@ -1,9 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import Tab from 'react-bootstrap/Tab'
-import Tabs from 'react-bootstrap/Tabs'
-
-import { ContentSection, Figure, Layout, YouTube } from '@components'
+import { ContentSection, Layout, Tabs, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 export const Community: FunctionComponent = () => (
@@ -14,14 +11,14 @@ export const Community: FunctionComponent = () => (
                 "Sourcegraph is so much more than a universal code search engine. It's the story of new gen-developers who renaissance-d the way we work, live, and collaborate. It's our unparalleled thinking that creates endless possibilities, to rebuild, to disrupt and to innovate relentlessly despite all the complexities of the big code. But we're just getting started. Imagine the road ahead if we take this journey together.",
         }}
         className="community-page"
-        heroAndHeaderClassName="community-page__hero-and-header"
+        heroAndHeaderClassName="tw-bg-blue-200"
         hero={
-            <div className="container pb-4">
-                <div className="row p-5">
+            <div className="container tw-pb-sm">
+                <div className="p-5 row">
                     <div className="col-lg-6">
                         <div className="text-uppercase">Join us</div>
-                        <h1 className="display-2 font-weight-bold mb-0">Welcome to the Sourcegraph Community</h1>
-                        <p className="my-5 display-5">
+                        <h1 className="mb-0">Welcome to the Sourcegraph Community</h1>
+                        <p className="my-5">
                             Seek guidance. Share best practices. Ask questions. The Sourcegraph Community is your new
                             platform to connect with one of the world's most talented developer communities. Here, we
                             encourage everyone to learn from each other and share everything they know. Because when we
@@ -39,19 +36,20 @@ export const Community: FunctionComponent = () => (
                         </a>
                     </div>
                     <div className="col-lg-6">
-                        <Figure
+                        <img
                             src="/community/hero_illustration.svg"
                             alt="Sourcegraph Community"
-                            className="w-100 mt-7"
+                            title="Sourcegraph Community"
+                            className="tw-w-100 tw-mt-5xl"
                         />
                     </div>
                 </div>
             </div>
         }
     >
-        <ContentSection className="py-5 text-center">
-            <h2 className="display-3 font-weight-bold mt-5 mb-3">Get up to speed</h2>
-            <div className="row justify-content-center">
+        <ContentSection background="white" className="tw-text-center">
+            <h2 className="mb-3">Get up to speed</h2>
+            <div className="row tw-justify-center">
                 <p className="col-md-8">
                     We can’t give you a 25-hour day, but here is a{' '}
                     <a
@@ -88,29 +86,30 @@ export const Community: FunctionComponent = () => (
                 </p>
             </div>
             <div className="row">
-                <div className="col-12 mt-4">
+                <div className="mt-4 col-12">
                     <a
                         href="http://srcgr.ph/cheatsheet"
                         data-button-style={buttonStyle.image}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        <Figure
+                        <img
                             src="/community/cheatsheet_top.png"
                             alt="Sourcegraph Cheatsheet"
-                            className="max-w-800 w-100"
+                            title="Sourcegraph Cheatsheet"
+                            className="tw-mx-auto tw-max-w-3xl tw-w-full"
                         />
                     </a>
                 </div>
             </div>
         </ContentSection>
 
-        <ContentSection className="py-6">
+        <ContentSection>
             <div className="row">
                 <div className="col-lg-6">
-                    <h2 className="display-3 font-weight-bold mt-5 mb-3">DM us on Discord. We're here.</h2>
+                    <h2 className="mt-5 mb-3">DM us on Discord. We're here.</h2>
                     What you seek is seeking you — come, chat and collaborate with inspiring engineers like you.
-                    <ul>
+                    <ul className="tw-my-3">
                         <li className="mt-2">Ask questions - any questions: what is the best sit-stand desk?</li>
                         <li className="mt-2">
                             Reach out to the community, discover new ideas &#38; seek or give mentorship
@@ -129,124 +128,129 @@ export const Community: FunctionComponent = () => (
                     </a>
                 </div>
                 <div className="col-lg-5">
-                    <img className="w-100 mt-6" src="/community/SG_DM_us_on_slack.png" alt="DM us on Discord!" />
+                    <img className="mt-6 w-100" src="/community/SG_DM_us_on_slack.png" alt="DM us on Discord!" />
                 </div>
             </div>
         </ContentSection>
 
-        <ContentSection className="py-4">
-            <h2 className="display-3 font-weight-bold mb-5 text-center">What's next?</h2>
-            <Tabs defaultActiveKey="sgEvents" id="use-cases" className="justify-content-center">
-                <Tab eventKey="sgEvents" title="Events">
-                    <div className="row mt-5 justify-content-center">
-                        <div className="col-lg-6">
-                            <p>
-                                Keynote speakers. Job opportunities and partnerships. You can find us in every major
-                                industry event. Give us an air-hug if you see us.
-                            </p>
-                            <ul>
-                                <li>
+        <ContentSection background="white">
+            <h2 className="mb-5 tw-text-center">What's next?</h2>
+            <Tabs
+                tabs={[
+                    {
+                        title: 'Events',
+                        content: (
+                            <div className="tw-max-w-xl tw-m-auto">
+                                <p>
+                                    Keynote speakers. Job opportunities and partnerships. You can find us in every major
+                                    industry event. Give us an air-hug if you see us.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://www.gophercon.com/"
+                                            title="GopherCon 2022"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            GopherCon 2022
+                                        </a>{' '}
+                                        - 10/6 - 10/8
+                                    </li>
+                                </ul>
+                            </div>
+                        ),
+                    },
+                    {
+                        title: 'Dev Tool Time',
+                        content: (
+                            <div className="tw-max-w-xl tw-m-auto">
+                                <YouTube title="Dev Tool Time" id="QNYoOCLocAI" />
+                                <p className="tw-pt-xs">
+                                    Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
                                     <a
-                                        href="https://www.gophercon.com/"
-                                        title="GopherCon 2022"
+                                        href="https://srcgr.ph/dev-tool-time-playlist"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.body}
                                         data-button-type="cta"
+                                        title="YouTube Channel"
                                     >
-                                        GopherCon 2022
+                                        YouTube channel
                                     </a>{' '}
-                                    - 10/6 - 10/8
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </Tab>
-                <Tab eventKey="devToolTime" title="Dev Tool Time">
-                    <div className="row mt-5 justify-content-center">
-                        <div className="col-lg-6">
-                            <YouTube title="Dev Tool Time" id="QNYoOCLocAI" />
-                            <p className="pt-3">
-                                Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
-                                <a
-                                    href="https://srcgr.ph/dev-tool-time-playlist"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                    title="YouTube Channel"
-                                >
-                                    YouTube channel
-                                </a>{' '}
-                                and subscribe to keep up with new episodes.
-                            </p>
-                        </div>
-                    </div>
-                </Tab>
-                <Tab eventKey="podcast" title="Sourcegraph Podcast">
-                    <div className="row mt-5 justify-content-center">
-                        <div className="col-lg-6">
-                            <YouTube title="Sourcegraph Podcast" id="VgVDMd2VlaU" />
-                            <p className="pt-3">
-                                <strong>Subscribe:</strong>&nbsp;
-                                <a
-                                    href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                    title="YouTube"
-                                >
-                                    YouTube
-                                </a>
-                                &nbsp;
-                                <a
-                                    href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                    title="Apple"
-                                >
-                                    Apple
-                                </a>
-                                &nbsp;
-                                <a
-                                    href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                    title="Spotify"
-                                >
-                                    Spotify
-                                </a>
-                                &nbsp;
-                                <a
-                                    href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw=="
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                    title="Google"
-                                >
-                                    Google
-                                </a>
-                                &nbsp;
-                                <a
-                                    href="https://feeds.buzzsprout.com/1097978.rss"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                    title="RSS"
-                                >
-                                    RSS
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </Tab>
-            </Tabs>
+                                    and subscribe to keep up with new episodes.
+                                </p>
+                            </div>
+                        ),
+                    },
+                    {
+                        title: 'Sourcegraph Podcast',
+                        content: (
+                            <div className="tw-max-w-xl tw-m-auto">
+                                <YouTube title="Sourcegraph Podcast" id="VgVDMd2VlaU" />
+                                <p className="tw-pt-xs">
+                                    <strong>Subscribe:</strong>&nbsp;
+                                    <a
+                                        href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                        title="YouTube"
+                                    >
+                                        YouTube
+                                    </a>
+                                    &nbsp;
+                                    <a
+                                        href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                        title="Apple"
+                                    >
+                                        Apple
+                                    </a>
+                                    &nbsp;
+                                    <a
+                                        href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                        title="Spotify"
+                                    >
+                                        Spotify
+                                    </a>
+                                    &nbsp;
+                                    <a
+                                        href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw=="
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                        title="Google"
+                                    >
+                                        Google
+                                    </a>
+                                    &nbsp;
+                                    <a
+                                        href="https://feeds.buzzsprout.com/1097978.rss"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                        title="RSS"
+                                    >
+                                        RSS
+                                    </a>
+                                </p>
+                            </div>
+                        ),
+                    },
+                ]}
+            />
         </ContentSection>
 
-        <ContentSection className="py-5">
-            <div className="row">
-                <div className="col-lg-7">
-                    <h2 className="display-3 font-weight-bold mb-3">We’d love to hear from you!</h2>
+        <ContentSection>
+            <div className="tw-max-w-screen-xl sm:tw-grid sm:tw-grid-cols-2 tw-mx-auto tw-px-4">
+                <div className="tw-mb-4 sm:mb-0 sm:tw-pr-4">
+                    <h2 className="mb-3">We’d love to hear from you!</h2>
                     <br />
                     Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn,
                     or email us at{' '}
@@ -261,9 +265,9 @@ export const Community: FunctionComponent = () => (
                     </a>
                     .
                 </div>
-                <div className="col-lg-5 mt-3">
+                <div className="tw-flex tw-flex-col md:tw-items-center md:tw-flex-row md:tw-justify-center">
                     <a
-                        className="btn btn-secondary"
+                        className="tw-mb-4 btn btn-secondary md:tw-mr-4 md:tw-mb-0"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"
@@ -274,7 +278,7 @@ export const Community: FunctionComponent = () => (
                     </a>
                     <br />
                     <a
-                        className="btn btn-primary mt-3"
+                        className="btn btn-primary"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"

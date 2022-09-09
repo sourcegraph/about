@@ -3,13 +3,13 @@ import { FunctionComponent } from 'react'
 import CheckIcon from 'mdi-react/CheckIcon'
 import Link from 'next/link'
 
-import { ContentSection, Layout, TrySourcegraph } from '@components'
+import { ContentSection, Layout, CtaSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const CLASS_NAMES = {
     featureOffered: 'list-group-item bg-transparent border-0',
     featureNotOffered: 'list-group-item bg-transparent border-0 text-muted',
-    featureChecked: 'text-success',
+    featureChecked: 'text-success tw-inline',
     featureNotChecked: 'invisible',
 }
 
@@ -37,9 +37,9 @@ const Support: FunctionComponent = () => (
         }}
     >
         <div className="mt-2">
-            <ContentSection className="hero-section text-center py-5">
-                <h1 className="display-2 font-weight-bold">Sourcegraph Support</h1>
-                <p>
+            <ContentSection className="tw-text-center">
+                <h1>Sourcegraph Support</h1>
+                <p className="tw-text-xl tw-mt-2">
                     See{' '}
                     <Link href="/pricing" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -55,14 +55,15 @@ const Support: FunctionComponent = () => (
                     to learn more about these tiers.
                 </p>
             </ContentSection>
-            <div className="container-fluid my-0 mx-auto max-w-1000">
-                <div className="row pt-4">
-                    <div className="d-flex col-md-4 mx-auto mb-4">
+
+            <div className="tw-mx-auto tw-my-0 tw-max-w-screen-xl">
+                <div className="tw-pt-sm row">
+                    <div className="mb-4 tw-mx-auto tw-flex col-md-4">
                         <div className="card h-100">
                             <div className="card-body">
-                                <h1 className="card-title mt-3 mb-3 text-center">Free</h1>
+                                <h1 className="tw-my-xs tw-text-center">Free</h1>
                                 <a
-                                    className="font-size-base btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex"
+                                    className="tw-text-center font-size-base btn btn-outline-primary w-100 tw-justify-center tw-inline-flex"
                                     href="https://docs.sourcegraph.com#quickstart-guide"
                                     title="Deploy"
                                     data-button-style={buttonStyle.outline}
@@ -72,7 +73,7 @@ const Support: FunctionComponent = () => (
                                     Deploy
                                 </a>
                             </div>
-                            <ol className="mt-4 list-group list-group-flush py-2 h-100">
+                            <ol className="py-2 mt-4 list-group list-group-flush h-100">
                                 <li className={CLASS_NAMES.featureOffered}>
                                     <CheckIcon className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.communitySupport}
@@ -117,12 +118,12 @@ const Support: FunctionComponent = () => (
                             </ol>
                         </div>
                     </div>
-                    <div className="d-flex col-md-4 mx-auto mb-4">
+                    <div className="mb-4 tw-mx-auto tw-flex col-md-4">
                         <div className="card">
                             <div className="card-body">
-                                <h1 className="card-title mt-3 mb-3 text-center">Team</h1>
+                                <h1 className="tw-my-xs tw-text-center">Team</h1>
                                 <a
-                                    className="font-size-base btn btn-success w-100 justify-content-center text-center d-inline-flex"
+                                    className="tw-text-center font-size-base btn btn-success w-100 tw-justify-center tw-inline-flex"
                                     href="https://sourcegraph.com/subscriptions/new"
                                     title="Buy now"
                                     data-button-style={buttonStyle.primary}
@@ -132,7 +133,7 @@ const Support: FunctionComponent = () => (
                                     Buy now
                                 </a>
                             </div>
-                            <ol className="mt-4 list-group list-group-flush py-2 h-100">
+                            <ol className="py-2 mt-4 list-group list-group-flush h-100">
                                 <li className={CLASS_NAMES.featureOffered}>
                                     <CheckIcon className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.communitySupport}
@@ -177,17 +178,17 @@ const Support: FunctionComponent = () => (
                             </ol>
                         </div>
                     </div>
-                    <div className="d-flex col-md-4 mx-auto mb-4">
+                    <div className="mb-4 tw-mx-auto tw-flex col-md-4">
                         <div className="card">
                             <div className="card-body">
-                                <h1 className="card-title mt-3 mb-3 text-center">Enterprise</h1>
+                                <h1 className="tw-my-xs tw-text-center">Enterprise</h1>
                                 <Link
                                     href="/contact/request-info/?form_submission_source=support-enterprise"
                                     passHref={true}
                                 >
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
-                                        className="font-size-base btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex"
+                                        className="tw-text-center font-size-base btn btn-outline-primary w-100 tw-justify-center tw-inline-flex"
                                         title="Contact us"
                                         data-button-style={buttonStyle.outline}
                                         data-button-location={buttonLocation.body}
@@ -197,7 +198,7 @@ const Support: FunctionComponent = () => (
                                     </a>
                                 </Link>
                             </div>
-                            <ol className="mt-4 list-group list-group-flush py-2 h-100">
+                            <ol className="py-2 mt-4 list-group list-group-flush h-100">
                                 <li className={CLASS_NAMES.featureOffered}>
                                     <CheckIcon className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.communitySupport}
@@ -290,7 +291,21 @@ const Support: FunctionComponent = () => (
                 <hr className="my-4" />
             </div>
         </div>
-        <TrySourcegraph className="my-6" />
+
+        <CtaSection
+            title="Try Sourcegraph for free today"
+            description="You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your code stays local and secure)."
+            cta1={{
+                text: 'Try Sourcegraph now',
+                link: '/get-started/self-hosted',
+                ctaStyle: 'primaryButton',
+            }}
+            cta2={{
+                text: 'Schedule a demo',
+                link: '/demo',
+                ctaStyle: 'outlineButton',
+            }}
+        />
     </Layout>
 )
 

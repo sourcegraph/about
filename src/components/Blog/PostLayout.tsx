@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
-import { Alert, Blockquote, HubSpotForm, Figure, TableWrapper, Video, YouTube, TrySourcegraph } from '@components'
+import { Alert, Blockquote, Figure, HubSpotForm, TableWrapper, Video, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
@@ -27,12 +27,12 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
 }) => (
     <Tag className={`blog-post ${className}`}>
         <header className={headerClassName}>
-            <h2 className="text-4xl">
+            <h2>
                 {renderTitleAsLink === true ? (
                     <Link href={url} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="d-block"
+                            className="tw-block"
                             title={post.frontmatter.title}
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
@@ -47,7 +47,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
             </h2>
 
             {post.frontmatter.authors?.length && (
-                <p className="text-align-center text-secondary mb-0">
+                <p className="mb-0 text-align-center text-secondary">
                     {post.frontmatter.authors.map((a, index) => (
                         <span key={a.name} data-author={a.name}>
                             {a.url ? (
@@ -87,7 +87,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
             )}
 
             {post.frontmatter.publishDate && (
-                <p className="text-align-center text-secondary mb-0">
+                <p className="mb-0 text-align-center text-secondary">
                     <time dateTime={post.frontmatter.publishDate}>{formatDate(post.frontmatter.publishDate)}</time>
                 </p>
             )}
@@ -98,8 +98,6 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                 <div className={`blog-post__html ${contentClassName}`}>
                     <MDXRemote {...content} components={components as PostComponents} />
                 </div>
-
-                <TrySourcegraph className="px-0 justify-content-between" />
             </div>
         )}
     </Tag>

@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, GatedResourceLayout } from '@components'
+import { Layout, GatedResourceLayout, Hero } from '@components'
 
 export const Guide: FunctionComponent = () => (
     <Layout
@@ -10,13 +10,19 @@ export const Guide: FunctionComponent = () => (
                 'When finding security vulnerabilities, simplicity is key. Learn how to decrease recovery time with a single search by improving tooling and processes.',
         }}
         className="bg-white"
+        hero={
+            <Hero
+                variant="darkSimpleGrid"
+                title="Find and fix security vulnerabilities in the pursuit of healthy code"
+            />
+        }
     >
         <GatedResourceLayout
             title="Find and fix security vulnerabilities in the pursuit of healthy code"
             formLabel="Download the guide"
             resource="/guides/fixing-vulnerabilities-less-is-more.pdf"
             description={
-                <section className="col-md-6 col-12 pr-lg-6">
+                <section className="col-md-6 col-12 lg:tw-pr-3xl">
                     <p>
                         When your company first got word of Log4j and the Log4Shell vulnerability, did you have the
                         tools in place to immediately fix it across every line of code in your organization? When the

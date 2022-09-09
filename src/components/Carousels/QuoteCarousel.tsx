@@ -24,7 +24,7 @@ interface QuoteCarouselProps {
 
 export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items }) => {
     const windowWidth = useWindowWidth()
-    const isLgOrDown = windowWidth < breakpoints.xl
+    const isMdOrDown = windowWidth < breakpoints.lg
 
     return (
         <Carousel
@@ -32,17 +32,18 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items }) 
             prevLabel=""
             nextIcon={<ArrowRightIcon color="#808080" />}
             nextLabel=""
-            indicators={isLgOrDown}
+            indicators={isMdOrDown}
         >
             {items.map(item => (
                 <Carousel.Item key={item.quote}>
-                    <div className="d-flex flex-column align-items-center justify-content-center text-center mx-auto col-lg-8 col-12 py-7 min-h-md-550">
+                    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center tw-mx-auto col-lg-8 col-12 min-h-md-550">
                         <Blockquote
                             key={item.quote}
                             quote={item.quote}
                             headline={item.header}
                             author={item.by}
                             border={false}
+                            largeText={!item.header}
                             logo={{
                                 src: item.logoImage || '',
                                 alt: item.logoAlt || '',

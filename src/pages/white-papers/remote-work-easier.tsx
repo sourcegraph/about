@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import Link from 'next/link'
 
-import { Layout, WhitePaperPage, ContentSection, Blockquote, Figure } from '@components'
+import { Layout, WhitePaperPage, ContentSection, Blockquote, Figure, TwoColumnSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 export const RemoteWorkEasier: FunctionComponent = () => (
@@ -20,8 +20,8 @@ export const RemoteWorkEasier: FunctionComponent = () => (
             pdf="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-remote-software-development-made-easier.pdf"
             heroBackgroundImage="/white-papers/remote-easier-bg_1680x300.png"
         >
-            <ContentSection color="white" className="col-md-6 pt-5">
-                <div className="container">
+            <ContentSection background="white">
+                <div className="tw-max-w-screen-md tw-mx-auto">
                     <p>
                         Sourcegraph has been remote-friendly from the beginning — our two longest-tenured teammates have
                         worked remotely since 2015 from Arizona and South Africa! We moved to remote-first in May of
@@ -40,8 +40,8 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         </a>{' '}
                         on how to live your best distributed work life!
                     </p>
-                    <h2 className="pt-5 pb-1">Tips for working remotely</h2>
-                    <h3 className="pt-5 pb-1">Home office and desk setup</h3>
+                    <h2 className="tw-pb-1 tw-pt-md">Tips for working remotely</h2>
+                    <h3 className="tw-pb-1 tw-pt-md">Home office and desk setup</h3>
                     <ul>
                         <li>
                             <b>Separate work and home:</b> Try working in a different space to where you relax/sleep.
@@ -54,7 +54,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                             <b>Get a loud keyboard:</b> You can use a loud keyboard, unlike in an office environment.
                         </li>
                     </ul>
-                    <h3 className="pt-5 pb-1">Schedule</h3>
+                    <h3 className="tw-pb-1 tw-pt-md">Schedule</h3>
                     <ul>
                         <li>
                             <b>Stick to your plan:</b> When working from home, it's VERY important to have a set
@@ -73,7 +73,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                             working on this and see how long it takes.'
                         </li>
                     </ul>
-                    <h3 className="pt-5 pb-1">Communication</h3>
+                    <h3 className="tw-pb-1 tw-pt-md">Communication</h3>
                     <ul>
                         <li>
                             <b>Care:</b> Start by caring about your written communication. Well-written prose looks
@@ -99,7 +99,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                             know, etc.'
                         </li>
                     </ul>
-                    <h2 className="pt-5 pb-1">Benefits of using Sourcegraph when working remotely</h2>
+                    <h2 className="tw-pb-1 tw-pt-md">Benefits of using Sourcegraph when working remotely</h2>
                     <p>
                         There is no Sourcegraph office beyond an official mailbox &mdash; all of our developers,
                         managers, and executives are remote. We understand what makes remote work successful. We believe
@@ -107,7 +107,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         experience, whether you're a work-from-home expert or newbie, will grow stronger than ever.
                     </p>
                     <p>Below are some ways Sourcegraph improves working together effectively on a remote team.</p>
-                    <h3 className="pt-5 pb-1">Reduce communication needed when reviewing changes</h3>
+                    <h3 className="tw-pb-1 tw-pt-md">Reduce communication needed when reviewing changes</h3>
                     <p>
                         When reviewing code, you need a deep understanding of what that code does. If you aren't
                         familiar with how it works, you may spend a lot of time asking the change author questions,
@@ -122,16 +122,14 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         ensure your questions are specific to what the author has changed.
                     </p>
                     <Figure
-                        className="w-100 shadow0"
                         src="/white-papers/remotework_codereview.png"
                         alt="Sourcegraph's go to definition and find references hover tooltip on a code review"
                     />
                     <Blockquote
                         quote="Having Sourcegraph is an improvement for several reasons. It's an easy way to share pointers to code and searches on code. When working remotely, I can't easily have someone look over my shoulder as I would in person. Screen sharing is possible (but with much higher-friction), and the results are harder to reproduce offline. Links to Sourcegraph are much more useful when trying to add in context for a Slack thread that blew up when I wasn't paying attention. Sourcegraph is also a better way to explore unfamiliar code. It costs more to get someone's attention when asking a question (because of timezones, async channels), so when I do need to ask someone for help, I want to respect their time by doing due diligence first. Sourcegraph helps me explore the code more effectively on my own than I could with only local clones and GitHub search."
                         author="Michael Fromberger, Software Engineer at Sourcegraph"
-                        center={false}
                     />
-                    <h3 className="pt-5 pb-1">Find the right people</h3>
+                    <h3 className="tw-pb-1 tw-pt-md">Find the right people</h3>
                     <p>
                         Writing code changes—especially for new employees—can be a daunting task because you need to
                         understand large and complex systems. Sourcegraph streamlines the entire code browsing
@@ -146,16 +144,14 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         your code's history.
                     </p>
                     <Figure
-                        className="w-100 shadow0"
                         src="/white-papers/remotework_commithistory.png"
                         alt="A commit history search with highlighted code authors in Sourcegraph"
                     />
                     <Blockquote
                         quote="As a Product Manager, I care about everything--features, bug fixes, improvements--that go into the product. I use a saved search in Sourcegraph to be notified by email every time there is an update to our CHANGELOG. This lets me keep track of what and when features get in and makes sure I know who to talk to about that change if I have any questions. It also removes unnecessary communication cycles between the engineering team and me because rather than needing to interrupt each team member, or require them to reach out to me to find out what is going on, I am proactively informed."
                         author="Christina Forney, Product Manager at Sourcegraph"
-                        center={false}
                     />
-                    <h3 className="pt-5 pb-1">Write better documentation</h3>
+                    <h3 className="tw-pb-1 tw-pt-md">Write better documentation</h3>
                     <p>
                         We've found that Sourcegraph helps our engineers write better documentation. Once you have
                         information at your fingertips and see where it's missing (like when you are hovering over
@@ -165,7 +161,6 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                     <Blockquote
                         quote="As we've grown, I've needed to hand off a lot of code ownership and processes to other people. This meant writing a lot of docs (in code and in Markdown files). Having code search makes me more likely and happier to write docs because I believe that people will be more likely to actually discover and read them."
                         author="Quinn Slack, CEO of Sourcegraph"
-                        center={false}
                     />
                     <p>
                         Sourcegraph's search also makes it more likely that you will discover documentation that is
@@ -183,7 +178,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         </a>
                         .
                     </p>
-                    <h3 className="pt-5 pb-1">Share code more easily</h3>
+                    <h3 className="tw-pb-1 tw-pt-md">Share code more easily</h3>
                     <p>
                         You're staring at some code in your editor, struggling to understand how the code actually
                         works. You decide it's best to ask your coworker if she knows—but how do you share the code
@@ -193,7 +188,6 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                     <Blockquote
                         quote="It's nice to be able to share links to code with Sourcegraph. It's important for remote work because your conversation partner often cannot look at your screen."
                         author="Uwe Hoffmann, Software Engineer at Sourcegraph"
-                        center={false}
                     />
                     <p>
                         With{' '}
@@ -221,11 +215,12 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         to that code that you can share with a coworker.
                     </p>
                     <Figure
-                        className="w-100 shadow0"
                         src="/white-papers/remotework_codelinksharing.png"
                         alt="With Sourcegraph, you can share a direct link to the code you want to discuss"
                     />
-                    <h3 className="pt-5 pb-1">Sourcegraph supports remote work environments in many ways. It:</h3>
+                    <h3 className="tw-pb-1 tw-pt-md">
+                        Sourcegraph supports remote work environments in many ways. It:
+                    </h3>
                     <ul>
                         <li>Empowers you to find answers to your own questions</li>
                         <li>
@@ -239,14 +234,13 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                     <Blockquote
                         quote="Any tool that empowers you to find the answer to your own question is good for remote work, and Sourcegraph is such a tool. The alternative is waiting for someone else to tell you the answer, which means you are blocked in the meantime, or you have to task-switch, which is costly."
                         author="Nick Snyder, VP Engineering at Sourcegraph"
-                        center={false}
                     />
-                    <br />
                 </div>
             </ContentSection>
-            <ContentSection color="black" className="py-5">
-                <div className="row justify-content-md-center">
-                    <div className="col-md-3 text-center">
+
+            <ContentSection background="black">
+                <div className="row md:tw-justify-center">
+                    <div className="tw-text-center col-md-3">
                         <a
                             href="https://twitter.com/sourcegraph"
                             target="_blank"
@@ -259,7 +253,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                             <TwitterIcon size={72} />
                         </a>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 tw-text-white">
                         <h5>
                             How has Sourcegraph helped make your remote software development better?{' '}
                             <a
@@ -281,40 +275,45 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection color="gray" className="py-5">
-                <div className="row justify-content-md-center">
-                    <div className="col-md-3 text-center">
+
+            <ContentSection background="darkNebulous3">
+                <TwoColumnSection
+                    leftColumn={
                         <img
                             src="/external-logos/sourcegraph-universal-code-search-ebook-v1.jpg"
                             alt="Download: Universal Code Search and Intelligence"
                             width="170"
-                            className="universal-code-search--glow"
+                            className="tw-shadow-lg tw-shadow-gray-400"
+                            draggable={false}
                         />
-                    </div>
-                    <div className="col-md-6">
-                        <h5>EBOOK</h5>
-                        <h3>Universal code search and intelligence</h3>
-                        <h6>
-                            Learn more on how Sourcegraph Universal Code Search can improve your productivity and
-                            efficiency as a developer.
-                        </h6>
-                        <Link
-                            href="/resources/universal-code-search-ebook/?utm_medium=organic_search&utm_source=about&utm_content=universal-code-search"
-                            passHref={true}
-                        >
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="btn btn-lg btn-outline-light universal-code-search__btn mt-3 font-weight-normal"
-                                title="Free download"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
+                    }
+                    rightColumn={
+                        <>
+                            <h5>EBOOK</h5>
+                            <h3>Universal code search and intelligence</h3>
+                            <p className="tw-text-lg tw-mt-xs">
+                                Learn more on how Sourcegraph Universal Code Search can improve your productivity and
+                                efficiency as a developer.
+                            </p>
+                            <Link
+                                href="/resources/universal-code-search-ebook/?utm_medium=organic_search&utm_source=about&utm_content=universal-code-search"
+                                passHref={true}
                             >
-                                Free download
-                            </a>
-                        </Link>
-                    </div>
-                </div>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    className="mt-3 btn btn-outline-light"
+                                    title="Free download"
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    Free download
+                                </a>
+                            </Link>
+                        </>
+                    }
+                    mergeColumns={true}
+                />
             </ContentSection>
         </WhitePaperPage>
     </Layout>
