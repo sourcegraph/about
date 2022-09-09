@@ -131,14 +131,13 @@ Check out Zig’s webpage to find out more about the language, and tune into the
 
 _Special thanks to Andrew Kelly_
 
-#### About the authors
-
-Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang)
-
-Justin Dorfman is Sourcegraph’s Open Source Program Manager and is responsible for
-fostering the adoption of code intelligence in the open source community. You can chat with Justin on Twitter [@jdorfman](https://twitter.com/jdorfman) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)
-
 ### More posts like this
+
+<p class="mt-3 mb-3">
+<a href="https://sourcegraph.substack.com/p/subscribe" class="btn btn-primary mr-1 mb-1">Subscribe to technical posts</a>
+&nbsp;
+<a href="https://discord.gg/SSCBGByJeu" class="btn btn-primary">Join our Discord</a>
+</p>
 
 * [A dev's thoughts on developer productivity](https://about.sourcegraph.com/blog/developer-productivity-thoughts)
 * [How NativeScript Onboards New Open Source Contributors](https://about.sourcegraph.com/blog/how-nativeScript-onboards-new-open-source-contributors)
