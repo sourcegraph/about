@@ -111,7 +111,7 @@ After many years of building Sourcegraph into a secure and highly-scalable solut
 
 ##### 💖 For admins
 
-### Get a deep understanding of usage and measure the value of our platform with new and enhanced in-product analytics
+### View usage and measure the value of our platform with new and enhanced in-product analytics
 With 3.42, we introduced an all-new analytics including [XYZ]. Our new analytics make it easier for admins to understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. We’ve significantly improved our in-product analytics to include the projected value and dev-time-saved for all Sourcegraph features, the ability to export data, individual user usage table, and much more. 
 
 Media: provide a screenshot, gif, or video to help support the copy
@@ -131,10 +131,15 @@ Docs: provide a link to the updated docs
 ### Save time upgrading to Sourcegraph 4.0 with multi-version upgrades
 Multi-version upgrades help to reduce the burden and time required to upgrade to the latest version of Sourcegraph. Customers will now be able to seamlessly upgrade from any 3.20+ version to Sourcegraph 4.0 in just a few simple steps. With faster upgrades, customers can quickly start using the new features and enhancements that are released every month. 
 
-<video loop autoplay muted playsinline>
-<source src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Multi-version%20Upgrades.mp4" type="video/mp4" />
-</video>
-
+<Video 
+  source={{
+    webm: 'blog/release-post/4.0/Multi-version%20Upgrades',
+    mp4: 'blog/release-post/4.0/Multi-version%20Upgrades'
+  }}
+  loop={true}
+  title="Multi-version upgrades"
+  caption="Demo of multi-version upgrades"
+/>
 
 [Admin]
 
