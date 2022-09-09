@@ -36,7 +36,7 @@ Because this problem would only get worse with time, we began to squash migratio
 
 ![simple squash](temp/simple-squash.png)
 
-Note that we are unable to squash migration definitions that are not also defined in the source version of an upgrade. Doing so would make it impossible for the previous release to determine _which_ migration definitions to apply. Squashing in the manner described above guarantees that none of the migration definitions in the upgrade path from the previous minor version would be altered.
+Note that we are unable to squash migration definitions that are undefined in the source version of an upgrade. Doing so would make it impossible for the previous release to determine _which_ migration definitions to apply. Squashing in the manner described above guarantees that none of the migration definitions in the upgrade path from the previous minor version would be altered.
 
 Unfortunately, this absolutely _does_ throw a wrench in the works for multi-version upgrades. But let's deal with that later. For now, we'll discuss the remaining evolutions of the migration definition files and let the wrenches form a huge pile we can take care of all at once.
 
