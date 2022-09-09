@@ -69,7 +69,11 @@ const dlsColors = {
 
 module.exports = {
   // Files run through Tailwind
-  content: ['./src/pages/**/*.tsx', './src/components/**/*.tsx'],
+  content: [
+    './src/pages/**/*.tsx',
+    './src/components/**/*.tsx',
+    './node_modules/flowbite-react/**/*.js',
+  ],
 
   // Theme based on our Marketing DLS
   theme: {
@@ -205,5 +209,6 @@ module.exports = {
         ':root': extractColors(dlsColors),
       })
     }),
+    require('flowbite/plugin')
   ],
 }

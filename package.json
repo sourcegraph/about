@@ -53,6 +53,8 @@
     "@visx/xychart": "^2.9.0",
     "d3-format": "^3.1.0",
     "d3-time-format": "^4.1.0",
+    "flowbite": "^1.5.3",
+    "flowbite-react": "^0.1.10",
     "gray-matter": "^4.0.3",
     "lodash": "^4.17.21",
     "next": "^12.1.6",
