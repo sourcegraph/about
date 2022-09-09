@@ -54,8 +54,8 @@ Code navigation allows you to quickly jump to symbol definitions, find reference
 
 <Video 
   source={{
-    webm: 'https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/ruby-precise.webm',
-    mp4: 'https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/ruby-precise.mp4'
+    webm: 'blog/release-post/4.0/ruby-precise',
+    mp4: 'blog/release-post/4.0/ruby-precise'
   }}
   loop={true}
   title="Ruby precise code navigation"
