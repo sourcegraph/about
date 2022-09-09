@@ -61,10 +61,6 @@ Code navigation allows you to quickly jump to symbol definitions, find reference
   caption="Precise code navigation with Ruby"
 />
 
-
-<source src="https://storage.googleapis.com/sourcegraph-assets/docs/images/code-intelligence/4.0/ruby-precise.mp4" type="video/mp4" />
-</video>
-
 [Code Navigation]
 
 [Docs](https://docs.sourcegraph.com/code_navigation/references/indexers)
