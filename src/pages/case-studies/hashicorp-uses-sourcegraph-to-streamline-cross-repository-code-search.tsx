@@ -253,8 +253,8 @@ export const CaseStudy: FunctionComponent = () => (
                         about="HashiCorp (NASDAQ: HCP) is a provider of open-core software that developers use to manage cloud infrastructure. Based in San Francisco, Calif., the company offers solutions including Terraform, an infrastructure-as-code tool for managing cloud services, and Vault, a tool for securing, storing, and controlling access to tokens, passwords, and API keys. HashiCorp’s tools are downloaded tens of millions of times each year and are broadly adopted by the Global 2000."
                         staff={[
                             {
-                                image: '/case-studies/bryce-kallow.png',
-                                name: 'Bryce Kallow',
+                                image: '/case-studies/bryce-kalow.png',
+                                name: 'Bryce Kalow',
                                 title: 'Senior Web Engineer and Tech Lead; Web Platform Team at HashiCorp',
                             },
                         ]}
