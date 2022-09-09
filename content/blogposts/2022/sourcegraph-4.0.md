@@ -34,13 +34,14 @@ Docs: provide a link to the updated docs
 
 ### Understand usage and search structure with high-level aggregations of search results
 High-level aggregations of search results powered by Code Insights are now displayed in addition to results. Responses to the query are now grouped by location (repo or file), author, and arbitrary capture group pattern to help answer to questions such as:
-- Which files have the bulk of these search results?
+- Which files have the majority of these search results?
 - Which repositories is this library used in most?
-- Which subcomponents are used most from this library?
-- Who is using our new innersource library?
-- Which areas of the code were added back in these regressions?
-- What are all the possible arguments we can pass to this function?
+- Which library components are used most? By who?
+- What are all the possible arguments we pass to this function? 
+- And a number of [other examples](TODO ADD LINK TO SEARCH AGGREGATIONS TEMPLATES DOC – coming by late August after we test live on the feature). 
 - Aggregation can easily be reused by saving the visualization to your Code Insights dashboard.
+
+To answer these questions, you can choose to show your search results grouped by location (repo or file), author, and arbitrary capture group pattern. 
 
 Media: provide a screenshot, gif, or video to help support the copy
 
