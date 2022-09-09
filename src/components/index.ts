@@ -67,4 +67,4 @@ export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'
 export type { Features } from './Pricing'
 
 // Resources
-export { Filters, type Filter, Card, resourceItems, useFilters } from './Resources'
+export { Filters, type Filter, Card, resourceItems, type Resource, useFilters } from './Resources'

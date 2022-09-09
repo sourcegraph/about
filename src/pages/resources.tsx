@@ -4,12 +4,26 @@ import AlertOutlineIcon from 'mdi-react/AlertOutlineIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
-import { Layout, Filters, Card, resourceItems, ContentSection, useFilters, Hero, CtaSection } from '@components'
+import {
+    Layout,
+    Filters,
+    Card,
+    resourceItems,
+    Resource,
+    ContentSection,
+    useFilters,
+    Hero,
+    CtaSection,
+} from '@components'
 import { buttonStyle, buttonLocation } from '@data'
+
+const sortResources = (resources: Resource[]): Resource[] =>
+    resources.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf())
 
 const Resources: FunctionComponent = () => {
     const { filterGroups, setFilter, resetFilterGroup, resetFilterGroups } = useFilters()
 
+    // Checked filters
     const checkedContentTypes = filterGroups
         .find(group => group.title === 'Content Type')
         ?.filters.filter(filter => filter.checked)
@@ -18,15 +32,41 @@ const Resources: FunctionComponent = () => {
         .find(group => group.title === 'Subject')
         ?.filters.filter(filter => filter.checked)
         .map(filter => filter.text)
+    const checkedFilters = filterGroups.flatMap(group => group.filters).filter(filter => filter.checked)
 
-    const featuredResources = resourceItems.filter(item => item.featured)
-    const filteredResources = [...featuredResources, ...resourceItems.filter(item => !item.featured)]
-        .filter(item => checkedContentTypes?.some(type => type.includes(item.contentType)))
-        .filter(item =>
+    // Featured and unfeatured resources
+    const featuredResources = sortResources(resourceItems.filter(item => item.featured))
+    const unfeaturedResources = sortResources(resourceItems.filter(item => !item.featured))
+
+    // Default, no filters applied
+    let resources = [...featuredResources, ...unfeaturedResources]
+
+    // If no checkedContentTypes && checkedSubjects, filter on checkedSubjects
+    if (!checkedContentTypes?.length && checkedSubjects?.length) {
+        resources = resources.filter(item =>
             checkedSubjects?.every(subject => item.subjects.some(itemSubjects => itemSubjects.includes(subject)))
         )
-        .sort((a, b) => new Date(a.publishDate).valueOf() - new Date(b.publishDate).valueOf())
-    const resources = filteredResources.length > 0 ? filteredResources : featuredResources
+    }
+
+    // If checkedContentTypes && no checkedSubjects, filter on contentTypes
+    if (checkedContentTypes?.length && !checkedSubjects?.length) {
+        resources = resources.filter(item => checkedContentTypes?.some(type => type.includes(item.contentType)))
+    }
+
+    // If checkedContentTypes && checkedSubjects, filter on both
+    if (checkedContentTypes?.length && checkedSubjects?.length) {
+        resources = resources
+            .filter(item => checkedContentTypes?.some(type => type.includes(item.contentType)))
+            .filter(item =>
+                checkedSubjects?.every(subject => item.subjects.some(itemSubjects => itemSubjects.includes(subject)))
+            )
+    }
+
+    // if checkedFilters but no results, show featured
+    const noResults = checkedFilters?.length && !resources?.length
+    if (noResults) {
+        resources = featuredResources
+    }
 
     return (
         <Layout
@@ -52,7 +92,7 @@ const Resources: FunctionComponent = () => {
             />
 
             <ContentSection background="white" className="tw-max-w-[1062px]">
-                {!filteredResources.length && (
+                {!!noResults && (
                     <div className="tw-text-center tw-max-w-xl tw-mx-auto tw-mb-3xl">
                         <span className="tw-bg-violet-100 tw-text-violet-400 tw-w-md tw-h-md tw-p-1 tw-rounded-full tw-inline-flex tw-items-center tw-justify-center tw-mb-xxs">
                             <AlertOutlineIcon className="tw-inline" size={18} />
