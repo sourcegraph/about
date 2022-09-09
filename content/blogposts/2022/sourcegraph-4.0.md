@@ -87,7 +87,6 @@ Batch Changes can now run across thousands of repositories with a better develop
 
 This feature requires admins to set up executors (much like CI agents), which Sourcegraph will use to offload expensive tasks. Executors can also be used to run [Code Intelligence auto-indexing](https://github.com/sourcegraph/about/blob/bf341aafde75450c295aaec064470017020cdcd8/content/blogposts/2022/sourcegraph-4.0.md#TODO-link-to-section-or-docs) as well. One or more executors are available by default on Cloud instances of Sourcegraph.
 
-
 <Video 
   source={{
     webm: 'blog/release-post/4.0/Batch_Changes_Side_by_Side',
@@ -97,7 +96,6 @@ This feature requires admins to set up executors (much like CI agents), which So
   title="Server-side Batch Changes"
   caption="Side by side comparison of deploying Batch Changes locally vs. server-side"
 />
-
 
 [Batch Changes]
 
