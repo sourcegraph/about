@@ -2,7 +2,7 @@ import { ReactFragment, FunctionComponent } from 'react'
 
 import CheckIcon from 'mdi-react/CheckIcon'
 
-import { FeatureCluster, FEATURE_INFO } from './data'
+import { FeatureCluster, SPOTLIGHT_FEATURE_INFO } from './data'
 import { PricingPlanFeature } from './PricingPlanFeature'
 
 interface Props {
@@ -51,16 +51,16 @@ export const PricingPlan: FunctionComponent<Props> = ({
                     <ul className="tw-ml-2xl tw-mb-xs">
                         {node?.features?.map(feature => (
                             <div key={feature}>
-                                <PricingPlanFeature feature={FEATURE_INFO[feature]} tag="li" />
+                                <PricingPlanFeature feature={SPOTLIGHT_FEATURE_INFO[feature]} tag="li" />
                             </div>
                         ))}
                     </ul>
                 </div>
             ))}
             {/* {FEATURE_ORDER.map(feature => (
-                <div key={FEATURE_INFO[feature].label}>
+                <div key={SPOTLIGHT_FEATURE_INFO[feature].label}>
                     <PricingPlanFeature
-                        info={FEATURE_INFO[feature]}
+                        info={SPOTLIGHT_FEATURE_INFO[feature]}
                         value={features[feature]}
                         tag="li"
                         className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-item"

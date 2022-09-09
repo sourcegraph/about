@@ -10,10 +10,10 @@ import {
     Layout,
     PricingPlan,
     PricingPlanFeature,
-    FEATURE_INFO,
-    BIZ_FEATURES,
-    ENTERPRISE_FEATURES,
-    FEATURE_COMPARE_DATA,
+    ALL_FEATURE_INFO,
+    BIZ_FEATURES_OVERVIEW,
+    ENTERPRISE_FEATURES_OVERVIEW,
+    ALL_FEATURES_COMPARED_DATA,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -36,9 +36,9 @@ const PricingPage: FunctionComponent = () => (
             <div className="tw-mb-sm lg:tw-mb-0 tw-col-span-full md:tw-col-start-2 md:tw-col-span-5">
                 <PricingPlan
                     name="Business"
-                    price="$79 per active user/month"
+                    price="$99 per active user/month"
                     description="Full platform access for teams and orgs, all on a dedicated Cloud instance."
-                    features={BIZ_FEATURES}
+                    features={BIZ_FEATURES_OVERVIEW}
                     isEnterprise={false}
                     buttons={
                         <Link href="/get-started/self-hosted" passHref={true}>
@@ -62,7 +62,7 @@ const PricingPage: FunctionComponent = () => (
                     name="Enterprise"
                     price="Custom pricing"
                     description="Enterprise-grade security, scale, and support with custom deployment options."
-                    features={ENTERPRISE_FEATURES}
+                    features={ENTERPRISE_FEATURES_OVERVIEW}
                     isEnterprise={true}
                     buttons={
                         <div>
@@ -101,8 +101,7 @@ const PricingPage: FunctionComponent = () => (
         </h2>
         <CustomerLogos />
 
-        {/* TODO: Move data up a level, ref PricingPlanFeature w/ FEATURE_INFO dictionary */}
-        {/* TODO: Table- mobile */}
+        {/* TODO: Table- mobile, re-use CTA's, price cell > ReactNode (2 lines), key error */}
         <ContentSection>
             <table className="tw-relative tw-border-0">
                 <thead>
@@ -115,7 +114,7 @@ const PricingPage: FunctionComponent = () => (
                         <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 tw-w-1/3">
                             <div className="tw-h-full tw-p-sm tw-border-t-16 tw-border-2 tw-border-gray-200 tw-border-t-vermillion-300">
                                 <h2>Business</h2>
-                                <h4 className="tw-font-normal tw-py-sm">$79 per active user/month</h4>
+                                <h4 className="tw-font-normal tw-py-sm">$99 per active user/month</h4>
                                 <Link href="/get-started/self-hosted" passHref={true}>
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
@@ -165,7 +164,7 @@ const PricingPage: FunctionComponent = () => (
                     </tr>
                 </thead>
                 <tbody>
-                    {FEATURE_COMPARE_DATA.map(section => (
+                    {ALL_FEATURES_COMPARED_DATA.map(section => (
                         <>
                             <tr className="tw-bg-white" key={section.topic}>
                                 <div className="tw-p-xs">
@@ -175,7 +174,7 @@ const PricingPage: FunctionComponent = () => (
                             {section.features.map(feature => (
                                 <tr className="tw-border-0" key={feature.label}>
                                     <td className="tw-border-0 tw-p-xs">
-                                        <PricingPlanFeature feature={FEATURE_INFO[feature.label]} tag="h5" />
+                                        <PricingPlanFeature feature={ALL_FEATURE_INFO[feature.label]} tag="h5" />
                                     </td>
                                     <td className="tw-border-0 tw-border-x-2 tw-p-xs tw-text-center tw-align-middle">
                                         {typeof feature.business === 'string' ? (
