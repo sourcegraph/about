@@ -1,10 +1,10 @@
 ---
 title: "Sourcegraph 4.0"
-publishDate: 
+publishDate: 2022-09-27T10:00-07:00
 description: Announcing Sourcegraph 4.0
 tags: [blog, release]
 slug: "release/4.0"
-published: false
+published: true
 heroImage: 
 socialImage: 
 changelogItems:
