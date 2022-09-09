@@ -174,7 +174,7 @@ export const resourceItems: Resource[] = [
         contentType: 'video',
         subjects: ['code security', 'developer onboarding', 'incident response', 'code reuse', 'code health'],
         description: 'Find and fix code across your codebase fast with Sourcegraph. Watch this video to see how.',
-        publishDate: '2022-09-10T19:11:15Z',
+        publishDate: '2022-09-12T00:00:00Z',
         // TODO ^ update to merge date of this PR
     },
     {

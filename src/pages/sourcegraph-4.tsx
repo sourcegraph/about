@@ -182,7 +182,10 @@ const Sourcegraph4: FunctionComponent = () => {
                                 ),
                                 subtitle: (
                                     <div>
-                                        Server-side Batch Changes <Badge text="Beta" />
+                                        Server-side Batch Changes{' '}
+                                        <span className="tw-ml-xxs">
+                                            <Badge color="light-gray" size="small" text="Beta" />
+                                        </span>
                                     </div>
                                 ),
                                 description:

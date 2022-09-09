@@ -1,7 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import classNames from 'classnames'
 import CloseCircleOutlineIcon from 'mdi-react/CloseCircleOutlineIcon'
+
+import { Badge } from 'components/Badge'
 
 export interface Filter {
     text: string
@@ -35,17 +36,8 @@ interface Filters {
  * @param props.onClick - the click function
  */
 const Filter: FunctionComponent<Filter> = ({ text, checked = false, onClick }) => (
-    <div
-        className={classNames(
-            'tw-py-[6px] tw-px-xs tw-text-sm tw-border tw-border-solid tw-border-gray-500 tw-rounded-lg tw-mr-xs tw-mb-xs hover:tw-bg-gray-500 hover:tw-text-white tw-cursor-pointer tw-transition-all tw-ease-out first-letter:tw-capitalize tw-font-mono',
-            { 'tw-text-white tw-bg-gray-500': checked, 'tw-bg-white tw-text-gray-500': !checked }
-        )}
-        onClick={onClick}
-        onKeyDown={onClick}
-        role="button"
-        tabIndex={0}
-    >
-        {text}
+    <div className="first-letter:tw-capitalize tw-mr-xs tw-mb-xs">
+        <Badge text={text} onClick={onClick} color="white-outlined" size="large" checked={checked} />
     </div>
 )
 
@@ -59,7 +51,7 @@ const Filter: FunctionComponent<Filter> = ({ text, checked = false, onClick }) =
  * @param props.resetFilterGroup - function to reset a filter gorup by title
  */
 const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters, setFilter, resetFilterGroup }) => (
-    <div className="md:tw-grid md:tw-grid-cols-12">
+    <div className="md:tw-grid md:tw-grid-cols-12 first-of-type:tw-mb-xs">
         <h6 className="tw-mb-xs md:tw-mb-0 md:tw-mr-5xl md:tw-col-span-2 tw-whitespace-nowrap">{title}</h6>
 
         <div className="tw-flex tw-flex-wrap md:tw-col-span-10">
