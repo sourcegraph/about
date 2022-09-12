@@ -116,7 +116,7 @@ const Resources: FunctionComponent = () => {
                     </div>
                 )}
 
-                <div className="tw-grid md:tw-grid-cols-2 xl:tw-grid-cols-3 tw-gap-sm">
+                <div className="tw-grid md:tw-grid-cols-2 xl:tw-grid-cols-3 tw-gap-x-sm tw-gap-y-xl">
                     {resources.map(resource => (
                         <Card key={resource.title} resource={resource} />
                     ))}
