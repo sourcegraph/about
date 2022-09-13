@@ -96,7 +96,7 @@ const PricingPage: FunctionComponent = () => (
         </h2>
         <CustomerLogos />
 
-        {/* TODO: Table- mobile, re-use CTA's, price cell > ReactNode (2 lines), key error */}
+        {/* TODO: Table- mobile, price cell > ReactNode (2 lines), key error */}
         <ContentSection>
             <TableWrapper>
                 <table className="tw-relative tw-border-0">
