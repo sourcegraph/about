@@ -70,6 +70,15 @@
     th {
         @apply tw-align-middle tw-border-b tw-border-solid tw-border-b-gray-200;
     }
+
+    /* Elements with id's */
+    *[id] {
+      /**
+       * Allows anchor linked sections to not be hidden by our
+       * sticky nav, which is 74px in height.
+       */
+        scroll-margin-top: 74px;
+    }
 }
 
 /* Custom Utilities */
