@@ -126,7 +126,7 @@ const Resources: FunctionComponent = () => {
             <CtaSection
                 background="lightNebulousMars"
                 title="Get started with Sourcegraph"
-                description="Want to see Sourcegraph in action? Schedule time with a Sourcegraph expert or Try Sourcegraph for free."
+                description="Want to see Sourcegraph in action? Schedule time with a Sourcegraph expert or try Sourcegraph for free."
                 cta1={{
                     text: 'Get Started',
                     link: '/get-started/self-hosted',

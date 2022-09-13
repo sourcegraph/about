@@ -11,7 +11,7 @@ export interface Resource {
 export const resourceItems: Resource[] = [
     {
         featured: true,
-        title: 'How Nutanix Remediated the Vulnerability in 4 Days',
+        title: 'How Nutanix remediated log4j in 4 days',
         link: '/webinars/preparing-for-the-next-log4j',
         contentType: 'virtual event',
         subjects: ['code security'],
@@ -36,7 +36,7 @@ export const resourceItems: Resource[] = [
         contentType: 'guide',
         subjects: ['code health'],
         description:
-            'The first part in a four part series on how you can reduce cloud costs. This piece reviews the importance of creating visibility and practical ways you can do this using Sourcegraph',
+            'The first part in a four part series on how you can reduce cloud costs. This piece reviews the importance of creating visibility and practical ways you can do this.',
         publishDate: '2022-08-15T21:19:11Z',
     },
     {
@@ -51,7 +51,7 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'Go beyond search and transform your entire\ncodebase into knowledge, actions, and insights',
+        title: 'Sourcegraph vs GitHub code search',
         link: '/guides/transform-your-codebase-into-knowledge-actions-and-insights.pdf',
         contentType: 'guide',
         subjects: ['code security', 'developer onboarding', 'incident response', 'code reuse', 'code health'],
@@ -119,7 +119,7 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'Continuous Developer Onboarding',
+        title: 'Continuous developer onboarding',
         link: '/guides/continuous-developer-onboarding',
         contentType: 'guide',
         subjects: ['developer onboarding'],
@@ -139,7 +139,7 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'How Google, Microsoft, Lyft, GitLab, and Atlassian Find and Fix Vulnerabilities',
+        title: 'How Google, Microsoft, Lyft, GitLab, and Atlassian find and fix vulnerabilities',
         link: '/guides/how-google-fixes-vulnerabilities',
         contentType: 'guide',
         subjects: ['code security'],
@@ -169,7 +169,7 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'Code Intelligence Platform - Product Tour',
+        title: 'Sourcegraph product tour',
         link: '/videos/product-tour',
         contentType: 'video',
         subjects: ['code security', 'developer onboarding', 'incident response', 'code reuse', 'code health'],
@@ -179,7 +179,7 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'Sourcegraph Overview',
+        title: 'Sourcegraph overview',
         link: '/handouts/Sourcegraph-Overview.pdf',
         contentType: 'guide',
         subjects: ['code security', 'developer onboarding', 'incident response', 'code reuse', 'code health'],
@@ -309,7 +309,7 @@ export const resourceItems: Resource[] = [
         link: '/case-studies/convoy-improved-on-boarding',
         contentType: 'customer story',
         subjects: ['developer onboarding', 'code health'],
-        description: 'At Convoy, Sourcegraph helps improve the developer on-boarding process.',
+        description: 'At Convoy, Sourcegraph helps improve the developer onboarding process.',
         publishDate: '2019-11-11T17:12:10Z',
     },
     {
@@ -324,7 +324,7 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'Quantcast adopts Sourcegraph Universal Code Search for large scale refactoring',
+        title: 'Quantcast adopts Sourcegraph for large-scale refactoring',
         link: '/case-studies/quantcast-large-scale-refactoring',
         contentType: 'customer story',
         subjects: ['code health', 'code reuse'],
