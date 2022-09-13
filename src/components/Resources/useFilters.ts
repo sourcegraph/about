@@ -12,18 +12,22 @@ interface UseFilters {
     resetFilterGroups: () => void
 }
 
+/**
+ * This hook is used for getting, setting, and resetting filters
+ * based on our resource items data.
+ */
 export const useFilters = (): UseFilters => {
     const defaultFilterGroups = [
         {
             title: 'Content Type',
             filters: [...new Set(resourceItems.map(resource => resource.contentType))]
-                .map(contentType => ({ text: contentType, checked: false }))
+                .map((contentType): Filter => ({ text: contentType, checked: false }))
                 .sort(),
         },
         {
             title: 'Subject',
             filters: [...new Set(resourceItems.flatMap(resource => resource.subjects))]
-                .map(subject => ({ text: subject, checked: false }))
+                .map((subject): Filter => ({ text: subject, checked: false }))
                 .sort(),
         },
     ]
@@ -39,9 +43,9 @@ export const useFilters = (): UseFilters => {
     const setFilter = (groupTitle: string, filter: Filter): void => {
         const updatedFilterGroup = {
             title: groupTitle,
+            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
             filters: filterGroups
-                // eslint-disable-next-line unicorn/prefer-array-find
-                .filter(group => group.title === groupTitle)[0]
+                .find(group => group.title === groupTitle)!
                 .filters.map(ogFilter => {
                     if (ogFilter.text === filter.text) {
                         return { ...ogFilter, checked: !filter.checked }

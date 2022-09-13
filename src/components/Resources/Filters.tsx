@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
 import CloseCircleOutlineIcon from 'mdi-react/CloseCircleOutlineIcon'
 
 import { Badge } from 'components/Badge'
@@ -25,6 +26,7 @@ interface Filters {
     setFilter: (groupTitle: string, { text, checked }: Filter) => void
     resetFilterGroup: (groupTitle: string) => void
     resetFilterGroups: () => void
+    disabledClear: boolean
 }
 
 /**
@@ -80,8 +82,15 @@ const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters, setFilter
  * @param props.setFilter - function to set a filter
  * @param props.resetFilterGroup - function to reset a filter gorup by title
  * @param props.resetFilterGroups - function to reset filter groups back to default
+ * @param props.disabledClear - boolean to disable the clear button
  */
-export const Filters: FunctionComponent<Filters> = ({ groups, setFilter, resetFilterGroup, resetFilterGroups }) => (
+export const Filters: FunctionComponent<Filters> = ({
+    groups,
+    setFilter,
+    resetFilterGroup,
+    resetFilterGroups,
+    disabledClear,
+}) => (
     <div className="tw-bg-gray-50 tw-py-3xl tw-px-sm">
         <div className="tw-flex tw-max-w-[1062px] tw-mx-auto">
             <div>
@@ -99,10 +108,13 @@ export const Filters: FunctionComponent<Filters> = ({ groups, setFilter, resetFi
             </div>
 
             <div
-                className="tw-text-blurple-400 tw-mb-sm tw-cursor-pointer tw-whitespace-nowrap"
-                onClick={() => resetFilterGroups()}
-                onKeyDown={() => resetFilterGroups()}
-                role="button"
+                className={classNames('tw-mb-sm tw-whitespace-nowrap', {
+                    'tw-text-blurple-400 tw-cursor-pointer': !disabledClear,
+                    'tw-text-gray-300': disabledClear,
+                })}
+                onClick={() => !disabledClear && resetFilterGroups()}
+                onKeyDown={() => !disabledClear && resetFilterGroups()}
+                role={(!disabledClear && 'button') || undefined}
                 tabIndex={0}
             >
                 <CloseCircleOutlineIcon size={24} className="tw-inline tw-mr-1 tw-align-top" />

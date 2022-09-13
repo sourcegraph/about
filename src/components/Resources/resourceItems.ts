@@ -1,13 +1,20 @@
+type ContentTypes = 'virtual event' | 'blog post' | 'guide' | 'customer story' | 'video'
+type Subjects = 'code security' | 'developer onboarding' | 'code health' | 'incident response' | 'code reuse'
+
 export interface Resource {
     title: string
     description: string
-    contentType: string
-    subjects: string[]
+    contentType: ContentTypes
+    subjects: Subjects[]
     featured: boolean
     link: string
     publishDate: string
 }
 
+/**
+ * These are our resources for the resources page.
+ * Note: Published dates should be the first merged PR timestamp of a resource.
+ */
 export const resourceItems: Resource[] = [
     {
         featured: true,

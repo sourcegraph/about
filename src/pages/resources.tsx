@@ -89,6 +89,7 @@ const Resources: FunctionComponent = () => {
                 setFilter={setFilter}
                 resetFilterGroup={resetFilterGroup}
                 resetFilterGroups={resetFilterGroups}
+                disabledClear={!checkedFilters.length}
             />
 
             <ContentSection background="white" className="tw-max-w-[1062px]">
