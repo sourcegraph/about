@@ -113,7 +113,7 @@ export const Badge: FunctionComponent<Badge> = ({ text, size, color, icon, onCli
     }
 
     const styles = classNames(
-        'tw-inline tw-font-mono tw-align-middle tw-font-medium',
+        'tw-inline tw-font-mono tw-align-middle tw-font-medium tw-whitespace-nowrap',
         sizes[size],
         colors[color].base,
         {

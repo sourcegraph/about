@@ -6,6 +6,7 @@ import StarIcon from 'mdi-react/StarIcon'
 import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
+import { Badge } from 'components/Badge'
 
 import { Resource } from '.'
 
@@ -15,22 +16,6 @@ interface Card {
 
 interface BackgroundVariant {
     [key: string]: string
-}
-
-interface FilterPill {
-    text: string
-    light?: boolean
-}
-
-const FilterPill: FunctionComponent<FilterPill> = ({ text, light = false }) => {
-    const background = light ? 'tw-bg-gray-100' : 'tw-bg-gray-200'
-    return (
-        <div
-            className={`${background} tw-text-gray-500 tw-py-1 tw-px-2 tw-rounded-md tw-mr-2 tw-mb-2 tw-whitespace-nowrap first-letter:tw-capitalize tw-font-mono tw-text-xs`}
-        >
-            {text}
-        </div>
-    )
 }
 
 /**
@@ -67,7 +52,9 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                     backgrounds[resource.contentType]
                 )}
             >
-                <div className="first-letter:tw-capitalize tw-font-medium">{resource.contentType}</div>
+                <div className="first-letter:tw-capitalize tw-font-medium tw-font-mono tw-text-sm">
+                    {resource.contentType}
+                </div>
             </div>
 
             {/* Card Info */}
@@ -81,14 +68,19 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                         .slice(0, 3)
                         .sort()
                         .map(subject => (
-                            <FilterPill key={subject} text={subject} />
+                            <span key={subject} className="tw-mr-2 tw-mb-2 first-letter:tw-capitalize">
+                                <Badge text={subject} size="small" color="light-gray" />
+                            </span>
                         ))}
                     {!!resource.subjects.slice(3).length && (
                         <div className="tw-group tw-relative">
-                            <FilterPill text={`+${resource.subjects.slice(3).length}`} />
+                            <Badge text={`+${resource.subjects.slice(3).length}`} size="small" color="light-gray" />
+
                             <div className="tw-hidden group-hover:tw-flex group-hover:tw-animate-fadeIn tw-absolute tw-left-0 tw-top-0 tw-shadow-md tw-bg-white tw-pt-xxs tw-pl-xxs tw-rounded-md tw-flex-col tw-cursor-default">
                                 {resource.subjects.slice(3).map(subject => (
-                                    <FilterPill key={subject} text={subject} light={true} />
+                                    <span key={subject} className="tw-mr-2 tw-mb-2 first-letter:tw-capitalize">
+                                        <Badge text={subject} color="light-gray" size="small" />
+                                    </span>
                                 ))}
                             </div>
                         </div>
