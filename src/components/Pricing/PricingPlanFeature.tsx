@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
 import InformationCircleOutlineIcon from 'mdi-react/InformationCircleOutlineIcon'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
@@ -12,7 +13,7 @@ interface Props {
 }
 
 export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag = 'li' }) => (
-    <Tag>
+    <Tag className={classNames(Tag === 'li' && 'tw-text-sm')}>
         <div className="tw-flex tw-my-xxs">
             <div className="tw-text-lg">{feature.label}</div>
 

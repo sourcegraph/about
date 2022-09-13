@@ -72,7 +72,7 @@
     }
     tr:nth-child(even) {
         @apply tw-bg-gray-100;
-
+    }
     /* Elements with id's */
     *[id] {
       /**

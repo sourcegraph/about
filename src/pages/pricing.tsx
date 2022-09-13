@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
 import CheckIcon from 'mdi-react/CheckIcon'
 import Link from 'next/link'
 
@@ -10,12 +11,46 @@ import {
     Layout,
     PricingPlan,
     PricingPlanFeature,
+    TableWrapper,
     ALL_FEATURE_INFO,
     BIZ_FEATURES_OVERVIEW,
     ENTERPRISE_FEATURES_OVERVIEW,
     ALL_FEATURES_COMPARED_DATA,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
+
+const BusinessCTA: FunctionComponent<{className?: string}> = ({ className }) => (
+    <Link href="/get-started/self-hosted" passHref={true}>
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        <a
+            className={`btn btn-primary tw-w-full md:tw-w-auto ${className || ''}`}
+            title="Get started"
+            data-button-style={buttonStyle.primary}
+            data-button-location={buttonLocation.trySourcegraph}
+            data-button-type="cta"
+        >
+            Get started
+        </a>
+    </Link>
+)
+
+const EnterpriseCTA: FunctionComponent = () => (
+    <div>
+        <BusinessCTA className="tw-mr-xs tw-mb-xs md:tw-mb-0 tw-w-full md:tw-w-auto" />
+        <Link href="/demo" passHref={true}>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a
+                className="btn btn-outline-primary tw-w-full md:tw-w-auto"
+                title="Request a demo"
+                data-button-style={buttonStyle.outline}
+                data-button-location={buttonLocation.bodyDemo}
+                data-button-type="cta"
+            >
+                Request a demo
+            </a>
+        </Link>
+    </div>
+)
 
 const PricingPage: FunctionComponent = () => (
     <Layout
@@ -31,29 +66,16 @@ const PricingPage: FunctionComponent = () => (
             </div>
         }
     >
-        {/* TODO: Tooltips, li marker */}
+        {/* TODO: Tooltips */}
         <ContentSection className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-12 tw-gap-sm">
-            <div className="tw-mb-sm lg:tw-mb-0 tw-col-span-full md:tw-col-start-2 md:tw-col-span-5">
+            <div className="tw-mb-sm md:tw-mb-0 tw-col-span-full md:tw-col-start-2 md:tw-col-span-5">
                 <PricingPlan
                     name="Business"
                     price="$99 per active user/month"
                     description="Full platform access for teams and orgs, all on a dedicated Cloud instance."
                     features={BIZ_FEATURES_OVERVIEW}
                     isEnterprise={false}
-                    buttons={
-                        <Link href="/get-started/self-hosted" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="btn btn-primary tw-w-full md:tw-w-auto"
-                                title="Get started"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.trySourcegraph}
-                                data-button-type="cta"
-                            >
-                                Get started
-                            </a>
-                        </Link>
-                    }
+                    buttons={<BusinessCTA />}
                 />
             </div>
 
@@ -64,34 +86,7 @@ const PricingPage: FunctionComponent = () => (
                     description="Enterprise-grade security, scale, and support with custom deployment options."
                     features={ENTERPRISE_FEATURES_OVERVIEW}
                     isEnterprise={true}
-                    buttons={
-                        <div>
-                            <Link href="/get-started/self-hosted" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="btn btn-primary tw-mr-xs tw-mb-xs md:tw-mb-0 tw-w-full md:tw-w-auto"
-                                    title="Get started"
-                                    data-button-style={buttonStyle.primary}
-                                    data-button-location={buttonLocation.trySourcegraph}
-                                    data-button-type="cta"
-                                >
-                                    Get started
-                                </a>
-                            </Link>
-                            <Link href="/demo" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="btn btn-outline-primary tw-w-full md:tw-w-auto"
-                                    title="Request a demo"
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.bodyDemo}
-                                    data-button-type="cta"
-                                >
-                                    Request a demo
-                                </a>
-                            </Link>
-                        </div>
-                    }
+                    buttons={<EnterpriseCTA />}
                 />
             </div>
         </ContentSection>
@@ -103,99 +98,65 @@ const PricingPage: FunctionComponent = () => (
 
         {/* TODO: Table- mobile, re-use CTA's, price cell > ReactNode (2 lines), key error */}
         <ContentSection>
-            <table className="tw-relative tw-border-0">
-                <thead>
-                    <tr>
-                        <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 tw-w-1/3">
-                            <div className="tw-h-full tw-p-sm tw-border-b-2 tw-border-gray-200">
-                                <h2 className="tw-mt-sm tw-max-w-[200px]">Compare all features</h2>
-                            </div>
-                        </th>
-                        <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 tw-w-1/3">
-                            <div className="tw-h-full tw-p-sm tw-border-t-16 tw-border-2 tw-border-gray-200 tw-border-t-vermillion-300">
-                                <h2>Business</h2>
-                                <h4 className="tw-font-normal tw-py-sm">$99 per active user/month</h4>
-                                <Link href="/get-started/self-hosted" passHref={true}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a
-                                        className="btn btn-primary tw-w-full md:tw-w-auto"
-                                        title="Get started"
-                                        data-button-style={buttonStyle.primary}
-                                        data-button-location={buttonLocation.trySourcegraph}
-                                        data-button-type="cta"
-                                    >
-                                        Get started
-                                    </a>
-                                </Link>
-                            </div>
-                        </th>
-                        <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 tw-w-1/3">
-                            <div className="tw-h-full tw-p-sm tw-border-t-16 tw-border-b-2 tw-border-gray-200 tw-border-t-violet-400">
-                                <h2>Enterprise</h2>
-                                <h4 className="tw-font-normal tw-py-sm">Custom pricing</h4>
-                                <div>
-                                    <Link href="/get-started/self-hosted" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            className="btn btn-primary tw-mr-xs tw-mb-xs md:tw-mb-0 tw-w-full md:tw-w-auto"
-                                            title="Get started"
-                                            data-button-style={buttonStyle.primary}
-                                            data-button-location={buttonLocation.trySourcegraph}
-                                            data-button-type="cta"
-                                        >
-                                            Get started
-                                        </a>
-                                    </Link>
-                                    <Link href="/demo" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            className="btn btn-outline-primary tw-w-full md:tw-w-auto"
-                                            title="Request a demo"
-                                            data-button-style={buttonStyle.outline}
-                                            data-button-location={buttonLocation.bodyDemo}
-                                            data-button-type="cta"
-                                        >
-                                            Request a demo
-                                        </a>
-                                    </Link>
+            <TableWrapper>
+                <table className="tw-relative tw-border-0">
+                    <thead>
+                        <tr>
+                            <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 tw-w-1/3">
+                                <div className="tw-h-full tw-p-sm tw-border-b-1 tw-border-gray-200">
+                                    <h2 className="tw-mt-sm tw-max-w-[250px] tw-text-4xl md:tw-text-7xl">Compare all features</h2>
                                 </div>
-                            </div>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {ALL_FEATURES_COMPARED_DATA.map(section => (
-                        <>
-                            <tr className="tw-bg-white" key={section.topic}>
-                                <div className="tw-p-xs">
-                                    <h3>{section.topic}</h3>
+                            </th>
+                            <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 tw-w-1/3">
+                                <div className="tw-h-full tw-p-sm tw-border-t-16 tw-border-1 tw-border-gray-200 tw-border-t-vermillion-300">
+                                    <h2>Business</h2>
+                                    <h4 className="tw-font-normal tw-py-sm">$99 per active user/month</h4>
+                                    <BusinessCTA />
                                 </div>
-                            </tr>
-                            {section.features.map(feature => (
-                                <tr className="tw-border-0" key={feature.label}>
-                                    <td className="tw-border-0 tw-p-xs">
-                                        <PricingPlanFeature feature={ALL_FEATURE_INFO[feature.label]} tag="h5" />
-                                    </td>
-                                    <td className="tw-border-0 tw-border-x-2 tw-p-xs tw-text-center tw-align-middle">
-                                        {typeof feature.business === 'string' ? (
-                                            feature.business
-                                        ) : feature.business ? (
-                                            <CheckIcon className="mr-2 icon-inline tw-text-vermillion-300 tw-inline" />
-                                        ) : null}
-                                    </td>
-                                    <td className="tw-border-0 tw-p-xs tw-text-center tw-align-middle">
-                                        {typeof feature.enterprise === 'string' ? (
-                                            feature.enterprise
-                                        ) : feature.enterprise ? (
-                                            <CheckIcon className="mr-2 icon-inline tw-text-violet-400 tw-inline" />
-                                        ) : null}
-                                    </td>
+                            </th>
+                            <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 tw-w-1/3">
+                                <div className="tw-h-full tw-p-sm tw-border-t-16 tw-border-b-1 tw-border-gray-200 tw-border-t-violet-400">
+                                    <h2>Enterprise</h2>
+                                    <h4 className="tw-font-normal tw-py-sm">Custom pricing</h4>
+                                    <EnterpriseCTA />
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {ALL_FEATURES_COMPARED_DATA.map(section => (
+                            <>
+                                <tr className="tw-bg-white" key={section.topic}>
+                                    <th colSpan={100} className="tw-p-xs tw-text-start tw-border-0">
+                                        <h3>{section.topic}</h3>
+                                    </th>
                                 </tr>
-                            ))}
-                        </>
-                    ))}
-                </tbody>
-            </table>
+                                {section.features.map((feature, index) => (
+                                    <tr className={classNames('tw-border-0', (index+1) === section.features.length && 'tw-border-b-1 tw-border-gray-200')} key={feature.label}>
+                                        <td className="tw-border-0 tw-p-xs">
+                                            <PricingPlanFeature feature={ALL_FEATURE_INFO[feature.label]} tag="h5" />
+                                        </td>
+                                        <td className="tw-border-0 tw-border-x-1 tw-p-xs tw-text-center tw-align-middle">
+                                            {typeof feature.business === 'string' ? (
+                                                feature.business
+                                            ) : feature.business ? (
+                                                <CheckIcon className="mr-2 icon-inline tw-text-vermillion-300 tw-inline" />
+                                            ) : null}
+                                        </td>
+                                        <td className="tw-border-0 tw-p-xs tw-text-center tw-align-middle">
+                                            {typeof feature.enterprise === 'string' ? (
+                                                feature.enterprise
+                                            ) : feature.enterprise ? (
+                                                <CheckIcon className="mr-2 icon-inline tw-text-violet-400 tw-inline" />
+                                            ) : null}
+                                        </td>
+                                    </tr>
+                                ))}
+                            </>
+                        ))}
+                    </tbody>
+                </table>
+            </TableWrapper>
         </ContentSection>
 
         <CtaSection
