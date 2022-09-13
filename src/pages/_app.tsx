@@ -10,7 +10,7 @@ import type { AppProps } from 'next/app'
 import Script from 'next/script'
 import SSRProvider from 'react-bootstrap/SSRProvider'
 
-import { useEventLogger, useLogAllLinkClicks, useLandingSource, useScrollToAnchor } from '@hooks'
+import { useEventLogger, useLogAllLinkClicks, useLandingSource } from '@hooks'
 
 import 'prism-themes/themes/prism-one-light.css'
 
@@ -18,7 +18,6 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
     useEventLogger()
     useLandingSource()
     useLogAllLinkClicks()
-    useScrollToAnchor()
 
     return (
         <>

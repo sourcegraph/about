@@ -36,8 +36,7 @@ const Time: FunctionComponent<Time> = ({ time, label, separator = true }) => (
     </>
 )
 
-const calendarInviteLink =
-    'https://calendar.google.com/event?action=TEMPLATE&tmeid=NmUwMGZiMGRtaHFqdWdjcjZyOXQwdmtrczQgY19lMDYwOW9xYzF2ZTRoczBhMjk5djdvNjR1MEBn&tmsrc=c_e0609oqc1ve4hs0a299v7o64u0%40group.calendar.google.com'
+const calendarInviteLink = 'https://www.addevent.com/event/EJ14905143'
 
 const Sourcegraph4: FunctionComponent = () => {
     const [modal, setModal] = useState(false)

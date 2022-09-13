@@ -72,6 +72,14 @@
     }
     tr:nth-child(even) {
         @apply tw-bg-gray-100;
+
+    /* Elements with id's */
+    *[id] {
+      /**
+       * Allows anchor linked sections to not be hidden by our
+       * sticky nav, which is 74px in height.
+       */
+        scroll-margin-top: 74px;
     }
 }
 
