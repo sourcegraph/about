@@ -17,7 +17,7 @@ export interface Resource {
  */
 export const resourceItems: Resource[] = [
     {
-        featured: true,
+        featured: false,
         title: 'How Nutanix remediated log4j in 4 days',
         link: '/webinars/preparing-for-the-next-log4j',
         contentType: 'virtual event',
@@ -155,7 +155,7 @@ export const resourceItems: Resource[] = [
         publishDate: '2022-06-23T20:46:12Z',
     },
     {
-        featured: false,
+        featured: true,
         title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph',
         link: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
         contentType: 'customer story',
