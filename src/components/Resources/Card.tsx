@@ -49,7 +49,7 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
             <div
                 className={classNames(
                     'tw-h-[10%] tw-overflow-hidden tw-rounded-t-lg tw-flex tw-items-center tw-px-sm tw-bg-gradient-to-r',
-                    backgrounds[resource.contentType]
+                    backgrounds[resource.contentType] || 'tw-from-gray-200 tw-to-gray-300'
                 )}
             >
                 <div className="first-letter:tw-capitalize tw-font-medium tw-font-mono tw-text-sm">
