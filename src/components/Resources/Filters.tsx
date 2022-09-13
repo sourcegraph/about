@@ -54,7 +54,7 @@ const Filter: FunctionComponent<Filter> = ({ text, checked = false, onClick }) =
  */
 const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters, setFilter, resetFilterGroup }) => (
     <div className="md:tw-grid md:tw-grid-cols-12 first-of-type:tw-mb-xs">
-        <h6 className="tw-mb-xs md:tw-mb-0 md:tw-mr-5xl md:tw-col-span-2 tw-whitespace-nowrap">{title}</h6>
+        <h6 className="tw-mb-xs md:tw-mb-0 md:tw-mr-5xl md:tw-col-span-2 lg:tw-whitespace-nowrap">{title}</h6>
 
         <div className="tw-flex tw-flex-wrap md:tw-col-span-10">
             {filters.map(filter => (

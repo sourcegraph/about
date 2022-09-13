@@ -45,10 +45,10 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
     }
 
     return (
-        <div className="tw-bg-white tw-shadow-md tw-rounded-lg md:tw-min-h-[469px]">
+        <div className="tw-bg-white tw-shadow-md tw-rounded-lg sm:tw-min-h-[540px] md:tw-min-h-[475px]">
             <div
                 className={classNames(
-                    'tw-h-[10%] tw-overflow-hidden tw-rounded-t-lg tw-flex tw-items-center tw-px-sm tw-bg-gradient-to-r',
+                    'tw-h-[54px] tw-overflow-hidden tw-rounded-t-lg tw-flex tw-items-center tw-px-sm tw-bg-gradient-to-r',
                     backgrounds[resource.contentType] || 'tw-from-gray-200 tw-to-gray-300'
                 )}
             >
@@ -58,7 +58,11 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
             </div>
 
             {/* Card Info */}
-            <div className="tw-flex tw-flex-col tw-p-sm tw-h-[90%]">
+            <div
+                className="tw-flex tw-flex-col tw-p-sm"
+                // eslint-disable-next-line react/forbid-dom-props
+                style={{ height: 'calc(100% - 54px)' }}
+            >
                 <h4 className="tw-mb-sm">
                     {resource.title.length > 100 ? `${resource.title.slice(0, 97)}...` : resource.title}
                 </h4>
