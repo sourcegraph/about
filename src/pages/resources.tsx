@@ -2,7 +2,6 @@ import { FunctionComponent } from 'react'
 
 import AlertOutlineIcon from 'mdi-react/AlertOutlineIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-import Link from 'next/link'
 
 import {
     Layout,
@@ -15,7 +14,6 @@ import {
     Hero,
     CtaSection,
 } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
 
 const sortResources = (resources: Resource[]): Resource[] =>
     resources.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf())
@@ -94,25 +92,13 @@ const Resources: FunctionComponent = () => {
 
             <ContentSection background="white" className="tw-max-w-[1062px]">
                 {!!noResults && (
-                    <div className="tw-text-center tw-max-w-xl tw-mx-auto tw-mb-3xl">
+                    <div className="tw-text-center tw-max-w-md tw-mx-auto tw-mb-3xl">
                         <span className="tw-bg-violet-100 tw-text-violet-400 tw-w-md tw-h-md tw-p-1 tw-rounded-full tw-inline-flex tw-items-center tw-justify-center tw-mb-xxs">
                             <AlertOutlineIcon className="tw-inline" size={18} />
                         </span>
                         <h4>We're stumped!</h4>
                         <p className="tw-text-lg">
                             Sorry, we don't have a match for that. Try adjusting the filters to expand the results.
-                            Can't find what you're looking for?{' '}
-                            <Link href="/demo" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Schedule a call
-                                </a>
-                            </Link>{' '}
-                            with a Sourcegraph teammate.
                         </p>
                     </div>
                 )}
