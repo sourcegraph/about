@@ -164,13 +164,13 @@ As used on this page, the following terms have the following specific meanings:
 
 <span className="tw-text-blurple-400">
   ## 3. Acceptable use
-</span>
 
 <span className="tw-text-gray-400">
   <i>**Short version**: You’re allowed to use Sourcegraph for any reasonable purposes (e.g., don’t try to re-sell it, don’t violate your license, etc.). If you post any comments or other content, you’re responsible for it, and we have the right to display it to other users per your settings. If you give us a great idea about how to improve our services, we can use it.</i>
+  
 </span>
 
-3.1 **License from Us to You**. The source code for our Software is publicly available at https://github.com/sourcegraph. Your rights to access and use that code is covered by the software license in that repository.
+<br>3.1 **License from Us to You**. The source code for our Software is publicly available at https://github.com/sourcegraph. Your rights to access and use that code is covered by the software license in that repository.
 
 3.2 **Restrictions**. You may not, and may not permit any third-party to:
 
@@ -204,7 +204,7 @@ As used on this page, the following terms have the following specific meanings:
   <i>**Short version**: We have the right to collect Usage Data from self-hosted Sourcegraph instances, as described in our [Privacy Policy](/terms/privacy) and specifically listed in our [product documentation](https://docs.sourcegraph.com/admin/pings).</i>
 </span>
 
-We may collect Usage Data derived from your use of the Software to develop, improve, support, and operate our products. If we share or publicly disclose any information constituting or derived from Usage Data, we will aggregate or anonymize that information such that no personal data can be identified.
+<br>We may collect Usage Data derived from your use of the Software to develop, improve, support, and operate our products. If we share or publicly disclose any information constituting or derived from Usage Data, we will aggregate or anonymize that information such that no personal data can be identified.
 
 <span className="tw-text-blurple-400">
   ## 5. Data protection
@@ -214,7 +214,7 @@ We may collect Usage Data derived from your use of the Software to develop, impr
   <i>**Short version**: Our privacy policy tells you what you need to know about how we use any personal information you provide to us. The internet is a dangerous place and, while we’ve instituted safeguards to protect your information, you understand that data breaches happen and we can’t guarantee perfect security.</i>
 </span>
 
-Data security and user privacy are very, VERY important to us. Please read our [Privacy Policy](/terms/privacy) carefully for details relating to how we collect, use, and disclose personal information you provide to us in connection with your use of the Software.
+<br>Data security and user privacy are very, VERY important to us. Please read our [Privacy Policy](/terms/privacy) carefully for details relating to how we collect, use, and disclose personal information you provide to us in connection with your use of the Software.
 
 As the Software is provided in the form of a self-hosted Instance, Sourcegraph will not have access to any of Your Code unless you include Your Code via email or other support channels to Sourcegraph. We have implemented, and the Software contains, commercially reasonable technical and organizational measures designed to secure Your Code and any other information you provide that is stored on your Instance (which we do not have access to), and any information that we do have access to (such as support emails you send to us, Usage Data, etc.), from accidental loss and from unauthorized access, use, alteration or disclosure. However, we cannot guarantee that unauthorized third parties will never be able to defeat those measures or use your information for improper purposes. You understand that internet technologies have the inherent potential for disclosure. 
 
@@ -226,7 +226,7 @@ As the Software is provided in the form of a self-hosted Instance, Sourcegraph w
   <i>**Short version**: We will each protect the other party’s confidential information.</i>
 </span>
 
-6.1 **Definition**. **"Confidential Information"** means all non-public information disclosed by us to you, or vice-versa, that is designated by the discloser as confidential or that reasonably should be considered confidential given the nature of the information or circumstances of its disclosure.
+<br>6.1 **Definition**. **"Confidential Information"** means all non-public information disclosed by us to you, or vice-versa, that is designated by the discloser as confidential or that reasonably should be considered confidential given the nature of the information or circumstances of its disclosure.
 
 6.2 **Exclusions.** Confidential Information does not include any information that
 
@@ -248,7 +248,7 @@ As the Software is provided in the form of a self-hosted Instance, Sourcegraph w
   <i>**Short version**: You may shut down your instance any time. We may terminate the agreement at any time, at which point your right to use the software will immediately expire.</i>
 </span>
 
-7.1 **Subscription Period; Renewals**. Unless otherwise stated in an Order Form, this Agreement starts on the earlier of the date on which you: (a) agree to the terms and conditions of this Agreement; or (b) first set up an Instance and will continue in effect until either you or we terminate it (the **“Subscription Period”**).  Unless otherwise stated in an Order Form, your subscription will be automatically renew for one (1) year terms at the then-current fees and your credit card account (or other payment method account) will be charged without further authorization from you, absent sixty (60) day written notice of non-renewal prior to the end of your current subscription term.
+<br>7.1 **Subscription Period; Renewals**. Unless otherwise stated in an Order Form, this Agreement starts on the earlier of the date on which you: (a) agree to the terms and conditions of this Agreement; or (b) first set up an Instance and will continue in effect until either you or we terminate it (the **“Subscription Period”**).  Unless otherwise stated in an Order Form, your subscription will be automatically renew for one (1) year terms at the then-current fees and your credit card account (or other payment method account) will be charged without further authorization from you, absent sixty (60) day written notice of non-renewal prior to the end of your current subscription term.
 
 7.2 **Termination for Breach**. If a party fails to cure a material breach of the Agreement within thirty (30) days after receiving written notice of breach, the other party may then terminate the Agreement within the following thirty (30) days. We will refund you any prepaid, unused fees.
 
@@ -264,7 +264,7 @@ As the Software is provided in the form of a self-hosted Instance, Sourcegraph w
   <i>**Short version**: You’re responsible for any fees associated with your use of Sourcegraph. Your subscription will automatically renew, unless an Order Form states otherwise.</i>
 </span>
 
-8.1 **Pricing**. You are responsible for paying any applicable fees as set forth on our [Pricing and Payment Terms](/pricing) or in an Order Form and applicable taxes associated with the Software in a timely manner with a valid payment method. Unless otherwise stated in an Order Form, you will pay all invoices within thirty (30) days of receipt. You agree that we may charge for any such fees owed. You are required to keep your billing information current.
+<br>8.1 **Pricing**. You are responsible for paying any applicable fees as set forth on our [Pricing and Payment Terms](/pricing) or in an Order Form and applicable taxes associated with the Software in a timely manner with a valid payment method. Unless otherwise stated in an Order Form, you will pay all invoices within thirty (30) days of receipt. You agree that we may charge for any such fees owed. You are required to keep your billing information current.
 
 8.2 **Term**. Authorization to charge your chosen payment method account will remain in effect until you cancel or modify your preference. You agree that charges may be accumulated as incurred and may be submitted as one or more aggregate charges during or at the end of the applicable billing cycle.
 
@@ -280,7 +280,7 @@ As the Software is provided in the form of a self-hosted Instance, Sourcegraph w
   <i>**Short version**: Other than the warranties explicitly set forth in this section, Sourcegraph is provided “as is” with no guarantees of any kind (unless applicable law provides you additional mandatory rights). Please read this section carefully.</i>
 </span>
 
-During the Subscription Period, we will provide you with updates, upgrades, releases, or other adaptations or modifications of the Software, including any updated Documentation, error corrections, enhancements, improvements, or other changes to the user interface, functionality, compatibility, capabilities, performance, efficiency, or quality of the Software (“Maintenance Releases”), which you will install promptly.
+<br>During the Subscription Period, we will provide you with updates, upgrades, releases, or other adaptations or modifications of the Software, including any updated Documentation, error corrections, enhancements, improvements, or other changes to the user interface, functionality, compatibility, capabilities, performance, efficiency, or quality of the Software (“Maintenance Releases”), which you will install promptly.
 
 We warrant that (1) the Software will perform materially in accordance with the applicable Documentation when accessed and used as recommended in the Documentation and in accordance with the Agreement and (2) to the best of our knowledge, the Software is free from, and we will not knowingly introduce, software viruses, worms, Trojan horses or other code, files, scripts, or agents intended to do harm. These warranties only apply with respect to Software operated in accordance with the Agreement and Documentation. Your sole and exclusive remedy for breach of the warranties in this section is set forth in Section 7.2.
 
@@ -296,7 +296,7 @@ CERTAIN JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCL
   <i>**Short version**: Each party’s liability is limited to direct damages wherever possible, and to no more than $100 or the amount you paid us to access the software. Please read this section carefully.</i>
 </span>
 
-EACH PARTY WILL BE LIABLE TO THE OTHER PARTY FOR DIRECT DAMAGES ONLY. THE FOLLOWING TYPES OF DAMAGES WILL BE EXCLUDED: INDIRECT DAMAGES, CONSEQUENTIAL DAMAGES, SPECIAL DAMAGES, PUNITIVE DAMAGES, LOST PROFITS, LOST REPUTATION, AND COST OF REPLACEMENT SERVICES.
+<br>EACH PARTY WILL BE LIABLE TO THE OTHER PARTY FOR DIRECT DAMAGES ONLY. THE FOLLOWING TYPES OF DAMAGES WILL BE EXCLUDED: INDIRECT DAMAGES, CONSEQUENTIAL DAMAGES, SPECIAL DAMAGES, PUNITIVE DAMAGES, LOST PROFITS, LOST REPUTATION, AND COST OF REPLACEMENT SERVICES.
 
 EXCEPT WHERE PROHIBITED BY LAW OR FEES OWED EXCEED THE BELOW LIMIT, NEITHER PARTY’S TOTAL LIABILITY TO THE OTHER (AGGREGATED ACROSS ALL CLAIMS) WILL EXCEED YOUR ANNUAL LICENSE FEE IN THE SUBSCRIPTION YEAR IN WHICH THE UNDERLYING CLAIM AROSE OR ONE HUNDRED DOLLARS ($100), WHICHEVER IS GREATER.
 
@@ -308,7 +308,7 @@ EXCEPT WHERE PROHIBITED BY LAW OR FEES OWED EXCEED THE BELOW LIMIT, NEITHER PART
   <i>**Short version**: Each of us agrees to defend the other against third-party lawsuits that result from matters under our respective responsibility.</i>
 </span>
 
-11.1 **By You**. You agree to defend us from and against any third-party claims, proceedings, demands, and investigations and indemnify us for damages, attorney’s fees, and costs arising from Your Code or Content, your use of the Software in violation of the Agreement including any data or work transmitted or received by you, your violation of the Agreement or applicable laws, your infringement of any third-party intellectual property or other right of any person or entity, or any other party’s access and use of the Software with your unique username, password, or other appropriate security code.
+<br>11.1 **By You**. You agree to defend us from and against any third-party claims, proceedings, demands, and investigations and indemnify us for damages, attorney’s fees, and costs arising from Your Code or Content, your use of the Software in violation of the Agreement including any data or work transmitted or received by you, your violation of the Agreement or applicable laws, your infringement of any third-party intellectual property or other right of any person or entity, or any other party’s access and use of the Software with your unique username, password, or other appropriate security code.
 
 11.2 **By Sourcegraph**. We agree to defend you from and against any third-party claims, proceedings, demands, and investigations and indemnify you for damages, attorney’s fees, and costs arising from your use of the Software or Documentation in accordance with this Agreement that infringes or misappropriates such third-party’s intellectual property rights, provided that (i) your use conforms with the Agreement and Documentation and does not arise from a violation of your obligations under this Agreement, (ii) your use is of the most current Software version, and (iii) the claim does not arise from Your Code or Content or any modification, combination, or development of the Software not performed by us.
 
@@ -322,17 +322,17 @@ EXCEPT WHERE PROHIBITED BY LAW OR FEES OWED EXCEED THE BELOW LIMIT, NEITHER PART
   <i>**Short version**: Don’t use our site or software if you’re located in an embargoed country.</i>
 </span>
 
-The Software and the underlying information and technology may not be downloaded or otherwise exported or re-exported (a) into (or to a national or resident of) any country to which the U.S. has embargoed goods; or (b) to anyone on the U.S. Treasury Department’s list of Specially Designated Nationals or the U.S. Commerce Department’s Table of Deny Orders. By downloading or using the Software, you are agreeing to the foregoing and you represent and warrant that you are not located in, under the control of, or a national or resident of any such country or on any such list and you agree to comply with all export laws and other applicable laws.
+<br>The Software and the underlying information and technology may not be downloaded or otherwise exported or re-exported (a) into (or to a national or resident of) any country to which the U.S. has embargoed goods; or (b) to anyone on the U.S. Treasury Department’s list of Specially Designated Nationals or the U.S. Commerce Department’s Table of Deny Orders. By downloading or using the Software, you are agreeing to the foregoing and you represent and warrant that you are not located in, under the control of, or a national or resident of any such country or on any such list and you agree to comply with all export laws and other applicable laws.
 
 <span className="tw-text-blurple-400">
   ### **13. Governing law; arbitration; and class action/jury trial waiver**
 </span>
 
 <span className="tw-text-gray-400">
-  <i>**Short version**: We’re based in California, so the agreement is governed by California law, and all disputes must be brought there. If you have a claim against us, you’ll work with us to arbitrate it on an individual basis instead of via class action or jury trial.</i>
+  <i>**Short version**: If you're based in California like we are, the agreement is governed by California law, and all disputes must be brought there; otherwise, the Agreement is governed by New York law and disputes must be brought in New York. If you have a claim against us, you’ll work with us to arbitrate it on an individual basis instead of via class action or jury trial.</i>
 </span>
 
-13.1 **Governing Law**. This Agreement will be interpreted according to the laws of the jurisdiction stated below (“**Governing Jurisdiction**”). Notwithstanding the applicable Governing Jurisdiction, any arbitration conducted pursuant to the terms of these Terms shall be governed by the Federal Arbitration Act (9 U.S.C. §§ 1-16). The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded. You agree to submit to the personal jurisdiction of the federal and state courts located in the forum stated below (“**Forum**”) for any actions for which we retain the right to seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation or violation of a our copyrights, trademarks, trade secrets, patents, or other intellectual property or proprietary rights, as set forth in the Arbitration provision below, including any provisional relief required to prevent irreparable harm. You agree that the Forum stated below is the proper forum for any appeals of an arbitration award or for trial court proceedings if the arbitration provision below is found to be unenforceable.
+<br>13.1 **Governing Law**. This Agreement will be interpreted according to the laws of the jurisdiction stated below (“**Governing Jurisdiction**”). Notwithstanding the applicable Governing Jurisdiction, any arbitration conducted pursuant to the terms of these Terms shall be governed by the Federal Arbitration Act (9 U.S.C. §§ 1-16). The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded. You agree to submit to the personal jurisdiction of the federal and state courts located in the forum stated below (“**Forum**”) for any actions for which we retain the right to seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation or violation of a our copyrights, trademarks, trade secrets, patents, or other intellectual property or proprietary rights, as set forth in the Arbitration provision below, including any provisional relief required to prevent irreparable harm. You agree that the Forum stated below is the proper forum for any appeals of an arbitration award or for trial court proceedings if the arbitration provision below is found to be unenforceable.
 
 <TableWrapper>
   <table>
@@ -358,7 +358,7 @@ The Software and the underlying information and technology may not be downloaded
   ### **14. Miscellaneous**
 </span>
 
-14.1 **Notices and Electronic Communications**. We may provide you with (and you hereby consent to our provision of) notices, including those regarding changes to our terms and conditions, by email, regular mail, or postings on the Site. Notice will be deemed given twenty-four hours after email is sent, unless we’re notified that the email address is invalid. Notice posted on the Site is deemed given five (5) days following the initial posting. We reserve the right to determine the form and means of providing notifications to our users, provided that you may opt out of certain means of notification as described in the Agreement. We are not responsible for any automatic filtering you or your network provider may apply to email notifications we send to the email address you provide us.
+<br>14.1 **Notices and Electronic Communications**. We may provide you with (and you hereby consent to our provision of) notices, including those regarding changes to our terms and conditions, by email, regular mail, or postings on the Site. Notice will be deemed given twenty-four hours after email is sent, unless we’re notified that the email address is invalid. Notice posted on the Site is deemed given five (5) days following the initial posting. We reserve the right to determine the form and means of providing notifications to our users, provided that you may opt out of certain means of notification as described in the Agreement. We are not responsible for any automatic filtering you or your network provider may apply to email notifications we send to the email address you provide us.
 
 14.2 **Updates and Modifications**. We may update the Agreement (including these Terms) from time to time. When we change the Agreement (including these Terms) in a material manner, we will update the ‘last modified’ date at the top of this page and notify you that material changes have been made to the Agreement. Your continued use of the Software after any such change constitutes your acceptance of the new Terms of Service, unless you have signed an Order Form with us where the terms in effect as of your Order Date will apply. If you have purchased a subscription to use the Software, any change to these Terms will be effective with respect to such Software upon the renewal of your subscription, unless otherwise stated in an Order Form.
 
