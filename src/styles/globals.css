@@ -84,13 +84,18 @@
 /* Custom Utilities */
 @layer utilities {
 
-    /* Gradient borders not available in Tailwind syntax */
+    /* ==================== Borders ==================== */
     .sg-border-gradient-saturn {
         border-image-slice: 1 !important;
         border-image-source: linear-gradient(to right, theme(colors.violet.200), theme(colors.blue.200)) !important;
     }
 
-    /* Dark Nebulous Gradient Backgrounds */
+    /* ==================== Backgrounds ==================== */
+    /* Light Nebulous Backgrounds */
+    /* TODO */
+
+    /* Dark Nebulous Backgrounds */
+    /* TODO */
     .sg-bg-gradient-dark-nebulous-4 {
         background:
         radial-gradient(67.89% 140.35% at 28.91% 4.07%, #000 46.35%, theme(colors.blue.300 / 19%) 71.11%, theme(colors.blurple.300 / 50%) 100%),
@@ -100,7 +105,13 @@
         #000;
     }
 
-    /* Simple Gradient Backgrounds */
+    /* Code Backgrounds */
+    /* TODO */
+
+    /* Grid Backgrounds */
+    /* TODO */
+
+    /* Simple Backgrounds */
     .sg-bg-gradient-venus {
         @apply tw-bg-gradient-to-r tw-from-blue-200/50 tw-to-green-200/50;
     }
@@ -120,7 +131,7 @@
         @apply tw-bg-gradient-to-r tw-from-blue-300 tw-to-violet-400;
     }
 
-    /* Starship Gradient Backgrounds */
+    /* Starship Backgrounds */
     .sg-bg-gradient-starship-small {
         background:
             radial-gradient(15.69% 113.34% at -2.47% 109.42%, theme(colors.blurple.400) 0%, rgba(161, 18, 255, 0) 100%),
