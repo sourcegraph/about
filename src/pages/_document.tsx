@@ -37,21 +37,16 @@ export default class MyDocument extends Document {
                 </Head>
                 <body>
                     {/* Google Tag Manager (noscript) */}
-                    <style
-                        dangerouslySetInnerHTML={{
-                            __html: '.gtm-hide { "display:none;visibility:hidden" 0 !important}',
-                        }}
-                    />
                     <noscript>
                         <iframe
                             src="https://www.googletagmanager.com/ns.html?id=GTM-TB4NLS7"
-                            className="gtm-hide"
+                            // eslint-disable-next-line react/forbid-dom-props
+                            style={{ display: 'none', visibility: 'hidden' }}
                             height="0"
                             width="0"
                             title="GTM"
                         />
                     </noscript>
-                    {/*  End Google Tag Manager (noscript) */}
 
                     <Main />
                     <NextScript />
