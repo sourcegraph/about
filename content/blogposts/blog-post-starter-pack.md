@@ -86,7 +86,7 @@ Sometimes a piece of information needs to stick out. You can use the `Alert` com
 
 <Alert>Hey, this is important to know!</Alert>
 
-You can also change the color of the Alert by setting its `type`. You can choose between:
+You can change the color of the Alert by setting its `type` property to one of the following:
 
 `primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, or`dark`
 
@@ -96,6 +96,65 @@ Or, you may want to include a link within your Alert:
 
 <Alert type="secondary">Check out Sourcegraph <a href="https://www.sourcegraph.com/search">Search.</a></Alert>
 
+### Badge
+
+Use the `Badge` component to call out specific topics or versions of content.
+
+<div className="tw-mb-sm">
+  <Badge text="Default badge" size="small" />
+</div>
+
+<div className="tw-flex tw-justify-between">
+  <Badge text="light-gray" size="small" color="light-gray" />
+  <Badge text="white" size="small" color="white" />
+  <Badge text="white-outlined" size="small" color="white-outlined" />
+  <Badge text="dark-gray" size="small" color="dark-gray" />
+  <Badge text="blue" size="small" color="blue" />
+  <Badge text="blurple" size="small" color="blurple" />
+  <Badge text="violet" size="small" color="violet" />
+  <Badge text="cerise" size="small" color="cerise" />
+  <Badge text="vermillion" size="small" color="vermillion" />
+  <Badge text="green" size="small" color="green" />
+  <Badge text="lemon" size="small" color="lemon" />
+</div>
+Change the <b>color</b> of the Badge by setting its `color` property to one of the following options:
+```javascript
+<Badge text="lemon" size="small" color="blurple" />
+```
+
+<div className="tw-mt-sm">
+  <Badge text="NEW!" size="small" color="violet" circle={true} />
+</div>
+<b>Round</b> the edges for a "pill badge" effect, add `circle={true}` property for the markdown.
+```javascript
+<Badge text="NEW!" size="small" color="violet" circle={true} />
+```
+
+<div className="tw-mt-sm">
+  <Badge text="Search code" color="cerise" size="small" onClick={() => window.open('https://sourcegraph.com/', '_blank', 'noopener')} />
+</div>
+To add a <b>link</b> to your badge, add a value to the `onClick` property as seen below:
+```javascript
+<Badge text="Search code" color="cerise" size="small" onClick={() => window.open('https://sourcegraph.com/', '_blank', 'noopener')} />
+```
+
+<div className="tw-mt-sm">
+  <Badge text="Code Insights" color="green" size="small" onClick={() => window.open("/code-insights", "_self")} />
+</div>
+If the link is to an internal page on about.sourcegraph.com, we don't want to open the link in a new tab. Add the following to the markdown adjusted to your badge values:
+```javascript
+<Badge text="Code Insights" color="green" size="small" onClick={() => window.open("/code-insights", "_self")} />
+```
+
+<div className="tw-mt-sm">
+  <Badge text="BETA" color="vermillion" size="large" />
+</div>
+To use a <b>larger badge</b>, give the component a `size="large"` property.
+```javascript
+<Badge text="BETA" color="vermillion" size="large" />
+```
+
+<br />
 
 ### Blockquote
 
@@ -248,6 +307,24 @@ Instead of linking images using Markdown, please use the Figure component. This 
   alt="Sourcegraph thumbnail"
   caption="Check out Sourcegraph Search!"
   link="https://www.sourcegraph.com/search"
+/>
+
+Add an open in new window icon by including `linkIcon={true}` property to the Figure component:
+```javascript
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png"
+  alt="Sourcegraph thumbnail"
+  caption="Check out Sourcegraph Search!"
+  link="https://www.sourcegraph.com/search"
+  linkIcon={true}
+/>
+```
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png"
+  alt="Sourcegraph thumbnail"
+  caption="Check out Sourcegraph Search!"
+  link="https://www.sourcegraph.com/search"
+  linkIcon={true}
 />
 
 <div className="mt-6" />
