@@ -66,7 +66,7 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
                 }}
                 cta2={{
                     text: 'Schedule a demo',
-                    link: '/demo',
+                    link: '/demo?utm_source=blog-integrations-update',
                     ctaStyle: 'outlineButton',
                 }}
             />
