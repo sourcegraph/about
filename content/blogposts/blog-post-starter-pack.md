@@ -70,13 +70,16 @@ Your markdown content goes here
 
 The Sourcegraph Blog is implemented with Next.js with MDX support. One strength of this implementation is the ability to incorporate our custom components in Markdown. The following components are available for blog posts:
 
-1. Alert
-2. Blockquote
-3. Figure
-4. TableWrapper
-5. Video
-6. YouTube, and;
-7. HubSpotForm
+<ol>
+  <li><a href="#alert">Alert</a></li>
+  <li><a href="#badge">Badge</a></li>
+  <li><a href="#blockquote">Blockquote</a></li>
+  <li><a href="#figure">Figure</a></li>
+  <li><a href="#tableWrapper">TableWrapper</a></li>
+  <li><a href="#video">Video</a></li>
+  <li><a href="#youtube">YouTube</a></li>
+  <li><a href="#hubspotform">HubSpotForm</a></li>
+</ol>
 
 Use these components to bring your blog post to life. Here are a few examples:
 
@@ -262,7 +265,7 @@ This example is based on both the `mp4` and `webm` file formats living at the fo
 />
 
 
-### HubSpot Form Example
+### HubSpotForm
 
 Use the `HubSpotForm` component to drop a custom HubSpot form into your post. In most cases, the `masterFormName` and `chiliPiper` props are the only properties that need to be updated. Once added to your post, the HubSpot form will render in its place. All the options for this component are:
 
