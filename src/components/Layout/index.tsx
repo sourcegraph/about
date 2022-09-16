@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactNode, ReactFragment } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
 import Head from 'next/head'
 import { useRouter } from 'next/router'
@@ -21,7 +21,7 @@ interface LayoutProps {
     children: ReactNode
     minimal?: boolean
 
-    hero?: ReactFragment
+    hero?: ReactNode
     heroAndHeaderClassName?: string
 
     className?: string

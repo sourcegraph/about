@@ -1,16 +1,16 @@
 import { FunctionComponent, ReactNode } from 'react'
 
-interface Props {
-    template: Template
-}
-
 export interface Template {
     header: string
     description: string
     queries: ReactNode[]
 }
 
-export const TemplateCodeBlock: FunctionComponent<Props> = ({ template }) => (
+interface TemplateCodeBlock {
+    template: Template
+}
+
+export const TemplateCodeBlock: FunctionComponent<TemplateCodeBlock> = ({ template }) => (
     <div className="tw-flex-wrap tw-flex tw-flex-row tw-w-full tw-justify-center md:tw-flex-col md:tw-justify-start md:tw-w-1/2">
         <div className="p-4 mx-2 mb-3 border tw-rounded tw-grow tw-bg-white border-light" key={template.header}>
             <h5>{template.header}</h5>

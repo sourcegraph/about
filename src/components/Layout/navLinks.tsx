@@ -1,18 +1,18 @@
-import React from 'react'
+import { ReactNode } from 'react'
 
-import DiscordIcon from 'mdi-react/DiscordIcon'
 import GithubIcon from 'mdi-react/GithubIcon'
 import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import SpotifyIcon from 'mdi-react/SpotifyIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import YouTubeIcon from 'mdi-react/YoutubeIcon'
+import { FaDiscord as DiscordIcon } from 'react-icons/fa'
 
 export interface NavLink {
     section: string
     items: {
         title: string
         href: string
-        icon?: React.ReactFragment
+        icon?: ReactNode
     }[]
 }
 
@@ -224,7 +224,7 @@ export const socialLinks: NavLink = {
         {
             title: 'Discord',
             href: 'https://discord.gg/s2qDtYGnAE',
-            icon: <DiscordIcon />,
+            icon: <DiscordIcon size={24} />,
         },
         {
             title: 'Spotify',

@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactFragment, useEffect } from 'react'
+import { FunctionComponent, ReactNode, useEffect } from 'react'
 
 import classNames from 'classnames'
 import { startCase } from 'lodash'
@@ -19,7 +19,7 @@ interface VideoElement {
 interface Features {
     productFeature: string
     title: string
-    description: string | ReactFragment
+    description: string | ReactNode
     details: string[]
     ctaLink: string
     video: Video
@@ -191,7 +191,7 @@ export const CoreFeatures: FunctionComponent = () => {
                         )}
                     </div>
 
-                    <div className="px-5 tw-py-0 mb-6 col-lg-6 mb-lg-0">
+                    <div className="px-5 mb-6 tw-py-0 col-lg-6 mb-lg-0">
                         <video
                             className={`shadow w-100 max-w-550 tw-block tw-mx-auto tw-rounded video-${index}`}
                             autoPlay={false}
