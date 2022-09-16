@@ -19,6 +19,7 @@ interface Hero extends Background {
     cta?: ReactNode
     displayUnderNav?: boolean
     mergeColumns?: boolean
+    centerContent?: boolean
 }
 
 export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illustration'>> = ({
@@ -32,6 +33,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
     cta,
     displayUnderNav = false,
     mergeColumns = false,
+    centerContent = false,
 }) => {
     let illustration: Background['illustration']
     if (product) {
@@ -40,7 +42,11 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
     }
 
     const mainContent = (
-        <div className={classNames(product && 'tw-max-w-[700px] tw-w-full')}>
+        <div
+            className={classNames(product && 'tw-max-w-[700px] tw-w-full', {
+                'md:tw-text-center md:tw-mx-auto': centerContent,
+            })}
+        >
             {backButton && <BackButton href={backButton.link} text={backButton.text} />}
 
             <div className="tw-flex tw-flex-col-reverse">
