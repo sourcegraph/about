@@ -38,6 +38,10 @@ export const navLinks: NavLink[] = [
         section: 'Resources',
         items: [
             {
+                title: 'All Resources',
+                href: '/resources',
+            },
+            {
                 title: 'Blog',
                 href: '/blog',
             },

@@ -116,8 +116,6 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
   </table>
 </TableWrapper>
 
-<br/>
-
 <span className="tw-text-blurple-400">
   ## 1. Definitions
 </span>
@@ -149,9 +147,7 @@ As used on this page, the following terms have the following specific meanings:
 </span>
 
 <span className="tw-text-gray-400">
-  <i>
-    **Short version**: You – or the organization you work for – is responsible for your instance and its security, as well as everything posted on it. You must be 18 or over to use our services.
-  </i>
+  *__Short version__: You – or the organization you work for – is responsible for your instance and its security, as well as everything posted on it. You must be 18 or over to use our services.*
 </span>
 
 2.1 **Account Responsibility and Security.**
@@ -167,7 +163,7 @@ As used on this page, the following terms have the following specific meanings:
 </span>
 
 <span className="tw-text-gray-400">
-  <i>**Short version**: You’re allowed to use Sourcegraph for any reasonable purposes (e.g., don’t try to re-sell it, don’t violate your license, etc.). If you post any comments or other content, you’re responsible for it, and we have the right to display it to other users per your settings. If you give us a great idea about how to improve our services, we can use it.</i>
+  *__Short version__: You’re allowed to use Sourcegraph for any reasonable purposes (e.g., don’t try to re-sell it, don’t violate your license, etc.). If you post any comments or other content, you’re responsible for it, and we have the right to display it to other users per your settings. If you give us a great idea about how to improve our services, we can use it.*
 </span>
 
 3.1 **License from Us to You**. The source code for our Software is publicly available at https://github.com/sourcegraph. Your rights to access and use that code is covered by the software license in that repository.
@@ -201,7 +197,7 @@ As used on this page, the following terms have the following specific meanings:
 </span>
 
 <span className="tw-text-gray-400">
-  <i>**Short version**: We have the right to collect Usage Data from self-hosted Sourcegraph instances, as described in our [Privacy Policy](/terms/privacy) and specifically listed in our [product documentation](https://docs.sourcegraph.com/admin/pings).</i>
+  *__Short version__: We have the right to collect Usage Data from self-hosted Sourcegraph instances, as described in our [Privacy Policy](/terms/privacy) and specifically listed in our [product documentation](https://docs.sourcegraph.com/admin/pings).*
 </span>
 
 We may collect Usage Data derived from your use of the Software to develop, improve, support, and operate our products. If we share or publicly disclose any information constituting or derived from Usage Data, we will aggregate or anonymize that information such that no personal data can be identified.
@@ -211,7 +207,7 @@ We may collect Usage Data derived from your use of the Software to develop, impr
 </span>
 
 <span className="tw-text-gray-400">
-  <i>**Short version**: Our privacy policy tells you what you need to know about how we use any personal information you provide to us. The internet is a dangerous place and, while we’ve instituted safeguards to protect your information, you understand that data breaches happen and we can’t guarantee perfect security.</i>
+  *__Short version__: Our privacy policy tells you what you need to know about how we use any personal information you provide to us. The internet is a dangerous place and, while we’ve instituted safeguards to protect your information, you understand that data breaches happen and we can’t guarantee perfect security.*
 </span>
 
 Data security and user privacy are very, VERY important to us. Please read our [Privacy Policy](/terms/privacy) carefully for details relating to how we collect, use, and disclose personal information you provide to us in connection with your use of the Software.
@@ -223,7 +219,7 @@ As the Software is provided in the form of a self-hosted Instance, Sourcegraph w
 </span>
 
 <span className="tw-text-gray-400">
-  <i>**Short version**: We will each protect the other party’s confidential information.</i>
+  *__Short version__: We will each protect the other party’s confidential information.*
 </span>
 
 6.1 **Definition**. **"Confidential Information"** means all non-public information disclosed by us to you, or vice-versa, that is designated by the discloser as confidential or that reasonably should be considered confidential given the nature of the information or circumstances of its disclosure.
@@ -245,7 +241,7 @@ As the Software is provided in the form of a self-hosted Instance, Sourcegraph w
 </span>
 
 <span className="tw-text-gray-400">
-  <i>**Short version**: You may shut down your instance any time. We may terminate the agreement at any time, at which point your right to use the software will immediately expire.</i>
+  *__Short version__: You may shut down your instance any time. We may terminate the agreement at any time, at which point your right to use the software will immediately expire.*
 </span>
 
 7.1 **Subscription Period; Renewals**. Unless otherwise stated in an Order Form, this Agreement starts on the earlier of the date on which you: (a) agree to the terms and conditions of this Agreement; or (b) first set up an Instance and will continue in effect until either you or we terminate it (the **“Subscription Period”**).  Unless otherwise stated in an Order Form, your subscription will be automatically renew for one (1) year terms at the then-current fees and your credit card account (or other payment method account) will be charged without further authorization from you, absent sixty (60) day written notice of non-renewal prior to the end of your current subscription term.
@@ -261,7 +257,7 @@ As the Software is provided in the form of a self-hosted Instance, Sourcegraph w
 </span>
 
 <span className="tw-text-gray-400">
-  <i>**Short version**: You’re responsible for any fees associated with your use of Sourcegraph. Your subscription will automatically renew, unless an Order Form states otherwise.</i>
+  *__Short version__: You’re responsible for any fees associated with your use of Sourcegraph. Your subscription will automatically renew, unless an Order Form states otherwise.*
 </span>
 
 8.1 **Pricing**. You are responsible for paying any applicable fees as set forth on our [Pricing and Payment Terms](/pricing) or in an Order Form and applicable taxes associated with the Software in a timely manner with a valid payment method. Unless otherwise stated in an Order Form, you will pay all invoices within thirty (30) days of receipt. You agree that we may charge for any such fees owed. You are required to keep your billing information current.
@@ -277,7 +273,7 @@ As the Software is provided in the form of a self-hosted Instance, Sourcegraph w
 </span>
 
 <span className="tw-text-gray-400">
-  <i>**Short version**: Other than the warranties explicitly set forth in this section, Sourcegraph is provided “as is” with no guarantees of any kind (unless applicable law provides you additional mandatory rights). Please read this section carefully.</i>
+  *__Short version__: Other than the warranties explicitly set forth in this section, Sourcegraph is provided “as is” with no guarantees of any kind (unless applicable law provides you additional mandatory rights). Please read this section carefully.*
 </span>
 
 During the Subscription Period, we will provide you with updates, upgrades, releases, or other adaptations or modifications of the Software, including any updated Documentation, error corrections, enhancements, improvements, or other changes to the user interface, functionality, compatibility, capabilities, performance, efficiency, or quality of the Software (“Maintenance Releases”), which you will install promptly.
@@ -293,7 +289,7 @@ CERTAIN JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCL
 </span>
 
 <span className="tw-text-gray-400">
-  <i>**Short version**: Each party’s liability is limited to direct damages wherever possible, and to no more than $100 or the amount you paid us to access the software. Please read this section carefully.</i>
+  *__Short version__: Each party’s liability is limited to direct damages wherever possible, and to no more than $100 or the amount you paid us to access the software. Please read this section carefully.*
 </span>
 
 EACH PARTY WILL BE LIABLE TO THE OTHER PARTY FOR DIRECT DAMAGES ONLY. THE FOLLOWING TYPES OF DAMAGES WILL BE EXCLUDED: INDIRECT DAMAGES, CONSEQUENTIAL DAMAGES, SPECIAL DAMAGES, PUNITIVE DAMAGES, LOST PROFITS, LOST REPUTATION, AND COST OF REPLACEMENT SERVICES.
@@ -305,7 +301,7 @@ EXCEPT WHERE PROHIBITED BY LAW OR FEES OWED EXCEED THE BELOW LIMIT, NEITHER PART
 </span>
 
 <span className="tw-text-gray-400">
-  <i>**Short version**: Each of us agrees to defend the other against third-party lawsuits that result from matters under our respective responsibility.</i>
+  *__Short version__: Each of us agrees to defend the other against third-party lawsuits that result from matters under our respective responsibility.*
 </span>
 
 11.1 **By You**. You agree to defend us from and against any third-party claims, proceedings, demands, and investigations and indemnify us for damages, attorney’s fees, and costs arising from Your Code or Content, your use of the Software in violation of the Agreement including any data or work transmitted or received by you, your violation of the Agreement or applicable laws, your infringement of any third-party intellectual property or other right of any person or entity, or any other party’s access and use of the Software with your unique username, password, or other appropriate security code.
@@ -319,7 +315,7 @@ EXCEPT WHERE PROHIBITED BY LAW OR FEES OWED EXCEED THE BELOW LIMIT, NEITHER PART
 </span>
 
 <span className="tw-text-gray-400">
-  <i>**Short version**: Don’t use our site or software if you’re located in an embargoed country.</i>
+  *__Short version__: Don’t use our site or software if you’re located in an embargoed country.*
 </span>
 
 The Software and the underlying information and technology may not be downloaded or otherwise exported or re-exported (a) into (or to a national or resident of) any country to which the U.S. has embargoed goods; or (b) to anyone on the U.S. Treasury Department’s list of Specially Designated Nationals or the U.S. Commerce Department’s Table of Deny Orders. By downloading or using the Software, you are agreeing to the foregoing and you represent and warrant that you are not located in, under the control of, or a national or resident of any such country or on any such list and you agree to comply with all export laws and other applicable laws.
@@ -329,7 +325,7 @@ The Software and the underlying information and technology may not be downloaded
 </span>
 
 <span className="tw-text-gray-400">
-  <i>**Short version**: We’re based in California, so the agreement is governed by California law, and all disputes must be brought there. If you have a claim against us, you’ll work with us to arbitrate it on an individual basis instead of via class action or jury trial.</i>
+  *__Short version__: If you're based in California like we are, the agreement is governed by California law, and all disputes must be brought there; otherwise, the Agreement is governed by New York law and disputes must be brought in New York. If you have a claim against us, you’ll work with us to arbitrate it on an individual basis instead of via class action or jury trial.*
 </span>
 
 13.1 **Governing Law**. This Agreement will be interpreted according to the laws of the jurisdiction stated below (“**Governing Jurisdiction**”). Notwithstanding the applicable Governing Jurisdiction, any arbitration conducted pursuant to the terms of these Terms shall be governed by the Federal Arbitration Act (9 U.S.C. §§ 1-16). The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded. You agree to submit to the personal jurisdiction of the federal and state courts located in the forum stated below (“**Forum**”) for any actions for which we retain the right to seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation or violation of a our copyrights, trademarks, trade secrets, patents, or other intellectual property or proprietary rights, as set forth in the Arbitration provision below, including any provisional relief required to prevent irreparable harm. You agree that the Forum stated below is the proper forum for any appeals of an arbitration award or for trial court proceedings if the arbitration provision below is found to be unenforceable.
@@ -349,6 +345,8 @@ The Software and the underlying information and technology may not be downloaded
     </tr>
   </table>
 </TableWrapper>
+
+<br />
 
 13.2 **Arbitration**. Read this section carefully because it requires the parties to arbitrate their disputes and limits the manner in which you can seek relief from us. For any dispute with us, you agree to first contact us at support@sourcegraph.com and attempt to resolve the dispute with us informally. In the unlikely event that we have not been able to resolve a dispute it has with you after sixty (60) days, we each agree to resolve any claim, dispute, or controversy (excluding any claims for injunctive or other equitable relief as provided below) arising out of or in connection with or relating to the Agreement, or the breach or alleged breach thereof, by binding arbitration by JAMS, under the Optional Expedited Arbitration Procedures then in effect for JAMS, except as provided herein. JAMS may be contacted at www.jamsadr.com. The arbitration will be conducted in Santa Clara County, California, unless we agree otherwise. If you are using the Software for commercial purposes, each party will be responsible for paying any JAMS filing, administrative and arbitrator fees in accordance with JAMS rules, and the award rendered by the arbitrator shall include costs of arbitration, reasonable attorneys’ fees and reasonable costs for expert and other witnesses. Any judgment on the award rendered by the arbitrator may be entered in any court of competent jurisdiction. Nothing in this section shall be deemed as preventing us from seeking injunctive or other equitable relief from the courts as necessary to prevent the actual or threatened infringement, misappropriation, or violation of our data security, intellectual property or other proprietary rights.
 
