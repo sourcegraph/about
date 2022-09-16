@@ -11,6 +11,9 @@ If you have specific questions or concerns, contact us at security@sourcegraph.c
 
 If you think you have discovered a security vulnerability in our product, please follow our instructions on [how to report a security vulnerability](https://handbook.sourcegraph.com/product-engineering/engineering/cloud/security/reporting-vulnerabilities).
 
+For details on our information security practices or to request a copy of our SOC 2 Report, please visit our 
+<Badge text="Security Trust Portal" color="blue" size="small" onClick={() => window.open('https://security.sourcegraph.com/')} />.
+
 ## Sourcegraph.com
 
 Sourcegraph.com makes it easier than ever to connect your code repositories and search private and public code. Here are the measures we take to ensure your code is safe and Sourcegraph is available:
