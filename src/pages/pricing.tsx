@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import CheckIcon from 'mdi-react/CheckIcon'
 import Link from 'next/link'
+import Accordion from 'react-bootstrap/Accordion'
 
 import {
     ContentSection,
@@ -175,9 +176,45 @@ const PricingPage: FunctionComponent = () => (
             }}
         />
 
-        {/* TODO: FAQ accordion from Flowbite */}
         <ContentSection className="tw-grid tw-grid-cols-5">
             <h2 className="tw-col-span-full md:tw-col-span-2 tw-max-w-md">Frequently asked questions</h2>
+
+            <div className="tw-col-span-full md:tw-col-span-3">
+                <Accordion>
+                    <Accordion.Item eventKey="0">
+                        <Accordion.Header><h4>How are monthly active users calculated?</h4></Accordion.Header>
+                        <Accordion.Body>
+                            <p className="tw-max-w-2xl">
+                                A monthly active user is any user who accesses Sourcegraph in a given month. See the docs for additional details on how monthly active users are calculated.
+                            </p>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="1">
+                        <Accordion.Header><h4>Is there a free trial of the paid plans?</h4></Accordion.Header>
+                        <Accordion.Body>
+                            <p className="tw-max-w-2xl">
+                                A monthly active user is any user who accesses Sourcegraph in a given month. See the docs for additional details on how monthly active users are calculated.
+                            </p>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="2">
+                        <Accordion.Header><h4>What are executors?</h4></Accordion.Header>
+                        <Accordion.Body>
+                            <p className="tw-max-w-2xl">
+                                Executors are like CI agents that Sourcegraph uses to offload expensive tasks. Executors are required to run Batch Changes server-side and to use code navigation’s auto-indexing functionality. The Business plan includes 2 executors and the Enterprise plan includes 4 executors.
+                            </p>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="3">
+                        <Accordion.Header><h4 className="tw-text-start">Does Sourcegraph offer discounts for educational and non-profit organizations?</h4></Accordion.Header>
+                        <Accordion.Body>
+                            <p className="tw-max-w-2xl">
+                                Sourcegraph supports the work of educational organizations and nonprofits. Please contact us about discounts for your development teams.
+                            </p>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+            </div>
         </ContentSection>
     </Layout>
 )
