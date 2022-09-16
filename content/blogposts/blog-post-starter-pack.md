@@ -120,7 +120,7 @@ Use the `Badge` component to call out specific topics or versions of content.
   <Badge text="green" size="small" color="green" />
   <Badge text="lemon" size="small" color="lemon" />
 </div>
-Change the <b>color</b> of the Badge by setting its `color` property to one of the following options:
+Change the <b>color</b> of the Badge by setting its `color` property to one of the above options.
 ```javascript
 <Badge text="lemon" size="small" color="blurple" />
 ```
