@@ -312,7 +312,7 @@ Instead of linking images using Markdown, please use the Figure component. This 
   link="https://www.sourcegraph.com/search"
 />
 
-Add an open in new window icon by including `linkIcon={true}` property to the Figure component:
+Add a link icon for links that open in a new window by including the `linkIcon={true}` property to the Figure component:
 ```javascript
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png"
