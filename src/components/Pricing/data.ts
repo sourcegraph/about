@@ -8,6 +8,18 @@ export interface FeatureInfo {
     description?: string
 }
 
+interface FeatureDictionary {
+    topic: string
+    features: FeatureSubsetDictionary[]
+}
+
+interface FeatureSubsetDictionary {
+    label: string
+    business: boolean | string
+    enterprise: boolean | string
+    disclaimer?: string
+}
+
 /** Business spotlight feature set */
 export const BIZ_FEATURES_OVERVIEW: FeatureCluster[] = [
     {
@@ -63,7 +75,7 @@ export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
     { topic: 'Enterprise add ons' },
 ]
 
-export const ALL_FEATURES_COMPARED_DATA = [
+export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
     {
         topic: 'Code intelligence platform',
         features: [
@@ -277,12 +289,12 @@ export const ALL_FEATURES_COMPARED_DATA = [
 const CIP_FEATURE_INFO: Record<string, FeatureInfo> = {
     codeSearch: {
         label: 'Code Search',
-        description:
-            'Super-fast, intuitive, and powerful code search across your entire codebase.',
+        description: 'Super-fast, intuitive, and powerful code search across your entire codebase.',
     },
     codeNavigation: {
         label: 'Code Navigation',
-        description: "Traverse your entire codebase with precise code navigation for cross-repository 'Go to definition' and 'Find references,' and more.",
+        description:
+            "Traverse your entire codebase with precise code navigation for cross-repository 'Go to definition' and 'Find references,' and more.",
     },
     batchChanges: {
         label: 'Batch Changes',
@@ -290,22 +302,20 @@ const CIP_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     codeInsights: {
         label: 'Code Insights',
-        description: 'Track and visualize trends in your entire codebase with visualizations that are kept automatically up to date.',
+        description:
+            'Track and visualize trends in your entire codebase with visualizations that are kept automatically up to date.',
     },
     notebooks: {
         label: 'Notebooks',
-        description:
-            'Create living documentation that interacts directly with your code.',
+        description: 'Create living documentation that interacts directly with your code.',
     },
     codeMonitoring: {
         label: 'Code Monitoring',
-        description:
-            'Get alerts when changes are made to your codebase.',
+        description: 'Get alerts when changes are made to your codebase.',
     },
     comprehensiveApi: {
         label: 'Comprehensive API',
-        description:
-            'A secure, robust GraphQL API for your repository and code data.',
+        description: 'A secure, robust GraphQL API for your repository and code data.',
     },
 }
 
@@ -316,15 +326,18 @@ const SECURITY_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     securityRoles: {
         label: 'User and admin roles',
-        description: 'Allow only certain users (site admins) to view and edit site configuration and repository/code host credentials.',
+        description:
+            'Allow only certain users (site admins) to view and edit site configuration and repository/code host credentials.',
     },
     repoPerms: {
         label: 'Standard repository permissions',
-        description: 'Apply the repository permissions from your code host to restrict which repositories a user can search and browse.',
+        description:
+            'Apply the repository permissions from your code host to restrict which repositories a user can search and browse.',
     },
     customPerms: {
         label: 'Custom repository permissions',
-        description: 'Apply the repository permissions from your code host or use the explicit permissions API to restrict which repositories a user can search and browse.',
+        description:
+            'Apply the repository permissions from your code host or use the explicit permissions API to restrict which repositories a user can search and browse.',
     },
     privateInstance: {
         label: 'Private instance access',
@@ -363,7 +376,8 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     selfHostedCodeHosts: {
         label: 'Connect to self-hosted code hosts',
-        description: 'Integrate with Github Enterprise Self-hosted, GitLab Self-hosted, BitBucket Server/Data Center, and Perforce',
+        description:
+            'Integrate with Github Enterprise Self-hosted, GitLab Self-hosted, BitBucket Server/Data Center, and Perforce',
     },
     enterpriseOnlyCodeHosts: {
         label: 'Connect to enterprise-only code hosts',
@@ -387,11 +401,13 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     businessExecutors: {
         label: '2 executors',
-        description: 'Offload expensive tasks when running Batch Changes server-side or using code navigation’s auto-indexing functionality.',
+        description:
+            'Offload expensive tasks when running Batch Changes server-side or using code navigation’s auto-indexing functionality.',
     },
     enterpriseExecutors: {
         label: '4 executors',
-        description: 'Offload expensive tasks when running Batch Changes server-side or using code navigation’s auto-indexing functionality.',
+        description:
+            'Offload expensive tasks when running Batch Changes server-side or using code navigation’s auto-indexing functionality.',
     },
 
     ...DEPLOYMENT_FEATURE_INFO,
@@ -403,7 +419,8 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     dedicatedCe: {
         label: 'Dedicated Customer Engineer',
-        description: 'Dedicated technical account manager to support usage, training, enablement, technical strategy, and overall health.',
+        description:
+            'Dedicated technical account manager to support usage, training, enablement, technical strategy, and overall health.',
     },
 }
 
@@ -421,7 +438,8 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     selfHosts: {
         label: 'Self-hosted code hosts',
-        description: 'Integrate with Github Enterprise Self-hosted, GitLab Self-hosted, BitBucket Server/Data Center, and Perforce',
+        description:
+            'Integrate with Github Enterprise Self-hosted, GitLab Self-hosted, BitBucket Server/Data Center, and Perforce',
     },
     enterpriseHosts: {
         label: 'Enterprise-only code hosts',
@@ -439,7 +457,7 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'Public repository connections',
         description: 'Sync code from public repositories.',
     },
-    
+
     // Security and admin
     soc2: {
         label: 'SOC 2 Type II',
@@ -454,7 +472,8 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     executors: {
         label: 'Executors',
-        description: 'Offload expensive tasks when running Batch Changes server-side or using code navigation’s auto-indexing functionality.',
+        description:
+            'Offload expensive tasks when running Batch Changes server-side or using code navigation’s auto-indexing functionality.',
     },
 
     // Support
@@ -463,7 +482,8 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     dedicatedCe: {
         label: 'Dedicated Customer Engineer',
-        description: 'Dedicated technical account manager to support usage, training, enablement, technical strategy, and overall health.',
+        description:
+            'Dedicated technical account manager to support usage, training, enablement, technical strategy, and overall health.',
     },
     supportSla: {
         label: 'Support SLA',
@@ -482,7 +502,8 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     backupRestore: {
         label: 'Self-hosted backup and restore',
-        description: 'Officially supported scripts to back up and restore your Sourcegraph instance and all configuration and data (add-on).',
+        description:
+            'Officially supported scripts to back up and restore your Sourcegraph instance and all configuration and data (add-on).',
     },
 
     // Usage and billing

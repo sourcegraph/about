@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from 'react'
+import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 import CheckIcon from 'mdi-react/CheckIcon'
@@ -19,7 +19,7 @@ import {
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
-const BusinessCTA: FunctionComponent<{className?: string}> = ({ className }) => (
+const BusinessCTA: FunctionComponent<{ className?: string }> = ({ className }) => (
     <Link href="/get-started/self-hosted" passHref={true}>
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a
@@ -55,20 +55,20 @@ const EnterpriseCTA: FunctionComponent = () => (
 const faqData = [
     {
         q: 'How are monthly active users calculated?',
-        a: 'A monthly active user is any user who accesses Sourcegraph in a given month. See the docs for additional details on how monthly active users are calculated.'
+        a: 'A monthly active user is any user who accesses Sourcegraph in a given month. See the docs for additional details on how monthly active users are calculated.',
     },
     {
         q: 'Is there a free trial of the paid plans?',
-        a: 'A monthly active user is any user who accesses Sourcegraph in a given month. See the docs for additional details on how monthly active users are calculated.'
+        a: 'A monthly active user is any user who accesses Sourcegraph in a given month. See the docs for additional details on how monthly active users are calculated.',
     },
     {
         q: 'What are executors?',
-        a: 'Executors are like CI agents that Sourcegraph uses to offload expensive tasks. Executors are required to run Batch Changes server-side and to use code navigation’s auto-indexing functionality. The Business plan includes 2 executors and the Enterprise plan includes 4 executors.'
+        a: 'Executors are like CI agents that Sourcegraph uses to offload expensive tasks. Executors are required to run Batch Changes server-side and to use code navigation’s auto-indexing functionality. The Business plan includes 2 executors and the Enterprise plan includes 4 executors.',
     },
     {
         q: 'Does Sourcegraph offer discounts for educational and non-profit organizations?',
-        a: 'Sourcegraph supports the work of educational organizations and nonprofits. Please contact us about discounts for your development teams.'
-    }
+        a: 'Sourcegraph supports the work of educational organizations and nonprofits. Please contact us about discounts for your development teams.',
+    },
 ]
 
 const PricingPage: FunctionComponent = () => (
@@ -121,7 +121,9 @@ const PricingPage: FunctionComponent = () => (
                     <tr>
                         <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 tw-w-1/3">
                             <div className="tw-h-full tw-p-sm tw-border-b-1 tw-border-gray-200">
-                                <h2 className="tw-mt-sm tw-max-w-[250px] tw-text-4xl md:tw-text-7xl">Compare all features</h2>
+                                <h2 className="tw-mt-sm tw-max-w-[250px] tw-text-4xl md:tw-text-7xl">
+                                    Compare all features
+                                </h2>
                             </div>
                         </th>
                         <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 tw-w-1/3">
@@ -149,7 +151,13 @@ const PricingPage: FunctionComponent = () => (
                                 </th>
                             </tr>
                             {section.features.map((feature, index) => (
-                                <tr className={classNames('tw-border-0', (index+1) === section.features.length && 'tw-border-b-1 tw-border-gray-200')} key={feature.label}>
+                                <tr
+                                    className={classNames(
+                                        'tw-border-0',
+                                        index + 1 === section.features.length && 'tw-border-b-1 tw-border-gray-200'
+                                    )}
+                                    key={feature.label}
+                                >
                                     <td className="tw-border-0 tw-p-xs">
                                         <PricingPlanFeature feature={ALL_FEATURE_INFO[feature.label]} tag="h5" />
                                     </td>
@@ -159,15 +167,19 @@ const PricingPage: FunctionComponent = () => (
                                         ) : feature.business ? (
                                             <CheckIcon className="mr-2 icon-inline tw-text-vermillion-300 tw-inline" />
                                         ) : null}
-                                        {feature.disclaimer && <i className="tw-block tw-text-sm">{feature.disclaimer}</i>}
+                                        {feature.disclaimer && (
+                                            <i className="tw-block tw-text-sm">{feature.disclaimer}</i>
+                                        )}
                                     </td>
                                     <td className="tw-border-0 tw-p-xs tw-text-center tw-align-middle">
                                         {typeof feature.enterprise === 'string' ? (
                                             feature.enterprise
-                                            ) : feature.enterprise ? (
-                                                <CheckIcon className="mr-2 icon-inline tw-text-violet-400 tw-inline" />
-                                            ) : null}
-                                            {feature.disclaimer && <i className="tw-block tw-text-sm">{feature.disclaimer}</i>}
+                                        ) : feature.enterprise ? (
+                                            <CheckIcon className="mr-2 icon-inline tw-text-violet-400 tw-inline" />
+                                        ) : null}
+                                        {feature.disclaimer && (
+                                            <i className="tw-block tw-text-sm">{feature.disclaimer}</i>
+                                        )}
                                     </td>
                                 </tr>
                             ))}
@@ -198,14 +210,18 @@ const PricingPage: FunctionComponent = () => (
 
             <div className="tw-col-span-full md:tw-col-span-3">
                 <Accordion>
-                {faqData.map(item => (
-                    <Accordion.Item key={item.q} eventKey={item.q} className="tw-border-t-1 tw-border-gray-200 tw-max-w-2xl tw-mb-sm">
-                        <Accordion.Header>
-                            <h4 className="tw-mt-sm tw-text-start">{item.q}</h4>
-                        </Accordion.Header>
-                        <Accordion.Body>{item.a}</Accordion.Body>
-                    </Accordion.Item>
-                ))}
+                    {faqData.map(item => (
+                        <Accordion.Item
+                            key={item.q}
+                            eventKey={item.q}
+                            className="tw-border-t-1 tw-border-gray-200 tw-max-w-2xl tw-mb-sm"
+                        >
+                            <Accordion.Header>
+                                <h4 className="tw-mt-sm tw-text-start">{item.q}</h4>
+                            </Accordion.Header>
+                            <Accordion.Body>{item.a}</Accordion.Body>
+                        </Accordion.Item>
+                    ))}
                 </Accordion>
             </div>
         </ContentSection>
