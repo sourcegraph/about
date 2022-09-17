@@ -256,6 +256,7 @@ export const ALL_FEATURES_COMPARED_DATA = [
                 label: 'price',
                 business: '$99 per user/month',
                 enterprise: 'Custom pricing',
+                disclaimer: 'Platform access fee may apply',
             },
             {
                 label: 'contractLength',
@@ -352,7 +353,6 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     // Code host integrations
     cloudHosts: {
         label: 'Unlimited standard Cloud hosts',
-        description: 'Integrate with GitHub.com, GitLab.com, and Bitbucket Cloud',
     },
     repoConnections: {
         label: 'Unlimited repository connections',
@@ -360,7 +360,6 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     unlimitedCodeHosts: {
         label: 'Unlimited code hosts',
-        description: 'Integrate with Github Enterprise Self-hosted, GitLab Self-hosted, BitBucket Server/Data Center, and Perforce',
     },
     selfHostedCodeHosts: {
         label: 'Connect to self-hosted code hosts',
@@ -414,7 +413,7 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     // Code host integrations
     codeHost: {
         label: 'Code host integrations',
-        description: 'Search, understand, fix, and automate across multiple code hosts.',
+        description: 'Integrate with GitHub.com, GitLab.com, and Bitbucket Cloud',
     },
     cloudHosts: {
         label: 'Cloud code hosts',

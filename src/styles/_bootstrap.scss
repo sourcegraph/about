@@ -1,3 +1,14 @@
+/* ======== Bootstrap Tooltip style overrides ======== */
+.tooltip-inner {
+    background-color: #fff;
+    color: black;
+    text-align: start;
+    font-size: 0.75rem;
+    box-shadow: 5px 3px gray;
+    opacity: 1;
+    // border: 16px solid gray
+}
+
 /* ======== Bootstrap Carousel style overrides ======== */
 .carousel {
     .carousel-indicators {
