@@ -2,6 +2,8 @@ import { FunctionComponent, useState } from 'react'
 
 import classNames from 'classnames'
 import CheckIcon from 'mdi-react/CheckIcon'
+import MinusIcon from 'mdi-react/MinusIcon'
+import PlusIcon from 'mdi-react/PlusIcon'
 import Link from 'next/link'
 import Accordion from 'react-bootstrap/Accordion'
 
@@ -55,11 +57,37 @@ const EnterpriseCTA: FunctionComponent = () => (
 const faqData = [
     {
         q: 'How are monthly active users calculated?',
-        a: 'A monthly active user is any user who accesses Sourcegraph in a given month. See the docs for additional details on how monthly active users are calculated.',
+        a: <p>
+            A monthly active user is any user who accesses Sourcegraph in a given month. See the{' '}
+            <a
+                href="https://docs.sourcegraph.com/code_insights"
+                title="docs"
+                data-button-style={buttonStyle.text}
+                data-button-location={buttonLocation.body}
+                data-button-type="cta"
+            >
+                docs
+            </a>
+            {' '}for additional details on how monthly active users are calculated.
+        </p>
     },
     {
         q: 'Is there a free trial of the paid plans?',
-        a: 'A monthly active user is any user who accesses Sourcegraph in a given month. See the docs for additional details on how monthly active users are calculated.',
+        a: <p>
+            Yes. We offer a free, 30-day trial for our paid plans.{' '}
+            <Link href="/get-started/self-hosted" passHref={true}>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a
+                    title="Get started"
+                    data-button-style={buttonStyle.text}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                >
+                    Get started
+                </a>
+            </Link>
+            {' '}with a free trial today.
+        </p>
     },
     {
         q: 'What are executors?',
@@ -67,7 +95,21 @@ const faqData = [
     },
     {
         q: 'Does Sourcegraph offer discounts for educational and non-profit organizations?',
-        a: 'Sourcegraph supports the work of educational organizations and nonprofits. Please contact us about discounts for your development teams.',
+        a: <p>
+            Sourcegraph supports the work of educational organizations and nonprofits. Please{' '}
+            <Link href="/demo" passHref={true}>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a
+                    title="contact Sourcegraph"
+                    data-button-style={buttonStyle.text}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                >
+                    contact us
+                </a>
+            </Link>
+            {' '}about discounts for your development teams.
+        </p>
     },
 ]
 
@@ -225,7 +267,9 @@ const PricingPage: FunctionComponent = () => {
                                 <Accordion.Header onClick={() => setActiveKey(activeKey !== index ? index : null)}>
                                     <div className="tw-flex tw-justify-between tw-items-center">
                                         <h4 className="tw-text-start tw-mt-sm">{item.q}</h4>
-                                        <span className="tw-text-gray-400 tw-font-normal tw-mt-xs">{activeKey === index ? '-' : '+'}</span>
+                                        <span className="tw-text-gray-400 tw-font-normal tw-mt-xs">
+                                            {activeKey === index ? <MinusIcon /> : <PlusIcon />}
+                                        </span>
                                     </div>
                                 </Accordion.Header>
                                 <Accordion.Body className="tw-max-w-xl tw-mt-xs">{item.a}</Accordion.Body>
