@@ -165,7 +165,6 @@ const PricingPage: FunctionComponent = () => {
             </h2>
             <CustomerLogos />
 
-            {/* TODO: Table- mobile, key error */}
             <ContentSection>
                 <table className="tw-relative tw-border-0">
                     <thead>
