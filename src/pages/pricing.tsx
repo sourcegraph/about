@@ -196,7 +196,7 @@ const PricingPage: FunctionComponent = () => {
             </ContentSection>
 
             <CtaSection
-                background="lightNebulousMars"
+                background="mars"
                 title="Free for small teams"
                 description="Small teams can use a limited version of Sourcegraph’s code intelligence platform for free to search personal and open source projects. The free version can only be deployed self-hosted and supports one code host connection."
                 cta1={{
