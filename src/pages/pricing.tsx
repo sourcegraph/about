@@ -260,7 +260,7 @@ const PricingPage: FunctionComponent = () => {
             />
 
             <ContentSection className="tw-grid tw-grid-cols-5">
-                <h2 className="tw-col-span-full md:tw-col-span-2 tw-max-w-md">Frequently asked questions</h2>
+                <h2 className="tw-col-span-full md:tw-col-span-2 tw-mb-md tw-max-w-md">Frequently asked questions</h2>
 
                 <div className="tw-col-span-full md:tw-col-span-3">
                     <Accordion>
