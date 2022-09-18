@@ -22,7 +22,7 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag
                     placement="auto"
                     flip={true}
                     transition={false}
-                    overlay={<Tooltip id="tooltip">{feature.description}</Tooltip>}
+                    overlay={<Tooltip id="tooltip" placement="right" className="tw-shadow-lg tw-opacity-100">{feature.description}</Tooltip>}
                 >
                     {({ ref, ...triggerHandler }) => (
                         <span {...triggerHandler} ref={ref} className="tw-ml-xxs tw-my-auto tw-text-gray-400">

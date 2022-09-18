@@ -3,7 +3,7 @@ import { FunctionComponent, useState } from 'react'
 import classNames from 'classnames'
 import CheckIcon from 'mdi-react/CheckIcon'
 import Link from 'next/link'
-import { Accordion, useAccordionToggle } from 'react-bootstrap'
+import Accordion from 'react-bootstrap/Accordion'
 
 import {
     ContentSection,
@@ -222,7 +222,7 @@ const PricingPage: FunctionComponent = () => {
                                 eventKey={item.q}
                                 className="tw-border-t-1 tw-border-gray-200 tw-max-w-2xl tw-mb-sm"
                             >
-                                <Accordion.Header onClick={() => setActiveKey(index)}>
+                                <Accordion.Header onClick={() => setActiveKey(activeKey !== index ? index : null)}>
                                     <div className="tw-flex tw-justify-between tw-items-center">
                                         <h4 className="tw-text-start tw-mt-sm">{item.q}</h4>
                                         <span className="tw-text-gray-400 tw-font-normal tw-mt-xs">{activeKey === index ? '-' : '+'}</span>
