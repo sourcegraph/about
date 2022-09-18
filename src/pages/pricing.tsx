@@ -57,37 +57,41 @@ const EnterpriseCTA: FunctionComponent = () => (
 const faqData = [
     {
         q: 'How are monthly active users calculated?',
-        a: <p>
-            A monthly active user is any user who accesses Sourcegraph in a given month. See the{' '}
-            <a
-                href="https://docs.sourcegraph.com/code_insights"
-                title="docs"
-                data-button-style={buttonStyle.text}
-                data-button-location={buttonLocation.body}
-                data-button-type="cta"
-            >
-                docs
-            </a>
-            {' '}for additional details on how monthly active users are calculated.
-        </p>
-    },
-    {
-        q: 'Is there a free trial of the paid plans?',
-        a: <p>
-            Yes. We offer a free, 30-day trial for our paid plans.{' '}
-            <Link href="/get-started/self-hosted" passHref={true}>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        a: (
+            <p>
+                A monthly active user is any user who accesses Sourcegraph in a given month. See the{' '}
                 <a
-                    title="Get started"
+                    href="https://docs.sourcegraph.com/code_insights"
+                    title="docs"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
                 >
-                    Get started
-                </a>
-            </Link>
-            {' '}with a free trial today.
-        </p>
+                    docs
+                </a>{' '}
+                for additional details on how monthly active users are calculated.
+            </p>
+        ),
+    },
+    {
+        q: 'Is there a free trial of the paid plans?',
+        a: (
+            <p>
+                Yes. We offer a free, 30-day trial for our paid plans.{' '}
+                <Link href="/get-started/self-hosted" passHref={true}>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a
+                        title="Get started"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        Get started
+                    </a>
+                </Link>{' '}
+                with a free trial today.
+            </p>
+        ),
     },
     {
         q: 'What are executors?',
@@ -95,26 +99,28 @@ const faqData = [
     },
     {
         q: 'Does Sourcegraph offer discounts for educational and non-profit organizations?',
-        a: <p>
-            Sourcegraph supports the work of educational organizations and nonprofits. Please{' '}
-            <Link href="/demo" passHref={true}>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a
-                    title="contact Sourcegraph"
-                    data-button-style={buttonStyle.text}
-                    data-button-location={buttonLocation.body}
-                    data-button-type="cta"
-                >
-                    contact us
-                </a>
-            </Link>
-            {' '}about discounts for your development teams.
-        </p>
+        a: (
+            <p>
+                Sourcegraph supports the work of educational organizations and nonprofits. Please{' '}
+                <Link href="/demo" passHref={true}>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a
+                        title="contact Sourcegraph"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        contact us
+                    </a>
+                </Link>{' '}
+                about discounts for your development teams.
+            </p>
+        ),
     },
 ]
 
 const PricingPage: FunctionComponent = () => {
-    const [activeKey, setActiveKey] = useState<number|null>(null);
+    const [activeKey, setActiveKey] = useState<number | null>(null)
 
     return (
         <Layout
