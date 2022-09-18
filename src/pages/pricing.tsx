@@ -193,53 +193,51 @@ const PricingPage: FunctionComponent = () => {
                             </th>
                         </tr>
                     </thead>
-                    <tbody>
-                        {ALL_FEATURES_COMPARED_DATA.map(section => (
-                            <>
-                                <tr className="tw-bg-white" key={section.topic}>
-                                    <th colSpan={100} className="tw-p-xs tw-text-start tw-border-0">
-                                        <h3>{section.topic}</h3>
-                                    </th>
-                                </tr>
-                                {section.features.map((feature, index) => (
-                                    <tr
-                                        className={classNames(
-                                            'tw-border-0',
-                                            index + 1 === section.features.length && 'tw-border-b-1 tw-border-gray-200'
+                    {ALL_FEATURES_COMPARED_DATA.map(section => (
+                        <tbody key={section.topic}>
+                            <tr className="tw-bg-white" key={section.topic}>
+                                <th colSpan={100} className="tw-p-xs tw-text-start tw-border-0">
+                                    <h3>{section.topic}</h3>
+                                </th>
+                            </tr>
+                            {section.features.map((feature, index) => (
+                                <tr
+                                    className={classNames(
+                                        'tw-border-0',
+                                        index + 1 === section.features.length && 'tw-border-b-1 tw-border-gray-200'
+                                    )}
+                                    key={feature.label}
+                                >
+                                    {/* Feature title */}
+                                    <td className="tw-border-0 tw-p-xs">
+                                        <PricingPlanFeature feature={ALL_FEATURE_INFO[feature.label]} tag="h5" />
+                                    </td>
+                                    {/* Business plan specs */}
+                                    <td className="tw-border-0 tw-border-x-1 tw-p-xs tw-text-center tw-align-middle">
+                                        {typeof feature.business === 'string' ? (
+                                            feature.business
+                                        ) : feature.business ? (
+                                            <CheckIcon className="mr-2 icon-inline tw-text-vermillion-300 tw-inline" />
+                                        ) : null}
+                                        {feature.disclaimer && (
+                                            <i className="tw-block tw-text-sm">{feature.disclaimer}</i>
                                         )}
-                                        key={feature.label}
-                                    >
-                                        {/* Feature title */}
-                                        <td className="tw-border-0 tw-p-xs">
-                                            <PricingPlanFeature feature={ALL_FEATURE_INFO[feature.label]} tag="h5" />
-                                        </td>
-                                        {/* Business plan specs */}
-                                        <td className="tw-border-0 tw-border-x-1 tw-p-xs tw-text-center tw-align-middle">
-                                            {typeof feature.business === 'string' ? (
-                                                feature.business
-                                            ) : feature.business ? (
-                                                <CheckIcon className="mr-2 icon-inline tw-text-vermillion-300 tw-inline" />
-                                            ) : null}
-                                            {feature.disclaimer && (
-                                                <i className="tw-block tw-text-sm">{feature.disclaimer}</i>
-                                            )}
-                                        </td>
-                                        {/* Enterprise plan specs */}
-                                        <td className="tw-border-0 tw-p-xs tw-text-center tw-align-middle">
-                                            {typeof feature.enterprise === 'string' ? (
-                                                feature.enterprise
-                                            ) : feature.enterprise ? (
-                                                <CheckIcon className="mr-2 icon-inline tw-text-violet-400 tw-inline" />
-                                            ) : null}
-                                            {feature.disclaimer && (
-                                                <i className="tw-block tw-text-sm">{feature.disclaimer}</i>
-                                            )}
-                                        </td>
-                                    </tr>
-                                ))}
-                            </>
-                        ))}
-                    </tbody>
+                                    </td>
+                                    {/* Enterprise plan specs */}
+                                    <td className="tw-border-0 tw-p-xs tw-text-center tw-align-middle">
+                                        {typeof feature.enterprise === 'string' ? (
+                                            feature.enterprise
+                                        ) : feature.enterprise ? (
+                                            <CheckIcon className="mr-2 icon-inline tw-text-violet-400 tw-inline" />
+                                        ) : null}
+                                        {feature.disclaimer && (
+                                            <i className="tw-block tw-text-sm">{feature.disclaimer}</i>
+                                        )}
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    ))}
                 </table>
             </ContentSection>
 
