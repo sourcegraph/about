@@ -22,7 +22,7 @@ changelogItems:
 ##### 🌅 Code intelligence platform for everyday use
 
 ### A faster, simpler search experience 
-We’ve streamlined and simplified the search interface to make the platform more intuitive. It’s easier than ever for you to get started with a homepage that includes real data from the instance including repository names, file names, and authors. These details help you uncover necessary information to run a successful search query, faster. 
+We’ve streamlined and simplified the search interface to make the platform more intuitive. It’s easier than ever for you to get started with a homepage that includes real data from your instance including repository names, file names, and authors. These details help you uncover necessary information to run a successful search query, faster. 
 
 Contextual tips and recommendations are provided while running a search query, and the search results are now front and center with the changes to the interface. The search sidebar has moved to the right of the screen and several non-essential elements have been removed to ensure the information you’re looking for is easy to access. Filters make it easier and faster for you to extract the answer you need, and the side bar can be collapsed altogether to reduce noise. 
 
@@ -70,7 +70,7 @@ Code navigation allows you to quickly jump to symbol definitions, find reference
   caption="Precise code navigation with Ruby"
 />
 
-[Code Navigation]
+<Badge text="Code navigation" color="lemon" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
 
 [Docs](https://docs.sourcegraph.com/code_navigation/references/indexers)
 
@@ -82,7 +82,12 @@ The most used extensions including code navigation, git-extras, open-in-editor a
 
 [Extensions]
 
-Docs: provide a link to the updated docs	
+### Quickly access answers within your codebase with a revamped reference panel 
+We've enhanced the code navigation experience with a new version of the reference panel. Updates include a new preview panel, the conslidation of definitions and references in the same tab, and allows for easier navigation through filters.
+
+<Badge text="Code navigation" color="lemon" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
+
+[Docs](https://docs.sourcegraph.com/code_navigation/explanations/features#find-references)
 
 ##### 🏗️ High-leverage ways to improve your entire codebase
 
@@ -105,7 +110,7 @@ This feature requires admins to set up executors (much like CI agents), which So
   caption="Side by side comparison of deploying Batch Changes locally vs. server-side"
 />
 
-[Batch Changes]
+<Badge text="Batch Changes" color="blue" size="small" onClick={() => window.open("/batch-changes", "_self")} />
 
 [Docs](https://docs.sourcegraph.com/batch_changes/explanations/server_side)
 
@@ -115,24 +120,26 @@ This feature requires admins to set up executors (much like CI agents), which So
 ### Get started with Sourcegraph faster than ever
 After many years of building Sourcegraph into a secure and highly-scalable solution, we're ready to bring it to the cloud. Sourcegraph Cloud now offers dedicated, single-tenant instances of Sourcegraph, making it easier than ever for new teams to get started. You can read more in our announcement blog here[/blog/enterprise-cloud].
 
+<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
+
 [Docs](https://docs.sourcegraph.com/cloud)
 
-##### 💖 For admins
+##### 💖 Advanced admin capabilities
 
 ### View usage and measure the value of our platform with new and enhanced in-product analytics
-With 3.42, we introduced an all-new analytics including [XYZ]. Our new analytics make it easier for admins to understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. We’ve significantly improved our in-product analytics to include the projected value and dev-time-saved for all Sourcegraph features, the ability to export data, individual user usage table, and much more. 
+Our new analytics, introduced with version 3.42, make it easier for admins to understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. In-product analytics now include ROI-based metrics such as projected value and dev-time-saved for all Sourcegraph features, and individual user usage. Admins can access the analytics, configure the date range from one week to three months, and export the details. 
 
 Media: provide a screenshot, gif, or video to help support the copy
 
-[Admin]
+<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
 
-Docs: provide a link to the updated docs
+[Docs](https://docs.sourcegraph.com/admin/analytics)
 
 ### Easily export traces using OpenTelemetry
 
 [OpenTelemetry (OTEL)](https://opentelemetry.io/) is an open specification for exporting observability data into a user’s preferred systems. We aim to make OpenTelmetry the default way to quickly and easily export observability data from Sourcgraph, starting with tracing in Sourcegraph 4.0. This is a breaking change since we now require customers to export tracing using the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/), which will now be deployed by default in all Sourcegraph deployment methods, replacing the Jaeger agents and collectors we used to ship by default.
 
-[Admin]
+<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
 
 [Docs](https://docs.sourcegraph.com/admin/observability/opentelemetry)
 
@@ -149,17 +156,17 @@ Multi-version upgrades help to reduce the burden and time required to upgrade to
   caption="Demo of multi-version upgrades"
 />
 
-[Admin]
+<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
 
 [Docs](https://docs.sourcegraph.com/admin/updates#multi-version-upgrades)
 
 
-### Quickly see the status on your repository and sync permissions
+### Quickly see the status on your repository and permissions syncing
 With Sourcegraph 4.0, we have introduced more than X quality of life improvements to help admins understand the current state of repository and permissions syncing. This helps to ensure users have the appropriate to repositories so they can understand, fix, and automate the codebase, while admins can XYZ. 
 
 Media: provide a screenshot, gif, or video to help support the copy
 
-[Admin]
+<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
 
 Docs: provide a link to the updated docs
 
@@ -168,7 +175,7 @@ Get a better understanding of precise navigation coverage and access precise cod
 
 Media: provide a screenshot, gif, or video to help support the copy
 
-[Admin]
+<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
 
 Docs: provide a link to the updated docs
 
@@ -177,14 +184,10 @@ Admins can now understand the adoption and amount of time saved from using IDE a
 
 Media: provide a screenshot, gif, or video to help support the copy
 
-[Admin]
+<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
 
 Docs: provide a link to the updated docs
 
-### Quickly access answers withing your codebase with a revamped reference panel 
-We've enhanced the code navigation experience with a new version of the reference panel. Updates include a new preview panel, the conslidation of definitions and references in the same tab, and allows for easier navigation through filters.
 
-[Code Navigation]
-[Docs](https://docs.sourcegraph.com/code_navigation/explanations/features#find-references)
 
 
