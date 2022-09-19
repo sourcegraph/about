@@ -126,23 +126,6 @@ After many years of building Sourcegraph into a secure and highly-scalable solut
 
 ##### 💖 Advanced admin capabilities
 
-### View usage and measure the value of our platform with new and enhanced in-product analytics
-Our new analytics, introduced with version 3.42, make it easier for admins to understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. In-product analytics now include ROI-based metrics such as projected value and dev-time-saved for all Sourcegraph features, and individual user usage. Admins can access the analytics, configure the date range from one week to three months, and export the details. 
-
-Media: provide a screenshot, gif, or video to help support the copy
-
-<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
-
-[Docs](https://docs.sourcegraph.com/admin/analytics)
-
-### Easily export traces using OpenTelemetry
-
-[OpenTelemetry (OTEL)](https://opentelemetry.io/) is an open specification for exporting observability data into a user’s preferred systems. We aim to make OpenTelmetry the default way to quickly and easily export observability data from Sourcgraph, starting with tracing in Sourcegraph 4.0. This is a breaking change since we now require customers to export tracing using the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/), which will now be deployed by default in all Sourcegraph deployment methods, replacing the Jaeger agents and collectors we used to ship by default.
-
-<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
-
-[Docs](https://docs.sourcegraph.com/admin/observability/opentelemetry)
-
 ### Save time upgrading to Sourcegraph 4.0 with multi-version upgrades
 Multi-version upgrades help to reduce the burden and time required to upgrade to the latest version of Sourcegraph. Customers will now be able to seamlessly upgrade from any 3.20+ version to Sourcegraph 4.0 in just a few simple steps. With faster upgrades, customers can quickly start using the new features and enhancements that are released every month. 
 
@@ -160,6 +143,30 @@ Multi-version upgrades help to reduce the burden and time required to upgrade to
 
 [Docs](https://docs.sourcegraph.com/admin/updates#multi-version-upgrades)
 
+### View usage and measure the value of our platform with new and enhanced in-product analytics
+Our new analytics, introduced with version 3.42, make it easier for admins to understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. In-product analytics now include ROI-based metrics such as projected value and dev-time-saved for all Sourcegraph features, and individual user usage. Admins can access the analytics, configure the date range from one week to three months, and export the details. 
+
+Media: provide a screenshot, gif, or video to help support the copy
+
+<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
+
+[Docs](https://docs.sourcegraph.com/admin/analytics)
+### Uncover developer time saved using Browser and IDE extensions 
+Admins can now understand the adoption and amount of time saved from using IDE and Browser extensions across your organization. Additionally, to make it faster and easier to roll out our VS Code extension organization wide, we've created an example Batch Change that adds the extension to your repository’s recommended extensions. Once added, users will be recommended the Sourcegraph extension when opening the repository if they don't have it installed already. We’ve also updated our instructions on how to automatically install our Browser extensions for users in your Google Workspace organization. 
+
+Media: provide a screenshot, gif, or video to help support the copy
+
+<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
+
+Docs: provide a link to the updated docs
+
+### Easily export traces using OpenTelemetry
+
+[OpenTelemetry (OTEL)](https://opentelemetry.io/) is an open specification for exporting observability data into a user’s preferred systems. We aim to make OpenTelmetry the default way to quickly and easily export observability data from Sourcgraph, starting with tracing in Sourcegraph 4.0. This is a breaking change since we now require customers to export tracing using the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/), which will now be deployed by default in all Sourcegraph deployment methods, replacing the Jaeger agents and collectors we used to ship by default.
+
+<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
+
+[Docs](https://docs.sourcegraph.com/admin/observability/opentelemetry)
 
 ### Quickly see the status on your repository and permissions syncing
 With Sourcegraph 4.0, we have introduced more than X quality of life improvements to help admins understand the current state of repository and permissions syncing. This helps to ensure users have the appropriate to repositories so they can understand, fix, and automate the codebase, while admins can XYZ. 
@@ -179,14 +186,7 @@ Media: provide a screenshot, gif, or video to help support the copy
 
 Docs: provide a link to the updated docs
 
-### Uncover developer time saved using Browser and IDE extensions 
-Admins can now understand the adoption and amount of time saved from using IDE and Browser extensions across your organization. Additionally, to make it faster and easier to roll out our VS Code extension organization wide, we've created an example Batch Change that adds the extension to your repository’s recommended extensions. Once added, users will be recommended the Sourcegraph extension when opening the repository if they don't have it installed already. We’ve also updated our instructions on how to automatically install our Browser extensions for users in your Google Workspace organization. 
 
-Media: provide a screenshot, gif, or video to help support the copy
-
-<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
-
-Docs: provide a link to the updated docs
 
 
 
