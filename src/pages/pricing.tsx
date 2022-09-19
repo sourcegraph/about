@@ -19,30 +19,48 @@ import {
     ENTERPRISE_FEATURES_OVERVIEW,
     ALL_FEATURES_COMPARED_DATA,
 } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { breakpoints, buttonStyle, buttonLocation } from '@data'
+import { useWindowWidth } from '@hooks'
 
-const BusinessCTA: FunctionComponent<{ className?: string }> = ({ className }) => (
-    <Link href="/get-started/self-hosted" passHref={true}>
-        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a
-            className={`btn btn-primary tw-w-full md:tw-w-auto ${className || ''}`}
-            title="Get started"
-            data-button-style={buttonStyle.primary}
-            data-button-location={buttonLocation.trySourcegraph}
-            data-button-type="cta"
-        >
-            Get started
-        </a>
-    </Link>
-)
+const BusinessCTA: FunctionComponent<{ className?: string; btnOnMobile?: boolean }> = ({ className, btnOnMobile }) => {
+    const windowWidth = useWindowWidth()
+    const isMdOrDown = windowWidth < breakpoints.lg
 
-const EnterpriseCTA: FunctionComponent = () => (
-    <div>
-        <BusinessCTA className="tw-mr-xs tw-mb-xs md:tw-mb-0 tw-w-full md:tw-w-auto" />
+    return (
+        <Link href="/get-started/self-hosted" passHref={true}>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a
+                className={classNames(
+                    btnOnMobile && 'btn btn-primary',
+                    'tw-w-full md:tw-w-auto',
+                    className,
+                    btnOnMobile
+                        ? 'md:tw-mr-xs tw-mr-0 tw-mb-xs lg:tw-mb-0'
+                        : isMdOrDown
+                        ? 'font-weight-normal'
+                        : 'btn btn-primary'
+                )}
+                title="Get started"
+                data-button-style={buttonStyle.primary}
+                data-button-location={buttonLocation.trySourcegraph}
+                data-button-type="cta"
+            >
+                Get started
+            </a>
+        </Link>
+    )
+}
+
+const EnterpriseCTA: FunctionComponent<{ btnOnMobile?: boolean }> = ({ btnOnMobile }) => (
+    <div className="tw-flex-wrap">
+        <BusinessCTA btnOnMobile={btnOnMobile} className="tw-mr-xs tw-mb-xs md:tw-mb-0 tw-w-full md:tw-w-auto" />
         <Link href="/demo" passHref={true}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a
-                className="btn btn-outline-primary tw-w-full md:tw-w-auto"
+                className={classNames(
+                    'btn btn-outline-primary',
+                    !btnOnMobile ? 'tw-hidden lg:tw-inline-block tw-w-auto' : 'tw-w-full md:tw-w-auto'
+                )}
                 title="Request a demo"
                 data-button-style={buttonStyle.outline}
                 data-button-location={buttonLocation.bodyDemo}
@@ -144,7 +162,7 @@ const PricingPage: FunctionComponent = () => {
                         description="Full platform access for teams and orgs, all on a dedicated Cloud instance."
                         features={BIZ_FEATURES_OVERVIEW}
                         isEnterprise={false}
-                        buttons={<BusinessCTA />}
+                        buttons={<BusinessCTA btnOnMobile={true} />}
                     />
                 </div>
 
@@ -155,7 +173,7 @@ const PricingPage: FunctionComponent = () => {
                         description="Enterprise-grade security, scale, and support with custom deployment options."
                         features={ENTERPRISE_FEATURES_OVERVIEW}
                         isEnterprise={true}
-                        buttons={<EnterpriseCTA />}
+                        buttons={<EnterpriseCTA btnOnMobile={true} />}
                     />
                 </div>
             </ContentSection>
@@ -165,28 +183,30 @@ const PricingPage: FunctionComponent = () => {
             </h2>
             <CustomerLogos />
 
-            <ContentSection>
+            <ContentSection parentClassName="tw-px-0 md:tw-px-sm">
                 <table className="tw-relative tw-border-0">
                     <thead>
                         <tr>
-                            <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 tw-w-1/3">
-                                <div className="tw-h-full tw-p-sm tw-border-b-1 tw-border-gray-200">
-                                    <h2 className="tw-mt-sm tw-max-w-[250px] tw-text-4xl md:tw-text-7xl">
+                            <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 md:tw-w-1/3 tw-w-2/4">
+                                <div className="tw-h-full tw-p-sm md:tw-pt-xs tw-pt-md tw-pr-xs tw-border-b-1 tw-border-gray-200">
+                                    <h2 className="tw-max-w-[250px] tw-text-4xl md:tw-text-7xl">
                                         Compare all features
                                     </h2>
                                 </div>
                             </th>
-                            <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 tw-w-1/3">
+                            <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 md:tw-w-1/3 tw-min-w-[25%]">
                                 <div className="tw-h-full tw-p-sm tw-border-t-16 tw-border-1 tw-border-gray-200 tw-border-t-vermillion-300">
-                                    <h2>Business</h2>
-                                    <h4 className="tw-font-normal tw-py-sm">$99 per active user/month</h4>
+                                    <h2 className="tw-text-2xl md:tw-text-4xl tw-mb-sm">Business</h2>
+                                    <h4 className="tw-font-normal tw-hidden lg:tw-block tw-mb-sm">
+                                        $99 per active user/month
+                                    </h4>
                                     <BusinessCTA />
                                 </div>
                             </th>
-                            <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 tw-w-1/3">
+                            <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 md:tw-w-1/3 tw-min-w-[25%]">
                                 <div className="tw-h-full tw-p-sm tw-border-t-16 tw-border-b-1 tw-border-gray-200 tw-border-t-violet-400">
-                                    <h2>Enterprise</h2>
-                                    <h4 className="tw-font-normal tw-py-sm">Custom pricing</h4>
+                                    <h2 className="tw-text-2xl md:tw-text-4xl tw-mb-sm">Enterprise</h2>
+                                    <h4 className="tw-font-normal tw-hidden lg:tw-block tw-mb-sm">Custom pricing</h4>
                                     <EnterpriseCTA />
                                 </div>
                             </th>
@@ -196,7 +216,9 @@ const PricingPage: FunctionComponent = () => {
                         <tbody key={section.topic}>
                             <tr className="tw-bg-white" key={section.topic}>
                                 <th colSpan={100} className="tw-p-xs tw-text-start tw-border-0">
-                                    <h3>{section.topic}</h3>
+                                    <h3 className="tw-text-xl md:tw-text-2xl tw-font-semibold md:tw-font-normal">
+                                        {section.topic}
+                                    </h3>
                                 </th>
                             </tr>
                             {section.features.map((feature, index) => (
@@ -209,7 +231,11 @@ const PricingPage: FunctionComponent = () => {
                                 >
                                     {/* Feature title */}
                                     <td className="tw-border-0 tw-p-xs">
-                                        <PricingPlanFeature feature={ALL_FEATURE_INFO[feature.label]} tag="h5" />
+                                        <PricingPlanFeature
+                                            feature={ALL_FEATURE_INFO[feature.label]}
+                                            tag="h5"
+                                            className="tw-text-base tw-font-normal md:tw-font-semibold"
+                                        />
                                     </td>
                                     {/* Business plan specs */}
                                     <td className="tw-border-0 tw-border-x-1 tw-p-xs tw-text-center tw-align-middle">
