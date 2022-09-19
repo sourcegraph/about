@@ -28,9 +28,9 @@ We’ve improved the search UI to make the platform more intuitive with small us
 
 ![UI Improvements](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Search%20UI%20Improvements.png "UI Improvements")
 
-[Code Search]
+<Badge text="Code Search" color="cerise" size="small" onClick={() => window.open("/code-search", "_self")} />
 
-Docs: provide a link to the updated docs
+[Docs](https://docs.sourcegraph.com/code_search)
 
 ### Understand usage and search structure with high-level aggregations of search results
 High-level aggregations of search results powered by Code Insights are now displayed in addition to results. Responses to the query are now grouped by location (repo or file), author, and arbitrary capture group pattern to help answer to questions such as:
