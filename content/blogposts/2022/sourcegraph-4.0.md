@@ -26,7 +26,7 @@ changelogItems:
 ### A faster, simpler search experience 
 We’ve improved the search UI to make the platform more intuitive with small usability improvements while making it easier for new users to get started with tips and recommendations on the revamped homepage. Performance across the platform saw a boost by using the latest in React, lazy loading, and priority rendering. These usability and performance enhancements help you get quick answers about your codebase and get unblocked faster. 
 
-Media: provide a screenshot, gif, or video to help support the copy
+![UI Improvements](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Search%20UI%20Improvements.png "UI Improvements")
 
 [Code Search]
 
