@@ -87,7 +87,7 @@ Docs: provide a link to the updated docs
 ##### 🏗️ High-leverage ways to improve your entire codebase
 
 ### Make changes across all of your codebases at enterprise scale with server-side Batch Changes (beta)
-Batch Changes can now run across thousands of repositories with a better development experience. Previously, you had to run src-cli locally to create batch changes. That could take an impractical amount of time or be brittle for large or resource-intensive batch changes. By running Batch Changes server-side you can:
+Batch Changes allows you to programmatically define changes across the codebase with a single declarative file. Now, changes can be run across thousands of repositories with a better development experience. Previously, you had to run src-cli locally to create batch changes, which could take an impractical amount of time or be brittle for large or resource-intensive batch changes. By running Batch Changes server-side you can:
 
 - Run large-scale or resource-intensive batch changes without clogging your local machine
 - Run large batch changes quickly by distributing them across an autoscaled pool of compute instances
