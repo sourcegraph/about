@@ -168,7 +168,7 @@ Docs: provide a link to the updated docs
 [Docs](https://docs.sourcegraph.com/admin/observability/opentelemetry)
 
 ### Quickly see the status on your repository and permissions syncing
-With Sourcegraph 4.0, we have introduced more than X quality of life improvements to help admins understand the current state of repository and permissions syncing. This helps to ensure users have the appropriate to repositories so they can understand, fix, and automate the codebase, while admins can XYZ. 
+With Sourcegraph 4.0, we have introduced many quality of life improvements to help admins understand the current state of repository and permissions syncing. These improvements make it easier for admins to understand the current state of repositories synced with Sourcegraph as well as understand syncing errors when they arise. 
 
 Media: provide a screenshot, gif, or video to help support the copy
 
