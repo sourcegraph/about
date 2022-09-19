@@ -66,15 +66,26 @@ export default class MyDocument extends Document {
                     <Script id="ga" data-cookieconsent="ignore" async={true} strategy="beforeInteractive">
                         {`
                         window.dataLayer = window.dataLayer || [];
+                        
                         function gtag() {
                             dataLayer.push(arguments);
                         }
+                        
                         gtag("consent", "default", {
                             ad_storage: "denied",
                             analytics_storage: "denied",
-                        wait_for_update: 500,
+                            wait_for_update: 500,
                         });
+                        
                         gtag("set", "ads_data_redaction", true);
+                        
+                        gtag('js', new Date());
+                        
+                        // Universal
+                        gtag('config', 'UA-40540747-17');
+                        
+                        // GA-4
+                        gtag('config', 'G-E82CCDYYS1');
                     `}
                     </Script>
 
