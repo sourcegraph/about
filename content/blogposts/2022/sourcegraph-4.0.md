@@ -42,9 +42,18 @@ The new aggregations help to answer:
 - Which library components are used most? By who?
 - What are all the possible arguments we pass to this function? 
 
-Media: provide a screenshot, gif, or video to help support the copy
+<Video 
+  source={{
+    webm: 'blog/release-post/4.0/Search_Aggregations_4.0',
+    mp4: 'blog/release-post/4.0/Search_Aggregations_4.0'
+  }}
+  loop={true}
+  title="High-level aggregations"
+  caption="High-level aggregations of search results"
+/>
+  
 
-[Code Insights]
+<Badge text="Code Insights" color="green" size="small" onClick={() => window.open("/code-insights", "_self")} />
 
 [Docs](https://docs.sourcegraph.com/code_insights/explanations/search_results_aggregations)
 
