@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactFragment } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
 import classNames from 'classnames'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
@@ -19,8 +19,8 @@ interface Link {
 }
 
 export const Blockquote: FunctionComponent<{
-    quote: string | ReactFragment
-    author?: string | ReactFragment
+    quote: string | ReactNode
+    author?: string | ReactNode
     logo?: Logo
     link?: Link
     headline?: string

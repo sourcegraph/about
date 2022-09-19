@@ -31,10 +31,10 @@ export const CodeInsightExample: React.FunctionComponent<CodeInsightExampleProps
     const { type } = props
 
     if (type === CodeInsightExampleType.Search) {
-        return <CodeInsightSearchExample {...(props as CodeInsightSearchExampleProps)} />
+        return <CodeInsightSearchExample {...props} />
     }
 
-    return <CodeInsightCaptureExample {...(props as CodeInsightCaptureExampleProps)} />
+    return <CodeInsightCaptureExample {...props} />
 }
 
 const CodeInsightSearchExample: React.FunctionComponent<CodeInsightSearchExampleProps> = props => {
