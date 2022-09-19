@@ -19,18 +19,19 @@ changelogItems:
 
 ## TL;DR
 
-`TODO(sqs): The section headers with emojis are what I think we should use, but the wording of the bullet points within are WIP`
-
-##### 🌅 Code intelligence: more useful, more times daily for every dev
+##### 🌅 Code intelligence platform for everyday use
 
 ### A faster, simpler search experience 
-We’ve improved the search UI to make the platform more intuitive with small usability improvements while making it easier for new users to get started with tips and recommendations on the revamped homepage. Performance across the platform saw a boost by using the latest in React, lazy loading, and priority rendering. These usability and performance enhancements help you get quick answers about your codebase and get unblocked faster. 
+We’ve streamlined and simplified the search interface to make the platform more intuitive. It’s easier than ever for you to get started with a homepage that includes real data from the instance including repository names, file names, and authors. These details help you uncover necessary information to run a successful search query, faster. 
+
+Contextual tips and recommendations are provided while running a search query, and the search results are now front and center with the changes to the interface. The search sidebar has moved to the right of the screen and several non-essential elements have been removed to ensure the information you’re looking for is easy to access. Filters make it easier and faster for you to extract the answer you need, and the side bar can be collapsed altogether to reduce noise. 
+
+Performance across the platform saw a boost and search results are now returned faster than before by using the latest in React, lazy loading, and priority rendering. 
 
 ![UI Improvements](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Search%20UI%20Improvements.png "UI Improvements")
 
 <Badge text="Code Search" color="cerise" size="small" onClick={() => window.open("/code-search", "_self")} />
 
-[Docs](https://docs.sourcegraph.com/code_search)
 
 ### Understand usage and search structure with high-level aggregations of search results
 High-level aggregations of search results powered by Code Insights are now displayed in addition to results. Responses to the query are now grouped by location (repo or file), author, and arbitrary capture group pattern to help answer to questions such as:
