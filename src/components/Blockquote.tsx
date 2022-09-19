@@ -62,7 +62,7 @@ export const Blockquote: FunctionComponent<{
 
     return (
         <blockquote className={classNames('tw-px-md', getBorderStyle())}>
-            {headline ? largeText ? <h2>{headline}</h2> : <h4 className="mb-4">{headline}</h4> : null}
+            {headline ? largeText ? <h2>{headline}</h2> : <h4 className="tw-mb-sm">{headline}</h4> : null}
 
             {largeText ? (
                 <h3 className="tw-font-normal tw-text-3xl">&ldquo;{quote}&rdquo;</h3>
@@ -98,38 +98,32 @@ export const Blockquote: FunctionComponent<{
 
             {link?.href &&
                 (link?.href.includes('http') ? (
-                    <>
-                        <br />
+                    <a
+                        className={classNames('tw-mt-sm tw-flex', !border && 'tw-justify-center')}
+                        href={link.href}
+                        target="_blank"
+                        rel="nofollow noreferrer"
+                        title={link.text}
+                        data-button-style={buttonStyle.textWithArrow}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        {link.text}
+                        <ArrowRightIcon className="ml-1 tw-inline" />
+                    </a>
+                ) : (
+                    <Link href={link.href} passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className={classNames('tw-mt-4 tw-flex', !border && 'tw-justify-center')}
-                            href={link.href}
-                            target="_blank"
-                            rel="nofollow noreferrer"
+                            className={classNames('tw-mt-sm tw-flex', !border && 'tw-justify-center')}
                             title={link.text}
                             data-button-style={buttonStyle.textWithArrow}
                             data-button-location={buttonLocation.body}
                             data-button-type="cta"
                         >
-                            {link.text}
-                            <ArrowRightIcon className="ml-1 tw-inline" />
+                            <p className="tw-mb-0">{link.text}</p>
+                            <ArrowRightIcon className="tw-ml-1 tw-inline" />
                         </a>
-                    </>
-                ) : (
-                    <Link href={link.href} passHref={true}>
-                        <>
-                            <br />
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className={classNames('tw-mt-4 tw-flex', !border && 'tw-justify-center')}
-                                title={link.text}
-                                data-button-style={buttonStyle.textWithArrow}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                <p className="tw-mb-0">{link.text}</p>
-                                <ArrowRightIcon className="tw-ml-1 tw-inline" />
-                            </a>
-                        </>
                     </Link>
                 ))}
         </blockquote>
