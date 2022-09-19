@@ -62,7 +62,7 @@ export const Blockquote: FunctionComponent<{
 
     return (
         <blockquote className={classNames('tw-px-md', getBorderStyle())}>
-            {headline ? largeText ? <h2>{headline}</h2> : <h4 className="mb-4">{headline}</h4> : null}
+            {headline ? largeText ? <h2>{headline}</h2> : <h4 className="tw-mb-sm">{headline}</h4> : null}
 
             {largeText ? (
                 <h3 className="tw-font-normal tw-text-3xl">&ldquo;{quote}&rdquo;</h3>
@@ -109,7 +109,7 @@ export const Blockquote: FunctionComponent<{
                         data-button-type="cta"
                     >
                         {link.text}
-                        <ArrowRightIcon className="ml-1 tw-inline" />
+                        <ArrowRightIcon className="tw-ml-3 tw-inline" />
                     </a>
                 ) : (
                     <Link href={link.href}>
@@ -122,7 +122,7 @@ export const Blockquote: FunctionComponent<{
                             data-button-type="cta"
                         >
                             {link.text}
-                            <ArrowRightIcon className="tw-ml-1 tw-inline" />
+                            <ArrowRightIcon className="tw-ml-3 tw-inline" />
                         </a>
                     </Link>
                 ))}
