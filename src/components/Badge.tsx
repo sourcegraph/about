@@ -5,7 +5,7 @@ import classNames from 'classnames'
 interface Badge {
     text: string
     size: 'small' | 'large'
-    color:
+    color?:
         | 'light-gray'
         | 'white'
         | 'white-outlined'
@@ -35,7 +35,7 @@ interface Badge {
  * @param props.checked - the controlled checked state
  * @param props.circle - whether it's a basic or circle radius badge
  */
-export const Badge: FunctionComponent<Badge> = ({ text, size, color, icon, onClick, checked, circle }) => {
+export const Badge: FunctionComponent<Badge> = ({ text, size, color = 'light-gray', icon, onClick, checked, circle }) => {
     const Icon: ElementType = icon || 'div'
 
     const colors = {
