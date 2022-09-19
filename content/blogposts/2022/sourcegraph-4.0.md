@@ -12,19 +12,18 @@ changelogItems:
 
 # Sourcegraph 4.0
 
-> NOTE: This post is very WIP. It's a rough draft of what individual teams intend to ship.
+Sourcegraph 4.0, the latest version of our code intelligence platform, is now available. It includes more than 12 new features and enhancements to help you spend more time in flow and less time manually grokking your codebase. 
 
-- [From code search toward a code intelligence platform](/blog/code-search-to-code-intelligence) - the longer-term vision/story
-- [Secure, easy, and scalable Sourcegraph Cloud managed instances for the enterprise](/blog/enterprise-cloud) - the Cloud announcement (including SOC2 Type 2, etc.) that coincides with 4.0
+Our code intelligence platform semantically indexes and analyzes code and its underlying structure to help you derive knowledge from the codebase. It provides devs and engineering leaders with a complete understanding of the codebase to make faster and better decisions. Our platform enables anyone who creates or interacts with code to save time by helping you understand, fix, and automate changes across your entire codebase.
 
-## TL;DR
+Read on to discover more about each of the new features and enhancements included in Sourcegraph 4.0. 
 
 ##### 🌅 Code intelligence platform for everyday use
 
 ### A faster, simpler search experience 
-We’ve streamlined and simplified the search interface to make the platform more intuitive. It’s easier than ever for you to get started with a homepage that includes real data from your instance including repository names, file names, and authors. These details help you uncover necessary information to run a successful search query, faster. 
+The search interface has been streamlined and simplified to help make the platform more intuitive. It’s easier than ever for you to get started with real data on the homepage from your instance including repository names, file names, and authors. These details, along with contextual tips and recommendations, help you uncover necessary information to run a successful search query, faster. 
 
-Contextual tips and recommendations are provided while running a search query, and the search results are now front and center with the changes to the interface. The search sidebar has moved to the right of the screen and several non-essential elements have been removed to ensure the information you’re looking for is easy to access. Filters make it easier and faster for you to extract the answer you need, and the side bar can be collapsed altogether to reduce noise. 
+Search results are now front and center with the improved interface. The search sidebar has moved to the right of the screen and several non-essential elements have been removed to ensure the information you’re looking for is easy to access. Filters make it easier and faster for you to extract the answer you need, and the side bar can be collapsed altogether to reduce noise. 
 
 Performance across the platform saw a boost and search results are now returned faster than before by using the latest in React, lazy loading, and priority rendering. 
 
@@ -185,9 +184,3 @@ Media: provide a screenshot, gif, or video to help support the copy
 <Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
 
 Docs: provide a link to the updated docs
-
-
-
-
-
-
