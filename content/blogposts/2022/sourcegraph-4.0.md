@@ -87,7 +87,11 @@ Code navigation allows you to quickly jump to symbol definitions, find reference
 <Badge text="Extensions" color="vermillion" size="small" onClick={() => window.open("https://docs.sourcegraph.com/integration", "_self")} />
 
 #### Your favorite extensions are now available by default 
-The most used extensions including code navigation, git-extras, open-in-editor and, search-exports are now default functionality. These enhancements help streamline your workflow and easily switch between tools when needed. Additionally, the current Sourcegraph extensions framework will be deprecated as we work towards a new model of integrations that provides functionality throughout our entire code intelligence platform. Please note, these changes **do not** impact our IDE extensions.
+we’re investing in a new model for integrations that will support deeper integrations with our code intelligence platform and make it easier to surface code context during the ideal moments in your workflow. Top used extensions, including code navigation, git-extras, open-in-editor, and search-exports, are now part of the core functionality. 
+
+By default, you won't be able to access the extensions registry to use or enable extensions, and you will no longer be able to create extensions on a private registry. Note: if you still need access to extensions or create extensions on a private registry, you can enable a feature flag to do so until early 2023.
+
+Please note that this *does not* impact our IDE extensions, which will continue to allow you to search and navigate across all of your repositories without ever leaving your IDE or checking them out locally
 
 
 ![Git Blame](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/git_blame.png "Git Blame")
