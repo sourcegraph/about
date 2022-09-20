@@ -31,7 +31,7 @@ Major performance improvements make rendering search results, files and blobs, a
 
 ![UI Improvements](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Search%20UI%20Improvements.png "UI Improvements")
 
-<Badge text="Code Insights" color="green" size="small" onClick={() => window.open("/code-insights", "_self")} />
+<a href="/code-insights"><Badge text="Code Insights" color="green" size="small" /></a>
 
 #### Understand usage and search structure with high-level aggregations of search results
 [Code Insights](https://about.sourcegraph.com/code-insights) turns your code into a queryable database to create customizable, visual dashboards. We're bringing the power of Code Insights directly into the search UI to surface high-level information about your code, help you answer questions about your code, and refine your search results.  
@@ -61,6 +61,8 @@ You can choose to group your search results by location (repo or file), author, 
   </a>
 
 
+<a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
+
 #### Configure precise code navigation for 9 languages in a matter of minutes with auto-indexing
 Code navigation allows you to quickly jump to symbol definitions, find references, dependencies, and more, so you can spend more time shipping code. Precise code navigation is the most powerful version of code navigation and it works cross-repository. Auto-indexing allows you to set up precise code navigation for any chosen repositories with the click of a button, and it makes precise code navigation work across all of your code, automatically. Auto-indexing is supported for 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, JavaScript, and it is turned on by default for our Cloud customers.
 
@@ -74,9 +76,14 @@ Code navigation allows you to quickly jump to symbol definitions, find reference
   caption="Precise code navigation with Ruby"
 />
 
-[Docs](https://docs.sourcegraph.com/code_navigation/references/indexers)
+<a href="https://docs.sourcegraph.com/code_navigation/references/indexers" className="tw-not-italic tw-flex tw-items-center">
+      <p className="tw-m-0 tw-mr-2">Docs</p>
+      <OpenInNewIcon className="tw-inline" size={18} />
+  </a>
 
-<Badge text="Extensions" color="vermillion" size="small" onClick={() => window.open("https://docs.sourcegraph.com/integration", "_self")} />
+
+
+<a href="https://docs.sourcegraph.com/integration"><Badge text="Extensions" color="vermillion" size="small" /></a>
 
 #### Your favorite extensions are now available by default 
 we’re investing in a new model for integrations that will support deeper integrations with our code intelligence platform and make it easier to surface code context during the ideal moments in your workflow. Top used extensions, including code navigation, git-extras, open-in-editor, and search-exports, are now part of the core functionality. 
@@ -88,19 +95,24 @@ Please note that this *does not* impact our IDE extensions, which will continue 
 
 ![Git Blame](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/git_blame.png "Git Blame")
 
-<Badge text="Code navigation" color="lemon" size="small" onClick={() => window.open("/code-search, "_self")} />
+
+<a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
 
 #### Quickly access answers within your codebase with a revamped reference panel 
 We've enhanced the code navigation experience with a new version of the reference panel. Updates include a new preview panel, the conslidation of definitions and references in the same tab, and allows for easier navigation through filters.
 
 ![Reference panel revamp](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Reference%20Panel%20Image.png "Refernce panel revamp")
 
-[Docs](https://docs.sourcegraph.com/code_navigation/explanations/features#find-references)
+ <a href="https://docs.sourcegraph.com/code_navigation/explanations/features#find-references" className="tw-not-italic tw-flex tw-items-center">
+      <p className="tw-m-0 tw-mr-2">Docs</p>
+      <OpenInNewIcon className="tw-inline" size={18} />
+  </a>
+
 
 
 ### 🏗️ High-leverage ways to improve your entire codebase
 
-<Badge text="Batch Changes" color="blue" size="small" onClick={() => window.open("/batch-changes", "_self")} />
+<a href=/batch-changes"><Badge text="Batch Changes" color="blue" size="small" /></a>
 
 #### Make changes across all of your codebases at enterprise scale with server-side Batch Changes (beta)
 Batch Changes allows you to programmatically define changes across the codebase with a single declarative file. Now, changes can be run across thousands of repositories with a better development experience. Previously, you had to run src-cli locally to create batch changes, which could take an impractical amount of time or be brittle for large or resource-intensive batch changes. By running Batch Changes server-side you can:
@@ -121,21 +133,30 @@ This feature requires admins to set up executors (much like CI agents), which So
   caption="Side by side comparison of deploying Batch Changes locally vs. server-side"
 />
 
-[Docs](https://docs.sourcegraph.com/batch_changes/explanations/server_side)
+ <a href="https://docs.sourcegraph.com/batch_changes/explanations/server_side" className="tw-not-italic tw-flex tw-items-center">
+      <p className="tw-m-0 tw-mr-2">Docs</p>
+      <OpenInNewIcon className="tw-inline" size={18} />
+  </a>
+
 
 
 ### ☁️ Dedicated Sourcegraph Cloud instances for enterprise
 
-<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
+
+<a href=https://docs.sourcegraph.com/cloud"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Get started with Sourcegraph faster than ever
 After many years of building Sourcegraph into a secure and highly-scalable solution, we're ready to bring it to the cloud. Sourcegraph Cloud now offers dedicated, single-tenant instances of Sourcegraph, making it easier than ever for new teams to get started. You can read more in our announcement blog here[/blog/enterprise-cloud].
 
-[Docs](https://docs.sourcegraph.com/cloud)
+<a href="https://docs.sourcegraph.com/cloud" className="tw-not-italic tw-flex tw-items-center">
+      <p className="tw-m-0 tw-mr-2">Docs</p>
+      <OpenInNewIcon className="tw-inline" size={18} />
+  </a>
+
 
 ### 💖 Advanced admin capabilities
 
-<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
+<a href=https://docs.sourcegraph.com/admin/updates#multi-version-upgrades"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Save time upgrading to Sourcegraph 4.0 with multi-version upgrades
 Multi-version upgrades help to reduce the burden and time required to upgrade to the latest version of Sourcegraph. Customers will now be able to seamlessly upgrade from any 3.20+ version to Sourcegraph 4.0 in just a few simple steps. With faster upgrades, customers can quickly start using the new features and enhancements that are released every month. 
@@ -150,48 +171,70 @@ Multi-version upgrades help to reduce the burden and time required to upgrade to
   caption="Demo of multi-version upgrades"
 />
 
-[Docs](https://docs.sourcegraph.com/admin/updates#multi-version-upgrades)
+<a href="https://docs.sourcegraph.com/admin/updates#multi-version-upgrades" className="tw-not-italic tw-flex tw-items-center">
+      <p className="tw-m-0 tw-mr-2">Docs</p>
+      <OpenInNewIcon className="tw-inline" size={18} />
+  </a>
 
-<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
+
+<a href=https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### View usage and measure the value of our platform with new and enhanced in-product analytics
 Our new analytics, introduced with version 3.42, make it easier for admins to understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. In-product analytics now include ROI-based metrics such as projected value and dev-time-saved for all Sourcegraph features, and individual user usage. Admins can access the analytics, configure the date range from one week to three months, and export the details. 
 
 ![In-product anlaytics](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Search.png "In-product analytics")
 
-[Docs](https://docs.sourcegraph.com/admin/analytics)
+<a href="https://docs.sourcegraph.com/admin/analytics" className="tw-not-italic tw-flex tw-items-center">
+      <p className="tw-m-0 tw-mr-2">Docs</p>
+      <OpenInNewIcon className="tw-inline" size={18} />
+  </a>
 
-<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
+<a href=https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Uncover developer time saved using Browser and IDE extensions 
 Admins can now understand the adoption and amount of time saved from using IDE and Browser extensions across your organization. Additionally, to make it faster and easier to roll out our VS Code extension organization wide, we've created an example Batch Change that adds the extension to your repository’s recommended extensions. Once added, users will be recommended the Sourcegraph extension when opening the repository if they don't have it installed already. We’ve also updated our instructions on how to automatically install our Browser extensions for users in your Google Workspace organization. 
 
 ![Browser and IDE extensions analytics](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Browser.png "Browser and IDE extensions analytics")
 
-[Docs](https://docs.sourcegraph.com/admin/analytics)
+<a href="https://docs.sourcegraph.com/admin/analytics" className="tw-not-italic tw-flex tw-items-center">
+      <p className="tw-m-0 tw-mr-2">Docs</p>
+      <OpenInNewIcon className="tw-inline" size={18} />
+  </a>
 
-<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
+<a href=https://docs.sourcegraph.com/admin/observability/opentelemetry"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Easily export traces using OpenTelemetry
 
 [OpenTelemetry (OTEL)](https://opentelemetry.io/) is an open specification for exporting observability data into a user’s preferred systems. We aim to make OpenTelmetry the default way to quickly and easily export observability data from Sourcgraph, starting with tracing in Sourcegraph 4.0. This is a breaking change since we now require customers to export tracing using the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/), which will now be deployed by default in all Sourcegraph deployment methods, replacing the Jaeger agents and collectors we used to ship by default.
 
-[Docs](https://docs.sourcegraph.com/admin/observability/opentelemetry)
+<a href="https://docs.sourcegraph.com/admin/observability/opentelemetry" className="tw-not-italic tw-flex tw-items-center">
+      <p className="tw-m-0 tw-mr-2">Docs</p>
+      <OpenInNewIcon className="tw-inline" size={18} />
+  </a>
 
-<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
+
+<a href=https://docs.sourcegraph.com/admin/external_service"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Quickly see the status on your repository and permissions syncing
 With Sourcegraph 4.0, we have introduced many quality of life improvements to help admins understand the current state of repository and permissions syncing. These improvements make it easier for admins to understand the current state of repositories synced with Sourcegraph as well as understand syncing errors when they arise. 
 
 ![Repository Status](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Repository%20Status%20Image.png "Repository Status")
 
-[Docs](https://docs.sourcegraph.com/admin/external_service)
+<a href="https://docs.sourcegraph.com/admin/external_service" className="tw-not-italic tw-flex tw-items-center">
+      <p className="tw-m-0 tw-mr-2">Docs</p>
+      <OpenInNewIcon className="tw-inline" size={18} />
+  </a>
 
-<Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
 
-#### Gain knowledge about precise code navigation with improved analytics
+
+<a href=https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
+
+#### Measure precise code navigation coverage with an enhanced analytics dashboard
 Get a better understanding of precise navigation coverage and access precise code graph data configured for all of your repositories with the improved code navigation dashboard.
 
 ![Precise code navigation analytics](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Precise%20Code%20Navigation%20Analytics.png "Precise code naviagion anlaytics")
 
-[Docs](https://docs.sourcegraph.com/admin/analytics)
+<a href="https://docs.sourcegraph.com/admin/analytics" className="tw-not-italic tw-flex tw-items-center">
+      <p className="tw-m-0 tw-mr-2">Docs</p>
+      <OpenInNewIcon className="tw-inline" size={18} />
+  </a>
