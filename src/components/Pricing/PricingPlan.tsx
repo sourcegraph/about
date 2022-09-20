@@ -1,4 +1,4 @@
-import { ReactFragment, FunctionComponent } from 'react'
+import { ReactNode, FunctionComponent } from 'react'
 
 import CheckIcon from 'mdi-react/CheckIcon'
 

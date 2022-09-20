@@ -73,17 +73,17 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                         .sort()
                         .map(subject => (
                             <span key={subject} className="tw-mr-2 tw-mb-2 first-letter:tw-capitalize">
-                                <Badge text={subject} size="small" color="light-gray" />
+                                <Badge text={subject} size="small" />
                             </span>
                         ))}
                     {!!resource.subjects.slice(3).length && (
                         <div className="tw-group tw-relative">
-                            <Badge text={`+${resource.subjects.slice(3).length}`} size="small" color="light-gray" />
+                            <Badge text={`+${resource.subjects.slice(3).length}`} size="small" />
 
                             <div className="tw-hidden group-hover:tw-flex group-hover:tw-animate-fadeIn tw-absolute tw-left-0 tw-top-0 tw-shadow-md tw-bg-white tw-pt-xxs tw-pl-xxs tw-rounded-md tw-flex-col tw-cursor-default">
                                 {resource.subjects.slice(3).map(subject => (
                                     <span key={subject} className="tw-mr-2 tw-mb-2 first-letter:tw-capitalize">
-                                        <Badge text={subject} color="light-gray" size="small" />
+                                        <Badge text={subject} size="small" />
                                     </span>
                                 ))}
                             </div>

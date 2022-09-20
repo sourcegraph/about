@@ -143,7 +143,7 @@ export const blogType = (frontmatter: FrontMatter): BlogType =>
 
 export interface BlogTypeInfo {
     title: string
-    belowTitle?: React.ReactFragment
+    belowTitle?: ReactNode
     baseUrl: string
     meta: { title: string; description: string; image?: string }
 }
