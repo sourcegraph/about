@@ -34,7 +34,18 @@ TODO: Search results are returned faster with our performance improvements using
 <Badge text="Code Insights" color="green" size="small" onClick={() => window.open("/code-insights", "_self")} />
 
 #### Understand usage and search structure with high-level aggregations of search results
-It’s now easier for you to get high-level knowledge from the codebase and answer questions with aggregations of search results powered by Code Insights. In the chart that appears on the search results page, you can choose to group your search results by location (repo or file), author, or arbitrary capture group pattern.
+[Code Insights](https://about.sourcegraph.com/code-insights) turns your code into a queryable database to create customizable, visual dashboards. We're bringing the power of Code Insights directly into the search UI to surface high-level information about your code, help you answer questions about your code, and refine your search results.  
+
+Search aggregation charts appear on the search results page to help you answer questions, like:
+- How many different versions of a library or package are present in your code, and which is most common? 
+- Which files have the majority of these search results?
+- Which repositories are this library used in most?
+- Which library components are used most? By who?
+- What are all the possible arguments we pass to this function? 
+
+ You can choose to group your search results by location (repo or file), author, or arbitrary capture group pattern.
+ 
+Here are some [example search aggregations to get started with](https://docs.sourcegraph.com/code_insights/references/search_aggregations_use_cases)
 
 The new aggregations answer:
 - How many different versions of a library or package are present in your code, and which is most common? 
