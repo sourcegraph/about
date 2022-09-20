@@ -42,6 +42,8 @@ The new aggregations answer:
 - Which library components are used most? By who?
 - What are all the possible arguments we pass to this function? 
 
+Here are some [example search aggregations to get started with](https://docs.sourcegraph.com/code_insights/references/search_aggregations_use_cases)
+
 <Video 
   source={{
     webm: 'blog/release-post/4.0/Search_Aggregations_4.0',
