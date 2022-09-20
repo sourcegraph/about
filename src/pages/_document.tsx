@@ -42,17 +42,16 @@ export default class MyDocument extends Document {
                         data-cbid="fb31dc3e-afb3-4be8-ae84-7090bba7797d"
                         data-blockingmode="auto"
                         type="text/javascript"
-                        async={true}
                         strategy="beforeInteractive"
                     />
 
                     {/* Google Tag Manager Data Layer Window */}
-                    <Script id="gtm-data-layer" async={true} strategy="beforeInteractive">
+                    <Script id="gtm-data-layer" strategy="beforeInteractive">
                         window.dataLayer = window.dataLayer || [];
                     </Script>
 
                     {/* Google Tag Manager */}
-                    <Script id="gtm" data-cookieconsent="ignore" async={true} strategy="beforeInteractive">
+                    <Script id="gtm" data-cookieconsent="ignore" strategy="beforeInteractive">
                         {`
                             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -62,8 +61,9 @@ export default class MyDocument extends Document {
                         `}
                     </Script>
 
-                    {/* Google Analytics */}
-                    <Script id="ga" data-cookieconsent="ignore" async={true} strategy="beforeInteractive">
+                    {/* Google Analytics Data Layer Settings */}
+                    {/* Note: GA is configured via GTM */}
+                    <Script id="ga" data-cookieconsent="ignore" strategy="beforeInteractive">
                         {`
                         window.dataLayer = window.dataLayer || [];
                         
@@ -78,14 +78,6 @@ export default class MyDocument extends Document {
                         });
                         
                         gtag("set", "ads_data_redaction", true);
-                        
-                        gtag('js', new Date());
-                        
-                        // Universal
-                        gtag('config', 'UA-40540747-17');
-                        
-                        // GA-4
-                        gtag('config', 'G-E82CCDYYS1');
                     `}
                     </Script>
 
