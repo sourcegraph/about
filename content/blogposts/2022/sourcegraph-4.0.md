@@ -44,8 +44,6 @@ Search aggregation charts appear on the search results page to help you answer q
 - What are all the possible arguments we pass to this function? 
 
  You can choose to group your search results by location (repo or file), author, or arbitrary capture group pattern.
- 
-Here are some [example search aggregations to get started with](https://docs.sourcegraph.com/code_insights/references/search_aggregations_use_cases)
 
 The new aggregations answer:
 - How many different versions of a library or package are present in your code, and which is most common? 
@@ -54,7 +52,7 @@ The new aggregations answer:
 - Which library components are used most? By who?
 - What are all the possible arguments we pass to this function? 
 
-Here are some [example search aggregations to get started with](https://docs.sourcegraph.com/code_insights/references/search_aggregations_use_cases)
+Here are some [example search aggregations to get started with.](https://docs.sourcegraph.com/code_insights/references/search_aggregations_use_cases)
 
 <Video 
   source={{
@@ -66,8 +64,11 @@ Here are some [example search aggregations to get started with](https://docs.sou
   caption="High-level aggregations of search results"
 />
 
+  <a href="https://docs.sourcegraph.com/code_insights/explanations/search_results_aggregations" className="tw-not-italic tw-flex tw-items-center">
+      <p className="tw-m-0 tw-mr-2">Docs</p>
+      <OpenInNewIcon className="tw-inline" size={18} />
+  </a>
 
-[Docs](https://docs.sourcegraph.com/code_insights/explanations/search_results_aggregations)
 
 #### Configure precise code navigation for 9 languages in a matter of minutes with auto-indexing
 Code navigation allows you to quickly jump to symbol definitions, find references, dependencies, and more, so you can spend more time shipping code. Precise code navigation is the most powerful version of code navigation and it works cross-repository. Auto-indexing allows you to set up precise code navigation for any chosen repositories with the click of a button, and it makes precise code navigation work across all of your code, automatically. Auto-indexing is supported for 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, JavaScript, and it is turned on by default for our Cloud customers.
