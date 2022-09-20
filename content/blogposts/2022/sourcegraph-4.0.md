@@ -33,7 +33,7 @@ Performance across the platform saw a boost and search results are now returned 
 
 
 ### Understand usage and search structure with high-level aggregations of search results
-It’s now easier for you to derive knowledge from the codebase and get answers to your questions with high-level aggregations of search results powered by Code Insights. You can choose to group your search results by location (repo or file), author, and arbitrary capture group pattern, and a graph with the information is displayed from within the search results page. 
+It’s now easier for you to get high-level knowledge from the codebase and answer questions with aggregations of search results powered by Code Insights. In the chart that appears on the search results page, you can choose to group your search results by location (repo or file), author, or arbitrary capture group pattern.
 
 The new aggregations help to answer:
 - Which files have the majority of these search results?
