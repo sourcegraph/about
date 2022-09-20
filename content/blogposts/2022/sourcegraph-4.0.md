@@ -109,7 +109,7 @@ Your code navigation experience just got better with a new version of the refere
 
 ### 🏗️ High-leverage ways to improve your entire codebase
 
-<a href=/batch-changes"><Badge text="Batch Changes" color="blue" size="small" /></a>
+<a href="/batch-changes"><Badge text="Batch Changes" color="blue" size="small" /></a>
 
 #### Make changes across all of your codebase at enterprise scale with server-side Batch Changes (beta)
 Previously, you had to run src-cli locally to create batch changes, which could take an impractical amount of time or be brittle for large or resource-intensive batch changes. Now, with servier side Batch Changes, large-scale changes can be run across thousands of repositories with a better development experience. By running Batch Changes server-side you can:
@@ -139,7 +139,7 @@ This feature requires admins to set up executors (much like CI agents), which So
 ### ☁️ Dedicated Sourcegraph Cloud instances for enterprise
 
 
-<a href=https://docs.sourcegraph.com/cloud"><Badge text="Admin" color="violet" size="small" /></a>
+<a href="https://docs.sourcegraph.com/cloud"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Get started with Sourcegraph faster than ever
 After many years of building Sourcegraph into a secure and highly-scalable solution, we're ready to bring it to the cloud. Sourcegraph Cloud now offers dedicated, single-tenant instances of Sourcegraph, making it easier than ever for new teams to get started. You can read more in our announcement blog here[/blog/enterprise-cloud].
@@ -152,7 +152,7 @@ After many years of building Sourcegraph into a secure and highly-scalable solut
 
 ### 💖 Advanced admin capabilities
 
-<a href=https://docs.sourcegraph.com/admin/updates#multi-version-upgrades"><Badge text="Admin" color="violet" size="small" /></a>
+<a href="https://docs.sourcegraph.com/admin/updates#multi-version-upgrades"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Save time upgrading to Sourcegraph 4.0 with multi-version upgrades
 Multi-version upgrades help to reduce the burden and time required to upgrade to the latest version of Sourcegraph. Customers will now be able to seamlessly upgrade from any 3.20+ version to Sourcegraph 4.0 in just a few simple steps. With faster upgrades, customers can quickly start using the new features and enhancements that are released every month. 
@@ -173,7 +173,7 @@ Multi-version upgrades help to reduce the burden and time required to upgrade to
   </a>
 
 
-<a href=https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
+<a href="https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### View usage and measure the value of our platform with new and enhanced in-product analytics
 Our new analytics, introduced with version 3.42, make it easier for admins to understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. In-product analytics now include ROI-based metrics such as projected value and dev-time-saved for all Sourcegraph features, and individual user usage. Admins can access the analytics, configure the date range from one week to three months, and export the details. 
@@ -185,7 +185,7 @@ Our new analytics, introduced with version 3.42, make it easier for admins to un
       <OpenInNewIcon className="tw-inline" size={18} />
   </a>
 
-<a href=https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
+<a href="https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Uncover developer time saved using Browser and IDE extensions 
 Admins can now understand the adoption and amount of time saved from using IDE and Browser extensions across your organization. Additionally, to make it faster and easier to roll out our VS Code extension organization wide, we've created an example Batch Change that adds the extension to your repository’s recommended extensions. Once added, users will be recommended the Sourcegraph extension when opening the repository if they don't have it installed already. We’ve also updated our instructions on how to automatically install our Browser extensions for users in your Google Workspace organization. 
@@ -197,7 +197,7 @@ Admins can now understand the adoption and amount of time saved from using IDE a
       <OpenInNewIcon className="tw-inline" size={18} />
   </a>
 
-<a href=https://docs.sourcegraph.com/admin/observability/opentelemetry"><Badge text="Admin" color="violet" size="small" /></a>
+<a href="https://docs.sourcegraph.com/admin/observability/opentelemetry"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Easily export traces using OpenTelemetry
 
@@ -209,7 +209,7 @@ Admins can now understand the adoption and amount of time saved from using IDE a
   </a>
 
 
-<a href=https://docs.sourcegraph.com/admin/external_service"><Badge text="Admin" color="violet" size="small" /></a>
+<a href="https://docs.sourcegraph.com/admin/external_service"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Quickly see the status on your repository and permissions syncing
 With Sourcegraph 4.0, we have introduced many quality of life improvements to help admins understand the current state of repository and permissions syncing. These improvements make it easier for admins to understand the current state of repositories synced with Sourcegraph as well as understand syncing errors when they arise. 
@@ -223,7 +223,7 @@ With Sourcegraph 4.0, we have introduced many quality of life improvements to he
 
 
 
-<a href=https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
+<a href="https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Measure precise code navigation coverage with an enhanced analytics dashboard
 Get a better understanding of precise navigation coverage and access precise code graph data configured for all of your repositories with the improved code navigation dashboard.
