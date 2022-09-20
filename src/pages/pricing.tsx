@@ -143,9 +143,9 @@ const PricingPage: FunctionComponent = () => {
     return (
         <Layout
             meta={{
-                title: 'Sourcegraph - Pricing',
+                title: 'Sourcegraph | Pricing',
                 description:
-                    'Sourcegraph is always free for public and open source code. Start using it for private code with a paid plan.',
+                    "See pricing for Sourcegraph's code intelligence platform. Get started with a free trial today.",
             }}
             className="bg-white"
             hero={
