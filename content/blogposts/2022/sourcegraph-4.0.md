@@ -25,7 +25,7 @@ Read on to discover more details about the improvement with Sourcegraph 4.0.
 #### A faster, simpler search experience 
 We streamlined and simplified the search user interface to make the platform more intuitive. The search homepage now includes contextual tips and recommendations using real data from your instance, including repository names, file names, and authors. This information makes it easier than ever run a successful search query, faster.
 
-Search results are now front and center with the improved interface. The search sidebar has moved to the right of the screen and several non-essential elements have been removed to ensure the information you’re looking for is easy to access. Filters make it easier and faster for you to extract the answer you need, and the side bar can be collapsed altogether to reduce noise. 
+Search results are now front and center with the improved interface. The search sidebar is now on the right side of the screen and we removed several non-essential elements to ensure the information you need is easy to access. Filters make it easier and faster for you to answer questions about your code, and the sidebar can be collapsed altogether to reduce noise. 
 
 Performance across the platform saw a boost and search results are now returned faster than before by using the latest in React, lazy loading, and priority rendering. 
 
