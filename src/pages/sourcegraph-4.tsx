@@ -216,7 +216,7 @@ const Sourcegraph4: FunctionComponent = () => {
                                     </span>
                                 ),
                                 subtitle: 'Multi-version upgrades',
-                                description: 'Upgrade from Sourcegraph 3.29 to Sourcegraph 4.0 in a few simple steps ',
+                                description: 'Upgrade from Sourcegraph 3.20 to Sourcegraph 4.0 in a few simple steps ',
                             },
                         ]}
                     />
