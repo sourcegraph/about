@@ -51,9 +51,9 @@ You can choose to group your search results by location (repo or file), author, 
 <a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
 
 #### A faster, simpler search experience 
-We streamlined and simplified the search user interface to make the platform more intuitive. The search homepage now includes contextual tips and recommendations using real data from your instance, including repository names, file names, and authors. This information makes it easier than ever run a successful search query, faster.
+We streamlined and simplified the search user interface to make the platform more intuitive. The search homepage now includes contextual tips and recommendations using real data from your instance, including repository names, file names, and authors. This information makes it easier and faster than ever run a successful search query. 
 
-Search results are now front and center with the improved interface. The search sidebar is now on the right side of the screen and we removed several non-essential elements to ensure the information you need is easy to access. Filters make it easier and faster for you to answer questions about your code, and the sidebar can be collapsed altogether to reduce noise. 
+Search results are now front and center with the improved interface. The search sidebar has moved to the right side of the screen, and we eliminated several non-essential elements to ensure the information you need is obvious to access. Filters make it effortless for you to answer questions about your code, and the sidebar can be collapsed altogether to reduce noise. 
 
 Major performance improvements make rendering search results, files and blobs, and repository pages faster than ever.
 
@@ -144,7 +144,9 @@ This feature requires admins to set up executors (much like CI agents), which So
 <a href="https://docs.sourcegraph.com/cloud"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Get started with Sourcegraph faster than ever
-After many years of building Sourcegraph into a secure and highly-scalable solution, we're ready to bring it to the cloud. Sourcegraph Cloud now offers dedicated, single-tenant instances of Sourcegraph, making it easier than ever for new teams to get started. You can read more in our announcement blog here[/blog/enterprise-cloud].
+After almost a decade of developing self-hosted Sourcegraph, we’ve gained the trust of some of the most sophisticated companies and development teams in the world, allowing us to work with their most sensitive IP: their code. Today—after years of building trust and engineering rigor—we are excited to move confidently to the Cloud with this highly secure and scalable solution.
+
+Sourcegraph Cloud now offers dedicated, single-tenant instances of Sourcegraph, making it easier than ever for new teams to get started. You can read more in our announcement blog here[/blog/enterprise-cloud].
 
 <a href="https://docs.sourcegraph.com/cloud" className="tw-not-italic tw-flex tw-items-center">
       <p className="tw-m-0 tw-mr-2">Docs</p>
