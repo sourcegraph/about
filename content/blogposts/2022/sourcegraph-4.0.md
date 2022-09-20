@@ -63,7 +63,9 @@ Major performance improvements make rendering search results, files and blobs, a
 <a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
 
 #### Configure precise code navigation for 9 languages in a matter of minutes with auto-indexing
-Code navigation allows you to quickly jump to symbol definitions, find references, dependencies, and more, so you can spend more time shipping code. Precise code navigation is the most powerful version of code navigation and it works cross-repository. Auto-indexing allows you to set up precise code navigation for any chosen repositories with the click of a button, and it makes precise code navigation work across all of your code, automatically. Auto-indexing is now supported for 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, JavaScript, and it's now turned on by default for our Cloud customers.
+Code navigation allows you to quickly jump to symbol definitions, find references, dependencies, and more, so you can spend more time shipping code. Precise code navigation is the most powerful version of code navigation and it works cross-repository. 
+
+Auto-indexing allows you to set up precise code navigation for any chosen repositories with the click of a button, and it makes precise code navigation work across all of your code, automatically. Auto-indexing is now supported for 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, JavaScript, and with the release of 4.0, it's turned on by default for our Cloud customers.
 
 <Video 
   source={{
@@ -145,6 +147,16 @@ This feature requires admins to set up executors (much like CI agents), which So
 After many years of building Sourcegraph into a secure and highly-scalable solution, we're ready to bring it to the cloud. Sourcegraph Cloud now offers dedicated, single-tenant instances of Sourcegraph, making it easier than ever for new teams to get started. You can read more in our announcement blog here[/blog/enterprise-cloud].
 
 <a href="https://docs.sourcegraph.com/cloud" className="tw-not-italic tw-flex tw-items-center">
+      <p className="tw-m-0 tw-mr-2">Docs</p>
+      <OpenInNewIcon className="tw-inline" size={18} />
+  </a>
+
+<a href="https://docs.sourcegraph.com/cloud"><Badge text="Admin" color="violet" size="small" /></a>
+
+#### Assured Cloud security with SOC 2 Type II attestation 
+Sourcegraph continues our committment to the security of your most valuable IP — your code — through our security operations, compliance measures, and best practices. With our recent SOC 2 Type II attestation for Soucegraph Cloud, we met the high standards of the third-party audit, and you can be conficent that Sourcegraph controls for the secruity and availability of your sensitive data. 
+
+<a href="https://security.sourcegraph.com/" className="tw-not-italic tw-flex tw-items-center">
       <p className="tw-m-0 tw-mr-2">Docs</p>
       <OpenInNewIcon className="tw-inline" size={18} />
   </a>
