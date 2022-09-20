@@ -27,7 +27,7 @@ We streamlined and simplified the search user interface to make the platform mor
 
 Search results are now front and center with the improved interface. The search sidebar is now on the right side of the screen and we removed several non-essential elements to ensure the information you need is easy to access. Filters make it easier and faster for you to answer questions about your code, and the sidebar can be collapsed altogether to reduce noise. 
 
-TODO: Search results are returned faster with our performance improvements using the latest in React, lazy loading, and priority rendering.
+Major performance improvements make rendering search results, files and blobs, and repository pages faster than ever.
 
 ![UI Improvements](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Search%20UI%20Improvements.png "UI Improvements")
 
