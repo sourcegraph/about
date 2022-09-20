@@ -16,7 +16,7 @@ Our code intelligence platform semantically indexes and analyzes code and its un
 
 Read on to discover more details about the improvement with Sourcegraph 4.0.  
 
-# 🌅 Code intelligence platform for everyday use
+## 🌅 Code intelligence platform for everyday use
 
 <Badge text="Code Search" color="cerise" size="small" onClick={() => window.open("/code-search", "_self")} />
 
@@ -89,7 +89,7 @@ We've enhanced the code navigation experience with a new version of the referenc
 [Docs](https://docs.sourcegraph.com/code_navigation/explanations/features#find-references)
 
 
-# 🏗️ High-leverage ways to improve your entire codebase
+## 🏗️ High-leverage ways to improve your entire codebase
 
 <Badge text="Batch Changes" color="blue" size="small" onClick={() => window.open("/batch-changes", "_self")} />
 
@@ -115,7 +115,7 @@ This feature requires admins to set up executors (much like CI agents), which So
 [Docs](https://docs.sourcegraph.com/batch_changes/explanations/server_side)
 
 
-# ☁️ Dedicated Sourcegraph Cloud instances for enterprise
+## ☁️ Dedicated Sourcegraph Cloud instances for enterprise
 
 <Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
 
@@ -124,7 +124,7 @@ After many years of building Sourcegraph into a secure and highly-scalable solut
 
 [Docs](https://docs.sourcegraph.com/cloud)
 
-# 💖 Advanced admin capabilities
+## 💖 Advanced admin capabilities
 
 <Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
 
