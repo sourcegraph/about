@@ -120,6 +120,6 @@ $grid-breakpoints: (
 @import 'templates/PostTemplate';
 
 /* ==================== Custom Partials ==================== */
-@import 'bootstrap';
+@import 'bootstrap-overrides';
 @import 'scripts';
 @import 'spacing';

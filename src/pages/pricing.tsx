@@ -272,7 +272,7 @@ const PricingPage: FunctionComponent = () => {
                 description="Small teams can use a limited version of Sourcegraph’s code intelligence platform for free to search personal and open source projects. The free version can only be deployed self-hosted and supports one code host connection."
                 cta1={{
                     text: 'Deploy',
-                    link: '/get-started/self-hosted',
+                    link: 'https://docs.sourcegraph.com/#self-hosted',
                     ctaStyle: 'primaryButton',
                 }}
                 cta2={{
