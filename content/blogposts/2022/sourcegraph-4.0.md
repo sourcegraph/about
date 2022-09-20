@@ -84,6 +84,8 @@ The most used extensions including code navigation, git-extras, open-in-editor a
 ### Quickly access answers within your codebase with a revamped reference panel 
 We've enhanced the code navigation experience with a new version of the reference panel. Updates include a new preview panel, the conslidation of definitions and references in the same tab, and allows for easier navigation through filters.
 
+![Reference panel revamp](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Reference%20Panel%20Image.png "Refernce panel revamp")
+
 [Docs](https://docs.sourcegraph.com/code_navigation/explanations/features#find-references)
 
 
@@ -157,7 +159,7 @@ Admins can now understand the adoption and amount of time saved from using IDE a
 
 Media: provide a screenshot, gif, or video to help support the copy
 
-Docs: provide a link to the updated docs
+[Docs](https://docs.sourcegraph.com/admin/analytics)
 
 <Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
 
@@ -172,15 +174,15 @@ Docs: provide a link to the updated docs
 ### Quickly see the status on your repository and permissions syncing
 With Sourcegraph 4.0, we have introduced many quality of life improvements to help admins understand the current state of repository and permissions syncing. These improvements make it easier for admins to understand the current state of repositories synced with Sourcegraph as well as understand syncing errors when they arise. 
 
-Media: provide a screenshot, gif, or video to help support the copy
+![Repository Status](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Repository%20Status%20Image.png "Repository Status")
 
-Docs: provide a link to the updated docs
+[Docs](https://docs.sourcegraph.com/admin/external_service)
 
 <Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
 
 ### Gain knowledge about precise code navigation with improved analytics
 Get a better understanding of precise navigation coverage and access precise code graph data configured for all of your repositories with the improved code navigation dashboard.
 
-Media: provide a screenshot, gif, or video to help support the copy
+![Precise code navigation analytics](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Precise%20Code%20Navigation%20Analytics.png "Precise code naviagion anlaytics")
 
-Docs: provide a link to the updated docs
+[Docs](https://docs.sourcegraph.com/admin/analytics)
