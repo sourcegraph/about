@@ -43,16 +43,7 @@ Search aggregation charts appear on the search results page to help you answer q
 - Which library components are used most? By who?
 - What are all the possible arguments we pass to this function? 
 
- You can choose to group your search results by location (repo or file), author, or arbitrary capture group pattern.
-
-The new aggregations answer:
-- How many different versions of a library or package are present in your code, and which is most common? 
-- Which files have the majority of these search results?
-- Which repositories is this library used in most?
-- Which library components are used most? By who?
-- What are all the possible arguments we pass to this function? 
-
-Here are some [example search aggregations to get started with.](https://docs.sourcegraph.com/code_insights/references/search_aggregations_use_cases)
+You can choose to group your search results by location (repo or file), author, or arbitrary capture group pattern, and here are some [example search aggregations to get started with.](https://docs.sourcegraph.com/code_insights/references/search_aggregations_use_cases)
 
 <Video 
   source={{
