@@ -73,7 +73,7 @@ Code navigation allows you to quickly jump to symbol definitions, find reference
 
 [Docs](https://docs.sourcegraph.com/code_navigation/references/indexers)
 
-[Extensions]
+<Badge text="Extensions" color="vermillion" size="small" onClick={() => window.open("https://docs.sourcegraph.com/integration", "_self")} />
 
 #### Your favorite extensions are now available by default 
 The most used extensions including code navigation, git-extras, open-in-editor and, search-exports are now default functionality. These enhancements help streamline your workflow and easily switch between tools when needed. Additionally, the current Sourcegraph extensions framework will be deprecated as we work towards a new model of integrations that provides functionality throughout our entire code intelligence platform. Please note, these changes **do not** impact our IDE extensions.
@@ -81,7 +81,7 @@ The most used extensions including code navigation, git-extras, open-in-editor a
 
 ![Git Blame](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/git_blame.png "Git Blame")
 
-<Badge text="Code navigation" color="lemon" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
+<Badge text="Code navigation" color="lemon" size="small" onClick={() => window.open("/code-search, "_self")} />
 
 #### Quickly access answers within your codebase with a revamped reference panel 
 We've enhanced the code navigation experience with a new version of the reference panel. Updates include a new preview panel, the conslidation of definitions and references in the same tab, and allows for easier navigation through filters.
@@ -121,7 +121,7 @@ This feature requires admins to set up executors (much like CI agents), which So
 
 <Badge text="Admin" color="violet" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
 
-### Get started with Sourcegraph faster than ever
+#### Get started with Sourcegraph faster than ever
 After many years of building Sourcegraph into a secure and highly-scalable solution, we're ready to bring it to the cloud. Sourcegraph Cloud now offers dedicated, single-tenant instances of Sourcegraph, making it easier than ever for new teams to get started. You can read more in our announcement blog here[/blog/enterprise-cloud].
 
 [Docs](https://docs.sourcegraph.com/cloud)
