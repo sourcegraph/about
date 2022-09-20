@@ -19,7 +19,7 @@ Read on to discover everything that shipped in Sourcegraph 4.0.
 ### 🌅 Code intelligence: more useful, more times daily for every dev
 
 
-<Badge text="Code Search" color="cerise" size="small" onClick={() => window.open("/code-search", "_self")} />
+<a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
 
 
 #### A faster, simpler search experience 
