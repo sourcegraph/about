@@ -27,8 +27,6 @@ const BusinessCTA: FunctionComponent<{ className?: string; btnOnMobile?: boolean
     const isMdOrDown = windowWidth < breakpoints.lg
 
     return (
-        <Link href="/get-started/self-hosted" passHref={true}>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a
                 className={classNames(
                     btnOnMobile && 'btn btn-primary',
@@ -40,33 +38,33 @@ const BusinessCTA: FunctionComponent<{ className?: string; btnOnMobile?: boolean
                         ? 'font-weight-normal'
                         : 'btn btn-primary'
                 )}
-                title="Get started"
+                href="https://signup.sourcegraph.com"
+                title="Get free trial"
                 data-button-style={buttonStyle.primary}
                 data-button-location={buttonLocation.trySourcegraph}
                 data-button-type="cta"
             >
-                Get started
+                Get free trial
             </a>
-        </Link>
     )
 }
 
 const EnterpriseCTA: FunctionComponent<{ btnOnMobile?: boolean }> = ({ btnOnMobile }) => (
     <div className="tw-flex-wrap">
         <BusinessCTA btnOnMobile={btnOnMobile} className="tw-mr-xs tw-mb-xs md:tw-mb-0 tw-w-full md:tw-w-auto" />
-        <Link href="/demo" passHref={true}>
+        <Link href="/contact/request-info?form_submission_source=pricing-enterprise" passHref={true}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a
                 className={classNames(
                     'btn btn-outline-primary',
                     !btnOnMobile ? 'tw-hidden lg:tw-inline-block tw-w-auto' : 'tw-w-full md:tw-w-auto'
                 )}
-                title="Request a demo"
+                title="Contact us"
                 data-button-style={buttonStyle.outline}
                 data-button-location={buttonLocation.bodyDemo}
                 data-button-type="cta"
             >
-                Request a demo
+                Contact us
             </a>
         </Link>
     </div>
@@ -277,7 +275,7 @@ const PricingPage: FunctionComponent = () => {
                 }}
                 cta2={{
                     text: 'Start free Cloud trial',
-                    link: '/demo',
+                    link: 'https://signup.sourcegraph.com',
                     ctaStyle: 'outlineButton',
                 }}
             />
