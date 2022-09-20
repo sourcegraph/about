@@ -114,7 +114,7 @@ We've enhanced the code navigation experience with a new version of the referenc
 
 <a href=/batch-changes"><Badge text="Batch Changes" color="blue" size="small" /></a>
 
-#### Make changes across all of your codebases at enterprise scale with server-side Batch Changes (beta)
+#### Make changes across all of your codebase at enterprise scale with server-side Batch Changes (beta)
 Batch Changes allows you to programmatically define changes across the codebase with a single declarative file. Now, changes can be run across thousands of repositories with a better development experience. Previously, you had to run src-cli locally to create batch changes, which could take an impractical amount of time or be brittle for large or resource-intensive batch changes. By running Batch Changes server-side you can:
 
 - Run large-scale or resource-intensive batch changes without clogging your local machine
