@@ -79,7 +79,7 @@ const faqData = [
             <p>
                 A monthly active user is any user who accesses Sourcegraph in a given month. See the{' '}
                 <a
-                    href="https://docs.sourcegraph.com/code_insights"
+                    href="https://docs.sourcegraph.com/admin/pricing"
                     title="docs"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}

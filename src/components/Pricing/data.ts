@@ -36,7 +36,7 @@ export const BIZ_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Code host integrations',
-        features: ['cloudHosts', 'repoConnections'],
+        features: ['cloudHosts'],
     },
     {
         topic: 'Security and admin',
@@ -70,7 +70,7 @@ export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: '24/5 priority support',
-        features: ['slaSupport', 'dedicatedCe'],
+        features: ['slaSupport', 'dedicatedManager'],
     },
     { topic: 'Enterprise add ons' },
 ]
@@ -144,16 +144,6 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
                 business: false,
                 enterprise: true,
             },
-            {
-                label: 'privateRepos',
-                business: 'Unlimited',
-                enterprise: 'Unlimited',
-            },
-            {
-                label: 'publicRepos',
-                business: 'Unlimited',
-                enterprise: 'Unlimited',
-            },
         ],
     },
     {
@@ -201,8 +191,8 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
         features: [
             {
                 label: 'codeStorag',
-                business: 'Up to 100GB',
-                enterprise: 'Over 100GB',
+                business: 'Up to 75GB',
+                enterprise: 'Over 75GB',
             },
             {
                 label: 'executors',
@@ -220,7 +210,7 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
                 enterprise: '24/5 support',
             },
             {
-                label: 'dedicatedCe',
+                label: 'dedicatedManager',
                 business: 'Available',
                 enterprise: true,
             },
@@ -266,7 +256,7 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
         features: [
             {
                 label: 'price',
-                business: '$99 per user/month',
+                business: '$99 per active user/month',
                 enterprise: 'Custom pricing',
                 disclaimer: 'Platform access fee may apply',
             },
@@ -292,9 +282,9 @@ const CIP_FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Super-fast, intuitive, and powerful code search across your entire codebase.',
     },
     codeNavigation: {
-        label: 'Code Navigation',
+        label: 'Code navigation',
         description:
-            "Traverse your entire codebase with precise code navigation for cross-repository 'Go to definition' and 'Find references,' and more.",
+            "Traverse your entire codebase with precise code navigation for cross-repository 'Go to definition,' 'Find references,' and more.",
     },
     batchChanges: {
         label: 'Batch Changes',
@@ -310,7 +300,7 @@ const CIP_FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Create living documentation that interacts directly with your code.',
     },
     codeMonitoring: {
-        label: 'Code Monitoring',
+        label: 'Code monitoring',
         description: 'Get alerts when changes are made to your codebase.',
     },
     comprehensiveApi: {
@@ -352,11 +342,11 @@ const SECURITY_FEATURE_INFO: Record<string, FeatureInfo> = {
 const DEPLOYMENT_FEATURE_INFO: Record<string, FeatureInfo> = {
     cloudDeployment: {
         label: 'Secure and dedicated Cloud deployment',
-        description: 'Deploy Sourcegraph in a dedicated, single-tenant instance in GCP. ',
+        description: 'Your own dedicated, single-tenant Sourcegraph instance.',
     },
     selfDeployment: {
         label: 'Self-hosted deployment',
-        description: 'Deploy with Docker, Docker Compose, or Kubernetes on your own infrastructure (add-on).',
+        description: 'Deploy with Docker, Docker Compose, or Kubernetes on your own infrastructure.',
     },
 }
 
@@ -365,38 +355,36 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
 
     // Code host integrations
     cloudHosts: {
-        label: 'Unlimited standard Cloud hosts',
-    },
-    repoConnections: {
-        label: 'Unlimited repository connections',
-        description: 'Sync code from all of your repositories.',
+        label: 'Cloud code hosts',
+        description: 'Integrate with GitHub.com, GitLab.com, and Bitbucket Cloud.',
     },
     unlimitedCodeHosts: {
         label: 'Unlimited code hosts',
+        description: 'Search, understand, fix, and automate across multiple code hosts.',
     },
     selfHostedCodeHosts: {
         label: 'Connect to self-hosted code hosts',
         description:
-            'Integrate with Github Enterprise Self-hosted, GitLab Self-hosted, BitBucket Server/Data Center, and Perforce',
+            'Integrate with Github Enterprise Self-hosted, GitLab Self-hosted, Bitbucket Server/Data Center, and Perforce.',
     },
     enterpriseOnlyCodeHosts: {
         label: 'Connect to enterprise-only code hosts',
         description: 'Integrate with any Git-based code host via src-srv-git.',
     },
     privateCodeHosts: {
-        label: 'Connect to private code hosts (self-hosted only)',
-        description: 'Integrate with supported code hosts stored behind a firewall.',
+        label: 'Connect to private code hosts',
+        description: 'Integrate with supported code hosts stored behind a firewall (only available for self-hosted deployments).',
     },
 
     ...SECURITY_FEATURE_INFO,
 
     // Scale and performance
     businessStorage: {
-        label: 'Up to 100GB code storage',
+        label: 'Up to 75GB Cloud code storage',
         description: 'Included storage for Cloud deployments.',
     },
     enterpriseStorage: {
-        label: 'Over 100GB code storage',
+        label: 'Over 75GB Cloud code storage',
         description: 'Included storage for Cloud deployments.',
     },
     businessExecutors: {
@@ -417,8 +405,8 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'Priority support SLAs',
         description: 'Priority ticket handling and guaranteed initial response SLA from a dedicated team.',
     },
-    dedicatedCe: {
-        label: 'Dedicated Customer Engineer',
+    dedicatedManager: {
+        label: 'Dedicated Technical Account Manager',
         description:
             'Dedicated technical account manager to support usage, training, enablement, technical strategy, and overall health.',
     },
@@ -430,16 +418,16 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     // Code host integrations
     codeHost: {
         label: 'Code host integrations',
-        description: 'Integrate with GitHub.com, GitLab.com, and Bitbucket Cloud',
+        description: 'Search, understand, fix, and automate across multiple code hosts.',
     },
     cloudHosts: {
         label: 'Cloud code hosts',
-        description: 'Integrate with GitHub.com, GitLab.com, and Bitbucket Cloud',
+        description: 'Integrate with GitHub.com, GitLab.com, and Bitbucket Cloud.',
     },
     selfHosts: {
         label: 'Self-hosted code hosts',
         description:
-            'Integrate with Github Enterprise Self-hosted, GitLab Self-hosted, BitBucket Server/Data Center, and Perforce',
+            'Integrate with Github Enterprise Self-hosted, GitLab Self-hosted, Bitbucket Server/Data Center, and Perforce.',
     },
     enterpriseHosts: {
         label: 'Enterprise-only code hosts',
@@ -448,14 +436,6 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     privateHosts: {
         label: 'Private code hosts',
         description: 'Integrate with supported code hosts stored behind a firewall.',
-    },
-    privateRepos: {
-        label: 'Private repository connections',
-        description: 'Sync code from private repositories.',
-    },
-    publicRepos: {
-        label: 'Public repository connections',
-        description: 'Sync code from public repositories.',
     },
 
     // Security and admin
@@ -480,8 +460,8 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     support: {
         label: 'Support',
     },
-    dedicatedCe: {
-        label: 'Dedicated Customer Engineer',
+    dedicatedManager: {
+        label: 'Dedicated Technical Account Manager',
         description:
             'Dedicated technical account manager to support usage, training, enablement, technical strategy, and overall health.',
     },
@@ -493,7 +473,7 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     // Deployment
     ...DEPLOYMENT_FEATURE_INFO,
     airGappedDeploy: {
-        label: 'Air-gapped deployment monitoring',
+        label: 'Air-gapped deployment',
         description: 'Deploy Sourcegraph in an air-gapped environment.',
     },
     deploymentMonitoring: {
