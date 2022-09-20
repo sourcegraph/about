@@ -10,7 +10,7 @@ interface Props {
     description: string
     price: string
     features: FeatureCluster[]
-    buttons: ReactFragment
+    buttons: ReactNode
     isEnterprise: boolean
 }
 
