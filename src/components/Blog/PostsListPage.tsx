@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
 import { Layout, BlogHeader, PostsList } from '@components'
 import { useLoadMore } from '@hooks'
@@ -8,6 +8,7 @@ interface Props {
     blogInfo: BlogTypeInfo
     posts: PostIndexItemProps[]
     allPosts: PostIndexItemProps[]
+    children?: ReactNode
 }
 
 export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, posts, children }) => {
