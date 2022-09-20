@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 
+import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
@@ -9,7 +10,7 @@ import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 
 type ReleaseComponents = import('mdx/types').MDXComponents
-const components = { Alert, Badge, Figure, Video, YouTube }
+const components = { Alert, Badge, Figure, OpenInNewIcon, Video, YouTube }
 
 interface Props extends PostComponentProps {}
 
