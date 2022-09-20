@@ -312,7 +312,7 @@ Instead of linking images using Markdown, please use the Figure component. This 
   link="https://www.sourcegraph.com/search"
 />
 
-Add a link icon for links that open in a new window by including the `linkIcon={true}` property to the Figure component:
+Add a link icon for links that open in a new window by including the `linkIcon={true}` property to the Figure or Video component:
 ```javascript
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png"
@@ -327,6 +327,30 @@ Add a link icon for links that open in a new window by including the `linkIcon={
   alt="Sourcegraph thumbnail"
   caption="Check out Sourcegraph Search!"
   link="https://www.sourcegraph.com/search"
+  linkIcon={true}
+/>
+```javascript
+<Video 
+  source={{
+    webm: 'blog/shift-left/01-code-reuse',
+    mp4: 'blog/shift-left/01-code-reuse'
+  }}
+  loop={true}
+  title="Code reuse"
+  caption="Docs"
+  link="https://docs.sourcegraph.com/"
+  linkIcon={true}
+/>
+```
+<Video 
+  source={{
+    webm: 'blog/shift-left/01-code-reuse',
+    mp4: 'blog/shift-left/01-code-reuse'
+  }}
+  loop={true}
+  title="Code reuse sample, title read by screen readers (make these short)"
+  caption="Docs"
+  link="https://docs.sourcegraph.com/"
   linkIcon={true}
 />
 
