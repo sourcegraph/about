@@ -3,7 +3,7 @@ import { FunctionComponent, useEffect, useState } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { ContentSection, CustomerLogos } from '@components'
+import { ContentSection, CustomerLogos, Video } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 import meshLeft from './assets/hero/mesh-left.png'
@@ -40,31 +40,29 @@ const Hero: FunctionComponent = () => {
                 </div>
             ))}
 
-            <div className="tw-mx-auto tw-text-center max-w-750">
+            <div className="tw-mx-auto tw-pt-md md:tw-pt-5xl tw-text-center max-w-750">
                 <h1 className="tw-text-4xl tw-leading-10 md:tw-text-6xl lg:tw-text-[3.75rem] lg:tw-leading-[1]">
                     <span className="mb-2 tw-text-transparent tw-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">
                         {headline}
                     </span>{' '}
                     across your entire codebase
                 </h1>
-                <p className="my-5 tw-mx-auto max-w-700 tw-font-semibold">
-                    Understand, fix, and automate across your codebase with Sourcegraph's code intelligence platform
+                <p className="my-5 tw-mx-auto max-w-700">
+                    Address security risks, onboard to a new codebase, identify the root cause of  incidents, promote code reuse,  improve code health, and accelerate engineering velocity with Sourcegraph.
                 </p>
 
                 <div className="tw-mx-auto max-w-350 tw-flex-col sm:tw-flex-row sm:tw-flex tw-items-center">
                     <div className="mb-3 col-sm-6 sm:tw-px-0 mb-sm-0 mr-sm-3">
-                        <Link href="/get-started/self-hosted" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="btn btn-primary w-100"
-                                title="Get started"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
-                                Get started
-                            </a>
-                        </Link>
+                        <a
+                            className="btn btn-primary w-100"
+                            href="https:/signup.sourcegraph.com"
+                            title="Get started"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.hero}
+                            data-button-type="cta"
+                        >
+                            Get free trial
+                        </a>
                     </div>
                     <div className="col-sm-6 sm:tw-px-0">
                         <Link href="/demo" passHref={true}>
@@ -81,55 +79,20 @@ const Hero: FunctionComponent = () => {
                         </Link>
                     </div>
                 </div>
-
-                <p className="mt-5">
-                    Product or installation questions?{' '}
-                    <a
-                        href="https://info.sourcegraph.com/talk-to-a-developer"
-                        title="Talk to an expert"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.hero}
-                        data-button-type="cta"
-                    >
-                        Talk to an expert
-                    </a>
-                    .
-                </p>
             </div>
 
-            <div className="tw-py-md md:tw-py-5xl">
-                <CustomerLogos />
-            </div>
+            <ContentSection slimWidth={true} parentClassName="tw-mt-5xl">
+                <Video
+                    source={{
+                        mp4: 'batch-changes/how-it-works',
+                        webm: 'batch-changes/how-it-works',
+                    }}
+                    loop={true}
+                    title="Batch Changes: How it works"
+                />
+            </ContentSection>
 
-            <div className="tw-mx-auto tw-text-center max-w-600">
-                <h2 className="tw-mb-2">
-                    Over{' '}
-                    <Link href="/case-studies" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className="tw-text-violet-400"
-                            title="1.8 million engineers"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.hero}
-                            data-button-type="cta"
-                        >
-                            1.8M engineers
-                        </a>
-                    </Link>{' '}
-                    use Sourcegraph to build software you rely on
-                </h2>
-                <Link href="/case-studies" passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a
-                        title="Learn how our customers use Sourcegraph"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.hero}
-                        data-button-type="cta"
-                    >
-                        Learn how our customers use Sourcegraph
-                    </a>
-                </Link>
-            </div>
+            <CustomerLogos />
         </ContentSection>
     )
 }

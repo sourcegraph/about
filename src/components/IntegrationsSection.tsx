@@ -72,13 +72,6 @@ const tools: string[] = [
     'Emacs',
     'Atom',
     'Sublime Text',
-    'Datadog',
-    'Lightstep',
-    'Sentry',
-    'Codecov',
-    'Jira',
-    'npm',
-    'SonarQube',
 ]
 
 const selfHostedOptions: string[] = [
@@ -134,7 +127,7 @@ export const IntegrationsSection: FunctionComponent = () => (
             </div>
 
             <div className="mb-5 col-lg-6">
-                <h4>All your tools</h4>
+                <h4>Your most used tools</h4>
 
                 <ul className="tw-list-none tw-ml-0 tw-flex tw-flex-wrap">{renderListItems(tools)}</ul>
                 <a
