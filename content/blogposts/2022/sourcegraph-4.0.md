@@ -157,7 +157,7 @@ Multi-version upgrades help to reduce the burden and time required to upgrade to
 #### View usage and measure the value of our platform with new and enhanced in-product analytics
 Our new analytics, introduced with version 3.42, make it easier for admins to understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. In-product analytics now include ROI-based metrics such as projected value and dev-time-saved for all Sourcegraph features, and individual user usage. Admins can access the analytics, configure the date range from one week to three months, and export the details. 
 
-Media: provide a screenshot, gif, or video to help support the copy
+![In-product anlaytics](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Search.png "In-product analytics")
 
 [Docs](https://docs.sourcegraph.com/admin/analytics)
 
@@ -166,7 +166,7 @@ Media: provide a screenshot, gif, or video to help support the copy
 #### Uncover developer time saved using Browser and IDE extensions 
 Admins can now understand the adoption and amount of time saved from using IDE and Browser extensions across your organization. Additionally, to make it faster and easier to roll out our VS Code extension organization wide, we've created an example Batch Change that adds the extension to your repository’s recommended extensions. Once added, users will be recommended the Sourcegraph extension when opening the repository if they don't have it installed already. We’ve also updated our instructions on how to automatically install our Browser extensions for users in your Google Workspace organization. 
 
-Media: provide a screenshot, gif, or video to help support the copy
+![Browser and IDE extensions analytics](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Browser.png "Browser and IDE extensions analytics")
 
 [Docs](https://docs.sourcegraph.com/admin/analytics)
 
