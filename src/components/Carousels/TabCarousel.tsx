@@ -17,7 +17,7 @@ interface TabCarouselProps {
 
 export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAdvance }) => {
     const carouselHook = useCarousel(items, autoAdvance ?? false)
-    const carouselItems = carouselHook.carouselItems.items as Template[]
+    const carouselItems = carouselHook.carouselItems.items as unknown as Template[]
 
     return (
         <div className="tab-carousel">

@@ -3,13 +3,13 @@ import { FunctionComponent } from 'react'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
-import { Alert, Blockquote, Figure, HubSpotForm, TableWrapper, Video, YouTube } from '@components'
+import { Alert, Badge, Blockquote, Figure, HubSpotForm, TableWrapper, Video, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 
 type PostComponents = import('mdx/types').MDXComponents
-const components = { Alert, Blockquote, HubSpotForm, Figure, TableWrapper, Video, YouTube }
+const components = { Alert, Badge, Blockquote, HubSpotForm, Figure, TableWrapper, Video, YouTube }
 
 /**
  * This component is used to render all types of posts:

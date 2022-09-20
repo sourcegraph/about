@@ -70,13 +70,16 @@ Your markdown content goes here
 
 The Sourcegraph Blog is implemented with Next.js with MDX support. One strength of this implementation is the ability to incorporate our custom components in Markdown. The following components are available for blog posts:
 
-1. Alert
-2. Blockquote
-3. Figure
-4. TableWrapper
-5. Video
-6. YouTube, and;
-7. HubSpotForm
+<ol>
+  <li><a href="#alert">Alert</a></li>
+  <li><a href="#badge">Badge</a></li>
+  <li><a href="#blockquote">Blockquote</a></li>
+  <li><a href="#figure">Figure</a></li>
+  <li><a href="#tableWrapper">TableWrapper</a></li>
+  <li><a href="#video">Video</a></li>
+  <li><a href="#youtube">YouTube</a></li>
+  <li><a href="#hubspotform">HubSpotForm</a></li>
+</ol>
 
 Use these components to bring your blog post to life. Here are a few examples:
 
@@ -86,7 +89,7 @@ Sometimes a piece of information needs to stick out. You can use the `Alert` com
 
 <Alert>Hey, this is important to know!</Alert>
 
-You can also change the color of the Alert by setting its `type`. You can choose between:
+You can change the color of the Alert by setting its `type` property to one of the following:
 
 `primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, or`dark`
 
@@ -96,6 +99,65 @@ Or, you may want to include a link within your Alert:
 
 <Alert type="secondary">Check out Sourcegraph <a href="https://www.sourcegraph.com/search">Search.</a></Alert>
 
+### Badge
+
+Use the `Badge` component to call out specific topics or versions of content.
+
+<div className="tw-mb-sm">
+  <Badge text="Default badge" size="small" />
+</div>
+
+<div className="tw-flex tw-justify-between">
+  <Badge text="light-gray" size="small" color="light-gray" />
+  <Badge text="white" size="small" color="white" />
+  <Badge text="white-outlined" size="small" color="white-outlined" />
+  <Badge text="dark-gray" size="small" color="dark-gray" />
+  <Badge text="blue" size="small" color="blue" />
+  <Badge text="blurple" size="small" color="blurple" />
+  <Badge text="violet" size="small" color="violet" />
+  <Badge text="cerise" size="small" color="cerise" />
+  <Badge text="vermillion" size="small" color="vermillion" />
+  <Badge text="green" size="small" color="green" />
+  <Badge text="lemon" size="small" color="lemon" />
+</div>
+Change the <b>color</b> of the Badge by setting its `color` property to one of the above options.
+```javascript
+<Badge text="lemon" size="small" color="blurple" />
+```
+
+<div className="tw-mt-sm">
+  <Badge text="NEW!" size="small" color="violet" circle={true} />
+</div>
+<b>Round</b> the edges for a "pill badge" effect, add `circle={true}` property for the markdown.
+```javascript
+<Badge text="NEW!" size="small" color="violet" circle={true} />
+```
+
+<div className="tw-mt-sm">
+  <Badge text="Search code" color="cerise" size="small" onClick={() => window.open('https://sourcegraph.com/', '_blank', 'noopener')} />
+</div>
+To add a <b>link</b> to your badge, add a value to the `onClick` property as seen below:
+```javascript
+<Badge text="Search code" color="cerise" size="small" onClick={() => window.open('https://sourcegraph.com/', '_blank', 'noopener')} />
+```
+
+<div className="tw-mt-sm">
+  <Badge text="Code Insights" color="green" size="small" onClick={() => window.open("/code-insights", "_self")} />
+</div>
+If the link is to an internal page on about.sourcegraph.com, we don't want to open the link in a new tab. Add the following to the markdown adjusted to your badge values:
+```javascript
+<Badge text="Code Insights" color="green" size="small" onClick={() => window.open("/code-insights", "_self")} />
+```
+
+<div className="tw-mt-sm">
+  <Badge text="BETA" color="vermillion" size="large" />
+</div>
+To use a <b>larger badge</b>, give the component a `size="large"` property.
+```javascript
+<Badge text="BETA" color="vermillion" size="large" />
+```
+
+<br />
 
 ### Blockquote
 
@@ -203,7 +265,7 @@ This example is based on both the `mp4` and `webm` file formats living at the fo
 />
 
 
-### HubSpot Form Example
+### HubSpotForm
 
 Use the `HubSpotForm` component to drop a custom HubSpot form into your post. In most cases, the `masterFormName` and `chiliPiper` props are the only properties that need to be updated. Once added to your post, the HubSpot form will render in its place. All the options for this component are:
 
@@ -248,6 +310,24 @@ Instead of linking images using Markdown, please use the Figure component. This 
   alt="Sourcegraph thumbnail"
   caption="Check out Sourcegraph Search!"
   link="https://www.sourcegraph.com/search"
+/>
+
+Add a link icon for links that open in a new window by including the `linkIcon={true}` property to the Figure component:
+```javascript
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png"
+  alt="Sourcegraph thumbnail"
+  caption="Check out Sourcegraph Search!"
+  link="https://www.sourcegraph.com/search"
+  linkIcon={true}
+/>
+```
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png"
+  alt="Sourcegraph thumbnail"
+  caption="Check out Sourcegraph Search!"
+  link="https://www.sourcegraph.com/search"
+  linkIcon={true}
 />
 
 <div className="mt-6" />

@@ -3,13 +3,13 @@ import { FunctionComponent } from 'react'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
-import { Alert, Figure, Video, YouTube } from '@components'
+import { Alert, Badge, Figure, Video, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 
 type ReleaseComponents = import('mdx/types').MDXComponents
-const components = { Alert, Figure, Video, YouTube }
+const components = { Alert, Badge, Figure, Video, YouTube }
 
 interface Props extends PostComponentProps {}
 
