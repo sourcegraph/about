@@ -53,9 +53,8 @@ Here are some [example search aggregations to get started with](https://docs.sou
   caption="High-level aggregations of search results"
 />
 
-[Docs](https://docs.sourcegraph.com/code_insights/explanations/search_results_aggregations)
 
-<Badge text="Code navigation" color="lemon" size="small" onClick={() => window.open("URL_GOES_HERE", "_self")} />
+[Docs](https://docs.sourcegraph.com/code_insights/explanations/search_results_aggregations)
 
 ### Configure precise code navigation for 9 languages in a matter of minutes with auto-indexing
 Code navigation allows you to quickly jump to symbol definitions, find references, dependencies, and more, so you can spend more time shipping code. Precise code navigation is the most powerful version of code navigation and it works cross-repository. Auto-indexing allows you to set up precise code navigation for any chosen repositories with the click of a button, and it makes precise code navigation work across all of your code, automatically. Auto-indexing is supported for 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, JavaScript, and it is turned on by default for our Cloud customers.
