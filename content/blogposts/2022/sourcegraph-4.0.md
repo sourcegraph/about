@@ -20,7 +20,7 @@ Read on to discover everything that shipped in Sourcegraph 4.0.
 
 <a href="/code-insights"><Badge text="Code Insights" color="green" size="small" /></a>
 
-#### Understand usage and search structure with high-level aggregations of search results
+#### Understand usage and search structure with Code Insights dashboards within the search UI
 [Code Insights](https://about.sourcegraph.com/code-insights) turns your code into a queryable database to create customizable, visual dashboards. We're bringing the power of Code Insights directly into the search UI to surface high-level information about your code, help you answer questions about your code, and refine your search results.  
 
 Search aggregation charts appear on the search results page to help you answer questions, like:
@@ -39,7 +39,7 @@ You can choose to group your search results by location (repo or file), author, 
   }}
   loop={true}
   title="High-level aggregations"
-  caption="The power of Code Insights is now within the search UI to surface high-level information about your code"
+  caption="The power of Code Insights is now within the search UI to surface usage patterns about your code"
 />
 
   <a href="https://docs.sourcegraph.com/code_insights/explanations/search_results_aggregations" className="tw-not-italic tw-flex tw-items-center">
