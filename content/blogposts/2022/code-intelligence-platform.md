@@ -16,9 +16,11 @@ No matter how good your other dev tools, coding is still complex. Even if you've
 
 As consumers of software, we (mostly) benefit from this phenomenon in the form of better technology in our everyday lives.
 
-But as developers of software, we all feel the pain of code complexity: the struggle to understand big codebases, not being able to get in flow, encountering tech debt that turns a tiny fix into a multi-day ordeal, all the wasted time, etc.
+But as developers of software, we all feel the pain of code complexity: the struggle to understand big codebases, not being able to get in flow, encountering tech debt that turns a tiny fix into a multi-day ordeal, all the wasted time, etc. 
 
-Code search is helpful in tackling complexity, but it's not enough. Code search is for finding things *in* code (matching lines in files). What helps you find things *about* code? Let's call it a code intelligence platform. Compared to code search, it's more helpful, more times per day. This is like how Google went from helping you find things *on* the web (matching web pages), to helping you find things *from* the web (information and answers). Here are some examples `TODO: make it clear which these are available and which are future directions`:
+On top of this, devs are more important to their companies than ever. Devs have gone from being viewed as cost centers to being seen as the center of product development, making the issue of complexity a business problem just as much as a dev problem.
+
+Code search is helpful in tackling complexity, but it's not enough. Code search is for finding things *in* code (matching lines in files). What helps you learn things *about* code? Let's call it a code intelligence platform. Compared to code search, it's more helpful, more times per day. This is like how Google went from helping you find things *on* the web (matching web pages), to helping you learn things *from* the web (information and answers). Here are some examples:
 
 - Trying to figure out the best way to call a function? Code search could show you a semi-exhaustive list of call sites. Code intelligence is also being able to see how the code owners of that function themselves have recently been calling that function.
 - Need to debug an issue in code? Code search could help you navigate within the same project to understand it. Code intelligence is also being able to see what changed and why, and trace calls across projects and dependencies/dependents.
