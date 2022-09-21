@@ -34,12 +34,12 @@ Keeping feature parity between Sourcegraph Self-hosted and Sourcegraph Cloud is 
 
 We also offer our executors technology out-of-the-box on Cloud. Executors are dedicated compute instances outside of the main Sourcegraph service that provide extra compute capacity for specific jobs. Executors are provided by default for every Sourcegraph Cloud instance, so you get access to our latest executor-based features without any configuration.
 
-Executors let you run (server-side Batch Changes)[https://docs.sourcegraph.com/batch_changes/explanations/server_side], so you can make broad changes across all your repositories all at once. Batch Changes can be used to fix security vulnerabilities or update old code, and on Cloud, anyone can run large-scale changes without extra configuration or local environment setup. 
+Executors let you run [server-side Batch Changes](https://docs.sourcegraph.com/batch_changes/explanations/server_side), so you can make broad changes across all your repositories all at once. Batch Changes can be used to fix security vulnerabilities or update old code, and on Cloud, anyone can run large-scale changes without extra configuration or local environment setup. 
 
-Executors also power auto-indexing for code navigation, which lets you index your code continuously so that you always have compiler-accurate, (precise code navigation for your repositories)[https://about.sourcegraph.com/blog/announcing-auto-indexing]. With auto-indexing, anyone on your team can enable precise code navigation for their own repositories, making it more accessible than ever.
+Executors also power auto-indexing for code navigation, which lets you index your code continuously so that you always have compiler-accurate, [precise code navigation for your repositories](https://about.sourcegraph.com/blog/announcing-auto-indexing). With auto-indexing, anyone on your team can enable precise code navigation for their own repositories, making it more accessible than ever.
 
 On Cloud, executors require no extra configuration and no infrastructure provisioning. 
 
 ## How to get started with Sourcegraph Cloud
 
-Sourcegraph Cloud is the best way to get started with Sourcegraph. If you’d like to try out Sourcegraph’s code intelligence platform for your team, you can (sign up for a trial here)[https://www.signup.sourcegraph.com/].
+Sourcegraph Cloud is the best way to get started with Sourcegraph. If you’d like to try out Sourcegraph’s code intelligence platform for your team, you can [sign up for a trial here](https://www.signup.sourcegraph.com/).
