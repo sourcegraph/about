@@ -21,7 +21,7 @@ Code search is helpful in tackling complexity, but it's not enough. Code search 
 
 This is what we call a code intelligence platform, and compared to code search, it's more helpful, more times per day. **A code intelligence platform helps devs learn and understand information about their code so they can operate more effectively, with a deeper understanding of their codebase and how it works.** 
 
-A code intelligence platform should persist data beyond the code itself and make that data accessible. Here are some examples:
+A code intelligence platform should persist data beyond the code itself and make that data accessible. Here are some examples of what we see the platform doing in the future:
 
 - Trying to figure out the best way to call a function? Code search could show you a semi-exhaustive list of call sites. Code intelligence is also being able to see how the code owners of that function themselves have recently been calling that function.
 - Need to debug an issue in code? Code search could help you navigate within the same project to understand it. Code intelligence is also being able to see what changed and why, and trace calls across projects and dependencies/dependents.
