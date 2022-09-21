@@ -1,13 +1,9 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
-import classNames from 'classnames'
 import Link from 'next/link'
 
 import { ContentSection, CustomerLogos, Video } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
-
-import meshLeft from './assets/hero/mesh-left.png'
-import meshRight from './assets/hero/mesh-right.png'
 
 const Hero: FunctionComponent = () => {
     const headlines: string[] = ['Understand and search', 'Fix vulnerabilities and issues', 'Automate key workflows']
