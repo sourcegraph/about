@@ -10,9 +10,9 @@ socialImage:
 changelogItems:
 ---
 
-Sourcegraph 4.0, the latest version of our code intelligence platform, is now available. It includes more than a dozen new features and enhancements to help you spend more time in flow and make code intelligence more useful, more often for every dev. 
+Sourcegraph 4.0, the latest version of our code intelligence platform, is now available. Our code intelligence platform includes a dozen new features to grok code, spend more time in flow, and execute big decisive refactors across your codebase.
 
-Our code intelligence platform TODO based on the lastest from the code intelligence blog. 
+A code intelligence platform indexes and understands all of your organization's code, no matter where it's stored or what language it's in. With Sourcegraph, devs and engineering leaders have a complete understanding of their codebase, so they can learn about code and opperate more effeciently. 
 
 Read on to discover everything that shipped in Sourcegraph 4.0.  
 
