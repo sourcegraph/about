@@ -99,7 +99,7 @@ This update *does not* impact our IDE extensions, which will continue to allow y
 <a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
 
 #### Quickly access answers within your codebase with a revamped reference panel 
-Your code navigation experience just got better with a new version of the reference panel. Updates include a new preview panel, the conslidation of definitions and references in the same tab, and allows for easier navigation through filters.
+Your code navigation experience just got better with a refreshed version of the reference panel. Stay within your workflow with a new preview panel that helps you navigate references without having to leave the file. The conslidation of definitions, references, and implementations in the same tab reduces the numbers of clicks needed to get pertinent information. You can find the references you're looking for much faster with new filters instead of having to scroll through the page, which is particularly challenging for navigating symbols with a large number of results.
 
 <Video 
   source={{
