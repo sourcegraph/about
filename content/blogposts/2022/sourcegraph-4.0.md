@@ -57,7 +57,7 @@ Search results are now front and center with the improved interface. The search 
 
 Major performance improvements make rendering search results, files and blobs, and repository pages faster than ever.
 
-![UI Improvements](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Search%20UI%20Improvements.png "UI Improvements")
+![UI Improvements](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/New-Search-UI.png) "UI Improvements")
 
 
 <a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
