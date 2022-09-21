@@ -101,12 +101,21 @@ This update *does not* impact our IDE extensions, which will continue to allow y
 #### Quickly access answers within your codebase with a revamped reference panel 
 Your code navigation experience just got better with a new version of the reference panel. Updates include a new preview panel, the conslidation of definitions and references in the same tab, and allows for easier navigation through filters.
 
-![Reference panel revamp](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Reference%20Panel%20Image.png "Refernce panel revamp")
+<Video 
+  source={{
+    webm: 'blog/release-post/4.0/Reference%20panel',
+    mp4: 'blog/release-post/4.0/Reference%20panel'
+  }}
+  loop={true}
+  title="Reference panel refresh"
+  caption="Refreshed of the reference panel"
+
 
  <a href="https://docs.sourcegraph.com/code_navigation/explanations/features#find-references" className="tw-not-italic tw-flex tw-items-center">
       <p className="tw-m-0 tw-mr-2">Docs</p>
       <OpenInNewIcon className="tw-inline" size={18} />
   </a>
+
 
 
 ### 🏗️ High-leverage ways to improve your entire codebase
@@ -124,8 +133,8 @@ This feature requires admins to set up executors (much like CI agents), which So
 
 <Video 
   source={{
-    webm: 'blog/release-post/4.0/Batch_Changes_Side_by_Side',
-    mp4: 'blog/release-post/4.0/Batch_Changes_Side_by_Side'
+    webm: 'blog/release-post/4.0/Server%20Side%20Batch%20Changes%20',
+    mp4: 'blog/release-post/4.0/Server%20Side%20Batch%20Changes%20'
   }}
   loop={true}
   title="Server-side Batch Changes"
@@ -173,8 +182,8 @@ Sourcegraph 4.0 supports multi-version upgrades so you can upgrade to 4.0 direct
 
 <Video 
   source={{
-    webm: 'blog/release-post/4.0/Multi-version%20Upgrades',
-    mp4: 'blog/release-post/4.0/Multi-version%20Upgrades'
+    webm: 'blog/release-post/4.0/Multi-version%20upgrades%20final',
+    mp4: 'blog/release-post/4.0/Multi-version%20upgrades%20final'
   }}
   loop={true}
   title="Multi-version upgrades"
