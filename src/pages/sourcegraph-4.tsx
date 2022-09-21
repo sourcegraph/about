@@ -25,7 +25,7 @@ const Sourcegraph4: FunctionComponent = () => (
         meta={{
             title: 'Sourcegraph - Sourcegraph 4.0',
             description: 'Introducing Sourcegraph 4.0, the code intelligence platform for the modern development team.',
-            image: 'https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/meta/sourcegraph-4.png',
+            image: 'https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/meta/sourcegraph-4-post-launch.png',
         }}
         heroAndHeaderClassName="sg-bg-gradient-starship-large"
         className="navbar-dark"
