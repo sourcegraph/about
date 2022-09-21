@@ -134,19 +134,27 @@ Change the <b>color</b> of the Badge by setting its `color` property to one of t
 ```
 
 <div className="tw-mt-sm">
-  <Badge text="Search code" color="cerise" size="small" onClick={() => window.open('https://sourcegraph.com/', '_blank', 'noopener')} />
+  <a href="https://sourcegraph.com/" target="_blank" rel="noopener">
+    <Badge text="Search code" color="cerise" size="small" />
+  </a>
 </div>
-To add a <b>link</b> to your badge, add a value to the `onClick` property as seen below:
+To add a <b>link</b> to your badge, wrap the badge with an anchor tag as seen below:
 ```javascript
-<Badge text="Search code" color="cerise" size="small" onClick={() => window.open('https://sourcegraph.com/', '_blank', 'noopener')} />
+<a href="https://sourcegraph.com/" target="_blank" rel="noopener">
+  <Badge text="Search code" color="cerise" size="small" />
+</a>
 ```
 
 <div className="tw-mt-sm">
-  <Badge text="Code Insights" color="green" size="small" onClick={() => window.open("/code-insights", "_self")} />
+  <a href="/code-insights">
+    <Badge text="Code Insights" color="green" size="small" />
+  </a>
 </div>
 If the link is to an internal page on about.sourcegraph.com, we don't want to open the link in a new tab. Add the following to the markdown adjusted to your badge values:
 ```javascript
-<Badge text="Code Insights" color="green" size="small" onClick={() => window.open("/code-insights", "_self")} />
+<a href="/code-insights">
+  <Badge text="Code Insights" color="green" size="small" />
+</a>
 ```
 
 <div className="tw-mt-sm">
