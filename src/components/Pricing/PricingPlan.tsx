@@ -57,16 +57,6 @@ export const PricingPlan: FunctionComponent<Props> = ({
                     </ul>
                 </div>
             ))}
-            {/* {FEATURE_ORDER.map(feature => (
-                <div key={SPOTLIGHT_FEATURE_INFO[feature].label}>
-                    <PricingPlanFeature
-                        info={SPOTLIGHT_FEATURE_INFO[feature]}
-                        value={features[feature]}
-                        tag="li"
-                        className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-item"
-                    />
-                </div>
-            ))} */}
         </div>
     </div>
 )
