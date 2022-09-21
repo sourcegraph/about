@@ -26,30 +26,17 @@ const Hero: FunctionComponent = () => {
     })
 
     return (
-        <ContentSection background="white" parentClassName="tw-relative">
-            {[meshLeft, meshRight].map((image, index) => (
-                <div
-                    key={image.src}
-                    className={classNames('tw-hidden lg:tw-block tw-absolute tw-top-0', {
-                        ['tw-left-0']: index === 0,
-                        ['tw-right-0']: index === 1,
-                    })}
-                >
-                    <img src={image.src} alt="" draggable={false} className="w-100 h-500" />
-                    <div className="tw-absolute tw-bottom-0 tw-left-0 tw-w-full tw-h-[80px] tw-bg-gradient-to-b tw-from-transparent tw-to-white" />
-                </div>
-            ))}
-
-            <div className="tw-mx-auto tw-pt-md md:tw-pt-5xl tw-text-center max-w-750">
+        <div className="tw-max-w-screen-xl tw-mx-auto tw-bg-white">
+            <div className="tw-mx-auto tw-pt-md md:tw-pt-5xl tw-text-center">
                 <h1 className="tw-text-4xl tw-leading-10 md:tw-text-6xl lg:tw-text-[3.75rem] lg:tw-leading-[1]">
                     <span className="mb-2 tw-text-transparent tw-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">
                         {headline}
                     </span>{' '}
                     across your entire codebase
                 </h1>
-                <p className="my-5 tw-mx-auto max-w-700">
+                <h5 className="my-5 tw-mx-auto tw-max-w-4xl tw-font-normal">
                     Address security risks, onboard to a new codebase, identify the root cause of  incidents, promote code reuse,  improve code health, and accelerate engineering velocity with Sourcegraph.
-                </p>
+                </h5>
 
                 <div className="tw-mx-auto max-w-350 tw-flex-col sm:tw-flex-row sm:tw-flex tw-items-center">
                     <div className="mb-3 col-sm-6 sm:tw-px-0 mb-sm-0 mr-sm-3">
@@ -81,7 +68,7 @@ const Hero: FunctionComponent = () => {
                 </div>
             </div>
 
-            <ContentSection slimWidth={true} parentClassName="tw-mt-5xl">
+            <ContentSection slimWidth={true} parentClassName="tw-mt-xl">
                 <Video
                     source={{
                         mp4: 'batch-changes/how-it-works',
@@ -93,7 +80,7 @@ const Hero: FunctionComponent = () => {
             </ContentSection>
 
             <CustomerLogos />
-        </ContentSection>
+        </div>
     )
 }
 

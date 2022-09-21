@@ -13,17 +13,16 @@ const Home: FunctionComponent = () => (
                 'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Sourcegraph.',
         }}
         heroAndHeaderClassName="bg-white"
+        className="bg-white"
     >
         <Banner />
 
-        {/* TODO: New vid & purple dot bg */}
         <Hero />
 
         <ContentSection background="white">
             <CoreFeatures />
         </ContentSection>
 
-        {/* TODO: Modify below */}
         <IntegrationsSection />
 
         <CtaSection
