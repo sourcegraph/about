@@ -1,16 +1,13 @@
 ---
 title: "From code search toward a code intelligence platform"
 publishDate: 
-description: TODO
+description: Finding things in code is good, but learning things about code is great. Sourcegraph's code intelligence platform is built to help.
 tags: [blog]
 slug: "code-search-to-code-intelligence"
 published: false
 heroImage: 
 socialImage: 
-changelogItems:
 ---
-
-> NOTE: This post is very WIP. To be edited and tightened up a lot.
 
 No matter how good your other dev tools, coding is still complex. Even if you've configured your editor just right, sped up your test suite, set up continuous deployment, added observability, etc., coding is still complex. Higher-level languages, libraries, frameworks, cloud providers, etc., that encapsulate complexity just let you spend your complexity budget elsewhere. The overall complexity of code has increased, not declined, over time, and there's no sign of that trend changing.
 
