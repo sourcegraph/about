@@ -39,7 +39,7 @@ You can choose to group your search results by location (repo or file), author, 
   }}
   loop={true}
   title="High-level aggregations"
-  caption="High-level aggregations of search results"
+  caption="The power of Code Insights is now within the search UI to surface high-level information about your code"
 />
 
   <a href="https://docs.sourcegraph.com/code_insights/explanations/search_results_aggregations" className="tw-not-italic tw-flex tw-items-center">
@@ -69,12 +69,12 @@ Auto-indexing allows you to set up precise code navigation for any chosen reposi
 
 <Video 
   source={{
-    webm: 'blog/release-post/4.0/ruby-precise',
-    mp4: 'blog/release-post/4.0/ruby-precise'
+    webm: 'blog/release-post/4.0/Auto-Indexing%20and%20Code%20Navigation',
+    mp4: 'blog/release-post/4.0/Auto-Indexing%20and%20Code%20Navigation'
   }}
   loop={true}
   title="Ruby precise code navigation"
-  caption="Precise code navigation with Ruby"
+  caption="Auto-indexing is now supported for 9 languages and allows you to set up precise code navigation, automatically"
 />
 
 <a href="https://docs.sourcegraph.com/code_navigation/references/indexers" className="tw-not-italic tw-flex tw-items-center">
@@ -108,7 +108,7 @@ Your code navigation experience just got better with a refreshed version of the 
   }}
   loop={true}
   title="Reference panel refresh"
-  caption="Refreshed reference panel"
+  caption="Stay within your workflow and quickly access references with the revamped reference panel"
 />
 
  <a href="https://docs.sourcegraph.com/code_navigation/explanations/features#find-references" className="tw-not-italic tw-flex tw-items-center">
@@ -123,7 +123,7 @@ Your code navigation experience just got better with a refreshed version of the 
 <a href="/batch-changes"><Badge text="Batch Changes" color="blue" size="small" /></a>
 
 #### Make changes across all of your codebase at enterprise scale with server-side Batch Changes (beta)
-Previously, you had to run src-cli locally to create batch changes, which could take an impractical amount of time or be brittle for large or resource-intensive batch changes. Now, with servier side Batch Changes, large-scale changes can be run across thousands of repositories with a better development experience. By running Batch Changes server-side you can:
+Previously, you had to run src-cli locally to create batch changes, which could take an impractical amount of time or be brittle for large or resource-intensive batch changes. Now, with server side Batch Changes, large-scale changes can be run across thousands of repositories with a better development experience. By running Batch Changes server-side you can:
 
 - Run large-scale or resource-intensive batch changes without clogging your local machine
 - Run large batch changes quickly by distributing them across an autoscaled pool of compute instances
@@ -138,7 +138,7 @@ This feature requires admins to set up executors (much like CI agents), which So
   }}
   loop={true}
   title="Server-side Batch Changes"
-  caption="Side by side comparison of deploying Batch Changes locally vs. server-side"
+  caption="Large-scale changes can be run across thousands of repositories with server-side Batch Changes"
 />
 
  <a href="https://docs.sourcegraph.com/batch_changes/explanations/server_side" className="tw-not-italic tw-flex tw-items-center">
@@ -187,7 +187,7 @@ Sourcegraph 4.0 supports multi-version upgrades so you can upgrade to 4.0 direct
   }}
   loop={true}
   title="Multi-version upgrades"
-  caption="Demo of multi-version upgrades"
+  caption="Upgrade to 4.0 directly from version 3.20 or higher with multi-version upgrades"
 />
 
 <a href="https://docs.sourcegraph.com/admin/updates#multi-version-upgrades" className="tw-not-italic tw-flex tw-items-center">
