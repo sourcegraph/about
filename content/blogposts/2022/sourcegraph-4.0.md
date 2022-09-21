@@ -86,11 +86,11 @@ Auto-indexing allows you to set up precise code navigation for any chosen reposi
 <a href="https://docs.sourcegraph.com/integration"><Badge text="Extensions" color="vermillion" size="small" /></a>
 
 #### Your favorite extensions are now available by default 
-we’re investing in a new model for integrations that supports deeper integrations with our code intelligence platform and makes it easier to surface code context during the ideal moments in your workflow. Top used extensions, including code navigation, git-extras, open-in-editor, and search-exports, are now part of the core functionality. 
+We’re investing in a new model for integrations that supports deeper integrations with our code intelligence platform and makes it easier to surface code context during the ideal moments in your workflow. Top used extensions, including code navigation, git-extras, open-in-editor, and search-exports, are now part of the core functionality. 
 
 By default, you won't be able to access the extensions registry to use or enable extensions, and you will no longer be able to create extensions on a private registry. Note: if you still need access to extensions or create extensions on a private registry, you can enable a feature flag to do so until early 2023.
 
-This update *does not* impact our IDE extensions, which will continue to allow you to search and navigate across all of your repositories without ever leaving your IDE or checking them out locally
+This update *does not* impact our IDE extensions, which will continue to allow you to search and navigate across all of your repositories without ever leaving your IDE or checking them out locally.
 
 
 ![Git Blame](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Blame.png "Git Blame")
@@ -108,7 +108,7 @@ Your code navigation experience just got better with a new version of the refere
   }}
   loop={true}
   title="Reference panel refresh"
-  caption="Refreshed of the reference panel"
+  caption="Refreshed reference panel"
 />
 
  <a href="https://docs.sourcegraph.com/code_navigation/explanations/features#find-references" className="tw-not-italic tw-flex tw-items-center">
