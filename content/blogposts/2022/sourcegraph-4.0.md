@@ -69,12 +69,12 @@ Auto-indexing allows you to set up precise code navigation for any chosen reposi
 
 <Video 
   source={{
-    webm: 'blog/release-post/4.0/ruby-precise',
-    mp4: 'blog/release-post/4.0/ruby-precise'
+    webm: 'blog/release-post/4.0/Auto-Indexing%20and%20Code%20Navigation',
+    mp4: 'blog/release-post/4.0/Auto-Indexing%20and%20Code%20Navigation'
   }}
   loop={true}
-  title="Ruby precise code navigation"
-  caption="Precise code navigation with Ruby"
+  title="Auto-indexing"
+  caption="Precise code navigation and auto-indexing"
 />
 
 <a href="https://docs.sourcegraph.com/code_navigation/references/indexers" className="tw-not-italic tw-flex tw-items-center">
