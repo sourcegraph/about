@@ -51,7 +51,7 @@ You can choose to group your search results by location (repo or file), author, 
 <a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
 
 #### A faster, simpler search experience 
-We streamlined and simplified the search user interface to make the platform more intuitive. The search homepage now includes contextual tips and recommendations using real data from your instance, including repository names, file names, and authors. This information makes it easier and faster than ever run a successful search query. 
+We streamlined and simplified the search user interface to make the platform more intuitive. The search homepage now has contextual tips and recommendations using real data from your instance, including repository names, file names, and authors. This information makes it easier and faster than ever run a successful search query. 
 
 Search results are now front and center with the improved interface. The search sidebar has moved to the right side of the screen, and we eliminated several non-essential elements to ensure the information you need is obvious to access. Filters make it effortless for you to answer questions about your code, and the sidebar can be collapsed altogether to reduce noise. 
 
@@ -65,7 +65,7 @@ Major performance improvements make rendering search results, files and blobs, a
 #### Configure precise code navigation for 9 languages in a matter of minutes with auto-indexing
 Code navigation allows you to quickly jump to symbol definitions, find references, dependencies, and more, so you can spend more time shipping code. Precise code navigation is the most powerful version of code navigation and it works cross-repository. 
 
-Auto-indexing allows you to set up precise code navigation for any chosen repositories with the click of a button, and it automatically keeps your repositories indexed and your [code graph data](https://docs.sourcegraph.com/code_navigation/explanations/uploads) up-to-date for accurate code navigation. Auto-indexing is now supported for 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, JavaScript, and with the release of 4.0, it's turned on by default for our Cloud customers.
+Auto-indexing allows you to set up precise code navigation for any chosen repositories with the click of a button, and it automatically keeps your repositories indexed and your [code graph data](https://docs.sourcegraph.com/code_navigation/explanations/uploads) up-to-date for accurate code navigation. With the release of 4.0, auto-indexing is now supported for 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, JavaScript, and it's turned on by default for our Cloud customers.
 
 <Video 
   source={{
