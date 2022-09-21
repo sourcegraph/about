@@ -60,8 +60,8 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
                 description="You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your code stays local and secure)."
                 slimWidth={true}
                 cta1={{
-                    text: 'Get free trial',
-                    link: 'https://signup.sourcegraph.com/',
+                    text: 'Try Sourcegraph now',
+                    link: '/get-started/self-hosted',
                     ctaStyle: 'primaryButton',
                 }}
                 cta2={{
