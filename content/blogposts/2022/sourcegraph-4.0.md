@@ -65,7 +65,7 @@ Major performance improvements make rendering search results, files and blobs, a
 #### Configure precise code navigation for 9 languages in a matter of minutes with auto-indexing
 Code navigation allows you to quickly jump to symbol definitions, find references, dependencies, and more, so you can spend more time shipping code. Precise code navigation is the most powerful version of code navigation and it works cross-repository. 
 
-Auto-indexing allows you to set up precise code navigation for any chosen repositories with the click of a button, and it automatically keeps your repositories indexed and your code graph data up-to-date for accurate code navigation. Auto-indexing is now supported for 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, JavaScript, and with the release of 4.0, it's turned on by default for our Cloud customers.
+Auto-indexing allows you to set up precise code navigation for any chosen repositories with the click of a button, and it automatically keeps your repositories indexed and your [code graph data](https://docs.sourcegraph.com/code_navigation/explanations/uploads) up-to-date for accurate code navigation. Auto-indexing is now supported for 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, JavaScript, and with the release of 4.0, it's turned on by default for our Cloud customers.
 
 <Video 
   source={{
@@ -237,7 +237,7 @@ Admins can configure the date range selector and view the adoption of a feature 
 #### Quickly see the status on your repository and permissions syncing
 With Sourcegraph 4.0, we have introduced many quality of life improvements to help admins understand the current state of repository and permissions syncing. These improvements make it easier for admins to understand the current state of repositories synced with Sourcegraph as well as understand syncing errors when they arise. 
 
-![Repository Status](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Repository%20Status%20Image.png "Repository Status")
+![Repository Status](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Repositories.png "Repository Status")
 
 <a href="https://docs.sourcegraph.com/admin/external_service" className="tw-not-italic tw-flex tw-items-center">
       <p className="tw-m-0 tw-mr-2">Docs</p>
