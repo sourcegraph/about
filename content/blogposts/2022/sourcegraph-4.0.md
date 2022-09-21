@@ -169,7 +169,7 @@ Sourcegraph continues our committment to the security of your most valuable IP â
 <a href="https://docs.sourcegraph.com/admin/updates#multi-version-upgrades"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Save time upgrading to Sourcegraph 4.0 with multi-version upgrades
-Multi-version upgrades help to reduce the burden and time required to upgrade to the latest version of Sourcegraph. Customers will now be able to seamlessly upgrade from any 3.20+ version to Sourcegraph 4.0 in just a few simple steps. With faster upgrades, customers can quickly start using the new features and enhancements that are released every month. 
+Sourcegraph 4.0 supports multi-version upgrades so you can upgrade to 4.0 directly from version 3.20 or higher. It eliminates the number of steps and the amount of time it takes to get access to new features and enhancements released each month. 
 
 <Video 
   source={{
