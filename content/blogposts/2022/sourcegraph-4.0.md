@@ -143,7 +143,7 @@ This feature requires admins to set up executors (much like CI agents), which So
 
 <a href="https://docs.sourcegraph.com/cloud"><Badge text="Admin" color="violet" size="small" /></a>
 
-#### Get started with Sourcegraph faster than ever
+#### Scale confidently with a dedicate and secure instance of Sourcegraph Cloud
 After almost a decade of developing self-hosted Sourcegraph, we’ve gained the trust of some of the most sophisticated companies and development teams in the world, allowing us to work with their most sensitive IP: their code. Today—after years of building trust and engineering rigor—we are excited to move confidently to the Cloud with this highly secure and scalable solution.
 
 Sourcegraph Cloud now offers dedicated, single-tenant instances of Sourcegraph, making it easier than ever for new teams to get started. You can read more in our announcement blog here[/blog/enterprise-cloud].
