@@ -194,10 +194,12 @@ Our new in-product analytics help admins to understand user engagement, measure 
 
 These analytics work across all of our products and provides ROI-based metrics such as:
 
-- How many searches developers have run in Sourcegraph, and how many hours of development time have been saved as a result.
+- The number of searches developers have run in Sourcegraph, and how many hours of development time have been saved as a result.
 - How many code insights have been created, viewed, and interacted with.
-- How many changesets have been created and merged via batch changes, and how much time as been saved as a result.
+- The number of changesets that have been created and merged via batch changes, and how much time has been saved as a result.
 - How frequently code navigation has been used by developers to more quickly understand code.
+- How often IDE and Browser extensions are used across your organization, and how much time has been saved as a result.
+- Measure precise code navigation coverage and access precise graph data configured for all of your repositories.
 
 Admins can configure the date range selector and view the adoption of a feature over time by both volume and the number of users. The value calculators use data derived from the event logs and are designed to allow admins to adjust to conditions in their environment by editing the default time-saved values. 
 
@@ -208,17 +210,6 @@ Admins can configure the date range selector and view the adoption of a feature 
       <OpenInNewIcon className="tw-inline" size={18} />
   </a>
 
-<a href="https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
-
-#### Uncover developer time saved using Browser and IDE extensions 
-Admins can now understand the adoption and amount of time saved from using IDE and Browser extensions across your organization. Additionally, to make it faster and easier to roll out our VS Code extension organization wide, we've created an example Batch Change that adds the extension to your repository’s recommended extensions. Once added, users will be recommended the Sourcegraph extension when opening the repository if they don't have it installed already. We’ve also updated our instructions on how to automatically install our Browser extensions for users in your Google Workspace organization. 
-
-![Browser and IDE extensions analytics](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Browser.png "Browser and IDE extensions analytics")
-
-<a href="https://docs.sourcegraph.com/admin/analytics" className="tw-not-italic tw-flex tw-items-center">
-      <p className="tw-m-0 tw-mr-2">Docs</p>
-      <OpenInNewIcon className="tw-inline" size={18} />
-  </a>
 
 <a href="https://docs.sourcegraph.com/admin/observability/opentelemetry"><Badge text="Admin" color="violet" size="small" /></a>
 
@@ -246,14 +237,3 @@ With Sourcegraph 4.0, we have introduced many quality of life improvements to he
 
 
 
-<a href="https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
-
-#### Measure precise code navigation coverage with an enhanced analytics dashboard
-Get a better understanding of precise navigation coverage and access precise code graph data configured for all of your repositories with the improved code navigation dashboard.
-
-![Precise code navigation analytics](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Precise%20Code%20Navigation%20Analytics.png "Precise code naviagion anlaytics")
-
-<a href="https://docs.sourcegraph.com/admin/analytics" className="tw-not-italic tw-flex tw-items-center">
-      <p className="tw-m-0 tw-mr-2">Docs</p>
-      <OpenInNewIcon className="tw-inline" size={18} />
-  </a>
