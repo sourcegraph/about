@@ -40,30 +40,6 @@
         }
     }
 
-    &__help {
-        &-item {
-            margin: 0 calc(-1 *#{map-get($spacers, 2)});
-
-            a {
-                color: $secondary;
-                padding: map-get($spacers, 1) map-get($spacers, 2);
-
-                display: flex;
-                align-items: center;
-                svg {
-                    margin-left: map-get($spacers, 1);
-                    font-size: 0.8 * $font-size-sm;
-                }
-            }
-
-            &:not(:last-child) {
-                a {
-                    margin-right: map-get($spacers, 4);
-                }
-            }
-        }
-    }
-
     &__body {
         > p:last-child {
             margin-bottom: 0;
