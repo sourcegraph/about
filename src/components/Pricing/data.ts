@@ -355,7 +355,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
 
     // Code host integrations
     cloudHosts: {
-        label: 'Cloud code hosts',
+        label: 'Unlimited standard Cloud code hosts',
         description: 'Integrate with GitHub.com, GitLab.com, and Bitbucket Cloud.',
     },
     unlimitedCodeHosts: {
@@ -474,7 +474,7 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     ...DEPLOYMENT_FEATURE_INFO,
     airGappedDeploy: {
         label: 'Air-gapped deployment',
-        description: 'Deploy Sourcegraph in an air-gapped environment.',
+        description: 'Deploy Sourcegraph in an air-gapped environment on your own infrastructure.',
     },
     deploymentMonitoring: {
         label: 'Self-hosted deployment monitoring',
