@@ -190,7 +190,16 @@ Sourcegraph 4.0 supports multi-version upgrades so you can upgrade to 4.0 direct
 <a href="https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### View usage and measure the value of our platform with new and enhanced in-product analytics
-Our new analytics, introduced with version 3.42, make it easier for admins to understand user engagement, measure efficiency in terms of time saved, and help calculate the value of utilizing Sourcegraph and its features. In-product analytics now include ROI-based metrics such as projected value and dev-time-saved for all Sourcegraph features, and individual user usage. Admins can access the analytics, configure the date range from one week to three months, and export the details. 
+Our new in-product analytics help admins to understand user engagement, measure efficiency in terms of time saved, and calculate the value of Sourcegraph and its features. 
+
+These analytics work across all of our products and provides ROI-based metrics such as:
+
+- How many searches developers have run in Sourcegraph, and how many hours of development time have been saved as a result.
+- How many code insights have been created, viewed, and interacted with.
+- How many changesets have been created and merged via batch changes, and how much time as been saved as a result.
+- How frequently code navigation has been used by developers to more quickly understand code.
+
+Admins can configure the date range selector and view the adoption of a feature over time by both volume and the number of users. The value calculators use data derived from the event logs and are designed to allow admins to adjust to conditions in their environment by editing the default time-saved values. 
 
 ![In-product anlaytics](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Search.png "In-product analytics")
 
