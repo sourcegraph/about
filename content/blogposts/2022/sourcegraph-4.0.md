@@ -109,7 +109,7 @@ Your code navigation experience just got better with a new version of the refere
   loop={true}
   title="Reference panel refresh"
   caption="Refreshed of the reference panel"
-
+/>
 
  <a href="https://docs.sourcegraph.com/code_navigation/explanations/features#find-references" className="tw-not-italic tw-flex tw-items-center">
       <p className="tw-m-0 tw-mr-2">Docs</p>
