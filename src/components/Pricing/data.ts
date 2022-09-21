@@ -47,7 +47,7 @@ export const BIZ_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['businessStorage', 'businessExecutors'],
     },
     { topic: '24/5 support' },
-    { topic: 'Secure and dedicated Cloud deployment' },
+    { topic: 'Secure and single-tenant Cloud deployment' },
 ]
 
 /** Enterprise spotlight feature set */
@@ -341,7 +341,7 @@ const SECURITY_FEATURE_INFO: Record<string, FeatureInfo> = {
 
 const DEPLOYMENT_FEATURE_INFO: Record<string, FeatureInfo> = {
     cloudDeployment: {
-        label: 'Secure and dedicated Cloud deployment',
+        label: 'Secure and single-tenant Cloud deployment',
         description: 'Your own dedicated, single-tenant Sourcegraph instance.',
     },
     selfDeployment: {

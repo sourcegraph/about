@@ -157,7 +157,7 @@ const PricingPage: FunctionComponent = () => {
                     <PricingPlan
                         name="Business"
                         price="$99 per active user/month"
-                        description="Full platform access for teams and orgs, all on a dedicated Cloud instance."
+                        description="Full platform access for teams and orgs, all on a single-tenant Cloud instance."
                         features={BIZ_FEATURES_OVERVIEW}
                         isEnterprise={false}
                         buttons={<BusinessCTA btnOnMobile={true} />}
