@@ -28,11 +28,11 @@ export const CaseStudy: FunctionComponent = () => {
             >
                 <ContentSection background="white" slimWidth={true}>
                     <p>
-                        Lyft's mission is to improve people's lives with the world's best transportation. With over
-                        30 million riders in 2018, Lyft's business is growing, as are the numbers of engineers,
+                        Lyft's mission is to improve people's lives with the world's best transportation. With over 30
+                        million riders in 2018, Lyft's business is growing, as are the numbers of engineers,
                         repositories, and microservices. Effectively scaling and managing a large engineering
-                        organization requires an elite set of development tools and practices to preserve
-                        efficiency, while protecting, and enhancing code quality.
+                        organization requires an elite set of development tools and practices to preserve efficiency,
+                        while protecting, and enhancing code quality.
                     </p>
 
                     <Blockquote
@@ -48,10 +48,10 @@ export const CaseStudy: FunctionComponent = () => {
                     </p>
 
                     <p>
-                        Performing such significant and wide-ranging code changes meant extensive analysis was
-                        required to verify all call sites and references to the monolith had been updated. This
-                        meant transforming monolith code to consuming the new microservice API endpoints, which in
-                        many cases, meant altering an API schema.
+                        Performing such significant and wide-ranging code changes meant extensive analysis was required
+                        to verify all call sites and references to the monolith had been updated. This meant
+                        transforming monolith code to consuming the new microservice API endpoints, which in many cases,
+                        meant altering an API schema.
                     </p>
 
                     <p>
@@ -63,13 +63,13 @@ export const CaseStudy: FunctionComponent = () => {
                     <Blockquote
                         quote={
                             <>
-                                During our decomp efforts, we also spent time to refactor our APIs. Many of these
-                                APIs were undocumented and lacked a formalized contract.
+                                During our decomp efforts, we also spent time to refactor our APIs. Many of these APIs
+                                were undocumented and lacked a formalized contract.
                                 <br />
                                 <br />
-                                With the help of Sourcegraph, we were able to quickly look at all clients of an API
-                                and remove unused attributes that lived in different repositories, ultimately
-                                simplifying our APIs and speeding up developer iteration time.
+                                With the help of Sourcegraph, we were able to quickly look at all clients of an API and
+                                remove unused attributes that lived in different repositories, ultimately simplifying
+                                our APIs and speeding up developer iteration time.
                             </>
                         }
                         author={justinPhilips}
@@ -88,15 +88,14 @@ export const CaseStudy: FunctionComponent = () => {
                     <Blockquote
                         quote={
                             <>
-                                Lyft teams are constantly innovating and building new systems, necessitating
-                                decomposing and migrating off of older ones. Sourcegraph gives us the ability to
-                                search for and refactor references to deprecated services, libraries, URL patterns,
-                                and more across our 2000+ repositories, and the confidence that we're not leaving
-                                anyone behind.
+                                Lyft teams are constantly innovating and building new systems, necessitating decomposing
+                                and migrating off of older ones. Sourcegraph gives us the ability to search for and
+                                refactor references to deprecated services, libraries, URL patterns, and more across our
+                                2000+ repositories, and the confidence that we're not leaving anyone behind.
                                 <br />
                                 <br />
-                                Sourcegraph makes it easy to survey and understand existing use cases to make sure
-                                we build the right thing.
+                                Sourcegraph makes it easy to survey and understand existing use cases to make sure we
+                                build the right thing.
                             </>
                         }
                         author="Aneesh Agrawal, Software Engineer, Lyft"
@@ -104,8 +103,8 @@ export const CaseStudy: FunctionComponent = () => {
 
                     <p className="tw-pb-md">
                         Using Sourcegraph code search, Lyft software engineers were able to verify the migration and
-                        deprecation of code from their monolith to microservices at scale, significantly reducing
-                        the risk to production stability during deployment of the new microservices.
+                        deprecation of code from their monolith to microservices at scale, significantly reducing the
+                        risk to production stability during deployment of the new microservices.
                     </p>
                 </ContentSection>
             </CaseStudyLayout>

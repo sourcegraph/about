@@ -37,7 +37,9 @@ export const ReleasePost: FunctionComponent<Props> = ({
 
             {frontmatter.changelogItems?.length ? (
                 <div>
-                    <h3 className="tw-pt-sm tw-pb-xxs m-0 card-body release-post__changelog-header">Changelog highlights</h3>
+                    <h3 className="tw-pt-sm tw-pb-xxs m-0 card-body release-post__changelog-header">
+                        Changelog highlights
+                    </h3>
 
                     <div className="tw-border-y tw-border-solid tw-border-gray-200 list-group list-group-flush">
                         {frontmatter.changelogItems?.map(({ url, category, description }) => (
