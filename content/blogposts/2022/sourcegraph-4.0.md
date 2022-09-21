@@ -16,7 +16,7 @@ A code intelligence platform indexes and understands all of your organization's 
 
 Read on to discover everything that shipped in Sourcegraph 4.0.  
 
-### 🌅 Code intelligence: more useful, more times daily for every dev
+### 🧠 Code intelligence: more useful, more times daily for every dev
 
 <a href="/code-insights"><Badge text="Code Insights" color="green" size="small" /></a>
 
@@ -173,7 +173,7 @@ Sourcegraph continues our committment to the security of your most valuable IP �
   </a>
 
 
-### 💖 Advanced admin capabilities
+### 📈 Advanced admin capabilities
 
 <a href="https://docs.sourcegraph.com/admin/updates#multi-version-upgrades"><Badge text="Admin" color="violet" size="small" /></a>
 
