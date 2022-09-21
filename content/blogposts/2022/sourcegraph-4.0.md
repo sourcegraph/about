@@ -12,7 +12,7 @@ changelogItems:
 
 Sourcegraph 4.0, the latest version of our code intelligence platform, is now available. Our code intelligence platform includes a dozen new features to grok code, spend more time in flow, and execute big decisive refactors across your codebase.
 
-A code intelligence platform indexes and understands all of your organization's code, no matter where it's stored or what language it's in. With Sourcegraph, devs and engineering leaders have a complete understanding of their codebase, so they can learn about code and opperate more effeciently. 
+A code intelligence platform indexes and understands all of your organization's code, no matter where it's stored or what language it's in. With Sourcegraph, devs and engineering leaders have a complete understanding of their codebase, so they can learn about code and operate more effeciently. 
 
 Read on to discover everything that shipped in Sourcegraph 4.0.  
 
@@ -51,7 +51,7 @@ You can choose to group your search results by location (repo or file), author, 
 <a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
 
 #### A faster, simpler search experience 
-We streamlined and simplified the search user interface to make the platform more intuitive. The search homepage now has contextual tips and recommendations using real data from your instance, including repository names, file names, and authors. This information makes it easier and faster than ever run a successful search query. 
+We streamlined and simplified the search user interface to make the platform more intuitive. The search homepage now has contextual tips and recommendations using real data from your instance, including repository names, file names, and authors. This information makes it easier and faster than ever to run a successful search query. 
 
 Search results are now front and center with the improved interface. The search sidebar has moved to the right side of the screen, and we eliminated several non-essential elements to ensure the information you need is obvious to access. Filters make it effortless for you to answer questions about your code, and the sidebar can be collapsed altogether to reduce noise. 
 
@@ -69,12 +69,12 @@ Auto-indexing allows you to set up precise code navigation for any chosen reposi
 
 <Video 
   source={{
-    webm: 'blog/release-post/4.0/Auto-Indexing%20and%20Code%20Navigation',
-    mp4: 'blog/release-post/4.0/Auto-Indexing%20and%20Code%20Navigation'
+    webm: 'blog/release-post/4.0/ruby-precise',
+    mp4: 'blog/release-post/4.0/ruby-precise'
   }}
   loop={true}
-  title="Auto-indexing"
-  caption="Precise code navigation and auto-indexing"
+  title="Ruby precise code navigation"
+  caption="Precise code navigation with Ruby"
 />
 
 <a href="https://docs.sourcegraph.com/code_navigation/references/indexers" className="tw-not-italic tw-flex tw-items-center">
@@ -99,7 +99,7 @@ This update *does not* impact our IDE extensions, which will continue to allow y
 <a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
 
 #### Quickly access answers within your codebase with a revamped reference panel 
-Your code navigation experience just got better with a refreshed version of the reference panel. Stay within your workflow with a new preview panel that helps you navigate references without having to leave the file. The conslidation of definitions, references, and implementations in the same tab reduces the numbers of clicks needed to get pertinent information. You can find the references you're looking for much faster with new filters instead of having to scroll through the page, which is particularly challenging for navigating symbols with a large number of results.
+Your code navigation experience just got better with a refreshed version of the reference panel. Stay within your workflow with a new preview panel that helps you navigate references without having to leave the file. The consolidation of definitions, references, and implementations in the same tab reduces the number of clicks needed to get pertinent information. You can find the references you're looking for much faster with new filters instead of having to scroll through the page, which is particularly challenging for navigating symbols with a large number of results.
 
 <Video 
   source={{
@@ -165,7 +165,7 @@ Sourcegraph Cloud now offers dedicated, single-tenant instances of Sourcegraph, 
 <a href="https://docs.sourcegraph.com/cloud"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Assured Cloud security with SOC 2 Type II attestation 
-Sourcegraph continues our committment to the security of your most valuable IP — your code — through our security operations, compliance measures, and best practices. With our recent SOC 2 Type II attestation for Soucegraph Cloud, we met the high standards of the third-party audit, and you can be conficent that Sourcegraph controls for the secruity and availability of your sensitive data. 
+Sourcegraph continues our commitment to the security of your most valuable IP—your code—through our security operations, compliance measures, and best practices. With our recent SOC 2 Type II attestation for Soucegraph Cloud, we met the high standards of the third-party audit, and you can be confident that Sourcegraph controls for the security and availability of your sensitive data. 
 
 <a href="https://security.sourcegraph.com/" className="tw-not-italic tw-flex tw-items-center">
       <p className="tw-m-0 tw-mr-2">Docs</p>
@@ -201,7 +201,7 @@ Sourcegraph 4.0 supports multi-version upgrades so you can upgrade to 4.0 direct
 #### View usage and measure the value of our platform with new and enhanced in-product analytics
 Our new in-product analytics help admins to understand user engagement, measure efficiency in terms of time saved, and calculate the value of Sourcegraph and its features. 
 
-These analytics work across all of our products and provides ROI-based metrics such as:
+These analytics work across all of our products and provide ROI-based metrics such as:
 
 - The number of searches developers have run in Sourcegraph, and how many hours of development time have been saved as a result.
 - How many code insights have been created, viewed, and interacted with.
