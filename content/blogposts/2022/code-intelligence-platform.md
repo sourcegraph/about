@@ -34,5 +34,5 @@ Today, we're announcing Sourcegraph 4.0, the code intelligence platform for devs
 
 Sourcegraph has lots to do to build our future vision of a code intelligence platform, and we're already on our way. Our newest developments—specifically, Code Insights and Batch Changes—have solidly moved Sourcegraph _beyond_ code search, and today, we're ready to call Sourcegraph a code intelligence platform.
 
-Sourcegraph 4.0 is available on Cloud, custom deployments, and self-hosted. If you're new to Sourcegraph,  Sourcegraph Cloud (secure & dedicated instances) is the easiest way to get started. You can get a (30-day trial here)[www.signup.sourcegraph.com].
+Sourcegraph 4.0 is available on Cloud, custom deployments, and self-hosted. If you're new to Sourcegraph,  Sourcegraph Cloud (secure & dedicated instances) is the easiest way to get started. You can get a [30-day trial here](www.signup.sourcegraph.com).
 
