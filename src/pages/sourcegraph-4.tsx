@@ -6,6 +6,7 @@ import HeartOutlineIcon from 'mdi-react/HeartOutlineIcon'
 import MagnifyIcon from 'mdi-react/MagnifyIcon'
 import UpdateIcon from 'mdi-react/UpdateIcon'
 import Link from 'next/link'
+import { TwitchEmbed } from 'react-twitch-embed'
 
 import {
     ContentSection,
@@ -43,7 +44,7 @@ const Sourcegraph4: FunctionComponent = () => (
                         the livestream.
                     </h3>
 
-                    <YouTube title="Sourcegraph 4.0" id="Kk1ea2-l8Hk" />
+                    <TwitchEmbed channel="sourcegraph" width={800} className="tw-w-full" />
                 </div>
             </div>
         }
@@ -56,10 +57,10 @@ const Sourcegraph4: FunctionComponent = () => (
                     description:
                         'Since its inception, Sourcegraph has evolved from code search into a code intelligence platform. Our CEO and cofounder, Quinn Slack, shares what code intelligence means for the future of software development.',
                     type: 'Blog Post',
-                    href: '',
+                    href: '/blog/code-search-to-code-intelligence',
                     img: {
                         src: 'https://via.placeholder.com/256x156',
-                        alt: '',
+                        alt: 'Sourcegraph Code Intelligence Platform',
                     },
                 },
                 {
@@ -67,10 +68,10 @@ const Sourcegraph4: FunctionComponent = () => (
                     description:
                         'Sourcegraph 4.0 includes 12+ features and improvements. Check out the release post for an in-depth look at everything that shipped.',
                     type: 'Blog Post',
-                    href: '',
+                    href: '/blog/release/4.0',
                     img: {
                         src: 'https://via.placeholder.com/256x156',
-                        alt: '',
+                        alt: 'Sourcegraph 4.0',
                     },
                 },
                 {
@@ -78,10 +79,10 @@ const Sourcegraph4: FunctionComponent = () => (
                     description:
                         'Sourcegraph Cloud, our single-tenant Cloud solution for enterprise, is now generally available.',
                     type: 'Blog Post',
-                    href: '',
+                    href: '/blog/enterprise-cloud',
                     img: {
                         src: 'https://via.placeholder.com/256x156',
-                        alt: '',
+                        alt: 'Sourcegraph Cloud',
                     },
                 },
             ]}
@@ -163,7 +164,7 @@ const Sourcegraph4: FunctionComponent = () => (
             <div className="tw-max-w-[800px] tw-mx-auto tw-text-center">
                 <h2 className="tw-mb-3xl">
                     See the highlights from{' '}
-                    <Link href="/" passHref={true}>
+                    <Link href="/blog/release/4.0" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
                             data-button-style={buttonStyle.text}
@@ -197,6 +198,7 @@ const Sourcegraph4: FunctionComponent = () => (
             }}
             cta2={{
                 text: 'View pricing',
+                ctaStyle: 'outlineButtonLight',
                 link: '/pricing',
             }}
         />
