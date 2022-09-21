@@ -57,7 +57,7 @@ Search results are now front and center with the improved interface. The search 
 
 Major performance improvements make rendering search results, files and blobs, and repository pages faster than ever.
 
-![UI Improvements](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/New-Search-UI.png) "UI Improvements")
+![UI Improvements](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/New-Search-UI.png "UI Improvements")
 
 
 <a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
@@ -93,7 +93,7 @@ By default, you won't be able to access the extensions registry to use or enable
 This update *does not* impact our IDE extensions, which will continue to allow you to search and navigate across all of your repositories without ever leaving your IDE or checking them out locally
 
 
-![Git Blame](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/git_blame.png "Git Blame")
+![Git Blame](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Blame.png "Git Blame")
 
 
 <a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
