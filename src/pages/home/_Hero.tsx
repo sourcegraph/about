@@ -31,7 +31,8 @@ const Hero: FunctionComponent = () => {
                     across your entire codebase
                 </h1>
                 <h5 className="my-5 tw-mx-auto tw-max-w-4xl tw-font-normal">
-                    Address security risks, onboard to a new codebase, identify the root cause of  incidents, promote code reuse,  improve code health, and accelerate engineering velocity with Sourcegraph.
+                    Address security risks, onboard to a new codebase, identify the root cause of incidents, promote
+                    code reuse, improve code health, and accelerate engineering velocity with Sourcegraph.
                 </h5>
 
                 <div className="tw-mx-auto max-w-350 tw-flex-col sm:tw-flex-row sm:tw-flex tw-items-center">

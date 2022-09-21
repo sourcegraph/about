@@ -63,16 +63,7 @@ const languages: string[] = [
     'Tcl',
 ]
 
-const tools: string[] = [
-    'Chrome',
-    'Firefox',
-    'VS Code',
-    'JetBrains',
-    'Vim',
-    'Emacs',
-    'Atom',
-    'Sublime Text',
-]
+const tools: string[] = ['Chrome', 'Firefox', 'VS Code', 'JetBrains', 'Vim', 'Emacs', 'Atom', 'Sublime Text']
 
 const selfHostedOptions: string[] = [
     'Kubernetes cluster',
@@ -97,7 +88,9 @@ export const IntegrationsSection: FunctionComponent = () => (
             <div className="mb-5 col-lg-6">
                 <h4>All your repositories + 2M open source (and counting)</h4>
 
-                <ul className="lg:tw-max-w-lg tw-list-none tw-ml-0 tw-flex tw-flex-wrap tw-mb-xxs">{renderListItems(codeHosts)}</ul>
+                <ul className="lg:tw-max-w-lg tw-list-none tw-ml-0 tw-flex tw-flex-wrap tw-mb-xxs">
+                    {renderListItems(codeHosts)}
+                </ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     title="Have a repository not covered here?"
@@ -113,7 +106,9 @@ export const IntegrationsSection: FunctionComponent = () => (
             <div className="mb-5 col-lg-6">
                 <h4>All your languages</h4>
 
-                <ul className="lg:tw-max-w-xl tw-list-none tw-ml-0 tw-flex tw-flex-wrap tw-mb-xxs">{renderListItems(languages)}</ul>
+                <ul className="lg:tw-max-w-xl tw-list-none tw-ml-0 tw-flex tw-flex-wrap tw-mb-xxs">
+                    {renderListItems(languages)}
+                </ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     title="Need a different language?"
@@ -129,7 +124,9 @@ export const IntegrationsSection: FunctionComponent = () => (
             <div className="mb-5 col-lg-6">
                 <h4>Your most used tools</h4>
 
-                <ul className="lg:tw-max-w-md tw-list-none tw-ml-0 tw-flex tw-flex-wrap tw-mb-xxs">{renderListItems(tools)}</ul>
+                <ul className="lg:tw-max-w-md tw-list-none tw-ml-0 tw-flex tw-flex-wrap tw-mb-xxs">
+                    {renderListItems(tools)}
+                </ul>
                 <a
                     href="https://docs.sourcegraph.com/integration"
                     title="See all integrations or build your own"

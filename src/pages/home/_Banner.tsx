@@ -8,7 +8,12 @@ import { buttonLocation, buttonStyle } from '@data'
 const Banner: FunctionComponent = () => (
     <div className="sg-bg-gradient-starship-small tw-p-sm xl:tw-h-[80px]">
         <div className="tw-max-w-screen-xl tw-mx-auto tw-text-center tw-flex tw-flex-col lg:tw-flex-row tw-justify-center tw-items-center">
-            <img src="/sourcegraph/sourcegraph-4.0-white.svg" alt="Sourcegraph 4.0 Starship" className="tw-my-auto tw-h-[35px]" draggable={false} />
+            <img
+                src="/sourcegraph/sourcegraph-4.0-white.svg"
+                alt="Sourcegraph 4.0 Starship"
+                className="tw-my-auto tw-h-[35px]"
+                draggable={false}
+            />
             <p className="tw-text-white tw-text-lg tw-my-xs md:tw-my-0 md:tw-mx-sm md:tw-text-2xl lg:tw-mx-2xl">
                 The code intelligence platform for modern development teams
             </p>
