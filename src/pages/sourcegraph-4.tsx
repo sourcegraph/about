@@ -27,7 +27,7 @@ const Sourcegraph4: FunctionComponent = () => (
             description: 'Introducing Sourcegraph 4.0, the code intelligence platform for the modern development team.',
             image: 'https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/meta/sourcegraph-4-post-launch.png',
         }}
-        heroAndHeaderClassName="sg-bg-gradient-starship-large"
+        heroAndHeaderClassName="tw-bg-[url('/backgrounds/starship-launch-pills-large.svg')] tw-bg-no-repeat tw-bg-cover tw-bg-center"
         className="navbar-dark"
         hero={
             <div className="tw-px-sm tw-py-3xl md:tw-py-5xl">
