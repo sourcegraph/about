@@ -223,7 +223,7 @@ The feature value calculators use data derived from event logs and the default t
 <a href="https://docs.sourcegraph.com/admin/external_service"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Quickly see the status on your repository and permissions syncing
-New enhancements to the repository status page help admins better understand the current state of the repository and permissions syncing. A new header displays an up-to-date count of repositories (total, not cloned, cloned, cloning, failed to fetch/clone), notifications are more actionable, and new filters help Admins drill down into specific repositories. These improvements make it easier for admins to understand the current state of repositories synced with Sourcegraph and pinpoint syncing errors when they arise. 
+New enhancements to the repository status page help you better understand the current state of repository and permissions syncing. A new header displays an up-to-date count of repositories (total, not cloned, cloned, cloning, failed to fetch/clone), notifications are more actionable, and new filters help you drill down into specific repositories. These improvements make it easier for you to understand the current state of repositories synced with Sourcegraph and pinpoint syncing errors if they arise. 
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Repositories.png"
