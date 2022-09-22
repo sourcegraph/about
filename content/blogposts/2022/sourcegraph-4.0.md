@@ -52,7 +52,7 @@ We streamlined and simplified the search user interface to make the platform mor
 
 Search results are now front and center with the improved interface. The search sidebar has moved to the right side of the screen, and we eliminated several non-essential elements to ensure the information you need is easy to access. Filters make it effortless for you to answer questions about your code, and the sidebar can be collapsed altogether to reduce noise. 
 
-Major performance improvements make rendering search results, files and blobs, and repository pages faster than ever.
+Major performance improvements make rendering search results, files, blobs, and repository pages faster than ever.
 
 <div className="tw-mb-sm">
   <Figure
@@ -65,7 +65,7 @@ Major performance improvements make rendering search results, files and blobs, a
 <a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
 
 #### Configure precise code navigation for 9 languages in a matter of minutes with auto-indexing
-Code navigation allows you to quickly jump to symbol definitions, find references, dependencies, and more, so you can spend more time shipping code. Precise code navigation is the most powerful version of code navigation and it works cross-repository. 
+Code navigation allows you to quickly jump to symbol definitions, find references, and more, so you can understand your code and its dependencies. Precise code navigation is the most powerful version of code navigation and it works cross-repository. 
 
 Auto-indexing allows you to set up precise code navigation for any chosen repositories with the click of a button, and it automatically keeps your repositories indexed and your [code graph data](https://docs.sourcegraph.com/code_navigation/explanations/uploads) up-to-date for accurate code navigation. With the release of 4.0, auto-indexing is now supported for 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, JavaScript, and it's turned on by default for our Cloud customers.
 
@@ -123,7 +123,7 @@ Your code navigation experience just got better with a refreshed version of the 
 <a href="/batch-changes"><Badge text="Batch Changes" color="blue" size="small" /></a>
 
 #### Make changes across your codebase at enterprise scale with server-side Batch Changes (beta)
-Previously, you had to run src-cli locally to create batch changes, which could take an impractical amount of time or be brittle for large or resource-intensive batch changes. Now, with server-side Batch Changes, large-scale changes can be run across thousands of repositories with a better development experience. By running Batch Changes server-side you can:
+[Batch Changes](https://about.sourcegraph.com/batch-changes) allows you to automate code changes across your entire codebase. Previously, you had to run src-cli locally to create batch changes, which could take an impractical amount of time or be brittle for large or resource-intensive batch changes. Now, with server-side Batch Changes, large-scale changes can be run across thousands of repositories with a better development experience. By running Batch Changes server-side you can:
 
 - Run large-scale or resource-intensive batch changes without clogging your local machine
 - Run large batch changes quickly by distributing them across an autoscaled pool of compute instances
@@ -186,10 +186,9 @@ We know that upgrading Sourcegraph can be a time-intensive process, especially i
 <a href="https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Understand usage and quantify the value of using Sourcegraph with in-product analytics
-Our new in-product analytics help admins to understand user engagement, measure efficiency in terms of time saved, and calculate the value of Sourcegraph and its features. 
+In-product analytics helps admins understand user engagement, measure efficiency in terms of time saved, and calculate the value of utilizing Sourcegraph.
 
-These analytics work across all of our products and provide ROI-based metrics such as:
-
+With charts that detail usage over time and value calculators that quantify the amount of time saved as users search, create insights, run batch changes, and more, you can answer now report on:
 - The number of searches developers have run in Sourcegraph, and how many hours of development time have been saved as a result.
 - How many code insights have been created, viewed, and interacted with.
 - The number of changesets that have been created and merged via batch changes, and how much time has been saved as a result.
@@ -197,7 +196,7 @@ These analytics work across all of our products and provide ROI-based metrics su
 - How often IDE and Browser extensions are used across your organization, and how much time has been saved as a result.
 - The number of navigation events and the percentage of your repositories that allow precise code navigation
 
-Admins can select a specific date range and customize the assumpted to align with how the platform is used. 
+The feature value calculators use data derived from event logs and the default time-saved values can be customized to reflect how your team uses Sourcegraph.
 
 <div className="tw-mb-sm">
   <Figure
