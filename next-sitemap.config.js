@@ -1,8 +1,8 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-    siteUrl: 'https://about.sourcegraph.com',
-    generateRobotsTxt: true,
-    generateIndexSitemap: false,
-    outDir: 'out'
+  siteUrl: 'https://about.sourcegraph.com',
+  generateRobotsTxt: true,
+  generateIndexSitemap: false,
+  outDir: 'out',
 }

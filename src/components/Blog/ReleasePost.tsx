@@ -18,7 +18,7 @@ interface Props extends PostComponentProps {}
  * A post about a release.
  */
 export const ReleasePost: FunctionComponent<Props> = ({
-    post,
+    post: { frontmatter },
     content,
     url,
     className = '',
@@ -35,79 +35,128 @@ export const ReleasePost: FunctionComponent<Props> = ({
                 </div>
             )}
 
-            <h3 className="tw-pt-sm tw-pb-xxs m-0 card-body release-post__changelog-header">Changelog highlights</h3>
+            {frontmatter.changelogItems?.length ? (
+                <div>
+                    <h3 className="tw-pt-sm tw-pb-xxs m-0 card-body release-post__changelog-header">
+                        Changelog highlights
+                    </h3>
 
-            <div className="tw-border-y tw-border-solid tw-border-gray-200 list-group list-group-flush">
-                {post.frontmatter.changelogItems?.map(({ url, category, description }) => (
-                    <a
-                        href={url}
-                        className="release-post__item md:tw-flex list-group-item list-group-item-action"
-                        key={url}
-                        title={`${category}: ${description}`}
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        <span className="mb-2 release-post__item-category mb-md-0">
-                            <span className="release-post__item-category-badge">{category}</span>
-                        </span>
-                        <span className="release-post__item-description">{description}</span>
-                    </a>
-                ))}
-            </div>
+                    <div className="tw-border-y tw-border-solid tw-border-gray-200 list-group list-group-flush">
+                        {frontmatter.changelogItems?.map(({ url, category, description }) => (
+                            <a
+                                href={url}
+                                className="release-post__item md:tw-flex list-group-item list-group-item-action"
+                                key={url}
+                                title={`${category}: ${description}`}
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                <span className="mb-2 release-post__item-category mb-md-0">
+                                    <span className="release-post__item-category-badge">{category}</span>
+                                </span>
+                                <span className="release-post__item-description">{description}</span>
+                            </a>
+                        ))}
+                    </div>
 
-            <ul className="tw-mb-0 tw-py-4 tw-flex-wrap tw-list-none tw-flex-col md:tw-flex-row md:tw-flex">
-                <li className="release-post__help-item">
-                    <a
-                        href="https://docs.sourcegraph.com/admin/install"
-                        title="How to install"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        How to install
-                    </a>
-                </li>
-                <li className="release-post__help-item">
-                    <a
-                        href="https://docs.sourcegraph.com/admin/updates"
-                        title="How to upgrade"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        How to upgrade
-                    </a>
-                </li>
-                <li className="tw-flex-1" />
-                <li className="release-post__help-item">
-                    <a
-                        href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
-                        title="Full changelog"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Full changelog
-                    </a>
-                </li>
-            </ul>
+                    <ul className="tw-mb-0 tw-py-4 tw-flex-wrap tw-list-none tw-flex-col md:tw-flex-row md:tw-flex">
+                        <li>
+                            <a
+                                href="https://docs.sourcegraph.com/admin/install"
+                                className="tw-text-gray-400"
+                                title="How to install"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                How to install
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://docs.sourcegraph.com/admin/updates"
+                                className="tw-text-gray-400"
+                                title="How to upgrade"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                How to upgrade
+                            </a>
+                        </li>
+                        <li className="tw-flex-1" />
+                        <li>
+                            <a
+                                href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
+                                className="tw-text-gray-400"
+                                title="Full changelog"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Full changelog
+                            </a>
+                        </li>
+                    </ul>
 
-            <div className="card-body release-post__body">
-                * Please{' '}
-                <Link href="/demo" passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a
-                        title="contact Sourcegraph"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        contact Sourcegraph
-                    </a>
-                </Link>{' '}
-                with any licensing questions.
-            </div>
+                    <div className="card-body release-post__body">
+                        * Please{' '}
+                        <Link href="/demo" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="contact Sourcegraph"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                contact Sourcegraph
+                            </a>
+                        </Link>{' '}
+                        with any licensing questions.
+                    </div>
+                </div>
+            ) : (
+                <ul className="tw-border-t tw-mt-md tw-mb-0 tw-py-4 tw-flex-wrap tw-list-none tw-flex-col md:tw-flex-row md:tw-flex">
+                    <li>
+                        <a
+                            href="https://docs.sourcegraph.com/admin/install"
+                            className="tw-text-gray-400"
+                            title="How to install"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            How to install
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://docs.sourcegraph.com/admin/updates"
+                            className="tw-text-gray-400"
+                            title="How to upgrade"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            How to upgrade
+                        </a>
+                    </li>
+                    <li className="tw-flex-1" />
+                    <li>
+                        <a
+                            href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
+                            className="tw-text-gray-400"
+                            title="Full changelog"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Full changelog
+                        </a>
+                    </li>
+                </ul>
+            )}
         </>
     )
 
@@ -120,22 +169,22 @@ export const ReleasePost: FunctionComponent<Props> = ({
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="tw-block"
-                                title={post.frontmatter.title}
+                                title={frontmatter.title}
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                {post.frontmatter.title}
+                                {frontmatter.title}
                             </a>
                         </Link>
                     ) : (
-                        post.frontmatter.title
+                        frontmatter.title
                     )}
                 </h1>
 
-                {post.frontmatter.publishDate && (
-                    <time className="text-muted" dateTime={post.frontmatter.publishDate}>
-                        {formatDate(post.frontmatter.publishDate)}
+                {frontmatter.publishDate && (
+                    <time className="text-muted" dateTime={frontmatter.publishDate}>
+                        {formatDate(frontmatter.publishDate)}
                     </time>
                 )}
             </header>
