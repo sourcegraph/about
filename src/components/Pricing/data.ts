@@ -72,7 +72,7 @@ export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
         topic: '24/5 priority support',
         features: ['slaSupport', 'dedicatedManager'],
     },
-    { topic: 'Enterprise add ons' },
+    { topic: 'Add ons' },
 ]
 
 export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
@@ -474,7 +474,7 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     ...DEPLOYMENT_FEATURE_INFO,
     airGappedDeploy: {
         label: 'Air-gapped deployment',
-        description: 'Deploy Sourcegraph in an air-gapped environment on your own infrastructure.',
+        description: 'Deploy Sourcegraph in an air-gapped environment on your own infrastructure (add-on).',
     },
     deploymentMonitoring: {
         label: 'Self-hosted deployment monitoring',

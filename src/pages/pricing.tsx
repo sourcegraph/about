@@ -213,7 +213,7 @@ const PricingPage: FunctionComponent = () => {
                     {ALL_FEATURES_COMPARED_DATA.map(section => (
                         <tbody key={section.topic}>
                             <tr className="tw-bg-white" key={section.topic}>
-                                <th colSpan={100} className="tw-p-xs tw-text-start tw-border-0">
+                                <th colSpan={100} className="tw-pt-lg tw-p-xs tw-text-start tw-border-0">
                                     <h3 className="tw-text-xl md:tw-text-2xl tw-font-semibold md:tw-font-normal">
                                         {section.topic}
                                     </h3>
