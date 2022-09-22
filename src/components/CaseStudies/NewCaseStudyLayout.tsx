@@ -1,7 +1,5 @@
 import { FunctionComponent } from 'react'
 
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-
 import { ContentSection, CtaSection } from '@components'
 
 import { CaseStudyCard, CASESTUDIES } from './CaseStudyCard'

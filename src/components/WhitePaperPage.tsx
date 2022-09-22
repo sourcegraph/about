@@ -48,19 +48,6 @@ export const WhitePaperPage: FunctionComponent<Props> = ({ title, className, pdf
 
         {children}
 
-        <CtaSection
-            title="Try Sourcegraph for free today"
-            description="You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your code stays local and secure)."
-            cta1={{
-                text: 'Try Sourcegraph now',
-                link: '/get-started/self-hosted',
-                ctaStyle: 'primaryButton',
-            }}
-            cta2={{
-                text: 'Schedule a demo',
-                link: '/demo',
-                ctaStyle: 'outlineButton',
-            }}
-        />
+        <CtaSection />
     </div>
 )

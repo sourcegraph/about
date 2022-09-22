@@ -114,16 +114,6 @@ const Resources: FunctionComponent = () => {
                 background="mars"
                 title="Get started with Sourcegraph"
                 description="Want to see Sourcegraph in action? Schedule time with a Sourcegraph expert or try Sourcegraph for free."
-                cta1={{
-                    text: 'Get Started',
-                    link: '/get-started/self-hosted',
-                    ctaStyle: 'primaryButton',
-                }}
-                cta2={{
-                    text: 'Request a demo',
-                    link: '/demo',
-                    icon: <ArrowRightIcon />,
-                }}
                 centerContent={true}
             />
         </Layout>

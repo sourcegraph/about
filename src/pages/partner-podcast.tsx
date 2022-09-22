@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, CaseStudyCard, HubSpotForm, ResourceList, ContentSection } from '@components'
+import { Layout, CaseStudyCard, HubSpotForm, ResourceList, ContentSection, CtaSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const blogResourceItems = [
@@ -105,41 +105,10 @@ const PartnerPodcastPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection parentClassName="sg-bg-gradient-venus">
-            <div className="tw-max-w-screen-xl tw-mx-auto tw-text-center">
-                <h2 className="tw-pt-xxs">Want to use Sourcegraph at your company?</h2>
-                <p className="tw-pt-sm tw-pb-1 tw-mx-auto tw-max-w-[650px] tw-text-2xl">
-                    <span>
-                        <Link href="/get-started/self-hosted" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="Get started"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Get started
-                            </a>
-                        </Link>
-                    </span>{' '}
-                    for free with up to 10 teammates or{' '}
-                    <span>
-                        <Link href="/demo" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="Request a demo"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                request a demo
-                            </a>
-                        </Link>
-                    </span>{' '}
-                    to learn about our enterprise plan and to see Sourcegraph in your own environment.
-                </p>
-            </div>
-        </ContentSection>
+        <CtaSection
+            title="Want to use Sourcegraph at your company?"
+            background="venus"
+        />
 
         <ResourceList items={blogResourceItems} />
 
