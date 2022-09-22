@@ -129,7 +129,7 @@ Previously, you had to run src-cli locally to create batch changes, which could 
 - Run large batch changes quickly by distributing them across an autoscaled pool of compute instances
 - Get a better debugging experience by streaming logs directly into Sourcegraph
 
-This feature requires admins to set up executors (much like CI agents), which Sourcegraph will use to offload expensive tasks. Executors can also be used to run [code navigation auto-indexing](https://github.com/sourcegraph/about/blob/bf341aafde75450c295aaec064470017020cdcd8/content/blogposts/2022/sourcegraph-4.0.md#TODO-link-to-section-or-docs) as well. All Sourcegraph Cloud instance have one or more executors available by default. 
+This feature requires admins to set up executors (much like CI agents), which Sourcegraph will use to offload expensive tasks. Executors can also be used to run [code navigation auto-indexing](https://github.com/sourcegraph/about/blob/bf341aafde75450c295aaec064470017020cdcd8/content/blogposts/2022/sourcegraph-4.0.md#TODO-link-to-section-or-docs). All Sourcegraph Cloud instances have one or more executors available by default. 
 
 <Video 
   source={{
