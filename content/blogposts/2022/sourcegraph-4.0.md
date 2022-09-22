@@ -197,7 +197,7 @@ These analytics work across all of our products and provide ROI-based metrics su
 - How often IDE and Browser extensions are used across your organization, and how much time has been saved as a result.
 - The nubmer of navigation events and the percentage of your repositories that allow precise code navigation
 
-Admins can configure the date range selector and view the adoption of a feature over time by both volume and the number of users. The value calculators use data derived from the event logs and are designed to allow admins to adjust to conditions in their environment by editing the default time-saved values. 
+Admins can select a specific date range and customize the assumpted to align with how the platform is used. 
 
 <div className="tw-mb-sm">
   <Figure
