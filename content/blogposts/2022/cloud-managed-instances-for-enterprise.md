@@ -22,7 +22,7 @@ Today—after years of building trust and engineering rigor—we are excited to 
 
 As a developer, your code is your most valuable IP. This makes security critical for Sourcegraph in all forms.
 
-That’s why we’re offering Sourcegraph Cloud via dedicated, single-tenant instances. When you run Sourcegraph Cloud—even as a trial—you get your own instance dedicated to only **your** code. You get company-level data isolation out-of-the-box.
+That’s why we’re offering Sourcegraph Cloud via dedicated, single-tenant instances. When you run Sourcegraph Cloud, even as a trial, you get your own instance dedicated to only **your** code. You get company-level data isolation out-of-the-box.
 
 Plus, Sourcegraph has received a SOC 2 Type II report, so you can be confident that Sourcegraph controls for the security and confidentiality of your sensitive data.
 
