@@ -130,7 +130,7 @@ export const Badge: FunctionComponent<Badge> = ({
         {
             [colors[color].unchecked]: !checked || !onClick,
             [colors[color].checked]: checked,
-            [colors[color].hover]: !!onClick || !!href,
+            [colors[color].hover]: !!onClick || !!link,
             'tw-cursor-pointer tw-transition-all tw-ease-out': !!onClick,
             'tw-rounded-full': circle,
             'tw-rounded-md': !circle,
