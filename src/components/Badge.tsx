@@ -137,8 +137,8 @@ export const Badge: FunctionComponent<Badge> = ({
         }
     )
 
-    return href ? (
-        <a href={href} className={classNames('tw-no-underline', styles)} tabIndex={0}>
+    return link ? (
+        <a href={link} className={classNames('tw-no-underline', styles)} tabIndex={0}>
             {text}
             {icon && <Icon className="tw-inline tw-ml-1" size={size === 'small' ? 12 : 14} />}
         </a>
