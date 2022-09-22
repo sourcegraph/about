@@ -185,7 +185,7 @@ We know that upgrading Sourcegraph can be a time-intensive process, especially i
 <br />
 <a href="https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
 
-#### View usage and measure the value of our platform with new and enhanced in-product analytics
+#### Understand usage and quantify the value of using Sourcegraph with in-product analytics
 Our new in-product analytics help admins to understand user engagement, measure efficiency in terms of time saved, and calculate the value of Sourcegraph and its features. 
 
 These analytics work across all of our products and provide ROI-based metrics such as:
