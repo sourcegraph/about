@@ -52,7 +52,7 @@ We streamlined and simplified the search user interface to make the platform mor
 
 Search results are now front and center with the improved interface. The search sidebar has moved to the right side of the screen, and we eliminated several non-essential elements to ensure the information you need is easy to access. Filters make it effortless for you to answer questions about your code, and the sidebar can be collapsed altogether to reduce noise. 
 
-Major performance improvements make rendering search results, files, blobs, and repository pages faster than ever.
+We also made major performance improvements to make rendering search results, files, and repositories faster than ever. 
 
 <div className="tw-mb-sm">
   <Figure
