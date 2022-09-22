@@ -20,7 +20,7 @@ interface CtaSection {
     description?: string
     centerContent?: boolean
     slimWidth?: boolean
-    cta1: Cta
+    cta1?: Cta
     cta2?: Cta
 }
 
@@ -115,12 +115,20 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) =>
  */
 export const CtaSection: FunctionComponent<CtaSection> = ({
     background,
-    title = 'Get started with Sourcegraph',
-    description = 'Understand, fix, and automate changes across your entire codebase.',
+    title = 'Try Sourcegraph for free today',
+    description = 'Experience code intelligence with a free 30-day trial of Sourcegraph for you and your team. Or, get in touch with our team for a demo of what code intelligence can do for you.',
     centerContent = false,
     slimWidth,
-    cta1,
-    cta2,
+    cta1 = {
+        text: 'Get free trial',
+        ctaStyle: 'primaryButton',
+        link: 'https://signup.sourcegraph.com'
+    },
+    cta2 = {
+        text: 'Request a demo',
+        ctaStyle: 'outlineButton',
+        link: '/demo'
+    },
 }) => (
     <ContentSection background={background} slimWidth={slimWidth}>
         <div
