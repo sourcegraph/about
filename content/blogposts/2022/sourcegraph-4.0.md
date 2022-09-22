@@ -158,7 +158,7 @@ Dedicated, single-tenant Sourcegraph Cloud instances are now generally available
 <br />
 <a href="https://docs.sourcegraph.com/cloud"><Badge text="Admin" color="violet" size="small" /></a>
 
-#### Assured Cloud security with SOC 2 Type II attestation 
+#### SOC 2 Type II certification for Sourcegraph Cloud
 Sourcegraph continues our commitment to the security of your most valuable IP—your code—through our security operations, compliance measures, and best practices. With our recent SOC 2 Type II attestation for Soucegraph Cloud, we met the high standards of the third-party audit, and you can be confident that Sourcegraph controls for the security and availability of your sensitive data. 
 
 <a href="https://security.sourcegraph.com/" className="tw-not-italic tw-flex tw-items-center">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
