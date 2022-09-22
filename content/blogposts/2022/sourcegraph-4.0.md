@@ -87,7 +87,7 @@ Auto-indexing allows you to set up precise code navigation for any chosen reposi
 #### Your favorite extensions are now available by default 
 Top used extensions, including code navigation, git-extras, open-in-editor, and search-exports, are now part of the platform and no longer require you to  enable on your own. Essential code context is surfaced during the ideal moments in your workflow and knowledge about the codebase from the extensions can be found in the sidebar, when hovering over code, and after clicking on "more actions."
 
-Now that our top extensions are part of the core functionality, there will be greater support and functionality over time. With this change, you will no longer be able to access the extensions registry or create extensions on a private registry. Note: if you still need access to extensions or create extensions on a private registry, you can enable a feature flag to do so until early 2023.
+Now that our [top extensions](https://docs.sourcegraph.com/extensions) are part of the core functionality, there will be greater support and functionality over time. With this change, you will no longer be able to access the extensions registry or create extensions on a private registry. Note: if you still need access to extensions or create extensions on a private registry, you can enable a feature flag to do so until early 2023.
 
 This update *does not* impact our IDE extensions, which will continue to allow you to search and navigate across all of your repositories without ever leaving your IDE or checking them out locally.
 
@@ -102,7 +102,7 @@ This update *does not* impact our IDE extensions, which will continue to allow y
 <a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
 
 #### Find answers faster with a revamped reference panel 
-Your code navigation experience just got better with a refreshed version of the reference panel. Stay within your workflow with a new preview panel that helps you navigate references without having to leave the file. The consolidation of definitions, references, and implementations in the same tab reduces the number of clicks needed to get pertinent information. You can find the references you're looking for much faster with new filters instead of having to scroll through the page, which is particularly challenging for navigating symbols with a large number of results.
+Your code navigation experience just got better with a refreshed version of the reference panel. Stay within your workflow with a new preview panel that helps you [navigate references](https://docs.sourcegraph.com/code_navigation/explanations/features#find-references) without having to leave the file. The consolidation of definitions, references, and implementations in the same tab reduces the number of clicks needed to get pertinent information. You can find the references you're looking for much faster with new filters instead of having to scroll through the page, which is particularly challenging for navigating symbols with a large number of results.
 
 <Video 
   source={{
@@ -170,7 +170,7 @@ Check out our [Security Portal](https://security.sourcegraph.com/) to access the
 <a href="https://docs.sourcegraph.com/admin/updates#multi-version-upgrades"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Upgrade directly to Sourcegraph 4.0 from earlier versions of Sourcegraph
-We know that upgrading Sourcegraph can be a time-intensive process, especially if you fall a few versions behind. Sourcegraph 4.0 supports multi-version upgrades so you can upgrade to 4.0 directly from version 3.20 or higher.
+We know that upgrading Sourcegraph can be a time-intensive process, especially if you fall a few versions behind. Sourcegraph 4.0 supports [multi-version upgrades](https://docs.sourcegraph.com/admin/updates#multi-version-upgrade) so you can upgrade to 4.0 directly from version 3.20 or higher.
 
 <Video 
   source={{
@@ -188,7 +188,7 @@ We know that upgrading Sourcegraph can be a time-intensive process, especially i
 <a href="https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Understand usage and quantify the value of using Sourcegraph with in-product analytics
-In-product analytics helps admins understand user engagement, measure efficiency in terms of time saved, and calculate the value of utilizing Sourcegraph.
+[In-product analytics](https://docs.sourcegraph.com/admin/analytics) helps admins understand user engagement, measure efficiency in terms of time saved, and calculate the value of utilizing Sourcegraph.
 
 With charts that detail usage over time and value calculators that quantify the amount of time saved as users search, create insights, run batch changes, and more, you can answer now report on:
 - The number of searches developers have run in Sourcegraph, and how much development time has been saved as a result.
@@ -223,7 +223,7 @@ The feature value calculators use data derived from event logs and the default t
 <a href="https://docs.sourcegraph.com/admin/external_service"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Quickly see the status on your repository and permissions syncing
-New enhancements to the repository status page help you better understand the current state of repository and permissions syncing. A new header displays an up-to-date count of repositories (total, not cloned, cloned, cloning, failed to fetch/clone), notifications are more actionable, and new filters help you drill down into specific repositories. These improvements make it easier for you to understand the current state of repositories synced with Sourcegraph and pinpoint syncing errors if they arise. 
+New enhancements to the repository status page help you better understand the current state of [repository and permissions syncing](https://docs.sourcegraph.com/admin/external_service?_ga=2.212906964.1999310251.1663878766-858725936.1663878766). A new header displays an up-to-date count of repositories (total, not cloned, cloned, cloning, failed to fetch/clone), notifications are more actionable, and new filters help you drill down into specific repositories. These improvements make it easier for you to understand the current state of repositories synced with Sourcegraph and pinpoint syncing errors if they arise. 
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Repositories.png"
