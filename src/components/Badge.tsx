@@ -41,7 +41,7 @@ export const Badge: FunctionComponent<Badge> = ({
     text,
     size,
     color = 'light-gray',
-    href,
+    link,
     icon,
     onClick,
     checked,
