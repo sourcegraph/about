@@ -222,7 +222,7 @@ Admins can select a specific date range and customize the assumpted to align wit
 <a href="https://docs.sourcegraph.com/admin/external_service"><Badge text="Admin" color="violet" size="small" /></a>
 
 #### Quickly see the status on your repository and permissions syncing
-With Sourcegraph 4.0, we have introduced many quality of life improvements to help admins understand the current state of repository and permissions syncing. These improvements make it easier for admins to understand the current state of repositories synced with Sourcegraph as well as understand syncing errors when they arise. 
+New enhancements to the repositoiry status page help admins better understand the current state of repository and permissions syncing. A new header displays an up-to-date count of repositories (total, not cloned, cloned, cloning, failed fetch/clone), notifications are more actionable, and new filters help Admins drill down into specific repositories. These improvements make it easier for admins to understand the current state of repositories synced with Sourcegraph and pinpoint syncing errors when they arise. 
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Repositories.png"
