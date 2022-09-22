@@ -26,7 +26,7 @@ That’s why we’re offering Sourcegraph Cloud via dedicated, single-tenant ins
 
 Plus, Sourcegraph has received a SOC 2 Type II report, so you can be confident that Sourcegraph controls for the security and confidentiality of your sensitive data.
 
-You also get enterprise-grade scaling. You can sync tens of thousands of repositories to your Sourcegraph instance and search across all of them without slowdowns, so you can stay in flow even when working in huge codebases.
+This means you get enterprise-grade scaling. You can sync tens of thousands of repositories to your Sourcegraph instance and search across all of them without slowdowns, so you can stay in flow even when working in huge codebases.
 
 ## The latest features in the Cloud
 
