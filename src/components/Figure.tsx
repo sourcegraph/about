@@ -23,7 +23,7 @@ export const Figure: FunctionComponent<Figure> = ({ src, alt, caption, link, lin
         {caption && (
             <figcaption className="tw-mt-3">
                 {link ?
-                    <a href={link} className="tw-not-italic tw-font-normal tw-flex">
+                    <a href={link} className="tw-not-italic tw-flex">
                         {caption}
                         {linkIcon && <OpenInNewIcon className="tw-ml-xxs tw-my-auto" size={18} />}
                     </a> :
