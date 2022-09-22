@@ -19,7 +19,7 @@ Read on to discover everything that shipped in Sourcegraph 4.0.
 ### 🧠 Code intelligence: more useful, more times daily for every dev
 
 <br />
-<a href="/code-insights"><Badge text="Code Insights" color="green" size="small" /></a>
+<Badge text="Code Insights" link="/code-insights" color="green" size="small" />
 
 #### Understand usage and search structure with Code Insights dashboards within the search UI
 [Code Insights](https://about.sourcegraph.com/code-insights) turns your code into a queryable database to create customizable, visual dashboards. We're bringing the power of Code Insights directly into the search UI to surface high-level information about your code, help you answer questions about your code, and refine your search results.  
@@ -45,7 +45,7 @@ You can choose to group your search results by location (repo or file), author, 
 <a href="https://docs.sourcegraph.com/code_insights/explanations/search_results_aggregations" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
   
 <br />
-<a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
+<Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 
 #### A faster, simpler search experience 
 We streamlined and simplified the search user interface to make the platform more intuitive. The search homepage now has contextual tips and recommendations using real data from your instance, including repository names, file names, and authors. This information makes it easier and faster than ever to run a successful search query. 
@@ -62,7 +62,7 @@ Major performance improvements make rendering search results, files and blobs, a
 </div>
 
 <br />
-<a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
+<Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 
 #### Configure precise code navigation for 9 languages in a matter of minutes with auto-indexing
 Code navigation allows you to quickly jump to symbol definitions, find references, dependencies, and more, so you can spend more time shipping code. Precise code navigation is the most powerful version of code navigation and it works cross-repository. 
@@ -82,7 +82,7 @@ Auto-indexing allows you to set up precise code navigation for any chosen reposi
 <a href="https://docs.sourcegraph.com/code_navigation/references/indexers" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
 <br />
-<a href="https://docs.sourcegraph.com/integration"><Badge text="Extensions" color="vermillion" size="small" /></a>
+<Badge link="https://docs.sourcegraph.com/integration" text="Extensions" color="vermillion" size="small" />
 
 #### Your favorite extensions are now available by default 
 We’re investing in a new model for integrations that supports deeper integrations with our code intelligence platform and makes it easier to surface code context during the ideal moments in your workflow. Top used extensions, including code navigation, git-extras, open-in-editor, and search-exports, are now part of the core functionality. 
@@ -99,7 +99,7 @@ This update *does not* impact our IDE extensions, which will continue to allow y
 </div>
 
 <br />
-<a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
+<Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 
 #### Quickly access answers within your codebase with a revamped reference panel 
 Your code navigation experience just got better with a refreshed version of the reference panel. Stay within your workflow with a new preview panel that helps you navigate references without having to leave the file. The consolidation of definitions, references, and implementations in the same tab reduces the number of clicks needed to get pertinent information. You can find the references you're looking for much faster with new filters instead of having to scroll through the page, which is particularly challenging for navigating symbols with a large number of results.
@@ -120,7 +120,7 @@ Your code navigation experience just got better with a refreshed version of the 
 
 ### 🏗️ High-leverage ways to improve your entire codebase
 <br />
-<a href="/batch-changes"><Badge text="Batch Changes" color="blue" size="small" /></a>
+<Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 
 #### Make changes across all of your codebase at enterprise scale with server-side Batch Changes (beta)
 Previously, you had to run src-cli locally to create batch changes, which could take an impractical amount of time or be brittle for large or resource-intensive batch changes. Now, with server side Batch Changes, large-scale changes can be run across thousands of repositories with a better development experience. By running Batch Changes server-side you can:
@@ -146,7 +146,7 @@ This feature requires admins to set up executors (much like CI agents), which So
 ### ☁️ Dedicated Sourcegraph Cloud instances for enterprise
 
 <br />
-<a href="https://docs.sourcegraph.com/cloud"><Badge text="Admin" color="violet" size="small" /></a>
+<Badge link="https://docs.sourcegraph.com/cloud" text="Admin" color="violet" size="small" />
 
 #### Scale confidently with a dedicated and secure instance of Sourcegraph Cloud
 After almost a decade of developing self-hosted Sourcegraph, we’ve gained the trust of some of the most sophisticated companies and development teams in the world, allowing us to work with their most sensitive IP: their code. Today—after years of building trust and engineering rigor—we are excited to move confidently to the Cloud with a highly secure and scalable solution.
@@ -156,7 +156,7 @@ Sourcegraph Cloud now offers dedicated, single-tenant instances of Sourcegraph, 
 <a href="https://docs.sourcegraph.com/cloud" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
   
 <br />
-<a href="https://docs.sourcegraph.com/cloud"><Badge text="Admin" color="violet" size="small" /></a>
+<Badge link="https://docs.sourcegraph.com/cloud" text="Admin" color="violet" size="small" />
 
 #### Assured Cloud security with SOC 2 Type II attestation 
 Sourcegraph continues our commitment to the security of your most valuable IP—your code—through our security operations, compliance measures, and best practices. With our recent SOC 2 Type II attestation for Soucegraph Cloud, we met the high standards of the third-party audit, and you can be confident that Sourcegraph controls for the security and availability of your sensitive data. 
@@ -165,7 +165,7 @@ Sourcegraph continues our commitment to the security of your most valuable IP—
 
 ### 📈 Advanced admin capabilities
 <br />
-<a href="https://docs.sourcegraph.com/admin/updates#multi-version-upgrades"><Badge text="Admin" color="violet" size="small" /></a>
+<Badge link="https://docs.sourcegraph.com/admin/updates#multi-version-upgrades" text="Admin" color="violet" size="small" />
 
 #### Save time upgrading to Sourcegraph 4.0 with multi-version upgrades
 Sourcegraph 4.0 supports multi-version upgrades so you can upgrade to 4.0 directly from version 3.20 or higher. It eliminates the number of steps and the amount of time it takes to get access to new features and enhancements released each month. 
@@ -183,7 +183,7 @@ Sourcegraph 4.0 supports multi-version upgrades so you can upgrade to 4.0 direct
 <a href="https://docs.sourcegraph.com/admin/updates#multi-version-upgrades" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
 <br />
-<a href="https://docs.sourcegraph.com/admin/analytics"><Badge text="Admin" color="violet" size="small" /></a>
+<Badge link="https://docs.sourcegraph.com/admin/analytics" text="Admin" color="violet" size="small" />
 
 #### View usage and measure the value of our platform with new and enhanced in-product analytics
 Our new in-product analytics help admins to understand user engagement, measure efficiency in terms of time saved, and calculate the value of Sourcegraph and its features. 
@@ -210,7 +210,7 @@ Admins can configure the date range selector and view the adoption of a feature 
 </div>
 
 <br />
-<a href="https://docs.sourcegraph.com/admin/observability/opentelemetry"><Badge text="Admin" color="violet" size="small" /></a>
+<Badge link="https://docs.sourcegraph.com/admin/observability/opentelemetry" text="Admin" color="violet" size="small" />
 
 #### Easily export traces using OpenTelemetry
 
@@ -219,7 +219,7 @@ Admins can configure the date range selector and view the adoption of a feature 
 <a href="https://docs.sourcegraph.com/admin/observability/opentelemetry" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
 <br />
-<a href="https://docs.sourcegraph.com/admin/external_service"><Badge text="Admin" color="violet" size="small" /></a>
+<Badge link="https://docs.sourcegraph.com/admin/external_service" text="Admin" color="violet" size="small" />
 
 #### Quickly see the status on your repository and permissions syncing
 With Sourcegraph 4.0, we have introduced many quality of life improvements to help admins understand the current state of repository and permissions syncing. These improvements make it easier for admins to understand the current state of repositories synced with Sourcegraph as well as understand syncing errors when they arise. 
