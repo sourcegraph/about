@@ -48,9 +48,9 @@ You can choose to group your search results by location (repo or file), author, 
 <a href="/code-search"><Badge text="Code Search" color="cerise" size="small" /></a>
 
 #### A faster, simpler search experience 
-We streamlined and simplified the search user interface to make the platform more intuitive. The search homepage now has contextual tips and recommendations using real data from your instance, including repository names, file names, and authors. This information makes it easier and faster than ever to run a successful search query. 
+We streamlined and simplified the search user interface to make the platform more intuitive. The search homepage now has contextual tips and recommendations using real data from your instance, including repository names, file names, and authors for customer instances of Sourcegraph. This information makes it easier and faster than ever to run a successful search query.
 
-Search results are now front and center with the improved interface. The search sidebar has moved to the right side of the screen, and we eliminated several non-essential elements to ensure the information you need is easy to access. Filters make it effortless for you to answer questions about your code, and the sidebar can be collapsed altogether to reduce noise. 
+Search results are now front and center with the improved interface. The search sidebar has moved to the right side of the screen, matches in file and respoitory names are now highlighted, and we eliminated several non-essential elements to ensure the information you need is easy to access. Filters make it effortless for you to answer questions about your code, and the sidebar can be collapsed altogether to reduce noise. 
 
 We also made major performance improvements to make rendering search results, files, and repositories faster than ever. 
 
