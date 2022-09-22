@@ -192,7 +192,7 @@ We know that upgrading Sourcegraph can be a time-intensive process, especially i
 
 With charts that detail usage over time and value calculators that quantify the amount of time saved as users search, create insights, run batch changes, and more, you can answer now report on:
 - The number of searches developers have run in Sourcegraph, and how much development time has been saved as a result.
-- How many code insights have been created, viewed, and interacted with.
+- How many Code Insights charts have been created, viewed, and interacted with.
 - The number of changesets that have been created and merged via Batch Changes, and how much time has been saved as a result.
 - How frequently code navigation has been used by developers to more quickly understand code.
 - How often IDE and Browser extensions are used across your organization, and how much time has been saved as a result.
