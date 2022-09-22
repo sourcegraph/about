@@ -134,7 +134,7 @@ Change the <b>color</b> of the Badge by setting its `color` property to one of t
 ```
 
 <div className="tw-mt-sm">
-  <Badge text="Search code" color="cerise" href="https://sourcegraph.com/" size="small" />
+  <Badge text="Search code" color="cerise" link="https://sourcegraph.com/" size="small" />
 </div>
 To add a <b>link</b> to your badge, pass the badge a link (href) as seen below:
 ```javascript
