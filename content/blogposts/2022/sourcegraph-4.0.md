@@ -193,7 +193,7 @@ In-product analytics helps admins understand user engagement, measure efficiency
 With charts that detail usage over time and value calculators that quantify the amount of time saved as users search, create insights, run batch changes, and more, you can answer now report on:
 - The number of searches developers have run in Sourcegraph, and how much development time has been saved as a result.
 - How many code insights have been created, viewed, and interacted with.
-- The number of changesets that have been created and merged via batch changes, and how much time has been saved as a result.
+- The number of changesets that have been created and merged via Batch Changes, and how much time has been saved as a result.
 - How frequently code navigation has been used by developers to more quickly understand code.
 - How often IDE and Browser extensions are used across your organization, and how much time has been saved as a result.
 - The number of navigation events and the percentage of your repositories that allow precise code navigation
