@@ -16,7 +16,7 @@ A code intelligence platform indexes and understands all of your organization's 
 
 Read on to discover everything that shipped in Sourcegraph 4.0.  
 
-### 🧠 Code intelligence: more useful, more times daily for every dev
+### 🧠 Code intelligence: uplevel your code search
 
 <br />
 <Badge text="Code Insights" color="green" size="small" link="/code-insights" />
