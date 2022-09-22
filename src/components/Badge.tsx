@@ -31,7 +31,7 @@ interface Badge {
  * @param props.text - badge text
  * @param props.size - the size of the badge
  * @param props.color - the color of the badge
- * @param props.href - a link for an anchor tag
+ * @param props.link - a link for an anchor tag
  * @param props.icon - the icon to use beside the text
  * @param props.onClick - an onClick function
  * @param props.checked - the controlled checked state
