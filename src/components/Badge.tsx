@@ -17,7 +17,7 @@ interface Badge {
         | 'vermillion'
         | 'green'
         | 'lemon'
-    href?: string
+    link?: string
     icon?: ElementType
     onClick?: () => void
     checked?: boolean
