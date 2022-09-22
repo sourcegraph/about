@@ -1,7 +1,6 @@
 import { FunctionComponent } from 'react'
 
 import AlertOutlineIcon from 'mdi-react/AlertOutlineIcon'
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import {
     Layout,

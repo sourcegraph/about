@@ -1,7 +1,5 @@
 import { FunctionComponent } from 'react'
 
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-
 import { Layout, Hero, CtaSection, ContentSection, YouTube } from '@components'
 
 const Webinar: FunctionComponent = () => {

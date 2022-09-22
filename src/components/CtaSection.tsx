@@ -122,12 +122,12 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
     cta1 = {
         text: 'Get free trial',
         ctaStyle: 'primaryButton',
-        link: 'https://signup.sourcegraph.com'
+        link: 'https://signup.sourcegraph.com',
     },
     cta2 = {
         text: 'Request a demo',
         ctaStyle: 'outlineButton',
-        link: '/demo'
+        link: '/demo',
     },
 }) => (
     <ContentSection background={background} slimWidth={slimWidth}>

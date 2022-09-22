@@ -1,6 +1,5 @@
 import { FunctionComponent } from 'react'
 
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
 import { Layout, ContentSection, TwoColumnSection, Video, ResourceList, CtaSection } from '@components'

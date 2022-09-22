@@ -1,7 +1,5 @@
 import { FunctionComponent } from 'react'
 
-import Link from 'next/link'
-
 import { Layout, CaseStudyCard, HubSpotForm, ResourceList, ContentSection, CtaSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -105,10 +103,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <CtaSection
-            title="Want to use Sourcegraph at your company?"
-            background="venus"
-        />
+        <CtaSection title="Want to use Sourcegraph at your company?" background="venus" />
 
         <ResourceList items={blogResourceItems} />
 

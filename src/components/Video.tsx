@@ -52,13 +52,14 @@ export const Video: FunctionComponent<Video> = ({
         </video>
         {caption && (
             <figcaption className="tw-mt-3">
-                {link ?
+                {link ? (
                     <a href={link} className="tw-not-italic tw-font-normal tw-flex">
                         {caption}
                         {linkIcon && <OpenInNewIcon className="tw-ml-xxs tw-my-auto" size={18} />}
-                    </a> :
+                    </a>
+                ) : (
                     caption
-                }
+                )}
             </figcaption>
         )}
     </figure>

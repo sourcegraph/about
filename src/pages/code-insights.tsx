@@ -4,7 +4,6 @@ import BullsEyeArrowIcon from 'mdi-react/BullseyeArrowIcon'
 import LighteningBoltOutlineIcon from 'mdi-react/LightningBoltOutlineIcon'
 import RocketLaunchOutlineIcon from 'mdi-react/RocketLaunchOutlineIcon'
 import TrendingUpIcon from 'mdi-react/TrendingUpIcon'
-import Link from 'next/link'
 
 import { CodeInsightExample } from '@code-insights/CodeInsightsExamples'
 import {
