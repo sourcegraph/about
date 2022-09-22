@@ -111,14 +111,12 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
         </div>
 
         <CtaSection
-            centerContent={true}
             background="black"
-            title="See Sourcegraph in action."
-            description="Learn how companies of all sizes and in all industries use Sourcegraph to solve big code problems."
-            cta1={{
+            centerContent={true}
+            cta2={{
                 text: 'Request a demo',
+                ctaStyle: 'outlineButton',
                 link: '/demo',
-                ctaStyle: 'primaryButton',
             }}
         />
     </>
