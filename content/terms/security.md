@@ -20,7 +20,7 @@ Sourcegraph Cloud is the recommended deployment model for most customers. Source
 
 ### Infrastructure
 
-- All infrastructure is hosted on Google Cloud Platform (https://cloud.google.com/security/) and managed through Terraform.
+- All infrastructure is hosted on [Google Cloud Platform](https://cloud.google.com/security/) and managed through Terraform.
 - Customer instances are provisioned in fully segregated GCP enviroments, ensuring that customer data is fully segregated.
 - All communication to your Sourcegraph instance is encrypted using TLS 1.2 or greater. User credentials are encrypted at rest using 256-bit Advanced Encryption Standard (AES-256) keys in Galois Counter Mode (GCM). The keys are automatically rotated every 90 days.
 - All storage volumes are encrypted at rest, and data is encrypted in-cloud during transport.
