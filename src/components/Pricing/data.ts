@@ -47,7 +47,7 @@ export const BIZ_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['businessStorage', 'businessExecutors'],
     },
     { topic: '24/5 support' },
-    { topic: 'Secure and single-tenant Cloud deployment' },
+    { topic: 'Secure, single-tenant cloud deployment' },
 ]
 
 /** Enterprise spotlight feature set */
@@ -341,7 +341,7 @@ const SECURITY_FEATURE_INFO: Record<string, FeatureInfo> = {
 
 const DEPLOYMENT_FEATURE_INFO: Record<string, FeatureInfo> = {
     cloudDeployment: {
-        label: 'Secure and single-tenant Cloud deployment',
+        label: 'Secure, single-tenant cloud deployment',
         description: 'Your own dedicated, single-tenant Sourcegraph instance.',
     },
     selfDeployment: {
@@ -355,7 +355,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
 
     // Code host integrations
     cloudHosts: {
-        label: 'Unlimited standard Cloud code hosts',
+        label: 'Unlimited standard cloud code hosts',
         description: 'Integrate with GitHub.com, GitLab.com, and Bitbucket Cloud.',
     },
     unlimitedCodeHosts: {
@@ -365,11 +365,11 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     selfHostedCodeHosts: {
         label: 'Connect to self-hosted code hosts',
         description:
-            'Integrate with Github Enterprise Self-hosted, GitLab Self-hosted, Bitbucket Server/Data Center, and Perforce.',
+            'Integrate with GitHub Enterprise server, GitLab Self-hosted, Bitbucket Server/Data Center, and Perforce.',
     },
     enterpriseOnlyCodeHosts: {
         label: 'Connect to enterprise-only code hosts',
-        description: 'Integrate with any Git-based code host via src-srv-git.',
+        description: 'Integrate with any Git-based code host via `src serve-git`.',
     },
     privateCodeHosts: {
         label: 'Connect to private code hosts',
@@ -380,12 +380,12 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
 
     // Scale and performance
     businessStorage: {
-        label: 'Up to 75GB Cloud code storage',
-        description: 'Included storage for Cloud deployments.',
+        label: 'Up to 75GB cloud code storage',
+        description: 'Included storage for cloud deployments.',
     },
     enterpriseStorage: {
-        label: 'Over 75GB Cloud code storage',
-        description: 'Included storage for Cloud deployments.',
+        label: 'Over 75GB cloud code storage',
+        description: 'Included storage for cloud deployments.',
     },
     businessExecutors: {
         label: '2 executors',
@@ -406,7 +406,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Priority ticket handling and guaranteed initial response SLA from a dedicated team.',
     },
     dedicatedManager: {
-        label: 'Dedicated Technical Account Manager',
+        label: 'Dedicated technical account manager',
         description:
             'Dedicated technical account manager to support usage, training, enablement, technical strategy, and overall health.',
     },
@@ -427,11 +427,11 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     selfHosts: {
         label: 'Self-hosted code hosts',
         description:
-            'Integrate with Github Enterprise Self-hosted, GitLab Self-hosted, Bitbucket Server/Data Center, and Perforce.',
+            'Integrate with GitHub Enterprise server, GitLab Self-hosted, Bitbucket Server/Data Center, and Perforce.',
     },
     enterpriseHosts: {
         label: 'Enterprise-only code hosts',
-        description: 'Integrate with any Git-based code host via src-srv-git.',
+        description: 'Integrate with any Git-based code host via `src serve-git`.',
     },
     privateHosts: {
         label: 'Private code hosts',
@@ -448,7 +448,7 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     // Scale and performance
     codeStorag: {
         label: 'Cloud code storage',
-        description: 'Included storage for Cloud deployments.',
+        description: 'Included storage for cloud deployments.',
     },
     executors: {
         label: 'Executors',
@@ -474,16 +474,16 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     ...DEPLOYMENT_FEATURE_INFO,
     airGappedDeploy: {
         label: 'Air-gapped deployment',
-        description: 'Deploy Sourcegraph in an air-gapped environment on your own infrastructure (add-on).',
+        description: 'Deploy Sourcegraph in an air-gapped environment on your own infrastructure. (add-on)',
     },
     deploymentMonitoring: {
         label: 'Self-hosted deployment monitoring',
-        description: 'Monitor the performance and health of your Sourcegraph cluster (add-on).',
+        description: 'Monitor the performance and health of your Sourcegraph cluster. (add-on)',
     },
     backupRestore: {
         label: 'Self-hosted backup and restore',
         description:
-            'Officially supported scripts to back up and restore your Sourcegraph instance and all configuration and data (add-on).',
+            'Officially supported scripts to back up and restore your Sourcegraph instance and all configuration and data. (add-on)',
     },
 
     // Usage and billing
