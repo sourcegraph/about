@@ -134,19 +134,11 @@ Change the <b>color</b> of the Badge by setting its `color` property to one of t
 ```
 
 <div className="tw-mt-sm">
-  <Badge text="Search code" color="cerise" size="small" onClick={() => window.open('https://sourcegraph.com/', '_blank', 'noopener')} />
+  <Badge text="Search code" color="cerise" link="https://sourcegraph.com/" size="small" />
 </div>
-To add a <b>link</b> to your badge, add a value to the `onClick` property as seen below:
+To add a <b>link</b> to your badge, pass the badge a link as seen below:
 ```javascript
-<Badge text="Search code" color="cerise" size="small" onClick={() => window.open('https://sourcegraph.com/', '_blank', 'noopener')} />
-```
-
-<div className="tw-mt-sm">
-  <Badge text="Code Insights" color="green" size="small" onClick={() => window.open("/code-insights", "_self")} />
-</div>
-If the link is to an internal page on about.sourcegraph.com, we don't want to open the link in a new tab. Add the following to the markdown adjusted to your badge values:
-```javascript
-<Badge text="Code Insights" color="green" size="small" onClick={() => window.open("/code-insights", "_self")} />
+<Badge text="Search code" color="cerise" link="https://sourcegraph.com/" size="small" />
 ```
 
 <div className="tw-mt-sm">
@@ -312,7 +304,7 @@ Instead of linking images using Markdown, please use the Figure component. This 
   link="https://www.sourcegraph.com/search"
 />
 
-Add a link icon for links that open in a new window by including the `linkIcon={true}` property to the Figure component:
+Add a link icon for links that open in a new window by including the `linkIcon={true}` property to the Figure or Video component:
 ```javascript
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png"
@@ -327,6 +319,30 @@ Add a link icon for links that open in a new window by including the `linkIcon={
   alt="Sourcegraph thumbnail"
   caption="Check out Sourcegraph Search!"
   link="https://www.sourcegraph.com/search"
+  linkIcon={true}
+/>
+```javascript
+<Video 
+  source={{
+    webm: 'blog/shift-left/01-code-reuse',
+    mp4: 'blog/shift-left/01-code-reuse'
+  }}
+  loop={true}
+  title="Code reuse"
+  caption="Docs"
+  link="https://docs.sourcegraph.com/"
+  linkIcon={true}
+/>
+```
+<Video 
+  source={{
+    webm: 'blog/shift-left/01-code-reuse',
+    mp4: 'blog/shift-left/01-code-reuse'
+  }}
+  loop={true}
+  title="Code reuse sample, title read by screen readers (make these short)"
+  caption="Docs"
+  link="https://docs.sourcegraph.com/"
   linkIcon={true}
 />
 

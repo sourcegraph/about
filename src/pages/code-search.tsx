@@ -1,7 +1,5 @@
 import { FunctionComponent } from 'react'
 
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-
 import {
     Blockquote,
     ContentSection,
@@ -217,20 +215,10 @@ export const CodeSearchPage: FunctionComponent = () => (
         <IntegrationsSection />
 
         <CtaSection
-            centerContent={true}
-            title="Get started with Code Search"
             background="lightNebulousMars"
+            title="Get started with Code Search"
             description="Connect your code hosts and experience universal code search."
-            cta1={{
-                text: 'Request a demo',
-                link: '/demo',
-                ctaStyle: 'primaryButton',
-            }}
-            cta2={{
-                text: 'Try Sourcegraph now',
-                link: '/get-started/self-hosted',
-                icon: <ArrowRightIcon />,
-            }}
+            centerContent={true}
         />
 
         <ResourceList items={blogResources} title="Learn More" />

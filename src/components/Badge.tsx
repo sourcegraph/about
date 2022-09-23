@@ -17,6 +17,7 @@ interface Badge {
         | 'vermillion'
         | 'green'
         | 'lemon'
+    link?: string
     icon?: ElementType
     onClick?: () => void
     checked?: boolean
@@ -30,12 +31,22 @@ interface Badge {
  * @param props.text - badge text
  * @param props.size - the size of the badge
  * @param props.color - the color of the badge
+ * @param props.link - a link for an anchor tag
  * @param props.icon - the icon to use beside the text
  * @param props.onClick - an onClick function
  * @param props.checked - the controlled checked state
  * @param props.circle - whether it's a basic or circle radius badge
  */
-export const Badge: FunctionComponent<Badge> = ({ text, size, color = 'light-gray', icon, onClick, checked, circle }) => {
+export const Badge: FunctionComponent<Badge> = ({
+    text,
+    size,
+    color = 'light-gray',
+    link,
+    icon,
+    onClick,
+    checked,
+    circle,
+}) => {
     const Icon: ElementType = icon || 'div'
 
     const colors = {
@@ -119,14 +130,19 @@ export const Badge: FunctionComponent<Badge> = ({ text, size, color = 'light-gra
         {
             [colors[color].unchecked]: !checked || !onClick,
             [colors[color].checked]: checked,
-            [colors[color].hover]: !!onClick,
+            [colors[color].hover]: !!onClick || !!link,
             'tw-cursor-pointer tw-transition-all tw-ease-out': !!onClick,
             'tw-rounded-full': circle,
             'tw-rounded-md': !circle,
         }
     )
 
-    return (
+    return link ? (
+        <a href={link} className={classNames('tw-no-underline', styles)} tabIndex={0}>
+            {text}
+            {icon && <Icon className="tw-inline tw-ml-1" size={size === 'small' ? 12 : 14} />}
+        </a>
+    ) : (
         <div
             className={styles}
             onClick={onClick}
