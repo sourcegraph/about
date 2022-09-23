@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { ContentSection, CoreFeatures, Layout, IntegrationsSection, SelfHostedSection } from '@components'
+import { ContentSection, CoreFeatures, Layout, IntegrationsSection, CtaSection } from '@components'
 
 import Banner from './_Banner'
 import Hero from './_Hero'
@@ -27,7 +27,7 @@ const Home: FunctionComponent = () => (
 
         <IntegrationsSection />
 
-        <SelfHostedSection />
+        <CtaSection background="saturn" />
     </Layout>
 )
 

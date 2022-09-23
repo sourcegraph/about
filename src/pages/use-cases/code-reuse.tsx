@@ -8,6 +8,7 @@ import Link from 'next/link'
 import {
     Blockquote,
     ContentSection,
+    CtaSection,
     CustomCarousel,
     CustomerLogos,
     Hero,
@@ -235,18 +236,16 @@ const CodeReusePage: FunctionComponent = () => (
                             </Link>
                         </div>
                         <div className="ml-md-3">
-                            <Link href="/get-started/self-hosted" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="btn btn-outline-primary w-100 max-w-350"
-                                    title="Try Sourcegraph."
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                >
-                                    Try Sourcegraph now
-                                </a>
-                            </Link>
+                            <a
+                                href="https://signup.sourcegraph.com"
+                                className="btn btn-outline-primary w-100 max-w-350"
+                                title="Get free trial"
+                                data-button-style={buttonStyle.outline}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
+                                Get free trial
+                            </a>
                         </div>
                     </div>
                 }
@@ -349,23 +348,11 @@ const CodeReusePage: FunctionComponent = () => (
 
         <ResourceList items={blogResourceItems} />
 
-        <ContentSection>
-            <div className="tw-text-center">
-                <h2 className="mb-6">Make the most of your existing code.</h2>
-                <Link href="/get-started/self-hosted" passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a
-                        className="btn btn-primary"
-                        title="Ready to get started?"
-                        data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.trySourcegraph}
-                        data-button-type="cta"
-                    >
-                        Ready to get started?
-                    </a>
-                </Link>
-            </div>
-        </ContentSection>
+        <CtaSection
+            background="white"
+            title="Get started with Sourcegraph"
+            description="Find, fix, and track vulnerable code quickly across your entire codebase to improve code security."
+        />
     </Layout>
 )
 
