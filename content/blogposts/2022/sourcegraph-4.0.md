@@ -27,7 +27,7 @@ Read on to discover everything that shipped in Sourcegraph 4.0.
 Search aggregation charts appear on the search results page to help you answer questions, like:
 - How many different versions of a library or package are present in your code, and which is most common? 
 - Which files have the majority of these search results?
-- Which repositories are this library used in most?
+- Which repositories use this library the most?
 - Which library components are used most? By who?
 - What are all the possible arguments we pass to this function? 
 
