@@ -9,7 +9,12 @@ import { buttonStyle, buttonLocation } from '@data'
 interface Cta {
     text: string
     icon?: ReactNode
-    ctaStyle?: 'primaryButton' | 'outlineButton' | 'outlineButtonLight' | 'outlineButtonWhiteText' | 'whiteButton'
+    ctaStyle?:
+        | 'primaryButton'
+        | 'primaryButtonWhite'
+        | 'outlineButton'
+        | 'outlineButtonLight'
+        | 'outlineButtonWhiteText'
     link?: string
     onClick?: () => void
 }
@@ -57,7 +62,8 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) =>
             href={link}
             className={classNames({
                 'btn btn-primary': ctaStyle === 'primaryButton',
-                'btn tw-bg-white tw-text-blurple-400': ctaStyle === 'whiteButton',
+                'btn tw-bg-white tw-text-blurple-400 hover:tw-bg-blurple-400 hover:tw-text-white':
+                    ctaStyle === 'primaryButtonWhite',
                 'btn btn-outline-primary': ctaStyle === 'outlineButton',
                 'btn btn-outline-primary tw-text-white': ctaStyle === 'outlineButtonWhiteText',
                 'btn tw-text-white tw-border-white hover:tw-bg-blurple-400 hover:tw-border-blurple-400':
@@ -81,7 +87,7 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) =>
                 type="button"
                 className={classNames({
                     'btn btn-primary': ctaStyle === 'primaryButton',
-                    'btn tw-bg-white tw-text-blurple-400': ctaStyle === 'whiteButton',
+                    'btn tw-bg-white tw-text-blurple-400': ctaStyle === 'primaryButtonWhite',
                     'btn btn-outline-primary': ctaStyle === 'outlineButton',
                     'btn btn-outline-primary tw-text-white': ctaStyle === 'outlineButtonWhiteText',
                     'btn tw-text-white tw-border-white hover:tw-bg-blurple-400 hover:tw-border-blurple-400':
