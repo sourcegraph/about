@@ -63,13 +63,10 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                                 ))}
                             </ul>
                         </div>
-                        
+
                         <div className="tw-col-span-12 lg:tw-col-span-7 sm:tw-grid sm:tw-grid-cols-12">
                             {footerLinks.map(section => (
-                                <div
-                                    className="tw-mb-md sm:tw-mb-0 sm:tw-col-span-4"
-                                    key={section.section}
-                                >
+                                <div className="tw-mb-md sm:tw-mb-0 sm:tw-col-span-4" key={section.section}>
                                     <h5 className="tw-mb-xs">{section.section}</h5>
                                     <ul className="tw-ml-0 tw-list-none">
                                         {section.items.map(item => (
@@ -118,7 +115,9 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
 
                 <div className={classNames('tw-text-sm', { 'tw-py-4': minimal, 'tw-pt-sm tw-pb-2': !minimal })}>
                     <ul className="tw-ml-0 tw-list-none">
-                        <li className="tw-text-gray-500 tw-mr-lg sm:tw-inline">&copy; {new Date().getFullYear()} Sourcegraph, Inc.</li>
+                        <li className="tw-text-gray-500 tw-mr-lg sm:tw-inline">
+                            &copy; {new Date().getFullYear()} Sourcegraph, Inc.
+                        </li>
 
                         {postscriptLinks.items.map(item => (
                             <li key={item.title} className="tw-inline-block tw-mt-xxs sm:tw-mt-0">
