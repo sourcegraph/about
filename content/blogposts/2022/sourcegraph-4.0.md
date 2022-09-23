@@ -221,7 +221,7 @@ With charts that detail usage over time and value calculators that quantify the 
 
 #### Easily export traces using OpenTelemetry
 
-[OpenTelemetry (OTEL)](https://opentelemetry.io/) is an open specification for exporting observability data into a user’s preferred systems. We aim to make OpenTelemetry the default way to quickly and easily export observability data from Sourcgraph, starting with tracing in Sourcegraph 4.0. This is a breaking change as we now require you to export tracing with the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/). This is deployed by default in all Sourcegraph deployment methods and replaces the Jaeger agents and collectors that was previously the default. 
+[OpenTelemetry (OTEL)]((https://opentelemetry.io/)) is an open specification for exporting observability data. We’ve added OpenTelemetry support in Sourcegraph 4.0 so you can easily export tracing data from Sourcegraph into your preferred observability solution. This is a breaking change as we now require you to export tracing with the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/). This is deployed by default in all Sourcegraph deployment methods and replaces the Jaeger agents and collectors that was previously the default.
 
 <a href="https://docs.sourcegraph.com/admin/observability/opentelemetry" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
