@@ -369,7 +369,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     enterpriseOnlyCodeHosts: {
         label: 'Connect to enterprise-only code hosts',
-        description: 'Integrate with any Git-based code host via `src serve-git`.',
+        description: 'Integrate with any Git-based code host via src serve-git.',
     },
     privateCodeHosts: {
         label: 'Connect to private code hosts',
@@ -431,7 +431,7 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     enterpriseHosts: {
         label: 'Enterprise-only code hosts',
-        description: 'Integrate with any Git-based code host via `src serve-git`.',
+        description: 'Integrate with any Git-based code host via src serve-git.',
     },
     privateHosts: {
         label: 'Private code hosts',
