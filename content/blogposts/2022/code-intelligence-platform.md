@@ -9,7 +9,7 @@ heroImage:
 socialImage: 
 ---
 
-No matter how good your other dev tools, coding is still complex. Even if you've configured your editor just right, sped up your test suite, set up continuous deployment, added observability, etc., coding is still complex. Higher-level languages, libraries, frameworks, cloud providers, etc., that encapsulate complexity just let you spend your complexity budget elsewhere. The overall complexity of code has increased, not declined, over time, and there's no sign of that trend changing.
+No matter how good your dev tools are, coding is complex. This is true even if you've configured your editor just right, sped up your test suite, set up continuous deployment, and added observability. Tools like higher-level languages, libraries, and frameworks can help, but as you take on bigger and more ambitious projects, you'll likely spend your complexity budget elsewhere. The overall complexity of code has increased over time, and there's no sign of that trend changing.
 
 As consumers of software, we (mostly) benefit from this phenomenon in the form of better technology in our everyday lives.
 
