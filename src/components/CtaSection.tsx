@@ -150,7 +150,10 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                 {!slimWidth && <h2 className="tw-mb-sm">{title}</h2>}
                 {slimWidth && <h4 className="tw-mb-sm">{title}</h4>}
                 <p
-                    className={classNames('tw-text-lg', centerContent ? 'tw-mx-auto md:tw-max-w-2xl' : 'md:tw-max-w-lg')}
+                    className={classNames(
+                        'tw-text-lg',
+                        centerContent ? 'tw-mx-auto md:tw-max-w-2xl' : 'md:tw-max-w-lg'
+                    )}
                 >
                     {description}
                 </p>
@@ -183,7 +186,8 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                             {...{
                                 ...cta2,
                                 ctaStyle:
-                                    (background?.includes('dark') || background?.includes('black') && !cta2.ctaStyle?.includes('outlineButton') )
+                                    background?.includes('dark') ||
+                                    (background?.includes('black') && !cta2.ctaStyle?.includes('outlineButton'))
                                         ? 'outlineButtonLight'
                                         : cta2.ctaStyle,
                             }}

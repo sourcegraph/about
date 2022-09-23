@@ -83,7 +83,7 @@ const Hero: FunctionComponent = () => {
             </div>
 
             <ContentSection slimWidth={true}>
-                <YouTube id="Kk1ea2-l8Hk" />
+                <YouTube title="Sourcegraph Product Tour" id="Kk1ea2-l8Hk" />
             </ContentSection>
 
             <CustomerLogos />
