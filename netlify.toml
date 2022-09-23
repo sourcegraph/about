@@ -46,7 +46,7 @@
   to = "https://handbook.sourcegraph.com/:splat"
 # ========== END HANDBOOK REDIRECTS ==========
 
-# ========== TERMS REDIRECTS ==========
+# ========== LEGAL REDIRECTS ==========
 [[redirects]]
   from = "/terms-cloud"
   to = "/terms/cloud"
@@ -82,7 +82,15 @@
 [[redirects]]
   from = "/subprocessors"
   to = "/terms/subprocessors"
-# ========== END TERMS REDIRECTS ==========
+
+[[redirects]]
+  from = "/dpa"
+  to = "https://security.sourcegraph.com"
+
+[[redirects]]
+  from = "/dpa.pdf"
+  to = "https://security.sourcegraph.com"
+# ========== END LEGAL REDIRECTS ==========
 
 # ========== BLOG REDIRECTS ==========
 [[redirects]]
@@ -142,10 +150,6 @@
 [[redirects]]
   from = "/customers"
   to = "/use-cases"
-
-[[redirects]]
-  from = "/dpa"
-  to = "/dpa.pdf"
 
 [[redirects]]
   from = "/cloud-beta"
