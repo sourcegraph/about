@@ -160,7 +160,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
 
             <div
                 className={classNames({
-                    'tw-inline-flex tw-self-center': centerContent,
+                    'tw-inline-flex tw-flex-col sm:tw-flex-row tw-self-center': centerContent,
                     'tw-col-span-full md:tw-col-span-2 tw-flex tw-flex-col lg:tw-flex-row tw-items-start md:tw-items-center':
                         !centerContent && !slimWidth,
                     'lg:tw-justify-end': !centerContent && cta2,
@@ -170,7 +170,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                 })}
             >
                 {cta1 && (
-                    <div className={classNames({ 'tw-mt-sm': !slimWidth, 'tw-mr-sm': centerContent })}>
+                    <div className={classNames({ 'tw-mt-sm': !slimWidth, 'sm:tw-mr-sm': centerContent })}>
                         <Cta {...cta1} />
                     </div>
                 )}
