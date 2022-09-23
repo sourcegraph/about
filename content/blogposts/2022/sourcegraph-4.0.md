@@ -27,7 +27,7 @@ Read on to discover everything that shipped in Sourcegraph 4.0.
 Search aggregation charts appear on the search results page to help you answer questions, like:
 - How many different versions of a library or package are present in your code, and which is most common? 
 - Which files have the majority of these search results?
-- Which repositories are this library used in most?
+- Which repositories is this library used in most?
 - Which library components are used most? By who?
 - What are all the possible arguments we pass to this function? 
 
@@ -50,7 +50,7 @@ You can choose to group your search results by location (repo or file), author, 
 #### A faster, simpler search experience 
 We streamlined and simplified the search user interface to make the platform more intuitive. The search homepage, for customer instances of Sourcegraph, now has contextual tips and recommendations using real data from your instance, including repository names, file names, and authors. This information makes it easier and faster than ever to run a successful search query.
 
-Search results are now front and center with the improved interface. The search sidebar has moved to the right side of the screen, matches in file and respoitory names are now highlighted, and we eliminated several non-essential elements to ensure the information you need is easy to access. Filters make it effortless for you to answer questions about your code, and the sidebar can be collapsed altogether to reduce noise. 
+Search results are now front and center with the improved interface. The search sidebar has moved to the right side of the screen, matches in file and respository names are now highlighted, and we eliminated several non-essential elements to ensure the information you need is easy to access. Filters make it effortless for you to answer questions about your code, and the sidebar can be collapsed altogether to reduce noise. 
 
 We also made major performance improvements to make rendering search results, files, and repositories faster than ever. 
 
@@ -67,7 +67,7 @@ We also made major performance improvements to make rendering search results, fi
 #### Configure precise code navigation for 9 languages in a matter of minutes with auto-indexing
 Code navigation allows you to quickly jump to symbol definitions, find references, and more, so you can understand your code and its dependencies. Precise code navigation is the most powerful version of code navigation and it works cross-repository. 
 
-Auto-indexing allows you to set up precise code navigation for any chosen repositories with the click of a button, and it automatically keeps your repositories indexed and your [code graph data](https://docs.sourcegraph.com/code_navigation/explanations/uploads) up-to-date for accurate code navigation. With the release of 4.0, auto-indexing is now supported for 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, and JavaScript, and it's turned on by default for Cloud customers.
+Auto-indexing allows you to set up precise code navigation for any chosen repositories with the click of a button, and it automatically keeps your repositories indexed and your [code graph data](https://docs.sourcegraph.com/code_navigation/explanations/uploads) up to date for accurate code navigation. With the release of 4.0, auto-indexing is now supported for 9 languages including Ruby, Rust, Go, Java, Scala, Kotlin, Python, TypeScript, and JavaScript, and it's turned on by default for Cloud customers.
 
 <Video 
   source={{
@@ -85,9 +85,9 @@ Auto-indexing allows you to set up precise code navigation for any chosen reposi
 <Badge link="https://docs.sourcegraph.com/integration" text="Extensions" color="vermillion" size="small" />
 
 #### Your favorite extensions are now available by default 
-Top used extensions, including code navigation, git-extras, open-in-editor, and search-exports, are now part of the platform and no longer require you to  enable on your own. Essential code context is surfaced during the ideal moments in your workflow and knowledge about the codebase from the extensions can be found in the sidebar, when hovering over code, and after clicking on "more actions."
+Our most-used extensions, including code navigation, git-extras, open-in-editor, and search-exports, are now part of the platform and no longer require you to enable them. Essential code context is surfaced during the ideal moments in your workflow and knowledge about the codebase from the extensions can be found in the sidebar, when hovering over code, and after clicking on "more actions."
 
-Now that our [top extensions](https://docs.sourcegraph.com/extensions) are part of the core functionality, there will be greater support and functionality over time. With this change, you will no longer be able to access the extensions registry or create extensions on a private registry. Note: if you still need access to extensions or create extensions on a private registry, you can enable a feature flag to do so until early 2023.
+Now that our [top extensions](https://docs.sourcegraph.com/extensions) are part of the core functionality, there will be greater support and functionality over time. With this change, you will no longer be able to access the extensions registry or create extensions on a private registry. Note: If you still need access to extensions or create extensions on a private registry, you can enable a feature flag to do so until early 2023.
 
 This update *does not* impact our IDE extensions, which will continue to allow you to search and navigate across all of your repositories without ever leaving your IDE or checking them out locally.
 
@@ -102,7 +102,7 @@ This update *does not* impact our IDE extensions, which will continue to allow y
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 
 #### Find answers faster with a revamped reference panel 
-Your code navigation experience just got better with a refreshed version of the reference panel. Stay within your workflow with a new preview panel that helps you [navigate references](https://docs.sourcegraph.com/code_navigation/explanations/features#find-references) without having to leave the file. The consolidation of definitions, references, and implementations in the same tab reduces the number of clicks needed to get pertinent information. You can find the references you're looking for much faster with new filters instead of having to scroll through the page, which is particularly challenging for navigating symbols with a large number of results.
+Your code navigation experience just got better with a refreshed version of the reference panel. Stay within your workflow with a new preview panel that helps you [navigate references](https://docs.sourcegraph.com/code_navigation/explanations/features#find-references) without having to leave the file. The consolidation of definitions, references, and implementations in the same tab reduces the number of clicks needed to get pertinent information. You can find the references you're looking for much faster using new filters, so you'll no longer need to scroll through dozens of results.
 
 <Video 
   source={{
@@ -123,11 +123,11 @@ Your code navigation experience just got better with a refreshed version of the 
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 
 #### Make changes across your codebase at enterprise scale with server-side Batch Changes (beta)
-[Batch Changes](https://about.sourcegraph.com/batch-changes) allows you to automate code changes across your entire codebase. Previously, you had to run src-cli locally to create batch changes, which could take an impractical amount of time or be brittle for large or resource-intensive batch changes. Now, with server-side Batch Changes, large-scale changes can be run across thousands of repositories with a better development experience. With server-side Batch Changes:
+[Batch Changes](https://about.sourcegraph.com/batch-changes) allows you to automate code changes across your entire codebase. Previously, you had to run `src-cli` locally to create batch changes, which could take an impractical amount of time or be brittle for large or resource-intensive batch changes. Now, with server-side Batch Changes, large-scale changes can be run across thousands of repositories with a better development experience. With server-side Batch Changes:
 
-- Run large-scale or resource-intensive batch changes without clogging your local machine
-- Run large batch changes quickly by distributing them across an autoscaled pool of compute instances
-- Get a better debugging experience by streaming logs directly into Sourcegraph
+- Run large-scale or resource-intensive batch changes without clogging your local machine.
+- Run large batch changes quickly by distributing them across an autoscaled pool of compute instances.
+- Get a better debugging experience by streaming logs directly into Sourcegraph.
 
 This feature requires admins to set up executors (much like CI agents), which Sourcegraph will use to offload expensive tasks. Executors can also be used to run [code navigation auto-indexing](https://github.com/sourcegraph/about/blob/bf341aafde75450c295aaec064470017020cdcd8/content/blogposts/2022/sourcegraph-4.0.md#TODO-link-to-section-or-docs). All Sourcegraph Cloud instances have one or more executors available by default. 
 
@@ -148,8 +148,8 @@ This feature requires admins to set up executors (much like CI agents), which So
 <br />
 <Badge link="https://docs.sourcegraph.com/cloud" text="Admin" color="violet" size="small" />
 
-####  Sourcegraph Cloud, our secure and single-tenant Cloud offering, is now generally available
-After almost a decade of developing self-hosted Sourcegraph, we’ve gained the trust of some of the most sophisticated companies and development teams in the world, allowing us to work with their most sensitive IP: their code. Today—after years of building trust and engineering rigor—we are excited to move confidently to the Cloud with a highly secure and scalable solution.
+####  Sourcegraph Cloud, our secure and single-tenant cloud offering, is now generally available
+After almost a decade of developing self-hosted Sourcegraph, we’ve gained the trust of some of the most sophisticated companies and development teams in the world, allowing us to work with their most sensitive IP: their code. Today—after years of building trust and engineering rigor—we are excited to move confidently to the cloud with a highly secure and scalable solution.
 
 Dedicated, single-tenant Sourcegraph Cloud instances are now generally available, and the best way for teams to use Sourcegraph. You can read more in our announcement blog [here](/blog/enterprise-cloud).
 
@@ -159,7 +159,7 @@ Dedicated, single-tenant Sourcegraph Cloud instances are now generally available
 <Badge link="https://docs.sourcegraph.com/cloud" text="Admin" color="violet" size="small" />
 
 #### SOC 2 Type II certification for Sourcegraph Cloud
-We know that your code is one of your most important and sensitive assets. Every component of Sourcegraph was designed with security in mind. As part of our ongoing commitment to security, we recently received our SOC 2 Type II attestation for Sourcegraph Cloud. When you use Sourcegraph, you can be confident that Sourcegraph controls for the security and confidentiality of your sensitive data.
+We know that your code is one of your most important and sensitive assets. Every component of Sourcegraph was designed with security in mind. As part of our ongoing commitment to security, we recently received our SOC 2 Type II attestation for Sourcegraph Cloud. When you use Sourcegraph, you can be confident that Sourcegraph controls the security and confidentiality of your sensitive data.
 
 Check out our [Security Portal](https://security.sourcegraph.com/) to access the report and learn more about our security program.
 
@@ -190,13 +190,13 @@ We know that upgrading Sourcegraph can be a time-intensive process, especially i
 #### Understand usage and quantify the value of using Sourcegraph with in-product analytics
 [In-product analytics](https://docs.sourcegraph.com/admin/analytics) helps admins understand user engagement, measure efficiency in terms of time saved, and calculate the value of utilizing Sourcegraph.
 
-With charts that detail usage over time and value calculators that quantify the amount of time saved as users search, create insights, run batch changes, and more, you can answer now report on:
+With charts that detail usage over time and value calculators that quantify the amount of time saved as users search, create insights, run batch changes, and more, you can now report on:
 - The number of searches developers have run in Sourcegraph, and how much development time has been saved as a result.
 - How many Code Insights charts have been created, viewed, and interacted with.
 - The number of changesets that have been created and merged via Batch Changes, and how much time has been saved as a result.
 - How frequently code navigation has been used by developers to more quickly understand code.
-- How often IDE and Browser extensions are used across your organization, and how much time has been saved as a result.
-- The number of navigation events and the percentage of your repositories that allow precise code navigation
+- How often IDE and browser extensions are used across your organization, and how much time has been saved as a result.
+- The number of navigation events and the percentage of your repositories that allow precise code navigation.
 
 The feature value calculators use data derived from event logs and the default time-saved values can be customized to reflect how your team uses Sourcegraph.
 
@@ -215,7 +215,7 @@ The feature value calculators use data derived from event logs and the default t
 
 #### Easily export traces using OpenTelemetry
 
-[OpenTelemetry (OTEL)](https://opentelemetry.io/) is an open specification for exporting observability data into a user’s preferred systems. We aim to make OpenTelmetry the default way to quickly and easily export observability data from Sourcgraph, starting with tracing in Sourcegraph 4.0. This is a breaking change as we now require you to export tracing with the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/). This is deployed by default in all Sourcegraph deployment methods and replaces the Jaeger agents and collectors that was previously the default. 
+[OpenTelemetry (OTEL)](https://opentelemetry.io/) is an open specification for exporting observability data into a user’s preferred systems. We aim to make OpenTelemetry the default way to quickly and easily export observability data from Sourcgraph, starting with tracing in Sourcegraph 4.0. This is a breaking change as we now require you to export tracing with the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/). This is deployed by default in all Sourcegraph deployment methods and replaces the Jaeger agents and collectors that was previously the default. 
 
 <a href="https://docs.sourcegraph.com/admin/observability/opentelemetry" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
