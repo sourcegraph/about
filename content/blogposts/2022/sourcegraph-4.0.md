@@ -21,10 +21,10 @@ Read on to discover everything that shipped in Sourcegraph 4.0.
 <br />
 <Badge text="Code Insights" link="/code-insights" color="green" size="small" />
 
-#### Understand usage and search structure with Code Insights within the search UI
-[Code Insights](https://about.sourcegraph.com/code-insights) turns your code into a queryable database to create customizable, visual dashboards. We're bringing the power of Code Insights directly into the search UI to surface high-level information about your code, help you answer questions about your code, and refine your search results.  
+#### Understand usage and code structure with Code Insights in the search UI
+[Code Insights](https://about.sourcegraph.com/code-insights) turns your code into a queryable database to create customizable, visual dashboards. We're bringing the power of Code Insights directly into the search UI to surface high-level information from your codebase, help you answer questions about your code, and refine your search results.  
 
-Search aggregation charts appear on the search results page to help you answer questions, like:
+Search aggregation charts appear on the search results page to answer questions like:
 - How many different versions of a library or package are present in your code, and which is most common? 
 - Which files have the majority of these search results?
 - Which repositories is this library used in most?
@@ -35,8 +35,8 @@ You can choose to group your search results by location (repo or file), author, 
 
 <Video 
   source={{
-    webm: 'blog/release-post/4.0/Search_Aggregations_4.0',
-    mp4: 'blog/release-post/4.0/Search_Aggregations_4.0'
+    webm: 'blog/release-post/4.0/Search%20Aggregations',
+    mp4: 'blog/release-post/4.0/Search%20Aggregations'
   }}
   loop={true}
   title="High-level aggregations"
@@ -85,6 +85,7 @@ Auto-indexing allows you to set up precise code navigation for any chosen reposi
 <Badge link="https://docs.sourcegraph.com/integration" text="Extensions" color="vermillion" size="small" />
 
 #### Your favorite extensions are now available by default 
+
 Our most-used extensions, including code navigation, git-extras, open-in-editor, and search-exports, are now part of the platform and no longer require you to enable them. Essential code context is surfaced during the ideal moments in your workflow and knowledge about the codebase from the extensions can be found in the sidebar, when hovering over code, and after clicking on "more actions."
 
 Now that our [top extensions](https://docs.sourcegraph.com/extensions) are part of the core functionality, there will be greater support and functionality over time. With this change, you will no longer be able to access the extensions registry or create extensions on a private registry. Note: If you still need access to extensions or create extensions on a private registry, you can enable a feature flag to do so until early 2023.
@@ -159,6 +160,7 @@ Dedicated, single-tenant Sourcegraph Cloud instances are now generally available
 <Badge link="https://docs.sourcegraph.com/cloud" text="Admin" color="violet" size="small" />
 
 #### SOC 2 Type II certification for Sourcegraph Cloud
+
 We know that your code is one of your most important and sensitive assets. Every component of Sourcegraph was designed with security in mind. As part of our ongoing commitment to security, we recently received our SOC 2 Type II attestation for Sourcegraph Cloud. When you use Sourcegraph, you can be confident that Sourcegraph controls the security and confidentiality of your sensitive data.
 
 Check out our [Security Portal](https://security.sourcegraph.com/) to access the report and learn more about our security program.
