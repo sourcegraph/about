@@ -1,7 +1,7 @@
 ---
-title: "Secure and scalable Sourcegraph Cloud managed instances for the enterprise"
+title: "Secure and scalable Sourcegraph Cloud managed instances for enterprise"
 publishDate: 2022-09-27T10:00-07:00
-description: Sourcegraph Cloud, the single-tenant, dedicated Cloud version of Sourcegraph, is now generally available.
+description: Sourcegraph Cloud, the single-tenant, dedicated cloud version of Sourcegraph, is now generally available.
 tags: [blog]
 slug: "enterprise-cloud"
 published: false
@@ -24,9 +24,9 @@ As a developer, your code is your most valuable IP. This makes security critical
 
 That’s why we’re offering Sourcegraph Cloud via dedicated, single-tenant instances. When you run Sourcegraph Cloud, even as a trial, you get your own instance dedicated to only **your** code. You get company-level data isolation out-of-the-box.
 
-Plus, Sourcegraph has received a SOC 2 Type II report, so you can be confident that Sourcegraph controls for the security and confidentiality of your sensitive data.
+Plus, Sourcegraph has received a SOC 2 Type II report, so you can be confident that Sourcegraph operates its' controls effectively in regard to the security, availability and confidentiality of your sensitive data.
 
-This means you get enterprise-grade scaling. You can sync tens of thousands of repositories to your Sourcegraph instance and search across all of them without slowdowns, so you can stay in flow even when working in huge codebases.
+Cloud also supports enterprise-grade scaling. You can sync tens of thousands of repositories to your Sourcegraph instance and search across all of them without slowdowns, so you can stay in flow even when working in huge codebases.
 
 ## The latest features in the Cloud
 
@@ -42,4 +42,4 @@ On Cloud, executors require no extra configuration and no infrastructure provisi
 
 ## How to get started with Sourcegraph Cloud
 
-Sourcegraph Cloud is the best way to get started with Sourcegraph. If you’d like to try out Sourcegraph’s code intelligence platform for your team, you can [sign up for a trial here](https://www.signup.sourcegraph.com/).
+Sourcegraph Cloud is the best way to get started with Sourcegraph. If you’d like to try out Sourcegraph’s code intelligence platform for your team, you can [sign up for a trial here](https://signup.sourcegraph.com/).
