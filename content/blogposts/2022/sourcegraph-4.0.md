@@ -206,8 +206,6 @@ With charts that detail usage over time and value calculators that quantify the 
 - How often IDE and browser extensions are used across your organization, and how much time has been saved as a result.
 - The number of navigation events and the percentage of your repositories that allow precise code navigation.
 
-The feature value calculators use data derived from event logs and the default time-saved values can be customized to reflect how your team uses Sourcegraph.
-
 <div className="tw-mb-sm">
   <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Search.png"
