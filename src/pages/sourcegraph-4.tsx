@@ -38,7 +38,7 @@ const Sourcegraph4: FunctionComponent = () => (
                         className="tw-mx-auto tw-max-w-screen-md tw-w-full"
                     />
 
-                    <h1 className="tw-mb-sm -tw-mt-36">The future of Sourcegraph is here</h1>
+                    <h1 className="tw-mb-sm -tw-mt-3xl sm:-tw-mt-36">The future of Sourcegraph is here</h1>
                     <h3 className="tw-mb-5xl">
                         Sourcegraph 4.0, the latest release of our code intelligence platform, is now available. Watch
                         the livestream.
@@ -191,6 +191,11 @@ const Sourcegraph4: FunctionComponent = () => (
             centerContent={true}
             title="Learn more about the code intelligence platform for modern development teams"
             description=""
+            cta1={{
+                text: 'Get free trial',
+                ctaStyle: 'primaryButtonWhite',
+                link: '/pricing',
+            }}
             cta2={{
                 text: 'View pricing',
                 ctaStyle: 'outlineButtonWhiteText',
