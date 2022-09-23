@@ -214,7 +214,6 @@ The feature value calculators use data derived from event logs and the default t
 
 <a href="https://docs.sourcegraph.com/admin/analytics" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
-
 <br />
 <Badge link="https://docs.sourcegraph.com/admin/observability/opentelemetry" text="Admin" color="violet" size="small" />
 
