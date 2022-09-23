@@ -194,6 +194,10 @@ We know that upgrading Sourcegraph can be a time-intensive process, especially i
 #### Understand usage and quantify the value of using Sourcegraph with in-product analytics
 [In-product analytics](https://docs.sourcegraph.com/admin/analytics) helps admins understand user engagement, measure efficiency in terms of time saved, and calculate the value of utilizing Sourcegraph.
 
+These analytics show the exact usage of your Sourcegraph instance so you can see which features are most used across your organization. The usage data is also used to quantify how much time developers have saved as they use Sourcegraph to search and understand code, run batch changes, create insights, and more. You can also customize the default time-saved values to reflect how your team uses Sourcegraph. 
+
+With in-product analytics, you can now report on:
+
 With charts that detail usage over time and value calculators that quantify the amount of time saved as users search, create insights, run batch changes, and more, you can now report on:
 - The number of searches developers have run in Sourcegraph, and how much development time has been saved as a result.
 - How many Code Insights charts have been created, viewed, and interacted with.
