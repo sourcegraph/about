@@ -39,7 +39,7 @@ const ShiftLeftPage: FunctionComponent = () => (
         className="bg-white"
         hero={
             <div className="sg-bg-gradient-venus">
-                <div className="container pt-6 lg:tw-pt-5xl md:tw-text-center">
+                <div className="tw-max-w-screen-md tw-px-sm tw-mx-auto tw-py-5xl md:tw-text-center">
                     <h1>Shift Left: The good parts</h1>
                     <h3 className="mt-4 mb-0 md:tw-mx-auto max-w-750">5 practical ways to help your org shift left</h3>
                 </div>
