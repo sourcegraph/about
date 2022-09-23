@@ -9,7 +9,7 @@ import { buttonStyle, buttonLocation } from '@data'
 interface Cta {
     text: string
     icon?: ReactNode
-    ctaStyle?: 'primaryButton' | 'outlineButton' | 'outlineButtonLight'
+    ctaStyle?: 'primaryButton' | 'outlineButton' | 'outlineButtonLight' | 'outlineButtonWhiteText' | 'whiteButton'
     link?: string
     onClick?: () => void
 }
@@ -20,7 +20,7 @@ interface CtaSection {
     description?: string
     centerContent?: boolean
     slimWidth?: boolean
-    cta1: Cta
+    cta1?: Cta
     cta2?: Cta
 }
 
@@ -57,7 +57,9 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) =>
             href={link}
             className={classNames({
                 'btn btn-primary': ctaStyle === 'primaryButton',
+                'btn tw-bg-white tw-text-blurple-400': ctaStyle === 'whiteButton',
                 'btn btn-outline-primary': ctaStyle === 'outlineButton',
+                'btn btn-outline-primary tw-text-white': ctaStyle === 'outlineButtonWhiteText',
                 'btn tw-text-white tw-border-white hover:tw-bg-blurple-400 hover:tw-border-blurple-400':
                     ctaStyle === 'outlineButtonLight',
             })}
@@ -79,7 +81,9 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) =>
                 type="button"
                 className={classNames({
                     'btn btn-primary': ctaStyle === 'primaryButton',
+                    'btn tw-bg-white tw-text-blurple-400': ctaStyle === 'whiteButton',
                     'btn btn-outline-primary': ctaStyle === 'outlineButton',
+                    'btn btn-outline-primary tw-text-white': ctaStyle === 'outlineButtonWhiteText',
                     'btn tw-text-white tw-border-white hover:tw-bg-blurple-400 hover:tw-border-blurple-400':
                         ctaStyle === 'outlineButtonLight',
                     'tw-text-blurple-400 tw-font-bold': !ctaStyle,
@@ -115,17 +119,25 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) =>
  */
 export const CtaSection: FunctionComponent<CtaSection> = ({
     background,
-    title = 'Get started with Sourcegraph',
-    description = 'Understand, fix, and automate changes across your entire codebase.',
+    title = 'Try Sourcegraph for free today',
+    description = 'Experience code intelligence with a free 30-day trial of Sourcegraph for you and your team. Or, get in touch with our team for a demo of what code intelligence can do for you.',
     centerContent = false,
     slimWidth,
-    cta1,
-    cta2,
+    cta1 = {
+        text: 'Get free trial',
+        ctaStyle: 'primaryButton',
+        link: 'https://signup.sourcegraph.com',
+    },
+    cta2 = {
+        text: 'Request a demo',
+        ctaStyle: 'outlineButton',
+        link: '/demo',
+    },
 }) => (
     <ContentSection background={background} slimWidth={slimWidth}>
         <div
             className={classNames({
-                'tw-max-w-xl tw-mx-auto tw-text-center': centerContent,
+                'tw-max-w-3xl tw-mx-auto tw-text-center': centerContent,
                 'tw-grid tw-grid-cols-5': !centerContent && !slimWidth,
                 'tw-mx-auto tw-grid tw-grid-cols-2 tw-items-center': slimWidth,
             })}
@@ -138,9 +150,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                 {!slimWidth && <h2 className="tw-mb-sm">{title}</h2>}
                 {slimWidth && <h4 className="tw-mb-sm">{title}</h4>}
                 <p
-                    className={classNames('tw-text-lg', {
-                        'md:tw-pr-5xl': !centerContent,
-                    })}
+                    className={classNames('tw-text-lg', centerContent ? 'tw-mx-auto md:tw-max-w-2xl' : 'md:tw-max-w-lg')}
                 >
                     {description}
                 </p>
@@ -148,7 +158,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
 
             <div
                 className={classNames({
-                    'tw-inline-flex tw-flex-col tw-self-center': centerContent,
+                    'tw-inline-flex tw-flex-col sm:tw-flex-row tw-self-center': centerContent,
                     'tw-col-span-full md:tw-col-span-2 tw-flex tw-flex-col lg:tw-flex-row tw-items-start md:tw-items-center':
                         !centerContent && !slimWidth,
                     'lg:tw-justify-end': !centerContent && cta2,
@@ -158,7 +168,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                 })}
             >
                 {cta1 && (
-                    <div className={classNames({ 'tw-mt-sm': !slimWidth })}>
+                    <div className={classNames({ 'tw-mt-sm': !slimWidth, 'sm:tw-mr-sm': centerContent })}>
                         <Cta {...cta1} />
                     </div>
                 )}
@@ -173,7 +183,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                             {...{
                                 ...cta2,
                                 ctaStyle:
-                                    background?.includes('dark') || background?.includes('black')
+                                    (background?.includes('dark') || background?.includes('black') && !cta2.ctaStyle?.includes('outlineButton') )
                                         ? 'outlineButtonLight'
                                         : cta2.ctaStyle,
                             }}

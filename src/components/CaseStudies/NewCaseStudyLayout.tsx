@@ -1,7 +1,5 @@
 import { FunctionComponent } from 'react'
 
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-
 import { ContentSection, CtaSection } from '@components'
 
 import { CaseStudyCard, CASESTUDIES } from './CaseStudyCard'
@@ -23,15 +21,10 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, childre
             <CtaSection
                 background="venusCode"
                 centerContent={true}
-                cta1={{
-                    text: 'Request a demo',
-                    ctaStyle: 'primaryButton',
-                    link: '/demo',
-                }}
                 cta2={{
-                    text: 'Try Sourcegraph now',
-                    icon: <ArrowRightIcon />,
-                    link: '/get-started/self-hosted',
+                    text: 'Request a demo',
+                    ctaStyle: 'outlineButton',
+                    link: '/demo',
                 }}
             />
 
