@@ -5,8 +5,8 @@ description: Announcing Sourcegraph 4.0
 tags: [blog, release]
 slug: "release/4.0"
 published: true
-heroImage: blog/release-post/4.0/Release.png
-socialImage: blog/release-post/4.0/Release.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/release.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/release.png
 changelogItems:
 ---
 
