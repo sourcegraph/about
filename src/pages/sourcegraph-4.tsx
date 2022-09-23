@@ -59,7 +59,7 @@ const Sourcegraph4: FunctionComponent = () => (
                     type: 'Blog Post',
                     href: '/blog/code-search-to-code-intelligence',
                     img: {
-                        src: 'https://via.placeholder.com/256x156',
+                        src: 'https://storage.googleapis.com/sourcegraph-assets/blog/4.0/to-code-intelligence-thumb.png',
                         alt: 'Sourcegraph Code Intelligence Platform',
                     },
                 },
@@ -70,7 +70,7 @@ const Sourcegraph4: FunctionComponent = () => (
                     type: 'Blog Post',
                     href: '/blog/release/4.0',
                     img: {
-                        src: 'https://via.placeholder.com/256x156',
+                        src: 'https://storage.googleapis.com/sourcegraph-assets/blog/4.0/release-thumb.png',
                         alt: 'Sourcegraph 4.0',
                     },
                 },
@@ -81,7 +81,7 @@ const Sourcegraph4: FunctionComponent = () => (
                     type: 'Blog Post',
                     href: '/blog/enterprise-cloud',
                     img: {
-                        src: 'https://via.placeholder.com/256x156',
+                        src: 'https://storage.googleapis.com/sourcegraph-assets/blog/4.0/cloud-instances.png',
                         alt: 'Sourcegraph Cloud',
                     },
                 },
