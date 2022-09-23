@@ -41,4 +41,4 @@ On Cloud, executors require no extra configuration and no infrastructure provisi
 
 ## How to get started with Sourcegraph Cloud
 
-Sourcegraph Cloud is the best way to get started with Sourcegraph. If you’d like to try out Sourcegraph’s code intelligence platform for your team, you can [sign up for a trial here](https://signup.sourcegraph.com/).
+Sourcegraph Cloud is the best way to get started with Sourcegraph. If you’d like to try out Sourcegraph’s code intelligence platform for your team, you can [sign up for a 30-day free trial](https://signup.sourcegraph.com/).
