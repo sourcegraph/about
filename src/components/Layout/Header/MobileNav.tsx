@@ -138,20 +138,6 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                     </a>
                 </li>
 
-                {!hideGetStartedButton && (
-                    <li className="tw-items-center nav-item" role="presentation">
-                        <a
-                            className="nav-link"
-                            href="https://sourcegraph.com/search"
-                            title="Search code"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.nav}
-                            data-button-type="cta"
-                        >
-                            Search code
-                        </a>
-                    </li>
-                )}
                 <li className="tw-items-center nav-item" role="presentation">
                     <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -168,18 +154,16 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                 </li>
                 {!hideGetStartedButton && (
                     <li className="tw-items-center nav-item" role="presentation">
-                        <Link href="/get-started/self-hosted" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="nav-link"
-                                title="Get started"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.nav}
-                                data-button-type="cta"
-                            >
-                                Get started
-                            </a>
-                        </Link>
+                        <a
+                            className="nav-link"
+                            href="https://signup.sourcegraph.com"
+                            title="Get free trial"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.nav}
+                            data-button-type="cta"
+                        >
+                            Get free trial
+                        </a>
                     </li>
                 )}
             </ul>
