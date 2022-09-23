@@ -56,7 +56,7 @@ const Hero: FunctionComponent = () => {
                     <div className="mb-3 col-sm-6 sm:tw-px-0 mb-sm-0 mr-sm-3">
                         <a
                             className="btn btn-primary w-100"
-                            href="https:/signup.sourcegraph.com"
+                            href="https://signup.sourcegraph.com"
                             title="Get started"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.hero}
