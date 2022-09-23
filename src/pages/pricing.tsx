@@ -184,16 +184,16 @@ const PricingPage: FunctionComponent = () => {
             <div className="tw-py-3xl md:tw-py-5xl md:tw-max-w-screen-xl tw-mx-auto tw-overflow-x-auto md:tw-overflow-visible">
                 <table className="tw-relative tw-border-0">
                     <thead>
-                        <tr>
-                            <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 md:tw-w-1/3 tw-w-2/4">
-                                <div className="tw-h-full tw-p-sm md:tw-pt-xs tw-pt-md tw-pr-xs tw-border-b-1 tw-border-gray-200">
-                                    <h2 className="tw-max-w-[250px] tw-text-4xl md:tw-text-7xl tw-hidden md:tw-block">
+                        <tr className="md:tw-sticky md:tw-top-16">
+                            <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
+                                <div className="lg:tw-h-60 md:tw-h-[165px] tw-h-[155px] tw-p-sm md:tw-pt-xs tw-pt-md tw-pr-xs tw-border-b-1 tw-border-gray-200">
+                                    <h2 className="tw-max-w-[250px] tw-text-4xl md:tw-text-7xl tw-hidden lg:tw-block">
                                         Compare all features
                                     </h2>
                                 </div>
                             </th>
-                            <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 md:tw-w-1/3 tw-min-w-[25%]">
-                                <div className="tw-h-full tw-p-sm tw-border-t-16 tw-border-1 tw-border-gray-200 tw-border-t-vermillion-300">
+                            <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
+                                <div className="tw-h-full tw-p-sm tw-pb-md tw-border-t-16 tw-border-1 tw-border-gray-200 tw-border-t-vermillion-300">
                                     <h2 className="tw-text-2xl md:tw-text-4xl tw-mb-sm">Business</h2>
                                     <h4 className="tw-font-normal tw-hidden lg:tw-block tw-mb-sm">
                                         $99 per active user/month
@@ -201,8 +201,8 @@ const PricingPage: FunctionComponent = () => {
                                     <BusinessCTA />
                                 </div>
                             </th>
-                            <th className="tw-border-0 tw-text-start tw-sticky tw-top-16 tw-bg-white tw-p-0 tw-h-60 md:tw-w-1/3 tw-min-w-[25%]">
-                                <div className="tw-h-full tw-p-sm tw-border-t-16 tw-border-b-1 tw-border-gray-200 tw-border-t-violet-400">
+                            <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
+                                <div className="tw-h-full tw-p-sm tw-pb-md tw-border-t-16 tw-border-b-1 tw-border-gray-200 tw-border-t-violet-400">
                                     <h2 className="tw-text-2xl md:tw-text-4xl tw-mb-sm">Enterprise</h2>
                                     <h4 className="tw-font-normal tw-hidden lg:tw-block tw-mb-sm">Custom pricing</h4>
                                     <EnterpriseCTA />
