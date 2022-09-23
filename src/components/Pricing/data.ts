@@ -416,7 +416,7 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     selfHosts: {
         label: 'Self-hosted code hosts',
         description:
-            'Integrate with GitHub Enterprise server, GitLab Self-hosted, Bitbucket Server/Data Center, and Perforce.',
+            'Integrate with GitHub Enterprise Server, GitLab self-managed, Bitbucket Server/Data Center, and Perforce.',
     },
     enterpriseHosts: {
         label: 'All Git-based code hosts',
