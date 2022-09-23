@@ -1,9 +1,13 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
+import classNames from 'classnames'
 import Link from 'next/link'
 
 import { ContentSection, CustomerLogos, Video } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
+
+import meshLeft from './assets/hero/mesh-left.png'
+import meshRight from './assets/hero/mesh-right.png'
 
 const Hero: FunctionComponent = () => {
     const headlines: string[] = ['Understand and search', 'Fix vulnerabilities and issues', 'Automate key workflows']
@@ -22,7 +26,20 @@ const Hero: FunctionComponent = () => {
     })
 
     return (
-        <div className="tw-max-w-screen-xl tw-mx-auto tw-bg-white">
+        <div className="tw-relative tw-px-sm tw-pb-3xl md:tw-pb-5xl tw-bg-white tw-text-black">
+            {[meshLeft, meshRight].map((image, index) => (
+                <div
+                    key={image.src}
+                    className={classNames('tw-hidden lg:tw-block tw-absolute tw-top-0', {
+                        ['tw-left-0']: index === 0,
+                        ['tw-right-0']: index === 1,
+                    })}
+                >
+                    <img src={image.src} alt="" draggable={false} className="w-100 h-800" />
+                    <div className="tw-absolute tw-bottom-0 tw-left-0 tw-w-full tw-h-[80px] tw-bg-gradient-to-b tw-from-transparent tw-to-white" />
+                </div>
+            ))}
+
             <div className="tw-mx-auto tw-pt-md md:tw-pt-5xl tw-text-center">
                 <h1 className="tw-text-4xl tw-leading-10 md:tw-text-6xl lg:tw-text-[3.75rem] lg:tw-leading-[1]">
                     <span className="mb-2 tw-text-transparent tw-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">
@@ -65,7 +82,7 @@ const Hero: FunctionComponent = () => {
                 </div>
             </div>
 
-            <ContentSection slimWidth={true} parentClassName="tw-mt-xl">
+            <ContentSection slimWidth={true}>
                 <Video
                     source={{
                         mp4: 'batch-changes/how-it-works',
