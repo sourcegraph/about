@@ -22,7 +22,7 @@ Read on to discover everything that shipped in Sourcegraph 4.0.
 <Badge text="Code Insights" link="/code-insights" color="green" size="small" />
 
 #### Understand usage and code structure with Code Insights in the search UI
-[Code Insights](https://about.sourcegraph.com/code-insights) turns your code into a queryable database to create customizable, visual dashboards. We're bringing the power of Code Insights directly into the search UI to surface high-level information from your codebase, help you answer questions about your code, and refine your search results.  
+[Code Insights](/code-insights) turns your code into a queryable database to create customizable, visual dashboards. We're bringing the power of Code Insights directly into the search UI to surface high-level information from your codebase, help you answer questions about your code, and refine your search results.  
 
 Search aggregation charts appear on the search results page to answer questions like:
 - How many different versions of a library or package are present in your code, and which is most common? 
