@@ -40,7 +40,7 @@ You can choose to group your search results by location (repo or file), author, 
   }}
   loop={true}
   title="High-level aggregations"
-  caption="*The power of Code Insights is now within the search UI to surface usage patterns about your code*"
+  caption="The power of Code Insights is now within the search UI to surface usage patterns about your code"
 />
 <a href="https://docs.sourcegraph.com/code_insights/explanations/search_results_aggregations" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
   
@@ -58,7 +58,7 @@ We also made major performance improvements to make rendering search results, fi
   <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/New-Search-UI.png"
     alt="UI Improvements"
-    catpion="*Our streamlined and simplified the search user interface*"
+    catpion="A streamlined and simplified the search user interface"
   />
 </div>
 
@@ -77,7 +77,7 @@ Auto-indexing allows you to set up precise code navigation for any chosen reposi
   }}
   loop={true}
   title="Ruby precise code navigation"
-  caption="*Auto-indexing is now supported for 9 languages and allows you to set up precise code navigation, automatically*"
+  caption="Auto-indexing is now supported for 9 languages and allows you to set up precise code navigation, automatically"
 />
 
 <a href="https://docs.sourcegraph.com/code_navigation/references/indexers" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
@@ -97,7 +97,7 @@ This update *does not* impact our IDE extensions, which will continue to allow y
   <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Blame.png"
     alt="Git Blame"
-    caption="*Git-extras is now part of the platform and the core functionality*"
+    caption="Git-extras is now part of the platform and core functionality"
   />
 </div>
 
@@ -114,7 +114,7 @@ Your code navigation experience just got better with a refreshed version of the 
   }}
   loop={true}
   title="Reference panel refresh"
-  caption="*Stay within your workflow and quickly access references with the revamped reference panel*"
+  caption="Stay within your workflow and quickly access references with the revamped reference panel"
 />
 
 <a href="https://docs.sourcegraph.com/code_navigation/explanations/features#find-references" className="tw-not-italic tw-flex tw-items-center">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
@@ -141,7 +141,7 @@ This feature requires admins to set up executors (much like CI agents), which So
   }}
   loop={true}
   title="Server-side Batch Changes"
-  caption="*Large-scale changes can be run across thousands of repositories with server-side Batch Changes*"
+  caption="Large-scale changes can be run across thousands of repositories with server-side Batch Changes"
 />
 
 <a href="https://docs.sourcegraph.com/batch_changes/explanations/server_side" className="tw-not-italic tw-flex tw-items-center">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
@@ -183,7 +183,7 @@ We know that upgrading Sourcegraph can be a time-intensive process, especially i
   }}
   loop={true}
   title="Multi-version upgrades"
-  caption="*Upgrade to 4.0 directly from version 3.20 or higher with multi-version upgrades*"
+  caption="Upgrade to 4.0 directly from version 3.20 or higher with multi-version upgrades"
 />
 
 <a href="https://docs.sourcegraph.com/admin/updates#multi-version-upgrades" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
@@ -208,7 +208,7 @@ The feature value calculators use data derived from event logs and the default t
   <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Search.png"
     alt="In-product analytics"
-    caption="*Understand usage and quantify the value of using Sourcegraph with in-product analytics*"
+    caption="Understand usage and quantify the value of using Sourcegraph with in-product analytics"
   />
 </div>
 
@@ -233,7 +233,7 @@ New enhancements to the repository status page help you better understand the cu
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Repositories.png"
   alt="Repository Status"
-  caption="*See the current state of repository and permisions syncing*"
+  caption="See the current state of repository and permisions syncing"
 />
 
 <a href="https://docs.sourcegraph.com/admin/external_service" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
