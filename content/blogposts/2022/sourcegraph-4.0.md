@@ -198,7 +198,7 @@ With charts that detail usage over time and value calculators that quantify the 
 - The number of searches developers have run in Sourcegraph, and how much development time has been saved as a result.
 - How many Code Insights charts have been created, viewed, and interacted with.
 - The number of changesets that have been created and merged via Batch Changes, and how much time has been saved as a result.
-- How frequently code navigation has been used by developers to more quickly understand code.
+- How frequently code navigation has been used by developers to quickly understand code.
 - How often IDE and browser extensions are used across your organization, and how much time has been saved as a result.
 - The number of navigation events and the percentage of your repositories that allow precise code navigation.
 
