@@ -85,7 +85,7 @@ Auto-indexing allows you to set up precise code navigation for any chosen reposi
 <Badge link="https://docs.sourcegraph.com/integration" text="Extensions" color="vermillion" size="small" />
 
 #### Your favorite extensions are now available by default 
-Top used extensions including code navigation, git-extras, open-in-editor and, search-exports are now part of the platform and no longer have to be manually installed or enabled. These features provide essential context and actions to help streamline your workflow and easily switch between tools when needed.
+Top used extensions including code navigation, git-extras, open-in-editor, and search-exports are now part of the platform and no longer have to be manually installed or enabled. These features provide essential context and actions to help streamline your workflow and easily switch between tools when needed.
 
 Now that our [top extensions](https://docs.sourcegraph.com/extensions) are part of the core functionality, there will be continued support and enhancements over time. With this change, you will no longer be able to access the extensions registry or create extensions on a private registry. Note: if you still need access to extensions or create extensions on a private registry, you can enable a feature flag to do so until early 2023.
 
