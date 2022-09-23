@@ -150,9 +150,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                 {!slimWidth && <h2 className="tw-mb-sm">{title}</h2>}
                 {slimWidth && <h4 className="tw-mb-sm">{title}</h4>}
                 <p
-                    className={classNames('tw-text-lg', {
-                        'md:tw-max-w-lg': !centerContent,
-                    })}
+                    className={classNames('tw-text-lg', centerContent ? 'tw-mx-auto md:tw-max-w-2xl' : 'md:tw-max-w-lg')}
                 >
                     {description}
                 </p>

@@ -115,7 +115,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
             centerContent={true}
             cta2={{
                 text: 'Request a demo',
-                ctaStyle: 'outlineButton',
+                ctaStyle: 'outlineButtonWhiteText',
                 link: '/demo',
             }}
         />
