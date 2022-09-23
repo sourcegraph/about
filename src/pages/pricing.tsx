@@ -111,7 +111,7 @@ const faqData = [
     },
     {
         q: 'What are executors?',
-        a: 'Executors are like CI agents that Sourcegraph uses to offload expensive tasks. Executors are required to run Batch Changes server-side and to use code navigation’s auto-indexing functionality. The Business plan includes 2 executors and the Enterprise plan includes 4 executors.',
+        a: 'Executors are required to run Batch Changes server-side and to use code navigation’s auto-indexing functionality. The Business plan includes 2 executors and the Enterprise plan includes 4 executors.',
     },
     {
         q: 'Does Sourcegraph offer discounts for educational and non-profit organizations?',
@@ -157,7 +157,7 @@ const PricingPage: FunctionComponent = () => {
                     <PricingPlan
                         name="Business"
                         price="$99 per active user/month"
-                        description="Full platform access for teams and orgs, all on a single-tenant Cloud instance."
+                        description="Full platform access for teams and orgs, all on a single-tenant cloud instance."
                         features={BIZ_FEATURES_OVERVIEW}
                         isEnterprise={false}
                         buttons={<BusinessCTA btnOnMobile={true} />}
