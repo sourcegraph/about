@@ -47,7 +47,7 @@ export const BIZ_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['businessStorage', 'businessExecutors'],
     },
     { topic: '24/5 support' },
-    { topic: 'Secure, single-tenant cloud deployment' },
+    { topic: 'Single-tenant cloud deployment' },
 ]
 
 /** Enterprise spotlight feature set */
@@ -341,12 +341,12 @@ const SECURITY_FEATURE_INFO: Record<string, FeatureInfo> = {
 
 const DEPLOYMENT_FEATURE_INFO: Record<string, FeatureInfo> = {
     cloudDeployment: {
-        label: 'Secure, single-tenant cloud deployment',
-        description: 'Your own dedicated, single-tenant Sourcegraph instance.',
+        label: 'Single-tenant cloud deployment',
+        description: 'Your organization’s dedicated, single-tenant Sourcegraph cloud instance.',
     },
     selfDeployment: {
         label: 'Self-hosted deployment',
-        description: 'Deploy with Docker, Docker Compose, or Kubernetes on your own infrastructure.',
+        description: 'Deploy with Docker, Docker Compose, or Kubernetes on your organization’s infrastructure.',
     },
 }
 
@@ -363,17 +363,18 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Search, understand, fix, and automate across multiple code hosts.',
     },
     selfHostedCodeHosts: {
-        label: 'Connect to self-hosted code hosts',
+        label: 'Integrate with self-hosted code hosts',
         description:
-            'Integrate with GitHub Enterprise server, GitLab Self-hosted, Bitbucket Server/Data Center, and Perforce.',
+            'Integrate with GitHub Enterprise server, GitLab self-managed, Bitbucket Server/Data Center, and Perforce.',
     },
     enterpriseOnlyCodeHosts: {
-        label: 'Connect to enterprise-only code hosts',
+        label: 'Integrate with all Git-based code hosts',
         description: 'Integrate with any Git-based code host via src serve-git.',
     },
     privateCodeHosts: {
-        label: 'Connect to private code hosts',
-        description: 'Integrate with supported code hosts stored behind a firewall (only available for self-hosted deployments).',
+        label: 'Integrate with private code hosts',
+        description:
+            'Integrate with supported code hosts deployed on a private network (only available for self-hosted deployments).',
     },
 
     ...SECURITY_FEATURE_INFO,
@@ -389,8 +390,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     businessExecutors: {
         label: '2 executors',
-        description:
-            'Offload expensive tasks when running Batch Changes server-side or using code navigation’s auto-indexing functionality.',
+        description: 'Execute server-side Batch Changes and use auto-indexing for precise code navigation.',
     },
     enterpriseExecutors: {
         label: '4 executors',
@@ -408,7 +408,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     dedicatedManager: {
         label: 'Dedicated technical account manager',
         description:
-            'Dedicated technical account manager to support usage, training, enablement, technical strategy, and overall health.',
+            'Dedicated Technical Account Manager to support usage, training, enablement, technical strategy, and overall health.',
     },
 }
 
@@ -474,7 +474,7 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     ...DEPLOYMENT_FEATURE_INFO,
     airGappedDeploy: {
         label: 'Air-gapped deployment',
-        description: 'Deploy Sourcegraph in an air-gapped environment on your own infrastructure. (add-on)',
+        description: 'Deploy Sourcegraph in an offline environment on your organization’s infrastructure (add-on).',
     },
     deploymentMonitoring: {
         label: 'Self-hosted deployment monitoring',

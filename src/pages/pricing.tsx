@@ -27,25 +27,25 @@ const BusinessCTA: FunctionComponent<{ className?: string; btnOnMobile?: boolean
     const isMdOrDown = windowWidth < breakpoints.lg
 
     return (
-            <a
-                className={classNames(
-                    btnOnMobile && 'btn btn-primary',
-                    'tw-w-full md:tw-w-auto',
-                    className,
-                    btnOnMobile
-                        ? 'md:tw-mr-xs tw-mr-0 tw-mb-xs lg:tw-mb-0'
-                        : isMdOrDown
-                        ? 'font-weight-normal'
-                        : 'btn btn-primary'
-                )}
-                href="https://signup.sourcegraph.com"
-                title="Get free trial"
-                data-button-style={buttonStyle.primary}
-                data-button-location={buttonLocation.trySourcegraph}
-                data-button-type="cta"
-            >
-                Get free trial
-            </a>
+        <a
+            className={classNames(
+                btnOnMobile && 'btn btn-primary',
+                'tw-w-full md:tw-w-auto',
+                className,
+                btnOnMobile
+                    ? 'md:tw-mr-xs tw-mr-0 tw-mb-xs lg:tw-mb-0'
+                    : isMdOrDown
+                    ? 'font-weight-normal'
+                    : 'btn btn-primary'
+            )}
+            href="https://signup.sourcegraph.com"
+            title="Get free trial"
+            data-button-style={buttonStyle.primary}
+            data-button-location={buttonLocation.trySourcegraph}
+            data-button-type="cta"
+        >
+            Get free trial
+        </a>
     )
 }
 
