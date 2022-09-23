@@ -5,8 +5,8 @@ description: Finding things in code is good, but learning things about code is g
 tags: [blog]
 slug: "code-search-to-code-intelligence"
 published: false
-heroImage: 
-socialImage: 
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/to-code-intelligence.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/to-code-intelligence.png
 ---
 
 No matter how good your dev tools are, coding is complex. This is true even if you've configured your editor just right, sped up your test suite, set up continuous deployment, and added observability. Tools like higher-level languages, libraries, and frameworks can help, but as you take on bigger and more ambitious projects, you'll likely spend your complexity budget elsewhere. The overall complexity of code has increased over time, and there's no sign of that trend changing.
