@@ -29,13 +29,13 @@ const Hero: FunctionComponent = () => {
         <div className="tw-relative tw-px-sm tw-pb-3xl md:tw-pb-5xl tw-bg-white tw-text-black">
             {[meshLeft, meshRight].map((image, index) => (
                 <div
-                    key={image.src}
+                    key={`mesh-container-${Math.random()}`}
                     className={classNames('tw-hidden lg:tw-block tw-absolute tw-top-0', {
                         ['tw-left-0']: index === 0,
                         ['tw-right-0']: index === 1,
                     })}
                 >
-                    <img src={image.src} alt="" draggable={false} className="w-100 h-800" />
+                    <img src={image.src} alt="" draggable={false} className="tw-w-full tw-max-w-xl" />
                     <div className="tw-absolute tw-bottom-0 tw-left-0 tw-w-full tw-h-[80px] tw-bg-gradient-to-b tw-from-transparent tw-to-white" />
                 </div>
             ))}
