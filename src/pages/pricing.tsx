@@ -94,7 +94,7 @@ const faqData = [
         a: (
             <p>
                 Yes. We offer a free, 30-day trial for our paid plans.{' '}
-                <Link href="/get-started/self-hosted" passHref={true}>
+                <Link href="https://signup.sourcegraph.com" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         title="Get started"
