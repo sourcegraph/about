@@ -87,11 +87,11 @@ Auto-indexing allows you to set up precise code navigation for any chosen reposi
 
 #### Your favorite extensions are now available by default 
 
-Our most-used extensions, including code navigation, git-extras, open-in-editor, and search-exports, are now part of the platform and no longer require you to enable them. Essential code context is surfaced during the ideal moments in your workflow and knowledge about the codebase from the extensions can be found in the sidebar, when hovering over code, and after clicking on "more actions."
+Top used extensions, including code navigation, git-extras, open-in-editor, and search-exports, are now part of the platform as native functionality and no longer require you to enable them on your own as "extensions."
 
-Now that our [top extensions](https://docs.sourcegraph.com/extensions) are part of the core functionality, there will be greater support and functionality over time. With this change, you will no longer be able to access the extensions registry or create extensions on a private registry. Note: If you still need access to extensions or create extensions on a private registry, you can enable a feature flag to do so until early 2023.
+Now that top extensions are part of the core functionality, there will be greater support and continued improvements over time. With this change, you will no longer be able to access the extensions registry or create extensions on a private registry. Note: If you still need access to extensions or create extensions on a private registry, you can enable a feature flag to do so until early 2023.
 
-This update *does not* impact our IDE extensions, which will continue to allow you to search and navigate across all of your repositories without ever leaving your IDE or checking them out locally.
+This update *does not* impact our IDE extensions, which will continue to allow you to search and navigate across all of your repositories without ever leaving your IDE or checking them out locally. Our browser extensions will continue to have code navigation support, but other functionality to the code host will be discontinued (e.g. code coverage information).
 
 <div className="tw-mb-sm">
   <Figure
