@@ -35,8 +35,8 @@ You can choose to group your search results by location (repo or file), author, 
 
 <Video 
   source={{
-    webm: 'blog/release-post/4.0/Search_Aggregations_4.0',
-    mp4: 'blog/release-post/4.0/Search_Aggregations_4.0'
+    webm: 'blog/release-post/4.0/Search%20Aggregations',
+    mp4: 'blog/release-post/4.0/Search%20Aggregations'
   }}
   loop={true}
   title="High-level aggregations"
