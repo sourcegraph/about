@@ -5,30 +5,29 @@ description: Sourcegraph Cloud, the single-tenant, dedicated cloud version of So
 tags: [blog]
 slug: "enterprise-cloud"
 published: false
-heroImage: 
-socialImage: 
-changelogItems:
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/cloud-instances.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/cloud-instances.png
 ---
 
 Soucegraph has long existed as self-hosted software, letting our customers confidently and securely run Sourcegraph in their own environments. After almost a decade of developing self-hosted Sourcegraph, we’ve gained the trust of some of the most sophisticated companies and development teams in the world, allowing us to work with their most sensitive IP: their code.
 
-At the same time, we’ve seen immense demand for Cloud-based Sourcegraph in recent years. Developers want a solution that can be spun up quickly, upgraded regularly, and maintained effortlessly without compromising security.
+At the same time, we’ve seen immense demand for cloud-based Sourcegraph in recent years. Developers want a solution that can be spun up quickly, upgraded regularly, and maintained effortlessly without compromising security.
 
-In 2020, we experimented with deploying Cloud-based Sourcegraph to fit these needs, which we called “managed instances.” We ran these instances as single-tenant, isolated deployments in GCP, and the demand was so strong that almost 10% of our customers are using this solution today. Since then, we’ve invested significantly in this single-tenant architecture solution, making it more scalable and bringing it to full feature parity with Sourcegraph Self-hosted. 
+In 2020, we experimented with deploying cloud-based Sourcegraph to fit these needs, which we called “managed instances.” We ran these instances as single-tenant, isolated deployments in GCP, and the demand was so strong that almost 10% of our customers are using this solution today. Since then, we’ve invested significantly in this single-tenant architecture solution, making it more scalable and bringing it to full feature parity with Sourcegraph Self-hosted. 
 
-Today — after years of building trust and engineering rigor — we're confidently moving to the Cloud with this highly secure and scalable solution. Dedicated Sourcegraph Cloud instances are now generally available, and the best way for new teams to use Sourcegraph.
+Today — after years of building trust and engineering rigor — we're confidently moving to the cloud with this highly secure and scalable solution. Dedicated Sourcegraph Cloud instances are now generally available, and the best way for new teams to use Sourcegraph.
 
 ## Security and scalability
 
 As a developer, your code is your most valuable IP. This makes security critical for Sourcegraph in all forms.
 
-That’s why we’re offering Sourcegraph Cloud via dedicated, single-tenant instances. When you run Sourcegraph Cloud, even as a trial, you get your own instance dedicated to only **your** code. You get company-level data isolation out-of-the-box.
+That’s why we’re offering Sourcegraph Cloud via dedicated, single-tenant instances. When your organization runs Sourcegraph Cloud, even as a trial, you get your own instance dedicated to only your organization's code. You get company-level data isolation out-of-the-box.
 
 Plus, Sourcegraph has received a SOC 2 Type II report, so you can be confident that Sourcegraph operates its' controls effectively in regard to the security, availability and confidentiality of your sensitive data.
 
 Cloud also supports enterprise-grade scaling. You can sync tens of thousands of repositories to your Sourcegraph instance and search across all of them without slowdowns, so you can stay in flow even when working in huge codebases.
 
-## The latest features in the Cloud
+## The latest features in the cloud
 
 Keeping feature parity between Sourcegraph Self-hosted and Sourcegraph Cloud is another reason we chose a single-tenant architecture. Every Cloud instance is kept up-to-date with the latest Sourcegraph releases.
 
