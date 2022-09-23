@@ -72,7 +72,6 @@ export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
         topic: '24/5 priority support',
         features: ['slaSupport', 'dedicatedManager'],
     },
-    { topic: 'Add ons' },
 ]
 
 export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
@@ -239,16 +238,6 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
                 business: false,
                 enterprise: 'Add-on',
             },
-            {
-                label: 'deploymentMonitoring',
-                business: false,
-                enterprise: 'Add-on',
-            },
-            {
-                label: 'backupRestore',
-                business: false,
-                enterprise: 'Add-on',
-            },
         ],
     },
     {
@@ -342,7 +331,7 @@ const SECURITY_FEATURE_INFO: Record<string, FeatureInfo> = {
 const DEPLOYMENT_FEATURE_INFO: Record<string, FeatureInfo> = {
     cloudDeployment: {
         label: 'Single-tenant cloud deployment',
-        description: 'Your organization’s dedicated, single-tenant Sourcegraph cloud instance.',
+        description: 'Your organization’s dedicated, single-tenant Sourcegraph Cloud instance.',
     },
     selfDeployment: {
         label: 'Self-hosted deployment',
@@ -365,7 +354,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     selfHostedCodeHosts: {
         label: 'Integrate with self-hosted code hosts',
         description:
-            'Integrate with GitHub Enterprise server, GitLab self-managed, Bitbucket Server/Data Center, and Perforce.',
+            'Integrate with GitHub Enterprise Server, GitLab self-managed, Bitbucket Server/Data Center, and Perforce.',
     },
     enterpriseOnlyCodeHosts: {
         label: 'Integrate with all Git-based code hosts',
@@ -406,7 +395,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Priority ticket handling and guaranteed initial response SLA from a dedicated team.',
     },
     dedicatedManager: {
-        label: 'Dedicated technical account manager',
+        label: 'Dedicated Technical Account Manager',
         description:
             'Dedicated Technical Account Manager to support usage, training, enablement, technical strategy, and overall health.',
     },
@@ -427,15 +416,15 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     selfHosts: {
         label: 'Self-hosted code hosts',
         description:
-            'Integrate with GitHub Enterprise server, GitLab Self-hosted, Bitbucket Server/Data Center, and Perforce.',
+            'Integrate with GitHub Enterprise Server, GitLab self-managed, Bitbucket Server/Data Center, and Perforce.',
     },
     enterpriseHosts: {
-        label: 'Enterprise-only code hosts',
+        label: 'All Git-based code hosts',
         description: 'Integrate with any Git-based code host via src serve-git.',
     },
     privateHosts: {
         label: 'Private code hosts',
-        description: 'Integrate with supported code hosts stored behind a firewall.',
+        description: 'Integrate with supported code hosts deployed on a private network (only available for self-hosted deployments).',
     },
 
     // Security and admin
@@ -453,7 +442,7 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     executors: {
         label: 'Executors',
         description:
-            'Offload expensive tasks when running Batch Changes server-side or using code navigation’s auto-indexing functionality.',
+            'Execute server-side Batch Changes and use auto-indexing for precise code navigation.',
     },
 
     // Support
@@ -463,7 +452,7 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     dedicatedManager: {
         label: 'Dedicated Technical Account Manager',
         description:
-            'Dedicated technical account manager to support usage, training, enablement, technical strategy, and overall health.',
+            'Dedicated Technical Account Manager to support usage, training, enablement, technical strategy, and overall health.',
     },
     supportSla: {
         label: 'Support SLA',
@@ -474,16 +463,7 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     ...DEPLOYMENT_FEATURE_INFO,
     airGappedDeploy: {
         label: 'Air-gapped deployment',
-        description: 'Deploy Sourcegraph in an offline environment on your organization’s infrastructure (add-on).',
-    },
-    deploymentMonitoring: {
-        label: 'Self-hosted deployment monitoring',
-        description: 'Monitor the performance and health of your Sourcegraph cluster. (add-on)',
-    },
-    backupRestore: {
-        label: 'Self-hosted backup and restore',
-        description:
-            'Officially supported scripts to back up and restore your Sourcegraph instance and all configuration and data. (add-on)',
+        description: 'Deploy Sourcegraph in an offline environment on your organization’s infrastructure. (add-on)',
     },
 
     // Usage and billing
