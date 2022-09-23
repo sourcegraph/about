@@ -3,7 +3,7 @@ import { FunctionComponent, useEffect, useState } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { ContentSection, CustomerLogos, Video } from '@components'
+import { ContentSection, CustomerLogos, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 import meshLeft from './assets/hero/mesh-left.png'
@@ -83,14 +83,7 @@ const Hero: FunctionComponent = () => {
             </div>
 
             <ContentSection slimWidth={true}>
-                <Video
-                    source={{
-                        mp4: 'batch-changes/how-it-works',
-                        webm: 'batch-changes/how-it-works',
-                    }}
-                    loop={true}
-                    title="Batch Changes: How it works"
-                />
+                <YouTube id="Kk1ea2-l8Hk" />
             </ContentSection>
 
             <CustomerLogos />
