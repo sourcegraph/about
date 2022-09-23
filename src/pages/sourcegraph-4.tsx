@@ -191,14 +191,9 @@ const Sourcegraph4: FunctionComponent = () => (
             centerContent={true}
             title="Learn more about the code intelligence platform for modern development teams"
             description=""
-            cta1={{
-                text: 'Get free trial',
-                ctaStyle: 'primaryButton',
-                link: 'https://signup.sourcegraph.com',
-            }}
             cta2={{
                 text: 'View pricing',
-                ctaStyle: 'outlineButtonLight',
+                ctaStyle: 'outlineButtonWhiteText',
                 link: '/pricing',
             }}
         />
