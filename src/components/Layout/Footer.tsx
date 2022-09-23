@@ -21,8 +21,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
         >
             <div className="tw-max-w-screen-xl tw-mx-auto tw-px-4">
                 {!minimal && (
-                    <div className="tw-mb-8 tw-grid tw-grid-cols-6 md:tw-grid-cols-5">
-                        <div className="tw-col-span-5 md:tw-col-span-2">
+                    <div className="tw-mb-8 tw-flex tw-flex-col-reverse sm:tw-grid sm:tw-grid-cols-12">
+                        <div className="tw-col-span-12 lg:tw-col-span-5 tw-mt-xl sm:tw-mt-0 sm:tw-mb-sm lg:tw-mb-0">
                             <Link href="/" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
@@ -64,35 +64,18 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                             </ul>
                         </div>
 
-                        {footerLinks.map(section => (
-                            <div
-                                className="tw-mb-3 lg:tw-mb-0 tw-col-span-6 sm:tw-col-span-2 md:tw-col-span-1"
-                                key={section.section}
-                            >
-                                <h3 className="tw-text-lg tw-font-semibold">{section.section}</h3>
-                                <ul className="tw-ml-0 tw-list-none">
-                                    {section.items.map(item => (
-                                        <li className="tw-mb-2 tw-text-sm" key={item.title}>
-                                            {item.href.includes('http') ? (
-                                                <a
-                                                    href={item.href}
-                                                    target="_blank"
-                                                    rel="noreferrer"
-                                                    title={item.title}
-                                                    data-button-style={buttonStyle.text}
-                                                    data-button-location={buttonLocation.footer}
-                                                    data-button-type="cta"
-                                                    className={classNames('tw-font-medium', {
-                                                        'tw-text-gray-300': isDarkNav,
-                                                        'tw-text-gray-500': !isDarkNav,
-                                                    })}
-                                                >
-                                                    {item.title}
-                                                </a>
-                                            ) : (
-                                                <Link href={item.href} passHref={true}>
-                                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <div className="tw-col-span-12 lg:tw-col-span-7 sm:tw-grid sm:tw-grid-cols-12">
+                            {footerLinks.map(section => (
+                                <div className="tw-mb-md sm:tw-mb-0 sm:tw-col-span-4" key={section.section}>
+                                    <h5 className="tw-mb-xs">{section.section}</h5>
+                                    <ul className="tw-ml-0 tw-list-none">
+                                        {section.items.map(item => (
+                                            <li className="tw-mb-xs tw-text-sm" key={item.title}>
+                                                {item.href.includes('http') ? (
                                                     <a
+                                                        href={item.href}
+                                                        target="_blank"
+                                                        rel="noreferrer"
                                                         title={item.title}
                                                         data-button-style={buttonStyle.text}
                                                         data-button-location={buttonLocation.footer}
@@ -104,27 +87,44 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                                                     >
                                                         {item.title}
                                                     </a>
-                                                </Link>
-                                            )}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
+                                                ) : (
+                                                    <Link href={item.href} passHref={true}>
+                                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                                        <a
+                                                            title={item.title}
+                                                            data-button-style={buttonStyle.text}
+                                                            data-button-location={buttonLocation.footer}
+                                                            data-button-type="cta"
+                                                            className={classNames('tw-font-medium', {
+                                                                'tw-text-gray-300': isDarkNav,
+                                                                'tw-text-gray-500': !isDarkNav,
+                                                            })}
+                                                        >
+                                                            {item.title}
+                                                        </a>
+                                                    </Link>
+                                                )}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 )}
 
-                <div className={classNames('tw-text-sm', { 'tw-py-4': minimal, 'tw-pt-6 tw-pb-2': !minimal })}>
-                    <ul className="tw-ml-0 tw-list-none tw-flex">
-                        <li className="tw-mr-4">&copy; {new Date().getFullYear()} Sourcegraph</li>
-                        <li className="tw-mr-4">-</li>
+                <div className={classNames('tw-text-sm', { 'tw-py-4': minimal, 'tw-pt-sm tw-pb-2': !minimal })}>
+                    <ul className="tw-ml-0 tw-list-none">
+                        <li className="tw-text-gray-500 tw-mr-lg sm:tw-inline">
+                            &copy; {new Date().getFullYear()} Sourcegraph, Inc.
+                        </li>
 
                         {postscriptLinks.items.map(item => (
-                            <li key={item.title}>
+                            <li key={item.title} className="tw-inline-block tw-mt-xxs sm:tw-mt-0">
                                 <Link key={item.title} href={item.href} passHref={true}>
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
-                                        className={classNames('tw-p-0 tw-mr-4', {
+                                        className={classNames('tw-p-0 tw-mr-5', {
                                             'tw-text-gray-300': isDarkNav,
                                             'tw-text-gray-500': !isDarkNav,
                                         })}
