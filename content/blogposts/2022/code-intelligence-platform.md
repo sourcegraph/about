@@ -1,5 +1,5 @@
 ---
-title: "From code search toward a code intelligence platform"
+title: "From code search to a code intelligence platform"
 publishDate: 2022-09-27T10:00-07:00
 description: Finding things in code is good, but learning things about code is great. Sourcegraph's code intelligence platform is built to help.
 tags: [blog]
