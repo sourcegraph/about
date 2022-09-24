@@ -1,7 +1,7 @@
 ---
 title: "From code search to a code intelligence platform"
 publishDate: 2022-09-27T10:00-07:00
-description: No matter how good your dev tools are, coding is complex. We're building a code intelligence platform to tackle this complexity.
+description: No matter how good your dev tools are, coding is complex. We're building a code intelligence platform to help you unblock yourself and code better.
 tags: [blog]
 slug: "code-search-to-code-intelligence"
 published: false
@@ -17,7 +17,7 @@ But as developers of software, we all feel the pain of code complexity: not bein
 
 On top of this, devs are more important than ever. We've gone from being viewed as cost centers to being seen as the center of product development, so the issue of complexity is a business problem just as much as a dev problem.
 
-In 2013, we set out to tackle this complexity issue by building code search and making it available to every dev and company. Code search is helpful in reducing complexity, but it's not enough. It helps you find things *in* code (matching lines in files), but developers also need to learn things *about* code. Google went from helping you find things *on* the web (matching web pages) to helping you learn things *from* the web (information and answers) by connecting adjacent data like news, videos, and maps back to web search. Now, when users need information, they go to Google even if the answer isn't simply a web page. We're doing the same for code with our code intelligence platform.
+In 2013, we set out to tackle this complexity issue by building code search and making it available to every dev and company. Code search is helpful in reducing complexity, but it's not enough. It helps you find things *in* code (matching lines in files), but developers also need to learn things *about* code. Google went from helping you find things *on* the web (matching web pages) to helping you learn things *from* the web (information and answers) by connecting data like news, videos, and maps back to web search. Today, you go to Google to answer complex questions and learn things, not to find things. As Sourcegraph, we're doing the same for code with our code intelligence platform.
 
 Today, we're releasing Sourcegraph 4.0. 4.0 is a big step for Sourcegraph and our customers as we shift from a code search tool into a code intelligence platform.
 
