@@ -15,7 +15,7 @@ As consumers of software, we (mostly) benefit from this phenomenon in the form o
 
 But as developers of software, we all feel the pain of code complexity: not being able to get in flow, encountering tech debt that turns a tiny fix into a multi-day ordeal, and all the wasted time just trying to understand big codebases.
 
-On top of this, devs are more important than ever. Devs have gone from being viewed as cost centers to being seen as the center of product development, so the issue of complexity is a business problem just as much as a dev problem.
+On top of this, devs are more important than ever. We've gone from being viewed as cost centers to being seen as the center of product development, so the issue of complexity is a business problem just as much as a dev problem.
 
 In 2013, we set out to tackle this complexity issue by building code search and making it available to every dev and company. Code search is helpful in reducing complexity, but it's not enough. It helps you find things *in* code (matching lines in files), but developers also need to learn things *about* code. Google went from helping you find things *on* the web (matching web pages) to helping you learn things *from* the web (information and answers) by connecting adjacent data like news, videos, and maps back to web search. Now, when users need information, they go to Google even if the answer isn't simply a web page. We're doing the same for code with our code intelligence platform.
 
@@ -23,7 +23,7 @@ Today, we're releasing Sourcegraph 4.0. 4.0 is a big step for Sourcegraph and ou
 
 A code intelligence platform indexes and understands all of your organization's code, no matter where it's stored or what language it's in. With Sourcegraph, devs and engineering leaders have a complete understanding of their codebase, so they can learn *about* code and operate more efficiently.
 
-A code intelligence platform should compute and store data beyond the code itself and make that data accessible. Sourcegraph already pulls in information on code history, repository metadata, and metrics derived from code via Code Insights. Here are some examples of what we see the platform doing in the future:
+Our code intelligence platform will compute and store data beyond the code itself and make that data accessible. Sourcegraph already pulls in information on code history, repository metadata, and metrics derived from code via Code Insights. Here is what coding will look like with a code intelligence platform:
 
 - Trying to figure out the best way to call a function? Code search shows you a semi-exhaustive list of call sites. Code intelligence is seeing how the code owners of that function themselves have recently been calling that function.
 - Need to debug an issue in code? Code search helps you navigate within the same project to understand it. Code intelligence is seeing what changed and why, and trace calls across projects and dependencies/dependents.
