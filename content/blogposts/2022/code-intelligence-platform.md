@@ -2,7 +2,6 @@
 title: "From code search to a code intelligence platform"
 publishDate: 2022-09-27T10:00-07:00
 description: No matter how good your dev tools are, coding is complex. We're building a code intelligence platform to tackle this complexity.
-Finding things in code is good, but learning things about code is great. Sourcegraph's code intelligence platform is built to help.
 tags: [blog]
 slug: "code-search-to-code-intelligence"
 published: false
