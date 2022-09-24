@@ -5,17 +5,17 @@ description: Finding things in code is good, but learning things about code is g
 tags: [blog]
 slug: "code-search-to-code-intelligence"
 published: false
-heroImage: 
-socialImage: 
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/to-code-intelligence.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/to-code-intelligence.png
 ---
 
 No matter how good your dev tools are, coding is complex. This is true even if you've configured your editor just right, sped up your test suite, set up continuous deployment, and added observability. Tools like higher-level languages, libraries, and frameworks can help, but as you take on bigger and more ambitious projects, you'll likely spend your complexity budget elsewhere. The overall complexity of code has increased over time, and there's no sign of that trend changing.
 
 As consumers of software, we (mostly) benefit from this phenomenon in the form of better technology in our everyday lives.
 
-But as developers of software, we all feel the pain of code complexity: the struggle to understand big codebases, not being able to get in flow, encountering tech debt that turns a tiny fix into a multi-day ordeal, all the wasted time, etc. 
+But as developers of software, we all feel the pain of code complexity: not being able to get in flow, encountering tech debt that turns a tiny fix into a multi-day ordeal, and all the wasted time just trying to understand big codebases.
 
-On top of this, devs are more important to their companies than ever. Devs have gone from being viewed as cost centers to being seen as the center of product development, so the issue of complexity is a business problem just as much as a dev problem.
+On top of this, devs are more important than ever. Devs have gone from being viewed as cost centers to being seen as the center of product development, so the issue of complexity is a business problem just as much as a dev problem.
 
 In 2013, we set out to tackle this complexity issue by building code search and making it available to every dev and company. Code search is helpful in reducing complexity, but it's not enough. It helps you find things *in* code (matching lines in files), but developers also need to learn things *about* code. Google went from helping you find things *on* the web (matching web pages) to helping you learn things *from* the web (information and answers) by connecting adjacent data like news, videos, and maps back to web search. Now, when users need information, they go to Google even if the answer isn't simply a web page. We're doing the same for code search with our code intelligence platform.
 
@@ -23,14 +23,14 @@ Today, we're releasing Sourcegraph 4.0, the latest version of our code intellige
 
 A code intelligence platform indexes and understands all of your organization's code, no matter where it's stored or what language it's in. With Sourcegraph, devs an dengineering leaders have a complete understanding of their codebase, so they can learn about code and BLANK.
 
-A code intelligence platform should persist data beyond the code itself and make that data accessible. Here are some examples of what we see the platform doing in the future:
+A code intelligence platform should compute and store data beyond the code itself and make that data accessible. Here are some examples of what we see the platform doing in the future:
 
 - Trying to figure out the best way to call a function? Code search could show you a semi-exhaustive list of call sites. Code intelligence is also being able to see how the code owners of that function themselves have recently been calling that function.
 - Need to debug an issue in code? Code search could help you navigate within the same project to understand it. Code intelligence is also being able to see what changed and why, and trace calls across projects and dependencies/dependents.
 - Want to fix or improve something across your entire codebase? Code search might help you find where needs fixing. Code intelligence is also being able to push up a quick fix everywhere, track its progress, and monitor for regressions. Sourcegraph does this today.
 - Need to see how your team's API is being used? Code search could show you a list of file locations. Code intelligence is also seeing which other teams are using it and the trend of usage over time.
 
-A code intelligence platform includes code search *and* information about your code from so many other tools, etc., that you rely on: code ownership (and mapping of that to teams, on-call, etc.), code history and reviews, the dependency graph, runtime service/API usage, code and security scanners, deployment status, CI pipeline output, etc. Sourcegraph is committed to being universal so you can get full code intelligence *and* keep using the best tools in each category.
+A code intelligence platform includes code search *and* information about your code from so many other tools that you rely on. Today, Sourcegaph pulls in information on code history, the dependency graph, and repository metadata. 
 
 Today, we're announcing Sourcegraph 4.0, the code intelligence platform for devs to unblock themselves and code better. We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams, including 4 of 5 FAANG companies and 4 of the top 10 U.S. banks. 
 

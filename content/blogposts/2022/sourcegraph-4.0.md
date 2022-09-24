@@ -5,8 +5,8 @@ description: Announcing Sourcegraph 4.0
 tags: [blog, release]
 slug: "release/4.0"
 published: true
-heroImage: blog/release-post/4.0/Release.png
-socialImage: blog/release-post/4.0/Release.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/release.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/release.png
 changelogItems:
 ---
 
@@ -87,11 +87,11 @@ Auto-indexing allows you to set up precise code navigation for any chosen reposi
 
 #### Your favorite extensions are now available by default 
 
-Our most-used extensions, including code navigation, git-extras, open-in-editor, and search-exports, are now part of the platform and no longer require you to enable them. Essential code context is surfaced during the ideal moments in your workflow and knowledge about the codebase from the extensions can be found in the sidebar, when hovering over code, and after clicking on "more actions."
+Top used extensions, including code navigation, git-extras, open-in-editor, and search-exports, are now part of the platform as native functionality and no longer require you to enable them on your own as "extensions."
 
-Now that our [top extensions](https://docs.sourcegraph.com/extensions) are part of the core functionality, there will be greater support and functionality over time. With this change, you will no longer be able to access the extensions registry or create extensions on a private registry. Note: If you still need access to extensions or create extensions on a private registry, you can enable a feature flag to do so until early 2023.
+Now that top extensions are part of the core functionality, there will be greater support and continued improvements over time. With this change, you will no longer be able to access the extensions registry or create extensions on a private registry. Note: If you still need access to extensions or create extensions on a private registry, you can enable a feature flag to do so until early 2023.
 
-This update *does not* impact our IDE extensions, which will continue to allow you to search and navigate across all of your repositories without ever leaving your IDE or checking them out locally.
+This update *does not* impact our IDE extensions, which will continue to allow you to search and navigate across all of your repositories without ever leaving your IDE or checking them out locally. Our browser extensions will continue to have code navigation support, but other functionality to the code host will be discontinued (e.g. code coverage information).
 
 <div className="tw-mb-sm">
   <Figure
@@ -126,7 +126,7 @@ Your code navigation experience just got better with a refreshed version of the 
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 
 #### Make changes across your codebase at enterprise scale with server-side Batch Changes (beta)
-[Batch Changes](https://about.sourcegraph.com/batch-changes) allows you to automate code changes across your entire codebase. Previously, you had to run `src-cli` locally to create batch changes, which could take an impractical amount of time or be brittle for large or resource-intensive batch changes. Now, with server-side Batch Changes, large-scale changes can be run across thousands of repositories with a better development experience. With server-side Batch Changes:
+[Batch Changes](https://about.sourcegraph.com/batch-changes) allows you to automate code changes across your entire codebase. Previously, you had to run `src-cli` locally to create batch changes, which could take an impractical amount of time or be brittle for large or resource-intensive batch changes. Now, with server-side Batch Changes, large-scale changes can be run across thousands of repositories with a better development experience. With server-side Batch Changes, you can:
 
 - Run large-scale or resource-intensive batch changes without clogging your local machine.
 - Run large batch changes quickly by distributing them across an autoscaled pool of compute instances.
@@ -151,7 +151,7 @@ This feature requires admins to set up executors (much like CI agents), which So
 <br />
 <Badge link="https://docs.sourcegraph.com/cloud" text="Admin" color="violet" size="small" />
 
-####  Sourcegraph Cloud, our secure and single-tenant cloud offering, is now generally available
+####  Sourcegraph Cloud, our single-tenant cloud offering, is now generally available
 After almost a decade of developing self-hosted Sourcegraph, we’ve gained the trust of some of the most sophisticated companies and development teams in the world, allowing us to work with their most sensitive IP: their code. Today—after years of building trust and engineering rigor—we are excited to move confidently to the cloud with a highly secure and scalable solution.
 
 Dedicated, single-tenant Sourcegraph Cloud instances are now generally available, and the best way for teams to use Sourcegraph. You can read more in our announcement blog [here](/blog/enterprise-cloud), or [sign up for a 30-day trial for your organization](https://signup.sourcegraph.com/).
@@ -194,15 +194,17 @@ We know that upgrading Sourcegraph can be a time-intensive process, especially i
 #### Understand usage and quantify the value of using Sourcegraph with in-product analytics
 [In-product analytics](https://docs.sourcegraph.com/admin/analytics) helps admins understand user engagement, measure efficiency in terms of time saved, and calculate the value of utilizing Sourcegraph.
 
+These analytics show the exact usage of your Sourcegraph instance so you can see which features are most used across your organization. The usage data is also used to quantify how much time developers have saved as they use Sourcegraph to search and understand code, run batch changes, create insights, and more. You can also customize the default time-saved values to reflect how your team uses Sourcegraph. 
+
+With in-product analytics, you can now report on:
+
 With charts that detail usage over time and value calculators that quantify the amount of time saved as users search, create insights, run batch changes, and more, you can now report on:
 - The number of searches developers have run in Sourcegraph, and how much development time has been saved as a result.
 - How many Code Insights charts have been created, viewed, and interacted with.
 - The number of changesets that have been created and merged via Batch Changes, and how much time has been saved as a result.
-- How frequently code navigation has been used by developers to more quickly understand code.
+- How frequently code navigation has been used by developers to quickly understand code.
 - How often IDE and browser extensions are used across your organization, and how much time has been saved as a result.
 - The number of navigation events and the percentage of your repositories that allow precise code navigation.
-
-The feature value calculators use data derived from event logs and the default time-saved values can be customized to reflect how your team uses Sourcegraph.
 
 <div className="tw-mb-sm">
   <Figure
@@ -219,7 +221,7 @@ The feature value calculators use data derived from event logs and the default t
 
 #### Easily export traces using OpenTelemetry
 
-[OpenTelemetry (OTEL)](https://opentelemetry.io/) is an open specification for exporting observability data into a user’s preferred systems. We aim to make OpenTelemetry the default way to quickly and easily export observability data from Sourcgraph, starting with tracing in Sourcegraph 4.0. This is a breaking change as we now require you to export tracing with the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/). This is deployed by default in all Sourcegraph deployment methods and replaces the Jaeger agents and collectors that was previously the default. 
+[OpenTelemetry (OTEL)]((https://opentelemetry.io/)) is an open specification for exporting observability data. We’ve added OpenTelemetry support in Sourcegraph 4.0 so you can easily export tracing data from Sourcegraph into your preferred observability solution. This is a breaking change as we now require you to export tracing with the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/). This is deployed by default in all Sourcegraph deployment methods and replaces the Jaeger agents and collectors that was previously the default.
 
 <a href="https://docs.sourcegraph.com/admin/observability/opentelemetry" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
