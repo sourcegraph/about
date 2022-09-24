@@ -21,18 +21,18 @@ In 2013, we set out to tackle this complexity issue by building code search and 
 
 Today, we're releasing Sourcegraph 4.0, the latest version of our code intelligence platform. 4.0 is a big step for Sourcegraph and our customers as we shift from a code search tool into a code intelligence platform.
 
-A code intelligence platform indexes and understands all of your organization's code, no matter where it's stored or what language it's in. With Sourcegraph, devs an dengineering leaders have a complete understanding of their codebase, so they can learn about code and BLANK.
+A code intelligence platform indexes and understands all of your organization's code, no matter where it's stored or what language it's in. With Sourcegraph, devs and engineering leaders have a complete understanding of their codebase, so they can learn about code and operate more efficiently.
 
-A code intelligence platform should compute and store data beyond the code itself and make that data accessible. Here are some examples of what we see the platform doing in the future:
+A code intelligence platform should compute and store data beyond the code itself and make that data accessible. Sourcegraph already pulls in information on code history, repository metadata, and  Here are some examples of what we see the platform doing in the future:
 
-- Trying to figure out the best way to call a function? Code search could show you a semi-exhaustive list of call sites. Code intelligence is also being able to see how the code owners of that function themselves have recently been calling that function.
-- Need to debug an issue in code? Code search could help you navigate within the same project to understand it. Code intelligence is also being able to see what changed and why, and trace calls across projects and dependencies/dependents.
-- Want to fix or improve something across your entire codebase? Code search might help you find where needs fixing. Code intelligence is also being able to push up a quick fix everywhere, track its progress, and monitor for regressions. Sourcegraph does this today.
-- Need to see how your team's API is being used? Code search could show you a list of file locations. Code intelligence is also seeing which other teams are using it and the trend of usage over time.
+- Trying to figure out the best way to call a function? Code search shows you a semi-exhaustive list of call sites. Code intelligence is seeing how the code owners of that function themselves have recently been calling that function.
+- Need to debug an issue in code? Code search helps you navigate within the same project to understand it. Code intelligence is seeing what changed and why, and trace calls across projects and dependencies/dependents.
+- Want to fix or improve something across your entire codebase? Code search helps you find the spots that need fixing. Code intelligence pushes up a quick fix everywhere, track its progress, and monitor for regressions. Sourcegraph does this today.
+- Need to see how your team's API is being used? Code search shows you a list of file locations. Code intelligence shows which other teams are using it and the trend of usage over time.
 
 A code intelligence platform includes code search *and* information about your code from so many other tools that you rely on. Today, Sourcegaph pulls in information on code history, the dependency graph, and repository metadata. 
 
-Today, we're announcing Sourcegraph 4.0, the code intelligence platform for devs to unblock themselves and code better. We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams, including 4 of 5 FAANG companies and 4 of the top 10 U.S. banks. 
+Today, we're announcing Sourcegraph 4.0, the code intelligence platform for devs to unblock themselves and write better code. We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams, from 4 of 5 FAANG companies and 4 of the top 10 U.S. banks, to companies launching satellites into space and the leaders in autonomous transportation. 
 
 Sourcegraph 4.0 is available to all users now. It's available self-hosted and on our newest service, Sourcegraph Cloud, our single-tenant cloud solution that is [now generally available](/blog/enterprise-cloud). Sourcegraph Cloud provides isolated, secure instances for every customer.
 
