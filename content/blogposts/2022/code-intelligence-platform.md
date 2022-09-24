@@ -28,7 +28,7 @@ A code intelligence platform should compute and store data beyond the code itsel
 - Want to fix or improve something across your entire codebase? Code search might help you find where needs fixing. Code intelligence is also being able to push up a quick fix everywhere, track its progress, and monitor for regressions. Sourcegraph does this today.
 - Need to see how your team's API is being used? Code search could show you a list of file locations. Code intelligence is also seeing which other teams are using it and the trend of usage over time.
 
-A code intelligence platform includes code search *and* information about your code from so many other tools, etc., that you rely on: code ownership (and mapping of that to teams, on-call, etc.), code history and reviews, the dependency graph, runtime service/API usage, code and security scanners, deployment status, CI pipeline output, etc. Sourcegraph is committed to being universal so you can get full code intelligence *and* keep using the best tools in each category.
+A code intelligence platform includes code search *and* information about your code from so many other tools that you rely on. Today, Sourcegaph pulls in information on code history, the dependency graph, and repository metadata. 
 
 Today, we're announcing Sourcegraph 4.0, the code intelligence platform for devs to unblock themselves and code better. We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams, including 4 of 5 FAANG companies and 4 of the top 10 U.S. banks. 
 
