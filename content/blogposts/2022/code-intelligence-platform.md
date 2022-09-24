@@ -23,7 +23,7 @@ Today, we're releasing Sourcegraph 4.0. 4.0 is a big step for Sourcegraph and ou
 
 A code intelligence platform indexes and understands all of your organization's code, no matter where it's stored or what language it's in. With Sourcegraph, devs and engineering leaders have a complete understanding of their codebase, so they can learn *about* code and operate more efficiently.
 
-A code intelligence platform should compute and store data beyond the code itself and make that data accessible in helpful ways. Sourcegraph already pulls in information on code history, repository metadata, and metrics derived from code via Code Insights. Here are some examples of what we see the platform doing in the future:
+A code intelligence platform should compute and store data beyond the code itself and make that data accessible. Sourcegraph already pulls in information on code history, repository metadata, and metrics derived from code via Code Insights. Here are some examples of what we see the platform doing in the future:
 
 - Trying to figure out the best way to call a function? Code search shows you a semi-exhaustive list of call sites. Code intelligence is seeing how the code owners of that function themselves have recently been calling that function.
 - Need to debug an issue in code? Code search helps you navigate within the same project to understand it. Code intelligence is seeing what changed and why, and trace calls across projects and dependencies/dependents.
