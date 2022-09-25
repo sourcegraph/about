@@ -4,7 +4,7 @@ publishDate: 2022-09-27T10:00-07:00
 description: No matter how good your dev tools are, coding is complex. We're building a code intelligence platform to help you unblock yourself and code better.
 tags: [blog]
 slug: "code-search-to-code-intelligence"
-published: false
+published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/to-code-intelligence.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/to-code-intelligence.png
 ---

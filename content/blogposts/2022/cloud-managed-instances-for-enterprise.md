@@ -4,7 +4,7 @@ publishDate: 2022-09-27T10:00-07:00
 description: Sourcegraph Cloud, the single-tenant, dedicated cloud version of Sourcegraph, is now generally available.
 tags: [blog]
 slug: "enterprise-cloud"
-published: false
+published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/cloud-instances.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/cloud-instances.png
 ---
