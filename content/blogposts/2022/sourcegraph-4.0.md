@@ -17,7 +17,6 @@ Sourcegraph 4.0 includes over a dozen updates and new features, and it is the fi
 Today, we're also launching [Sourcegraph Cloud:](/blog/enterprise-cloud) secure, scalable, dedicated Sourcegraph instances on the cloud. Sourcegraph Cloud is the best way to start using Sourcegraph on your organization's code. [Sign up now](https://signup.sourcegraph.com/) to experience Sourcegraph 4.0.
 
 
-A code intelligence platform indexes and understands all of your organization’s code, so instead of just *matching lines in code*, you can answer questions and learn *about* code.
 
 **Read on to discover everything in Sourcegraph 4.0:**
 * [🧠 Code intelligence: uplevel your code search](#code-intelligence-uplevel-your-code-search)
