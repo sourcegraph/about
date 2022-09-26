@@ -47,9 +47,11 @@ If you doubt this, then imagine building today's software with 15-year-old build
 
 #### Dev tools must constantly improve just to keep pace with growing code complexity
 
-The situation is even worse than it seems. Code complexity isn't in equilibrium. Devs are constantly introducing complexity into their codebase without first dutifully removing complexity elsewhere. Code is much easier to write than to maintain, simplify, or decommission, and this is becoming even more true as code becomes more interdependent.
+The situation is even worse than it seems. Code complexity isn't in equilibrium. Devs are constantly introducing complexity into their codebase without first dutifully removing complexity elsewhere.
 
-Also, codebases are growing quickly. Here are some data points to consider:
+Code is much easier to write than to maintain, simplify, or decommission. This is becoming even more true as code becomes more interdependent.
+
+As a result, codebases are growing quickly in complexity and size. Here are some data points to consider:
 
 * The size of your `node_modules` tree over time (or `vendor`, etc.).
 * The amount of time you've personally spent decommissioning systems vs. creating them. If it's not at least a 5-to-1 ratio, you're probably part of the problem&mdash;along with everyone else, no worries.
@@ -57,7 +59,7 @@ Also, codebases are growing quickly. Here are some data points to consider:
 
 {/* In theory, a bigger codebase isn't necessarily a more complex codebase. You can just tend to your little, perfectly encapsulated corner of the codebase. No matter how big the overall codebase got, your life stays the same. But we all know it never works out this way. */}
 
-What allows this rapid increase in software complexity (and, I hope/believe in most cases, a corresponding increase in software quality and features)? Dev tools are getting better rapidly and cancelling out some of the complexity increase so that our human brains can still get by.
+What allows this rapid increase in software complexity (and, I hope/believe in most cases, a corresponding increase in software quality and features)? Why doesn't the increasing complexity of the system prevent all progress? Because dev tools are getting better *very* quickly and cancelling out some of the complexity increase so that our human brains can still get by.
 
 #### Don't take software progress for granted
 
@@ -67,11 +69,7 @@ But continual progress isn't a given, for dev tools or software itself. No funda
 
 To maintain the rate of software progress, we're going to need a continuous drip of new dev tools on the order of Git, Docker, ubiquitous unit testing, VS Code, Chrome DevTools, Go, TypeScript, etc.
 
-So, which new dev tools will clear the way for future software progress? Let's look to the companies on the frontier of dev tooling.
-
-<blockquote style={{marginTop: '2rem', marginBottom: '1.25rem', padding: '0.75rem', backgroundColor: '#f7f7f7'}}>
-<p style={{marginBottom:0}}>*DISCLAIMER([@sqs](https://slack.org)):* This is when I start to talk about [Sourcegraph](https://about.sourcegraph.com), code search, and code intelligence. You may consider me biased, because I'm the Sourcegraph CEO/cofounder. But my love for code search and intelligence tooling is genuine (otherwise, why would I have started Sourcegraph?).</p>
-</blockquote>
+So, which new dev tools will clear the way for future software progress? It's instructive to look to the companies on the frontier of dev tooling to see what they're doing.
 
 #### Companies on the frontier of dev tooling
 
@@ -86,6 +84,10 @@ Google, Facebook, Amazon, Netflix, Stripe, and others have widespread early adop
 
 Not every dev tool invented or adopted by these big companies is a winner. But when all of these companies are all adopting the same kind of new dev tool, and it addresses a problem that every other smaller company will soon face, then you should take notice. And that's what we saw happening with code search around the time we started Sourcegraph in 2013.
 
+<blockquote style={{marginBottom: '1.25rem', padding: '0.75rem', backgroundColor: '#f7f7f7'}}>
+<p style={{marginBottom:0}}>*DISCLAIMER([@sqs](https://slack.org)):* This is when I start to talk about [Sourcegraph](https://about.sourcegraph.com), code search, and code intelligence. You may consider me biased, because I'm the Sourcegraph CEO/cofounder. But my love for code search and intelligence tooling is genuine (otherwise, why would I have started Sourcegraph?).</p>
+</blockquote>
+
 #### The state of code search around 2013
 
 My cofounder and I had both felt the pain of working in big, complex codebases&mdash;and the value of a code search tool.
@@ -96,24 +98,16 @@ I was hacking on [patches to cURL](https://sourcegraph.com/github.com/curl/curl/
 
 We also started hearing about [Facebook's internal code search tool](https://codesearchguide.org/story/facebook).
 
-Code search tools made it possible, but still not easy, to understand these massive codebases.
+Code search tools made it possible, and even fun, to work in big, complex codebases. And we assumed that most companies in the future would have big, complex codebases. So, we started Sourcegraph in 2013 with the idea to build the code search tool that we'd love using, make it easy for devs to bring it into their company, and then get those companies to pay for it.
 
-#### All the dev tools early adopters have early-adopted code search
+#### All the dev tools early adopters started adopting code search
 
-When these companies build or adopt a new dev tool or practice,
+It all went pretty much as planned. (Except that as with many startups, it initially took a few more years than we expected, but we stayed committed to code search.)
 
+We felt validated when we saw so many sophisticated tech companies adopt code search: in addition to [Google](https://codesearchguide.org/story/google) and [Facebook](https://codesearchguide.org/story/facebook) as previously mentioned, Amazon, [Stripe](https://codesearchguide.org/story/stripe), and more. We're proud to have earned some amazing customers, including Uber, Lyft, Dropbox, Atlassian, [Yelp](https://codesearchguide.org/story/yelp), 4/5 of the FAANG companies, and 4 of the top 10 US banks.
 
+#### Code search 
 
-
-
-I'm especially worried about how the amount of code is increasing at a much faster rate than the number of developers. 
-
-
-
-
-But as developers of software, we all feel the pain of code complexity: not being able to get in flow, encountering tech debt that turns a tiny fix into a multi-day ordeal, and all the wasted time just trying to understand big codebases.
-
-On top of this, devs are more important than ever. We've gone from being viewed as cost centers to being seen as the center of product development, so the issue of complexity is a business problem just as much as a dev problem.
 
 In 2013, we set out to tackle this complexity issue by building code search and making it available to every dev and company. Code search is helpful in reducing complexity, but it's not enough. It helps you find things *in* code (matching lines in files), but developers also need to learn things *about* code. Google went from helping you find things *on* the web (matching web pages) to helping you learn things *from* the web (information and answers) by connecting data like news, videos, and maps back to web search. Today, you go to Google to answer complex questions and learn things, not to find things. At Sourcegraph, we're doing the same for code with our code intelligence platform.
 
