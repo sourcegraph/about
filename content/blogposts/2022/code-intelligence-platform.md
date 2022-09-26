@@ -67,9 +67,15 @@ But continual progress isn't a given, for dev tools or software itself. No funda
 
 To maintain the rate of software progress, we're going to need a continuous drip of new dev tools on the order of Git, Docker, ubiquitous unit testing, VS Code, Chrome DevTools, Go, TypeScript, etc.
 
-So, which new dev tools will clear the way for future software progress?
+So, which new dev tools will clear the way for future software progress? Let's look to the companies on the frontier of dev tooling.
 
-#### The companies 
+<blockquote style={{marginTop: '2rem', marginBottom: '1.25rem', padding: '0.75rem', backgroundColor: '#f7f7f7'}}>
+<p style={{marginBottom:0}}>*DISCLAIMER([@sqs](https://slack.org)):* This is when I start to talk about [Sourcegraph](https://about.sourcegraph.com), code search, and code intelligence. You may consider me biased, because I'm the Sourcegraph CEO/cofounder. But my love for code search and intelligence tooling is genuine (otherwise, why would I have started Sourcegraph?).</p>
+</blockquote>
+
+#### Companies on the frontier of dev tooling all use code search
+
+
 
 More than 10 years ago, my cofounder Beyang and I had both felt the pain of working in big, complex codebases. He interned at Google, which famously has a [massive monorepo](https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext) and exceptionally good tools to search and understand it. I hacked on patches to cURL, GnuTLS, Chromium, Firefox, OpenSSL, and the Linux kernel, and I used [OpenGrok](https://oracle.github.io/opengrok/) alongside Emacs to get familiar with those codebases. Code search tools made it possible, but still not easy, to understand these massive codebases.
 
