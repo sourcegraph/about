@@ -38,7 +38,7 @@ const Sourcegraph4: FunctionComponent = () => (
                         className="tw-mx-auto tw-max-w-screen-md tw-w-full"
                     />
 
-                    <h1 className="tw-mb-sm -tw-mt-3xl sm:-tw-mt-36">The future of Sourcegraph is here</h1>
+                    <h1 className="tw-mb-sm -tw-mt-3xl sm:-tw-mt-36">From code search to code intelligence</h1>
                     <h3 className="tw-mb-5xl">
                         Sourcegraph 4.0, the latest release of our code intelligence platform, is now available. Watch
                         the livestream.
