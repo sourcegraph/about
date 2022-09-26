@@ -21,7 +21,7 @@ Why is this important? Why now? Let's go back in time to 25 years ago...
 
 #### The law of conservation of code complexity
 
-When I started coding [~25 years ago](https://slack.org/why-i-love-code), coding was complex. Since then, dev tools have massively improved: editors, build tools, version control, testing, continuous deployment, new programming languages, libraries, frameworks, linters, observability, etc. {/* But they've improved less than you might think. Check out [The Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/) from 2000 and note how many companies today would fail it despite those being obvious best practices 22 years ago. */} So, why is coding even more complex today than it was 25 years ago?
+When I started coding [~25 years ago](https://slack.org/why-i-love-code), coding was complex. Since then, dev tools have massively improved: editors, build tools, version control, testing, continuous deployment, new programming languages, debuggers, libraries, frameworks, linters, observability, etc. {/* But they've improved less than you might think. Check out [The Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/) from 2000 and note how many companies today would fail it despite those being obvious best practices 22 years ago. */} So, why is coding even more complex today than it was 25 years ago?
 
 Because software is much better and does much more than 25 years ago. {/* We can debate the degree to which this statement is true, and you can probably think of some counterexamples. But it's still true. Even if you, a cranky purist dev, would prefer using 25-year-old software, most people disagree with you. You'd be hard-pressed to find many willing users or customers for 25-year-old software today. */} Improvements in dev tooling let us spend our "complexity budget" on building better and more useful software, instead of, say, toiling over C code in a primitive editor to format and send emails via SMTP (which sounds quaint but I guarantee you it consumed hundreds of human lifetime-equivalents).
 
@@ -47,7 +47,7 @@ If you doubt this, then imagine building today's software with 15-year-old build
 
 #### Dev tools must constantly improve just to keep pace with growing code complexity
 
-The situation is even worse than it seems. Code complexity isn't in equilibrium. Devs add complexity to their codebase constantly, without first dutifully removing complexity elsewhere. Code is much easier to write than to maintain or decommission, and this is becoming even more true as code becomes more interdependent.
+The situation is even worse than it seems. Code complexity isn't in equilibrium. Devs are constantly introducing complexity into their codebase without first dutifully removing complexity elsewhere. Code is much easier to write than to maintain, simplify, or decommission, and this is becoming even more true as code becomes more interdependent.
 
 Also, codebases are growing quickly. Here are some data points to consider:
 
@@ -55,36 +55,21 @@ Also, codebases are growing quickly. Here are some data points to consider:
 * The amount of time you've personally spent decommissioning systems vs. creating them. If it's not at least a 5-to-1 ratio, you're probably part of the problem&mdash;along with everyone else, no worries.
 * We ran a [survey of devs](https://info.sourcegraph.com/hubfs/CTA%20assets/sourcegraph-big-code-survey-report.pdf) where 51% said their company's codebase had grown 100x over the last 10 years. The kind of person who's skeptical of that number (I'm with you, it does seem high) is probably the kind of person who agrees with the overall point. (Speak up if not!)
 
-What allows this rapid increase in software complexity (and, I hope, a corresponding increase in software quality and features)? Dev tools are getting better rapidly and cancelling out some of the complexity increase so that our human brains can still get by.
+{/* In theory, a bigger codebase isn't necessarily a more complex codebase. You can just tend to your little, perfectly encapsulated corner of the codebase. No matter how big the overall codebase got, your life stays the same. But we all know it never works out this way. */}
+
+What allows this rapid increase in software complexity (and, I hope/believe in most cases, a corresponding increase in software quality and features)? Dev tools are getting better rapidly and cancelling out some of the complexity increase so that our human brains can still get by.
 
 #### Don't take software progress for granted
 
-We've become accustomed to dev tools getting better rapidly. And without massive improvements in dev tooling over the last 25 years, software could not have improved so much over that period.
+Over the last 25 years, we've become accustomed to dev tools continually getting better. Without those massive improvements in dev tooling, software could not have improved so much over the last 25 years.
 
-But continual progress isn't a given, for dev tools or software itself. No fundamental law of nature says that software gets better each year. 
+But continual progress isn't a given, for dev tools or software itself. No fundamental law of nature says that software gets better each year.
 
-#### Codebases are growing fast
+To maintain the rate of software progress, we're going to need a continuous drip of new dev tools on the order of Git, Docker, ubiquitous unit testing, VS Code, Chrome DevTools, Go, TypeScript, etc.
 
+So, which new dev tools will clear the way for future software progress?
 
-#### Better libraries and encapsulation are the solution&mdash;and the problem
-
-In theory, a bigger codebase isn't necessarily a more complex codebase. You can just tend to your little, perfectly encapsulated corner of the codebase. No matter how big the overall codebase got, your life stays the same.
-
-There's certainly some truth to that. Today's dev tooling makes it easier than before to write and reuse high-quality, well-tested, well-encapsulated units of code.
-
-
-
-But that just means you'll spend the "complexity budget" elsewhere.
-
-Even so, the sheer volume of code and the leaky abstractions inherent in the overall cobble will cause total complexity to increase.
-
-Why is this happening? It has always been true that code is easier to write than to maintain or decommission. It's actually becoming harder to decommission code now that software is more interconnected.
-
-evidence: orgs that are pushing the frontier are already using it
-how many ppl would have said we need a distributed VCS before git - 
-
-
-#### Code search is like an ex
+#### The companies 
 
 More than 10 years ago, my cofounder Beyang and I had both felt the pain of working in big, complex codebases. He interned at Google, which famously has a [massive monorepo](https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext) and exceptionally good tools to search and understand it. I hacked on patches to cURL, GnuTLS, Chromium, Firefox, OpenSSL, and the Linux kernel, and I used [OpenGrok](https://oracle.github.io/opengrok/) alongside Emacs to get familiar with those codebases. Code search tools made it possible, but still not easy, to understand these massive codebases.
 
@@ -97,7 +82,7 @@ And that gets us to Sourcegraph. We built Sourcegraph to help ourselves, you, an
 I'm especially worried about how the amount of code is increasing at a much faster rate than the number of developers. 
 
 
-And that gets us to Sourcegraph, how can we help.
+
 
 But as developers of software, we all feel the pain of code complexity: not being able to get in flow, encountering tech debt that turns a tiny fix into a multi-day ordeal, and all the wasted time just trying to understand big codebases.
 
