@@ -10,13 +10,18 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/release.
 changelogItems:
 ---
 
-WIP INTRO: 
-
 We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams. Now, we’re hard at work making Sourcegraph even smarter.
 
 Sourcegraph 4.0 includes over a dozen updates and new features, and is the first step toward Sourcegraph becoming a [code intelligence platform](/blog/code-search-to-code-intelligence).
 
-Read on to discover everything in Sourcegraph 4.0.
+**Key highlights of Sourcegraph 4.0:**
+* [🧠 Code intelligence: uplevel your code search](### 🧠 Code intelligence: uplevel your code search)
+* [🏗️ High-leverage ways to improve your entire codebase](###🏗️ High-leverage ways to improve your entire codebase)
+* [☁️ Dedicated Sourcegraph Cloud instances for enterprise](###☁️ Dedicated Sourcegraph Cloud instances for enterprise)
+* [📈 Advanced admin capabilities](###📈 Advanced admin capabilities)
+
+
+Read on to discover everything in Sourcegraph 4.0 or [sign up for a 30-day trial for your organization](https://signup.sourcegraph.com/).
 
 ### 🧠 Code intelligence: uplevel your code search
 
