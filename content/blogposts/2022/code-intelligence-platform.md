@@ -1,7 +1,7 @@
 ---
 title: "From code search to a code intelligence platform"
 publishDate: 2022-09-27T10:00-07:00
-description: No matter how good your dev tools are, coding is complex. We're building a code intelligence platform to help you unblock yourself and code better.
+description: "Sourcegraph is starting to go beyond just code search, which helps you find matching lines in code. We want to help you find answers in code, and we call this code intelligence."
 tags: [blog]
 slug: "code-search-to-code-intelligence"
 published: true
@@ -13,15 +13,28 @@ authors:
 
 ---
 
-When I started coding [~25 years ago](https://slack.org/why-i-love-code), coding was complex. Since then, dev tools have massively improved: editors, build tools, Git, testing, continuous deployment, new programming languages, libraries, frameworks, linters, observability, etc. {/* But they've improved less than you might think. Check out [The Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/) from 2000 and note how many companies today would fail it despite those being obvious best practices 22 years ago. */} So, why is coding even more complex today than it was 25 years ago?
+Code search helps you find *matching lines in code*. That helps, but it's often not enough, especially as your codebase gets more complex. Sometimes you need to know who wrote that code, or the top usage patterns of a function, or which repositories use it. Sourcegraph will increasingly help you find these kinds of *answers* in code and associated metadata from all your dev tools that know stuff about code.
 
-Because software is much better and does much more than 25 years ago. {/* We can debate the degree to which this statement is true, and you can probably think of some counterexamples. But it's still true. Even if you, a cranky purist dev, would prefer using 25-year-old software, most people disagree with you. You'd be hard-pressed to find many willing users or customers for 25-year-old software today. */} Improvements in dev tooling let us spend our "complexity budget" on building better and more useful software, instead of, say, toiling over C code to format and send emails via SMTP (which seems quaint today but I guarantee you it consumed hundreds of human lifetime-equivalents).
-
-This is a good thing. {/* I believe it's a major reason why most people are better off today than 25 years ago, and that's a big part of [why I love coding](https://slack.org/why-i-love-code) and what motivates me at Sourcegraph!. */}
+We call this a code intelligence platform (motto: *"answers, not just matching lines"*), and you can see [Sourcegraph 4.0](/blog/sourcegraph-4.0) taking the first steps toward that vision and beyond just code search.
 
 
 
-It's not all bad. Some of this complexity actually translates into better technology in our everyday lives.
+#### Don't take software progress for granted
+
+When I started coding [~25 years ago](https://slack.org/why-i-love-code), coding was complex. Since then, dev tools have massively improved: editors, build tools, version control, testing, continuous deployment, new programming languages, libraries, frameworks, linters, observability, etc. {/* But they've improved less than you might think. Check out [The Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/) from 2000 and note how many companies today would fail it despite those being obvious best practices 22 years ago. */} So, why is coding even more complex today than it was 25 years ago?
+
+Because software is much better and does much more than 25 years ago. {/* We can debate the degree to which this statement is true, and you can probably think of some counterexamples. But it's still true. Even if you, a cranky purist dev, would prefer using 25-year-old software, most people disagree with you. You'd be hard-pressed to find many willing users or customers for 25-year-old software today. */} This is a good thing. {/* I believe it's a major reason why most people are better off today than 25 years ago, and that's a big part of [why I love coding](https://slack.org/why-i-love-code) and what motivates me at Sourcegraph!. And it's a reason to appreciate dev tools creators everywhere, who are indirectly helping to make people's lives better. */} Improvements in dev tooling let us spend our "complexity budget" on building better and more useful software, instead of, say, toiling over C code in a primitive editor to format and send emails via SMTP (which sounds quaint but I guarantee you it consumed hundreds of human lifetime-equivalents).
+
+But software progress isn't a given. No fundamental law of nature says that software gets better each year. Without massive improvements in dev tooling over the last 25 years, software could not have improved so much over that period. {/* Can you imagine working in your current codebase with tools even from 5-10 years ago? Even if you can, you'd probably be at least a little bit less effective, and your other team members even more so. Look, I'm not someone who loves using the new buzzword tech. I use Emacs, and we use Go and TypeScript (with React) here at Sourcegraph. But I find even all of those things have gotten significantly better in the last 2 years even. */}
+
+### a
+
+And that gets us to Sourcegraph. We built Sourcegraph to help ourselves, you, and every other dev deal with ever-increasing code complexity.
+
+I'm especially worried about how the amount of code is increasing at a much faster rate than the number of developers. We ran a [survey of devs](https://info.sourcegraph.com/hubfs/CTA%20assets/sourcegraph-big-code-survey-report.pdf) where 51% said their company's codebase had grown 100x over the last 10 years. Even if you don't believe that exact number, it's certainly true that code is much easier to write than to maintain or decommission. 
+
+
+And that gets us to Sourcegraph, how can we help.
 
 But as developers of software, we all feel the pain of code complexity: not being able to get in flow, encountering tech debt that turns a tiny fix into a multi-day ordeal, and all the wasted time just trying to understand big codebases.
 
