@@ -73,7 +73,7 @@ So, which new dev tools will clear the way for future software progress? It's in
 
 #### Companies on the frontier of dev tooling
 
-In dev tools, unlike most fields, the best new stuff trickles down from big companies. {/* Other fields are different. Salesforce didn't innovate in CRM by looking at big companies' custom-built CRMs. Etc. Send me more good examples that you can think of. */}
+In dev tools, unlike most fields, the best ideas come from big companies. {/* Other fields are different. Salesforce didn't innovate in CRM by looking at big companies' custom-built CRMs. Etc. Send me more good examples that you can think of. */}
 
 Google, Facebook, Amazon, Netflix, Stripe, and others have widespread early adoption and tight integration of all the obvious dev tooling (with team-by-team exceptions, of course). There are many examples where these companies were early adopters of dev tooling or practices that are now widespread:
 
