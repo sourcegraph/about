@@ -23,9 +23,25 @@ Why is this important? Why now? Let's go back in time to 25 years ago...
 
 When I started coding [~25 years ago](https://slack.org/why-i-love-code), coding was complex. Since then, dev tools have massively improved: editors, build tools, version control, testing, continuous deployment, new programming languages, libraries, frameworks, linters, observability, etc. {/* But they've improved less than you might think. Check out [The Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/) from 2000 and note how many companies today would fail it despite those being obvious best practices 22 years ago. */} So, why is coding even more complex today than it was 25 years ago?
 
-Because software is much better and does much more than 25 years ago. {/* We can debate the degree to which this statement is true, and you can probably think of some counterexamples. But it's still true. Even if you, a cranky purist dev, would prefer using 25-year-old software, most people disagree with you. You'd be hard-pressed to find many willing users or customers for 25-year-old software today. */} This is a good thing. {/* I believe it's a major reason why most people are better off today than 25 years ago, and that's a big part of [why I love coding](https://slack.org/why-i-love-code) and what motivates me at Sourcegraph!. And it's a reason to appreciate dev tools creators everywhere, who are indirectly helping to make people's lives better. */} Improvements in dev tooling let us spend our "complexity budget" on building better and more useful software, instead of, say, toiling over C code in a primitive editor to format and send emails via SMTP (which sounds quaint but I guarantee you it consumed hundreds of human lifetime-equivalents).
+Because software is much better and does much more than 25 years ago. {/* We can debate the degree to which this statement is true, and you can probably think of some counterexamples. But it's still true. Even if you, a cranky purist dev, would prefer using 25-year-old software, most people disagree with you. You'd be hard-pressed to find many willing users or customers for 25-year-old software today. */} Improvements in dev tooling let us spend our "complexity budget" on building better and more useful software, instead of, say, toiling over C code in a primitive editor to format and send emails via SMTP (which sounds quaint but I guarantee you it consumed hundreds of human lifetime-equivalents).
 
-Never in the history of software has a dev tool actually yielded a permanent reduction in total complexity. Never has a company said, "Now that we're using `{the cloud, continuous integration, continuous deployment, microservices, GitHub, ...}`, let's strive for greater simplicity instead of `{moving faster, increasing product quality, building more features, ...}`." (If you know of any such company, I know a ton of devs who would love to work there. I also predict that company will soon go out of business.)
+Never in the history of software has a dev tool actually yielded a permanent reduction in total complexity. Never has a company said, "Now that we're using \{the cloud, continuous integration, continuous deployment, microservices, GitHub, ...\}, let's strive for greater simplicity instead of \{moving faster, increasing product quality, building more features, ...\}." (If you know of any such company, I know a ton of devs who would love to work there. I also predict that company will soon go out of business.)
+
+This is the **law of conservation of code complexity** ([1](https://wiki.c2.com/?ConservationOfComplexity) [2](https://en.wikipedia.org/wiki/Law_of_conservation_of_complexity) [3](https://www.johndcook.com/blog/2009/09/16/conservation-of-complexity/)):
+
+<blockquote style={{marginLeft: '1rem', marginBottom: '1.25rem', padding: '0.75rem', backgroundColor: '#f7f7f7'}}>
+<p style={{marginBottom:0}}>Software complexity can't be created or destroyed. It can only be shifted from one place or form to another.</p>
+</blockquote>
+
+{/* Some posts about the law of conservation of complexity have a stricter and more pessimistic interpretation of it, that no dev tooling can ever decrease complexity. For example, if you switch from the hackiest build scripts ever to a Makefile, then you have not decreased complexity, only buried it in `make`. I disagree. I think you have actually eliminated complexity in your build process, but you'll be unable to resist the temptation to increase complexity elsewhere. */}
+
+#### Progress in dev tools is necessary for software progress
+
+Does this mean that dev tools are worthless? No! The opposite, in fact.
+
+Progress in dev tools is necessary for software progress. When a better dev tool makes something simpler or saves time for a dev, that dev can use that brainpower and time to make their own software better and more useful. By the law of conservation of code complexity, that dev was previously operating at the very limit of their brainpower.
+
+{/* This feeling is a big part of [why I love coding](https://slack.org/why-i-love-code) and what motivates me at Sourcegraph! And it's a reason to appreciate dev tools creators everywhere, who are indirectly helping to make people's lives better. */}
 
 #### Don't take software progress for granted
 
