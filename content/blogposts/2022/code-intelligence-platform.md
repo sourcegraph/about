@@ -7,11 +7,21 @@ slug: "code-search-to-code-intelligence"
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/to-code-intelligence.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/to-code-intelligence.png
+authors:
+  - name: Quinn Slack
+    url: https://slack.org
+
 ---
 
-No matter how good your dev tools are, coding is complex. This is true even if you've configured your editor just right, sped up your test suite, set up continuous deployment, and added observability. Higher-level languages, libraries, and frameworks can help, but as you take on bigger and more ambitious projects, you'll likely spend your complexity budget elsewhere. The overall complexity of code has increased over time, and there's no sign of that trend changing.
+When I started coding [~25 years ago](https://slack.org/why-i-love-code), coding was complex. Since then, dev tools have massively improved: editors, build tools, Git, testing, continuous deployment, new programming languages, libraries, frameworks, linters, observability, etc. {/* But they've improved less than you might think. Check out [The Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/) from 2000 and note how many companies today would fail it despite those being obvious best practices 22 years ago. */} So, why is coding even more complex today than it was 25 years ago?
 
-As consumers of software, we (mostly) benefit from this phenomenon in the form of better technology in our everyday lives.
+Because software is much better and does much more than 25 years ago. {/* We can debate the degree to which this statement is true, and you can probably think of some counterexamples. But it's still true. Even if you, a cranky purist dev, would prefer using 25-year-old software, most people disagree with you. You'd be hard-pressed to find many willing users or customers for 25-year-old software today. */} Improvements in dev tooling let us spend our "complexity budget" on building better and more useful software, instead of, say, toiling over C code to format and send emails via SMTP (which seems quaint today but I guarantee you it consumed hundreds of human lifetime-equivalents).
+
+This is a good thing. {/* I believe it's a major reason why most people are better off today than 25 years ago, and that's a big part of [why I love coding](https://slack.org/why-i-love-code) and what motivates me at Sourcegraph!. */}
+
+
+
+It's not all bad. Some of this complexity actually translates into better technology in our everyday lives.
 
 But as developers of software, we all feel the pain of code complexity: not being able to get in flow, encountering tech debt that turns a tiny fix into a multi-day ordeal, and all the wasted time just trying to understand big codebases.
 

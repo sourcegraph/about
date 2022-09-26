@@ -7,6 +7,10 @@ slug: "enterprise-cloud"
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/cloud-instances.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/cloud-instances.png
+authors:
+  - name: Quinn Slack
+    url: https://slack.org
+
 ---
 
 For the first 8 years of [Sourcegraph](https://about.sourcegraph.com) (from 2013 until last year), 100% of Sourcegraph customers self-hosted Sourcegraph on their own AWS/GCP account or other infrastructure. Starting [self-hosted-first](https://slack.org/self-hosted-first) helped us earn early customers such as Uber, Lyft, Dropbox, 4/5 of the FAANG companies, and 4 of the top 10 US banks. But not everyone loves self-hosting, so over the last year we worked with customers to build a Sourcegraph cloud service that meets their security and scalability needs. Now, ~10% of our revenue (and growing quickly) is on cloud, and we recently completed our [SOC 2 Type II audit](https://security.sourcegraph.com).
