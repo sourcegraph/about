@@ -234,7 +234,7 @@ New enhancements to the repository status page help you better understand the cu
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Repositories.png"
   alt="Repository Status"
-  caption="See the current state of repository and permisions syncing"
+  caption="See the current state of your repositories being synced"
 />
 
 <a href="https://docs.sourcegraph.com/admin/external_service" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
