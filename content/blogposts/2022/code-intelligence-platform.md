@@ -86,20 +86,20 @@ Not every dev tool invented or adopted by these big companies is a winner. But w
 
 Code search is now a mainstream dev tool. So many sophisticated tech companies have adopted code search: in addition to [Google](https://codesearchguide.org/story/google) and [Facebook](https://codesearchguide.org/story/facebook) as previously mentioned, Amazon, [Stripe](https://codesearchguide.org/story/stripe), and more. We're proud to have earned some amazing customers, including Uber, Lyft, Dropbox, Atlassian, [Yelp](https://codesearchguide.org/story/yelp), 4/5 of the FAANG companies, and 4 of the top 10 US banks. If a company or dev isn't yet using code search, they will soon.
 
-For our customers, Sourcegraph is the one universal dev tool: the only tool used by all the devs and the only tool that indexes all of the code. Other tools in the dev workflow are fragmented: devs all use different editors and languages, and often there are multiple code hosts. 
+For our customers, Sourcegraph is the one universal dev tool: the only tool used by all the devs and the only tool that indexes *all* of the code. Other tools in the dev workflow are fragmented: devs use different editors and languages, and often there are multiple code hosts.
 
-Devs want a single place with all the information about code. And they want Sourcegraph to be this place, and to give them answers instead of just the raw information that they could use to form the answer. We often hear things like:
+Devs want a single place with all the information about code: code navigation (definitions and references), authorship, ownership, dependency graph, code scans, deployment status, observability (whether a line of code is throwing lots of errors), etc.
+
+Devs want Sourcegraph to be this place, and to help them find answers instead of just the raw information. We often hear things like:
 
 - "I'm trying to figure out the best way to call a function. Don't just show me a list of call sites. Show me how the code owners of that function themselves have recently been calling that function."
 - "I need to debug an issue in code. Don't just let me navigate within the same project to understand it. Let me see what changed and why, and trace calls across projects and dependencies."
 - "I need to see how my team's API is being used. Don't just show me a list of file locations. Show me which other teams are using it and the trend of usage over time, grouped by usage pattern."
 - "I need to fix something across my entire codebase? Don't just help me find the spots that need fixing. Let me push up a quick fix to all affected repositories, tracks its progress, and monitor for regressions."
 
-TODO - say what a code intelligence platform is concretely
+Code search isn't enough to answer these kinds of questions, because code search doesn't know all the other necessary information about code. Code search just helps you find matching lines in code. TODO sqs - (thats why we are calling it ...)
 
 We added [Code Insights](https://docs.sourcegraph.com/code_insights) to let devs track trends over time, [Batch Changes](https://docs.sourcegraph.com/batch_changes) to let devs make large-scale code changes across many repositories, and more. These crucial primitives helped, but we still needed to teach Sourcegraph much more about code and its associated metadata.
-
-Code search isn't enough to answer these kinds of questions, because code search just helps you find matching lines in code.
 
 Remember how Google went from helping you find things *on* the web (matching web pages) to helping you learn things *from* the web (information and answers) by connecting data like news, videos, and maps back to web search? Today, you go to Google to answer complex questions and learn things, not to find things.
 
