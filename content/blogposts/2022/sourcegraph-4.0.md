@@ -15,15 +15,15 @@ We've spent 9 years building the underlying foundation of code search to be fast
 Sourcegraph 4.0 includes over a dozen updates and new features, and is the first step toward Sourcegraph becoming a [code intelligence platform](/blog/code-search-to-code-intelligence).
 
 **Key highlights of Sourcegraph 4.0:**
-* [🧠 Code intelligence: uplevel your code search](#-code-intelligence-uplevel-your-code-search)
-* [🏗️ High-leverage ways to improve your entire codebase](#-high-leverage-ways-to-improve-your-entire-codebase)
-* [☁️ Dedicated Sourcegraph Cloud instances for enterprise](#-dedicated-sourcegraph-cloud-instances-for-enterprise)
-* [📈 Advanced admin capabilities](#-advanced-admin-capabilities)
+* [🧠 Code intelligence: uplevel your code search](#code-intelligence-uplevel-your-code-search)
+* [🏗️ High-leverage ways to improve your entire codebase](#high-leverage-ways-to-improve-your-entire-codebase)
+* [☁️ Dedicated Sourcegraph Cloud instances for enterprise](#dedicated-sourcegraph-cloud-instances-for-enterprise)
+* [📈 Advanced admin capabilities](#advanced-admin-capabilities)
 
 
 Read on to discover everything in Sourcegraph 4.0 or [sign up for a 30-day trial for your organization](https://signup.sourcegraph.com/).
 
-### 🧠 Code intelligence: uplevel your code search
+### <a id="code-intelligence-uplevel-your-code-search"></a> 🧠 Code intelligence: uplevel your code search
 
 <br />
 <Badge text="Code Insights" link="/code-insights" color="green" size="small" />
@@ -128,7 +128,7 @@ Your code navigation experience just got better with a refreshed version of the 
 
 
 
-### 🏗️ High-leverage ways to improve your entire codebase
+### <a id="high-leverage-ways-to-improve-your-entire-codebase"></a> 🏗️ High-leverage ways to improve your entire codebase
 <br />
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 
@@ -153,7 +153,7 @@ This feature requires admins to set up executors (much like CI agents), which So
 
 <a href="https://docs.sourcegraph.com/batch_changes/explanations/server_side" className="tw-not-italic tw-flex tw-items-center">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
-### ☁️ Dedicated Sourcegraph Cloud instances for enterprise
+### <a id="dedicated-sourcegraph-cloud-instances-for-enterprise"></a> ☁️ Dedicated Sourcegraph Cloud instances for enterprise
 
 <br />
 <Badge link="https://docs.sourcegraph.com/cloud" text="Admin" color="violet" size="small" />
@@ -176,7 +176,7 @@ Check out our [Security Portal](https://security.sourcegraph.com/) to access the
 
 <a href="https://security.sourcegraph.com/" className="tw-not-italic tw-flex tw-items-center">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
-### 📈 Advanced admin capabilities
+### <a id="advanced-admin-capabilities"></a> 📈 Advanced admin capabilities
 <br />
 <Badge link="https://docs.sourcegraph.com/admin/updates#multi-version-upgrades" text="Admin" color="violet" size="small" />
 
