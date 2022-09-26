@@ -16,7 +16,7 @@ const Webinar: FunctionComponent = () => {
         >
             <ContentSection>
                 <div className="tw-max-w-screen-md tw-mx-auto">
-                    <YouTube id="Kk1ea2-l8Hk" title={title} />
+                    <YouTube id="hayQ-rd_kzM" title={title} />
                 </div>
             </ContentSection>
 

@@ -82,7 +82,7 @@ const Hero: FunctionComponent = () => {
                 </div>
 
                 <div className="tw-max-w-4xl tw-mx-auto tw-my-3xl">
-                    <YouTube title="Sourcegraph Product Tour" id="Kk1ea2-l8Hk" />
+                    <YouTube title="Sourcegraph Product Tour" id="hayQ-rd_kzM" />
                 </div>
             </div>
 

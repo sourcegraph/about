@@ -176,7 +176,7 @@ const Sourcegraph4: FunctionComponent = () => (
                     </Link>
                 </h2>
 
-                <YouTube title="Sourcegraph 4.0" id="Kk1ea2-l8Hk" />
+                <YouTube title="Sourcegraph 4.0" id="hayQ-rd_kzM" />
 
                 <h2 className="tw-mt-5xl tw-mb-3xl">
                     Join these engineering orgs pushing forward modern software development
