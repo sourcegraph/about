@@ -10,7 +10,11 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/release.
 changelogItems:
 ---
 
-We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams. Now, we’re hard at work making Sourcegraph even smarter.
+We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams. Now, we’re making Sourcegraph even smarter.
+
+Sourcegraph 4.0 includes over a dozen updates and new features, and it is the first step toward Sourcegraph becoming a [code intelligence platform](/blog/code-search-to-code-intelligence). A code intelligence platform indexes and understands all of your organization’s code, so instead of just *matching lines in code*, you can *answer questions and learn about code*. 
+
+Today, we're also launching [Sourcegraph Cloud:](/blog/enterprise-cloud) secure, scalable, dedicated Sourcegraph instances on the cloud. Sourcegraph Cloud is the best way to start using Sourcegraph on your organization's code. [Sign up now](https://signup.sourcegraph.com/) to experience Sourcegraph 4.0.
 
 Sourcegraph 4.0 includes over a dozen updates and new features, and it is the first step toward Sourcegraph becoming a [code intelligence platform](/blog/code-search-to-code-intelligence).
 
