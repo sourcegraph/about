@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 4.0"
 publishDate: 2022-09-27T10:00-07:00
-description: Announcing Sourcegraph 4.0. The latest release includes over a dozen updates and new features, and it is the first step toward Sourcegraph becoming a code intelligence platform 
+description: Announcing Sourcegraph 4.0. The latest release includes over a dozen updates and new features, and it is the first step toward Sourcegraph becoming a code intelligence platform. 
 tags: [blog, release]
 slug: "release/4.0"
 published: true
