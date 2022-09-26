@@ -24,7 +24,6 @@ Today, we're also launching [Sourcegraph Cloud:](/blog/enterprise-cloud) secure,
 * [☁️ Dedicated Sourcegraph Cloud instances for enterprise](#dedicated-sourcegraph-cloud-instances-for-enterprise)
 * [📈 Advanced admin capabilities](#advanced-admin-capabilities)
 
-Today, we're also launching Sourcegraph Cloud: secure, scalable, dedicated Sourcegraph instances on the cloud. Sourcegraph Cloud is the best way to start using Sourcegraph on your organization's code. [Sign up now](https://signup.sourcegraph.com/)
 
 ### <a id="code-intelligence-uplevel-your-code-search"></a> 🧠 Code intelligence: uplevel your code search
 
