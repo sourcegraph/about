@@ -26,7 +26,7 @@ interface CtaSection {
     centerContent?: boolean
     slimWidth?: boolean
     cta1?: Cta
-    cta2?: Cta
+    cta2?: Cta | boolean
 }
 
 /**
@@ -182,7 +182,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                     </div>
                 )}
 
-                {cta2 && (
+                {cta2 && typeof cta2 === 'object' && (
                     <div
                         className={classNames('tw-mt-sm', {
                             'lg:tw-ml-md': !centerContent && !slimWidth,

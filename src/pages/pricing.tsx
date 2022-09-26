@@ -273,6 +273,8 @@ const PricingPage: FunctionComponent = () => {
                     link: 'https://docs.sourcegraph.com/#self-hosted',
                     ctaStyle: 'primaryButton',
                 }}
+                cta2={false}
+                centerContent={true}
             />
 
             <ContentSection className="tw-grid tw-grid-cols-5">
