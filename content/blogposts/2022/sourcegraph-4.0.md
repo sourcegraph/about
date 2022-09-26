@@ -228,7 +228,7 @@ With charts that detail usage over time and value calculators that quantify the 
 <br />
 <Badge link="https://docs.sourcegraph.com/admin/external_service" text="Admin" color="violet" size="small" />
 
-#### Quickly see the status on your repository and permissions syncing
+#### Quickly see the status on your repositories being synced
 New enhancements to the repository status page help you better understand the current state of [repository and permissions syncing](https://docs.sourcegraph.com/admin/external_service?_ga=2.212906964.1999310251.1663878766-858725936.1663878766). A new header displays an up-to-date count of repositories (total, not cloned, cloned, cloning, failed to fetch/clone), notifications are more actionable, and new filters help you drill down into specific repositories. These improvements make it easier for you to understand the current state of repositories synced with Sourcegraph and pinpoint syncing errors if they arise. 
 
 <Figure
