@@ -19,11 +19,15 @@ We call this a code intelligence platform (motto: *"answers, not just matching l
 
 Why is this important? Why now? Let's go back in time to 25 years ago...
 
-#### Don't take software progress for granted
+#### The law of conservation of code complexity
 
 When I started coding [~25 years ago](https://slack.org/why-i-love-code), coding was complex. Since then, dev tools have massively improved: editors, build tools, version control, testing, continuous deployment, new programming languages, libraries, frameworks, linters, observability, etc. {/* But they've improved less than you might think. Check out [The Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/) from 2000 and note how many companies today would fail it despite those being obvious best practices 22 years ago. */} So, why is coding even more complex today than it was 25 years ago?
 
 Because software is much better and does much more than 25 years ago. {/* We can debate the degree to which this statement is true, and you can probably think of some counterexamples. But it's still true. Even if you, a cranky purist dev, would prefer using 25-year-old software, most people disagree with you. You'd be hard-pressed to find many willing users or customers for 25-year-old software today. */} This is a good thing. {/* I believe it's a major reason why most people are better off today than 25 years ago, and that's a big part of [why I love coding](https://slack.org/why-i-love-code) and what motivates me at Sourcegraph!. And it's a reason to appreciate dev tools creators everywhere, who are indirectly helping to make people's lives better. */} Improvements in dev tooling let us spend our "complexity budget" on building better and more useful software, instead of, say, toiling over C code in a primitive editor to format and send emails via SMTP (which sounds quaint but I guarantee you it consumed hundreds of human lifetime-equivalents).
+
+Never in the history of software has a dev tool actually yielded a permanent reduction in total complexity. Never has a company said, "Now that we're using `{the cloud, continuous integration, continuous deployment, microservices, GitHub, ...}`, let's strive for greater simplicity instead of `{moving faster, increasing product quality, building more features, ...}`." (If you know of any such company, I know a ton of devs who would love to work there. I also predict that company will soon go out of business.)
+
+#### Don't take software progress for granted
 
 But software progress isn't a given. No fundamental law of nature says that software gets better each year. Without massive improvements in dev tooling over the last 25 years, software could not have improved so much over that period. {/* Can you imagine working in your current codebase with tools even from 5-10 years ago? Even if you can, you'd probably be at least a little bit less effective, and your other team members even more so. Look, I'm not someone who loves using the new buzzword tech. I use Emacs, and we use Go and TypeScript (with React) here at Sourcegraph. But I find even all of those things have gotten significantly better in the last 2 years even. */}
 
@@ -49,6 +53,8 @@ Even so, the sheer volume of code and the leaky abstractions inherent in the ove
 
 Why is this happening? It has always been true that code is easier to write than to maintain or decommission. It's actually becoming harder to decommission code now that software is more interconnected.
 
+evidence: orgs that are pushing the frontier are already using it
+how many ppl would have said we need a distributed VCS before git - 
 
 
 #### Code search is like an ex
