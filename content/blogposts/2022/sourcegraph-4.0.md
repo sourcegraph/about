@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 4.0"
 publishDate: 2022-09-27T10:00-07:00
-description: Announcing Sourcegraph 4.0
+description: Announcing Sourcegraph 4.0. The latest release includes over a dozen updates and new features, and it is the first step toward Sourcegraph becoming a code intelligence platform 
 tags: [blog, release]
 slug: "release/4.0"
 published: true
@@ -12,7 +12,7 @@ changelogItems:
 
 We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams. Now, we’re hard at work making Sourcegraph even smarter.
 
-Sourcegraph 4.0 includes over a dozen updates and new features, and is the first step toward Sourcegraph becoming a [code intelligence platform](/blog/code-search-to-code-intelligence).
+Sourcegraph 4.0 includes over a dozen updates and new features, and it is the first step toward Sourcegraph becoming a [code intelligence platform](/blog/code-search-to-code-intelligence).
 
 **Key highlights of Sourcegraph 4.0:**
 * [🧠 Code intelligence: uplevel your code search](#code-intelligence-uplevel-your-code-search)
