@@ -33,7 +33,7 @@ We can give this an official-sounding name. The **law of conservation of code co
 <p style={{marginBottom:0}}>If you reduce the complexity of your codebase (such as by improving dev tooling or refactoring code), you (or your boss) will be unable to resist the temptation to increase complexity by the same amount elsewhere, usually in the form of new features.</p>
 </blockquote>
 
-{/* Some posts about the law of conservation of complexity have a stricter and more pessimistic interpretation of it, that no dev tooling can ever decrease complexity. For example, if you switch from the hackiest build scripts ever to a Makefile, then you have not decreased complexity, only buried it in `make`. I disagree. I think you have actually eliminated complexity in your build process, but again, you'll be unable to resist the temptation to increase complexity by the same amount elsewhere. */}
+{/* Some of those other linked posts about the law of conservation of complexity have a stricter and more pessimistic interpretation of it, that no dev tooling can ever decrease complexity. For example, if you switch from the hackiest build scripts ever to a Makefile, then you have not decreased complexity, only buried it in `make`. I disagree. I think you have actually eliminated complexity in your build process, but again, you'll be unable to resist the temptation to increase complexity by the same amount elsewhere. */}
 
 #### Better dev tools lead to better software
 
@@ -41,11 +41,11 @@ Does this mean that dev tools are worthless, since their benefits are immediatel
 
 **Better dev tooling frees up time and brainpower so devs can build better software.** If we were stuck with today's dev tooling forever, then software progress would eventually come to a halt.
 
-If you doubt this, then imagine building today's software with 15-year-old build tools, package managers, and frameworks. It wouldn't be possible. So, why would you think today's dev tools will suffice unchanged 15 years from now?
-
 {/* This feeling is a big part of [why I love coding](https://slack.org/why-i-love-code) and what motivates me at Sourcegraph! And it's a reason to appreciate dev tools creators everywhere, who are indirectly helping to make people's lives better. */}
 
-#### Dev tools need to constantly improve just to keep pace
+If you doubt this, then imagine building today's software with 15-year-old build tools, package managers, and frameworks. It wouldn't be possible. So, why would you think today's dev tools will suffice unchanged 15 years from now? {/* Look, I'm not someone who loves using the new buzzword tech. I use Emacs, and we use Go and TypeScript (with React) here at Sourcegraph. But I find even all of those things have gotten significantly better in the last 2 years even. */}
+
+#### Dev tools must constantly improve just to keep pace with growing code complexity
 
 The situation is even worse than it seems. Code complexity isn't in equilibrium. Devs add complexity to their codebase constantly, without first dutifully removing complexity elsewhere. Code is much easier to write than to maintain or decommission, and this is becoming even more true as code becomes more interdependent.
 
@@ -55,11 +55,13 @@ Also, codebases are growing quickly. Here are some data points to consider:
 * The amount of time you've personally spent decommissioning systems vs. creating them. If it's not at least a 5-to-1 ratio, you're probably part of the problem&mdash;along with everyone else, no worries.
 * We ran a [survey of devs](https://info.sourcegraph.com/hubfs/CTA%20assets/sourcegraph-big-code-survey-report.pdf) where 51% said their company's codebase had grown 100x over the last 10 years. The kind of person who's skeptical of that number (I'm with you, it does seem high) is probably the kind of person who agrees with the overall point. (Speak up if not!)
 
-What allows this rapid increase in software complexity (and, overall, software quality and features)? **We've become accustomed to dev tools getting better rapidly,** which has cancelled out enough of the overall increase in complexity so that our human brains can still get by.
+What allows this rapid increase in software complexity (and, I hope, a corresponding increase in software quality and features)? Dev tools are getting better rapidly and cancelling out some of the complexity increase so that our human brains can still get by.
 
 #### Don't take software progress for granted
 
-But software progress isn't a given. No fundamental law of nature says that software gets better each year. Without massive improvements in dev tooling over the last 25 years, software could not have improved so much over that period. {/* Can you imagine working in your current codebase with tools even from 5-10 years ago? Even if you can, you'd probably be at least a little bit less effective, and your other team members even more so. Look, I'm not someone who loves using the new buzzword tech. I use Emacs, and we use Go and TypeScript (with React) here at Sourcegraph. But I find even all of those things have gotten significantly better in the last 2 years even. */}
+We've become accustomed to dev tools getting better rapidly. And without massive improvements in dev tooling over the last 25 years, software could not have improved so much over that period.
+
+But continual progress isn't a given, for dev tools or software itself. No fundamental law of nature says that software gets better each year. 
 
 #### Codebases are growing fast
 
