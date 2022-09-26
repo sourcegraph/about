@@ -73,17 +73,38 @@ So, which new dev tools will clear the way for future software progress? Let's l
 <p style={{marginBottom:0}}>*DISCLAIMER([@sqs](https://slack.org)):* This is when I start to talk about [Sourcegraph](https://about.sourcegraph.com), code search, and code intelligence. You may consider me biased, because I'm the Sourcegraph CEO/cofounder. But my love for code search and intelligence tooling is genuine (otherwise, why would I have started Sourcegraph?).</p>
 </blockquote>
 
-#### Companies on the frontier of dev tooling all use code search
+#### Companies on the frontier of dev tooling
+
+In dev tools, unlike most fields, the best new stuff trickles down from big companies. {/* Other fields are different. Salesforce didn't innovate in CRM by looking at big companies' custom-built CRMs. Etc. Send me more good examples that you can think of. */}
+
+Google, Facebook, Amazon, Netflix, Stripe, and others have widespread early adoption and tight integration of all the obvious dev tooling (with team-by-team exceptions, of course). There are many examples where these companies were early adopters of dev tooling or practices that are now widespread:
+
+* [Kubernetes](https://kubernetes.io/blog/2015/04/borg-predecessor-to-kubernetes/), [code review](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/80735342aebcbfc8af4878373f842c25323cb985.pdf), and [many more examples from Google](https://about.sourcegraph.com/blog/ex-googler-guide-dev-tools).
+* [React](https://reactjs.org/), continuous deployment, [GraphQL](https://graphql.org/), and [feature flags](https://launchdarkly.com/blog/secret-to-facebooks-hacker-engineering-culture/) from Facebook.
+* [Amazon's push toward a service-oriented architecture](https://gist.github.com/chitchcock/1281611) that paved the way for AWS.
+* [Netflix's early embrace of AWS.](https://netflixtechblog.com/four-reasons-we-choose-amazons-cloud-as-our-computing-platform-4aceb692afec)
+
+Not every dev tool invented or adopted by these big companies is a winner. But when all of these companies are all adopting the same kind of new dev tool, and it addresses a problem that every other smaller company will soon face, then you should take notice. And that's what we saw happening with code search around the time we started Sourcegraph in 2013.
+
+#### The state of code search around 2013
+
+My cofounder and I had both felt the pain of working in big, complex codebases&mdash;and the value of a code search tool.
+
+He interned at Google, which famously has a [massive monorepo](https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext) and an exceptionally good [internal Google CodeSearch tool](https://codesearchguide.org/story/google) to search and understand it.
+
+I was hacking on [patches to cURL](https://sourcegraph.com/github.com/curl/curl/-/commit/59cf93ccdbaa5e866f9de6b2d9b1ae5cee84863f), GnuTLS, Chromium, Firefox, OpenSSL, and the Linux kernel. I used [OpenGrok](https://oracle.github.io/opengrok/), a fairly basic code search tool, to get familiar with those big codebases.
+
+We also started hearing about [Facebook's internal code search tool](https://codesearchguide.org/story/facebook).
+
+Code search tools made it possible, but still not easy, to understand these massive codebases.
+
+#### All the dev tools early adopters have early-adopted code search
+
+When these companies build or adopt a new dev tool or practice,
 
 
 
-More than 10 years ago, my cofounder Beyang and I had both felt the pain of working in big, complex codebases. He interned at Google, which famously has a [massive monorepo](https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext) and exceptionally good tools to search and understand it. I hacked on patches to cURL, GnuTLS, Chromium, Firefox, OpenSSL, and the Linux kernel, and I used [OpenGrok](https://oracle.github.io/opengrok/) alongside Emacs to get familiar with those codebases. Code search tools made it possible, but still not easy, to understand these massive codebases.
 
-Back then, not many devs used code search tools, which were hard to set up and not very good (except the internal [Google CodeSearch](https://codesearchguide.org/story/google)).
-
-But we loved code search tools, and we started Sourcegraph because 
-
-And that gets us to Sourcegraph. We built Sourcegraph to help ourselves, you, and every other dev deal with ever-increasing code complexity.
 
 I'm especially worried about how the amount of code is increasing at a much faster rate than the number of developers. 
 
