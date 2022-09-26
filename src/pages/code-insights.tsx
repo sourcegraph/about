@@ -4,7 +4,6 @@ import BullsEyeArrowIcon from 'mdi-react/BullseyeArrowIcon'
 import LighteningBoltOutlineIcon from 'mdi-react/LightningBoltOutlineIcon'
 import RocketLaunchOutlineIcon from 'mdi-react/RocketLaunchOutlineIcon'
 import TrendingUpIcon from 'mdi-react/TrendingUpIcon'
-import Link from 'next/link'
 
 import { CodeInsightExample } from '@code-insights/CodeInsightsExamples'
 import {
@@ -19,6 +18,7 @@ import { CodeInsightExampleType } from '@code-insights/types'
 import {
     Blockquote,
     ContentSection,
+    CtaSection,
     CustomCarousel,
     Hero,
     HubSpotForm,
@@ -549,31 +549,10 @@ const CodeInsightsPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="row tw-flex tw-flex-col tw-justify-start">
-                <div className="mb-5 col-lg-8 tw-flex tw-flex-col tw-justify-start">
-                    <h2>Get started with Code Insights</h2>
-                    <p>
-                        Create a code insight in 60 seconds and get historical data for previously untracked metrics —
-                        data backfills automatically.
-                    </p>
-                </div>
-                <div className="tw-pt-1 col-lg-7 tw-flex tw-flex-col">
-                    <Link href="/contact/request-code-insights-demo" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className="mr-3 btn btn-primary col-4"
-                            title="Request a Demo of Code Insights."
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.trySourcegraph}
-                            data-button-type="cta"
-                        >
-                            Request a demo
-                        </a>
-                    </Link>
-                </div>
-            </div>
-        </ContentSection>
+        <CtaSection
+            title="Get started with Code Insights"
+            description="Create a code insight in 60 seconds and get historical data for previously untracked metrics — data backfills automatically."
+        />
 
         <ResourceList items={blogResourceItems} title="Learn More" />
     </Layout>

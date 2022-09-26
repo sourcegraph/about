@@ -7607,6 +7607,11 @@ react-transition-group@^4.4.1:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
+react-twitch-embed@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/react-twitch-embed/-/react-twitch-embed-3.0.1.tgz#59701297144ccede4e3fabe42c4789d66399d242"
+  integrity sha512-ZjsLB3AVDQiGpL30u5TNq0CrBSuZXMvhbTgNSeQwoT9ehGud3R4LHxA5PZlt/TEquRVEsNNryLtQbXekk/kyUQ==
+
 react-use-measure@^2.0.4:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/react-use-measure/-/react-use-measure-2.1.1.tgz#5824537f4ee01c9469c45d5f7a8446177c6cc4ba"
