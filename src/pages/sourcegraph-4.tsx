@@ -47,7 +47,7 @@ const Sourcegraph4: FunctionComponent = () => {
         seconds: '0',
         launched: false,
     })
-    const launchDate = new Date('September 27, 2022 00:00 UTC').getTime()
+    const launchDate = new Date('September 27, 2022 13:00 UTC').getTime()
     const second = 1000
     const minute = second * 60
     const hour = minute * 60
