@@ -144,9 +144,9 @@ const Sourcegraph4: FunctionComponent = () => (
                                     <BarChartIcon />
                                 </span>
                             ),
-                            subtitle: 'Relevant search aggregations',
+                            subtitle: 'Code Insights in the search UI',
                             description:
-                                'Aggregations of search results help to refine searches and illuminate usage patterns',
+                                'Understand usage patterns, refine search results, and answer high-level questions',
                         },
                         {
                             icon: (
@@ -155,7 +155,7 @@ const Sourcegraph4: FunctionComponent = () => (
                                 </span>
                             ),
                             subtitle: 'Multi-version upgrades',
-                            description: 'Upgrade from Sourcegraph 3.20 to Sourcegraph 4.0 in a few simple steps ',
+                            description: 'Upgrade from Sourcegraph 3.20 to Sourcegraph 4.0 in a few simple steps',
                         },
                     ]}
                 />
