@@ -15,10 +15,10 @@ We've spent 9 years building the underlying foundation of code search to be fast
 Sourcegraph 4.0 includes over a dozen updates and new features, and is the first step toward Sourcegraph becoming a [code intelligence platform](/blog/code-search-to-code-intelligence).
 
 **Key highlights of Sourcegraph 4.0:**
-* [🧠 Code intelligence: uplevel your code search](### 🧠 Code intelligence: uplevel your code search)
-* [🏗️ High-leverage ways to improve your entire codebase](###🏗️ High-leverage ways to improve your entire codebase)
-* [☁️ Dedicated Sourcegraph Cloud instances for enterprise](###☁️ Dedicated Sourcegraph Cloud instances for enterprise)
-* [📈 Advanced admin capabilities](###📈 Advanced admin capabilities)
+* [🧠 Code intelligence: uplevel your code search](#-Code intelligence: uplevel your code search)
+* [🏗️ High-leverage ways to improve your entire codebase](#-High-leverage ways to improve your entire codebase)
+* [☁️ Dedicated Sourcegraph Cloud instances for enterprise](#-Dedicated Sourcegraph Cloud instances for enterprise)
+* [📈 Advanced admin capabilities](#-Advanced admin capabilities)
 
 
 Read on to discover everything in Sourcegraph 4.0 or [sign up for a 30-day trial for your organization](https://signup.sourcegraph.com/).
