@@ -10,11 +10,13 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/release.
 changelogItems:
 ---
 
-WIP INTRO: Sourcegraph 4.0, the latest version of our code intelligence platform, is now available. Our code intelligence platform includes a dozen new features that make the platform more useful for every dev.
+WIP INTRO: 
 
-A code intelligence platform indexes and understands all of your organization's code, no matter where it's stored or what language it's in. With Sourcegraph, devs and engineering leaders have a complete understanding of their codebase, beyond just matching lines in the code, so they can learn about code and answer difficult questions about their codebase. 
+We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams. Now, we’re hard at work making Sourcegraph even smarter.
 
-Read on to discover everything that shipped in Sourcegraph 4.0.  
+Sourcegraph 4.0 includes over a dozen updates and new features, and is the first step toward Sourcegraph becoming a [code intelligence platform](blog/code-search-to-code-intelligence).
+
+Read on to discover everything that shipped in Sourcegraph 4.0.
 
 ### 🧠 Code intelligence: uplevel your code search
 
