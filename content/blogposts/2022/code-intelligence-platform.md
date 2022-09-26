@@ -88,36 +88,20 @@ Not every dev tool invented or adopted by these big companies is a winner. But w
 <p style={{marginBottom:0}}>*DISCLAIMER([@sqs](https://slack.org)):* This is when I start to talk about [Sourcegraph](https://about.sourcegraph.com), code search, and code intelligence. You may consider me biased, because I'm the Sourcegraph CEO/cofounder. But my love for code search and intelligence tooling is genuine (otherwise, why would I have started Sourcegraph?).</p>
 </blockquote>
 
-#### The state of code search around 2013
-
-My cofounder and I had both felt the pain of working in big, complex codebases&mdash;and the value of a code search tool.
-
-He interned at Google, which famously has a [massive monorepo](https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext) and an exceptionally good [internal Google CodeSearch tool](https://codesearchguide.org/story/google) to search and understand it.
-
-I was hacking on [patches to cURL](https://sourcegraph.com/github.com/curl/curl/-/commit/59cf93ccdbaa5e866f9de6b2d9b1ae5cee84863f), GnuTLS, Chromium, Firefox, OpenSSL, and the Linux kernel. I used [OpenGrok](https://oracle.github.io/opengrok/), a fairly basic code search tool, to get familiar with those big codebases.
-
-We also started hearing about [Facebook's internal code search tool](https://codesearchguide.org/story/facebook).
-
-Code search tools made it possible, and even fun, to work in big, complex codebases. And we assumed that most companies in the future would have big, complex codebases. So, we started Sourcegraph in 2013 with the idea to build the code search tool that we'd love using, make it easy for devs to bring it into their company, and then get those companies to pay for it.
-
-#### Companies started adopting code search
-
-It all went pretty much as planned. (Except that as with many startups, it initially took a few more years than we expected, but we stayed committed to code search.)
-
-We felt validated when we saw so many sophisticated tech companies adopt code search: in addition to [Google](https://codesearchguide.org/story/google) and [Facebook](https://codesearchguide.org/story/facebook) as previously mentioned, Amazon, [Stripe](https://codesearchguide.org/story/stripe), and more. We're proud to have earned some amazing customers, including Uber, Lyft, Dropbox, Atlassian, [Yelp](https://codesearchguide.org/story/yelp), 4/5 of the FAANG companies, and 4 of the top 10 US banks.
-
-Code search is now becoming a mainstream dev tool, and we're seeing adoption accelerate. Today, Sourcegraph and [other code search tools](https://codesearchguide.org/tools) help devs search and understand complex codebases much better. Code search makes code complexity more manageable, so that you can spend those "complexity savings" on a better product (or however else you wish).
-
 #### From code search to code intelligence
 
-In many of our customers, Sourcegraph became the only tool used by all the devs and the only tool that indexed all of the code. Everything else was fragmented, by code host, language, editor, and so on. Sourcegraph was the one universal dev tool&mdash;or sometimes it was Sourcegraph and the primary code host.
+Code search is now a mainstream dev tool. So many sophisticated tech companies have adopted code search: in addition to [Google](https://codesearchguide.org/story/google) and [Facebook](https://codesearchguide.org/story/facebook) as previously mentioned, Amazon, [Stripe](https://codesearchguide.org/story/stripe), and more. We're proud to have earned some amazing customers, including Uber, Lyft, Dropbox, Atlassian, [Yelp](https://codesearchguide.org/story/yelp), 4/5 of the FAANG companies, and 4 of the top 10 US banks. If a company or dev isn't yet using code search, they will soon.
 
-In increasingly complex codebases and with increasing numbers of separate dev tools, devs wanted to have a single place with all the information about code. And they wanted Sourcegraph to give them the answers, instead of just the raw information that they could use to form the answer. They told us things like:
+For our customers, Sourcegraph is the one universal dev tool: the only tool used by all the devs and the only tool that indexes all of the code. Other tools in the dev workflow are fragmented: devs all use different editors and languages, and often there are multiple code hosts. 
+
+Devs want a single place with all the information about code. And they want Sourcegraph to be this place, and to give them answers instead of just the raw information that they could use to form the answer. We often hear things like:
 
 - "I'm trying to figure out the best way to call a function. Don't just show me a list of call sites. Show me how the code owners of that function themselves have recently been calling that function."
 - "I need to debug an issue in code. Don't just let me navigate within the same project to understand it. Let me see what changed and why, and trace calls across projects and dependencies."
 - "I need to see how my team's API is being used. Don't just show me a list of file locations. Show me which other teams are using it and the trend of usage over time, grouped by usage pattern."
 - "I need to fix something across my entire codebase? Don't just help me find the spots that need fixing. Let me push up a quick fix to all affected repositories, tracks its progress, and monitor for regressions."
+
+TODO - say what a code intelligence platform is concretely
 
 {/* We added [Code Insights](https://docs.sourcegraph.com/code_insights) to let devs track trends over time, [Batch Changes](https://docs.sourcegraph.com/batch_changes) to let devs make large-scale code changes across many repositories, and more. These crucial primitives helped, but we still needed to teach Sourcegraph much more about code and its associated metadata. */}
 
@@ -125,6 +109,6 @@ Code search isn't enough to answer these kinds of questions, because code search
 
 Remember how Google went from helping you find things *on* the web (matching web pages) to helping you learn things *from* the web (information and answers) by connecting data like news, videos, and maps back to web search? Today, you go to Google to answer complex questions and learn things, not to find things.
 
-At Sourcegraph, we're making the same kind of leap, from a code search tool to a code intelligence platform. If we do our job well, Sourcegraph's code intelligence platform will free up so much time and brainpower for devs everywhere so that software progress can continue.
+And that brings us to Sourcegraph 4.0. ... TODO ... We're making the same kind of leap, from a code search tool to a code intelligence platform. If we do our job well, Sourcegraph's code intelligence platform will free up so much time and brainpower for devs everywhere so that software progress can continue.
 
 We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams, and now we're hard at work making Sourcegraph even smarter. [Sourcegraph 4.0](/blog/sourcegraph-4.0) is the first step toward Sourcegraph becoming a code intelligence platform, with smart search aggregations to quickly answer questions about usage patterns.
