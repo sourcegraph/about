@@ -15,7 +15,7 @@ authors:
 
 Code search helps you find *matching lines in code*. That helps, but it's often not enough, especially as your codebase gets more complex. You need to know who wrote that code, or the top usage patterns of a function, or which repositories use it, etc. {/* I limited this to things Sourcegraph 4.0 does. There's a lot of awesome stuff we can do in the future, but I wanted to stay grounded in the present here. */}  Sourcegraph will increasingly help you find these kinds of *answers* in code&mdash;and in metadata from all your dev tools that know stuff about code.
 
-We call this a code intelligence platform (motto: *"answers, not just matching lines"*), and you can see [Sourcegraph 4.0](/blog/sourcegraph-4.0) taking the first steps toward that vision, beyond just code search.
+We call this a code intelligence platform (motto: *"answers, not just matching lines"*), and you can see [Sourcegraph 4.0](/blog/enterprise-cloud) taking the first steps toward that vision, beyond just code search.
 
 Why is this important? Why now? Let's go back in time to 25 years ago...
 
