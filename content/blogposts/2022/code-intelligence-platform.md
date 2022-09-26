@@ -55,7 +55,7 @@ Also, codebases are growing quickly. Here are some data points to consider:
 * The amount of time you've personally spent decommissioning systems vs. creating them. If it's not at least a 5-to-1 ratio, you're probably part of the problem&mdash;along with everyone else, no worries.
 * We ran a [survey of devs](https://info.sourcegraph.com/hubfs/CTA%20assets/sourcegraph-big-code-survey-report.pdf) where 51% said their company's codebase had grown 100x over the last 10 years. The kind of person who's skeptical of that number (I'm with you, it does seem high) is probably the kind of person who agrees with the overall point. (Speak up if not!)
 
-What allows this rapid increase in software complexity (and, overall, software quality and features)? **We've become accustomed to dev tools getting better rapidly,** which has cancelled out much of the overall increase in complexity so that our human brains can still get by.
+What allows this rapid increase in software complexity (and, overall, software quality and features)? **We've become accustomed to dev tools getting better rapidly,** which has cancelled out enough of the overall increase in complexity so that our human brains can still get by.
 
 #### Don't take software progress for granted
 
