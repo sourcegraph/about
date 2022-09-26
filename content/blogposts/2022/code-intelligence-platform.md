@@ -112,7 +112,7 @@ Code search is now becoming a mainstream dev tool, and we're seeing adoption acc
 
 In many of our customers, Sourcegraph became the only tool used by all the devs and the only tool that indexed all of the code. Everything else was fragmented, by code host, language, editor, and so on. Sourcegraph was the one universal dev tool&mdash;or sometimes it was Sourcegraph and the primary code host.
 
-In increasingly complex codebases and with increasing numbers of separate dev tools, devs wanted to have a single place with all the information about code. They wanted Sourcegraph to give them the answers, instead of just the raw information that they could use to form the answer. They told us things like:
+In increasingly complex codebases and with increasing numbers of separate dev tools, devs wanted to have a single place with all the information about code. And they wanted Sourcegraph to give them the answers, instead of just the raw information that they could use to form the answer. They told us things like:
 
 - "I'm trying to figure out the best way to call a function. Don't just show me a list of call sites. Show me how the code owners of that function themselves have recently been calling that function."
 - "I need to debug an issue in code. Don't just let me navigate within the same project to understand it. Let me see what changed and why, and trace calls across projects and dependencies."
