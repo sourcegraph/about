@@ -27,21 +27,35 @@ Because software is much better and does much more than 25 years ago. {/* We can
 
 Never in the history of software has a dev tool actually yielded a permanent reduction in total complexity. Never has a company said, "Now that we're using \{the cloud, continuous integration, continuous deployment, microservices, GitHub, ...\}, let's strive for greater simplicity instead of \{moving faster, increasing product quality, building more features, ...\}." (If you know of any such company, I know a ton of devs who would love to work there. I also predict that company will soon go out of business.)
 
-This is the **law of conservation of code complexity** ([1](https://wiki.c2.com/?ConservationOfComplexity) [2](https://en.wikipedia.org/wiki/Law_of_conservation_of_complexity) [3](https://www.johndcook.com/blog/2009/09/16/conservation-of-complexity/)):
+We can give this an official-sounding name. The **law of conservation of code complexity** states (similar: [1](https://wiki.c2.com/?ConservationOfComplexity) [2](https://en.wikipedia.org/wiki/Law_of_conservation_of_complexity) [3](https://www.johndcook.com/blog/2009/09/16/conservation-of-complexity/)):
 
 <blockquote style={{marginLeft: '1rem', marginBottom: '1.25rem', padding: '0.75rem', backgroundColor: '#f7f7f7'}}>
-<p style={{marginBottom:0}}>Software complexity can't be created or destroyed. It can only be shifted from one place or form to another.</p>
+<p style={{marginBottom:0}}>If you reduce the complexity of your codebase (such as by improving dev tooling or refactoring code), you (or your boss) will be unable to resist the temptation to increase complexity by the same amount elsewhere, usually in the form of new features.</p>
 </blockquote>
 
-{/* Some posts about the law of conservation of complexity have a stricter and more pessimistic interpretation of it, that no dev tooling can ever decrease complexity. For example, if you switch from the hackiest build scripts ever to a Makefile, then you have not decreased complexity, only buried it in `make`. I disagree. I think you have actually eliminated complexity in your build process, but you'll be unable to resist the temptation to increase complexity elsewhere. */}
+{/* Some posts about the law of conservation of complexity have a stricter and more pessimistic interpretation of it, that no dev tooling can ever decrease complexity. For example, if you switch from the hackiest build scripts ever to a Makefile, then you have not decreased complexity, only buried it in `make`. I disagree. I think you have actually eliminated complexity in your build process, but again, you'll be unable to resist the temptation to increase complexity by the same amount elsewhere. */}
 
-#### Progress in dev tools is necessary for software progress
+#### Better dev tools lead to better software
 
-Does this mean that dev tools are worthless? No! The opposite, in fact.
+Does this mean that dev tools are worthless, since their benefits are immediately cancelled out? No! The opposite, in fact.
 
-Progress in dev tools is necessary for software progress. When a better dev tool makes something simpler or saves time for a dev, that dev can use that brainpower and time to make their own software better and more useful. By the law of conservation of code complexity, that dev was previously operating at the very limit of their brainpower.
+**Better dev tooling frees up time and brainpower so devs can build better software.** If we were stuck with today's dev tooling forever, then software progress would eventually come to a halt.
+
+If you doubt this, then imagine building today's software with 15-year-old build tools, package managers, and frameworks. It wouldn't be possible. So, why would you think today's dev tools will suffice unchanged 15 years from now?
 
 {/* This feeling is a big part of [why I love coding](https://slack.org/why-i-love-code) and what motivates me at Sourcegraph! And it's a reason to appreciate dev tools creators everywhere, who are indirectly helping to make people's lives better. */}
+
+#### Dev tools need to constantly improve just to keep pace
+
+The situation is even worse than it seems. Code complexity isn't in equilibrium. Devs add complexity to their codebase constantly, without first dutifully removing complexity elsewhere. Code is much easier to write than to maintain or decommission, and this is becoming even more true as code becomes more interdependent.
+
+Also, codebases are growing quickly. Here are some data points to consider:
+
+* The size of your `node_modules` tree over time (or `vendor`, etc.).
+* The amount of time you've personally spent decommissioning systems vs. creating them. If it's not at least a 5-to-1 ratio, you're probably part of the problem&mdash;along with everyone else, no worries.
+* We ran a [survey of devs](https://info.sourcegraph.com/hubfs/CTA%20assets/sourcegraph-big-code-survey-report.pdf) where 51% said their company's codebase had grown 100x over the last 10 years. The kind of person who's skeptical of that number (I'm with you, it does seem high) is probably the kind of person who agrees with the overall point. (Speak up if not!)
+
+What allows this rapid increase in software complexity (and, overall, software quality and features)? **We've become accustomed to dev tools getting better rapidly,** which has cancelled out much of the overall increase in complexity so that our human brains can still get by.
 
 #### Don't take software progress for granted
 
@@ -49,11 +63,6 @@ But software progress isn't a given. No fundamental law of nature says that soft
 
 #### Codebases are growing fast
 
-Most devs' codebases are growing quickly. Here are some data points to consider:
-
-* The size of your `node_modules` tree over time (or `vendor`, etc.).
-* The amount of time you've personally spent decommissioning systems vs. creating them. If it's not at least a 5-to-1 ratio, you're probably part of the problem&mdash;along with everyone else, no worries.
-* We ran a [survey of devs](https://info.sourcegraph.com/hubfs/CTA%20assets/sourcegraph-big-code-survey-report.pdf) where 51% said their company's codebase had grown 100x over the last 10 years. The kind of person who's skeptical of that number (I'm with you, it does seem high) is probably the kind of person who agrees with the overall point. (Speak up if not!)
 
 #### Better libraries and encapsulation are the solution&mdash;and the problem
 
