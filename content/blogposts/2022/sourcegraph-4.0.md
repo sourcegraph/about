@@ -16,7 +16,7 @@ We've spent 9 years building the underlying foundation of code search to be fast
 
 Sourcegraph 4.0 includes over a dozen updates and new features, and is the first step toward Sourcegraph becoming a [code intelligence platform](blog/code-search-to-code-intelligence).
 
-Read on to discover everything that shipped in Sourcegraph 4.0.
+Read on to discover everything in Sourcegraph 4.0.
 
 ### 🧠 Code intelligence: uplevel your code search
 
