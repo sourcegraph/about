@@ -80,7 +80,7 @@ Auto-indexing allows you to set up precise code navigation for any chosen reposi
   caption="Auto-indexing is now supported for 9 languages and allows you to set up precise code navigation, automatically"
 />
 
-<a href="https://docs.sourcegraph.com/code_navigation/references/indexers" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/code_navigation/explanations/auto_indexing" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
 <br />
 <Badge link="https://docs.sourcegraph.com/integration" text="Extensions" color="vermillion" size="small" />
