@@ -14,7 +14,7 @@ WIP INTRO:
 
 We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams. Now, we’re hard at work making Sourcegraph even smarter.
 
-Sourcegraph 4.0 includes over a dozen updates and new features, and is the first step toward Sourcegraph becoming a [code intelligence platform](blog/code-search-to-code-intelligence).
+Sourcegraph 4.0 includes over a dozen updates and new features, and is the first step toward Sourcegraph becoming a [code intelligence platform](/blog/code-search-to-code-intelligence).
 
 Read on to discover everything in Sourcegraph 4.0.
 
@@ -52,7 +52,7 @@ You can choose to group your search results by location (repo or file), author, 
 #### A faster, simpler search experience 
 We streamlined and simplified the search user interface to make the platform more intuitive. The search homepage, for customer instances of Sourcegraph, now has contextual tips and recommendations using real data from your instance, including repository names, file names, and authors. This information makes it easier and faster than ever to run a successful search query.
 
-[Search results](https://about.sourcegraph.com/code-search) are now front and center with the improved interface. The search sidebar has moved to the right side of the screen, matches in file and respository names are now highlighted, and we eliminated several non-essential elements to ensure the information you need is easy to access. Filters make it effortless for you to answer questions about your code, and the sidebar can be collapsed altogether to reduce noise. 
+[Search results](/code-search) are now front and center with the improved interface. The search sidebar has moved to the right side of the screen, matches in file and respository names are now highlighted, and we eliminated several non-essential elements to ensure the information you need is easy to access. Filters make it effortless for you to answer questions about your code, and the sidebar can be collapsed altogether to reduce noise. 
 
 We also made major performance improvements to make rendering search results, files, and repositories faster than ever. 
 
@@ -128,7 +128,7 @@ Your code navigation experience just got better with a refreshed version of the 
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 
 #### Make changes across your codebase at enterprise scale with server-side Batch Changes (beta)
-[Batch Changes](https://about.sourcegraph.com/batch-changes) allows you to automate code changes across your entire codebase. Previously, you had to run `src-cli` locally to create batch changes, which could take an impractical amount of time or be brittle for large or resource-intensive batch changes. Now, with server-side Batch Changes, large-scale changes can be run across thousands of repositories with a better development experience. With server-side Batch Changes, you can:
+[Batch Changes](/batch-changes) allows you to automate code changes across your entire codebase. Previously, you had to run `src-cli` locally to create batch changes, which could take an impractical amount of time or be brittle for large or resource-intensive batch changes. Now, with server-side Batch Changes, large-scale changes can be run across thousands of repositories with a better development experience. With server-side Batch Changes, you can:
 
 - Run large-scale or resource-intensive batch changes without clogging your local machine.
 - Run large batch changes quickly by distributing them across an autoscaled pool of compute instances.
@@ -223,7 +223,7 @@ With charts that detail usage over time and value calculators that quantify the 
 
 #### Easily export traces using OpenTelemetry
 
-[OpenTelemetry (OTEL)]((https://opentelemetry.io/)) is an open specification for exporting observability data. We’ve added OpenTelemetry support in Sourcegraph 4.0 so you can easily export tracing data from Sourcegraph into your preferred observability solution. This is a breaking change as we now require you to export tracing with the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/). This is deployed by default in all Sourcegraph deployment methods and replaces the Jaeger agents and collectors that was previously the default.
+[OpenTelemetry (OTEL)](https://opentelemetry.io/) is an open specification for exporting observability data. We’ve added OpenTelemetry support in Sourcegraph 4.0 so you can easily export tracing data from Sourcegraph into your preferred observability solution. This is a breaking change as we now require you to export tracing with the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/). This is deployed by default in all Sourcegraph deployment methods and replaces the Jaeger agents and collectors that was previously the default.
 
 <a href="https://docs.sourcegraph.com/admin/observability/opentelemetry" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 

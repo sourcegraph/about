@@ -77,7 +77,7 @@ In dev tools, unlike most fields, the best ideas come from big companies. {/* Ot
 
 Google, Facebook, Amazon, Netflix, Stripe, and others have widespread early adoption and tight integration of all the obvious dev tooling (with team-by-team exceptions, of course). There are many examples where these companies were early adopters of dev tooling or practices that are now widespread:
 
-* [Kubernetes](https://kubernetes.io/blog/2015/04/borg-predecessor-to-kubernetes/), [code review](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/80735342aebcbfc8af4878373f842c25323cb985.pdf), and [many more examples from Google](https://about.sourcegraph.com/blog/ex-googler-guide-dev-tools).
+* [Kubernetes](https://kubernetes.io/blog/2015/04/borg-predecessor-to-kubernetes/), [code review](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/80735342aebcbfc8af4878373f842c25323cb985.pdf), and [many more examples from Google](/blog/ex-googler-guide-dev-tools).
 * [React](https://reactjs.org/), continuous deployment, [GraphQL](https://graphql.org/), and [feature flags](https://launchdarkly.com/blog/secret-to-facebooks-hacker-engineering-culture/) from Facebook.
 * [Amazon's push toward a service-oriented architecture](https://gist.github.com/chitchcock/1281611) that paved the way for AWS.
 * [Netflix's early embrace of AWS.](https://netflixtechblog.com/four-reasons-we-choose-amazons-cloud-as-our-computing-platform-4aceb692afec)
