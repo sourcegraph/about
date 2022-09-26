@@ -100,28 +100,31 @@ We also started hearing about [Facebook's internal code search tool](https://cod
 
 Code search tools made it possible, and even fun, to work in big, complex codebases. And we assumed that most companies in the future would have big, complex codebases. So, we started Sourcegraph in 2013 with the idea to build the code search tool that we'd love using, make it easy for devs to bring it into their company, and then get those companies to pay for it.
 
-#### All the dev tools early adopters started adopting code search
+#### Companies started adopting code search
 
 It all went pretty much as planned. (Except that as with many startups, it initially took a few more years than we expected, but we stayed committed to code search.)
 
 We felt validated when we saw so many sophisticated tech companies adopt code search: in addition to [Google](https://codesearchguide.org/story/google) and [Facebook](https://codesearchguide.org/story/facebook) as previously mentioned, Amazon, [Stripe](https://codesearchguide.org/story/stripe), and more. We're proud to have earned some amazing customers, including Uber, Lyft, Dropbox, Atlassian, [Yelp](https://codesearchguide.org/story/yelp), 4/5 of the FAANG companies, and 4 of the top 10 US banks.
 
-#### Code search 
+Code search is now becoming a mainstream dev tool, and we're seeing adoption accelerate. Today, Sourcegraph and [other code search tools](https://codesearchguide.org/tools) help devs search and understand complex codebases much better. Code search makes code complexity more manageable, so that you can spend those "complexity savings" on a better product (or however else you wish).
 
+#### From code search to code intelligence
 
-In 2013, we set out to tackle this complexity issue by building code search and making it available to every dev and company. Code search is helpful in reducing complexity, but it's not enough. It helps you find things *in* code (matching lines in files), but developers also need to learn things *about* code. Google went from helping you find things *on* the web (matching web pages) to helping you learn things *from* the web (information and answers) by connecting data like news, videos, and maps back to web search. Today, you go to Google to answer complex questions and learn things, not to find things. At Sourcegraph, we're doing the same for code with our code intelligence platform.
+In many of our customers, Sourcegraph became the only tool used by all the devs and the only tool that indexed all of the code. Everything else was fragmented, by code host, language, editor, and so on. Sourcegraph was the one universal dev tool&mdash;or sometimes it was Sourcegraph and the primary code host.
 
-Today, we're releasing Sourcegraph 4.0. 4.0 is a big step for Sourcegraph and our customers as we shift from a code search tool into a code intelligence platform.
+Naturally, devs started to want Sourcegraph to understand more kinds of information about code, beyond just [search](https://docs.sourcegraph.com/code_search), [code navigation](https://docs.sourcegraph.com/code_navigation) (definitions and references), and Git blame. They wanted Sourcegraph to give them the answers, instead of just the raw information that they could use to form the answer. They told us things like:
 
-A code intelligence platform indexes and understands all of your organization's code, no matter where it's stored or what language it's in. With Sourcegraph, devs and engineering can learn *about* code and answer difficult questions about their codebase.
+- "I'm trying to figure out the best way to call a function. Don't just show me a list of call sites. Show me how the code owners of that function themselves have recently been calling that function."
+- "I need to debug an issue in code. Don't just let me navigate within the same project to understand it. Let me see what changed and why, and trace calls across projects and dependencies."
+- "I need to see how my team's API is being used. Don't just show me a list of file locations. Show me which other teams are using it and the trend of usage over time, grouped by usage pattern."
+- "I need to fix something across my entire codebase? Don't just help me find the spots that need fixing. Let me push up a quick fix to all affected repositories, tracks its progress, and monitor for regressions."
 
-Our code intelligence platform will compute and store data beyond the code itself and make that data accessible. Sourcegraph already pulls in information on code history, repository metadata, and metrics derived from code via Code Insights. Here is what coding will look like with a code intelligence platform:
+{/* We added [Code Insights](https://docs.sourcegraph.com/code_insights) to let devs track trends over time, [Batch Changes](https://docs.sourcegraph.com/batch_changes) to let devs make large-scale code changes across many repositories, and more. These crucial primitives helped, but we still needed to teach Sourcegraph much more about code and its associated metadata. */}
 
-- Trying to figure out the best way to call a function? Code search shows you a semi-exhaustive list of call sites. Code intelligence is seeing how the code owners of that function themselves have recently been calling that function.
-- Need to debug an issue in code? Code search helps you navigate within the same project to understand it. Code intelligence is seeing what changed and why, and tracing calls across projects and dependencies.
-- Need to see how your team's API is being used? Code search shows you a list of file locations. Code intelligence shows which other teams are using it and the trend of usage over time.
-- Want to fix or improve something across your entire codebase? Code search helps you find the spots that need fixing. Code intelligence pushes up a quick fix everywhere, tracks its progress, and monitors for regressions. Sourcegraph already does this with Batch Changes.
+Code search isn't enough to answer these kinds of questions, because code search just helps you find matching lines in code.
 
-Sourcegraph 4.0 is the code intelligence platform for devs to unblock themselves and code better. We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams, from 4 of 5 FAANG companies and 4 of the top 10 U.S. banks, to companies launching satellites into space and the leaders in autonomous transportation. 
+Remember how Google went from helping you find things *on* the web (matching web pages) to helping you learn things *from* the web (information and answers) by connecting data like news, videos, and maps back to web search? Today, you go to Google to answer complex questions and learn things, not to find things.
 
-Sourcegraph 4.0 is available to all devs, and you can [upgrade to 4.0 now](https://docs.sourcegraph.com/admin/updates). For devs new to our code intelligence platform, the future is Sourcegraph Cloud. Cloud uses dedicated, single-tenant instances so every customer gets enterprise scalability and isolation. It also has a SOC 2 Type II report, so you can be assured of the security of your data. Sourcegraph Cloud comes with 4.0 out-of-the-box. [Start a 30-day trial of Sourcegraph Cloud today](https://signup.sourcegraph.com).
+At Sourcegraph, we're making the same kind of leap, from a code search tool to a code intelligence platform. If we do our job well, Sourcegraph's code intelligence platform will free up so much time and brainpower for devs everywhere so that software progress can continue.
+
+We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams, and now we're hard at work making Sourcegraph even smarter. [Sourcegraph 4.0](/blog/sourcegraph-4.0) is the first step toward Sourcegraph becoming a code intelligence platform, with smart search aggregations to quickly answer questions about usage patterns.
