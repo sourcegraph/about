@@ -13,11 +13,11 @@ authors:
 
 ---
 
-Code search helps you find *matching lines in code*. That helps, but it's often not enough, especially as your codebase gets more complex. Sometimes you need to know who wrote that code, or the top usage patterns of a function, or which repositories use it. Sourcegraph will increasingly help you find these kinds of *answers* in code and associated metadata from all your dev tools that know stuff about code.
+Code search helps you find *matching lines in code*. That helps, but it's often not enough, especially as your codebase gets more complex. Sometimes you need to know who wrote that code, or the top usage patterns of a function, or which repositories use it, etc. {/* I limited this to things Sourcegraph 4.0 does. There's a lot of awesome stuff we can do in the future, but I wanted to stay grounded in the present here. */}  Sourcegraph will increasingly help you find these kinds of *answers* in code&mdash;and in metadata from all your dev tools that know stuff about code.
 
-We call this a code intelligence platform (motto: *"answers, not just matching lines"*), and you can see [Sourcegraph 4.0](/blog/sourcegraph-4.0) taking the first steps toward that vision and beyond just code search.
+We call this a code intelligence platform (motto: *"answers, not just matching lines"*), and you can see [Sourcegraph 4.0](/blog/sourcegraph-4.0) taking the first steps toward that vision, beyond just code search.
 
-
+Why is this important? Why now? Let's go back in time to 25 years ago...
 
 #### Don't take software progress for granted
 
@@ -27,11 +27,41 @@ Because software is much better and does much more than 25 years ago. {/* We can
 
 But software progress isn't a given. No fundamental law of nature says that software gets better each year. Without massive improvements in dev tooling over the last 25 years, software could not have improved so much over that period. {/* Can you imagine working in your current codebase with tools even from 5-10 years ago? Even if you can, you'd probably be at least a little bit less effective, and your other team members even more so. Look, I'm not someone who loves using the new buzzword tech. I use Emacs, and we use Go and TypeScript (with React) here at Sourcegraph. But I find even all of those things have gotten significantly better in the last 2 years even. */}
 
-### a
+#### Codebases are growing fast
+
+Most devs' codebases are growing quickly. Here are some data points to consider:
+
+* The size of your `node_modules` tree over time (or `vendor`, etc.).
+* The amount of time you've personally spent decommissioning systems vs. creating them. If it's not at least a 5-to-1 ratio, you're probably part of the problem&mdash;along with everyone else, no worries.
+* We ran a [survey of devs](https://info.sourcegraph.com/hubfs/CTA%20assets/sourcegraph-big-code-survey-report.pdf) where 51% said their company's codebase had grown 100x over the last 10 years. The kind of person who's skeptical of that number (I'm with you, it does seem high) is probably the kind of person who agrees with the overall point. (Speak up if not!)
+
+#### Better libraries and encapsulation are the solution&mdash;and the problem
+
+In theory, a bigger codebase isn't necessarily a more complex codebase. You can just tend to your little, perfectly encapsulated corner of the codebase. No matter how big the overall codebase got, your life stays the same.
+
+There's certainly some truth to that. Today's dev tooling makes it easier than before to write and reuse high-quality, well-tested, well-encapsulated units of code.
+
+
+
+But that just means you'll spend the "complexity budget" elsewhere.
+
+Even so, the sheer volume of code and the leaky abstractions inherent in the overall cobble will cause total complexity to increase.
+
+Why is this happening? It has always been true that code is easier to write than to maintain or decommission. It's actually becoming harder to decommission code now that software is more interconnected.
+
+
+
+#### Code search is like an ex
+
+More than 10 years ago, my cofounder Beyang and I had both felt the pain of working in big, complex codebases. He interned at Google, which famously has a [massive monorepo](https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext) and exceptionally good tools to search and understand it. I hacked on patches to cURL, GnuTLS, Chromium, Firefox, OpenSSL, and the Linux kernel, and I used [OpenGrok](https://oracle.github.io/opengrok/) alongside Emacs to get familiar with those codebases. Code search tools made it possible, but still not easy, to understand these massive codebases.
+
+Back then, not many devs used code search tools, which were hard to set up and not very good (except the internal [Google CodeSearch](https://codesearchguide.org/story/google)).
+
+But we loved code search tools, and we started Sourcegraph because 
 
 And that gets us to Sourcegraph. We built Sourcegraph to help ourselves, you, and every other dev deal with ever-increasing code complexity.
 
-I'm especially worried about how the amount of code is increasing at a much faster rate than the number of developers. We ran a [survey of devs](https://info.sourcegraph.com/hubfs/CTA%20assets/sourcegraph-big-code-survey-report.pdf) where 51% said their company's codebase had grown 100x over the last 10 years. Even if you don't believe that exact number, it's certainly true that code is much easier to write than to maintain or decommission. 
+I'm especially worried about how the amount of code is increasing at a much faster rate than the number of developers. 
 
 
 And that gets us to Sourcegraph, how can we help.
