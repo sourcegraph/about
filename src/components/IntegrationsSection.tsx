@@ -12,11 +12,9 @@ const codeHosts: string[] = [
     'Bitbucket Data Center',
     'Bitbucket Cloud',
     'Phabricator',
-    'Gitolite',
-    'Gerrit (coming soon)',
     'Perforce',
     'CVS',
-    'Any git-based code host',
+    'Any Git-based code host',
 ]
 
 const languages: string[] = [

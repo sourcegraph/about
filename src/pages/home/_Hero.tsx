@@ -3,7 +3,7 @@ import { FunctionComponent, useEffect, useState } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { ContentSection, CustomerLogos, YouTube } from '@components'
+import { CustomerLogos, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 import meshLeft from './assets/hero/mesh-left.png'
@@ -26,7 +26,7 @@ const Hero: FunctionComponent = () => {
     })
 
     return (
-        <div className="tw-relative tw-px-sm tw-pb-3xl md:tw-pb-5xl tw-bg-white tw-text-black">
+        <div className="tw-relative tw-px-sm tw-bg-white tw-text-black">
             {[meshLeft, meshRight].map((image, index) => (
                 <div
                     key={`mesh-container-${Math.random()}`}
@@ -57,7 +57,7 @@ const Hero: FunctionComponent = () => {
                         <a
                             className="btn btn-primary w-100"
                             href="https://signup.sourcegraph.com"
-                            title="Get started"
+                            title="Get free trial"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.hero}
                             data-button-type="cta"
@@ -80,11 +80,11 @@ const Hero: FunctionComponent = () => {
                         </Link>
                     </div>
                 </div>
-            </div>
 
-            <ContentSection slimWidth={true}>
-                <YouTube title="Sourcegraph Product Tour" id="Kk1ea2-l8Hk" />
-            </ContentSection>
+                <div className="tw-max-w-4xl tw-mx-auto tw-my-3xl">
+                    <YouTube title="Sourcegraph Product Tour" id="Kk1ea2-l8Hk" />
+                </div>
+            </div>
 
             <CustomerLogos />
         </div>

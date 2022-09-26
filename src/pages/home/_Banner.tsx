@@ -15,7 +15,7 @@ const Banner: FunctionComponent = () => (
                 draggable={false}
             />
             <p className="tw-text-white tw-text-lg tw-my-xs md:tw-my-0 md:tw-mx-sm md:tw-text-2xl lg:tw-mx-2xl">
-                The code intelligence platform for modern development teams
+                The future of Sourcegraph is here
             </p>
             <Link href="/sourcegraph-4">
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

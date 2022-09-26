@@ -53,7 +53,7 @@ const Sourcegraph4: FunctionComponent = () => (
             title="Learn more about Sourcegraph 4.0"
             items={[
                 {
-                    title: 'From code search towards a code intelligence platform',
+                    title: 'From code search to a code intelligence platform',
                     description:
                         'Since its inception, Sourcegraph has evolved from code search into a code intelligence platform. Our CEO and cofounder, Quinn Slack, shares what code intelligence means for the future of software development.',
                     type: 'Blog Post',
@@ -77,7 +77,7 @@ const Sourcegraph4: FunctionComponent = () => (
                 {
                     title: 'Secure and scalable Sourcegraph Cloud instances for the enterprise',
                     description:
-                        'Sourcegraph Cloud, our single-tenant Cloud solution for enterprise, is now generally available.',
+                        'Sourcegraph Cloud, our single-tenant cloud solution for enterprise, is now generally available.',
                     type: 'Blog Post',
                     href: '/blog/enterprise-cloud',
                     img: {
@@ -109,8 +109,8 @@ const Sourcegraph4: FunctionComponent = () => (
                                     <CloudUploadIcon />
                                 </span>
                             ),
-                            subtitle: 'Enterprise Cloud deployment',
-                            description: 'Secure, easy, and scalable dedicated Cloud instances',
+                            subtitle: 'Enterprise cloud deployment',
+                            description: 'Secure and scalable single-tenant cloud instances',
                         },
                         {
                             icon: (
@@ -155,7 +155,7 @@ const Sourcegraph4: FunctionComponent = () => (
                                 </span>
                             ),
                             subtitle: 'Multi-version upgrades',
-                            description: 'Upgrade from Sourcegraph 3.29 to Sourcegraph 4.0 in a few simple steps ',
+                            description: 'Upgrade from Sourcegraph 3.20 to Sourcegraph 4.0 in a few simple steps ',
                         },
                     ]}
                 />
@@ -189,7 +189,7 @@ const Sourcegraph4: FunctionComponent = () => (
         <CtaSection
             background="starshipLaunchPills"
             centerContent={true}
-            title="Learn more about the code intelligence platform for modern development teams"
+            title="Experience the code intelligence platform for modern development teams"
             description=""
             cta1={{
                 text: 'Get free trial',

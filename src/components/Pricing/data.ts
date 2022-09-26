@@ -383,8 +383,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     enterpriseExecutors: {
         label: '4 executors',
-        description:
-            'Offload expensive tasks when running Batch Changes server-side or using code navigation’s auto-indexing functionality.',
+        description: 'Execute server-side Batch Changes and use auto-indexing for precise code navigation.',
     },
 
     ...DEPLOYMENT_FEATURE_INFO,
@@ -424,7 +423,8 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     privateHosts: {
         label: 'Private code hosts',
-        description: 'Integrate with supported code hosts deployed on a private network (only available for self-hosted deployments).',
+        description:
+            'Integrate with supported code hosts deployed on a private network (only available for self-hosted deployments).',
     },
 
     // Security and admin
@@ -441,8 +441,7 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     executors: {
         label: 'Executors',
-        description:
-            'Execute server-side Batch Changes and use auto-indexing for precise code navigation.',
+        description: 'Execute server-side Batch Changes and use auto-indexing for precise code navigation.',
     },
 
     // Support
@@ -456,7 +455,8 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     supportSla: {
         label: 'Support SLA',
-        description: 'Priority ticket handling and guaranteed initial response SLA from a dedicated team.',
+        description:
+            'Priority support SLAs: priority ticket handling and guaranteed initial response SLA from a dedicated team.',
     },
 
     // Deployment

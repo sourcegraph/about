@@ -118,7 +118,7 @@ const faqData = [
         a: (
             <p>
                 Sourcegraph supports the work of educational organizations and nonprofits. Please{' '}
-                <Link href="/demo" passHref={true}>
+                <Link href="/contact/request-info?form_submission_source=pricing-enterprise" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         title="contact Sourcegraph"
@@ -267,16 +267,11 @@ const PricingPage: FunctionComponent = () => {
             <CtaSection
                 background="mars"
                 title="Free for small teams"
-                description="Small teams can use a limited version of Sourcegraph’s code intelligence platform for free to search personal and open source projects. The free version can only be deployed self-hosted and supports one code host connection."
+                description="Small teams can use a limited version of Sourcegraph’s code intelligence platform for free to search personal and open source projects. The free version can only be deployed self-hosted and supports one code host integration."
                 cta1={{
                     text: 'Deploy',
                     link: 'https://docs.sourcegraph.com/#self-hosted',
                     ctaStyle: 'primaryButton',
-                }}
-                cta2={{
-                    text: 'Start free Cloud trial',
-                    link: 'https://signup.sourcegraph.com',
-                    ctaStyle: 'outlineButton',
                 }}
             />
 
