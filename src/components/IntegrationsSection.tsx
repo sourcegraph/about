@@ -11,9 +11,7 @@ const codeHosts: string[] = [
     'Bitbucket Server',
     'Bitbucket Data Center',
     'Bitbucket Cloud',
-    'Phabricator',
     'Perforce',
-    'CVS',
     'Any Git-based code host',
 ]
 
