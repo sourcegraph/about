@@ -10,11 +10,10 @@ import { NavLink } from '../navLinks'
 
 interface Props {
     navLinks: NavLink[]
-    hideGetStartedButton: boolean | undefined
     isOpen: boolean
 }
 
-const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, isOpen }) => {
+const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
     const initialMobileMenuState = navLinks.reduce(
         (accumulator, navLink) => ({ ...accumulator, [camelCase(navLink.section)]: false }),
         {}
@@ -166,20 +165,18 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                         </a>
                     </Link>
                 </li>
-                {!hideGetStartedButton && (
-                    <li className="tw-items-center nav-item" role="presentation">
-                        <a
-                            className="nav-link"
-                            href="https://signup.sourcegraph.com"
-                            title="Get free trial"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.nav}
-                            data-button-type="cta"
-                        >
-                            Get free trial
-                        </a>
-                    </li>
-                )}
+                <li className="tw-items-center nav-item" role="presentation">
+                    <a
+                        className="nav-link"
+                        href="https://signup.sourcegraph.com"
+                        title="Get free trial"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.nav}
+                        data-button-type="cta"
+                    >
+                        Get free trial
+                    </a>
+                </li>
             </ul>
         </div>
     )

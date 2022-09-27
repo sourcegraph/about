@@ -20,7 +20,6 @@ export const SelfHostedPage: FunctionComponent = () => (
                 <p className="tw-text-lg">From GE to Uber, the world's best developers use Sourcegraph every day.</p>
             </div>
         }
-        hideGetStartedButton={true}
     >
         <ContentSection parentClassName="sg-bg-gradient-saturn">
             <div className="lg:tw-grid lg:tw-grid-cols-12">
