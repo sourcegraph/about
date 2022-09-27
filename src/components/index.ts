@@ -20,7 +20,6 @@ export { LeadershipSection } from './LeadershipSection'
 export { Modal } from './modal'
 export { Portal } from './Portal'
 export { ResourceList } from './ResourceList'
-export { SelfHostedSection } from './SelfHostedSection'
 export { TableWrapper } from './TableWrapper'
 export { Tabs } from './Tabs'
 export { TemplateCodeBlock, type Template } from './TemplateCodeBlock'
@@ -63,8 +62,15 @@ export { ContentPage } from './ContentPage'
 export { GatedResourceLayout } from './GatedResourceLayout' // Webinars, Guides, Reports
 
 // Pricing
-export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'
-export type { Features } from './Pricing'
+export { PricingPlanFeature, PricingPlan } from './Pricing'
+export {
+    type FeatureCluster,
+    BIZ_FEATURES_OVERVIEW,
+    ENTERPRISE_FEATURES_OVERVIEW,
+    ALL_FEATURES_COMPARED_DATA,
+    SPOTLIGHT_FEATURE_INFO,
+    ALL_FEATURE_INFO,
+} from './Pricing'
 
 // Resources
 export { Filters, type Filter, Card, resourceItems, type Resource, useFilters } from './Resources'

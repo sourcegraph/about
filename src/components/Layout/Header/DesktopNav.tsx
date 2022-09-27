@@ -87,19 +87,6 @@ const DesktopNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton }
             </Nav>
 
             <Nav className="right-nav lg:tw-justify-end">
-                {!hideGetStartedButton && (
-                    <Nav.Link
-                        className="px-2 py-2 btn tw-text-blurple-400 font-weight-bold"
-                        href="https://sourcegraph.com/search"
-                        title="Search code"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.nav}
-                        data-button-type="cta"
-                    >
-                        Search code
-                    </Nav.Link>
-                )}
-
                 <Nav.Link
                     className="px-5 py-2 ml-3 btn btn-outline-primary font-weight-bold"
                     href={`/demo${isBlog ? '?utm_source=blog-integrations-update' : ''}`}
@@ -114,13 +101,13 @@ const DesktopNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton }
                 {!hideGetStartedButton && (
                     <Nav.Link
                         className="px-5 py-2 ml-3 btn btn-primary font-weight-bold"
-                        href="/get-started/self-hosted"
-                        title="Get started"
+                        href="https://signup.sourcegraph.com"
+                        title="Get free trial"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.nav}
                         data-button-type="cta"
                     >
-                        Get Started
+                        Get free trial
                     </Nav.Link>
                 )}
             </Nav>

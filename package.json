@@ -98,6 +98,7 @@
     "react-bootstrap": "2.0.0",
     "react-icons": "^4.4.0",
     "react-spring": "^9.4.4",
+    "react-twitch-embed": "^3.0.1",
     "sass": "^1.49.7",
     "start-server-and-test": "^1.14.0",
     "tailwindcss": "^3.1.7",
