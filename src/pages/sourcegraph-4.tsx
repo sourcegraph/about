@@ -31,7 +31,7 @@ const Sourcegraph4: FunctionComponent = () => (
         className="navbar-dark"
         hero={
             <div className="tw-px-sm tw-py-3xl md:tw-py-5xl">
-                <div className="tw-max-w-[800px] tw-mx-auto tw-text-center tw-text-white">
+                <div className="tw-max-w-[850px] tw-mx-auto tw-text-center tw-text-white">
                     <img
                         src="/sourcegraph/sourcegraph-4-starship-reflected.svg"
                         alt="Sourcegraph 4.0 Starship"
@@ -39,7 +39,7 @@ const Sourcegraph4: FunctionComponent = () => (
                     />
 
                     <h1 className="tw-mb-sm -tw-mt-3xl sm:-tw-mt-36">From code search to code intelligence</h1>
-                    <h3 className="tw-mb-5xl">
+                    <h3 className="tw-mb-5xl tw-mx-auto tw-max-w-3xl">
                         Sourcegraph 4.0, the latest release of our code intelligence platform, is now available. Watch
                         the livestream.
                     </h3>
