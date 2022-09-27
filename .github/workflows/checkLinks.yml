@@ -1,5 +1,5 @@
 # This ensures our end to end tests run for production builds
-name: E2E Tests
+name: Check Links
 
 on:
   pull_request:
@@ -8,7 +8,7 @@ on:
       - main
 
 jobs:
-  tests:
+  linkChecker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,5 +18,9 @@ jobs:
           node-version: '16.15.0'
       - name: Install dependencies
         run: yarn ci
-      - name: Run E2E Tests
-        run: yarn test:ci
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v1.5.1
+        with:
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
