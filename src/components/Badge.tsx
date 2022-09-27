@@ -22,6 +22,7 @@ interface Badge {
     onClick?: () => void
     checked?: boolean
     circle?: boolean
+    breakWords?: boolean
 }
 
 /**
@@ -36,6 +37,7 @@ interface Badge {
  * @param props.onClick - an onClick function
  * @param props.checked - the controlled checked state
  * @param props.circle - whether it's a basic or circle radius badge
+ * @param props.breakWords - whether to break words or not for longer text
  */
 export const Badge: FunctionComponent<Badge> = ({
     text,
@@ -46,6 +48,7 @@ export const Badge: FunctionComponent<Badge> = ({
     onClick,
     checked,
     circle,
+    breakWords,
 }) => {
     const Icon: ElementType = icon || 'div'
 
@@ -124,7 +127,7 @@ export const Badge: FunctionComponent<Badge> = ({
     }
 
     const styles = classNames(
-        'tw-inline tw-font-mono tw-align-middle tw-font-medium tw-whitespace-nowrap',
+        'tw-inline tw-font-mono tw-align-middle tw-font-medium',
         sizes[size],
         colors[color].base,
         {
@@ -134,7 +137,8 @@ export const Badge: FunctionComponent<Badge> = ({
             'tw-cursor-pointer tw-transition-all tw-ease-out': !!onClick,
             'tw-rounded-full': circle,
             'tw-rounded-md': !circle,
-        }
+        },
+        breakWords ? 'tw-break-words' : 'tw-whitespace-nowrap'
     )
 
     return link ? (

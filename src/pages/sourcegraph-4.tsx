@@ -6,7 +6,6 @@ import HeartOutlineIcon from 'mdi-react/HeartOutlineIcon'
 import MagnifyIcon from 'mdi-react/MagnifyIcon'
 import UpdateIcon from 'mdi-react/UpdateIcon'
 import Link from 'next/link'
-import { TwitchEmbed } from 'react-twitch-embed'
 
 import {
     ContentSection,
@@ -39,12 +38,11 @@ const Sourcegraph4: FunctionComponent = () => (
                     />
 
                     <h1 className="tw-mb-sm -tw-mt-3xl sm:-tw-mt-36">From code search to code intelligence</h1>
-                    <h3 className="tw-mb-5xl tw-mx-auto tw-max-w-4xl">
-                        Sourcegraph 4.0, the latest release of our code intelligence platform, is now available. Watch
-                        the livestream at 16:00 UTC today.
+                    <h3 className="tw-mb-5xl tw-mx-auto tw-max-w-2xl">
+                        Sourcegraph 4.0, the latest release of our code intelligence platform, is now available.
                     </h3>
 
-                    <TwitchEmbed channel="sourcegraph" width={800} className="tw-w-full" />
+                    <YouTube title="Sourcegraph 4.0" id="f9TCME0WYY8" />
                 </div>
             </div>
         }
@@ -91,7 +89,21 @@ const Sourcegraph4: FunctionComponent = () => (
         <ContentSection background="white" parentClassName="tw-pt-0 md:tw-pt-0">
             <div className="tw-mb-5xl">
                 <ThreeUpText
-                    title="Top updates released in Sourcegraph 4.0"
+                    title={
+                        <>
+                            Top updates released in{' '}
+                            <Link href="/blog/release/4.0" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    Sourcegraph 4.0
+                                </a>
+                            </Link>
+                        </>
+                    }
                     fullWidthTitle={true}
                     items={[
                         {
@@ -161,27 +173,20 @@ const Sourcegraph4: FunctionComponent = () => (
                 />
             </div>
 
-            <div className="tw-max-w-[800px] tw-mx-auto tw-text-center">
+            {/* TODO: Add in when livestream is ready */}
+            {/* <div className="tw-max-w-5xl tw-mx-auto tw-text-center">
                 <h2 className="tw-mb-3xl">
-                    See the highlights from{' '}
-                    <Link href="/blog/release/4.0" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            Sourcegraph 4.0
-                        </a>
-                    </Link>
+                    Experience 4.0 with the Sourcegraph Engineering team
                 </h2>
-
-                <YouTube title="Sourcegraph 4.0" id="f9TCME0WYY8" />
-
-                <h2 className="tw-mt-5xl tw-mb-3xl">
-                    Join these engineering orgs pushing forward modern software development
-                </h2>
-            </div>
+                
+                <div className="tw-max-w-[800px] tw-mx-auto">
+                    <YouTube title="Sourcegraph 4.0" id="f9TCME0WYY8" />
+                </div>
+            </div> */}
+            
+            <h2 className="tw-mt-5xl tw-mb-3xl tw-max-w-[700px] tw-mx-auto tw-text-center">
+                Join these engineering orgs pushing forward modern software development
+            </h2>
 
             <CustomerLogos />
         </ContentSection>
@@ -191,6 +196,11 @@ const Sourcegraph4: FunctionComponent = () => (
             centerContent={true}
             title="Experience the code intelligence platform for modern development teams"
             description=""
+            cta1={{
+                text: 'Get free trial',
+                ctaStyle: 'primaryButtonWhite',
+                link: 'https://signup.sourcegraph.com',
+            }}
             cta2={{
                 text: 'View pricing',
                 ctaStyle: 'outlineButtonWhiteText',

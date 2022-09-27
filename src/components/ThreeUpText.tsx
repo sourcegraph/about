@@ -9,7 +9,7 @@ interface Item {
 }
 
 interface ThreeUpText {
-    title?: string
+    title?: string | ReactNode
     fullWidthTitle?: boolean
     subTitle?: string | ReactNode
     items: Item[]

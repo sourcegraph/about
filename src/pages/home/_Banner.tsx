@@ -23,7 +23,7 @@ const Banner: FunctionComponent = () => (
                     data-button-style={buttonStyle.textWithArrow}
                     data-button-location={buttonLocation.hero}
                     data-button-type="cta"
-                    className="tw-text-blue-300"
+                    className="tw-text-blue-300 tw-flex tw-whitespace-nowrap"
                 >
                     See what's new
                     <ArrowRightIcon className="tw-inline tw-ml-3" />
