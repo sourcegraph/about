@@ -207,7 +207,6 @@ These analytics show the exact usage of your Sourcegraph instance so you can see
 
 With in-product analytics, you can now report on:
 
-With charts that detail usage over time and value calculators that quantify the amount of time saved as users search, create insights, run batch changes, and more, you can now report on:
 - The number of searches developers have run in Sourcegraph, and how much development time has been saved as a result.
 - How many Code Insights charts have been created, viewed, and interacted with.
 - The number of changesets that have been created and merged via Batch Changes, and how much time has been saved as a result.
