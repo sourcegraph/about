@@ -14,7 +14,6 @@ interface Props {
     isProductPage?: boolean
     minimal?: boolean
     className?: string
-    hideGetStartedButton?: boolean
     navLinks: NavLink[]
 }
 
@@ -103,11 +102,10 @@ export const Header: FunctionComponent<Props> = props => {
                             ))}
                         </button>
 
-                        <DesktopNav navLinks={navLinks} hideGetStartedButton={props.hideGetStartedButton} />
+                        <DesktopNav navLinks={navLinks} />
 
                         <MobileNav
                             navLinks={navLinks}
-                            hideGetStartedButton={props.hideGetStartedButton}
                             isOpen={isOpen}
                         />
                     </>
