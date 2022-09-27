@@ -6,6 +6,7 @@ import HeartOutlineIcon from 'mdi-react/HeartOutlineIcon'
 import MagnifyIcon from 'mdi-react/MagnifyIcon'
 import UpdateIcon from 'mdi-react/UpdateIcon'
 import Link from 'next/link'
+import { TwitchPlayer } from 'react-twitch-embed'
 
 import {
     ContentSection,
@@ -178,9 +179,8 @@ const Sourcegraph4: FunctionComponent = () => (
                     Experience 4.0 with the Sourcegraph Engineering team
                 </h2>
                 
-                <div className="tw-max-w-[800px] tw-mx-auto">
-                    {/* TODO: Add livestream video ID */}
-                    <YouTube title="Sourcegraph 4.0" id="f9TCME0WYY8" />
+                <div className="tw-max-w-[800px] tw-mx-auto tw-aspect-video">
+                    <TwitchPlayer video="1602809871" autoplay={false} width="100%" height="100%" />
                 </div>
             </div>
             
