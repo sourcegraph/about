@@ -176,7 +176,7 @@ const Sourcegraph4: FunctionComponent = () => (
                     </Link>
                 </h2>
 
-                <YouTube title="Sourcegraph 4.0" id="hayQ-rd_kzM" />
+                <YouTube title="Sourcegraph 4.0" id="f9TCME0WYY8" />
 
                 <h2 className="tw-mt-5xl tw-mb-3xl">
                     Join these engineering orgs pushing forward modern software development
@@ -191,11 +191,6 @@ const Sourcegraph4: FunctionComponent = () => (
             centerContent={true}
             title="Experience the code intelligence platform for modern development teams"
             description=""
-            cta1={{
-                text: 'Get free trial',
-                ctaStyle: 'primaryButtonWhite',
-                link: '/pricing',
-            }}
             cta2={{
                 text: 'View pricing',
                 ctaStyle: 'outlineButtonWhiteText',

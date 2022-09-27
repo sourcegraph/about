@@ -127,13 +127,13 @@ export const IntegrationsSection: FunctionComponent = () => (
                 </ul>
                 <a
                     href="https://docs.sourcegraph.com/integration"
-                    title="See all integrations or build your own"
+                    title="See all integrations"
                     className="tw-font-normal"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
                 >
-                    See all integrations or build your own
+                    See all integrations
                 </a>
             </div>
 
