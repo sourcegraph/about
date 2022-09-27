@@ -97,12 +97,8 @@ Devs want Sourcegraph to be this place, and to help them find answers instead of
 - "I need to see how my team's API is being used. Don't just show me a list of file locations. Show me which other teams are using it and the trend of usage over time, grouped by usage pattern."
 - "I need to fix something across my entire codebase? Don't just help me find the spots that need fixing. Let me push up a quick fix to all affected repositories, tracks its progress, and monitor for regressions."
 
-Code search isn't enough to answer these kinds of questions, because code search doesn't know all the other necessary information about code. Code search just helps you find matching lines in code. TODO sqs - (thats why we are calling it ...)
-
-We added [Code Insights](https://docs.sourcegraph.com/code_insights) to let devs track trends over time, [Batch Changes](https://docs.sourcegraph.com/batch_changes) to let devs make large-scale code changes across many repositories, and more. These crucial primitives helped, but we still needed to teach Sourcegraph much more about code and its associated metadata.
+Code search isn't enough to answer these kinds of questions, because code search doesn't know all the other necessary information about code. Code search just helps you find matching lines in code, and that's not enough anymore as code complexity keeps growing quickly.
 
 Remember how Google went from helping you find things *on* the web (matching web pages) to helping you learn things *from* the web (information and answers) by connecting data like news, videos, and maps back to web search? Today, you go to Google to answer complex questions and learn things, not to find things.
 
-And that brings us to Sourcegraph 4.0. ... TODO ... We're making the same kind of leap, from a code search tool to a code intelligence platform. If we do our job well, Sourcegraph's code intelligence platform will free up so much time and brainpower for devs everywhere so that software progress can continue.
-
-We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams, and now we're hard at work making Sourcegraph even smarter. [Sourcegraph 4.0](/blog/enterprise-cloud) is the first step toward Sourcegraph becoming a code intelligence platform, with smart search aggregations to quickly answer questions about usage patterns.
+We're making the same kind of leap. We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams, and now we're hard at work making Sourcegraph even smarter. [Sourcegraph 4.0](/blog/sourcegraph-4.0) is the first step toward Sourcegraph becoming a code intelligence platform.
