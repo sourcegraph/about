@@ -8,6 +8,7 @@ export const buttonStyle = {
     outlineWithArrow: 5,
     text: 6,
     image: 7,
+    resourceListItem: 8,
 }
 
 export const buttonLocation = {

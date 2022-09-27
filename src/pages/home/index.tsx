@@ -1,10 +1,9 @@
 import { FunctionComponent } from 'react'
 
-import { ContentSection, CoreFeatures, Layout, IntegrationsSection, SelfHostedSection } from '@components'
+import { ContentSection, CoreFeatures, CtaSection, Layout, IntegrationsSection } from '@components'
 
 import Banner from './_Banner'
 import Hero from './_Hero'
-import UseCases from './_UseCases'
 
 const Home: FunctionComponent = () => (
     <Layout
@@ -14,20 +13,19 @@ const Home: FunctionComponent = () => (
                 'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Sourcegraph.',
         }}
         heroAndHeaderClassName="bg-white"
+        className="bg-white"
     >
         <Banner />
 
         <Hero />
 
-        <UseCases />
-
-        <ContentSection background="white" className="tw-mt-52">
+        <ContentSection background="white">
             <CoreFeatures />
         </ContentSection>
 
         <IntegrationsSection />
 
-        <SelfHostedSection />
+        <CtaSection background="saturn" />
     </Layout>
 )
 

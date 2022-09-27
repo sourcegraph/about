@@ -1,8 +1,6 @@
 /* eslint-disable unicorn/prevent-abbreviations */
 import { FunctionComponent } from 'react'
 
-import Link from 'next/link'
-
 import {
     ContentSection,
     CustomerLogos,
@@ -12,8 +10,8 @@ import {
     Layout,
     ResourceList,
     Hero,
+    CtaSection,
 } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
 
 const resourceItems = [
     {
@@ -75,37 +73,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
 
         <ResourceList items={resourceItems} />
 
-        <ContentSection>
-            <div className="tw-mx-auto tw-text-center tw-max-w-screen-md">
-                <h2 className="tw-mb-xs">Ready to accelerate developer onboarding? Let's talk.</h2>
-                <p className="tw-max-w-lg tw-mx-auto">
-                    <Link href="/get-started/self-hosted" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            title="Get started"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            Get started
-                        </a>
-                    </Link>{' '}
-                    for free with up to 10 teammates or{' '}
-                    <Link href="/demo" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            title="Request a demo"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.bodyDemo}
-                            data-button-type="cta"
-                        >
-                            request a demo
-                        </a>
-                    </Link>{' '}
-                    to learn about our enterprise plan and to see Sourcegraph in your own environment.
-                </p>
-            </div>
-        </ContentSection>
+        <CtaSection title="Ready to accelerate developer onboarding? Let's talk." />
     </Layout>
 )
 
