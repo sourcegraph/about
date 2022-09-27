@@ -95,7 +95,7 @@ Devs want Sourcegraph to be this place, and to help them find answers instead of
 - "I'm trying to figure out the best way to call a function. Don't just show me a list of call sites. Show me how the code owners of that function themselves have recently been calling that function."
 - "I need to debug an issue in code. Don't just let me navigate within the same project to understand it. Let me see what changed and why, and trace calls across projects and dependencies."
 - "I need to see how my team's API is being used. Don't just show me a list of file locations. Show me which other teams are using it and the trend of usage over time, grouped by usage pattern."
-- "I need to fix something across my entire codebase? Don't just help me find the spots that need fixing. Let me push up a quick fix to all affected repositories, tracks its progress, and monitor for regressions."
+- "I need to fix something across my entire codebase. Don't just help me find the spots that need fixing. Let me push up a quick fix to all affected repositories, tracks its progress, and monitor for regressions."
 
 Code search isn't enough to answer these kinds of questions, because code search doesn't know all the other necessary information about code. Code search just helps you find matching lines in code, and that's not enough anymore as code complexity keeps growing quickly.
 
