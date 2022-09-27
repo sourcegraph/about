@@ -183,7 +183,7 @@ Check out our [Security Portal](https://security.sourcegraph.com/) to access the
 <Badge link="https://docs.sourcegraph.com/admin/updates#multi-version-upgrades" text="Admin" color="violet" size="small" />
 
 #### Upgrade directly to Sourcegraph 4.0 from earlier versions of Sourcegraph
-We know that upgrading Sourcegraph can be a time-intensive process, especially if you fall a few versions behind. Sourcegraph 4.0 supports [multi-version upgrades](https://docs.sourcegraph.com/admin/updates#multi-version-upgrade) so you can upgrade to 4.0 – and any future version – directly from version 3.20 or higher.
+We know that upgrading Sourcegraph can be a time-intensive process, especially if you fall a few versions behind. Sourcegraph 4.0 supports [multi-version upgrades](https://docs.sourcegraph.com/admin/updates#multi-version-upgrades) so you can upgrade to 4.0–and any future version–directly from version 3.20 or higher.
 
 <Video 
   source={{
