@@ -39,7 +39,7 @@ Does this mean that dev tools are worthless, since their benefits are immediatel
 
 **Better dev tooling frees up time and brainpower so devs can build better software.** If we were stuck with today's dev tooling forever, then software progress would eventually come to a halt.
 
-If you doubt this, then imagine building today's software with 15-year-old build tools, package managers, and frameworks. It wouldn't be possible. So, why would you think today's dev tools will suffice unchanged 15 years from now?
+If you doubt this, then imagine building today's software with 25-year-old build tools, package managers, and frameworks. It wouldn't be possible. So, why would you think today's dev tools will suffice unchanged 25 years from now?
 
 #### Dev tools must constantly improve just to keep pace with growing code complexity
 
