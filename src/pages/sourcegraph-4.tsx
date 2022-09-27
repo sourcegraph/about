@@ -173,16 +173,16 @@ const Sourcegraph4: FunctionComponent = () => (
                 />
             </div>
 
-            {/* TODO: Add in when livestream is ready */}
-            {/* <div className="tw-max-w-5xl tw-mx-auto tw-text-center">
+            <div className="tw-max-w-5xl tw-mx-auto tw-text-center">
                 <h2 className="tw-mb-3xl">
                     Experience 4.0 with the Sourcegraph Engineering team
                 </h2>
                 
                 <div className="tw-max-w-[800px] tw-mx-auto">
+                    {/* TODO: Add livestream video ID */}
                     <YouTube title="Sourcegraph 4.0" id="f9TCME0WYY8" />
                 </div>
-            </div> */}
+            </div>
             
             <h2 className="tw-mt-5xl tw-mb-3xl tw-max-w-[700px] tw-mx-auto tw-text-center">
                 Join these engineering orgs pushing forward modern software development
