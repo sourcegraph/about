@@ -15,7 +15,7 @@ authors:
 
 Code search helps you find *matching lines in code*. That helps, but it's often not enough, especially as your codebase gets more complex. You need to know who wrote that code, or the top usage patterns of a function, or which repositories use it, etc. Sourcegraph will increasingly help you find these kinds of *answers* in code&mdash;and in metadata from all your dev tools that know stuff about code.
 
-We call this a code intelligence platform (motto: *"answers, not just matching lines"*), and you can see [Sourcegraph 4.0](/blog/sourcegraph-4.0) taking the first steps toward that vision, beyond just code search.
+We call this a code intelligence platform (motto: *"answers, not just matching lines"*), and you can see [Sourcegraph 4.0](/blog/release/4.0) taking the first steps toward that vision, beyond just code search.
 
 Why is this important? Why now? Let's go back in time to 25 years ago...
 
@@ -101,4 +101,8 @@ Code search isn't enough to answer these kinds of questions, because code search
 
 Remember how Google went from helping you find things *on* the web (matching web pages) to helping you learn things *from* the web (information and answers) by connecting data like news, videos, and maps back to web search? Today, you go to Google to answer complex questions and learn things, not to find things.
 
-We're making the same kind of leap. We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10<sup>11</sup> lines of code for the world's most demanding software teams, and now we're hard at work making Sourcegraph even smarter. [Sourcegraph 4.0](/blog/sourcegraph-4.0) is the first step toward Sourcegraph becoming a code intelligence platform.
+We're making the same kind of leap. We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10<sup>11</sup> lines of code for the world's most demanding software teams, and now we're hard at work making Sourcegraph even smarter.
+
+Today, we're releasing [Sourcegraph 4.0](/blog/release/4.0). Sourcegraph 4.0 is the first step toward Sourcegraph becoming a code intelligence platform, and is available today. The release includes over a dozen updates and new features that make answering questions *about* code as easy as searching for matching lines *in* code. 
+	
+We're also launching [Sourcegraph Cloud:](/blog/enterprise-cloud) secure, scalable, dedicated Sourcegraph instances on the cloud. Sourcegraph Cloud is the best way to start using Sourcegraph on your organization's code. [Sign up now](https://signup.sourcegraph.com/).
