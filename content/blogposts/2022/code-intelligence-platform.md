@@ -13,7 +13,7 @@ authors:
 
 ---
 
-Code search helps you find *matching lines in code*. That helps, but it's often not enough, especially as your codebase gets more complex. You need to know who wrote that code, or the top usage patterns of a function, or which repositories use it, etc. {/* I limited this to things Sourcegraph 4.0 does. There's a lot of awesome stuff we can do in the future, but I wanted to stay grounded in the present here. */}  Sourcegraph will increasingly help you find these kinds of *answers* in code&mdash;and in metadata from all your dev tools that know stuff about code.
+Code search helps you find *matching lines in code*. That helps, but it's often not enough, especially as your codebase gets more complex. You need to know who wrote that code, or the top usage patterns of a function, or which repositories use it, etc. Sourcegraph will increasingly help you find these kinds of *answers* in code&mdash;and in metadata from all your dev tools that know stuff about code.
 
 We call this a code intelligence platform (motto: *"answers, not just matching lines"*), and you can see [Sourcegraph 4.0](/blog/enterprise-cloud) taking the first steps toward that vision, beyond just code search.
 
@@ -21,9 +21,9 @@ Why is this important? Why now? Let's go back in time to 25 years ago...
 
 #### The law of conservation of code complexity
 
-When I started coding [~25 years ago](https://slack.org/why-i-love-code), coding was complex. Since then, dev tools have massively improved: editors, build tools, version control, testing, continuous deployment, new programming languages, debuggers, libraries, frameworks, linters, observability, etc. {/* But they've improved less than you might think. Check out [The Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/) from 2000 and note how many companies today would fail it despite those being obvious best practices 22 years ago. */} So, why is coding even more complex today than it was 25 years ago?
+When I started coding [~25 years ago](https://slack.org/why-i-love-code), coding was complex. Since then, dev tools have massively improved: editors, build tools, version control, testing, continuous deployment, new programming languages, debuggers, libraries, frameworks, linters, observability, etc. So, why is coding even more complex today than it was 25 years ago?
 
-Because software is much better and does much more than 25 years ago. {/* We can debate the degree to which this statement is true, and you can probably think of some counterexamples. But it's still true. Even if you, a cranky purist dev, would prefer using 25-year-old software, most people disagree with you. You'd be hard-pressed to find many willing users or customers for 25-year-old software today. */} Improvements in dev tooling let us spend our "complexity budget" on building better and more useful software, instead of, say, toiling over C code in a primitive editor to format and send emails via SMTP (which sounds quaint but I guarantee you it consumed hundreds of human lifetime-equivalents).
+Because software is much better and does much more than 25 years ago. Improvements in dev tooling let us spend our "complexity budget" on building better and more useful software, instead of, say, toiling over C code in a primitive editor to format and send emails via SMTP (which sounds quaint but I guarantee you it consumed hundreds of human lifetime-equivalents).
 
 Never in the history of software has a dev tool actually yielded a permanent reduction in total complexity. Never has a company said, "Now that we're using \{the cloud, continuous integration, continuous deployment, microservices, GitHub, ...\}, let's strive for greater simplicity instead of \{moving faster, increasing product quality, building more features, ...\}." (If you know of any such company, I know a ton of devs who would love to work there. I also predict that company will soon go out of business.)
 
@@ -33,17 +33,13 @@ We can give this an official-sounding name. The **law of conservation of code co
 <p style={{marginBottom:0}}>If you reduce the complexity of your codebase (such as by improving dev tooling or refactoring code), you (or your boss) will be unable to resist the temptation to increase complexity by the same amount elsewhere, usually in the form of new features.</p>
 </blockquote>
 
-{/* Some of those other linked posts about the law of conservation of complexity have a stricter and more pessimistic interpretation of it, that no dev tooling can ever decrease complexity. For example, if you switch from the hackiest build scripts ever to a Makefile, then you have not decreased complexity, only buried it in `make`. I disagree. I think you have actually eliminated complexity in your build process, but again, you'll be unable to resist the temptation to increase complexity by the same amount elsewhere. */}
-
 #### Better dev tools lead to better software
 
 Does this mean that dev tools are worthless, since their benefits are immediately cancelled out? No! The opposite, in fact.
 
 **Better dev tooling frees up time and brainpower so devs can build better software.** If we were stuck with today's dev tooling forever, then software progress would eventually come to a halt.
 
-{/* This feeling is a big part of [why I love coding](https://slack.org/why-i-love-code) and what motivates me at Sourcegraph! And it's a reason to appreciate dev tools creators everywhere, who are indirectly helping to make people's lives better. */}
-
-If you doubt this, then imagine building today's software with 15-year-old build tools, package managers, and frameworks. It wouldn't be possible. So, why would you think today's dev tools will suffice unchanged 15 years from now? {/* Look, I'm not someone who loves using the new buzzword tech. I use Emacs, and we use Go and TypeScript (with React) here at Sourcegraph. But I find even all of those things have gotten significantly better in the last 2 years even. */}
+If you doubt this, then imagine building today's software with 15-year-old build tools, package managers, and frameworks. It wouldn't be possible. So, why would you think today's dev tools will suffice unchanged 15 years from now?
 
 #### Dev tools must constantly improve just to keep pace with growing code complexity
 
@@ -56,8 +52,6 @@ As a result, codebases are growing quickly in complexity and size. Here are some
 * The size of your `node_modules` tree over time (or `vendor`, etc.).
 * The amount of time you've personally spent decommissioning systems vs. creating them. If it's not at least a 5-to-1 ratio, you're probably part of the problem&mdash;along with everyone else, no worries.
 * We ran a [survey of devs](https://info.sourcegraph.com/hubfs/CTA%20assets/sourcegraph-big-code-survey-report.pdf) where 51% said their company's codebase had grown 100x over the last 10 years. The kind of person who's skeptical of that number (I'm with you, it does seem high) is probably the kind of person who agrees with the overall point. (Speak up if not!)
-
-{/* In theory, a bigger codebase isn't necessarily a more complex codebase. You can just tend to your little, perfectly encapsulated corner of the codebase. No matter how big the overall codebase got, your life stays the same. But we all know it never works out this way. */}
 
 What allows this rapid increase in software complexity (and, I hope/believe in most cases, a corresponding increase in software quality and features)? Why doesn't the increasing complexity of the system prevent all progress? Because dev tools are getting better *very* quickly and cancelling out some of the complexity increase so that our human brains can still get by.
 
@@ -73,7 +67,7 @@ So, which new dev tools will clear the way for future software progress? It's in
 
 #### Companies on the frontier of dev tooling
 
-In dev tools, unlike most fields, the best ideas come from big companies. {/* Other fields are different. Salesforce didn't innovate in CRM by looking at big companies' custom-built CRMs. Etc. Send me more good examples that you can think of. */}
+In dev tools, unlike most fields, the best ideas come from big companies.
 
 Google, Facebook, Amazon, Netflix, Stripe, and others have widespread early adoption and tight integration of all the obvious dev tooling (with team-by-team exceptions, of course). There are many examples where these companies were early adopters of dev tooling or practices that are now widespread:
 
@@ -92,23 +86,23 @@ Not every dev tool invented or adopted by these big companies is a winner. But w
 
 Code search is now a mainstream dev tool. So many sophisticated tech companies have adopted code search: in addition to [Google](https://codesearchguide.org/story/google) and [Facebook](https://codesearchguide.org/story/facebook) as previously mentioned, Amazon, [Stripe](https://codesearchguide.org/story/stripe), and more. We're proud to have earned some amazing customers, including Uber, Lyft, Dropbox, Atlassian, [Yelp](https://codesearchguide.org/story/yelp), 4/5 of the FAANG companies, and 4 of the top 10 US banks. If a company or dev isn't yet using code search, they will soon.
 
-For our customers, Sourcegraph is the one universal dev tool: the only tool used by all the devs and the only tool that indexes all of the code. Other tools in the dev workflow are fragmented: devs all use different editors and languages, and often there are multiple code hosts. 
+For our customers, Sourcegraph is the one universal dev tool: the only tool used by all the devs and the only tool that indexes *all* of the code. Other tools in the dev workflow are fragmented: devs use different editors and languages, and often there are multiple code hosts.
 
-Devs want a single place with all the information about code. And they want Sourcegraph to be this place, and to give them answers instead of just the raw information that they could use to form the answer. We often hear things like:
+Devs want a single place with all the information about code: code navigation (definitions and references), authorship, ownership, dependency graph, code scans, deployment status, observability (whether a line of code is throwing lots of errors), etc.
+
+Devs want Sourcegraph to be this place, and to help them find answers instead of just the raw information. We often hear things like:
 
 - "I'm trying to figure out the best way to call a function. Don't just show me a list of call sites. Show me how the code owners of that function themselves have recently been calling that function."
 - "I need to debug an issue in code. Don't just let me navigate within the same project to understand it. Let me see what changed and why, and trace calls across projects and dependencies."
 - "I need to see how my team's API is being used. Don't just show me a list of file locations. Show me which other teams are using it and the trend of usage over time, grouped by usage pattern."
 - "I need to fix something across my entire codebase? Don't just help me find the spots that need fixing. Let me push up a quick fix to all affected repositories, tracks its progress, and monitor for regressions."
 
-TODO - say what a code intelligence platform is concretely
+Code search isn't enough to answer these kinds of questions, because code search doesn't know all the other necessary information about code. Code search just helps you find matching lines in code. TODO sqs - (thats why we are calling it ...)
 
-{/* We added [Code Insights](https://docs.sourcegraph.com/code_insights) to let devs track trends over time, [Batch Changes](https://docs.sourcegraph.com/batch_changes) to let devs make large-scale code changes across many repositories, and more. These crucial primitives helped, but we still needed to teach Sourcegraph much more about code and its associated metadata. */}
-
-Code search isn't enough to answer these kinds of questions, because code search just helps you find matching lines in code.
+We added [Code Insights](https://docs.sourcegraph.com/code_insights) to let devs track trends over time, [Batch Changes](https://docs.sourcegraph.com/batch_changes) to let devs make large-scale code changes across many repositories, and more. These crucial primitives helped, but we still needed to teach Sourcegraph much more about code and its associated metadata.
 
 Remember how Google went from helping you find things *on* the web (matching web pages) to helping you learn things *from* the web (information and answers) by connecting data like news, videos, and maps back to web search? Today, you go to Google to answer complex questions and learn things, not to find things.
 
 And that brings us to Sourcegraph 4.0. ... TODO ... We're making the same kind of leap, from a code search tool to a code intelligence platform. If we do our job well, Sourcegraph's code intelligence platform will free up so much time and brainpower for devs everywhere so that software progress can continue.
 
-We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams, and now we're hard at work making Sourcegraph even smarter. [Sourcegraph 4.0](/blog/sourcegraph-4.0) is the first step toward Sourcegraph becoming a code intelligence platform, with smart search aggregations to quickly answer questions about usage patterns.
+We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams, and now we're hard at work making Sourcegraph even smarter. [Sourcegraph 4.0](/blog/enterprise-cloud) is the first step toward Sourcegraph becoming a code intelligence platform, with smart search aggregations to quickly answer questions about usage patterns.

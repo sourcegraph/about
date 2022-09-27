@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 4.0"
 publishDate: 2022-09-27T10:00-07:00
-description: Announcing Sourcegraph 4.0
+description: Announcing Sourcegraph 4.0. The latest release includes over a dozen updates and new features, and it is the first step toward Sourcegraph becoming a code intelligence platform. 
 tags: [blog, release]
 slug: "release/4.0"
 published: true
@@ -10,18 +10,20 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/release.
 changelogItems:
 ---
 
-We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams. Now, we’re hard at work making Sourcegraph even smarter.
+We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10^11 lines of code for the world's most demanding software teams. Now, we’re making Sourcegraph even smarter.
 
-Sourcegraph 4.0 includes over a dozen updates and new features, and is the first step toward Sourcegraph becoming a [code intelligence platform](/blog/code-search-to-code-intelligence).
+Sourcegraph 4.0 includes over a dozen updates and new features, and it is the first step toward Sourcegraph becoming a [code intelligence platform](/blog/code-search-to-code-intelligence). A code intelligence platform indexes and understands all of your organization’s code, so instead of just *matching lines in code*, you can *answer questions and learn about code*. 
 
-**Key highlights of Sourcegraph 4.0:**
+Today, we're also launching [Sourcegraph Cloud:](/blog/enterprise-cloud) secure, scalable, dedicated Sourcegraph instances on the cloud. Sourcegraph Cloud is the best way to start using Sourcegraph on your organization's code. [Sign up now](https://signup.sourcegraph.com/) to experience Sourcegraph 4.0.
+
+
+
+**Read on to discover everything in Sourcegraph 4.0:**
 * [🧠 Code intelligence: uplevel your code search](#code-intelligence-uplevel-your-code-search)
 * [🏗️ High-leverage ways to improve your entire codebase](#high-leverage-ways-to-improve-your-entire-codebase)
 * [☁️ Dedicated Sourcegraph Cloud instances for enterprise](#dedicated-sourcegraph-cloud-instances-for-enterprise)
 * [📈 Advanced admin capabilities](#advanced-admin-capabilities)
 
-
-Read on to discover everything in Sourcegraph 4.0 or [sign up for a 30-day trial for your organization](https://signup.sourcegraph.com/).
 
 ### <a id="code-intelligence-uplevel-your-code-search"></a> 🧠 Code intelligence: uplevel your code search
 
@@ -181,7 +183,7 @@ Check out our [Security Portal](https://security.sourcegraph.com/) to access the
 <Badge link="https://docs.sourcegraph.com/admin/updates#multi-version-upgrades" text="Admin" color="violet" size="small" />
 
 #### Upgrade directly to Sourcegraph 4.0 from earlier versions of Sourcegraph
-We know that upgrading Sourcegraph can be a time-intensive process, especially if you fall a few versions behind. Sourcegraph 4.0 supports [multi-version upgrades](https://docs.sourcegraph.com/admin/updates#multi-version-upgrade) so you can upgrade to 4.0 directly from version 3.20 or higher.
+We know that upgrading Sourcegraph can be a time-intensive process, especially if you fall a few versions behind. Sourcegraph 4.0 supports [multi-version upgrades](https://docs.sourcegraph.com/admin/updates#multi-version-upgrade) so you can upgrade to 4.0 – and any future version – directly from version 3.20 or higher.
 
 <Video 
   source={{
