@@ -206,7 +206,6 @@ We know that upgrading Sourcegraph can be a time-intensive process, especially i
 These analytics show the exact usage of your Sourcegraph instance so you can see which features are most used across your organization. The usage data is also used to quantify how much time developers have saved as they use Sourcegraph to search and understand code, run batch changes, create insights, and more. You can also customize the default time-saved values to reflect how your team uses Sourcegraph. 
 
 With in-product analytics, you can now report on:
-
 - The number of searches developers have run in Sourcegraph, and how much development time has been saved as a result.
 - How many Code Insights charts have been created, viewed, and interacted with.
 - The number of changesets that have been created and merged via Batch Changes, and how much time has been saved as a result.
