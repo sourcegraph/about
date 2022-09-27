@@ -125,6 +125,20 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                         </li>
                     )
                 )}
+
+                <li className="nav-item" role="presentation">
+                    <a
+                        className="nav-link"
+                        href="https://sourcegraph.com/search"
+                        title="Search code"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.nav}
+                        data-button-type="cta"
+                    >
+                        Search code
+                    </a>
+                </li>
+
                 <li className="nav-item" role="presentation">
                     <a
                         className="nav-link"
