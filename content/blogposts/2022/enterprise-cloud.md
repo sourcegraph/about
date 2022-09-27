@@ -25,6 +25,6 @@ For the first 8 years of [Sourcegraph](https://about.sourcegraph.com) (from 2013
 <br/>
 While Sourcegraph Cloud is now the best way to start using Sourcegraph, we're committed to both [self-hosted](https://docs.sourcegraph.com/) and cloud customers and deployment options for the long term. Our choice of a single-tenant architecture for Sourcegraph Cloud demonstrates that commitment. It means that both self-hosted and cloud get the exact same product (even the same Docker images), and Sourcegraph Cloud essentially entails us dogfooding Sourcegraph instance deployment and maintenance at scale.
 
-We're excited to make it so much easier for every dev to start using Sourcegraph at work. [Sign up for Sourcegraph Cloud](https://signup.sourcegraph.com/) to start using it on on your organization's code.
+We're excited to make it so much easier for every dev to start using Sourcegraph at work. [Sign up for Sourcegraph Cloud](https://signup.sourcegraph.com/) to start using it on your organization's code.
 
 *Special thanks to our customers who gave us feedback as we built Sourcegraph Cloud!*
