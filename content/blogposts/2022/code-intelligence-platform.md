@@ -103,6 +103,6 @@ Remember how Google went from helping you find things *on* the web (matching web
 
 We're making the same kind of leap. We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10<sup>11</sup> lines of code for the world's most demanding software teams, and now we're hard at work making Sourcegraph even smarter.
 
-Today, we're releasing [Sourcegraph 4.0](/blog/release/4.0). Sourcegraph 4.0 is the first step toward Sourcegraph becoming a code intelligence platform, and is available today. The release includes over a dozen updates and new features that make answering questions *about* code as easy as searching for matching lines *in* code. 
+Today, we're releasing [Sourcegraph 4.0](/blog/release/4.0), the first step toward Sourcegraph becoming a code intelligence platform.
 	
-We're also launching [Sourcegraph Cloud:](/blog/enterprise-cloud) secure, scalable, dedicated Sourcegraph instances on the cloud. Sourcegraph Cloud is the best way to start using Sourcegraph on your organization's code. [Sign up now](https://signup.sourcegraph.com/).
+We're also launching [Sourcegraph Cloud](/blog/enterprise-cloud): secure, scalable, dedicated Sourcegraph instances on the cloud. Sourcegraph Cloud is the best way to start using Sourcegraph on your organization's code. [Sign up now.](https://signup.sourcegraph.com/).
