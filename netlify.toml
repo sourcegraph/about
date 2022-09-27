@@ -178,4 +178,8 @@
 [[redirects]]
   from = "/mysterybox"
   to = "https://view.ceros.com/sourcegraph/mysterybox/p/1"
+
+[[redirects]]
+  from = "/support"
+  to = "/contact"
 # ========== END INDIVIDUAL REDIRECTS ==========
