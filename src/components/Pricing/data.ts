@@ -70,7 +70,7 @@ export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: '24/5 priority support',
-        features: ['slaSupport', 'dedicatedManager'],
+        features: ['slaSupport', 'dedicatedAdvisor'],
     },
 ]
 
@@ -209,7 +209,7 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
                 enterprise: '24/5 support',
             },
             {
-                label: 'dedicatedManager',
+                label: 'dedicatedAdvisor',
                 business: 'Available',
                 enterprise: true,
             },
@@ -393,10 +393,10 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'Priority support SLAs',
         description: 'Priority ticket handling and guaranteed initial response SLA from a dedicated team.',
     },
-    dedicatedManager: {
-        label: 'Dedicated Technical Account Manager',
+    dedicatedAdvisor: {
+        label: 'Dedicated Technical Advisor',
         description:
-            'Dedicated Technical Account Manager to support usage, training, enablement, technical strategy, and overall health.',
+            'Specialized technical experts to lead training & enablement, strategy, and overall account health.',
     },
 }
 
@@ -448,10 +448,10 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
     support: {
         label: 'Support',
     },
-    dedicatedManager: {
-        label: 'Dedicated Technical Account Manager',
+    dedicatedAdvisor: {
+        label: 'Dedicated Technical Advisor',
         description:
-            'Dedicated Technical Account Manager to support usage, training, enablement, technical strategy, and overall health.',
+            'Specialized technical experts to lead training & enablement, strategy, and overall account health.',
     },
     supportSla: {
         label: 'Support SLA',
