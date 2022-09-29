@@ -152,20 +152,6 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
                 </li>
 
                 <li className="tw-items-center nav-item" role="presentation">
-                    <Link href="/demo" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className="nav-link"
-                            title="Request a demo"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.nav}
-                            data-button-type="cta"
-                        >
-                            Request a demo
-                        </a>
-                    </Link>
-                </li>
-                <li className="tw-items-center nav-item" role="presentation">
                     <a
                         className="nav-link"
                         href="https://signup.sourcegraph.com"
