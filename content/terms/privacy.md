@@ -5,7 +5,7 @@ title: Privacy Policy
 
 Last modified: September 26, 2022
 
-See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Edocs/privacy%5C.md+type:diff&patternType=literal) since the [previous version](/terms/archives/privacy/2021-03-28/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives).
+See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Edocs/privacy%5C.md+type:diff&patternType=literal) since the [previous version](/terms/archives/privacy/2022-03-28/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives).
 
 At Sourcegraph, Inc. (**"Sourcegraph," "we," "our,"** or **"us"**), we value the privacy of our website visitors and Sourcegraph Cloud users (collectively for the purposes of this Privacy Policy, our **"Website"**) and our self-hosted Sourcegraph instances users (collectively with our Website, our **"Service"** or **"Services"**). This Privacy Policy explains how we collect, use, share and protect your personal information that we collect through our Service. This Privacy Policy applies to our Website, Sourcegraph Cloud, and our self-hosted Sourcegraph instances. By using our Service, you agree to the terms of this Privacy Policy and our <a href="/terms">Terms of Service</a>.
 
