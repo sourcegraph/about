@@ -87,25 +87,14 @@ const DesktopNav: FunctionComponent<DesktopNav> = ({ navLinks }) => {
 
             <Nav className="right-nav lg:tw-justify-end">
                 <Nav.Link
-                    className="tw-mr-sm tw-text-blurple-400 font-weight-bold hover:tw-text-blurple-500"
+                    className="px-5 py-2 btn btn-outline-primary font-weight-bold"
                     href="https://sourcegraph.com/search"
                     title="Search code"
-                    data-button-style={buttonStyle.text}
-                    data-button-location={buttonLocation.nav}
-                    data-button-type="cta"
-                >
-                    Search code
-                </Nav.Link>
-
-                <Nav.Link
-                    className="px-5 py-2 btn btn-outline-primary font-weight-bold"
-                    href={`/demo${isBlog ? '?utm_source=blog-integrations-update' : ''}`}
-                    title="Request a demo"
                     data-button-style={buttonStyle.outline}
                     data-button-location={buttonLocation.nav}
                     data-button-type="cta"
                 >
-                    Request a demo
+                    Search code
                 </Nav.Link>
 
                 <Nav.Link
