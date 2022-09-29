@@ -1,9 +1,10 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
+import Image from 'next/image'
 import Link from 'next/link'
 
-import { CustomerLogos, YouTube } from '@components'
+import { CustomerLogos, YouTube, Heading } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 import meshLeft from './assets/hero/mesh-left.png'
@@ -35,7 +36,14 @@ const Hero: FunctionComponent = () => {
                         ['tw-right-0']: index === 1,
                     })}
                 >
-                    <img src={image.src} alt="" draggable={false} className="tw-w-full tw-max-w-xl" />
+                    <Image
+                        src={image.src}
+                        alt=""
+                        draggable={false}
+                        className="tw-w-full tw-max-w-xl"
+                        width={index === 0 ? 376 : 365}
+                        height={630}
+                    />
                     <div className="tw-absolute tw-bottom-0 tw-left-0 tw-w-full tw-h-[80px] tw-bg-gradient-to-b tw-from-transparent tw-to-white" />
                 </div>
             ))}
@@ -47,10 +55,11 @@ const Hero: FunctionComponent = () => {
                     </span>{' '}
                     across your entire codebase
                 </h1>
-                <h5 className="my-5 tw-mx-auto tw-max-w-4xl tw-font-normal">
+
+                <Heading size="h5" as="h2" className="tw-my-md tw-mx-auto tw-max-w-4xl tw-font-normal">
                     Address security risks, onboard to a new codebase, identify the root cause of incidents, promote
                     code reuse, improve code health, and accelerate engineering velocity with Sourcegraph.
-                </h5>
+                </Heading>
 
                 <div className="tw-mx-auto max-w-350 tw-flex-col sm:tw-flex-row sm:tw-flex tw-items-center">
                     <div className="mb-3 col-sm-6 sm:tw-px-0 mb-sm-0 mr-sm-3">
