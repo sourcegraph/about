@@ -1,7 +1,6 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
-import Image from 'next/image'
 import Link from 'next/link'
 
 import { CustomerLogos, YouTube, Heading } from '@components'
@@ -31,16 +30,16 @@ const Hero: FunctionComponent = () => {
             {[meshLeft, meshRight].map((image, index) => (
                 <div
                     key={`mesh-container-${Math.random()}`}
-                    className={classNames('tw-hidden lg:tw-block tw-absolute tw-top-0', {
+                    className={classNames('tw-hidden xl:tw-block tw-absolute tw-top-0', {
                         ['tw-left-0']: index === 0,
                         ['tw-right-0']: index === 1,
                     })}
                 >
-                    <Image
+                    <img
                         src={image.src}
-                        alt=""
+                        alt="Sourcegraph mesh branding"
                         draggable={false}
-                        className="tw-w-full tw-max-w-xl"
+                        className="tw-h-full tw-w-auto"
                         width={index === 0 ? 376 : 365}
                         height={630}
                     />

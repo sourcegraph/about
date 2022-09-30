@@ -10,9 +10,11 @@ const Banner: FunctionComponent = () => (
         <div className="tw-max-w-screen-xl tw-mx-auto tw-text-center tw-flex tw-flex-col lg:tw-flex-row tw-justify-center tw-items-center">
             <img
                 src="/sourcegraph/sourcegraph-4.0-white.svg"
-                alt="Sourcegraph 4.0 Starship"
+                alt="Sourcegraph 4.0 - Code Intelligence Platform"
                 className="tw-my-auto tw-h-[35px]"
                 draggable={false}
+                width={251}
+                height={35}
             />
             <p className="tw-text-white tw-text-lg tw-my-xs md:tw-my-0 md:tw-mx-sm md:tw-text-2xl lg:tw-mx-2xl">
                 From code search to code intelligence

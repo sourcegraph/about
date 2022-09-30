@@ -1,7 +1,6 @@
 import { FunctionComponent, useState, useEffect } from 'react'
 
 import classNames from 'classnames'
-import Image from 'next/image'
 import Navbar from 'react-bootstrap/Navbar'
 
 import { NavLink, navLinks } from '../navLinks'
@@ -79,12 +78,13 @@ export const Header: FunctionComponent<Props> = props => {
         <nav className={navStyle}>
             <div className="container-xl tw-px-0">
                 <Navbar.Brand href="/" onContextMenu={onRightClickLogo} className="tw-mr-0 header tw-flex">
-                    <Image
+                    <img
                         src={isDarkNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
                         width={150}
                         height={26}
                         className="tw-max-w-[150px] tw-w-full"
-                        aria-label="Sourcegraph - Universal code search"
+                        aria-label="Sourcegraph - Code Intelligence Platform"
+                        alt="Sourcegraph - Code Intelligence Platform"
                         draggable={false}
                     />
                 </Navbar.Brand>

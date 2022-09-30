@@ -12,8 +12,15 @@ export default class MyDocument extends Document {
                     <meta charSet="utf-8" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+                    <meta name="theme-color" content="#ffffff" />
+                    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+                    <meta name="apple-mobile-web-app-title" content="Sourcegraph" />
+                    <link rel="apple-touch-startup-image" href="/sourcegraph/sourcegraph-mark.png" />
 
                     <link rel="icon" type="image/png" href="/favicon.png" />
+                    <link rel="apple-touch-icon" sizes="180x180" href="/sourcegraph/sourcegraph-mark-touch-180.png" />
+
+                    <link rel="manifest" href="/manifest.json" />
 
                     {/* Sourcegraph Chrome Extension */}
                     <link

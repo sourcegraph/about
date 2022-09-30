@@ -1,11 +1,10 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, useEffect, useState, useRef } from 'react'
 
 import classnames from 'classnames'
-import Image from 'next/image'
 import Link from 'next/link'
 
 import { Heading } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { breakpoints, buttonStyle, buttonLocation } from '@data'
 
 interface Logo {
     name: string
@@ -112,47 +111,85 @@ const logos: Logo[] = [
     },
 ]
 
-export const CustomerLogos: FunctionComponent<CustomerLogos> = ({ overline, headline, description }) => (
-    <div>
-        <div className="tw-mb-xl tw-text-center tw-max-w-xl tw-mx-auto">
-            {overline && (
-                <Heading size="h6" as="h2">
-                    {overline}
-                </Heading>
-            )}
-            {headline && (
-                <Heading size="h2" as="h3" className="tw-my-2">
-                    {headline}
-                </Heading>
-            )}
-            {description && <p className="tw-text-lg">{description}</p>}
-        </div>
+/**
+ * This is our Logo Pond from the DLS which displays customer logos.
+ *
+ * @param props - component props
+ * @param props.overline - optional overline heading
+ * @param props.headline - optional headline
+ * @param props.description - optional description
+ *
+ */
+export const CustomerLogos: FunctionComponent<CustomerLogos> = ({ overline, headline, description }) => {
+    const container = useRef<HTMLDivElement>(null)
+    const [containerWidth, setContainerWidth] = useState<number>(0)
 
-        <div className="tw-flex-wrap tw-mx-auto tw-flex tw-items-center tw-justify-center tw-max-w-screen-xl tw-select-none">
-            {logos.map((logo: Logo, index) => (
-                <Link key={logo.name} href={logo.link ? logo.link : '/case-studies'} passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a
-                        className={classnames('tw-mx-7 tw-mb-xl tw-shrink-0', {
-                            'xl:tw-mb-0': index > (logos.length - 1) / 2,
-                        })}
-                        title={`${logo.name} logo`}
-                        data-button-style={buttonStyle.image}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        <Image
-                            src={logo.src}
-                            alt={`${logo.name} logo`}
+    /**
+     * This allows us to check for the logo container width so we can
+     * add a bottom margin to only the first row of logos on desktop.
+     */
+    useEffect(() => {
+        const offsetWidth = container.current?.offsetWidth
+
+        const resizeListener = (): void => {
+            if (offsetWidth) {
+                setContainerWidth(offsetWidth)
+            }
+        }
+
+        resizeListener()
+
+        window.addEventListener('resize', resizeListener)
+
+        return () => {
+            window.removeEventListener('resize', resizeListener)
+        }
+    }, [])
+
+    return (
+        <div>
+            <div className="tw-mb-xl tw-text-center tw-max-w-xl tw-mx-auto">
+                {overline && (
+                    <Heading size="h6" as="h2">
+                        {overline}
+                    </Heading>
+                )}
+                {headline && (
+                    <Heading size="h2" as="h3" className="tw-my-2">
+                        {headline}
+                    </Heading>
+                )}
+                {description && <p className="tw-text-lg">{description}</p>}
+            </div>
+
+            <div
+                className="tw-flex-wrap tw-mx-auto tw-flex tw-items-center tw-justify-center tw-max-w-screen-xl tw-select-none"
+                ref={container}
+            >
+                {logos.map((logo: Logo, index) => (
+                    <Link key={logo.name} href={logo.link ? logo.link : '/case-studies'} passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className={classnames('tw-mx-7 tw-mb-xl tw-shrink-0', {
+                                'xl:tw-mb-0': index > (logos.length - 1) / 2 && containerWidth >= breakpoints.xl,
+                            })}
                             title={`${logo.name} logo`}
-                            className="tw-w-full"
-                            draggable={false}
-                            width={logo.width}
-                            height={logo.height}
-                        />
-                    </a>
-                </Link>
-            ))}
+                            data-button-style={buttonStyle.image}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            <img
+                                src={logo.src}
+                                alt={`${logo.name} logo`}
+                                title={`${logo.name} logo`}
+                                draggable={false}
+                                width={logo.width}
+                                height={logo.height}
+                            />
+                        </a>
+                    </Link>
+                ))}
+            </div>
         </div>
-    </div>
-)
+    )
+}

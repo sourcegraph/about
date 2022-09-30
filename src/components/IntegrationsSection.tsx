@@ -1,6 +1,6 @@
 import { FunctionComponent, ReactNode } from 'react'
 
-import { Badge, ContentSection } from '@components'
+import { Badge, ContentSection, Heading } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const codeHosts: string[] = [
@@ -82,7 +82,9 @@ export const IntegrationsSection: FunctionComponent = () => (
 
         <div className="row">
             <div className="mb-5 col-lg-6">
-                <h4>All your repositories + 2M open source (and counting)</h4>
+                <Heading size="h4" as="h3">
+                    All your repositories + 2M open source (and counting)
+                </Heading>
 
                 <ul className="lg:tw-max-w-lg tw-list-none tw-ml-0 tw-flex tw-flex-wrap tw-mb-xxs">
                     {renderListItems(codeHosts)}
@@ -100,7 +102,9 @@ export const IntegrationsSection: FunctionComponent = () => (
             </div>
 
             <div className="mb-5 col-lg-6">
-                <h4>All your languages</h4>
+                <Heading size="h4" as="h3">
+                    All your languages
+                </Heading>
 
                 <ul className="lg:tw-max-w-xl tw-list-none tw-ml-0 tw-flex tw-flex-wrap tw-mb-xxs">
                     {renderListItems(languages)}
@@ -118,7 +122,9 @@ export const IntegrationsSection: FunctionComponent = () => (
             </div>
 
             <div className="mb-5 col-lg-6">
-                <h4>Your most used tools</h4>
+                <Heading size="h4" as="h3">
+                    Your most used tools
+                </Heading>
 
                 <ul className="lg:tw-max-w-md tw-list-none tw-ml-0 tw-flex tw-flex-wrap tw-mb-xxs">
                     {renderListItems(tools)}
@@ -136,18 +142,24 @@ export const IntegrationsSection: FunctionComponent = () => (
             </div>
 
             <div className="mb-5 col-lg-6">
-                <h4>Deployment options</h4>
+                <Heading size="h4" as="h3">
+                    Deployment options
+                </Heading>
 
                 <ul className="tw-list-none tw-ml-0 tw-mb-xxs">
                     <li className="list-inline-item text-wrap">
-                        <h5 className="tw-mt-xs tw-text-lg tw-font-normal">Cloud:</h5>
+                        <Heading size="h5" as="h4" className="tw-mt-xs tw-text-lg tw-font-normal">
+                            Cloud:
+                        </Heading>
                         <ul className="tw-list-none tw-m-0 tw-flex tw-flex-wrap">
                             {renderListItems(['Single-tenant Sourcegraph Cloud instance'])}
                         </ul>
                     </li>
 
                     <li className="tw-list-none tw-m-0">
-                        <h5 className="tw-mt-xxs tw-text-lg tw-font-normal">Self-hosted by you:</h5>
+                        <Heading size="h5" as="h4" className="tw-mt-xxs tw-text-lg tw-font-normal">
+                            Self-hosted by you:
+                        </Heading>
                         <ul className="lg:tw-max-w-sm tw-list-none tw-m-0 tw-flex tw-flex-wrap">
                             {renderListItems(selfHostedOptions)}
                         </ul>

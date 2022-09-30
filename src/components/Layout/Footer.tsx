@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
+import { Heading } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 import { footerLinks, socialLinks, postscriptLinks } from './navLinks'
@@ -33,16 +34,18 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                                 >
                                     <img
                                         src={isDarkNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
-                                        alt="Sourcegraph - Universal code search"
-                                        className="tw-max-w-[200px] tw-max-h-[40px] tw-w-full"
+                                        alt="Sourcegraph - Code Intelligence Platform"
+                                        className="tw-max-w-[264px] tw-w-full tw-h-auto"
                                         draggable={false}
+                                        width={264}
+                                        height={48}
                                     />
                                 </a>
                             </Link>
 
                             <ul className="tw-mx-0 tw-mt-3 tw-list-none tw-flex">
                                 {socialLinks.items.map(item => (
-                                    <li className="tw-mr-3" key={item.title}>
+                                    <li className="tw-mr-5" key={item.title}>
                                         <a
                                             href={item.href}
                                             target="_blank"
@@ -67,7 +70,9 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                         <div className="tw-col-span-12 lg:tw-col-span-7 sm:tw-grid sm:tw-grid-cols-12">
                             {footerLinks.map(section => (
                                 <div className="tw-mb-md sm:tw-mb-0 sm:tw-col-span-4" key={section.section}>
-                                    <h5 className="tw-mb-xs">{section.section}</h5>
+                                    <Heading size="h5" as="h2" className="tw-mb-xs">
+                                        {section.section}
+                                    </Heading>
                                     <ul className="tw-ml-0 tw-list-none">
                                         {section.items.map(item => (
                                             <li className="tw-mb-xs tw-text-sm" key={item.title}>
