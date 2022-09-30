@@ -8,6 +8,7 @@ import { ReactNode } from 'react'
 
 import type { AppProps } from 'next/app'
 import SSRProvider from 'react-bootstrap/SSRProvider'
+import { LiveChatLoaderProvider, Drift } from 'react-live-chat-loader'
 
 import { useEventLogger, useLogAllLinkClicks, useLandingSource } from '@hooks'
 
@@ -25,6 +26,10 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
             <SSRProvider>
                 <Component {...pageProps} />
             </SSRProvider>
+
+            <LiveChatLoaderProvider providerKey="bgv3pp29xsp9" provider="drift">
+                <Drift icon='A' color="var(--sg-color-blurple-400)" />
+            </LiveChatLoaderProvider>
         </>
     )
 }

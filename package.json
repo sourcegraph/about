@@ -98,6 +98,7 @@
     "prettier": "^2.5.1",
     "react-bootstrap": "2.0.0",
     "react-icons": "^4.4.0",
+    "react-live-chat-loader": "^2.7.4",
     "react-spring": "^9.4.4",
     "react-twitch-embed": "^3.0.1",
     "sass": "^1.49.7",
