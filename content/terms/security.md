@@ -21,7 +21,7 @@ Sourcegraph Cloud is the recommended deployment model for most customers. Source
 ### Infrastructure
 
 - All infrastructure is hosted on [Google Cloud Platform](https://cloud.google.com/security/) and managed through Terraform.
-- Customer instances are provisioned in fully segregated GCP enviroments, ensuring that customer data is fully segregated.
+- Customer instances are provisioned in fully segregated GCP environments, ensuring that customer data is fully segregated.
 - All communication to your Sourcegraph instance is encrypted using TLS 1.2 or greater. User credentials are encrypted at rest using 256-bit Advanced Encryption Standard (AES-256) keys in Galois Counter Mode (GCM). The keys are automatically rotated every 90 days.
 - All storage volumes are encrypted at rest, and data is encrypted in-cloud during transport.
 - We leverage IAM groups and rules to enforce the principle of least access across our cloud infrastructure.
@@ -33,10 +33,10 @@ Sourcegraph Cloud is the recommended deployment model for most customers. Source
 ### Monitoring and Incident Response
 
 - Our operations team monitors service availability 24x7x365. They investigate alerts and potential attacks 24x7x365, triaging and responding when necessary.
-- We only log information crucial for security and support. Only restricted personnel have access to user data. Logs are stored in GCP and the information is retained for up to 180 days. Find out more in our [Privacy Policy](/terms/privacy).
+- We only log information crucial for security and support. Only restricted personnel have access to user data. Logs are stored in GCP and the information is retained for up to 365 days. Find out more in our [Privacy Policy](/terms/privacy).
 - Service, application, and access logs for are stored centrally by Sourcegraph and monitored.
 - You can find more details in our [Incident Response Policy](https://handbook.sourcegraph.com/departments/security/security-incident-response/)
-- Only restricted Sourcegraph employees have access to the instance, stricly for support and maintanace purposes. Access is heavily logged and monitored.
+- Only restricted Sourcegraph employees have access to a customer's instance, strictly for support and maintenance purposes. Access is logged and monitored.
 - Sourcegraph employees access the instance through secure SSO means, ensuring MFA protections and more.
 
 ## Sourcegraph on-premise
