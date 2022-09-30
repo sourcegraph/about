@@ -28,7 +28,7 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
             </SSRProvider>
 
             <LiveChatLoaderProvider providerKey="bgv3pp29xsp9" provider="drift">
-                <Drift icon='A' color="var(--sg-color-blurple-400)" />
+                <Drift icon="A" color="var(--sg-color-blurple-400)" />
             </LiveChatLoaderProvider>
         </>
     )

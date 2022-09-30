@@ -1,6 +1,6 @@
 import { FunctionComponent, useEffect, useState, useRef } from 'react'
 
-import classnames from 'classnames'
+import classNames from 'classnames'
 import Link from 'next/link'
 
 import { Heading } from '@components'
@@ -18,6 +18,8 @@ interface CustomerLogos {
     overline?: string
     headline?: string
     description?: string
+    dark?: boolean
+    monochrome?: boolean
 }
 
 const logos: Logo[] = [
@@ -118,9 +120,17 @@ const logos: Logo[] = [
  * @param props.overline - optional overline heading
  * @param props.headline - optional headline
  * @param props.description - optional description
+ * @param props.dark - dark mode
+ * @param props.monochrome - monochrome
  *
  */
-export const CustomerLogos: FunctionComponent<CustomerLogos> = ({ overline, headline, description }) => {
+export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
+    overline,
+    headline,
+    description,
+    dark,
+    monochrome,
+}) => {
     const container = useRef<HTMLDivElement>(null)
     const [containerWidth, setContainerWidth] = useState<number>(0)
 
@@ -147,7 +157,7 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({ overline, head
     }, [])
 
     return (
-        <div>
+        <div className={classNames({ 'tw-bg-black tw-text-white': dark })}>
             <div className="tw-mb-xl tw-text-center tw-max-w-xl tw-mx-auto">
                 {overline && (
                     <Heading size="h6" as="h2">
@@ -163,14 +173,17 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({ overline, head
             </div>
 
             <div
-                className="tw-flex-wrap tw-mx-auto tw-flex tw-items-center tw-justify-center tw-max-w-screen-xl tw-select-none"
+                className={classNames(
+                    'tw-flex-wrap tw-mx-auto tw-flex tw-items-center tw-justify-center tw-max-w-screen-xl tw-select-none',
+                    { 'tw-brightness-0': dark || monochrome, 'tw-invert': dark }
+                )}
                 ref={container}
             >
                 {logos.map((logo: Logo, index) => (
                     <Link key={logo.name} href={logo.link ? logo.link : '/case-studies'} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className={classnames('tw-mx-7 tw-mb-xl tw-shrink-0', {
+                            className={classNames('tw-mx-7 tw-mb-xl tw-shrink-0', {
                                 'xl:tw-mb-0': index > (logos.length - 1) / 2 && containerWidth >= breakpoints.xl,
                             })}
                             title={`${logo.name} logo`}
