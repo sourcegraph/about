@@ -11,5 +11,18 @@ interface Breakpoints {
     [name: string]: number
 }
 
+interface Screens {
+    [name: string]: string
+}
+
+const screens: Screens = config.theme?.screens
+const breaks: Breakpoints = {}
+
+for (const screen in screens) {
+    if (screens[screen]) {
+        breaks[screen] = Number(screens[screen].slice(0,-2))
+    }
+}
+
 // These are our breakpoints as defined in our Tailwind config
-export const breakpoints: Breakpoints = config.theme?.screens
+export const breakpoints: Breakpoints = breaks
