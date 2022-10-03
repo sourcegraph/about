@@ -28,10 +28,7 @@ export const Heading: FunctionComponent<Heading> = ({ as, size, children, classN
      * levels based on specific designs. Otherwise, we render the tag using
      * what's passed in the "as" prop.
      */
-    let Tag = size
-    if (as) {
-        Tag = as
-    }
+    const Tag = as ?? size
 
     const sizes = {
         h1: 'tw-font-sans tw-text-6xl md:tw-text-7xl tw-tracking-normal tw-font-semibold',
