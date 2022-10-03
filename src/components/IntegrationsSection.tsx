@@ -148,7 +148,7 @@ export const IntegrationsSection: FunctionComponent = () => (
 
                 <ul className="tw-list-none tw-ml-0 tw-mb-xxs">
                     <li className="list-inline-item text-wrap">
-                        <Heading size="h5" as="h4" className="tw-mt-xs tw-text-lg tw-font-normal">
+                        <Heading size="h5" as="h4" className="tw-mt-xs tw-text-lg !tw-font-normal">
                             Cloud:
                         </Heading>
                         <ul className="tw-list-none tw-m-0 tw-flex tw-flex-wrap">
@@ -157,7 +157,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                     </li>
 
                     <li className="tw-list-none tw-m-0">
-                        <Heading size="h5" as="h4" className="tw-mt-xxs tw-text-lg tw-font-normal">
+                        <Heading size="h5" as="h4" className="tw-mt-xxs tw-text-lg !tw-font-normal">
                             Self-hosted by you:
                         </Heading>
                         <ul className="lg:tw-max-w-sm tw-list-none tw-m-0 tw-flex tw-flex-wrap">

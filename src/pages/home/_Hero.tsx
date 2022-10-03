@@ -55,7 +55,7 @@ const Hero: FunctionComponent = () => {
                     across your entire codebase
                 </h1>
 
-                <Heading size="h5" as="h2" className="tw-my-md tw-mx-auto tw-max-w-4xl tw-font-normal">
+                <Heading size="h5" as="h2" className="tw-my-md tw-mx-auto tw-max-w-4xl !tw-font-normal">
                     Address security risks, onboard to a new codebase, identify the root cause of incidents, promote
                     code reuse, improve code health, and accelerate engineering velocity with Sourcegraph.
                 </Heading>
