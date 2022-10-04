@@ -21,7 +21,7 @@ But for those of you who are just joining, welcome! If you’ll allow me, I’ll
 
 See you after the movie!
 
-**Episode I: The Phantom Code Base**
+#### **Episode I: The Phantom Code Base**
 
 _Google Kirkland, 2005: The party moves to Google._
 
@@ -181,7 +181,7 @@ And then it happened again at Microsoft, at a scale orders of magnitude larger, 
 
 Well guess what? It’s been 15 years, folks. We’re starting the party up again.
 
-I’m going to be banging the drums and generating a lot of hype around Sourcegraph’s code intelligence platform. It’s going to power amazing improvements in the Sourcegraph product itself, which is 100% open source. But you won’t need Sourcegraph’s search portal to use SCIP. You’ll be able to mine those diamonds however you like.
+I’m going to be banging the drums and generating a lot of hype around Sourcegraph’s code intelligence platform. It’s going to power amazing improvements in the Sourcegraph product itself. But you won’t need Sourcegraph’s search portal to use SCIP. You’ll be able to mine those diamonds however you like.
 
 Existing developer tools will finally be able to leave the “glass marble” heuristic-intelligence economy behind, and gravitate towards SCIP as the open, universal “diamond” standard for code intelligence.
 
