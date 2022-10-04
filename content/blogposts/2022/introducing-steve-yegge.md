@@ -7,8 +7,8 @@ authors:
 publishDate: 2022-10-04T16:00
 tags: [blog]
 slug: introducing-steve-yegge
-heroImage: 
-socialImage: 
+heroImage: https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2022/steve-yegge-joins-sourcegraph.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2022/steve-yegge-joins-sourcegraph.png
 published: false
 
 ---
