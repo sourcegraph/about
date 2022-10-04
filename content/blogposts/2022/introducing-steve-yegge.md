@@ -195,7 +195,7 @@ With SCIP, Sourcegraph has stepped up to the challenge. And I’m so grateful th
 
 If you want to help, you can of course [come join us at Sourcegraph](https://boards.greenhouse.io/sourcegraph91), right from the comfort of your own home; [we are 100% remote](https://handbook.sourcegraph.com/company-info-and-process/remote). That’s one option.
 
-But you don’t _have_ to join Sourcegraph to be able to party with us. It’s all open source. Everyone’s welcome. And if you’re into search, or compilers, or ML-powered code intelligence, I think you’ll have an absolute blast. And [join our Discord community](discord.gg/s2qDtYGnAE)! 
+But you don’t _have_ to join Sourcegraph to be able to party with us. It’s all open source. Everyone’s welcome (you're welcome in our [Discord community](discord.gg/s2qDtYGnAE), too!). And if you’re into search, or compilers, or ML-powered code intelligence, I think you’ll have an absolute blast.
 
 Come help us build out the world’s biggest and best code intelligence platform! The party has already started.
 
