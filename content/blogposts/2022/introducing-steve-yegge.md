@@ -59,7 +59,7 @@ Google engineers today can navigate and understand their own multi-billion-line 
 
 So you’d _think_ someone would have done it for the rest of us by now.
 
-**Episode II: A Lack of Clones**
+#### Episode II: A Lack of Clones
 
 Long story short, there have been many attempts at doing code search outside Google. And some of them are pretty good, just like Google Code Search was, before Grok supercharged it.
 
@@ -85,7 +85,7 @@ CIPs are just really hard!
 
 So for a good ten years, more maybe, I despaired of anyone else attempting it. But I always wished I’d get the chance to do it myself, someday.
 
-**Episode III: Revenge of LSIF**
+#### Episode III: Revenge of LSIF
 
 Couple months back, Quinn and Beyang, the Sourcegraph founders, reached out to me to see if there might be a fit for leading their engineering team.
 
@@ -123,7 +123,7 @@ Yup. You guessed it. You _know_, given all the context here, that there is only 
 
 I’ll give you three guesses, and the first two don’t count.
 
-**Episode IV: A New Hope**
+#### Episode IV: A New Hope
 
 Sourcegraph, you see, has built Grok. 
 
@@ -151,7 +151,7 @@ Sourcegraph is building a code intelligence platform!
 
 Imagine my surprise.
 
-**Episode V: Stevey Strikes Back**
+#### Episode V: Stevey Strikes Back
 
 Wait, how did I wind up being the bad guy in these titles. Who even wrote this?
 
@@ -171,7 +171,7 @@ But the reality is, this is still Day One. The market is enormous, given that an
 
 From what I’ve seen, that platform will be Sourcegraph.
 
-**Episode VI: Return of the party**
+#### Episode VI: Return of the party
 
 No really major Stevey blog post would be complete without a call to action.
 
