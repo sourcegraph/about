@@ -2,9 +2,8 @@ import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 import InformationCircleOutlineIcon from 'mdi-react/InformationCircleOutlineIcon'
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
-import Tooltip from 'react-bootstrap/Tooltip'
 
+import { Tooltip } from '@components'
 import { breakpoints } from '@data'
 import { useWindowWidth } from '@hooks'
 
@@ -25,22 +24,11 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag
                 <div className={classNames('tw-text-lg', className)}>{feature.label}</div>
 
                 {feature.description && (
-                    <OverlayTrigger
-                        placement="auto"
-                        flip={true}
-                        transition={false}
-                        overlay={
-                            <Tooltip id="tooltip" placement="right" className="tw-shadow-lg tw-opacity-100">
-                                {feature.description}
-                            </Tooltip>
-                        }
-                    >
-                        {({ ref, ...triggerHandler }) => (
-                            <span {...triggerHandler} ref={ref} className="tw-ml-xxs tw-my-auto tw-text-gray-300">
-                                <InformationCircleOutlineIcon size={isMdOrDown ? 25 : 19} />
-                            </span>
-                        )}
-                    </OverlayTrigger>
+                    <Tooltip text={feature.description} position="right">
+                        <span className="tw-ml-xxs tw-text-gray-300">
+                            <InformationCircleOutlineIcon size={isMdOrDown ? 25 : 19} />
+                        </span>
+                    </Tooltip>
                 )}
             </div>
         </Tag>
