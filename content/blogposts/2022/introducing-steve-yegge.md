@@ -137,9 +137,9 @@ While all that was going on, though–one small fierce corps of Sourcegraph back
 
 This little band of compiler folk created [SCIP](https://github.com/sourcegraph/scip) - the source code intelligence protocol. A small thing, really. Just a bauble. You’d hardly notice it in the sea of checkins.
 
-But during my coding marathon for my tech interview with them, I saw what was going on in the backend code: A revolution! The secret underground is pivoting from lsif to scip, invisibly, as the new Sourcegraph backend.
+But during my coding marathon for my tech interview with them, I saw what was going on in the backend code: A revolution! The secret underground is pivoting from LSIF to SCIP, invisibly, as the new Sourcegraph backend.
 
-Sourcegraph’s scip protocol – it’s the return of Grok. A diamond mine in the glass marble economy of heuristic-based code intelligence. A format for storing enough code intelligence to power a thousand boosts to developer velocity. It’s been lurking in Sourcegraph for months now.
+Sourcegraph’s SCIP – it’s the return of Grok. A diamond mine in the glass marble economy of heuristic-based code intelligence. A format for storing enough code intelligence to power a thousand boosts to developer velocity. It’s been lurking in Sourcegraph for months now.
 
 But it was always converted to LSIF before actually using it anywhere! That’s… the “invisibly” bit.
 
@@ -185,7 +185,7 @@ I’m going to be banging the drums and generating a lot of hype around Sourcegr
 
 Existing developer tools will finally be able to leave the “glass marble” heuristic-intelligence economy behind, and gravitate towards SCIP as the open, universal “diamond” standard for code intelligence.
 
-The massive training data sets from Sourcegraph’s open-source SCIP index will power a whole new generation of ML enhancements to code search, code exploration, and code understanding.
+The massive training data sets from Sourcegraph’s open source SCIP index will power a whole new generation of ML enhancements to code search, code exploration, and code understanding.
 
 This is it. The party’s starting up again. The worldwide compiler community is a very small place. Everyone knows everyone. We’ll be inviting all the communities for languages, static analysis, build systems, code hosts, and the broader dev tooling ecosystem. SCIP is an interchange format. It’s a way for us to agree to move to the next level. A way to create game-changing tools for developers.
 
@@ -195,7 +195,7 @@ With SCIP, Sourcegraph has stepped up to the challenge. And I’m so grateful th
 
 If you want to help, you can of course [come join us at Sourcegraph](https://boards.greenhouse.io/sourcegraph91), right from the comfort of your own home; [we are 100% remote](https://handbook.sourcegraph.com/company-info-and-process/remote). That’s one option.
 
-But you don’t _have_ to join Sourcegraph to be able to party with us. It’s all open source. Everyone’s welcome. And if you’re into search, or compilers, or ML-powered code intelligence, I think you’ll have an absolute blast.
+But you don’t _have_ to join Sourcegraph to be able to party with us. It’s all open source. Everyone’s welcome. And if you’re into search, or compilers, or ML-powered code intelligence, I think you’ll have an absolute blast. And [join our Discord community](discord.gg/s2qDtYGnAE)! 
 
 Come help us build out the world’s biggest and best code intelligence platform! The party has already started.
 
