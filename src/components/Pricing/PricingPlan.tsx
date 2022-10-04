@@ -11,21 +11,20 @@ interface Props {
     price: string
     features: FeatureCluster[]
     buttons: ReactNode
-    isEnterprise: boolean
+    colorKey: keyof typeof colors
+}
+
+const colors = {
+    starter: 'tw-border-gray-200',
+    business: 'tw-border-t-vermillion-300',
+    enterprise: 'tw-border-t-violet-400',
 }
 
 /** A pricing plan on the pricing page. */
-export const PricingPlan: FunctionComponent<Props> = ({
-    name,
-    price,
-    description,
-    features,
-    buttons,
-    isEnterprise,
-}) => (
+export const PricingPlan: FunctionComponent<Props> = ({ name, price, description, features, buttons, colorKey }) => (
     <div
         className={`h-100 tw-p-md tw-shadow-lg tw-border-t-16 tw-rounded tw-border-gray-200 ${
-            isEnterprise ? 'tw-border-t-violet-400' : 'tw-border-t-vermillion-300'
+            colors[colorKey] ? colors[colorKey] : 'tw-border-gray-200'
         }`}
     >
         <h2 className="tw-mb-sm tw-font-semibold">{name}</h2>
@@ -34,16 +33,16 @@ export const PricingPlan: FunctionComponent<Props> = ({
         {buttons}
 
         <div className="tw-py-sm ml-0">
-            {isEnterprise && <div className="tw-text-xl tw-font-semibold tw-mb-sm">Everything in Business, plus:</div>}
+            {colorKey === 'enterprise' && (
+                <div className="tw-text-xl tw-font-semibold tw-mb-sm">Everything in Business, plus:</div>
+            )}
             {features.map(node => (
                 <div
                     key={node.topic}
                     className="tw-px-0 bg-transparent border-0 tw-text-xl list-group-itemtw-justify-between"
                 >
                     <div className="tw-text-xl tw-font-semibold tw-flex tw-items-center">
-                        <CheckIcon
-                            className={`mr-2 ${isEnterprise ? 'tw-text-violet-400' : 'tw-text-vermillion-300'}`}
-                        />
+                        <CheckIcon className={`mr-2 ${colors[colorKey] ? colors[colorKey] : 'tw-border-gray-200'}`} />
                         <h5 className="tw-w-full">{node.topic}</h5>
                     </div>
                     <ul className="tw-ml-2xl tw-mb-xs">

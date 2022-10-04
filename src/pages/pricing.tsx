@@ -21,6 +21,7 @@ import {
 } from '@components'
 import { breakpoints, buttonStyle, buttonLocation } from '@data'
 import { useWindowWidth } from '@hooks'
+import { STARTER_FEATURES_OVERVIEW } from 'components/Pricing'
 
 const BusinessCTA: FunctionComponent<{ className?: string; btnOnMobile?: boolean }> = ({ className, btnOnMobile }) => {
     const windowWidth = useWindowWidth()
@@ -153,24 +154,35 @@ const PricingPage: FunctionComponent = () => {
             }
         >
             <ContentSection className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-12 tw-gap-sm">
-                <div className="tw-mb-sm md:tw-mb-0 tw-col-span-full md:tw-col-start-2 md:tw-col-span-5">
+                <div className="tw-mb-sm md:tw-mb-0 tw-col-span-full lg:tw-col-start-1 lg:tw-col-span-4">
+                    <PricingPlan
+                        name="Starter"
+                        price="$100 per month"
+                        description="Cloud instance for teams, capped at 10 users, 10 repositories, and 2 GB of code"
+                        features={STARTER_FEATURES_OVERVIEW}
+                        colorKey="starter"
+                        buttons={<BusinessCTA btnOnMobile={true} />}
+                    />
+                </div>
+
+                <div className="tw-mb-sm md:tw-mb-0 tw-col-span-full lg:tw-col-start-5 lg:tw-col-span-4">
                     <PricingPlan
                         name="Business"
                         price="$99 per active user/month"
                         description="Full platform access for teams and orgs, all on a single-tenant cloud instance."
                         features={BIZ_FEATURES_OVERVIEW}
-                        isEnterprise={false}
+                        colorKey="business"
                         buttons={<BusinessCTA btnOnMobile={true} />}
                     />
                 </div>
 
-                <div className="tw-col-span-full md:tw-col-start-7 md:tw-col-span-5">
+                <div className="tw-col-span-full lg:tw-col-start-9 lg:tw-col-span-4">
                     <PricingPlan
                         name="Enterprise"
                         price="Custom pricing"
                         description="Enterprise-grade security, scale, and support with custom deployment options."
                         features={ENTERPRISE_FEATURES_OVERVIEW}
-                        isEnterprise={true}
+                        colorKey="enterprise"
                         buttons={<EnterpriseCTA btnOnMobile={true} />}
                     />
                 </div>

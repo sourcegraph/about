@@ -17,8 +17,34 @@ interface FeatureSubsetDictionary {
     label: string
     business: boolean | string
     enterprise: boolean | string
+    starter?: boolean | string
     disclaimer?: string
 }
+
+/** Starter spotlight feature set */
+export const STARTER_FEATURES_OVERVIEW: FeatureCluster[] = [
+    {
+        topic: 'Code intelligence platform',
+        features: [
+            'codeSearch',
+            'codeNavigation',
+            'batchChanges',
+            'codeInsights',
+            'notebooks',
+            'codeMonitoring',
+            'comprehensiveApi',
+        ],
+    },
+    {
+        topic: 'Code host integrations',
+        features: ['cloudHost'],
+    },
+    {
+        topic: 'Security and admin',
+        features: ['analytics'],
+    },
+    { topic: 'Single-tenant cloud deployment' },
+]
 
 /** Business spotlight feature set */
 export const BIZ_FEATURES_OVERVIEW: FeatureCluster[] = [
@@ -120,6 +146,7 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
         features: [
             {
                 label: 'codeHost',
+                starter: 'One code host',
                 business: 'Unlimited',
                 enterprise: 'Unlimited',
             },
@@ -343,6 +370,10 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     ...CIP_FEATURE_INFO,
 
     // Code host integrations
+    cloudHost: {
+        label: 'One cloud host',
+        description: 'Index GitHub.com, GitLab.com, or Bitbucket Cloud',
+    },
     cloudHosts: {
         label: 'Unlimited standard cloud code hosts',
         description: 'Integrate with GitHub.com, GitLab.com, and Bitbucket Cloud.',
