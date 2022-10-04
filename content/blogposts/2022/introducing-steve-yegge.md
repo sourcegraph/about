@@ -103,7 +103,7 @@ I had lots of chats with the Sourcegraph team, and learned about their open comp
 
 It was all pretty interesting, but at that point they weren’t a clear choice over any of the other companies I was talking to.
 
-But then a surprise came: **They asked me to write some code. **
+But then a surprise came: **They asked me to write some code.**
 
 This was the first leadership interview loop in the past 12 months (20+ companies) in which _anyone_ had asked me to write code. They wanted me to fix a bug in Sourcegraph, or add a feature, or something. Whatever. They didn’t care.
 
