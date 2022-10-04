@@ -21,7 +21,7 @@ But for those of you who are just joining, welcome! If you’ll allow me, I’ll
 
 See you after the movie!
 
-#### **Episode I: The Phantom Code Base**
+#### Episode I: The Phantom Code Base
 
 _Google Kirkland, 2005: The party moves to Google._
 
