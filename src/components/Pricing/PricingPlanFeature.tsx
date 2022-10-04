@@ -25,9 +25,7 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag
 
                 {feature.description && (
                     <Tooltip text={feature.description} position="right">
-                        <span className="tw-ml-xxs tw-text-gray-300">
-                            <InformationCircleOutlineIcon size={isMdOrDown ? 25 : 19} />
-                        </span>
+                        <InformationCircleOutlineIcon className="tw-ml-xxs tw-text-gray-300" size={isMdOrDown ? 25 : 19} />
                     </Tooltip>
                 )}
             </div>

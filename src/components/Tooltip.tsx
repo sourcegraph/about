@@ -32,6 +32,7 @@ export const Tooltip: FunctionComponent<Tooltip> = ({ text, position, color = 'l
             ref={node}
             onMouseEnter={() => setVisibility(!isVisible)}
             onMouseLeave={() => setVisibility(!isVisible)}
+            className="tw-my-auto"
         >
             <div className="tw-cursor-pointer">{children}</div>
             {isVisible && (
