@@ -1,12 +1,28 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
+import resolveConfig from 'tailwindcss/resolveConfig'
+
+import tailwindConfig from '../../tailwind.config'
+
+const config = resolveConfig(tailwindConfig)
+
 interface Breakpoints {
     [name: string]: number
 }
 
-// Bootstrap breakpoints
-export const breakpoints: Breakpoints = {
-    xs: 0,
-    sm: 640,
-    md: 768,
-    lg: 1024,
-    xl: 1280,
+interface Screens {
+    [name: string]: string
 }
+
+const screens: Screens = config.theme?.screens
+const breaks: Breakpoints = {}
+
+for (const screen in screens) {
+    if (screens[screen]) {
+        breaks[screen] = Number(screens[screen].slice(0,-2))
+    }
+}
+
+// These are our breakpoints as defined in our Tailwind config
+export const breakpoints: Breakpoints = breaks

@@ -44,10 +44,6 @@ describe('Third party scripts', () => {
     it('renders Triblio Analaytics and Overlay Cards script in the body', () => {
         cy.get('#script-triblio-analytics').parent().should('have.prop', 'tagName').should('equal', 'BODY')
     })
-
-    it('renders Drift script in the body', () => {
-        cy.get('#script-drift').parent().should('have.prop', 'tagName').should('equal', 'BODY')
-    })
 })
 
 export {}

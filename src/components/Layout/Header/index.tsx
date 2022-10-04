@@ -52,7 +52,7 @@ export const Header: FunctionComponent<Props> = props => {
 
     // This listens for scroll events to handle the sticky nav
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
+        window.addEventListener('scroll', handleScroll, { passive: true })
 
         return () => window.removeEventListener('scroll', handleScroll)
     })
@@ -77,12 +77,14 @@ export const Header: FunctionComponent<Props> = props => {
     return (
         <nav className={navStyle}>
             <div className="container-xl tw-px-0">
-                <Navbar.Brand href="/" onContextMenu={onRightClickLogo} className="mr-0 header tw-flex">
+                <Navbar.Brand href="/" onContextMenu={onRightClickLogo} className="tw-mr-0 header tw-flex">
                     <img
                         src={isDarkNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
+                        width={150}
                         height={26}
-                        className="min-w-150"
-                        aria-label="Sourcegraph - Universal code search"
+                        className="tw-max-w-[150px] tw-w-full"
+                        aria-label="Sourcegraph - Code Intelligence Platform"
+                        alt="Sourcegraph - Code Intelligence Platform"
                         draggable={false}
                     />
                 </Navbar.Brand>
@@ -104,10 +106,7 @@ export const Header: FunctionComponent<Props> = props => {
 
                         <DesktopNav navLinks={navLinks} />
 
-                        <MobileNav
-                            navLinks={navLinks}
-                            isOpen={isOpen}
-                        />
+                        <MobileNav navLinks={navLinks} isOpen={isOpen} />
                     </>
                 )}
             </div>

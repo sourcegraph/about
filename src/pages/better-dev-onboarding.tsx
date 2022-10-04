@@ -58,8 +58,8 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         }
     >
         <ContentSection>
-            <div className="mt-6 tw-brightness-0">
-                <CustomerLogos />
+            <div className="mt-6">
+                <CustomerLogos monochrome={true} />
             </div>
         </ContentSection>
 

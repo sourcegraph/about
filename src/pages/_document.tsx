@@ -12,8 +12,15 @@ export default class MyDocument extends Document {
                     <meta charSet="utf-8" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+                    <meta name="theme-color" content="#ffffff" />
+                    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+                    <meta name="apple-mobile-web-app-title" content="Sourcegraph" />
+                    <link rel="apple-touch-startup-image" href="/sourcegraph/sourcegraph-mark.png" />
 
                     <link rel="icon" type="image/png" href="/favicon.png" />
+                    <link rel="apple-touch-icon" sizes="180x180" href="/sourcegraph/sourcegraph-mark-touch-180.png" />
+
+                    <link rel="manifest" href="/manifest.json" />
 
                     {/* Sourcegraph Chrome Extension */}
                     <link
@@ -76,6 +83,15 @@ export default class MyDocument extends Document {
                         `}
                     </Script>
 
+                    {/* Plausible Analytics (GA Alternative) */}
+                    {/* Plausible recommends this in the head, but Next.js recommends afterInteractive */}
+                    <Script
+                        id="script-plausible"
+                        data-domain="about.sourcegraph.com"
+                        src="https://plausible.io/js/plausible.js"
+                        strategy="afterInteractive"
+                    />
+
                     {/* Triblio "Webpage Personalization" */}
                     {/* Triblio recommends this in the head which we follow with beforeInteractive */}
                     <Script
@@ -95,36 +111,6 @@ export default class MyDocument extends Document {
                         strategy="afterInteractive"
                         defer={true}
                     />
-
-                    {/* Drift */}
-                    {/* Drift recommends this in the head, but Next.js recommends chat bots afterInteractive */}
-                    <Script id="script-drift" type="text/javascript" strategy="afterInteractive" defer={true}>
-                        {`
-                            "use strict";
-                            !function() {
-                            var t = window.driftt = window.drift = window.driftt || [];
-                            if (!t.init) {
-                                if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-                                t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-                                t.factory = function(e) {
-                                return function() {
-                                    var n = Array.prototype.slice.call(arguments);
-                                    return n.unshift(e), t.push(n), t;
-                                };
-                                }, t.methods.forEach(function(e) {
-                                t[e] = t.factory(e);
-                                }), t.load = function(t) {
-                                var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-                                o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-                                var i = document.getElementsByTagName("script")[0];
-                                i.parentNode.insertBefore(o, i);
-                                };
-                            }
-                            }();
-                            drift.SNIPPET_VERSION = '0.3.1';
-                            drift.load('bgv3pp29xsp9');
-                        `}
-                    </Script>
                 </Head>
                 <body>
                     {/* Google Tag Manager (noscript) */}
