@@ -122,8 +122,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
     <div className="tw-grow">
         <div className="md:tw-pr-12">
             <img
-                className={classNames('tw-max-w-[135px] tw-h-[60px] mb-4', { 'tw-brightness-0': bwLogo })}
-                height="60"
+                className={classNames('tw-max-w-[135px] tw-max-h-[60px] mb-4', { 'tw-brightness-0': bwLogo })}
                 src={logo}
                 alt={`${name} logo`}
             />
