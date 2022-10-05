@@ -13,7 +13,7 @@ export const Tooltip: FunctionComponent<Tooltip> = ({ text, position, children }
     const handleHover = ({ target }): void => {
         if (node?.current?.contains(target)) {
             // inside hover
-            return;
+            return
         }
         // outside hover
         setVisibility(false)
