@@ -10,6 +10,7 @@ import {
     ThreeUpText,
     UseChallengeSolutionResults,
 } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const threeUpTextItems = [
     {
@@ -109,10 +110,117 @@ export const CaseStudy: FunctionComponent = () => (
                 <div className="tw-mx-auto tw-pt-5xl">
                     <p className="tw-pt-3xl sm:tw-pt-5xl sm:tw-mt-0 tw-mt-5xl">
                         Every day, millions of developers and DevOps engineers rely on HashiCorp to efficiently
-                        provision, manage, and secure their cloud infrastructure. HashiCorp is a company that has
+                        provision, manage, and secure their cloud infrastructure.{' '}
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://hashicorp.com"
+                            title="HashiCorp"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            HashiCorp
+                        </a>
+                        {' '}is a company that has
                         brought best-in-class developer experience to infrastructure teams through its portfolio of
-                        tools which includes HashiCorp Terraform, Vault, Nomad, Consul, Packer, Boundary, Waypoint, and
-                        Vagrant, which together form a platform for automating cloud infrastructure. Just as HashiCorp
+                        tools which includes HashiCorp{' '}
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://terraform.io"
+                            title="Terraform"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Terraform
+                        </a>
+                        ,{' '}
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://vaultproject.io"
+                            title="Vault"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Vault
+                        </a>
+                        ,{' '}
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://nomadproject.io"
+                            title="Nomad"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Nomad
+                        </a>
+                        ,{' '}
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://consul.io"
+                            title="Consul"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Consul
+                        </a>
+                        ,{' '}
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://packer.io"
+                            title="Packer"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Packer
+                        </a>
+                        ,{' '}
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://boundaryproject.io"
+                            title="Boundary"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Boundary
+                        </a>
+                        ,{' '}
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://waypointproject.io"
+                            title="Waypoint"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Waypoint
+                        </a>
+                        , and{' '}
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://vagrantup.com"
+                            title="Vagrant"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Vagrant
+                        </a>
+                        , which together form a platform for automating cloud infrastructure. Just as HashiCorp
                         prioritizes developer experience for its users and customers, the internal developer experience
                         at HashiCorp enables it to produce industry-shifting tools.
                     </p>
@@ -134,7 +242,19 @@ export const CaseStudy: FunctionComponent = () => (
                         HashiCorp saves time managing dependencies across multiple web properties
                     </h3>
                     <p>
-                        Since the initial release of its first open-source dev tool, Vagrant, HashiCorp has grown its
+                        Since the initial release of its first open-source dev tool,{' '}
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://vagrantup.com"
+                            title="Vagrant"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Vagrant
+                        </a>
+                        , HashiCorp has grown its
                         product suite into a rich, integrated toolkit that covers nearly every area of infrastructure
                         management, from resource provisioning to container orchestration to secrets management. As the
                         product suite has expanded, so have its codebases. Prior to Sourcegraph, it was difficult and
@@ -250,7 +370,20 @@ export const CaseStudy: FunctionComponent = () => (
                 <div className="tw-max-w-4xl tw-mx-auto">
                     <StaffSpotlight
                         customer="HashiCorp"
-                        about="HashiCorp (NASDAQ: HCP) is a provider of open-core software that developers use to manage cloud infrastructure. Based in San Francisco, Calif., the company offers solutions including Terraform, an infrastructure-as-code tool for managing cloud services, and Vault, a tool for securing, storing, and controlling access to tokens, passwords, and API keys. HashiCorp’s tools are downloaded tens of millions of times each year and are broadly adopted by the Global 2000."
+                        about={<>
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://hashicorp.com"
+                                title="HashiCorp"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                HashiCorp
+                            </a>
+                            {' '} (NASDAQ: HCP) is a provider of open-core software that developers use to manage cloud infrastructure. Based in San Francisco, Calif., the company offers solutions including Terraform, an infrastructure-as-code tool for managing cloud services, and Vault, a tool for securing, storing, and controlling access to tokens, passwords, and API keys. HashiCorp’s tools are downloaded tens of millions of times each year and are broadly adopted by the Global 2000.
+                        </>}
                         staff={[
                             {
                                 image: '/case-studies/bryce-kalow.png',

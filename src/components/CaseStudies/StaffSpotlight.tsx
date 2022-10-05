@@ -1,12 +1,14 @@
+import { FunctionComponent, ReactNode } from 'react'
+
 interface Staff {
     image?: string
     name: string
     title: string
 }
 
-export const StaffSpotlight: React.FunctionComponent<{
+export const StaffSpotlight: FunctionComponent<{
     customer: string
-    about: string
+    about: ReactNode
     staff: Staff[]
 }> = ({ customer, about, staff }) => (
     <div>
