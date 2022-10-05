@@ -1,0 +1,10 @@
+.tooltip::after {
+    content: '';
+    border: 10px solid transparent;
+    border-left-color: rgb(105 107 113 / var(--tw-bg-opacity)) !important;
+    display: block;
+    rotate: y 0.35turn;
+    position: relative;
+    left: -193px;
+    top: -56px;
+}

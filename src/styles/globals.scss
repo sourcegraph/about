@@ -110,8 +110,9 @@ $grid-breakpoints: (
 @import 'components/blog/PostsList';
 @import 'components/blog/ReleasePost';
 @import 'components/Header';
-@import 'components/TestimonialCarousel';
 @import 'components/HubSpotForms';
+@import 'components/TestimonialCarousel';
+@import 'components/Tooltip';
 
 /* ==================== Pages ==================== */
 @import 'pages/_case_studies';
