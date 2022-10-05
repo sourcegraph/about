@@ -1,5 +1,5 @@
 ---
-title: 'Git vs Perforce: How the teams at Sourcegraph and Salesforce achieved scalability and performance'
+title: 'Git vs. Perforce: how Salesforce Engineering helped Sourcegraph scale to one of the largest monorepos'
 authors:
   - name: Beyang Liu
     url: https://twitter.com/beyang
@@ -9,7 +9,7 @@ tags: [blog]
 slug: 'git-vs-perforce-salesforce-scalability-and-performance'
 published: true
 heroImage: 
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/soucegraph-salesforce-git-vs-perforce-og.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/soucegraph-salesforce-git-vs-perforce-v2-og.png
 ---
 
 Salesforce uses Perforce to track and manage its code at scale: The massive Salesforce codebase consists of 1.1 million change lists, 2.2 million files just at `HEAD`, and a total history of 1.1 TB. Four additional feature freeze branches are copies of `main`, each with patches applied on top of it.
