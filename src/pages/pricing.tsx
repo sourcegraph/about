@@ -2,12 +2,10 @@ import { FunctionComponent, useState } from 'react'
 
 import classNames from 'classnames'
 import CheckIcon from 'mdi-react/CheckIcon'
-import MinusIcon from 'mdi-react/MinusIcon'
-import PlusIcon from 'mdi-react/PlusIcon'
 import Link from 'next/link'
-import Accordion from 'react-bootstrap/Accordion'
 
 import {
+    Accordion,
     ContentSection,
     CtaSection,
     CustomerLogos,
@@ -72,8 +70,8 @@ const EnterpriseCTA: FunctionComponent<{ btnOnMobile?: boolean }> = ({ btnOnMobi
 
 const faqData = [
     {
-        q: 'How are monthly active users calculated?',
-        a: (
+        title: 'How are monthly active users calculated?',
+        content: (
             <p>
                 A monthly active user is any user who accesses Sourcegraph in a given month. See the{' '}
                 <a
@@ -90,8 +88,8 @@ const faqData = [
         ),
     },
     {
-        q: 'Is there a free trial of the paid plans?',
-        a: (
+        title: 'Is there a free trial of the paid plans?',
+        content: (
             <p>
                 Yes. We offer a free, 30-day trial for our paid plans.{' '}
                 <Link href="https://signup.sourcegraph.com" passHref={true}>
@@ -110,12 +108,12 @@ const faqData = [
         ),
     },
     {
-        q: 'What are executors?',
-        a: 'Executors are required to run Batch Changes server-side and to use code navigation’s auto-indexing functionality. The Business plan includes 2 executors and the Enterprise plan includes 4 executors.',
+        title: 'What are executors?',
+        content: 'Executors are required to run Batch Changes server-side and to use code navigation’s auto-indexing functionality. The Business plan includes 2 executors and the Enterprise plan includes 4 executors.',
     },
     {
-        q: 'Does Sourcegraph offer discounts for educational and non-profit organizations?',
-        a: (
+        title: 'Does Sourcegraph offer discounts for educational and non-profit organizations?',
+        content: (
             <p>
                 Sourcegraph supports the work of educational organizations and nonprofits. Please{' '}
                 <Link href="/contact/request-info?form_submission_source=pricing-enterprise" passHref={true}>
@@ -281,25 +279,7 @@ const PricingPage: FunctionComponent = () => {
                 <h2 className="tw-col-span-full md:tw-col-span-2 tw-mb-md tw-max-w-md">Frequently asked questions</h2>
 
                 <div className="tw-col-span-full md:tw-col-span-3">
-                    <Accordion>
-                        {faqData.map((item, index) => (
-                            <Accordion.Item
-                                key={item.q}
-                                eventKey={item.q}
-                                className="tw-border-t-1 tw-border-gray-200 tw-max-w-2xl tw-mb-sm"
-                            >
-                                <Accordion.Header onClick={() => setActiveKey(activeKey !== index ? index : null)}>
-                                    <div className="tw-flex tw-justify-between tw-items-center">
-                                        <h4 className="tw-text-start tw-mt-sm">{item.q}</h4>
-                                        <span className="tw-text-gray-400 tw-font-normal tw-mt-xs">
-                                            {activeKey === index ? <MinusIcon /> : <PlusIcon />}
-                                        </span>
-                                    </div>
-                                </Accordion.Header>
-                                <Accordion.Body className="tw-max-w-xl tw-mt-xs">{item.a}</Accordion.Body>
-                            </Accordion.Item>
-                        ))}
-                    </Accordion>
+                    <Accordion items={faqData} />
                 </div>
             </ContentSection>
         </Layout>

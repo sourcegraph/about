@@ -1,5 +1,6 @@
 // Common
 export { Alert } from './Alert'
+export { Accordion } from './Accordion'
 export { BackButton } from './BackButton'
 export { Background } from './Background'
 export { Badge } from './Badge'
