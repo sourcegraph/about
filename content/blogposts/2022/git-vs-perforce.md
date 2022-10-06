@@ -33,7 +33,7 @@ We were itching to expand our limited Perforce support to become a truly univers
 Git has become the most common version control system in the last decade, but it’s not the only way. The biggest reasons companies might choose to use Perforce over Git include:
 
 * **Handling large files**: Git works best with smaller files, which source code files usually are. Git LFS (Large File System) does provide support for larger files (Large File System), but it doesn't meet the needs of many organizations that deal with many large asset files (e.g., chunky 3D models and multimedia prevalent in gaming) and like to version them together with source.
-* **Centralization:**Perforce is **centralized**while Git is **decentralized**. With Git, every developer has a complete copy of the codebase locally. This is often an advantage, but not always. It means it’s easier to end up with conflicting copies and it’s hard to know which is the “correct” version. It can also be inefficient for large changes as every change has to be copied many times to each developer’s machine.
+* **Centralization:** Perforce is **centralized** while Git is **decentralized**. With Git, every developer has a complete copy of the codebase locally. This is often an advantage, but not always. It means it’s easier to end up with conflicting copies and it’s hard to know which is the “correct” version. It can also be inefficient for large changes as every change has to be copied many times to each developer’s machine.
 
 The Perforce data model is very different from Git’s. You can find a good [introduction to how Perforce works](https://www.perforce.com/manuals/intro/) on the website.
 
