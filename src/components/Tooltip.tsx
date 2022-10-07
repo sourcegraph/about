@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactNode, useEffect, useRef, useState } from 'react'
+import { FunctionComponent, ReactNode, useState } from 'react'
 
 interface Tooltip {
     text: string
@@ -7,31 +7,18 @@ interface Tooltip {
 }
 
 export const Tooltip: FunctionComponent<Tooltip> = ({ text, position = 'right', children }) => {
-    const node = useRef<HTMLDivElement | null>(null)
     const [isVisible, setVisibility] = useState(false)
 
-    const handleHover = ({ currentTarget }: React.MouseEvent<HTMLButtonElement>): void => {
-        if (node?.current?.contains(currentTarget)) {
-            // inside hover
-            return
-        }
-        // outside hover
-        setVisibility(false)
-    }
-
-    useEffect(() => {
-        document.addEventListener('hover', handleHover)
-        return () => document.removeEventListener('hover', handleHover)
-    }, [])
-
-    // TODO: Dynamic positioning
     return (
         <>
             <div
-                ref={node}
                 onMouseEnter={() => setVisibility(!isVisible)}
                 onMouseLeave={() => setVisibility(!isVisible)}
+                onFocus={() => setVisibility(!isVisible)}
+                onBlur={() => setVisibility(!isVisible)}
                 className="tw-cursor-pointer tw-my-auto tooltip-wrapper"
+                role="button"
+                tabIndex={0}
             >
                 {children}
                 {isVisible && (

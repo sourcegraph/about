@@ -30,7 +30,7 @@
 
 /** Arrow positioning **/
 .tooltip.right {
-    left: calc(25% + var(--tooltip-margin));
+    left: calc(15% + var(--tooltip-margin));
     top: 50% !important;
     transform: translateX(0) translateY(-50%);
 }
@@ -41,10 +41,10 @@
     transform: translateX(0) translateY(-50%);
 }
 .tooltip.top {
-    top: calc(var(--tooltip-margin) * -2.2);
+    bottom: 140%;
 }
 .tooltip.bottom {
-    bottom: calc(var(--tooltip-margin) * -2.2);
+    top: 140%;
 }
 
 /* Arrow border triangles */
