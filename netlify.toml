@@ -82,10 +82,6 @@
 [[redirects]]
   from = "/subprocessors"
   to = "/terms/subprocessors"
-
-[[redirects]]
-  from = "/dpa*"
-  to = "https://security.sourcegraph.com"
 # ========== END LEGAL REDIRECTS ==========
 
 # ========== BLOG REDIRECTS ==========
