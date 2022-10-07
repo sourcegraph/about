@@ -28,7 +28,7 @@
     margin-left: calc(var(--tooltip-arrow-size) * -1);
 }
 
-/** Arrow positioning **/
+/** Content positioning **/
 .tooltip.right {
     left: calc(15% + var(--tooltip-margin));
     top: 50% !important;
