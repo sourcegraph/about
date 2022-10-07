@@ -1,5 +1,8 @@
 ---
 title: 'No Secrets! Quickly find sensitive files in your GitHub repo'
+authors:
+  - name: Justin Dorfman
+    url: https://twitter.com/jdorfman
 publishDate: 2022-05-25T10:00-07:00
 description: 'One thing white hats and black hats alike often do is search Git repositories for secrets that have been accidentally committed. So we created a bookmarklet that can reveal what secrets might be lurking in any given GitHub repository.'
 tags: [blog]
@@ -9,7 +12,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-no-secret
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-no-secrets.jpg
 ---
 
-Open source supply chains and code security has been on my mind lately, and one thing white hats and black hats alike often do is search Git repositories for secrets that have been accidentally committed.  While playing with the Sourcegrah [search console](https://sourcegraph.com/search/console) to learn about the different filters/types/options, and to sharpen up on my regex I thought why not create a bookmarklet that can reveal what secrets might be lurking in any given GitHub repository?
+Open source supply chains and code security has been on my mind lately, and one thing white hats and black hats alike often do is search Git repositories for secrets that have been accidentally committed.  While playing with the Sourcegraph [search console](https://sourcegraph.com/search/console) to learn about the different filters/types/options, and to sharpen up on my regex I thought why not create a bookmarklet that can reveal what secrets might be lurking in any given GitHub repository?
 
 ## Secrets, No More
 
@@ -48,3 +51,12 @@ Last but not least, you can help make No Secrets! better by [contributing to the
 ---
 
 _Thanks to the following people for helping with this post: Beyang Liu, André Eleuterio, and Nick Moore._
+
+#### About the author
+
+Justin Dorfman is Sourcegraph’s Open Source Program Manager and is responsible for
+fostering the adoption of code intelligence in the open source community. You can chat with Justin on Twitter [@jdorfman](https://twitter.com/jdorfman) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)
+
+### More posts like this
+
+- [Interact with Sourcegraph from the command line faster with Fig](https://about.sourcegraph.com/blog/why-fig-autocomplete-is-awesome)

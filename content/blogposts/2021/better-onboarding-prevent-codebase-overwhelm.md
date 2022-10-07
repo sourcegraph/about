@@ -77,9 +77,9 @@ As Marek notes, “Sometimes when you’re reaching for a particular tool or lib
 
 Introduce new hires to the tools and processes that are specific to the team. For example, demonstrate how to set up the team’s development environment, and introduce new hires to what needs to happen to ship that first bug fix or feature enhancement. Such info may not reside in a department-wide resource, even if it should. After all, the more information that is codified for all team members to see, the better it is for the entire team.
 
-<div className="alert alert-primary" role="alert" style={{maxWidth: '650px', textAlign: 'center', margin: 'auto auto 20px auto'}}>
-Read about how robust, universal code search<a href = "/case-studies/convoy-improved-on-boarding"> enables developers at Convoy to onboard faster by quickly getting to know the repository structure, tracking down where code lives, and self-servicing during investigations</a>.
-</div>
+<Alert>
+<span>Read about how robust, universal code search<a href = "/case-studies/convoy-improved-on-boarding"> enables developers at Convoy to onboard faster by quickly getting to know the repository structure, tracking down where code lives, and self-servicing during investigations</a>.</span>
+</Alert>
 
 ## 7. Keep the bigger picture in sight
 
@@ -87,9 +87,9 @@ When a new developer comes on board, they’ll go through some of the same ritua
 
 All of those steps are important table-setters to jumpstart a new hire in the organization. But onboarding can extend beyond these basics through a multi-tiered process that provides a layered, holistic view of the business. By providing such a holistic view, new hires can better understand the big picture of what the company does and how the various organizations interact with each other to serve the needs and goals of the business. This way a new hire understands their role as a piece of the greater puzzle that it is the business.
 
-<div className="alert alert-primary" role="alert" style={{maxWidth: '650px', textAlign: 'center', margin: 'auto auto 20px auto'}}>
-Keep reading: <a href = "/blog/ex-googler-guide-dev-tools">An ex-Googler’s guide to dev tools</a>
-</div>
+<Alert>
+<span>Keep reading: <a href = "/blog/ex-googler-guide-dev-tools">An ex-Googler’s guide to dev tools</a></span>
+</Alert>
 
 For example, Limor suggests having department heads give recurring presentations to new hires about how each department operates. This was a tactic employed during her time at Digital Ocean.
 
@@ -118,6 +118,10 @@ Experience level also affects how new hires onboard. Junior engineers generally 
 There's a lot more to successful developer onboarding than setting up a local dev environment. The value of cohesive onboarding practices becomes especially clear as an organization scales up its developer team, enabling your developers to get up to speed quickly while building confidence and knowledge around your codebase.
 
 _This post was originally published in April 2020. It has been revised and updated as of March 9, 2022._
+
+## About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._
 
 ## More posts like this
 

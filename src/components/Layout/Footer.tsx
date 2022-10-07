@@ -1,201 +1,153 @@
 import { FunctionComponent } from 'react'
 
-import GithubIcon from 'mdi-react/GithubIcon'
-import LinkedinIcon from 'mdi-react/LinkedinIcon'
-import SpotifyIcon from 'mdi-react/SpotifyIcon'
-import TwitchIcon from 'mdi-react/TwitchIcon'
-import TwitterIcon from 'mdi-react/TwitterIcon'
-import YouTubeIcon from 'mdi-react/YoutubeIcon'
+import classNames from 'classnames'
 import Link from 'next/link'
+
+import { Heading } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
+
+import { footerLinks, socialLinks, postscriptLinks } from './navLinks'
 
 interface Props {
     minimal?: boolean
     className?: string
 }
 
-const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
-    <footer className={`${minimal ? '' : 'pt-6 pb-2'} ${className || ''}`}>
-        <div className="container-xl">
-            {!minimal && (
-                <>
-                    <div className="row footer__nav-sections">
-                        <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3 order-md-2">
-                            <h3 className="footer__nav-header">About Sourcegraph</h3>
-                            <ul className="nav flex-column">
-                                <li className="nav-item">
-                                    <Link href="/case-studies">Case studies</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link href="/use-cases">Use cases</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link href="/pricing">Pricing</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link href="/handouts/Sourcegraph-Overview.pdf">Sourcegraph overview (PDF)</Link>
-                                </li>
-                            </ul>
-                        </div>
+const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
+    const isDarkNav = className?.includes('navbar-dark')
 
-                        <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3 order-md-3">
-                            <h3 className="footer__nav-header">Resources</h3>
-                            <ul className="nav flex-column">
-                                <li className="nav-item">
-                                    <Link href="/blog">Blog</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md">
-                                        Changelog
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="https://docs.sourcegraph.com">Documentation</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="https://learn.sourcegraph.com">Learn</a>
-                                </li>
-                                <li className="nav-item">
-                                    <Link href="/podcast">Podcast</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link href="/dev-tools-quiz">Dev tools quiz</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link href="/community">Community</Link>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3 order-md-4">
-                            <h3 className="footer__nav-header">Company</h3>
-                            <ul className="nav flex-column">
-                                <li className="nav-item">
-                                    <Link href="/about">About</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link href="/jobs">Careers - We're Hiring!</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link href="/contact">Contact</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="https://handbook.sourcegraph.com">Handbook</a>
-                                </li>
-                                <li className="nav-item">
-                                    <Link href="/news">News</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="https://handbook.sourcegraph.com/company/strategy">Sourcegraph strategy</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="col-12 col-lg-3 mb-5 order-md-1">
+    return (
+        <footer
+            className={classNames(className, { 'tw-pt-16 tw-pb-2': !minimal, 'tw-bg-black tw-text-white': isDarkNav })}
+        >
+            <div className="tw-max-w-screen-xl tw-mx-auto tw-px-4">
+                {!minimal && (
+                    <div className="tw-mb-8 tw-flex tw-flex-col-reverse sm:tw-grid sm:tw-grid-cols-12">
+                        <div className="tw-col-span-12 lg:tw-col-span-5 tw-mt-xl sm:tw-mt-0 sm:tw-mb-sm lg:tw-mb-0">
                             <Link href="/" passHref={true}>
-                                <a href="#none" className="row footer__logo ml-1 ">
-                                    <span role="img" aria-label="Sourcegraph - Universal code search">
-                                        {' '}
-                                    </span>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    title="Sourcegraph - Universal code search"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.footer}
+                                    data-button-type="cta"
+                                >
+                                    <img
+                                        src={isDarkNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
+                                        alt="Sourcegraph - Code Intelligence Platform"
+                                        className="tw-max-w-[264px] tw-w-full tw-h-auto"
+                                        draggable={false}
+                                        width={264}
+                                        height={48}
+                                    />
                                 </a>
                             </Link>
 
-                            <ul className="nav footer__social mt-1">
-                                <li className="nav-item">
-                                    <a
-                                        href="https://github.com/sourcegraph"
-                                        target="_blank"
-                                        rel="nofollow noreferrer"
-                                        aria-label="GitHub"
-                                    >
-                                        <GithubIcon />
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a
-                                        href="https://twitter.com/sourcegraph"
-                                        target="_blank"
-                                        rel="nofollow noreferrer"
-                                        aria-label="Twitter"
-                                    >
-                                        <TwitterIcon />
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a
-                                        href="https://www.linkedin.com/company/4803356/"
-                                        target="_blank"
-                                        rel="nofollow noreferrer"
-                                        aria-label="LinkedIn"
-                                    >
-                                        <LinkedinIcon />
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a
-                                        href="https://www.youtube.com/c/Sourcegraph/featured"
-                                        target="_blank"
-                                        rel="nofollow noreferrer"
-                                        aria-label="YouTube"
-                                    >
-                                        <YouTubeIcon />
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a
-                                        href="https://www.twitch.tv/sourcegraph"
-                                        target="_blank"
-                                        rel="nofollow noreferrer"
-                                        aria-label="Twitch"
-                                    >
-                                        <TwitchIcon />
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a
-                                        href="https://open.spotify.com/user/p3ntuomfda8r7czdbsgy36ogk?si=8095204aefc24587"
-                                        target="_blank"
-                                        rel="nofollow noreferrer"
-                                        aria-label="Spotify"
-                                    >
-                                        <SpotifyIcon />
-                                    </a>
-                                </li>
+                            <ul className="tw-mx-0 tw-mt-3 tw-list-none tw-flex">
+                                {socialLinks.items.map(item => (
+                                    <li className="tw-mr-5" key={item.title}>
+                                        <a
+                                            href={item.href}
+                                            target="_blank"
+                                            rel="nofollow noreferrer"
+                                            aria-label={item.title}
+                                            title={item.title}
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.footer}
+                                            data-button-type="cta"
+                                            className={classNames('tw-mr-3', {
+                                                'tw-text-gray-300 hover:tw-text-white': isDarkNav,
+                                                'tw-text-gray-400 hover:tw-text-black': !isDarkNav,
+                                            })}
+                                        >
+                                            {item.icon}
+                                        </a>
+                                    </li>
+                                ))}
                             </ul>
                         </div>
-                    </div>
-                </>
-            )}
 
-            <div
-                className={`footer__postscript d-flex justify-content-between ${minimal ? 'py-3' : 'pt-4 pb-2'} small`}
-            >
-                <ul className="nav">
-                    <li className="nav-item text-muted mr-3">&copy; {new Date().getFullYear()} Sourcegraph</li>
-                    <li className="nav-item">
-                        <Link href="/terms" passHref={true}>
-                            <a href="#none" className="nav-link">
-                                Terms
-                            </a>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link href="/terms/security" passHref={true}>
-                            <a href="#none" className="nav-link">
-                                Security
-                            </a>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link href="/terms/privacy" passHref={true}>
-                            <a href="#none" className="nav-link">
-                                Privacy
-                            </a>
-                        </Link>
-                    </li>
-                </ul>
+                        <div className="tw-col-span-12 lg:tw-col-span-7 sm:tw-grid sm:tw-grid-cols-12">
+                            {footerLinks.map(section => (
+                                <div className="tw-mb-md sm:tw-mb-0 sm:tw-col-span-4" key={section.section}>
+                                    <Heading size="h5" as="h2" className="tw-mb-xs">
+                                        {section.section}
+                                    </Heading>
+                                    <ul className="tw-ml-0 tw-list-none">
+                                        {section.items.map(item => (
+                                            <li className="tw-mb-xs tw-text-sm" key={item.title}>
+                                                {item.href.includes('http') ? (
+                                                    <a
+                                                        href={item.href}
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                        title={item.title}
+                                                        data-button-style={buttonStyle.text}
+                                                        data-button-location={buttonLocation.footer}
+                                                        data-button-type="cta"
+                                                        className={classNames('tw-font-medium', {
+                                                            'tw-text-gray-300': isDarkNav,
+                                                            'tw-text-gray-500': !isDarkNav,
+                                                        })}
+                                                    >
+                                                        {item.title}
+                                                    </a>
+                                                ) : (
+                                                    <Link href={item.href} passHref={true}>
+                                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                                        <a
+                                                            title={item.title}
+                                                            data-button-style={buttonStyle.text}
+                                                            data-button-location={buttonLocation.footer}
+                                                            data-button-type="cta"
+                                                            className={classNames('tw-font-medium', {
+                                                                'tw-text-gray-300': isDarkNav,
+                                                                'tw-text-gray-500': !isDarkNav,
+                                                            })}
+                                                        >
+                                                            {item.title}
+                                                        </a>
+                                                    </Link>
+                                                )}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
+                <div className={classNames('tw-text-sm', { 'tw-py-4': minimal, 'tw-pt-sm tw-pb-2': !minimal })}>
+                    <ul className="tw-ml-0 tw-list-none">
+                        <li className="tw-text-gray-500 tw-mr-lg sm:tw-inline">
+                            &copy; {new Date().getFullYear()} Sourcegraph, Inc.
+                        </li>
+
+                        {postscriptLinks.items.map(item => (
+                            <li key={item.title} className="tw-inline-block tw-mt-xxs sm:tw-mt-0">
+                                <Link key={item.title} href={item.href} passHref={true}>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                    <a
+                                        className={classNames('tw-p-0 tw-mr-5', {
+                                            'tw-text-gray-300': isDarkNav,
+                                            'tw-text-gray-500': !isDarkNav,
+                                        })}
+                                        title={item.title}
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.footer}
+                                        data-button-type="cta"
+                                    >
+                                        {item.title}
+                                    </a>
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
-        </div>
-    </footer>
-)
+        </footer>
+    )
+}
 
 export default Footer

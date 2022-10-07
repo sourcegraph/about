@@ -67,7 +67,7 @@ What are some example "interesting" calls?
 
 * Network: `net.Dial, net/http.Get, (*net/http.Client).Get`
 * Higher level:
-  ```
+  ```text
   database/sql.OpenDB
   google.golang.org/grpc.Dial
   github.com/go-redis/redis.NewClient
@@ -79,7 +79,7 @@ What are some example "interesting" calls?
 
 Who (which services) are we calling?
 
-```
+```bash
 http.Get("https:#/myservice.example.com/path/to/resource")
 http.Get(myserviceURL)
 url #: os.Getenv("MYSERVICE_URL")
@@ -121,7 +121,7 @@ and you can disregard all outgoing paths, as well. Then you need to mark other f
 
 Source diving... He did a quick search of GoDoc for "call graph" and found the following packages:
 
-```
+```text
 golang.org/x/tools/go/callgraph
 golang.org/x/tools/go/callgraph/cha
 golang.org/x/tools/go/callgraph/rta
@@ -161,7 +161,7 @@ This section is a quick primer on static analysis packages in the Go compiler an
 
 Relevant packages:
 
-```
+```text
 go/
   token
   ast
@@ -264,7 +264,7 @@ Rebuild from the ground up:
 
 1. Swap out Rapid Type Analysis (RTA) for Andersen's pointer analysis
 2. Simple driver:
-   ```
+   ```text
    packages.Load
    ssautil.AllPackages and (*ssa.Program).Build)
    pointer.Analyze
@@ -336,3 +336,7 @@ If you're going to do static analysis, consider the following:
 * Some documentation in the relevant packges is great. Other documentation leaves much to be desired.
 * Start simple
 * Talk to the community. He regrets not doing this sooner as it would've saved him time.
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

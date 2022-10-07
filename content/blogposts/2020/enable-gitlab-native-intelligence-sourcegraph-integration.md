@@ -13,9 +13,9 @@ heroImage: /blog/gitlab-integration-preview-dark.png
 published: true
 ---
 
-<BlockquoteWithBorder
-  quote='Sourcegraph has the best find-definition, find-references, and intelligent code navigation capability on the planet - and they brought it to GitLab.'
-  author='Sid Sijbrandij, GitLab CEO'
+<Blockquote
+  quote="Sourcegraph has the best find-definition, find-references, and intelligent code navigation capability on the planet - and they brought it to GitLab."
+  author="Sid Sijbrandij, GitLab CEO"
 />
 
 With the [GitLab native code intelligence integration from Sourcegraph](/blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence), you can bring IDE-like features such as hover tooltips and go to definition to every GitLab code view. The below screencasts show you how to enable the Sourcegraph integration for both GitLab CE/EE and GitLab.com.
@@ -42,6 +42,6 @@ This screencast (with accompanying audio) shows how to enable code intelligence 
   <br/>
 </div>
 
-<div className="alert alert-info text-center mx-auto" style={{width:'40rem'}}>
+<Alert type="info">
   See the <a href="https://docs.gitlab.com/ee/integration/sourcegraph.html">GitLab Sourcegraph integration docs</a> for more information.
-</div>
+</Alert>

@@ -1,52 +1,48 @@
 import { FunctionComponent } from 'react'
 
-import CheckIcon from 'mdi-react/CheckIcon'
-import QuestionMarkCircleOutlineIcon from 'mdi-react/QuestionMarkCircleOutlineIcon'
+import classNames from 'classnames'
+import InformationCircleOutlineIcon from 'mdi-react/InformationCircleOutlineIcon'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
 
-import { FeatureInfo } from './interfaces'
+import { breakpoints } from '@data'
+import { useWindowWidth } from '@hooks'
 
+import { FeatureInfo } from './data'
 interface Props {
-    info: FeatureInfo
-    value: boolean
-    tag: 'li'
+    feature: FeatureInfo
+    tag: 'li' | 'h5'
     className?: string
 }
 
-export const PricingPlanFeature: FunctionComponent<Props> = ({
-    info: { label, description },
-    value,
-    tag: Tag = 'li',
-    className = '',
-}) =>
-    value ? (
-        <Tag
-            className={`pricing-plan-feature ${className} d-flex justify-content-between ${
-                value ? 'pricing-plan-feature__value-true' : 'pricing-plan-feature__value-false'
-            }`}
-        >
-            <div>
-                <CheckIcon
-                    className={`icon-inline ${
-                        value ? 'pricing-plan-feature__icon-true' : 'pricing-plan-feature__icon-false'
-                    }`}
-                />{' '}
-                {label}
+export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag = 'li', className }) => {
+    const windowWidth = useWindowWidth()
+    const isMdOrDown = windowWidth < breakpoints.lg
+
+    return (
+        <Tag className={classNames(Tag === 'li' && 'tw-text-sm')}>
+            <div className="tw-flex tw-my-xxs">
+                <div className={classNames('tw-text-lg', className)}>{feature.label}</div>
+
+                {feature.description && (
+                    <OverlayTrigger
+                        placement="auto"
+                        flip={true}
+                        transition={false}
+                        overlay={
+                            <Tooltip id="tooltip" placement="right" className="tw-shadow-lg tw-opacity-100">
+                                {feature.description}
+                            </Tooltip>
+                        }
+                    >
+                        {({ ref, ...triggerHandler }) => (
+                            <span {...triggerHandler} ref={ref} className="tw-ml-xxs tw-my-auto tw-text-gray-300">
+                                <InformationCircleOutlineIcon size={isMdOrDown ? 25 : 19} />
+                            </span>
+                        )}
+                    </OverlayTrigger>
+                )}
             </div>
-            {description && (
-                <OverlayTrigger
-                    placement="auto"
-                    flip={true}
-                    transition={false}
-                    overlay={<Tooltip id="tooltip">{description}</Tooltip>}
-                >
-                    {({ ref, ...triggerHandler }) => (
-                        <span {...triggerHandler} ref={ref} className="ml-2 pricing-plan-feature__help">
-                            <QuestionMarkCircleOutlineIcon />
-                        </span>
-                    )}
-                </OverlayTrigger>
-            )}
         </Tag>
-    ) : null
+    )
+}

@@ -9,7 +9,7 @@ tags: [
 ]
 slug: part-1-how-sourcegraph-scales-with-the-language-server-protocol
 description: 'Sourcegraph lets you view any line of code in your web browser with all the navigation features of an IDE and more. That includes both classic abilities — like jump-to-definition, find-references, tooltips, and symbol search — and novel superpowers like cross-repository jump-to-definition and global usage examples. The sum of these parts is a quick, frictionless way to discuss or make sense of code.'
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 
@@ -101,5 +101,9 @@ We believe that LSP will bring a new wave of Code-Intelligence-powered editor pl
 
 Hopefully, I've given you a better idea of the technical problems we’re solving at Sourcegraph and why they matter to the greater software community. In subsequent posts, I’ll dive into extensions we’ve made to LSP to enable novel Code Intelligence abilities (cross-dependency jump-to-def and global usage examples), and I’ll describe implementation details of language servers that we think will be broadly useful and interesting. If you are like us and find this interesting, [start contributing](https://github.com/Microsoft/language-server-protocol) and [sign up for Sourcegraph](https://sourcegraph.com/).
 
-## Part 2: How Sourcegraph scales with the Language Server Protocol
+### Part 2: How Sourcegraph scales with the Language Server Protocol
 [Making Code Intelligence “just work”](https://about.sourcegraph.com/blog/part-2-how-sourcegraph-scales-with-the-language-server-protocol)
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

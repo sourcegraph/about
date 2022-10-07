@@ -1,6 +1,6 @@
 ---
 layout: markdown
-title: Sourcegraph Subprocessors
+title: Subprocessors
 description: This page lists the subsprocessors that Sourcegraph may use
 ---
 
@@ -14,6 +14,7 @@ Sourcegraph will update this page when engaging a new Sub-processor, and if you 
 
 Sourcegraph engages Sub-processors to perform the functions described in the table below. For Sourcegraph’s On Prem product, personal data will only be processed by Sub-processors to the extent such data is shared by Customer with Sourcegraph for the purpose of delivering support services.
 
+<TableWrapper>
 | Third-party Subprocessor | Location       | Service Provided                                                                                                                                                   | Applicable product                                 |
 | ------------------------ | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------- |
 | Amazon Web Services      | USA            | Provides cloud hosting for Sourcegraph Cloud services                                                                                                              | Sourcegraph Cloud<br/>Managed Instance             |
@@ -30,10 +31,10 @@ Sourcegraph engages Sub-processors to perform the functions described in the tab
 | Slack Technologies       | USA            | Processes customer support communication                                                                                                                           | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
 | Zapier                   | USA            | Processes information needed to enable integrations<br/> between Sourcegraph and a third-party product                                                             | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
 | Zendesk                  | USA            | Processes customer support communication                                                                                                                           | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
+</TableWrapper>
 
 <h2 id='sign-up'>Sign Up</h2>
 
 Complete this form to be notified of changes to our sub-processors.
 
-<EmbeddedHubSpot portalId='2762526' formId='08e6c442-0e7c-4892-a262-76dae55ab497' targetId='#sign-up-form' />
-<div id="sign-up-form"></div>
+<HubSpotForm masterFormName="contactMulti" inlineMessage="Thank you for your interest in Sourcegraph. You will be notified of any changes to our sub-processors." />

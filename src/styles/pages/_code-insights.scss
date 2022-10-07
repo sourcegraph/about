@@ -1,63 +1,4 @@
 .code-insights-page {
-    &__hero-and-header {
-        min-height: 587px;
-        position: relative;
-
-        .bg {
-            z-index: -1;
-        }
-
-        .bg,
-        .bg::before,
-        .bg::after {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        .bg {
-            &::before,
-            &::after {
-                content: '';
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            &::before {
-                background-image: url('/code-insights/code-insights-page-bg.svg'),
-                    // Fallback while the SVGs are loading
-                    radial-gradient(ellipse at bottom left, rgba($green-mist, 0.5), transparent);
-                background-position: top left;
-                @media only screen and (max-width: 990px) {
-                    transform: rotate(180deg);
-                    background-position: bottom left;
-                }
-            }
-
-            &::after {
-                background-image: url('/code-insights/code-insights-illustration.svg'),
-                    // Fallback while the SVGs are loading
-                    radial-gradient(ellipse at bottom right, rgba($blue-mist, 0.5), transparent);
-                background-position: bottom right;
-                @media only screen and (max-width: 990px) {
-                    background-size: 150%;
-                }
-            }
-        }
-
-        .container {
-            display: flex;
-            align-items: center;
-            height: 515px;
-        }
-
-        h4 {
-            font-weight: 400;
-        }
-    }
-
     .video-container {
         @media only screen and (max-width: 768px) {
             order: 1;
@@ -71,11 +12,6 @@
             padding: 1rem;
             background-color: $white;
         }
-    }
-
-    /* Bootstrap overrides */
-    .tab-header {
-        background-color: transparent !important;
     }
 
     .btn-link,
@@ -120,7 +56,6 @@
             font-size: 1.5rem;
             line-height: 1.4rem;
             cursor: pointer;
-            color: $space-black;
             display: block;
             margin: 10px 0 10px 10px;
             font-size: 18px;
@@ -128,7 +63,7 @@
             width: 100%;
 
             &.active {
-                font-weight: 600;
+                font-weight: 600 !important;
                 display: block;
 
                 @media only screen and (max-width: 992px) {
@@ -141,7 +76,6 @@
                 padding: 0;
                 margin: 20px 0;
                 display: none;
-                font-size: 34px;
                 line-height: 2.5rem;
                 width: auto;
             }

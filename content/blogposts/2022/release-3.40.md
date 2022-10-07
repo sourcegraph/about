@@ -25,11 +25,13 @@ changelogItems:
     category: Admin
 ---
 
-<div className="alert alert-primary" role="alert" style={{maxWidth:'650px', alignItems:'center', margin: 'auto auto 20px auto'}}>
-      <strong>Update as of May 31:</strong> Patch 3.40.1 has been released, which fixes the issue below. We recommend GitLab users upgrade to this patch. In the unlikely event you still see GitLab repositories missing, you can log out of Sourcegraph via GitLab and then log back in to refresh your OAuth token.
-      <br/>
-      <strong>May 24:</strong> GitLab 15.0 no longer supports OAuth tokens that don’t expire, which can cause authorization between Sourcegraph and GitLab to fail. We are working to fix compatibility with GitLab 15.0 (and support expiring OAuth tokens) in an upcoming patch.
-</div>
+<Alert>
+  <strong>Update as of May 31:</strong> Patch 3.40.1 has been released, which fixes the issue below. We recommend GitLab users upgrade to this patch. In the unlikely event you still see GitLab repositories missing, you can log out of Sourcegraph via GitLab and then log back in to refresh your OAuth token.
+</Alert>
+
+<Alert>
+  <strong>Update as of May 24:</strong> GitLab 15.0 no longer supports OAuth tokens that don’t expire, which can cause authorization between Sourcegraph and GitLab to fail. We are working to fix compatibility with GitLab 15.0 (and support expiring OAuth tokens) in an upcoming patch.
+</Alert>
 
 Sourcegraph 3.40 is now available! Here are some highlights from this release:
 

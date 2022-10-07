@@ -34,11 +34,16 @@ Our team has been growing quickly, expanding from just a single product manager 
 
 When we held our next product team sync, the whole team joined sans audio. We would all depend only on captions to follow the conversation.
 
-<blockquote style={{borderLeft: '2px solid #F96216'}}>
-<p><strong>A quick caution</strong></p>
-<p>Most exercises to simulate the experience of living with a disability aren’t effective—or even a good idea—because they can never truly simulate what it’s like to live day-by-day, and can leave folks with a mistaken idea of the experience.</p>
-<p>But this idea was compelling because the unique nature of the hacky setup I’m using means that it’s not about <em>ability</em>, it’s about <em>technology</em>. It wasn’t about learning what it’s like to do video calls with a hearing problem: it was about learning what it’s like to rely on captions for video calls.</p>
-</blockquote>
+<Blockquote
+  headline="A quick caution"
+  quote={
+    <>
+      <p className="tw-inline">Most exercises to simulate the experience of living with a disability aren’t effective—or even a good idea—because they can never truly simulate what it’s like to live day-by-day, and can leave folks with a mistaken idea of the experience.</p>
+      <br /><br />
+      <p className="tw-inline">But this idea was compelling because the unique nature of the hacky setup I’m using means that it’s not about <em>ability</em>, it’s about <em>technology</em>. It wasn’t about learning what it’s like to do video calls with a hearing problem: it was about learning what it’s like to rely on captions for video calls.</p>
+    </>
+  }
+/>
 
 ## What we did
 
@@ -54,7 +59,10 @@ The team immediately spotted the tradeoffs: while Meet’s captions were built i
 
 But fundamentally, it _worked_. Everyone was able to participate in the call, and we had our sync.
 
-<img src="/blog/silent-team-call.jpg" alt="The team on the video call" />
+<Figure 
+  src="/blog/silent-team-call.jpg" 
+  alt="The team on the video call" 
+/>
 
 ## Takeaways
 
@@ -76,7 +84,7 @@ Even sentence structure has changed: others have started to say names at the beg
 
 Most compelling of all, many members of the team are now using captions on calls themselves—not because they need them, but to keep an eye on how what they’re saying is being received by others on the call who might be relying on them.
 
-<blockquote style={{borderLeft: '2px solid #00B4F2'}}>
+<blockquote  className="border-left border-3 border-sky-blue px-4">
 <p>Another member of our team shared a wonderful story of their own after reading this article:</p>
 <p><em>Incidentally, we did something almost exactly like this on my previous team! I hired an excellent engineer who was hard of hearing, and we were using Meet for captioning. After some hiccups and realizing that we had left that engineer behind a couple of times, we all decided to turn on captioning and to pay attention to it.</em></p>
 <p><em>It was great for giving us an idea of what our teammate was experiencing, but the most important thing was that it gave us a chance to correct ourselves when we “misspoke”—when the captioning said something other than what we'd intended. This way, we avoided putting the burden of deciphering onto the engineer who relied on the captions.</em></p>

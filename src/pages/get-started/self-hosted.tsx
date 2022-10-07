@@ -2,85 +2,64 @@ import { FunctionComponent } from 'react'
 
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
-import { Layout, Install, BackButton } from '@components'
+import { Layout, Install, ContentSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
-import { useQueryString } from '@hooks'
 
-import { BestForTitle, MostPopularBadge } from '.'
+export const SelfHostedPage: FunctionComponent = () => (
+    <Layout
+        meta={{
+            title: 'Get Started with Sourcegraph Self-Hosted',
+            description:
+                'Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.',
+        }}
+        hero={
+            <div className="tw-py-md tw-px-6 xl:tw-px-0 tw-max-w-screen-xl tw-mx-auto">
+                <h1 className="tw-mb-3">
+                    <strong>Get started</strong>
+                </h1>
+                <p className="tw-text-lg">From GE to Uber, the world's best developers use Sourcegraph every day.</p>
+            </div>
+        }
+    >
+        <ContentSection parentClassName="sg-bg-gradient-saturn">
+            <div className="lg:tw-grid lg:tw-grid-cols-12">
+                <div className="lg:tw-col-span-6 lg:tw-pr-14">
+                    <h2 className="tw-mb-sm">Sourcegraph Self-Hosted</h2>
 
-import styles from './getStarted.module.scss'
+                    <p className="tw-text-lg">
+                        Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get
+                        started for free.
+                    </p>
 
-export const SelfHostedPage: FunctionComponent = () => {
-    const routerHook = useQueryString()
+                    <div className="tw-my-sm">
+                        <h6>Designed For</h6>
+                        <p className="tw-text-lg">Teams and enterprises</p>
+                    </div>
 
-    return (
-        <Layout
-            meta={{
-                title: 'Get Started with Sourcegraph Self-Hosted',
-                description:
-                    'Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.',
-            }}
-            hero={
-                <div className="container-xl py-5">
-                    <h1 className="display-1 mb-2">
-                        <strong>What's best for you?</strong>
-                    </h1>
-                    <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
+                    <p className="tw-text-lg">
+                        Collaborate with your team on any code host (including private hosts) and access advanced
+                        security functionality.
+                    </p>
                 </div>
-            }
-            heroAndHeaderClassName={styles.hero}
-            hideGetStartedButton={true}
-        >
-            <div className={`${styles.root} bg-gradient-blue-violet-mist py-5`}>
-                <div className="row container-xl mx-auto py-5">
-                    <div className="col-lg-6 pr-lg-7">
-                        <div>
-                            <BackButton
-                                href={`/get-started${routerHook.queryString ? `?${routerHook.queryString}` : ''}`}
-                                text="Deployment Options"
-                            />
 
-                            <h1 className="display-2 font-weight-bolder mb-2">
-                                Sourcegraph <br />
-                                Self-Hosted
-                            </h1>
-
-                            <MostPopularBadge />
-
-                            <p className="mt-4">
-                                Deploy and control Sourcegraph in your own infrastructure, or use Docker to install
-                                locally. Get started for free.
-                            </p>
-
-                            <BestForTitle />
-                            <p>Teams and enterprises</p>
-
-                            <p>
-                                Collaborate with your team on any code host (including private hosts) and access
-                                advanced security functionality.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-6 py-4 py-lg-0">
+                <div className="lg:tw-col-span-6 tw-mt-16 lg:tw-mt-0">
+                    <div className="tw-mb-8">
                         <Install />
-
-                        <div className="d-flex flex-column align-items-start">
-                            <a
-                                className="btn p-0 mt-5 text-primary"
-                                data-button-style={buttonStyle.textWithArrow}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                                href="https://info.sourcegraph.com/talk-to-a-developer"
-                            >
-                                Talk to an engineer <ArrowRightIcon />
-                            </a>
-                        </div>
                     </div>
+
+                    <a
+                        title="Talk to an engineer"
+                        data-button-style={buttonStyle.textWithArrow}
+                        data-button-location={buttonLocation.hero}
+                        data-button-type="cta"
+                        href="https://info.sourcegraph.com/talk-to-a-developer"
+                    >
+                        Talk to an engineer <ArrowRightIcon className="tw-inline" />
+                    </a>
                 </div>
             </div>
-        </Layout>
-    )
-}
+        </ContentSection>
+    </Layout>
+)
 
 export default SelfHostedPage

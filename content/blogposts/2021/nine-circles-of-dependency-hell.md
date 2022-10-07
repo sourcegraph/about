@@ -32,10 +32,11 @@ Here wander those who will chase any dependency without vetting it. It might not
 
 Package lust is not without punishment. When the author of the left-pad JavaScript library decided to remove the package from npm, thousands of projects broke, including large ones like Node and Babel. What if the author had uploaded malicious code instead? Sometimes a little duplication is better than a bit of dependency.
 
-<figure>
-  <img src="https://sourcegraphstatic.com/blog/nine-circles-dependencies/left-pad-library.png" alt="All 16 lines of the left-pad library (comments removed) from GitHub"/>
-  <figcaption>All 16 lines of the left-pad library (comments removed) from GitHub.</figcaption>
-</figure>
+<Figure 
+  src="https://sourcegraphstatic.com/blog/nine-circles-dependencies/left-pad-library.png"
+  alt="All 16 lines of the left-pad library (comments removed) from GitHub"
+  caption="All 16 lines of the left-pad library (comments removed) from GitHub."
+/>
 
 ## The Third Circle: _Gluttony_. Bloated bundles. Too many dependencies.
 
@@ -57,13 +58,13 @@ There’s a simple way for most language-level package managers to reference a s
 
 For npm, you can simply do
 
-```
+```shell
 npm install git+https://github.com/organization/repository.git#commit
 ```
 
 For Go modules, you can do
 
-```
+```go
 go get github.com/organization/repository@commit
 ```
 
@@ -80,10 +81,11 @@ Usually, monkey patching is a terrible idea. First, it makes code difficult to u
 In theory, it should follow major.minor.patch. In practice, the developer used a pseudo-random number generator.
 Version is open to interpretation—a popular Python package, html5lib, previously versioned its packages asymptotically: 0.99, 0.999, 0.9999, and so on.
 
-<figure>
-  <img src="https://sourcegraphstatic.com/blog/nine-circles-dependencies/screenshot-htmlib5-on-py-pi.png" alt="A screenshot of htmlib5 on PyPi"/>
-  <figcaption>A screenshot of <a href = "https://pypi.org/project/html5lib/">htmlib5 on PyPi</a>, which now uses a more sane versioning scheme.</figcaption>
-</figure>
+<Figure 
+  src="https://sourcegraphstatic.com/blog/nine-circles-dependencies/screenshot-htmlib5-on-py-pi.png"
+  alt="A screenshot of htmlib5 on PyPi"
+  caption={<>A screenshot of <a href = "https://pypi.org/project/html5lib/">htmlib5 on PyPi</a>, which now uses a more sane versioning scheme.</>}
+/>
 
 What is semantic versioning? From the [Semantic Versioning documentation](https://semver.org/):
 
@@ -108,10 +110,11 @@ Finally, consider using interfaces, contracts, or dependency injection to provid
 
 Library A depends on libraries B and C, and both B and C depend on D—but B requires D version 1.1, and C requires D version 1.2.
 
-<figure>
-  <img src="https://sourcegraphstatic.com/blog/nine-circles-dependencies/diamond-dependency-problem.png" alt="The diamond dependency problem" className="no-shadow"/>
-  <figcaption>The diamond dependency problem</figcaption>
-</figure>
+<Figure 
+  src="https://sourcegraphstatic.com/blog/nine-circles-dependencies/diamond-dependency-problem.png"
+  alt="The diamond dependency problem"
+  caption="The diamond dependency problem"
+/>
 
 The [diamond dependency problem](https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem) is reserved for the deepest circle of Dependency Hell because it is so difficult to fix. You can’t fix the problem in either Library A (which you most likely control) or Library D. The issue must be resolved in the intermediary libraries, B or C—which previously didn’t believe they had any relation other than a shared dependency.
 
@@ -142,16 +145,3 @@ _Matt was previously a software engineer at Google working on Kubernetes. Curren
 - [How we used universal code search to eliminate secrets from our codebase](https://about.sourcegraph.com/blog/eliminate-secrets-from-codebase-with-universal-code-search/)
 - [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
 - [A 5x reduction in RAM usage with Zoekt memory optimizations](https://about.sourcegraph.com/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/)
-
-<style>
-{`
-  figure .no-shadow { box-shadow: none; }
-  .workingtable-highlight td { color: #ffffff; background-color: #005cb9; }
-
-  figcaption {
-    text-align: center;
-    margin-top: -2rem;
-    font-style: italic;
-  }
-`}
-</style>

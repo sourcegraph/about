@@ -12,7 +12,7 @@ published: true
 description: "We asked 17 Sourcegraph developers about their workspace preferences. Here's what we found."
 ---
 
-![Workspaces of Soucegraph graphic](/blog/workspaces-of-sourcegraph-final-compressed.jpg)
+![Workspaces of Sourcegraph graphic](/blog/workspaces-of-sourcegraph-final-compressed.jpg)
 
 Developers read _a lot_. We read books, blog posts, documentation, but mostly, we read code. We read so much code, that many of us have become quite particular about how it is displayed.
 

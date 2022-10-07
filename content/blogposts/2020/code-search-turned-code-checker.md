@@ -100,7 +100,11 @@ adding `repogroup:go-gh-100` to the query. Have a look at some of the results:
 
 [🔘 Find ways to improve code in popular Go projects ↗](https://sourcegraph.com/search/console?q=repogroup%3Ago-gh-100%0Alanguage%3Ago%0Anot%20file%3Atest%0Anot%20file%3Avendor%0Anot%20file%3AGodeps%0Aindex%3Aonly%0A%0A%2F%2F%20Find%20strings.Index%20calls%20that%20can%20be%20replaced%20by%20strings.Contains%0A%2F%2F%20See%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1003%0A%0Astrings.Index(...%2C%20...)%20%3E%20-1%0A%0Aor%0A%0Astrings.Index(...%2C%20...)%20%3E%3D%200%0A%0Aor%0A%0Astrings.Index(...%2C%20...)%20!%3D%20-1)<sup>Side note: our multiline query editor is in a proof-of-concept phase.</sup>
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2020/strings-dot-index-hits.png" style={{width: '40rem'}}/><sup>Some search hits in projects like Go and Kubernetes where a simpler `strings.Contains` can be used instead.</sup>
+<Figure 
+  src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2020/strings-dot-index-hits.png"
+  alt="String Dots Index Hits"
+  caption="Some search hits in projects like Go and Kubernetes where a simpler `strings.Contains` can be used instead."
+/>
 The query finds matches in some of the most popular Go projects in a
 couple of seconds. An exhaustive search shows that there are more than 10 matches
 at the time of writing. For this flavor of syntactic change, I have a good sense
@@ -136,7 +140,10 @@ against the reference tests and discover which variants to cover, all in a
 self-contained search webapp. Here's an example where the query matches all the
 true hits in the test file, annotated with `// want strings.Contains ...`:
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2020/multiline-query-editor.png" />
+<Figure 
+  src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2020/multiline-query-editor.png" 
+  alt="Multiline Query Editor" 
+/>
 
 [🔘 Example query to match known patterns in test files↗](https://sourcegraph.com/search/console?q=repo%3A%5Egithub%5C.com%2Fdominikh%2Fgo-tools%24%20%0Alang%3Ago%0Afile%3Atest%0A%0Astrings.IndexRune(...%2C%20...)%20%3E%20-1%20or%0Astrings.IndexRune(...%2C%20...)%20%3E%3D%200%20or%0Astrings.IndexRune(...%2C%20...)%20!%3D%20-1%20or%0Astrings.IndexRune(...%2C%20...)%20%3D%3D%20-1%20or%0Astrings.IndexRune(...%2C%20...)%20%3C%200%20or%0Astrings.IndexAny(...%2C%20...)%20%3E%20-1%20or%0Astrings.IndexAny(...%2C%20...)%20%3E%3D%200%20or%0Astrings.IndexAny(...%2C%20...)%20!%3D%20-1%20or%0Astrings.IndexAny(...%2C%20...)%20%3D%3D%20-1%20or%0Astrings.IndexAny(...%2C%20...)%20%3C%200%20or%0Astrings.Index(...%2C%20...)%20%3E%20-1%20or%0Astrings.Index(...%2C%20...)%20%3E%3D%200%20or%0Astrings.Index(...%2C%20...)%20!%3D%20-1%20or%0Astrings.Index(...%2C%20...)%20%3D%3D%20-1%20or%0Astrings.Index(...%2C%20...)%20%3C%200%0A)
 
@@ -157,6 +164,7 @@ implement correctly (13 of 34). Other checks I couldn't write required more
 complex syntax matching rules (8 of 34). This table roughly quantifies the
 expressive needs for implementing checks:
 
+<TableWrapper>
 | Description                      | # of checks |
 |----------------------------------|-------------|
 | Total                            | 34          |
@@ -164,6 +172,7 @@ expressive needs for implementing checks:
 | Works (all variants)             | 11          |
 | Needs type info                  | 13          |
 | Needs additional syntax matching | 8           |
+</TableWrapper>
 
 <sup>Note that some checks require type info _and_ additional syntax matching.
 Also, one working variant for a check may not require type info, but another

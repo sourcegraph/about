@@ -1,9 +1,11 @@
-import { FunctionComponent, ReactFragment } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
+import classNames from 'classnames'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
-import { buttonStyle, buttonLocation } from '@data'
+import { breakpoints, buttonStyle, buttonLocation } from '@data'
+import { useWindowWidth } from '@hooks'
 
 interface Logo {
     src: string
@@ -16,117 +18,114 @@ interface Link {
     href: string
 }
 
-export const BlockquoteWithLogoBottom: FunctionComponent<{
-    quote: string
-    header?: string
-    author?: string | ReactFragment
-    logo?: Logo
-    link?: Link
-}> = ({ quote, header, author, logo, link }) => (
-    <>
-        {header && <h1 className="font-weight-bold">{header}</h1>}
-        <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
-            <h4 className="font-weight-normal">&ldquo;{quote}&rdquo;</h4>
-            {author && <figcaption className="pt-3 text-muted text-center">&mdash; {author}</figcaption>}
-        </blockquote>
-        {logo && (
-            <div className="d-flex justify-content-center">
-                {logo.href ? (
-                    <a href={logo.href} className="btn">
-                        <img src={logo.src} width="110px" alt={logo.alt} />
-                    </a>
-                ) : (
-                    <img src={logo.src} width="110px" alt={logo.alt} />
-                )}
-            </div>
-        )}
-        {link &&
-            (link.href.includes('http') ? (
-                <a href={link.href} target="_blank" rel="nofollow noreferrer">
-                    {link.text}
-                    <ArrowRightIcon className="icon-inline ml-1" />
-                </a>
-            ) : (
-                <Link href={link.href} passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a className="d-flex justify-content-center mt-3">
-                        <p className="font-weight-bold">{link.text}</p>
-                        <ArrowRightIcon className="icon-inline ml-1" />
-                    </a>
-                </Link>
-            ))}
-    </>
-)
-
-export const BlockquoteWithLogoTop: FunctionComponent<{
-    quote: string
-    author?: string | ReactFragment
-    logo?: Logo
-}> = ({ quote, author, logo }) => (
-    <>
-        {logo && (
-            <div className="d-flex justify-content-center">
-                {logo.href ? (
-                    <a href={logo.href} className="btn">
-                        <img src={logo.src} width="150px" alt={logo.alt} />
-                    </a>
-                ) : (
-                    <img src={logo.src} width="150px" alt={logo.alt} />
-                )}
-            </div>
-        )}
-        <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
-            <h2 className="display-3 font-weight-bold">&ldquo;{quote}&rdquo;</h2>
-            {author && <figcaption className="pt-3 text-muted text-center">&mdash; {author}</figcaption>}
-        </blockquote>
-    </>
-)
-
-export const BlockquoteWithBorder: FunctionComponent<{
-    quote: string
-    author?: string | ReactFragment
+export const Blockquote: FunctionComponent<{
+    quote: string | ReactNode
+    author?: string | ReactNode
     logo?: Logo
     link?: Link
     headline?: string
-    bold?: boolean
-}> = ({ quote, author, logo, headline, link, bold }) => (
-    <>
-        <blockquote className="px-3 mb-5 text-center border-left border-3 border-vermillion">
-            {headline && <h4 className="font-weight-bold mb-4">{headline}</h4>}
-            <h5 className={`font-weight-${bold ? 'bold' : 'normal'} mb-3`}>&ldquo;{quote}&rdquo;</h5>
-            {author && <figcaption className="text-center text-muted mt-5">&mdash; {author}</figcaption>}
-        </blockquote>
-        {logo &&
-            (logo.href ? (
-                <Link href={logo.href} passHref={true}>
-                    <a href="#none" className="btn">
-                        <img src={logo.src} width="110px" alt={logo.alt} />
-                    </a>
-                </Link>
+    largeText?: boolean
+    border?: boolean
+    reverseBorder?: boolean
+    inline?: boolean // inline vs. col layout
+}> = ({
+    quote,
+    author,
+    logo,
+    link,
+    headline,
+    largeText = false,
+    border = true,
+    reverseBorder = false,
+    inline = true,
+}) => {
+    const windowWidth = useWindowWidth()
+    const isMdOrDown = windowWidth < breakpoints.lg
+
+    const getBorderStyle = (): string => {
+        const borderColor = reverseBorder ? 'tw-border-r-violet-400' : 'tw-border-l-violet-400'
+        const borderLocation = reverseBorder ? 'tw-border-r-3' : 'tw-border-l-3'
+        const borderNone = reverseBorder ? 'tw-border-r-0' : 'tw-border-l-0'
+
+        if (border) {
+            if (inline) {
+                return `tw-my-8 tw-border-solid ${borderLocation} ${borderColor}`
+            }
+            // Blockquotes in column: Border flips to horizontal for mobile
+            if (isMdOrDown) {
+                return `tw-pt-3xl tw-pb-0 tw-mb-0 tw-border-solid ${borderNone} tw-border-t-3 tw-border-t-violet-400`
+            }
+            return `tw-border-solid ${borderLocation} ${borderColor}`
+        }
+        return 'tw-text-center'
+    }
+
+    return (
+        <blockquote className={classNames('tw-px-md', getBorderStyle())}>
+            {headline ? largeText ? <h2>{headline}</h2> : <h4 className="tw-mb-sm">{headline}</h4> : null}
+
+            {largeText ? (
+                <h3 className="tw-font-normal tw-text-3xl">&ldquo;{quote}&rdquo;</h3>
             ) : (
-                <div className="d-flex justify-content-center pt-2">
-                    <img src={logo.src} width="110px" alt={logo.alt} />
-                </div>
-            ))}
-        {link &&
-            (link?.href.includes('http') ? (
-                <a href={link.href} target="_blank" rel="nofollow noreferrer">
-                    {link.text}
-                    <ArrowRightIcon className="icon-inline ml-1" />
-                </a>
-            ) : (
-                <Link href={link.href} passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <h5 className="tw-font-normal">&ldquo;{quote}&rdquo;</h5>
+            )}
+
+            {author && <figcaption className="text-muted tw-mt-4">&mdash; {author}</figcaption>}
+
+            {logo &&
+                (logo.href ? (
+                    <Link href={logo.href} passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a>
+                            <img
+                                src={logo.src}
+                                className={classNames('tw-mt-4 tw-max-w-[150px tw-h-[80px]]', {
+                                    'tw-mx-auto': !border,
+                                })}
+                                width="110px"
+                                alt={logo.alt}
+                            />
+                        </a>
+                    </Link>
+                ) : (
+                    <img
+                        src={logo.src}
+                        className={classNames('tw-mt-4 tw-max-w-[150px tw-h-[80px]]', { 'tw-mx-auto': !border })}
+                        width="110px"
+                        alt={logo.alt}
+                    />
+                ))}
+
+            {link?.href &&
+                (link?.href.includes('http') ? (
                     <a
-                        className="d-flex justify-content-center mt-3"
+                        className={classNames('tw-mt-md tw-flex', !border && 'tw-justify-center')}
+                        href={link.href}
+                        target="_blank"
+                        rel="nofollow noreferrer"
+                        title={link.text}
                         data-button-style={buttonStyle.textWithArrow}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        <p className="font-weight-bold">{link.text}</p>
-                        <ArrowRightIcon className="icon-inline ml-1" />
+                        {link.text}
+                        <ArrowRightIcon className="tw-ml-3 tw-inline" />
                     </a>
-                </Link>
-            ))}
-    </>
-)
+                ) : (
+                    <Link href={link.href}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className={classNames('tw-mt-md tw-flex', !border && 'tw-justify-center')}
+                            title={link.text}
+                            data-button-style={buttonStyle.textWithArrow}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            {link.text}
+                            <ArrowRightIcon className="tw-ml-3 tw-inline" />
+                        </a>
+                    </Link>
+                ))}
+        </blockquote>
+    )
+}

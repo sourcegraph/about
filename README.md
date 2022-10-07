@@ -49,3 +49,27 @@ To enable our pre-commit hook, update the following git config setting in the pr
 ```sh
 git config core.hooksPath .githooks
 ```
+
+## Testing
+
+We use [Cypress](https://www.cypress.io/) as our test suite and currently have end to end tests configured.
+
+To run tests visually, run:
+
+```sh
+yarn test
+```
+
+To run tests headlessly in the CLI, run:
+
+```sh
+yarn test:ci
+```
+
+### End to End Tests
+
+1. To create an e2e test, add them to the [e2e directory](./cypress/e2e/) with a descriptive file name.
+2. To run tests in development, run `yarn test` which watches your test files as you develop. Cypress will open in a new window.
+3. Click on E2E Testing and choose a preferred browser. Click on "Start E2E Testing in {browser}.
+4. You will see the tests we have under specs. Click a spec to run the test.
+5. Alternatively, you can run tests in the command line in headless mode by running `yarn test:ci`.

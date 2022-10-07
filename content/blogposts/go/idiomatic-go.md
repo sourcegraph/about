@@ -58,7 +58,7 @@ With the key traits of idiomatic Go in mind, we can begin to explore common patt
 
 The tiny package syndrome anti-pattern usually appears with a directory structure that looks something like this:
 
-```
+```text
  context/                context (cont...)/
   cqlsession/             requestid/
     cqlsession.go           requestid.go
@@ -80,7 +80,7 @@ Lots of small packages, each usually containing a single file, especially missin
 
 A better way to do this would be to collapse the directory structure like this:
 
-```
+```text
  context/
   cqlsession.go
   dao.go
@@ -123,7 +123,7 @@ A common pattern found in projects that do lot of group-by-kind is to have some 
 
 Do you notice anything particular about each of these functions?
 
-```
+```go
 func GenerateRandomBytes(n int) ([]byte, error) { ... }
 util.GenerateRandomBytes(10)
 
@@ -147,7 +147,7 @@ Key takeaways:
 
 It's not uncommon to see a "`Config`", or "`Options`" struct with a lot of members.
 
-```
+```go
 type Config struct {
     MaxLineLength                       int
     BackBuff                            int
@@ -197,7 +197,7 @@ Key takeaways:
 
 Here's an example of an asynchronous API:
 
-```
+```go
 func Logs() <-chan logs {
     c := make(chan logs)
     go func() { // Receive Logs }
@@ -222,7 +222,7 @@ Most of these issues can be handled by making the Logs() function take additiona
 
 This synchronous version that answers all of those questions:
 
-```
+```go
 type Reader struct {
     Err     error
 	Current log
@@ -256,7 +256,7 @@ Key takeaways:
 ## If-then-else
 This code:
 
-```
+```go
 func things(x int) someType {
 	if x > 2 {
 		return 100
@@ -268,7 +268,7 @@ func things(x int) someType {
 
 Can be simplified:
 
-```
+```go
 func things(x int) someType {
 	if x > 2 {
 		return 100
@@ -315,7 +315,7 @@ Key takeaways:
 
 ## interface{}
 
-```
+```go
 func Voila(i interface{}) { ... }
 ```
 
@@ -327,7 +327,7 @@ But Voila will need to resort to type assertions or switch statements to determi
 
 Instead of using the empty interface, try to create an interface with a method that defines the behavior you need:
 
-```
+```go
 func Voila(s fmt.Stringer) {
 	fmt.Println(s.String())
 }

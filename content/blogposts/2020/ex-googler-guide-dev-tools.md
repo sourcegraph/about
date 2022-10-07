@@ -14,11 +14,12 @@ socialImage: /blog/exgoogler-campfire.jpg
 published: true
 ---
 
-Many years ago, I did a brief stint at Google–yes, I’m an ex-Googler or Xoogler. A lot has changed since then, but even that brief exposure to Google's internal tools left a lasting impression on me. In many ways, the dev tools inside Google are the most advanced in the world. Google has been a pioneer not only in scaling their own software systems but in figuring out how to build software effectively at scale. They've dealt with issues related to codebase volume, code discoverability, organizational knowledge sharing, and multi-service deployment at a level of sophistication that most other companies have not yet reached. (For reference, see <a href="https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791" rel="nofollow" target="_blank">Software Engineering at Google</a>.)
+Many years ago, I did a brief stint at Google. A lot has changed since then, but even that brief exposure to Google's internal tools left a lasting impression on me. In many ways, the dev tools inside Google are the most advanced in the world. Google has been a pioneer not only in scaling their own software systems but in figuring out how to build software effectively at scale. They've dealt with issues related to codebase volume, code discoverability, organizational knowledge sharing, and multi-service deployment at a level of sophistication that most other companies have not yet reached. (For reference, see <a href="https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791" rel="nofollow" target="_blank">Software Engineering at Google</a>.)
 
-<div style={{margin: '2em'}}>
-<img src="/blog/exgoogler-campfire.jpg" style={{maxWidth: '600px'}} alt="Ex-Googler's guide to dev tools" />
-</div>
+<Figure 
+  src="/blog/exgoogler-campfire.jpg"
+  alt="Ex-Googler's guide to dev tools"
+/>
 
 In other ways, however, Google's internal tools are awfully limited. In particular, nearly all of them are tightly coupled with Google's internal environment. Unfortunately, that means you can't take them with you when you leave.
 
@@ -44,15 +45,17 @@ Both inside Google and out, the software development lifecycle looks something l
 
 At every stage in this process, there is typically a tool that anchors the developer experience. Tools shape your work cycle and have an immense impact on your productivity.
 
+<TableWrapper>
 | Software development stage                          | Inside Google      | Outside Google               |
 |-----------------------------------------------------|--------------------|------------------------------|
 | Identify feature or bug                             | Issue Tracker       | GitHub issues, Jira         |
 | Read code                                           | Code search        | Your editor, <a href="https://oracle.github.io/opengrok/" rel="nofollow" target="_blank">OpenGrok</a>, <a href="https://github.com/hound-search/hound" rel="nofollow" target="_blank">Hound</a>, [Sourcegraph](https://about.sourcegraph.com)   |
-| Write code                                          | Critique, IntelliJ, Emacs, Vim, VS Code    | Everything except Critique      |
+| Write code                                          | Cider, IntelliJ, Emacs, Vim, VS Code    | Same, except no Cider <br /> *(Editor's update: since publication, Cloud IDEs like Gitpod and Codespaces have gained more traction)*      |
 | Test code                                           | Blaze              | A bit of the Wild West, but <a href="https://bazel.build/" rel="nofollow" target="_blank">Bazel</a> is gaining traction      |
 | Review code                                         | Critique           | <a href="http://github.com/" rel="nofollow" target="_blank">GitHub</a> PRs, <a href="https://www.gerritcodereview.com/" rel="nofollow" target="_blank">Gerrit</a>, <a href="https://www.phacility.com/phabricator/" rel="nofollow" target="_blank">Phabricator</a>, <a href="https://reviewable.io/" rel="nofollow" target="_blank">Reviewable</a>     |
 | Deployment                                          | Borg               | <a href="https://kubernetes.io/" rel="nofollow" target="_blank">Kubernetes</a>   |
 | Monitoring                                          | Borgmon, Dapper, Viceroy     | <a href="https://prometheus.io/" rel="nofollow" target="_blank">Prometheus</a>, <a href="https://grafana.com/" rel="nofollow" target="_blank">Grafana</a>, <a href="https://lightstep.com/" rel="nofollow" target="_blank">Lightstep</a>, <a href="https://www.honeycomb.io/" rel="nofollow" target="_blank">Honeycomb</a>, <a href="https://sentry.io/" rel="nofollow" target="_blank">Sentry</a>     |
+</TableWrapper>
 
 To improve your productivity, you need to find better tools. There's a useful GitHub repository that identifies nearly every single tool inside Google and its closest comparables outside of Google: <a href="https://github.com/jhuangtw/xg2xg" rel="nofollow" target="_blank">https://github.com/jhuangtw/xg2xg</a>. This list is comprehensive, but a bit overwhelming. So where do you start?
 
@@ -87,7 +90,7 @@ Here are the common code search engines we've seen in use:
 * <a href="https://oracle.github.io/opengrok/" rel="nofollow" target="_blank">OpenGrok</a>: a fairly old but persistent code search engine now maintained by Oracle
 * <a href="https://github.com/hound-search/hound" rel="nofollow" target="_blank">Hound</a>: a code search engine created and open-sourced by engineers at Etsy
 * <a href="https://livegrep.com/search/linux" rel="nofollow" target="_blank">Livegrep</a>: a code search engine created by Nelson Elhage at Stripe
-* And of course, [Sourcegraph](https://about.sourcegraph.com/get-started)
+* And of course, [Sourcegraph](https://about.sourcegraph.com/get-started/self-hosted)
 
 ## Get good monitoring
 
@@ -158,9 +161,13 @@ Building software at scale is hard. As everyone who has read <a href="https://en
 &nbsp;
 <hr/>
 
-**Try out Sourcegraph.** Get started searching your code by [self-hosting Sourcegraph](https://about.sourcegraph.com/get-started/) – free up to 10 users. Or try [Sourcegraph Cloud](https://sourcegraph.com/search) to easily search public, open source code.  
+**Try out Sourcegraph.** Get started searching your code by [self-hosting Sourcegraph](https://about.sourcegraph.com/get-started/self-hosted) – free up to 10 users. Or try [Sourcegraph Cloud](https://sourcegraph.com/search) to easily search public, open source code.  
 
 Please feel free to ask us questions either via posting on Twitter[@sourcegraph](https://twitter.com/sourcegraph) or sending an email to [hi@sourcegraph.com](mailto:hi@sourcegraph.com).
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._
 
 ### More posts like this
 

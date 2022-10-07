@@ -8,7 +8,7 @@ tags: [
   "blog"
 ]
 slug: sourcegraph-code-intelligence-and-the-language-server-protocol
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 
@@ -84,3 +84,7 @@ I’d love to live in a world where it’s as easy to use the Eclipse IDE to wri
 We think the Language Server Protocol will enable both these dreams to become reality. Code intelligence is what makes the experience of using your IDE magical, and LSP makes that magic far more tractable to implement. We’ve used it to great success so far at [Sourcegraph](https://sourcegraph.com/) and we’d highly encourage you to check it out for your IDE and editor plugins.
 
 Questions, comments, or feedback about Sourcegraph or LSP? [Let us know](https://twitter.com/sourcegraph)!
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

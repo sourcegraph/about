@@ -8,7 +8,7 @@ tags: [
 ]
 slug: how-to-make-your-open-source-project-thrive-with-andrey-petrov
 description: 'How do you make your open-source project stand out?'
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 

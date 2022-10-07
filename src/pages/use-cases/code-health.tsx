@@ -6,39 +6,40 @@ import WrenchOutlineIcon from 'mdi-react/WrenchOutlineIcon'
 import Link from 'next/link'
 
 import {
-    BackButtonBold,
-    BlockquoteWithBorder,
-    BlogResourceItem,
+    Blockquote,
     ContentSection,
+    CtaSection,
     CustomCarousel,
     CustomerLogos,
+    Hero,
     Layout,
     QuoteCarousel,
+    ResourceList,
     ThreeUpText,
+    TwoColumnSection,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
-import styles from './useCases.module.scss'
-
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2>{header}</h2>
+        <h3 className="tw-mb-8 lg:tw-mb-0">{header}</h3>
         {text}
     </>
 )
 
 const items = [
     {
-        buttonLabel: 'Find old versions easily',
+        title: 'Find old versions easily',
         text: (
             <CarouselItem
                 header="Find old versions easily"
                 text={
-                    <p>
+                    <p className="py-3">
                         Use{' '}
                         <Link href="/code-search" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
+                                title="Code Search"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
@@ -52,20 +53,19 @@ const items = [
                 }
             />
         ),
-        headerClass: 'active',
-        itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Automate version updates and communications',
+        title: 'Automate version updates and communications',
         text: (
             <CarouselItem
                 header="Automate version updates and communications"
                 text={
-                    <p>
+                    <p className="py-3">
                         With{' '}
                         <Link href="/batch-changes">
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
+                                title="Batch Changes"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
@@ -79,73 +79,98 @@ const items = [
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Get everyone on the same page with living docs',
+        title: 'Get everyone on the same page with living docs',
         text: (
             <CarouselItem
                 header="Get everyone on the same page with living docs"
                 text={
-                    <p>
+                    <p className="py-3">
                         Create living, actionable documentation with{' '}
-                        <a href="https://docs.sourcegraph.com/notebooks">Notebooks</a> that show your best practices
-                        with real-life examples you can share with your team.
+                        <a
+                            href="https://docs.sourcegraph.com/notebooks"
+                            title="Notebooks"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Notebooks
+                        </a>{' '}
+                        that show your best practices with real-life examples you can share with your team.
                     </p>
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Monitor for deprecated code',
+        title: 'Monitor for deprecated code',
         text: (
             <CarouselItem
                 header="Monitor for deprecated code"
                 text={
-                    <p>
+                    <p className="py-3">
                         Make sure deprecated endpoints don't sneak back into your code. Get alerts for new occurrences
                         of deprecated methods or restricted patterns with{' '}
-                        <a href="https://docs.sourcegraph.com/code_monitoring">code monitoring</a>.
+                        <a
+                            href="https://docs.sourcegraph.com/code_monitoring"
+                            title="Code monitoring"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            code monitoring
+                        </a>
+                        .
                     </p>
                 }
             />
         ),
-        itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Develop a data-driven relationship with your code',
+        title: 'Develop a data-driven relationship with your code',
         text: (
             <CarouselItem
                 header="Develop a data-driven relationship with your code"
                 text={
-                    <p>
+                    <p className="py-3">
                         Create dashboards to track mitigations, package use, version adoption, code smells, codebase
-                        size, and more to understand code health with <Link href="/code-insights">Code Insights</Link>.
+                        size, and more to understand code health with{' '}
+                        <Link href="/code-insights" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                title="Code Insights"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Insights
+                            </a>
+                        </Link>
+                        .
                     </p>
                 }
             />
         ),
-        itemClass: 'd-none',
     },
 ]
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="mb-4 text-blurple" size={40} />,
-        subtitle: <h4 className="font-weight-bold">Find unhealthy code</h4>,
+        icon: <MagnifyIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        subtitle: 'Find unhealthy code',
         description:
             'Build a healthier codebase by finding references to deprecated services, libraries, URL patterns, and more across all your repositories.',
     },
     {
-        icon: <WrenchOutlineIcon className="mb-4 text-blurple" size={40} />,
-        subtitle: <h4 className="font-weight-bold">Remediate code health issues</h4>,
+        icon: <WrenchOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        subtitle: 'Remediate code health issues',
         description:
             'Tackle refactoring efforts and tech debt from legacy systems and acquisitions with automated pull requests across your entire codebase.',
     },
     {
-        icon: <ClipBoardPulseOutlineIcon className="mb-4 text-blurple" size={40} />,
-        subtitle: <h4 className="font-weight-bold">Monitor code health initiatives</h4>,
+        icon: <ClipBoardPulseOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        subtitle: 'Monitor code health initiatives',
         description:
             'Stay on top of code health changes. Monitor and measure code health initiatives and get actionable insights into the impact of large-scale changes.',
     },
@@ -203,82 +228,78 @@ const blogResourceItems = [
         href: '/blog/migrating-to-css-modules-with-codemods-and-code-insights',
     },
     {
-        title: 'How we added backend integration testing to our CI pipeline',
+        title: '5 key traits of a code intelligence platform',
         description:
-            "Here's the story and the lessons learned from our work to remove all existing backend-related end-to-end tests and reliably run their corresponding unit and integration tests as part of our CI pipeline on all branches.",
-        type: 'Blog post',
+            'Sourcegraph is more than search. Learn how the code intelligence platform helps development teams quickly get unblocked, resolve issues faster, and gain insights to make better decisions.',
+        type: 'Guide',
         img: {
-            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/backend-integration-testing/backend-integration-testing.png',
-            alt: 'Backend integration testing blog thumbnail',
+            src: '/blog/thumbnails/dark-multi-grid.jpg',
+            alt: 'Grid background with abstract blue and pink hues',
         },
-        href: '/blog/integration-testing',
+        href: '/guides/key-traits-of-a-code-intelligence-platform.pdf',
     },
 ]
 
 const UseCasePage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Improve Code Health | Sourcegraph',
+            title: 'Improve Code Health - Sourcegraph',
             description:
                 'Tackle refactoring efforts and tech debt from legacy systems with automated pull requests across your entire codebase to boost code health.',
         }}
         className="use-cases-page navbar-light"
         hero={
-            <>
-                <div className={styles.pageHeader}>
-                    <div className="container pb-4">
-                        <div className="row">
-                            <div className="col-md-7 mb-8 mt-7">
-                                <BackButtonBold href="/use-cases" text="USE CASES" />
-                                <h1 className="display-2 font-weight-bold mb-4 max-w-250 max-w-sm-275 max-w-lg-400">
-                                    Healthy code, happy teams
-                                </h1>
-                                <div className="display-4 font-weight-normal mb-5">
-                                    Improve code health with large-scale changes and track key initiatives across your
-                                    entire codebase.
-                                </div>
-                                <div className="d-flex flex-column flex-lg-row pt-1">
-                                    <Link href="/demo" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
-                                            title="Request a Demo."
-                                            data-button-style={buttonStyle.primary}
-                                            data-button-location={buttonLocation.hero}
-                                            data-button-type="cta"
-                                        >
-                                            Request a demo
-                                        </a>
-                                    </Link>
-                                    <Link href="/get-started" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            className="btn btn-outline-primary w-md-100"
-                                            title="Try Sourcegraph."
-                                            data-button-style={buttonStyle.outline}
-                                            data-button-location={buttonLocation.hero}
-                                            data-button-type="cta"
-                                        >
-                                            Try Sourcegraph now
-                                        </a>
-                                    </Link>
-                                </div>
-                            </div>
+            <Hero
+                variant="lightNebulousVenus2"
+                backButton={{
+                    text: 'Use Cases',
+                    link: '/use-cases',
+                }}
+                title={'Healthy code,\n happy teams'}
+                subtitle="Improve code health with large-scale changes and track key initiatives across your
+                entire codebase."
+                cta={
+                    <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
+                        <div className="mb-3 mb-md-0">
+                            <Link href="/demo" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    className="btn btn-primary w-100 max-w-350"
+                                    title="Request a Demo."
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
+                                    Request a demo
+                                </a>
+                            </Link>
+                        </div>
+                        <div className="ml-md-3">
+                            <a
+                                href="https://signup.sourcegraph.com"
+                                className="btn btn-outline-primary w-100 max-w-350"
+                                title="Get free trial"
+                                data-button-style={buttonStyle.outline}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
+                                Get free trial
+                            </a>
                         </div>
                     </div>
-                </div>
-            </>
+                }
+            />
         }
     >
-        <ContentSection className="my-7">
+        <ContentSection>
             <ThreeUpText title="Track and improve code health across your entire codebase" items={threeUpTextItems} />
         </ContentSection>
 
-        <div className="bg-gradient-venus-radial">
-            <ContentSection className="py-7">
-                <div className="row flex-column flex-lg-row justify-content-between">
-                    <div className="p-lg-0 col-lg-6 px-4">
-                        <h1 className="mb-md-4 font-weight-bold max-w-500">Improving code health can be daunting</h1>
+        <ContentSection parentClassName="sg-bg-gradient-venus">
+            <TwoColumnSection
+                leftColumn={
+                    <>
+                        <h2 className="mb-md-4 max-w-500">Improving code health can be daunting</h2>
                         <p className="max-w-500">
                             Engineering teams need to track and measure code quality consistently to monitor code health
                             across their entire codebase, but current tools don't make this easy. What does that mean
@@ -298,112 +319,80 @@ const UseCasePage: FunctionComponent = () => (
                                 success is difficult to track and measure.
                             </li>
                         </ul>
-                    </div>
-                    <div className="col-lg-5 mt-lg-8 mt-5">
-                        <BlockquoteWithBorder
-                            quote="With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove unused attributes that lived in different repositories, ultimately simplifying our APIs and speeding up developer iteration time."
-                            author="Justin Phillips, Software Engineer at Lyft"
-                            headline="Lyft boosts code health and accelerates developer velocity"
-                            logo={{
-                                src: '/external-logos/lyft-logo.svg',
-                                alt: 'Lyft logo',
-                            }}
-                            link={{
-                                text: 'Read the case study',
-                                href: '/case-studies/lyft-monolith-to-microservices',
-                            }}
-                        />
-                    </div>
-                </div>
-            </ContentSection>
-        </div>
-
-        <ContentSection>
-            <div className="row mt-lg-0 mt-5 justify-content-center">
-                <div className="d-flex flex-column mt-lg-6 mt-4 w-100 mx-3">
-                    <h1 className="font-weight-bold text-lg-center text-left mb-lg-6 mb-md-6 mb-4">
-                        How Sourcegraph helps
-                    </h1>
-                </div>
-                <div className="pb-lg-5 pb-md-6 pb-5">
-                    <CustomCarousel items={items} autoAdvance={true} smallPanel={true} />
-                </div>
-            </div>
-        </ContentSection>
-
-        <div className="bg-gradient-saturn-saturated py-8">
-            <ContentSection>
-                <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} />
-            </ContentSection>
-        </div>
-
-        <div className="bg-light-gray-3 py-7">
-            <ContentSection>
-                <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column text-start text-md-center max-w-600 mx-auto">
-                        <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
-                        <p>Give your team the tools they need to build a healthier codebase.</p>
-                    </div>
-                    <div className="text-center col-12">
-                        <Link href="/demo" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="btn btn-primary min-w-200"
-                                title="Request a Demo."
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.bodyDemo}
-                                data-button-type="cta"
-                            >
-                                Request a demo
-                            </a>
-                        </Link>
-                        <Link href="/use-cases" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="d-flex justify-content-center mt-4"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                <p className="font-weight-bold">Explore other use cases</p>
-                            </a>
-                        </Link>
-                    </div>
-                </div>
-            </ContentSection>
-            <CustomerLogos />
-        </div>
-
-        <ContentSection className="py-lg-7 py-5">
-            <div className="row d-flex">
-                <div className="col-lg-6">
-                    <h1 className="mb-5 font-weight-bold">Related resources</h1>
-                </div>
-                {blogResourceItems.map(item => (
-                    <BlogResourceItem key={item.title} blog={item} />
-                ))}
-            </div>
+                    </>
+                }
+                rightColumn={
+                    <Blockquote
+                        quote="With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove unused attributes that lived in different repositories, ultimately simplifying our APIs and speeding up developer iteration time."
+                        author="Justin Phillips, Software Engineer at Lyft"
+                        headline="Lyft boosts code health and accelerates developer velocity"
+                        inline={false}
+                        logo={{
+                            src: '/external-logos/lyft-logo.svg',
+                            alt: 'Lyft logo',
+                        }}
+                        link={{
+                            text: 'Read the case study',
+                            href: '/case-studies/lyft-monolith-to-microservices',
+                        }}
+                    />
+                }
+            />
         </ContentSection>
 
         <ContentSection>
-            <div className="d-flex flex-wrap justify-content-center text-center mb-md-4">
-                <h2 className="w-100 font-weight-bold mb-4 mx-4 mx-lg-0">Ready to build a healthier codebase?</h2>
-                <div className="d-flex justify-content-center mb-lg-6">
-                    <Link href="/get-started" passHref={true}>
+            <CustomCarousel items={items} title="How Sourcegraph helps" />
+        </ContentSection>
+
+        <ContentSection parentClassName="sg-bg-gradient-saturn">
+            <QuoteCarousel items={quoteCarouselItems} />
+        </ContentSection>
+
+        <ContentSection parentClassName="tw-bg-gray-100">
+            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
+                <div className="mb-5 tw-mx-auto tw-flex tw-flex-col tw-text-center max-w-600">
+                    <h2 className="">Get started with Sourcegraph</h2>
+                    <p>Give your team the tools they need to build a healthier codebase.</p>
+                </div>
+                <div className="tw-px-0 tw-text-center col-12">
+                    <Link href="/demo" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className="btn btn-primary"
-                            title="Ready to get started?"
+                            className="btn btn-primary max-w-350 w-100"
+                            title="Request a Demo."
                             data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.trySourcegraph}
+                            data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
                         >
-                            Ready to get started?
+                            Request a demo
+                        </a>
+                    </Link>
+                    <Link href="/use-cases" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className="mt-4 tw-flex tw-justify-center"
+                            title="Explore other use cases"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            <p>Explore other use cases</p>
                         </a>
                     </Link>
                 </div>
             </div>
+
+            <div className="tw-mt-4xl">
+                <CustomerLogos />
+            </div>
         </ContentSection>
+
+        <ResourceList items={blogResourceItems} />
+
+        <CtaSection
+            title="Get started with Sourcegraph"
+            description="Find, fix, and track vulnerable code quickly across your entire codebase to improve code security."
+        />
     </Layout>
 )
 

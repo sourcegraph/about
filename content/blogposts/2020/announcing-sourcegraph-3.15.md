@@ -206,7 +206,7 @@ For organizations that need to run Sourcegraph behind a proxy, `git fetch` and `
     - `"none"` (default) turns off tracing.
   - Jaeger is now the officially supported distributed tracing system. The following is the recommended site configuration to connect Sourcegraph to a Jaeger agent (which must be deployed on the same host and listening on the default ports):
 
-    ```
+    ```json
     "observability.tracing": {
       "sampling": "selective"
     }
@@ -257,7 +257,7 @@ For organizations that need to run Sourcegraph behind a proxy, `git fetch` and `
     - Git Server dashboard: The 'echo command duration test' panel now properly displays units in seconds. [#7628](https://github.com/sourcegraph/sourcegraph/issues/7628)
     - Dashboard panels showing firing alerts no longer over-count firing alerts due to the number of service replicas. [#9353](https://github.com/sourcegraph/sourcegraph/issues/9353)
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#3.15) is available on GitHub.
+The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md#3.15) is available on GitHub.
 
 ## Thank you
 

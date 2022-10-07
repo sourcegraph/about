@@ -20,8 +20,10 @@ Follow these 4 steps to get code search for your Bitbucket Server code:
 2. Click **Configuration** in the site admin menu.
 3. Click **Add Bitbucket Server repositories** and fill in the fields in the generated `bitbucketServer` configuration option.
 
-  <img alt="Bitbucket" src="//images.ctfassets.net/le3mxztn6yoo/1s4x4eOcXaEqIQY20eoues/469f7dd3bcae8cb36b7e815f4b0f8518/Bitbucket2.png" className="ba pa1 b--light-7 br2"/>
-
+<Figure 
+  src="//images.ctfassets.net/le3mxztn6yoo/1s4x4eOcXaEqIQY20eoues/469f7dd3bcae8cb36b7e815f4b0f8518/Bitbucket2.png"
+  alt="Bitbucket"
+/>
 
 4. Click **Repositories** in the site admin menu and enable the repositories you want to search over.
 
@@ -30,3 +32,7 @@ And that’s it--you're ready to start searching across your Bitbucket Server re
 For all configuration options for Bitbucket Server, see the [Bitbucket Server integration documentation](https://docs.sourcegraph.com/integration/bitbucket_server).
 
 [Sourcegraph](https://docs.sourcegraph.com) helps development teams build better software with code search and intelligence. It's free, self-hosted, and takes 5 minutes to set up. Read the [Sourcegraph 2.6 announcement blog post](/blog/introducing-sourcegraph-server-2-6) to see more new features from our latest release.
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

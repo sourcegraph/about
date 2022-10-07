@@ -31,10 +31,10 @@ export const CodeInsightExample: React.FunctionComponent<CodeInsightExampleProps
     const { type } = props
 
     if (type === CodeInsightExampleType.Search) {
-        return <CodeInsightSearchExample {...(props as CodeInsightSearchExampleProps)} />
+        return <CodeInsightSearchExample {...props} />
     }
 
-    return <CodeInsightCaptureExample {...(props as CodeInsightCaptureExampleProps)} />
+    return <CodeInsightCaptureExample {...props} />
 }
 
 const CodeInsightSearchExample: React.FunctionComponent<CodeInsightSearchExampleProps> = props => {
@@ -56,9 +56,7 @@ const CodeInsightSearchExample: React.FunctionComponent<CodeInsightSearchExample
                 {data.series.map(line => (
                     // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     <LegendItem key={line.dataKey.toString()} color={getLineStroke<any>(line)}>
-                        <span className={classNames(styles.legendMigrationItem, 'flex-shrink-0 mr-2')}>
-                            {line.name}
-                        </span>
+                        <span className={classNames(styles.legendMigrationItem, 'tw-shrink-0 mr-2')}>{line.name}</span>
                         <CodeInsightsQueryBlock>{line.query}</CodeInsightsQueryBlock>
                     </LegendItem>
                 ))}

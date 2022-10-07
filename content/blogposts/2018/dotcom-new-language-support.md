@@ -8,7 +8,7 @@ tags: [
   "blog"
 ]
 slug: java-php-experimental_language_servers-temporarily-unavailable
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 
@@ -37,3 +37,7 @@ Otherwise, you can [run a self-hosted instance of Sourcegraph 2.13](https://docs
 In the coming weeks and months, depending on the language. Our top priorities are Java and PHP (as well as introducing Swift support).
 
 See the [Sourcegraph roadmap](https://handbook.sourcegraph.com/direction) for a timeline of when these languages will be added back. If you don't see a language listed yet, we don't have a date to re-add it. If you'd like to contribute language support, let us know. We are [hiring software engineers](https://github.com/sourcegraph/careers), or we can sponsor you as a part-time contributor.
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

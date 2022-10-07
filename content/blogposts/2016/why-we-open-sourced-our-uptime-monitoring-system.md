@@ -8,7 +8,7 @@ tags: [
   "blog"
 ]
 slug: why-we-open-sourced-our-uptime-monitoring-system
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 
@@ -43,7 +43,7 @@ Though typically viewed as a last line of defense in production, health checks a
 
 Because Checkup can be used as a simple CLI, you can roll it into your continuous integration scripts. Below is a snippet taken from Sourcegraph’s CI build that demonstrates this ability. We version a [checkup.json](https://github.com/sourcegraph/checkup#create-your-checkup-config) file directly in our codebase that describes critical URLs that we must not break.
 
-```
+```bash
 #!/bin/bash
 
 # Quick end-to-end uptime tests
@@ -88,3 +88,7 @@ But availability alone is not enough. There are plenty of open source projects w
 *   [checkup.Checker](https://sourcegraph.com/github.com/sourcegraph/checkup@d7cd4db3ced36aea99e56f3ed13d877688bff20c/-/def/GoPackage/github.com/sourcegraph/checkup/-/Checker) is the interface you implement to create a new type of health check.
 
 We hope you’ll find Checkup useful as a tool and informative as a codebase. Please [send us feedback](https://twitter.com/sourcegraph) and let us know how you’re using it!
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

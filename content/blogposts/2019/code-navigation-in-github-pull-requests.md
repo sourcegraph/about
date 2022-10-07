@@ -18,7 +18,10 @@ Code navigation helps you review code in GitHub pull requests more quickly and e
 
 Here's what it looks like:
 
-<img src="https://sourcegraphstatic.com/code-navigation-in-github-pull-requests-typescript-hover.png" alt="Github pull request demonstrating code navigation to help review code."/>
+<Figure 
+   src="https://sourcegraphstatic.com/code-navigation-in-github-pull-requests-typescript-hover.png" 
+   alt="Github pull request demonstrating code navigation to help review code."
+/>
 
 How does it help? Suppose you're reviewing a pull request that calls a function you don't recognize. You'll be able to quickly answer:
 
@@ -52,3 +55,7 @@ Next, run a Sourcegraph server yourself to use code navigation for your organiza
 That's it! Now [deploy Sourcegraph for your team](https://docs.sourcegraph.com/admin) so everyone at your organization can use it.
 
 Any other questions? [File an issue](https://github.com/sourcegraph/sourcegraph/issues) or [contact us](https://about.sourcegraph.com/contact).
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

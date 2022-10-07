@@ -40,7 +40,7 @@ To ensure we were thoroughly covered we combined automated tooling (truffleHog),
 
 We started with a high-precision search targeting known patterns. This search was developed targeting secrets we already knew were in our source code and had an identifiable pattern. We were able to find many secrets with a low number of false positives:
 
-```
+```regex
 repo:[our targeted repos]$
 patterntype:regex
 
@@ -79,7 +79,7 @@ ya29\\.[0-9A-Za-z\\-_]+
 
 We then moved to searches with a wider scope and, as a result, more false positives to be triaged. These searches look for keywords with the added power of regular expressions:
 
-```
+```regex
 r:[our targeted repositories]$
 patterntype:regex
 
@@ -92,7 +92,7 @@ license[\s_-]?key or
 
 ```
 
-```
+```regex
 r:[our targeted repositories]$
 patterntype:regex
 

@@ -71,7 +71,7 @@ General steps:
 
 Goyacc is almost an exact translation of the original yacc so some of the idiosyncrasies have been inherited. For example, C programs return only 1 value: 0 for success and 1 for failure. This means you need awkward boilerplate to give values to the lexer:
 
-```yacc
+```go
 %{
 package jsonparser
 func setResult(l yyLexer, v Result) {
@@ -97,7 +97,7 @@ Use go generate to create the actual parser.go file:
 
 Area code has three parts: area code, first part, second part.
 
-```
+```go
 %token D
 
 phone:
@@ -116,7 +116,7 @@ The generated parser is just a single function that runs a state machine and use
 
 These variables are saved in a union data structure:
 
-```yacc
+```go
 %union{
   result Result
   part string
@@ -128,7 +128,7 @@ These variables are saved in a union data structure:
 ```
 
 Actions run Go code (i.e. everything inside the braces) when a rule matches. Dollar variables address a variable that is a value returned by the parser.
-```
+```go
 part2: D D D D
   {
     $$ = cat($1, $2, $3, $4)

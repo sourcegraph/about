@@ -1,15 +1,10 @@
 .post-template {
     &__post {
-        h1 {
-            font-size: 2.25rem;
-            margin-bottom: 0.75rem;
-        }
-
         min-height: 60vh;
 
         &-title {
             &-link {
-                color: $dark-8;
+                color: #000;
             }
         }
 
@@ -21,33 +16,34 @@
         ul,
         ol,
         pre,
-        code,
         figure,
         img,
         object,
         table,
-        blockquote {
+        blockquote,
+        video {
             max-width: 100%;
-            width: 40rem;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        code {
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 85%;
+            border-radius: 3px;
+            background: var(--sg-color-gray-100);
+            color: var(--sg-color-blue-500);
+            border: 1px solid var(--sg-color-gray-200);
+        }
+
+        pre code {
+            border: none;
         }
 
         p {
             line-height: 1.8;
             margin-bottom: 1.25rem;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        h3 {
-            font-size: 1.25rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
         }
 
         ul,
@@ -66,14 +62,6 @@
         // also).
         ul > li > p:only-of-type {
             margin-bottom: 0;
-        }
-
-        blockquote {
-            line-height: 1.8;
-            padding-left: 2rem;
-            padding-right: 0;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
         }
     }
 }

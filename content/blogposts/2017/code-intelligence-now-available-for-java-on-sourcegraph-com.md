@@ -8,7 +8,7 @@ tags: [
   "blog"
 ]
 slug: code-intelligence-now-available-for-java-on-sourcegraph-com
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 
@@ -50,3 +50,7 @@ Java Code Intelligence on Maven-based projects is now also available in the Sour
 Sourcegraph will index any open source or authorized private repository hosted on GitHub.com. For enterprise customers, we also support GitHub Enterprise, Bitbucket, GitLab, and Phabricator. [Read more about our enterprise offering here](https://sourcegraph.com/pricing) or sign up for free on [Sourcegraph.com](https://sourcegraph.com).
 
 [![](https://cdn-images-1.medium.com/max/800/1*FjQjUq7Pvoy-0dKvR4fJ5Q.png)](https://sourcegraph.com/login)
+
+#### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

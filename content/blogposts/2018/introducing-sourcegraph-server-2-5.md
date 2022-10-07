@@ -32,27 +32,24 @@ Ready to install or upgrade? **[Install Sourcegraph 2.5](https://docs.sourcegrap
 
 We've added email and Slack notifications for saved searches, so you get "Google Alerts"-style notifications for any code change that matches a query. You can use this to get notified when there are API changes, new dependencies, use of certain OSS licenses (such as GPL), security- and authentication-related changes, AWS secret keys committed in code, etc. [Set up saved searches and notifications.](https://docs.sourcegraph.com/code_search/explanations/features#saved-searches)
 
-<div className="pa2 ba b--light-8 br2" style={{paddingBottom:'27.2%', height: 0, position: 'relative', overflow:'hidden'}}>
+<Figure 
+  src="//images.contentful.com/le3mxztn6yoo/6o9nJRuGk0SkQeSmaKK6I2/833d77958de99c80054c429c288c2d2a/image.png"
+  alt="Email notifications"
+/>
 
-<img alt="Email notifications" src="//images.contentful.com/le3mxztn6yoo/6o9nJRuGk0SkQeSmaKK6I2/833d77958de99c80054c429c288c2d2a/image.png" />
-
-</div>
-
-<div className="pa2 ba b--light-8 br2" style={{paddingBottom:'15.7%', height: 0, position: 'relative', overflow:'hidden'}}>
-
-<img alt="Slack notifications" src="//images.contentful.com/le3mxztn6yoo/4wKs8DV0FGWiI0eeAcKkSW/833d77958de99c80054c429c288c2d2a/image__1_.png" />
-
-</div>
+<Figure 
+  src="//images.contentful.com/le3mxztn6yoo/4wKs8DV0FGWiI0eeAcKkSW/833d77958de99c80054c429c288c2d2a/image__1_.png"
+  alt="Slack notifications"
+/>
 
 ### Built-in saved searches
 
 Sourcegraph now ships with a selection of built-in, common saved searches. Click **Queries** and then **Discover built-in searches** to view a list of built-in searches that are useful in most codebases. This includes searches for code committed with copyleft (GPL) licenses, security and authentication changes, and potential secrets and API tokens. Save the ones that look useful to you to start monitoring your codebase.
 
-<div className="pa2 ba b--light-8 br2" style={{paddingBottom:'29.4%', height: 0, position: 'relative', overflow:'hidden'}}>
-
-<img alt="Built-in saved searches" src="//images.contentful.com/le3mxztn6yoo/KggIyqGq8ooo2qIU48K6S/54bfffd088d37e5ba580f4c5b0416f7e/image1.png" />
-
-</div>
+<Figure 
+  src="//images.contentful.com/le3mxztn6yoo/KggIyqGq8ooo2qIU48K6S/54bfffd088d37e5ba580f4c5b0416f7e/image1.png"
+  alt="Built-in saved searches"
+/>
 
 ### Code intelligence
 
@@ -62,12 +59,10 @@ Code intelligence makes reviewing and navigating code easier with go-to-definiti
 
 [Get code intelligence](https://docs.sourcegraph.com/extensions/language_servers/install) for Go, Python, JavaScript, TypeScript, Java, and PHP today.
 
-<div className="pa2 ba b--light-8 br2" style={{paddingBottom:'56.2%', height: 0, position: 'relative', overflow:'hidden'}}>
-
-<img alt="CodeIntel2sc" src="//images.contentful.com/le3mxztn6yoo/4IAoiPHByEok4aucIcg426/7af890245d6d7cd5415569938dca7973/CodeIntel2sc.gif" />
-
-</div>
-
+<Figure 
+  src="//images.contentful.com/le3mxztn6yoo/4IAoiPHByEok4aucIcg426/7af890245d6d7cd5415569938dca7973/CodeIntel2sc.gif"
+   alt="CodeIntel2sc"
+/>
 
 ### Massive-scale code search
 
@@ -89,21 +84,21 @@ We’ve added search scope pages to more easily share search scopes among team m
 
 Have an idea for a search scope that would be useful to your community? Tweet us [@sourcegraph](https://twitter.com/sourcegraph).
 
-<div style={{paddingBottom:'73.4%', height: 0, position: 'relative', overflow:'hidden'}}>
-
-<img alt="SearchScopePage" src="//images.contentful.com/le3mxztn6yoo/6ayRkpUW2IMyiQIg4G0IOq/f2d68c1040778fc62b024266e374a46e/scopePage.png" />
-
-</div>
+<Figure 
+  src="//images.contentful.com/le3mxztn6yoo/6ayRkpUW2IMyiQIg4G0IOq/f2d68c1040778fc62b024266e374a46e/scopePage.png"
+  alt="SearchScopePage"
+  shadow={false}
+/>
 
 ### Integrations settings page
 
 We've made it easier to connect your Sourcegraph instance to the Sourcegraph browser extension and your browser's address bar search. Click **Integrations** in your personal settings area to install the browser extension and connect it to your Sourcegraph instance. You'll also find instructions for setting up Sourcegraph as a custom search engine in your browser's address bar. Site admins can now send users to this page to more easily roll out the browser extension and browser address bar search.
 
-<div style={{paddingBottom:'77.6%', height: 0, position: 'relative', overflow:'hidden'}}>
-
-<img alt="CodeIntelPR" src="//images.contentful.com/le3mxztn6yoo/2X1iVhIUcUoMcsCCk4YeAw/67e3e6c0f2807fb38beb3bb63ba37b7f/CodeIntelPR.png" />
-
-</div>
+<Figure 
+  src="//images.contentful.com/le3mxztn6yoo/2X1iVhIUcUoMcsCCk4YeAw/67e3e6c0f2807fb38beb3bb63ba37b7f/CodeIntelPR.png"
+  alt="CodeIntelPR"
+  shadow={false}
+/>
 
 ## Changelog
 
@@ -112,3 +107,7 @@ See the [Sourcegraph changelog](https://sourcegraph.com/github.com/sourcegraph/s
 ## Upgrade today
 
 **[Install Sourcegraph 2.5](https://docs.sourcegraph.com)** to bring powerful code search to your developers.
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

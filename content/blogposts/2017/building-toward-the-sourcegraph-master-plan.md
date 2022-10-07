@@ -22,7 +22,10 @@ published: true
         </div>
     </div>
     <div className="bg-white">
-        <img className="pv3 pa4-ns self-center" src="https://images.contentful.com/le3mxztn6yoo/1cJw4YdMMI6iEiwOUU60mq/c49bb4902883e42a31630dba874012bb/blog-chart.png" alt="Worldwide population, internet users and programmers"/>
+    <Figure 
+        src="https://images.contentful.com/le3mxztn6yoo/1cJw4YdMMI6iEiwOUU60mq/c49bb4902883e42a31630dba874012bb/blog-chart.png"
+        alt="Worldwide population, internet users and programmers"
+    />
     </div>
 </div>
 
@@ -44,8 +47,14 @@ published: true
         </div>
     </div>
     <div className="flex-grow-1">
-        <img className="ph5 pv4 self-center" src="https://images.contentful.com/le3mxztn6yoo/6Kr0fizYHKieW28s2skyeC/3c5a1e1343000da565cd02803b850eb2/redpoint-logo.png" alt="Redpoint company logo"/>
-        <img className="ph5 pv4 self-center" src="https://images.contentful.com/le3mxztn6yoo/3vaNarg4zKe8mUMsEIcyke/0f1c8ecce6bca30364d1588421f4490a/goldcrest-logo.png" alt="Goldcrest company logo"/>
+        <Figure 
+            src="https://images.contentful.com/le3mxztn6yoo/6Kr0fizYHKieW28s2skyeC/3c5a1e1343000da565cd02803b850eb2/redpoint-logo.png"
+            alt="Redpoint company logo"
+        />
+        <Figure 
+            src="https://images.contentful.com/le3mxztn6yoo/3vaNarg4zKe8mUMsEIcyke/0f1c8ecce6bca30364d1588421f4490a/goldcrest-logo.png"
+            alt="Goldcrest company logo"
+        />
     </div>
 </div>
 
@@ -55,7 +64,7 @@ published: true
     </div>
 </div>
 
-<div className="bg-light-11 br3 mv4 pa3 ph4">
+<div className="br3 mv4 pa3 ph4">
     <div>
         Our new funding will help us continue executing on our company roadmap, what we call our <a href="https://handbook.sourcegraph.com/company/strategy">Sourcegraph master plan</a>. Our goals are clear:
         <ul>
@@ -72,3 +81,7 @@ published: true
         Now that billions of people have access to the Internet, think: what would the world look like if coding was more like reading and writing (which virtually everyone does)?  We think it will be a world full of new opportunities for all. In the meantime, we’re excited to help today’s developers build better software.
     </h1>
 </div>
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

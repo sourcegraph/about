@@ -8,7 +8,7 @@ tags: [
   blog
 ]
 slug: sourcegraph-3.3
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 description: 'Sourcegraph 3.3: Improving the user experience for site admins'
 ---
@@ -81,15 +81,34 @@ Additionally, if a repository is deleted from the code host or if it is no longe
 
 For example, here are the fields for repository selection for the GitHub external service.
 
-| **Field**       | **Description**                                                                                                                                                                                                   |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| repos           | List of repositories to add "owner/name" format ([view in schema](https://github.com/sourcegraph/sourcegraph/blob/master/schema/github.schema.json#L38-L42))                                                      |
-| repositoryQuery | List of strings that are queries by type, e.g. `affiliated` and/or code host specific search filters ([view in schema](https://github.com/sourcegraph/sourcegraph/blob/master/schema/github.schema.json#L66-L75)) |
-| exclude\*       | List of repositories to exclude in "owner/name" format (view in schema)                                                                                                                                           |
+<TableWrapper>
+  <table>
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>repos</td>
+        <td>List of repositories to add "owner/name" format ([view in schema](https://github.com/sourcegraph/sourcegraph/blob/main/schema/github.schema.json#L38-L42))</td>
+      </tr>
+      <tr>
+        <td>repositoryQuery</td>
+        <td>List of strings that are queries by type, e.g. `affiliated` and/or code host specific search filters ([view in schema](https://github.com/sourcegraph/sourcegraph/blob/main/schema/github.schema.json#L66-L75))</td>
+      </tr>
+      <tr>
+        <td>exclude*</td>
+        <td>List of repositories to exclude in "owner/name" format (view in schema)</td>
+      </tr>
+    </tbody>
+  </table>
+</TableWrapper>
 
-<p><small>*exclude takes precedence over the `repos` and `repositoryQuery` syntax.</small></p>
+<p>*exclude takes precedence over the `repos` and `repositoryQuery` syntax.</p>
 
-The [GitLab](https://github.com/sourcegraph/sourcegraph/blob/master/schema/gitlab.schema.json#L38-L91) and [Bitbucket Server](https://github.com/sourcegraph/sourcegraph/blob/master/schema/bitbucket_server.schema.json#L68-L113) fields for repository selection are similar to [GitHub](https://github.com/sourcegraph/sourcegraph/blob/master/schema/github.schema.json#L38-L75), but differ based on the search and selection options in the code host's API.
+The [GitLab](https://github.com/sourcegraph/sourcegraph/blob/main/schema/gitlab.schema.json#L38-L91) and [Bitbucket Server](https://github.com/sourcegraph/sourcegraph/blob/main/schema/bitbucket_server.schema.json#L68-L113) fields for repository selection are similar to [GitHub](https://github.com/sourcegraph/sourcegraph/blob/main/schema/github.schema.json#L38-L75), but differ based on the search and selection options in the code host's API.
 
 This has been implemented for [GitHub](https://docs.sourcegraph.com/admin/external_service/github#selecting-repositories-for-code-search), [GitLab](https://docs.sourcegraph.com/admin/external_service/gitlab#repository-syncing) and [Bitbucket Server](https://docs.sourcegraph.com/admin/external_service/bitbucket_server#repository-syncing) with additional code hosts being migrated to this model in 3.4.
 
@@ -110,7 +129,7 @@ Granting permissions in the Sourcegraph browser extension is necessary when usin
 
 <div style={{textAlign: 'center'}}>
 
-  ![Sourcegraph browser extension enabled prompt](/blog/sourcegraph-browser-extension-enable-prompt.png)
+![Sourcegraph browser extension enabled prompt](/blog/sourcegraph-browser-extension-enable-prompt.png)
 
 </div>
 
@@ -226,7 +245,7 @@ Additional languages will be added as part of each new release and if you want a
 - Fixed an issue where the site-admin repositories page `Cloning`, `Not Cloned`, `Needs Index` tabs were very slow on instances with thousands of repositories.
 - Fixed an issue where failing to syntax highlight a single file would take down the entire syntax highlighting service.
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#330) is available on GitHub.
+The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md#330) is available on GitHub.
 
 ## Thank you
 

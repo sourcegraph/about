@@ -126,7 +126,7 @@ _Huge thanks to Dan Robinson, Thorsten Ball, Stephen Gutekanst, Timothy Liu, and
 
 #### About the author
 
-_Beyang Liu is the CTO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Beyang was a software engineer at Palantir Technologies, where he developed new data analysis software for Fortune 500 companies. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab._
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._
 
 ### More posts like this
 

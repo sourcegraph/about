@@ -4,6 +4,8 @@ import GithubIcon from 'mdi-react/GithubIcon'
 import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 
+import { buttonStyle, buttonLocation } from '@data'
+
 const LEADERS: {
     name: string
     image: string
@@ -15,7 +17,7 @@ const LEADERS: {
 }[] = [
     {
         name: 'Quinn Slack',
-        image: '/staff/avatar-quinn.jpg',
+        image: '/staff/avatar-quinn.png',
         title: 'CEO and Cofounder',
         bio: 'https://handbook.sourcegraph.com/company/team#quinn-slack',
         github: 'https://github.com/sqs',
@@ -24,7 +26,7 @@ const LEADERS: {
     },
     {
         name: 'Beyang Liu',
-        image: '/staff/avatar-beyang.jpg',
+        image: '/staff/avatar-beyang.png',
         title: 'CTO and Cofounder',
         bio: 'https://handbook.sourcegraph.com/company/team#beyang-liu',
         github: 'https://github.com/beyang',
@@ -33,12 +35,21 @@ const LEADERS: {
     },
     {
         name: 'Christina Forney',
-        image: '/staff/avatar-christina.jpg',
-        title: 'VP of Product and Engineering',
+        image: '/staff/avatar-christina.png',
+        title: 'Product Advisor',
         bio: 'https://handbook.sourcegraph.com/company/team#christina-forney',
         github: 'https://github.com/christinaforney',
         linkedin: 'https://www.linkedin.com/in/christinaforney',
         twitter: 'https://twitter.com/christina4nee',
+    },
+    {
+        name: 'Nick Snyder',
+        image: '/staff/avatar-nick.png',
+        title: 'Engineering Advisor',
+        bio: 'https://handbook.sourcegraph.com/team/#nick-snyder',
+        github: 'https://github.com/nicksnyder',
+        linkedin: 'https://www.linkedin.com/in/nickdsnyder',
+        twitter: 'https://twitter.com/nickdsnyder',
     },
     {
         name: 'Dan Adler',
@@ -59,18 +70,9 @@ const LEADERS: {
         twitter: 'https://twitter.com/sourcegraph',
     },
     {
-        name: 'Kacie Jenkins',
-        image: '/staff/avatar-kacie.jpg',
-        title: 'VP Marketing',
-        bio: 'https://handbook.sourcegraph.com/company/team#kacie-jenkins',
-        github: 'https://github.com/sourcegraph',
-        linkedin: 'https://www.linkedin.com/in/kaciejenkins',
-        twitter: 'https://twitter.com/mskaciej',
-    },
-    {
         name: 'Carly Jones',
-        image: '/staff/avatar-carly.jpg',
-        title: 'VP Talent',
+        image: '/staff/avatar-carly.png',
+        title: 'VP Talent & People',
         bio: 'https://handbook.sourcegraph.com/company/team#carly-jones',
         github: 'https://github.com/carlyj0nes',
         linkedin: 'https://www.linkedin.com/in/carlycjones/',
@@ -90,52 +92,80 @@ const LEADERS: {
 export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div id="leadership" className={`leadership-section ${className}`}>
         <h2>Leadership</h2>
-        <div className="row my-5">
+        <div className="my-5 row">
             {LEADERS.map(staff => (
-                <div key={`${staff.name.replace(' ', '-').toLowerCase()}`} className="col-lg-4 my-4">
-                    <a href={staff.bio}>
+                <div key={`${staff.name.replace(' ', '-').toLowerCase()}`} className="my-4 col-lg-4">
+                    <a
+                        href={staff.bio}
+                        title={`Sourcegraph team: ${staff.name} - ${staff.title}`}
+                        data-button-style={buttonStyle.image}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
                         <img
-                            className="max-w-200 rounded-circle mb-4"
+                            className="mb-4 max-w-200 tw-rounded-full"
                             src={staff.image}
                             alt={`Sourcegraph team: ${staff.name} - ${staff.title}`}
                         />
                     </a>
+
                     <h5>
-                        <a href={staff.bio} className="text-dark">
+                        <a
+                            href={staff.bio}
+                            className="text-dark"
+                            title={staff.name}
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             {staff.name}
                         </a>
                     </h5>
+
                     <p className="mb-0">{staff.title}</p>
-                    <ul className="nav mt-1">
-                        <li className="nav-item p-1">
+
+                    <ul className="tw-ml-0 tw-mt-1 tw-list-none tw-flex">
+                        <li className="tw-mr-2">
                             <a
                                 href={staff.github}
                                 target="_blank"
                                 rel="nofollow noreferrer"
                                 aria-label="GitHub"
                                 className="text-dark"
+                                title="Github icon"
+                                data-button-style={buttonStyle.image}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
                             >
                                 <GithubIcon />
                             </a>
                         </li>
-                        <li className="nav-item p-1">
+                        <li className="tw-mr-2">
                             <a
                                 href={staff.twitter}
                                 target="_blank"
                                 rel="nofollow noreferrer"
                                 aria-label="Twitter"
                                 className="text-dark"
+                                title="Twitter icon"
+                                data-button-style={buttonStyle.image}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
                             >
                                 <TwitterIcon />
                             </a>
                         </li>
-                        <li className="nav-item p-1">
+                        <li className="tw-mr-2">
                             <a
                                 href={staff.linkedin}
                                 target="_blank"
                                 rel="nofollow noreferrer"
                                 aria-label="LinkedIn"
                                 className="text-dark"
+                                title="Linkedin icon"
+                                data-button-style={buttonStyle.image}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
                             >
                                 <LinkedinIcon />
                             </a>

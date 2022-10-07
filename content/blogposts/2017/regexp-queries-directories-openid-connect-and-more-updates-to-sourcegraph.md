@@ -9,17 +9,17 @@ tags: [
 ]
 slug: regexp-queries-directories-openid-connect-and-more-updates-to-sourcegraph
 description: 'We have been hard at work on improvements to Sourcegraph to give you great code search for your code.'
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 
 
 We've been hard at work on improvements to [Sourcegraph](https://docs.sourcegraph.com) to give you great code search on your company's code. Here's what's new and improved:
 
-
-<div>
-    <img className="pa1 ba b--light-7" alt="Changelog-RegExpSearch" src="//images.contentful.com/le3mxztn6yoo/7ChTngy1biw4caUM2c6iIM/749d73d57328c130269e4760bf181963/2017-11-13_23.43.01.gif"/>
-</div>
+<Figure 
+  src="//images.contentful.com/le3mxztn6yoo/7ChTngy1biw4caUM2c6iIM/749d73d57328c130269e4760bf181963/2017-11-13_23.43.01.gif"
+  alt="Changelog-RegExpSearch"
+/>
 
 Code search:
 * There is now a [directory listing view](https://sourcegraph.com/github.com/golang/go/-/tree/src) with the last Git commit for each subdirectory and file.
@@ -41,3 +41,7 @@ On Sourcegraph.com:
 * The “All repositories” scope is now available. You still need to specify repo: and/or repogroup: filters to narrow the search to 30 or fewer repositories. (Example: `repo:github.com/myorg/myquery`).
 
 Want to run a self-hosted instance of Sourcegraph with your own private code? [Install Sourcegraph with a single command.](https://docs.sourcegraph.com/#quickstart)
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

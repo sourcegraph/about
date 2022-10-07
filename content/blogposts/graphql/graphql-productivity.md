@@ -24,7 +24,7 @@ You should organize your types into its own code structure and take time to revi
 
 Define your schema
 
-```
+```js
     import faker from 'faker';
 
     export const typeDefs = `
@@ -48,7 +48,7 @@ Define your schema
 ```
 * decorator
 
-```
+```js
 
     import { configure, addDecorator } from '@storybook/react';
     import apolloStorybookDecorator from 'apollo-storybook-decorator';
@@ -69,7 +69,7 @@ Define your schema
 ```
 * write a storybook story.
 
-```
+```js
     import React from 'react';
     import { graphql } from 'react-apollo';
     import gql from 'graphql-tag';

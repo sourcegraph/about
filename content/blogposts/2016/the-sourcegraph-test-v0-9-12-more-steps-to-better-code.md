@@ -46,3 +46,7 @@ At [Sourcegraph](http://sourcegraph.com), we think every developer — in ev
 [**Share your score on Twitter!** ➜](https://twitter.com/intent/tweet?text=My%20dev%20tools%20are%20at%20__%2F12%20on%20the%20%23sourcegraphtest%20https%3A%2F%2Ftext.sourcegraph.com%2Fthe-sourcegraph-test-12-more-steps-to-better-code-e5c281850c&source=webclient&via=sourcegraph&related=sourcegraph)
 
 > Note: The Sourcegraph Test is v0.9 so we can incorporate any feedback before finalizing it. Did we miss anything? Tell us [**@sourcegraph**](https://twitter.com/sourcegraph)using the hashtag **#sourcegraphtest**.
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

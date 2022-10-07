@@ -1,33 +1,27 @@
 import { FunctionComponent } from 'react'
 
-import { Layout } from '@components'
-import { useHubSpot } from '@hooks'
+import { Layout, HubSpotForm } from '@components'
 
-const Uninstall: FunctionComponent = () => {
-    useHubSpot({
-        portalId: '2762526',
-        formId: 'a1bc77c9-019c-4f83-b5ba-327949f8e587',
-        targetId: 'hubspotEditorForm',
-    })
-
-    return (
-        <Layout>
-            <div>
-                <section className="text-center py-4 bg-dark text-light">
-                    <h1>Thank you for using Sourcegraph</h1>
-                </section>
-                <section className="p-4 mx-auto max-w-500 bg-white text-dark">
-                    <div className="measure-wide center">
-                        <div className="d-flex flex-column p-4 mx-auto">
-                            <h3>Why did you uninstall the Sourcegraph browser extension? </h3>
-                            <p>Your feedback helps us improve the product for everyone.</p>
-                            <div id="hubspotEditorForm" />
-                        </div>
+const Uninstall: FunctionComponent = () => (
+    <Layout>
+        <div>
+            <section className="tw-text-center py-4 bg-dark text-light">
+                <h1>Thank you for using Sourcegraph</h1>
+            </section>
+            <section className="p-4 tw-mx-auto max-w-500 bg-white text-dark">
+                <div className="measure-wide center">
+                    <div className="tw-flex tw-flex-col p-4 tw-mx-auto">
+                        <h3>Why did you uninstall the Sourcegraph browser extension?</h3>
+                        <p>Your feedback helps us improve the product for everyone.</p>
+                        <HubSpotForm
+                            formId="a1bc77c9-019c-4f83-b5ba-327949f8e587"
+                            inlineMessage="Thank you for your interest in Sourcegraph. Your feedback has been received and is valuable to us!"
+                        />
                     </div>
-                </section>
-            </div>
-        </Layout>
-    )
-}
+                </div>
+            </section>
+        </div>
+    </Layout>
+)
 
 export default Uninstall

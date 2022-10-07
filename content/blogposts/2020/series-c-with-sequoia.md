@@ -9,14 +9,16 @@ tags: [
 ]
 slug: series-c-with-sequoia
 heroImage: /blog/sourcegraph-social-img.png
-socialImage: https://about.sourcegraph.com/blog/sourcegraph-social-img.png
 published: true
 description: "Today we're announcing Sourcegraph's $50M Series C round of funding led by Sequoia. We'll use this funding to bring universal code search to more developers and companies."
 ---
 
 At [Sourcegraph](https://about.sourcegraph.com), we bring universal code search to every developer and company so they can innovate faster. Our product helps [customers](https://about.sourcegraph.com/customers) such as Amazon, Atlassian, Lyft, PayPal, Uber, and Yelp create the software you use every day. Today we're announcing a [$50M Series C round of funding](https://about.sourcegraph.com/press-release/sourcegraph-secures-series-c-sequoia/) led by Sequoia. [Andrew Reed](https://twitter.com/andrew__reed) from Sequoia will join our board. All major existing investors (Goldcrest, Craft, Redpoint, and Felicis) also participated.
 
-<img src="https://about.sourcegraph.com/blog/sourcegraph-social-img.png" alt="Sourcegraph raises $50M Series C round led by Sequoia"/>
+<Figure 
+  src="https://about.sourcegraph.com/blog/sourcegraph-social-img.png" 
+  alt="Sourcegraph raises $50M Series C round led by Sequoia"
+/>
 
 ## Why raise? How will this $50M help developers?
 
@@ -52,3 +54,7 @@ As an independent, universal code search company, we’re committed to integrati
 With Sequoia’s help, we’ll continue to grow Sourcegraph, expand awareness of the [Big Code problem](https://about.sourcegraph.com/press-release/big-code-survey-2020/), and bring universal code search to more developers and companies. Thank you to all of our customers and users who have helped us get here!
 
 (If you haven't yet tried Sourcegraph, [try Sourcegraph now](https://about.sourcegraph.com/)! It takes less than 5 minutes to set up and start searching your own code locally.)
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

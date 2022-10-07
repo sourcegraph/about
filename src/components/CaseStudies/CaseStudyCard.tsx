@@ -1,9 +1,10 @@
 import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
-import styles from './CaseStudyCard.module.scss'
+import { buttonStyle, buttonLocation } from '@data'
 
 interface CaseStudy {
     name: string
@@ -16,6 +17,18 @@ interface CaseStudy {
 
 // TODO: This data will eventually live in our CMS
 export const CASESTUDIES: CaseStudy[] = [
+    {
+        name: 'HashiCorp',
+        logo: '/external-logos/hashicorp-logo.svg',
+        title: 'HashiCorp streamlines cross-repository code search and fixes with Sourcegraph.',
+        url: '/case-studies/hashicorp-uses-sourcegraph-to-streamline-cross-repository-code-search',
+    },
+    {
+        name: 'Codecov',
+        logo: '/external-logos/codecov-logo.svg',
+        title: 'Codecov uses Sourcegraph to resolve incidents 12 times faster.',
+        url: '/case-studies/codecov-uses-sourcegraph-to-resolve-incidents-faster',
+    },
     {
         name: 'Nutanix',
         logo: '/external-logos/nutanix-logo.svg',
@@ -103,33 +116,50 @@ export const CASESTUDIES: CaseStudy[] = [
 ]
 
 export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boolean }> = ({
-    study: { name, logo, altTitle, title, url, linkText = 'Learn more' },
+    study: { name, logo, altTitle, title, url, linkText = 'Read the case study' },
     bwLogo,
 }) => (
-    <div className="flex-grow-1">
-        <div className="card-body">
+    <div className="tw-grow">
+        <div className="md:tw-pr-12">
             <img
-                className={classNames(styles.logo, 'max-w-200 mb-4', { 'brightness-0': bwLogo })}
-                height="60"
+                className={classNames('tw-max-w-[135px] tw-max-h-[60px] mb-4', { 'tw-brightness-0': bwLogo })}
                 src={logo}
                 alt={`${name} logo`}
             />
-            {altTitle && <h5 className="font-weight-bold">{altTitle}</h5>}
-            <p className="card-text">
-                {title}{' '}
-                <span className="text-nowrap">
-                    {url.includes('http') ? (
-                        <a href={url} className="card-link" target="_blank" rel="nofollow noreferrer">
-                            {linkText}.
-                        </a>
-                    ) : (
-                        <Link href={url} passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="card-link">{linkText}.</a>
-                        </Link>
-                    )}
-                </span>
-            </p>
+
+            {altTitle && <h5>{altTitle}</h5>}
+
+            <p>{title}</p>
+
+            {url.includes('http') ? (
+                <a
+                    href={url}
+                    target="_blank"
+                    rel="nofollow noreferrer"
+                    title={linkText + ': ' + title}
+                    data-button-style={buttonStyle.text}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                    className="tw-font-bold tw-no-underline"
+                >
+                    {linkText}
+                    <ArrowRightIcon size={20} className="ml-1 tw-inline" />
+                </a>
+            ) : (
+                <Link href={url} passHref={true}>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a
+                        title={linkText + ': ' + title}
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                        className="tw-font-bold tw-no-underline"
+                    >
+                        {linkText}
+                        <ArrowRightIcon size={20} className="ml-1 tw-inline" />
+                    </a>
+                </Link>
+            )}
         </div>
     </div>
 )

@@ -31,7 +31,7 @@ Sourcegraph recently [open sourced our browser extensions](/blog/sourcegraph-bro
 
 Before:
 
-```
+```text
 github.com/sourcegraph/browser-extensions (open source)
 └─┬ @sourcegraph/codeintellify@3.5.3 (open source)
   └── @sourcegraph/icons@1.15.0 (private)
@@ -43,7 +43,7 @@ The task of removing codeintellify's dependency on our private icons repository 
 
 After:
 
-```
+```text
 github.com/sourcegraph/browser-extensions (open source)
 └─┬ @sourcegraph/codeintellify@3.6.0 (open source)
   └── @sourcegraph/react-loading-spinner@0.0.6 (open source)

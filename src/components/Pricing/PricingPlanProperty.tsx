@@ -1,13 +1,13 @@
-import { FunctionComponent, ReactFragment } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
 interface Props {
-    description?: ReactFragment
-
+    description?: string | ReactNode
+    children: ReactNode
     className?: string
 }
 
 export const PricingPlanProperty: FunctionComponent<Props> = ({ description, className = '', children }) => (
-    <div className={`pricing-plan-property ${className} pb-1`}>
+    <div className={`tw-text-xl ${className} tw-pb-1`}>
         <div>{children}</div>
         <small className="text-muted">{description}</small>
     </div>

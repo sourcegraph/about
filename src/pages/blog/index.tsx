@@ -36,10 +36,11 @@ export const getStaticProps: GetStaticProps = async ({ preview = false }) => {
         })
     )
 
+    const publishedPosts = posts.filter(post => post.frontmatter.published)
     return {
         props: {
-            allPosts: posts,
-            posts: posts.slice(0, 20),
+            allPosts: publishedPosts,
+            posts: publishedPosts.slice(0, 20),
             preview,
         },
     }

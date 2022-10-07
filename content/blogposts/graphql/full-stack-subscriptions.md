@@ -7,7 +7,7 @@ tags: [
   "graphql"
 ]
 slug: full-stack-subscriptions
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 
@@ -86,13 +86,14 @@ Subscriptions introduce a certain complexity to the stack:
 
 The solution to this differ depending on the scale:
 
+<TableWrapper>
 |                           | Single Process                                    | Distributed               |
 |---------------------------|---------------------------------------------------|---------------------------|
 | Streaming Transport       | WebSockets, SSE, HTTP long polling, RSocket, MQTT | (same)                    |
 | Connection Handling       | In process/Middleware                             | Gateway/Proxy             |
 | Source Stream             | EventEmitter, .NET Events                         | Redis, Kafka, SQS, Pusher |
 | Subscription Session Data | In-memory collection, file                        | Database, Cache           |
-
+</TableWrapper>
 
 # Subscriptions at Facebook
 
@@ -118,21 +119,24 @@ An example for observing an event is observing the event of _increments_ to the 
 
 ## Benefits
 
+<TableWrapper>
 | Subscriptions             | Live Queries               |
 |---------------------------|----------------------------|
 | Know why data changed     | Convert any existing query |
 | Fine control over publish | Simple fallback (polling)  |
 |                           | No server-side changes     |
+</TableWrapper>
 
 ## Costs
 
+<TableWrapper>
 | Subscriptions          | Live Queries          |
 |------------------------|-----------------------|
 | Streaming support      | Streaming support     |
 | Reactive API/Language  | Reactive API/Language |
 | Streaming/event system | Reactive data layer   |
 | Domain-specific events |                       |
-
+</TableWrapper>
 
 # Resources
 

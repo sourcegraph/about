@@ -6,33 +6,34 @@ import { PodcastSubscribeLinks } from '../Podcast/PodcastSubscribeLinks'
 
 export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
     blog: {
-        title: 'strings: the Sourcegraph blog',
+        title: 'Blog',
         baseUrl: '/blog',
         belowTitle: (
             <>
-                <p className="mb-1">A collection of characters, stories, and other elements</p>
+                <p className="mb-1 tw-text-xl">
+                    Our changelog, announcements, dev posts, and anything else we think you'll find interesting.
+                </p>
             </>
         ),
         meta: {
-            title: 'strings: the Sourcegraph blog',
-            description:
-                "News from Sourcegraph: our changelog, announcements, tech blog posts, and anything else we think you'll find interesting.",
+            title: 'Sourcegraph blog',
+            description: "Our changelog, announcements, dev posts, and anything else we think you'll find interesting.",
         },
     },
     press: {
-        title: 'Press release',
-        baseUrl: '/press-release',
+        title: 'Press releases',
+        baseUrl: '/press',
         meta: {
-            title: 'Sourcegraph - Press release',
-            description: 'Press release from Sourcegraph',
+            title: 'Sourcegraph - Press releases',
+            description: 'Press releases from Sourcegraph',
         },
     },
     podcast: {
         title: 'Sourcegraph Podcast',
         belowTitle: (
             <>
-                <p className="mb-1">Conversations, stories, and insights from dev tool creators</p>
-                <PodcastSubscribeLinks className="text-muted" linkClassName="mx-1" />
+                <p className="my-2 tw-text-xl">Conversations, stories, and insights from dev tool creators</p>
+                <PodcastSubscribeLinks linkClassName="mx-1" />
             </>
         ),
         baseUrl: '/podcast',

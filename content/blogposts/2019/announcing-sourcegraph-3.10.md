@@ -6,7 +6,7 @@ authors:
 publishDate: 2019-11-20T10:00-07:00
 tags: [blog]
 slug: sourcegraph-3.10
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 description: "Sourcegraph 3.10: Improved search autocompletion, native GitLab integration, and search and replace campaigns"
 ---
@@ -100,12 +100,12 @@ Customers wanting better indexed search performance or wishing to add many more 
 
 The Kubernetes [deployment manifest](https://github.com/sourcegraph/deploy-sourcegraph) for indexed-search services has changed from a Normal Service to a Headless Service. This enables Sourcegraph to individually resolve indexed-search pods. Services are immutable, so a [migration is required](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#310).
 
-<div className="alert alert-warning mx-auto" style={{width: '40rem'}}>
+<Alert type="warning">
   <div>
     <strong>IMPORTANT: required migration for all Kubernetes deployments.</strong>
     Please see the <a href="https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#310">3.10 migration guide</a> for details.
   </div>
-</div>
+</Alert>
 
 ## Fully automated release testing process
 
@@ -172,7 +172,7 @@ As part of Sourcegraph’s ongoing commitment to providing the highest quality, 
 - Reverted [#6094](https://github.com/sourcegraph/sourcegraph/pull/6094) because it introduced a minor security hole involving only Grafana.
   [#6075](https://github.com/sourcegraph/sourcegraph/issues/6075) will be fixed with a different approach.
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#3.10) is available on GitHub.
+The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md#3.10) is available on GitHub.
 
 ## Thank you
 

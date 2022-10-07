@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, GatedResourceLayout } from '@components'
+import { Layout, GatedResourceLayout, Hero } from '@components'
 
 export const Guide: FunctionComponent = () => (
     <Layout
@@ -9,18 +9,20 @@ export const Guide: FunctionComponent = () => (
             description:
                 'Learn about challenges open source projects and private companies face onboarding developers and best practices to onboard new developers more effectively.',
         }}
-        className="navbar-white"
+        hero={
+            <Hero
+                variant="darkSimpleGrid"
+                title="Optimizing developer onboarding"
+                subtitle="Lessons learned and secrets to success from 31 companies and open source projects"
+            />
+        }
     >
         <GatedResourceLayout
             title="Optimizing developer onboarding"
-            subtitle="Lessons learned and secrets to success from 31 companies and open source projects"
             formLabel="Download the guide"
-            form={{
-                formId: 'af3bc75e-c4f0-43e7-9829-c1d5d59e0a56',
-                onFormSubmitted: () => window.open('/guides/optimizing-developer-onboarding.pdf'),
-            }}
+            resource="/guides/optimizing-developer-onboarding.pdf"
             description={
-                <section className="col-md-6 col-12 pr-lg-6">
+                <section className="col-md-6 col-12 lg:tw-pr-3xl">
                     <p>
                         What are the processes and tools that make for a successful developer onboarding program? We
                         surveyed 31 open source maintainers and project leads to understand the impact and intricacies

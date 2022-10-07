@@ -26,17 +26,19 @@ A few years ago, Amir was hunched over his laptop. When he realized he needed to
 
 Over the next few years, he refined his hardware for comfort, work, and more efficient layouts. He built new keyboards, trying out different mechanical switches (check out the [show notes](#Show-notes) below for some of them), and developed muscle memory with a phonetic mapping for some keys and operators, set up with [QMK](https://qmk.fm/). He went back to a traditional desk, tried different task chairs, and fine-tuned their height to keep his knees and feet in the right places.
 
-<figure>
-    <div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/Setup_Evolution.mp4" data-cookieconsent="ignore"></video>
-    </div>
-    <figcaption style={{textAlign: 'center', fontStyle: 'italic'}}> See Amir's setup over the years</figcaption>
-</figure>
+<Video 
+  source={{webm: 'blog/dev-tool-time/amir-rajan/Setup_Evolution', mp4: 'blog/dev-tool-time/amir-rajan/Setup_Evolution'}} 
+  loop={false}
+  title="See Amir's setup over the years" 
+  caption="See Amir's setup over the years"
+  controls={true}
+  autoPlay={false}
+/>
 
 Two significant monitor changes led to Amir's most recent iteration. He purchased one, then another, 49" curved, ultrawide monitor, which provided the screen real estate for the right number of correctly sized windows. Then, he replaced one of these with the Apple 32" Pro Display XDR monitor, solving his need to verify color levels and quality as he built games for different platforms and displays.
 
 <div style={{position:'relative'}}>
-    <blockquote className="twitter-tweet" style={{textAlign:'center'}} data-dnt="true"><p lang="en" dir="ltr">Iteration 16 of my dev setup: <a href="https://t.co/xwtMJE32hc">pic.twitter.com/xwtMJE32hc</a></p>&mdash; Amir Rajan (@amirrajan) <a href="https://twitter.com/amirrajan/status/1441174275386449921?ref_src=twsrc%5Etfw">September 23, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <blockquote className="twitter-tweet" style={{textAlign:'center'}} data-dnt="true"><p lang="en" dir="ltr">Iteration 16 of my dev setup: <a href="https://t.co/xwtMJE32hc">pic.twitter.com/xwtMJE32hc</a></p>&mdash; Amir Rajan (@amirrajan) <a href="https://twitter.com/amirrajan/status/1441174275386449921?ref_src=twsrc%5Etfw">September 23, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 </div>
 
 Amir keeps an updated gist with links to his setups since 2018. Check them all out here: [Evolution of Amir's battle stage](https://gist.github.com/amirrajan/926cb51ee49a661abdfa6656662c07ca)!
@@ -47,12 +49,14 @@ Amir's hardware setup has developed over time to increase his efficiency and imp
 
 DragonRuby Game Toolkit emerged from a desire for a game engine with a fast feedback loop. Ruby proved to be a powerful language and its dynamic character keeps open the possible futures of any game Amir works on. The foundation of a game–its programming language–needs to be flexible enough to not restrict it.
 
-<figure>
-    <div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/Why_Ruby.mp4" data-cookieconsent="ignore"></video>
-    </div>
-    <figcaption style={{textAlign:'center', fontStyle: 'italic'}}>Hear Amir explain why he started writing games in Ruby</figcaption>
-</figure>
+<Video 
+  source={{webm: 'blog/dev-tool-time/amir-rajan/Why_Ruby', mp4: 'blog/dev-tool-time/amir-rajan/Why_Ruby'}} 
+  loop={false}
+  title="Hear Amir explain why he started writing games in Ruby" 
+  caption="Hear Amir explain why he started writing games in Ruby"
+  controls={true}
+  autoPlay={false}
+/>
 
 ## The ergonomic long-game
 
@@ -60,12 +64,14 @@ In designing and adapting for comfort, health, and efficiency, Amir isn't focuse
 
 > "Philosophically, the whole journey I'm taking is based on the idea that I'm going to be programming the rest of my life. Every iteration, every improvement I make, every dive into the bowels of Emacs comes at that upfront investment to learn and deal with these pains so that over time this environment becomes home to me."
 
-<figure>
-    <div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/Setup_ROI.mp4" data-cookieconsent="ignore"></video>
-    </div>
-    <figcaption style={{textAlign:'center', fontStyle: 'italic'}}>Listen to Amir talk about the long-game of ergonomics</figcaption>
-</figure>
+<Video 
+  source={{webm: 'blog/dev-tool-time/amir-rajan/Setup_ROI', mp4: 'blog/dev-tool-time/amir-rajan/Setup_ROI'}} 
+  loop={false}
+  title="Listen to Amir talk about the long-game of ergonomics" 
+  caption="Listen to Amir talk about the long-game of ergonomics"
+  controls={true}
+  autoPlay={false}
+/>
 
 ## Show notes
 
@@ -108,6 +114,7 @@ In designing and adapting for comfort, health, and efficiency, Amir isn't focuse
 
 Check out the recording of the episode below, and be sure to [sign up for upcoming events](https://info.sourcegraph.com/dev-tool-time)!
 
-<div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
-    <iframe className="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/au_rC39QyzM?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowFullScreen="" allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture" frameBorder="0"></iframe>
-</div>
+<YouTube 
+    title="Dev Tool Time with Amir Rajan"
+    id="au_rC39QyzM"
+/>

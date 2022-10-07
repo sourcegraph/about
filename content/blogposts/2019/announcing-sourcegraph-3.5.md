@@ -10,7 +10,7 @@ tags: [
   blog
 ]
 slug: sourcegraph-3.5
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 description: 'Sourcegraph 3.5: Powerful new search filters, improved configuration, and Bitbucket Server repository permissions'
 ---
@@ -56,7 +56,7 @@ Experimental feature to convey the status of cloning repositories.
 
 Sourcegraph now supports multi-line searches by matching on `\n`, providing new search use cases. For example, to identify usage of Python decorators at the module and className level:
 
-```
+```text
 lang:python ^\s*@.*\n\s*def
 ```
 
@@ -70,13 +70,13 @@ Examples:
 
 - Find Dockerfiles requiring upgrades from an obsolete version of Debian so you can contact the maintainers:
 
-    ```
+    ```text
     file:Dockerfile FROM debian\:jessie|8 repohascommitafter:”1 month ago”
     ```
 
 - Find Terraform files with an `aws_instance` resource to analyze EBS volume configuration:
 
-    ```
+    ```text
     aws_instance lang:hcl repohascommitafter:"1 month ago"
     ```
 
@@ -90,19 +90,19 @@ Examples:
 
 - Find applications with a Dockerfile, written in Go, that use Travis CI:
 
-    ```
+    ```text
     repohasfile:Dockerfile file:\.travis.yml "language: go"
     ```
 
 - Find applications with a Dockerfile that do not contain a `.dockerignore` file:
 
-    ```
+    ```text
     -repohasfile:\.dockerignore file:Dockerfile
     ```
 
 - Find Python applications using `pytest` without a pytest.ini or pytest.conf file:
 
-    ```
+    ```text
     -repohasfile:(pytest\.ini|pytest\.conf) lang:python "import pytest"
     ```
 
@@ -148,7 +148,7 @@ To address this, a [new `orgs` field](https://docs.sourcegraph.com/admin/externa
 
 The `orgs` field is a list of GitHub organizations:
 
-```
+```json
 “orgs”: [
     “gorilla”
 ]
@@ -177,7 +177,7 @@ To give more visibility into the status of repository syncing and updating opera
 
 To enable the repository syncing status indicator, add this setting to your site configuration:
 
-```
+```json
 "experimentalFeatures": { "statusIndicator": "enabled" }
 ```
 

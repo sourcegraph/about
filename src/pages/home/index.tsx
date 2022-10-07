@@ -1,29 +1,31 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, IntegrationsSection, SelfHostedSection } from '@components'
+import { ContentSection, CoreFeatures, CtaSection, Layout, IntegrationsSection } from '@components'
 
-import Features from './_Features'
+import Banner from './_Banner'
 import Hero from './_Hero'
-import UseCases from './_UseCases'
 
 const Home: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph | Code Intelligence Platform',
+            title: 'Sourcegraph - Code Intelligence Platform',
             description:
-                'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Soucegraph.',
+                'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Sourcegraph.',
         }}
         heroAndHeaderClassName="bg-white"
+        className="bg-white"
     >
+        <Banner />
+
         <Hero />
 
-        <UseCases />
-
-        <Features />
+        <ContentSection background="white">
+            <CoreFeatures />
+        </ContentSection>
 
         <IntegrationsSection />
 
-        <SelfHostedSection />
+        <CtaSection background="saturn" />
     </Layout>
 )
 

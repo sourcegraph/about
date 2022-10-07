@@ -6,7 +6,7 @@ authors:
 publishDate: 2019-12-20T10:00-07:00
 tags: [blog]
 slug: sourcegraph-3.11
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 description: "Sourcegraph 3.11: Structural search, removed management console, language statistics, and NPM credentials campaign"
 ---
@@ -79,12 +79,12 @@ The management console has been completely removed and there is now a single sit
 
 In the rare event that your Sourcegraph instance is misconfigured and causes the UI to become inaccessible, we have added an [escape hatch file](https://docs.sourcegraph.com/admin/config/site_config#editing-your-site-configuration-if-you-cannot-access-the-web-ui) that allows you to edit your site configuration without the web UI. Upon saving, the updated configuration will be synchronized from the file and applied to your Sourcegraph instance.
 
-<div className="alert alert-warning mx-auto" style={{width: '40rem'}}>
+<Alert type="warning">
   <div>
     <strong>NOTE:</strong>
     If you’re using the <code>CRITICAL_CONFIG_FILE</code> or <code>SITE_CONFIG_FILE</code> environment variables please see our <a href="https://docs.sourcegraph.com/admin/migration/3_11#management-console-removal">management console migration guide</a> for more details.
   </div>
-</div>
+</Alert>
 
 ## High-level health monitoring
 
@@ -186,7 +186,7 @@ Sourcegraph is sponsoring [GitLab Commit](https://about.gitlab.com/events/commit
 
 - The management console has been removed. All critical configuration previously stored in the management console will be automatically migrated to your site configuration. For more information about this change, or if you use `SITE_CONFIG_FILE` / `CRITICAL_CONFIG_FILE`, please see the [migration notes for Sourcegraph v3.11+](https://docs.sourcegraph.com/@3.11/admin/migration/3_11).
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#3.11) is available on GitHub.
+The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md#3.11) is available on GitHub.
 
 ## Thank you
 

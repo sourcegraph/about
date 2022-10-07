@@ -27,7 +27,7 @@ We’re in the earliest days of Universal Code Search and in many ways it feels 
 
 ## Didn’t you just raise funding?
 
-We’ve never been busier. We announced our [$50M Series C led by Sequoia](/blog/series-c-with-sequoia/) in December, and things haven’t slowed down. We've seen significant growth in [major enterprise and leading tech companies, financial institutions, and governmental organizations](/customers). Over 800,000 developers have used Soucegraph in the last 12 months, including devs from General Electric, Uber, Plaid, and 3 out of 5 FAANG.
+We’ve never been busier. We announced our [$50M Series C led by Sequoia](/blog/series-c-with-sequoia/) in December, and things haven’t slowed down. We've seen significant growth in [major enterprise and leading tech companies, financial institutions, and governmental organizations](/customers). Over 800,000 developers have used Sourcegraph in the last 12 months, including devs from General Electric, Uber, Plaid, and 3 out of 5 FAANG.
 
 We also launched [Batch Changes](/batch-changes/), which lets devs automate large-scale changes to keep code updated and secure and reduce tech debt.
 
@@ -41,4 +41,7 @@ Our new and existing investors will partner with us to help launch new products 
 
 We have a lot more coming down the pipe. And if you haven't yet tried Sourcegraph, [try Sourcegraph now](https://docs.sourcegraph.com)! It takes less than five minutes to set up and start searching your own code locally.
 
-<img src="/blog/SG-signup-QR.png" width="77" height="77" alt="Sourcegraph Sign Up QR Code"/>
+<Figure 
+  src="/blog/SG-signup-QR.png"
+  alt="Sourcegraph Sign Up QR Code"
+/>

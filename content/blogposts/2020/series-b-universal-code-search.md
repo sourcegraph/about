@@ -6,7 +6,7 @@ authors:
 publishDate: 2020-03-03T05:00
 tags: [blog]
 slug: series-b-universal-code-search
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 
@@ -19,3 +19,7 @@ Code search is most valuable when it's universal–every programming language, e
 <div className="vimeo-embed embed-responsive embed-responsive-16by9 ">
   <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/353422112?color=0CB6F4&amp;title=&amp;byline=&amp;muted=1&amp;controls=1&amp;autoplay=1&amp;autopause=0&amp;loop=1&amp;time=0&amp;texttrack=en.subtitles" allowFullScreen="" allow="autoplay; fullscreen"></iframe>
 </div>
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

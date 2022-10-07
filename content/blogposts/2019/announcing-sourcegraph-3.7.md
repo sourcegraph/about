@@ -8,7 +8,7 @@ tags: [
   blog
 ]
 slug: sourcegraph-3.7
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 description: 'Sourcegraph 3.7: Improved performance, efficiency, accuracy, and reliability'
 ---
@@ -117,7 +117,9 @@ You can now set `EXTSVC_CONFIG_ALLOW_EDITS=true` and `SITE_CONFIG_ALLOW_EDITS=tr
 ## In case you missed it...
 
 <a href="/go">
-  <img src="https://about.sourcegraph.com/gophercon-2019/gophercon-2019-banner.png" alt="GopherCon liveblog San Diago 2019" />
+  <Figure 
+    src="https://about.sourcegraph.com/gophercon-2019/gophercon-2019-banner.png"
+    alt="GopherCon liveblog San Diago 2019"/>
 </a>
 
 We were proud to host the official [liveblog for GopherCon 2019](/go), and all 28 talks are now live.
@@ -169,7 +171,7 @@ Some of our favorites were:
 - New site config option `branding.brandName` configures the brand name to display in the Sourcegraph \<title\> element.
 - `repositoryPathPattern` option added to the "Other" external service type for repository name customization.
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#370) is available on GitHub.
+The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md#370) is available on GitHub.
 
 ## Thank you
 

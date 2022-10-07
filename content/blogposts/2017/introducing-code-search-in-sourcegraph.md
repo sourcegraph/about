@@ -8,7 +8,7 @@ tags: [
   "blog"
 ]
 slug: introducing-code-search-in-sourcegraph
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 
@@ -25,3 +25,7 @@ We worked hard to make sure code search is fast, responsive, and gives you just 
 We’re excited about this release and hope to hear your feedback. As always, get in touch using the Feedback button on the bottom right of Sourcegraph or email [hi@sourcegraph.com](mailto:hi@sourcegraph.com).
 
 But what about searching across all my of team’s code, you ask? Stay tuned.
+
+### About the author
+
+_Quinn Slack is the CEO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company dedicated to improving home lending and was an egineer at Palantir, where he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. Quinn has a BS in Computer Science from Stanford, you can chat with him on Twitter [@sqs](https://twitter.com/sqs)._

@@ -17,14 +17,15 @@ const CONTENT_PARENT_DIRECTORY = './content/'
 const PodcastPage: NextPage<PageProps> = ({ post, content }) => {
     const title = post.frontmatter.title
     const description = post.frontmatter.description ? post.frontmatter.description : post.excerpt
-    const image =
-        post.frontmatter.socialImage ?? 'https://about.sourcegraph.com/meta/sourcegraph-social-image-share-02.png'
+    const image = post.frontmatter.socialImage
+    const videoID = post.frontmatter.videoID
     const canonical = post.frontmatter.canonical
     const externalTitle = post.frontmatter.externalTitle
     const externalDescription = post.frontmatter.externalDescription
     const meta = {
         title,
         image,
+        videoID,
         description,
         externalTitle,
         externalDescription,
@@ -46,10 +47,9 @@ const PodcastPage: NextPage<PageProps> = ({ post, content }) => {
                             post={post}
                             content={content}
                             url={urlToPost(post)}
-                            className="post-template__post"
-                            headerClassName="card-header bg-white border-bottom-0 text-center pt-5"
-                            titleClassName=""
-                            titleLinkClassName="post-template__post-title-link"
+                            className="post-template__post podcast-post max-w-750 tw-mx-auto"
+                            headerClassName="card-header bg-white border-bottom-0 tw-text-center tw-pt-md"
+                            contentClassName="podcast-post__body"
                         />
                     </div>
                 </div>

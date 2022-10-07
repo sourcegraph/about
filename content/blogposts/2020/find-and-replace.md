@@ -53,7 +53,7 @@ table.brain td img {
   <tbody>
     <tr>
       <td>
-        <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain1.jpg"></img>
+        <Figure src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain1.jpg" alt="Stage 1 Meme: You start with manual find-replace" />
       </td>
       <td>
       You start with manual find-replace, maybe with some regex in your editor.
@@ -61,7 +61,7 @@ table.brain td img {
     </tr>
     <tr>
       <td>
-        <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain2.jpg"></img>
+        <Figure src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain2.jpg" alt="Stage 2 Meme: You finally learn grep and sed" />
       </td>
       <td>
       You bite the bullet and finally learn <code className="language-text">grep</code> and <code className="language-text">sed</code>,
@@ -70,7 +70,7 @@ table.brain td img {
     </tr>
     <tr>
       <td>
-        <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain3.jpg"></img>
+        <Figure src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain3.jpg" alt="Stage 3 Meme: You learn ripgrep and codemod, and maybe parsers" />
       </td>
       <td>
       You get annoyed wth <code className="language-text">grep</code> and <code className="language-text">sed</code> and find
@@ -80,7 +80,7 @@ table.brain td img {
     </tr>
     <tr>
       <td>
-        <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain4.jpg"></img>
+        <Figure src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain4.jpg" alt="Stage 4 Meme: You discover comby" />
       </td>
       <td>
       In your quest for ever greater efficiency, you discover <code className="language-text">comby</code>, an awesome new pattern-matching language for code.
@@ -128,11 +128,13 @@ or icon with the `.*` symbol.
 
 With regexes, you can do stuff like this:
 
+<TableWrapper>
 | Description                                         | Regex       | Match              | Does not match |
 |-----------------------------------------------------|-------------|--------------------|----------------|
 | Find all symbol names starting with "foo"           | `foo\w*`    | fooBar             | barFoo         |
 | Find all characters between double quotes           | `"[^"]"`    | "hello&nbsp;world" | hello world'   |
 | Find all references to fields of a certain variable | `base\.\w+` | base.Path          | basePath       |
+</TableWrapper>
 
 There are different dialects of regex. In this post, we'll use [**POSIX Extended Regular
 Expressions**](https://www.gnu.org/software/findutils/manual/html_node/find_html/posix_002dextended-regular-expression-syntax.html#posix_002dextended-regular-expression-syntax).
@@ -157,10 +159,12 @@ Regex has a notion of **capturing groups** for find-replace operations. Capturin
 part of the overall match so they can be referenced in a replacement pattern. For example, here's a
 regex and replacement pattern that will reverse the order of arguments in a function call:
 
+<TableWrapper>
 | Input &rarr; Output | `myFunc(foo, bar)` &rarr; `myFunc(bar, foo)` |
 |---------------------|----------------------------------------------|
 | Regex               | `myFunc\((\w+), (\w+)\)`                     |
 | Replacement pattern | `myFunc(\2, \1)`[^2]                         |
+</TableWrapper>
 
 In the regex above, the literal parens are escaped `\(\)` while the unescaped parens `()` capture
 the parts of the match that correspond to the arguments to the function.
@@ -202,7 +206,7 @@ Let's say we want to add an additional parameter to call sites of the function, 
 file](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@e6691da7035873fd6394e16cdf32d2f8537fb9e1/-/blob/cmd/frontend/internal/app/errorutil/handlers.go#L19:6)). In
 Emacs, I can describe the change I'd like to make in the following keystrokes:
 
-```
+```emacs
 Ctrl-x (                   # begin recording the macro
 Ctrl-s errorutil.Handler(  # search for the pattern
 Ctrl-Alt-n Ctrl-b          # jump to one character before the end parens
@@ -215,7 +219,7 @@ Once I've recorded the macro, I can replay my keystrokes with `C-x e` and can ho
 it repeatedly.
 
 Here's another example involving data transformation. Say you want to turn an HTML table like this:
-```
+```html
 <table>
   <tr><td>John</td><td>25</td><tr>
   <tr><td>Alice</td><td>24</td></tr>
@@ -224,7 +228,7 @@ Here's another example involving data transformation. Say you want to turn an HT
 </table>
 ```
 into a JSON list like this:
-```
+```json
 [
   { "name": "John", "age": 25 },
   { "name": "Alice", "age": 24},
@@ -233,7 +237,7 @@ into a JSON list like this:
 ]
 ```
 To do that with keyboard macros in Emacs, you can type this:
-```
+```emacs
 Ctrl-x (                             # begin recording the macro
 Ctrl-s < t d Ctrl-f                  # move cursor to 'John'
 Ctrl-<space> Ctrl-a Ctrl-w           # delete everything on the line prior to 'John'
@@ -323,12 +327,13 @@ Suppose again you're adding an additional parameter to the `errorutil.Handler` [
 and now need to update all call sites of that function to pass some default value for the extra
 argument. You can do that[^5] in a one-liner with `grep` and `sed`:
 
-```
+```perl
 grep -lRE 'errorutil\.Handler' | xargs sed -i -E 's/Handler\(([A-Za-z0-9_\.]+)\)/Handler(\1, "default value")/'
 ```
 
 It fits on one line! But it's not the clearest thing in the world, so let's break it down[^6]:
 
+<TableWrapper>
 | Part | Description |
 |-|-|
 | `grep` | We're using `grep` to generate a list of filenames that may contain the specified pattern. We'll then feed these to `sed` to do the actual replacing. This is necessary for performance reasons, as running `sed` over all the files in your repository will be slow. |
@@ -340,6 +345,7 @@ It fits on one line! But it's not the clearest thing in the world, so let's brea
 | `-i` | This flag tells `sed` to modify files "in place", rather than printing the transformed contents to standard output. |
 | `-E` | This flag tells `sed` to used extended regex syntax. |
 | `s`<br></br>`/`<br></br>`Handler\(([A-Za-z0-9_\.]+)\)`<br></br>`/`<br></br>`Handler(\1, "default value")`<br></br>`/` | This specifies the replacement pattern and is a bit of a doozy, so let's break it down even further. This is actually an expression in the `sed` language. `s` is the "substitute" command. The character immediately after `s` specifies the delimiter that will separate arguments to `s`. (In this case, it is `/`, but we can make it any character we want so long as we're consistent.) The first argument, `Handler\(([A-Za-z0-9_\.]+)\)`, is a regular expression with a matching group to capture the argument to the function call. The second argument, `Handler(\1, "default value")`, is a replacement pattern, which references the regex capture group with `\1`. |
+</TableWrapper>
 
 If all this is clear as mud, don't worry—you're not alone. `grep` and `sed` are powerful tools, but
 they're not super beginner-friendly.[^7] [^8]
@@ -349,7 +355,7 @@ faster and has more user-friendly defaults (e.g., you don't need to remember to 
 `-RE` to get the behavior you want). Here's the one-liner above rewritten with ripgrep, instead of
 grep:
 
-```
+```perl
 rg -l 'errorutil\.Handler' | xargs sed -i -E 's/Handler\(([A-Za-z0-9_\.]+)\)/Handler(\1, "default value")/'
 ```
 
@@ -364,10 +370,11 @@ interactively. This is the approach taken by [Codemod](https://github.com/facebo
 
 Here's how you would use `codemod` to add an additional argument to `errorutil.Handler` call sites:
 
-```
+```python
 codemod -m -d . --extensions go 'errorutil.Handler\(([A-Za-z0-9_\.]+)\)' 'errorutil.Handler(\1, "default value")'
 ```
 
+<TableWrapper>
 | Part                                     | Description                                                                                                  |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | `codemod`                                | The Codemod command.                                                                                         |
@@ -376,6 +383,7 @@ codemod -m -d . --extensions go 'errorutil.Handler\(([A-Za-z0-9_\.]+)\)' 'erroru
 | `--extensions go`                        | Restrict search to files ending in `.go`.                                                                    |
 | `errorutil.Handler\(([A-Za-z0-9_\.]+)\)` | The "find" regex, with a capturing group.                                                                    |
 | `errorutil.Handler(\1, "default value")` | The replace pattern.                                                                                         |
+</TableWrapper>
 
 When you run the command, `codemod` will prompt you to accept, reject, or make further edits to each
 change:
@@ -430,10 +438,11 @@ this domain.[^10]
 
 Here is a Comby one-liner that handles adding an extra argument to `errorutil.Handler`:
 
-```
+```ocaml
 rg -l errorutil | xargs comby -in-place 'errorutil.Handler(:[1])' 'errorutil.Handler(:[1], "default value")'
 ```
 
+<TableWrapper>
 | Part | Description |
 |-|-|
 | `rg -l errorutil` | Use ripgrep to print names of all code files that contain "errorutil" |
@@ -441,6 +450,7 @@ rg -l errorutil | xargs comby -in-place 'errorutil.Handler(:[1])' 'errorutil.Han
 | `comby -in-place` | Edit the files in-place with the `comby` CLI |
 | `errorutil.Handler(:[1])` | The match pattern, which sub-matches the argument using the Comby [hole syntax](https://comby.dev/#basic-usage) |
 | `errorutil.Handler(:[1], "default value")` | The replace pattern, which references the sub-matched hole |
+</TableWrapper>
 
 Contrast the relative readability of this `comby` example with the regex we wrote for `sed` earlier
 in this post.
@@ -448,14 +458,14 @@ in this post.
 Comby can also express patterns that cannot be expressed in any regex. Consider the following call
 site:
 
-```
+```ocaml
 errorutil.Handler(someOtherFunction(blah))
 ```
 
 This call site would not be selected by our earlier regular expression, which doesn't account for
 the nested parens. We could update the regex to account for one layer of nested parens:
 
-```
+```ocaml
 errorutil\.Handler\((\w*\(\w*\)|\w+)\)
 ```
 
@@ -471,12 +481,13 @@ it easy.
 
 Here are a few more examples:
 
+<TableWrapper>
 | Description | Comby invocation |
 |-|-|
 | Reverse function argument order | `comby 'myFunc(:[1], :[2])' 'myFunc(:[2], :[1])'` |
 | Convert HTML table to JSON | `comby '<tr><td>:[1]</td><td>:[2]</td></tr>' '":[1]": :[2]'` |
 | Update Go error handling to use wrapped errors | `comby 'fmt.Errorf(":[head]%s:[tail]", err)' 'fmt.Errorf(":[head]%w:[tail]", err)'` |
-
+</TableWrapper>
 
 Comby's advantages can be summed up in two words: expressivity and ergonomics.
 * Expressivity: You can capture patterns that involve nested delimiters, which are inexpressible with regex.
@@ -543,7 +554,7 @@ Here's how you'd do that in a campaign:
 
 1. Create a JSON file named `wrapped-errors.action.json` with the following contents:
 
-   ```
+   ```json
    {
      "scopeQuery": "repo:^github.com/sourcegraph/ fmt.Errorf",
      "steps": [
@@ -658,3 +669,7 @@ resources:
     Sourcegraph was to put his research into practice among as many developers as possible. If you
     also have a fantastic new idea that can improve the productivity of many developers, shoot me a
     message at [beyang@sourcegraph.com](mailto:beyang@sourcegraph.com)!
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

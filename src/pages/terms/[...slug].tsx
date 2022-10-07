@@ -3,7 +3,7 @@ import path from 'path'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import { Layout, EmbeddedHubSpot } from '@components'
+import { Layout, Badge, HubSpotForm, TableWrapper } from '@components'
 import { Page } from '@interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '@lib'
 
@@ -16,16 +16,39 @@ export interface PageProps {
 
 const CONTENT_PARENT_DIRECTORY = './content/'
 
-const components = { EmbeddedHubSpot }
+const components = { Badge, HubSpotForm, TableWrapper }
 
-const TermPage: NextPage<PageProps> = ({ page, content }) => (
-    <Layout>
-        <section className="content-page__title">{page && <h1>{page.frontmatter.title}</h1>}</section>
-        <section className="content-page__body">
-            {content && <MDXRemote {...content} components={components as Components} />}
-        </section>
-    </Layout>
-)
+const TermPage: NextPage<PageProps> = ({ page, content }) => {
+    const title = page?.frontmatter.title
+    const description = page?.frontmatter.description
+    const image = page?.frontmatter.socialImage
+    const videoID = page?.frontmatter.videoID
+    const canonical = page?.frontmatter.canonical
+    const externalTitle = page?.frontmatter.externalTitle
+    const externalDescription = page?.frontmatter.externalDescription
+    const meta = {
+        title,
+        image,
+        videoID,
+        description,
+        externalTitle,
+        externalDescription,
+        canonical,
+    }
+
+    if (title) {
+        meta.title = `Sourcegraph - ${title}`
+    }
+
+    return (
+        <Layout meta={meta}>
+            <section className="tw-bg-gray-200 tw-text-center tw-py-8">{page && <h1>{title}</h1>}</section>
+            <section className="content-page__body">
+                {content && <MDXRemote {...content} components={components as Components} />}
+            </section>
+        </Layout>
+    )
+}
 
 export default TermPage
 

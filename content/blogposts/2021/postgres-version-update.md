@@ -66,7 +66,7 @@ This is where the tradeoffs come in to play.
 
 In our [Cloud](https://sourcegraph.com/search) environment, the `lsif_data_definitions` table contains around 300 million rows. Simply counting the number of rows takes around 24 minutes on our production database instance, as seen by the following (simplified) query plan:
 
-```
+```SQL
 Finalize Aggregate
  -> Gather
      Workers Planned: 2
@@ -99,6 +99,7 @@ The **approach we chose** tracks the minimum and maximum row versions for each i
 
 _lsif_data_definitions_:
 
+<TableWrapper>
 | index_id | scheme | identifier | data | version |
 | -------- | ------ | ---------- | ---- | ------- |
 | 1        | foo    | bar        | .... | 1       |
@@ -106,14 +107,17 @@ _lsif_data_definitions_:
 | 2        | baz    | quux       | .... | 2       |
 | 2        | quux   | bonk       | .... | 2       |
 | 3        | bonk   | honk       | .... | 1       |
+</TableWrapper>
 
 _lsif_data_definitions_schema_versions_:
 
+<TableWrapper>
 | index_id | min_version | max_version |
 | -------- | ----------- | ----------- |
 | 1        | 1           | 2           |
 | 2        | 2           | 2           |
 | 3        | 1           | 1           |
+</TableWrapper>
 
 This second table allows us to efficiently determine which indexes have been migrated and which still need attention. For example, if we are currently migrating from schema version 1 to 2, then the table above shows index 1 is partially migrated, index 2 is fully migrated, and index 3 has yet to be touched.
 
@@ -133,9 +137,11 @@ We are unable to utilize a statement-level trigger approach in Postgres 9.6 as s
 
 So how bad would this approach be?
 
-<div className="no-shadow">
-  <img src="https://sourcegraphstatic.com/blog/postgres-version-update/postgres-version-update-latency.png" alt="performance comparison"/>
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/blog/postgres-version-update/postgres-version-update-latency.png" 
+  alt="performance comparison" 
+  shadow={false}
+/>
 
 Turns out it's pretty bad. Inserting 800k rows into the database with statement-level triggers takes under a minute (on a non-production test machine). Using row-level triggers the same operation takes over an hour.
 

@@ -15,49 +15,44 @@ This is a great resource that we hope will make these communities accessible to 
 
 Here are the communities currently supported:
 
-<a style={{display: 'block'}} target="_blank" href="https://sourcegraph.com/kubernetes">
-<div style={{fontSize: '2em', textAlign: 'center', marginBottom: '-1em'}}>
-  Kubernetes
-</div>
-<div>
-<img alt="K8s search page" src="https://sourcegraphstatic.com/blog/3.18/k8s-search-page.png" />
-</div>
+<a target="_blank" href="https://sourcegraph.com/kubernetes">
+  <h2 className="text-center">Kubernetes</h2>
+  <Figure 
+    alt="K8s search page" 
+    src="https://sourcegraphstatic.com/blog/3.18/k8s-search-page.png"
+  />
 </a>
 
-<a style={{display: 'block'}} target="_blank" href="https://sourcegraph.com/refactor-python2-to-3">
-<div style={{fontSize: '2em', textAlign: 'center', marginBottom: '-1em'}}>
-  Python 2 to Python 3 migration
-</div>
-<div>
-<img alt="Python search page" src="https://sourcegraphstatic.com/blog/3.18/resize-python-search-page.png"/>
-</div>
+<a target="_blank" href="https://sourcegraph.com/refactor-python2-to-3">
+  <h2 className="text-center">Python 2 to Python 3 migration</h2>
+  <Figure
+    alt="Python search page" 
+    src="https://sourcegraphstatic.com/blog/3.18/resize-python-search-page.png"
+  />
 </a>
 
-<a style={{display: 'block'}} target="_blank" href="https://sourcegraph.com/golang">
-<div style={{fontSize: '2em', textAlign: 'center', marginBottom: '-1em'}}>
-  Go
-</div>
-<div>
-<img alt="Golang search page" src="https://sourcegraphstatic.com/blog/3.18/golang-search-page.png"/>
-</div>
+<a target="_blank" href="https://sourcegraph.com/golang">
+  <h2 className="text-center">Go</h2>
+  <Figure 
+    alt="Golang search page" 
+    src="https://sourcegraphstatic.com/blog/3.18/golang-search-page.png"
+  />
 </a>
 
-<a style={{display: 'block'}} target="_blank" href="https://sourcegraph.com/react-hooks">
-<div style={{fontSize: '2em', textAlign: 'center', marginBottom: '-1em'}}>
-  React Hooks
-</div>
-<div>
-<img alt="React search page" src="https://sourcegraphstatic.com/blog/3.18/react-search-page.png"/>
-</div>
+<a target="_blank" href="https://sourcegraph.com/react-hooks">
+  <h2 className="text-center">React Hooks</h2>
+  <Figure 
+    alt="React search page" 
+    src="https://sourcegraphstatic.com/blog/3.18/react-search-page.png"
+  />
 </a>
 
-<a style={{display: 'block'}} target="_blank" href="https://sourcegraph.com/android">
-<div style={{fontSize: '2em', textAlign: 'center', marginBottom: '-1em'}}>
-  Android
-</div>
-<div>
-<img alt="Android search page" src="https://sourcegraphstatic.com/blog/3.18/resize-android-search-page.png"/>
-</div>
+<a target="_blank" href="https://sourcegraph.com/android">
+  <h2 className="text-center">Android</h2>
+  <Figure 
+    alt="Android search page"
+    src="https://sourcegraphstatic.com/blog/3.18/resize-android-search-page.png"
+  />
 </a>
 
 ...and more to come. If you are a member of another community that you think would benefit from having a custom Sourcegraph search page, [let us know](https://github.com/sourcegraph/sourcegraph/issues/new/choose)!

@@ -31,9 +31,10 @@ You can visit our [handbook](https://handbook.sourcegraph.com/product/goals) to 
 
 It is also a good time to think about long term efforts. As Sourcegraph was growing really fast, thanks to the constant innovation and lean approach to development, some areas of the product lost their initial design coherence. It is a natural process for startups to generate some design debt over time. Our new design team is planning to focus on improving the consistency and reducing the design debt over the course of the next 6-8 months.
 
-<div className="text-center">
-  <img src="https://sourcegraphstatic.com/design-debt.png" width="70%" alt="Design debt illustration"/>
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/design-debt.png" 
+  alt="Design debt illustration"
+/>
 
 ## Why is it important?
 
@@ -47,17 +48,19 @@ In the next few paragraphs, I will walk you through the changes that we have int
 
 We started by mapping the current information architecture of Sourcegraph. It gave us the perspective that we needed - a 10,000-feet view of the experience. From here, we could start identifying improvements.
 
-<div className="text-center">
-  <img src="https://sourcegraphstatic.com/design-architecture.png" width="70%" alt="Information Architecture Diagram illustration"/>
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/design-architecture.png" 
+  alt="Information Architecture Diagram illustration"
+/>
 
 Not all changes should be made within one iteration. It is important to identify the most impactful ones and target elements that are the most visible for the users first. Navigation patterns were a great candidate - they have an impact on all our users and influence the structure of many pages.
 
 We have introduced **new headers** that maintain consistent structure on all the pages. In addition, we have added **breadcrumbs** for better context and easier navigation.
 
-<div className="text-center">
-  <img src="https://sourcegraphstatic.com/design-header.png" width="70%" alt="New header illustration"/>
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/design-header.png"
+  alt="New header illustration"
+/>
 
 ## Build and start using the component system
 
@@ -73,15 +76,17 @@ In order to change it, we started by listing all the components that needed to b
 
 We have also introduced some improvements to our flow to help us keep the consistency we have achieved so far. We have added the [Figma add-on](https://www.figma.com/resources/extensions-and-apis/storybook-figma-addon/) to our Storybook. This way, both design, and implementation are visible next to each other and are easy to compare.
 
-<div className="text-center">
-  <img src="https://sourcegraphstatic.com/design-figma-storybook.png" width="70%" alt="Figma design in Storybook"/>
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/design-figma-storybook.png" 
+  alt="Figma design in Storybook"
+/>
 
 In addition, we started using [Chromatic](https://www.chromatic.com/). This tool helps us gather feedback about changes to Storybook and makes the review process easier. From now on, a Chromatic PR review is an integral process of approving all Storybook-oriented PRs.
 
-<div className="text-center benchmark-results">
-  <img src="https://sourcegraphstatic.com/design-storybook.png" width="70%" alt="Chromatic PR review process"/>
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/design-storybook.png" 
+  alt="Chromatic PR review process"
+/>
 
 ### Make design components more flexible
 
@@ -101,9 +106,10 @@ To keep our design system up-to-date we have set up a review and [approval proce
 
 A most recent example of the change that was proposed using this process is an update of our outline buttons and button groups. See the [proposal](https://www.figma.com/file/iQIlSvEBuVz1jXTGjRVNeE/Header-example-article-Alicja?node-id=6%3A65) and the [pull request](https://github.com/sourcegraph/sourcegraph/issues/12982) for more details.
 
-<div className="text-center benchmark-results">
-  <img src="https://sourcegraphstatic.com/design-component-system.png" width="70%" alt="Brand new component system illustration"/>
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/design-component-system.png" 
+  alt="Brand new component system illustration"
+/>
 
 ## What’s next?
 

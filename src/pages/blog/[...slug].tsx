@@ -3,7 +3,7 @@ import path from 'path'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import { Layout, BlogHeader, BLOG_TYPE_TO_INFO } from '@components'
+import { Layout, BlogHeader, BLOG_TYPE_TO_INFO, CtaSection } from '@components'
 import { Post, POST_TYPE_TO_COMPONENT, postType, urlToPost } from '@interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '@lib'
 
@@ -17,14 +17,15 @@ const CONTENT_PARENT_DIRECTORY = './content/'
 const BlogPage: NextPage<PageProps> = ({ post, content }) => {
     const title = post.frontmatter.title
     const description = post.frontmatter.description ? post.frontmatter.description : post.excerpt
-    const image =
-        post.frontmatter.socialImage ?? 'https://about.sourcegraph.com/meta/sourcegraph-social-image-share-02.png'
+    const image = post.frontmatter.socialImage
+    const videoID = post.frontmatter.videoID
     const canonical = post.frontmatter.canonical
     const externalTitle = post.frontmatter.externalTitle
     const externalDescription = post.frontmatter.externalDescription
     const meta = {
         title,
         image,
+        videoID,
         description,
         externalTitle,
         externalDescription,
@@ -40,20 +41,20 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
                 <div className="container-lg">
                     <BlogHeader {...blogInfo} />
                 </div>
-                <div className="post-template mt-5 bg-white">
-                    <div className="container-lg">
+                <div className="mt-5 bg-white post-template">
+                    <div className="tw-max-w-screen-xl tw-mx-auto">
                         <PostTemplate
                             post={post}
                             content={content}
                             url={urlToPost(post)}
-                            className="post-template__post"
-                            headerClassName="card-header bg-white border-bottom-0 text-center pt-5"
-                            titleClassName=""
-                            titleLinkClassName="post-template__post-title-link"
+                            className="tw-mx-auto post-template__post blog-post tw-max-w-[840px]"
+                            headerClassName="card-header bg-white border-bottom-0 tw-text-center tw-pt-md"
                         />
                     </div>
                 </div>
             </article>
+
+            <CtaSection background="darkNebulous4" />
         </Layout>
     )
 }

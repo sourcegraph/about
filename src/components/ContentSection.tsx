@@ -1,23 +1,39 @@
 import { FunctionComponent, ReactNode } from 'react'
 
-const COLORS = {
-    none: '',
-    white: 'bg-white text-dark',
-    black: 'bg-black text-light',
-    gray: 'bg-dark text-light',
-    purple: 'bg-vivid-violet text-light',
-    primary: 'bg-primary text-light',
-}
+import classNames from 'classnames'
 
-interface Props {
+import { Background } from './Background'
+
+export interface ContentSection {
     id?: string
-    color?: keyof typeof COLORS
+    background?: Background['variant']
+    illustration?: Background['illustration']
+    slimWidth?: boolean // For long form content (Blog, Case studies, etc)
+    parentClassName?: string
     className?: string
     children: ReactNode
 }
 
-export const ContentSection: FunctionComponent<Props> = ({ id = '', color = 'none', className = '', children }) => (
-    <div id={id} className={COLORS[color]}>
-        <section className={`container ${className}`}>{children}</section>
+export const ContentSection: FunctionComponent<ContentSection> = ({
+    id,
+    background = 'transparent',
+    illustration,
+    slimWidth = false,
+    parentClassName,
+    className = '',
+    children,
+}) => (
+    <div id={id}>
+        <Background
+            variant={background}
+            illustration={illustration}
+            className={classNames('tw-px-sm tw-py-3xl md:tw-py-5xl', parentClassName)}
+        >
+            <section
+                className={classNames('tw-mx-auto', className, slimWidth ? 'tw-max-w-[840px]' : 'tw-max-w-screen-xl')}
+            >
+                {children}
+            </section>
+        </Background>
     </div>
 )

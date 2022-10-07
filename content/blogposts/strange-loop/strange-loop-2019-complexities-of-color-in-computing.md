@@ -69,7 +69,7 @@ There’s a couple more computer colorspaces that come up, including sRGB, which
 
 A Euclidean distance formula could theoretically calculate the differences between colors.
 
-```
+```text
 Color 1 = ( R ₁ , G ₁ , B ₁  )
 Color 2 = ( R ₂ , G ₂ , B ₂ ) 
 Distance ² =  ( R ₁ - R ₂ ) ² + ( G ₁ - G ₂ ) ² + ( B ₁ - B ₂ ) ²

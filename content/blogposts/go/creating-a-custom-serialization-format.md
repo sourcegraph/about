@@ -69,7 +69,7 @@ The syntax to query fields within these JSON documents is designed to only reque
 
 A value of single field can be accessed as follows:
 
-```
+```go
 Query: .foo
 
 {"foo": 3, "bar": 4}
@@ -81,7 +81,7 @@ Result: 3
 
 Multiple fields can be accessed in a similar way:
 
-```
+```go
 Query:  .foo|bar
 
 {"foo":3, "bar":4, "baz":5}
@@ -93,7 +93,7 @@ Result: {"foo":3, "bar":4}
 
 More complex querying capabilities include fully recursive nesting and array slicing:
 
-```
+```go
 Query:  .m[] .k1 [0]
 
 {"foo": {"k1": [3,4]},

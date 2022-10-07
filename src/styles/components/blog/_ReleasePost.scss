@@ -11,11 +11,6 @@
         text-transform: uppercase;
     }
 
-    &__items {
-        border: solid 1px var(--border-color);
-        border-width: 1px 0;
-    }
-
     &__item {
         &-category {
             display: inline-block;
@@ -42,37 +37,6 @@
         &:hover {
             background-color: var(--light);
             text-decoration: none;
-        }
-
-        code {
-            background: var(--light) !important;
-            color: var(--dark) !important;
-            border: solid 1px var(--border-color) !important;
-            font-size: 85% !important;
-        }
-    }
-
-    &__help {
-        &-item {
-            margin: 0 calc(-1 *#{map-get($spacers, 2)});
-
-            a {
-                color: $secondary;
-                padding: map-get($spacers, 1) map-get($spacers, 2);
-
-                display: flex;
-                align-items: center;
-                svg {
-                    margin-left: map-get($spacers, 1);
-                    font-size: 0.8 * $font-size-sm;
-                }
-            }
-
-            &:not(:last-child) {
-                a {
-                    margin-right: map-get($spacers, 4);
-                }
-            }
         }
     }
 

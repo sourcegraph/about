@@ -37,7 +37,7 @@ We talked to [Matt Holt](https://twitter.com/mholt6), creator of the [Caddy web 
 
 Health checks should be as easy to create and maintain as unit tests. We wanted an interface that lets you easily say, “Here are a bunch of URLs I want to test. Here’s the expected behavior for each.” It seemed to us that the best interface for declaring these was not a GUI that forced you to point and click, but a config file. Here’s an example **checkup.json**:
 
-```
+```json
 {
      "checkers": [{
          "type": "http",
@@ -58,7 +58,7 @@ You simply specify a list of endpoints in JSON and provide Checkup access to an 
 
 Then all you need to do to check the health of your endpoints is run
 
-```
+```shell
 **$ checkup**
 == Website - https://sourcegraph.com
   Threshold: 0
@@ -72,13 +72,13 @@ Then all you need to do to check the health of your endpoints is run
 
 You can have Checkup upload this data to your S3 bucket with
 
-```
+```shell
 $ checkup --store
 ```
 
 or have it run every 10 minutes with
 
-```
+```shell
 $ checkup every 10m
 ^C
 ```
@@ -94,3 +94,7 @@ Because running your health checks is just a simple terminal command, you can no
 To get geographically distributed checks, you simply run Checkup from multiple AWS regions. Checkup works smoothly on the cheapest EC2 micro instances. Checkup can easily be extended to work with other cloud computing providers or even custom storage services your company uses internally. The [code is open source](https://sourcegraph.com/github.com/sourcegraph/checkup/-/def/GoPackage/github.com/sourcegraph/checkup/-/Checkup), [well-documented](https://godoc.org/github.com/sourcegraph/checkup), and [pull requests are welcome](https://github.com/sourcegraph/checkup).
 
 We’re releasing [Checkup](https://sourcegraph.github.io/checkup/), because we think it will save a lot of time and frustration for many engineers. We hope others will find it useful and extend it so that together we can make uptime monitoring simpler and more hassle-free. [Try it out](https://github.com/sourcegraph/checkup/releases) and [let us know what you think](https://twitter.com/sourcegraph)!
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

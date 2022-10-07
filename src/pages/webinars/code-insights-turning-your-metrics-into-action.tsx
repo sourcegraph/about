@@ -1,6 +1,10 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, GatedResourceLayout } from '@components'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+
+import { Layout, GatedResourceLayout, ContentSection, Hero } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const speakers = [
     {
@@ -17,63 +21,94 @@ const speakers = [
     },
 ]
 
-export const Webinar: FunctionComponent = () => (
-    <Layout
-        meta={{
-            title: 'Sourcegraph Code Insights: Turning Metrics into Action',
-            description:
-                'Join Sourcegraph Product Manager Joel Kwartler and Customer Engineer Shawn King to learn how to use Code Insights to turn your most pressing analytics questions into KPIs you can track with mere seconds of setup.',
-        }}
-        className="navbar-white"
-    >
-        <GatedResourceLayout
-            title="How to track what really matters to you and your team"
-            subtitle="Sourcegraph Code Insights: Turning Metrics into Action"
-            speakers={speakers}
-            formLabel="Watch the on-demand webinar"
-            form={{
-                formId: '66361163-5e08-4be3-8ab0-6590b70df69e',
-                onFormSubmitted: () => window.open('https://my.demio.com/recording/7BYqL99g'),
+const Webinar: FunctionComponent = () => {
+    const router = useRouter()
+
+    return (
+        <Layout
+            meta={{
+                title: 'Sourcegraph Code Insights: Turning Metrics into Action',
+                description:
+                    'Join Sourcegraph Product Manager Joel Kwartler and Customer Engineer Shawn King to learn how to use Code Insights to turn your most pressing analytics questions into KPIs you can track with mere seconds of setup.',
             }}
-            description={
-                <section className="col-md-6 col-12 pr-lg-6">
-                    <p>
-                        Learn how to use Code Insights to turn your most pressing analytics questions into KPIs you can
-                        track with mere seconds of setup.
-                    </p>
-                    <p>
-                        Code Insights lets you transform your code into a queryable database and create insights in
-                        seconds for anything you can search for. You can track: migration progress, terraform versions,
-                        component reuse, code smells, vulnerability indicators, language usage, CI connections,
-                        documentation, ownership signals, and many more metrics found in your code.
-                    </p>
-                    <p>
-                        But when you can quantifiably track everything in your codebase, from migrations to code smells,
-                        how do you decide where to start?
-                    </p>
-                    <p>
-                        In this interactive session, Sourcegraph Product Manager Joel Kwartler and Customer Engineer
-                        Shawn King will teach you:
-                    </p>
-                    <ul>
-                        <li className="mb-2">What Code Insights is and why it's important</li>
-                        <li className="mb-2">
-                            Best practices for getting started from top-tier engineering organizations
-                        </li>
-                        <li className="mb-2">How to dive deeper into your data with advanced examples, including:</li>
-                        <ul>
-                            <li className="mb-2">Metadata/config tracking</li>
-                            <li className="mb-2">Commit signals</li>
-                            <li className="mb-2">Making use of advanced Sourcegraph filters</li>
-                            <li className="mb-2">
-                                Pattern tracking versions and licenses with regular expression capture groups
-                            </li>
-                        </ul>
-                    </ul>
-                </section>
+            hero={
+                <Hero
+                    variant="marsCode"
+                    title={'Sourcegraph Code Insights: \n Turning Metrics into Action'}
+                    subtitle="How to track what really matters to you and your team"
+                />
             }
-        />
-    </Layout>
-)
+        >
+            <GatedResourceLayout
+                title="Sourcegraph Code Insights: Turning Metrics into Action"
+                speakers={speakers}
+                formLabel="Watch the on-demand webinar"
+                onFormSubmitted={() =>
+                    router.push({
+                        pathname: router.pathname,
+                        query: 'watch-now',
+                    })
+                }
+                description={
+                    <section className="col-md-6 col-12 lg:tw-pr-3xl">
+                        <p>
+                            Learn how to use Code Insights to turn your most pressing analytics questions into KPIs you
+                            can track with mere seconds of setup.
+                        </p>
+                        <p>
+                            Code Insights lets you transform your code into a queryable database and create insights in
+                            seconds for anything you can search for. You can track: migration progress, terraform
+                            versions, component reuse, code smells, vulnerability indicators, language usage, CI
+                            connections, documentation, ownership signals, and many more metrics found in your code.
+                        </p>
+                        <p>
+                            But when you can quantifiably track everything in your codebase, from migrations to code
+                            smells, how do you decide where to start?
+                        </p>
+                        <p>
+                            In this interactive session, Sourcegraph Product Manager Joel Kwartler and Customer Engineer
+                            Shawn King will teach you:
+                        </p>
+                        <ul>
+                            <li className="mb-2">What Code Insights is and why it's important</li>
+                            <li className="mb-2">
+                                Best practices for getting started from top-tier engineering organizations
+                            </li>
+                            <li className="mb-2">
+                                How to dive deeper into your data with advanced examples, including:
+                            </li>
+                            <ul>
+                                <li className="mb-2">Metadata/config tracking</li>
+                                <li className="mb-2">Commit signals</li>
+                                <li className="mb-2">Making use of advanced Sourcegraph filters</li>
+                                <li className="mb-2">
+                                    Pattern tracking versions and licenses with regular expression capture groups
+                                </li>
+                            </ul>
+                        </ul>
+                    </section>
+                }
+                videoSrc="https://www.youtube.com/embed/dXKvetMozB0"
+                learnMoreCTA={
+                    <ContentSection className="tw-flex tw-flex-col tw-items-center">
+                        <h1 className="tw-text-center">Want to learn more about Code Insights?</h1>
+                        <Link href="/contact/request-code-insights-demo" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                className="mt-4 btn btn-primary col-12 col-md-3 col-xl-2"
+                                title="Request a Demo"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.bodyDemo}
+                                data-button-type="cta"
+                            >
+                                Request a demo
+                            </a>
+                        </Link>
+                    </ContentSection>
+                }
+            />
+        </Layout>
+    )
+}
 
 export default Webinar

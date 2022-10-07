@@ -1,9 +1,7 @@
 import { FunctionComponent } from 'react'
 
-import Link from 'next/link'
-
-import { Layout, CaseStudyCard, FormLegal, BlogResourceItem } from '@components'
-import { useHubSpot, useChiliPiper } from '@hooks'
+import { Layout, CaseStudyCard, HubSpotForm, ResourceList, ContentSection, CtaSection } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const blogResourceItems = [
     {
@@ -12,7 +10,7 @@ const blogResourceItems = [
             'Download the guide to developer onboarding and learn how to shift to a culture of continuous onboarding in your engineering organization.',
         type: 'Guide',
         img: {
-            src: '/guides/dev-onboarding/thumbnail.png',
+            src: 'blog/thumbnails/continuous-developer-onboarding.png',
             alt: 'Continuous developer onboarding guide thumbnail',
         },
         href: '/guides/continuous-developer-onboarding',
@@ -23,7 +21,7 @@ const blogResourceItems = [
             'See how Nutanix was able to confidently identify every instance of Log4j across its sprwaling codebase and deliver patches to its customers that fully remediated the vulnerability within 4 days.',
         type: 'Case study',
         img: {
-            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
+            src: 'blog/thumbnails/code-insights-docs.png',
             alt: 'Nutanix fixed Log4j quickly with Sourcegraph case study thumbnail',
         },
         href: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
@@ -73,87 +71,58 @@ const caseStudyItems = [
     },
 ]
 
-const PartnerPodcastPage: FunctionComponent = () => {
-    useHubSpot({
-        portalId: '2762526',
-        formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
-        targetId: 'form',
-    })
-    useChiliPiper()
+const PartnerPodcastPage: FunctionComponent = () => (
+    <Layout
+        meta={{
+            title: 'Code Intelligence Platform | Sourcegraph',
+            description:
+                'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Sourcegraph.',
+        }}
+    >
+        <div className="sg-bg-gradient-saturn tw-px-6 tw-py-5xl">
+            <div className="tw-max-w-screen-xl tw-mx-auto">
+                <h1 className=" max-w-800">Accelerate engineering velocity with Sourcegraph</h1>
+                <h3 className="py-4 tw-max-w-[700px]">
+                    See why over 1.2M engineers use Sourcegraph to build software you rely on
+                </h3>
+                <div className="tw-pt-0 max-w-400 md:tw-pt-sm">
+                    <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
+                </div>
+            </div>
+        </div>
 
-    return (
-        <Layout
-            meta={{
-                title: 'Code Intelligence Platform | Sourcegraph',
-                description:
-                    'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Sourcegraph.',
-            }}
-        >
-            <div className="bg-gradient-saturn-reversed py-6">
-                <section className="container max-w-900">
-                    <h1 className="display-1 font-weight-bold max-w-800">
-                        Accelerate engineering velocity with Sourcegraph
-                    </h1>
-                    <h5 className="py-4 font-weight-normal">
-                        See why over 1.2M engineers use Sourcegraph to build software you rely on
-                    </h5>
-                    <div className="max-w-400 pt-0 pt-md-4">
-                        <div id="form" />
-                        <FormLegal />
+        <ContentSection>
+            <h2>Move fast — even in big code bases</h2>
+            <h4 className="py-3">Learn how these software companies used Sourcegraph</h4>
+            <div className="flex-wrap tw-pt-sm tw-flex tw-relative">
+                {caseStudyItems.map(study => (
+                    <div key={study.name} className="mb-6 tw-px-0 col-sm-6 col-md-4">
+                        <CaseStudyCard study={study} bwLogo={true} />
                     </div>
-                </section>
-            </div>
-
-            <div className="container max-w-900 mt-6">
-                <h1 className="display-3 font-weight-bold">Move fast — even in big code bases</h1>
-                <h5 className="font-weight-normal py-3">Learn how these software companies used Sourcegraph</h5>
-                <div className="d-flex flex-wrap pt-4 position-relative">
-                    {caseStudyItems.map(study => (
-                        <div key={study.name} className="col-sm-6 col-md-4 mb-6 px-0">
-                            <CaseStudyCard study={study} bwLogo={true} />
-                        </div>
-                    ))}
-                </div>
-            </div>
-
-            <div className="bg-gradient-venus-saturated py-6">
-                <section className="container max-w-900 text-center">
-                    <h1 className="display-3 font-weight-bold pt-2">Want to use Sourcegraph at your company?</h1>
-                    <h5 className="pt-4 pb-1 mx-auto max-w-550 font-weight-normal">
-                        <span>
-                            <Link href="/get-started">Get started </Link>
-                        </span>
-                        for free with up to 10 teammates or
-                        <span>
-                            <Link href="/demo"> request a demo </Link>
-                        </span>
-                        to learn about our enterprise plan and to see Sourcegraph in your own environment.
-                    </h5>
-                </section>
-            </div>
-
-            <div className="container max-w-900 my-md-8 my-6 px-0">
-                <div className="col-lg-6">
-                    <h1 className="mb-5 font-weight-bold">Related resources</h1>
-                </div>
-                {blogResourceItems.map(item => (
-                    <BlogResourceItem key={item.title} blog={item} />
                 ))}
             </div>
+        </ContentSection>
 
-            <div className="py-5 d-flex flex-md-row flex-column align-items-center justify-content-center bg-primary text-white font-weight-bold">
-                <h5 className="max-w-250 max-w-md-400 text-center font-weight-bold my-auto pr-md-4">
-                    Looking for our changelog? Look no further
-                </h5>
-                <a
-                    href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
-                    className="rounded btn btn-primary border-white mt-md-0 mt-4"
-                >
-                    Changelog
-                </a>
-            </div>
-        </Layout>
-    )
-}
+        <CtaSection title="Want to use Sourcegraph at your company?" background="venus" />
+
+        <ResourceList items={blogResourceItems} />
+
+        <div className="py-5 tw-text-white tw-flex md:tw-flex-row tw-flex-col tw-items-center tw-justify-center tw-bg-blurple-400">
+            <h5 className="tw-my-auto tw-text-center max-w-250 max-w-md-400 md:tw-pr-sm">
+                Looking for our changelog? Look no further
+            </h5>
+            <a
+                href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
+                className="mt-4 border-white tw-rounded btn btn-primary mt-md-0"
+                title="Changelog"
+                data-button-style={buttonStyle.primary}
+                data-button-location={buttonLocation.hero}
+                data-button-type="cta"
+            >
+                Changelog
+            </a>
+        </div>
+    </Layout>
+)
 
 export default PartnerPodcastPage

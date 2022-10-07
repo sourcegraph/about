@@ -8,7 +8,7 @@ tags: [
   blog
 ]
 slug: sourcegraph-3.8
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 description: "Sourcegraph 3.8: Search UI improvements, monitoring tools, code change campaigns, and LSIF-based code intelligence"
 ---
@@ -150,7 +150,7 @@ You can now toggle the browser extension on and off without having to fully disa
 - Indexed symbol search is now faster, as we've fixed a performance issue that occurred when many repositories without any symbols existed.
 - Indexed symbol search now uses less disk space when upgrading directly to v3.7.1 as we properly remove old indexes.
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#380) is available on GitHub.
+The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md#380) is available on GitHub.
 
 ## Thank you
 

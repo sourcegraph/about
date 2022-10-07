@@ -1,6 +1,16 @@
 /** @type {import('next').NextConfig} */
 
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+
+const withPWA = require('next-pwa')({
+  disable: process.env.NODE_ENV === 'development',
+  dest: 'public',
+})
+
 const nextConfig = {
+  productionBrowserSourceMaps: true,
   reactStrictMode: true,
   pageExtensions: ['tsx'],
   webpack(config, options) {
@@ -29,4 +39,4 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+module.exports = withPWA(withBundleAnalyzer(nextConfig))

@@ -4,7 +4,8 @@ import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Carousel from 'react-bootstrap/Carousel'
 
-import { Layout, ContentSection, QuoteCarousel } from '@components'
+import { Layout, ContentSection, QuoteCarousel, ThreeUpText } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const CareersPage: FunctionComponent = () => {
     const glassdoorReviewItems = [
@@ -51,313 +52,340 @@ const CareersPage: FunctionComponent = () => {
             link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW11950185.htm',
         },
     ]
+    const cultureItems = [
+        {
+            className: 'sg-bg-gradient-saturn',
+            text: "Just because we're remote doesn't mean we're apart \n#life-at-sourcegraph",
+            img: (
+                <img
+                    className="w-100 max-w-450"
+                    src="/careers/culture1.png"
+                    alt="Photograph strip of Sourcegraph team members"
+                />
+            ),
+        },
+        {
+            className: 'sg-bg-gradient-mars',
+            text: (
+                <span>
+                    We're moving <i>fast</i> to create a world in which everyone can code
+                </span>
+            ),
+            img: <img className="w-100 max-w-450" src="/careers/culture2.png" alt="Group riding go karts" />,
+        },
+        {
+            className: 'sg-bg-gradient-venus',
+            text: 'Work whenever and wherever \n#life-is-beachy',
+            img: <img className="w-100 max-w-450" src="/careers/culture3.png" alt="Sourcegrapher on a beach" />,
+        },
+        {
+            className: 'sg-bg-gradient-saturn',
+            text: 'Our pets are Sourcegraph Teammates, too \n#pets-of-sourcegraph',
+            img: (
+                <img
+                    className="w-100 max-w-450"
+                    src="/careers/culture4.png"
+                    alt="Black and white cat next to it's doppleganger cat Sourcegraph sticker"
+                />
+            ),
+        },
+        {
+            className: 'sg-bg-gradient-mars',
+            text: 'Creating the next generation of Sourcegraph coders, one baby at a time',
+            img: <img className="w-100 max-w-450" src="/careers/culture5.png" alt="Baby holding a coding babybook" />,
+        },
+    ]
+    const valueItems = [
+        {
+            value: 'High quality work',
+            description:
+                'You are responsible for finding out what high-quality work looks like and producing that high-quality work iteratively.',
+            img: <img className="mt-10 w-100 max-w-500" src="/careers/1highquality.svg" alt="Diamond illustration" />,
+        },
+        {
+            value: 'Being customer-first',
+            description: 'You earn and keep the trust of our customers by putting their interests first.',
+            img: (
+                <img
+                    className="mt-10 w-100 max-w-500"
+                    src="/careers/2customerdriven.svg"
+                    alt="Fist bump illustration"
+                />
+            ),
+        },
+        {
+            value: 'Working as a team',
+            description:
+                'You work collaboratively with your peers, cross-functional teammates, and leadership to create shared success, trust, and belonging.',
+            img: <img className="mt-10 w-100 max-w-500" src="/careers/3team.svg" alt="Tandem bicycle illustration" />,
+        },
+        {
+            value: 'High agency',
+            description:
+                'You have the power and the responsibility to improve Sourcegraph as a company and as a product. You deliver regardless of the circumstances.',
+            img: (
+                <img
+                    className="mt-10 w-100 max-w-500"
+                    src="/careers/4highagency.svg"
+                    alt="Stamp labeled 'First class' illustration"
+                />
+            ),
+        },
+        {
+            value: 'Being welcoming & inclusive',
+            description:
+                'You make people from all groups and backgrounds feel comfortable belonging to our team and community.',
+            img: (
+                <img
+                    className="mt-10 w-100 max-w-500"
+                    src="/careers/5welcoming.svg"
+                    alt="Head illustration with a heart in the center"
+                />
+            ),
+        },
+        {
+            value: 'Being open & transparent',
+            description: 'You proactively communicate in an open and transparent way.',
+            img: (
+                <img
+                    className="mt-10 w-100 max-w-500"
+                    src="/careers/6open.svg"
+                    alt="X-ray vision glasses illustration"
+                />
+            ),
+        },
+        {
+            value: 'Continuous growth',
+            description:
+                'You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.',
+            img: <img className="mt-10 w-100 max-w-500" src="/careers/7growth.svg" alt="Tall giraffe illustration" />,
+        },
+    ]
 
     return (
-        <Layout className="jobs-page">
-            <div>
-                <ContentSection className="hero-section">
-                    <div className="row">
-                        <div className="col-lg-10">
-                            <h1 className="display-2 title">Let's build the future together.</h1>
-                            <h1 className="display-2 font-weight-normal">
-                                We're developing the world's most advanced code search navigation platform with
-                                brilliant dreamers around the globe.
-                            </h1>
+        <Layout className="jobs-page" heroAndHeaderClassName="tw-bg-white">
+            <ContentSection background="white">
+                <div className="row">
+                    <div className="col-lg-10">
+                        <h1 className="tw-mb-xs">Let's build the future together.</h1>
+                        <h3>
+                            We're developing the world's most advanced code search navigation platform with brilliant
+                            dreamers around the globe.
+                        </h3>
+                    </div>
+                </div>
+                <a
+                    className="mt-4 btn btn-primary"
+                    href="https://grnh.se/c685479c4us"
+                    title="Explore our jobs"
+                    target="_blank"
+                    rel="nofollow noreferrer"
+                    data-button-style={buttonStyle.primary}
+                    data-button-location={buttonLocation.hero}
+                    data-button-type="cta"
+                >
+                    Explore our jobs
+                    <ArrowRightIcon className="ml-3 tw-inline" />
+                </a>
+            </ContentSection>
+
+            <div className="tw-text-center tw-bg-white">
+                <img
+                    src="../careers/careers_hero_img.jpg"
+                    alt="Sourcegraph team members jumping"
+                    className="tw-max-w-screen-2xl tw-w-full tw-hidden md:tw-inline"
+                />
+                <img
+                    src="../careers/careers_hero_img_mobile.jpg"
+                    alt="Sourcegraph team members jumping"
+                    className="tw-w-full tw-inline md:tw-hidden"
+                />
+            </div>
+
+            <ContentSection background="white">
+                <div className="flex-wrap tw-flex">
+                    <div className="tw-m-auto">
+                        <h2 className="tw-mx-auto tw-text-center tw-max-w-2xl tw-mb-6">
+                            Happy, healthy, and always in the flow.
+                        </h2>
+                        <p className="tw-mx-auto tw-text-center col-lg-6">
+                            Our Teammates are our most valuable resource. That's why we provide total rewards that are
+                            highly competitive and allow you to thrive both personally and professionally.
+                        </p>
+                        <p className="tw-mt-6 tw-text-center">
+                            Learn more in{' '}
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://handbook.sourcegraph.com/benefits-pay-perks/benefits-perks"
+                                title="our handbook"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                our handbook
+                            </a>
+                            .
+                        </p>
+                    </div>
+                </div>
+            </ContentSection>
+
+            <ContentSection>
+                <ThreeUpText
+                    title="Benefits"
+                    items={[
+                        {
+                            icon: (
+                                <img className="tw-mb-2 sm:tw-mx-auto" src="/careers/Remote.svg" alt="Map pin icon" />
+                            ),
+                            subtitle: 'Work fully remote',
+                            description: 'Anywhere and at anytime',
+                        },
+                        {
+                            icon: <img className="tw-mb-2 sm:tw-mx-auto" src="/careers/PTO.svg" alt="Sun icon" />,
+                            subtitle: 'Unlimited PTO',
+                            description: '...with a 30-day minimum',
+                        },
+                        {
+                            icon: (
+                                <img className="tw-mb-2 sm:tw-mx-auto" src="/careers/Travel.svg" alt="Airplane icon" />
+                            ),
+                            subtitle: 'Generous travel budgets',
+                            description: 'Meet your team across the globe',
+                        },
+                        {
+                            icon: (
+                                <img
+                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    src="/careers/Salary.svg"
+                                    alt="Dollar bill icon"
+                                />
+                            ),
+                            subtitle: 'Competitive pay + equity',
+                            description: 'So you can live your best life',
+                        },
+                        {
+                            icon: (
+                                <img
+                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    src="/careers/Medical.svg"
+                                    alt="Medical cross icon"
+                                />
+                            ),
+                            subtitle: 'Medical, dental, and vision',
+                            description: 'Got you covered 100% (US only)',
+                        },
+                        {
+                            icon: (
+                                <img
+                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    src="/careers/ProfessionalDevelopment.svg"
+                                    alt="Graduation cap icon"
+                                />
+                            ),
+                            subtitle: 'Professional development',
+                            description: 'Find your thing and we pay for it',
+                        },
+                        {
+                            icon: (
+                                <img
+                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    src="/careers/OfficeBudget.svg"
+                                    alt="Headphones icon"
+                                />
+                            ),
+                            subtitle: 'Office budget',
+                            description: 'Create a space where you thrive',
+                        },
+                        {
+                            icon: (
+                                <img
+                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    src="/careers/Wellness.svg"
+                                    alt="Person jogging icon"
+                                />
+                            ),
+                            subtitle: 'Wellness budget',
+                            description: 'Take care of yourself on our dime',
+                        },
+                        {
+                            icon: (
+                                <img
+                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    src="/careers/FamilyPlanning.svg"
+                                    alt="Baby icon"
+                                />
+                            ),
+                            subtitle: 'Family Planning benefits',
+                            description: '$25K, because family comes first',
+                        },
+                    ]}
+                />
+            </ContentSection>
+
+            <Carousel controls={false}>
+                {cultureItems.map(item => (
+                    <Carousel.Item className={item.className} key={item.className}>
+                        <div className="tw-flex tw-flex-col md:tw-flex-row tw-py-5xl tw-px-6 tw-max-w-screen-xl tw-mx-auto tw-items-center">
+                            <h2 className="tw-mb-6">{item.text}</h2>
+                            <div className="col-lg-6 max-h-600 tw-flex tw-justify-center">{item.img}</div>
+                        </div>
+                    </Carousel.Item>
+                ))}
+            </Carousel>
+
+            <ContentSection>
+                <Carousel
+                    prevIcon={<ArrowLeftIcon color="#808080" />}
+                    prevLabel=""
+                    nextIcon={<ArrowRightIcon color="#808080" />}
+                    nextLabel=""
+                >
+                    {valueItems.map(item => (
+                        <Carousel.Item key={item.value}>
+                            <div className="tw-flex tw-flex-col tw-items-center min-h-550 py-7">
+                                <h5 className=" text-uppercase">We value:</h5>
+                                <h2 className="">{item.value}</h2>
+                                <p className="tw-text-center col-8">{item.description}</p>
+                                {item.img}
+                            </div>
+                        </Carousel.Item>
+                    ))}
+                </Carousel>
+            </ContentSection>
+
+            <ContentSection parentClassName="sg-bg-gradient-saturn">
+                <QuoteCarousel items={glassdoorReviewItems} />
+            </ContentSection>
+
+            <ContentSection background="white">
+                <div className="tw-flex tw-flex-col tw-items-center tw-text-center">
+                    <div>
+                        <div className="col-lg-12">
+                            <h2 className="tw-mb-xs">What you seek is seeking you</h2>
+                            <p>
+                                We're looking forward to reminding you that "you're on mute"{' '}
+                                <img src="../SmileyWink.svg" alt="Smiling winky face emoji" className="tw-inline" />
+                            </p>
                         </div>
                     </div>
+
                     <a
-                        className="btn btn-primary mt-4"
+                        className="my-2 btn btn-primary"
                         href="https://grnh.se/c685479c4us"
                         title="Explore our jobs"
                         target="_blank"
                         rel="nofollow noreferrer"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
                     >
                         Explore our jobs
-                        <ArrowRightIcon className="ml-3" />
+                        <ArrowRightIcon className="ml-3 tw-inline" />
                     </a>
-                </ContentSection>
-
-                <div className="text-center">
-                    <img
-                        src="../careers/careers_hero_img.jpg"
-                        alt="Sourcegraph team members jumping"
-                        className="hero-image"
-                    />
-                    <img
-                        src="../careers/careers_hero_img_mobile.jpg"
-                        alt="Sourcegraph team members jumping"
-                        className="hero-image-mobile"
-                    />
                 </div>
-
-                <div className="benefits">
-                    <div className="d-flex flex-wrap">
-                        <div className="m-auto">
-                            <h2 className="col-lg-10 display-2 text-center mx-auto">
-                                Happy, healthy, and always in the flow.
-                            </h2>
-                            <p className="col-lg-6 text-center mx-auto">
-                                Our Teammates are our most valuable resource. That's why we provide total rewards that
-                                are highly competitive and allow you to thrive both personally and professionally.
-                            </p>
-                            <p className="text-center mt-3">
-                                Learn more in{' '}
-                                <a
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="handbook-benefits-link"
-                                    href="https://handbook.sourcegraph.com/benefits-pay-perks/benefits-perks"
-                                >
-                                    our handbook
-                                </a>
-                                .
-                            </p>
-                        </div>
-                    </div>
-                    <div className="d-flex flex-wrap benefits-row">
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/Remote.svg" alt="Map pin icon" />
-                            <h3 className="my-2">Work fully remote</h3>
-                            <p>Anywhere and at anytime</p>
-                        </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/PTO.svg" alt="Sun icon" />
-                            <h3 className="my-2">Unlimited PTO</h3>
-                            <p>...with a 30-day minimum</p>
-                        </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/Travel.svg" alt="Airplane icon" />
-                            <h3 className="my-2">Generous travel budgets</h3>
-                            <p>Meet your team across the globe</p>
-                        </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/Salary.svg" alt="Dollar bill icon" />
-                            <h3 className="my-2">Competitive pay + equity</h3>
-                            <p>So you can live your best life</p>
-                        </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/Medical.svg" alt="Medical cross icon" />
-                            <h3 className="my-2">Medical, dental, and vision</h3>
-                            <p>Got you covered 100% (US only)</p>
-                        </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img
-                                className="icon my-2 mx-auto"
-                                src="/careers/ProfessionalDevelopment.svg"
-                                alt="Graduation cap icon"
-                            />
-                            <h3 className="my-2">Professional development</h3>
-                            <p>Find your thing and we pay for it</p>
-                        </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/OfficeBudget.svg" alt="Headphones icon" />
-                            <h3 className="my-2">Office budget</h3>
-                            <p>Create a space where you thrive</p>
-                        </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/Wellness.svg" alt="Person jogging icon" />
-                            <h3 className="my-2">Wellness budget</h3>
-                            <p>Take care of yourself on our dime</p>
-                        </div>
-                        <div className="benefit col-lg-3 col-md-5 my-3 text-center mx-auto">
-                            <img className="icon my-2 mx-auto" src="/careers/FamilyPlanning.svg" alt="Baby icon" />
-                            <h3 className="my-2">Family Planning benefits</h3>
-                            <p>$25K, because family comes first</p>
-                        </div>
-                    </div>
-                </div>
-
-                <Carousel className="culture-carousel">
-                    <Carousel.Item className="bg-gradient-blue-violet-mist">
-                        <div className="row">
-                            <h1 className="col-lg-6 my-auto">
-                                <p>
-                                    Just because we're remote doesn't mean we're apart <br />
-                                    #life-at-sourcegraph
-                                </p>
-                            </h1>
-                            <div className="col-lg-6 img-container">
-                                <img src="/careers/culture1.png" alt="Photograph strip of Sourcegraph team members" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item className="bg-gradient-violet-yellow-mist">
-                        <div className="row">
-                            <h1 className="col-lg-6 my-auto">
-                                <p>
-                                    We're moving <i>fast</i> to create a world in which everyone can code
-                                </p>
-                            </h1>
-                            <div className="col-lg-6 img-container">
-                                <img src="/careers/culture2.png" alt="Group riding go karts" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item className="bg-gradient-yellow-green-mist">
-                        <div className="row">
-                            <h1 className="col-lg-6 my-auto">
-                                <p>
-                                    Work whenever and wherever <br />
-                                    #life-is-beachy
-                                </p>
-                            </h1>
-                            <div className="col-lg-6 img-container">
-                                <img className="landscape" src="/careers/culture3.png" alt="Sourcegrapher on a beach" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item className="bg-gradient-green-red-mist">
-                        <div className="row">
-                            <h1 className="col-lg-6 my-auto">
-                                <p>
-                                    Our pets are Sourcegraph Teammates, too <br />
-                                    #pets-of-sourcegraph
-                                </p>
-                            </h1>
-                            <div className="col-lg-6 img-container">
-                                <img
-                                    src="/careers/culture4.png"
-                                    alt="Black and white cat next to it's doppleganger cat Sourcegraph sticker"
-                                />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item className="bg-gradient-red-plum-mist">
-                        <div className="row">
-                            <h1 className="col-lg-6 my-auto">
-                                <p>Creating the next generation of Sourcegraph coders, one baby at a time</p>
-                            </h1>
-                            <div className="col-lg-6 img-container">
-                                <img src="/careers/culture5.png" alt="Baby holding a coding babybook" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                </Carousel>
-
-                <Carousel
-                    className="values-carousel"
-                    prevIcon={<ArrowLeftIcon color="#808080" />}
-                    nextIcon={<ArrowRightIcon color="#808080" />}
-                >
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <p className="subTitle">We value:</p>
-                                <h1>High quality work</h1>
-                                <p className="paragraph">
-                                    You are responsible for finding out what high-quality work looks like and producing
-                                    that high-quality work iteratively.
-                                </p>
-                                <img src="/careers/1highquality.svg" alt="Diamond illustration" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <p className="subTitle">We value:</p>
-                                <h1>Being customer-first</h1>
-                                <p className="paragraph">
-                                    You earn and keep the trust of our customers by putting their interests first.
-                                </p>
-                                <img src="/careers/2customerdriven.svg" alt="Fist bump illustration" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <p className="subTitle">We value:</p>
-                                <h1>Working as a team</h1>
-                                <p className="paragraph">
-                                    You work collaboratively with your peers, cross-functional teammates, and leadership
-                                    to create shared success, trust, and belonging.
-                                </p>
-                                <img src="/careers/3team.svg" alt="Tandem bicycle illustration" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <p className="subTitle">We value:</p>
-                                <h1>High agency</h1>
-                                <p className="paragraph">
-                                    You have the power and the responsibility to improve Sourcegraph as a company and as
-                                    a product. You deliver regardless of the circumstances.
-                                </p>
-                                <img src="/careers/4highagency.svg" alt="Stamp labeled 'First class' illustration" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <p className="subTitle">We value:</p>
-                                <h1>Being welcoming & inclusive</h1>
-                                <p className="paragraph">
-                                    You make people from all groups and backgrounds feel comfortable belonging to our
-                                    team and community.
-                                </p>
-                                <img src="/careers/5welcoming.svg" alt="Head illustration with a heart in the center" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <p className="subTitle">We value:</p>
-                                <h1>Being open & transparent</h1>
-                                <p className="paragraph">You proactively communicate in an open and transparent way.</p>
-                                <img src="/careers/6open.svg" alt="X-ray vision glasses illustration" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <p className="subTitle">We value:</p>
-                                <h1>Continuous growth</h1>
-                                <p className="paragraph">
-                                    You strive to continuously grow and learn by genuinely soliciting feedback early and
-                                    often, and humbly reflecting on your past mistakes.
-                                </p>
-                                <img src="/careers/7growth.svg" alt="Tall giraffe illustration" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                </Carousel>
-
-                <div className="bg-gradient-saturn-saturated py-8">
-                    <ContentSection>
-                        <QuoteCarousel items={glassdoorReviewItems} autoAdvance={true} />
-                    </ContentSection>
-                </div>
-
-                <div className="bg-white py-8">
-                    <ContentSection>
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <h2 className="display-2">What you seek is seeking you</h2>
-                                <p>
-                                    We're looking forward to reminding you that "you're on mute"{' '}
-                                    <img src="../SmileyWink.svg" alt="Smiling winky face emoji" />
-                                </p>
-                            </div>
-                        </div>
-                        <a
-                            className="btn btn-primary my-2"
-                            href="https://grnh.se/c685479c4us"
-                            title="Explore our jobs"
-                            target="_blank"
-                            rel="nofollow noreferrer"
-                        >
-                            Explore our jobs
-                            <ArrowRightIcon className="ml-3" />
-                        </a>
-                    </ContentSection>
-                </div>
-            </div>
+            </ContentSection>
         </Layout>
     )
 }
