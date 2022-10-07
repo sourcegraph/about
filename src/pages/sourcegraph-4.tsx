@@ -178,7 +178,7 @@ const Sourcegraph4: FunctionComponent = () => (
                 <h2 className="tw-mb-3xl">Experience 4.0 with the Sourcegraph Engineering team</h2>
 
                 <div className="tw-max-w-[800px] tw-mx-auto tw-aspect-video">
-                    <TwitchPlayer video="1602809871" autoplay={false} width="100%" height="100%" />
+                    <TwitchPlayer video="1604525409" autoplay={false} width="100%" height="100%" />
                 </div>
             </div>
 
