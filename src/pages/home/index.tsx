@@ -2,7 +2,6 @@ import { FunctionComponent } from 'react'
 
 import { ContentSection, CoreFeatures, CtaSection, Layout, IntegrationsSection } from '@components'
 
-import Banner from './_Banner'
 import Hero from './_Hero'
 
 const Home: FunctionComponent = () => (
@@ -15,8 +14,6 @@ const Home: FunctionComponent = () => (
         heroAndHeaderClassName="bg-white"
         className="bg-white"
     >
-        <Banner />
-
         <Hero />
 
         <ContentSection background="white">
