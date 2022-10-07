@@ -109,7 +109,8 @@ const faqData = [
     },
     {
         title: 'What are executors?',
-        content: 'Executors are required to run Batch Changes server-side and to use code navigation’s auto-indexing functionality. The Business plan includes 2 executors and the Enterprise plan includes 4 executors.',
+        content:
+            'Executors are required to run Batch Changes server-side and to use code navigation’s auto-indexing functionality. The Business plan includes 2 executors and the Enterprise plan includes 4 executors.',
     },
     {
         title: 'Does Sourcegraph offer discounts for educational and non-profit organizations?',

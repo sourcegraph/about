@@ -8,8 +8,8 @@ interface Accordion {
 }
 
 interface Item {
-    title: string;
-    content: string | ReactNode;
+    title: string
+    content: string | ReactNode
 }
 
 export const Accordion: FunctionComponent<Accordion> = ({ items }) => {
@@ -19,7 +19,12 @@ export const Accordion: FunctionComponent<Accordion> = ({ items }) => {
         <>
             {items.map((item, index) => (
                 <div key={item.title} className="tw-border-t-1 tw-border-gray-200 tw-max-w-2xl tw-mb-sm">
-                    <button className="tw-cursor-pointer tw-pr-sm tw-w-full tw-flex tw-justify-between tw-items-center" type="button" onClick={() => setActiveKey(activeKey !== index ? index : null)} onKeyDown={() => setActiveKey(activeKey !== index ? index : null)}>
+                    <button
+                        className="tw-cursor-pointer tw-pr-sm tw-w-full tw-flex tw-justify-between tw-items-center"
+                        type="button"
+                        onClick={() => setActiveKey(activeKey !== index ? index : null)}
+                        onKeyDown={() => setActiveKey(activeKey !== index ? index : null)}
+                    >
                         <h4 className="tw-text-start tw-mt-sm">{item.title}</h4>
                         <span className="tw-text-gray-400 tw-font-normal tw-mt-xs">
                             {activeKey === index ? <MinusIcon /> : <PlusIcon />}
