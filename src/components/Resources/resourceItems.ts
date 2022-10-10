@@ -18,6 +18,16 @@ export interface Resource {
 export const resourceItems: Resource[] = [
     {
         featured: false,
+        title: 'Sourcegraph for security teams',
+        link: '/for-security-teams',
+        contentType: 'guide',
+        subjects: ['code security', 'incident response'],
+        description:
+            'Assess and address security vulnerabilities in source code, automate codebase-wid remediation, and ensure completeness',
+        publishDate: '2022-10-10T17:32:24Z',
+    },
+    {
+        featured: false,
         title: 'How Nutanix remediated log4j in 4 days',
         link: '/webinars/preparing-for-the-next-log4j',
         contentType: 'virtual event',
