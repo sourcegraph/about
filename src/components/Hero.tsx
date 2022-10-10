@@ -58,7 +58,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
 
             {subtitle && <h3 className="tw-max-w-3xl tw-mt-sm">{subtitle}</h3>}
 
-            {cta && <div className="tw-mt-md tw-flex tw-flex-col max-w-400">{cta}</div>}
+            {cta && <div className="tw-mt-md tw-flex tw-flex-col md:max-w-400">{cta}</div>}
         </div>
     )
 

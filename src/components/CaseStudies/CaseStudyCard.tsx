@@ -137,7 +137,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                     target="_blank"
                     rel="nofollow noreferrer"
                     title={linkText + ': ' + title}
-                    data-button-style={buttonStyle.text}
+                    data-button-style={buttonStyle.textWithArrow}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
                     className="tw-font-bold tw-no-underline"
@@ -150,7 +150,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         title={linkText + ': ' + title}
-                        data-button-style={buttonStyle.text}
+                        data-button-style={buttonStyle.textWithArrow}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                         className="tw-font-bold tw-no-underline"
