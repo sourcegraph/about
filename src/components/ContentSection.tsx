@@ -10,6 +10,7 @@ export interface ContentSection {
     illustration?: Background['illustration']
     slimWidth?: boolean // For long form content (Blog, Case studies, etc)
     parentClassName?: string
+    parentVertPadding?: boolean // For QuoteCarousels with fixed child heights
     className?: string
     children: ReactNode
 }
@@ -20,6 +21,7 @@ export const ContentSection: FunctionComponent<ContentSection> = ({
     illustration,
     slimWidth = false,
     parentClassName,
+    parentVertPadding = true,
     className = '',
     children,
 }) => (
@@ -27,7 +29,7 @@ export const ContentSection: FunctionComponent<ContentSection> = ({
         <Background
             variant={background}
             illustration={illustration}
-            className={classNames('tw-px-sm tw-py-3xl md:tw-py-5xl', parentClassName)}
+            className={classNames(parentClassName, parentVertPadding && 'tw-py-3xl md:tw-py-5xl', 'tw-px-sm')}
         >
             <section
                 className={classNames('tw-mx-auto', className, slimWidth ? 'tw-max-w-[840px]' : 'tw-max-w-screen-xl')}

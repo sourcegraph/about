@@ -18,10 +18,11 @@ interface ResourceList {
             alt: string
         }
     }[]
+    parentVertPadding?: boolean
 }
 
-export const ResourceList: FunctionComponent<ResourceList> = ({ items, title = 'Related Resources' }) => (
-    <ContentSection background="white">
+export const ResourceList: FunctionComponent<ResourceList> = ({ items, title = 'Related Resources', parentVertPadding = true }) => (
+    <ContentSection background="white" parentVertPadding={parentVertPadding}>
         <h2 className="tw-mb-3xl">{title}</h2>
 
         {items.map(item => (

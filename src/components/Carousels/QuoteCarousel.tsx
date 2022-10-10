@@ -33,10 +33,11 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items }) 
             nextIcon={<ArrowRightIcon color="#808080" />}
             nextLabel=""
             indicators={isMdOrDown}
+            className="sm:tw-mb-md"
         >
             {items.map(item => (
                 <Carousel.Item key={item.quote}>
-                    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center tw-mx-auto col-lg-8 col-12 min-h-md-550">
+                    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center tw-mx-auto col-lg-8 col-12 min-h-550">
                         <Blockquote
                             key={item.quote}
                             quote={item.quote}
