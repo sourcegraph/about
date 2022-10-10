@@ -98,7 +98,7 @@ export const Security: FunctionComponent = () => (
                                     data-button-type="cta"
                                 >
                                     Request a demo
-                                    <ArrowRightIcon className="tw-inline tw-ml-xs" />
+                                    <ArrowRightIcon className="tw-inline tw-ml-xxs" />
                                 </a>
                             </Link>
                         </div>

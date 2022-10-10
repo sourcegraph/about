@@ -2,6 +2,7 @@ import { FunctionComponent, ReactNode, useEffect } from 'react'
 
 import classNames from 'classnames'
 import { startCase } from 'lodash'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
@@ -161,25 +162,27 @@ export const CoreFeatures: FunctionComponent<{ features?: Features[], startAsset
                                 href={feature.ctaLink}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="mt-2 btn btn-outline-primary"
+                                className="mt-2 tw-text-blurple"
                                 title={determineCtaTitle(feature)}
-                                data-button-style={buttonStyle.outline}
+                                data-button-style={buttonStyle.textWithArrow}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
                                 {determineCtaTitle(feature)}
+                                <ArrowRightIcon className="tw-inline tw-ml-xxs" />
                             </a>
                         ) : (
                             <Link href={feature.ctaLink} passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="mt-2 btn btn-outline-primary"
+                                    className="mt-2 tw-text-blurple"
                                     title={determineCtaTitle(feature)}
-                                    data-button-style={buttonStyle.outline}
+                                    data-button-style={buttonStyle.textWithArrow}
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
                                     {determineCtaTitle(feature)}
+                                    <ArrowRightIcon className="tw-inline tw-ml-xxs" />
                                 </a>
                             </Link>
                         )}
