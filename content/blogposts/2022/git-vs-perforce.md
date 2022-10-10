@@ -24,7 +24,7 @@ Sourcegraph aims to be the Google for code: A one-stop-shop to search all your c
 
 Though we started with Git, today, we index a lot of code outside of Git, including package repositories like NPM, PyPI, and Maven, and non-Git code hosts like Perforce. Perforce is used by many large enterprises and game development companies due to its ability to scale and handle large asset files.
 
-Salesforce wasn't our first Perforce customer, but it was our first Perforce customer at a particularly massive scale. Initially, we converted their entire Perforce depot to a Git repository using [git-p4](https://sourcegraph.com/github.com/git/git@master/-/blob/git-p4.py), the standard open-source tool for converting from Perforce to Git. This worked as a proof of concept, but it took 16 days to convert the main branch alone and there were 5 development  branches—that would have taken 80 days just for the initial clones to complete, without even accounting for search indexing!
+Salesforce wasn't our first Perforce customer, but it was our first Perforce customer at such a massive scale. Initially, we converted their entire Perforce depot to a Git repository using [git-p4](https://sourcegraph.com/github.com/git/git@master/-/blob/git-p4.py), the standard open-source tool for converting from Perforce to Git. This worked as a proof of concept, but it took 16 days to convert the main branch alone and there were 5 development  branches—that would have taken 80 days just for the initial clones to complete, without even accounting for search indexing!
 
 We were itching to expand our limited Perforce support to become a truly universal code-search tool, so when [Twarit Waikar](https://twitter.com/twaritw) and his team at Salesforce approached us to collaborate on a robust solution to improve performance at scale while incorporating Perforce, we jumped at the chance.
 
@@ -32,7 +32,7 @@ We were itching to expand our limited Perforce support to become a truly univers
 
 Git has become the most common version control system in the last decade, but it’s not the only way. The biggest reasons companies might choose to use Perforce over Git include:
 
-* **Handling large files**: Git works best with smaller files, which source code files usually are. Git LFS (Large File System) does provide support for larger files (Large File System), but it doesn't meet the needs of many organizations that deal with many large asset files (e.g., chunky 3D models and multimedia prevalent in gaming) and like to version them together with source.
+* **Handling large files:** Git works best with smaller files, which source code files usually are. Git LFS (Large File System) does provide support for larger files (Large File System), but it doesn't meet the needs of many organizations that deal with many large asset files (e.g., chunky 3D models and multimedia prevalent in gaming) and like to version them together with source.
 * **Centralization:** Perforce is **centralized** while Git is **decentralized**. With Git, every developer has a complete copy of the codebase locally. This is often an advantage, but not always. It means it’s easier to end up with conflicting copies and it’s hard to know which is the “correct” version. It can also be inefficient for large changes as every change has to be copied many times to each developer’s machine.
 
 The Perforce data model is very different from Git’s. You can find a good [introduction to how Perforce works](https://www.perforce.com/manuals/intro/) on the website.
@@ -53,7 +53,7 @@ Out of the Salesforce-Sourcegraph partnership, p4-fusion was born.
 
 [p4-fusion](https://github.com/salesforce/p4-fusion) is a CLI written in C++ that converts Perforce depots to Git repositories. An open source tool licensed under the BSD 3-Clause License, it’s a solution that mitigates all the git-p4.py performance issues we’ve encountered.
 
-Production proven to handle depots over 1 TB in size, p4-fusion’s significant performance improvements is due to the P4API, custom Threadpool, and GitAPI components.
+Production proven to handle depots over 1 TB in size, p4-fusion’s significant performance improvements are due to the P4API, custom Threadpool, and GitAPI components.
 
 We compared the performance of git-p4.py, the Sourcegraph-improved version of git-p4.py, and p4-fusion by converting over 3000 decently sized change lists (CLs) with each tool.
 
@@ -120,7 +120,7 @@ Here's a high-level overview of how p4-fusion operates:
 
 The P4API component accounted for the largest improvement in performance by solving the first bottleneck in the network I/O. Designed for multithreading, the P4API issues Perforce server API calls and handles stored data completely in memory, so there is no disk I/O while downloading CLs.
 
-The p4-fusion algorithm selects the change lists on the Perforce server, identifying all the changes that need to be dragged over. However, this is not blind mass migration. It is done smartly by bringing over only those specific change lists that need to be cloned rather than a complete duplication, lending itself to a more lean, efficient operation.
+The p4-fusion algorithm selects the change lists on the Perforce server, identifying all the changes that need to be dragged over. However, this is not a completely naive mass migration. It is done smartly by bringing over only those specific change lists that need to be cloned rather than a complete duplication, lending itself to a more lean, efficient operation.
 
 ### ThreadPool
 
@@ -138,16 +138,16 @@ See the [excellent p4-fusion README](https://sourcegraph.com/github.com/salesfor
 
 ## Performance through collaboration
 
-Full credit goes to [Twarit](https://twitter.com/twaritw) and his team, who are still improving p4-fusion. Having addressed the network I/O bottleneck, the next bottleneck is disk usage. This is not a bad problem to have since it can be mitigated easily by upgrading the underlying hardware to provide better disk I/O speeds. In addition, there is an optimization to include only metadata for binaries, which should be searchable in Sourcegraph, while excluding binary file contents, which aren't useful in the context of code search.
+Credit goes to [Twarit](https://twitter.com/twaritw) and his team, who are still improving p4-fusion. Having addressed the network I/O bottleneck, the next bottleneck is disk usage. This is not a bad problem to have since it can be mitigated easily by upgrading the underlying hardware to provide better disk I/O speeds. In addition, there is an optimization to include only metadata for binaries, which should be searchable in Sourcegraph, while excluding binary file contents, which aren't useful in the context of code search.
 
 We're excited about the scalability, speed, and reliability of p4-fusion, and particularly about having an effective way to convert Perforce depots into Git repositories while comprehensively indexing them. Devs at Salesforce can now directly search for potential issues using Sourcegraph, rather than spending days going through change lists to track down those issues.
 
-At Sourcegraph, we’re proud of the tools we have created for the developer community. But there is something special about building these tools in collaboration with our customers. We pride ourselves on being a developer-led, customer-centric organization. Hit us up if you'd like to chat about scalable code search, code intelligence, or making big codebases nicer to work in.
+At Sourcegraph, we’re proud of the tools we have created for the developer community. But there is something special about building these tools in collaboration with our customers. We pride ourselves on being a developer-led, customer-centric organization. [Hit us up](https://discord.gg/n43FxnCdTz) if you'd like to chat about scalable code search, code intelligence, or making big codebases nicer to work in.
 
 ---
 <br />
 
-Special thanks to _Twarit Waikar, Mike McLaughlin, Sarah McGregor, Gareth Dwyer, and Justin Dorfman_
+Special thanks to _Twarit Waikar, Mike McLaughlin, Sarah McGregor, Gareth Dwyer, Josh Goldberg, and Justin Dorfman_
 
 ### More posts like this
 
