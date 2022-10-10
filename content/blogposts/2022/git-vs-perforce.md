@@ -138,7 +138,7 @@ See the [excellent p4-fusion README](https://sourcegraph.com/github.com/salesfor
 
 ## Performance through collaboration
 
-Full credit goes to [Twarit](https://twitter.com/twaritw) and his team, who are still improving p4-fusion. Having addressed the network I/O bottleneck, the next bottleneck is disk usage. This is not a bad problem to have since it can be mitigated easily by trading off the size of free disk space available to the process. In addition, there is an optimization to include only metadata for binaries, which should be searchable in Sourcegraph, while excluding binary file contents, which aren't useful in the context of code search.
+Full credit goes to [Twarit](https://twitter.com/twaritw) and his team, who are still improving p4-fusion. Having addressed the network I/O bottleneck, the next bottleneck is disk usage. This is not a bad problem to have since it can be mitigated easily by upgrading the underlying hardware to provide better disk I/O speeds. In addition, there is an optimization to include only metadata for binaries, which should be searchable in Sourcegraph, while excluding binary file contents, which aren't useful in the context of code search.
 
 We're excited about the scalability, speed, and reliability of p4-fusion, and particularly about having an effective way to convert Perforce depots into Git repositories while comprehensively indexing them. Devs at Salesforce can now directly search for potential issues using Sourcegraph, rather than spending days going through change lists to track down those issues.
 
