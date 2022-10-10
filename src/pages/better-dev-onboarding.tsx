@@ -64,6 +64,13 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection>
+            <div className="tw-text-center mb-7">
+                <h2>How teams use Sourcegraph</h2>
+                <p className="tw-mx-auto tw-my-xs tw-max-w-3xl tw-text-lg">
+                    Sourcegraph's code intelligence platform is built with features that help you understand, fix, and
+                    automate across your entire codebase.
+                </p>
+            </div>
             <CoreFeatures />
         </ContentSection>
 

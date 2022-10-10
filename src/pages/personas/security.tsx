@@ -3,10 +3,10 @@ import { FunctionComponent } from 'react'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, CtaSection, CustomerLogos, Layout, Hero, QuoteCarousel, ResourceList } from '@components'
+import { ContentSection, CoreFeatures, CtaSection, CustomerLogos, Layout, Hero, QuoteCarousel, ResourceList } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
-// TODO: QuoteCarousel spacing/bg, section spacing, open up CaseStudyCard && CoreFeatures
+// TODO: QuoteCarousel spacing/bg, section spacing, assets/links, open up CaseStudyCard
 
 const quoteCarouselItems = [
     {
@@ -109,9 +109,69 @@ export const Security: FunctionComponent = () => (
             />
         }
     >
+        <ContentSection>
+            <CoreFeatures
+                startAssetOnRight={false}
+                features={[{
+                    title: 'Find where vulnerable code lives across your entire codebase',
+                    description:
+                        'Locate code that needs to be fixed, determine the owner, and assess the impact and scope in even the most complicated codebase.',
+                    ctaLink: '/code-search',
+                    ctaTitle: 'Locate vulnerable dependencies',
+                    video: {
+                        mp4: '/animations/code-search.mp4',
+                        webm: '/animations/code-search.webm',
+                    },
+                }]}
+            />
+        </ContentSection>
 
-        <QuoteCarousel items={quoteCarouselItems} />
+        <ContentSection>
+            <QuoteCarousel items={quoteCarouselItems} />
+        </ContentSection>
         
+        <ContentSection>
+            <CoreFeatures
+                features={[
+                    {
+                        title: 'Detect and alert when secrets are committed to your codebase',
+                        description:
+                            'Keep your code secure by keeping sensitive secrets and PII out of your repository.',
+                        ctaLink: '/code-search',
+                        ctaTitle: 'Learn more about code monitoring',
+                        video: {
+                            mp4: '/animations/code-search.mp4',
+                            webm: '/animations/code-search.webm',
+                        },
+                    },
+                    {
+                        title: 'Audit software licenses in your codebase',
+                        description:
+                            'Quickly discover repositories that are missing or using unapproved licenses, and automate updates to add missing licenses.',
+                        ctaLink: '/code-search',
+                        ctaTitle: 'View common searches',
+                        video: {
+                            mp4: '/animations/code-search.mp4',
+                            webm: '/animations/code-search.webm',
+                        },
+                    },
+                    {
+                        title: 'Track remediation and refactoring progress',
+                        description:
+                            'Track remediation and refactoring progress and see which teams may be lagging.',
+                        ctaLink: '/code-search',
+                        ctaTitle: 'Learn more about Code Insights',
+                        video: {
+                            mp4: '/animations/code-search.mp4',
+                            webm: '/animations/code-search.webm',
+                        },
+                    },
+                ]}
+            />
+        </ContentSection>
+
+        {/* TODO: CaseStudyCard section */}
+
         <ResourceList title="Explore more" items={resourceItems} />
         <CustomerLogos />
         <CtaSection background="saturn" />

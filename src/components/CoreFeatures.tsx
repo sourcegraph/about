@@ -17,15 +17,16 @@ interface VideoElement {
 }
 
 interface Features {
-    productFeature: string
+    productFeature?: string
     title: string
     description: string | ReactNode
-    details: string[]
+    details?: string[]
     ctaLink: string
+    ctaTitle?: string
     video: Video
 }
 
-export const features: Features[] = [
+export const defaultFeatures: Features[] = [
     {
         productFeature: 'code search',
         title: 'Find what you need: any code host, language, or repository',
@@ -96,7 +97,7 @@ export const features: Features[] = [
     },
 ]
 
-export const CoreFeatures: FunctionComponent = () => {
+export const CoreFeatures: FunctionComponent<{ features?: Features[], startAssetOnRight?: boolean }> = ({ features = defaultFeatures, startAssetOnRight = true }) => {
     useEffect(() => {
         const videos = features.map(
             (vid, index): VideoElement => ({
@@ -127,65 +128,58 @@ export const CoreFeatures: FunctionComponent = () => {
             }
         }
     }, [])
+    const determineCtaTitle = (feature: Features): string => feature.productFeature ? `Learn more about ${startCase(feature.productFeature)}` : (feature.ctaTitle || 'Learn more')
 
     return (
         <>
-            <div className="tw-text-center mb-7">
-                <h2>How teams use Sourcegraph</h2>
-                <p className="tw-mx-auto tw-my-xs tw-max-w-3xl tw-text-lg">
-                    Sourcegraph's code intelligence platform is built with features that help you understand, fix, and
-                    automate across your entire codebase.
-                </p>
-            </div>
-
             {features.map((feature, index) => (
                 <div
-                    key={feature.productFeature}
+                    key={feature.productFeature ?? feature.title}
                     className={classNames('row tw-flex-col-reverse lg:tw-flex-row', {
-                        'lg:tw-flex-row-reverse': index % 2,
+                        'lg:tw-flex-row-reverse': index % 2 === (startAssetOnRight ? 1 : 0),
                         'mb-8': index !== features.length - 1,
                     })}
                 >
                     <div
-                        className={classNames('col-lg-6', {
+                        className={classNames('col-lg-6 tw-my-auto', {
                             'lg:tw-pr-5xl lg:tw-pl-0': index % 2 === 0,
                             'lg:tw-pl-5xl lg:tw-pr-0': index % 2,
                         })}
                     >
-                        <span className="tw-mb-2 tw-text-md tw-uppercase tw-font-semibold tw-block">
+                        {feature.productFeature && <span className="tw-mb-2 tw-text-md tw-uppercase tw-font-semibold tw-block">
                             {feature.productFeature}
-                        </span>
+                        </span>}
                         <h2>{feature.title}</h2>
                         <p className="tw-mt-sm">{feature.description}</p>
-                        <ul className="my-3">
+                        {feature.details && <ul className="my-3">
                             {feature.details.map(detail => (
                                 <li key={detail}>{detail}</li>
                             ))}
-                        </ul>
+                        </ul>}
                         {feature.ctaLink.includes('http') ? (
                             <a
                                 href={feature.ctaLink}
                                 target="_blank"
                                 rel="noreferrer"
                                 className="mt-2 btn btn-outline-primary"
-                                title={`Learn more about ${startCase(feature.productFeature)}`}
+                                title={determineCtaTitle(feature)}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                Learn more about {startCase(feature.productFeature)}
+                                {determineCtaTitle(feature)}
                             </a>
                         ) : (
                             <Link href={feature.ctaLink} passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
                                     className="mt-2 btn btn-outline-primary"
-                                    title={'Learn more about ' + startCase(feature.productFeature)}
+                                    title={determineCtaTitle(feature)}
                                     data-button-style={buttonStyle.outline}
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    Learn more about {startCase(feature.productFeature)}
+                                    {determineCtaTitle(feature)}
                                 </a>
                             </Link>
                         )}
