@@ -1,5 +1,5 @@
 type ContentTypes = 'virtual event' | 'blog post' | 'guide' | 'customer story' | 'video'
-type Subjects = 'code security' | 'developer onboarding' | 'code health' | 'incident response' | 'code reuse'
+type Subjects = 'code security' | 'developer onboarding' | 'code health' | 'incident response' | 'code reuse' | 'product release'
 
 export interface Resource {
     title: string
@@ -18,6 +18,63 @@ export interface Resource {
 export const resourceItems: Resource[] = [
     {
         featured: false,
+        title: 'Developer velocity vs code security',
+        link: '/guides/developer-velocity-vs-code-security.pdf',
+        contentType: 'guide',
+        subjects: ['code security'],
+        description: 'Developer velocity vs code security: How organizations can invest in both',
+        publishDate: '2022-10-06T17:32:24Z',
+    },
+    {
+        featured: false,
+        title: 'How DevOps teams can build data driven relationships with their code',
+        link: '/guides/devops-data-driven-relationships-with-codebases.pdf',
+        contentType: 'guide',
+        subjects: ['code health'],
+        description: 'Track devops tooling and paved path practices across your entire codebase, from version spread to migrations and deprecations',
+        publishDate: '2022-10-10T17:32:24Z',
+    },
+    {
+        featured: false,
+        title: 'HashiCorp streamlines cross-repository code search and fixes with Sourcegraph',
+        link: '/guides/devops-data-driven-relationships-with-codebases.pdf',
+        contentType: 'customer story',
+        subjects: ['code reuse'],
+        description: 'Learn how HashiCorp streamlines cross-repository code search and fixes with Sourcegraph.',
+        publishDate: '2022-09-01T17:32:24Z',
+    },
+    {
+        featured: false,
+        title: 'Secure, easy, and scalable Sourcegraph Cloud managed instances for the enterprise',
+        link: '/blog/enterprise-cloud',
+        contentType: 'blog post',
+        subjects: ['product release'],
+        description:
+            "We're launching Sourcegraph Cloud: secure, scalable, dedicated Sourcegraph on the cloud for your organization. Sourcegraph Cloud is the best way to start using Sourcegraph on your organization's code.",
+        publishDate: '2022-09-27T17:32:24Z',
+    },
+    {
+        featured: false,
+        title: 'Sourcegraph 4.0',
+        link: '/blog/release/4.0',
+        contentType: 'blog post',
+        subjects: ['product release'],
+        description:
+            'Announcing Sourcegraph 4.0. The latest release includes over a dozen updates and new features, and it is the first step toward Sourcegraph becoming a code intelligence platform.',
+        publishDate: '2022-09-27T17:32:24Z',
+    },
+    {
+        featured: true,
+        title: 'From code search to a code intelligence platform',
+        link: '/blog/code-search-to-code-intelligence',
+        contentType: 'blog post',
+        subjects: ['product release'],
+        description:
+            'Sourcegraph is starting to go beyond just code search, which helps you find matching lines in code. We want to help you find answers in code, and we call this code intelligence.',
+        publishDate: '2022-09-27T17:32:24Z',
+    },
+    {
+        featured: true,
         title: 'How Nutanix remediated log4j in 4 days',
         link: '/webinars/preparing-for-the-next-log4j',
         contentType: 'virtual event',
@@ -27,7 +84,7 @@ export const resourceItems: Resource[] = [
         publishDate: '2022-05-17T17:32:24Z',
     },
     {
-        featured: true,
+        featured: false,
         title: 'A dev’s thoughts on productivity',
         link: '/blog/developer-productivity-thoughts',
         contentType: 'blog post',
@@ -155,7 +212,7 @@ export const resourceItems: Resource[] = [
         publishDate: '2022-06-23T20:46:12Z',
     },
     {
-        featured: true,
+        featured: false,
         title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph',
         link: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
         contentType: 'customer story',
@@ -181,8 +238,7 @@ export const resourceItems: Resource[] = [
         contentType: 'video',
         subjects: ['code security', 'developer onboarding', 'incident response', 'code reuse', 'code health'],
         description: 'Find and fix code across your codebase fast with Sourcegraph. Watch this video to see how.',
-        publishDate: '2022-09-12T00:00:00Z',
-        // TODO ^ update to merge date of this PR
+        publishDate: '2022-09-15T00:00:00Z',
     },
     {
         featured: false,
