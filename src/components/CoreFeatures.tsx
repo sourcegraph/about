@@ -138,13 +138,13 @@ export const CoreFeatures: FunctionComponent<{ features?: Features[], startAsset
                     key={feature.productFeature ?? feature.title}
                     className={classNames('row tw-flex-col-reverse lg:tw-flex-row', {
                         'lg:tw-flex-row-reverse': index % 2 === (startAssetOnRight ? 1 : 0),
-                        'mb-8': index !== features.length - 1,
+                        'tw-mb-32': index !== features.length - 1,
                     })}
                 >
                     <div
-                        className={classNames('col-lg-6 tw-my-auto', {
+                        className={classNames('tw-w-full lg:tw-w-1/2 tw-my-auto', {
                             'lg:tw-pr-5xl lg:tw-pl-0': index % 2 === 0,
-                            'lg:tw-pl-5xl lg:tw-pr-0': index % 2,
+                            'lg:tw-pl-xl lg:tw-pr-0': index % 2,
                         })}
                     >
                         {feature.productFeature && <span className="tw-mb-2 tw-text-md tw-uppercase tw-font-semibold tw-block">
@@ -152,7 +152,7 @@ export const CoreFeatures: FunctionComponent<{ features?: Features[], startAsset
                         </span>}
                         <h2>{feature.title}</h2>
                         <p className="tw-mt-sm">{feature.description}</p>
-                        {feature.details && <ul className="my-3">
+                        {feature.details && <ul className="tw-my-xs">
                             {feature.details.map(detail => (
                                 <li key={detail}>{detail}</li>
                             ))}
@@ -162,7 +162,7 @@ export const CoreFeatures: FunctionComponent<{ features?: Features[], startAsset
                                 href={feature.ctaLink}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="mt-2 tw-text-blurple"
+                                className="tw-mt-xs tw-text-blurple"
                                 title={determineCtaTitle(feature)}
                                 data-button-style={buttonStyle.textWithArrow}
                                 data-button-location={buttonLocation.body}
@@ -175,7 +175,7 @@ export const CoreFeatures: FunctionComponent<{ features?: Features[], startAsset
                             <Link href={feature.ctaLink} passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="mt-2 tw-text-blurple"
+                                    className="tw-mt-xs tw-text-blurple"
                                     title={determineCtaTitle(feature)}
                                     data-button-style={buttonStyle.textWithArrow}
                                     data-button-location={buttonLocation.body}
@@ -188,9 +188,9 @@ export const CoreFeatures: FunctionComponent<{ features?: Features[], startAsset
                         )}
                     </div>
 
-                    <div className="px-5 mb-6 tw-py-0 col-lg-6 mb-lg-0">
+                    <div className="tw-px-sm tw-mb-xl lg:tw-mb-0 tw-py-0 tw-w-full lg:tw-w-1/2">
                         <video
-                            className={`shadow w-100 max-w-550 tw-block tw-mx-auto tw-rounded video-${index}`}
+                            className={`tw-shadow-lg tw-shadow-gray-300 tw-w-full tw-max-w-[550px] tw-block tw-mx-auto tw-rounded video-${index}`}
                             autoPlay={false}
                             muted={true}
                             loop={true}
