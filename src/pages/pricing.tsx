@@ -51,7 +51,7 @@ const BusinessCTA: FunctionComponent<{ className?: string; btnOnMobile?: boolean
 
 const EnterpriseCTA: FunctionComponent<{ btnOnMobile?: boolean }> = ({ btnOnMobile }) => (
     <div className="tw-flex-wrap">
-        <BusinessCTA btnOnMobile={btnOnMobile} className="tw-mr-xs tw-mb-xs md:tw-mb-0 tw-w-full md:tw-w-auto" />
+        <BusinessCTA btnOnMobile={btnOnMobile} className="md:tw-mr-xs tw-mb-xs md:tw-mb-0 tw-w-full md:tw-w-auto" />
         <Link href="/contact/request-info?form_submission_source=pricing-enterprise" passHref={true}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a
@@ -181,20 +181,20 @@ const PricingPage: FunctionComponent = () => {
             </h2>
             <CustomerLogos />
 
-            <div className="tw-py-3xl md:tw-py-5xl md:tw-max-w-screen-xl tw-mx-auto tw-overflow-x-auto md:tw-overflow-visible">
-                <table className="tw-relative tw-border-0">
+            <div className="tw-py-3xl md:tw-py-5xl md:tw-max-w-screen-xl tw-mx-auto tw-overflow-hidden md:tw-overflow-visible">
+                <table className="tw-relative tw-border-0 tw-table-fixed">
                     <thead>
                         <tr className="md:tw-sticky md:tw-top-16">
                             <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
-                                <div className="lg:tw-h-60 md:tw-h-[165px] tw-h-[155px] tw-p-sm md:tw-pt-xs tw-pt-md tw-pr-xs tw-border-b-1 tw-border-gray-200">
-                                    <h2 className="tw-max-w-[250px] tw-text-4xl md:tw-text-7xl tw-hidden lg:tw-block">
+                                <div className="lg:tw-h-60 md:tw-h-[157px] sm:tw-h-[140px] tw-h-[133px] md:tw-p-xs tw-p-xxs md:tw-pt-xs tw-pt-md md:tw-pr-xs tw-border-b-1 tw-border-gray-200">
+                                    <h2 className="md:tw-max-w-[250px] tw-text-xl sm:tw-text-4xl lg:tw-text-7xl">
                                         Compare all features
                                     </h2>
                                 </div>
                             </th>
                             <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
-                                <div className="tw-h-full tw-p-sm tw-pb-md tw-border-t-16 tw-border-1 tw-border-gray-200 tw-border-t-vermillion-300">
-                                    <h2 className="tw-text-2xl md:tw-text-4xl tw-mb-sm">Business</h2>
+                                <div className="tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-1 tw-border-gray-200 tw-border-t-vermillion-300">
+                                    <h2 className="tw-text-xl md:tw-text-4xl tw-mb-sm">Business</h2>
                                     <h4 className="tw-font-normal tw-hidden lg:tw-block tw-mb-sm">
                                         $99 per active user/month
                                     </h4>
@@ -202,8 +202,8 @@ const PricingPage: FunctionComponent = () => {
                                 </div>
                             </th>
                             <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
-                                <div className="tw-h-full tw-p-sm tw-pb-md tw-border-t-16 tw-border-b-1 tw-border-gray-200 tw-border-t-violet-400">
-                                    <h2 className="tw-text-2xl md:tw-text-4xl tw-mb-sm">Enterprise</h2>
+                                <div className="tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-b-1 tw-border-gray-200 tw-border-t-violet-400">
+                                    <h2 className="tw-text-xl md:tw-text-4xl tw-mb-sm">Enterprise</h2>
                                     <h4 className="tw-font-normal tw-hidden lg:tw-block tw-mb-sm">Custom pricing</h4>
                                     <EnterpriseCTA />
                                 </div>
@@ -213,7 +213,7 @@ const PricingPage: FunctionComponent = () => {
                     {ALL_FEATURES_COMPARED_DATA.map(section => (
                         <tbody key={section.topic}>
                             <tr className="tw-bg-white" key={section.topic}>
-                                <th colSpan={100} className="tw-pt-lg tw-p-xs tw-text-start tw-border-0">
+                                <th colSpan={100} className="tw-pt-lg md:tw-p-xs tw-p-xxs tw-text-start tw-border-0">
                                     <h3 className="tw-text-xl md:tw-text-2xl tw-font-semibold md:tw-font-normal">
                                         {section.topic}
                                     </h3>
@@ -228,15 +228,15 @@ const PricingPage: FunctionComponent = () => {
                                     key={feature.label}
                                 >
                                     {/* Feature title */}
-                                    <td className="tw-border-0 tw-p-xs">
+                                    <td className="tw-border-0 md:tw-p-xs tw-p-xxs">
                                         <PricingPlanFeature
                                             feature={ALL_FEATURE_INFO[feature.label]}
                                             tag="h5"
-                                            className="tw-text-base tw-font-normal md:tw-font-semibold"
+                                            className="tw-text-sm sm:tw-text-base tw-font-normal md:tw-font-semibold"
                                         />
                                     </td>
                                     {/* Business plan specs */}
-                                    <td className="tw-border-0 tw-border-x-1 tw-p-xs tw-text-center tw-align-middle">
+                                    <td className="tw-border-0 tw-border-x-1 md:tw-p-xs tw-p-xxs tw-text-center tw-text-sm sm:tw-text-base tw-align-middle">
                                         {typeof feature.business === 'string' ? (
                                             feature.business
                                         ) : feature.business ? (
@@ -247,7 +247,7 @@ const PricingPage: FunctionComponent = () => {
                                         )}
                                     </td>
                                     {/* Enterprise plan specs */}
-                                    <td className="tw-border-0 tw-p-xs tw-text-center tw-align-middle">
+                                    <td className="tw-border-0 md:tw-p-xs tw-p-xxs tw-text-center tw-text-sm sm:tw-text-base tw-align-middle">
                                         {typeof feature.enterprise === 'string' ? (
                                             feature.enterprise
                                         ) : feature.enterprise ? (

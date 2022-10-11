@@ -18,13 +18,14 @@ interface Props {
 export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag = 'li', className }) => {
     const windowWidth = useWindowWidth()
     const isMdOrDown = windowWidth < breakpoints.lg
+    const isSmOrUp = windowWidth > breakpoints.xs
 
     return (
         <Tag className={classNames(Tag === 'li' && 'tw-text-sm')}>
             <div className="tw-flex tw-my-xxs">
                 <div className={classNames('tw-text-lg', className)}>{feature.label}</div>
 
-                {feature.description && (
+                {feature.description && isSmOrUp && (
                     <OverlayTrigger
                         placement="auto"
                         flip={true}
