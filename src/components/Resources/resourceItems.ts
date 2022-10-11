@@ -19,7 +19,7 @@ export const resourceItems: Resource[] = [
     {
         featured: false,
         title: 'Developer velocity vs code security',
-        link: '/guides/developer-velocity-vs-code-security',
+        link: '/guides/developer-velocity-vs-code-security.pdf',
         contentType: 'guide',
         subjects: ['code security'],
         description: 'Developer velocity vs code security: How organizations can invest in both',
