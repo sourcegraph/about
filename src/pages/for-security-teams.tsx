@@ -114,7 +114,7 @@ export const Security: FunctionComponent = () => (
                     title: 'Find where vulnerable code lives across your entire codebase',
                     description:
                         'Locate code that needs to be fixed, determine the owner, and assess the impact and scope in even the most complicated codebase.',
-                    ctaLink: '/code-search',
+                    ctaLink: 'https://sourcegraph.com/github.com/sourcegraph/notebooks/-/blob/log4j.snb.md?_ga=2.69458064.1633678400.1661181863-642837684.1660159776&_gac=1.191031128.1660321032.CjwKCAjw0dKXBhBPEiwA2bmObXz2MD_CbF5kzqpvklE9I9PjzGSYIt_2sQt73OGs59gD3Yn1frRDvRoCvIMQAvD_BwE',
                     ctaTitle: 'Locate vulnerable dependencies',
                     video: {
                         mp4: '/animations/code-search.mp4',
@@ -135,18 +135,18 @@ export const Security: FunctionComponent = () => (
                         title: 'Detect and alert when secrets are committed to your codebase',
                         description:
                             'Keep your code secure by keeping sensitive secrets and PII out of your repository.',
-                        ctaLink: '/code-insights',
+                        ctaLink: 'https://docs.sourcegraph.com/code_monitoring',
                         ctaTitle: 'Learn more about code monitoring',
                         video: {
-                            mp4: '/animations/code-insights.mp4',
-                            webm: '/animations/code-insights.webm',
+                            mp4: '/animations/code-monitor-for-secrets.mp4',
+                            webm: '/animations/code-monitor-for-secrets.webm',
                         },
                     },
                     {
                         title: 'Audit software licenses in your codebase',
                         description:
                             'Quickly discover repositories that are missing or using unapproved licenses, and automate updates to add missing licenses.',
-                        ctaLink: '/code-search',
+                        ctaLink: 'https://sourcegraph.com/search?q=context:global+%22GNU+General+Public+License%22+or+%22GNU+Affero+General+Public+License%22&patternType=lucky',
                         ctaTitle: 'View common searches',
                         video: {
                             mp4: '/animations/add-license.mp4',
