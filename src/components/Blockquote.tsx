@@ -70,7 +70,7 @@ export const Blockquote: FunctionComponent<{
                 <h5 className="tw-font-normal">&ldquo;{quote}&rdquo;</h5>
             )}
 
-            {author && <figcaption className="text-muted tw-mt-4">&mdash; {author}</figcaption>}
+            {author && <figcaption className="tw-text-gray-400 tw-mt-4">&mdash; {author}</figcaption>}
 
             {logo &&
                 (logo.href ? (
