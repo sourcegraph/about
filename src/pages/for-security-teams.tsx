@@ -57,7 +57,7 @@ const resourceItems = [
             'The Sourcegraph CI is complex and customized. To make it more accessible, software engineer Robert Lin used the new Sourcegraph feature, Notebooks, to make living documentation.',
         type: 'Guide',
         img: {
-            src: 'blog/thumbnails/notebooks-cit.jpg',
+            src: 'blog/thumbnails/notebooks-ci.jpg',
             alt: 'Notebook and pen',
         },
         href: '/guides/fixing-vulnerabilities-less-is-more',
