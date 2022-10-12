@@ -24,7 +24,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
     isEnterprise,
 }) => (
     <div
-        className={`h-100 tw-p-md tw-shadow-lg tw-border-t-16 tw-rounded tw-border-gray-200 ${
+        className={`h-100 sm:tw-p-md tw-p-xs tw-shadow-lg tw-border-t-16 tw-rounded tw-border-gray-200 ${
             isEnterprise ? 'tw-border-t-violet-400' : 'tw-border-t-vermillion-300'
         }`}
     >
