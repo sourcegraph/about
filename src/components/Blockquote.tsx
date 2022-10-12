@@ -62,7 +62,13 @@ export const Blockquote: FunctionComponent<{
 
     return (
         <blockquote className={classNames('tw-px-md', getBorderStyle())}>
-            {headline ? largeText ? <h2 className="tw-mb-sm">{headline}</h2> : <h4 className="tw-mb-sm">{headline}</h4> : null}
+            {headline ? (
+                largeText ? (
+                    <h2 className="tw-mb-sm">{headline}</h2>
+                ) : (
+                    <h4 className="tw-mb-sm">{headline}</h4>
+                )
+            ) : null}
 
             {largeText && !headline ? (
                 <h3 className="tw-font-normal tw-text-3xl">&ldquo;{quote}&rdquo;</h3>

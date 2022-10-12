@@ -1,8 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import { ContentSection, CtaSection } from '@components'
+import { ContentSection, CtaSection, CASESTUDY_CARDS } from '@components'
 
-import { CaseStudyCard, CASESTUDIES } from './CaseStudyCard'
+import { ImgIconLinkCard } from '../ImgIconLinkCard'
 
 interface Props {
     customer: string
@@ -12,7 +12,7 @@ interface Props {
 
 export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, children }) => {
     // CaseStudy preview list NOT including current CaseStudy page
-    const uniqueCaseStudyList = CASESTUDIES.filter(study => study.name !== customer).slice(0, 4)
+    const uniqueCaseStudyList = CASESTUDY_CARDS.filter(study => study.alt !== customer).slice(0, 4)
 
     return (
         <>
@@ -32,8 +32,8 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, childre
                 <h2 className="tw-mb-6">Explore other case studies</h2>
                 <div className="tw-grid tw-grid-cols-1 xs:tw-grid-cols-2 tw-gap-6">
                     {uniqueCaseStudyList.map(study => (
-                        <div key={study.name}>
-                            <CaseStudyCard study={study} />
+                        <div key={study.alt}>
+                            <ImgIconLinkCard item={study} />
                         </div>
                     ))}
                 </div>

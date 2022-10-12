@@ -1,9 +1,21 @@
 import { FunctionComponent } from 'react'
 
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import DeveloperBoardIcon from 'mdi-react/DeveloperBoardIcon'
+import LaptopIcon from 'mdi-react/LaptopIcon'
 import Link from 'next/link'
 
-import { ContentSection, CoreFeatures, CtaSection, CustomerLogos, Layout, Hero, QuoteCarousel, ResourceList } from '@components'
+import {
+    ContentSection,
+    CoreFeatures,
+    CtaSection,
+    CustomerLogos,
+    ImgIconLinkCard,
+    Layout,
+    Hero,
+    QuoteCarousel,
+    ResourceList,
+} from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const quoteCarouselItems = [
@@ -30,7 +42,8 @@ const quoteCarouselItems = [
 const resourceItems = [
     {
         title: 'How to remove secrets from your codebase',
-        description: "Sourcegraph's code intelligence platform does more than search. It helps developers save time and move faster, regardless of how complex your codebase is.",
+        description:
+            "Sourcegraph's code intelligence platform does more than search. It helps developers save time and move faster, regardless of how complex your codebase is.",
         type: 'Blog Post',
         img: {
             src: 'https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.png',
@@ -40,7 +53,8 @@ const resourceItems = [
     },
     {
         title: 'Less is more: how simplicity complements complexity in the pursuit of vulnerabilities',
-        description: 'The Sourcegraph CI is complex and customized. To make it more accessible, software engineer Robert Lin used the new Sourcegraph feature, Notebooks, to make living documentation.',
+        description:
+            'The Sourcegraph CI is complex and customized. To make it more accessible, software engineer Robert Lin used the new Sourcegraph feature, Notebooks, to make living documentation.',
         type: 'Guide',
         img: {
             src: 'blog/thumbnails/notebooks-cit.jpg',
@@ -50,13 +64,39 @@ const resourceItems = [
     },
     {
         title: 'How to use Sourcegraph to find and fix vulnerabilities like Log4j',
-        description: 'Queries, scripts, and instructions for using code search to find where log4j is used across all your code, automate PRs to mitigate it, and track progress of the fixes.',
+        description:
+            'Queries, scripts, and instructions for using code search to find where log4j is used across all your code, automate PRs to mitigate it, and track progress of the fixes.',
         type: 'Blog Post',
         img: {
             src: 'https://sourcegraphstatic.com/blog/log4j/log4j-blog-thumbnail.png',
             alt: 'Planets in space',
         },
         href: '/blog/real-weakest-link-in-software-supply-chain-security',
+    },
+]
+
+const personaList = [
+    {
+        title: 'Platform Teams',
+        description: 'Evolve massive codebases confidently and quickly.',
+        img: (
+            <div className="mb-3 tw-rounded-full tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
+                <LaptopIcon size={40} className="tw-p-1 tw-text-violet-400" />
+            </div>
+        ),
+        url: '/for-platform-engineering-team',
+        linkText: 'Learn more',
+    },
+    {
+        title: 'Product Development',
+        description: ' Hit key milestones and ship products faster.',
+        img: (
+            <div className="mb-3 tw-rounded-full tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
+                <DeveloperBoardIcon size={40} className="tw-p-1 tw-text-violet-400" />
+            </div>
+        ),
+        url: '/for-product-development-team',
+        linkText: 'Learn more',
     },
 ]
 
@@ -110,24 +150,27 @@ export const Security: FunctionComponent = () => (
         <ContentSection>
             <CoreFeatures
                 startAssetOnRight={false}
-                features={[{
-                    title: 'Find where vulnerable code lives across your entire codebase',
-                    description:
-                        'Locate code that needs to be fixed, determine the owner, and assess the impact and scope in even the most complicated codebase.',
-                    ctaLink: 'https://sourcegraph.com/github.com/sourcegraph/notebooks/-/blob/log4j.snb.md?_ga=2.69458064.1633678400.1661181863-642837684.1660159776&_gac=1.191031128.1660321032.CjwKCAjw0dKXBhBPEiwA2bmObXz2MD_CbF5kzqpvklE9I9PjzGSYIt_2sQt73OGs59gD3Yn1frRDvRoCvIMQAvD_BwE',
-                    ctaTitle: 'Locate vulnerable dependencies',
-                    video: {
-                        mp4: '/animations/code-search.mp4',
-                        webm: '/animations/code-search.webm',
+                features={[
+                    {
+                        title: 'Find where vulnerable code lives across your entire codebase',
+                        description:
+                            'Locate code that needs to be fixed, determine the owner, and assess the impact and scope in even the most complicated codebase.',
+                        ctaLink:
+                            'https://sourcegraph.com/github.com/sourcegraph/notebooks/-/blob/log4j.snb.md?_ga=2.69458064.1633678400.1661181863-642837684.1660159776&_gac=1.191031128.1660321032.CjwKCAjw0dKXBhBPEiwA2bmObXz2MD_CbF5kzqpvklE9I9PjzGSYIt_2sQt73OGs59gD3Yn1frRDvRoCvIMQAvD_BwE',
+                        ctaTitle: 'Locate vulnerable dependencies',
+                        video: {
+                            mp4: '/animations/code-search.mp4',
+                            webm: '/animations/code-search.webm',
+                        },
                     },
-                }]}
+                ]}
             />
         </ContentSection>
 
-        <ContentSection parentClassName='sg-bg-gradient-venus' parentVertPadding={false}>
+        <ContentSection parentClassName="sg-bg-gradient-venus" parentVertPadding={false}>
             <QuoteCarousel items={quoteCarouselItems} />
         </ContentSection>
-        
+
         <ContentSection>
             <CoreFeatures
                 features={[
@@ -146,7 +189,8 @@ export const Security: FunctionComponent = () => (
                         title: 'Audit software licenses in your codebase',
                         description:
                             'Quickly discover repositories that are missing or using unapproved licenses, and automate updates to add missing licenses.',
-                        ctaLink: 'https://sourcegraph.com/search?q=context:global+%22GNU+General+Public+License%22+or+%22GNU+Affero+General+Public+License%22&patternType=lucky',
+                        ctaLink:
+                            'https://sourcegraph.com/search?q=context:global+%22GNU+General+Public+License%22+or+%22GNU+Affero+General+Public+License%22&patternType=lucky',
                         ctaTitle: 'View common searches',
                         video: {
                             mp4: '/animations/add-license.mp4',
@@ -155,8 +199,7 @@ export const Security: FunctionComponent = () => (
                     },
                     {
                         title: 'Track remediation and refactoring progress',
-                        description:
-                            'Track remediation and refactoring progress and see which teams may be lagging.',
+                        description: 'Track remediation and refactoring progress and see which teams may be lagging.',
                         ctaLink: '/code-insights',
                         ctaTitle: 'Learn more about Code Insights',
                         video: {
@@ -168,13 +211,21 @@ export const Security: FunctionComponent = () => (
             />
         </ContentSection>
 
-        {/* TODO: CaseStudyCard section / Explore other use cases by role */}
-
-        <ResourceList title="Explore more" items={resourceItems} parentVertPadding={false} />
-
-        <ContentSection>
-            <CustomerLogos />
+        <ContentSection parentClassName="sg-bg-gradient-venus" className="tw-max-w-screen-md">
+            <h2 className="tw-mb-xl">Explore other use cases by role</h2>
+            <div className="tw-grid tw-grid-cols-1 xs:tw-grid-cols-2 tw-gap-6">
+                {personaList.map(persona => (
+                    <div key={persona.title}>
+                        <ImgIconLinkCard item={persona} />
+                    </div>
+                ))}
+            </div>
         </ContentSection>
+
+        <ResourceList title="Explore more" items={resourceItems} />
+
+        <CustomerLogos />
+        <div className="tw-pb-3xl md:tw-pb-5xl" />
 
         <CtaSection background="saturn" />
     </Layout>

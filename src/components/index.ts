@@ -14,6 +14,7 @@ export { Figure } from './Figure'
 export { Heading } from './Heading'
 export { Hero } from './Hero'
 export { HubSpotForm } from './HubSpotForm'
+export { ImgIconLinkCard } from './ImgIconLinkCard'
 export { Install } from './Install'
 export { IntegrationsSection } from './IntegrationsSection'
 export { Jumbotron } from './Jumbotron'
@@ -48,10 +49,10 @@ export { CustomCarousel, TabCarousel, QuoteCarousel } from './Carousels'
 
 // Case Studies
 export {
+    CASESTUDY_CARDS,
     StaffSpotlight,
     CaseStudyJumbotron,
     CaseStudyLayout,
-    CaseStudyCard,
     NewCaseStudyLayout,
     UseChallengeSolutionResults,
 } from './CaseStudies'

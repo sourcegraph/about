@@ -98,7 +98,10 @@ export const defaultFeatures: Features[] = [
     },
 ]
 
-export const CoreFeatures: FunctionComponent<{ features?: Features[], startAssetOnRight?: boolean }> = ({ features = defaultFeatures, startAssetOnRight = true }) => {
+export const CoreFeatures: FunctionComponent<{ features?: Features[]; startAssetOnRight?: boolean }> = ({
+    features = defaultFeatures,
+    startAssetOnRight = true,
+}) => {
     useEffect(() => {
         const videos = features.map(
             (vid, index): VideoElement => ({
@@ -129,7 +132,10 @@ export const CoreFeatures: FunctionComponent<{ features?: Features[], startAsset
             }
         }
     }, [])
-    const determineCtaTitle = (feature: Features): string => feature.productFeature ? `Learn more about ${startCase(feature.productFeature)}` : (feature.ctaTitle || 'Learn more')
+    const determineCtaTitle = (feature: Features): string =>
+        feature.productFeature
+            ? `Learn more about ${startCase(feature.productFeature)}`
+            : feature.ctaTitle || 'Learn more'
 
     return (
         <>
@@ -147,16 +153,20 @@ export const CoreFeatures: FunctionComponent<{ features?: Features[], startAsset
                             'lg:tw-pl-xl lg:tw-pr-0': index % 2,
                         })}
                     >
-                        {feature.productFeature && <span className="tw-mb-2 tw-text-md tw-uppercase tw-font-semibold tw-block">
-                            {feature.productFeature}
-                        </span>}
+                        {feature.productFeature && (
+                            <span className="tw-mb-2 tw-text-md tw-uppercase tw-font-semibold tw-block">
+                                {feature.productFeature}
+                            </span>
+                        )}
                         <h2>{feature.title}</h2>
                         <p className="tw-mt-sm">{feature.description}</p>
-                        {feature.details && <ul className="tw-my-xs">
-                            {feature.details.map(detail => (
-                                <li key={detail}>{detail}</li>
-                            ))}
-                        </ul>}
+                        {feature.details && (
+                            <ul className="tw-my-xs">
+                                {feature.details.map(detail => (
+                                    <li key={detail}>{detail}</li>
+                                ))}
+                            </ul>
+                        )}
                         {feature.ctaLink.includes('http') ? (
                             <a
                                 href={feature.ctaLink}

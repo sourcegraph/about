@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CaseStudyCard, HubSpotForm, ResourceList, ContentSection, CtaSection } from '@components'
+import { Layout, ImgIconLinkCard, HubSpotForm, ResourceList, ContentSection, CtaSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const blogResourceItems = [
@@ -30,42 +30,47 @@ const blogResourceItems = [
 
 const caseStudyItems = [
     {
-        name: 'Nutanix',
-        logo: '/external-logos/nutanix-logo.svg',
-        altTitle: 'Fix vulnerabilities',
-        title: 'Find, fix, and track vulnerable code quickly across your entire codebase. See how Sourcegraph enables Nutanix to remediate every instance of a vulnerability with confidence.',
+        alt: 'Nutanix',
+        img: '/external-logos/nutanix-logo.svg',
+        title: 'Fix vulnerabilities',
+        description:
+            'Find, fix, and track vulnerable code quickly across your entire codebase. See how Sourcegraph enables Nutanix to remediate every instance of a vulnerability with confidence.',
         url: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
         linkText: 'Read the case study',
     },
     {
-        name: 'Cloudflare',
-        logo: '/external-logos/cloudflare-logo.svg',
-        altTitle: 'Resolve incidents',
-        title: 'Identify the root cause in code and fix the issue everywhere, faster. See how Cloudflare stays audit-ready with Sourcegraph.',
+        alt: 'Cloudflare',
+        img: '/external-logos/cloudflare-logo.svg',
+        title: 'Resolve incidents',
+        description:
+            'Identify the root cause in code and fix the issue everywhere, faster. See how Cloudflare stays audit-ready with Sourcegraph.',
         url: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
         linkText: 'Read the case study',
     },
     {
-        name: 'Indeed',
-        logo: '/external-logos/indeed-logo.svg',
-        altTitle: 'Boost code health',
-        title: 'Improve code health with large-scale changes and track code health initiatives towards completion. Learn how Indeed improves code health at scale.',
+        alt: 'Indeed',
+        img: '/external-logos/indeed-logo.svg',
+        title: 'Boost code health',
+        description:
+            'Improve code health with large-scale changes and track code health initiatives towards completion. Learn how Indeed improves code health at scale.',
         url: '/case-studies/indeed-accelerates-development-velocity',
         linkText: 'Read the case study',
     },
     {
-        name: 'Lyft',
-        logo: '/external-logos/lyft-logo.svg',
-        altTitle: 'Onboard developers',
-        title: 'Decrease time to first commit with self-serve codebase onboarding and knowledge sharing. Learn how Lyft makes every developer autonomous with Sourcegraph.',
+        alt: 'Lyft',
+        img: '/external-logos/lyft-logo.svg',
+        title: 'Onboard developers',
+        description:
+            'Decrease time to first commit with self-serve codebase onboarding and knowledge sharing. Learn how Lyft makes every developer autonomous with Sourcegraph.',
         url: '/case-studies/lyft-monolith-to-microservices',
         linkText: 'Read the case study',
     },
     {
-        name: 'FactSet',
-        logo: '/external-logos/factset-logo.svg',
-        altTitle: 'Promote code reuse',
-        title: 'Find existing libraries for reuse and contribute to a more secure and coherent codebase. See how FactSet ensures consistency across its codebase.',
+        alt: 'FactSet',
+        img: '/external-logos/factset-logo.svg',
+        title: 'Promote code reuse',
+        description:
+            'Find existing libraries for reuse and contribute to a more secure and coherent codebase. See how FactSet ensures consistency across its codebase.',
         url: '/case-studies/factset-migrates-from-perforce-to-github',
         linkText: 'Read the case study',
     },
@@ -96,8 +101,8 @@ const PartnerPodcastPage: FunctionComponent = () => (
             <h4 className="py-3">Learn how these software companies used Sourcegraph</h4>
             <div className="flex-wrap tw-pt-sm tw-flex tw-relative">
                 {caseStudyItems.map(study => (
-                    <div key={study.name} className="mb-6 tw-px-0 col-sm-6 col-md-4">
-                        <CaseStudyCard study={study} bwLogo={true} />
+                    <div key={study.alt} className="mb-6 tw-px-0 col-sm-6 col-md-4">
+                        <ImgIconLinkCard item={study} bwLogo={true} />
                     </div>
                 ))}
             </div>

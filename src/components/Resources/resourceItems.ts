@@ -1,5 +1,11 @@
 type ContentTypes = 'virtual event' | 'blog post' | 'guide' | 'customer story' | 'video'
-type Subjects = 'code security' | 'developer onboarding' | 'code health' | 'incident response' | 'code reuse' | 'product release'
+type Subjects =
+    | 'code security'
+    | 'developer onboarding'
+    | 'code health'
+    | 'incident response'
+    | 'code reuse'
+    | 'product release'
 
 export interface Resource {
     title: string
@@ -23,7 +29,7 @@ export const resourceItems: Resource[] = [
         contentType: 'guide',
         subjects: ['code security', 'incident response'],
         description:
-        'Assess and address security vulnerabilities in source code, automate codebase-wid remediation, and ensure completeness',
+            'Assess and address security vulnerabilities in source code, automate codebase-wid remediation, and ensure completeness',
         publishDate: '2022-10-06T17:32:24Z',
     },
     {
@@ -41,7 +47,8 @@ export const resourceItems: Resource[] = [
         link: '/guides/devops-data-driven-relationships-with-codebases.pdf',
         contentType: 'guide',
         subjects: ['code health'],
-        description: 'Track devops tooling and paved path practices across your entire codebase, from version spread to migrations and deprecations',
+        description:
+            'Track devops tooling and paved path practices across your entire codebase, from version spread to migrations and deprecations',
         publishDate: '2022-10-10T17:32:24Z',
     },
     {

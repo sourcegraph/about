@@ -1,8 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CtaSection } from '@components'
+import { Layout, CtaSection, CASESTUDY_CARDS } from '@components'
 
-import { CaseStudyCard, CASESTUDIES } from '../../components/CaseStudies/CaseStudyCard'
+import { ImgIconLinkCard } from '../../components/ImgIconLinkCard'
 
 const CaseStudiesHome: FunctionComponent = () => (
     <>
@@ -21,13 +21,13 @@ const CaseStudiesHome: FunctionComponent = () => (
 
                 <div className="tw-max-w-screen-xl tw-mx-auto tw-px-6">
                     <ul className="tw-flex-wrap tw-grid tw-grid-cols-12 tw-list-none tw-ml-0 tw-gap-6">
-                        {CASESTUDIES.map(study => (
+                        {CASESTUDY_CARDS.map(study => (
                             <li
                                 className="grid-cols-4 tw-flex tw-col-span-12 md:tw-col-span-6 lg:tw-col-span-4"
-                                key={study.name}
+                                key={study.alt}
                             >
                                 <div className="tw-bg-white tw-border tw-border-solid tw-border-gray-200 tw-w-full tw-p-sm">
-                                    <CaseStudyCard study={study} />
+                                    <ImgIconLinkCard item={study} />
                                 </div>
                             </li>
                         ))}
