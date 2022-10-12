@@ -8,7 +8,7 @@ description: 'Sourcegraph is committed to making all the code in your organizati
 tags: [blog]
 slug: 'git-vs-perforce-salesforce-scalability-and-performance'
 published: true
-heroImage: 
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/22_1012-SG-Blog-Perforce-salesforce.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/soucegraph-salesforce-git-vs-perforce-v2-og.png
 ---
 
