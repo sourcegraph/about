@@ -183,7 +183,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                 </h1>
 
                 {frontmatter.publishDate && (
-                    <time className="text-muted" dateTime={frontmatter.publishDate}>
+                    <time className="tw-text-gray-400" dateTime={frontmatter.publishDate}>
                         {formatDate(frontmatter.publishDate)}
                     </time>
                 )}
