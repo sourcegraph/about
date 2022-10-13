@@ -33,7 +33,7 @@ We were itching to expand our limited Perforce support to become a truly univers
 Git has become the most common version control system in the last decade, but it’s not the only way. The biggest reasons companies might choose to use Perforce over Git include:
 
 * **Handling large files:** Git works best with smaller files, which source code files usually are. Git LFS (Large File System) does provide support for larger files (Large File System), but it doesn't meet the needs of many organizations that deal with many large asset files (e.g., chunky 3D models and multimedia prevalent in gaming) and like to version them together with source.
-* **Centralization:** Perforce is **centralized** while Git is **decentralized**. With Git, every developer has a complete copy of the codebase locally. This is often an advantage, but not always. It means it’s easier to end up with conflicting copies and it’s hard to know which is the “correct” version. It can also be inefficient for large changes as every change has to be copied many times to each developer’s machine.
+* **Centralization:** Perforce is **centralized** while Git is **decentralized**. With Git, every developer has a complete copy of the codebase locally. This is often an advantage, but not always. For example, it can be inefficient for large changes as every change has to be copied many times to each developer’s machine.
 
 The Perforce data model is very different from Git’s. You can find a good [introduction to how Perforce works](https://www.perforce.com/manuals/intro/) on the website.
 
@@ -140,7 +140,7 @@ See the [excellent p4-fusion README](https://sourcegraph.com/github.com/salesfor
 
 Credit goes to [Twarit](https://twitter.com/twaritw) and his team, who are still improving p4-fusion. Having addressed the network I/O bottleneck, the next bottleneck is disk usage. This is not a bad problem to have since it can be mitigated easily by upgrading the underlying hardware to provide better disk I/O speeds. In addition, there is an optimization to include only metadata for binaries, which should be searchable in Sourcegraph, while excluding binary file contents, which aren't useful in the context of code search.
 
-We're excited about the scalability, speed, and reliability of p4-fusion, and particularly about having an effective way to convert Perforce depots into Git repositories while comprehensively indexing them. Devs at Salesforce can now directly search for potential issues using Sourcegraph, rather than spending days going through change lists to track down those issues.
+We're excited about the scalability, speed, and reliability of p4-fusion, and particularly about having an effective way to convert Perforce depots into Git repositories while comprehensively indexing them. Devs at Salesforce can now directly search for potential issues using Sourcegraph, rather than wasting time going through change lists or using multiple tools to track down those issues.
 
 At Sourcegraph, we’re proud of the tools we have created for the developer community. But there is something special about building these tools in collaboration with our customers. We pride ourselves on being a developer-led, customer-centric organization. [Hit us up](https://discord.gg/n43FxnCdTz) if you'd like to chat about scalable code search, code intelligence, or making big codebases nicer to work in.
 
