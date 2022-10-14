@@ -4,7 +4,7 @@ description: "Sourcegraph isn't just for software developers. Learn how product 
 authors:
   - name: Eric Brody-Moore
   - name: Joel Kwartler
-publishDate: 2022-02-17T00:00-07:00
+publishDate: 2022-10-13T00:00-07:00
 tags: [blog]
 slug: sourcegraph-for-non-devs
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/non-devs/sourcegraph-non-devs.png
