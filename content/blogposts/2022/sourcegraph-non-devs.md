@@ -56,7 +56,7 @@ I’d just joined Sourcegraph in September 2020 as the first PM for the extensib
 
 **Time Saved:** 10 minutes (20 if we had multiple repos) and I didn’t need another open desktop application.
 
-**Follow-up situation:** We can quickly see the names of all of our view analytics events and be able to go to what page they’re triggered on with [this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+logViewEvent%28%27...%27%29+count:all&patternType=structural). (Bonus: with the [Open-in-Figma extension](https://sourcegraph.com/extensions/Joelkw/open-in-figma) I can then 1-click open a mockup of the page to get an immediate understanding of “what page fires this event” without reading the code to figure out what page it renders.)
+**Follow-up situation:** We can quickly see the names of all of our view analytics events and be able to go to what page they’re triggered on with [this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+logViewEvent%28%27...%27%29+count:all&patternType=structural). 
 
 <p style={{ width: '100%' }}>
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc4?theme=light" frameBorder="0" sandbox="allow-scripts allow-same-origin allow-popups" style={{ width: '100%', height: '300px' }}></iframe>
