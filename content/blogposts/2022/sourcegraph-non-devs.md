@@ -69,7 +69,7 @@ We built a system to version our docs links, but it turns out many people weren'
  **Search:** First I ran [this search](https://sourcegraph.com/search?q=context:global+docs.sourcegraph.com+file:client/web/src/enterprise+r:github.com/sourcegraph/sourcegraph%24%403.36&patternType=standard) and found dozens of unversioned docs links. 
  
  <p style={{ width: '100%' }}>
-    <iframe src="https://sourcegraph.com/embed/notebooks/ Tm90ZWJvb2s6MTU0Nw==?theme=light" frameBorder="0" sandbox="allow-scripts allow-same-origin allow-popups" style={{ width: '100%', height: '300px' }}></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTU0Nw==?theme=light" frameBorder="0" sandbox="allow-scripts allow-same-origin allow-popups" style={{ width: '100%', height: '300px' }}></iframe>
 </p>
 
 Then, I: 
