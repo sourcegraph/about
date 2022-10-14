@@ -10,7 +10,6 @@ import {
     CoreFeatures,
     CtaSection,
     CustomerLogos,
-    ImgIconLinkCard,
     Layout,
     Hero,
     QuoteCarousel,
