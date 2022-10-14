@@ -56,10 +56,10 @@ I’d just joined Sourcegraph in September 2020 as the first PM for the extensib
 
 **Time Saved:** 10 minutes (20 if we had multiple repos) and I didn’t need another open desktop application.
 
-**Follow-up situation:** We can quickly see the names of all of our view analytics events and be able to go to what page they’re triggered on with [this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+logViewEvent%28%27...%27%29+count:all&patternType=structural). (Bonus: with the [Open-in-Figma extension](https://sourcegraph.com/extensions/Joelkw/open-in-figma) I can then 1-click open a mockup of the page to get an immediate understanding of “what page fires this event” without reading the code to figure out what page it renders.)
+**Follow-up situation:** We can quickly see the names of all of our view analytics events and be able to go to what page they’re triggered on with [this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+logViewEvent%28%27...%27%29+count:all&patternType=structural). 
 
 <p style={{ width: '100%' }}>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc4?theme=light" frameBorder="0" sandbox="allow-scripts allow-same-origin allow-popups" style={{ width: '100%', height: '300px' }}></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc4?theme=light" frameBorder="0" sandbox="allow-scripts allow-same-origin allow-popups" style={{ width: '100%', height: '300px' }}/>
 </p>
 
 ### How big a problem are unversioned docs links, and how do I stop people from using them? 
@@ -69,7 +69,7 @@ We built a system to version our docs links, but it turns out many people weren'
  **Search:** First I ran [this search](https://sourcegraph.com/search?q=context:global+docs.sourcegraph.com+file:client/web/src/enterprise+r:github.com/sourcegraph/sourcegraph%24%403.36&patternType=standard) and found dozens of unversioned docs links. 
  
  <p style={{ width: '100%' }}>
-    <iframe src="https://sourcegraph.com/embed/notebooks/ Tm90ZWJvb2s6MTU0Nw==?theme=light" frameBorder="0" sandbox="allow-scripts allow-same-origin allow-popups" style={{ width: '100%', height: '300px' }}></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTU0Nw==?theme=light" frameBorder="0" sandbox="allow-scripts allow-same-origin allow-popups" style={{ width: '100%', height: '300px' }}></iframe>
 </p>
 
 Then, I: 
@@ -90,10 +90,10 @@ Then, I:
 
 A customer was seeing incomplete result counts for the search results returned for a Code Insights feature, making it impossible to reason about their code based on these incomplete results.
 
-**Search:** A term like “limit 5000” is likely to bring up many hits throughout our codebase, so I used [a diff search with a timeframe](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+type:diff+limit+5000+after:%22five+months+ago%22&patternType=regexp) to scope my search to the time the behavior started appearing.
+**Search:** A term like “limit 5000” is likely to bring up many hits throughout our codebase, so I used [a diff search with a timeframe](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24%403.36+type:diff+limit+5000+after:%222021-06-01%22+before:%222021-09-01%22&patternType=regexp) to scope my search to the time the behavior started appearing.
 
 <p style={{ width: '100%' }}>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc5?theme=light" frameBorder="0" sandbox="allow-scripts allow-same-origin allow-popups" style={{ width: '100%', height: '300px' }}></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc1NQ==?theme=light" frameBorder="0" sandbox="allow-scripts allow-same-origin allow-popups" style={{ width: '100%', height: '300px' }}></iframe>
 </p>
 
 I quickly found [our search team had changed a limit](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/commit/326d250079b789ca716878c6d2e5bc694b4ea97a?visible=1) that affected one of my team’s features. I was able to understand who made the change and why they made it in a few seconds.
