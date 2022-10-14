@@ -211,7 +211,8 @@ export const Security: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection parentClassName="sg-bg-gradient-venus" className="tw-max-w-screen-md">
+        {/* TODO: Reveal when other persona pages are live */}
+        {/* <ContentSection parentClassName="sg-bg-gradient-venus" className="tw-max-w-screen-md">
             <h2 className="tw-mb-xl">Explore other use cases by role</h2>
             <div className="tw-grid tw-grid-cols-1 xs:tw-grid-cols-2 tw-gap-6">
                 {personaList.map(persona => (
@@ -220,7 +221,7 @@ export const Security: FunctionComponent = () => (
                     </div>
                 ))}
             </div>
-        </ContentSection>
+        </ContentSection> */}
 
         <ResourceList title="Explore more" items={resourceItems} />
 

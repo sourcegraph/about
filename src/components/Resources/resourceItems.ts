@@ -30,7 +30,7 @@ export const resourceItems: Resource[] = [
         subjects: ['code security', 'incident response'],
         description:
             'Assess and address security vulnerabilities in source code, automate codebase-wid remediation, and ensure completeness',
-        publishDate: '2022-10-06T17:32:24Z',
+        publishDate: '2022-10-16T17:32:24Z',
     },
     {
         featured: false,
