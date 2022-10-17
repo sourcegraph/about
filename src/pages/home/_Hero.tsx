@@ -92,6 +92,37 @@ const Hero: FunctionComponent = () => {
                 <div className="tw-max-w-4xl tw-mx-auto tw-my-3xl">
                     <YouTube title="Sourcegraph Product Tour" id="hayQ-rd_kzM" />
                 </div>
+
+                <div className="tw-mx-auto tw-text-center max-w-700">
+                    <h2 className="tw-mb-2">
+                        Over{' '}
+                        <Link href="/case-studies" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                className="tw-text-violet-400"
+                                title="1.8 million engineers"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
+                                1.8M engineers
+                            </a>
+                        </Link>{' '}
+                        use Sourcegraph to build software you rely on
+                    </h2>
+
+                    <Link href="/case-studies" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            title="Learn how our customers use Sourcegraph"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.hero}
+                            data-button-type="cta"
+                        >
+                            Learn how our customers use Sourcegraph
+                        </a>
+                    </Link>
+                </div>
             </div>
 
             <CustomerLogos />
