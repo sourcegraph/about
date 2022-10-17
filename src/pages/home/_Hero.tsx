@@ -92,6 +92,7 @@ const Hero: FunctionComponent = () => {
                 <div className="tw-max-w-4xl tw-mx-auto tw-my-3xl">
                     <YouTube title="Sourcegraph Product Tour" id="hayQ-rd_kzM" />
                 </div>
+
                 <div className="tw-mx-auto tw-text-center max-w-700">
                     <h2 className="tw-mb-2">
                         Over{' '}
@@ -109,6 +110,7 @@ const Hero: FunctionComponent = () => {
                         </Link>{' '}
                         use Sourcegraph to build software you rely on
                     </h2>
+
                     <Link href="/case-studies" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
