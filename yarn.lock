@@ -8087,11 +8087,6 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-live-chat-loader@^2.7.4:
-  version "2.7.4"
-  resolved "https://registry.yarnpkg.com/react-live-chat-loader/-/react-live-chat-loader-2.7.4.tgz#9873cf0a5d094a97d7cec92811bcb88b94b8fabe"
-  integrity sha512-W2tFJ9y6AwtguQvEMS8k7MZryO1k3qL6V1tmJcyMVRYfz/2aUVD75DJscGtpBfcnZdB37Z4/wDL0D82U2QIfbw==
-
 react-spring@^9.4.4:
   version "9.5.4"
   resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-9.5.4.tgz#4c67e33650292b79bceef611e4f0d36e74d08202"
