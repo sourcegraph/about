@@ -8,8 +8,8 @@ description: 'Sourcegraph is committed to making all the code in your organizati
 tags: [blog]
 slug: 'git-vs-perforce-salesforce-scalability-and-performance'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/22_1012-SG-Blog-Perforce-salesforce.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/soucegraph-salesforce-git-vs-perforce-v2-og.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-perforce-salesforce-hero-101822.jpg
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-perforce-salesforce-og-101822.jpg
 ---
 
 Salesforce uses Perforce to track and manage its code at scale: The massive Salesforce codebase consists of 1.1 million change lists, 2.2 million files just at `HEAD`, and a total history of 1.1 TB. Four additional feature freeze branches are copies of `main`, each with patches applied on top of it.
@@ -108,7 +108,7 @@ Using p4-fusion, conversion time was reduced from 42 minutes to just under 30 se
 
 This meant that cloning Salesforce’s main Perforce branch could be done in 4 to 5 days instead of 16, and feature freeze branches between 30 minutes and 6 hours depending on size. Whereas the average time between a new CL being checked in and the CL appearing in Sourcegraph was previously 2 to 3 minutes, with p4-fusion the CL appears in 15 to 30 seconds.
 
-![](https://storage.googleapis.com/sourcegraph-assets/blog/soucegraph-salesforce-git-vs-perforce-python2-cpp.png)
+![](https://storage.googleapis.com/sourcegraph-assets/blog/blog-perforce-salesforce-depot-101822.jpg)
 
 ## How does it work?
 
