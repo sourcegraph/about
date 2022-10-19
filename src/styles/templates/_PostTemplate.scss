@@ -37,6 +37,10 @@
             border: 1px solid var(--sg-color-gray-200);
         }
 
+        pre code {
+            border: none;
+        }
+
         p {
             line-height: 1.8;
             margin-bottom: 1.25rem;

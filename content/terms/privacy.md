@@ -3,9 +3,9 @@ layout: markdown
 title: Privacy Policy
 ---
 
-Last modified: March 28, 2022
+Last modified: September 26, 2022
 
-See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Edocs/privacy%5C.md+type:diff&patternType=literal) since the [previous version](/terms/archives/privacy/2021-01-15/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives).
+See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Econtent/terms/privacy%5C.md%7C%5Edocs/privacy+type:diff&patternType=standard) since the [previous version](/terms/archives/privacy/2022-03-28/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives).
 
 At Sourcegraph, Inc. (**"Sourcegraph," "we," "our,"** or **"us"**), we value the privacy of our website visitors and Sourcegraph Cloud users (collectively for the purposes of this Privacy Policy, our **"Website"**) and our self-hosted Sourcegraph instances users (collectively with our Website, our **"Service"** or **"Services"**). This Privacy Policy explains how we collect, use, share and protect your personal information that we collect through our Service. This Privacy Policy applies to our Website, Sourcegraph Cloud, and our self-hosted Sourcegraph instances. By using our Service, you agree to the terms of this Privacy Policy and our <a href="/terms">Terms of Service</a>.
 
@@ -42,7 +42,7 @@ Some of the information we collect is stored in a manner that cannot be linked b
 
 ### Information you provide to us directly
 
-When you register for a Sourcegraph account, participate in forums, comment on blog posts, submit a feedback survey, or correspond with us, we may collect account information (username, password, email), profile information (display name, avatar URL), Content you post, add, receive, or share on our hosted services, and any payment information. We do not process or store your payment information, but our third-party payment processor does.
+When you register for a Sourcegraph account, participate in forums, comment on blog posts, submit a feedback survey, interact with the chat bot on our Website, or correspond with us, we may collect account information (username, password, email), profile information (display name, avatar URL), Content you post, add, receive, or share on our hosted services, and any payment information. We do not process or store your payment information, but our third-party payment processor does.
 
 ### Information we receive from third parties
 
@@ -56,9 +56,10 @@ We use information provided directly by you and third parties to operate, mainta
 
 #### Usage data
 
-When you use our Services, Sourcegraph collects aggregate and high-level information about usage through a server ping. The server ping sends a payload containing data such as total number of users and whether certain features are enabled or in use.
+When you use our Services, Sourcegraph automatically collects data about the Services and how they are used, including:
 
-<div className="mt-4 mb-4 p-3" style={{background: '#f2f4f8', wordWrap: 'break-word'}}>For more information about the specific information we have access to, see our <a href="https://docs.sourcegraph.com/admin/pings">server pings documentation</a>. Customers can contact Sourcegraph at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a> to opt out of server pings.</div>
+* Aggregated and high-level information about usage through a server ping. The server ping sends a payload containing data such as total number of users and whether certain features are enabled or in use. For more information about the specific information we have access to, see our [server pings documentation](https://docs.sourcegraph.com/admin/pings). Customers can contact Sourcegraph at support@sourcegraph.com to opt out of server pings.
+* Event analytics data and metadata to better understand usage within the Services, including click patterns and length and frequency of feature utilization, tied to an internally-generated user ID number.
 
 For self-hosted instances, the only personal information collected is the email address of the initial Sourcegraph installer and site admin (or, if that user is deleted or demoted to not be an admin, the first such active site admin). This information allows us to contact the technical administrator of the Sourcegraph instance to deliver information about product updates and policy changes, and for customer development purposes. Other than the initial site admin email address, only aggregates of usage data are sent: no usernames, user emails, user personal information, code, repository names, file names, URLs, or other such private content is sent to Sourcegraph.
 
@@ -101,17 +102,20 @@ Although we do our best to honor the privacy preferences of our users, we are no
 We may use the automatically collected data to:
 
 1. remember information so that you will not have to re-enter it during your visit or the next time you visit the site;
-1. provide custom, personalized content and information;
-1. provide and monitor the effectiveness of our Website;
-1. monitor aggregate metrics such as total number of visitors, traffic, usage, and demographic patterns on our website and our Service;
-1. diagnose or fix technology problems; and
-1. otherwise to plan for and enhance our service
+2. provide custom, personalized content and information;
+3. provide and monitor the effectiveness of our Website;
+4. monitor aggregate metrics such as total number of visitors, traffic, usage, and demographic patterns on our website and our Service;
+5. understand user behaviors when using the Services to drive product development and business strategies 
+6. Identify, diagnose and fix technology problems and  security risks;
+7. plan for and enhance our service;
+8. comply with our legal obligations; and
+9. for other purposes with your consent.
 
 ### What we do not collect
 
 #### Sensitive Personal Information
 
-Sourcegraph does not intentionally collect “Sensitive Personal Information,” such as personal data revealing racial, ethnicity, political and religious beliefs, trade union membership, or genetic, biometric, health, or sexual data. If you choose to store any Sensitive Personal Information on our servers, you are responsible for complying with any regulatory controls regarding that data.
+Sourcegraph does not intentionally collect “Sensitive Personal Information,” such as personal data revealing racial, ethnicity, political and religious beliefs, trade union membership, or genetic, biometric, health, or sexual data. Providing Sensitive Personal Information violates our Terms of Use. 
 
 #### Personal Information in Repositories
 

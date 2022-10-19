@@ -1,5 +1,7 @@
 import { FunctionComponent } from 'react'
 
+import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
+
 interface Video {
     host?: 'gcp' | 'self'
     source: {
@@ -8,6 +10,8 @@ interface Video {
     }
     loop: boolean
     caption?: string
+    link?: string
+    linkIcon?: boolean
     title: string
     controls?: boolean
     autoPlay?: boolean
@@ -23,6 +27,8 @@ export const Video: FunctionComponent<Video> = ({
     source,
     loop,
     caption,
+    link,
+    linkIcon,
     title,
     controls = false,
     autoPlay = true,
@@ -44,6 +50,17 @@ export const Video: FunctionComponent<Video> = ({
             <source type="video/webm" src={`${hosts[host]}${source.webm}.webm`} data-cookieconsent="ignore" />
             <source type="video/mp4" src={`${hosts[host]}${source.mp4}.mp4`} data-cookieconsent="ignore" />
         </video>
-        {caption && <figcaption className="mt-3">{caption}</figcaption>}
+        {caption && (
+            <figcaption className="tw-mt-3">
+                {link ? (
+                    <a href={link} className="tw-not-italic tw-font-normal tw-flex">
+                        {caption}
+                        {linkIcon && <OpenInNewIcon className="tw-ml-xxs tw-my-auto" size={18} />}
+                    </a>
+                ) : (
+                    caption
+                )}
+            </figcaption>
+        )}
     </figure>
 )

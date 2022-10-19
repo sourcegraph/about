@@ -1,0 +1,36 @@
+{
+  "name": "Sourcegraph",
+  "short_name": "Sourcegraph",
+  "description": "Code Intelligence Platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "orientation": "portrait-primary",
+  "related_applications": [
+    {
+      "platform": "chrome_web_store",
+      "url": "https://chrome.google.com/webstore/detail/dgjhfomjieaadpoljlnidmbgkdffpack"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/sourcegraph/sourcegraph-mark-manifest-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/sourcegraph/sourcegraph-mark-manifest-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/sourcegraph/sourcegraph-mark-manifest-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}

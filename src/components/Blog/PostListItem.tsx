@@ -92,7 +92,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                         {frontmatter.description ? (
                             <p>{truncate(frontmatter.description, { length: 300 })}</p>
                         ) : (
-                            <p>{excerpt}</p>
+                            <p>{typeof excerpt === 'string' && excerpt}</p>
                         )}
                         <div className="tw-text-center xs:tw-text-left">
                             <Link href={`/${blogType}/${slugPath}`} passHref={true}>

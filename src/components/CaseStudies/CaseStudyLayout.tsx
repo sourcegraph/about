@@ -103,22 +103,20 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                 )}
             </CaseStudyJumbotron>
 
-            <ContentSection background="white">
-                <h1 className={`${titleClassName}`}>{title}</h1>
+            <ContentSection background="white" slimWidth={true}>
+                <h1 className={titleClassName}>{title}</h1>
             </ContentSection>
 
             {children}
         </div>
 
         <CtaSection
-            centerContent={true}
             background="black"
-            title="See Sourcegraph in action."
-            description="Learn how companies of all sizes and in all industries use Sourcegraph to solve big code problems."
-            cta1={{
+            centerContent={true}
+            cta2={{
                 text: 'Request a demo',
+                ctaStyle: 'outlineButtonWhiteText',
                 link: '/demo',
-                ctaStyle: 'primaryButton',
             }}
         />
     </>

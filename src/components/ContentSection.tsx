@@ -8,6 +8,7 @@ export interface ContentSection {
     id?: string
     background?: Background['variant']
     illustration?: Background['illustration']
+    slimWidth?: boolean // For long form content (Blog, Case studies, etc)
     parentClassName?: string
     className?: string
     children: ReactNode
@@ -17,6 +18,7 @@ export const ContentSection: FunctionComponent<ContentSection> = ({
     id,
     background = 'transparent',
     illustration,
+    slimWidth = false,
     parentClassName,
     className = '',
     children,
@@ -27,7 +29,11 @@ export const ContentSection: FunctionComponent<ContentSection> = ({
             illustration={illustration}
             className={classNames('tw-px-sm tw-py-3xl md:tw-py-5xl', parentClassName)}
         >
-            <section className={`tw-max-w-screen-xl tw-mx-auto ${className}`}>{children}</section>
+            <section
+                className={classNames('tw-mx-auto', className, slimWidth ? 'tw-max-w-[840px]' : 'tw-max-w-screen-xl')}
+            >
+                {children}
+            </section>
         </Background>
     </div>
 )

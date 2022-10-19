@@ -1,0 +1,39 @@
+/* ======== Bootstrap Tooltip style overrides ======== */
+.tooltip-inner {
+    background-color: #fff;
+    color: black;
+    text-align: start;
+    font-size: 0.75rem;
+}
+
+/* ======== Bootstrap Accordion style overrides ======== */
+.accordion-button {
+    width: 96%;
+}
+
+/* ======== Bootstrap Carousel style overrides ======== */
+.carousel {
+    .carousel-indicators {
+        bottom: -50px;
+
+        .active {
+            opacity: 1;
+        }
+
+        button {
+            background-color: #000;
+            opacity: 0.5;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            border: 0 none;
+            margin: 0 8px;
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        .carousel-control-prev,
+        .carousel-control-next {
+            display: none;
+        }
+    }
+}

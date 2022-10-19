@@ -111,6 +111,7 @@ $grid-breakpoints: (
 @import 'components/blog/ReleasePost';
 @import 'components/Header';
 @import 'components/TestimonialCarousel';
+@import 'components/HubSpotForms';
 
 /* ==================== Pages ==================== */
 @import 'pages/_case_studies';
@@ -119,6 +120,6 @@ $grid-breakpoints: (
 @import 'templates/PostTemplate';
 
 /* ==================== Custom Partials ==================== */
-@import 'carousels';
+@import 'bootstrap-overrides';
 @import 'scripts';
 @import 'spacing';

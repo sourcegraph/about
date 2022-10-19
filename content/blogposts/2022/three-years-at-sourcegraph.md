@@ -406,7 +406,7 @@ Thanks for reading this far, have a nice day!
 
 ---
 
-_Special thanks to Beyang Liu, Lishi He, Yaohui Wang, and Tianzhou Liu for their proofreadings and thoughtful feedback!_
+_Special thanks to Beyang Liu, Lishi He, Yaohui Wang, and Tianzhou Chen for their proofreadings and thoughtful feedback!_
 
 #### About the author
 

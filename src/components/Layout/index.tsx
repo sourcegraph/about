@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactNode, ReactFragment } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
 import Head from 'next/head'
 import { useRouter } from 'next/router'
@@ -21,13 +21,12 @@ interface LayoutProps {
     children: ReactNode
     minimal?: boolean
 
-    hero?: ReactFragment
+    hero?: ReactNode
     heroAndHeaderClassName?: string
 
     className?: string
     hideFooter?: boolean
     hideHeader?: boolean
-    hideGetStartedButton?: boolean
 }
 
 export const Layout: FunctionComponent<LayoutProps> = props => {
@@ -116,7 +115,6 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                         isProductPage={isProductPage}
                         minimal={props.minimal}
                         className={props.className}
-                        hideGetStartedButton={props.hideGetStartedButton}
                         navLinks={navLinks}
                     />
 

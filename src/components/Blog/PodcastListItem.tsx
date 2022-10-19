@@ -43,7 +43,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                             <Link href={`/podcast/${slugPath}`} passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="mr-4 text-muted"
+                                    className="mr-4 tw-text-gray-400"
                                     title="Permalink"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
@@ -56,7 +56,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                             <Link href={`/podcast/${slugPath}#notes`} passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="mr-4 text-muted"
+                                    className="mr-4 tw-text-gray-400"
                                     title="Show notes"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
@@ -68,7 +68,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                             <Link href={`/podcast/${slugPath}#transcript`} passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="mr-4 text-muted"
+                                    className="mr-4 tw-text-gray-400"
                                     title="Transcript"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
@@ -80,7 +80,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                             {frontmatter.videoID && (
                                 <a
                                     href={`https://www.youtube.com/v/${frontmatter.videoID}`}
-                                    className="mr-4 text-muted"
+                                    className="mr-4 tw-text-gray-400"
                                     target="_blank"
                                     rel="noreferrer"
                                     title="Watch the video"

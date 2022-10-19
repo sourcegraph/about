@@ -74,6 +74,13 @@ export interface Background {
         | 'darkMultiGrid'
         | 'darkSimpleGrid'
         | 'darkAuroraGrid'
+        // Simple Variants
+        | 'venus'
+        | 'saturn'
+        | 'mars'
+        | 'aquamarine'
+        | 'infrared'
+        | 'aurora'
         // Starship Variants
         | 'starshipLaunchPills'
     children?: ReactNode
@@ -94,6 +101,7 @@ const backgrounds: { [key: string]: StaticImageData | string } = {
     // Standard Variants
     white: 'tw-bg-white tw-text-black',
     black: 'tw-bg-black tw-text-white',
+    // Light Nebulous Variants
     lightNebulousSaturn1,
     lightNebulousSaturn2,
     lightNebulousVenus1,
@@ -120,6 +128,13 @@ const backgrounds: { [key: string]: StaticImageData | string } = {
     darkMultiGrid,
     darkSimpleGrid,
     darkAuroraGrid,
+    // Simple Variants
+    venus: 'sg-bg-gradient-venus',
+    saturn: 'sg-bg-gradient-saturn',
+    mars: 'sg-bg-gradient-mars',
+    aquamarine: 'sg-bg-gradient-aquamarine',
+    infrared: 'sg-bg-gradient-infrared',
+    aurora: 'sg-bg-gradient-aurora',
     // Starship Variants
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     starshipLaunchPills,
@@ -178,11 +193,9 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
 
     const styleClasses = classNames(className, {
         [utilityBackground]: isUtilityBackground,
-        'tw-text-white':
-            !isUtilityBackground &&
-            (variant.includes('dark') || variant.includes('starship') || variant.includes('black')),
+        'tw-text-white': variant.includes('dark') || variant.includes('starship') || variant.includes('black'),
         'tw-text-black':
-            (!isUtilityBackground && !variant.includes('dark') && !variant.includes('starship')) ||
+            (!variant.includes('dark') && !variant.includes('starship') && !variant.includes('black')) ||
             variant === 'transparent',
     })
 

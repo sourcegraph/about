@@ -11,31 +11,33 @@ If you have specific questions or concerns, contact us at security@sourcegraph.c
 
 If you think you have discovered a security vulnerability in our product, please follow our instructions on [how to report a security vulnerability](https://handbook.sourcegraph.com/product-engineering/engineering/cloud/security/reporting-vulnerabilities).
 
-## Sourcegraph.com
+For details on our information security practices or to request a copy of our SOC 2 Report, please visit our 
+<Badge text="Security Trust Portal" color="blue" size="large" link="https://security.sourcegraph.com/" />.
 
-Sourcegraph.com makes it easier than ever to connect your code repositories and search private and public code. Here are the measures we take to ensure your code is safe and Sourcegraph is available:
+## Sourcegraph Cloud
 
-#### Account Security
+Sourcegraph Cloud is the recommended deployment model for most customers. Sourcegraph Cloud instances are provisioned and managed by Sourcegraph and have special security features:
 
-- Login with your GitHub or GitLab account using OAuth2.
-- Only you can see your private source code. Code host permissions are enforced and not even Sourcegraph’s admin accounts can see private code. Manage your permissions in the code host and they will be automatically replicated in Sourcegraph.
-- User credentials are encrypted in our database using 256-bit Advanced Encryption Standard (AES-256) keys in Galois Counter Mode (GCM). The keys are automatically rotated every 90 days.
+### Infrastructure
 
-#### Infrastructure
-
-- All infrastructure is hosted on Google Cloud Platform (https://cloud.google.com/security/) and managed through Terraform.
+- All infrastructure is hosted on [Google Cloud Platform](https://cloud.google.com/security/) and managed through Terraform.
+- Customer instances are provisioned in fully segregated GCP environments, ensuring that customer data is fully segregated.
+- All communication to your Sourcegraph instance is encrypted using TLS 1.2 or greater. User credentials are encrypted at rest using 256-bit Advanced Encryption Standard (AES-256) keys in Galois Counter Mode (GCM). The keys are automatically rotated every 90 days.
 - All storage volumes are encrypted at rest, and data is encrypted in-cloud during transport.
 - We leverage IAM groups and rules to enforce the principle of least access across our cloud infrastructure.
-- The domain sourcegraph.com is managed through Cloudflare and uses its security capabilities, like Web Application Firewall and Rate Limiting.
-- External access to production systems is restricted by firewall. Secrets that grant access to
-  compute resources are stored only on encrypted local drives or a secret management service.
+- Domains are managed through Cloudflare and use its security capabilities, like Web Application Firewall and Rate Limiting.
+- External access to production systems is restricted by firewall. Secrets that grant access to compute resources are stored only on encrypted local drives or a secret management service.
+- Instances are updated monthly, and are actively maintained to keep the service up and healthy.
+- Instances are updated for security patches as needed, according to Sourcegraph's [Vulnerability Management Policy](https://handbook.sourcegraph.com/departments/engineering/dev/policies/vulnerability-management-policy/).
+  
+### Monitoring and Incident Response
 
-#### Monitoring and Incident Response
-
-- Our operations team monitors service availability 24x7x365. They investigate alerts and potential attacks 24x7x365, triaging and responding if necessary.
-- We only log information crucial for security and support. Only restricted personnel have access to user data. Logs are stored in GCP and the information is retained for 180 days. Find out more in our [Privacy Policy](/terms/privacy).
-- Service, application, and access logs for sourcegraph.com are stored centrally by Sourcegraph and monitored.
-- Our Incident Response plan is currently under review. It will be publicly available when finalized.
+- Our operations team monitors service availability 24x7x365. They investigate alerts and potential attacks 24x7x365, triaging and responding when necessary.
+- We only log information crucial for security and support. Only restricted personnel have access to user data. Logs are stored in GCP and the information is retained for up to 365 days. Find out more in our [Privacy Policy](/terms/privacy).
+- Service, application, and access logs for are stored centrally by Sourcegraph and monitored.
+- You can find more details in our [Incident Response Policy](https://handbook.sourcegraph.com/departments/security/security-incident-response/)
+- Only restricted Sourcegraph employees have access to a customer's instance, strictly for support and maintenance purposes. Access is logged and monitored.
+- Sourcegraph employees access the instance through secure SSO means, ensuring MFA protections and more.
 
 ## Sourcegraph on-premise
 
@@ -52,16 +54,6 @@ Sourcegraph on-premise allows you to have the most control over the deployment a
 - Enterprise customers can configure Sourcegraph to [enforce repository permissions](https://docs.sourcegraph.com/admin/repo/permissions) from connected code hosts. Sourcegraph also exposes a GraphQL API to explicitly set repository permissions.
 
 - Encryption at-rest and in-transit are configurable and highly recommended.
-
-## Managed Sourcegraph instances
-
-[Managed Sourcegraph instances](https://docs.sourcegraph.com/admin/install/managed) are provisioned and managed by Sourcegraph and have special security features:
-
-- Sourcegraph provisions your instance in a completely isolated and secure cloud infrastructure. It will be restricted to only your organization through your enterprise VPN and/or SSO provider of choice.
-- As with Sourcegraph on-prem instances, authentication and authorization are configurable by the customer.
-- All communication to your Sourcegraph instance is encrypted using TLS 1.2 or greater. User credentials are encrypted at rest using 256-bit Advanced Encryption Standard (AES-256) keys in Galois Counter Mode (GCM). The keys are automatically rotated every 90 days.
-- Instances are updated monthly, and are actively maintained to keep the service up and healthy.
-- Managed instances are monitored 24x7 and incidents managed in the same way as our Sourcegraph Cloud deployment.
 
 ## Shared security responsibility model for sourcegraph.com and managed instances.
 

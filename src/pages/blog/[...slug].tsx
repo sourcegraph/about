@@ -47,29 +47,14 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
                             post={post}
                             content={content}
                             url={urlToPost(post)}
-                            className="tw-mx-auto post-template__post blog-post tw-max-w-[846px]"
+                            className="tw-mx-auto post-template__post blog-post tw-max-w-[840px]"
                             headerClassName="card-header bg-white border-bottom-0 tw-text-center tw-pt-md"
                         />
                     </div>
                 </div>
             </article>
 
-            <CtaSection
-                background="darkNebulous4"
-                title="Try Sourcegraph for free today"
-                description="You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your code stays local and secure)."
-                slimWidth={true}
-                cta1={{
-                    text: 'Try Sourcegraph now',
-                    link: '/get-started/self-hosted',
-                    ctaStyle: 'primaryButton',
-                }}
-                cta2={{
-                    text: 'Schedule a demo',
-                    link: '/demo',
-                    ctaStyle: 'outlineButton',
-                }}
-            />
+            <CtaSection background="darkNebulous4" />
         </Layout>
     )
 }

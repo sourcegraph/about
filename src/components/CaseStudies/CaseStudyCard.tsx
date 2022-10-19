@@ -122,46 +122,44 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
     <div className="tw-grow">
         <div className="md:tw-pr-12">
             <img
-                className={classNames('tw-max-w-[135px] tw-h-[60px] mb-4', { 'tw-brightness-0': bwLogo })}
-                height="60"
+                className={classNames('tw-max-w-[135px] tw-max-h-[60px] mb-4', { 'tw-brightness-0': bwLogo })}
                 src={logo}
                 alt={`${name} logo`}
             />
+
             {altTitle && <h5>{altTitle}</h5>}
-            <p className="card-text">
-                {title}{' '}
-                <div className="tw-mt-2">
-                    {url.includes('http') ? (
-                        <a
-                            href={url}
-                            target="_blank"
-                            rel="nofollow noreferrer"
-                            title={linkText + ': ' + title}
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                            className="tw-font-bold tw-no-underline"
-                        >
-                            {linkText}
-                            <ArrowRightIcon size={20} className="ml-1 tw-inline" />
-                        </a>
-                    ) : (
-                        <Link href={url} passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title={linkText + ': ' + title}
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                                className="tw-font-bold tw-no-underline"
-                            >
-                                {linkText}
-                                <ArrowRightIcon size={20} className="ml-1 tw-inline" />
-                            </a>
-                        </Link>
-                    )}
-                </div>
-            </p>
+
+            <p>{title}</p>
+
+            {url.includes('http') ? (
+                <a
+                    href={url}
+                    target="_blank"
+                    rel="nofollow noreferrer"
+                    title={linkText + ': ' + title}
+                    data-button-style={buttonStyle.text}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                    className="tw-font-bold tw-no-underline"
+                >
+                    {linkText}
+                    <ArrowRightIcon size={20} className="ml-1 tw-inline" />
+                </a>
+            ) : (
+                <Link href={url} passHref={true}>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a
+                        title={linkText + ': ' + title}
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                        className="tw-font-bold tw-no-underline"
+                    >
+                        {linkText}
+                        <ArrowRightIcon size={20} className="ml-1 tw-inline" />
+                    </a>
+                </Link>
+            )}
         </div>
     </div>
 )
