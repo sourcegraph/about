@@ -1,12 +1,13 @@
 import { FunctionComponent } from 'react'
 
+import Link from 'next/link'
+
 import {
     Blockquote,
     ContentSection,
     CtaSection,
     Figure,
     Hero,
-    HubSpotForm,
     Layout,
     Tabs,
     TwoColumnSection,
@@ -30,7 +31,36 @@ export const BatchChangesPage: FunctionComponent = () => (
                 product="batch changes"
                 title={'Automate large-scale\ncode changes'}
                 subtitle="Keep your code up to date, fix critical security issues, and pay down tech debt across all of your repositories with Batch Changes."
-                cta={<HubSpotForm masterFormName="contactEmail" chiliPiper={true} />}
+                cta={
+<div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
+                        <div className="mb-3 mb-md-0">
+                        <a
+                                href="https://signup.sourcegraph.com"
+                                className="btn btn-primary w-100 max-w-350"
+                                title="Get free trial"
+                                data-button-style={buttonStyle.outline}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
+                                Get free trial
+                            </a>
+                        </div>
+                        <div className="ml-md-3">
+                        <Link href="/demo" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    className="btn btn-outline-primary w-100 max-w-350"
+                                    title="Request a Demo."
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
+                                    Request a demo
+                                </a>
+                            </Link>
+                        </div>
+                    </div>
+                }
                 displayUnderNav={true}
             />
         }
