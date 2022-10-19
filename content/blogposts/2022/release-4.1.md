@@ -8,16 +8,25 @@ published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.1/sourcegraph-4-1.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.1/sourcegraph-4-1.png
 changelogItems:
-  - description: 
-    url:
-    category:
-  - description:
-    url:
-    category:
-  - description: 
-    url: 
-    category: 
----
+  - description: Added repository sync counters to the code host details page to give visibility into external service sync progress.
+    url: https://github.com/sourcegraph/sourcegraph/pull/43039
+    category: Repositories
+  - description: "Added a new button in the repository settings, under \"Mirroring\", to delete a repository from disk and reclone it. This prevents the need to manually delete failed repositories from the Git server."
+    url: https://github.com/sourcegraph/sourcegraph/pull/42177
+    category: Repositories
+  - description: "GraphQL request logs are now compliant with the audit logging format. The old GraphQl logging based on `LOG_ALL_GRAPHQL_REQUESTS` env var is now deprecated and scheduled for removal."
+    url: https://github.com/sourcegraph/sourcegraph/pull/42550
+    category: Admin
+  - description: "Git server access logs are now compliant with the audit logging format. This introduces a breaking change: The 'actor' field is now nested under the 'audit' field."
+    url: https://github.com/sourcegraph/sourcegraph/pull/41865
+    category: Admin
+  - description: Security events are now included in the audit log by default.
+    url: https://github.com/sourcegraph/sourcegraph/pull/42653
+    category: Admin
+  - description: "Security events (in the audit log) can now optionally omit internal actor traffic to reduce noise."
+    url: https://github.com/sourcegraph/sourcegraph/pull/42946
+    category: Admin
+--
 
 Sourcegraph 4.1 is now available! For this release, we introduced:
 
