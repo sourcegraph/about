@@ -58,7 +58,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                 cta={
                     <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
                         <div className="mb-3 mb-md-0">
-                        <a
+                            <a
                                 href="https://signup.sourcegraph.com"
                                 className="btn btn-primary w-100 max-w-350"
                                 title="Get free trial"
@@ -70,7 +70,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                             </a>
                         </div>
                         <div className="ml-md-3">
-                        <Link href="/demo" passHref={true}>
+                            <Link href="/demo" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
                                     className="btn btn-outline-primary w-100 max-w-350"
