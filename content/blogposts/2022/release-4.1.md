@@ -26,9 +26,11 @@ changelogItems:
   - description: "Security events (in the audit log) can now optionally omit internal actor traffic to reduce noise."
     url: https://github.com/sourcegraph/sourcegraph/pull/42946
     category: Admin
---
+---
 
 Sourcegraph 4.1 is now available! For this release, we introduced:
+
+<Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 
 #### Batch Changes
 
@@ -37,3 +39,4 @@ We're iterating on running batch changes server-side as we head towards GA, and 
 into the step container.
 - Server-side runs can now be created in an organization namespace. Previously server-side runs could only be created in a user namespace.
 
+<a href="https://docs.sourcegraph.com/batch_changes/how-tos/server_side_file_mounts" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
