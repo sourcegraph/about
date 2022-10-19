@@ -5,8 +5,8 @@ description: "Sourcegraph 4.1 introduces..."
 tags: [blog, release]
 slug: "release/4.1"
 published: true
-heroImage: 
-socialImage: 
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.1/sourcegraph-4-1.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.1/sourcegraph-4-1.png
 changelogItems:
   - description: 
     url:
