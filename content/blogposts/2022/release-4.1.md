@@ -43,7 +43,7 @@ We're iterating on running batch changes server-side as we prepare it to move fr
 
 <a href="https://docs.sourcegraph.com/batch_changes/how-tos/server_side_file_mounts" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
-
+<br />
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 
 #### Reference panel improvements
@@ -55,8 +55,8 @@ In 4.0, we launched a new version of the reference panel. In 4.1, we've added fu
 
 <Video 
   source={{
-    webm: 'blog/release-post/4.1/ref-panel-improvements.webm',
-    mp4: 'blog/release-post/4.1/ref-panel-improvements.mp4'
+    webm: 'blog/release-post/4.1/ref-panel-improvements',
+    mp4: 'blog/release-post/4.1/ref-panel-improvements'
   }}
   loop={true}
   title="The reference panel featuring syntax highlighting and improved functionality."
