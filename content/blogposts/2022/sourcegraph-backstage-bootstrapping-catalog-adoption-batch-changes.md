@@ -50,9 +50,9 @@ kind: Component
 metadata:
   name: backstage
   description: |
-	Backstage is an open-source developer portal that puts the developer experience first.
+		Backstage is an open-source developer portal that puts the developer experience first.
   annotations:
-	github.com/project-slug: backstage/backstage
+		github.com/project-slug: backstage/backstage
 spec:
   type: library
   owner: CNCF
@@ -64,7 +64,7 @@ metadata:
   name: demo
   description: An example deployment of a Backstage application.
   annotations:
-	github.com/project-slug: backstage/demo
+		github.com/project-slug: backstage/demo
 spec:
   type: website
   owner: backstage/maintainers
@@ -87,7 +87,7 @@ This approach can be an easy and quick way to populate your catalog. You could e
 
 Bootstrapping the catalog with a multi-document YAML file generated from a script works well as a proof of concept, but it becomes inconvenient when you have users who want to manage the metadata of their catalog components. Once you are done demonstrating this proof of concept, you can go ahead and remove the location of the multi-document YAML file:
 
-```yml
+```diff
 # app-config.yaml
   catalog:
 	locations:
@@ -155,8 +155,8 @@ steps:
 changesetTemplate:
   title: Add this repository to Backstage
   body: |
-	This pull request includes a `catalog-info.yaml` which allows you to specify the metadata of this repository for the [Backstage Software Catalog](https://backstage.io/docs/features/software-catalog/software-catalog-overview). You can learn more about the `catalog-info.yaml` file [here](https://backstage.io/docs/features/software-catalog/descriptor-format).
-	Once this pull request is merged, please register your component in [Backstage](https://<your-backstage-app-URL>/catalog-import).
+		This pull request includes a `catalog-info.yaml` which allows you to specify the metadata of this repository for the [Backstage Software Catalog](https://backstage.io/docs/features/software-catalog/software-catalog-overview). You can learn more about the `catalog-info.yaml` file [here](https://backstage.io/docs/features/software-catalog/descriptor-format).
+		Once this pull request is merged, please register your component in [Backstage](https://<your-backstage-app-URL>/catalog-import).
   branch: add-catalog-info
   commit:
 	message: Add repo to Backstage service catalog
@@ -183,6 +183,6 @@ Lastly, once a pull request is merged to introduce `catalog-info.yaml`, a develo
 In the next blog post, we will go over how the component registration can be fully automated by creating a Backstage entity provider with Sourcegraph's search and monitoring features.
 
 <div className="mt-6" />
-## About the author
+## About the authors
 
-_Taras Mankovski and Min Kim are the CEO and technical fellow of [Frontside](https://frontside.com/), a DX consultancy. Malo and Joel are product managers at Sourcegraph._
+_Taras Mankovski - CEO, and Min Kim - technical fellow, at [The Frontside Software, Inc](https://frontside.com/) - Backstage Professional Services Partner and DX Consulting Company. Malo and Joel are product managers at Sourcegraph._
