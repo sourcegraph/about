@@ -15,7 +15,7 @@ tags: [blog]
 slug: sourcegraph-backstage-bootstrapping-catalog-adoption-batch-changes
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
-published: false
+published: true
 ---
 
 One of the most common questions from early adopters of [Backstage](https://backstage.io/) is "how do we get developers to start using the software catalog?" Those asking this question find themselves in a chicken and egg situation - developers need a populated software catalog in order to get value from Backstage, but Backstage requires developers to start using the software catalog to populate it. How do you break this cycle?
