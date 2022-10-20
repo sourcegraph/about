@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 4.1 release"
 publishDate: 2022-10-21T10:00-07:00
-description: "Sourcegraph 4.1 introduces..."
+description: "Sourcegraph 4.1 introduces new features for server-side batch changes and improvements to the code navigation reference panel."
 tags: [blog, release]
 slug: "release/4.1"
 published: true
@@ -61,5 +61,5 @@ In 4.0, we launched a new version of the reference panel. In 4.1, we've added fu
   loop={true}
   title="The reference panel featuring syntax highlighting and improved functionality."
 />
-
+<br />
 <a href="https://docs.sourcegraph.com/code_navigation/explanations/features#find-references" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
