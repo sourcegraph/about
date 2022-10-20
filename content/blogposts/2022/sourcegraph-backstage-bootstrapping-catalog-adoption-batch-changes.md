@@ -22,12 +22,12 @@ One of the most common questions from early adopters of [Backstage](https://back
 
 In this blog post, we'll describe a two-stage approach that helps Backstage adopters get traction for their software catalog:
 
-1. Using a multi-document YAML file for a proof of concept
-1. Using Sourcegraph Batch Changes to onboard developers and their repositories
+1. Using a script to generate a single multi-document YAML file of every repository to populate the software catalog - for the purpose of visually demonstrating its proof of concept
+2. Using Sourcegraph Batch Changes to kick off and keep track of the entire onboarding process of developers and their repositories to Backstage for the whole organization
 
 Before we can start populating the catalog, we need a source of data that will be useful for our starting point. One place to start is to populate the catalog with repositories from your version control system. For this tutorial we'll be using GitHub but a similar approach should work for other repository hosts. GitHub provides a [CLI](https://cli.github.com) that we can use to get a list of all of the repositories in the organization and some information about them. We'll use the following command for our example to generate a list of repositories with some useful fields:
 
-```
+```sh
 gh repo list <org_name> \
   --limit=1000 \
   --json=description,url,name,owner \
@@ -159,7 +159,7 @@ changesetTemplate:
 		Once this pull request is merged, please register your component in [Backstage](https://<your-backstage-app-URL>/catalog-import).
   branch: add-catalog-info
   commit:
-	message: Add repo to Backstage service catalog
+		message: Add repo to Backstage service catalog
 ```
 
 Let's zoom in on the steps section. A batch change works by running any number of steps to generate a diff. Each step corresponds to running a container on the target code. This spec has a single step that will install the GitHub CLI to get the metadata we need about the repo then run a small python script to format it.
