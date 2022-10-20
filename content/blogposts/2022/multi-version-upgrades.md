@@ -1,14 +1,14 @@
 ---
-title: "Multi-version upgrades"
-description: "Placeholder."
+title: 'Multi-version upgrades'
+description: 'Sourcegraph administration just got an order-of-magnitude quality of life improvement. Using a Sourcegraph 4.0 (or later) migrator utility, you can upgrade your on-prem installation of Sourcegraph from 3.20 directly to Sourcegraph 4.0 and beyond.'
 authors:
   - name: Eric Fritz
     url: https://eric-fritz.com
-publishDate: 2022-09-09T18:00+02:00
+publishDate: 2022-10-19T10:00-07:00
 tags: [blog]
 slug: multi-version-upgrades
-heroImage: placeholder
-socialImage: placeholder
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/mvu-hero.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/mvu-hero.png
 published: true
 ---
 
@@ -18,7 +18,7 @@ The most obnoxious restriction (by a very wide margin) related to administration
 
 A recent peek at our customer instance distribution showed that 70% of our self-hosted customers are on a "historic" release of Sourcegraph (older than two months). Larger customer instances also tend to approach upgrades a bit more cautiously, adding significant weight to the use of older releases. Note that [Sourcegraph v3.20](https://about.sourcegraph.com/blog/release/3.20) was released fairly _early_ in the most recent pandemic era, and we've spent the last two years of that era shipping improvements and building new features and workflows for an on-prem audience that was largely unable to benefit from the effort.
 
-[Multi-version upgrades](https://docs.sourcegraph.com/admin/updates#multi-version-upgrades), contrasting to the "standard upgrade" approach, use the [`migrator` tool](introducing-migrator-service) to perform the sequence of schema and in-place data migrations that _would happen_ if the user were to perform a chain of upgrades that hit every minor release on the way to their target. This tool makes upgrading directly to our [4.0 release](TODO:FILLMEIN) a technical feasibility for the vast majority of our customers.
+[Multi-version upgrades](https://docs.sourcegraph.com/admin/updates#multi-version-upgrades), contrasting to the "standard upgrade" approach, use the [`migrator` tool](https://about.sourcegraph.com/blog/introducing-migrator-service) to perform the sequence of schema and in-place data migrations that _would happen_ if the user were to perform a chain of upgrades that hit every minor release on the way to their target. This tool makes upgrading directly to our [4.0 release](https://about.sourcegraph.com/blog/release/4.0) a technical feasibility for the vast majority of our customers.
 
 At first glance, it may seem that multi-version upgrades are simply "standard upgrades in a `for`-loop". While that _is_ the basic idea, there's also a world of nuance surrounding it. Let's dive in.
 
@@ -28,13 +28,13 @@ At the start of this journey, we used [golang-migrate](https://github.com/golang
 
 Each migration exists on-disk as a pair of SQL files: one for the upgrade direction, and one for the downgrade direction. Each migration is defined in the same directory and ordered absolutely by a sequential numeric prefix. Unit tests ensure that the sequence has no gaps and that no migrations define the same prefix. The order of migration application is thereby determined by lexicographical ordering of the migration filenames.
 
-![treeview](temp/treeview.png)
+![treeview](https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/treeview.png)
 
 This process didn't cause any clearly attributable problems for years. Around the time we started a serious hunt-to-kill effort for flaky tests in our CI pipelines, we started also [seeing initialization timeouts](https://github.com/sourcegraph/sourcegraph/issues/5721#issuecomment-540855232) we could attribute to reading and applying every single migration we've ever defined back-to-back.
 
 Because this problem would only get worse with time, we began to squash migration definitions by replacing the set of definitions at the head of the sequence with a single (yet equivalent) migration file. For Sourcegraph v3.9.0, we [squashed definitions](https://github.com/sourcegraph/sourcegraph/pull/5967) that were also defined in Sourcegraph v3.7.0 into to a single file. This cut startup time with an empty database from 20s to 5s, and also reduced the chance of hitting the startup timeout in our testing environment.
 
-![simple squash](temp/simple-squash.png)
+![simple squash](https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/mvu-simple-squash.png)
 
 Note that we are unable to squash migration definitions that are undefined in the source version of an upgrade. Doing so would make it impossible for the previous release to determine _which_ migration definitions to apply. Squashing in the manner described above guarantees that none of the migration definitions in the upgrade path from the previous minor version would be altered.
 
@@ -42,7 +42,7 @@ Unfortunately, this absolutely _does_ throw a wrench in the works for multi-vers
 
 In what turns out to be prerequisite work for making multi-version upgrades a possibility, we engineered what was basically a [drop-in replacement](introducing-migrator-service) for golang-migrate. While the original goal was to separate application _deployment_ and _startup_ into individual (but related) concepts, it also allowed us maximum flexibility on how we defined and organized migrations on-disk.
 
-Because golang-migrate supported so many database systems, its design catered to the common features. As it happens, transactions were not one of the common features. Our replacement was designed *only* to support Postgres, which allowed us to [introduce implicit transactions](https://github.com/sourcegraph/sourcegraph/pull/31599) so that an explicit `BEGIN;` and `COMMIT;` was not necessary in the migration definitions themselves.
+Because golang-migrate supported so many database systems, its design catered to the common features. As it happens, transactions were not one of the common features. Our replacement was designed _only_ to support Postgres, which allowed us to [introduce implicit transactions](https://github.com/sourcegraph/sourcegraph/pull/31599) so that an explicit `BEGIN;` and `COMMIT;` was not necessary in the migration definitions themselves.
 
 In a related change, we [explicitly mark migration definitions](https://github.com/sourcegraph/sourcegraph/pull/30418) that contain [indexes that are created concurrently](https://www.postgresql.org/docs/12/sql-createindex.html#SQL-CREATEINDEX-CONCURRENTLY). As we've recently learned, concurrent index creation interacts with long-running transactions in ways that can appear unintuitive at the application level. Most notably, an index cannot be created concurrently within a transaction, and the concurrent index creation will block as long as there is a transaction that outlives the index creation. Marking these migrations statically allows us to apply these migrations in a distinct manner so that these properties do not end up deadlocking the migration flow.
 
@@ -50,7 +50,7 @@ In an unrelated change, we [explicitly mark privileged migrations](https://githu
 
 In order to keep track of the various migration metadata, we [reorganized migration definitions into directories](https://github.com/sourcegraph/sourcegraph/pull/30276), each with three files: `up.sql`, `down.sql`, and `metadata.yaml` file, as shown in the following image. Also of particular interest is the introduction of two entirely new and distinct database schemas controlled by the same migration infrastructure ([codeintel](https://github.com/sourcegraph/sourcegraph/pull/13903) and [codeinsights](https://github.com/sourcegraph/sourcegraph/pull/17432)).
 
-![tree](temp/tree.png)
+![tree](https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/tree.png)
 
 In what is likely the largest departure from golang-migrate, we allow migrations to [define multiple parents](https://github.com/sourcegraph/sourcegraph/pull/30664). This allows our migration definitions to form a [directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (instead of an absolutely ordered list). Note that in the image above our migrations no longer form a gapless sequence, and a [topological sort](https://en.wikipedia.org/wiki/Topological_sorting) over the migration graph is done to determine an application order.
 
@@ -58,7 +58,7 @@ Well that seemed like a bunch of work for no payoff. **Why do that at all?** Sho
 
 The following image shows a reduced (but fairly accurate) migration graph over several minor releases. When a new migration is created, it chooses its own parents: the set of migration definitions that do not yet have any children. In this formulation, if two engineers add migrations around the same time, they may share a parent, but they also have distinct identifiers (with very high probability). They don't conflict, and should be able to be run in either order relative to one another as they were both developed in independent branches. Setting parents in this manner allows us to track explicit dependencies: the set of migrations that were already defined _at the time the new migration was created_.
 
-![graph structures](temp/graph-structures.png) 
+![graph structures](https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/mvu-graph-structures.png)
 
 ## The pile of wrenches
 
@@ -72,11 +72,11 @@ But doing so is basically time-travel. For every Sourcegraph release in the upgr
 
 At least that was the [proposed solution](https://docs.google.com/document/d/1eNiwzWZmfpvzFhs9IDcM7Sbchv_Hm8Uj-6bI-3TDlvg). The reality of this process was much more involved than the high-level overview would make it seem, as squashed migrations were only one wrench in the pile. We still have to address the others.
 
-We threw the **Wrench of Directory Restructuring** into the pile when we moved our list of flat files into a hierarchy on-disk. The snapshots we take of migration definitions at a particular release are done via `git` operations. When we detect a flat file, we will on-the-fly rewrite it to look like the new hierarchical version, with inferred contents for the metadata. Similarly, the **Wrench of Adding Additional Databases** was thrown into the pile with the introduction of distinct codeintel and codeinsights schemas. We need to take special care in the early versions we support when one or more of these schemas are not yet defined, as well as the case where *only* the frontend schema is defined in a different location (`migrations/` vs `migrations/frontend` once its siblings have arrived).
+We threw the **Wrench of Directory Restructuring** into the pile when we moved our list of flat files into a hierarchy on-disk. The snapshots we take of migration definitions at a particular release are done via `git` operations. When we detect a flat file, we will on-the-fly rewrite it to look like the new hierarchical version, with inferred contents for the metadata. Similarly, the **Wrench of Adding Additional Databases** was thrown into the pile with the introduction of distinct codeintel and codeinsights schemas. We need to take special care in the early versions we support when one or more of these schemas are not yet defined, as well as the case where _only_ the frontend schema is defined in a different location (`migrations/` vs `migrations/frontend` once its siblings have arrived).
 
 We threw the **Wrench of Privileged Migrations** into the pile when we started marking certain SQL commands as requiring elevated permissions. Migration definitions that contain such a SQL command and don't mark it (or mark it but do not contain such a SQL command) fail static validation. Migration definitions squashed away before the introduction of this change fail these validation checks when added to the unified migration graph. In order to bring these definitions in line with our current assumptions, we spot-rewrite the metadata of such migration definitions as we stitch the graph together. We do this for several `frontend` ([1528395717](https://github.com/sourcegraph/sourcegraph/pull/11457), [1528395764](https://github.com/sourcegraph/sourcegraph/pull/15641), and [1528395953](https://github.com/sourcegraph/sourcegraph/pull/28387)), `codeintel` ([1000000003](https://github.com/sourcegraph/sourcegraph/pull/15641) and [1000000020](https://github.com/sourcegraph/sourcegraph/pull/25199)), and `codeinsights` ([1000000001](https://github.com/sourcegraph/sourcegraph/pull/18083) and [1000000027](https://github.com/sourcegraph/sourcegraph/pull/30781)) migration definitions.
 
-We deal with the **Wrench of Concurrent Indexes** in a similar way. Migration definitions squashed away before the introduction of our special-casing of concurrent index creation will miss the markers in their metadata. In this case we only have to spot rewrite migrations for the `frontend` schema, but there were a significant nubmer of them ([1528395696](https://github.com/sourcegraph/sourcegraph/pull/12591), [1528395707](https://github.com/sourcegraph/sourcegraph/pull/13217), [1528395708](https://github.com/sourcegraph/sourcegraph/pull/13217), [1528395736](https://github.com/sourcegraph/sourcegraph/pull/14848), [1528395797](https://github.com/sourcegraph/sourcegraph/pull/19053), [1528395877](https://github.com/sourcegraph/sourcegraph/pull/24798), [1528395878](https://github.com/sourcegraph/sourcegraph/pull/24798), [1528395886](https://github.com/sourcegraph/sourcegraph/pull/24969), [1528395887](https://github.com/sourcegraph/sourcegraph/pull/24969), [1528395888](https://github.com/sourcegraph/sourcegraph/pull/24969), [1528395893](https://github.com/sourcegraph/sourcegraph/pull/25366), [1528395894](https://github.com/sourcegraph/sourcegraph/pull/25360), [1528395896](https://github.com/sourcegraph/sourcegraph/pull/25405), [1528395897](https://github.com/sourcegraph/sourcegraph/pull/25490), [1528395899](https://github.com/sourcegraph/sourcegraph/pull/25520), [1528395900](https://github.com/sourcegraph/sourcegraph/pull/25520), [1528395935](https://github.com/sourcegraph/sourcegraph/pull/27359), [1528395936](https://github.com/sourcegraph/sourcegraph/pull/27359), and [1528395954](https://github.com/sourcegraph/sourcegraph/pull/28387)).
+We deal with the **Wrench of Concurrent Indexes** in a similar way. Migration definitions squashed away before the introduction of our special-casing of concurrent index creation will miss the markers in their metadata. In this case we only have to spot rewrite migrations for the `frontend` schema, but there were a significant number of them ([1528395696](https://github.com/sourcegraph/sourcegraph/pull/12591), [1528395707](https://github.com/sourcegraph/sourcegraph/pull/13217), [1528395708](https://github.com/sourcegraph/sourcegraph/pull/13217), [1528395736](https://github.com/sourcegraph/sourcegraph/pull/14848), [1528395797](https://github.com/sourcegraph/sourcegraph/pull/19053), [1528395877](https://github.com/sourcegraph/sourcegraph/pull/24798), [1528395878](https://github.com/sourcegraph/sourcegraph/pull/24798), [1528395886](https://github.com/sourcegraph/sourcegraph/pull/24969), [1528395887](https://github.com/sourcegraph/sourcegraph/pull/24969), [1528395888](https://github.com/sourcegraph/sourcegraph/pull/24969), [1528395893](https://github.com/sourcegraph/sourcegraph/pull/25366), [1528395894](https://github.com/sourcegraph/sourcegraph/pull/25360), [1528395896](https://github.com/sourcegraph/sourcegraph/pull/25405), [1528395897](https://github.com/sourcegraph/sourcegraph/pull/25490), [1528395899](https://github.com/sourcegraph/sourcegraph/pull/25520), [1528395900](https://github.com/sourcegraph/sourcegraph/pull/25520), [1528395935](https://github.com/sourcegraph/sourcegraph/pull/27359), [1528395936](https://github.com/sourcegraph/sourcegraph/pull/27359), and [1528395954](https://github.com/sourcegraph/sourcegraph/pull/28387)).
 
 During this change we also started validating that any down-direction migrations do not create indexes concurrently. Concurrent index creation is meant to be something to aid in zero-downtime rolling upgrades where a full table lock would be difficult to acquire (or significantly disrupt production traffic). As downgrades are never meant to be an online operation, creation of _older_ indexes can always be done synchronously. Again, there were several violations in the `frontend` schema that needed spot rewrites ([1528395895](https://github.com/sourcegraph/sourcegraph/pull/25405), [1528395901](https://github.com/sourcegraph/sourcegraph/pull/25520), [1528395902](https://github.com/sourcegraph/sourcegraph/pull/25557), [1528395903](https://github.com/sourcegraph/sourcegraph/pull/25557), [1528395904](https://github.com/sourcegraph/sourcegraph/pull/25557), [1528395905](https://github.com/sourcegraph/sourcegraph/pull/25557), and [1528395906](https://github.com/sourcegraph/sourcegraph/pull/25557)).
 
@@ -85,6 +85,7 @@ The act of stitching the migration graph itself also uncovered an additional hur
 There were also a number of odd-duck cases to tackle, which happened to exist until their squashing without being detected as buggy. To handle these cases, we had to [rewrite a migration that uses `COMMIT;` to checkpoint work](https://github.com/sourcegraph/sourcegraph/pull/28624), [rearrange `DROP` commands to respect dependency order](https://github.com/sourcegraph/sourcegraph/pull/25707), [add a missing `DROP TYPE ...` command](https://github.com/sourcegraph/sourcegraph/pull/26313), and [fix migration renaming due that happened when cherry-picking into the patch release v3.34.2](https://github.com/sourcegraph/sourcegraph/pull/29395).
 
 After cleaning up this pile of wrenches, we have a unified migration graph **that passes our validation**, and can upgrade the _schema_ of a database from any version to any other version (within v3.20 and 4.0+). Unfortunately, schema migrations are only half of the upgrade process.
+
 ## Handling out of band migrations
 
 Early 2021, we [proposed](https://docs.google.com/document/d/1q59lyj-tLEmEQBe3k9bTQj85NR4abfk2SLNS6UkmcdM) and implemented [out-of-band migration](https://docs.sourcegraph.com/dev/background-information/oobmigrations) machinery to perform large-scale data (non-schema) migrations in the background of the application. We needed a way to run large-scale rewrites over data on our `codeintel` database, which at the time held a 2TB dataset. As these rewrites were pure-SQL, it was tempting to put it in our existing migration infrastructure. As this was prior to our decoupling of migrations from application startup, we needed to ensure that all migrations finished within our Kubernetes health check. Failing to do so required manual engineer intervention to run the failed migration.
@@ -97,7 +98,7 @@ Multi-version upgrades become problematic when we cross a Sourcegraph release in
 
 To solve this, we also [run the out-of-band migrations in the migrator](https://github.com/sourcegraph/sourcegraph/issues/38094), interleaved with the schema migrations.
 
-![oobmigrations](temp/oobmigrations.png)
+![oobmigrations](https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/mvu-oobmigrations.png)
 
 In the example above, upgrading from v3.37 to v3.40 would require the completion of out-of-band migrations #1-#3. To make things a bit more difficult, the out-of-band migration code is only guaranteed to run against the database schema that existed within their lifetime. We cannot invoke out-of-band migration #3 with v3.37.0 database schema, for example. This becomes a scheduling problem in which we upgrade the schema to a certain version, run out-of-band migrations to completion at that point, and continue the process.
 
