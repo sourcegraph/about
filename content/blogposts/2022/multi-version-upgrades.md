@@ -32,7 +32,7 @@ Each migration exists on-disk as a pair of SQL files: one for the upgrade direct
 
 This process didn't cause any clearly attributable problems for years. Around the time we started a serious hunt-to-kill effort for flaky tests in our CI pipelines, we started also [seeing initialization timeouts](https://github.com/sourcegraph/sourcegraph/issues/5721#issuecomment-540855232) we could attribute to reading and applying every single migration we've ever defined back-to-back.
 
-Because this problem would only get worse with time, we began to squash migration definitions by replacing the set of definitions at the head of the sequence with a single (yet equivalent) migration file. For Sourcegraph v3.9.0, we [squashed definitions](https://github.com/sourcegraph/sourcegraph/pull/5967) that were also defined in Sourcegraph v3.7.0 into to a single file. This cut startup time with an empty database from 20s to 5s, and also reduced the chance of hitting the startup timeout in our testing environment.
+Because this problem would only get worse with time, we began to squash migration definitions by replacing the set of definitions at the head of the sequence with a single (yet equivalent) migration file. For Sourcegraph v3.9.0, we [squashed definitions](https://github.com/sourcegraph/sourcegraph/pull/5967) that were also defined in Sourcegraph v3.7.0 into a single file. This cut startup time with an empty database from 20s to 5s and also reduced the chance of hitting the startup timeout in our testing environment.
 
 <Figure src="https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/mvu-simple-squash.png" alt="How old migration files are squashed." />
 
