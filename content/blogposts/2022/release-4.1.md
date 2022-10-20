@@ -26,7 +26,7 @@ changelogItems:
   - description: "Security events (in the audit log) can now optionally omit internal actor traffic to reduce noise."
     url: https://github.com/sourcegraph/sourcegraph/pull/42946
     category: Admin
-  - description: "Fixed a bug with GitHub code hosts that did not label archived repos correctly when using the "public" repositoryQuery keyword."
+  - description: Fixed a bug with GitHub code hosts that did not label archived repos correctly when using the "public" repositoryQuery keyword.
     url: https://github.com/sourcegraph/sourcegraph/pull/41461
     category: Admin
 ---
