@@ -28,13 +28,13 @@ At the start of this journey, we used [golang-migrate](https://github.com/golang
 
 Each migration exists on-disk as a pair of SQL files: one for the upgrade direction, and one for the downgrade direction. Each migration is defined in the same directory and ordered absolutely by a sequential numeric prefix. Unit tests ensure that the sequence has no gaps and that no migrations define the same prefix. The order of migration application is thereby determined by lexicographical ordering of the migration filenames.
 
-![treeview](https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/treeview.png)
+<Figure src="https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/treeview.png" alt="List of the (old) migrations directory." />
 
 This process didn't cause any clearly attributable problems for years. Around the time we started a serious hunt-to-kill effort for flaky tests in our CI pipelines, we started also [seeing initialization timeouts](https://github.com/sourcegraph/sourcegraph/issues/5721#issuecomment-540855232) we could attribute to reading and applying every single migration we've ever defined back-to-back.
 
 Because this problem would only get worse with time, we began to squash migration definitions by replacing the set of definitions at the head of the sequence with a single (yet equivalent) migration file. For Sourcegraph v3.9.0, we [squashed definitions](https://github.com/sourcegraph/sourcegraph/pull/5967) that were also defined in Sourcegraph v3.7.0 into to a single file. This cut startup time with an empty database from 20s to 5s, and also reduced the chance of hitting the startup timeout in our testing environment.
 
-![simple squash](https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/mvu-simple-squash.png)
+<Figure src="https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/mvu-simple-squash.png" alt="How old migration files are squashed." />
 
 Note that we are unable to squash migration definitions that are undefined in the source version of an upgrade. Doing so would make it impossible for the previous release to determine _which_ migration definitions to apply. Squashing in the manner described above guarantees that none of the migration definitions in the upgrade path from the previous minor version would be altered.
 
@@ -50,7 +50,7 @@ In an unrelated change, we [explicitly mark privileged migrations](https://githu
 
 In order to keep track of the various migration metadata, we [reorganized migration definitions into directories](https://github.com/sourcegraph/sourcegraph/pull/30276), each with three files: `up.sql`, `down.sql`, and `metadata.yaml` file, as shown in the following image. Also of particular interest is the introduction of two entirely new and distinct database schemas controlled by the same migration infrastructure ([codeintel](https://github.com/sourcegraph/sourcegraph/pull/13903) and [codeinsights](https://github.com/sourcegraph/sourcegraph/pull/17432)).
 
-![tree](https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/tree.png)
+<Figure src="https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/tree.png" alt="File tree view of the (updated) migrations directory." />
 
 In what is likely the largest departure from golang-migrate, we allow migrations to [define multiple parents](https://github.com/sourcegraph/sourcegraph/pull/30664). This allows our migration definitions to form a [directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (instead of an absolutely ordered list). Note that in the image above our migrations no longer form a gapless sequence, and a [topological sort](https://en.wikipedia.org/wiki/Topological_sorting) over the migration graph is done to determine an application order.
 
@@ -58,7 +58,7 @@ Well that seemed like a bunch of work for no payoff. **Why do that at all?** Sho
 
 The following image shows a reduced (but fairly accurate) migration graph over several minor releases. When a new migration is created, it chooses its own parents: the set of migration definitions that do not yet have any children. In this formulation, if two engineers add migrations around the same time, they may share a parent, but they also have distinct identifiers (with very high probability). They don't conflict, and should be able to be run in either order relative to one another as they were both developed in independent branches. Setting parents in this manner allows us to track explicit dependencies: the set of migrations that were already defined _at the time the new migration was created_.
 
-![graph structures](https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/mvu-graph-structures.png)
+<Figure src="https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/mvu-graph-structures.png" alt="How migration graph structures change release after release." />
 
 ## The pile of wrenches
 
@@ -66,7 +66,7 @@ The evolution of our migration definitions over time has created a number of iss
 
 To get around this, we need to undo the squash operation over time to get a single, consistent "stitched" migration graph.
 
-![timeline](temp/timeline.png)
+<Figure src="temp/timeline.png" alt="timeline" />
 
 But doing so is basically time-travel. For every Sourcegraph release in the upgrade support range, we take a snapshot of the migration definitions and overlay them on one another. Squashed migrations, identified by a specific naming convention, are handled distinctly in this process and provide hints on how to concatenate the migration graphs together. The result is a single unified migration graph that allows us to pin-point any two versions and extract the sequence of SQL commands that need to be performed.
 
@@ -98,7 +98,7 @@ Multi-version upgrades become problematic when we cross a Sourcegraph release in
 
 To solve this, we also [run the out-of-band migrations in the migrator](https://github.com/sourcegraph/sourcegraph/issues/38094), interleaved with the schema migrations.
 
-![oobmigrations](https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/mvu-oobmigrations.png)
+<Figure src="https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/mvu-oobmigrations.png" alt="How out-of-band migrations complicate multi-version upgrades." />
 
 In the example above, upgrading from v3.37 to v3.40 would require the completion of out-of-band migrations #1-#3. To make things a bit more difficult, the out-of-band migration code is only guaranteed to run against the database schema that existed within their lifetime. We cannot invoke out-of-band migration #3 with v3.37.0 database schema, for example. This becomes a scheduling problem in which we upgrade the schema to a certain version, run out-of-band migrations to completion at that point, and continue the process.
 
