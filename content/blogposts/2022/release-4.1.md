@@ -47,10 +47,7 @@ We're iterating on running batch changes server-side as we prepare it to move fr
 
 After launching a new version of the reference panel in 4.0 we've added a few improvements that will boost your code navigation experience.
 - References and definition results now have syntax highlighting.
-- Browser history improvements: Previously, it was easy to loose track of your context while drilling
-into definitions/references through the reference panel. Now, the reference panel no longer supports deep history. Every browser
-URL is mapped with a single URL (the focused line in the preview pane) allowing the panel to update accordingly when the
-you click on the browser's back or forward buttons.
+- Browser history improvements: Previously, it was easy to lose track of your context while drilling into definitions/references through the reference panel. Now, the reference panel no longer supports deep history. Every browser URL is mapped with a single URL (the focused line in the preview pane) allowing the panel to update accordingly when the you click on the browser's back or forward buttons.
 - Clicking on any line in the preview panel will now promote the file to the main file view.
 
 <video title="Reference panel improvements" alt="." loop autoplay muted playsinline>
