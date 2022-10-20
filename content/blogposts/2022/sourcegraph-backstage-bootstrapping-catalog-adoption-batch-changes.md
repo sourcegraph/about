@@ -1,5 +1,5 @@
 ---
-title: Sourcegraph and Backstage: Bootstrapping Backstage Catalog Adoption with Sourcegraph Batch Changes
+title: 'Sourcegraph and Backstage: Bootstrapping Backstage Catalog Adoption with Sourcegraph Batch Changes'
 description: How to use Sourcegraph batch changes to rapidly bootstrap a Backstage catalog
 authors:
   - name: Taras Mankovski
