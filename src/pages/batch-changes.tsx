@@ -32,7 +32,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                 title={'Automate large-scale\ncode changes'}
                 subtitle="Keep your code up to date, fix critical security issues, and pay down tech debt across all of your repositories with Batch Changes."
                 cta={
-                    <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
+                    <div className="tw-text-left tw-flex-col md:tw-flex-row md:tw-flex">
                         <div className="mb-3 mb-md-0">
                             <a
                                 href="https://signup.sourcegraph.com"
@@ -51,7 +51,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                                 <a
                                     className="btn btn-outline-primary w-100 max-w-350"
                                     title="Request a Demo."
-                                    data-button-style={buttonStyle.primary}
+                                    data-button-style={buttonStyle.outline}
                                     data-button-location={buttonLocation.hero}
                                     data-button-type="cta"
                                 >
