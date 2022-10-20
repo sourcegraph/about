@@ -183,10 +183,6 @@ export const footerLinks: NavLink[] = [
                 href: 'https://handbook.sourcegraph.com',
             },
             {
-                title: 'News',
-                href: '/news',
-            },
-            {
                 title: 'Sourcegraph strategy',
                 href: 'https://handbook.sourcegraph.com/company/strategy',
             },
