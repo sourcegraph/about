@@ -4,6 +4,7 @@ import BullsEyeArrowIcon from 'mdi-react/BullseyeArrowIcon'
 import LighteningBoltOutlineIcon from 'mdi-react/LightningBoltOutlineIcon'
 import RocketLaunchOutlineIcon from 'mdi-react/RocketLaunchOutlineIcon'
 import TrendingUpIcon from 'mdi-react/TrendingUpIcon'
+import Link from 'next/link'
 
 import { CodeInsightExample } from '@code-insights/CodeInsightsExamples'
 import {
@@ -21,7 +22,6 @@ import {
     CtaSection,
     CustomCarousel,
     Hero,
-    HubSpotForm,
     Layout,
     ResourceList,
     TabCarousel,
@@ -317,7 +317,36 @@ const CodeInsightsPage: FunctionComponent = () => (
                 product="code insights"
                 title={'Track what really matters\nto you and your team.'}
                 subtitle="Transform your code into a queryable database to create customizable, visual dashboards in seconds."
-                cta={<HubSpotForm masterFormName="contactEmail" chiliPiper={true} />}
+                cta={
+                    <div className="tw-text-left tw-flex-col md:tw-flex-row md:tw-flex">
+                        <div className="mb-3 mb-md-0">
+                            <a
+                                href="https://signup.sourcegraph.com"
+                                className="btn btn-primary w-100 max-w-350"
+                                title="Get free trial"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
+                                Get free trial
+                            </a>
+                        </div>
+                        <div className="ml-md-3">
+                            <Link href="/demo" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    className="btn btn-outline-primary w-100 max-w-350"
+                                    title="Request a Demo."
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
+                                    Request a demo
+                                </a>
+                            </Link>
+                        </div>
+                    </div>
+                }
                 displayUnderNav={true}
             />
         }
