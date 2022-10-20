@@ -43,3 +43,17 @@ into the step container.
 - Server-side runs can now be created in an organization namespace, which allows any member of that organization to edit or delete the batch change. Previously server-side runs could only be created in a user namespace.
 
 <a href="https://docs.sourcegraph.com/batch_changes/how-tos/server_side_file_mounts" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+
+#### Reference panel improvements
+
+After launching a new version of the reference panel in 4.0 we've added a few improvements that will boost your code navigation experience.
+- References and definition results now have syntax highlighting.
+- Browser history improvements: Previously, it was easy to loose track of your context while drilling
+into definitions/references through the reference panel. Now, the reference panel no longer supports deep history. Every browser
+URL is mapped with a single URL (the focused line in the preview pane) allowing the panel to update accordingly when the
+you click on the browser's back or forward buttons.
+- Clicking on any line in the preview panel will now promote the file to the main file view.
+
+<video title="Reference panel improvements" alt="." loop autoplay muted playsinline>
+  <source src="https://storage.googleapis.com/sourcegraph-assets/docs/images/code-intelligence/4.1/ref-panel-improvements.mp4" />
+</video>
