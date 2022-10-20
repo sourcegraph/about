@@ -181,21 +181,6 @@ export const AbcsEbook: FunctionComponent = () => (
                     </Link>
                     . Sourcegraph's mission is to make it easier and faster for developers to work on solving problems.
                 </p>
-                <p>
-                    To learn more, get our ebook:{' '}
-                    <Link href="/resources/universal-code-search-ebook/?utm_source=abc" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            title="Sourcegraph: Universal code search and intelligence"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            Sourcegraph: Universal code search and intelligence
-                        </a>
-                    </Link>
-                    .
-                </p>
             </div>
         </ContentSection>
     </Layout>
