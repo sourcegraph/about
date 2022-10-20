@@ -129,7 +129,7 @@ export const footerLinks: NavLink[] = [
                 href: '/pricing',
             },
             {
-                title: 'Sourcegraph overview',
+                title: 'Sourcegraph overview (PDF)',
                 href: '/handouts/Sourcegraph-Overview.pdf',
             },
         ],
