@@ -35,7 +35,7 @@ Sourcegraph 4.1 is now available! For this release, we introduced:
 
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 
-#### Batch Changes
+#### Run batch changes server-side with file mounting and organizational namespaces
 
 We're iterating on running batch changes server-side as we prepare it to move from beta to GA. In 4.1, we're  adding the last features to bring server-side runs up to feature parity with local runs.
 - (Experimental) You can now mount files on batch change steps containers when running them server-side. This is useful when your batch change needs to run long scripts or binaries that change frequently and can't be built. By mounting the files or binaries to the container, rather than baking them into it, you can iterate on them without needing to rebuild the container every time. You can read more about this feature in [release post 3.41](https://about.sourcegraph.com/blog/release/3.41) where it was first introduced.
