@@ -61,3 +61,5 @@ After launching a new version of the reference panel in 4.0 we've added a few im
   loop={true}
   title="The reference panel featuring syntax highlighting and improved functionality."
 />
+
+<a href="https://docs.sourcegraph.com/code_navigation/explanations/features#find-references" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
