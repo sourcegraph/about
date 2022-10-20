@@ -38,7 +38,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                                 href="https://signup.sourcegraph.com"
                                 className="btn btn-primary w-100 max-w-350"
                                 title="Get free trial"
-                                data-button-style={buttonStyle.outline}
+                                data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.hero}
                                 data-button-type="cta"
                             >
