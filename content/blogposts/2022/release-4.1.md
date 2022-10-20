@@ -35,11 +35,10 @@ Sourcegraph 4.1 is now available! For this release, we introduced:
 
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 
-#### Run batch changes server-side with file mounting and organizational namespaces
+#### Server-side batch changes now support file mounts and organization namespaces
 
-We're iterating on running batch changes server-side as we prepare it to move from beta to GA. In 4.1, we're  adding the last features to bring server-side runs up to feature parity with local runs.
-- (Experimental) You can now mount files on batch change steps containers when running them server-side. This is useful when your batch change needs to run long scripts or binaries that change frequently and can't be built. By mounting the files or binaries to the container, rather than baking them into it, you can iterate on them without needing to rebuild the container every time. You can read more about this feature in [release post 3.41](https://about.sourcegraph.com/blog/release/3.41) where it was first introduced.
-into the step container.
-- Server-side runs can now be created in an organization namespace, which allows any member of that organization to edit or delete the batch change. Previously server-side runs could only be created in a user namespace.
+We're iterating on running batch changes server-side as we prepare it to move from beta to GA. In 4.1, we're  adding the last features to bring server-side batch changes up to feature parity with local runs.
+- You can now mount files on batch change steps containers when running server-side. This is useful when your batch change needs to run long scripts or binaries that change frequently: by using file mounts, you can iterate on them without needing to rebuild the container every time. You can read more about this feature in [release post 3.41](https://about.sourcegraph.com/blog/release/3.41) where it was first introduced.
+- Server-side batch changes can now be created in an organization namespace, which allows any member of that organization to edit or delete the batch change. Previously server-side runs could only be created in a user namespace.
 
 <a href="https://docs.sourcegraph.com/batch_changes/how-tos/server_side_file_mounts" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
