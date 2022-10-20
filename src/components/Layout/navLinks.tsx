@@ -158,10 +158,6 @@ export const footerLinks: NavLink[] = [
                 href: '/podcast',
             },
             {
-                title: 'Dev tools quiz',
-                href: '/dev-tools-quiz',
-            },
-            {
                 title: 'Community',
                 href: '/community',
             },
