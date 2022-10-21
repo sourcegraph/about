@@ -61,3 +61,6 @@ In 4.0, we launched a new version of the reference panel. In 4.1, we've added fu
 />
 <br />
 <a href="https://docs.sourcegraph.com/code_navigation/explanations/features#find-references" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+
+<br />
+Sourcegraph 4.1 is now available to download. For Sourcegraph Cloud users, instances will be upgraded to 4.1 beginning October 24.
