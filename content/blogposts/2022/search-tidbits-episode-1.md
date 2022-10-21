@@ -4,7 +4,7 @@ description:
 authors:
   - name: Rijnard van Tonder
     url: https://twitter.com/rvtond
-publishDate: 2022-08-29T00:00
+publishDate: 2022-10-21T00:00
 tags: [blog]
 slug: code-search-tidbits-episode-1
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
