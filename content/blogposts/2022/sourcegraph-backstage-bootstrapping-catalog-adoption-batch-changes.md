@@ -185,4 +185,4 @@ In the next blog post, we will go over how the component registration can be ful
 <div className="mt-6" />
 ## About the authors
 
-_Taras Mankovski - CEO, and Min Kim - technical fellow, at [The Frontside Software, Inc](https://frontside.com/) - Backstage Professional Services Partner and DX Consulting Company. Malo and Joel are product managers at Sourcegraph._
+_Taras Mankovski and Min Kim are respectively the CEO and technical fellow at [The Frontside Software, Inc](https://frontside.com/), a Backstage Professional Services Partner and DX Consulting Company. Malo and Joel are product managers at Sourcegraph._
