@@ -27,7 +27,6 @@ In this blog post, we'll describe a two-stage approach that helps Backstage adop
 
 Before we can start populating the catalog, we need a source of data that will be useful for our starting point. One place to start is to populate the catalog with repositories from your version control system. For this tutorial we'll be using GitHub but a similar approach should work for other repository hosts. GitHub provides a [CLI](https://cli.github.com) that we can use to get a list of all of the repositories in the organization and some information about them. We'll use the following command for our example to generate a list of repositories with some useful fields:
 
-```sh
 gh repo list <org_name> \
   --limit=1000 \
   --json=description,url,name,owner \
