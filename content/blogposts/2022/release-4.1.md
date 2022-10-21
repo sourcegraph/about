@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 4.1 release"
 publishDate: 2022-10-21T10:00-07:00
-description: "Sourcegraph 4.1 introduces new features for server-side batch changes and improvements to the code navigation reference panel."
+description: "Sourcegraph 4.1 introduces new features for server-side Batch Changes and improvements to the code navigation reference panel."
 tags: [blog, release]
 slug: "release/4.1"
 published: true
