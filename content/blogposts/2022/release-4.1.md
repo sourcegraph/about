@@ -11,7 +11,7 @@ changelogItems:
   - description: Added repository sync counters to the code host details page to give visibility into external service sync progress.
     url: https://github.com/sourcegraph/sourcegraph/pull/43039
     category: Repositories
-  - description: "Added a new button in the repository settings, under \"Mirroring\", to delete a repository from disk and reclone it. This prevents the need to manually delete failed repositories from the Git server."
+  - description: "Added a new button in the repository settings, under \"Mirroring\," to delete a repository from disk and reclone it. This prevents the need to manually delete failed repositories from the Git server."
     url: https://github.com/sourcegraph/sourcegraph/pull/42177
     category: Repositories
   - description: "GraphQL request logs are now compliant with the audit logging format. The old GraphQl logging based on `LOG_ALL_GRAPHQL_REQUESTS` env var is now deprecated and scheduled for removal."
@@ -20,13 +20,13 @@ changelogItems:
   - description: "Git server access logs are now compliant with the audit logging format. This introduces a breaking change: The 'actor' field is now nested under the 'audit' field."
     url: https://github.com/sourcegraph/sourcegraph/pull/41865
     category: Admin
-  - description: Security events are now included in the audit log by default.
+  - description: Security events are now included in the audit log by default to provide more visibility to security teams.
     url: https://github.com/sourcegraph/sourcegraph/pull/42653
     category: Admin
-  - description: "Security events (in the audit log) can now optionally omit internal actor traffic to reduce noise."
+  - description: "Security events in the audit log can now optionally exclude internal actor traffic to reduce noise. This traffic is excluded by default, but can be enabled with the `log.auditLog.backgroundJobs` setting."
     url: https://github.com/sourcegraph/sourcegraph/pull/42946
     category: Admin
-  - description: Fixed a bug with GitHub code hosts that did not label archived repos correctly when using the "public" repositoryQuery keyword.
+  - description: Fixed a bug with GitHub code hosts that caused archived repos to be incorrectly returned when using the "public" repositoryQuery keyword.
     url: https://github.com/sourcegraph/sourcegraph/pull/41461
     category: Admin
 ---
@@ -35,9 +35,9 @@ Sourcegraph 4.1 is now available! For this release, we introduced:
 
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 
-#### Server-side batch changes now support file mounts and organization namespaces
+#### Server-side Batch Changes now support file mounts and organization namespaces
 
-We're iterating on running batch changes server-side as we prepare it to move from beta to GA. In 4.1, we're  adding the last features to bring server-side batch changes up to feature parity with local runs.
+We're iterating on [server-side Batch Changes](https://about.sourcegraph.com/blog/release/4.0#high-leverage-ways-to-improve-your-entire-codebase) as we prepare to move it from beta to GA. In 4.1, we're adding the last features to bring server-side Batch Changes up to feature parity with batch changes that are run locally.
 - You can now mount files on batch change steps containers when running server-side. This is useful when your batch change needs to run long scripts or binaries that change frequently: file mounts allow you to iterate on them without needing to rebuild the container every time. You can read more about this feature in [release post 3.41](https://about.sourcegraph.com/blog/release/3.41).
 - Server-side batch changes can be created in an organization namespace, so any member of the organization can edit or delete the batch change. Previously server-side runs could only be created in a user namespace.
 
@@ -48,8 +48,8 @@ We're iterating on running batch changes server-side as we prepare it to move fr
 
 #### Reference panel improvements
 
-In 4.0, we launched a new version of the reference panel. In 4.1, we've added further enhancements to the panel to improve your code navigation experience.
-- Reference and definition results now have syntax highlighting.
+In 4.0, we launched a new version of the reference panel. In 4.1, we've added further enhancements to the panel to improve your code navigation experience. Here's what's new:
+- Reference and definition results now have syntax highlighting for better readability.
 - Behavior when using your browser's back and forward buttons has been improved. Previously, it was easy to lose track of your context while drilling into definitions and references through the reference panel. Now, every browser URL is mapped with a single URL (the focused line in the preview pane), allowing the reference panel to update accordingly when you click on the browser's back or forward buttons.
 - Clicking on any line in the preview panel now promotes the file to the main file view.
 
