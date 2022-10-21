@@ -38,8 +38,8 @@ Sourcegraph 4.1 is now available! For this release, we introduced:
 #### Server-side batch changes now support file mounts and organization namespaces
 
 We're iterating on running batch changes server-side as we prepare it to move from beta to GA. In 4.1, we're  adding the last features to bring server-side batch changes up to feature parity with local runs.
-- You can now mount files on batch change steps containers when running server-side. This is useful when your batch change needs to run long scripts or binaries that change frequently: by using file mounts, you can iterate on them without needing to rebuild the container every time. You can read more about this feature in [release post 3.41](https://about.sourcegraph.com/blog/release/3.41) where it was first introduced.
-- Server-side batch changes can now be created in an organization namespace, which allows any member of that organization to edit or delete the batch change. Previously server-side runs could only be created in a user namespace.
+- You can now mount files on batch change steps containers when running server-side. This is useful when your batch change needs to run long scripts or binaries that change frequently: file mounts allow you to iterate on them without needing to rebuild the container every time. You can read more about this feature in [release post 3.41](https://about.sourcegraph.com/blog/release/3.41).
+- Server-side batch changes can be created in an organization namespace, so any member of the organization can edit or delete the batch change. Previously server-side runs could only be created in a user namespace.
 
 <a href="https://docs.sourcegraph.com/batch_changes/how-tos/server_side_file_mounts" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
@@ -51,7 +51,7 @@ We're iterating on running batch changes server-side as we prepare it to move fr
 In 4.0, we launched a new version of the reference panel. In 4.1, we've added further enhancements to the panel to improve your code navigation experience.
 - Reference and definition results now have syntax highlighting.
 - Behavior when using your browser's back and forward buttons has been improved. Previously, it was easy to lose track of your context while drilling into definitions and references through the reference panel. Now, every browser URL is mapped with a single URL (the focused line in the preview pane), allowing the reference panel to update accordingly when you click on the browser's back or forward buttons.
-- Clicking on any line in the preview panel will now promote the file to the main file view.
+- Clicking on any line in the preview panel now promotes the file to the main file view.
 
 <Video 
   source={{
