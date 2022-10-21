@@ -94,6 +94,7 @@ Bootstrapping the catalog with a multi-document YAML file generated from a scrip
 	locations:
 -  	- type: url
 -    	  target: https://github.com/my-org/my-repo/blob/main/components.yaml
+```
 
 ### Using Sourcegraph to open pull requests
 
