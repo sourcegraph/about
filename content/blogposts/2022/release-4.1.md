@@ -11,7 +11,7 @@ changelogItems:
   - description: Added repository sync counters to the code host details page to give visibility into external service sync progress.
     url: https://github.com/sourcegraph/sourcegraph/pull/43039
     category: Repositories
-  - description: "Added a new button in the repository settings, under \"Mirroring\," to delete a repository from disk and reclone it. This prevents the need to manually delete failed repositories from the Git server."
+  - description: "Added a new button in the repository settings, under \"Mirroring,\" to delete a repository from disk and reclone it. This prevents the need to manually delete failed repositories from the Git server."
     url: https://github.com/sourcegraph/sourcegraph/pull/42177
     category: Repositories
   - description: "GraphQL request logs are now compliant with the audit logging format. The old GraphQl logging based on `LOG_ALL_GRAPHQL_REQUESTS` env var is now deprecated and scheduled for removal."
