@@ -26,7 +26,7 @@ changelogItems:
   - description: "Security events in the audit log can now optionally exclude internal actor traffic to reduce noise. This traffic is excluded by default, but can be enabled with the `log.auditLog.backgroundJobs` setting."
     url: https://github.com/sourcegraph/sourcegraph/pull/42946
     category: Admin
-  - description: Fixed a bug with GitHub code hosts that caused archived repos to be incorrectly returned when using the "public" repositoryQuery keyword.
+  - description: Fixed a bug with the GitHub integration that caused archived repositories to be incorrectly returned when using the "public" repositoryQuery keyword.
     url: https://github.com/sourcegraph/sourcegraph/pull/41461
     category: Admin
 ---
@@ -35,7 +35,7 @@ changelogItems:
 
 #### Server-side Batch Changes now supports file mounts and organization namespaces
 
-We're iterating on [server-side Batch Changes](https://about.sourcegraph.com/blog/release/4.0#high-leverage-ways-to-improve-your-entire-codebase) as we prepare to move it from beta to GA. In 4.1, we're adding the last features to bring server-side Batch Changes up to feature parity with batch changes that are run locally.
+We're iterating on [server-side Batch Changes](https://about.sourcegraph.com/blog/release/4.0#high-leverage-ways-to-improve-your-entire-codebase) as we prepare to move it from beta to GA. In 4.1, we're adding the last features to bring server-side Batch Changes up to feature parity with changes that are run locally.
 - When running server-side Batch Changes, you can now mount files on batch change steps containers using `steps.mount`. This is useful when your batch change needs to run long scripts or binaries that change frequently because file mounts allow you to iterate on those scripts and binaries without needing to bake them into the container and rebuild the container every time they change. You can read more about this feature in the [3.41 release post](https://about.sourcegraph.com/blog/release/3.41).
 - Previously, server-side batch changes could only be edited or deleted by the users that created them (or site admins). Now, users can create server-side batch changes in an organization namespace, which allows any user within that organization to edit or delete the batch change, making it easier to work collaboratively on batch changes with other devs.
 
