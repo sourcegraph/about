@@ -37,7 +37,7 @@ changelogItems:
 
 We're iterating on [server-side Batch Changes](https://about.sourcegraph.com/blog/release/4.0#high-leverage-ways-to-improve-your-entire-codebase) as we prepare to move it from beta to GA. In 4.1, we're adding the last features to bring server-side Batch Changes up to feature parity with batch changes that are run locally.
 - You can now mount files on batch change steps containers when running server-side. This is useful when your batch change needs to run long scripts or binaries that change frequently: file mounts allow you to iterate on them without needing to rebuild the container every time. You can read more about this feature in [release post 3.41](https://about.sourcegraph.com/blog/release/3.41).
-- Server-side batch changes can be created in an organization namespace, so any member of the organization can edit or delete the batch change. Previously server-side runs could only be created in a user namespace.
+- Server-side batch changes can be created in an organization namespace, so any member of the organization can edit or delete the batch change. Previously these batch changes could only be created in a user namespace.
 
 <a href="https://docs.sourcegraph.com/batch_changes/how-tos/server_side_file_mounts" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
