@@ -46,10 +46,6 @@ export const navLinks: NavLink[] = [
                 href: '/blog',
             },
             {
-                title: 'Docs',
-                href: 'https://docs.sourcegraph.com',
-            },
-            {
                 title: 'Learn',
                 href: 'https://learn.sourcegraph.com/',
             },
