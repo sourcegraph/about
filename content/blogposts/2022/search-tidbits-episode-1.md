@@ -66,7 +66,7 @@ for similar conditional search terms.
 ### Curate groups of repos to search over
 
 Create your own groups of repositories to search using `search contexts`. I use
-this to group the top 100 starred GH repositories by language. It's really
+this to group the top 100 starred GitHub repositories by language. It's really
 handy to search for examples in a language that I'm new to, like finding how library
 calls are used.
 
@@ -77,7 +77,7 @@ calls are used.
 />
 
 Even if you know the language, you'll see code examples in popular and high
-quality repositories for that language. To create your own, just hit the `context:` dropdown and manage your contexts to
+quality repositories for that language. To create your own, just hit the `context:` drop-down and manage your contexts to
 create your own from there.
 
 <Figure
