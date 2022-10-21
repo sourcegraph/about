@@ -87,7 +87,7 @@ This approach can be an easy and quick way to populate your catalog. You could e
 
 Bootstrapping the catalog with a multi-document YAML file generated from a script works well as a proof of concept, but it becomes inconvenient when you have users who want to manage the metadata of their catalog components. Once you are done demonstrating this proof of concept, you can go ahead and remove the location of the multi-document YAML file:
 
-```diff
+```yml
 # app-config.yaml
   catalog:
 	locations:
