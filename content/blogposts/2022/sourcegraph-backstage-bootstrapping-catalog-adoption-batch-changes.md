@@ -86,13 +86,12 @@ This approach can be an easy and quick way to populate your catalog. You could e
 
 Bootstrapping the catalog with a multi-document YAML file generated from a script works well as a proof of concept, but it becomes inconvenient when you have users who want to manage the metadata of their catalog components. Once you are done demonstrating this proof of concept, you can go ahead and remove the location of the multi-document YAML file:
 
-```yml
+```diff
 # app-config.yaml
   catalog:
 	locations:
-  	- type: url
-    	  target: https://github.com/my-org/my-repo/blob/main/components.yaml
-```
+-  	- type: url
+-    	  target: https://github.com/my-org/my-repo/blob/main/components.yaml
 
 ### Using Sourcegraph to open pull requests
 
