@@ -31,8 +31,6 @@ changelogItems:
     category: Admin
 ---
 
-Sourcegraph 4.1 is now available! For this release, we introduced:
-
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 
 #### Server-side Batch Changes now support file mounts and organization namespaces
