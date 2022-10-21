@@ -22,12 +22,12 @@ One of the most common questions from early adopters of [Backstage](https://back
 
 In this blog post, we'll describe a two-stage approach that helps Backstage adopters get traction for their software catalog:
 
-1. Using a multi-document YAML file for a proof of concept
-1. Using Sourcegraph Batch Changes to onboard developers and their repositories
+1. Using a script to generate a single multi-document YAML file of every repository to populate the software catalog - for the purpose of visually demonstrating its proof of concept
+2. Using Sourcegraph Batch Changes to kick off and keep track of the entire onboarding process of developers and their repositories to Backstage for the whole organization
 
 Before we can start populating the catalog, we need a source of data that will be useful for our starting point. One place to start is to populate the catalog with repositories from your version control system. For this tutorial we'll be using GitHub but a similar approach should work for other repository hosts. GitHub provides a [CLI](https://cli.github.com) that we can use to get a list of all of the repositories in the organization and some information about them. We'll use the following command for our example to generate a list of repositories with some useful fields:
 
-```
+```sh
 gh repo list <org_name> \
   --limit=1000 \
   --json=description,url,name,owner \
@@ -50,9 +50,9 @@ kind: Component
 metadata:
   name: backstage
   description: |
-	Backstage is an open-source developer portal that puts the developer experience first.
+		Backstage is an open-source developer portal that puts the developer experience first.
   annotations:
-	github.com/project-slug: backstage/backstage
+		github.com/project-slug: backstage/backstage
 spec:
   type: library
   owner: CNCF
@@ -64,7 +64,7 @@ metadata:
   name: demo
   description: An example deployment of a Backstage application.
   annotations:
-	github.com/project-slug: backstage/demo
+		github.com/project-slug: backstage/demo
 spec:
   type: website
   owner: backstage/maintainers
@@ -87,7 +87,7 @@ This approach can be an easy and quick way to populate your catalog. You could e
 
 Bootstrapping the catalog with a multi-document YAML file generated from a script works well as a proof of concept, but it becomes inconvenient when you have users who want to manage the metadata of their catalog components. Once you are done demonstrating this proof of concept, you can go ahead and remove the location of the multi-document YAML file:
 
-```yml
+```diff
 # app-config.yaml
   catalog:
 	locations:
@@ -155,11 +155,11 @@ steps:
 changesetTemplate:
   title: Add this repository to Backstage
   body: |
-	This pull request includes a `catalog-info.yaml` which allows you to specify the metadata of this repository for the [Backstage Software Catalog](https://backstage.io/docs/features/software-catalog/software-catalog-overview). You can learn more about the `catalog-info.yaml` file [here](https://backstage.io/docs/features/software-catalog/descriptor-format).
-	Once this pull request is merged, please register your component in [Backstage](https://<your-backstage-app-URL>/catalog-import).
+		This pull request includes a `catalog-info.yaml` which allows you to specify the metadata of this repository for the [Backstage Software Catalog](https://backstage.io/docs/features/software-catalog/software-catalog-overview). You can learn more about the `catalog-info.yaml` file [here](https://backstage.io/docs/features/software-catalog/descriptor-format).
+		Once this pull request is merged, please register your component in [Backstage](https://<your-backstage-app-URL>/catalog-import).
   branch: add-catalog-info
   commit:
-	message: Add repo to Backstage service catalog
+		message: Add repo to Backstage service catalog
 ```
 
 Let's zoom in on the steps section. A batch change works by running any number of steps to generate a diff. Each step corresponds to running a container on the target code. This spec has a single step that will install the GitHub CLI to get the metadata we need about the repo then run a small python script to format it.
@@ -183,6 +183,6 @@ Lastly, once a pull request is merged to introduce `catalog-info.yaml`, a develo
 In the next blog post, we will go over how the component registration can be fully automated by creating a Backstage entity provider with Sourcegraph's search and monitoring features.
 
 <div className="mt-6" />
-## About the author
+## About the authors
 
-_Taras Mankovski and Min Kim are the CEO and technical fellow of [Frontside](https://frontside.com/), a DX consultancy. Malo and Joel are product managers at Sourcegraph._
+_Taras Mankovski - CEO, and Min Kim - technical fellow, at [The Frontside Software, Inc](https://frontside.com/) - Backstage Professional Services Partner and DX Consulting Company. Malo and Joel are product managers at Sourcegraph._
