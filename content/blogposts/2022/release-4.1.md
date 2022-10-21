@@ -5,8 +5,8 @@ description: "Sourcegraph 4.1 introduces new features for server-side Batch Chan
 tags: [blog, release]
 slug: "release/4.1"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.1/sourcegraph-4-1.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.1/sourcegraph-4-1.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.1/sourcegraph-4-1-hero.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.1/sourcegraph-4-1-hero.png
 changelogItems:
   - description: Added repository sync counters to the code host details page to give visibility into external service sync progress.
     url: https://github.com/sourcegraph/sourcegraph/pull/43039
