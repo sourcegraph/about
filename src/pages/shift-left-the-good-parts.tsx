@@ -1,9 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
-import { Layout, ContentSection, TwoColumnSection, Video, ResourceList } from '@components'
+import { Layout, ContentSection, TwoColumnSection, Video, ResourceList, CtaSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const blogResourceItems = [
@@ -40,7 +39,7 @@ const ShiftLeftPage: FunctionComponent = () => (
         className="bg-white"
         hero={
             <div className="sg-bg-gradient-venus">
-                <div className="container py-6 lg:tw-py-5xl md:tw-text-center">
+                <div className="tw-max-w-screen-md tw-px-sm tw-mx-auto tw-py-5xl md:tw-text-center">
                     <h1>Shift Left: The good parts</h1>
                     <h3 className="mt-4 mb-0 md:tw-mx-auto max-w-750">5 practical ways to help your org shift left</h3>
                 </div>
@@ -287,33 +286,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                     by using tools that enable the developer to take full charge of shipping a new feature or bug fix.
                 </p>
 
-                <div className="tw-flex tw-flex-col tw-items-center">
-                    <Link href="/demo" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            title="Request a demo"
-                            className="btn btn-primary col-md-3"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            Request a demo
-                        </a>
-                    </Link>
-                    <Link href="/get-started/self-hosted" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            title="Try Sourcegraph now"
-                            className="mt-4 tw-text-center col-md-4"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            Try Sourcegraph now
-                            <ArrowRightIcon className="ml-2 tw-inline" />
-                        </a>
-                    </Link>
-                </div>
+                <CtaSection centerContent={true} />
             </div>
         </ContentSection>
 

@@ -8,12 +8,11 @@ import { buttonStyle, buttonLocation } from '@data'
 
 import { NavLink } from '../navLinks'
 
-interface Props {
+interface DesktopNav {
     navLinks: NavLink[]
-    hideGetStartedButton: boolean | undefined
 }
 
-const DesktopNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton }) => {
+const DesktopNav: FunctionComponent<DesktopNav> = ({ navLinks }) => {
     const [isBlog, setIsBlog] = useState(false)
 
     useEffect(() => {
@@ -87,42 +86,27 @@ const DesktopNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton }
             </Nav>
 
             <Nav className="right-nav lg:tw-justify-end">
-                {!hideGetStartedButton && (
-                    <Nav.Link
-                        className="px-2 py-2 btn tw-text-blurple-400 font-weight-bold"
-                        href="https://sourcegraph.com/search"
-                        title="Search code"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.nav}
-                        data-button-type="cta"
-                    >
-                        Search code
-                    </Nav.Link>
-                )}
-
                 <Nav.Link
-                    className="px-5 py-2 ml-3 btn btn-outline-primary font-weight-bold"
-                    href={`/demo${isBlog ? '?utm_source=blog-integrations-update' : ''}`}
-                    title="Request a demo"
+                    className="px-5 py-2 btn btn-outline-primary font-weight-bold"
+                    href="https://sourcegraph.com/search"
+                    title="Search code"
                     data-button-style={buttonStyle.outline}
                     data-button-location={buttonLocation.nav}
                     data-button-type="cta"
                 >
-                    Request a demo
+                    Search code
                 </Nav.Link>
 
-                {!hideGetStartedButton && (
-                    <Nav.Link
-                        className="px-5 py-2 ml-3 btn btn-primary font-weight-bold"
-                        href="/get-started/self-hosted"
-                        title="Get started"
-                        data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.nav}
-                        data-button-type="cta"
-                    >
-                        Get Started
-                    </Nav.Link>
-                )}
+                <Nav.Link
+                    className="px-5 py-2 ml-xs btn btn-primary font-weight-bold"
+                    href="https://signup.sourcegraph.com"
+                    title="Get free trial"
+                    data-button-style={buttonStyle.primary}
+                    data-button-location={buttonLocation.nav}
+                    data-button-type="cta"
+                >
+                    Get free trial
+                </Nav.Link>
             </Nav>
         </>
     )

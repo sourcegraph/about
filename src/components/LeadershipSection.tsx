@@ -11,14 +11,14 @@ const LEADERS: {
     image: string
     title: string
     bio: string
-    github: string
+    github?: string
     linkedin: string
-    twitter: string
+    twitter?: string
 }[] = [
     {
         name: 'Quinn Slack',
         image: '/staff/avatar-quinn.png',
-        title: 'CEO and Cofounder',
+        title: 'CEO/cofounder',
         bio: 'https://handbook.sourcegraph.com/company/team#quinn-slack',
         github: 'https://github.com/sqs',
         linkedin: 'https://www.linkedin.com/in/quinnslack',
@@ -27,29 +27,20 @@ const LEADERS: {
     {
         name: 'Beyang Liu',
         image: '/staff/avatar-beyang.png',
-        title: 'CTO and Cofounder',
+        title: 'CTO/cofounder',
         bio: 'https://handbook.sourcegraph.com/company/team#beyang-liu',
         github: 'https://github.com/beyang',
         linkedin: 'https://www.linkedin.com/in/beyang-liu',
         twitter: 'https://twitter.com/beyang',
     },
     {
-        name: 'Christina Forney',
-        image: '/staff/avatar-christina.png',
-        title: 'Product Advisor',
-        bio: 'https://handbook.sourcegraph.com/company/team#christina-forney',
-        github: 'https://github.com/christinaforney',
-        linkedin: 'https://www.linkedin.com/in/christinaforney',
-        twitter: 'https://twitter.com/christina4nee',
-    },
-    {
-        name: 'Nick Snyder',
-        image: '/staff/avatar-nick.png',
-        title: 'Engineering Advisor',
-        bio: 'https://handbook.sourcegraph.com/team/#nick-snyder',
-        github: 'https://github.com/nicksnyder',
-        linkedin: 'https://www.linkedin.com/in/nickdsnyder',
-        twitter: 'https://twitter.com/nickdsnyder',
+        name: 'Steve Yegge',
+        image: '/staff/avatar-stevey.png',
+        title: 'Head of Engineering',
+        bio: 'https://handbook.sourcegraph.com/company/team#steve-yegge',
+        github: 'https://github.com/steveyegge',
+        linkedin: 'https://www.linkedin.com/in/steveyegge/',
+        twitter: 'https://twitter.com/steve_yegge',
     },
     {
         name: 'Dan Adler',
@@ -61,13 +52,19 @@ const LEADERS: {
         twitter: 'https://twitter.com/DanielNealAdler',
     },
     {
-        name: 'Gregg Stone',
-        image: '/staff/avatar-gregg.jpg',
+        name: 'Tammy Zhu',
+        image: '/staff/avatar-tammy.png',
+        title: 'VP Legal',
+        bio: 'https://handbook.sourcegraph.com/company/team#tammy-zhu',
+        github: 'https://github.com/tammy-zhu',
+        linkedin: 'https://www.linkedin.com/in/tammy-zhu-30040820/',
+    },
+    {
+        name: 'Greg Bastis',
+        image: '/staff/avatar-greg.jpg',
         title: 'VP Sales',
-        bio: 'https://handbook.sourcegraph.com/company/team#gregg-stone',
-        github: 'https://github.com/sourcegraph',
-        linkedin: 'https://www.linkedin.com/in/stonegregg',
-        twitter: 'https://twitter.com/sourcegraph',
+        bio: 'https://handbook.sourcegraph.com/company/team#greg-bastis',
+        linkedin: 'https://www.linkedin.com/in/gregbastis/',
     },
     {
         name: 'Carly Jones',
@@ -76,7 +73,6 @@ const LEADERS: {
         bio: 'https://handbook.sourcegraph.com/company/team#carly-jones',
         github: 'https://github.com/carlyj0nes',
         linkedin: 'https://www.linkedin.com/in/carlycjones/',
-        twitter: 'https://twitter.com/sourcegraph',
     },
     {
         name: 'Aimee Menne',
@@ -85,7 +81,6 @@ const LEADERS: {
         bio: 'https://handbook.sourcegraph.com/company/team#aimee-menne',
         github: 'https://github.com/amenne',
         linkedin: 'https://www.linkedin.com/in/aimee-menne-8343487/',
-        twitter: 'https://twitter.com/sourcegraph',
     },
 ]
 
@@ -125,36 +120,40 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                     <p className="mb-0">{staff.title}</p>
 
                     <ul className="tw-ml-0 tw-mt-1 tw-list-none tw-flex">
-                        <li className="tw-mr-2">
-                            <a
-                                href={staff.github}
-                                target="_blank"
-                                rel="nofollow noreferrer"
-                                aria-label="GitHub"
-                                className="text-dark"
-                                title="Github icon"
-                                data-button-style={buttonStyle.image}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                <GithubIcon />
-                            </a>
-                        </li>
-                        <li className="tw-mr-2">
-                            <a
-                                href={staff.twitter}
-                                target="_blank"
-                                rel="nofollow noreferrer"
-                                aria-label="Twitter"
-                                className="text-dark"
-                                title="Twitter icon"
-                                data-button-style={buttonStyle.image}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                <TwitterIcon />
-                            </a>
-                        </li>
+                        {staff.github && (
+                            <li className="tw-mr-2">
+                                <a
+                                    href={staff.github}
+                                    target="_blank"
+                                    rel="nofollow noreferrer"
+                                    aria-label="GitHub"
+                                    className="text-dark"
+                                    title="Github icon"
+                                    data-button-style={buttonStyle.image}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    <GithubIcon />
+                                </a>
+                            </li>
+                        )}
+                        {staff.twitter && (
+                            <li className="tw-mr-2">
+                                <a
+                                    href={staff.twitter}
+                                    target="_blank"
+                                    rel="nofollow noreferrer"
+                                    aria-label="Twitter"
+                                    className="text-dark"
+                                    title="Twitter icon"
+                                    data-button-style={buttonStyle.image}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    <TwitterIcon />
+                                </a>
+                            </li>
+                        )}
                         <li className="tw-mr-2">
                             <a
                                 href={staff.linkedin}

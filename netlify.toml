@@ -46,7 +46,7 @@
   to = "https://handbook.sourcegraph.com/:splat"
 # ========== END HANDBOOK REDIRECTS ==========
 
-# ========== TERMS REDIRECTS ==========
+# ========== LEGAL REDIRECTS ==========
 [[redirects]]
   from = "/terms-cloud"
   to = "/terms/cloud"
@@ -82,7 +82,7 @@
 [[redirects]]
   from = "/subprocessors"
   to = "/terms/subprocessors"
-# ========== END TERMS REDIRECTS ==========
+# ========== END LEGAL REDIRECTS ==========
 
 # ========== BLOG REDIRECTS ==========
 [[redirects]]
@@ -144,10 +144,6 @@
   to = "/use-cases"
 
 [[redirects]]
-  from = "/dpa"
-  to = "/dpa.pdf"
-
-[[redirects]]
   from = "/cloud-beta"
   to = "/"
 
@@ -178,4 +174,8 @@
 [[redirects]]
   from = "/mysterybox"
   to = "https://view.ceros.com/sourcegraph/mysterybox/p/1"
+
+[[redirects]]
+  from = "/support"
+  to = "/contact"
 # ========== END INDIVIDUAL REDIRECTS ==========

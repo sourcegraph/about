@@ -27,7 +27,6 @@ interface LayoutProps {
     className?: string
     hideFooter?: boolean
     hideHeader?: boolean
-    hideGetStartedButton?: boolean
 }
 
 export const Layout: FunctionComponent<LayoutProps> = props => {
@@ -116,7 +115,6 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                         isProductPage={isProductPage}
                         minimal={props.minimal}
                         className={props.className}
-                        hideGetStartedButton={props.hideGetStartedButton}
                         navLinks={navLinks}
                     />
 

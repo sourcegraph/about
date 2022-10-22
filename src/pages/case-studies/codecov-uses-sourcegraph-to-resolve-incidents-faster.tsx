@@ -10,6 +10,7 @@ import {
     ThreeUpText,
     UseChallengeSolutionResults,
 } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const threeUpTextItems = [
     {
@@ -257,10 +258,23 @@ export const CaseStudy: FunctionComponent = () => (
                 <div className="tw-mt-5xl">
                     <StaffSpotlight
                         customer="Codecov"
-                        about="Codecov is a small organization making an outsized impact on the lives of over one million
+                        about={<>
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://about.codecov.io/"
+                                title="Codecov"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Codecov
+                            </a>
+                            {' '}is a small organization making an outsized impact on the lives of over one million
                         developers. In over 29,000 companies across the globe, Codecov customers are able to ship healthier
                         code using its code coverage tool. Developers rely on Codecov to provide actionable visibility into
-                        their code coverage across any tech stack."
+                        their code coverage across any tech stack.
+                        </>}
                         staff={[
                             {
                                 image: '/case-studies/jerrod-engelberg.png',

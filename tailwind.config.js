@@ -133,7 +133,12 @@ module.exports = {
 
     // This extends (not replaces) theme properties
     extend: {
-      // Breakpoints and responsive modifiers
+      /**
+       * Breakpoints and responsive modifiers.
+       * Other than xs, we use the default Tailwind breakpoints.
+       * See: https://tailwindcss.com/docs/responsive-design
+       * sm: 640px, md: 768px, lg: 1024px, xl: 1280px, 2xl: 1536px
+       */
       screens: {
         xs: '480px',
       },
@@ -152,7 +157,9 @@ module.exports = {
       },
 
       borderWidth: {
+        1: '1px',
         3: '3px',
+        16: '16px',
       },
 
       keyframes: {

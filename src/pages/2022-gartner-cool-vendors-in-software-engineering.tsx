@@ -37,7 +37,7 @@ export const Report: FunctionComponent = () => (
                         Learn how we believe Sourcegraph and other innovative tools help engineers and engineering
                         leaders boost developer productivity while mitigating security risks.
                     </p>
-                    <p className="text-muted">
+                    <p className="tw-text-gray-400">
                         The GARTNER COOL VENDOR badge and Gartner are registered trademarks and service mark of Gartner,
                         Inc. and/or its affiliates and is used herein with permission. All rights reserved. Gartner does
                         not endorse any vendor, product or service depicted in its research publications and does not
@@ -47,7 +47,7 @@ export const Report: FunctionComponent = () => (
                         warranties, expressed or implied, with respect to this research, including any warranties of
                         merchantability or fitness for a particular purpose.
                     </p>
-                    <p className="tw-pb-xxs text-muted">
+                    <p className="tw-pb-xxs tw-text-gray-400">
                         Gartner, Cool Vendors in Software Engineering: Enhancing Developer Productivity, Cool Vendors in
                         Software Engineering: Enhancing Developer Productivity, 16th May 2022.
                     </p>

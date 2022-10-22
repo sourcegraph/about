@@ -17,10 +17,12 @@ interface Badge {
         | 'vermillion'
         | 'green'
         | 'lemon'
+    link?: string
     icon?: ElementType
     onClick?: () => void
     checked?: boolean
     circle?: boolean
+    breakWords?: boolean
 }
 
 /**
@@ -30,12 +32,24 @@ interface Badge {
  * @param props.text - badge text
  * @param props.size - the size of the badge
  * @param props.color - the color of the badge
+ * @param props.link - a link for an anchor tag
  * @param props.icon - the icon to use beside the text
  * @param props.onClick - an onClick function
  * @param props.checked - the controlled checked state
  * @param props.circle - whether it's a basic or circle radius badge
+ * @param props.breakWords - whether to break words or not for longer text
  */
-export const Badge: FunctionComponent<Badge> = ({ text, size, color = 'light-gray', icon, onClick, checked, circle }) => {
+export const Badge: FunctionComponent<Badge> = ({
+    text,
+    size,
+    color = 'light-gray',
+    link,
+    icon,
+    onClick,
+    checked,
+    circle,
+    breakWords,
+}) => {
     const Icon: ElementType = icon || 'div'
 
     const colors = {
@@ -113,20 +127,26 @@ export const Badge: FunctionComponent<Badge> = ({ text, size, color = 'light-gra
     }
 
     const styles = classNames(
-        'tw-inline tw-font-mono tw-align-middle tw-font-medium tw-whitespace-nowrap',
+        'tw-inline tw-font-mono tw-align-middle tw-font-medium',
         sizes[size],
         colors[color].base,
         {
             [colors[color].unchecked]: !checked || !onClick,
             [colors[color].checked]: checked,
-            [colors[color].hover]: !!onClick,
+            [colors[color].hover]: !!onClick || !!link,
             'tw-cursor-pointer tw-transition-all tw-ease-out': !!onClick,
             'tw-rounded-full': circle,
             'tw-rounded-md': !circle,
-        }
+        },
+        breakWords ? 'tw-break-words' : 'tw-whitespace-nowrap'
     )
 
-    return (
+    return link ? (
+        <a href={link} className={classNames('tw-no-underline', styles)} tabIndex={0}>
+            {text}
+            {icon && <Icon className="tw-inline tw-ml-1" size={size === 'small' ? 12 : 14} />}
+        </a>
+    ) : (
         <div
             className={styles}
             onClick={onClick}

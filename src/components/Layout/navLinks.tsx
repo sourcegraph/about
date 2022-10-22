@@ -117,12 +117,12 @@ export const footerLinks: NavLink[] = [
         section: 'About Sourcegraph',
         items: [
             {
-                title: 'Use cases',
-                href: '/use-cases',
-            },
-            {
                 title: 'Case studies',
                 href: '/case-studies',
+            },
+            {
+                title: 'Use cases',
+                href: '/use-cases',
             },
             {
                 title: 'Pricing',

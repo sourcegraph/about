@@ -19,9 +19,9 @@ import { CodeInsightExampleType } from '@code-insights/types'
 import {
     Blockquote,
     ContentSection,
+    CtaSection,
     CustomCarousel,
     Hero,
-    HubSpotForm,
     Layout,
     ResourceList,
     TabCarousel,
@@ -317,7 +317,36 @@ const CodeInsightsPage: FunctionComponent = () => (
                 product="code insights"
                 title={'Track what really matters\nto you and your team.'}
                 subtitle="Transform your code into a queryable database to create customizable, visual dashboards in seconds."
-                cta={<HubSpotForm masterFormName="contactEmail" chiliPiper={true} />}
+                cta={
+                    <div className="tw-text-left tw-flex-col md:tw-flex-row md:tw-flex">
+                        <div className="mb-3 mb-md-0">
+                            <a
+                                href="https://signup.sourcegraph.com"
+                                className="btn btn-primary w-100 max-w-350"
+                                title="Get free trial"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
+                                Get free trial
+                            </a>
+                        </div>
+                        <div className="ml-md-3">
+                            <Link href="/demo" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    className="btn btn-outline-primary w-100 max-w-350"
+                                    title="Request a Demo."
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
+                                    Request a demo
+                                </a>
+                            </Link>
+                        </div>
+                    </div>
+                }
                 displayUnderNav={true}
             />
         }
@@ -549,31 +578,10 @@ const CodeInsightsPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="row tw-flex tw-flex-col tw-justify-start">
-                <div className="mb-5 col-lg-8 tw-flex tw-flex-col tw-justify-start">
-                    <h2>Get started with Code Insights</h2>
-                    <p>
-                        Create a code insight in 60 seconds and get historical data for previously untracked metrics —
-                        data backfills automatically.
-                    </p>
-                </div>
-                <div className="tw-pt-1 col-lg-7 tw-flex tw-flex-col">
-                    <Link href="/contact/request-code-insights-demo" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className="mr-3 btn btn-primary col-4"
-                            title="Request a Demo of Code Insights."
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.trySourcegraph}
-                            data-button-type="cta"
-                        >
-                            Request a demo
-                        </a>
-                    </Link>
-                </div>
-            </div>
-        </ContentSection>
+        <CtaSection
+            title="Get started with Code Insights"
+            description="Create a code insight in 60 seconds and get historical data for previously untracked metrics — data backfills automatically."
+        />
 
         <ResourceList items={blogResourceItems} title="Learn More" />
     </Layout>

@@ -12,20 +12,21 @@ export default class MyDocument extends Document {
                     <meta charSet="utf-8" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+                    <meta name="theme-color" content="#ffffff" />
+                    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+                    <meta name="apple-mobile-web-app-title" content="Sourcegraph" />
+                    <link rel="apple-touch-startup-image" href="/sourcegraph/sourcegraph-mark.png" />
 
                     <link rel="icon" type="image/png" href="/favicon.png" />
+                    <link rel="apple-touch-icon" sizes="180x180" href="/sourcegraph/sourcegraph-mark-touch-180.png" />
 
-                    {/* TODO Implement RSS Feed */}
-                    {/* <link rel="alternate" type="application/rss+xml" title="Universal Code Search - Sourcegraph" href="/rss.xml" /> */}
+                    <link rel="manifest" href="/manifest.json" />
 
                     {/* Sourcegraph Chrome Extension */}
                     <link
                         rel="chrome-webstore-item"
                         href="https://chrome.google.com/webstore/detail/dgjhfomjieaadpoljlnidmbgkdffpack"
                     />
-
-                    {/* Adobe Source Sans Pro Fonts */}
-                    <link rel="stylesheet" href="https://use.typekit.net/ngk3rlb.css" />
 
                     {/* Google Fonts */}
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,8 +37,9 @@ export default class MyDocument extends Document {
                     />
 
                     {/* Cookiebot */}
+                    {/* Cookiebot recommends this in the head, which aligns with Next.js' recommendation for CCMs */}
                     <Script
-                        id="cookiebot"
+                        id="script-cookiebot"
                         src="https://consent.cookiebot.com/uc.js"
                         data-cbid="fb31dc3e-afb3-4be8-ae84-7090bba7797d"
                         data-blockingmode="auto"
@@ -45,25 +47,10 @@ export default class MyDocument extends Document {
                         strategy="beforeInteractive"
                     />
 
-                    {/* Google Tag Manager Data Layer Window */}
-                    <Script id="gtm-data-layer" strategy="beforeInteractive">
-                        window.dataLayer = window.dataLayer || [];
-                    </Script>
-
-                    {/* Google Tag Manager */}
-                    <Script id="gtm" data-cookieconsent="ignore" strategy="beforeInteractive">
-                        {`
-                            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                        })(window,document,'script','dataLayer','GTM-TB4NLS7');  
-                        `}
-                    </Script>
-
-                    {/* Google Analytics Data Layer Settings */}
-                    {/* Note: GA is configured via GTM */}
-                    <Script id="ga" data-cookieconsent="ignore" strategy="beforeInteractive">
+                    {/* GTM Data Layer */}
+                    {/* Google recommends this in the head, but Next.js recommends afterInteractive */}
+                    {/* Note: Deprecate gtag UA config when we've migrated to GA4 */}
+                    <Script id="script-gtm-data-layer" data-cookieconsent="ignore" strategy="afterInteractive">
                         {`
                         window.dataLayer = window.dataLayer || [];
                         
@@ -78,16 +65,51 @@ export default class MyDocument extends Document {
                         });
                         
                         gtag("set", "ads_data_redaction", true);
+                        
+                        gtag('js', new Date());
+                        gtag('config', 'UA-40540747-17');
                     `}
                     </Script>
 
-                    {/* Triblio "Webpage Personalization" */}
+                    {/* Google Tag Manager */}
+                    {/* Google recommends this in the head, but Next.js recommends afterInteractive */}
+                    <Script id="script-gtm" data-cookieconsent="ignore" strategy="afterInteractive">
+                        {`
+                            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                            })(window,document,'script','dataLayer','GTM-TB4NLS7');  
+                        `}
+                    </Script>
+
+                    {/* Plausible Analytics (GA Alternative) */}
+                    {/* Plausible recommends this in the head, but Next.js recommends afterInteractive */}
                     <Script
-                        id="triblio-p"
+                        id="script-plausible"
+                        data-domain="about.sourcegraph.com"
+                        src="https://plausible.io/js/plausible.js"
+                        strategy="afterInteractive"
+                    />
+
+                    {/* Triblio "Webpage Personalization" */}
+                    {/* Triblio recommends this in the head which we follow with beforeInteractive */}
+                    <Script
+                        id="script-triblio-personalization"
                         type="text/javascript"
                         src="https://tribl.io/h.js?orgId=Yee6bMKj7QSARqAePdE8"
                         async={true}
                         strategy="beforeInteractive"
+                    />
+
+                    {/* Triblio "Analytics and Overlay Cards" */}
+                    {/* Triblio recommends this in the body which aligns with Next.js' recommendation for analytics */}
+                    <Script
+                        id="script-triblio-analytics"
+                        type="text/javascript"
+                        src="https://tribl.io/footer.js?orgId=Yee6bMKj7QSARqAePdE8"
+                        strategy="afterInteractive"
+                        defer={true}
                     />
                 </Head>
                 <body>
