@@ -45,37 +45,24 @@ export const CaseStudy: FunctionComponent = () => (
                     link: '/case-studies',
                 }}
                 variant="venusCode"
-                title={'Nutanix fixed Log4j quickly and \n confidently with Sourcegraph'}
+                title={'Neo Financial improves the developer experience with Sourcegraph'}
                 displayUnderNav={true}
             />
         }
     >
         <NewCaseStudyLayout customer="Nutanix">
-            <ContentSection background="white" className="tw-flex tw-justify-center">
-                <Blockquote
-                    inline={true}
-                    quote="Sourcegraph was the right product at the right time."
-                    author="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
-                    logo={{
-                        src: '/external-logos/nutanix-logo.svg',
-                        alt: 'Nutanix',
-                        href: 'https://nutanix.com',
-                    }}
-                />
-            </ContentSection>
-
             <ContentSection>
                 <UseChallengeSolutionResults
                     useCases={[
                         {
-                            text: 'Find and fix security vulnerabilities quickly across the codebase.',
-                            href: '/use-cases/code-security',
+                            text: 'Code reuse',
+                            href: '/use-cases/code-reuse',
                         },
                     ]}
                     challenges={[
-                        { text: 'Inability to efficiently find all the instances of Log4j in their large codebase.' },
-                        { text: 'Lack of code-level clarity that vulnerabilities were completely resolved.' },
-                        { text: 'Uncertainty about the scope and impact of the Log4j vulnerability.' },
+                        { text: 'Unable to understand their codebase and efficiently find code to reuse with code host’s native search functionality.' },
+                        { text: 'Inability to search branches or tags at scale required manual effort and wasted time.' },
+                        { text: 'Local, unstructured searches through repositories were time consuming and weren't always successful.' },
                     ]}
                     solutions={[
                         { text: 'Able to quickly and efficiently find every instance of the Log4j vulnerability.' },
@@ -101,11 +88,7 @@ export const CaseStudy: FunctionComponent = () => (
             <ContentSection background="white" slimWidth={true}>
                 <div className="tw-mx-auto tw-pt-5xl">
                     <p className="tw-pt-3xl sm:tw-mt-0 tw-mt-5xl">
-                        As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the
-                        complexity involved in securing the multitude of applications and solutions required to power
-                        such a large organization. “Security is something that we care about intensely here at Nutanix,”
-                        Jon said, “because it’s part of our bedrock. It's why customers like us, and we have to take it
-                        seriously.”
+                        Before Sourcegraph, tracking libraries manually and searching in GitHub made the process of finding code difficult and time-consuming. To avoid unnecessary duplication of code or to see how a service was previously set up, developers need to look at existing code–essentially, searching for patterns. Unfortunately, manual pattern search with their code host’s native search functionality wasted valuable time that engineering teams could use to address other challenges.
                     </p>
                     <h3 className="mt-6 mb-4 max-w-600">Log4j: The vulnerability that rocked an industry</h3>
                     <p>
