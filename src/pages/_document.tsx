@@ -22,6 +22,8 @@ export default class MyDocument extends Document {
 
                     <link rel="manifest" href="/manifest.json" />
 
+                    <link rel="alternate" type="application/rss+xml" title="Sourcegraph blog RSS Feed" href="/rss.xml" />
+
                     {/* Sourcegraph Chrome Extension */}
                     <link
                         rel="chrome-webstore-item"
