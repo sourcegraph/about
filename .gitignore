@@ -38,7 +38,8 @@ public/data
 # Cypress screenshots
 cypress/screenshots
 
-# Generated service worker and map files
+# Generated files
 public/*.map
-public/workbox-*.js
+public/rss.xml
 public/sw.js
+public/workbox-*.js
