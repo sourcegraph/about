@@ -62,7 +62,7 @@ export const CaseStudy: FunctionComponent = () => (
                     challenges={[
                         { text: 'Unable to understand their codebase and efficiently find code to reuse with code host’s native search functionality.' },
                         { text: 'Inability to search branches or tags at scale required manual effort and wasted time.' },
-                        { text: 'Local, unstructured searches through repositories were time consuming and weren't always successful.' },
+                        { text: 'Local, unstructured searches through repositories were time consuming and weren\'t always successful.' },
                     ]}
                     solutions={[
                         { text: 'Able to quickly and efficiently find every instance of the Log4j vulnerability.' },
