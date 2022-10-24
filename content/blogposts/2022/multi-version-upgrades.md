@@ -20,7 +20,7 @@ A recent peek at our customer instance distribution showed that 70% of our self-
 
 [Multi-version upgrades](https://docs.sourcegraph.com/admin/updates#multi-version-upgrades), in contrast to the "standard upgrade" approach, use the [`migrator` tool](https://about.sourcegraph.com/blog/introducing-migrator-service) to perform the sequence of schema and in-place data migrations that _would happen_ if the user were to perform a chain of upgrades that hit every minor release on the way to their target. This tool makes upgrading directly to our [4.0 release](https://about.sourcegraph.com/blog/release/4.0) a technical feasibility for the vast majority of our customers.
 
-At first glance, it may seem that multi-version upgrades are simply "standard upgrades in a `for` loop". While that _is_ the basic idea, there's also a world of nuance surrounding it. Let's dive in.
+At first glance, it may seem that multi-version upgrades are simply "standard upgrades in a `for` loop." While that _is_ the basic idea, there's also a world of nuance surrounding it. Let's dive in.
 
 ## The migration journey
 
