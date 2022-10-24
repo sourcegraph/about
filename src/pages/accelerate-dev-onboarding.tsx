@@ -1,8 +1,6 @@
 /* eslint-disable unicorn/prevent-abbreviations */
 import { FunctionComponent } from 'react'
 
-import Link from 'next/link'
-
 import { Blockquote, Layout, HubSpotForm, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 

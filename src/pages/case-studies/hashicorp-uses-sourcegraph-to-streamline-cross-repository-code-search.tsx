@@ -121,10 +121,9 @@ export const CaseStudy: FunctionComponent = () => (
                             data-button-type="cta"
                         >
                             HashiCorp
-                        </a>
-                        {' '}is a company that has
-                        brought best-in-class developer experience to infrastructure teams through its portfolio of
-                        tools which includes HashiCorp{' '}
+                        </a>{' '}
+                        is a company that has brought best-in-class developer experience to infrastructure teams through
+                        its portfolio of tools which includes HashiCorp{' '}
                         <a
                             target="_blank"
                             rel="noreferrer"
@@ -254,11 +253,11 @@ export const CaseStudy: FunctionComponent = () => (
                         >
                             Vagrant
                         </a>
-                        , HashiCorp has grown its
-                        product suite into a rich, integrated toolkit that covers nearly every area of infrastructure
-                        management, from resource provisioning to container orchestration to secrets management. As the
-                        product suite has expanded, so have its codebases. Prior to Sourcegraph, it was difficult and
-                        time-consuming to manage and track dependencies across the company’s websites.
+                        , HashiCorp has grown its product suite into a rich, integrated toolkit that covers nearly every
+                        area of infrastructure management, from resource provisioning to container orchestration to
+                        secrets management. As the product suite has expanded, so have its codebases. Prior to
+                        Sourcegraph, it was difficult and time-consuming to manage and track dependencies across the
+                        company’s websites.
                     </p>
                     <p>
                         According to Bryce, “Previously, searching repositories was a time-consuming, manual, and
@@ -370,20 +369,27 @@ export const CaseStudy: FunctionComponent = () => (
                 <div className="tw-max-w-4xl tw-mx-auto">
                     <StaffSpotlight
                         customer="HashiCorp"
-                        about={<>
-                            <a
-                                target="_blank"
-                                rel="noreferrer"
-                                href="https://hashicorp.com"
-                                title="HashiCorp"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                HashiCorp
-                            </a>
-                            {' '} (NASDAQ: HCP) is a provider of open-core software that developers use to manage cloud infrastructure. Based in San Francisco, Calif., the company offers solutions including Terraform, an infrastructure-as-code tool for managing cloud services, and Vault, a tool for securing, storing, and controlling access to tokens, passwords, and API keys. HashiCorp’s tools are downloaded tens of millions of times each year and are broadly adopted by the Global 2000.
-                        </>}
+                        about={
+                            <>
+                                <a
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    href="https://hashicorp.com"
+                                    title="HashiCorp"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    HashiCorp
+                                </a>{' '}
+                                (NASDAQ: HCP) is a provider of open-core software that developers use to manage cloud
+                                infrastructure. Based in San Francisco, Calif., the company offers solutions including
+                                Terraform, an infrastructure-as-code tool for managing cloud services, and Vault, a tool
+                                for securing, storing, and controlling access to tokens, passwords, and API keys.
+                                HashiCorp’s tools are downloaded tens of millions of times each year and are broadly
+                                adopted by the Global 2000.
+                            </>
+                        }
                         staff={[
                             {
                                 image: '/case-studies/bryce-kalow.png',

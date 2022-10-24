@@ -20,7 +20,7 @@ const breaks: Breakpoints = {}
 
 for (const screen in screens) {
     if (screens[screen]) {
-        breaks[screen] = Number(screens[screen].slice(0,-2))
+        breaks[screen] = Number(screens[screen].slice(0, -2))
     }
 }
 
