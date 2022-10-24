@@ -1,6 +1,5 @@
 import { FunctionComponent } from 'react'
 
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { Layout, GatedResourceLayout, ContentSection, Hero } from '@components'
@@ -92,18 +91,16 @@ const Webinar: FunctionComponent = () => {
                 learnMoreCTA={
                     <ContentSection className="tw-flex tw-flex-col tw-items-center">
                         <h1 className="tw-text-center">Want to learn more about Code Insights?</h1>
-                        <Link href="/contact/request-code-insights-demo" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="mt-4 btn btn-primary col-12 col-md-3 col-xl-2"
-                                title="Request a Demo"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.bodyDemo}
-                                data-button-type="cta"
-                            >
-                                Request a demo
-                            </a>
-                        </Link>
+                        <a
+                            className="mt-4 btn btn-primary col-12 col-md-3 col-xl-2"
+                            href="https://signup.sourcegraph.com"
+                            title="Get free trial"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Get free trial
+                        </a>
                     </ContentSection>
                 }
             />

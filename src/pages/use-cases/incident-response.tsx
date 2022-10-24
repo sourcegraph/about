@@ -360,18 +360,16 @@ const IncidentResponsePage: FunctionComponent = () => (
                     </p>
                 </div>
                 <div className="tw-px-0 tw-text-center col-12">
-                    <Link href="/demo" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className="btn btn-primary max-w-350 w-100"
-                            title="Request a Demo."
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.bodyDemo}
-                            data-button-type="cta"
-                        >
-                            Request a demo
-                        </a>
-                    </Link>
+                    <a
+                        className="btn btn-primary max-w-350 w-100"
+                        href="https://signup.sourcegraph.com"
+                        title="Get free trial"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        Get free trial
+                    </a>
                     <Link href="/use-cases" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a

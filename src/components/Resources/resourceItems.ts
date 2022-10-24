@@ -1,5 +1,11 @@
 type ContentTypes = 'virtual event' | 'blog post' | 'guide' | 'customer story' | 'video'
-type Subjects = 'code security' | 'developer onboarding' | 'code health' | 'incident response' | 'code reuse' | 'product release'
+type Subjects =
+    | 'code security'
+    | 'developer onboarding'
+    | 'code health'
+    | 'incident response'
+    | 'code reuse'
+    | 'product release'
 
 export interface Resource {
     title: string
@@ -31,7 +37,8 @@ export const resourceItems: Resource[] = [
         link: '/guides/devops-data-driven-relationships-with-codebases.pdf',
         contentType: 'guide',
         subjects: ['code health'],
-        description: 'Track devops tooling and paved path practices across your entire codebase, from version spread to migrations and deprecations',
+        description:
+            'Track devops tooling and paved path practices across your entire codebase, from version spread to migrations and deprecations',
         publishDate: '2022-10-10T17:32:24Z',
     },
     {
