@@ -66,7 +66,7 @@ The evolution of our migration definitions over time has created a number of iss
 
 To get around this, we need to undo the squash operation over time to get a single, consistent "stitched" migration graph.
 
-<Figure src="temp/timeline.png" alt="timeline" />
+<Figure src="https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/timeline.png" alt="timeline" />
 
 But doing so is basically time travel. For every Sourcegraph release in the upgrade support range, we take a snapshot of the migration definitions and overlay them on one another. Squashed migrations, identified by a specific naming convention, are handled distinctly in this process and provide hints on how to concatenate the migration graphs together. The result is a single unified migration graph that allows us to pinpoint any two versions and extract the sequence of SQL commands that need to be performed.
 
