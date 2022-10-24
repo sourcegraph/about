@@ -17,11 +17,10 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const blogResources = [
     {
-        title: 'Key traits of a code intelligence platform',
-        description:
-            'Sourcegraph is more than search. Engage and enable your teams by helping developers get unblocked, resolve issues faster, and gain codebase insights.',
-        type: 'Guide',
-        href: '/guides/key-traits-of-a-code-intelligence-platform.pdf',
+        title: 'Code search tidbits: 4 underrated features',
+        description: "You can do some pretty wild things with Sourcegraph that you won't find in any other code search tool today. Read about 4 short-and-sweet tidbits of underrated search features that go a bit extra.",
+        type: 'Blog',
+        href: '/blog/code-search-tidbits-episode-1',
     },
     {
         title: 'How we used Notebooks to make our CI more accessible and understandable',
@@ -35,10 +34,11 @@ const blogResources = [
         },
     },
     {
-        title: 'Dive into documentation',
-        description: 'Learn everything you need to know about Code Search.',
-        type: 'Docs',
-        href: 'https://docs.sourcegraph.com/code_search',
+        title: 'Key traits of a code intelligence platform',
+        description:
+            'Sourcegraph is more than search. Engage and enable your teams by helping developers get unblocked, resolve issues faster, and gain codebase insights.',
+        type: 'Guide',
+        href: '/guides/key-traits-of-a-code-intelligence-platform.pdf',
     },
 ]
 
