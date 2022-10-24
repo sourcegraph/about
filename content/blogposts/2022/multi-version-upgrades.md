@@ -4,7 +4,7 @@ description: 'Sourcegraph administration just got an order-of-magnitude quality-
 authors:
   - name: Eric Fritz
     url: https://eric-fritz.com
-publishDate: 2022-10-19T10:00-07:00
+publishDate: 2022-10-25T10:00-07:00
 tags: [blog]
 slug: multi-version-upgrades
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/multi-version-upgrades/mvu-hero.png
