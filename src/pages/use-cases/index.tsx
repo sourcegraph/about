@@ -203,7 +203,7 @@ const UseCases: React.FunctionComponent = () => (
                             </ul>
                             <a
                                 className="btn btn-outline-primary"
-                                href="'https://signup.sourcegraph.com"
+                                href="https://signup.sourcegraph.com"
                                 title="Get free trial"
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.body}

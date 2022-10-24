@@ -63,7 +63,7 @@ const FixingVulnerabilities: FunctionComponent = () => (
             <div className="tw-mx-auto mt-5 max-w-400">
                 <a
                     className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
-                    href="'https://signup.sourcegraph.com"
+                    href="https://signup.sourcegraph.com"
                     title="Get free trial"
                     data-button-style={buttonStyle.primary}
                     data-button-location={buttonLocation.body}
