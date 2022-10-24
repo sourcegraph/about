@@ -104,6 +104,6 @@ In the example above, upgrading from v3.37 to v3.40 would require the completion
 
 ## Conclusion
 
-We've continued to iterate on our schema and data migration infrastructure to remove entire classes of pain from our customers. We know that Sourcegraph administration is not a cakewalk, and we are taking significant strides to decrease maintenance burden. Keep your eyes peeled for future improvements in this area.
+We've continued to iterate on our schema and data migration infrastructure to remove entire classes of pain from our customers, and we are taking significant strides to decrease maintenance burden. Keep your eyes peeled for future improvements in this area.
 
 If your next upgrade goes well, let me know at [@ericfritz](https://twitter.com/ericfritz).
