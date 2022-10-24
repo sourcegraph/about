@@ -120,18 +120,16 @@ const UseCases: React.FunctionComponent = () => (
                                 </li>
                                 <li>Alert for known vulnerabilities and risky code changes with code monitoring</li>
                             </ul>
-                            <Link href="/demo" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="btn btn-outline-primary"
-                                    title="Request a demo"
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.bodyDemo}
-                                    data-button-type="cta"
-                                >
-                                    Request a demo <ArrowRightBoxIcon className="ml-1 tw-inline" />
-                                </a>
-                            </Link>
+                            <a
+                                className="btn btn-outline-primary"
+                                href="https://signup.sourcegraph.com"
+                                title="Get free trial"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Get free trial <ArrowRightBoxIcon className="ml-1 tw-inline" />
+                            </a>
                             <Link href="/use-cases/code-security" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
@@ -203,18 +201,16 @@ const UseCases: React.FunctionComponent = () => (
                                 </li>
                                 <li>Get answers faster with shareable links to specific code</li>
                             </ul>
-                            <Link href="/demo" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="btn btn-outline-primary"
-                                    title="Request a demo"
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.bodyDemo}
-                                    data-button-type="cta"
-                                >
-                                    Request a demo <ArrowRightBoxIcon className="ml-1 tw-inline" />
-                                </a>
-                            </Link>
+                            <a
+                                className="btn btn-outline-primary"
+                                href="'https://signup.sourcegraph.com"
+                                title="Get free trial"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Get free trial <ArrowRightBoxIcon className="ml-1 tw-inline" />
+                            </a>
                             <Link href="/use-cases/onboarding" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
@@ -262,18 +258,16 @@ const UseCases: React.FunctionComponent = () => (
                                     a search notebook
                                 </li>
                             </ul>
-                            <Link href="/demo" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="btn btn-outline-primary"
-                                    title="Request a demo"
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.bodyDemo}
-                                    data-button-type="cta"
-                                >
-                                    Request a demo <ArrowRightBoxIcon className="ml-1 tw-inline" />
-                                </a>
-                            </Link>
+                            <a
+                                className="btn btn-outline-primary"
+                                href="https://signup.sourcegraph.com"
+                                title="Get free trial"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Get free trial <ArrowRightBoxIcon className="ml-1 tw-inline" />
+                            </a>
                             <Link href="/use-cases/incident-response" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
@@ -361,18 +355,16 @@ const UseCases: React.FunctionComponent = () => (
                                 </li>
                                 <li>Add a code monitor to alert you of commits using an out-of-date library</li>
                             </ul>
-                            <Link href="/demo" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="btn btn-outline-primary"
-                                    title="Request a demo"
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.bodyDemo}
-                                    data-button-type="cta"
-                                >
-                                    Request a demo <ArrowRightBoxIcon className="ml-1 tw-inline" />
-                                </a>
-                            </Link>
+                            <a
+                                className="btn btn-outline-primary"
+                                href="https://signup.sourcegraph.com"
+                                title="Get free trial"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Get free trial <ArrowRightBoxIcon className="ml-1 tw-inline" />
+                            </a>
                             <Link href="/use-cases/code-reuse" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
@@ -418,18 +410,16 @@ const UseCases: React.FunctionComponent = () => (
                                 </li>
                                 <li>Efficiently tackle tech debt from legacy systems and acquisitions</li>
                             </ul>
-                            <Link href="/demo" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="btn btn-outline-primary"
-                                    title="Request a demo"
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.bodyDemo}
-                                    data-button-type="cta"
-                                >
-                                    Request a demo <ArrowRightBoxIcon className="ml-1 tw-inline" />
-                                </a>
-                            </Link>
+                            <a
+                                className="btn btn-outline-primary"
+                                href="https://signup.sourcegraph.com"
+                                title="Get free trial"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Get free trial <ArrowRightBoxIcon className="ml-1 tw-inline" />
+                            </a>
                             <Link href="/use-cases/code-health" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a

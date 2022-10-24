@@ -56,18 +56,16 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                 <h2>Ready to accelerate developer onboarding? Let's talk.</h2>
 
                 <div className="mt-5 tw-mx-auto max-w-400">
-                    <Link href="/demo">
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
-                            title="Request a demo"
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.bodyDemo}
-                            data-button-type="cta"
-                        >
-                            Request a demo
-                        </a>
-                    </Link>
+                    <a
+                        className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
+                        href="'https://signup.sourcegraph.com"
+                        title="Get free trial"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.bodyDemo}
+                        data-button-type="cta"
+                    >
+                        Get free trial
+                    </a>
                 </div>
             </div>
         </div>

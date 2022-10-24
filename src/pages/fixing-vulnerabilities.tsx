@@ -61,18 +61,16 @@ const FixingVulnerabilities: FunctionComponent = () => (
             <h2>Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk.</h2>
 
             <div className="tw-mx-auto mt-5 max-w-400">
-                <Link href="/demo">
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a
-                        className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
-                        title="Request a demo"
-                        data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.bodyDemo}
-                        data-button-type="cta"
-                    >
-                        Request a demo
-                    </a>
-                </Link>
+                <a
+                    className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
+                    href="'https://signup.sourcegraph.com"
+                    title="Get free trial"
+                    data-button-style={buttonStyle.primary}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                >
+                    Get free trial
+                </a>
             </div>
         </div>
     </Layout>
