@@ -22,7 +22,7 @@ const Home: FunctionComponent = () => (
 
         <IntegrationsSection />
 
-        <CtaSection background="saturn" />
+        <CtaSection />
     </Layout>
 )
 

@@ -3,14 +3,16 @@ import { FunctionComponent, ReactNode } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { ContentSection } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { buttonStyle, buttonLocation, breakpoints } from '@data'
+import { useWindowWidth } from '@hooks'
+import { plausible } from '@util'
+
+import illustration from './illustration.svg'
 
 interface Cta {
     text: string
     icon?: ReactNode
     ctaStyle?:
-        | 'primaryButton'
         | 'primaryButtonWhite'
         | 'outlineButton'
         | 'outlineButtonLight'
@@ -20,13 +22,11 @@ interface Cta {
 }
 
 interface CtaSection {
-    background?: ContentSection['background']
     title?: string
     description?: string
-    centerContent?: boolean
-    slimWidth?: boolean
     cta1?: Cta
     cta2?: Cta | boolean
+    cta3?: string
 }
 
 /**
@@ -49,9 +49,9 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) =>
     const externalLink = link?.includes('http')
 
     let ctaTrackingStyle = buttonStyle.text
-    if (ctaStyle === 'primaryButton') {
+    if (ctaStyle?.includes('primary')) {
         ctaTrackingStyle = buttonStyle.primary
-    } else if (ctaStyle === 'outlineButton') {
+    } else if (ctaStyle?.includes('outline')) {
         ctaTrackingStyle = buttonStyle.outline
     }
 
@@ -61,7 +61,6 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) =>
             title={text}
             href={link}
             className={classNames({
-                'btn btn-primary': ctaStyle === 'primaryButton',
                 'btn tw-bg-white tw-text-blurple-400 hover:tw-bg-blurple-400 hover:tw-text-white':
                     ctaStyle === 'primaryButtonWhite',
                 'btn btn-outline-primary': ctaStyle === 'outlineButton',
@@ -86,7 +85,6 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) =>
                 onClick={onClick}
                 type="button"
                 className={classNames({
-                    'btn btn-primary': ctaStyle === 'primaryButton',
                     'btn tw-bg-white tw-text-blurple-400': ctaStyle === 'primaryButtonWhite',
                     'btn btn-outline-primary': ctaStyle === 'outlineButton',
                     'btn btn-outline-primary tw-text-white': ctaStyle === 'outlineButtonWhiteText',
@@ -115,23 +113,18 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) =>
  * This is our CTA Section as defined in our DLS. Please refer to it for specs.
  *
  * @param props - component props
- * @param props.background - background for the section
  * @param props.title - a title for the section
  * @param props.description - a description for the section
- * @param props.centerContent - a boolean to center the content
- * @param props.slimWidth - a boolean for a slim width container
  * @param props.cta1 - cta item 1
  * @param props.cta2 - cta item 2
+ * @param props.cta3 - cta item 3
  */
 export const CtaSection: FunctionComponent<CtaSection> = ({
-    background,
-    title = 'Try Sourcegraph for free today',
-    description = 'Experience code intelligence with a free 30-day trial of Sourcegraph for you and your team.',
-    centerContent = false,
-    slimWidth,
+    title = 'Try Sourcegraph on your code.',
+    description = 'Experience code intelligence with a free 30-day trial for you and your team.',
     cta1 = {
         text: 'Get free trial',
-        ctaStyle: 'primaryButton',
+        ctaStyle: 'primaryButtonWhite',
         link: 'https://signup.sourcegraph.com',
     },
     cta2 = {
@@ -139,68 +132,56 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
         ctaStyle: 'outlineButton',
         link: '/demo',
     },
-}) => (
-    <ContentSection background={background} slimWidth={slimWidth}>
-        <div
-            className={classNames({
-                'tw-max-w-3xl tw-mx-auto tw-text-center': centerContent,
-                'tw-grid tw-grid-cols-5': !centerContent && !slimWidth,
-                'tw-mx-auto tw-grid tw-grid-cols-2 tw-items-center': slimWidth,
-            })}
-        >
+}) => {
+    const windowWidth = useWindowWidth()
+    const lgAndUp = windowWidth > breakpoints.lg
+    
+    return (
+        <div className="tw-bg-violet-700">
             <div
-                className={classNames({
-                    'tw-col-span-full md:tw-col-span-3': !centerContent,
-                })}
+                className="tw-max-w-screen-xl tw-mx-auto tw-bg-[center_left] tw-bg-repeat-y tw-grid tw-items-center tw-grid-cols-12 tw-min-h-[291px] tw-h-full tw-px-sm lg:tw-pl-0 tw-py-3xl"
+                // eslint-disable-next-line react/forbid-dom-props, @typescript-eslint/restrict-template-expressions
+                style={lgAndUp ? { background: `url('${illustration}')` } : undefined}
             >
-                {!slimWidth && <h2 className="tw-mb-sm">{title}</h2>}
-                {slimWidth && <h4 className="tw-mb-sm">{title}</h4>}
-                <p
-                    className={classNames(
-                        'tw-text-lg',
-                        centerContent ? 'tw-mx-auto md:tw-max-w-2xl' : 'md:tw-max-w-lg'
-                    )}
-                >
-                    {description}
-                </p>
-            </div>
+                <div className="tw-col-span-full md:tw-col-span-7 lg:tw-col-span-5 lg:tw-col-start-4">
+                    <h2 className="tw-text-violet-200 tw-mb-sm">{title}</h2>
+                    <p className="tw-text-white tw-text-lg tw-max-w-[80%]">
+                        {description}
+                    </p>
+                </div>
 
-            <div
-                className={classNames({
-                    'tw-inline-flex tw-flex-col sm:tw-flex-row tw-self-center': centerContent,
-                    'tw-col-span-full md:tw-col-span-2 tw-flex tw-flex-col lg:tw-flex-row tw-items-start md:tw-items-center':
-                        !centerContent && !slimWidth,
-                    'lg:tw-justify-end': !centerContent && cta2,
-                    'lg:tw-justify-center': !centerContent && !cta2,
-                    'tw-col-span-full md:tw-col-span-3 md:tw-col-start-9 tw-flex tw-flex-col tw-mt-md md:tw-mt-0':
-                        slimWidth,
-                })}
-            >
-                {cta1 && (
-                    <div className={classNames({ 'tw-mt-sm': !slimWidth, 'sm:tw-mr-sm': centerContent })}>
-                        <Cta {...cta1} />
-                    </div>
-                )}
-
-                {cta2 && typeof cta2 === 'object' && (
-                    <div
-                        className={classNames('tw-mt-sm', {
-                            'lg:tw-ml-md': !centerContent && !slimWidth,
+                <div
+                    className={classNames('tw-col-span-full md:tw-col-span-4 tw-flex tw-flex-col lg:tw-flex-row tw-items-start md:tw-items-center',
+                        {
+                            'lg:tw-justify-end': cta2,
+                            'lg:tw-justify-center': !cta2,
                         })}
-                    >
-                        <Cta
-                            {...{
-                                ...cta2,
-                                ctaStyle:
-                                    background?.includes('dark') ||
-                                    (background?.includes('black') && !cta2.ctaStyle?.includes('outlineButton'))
-                                        ? 'outlineButtonLight'
-                                        : cta2.ctaStyle,
-                            }}
-                        />
-                    </div>
-                )}
+                >
+                    {cta1 && (
+                        <div className="tw-mt-sm">
+                            <Cta
+                                {...cta1}
+                                onClick={() => {
+                                    plausible('ClickedOnFreeTrialCTA')
+
+                                    // TODO: add event logger
+                                }}
+                            />
+                        </div>
+                    )}
+
+                    {cta2 && typeof cta2 === 'object' && (
+                        <div
+                            className="tw-mt-sm lg:tw-ml-md">
+                            <Cta
+                                {...{
+                                    ...cta2,
+                                    ctaStyle: 'outlineButtonLight'
+                                }} />
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
-    </ContentSection>
-)
+    )
+}
