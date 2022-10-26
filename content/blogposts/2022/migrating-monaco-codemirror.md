@@ -20,8 +20,6 @@ We recently migrated Sourcegraph.com away from Monaco, the code editor component
 
 ![GitHub Star history graph of Monaco, Code Mirror 5 and Code Mirror 6](https://storage.googleapis.com/sourcegraph-assets/blog/codemirror-vs-monaco/image5.png)
 
-**Monaco overtook CodeMirror5, but the new CodeMirror6 is growing quickly**
-
 Monaco is a popular choice if you need to embed a code editor into a browser. It was working well enough for most of our needs, and as it’s maintained by Microsoft and integral to VS Code, we knew we’d be able to rely on it for the foreseeable future, so why did we switch?
 
 **TL;DR**
@@ -41,9 +39,6 @@ As a search company, you might wonder why we even need a code editor. If you vis
 
 
 ![A screenshot of the Sourcegraph search input](https://storage.googleapis.com/sourcegraph-assets/blog/codemirror-vs-monaco/image6.png)
-
-
-**A simple text input? But it has auto-complete, syntax highlighting, tooltips, and a lot more.**
 
 But there are many features hidden in this bar that you are probably used to from your IDE.
 
@@ -89,9 +84,6 @@ If you’re interested in the details, we go into each point in depth below.
 
 
 ![A bar chart showing 6MB with Monaco compared to 3.4MB with CodeMirror](https://storage.googleapis.com/sourcegraph-assets/blog/codemirror-vs-monaco/image2.jpg)
-
-
-**The amount of JavaScript downloaded on our Search page with Monaco and CodeMirror**
 
 Over time, this code grew to 6MB. Even with modern web browsers and advanced caching techniques, this can hurt performance. Even though we optimized our Monaco bundle to remove features we weren’t using, just Monaco itself still amounted to a 2.4 MB download — which is 40% of all the JavaScript for our search page.
 
@@ -196,5 +188,5 @@ CodeMirror states on its website:
 
 > If you are using CodeMirror commercially, there is a social (but no legal) expectation that you help fund its maintenance.
 
-Sourcegraph has followed this social expectation and donated monthly to CodeMirror since we started using it. As our use of it expands, we’re happy for this extra value to reflect in our monthly donation increasing.
+Sourcegraph has followed this social expectation and donated monthly to CodeMirror since we started using it.
 
