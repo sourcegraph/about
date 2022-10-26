@@ -16,27 +16,27 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const threeUpTextItems = [
     {
-        subtitle: 'Updated branding',
+        subtitle: '5 minutes',
         description:
-            'Updated corporate branding across all digital assets with 100% confidence that nothing was missed.',
+            'Nutanix was able to see where JMSAppender existed, fix it, and send out a release in less than 5 minutes.',
     },
     {
-        subtitle: '100% complete',
+        subtitle: '4 days',
         description:
-            'Code Insights dashboards help Neo Financial ensure that large scale projects reach 100% completion before being declared “done.”',
+            'Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.',
     },
     {
-        subtitle: 'Attract top talent',
-        description: 'Neo Financial is able to attract and retain top engineering talent by providing a culture, and tools like Sourcegraph, that focus on improving the developer experience.',
+        subtitle: '100%',
+        description: 'Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.',
     },
 ]
 
 export const CaseStudy: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Neo Financial improves the developer experience with Sourcegraph',
+            title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph',
             description:
-                'Neo Financial case study. Learn how Neo Financial attacts and retains top engineering talent by providing a culture, and tools like Sourcegraph, that focus on improving the developer experience.',
+                'Nutanix case study. Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their code base.',
         }}
         hero={
             <Hero
@@ -45,67 +45,108 @@ export const CaseStudy: FunctionComponent = () => (
                     link: '/case-studies',
                 }}
                 variant="venusCode"
-                title="Neo Financial improves the developer experience with Sourcegraph"
+                title={'Nutanix fixed Log4j quickly and \n confidently with Sourcegraph'}
                 displayUnderNav={true}
             />
         }
     >
-       
+        <NewCaseStudyLayout customer="Nutanix">
+            <ContentSection background="white" className="tw-flex tw-justify-center">
+                <Blockquote
+                    inline={true}
+                    quote="Sourcegraph was the right product at the right time."
+                    author="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
+                    logo={{
+                        src: '/external-logos/nutanix-logo.svg',
+                        alt: 'Nutanix',
+                        href: 'https://nutanix.com',
+                    }}
+                />
+            </ContentSection>
+
             <ContentSection>
                 <UseChallengeSolutionResults
                     useCases={[
                         {
-                            text: 'Code reuse',
-                            href: '/use-cases/code-reuse',
+                            text: 'Find and fix security vulnerabilities quickly across the codebase.',
+                            href: '/use-cases/code-security',
                         },
                     ]}
                     challenges={[
-                        { text: 'Unable to understand their codebase and efficiently find code to reuse with code host’s native search functionality.' },
-                        { text: 'Inability to search branches or tags at scale required manual effort and wasted time.' },
-                        { text: 'Local, unstructured searches through repositories were time consuming and weren\'t always successful.' },
+                        { text: 'Inability to efficiently find all the instances of Log4j in their large codebase.' },
+                        { text: 'Lack of code-level clarity that vulnerabilities were completely resolved.' },
+                        { text: 'Uncertainty about the scope and impact of the Log4j vulnerability.' },
                     ]}
                     solutions={[
-                        { text: 'Search across commits quickly and make changes with confidence that nothing is missed.  ' },
-                        { text: 'Track and manage codebase maintenance with Code Insights and share visual dashboards with relevant teams and stakeholders.' },
+                        { text: 'Able to quickly and efficiently find every instance of the Log4j vulnerability.' },
+                        { text: 'Full confidence that all Log4j-vulnerable code was identified and resolved.' },
                         {
-                            text: 'Solve challenges faster with an easy and intuitive interface for code search.',
+                            text: 'Able to quickly validate that no known vulnerabilities exist in the codebase prior to each release.',
                         },
                     ]}
                     results={[
                         {
-                            text: 'Updated corporate branding across all digital assets with 100% confidence that nothing was missed.',
+                            text: 'Nutanix was able to see where JMSAppender existed, fix it, and send out a release in less than 5 minutes.',
                         },
                         {
-                            text: 'Code Insights dashboards help Neo Financial ensure that large scale projects reach 100% completion before being declared “done.”',
+                            text: 'Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability in under 4 days.',
                         },
                         {
-                            text: 'Neo Financial is able to attract and retain top engineering talent by providing a culture, and tools like Sourcegraph, that focus on improving the developer experience.',
+                            text: 'Nutanix was able to identify every instance of Log4j across its sprawling codebase with 100% confidence.',
                         },
                     ]}
                 />
             </ContentSection>
-                   
+
             <ContentSection background="white" slimWidth={true}>
                 <div className="tw-mx-auto tw-pt-5xl">
                     <p className="tw-pt-3xl sm:tw-mt-0 tw-mt-5xl">
-                        Before Sourcegraph, tracking libraries manually and searching in GitHub made the process of finding code difficult and time-consuming. To avoid unnecessary duplication of code or to see how a service was previously set up, developers need to look at existing code–essentially, searching for patterns. Unfortunately, manual pattern search with their code host’s native search functionality wasted valuable time that engineering teams could use to address other challenges.
+                        As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the
+                        complexity involved in securing the multitude of applications and solutions required to power
+                        such a large organization. “Security is something that we care about intensely here at Nutanix,”
+                        Jon said, “because it’s part of our bedrock. It's why customers like us, and we have to take it
+                        seriously.”
+                    </p>
+                    <h3 className="mt-6 mb-4 max-w-600">Log4j: The vulnerability that rocked an industry</h3>
+                    <p>
+                        <b>In December of 2021,</b> software companies around the world discovered that Log4j, an
+                        open-source logging library bundled in many software packages, contained significant
+                        vulnerabilities, one of which was a{' '}
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://logging.apache.org/log4j/2.x/security.html"
+                            title="10/10 on the CVSS scale"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            10/10 on the CVSS scale
+                        </a>
+                        {'. '}
+                        The Federal Trade Commission called the library “
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2022/01/ftc-warns-companies-remediate-log4j-security-vulnerability"
+                            title="ubiquitous"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            ubiquitous
+                        </a>
+                        .”
                     </p>
                     <p>
-                        Neo Financial’s engineering team decided to look for a better solution. That’s when they discovered Sourcegraph. 
+                        Jon discovered that the offending module recurred throughout their build. “The more we dug,” Jon
+                        explained, “the more we realized this bug was everywhere and nowhere at the same time.”
                     </p>
                     <p>
-                        Implementing Sourcegraph gave everyone in DevOps access to the new tooling. According to Ronnie Magatti, Principal Software Architect at Neo Financial, “adoption has basically been organic. More senior people are using it, but then someone else looks at it, like ‘oh that’s what you can do? Okay, that’s pretty cool’ and then they start using it too.” 
-                    </p>
-                    <p>
-                    <h3 className="mt-6 mb-4 max-w-600">Acting quickly with Sourcegraph</h3>
-                    <p>
-                        Recently, Neo Financial was rebranding their savings accounts to be called Money Accounts. The engineering team needed to quickly and thoroughly identify all instances of the previous name before making the update. Using Sourcegraph, Neo Financial mapped out all locations that referenced the old branding. They were able to update the branding in a fraction of the time it would have taken to manually search and update and the team had full confidence that they hadn’t missed any instances of the old branding.
-                    </p>
-                    <p>
-                        With Sourcegraph, Neo Financial engineers are able to streamline searching and understanding their codebase. This process improvement ultimately saves DevOps teams time and resources–something that Ronnie believes is happening at Neo Financial because of Sourcegraph. Incremental improvements to developer experience and productivity can add up to significant results over time.
-                    </p>
-                    <p>
-                        With this added clarity, the engineering team knows they can accomplish more in less time. “I think a lot of it is the developers’ subjective perception of time…With Sourcegraph, developers are more productive and it’s clear that every team is getting 1% better every day,” Ronnie said. 
+                        Nutanix moved quickly, despite having multiple build and artifact management systems, as well as
+                        a large monorepo with many component branches and hundreds of git repositories. In under four
+                        days, Nutanix was able to deliver patches to its customers that fully remediated the Log4j
+                        vulnerability.
                     </p>
 
                     <h3 className="mt-6 mb-4 max-w-600">
