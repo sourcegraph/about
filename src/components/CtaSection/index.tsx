@@ -96,7 +96,7 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) =>
  */
 export const CtaSection: FunctionComponent<CtaSection> = ({
     title = 'Try Sourcegraph on your code.',
-    description = 'Experience code intelligence with a free 30-day trial for you and your team.',
+    description = 'Experience code intelligence with a free 30-day trial for you and your team, or search millions of open source repositories.',
     cta1 = {
         text: 'Get free trial',
         ctaStyle: 'primaryButtonWhite',
