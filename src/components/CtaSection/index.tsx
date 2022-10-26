@@ -12,9 +12,7 @@ import illustration from './illustration.svg'
 interface Cta {
     text: string
     icon?: ReactNode
-    ctaStyle?:
-        | 'primaryButtonWhite'
-        | 'outlineButtonLight'
+    ctaStyle?: 'primaryButtonWhite' | 'outlineButtonLight'
     link?: string
     onClick?: () => void
 }
@@ -103,13 +101,13 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
         text: 'Get free trial',
         ctaStyle: 'primaryButtonWhite',
         link: 'https://signup.sourcegraph.com',
-        onClick: () => plausible('ClickedOnFreeTrialCTA')
+        onClick: () => plausible('ClickedOnFreeTrialCTA'),
     },
     cta2 = {
         text: 'Search code',
         ctaStyle: 'outlineButtonLight',
         link: 'https://sourcegraph.com',
-        onClick: () => plausible('ClickedOnSearchCodeCTA')
+        onClick: () => plausible('ClickedOnSearchCodeCTA'),
     },
     cta3 = (
         <p className="tw-mt-xs tw-ml-sm">
@@ -132,11 +130,11 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                 </a>
             </Link>
         </p>
-    )
+    ),
 }) => {
     const windowWidth = useWindowWidth()
     const lgAndUp = windowWidth > breakpoints.lg
-    
+
     return (
         <>
             <div className="tw-bg-violet-700">
@@ -147,17 +145,17 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                 >
                     <div className="tw-col-span-full md:tw-col-span-7 lg:tw-col-span-5 lg:tw-col-start-4">
                         <h2 className="tw-text-violet-200 tw-mb-sm">{title}</h2>
-                        <p className="tw-text-white tw-text-lg tw-max-w-2xl">
-                            {description}
-                        </p>
+                        <p className="tw-text-white tw-text-lg tw-max-w-2xl">{description}</p>
                     </div>
 
                     <div
-                        className={classNames('tw-col-span-full md:tw-col-span-4 tw-flex tw-flex-col lg:tw-flex-row tw-items-start md:tw-items-center',
+                        className={classNames(
+                            'tw-col-span-full md:tw-col-span-4 tw-flex tw-flex-col lg:tw-flex-row tw-items-start md:tw-items-center',
                             {
                                 'lg:tw-justify-end': cta2,
                                 'lg:tw-justify-center': !cta2,
-                            })}
+                            }
+                        )}
                     >
                         {cta1 && (
                             <div className="tw-mt-sm">
