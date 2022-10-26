@@ -31,6 +31,10 @@ changelogItems:
     category: Admin
 ---
 
+<Alert>
+  <strong>Update as of October 26:</strong> We have identified a bug in Sourcegraph 4.1 that can cause upgrades from earlier versions to fail. We are working to fix this in an upcoming patch. For now, we recommend running Sourcegraph 4.0.
+</Alert>
+
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 
 #### Server-side Batch Changes now supports file mounts and organization namespaces
