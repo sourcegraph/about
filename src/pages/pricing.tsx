@@ -265,16 +265,15 @@ const PricingPage: FunctionComponent = () => {
             </div>
 
             <CtaSection
-                background="mars"
                 title="Free for small teams"
-                description="Small teams can use a limited version of Sourcegraph’s code intelligence platform for free to search personal and open source projects. The free version can only be deployed self-hosted and supports one code host integration."
+                description="Small teams can use a limited version of Sourcegraph’s code intelligence platform for free to search personal and open source projects. The free version can only be self-hosted and supports one code host integration."
                 cta1={{
                     text: 'Deploy',
                     link: 'https://docs.sourcegraph.com/#self-hosted',
-                    ctaStyle: 'primaryButton',
+                    ctaStyle: 'primaryButtonWhite',
                 }}
                 cta2={false}
-                centerContent={true}
+                cta3={false}
             />
 
             <ContentSection className="tw-grid tw-grid-cols-5">

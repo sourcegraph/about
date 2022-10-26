@@ -346,11 +346,7 @@ const CodeReusePage: FunctionComponent = () => (
 
         <ResourceList items={blogResourceItems} />
 
-        <CtaSection
-            background="white"
-            title="Get started with Sourcegraph"
-            description="Find, fix, and track vulnerable code quickly across your entire codebase to improve code security."
-        />
+        <CtaSection />
     </Layout>
 )
 

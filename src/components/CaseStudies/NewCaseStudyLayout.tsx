@@ -18,15 +18,7 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, childre
         <>
             {children}
 
-            <CtaSection
-                background="venusCode"
-                centerContent={true}
-                cta2={{
-                    text: 'Request a demo',
-                    ctaStyle: 'outlineButton',
-                    link: '/demo',
-                }}
-            />
+            <CtaSection />
 
             <ContentSection background="white">
                 <h2 className="tw-mb-6">Explore other case studies</h2>

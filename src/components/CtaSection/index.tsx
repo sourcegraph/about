@@ -14,9 +14,7 @@ interface Cta {
     icon?: ReactNode
     ctaStyle?:
         | 'primaryButtonWhite'
-        | 'outlineButton'
         | 'outlineButtonLight'
-        | 'outlineButtonWhiteText'
     link?: string
     onClick?: () => void
 }
@@ -26,7 +24,7 @@ interface CtaSection {
     description?: string
     cta1?: Cta
     cta2?: Cta | boolean
-    cta3?: string
+    cta3?: ReactNode | boolean
 }
 
 /**
@@ -63,8 +61,6 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) =>
             className={classNames({
                 'btn tw-bg-white tw-text-blurple-400 hover:tw-bg-blurple-400 hover:tw-text-white':
                     ctaStyle === 'primaryButtonWhite',
-                'btn btn-outline-primary': ctaStyle === 'outlineButton',
-                'btn btn-outline-primary tw-text-white': ctaStyle === 'outlineButtonWhiteText',
                 'btn tw-text-white tw-border-white hover:tw-bg-blurple-400 hover:tw-border-blurple-400':
                     ctaStyle === 'outlineButtonLight',
             })}
@@ -86,8 +82,6 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) =>
                 type="button"
                 className={classNames({
                     'btn tw-bg-white tw-text-blurple-400': ctaStyle === 'primaryButtonWhite',
-                    'btn btn-outline-primary': ctaStyle === 'outlineButton',
-                    'btn btn-outline-primary tw-text-white': ctaStyle === 'outlineButtonWhiteText',
                     'btn tw-text-white tw-border-white hover:tw-bg-blurple-400 hover:tw-border-blurple-400':
                         ctaStyle === 'outlineButtonLight',
                     'tw-text-blurple-400 tw-font-bold': !ctaStyle,
@@ -126,62 +120,73 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
         text: 'Get free trial',
         ctaStyle: 'primaryButtonWhite',
         link: 'https://signup.sourcegraph.com',
+        onClick: () => plausible('ClickedOnFreeTrialCTA')
     },
     cta2 = {
         text: 'Request a demo',
-        ctaStyle: 'outlineButton',
+        ctaStyle: 'outlineButtonLight',
         link: '/demo',
+        onClick: () => plausible('ClickedOnRequestDemoCTA')
     },
+    cta3 = (
+        <p className="tw-mt-xs tw-ml-sm">
+            Want to deploy yourself?{' '}
+            <a
+                href="https://docs.sourcegraph.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => plausible('ClickedOnSelfHostedCTA')}
+                title="Sourcegraph self-hosted solution"
+                data-button-style={buttonStyle.text}
+                data-button-location={buttonLocation.trySourcegraph}
+                data-button-type="cta"
+            >
+                Try our self-hosted solution.
+            </a>
+        </p>
+    )
 }) => {
     const windowWidth = useWindowWidth()
     const lgAndUp = windowWidth > breakpoints.lg
     
     return (
-        <div className="tw-bg-violet-700">
-            <div
-                className="tw-max-w-screen-xl tw-mx-auto tw-bg-[center_left] tw-bg-repeat-y tw-grid tw-items-center tw-grid-cols-12 tw-min-h-[291px] tw-h-full tw-px-sm lg:tw-pl-0 tw-py-3xl"
-                // eslint-disable-next-line react/forbid-dom-props, @typescript-eslint/restrict-template-expressions
-                style={lgAndUp ? { background: `url('${illustration}')` } : undefined}
-            >
-                <div className="tw-col-span-full md:tw-col-span-7 lg:tw-col-span-5 lg:tw-col-start-4">
-                    <h2 className="tw-text-violet-200 tw-mb-sm">{title}</h2>
-                    <p className="tw-text-white tw-text-lg tw-max-w-[80%]">
-                        {description}
-                    </p>
-                </div>
-
+        <>
+            <div className="tw-bg-violet-700">
                 <div
-                    className={classNames('tw-col-span-full md:tw-col-span-4 tw-flex tw-flex-col lg:tw-flex-row tw-items-start md:tw-items-center',
-                        {
-                            'lg:tw-justify-end': cta2,
-                            'lg:tw-justify-center': !cta2,
-                        })}
+                    className="tw-max-w-screen-xl tw-mx-auto tw-bg-[center_left] tw-bg-repeat-y tw-grid tw-items-center tw-grid-cols-12 tw-min-h-[291px] tw-h-full tw-px-sm lg:tw-pl-0 tw-py-3xl"
+                    // eslint-disable-next-line react/forbid-dom-props, @typescript-eslint/restrict-template-expressions
+                    style={lgAndUp ? { background: `url('${illustration}')` } : undefined}
                 >
-                    {cta1 && (
-                        <div className="tw-mt-sm">
-                            <Cta
-                                {...cta1}
-                                onClick={() => {
-                                    plausible('ClickedOnFreeTrialCTA')
+                    <div className="tw-col-span-full md:tw-col-span-7 lg:tw-col-span-5 lg:tw-col-start-4">
+                        <h2 className="tw-text-violet-200 tw-mb-sm">{title}</h2>
+                        <p className="tw-text-white tw-text-lg tw-max-w-2xl">
+                            {description}
+                        </p>
+                    </div>
 
-                                    // TODO: add event logger
-                                }}
-                            />
-                        </div>
-                    )}
+                    <div
+                        className={classNames('tw-col-span-full md:tw-col-span-4 tw-flex tw-flex-col lg:tw-flex-row tw-items-start md:tw-items-center',
+                            {
+                                'lg:tw-justify-end': cta2,
+                                'lg:tw-justify-center': !cta2,
+                            })}
+                    >
+                        {cta1 && (
+                            <div className="tw-mt-sm">
+                                <Cta {...cta1} />
+                            </div>
+                        )}
 
-                    {cta2 && typeof cta2 === 'object' && (
-                        <div
-                            className="tw-mt-sm lg:tw-ml-md">
-                            <Cta
-                                {...{
-                                    ...cta2,
-                                    ctaStyle: 'outlineButtonLight'
-                                }} />
-                        </div>
-                    )}
+                        {cta2 && typeof cta2 === 'object' && (
+                            <div className="tw-mt-sm lg:tw-ml-md">
+                                <Cta {...cta2} />
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
-        </div>
+
+            {cta3}
+        </>
     )
 }

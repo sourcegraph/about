@@ -578,10 +578,7 @@ const CodeInsightsPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <CtaSection
-            title="Get started with Code Insights"
-            description="Create a code insight in 60 seconds and get historical data for previously untracked metrics — data backfills automatically."
-        />
+        <CtaSection />
 
         <ResourceList items={blogResourceItems} title="Learn More" />
     </Layout>

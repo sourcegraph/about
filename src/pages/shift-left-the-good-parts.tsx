@@ -286,7 +286,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                     by using tools that enable the developer to take full charge of shipping a new feature or bug fix.
                 </p>
 
-                <CtaSection centerContent={true} />
+                <CtaSection />
             </div>
         </ContentSection>
 

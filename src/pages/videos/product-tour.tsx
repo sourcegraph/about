@@ -20,12 +20,7 @@ const Webinar: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <CtaSection
-                background="venusCode"
-                title="Get started with Sourcegraph"
-                description="Want to see Sourcegraph in action? Schedule time with a Sourcegraph expert or Try Sourcegraph for free."
-                centerContent={true}
-            />
+            <CtaSection />
         </Layout>
     )
 }

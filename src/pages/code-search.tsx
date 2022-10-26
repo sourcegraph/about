@@ -246,12 +246,7 @@ export const CodeSearchPage: FunctionComponent = () => (
 
         <IntegrationsSection />
 
-        <CtaSection
-            background="lightNebulousMars"
-            title="Get started with Code Search"
-            description="Connect your code hosts and experience universal code search."
-            centerContent={true}
-        />
+        <CtaSection />
 
         <ResourceList items={blogResources} title="Learn More" />
     </Layout>
