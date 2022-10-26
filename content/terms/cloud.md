@@ -259,12 +259,14 @@ If you are an Organization established in the European Economic Area, the United
 </span>
 
 <span className="tw-text-gray-400">
-  *__Short version__: You may shut down your Account any time. We may terminate the agreement at any time, at which point your right to use the Services will immediately expire.*
+  *__Short version__: We offer committed terms for paid subscriptions and termination for convenience for unpaid subscriptions.*
 </span>
 
 7.1 **Subscription Period**. Unless otherwise stated in an Order Form, this Agreement starts on the earlier of the date on which you: (a) agree to the terms and conditions of this Agreement; or (b) first register for an Account and will continue in effect until either you or we terminate it (the “Subscription Period” or “Term”). Unless otherwise stated in an Order Form, your subscription will automatically renew for one (1) year terms at the then-current fees and your credit card account (or other payment method account) will be charged without further authorization from you, absent sixty (60) day written notice of non-renewal prior to the end of your current subscription term.
 
 7.2 **Termination for Breach**. If a party fails to cure a material breach of the Agreement within thirty (30) days after receiving written notice of breach, the other party may then terminate the Agreement within the following thirty (30) days. We will refund you any prepaid, unused fees.
+
+7.3 **Termination for Convenience**. Either party may terminate a free subscription for any reason or for no reason. 
 
 7.4 **Effect of Termination; Survival**. Upon termination of this Agreement, you may no longer use the Services, and if any fees were owed prior to termination, you must pay those fees immediately. Any provisions of this Agreement that, by their terms or their nature, should survive the termination of this Agreement shall so survive. For purposes of clarity, your right to use the Services will not survive any termination of this Agreement. Following termination of this Agreement, Sourcegraph will remove your Content from the Services.
 
