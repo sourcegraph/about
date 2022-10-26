@@ -63,7 +63,7 @@ export const CaseStudy: FunctionComponent = () => (
                     }}
                 />
             </ContentSection>
-        <NewCaseStudyLayout customer="Neo Financial">
+       
             <ContentSection>
                 <UseChallengeSolutionResults
                     useCases={[
@@ -97,11 +97,13 @@ export const CaseStudy: FunctionComponent = () => (
                     ]}
                 />
             </ContentSection>
-                    </p>
-                    <h3 className="mt-6 mb-4 max-w-600">Improving the developer experience with Sourcegraph </h3>
-                    <p>
+                   
             <ContentSection background="white" slimWidth={true}>
                 <div className="tw-mx-auto tw-pt-5xl">
+                 </p>
+                 </p>
+                    <h3 className="mt-6 mb-4 max-w-600">Improving the developer experience with Sourcegraph </h3>
+                    <p>
                     <p className="tw-pt-3xl sm:tw-mt-0 tw-mt-5xl">
                         Before Sourcegraph, tracking libraries manually and searching in GitHub made the process of finding code difficult and time-consuming. To avoid unnecessary duplication of code or to see how a service was previously set up, developers need to look at existing code–essentially, searching for patterns. Unfortunately, manual pattern search with their code host’s native search functionality wasted valuable time that engineering teams could use to address other challenges.
                      </p>
