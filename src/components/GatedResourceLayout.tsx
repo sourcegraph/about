@@ -103,7 +103,9 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                             <div key={speaker.name} className="tw-pl-0 col-lg-5 col-md-6 col-12 lg:tw-pr-5xl">
                                 <img className="tw-py-sm" width="140" src={speaker.img} alt={speaker.name} />
                                 <h5>{speaker.name}</h5>
-                                <figcaption className="tw-my-xxs tw-text-gray-400 max-w-md-250">{speaker.title}</figcaption>
+                                <figcaption className="tw-my-xxs tw-text-gray-400 max-w-md-250">
+                                    {speaker.title}
+                                </figcaption>
                                 <p>{speaker.bio}</p>
                             </div>
                         ))}

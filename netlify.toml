@@ -155,6 +155,11 @@
   from = "/press-release/*"
   to = "/press/:splat"
 
+[[redirects]]
+  from = "/press/big-code-survey-2020"
+  to = "/blog/big-code-survey-2020"
+
+
 # Due to our collocated directory for the homepage
 [[redirects]]
   from = "/home/*"

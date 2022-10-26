@@ -38,7 +38,7 @@ export const navLinks: NavLink[] = [
         section: 'Resources',
         items: [
             {
-                title: 'All Resources',
+                title: 'All resources',
                 href: '/resources',
             },
             {
@@ -50,44 +50,40 @@ export const navLinks: NavLink[] = [
                 href: 'https://learn.sourcegraph.com/',
             },
             {
-                title: 'Dev Tool Time',
-                href: 'https://www.youtube.com/playlist?list=PL6zLuuRVa1_iDEP4EicZ8972RgyccCRGF',
-            },
-            {
-                title: 'Sourcegraph Podcast',
+                title: 'Podcast',
                 href: '/podcast',
             },
             {
-                title: 'Case Studies',
+                title: 'Case studies',
                 href: '/case-studies',
             },
         ],
     },
     {
-        section: 'Use Cases',
+        section: 'Use cases',
         items: [
             {
-                title: 'All Use Cases',
+                title: 'All use cases',
                 href: '/use-cases',
             },
             {
-                title: 'Code Security',
+                title: 'Code security',
                 href: '/use-cases/code-security',
             },
             {
-                title: 'Developer Onboarding',
+                title: 'Developer onboarding',
                 href: '/use-cases/onboarding',
             },
             {
-                title: 'Incident Response',
+                title: 'Incident response',
                 href: '/use-cases/incident-response',
             },
             {
-                title: 'Code Reuse',
+                title: 'Code reuse',
                 href: '/use-cases/code-reuse',
             },
             {
-                title: 'Code Health',
+                title: 'Code health',
                 href: '/use-cases/code-health',
             },
         ],
@@ -129,7 +125,7 @@ export const footerLinks: NavLink[] = [
                 href: '/pricing',
             },
             {
-                title: 'Sourcegraph overview',
+                title: 'Sourcegraph overview (PDF)',
                 href: '/handouts/Sourcegraph-Overview.pdf',
             },
         ],
@@ -142,12 +138,12 @@ export const footerLinks: NavLink[] = [
                 href: '/blog',
             },
             {
-                title: 'Changelog',
-                href: 'https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md',
+                title: 'Docs',
+                href: 'https://docs.sourcegraph.com',
             },
             {
-                title: 'Documentation',
-                href: 'https://docs.sourcegraph.com',
+                title: 'Changelog',
+                href: 'https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md',
             },
             {
                 title: 'Learn',
@@ -156,10 +152,6 @@ export const footerLinks: NavLink[] = [
             {
                 title: 'Podcast',
                 href: '/podcast',
-            },
-            {
-                title: 'Dev tools quiz',
-                href: '/dev-tools-quiz',
             },
             {
                 title: 'Community',
@@ -175,7 +167,7 @@ export const footerLinks: NavLink[] = [
                 href: '/about',
             },
             {
-                title: "Careers - We're Hiring!",
+                title: 'Careers',
                 href: '/jobs',
             },
             {
@@ -185,10 +177,6 @@ export const footerLinks: NavLink[] = [
             {
                 title: 'Handbook',
                 href: 'https://handbook.sourcegraph.com',
-            },
-            {
-                title: 'News',
-                href: '/news',
             },
             {
                 title: 'Sourcegraph strategy',
@@ -212,6 +200,11 @@ export const socialLinks: NavLink = {
             icon: <TwitterIcon />,
         },
         {
+            title: 'Discord',
+            href: 'https://discord.gg/s2qDtYGnAE',
+            icon: <DiscordIcon size={24} />,
+        },
+        {
             title: 'LinkedIn',
             href: 'https://www.linkedin.com/company/4803356/',
             icon: <LinkedinIcon />,
@@ -220,11 +213,6 @@ export const socialLinks: NavLink = {
             title: 'YouTube',
             href: 'https://www.youtube.com/c/Sourcegraph/featured',
             icon: <YouTubeIcon />,
-        },
-        {
-            title: 'Discord',
-            href: 'https://discord.gg/s2qDtYGnAE',
-            icon: <DiscordIcon size={24} />,
         },
         {
             title: 'Spotify',

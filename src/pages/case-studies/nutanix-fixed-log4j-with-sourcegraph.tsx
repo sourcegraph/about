@@ -276,20 +276,24 @@ export const CaseStudy: FunctionComponent = () => (
                     <div className="tw-mt-5xl">
                         <StaffSpotlight
                             customer="Nutanix"
-                            about={<>
-                                <a
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    href="https://nutanix.com"
-                                    title="Nutanix"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Nutanix
-                                </a>
-                                {' '}has 20,000 customers, an annual revenue of nearly $1.394 billion, and over 6,000 employees. Organizations around the world rely on Nutanix software as a single platform to manage any app at any scale for their hybrid multicloud environments.
-                            </>}
+                            about={
+                                <>
+                                    <a
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="https://nutanix.com"
+                                        title="Nutanix"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
+                                        Nutanix
+                                    </a>{' '}
+                                    has 20,000 customers, an annual revenue of nearly $1.394 billion, and over 6,000
+                                    employees. Organizations around the world rely on Nutanix software as a single
+                                    platform to manage any app at any scale for their hybrid multicloud environments.
+                                </>
+                            }
                             staff={[
                                 {
                                     image: '/case-studies/jon-kohler.png',
