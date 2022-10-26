@@ -75,23 +75,6 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) =>
     )
     let cta = linkElement
 
-    if (onClick) {
-        cta = (
-            <button
-                onClick={onClick}
-                type="button"
-                className={classNames({
-                    'btn tw-bg-white tw-text-blurple-400': ctaStyle === 'primaryButtonWhite',
-                    'btn tw-text-white tw-border-white hover:tw-bg-blurple-400 hover:tw-border-blurple-400':
-                        ctaStyle === 'outlineButtonLight',
-                    'tw-text-blurple-400 tw-font-bold': !ctaStyle,
-                })}
-            >
-                {textAndIcon}
-            </button>
-        )
-    }
-
     if (link?.includes('http')) {
         cta = (
             <Link href={link} passHref={true}>
@@ -123,26 +106,31 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
         onClick: () => plausible('ClickedOnFreeTrialCTA')
     },
     cta2 = {
-        text: 'Request a demo',
+        text: 'Search code',
         ctaStyle: 'outlineButtonLight',
-        link: '/demo',
-        onClick: () => plausible('ClickedOnRequestDemoCTA')
+        link: 'https://sourcegraph.com',
+        onClick: () => plausible('ClickedOnSearchCodeCTA')
     },
     cta3 = (
         <p className="tw-mt-xs tw-ml-sm">
             Want to deploy yourself?{' '}
-            <a
-                href="https://docs.sourcegraph.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => plausible('ClickedOnSelfHostedCTA')}
-                title="Sourcegraph self-hosted solution"
-                data-button-style={buttonStyle.text}
-                data-button-location={buttonLocation.trySourcegraph}
-                data-button-type="cta"
-            >
-                Try our self-hosted solution.
-            </a>
+            <Link href="https://docs.sourcegraph.com" passHref={true}>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => plausible('ClickedOnSelfHostedCTA')}
+                    onKeyDown={() => plausible('ClickedOnSelfHostedCTA')}
+                    tabIndex={0}
+                    role="button"
+                    title="Sourcegraph self-hosted solution"
+                    data-button-style={buttonStyle.text}
+                    data-button-location={buttonLocation.trySourcegraph}
+                    data-button-type="cta"
+                >
+                    Try our self-hosted solution.
+                </a>
+            </Link>
         </p>
     )
 }) => {
