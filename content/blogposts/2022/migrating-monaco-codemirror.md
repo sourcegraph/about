@@ -71,7 +71,7 @@ Many of the problems we had with Monaco were not deal breakers on their own, whi
 
 
 * **Size**: Monaco pushed the amount of JavaScript code that we download on our [search page](https://sourcegraph.com/search) to 6MB.
-* **Single-line editor: **Unlike most IDEs, our search input is a single-line input… most of the time.
+* **Single-line editor**: Unlike most IDEs, our search input is a single-line input… most of the time.
 * **CSS integration**: To customize the look of Monaco, we had to hard-code hex color codes into our JavaScript instead of being able to use our site-wide CSS classes and variables.
 * **Global configuration**: It’s tricky to render several Monaco instances per page, each with a slightly different configuration.
 * **Placeholder text**: There has been a long-standing open issue with Monaco requesting a feature to enable a placeholder or default value.
