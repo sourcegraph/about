@@ -1,6 +1,6 @@
 ---
 title: 'Migrating from Monaco Editor to CodeMirror'
-description: 'We migrated our search input from Monaco to CodeMirror6. It's been a delightful experience and we are now migrating our Notebooks and other functionality too.'
+description: We migrated our search input from Monaco to CodeMirror6. It's been a delightful experience and we are now migrating our Notebooks and other functionality too.
 authors:
   - name: Justin Dorfman
     url: https://twitter.com/jdorfman
