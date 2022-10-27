@@ -45,7 +45,7 @@ export const CaseStudy: FunctionComponent = () => (
                     link: '/case-studies',
                 }}
                 variant="venusCode"
-                title={'Neo Financial improves the developer experience with Sourcegraph'}
+                title={'Nutanix fixed Log4j quickly and \n confidently with Sourcegraph'}
                 displayUnderNav={true}
             />
         }
