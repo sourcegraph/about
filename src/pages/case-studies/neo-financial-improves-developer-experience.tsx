@@ -131,8 +131,9 @@ export const CaseStudy: FunctionComponent = () => (
 
                     <div className="tw-py-5xl">
                         <Blockquote
-                            quote=“I want to put Code Insights on our TV in the kitchen to show all the insights dashboards so that people will just pass by and remember them.”
-                            author="Ronnie Magatti"
+                            quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
+                            better than having to say, 'Well, boss, I think we got it all.'"
+                            author="Jon Kohler"
                             largeText={true}
                         />
                     </div>
