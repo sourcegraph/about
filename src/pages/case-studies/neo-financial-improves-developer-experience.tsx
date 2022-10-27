@@ -50,7 +50,7 @@ export const CaseStudy: FunctionComponent = () => (
             />
         }
     >
-        <NewCaseStudyLayout customer="Neo Financial">
+        <NewCaseStudyLayout customer="Nutanix">
             <ContentSection background="white" className="tw-flex tw-justify-center">
                 <Blockquote
                     inline={true}
@@ -58,8 +58,8 @@ export const CaseStudy: FunctionComponent = () => (
                     author="Ronnie Magatti, Team Lead & Principal Software Engineer at Neo Financial"
                     logo={{
                         src: '/external-logos/nutanix-logo.svg',
-                        alt: 'Neo Financial',
-                        href: 'https://neofinancial.com',
+                        alt: 'Nutanix',
+                        href: 'https://nutanix.com',
                     }}
                 />
             </ContentSection>
