@@ -108,14 +108,10 @@ export const CaseStudy: FunctionComponent = () => (
                        Recently, Neo Financial was rebranding their savings accounts to be called Money Accounts. The engineering team needed to quickly and thoroughly identify all instances of the previous name before making the update. Using Sourcegraph, Neo Financial mapped out all locations that referenced the old branding. They were able to update the branding in a fraction of the time it would have taken to manually search and update and the team had full confidence that they hadn’t missed any instances of the old branding.
                     </p>
                     <p>
-                        Jon discovered that the offending module recurred throughout their build. “The more we dug,” Jon
-                        explained, “the more we realized this bug was everywhere and nowhere at the same time.”
+                        With Sourcegraph, Neo Financial engineers are able to streamline searching and understanding their codebase. This process improvement ultimately saves DevOps teams time and resources–something that Ronnie believes is happening at Neo Financial because of Sourcegraph. Incremental improvements to developer experience and productivity can add up to significant results over time.
                     </p>
                     <p>
-                        Nutanix moved quickly, despite having multiple build and artifact management systems, as well as
-                        a large monorepo with many component branches and hundreds of git repositories. In under four
-                        days, Nutanix was able to deliver patches to its customers that fully remediated the Log4j
-                        vulnerability.
+                        With this added clarity, the engineering team knows they can accomplish more in less time. “I think a lot of it is the developers’ subjective perception of time…With Sourcegraph, developers are more productive and it’s clear that every team is getting 1% better every day,” Ronnie said.
                     </p>
 
                     <h3 className="mt-6 mb-4 max-w-600">
