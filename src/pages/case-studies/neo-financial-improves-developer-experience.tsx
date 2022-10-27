@@ -103,36 +103,9 @@ export const CaseStudy: FunctionComponent = () => (
                     <p className="tw-pt-3xl sm:tw-mt-0 tw-mt-5xl">
                         Before Sourcegraph, tracking libraries manually and searching in GitHub made the process of finding code difficult and time-consuming. To avoid unnecessary duplication of code or to see how a service was previously set up, developers need to look at existing code–essentially, searching for patterns. Unfortunately, manual pattern search with their code host’s native search functionality wasted valuable time that engineering teams could use to address other challenges.
                     </p>
-                    <h3 className="mt-6 mb-4 max-w-600">Log4j: The vulnerability that rocked an industry</h3>
+                    <h3 className="mt-6 mb-4 max-w-600">Acting quickly with Sourcegraph</h3>
                     <p>
-                        <b>In December of 2021,</b> software companies around the world discovered that Log4j, an
-                        open-source logging library bundled in many software packages, contained significant
-                        vulnerabilities, one of which was a{' '}
-                        <a
-                            target="_blank"
-                            rel="noreferrer"
-                            href="https://logging.apache.org/log4j/2.x/security.html"
-                            title="10/10 on the CVSS scale"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            10/10 on the CVSS scale
-                        </a>
-                        {'. '}
-                        The Federal Trade Commission called the library “
-                        <a
-                            target="_blank"
-                            rel="noreferrer"
-                            href="https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2022/01/ftc-warns-companies-remediate-log4j-security-vulnerability"
-                            title="ubiquitous"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            ubiquitous
-                        </a>
-                        .”
+                       Recently, Neo Financial was rebranding their savings accounts to be called Money Accounts. The engineering team needed to quickly and thoroughly identify all instances of the previous name before making the update. Using Sourcegraph, Neo Financial mapped out all locations that referenced the old branding. They were able to update the branding in a fraction of the time it would have taken to manually search and update and the team had full confidence that they hadn’t missed any instances of the old branding.
                     </p>
                     <p>
                         Jon discovered that the offending module recurred throughout their build. “The more we dug,” Jon
