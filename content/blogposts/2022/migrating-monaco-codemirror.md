@@ -166,3 +166,15 @@ CodeMirror states on its website:
 > If you are using CodeMirror commercially, there is a social (but no legal) expectation that you help fund its maintenance.
 
 Sourcegraph has followed this social expectation and donated monthly to CodeMirror since we started using it. We also are sponsoring their dependencies with [thanks.dev](https://thanks.dev/p/gh/sourcegraph).
+
+[Discuss this post in our Discord](https://discord.gg/dTRKf9jAxN)
+
+---
+<br />
+
+Special thanks to _Tracey Johnson_, and _Fabiana Castellanos_ for their help with this post.
+
+### More posts like this
+
+* [Revisiting the design approach to the Zig programming language](https://about.sourcegraph.com/blog/zig-programming-language-revisiting-design-approach)
+* [A dev's thoughts on developer productivity](https://about.sourcegraph.com/blog/developer-productivity-thoughts)
