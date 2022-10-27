@@ -50,12 +50,12 @@ export const CaseStudy: FunctionComponent = () => (
             />
         }
     >
-        <NewCaseStudyLayout customer="Nutanix">
+        <NewCaseStudyLayout customer="Neo Financial">
             <ContentSection background="white" className="tw-flex tw-justify-center">
                 <Blockquote
                     inline={true}
-                    quote="Sourcegraph was the right product at the right time."
-                    author="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
+                    quote="With Sourcegraph, developers are more productive and it’s clear that every team is getting 1% better every day."
+                    author="Ronnie Magatti, Team Lead & Principal Software Engineer at Neo Financial"
                     logo={{
                         src: '/external-logos/nutanix-logo.svg',
                         alt: 'Nutanix',
