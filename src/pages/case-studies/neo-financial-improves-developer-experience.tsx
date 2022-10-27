@@ -115,62 +115,24 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
 
                     <h3 className="mt-6 mb-4 max-w-600">
-                        Nutanix used Sourcegraph to identify every instance of Log4j within 2 days
+                        Visualizing the codebase with Code Insights
                     </h3>
                     <p>
-                        <b>Speed was of the essence,</b> but the timing of the Log4j news, which broke right before many
-                        employees go on vacation for the winter holidays, didn't make things easy.
+                       With Code Insights, you can seamlessly track and visualize everything in your codebase, with analytics and real-time codebase reporting. From any search query, Code Insights gives you customizable, visual dashboards showing high-level information you can use to make decisions in context. For monitoring and improving code health, Code Insights provides transformational data your developers can act on, eliminating guesswork and saving time.
                     </p>
                     <p>
-                        However, Nutanix armed its engineers with Sourcegraph. Within a couple of days, a few
-                        Sourcegraph queries identified every instance of the Log4j vulnerability.
+                        Neo Financial’s engineering team uses Code Insights to understand codebase maintenance. Code Insights tracks uptake on libraries and new Node.js versions. 
                     </p>
                     <p>
-                        With the Log4j 1.x vulnerability, for instance, codebases were only insecure if they used
-                        <a
-                            target="_blank"
-                            rel="noreferrer"
-                            href="https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/net/JMSAppender.html"
-                            title="JMSAppender"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            {' '}
-                            JMSAppender
-                        </a>
-                        . Jon used Sourcegraph to see where JMSAppender existed, fixed it, and sent out a release. “That
-                        took almost less than five minutes,” Jon said. Sourcegraph released a{' '}
-                        <Link href="/blog/log4j-log4shell-0-day/" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="blog post"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                blog post
-                            </a>
-                        </Link>{' '}
-                        that explained how other companies addressing Log4j could use code search for similar benefits.
+                        “The insights are a huge benefit,” said Sean Heintz, Principal Software Developer, Team Lead at Neo Financial. “Transitioning from Node 12 to Node 16, was one of the ones where we actually made use of a Sourcegraph metric to watch Node 12 go down, and Node 16 come up. Once we got down to the three or four repos still using Node 12, we were able to just… gently nudge people to get things taken care of.” 
                     </p>
-                    <p>This speed gave the team a head start on mitigation.</p>
-                    <p>Deploying these fixes required quality assurance and testing as well as discovery and fixing.</p>
-                    <p>
-                        With the help of Sourcegraph, Nutanix was able to release three back-to-back patches relatively
-                        quickly compared to other companies. Nutanix's customers reported satisfaction with both the
-                        speed of the patches and their quality.
-                    </p>
-                    <p>
-                        “We tried to take a measured approach,” Jon said. “We wanted to get things done quickly but
-                        without completely flying by the seats of our pants.”
-                    </p>
+                    <p>“I want to put Code Insights on our TV in the kitchen to show all the insights dashboards so that people will just pass by and remember them,” Ronnie added. </p>
+                    
 
                     <div className="tw-py-5xl">
                         <Blockquote
-                            quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
-                            better than having to say, 'Well, boss, I think we got it all.'"
-                            author="Jon Kohler"
+                            quote=“I want to put Code Insights on our TV in the kitchen to show all the insights dashboards so that people will just pass by and remember them.”
+                            author="Ronnie Magatti"
                             largeText={true}
                         />
                     </div>
