@@ -190,18 +190,9 @@ const Sourcegraph4: FunctionComponent = () => (
         </ContentSection>
 
         <CtaSection
-            background="starshipLaunchPills"
-            centerContent={true}
-            title="Experience the code intelligence platform for modern development teams"
-            description=""
-            cta1={{
-                text: 'Get free trial',
-                ctaStyle: 'primaryButtonWhite',
-                link: 'https://signup.sourcegraph.com',
-            }}
             cta2={{
                 text: 'View pricing',
-                ctaStyle: 'outlineButtonWhiteText',
+                ctaStyle: 'outlineButtonLight',
                 link: '/pricing',
             }}
         />

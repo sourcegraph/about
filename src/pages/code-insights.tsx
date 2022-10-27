@@ -332,16 +332,16 @@ const CodeInsightsPage: FunctionComponent = () => (
                             </a>
                         </div>
                         <div className="ml-md-3">
-                            <Link href="/demo" passHref={true}>
+                            <Link href="https://sourcegraph.com" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
                                     className="btn btn-outline-primary w-100 max-w-350"
-                                    title="Request a Demo."
+                                    title="Search code"
                                     data-button-style={buttonStyle.outline}
                                     data-button-location={buttonLocation.hero}
                                     data-button-type="cta"
                                 >
-                                    Request a demo
+                                    Search code
                                 </a>
                             </Link>
                         </div>
@@ -578,10 +578,7 @@ const CodeInsightsPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <CtaSection
-            title="Get started with Code Insights"
-            description="Create a code insight in 60 seconds and get historical data for previously untracked metrics — data backfills automatically."
-        />
+        <CtaSection />
 
         <ResourceList items={blogResourceItems} title="Learn More" />
     </Layout>

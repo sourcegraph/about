@@ -109,12 +109,7 @@ const Resources: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <CtaSection
-                background="mars"
-                title="Get started with Sourcegraph"
-                description="Want to see Sourcegraph in action? Schedule time with a Sourcegraph expert or try Sourcegraph for free."
-                centerContent={true}
-            />
+            <CtaSection />
         </Layout>
     )
 }

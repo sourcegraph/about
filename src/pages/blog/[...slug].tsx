@@ -54,7 +54,7 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
                 </div>
             </article>
 
-            <CtaSection background="darkNebulous4" />
+            <CtaSection />
         </Layout>
     )
 }
