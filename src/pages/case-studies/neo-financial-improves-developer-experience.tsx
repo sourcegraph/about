@@ -16,27 +16,27 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const threeUpTextItems = [
     {
-        subtitle: '5 minutes',
+        subtitle: 'Updated branding',
         description:
-            'Nutanix was able to see where JMSAppender existed, fix it, and send out a release in less than 5 minutes.',
+            'Updated corporate branding across all digital assets with 100% confidence that nothing was missed.',
     },
     {
-        subtitle: '4 days',
+        subtitle: '100% completion',
         description:
-            'Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.',
+            'Code Insights dashboards help Neo Financial ensure that large scale projects reach 100% completion before being declared “done.”',
     },
     {
-        subtitle: '100%',
-        description: 'Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.',
+        subtitle: 'Attract top talent',
+        description: 'Neo Financial is able to attract and retain top engineering talent by providing a culture, and tools like Sourcegraph, that focus on improving the developer experience.',
     },
 ]
 
 export const CaseStudy: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph',
+            title: 'Neo Financial improves the developer experience with Sourcegraph',
             description:
-                'Nutanix case study. Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their code base.',
+                'Neo Financial case study. Learn how Neo Financial attacts and retains top engineering talent by providing a culture, and tools like Sourcegraph, that focus on improving the developer experience.',
         }}
         hero={
             <Hero
@@ -45,7 +45,7 @@ export const CaseStudy: FunctionComponent = () => (
                     link: '/case-studies',
                 }}
                 variant="venusCode"
-                title={'Nutanix fixed Log4j quickly and \n confidently with Sourcegraph'}
+                title={'Neo Financial improves the developer experience with Sourcegraph'}
                 displayUnderNav={true}
             />
         }
