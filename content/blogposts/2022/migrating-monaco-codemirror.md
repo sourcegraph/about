@@ -11,7 +11,7 @@ tags: [blog]
 slug: migrating-monaco-codemirror
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/codemirror-vs-monaco/image-hero.jpg
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/codemirror-vs-monaco/image-social.jpg
-published: false
+published: true 
 ---
 
 **Some developers argue about the best text editors and IDEs, but what about editors for the web?**
@@ -178,8 +178,7 @@ Outside of tech circles, it’s not well known how much of the world’s softwar
 
 If these maintainers step away, the consequences can be massive and hard to predict. Large commercial projects might not even rely on these directly, depending instead on another (commercial) project, which depends on another, and so on, until you find the open source dependency precariously holding up everything, as depicted in [XKCD 2347](https://xkcd.com/2347/).
 
-
-![XKCD 2347 showing a structure of blocks with a single small block holing everything up](https://storage.googleapis.com/sourcegraph-assets/blog/codemirror-vs-monaco/image3.png)
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/codemirror-vs-monaco/image3.png" style={{width:50 + "%"}} alt="XKCD 2347 showing a structure of blocks with a single small block holing everything up" />
 
 
 The MIT license that many open source projects use, including CodeMirror, is very permissive and allows the open source code to be used even in commercial projects. But CodeMirror is one of several projects that takes an active stand in reminding companies that they should give back to the ecosystem that they depend on and profit from.
