@@ -103,6 +103,10 @@ export const CaseStudy: FunctionComponent = () => (
                     <p className="tw-pt-3xl sm:tw-mt-0 tw-mt-5xl">
                         Before Sourcegraph, tracking libraries manually and searching in GitHub made the process of finding code difficult and time-consuming. To avoid unnecessary duplication of code or to see how a service was previously set up, developers need to look at existing code–essentially, searching for patterns. Unfortunately, manual pattern search with their code host’s native search functionality wasted valuable time that engineering teams could use to address other challenges.
                     </p>
+                    </p> Neo Financial’s engineering team decided to look for a better solution. That’s when they discovered Sourcegraph. 
+                    </p>
+                    Implementing Sourcegraph gave everyone in DevOps access to the new tooling. According to Ronnie Magatti, Principal Software Architect at Neo Financial, “adoption has basically been organic. More senior people are using it, but then someone else looks at it, like ‘oh that’s what you can do? Okay, that’s pretty cool’ and then they start using it too.” 
+                    </p>
                     <h3 className="mt-6 mb-4 max-w-600">Log4j: The vulnerability that rocked an industry</h3>
                     <p>
                         <b>In December of 2021,</b> software companies around the world discovered that Log4j, an
