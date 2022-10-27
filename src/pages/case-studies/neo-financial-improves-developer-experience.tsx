@@ -58,8 +58,8 @@ export const CaseStudy: FunctionComponent = () => (
                     author="Ronnie Magatti, Team Lead & Principal Software Engineer at Neo Financial"
                     logo={{
                         src: '/external-logos/nutanix-logo.svg',
-                        alt: 'Nutanix',
-                        href: 'https://nutanix.com',
+                        alt: 'Neo Financial',
+                        href: 'https://neofinancial.com',
                     }}
                 />
             </ContentSection>
@@ -68,31 +68,31 @@ export const CaseStudy: FunctionComponent = () => (
                 <UseChallengeSolutionResults
                     useCases={[
                         {
-                            text: 'Find and fix security vulnerabilities quickly across the codebase.',
-                            href: '/use-cases/code-security',
+                            text: 'Code Reuse',
+                            href: '/use-cases/code-reuse',
                         },
                     ]}
                     challenges={[
-                        { text: 'Inability to efficiently find all the instances of Log4j in their large codebase.' },
-                        { text: 'Lack of code-level clarity that vulnerabilities were completely resolved.' },
-                        { text: 'Uncertainty about the scope and impact of the Log4j vulnerability.' },
+                        { text: 'Unable to understand their codebase and efficiently find code to reuse with code host’s native search functionality.' },
+                        { text: 'Inability to search branches or tags at scale required manual effort and wasted time.' },
+                        { text: 'Local, unstructured searches through repositories were time consuming and weren't always successful.' },
                     ]}
                     solutions={[
-                        { text: 'Able to quickly and efficiently find every instance of the Log4j vulnerability.' },
-                        { text: 'Full confidence that all Log4j-vulnerable code was identified and resolved.' },
+                        { text: 'Search across commits quickly and make changes with confidence that nothing is missed.' },
+                        { text: 'Track and manage codebase maintenance with Code Insights and share visual dashboards with relevant teams and stakeholders.' },
                         {
-                            text: 'Able to quickly validate that no known vulnerabilities exist in the codebase prior to each release.',
+                            text: 'Solve challenges faster with an easy and intuitive interface for code search.',
                         },
                     ]}
                     results={[
                         {
-                            text: 'Nutanix was able to see where JMSAppender existed, fix it, and send out a release in less than 5 minutes.',
+                            text: 'Updated corporate branding across all digital assets with 100% confidence that nothing was missed.',
                         },
                         {
-                            text: 'Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability in under 4 days.',
+                            text: 'Code Insights dashboards help Neo Financial ensure that large scale projects reach 100% completion before being declared “done.”',
                         },
                         {
-                            text: 'Nutanix was able to identify every instance of Log4j across its sprawling codebase with 100% confidence.',
+                            text: 'Neo Financial is able to attract and retain top engineering talent by providing a culture, and tools like Sourcegraph, that focus on improving the developer experience.',
                         },
                     ]}
                 />
