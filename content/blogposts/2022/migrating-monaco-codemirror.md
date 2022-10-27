@@ -2,8 +2,8 @@
 title: 'Migrating from Monaco Editor to CodeMirror'
 description: We migrated our search input from Monaco to CodeMirror6. It's been a delightful experience and we are now migrating our Notebooks and other functionality too.
 authors:
-  - name: Felix Becker
-    url: https://github.com/felixfbecker
+  - name: Felix Kling
+    url: https://twitter.com/fkling42
   - name: Justin Dorfman
     url: https://twitter.com/jdorfman
 publishDate: 2022-10-25T10:00-07:00
