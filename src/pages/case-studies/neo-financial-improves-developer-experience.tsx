@@ -101,11 +101,7 @@ export const CaseStudy: FunctionComponent = () => (
             <ContentSection background="white" slimWidth={true}>
                 <div className="tw-mx-auto tw-pt-5xl">
                     <p className="tw-pt-3xl sm:tw-mt-0 tw-mt-5xl">
-                        As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the
-                        complexity involved in securing the multitude of applications and solutions required to power
-                        such a large organization. “Security is something that we care about intensely here at Nutanix,”
-                        Jon said, “because it’s part of our bedrock. It's why customers like us, and we have to take it
-                        seriously.”
+                        Before Sourcegraph, tracking libraries manually and searching in GitHub made the process of finding code difficult and time-consuming. To avoid unnecessary duplication of code or to see how a service was previously set up, developers need to look at existing code–essentially, searching for patterns. Unfortunately, manual pattern search with their code host’s native search functionality wasted valuable time that engineering teams could use to address other challenges.
                     </p>
                     <h3 className="mt-6 mb-4 max-w-600">Log4j: The vulnerability that rocked an industry</h3>
                     <p>
