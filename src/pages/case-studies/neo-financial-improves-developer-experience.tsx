@@ -34,9 +34,9 @@ const threeUpTextItems = [
 export const CaseStudy: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph',
+            title: 'Neo Financial improves the developer experience with Sourcegraph',
             description:
-                'Nutanix case study. Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their code base.',
+                'Neo Financial case study. Learn how Neo Financial attacts and retains top engineering talent by providing a culture, and tools like Sourcegraph, that focus on improving the developer experience.',
         }}
         hero={
             <Hero
