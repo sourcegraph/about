@@ -128,7 +128,7 @@ export const CaseStudy: FunctionComponent = () => (
                     <p>
                     “I want to put Code Insights on our TV in the kitchen to show all the insights dashboards so that people will just pass by and remember them,” Ronnie added. 
                     </p>
-                    
+                    </p>
 
                     <div className="tw-py-5xl">
                         <Blockquote
