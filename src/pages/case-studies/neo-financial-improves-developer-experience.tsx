@@ -139,7 +139,7 @@ export const CaseStudy: FunctionComponent = () => (
                         />
                     </div>
 
-                    <h3 className="mb-4">Nutanix has renewed confidence in its vulnerability remediation</h3>
+                    <h3 className="mb-4">Acting quickly with Sourcegraph</h3>
                     <p>
                         <b>Tracking down the Log4j vulnerability was,</b> in Jon's words, like “herding cats who were
                         herding mice at the same time.”
