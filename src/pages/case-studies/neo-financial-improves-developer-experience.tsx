@@ -114,11 +114,10 @@ export const CaseStudy: FunctionComponent = () => (
                         With this added clarity, the engineering team knows they can accomplish more in less time. “I think a lot of it is the developers’ subjective perception of time…With Sourcegraph, developers are more productive and it’s clear that every team is getting 1% better every day,” Ronnie said.
                     </p>
 
-                    <h3 className="mt-6 mb-4 max-w-600">
-                        Visualizing the codebase with Code Insights
-                    </h3>
+                    <h3 className="mt-6 mb-4 max-w-600">Visualizing the codebase with Code Insights</h3>
                     <p>
-                       With Code Insights, you can seamlessly track and visualize everything in your codebase, with analytics and real-time codebase reporting. From any search query, Code Insights gives you customizable, visual dashboards showing high-level information you can use to make decisions in context. For monitoring and improving code health, Code Insights provides transformational data your developers can act on, eliminating guesswork and saving time.
+                     <p>
+                     With Code Insights, you can seamlessly track and visualize everything in your codebase, with analytics and real-time codebase reporting. From any search query, Code Insights gives you customizable, visual dashboards showing high-level information you can use to make decisions in context. For monitoring and improving code health, Code Insights provides transformational data your developers can act on, eliminating guesswork and saving time.
                     </p>
                     <p>
                         Neo Financial’s engineering team uses Code Insights to understand codebase maintenance. Code Insights tracks uptake on libraries and new Node.js versions. 
@@ -126,7 +125,9 @@ export const CaseStudy: FunctionComponent = () => (
                     <p>
                         “The insights are a huge benefit,” said Sean Heintz, Principal Software Developer, Team Lead at Neo Financial. “Transitioning from Node 12 to Node 16, was one of the ones where we actually made use of a Sourcegraph metric to watch Node 12 go down, and Node 16 come up. Once we got down to the three or four repos still using Node 12, we were able to just… gently nudge people to get things taken care of.” 
                     </p>
-                    <p>“I want to put Code Insights on our TV in the kitchen to show all the insights dashboards so that people will just pass by and remember them,” Ronnie added. </p>
+                    <p>
+                    “I want to put Code Insights on our TV in the kitchen to show all the insights dashboards so that people will just pass by and remember them,” Ronnie added. 
+                    </p>
                     
 
                     <div className="tw-py-5xl">
