@@ -68,8 +68,8 @@ export const CaseStudy: FunctionComponent = () => (
                 <UseChallengeSolutionResults
                     useCases={[
                         {
-                            text: 'Find and fix security vulnerabilities quickly across the codebase.',
-                            href: '/use-cases/code-security',
+                            text: 'Code Reuse',
+                            href: '/use-cases/code-reuse',
                         },
                     ]}
                     challenges={[
