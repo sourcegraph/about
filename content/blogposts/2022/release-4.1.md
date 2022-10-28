@@ -32,6 +32,10 @@ changelogItems:
 ---
 
 <Alert>
+  <strong>Update as of October 28:</strong> Patch 4.1.1 has been released, which fixes the issue below. We recommend upgrading to 4.1.1 or the latest version available.
+</Alert>
+
+<Alert>
   <strong>Update as of October 26:</strong> We have identified a bug in Sourcegraph 4.1 that can cause upgrades from earlier versions to fail. We are working to fix this in an upcoming patch. For now, we recommend running Sourcegraph 4.0.
 </Alert>
 
