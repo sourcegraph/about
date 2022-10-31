@@ -31,9 +31,9 @@ const logos: Logo[] = [
     },
     {
         name: 'GE',
-        src: '/external-logos/general-electric-logo.svg',
-        width: 57,
-        height: 57,
+        src: '/external-logos/redfin-logo.svg',
+        width: 124,
+        height: 34,
     },
     {
         name: 'Qualtrics',
