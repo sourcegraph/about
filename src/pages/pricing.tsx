@@ -93,7 +93,7 @@ const faqData = [
         q: 'Is there a free trial of the paid plans?',
         a: (
             <p>
-                Yes. We offer a free, 30-day trial for our paid plans.{' '}
+                Yes. We offer a free trial for our paid plans.{' '}
                 <Link href="https://signup.sourcegraph.com" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
