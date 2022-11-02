@@ -9,7 +9,7 @@ tags: [blog]
 slug: openssl-307-vulnerabilities
 heroImage: 
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/openssl-307-social.png
-published: true 
+published: false 
 ---
 # OpenSSL 3.0.7
 
