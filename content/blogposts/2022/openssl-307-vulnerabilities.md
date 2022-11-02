@@ -9,7 +9,7 @@ tags: [blog]
 slug: openssl-307-vulnerabilities
 heroImage: 
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/openssl-307-social.png
-published: false 
+published: true 
 ---
 
 The OpenSSL project [has released OpenSSL 3.0.7](https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/) in response to two related security vulnerabilities around parsing email addresses that use [Punycode](https://en.wikipedia.org/wiki/Punycode) to represent Internationalised Domain Names. These vulnerabilities are both buffer overflows, one of which has the potential — albeit unlikely — to be used for remote code execution.
