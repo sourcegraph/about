@@ -73,15 +73,15 @@ export const CaseStudy: FunctionComponent = () => (
                         },
                     ]}
                     challenges={[
-                        { text: 'Inability to efficiently find all the instances of Log4j in their large codebase.' },
-                        { text: 'Lack of code-level clarity that vulnerabilities were completely resolved.' },
-                        { text: 'Uncertainty about the scope and impact of the Log4j vulnerability.' },
+                        { text: 'Unable to understand their codebase and efficiently find code to reuse with code host’s native search functionality.' },
+                        { text: 'Inability to search branches or tags at scale required manual effort and wasted time.' },
+                        { text: 'Local, unstructured searches through repositories were time consuming and weren't always successful.' },
                     ]}
                     solutions={[
-                        { text: 'Able to quickly and efficiently find every instance of the Log4j vulnerability.' },
-                        { text: 'Full confidence that all Log4j-vulnerable code was identified and resolved.' },
+                        { text: 'Search across commits quickly and make changes with confidence that nothing is missed.' },
+                        { text: 'Track and manage codebase maintenance with Code Insights and share visual dashboards with relevant teams and stakeholders.' },
                         {
-                            text: 'Able to quickly validate that no known vulnerabilities exist in the codebase prior to each release.',
+                            text: 'Solve challenges faster with an easy and intuitive interface for code search.',
                         },
                     ]}
                     results={[
