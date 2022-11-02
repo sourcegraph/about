@@ -83,6 +83,6 @@ Go uses its own, completely independent SSL implementation. No action required.
 
 ## OpenSSL Checker
 
-You can use our bookmarklet-based OpenSSL Checker tool available at [https://sourcegraph-community.github.io/openssl-checker/](https://sourcegraph-community.github.io/openssl-checker/) to check if your own projects are affected.
+You can use our bookmarklet-based OpenSSL Checker tool available at [https://sourcegraph-community.github.io/openssl-checker/](https://sourcegraph-community.github.io/openssl-checker/) to check if your Rust and Python projects are affected.
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/openssl-checker-demo.gif)
