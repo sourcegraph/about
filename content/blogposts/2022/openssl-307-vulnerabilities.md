@@ -14,67 +14,21 @@ published: false
 
 The OpenSSL project [has released OpenSSL 3.0.7](https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/) in response to two related security vulnerabilities around parsing email addresses that use [Punycode](https://en.wikipedia.org/wiki/Punycode) to represent Internationalised Domain Names. These vulnerabilities are both buffer overflows, one of which has the potential — albeit unlikely — to be used for remote code execution.
 
-The most likely path by which this can be exploited is by having OpenSSL parse a certificate, which allows an attacker to control the email addresses in the certificate.
+The most likely path by which this can be exploited is by having OpenSSL parse a certificate, allowing an attacker to control the email addresses in the certificate.
 
 OpenSSL 3.0.0 to 3.0.6 is affected. No prior OpenSSL version (including OpenSSL 1.1, which is probably still the most commonly used version) is vulnerable.
 
-## tl;dr: What should Sourcegraph do about this?
-
-I'll go into (significantly) more detail below on what this is and what we can do to help our customers, but I think the main takeaway here is that this is likely to be less meaningful from a marketing and support perspective than the Log4Shell vulnerability of last year was.
-
-There are likely to be searches that customers can run over their repositories to start looking at places they might need to apply mitigations if they are unable to simply update base images. These are described in language-specific sections towards the end of the document.
-
-The languages most likely to be affected are C, C++, Node.js, Python, and Rust, although just using one or more of those languages doesn't necessarily imply that anything is vulnerable.
-
-I don't believe there's a meaningful batch change that we can craft that will mitigate this issue, since mitigation for most users will simply be updating their operating systems and container images.
-
-In the longer term, this provides another example that our sales and CE teams can use to demonstrate the value of code search.
-
-## Context: What is OpenSSL?
-
-OpenSSL is the original — and still most commonly used — library implementing support for SSL/TLS. TLS is the security standard that underpins virtually all secure communication on the Internet, including HTTPS.
-
-OpenSSL has historically had a fairly spotty security record, largely due to being under-resourced, being written in (fairly old school) C, and the problem domain just being pretty difficult in the first place. This has resulted in forks (such as LibreSSL and BoringSSL), and reimplementations of TLS (such as GnuTLS and rustls).
-
-OpenSSL is, however, only rarely used directly by programmers. The vast majority of programmers write code in higher-level languages that wrap OpenSSL indirectly in their own libraries. This means that it's in a lot of unexpected places, but also that programmers have little control over the specific version of OpenSSL they're using, not to mention which parts of its API are utilised.
-
-## How is this similar to Log4Shell?
-
-Late last year, the popular Java logging library Log4j was revealed to be vulnerable to an issue called [Log4Shell](https://www.lunasec.io/docs/blog/log4j-zero-day/). This required a fire drill of upgrades by its users, many of which were non-trivial due to a tendency in the Java ecosystem to use older, unsupported versions of Log4Shell.
-
-The specific vulnerability isn't especially similar, but the effect is pretty much the same — in the worst case scenario, attackers may be able to gain control of servers.
-
-## How is this different from the famous Log4J issue?
-
-Practically, this issue is likely to be less severe, although still significant.
-
-The OpenSSL project believes that remote code execution is unlikely to be achieved in practice due to defence-in-depth measures available on most platforms. This doesn't prevent denial of service attacks, since servers using OpenSSL can still be crashed via the buffer overflow, but it's at least _slightly_ less bad.
-
-The profile of OpenSSL users also differs somewhat from Log4j — most OpenSSL users are likely to be on the unaffected OpenSSL 1.1, and the OpenSSL project generally does a better job of maintaining support for multiple versions.
-
-Log4j also botched their initial fixes quite badly, which resulted in more pain for Log4j users. It's not impossible that the fix in OpenSSL 3.0.7 will require further work, but it's conceptually simpler than the Log4j fix was, and my initial judgement is that it's likely to be correct and not require further work.
-
-Finally, upgrading OpenSSL 3 is likely to be considerably easier in most cases. Most users will use libraries that dynamically link to OpenSSL, which means that upgrading the OpenSSL library installed on the operating system will generally fix the issue. No changes to API calls or the like are required.
-
-## What can we do to help our customers mitigate this issue?
+## How can you mitigate the issue?
 
 ### Upgrades
 
-The general advice for OpenSSL 3 users will be to upgrade to OpenSSL 3.0.7 as soon as possible.
+The general advice for OpenSSL 3 users is to upgrade to OpenSSL 3.0.7 as soon as possible.
 
-For users who are only using OpenSSL transitively as a dynamic dependency (which will be most of them), this really means rebuilding container images and ensuring bare-metal servers are upgraded to the current version of OpenSSL. In general, most users will have processes in place for this already, and specific tools such as Renovate and Snyk will be able to provide insight into what needs to be done there that we shouldn't expend significant effort on trying to replicate.
+For users who are only using OpenSSL transitively as a dynamic dependency, this really means rebuilding container images and ensuring bare-metal servers are upgraded to the current version of OpenSSL. 
 
 ### Other mitigations
 
 OpenSSL recommends disabling TLS client authentication if it's not strictly necessary until an upgrade can be performed. [Per the FAQ](https://www.openssl.org/blog/blog/2022/11/01/email-address-overflows/):
-
-_Q: Are there any mitigations until I can upgrade?_
-
-_A: Users operating TLS servers may consider disabling TLS client authentication, if it is being used, until fixes are applied._
-
-This is, of course, unhelpful for users who actually need client authentication, but it's possible some users have accidentally enabled client authentication when they don't actually require it. Some initial thoughts on possible code searches are below.
-
-This may also affect users who have code that parses arbitrary server certificates. Detecting that is less a question of code search and is more a question of product knowledge.
 
 #### The low level API, and C and C++ users
 
@@ -113,10 +67,6 @@ However, the popular cryptography package does ship static OpenSSL libraries in 
 
 Same general situation as Python. Users are unlikely to be affected, and if they are, a simple upgrade of the base image and rebuild should suffice.
 
-#### Go
-
-Go uses its own, completely independent SSL implementation. No action required.
-
 #### Rust
 
 Rust projects tend to use either OpenSSL or rustls to provide SSL/TLS functionality. Rustls users are unaffected.
@@ -127,8 +77,12 @@ Most OpenSSL users will use the openssl crate in its default mode, which links t
 f:Cargo.lock openssl-src AND version\s*=\s*"300\.[0-9\.]+\+3\.0\.[0-6]
 ```
 
+#### Go
+
+Go uses its own, completely independent SSL implementation. No action required.
+
 ## OpenSSL Checker
 
-You can also use our bookmarklet-based OpenSSL Checker tool available at [https://sourcegraph-community.github.io/openssl-checker/](https://sourcegraph-community.github.io/openssl-checker/) to check if your own projects are affected.
+You can use our bookmarklet-based OpenSSL Checker tool available at [https://sourcegraph-community.github.io/openssl-checker/](https://sourcegraph-community.github.io/openssl-checker/) to check if your own projects are affected.
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/openssl-checker-demo.gif)
