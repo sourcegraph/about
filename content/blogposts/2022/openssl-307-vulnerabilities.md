@@ -1,6 +1,6 @@
 ---
 title: 'OpenSSL 3.0.7'
-description: OpenSSL 3.0.7 is available and it addresses two security vulnerabilities. Here's what you need to know.
+description: OpenSSL 3.0.7 is available and addresses two security vulnerabilities. Here's what you need to know.
 authors:
   - name: Adam Harvey 
     url: https://twitter.com/lgnome 
@@ -22,9 +22,9 @@ OpenSSL 3.0.0 to 3.0.6 is affected. No prior OpenSSL version (including OpenSSL 
 
 ### Upgrades
 
-The general advice for OpenSSL 3 users is to upgrade to OpenSSL 3.0.7 as soon as possible.
+The general advice is to upgrade to OpenSSL 3.0.7 as soon as possible.
 
-For users who are only using OpenSSL transitively as a dynamic dependency, this really means rebuilding container images and ensuring bare-metal servers are upgraded to the current version of OpenSSL. 
+If you're only using OpenSSL transitively as a dynamic dependency, this really means rebuilding container images and ensuring bare-metal servers are upgraded to the current version of OpenSSL. 
 
 ### Other mitigations
 
@@ -32,22 +32,18 @@ OpenSSL recommends disabling TLS client authentication if it's not strictly nece
 
 #### The low level API, and C and C++ users
 
-Client authentication is ultimately enabled by setting [the SSL_VERIFY_PEER option](https://www.openssl.org/docs/manmaster/man3/SSL_CTX_set_verify.html) when issuing or handling a TLS request. The problem is that this option is also used by clients for innocuous purposes, and there are no API differences between server and client mode — or, for that matter, vulnerable and non-vulnerable versions of OpenSSL — to craft a one-size-fits-all code search.
-
-So, one option would be to simply search for `SSL_VERIFY_PEER`, and if the user knows that there are OpenSSL-using servers in their code base, this would likely be enough to be interesting.
+TLS client authentication is triggered by setting the SSL_VERIFY_PEER flag when handling a TLS request. However, this flag is also used by unrelated client requests, so searching for SSL_VERIFY_PEER is unhelpful on its own. So, one option would be to simply search for `SSL_VERIFY_PEER`, and if you know that there are OpenSSL-using servers in their code base, this would likely be enough to be interesting.
 
 There are a couple of possibilities for narrowing this down further:
 
 * Servers generally also call `SSL_set_accept_state`, so while there's no guarantee this will happen in the same source file as the option is set, [a search like this](https://sourcegraph.com/search?q=context:global+%28lang:C+OR+lang:C%2B%2B%29+-file:.h%24+-f:openssl+SSL_set_verify.*SSL_VERIFY_PEER+AND+SSL_set_accept_state&patternType=regexp) would at least pinpoint a subset of possible problems.
 * There are additional constants that can be added to SSL_VERIFY_PEER that _do_ indicate that a client certificate is being handled specifically, such as `SSL_VERIFY_FAIL_IF_NO_PEER_CERT`, `SSL_VERIFY_CLIENT_ONCE`, and `SSL_VERIFY_POST_HANDSHAKE`. Any of these appearing in search results would be strong signals that further investigation is required.
 
-Neither of these deal with the question of figuring out if the user is using OpenSSL 3 specifically. That's going to require knowledge of how their project is built that we likely don't have. (Building C and C++ projects tends to be highly non-standardised.)
-
 #### Node.js
 
-Node.js version 16 and later use OpenSSL 3. Unlike many other ecosystems, Node.js tends to statically link in OpenSSL, which means that users will need to upgrade Node.js once new versions have been built and are available. (This hasn't happened yet, as at the time of writing.)
+Node.js version 16 and later use OpenSSL 3. Unlike many other ecosystems, Node.js tends to statically link in OpenSSL, which means you will need to upgrade Node.js once new versions have been built and are available. (This hasn't happened yet, as of the time of writing.)
 
-Users can check if they are parsing client certificates with a search like this: [https://sourcegraph.com/search?q=context:global+%28lang:JavaScript+OR+lang:TypeScript%29+requestCert%5Cs*:%5Cs*true&patternType=regexp](https://sourcegraph.com/search?q=context:global+%28lang:JavaScript+OR+lang:TypeScript%29+requestCert%5Cs*:%5Cs*true&patternType=regexp)
+You can check if you're parsing client certificates with a search like this: [https://sourcegraph.com/search?q=context:global+%28lang:JavaScript+OR+lang:TypeScript%29+requestCert%5Cs*:%5Cs*true&patternType=regexp](https://sourcegraph.com/search?q=context:global+%28lang:JavaScript+OR+lang:TypeScript%29+requestCert%5Cs*:%5Cs*true&patternType=regexp)
 
 #### Ruby
 
@@ -65,13 +61,13 @@ However, the popular cryptography package does ship static OpenSSL libraries in 
 
 #### PHP
 
-Same general situation as Python. Users are unlikely to be affected, and if they are, a simple upgrade of the base image and rebuild should suffice.
+Same general situation as Python. You are unlikely to be affected, and if you are, a simple upgrade of the base image and rebuild should suffice.
 
 #### Rust
 
 Rust projects tend to use either OpenSSL or rustls to provide SSL/TLS functionality. Rustls users are unaffected.
 
-Most OpenSSL users will use the openssl crate in its default mode, which links to the system OpenSSL, which means that a normal image/binary rebuild will work for them. However, it's possible to configure the openssl crate to use an embedded OpenSSL, in which case [this query](https://sourcegraph.com/search?q=context:global+f:Cargo.lock+openssl-src+AND+version%5Cs*%3D%5Cs*%22300%5C.%5B0-9%5C.%5D%2B%5C%2B3%5C.0%5C.%5B0-6%5D&patternType=regexp) should reveal projects that need to be updated:
+Most OpenSSL users will use the openssl crate in its default mode, which links to the system OpenSSL, which means that a normal image/binary rebuild will work. However, it's possible to configure the openssl crate to use an embedded OpenSSL, in which case [this query](https://sourcegraph.com/search?q=context:global+f:Cargo.lock+openssl-src+AND+version%5Cs*%3D%5Cs*%22300%5C.%5B0-9%5C.%5D%2B%5C%2B3%5C.0%5C.%5B0-6%5D&patternType=regexp) should reveal projects that need to be updated:
 
 ```regex
 f:Cargo.lock openssl-src AND version\s*=\s*"300\.[0-9\.]+\+3\.0\.[0-6]
@@ -83,6 +79,6 @@ Go uses its own, completely independent SSL implementation. No action required.
 
 ## OpenSSL Checker
 
-You can use our bookmarklet-based OpenSSL Checker tool available at [https://sourcegraph-community.github.io/openssl-checker/](https://sourcegraph-community.github.io/openssl-checker/) to check if your Rust and Python projects are affected.
+You can also use our bookmarklet-based OpenSSL Checker tool available at [https://sourcegraph-community.github.io/openssl-checker/](https://sourcegraph-community.github.io/openssl-checker/) to check if your Rust and Python projects are affected.
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/openssl-checker-demo.gif)
