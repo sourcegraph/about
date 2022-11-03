@@ -145,37 +145,24 @@ export const CaseStudy: FunctionComponent = () => (
                         />
                     </div>
 
-                    <h3 className="mb-4">Acting quickly with Sourcegraph</h3>
+                    <h3 className="mb-4">Banking on the developer experience</h3>
                     <p>
-                        <b>Tracking down the Log4j vulnerability was,</b> in Jon's words, like “herding cats who were
-                        herding mice at the same time.”
+                        Originally, developer experience and productivity teams were only found in the largest organizations such as Netflix or Amazon. Today developers are an increasingly significant portion of the workforce, both numerically and in terms of the role they play in organizations. According to a McKinsey study, improving developer velocity typically grows company revenue between four and five times faster. High-velocity teams are also 55 percent more innovative than companies with worse DX. Companies of every size are recognizing the need to prioritize developer experience.
                     </p>
                     <p>
-                        Without Sourcegraph, Jon would have either been tracking down whoever built each component to
-                        ask them how and where they used Log4j or stumbling through all of the company's repositories.
+                        “Even here at Neo, we have a DX team who’s focused entirely on making sure that our developers have a good experience, that they’re able to be productive. It’s just a really interesting place that a lot of the tech companies that I’ve seen these days are focused on,” added Sean. “This is giving developers those tools to execute even just a little more efficiently, just to have that kind of get, so that every team’s getting one percent better every day. That’s what I really like about this. It really fits into that little spot where it’s like, this makes me just a little bit better, and it just makes my life, over time, so much better.”
                     </p>
                     <p>
-                        Using Sourcegraph, Jon discovered every instance of Log4j and was fully confident in the
-                        results. “It's nice,” Jon said, “when you can just run a report and say, 'Here it is,'' or 'Here
-                        it isn't.'' It's much better than having to say, 'Well, boss, I think we got it all.’”
+                        It’s important to note that engineers have a lot of choices today – where they work, which teams will foster their growth, which tools they use. Developer experience centers development processes around the people and culture that creates great software. Out of a strong developer experience, great software and strong customer experiences are the natural conclusion. By focusing on DX and bringing in tools like Sourcegraph, Neo Financial has set itself up for future success.
                     </p>
                     <p>
-                        Nutanix needed that confidence because of its sprawling codebase. One thing that made Log4j
-                        especially complicated for Nutanix—as it does for other large-scale enterprises—is that there
-                        were multiple source control systems in play. Sourcegraph provided them with “unified
-                        visibility,” according to Jon. “I can't imagine the pain of having to do that either with grep
-                        or OpenGrok,” he added.
+                        Considering his overall experience using Sourcegraph, Ronnie said, "I like that Sourcegraph fits into this ‘renaissance’ of DX tooling that’s coming out in the industry.”
                     </p>
                     <p>
                         Confidence spread from Jon to the rest of the team and throughout the company. With
                         <Link href="/blog/introducing-search-contexts/"> search contexts</Link>, Jon was able to share
                         relevant contexts and queries, showing the team how they could verify whether a given Log4j
                         instance was present or absent. He could show them precisely what they changed.
-                    </p>
-                    <p>
-                        “We used Sourcegraph contexts to see specifically where a service was at any given point in
-                        time,” Jon said. Without Sourcegraph, the team would've had to use code scanning, which takes a
-                        lot of time, or manual build inspections, which aren't foolproof.
                     </p>
                 </div>
             </ContentSection>
