@@ -163,7 +163,7 @@ This feature requires admins to set up executors (much like CI agents), which So
 ####  Sourcegraph Cloud, our single-tenant cloud offering, is now generally available
 After almost a decade of developing self-hosted Sourcegraph, we’ve gained the trust of some of the most sophisticated companies and development teams in the world. Today—after years of building trust and engineering rigor—we are excited to move confidently to the cloud with a highly secure and scalable solution.
 
-Dedicated, single-tenant Sourcegraph Cloud instances are now generally available and the best way for teams to use Sourcegraph. You can read more in our announcement blog [here](/blog/enterprise-cloud), or [sign up for a 30-day trial for your organization](https://signup.sourcegraph.com/).
+Dedicated, single-tenant Sourcegraph Cloud instances are now generally available and the best way for teams to use Sourcegraph. You can read more in our announcement blog [here](/blog/enterprise-cloud), or [sign up for a 15-day trial for your organization](https://signup.sourcegraph.com/).
 
 <a href="https://docs.sourcegraph.com/cloud" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
   
