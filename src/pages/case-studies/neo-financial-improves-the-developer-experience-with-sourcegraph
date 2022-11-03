@@ -193,6 +193,11 @@ export const CaseStudy: FunctionComponent = () => (
                                     name: 'Ronnie Magatti',
                                     title: 'Team Lead & Principal Software Engineer at Neo Financial',
                                 },
+                                 {
+                                    image: '/case-studies/jon-kohler.png',
+                                    name: 'Sean Heintz',
+                                    title: 'Principal Software Developer, Team Lead at Neo Financial',
+                                },
                             ]}
                         />
                     </div>
