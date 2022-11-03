@@ -106,6 +106,9 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
                         Neo Financial’s engineering team decided to look for a better solution. That’s when they discovered Sourcegraph. 
                     </p>
+                    </p>
+                        Implementing Sourcegraph gave everyone in DevOps access to the new tooling. According to Ronnie Magatti, Principal Software Architect at Neo Financial, “adoption has basically been organic. More senior people are using it, but then someone else looks at it, like ‘oh that’s what you can do? Okay, that’s pretty cool’ and then they start using it too.” 
+                    </p>
                     
                     <h3 className="mt-6 mb-4 max-w-600">Acting quickly with Sourcegraph</h3>
                     <p>
