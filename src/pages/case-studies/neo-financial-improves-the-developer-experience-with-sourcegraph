@@ -158,42 +158,12 @@ export const CaseStudy: FunctionComponent = () => (
                     <p>
                         Considering his overall experience using Sourcegraph, Ronnie said, "I like that Sourcegraph fits into this ‘renaissance’ of DX tooling that’s coming out in the industry.”
                     </p>
-                    <p>
-                        Confidence spread from Jon to the rest of the team and throughout the company. With
-                        <Link href="/blog/introducing-search-contexts/"> search contexts</Link>, Jon was able to share
-                        relevant contexts and queries, showing the team how they could verify whether a given Log4j
-                        instance was present or absent. He could show them precisely what they changed.
-                    </p>
                 </div>
             </ContentSection>
 
             <ContentSection parentClassName="sg-bg-gradient-saturn">
                 <ThreeUpText items={threeUpTextItems} />
             </ContentSection>
-
-            <ContentSection background="white" slimWidth={true}>
-                <div className="tw-mx-auto">
-                    <h3 className="mb-4">Log4j is the tip of the open-source vulnerability iceberg</h3>
-                    <p>
-                        <b>With Sourcegraph's help,</b> Nutanix was able to transform a trust-threatening risk into a
-                        trust-building opportunity. Their customers, Jon explained, were worried about hundreds of other
-                        vendors, all of whom were likely affected by Log4j.
-                    </p>
-                    <p>
-                        “That's hopefully something customers will remember us for,” Jon said. “We quickly either
-                        provided them with clarity or gave them a line on the next available patch because we were able
-                        to identify the issue and start fixing it ASAP.”
-                    </p>
-                    <p>
-                        Jon explained that, at many enterprises, dependencies are unseen and forgotten. “You might check
-                        in on a dependency and find it hasn't been reviewed for four, five, six, or even ten years. But
-                        it works, so why update it?”
-                    </p>
-                    <p>
-                        Log4j is one of many reasons why monitoring and updating is now a renewed priority. “Companies
-                        will have to be more diligent,” Jon said. With Sourcegraph, Nutanix is prepared to
-                        <Link href="/use-cases/code-security"> find and fix the next vulnerability</Link>.
-                    </p>
 
                     <div className="tw-mt-5xl">
                         <StaffSpotlight
