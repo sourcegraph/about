@@ -123,6 +123,14 @@ export const CaseStudy: FunctionComponent = () => (
                         With this added clarity, the engineering team knows they can accomplish more in less time. “I think a lot of it is the developers’ subjective perception of time…With Sourcegraph, developers are more productive and it’s clear that every team is getting 1% better every day,” Ronnie said.
                     </p>
 
+                    <div className="tw-py-5xl">
+                        <Blockquote
+                            quote=“I want to put Code Insights on our TV in the kitchen to show all the insights dashboards so that people will just pass by and remember them.”
+                            author="Ronnie Magatti"
+                            largeText={true}
+                        />
+                    </div>
+
                     <h3 className="mt-6 mb-4 max-w-600">Visualizing the codebase with Code Insights</h3>
                     <p>
                      <p>
@@ -138,14 +146,6 @@ export const CaseStudy: FunctionComponent = () => (
                     “I want to put Code Insights on our TV in the kitchen to show all the insights dashboards so that people will just pass by and remember them,” Ronnie added. 
                     </p>
                     </p>
-
-                    <div className="tw-py-5xl">
-                        <Blockquote
-                            quote=“I want to put Code Insights on our TV in the kitchen to show all the insights dashboards so that people will just pass by and remember them.”
-                            author="Ronnie Magatti"
-                            largeText={true}
-                        />
-                    </div>
 
                     <h3 className="mb-4">Banking on the developer experience</h3>
                     <p>
