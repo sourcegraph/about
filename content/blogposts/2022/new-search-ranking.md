@@ -12,7 +12,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/new-search-r
 published: true
 ---
 
-When I joined Sourcegraph just eight weeks ago, I made [various predictions and proclamations](https://about.sourcegraph.com/blog/introducing-steve-yegge) about how we were going to revolutionize scalable code search, navigation, and understanding with Sourcegraph’s Code Intelligence Platform (CIP). Today we’re releasing our first big steps on that path.
+When I joined Sourcegraph just eight weeks ago, I made [various predictions and proclamations](https://about.sourcegraph.com/blog/introducing-steve-yegge) about how we were going to revolutionize scalable code search, navigation, and understanding with Sourcegraph’s code intelligence platform (CIP). Today we’re releasing our first big steps on that path.
 
 Every day, more code is written, more code complexity piles up, and more people write their first line of code.
 
@@ -24,7 +24,7 @@ I’m thrilled to announce that Sourcegraph has launched PageRank-driven Code Se
 
 This launch ushers in a new era of search-result relevance, helping you find the code you’re looking for on the first try.
 
-Sourcegraph’s new search ranking uses a rendition of the Google [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm on source code, powered by the code symbol graph from our sophisticated Code Intelligence Platform (CIP).
+Sourcegraph’s new search ranking uses a rendition of the Google [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm on source code, powered by the code symbol graph from our sophisticated code intelligence platform (CIP).
 
 Code Search is now relentlessly focused on helping you find **relevant** answers. Consider this side-by-side comparison from an early run, with pageranked results on the left.
 
@@ -38,7 +38,7 @@ Why is using PageRank for Code Search so revolutionary and effective? Let’s di
 
 <Figure src="https://storage.googleapis.com/sourcegraph-assets/blog/new-search-ranking/pagerank-visual.png" alt="Image depicting the PageRank algorithm" caption="Source: Wikipedia: User:Mayhatmate / CC-BY-SA-3.0" />
 
-In the illustration above, the size of each smiley is proportional to the number of other smileys pointing at it. For web pages, Google’s PageRank tracks which pages are pointed at (referenced) most often by other web pages. PageRank a measure of how “cool” they are: Who’s pointing at them?
+In the illustration above, the size of each smiley is proportional to the number of other smileys pointing at it. For web pages, Google’s PageRank tracks which pages are pointed at (referenced) most often by other web pages. PageRank is a measure of how “cool” they are: Who’s pointing at them?
 
 For source code, the pointing hands are code usages: function calls, imports, that sort of thing. If there’s only one arm pointing at a smiley, that’s a code use. But if more than one arm is pointing in… that’s reuse! The big yellow smiley is being reused by more code than any other smiley in the diagram. The PageRank algorithm uncovered this fact.
 
@@ -68,7 +68,7 @@ Google’s search quality comes from their knowledge graph. They have deep domai
 
 What’s the equivalent knowledge graph in code search? Why, that would be the Source Graph, of course. Yep, that’s right. In order to compute ranking on code, you run it on the source graph.
 
-That source graph is not a simple matter to create. We did it with our code intelligence data, which scales up to the world’s largest code bases.
+That source graph is not a simple matter to create. We did it with our code intelligence data, which scales up to the world’s largest codebases.
 
 This makes ranking our very first major victory for Sourcegraph’s Code Intelligence Platform.
 
