@@ -14,6 +14,7 @@ import {
     DEPRECATED_API_USAGE_BY_TEAM,
     LINTER_OVERRIDES,
     REPOS_WITH_CI_SYSTEM,
+    OPENSSL_PYTHON,
 } from '@code-insights/mock-data'
 import { CodeInsightExampleType } from '@code-insights/types'
 import {
@@ -60,6 +61,11 @@ const items = [
         title: 'Visualize configurations and services',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={REPOS_WITH_CI_SYSTEM} />,
     },
+    {
+        title: 'Vulnerable Versions of OpenSSL in the Python Ecosystem',
+        text: <CodeInsightExample type={CodeInsightExampleType.Search} data={OPENSSL_PYTHON} />,
+    },
+    
 ]
 
 const templates = {
