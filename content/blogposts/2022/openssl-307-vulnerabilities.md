@@ -53,10 +53,10 @@ Ruby's OpenSSL gem still uses OpenSSL 1.1, so Ruby users (should) have nothing t
 
 All Python Docker images still ship with OpenSSL 1.1, and distro Pythons will generally link against the system OpenSSL, so upgrading the base image and/or distro should deal with this. No searches required.
 
-However, the popular cryptography package does ship static OpenSSL libraries in many of its wheels, and versions 36.0.0 to 38.0.2 (inclusive) are vulnerable. (They are [about to release version 38.0.3](https://github.com/pyca/cryptography/issues/7758) with OpenSSL 3.0.7 bundled.) [This search](https://sourcegraph.com/search?q=context:global+%28f:requirements.*txt+cryptography%28%5Cs*%5B%3D%7E%5D%3D%5Cs*%2836%5C.%7C37%5C.%7C38%5C.0%5C.%5B0-2%5D%29%29%29+OR+%28f:poetry.lock+name%5Cs*%3D%5Cs*%22cryptography%22+AND+version%5Cs*%3D%5Cs*%22%2836%5C.%7C37%5C.%7C38%5C.0%5C.%5B0-2%5D%29%29&patternType=regexp) should cover most uses via pip, pipenv, and poetry:
+However, the popular cryptography package does ship static OpenSSL libraries in many of its wheels, and versions 36.0.0 to 38.0.2 (inclusive) are vulnerable. (They are [about to release version 38.0.3](https://github.com/pyca/cryptography/issues/7758) with OpenSSL 3.0.7 bundled.) [This search](https://sourcegraph.com/search?q=context:global+%28f:requirements.*txt+cryptography%28%5Cs*%5B%3D%7E%5D%3D%5Cs*%2836%5C.%7C37%5C.%7C38%5C.0%5C.%5B0-2%5D%29%29%29+OR+%28f:poetry.lock+name%5Cs*%3D%5Cs*%22cryptography%22%5Cnversion%5Cs*%3D%5Cs*%22%2835%5C.%7C39%5C.%7C40%5C.0%5C.%5B0-2%5D%29%29&patternType=regexp) should cover most uses via pip, pipenv, and poetry:
 
 ```regex
-(f:requirements.*txt cryptography(\s*[=~]=\s*(36\.|37\.|38\.0\.[0-2]))) OR (f:poetry.lock name\s*=\s*"cryptography" AND version\s*=\s*"(36\.|37\.|38\.0\.[0-2]))
+(f:requirements.*txt cryptography(\s*[=~]=\s*(36\.|37\.|38\.0\.[0-2]))) OR (f:poetry.lock name\s*=\s*"cryptography"\nversion\s*=\s*"(35\.|39\.|40\.0\.[0-2]))
 ```
 
 #### PHP
@@ -67,10 +67,10 @@ Same general situation as Python. You are unlikely to be affected, and if you ar
 
 Rust projects tend to use either OpenSSL or rustls to provide SSL/TLS functionality. Rustls users are unaffected.
 
-Most OpenSSL users will use the openssl crate in its default mode, which links to the system OpenSSL, which means that a normal image/binary rebuild will work. However, it's possible to configure the openssl crate to use an embedded OpenSSL, in which case [this query](https://sourcegraph.com/search?q=context:global+f:Cargo.lock+openssl-src+AND+version%5Cs*%3D%5Cs*%22300%5C.%5B0-9%5C.%5D%2B%5C%2B3%5C.0%5C.%5B0-6%5D&patternType=regexp) should reveal projects that need to be updated:
+Most OpenSSL users will use the openssl crate in its default mode, which links to the system OpenSSL, which means that a normal image/binary rebuild will work. However, it's possible to configure the openssl crate to use an embedded OpenSSL, in which case [this query](https://sourcegraph.com/search?q=context:global+f:Cargo.lock+%22openssl-src%22%5Cnversion%5Cs*%3D%5Cs*%22300%5C.%5B0-9%5C.%5D%2B%5C%2B3%5C.0%5C.%5B0-6%5D&patternType=regexp) should reveal projects that need to be updated:
 
 ```regex
-f:Cargo.lock openssl-src AND version\s*=\s*"300\.[0-9\.]+\+3\.0\.[0-6]
+f:Cargo.lock "openssl-src"\nversion\s*=\s*"300\.[0-9\.]+\+3\.0\.[0-6]
 ```
 
 #### Go
