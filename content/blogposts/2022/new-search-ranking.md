@@ -26,13 +26,15 @@ This launch ushers in a new era of search-result relevance, helping you find the
 
 Sourcegraph’s new search ranking uses a rendition of the Google [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm on source code, powered by the code symbol graph from our sophisticated code intelligence platform (CIP).
 
-Code Search is now relentlessly focused on helping you find **relevant** answers. Consider this side-by-side comparison from an early run, with pageranked results on the left.
+Code Search is now relentlessly focused on helping you find **relevant** answers. Consider this comparison from an early run, with non-pageranked results on the top followed by pageranked results on the bottom.
 
-<Figure src="https://storage.googleapis.com/sourcegraph-assets/blog/new-search-ranking/ranking-before-and-after.png" alt="PageRank-driven Code Search results compared to pre-PageRank results" caption="An early version of PageRank-driven Code Search in action" />
+<Figure src="https://storage.googleapis.com/sourcegraph-assets/blog/new-search-ranking/unranked-example.png" alt="Code Search results before PageRank" />
 
-The #1 search result on the right is a match inside a source comment. Although this might be relevant in some contexts, it’s generally not so great to suggest as the top result.
+**Without PageRank:** The #1 search result in this image is a match inside a source comment. Although this might be relevant in some contexts, it’s generally not so great to suggest as the top result.
 
-With the pageranked results on the left, you only see relevant matches. Over time, this adds up to tremendous time savings. And devs will always gravitate towards things that save them time.
+<Figure src="https://storage.googleapis.com/sourcegraph-assets/blog/new-search-ranking/ranked-example.png" alt="Code Search results after PageRank" />
+
+**With PageRank:** With the pageranked results, you only see relevant matches. Over time, this adds up to tremendous time savings. And devs will always gravitate towards things that save them time.
 
 Why is using PageRank for Code Search so revolutionary and effective? Let’s dig in.
 
