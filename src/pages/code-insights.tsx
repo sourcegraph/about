@@ -50,6 +50,10 @@ const items = [
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LOG_4_J_INCIDENT_INSIGHT} />,
     },
     {
+        title: 'Find vulernable OpenSSL versions in the Python Ecosystem',
+        text: <CodeInsightExample type={CodeInsightExampleType.Search} data={OPENSSL_PYTHON} />,
+    },
+    {
         title: 'Understand code by team',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={DEPRECATED_API_USAGE_BY_TEAM} />,
     },
@@ -61,11 +65,6 @@ const items = [
         title: 'Visualize configurations and services',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={REPOS_WITH_CI_SYSTEM} />,
     },
-    {
-        title: 'Vulnerable Versions of OpenSSL in the Python Ecosystem',
-        text: <CodeInsightExample type={CodeInsightExampleType.Search} data={OPENSSL_PYTHON} />,
-    },
-    
 ]
 
 const templates = {
