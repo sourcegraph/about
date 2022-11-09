@@ -26,7 +26,7 @@ This launch ushers in a new era of search-result relevance, helping you find the
 
 Sourcegraph’s new search ranking uses a rendition of the Google [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm on source code, powered by the code symbol graph from our sophisticated code intelligence platform (CIP).
 
-Code Search is now relentlessly focused on helping you find **relevant** answers. Consider this comparison from an early run, with pageranked results on bottom.
+Code Search is now relentlessly focused on helping you find **relevant** answers. Consider this comparison from an early run, with pageranked results on the bottom.
 
 **Without PageRank:** The #1 search result in this image is a match inside a source comment. Although this might be relevant in some contexts, it’s generally not so great to suggest as the top result.
 
