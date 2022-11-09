@@ -67,10 +67,10 @@ Same general situation as Python. You are unlikely to be affected, and if you ar
 
 Rust projects tend to use either OpenSSL or rustls to provide SSL/TLS functionality. Rustls users are unaffected.
 
-Most OpenSSL users will use the openssl crate in its default mode, which links to the system OpenSSL, which means that a normal image/binary rebuild will work. However, it's possible to configure the openssl crate to use an embedded OpenSSL, in which case [this query](https://sourcegraph.com/search?q=context:global+f:Cargo.lock+openssl-src+AND+version%5Cs*%3D%5Cs*%22300%5C.%5B0-9%5C.%5D%2B%5C%2B3%5C.0%5C.%5B0-6%5D&patternType=regexp) should reveal projects that need to be updated:
+Most OpenSSL users will use the openssl crate in its default mode, which links to the system OpenSSL, which means that a normal image/binary rebuild will work. However, it's possible to configure the openssl crate to use an embedded OpenSSL, in which case [this query](https://sourcegraph.com/search?q=context:global+f:Cargo.lock+%22openssl-src%22%5Cnversion%5Cs*%3D%5Cs*%22300%5C.%5B0-9%5C.%5D%2B%5C%2B3%5C.0%5C.%5B0-6%5D&patternType=regexp) should reveal projects that need to be updated:
 
 ```regex
-f:Cargo.lock openssl-src AND version\s*=\s*"300\.[0-9\.]+\+3\.0\.[0-6]
+f:Cargo.lock "openssl-src"\nversion\s*=\s*"300\.[0-9\.]+\+3\.0\.[0-6]
 ```
 
 #### Go
