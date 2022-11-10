@@ -12,6 +12,8 @@ socialImage: https://sourcegraphstatic.com/blog/api-docs/api-docs-hero.png
 published: true
 ---
 
+**UPDATE Nov 10, 2022:** Sourcegraph has de-prioritized work on this feature at this time and it has not graduated beyond experimental status. If your team is interested in this functionality, please reach out.
+
 At Sourcegraph, we have a small team working hard on a new experimental feature: API docs.
 
 In order to build awesome code search we've built a global graph of code that has a deep, semantic understanding of the underlying code—which we represent as [LSIF code intelligence data](https://lsif.dev). Using Sourcegraph's LSIF code intelligence data, we can analyze your code and generate API documentation for all of it. We've started with Go code and intend to expand to more languages as we develop this feature.
