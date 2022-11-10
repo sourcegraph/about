@@ -128,19 +128,6 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
                 <li className="nav-item" role="presentation">
                     <a
                         className="nav-link"
-                        href="https://sourcegraph.com/search"
-                        title="Search code"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.nav}
-                        data-button-type="cta"
-                    >
-                        Search code
-                    </a>
-                </li>
-
-                <li className="nav-item" role="presentation">
-                    <a
-                        className="nav-link"
                         href="https://sourcegraph.com/sign-in"
                         title="Sign in"
                         data-button-style={buttonStyle.text}
