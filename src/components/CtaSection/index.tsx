@@ -14,7 +14,6 @@ interface Cta {
     icon?: ReactNode
     ctaStyle?: 'primaryButtonWhite' | 'outlineButtonLight'
     link?: string
-    onClick?: () => void
 }
 
 interface CtaSection {
@@ -35,7 +34,7 @@ interface CtaSection {
  * @param props.link - href string
  * @param props.onClick - click function
  */
-const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) => {
+const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link }) => {
     const textAndIcon = (
         <div className={classNames({ 'tw-flex': icon })}>
             {text}
