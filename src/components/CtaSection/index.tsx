@@ -5,7 +5,6 @@ import Link from 'next/link'
 
 import { buttonStyle, buttonLocation, breakpoints } from '@data'
 import { useWindowWidth } from '@hooks'
-import { plausible } from '@util'
 
 import illustration from './illustration.svg'
 
@@ -100,13 +99,11 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
         text: 'Get free trial',
         ctaStyle: 'primaryButtonWhite',
         link: 'https://signup.sourcegraph.com',
-        onClick: () => plausible('ClickedOnFreeTrialCTA'),
     },
     cta2 = {
         text: 'Request a demo',
         ctaStyle: 'outlineButtonLight',
         link: '/demo',
-        onClick: () => plausible('ClickedOnRequestDemo'),
     },
     cta3 = (
         <p className="tw-mt-xs tw-ml-sm">
@@ -116,10 +113,6 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                 <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => plausible('ClickedOnSelfHostedCTA')}
-                    onKeyDown={() => plausible('ClickedOnSelfHostedCTA')}
-                    tabIndex={0}
-                    role="button"
                     title="Sourcegraph self-hosted solution"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.trySourcegraph}
