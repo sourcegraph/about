@@ -74,16 +74,16 @@ const Hero: FunctionComponent = () => {
                         </a>
                     </div>
                     <div className="col-sm-6 sm:tw-px-0">
-                        <Link href="https://sourcegraph.com" passHref={true}>
+                        <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-outline-primary w-100"
-                                title="Search code"
+                                title="Request a demo"
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.hero}
                                 data-button-type="cta"
                             >
-                                Search code
+                                Request a demo
                             </a>
                         </Link>
                     </div>

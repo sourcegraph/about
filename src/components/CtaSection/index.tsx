@@ -104,10 +104,10 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
         onClick: () => plausible('ClickedOnFreeTrialCTA'),
     },
     cta2 = {
-        text: 'Search code',
+        text: 'Request a demo',
         ctaStyle: 'outlineButtonLight',
-        link: 'https://sourcegraph.com',
-        onClick: () => plausible('ClickedOnSearchCodeCTA'),
+        link: '/demo',
+        onClick: () => plausible('ClickedOnRequestDemo'),
     },
     cta3 = (
         <p className="tw-mt-xs tw-ml-sm">
