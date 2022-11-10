@@ -5,7 +5,6 @@ import Link from 'next/link'
 
 import { buttonStyle, buttonLocation, breakpoints } from '@data'
 import { useWindowWidth } from '@hooks'
-import { plausible } from '@util'
 
 import illustration from './illustration.svg'
 
@@ -14,7 +13,6 @@ interface Cta {
     icon?: ReactNode
     ctaStyle?: 'primaryButtonWhite' | 'outlineButtonLight'
     link?: string
-    onClick?: () => void
 }
 
 interface CtaSection {
@@ -35,7 +33,7 @@ interface CtaSection {
  * @param props.link - href string
  * @param props.onClick - click function
  */
-const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link, onClick }) => {
+const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link }) => {
     const textAndIcon = (
         <div className={classNames({ 'tw-flex': icon })}>
             {text}
@@ -101,13 +99,11 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
         text: 'Get free trial',
         ctaStyle: 'primaryButtonWhite',
         link: 'https://signup.sourcegraph.com',
-        onClick: () => plausible('ClickedOnFreeTrialCTA'),
     },
     cta2 = {
-        text: 'Search code',
+        text: 'Request a demo',
         ctaStyle: 'outlineButtonLight',
-        link: 'https://sourcegraph.com',
-        onClick: () => plausible('ClickedOnSearchCodeCTA'),
+        link: '/demo',
     },
     cta3 = (
         <p className="tw-mt-xs tw-ml-sm">
@@ -117,10 +113,6 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                 <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => plausible('ClickedOnSelfHostedCTA')}
-                    onKeyDown={() => plausible('ClickedOnSelfHostedCTA')}
-                    tabIndex={0}
-                    role="button"
                     title="Sourcegraph self-hosted solution"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.trySourcegraph}
