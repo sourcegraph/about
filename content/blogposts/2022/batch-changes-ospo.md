@@ -13,7 +13,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-bat
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-batch-changes.png
 ---
 
-_**Note:** This is a guest post by our friends at Typeform. Enjoy!_
+_**Note:** This is a guest post by our friends at [Typeform](https://typeform.com). Enjoy!_
 
 ![alt_text](https://miro.medium.com/max/1400/0*tGpSitpiYB-sUdVX "image_tooltip")
 *Saving time. Photo by [Djim Loic](https://unsplash.com/@loic?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)*
