@@ -7,6 +7,7 @@ publishDate: 2022-11-11T07:00
 description: 'Have you ever needed to change many repositories at once? How about 271 of them? It usually takes hours, probably even days, to update all repositories to the new version or a library or add a new security check to all Continuous Integration pipelines. In a world of automation, we can do better than that.'
 tags: [blog]
 slug: 'batch-changing-article'
+canonical:https://medium.com/typeforms-engineering-blog/saving-dozens-of-engineering-hours-by-batch-changing-hundreds-of-repositories-at-a-time-e4c5a454df2d
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-batch-changes.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-batch-changes.png
