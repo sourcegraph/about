@@ -140,5 +140,5 @@ Overall, pushing changes in a batch is an opportunity to transform the organizat
 <p class="mt-3 mb-3">
 <a href="https://sourcegraph.substack.com/p/subscribe" class="btn btn-primary mr-1 mb-1">Subscribe to technical posts</a>
 &nbsp;
-<a href="https://discord.gg/n43FxnCdTz" class="btn btn-primary">Join our Discord</a>
+<a href="https://discord.gg/ZSt5Kr3tpw" class="btn btn-primary">Join our Discord</a>
 </p>
