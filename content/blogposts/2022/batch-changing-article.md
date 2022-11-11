@@ -3,7 +3,7 @@ title: 'Saving dozens of engineering hours by batch-changing hundreds of reposit
 authors:
   - name: Javi Gómez
     url: https://medium.com/@javi_p_t
-publishDate: 2022-10-19T10:00-07:00
+publishDate: 2022-11-11T07:00
 description: 'Have you ever needed to change many repositories at once? How about 271 of them? It usually takes hours, probably even days, to update all repositories to the new version or a library or add a new security check to all Continuous Integration pipelines. In a world of automation, we can do better than that.'
 tags: [blog]
 slug: 'batch-changing-article'
