@@ -6,14 +6,14 @@ authors:
 publishDate: 2022-11-11T07:00
 description: 'Have you ever needed to change many repositories at once? How about 271 of them? It usually takes hours, probably even days, to update all repositories to the new version or a library or add a new security check to all Continuous Integration pipelines. In a world of automation, we can do better than that.'
 tags: [blog]
-slug: 'batch-changing-article'
-canonical:https://medium.com/typeforms-engineering-blog/saving-dozens-of-engineering-hours-by-batch-changing-hundreds-of-repositories-at-a-time-e4c5a454df2d
+slug: 'batch-changing-hundreds-of-repositories-at-typeform'
+canonical: https://medium.com/typeforms-engineering-blog/saving-dozens-of-engineering-hours-by-batch-changing-hundreds-of-repositories-at-a-time-e4c5a454df2d
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-batch-changes.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-batch-changes.png
 ---
 
-# Saving dozens of engineering hours by batch-changing hundreds of repositories at a time
+_**Note:** This is a guest post by our friends at Typeform. Enjoy!_
 
 ![alt_text](https://miro.medium.com/max/1400/0*tGpSitpiYB-sUdVX "image_tooltip")
 *Saving time. Photo by [Djim Loic](https://unsplash.com/@loic?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)*
@@ -133,8 +133,9 @@ Overall, pushing changes in a batch is an opportunity to transform the organizat
 
 ### More posts like this
 
-* [Revisiting the design approach to the Zig programming language](https://about.sourcegraph.com/blog/zig-programming-language-revisiting-design-approach)
-* [A dev's thoughts on developer productivity](https://about.sourcegraph.com/blog/developer-productivity-thoughts)
+* [Introducing Batch Changes](https://about.sourcegraph.com/blog/introducing-batch-changes)
+* [Quickstart for Batch Changes](https://docs.sourcegraph.com/batch_changes/quickstart)
+* [Original post on Medium](https://medium.com/typeforms-engineering-blog/saving-dozens-of-engineering-hours-by-batch-changing-hundreds-of-repositories-at-a-time-e4c5a454df2d)
 
 <p class="mt-3 mb-3">
 <a href="https://sourcegraph.substack.com/p/subscribe" class="btn btn-primary mr-1 mb-1">Subscribe to technical posts</a>
