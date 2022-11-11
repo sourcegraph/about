@@ -31,7 +31,6 @@ interface CtaSection {
  * @param props.icon - icon node for the cta
  * @param props.ctaStyle - prop to display as a primary or outline button
  * @param props.link - href string
- * @param props.onClick - click function
  */
 const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link }) => {
     const textAndIcon = (
