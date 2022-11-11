@@ -8,14 +8,13 @@ description: 'Have you ever needed to change many repositories at once? How abou
 tags: [blog]
 slug: 'batch-changing-hundreds-of-repositories-at-typeform'
 canonical: https://medium.com/typeforms-engineering-blog/saving-dozens-of-engineering-hours-by-batch-changing-hundreds-of-repositories-at-a-time-e4c5a454df2d
-published: true
+published: false
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-batch-changes.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-batch-changes.png
 ---
 
-_**Note:** This is a guest post by our friends at [Typeform](https://typeform.com). Enjoy!_
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-001.jpg" />
 
-![alt_text](https://miro.medium.com/max/1400/0*tGpSitpiYB-sUdVX "image_tooltip")
 *Saving time. Photo by [Djim Loic](https://unsplash.com/@loic?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)*
 
 Have you ever needed to change many repositories at once? How about 271 of them? It usually takes hours, probably even days, to update all repositories to the new version or a library or add a new security check to all Continuous Integration pipelines. In a world of automation, we can do better than that.
@@ -28,10 +27,9 @@ Here at Typeform, we own more than four hundred active git repositories, and wit
 
 ## **Modifying 271 CI Pipelines with Bruno**
 
-![alt_text](https://miro.medium.com/max/1024/0*1DOu3ap_gMpDhdUj "image_tooltip")
-*Bruno Ferreira, Senior DevOps Engineer at Typeform*
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-002.png" />
 
-Bruno Ferreira, Senior DevOps Engineer at Typeform
+*Bruno Ferreira, Senior DevOps Engineer at Typeform*
 
 >***1. Hi, Bruno. Tell us a little bit about your role at Typeform.***
 >
@@ -47,7 +45,7 @@ Bruno Ferreira, Senior DevOps Engineer at Typeform
 >
 >Here’s an example of one of the changes in one of the changesets for this batch change:
 
-![alt_text](https://miro.medium.com/max/1400/0*a3j9aSKVSdHa1DyQ "image_tooltip")
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-003.png" />
 
 >*And here’s the spec we used for the batch change:*
 
@@ -88,7 +86,7 @@ steps:
 >
 >We were able to track the overall progress by checking just one dashboard. In just 48 hours, more than 55% of the pull requests were already merged. We were able to apply all the changesets and complete the migration to the new ephemeral runners in less than a week. Doing this change across all the organization's repositories would be hard to track without a tool like Sourcegraph.
 
-![alt_text](https://miro.medium.com/max/1400/0*Juc-hUdUj8TwUaln "image_tooltip")
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-004.png" />
 
 >***4. What other options apart from Sourcegraph did you consider to do the job, and why did you choose Sourcegraph?***
 >
@@ -100,10 +98,9 @@ Our second experience with the Batch Changes feature was led by David Salvador:
 
 ## **Improving overall security with David**
 
-![alt_text](https://miro.medium.com/max/1400/0*tOj3YzA9YVJiH7Cy "image_tooltip")
-*David Salvador, Platform Security Engineer at Typeform*
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-005.jpg" />
 
-David Salvador, Platform Security Engineer at Typeform
+*David Salvador, Platform Security Engineer at Typeform*
 
 >***1. Hi, David. Tell us a little bit about your role at Typeform***
 >
@@ -138,7 +135,7 @@ Overall, pushing changes in a batch is an opportunity to transform the organizat
 * [Original post on Medium](https://medium.com/typeforms-engineering-blog/saving-dozens-of-engineering-hours-by-batch-changing-hundreds-of-repositories-at-a-time-e4c5a454df2d)
 
 <p class="mt-3 mb-3">
-<a href="https://sourcegraph.substack.com/p/subscribe" class="btn btn-primary mr-1 mb-1">Subscribe to technical posts</a>
-&nbsp;
-<a href="https://discord.gg/ZSt5Kr3tpw" class="btn btn-primary">Join our Discord</a>
+  <a href="https://sourcegraph.substack.com/p/subscribe" class="btn btn-primary mr-1 mb-1">Subscribe to technical posts</a>
+  &nbsp;
+  <a href="https://discord.gg/ZSt5Kr3tpw" class="btn btn-primary">Join our Discord</a>
 </p>
