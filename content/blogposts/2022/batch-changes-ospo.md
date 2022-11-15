@@ -8,7 +8,7 @@ description: 'Have you ever needed to change many repositories at once? How abou
 tags: [blog]
 slug: 'batch-changing-hundreds-of-repositories-at-typeform'
 canonical: https://medium.com/typeforms-engineering-blog/saving-dozens-of-engineering-hours-by-batch-changing-hundreds-of-repositories-at-a-time-e4c5a454df2d
-published: true
+published: false
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-batch-changes.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-batch-changes.png
 ---
