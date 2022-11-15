@@ -8,14 +8,21 @@ description: 'Have you ever needed to change many repositories at once? How abou
 tags: [blog]
 slug: 'batch-changing-hundreds-of-repositories-at-typeform'
 canonical: https://medium.com/typeforms-engineering-blog/saving-dozens-of-engineering-hours-by-batch-changing-hundreds-of-repositories-at-a-time-e4c5a454df2d
-published: false
+published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-batch-changes.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-batch-changes.png
 ---
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-001.jpg" />
+<p
+className="tw-max-w-lg tw-text-center"
+>
+<Figure
+src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-001.jpg"
+/>
 
 *Saving time. Photo by [Djim Loic](https://unsplash.com/@loic?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)*
+
+</p>
 
 Have you ever needed to change many repositories at once? How about 271 of them? It usually takes hours, probably even days, to update all repositories to the new version or a library or add a new security check to all Continuous Integration pipelines. In a world of automation, we can do better than that.
 
@@ -27,9 +34,16 @@ Here at Typeform, we own more than four hundred active git repositories, and wit
 
 ## **Modifying 271 CI Pipelines with Bruno**
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-002.png" />
+<p
+className="tw-max-w-md tw-text-center"
+>
+<Figure 
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-002.png"
+/>
 
 *Bruno Ferreira, Senior DevOps Engineer at Typeform*
+
+</p>
 
 >***1. Hi, Bruno. Tell us a little bit about your role at Typeform.***
 >
@@ -45,7 +59,9 @@ Here at Typeform, we own more than four hundred active git repositories, and wit
 >
 >Here’s an example of one of the changes in one of the changesets for this batch change:
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-003.png" />
+<Figure
+src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-003.png"
+/>
 
 >*And here’s the spec we used for the batch change:*
 
@@ -86,11 +102,13 @@ steps:
 >
 >We were able to track the overall progress by checking just one dashboard. In just 48 hours, more than 55% of the pull requests were already merged. We were able to apply all the changesets and complete the migration to the new ephemeral runners in less than a week. Doing this change across all the organization's repositories would be hard to track without a tool like Sourcegraph.
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-004.png" />
+<Figure 
+src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-004.png" 
+/>
 
 >***4. What other options apart from Sourcegraph did you consider to do the job, and why did you choose Sourcegraph?***
 >
->In the past, for similar situations, we would use[auto-pr](https://github.com/getyourguide/auto-pr/#auto-pr).
+>In the past, for similar situations, we would use [auto-pr](https://github.com/getyourguide/auto-pr/#auto-pr).
 >
 >However, dealing with permissions across repositories, taking care of the different scenarios for a specific change, and keeping track of the pull requests’ progress were the most significant pain points. Sourcegraph solved these three issues for us.
 
@@ -98,9 +116,16 @@ Our second experience with the Batch Changes feature was led by David Salvador:
 
 ## **Improving overall security with David**
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-005.jpg" />
+<p
+className="tw-max-w-lg tw-text-center"
+>
+<Figure
+src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-005.jpg"
+/>
 
 *David Salvador, Platform Security Engineer at Typeform*
+
+</p>
 
 >***1. Hi, David. Tell us a little bit about your role at Typeform***
 >
