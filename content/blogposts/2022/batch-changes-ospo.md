@@ -13,11 +13,16 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-bat
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-batch-changes.png
 ---
 
+<p
+className="tw-max-w-lg tw-text-center"
+>
 <Figure
 src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-001.jpg"
 />
 
 *Saving time. Photo by [Djim Loic](https://unsplash.com/@loic?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)*
+
+</p>
 
 Have you ever needed to change many repositories at once? How about 271 of them? It usually takes hours, probably even days, to update all repositories to the new version or a library or add a new security check to all Continuous Integration pipelines. In a world of automation, we can do better than that.
 
@@ -29,12 +34,16 @@ Here at Typeform, we own more than four hundred active git repositories, and wit
 
 ## **Modifying 271 CI Pipelines with Bruno**
 
+<p
+className="tw-max-w-md tw-text-center"
+>
 <Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-002.png"
-  style="width:50%"
 />
 
 *Bruno Ferreira, Senior DevOps Engineer at Typeform*
+
+</p>
 
 >***1. Hi, Bruno. Tell us a little bit about your role at Typeform.***
 >
@@ -99,7 +108,7 @@ src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-t
 
 >***4. What other options apart from Sourcegraph did you consider to do the job, and why did you choose Sourcegraph?***
 >
->In the past, for similar situations, we would use[auto-pr](https://github.com/getyourguide/auto-pr/#auto-pr).
+>In the past, for similar situations, we would use [auto-pr](https://github.com/getyourguide/auto-pr/#auto-pr).
 >
 >However, dealing with permissions across repositories, taking care of the different scenarios for a specific change, and keeping track of the pull requests’ progress were the most significant pain points. Sourcegraph solved these three issues for us.
 
@@ -107,11 +116,16 @@ Our second experience with the Batch Changes feature was led by David Salvador:
 
 ## **Improving overall security with David**
 
+<p
+className="tw-max-w-lg tw-text-center"
+>
 <Figure
 src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-005.jpg"
 />
 
 *David Salvador, Platform Security Engineer at Typeform*
+
+</p>
 
 >***1. Hi, David. Tell us a little bit about your role at Typeform***
 >
