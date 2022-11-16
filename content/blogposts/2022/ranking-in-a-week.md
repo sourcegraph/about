@@ -24,7 +24,7 @@ Ranking is a only small amuse-bouche of what we have planned in the future.
 
 ### High-level overview
 
-PageRank is an algorithm created by Google co-founder Larry Page in 1998 to assign a numeric value to each webpage indexed by the search engine. The algorithm takes as input a graph representing the set of webpages and links between them, and outputs a probability of a user langing a particular webpage (for every webpage) by randomly clicking on links. Webpages with with many or highly _relevant_ links will have a higher PageRank score, and are presented higher in the list of matching search results.
+PageRank is an algorithm created by Google co-founder Larry Page in 1998 to assign a numeric value to each webpage indexed by the search engine. The algorithm takes as input a graph representing the set of webpages and links between them, and outputs a probability of a user landing on a particular webpage (for every webpage) by randomly clicking on links. Webpages with with many or highly _relevant_ links will have a higher PageRank score, and are presented higher in the list of matching search results.
 
 We utilize the PageRank algorithm to rank source code results in a similar way. In our current implementation, we construct a graph of _source code text documents_ where an edge between two documents indicates a reference of a symbol (variable, function, type, etc) defined in another file.
 
@@ -48,11 +48,11 @@ We [constructed an initial `ranking` service](https://github.com/sourcegraph/sou
 
 Between October 10th and 12th, I took a small journey to [experimentally calculate PageRank](https://github.com/sourcegraph/sourcegraph/pull/42771) over small reference graphs. This was mostly a familiarization exercise for myself, and the code that lands in this PR has not been active on any machine (outside of the four developers actively working on this effort, but even that seems too high), despite still being usable on the `main` branch. Stay tuned for future updates on the evolution of this code!
 
-At this point, the ask for PageRank deliverable becomes concrete, and we settle on an adequate, although incredibly brisk, timeline. On October 23rd, our effort begins in ernest.
+At this point, the ask for PageRank deliverable becomes concrete, and we settle on an adequate, although incredibly brisk, timeline. On October 23rd, our effort begins in earnest.
 
 We begin by concentrating on the _construction_ of a graph over which we can run PageRank. Our chosen solution employs a background worker that [periodically exports code intelligence data](https://github.com/sourcegraph/sourcegraph/pull/43334) into CSV files in a GCS bucket. For each repository for which we have precise code intelligence data, we export several files containing data related to the tip of that repository's default branch.
 
-First, we output `documents.csv`, which correlates a repo and file path pair with a ranodmly generated identifier (increasing intergers for the sake of simplicity in this example). These items correspond to the white verticies in the graph of text documents shown earlier in this post.
+First, we output `documents.csv`, which correlates a repo and file path pair with a randomly generated identifier (increasing integers for the sake of simplicity in this example). These items correspond to the white vertices in the graph of text documents shown earlier in this post.
 
 ```csv
 pathID,repo,path
