@@ -100,11 +100,11 @@ The output data that Spark gives us is also a series of CSV file in a second GCS
 
 ```csv
 repo,path,rank
-github.com/sourcegraph/blog-post-example,internal/init.go,7.266468968
-github.com/sourcegraph/blog-post-example,cmd/audit/main.go,0.567945095
+github.com/sourcegraph/blog-post-example,internal/handler.go,9.657402401
+github.com/sourcegraph/log,logger.go,15.567945095
 github.com/sourcegraph/blog-post-example,internal/database.go,10.999427919
 github.com/sourcegraph/blog-post-example,internal/experiments.go,8.604131051
-github.com/sourcegraph/blog-post-example,internal/handler.go,9.657402401
+github.com/sourcegraph/blog-post-example,internal/init.go,7.266468968
 github.com/sourcegraph/blog-post-example,cmd/app/main.go,0.703945210
 ...
 ```
@@ -117,8 +117,4 @@ Although we've covered the bulk of the data pipeline, [other](https://github.com
 
 ### Looking to the future
 
-**TODO: Hint at what this pipeline unlocks**
-
-**TODO: Thesis conclusion - we have a pile of precise data and a world of opportunity.**
-
-> We will continue to make improvements to our search relevance in every dimension over the coming days, weeks, months, and years. We will scale it, tune it, compute it in different ways for different customer profiles, make it customizable with customer-provided ranking signals, and build hundreds of code-intelligence-driven improvements.
+In a little bit over a week, we built a data pipeline to bring incredible new value to Sourcegraph that will fundamentally improve the user experience for code search and code navigation. As our Head of Engineering notes, we will continue to make improvements to our search relevance in every dimension over the coming days, weeks, months, and years. We have a pile of precise data, and now we have a proven way to compute different properties over our global source graph at scale.
