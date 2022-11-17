@@ -92,7 +92,7 @@ pathID,monikerType,schema,identifier
 6,import,gomod,github.com/sourcegraph/log/Logger.Log
 ```
 
-We would later round out this implemetation by also [pruning irrelevant data](https://github.com/sourcegraph/sourcegraph/pull/43832) from the target GCS bucket as newer indexes for repositories replace older indexes. Since the landing of this export task, it has become the basis of several other solutions currently in-flight (details to come in future blog posts).
+We would later round out this implementation by also [pruning irrelevant data](https://github.com/sourcegraph/sourcegraph/pull/43832) from the target GCS bucket as newer indexes for repositories replace older indexes. Since the landing of this export task, it has become the basis of several other solutions currently in-flight (details to come in future blog posts).
 
 On October 27th, after a few successful runs of a distributed Spark job over the graph described by these CSV files and hand-vetting the document scores results to ensure our mental model and reality match, we begin to [consume PageRank outputs into our database](https://github.com/sourcegraph/sourcegraph/pull/43566), for use in the stub service implementation referenced earlier. This "completes the loop" of data from the Sourcegraph instance's point of view: we are continuously refreshing our output graph, and continuously re-consuming PageRanks cores as we re-run the computation.
 
