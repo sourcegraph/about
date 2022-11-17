@@ -1,6 +1,6 @@
 ---
 title: 'Ranking in a week'
-description: 'In just over a week, four developers designed and built a data pipeline utilizing Sourcegraph\'s wealth of source code data. The result is Sourcegraph's new search ranking system inspired by PageRank.'
+description: 'In just over a week, four developers designed and built a data pipeline utilizing Sourcegraph\'s wealth of source code data. The result is Sourcegraph\'s new search ranking system inspired by PageRank.'
 authors:
   - name: Eric Fritz
     url: https://eric-fritz.com
