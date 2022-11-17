@@ -29,10 +29,7 @@ export const Hackathons: FunctionComponent = () => (
                     </p>
                     <ul>
                         <li>
-                            We'll give you access to all of our{' '}
-                            <Link href="/pricing" passHref={true}>
-                                Enterprise features
-                            </Link>
+                            We'll give you access to all of our <Link href="/pricing">Enterprise features</Link>
                         </li>
                         <li>We'll give you live tech support</li>
                         <li>We'll ship you a bag of stickers, shirts, socks, and other great swag!</li>
@@ -59,16 +56,14 @@ export const Hackathons: FunctionComponent = () => (
                         <ul>
                             <li>
                                 We'll give you access to all of our{' '}
-                                <Link href="/pricing" passHref={true}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a
-                                        title="Enterprise features"
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.body}
-                                        data-button-type="cta"
-                                    >
-                                        Enterprise features
-                                    </a>
+                                <Link
+                                    href="/pricing"
+                                    title="Enterprise features"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    Enterprise features
                                 </Link>
                             </li>
                             <li>We'll give you live tech support</li>

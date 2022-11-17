@@ -36,16 +36,14 @@ const items = [
                     <p className="py-3">
                         No heroics required: Quickly understand all the context and dependencies around your codebase
                         with{' '}
-                        <Link href="/code-search" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="Code Search"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Code Search
-                            </a>
+                        <Link
+                            href="/code-search"
+                            title="Code Search"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Code Search
                         </Link>{' '}
                         so you can find the root cause of an incident with confidence and speed. Document work in
                         progress with{' '}
@@ -72,16 +70,14 @@ const items = [
                 text={
                     <p className="py-3">
                         Automate the deployment of fixes everywhere and at scale. With{' '}
-                        <Link href="/batch-changes" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="Batch Changes"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Batch Changes
-                            </a>
+                        <Link
+                            href="/batch-changes"
+                            title="Batch Changes"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Batch Changes
                         </Link>
                         , you can automate code changes and monitor the merge status of each resulting PR. Refactor code
                         to replace insecure functions, update vulnerable packages, or modify container configurations
@@ -99,16 +95,14 @@ const items = [
                 text={
                     <p className="py-3">
                         Visualize fixes in progress and track their deployment. With{' '}
-                        <Link href="/code-insights" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="Code Insights"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Code Insights
-                            </a>
+                        <Link
+                            href="/code-insights"
+                            title="Code Insights"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Code Insights
                         </Link>
                         , get visibility into remediation efforts and share progress with team leaders and all of your
                         customers.
@@ -242,18 +236,16 @@ const IncidentResponsePage: FunctionComponent = () => (
                 cta={
                     <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
                         <div className="mb-3 mb-md-0">
-                            <Link href="https://sourcegraph.com" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="btn btn-primary w-100 max-w-350"
-                                    title="Search code"
-                                    data-button-style={buttonStyle.primary}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                >
-                                    Search code
-                                </a>
-                            </Link>
+                            <a
+                                href="https://sourcegraph.com"
+                                className="btn btn-primary w-100 max-w-350"
+                                title="Search code"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
+                                Search code
+                            </a>
                         </div>
                         <div className="ml-md-3">
                             <a
@@ -320,17 +312,12 @@ const IncidentResponsePage: FunctionComponent = () => (
                         </p>
                         <Link
                             href="/case-studies/cloudflare-accelerates-debugging-and-improves-security"
-                            passHref={true}
+                            title="Read the Cloudflare case study"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
                         >
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="Read the Cloudflare case study"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Read the Cloudflare case study
-                            </a>
+                            Read the Cloudflare case study
                         </Link>
                         <img
                             src="/external-logos/cloudflare-logo.svg"
@@ -370,17 +357,15 @@ const IncidentResponsePage: FunctionComponent = () => (
                     >
                         Get free trial
                     </a>
-                    <Link href="/use-cases" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className="mt-4 tw-flex tw-justify-center "
-                            title="Explore other use cases"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            Explore other use cases
-                        </a>
+                    <Link
+                        href="/use-cases"
+                        className="mt-4 tw-flex tw-justify-center "
+                        title="Explore other use cases"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        Explore other use cases
                     </Link>
                 </div>
             </div>

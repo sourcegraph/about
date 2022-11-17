@@ -266,7 +266,6 @@ export const OPENSSL_PYTHON: SearchInsightData = {
         { x: new Date('November 02, 2022'), a: 378 },
         { x: new Date('November 05, 2022'), a: 378 },
         { x: new Date('November 07, 2022'), a: 367 },
-        
     ],
     series: [
         {
@@ -275,8 +274,8 @@ export const OPENSSL_PYTHON: SearchInsightData = {
             stroke: DATA_SERIES_COLORS.BLUE,
             query: (
                 <>
-                
-                    <span className={styles.keyword}>file:</span>requirements.*txt cryptography(\s*[=~]=\s*(36\.|37\.|38\.0\.[0-2])){' '}
+                    <span className={styles.keyword}>file:</span>requirements.*txt
+                    cryptography(\s*[=~]=\s*(36\.|37\.|38\.0\.[0-2])){' '}
                     <span className={styles.keyword}>patternType:</span>regexp{' '}
                     <span className={styles.keyword}>archived:</span>no <span className={styles.keyword}>fork:</span>no
                 </>

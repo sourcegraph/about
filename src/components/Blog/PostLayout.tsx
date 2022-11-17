@@ -30,17 +30,15 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
         <header className={headerClassName}>
             <h2>
                 {renderTitleAsLink === true ? (
-                    <Link href={url} passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className="tw-block"
-                            title={post.frontmatter.title}
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            {post.frontmatter.title}
-                        </a>
+                    <Link
+                        href={url}
+                        className="tw-block"
+                        title={post.frontmatter.title}
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        {post.frontmatter.title}
                     </Link>
                 ) : (
                     post.frontmatter.title
@@ -65,16 +63,14 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                                         {a.name}
                                     </a>
                                 ) : (
-                                    <Link href={a.url} passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            title={a.name}
-                                            data-button-style={buttonStyle.text}
-                                            data-button-location={buttonLocation.body}
-                                            data-button-type="cta"
-                                        >
-                                            {a.name}
-                                        </a>
+                                    <Link
+                                        href={a.url}
+                                        title={a.name}
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
+                                        {a.name}
                                     </Link>
                                 )
                             ) : (

@@ -35,16 +35,14 @@ const items = [
                 text={
                     <p className="py-3">
                         Find out if a teammate has already solved your problem. With{' '}
-                        <Link href="/code-search" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="Code Search"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Code Search
-                            </a>
+                        <Link
+                            href="/code-search"
+                            title="Code Search"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Code Search
                         </Link>
                         , you can quickly search across all your repositories to find the code you need.
                     </p>
@@ -75,16 +73,14 @@ const items = [
                     <p className="py-3">
                         Spend less time on manual updates. Whether refactoring duplicate code or updating a shared
                         library, automate changes seamlessly across your entire codebase with{' '}
-                        <Link href="/batch-changes" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="Batch Changes"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Batch Changes
-                            </a>
+                        <Link
+                            href="/batch-changes"
+                            title="Batch Changes"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Batch Changes
                         </Link>
                         .
                     </p>
@@ -125,16 +121,14 @@ const items = [
                     <p className="py-3">
                         Get visibility into code reuse progress. Track the prevalence of shared code in your codebase
                         over time with{' '}
-                        <Link href="/code-insights" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="Code Insights"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Code Insights
-                            </a>
+                        <Link
+                            href="/code-insights"
+                            title="Code Insights"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Code Insights
                         </Link>
                         .
                     </p>
@@ -222,18 +216,16 @@ const CodeReusePage: FunctionComponent = () => (
                 cta={
                     <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
                         <div className="mb-3 mb-md-0">
-                            <Link href="https://sourcegraph.com" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="btn btn-primary w-100 max-w-350"
-                                    title="Search code"
-                                    data-button-style={buttonStyle.primary}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                >
-                                    Search code
-                                </a>
-                            </Link>
+                            <a
+                                href="https://sourcegraph.com"
+                                className="btn btn-primary w-100 max-w-350"
+                                title="Search code"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
+                                Search code
+                            </a>
                         </div>
                         <div className="ml-md-3">
                             <a
@@ -324,17 +316,15 @@ const CodeReusePage: FunctionComponent = () => (
                     >
                         Get free trial
                     </a>
-                    <Link href="/use-cases" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className="mt-4 tw-flex tw-justify-center "
-                            title="Explore other use cases"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            Explore other use cases
-                        </a>
+                    <Link
+                        href="/use-cases"
+                        className="mt-4 tw-flex tw-justify-center "
+                        title="Explore other use cases"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        Explore other use cases
                     </Link>
                 </div>
             </div>

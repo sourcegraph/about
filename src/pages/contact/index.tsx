@@ -62,17 +62,15 @@ const ContactHome: FunctionComponent = () => (
                             <h5 className="card-header">Sales</h5>
                             <div className="card-body">
                                 <p className="card-text tw-mb-2">For information about products and purchasing:</p>
-                                <Link href="/demo" passHref={true}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a
-                                        className="btn btn-outline-primary stretched-link"
-                                        title="Contact sales"
-                                        data-button-style={buttonStyle.outline}
-                                        data-button-location={buttonLocation.body}
-                                        data-button-type="cta"
-                                    >
-                                        Contact sales
-                                    </a>
+                                <Link
+                                    href="/demo"
+                                    className="btn btn-outline-primary stretched-link"
+                                    title="Contact sales"
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    Contact sales
                                 </Link>
                             </div>
                         </div>

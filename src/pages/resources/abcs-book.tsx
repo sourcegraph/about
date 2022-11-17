@@ -168,16 +168,14 @@ export const AbcsEbook: FunctionComponent = () => (
                 <p>
                     Sourcegraph empowers all developers to explore, navigate and better understand all code, faster,
                     with{' '}
-                    <Link href="/code-search" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            title="Universal Code Search"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            Universal Code Search
-                        </a>
+                    <Link
+                        href="/code-search"
+                        title="Universal Code Search"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        Universal Code Search
                     </Link>
                     . Sourcegraph's mission is to make it easier and faster for developers to work on solving problems.
                 </p>

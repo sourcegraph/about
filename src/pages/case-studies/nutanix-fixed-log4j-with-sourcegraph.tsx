@@ -176,16 +176,14 @@ export const CaseStudy: FunctionComponent = () => (
                         </a>
                         . Jon used Sourcegraph to see where JMSAppender existed, fixed it, and sent out a release. “That
                         took almost less than five minutes,” Jon said. Sourcegraph released a{' '}
-                        <Link href="/blog/log4j-log4shell-0-day/" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="blog post"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                blog post
-                            </a>
+                        <Link
+                            href="/blog/log4j-log4shell-0-day/"
+                            title="blog post"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            blog post
                         </Link>{' '}
                         that explained how other companies addressing Log4j could use code search for similar benefits.
                     </p>
@@ -232,8 +230,8 @@ export const CaseStudy: FunctionComponent = () => (
                         or OpenGrok,” he added.
                     </p>
                     <p>
-                        Confidence spread from Jon to the rest of the team and throughout the company. With
-                        <Link href="/blog/introducing-search-contexts/"> search contexts</Link>, Jon was able to share
+                        Confidence spread from Jon to the rest of the team and throughout the company. With{' '}
+                        <Link href="/blog/introducing-search-contexts/">search contexts</Link>, Jon was able to share
                         relevant contexts and queries, showing the team how they could verify whether a given Log4j
                         instance was present or absent. He could show them precisely what they changed.
                     </p>
@@ -269,8 +267,8 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
                     <p>
                         Log4j is one of many reasons why monitoring and updating is now a renewed priority. “Companies
-                        will have to be more diligent,” Jon said. With Sourcegraph, Nutanix is prepared to
-                        <Link href="/use-cases/code-security"> find and fix the next vulnerability</Link>.
+                        will have to be more diligent,” Jon said. With Sourcegraph, Nutanix is prepared to{' '}
+                        <Link href="/use-cases/code-security">find and fix the next vulnerability</Link>.
                     </p>
 
                     <div className="tw-mt-5xl">

@@ -10,7 +10,6 @@ import illustration from './illustration.svg'
 
 interface Cta {
     text: string
-    icon?: ReactNode
     ctaStyle?: 'primaryButtonWhite' | 'outlineButtonLight'
     link?: string
 }
@@ -28,17 +27,10 @@ interface CtaSection {
  *
  * @param props - component props
  * @param props.text - text for the cta
- * @param props.icon - icon node for the cta
  * @param props.ctaStyle - prop to display as a primary or outline button
  * @param props.link - href string
  */
-const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link }) => {
-    const textAndIcon = (
-        <div className={classNames({ 'tw-flex': icon })}>
-            {text}
-            {icon && <span className="tw-ml-xxs">{icon}</span>}
-        </div>
-    )
+const Cta: FunctionComponent<Cta> = ({ text, ctaStyle, link }) => {
     const externalLink = link?.includes('http')
 
     let ctaTrackingStyle = buttonStyle.text
@@ -65,14 +57,14 @@ const Cta: FunctionComponent<Cta> = ({ text, icon, ctaStyle, link }) => {
             target={externalLink ? '_blank' : undefined}
             rel={externalLink ? 'noopener noreferrer' : undefined}
         >
-            {textAndIcon}
+            {text}
         </a>
     )
     let cta = linkElement
 
     if (link?.includes('http')) {
         cta = (
-            <Link href={link} passHref={true}>
+            <Link legacyBehavior={true} href={link} passHref={true}>
                 {linkElement}
             </Link>
         )
@@ -107,19 +99,17 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
     cta3 = (
         <p className="tw-mt-xs tw-ml-sm">
             Want to deploy yourself?{' '}
-            <Link href="https://docs.sourcegraph.com" passHref={true}>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Sourcegraph self-hosted solution"
-                    data-button-style={buttonStyle.text}
-                    data-button-location={buttonLocation.trySourcegraph}
-                    data-button-type="cta"
-                >
-                    Try our self-hosted solution.
-                </a>
-            </Link>
+            <a
+                href="https://docs.sourcegraph.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Sourcegraph self-hosted solution"
+                data-button-style={buttonStyle.text}
+                data-button-location={buttonLocation.trySourcegraph}
+                data-button-type="cta"
+            >
+                Try our self-hosted solution.
+            </a>
         </p>
     ),
 }) => {
