@@ -4,7 +4,7 @@ description: "In just over a week, four developers designed and built a data pip
 authors:
   - name: Eric Fritz
     url: https://eric-fritz.com
-publishDate: 2022-11-17T12:00+00:00
+publishDate: 2022-11-18T12:00+00:00
 tags: [blog]
 slug: ranking-in-a-week
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/TODO.png
@@ -94,7 +94,15 @@ pathID,monikerType,schema,identifier
 
 We would later round out this implementation by also [pruning irrelevant data](https://github.com/sourcegraph/sourcegraph/pull/43832) from the target GCS bucket as newer indexes for repositories replace older indexes. Since the landing of this export task, it has become the basis of several other solutions currently in-flight (details to come in future blog posts).
 
-On October 27th, after a few successful runs of a distributed Spark job over the graph described by these CSV files and hand-vetting the document scores results to ensure our mental model and reality match, we begin to [consume PageRank outputs into our database](https://github.com/sourcegraph/sourcegraph/pull/43566), for use in the stub service implementation referenced earlier. This "completes the loop" of data from the Sourcegraph instance's point of view: we are continuously refreshing our output graph, and continuously re-consuming PageRanks cores as we re-run the computation.
+By October 27th, we had a few successful runs of a distributed Spark job over the graph described by these CSV files and hand-vetted the document scores results to ensure our mental model and reality match. In order to build a better intuition of how PageRank will relate to source code documents, we constructed several variations of the graph:
+
+1. Edges are directional, and `a -> b` exists when `a` refers to a symbol defined in `b`
+1. Edges are directional, and `b -> a` exists when `a` refers to a symbol defined in `b`
+1. Edges are undirected, and both `a -> b` and `b -> a` exist when one document refers to a symbol defined in the other
+
+Interestingly, we ended up running PageRank over an undirected graph, as directional edges tended to rank auto-generated files with _tons_ of definitions (e.g., a protobuf code gen) very highly, but rank `main`-like files that refers to lots of definitions but defines few themselves very low. This is the opposite of what we want: the glue code with few inbound edges but lots of (unique) outbound edges indicates the collision of two program boundaries. These usages are precisely the ones that should be advertised, and using undirected edges gives us the best of both directional options by boosting files with multiple inbound _and_ outbound edges.
+
+We could then begin to [consume PageRank outputs into our database](https://github.com/sourcegraph/sourcegraph/pull/43566), for use in the stub service implementation referenced earlier. This "completes the loop" of data from the Sourcegraph instance's point of view: we are continuously refreshing our output graph, and continuously re-consuming PageRanks cores as we re-run the computation.
 
 The output data that Spark gives us is also a series of CSV files in a second GCS bucket, each with the following form:
 
@@ -117,4 +125,6 @@ Although we've covered the bulk of the data pipeline, [other](https://github.com
 
 ### Looking to the future
 
-In a little bit over a week, we built a data pipeline to bring incredible new value to Sourcegraph that will fundamentally improve the user experience for code search and code navigation. As our Head of Engineering notes, we will continue to make improvements to our search relevance in every dimension over the coming days, weeks, months, and years. We have a pile of precise data, and now we have a proven way to compute different properties over our global source graph at scale.
+In a little bit over a week, we built a data pipeline to bring incredible new value to Sourcegraph that will fundamentally improve the user experience for code search and code navigation. As our Head of Engineering notes, we will continue to make improvements to our search relevance in every dimension over the coming days, weeks, months, and years. One improvement I'm particularly excited to jump into is running PageRank over much larger data with higher granularity: individual _symbols_ instead of _documents_.
+
+We have a pile of precise data, and now we have a proven way to compute different properties over our global source graph at scale.
