@@ -24,7 +24,7 @@ Ranking is a only small amuse-bouche of what we have planned in the future.
 
 ### High-level overview
 
-PageRank is an algorithm created by Google co-founder Larry Page in 1998 to assign a numeric value to each webpage indexed by the search engine. The algorithm takes as input a graph representing the set of webpages and links between them, and outputs a probability of a user landing on a particular webpage (for every webpage) by randomly clicking on links. Webpages with many or highly _relevant_ links will have a higher PageRank score, and are presented higher in the list of matching search results.
+PageRank is an algorithm created by Google co-founder Larry Page in 1998 to assign a numeric value to each webpage indexed by the search engine. The algorithm takes as input a graph representing the set of webpages and links between them, and outputs a probability of a user landing on a particular webpage (for every webpage) by randomly clicking on links. Webpages with many or highly _relevant_ backlinks will have a higher PageRank score, and are presented higher in the list of matching search results.
 
 We utilize the PageRank algorithm to rank source code results in a similar way. In our current implementation, we construct a graph of _source code text documents_ where an edge between two documents indicates a reference of a symbol (variable, function, type, etc) defined in another file.
 
