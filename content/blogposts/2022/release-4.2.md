@@ -8,17 +8,6 @@ published: false
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.2/sourcegraph-4-2-hero.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.2/sourcegraph-4-2-hero.png
 changelogItems:
-# Added
-  - description: Access token creation is now part of the audit log.
-    url: https://github.com/sourcegraph/sourcegraph/pull/43226
-    category: Admin
-  - description: GitHub and GitLab OAuth login attempts are now recorded in the audit log.
-    url: https://github.com/sourcegraph/sourcegraph/pull/43886
-    category: Admin
-  - description: OIDC success/fail login attempts are now a part of the audit log.
-    url: https://github.com/sourcegraph/sourcegraph/pull/44467
-    category: Admin
-
   - description: The search input has a new search history button, and search history can be cycled via the up/down arrow keys for quick access to previous searches.
     url: https://github.com/sourcegraph/sourcegraph/pull/44544
     category: Search
@@ -36,6 +25,9 @@ changelogItems:
     category: API
   - description: Repositories can now be ordered by size on the repo admin page to make it easy to find the largest synced repos.
     url: https://github.com/sourcegraph/sourcegraph/pull/44360
+    category: Admin
+  - description: Access token creation, GitHub aned GitLab OAuth login attempts, and OIDC login attempts are now part of the audit log.
+    url: https://github.com/sourcegraph/sourcegraph/pull/43886
     category: Admin
 ---
 
