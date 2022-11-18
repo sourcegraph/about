@@ -7,8 +7,8 @@ authors:
 publishDate: 2022-11-18T12:00+00:00
 tags: [blog]
 slug: ranking-in-a-week
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/TODO.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/TODO.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/ranking/page-rank-tech-bog-illustration-final.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/ranking/page-rank-tech-bog-illustration-final.png
 published: true
 ---
 
