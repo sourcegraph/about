@@ -20,7 +20,7 @@ changelogItems:
 
 #### Secrets in server-side Batch Changes (Beta)
 
-It's common to have to user secrets in batch changes: for example, to have a step install packages from a private registry, to create tickets from within a batch change step, or to make authentified API calls to other services. In local runs, secrets can be either hardcoded in the spec or loaded from environment variables using [`step.env`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-env), but until now there was no robust and secure way to manage secrets for server-side runs.
+It's common to use secrets in batch changes steps: for example, to authenticate to a private registry to install packages, to create tickets from within a batch change, or to make authentified API calls to other services. In local runs, secrets can be either hardcoded in the spec or loaded from environment variables using [`step.env`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-env), but until now there was no robust and secure way to manage secrets for server-side runs.
 
 That's why we're releasing [executor secrets](https://docs.sourcegraph.com/admin/executor_secrets). You can now define secrets to be passed to server-side runs. They can then be referenced as `env` variables in the batch change spec.
 
