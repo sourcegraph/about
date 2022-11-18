@@ -9,46 +9,52 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.2/sourcegraph-4-2-hero.png
 changelogItems:
 # Added
-  - description: Creating access tokens is now part of the audit log.
+  - description: Access token creation is now part of the audit log.
     url: https://github.com/sourcegraph/sourcegraph/pull/43226
     category: Admin
-  - description: "Added `codeIntelAutoIndexing.indexerMap` to site-config that allows users to update the indexers used when inferring precise code intelligence auto-indexing jobs (without having to overwrite the entire inference scripts). For example, `\"codeIntelAutoIndexing.indexerMap\": {\"go\": \"my.registry/sourcegraph/lsif-go\"}` will casue Go projects to use the specified container (in a alternative Docker registry)."
-    url: https://github.com/sourcegraph/sourcegraph/pull/43199
-    category: 
-  - description: Code Insights data points that do not contain any results will display zero instead of being omitted from the visualization for clarity. Only applies to insight data created after 4.2.
-    url: https://github.com/sourcegraph/sourcegraph/pull/43166
-    category: Code Insights
-  - description: A structural search diagnostic to warn users when a language filter is not set.
-    url: https://github.com/sourcegraph/sourcegraph/pull/43835
-    category: Search
   - description: GitHub and GitLab OAuth login attempts are now recorded in the audit log.
     url: https://github.com/sourcegraph/sourcegraph/pull/43886
     category: Admin
-  - description: When rendering a file which is backed by Git LFS, we show a page informing the file is LFS and linking to the file on the codehost. Previously we rendered the LFS pointer.
-    url: https://github.com/sourcegraph/sourcegraph/pull/43686
-    category: 
   - description: OIDC success/fail login attempts are now a part of the audit log.
     url: https://github.com/sourcegraph/sourcegraph/pull/44467
     category: Admin
-  - description: "A new experimental GraphQL query, `permissionsSyncJobs`, that lists the states of recently completed permissions sync jobs and the state of each provider. The TTL of entries retrained can be configured with `authz.syncJobsRecordsTTL`. [#44387](https://github.com/sourcegraph/sourcegraph/pull/44387),"
-    url: https://github.com/sourcegraph/sourcegraph/pull/44258
-    category: API
+
   - description: The search input has a new search history button, and search history can be cycled via the up/down arrow keys for quick access to previous searches.
     url: https://github.com/sourcegraph/sourcegraph/pull/44544
     category: Search
-  - description: Repositories can now be ordered by size on the repo admin page.
-    url: https://github.com/sourcegraph/sourcegraph/pull/44360
-    category: Admin
-# Changed
-  - description: "Updated minimum required version of `git` to 2.38.1 in `gitserver` and `server` Docker image. This addresses: https://github.blog/2022-04-12-git-security-vulnerability-announced/ and https://lore.kernel.org/git/d1d460f6-e70f-b17f-73a5-e56d604dd9d5@github.com/."
-    url: https://github.com/sourcegraph/sourcegraph/pull/43615
-    category: 
-  - description: "When a `content:` filter is used in a query, only file contents will be searched (previously any of file contents, paths, or repos were searched). However, as before, if `type:` is also set, the `content:` filter will search for results of the specified `type:`."
+  - description: "When the `content:` filter is used in a query, it now behaves more predictably and only saerches file contents. Previously, file contents, paths, and repos were searched. However, as before, if `type:` is also set, the `content:` filter will search for results of the specified `type:`."
     url: https://github.com/sourcegraph/sourcegraph/pull/43442
     category: Search
+  - description: When rendering a file which is backed by Git LFS, Sourcegraph now displays a page that links directly to the file on the codehost. Previously we rendered the LFS pointer.
+    url: https://github.com/sourcegraph/sourcegraph/pull/43686
+    category: Search
+  - description: Code Insights data points that do not contain any results will display zero instead of being omitted from the visualization for clarity. This only applies to insight data created after 4.2.
+    url: https://github.com/sourcegraph/sourcegraph/pull/43166
+    category: Code Insights
+  - description: "A new experimental GraphQL query, `permissionsSyncJobs`, now lists the states of recently completed permissions sync jobs and the state of each provider to check that syncing is working as intended. The TTL of entries can be configured with `authz.syncJobsRecordsTTL`."
+    url: https://github.com/sourcegraph/sourcegraph/pull/44387
+    category: API
+  - description: Repositories can now be ordered by size on the repo admin page to make it easy to find the largest synced repos.
+    url: https://github.com/sourcegraph/sourcegraph/pull/44360
+    category: Admin
 ---
 
-<Badge link="" text="Feature Name" color="blue" size="small" />
+Sourcegraph 4.2 is here! This month, we are kicking off significant work to improve the scale, speed, and security of Sourcegraph.
+
+The Sourcegraph platform is built to make developers' lives easier. With a great code intelligence platform, developers are able to find and understand code fast, stay in flow, and focus more on what they love doing: writing great code. In order to do this, Sourcegraph needs to fit the requirements of all sizes of engineering teams. These requirements include operating across massive numbers of repositories, being able to search millions of commits, and baking security into every part of the product.
+
+To accomplish these things and deliver a product for even the most demanding engineering teams, Sourcegraph is putting extra focus on scale, speed, and security, and you will see these themes surface frequently over the next several releases.
+
+<Badge link="https://docs.sourcegraph.com/admin/audit_log#on-premises" text="Admin" color="violet" size="small" />
+
+#### Get enhanced security visibility with audit logs
+
+Sourcegraph users frequently want to answer questions regarding who has accessed their instance, what actions they've taken, and when. Sourcegraph already provides some information (such as monitoring and pings) to this end, but more robust information is needed to serve pentesting and security testing use cases.
+
+In 4.2, Sourcegraph now ships with an easy-to-consume audit log. The log contains security events, Gitserver access events, and GraphQL requests. You can read [more about the audit log in our docs](https://docs.sourcegraph.com/admin/audit_log#on-premises).
+
+<br />
+<Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 
 #### Secrets in server-side Batch Changes (Beta)
 
@@ -61,9 +67,4 @@ Sourcegraph supports two types of secrets: namespaced secrets that can only be a
 This feature is in Beta, and feedback is very welcome. Tweet at us, or drop a comment in this [issue](https://github.com/sourcegraph/sourcegraph/issues/44597)!
 
 <br />
-<Badge link="" text="Feature name" color="cerise" size="small" />
-
-#### Highlight 2
-
-<br />
-Sourcegraph 4.2 is now available to download. For Sourcegraph Cloud users, instances will be upgraded to 4.2 beginning (Date).
+Sourcegraph 4.2 is now available to download. For Sourcegraph Cloud users, instances will be upgraded to 4.2 beginning November 23.
