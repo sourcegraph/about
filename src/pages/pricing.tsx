@@ -93,7 +93,7 @@ const faqData = [
         q: 'Is there a free trial of the paid plans?',
         a: (
             <p>
-                Yes. We offer a free, 30-day trial for our paid plans.{' '}
+                Yes. We offer a free trial for our paid plans.{' '}
                 <Link href="https://signup.sourcegraph.com" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
@@ -265,16 +265,15 @@ const PricingPage: FunctionComponent = () => {
             </div>
 
             <CtaSection
-                background="mars"
                 title="Free for small teams"
-                description="Small teams can use a limited version of Sourcegraph’s code intelligence platform for free to search personal and open source projects. The free version can only be deployed self-hosted and supports one code host integration."
+                description="Small teams can use a limited version of Sourcegraph’s code intelligence platform for free to search personal and open source projects. The free version can only be self-hosted and supports one code host integration."
                 cta1={{
                     text: 'Deploy',
                     link: 'https://docs.sourcegraph.com/#self-hosted',
-                    ctaStyle: 'primaryButton',
+                    ctaStyle: 'primaryButtonWhite',
                 }}
                 cta2={false}
-                centerContent={true}
+                cta3={false}
             />
 
             <ContentSection className="tw-grid tw-grid-cols-5">

@@ -31,9 +31,9 @@ const logos: Logo[] = [
     },
     {
         name: 'GE',
-        src: '/external-logos/general-electric-logo.svg',
-        width: 57,
-        height: 57,
+        src: '/external-logos/redfin-logo.svg',
+        width: 124,
+        height: 34,
     },
     {
         name: 'Qualtrics',
@@ -183,7 +183,7 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
                     <Link key={logo.name} href={logo.link ? logo.link : '/case-studies'} passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
-                            className={classNames('tw-mx-7 tw-mb-xl tw-shrink-0', {
+                            className={classNames('tw-mx-6 tw-mb-xl tw-shrink-0', {
                                 'xl:tw-mb-0': index > (logos.length - 1) / 2 && containerWidth >= breakpoints.xl,
                             })}
                             title={`${logo.name} logo`}

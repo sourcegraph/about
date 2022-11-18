@@ -19,7 +19,7 @@ const CaseStudiesHome: FunctionComponent = () => (
                     <h4>Learn how engineering teams understand, fix, and automate across their entire codebase</h4>
                 </div>
 
-                <div className="tw-max-w-screen-xl tw-mx-auto tw-px-6">
+                <div className="tw-max-w-screen-xl tw-mx-auto tw-px-6 tw-mb-3xl">
                     <ul className="tw-flex-wrap tw-grid tw-grid-cols-12 tw-list-none tw-ml-0 tw-gap-6">
                         {CASESTUDIES.map(study => (
                             <li
@@ -34,13 +34,7 @@ const CaseStudiesHome: FunctionComponent = () => (
                     </ul>
                 </div>
 
-                <CtaSection
-                    cta2={{
-                        text: 'Schedule a demo',
-                        link: '/demo',
-                        ctaStyle: 'outlineButton',
-                    }}
-                />
+                <CtaSection />
             </div>
         </Layout>
     </>

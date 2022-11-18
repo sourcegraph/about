@@ -73,7 +73,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
 
         <ResourceList items={resourceItems} />
 
-        <CtaSection title="Ready to accelerate developer onboarding? Let's talk." />
+        <CtaSection />
     </Layout>
 )
 

@@ -255,6 +255,41 @@ export const LINTER_OVERRIDES: SearchInsightData = {
     },
 }
 
+export const OPENSSL_PYTHON: SearchInsightData = {
+    title: 'Find vulernable OpenSSL versions in the Python Ecosystem',
+    repositories: 'All repositories',
+    data: [
+        { x: new Date('October 28, 2022'), a: 385 },
+        { x: new Date('October 29, 2022'), a: 385 },
+        { x: new Date('October 30, 2022'), a: 386 },
+        { x: new Date('November 01, 2022'), a: 386 },
+        { x: new Date('November 02, 2022'), a: 378 },
+        { x: new Date('November 05, 2022'), a: 378 },
+        { x: new Date('November 07, 2022'), a: 367 },
+        
+    ],
+    series: [
+        {
+            dataKey: 'a',
+            name: 'pip/pipenv',
+            stroke: DATA_SERIES_COLORS.BLUE,
+            query: (
+                <>
+                
+                    <span className={styles.keyword}>file:</span>requirements.*txt cryptography(\s*[=~]=\s*(36\.|37\.|38\.0\.[0-2])){' '}
+                    <span className={styles.keyword}>patternType:</span>regexp{' '}
+                    <span className={styles.keyword}>archived:</span>no <span className={styles.keyword}>fork:</span>no
+                </>
+            ),
+        },
+    ],
+    xAxis: {
+        dataKey: 'x',
+        scale: 'time',
+        type: 'number',
+    },
+}
+
 export const REPOS_WITH_CI_SYSTEM: SearchInsightData = {
     title: '# of repos connected to the CI system',
     repositories: 'All repositories',

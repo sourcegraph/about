@@ -37,4 +37,4 @@ Sourcegraph engages Sub-processors to perform the functions described in the tab
 
 Complete this form to be notified of changes to our sub-processors.
 
-<HubSpotForm masterFormName="contactMulti" inlineMessage="Thank you for your interest in Sourcegraph. You will be notified of any changes to our sub-processors." />
+<HubSpotForm masterFormName="gatedEmail" inlineMessage="Thank you for your interest in Sourcegraph. You will be notified of any changes to our sub-processors." />

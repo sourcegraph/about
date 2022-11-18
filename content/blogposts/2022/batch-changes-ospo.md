@@ -1,135 +1,166 @@
 ---
-title: 'How we analyzed hundreds of repositories to ensure they had open source licenses'
+title: 'Saving dozens of engineering hours by batch-changing hundreds of repositories at a time'
 authors:
-  - name: Justin Dorfman
-    url: https://twitter.com/jdorfman
-publishDate: 2022-06-28T10:00-07:00
-description: 'We’re excited to announce that our Open Source Program Office (OSPO) is now up and running!. One of my first tasks was making sure our open source software is in compliance with the Open Source Definition (OSD).'
+  - name: Javi Gómez
+    url: https://medium.com/@javi_p_t
+publishDate: 2022-11-11T07:00
+description: 'Have you ever needed to change many repositories at once? How about 271 of them? It usually takes hours, probably even days, to update all repositories to the new version or a library or add a new security check to all Continuous Integration pipelines. In a world of automation, we can do better than that.'
 tags: [blog]
-slug: 'batch-changes-ospo'
+slug: 'batch-changing-hundreds-of-repositories-at-typeform'
+canonical: https://medium.com/typeforms-engineering-blog/saving-dozens-of-engineering-hours-by-batch-changing-hundreds-of-repositories-at-a-time-e4c5a454df2d
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/ospo-batch-changes-hero_social.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/ospo-batch-changes-hero_social.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-batch-changes.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-batch-changes.png
 ---
 
-We’re excited to announce that our Open Source Program Office (OSPO) is now up and running! One of my first tasks was making sure [our open source software](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6OTQ0) is in compliance with the Open Source Definition ([OSD](https://opensource.org/osd)).
+<p
+className="tw-max-w-lg tw-text-center"
+>
+<Figure
+src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-001.jpg"
+/>
 
-As of June 2022, we have 428 public repositories, but 75 (over 17%) active repos were missing a license.
+*Saving time. Photo by [Djim Loic](https://unsplash.com/@loic?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)*
 
-This wasn’t a great state of affairs, as other devs may need to know the license before using/incorporating our software into their workflows.
-
-![License not Found](https://storage.googleapis.com/sourcegraph-assets/blog/ospo-batch-changes-image1a.jpg)
-
-<p class="text-center">
-    <i>I kept seeing “license not specified” which alarmed me.</i>
 </p>
 
-I started to review the repo list manually and realized “Hey, wait a minute, I think we have a tool that does this!” What a perfect opportunity to use our [Batch Changes](https://sourcegraph.com/batch-changes) feature.
+Have you ever needed to change many repositories at once? How about 271 of them? It usually takes hours, probably even days, to update all repositories to the new version or a library or add a new security check to all Continuous Integration pipelines. In a world of automation, we can do better than that.
 
-To add the missing licenses to all the repos, I [created a YAML file](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MTIxOQ==) with the following:
+In theory, it should be relatively straightforward to create a script to modify the same line across different repositories. But what if the line that needs to be changed is not in the same place everywhere? What if all these hundreds of Pull Requests need to be reviewed and merged by others?
 
-<div className="container">
-  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTIxOQ==" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
-  </div>
-</div>
+The challenge is to find a tool capable of doing both an intelligent *search & replace* but also monitoring for introduced changes until they finally merge. Not easy. Luckily, we recently discovered the **Batch Changes** feature in [Sourcegraph](https://sourcegraph.com/) (Sourcegraph is the code intelligence tool we use daily to support our [Standards Adoption Tool](https://medium.com/typeforms-engineering-blog/adoption-of-engineering-standards-at-typeform-f17f2b61bd39#8301)).
 
-<p>&nbsp;</p>
+Here at Typeform, we own more than four hundred active git repositories, and with this size, we need to be able to perform batch changes. Especially for the teams focused on supporting other teams like Architecture, Developer Tools, DevOps, Security, or Quality. Let’s dive in our first use case using Batch Changes:
 
-The magic starts on line 5, which uses our [code search](https://sourcegraph.com/search) engine to find our Github repos without a file named “LICENSE”.
+## **Modifying 271 CI Pipelines with Bruno**
 
-```yaml
-  - repositoriesMatchingQuery: repo:^github\.com/sourcegraph/ -repohasfile:^LICENSE
-```
+<p
+className="tw-max-w-md tw-text-center"
+>
+<Figure 
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-002.png"
+/>
 
-From there, line 8 copies the Apache license file.
+*Bruno Ferreira, Senior DevOps Engineer at Typeform*
 
-```yaml
-  - run: cat /tmp/apache2.txt > LICENSE
-```
+</p>
 
-Once it’s in the repo, lines 187-192 commit the change to the “add-license” branch, with a prefilled commit message.
+>***1. Hi, Bruno. Tell us a little bit about your role at Typeform.***
+>
+>I am a Senior DevOps Engineer. I joined the company in July 2021. Our team’s mission is to keep improving resilience, efficiency, automation, monitoring, and the overall availability of Typeform products. Our primary responsibility is to manage the platform infrastructure, which includes working with multiple Kubernetes clusters, different types of data storage, and other AWS services.
+>
+>***2. What project did you work on that required changes in many repositories?***
+>
+>We currently use GitHub actions with self-hosted runners as our main (CI/CD) platform to automate our build, test, and deployment pipelines. Recently, to support ephemeral (i.e., single job) runners and enable auto-scaling for our self-hosted runners, we had to make some changes to the base docker image used for the runners.
+>
+>We wanted to shift our pipelines to the new runners incrementally, ensuring every pipeline on every repository worked without issues and avoiding interrupting developers’ workflows. It was essential for us to that Developers keep deploying to production multiple times a day while we were pushing those changes.
+>
+>The solution with Sourcegraph was to trigger a batch change that updated every label on every workflow to start pointing to the new ephemeral runners. Since we had different labels, Sourcegraph allowed us to search for the runs-on key on all the workflow’s YAML files and then just append the ephemeral suffix.
+>
+>Here’s an example of one of the changes in one of the changesets for this batch change:
 
-```yaml
+<Figure
+src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-003.png"
+/>
+
+>*And here’s the spec we used for the batch change:*
+
+```yml
+name: migrate-gha-runners-to-ephemeral
+description: This batch change migrates GHA runners to ephemeral
+on:
+  # Find all repositories that contain [self-hosted, {runner}] without -ephemeral suffix
+  - repositoriesMatchingQuery: context:global content:"runs-on:" NOT content:"-ephemeral" lang:yaml file:.github/workflows/* patternType:literal
+# Describe the changeset (e.g., GitHub pull request) you want for each repository.
 changesetTemplate:
-  title: Add Apache 2.0 License
-  body: This is a batch change to make this open source project OSI/OSD compliant.
-  branch: add-license # Push the commit to this branch.
+  title: 'build(NOJIRA-1234): migrate GHA runners to ephemeral'
+  body: Updates GHA runners to ephemeral runners. For more info check [this](https://www.notion.so/typeform/Migration-to-Ephemeral-runners-ffd85bafaed44cfd8a0c135701c4a6a7)
+  branch: NOJIRA-1234-ephemeral-runners
   commit:
-    message: Add Apache 2.0 License
+    message: 'build(NOJIRA-1234): migrate GHA runners to ephemeral'
+  published: true
+steps:
+  - run: |
+      comby \
+        -in-place \
+        'runs-on::[~\s?][:[~\s?]self-hosted,:[~\s?]:[runner]:[~\s?]]' \
+        'runs-on: [self-hosted, :[runner]-ephemeral]' \
+        .github/workflows/*.yml || true
+    container: comby/comby
+  - run: |
+      comby \
+        -in-place \
+        'runs-on::[~\s?][:[~\s?]self-hosted,:[~\s?]:[runner]:[~\s?]]' \
+        'runs-on: [self-hosted, :[runner]-ephemeral]' \
+        .github/workflows/*.yaml || true
+    container: comby/comby
 ```
 
-It’s a few minutes of work to create and test the script, but it saved me hours of manual effort.
+>***3. How did Sourcegraph Batch Changes help to achieve your goal?***
+>
+>We created a **Batch Change** that made 271 changesets. We could easily track which Pull Requests failed the workflow on GitHub Actions. We tackled the ones that failed individually and applied the required fixes on the workflow or the runner’s base docker image. The ones that passed were merged by the service owners.
+>
+>We were able to track the overall progress by checking just one dashboard. In just 48 hours, more than 55% of the pull requests were already merged. We were able to apply all the changesets and complete the migration to the new ephemeral runners in less than a week. Doing this change across all the organization's repositories would be hard to track without a tool like Sourcegraph.
 
-### Demo
+<Figure 
+src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-004.png" 
+/>
 
-There’s two ways to use Batch Changes:
+>***4. What other options apart from Sourcegraph did you consider to do the job, and why did you choose Sourcegraph?***
+>
+>In the past, for similar situations, we would use [auto-pr](https://github.com/getyourguide/auto-pr/#auto-pr).
+>
+>However, dealing with permissions across repositories, taking care of the different scenarios for a specific change, and keeping track of the pull requests’ progress were the most significant pain points. Sourcegraph solved these three issues for us.
 
-1. Use [src (our CLI tool)](https://sourcegraph.com/github.com/sourcegraph/src-cli)
-2. Use our [web app](https://docs.sourcegraph.com/batch_changes/explanations/introduction_to_batch_changes)
+Our second experience with the Batch Changes feature was led by David Salvador:
 
-For this demo, we’ll use the web app.
+## **Improving overall security with David**
 
-After adding the YAML file to the Batch spec, you can kick off a Workspace preview and see the repos that match the query (e.g., those without a LICENSE file):
+<p
+className="tw-max-w-lg tw-text-center"
+>
+<Figure
+src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-005.jpg"
+/>
 
-![Batch Spec](https://storage.googleapis.com/sourcegraph-assets/blog/ospo-batch-changes-image2.gif)
+*David Salvador, Platform Security Engineer at Typeform*
 
-<p class="text-center">
-    <i>Batch spec / Workspaces preview</i>
 </p>
 
-We can click “Run Batch Spec”, which takes us to the execution step.
+>***1. Hi, David. Tell us a little bit about your role at Typeform***
+>
+>Hello! I joined Typeform in March 2020 as a Platform Security Engineer. Since then, my job has been to help our engineers to deliver secure software by creating an *Application Security Program* at Typeform. This program adds a security layer to every step of the software development lifecycle. In the Security team, we believe in not being blockers but enablers. We do this by providing tools and checks and making them as developer-friendly as possible. Examples include checking that no vulnerable dependencies are being used, a safe CI/CD setup is in place, or that no secrets are being uploaded to our repositories.
+>
+>***2. What was the project you were working on that required changes in many repositories?***
+>
+>All of Typeform’s repositories have a GitHub Action that performs secrets detection: it checks whether a secret (API token, password, key, etc.) has been uploaded to the git repository. For this, we use a wrapper of the open-source tool [Gitleaks](https://github.com/zricethezav/gitleaks).
+>
+>The secrets detection check runs using a set of custom rules maintained by the Security team ([read more on the blog](https://medium.com/typeforms-engineering-blog/prevent-secrets-leaks-at-scale-in-repositories-e785b96e8244)). Even though the rules have gone through several tuning iterations, every once in a while, a false positive might appear. The secrets detection check identifies something as a secret, but it’s not. To not interrupt the developer’s flow, we added an easy way to exclude false positives from the check. Every repository has a _.gitleaks.toml_file where files, paths, commits, and certain regular expressions can be added to exclude such false positives.
+>
+>We are currently using Gitleaks version 7. The Security team wanted to update it to version 8. However, version 8’s allowlist file has some incompatibilities with version 7. All the existing allowlist files in all Typeform’s organizations with such incompatibilities must be updated. This change impacted 44 files across the organization.
+>
+>***3. How did Sourcegraph Batch Changes help to achieve your goal?***
+>
+>Before pushing the changes, I wanted to run a sanity check on five selected repositories. I was able to submit PRs to only the five test repositories.
+>
+>My search request was challenging: I needed to find repos that use a beta version of a specific GitHub Action and, from those, find which ones had a Gitleaks allowlist file. I could not pipe searches between the features. However, I quickly found a workaround: I created a context (a subset of repositories) and then ran the last query against them. Solved in a breeze!
+>
+>After verifying that the changes made in the five repos were successful and compatible with the new Gitleaks version, I proceeded to update the rest. The Batch Changes performed on the 44 repos left were successful, and most of the PRs were approved and merged hours later.
 
-![Run Batch Spec](https://storage.googleapis.com/sourcegraph-assets/blog/ospo-batch-changes-image3.jpg)
+## What is next?
 
-This shows you the change that will be made to each repo. When we click a specific entry, we’ll see its Changeset template:
+We don’t have many cases for a batch change yet, but we have already received the following request from the Frontend Architecture team to use the tool to update the tracing library on all frontends.
 
-![Changeset template](https://storage.googleapis.com/sourcegraph-assets/blog/ospo-batch-changes-image4.jpg)
-
-The last step is kicking off the automated Pull Requests. What’s convenient is that you don’t need to run all the Changesets at once – you can pick and choose.
-
-For example, if you had 130 repos to change, but what if needed to prioritize the LSIF repos? You’d simply search “lsif”, select the repos you wanted, and click “Publish changesets”.
-
-![Publish changesets](https://storage.googleapis.com/sourcegraph-assets/blog/ospo-batch-changes-image5.jpg)
-
-<p class="text-center">
-    <i>Select and Publish changesets</i>
-</p>
-
-![Publish changesets](https://storage.googleapis.com/sourcegraph-assets/blog/ospo-batch-changes-image6.jpg)
-
-<p class="text-center">
-    <i>Automated Pull Requests Statuses for selected LSIF repos</i>
-</p>
-
-Once the Changesets run, your inbox will start blowing up with the updates.
-
-![Publish changesets](https://storage.googleapis.com/sourcegraph-assets/blog/ospo-batch-changes-image7.jpg)
-
-<p class="text-center">
-    <i>Success!</i>
-</p>
-
-### Conclusion
-
-This is just one of many things you can do with Batch Changes – check out [https://github.com/sourcegraph/batch-change-examples](https://github.com/sourcegraph/batch-change-examples) for more examples. Over time, we’ll highlight popular use cases that have been useful.
-
-If you have any questions, I’ll be hanging out in [our Discord](https://discord.gg/rDPqBejz93).
-
----
-
-_Thanks to the following people for helping with this post: Erik Seliger, Daniel Marques, Malo Marrec, Kalid Azad, Marcos Placona, Fabiana Castellanos, and Tammy Zhu._
-
-#### About the author
-
-Justin Dorfman is Sourcegraph’s Open Source Program Manager and is responsible for
-fostering the adoption of code intelligence in the open source community. You can chat with Justin on Twitter [@jdorfman](https://twitter.com/jdorfman) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)
+Overall, pushing changes in a batch is an opportunity to transform the organization faster in companies with many repositories. We found Sourcegraph Batch Changes an excellent tool to offer to our engineering enablers to transform the organization planned and consistently.
 
 ### More posts like this
 
-- [Interact with Sourcegraph from the command line faster with Fig](https://about.sourcegraph.com/blog/why-fig-autocomplete-is-awesome)
-- [No Secrets! Quickly find sensitive files in your GitHub repo](https://about.sourcegraph.com/blog/no-more-secrets)
+* [Introducing Batch Changes](https://about.sourcegraph.com/blog/introducing-batch-changes)
+* [Quickstart for Batch Changes](https://docs.sourcegraph.com/batch_changes/quickstart)
+* [Original post on Medium](https://medium.com/typeforms-engineering-blog/saving-dozens-of-engineering-hours-by-batch-changing-hundreds-of-repositories-at-a-time-e4c5a454df2d)
 
-<iframe height="0" frameBorder="0">
-    <img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=a18bf656-9e70-4ab1-b2a5-1440b6646e1f" />
-</iframe>
+<p class="mt-3 mb-3">
+  <a href="https://sourcegraph.substack.com/p/subscribe" class="btn btn-primary mr-1 mb-1">Subscribe to technical posts</a>
+  &nbsp;
+  <a href="https://discord.gg/ZSt5Kr3tpw" class="btn btn-primary">Join our Discord</a>
+</p>

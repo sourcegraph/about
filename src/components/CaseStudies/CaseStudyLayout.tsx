@@ -110,14 +110,6 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
             {children}
         </div>
 
-        <CtaSection
-            background="black"
-            centerContent={true}
-            cta2={{
-                text: 'Request a demo',
-                ctaStyle: 'outlineButtonWhiteText',
-                link: '/demo',
-            }}
-        />
+        <CtaSection />
     </>
 )

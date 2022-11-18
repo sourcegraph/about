@@ -106,6 +106,15 @@ export const navLinks: NavLink[] = [
             },
         ],
     },
+    {
+        section: 'Sourcegraph',
+        items: [
+            {
+                title: 'Search code',
+                href: 'https://sourcegraph.com/search',
+            },
+        ],
+    },
 ]
 
 export const footerLinks: NavLink[] = [
