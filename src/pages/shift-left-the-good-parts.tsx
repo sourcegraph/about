@@ -216,16 +216,14 @@ const ShiftLeftPage: FunctionComponent = () => (
                             </li>
                             <li className="mb-3">
                                 Search for your own set of regular expressions and{' '}
-                                <Link href="https://docs.sourcegraph.com/code_search/reference/structural#syntax-reference">
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a
-                                        title="Comby patterns"
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.body}
-                                        data-button-type="cta"
-                                    >
-                                        Comby patterns
-                                    </a>
+                                <Link
+                                    href="https://docs.sourcegraph.com/code_search/reference/structural#syntax-reference"
+                                    title="Comby patterns"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    Comby patterns
                                 </Link>{' '}
                                 — they can even be suggested by your dev team.
                             </li>

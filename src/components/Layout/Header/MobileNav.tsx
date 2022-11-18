@@ -43,17 +43,15 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
                                 </li>
                             ) : (
                                 <li className="nav-item" role="presentation" key={camelCase(item.title)}>
-                                    <Link href={item.href}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            className="nav-link"
-                                            title={item.title}
-                                            data-button-style={buttonStyle.text}
-                                            data-button-location={buttonLocation.nav}
-                                            data-button-type="cta"
-                                        >
-                                            {item.title}
-                                        </a>
+                                    <Link
+                                        href={item.href}
+                                        className="nav-link"
+                                        title={item.title}
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.nav}
+                                        data-button-type="cta"
+                                    >
+                                        {item.title}
                                     </Link>
                                 </li>
                             )
@@ -106,16 +104,14 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
                                         </li>
                                     ) : (
                                         <li key={camelCase(item.title)} className="nav-link" role="presentation">
-                                            <Link href={item.href} passHref={true}>
-                                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                                <a
-                                                    title={item.title}
-                                                    data-button-style={buttonStyle.text}
-                                                    data-button-location={buttonLocation.nav}
-                                                    data-button-type="cta"
-                                                >
-                                                    {item.title}
-                                                </a>
+                                            <Link
+                                                href={item.href}
+                                                title={item.title}
+                                                data-button-style={buttonStyle.text}
+                                                data-button-location={buttonLocation.nav}
+                                                data-button-type="cta"
+                                            >
+                                                {item.title}
                                             </Link>
                                         </li>
                                     )

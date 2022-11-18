@@ -102,16 +102,15 @@ export const ReleasePost: FunctionComponent<Props> = ({
 
                     <div className="card-body release-post__body">
                         * Please{' '}
-                        <Link href="/demo" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="contact Sourcegraph"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                contact Sourcegraph
-                            </a>
+                        <Link
+                            href="/demo"
+                            title="contact Sourcegraph"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            {' '}
+                            contact Sourcegraph
                         </Link>{' '}
                         with any licensing questions.
                     </div>
@@ -165,17 +164,15 @@ export const ReleasePost: FunctionComponent<Props> = ({
             <header className={`release-post__header ${headerClassName}`}>
                 <h1 className={titleClassName}>
                     {renderTitleAsLink === true ? (
-                        <Link href={url} passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="tw-block"
-                                title={frontmatter.title}
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                {frontmatter.title}
-                            </a>
+                        <Link
+                            href={url}
+                            className="tw-block"
+                            title={frontmatter.title}
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            {frontmatter.title}
                         </Link>
                     ) : (
                         frontmatter.title

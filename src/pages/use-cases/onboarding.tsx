@@ -50,16 +50,14 @@ const items = [
                 text={
                     <p className="py-3">
                         With{' '}
-                        <Link href="/code-search" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="Code Search"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Code Search
-                            </a>
+                        <Link
+                            href="/code-search"
+                            title="Code Search"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Code Search
                         </Link>
                         , you can find examples to learn from across all of your company's private repositories and the
                         open source universe.
@@ -90,16 +88,14 @@ const items = [
                 header="Visualize contributions and chart team progress"
                 text={
                     <p className="py-3">
-                        <Link href="/code-insights" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="Code Insights"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Code Insights
-                            </a>
+                        <Link
+                            href="/code-insights"
+                            title="Code Insights"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Code Insights
                         </Link>{' '}
                         allows onboarding developers to understand in-process work and visualize how their contributions
                         advance team goals.
@@ -212,18 +208,16 @@ const UseCasePage: FunctionComponent = () => (
                 cta={
                     <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
                         <div className="mb-3 mb-md-0">
-                            <Link href="https://sourcegraph.com" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="btn btn-primary w-100 max-w-350"
-                                    title="Search code"
-                                    data-button-style={buttonStyle.primary}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                >
-                                    Search code
-                                </a>
-                            </Link>
+                            <a
+                                href="https://sourcegraph.com"
+                                className="btn btn-primary w-100 max-w-350"
+                                title="Search code"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
+                                Search code
+                            </a>
                         </div>
                         <div className="ml-md-3">
                             <a
@@ -329,17 +323,15 @@ const UseCasePage: FunctionComponent = () => (
                     >
                         Get free trial
                     </a>
-                    <Link href="/use-cases" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className="mt-4 tw-flex tw-justify-center "
-                            title="Explore other use cases"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            Explore other use cases
-                        </a>
+                    <Link
+                        href="/use-cases"
+                        className="mt-4 tw-flex tw-justify-center "
+                        title="Explore other use cases"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        Explore other use cases
                     </Link>
                 </div>
             </div>

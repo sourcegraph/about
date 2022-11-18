@@ -180,26 +180,25 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
                 ref={container}
             >
                 {logos.map((logo: Logo, index) => (
-                    <Link key={logo.name} href={logo.link ? logo.link : '/case-studies'} passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className={classNames('tw-mx-6 tw-mb-xl tw-shrink-0', {
-                                'xl:tw-mb-0': index > (logos.length - 1) / 2 && containerWidth >= breakpoints.xl,
-                            })}
+                    <Link
+                        key={logo.name}
+                        href={logo.link ? logo.link : '/case-studies'}
+                        className={classNames('tw-mx-6 tw-mb-xl tw-shrink-0', {
+                            'xl:tw-mb-0': index > (logos.length - 1) / 2 && containerWidth >= breakpoints.xl,
+                        })}
+                        title={`${logo.name} logo`}
+                        data-button-style={buttonStyle.image}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        <img
+                            src={logo.src}
+                            alt={`${logo.name} logo`}
                             title={`${logo.name} logo`}
-                            data-button-style={buttonStyle.image}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            <img
-                                src={logo.src}
-                                alt={`${logo.name} logo`}
-                                title={`${logo.name} logo`}
-                                draggable={false}
-                                width={logo.width}
-                                height={logo.height}
-                            />
-                        </a>
+                            draggable={false}
+                            width={logo.width}
+                            height={logo.height}
+                        />
                     </Link>
                 ))}
             </div>

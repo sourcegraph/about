@@ -74,17 +74,15 @@ const Hero: FunctionComponent = () => {
                         </a>
                     </div>
                     <div className="col-sm-6 sm:tw-px-0">
-                        <Link href="/demo" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="btn btn-outline-primary w-100"
-                                title="Request a demo"
-                                data-button-style={buttonStyle.outline}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
-                                Request a demo
-                            </a>
+                        <Link
+                            href="/demo"
+                            className="btn btn-outline-primary w-100"
+                            title="Request a demo"
+                            data-button-style={buttonStyle.outline}
+                            data-button-location={buttonLocation.hero}
+                            data-button-type="cta"
+                        >
+                            Request a demo
                         </Link>
                     </div>
                 </div>
@@ -96,31 +94,27 @@ const Hero: FunctionComponent = () => {
                 <div className="tw-mx-auto tw-text-center max-w-700">
                     <h2 className="tw-mb-2">
                         Over{' '}
-                        <Link href="/case-studies" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="tw-text-violet-400"
-                                title="1.8 million engineers"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
-                                1.8M engineers
-                            </a>
-                        </Link>{' '}
-                        use Sourcegraph to build software you rely on
-                    </h2>
-
-                    <Link href="/case-studies" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            title="Learn how our customers use Sourcegraph"
+                        <Link
+                            href="/case-studies"
+                            className="tw-text-violet-400"
+                            title="1.8 million engineers"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.hero}
                             data-button-type="cta"
                         >
-                            Learn how our customers use Sourcegraph
-                        </a>
+                            1.8M engineers
+                        </Link>{' '}
+                        use Sourcegraph to build software you rely on
+                    </h2>
+
+                    <Link
+                        href="/case-studies"
+                        title="Learn how our customers use Sourcegraph"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.hero}
+                        data-button-type="cta"
+                    >
+                        Learn how our customers use Sourcegraph
                     </Link>
                 </div>
             </div>

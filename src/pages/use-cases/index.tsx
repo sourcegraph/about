@@ -61,18 +61,17 @@ const UseCases: React.FunctionComponent = () => (
 
                             <div className="list-group">
                                 {features.map((feature: { id: string; description: string }) => (
-                                    <Link key={feature.id} href={`#${kebabCase(feature.id)}`} passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            className="list-group-item list-group-item-action tw-flex tw-justify-between tw-items-center tw-no-underline"
-                                            title={feature.description}
-                                            data-button-style={buttonStyle.textWithArrow}
-                                            data-button-location={buttonLocation.hero}
-                                            data-button-type="cta"
-                                        >
-                                            {feature.description}
-                                            <ArrowRightIcon className="ml-1" />
-                                        </a>
+                                    <Link
+                                        key={feature.id}
+                                        href={`#${kebabCase(feature.id)}`}
+                                        className="list-group-item list-group-item-action tw-flex tw-justify-between tw-items-center tw-no-underline"
+                                        title={feature.description}
+                                        data-button-style={buttonStyle.textWithArrow}
+                                        data-button-location={buttonLocation.hero}
+                                        data-button-type="cta"
+                                    >
+                                        {feature.description}
+                                        <ArrowRightIcon className="ml-1" />
                                     </Link>
                                 ))}
                             </div>
@@ -106,16 +105,14 @@ const UseCases: React.FunctionComponent = () => (
                                 <li>Reduce time to recovery with a single search</li>
                                 <li>
                                     Automate fixing, merging, and deploying changes with{' '}
-                                    <Link href="/batch-changes/">
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            title="Batch Changes"
-                                            data-button-style={buttonStyle.text}
-                                            data-button-location={buttonLocation.body}
-                                            data-button-type="cta"
-                                        >
-                                            Batch Changes
-                                        </a>
+                                    <Link
+                                        href="/batch-changes/"
+                                        title="Batch Changes"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
+                                        Batch Changes
                                     </Link>
                                 </li>
                                 <li>Alert for known vulnerabilities and risky code changes with code monitoring</li>
@@ -130,17 +127,15 @@ const UseCases: React.FunctionComponent = () => (
                             >
                                 Get free trial <ArrowRightBoxIcon className="ml-1 tw-inline" />
                             </a>
-                            <Link href="/use-cases/code-security" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="tw-ml-8"
-                                    title="Learn more"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Learn more
-                                </a>
+                            <Link
+                                href="/use-cases/code-security"
+                                className="tw-ml-8"
+                                title="Learn more"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Learn more
                             </Link>
                         </>
                     }
@@ -211,17 +206,15 @@ const UseCases: React.FunctionComponent = () => (
                             >
                                 Get free trial <ArrowRightBoxIcon className="ml-1 tw-inline" />
                             </a>
-                            <Link href="/use-cases/onboarding" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="tw-ml-8"
-                                    title="Learn more"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Learn more
-                                </a>
+                            <Link
+                                href="/use-cases/onboarding"
+                                className="tw-ml-8"
+                                title="Learn more"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Learn more
                             </Link>
                         </>
                     }
@@ -268,17 +261,15 @@ const UseCases: React.FunctionComponent = () => (
                             >
                                 Get free trial <ArrowRightBoxIcon className="ml-1 tw-inline" />
                             </a>
-                            <Link href="/use-cases/incident-response" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="tw-ml-8"
-                                    title="Learn more"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Learn more
-                                </a>
+                            <Link
+                                href="/use-cases/incident-response"
+                                className="tw-ml-8"
+                                title="Learn more"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Learn more
                             </Link>
                         </>
                     }
@@ -341,16 +332,14 @@ const UseCases: React.FunctionComponent = () => (
                                 <li>
                                     Safely and efficiently maintain code that is being reused and easily make changes
                                     everywhere with{' '}
-                                    <Link href="/batch-changes/" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            title="Batch Changes"
-                                            data-button-style={buttonStyle.primary}
-                                            data-button-location={buttonLocation.bodyDemo}
-                                            data-button-type="cta"
-                                        >
-                                            Batch Changes
-                                        </a>
+                                    <Link
+                                        href="/batch-changes/"
+                                        title="Batch Changes"
+                                        data-button-style={buttonStyle.primary}
+                                        data-button-location={buttonLocation.bodyDemo}
+                                        data-button-type="cta"
+                                    >
+                                        Batch Changes
                                     </Link>
                                 </li>
                                 <li>Add a code monitor to alert you of commits using an out-of-date library</li>
@@ -365,17 +354,15 @@ const UseCases: React.FunctionComponent = () => (
                             >
                                 Get free trial <ArrowRightBoxIcon className="ml-1 tw-inline" />
                             </a>
-                            <Link href="/use-cases/code-reuse" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="tw-ml-8"
-                                    title="Learn more"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Learn more
-                                </a>
+                            <Link
+                                href="/use-cases/code-reuse"
+                                className="tw-ml-8"
+                                title="Learn more"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Learn more
                             </Link>
                         </>
                     }
@@ -420,17 +407,15 @@ const UseCases: React.FunctionComponent = () => (
                             >
                                 Get free trial <ArrowRightBoxIcon className="ml-1 tw-inline" />
                             </a>
-                            <Link href="/use-cases/code-health" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="tw-ml-8"
-                                    title="Learn more"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Learn more
-                                </a>
+                            <Link
+                                href="/use-cases/code-health"
+                                className="tw-ml-8"
+                                title="Learn more"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Learn more
                             </Link>
                         </>
                     }

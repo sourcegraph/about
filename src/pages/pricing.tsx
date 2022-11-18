@@ -52,20 +52,18 @@ const BusinessCTA: FunctionComponent<{ className?: string; btnOnMobile?: boolean
 const EnterpriseCTA: FunctionComponent<{ btnOnMobile?: boolean }> = ({ btnOnMobile }) => (
     <div className="tw-flex-wrap">
         <BusinessCTA btnOnMobile={btnOnMobile} className="md:tw-mr-xs tw-mb-xs md:tw-mb-0 tw-w-full md:tw-w-auto" />
-        <Link href="/contact/request-info?form_submission_source=pricing-enterprise" passHref={true}>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a
-                className={classNames(
-                    'btn btn-outline-primary',
-                    !btnOnMobile ? 'tw-hidden lg:tw-inline-block tw-w-auto' : 'tw-w-full md:tw-w-auto'
-                )}
-                title="Contact us"
-                data-button-style={buttonStyle.outline}
-                data-button-location={buttonLocation.bodyDemo}
-                data-button-type="cta"
-            >
-                Contact us
-            </a>
+        <Link
+            href="/contact/request-info?form_submission_source=pricing-enterprise"
+            className={classNames(
+                'btn btn-outline-primary',
+                !btnOnMobile ? 'tw-hidden lg:tw-inline-block tw-w-auto' : 'tw-w-full md:tw-w-auto'
+            )}
+            title="Contact us"
+            data-button-style={buttonStyle.outline}
+            data-button-location={buttonLocation.bodyDemo}
+            data-button-type="cta"
+        >
+            Contact us
         </Link>
     </div>
 )
@@ -94,17 +92,15 @@ const faqData = [
         a: (
             <p>
                 Yes. We offer a free trial for our paid plans.{' '}
-                <Link href="https://signup.sourcegraph.com" passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a
-                        title="Get started"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Get started
-                    </a>
-                </Link>{' '}
+                <a
+                    href="https://signup.sourcegraph.com"
+                    title="Get started"
+                    data-button-style={buttonStyle.text}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                >
+                    Get started
+                </a>{' '}
                 with a free trial today.
             </p>
         ),
@@ -118,16 +114,14 @@ const faqData = [
         a: (
             <p>
                 Sourcegraph supports the work of educational organizations and nonprofits. Please{' '}
-                <Link href="/contact/request-info?form_submission_source=pricing-enterprise" passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a
-                        title="contact Sourcegraph"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        contact us
-                    </a>
+                <Link
+                    href="/contact/request-info?form_submission_source=pricing-enterprise"
+                    title="contact Sourcegraph"
+                    data-button-style={buttonStyle.text}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                >
+                    contact us
                 </Link>{' '}
                 about discounts for your development teams.
             </p>

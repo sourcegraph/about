@@ -93,15 +93,13 @@ const Sourcegraph4: FunctionComponent = () => (
                     title={
                         <>
                             Top updates released in{' '}
-                            <Link href="/blog/release/4.0" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Sourcegraph 4.0
-                                </a>
+                            <Link
+                                href="/blog/release/4.0"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Sourcegraph 4.0
                             </Link>
                         </>
                     }

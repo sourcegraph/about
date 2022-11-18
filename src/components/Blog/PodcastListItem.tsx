@@ -40,42 +40,36 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
 
                     <div className="tw-flex-1">
                         <div>
-                            <Link href={`/podcast/${slugPath}`} passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="mr-4 tw-text-gray-400"
-                                    title="Permalink"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Permalink
-                                </a>
+                            <Link
+                                href={`/podcast/${slugPath}`}
+                                className="mr-4 tw-text-gray-400"
+                                title="Permalink"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Permalink
                             </Link>
 
-                            <Link href={`/podcast/${slugPath}#notes`} passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="mr-4 tw-text-gray-400"
-                                    title="Show notes"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Show notes
-                                </a>
+                            <Link
+                                href={`/podcast/${slugPath}#notes`}
+                                className="mr-4 tw-text-gray-400"
+                                title="Show notes"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Show notes
                             </Link>
-                            <Link href={`/podcast/${slugPath}#transcript`} passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="mr-4 tw-text-gray-400"
-                                    title="Transcript"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Transcript
-                                </a>
+                            <Link
+                                href={`/podcast/${slugPath}#transcript`}
+                                className="mr-4 tw-text-gray-400"
+                                title="Transcript"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Transcript
                             </Link>
                             {frontmatter.videoID && (
                                 <a

@@ -98,16 +98,14 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                 </div>
 
                 <div className="tw-flex tw-mt-auto">
-                    <Link href={resource.link} passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            data-button-style={buttonStyle.textWithArrow}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            {ctaText}
-                            <ArrowRightIcon className="tw-inline tw-ml-xs" />
-                        </a>
+                    <Link
+                        href={resource.link}
+                        data-button-style={buttonStyle.textWithArrow}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        {ctaText}
+                        <ArrowRightIcon className="tw-inline tw-ml-xs" />
                     </Link>
 
                     {resource.featured && (

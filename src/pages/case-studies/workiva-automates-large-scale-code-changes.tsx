@@ -70,16 +70,14 @@ export const CaseStudy: FunctionComponent = () => {
                     <p>
                         As an organization that values paying down tech debt, Workiva's Client Platform team started
                         using Sourcegraph{' '}
-                        <Link href="/batch-changes" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="Batch Changes"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Batch Changes
-                            </a>
+                        <Link
+                            href="/batch-changes"
+                            title="Batch Changes"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Batch Changes
                         </Link>{' '}
                         to help them efficiently propagate updates to dependencies across all of their repositories
                         without any ongoing maintenance. The team has already used Batch Changes to:
