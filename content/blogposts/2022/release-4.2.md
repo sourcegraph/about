@@ -4,7 +4,7 @@ publishDate: 2022-11-22T10:00-07:00
 description: "Sourcegraph 4.2 introduces..."
 tags: [blog, release]
 slug: "release/4.2"
-published: false
+published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.2/sourcegraph-4-2-hero.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.2/sourcegraph-4-2-hero.png
 changelogItems:
