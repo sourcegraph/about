@@ -35,7 +35,7 @@ Sourcegraph 4.2 is here! This month, we are kicking off significant work to impr
 
 The Sourcegraph platform is built to make developers' lives easier. With a great code intelligence platform, developers are able to find and understand code fast, stay in flow, and focus more on what they love doing: writing great code. In order to do this, Sourcegraph needs to fit the requirements of all sizes of engineering teams. These requirements include operating across massive numbers of repositories, being able to search millions of commits, and baking security into every part of the product.
 
-To accomplish these things and deliver a product for even the most demanding engineering teams, Sourcegraph is putting extra focus on scale, speed, and security, and you will see these themes surface frequently over the next several releases.
+To accomplish these things and deliver a product for even the most demanding engineering teams, Sourcegraph is putting extra focus on scale, speed, and security, and you will see these themes surface frequently over the next several releases. Here's what's new in Sourcegraph 4.2:
 
 <Badge link="https://docs.sourcegraph.com/admin/audit_log#on-premises" text="Admin" color="violet" size="small" />
 
@@ -43,7 +43,7 @@ To accomplish these things and deliver a product for even the most demanding eng
 
 Sourcegraph users frequently want to answer questions regarding who has accessed their instance, what actions they've taken, and when. Sourcegraph already provides some information (such as monitoring and pings) to this end, but more robust information is needed to serve pentesting and security testing use cases.
 
-In 4.2, Sourcegraph now ships with an easy-to-consume audit log. The log contains security events, Gitserver access events, and GraphQL requests. You can read [more about the audit log in our docs](https://docs.sourcegraph.com/admin/audit_log#on-premises).
+In 4.2, Sourcegraph now ships with an easy-to-consume audit log. The log contains security events, Gitserver access events, and GraphQL requests. You can [read more about the audit log in our docs](https://docs.sourcegraph.com/admin/audit_log).
 
 <br />
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
