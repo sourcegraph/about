@@ -43,7 +43,7 @@ To accomplish these things and deliver a product for even the most demanding eng
 
 Sourcegraph users frequently want to answer questions regarding who has accessed their instance, what actions they've taken, and when. Sourcegraph already provides some information (such as monitoring and pings) to this end, but more robust information is needed to serve pentesting and security testing use cases.
 
-In 4.2, Sourcegraph now ships with an easy-to-consume audit log. The log contains security events, Gitserver access events, and GraphQL requests. You can [read more about the audit log in our docs](https://docs.sourcegraph.com/admin/audit_log).
+In 4.2, Sourcegraph now ships with an easy-to-consume audit log. The log contains security events, Gitserver access events, and GraphQL requests. You can [read more about the audit log in our docs](https://docs.sourcegraph.com/admin/audit_log). The audit log is available for Sourcegraph self-hosted instances, with availability coming soon for Sourcegraph Cloud.
 
 <br />
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
@@ -63,19 +63,21 @@ This feature is in Beta, and feedback is very welcome. Tweet at us, or drop a co
 
 #### A Smart Search toggle to assist with search queries
 
-The new lightning bolt toggle <span style={{display: "inline-flex", verticalAlign: "middle", margin: "2px"}}><img style={{width: "18px", height: "18px"}} src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2022/smart-search-bar-lightning.png"/></span> in the search bar activates `Smart Search`. Smart Search is a query assistant that activates when a search ordinarily returns no results. 
+To help you find information in your codebase faster than ever, we're introducing Smart Search, a new query assistant that activates when a search returns no results. It can be turned on with the new lightning bolt toggle <span style={{display: "inline-flex", verticalAlign: "middle", margin: "2px"}}><img style={{width: "18px", height: "18px"}} src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2022/smart-search-bar-lightning.png"/></span> in the search bar.
 
-The basic idea is to help find search results that are likely to be more useful than showing "no results" by trying slight variations of the original query. Smart Search works by trying alternative queries based on a handful of rules (we know how easy it is to get tripped up by query syntax). When a query alternative finds results, those results are shown immediately.
+Smart Search helps find search results that are likely to be more useful than showing "no results" by trying slight variations of a user's original query. Smart Search automatically tries alternative queries based on a handful of rules (we know how easy it is to get tripped up by query syntax). When a query alternative finds results, those results are shown immediately.
 
-Take a query like `go buf byte parser`, for example. Normally, Sourcegraph will search for the string "go buf byte parser" with those tokens in that order. If there are **_no_** results, Smart Search attempts variations of the query. One rule applies a `lang:` filter to known languages. For example, `go` may refer to the `Go` language, so we convert this token to a `lang:Go` filter. Additionally, another rule relaxes the ordering on remaining tokens so that we search for `buf AND byte AND parser` anywhere in the file. Here's an example of what Smart Search looks like in action:
+Take a query like `go buf byte parser`, for example. Normally, Sourcegraph will search for the string "go buf byte parser" with those tokens in that order. If there are **_no_** results, Smart Search attempts variations of the query. One rule applies a `lang:` filter to known languages. For example, `go` may refer to the `Go` language, so we convert this token to a `lang:Go` filter. Another rule relaxes the ordering on remaining tokens so that we search for `buf AND byte AND parser` anywhere in the file. Here's an example of what Smart Search looks like in action:
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2022/smart-search-example.png"/>
-
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2022/smart-search-example.png"
+  alt="Smart Search example"
+/>
 <br />
 
-Note that if the original query found results (which depends on the code it runs on), Smart Search has no effect. Smart Search does not otherwise intervene (or interfere with) search queries if those queries return results, and Sourcegraph behaves as usual. 
+Note that if the original query finds results (which depends on the code it runs on), Smart Search has no effect. Smart Search does not otherwise intervene or interfere with search queries if those queries return results, and Sourcegraph behaves as usual.
 
-It is sometimes useful to check for the _absence_ of results (we _want_ to see zero matches). In these cases Smart Search can disabled temporarily by toggling the button in the search bar. To disable Smart Search permanently by default, set `"search.defaultMode": "precise"` in settings.
+However, it is sometimes useful to check for the _absence_ of results (we _want_ to see zero matches). In these cases, Smart Search can be disabled temporarily by toggling the lightning button in the search bar. To disable Smart Search permanently by default, set `"search.defaultMode": "precise"` in settings.
 
 It is not possible to customize Smart Search rules at this time. So far a small number of rules are enabled based on feedback and utility. They affect the following query properties:
 
