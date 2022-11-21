@@ -50,11 +50,11 @@ In 4.2, Sourcegraph now ships with an easy-to-consume audit log. The log contain
 
 #### Secrets in server-side Batch Changes (Beta)
 
-It's common to use secrets in batch changes steps: for example, to authenticate to a private registry to install packages, to create tickets from within a batch change, or to make authentified API calls to other services. In local runs, secrets can be either hardcoded in the spec or loaded from environment variables using [`step.env`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-env), but until now there was no robust and secure way to manage secrets for server-side runs.
+It's common to use secrets in batch changes steps. Developers can use secrets in batch changes to authenticate to a private registry to install packages, create tickets from within a batch change, or make authenticated API calls to other services. In local runs, secrets can be either hardcoded in the batch spec or loaded from environment variables using [`step.env`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-env), but until now, there was no robust and secure way to manage secrets for server-side runs.
 
-That's why we're releasing [executor secrets](https://docs.sourcegraph.com/admin/executor_secrets). You can now define secrets to be passed to server-side runs. They can then be referenced as `env` variables in the batch change spec.
+To solve this, we're releasing [executor secrets](https://docs.sourcegraph.com/admin/executor_secrets). You can now define secrets to be passed to server-side runs, and those secrets can be referenced as `env` variables in the batch change spec.
 
-Sourcegraph supports two types of secrets: namespaced secrets that can only be accessed by their owner, and global secets that site-admins can set and make available to all users on the instance. 
+Sourcegraph supports two types of secrets: namespaced secrets that can only be accessed by their owner, and global secets that site admins can set and make available to all users on an instance.
 
 This feature is in Beta, and feedback is very welcome. Tweet at us, or drop a comment in this [issue](https://github.com/sourcegraph/sourcegraph/issues/44597)!
 
@@ -70,6 +70,8 @@ The basic idea is to help find search results that are likely to be more useful 
 Take a query like `go buf byte parser`, for example. Normally, Sourcegraph will search for the string "go buf byte parser" with those tokens in that order. If there are **_no_** results, Smart Search attempts variations of the query. One rule applies a `lang:` filter to known languages. For example, `go` may refer to the `Go` language, so we convert this token to a `lang:Go` filter. Additionally, another rule relaxes the ordering on remaining tokens so that we search for `buf AND byte AND parser` anywhere in the file. Here's an example of what Smart Search looks like in action:
 
 <img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2022/smart-search-example.png"/>
+
+<br />
 
 Note that if the original query found results (which depends on the code it runs on), Smart Search has no effect. Smart Search does not otherwise intervene (or interfere with) search queries if those queries return results, and Sourcegraph behaves as usual. 
 
