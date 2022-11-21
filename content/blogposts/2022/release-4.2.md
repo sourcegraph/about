@@ -8,7 +8,7 @@ published: false
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.2/sourcegraph-4-2-hero.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.2/sourcegraph-4-2-hero.png
 changelogItems:
-  - description: The search input has a new search history button, and search history can be cycled via the up/down arrow keys for quick access to previous searches.
+  - description: The search input has a new recent searches button, and recent searches can be cycled via the up/down arrow keys for quick access to previous searches.
     url: https://github.com/sourcegraph/sourcegraph/pull/44544
     category: Search
   - description: "When the `content:` filter is used in a query, it now behaves more predictably and only saerches file contents. Previously, file contents, paths, and repos were searched. However, as before, if `type:` is also set, the `content:` filter will search for results of the specified `type:`."
