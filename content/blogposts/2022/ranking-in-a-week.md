@@ -4,7 +4,7 @@ description: "In just over a week, four developers designed and built a data pip
 authors:
   - name: Eric Fritz
     url: https://eric-fritz.com
-publishDate: 2022-11-18T12:00+00:00
+publishDate: 2022-11-21T12:00+00:00
 tags: [blog]
 slug: ranking-in-a-week
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/ranking/page-rank-tech-bog-illustration-final.png
@@ -12,9 +12,9 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/ranking/page
 published: true
 ---
 
-Last week we announced that we are now [ranking search results](https://about.sourcegraph.com/blog/new-search-ranking) on [https://sourcegraph.com](https://sourcegraph.com) in order to prioritize _relevant_ as well as _reusable_ code. We consider this Sourcegraph’s code intelligence platform's first major victory of many, and a booming herald for a new era of Code Search.
+Last week we announced that we are now [ranking search results](https://about.sourcegraph.com/blog/new-search-ranking) on [https://sourcegraph.com](https://sourcegraph.com) in order to prioritize _relevant_ as well as _reusable_ code. We consider this Sourcegraph’s code intelligence platform's first major victory of many, and a booming herald for a new era of code search.
 
-The effort to bring ranked results to our public instance was a concerted effort of four developers across two teams (Search and Code Intelligence), but took only a week of wall-clock time to design, implement, and deploy. The speed at which we were able to deliver this feature speaks volumes of our core data architecture.
+The effort to bring ranked results to our public instance was a concerted effort of four developers across two teams (Search and Code Intelligence), but it took only a week of wall-clock time to design, implement, and deploy. The speed at which we were able to deliver this feature speaks volumes about our core data architecture.
 
 For the past three years at Sourcegraph, I have been amassing a giant compiler-accurate index of source code. And like a giant dork, that giant pile of data has just been sitting there enabling only the most basic of code navigation operations: go to definition and find references. The ranking effort is our first official foray into consuming this data in a more interesting way.
 
@@ -24,14 +24,14 @@ Ranking is a only small amuse-bouche of what we have planned in the future.
 
 ### High-level overview
 
-PageRank is an algorithm created by Google co-founder Larry Page in 1998 to assign a numeric value to each webpage indexed by the search engine. The algorithm takes as input a graph representing the set of webpages and links between them, and outputs a probability of a user landing on a particular webpage (for every webpage) by randomly clicking on links. Webpages with many or highly _relevant_ backlinks will have a higher PageRank score, and are presented higher in the list of matching search results.
+PageRank is an algorithm created by Google co-founder Larry Page in 1998 to assign a numeric value to each webpage indexed by the search engine. The algorithm takes as input a graph representing the set of webpages and links between them, and outputs a probability of a user landing on a particular webpage (for every webpage) by randomly clicking on links. Webpages with many or highly _relevant_ backlinks will have a higher PageRank score and are presented higher in the list of matching search results.
 
 We utilize the PageRank algorithm to rank source code results in a similar way. In our current implementation, we construct a graph of _source code text documents_ where an edge between two documents indicates a reference of a symbol (variable, function, type, etc) defined in another file.
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/new-search-ranking/PageRank-hero-illustration.png"
     alt="PageRank graph"
-    caption="An graph of text documents indicating references between files."
+    caption="A graph of text documents indicating references between files."
     />
 
 PageRank values calculated over this graph "flow" to the text documents that have the highest concentration of _code use_ or _re-use_. This tends to surface results that have high relevancy to a search query by bringing popular definitions and representative usages to the top.
@@ -42,7 +42,7 @@ Treating PageRank as an opaque box, there's still the interesting bit of constru
 
 ### Timeline
 
-We begin our work on ranking hearing only loosely-described north stars and a vague expectation of experimental outcomes. Technical discussions between teams begin, and ownership boundaries are loosely drawn.
+We begin our work on ranking hearing only loosely-described north stars and a vague expectation of experimental outcomes. Technical discussions between teams begin and ownership boundaries are loosely drawn.
 
 We [constructed an initial `ranking` service](https://github.com/sourcegraph/sourcegraph/pull/42457) between October 3rd and 6th, which had only stub implementations for background indexing jobs and user-specified queries for ranks. This pull request was originally created as an initial way to discover the proper API boundary between the Search and Code Intelligence teams, as evidenced from the discussion.
 
@@ -119,9 +119,9 @@ github.com/sourcegraph/blog-post-example,cmd/app/main.go,0.703945210
 
 Each CSV file (of which there are hundreds of thousands) is an equal-sized shard of results. The ranking scores for a single repository may be spread out over multiple files, thus we have to do some clever aggregation on our end to aggregate all of a repo's score. Thankfully, we have a [bit of expertise](https://thenewstack.io/how-to-stop-autovacuum-from-sucking-up-your-performance/) and [a bag of tricks](https://docs.sourcegraph.com/dev/background-information/sql/batch_operations) that help us ensure we can consume and aggregate this data without significantly increasing resource requirements on our primary database.
 
-On October 30th, we [updated the conditions](https://github.com/sourcegraph/sourcegraph/pull/43650) that tells our indexing server when a repository has had a relevant update. Before, this method would only return repositories that we know have received a Git push to remote since the last indexing attempt for that repository. After, this method will also return repositories for which we have an updated ranking scores. This allows us to pack the search indexes such that documents in a repository are ordered by their ranking.
+On October 30th, we [updated the conditions](https://github.com/sourcegraph/sourcegraph/pull/43650) that tell our indexing server when a repository has had a relevant update. Before, this method would only return repositories that we know have received a Git push to remote since the last indexing attempt for that repository. After, this method will also return repositories for which we have updated ranking scores. This allows us to pack the search indexes such that documents in a repository are ordered by their ranking.
 
-Although we've covered the bulk of the data pipeline, [other](https://github.com/sourcegraph/sourcegraph/pull/43817) [improvements](https://github.com/sourcegraph/sourcegraph/pull/43943) have [occurred](https://github.com/sourcegraph/sourcegraph/pull/43944), and we continue to iterate on ranking heuristics at every level of the stack (graph construction, PageRank algorithm variants, index-time rank packing of index shards, query-time resorting of search results, etc).
+Although we've covered the bulk of the data pipeline, [other](https://github.com/sourcegraph/sourcegraph/pull/43817) [improvements](https://github.com/sourcegraph/sourcegraph/pull/43943) have [occurred](https://github.com/sourcegraph/sourcegraph/pull/43944), and we continue to iterate on ranking heuristics at every level of the stack (graph construction, PageRank algorithm variants, index-time rank packing of index shards, query-time resorting of search results, etc. ).
 
 ### Looking to the future
 
