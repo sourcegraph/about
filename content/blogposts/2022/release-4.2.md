@@ -33,15 +33,17 @@ changelogItems:
 
 Sourcegraph 4.2 is here! This month, we are kicking off significant work to improve the scale, speed, and security of Sourcegraph.
 
-The Sourcegraph platform is built to make developers' lives easier. With a great code intelligence platform, developers are able to find and understand code fast, stay in flow, and focus more on what they love doing: writing great code. In order to do this, Sourcegraph needs to fit the requirements of all sizes of engineering teams. These requirements include operating across massive numbers of repositories, being able to search millions of commits, and baking security into every part of the product.
+Sourcegraph's code intelligence platform is built to help developers find and understand code fast, stay in flow, and focus more on what they love doing: writing great code. In order to do this seamlessly for all sizes of engineering teams, Sourcegraph must be able to oeprate across massive numbers of repositories, search millions of commits, and bake security into every part of the product.
 
-To accomplish these things and deliver a product for even the most demanding engineering teams, Sourcegraph is putting extra focus on scale, speed, and security, and you will see these themes surface frequently over the next several releases. Here's what's new in Sourcegraph 4.2:
+To accomplish this and support even the most demanding engineering teams, Sourcegraph is focused on improving scale, speed, and security over the next several releases in addition to releasing new features.
+
+Here's what's new in Sourcegraph 4.2:
 
 <Badge link="https://docs.sourcegraph.com/admin/audit_log#on-premises" text="Admin" color="violet" size="small" />
 
 #### Get enhanced security visibility with audit logs
 
-Sourcegraph users frequently want to answer questions regarding who has accessed their instance, what actions they've taken, and when. Sourcegraph already provides some information (such as monitoring and pings) to this end, but more robust information is needed to serve pentesting and security testing use cases.
+Sourcegraph users frequently want to answer questions regarding who has accessed their instance, what actions they've taken, and when. Sourcegraph already provides some information (such as monitoring and pings), but more data is needed to serve pentesting and security testing use cases.
 
 In 4.2, Sourcegraph now ships with an easy-to-consume audit log. The log contains security events, Gitserver access events, and GraphQL requests. You can [read more about the audit log in our docs](https://docs.sourcegraph.com/admin/audit_log). The audit log is available for Sourcegraph self-hosted instances, with availability coming soon for Sourcegraph Cloud.
 
@@ -61,7 +63,7 @@ This feature is in Beta, and feedback is very welcome. Tweet at us, or drop a co
 <br />
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 
-#### A Smart Search toggle to assist with search queries
+#### Smart Search helps with search queries to find more results, faster
 
 To help you find information in your codebase faster than ever, we're introducing Smart Search, a new query assistant that activates when a search returns no results. It can be turned on with the new lightning bolt toggle <span style={{display: "inline-flex", verticalAlign: "middle", margin: "2px"}}><img style={{width: "18px", height: "18px"}} src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2022/smart-search-bar-lightning.png"/></span> in the search bar.
 
