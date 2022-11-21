@@ -1,6 +1,6 @@
 ---
 title: "Sourcegraph 4.2 release"
-publishDate: 2022-11-22T10:00-07:00
+publishDate: 2022-11-29T10:00-07:00
 description: "Sourcegraph 4.2 introduces..."
 tags: [blog, release]
 slug: "release/4.2"
@@ -11,7 +11,7 @@ changelogItems:
   - description: The search input has a new recent searches button, and recent searches can be cycled via the up/down arrow keys for quick access to previous searches.
     url: https://github.com/sourcegraph/sourcegraph/pull/44544
     category: Search
-  - description: "When the `content:` filter is used in a query, it now behaves more predictably and only saerches file contents. Previously, file contents, paths, and repos were searched. However, as before, if `type:` is also set, the `content:` filter will search for results of the specified `type:`."
+  - description: "When the `content:` filter is used in a query, it now behaves more predictably and only searches file contents. Previously, file contents, paths, and repos were searched. However, as before, if `type:` is also set, the `content:` filter will search for results of the specified `type:`."
     url: https://github.com/sourcegraph/sourcegraph/pull/43442
     category: Search
   - description: When rendering a file which is backed by Git LFS, Sourcegraph now displays a page that links directly to the file on the codehost. Previously we rendered the LFS pointer.
@@ -84,4 +84,4 @@ It is not possible to customize Smart Search rules at this time. So far a small 
 
 <br />
 <hr/>
-Sourcegraph 4.2 is now available to download. For Sourcegraph Cloud users, instances will be upgraded to 4.2 beginning November 23.
+Sourcegraph 4.2 is now available to download. For Sourcegraph Cloud users, instances will be upgraded to 4.2 beginning (TBD).
