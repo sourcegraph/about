@@ -11,7 +11,7 @@ changelogItems:
   - description: The search input has a new recent searches button, and recent searches can be cycled via the up/down arrow keys for quick access to previous searches.
     url: https://github.com/sourcegraph/sourcegraph/pull/44544
     category: Search
-  - description: "When the `content:` filter is used in a query, it now behaves more predictably and only searches file contents. Previously, file contents, paths, and repos were searched. However, as before, if `type:` is also set, the `content:` filter will search for results of the specified `type:`."
+  - description: "When the `content:` filter is used in a query, it now behaves more predictably by only searching file contents. Previously, file contents, paths, and repos were searched. However, as before, if `type:` is also set, the `content:` filter will search for results of the specified `type:`."
     url: https://github.com/sourcegraph/sourcegraph/pull/43442
     category: Search
   - description: When rendering a file which is backed by Git LFS, Sourcegraph now displays a page that links directly to the file on the codehost. Previously we rendered the LFS pointer.
@@ -26,7 +26,7 @@ changelogItems:
   - description: Repositories can now be ordered by size on the repo admin page to make it easy to find the largest synced repos.
     url: https://github.com/sourcegraph/sourcegraph/pull/44360
     category: Admin
-  - description: Access token creation, GitHub aned GitLab OAuth login attempts, and OIDC login attempts are now part of the audit log.
+  - description: Access token creation, GitHub and GitLab OAuth login attempts, and OIDC login attempts are now part of the audit log.
     url: https://github.com/sourcegraph/sourcegraph/pull/43886
     category: Admin
 ---
