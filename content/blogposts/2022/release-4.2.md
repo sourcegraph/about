@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 4.2 release"
 publishDate: 2022-11-29T10:00-07:00
-description: "Sourcegraph 4.2 introduces..."
+description: "Sourcegraph 4.2 introduces the new audit log, executor secrets for server-side Batch Changes, and Smart Search to make it easier to find the search results you're looking for."
 tags: [blog, release]
 slug: "release/4.2"
 published: true
