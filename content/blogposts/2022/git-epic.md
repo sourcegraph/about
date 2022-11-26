@@ -72,10 +72,10 @@ description: 'TODO'
 </style>
 
 <div id="git-epic-git-graph-container">
-  <input type="checkbox" id="toggle-chore" /> <label for="toggle-chore">Hide chores</label><br />
-  <input type="checkbox" id="toggle-add" /> <label for="toggle-add">Hide added</label><br />
-  <input type="checkbox" id="toggle-change" /> <label for="toggle-change">Hide changed</label><br />
-  <input type="checkbox" id="toggle-remove" /> <label for="toggle-remove">Hide removed</label><br />
+  <input type="checkbox" id="toggle-chore" /> <label htmlFor="toggle-chore">Hide chores</label><br />
+  <input type="checkbox" id="toggle-add" /> <label htmlFor="toggle-add">Hide added</label><br />
+  <input type="checkbox" id="toggle-change" /> <label htmlFor="toggle-change">Hide changed</label><br />
+  <input type="checkbox" id="toggle-remove" /> <label htmlFor="toggle-remove">Hide removed</label><br />
   <table id="git-epic-git-graph">
     <thead>
       <tr>
