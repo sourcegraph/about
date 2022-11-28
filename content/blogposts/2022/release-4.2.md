@@ -33,7 +33,7 @@ changelogItems:
 
 Sourcegraph 4.2 is here! This month, we are kicking off significant work to improve the scale, speed, and security of Sourcegraph.
 
-Sourcegraph's code intelligence platform is built to help developers find and understand code fast, stay in flow, and focus more on what they love doing: writing great code. In order to do this seamlessly for all sizes of engineering teams, Sourcegraph must be able to oeprate across massive numbers of repositories, search millions of commits, and bake security into every part of the product.
+Sourcegraph's code intelligence platform is built to help you find and understand code fast, stay in flow, and focus more on what you love doing: writing great code. In order to do this seamlessly for all sizes of engineering teams, Sourcegraph must be able to oeprate across massive numbers of repositories, search millions of commits, and bake security into every part of the product.
 
 To accomplish this and support even the most demanding engineering teams, Sourcegraph is focused on improving scale, speed, and security over the next several releases in addition to releasing new features.
 
@@ -71,4 +71,4 @@ Smart Search helps find search results that are likely to be more useful than sh
 
 <br />
 <hr/>
-Sourcegraph 4.2 is now available to download. For Sourcegraph Cloud users, instances will be upgraded to 4.2 beginning (TBD).
+Sourcegraph 4.2 is now available to download. For Sourcegraph Cloud users, instances will be upgraded to 4.2 beginning December 5.
