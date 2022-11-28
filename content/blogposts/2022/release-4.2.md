@@ -45,7 +45,9 @@ Here's what's new in Sourcegraph 4.2:
 
 Sourcegraph users frequently want to answer questions regarding who has accessed their instance, what actions they've taken, and when. Sourcegraph already provides some information (such as monitoring and pings), but more data is needed to serve pentesting and security testing use cases.
 
-In 4.2, Sourcegraph now ships with an easy-to-consume audit log. The log contains security events, Gitserver access events, and GraphQL requests. You can [read more about the audit log in our docs](https://docs.sourcegraph.com/admin/audit_log). The audit log is available for Sourcegraph self-hosted instances, with availability coming soon for Sourcegraph Cloud.
+In 4.2, Sourcegraph now ships with an easy-to-consume audit log. The log contains security events, Gitserver access events, and GraphQL requests. The audit log is available for Sourcegraph self-hosted instances, with availability coming soon for Sourcegraph Cloud.
+
+<a href="https://docs.sourcegraph.com/admin/audit_log" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
 <br />
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
@@ -60,6 +62,8 @@ Sourcegraph supports two types of secrets: namespaced secrets that can only be a
 
 This feature is in Beta, and feedback is very welcome. Tweet at us, or drop a comment in this [issue](https://github.com/sourcegraph/sourcegraph/issues/44597)!
 
+<a href="https://docs.sourcegraph.com/admin/executor_secrets" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+
 <br />
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 
@@ -67,8 +71,9 @@ This feature is in Beta, and feedback is very welcome. Tweet at us, or drop a co
 
 To help you find information in your codebase faster than ever, we're introducing Smart Search, a new query assistant that activates when a search returns no results. It can be turned on with the new lightning bolt toggle <span style={{display: "inline-flex", verticalAlign: "middle", margin: "2px"}}><img style={{width: "18px", height: "18px"}} src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2022/smart-search-bar-lightning.png"/></span> in the search bar.
 
-Smart Search helps find search results that are likely to be more useful than showing "no results" by trying slight variations of a user's original query. Smart Search automatically tries alternative queries based on a handful of rules (we know how easy it is to get tripped up by query syntax). When a query alternative finds results, those results are shown immediately. [See the documentation](https://docs.sourcegraph.com/code_search/explanations/features#smart-search) to learn more about Smart Search behavior and configuration.
+Smart Search helps find search results that are likely to be more useful than showing "no results" by trying slight variations of a user's original query. Smart Search automatically tries alternative queries based on a handful of rules (we know how easy it is to get tripped up by query syntax). When a query alternative finds results, those results are shown immediately. See the documentation to learn more about Smart Search behavior and configuration.
+
+<a href="https://docs.sourcegraph.com/code_search/explanations/features#smart-search" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
 <br />
-<hr/>
 Sourcegraph 4.2 is now available to download. For Sourcegraph Cloud users, instances will be upgraded to 4.2 beginning December 5.
