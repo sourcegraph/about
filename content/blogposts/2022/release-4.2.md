@@ -14,7 +14,7 @@ changelogItems:
   - description: "When the `content:` filter is used in a query, it now behaves more predictably by only searching file contents. Previously, file contents, paths, and repos were searched. However, as before, if `type:` is also set, the `content:` filter will search for results of the specified `type:`."
     url: https://github.com/sourcegraph/sourcegraph/pull/43442
     category: Search
-  - description: When rendering a file which is backed by Git LFS, Sourcegraph now displays a page that links directly to the file on the codehost. Previously we rendered the LFS pointer.
+  - description: When rendering a file that is backed by Git LFS, Sourcegraph now displays a page that links directly to the file on the code host. Previously we rendered the LFS pointer.
     url: https://github.com/sourcegraph/sourcegraph/pull/43686
     category: Search
   - description: Code Insights data points that do not contain any results will display zero instead of being omitted from the visualization for clarity. This only applies to insight data created after 4.2.
@@ -58,7 +58,7 @@ It's common to use secrets in batch changes steps. Developers can use secrets in
 
 To solve this, we're releasing [executor secrets](https://docs.sourcegraph.com/admin/executor_secrets). You can now define secrets to be passed to server-side runs, and those secrets can be referenced as `env` variables in the batch change spec.
 
-Sourcegraph supports two types of secrets: namespaced secrets that can only be accessed by their owner, and global secets that site admins can set and make available to all users on an instance.
+Sourcegraph supports two types of secrets: namespaced secrets that can only be accessed by their owner, and global secrets that site admins can set and make available to all users on an instance.
 
 This feature is in Beta, and feedback is very welcome. Tweet at us, or drop a comment in this [issue](https://github.com/sourcegraph/sourcegraph/issues/44597)!
 
