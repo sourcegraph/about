@@ -11,7 +11,7 @@ changelogItems:
   - description: The search input has a new recent searches button, and recent searches can be cycled via the up/down arrow keys for quick access to previous searches.
     url: https://github.com/sourcegraph/sourcegraph/pull/44544
     category: Search
-  - description: "When the `content:` filter is used in a query, it now behaves more predictably by only searching file contents. Previously, file contents, paths, and repos were searched. However, as before, if `type:` is also set, the `content:` filter will search for results of the specified `type:`."
+  - description: "When the `content:` filter is used in a query, it now behaves more predictably by only searching file contents. Previously, file contents, paths, and repositories were searched. However, as before, if `type:` is also set, the `content:` filter will search for results of the specified `type:`."
     url: https://github.com/sourcegraph/sourcegraph/pull/43442
     category: Search
   - description: When rendering a file that is backed by Git LFS, Sourcegraph now displays a page that links directly to the file on the code host. Previously we rendered the LFS pointer.
@@ -23,7 +23,7 @@ changelogItems:
   - description: "A new experimental GraphQL query, `permissionsSyncJobs`, now lists the states of recently completed permissions sync jobs and the state of each provider to check that syncing is working as intended. The TTL of entries can be configured with `authz.syncJobsRecordsTTL`."
     url: https://github.com/sourcegraph/sourcegraph/pull/44387
     category: API
-  - description: Repositories can now be ordered by size on the repo admin page to make it easy to find the largest synced repos.
+  - description: Repositories can now be ordered by size on the repository admin page to make it easy to find the largest synced repositories.
     url: https://github.com/sourcegraph/sourcegraph/pull/44360
     category: Admin
   - description: Access token creation, GitHub and GitLab OAuth login attempts, and OIDC login attempts are now part of the audit log.
@@ -60,7 +60,7 @@ To solve this, we're releasing [executor secrets](https://docs.sourcegraph.com/a
 
 Sourcegraph supports two types of secrets: namespaced secrets that can only be accessed by their owner, and global secrets that site admins can set and make available to all users on an instance.
 
-This feature is in Beta, and feedback is very welcome. Tweet at us, or drop a comment in this [issue](https://github.com/sourcegraph/sourcegraph/issues/44597)!
+This feature is in Beta, and feedback is very welcome. Tweet at us, or drop a comment in this [issue](https://github.com/sourcegraph/sourcegraph/issues/44597).
 
 <a href="https://docs.sourcegraph.com/admin/executor_secrets" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
