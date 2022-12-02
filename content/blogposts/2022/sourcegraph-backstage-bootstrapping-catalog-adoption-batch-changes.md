@@ -181,7 +181,7 @@ Lastly, once a pull request is merged to introduce `catalog-info.yaml`, a develo
 
 ### Next: fully automate component registration 
 
-In the next blog post, we will go over how the component registration can be fully automated by creating a Backstage entity provider with Sourcegraph's search and monitoring features.
+In the next blog post, we go over [how the component registration can be fully automated by creating a Backstage entity provider with Sourcegraph's search API](../blog/sourcegraph-backstage-search-api-create-entity-provider-for-backstage). 
 
 <div className="mt-6" />
 ## About the authors
