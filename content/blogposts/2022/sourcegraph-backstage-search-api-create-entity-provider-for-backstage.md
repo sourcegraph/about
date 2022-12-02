@@ -203,7 +203,9 @@ The response to that query will look something like this:
             "name": "github.com/my_org/my_repo"
           },
           "file": {
-            "content": "---\napiVersion: backstage.io/v1alpha1\nkind: Component\nmetadata:\n  name: backstage\n  description: my backstage app\n type: website\n  owner: john@example.com\n  lifecycle: production "
+            "content": "---\napiVersion: backstage.io/v1alpha1\nkind: Component\nmetadata:\n
+              name: backstage\n  description: my backstage app\n type: website\n  owner: 
+              john@example.com\n  lifecycle: production "
           }
         },
         ...
