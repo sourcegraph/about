@@ -307,9 +307,9 @@ export default async function createPlugin(
 
 ### Result: one single API call for everything
 
-And there you have it! Using `Code Search` we were able to write a custom entity provider that queries all the relevant data that we require with one single API call to Sourcegraph - as opposed to making individual API calls to, say GitHub, for every single one of your repositories of your organization each time.
+And there you have it! Using Sourcegraph search we were able to write a custom entity provider that queries all the relevant data that we require with one single API call to Sourcegraph - as opposed to making individual API calls to, say GitHub, for every single one of your repositories of your organization each time.
 
-This is a great starting point, but one way we could make this even better is to have the catalog be able to perform live updates. You could shorten the frequency of the task scheduler, but the `full` mutation will overwrite the entire bucket so it's not ideal. Instead, you can utilize webhooks and Sourcegraph's `Code Monitoring` to apply efficient, incremental changes to your catalog.
+This is a great starting point, but one way we could make this even better is to have the catalog be able to perform live updates. You could shorten the frequency of the task scheduler, but the `full` mutation will overwrite the entire bucket so it's not ideal. Instead, you can utilize webhooks and Sourcegraph's [code monitoring](https://docs.sourcegraph.com/code_monitoring) to apply efficient, incremental changes to your catalog.
 
 <div className="mt-6" />
 ## About the authors
