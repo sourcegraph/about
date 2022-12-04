@@ -38,36 +38,21 @@ description: 'TODO'
   }
 
   /* Categorized PRs */
-  #git-epic-git-graph .marked.experiment { background-color: purple; }
-  #git-epic-git-graph .marked.chore      { background-color: grey; }
-  #git-epic-git-graph .marked.add        { background-color: green; }
-  #git-epic-git-graph .marked.change     { background-color: orange; }
-  #git-epic-git-graph .marked.remove     { background-color: red; }
+                                 #git-epic-git-graph .marked.experiment { background-color: purple; }
+  #toggle-chore:not(:checked)  ~ #git-epic-git-graph .marked.chore      { background-color: grey; }
+  #toggle-add:not(:checked)    ~ #git-epic-git-graph .marked.add        { background-color: green; }
+  #toggle-change:not(:checked) ~ #git-epic-git-graph .marked.change     { background-color: orange; }
+  #toggle-remove:not(:checked) ~ #git-epic-git-graph .marked.remove     { background-color: red; }
   #git-epic-git-graph th.experiment a    { color: purple; }
   #git-epic-git-graph th.chore      a    { color: grey; }
   #git-epic-git-graph th.add        a    { color: green; }
   #git-epic-git-graph th.change     a    { color: orange; }
   #git-epic-git-graph th.remove     a    { color: red; }
 
-  /* Add gutters to all PR cells by  default */
-  #git-epic-git-graph .marked              { position: relative; }
-  #git-epic-git-graph .marked:before       { position: absolute; content: ''; width: 20%;  height: 100%; background-color: #fff; left:  0; }
-  #git-epic-git-graph .marked:after        { position: absolute; content: ''; width: 20%;  height: 100%; background-color: #fff; right: 0; }
-  #git-epic-git-graph .marked.first:before { position: absolute; content: ''; width: 100%; height: 70%;  background-color: #fff; top:   0; }
-  #git-epic-git-graph .marked.first:after  { width: 0; height: 0; } /* Clear default gutters */
-  #git-epic-git-graph .marked.merge:before { width: 0; height: 0; } /* Clear default gutters */
-  #git-epic-git-graph .marked.merge:after  { width: 0; height: 0; } /* Clear default gutters */
-
-  /* Toggle switches */
-  #toggle-chore:checked  ~ #git-epic-git-graph .chore  { color: #fff; background-color: #fff; }
-  #toggle-add:checked    ~ #git-epic-git-graph .add    { color: #fff; background-color: #fff; }
-  #toggle-change:checked ~ #git-epic-git-graph .change { color: #fff; background-color: #fff; }
-  #toggle-remove:checked ~ #git-epic-git-graph .remove { color: #fff; background-color: #fff; }
-
   /* Highlight row on hover */
-  #git-epic-git-graph tbody tr:hover > td              { background-color: #ff0; }
-  #git-epic-git-graph tbody tr:hover > td.marked:before,
-  #git-epic-git-graph tbody tr:hover > td.marked:after { background-color: #ff0; }
+  #git-epic-git-graph tbody tr:hover { background-color: yellow; }
+  #git-epic-git-graph tbody tr:hover { background-color: yellow; }
+  #git-epic-git-graph tbody tr:hover { background-color: yellow; }
 `}
 </style>
 
