@@ -4,9 +4,9 @@ title: Subprocessors
 description: This page lists the subsprocessors that Sourcegraph may use
 ---
 
-Last modified: March 8, 2022
+Last modified: December 6, 2022
 
-See the [previous version](/terms/archives/subprocessors/2021-12-03/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives)
+See the [previous version](/terms/archives/subprocessors/2022-03-08/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives).
 
 Sourcegraph, Inc. (“Sourcegraph”) uses certain third party sub-processors (“Sub-processors”) to assist in providing the Services described in the Sourcegraph Terms of Service available at [https://about.sourcegraph.com/terms/](/terms/) and/or as set forth in an applicable Order Form. Capitalized terms used but not otherwise defined herein shall have the meanings ascribed to them in the applicable Sourcegraph Terms of Service.
 
@@ -17,20 +17,23 @@ Sourcegraph engages Sub-processors to perform the functions described in the tab
 <TableWrapper>
 | Third-party Subprocessor | Location       | Service Provided                                                                                                                                                   | Applicable product                                 |
 | ------------------------ | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------- |
-| Amazon Web Services      | USA            | Provides cloud hosting for Sourcegraph Cloud services                                                                                                              | Sourcegraph Cloud<br/>Managed Instance             |
 | Amplitude                | USA            | Processes customer logs                                                                                                                                            | Sourcegraph Cloud                                  |
-| Atlassian                | Australia      | Processes support tickets and tracks bugs                                                                                                                          | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
-| Cloudflare               | USA            | Processes customer request data such as IP addresses to<br/> optimize security and performance of Sourcegraph Cloud                                                | Sourcegraph Cloud<br/>Managed Instance             |
-| GitHub                   | USA            | Tracks customer support issues                                                                                                                                     | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
-| Google                   | USA            | Provides cloud hosting for Sourcegraph managed instances<br/> and Sourcegraph Cloud (Google Cloud Platform)<br/>Processes customer support communication (G Suite) | Sourcegraph Cloud<br/>Managed Instance             |
-| Grafana                  | USA            | Processes customer logs                                                                                                                                            | Sourcegraph Cloud<br/>Managed Instance             |
-| Honeycomb                | USA            | Processes any information Customer sends for debugging<br/> purposes                                                                                               | Sourcegraph Cloud                                  |
-| Incident.io              | United Kingdom | Processes incidents                                                                                                                                                | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
-| Salesforce               | USA            | Processes customer support tickets                                                                                                                                 | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
-| Sentry                   | USA            | Processes error data, which can include email addresses<br/> and other personal data, for debugging purposes                                                       | Sourcegraph Cloud<br/>Managed Instance             |
-| Slack Technologies       | USA            | Processes customer support communication                                                                                                                           | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
-| Zapier                   | USA            | Processes information needed to enable integrations<br/> between Sourcegraph and a third-party product                                                             | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
-| Zendesk                  | USA            | Processes customer support communication                                                                                                                           | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
+| Atlassian                | Australia      | Alerts on-call engineers about anomalies and errors on production environments                                                                                     | Sourcegraph.com<br/>Sourcegraph Cloud              |
+| Cloudflare               | USA            | Processes customer request data such as IP addresses to optimize security and performance of Sourcegraph Cloud and Sourcegraph.com                                 | Sourcegraph.com<br/>Sourcegraph Cloud              |
+| Foqal.io                 | USA            | Customer support ticketing system                                                                                                                                  | Sourcegraph Cloud<br/>On Prem                      |
+| GitHub                   | USA            | Tracks customer support issues                                                                                                                                     | Sourcegraph.com<br/>Sourcegraph Cloud><br/>On Prem |
+| Google                   | USA            | Provides cloud hosting for Sourcegraph.com and Sourcegraph Cloud (Google Cloud Platform)<br/>Processes customer support communication (G Suite), Stores usage data for Sourcegraph.com and Sourcegraph Cloud (BigQuery) | Sourcegraph.com<br/>Sourcegraph Cloud |
+| Grafana                  | USA            | Processes customer logs                                                                                                                                            | Sourcegraph.com                                    |
+| Honeycomb                | USA            | Processes any information Customer sends for debugging purposes                                                                                                    | Sourcegraph.com                                    |
+| Incident.io              | United Kingdom | Processes incidents                                                                                                                                                | Sourcegraph Cloud<br/>Sourcegraph.com<br/>On Prem  |
+| Mailchimp                | USA            | Transactional email delivery                                                                                                                                       | Sourcegraph.com                                    |
+| Netlify                  | USA            | Processes Sourcegraph cloud trial requests data                                                                                                                    | Sourcegraph Cloud                                  |
+| Salesforce               | USA            | Customer relationship management                                                                                                                                   | Sourcegraph Cloud<br/>Sourcegraph.com<br/>On Prem  |
+| Sentry                   | USA            | Processes error data, which can include email addresses and other personal data, for debugging purposes                                                            | Sourcegraph.com                                    |
+| Slack Technologies       | USA            | Processes customer support communication                                                                                                                           | Sourcegraph Cloud<br/>Sourcegraph.com<br/>On Prem  |
+| Sparkpost                | USA            | Transactional email delivery                                                                                                                                       | Sourcegraph Cloud                                  |
+| Zapier                   | USA            | Processes information needed to enable integrations between Sourcegraph and a third-party product                                                                  | Sourcegraph Cloud<br/>Sourcegraph.com<br/>On Prem  |
+| Zendesk                  | USA            | Customer support ticketing system                                                                                                                                  | Sourcegraph Cloud<br/>Sourcegraph.com<br/>On Prem  |
 </TableWrapper>
 
 <h2 id='sign-up'>Sign Up</h2>
