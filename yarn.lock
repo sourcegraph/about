@@ -1836,10 +1836,10 @@
     eslint-plugin-unicorn "^21.0.0"
     eslint-plugin-unused-imports "^1.1.5"
 
-"@sourcegraph/event-logger@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@sourcegraph/event-logger/-/event-logger-2.0.2.tgz#cef23de5afc260f6f00c67db03699de06e6d3451"
-  integrity sha512-Q2VsxsFD+fP+D7xz2dtiRxk+3UMjYDY8wewjwuoM8f1zmWPaCIWKeM8MCTbCCDwLwJXL0vdHqucHNne4lZUtMw==
+"@sourcegraph/event-logger@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@sourcegraph/event-logger/-/event-logger-2.0.4.tgz#41dc6650e0a661fedb37ba6d68500fb3d1117172"
+  integrity sha512-TroOysS5PvQaKncQOC5E5UwNyLysRoT1ABGCXl8ysxYeRTfnZLaba6wSxR1UeU5UtVTsrb5KtT90n2S1L4ckEA==
   dependencies:
     date-fns "^2.28.0"
     js-cookie "^3.0.1"
