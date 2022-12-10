@@ -97,7 +97,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
         link: '/demo',
     },
     cta3 = (
-        <p className="tw-mt-xs tw-ml-sm">
+        <p className="text-center tw-mt-xs tw-ml-sm">
             Want to deploy yourself?{' '}
             <a
                 href="https://docs.sourcegraph.com"
