@@ -27,7 +27,7 @@ Fuzzy finder is an experiemental feature, and we welcome your feedback and input
 
 [Search contexts](https://docs.sourcegraph.com/code_search/how-to/search_contexts) help you search the code you care about by representing a set of rpositories that will be targed by a search query. Now, you can set your most used or helpful search contexts as favorites using the star icon, and your favorite contexts will be listed at the top of your saved contexts for faster access. Additionaly, you can customize the default search context for any new search query, helping to ensure the scope of each search query the most relevant to your work. Your default search context is clearly marked in the search contex dropdown, and it can be easily updated using the seach context management pages and your individual search context page. 
 
-TODO: Screenshot
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.3/Search%20Contexts.png alt="Search Contexts">
 
 <a href="https://docs.sourcegraph.com/code_search/how-to/search_contexts)" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
