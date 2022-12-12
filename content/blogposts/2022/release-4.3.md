@@ -7,7 +7,7 @@
 - Symbols: Cmd+O (macOS), Cmd+Shift+O (macOS Safari), Ctrl+O (Linux/Windows)
 - Files: Cmd+P (macOS), Ctrl+P (Linux/Windows)
 
-Please note this is an experiemental feature, and we welcome your feedback and input. 
+Fuzzy finder is an experiemental feature, and we welcome your feedback and input. 
 
 <Video 
   source={{
