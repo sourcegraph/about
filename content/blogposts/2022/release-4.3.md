@@ -1,3 +1,24 @@
+---
+title: "Sourcegraph 4.3 release"
+publishDate: 2022-12-15T10:00-07:00
+description: "Sourcegraph 4.3 introduces..."
+tags: [blog, release]
+slug: "release/4.3"
+published: true
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.2/sourcegraph-4-3-hero.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.2/sourcegraph-4-3-hero.png
+changelogItems:
+  - description: 
+    url: 
+    category: Search
+  - description: 
+    url: 
+    category: Search
+---
+
+Sourcegraph 4.3 is here! This month...
+
+Here's what's new in Sourcegraph 4.3:
 
 #### Instantly navigate repositories, files, and symbols by name with fuzzy finder 
 
