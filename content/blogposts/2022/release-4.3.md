@@ -55,4 +55,6 @@ Fuzzy finder is an experiemental feature, and we welcome your feedback and input
 <br />
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 
-####
+#### Webhooks for Repository and Permissions syncing 
+
+Sourcegraph predominatntly uses pull-based models for repository and permissions updates from the code host and webhooks have been hidden away in our external service config. But this can often create significant strain on code hosts and mean delays between syncs. In 4.3, webhooks have received a significant update making it easier for admins to configure webhooks for repository and permissions syncing including a new UI for creating, updating and deleting webhooks and improved handling of permissions webhooks. For now, our webhook updates are limited to GitHub customers. 
