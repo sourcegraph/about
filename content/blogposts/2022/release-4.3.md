@@ -1,11 +1,13 @@
 
-#### Instantly navigate repositories, files, and symbols by name with fuzzy finder
+#### Instantly navigate repositories, files, and symbols by name with fuzzy finder 
 
-[Fuzzy finder](TODO: link to the new docs page when it's live) helps you quickly navigate to a repository, symbole or file. To open the fuzzy finder, press 'Cmd+K' (macOS) or "Ctrl+K' (Linux/Windows) from any page, and each tab has a dedicated shortcut:
+[Fuzzy finder](https://docs.sourcegraph.com/code_search/explanations/features) helps you quickly navigate to a repository, symbole or file. To open the fuzzy finder, press 'Cmd+K' (macOS) or "Ctrl+K' (Linux/Windows) from any page, and each tab has a dedicated shortcut:
 
 - Repos: Cmd+I (macOS), Ctrl+K (Linux/Windows)
 - Symbols: Cmd+O (macOS), Cmd+Shift+O (macOS Safari), Ctrl+O (Linux/Windows)
 - Files: Cmd+P (macOS), Ctrl+P (Linux/Windows)
+
+Please note this is an experiemental feature, and we welcome your feedback and input. 
 
 <Video 
   source={{
@@ -16,7 +18,7 @@
   title="Fuzzy Finder"
   caption="New, powerful fuzzy finder for searching repositories, symbols, and files by name."
 />
-<a href="TODO" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/code_search/explanations/features" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
 <br />
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
