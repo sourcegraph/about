@@ -22,13 +22,13 @@ Here's what's new in Sourcegraph 4.3:
 
 #### Instantly navigate repositories, files, and symbols by name with fuzzy finder 
 
-[Fuzzy finder](https://docs.sourcegraph.com/code_search/explanations/features) helps you quickly navigate to a repository, symbole or file. To open the fuzzy finder, press 'Cmd+K' (macOS) or "Ctrl+K' (Linux/Windows) from any page, and each tab has a dedicated shortcut:
+[Fuzzy finder](https://docs.sourcegraph.com/code_search/explanations/features) helps you quickly navigate to a repository, symbol or file. To open the fuzzy finder, press 'Cmd+K' (macOS) or "Ctrl+K' (Linux/Windows) from any page, and each tab has a dedicated shortcut:
 
 - Repos: Cmd+I (macOS), Ctrl+K (Linux/Windows)
 - Symbols: Cmd+O (macOS), Cmd+Shift+O (macOS Safari), Ctrl+O (Linux/Windows)
 - Files: Cmd+P (macOS), Ctrl+P (Linux/Windows)
 
-Fuzzy finder is an experiemental feature, and we welcome your feedback and input. 
+Fuzzy finder is an experimental feature, and we welcome your feedback and input.
 
 <Video 
   source={{
@@ -46,7 +46,7 @@ Fuzzy finder is an experiemental feature, and we welcome your feedback and input
 
 #### Quickly define the scope of your search query with search context favorites and default contexts
 
-[Search contexts](https://docs.sourcegraph.com/code_search/how-to/search_contexts) help you search the code you care about by representing a set of rpositories that will be targed by a search query. For example, you can narrow the scope of your seach query by creating a context for specific services or  all the code your team owns. Now, you can set your most used or helpful search contexts as favorites using the star icon, and your favorite contexts will be listed at the top of your saved contexts for faster access. Additionaly, you can customize the default search context for any new search query, helping to ensure the scope of each search query the most relevant to your work. Your default search context is clearly marked in the search contex dropdown, and it can be easily updated using the seach context management pages and your individual search context page. 
+[Search contexts](https://docs.sourcegraph.com/code_search/how-to/search_contexts) help you search the code you care about by representing a set of repositories that will be targeted by a search query. For example, you can narrow the scope of your search query by creating a context for specific services or  all the code your team owns. Now, you can set your most used or helpful search contexts as favorites using the star icon, and your favorite contexts will be listed at the top of your saved contexts for faster access. Additionally, you can customize the default search context for any new search query, helping to ensure the scope of each search query the most relevant to your work. Your default search context is clearly marked in the search context dropdown, and it can be easily updated using the search context management pages and your individual search context page. 
 
 <img src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.3/Search%20Contexts.png alt="Search Contexts">
 
@@ -57,4 +57,4 @@ Fuzzy finder is an experiemental feature, and we welcome your feedback and input
 
 #### Webhooks for Repository and Permissions syncing 
 
-Sourcegraph predominatntly uses pull-based models for repository and permissions updates from the code host and webhooks have been hidden away in our external service config. Polling code hosts to check for changes can often create significant strain on code hosts, and syncs take longer as the Sourcegraph instance grows. In 4.3, webhooks have received a significant update making it easier for admins to configure webhooks for repository and permissions syncing including a new UI for creating, updating and deleting webhooks and improved handling of permissions webhooks. What this means is that your Sourcegraph instance will mirror your code host changes much more closely, ensuring that users always see the latest versions of what they need to see. For now, our webhook updates are limited to GitHub customers. 
+Sourcegraph predominantly uses pull-based models for repository and permissions updates from the code host and webhooks have been hidden away in our external service config. Polling code hosts to check for changes can often create significant strain on code hosts, and syncs take longer as the Sourcegraph instance grows. In 4.3, webhooks have received a significant update making it easier for admins to configure webhooks for repository and permissions syncing including a new UI for creating, updating and deleting webhooks and improved handling of permissions webhooks. What this means is that your Sourcegraph instance will mirror your code host changes much more closely, ensuring that users always see the latest versions of what they need to see. For now, our webhook updates are limited to GitHub customers.
