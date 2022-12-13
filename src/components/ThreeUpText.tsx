@@ -4,7 +4,7 @@ import classNames from 'classnames'
 
 interface Item {
     icon?: ReactNode
-    subtitle: string | ReactNode
+    subtitle?: string | ReactNode
     description: string
 }
 

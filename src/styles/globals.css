@@ -132,6 +132,10 @@
     .sg-bg-gradient-aurora {
         @apply tw-bg-gradient-to-r tw-from-blue-300 tw-to-violet-400;
     }
+    .sg-bg-radial-space {
+        background:
+            radial-gradient(50% 50% at 50% 50%, theme(colors.violet.200 / 30%) 0%, theme(colors.violet.700) 100%), #270741;
+    }
 
     /* Starship Backgrounds */
     .sg-bg-gradient-starship-small {
