@@ -5,10 +5,9 @@ description: "Sourcegraph 4.3 introduces..."
 tags: [blog, release]
 slug: "release/4.3"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.2/sourcegraph-4-3-hero.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.2/sourcegraph-4-3-hero.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.3/sourcegraph-4-3-hero.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.3/sourcegraph-4-3-hero.png
 changelogItems:
-# Added
   - description: "A \"copy path\" button has been added to file content, path, and symbol search results on hover or focus, next to the file path. The button copies the relative path of the file in the repo, in the same way as the \"copy path\" button in the file and repo pages."
     url: https://github.com/sourcegraph/sourcegraph/pull/42721
     category: Search
@@ -18,24 +17,15 @@ changelogItems:
   - description: "The number of commits listed in the History tab can now be customized for all users by site admins under Configuration -\u003e Global Settings from the site admin page by using the config `history.defaultPageSize`. Individual users may also set `history.defaultPagesize` from their user settings page to override the value set under the Global Settings."
     url: https://github.com/sourcegraph/sourcegraph/pull/44651
     category: Admin
-  - description: "Batch Changes: Mounted files can be accessed via the UI on the executions page."
-    url: https://github.com/sourcegraph/sourcegraph/pull/43180
-    category: Batch Changes
   - description: "Added \"Outbound request log\" feature for site admins"
     url: https://github.com/sourcegraph/sourcegraph/pull/44286
     category: Admin
-  - description: "[search.largeFiles](https://docs.sourcegraph.com/admin/config/site_config#search-largeFiles) accepts an optional prefix `!` to negate a pattern. The order of the patterns within search.largeFiles is honored such that the last pattern matching overrides preceding patterns. For patterns that begin with a literal `!` prefix with a backslash, for example, `\\!fileNameStartsWithExcl!.txt`. Previously indexed files that become excluded due to this change will remain in the index until the next reindex"
-    url: https://github.com/sourcegraph/sourcegraph/pull/45318
-    category: Search
-  - description: "When one or more changesets are selected, we now display all bulk operations but disable the ones that aren't applicable to the changesets."
-    url: https://github.com/sourcegraph/sourcegraph/pull/44617
+  - description: "Mounted files in batch changes can be viewed via the UI on the executions page."
+    url: https://github.com/sourcegraph/sourcegraph/pull/43180
     category: Batch Changes
-  - description: "When the setting `batchChanges.enforceForks` is enabled, Batch Changes will now prefix the name of the fork repo it creates with the original repo's namespace name in order to prevent repo name collisions. [#43681](https://github.com/sourcegraph/sourcegraph/pull/43681), [#44458](https://github.com/sourcegraph/sourcegraph/pull/44458), [#44548](https://github.com/sourcegraph/sourcegraph/pull/44548),"
-    url: https://github.com/sourcegraph/sourcegraph/pull/44924
+  - description: "When the setting `batchChanges.enforceForks` is enabled, Batch Changes will now prefix the name of the fork repo it creates with the original repo's namespace in order to prevent repo name collisions."
+    url: https://docs.sourcegraph.com/admin/config/batch_changes#forks
     category: Batch Changes
-  - description: "Removed legacy GraphQL field `dirtyMetadata` on an insight series. `insightViewDebug` can be used as an alternative."
-    url: https://github.com/sourcegraph/sourcegraph/pull/44416
-    category: API
   - description: "Removed the experimental feature setting `showComputeComponent`. Any notebooks that used the compute component will no longer render the block. The block will be deleted from the database the next time a notebook that uses it is saved."
     url: https://github.com/sourcegraph/sourcegraph/pull/45360
     category: Notebooks
