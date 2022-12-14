@@ -78,9 +78,11 @@ Fuzzy finder is an experimental feature, and we welcome your feedback and input.
 <br />
 <Badge link="https://docs.sourcegraph.com/admin/config/webhooks" text="Admin" color="violet" size="small" />
 
-#### Webhooks for Repository and Permissions syncing 
+#### Webhooks for repository and permissions syncing 
 
-Sourcegraph predominantly uses pull-based models for repository and permissions updates from the code host and webhooks have been hidden away in our external service config. Polling code hosts to check for changes can often create significant strain on code hosts, and syncs take longer as the Sourcegraph instance grows. In 4.3, webhooks have received a significant update making it easier for admins to configure webhooks for repository and permissions syncing including a new UI for creating, updating and deleting webhooks and improved handling of permissions webhooks. What this means is that your Sourcegraph instance will mirror your code host changes much more closely, ensuring that users always see the latest versions of what they need to see. For now, our webhook updates are limited to GitHub customers.
+Sourcegraph predominantly uses pull-based models for repository and permissions updates from the code host, and webhooks have been hidden away in our external service config. Polling code hosts to check for changes can often create significant strain on code hosts, and syncs take longer as the Sourcegraph instance grows.
+
+In 4.3, webhooks have received a significant update making it easier for admins to configure webhooks for repository and permissions syncing. We're introducing a new UI for creating, updating, and deleting webhooks, and there is now improved handling of permissions webhooks. As a result, your Sourcegraph instance will mirror your code host changes much more closely, ensuring that users always see the latest versions of what they need to see. These webhook updates are currently limited to the GitHub code host. See [the docs](https://docs.sourcegraph.com/admin/config/webhooks) for instructions on configuring new webhooks.
 
 <a href="https://docs.sourcegraph.com/admin/config/webhooks" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
