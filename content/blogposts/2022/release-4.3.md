@@ -29,6 +29,10 @@ changelogItems:
   - description: "Removed the experimental feature setting `showComputeComponent`. Any notebooks that used the compute component will no longer render the block. The block will be deleted from the database the next time a notebook that uses it is saved."
     url: https://github.com/sourcegraph/sourcegraph/pull/45360
     category: Notebooks
+     - description: We'll be making a breaking change to the search query syntax with the upcoming 4.5 release in Februrary. We will be deprecating the fields `repohasfile` and `repohascommitafter` in favor of `repo:has.path()`.
+    url: https://github.com/sourcegraph/sourcegraph/issues/45625
+    category: Code search
+    
 ---
 
 Sourcegraph 4.3 is here! This month...
