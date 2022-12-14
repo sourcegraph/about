@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 4.3 release"
 publishDate: 2022-12-15T10:00-07:00
-description: "Sourcegraph 4.3 introduces..."
+description: "Sourcegraph 4.3 introduces the fuzzy finder, search context favorites, webhooks for repository syncing, and faster and more reliable code insights."
 tags: [blog, release]
 slug: "release/4.3"
 published: true
@@ -32,12 +32,7 @@ changelogItems:
      - description: We'll be making a breaking change to the search query syntax with the upcoming 4.5 release in Februrary. We will be deprecating the fields `repohasfile` and `repohascommitafter` in favor of `repo:has.path()`.
     url: https://github.com/sourcegraph/sourcegraph/issues/45625
     category: Code search
-    
 ---
-
-Sourcegraph 4.3 is here! This month...
-
-Here's what's new in Sourcegraph 4.3:
 
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 
