@@ -83,3 +83,13 @@ Fuzzy finder is an experimental feature, and we welcome your feedback and input.
 #### Webhooks for Repository and Permissions syncing 
 
 Sourcegraph predominantly uses pull-based models for repository and permissions updates from the code host and webhooks have been hidden away in our external service config. Polling code hosts to check for changes can often create significant strain on code hosts, and syncs take longer as the Sourcegraph instance grows. In 4.3, webhooks have received a significant update making it easier for admins to configure webhooks for repository and permissions syncing including a new UI for creating, updating and deleting webhooks and improved handling of permissions webhooks. What this means is that your Sourcegraph instance will mirror your code host changes much more closely, ensuring that users always see the latest versions of what they need to see. For now, our webhook updates are limited to GitHub customers.
+
+#### Code Insights are faster and even more reliable
+
+[Code Insights](https://docs.sourcegraph.com/code_insights) turns your codebase into a database, so you can track migrations, version spread, tooling, and any other custom metric from the source of truth – the code – directly. We made significant improvements to the backfiller that populates your data, making your insights faster and more reliable, including: 
+
+- Faster calculation times thanks to reduced contention in the work queue from separate insights
+- Graceful error handling to surface information to the user if there are any incomplete data points
+- Faster insight creation with more efficient background processing
+- Improved visibility into the state of background processes for easier troubleshooting and problem solving
+
