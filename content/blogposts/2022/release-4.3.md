@@ -45,6 +45,8 @@ Sourcegraph 4.3 is here! This month...
 
 Here's what's new in Sourcegraph 4.3:
 
+<Badge link="/code-search" text="Code Search" color="cerise" size="small" />
+
 #### Instantly navigate repositories, files, and symbols by name with fuzzy finder 
 
 [Fuzzy finder](https://docs.sourcegraph.com/code_search/explanations/features) helps you quickly navigate to a repository, symbol or file. To open the fuzzy finder, press 'Cmd+K' (macOS) or "Ctrl+K' (Linux/Windows) from any page, and each tab has a dedicated shortcut:
@@ -78,11 +80,16 @@ Fuzzy finder is an experimental feature, and we welcome your feedback and input.
 <a href="https://docs.sourcegraph.com/code_search/how-to/search_contexts)" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
 <br />
-<Badge link="/code-search" text="Code Search" color="cerise" size="small" />
+<Badge link="https://docs.sourcegraph.com/admin/config/webhooks" text="Admin" color="violet" size="small" />
 
 #### Webhooks for Repository and Permissions syncing 
 
 Sourcegraph predominantly uses pull-based models for repository and permissions updates from the code host and webhooks have been hidden away in our external service config. Polling code hosts to check for changes can often create significant strain on code hosts, and syncs take longer as the Sourcegraph instance grows. In 4.3, webhooks have received a significant update making it easier for admins to configure webhooks for repository and permissions syncing including a new UI for creating, updating and deleting webhooks and improved handling of permissions webhooks. What this means is that your Sourcegraph instance will mirror your code host changes much more closely, ensuring that users always see the latest versions of what they need to see. For now, our webhook updates are limited to GitHub customers.
+
+<a href="https://docs.sourcegraph.com/admin/config/webhooks" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+
+<br />
+<Badge text="Code Insights" link="/code-insights" color="green" size="small" />
 
 #### Code Insights are faster and even more reliable
 
@@ -93,3 +100,4 @@ Sourcegraph predominantly uses pull-based models for repository and permissions 
 - Faster insight creation with more efficient background processing
 - Improved visibility into the state of background processes for easier troubleshooting and problem solving
 
+<a href="https://docs.sourcegraph.com/code_insights" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
