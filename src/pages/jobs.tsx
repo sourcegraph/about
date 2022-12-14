@@ -360,6 +360,25 @@ const CareersPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection background="white">
+                <div className="tw-flex tw-flex-col md:tw-flex-row tw-py-5xl tw-px-6 tw-max-w-screen-xl tw-mx-auto tw-items-center">
+                    <div>
+                    <h2 className="tw-mb-6">Our employees say we're a Great Place to Work™</h2>
+                    <p>
+                        Our employees have spoken! Our company culture is amazing and our Great Place to Work
+                        Certification™️ proves it.
+                    </p>
+                    </div>
+                    <div className="col-lg-6 max-h-600 tw-flex tw-justify-center">
+                        <img
+                            className="w-100 max-w-450"
+                            src="/careers/great-place-to-work.png"
+                            alt="Graphic portraying that 94% of employees at Sourcegraph say it is a great place to work compared to 57% of employees at a typical U.S.-based company."
+                        />
+                    </div>
+                </div>
+            </ContentSection>
+
+            <ContentSection background="white">
                 <div className="tw-flex tw-flex-col tw-items-center tw-text-center">
                     <div>
                         <div className="col-lg-12">
