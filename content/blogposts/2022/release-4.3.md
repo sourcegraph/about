@@ -17,7 +17,7 @@ changelogItems:
   - description: "The number of commits listed in the History tab can now be customized for all users by site admins under Configuration -\u003e Global Settings from the site admin page by using the config `history.defaultPageSize`. Individual users may also set `history.defaultPagesize` from their user settings page to override the value set under the Global Settings."
     url: https://github.com/sourcegraph/sourcegraph/pull/44651
     category: Admin
-  - description: "Added \"Outbound request log\" feature for site admins"
+  - description: "Added an outbound request log page, which allows admins to inspet all outbound requests from their instance including those made to code hosts. It can be enabled by setting `outboundRequestLogLimit` to a value above 0 in the site config."
     url: https://github.com/sourcegraph/sourcegraph/pull/44286
     category: Admin
   - description: "Mounted files in batch changes can be viewed via the UI on the executions page."
