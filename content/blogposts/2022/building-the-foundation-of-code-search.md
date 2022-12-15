@@ -5,7 +5,7 @@ authors:
     url: https://twitter.com/beyang
   - name: Justin Dorfman
     url: https://twitter.com/jdorfman
-publishDate: 2022-08-29T10:00-07:00
+publishDate: 2022-12-15T10:00-07:00
 description: 'At Sourcegraph, we’re inspired by developers that make a difference. Han-Wen Nienhuys, creator of Zoekt, an open source search engine for code based on Google’s internal Code Search tool, is one of those inspiring developers.'
 tags: [blog]
 slug: 'zoekt-creating-internal-tools-at-google'
@@ -16,11 +16,9 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-buildin
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qOKDQT7-PJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Creating internal tools at Google: why Han-Wen built Zoekt
-
 At Sourcegraph, we’re inspired by developers that make a difference, and creating and perfecting the internal tools they use every day is one way developers can have a significant impact. We should know: Sourcegraph itself was partly inspired by the internal code search tool at Google.
 
-## Building the foundation of code search
+### Building the foundation of code search
 
 Han-Wen Nienhuys, creator of Zoekt, an open source search engine for code based on Google’s internal Code Search tool, is one of those inspiring developers. Han-Wen has worked on developer productivity and dev tools at Google for nearly 15 years, including many of Google's famed internal tools, including: 
 
@@ -33,7 +31,7 @@ Sourcegraph uses Zoekt as the primary search backend for indexed search. Every S
 [We chatted with Han-Wen](https://about.sourcegraph.com/podcast/han-wen-nienhuys) to hear Zoekt’s origin story.
 
 
-# Internal tools: Making developers’ day-to-day work easier
+### Internal tools: Making developers’ day-to-day work easier
 
 Zoekt is the byproduct of Han-Wen’s extensive experience developing internal tooling at Google, a career that started in 2006 with a last-minute 5 am flight to a Google recruitment conference in Brazil, leading to a position in the Google Brazil office.
 
@@ -52,7 +50,7 @@ Having previously worked with Git, Han-Wen’s tooling solution was to build a G
 “Before I knew it,” Han-Wen says, “there were hundreds of users” of his wrapper. At the height of its popularity, 25% of Google’s developers used Han-Wen’s tool, and he used their feedback and ideas to improve it.
 
 
-# Becoming an expert in Perforce by trying to avoid it
+### Becoming an expert in Perforce by trying to avoid it
 
 Ironically, by building his Git wrapper to avoid using Perforce, Han-Wen became something of a Perforce expert—skills that made him the perfect hire for the Piper team.
 
@@ -61,7 +59,7 @@ At the time, Google’s version control system Piper looked quite like Perforce 
 Han-Wen relocated to Google’s Munich office to work on internal tooling with the Piper team, where he continued to develop his Git wrapper—“It was a perfect 20% project,” he says. While there, Han-Wen became involved in pitching the idea of open sourcing Google’s build system, and before long, he joined the Bazel team to work on the project. When he switched teams, the Git wrapper was left with the Piper team. “It’s quite special,” Han-Wen says, “to create a 20% project and then leave it with another team.” 
 
 
-# Open sourcing Google’s build system
+### Open sourcing Google’s build system
 
 Moving teams brought some valuable lessons. Han-Wen had previously used Google’s build system as a consumer, and from that point of view, the product seemed well put together and polished. 
 
@@ -70,7 +68,7 @@ In reality, Han-Wen found that there was a lot of technical debt behind the scen
 Untangling the build system from its Google internals burned Han-Wen out, and he decided it was time to work on something different. “The Git guy” at Google was Shawn Pierce, who had been working on Gerrit, Google’s open source code review tool, for seven years with the aim of providing open source tooling for Android developers. Han-Wen had known Pierce for years through working on the Git wrapper and admired his vision and commitment. So when Pierce asked Han-Wen to see if he could build a code search tool for Gerrit, Han-Wen leaped at the chance and joined the Gerrit team.
 
 
-# Taking the bull by the horns
+### Taking the bull by the horns
 
 Han-Wen’s years of experience with Git were put to good use on the project.
 
@@ -87,7 +85,7 @@ Han-Wen immersed himself in the project. He learned Go, studied the algorithms, 
 During the week, while working on his other Google projects, Han-Wen would have all these ideas about how to improve his code search tool. Come Tuesday, an idea would have been brewing in his head and would be ready. “I only had to type it out. And then I would try to finish it before the train reached its destination.”
 
 
-# Sourcegraph and Zoekt: The dream team
+### Sourcegraph and Zoekt: The dream team
 
 The tool Han-Wen developed on the train eventually became the Zoekt code search tool. Early adopters of the Zoekt precursor included Google’s Bazel and Gerrit teams and a Swedish company that makes security cameras—“They told me they would name a street on their campus in honor of me if I would make it work for them.” Han-Wen still occasionally gets bug reports from users.
 
