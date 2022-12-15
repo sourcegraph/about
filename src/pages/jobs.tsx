@@ -360,13 +360,13 @@ const CareersPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection background="white">
-                <div className="tw-flex tw-flex-col md:tw-flex-row tw-py-5xl tw-px-6 tw-max-w-screen-xl tw-mx-auto tw-items-center">
+                <div className="tw-flex tw-flex-col md:tw-flex-row tw-px-6 tw-max-w-screen-xl tw-mx-auto tw-items-center">
                     <div>
-                    <h2 className="tw-mb-6">Our employees say we're a Great Place to Work™</h2>
-                    <p>
-                        Our employees have spoken! Our company culture is amazing and our Great Place to Work
-                        Certification™️ proves it.
-                    </p>
+                        <h2 className="tw-mb-6">Our employees say we're a Great Place to Work™</h2>
+                        <p>
+                            Our employees have spoken! Our company culture is amazing and our Great Place to Work
+                            Certification&trade; proves it.
+                        </p>
                     </div>
                     <div className="col-lg-6 max-h-600 tw-flex tw-justify-center">
                         <img
