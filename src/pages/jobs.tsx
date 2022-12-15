@@ -362,7 +362,7 @@ const CareersPage: FunctionComponent = () => {
             <ContentSection background="white">
                 <div className="tw-flex tw-flex-col md:tw-flex-row tw-px-6 tw-max-w-screen-xl tw-mx-auto tw-items-center">
                     <div>
-                        <h2 className="tw-mb-6">Our employees say we're a Great Place to Work™</h2>
+                        <h2 className="tw-mb-6">Our employees say we're a Great Place to Work&trade;</h2>
                         <p>
                             Our employees have spoken! Our company culture is amazing and our Great Place to Work
                             Certification&trade; proves it.
