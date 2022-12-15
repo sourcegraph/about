@@ -14,7 +14,7 @@ changelogItems:
   - description: "Unindexed search now uses the index for files that have not changed between the unindexed commit and the indexed commit. The result is faster unindexed search in general. If you are noticing issues you can disable by setting the feature flag `search-hybrid` to false."
     url: https://github.com/sourcegraph/sourcegraph/issues/37112
     category: Search
-  - description: "Added an outbound request log page, which allows admins to inspet all outbound requests from their instance including those made to code hosts. It can be enabled by setting `outboundRequestLogLimit` to a value above 0 in the site config."
+  - description: "Added an outbound request log page, which allows admins to inspet all outbound requests from their instance including those made to code hosts. It can be enabled by setting `outboundRequestLogLimit` to a value greater than 0 in the site config."
     url: https://github.com/sourcegraph/sourcegraph/pull/44286
     category: Admin
   - description: "Mounted files in batch changes can be viewed via the UI on the executions page."
