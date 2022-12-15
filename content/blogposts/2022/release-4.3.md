@@ -1,6 +1,6 @@
 ---
 title: "Sourcegraph 4.3 release"
-publishDate: 2022-12-15T10:00-07:00
+publishDate: 2022-12-16T10:00-07:00
 description: "Sourcegraph 4.3 introduces the fuzzy finder, search context favorites, webhooks for repository syncing, and faster and more reliable code insights."
 tags: [blog, release]
 slug: "release/4.3"
@@ -8,16 +8,13 @@ published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.3/sourcegraph-4-3-hero.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.3/sourcegraph-4-3-hero.png
 changelogItems:
-  - description: "A \"copy path\" button has been added to file content, path, and symbol search results on hover or focus, next to the file path. The button copies the relative path of the file in the repo, in the same way as the \"copy path\" button in the file and repo pages."
+  - description: "A \"copy path\" button has been added to file content, path, and symbol search results on hover or focus, next to the file path. The button copies the relative path of the file in the repo in the same way as the \"copy path\" button in the file and repo pages."
     url: https://github.com/sourcegraph/sourcegraph/pull/42721
     category: Search
   - description: "Unindexed search now uses the index for files that have not changed between the unindexed commit and the indexed commit. The result is faster unindexed search in general. If you are noticing issues you can disable by setting the feature flag `search-hybrid` to false."
     url: https://github.com/sourcegraph/sourcegraph/issues/37112
     category: Search
-  - description: "Added an outbound request log page, which allows admins to inspet all outbound requests from their instance including those made to code hosts. It can be enabled by setting `outboundRequestLogLimit` to a value greater than 0 in the site config."
-    url: https://github.com/sourcegraph/sourcegraph/pull/44286
-    category: Admin
-  - description: "Mounted files in batch changes can be viewed via the UI on the executions page."
+  - description: "Mounted files in batch changes can now be viewed via the UI on the executions page."
     url: https://github.com/sourcegraph/sourcegraph/pull/43180
     category: Batch Changes
   - description: "When the setting `batchChanges.enforceForks` is enabled, Batch Changes will now prefix the name of the fork repo it creates with the original repo's namespace in order to prevent repo name collisions."
@@ -35,7 +32,7 @@ changelogItems:
 
 #### Instantly navigate repositories, files, and symbols by name with fuzzy finder 
 
-[Fuzzy finder](https://docs.sourcegraph.com/code_search/explanations/features) helps you quickly navigate to a repository, symbol or file. To open the fuzzy finder, press 'Cmd+K' (macOS) or "Ctrl+K' (Linux/Windows) from any page, and each tab has a dedicated shortcut:
+[Fuzzy finder](https://docs.sourcegraph.com/code_search/explanations/features) helps you quickly navigate to a repository, symbol, or file. To open the fuzzy finder, press 'Cmd+K' (macOS) or 'Ctrl+K' (Linux/Windows) from any page, and each tab has a dedicated shortcut:
 
 - Repos: Cmd+I (macOS), Ctrl+K (Linux/Windows)
 - Symbols: Cmd+O (macOS), Cmd+Shift+O (macOS Safari), Ctrl+O (Linux/Windows)
@@ -74,9 +71,9 @@ Fuzzy finder is an experimental feature, and we welcome your feedback and input.
 <br />
 <Badge text="Code Insights" link="/code-insights" color="green" size="small" />
 
-#### Code Insights are faster and even more reliable
+#### Insights are faster and even more reliable
 
-[Code Insights](https://docs.sourcegraph.com/code_insights) turns your codebase into a database, so you can track migrations, version spread, tooling, and any other custom metric from the source of truth – the code – directly. We made significant improvements to the backfiller that populates your data, making your insights faster and more reliable, including: 
+[Code Insights](https://docs.sourcegraph.com/code_insights) turns your codebase into a database, so you can track migrations, version spread, tooling, and any other custom metric from the source of truth—the code—directly. We made significant improvements to the backfiller that populates your data, making your insights faster and more reliable, including: 
 
 - Faster calculation times thanks to reduced contention in the work queue from separate insights
 - Graceful error handling to surface information to the user if there are any incomplete data points
@@ -99,11 +96,11 @@ In 4.3, webhooks have received a significant update making it easier for admins 
 <br />
 <Badge link="https://docs.sourcegraph.com/admin/config/webhooks" text="Admin" color="violet" size="small" />
 
-#### Understand all outbound requests from your Sourcegraph instance
+#### Inspect all outbound requests from your Sourcegraph instance
 
 Sourcegraph admins frequently want to understand how their instance is interacting with other systems, especially when debugging. Previously, it was difficult to reliably see all of the outbound requests generated by a Sourcegraph instance since it required manually finding and digging into logs. 
 
-We've introduced a new page in the web UI where instance admins can see all outbound requests generated by an instance. This makes it easy quickly see how Sourcegraph is interacting with other systems, such as code hosts, from with the UI. As a result, debugging code host connections is far faster. This feature is turned off by default, but can be enabled in site config. See the docs for more information.
+We've introduced a new page in the web UI where instance admins can see all outbound requests generated by an instance. This makes it easy to quickly see how Sourcegraph is interacting with other systems, such as code hosts, from the UI. As a result, debugging code host connections is far faster. This feature is off by default, but can be enabled in site config. See the docs for more information.
 
 <br />
 <a href="https://docs.sourcegraph.com/admin/observability/outbound-request-logs" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
