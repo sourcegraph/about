@@ -45,8 +45,8 @@ Fuzzy finder is an experimental feature, and we welcome your feedback and input.
 
 <Video 
   source={{
-    webm: '/blog/release-post/4.3/Fuzzy%20finder',
-    mp4: '/blog/release-post/4.3/Fuzzy%20finder'
+    webm: '/blog/release-post/4.3/Fuzzy-finder',
+    mp4: '/blog/release-post/4.3/Fuzzy-finder'
   }}
   loop={true}
   title="Fuzzy Finder"
