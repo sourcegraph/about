@@ -38,7 +38,7 @@ changelogItems:
 - Symbols: Cmd+O (macOS), Cmd+Shift+O (macOS Safari), Ctrl+O (Linux/Windows)
 - Files: Cmd+P (macOS), Ctrl+P (Linux/Windows)
 
-Fuzzy finder is an experimental feature, and we welcome your feedback and input.
+Fuzzy finder is an experimental feature, and we welcome your feedback and input. You can [tweet at us](https://twitter.com/sourcegraph) or [send us an email](mailto:feedback@sourcegraph.com).
 
 <Video 
   source={{
