@@ -40,7 +40,7 @@ changelogItems:
 
 Fuzzy finder is an experimental feature, and we welcome your feedback and input. You can [tweet at us](https://twitter.com/sourcegraph) or [send us an email](mailto:feedback@sourcegraph.com).
 
-<Video controls playsinline title="Fuzzy Finder" caption="New, powerful fuzzy finder for searching repositories, symbols, and files by name.">
+<video controls playsinline title="Fuzzy Finder" caption="New, powerful fuzzy finder for searching repositories, symbols, and files by name.">
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.3/Fuzzy-finder.webm" type="video/webm" />
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.3/Fuzzy-finder.mp4" type="video/mp4" />
 </video>
