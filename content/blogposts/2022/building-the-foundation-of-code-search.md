@@ -14,6 +14,12 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-building-
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-building-foundation-code-search.jpg
 ---
 
+<YouTube
+  title="Building the foundation of code search with Han-Wen Nienhuys, creator of Zoekt" 
+  id="qOKDQT7-PJk"
+  showTitle={true}
+/>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qOKDQT7-PJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 At Sourcegraph, we’re inspired by developers that make a difference, and creating and perfecting the internal tools they use every day is one way developers can have a significant impact. We should know: Sourcegraph itself was partly inspired by the internal code search tool at Google.
