@@ -28,12 +28,6 @@ export const CaseStudy: FunctionComponent = () => {
                 }}
             >
                 <ContentSection background="white" slimWidth={true}>
-                    <p>
-                        Founded in 2008, Workiva's platform enables thousands of enterprises around the world to manage
-                        and report business data. Over 3,000 businesses use Workiva to bring together everything their
-                        business needs—teammates, datasets, and data sources—so they can work better in the cloud.
-                    </p>
-
                     <h2 className="tw-pt-md tw-pb-1">Paying down tech debt</h2>
 
                     <p>
@@ -123,6 +117,14 @@ export const CaseStudy: FunctionComponent = () => {
                         quote="Using a tool that isn't maintained by us saves us time and drives better adoption. In comparison to the tool we built internally, it's much easier to work with, more feature complete, and well documented."
                         author="Evan Weible, Staff Software Engineer, Workiva"
                     />
+                    
+                    <p>
+                        About Workiva
+
+                        Founded in 2008, Workiva's platform enables thousands of enterprises around the world to manage and report business data. Over 3,000 businesses use Workiva to bring together everything their business needs—teammates, datasets, and data sources—so they can work better in the cloud.
+
+                        While Workiva’s cloud technology simplifies complex work for thousands of organizations around the world, their internal teams also rely on cloud platforms to maintain critical components of their software development infrastructure. To further reduce development costs while maintaining their high bar for scalability, reliability, and security, Workiva chose to deploy Sourcegraph on AWS. This enables the team to focus on leveraging Sourcegraph to its full potential without distraction from infrastructure issues.
+                    </p>
                     <br />
                 </ContentSection>
             </CaseStudyLayout>
