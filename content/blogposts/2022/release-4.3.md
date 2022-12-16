@@ -66,7 +66,7 @@ Fuzzy finder is an experimental feature, and we welcome your feedback and input.
   />
 </div>
 
-<a href="https://docs.sourcegraph.com/code_search/how-to/search_contexts)" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/code_search/how-to/search_contexts" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
 <br />
 <Badge text="Code Insights" link="/code-insights" color="green" size="small" />
