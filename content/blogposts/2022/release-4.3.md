@@ -75,10 +75,10 @@ Fuzzy finder is an experimental feature, and we welcome your feedback and input.
 
 [Code Insights](https://docs.sourcegraph.com/code_insights) turns your codebase into a database, so you can track migrations, version spread, tooling, and any other custom metric from the source of truth—the code—directly. We made significant improvements to the backfiller that populates your data, making your insights faster and more reliable, including: 
 
-- Faster calculation times thanks to reduced contention in the work queue from separate insights
-- Graceful error handling to surface information to the user if there are any incomplete data points
-- Faster insight creation with more efficient background processing
-- Improved visibility into the state of background processes for easier troubleshooting and problem solving
+- Faster calculation times thanks to reduced contention in the work queue from separate insights.
+- Graceful error handling to surface information to the user if there are any incomplete data points.
+- Faster insight creation with more efficient background processing.
+- Improved visibility into the state of background processes for easier troubleshooting and problem solving.
 
 <a href="https://docs.sourcegraph.com/code_insights" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
 
