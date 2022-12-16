@@ -34,7 +34,7 @@ changelogItems:
 
 [Fuzzy finder](https://docs.sourcegraph.com/code_search/explanations/features) helps you quickly navigate to a repository, symbol, or file. To open the fuzzy finder, press 'Cmd+K' (macOS) or 'Ctrl+K' (Linux/Windows) from any page, and each tab has a dedicated shortcut:
 
-- Repos: Cmd+I (macOS), Ctrl+K (Linux/Windows)
+- Repos: Cmd+I (macOS), Ctrl+I (Linux/Windows)
 - Symbols: Cmd+O (macOS), Cmd+Shift+O (macOS Safari), Ctrl+O (Linux/Windows)
 - Files: Cmd+P (macOS), Ctrl+P (Linux/Windows)
 
