@@ -13,6 +13,7 @@ interface ThreeUpText {
     fullWidthTitle?: boolean
     subTitle?: string | ReactNode
     items: Item[]
+    centerContent?: boolean
 }
 
 interface ItemTitle {
@@ -37,8 +38,14 @@ const ItemTitle = ({ text, small }: ItemTitle): ReactElement => {
     )
 }
 
-export const ThreeUpText: FunctionComponent<ThreeUpText> = ({ title, subTitle, items, fullWidthTitle = false }) => (
-    <div className="sm:tw-text-center">
+export const ThreeUpText: FunctionComponent<ThreeUpText> = ({
+    title,
+    subTitle,
+    items,
+    fullWidthTitle = false,
+    centerContent = true,
+}) => (
+    <div className={classNames({ 'sm:tw-text-center': centerContent })}>
         {title && (
             <h2
                 className={classNames('md:text-center', {
@@ -61,7 +68,7 @@ export const ThreeUpText: FunctionComponent<ThreeUpText> = ({ title, subTitle, i
                 >
                     {item.icon && <div className="tw-mb-sm">{item.icon}</div>}
                     <ItemTitle text={item.subtitle} small={!!item.icon} />
-                    <p className="lg:tw-px-sm">{item.description}</p>
+                    <p className={classNames({ 'lg:tw-px-sm': centerContent })}>{item.description}</p>
                 </div>
             ))}
         </div>

@@ -24,6 +24,7 @@ const Cloud: FunctionComponent = () => (
         className="navbar-dark"
         hero={
             <Hero
+                product="sourcegraph cloud"
                 variant="radialSpace"
                 title="Find, understand, & fix code faster than ever"
                 subtitle="Sourcegraph Cloud’s dedicated, single-tenant SaaS solution is the easiest way to get Sourcegraph in the cloud. Get full code intelligence for your codebase quickly, securely, and without having to host."
@@ -60,14 +61,15 @@ const Cloud: FunctionComponent = () => (
             />
         }
     >
-        <CustomerLogos />
+        <ContentSection background="white">
+            <div className="tw-flex">
+                <h2 className="tw-max-w-md tw-w-full">
+                    Get in flow with a private, fully-featured Sourcegraph instance
+                </h2>
 
-        <ContentSection>
-            <div className="tw-flex tw-flex-col md:tw-flex-row">
-                <h2 className="tw-mb-md">Get in flow with a private, fully-featured Sourcegraph instance</h2>
-
-                <div>
+                <div className="tw-max-w-full">
                     <ThreeUpText
+                        centerContent={false}
                         items={[
                             {
                                 icon: (
@@ -111,11 +113,16 @@ const Cloud: FunctionComponent = () => (
             </div>
         </ContentSection>
 
+        <ContentSection background="white" parentClassName="md:tw-py-xl">
+            <h6 className="tw-text-center">Optional Overline</h6>
+            <CustomerLogos />
+        </ContentSection>
+
         <ContentSection background="white">
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2>Start searching and stay in flow, no maintenance necessary Optional overline</h2>
+                        <h2>Start searching and stay in flow, no maintenance necessary</h2>
                         <ul className="tw-ml-md tw-mt-sm">
                             <li>
                                 Get a dedicated Sourcegraph Cloud instance with no manual deployment required. Simply
@@ -131,21 +138,22 @@ const Cloud: FunctionComponent = () => (
                         </ul>
                     </>
                 }
-                rightColumn={<img src="https://via.placeholder.com/577x342" alt="" />}
-            />
-        </ContentSection>
-
-        <ContentSection>
-            <Blockquote
-                quote="Sourcegraph Cloud was an unlock for us..."
-                author="Jerrod Engelberg, CEO at Codecov"
-                logo={{
-                    src: 'external-logos/codecov-logo.svg',
-                    alt: 'Codecov',
-                    href: 'https://about.codecov.io/',
-                }}
-                border={false}
-                largeText={true}
+                rightColumn={
+                    <Blockquote
+                        quote="Sourcegraph Cloud was the right fit for Codecov’s growing team"
+                        author="Jerrod Engelberg, CEO at Codecov"
+                        logo={{
+                            src: 'external-logos/codecov-logo.svg',
+                            alt: 'Codecov',
+                            href: 'https://about.codecov.io/',
+                        }}
+                        largeText={true}
+                        link={{
+                            text: 'Read the case study',
+                            href: '/case-studies/codecov-uses-sourcegraph-to-resolve-incidents-faster',
+                        }}
+                    />
+                }
             />
         </ContentSection>
 
