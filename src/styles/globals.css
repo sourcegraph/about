@@ -133,8 +133,7 @@
         @apply tw-bg-gradient-to-r tw-from-blue-300 tw-to-violet-400;
     }
     .sg-bg-radial-space {
-        background:
-            radial-gradient(50% 50% at 50% 50%, theme(colors.violet.200 / 30%) 0%, theme(colors.violet.700) 100%), #270741;
+        background: radial-gradient(80.77% 80.77% at 50% 80.77%, theme(colors.violet.600) 0%, theme(colors.violet.700) 45.13%, #160425 100%);
     }
 
     /* Starship Backgrounds */
