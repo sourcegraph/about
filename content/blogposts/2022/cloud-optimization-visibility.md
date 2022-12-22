@@ -1,5 +1,5 @@
 ---
-title: 'Cloud cost optimization: Part 1 - Create visibility'
+title: 'Cloud cost optimization: Create visibility'
 authors:
   - name: Christina Forney
     url: https://handbook.sourcegraph.com/team/#christina-forney
@@ -11,8 +11,6 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cloud-cost-opt
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cloud-cost-optimization-part-1.jpg
 published: true
 ---
-*This is the first part in a four-part series covering practical steps to optimize cloud costs across your organization.*
-
 There is a growing trend for organizations of all sizes to get out of the business of running their own data centers and move their infrastructure and application workloads to the cloud. This typically includes a transition to software as a service (SaaS) as well as leveraging infrastructure as a service (IaaS).  IaaS providers are often referenced as “Hyperscalers” and include Google Cloud Platform (GCP), Amazon AWS, and Microsoft Azure.  The advantages of and motivations for adopting cloud applications and infrastructure are often to achieve cost savings through [a shift from a CapEx to an OpEx](https://www.10thmagnitude.com/opex-vs-capex-the-real-cloud-computing-cost-advantage/) financial model and the opportunity to only pay for the resources and infrastructure you need or use.
 
 ### The problem
@@ -91,7 +89,7 @@ Doing a one-time audit of your cloud infrastructure is beneficial for cutting co
 
 ### Conclusion
 
-Visibility and awareness are the first steps toward greater cost savings across your organization and extend to include both direct costs of cloud infrastructure as well as operational savings.  The next step is to identify targets for optimization and to monitor changes over time.  We will cover approaches and practical examples of  this in part 2.
+Visibility and awareness are the first steps toward greater cost savings across your organization and extend to include both direct costs of cloud infrastructure as well as operational savings.  The next step is to identify targets for optimization and to monitor changes over time.
 
 <hr/>
 
