@@ -38,14 +38,8 @@ const ItemTitle = ({ text, small }: ItemTitle): ReactElement => {
     )
 }
 
-export const ThreeUpText: FunctionComponent<ThreeUpText> = ({
-    title,
-    subTitle,
-    items,
-    fullWidthTitle = false,
-    centerContent = true,
-}) => (
-    <div className={classNames({ 'sm:tw-text-center': centerContent })}>
+export const ThreeUpText: FunctionComponent<ThreeUpText> = ({ title, subTitle, items, fullWidthTitle = false }) => (
+    <div className="sm:tw-text-center">
         {title && (
             <h2
                 className={classNames('md:text-center', {
@@ -68,7 +62,7 @@ export const ThreeUpText: FunctionComponent<ThreeUpText> = ({
                 >
                     {item.icon && <div className="tw-mb-sm">{item.icon}</div>}
                     <ItemTitle text={item.subtitle} small={!!item.icon} />
-                    <p className={classNames({ 'lg:tw-px-sm': centerContent })}>{item.description}</p>
+                    <p className="lg:tw-px-sm">{item.description}</p>
                 </div>
             ))}
         </div>
