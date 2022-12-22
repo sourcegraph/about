@@ -11,7 +11,6 @@ import {
     CtaSection,
     TwoColumnSection,
     Blockquote,
-    ThreeUpText,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -27,6 +26,7 @@ const Cloud: FunctionComponent = () => (
                 product="sourcegraph cloud"
                 variant="radialSpace"
                 title="Find, understand, & fix code faster than ever"
+                titleClassName="tw-text-transparent tw-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-white/10 tw-to-violet-200"
                 subtitle="Sourcegraph Cloud’s dedicated, single-tenant SaaS solution is the easiest way to get Sourcegraph in the cloud. Get full code intelligence for your codebase quickly, securely, and without having to host."
                 centerContent={true}
                 cta={
@@ -47,12 +47,12 @@ const Cloud: FunctionComponent = () => (
                             <a
                                 href="https://sourcegraph.com"
                                 className="btn tw-text-white tw-border-white hover:tw-bg-blurple-400 hover:tw-border-blurple-400 w-100 max-w-350"
-                                title="Get started"
+                                title="Search code"
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.hero}
                                 data-button-type="cta"
                             >
-                                Get started
+                                Search code
                             </a>
                         </div>
                     </div>
@@ -62,52 +62,49 @@ const Cloud: FunctionComponent = () => (
         }
     >
         <ContentSection background="white">
-            <div className="tw-flex">
-                <h2 className="tw-max-w-md tw-w-full">
+            <div className="lg:tw-flex tw-flex-row">
+                <h2 className="lg:tw-basis-1/3 tw-min-w-[400px] tw-max-w-3xl tw-mb-md">
                     Get in flow with a private, fully-featured Sourcegraph instance
                 </h2>
 
-                <div className="tw-max-w-full">
-                    <ThreeUpText
-                        centerContent={false}
-                        items={[
-                            {
-                                icon: (
-                                    <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
-                                        <FaGitAlt size={32} className="tw-p-1 tw-text-violet-400" />
-                                    </div>
-                                ),
-                                description:
-                                    'Search all your code, all in one place. Search all your code, all in one place. Sourcegraph connects to any Git-based code host so you can view your entire codebase in a single unified view.',
-                            },
-                            {
-                                icon: (
-                                    <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
-                                        <FaLocationArrow size={32} className="tw-p-1 tw-text-violet-400" />
-                                    </div>
-                                ),
-                                description:
-                                    'Navigate your codebase with IDE-level code navigation that works across repositories, so you can track references, definitions, and implementations with perfect accuracy.',
-                            },
-                            {
-                                icon: (
-                                    <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
-                                        <MdOutlineAvTimer size={40} className="tw-p-1 tw-text-violet-400" />
-                                    </div>
-                                ),
-                                description:
-                                    'Fix and update code across your entire codebase in hours rather than weeks with Batch Changes.',
-                            },
-                            {
-                                icon: (
-                                    <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
-                                        <MdBarChart size={32} className="tw-p-1 tw-text-violet-400" />
-                                    </div>
-                                ),
-                                description:
-                                    'Track migrations, measure goals, and visualize changes in your code with Code Insights..',
-                            },
-                        ]}
+                <div className="tw-basis-2/3 tw-max-w-full">
+                    <TwoColumnSection
+                        blockOnMdAndDown={true}
+                        leftColumn={
+                            <div className="tw-mb-md">
+                                <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
+                                    <FaGitAlt size={32} className="tw-text-violet-400" />
+                                </div>
+                                <p className="tw-max-w-sm">Search all your code, all in one place. Sourcegraph connects to any Git-based code host so you can view your entire codebase in a single unified view.</p>
+                            </div>
+                        }
+                        rightColumn={
+                            <div className="tw-mb-md">
+                                <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
+                                    <FaLocationArrow size={32} className="tw-p-1 tw-text-violet-400" />
+                                </div>
+                                <p className="tw-max-w-sm">Navigate your codebase with IDE-level code navigation that works across repositories, so you can track references, definitions, and implementations with perfect accuracy.</p>
+                            </div>
+                        }
+                    />
+                    <TwoColumnSection
+                        blockOnMdAndDown={true}
+                        leftColumn={
+                            <div>
+                                <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
+                                    <MdOutlineAvTimer size={45} className="tw-text-violet-400" />
+                                </div>
+                                <p className="tw-max-w-sm">Fix and update code across your entire codebase in hours rather than weeks with Batch Changes.</p>
+                            </div>
+                        }
+                        rightColumn={
+                            <div>
+                                <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
+                                    <MdBarChart size={32} className="tw-text-violet-400" />
+                                </div>
+                                <p className="tw-max-w-sm">Track migrations, measure goals, and visualize changes in your code with Code Insights.</p>
+                            </div>
+                        }
                     />
                 </div>
             </div>
@@ -139,20 +136,24 @@ const Cloud: FunctionComponent = () => (
                     </>
                 }
                 rightColumn={
-                    <Blockquote
-                        quote="Sourcegraph Cloud was the right fit for Codecov’s growing team"
-                        author="Jerrod Engelberg, CEO at Codecov"
-                        logo={{
-                            src: 'external-logos/codecov-logo.svg',
-                            alt: 'Codecov',
-                            href: 'https://about.codecov.io/',
-                        }}
-                        largeText={true}
-                        link={{
-                            text: 'Read the case study',
-                            href: '/case-studies/codecov-uses-sourcegraph-to-resolve-incidents-faster',
-                        }}
-                    />
+                    <div className="tw-border-l tw-border-gray-300 tw-py-2">                        
+                        <Blockquote
+                            headline="Sourcegraph Cloud was the right fit for Codecov’s growing team"
+                            quote="Sourcegraph Cloud was an unlock for us. We didn't feel like Sourcegraph was a product that we needed to run on our own infrastructure."
+                            author="Jerrod Engelberg, CEO at Codecov"
+                            border={false}
+                            center={false}
+                            logo={{
+                                src: 'external-logos/codecov-logo.svg',
+                                alt: 'Codecov',
+                                href: 'https://about.codecov.io/',
+                            }}
+                            link={{
+                                text: 'Read the case study',
+                                href: '/case-studies/codecov-uses-sourcegraph-to-resolve-incidents-faster',
+                            }}
+                        />
+                    </div>
                 }
             />
         </ContentSection>

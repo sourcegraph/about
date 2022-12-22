@@ -25,6 +25,7 @@ export const Blockquote: FunctionComponent<{
     link?: Link
     headline?: string
     largeText?: boolean
+    center?:boolean
     border?: boolean
     reverseBorder?: boolean
     inline?: boolean // inline vs. col layout
@@ -35,6 +36,7 @@ export const Blockquote: FunctionComponent<{
     link,
     headline,
     largeText = false,
+    center,
     border = true,
     reverseBorder = false,
     inline = true,
@@ -43,21 +45,20 @@ export const Blockquote: FunctionComponent<{
     const isMdOrDown = windowWidth < breakpoints.lg
 
     const getBorderStyle = (): string => {
-        const borderColor = reverseBorder ? 'tw-border-r-violet-400' : 'tw-border-l-violet-400'
         const borderLocation = reverseBorder ? 'tw-border-r-3' : 'tw-border-l-3'
         const borderNone = reverseBorder ? 'tw-border-r-0' : 'tw-border-l-0'
 
         if (border) {
             if (inline) {
-                return `tw-my-8 tw-border-solid ${borderLocation} ${borderColor}`
+                return `tw-my-8 tw-border-solid ${borderLocation} tw-border-r-violet-400`
             }
             // Blockquotes in column: Border flips to horizontal for mobile
             if (isMdOrDown) {
                 return `tw-pt-3xl tw-pb-0 tw-mb-0 tw-border-solid ${borderNone} tw-border-t-3 tw-border-t-violet-400`
             }
-            return `tw-border-solid ${borderLocation} ${borderColor}`
+            return `tw-border-solid ${borderLocation} tw-border-r-violet-400`
         }
-        return 'tw-text-center'
+        return center ? 'tw-text-center' : 'tw-text-left'
     }
 
     return (
@@ -67,7 +68,7 @@ export const Blockquote: FunctionComponent<{
             {largeText ? (
                 <h3 className="tw-font-normal tw-text-3xl">&ldquo;{quote}&rdquo;</h3>
             ) : (
-                <h5 className="tw-font-normal">&ldquo;{quote}&rdquo;</h5>
+                <p className="tw-font-normal">&ldquo;{quote}&rdquo;</p>
             )}
 
             {author && <figcaption className="tw-text-gray-400 tw-mt-4">&mdash; {author}</figcaption>}
@@ -78,7 +79,7 @@ export const Blockquote: FunctionComponent<{
                         <img
                             src={logo.src}
                             className={classNames('tw-mt-4 tw-max-w-[150px tw-h-[80px]]', {
-                                'tw-mx-auto': !border,
+                                'tw-mx-auto': !border && center,
                             })}
                             width="110px"
                             alt={logo.alt}
@@ -87,7 +88,7 @@ export const Blockquote: FunctionComponent<{
                 ) : (
                     <img
                         src={logo.src}
-                        className={classNames('tw-mt-4 tw-max-w-[150px tw-h-[80px]]', { 'tw-mx-auto': !border })}
+                        className={classNames('tw-mt-4 tw-max-w-[150px tw-h-[80px]]', { 'tw-mx-auto': !border && center })}
                         width="110px"
                         alt={logo.alt}
                     />
@@ -96,7 +97,7 @@ export const Blockquote: FunctionComponent<{
             {link?.href &&
                 (link?.href.includes('http') ? (
                     <a
-                        className={classNames('tw-mt-md tw-flex', !border && 'tw-justify-center')}
+                        className={classNames('tw-mt-md tw-flex', !border && center && 'tw-justify-center')}
                         href={link.href}
                         target="_blank"
                         rel="nofollow noreferrer"
@@ -111,7 +112,7 @@ export const Blockquote: FunctionComponent<{
                 ) : (
                     <Link
                         href={link.href}
-                        className={classNames('tw-mt-md tw-flex', !border && 'tw-justify-center')}
+                        className={classNames('tw-mt-md tw-flex', !border && center && 'tw-justify-center')}
                         title={link.text}
                         data-button-style={buttonStyle.textWithArrow}
                         data-button-location={buttonLocation.body}

@@ -12,6 +12,7 @@ interface BackButton {
 interface Hero extends Background {
     product?: 'code search' | 'batch changes' | 'code insights' | 'sourcegraph cloud'
     title: string | ReactNode
+    titleClassName?: string
     backButton?: BackButton
     leftColumn?: ReactNode
     subtitle?: string
@@ -26,6 +27,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
     variant,
     product,
     title,
+    titleClassName,
     backButton,
     leftColumn,
     description,
@@ -50,14 +52,14 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
             {backButton && <BackButton href={backButton.link} text={backButton.text} />}
 
             <div className="tw-flex tw-flex-col-reverse">
-                <h1 className="tw-whitespace-pre-line">{title}</h1>
+                <h1 className={`tw-whitespace-pre-line ${titleClassName}`}>{title}</h1>
                 {product && <h6 className="mb-2">{product}</h6>}
             </div>
 
             {description && <p className="tw-max-w-xl tw-mt-sm tw-text-lg">{description}</p>}
 
             {subtitle && (
-                <h3 className={classNames('tw-max-w-3xl tw-mt-sm', { 'tw-mx-auto tw-text-centeZ': centerContent })}>
+                <h3 className={classNames('tw-max-w-4xl tw-mt-sm', { 'tw-mx-auto tw-text-centeZ': centerContent })}>
                     {subtitle}
                 </h3>
             )}
