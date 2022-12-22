@@ -29,7 +29,7 @@ export const navLinks: NavLink[] = [
                 href: '/batch-changes',
             },
             {
-                title: 'Code Insights',
+                title: 'Code Test',
                 href: '/code-insights',
             },
         ],
