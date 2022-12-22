@@ -57,6 +57,7 @@ const Cloud: FunctionComponent = () => (
                         </div>
                     </div>
                 }
+                floatingImg="/test.svg"
                 displayUnderNav={true}
             />
         }
@@ -110,7 +111,7 @@ const Cloud: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection background="white" parentClassName="md:tw-py-xl">
+        <ContentSection background="white" parentClassName="md:tw-py-0">
             <h6 className="tw-text-center">Optional Overline</h6>
             <CustomerLogos />
         </ContentSection>
