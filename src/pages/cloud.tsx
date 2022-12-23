@@ -49,7 +49,7 @@ const Cloud: FunctionComponent = () => (
                         </div>
                     </div>
                 }
-                floatingImg="/test.svg"
+                floatingImg="/code-intelligence-platform-illustration.svg"
                 displayUnderNav={true}
             />
         }
@@ -170,7 +170,7 @@ const Cloud: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <div className="tw-flex tw-justify-center">
-                        <span className="tw-h-px tw-mt-[40px] tw-bg-gray-400 tw-w-1/5" />
+                        <span className="tw-h-px tw-mt-[40px] tw-bg-gray-300 tw-w-1/5" />
                         <div className="tw-ml-sm tw-text-center">
                             <img src="/security/ccpa.svg" alt="CCPA badge" />
                             <p className="tw-text-gray-400 tw-mt-xxs tw-mb-0">CCPA</p>
@@ -183,7 +183,7 @@ const Cloud: FunctionComponent = () => (
                             <img src="/security/soc2.svg" alt="SOC2 Type 2 badge" />
                             <p className="tw-text-gray-400 tw-mt-xxs tw-mb-0">SOC2 TYPE 2</p>
                         </div>
-                        <span className="tw-h-px tw-mt-[40px] tw-bg-gray-400 tw-w-1/5" />
+                        <span className="tw-h-px tw-mt-[40px] tw-bg-gray-300 tw-w-1/5" />
                     </div>
                 }
                 rightColumn={
