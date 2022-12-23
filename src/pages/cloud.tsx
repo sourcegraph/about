@@ -3,15 +3,7 @@ import { FunctionComponent } from 'react'
 import { FaGitAlt, FaLocationArrow } from 'react-icons/fa'
 import { MdOutlineAvTimer, MdBarChart } from 'react-icons/md'
 
-import {
-    Layout,
-    Hero,
-    ContentSection,
-    CustomerLogos,
-    CtaSection,
-    TwoColumnSection,
-    Blockquote,
-} from '@components'
+import { Layout, Hero, ContentSection, CustomerLogos, CtaSection, TwoColumnSection, Blockquote } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const Cloud: FunctionComponent = () => (
@@ -76,7 +68,10 @@ const Cloud: FunctionComponent = () => (
                                 <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
                                     <FaGitAlt size={32} className="tw-text-violet-400" />
                                 </div>
-                                <p className="tw-max-w-sm">Search all your code, all in one place. Sourcegraph connects to any Git-based code host so you can view your entire codebase in a single unified view.</p>
+                                <p className="tw-max-w-sm">
+                                    Search all your code, all in one place. Sourcegraph connects to any Git-based code
+                                    host so you can view your entire codebase in a single unified view.
+                                </p>
                             </div>
                         }
                         rightColumn={
@@ -84,7 +79,11 @@ const Cloud: FunctionComponent = () => (
                                 <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
                                     <FaLocationArrow size={32} className="tw-p-1 tw-text-violet-400" />
                                 </div>
-                                <p className="tw-max-w-sm">Navigate your codebase with IDE-level code navigation that works across repositories, so you can track references, definitions, and implementations with perfect accuracy.</p>
+                                <p className="tw-max-w-sm">
+                                    Navigate your codebase with IDE-level code navigation that works across
+                                    repositories, so you can track references, definitions, and implementations with
+                                    perfect accuracy.
+                                </p>
                             </div>
                         }
                     />
@@ -95,7 +94,10 @@ const Cloud: FunctionComponent = () => (
                                 <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
                                     <MdOutlineAvTimer size={45} className="tw-text-violet-400" />
                                 </div>
-                                <p className="tw-max-w-sm">Fix and update code across your entire codebase in hours rather than weeks with Batch Changes.</p>
+                                <p className="tw-max-w-sm">
+                                    Fix and update code across your entire codebase in hours rather than weeks with
+                                    Batch Changes.
+                                </p>
                             </div>
                         }
                         rightColumn={
@@ -103,7 +105,10 @@ const Cloud: FunctionComponent = () => (
                                 <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
                                     <MdBarChart size={32} className="tw-text-violet-400" />
                                 </div>
-                                <p className="tw-max-w-sm">Track migrations, measure goals, and visualize changes in your code with Code Insights.</p>
+                                <p className="tw-max-w-sm">
+                                    Track migrations, measure goals, and visualize changes in your code with Code
+                                    Insights.
+                                </p>
                             </div>
                         }
                     />
@@ -137,7 +142,7 @@ const Cloud: FunctionComponent = () => (
                     </>
                 }
                 rightColumn={
-                    <div className="tw-border-l tw-border-gray-300 tw-py-2">                        
+                    <div className="tw-border-l tw-border-gray-300 tw-py-2">
                         <Blockquote
                             headline="Sourcegraph Cloud was the right fit for Codecov’s growing team"
                             quote="Sourcegraph Cloud was an unlock for us. We didn't feel like Sourcegraph was a product that we needed to run on our own infrastructure."
@@ -167,15 +172,15 @@ const Cloud: FunctionComponent = () => (
                     <div className="tw-flex tw-justify-center">
                         <span className="tw-h-px tw-mt-[40px] tw-bg-gray-400 tw-w-1/5" />
                         <div className="tw-ml-sm tw-text-center">
-                            <img src="/security/ccpa.svg" />
+                            <img src="/security/ccpa.svg" alt="CCPA badge" />
                             <p className="tw-text-gray-400 tw-mt-xxs tw-mb-0">CCPA</p>
                         </div>
                         <div className="tw-mx-sm tw-text-center">
-                            <img src="/security/gdpr.svg" />
+                            <img src="/security/gdpr.svg" alt="GDPR badge" />
                             <p className="tw-text-gray-400 tw-mt-xxs tw-mb-0">GDPR</p>
                         </div>
                         <div className="tw-mr-sm tw-text-center">
-                            <img src="/security/soc2.svg" />
+                            <img src="/security/soc2.svg" alt="SOC2 Type 2 badge" />
                             <p className="tw-text-gray-400 tw-mt-xxs tw-mb-0">SOC2 TYPE 2</p>
                         </div>
                         <span className="tw-h-px tw-mt-[40px] tw-bg-gray-400 tw-w-1/5" />

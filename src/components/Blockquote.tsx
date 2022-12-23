@@ -25,7 +25,7 @@ export const Blockquote: FunctionComponent<{
     link?: Link
     headline?: string
     largeText?: boolean
-    center?:boolean
+    center?: boolean
     border?: boolean
     reverseBorder?: boolean
     inline?: boolean // inline vs. col layout
@@ -88,7 +88,9 @@ export const Blockquote: FunctionComponent<{
                 ) : (
                     <img
                         src={logo.src}
-                        className={classNames('tw-mt-4 tw-max-w-[150px tw-h-[80px]]', { 'tw-mx-auto': !border && center })}
+                        className={classNames('tw-mt-4 tw-max-w-[150px tw-h-[80px]]', {
+                            'tw-mx-auto': !border && center,
+                        })}
                         width="110px"
                         alt={logo.alt}
                     />

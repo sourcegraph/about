@@ -29,19 +29,14 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
         )}
     >
         <div
-            className={classNames(
-                !mergeColumns && `tw-col-span-12 ${blockOnMdAndDown ? 'md' : 'lg'}:tw-col-span-6`,
-                {
-                    'tw-mb-sm lg:tw-mb-0 lg:tw-pr-xl': mergeColumns, // done
-                    'tw-order-last lg:tw-order-first': reverseOnMobile,
-                }
-            )}
+            className={classNames(!mergeColumns && `tw-col-span-12 ${blockOnMdAndDown ? 'md' : 'lg'}:tw-col-span-6`, {
+                'tw-mb-sm lg:tw-mb-0 lg:tw-pr-xl': mergeColumns, // done
+                'tw-order-last lg:tw-order-first': reverseOnMobile,
+            })}
         >
             {leftColumn}
         </div>
-        <div
-            className={classNames(!mergeColumns && `tw-col-span-12 ${blockOnMdAndDown ? 'md' : 'lg'}:tw-col-span-6`)}
-        >
+        <div className={classNames(!mergeColumns && `tw-col-span-12 ${blockOnMdAndDown ? 'md' : 'lg'}:tw-col-span-6`)}>
             {rightColumn}
         </div>
     </div>
