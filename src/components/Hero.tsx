@@ -76,7 +76,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
                 </div>
             )}
             
-            {floatingImg &&
+            {!!floatingImg &&
                 <img src={floatingImg} className="tw-hidden md:tw-block tw-absolute tw-bottom--80 tw-left-0 tw-w-full tw-bg-transparent tw-h-[450px]" />
             }
         </div>
@@ -88,7 +88,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
             illustration={illustration}
             parentClassName={classNames({
                 '-tw-mt-[68px] md:-tw-mt-[74px] tw-pt-5xl md:!tw-pt-[148px]': displayUnderNav,
-                'tw-relative md:tw-h-[750px] lg:tw-mb-xs md:tw-mb-4xl tw-mb-0': floatingImg
+                'tw-relative md:tw-h-[750px] lg:tw-mb-xs md:tw-mb-4xl tw-mb-0': !!floatingImg
             })}
             className="tw-flex tw-items-center"
         >
