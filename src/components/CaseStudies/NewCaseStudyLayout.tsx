@@ -21,10 +21,10 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, childre
             <CtaSection />
 
             <ContentSection background="white">
-                <h2 className="tw-mb-6">Explore other case studies</h2>
-                <div className="tw-grid tw-grid-cols-1 xs:tw-grid-cols-2 tw-gap-6">
+                <h2 className="tw-mb-2xl">Explore other case studies</h2>
+                <div className="tw-grid tw-grid-cols-1 xs:tw-grid-cols-2 tw-gap-xl">
                     {uniqueCaseStudyList.map(study => (
-                        <div key={study.name}>
+                        <div key={study.name} className="tw-flex tw-items-end">
                             <CaseStudyCard study={study} />
                         </div>
                     ))}

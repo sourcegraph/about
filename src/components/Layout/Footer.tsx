@@ -24,23 +24,21 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                 {!minimal && (
                     <div className="tw-mb-8 tw-flex tw-flex-col-reverse sm:tw-grid sm:tw-grid-cols-12">
                         <div className="tw-col-span-12 lg:tw-col-span-5 tw-mt-xl sm:tw-mt-0 sm:tw-mb-sm lg:tw-mb-0">
-                            <Link href="/" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    title="Sourcegraph - Universal code search"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.footer}
-                                    data-button-type="cta"
-                                >
-                                    <img
-                                        src={isDarkNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
-                                        alt="Sourcegraph - Code Intelligence Platform"
-                                        className="tw-max-w-[264px] tw-w-full tw-h-auto"
-                                        draggable={false}
-                                        width={264}
-                                        height={48}
-                                    />
-                                </a>
+                            <Link
+                                href="/"
+                                title="Sourcegraph - Universal code search"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.footer}
+                                data-button-type="cta"
+                            >
+                                <img
+                                    src={isDarkNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
+                                    alt="Sourcegraph - Code Intelligence Platform"
+                                    className="tw-max-w-[264px] tw-w-full tw-h-auto"
+                                    draggable={false}
+                                    width={264}
+                                    height={48}
+                                />
                             </Link>
 
                             <ul className="tw-mx-0 tw-mt-3 tw-list-none tw-flex">
@@ -93,20 +91,18 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                                                         {item.title}
                                                     </a>
                                                 ) : (
-                                                    <Link href={item.href} passHref={true}>
-                                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                                        <a
-                                                            title={item.title}
-                                                            data-button-style={buttonStyle.text}
-                                                            data-button-location={buttonLocation.footer}
-                                                            data-button-type="cta"
-                                                            className={classNames('tw-font-medium', {
-                                                                'tw-text-gray-300': isDarkNav,
-                                                                'tw-text-gray-500': !isDarkNav,
-                                                            })}
-                                                        >
-                                                            {item.title}
-                                                        </a>
+                                                    <Link
+                                                        href={item.href}
+                                                        title={item.title}
+                                                        data-button-style={buttonStyle.text}
+                                                        data-button-location={buttonLocation.footer}
+                                                        data-button-type="cta"
+                                                        className={classNames('tw-font-medium', {
+                                                            'tw-text-gray-300': isDarkNav,
+                                                            'tw-text-gray-500': !isDarkNav,
+                                                        })}
+                                                    >
+                                                        {item.title}
                                                     </Link>
                                                 )}
                                             </li>
@@ -126,20 +122,19 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
 
                         {postscriptLinks.items.map(item => (
                             <li key={item.title} className="tw-inline-block tw-mt-xxs sm:tw-mt-0">
-                                <Link key={item.title} href={item.href} passHref={true}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a
-                                        className={classNames('tw-p-0 tw-mr-5', {
-                                            'tw-text-gray-300': isDarkNav,
-                                            'tw-text-gray-500': !isDarkNav,
-                                        })}
-                                        title={item.title}
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.footer}
-                                        data-button-type="cta"
-                                    >
-                                        {item.title}
-                                    </a>
+                                <Link
+                                    key={item.title}
+                                    href={item.href}
+                                    className={classNames('tw-p-0 tw-mr-5', {
+                                        'tw-text-gray-300': isDarkNav,
+                                        'tw-text-gray-500': !isDarkNav,
+                                    })}
+                                    title={item.title}
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.footer}
+                                    data-button-type="cta"
+                                >
+                                    {item.title}
                                 </Link>
                             </li>
                         ))}

@@ -74,18 +74,15 @@ export const Blockquote: FunctionComponent<{
 
             {logo &&
                 (logo.href ? (
-                    <Link href={logo.href} passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a>
-                            <img
-                                src={logo.src}
-                                className={classNames('tw-mt-4 tw-max-w-[150px tw-h-[80px]]', {
-                                    'tw-mx-auto': !border,
-                                })}
-                                width="110px"
-                                alt={logo.alt}
-                            />
-                        </a>
+                    <Link href={logo.href}>
+                        <img
+                            src={logo.src}
+                            className={classNames('tw-mt-4 tw-max-w-[150px tw-h-[80px]]', {
+                                'tw-mx-auto': !border,
+                            })}
+                            width="110px"
+                            alt={logo.alt}
+                        />
                     </Link>
                 ) : (
                     <img
@@ -112,18 +109,16 @@ export const Blockquote: FunctionComponent<{
                         <ArrowRightIcon className="tw-ml-3 tw-inline" />
                     </a>
                 ) : (
-                    <Link href={link.href}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className={classNames('tw-mt-md tw-flex', !border && 'tw-justify-center')}
-                            title={link.text}
-                            data-button-style={buttonStyle.textWithArrow}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            {link.text}
-                            <ArrowRightIcon className="tw-ml-3 tw-inline" />
-                        </a>
+                    <Link
+                        href={link.href}
+                        className={classNames('tw-mt-md tw-flex', !border && 'tw-justify-center')}
+                        title={link.text}
+                        data-button-style={buttonStyle.textWithArrow}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        {link.text}
+                        <ArrowRightIcon className="tw-ml-3 tw-inline" />
                     </Link>
                 ))}
         </blockquote>

@@ -18,6 +18,12 @@ interface CaseStudy {
 // TODO: This data will eventually live in our CMS
 export const CASESTUDIES: CaseStudy[] = [
     {
+        name: 'Neo Financial',
+        logo: '/external-logos/neo-financial.svg',
+        title: 'Neo Financial improves the developer experience with Sourcegraph.',
+        url: '/case-studies/neo-financial-improves-the-developer-experience-with-sourcegraph',
+    },
+    {
         name: 'HashiCorp',
         logo: '/external-logos/hashicorp-logo.svg',
         title: 'HashiCorp streamlines cross-repository code search and fixes with Sourcegraph.',
@@ -146,18 +152,16 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                     <ArrowRightIcon size={20} className="ml-1 tw-inline" />
                 </a>
             ) : (
-                <Link href={url} passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a
-                        title={linkText + ': ' + title}
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                        className="tw-font-bold tw-no-underline"
-                    >
-                        {linkText}
-                        <ArrowRightIcon size={20} className="ml-1 tw-inline" />
-                    </a>
+                <Link
+                    href={url}
+                    title={linkText + ': ' + title}
+                    data-button-style={buttonStyle.text}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                    className="tw-font-bold tw-no-underline"
+                >
+                    {linkText}
+                    <ArrowRightIcon size={20} className="ml-1 tw-inline" />
                 </Link>
             )}
         </div>

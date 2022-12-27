@@ -100,17 +100,15 @@ const Webinar: FunctionComponent = () => {
                 learnMoreCTA={
                     <ContentSection className="tw-flex tw-flex-col tw-items-center">
                         <h1 className="tw-text-center">Interesting in learning more?</h1>
-                        <Link href="/case-studies/nutanix-fixed-log4j-with-sourcegraph" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="mt-4 btn btn-primary col-12 col-md-5 col-xl-3"
-                                title="Read the Nutanix Case Study"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Read the Nutanix Case Study
-                            </a>
+                        <Link
+                            href="/case-studies/nutanix-fixed-log4j-with-sourcegraph"
+                            className="mt-4 btn btn-primary col-12 col-md-5 col-xl-3"
+                            title="Read the Nutanix Case Study"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Read the Nutanix Case Study
                         </Link>
                     </ContentSection>
                 }

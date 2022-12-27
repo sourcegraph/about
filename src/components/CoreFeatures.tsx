@@ -176,17 +176,15 @@ export const CoreFeatures: FunctionComponent = () => {
                                 Learn more about {startCase(feature.productFeature)}
                             </a>
                         ) : (
-                            <Link href={feature.ctaLink} passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="mt-2 btn btn-outline-primary"
-                                    title={'Learn more about ' + startCase(feature.productFeature)}
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Learn more about {startCase(feature.productFeature)}
-                                </a>
+                            <Link
+                                href={feature.ctaLink}
+                                className="mt-2 btn btn-outline-primary"
+                                title={'Learn more about ' + startCase(feature.productFeature)}
+                                data-button-style={buttonStyle.outline}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Learn more about {startCase(feature.productFeature)}
                             </Link>
                         )}
                     </div>

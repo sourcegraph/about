@@ -82,16 +82,14 @@ export const CaseStudy: FunctionComponent = () => {
                         to even nudge them towards completion. “I actually did a bit of prototyping to see if I could
                         create JIRA issues based on the code searches,” Hodge said, as part of a search for a way to
                         help other team members actually make the changes that need to happen. When Sourcegraph's{' '}
-                        <Link href="/blog/introducing-batch-changes/" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title="Batch Changes"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Batch Changes
-                            </a>
+                        <Link
+                            href="/blog/introducing-batch-changes/"
+                            title="Batch Changes"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Batch Changes
                         </Link>{' '}
                         came out, Hodge immediately saw the value in further removing friction by letting one person
                         update all versions of a library across the codebase and then notify all the service owners so

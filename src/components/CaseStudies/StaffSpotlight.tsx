@@ -20,7 +20,9 @@ export const StaffSpotlight: FunctionComponent<{
                     <p>{about}</p>
                 </div>
 
-                <div className="tw-grid tw-gap-6 tw-grid-cols-1 md:tw-grid-cols-3 tw-mt-16 tw-max-w-screen-lg tw-mx-auto">
+                <div
+                    className={`tw-grid tw-gap-6 tw-grid-cols-1 md:tw-grid-cols-${staff.length} tw-mt-16 tw-max-w-screen-lg tw-mx-auto`}
+                >
                     {staff.map(a => (
                         <div key={a.name} className="md:tw-text-center">
                             <img
@@ -31,7 +33,7 @@ export const StaffSpotlight: FunctionComponent<{
                                 alt={a.name}
                             />
                             <h3>{a.name}</h3>
-                            <p className="tw-text-gray-400">{a.title}</p>
+                            <p className="tw-text-gray-400 md:tw-max-w-[250px] tw-mx-auto">{a.title}</p>
                         </div>
                     ))}
                 </div>

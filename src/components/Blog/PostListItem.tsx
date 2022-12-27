@@ -21,17 +21,15 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
         <header className={headerClassName}>
             <h4>
                 {renderTitleAsLink === true ? (
-                    <Link href={`/${blogType}/${slugPath}`} passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className="tw-text-gray-600 tw-block"
-                            title={frontmatter.title}
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            {frontmatter.title}
-                        </a>
+                    <Link
+                        href={`/${blogType}/${slugPath}`}
+                        className="tw-text-gray-600 tw-block"
+                        title={frontmatter.title}
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        {frontmatter.title}
                     </Link>
                 ) : (
                     frontmatter.title
@@ -56,16 +54,14 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                                         {a.name}
                                     </a>
                                 ) : (
-                                    <Link href={a.url} passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            title={a.name}
-                                            data-button-style={buttonStyle.text}
-                                            data-button-location={buttonLocation.body}
-                                            data-button-type="cta"
-                                        >
-                                            {a.name}
-                                        </a>
+                                    <Link
+                                        href={a.url}
+                                        title={a.name}
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                    >
+                                        {a.name}
                                     </Link>
                                 )
                             ) : (
@@ -95,39 +91,35 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                             <p>{typeof excerpt === 'string' && excerpt}</p>
                         )}
                         <div className="tw-text-center xs:tw-text-left">
-                            <Link href={`/${blogType}/${slugPath}`} passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    title="Read more"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Read more
-                                </a>
+                            <Link
+                                href={`/${blogType}/${slugPath}`}
+                                title="Read more"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Read more
                             </Link>
                         </div>
                     </div>
 
                     <div className="col-md-3 tw-flex">
-                        <Link href={`/${blogType}/${slugPath}`} passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                title={frontmatter.title}
-                                data-button-style={buttonStyle.image}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                <img
-                                    className="w-100"
-                                    src={
-                                        frontmatter.heroImage
-                                            ? frontmatter.heroImage
-                                            : 'https://storage.googleapis.com/sourcegraph-assets/sourcegraph-social-image.png'
-                                    }
-                                    alt={frontmatter.title}
-                                />
-                            </a>
+                        <Link
+                            href={`/${blogType}/${slugPath}`}
+                            title={frontmatter.title}
+                            data-button-style={buttonStyle.image}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            <img
+                                className="w-100"
+                                src={
+                                    frontmatter.heroImage
+                                        ? frontmatter.heroImage
+                                        : 'https://storage.googleapis.com/sourcegraph-assets/sourcegraph-social-image.png'
+                                }
+                                alt={frontmatter.title}
+                            />
                         </Link>
                     </div>
                 </div>

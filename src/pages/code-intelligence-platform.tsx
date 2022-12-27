@@ -242,16 +242,14 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                                 issues from happening again.
                             </li>
                             <li className="mb-3">
-                                <Link href="/case-studies/indeed-accelerates-development-velocity">
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a
-                                        title="Indeed"
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.body}
-                                        data-button-type="cta"
-                                    >
-                                        Indeed
-                                    </a>
+                                <Link
+                                    href="/case-studies/indeed-accelerates-development-velocity"
+                                    title="Indeed"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    Indeed
                                 </Link>{' '}
                                 saw a 90% reduction in manual work required for large-scale code changes.
                             </li>
