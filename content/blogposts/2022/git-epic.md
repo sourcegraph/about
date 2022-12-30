@@ -271,54 +271,105 @@ BLAH BLAH 4
 
 Notes:
 
+- [Tracking issue](https://github.com/sourcegraph/sourcegraph/issues/25247)
+- [RFC 469: Decouple migrations from code deployments](https://docs.google.com/document/d/1_wqvNbEGhMzu45CHZNrLQYys7gl0AtVpLluGp4cbQKk)
+- [Broken database migrations: How we finally fixed an embarrassing problem](https://about.sourcegraph.com/blog/introducing-migrator-service)
+
+PR Notes:
+
 - [experiment: non-sequential migrations _#29831_](https://github.com/sourcegraph/sourcegraph/pull/29831)
 - [chore: Simplify embed files _#30248_](https://github.com/sourcegraph/sourcegraph/pull/30248)
+  - Changes `go:embed` directive from list of explicit files to `**/*`.
 - [chore: Refactor sg migration _#30249_](https://github.com/sourcegraph/sourcegraph/pull/30249)
-- [chore: Inline code into `migration/.../runner.go` _#30250_](https://github.com/sourcegraph/sourcegraph/pull/30250)
+  - Breaks the file controlling the behavior of `sg migrate`, `migration.go`, into three files, `add.go`, `squash.go`, and `util.go`.
+- [chore: Inline code into migration/.../runner.go` _#30250_](https://github.com/sourcegraph/sourcegraph/pull/30250)
+  - Inlines code from one file into another
 - [chore: Reorganize `migration/cliutil` package _#30251_](https://github.com/sourcegraph/sourcegraph/pull/30251)
+  - Breaks the file controlling behavior of `up` and `down` migrator commands, `flags.go`, into three files, `up.go`, `down.go`, and `help.go`.
 - [migrations: Expose transactional store behavior in `Store` interface _#30262_](https://github.com/sourcegraph/sourcegraph/pull/30262)
+  - Adds `Transact` and `Done` methods to the layer performing database queries for the migration runner.
 - [migrations: Remove concurrent index creation from downgrades _#30265_](https://github.com/sourcegraph/sourcegraph/pull/30265)
-  - Realized this made no sense to support during the migration
+  - Adds additional validation and removes CONCURRENTLY from `down.sql` files, where applicable.
+  - Note: Realized this made no sense to support during the migration
 - [migrations: Add `MigrationOperation` to runner options _#30268_](https://github.com/sourcegraph/sourcegraph/pull/30268)
+  - Expands migration options struct so that each listed schema name has an independent target migration version (previously, they all shared one)
 - [migrations: Improve test for `Store.TryLock` _#30269_](https://github.com/sourcegraph/sourcegraph/pull/30269)
+  - Updates test to actually test lock behaviors (previously, the test only ensured the SQL was valid, not correct)
 - [migrations: Add `IndexStatus` to store _#30270_](https://github.com/sourcegraph/sourcegraph/pull/30270)
+  - Adds `IndexStatus` method that [reports the progress](https://www.postgresql.org/docs/12/progress-reporting.html#CREATE-INDEX-PROGRESS-REPORTING) of an index being created concurrently
 - [migrations: Make definition-by-id lookup constant-time _#30271_](https://github.com/sourcegraph/sourcegraph/pull/30271)
+  - Builds a map of definitions by ID so that the method `GetByID` on a migration definition collection can use a map lookup instead of a loop.
 - [migrations: Simplify tests comparing definition instances _#30273_](https://github.com/sourcegraph/sourcegraph/pull/30273)
+  - Updates a test so that it can compare *sqlf.Query objects directly instead of pre-rendering the SQL strings.
 - [migrations: Organize migration files into directories _#30276_](https://github.com/sourcegraph/sourcegraph/pull/30276)
-  - Rename every freaking file!
+  - Updates the read logic and renames every migration file and adds metadata files (727 file changes in this PR)
+  - Note: PR is set up as review-by-commit, where a script is committed to do a mechanical change, then the script deleted (but kept in commit history for documentation).
 - [migrations: Better present migration\*logs over schema\*migrations _#30309_](https://github.com/sourcegraph/sourcegraph/pull/30309)
+  - This PR renames fields/methods just to emphasize the movement from a single version to a log of version changes.
 - [migrations: Add `WithMigrationLog` _#30314_](https://github.com/sourcegraph/sourcegraph/pull/30314)
+  - Explicitly separates tracking of version changes and application of migrations (but preserves behavior otherwise).
 - [migrations: Add `Versions` to store _#30318_](https://github.com/sourcegraph/sourcegraph/pull/30318)
+  - Adds `Versions` method to retrieve all applied leaf migrations (not just the most recent, as `Version` gives us).
 - [migrations: Store migration parents as a slice _#30319_](https://github.com/sourcegraph/sourcegraph/pull/30319)
+  - Allow migration definitions to have multiple parents (but keep validation for a linear chain of migration definitions).
 - [migrations: Add additional graph utils _#30321_](https://github.com/sourcegraph/sourcegraph/pull/30321)
-  - Allowed me to ask for very specific focused reviews on graph algorithms
+  - Prepares (initially unused) utilities for working with a migration graph (roots, leaves, traversals, and dominators).
+  - Note: Graph algorithms! Breaking this apart allows for focused reviews from people not necessarily invested in the entire PR.
 - [chore: Humanize migration names _#30386_](https://github.com/sourcegraph/sourcegraph/pull/30386)
+  - A simple mechanical changes to migration metadata names (`series_points_index` -> `series points index`).
 - [chore: Cleanup metadata _#30388_](https://github.com/sourcegraph/sourcegraph/pull/30388)
+  - Updates testdata that didn't match the new formats.
 - [chore: Remove unreferenced field in migration definition #30403](https://github.com/sourcegraph/sourcegraph/pull/30403)
+  - Removes `UpFilename` and `DownFilename` fields from the migration definition struct (they are now deterministic).
 - [migrations: Enrich migration operation direction _#30405_](https://github.com/sourcegraph/sourcegraph/pull/30405)
+  - Replaces a boolean field `Up` with an enum value for four operations: `up`, `down`, `upgrade`, and `revert`.
 - [migrations: Allow idempotent unlock in `TryLock` _#30406_](https://github.com/sourcegraph/sourcegraph/pull/30406)
+  - Improves UX where unlock can be (intuitively) called twice after a successful acquire (once explicitly and once on `defer`).
 - [sg migration squash: Fix removal of squashed files _#30407_](https://github.com/sourcegraph/sourcegraph/pull/30407)
+  - Fixes a file remove bug in `sg migration squash` that was introduced when migrations started being organized in a directory hierarchy.
 - [sg migration squash: Fix running migrations up _#30408_](https://github.com/sourcegraph/sourcegraph/pull/30408)
+  - Remove old dependence on `golang-migrate` from `sg migration squash`.
 - [sg migration squash: Exclude `migration_logs` _#30409_](https://github.com/sourcegraph/sourcegraph/pull/30409)
+  - Adds `migration_logs` to the list of excluded tables when the schema is squashed.
 - [migrations: Update user-facing commands _#30411_](https://github.com/sourcegraph/sourcegraph/pull/30411)
-  - Given the ability to call out to people familiar with docs if I was missing anything
-  - Gave a chance to advertise the changes to developers without the rest of the full context
+  - Removes the `-target` flag from the `up` command of the migrator (it now desugars to _up-to-latest_).
+  - Adds `undo` and `upto` commands to the migrator.
+  - Note: Gave the ability to call out reviewers outside of eng as it affects customers (user-facing docs being a big focus).
 - [migrations: Read and validate createIndexConcurrently from metadata.yaml _#30418_](https://github.com/sourcegraph/sourcegraph/pull/30418)
+  - Adds additional validation requirements to migration definitions that contain a concurrent index creation.
 - [migrations: Validate cycles _#30423_](https://github.com/sourcegraph/sourcegraph/pull/30423)
+  - Multiple parents are now read from metadata files.
+  - Greatly improved error messages (NOTE: prior to being exercised live).
+  - Note: Disabled outside of tests, and we still have a linear chain of migration definitions in practice. Disabled everywhere in #30664.
 - [migrations: Small refactor to runner package _#30428_](https://github.com/sourcegraph/sourcegraph/pull/30428)
 - [migrations: Remove `Definitions.First` in favor of `Root` _#30455_](https://github.com/sourcegraph/sourcegraph/pull/30455)
+  - Removes method (and uses) subsumed by new code.
 - [migrations: Keep user-facing naming consistent _#30456_](https://github.com/sourcegraph/sourcegraph/pull/30456)
+  - Small refactor in help text and CLI output.
 - [migrations: Remove unused `Count` method _#30457_](https://github.com/sourcegraph/sourcegraph/pull/30457)
 - [migrations: Fix testdata naming _#30458_](https://github.com/sourcegraph/sourcegraph/pull/30458)
 - [chore: Update migration comments _#30501_](https://github.com/sourcegraph/sourcegraph/pull/30501)
 - [migrations: Extract `IndexStatus` into `storetypes` package _#30509_](https://github.com/sourcegraph/sourcegraph/pull/30509)
+  - Moves struct definition into another package.
 - [migrations: Backfill `migration_logs` content on startup if empty _#30511_](https://github.com/sourcegraph/sourcegraph/pull/30511)
+  - Adds code that will bridge the migration between the old golang-migrate version tables and the new `migration_logs` table.
 - [migrations: Update memoryStore methods (for tests) _#30512_](https://github.com/sourcegraph/sourcegraph/pull/30512)
+  - Update `memoryStore` with new behaviors (now that non-linear migration definitions are supported).
 - [migrations: Remove validation from store on migration application _#30514_](https://github.com/sourcegraph/sourcegraph/pull/30514)
+  - Removes validation that blocks non-linear migration definitions from being performed.
 - [migrations: Refactor desguar operations _#30526_](https://github.com/sourcegraph/sourcegraph/pull/30526)
+  - Improves error messages for `sg migration revert`.
 - [migrations: Read all applied versions when populating `schemaVersion` _#30542_](https://github.com/sourcegraph/sourcegraph/pull/30542)
+  - Read `Versions` (but do not use it as a source of truth, that comes in #30664).
 - [migrations: Refactor `runSchema{Up,Down}` in runner _#30544_](https://github.com/sourcegraph/sourcegraph/pull/30544)
+  - Removes redundant logging.
 - [migrations: Add `withLockedSchemaState` to runner _#30549_](https://github.com/sourcegraph/sourcegraph/pull/30549)
+  - Extracts calling `fetchVersion` while holding an advisory lock into a method.
 - [migrations: Support graphical migrations _#30664_](https://github.com/sourcegraph/sourcegraph/pull/30664)
+  - Removes linear validation that was early disabled only in tests (see #30423).
+  - Begins to use data from `Versions` over `Version` as a source-of-truth for the schema state (see #30542).
+  - Updates user-facing commands with knowledge of a non-linear chain of migration definitions.
 - [migrations: Support sane concurrent index creation _#30693_](https://github.com/sourcegraph/sourcegraph/pull/30693)
+  - This PR ensures that the migrator no longer holds a lock while concurrently creating indexes.
+  - NOTE: Discovered this error only while working on experiment. See #30418.
 - [chore: Remove dead code _#30855_](https://github.com/sourcegraph/sourcegraph/pull/30855)
