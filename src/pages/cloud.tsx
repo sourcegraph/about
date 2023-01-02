@@ -10,7 +10,7 @@ const Cloud: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Sourcegraph - Cloud',
-            description: '',
+            description: 'Sourcegraph Cloud’s dedicated, single-tenant SaaS solution is the easiest way to get Sourcegraph in the cloud. Get full code intelligence for your codebase quickly, securely, and without having to host.',
         }}
         className="navbar-dark"
         hero={
@@ -49,7 +49,7 @@ const Cloud: FunctionComponent = () => (
                         </div>
                     </div>
                 }
-                floatingImg="/test.svg"
+                floatingImg="/code-intelligence-platform-illustration.svg"
                 displayUnderNav={true}
             />
         }
