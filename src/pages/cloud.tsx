@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import { FaGitAlt, FaLocationArrow } from 'react-icons/fa'
 import { MdOutlineAvTimer, MdBarChart } from 'react-icons/md'
 
-import { Layout, Hero, ContentSection, CustomerLogos, CtaSection, TwoColumnSection, Blockquote } from '@components'
+import { Layout, Hero, ContentSection, CtaSection, TwoColumnSection, Blockquote } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const Cloud: FunctionComponent = () => (
@@ -49,7 +49,7 @@ const Cloud: FunctionComponent = () => (
                         </div>
                     </div>
                 }
-                floatingImg="/code-intelligence-platform-illustration.svg"
+                floatingImg="/test.svg"
                 displayUnderNav={true}
             />
         }
@@ -114,11 +114,6 @@ const Cloud: FunctionComponent = () => (
                     />
                 </div>
             </div>
-        </ContentSection>
-
-        <ContentSection background="white" parentClassName="md:tw-py-0">
-            <h6 className="tw-text-center">Optional Overline</h6>
-            <CustomerLogos />
         </ContentSection>
 
         <ContentSection background="white">
