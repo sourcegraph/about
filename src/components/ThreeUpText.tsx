@@ -4,7 +4,7 @@ import classNames from 'classnames'
 
 interface Item {
     icon?: ReactNode
-    subtitle: string | ReactNode
+    subtitle?: string | ReactNode
     description: string
 }
 
@@ -13,6 +13,7 @@ interface ThreeUpText {
     fullWidthTitle?: boolean
     subTitle?: string | ReactNode
     items: Item[]
+    centerContent?: boolean
 }
 
 interface ItemTitle {

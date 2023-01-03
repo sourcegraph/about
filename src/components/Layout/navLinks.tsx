@@ -32,6 +32,10 @@ export const navLinks: NavLink[] = [
                 title: 'Code Insights',
                 href: '/code-insights',
             },
+            {
+                title: 'Cloud',
+                href: '/cloud',
+            },
         ],
     },
     {

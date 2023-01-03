@@ -81,6 +81,7 @@ export interface Background {
         | 'aquamarine'
         | 'infrared'
         | 'aurora'
+        | 'radialSpace'
         // Starship Variants
         | 'starshipLaunchPills'
     children?: ReactNode
@@ -135,6 +136,7 @@ const backgrounds: { [key: string]: StaticImageData | string } = {
     aquamarine: 'sg-bg-gradient-aquamarine',
     infrared: 'sg-bg-gradient-infrared',
     aurora: 'sg-bg-gradient-aurora',
+    radialSpace: 'sg-bg-radial-space',
     // Starship Variants
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     starshipLaunchPills,
@@ -193,9 +195,16 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
 
     const styleClasses = classNames(className, {
         [utilityBackground]: isUtilityBackground,
-        'tw-text-white': variant.includes('dark') || variant.includes('starship') || variant.includes('black'),
+        'tw-text-white':
+            variant.includes('dark') ||
+            variant.includes('starship') ||
+            variant.includes('black') ||
+            variant.toLowerCase().includes('space'),
         'tw-text-black':
-            (!variant.includes('dark') && !variant.includes('starship') && !variant.includes('black')) ||
+            (!variant.includes('dark') &&
+                !variant.includes('starship') &&
+                !variant.includes('black') &&
+                !variant.toLowerCase().includes('space')) ||
             variant === 'transparent',
     })
 
