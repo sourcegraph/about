@@ -118,5 +118,4 @@ Integration testing is a major step toward better reliability and one that teams
 ## More posts like this
 
 - [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
-- [Continuous delivery: A cure for release anxiety?](https://about.sourcegraph.com/blog/continuous-delivery-mindset/)
 - [The Nine Circles of Dependency Hell (and a roadmap out)](https://about.sourcegraph.com/blog/nine-circles-of-dependency-hell/)

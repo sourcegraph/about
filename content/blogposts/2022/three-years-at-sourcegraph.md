@@ -341,8 +341,6 @@ If you’re looking for my advice about when to work, I’ll probably say helple
 
 The truth is, I’ve tried many schedules over the last three years, usually matching the lifestyle I had at the time. Sometimes I started working after dinner, sometimes I split the schedule and made up time in the afternoon, sometimes I was crazy productive and worked for 16 hours a day, then felt dead the next day. You’re welcome to read my [boring methodology to be productive](https://unknwon.io/posts/211009_boring_methodology_to_be_productive/) for how I stay productive as an IC.
 
-The main point is that work styles are flexible, and you may get more inspiration and insights from [these 7 interviews with our engineers](https://about.sourcegraph.com/blog/remote-work-calendar).
-
 Of course, remote work isn’t for everyone, and sometimes I miss working from an office environment. That’s why we also offer [up to 500 USD per month for you to rent a coworking space](https://handbook.sourcegraph.com/benefits-pay-perks/benefits-perks/spending-company-money/#recurring-expenses).
 
 ### Takeaways
