@@ -60,6 +60,5 @@ _PS: We are [hiring](https://boards.greenhouse.io/sourcegraph91)!_
 ---
 
 ### More posts like this
-- [Let's talk about release anxiety](blog/release-anxiety)
+
 - [How we built our software engineering career framework](/blog/software-engineer-career-ladder)
-- [Async, remote, and flexible: How 7 engineers rethought their work calendars](/blog/remote-work-calendar)

@@ -85,6 +85,51 @@
 # ========== END LEGAL REDIRECTS ==========
 
 # ========== BLOG REDIRECTS ==========
+
+[[redirects]]
+    from = "/blog/code-intelligence-on-sourcegraph-com"
+    to = "/blog"
+
+[[redirects]]
+    from = "/blog/a-programmers-guide-to-find-and-replace"
+    to = "/blog"
+
+[[redirects]]
+    from = "/blog/improving-security-through-transparency"
+    to = "/blog"
+
+[[redirects]]
+    from = "/blog/universal-code-intelligence-github-sourcegraph-browser-extension"
+    to = "/blog"
+
+[[redirects]]
+    from = "/blog/universal-code-search-gitlab"
+    to = "/blog"
+
+[[redirects]]
+    from = "/blog/continuous-delivery-mindset"
+    to = "/blog"
+
+[[redirects]]
+    from = "/blog/role-of-observability-tools-high-performing-development-teams"
+    to = "/blog"
+
+[[redirects]]
+    from = "/blog/remote-work-calendar"
+    to = "/blog"
+
+[[redirects]]
+    from = "/blog/cloud-optimization-part-1-visibility"
+    to = "/blog"
+
+[[redirects]]
+    from = "/blog/release-anxiety"
+    to = "/blog"
+
+[[redirects]]
+  from = "/blog/batch-changing-hundreds-of-repositories-at-typeform"
+  to = "https://medium.com/typeforms-engineering-blog/saving-dozens-of-engineering-hours-by-batch-changing-hundreds-of-repositories-at-a-time-e4c5a454df2d"
+
 [[redirects]]
   from = "/blog/better-onboarding-advice-from-engineering-leaders"
   to = "/blog/better-onboarding-how-to-prevent-codebase-overwhelm"
@@ -175,10 +220,6 @@
   from = "/get-started/cloud"
   to = "/get-started/self-hosted"
   force = true
-
-[[redirects]]
-  from = "/mysterybox"
-  to = "https://view.ceros.com/sourcegraph/mysterybox/p/1"
 
 [[redirects]]
   from = "/support"

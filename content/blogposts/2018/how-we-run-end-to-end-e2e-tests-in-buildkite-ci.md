@@ -124,4 +124,3 @@ Do you have interesting end-to-end testing stories? Tweet us [@sourcegraph](http
 
 - [How we used universal code search to eliminate secrets from our codebase](https://about.sourcegraph.com/blog/eliminate-secrets-from-codebase-with-universal-code-search/)
 - [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
-- [Monitoring is not enough: For high-performing development teams you need observability tools](https://about.sourcegraph.com/blog/role-of-observability-tools-high-performing-development-teams/)

@@ -126,5 +126,4 @@ _Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Sc
 ## More posts like this
 
 - [How we built our software engineering career framework](https://about.sourcegraph.com/blog/software-engineer-career-ladder/)
-- [Async, remote, and flexible: How 7 engineers rethought their work calendars)](https://about.sourcegraph.com/blog/remote-work-calendar/)
 - [Improving code display: A look at 17 developer workspaces](https://about.sourcegraph.com/blog/workspaces-of-sourcegraph/)
