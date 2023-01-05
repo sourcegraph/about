@@ -73,7 +73,7 @@
     "@cypress/webpack-preprocessor": "^5.12.0",
     "@next/bundle-analyzer": "^12.3.0",
     "@sourcegraph/eslint-config": "^0.27.0",
-    "@sourcegraph/event-logger": "^2.0.4",
+    "@sourcegraph/event-logger": "^2.0.5",
     "@sourcegraph/prettierrc": "^3.0.3",
     "@svgr/webpack": "^6.2.1",
     "@types/cypress": "^1.1.3",
