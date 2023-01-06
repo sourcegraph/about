@@ -27,7 +27,8 @@
         }
     }
 
-    &.navbar-dark, &.navbar-purple {
+    &.navbar-dark,
+    &.navbar-purple {
         .nav .nav-link,
         .right-nav .tw-text-blurple-400 {
             color: $white !important;
@@ -85,7 +86,8 @@
             margin-bottom: 5px;
         }
     }
-    &.navbar-dark .nav-line, &.navbar-purple .nav-line {
+    &.navbar-dark .nav-line,
+    &.navbar-purple .nav-line {
         background: #fff;
     }
 

@@ -81,7 +81,7 @@ export const Header: FunctionComponent<Props> = props => {
             <div className="container-xl tw-px-0">
                 <Navbar.Brand href="/" onContextMenu={onRightClickLogo} className="tw-mr-0 header tw-flex">
                     <img
-                        src={(isDarkNav || isPurpleNav) ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
+                        src={isDarkNav || isPurpleNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
                         width={150}
                         height={26}
                         className="tw-max-w-[150px] tw-w-full"
