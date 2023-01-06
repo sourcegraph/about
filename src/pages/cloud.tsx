@@ -12,7 +12,7 @@ const Cloud: FunctionComponent = () => (
             title: 'Sourcegraph - Cloud',
             description: 'Sourcegraph Cloud’s dedicated, single-tenant SaaS solution is the easiest way to get Sourcegraph in the cloud. Get full code intelligence for your codebase quickly, securely, and without having to host.',
         }}
-        className="navbar-dark"
+        className="navbar-purple"
         hero={
             <Hero
                 product="sourcegraph cloud"
