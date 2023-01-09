@@ -19,53 +19,38 @@ import {
     ENTERPRISE_FEATURES_OVERVIEW,
     ALL_FEATURES_COMPARED_DATA,
 } from '../components'
-import { breakpoints } from '../data/breakpoints'
 import { buttonLocation, buttonStyle } from '../data/tracking'
-import { useWindowWidth } from '../hooks/windowWidth'
 
-const BusinessCTA: FunctionComponent<{ className?: string; btnOnMobile?: boolean }> = ({ className, btnOnMobile }) => {
-    const windowWidth = useWindowWidth()
-    const isMdOrDown = windowWidth < breakpoints.lg
+const StartFreeButton: FunctionComponent<{ className?: string }> = ({ className }) => (
+    <a
+        className={classNames('btn btn-primary', 'tw-w-full md:tw-w-auto', className)}
+        href="https://signup.sourcegraph.com"
+        title="Start free"
+        data-button-style={buttonStyle.primary}
+        data-button-location={buttonLocation.trySourcegraph}
+        data-button-type="cta"
+    >
+        Start free
+    </a>
+)
 
-    return (
-        <a
-            className={classNames(
-                btnOnMobile && 'btn btn-primary',
-                'tw-w-full md:tw-w-auto',
-                className,
-                btnOnMobile
-                    ? 'md:tw-mr-xs tw-mr-0 tw-mb-xs lg:tw-mb-0'
-                    : isMdOrDown
-                    ? 'font-weight-normal'
-                    : 'btn btn-primary'
-            )}
-            href="https://signup.sourcegraph.com"
-            title="Start for free"
-            data-button-style={buttonStyle.primary}
-            data-button-location={buttonLocation.trySourcegraph}
-            data-button-type="cta"
-        >
-            Start for free
-        </a>
-    )
-}
+const ContactUsButton: FunctionComponent<{ className?: string }> = ({ className }) => (
+    <Link
+        href="/contact/request-info?form_submission_source=pricing-enterprise"
+        className={classNames('btn btn-outline-primary tw-w-full md:tw-w-auto', className)}
+        title="Contact us"
+        data-button-style={buttonStyle.outline}
+        data-button-location={buttonLocation.bodyDemo}
+        data-button-type="cta"
+    >
+        Contact us
+    </Link>
+)
 
-const EnterpriseCTA: FunctionComponent<{ btnOnMobile?: boolean }> = ({ btnOnMobile }) => (
-    <div className="tw-flex-wrap">
-        <BusinessCTA btnOnMobile={btnOnMobile} className="md:tw-mr-xs tw-mb-xs md:tw-mb-0 tw-w-full md:tw-w-auto" />
-        <Link
-            href="/contact/request-info?form_submission_source=pricing-enterprise"
-            className={classNames(
-                'btn btn-outline-primary',
-                !btnOnMobile ? 'tw-hidden lg:tw-inline-block tw-w-auto' : 'tw-w-full md:tw-w-auto'
-            )}
-            title="Contact us"
-            data-button-style={buttonStyle.outline}
-            data-button-location={buttonLocation.bodyDemo}
-            data-button-type="cta"
-        >
-            Contact us
-        </Link>
+const EnterpriseButtons: FunctionComponent<{ contactUsClassName?: string }> = ({ contactUsClassName }) => (
+    <div className="tw-flex tw-flex-wrap tw-gap-2">
+        <StartFreeButton />
+        <ContactUsButton className={contactUsClassName} />
     </div>
 )
 
@@ -154,7 +139,7 @@ const PricingPage: FunctionComponent = () => {
                         description="Full platform access for teams and orgs, all on a single-tenant cloud instance."
                         price="$99 per active user/month"
                         accentColor="vermillion"
-                        buttons={<BusinessCTA btnOnMobile={true} />}
+                        buttons={<StartFreeButton />}
                         features={BIZ_FEATURES_OVERVIEW}
                     />
                 </div>
@@ -165,7 +150,7 @@ const PricingPage: FunctionComponent = () => {
                         description="Enterprise-grade security, scale, and support with custom deployment options."
                         price="Custom pricing"
                         accentColor="violet"
-                        buttons={<EnterpriseCTA btnOnMobile={true} />}
+                        buttons={<EnterpriseButtons />}
                         beforeFeatures={
                             <div className="tw-text-xl tw-font-semibold tw-mb-sm">Everything in Business, plus:</div>
                         }
@@ -182,28 +167,28 @@ const PricingPage: FunctionComponent = () => {
             <div className="tw-py-3xl md:tw-py-5xl md:tw-max-w-screen-xl tw-mx-auto tw-overflow-hidden md:tw-overflow-visible">
                 <table className="tw-relative tw-border-0 tw-table-fixed">
                     <thead>
-                        <tr className="md:tw-sticky md:tw-top-16">
+                        <tr className="md:tw-sticky md:tw-top-16 tw-border-b">
                             <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
-                                <div className="lg:tw-h-60 md:tw-h-[157px] sm:tw-h-[140px] tw-h-[133px] md:tw-p-xs tw-p-xxs md:tw-pt-xs tw-pt-md md:tw-pr-xs tw-border-b-1 tw-border-gray-200">
+                                <div className="lg:tw-h-60 md:tw-h-[157px] sm:tw-h-[140px] tw-h-[133px] md:tw-p-xs tw-p-xxs md:tw-pt-xs tw-pt-md md:tw-pr-xs">
                                     <h2 className="md:tw-max-w-[250px] tw-text-xl sm:tw-text-4xl lg:tw-text-7xl">
                                         Compare all features
                                     </h2>
                                 </div>
                             </th>
                             <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
-                                <div className="tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-1 tw-border-gray-200 tw-border-t-vermillion-300">
+                                <div className="tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-1 tw-border-gray-200 tw-border-b-0 tw-border-t-vermillion-300">
                                     <h2 className="tw-text-xl md:tw-text-4xl tw-mb-sm">Business</h2>
                                     <h4 className="tw-font-normal tw-hidden lg:tw-block tw-mb-sm">
                                         $99 per active user/month
                                     </h4>
-                                    <BusinessCTA />
+                                    <StartFreeButton />
                                 </div>
                             </th>
                             <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
-                                <div className="tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-b-1 tw-border-gray-200 tw-border-t-violet-400">
+                                <div className="tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-gray-200 tw-border-t-violet-400">
                                     <h2 className="tw-text-xl md:tw-text-4xl tw-mb-sm">Enterprise</h2>
                                     <h4 className="tw-font-normal tw-hidden lg:tw-block tw-mb-sm">Custom pricing</h4>
-                                    <EnterpriseCTA />
+                                    <EnterpriseButtons contactUsClassName="tw-hidden lg:tw-block" />
                                 </div>
                             </th>
                         </tr>
