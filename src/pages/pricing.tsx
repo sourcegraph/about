@@ -150,22 +150,25 @@ const PricingPage: FunctionComponent = () => {
                 <div className="tw-mb-sm md:tw-mb-0 tw-col-span-full md:tw-col-start-2 md:tw-col-span-5">
                     <PricingPlan
                         name="Business"
-                        price="$99 per active user/month"
                         description="Full platform access for teams and orgs, all on a single-tenant cloud instance."
-                        features={BIZ_FEATURES_OVERVIEW}
-                        isEnterprise={false}
+                        price="$99 per active user/month"
+                        accentColor="vermillion"
                         buttons={<BusinessCTA btnOnMobile={true} />}
+                        features={BIZ_FEATURES_OVERVIEW}
                     />
                 </div>
 
                 <div className="tw-col-span-full md:tw-col-start-7 md:tw-col-span-5">
                     <PricingPlan
                         name="Enterprise"
-                        price="Custom pricing"
                         description="Enterprise-grade security, scale, and support with custom deployment options."
-                        features={ENTERPRISE_FEATURES_OVERVIEW}
-                        isEnterprise={true}
+                        price="Custom pricing"
+                        accentColor="violet"
                         buttons={<EnterpriseCTA btnOnMobile={true} />}
+                        beforeFeatures={
+                            <div className="tw-text-xl tw-font-semibold tw-mb-sm">Everything in Business, plus:</div>
+                        }
+                        features={ENTERPRISE_FEATURES_OVERVIEW}
                     />
                 </div>
             </ContentSection>
