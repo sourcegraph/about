@@ -115,6 +115,17 @@ const faqData = [
     },
 ]
 
+const PLAN_COLORS: Record<'business' | 'enterprise', { borderColorClass: string; textColorClass: string }> = {
+    business: {
+        borderColorClass: 'tw-border-t-vermillion-300',
+        textColorClass: 'tw-text-vermillion-300',
+    },
+    enterprise: {
+        borderColorClass: 'tw-border-t-violet-400',
+        textColorClass: 'tw-text-violet-400',
+    },
+}
+
 const PricingPage: FunctionComponent = () => {
     const [activeKey, setActiveKey] = useState<number | null>(null)
 
@@ -138,9 +149,9 @@ const PricingPage: FunctionComponent = () => {
                         name="Business"
                         description="Full platform access for teams and orgs, all on a single-tenant cloud instance."
                         price="$99 per active user/month"
-                        accentColor="vermillion"
                         buttons={<StartFreeButton />}
                         features={BIZ_FEATURES_OVERVIEW}
+                        {...PLAN_COLORS.business}
                     />
                 </div>
 
@@ -149,12 +160,12 @@ const PricingPage: FunctionComponent = () => {
                         name="Enterprise"
                         description="Enterprise-grade security, scale, and support with custom deployment options."
                         price="Custom pricing"
-                        accentColor="violet"
                         buttons={<EnterpriseButtons />}
                         beforeFeatures={
                             <div className="tw-text-xl tw-font-semibold tw-mb-sm">Everything in Business, plus:</div>
                         }
                         features={ENTERPRISE_FEATURES_OVERVIEW}
+                        {...PLAN_COLORS.enterprise}
                     />
                 </div>
             </ContentSection>
@@ -176,7 +187,9 @@ const PricingPage: FunctionComponent = () => {
                                 </div>
                             </th>
                             <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
-                                <div className="tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-1 tw-border-gray-200 tw-border-b-0 tw-border-t-vermillion-300">
+                                <div
+                                    className={`tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-1 tw-border-gray-200 tw-border-b-0 ${PLAN_COLORS.business.borderColorClass}`}
+                                >
                                     <h2 className="tw-text-xl md:tw-text-4xl tw-mb-sm">Business</h2>
                                     <h4 className="tw-font-normal tw-hidden lg:tw-block tw-mb-sm">
                                         $99 per active user/month
@@ -185,7 +198,9 @@ const PricingPage: FunctionComponent = () => {
                                 </div>
                             </th>
                             <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
-                                <div className="tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-gray-200 tw-border-t-violet-400">
+                                <div
+                                    className={`tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-gray-200  ${PLAN_COLORS.enterprise.borderColorClass}`}
+                                >
                                     <h2 className="tw-text-xl md:tw-text-4xl tw-mb-sm">Enterprise</h2>
                                     <h4 className="tw-font-normal tw-hidden lg:tw-block tw-mb-sm">Custom pricing</h4>
                                     <EnterpriseButtons contactUsClassName="tw-hidden lg:tw-block" />
@@ -223,7 +238,9 @@ const PricingPage: FunctionComponent = () => {
                                         {typeof feature.business === 'string' ? (
                                             feature.business
                                         ) : feature.business ? (
-                                            <CheckIcon className="mr-2 icon-inline tw-text-vermillion-300 tw-inline" />
+                                            <CheckIcon
+                                                className={`mr-2 icon-inline ${PLAN_COLORS.business.textColorClass} tw-inline`}
+                                            />
                                         ) : null}
                                         {feature.disclaimer && (
                                             <i className="tw-block tw-text-sm">{feature.disclaimer}</i>
@@ -234,7 +251,9 @@ const PricingPage: FunctionComponent = () => {
                                         {typeof feature.enterprise === 'string' ? (
                                             feature.enterprise
                                         ) : feature.enterprise ? (
-                                            <CheckIcon className="mr-2 icon-inline tw-text-violet-400 tw-inline" />
+                                            <CheckIcon
+                                                className={`mr-2 icon-inline ${PLAN_COLORS.enterprise.textColorClass} tw-inline`}
+                                            />
                                         ) : null}
                                         {feature.disclaimer && (
                                             <i className="tw-block tw-text-sm">{feature.disclaimer}</i>
