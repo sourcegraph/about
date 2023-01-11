@@ -11,7 +11,7 @@ export interface ContentSection {
     slimWidth?: boolean // For long form content (Blog, Case studies, etc)
     parentClassName?: string
     className?: string
-    children: ReactNode
+    children?: ReactNode
 }
 
 export const ContentSection: FunctionComponent<ContentSection> = ({
@@ -29,11 +29,17 @@ export const ContentSection: FunctionComponent<ContentSection> = ({
             illustration={illustration}
             className={classNames('tw-px-sm tw-py-3xl md:tw-py-5xl', parentClassName)}
         >
-            <section
-                className={classNames('tw-mx-auto', className, slimWidth ? 'tw-max-w-[840px]' : 'tw-max-w-screen-xl')}
-            >
-                {children}
-            </section>
+            {children && (
+                <section
+                    className={classNames(
+                        'tw-mx-auto',
+                        className,
+                        slimWidth ? 'tw-max-w-[840px]' : 'tw-max-w-screen-xl'
+                    )}
+                >
+                    {children}
+                </section>
+            )}
         </Background>
     </div>
 )

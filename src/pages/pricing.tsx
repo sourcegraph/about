@@ -5,6 +5,7 @@ import CheckIcon from 'mdi-react/CheckIcon'
 import MinusIcon from 'mdi-react/MinusIcon'
 import PlusIcon from 'mdi-react/PlusIcon'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import Accordion from 'react-bootstrap/Accordion'
 
 import {
@@ -18,6 +19,7 @@ import {
     BIZ_FEATURES_OVERVIEW,
     ENTERPRISE_FEATURES_OVERVIEW,
     ALL_FEATURES_COMPARED_DATA,
+    Badge,
 } from '../components'
 import { DownloadAppButton } from '../components/DownloadAppButton'
 import { buttonLocation, buttonStyle } from '../data/tracking'
@@ -141,6 +143,9 @@ const PLAN_COLORS: Record<
 const PricingPage: FunctionComponent = () => {
     const [activeKey, setActiveKey] = useState<number | null>(null)
 
+    // Viewing the page with ?dev shows the new "For individual devs" Sourcegraph App option.
+    const showForIndividualDevs = useRouter().query.dev !== undefined
+
     return (
         <Layout
             meta={{
@@ -153,52 +158,61 @@ const PricingPage: FunctionComponent = () => {
                 <div className="container tw-pt-3xl tw-text-center">
                     <h1>Pricing</h1>
                     <p className="tw-text-lg tw-pt-2">
-                        Sourcegraph code intelligence maximizes code efficiency and security&mdash;for individual devs
-                        up to the world's largest software teams.
+                        Sourcegraph code intelligence maximizes code efficiency and security&mdash;
+                        {showForIndividualDevs ? (
+                            <>for individual devs up to the world's largest software teams.</>
+                        ) : (
+                            <>for every dev team.</>
+                        )}
                     </p>
                 </div>
             }
         >
-            <ContentSection className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-12 tw-gap-sm">
-                <div className="tw-mb-sm md:tw-mb-0 tw-col-span-full md:tw-col-span-6 tw-self-start">
-                    <h5 className="tw-bg-vermillion-100 tw-text-vermillion-500 tw-font-normal badge tw-block tw-mb-xxs tw-p-xxs">
-                        For individual devs
-                    </h5>
-                    <div className="tw-grid tw-gap-sm tw-grid-cols-1 sm:tw-grid-cols-6">
-                        <div className="tw-mb-sm md:tw-mb-0 tw-col-span-full sm:tw-col-span-3">
-                            <PricingPlan
-                                name="Dev"
-                                description="Code intelligence and search, running locally on your machine."
-                                price="Free forever"
-                                buttons={<DownloadAppButton orientation="vertical" />}
-                                features={[]}
-                                {...PLAN_COLORS.dev}
-                            />
-                        </div>
-                        <div className="tw-mb-sm md:tw-mb-0 tw-col-span-full sm:tw-col-span-3">
-                            <PricingPlan
-                                name="Superdev"
-                                description="Even more code intelligence, running locally on your machine."
-                                price="$50"
-                                priceInterval="per dev (one-time fee)"
-                                buttons={<StartFreeButton />}
-                                features={[]}
-                                {...PLAN_COLORS.superdev}
-                            />
-                        </div>
+            <ContentSection
+                className={classNames(
+                    'tw-grid tw-grid-cols-1 tw-gap-sm',
+                    showForIndividualDevs ? 'md:tw-grid-cols-9' : 'md:tw-grid-cols-8'
+                )}
+            >
+                {showForIndividualDevs && (
+                    <div className="tw-col-span-full lg:tw-col-span-3 tw-self-start">
+                        <h5 className="tw-bg-vermillion-100 tw-text-vermillion-500 tw-font-normal badge tw-block tw-mb-xxs tw-p-xxs">
+                            For individual devs
+                        </h5>
+                        <PricingPlan
+                            name="Dev"
+                            nameBadge={<Badge color="white-outlined" size="small" text="Alpha" />}
+                            description="Code intelligence and search, running locally on your machine."
+                            price="Free forever"
+                            buttons={
+                                <DownloadAppButton
+                                    orientation="horizontal"
+                                    buttonLocation={buttonLocation.trySourcegraph}
+                                />
+                            }
+                            features={[]}
+                            {...PLAN_COLORS.dev}
+                        />
                     </div>
-                </div>
-                <div className="tw-mb-sm md:tw-mb-0 tw-col-span-full md:tw-col-span-6">
-                    <h5 className="tw-bg-violet-100 tw-text-violet-600 tw-font-normal badge tw-block tw-mb-xxs tw-p-xxs">
-                        For organizations
-                    </h5>
+                )}
+                <div
+                    className={classNames(
+                        'tw-col-span-full lg:tw-col-span-6',
+                        showForIndividualDevs ? '' : 'lg:tw-col-start-2'
+                    )}
+                >
+                    {showForIndividualDevs && (
+                        <h5 className="tw-bg-violet-100 tw-text-violet-600 tw-font-normal badge tw-block tw-mb-xxs tw-p-xxs">
+                            For organizations
+                        </h5>
+                    )}
                     <div className="tw-grid tw-gap-sm tw-grid-cols-1 md:tw-grid-cols-6">
-                        <div className="tw-mb-sm md:tw-mb-0 tw-col-span-full md:tw-col-span-3">
+                        <div className="tw-col-span-full md:tw-col-span-3">
                             <PricingPlan
                                 name="Business"
-                                description="Code intelligence and search for teams and orgs, on a dedicated cloud instance."
+                                description="A full code intelligence platform for teams and orgs, on a dedicated cloud instance."
                                 price="$99"
-                                priceInterval="per dev/month"
+                                priceInterval="per active user/month"
                                 buttons={<StartFreeButton />}
                                 features={BIZ_FEATURES_OVERVIEW}
                                 {...PLAN_COLORS.business}
@@ -229,17 +243,17 @@ const PricingPage: FunctionComponent = () => {
             <CustomerLogos />
 
             <div className="tw-py-3xl md:tw-py-5xl md:tw-max-w-screen-xl tw-mx-auto tw-overflow-hidden md:tw-overflow-visible">
-                <table className="tw-relative tw-border-0 tw-table-fixed">
+                <table className="tw-relative tw-border-0 tw-table-fixed tw-border-spacing-0 tw-border-separate">
                     <thead>
-                        <tr className="md:tw-sticky md:tw-top-16 tw-border-b">
-                            <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
+                        <tr className="md:tw-sticky md:tw-top-16 tw-border-0">
+                            <th className="tw-border-0 tw-border-b tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
                                 <div className="lg:tw-h-60 md:tw-h-[157px] sm:tw-h-[140px] tw-h-[133px] md:tw-p-xs tw-p-xxs md:tw-pt-xs tw-pt-md md:tw-pr-xs">
                                     <h2 className="md:tw-max-w-[250px] tw-text-xl sm:tw-text-4xl lg:tw-text-7xl">
                                         Compare all features
                                     </h2>
                                 </div>
                             </th>
-                            <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
+                            <th className="tw-border-0 tw-border-b tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
                                 <div
                                     className={`tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-1 tw-border-gray-200 tw-border-b-0 ${PLAN_COLORS.business.borderColorClass}`}
                                 >
@@ -250,7 +264,7 @@ const PricingPage: FunctionComponent = () => {
                                     <StartFreeButton />
                                 </div>
                             </th>
-                            <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
+                            <th className="tw-border-0 tw-border-b tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
                                 <div
                                     className={`tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-gray-200  ${PLAN_COLORS.enterprise.borderColorClass}`}
                                 >

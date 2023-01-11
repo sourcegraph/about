@@ -39,5 +39,5 @@ export const Heading: FunctionComponent<Heading> = ({ as, size, children, classN
         h6: 'tw-font-sans tw-text-lg tw-tracking-wide tw-font-semibold tw-uppercase',
     }
 
-    return <Tag className={classNames(className, sizes[size])}>{children}</Tag>
+    return <Tag className={classNames(sizes[size], className)}>{children}</Tag>
 }

@@ -10,12 +10,12 @@ interface BackButton {
 }
 
 interface Hero extends Background {
-    product?: 'code search' | 'batch changes' | 'code insights' | 'sourcegraph cloud'
+    product?: 'code search' | 'batch changes' | 'code insights' | 'sourcegraph cloud' | 'app'
     title: string | ReactNode
     titleClassName?: string
     backButton?: BackButton
     leftColumn?: ReactNode
-    subtitle?: string
+    subtitle?: ReactNode
     description?: string
     cta?: ReactNode
     floatingImg?: string
