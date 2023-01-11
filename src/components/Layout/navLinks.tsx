@@ -36,6 +36,10 @@ export const navLinks: NavLink[] = [
                 title: 'Cloud',
                 href: '/cloud',
             },
+            {
+                title: 'Cody (beta)',
+                href: '/cody',
+            },
         ],
     },
     {

@@ -10,7 +10,7 @@ interface BackButton {
 }
 
 interface Hero extends Background {
-    product?: 'code search' | 'batch changes' | 'code insights' | 'sourcegraph cloud'
+    product?: 'code search' | 'batch changes' | 'code insights' | 'sourcegraph cloud' | 'cody (beta)'
     title: string | ReactNode
     titleClassName?: string
     backButton?: BackButton
@@ -40,7 +40,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
     centerContent = false,
 }) => {
     let illustration: Background['illustration']
-    if (product && product !== 'sourcegraph cloud') {
+    if (product && product !== 'sourcegraph cloud' && product !== 'cody (beta)') {
         const illustrationName: string = product.split(' ')[1]
         illustration = illustrationName as Background['illustration']
     }
