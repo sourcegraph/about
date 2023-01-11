@@ -30,8 +30,6 @@ From the top level of the project, run the following command to install dependen
 yarn ci
 ```
 
-
-
 This will install the dependencies while ensuring the lock file remains unmodified.
 
 ### Running the Application
