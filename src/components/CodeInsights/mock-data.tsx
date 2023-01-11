@@ -256,7 +256,7 @@ export const LINTER_OVERRIDES: SearchInsightData = {
 }
 
 export const OPENSSL_PYTHON: SearchInsightData = {
-    title: 'Find vulernable OpenSSL versions in the Python Ecosystem',
+    title: 'Find vulnerable OpenSSL versions in the Python Ecosystem',
     repositories: 'All repositories',
     data: [
         { x: new Date('October 28, 2022'), a: 385 },
