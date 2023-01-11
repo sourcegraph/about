@@ -4,17 +4,19 @@ import classNames from 'classnames'
 import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
 import DownloadIcon from 'mdi-react/DownloadIcon'
 
-import { buttonStyle, buttonLocation } from '@data'
+import { buttonStyle } from '@data'
 
 export const DownloadAppButton: React.FunctionComponent<{
     orientation?: 'horizontal' | 'vertical'
+    buttonLocation: number
     className?: string
-}> = ({ orientation = 'horizontal', className }) => (
+}> = ({ orientation = 'horizontal', buttonLocation, className }) => (
     <div className={classNames(orientation === 'horizontal' ? 'btn-group' : 'btn-group-vertical', className)}>
-        {DOWNLOAD_VARIANTS.map(downloadVariant => (
+        {DOWNLOAD_VARIANTS.filter(({ hide }) => !hide).map(downloadVariant => (
             <DownloadVariantButton
                 key={downloadVariant.name}
                 downloadVariant={downloadVariant}
+                buttonLocation={buttonLocation}
                 className={orientation === 'horizontal' ? 'tw-mr-[2px]' : 'tw-mb-[2px]'}
             />
         ))}
@@ -27,12 +29,14 @@ export const DownloadAppButton: React.FunctionComponent<{
 interface DownloadVariant {
     name: string
     platforms: string
+    hide?: boolean
 }
 
 const DOWNLOAD_VARIANTS: DownloadVariant[] = [
     {
         name: 'Mac',
         platforms: 'macOS 10.11+',
+        hide: true,
     },
     {
         name: '.deb',
@@ -40,27 +44,29 @@ const DOWNLOAD_VARIANTS: DownloadVariant[] = [
     },
     {
         name: '.rpm',
-        platforms: 'Red Hat, Fedora, SUSE',
+        platforms: 'Red Hat, Fedora',
     },
     {
         name: 'Windows',
         platforms: 'Windows 8, 10, 11',
+        hide: true,
     },
 ]
 
-const DownloadVariantButton: React.FunctionComponent<{ downloadVariant: DownloadVariant; className?: string }> = ({
-    downloadVariant: { name, platforms },
-    className,
-}) => (
+const DownloadVariantButton: React.FunctionComponent<{
+    downloadVariant: DownloadVariant
+    buttonLocation: number
+    className?: string
+}> = ({ downloadVariant: { name, platforms }, buttonLocation, className }) => (
     <a
-        className={classNames('btn btn-primary', className)}
+        className={classNames('btn btn-primary tw-py-xxs tw-px-xs tw-max-w-[120px]', className)}
         href="TODO"
         title="Download "
         data-button-style={buttonStyle.primary}
-        data-button-location={buttonLocation.trySourcegraph}
+        data-button-location={buttonLocation}
         data-button-type="cta"
     >
         <DownloadIcon className="tw-inline tw-mr-1" /> {name}
-        <small className="tw-block tw-font-normal">{platforms}</small>
+        <small className="tw-block tw-font-normal tw-truncate">{platforms}</small>
     </a>
 )
