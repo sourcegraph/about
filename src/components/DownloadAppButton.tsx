@@ -1,7 +1,6 @@
 import React from 'react'
 
 import classNames from 'classnames'
-import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
 import DownloadIcon from 'mdi-react/DownloadIcon'
 
 import { buttonStyle } from '@data'
@@ -12,7 +11,7 @@ export const DownloadAppButton: React.FunctionComponent<{
     className?: string
 }> = ({ orientation = 'horizontal', buttonLocation, className }) => (
     <div className={classNames(orientation === 'horizontal' ? 'btn-group' : 'btn-group-vertical', className)}>
-        {DOWNLOAD_VARIANTS.filter(({ hide }) => !hide).map(downloadVariant => (
+        {DOWNLOAD_VARIANTS.map(downloadVariant => (
             <DownloadVariantButton
                 key={downloadVariant.name}
                 downloadVariant={downloadVariant}
@@ -20,36 +19,22 @@ export const DownloadAppButton: React.FunctionComponent<{
                 className={orientation === 'horizontal' ? 'tw-mr-[2px]' : 'tw-mb-[2px]'}
             />
         ))}
-        <button type="button" className="btn btn-primary tw-px-2 tw-font-normal" title="Other downloads">
-            {orientation === 'horizontal' ? <ChevronDownIcon /> : 'More downloads...'}
-        </button>
     </div>
 )
 
 interface DownloadVariant {
     name: string
     platforms: string
-    hide?: boolean
 }
 
 const DOWNLOAD_VARIANTS: DownloadVariant[] = [
     {
-        name: 'Mac',
-        platforms: 'macOS 10.11+',
-        hide: true,
+        name: 'macOS',
+        platforms: 'Universal',
     },
     {
-        name: '.deb',
-        platforms: 'Debian, Ubuntu',
-    },
-    {
-        name: '.rpm',
-        platforms: 'Red Hat, Fedora',
-    },
-    {
-        name: 'Windows',
-        platforms: 'Windows 8, 10, 11',
-        hide: true,
+        name: 'Linux',
+        platforms: '64-bit',
     },
 ]
 
