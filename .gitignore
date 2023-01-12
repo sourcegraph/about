@@ -43,3 +43,8 @@ cypress/screenshots
 public/*.map
 public/workbox-*.js
 public/sw.js
+
+# Generated feeds
+public/feed.rss.xml
+public/feed.atom.xml
+public/feed.json
