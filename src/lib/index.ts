@@ -1,3 +1,4 @@
-export { getPages, getAllSlugs, getMarkdownFiles, getSortedSlugs } from './api'
-export { loadMarkdownFile, serializeMdxSource } from './loadMarkdown'
-export type { Slug, FileCacheObject } from './api'
+export { getPages, getAllSlugs, getMarkdownFiles, getSortedSlugs, getAllPublishedBlogPosts } from './api'
+export { loadMarkdownFile } from './loadMarkdown'
+export { serializeMdxSource } from './serializeMdxSource'
+export type { Slug, FileCacheObject, BlogPost } from './api'

@@ -1,6 +1,13 @@
 import fs from 'fs/promises'
 import path from 'path'
 
+import { truncate } from 'lodash'
+
+import { FrontMatter, Post } from '../interfaces/posts'
+import { convertExcerptMarkdown } from '../util/convertExcerptMarkdown'
+
+import { loadMarkdownFile } from './loadMarkdown'
+
 interface Record {
     slugPath: string
     filePath: string
@@ -78,4 +85,41 @@ export const getMarkdownFiles = async (): Promise<FileCacheObject | undefined> =
     if (fileData) {
         return JSON.parse(fileData) as FileCacheObject
     }
+}
+
+export interface BlogPost {
+    frontmatter: FrontMatter
+    excerpt: string
+    content: string
+    slugPath: string
+    urlPath: string
+}
+
+const CONTENT_PARENT_DIRECTORY = './content/'
+
+export const getAllPublishedBlogPosts = async (): Promise<BlogPost[] | null> => {
+    const allSlugs = await getSortedSlugs('blogposts')
+    if (!allSlugs) {
+        return null
+    }
+    const files = await getMarkdownFiles()
+    if (!files) {
+        return null
+    }
+    const posts = await Promise.all(
+        allSlugs.map(async (slug): Promise<BlogPost> => {
+            const filePath = files.records[slug.slugPath].filePath
+            const file = (await loadMarkdownFile(path.resolve(CONTENT_PARENT_DIRECTORY, filePath))) as Post
+            const excerpt = convertExcerptMarkdown(truncate(file.content, { length: 300 }))
+            return {
+                frontmatter: file.frontmatter,
+                excerpt,
+                content: file.content,
+                slugPath: slug.slugPath,
+                urlPath: `/blog/${slug.slugPath}`,
+            }
+        })
+    )
+
+    return posts.filter(post => post.frontmatter.published)
 }
