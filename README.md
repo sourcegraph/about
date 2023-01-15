@@ -1,75 +1,25 @@
-# Sourcegraph's Marketing Site
+# [about.sourcegraph.com](https://about.sourcegraph.com) (Sourcegraph marketing site)
 
-This is Sourcegraph's Marketing Site which is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This repository contains the [about.sourcegraph.com](https://about.sourcegraph.com) website.
 
-Build Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/0078e478-115a-43da-addc-a46549a72c5d/deploy-status)](https://app.netlify.com/sites/sourcegraph/deploys)
+## Development
 
----
+### Setup
 
-## Getting Started
+1. Install [asdf](https://asdf-vm.com/)
+1. Run `asdf plugin add nodejs && asdf plugin add pnpm && asdf install`
 
-### Node.js
+### Running the website locally
 
-First, make sure that you have Node.js installed. You can use [`nvm`](https://github.com/nvm-sh/nvm) to automatically use the version of Node.js which is specified in the repository's [`.nvmrc`](./.nvmrc) file:
-
-```sh
-nvm install
-```
-
-Alternatively, you can use [`n`](https://www.npmjs.com/package/n) to manage your Node versions. Use the following command to install the version of Node specified in the `.nvmrc` file:
-
-```sh
-n <node version>
-```
-
-### Install Dependencies
-
-From the top level of the project, run the following command to install dependencies:
+Run:
 
 ```sh
 pnpm install
+pnpm dev
 ```
 
-This will install the dependencies while ensuring the lock file remains unmodified.
+Then open [http://localhost:3000](http://localhost:3000) in your web browser.
 
-### Running the Application
+### Need help editing this website?
 
-To run the application, type the following command from the top level of the project:
-
-```sh
-pnpm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-### Configure the `pre-commit` Githook
-
-To enable our pre-commit hook, update the following git config setting in the project:
-
-```sh
-git config core.hooksPath .githooks
-```
-
-## Testing
-
-We use [Cypress](https://www.cypress.io/) as our test suite and currently have end to end tests configured.
-
-To run tests visually, run:
-
-```sh
-pnpm run test
-```
-
-To run tests headlessly in the CLI, run:
-
-```sh
-pnpm run test:ci
-```
-
-### End to End Tests
-
-1. To create an e2e test, add them to the [e2e directory](./cypress/e2e/) with a descriptive file name.
-2. To run tests in development, run `pnpm run test` which watches your test files as you develop. Cypress will open in a new window.
-3. Click on E2E Testing and choose a preferred browser. Click on "Start E2E Testing in {browser}.
-4. You will see the tests we have under specs. Click a spec to run the test.
-5. Alternatively, you can run tests in the command line in headless mode by running `pnpm run test:ci`.
+Ask in the [#marketing channel](https://app.slack.com/client/T02FSM7DL/CNC4YAL1E) (for Sourcegraph team members), and/or [post an issue](https://github.com/sourcegraph/about/issues).
