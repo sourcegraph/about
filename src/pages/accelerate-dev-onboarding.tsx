@@ -1,4 +1,3 @@
-/* eslint-disable unicorn/prevent-abbreviations */
 import { FunctionComponent } from 'react'
 
 import { Blockquote, Layout, HubSpotForm, YouTube } from '@components'
