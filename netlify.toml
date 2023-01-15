@@ -1,10 +1,6 @@
 [build]
   publish = "out"
-  command = "yarn ci && yarn build"
-
-[build.environment]
-  YARN_VERSION = "1.22.17"
-  YARN_FLAGS = "--no-ignore-optional"
+  command = "pnpm run build"
 
 [[headers]]
   for = "/*"

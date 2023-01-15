@@ -27,7 +27,7 @@ n <node version>
 From the top level of the project, run the following command to install dependencies:
 
 ```sh
-yarn ci
+pnpm install
 ```
 
 This will install the dependencies while ensuring the lock file remains unmodified.
@@ -37,7 +37,7 @@ This will install the dependencies while ensuring the lock file remains unmodifi
 To run the application, type the following command from the top level of the project:
 
 ```sh
-yarn dev
+pnpm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -57,19 +57,19 @@ We use [Cypress](https://www.cypress.io/) as our test suite and currently have e
 To run tests visually, run:
 
 ```sh
-yarn test
+pnpm run test
 ```
 
 To run tests headlessly in the CLI, run:
 
 ```sh
-yarn test:ci
+pnpm run test:ci
 ```
 
 ### End to End Tests
 
 1. To create an e2e test, add them to the [e2e directory](./cypress/e2e/) with a descriptive file name.
-2. To run tests in development, run `yarn test` which watches your test files as you develop. Cypress will open in a new window.
+2. To run tests in development, run `pnpm run test` which watches your test files as you develop. Cypress will open in a new window.
 3. Click on E2E Testing and choose a preferred browser. Click on "Start E2E Testing in {browser}.
 4. You will see the tests we have under specs. Click a spec to run the test.
-5. Alternatively, you can run tests in the command line in headless mode by running `yarn test:ci`.
+5. Alternatively, you can run tests in the command line in headless mode by running `pnpm run test:ci`.
