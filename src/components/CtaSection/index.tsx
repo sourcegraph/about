@@ -121,7 +121,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
             <div className="tw-bg-violet-700">
                 <div
                     className="tw-max-w-screen-xl tw-mx-auto tw-bg-[center_left] tw-bg-repeat-y tw-grid tw-items-center tw-grid-cols-12 tw-min-h-[291px] tw-h-full tw-px-sm lg:tw-pl-0 tw-py-3xl"
-                    // eslint-disable-next-line react/forbid-dom-props, @typescript-eslint/restrict-template-expressions
+                    // eslint-disable-next-line react/forbid-dom-props
                     style={lgAndUp ? { background: `url('${illustration}')` } : undefined}
                 >
                     <div className="tw-col-span-full md:tw-col-span-7 lg:tw-col-span-5 lg:tw-col-start-4">

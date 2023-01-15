@@ -4,11 +4,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
-const withPWA = require('next-pwa')({
-  disable: process.env.NODE_ENV === 'development',
-  dest: 'public',
-})
-
 const nextConfig = {
   productionBrowserSourceMaps: true,
   reactStrictMode: true,
@@ -39,4 +34,4 @@ const nextConfig = {
   },
 }
 
-module.exports = withPWA(withBundleAnalyzer(nextConfig))
+module.exports = withBundleAnalyzer(nextConfig)

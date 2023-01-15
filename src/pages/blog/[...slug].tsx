@@ -76,7 +76,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params, preview = false }) => {
-    if (!params || !params.slug) {
+    if (!params?.slug) {
         throw new Error('Missing slug')
     }
     const files = await getMarkdownFiles()

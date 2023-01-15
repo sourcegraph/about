@@ -115,6 +115,7 @@ export const CoreFeatures: FunctionComponent = () => {
                             vid?.el?.pause()
                             vid.paused = true
                         } else if (vid.paused) {
+                            // eslint-disable-next-line @typescript-eslint/no-floating-promises
                             vid?.el?.play()
                             vid.paused = false
                         }

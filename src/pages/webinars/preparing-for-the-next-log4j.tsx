@@ -58,12 +58,13 @@ const Webinar: FunctionComponent = () => {
                 title="Preparing for the Next Log4j"
                 speakers={speakers}
                 formLabel="Watch the on-demand webinar"
-                onFormSubmitted={() =>
+                onFormSubmitted={() => {
+                    // eslint-disable-next-line @typescript-eslint/no-floating-promises
                     router.push({
                         pathname: router.pathname,
                         query: 'watch-now',
                     })
-                }
+                }}
                 description={
                     <section className="col-md-6 col-12 lg:tw-pr-3xl">
                         <p>

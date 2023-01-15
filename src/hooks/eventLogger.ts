@@ -28,6 +28,7 @@ export const useEventLogger = (): void => {
             }
         }
 
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
         getEventLogger()?.log('ViewStaticPage', eventArguments, eventArguments)
     })
 }
@@ -46,6 +47,7 @@ export const useLogAllLinkClicks = (): void => {
                     buttonLocation: link.dataset.buttonLocation,
                 }
 
+                // eslint-disable-next-line @typescript-eslint/no-floating-promises
                 getEventLogger()?.log('StaticPageButtonClicked', eventArguments, eventArguments)
             })
         }

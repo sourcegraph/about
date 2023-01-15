@@ -77,7 +77,9 @@ export const Install: FunctionComponent = () => {
                 <h3>
                     Install Sourcegraph locally
                     <span
+                        // eslint-disable-next-line @typescript-eslint/no-misused-promises
                         onClick={copy}
+                        // eslint-disable-next-line @typescript-eslint/no-misused-promises
                         onKeyDown={copy}
                         role="button"
                         className="tw-ml-4 tw-align-text-top"
