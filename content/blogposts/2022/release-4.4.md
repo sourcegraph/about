@@ -18,7 +18,9 @@ changelogItems:
 
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 
-#### Highlight 1
+#### BitBucket Cloud code host connection improvements
+
+We're improving our support for BitBucket Cloud in two meaningful ways. First, BitBucket Cloud can now be added as an authentication provider allowing developers to log in via BitBucket Cloud syncing accounts with one single login. Second, we are introducing permissions syncing for BitBucket Cloud giving admins even more confidence that developers who store their code on BitBucket Cloud only see the code they have permissions to see. Combined these represent a step forward towards helping enterprises index all of their code, confidently. 
 
 <br />
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
