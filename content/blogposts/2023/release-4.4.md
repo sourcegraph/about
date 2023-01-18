@@ -38,6 +38,12 @@ changelogItems:
   - description: "Added visibility to Code Host sync process on Code Host list page. Now admins can get an insight about sync being started/in progress/finished not only on Code Host details page, but also on a page with an overview of all configured Code Hosts."
     url: https://github.com/sourcegraph/sourcegraph/pull/46148
     category: Admin
+  - description: "Added a way to test the code host connection from the newly added Code host details page. Now admins can check if Sourcegraph can connect to their configured code host directly from the UI."
+    url: https://github.com/sourcegraph/sourcegraph/pull/45972
+    category: Admin
+  - description: "Updates to the site configuration from the site admin panel will now also record the user id of the author in the database in the critical_and_site_config.author_user_id column."
+    url: https://github.com/sourcegraph/sourcegraph/pull/46150
+    category: Admin
 ---
 
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
