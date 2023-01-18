@@ -26,6 +26,9 @@ changelogItems:
   - description: "Added a `Corrupted` status filter on the Admin repositories page, allowing Administrators to filter the list of repositories to only those that have been detected as corrupt."
     url: https://github.com/sourcegraph/sourcegraph/pull/46415
     category: Admin
+  - description: "Added a `Corrupted` statistic which will show how many repositories are currently corrupt. The statistic will only be shown with the other repository statistics, when and if there are any corrupted repositories otherwise the value will be hidden.
+    url: https://github.com/sourcegraph/sourcegraph/pull/46412
+    category: Admin
   - description: "The `site { monitoringStatistics { alerts } }` GraphQL query has been deprecated and will no longer return data. The query will be removed entirely in a future release."
     url: https://github.com/sourcegraph/sourcegraph/pull/46299
     category: API
