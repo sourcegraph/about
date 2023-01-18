@@ -49,6 +49,13 @@ We're improving our support for BitBucket Cloud in two meaningful ways. First, B
 <br />
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 
+#### Background job dashboard
+
+We're adding a new feature that will greatly improve visibility into background jobs. The new dashboard will make it easy for admins to find and debug problems, identify slow-running jobs, and troubleshoot errors. With 50+ background jobs running in Sourcegraph, this is a huge visibility boost that will help both our support engineers and our customers quickly identify and resolve issues. This new feature is a step forward toward helping enterprises confidently manage their code while knowing what's happening behind the scenes.
+
+<br />
+<Badge link="https://docs.sourcegraph.com/admin/workers" text="Admin" color="violet" size="small" />
+
 #### Cody: AI coding assistant
 
 We've been using Anthropic's new language model, Claude, to build an in-editor coding assistant called Cody that helps you understand code and reduces day-to-day sources of programmer toil. We see huge potential for integrating the natural language abilities of LLMs with Sourcegraph's code search and intelligence. The early results are already super useful and we're only just getting started.
