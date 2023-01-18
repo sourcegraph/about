@@ -29,6 +29,15 @@ changelogItems:
   - description: "The `site { monitoringStatistics { alerts } }` GraphQL query has been deprecated and will no longer return data. The query will be removed entirely in a future release."
     url: https://github.com/sourcegraph/sourcegraph/pull/46299
     category: API
+  - description: "Added support of excluding a repository from one or all code hosts with a click of a button. Admins don't have to manually edit Code Host configuration now and can exclude repositories directly on a Repository Options page."
+    url: https://github.com/sourcegraph/sourcegraph/issues/40504
+    category: Admin
+  - description: "Added Code Host details page and separated it from Code Host edit page. New page contains information about a Code Host, its sync jobs, configuration a number of synced repositories and a link to quickly access a list of repositories synced for current Code Host."
+    url: https://github.com/sourcegraph/sourcegraph/pull/46327
+    category: Admin
+  - description: "Added visibility to Code Host sync process on Code Host list page. Now admins can get an insight about sync being started/in progress/finished not only on Code Host details page, but also on a page with an overview of all configured Code Hosts."
+    url: https://github.com/sourcegraph/sourcegraph/pull/46148
+    category: Admin
 ---
 
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
