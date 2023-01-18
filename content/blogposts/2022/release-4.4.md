@@ -40,7 +40,11 @@ We're improving our support for BitBucket Cloud in two meaningful ways. First, B
 <br />
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 
-#### Highlight 2
+#### Cody: AI coding assistant
+
+We've been using Anthropic's new language model, Claude, to build an in-editor coding assistant called Cody that helps you understand code and reduces day-to-day sources of programmer toil. We see huge potential for integrating the natural language abilities of LLMs with Sourcegraph's code search and intelligence. The early results are already super useful and we're only just getting started.
+
+We're rolling out Cody in a limited beta soon, fill out the [form](https://sourcegraph.typeform.com/to/pIXTgwrd) if you would like early access.
 
 <br />
 <Badge text="Code Insights" link="/code-insights" color="green" size="small" />
