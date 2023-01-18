@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 4.4 release"
 publishDate: 2022-01-20T10:00-07:00
-description: "Sourcegraph 4.4 introduces..."
+description: "Sourcegraph 4.4 introduces improvements to BitBucket Cloud support and a new background job dashboard for debugging."
 tags: [blog, release]
 slug: "release/4.4"
 published: true
@@ -23,28 +23,25 @@ changelogItems:
   - description: "Added a log of repository corruption events. The Admin repositories page now shows when a repsository has been detected as corrupt along with that repository's history of corruption."
     url: https://github.com/sourcegraph/sourcegraph/pull/46004
     category: Admin
-  - description: "Added a `Corrupted` status filter on the Admin repositories page, allowing Administrators to filter the list of repositories to only those that have been detected as corrupt."
-    url: https://github.com/sourcegraph/sourcegraph/pull/46415
-    category: Admin
-  - description: "Added a `Corrupted` statistic which will show how many repositories are currently corrupt. The statistic will only be shown with the other repository statistics, when and if there are any corrupted repositories otherwise the value will be hidden.
+  - description: "Added a `Corrupted` statistic which will show how many repositories are currently corrupt. The statistic will only be shown if there are any corrupted repositories, otherwise the value will be hidden."
     url: https://github.com/sourcegraph/sourcegraph/pull/46412
     category: Admin
   - description: "The `site { monitoringStatistics { alerts } }` GraphQL query has been deprecated and will no longer return data. The query will be removed entirely in a future release."
     url: https://github.com/sourcegraph/sourcegraph/pull/46299
     category: API
-  - description: "Added support of excluding a repository from one or all code hosts with a click of a button. Admins don't have to manually edit Code Host configuration now and can exclude repositories directly on a Repository Options page."
+  - description: "You can now exclude a repository from one or all code hosts with the click of a button. Admins can exclude repositories directly on the Repository Options page instead of needing to manually edit the code host configuration."
     url: https://github.com/sourcegraph/sourcegraph/issues/40504
     category: Admin
-  - description: "Added Code Host details page and separated it from Code Host edit page. New page contains information about a Code Host, its sync jobs, configuration a number of synced repositories and a link to quickly access a list of repositories synced for current Code Host."
+  - description: "Added a code host details page and separated it from the code host edit page. The new page contains information about a code host, its sync jobs, configuration, the number of synced repositories, and a link to access the list of synced repositories."
     url: https://github.com/sourcegraph/sourcegraph/pull/46327
     category: Admin
   - description: "Added visibility to Code Host sync process on Code Host list page. Now admins can get an insight about sync being started/in progress/finished not only on Code Host details page, but also on a page with an overview of all configured Code Hosts."
     url: https://github.com/sourcegraph/sourcegraph/pull/46148
     category: Admin
-  - description: "Added a way to test the code host connection from the newly added Code host details page. Now admins can check if Sourcegraph can connect to their configured code host directly from the UI."
+  - description: "Added a way to test code host connections from the code host details page. Now admins can check if Sourcegraph can connect to their configured code host directly from the UI."
     url: https://github.com/sourcegraph/sourcegraph/pull/45972
     category: Admin
-  - description: "Updates to the site configuration from the site admin panel will now also record the user id of the author in the database in the critical_and_site_config.author_user_id column."
+  - description: "Updates to the site configuration from the site admin panel will now record the user id of the author in the database in the critical_and_site_config.author_user_id column."
     url: https://github.com/sourcegraph/sourcegraph/pull/46150
     category: Admin
 ---
