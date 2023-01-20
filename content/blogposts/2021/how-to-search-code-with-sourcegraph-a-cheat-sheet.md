@@ -34,8 +34,9 @@ matcher='regular-pattern'
 
 Searching with `repo:^github\.com/ORGANIZATION` will return all repositories in a given organization, where `ORGANIZATION` can be `sourcegraph`, for example.
 
-<SourcegraphSearch query="repo:^github\.com/sourcegraph/.*" />
-
+```
+query="repo:^github\.com/sourcegraph/.*"
+```
 
 The `repo` keyword contextualizes the searches you perform on Sourcegraph. 
 
@@ -54,11 +55,14 @@ matcher='file-path'
 
 For example, when searching for the `package.json` file in a project, this search query will return the file.
 
-<SourcegraphSearch query="repo:^github\.com/sourcegraph/.* repo:has.path(package.json)" />
-
+```
+query="repo:^github\.com/sourcegraph/.* repo:has.path(package.json)"
+```
 Alternatively, you can use `repo:has.file`, which allows you to search for files containing content.
 
-<SourcegraphSearch query="repo:has.file(path:package\.json$ content:tsconfig)" />
+```
+query="repo:has.file(path:package\.json$ content:tsconfig)"
+```
 
 This query returns repositories that contain a `package.json` file containing the string `tsconfig`.
 
@@ -78,8 +82,9 @@ matcher='regular-pattern'
 
 We can search for the `mdi-react` library in Sourcegraph, for example:
 
-<SourcegraphSearch query="repo:^github\.com/sourcegraph/.* repo:has.content(mdi-react)" />
-
+```
+query="repo:^github\.com/sourcegraph/.* repo:has.content(mdi-react)"
+```
 
 The above query returns repos that have `mdi-react` among its contents.
 
@@ -94,11 +99,12 @@ matcher='programming-language'
 
 We can search for results within the C++ or Python programming languages.
 
-
-<SourcegraphSearch query="lang:c++" />
-
-<SourcegraphSearch query="lang:python" />
-
+```
+query="lang:c++"
+```
+```
+query="lang:python"
+```
 
 By default, searches are case insensitive.
 
@@ -111,7 +117,9 @@ matcher='programming-language'
 
 To exclude Java, you can perform the following search.
 
-<SourcegraphSearch query="​​-lang:java" />
+```
+query="​​-lang:java"
+```
 
 Narrowing your search scope down to specific languages can ensure that you find the code that is most relevant to your needs.
 
@@ -144,7 +152,9 @@ matcher='02/01/2019'
 
 To search between dates, keywords like `and` can be combined with `before` or `after` to return dates within a given period.
 
-<SourcegraphSearch query='repo:sourcegraph type:commit after:"july 9 2021" and before:"july 10 2021"' />
+```
+query='repo:sourcegraph type:commit after:"july 9 2021" and before:"july 10 2021"'
+```
 
 Time-based search is usually used along with other search commands to further narrow down search results.
 
@@ -171,7 +181,9 @@ matcher='only'
 
 We can surface only archived repositories within the Sourcegraph organization with the following query.
 
-<SourcegraphSearch query="repo:sourcegraph archived:only" />
+```
+query="repo:sourcegraph archived:only"
+```
 
 This can help us understand past decisions made within a given codebase. 
 
@@ -191,8 +203,9 @@ matcher='no'
 
 Suppose you would like to check to align the style of a given codebase to help you bring all function calls in Python to be consistent with the [PEP 8](https://www.python.org/dev/peps/pep-0008/) guidance. You can use Sourcegraph to understand which functions are using camelCase rather than lowercase names with underscores between words (also called snake_case).
 
-<SourcegraphSearch query="case:yes lang:python myFunction" />
-
+```
+query="case:yes lang:python myFunction"
+```
 
 If you would like to find all declared functions that use camelCase, you can try combining this query with regular expressions.
 
@@ -207,7 +220,9 @@ matcher='commit|path|diff|symbol|repo|file'
 
 Here is an example to show us time-based commits on the Sourcegraph repo.
 
-<SourcegraphSearch query="repo:sourcegraph after:yesterday type:commit" />
+```
+query="repo:sourcegraph after:yesterday type:commit"
+```
 
 A `type` scope can use the following commands, which will restrict search to the following:
 * `commit` — commits to a repository.
