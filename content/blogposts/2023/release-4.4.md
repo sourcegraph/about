@@ -14,10 +14,10 @@ changelogItems:
   - description: "Added an \"Unlock user\" button to the actions dropdown on the Site Admin Users page. Admins can unlock user accounts that were locked after too many sign-in attempts."
     url: https://github.com/sourcegraph/sourcegraph/pull/45650
     category: Admin
-  - description: "Added a log of repository corruption events. The Admin repositories page now shows when a repsository has been detected as corrupt along with that repository's history of corruption."
+  - description: "Added a log of repository corruption events. The Admin repositories page now shows when a repository has been detected as corrupt along with that repository's history of corruption."
     url: https://github.com/sourcegraph/sourcegraph/pull/46004
     category: Admin
-  - description: "Added a `Corrupted` statistic which will show how many repositories are currently corrupt. The statistic will only be shown if there are any corrupted repositories, otherwise the value will be hidden."
+  - description: "Added a `Corrupted` statistic which will show how many repositories are currently corrupt. The statistic will only be shown if there are any corrupt repositories, otherwise the value will be hidden."
     url: https://github.com/sourcegraph/sourcegraph/pull/46412
     category: Admin
   - description: "You can now exclude a repository from one or all code hosts with the click of a button. Admins can exclude repositories directly on the Repository Options page instead of needing to manually edit the code host configuration."
@@ -32,7 +32,7 @@ changelogItems:
   - description: "Added a \"Test\" button to the code host details page. Now admins can check Sourcegraph's connection to a configured code host directly from the UI."
     url: https://github.com/sourcegraph/sourcegraph/pull/45972
     category: Admin
-  - description: "Updates to the site configuration from the site admin panel will now record the user id of the author in the database in the critical_and_site_config.author_user_id column."
+  - description: "Updates to the site configuration from the Site Admin panel will now record the user id of the author in the database in the critical_and_site_config.author_user_id column."
     url: https://github.com/sourcegraph/sourcegraph/pull/46150
     category: Admin
   - description: "The `site { monitoringStatistics { alerts } }` GraphQL query has been deprecated and will no longer return data. The query will be removed entirely in a future release."
@@ -54,6 +54,8 @@ Second, we are introducing permissions syncing for BitBucket Cloud to give admin
 #### Speed up debugging with the background job dashboard
 
 We're introducing a new dashboard that greatly improves visibility into the 50+ background jobs running in Sourcegraph. This new dashboard makes it far easier for admins to find and debug problems, identify slow-running jobs, and troubleshoot errors. Teams & enterprises can confidently manage their code while knowing what's happening behind the scenes.
+
+This dashboard can be found under `Site Admin` > `Maintenance` > `Background jobs`.
 
 <br />
 <Badge link="" text="AI" color="blue" size="small" />
