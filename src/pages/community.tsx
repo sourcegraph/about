@@ -47,51 +47,6 @@ export const Community: FunctionComponent = () => (
             </div>
         }
     >
-        <ContentSection background="white" className="tw-text-center">
-            <h2 className="mb-3">Get up to speed</h2>
-            <div className="row tw-justify-center">
-                <p className="col-md-8">
-                    We can’t give you a 25-hour day, but here is a{' '}
-                    <a
-                        href="http://srcgr.ph/cheatsheet"
-                        title="Speed sheet"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        speed sheet
-                    </a>{' '}
-                    with the most useful Sourcegraph shortcuts. Also see our
-                    <a
-                        href="https://docs.sourcegraph.com/"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        documentation
-                    </a>
-                    .
-                </p>
-            </div>
-            <div className="row">
-                <div className="mt-4 col-12">
-                    <a
-                        href="http://srcgr.ph/cheatsheet"
-                        data-button-style={buttonStyle.image}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        <img
-                            src="/community/cheatsheet_top.png"
-                            alt="Sourcegraph Cheatsheet"
-                            title="Sourcegraph Cheatsheet"
-                            className="tw-mx-auto tw-max-w-3xl tw-w-full"
-                        />
-                    </a>
-                </div>
-            </div>
-        </ContentSection>
-
         <ContentSection>
             <div className="row">
                 <div className="col-lg-6">
