@@ -5,7 +5,7 @@ publishDate: 2021-08-19T18:00+02:00
 description: "Sourcegraph’s new admin analytics make it easier for admins to understand user engagement, measure efficiencies, and quantify the value of Sourcegraph."
 heroImage: https://storage.googleapis.com/sourcegraph-assets/learn/headers/sourcegraph-learn-03.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/learn/headers/sourcegraph-learn-03.png
-slug: how-to-search-cheat-sheet
+slug: "how-to-search-cheat-sheet"
 ---
 
 Sourcegraph is a universal code search tool, enabling you to search across both open source and your own private code repositories. Code search can help you onboard onto new codebases, contribute to open source, find bugs and error messages, understand dependency libraries, and more. You can use these commands on your own [Sourcegraph instance](https://docs.sourcegraph.com/admin/deploy), or try them out on [Sourcegraph.com](https://sourcegraph.com/search) to search our index of open source repositories.
