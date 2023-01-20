@@ -5,8 +5,8 @@ description: "Sourcegraph 4.4 introduces improvements to BitBucket Cloud support
 tags: [blog, release]
 slug: "release/4.4"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.3/sourcegraph-4-4-hero.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.3/sourcegraph-4-4-hero.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.4/sourcegraph-4-4-hero.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.4/sourcegraph-4-4-hero.png
 changelogItems:
   - description: "User and organization auto-defined search contexts have been permanently removed along with the `autoDefinedSearchContexts` GraphQL query. The only auto-defined context now is the `global` context."
     url: https://github.com/sourcegraph/sourcegraph/pull/46083
