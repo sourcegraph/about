@@ -42,7 +42,7 @@ changelogItems:
 
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 
-#### BitBucket Cloud code host connection improvements
+#### Authentication and permissions upgrades for BitBucket Cloud connections
 
 We're improving support for BitBucket Cloud in two meaningful ways. First, BitBucket Cloud can now be added as an authentication provider. This allows you to log in to Sourcegraph via BitBucket Cloud so you can maintain one unified login. 
 
@@ -51,14 +51,14 @@ Second, we are introducing permissions syncing for BitBucket Cloud to give admin
 <br />
 <Badge link="https://docs.sourcegraph.com/admin/workers" text="Admin" color="violet" size="small" />
 
-#### Background job dashboard
+#### Speed up debugging with the background job dashboard
 
 We're introducing a new dashboard that greatly improves visibility into the 50+ background jobs running in Sourcegraph. This new dashboard makes it far easier for admins to find and debug problems, identify slow-running jobs, and troubleshoot errors. Teams & enterprises can confidently manage their code while knowing what's happening behind the scenes.
 
 <br />
 <Badge link="" text="AI" color="blue" size="small" />
 
-#### Cody: AI coding assistant
+#### Cody: AI coding assistant preview
 
 We've been using Anthropic's new language model, Claude, to build an in-editor coding assistant called Cody that helps you understand code and reduces day-to-day sources of programmer toil. We see huge potential for integrating the natural language abilities of LLMs with Sourcegraph's code intelligence. The early results are already promising, and we're just getting started.
 
