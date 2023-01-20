@@ -1,5 +1,5 @@
 ---
-title: 'Creating internal tools at Google: why Han-Wen built Zoekt'
+title: 'Code Search at Google: The Story of Han-Wen and Zoekt'
 authors:
   - name: Beyang Liu
     url: https://twitter.com/beyang
@@ -13,12 +13,6 @@ published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-building-foundation-code-search.jpg
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-building-foundation-code-search.jpg
 ---
-
-<YouTube
-  title="Building the foundation of code search with Han-Wen Nienhuys, creator of Zoekt" 
-  id="qOKDQT7-PJk"
-  showTitle={true}
-/>
 
 At Sourcegraph, we’re inspired by developers that make a difference, and creating and perfecting the internal tools they use every day is one way developers can have a significant impact. We should know: Sourcegraph itself was partly inspired by the internal code search tool at Google.
 
@@ -96,3 +90,9 @@ The tool Han-Wen developed on the train eventually became the Zoekt code search 
 As Sourcegraph adopted Zoekt as its backend for indexed code search, we also began submitting more patches to upstream. Eventually Han-Wen started looking for someone to take over maintainership of the project, and we volunteered and committed to maintaining Zoekt's status as a 100% open-source project. Sourcegraph [accepted maintainership of Zoekt](https://about.sourcegraph.com/blog/sourcegraph-accepting-zoekt-maintainership) in late 2021.
 
 Tools like Zoekt and Google’s Code Search empower developers to use a single portal to search all over a codebase for the code they need—an experience that the team at Sourcegraph strives to bring to every developer, whatever codebase they’re working on, wherever they are in the world.
+
+<YouTube
+  title="Building the foundation of code search with Han-Wen Nienhuys, creator of Zoekt" 
+  id="qOKDQT7-PJk"
+  showTitle={true}
+/>
