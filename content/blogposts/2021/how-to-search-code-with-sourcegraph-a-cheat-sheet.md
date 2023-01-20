@@ -27,10 +27,10 @@ input='repo:repository-path'
 matcher='repository-path'
 ```
 
-<Highlighter
+```
 input='repo:regular-pattern'
 matcher='regular-pattern'
-/> 
+```
 
 Searching with `repo:^github\.com/ORGANIZATION` will return all repositories in a given organization, where `ORGANIZATION` can be `sourcegraph`, for example.
 
