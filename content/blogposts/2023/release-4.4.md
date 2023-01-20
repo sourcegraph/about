@@ -8,12 +8,6 @@ published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.4/sourcegraph-4-4-hero.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.4/sourcegraph-4-4-hero.png
 changelogItems:
-  - description: "User and organization auto-defined search contexts have been permanently removed along with the `autoDefinedSearchContexts` GraphQL query. The only auto-defined context now is the `global` context."
-    url: https://github.com/sourcegraph/sourcegraph/pull/46083
-    category: Search
-  - description: "Permanently removed the legacy panels on the homepage (such as recent searches) and removed the setting `experimentalFeatures.showEnterpriseHomePanels`."
-    url: https://github.com/sourcegraph/sourcegraph/pull/45705
-    category: Search
   - description: "Added a \"Reindex now\" button to the index status page. Admins can now force an immediate reindex of a repository."
     url: https://github.com/sourcegraph/sourcegraph/pull/45533
     category: Admin
@@ -35,10 +29,10 @@ changelogItems:
   - description: "Added a code host details page and separated it from the code host edit page. The new page contains information about a code host, its sync jobs, configuration, the number of synced repositories, and a link to access the list of synced repositories."
     url: https://github.com/sourcegraph/sourcegraph/pull/46327
     category: Admin
-  - description: "Added visibility to Code Host sync process on Code Host list page. Now admins can get an insight about sync being started/in progress/finished not only on Code Host details page, but also on a page with an overview of all configured Code Hosts."
+  - description: "Added visibility for code host sync progress to the code host list page."
     url: https://github.com/sourcegraph/sourcegraph/pull/46148
     category: Admin
-  - description: "Added a way to test code host connections from the code host details page. Now admins can check if Sourcegraph can connect to their configured code host directly from the UI."
+  - description: 'Added a "Test" button to the code host details page. Now admins can check Sourcegraph's connection to a configured code host directly from the UI.'
     url: https://github.com/sourcegraph/sourcegraph/pull/45972
     category: Admin
   - description: "Updates to the site configuration from the site admin panel will now record the user id of the author in the database in the critical_and_site_config.author_user_id column."
