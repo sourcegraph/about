@@ -18,6 +18,12 @@
   to = "https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
 # ========== END SOURCEGRAPH REDIRECTS ==========
 
+# ========== DEPRECATED LEARN SITE REDIRECT ==========
+[[redirects]]
+  from = "https://learn.sourcegraph.com/*"
+  to = "https://docs.sourcegraph.com/"
+# ========== END DEPRECATED LEARN SITE REDIRECT ==========
+
 # ========== HANDBOOK REDIRECTS ==========
 [[redirects]]
   from = "/company"
