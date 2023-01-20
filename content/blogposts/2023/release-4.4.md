@@ -1,6 +1,6 @@
 ---
 title: "Sourcegraph 4.4 release"
-publishDate: 2022-01-20T10:00-07:00
+publishDate: 2023-01-20T10:00-07:00
 description: "Sourcegraph 4.4 introduces improvements to BitBucket Cloud support and a new background job dashboard for debugging."
 tags: [blog, release]
 slug: "release/4.4"
