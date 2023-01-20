@@ -2,7 +2,7 @@
 title: "How to search code with Sourcegraph — a cheat sheet"
 tags: [blog]
 publishDate: 2021-08-19T18:00+02:00
-description: "Sourcegraph’s new admin analytics make it easier for admins to understand user engagement, measure efficiencies, and quantify the value of Sourcegraph."
+description: "A guide to help you get up to speed with Sourcegraph's commands quickly"
 heroImage: https://storage.googleapis.com/sourcegraph-assets/learn/headers/sourcegraph-learn-03.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/learn/headers/sourcegraph-learn-03.png
 slug: "how-to-search-cheat-sheet"
