@@ -20,7 +20,7 @@
 
 # ========== DEPRECATED LEARN SITE REDIRECT ==========
 [[redirects]]
-  from = "https://https://learn.sourcegraph.com/"
+  from = "https://https://learn.sourcegraph.com/*"
   to = "https://https://docs.sourcegraph.com/"
 # ========== END DEPRECATED LEARN SITE REDIRECT ==========
 
