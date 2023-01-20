@@ -42,7 +42,7 @@ changelogItems:
 
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 
-#### Authentication and permissions upgrades for BitBucket Cloud connections
+#### Upgrades for BitBucket Cloud connections
 
 We're improving support for BitBucket Cloud in two meaningful ways. First, BitBucket Cloud can now be added as an authentication provider. This allows you to log in to Sourcegraph via BitBucket Cloud so you can maintain one unified login. 
 
