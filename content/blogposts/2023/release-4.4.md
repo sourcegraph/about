@@ -29,7 +29,7 @@ changelogItems:
   - description: "Added visibility for code host sync progress to the code host list page."
     url: https://github.com/sourcegraph/sourcegraph/pull/46148
     category: Admin
-  - description: 'Added a "Test" button to the code host details page. Now admins can check Sourcegraph's connection to a configured code host directly from the UI.'
+  - description: "Added a \"Test\" button to the code host details page. Now admins can check Sourcegraph's connection to a configured code host directly from the UI."
     url: https://github.com/sourcegraph/sourcegraph/pull/45972
     category: Admin
   - description: "Updates to the site configuration from the site admin panel will now record the user id of the author in the database in the critical_and_site_config.author_user_id column."
