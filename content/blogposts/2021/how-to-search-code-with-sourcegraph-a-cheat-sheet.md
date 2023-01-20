@@ -22,22 +22,22 @@ By default, Sourcegraph lets you search globally, providing you with results fro
 
 The `repo` keyword lets you search a specific repository in your organization or on the web.
 
-```
+```text
 input='repo:repository-path'
 matcher='repository-path'
-```
-<br>
-```
+```  
+  
+```text
 input='repo:regular-pattern'
 matcher='regular-pattern'
 ```
-<br>
+  
 Searching with `repo:^github\.com/ORGANIZATION` will return all repositories in a given organization, where `ORGANIZATION` can be `sourcegraph`, for example.
 
-```
+```text
 query="repo:^github\.com/sourcegraph/.*"
 ```
-<br>
+  
 
 The `repo` keyword contextualizes the searches you perform on Sourcegraph. 
 
@@ -49,114 +49,114 @@ When searching a repository, command chaining can be used to return more specifi
 
 If you are searching for a file or a file path in a repository, use `repo:has.path`.
 
-```
+```text
 input='repo:repository-path repo:has.path(file-path)'
 matcher='file-path'
 ```
-<br>
+  
 For example, when searching for the `package.json` file in a project, this search query will return the file.
 
-```
+```text
 query="repo:^github\.com/sourcegraph/.* repo:has.path(package.json)"
 ```
-<br>
+  
 Alternatively, you can use `repo:has.file`, which allows you to search for files containing content.
 
-```
+```text
 query="repo:has.file(path:package\.json$ content:tsconfig)"
 ```
-<br>
+  
 This query returns repositories that contain a `package.json` file containing the string `tsconfig`.
 
 **Search for a repository that contains some content**
 
 Suppose you are searching for some content in a repository, such as a library. Use `repo:has.content`.
 
-```
+```text
 input='repo:repo-path repo:has.content(your-content)'
 matcher='your-content'
 ```
-<br>
-```
+  
+```text
 input='repo:repo-path repo:has.content(regular-pattern)'
 matcher='regular-pattern'
 ```
-<br>
+  
 We can search for the `mdi-react` library in Sourcegraph, for example:
 
-```
+```text
 query="repo:^github\.com/sourcegraph/.* repo:has.content(mdi-react)"
 ```
-<br>
+  
 The above query returns repos that have `mdi-react` among its contents.
 
 ## Language-specific search
 
 Use `lang` when searching code to narrow the scope of your search to one programming language. 
 
-```
+```text
 input='lang:programming-language'
 matcher='programming-language'
 ```
-<br>
+  
 We can search for results within the C++ or Python programming languages.
 
-```
+```text
 query="lang:c++"
 ```
-```
+```text
 query="lang:python"
 ```
-<br>
+  
 By default, searches are case insensitive.
 
 Prepending a hyphen can exclude results from a particular programming language.
 
-```
+```text
 input='-lang:programming-language'
 matcher='programming-language'
 ```
-<br>
+  
 To exclude Java, you can perform the following search.
 
-```
+```text
 query="​​-lang:java"
 ```
-<br>
+  
 Narrowing your search scope down to specific languages can ensure that you find the code that is most relevant to your needs.
 
 ## Searching based on time periods
 
 If you are searching for code committed before or after a time period, you will use `before` and `after`
 
-```
+```text
 input='before:time-period after:time-period'
 matcher='time-period'
 ```
-<br>
+  
 Sometimes the time period can be relative, like `last week`, `last year`, `3 months ago` or absolute, in several formats including `{month} {day} {year}` (example: `february 10 2021`), `dd/mm/yyyy`, and ISO format `yyyy-mm-dd`.
 
-```
+```text
 input='before:last week'
 matcher='last week'
 ```
-<br>
-```
+  
+```text
 input='after:february 10 2021'
 matcher='february 10 2021'
 ```
-<br>
-```
+  
+```text
 input='before:02/01/2019'
 matcher='02/01/2019'
 ```
-<br>
+  
 To search between dates, keywords like `and` can be combined with `before` or `after` to return dates within a given period.
 
-```
+```text
 query='repo:sourcegraph type:commit after:"july 9 2021" and before:"july 10 2021"'
 ```
-<br>
+  
 Time-based search is usually used along with other search commands to further narrow down search results.
 
 Note that `before` and `after` only work in conjunction when combined with `type:diff` or `type:commit` commands.
@@ -165,66 +165,66 @@ Note that `before` and `after` only work in conjunction when combined with `type
 
 The `archived` keyword will bring up those results from repositories that have been archived.
 
-```
+```text
 input='archived:yes'
 matcher='yes'
 ```
-<br>
-```
+  
+```text
 input='archived:no'
 matcher='no'
 ```
-<br>
-```
+  
+```text
 input='archived:only'
 matcher='only'
 ```
-<br>
+  
 We can surface only archived repositories within the Sourcegraph organization with the following query.
 
-```
+```text
 query="repo:sourcegraph archived:only"
 ```
-<br>
+  
 This can help us understand past decisions made within a given codebase. 
 
 ## Case sensitive search
 
 Use `yes` or `no` with the `case` search query to specify if the search should be case sensitive or not. By default, searches are case insensitive.
 
-```
+```text
 input='case:yes'
 matcher='yes'
 ```
-<br>
-```
+  
+```text
 input='case:no'
 matcher='no'
 ```
-<br>
+  
 Suppose you would like to check to align the style of a given codebase to help you bring all function calls in Python to be consistent with the [PEP 8](https://www.python.org/dev/peps/pep-0008/) guidance. You can use Sourcegraph to understand which functions are using camelCase rather than lowercase names with underscores between words (also called snake_case).
 
-```
+```text
 query="case:yes lang:python myFunction"
 ```
-<br>
+  
 If you would like to find all declared functions that use camelCase, you can try combining this query with regular expressions.
 
 ## Searching by types
 
 Types define the scope of code search. A search scope consists of commits, diffs, symbols, repos, paths and files. It is typically used alongside other search commands to further narrow search results.
 
-```
+```text
 input='type:commit|path|diff|symbol|repo|file'
 matcher='commit|path|diff|symbol|repo|file'
 ```
-<br>
+  
 Here is an example to show us time-based commits on the Sourcegraph repo.
 
-```
+```text
 query="repo:sourcegraph after:yesterday type:commit"
 ```
-<br>
+  
 A `type` scope can use the following commands, which will restrict search to the following:
 * `commit` — commits to a repository.
 * `path` — restricts terms to matching filenames only (not file contents).
@@ -239,11 +239,11 @@ Searching by type can help you find exactly what you need in a codebase by narro
 
 If a commit message is known, it can be helpful to use the `message` keyword to bring up relevant commits.
 
-```
+```text
 input='message:commit-message'
 matcher='commit-message'
 ```
-<br>
-```
+  
+```text
 input='message:string-regex-pattern'
 ```
