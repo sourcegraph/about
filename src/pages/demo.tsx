@@ -23,7 +23,7 @@ const Demo: FunctionComponent = () => (
                     <h2>Let us show you around</h2>
                     <p>Watch this quick video to see what Sourcegraph can do</p>
 
-                    <YouTube title="Sourcegraph Product Tour" id="hayQ-rd_kzM" className="my-5" />
+                    <YouTube title="Sourcegraph Product Tour" id="7JeHvfwsxIY" className="my-5" />
                 </div>
 
                 <div className="mt-5 col-lg-6 lg:tw-pl-5xl mt-lg-0">
