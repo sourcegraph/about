@@ -40,7 +40,7 @@ changelogItems:
     category: API
 ---
 
-<Badge link="/code-search" text="Code Search" color="cerise" size="small" />
+<Badge link="https://docs.sourcegraph.com/admin/external_service/bitbucket_cloud" text="Admin" color="violet" size="small" />
 
 #### Upgrades for BitBucket Cloud connections
 
