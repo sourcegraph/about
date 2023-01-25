@@ -275,7 +275,7 @@ This goal of "make it hard to use incorrectly" comes with tradeoffs. Specificall
 
 Conc is quite a small library, coming in at just under 2000 lines of Go code, but it took a lot of tweaking to get it to a point where I was happy to release it publicly.
 
-![SCC conc statistics](https://drafts.cc.ritza.co/uploads/upload_622f8a97c46fe4a1742ac48e45a35c2d.png)
+![SCC conc statistics](https://i.ritzastatic.com/images/3027409914ca45e19ee19d0c5cf844cc/upload_622f8a97c46fe4a1742ac48e45a35c2d.png)
 
 (Calculated using [scc](https://github.com/boyter/scc).)
 
