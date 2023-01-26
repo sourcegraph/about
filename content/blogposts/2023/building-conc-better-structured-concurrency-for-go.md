@@ -8,8 +8,8 @@ description: 'We built and release conc, an open-source library which makes it e
 tags: [blog]
 slug: 'building-conc-better-structured-concurrency-for-go'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-building-foundation-code-search.jpg
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-building-foundation-code-search.jpg
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/conc-og-social.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/conc-og-social.png 
 ---
 
 # Building Conc: better structured concurrency for go
@@ -88,7 +88,7 @@ Around six months ago, I started working on an internal library to generalize ho
 
 I found time to do the majority of this cleaning and documenting while I was trapped at an airport over the Christmas break due to the flight delays across the US in December. I wrote the [README](https://github.com/sourcegraph/conc), added and cleaned up the comments and docstrings, and added and moved the code to a public repository with an MIT license. I even had time to throw together a colorful logo to represent the splitting and re-joining of multiple processes before I finally got to board my plane.
 
-![Conc logo](https://i.ritzastatic.com/images/8a7705c8ea034b21a7962ca1841b059d/upload_b3d7822a2033a3f8c2d98966767466c7.png)
+![Conc logo](https://storage.googleapis.com/sourcegraph-assets/blog/upload_b3d7822a2033a3f8c2d98966767466c7.png)
 
 ## Diving into goroutines, concurrency, panics and scope
 
@@ -265,17 +265,17 @@ Conc is hopefully already useful to anyone writing concurrent Go code who wants 
 
 My main goal with `conc` is that it should be hard to use incorrectly. Concurrent code is infamous for causing headaches and hard-to-identify bugs, and while many developers might feel like they are smart enough to avoid the problems associated with concurrent programming, in reality these bugs can burn anyone.
 
-![Puppies parallel programming](https://i.ritzastatic.com/images/589ecb7490e6469c8fab443901c91c51/upload_ee1c4226c42ba701cde2324025599202.png)
+![Puppies parallel programming](https://storage.googleapis.com/sourcegraph-assets/blog/upload_ee1c4226c42ba701cde2324025599202.png)
 
 This goal of "make it hard to use incorrectly" comes with tradeoffs. Specifically, it means some (potentially useful) features are unlikely to be added to conc because they would break this goal. Shortly after the library went public I got a request to [add channels to conc](https://github.com/sourcegraph/conc/issues/56) and while I can see how some advanced user of conc could get value from this, I'd rather keep to the "hard to misuse" goal wherever possible.
 
-![GitHub issues conversation](https://i.ritzastatic.com/images/50b04f7067a041c1846f61f66cf8ecbe/upload_e8c695bc11b8f2a62ceafaefa0d354dd.png)
+![GitHub issues conversation](https://storage.googleapis.com/sourcegraph-assets/blog/upload_e8c695bc11b8f2a62ceafaefa0d354dd.png)
 
 ## Challenges I faced while building conc
 
 Conc is quite a small library, coming in at just under 2000 lines of Go code, but it took a lot of tweaking to get it to a point where I was happy to release it publicly.
 
-![SCC conc statistics](https://i.ritzastatic.com/images/3027409914ca45e19ee19d0c5cf844cc/upload_622f8a97c46fe4a1742ac48e45a35c2d.png)
+![SCC conc statistics](https://storage.googleapis.com/sourcegraph-assets/blog/upload_622f8a97c46fe4a1742ac48e45a35c2d.png)
 
 (Calculated using [scc](https://github.com/boyter/scc).)
 
