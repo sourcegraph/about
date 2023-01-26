@@ -107,7 +107,7 @@ This was the first challenge with using naked Goroutines. With Go's concurrency,
 One way to deal with this using the standard Go library is by using a deferred function and manually passing the stacktrace around, as in the example included before.
 
 
-```golang=
+```go
 type caughtPanicError struct {
     val   any
     stack []byte
@@ -149,7 +149,7 @@ Here, the main function starts a Goroutine that runs the function doSomethingTha
 
 This is essentially the boilerplate that `conc` wraps away for you, letting you write the following instead:
 
-```golang
+```go
 func main() {
     var wg conc.WaitGroup
     wg.Go(doSomethingThatMightPanic)
@@ -201,7 +201,7 @@ func fetchLastName(ctx context.Context, firstName string) (string, error) {
 
 If we have a list of first names and we want to efficiently fetch the last name for each first name, we could do this using `conc`'s `pool` as follows.
 
-```golang
+```go
 func fetchLastNames_pool(ctx context.Context, firstNames []string) ([]string, error) {
 	p := pool.NewWithResults[string]().WithContext(ctx)
 	for _, firstName := range firstNames {
@@ -216,7 +216,7 @@ func fetchLastNames_pool(ctx context.Context, firstNames []string) ([]string, er
 
 Or equivalently using `iter` :
 
-```golang
+```go
 func fetchLastNames2(ctx context.Context, firstNames []string) ([]string, error) {
 	return iter.MapErr(firstNames, func(firstName *string) (string, error) {
 		return fetchLastName(ctx, *firstName)
@@ -245,7 +245,7 @@ It's difficult to get all three of these right at the same time, so one of the g
 
 Now I can write custom functions to handle multiple file streams at once using code simliar to the example below. This efficiently and safely gets the contents of each file from a list of file names.
 
-```golang
+```go
 func streamFileContents(ctx context.Context, fileNames <-chan string, fileContents chan<- string) {
 	s := stream.New()
 	for fileName := range fileNames {
@@ -297,7 +297,7 @@ Panics aren't meant to be used as a way of exception handling, but while writing
 
 For example, running hte following code will print "did not panic", even though a panic occurs.
 
-```golang
+```go
 package main
 
 func main() {
