@@ -117,6 +117,6 @@ If you're curious about where Sourcegraph's structural search syntax originates,
 
 ## Other ways to search with Sourcegraph
 
-While structural search is helpful for certain types of searches, there are cases where it's more straightforward to express what you're looking for as a regular expression. Learn more about searching with regular expressions in [How to search with Sourcegraph with regular expression patterns](/how-to-search-with-sourcegraph-using-regular-expression-patterns).
+While structural search is helpful for certain types of searches, there are cases where it's more straightforward to express what you're looking for as a regular expression. Learn more about searching with regular expressions in [How to search with Sourcegraph with regular expression patterns](how-to-search-with-sourcegraph-using-regular-expression-patterns).
 
-If you're not looking for a pattern but an exact match, then a literal search may be more straightforward. Learn about literal search patterns in [How to Search with Sourcegraph with literal patterns](/how-to-search-code-with-sourcegraph-using-literal-patterns).
+If you're not looking for a pattern but an exact match, then a literal search may be more straightforward. Learn about literal search patterns in [How to Search with Sourcegraph with literal patterns](how-to-search-code-with-sourcegraph-using-literal-patterns).
