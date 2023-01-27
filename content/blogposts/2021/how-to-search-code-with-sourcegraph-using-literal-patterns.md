@@ -25,11 +25,15 @@ For example, if you’re learning how the Linux kernel works, one of the topics 
 
 The linked list data structure in Linux is called `list_head`. We can find all instances of the `list_head` structure by searching for it directly:
 
-<SourcegraphSearch query="list_head"/>
+```text
+query="list_head"
+```  
 
 As you review the results, you may notice that there are some common functions that are frequently used together with linked lists. One of these functions is `list_add_tail`. To explore further and find all instances of `list_add_tail`, we can start a new search for that specific function:
 
-<SourcegraphSearch query="list_add_tail"/>
+```text
+query="list_add_tail"
+```  
 
 Literal search patterns can be used to find more than just functions or variables. They can also be used to find longer pieces of text, like error messages, as we’ll explore in the next section.
 
@@ -39,7 +43,9 @@ Literal search can help you find where a particular piece of text occurs within 
 
 Let’s try an example. React is a framework used by many web apps, and its error messages are sometimes hard to debug. When a React component throws an error, it produces an error message like, `React caught an error thrown by Component`. When you get an error message like that, it isn’t always clear what is going on. To learn more about the source of the error, you can search for the error message itself:
 
-<SourcegraphSearch query="React caught an error thrown"/>
+```text
+query="React caught an error thrown"
+```  
 
 By finding where an error message is defined, you can start to understand what conditions will cause this error. In this case, it happens when React catches an error that happened during the rendering phase in one of your components.
 
@@ -51,17 +57,23 @@ By default, when searching for literal patterns in Sourcegraph, the entire query
 
 Unlike a web search engine, if you search for two or more words on Sourcegraph, like `const counter`, then you’ll only get results for `const` immediately followed by `counter`, as in the example below.
 
-<SourcegraphSearch query="const counter"/>
+```text
+query="const counter"
+```  
 
 Returning to our example in the Linux kernel, we can narrow down our search for `list_head` to only the cases where it’s used as a simple structure ([`struct`][struct]), by searching specifically for the `struct list_head` pattern:
 
-<SourcegraphSearch query="struct list_head"/>
+```text
+query="struct list_head"
+```  
 
 If you want to find all instances of those two words appearing in the same file but not necessarily in sequence, then you can use the `and` operator, or you can switch to regular expression mode.
 
 To use the `and` operator, add it to your search. The following query will find occurrences of `list_head` and `list_add_tail` when they are present anywhere in the same file.
 
-<SourcegraphSearch query="list_head and list_add_tail"/>
+```text
+query="list_head and list_add_tail"
+```  
 
 If you try one of these examples with quotes around the search query, like `"const counter"`, you’ll notice that you get no results. This is because the quote characters are interpreted literally, so Sourcegraph will search for textual data that includes those quote characters.
 
@@ -73,11 +85,15 @@ Because quote characters are treated like any other character when you’re in l
 
 For example, the quoted string `"ENOENT"` represents the error when a file is not found in Linux, and it’s found in many codebases:
 
-<SourcegraphSearch query='"ENOENT"'/>
+```text
+query='"ENOENT"'
+```  
 
 By including the quotes in the search query, you can compare this search with the same string, but without quotes. You’ll receive other results, where the string isn’t necessarily in quotes.
 
-<SourcegraphSearch query='ENOENT'/>
+```text
+query='ENOENT'
+```  
 
 ## Learn more
 
