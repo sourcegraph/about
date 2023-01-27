@@ -48,12 +48,6 @@ export const CASESTUDIES: CaseStudy[] = [
         url: '/case-studies/factset-migrates-from-perforce-to-github',
     },
     {
-        name: 'Cloudflare',
-        logo: '/external-logos/cloudflare-logo.svg',
-        title: 'Cloudflare accelerates debugging and improves security.',
-        url: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
-    },
-    {
         name: 'Indeed',
         logo: '/external-logos/indeed-logo.svg',
         title: 'Indeed keeps code up to date and accelerates development velocity.',

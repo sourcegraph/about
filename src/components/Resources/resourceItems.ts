@@ -317,15 +317,6 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'Cloudflare accelerates debugging and improves security',
-        link: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
-        contentType: 'customer story',
-        subjects: ['code health', 'code security', 'code reuse'],
-        description: 'Learn how Cloudflare accelerates debugging and improves security.',
-        publishDate: '2021-05-21T00:50:08Z',
-    },
-    {
-        featured: false,
         title: 'Indeed keeps code up to date and accelerates development velocity',
         link: '/case-studies/indeed-accelerates-development-velocity',
         contentType: 'customer story',

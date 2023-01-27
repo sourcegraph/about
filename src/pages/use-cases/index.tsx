@@ -142,12 +142,12 @@ const UseCases: React.FunctionComponent = () => (
                     rightColumn={
                         <Blockquote
                             inline={false}
-                            quote="[Sourcegraph] is the best way to prove we're not vulnerable to a particular CVE, if and when we get asked by an auditor."
-                            author="David Haynes, Security Engineer at Cloudflare"
+                            quote="The more we dug, the more we realized [Log4Shell] was everywhere and nowhere at the same time… Sourcegraph was the right product at the right time."
+                            author="Jon Kohler, Technical Director at Nutanix"
                             logo={{
-                                src: '/external-logos/cloudflare-logo.svg',
-                                alt: 'Cloudflare',
-                                href: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
+                                src: '/external-logos/nutanix-logo.svg',
+                                alt: 'Nutanix',
+                                href: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
                             }}
                         />
                     }
