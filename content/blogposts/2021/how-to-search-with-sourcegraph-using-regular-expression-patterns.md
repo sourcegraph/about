@@ -19,10 +19,10 @@ Regular expressions, often shortened as _regex_, help you find code that matches
 
 Start searching with regular expression patterns by toggling the dot asterisk (`.*`) button towards the right-hand side of the search box. When you mouse over it you’ll receive a tooltip that reads `Enable regular expression`.
 
-<video loop autoplay muted playsinline>
+<video loop autoPlay muted playsinline>
   <source src="https://storage.googleapis.com/sourcegraph-assets/learn/tutorial-images/enable-regex.mp4" />
 </video>
-
+  
 Once it is highlighted, you're ready to search with regular expressions.
 
 ## Finding a pattern

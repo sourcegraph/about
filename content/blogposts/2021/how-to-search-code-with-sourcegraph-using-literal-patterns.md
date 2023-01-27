@@ -111,5 +111,5 @@ To go beyond literal patterns, you can use regular expressions or structural sea
 
 [struct]: https://en.wikipedia.org/wiki/Struct_(C_programming_language)
 [documentation]: https://docs.sourcegraph.com/code_search/reference/queries
-[regular expressions]: https://docs.sourcegraph.com/code_search/reference/queries#regular-expression-search
+[regular expressions]: /how-to-search-with-sourcegraph-using-regular-expression-patterns
 [structural search]: /how-to-search-with-sourcegraph-using-structural-patterns

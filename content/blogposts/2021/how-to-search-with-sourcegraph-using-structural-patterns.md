@@ -19,10 +19,10 @@ Structural search patterns are one of the three search patterns supported by Sou
 
 Enable structural search by clicking the icon of two square brackets (`[]`) to the right of the search box:
 
-<video loop autoplay muted playsinline>
+<video loop autoPlay muted playsinline>
   <source src="https://storage.googleapis.com/sourcegraph-assets/learn/tutorial-images/enable-structural-search.mp4" />
 </video>
-
+  
 Once structural search is enabled, the icon will be highlighted and you can begin performing structural searches.
 
 ## Finding function calls
