@@ -175,14 +175,6 @@ const quoteCarouselItems = [
         link: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
     },
     {
-        header: "Cloudflare proves to auditors that its code isn't vulnerable",
-        quote: "[Sourcegraph] is the best way to prove we're not vulnerable to a particular CVE, if and when we get asked by an auditor.",
-        author: 'David Haynes, Security Engineer at Cloudflare',
-        logoImage: '/external-logos/cloudflare-logo.svg',
-        linkText: 'Read the case study',
-        link: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
-    },
-    {
         header: 'Indeed merges code at scale',
         quote: `On average, I'd say that for every automated merge request that we're able to merge we save an hour. That's a rough but conservative estimate. It shows,
         though, that if we are doing several thousand automated merges in a year, we're saving several employee's worth of time.`,
