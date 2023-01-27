@@ -36,7 +36,9 @@ If we're looking only for error output, we want to match all other instances whe
 
 This is a situation where structural search can help:
 
-<SourcegraphSearch query="fprintf(stderr, ...) lang:c repo:^github\.com/torvalds/linux$ " patternType="structural" />
+```text
+query="fprintf(stderr, ...) lang:c repo:^github\.com/torvalds/linux$ " patternType="structural"
+```  
 
 In this example, we're using a placeholder, `...`, for the remaining arguments. This ellipses placeholder is called a "hole" in the pattern. Structural search syntax uses "holes" as placeholders for syntactic structures. In this case, the placeholder will match the remaining function arguments.
 
@@ -44,7 +46,9 @@ In this example, we're using a placeholder, `...`, for the remaining arguments. 
 
 The above example gave us results that use `stderr`, but we may want to narrow down our search further. For example, we may want to match only `fprintf` calls where the final argument is `err`. We can add `err` to our search query to match it in the position of the last argument:
 
-<SourcegraphSearch query="fprintf(stderr, ..., err) lang:c repo:^github\.com/torvalds/linux$ " patternType="structural" />
+```text
+query="fprintf(stderr, ..., err) lang:c repo:^github\.com/torvalds/linux$ " patternType="structural"
+```  
 
 The above query matches `fprintf` calls where the first argument is `stderr` and the last argument is `err`. The `...` hole will match any number of arguments in between, and that's particularly useful for a function like `fprintf`, which accepts a variable number of arguments.
 
@@ -52,7 +56,9 @@ The above query matches `fprintf` calls where the first argument is `stderr` and
 
 You can use more than one `...` hole in a search. If we want to find an exact match for the second argument to `fprintf`, but accept any other arguments, we could use a hole in both the first and last argument position:
 
-<SourcegraphSearch query='fprintf(..., "%s", ...) lang:c repo:^github\.com/torvalds/linux$' patternType="structural" />
+```text
+query='fprintf(..., "%s", ...) lang:c repo:^github\.com/torvalds/linux$' patternType="structural"
+```  
 
 The second argument to `fprintf` is expected to be a format string. In this above example, we'll find matches where the second argument matches the string `"%s"` exactly.
 
@@ -60,7 +66,9 @@ The second argument to `fprintf` is expected to be a format string. In this abov
 
 Structural search can interpret quote-delimited strings, too. Using the `...` hole within a string, we can match partial string literals in the code. For example, we can expand our previous search to match any format strings that start with `ERROR:`
 
-<SourcegraphSearch query='fprintf(..., "ERROR: ...", ...) lang:c repo:^github\.com/torvalds/linux$' patternType="structural" />
+```text
+query='fprintf(..., "ERROR: ...", ...) lang:c repo:^github\.com/torvalds/linux$' patternType="structural"
+```  
 
 In the above example, we're using three `...` holes:
 
@@ -76,7 +84,9 @@ The `...` placeholder can also match partial content between brackets, like part
 
 Suppose we're investigating a bug that only happens when an array, `parts`, is empty. In the following example, we're looking for `if` statements where the condition starts with a check for whether the array is empty:
 
-<SourcegraphSearch query="if (!parts.length && ...) { ... } lang:javascript repo:^github\.com/google/.* count:all" patternType="structural" />
+```text
+query="if (!parts.length && ...) { ... } lang:javascript repo:^github\.com/google/.* count:all" patternType="structural"
+```  
 
 The above example will match `if` statements with any additional sub-expressions that follow the `&&` operator.
 
@@ -92,7 +102,9 @@ Suppose that you're working on improving a Java codebase, and you want to clean 
 
 We can construct a structural search pattern to find empty `catch` clauses that can be improved. In this case, we'll use the hole placeholder inside of curly brackets to match code blocks, but we'll deliberately keep the `catch` clause empty in order to find only the empty blocks there.
 
-<SourcegraphSearch query="try {...} catch (...) { } finally {...} lang:java repo:^github\.com/elastic/elasticsearch$" patternType="structural" />
+```text
+query="try {...} catch (...) { } finally {...} lang:java repo:^github\.com/elastic/elasticsearch$" patternType="structural"
+```  
 
 You can use curly brackets in structural search to match other types of code blocks as well, like `for` loops, `switch` statements, and object definitions.
 
