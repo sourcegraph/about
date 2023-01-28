@@ -1,5 +1,5 @@
 ---
-title: "How to search code with Sourcegraph using regular expression patterns"
+title: "How to search code with Sourcegraph using structural patterns"
 tags: [blog]
 publishDate: 2021-08-13T18:00+02:00
 description: "Learn how to use structural search patterns to search code on Sourcegraph."
