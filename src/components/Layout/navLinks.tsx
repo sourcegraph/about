@@ -50,10 +50,6 @@ export const navLinks: NavLink[] = [
                 href: '/blog',
             },
             {
-                title: 'Learn',
-                href: 'https://learn.sourcegraph.com/',
-            },
-            {
                 title: 'Podcast',
                 href: '/podcast',
             },
@@ -157,10 +153,6 @@ export const footerLinks: NavLink[] = [
             {
                 title: 'Changelog',
                 href: 'https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md',
-            },
-            {
-                title: 'Learn',
-                href: 'https://learn.sourcegraph.com',
             },
             {
                 title: 'Podcast',

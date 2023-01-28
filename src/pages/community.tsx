@@ -61,26 +61,14 @@ export const Community: FunctionComponent = () => (
                     >
                         speed sheet
                     </a>{' '}
-                    with the most useful Sourcegraph shortcuts. Need even more speed? Fasten your seat belt and dive
-                    into our curated{' '}
-                    <a
-                        href="https://learn.sourcegraph.com/tags/sourcegraph"
-                        title="Tutorials"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        tutorials
-                    </a>{' '}
-                    &#38; other{' '}
+                    with the most useful Sourcegraph shortcuts. Also see our
                     <a
                         href="https://docs.sourcegraph.com/"
-                        title="Tip documents"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        tip documents
+                        documentation
                     </a>
                     .
                 </p>
