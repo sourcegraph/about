@@ -12,6 +12,7 @@ heroImage: https://images.ctfassets.net/le3mxztn6yoo/4DunlnWOzY0cOGGKmKCsYU/ec2e
 published: true
 ---
 
+> NOTE: Since this talk was given and this liveblog post was written in 2017, Go has introduced Go modules, which have become the standard system for package management in the Go ecosystem.
 
 Liveblog by Alan Shreve ([@inconshreveable](http://twitter.com/inconshreveable))
 
