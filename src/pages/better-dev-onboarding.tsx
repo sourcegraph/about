@@ -10,7 +10,7 @@ import {
     ResourceList,
     Hero,
     CtaSection,
-} from '@components'
+} from '../components'
 
 const resourceItems = [
     {

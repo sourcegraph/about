@@ -12,7 +12,7 @@ import {
     useFilters,
     Hero,
     CtaSection,
-} from '@components'
+} from '../components'
 
 const sortResources = (resources: Resource[]): Resource[] =>
     resources.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf())

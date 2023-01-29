@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection, Blockquote } from '@components'
+import { Layout, CaseStudyLayout, ContentSection, Blockquote } from '../../components'
 
 export const CaseStudy: FunctionComponent = () => {
     const justinPhilips = 'Justin Phillips, Software Engineer, Lyft'

@@ -2,8 +2,8 @@ import React, { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, HubSpotForm } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { Layout, HubSpotForm } from '../components'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 export const Hackathons: FunctionComponent = () => (
     <Layout

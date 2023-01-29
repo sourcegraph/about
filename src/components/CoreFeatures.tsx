@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import { startCase } from 'lodash'
 import Link from 'next/link'
 
-import { buttonStyle, buttonLocation } from '@data'
+import { buttonLocation, buttonStyle } from '../data/tracking'
 
 interface Video {
     mp4: string

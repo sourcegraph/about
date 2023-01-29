@@ -1,7 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { BackButton } from '@components'
-
+import { BackButton } from '..'
 import { COLORS } from '../Jumbotron'
 
 interface Props {

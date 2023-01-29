@@ -2,8 +2,8 @@ import { FunctionComponent } from 'react'
 
 import { kebabCase } from 'lodash'
 
-import { ContentSection, CtaSection } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { ContentSection, CtaSection } from '..'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 import { CaseStudyJumbotron } from './CaseStudyJumbotron'
 

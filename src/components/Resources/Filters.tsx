@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import CloseCircleOutlineIcon from 'mdi-react/CloseCircleOutlineIcon'
 
-import { Badge } from 'components/Badge'
+import { Badge } from '../Badge'
 
 export interface Filter {
     text: string

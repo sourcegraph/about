@@ -5,17 +5,6 @@ import LighteningBoltOutlineIcon from 'mdi-react/LightningBoltOutlineIcon'
 import RocketLaunchOutlineIcon from 'mdi-react/RocketLaunchOutlineIcon'
 import TrendingUpIcon from 'mdi-react/TrendingUpIcon'
 
-import { CodeInsightExample } from '@code-insights/CodeInsightsExamples'
-import {
-    SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA,
-    ALPINE_VERSIONS_INSIGHT,
-    LOG_4_J_INCIDENT_INSIGHT,
-    DEPRECATED_API_USAGE_BY_TEAM,
-    LINTER_OVERRIDES,
-    REPOS_WITH_CI_SYSTEM,
-    OPENSSL_PYTHON,
-} from '@code-insights/mock-data'
-import { CodeInsightExampleType } from '@code-insights/types'
 import {
     Blockquote,
     ContentSection,
@@ -30,8 +19,19 @@ import {
     TwoColumnSection,
     Video,
     YouTube,
-} from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+} from '../components'
+import { CodeInsightExample } from '../components/CodeInsights/CodeInsightsExamples'
+import {
+    SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA,
+    ALPINE_VERSIONS_INSIGHT,
+    LOG_4_J_INCIDENT_INSIGHT,
+    DEPRECATED_API_USAGE_BY_TEAM,
+    LINTER_OVERRIDES,
+    REPOS_WITH_CI_SYSTEM,
+    OPENSSL_PYTHON,
+} from '../components/CodeInsights/mock-data'
+import { CodeInsightExampleType } from '../components/CodeInsights/types'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const items = [
     {

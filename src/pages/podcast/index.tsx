@@ -4,9 +4,9 @@ import { FunctionComponent } from 'react'
 
 import { GetStaticProps } from 'next'
 
-import { PostsListPage, BLOG_TYPE_TO_INFO } from '@components'
-import { BlogType, Post, PostIndexComponentProps } from '@interfaces/posts'
-import { getSortedSlugs, loadMarkdownFile, getMarkdownFiles, serializeMdxSource } from '@lib'
+import { PostsListPage, BLOG_TYPE_TO_INFO } from '../../components'
+import { BlogType, Post, PostIndexComponentProps } from '../../interfaces/posts'
+import { getSortedSlugs, loadMarkdownFile, getMarkdownFiles, serializeMdxSource } from '../../lib'
 
 const CONTENT_PARENT_DIRECTORY = './content/'
 

@@ -9,8 +9,8 @@ import {
     Blockquote,
     ThreeUpText,
     UseChallengeSolutionResults,
-} from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+} from '../../components'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const threeUpTextItems = [
     {

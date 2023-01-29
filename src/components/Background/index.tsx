@@ -4,9 +4,6 @@ import { CSSProperties, FunctionComponent, ReactNode } from 'react'
 import classNames from 'classnames'
 import { StaticImageData } from 'next/image'
 
-import { breakpoints } from '@data'
-import { useWindowWidth } from '@hooks'
-
 // Light Nebulous Variants
 import lightNebulousSaturn1 from './assets/backgrounds/light-nebulous-saturn-1.jpg'
 import lightNebulousSaturn2 from './assets/backgrounds/light-nebulous-saturn-2.jpg'
@@ -39,6 +36,9 @@ import starshipLaunchPills from './assets/backgrounds/starship-launch-pills.svg'
 import changes from './assets/illustrations/changes.svg'
 import insights from './assets/illustrations/insights.svg'
 import search from './assets/illustrations/search.svg'
+
+import { useWindowWidth } from '../../hooks/windowWidth'
+import { breakpoints } from '../../data/breakpoints'
 
 export interface Background {
     variant: // Standard Variants

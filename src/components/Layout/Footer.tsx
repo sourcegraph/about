@@ -3,8 +3,8 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { Heading } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { Heading } from '..'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 import { footerLinks, socialLinks, postscriptLinks } from './navLinks'
 

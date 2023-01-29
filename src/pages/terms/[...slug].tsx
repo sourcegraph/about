@@ -3,9 +3,9 @@ import path from 'path'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import { Layout, Badge, HubSpotForm, TableWrapper } from '@components'
-import { Page } from '@interfaces/posts'
-import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '@lib'
+import { Layout, Badge, HubSpotForm, TableWrapper } from '../../components'
+import { Page } from '../../interfaces/posts'
+import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '../../lib'
 
 export type Components = import('mdx/types').MDXComponents
 

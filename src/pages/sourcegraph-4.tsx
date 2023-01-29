@@ -17,8 +17,8 @@ import {
     Badge,
     YouTube,
     ResourceList,
-} from '@components'
-import { buttonLocation, buttonStyle } from '@data'
+} from '../components'
+import { buttonLocation, buttonStyle } from '../data/tracking'
 
 const Sourcegraph4: FunctionComponent = () => (
     <Layout

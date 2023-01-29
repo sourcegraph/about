@@ -1,15 +1,16 @@
 // Tailwind
-import '@styles/globals.css'
+import '../styles/globals.css'
 
 // TODO: Remove once Bootstrap is completely removed
-import '@styles/globals.scss'
+import '../styles/globals.scss'
 
 import { ReactNode } from 'react'
 
 import type { AppProps } from 'next/app'
 import SSRProvider from 'react-bootstrap/SSRProvider'
 
-import { useEventLogger, useLogAllLinkClicks, useLandingSource } from '@hooks'
+import { useEventLogger, useLogAllLinkClicks } from '../hooks/eventLogger'
+import { useLandingSource } from '../hooks/landingSource'
 
 import 'prism-themes/themes/prism-one-light.css'
 

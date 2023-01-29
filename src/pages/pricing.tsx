@@ -18,9 +18,10 @@ import {
     BIZ_FEATURES_OVERVIEW,
     ENTERPRISE_FEATURES_OVERVIEW,
     ALL_FEATURES_COMPARED_DATA,
-} from '@components'
-import { breakpoints, buttonStyle, buttonLocation } from '@data'
-import { useWindowWidth } from '@hooks'
+} from '../components'
+import { breakpoints } from '../data/breakpoints'
+import { buttonLocation, buttonStyle } from '../data/tracking'
+import { useWindowWidth } from '../hooks/windowWidth'
 
 const BusinessCTA: FunctionComponent<{ className?: string; btnOnMobile?: boolean }> = ({ className, btnOnMobile }) => {
     const windowWidth = useWindowWidth()

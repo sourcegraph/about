@@ -2,9 +2,9 @@ import { FunctionComponent } from 'react'
 
 import { GetStaticProps } from 'next'
 
-import { PostsListPage, BLOG_TYPE_TO_INFO } from '@components'
-import { BlogType, PostIndexComponentProps } from '@interfaces/posts'
-import { getAllPublishedBlogPosts } from '@lib'
+import { PostsListPage, BLOG_TYPE_TO_INFO } from '../../components'
+import { BlogType, PostIndexComponentProps } from '../../interfaces/posts'
+import { getAllPublishedBlogPosts } from '../../lib'
 
 const BlogHome: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts }) => (
     <PostsListPage blogInfo={BLOG_TYPE_TO_INFO[BlogType.Blog]} posts={posts} allPosts={allPosts} />

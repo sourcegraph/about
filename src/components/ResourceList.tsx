@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { buttonStyle, buttonLocation } from '@data'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 import { ContentSection } from './ContentSection'
 

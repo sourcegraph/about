@@ -7,8 +7,9 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import ArrowUpIcon from 'mdi-react/ArrowUpIcon'
 import CircleSmallIcon from 'mdi-react/CircleSmallIcon'
 
-import { breakpoints } from '@data'
-import { useCarousel, useWindowWidth } from '@hooks'
+import { breakpoints } from '../../data/breakpoints'
+import { useCarousel } from '../../hooks/carousel'
+import { useWindowWidth } from '../../hooks/windowWidth'
 
 interface CarouselProps {
     items: CarouselItem[]

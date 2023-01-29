@@ -4,8 +4,9 @@ import classNames from 'classnames'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
-import { breakpoints, buttonStyle, buttonLocation } from '@data'
-import { useWindowWidth } from '@hooks'
+import { breakpoints } from '../data/breakpoints'
+import { buttonStyle, buttonLocation } from '../data/tracking'
+import { useWindowWidth } from '../hooks/windowWidth'
 
 interface Logo {
     src: string

@@ -3,8 +3,9 @@ import { FunctionComponent, ReactNode } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { buttonStyle, buttonLocation, breakpoints } from '@data'
-import { useWindowWidth } from '@hooks'
+import { breakpoints } from '../../data/breakpoints'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
+import { useWindowWidth } from '../../hooks/windowWidth'
 
 import illustration from './illustration.svg'
 

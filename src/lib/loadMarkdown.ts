@@ -2,7 +2,7 @@ import fs from 'fs/promises'
 
 import matter from 'gray-matter'
 
-import { Page, Post } from '@interfaces/posts'
+import { Page, Post } from '../interfaces/posts'
 
 export const loadMarkdownFile = async (filename: string): Promise<Page | Post | Error> => {
     const page = await fs

@@ -16,8 +16,8 @@ import {
     TwoColumnSection,
     QuoteCarousel,
     Video,
-} from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+} from '../components'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const CarouselItem: FunctionComponent<{
     icon: MdiReactIconComponentType

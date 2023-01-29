@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import Link from 'next/link'
 
-import { buttonLocation, buttonStyle } from '@data'
+import { buttonLocation, buttonStyle } from '../data/tracking'
 
 interface BackButtonProps {
     href: string

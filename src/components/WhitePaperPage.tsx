@@ -2,7 +2,7 @@ import { FunctionComponent, ReactNode } from 'react'
 
 import classNames from 'classnames'
 
-import { buttonStyle, buttonLocation } from '@data'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 import { CtaSection } from './CtaSection'
 

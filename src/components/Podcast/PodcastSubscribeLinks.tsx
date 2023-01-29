@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { buttonStyle, buttonLocation } from '@data'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 interface Props {
     linkClassName?: string

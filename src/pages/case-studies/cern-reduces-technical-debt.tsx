@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection, Figure, Blockquote } from '@components'
+import { Layout, CaseStudyLayout, ContentSection, Figure, Blockquote } from '../../components'
 
 export const CaseStudy: FunctionComponent = () => (
     <Layout

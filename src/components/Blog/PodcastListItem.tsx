@@ -2,9 +2,9 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { PostListItem, PodcastAudioPlayer } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
-import { PostIndexItemProps } from '@interfaces/posts'
+import { PostListItem, PodcastAudioPlayer } from '..'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
+import { PostIndexItemProps } from '../../interfaces/posts'
 
 /**
  * An index podcast post item.

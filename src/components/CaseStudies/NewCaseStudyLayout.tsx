@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { ContentSection, CtaSection } from '@components'
+import { ContentSection, CtaSection } from '..'
 
 import { CaseStudyCard, CASESTUDIES } from './CaseStudyCard'
 

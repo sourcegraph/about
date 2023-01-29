@@ -2,8 +2,8 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, ContentSection, TwoColumnSection, Video, ResourceList, CtaSection } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { Layout, ContentSection, TwoColumnSection, Video, ResourceList, CtaSection } from '../components'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const blogResourceItems = [
     {

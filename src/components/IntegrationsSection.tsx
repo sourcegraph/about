@@ -1,7 +1,8 @@
 import { FunctionComponent, ReactNode } from 'react'
 
-import { Badge, ContentSection, Heading } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { buttonStyle, buttonLocation } from '../data/tracking'
+
+import { Badge, ContentSection, Heading } from '.'
 
 const codeHosts: string[] = [
     'GitLab.com',

@@ -3,9 +3,9 @@ import { FunctionComponent } from 'react'
 import { truncate } from 'lodash'
 import Link from 'next/link'
 
-import { buttonStyle, buttonLocation } from '@data'
-import { PostIndexItemProps } from '@interfaces/posts'
-import { formatDate } from '@util'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
+import { PostIndexItemProps } from '../../interfaces/posts'
+import { formatDate } from '../../util'
 
 export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
     frontmatter,

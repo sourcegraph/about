@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, HubSpotForm, YouTube } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { Layout, HubSpotForm, YouTube } from '../components'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const FixingVulnerabilities: FunctionComponent = () => (
     <Layout

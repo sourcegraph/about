@@ -17,8 +17,8 @@ import {
     ResourceList,
     ThreeUpText,
     TwoColumnSection,
-} from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+} from '../../components'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>

@@ -3,8 +3,8 @@ import { FunctionComponent } from 'react'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
-import { buttonStyle, buttonLocation } from '@data'
-import { PostComponentProps } from '@interfaces/posts'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
+import { PostComponentProps } from '../../interfaces/posts'
 
 interface Props extends PostComponentProps {
     post: PostComponentProps['post']

@@ -4,8 +4,8 @@ import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Carousel from 'react-bootstrap/Carousel'
 
-import { Layout, ContentSection, QuoteCarousel, ThreeUpText } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { Layout, ContentSection, QuoteCarousel, ThreeUpText } from '../components'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const CareersPage: FunctionComponent = () => {
     const glassdoorReviewItems = [

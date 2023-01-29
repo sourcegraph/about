@@ -4,8 +4,8 @@ import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import CircleSmallIcon from 'mdi-react/CircleSmallIcon'
 
-import { Template, TemplateCodeBlock } from '@components'
-import { useCarousel } from '@hooks'
+import { useCarousel } from '../../hooks/carousel'
+import { Template, TemplateCodeBlock } from '../TemplateCodeBlock'
 
 interface TabCarouselProps {
     items: Template[]

@@ -4,9 +4,10 @@ import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Carousel from 'react-bootstrap/Carousel'
 
-import { Blockquote } from '@components'
-import { breakpoints } from '@data'
-import { useWindowWidth } from '@hooks'
+import { breakpoints } from '../../data/breakpoints'
+import { useWindowWidth } from '../../hooks/windowWidth'
+import { Blockquote } from '../Blockquote'
+
 interface Blockquote {
     quote: string
     header?: string

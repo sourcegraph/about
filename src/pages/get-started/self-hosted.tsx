@@ -2,8 +2,8 @@ import { FunctionComponent } from 'react'
 
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
-import { Layout, Install, ContentSection } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { Layout, Install, ContentSection } from '../../components'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 export const SelfHostedPage: FunctionComponent = () => (
     <Layout

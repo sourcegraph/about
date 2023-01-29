@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { ContentPage, ContentSection, Layout } from '@components'
+import { ContentPage, ContentSection, Layout } from '../../components'
 
 const CookiePolicy: FunctionComponent = () => (
     <Layout

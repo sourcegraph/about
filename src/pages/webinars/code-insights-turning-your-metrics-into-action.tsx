@@ -2,8 +2,8 @@ import { FunctionComponent } from 'react'
 
 import { useRouter } from 'next/router'
 
-import { Layout, GatedResourceLayout, ContentSection, Hero } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { Layout, GatedResourceLayout, ContentSection, Hero } from '../../components'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const speakers = [
     {
