@@ -3,7 +3,7 @@ import { FunctionComponent, useEffect, useState } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { CustomerLogos, YouTube, Heading } from '@components'
+import { CustomerLogos, Heading } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 import meshLeft from './assets/hero/mesh-left.png'
@@ -88,7 +88,26 @@ const Hero: FunctionComponent = () => {
                 </div>
 
                 <div className="tw-max-w-4xl tw-mx-auto tw-my-3xl">
-                    <YouTube title="Sourcegraph Product Tour" id="7JeHvfwsxIY" />
+                    <video
+                        className="shadow w-100"
+                        autoPlay={false}
+                        playsInline={true}
+                        controls={true}
+                        title="Sourcegraph demo video"
+                    >
+                        <track
+                            default={true}
+                            label="English"
+                            kind="captions"
+                            srcLang="en"
+                            src="https://sourcegraphstatic.com/homepage-demo-202301-0.vtt"
+                        />
+                        <source type="video/webm" src="https://sourcegraphstatic.com/homepage-demo-202301-0.webm" />
+                        <source
+                            type="video/mp4"
+                            src="https://sourcegraphstatic.com/homepage-demo-202301-0smaller.mp4"
+                        />
+                    </video>
                 </div>
 
                 <div className="tw-mx-auto tw-text-center max-w-700">
