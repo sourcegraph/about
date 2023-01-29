@@ -1,0 +1,7 @@
+{
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "search.exclude": {
+    "public/": true,
+    "content/": true
+  }
+}

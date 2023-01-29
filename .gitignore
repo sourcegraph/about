@@ -15,7 +15,6 @@ build
 .DS_Store
 *.pem
 *.swp
-.vscode
 
 # debug
 *.log*
