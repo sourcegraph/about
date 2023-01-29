@@ -75,6 +75,30 @@ const Cta: FunctionComponent<Cta> = ({ text, ctaStyle, link }) => {
 }
 
 /**
+ * This is the self-hosted CTA message
+ */
+const Cta3: FunctionComponent = () => {
+    const isDark = document.querySelector('footer.navbar-dark')
+    return (
+        <p className={classNames("tw-max-w-screen-xl tw-mx-auto tw-mt-xs tw-pl-sm", {'tw-text-gray-300': isDark})}>
+            Want to deploy yourself?{' '}
+            <a
+                href="https://docs.sourcegraph.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Sourcegraph self-hosted solution"
+                className={classNames({'tw-text-white': isDark})}
+                data-button-style={buttonStyle.text}
+                data-button-location={buttonLocation.trySourcegraph}
+                data-button-type="cta"
+            >
+                Try our self-hosted solution.
+            </a>
+        </p>
+    )
+}
+
+/**
  * This is our CTA Section as defined in our DLS. Please refer to it for specs.
  *
  * @param props - component props
@@ -97,22 +121,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
         ctaStyle: 'outlineButtonLight',
         link: '/demo',
     },
-    cta3 = (
-        <p className="tw-max-w-screen-xl tw-mx-auto tw-mt-xs tw-pl-sm">
-            Want to deploy yourself?{' '}
-            <a
-                href="https://docs.sourcegraph.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Sourcegraph self-hosted solution"
-                data-button-style={buttonStyle.text}
-                data-button-location={buttonLocation.trySourcegraph}
-                data-button-type="cta"
-            >
-                Try our self-hosted solution.
-            </a>
-        </p>
-    ),
+    cta3 = <Cta3 />,
 }) => {
     const windowWidth = useWindowWidth()
     const lgAndUp = windowWidth > breakpoints.lg
