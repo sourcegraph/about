@@ -42,10 +42,10 @@
       ]
     }
   },
-  "packageManager": "pnpm@7.24.2",
+  "packageManager": "pnpm@7.26.1",
   "engines": {
     "node": "^v18.9.0",
-    "pnpm": "^7.24.2"
+    "pnpm": "^7.26.1"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.8.0",

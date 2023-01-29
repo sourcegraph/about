@@ -3,6 +3,7 @@
   command = "pnpm run build"
 
 [build.environment]
+# Keep this in sync with package.json "engines".
   NODE_VERSION = "18.9.0"
 
 [[headers]]
