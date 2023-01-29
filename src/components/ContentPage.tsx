@@ -1,6 +1,6 @@
 import { FunctionComponent, ReactNode, ReactFragment } from 'react'
 
-import { Jumbotron } from '@components'
+import { Jumbotron } from '.'
 
 interface Props {
     title: string

@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 
-import { BoardSection, ContentSection, Layout, LeadershipSection } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { BoardSection, ContentSection, Layout, LeadershipSection } from '../components'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const INVESTORS: {
     name: string

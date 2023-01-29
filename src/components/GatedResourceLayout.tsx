@@ -3,7 +3,7 @@ import { FunctionComponent, ReactNode } from 'react'
 import classNames from 'classnames'
 import { useRouter } from 'next/router'
 
-import { ContentSection, HubSpotForm, DemioForm } from '@components'
+import { ContentSection, HubSpotForm, DemioForm } from '.'
 
 interface Speaker {
     name: string

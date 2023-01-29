@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 
-import { ContentSection, Layout, Tabs, YouTube } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { ContentSection, Layout, Tabs, YouTube } from '../components'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 export const Community: FunctionComponent = () => (
     <Layout

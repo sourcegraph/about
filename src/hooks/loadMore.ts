@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-import { PostIndexItemProps } from '@interfaces/posts'
+import { PostIndexItemProps } from '../interfaces/posts'
 
 interface LoadMoreHookObject {
     currentRecords: PostIndexItemProps[]

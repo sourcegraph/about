@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { resourceItems, Filter } from '@components'
+import { resourceItems, Filter } from '.'
 
 interface UseFilters {
     filterGroups: {

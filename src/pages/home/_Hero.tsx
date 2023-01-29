@@ -3,8 +3,8 @@ import { FunctionComponent, useEffect, useState } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { CustomerLogos, Heading } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { CustomerLogos, Heading } from '../../components'
+import { buttonLocation, buttonStyle } from '../../data/tracking'
 
 import meshLeft from './assets/hero/mesh-left.png'
 import meshRight from './assets/hero/mesh-right.png'

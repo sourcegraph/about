@@ -11,8 +11,8 @@ import {
     TwoColumnSection,
     Video,
     YouTube,
-} from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+} from '../components'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const batchChangesDemoFormURL = '/contact/request-batch-changes-demo'
 

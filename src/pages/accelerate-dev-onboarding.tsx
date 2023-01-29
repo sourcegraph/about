@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 
-import { Blockquote, Layout, HubSpotForm, YouTube } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { Blockquote, Layout, HubSpotForm, YouTube } from '../components'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const AccelerateDevOnboarding: FunctionComponent = () => (
     <Layout

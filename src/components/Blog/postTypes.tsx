@@ -1,7 +1,6 @@
 import React from 'react'
 
-import { BlogType, BlogTypeInfo } from '@interfaces/posts'
-
+import { BlogType, BlogTypeInfo } from '../../interfaces/posts'
 import { PodcastSubscribeLinks } from '../Podcast/PodcastSubscribeLinks'
 
 export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {

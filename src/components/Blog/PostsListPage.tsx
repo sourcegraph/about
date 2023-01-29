@@ -1,8 +1,8 @@
 import { FunctionComponent, ReactNode } from 'react'
 
-import { Layout, BlogHeader, PostsList } from '@components'
-import { useLoadMore } from '@hooks'
-import { BlogTypeInfo, PostIndexItemProps } from '@interfaces/posts'
+import { Layout, BlogHeader, PostsList } from '..'
+import { useLoadMore } from '../../hooks/loadMore'
+import { BlogTypeInfo, PostIndexItemProps } from '../../interfaces/posts'
 
 interface Props {
     blogInfo: BlogTypeInfo

@@ -5,8 +5,8 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import StarIcon from 'mdi-react/StarIcon'
 import Link from 'next/link'
 
-import { buttonStyle, buttonLocation } from '@data'
-import { Badge } from 'components/Badge'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
+import { Badge } from '../Badge'
 
 import { Resource } from '.'
 

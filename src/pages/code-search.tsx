@@ -10,8 +10,8 @@ import {
     Video,
     ResourceList,
     CtaSection,
-} from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+} from '../components'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const blogResources = [
     {

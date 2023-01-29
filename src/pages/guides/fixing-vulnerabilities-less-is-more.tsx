@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, GatedResourceLayout, Hero } from '@components'
+import { Layout, GatedResourceLayout, Hero } from '../../components'
 
 export const Guide: FunctionComponent = () => (
     <Layout

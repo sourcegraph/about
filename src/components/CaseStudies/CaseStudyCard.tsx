@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
-import { buttonStyle, buttonLocation } from '@data'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 interface CaseStudy {
     name: string

@@ -1,7 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CtaSection } from '@components'
-
+import { Layout, CtaSection } from '../../components'
 import { CaseStudyCard, CASESTUDIES } from '../../components/CaseStudies/CaseStudyCard'
 
 const CaseStudiesHome: FunctionComponent = () => (

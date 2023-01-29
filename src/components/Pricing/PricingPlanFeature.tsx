@@ -5,10 +5,11 @@ import InformationCircleOutlineIcon from 'mdi-react/InformationCircleOutlineIcon
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
 
-import { breakpoints } from '@data'
-import { useWindowWidth } from '@hooks'
+import { breakpoints } from '../../data/breakpoints'
+import { useWindowWidth } from '../../hooks/windowWidth'
 
 import { FeatureInfo } from './data'
+
 interface Props {
     feature: FeatureInfo
     tag: 'li' | 'h5'

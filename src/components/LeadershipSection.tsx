@@ -4,7 +4,7 @@ import GithubIcon from 'mdi-react/GithubIcon'
 import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 
-import { buttonStyle, buttonLocation } from '@data'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const LEADERS: {
     name: string

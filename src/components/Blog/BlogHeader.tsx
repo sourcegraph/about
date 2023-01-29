@@ -2,8 +2,8 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { buttonStyle, buttonLocation } from '@data'
-import { BlogTypeInfo } from '@interfaces/posts'
+import { buttonLocation, buttonStyle } from '../../data/tracking'
+import { BlogTypeInfo } from '../../interfaces/posts'
 
 interface Props extends Pick<BlogTypeInfo, 'title' | 'belowTitle' | 'baseUrl'> {}
 

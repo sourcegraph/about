@@ -3,8 +3,10 @@ import { FunctionComponent, useEffect, useState, useRef } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { Heading } from '@components'
-import { breakpoints, buttonStyle, buttonLocation } from '@data'
+import { breakpoints } from '../data/breakpoints'
+import { buttonStyle, buttonLocation } from '../data/tracking'
+
+import { Heading } from '.'
 
 interface Logo {
     name: string

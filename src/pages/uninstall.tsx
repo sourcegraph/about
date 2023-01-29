@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, HubSpotForm } from '@components'
+import { Layout, HubSpotForm } from '../components'
 
 const Uninstall: FunctionComponent = () => (
     <Layout>

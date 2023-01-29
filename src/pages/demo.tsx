@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 
-import { Layout, YouTube, HubSpotForm } from '@components'
+import { Layout, YouTube, HubSpotForm } from '../components'
 
 const Demo: FunctionComponent = () => (
     <Layout

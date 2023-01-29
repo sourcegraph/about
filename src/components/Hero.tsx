@@ -2,7 +2,7 @@ import { FunctionComponent, ReactNode } from 'react'
 
 import classNames from 'classnames'
 
-import { BackButton, Background, ContentSection, TwoColumnSection } from '@components'
+import { BackButton, Background, ContentSection, TwoColumnSection } from '.'
 
 interface BackButton {
     text: string

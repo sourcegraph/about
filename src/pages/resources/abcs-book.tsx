@@ -3,8 +3,8 @@ import { FunctionComponent } from 'react'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import Link from 'next/link'
 
-import { Layout, ContentSection, YouTube } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { Layout, ContentSection, YouTube } from '../../components'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 export const AbcsEbook: FunctionComponent = () => (
     <Layout

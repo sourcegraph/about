@@ -1,6 +1,6 @@
 import { useEffect, useState, ReactNode, useCallback, useRef } from 'react'
 
-import { Template } from '@components'
+import { Template } from '../components'
 
 interface CarouselItems {
     items: CarouselItem[] | ReactNode[] | Template[]

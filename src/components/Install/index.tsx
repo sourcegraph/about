@@ -2,7 +2,7 @@ import { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
 
-import { buttonStyle, buttonLocation } from '@data'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 import { ReactComponent as CopyIcon } from './copyIcon.svg'
 

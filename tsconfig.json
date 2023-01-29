@@ -14,18 +14,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
-    "baseUrl": "src",
-    "paths": {
-      "@code-insights/*": ["components/CodeInsights/*"],
-      "@components": ["components"],
-      "@data": ["data"],
-      "@hooks": ["hooks"],
-      "@interfaces/*": ["interfaces/*"],
-      "@lib": ["lib"],
-      "@styles/*": ["styles/*"],
-      "@util": ["util"]
-    }
+    "incremental": true
   },
   "include": ["next-env.d.ts", "additional.d.ts", "src/**/*", "**/*.ts", "**/*.tsx", "**/*.test.ts"],
   "exclude": ["node_modules"]

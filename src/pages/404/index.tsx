@@ -1,6 +1,6 @@
 import SignDirectionIcon from 'mdi-react/SignDirectionIcon'
 
-import { Layout } from '@components'
+import { Layout } from '../../components'
 
 import styles from './404.module.scss'
 

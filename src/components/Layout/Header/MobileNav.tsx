@@ -4,8 +4,7 @@ import { camelCase } from 'lodash'
 import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
 import Link from 'next/link'
 
-import { buttonStyle, buttonLocation } from '@data'
-
+import { buttonStyle, buttonLocation } from '../../../data/tracking'
 import { NavLink } from '../navLinks'
 
 interface Props {

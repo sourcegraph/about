@@ -7,8 +7,8 @@ import MapMarkerIcon from 'mdi-react/MapMarkerIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import Link from 'next/link'
 
-import { Layout, ContentSection, ContentPage } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { Layout, ContentSection, ContentPage } from '../../components'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const title = 'Sourcegraph - Contact Sourcegraph'
 const description = 'Contact a real human being on our team.'

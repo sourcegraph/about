@@ -11,8 +11,8 @@ import {
     CustomerLogos,
     Layout,
     TwoColumnSection,
-} from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+} from '../../components'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const features: { id: string; description: string }[] = [
     {

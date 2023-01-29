@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { ContentSection, CoreFeatures, CtaSection, Layout, IntegrationsSection } from '@components'
+import { ContentSection, CoreFeatures, CtaSection, Layout, IntegrationsSection } from '../../components'
 
 import Hero from './_Hero'
 

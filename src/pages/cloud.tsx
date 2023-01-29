@@ -3,8 +3,8 @@ import { FunctionComponent } from 'react'
 import { FaGitAlt, FaLocationArrow } from 'react-icons/fa'
 import { MdOutlineAvTimer, MdBarChart } from 'react-icons/md'
 
-import { Layout, Hero, ContentSection, CtaSection, TwoColumnSection, Blockquote } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { Layout, Hero, ContentSection, CtaSection, TwoColumnSection, Blockquote } from '../components'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const Cloud: FunctionComponent = () => (
     <Layout

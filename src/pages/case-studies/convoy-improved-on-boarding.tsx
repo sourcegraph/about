@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection, Blockquote } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
+import { Layout, CaseStudyLayout, ContentSection, Blockquote } from '../../components'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 export const CaseStudy: FunctionComponent = () => (
     <Layout

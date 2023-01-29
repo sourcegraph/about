@@ -1,6 +1,6 @@
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 
-import { Layout, CustomerLogos, HubSpotForm } from '@components'
+import { Layout, CustomerLogos, HubSpotForm } from '../../components'
 
 import { slugs, slugData, type ContactPageProps } from './data'
 

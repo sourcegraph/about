@@ -4,10 +4,10 @@ import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
-import { Alert, Badge, Blockquote, Figure, HubSpotForm, TableWrapper, Video, YouTube } from '@components'
-import { buttonStyle, buttonLocation } from '@data'
-import { PostComponentProps } from '@interfaces/posts'
-import { formatDate } from '@util'
+import { Alert, Badge, Blockquote, Figure, HubSpotForm, TableWrapper, Video, YouTube } from '..'
+import { buttonStyle, buttonLocation } from '../../data/tracking'
+import { PostComponentProps } from '../../interfaces/posts'
+import { formatDate } from '../../util'
 
 type PostComponents = import('mdx/types').MDXComponents
 const components = { Alert, Badge, Blockquote, HubSpotForm, Figure, OpenInNewIcon, TableWrapper, Video, YouTube }
