@@ -80,13 +80,6 @@ const logos: Logo[] = [
         height: 42,
     },
     {
-        name: 'Cloudflare',
-        src: '/external-logos/cloudflare-logo.svg',
-        width: 137,
-        height: 51,
-        link: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
-    },
-    {
         name: 'Mercado Libre',
         src: '/external-logos/mercado-libre-logo.svg',
         width: 102,
