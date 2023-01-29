@@ -98,13 +98,14 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
         link: '/demo',
     },
     cta3 = (
-        <p className="tw-max-w-screen-xl tw-mx-auto tw-mt-xs tw-pl-sm">
+        <p className="tw-max-w-screen-xl tw-mx-auto tw-mt-xs tw-pl-sm tw-text-gray-200">
             Want to deploy yourself?{' '}
             <a
                 href="https://docs.sourcegraph.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Sourcegraph self-hosted solution"
+                className="tw-text-white"
                 data-button-style={buttonStyle.text}
                 data-button-location={buttonLocation.trySourcegraph}
                 data-button-type="cta"
