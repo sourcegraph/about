@@ -26,10 +26,7 @@ Our starting point is to make code easier to read for a wider set of developers.
 
 This is why we're indexing the entire open source universe on Sourcegraph cloud, and we’re announcing our first big milestone: indexing over 1M of the most-starred repositories on GitHub, which encompasses every repository with more than 12 stars. We're prioritizing by quality, because when you're searching over code, you care about finding the best function or best usage example, not just some random code snippet. By the end of the year, we will have grown our index to include every open source repository with more than 1 star on GitHub and GitLab (that’s 5M+ repos).
 
-We’re also making it easier for developers to search and understand their own code. In addition to setting up and managing a self-hosted Sourcegraph instance to search your own code, we’re launching a Public Beta for private code on Sourcegraph cloud. You can now connect Sourcegraph cloud to your private repositories to search and navigate your own public or private repositories on the cloud, making universal code search even more accessible to every dev. Try it for yourself by creating an account on Sourcegraph.com and adding your code:
-
-- [How to add open source to Sourcegraph.com](https://learn.sourcegraph.com/how-to-add-open-source-software-projects-to-sourcegraph)
-- [How to add private projects to Sourcegraph.com](https://learn.sourcegraph.com/how-to-add-private-code-repositories-to-sourcegraph)
+We’re also making it easier for developers to search and understand their own code. In addition to setting up and managing a self-hosted Sourcegraph instance to search your own code, we’re launching a Public Beta for private code on Sourcegraph cloud. You can now connect Sourcegraph cloud to your private repositories to search and navigate your own public or private repositories on the cloud, making universal code search even more accessible to every dev. Try it for yourself by creating an account on Sourcegraph.com and adding your code.
 
 While we’re focused on creating the best search experience for devs in the near-term, we’re looking forward to our [5-year vision](https://handbook.sourcegraph.com/company/strategy#5-year-vision) to make the universal code graph accessible to everyone.
 
@@ -64,4 +61,4 @@ Scaling universal code search to this size has been a massive and rewarding tech
 
 One of the ways in which we’re scaling Sourcegraph is by improving one of our upstream open source dependencies that handles indexing. We've written up a [blog post](https://about.sourcegraph.com/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/) describing how we were able to significantly reduce the memory usage of Zoekt, an open source trigram-based code search engine written by the brilliant Han-Wen Nienhuys (who will also be appearing on an upcoming episode of the Sourcegraph podcast). We plan to upstream this change and will talk more about how we plan to contribute to Zoekt in a future post.
 
-In the meantime, try your first search on Sourcegraph.com and let us know what you think on [Twitter](https://twitter.com/sourcegraph). If you’re not sure where to start, check out our tutorial, [3 ways to search with Sourcegraph](https://learn.sourcegraph.com/three-ways-to-search-video).
+In the meantime, try your first search on Sourcegraph.com and let us know what you think on [Twitter](https://twitter.com/sourcegraph). If you’re not sure where to start, check out our [docs](https://docs.sourcegraph.com/code_search).
