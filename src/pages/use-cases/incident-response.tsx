@@ -15,7 +15,6 @@ import {
     QuoteCarousel,
     ResourceList,
     ThreeUpText,
-    TwoColumnSection,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -268,64 +267,6 @@ const IncidentResponsePage: FunctionComponent = () => (
             <ThreeUpText
                 title="Identify the root cause of an incident and fix it everywhere, fast"
                 items={threeUpTextItems}
-            />
-        </ContentSection>
-
-        <ContentSection parentClassName="sg-bg-gradient-venus">
-            <TwoColumnSection
-                leftColumn={
-                    <>
-                        <h2 className="mb-4 max-w-500">Incident response is stressful and overwhelming</h2>
-                        <p>
-                            Current tools don't enable teams to quickly get to the root cause of an incident and ensure
-                            it doesn't reoccur. What does that mean for you?
-                        </p>
-                        <ul>
-                            <li className="mt-1">
-                                Outages and degraded performance persist while development teams look for causes,
-                                leading to lost revenue and frustrated customers.
-                            </li>
-                            <li className="mt-1">
-                                Incidents can reoccur if developers can't find the root cause, leaving your company with
-                                a reputation for unreliability and missed SLAs.
-                            </li>
-                            <li className="mt-1">
-                                Incident response often relies on knowledge silos, which are neither scalable nor
-                                sustainable.
-                            </li>
-                            <li className="mt-1">
-                                Company leaders struggle to gain visibility into in-progress incident responses and
-                                communicate timelines to stakeholders.
-                            </li>
-                        </ul>
-                    </>
-                }
-                rightColumn={
-                    <div className="bg-white tw-p-8 lg:tw-ml-10">
-                        <h4>Cloudflare quickly addresses root-cause incidents</h4>
-                        <p>
-                            Cloudflare engineers use Sourcegraph's code intelligence platform to refactor and debug
-                            faster. With Sourcegraph, they can quickly identify out-of-date code libraries by only
-                            searching certain repositories while excluding specific file types. And it's easier to
-                            search for error logs. As a result, the team can feel confident they've addressed each
-                            issue.
-                        </p>
-                        <Link
-                            href="/case-studies/cloudflare-accelerates-debugging-and-improves-security"
-                            title="Read the Cloudflare case study"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            Read the Cloudflare case study
-                        </Link>
-                        <img
-                            src="/external-logos/cloudflare-logo.svg"
-                            alt="Cloudflare logo"
-                            className="mt-3 tw-mx-auto tw-flex max-w-150"
-                        />
-                    </div>
-                }
             />
         </ContentSection>
 
