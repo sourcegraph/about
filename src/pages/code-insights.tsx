@@ -49,7 +49,7 @@ const items = [
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LOG_4_J_INCIDENT_INSIGHT} />,
     },
     {
-        title: 'Find vulernable OpenSSL versions in the Python Ecosystem',
+        title: 'Find vulnerable OpenSSL versions in the Python Ecosystem',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={OPENSSL_PYTHON} />,
     },
     {
