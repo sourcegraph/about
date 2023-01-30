@@ -29,27 +29,19 @@ So I built [conc](https://github.com/sourcegraph/conc), a library that makes wri
 <td>
 
 ```go
-type caughtPanicError struct {
+type propagatedPanic struct {
     val   any
     stack []byte
 }
 
-func (e *caughtPanicError) Error() string {
-    return fmt.Sprintf(
-        "panic: %q\n%s",
-        e.val,
-        string(e.stack)
-    )
-}
-
 func main() {
-    done := make(chan error)
+    done := make(chan *propagatedPanic)
     go func() {
         defer func() {
             if v := recover(); v != nil {
-                done <- &caughtPanicError{
-                    val: v,
-                    stack: debug.Stack()
+                done <- &propagatedPanic{
+                    val:   v,
+                    stack: debug.Stack(),
                 }
             } else {
                 done <- nil
@@ -57,9 +49,8 @@ func main() {
         }()
         doSomethingThatMightPanic()
     }()
-    err := <-done
-    if err != nil {
-        panic(err)
+    if val := <-done; val != nil {
+        panic(val)
     }
 }
 ```
