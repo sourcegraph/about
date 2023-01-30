@@ -71,7 +71,7 @@ func main() {
 
 ## Some background: solving the same problem many times and building an internal library
 
-I've often found myself writing similar code to handle concurrency and panics in Go. In many Sourcegraph projects, we rely heavily on concurrent Go code to efficiently index billions of lines of code, so after the Go 1.18 release in March 2022 finally [introduced Generics](https://go.dev/blog/why-generics), I realized that this could fix a lot of the frustrations I'd had before, and make a concurrency library a lot more succinct.
+I've often found myself writing similar code to handle common concurrency patterns and panics in Go. In many Sourcegraph projects, we rely heavily on concurrent Go code to efficiently search billions of lines of code, so after the Go 1.18 release in March 2022 [introduced Generics](https://go.dev/blog/why-generics), I realized that this could fix a lot of the frustrations I'd had before, and make a concurrency library a lot more succinct.
 
 Previously when I'd written helper functions to better handle concurrency, I needed different functions for different data types. This meant writing separate functions for strings, Tasks, or any other data type that I was working with. Now that Generics are available, it's easy to operate over whatever data types are present in a consistent way.
 
