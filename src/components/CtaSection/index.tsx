@@ -78,7 +78,7 @@ const Cta: FunctionComponent<Cta> = ({ text, ctaStyle, link }) => {
  * This is the self-hosted CTA message
  */
 const Cta3: FunctionComponent = () => {
-    const isDark = document.querySelector('footer.navbar-dark')
+    const isDark = typeof window !== 'undefined' ? document.querySelector('footer.navbar-dark') : false
     return (
         <p className={classNames('tw-max-w-screen-xl tw-mx-auto tw-mt-xs tw-pl-sm', {'tw-text-gray-300': isDark})}>
             Want to deploy yourself?{' '}
