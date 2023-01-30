@@ -80,7 +80,7 @@ const Cta: FunctionComponent<Cta> = ({ text, ctaStyle, link }) => {
 const Cta3: FunctionComponent = () => {
     const isDark = document.querySelector('footer.navbar-dark')
     return (
-        <p className={classNames("tw-max-w-screen-xl tw-mx-auto tw-mt-xs tw-pl-sm", {'tw-text-gray-300': isDark})}>
+        <p className={classNames('tw-max-w-screen-xl tw-mx-auto tw-mt-xs tw-pl-sm', {'tw-text-gray-300': isDark})}>
             Want to deploy yourself?{' '}
             <a
                 href="https://docs.sourcegraph.com"
