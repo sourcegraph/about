@@ -73,7 +73,7 @@ func main() {
 
 I've often found myself writing similar code to handle common concurrency patterns and panics in Go. In many Sourcegraph projects, we rely heavily on concurrent Go code to efficiently search billions of lines of code, so after the Go 1.18 release in March 2022 [introduced Generics](https://go.dev/blog/why-generics), I realized that this could fix a lot of the frustrations I'd had before, and make a concurrency library a lot more succinct.
 
-Previously when I'd written helper functions to better handle concurrency, I needed different functions for different data types. This meant writing separate functions for strings, Tasks, or any other data type that I was working with. Now that Generics are available, it's easy to operate over whatever data types are present in a consistent way.
+Previously when I'd written helper functions to better handle concurrency, I needed different functions for different data types. This meant writing separate functions for strings, Tasks, or any other data type that I was working with. Now that generics are available, it's easy to operate over whatever data types are present in a consistent way.
 
 Around six months ago, I started working on an internal library to generalize how we use Goroutines. Internally, we've used this library extensively already, but now I've cleaned up the code, documented everything, and released it as an open-source package for other developers and teams to use as well.
 
