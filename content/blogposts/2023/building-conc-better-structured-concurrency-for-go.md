@@ -75,7 +75,7 @@ I've often found myself writing similar code to handle common concurrency patter
 
 Previously when I'd written helper functions to better handle concurrency, I needed different functions for different data types. This meant writing separate functions for strings, Tasks, or any other data type that I was working with. Now that generics are available, it's easy to operate over whatever data types are present in a consistent way.
 
-Around six months ago, I started working on an internal library to generalize how we use Goroutines. Internally, we've used this library extensively already, but now I've cleaned up the code, documented everything, and released it as an open-source package for other developers and teams to use as well.
+Around six months ago, I started working on an internal library to generalize how we use goroutines. Internally, we've used this library extensively already, but now I've cleaned up the code, documented everything, and released it as an open-source package for other developers and teams to use as well.
 
 I found time to do the majority of this cleaning and documenting while I was trapped at an airport over the Christmas break due to the flight delays across the US in December. I wrote the [README](https://github.com/sourcegraph/conc), added and cleaned up the comments and docstrings, and added and moved the code to a public repository with an MIT license. I even had time to throw together a colorful logo to represent the splitting and re-joining of multiple processes before I finally got to board my plane.
 
