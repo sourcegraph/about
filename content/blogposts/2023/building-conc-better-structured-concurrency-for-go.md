@@ -83,7 +83,7 @@ I found time to do the majority of this cleaning and documenting while I was tra
 
 ## Diving into goroutines, concurrency, panics and scope
 
-With Go, concurrency is already a first-class citizen, so it's generally a pretty low bar to add concurrent code to a Go project. But doing it _correctly_ is still often hard, and there are lots of mistakes I've seen (and made) in concurrent go code, such as:
+With Go, concurrency is already a first-class citizen, so it's generally a pretty low bar to add concurrent code to a Go project. But doing it _correctly_ can still be hard, and there are lots of mistakes I've seen (and made) in concurrent go code, such as:
 
 * Not cleaning up resources correctly
 * Causing deadlocks
