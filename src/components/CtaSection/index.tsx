@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactNode } from 'react'
+import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 import Link from 'next/link'
@@ -20,7 +20,6 @@ interface CtaSection {
     description?: string
     cta1?: Cta
     cta2?: Cta | boolean
-    cta3?: ReactNode | boolean
 }
 
 /**
@@ -76,13 +75,6 @@ const Cta: FunctionComponent<Cta> = ({ text, ctaStyle, link }) => {
 
 /**
  * This is our CTA Section as defined in our DLS. Please refer to it for specs.
- *
- * @param props - component props
- * @param props.title - a title for the section
- * @param props.description - a description for the section
- * @param props.cta1 - cta item 1
- * @param props.cta2 - cta item 2
- * @param props.cta3 - cta item 3
  */
 export const CtaSection: FunctionComponent<CtaSection> = ({
     title = 'Try Sourcegraph on your code.',
@@ -97,29 +89,13 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
         ctaStyle: 'outlineButtonLight',
         link: '/demo',
     },
-    cta3 = (
-        <p className="tw-max-w-screen-xl tw-mx-auto tw-mt-xs tw-pl-sm">
-            Want to deploy yourself?{' '}
-            <a
-                href="https://docs.sourcegraph.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Sourcegraph self-hosted solution"
-                data-button-style={buttonStyle.text}
-                data-button-location={buttonLocation.trySourcegraph}
-                data-button-type="cta"
-            >
-                Try our self-hosted solution.
-            </a>
-        </p>
-    ),
 }) => {
     const windowWidth = useWindowWidth()
     const lgAndUp = windowWidth > breakpoints.lg
 
     return (
         <>
-            <div className="tw-bg-violet-700">
+            <div className="tw-bg-violet-700 tw-text-white">
                 <div
                     className="tw-max-w-screen-xl tw-mx-auto tw-bg-[center_left] tw-bg-repeat-y tw-grid tw-items-center tw-grid-cols-12 tw-min-h-[291px] tw-h-full tw-px-sm lg:tw-pl-0 tw-py-3xl"
                     // eslint-disable-next-line react/forbid-dom-props
@@ -127,7 +103,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                 >
                     <div className="tw-col-span-full md:tw-col-span-7 lg:tw-col-span-5 lg:tw-col-start-4">
                         <h2 className="tw-text-violet-200 tw-mb-sm">{title}</h2>
-                        <p className="tw-text-white tw-text-lg tw-max-w-2xl">{description}</p>
+                        <p className="tw-text-lg tw-max-w-2xl">{description}</p>
                     </div>
 
                     <div
@@ -153,8 +129,6 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                     </div>
                 </div>
             </div>
-
-            {cta3}
         </>
     )
 }
