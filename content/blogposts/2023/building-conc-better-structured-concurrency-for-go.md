@@ -235,7 +235,7 @@ My main goal with `conc` is that it should be hard to use incorrectly. Concurren
 
 This goal of "making it hard to use incorrectly" comes with tradeoffs. Specifically, it means some (potentially useful) features are unlikely to be added to `conc` because they would break this goal. Shortly after the library went public, I got a request to [add channels to `conc`](https://github.com/sourcegraph/conc/issues/56) and while I can see how a user of `conc` could find this valuable, I'd like to keep things "hard to misuse" wherever possible.
 
-![GitHub issues conversation](https://storage.googleapis.com/sourcegraph-assets/blog/upload_e8c695bc11b8f2a62ceafaefa0d354dd.png)
+![GitHub issues conversation](https://storage.googleapis.com/sourcegraph-assets/blog/upload_conc_e8c695bc11b8f2a62ceafa.png)
 
 ## Challenges I faced while building conc
 
