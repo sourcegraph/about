@@ -197,7 +197,7 @@ There are several other examples (along with the equivalent standard library cod
 * [Making concurrent code easier to read](https://github.com/sourcegraph/conc/blob/main/README.md#goal-3-make-concurrent-code-easier-to-read).
 
 
-## Using `conc` for parallel stream processing
+## Using conc for parallel stream processing
 
 At Sourcegraph, we do a lot of parallel processing of ordered streams. While searching large amounts of code, we often end up with streams of results that we want to post-process. Each result in the stream might require a network request, for example, to look up permission on a repository or to fetch the full file contents for a search result.
 
@@ -225,7 +225,7 @@ func streamFileContents(ctx context.Context, fileNames <-chan string, fileConten
 }
 ```
 
-## The goals of `conc`
+## The goals of conc
 
 `conc` is hopefully already useful to anyone writing concurrent Go code who wants a better way to handle panics, avoid leaking Goroutines, or simply have more readable concurrent code. It's still a young project though, and I expect it to evolve and improve over time. One thing I've had to think about is what I *don't* want it to be. 
 
@@ -237,7 +237,7 @@ This goal of "making it hard to use incorrectly" comes with tradeoffs. Specifica
 
 ![GitHub issues conversation](https://storage.googleapis.com/sourcegraph-assets/blog/upload_e8c695bc11b8f2a62ceafaefa0d354dd.png)
 
-## Challenges I faced while building `conc`
+## Challenges I faced while building conc
 
 `conc` is quite a small library, coming in at just under 2000 lines of Go code, but it took a lot of tweaking to get it to a point where I was happy to release it publicly.
 
@@ -261,7 +261,7 @@ For example, at Sourcegraph, we generally use `GO_MAX_PROCS` to limit goroutines
 
 Panics aren't meant to be used as a way of handling exceptions, but I need `conc` to behave well even when a user gives it code that panics. For example, I ran into [this issue](https://github.com/golang/go/issues/25448) that when you intercept a panic with a `nil` value, it will look like nothing actually went wrong, though that has now [been fixed](https://go-review.googlesource.com/c/go/+/461956?tab=comments).
 
-## Releasing `conc` to the world
+## Releasing conc to the world
 
 After I made the GitHub repository public, I posted about `conc` internally. I expected my coworkers to look over it and maybe give some comments or criticism, but it quickly got shared over [to Reddit](https://www.reddit.com/r/golang/comments/1022agb/conc_better_structured_concurrency_for_go/), where it received a bit of (mainly positive) attention. There's since been some discussion [on GitHub](https://github.com/sourcegraph/conc/issues?q=is%3Aissue+is%3Aclosed) and [on Hacker News](https://news.ycombinator.com/item?id=34344514) and I've made some small tweaks based on feedback.
 
