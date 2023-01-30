@@ -4,7 +4,7 @@ authors:
   - name: Camden Cheek
     url: https://twitter.com/camdendcheek
 publishDate: 2023-01-30T10:00-07:00
-description: 'We built and release conc, an open-source library which makes it easier and safer to write concurrent code in Go.'
+description: 'We built and released conc, an open-source library which makes it easier and safer to write concurrent code in Go.'
 tags: [blog]
 slug: 'building-conc-better-structured-concurrency-for-go'
 published: true
