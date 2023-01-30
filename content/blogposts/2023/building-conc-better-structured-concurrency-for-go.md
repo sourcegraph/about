@@ -77,7 +77,7 @@ Previously when I'd written helper functions to better handle concurrency, I nee
 
 Around six months ago, I started working on an internal library to generalize how we use goroutines. Internally, we've used this library extensively already, but now I've cleaned up the code, documented everything, and released it as an open-source package for other developers and teams to use as well.
 
-I found time to do the majority of this cleaning and documenting while I was trapped at an airport over the Christmas break due to the flight delays across the US in December. I wrote the [README](https://github.com/sourcegraph/conc), added and cleaned up the comments and docstrings, and added and moved the code to a public repository with an MIT license. I even had time to throw together a colorful logo to represent the splitting and re-joining of multiple processes before I finally got to board my plane.
+I found time to do the majority of this cleaning and documenting while I was trapped at an airport over the Christmas break due to the flight delays across the US in December. I wrote the [README](https://github.com/sourcegraph/conc), added and cleaned up the comments and docstrings, and added and moved the code to a separate repository with a permissive license. I even had time to throw together a colorful logo that represents the spawning and joining of goroutines before I finally got to board my plane.
 
 ![Conc logo](https://storage.googleapis.com/sourcegraph-assets/blog/upload_b3d7822a2033a3f8c2d98966767466c7.png)
 
@@ -87,39 +87,30 @@ With Go, concurrency is already a first-class citizen, so it's generally a prett
 
 * Not cleaning up resources correctly
 * Causing deadlocks
-* Crashing the entire program because of a panic in a single Goroutine
+* Crashing the entire program because of a panic in a single goroutine
 
-Sometimes you _want_ your entire program to crash if one Goroutine panics, but in many cases you don't. At Sourcegraph we use Goroutines to efficiently index massive amounts of source code, and we want to avoid re-doing work that we've already (successfully) completed, even if there's a partial failure.
+Sometimes you _want_ your entire program to crash if one goroutine panics, but in many cases you don't. At Sourcegraph we use lots of goroutines to efficiently search massive amounts of source code, and we want to avoid downtime even if a panic sneaks in.
 
 ### Better panic handling
 
-This was the first challenge with using naked Goroutines. With Go's concurrency, you don't get any kind of scoping. Whenever you spawn a new Goroutine, it inherits the exact permissions and access as the Goroutine that spawned it. This makes it challenging to elegantly recover from a panicking Goroutine, and also difficult to log and diagnose some issues as the panic stacktrace ends too soon and doesn't include (often vital) information from the Goroutine that spawned it.
+This was the first challenge with using naked goroutines. With Go's concurrency, you don't get any kind of scoping. When you spawn a new goroutine, it is not attached to its parent in any way. This makes it challenging to elegantly recover from a panicking goroutine, and also difficult to debug because the stacktrace doesn't include (often vital) information from the goroutine that spawned it.
 
 One way to deal with this using the standard Go library is by using a deferred function and manually passing the stacktrace around, as in the example included before.
 
 
 ```go
-type caughtPanicError struct {
+type propagatedPanic struct {
     val   any
     stack []byte
 }
-
-func (e *caughtPanicError) Error() string {
-    return fmt.Sprintf(
-        "panic: %q\n%s",
-        e.val,
-        string(e.stack)
-    )
-}
-
 func main() {
-    done := make(chan error)
+    done := make(chan *propagatedPanic)
     go func() {
         defer func() {
             if v := recover(); v != nil {
-                done <- &caughtPanicError{
-                    val: v,
-                    stack: debug.Stack()
+                done <- &propagatedPanic{
+                    val:   v,
+                    stack: debug.Stack(),
                 }
             } else {
                 done <- nil
@@ -127,18 +118,17 @@ func main() {
         }()
         doSomethingThatMightPanic()
     }()
-    err := <-done
-    if err != nil {
-        panic(err)
+    if val := <-done; val != nil {
+        panic(val)
     }
 }
 ```
 
 This adds 33 lines of boilerplate code for a one-line function.
 
-Here, the main function starts a Goroutine that runs the function doSomethingThatMightPanic() which could potentially panic. We define a deferred function that will  execute when the Goroutine exits. The deferred function uses `recover()` to get the value of the panic if there is one and uses the `caughtPanicError` struct with the value of the panic and the stacktrace to send the details of the caughtPanicError if required.
+Here, the main function starts a goroutine that runs the function `doSomethingThatMightPanic()` which could potentially panic. We define a deferred function that will  execute when the goroutine exits. The deferred function uses `recover()` to get the value of the panic (if there is one) then wraps it in the `propagatedPanic` struct along with the stacktrace for debugging.
 
-This is essentially the boilerplate that `conc` wraps away for you, letting you write the following instead:
+Because all concurrency in `conc` is scoped, it can do all of this for you, letting you write the following instead:
 
 ```go
 func main() {
@@ -149,9 +139,8 @@ func main() {
 }
 ```
 
-Because any panics and errors propagate up together, you can handle them gracefully using conc's provided `WaitGroup`.
 
-### Simpler concurrent processing with `Pool` and `iter`
+### Simpler concurrent processing with `pool` and `iter`
 
 A common pattern in any kind of parallel processing is to do a bunch of stuff in parallel and then collect the results into a single data structure. For example, any time you need to make multiple network requests but don't want to be blocked by the total latency for all round trips, you can make all the network calls at once and then wait until the last one has completed.
 
@@ -215,7 +204,7 @@ func fetchLastNames2(ctx context.Context, firstNames []string) ([]string, error)
 }
 ```
 
-There are several other examples (along with the equivalent standard library code) in the [conc GitHub](https://github.com/sourcegraph/conc/) based around `conc`'s three main goals:
+There are several other examples (along with the equivalent standard library code) in the [GitHub README](https://github.com/sourcegraph/conc/) based around `conc`'s three main goals:
 
 * [Making it harder to leak Goroutines](https://github.com/sourcegraph/conc/blob/main/README.md#goal-1-make-it-harder-to-leak-goroutines)
 * [Handling panics gracefully](https://github.com/sourcegraph/conc/blob/main/README.md#goal-2-handle-panics-gracefully)
@@ -224,7 +213,7 @@ There are several other examples (along with the equivalent standard library cod
 
 ## Using conc for parallel stream processing
 
-Something else conc does taht is more specific to our usecase as Sourcegraph is parallel stream processing. While indexing large amounts of code, we often end up with multiple streams of results that we want to post-process. Each result in the stream requires at least one network request, for example to look up permission on a repository or to fetch the rest of a file for a specific query match.
+At Sourcegraph, we do a lot of parallel processing of ordered streams. While searching large amounts of code, we often end up with streams of results that we want to post-process. Each result in the stream might require a network request, for example to look up permission on a repository or to fetch the full file contents for a search result.
 
 For this we always want to:
 
@@ -234,7 +223,7 @@ For this we always want to:
 
 It's difficult to get all three of these right at the same time, so one of the goals I had while writing [Conc's Stream package](https://pkg.go.dev/github.com/sourcegraph/conc/stream#Stream) is to abstract away as much of the complexity for that workflow as possible.
 
-Now I can write custom functions to handle multiple file streams at once using code simliar to the example below. This efficiently and safely gets the contents of each file from a list of file names.
+Now I can I can fetch the contents of multiple files at once using code similar to the example below. This efficiently and safely gets the contents of each file from while still maintaining the original order of the stream.
 
 ```go
 func streamFileContents(ctx context.Context, fileNames <-chan string, fileContents chan<- string) {
@@ -258,7 +247,7 @@ My main goal with `conc` is that it should be hard to use incorrectly. Concurren
 
 ![Puppies parallel programming](https://storage.googleapis.com/sourcegraph-assets/blog/upload_ee1c4226c42ba701cde2324025599202.png)
 
-This goal of "make it hard to use incorrectly" comes with tradeoffs. Specifically, it means some (potentially useful) features are unlikely to be added to conc because they would break this goal. Shortly after the library went public I got a request to [add channels to conc](https://github.com/sourcegraph/conc/issues/56) and while I can see how some advanced user of conc could get value from this, I'd rather keep to the "hard to misuse" goal wherever possible.
+This goal of "make it hard to use incorrectly" comes with tradeoffs. Specifically, it means some (potentially useful) features are unlikely to be added to conc because they would break this goal. Shortly after the library went public I got a request to [add channels to conc](https://github.com/sourcegraph/conc/issues/56) and while I can see how a user of conc could find this valuable, I'd like to keep things "hard to misuse" wherever possible.
 
 ![GitHub issues conversation](https://storage.googleapis.com/sourcegraph-assets/blog/upload_e8c695bc11b8f2a62ceafaefa0d354dd.png)
 
@@ -280,13 +269,13 @@ To me, the API feels very natural now and most of the tweaks I did were to exten
 
 Often I found that I had to reduce the feature set of Conc in order to keep it simple and safe. I've made some slight tweaks after getting some feedback from users that further these goals. 
 
-For example, at Sourcegraph we generally use `GO_MAX_PROCS` to limit Goroutines to the number of core available. For us, that's often a sane default, but Go's scheduler can happily spawn 1000s of routines. For a majority of users, having this somewhat arbitrary limit was **surprising**, so by following the goal of "follow the principle of least surprise" it made sense to remove this.
+For example, at Sourcegraph we generally use `GO_MAX_PROCS` to limit Goroutines to the number of core available. For us, that's often a sane default, but Go's scheduler can happily handle 1000s of routines. For a majority of users, having this somewhat arbitrary limit was **surprising**, so by following the goal of "follow the principle of least surprise" it made sense to remove this.
 
-### challenge #2: Discovering edge cases while handling panics
+### challenge #2: Discovering edge cases with panics
 
-Panics aren't meant to be used as a way of exception handling, but while writing `conc` I needed to be able to catch and handle panics. One thing I learned about Go in spite of coding in it for years is that when you intercept a panic with a `nil` value, it will look like nothing actually went wrong.
+Panics aren't meant to be used as a way of exception handling, but I need `conc` to behave well even when a user gives it code that panics. One thing I learned about Go in spite of coding in it for years is that when you intercept a panic with a `nil` value, it will look like nothing actually went wrong.
 
-For example, running hte following code will print "did not panic", even though a panic occurs.
+For example, running the following code will print "did not panic", even though a panic occurs.
 
 ```go
 package main
