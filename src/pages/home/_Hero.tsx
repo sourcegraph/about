@@ -94,18 +94,28 @@ const Hero: FunctionComponent = () => {
                         playsInline={true}
                         controls={true}
                         title="Sourcegraph demo video"
+                        // Required for cross-origin caption track to work
+                        crossOrigin="anonymous"
+                        data-cookieconsent="ignore"
+                        poster="https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/homepage-demo-202301-1_poster.png"
                     >
                         <track
                             default={true}
                             label="English"
                             kind="captions"
                             srcLang="en"
-                            src="https://sourcegraphstatic.com/homepage-demo-202301-0.vtt"
+                            src="https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/homepage-demo-202301-1.vtt"
+                            data-cookieconsent="ignore"
                         />
-                        <source type="video/webm" src="https://sourcegraphstatic.com/homepage-demo-202301-0.webm" />
+                        <source
+                            type="video/webm"
+                            src="https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/homepage-demo-202301-0.webm"
+                            data-cookieconsent="ignore"
+                        />
                         <source
                             type="video/mp4"
-                            src="https://sourcegraphstatic.com/homepage-demo-202301-0smaller.mp4"
+                            src="https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/homepage-demo-202301-1.mp4"
+                            data-cookieconsent="ignore"
                         />
                     </video>
                 </div>
