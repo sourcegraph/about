@@ -268,7 +268,6 @@ const PricingPage: FunctionComponent = () => {
                     ctaStyle: 'primaryButtonWhite',
                 }}
                 cta2={false}
-                cta3={false}
             />
 
             <ContentSection className="tw-grid tw-grid-cols-5">
