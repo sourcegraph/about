@@ -1,8 +1,8 @@
 ---
-title: 'Building Conc: better structured concurrency for go'
+title: 'Building conc: better structured concurrency for go'
 authors:
   - name: Camden Cheek
-    url: https://twitter.com/camdendcheek
+    url: https://github.com/camdencheek 
 publishDate: 2023-01-30T10:00-07:00
 description: 'We built and released conc, an open-source library which makes it easier and safer to write concurrent code in Go.'
 tags: [blog]
@@ -12,13 +12,11 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/conc-og-social
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/conc-og-social.png 
 ---
 
-# Building Conc: better structured concurrency for go
-
 Go was already designed to make concurrency easier than it is in other languages, but at Sourcegraph I still found myself running into the same problems when writing concurrent code.
 
 In particular, it is difficult to write concurrent code that operates reasonably in the face of panics. We don't want the entire process to crash when a panic occurs in a spawned goroutine, and we want to avoid other problems that can be triggered by panics like deadlocks or leaked goroutines. Go does not provide an easy way to do this natively.
 
-So I built [conc](https://github.com/sourcegraph/conc), a library that makes writing concurrent code more elegant and reduces the amount of boilerplate code. The code below shows how much boilerplate you can reduce when using `conc` instead of the Go standard library.
+So I built [`conc`](https://github.com/sourcegraph/conc), a library that makes writing concurrent code more elegant and reduces the amount of boilerplate code. The code below shows how much boilerplate you can reduce when using `conc` instead of the Go standard library.
 
 <table>
 <tr>
@@ -79,7 +77,7 @@ Around six months ago, I started working on an internal library to generalize ho
 
 I found time to do the majority of this cleaning and documenting while I was trapped at an airport over the Christmas break due to the flight delays across the US in December. I wrote the [README](https://github.com/sourcegraph/conc), added and cleaned up the comments and docstrings, and added and moved the code to a separate repository with a permissive license. I even had time to throw together a colorful logo that represents the spawning and joining of goroutines before I finally got to board my plane.
 
-![Conc logo](https://storage.googleapis.com/sourcegraph-assets/blog/upload_b3d7822a2033a3f8c2d98966767466c7.png)
+![conc logo](https://storage.googleapis.com/sourcegraph-assets/blog/upload_b3d7822a2033a3f8c2d98966767466c7.png)
 
 ## Diving into goroutines, concurrency, panics and scope
 
@@ -140,25 +138,13 @@ func main() {
 ```
 
 
-### Simpler concurrent processing with `pool` and `iter`
+### Simpler concurrent processing with pool and iter
 
 A common pattern in any kind of parallel processing is to do a bunch of stuff in parallel and then collect the results into a single data structure. For example, any time you need to make multiple network requests but don't want to be blocked by the total latency for all round trips, you can make all the network calls at once and then wait until the last one has completed.
 
 When using Go's standard library, you'd usually create a `sync.WaitGroup` and a deferred function. This also requires a bunch of boilerplate code that `conc` makes unnecessary. As an illustrative example, consider a function that fetches the last name of a user over a network given a firstname.
 
 ```
-package main
-
-import (
-    "context"
-    "fmt"
-    "io"
-    "net/http"
-
-    "github.com/sourcegraph/conc/iter"
-    "github.com/sourcegraph/conc/pool"
-)
-
 func fetchLastName(ctx context.Context, firstName string) (string, error) {
     req, err := http.NewRequestWithContext(
         ctx,
@@ -221,7 +207,7 @@ For this we always want to:
 * Show the results to the user as soon as possible
 * Maintain the order of the stream (beacuse we've already ranked the results)
 
-It's difficult to get all three of these right at the same time, so one of the goals I had while writing [Conc's Stream package](https://pkg.go.dev/github.com/sourcegraph/conc/stream#Stream) is to abstract away as much of the complexity for that workflow as possible.
+It's difficult to get all three of these right at the same time, so one of the goals I had while writing [`conc`'s Stream package](https://pkg.go.dev/github.com/sourcegraph/conc/stream#Stream) is to abstract away as much of the complexity for that workflow as possible.
 
 Now I can I can fetch the contents of multiple files at once using code similar to the example below. This efficiently and safely gets the contents of each file from while still maintaining the original order of the stream.
 
@@ -239,21 +225,21 @@ func streamFileContents(ctx context.Context, fileNames <-chan string, fileConten
 }
 ```
 
-## The goals of `conc`
+## The goals of conc
 
-Conc is hopefully already useful to anyone writing concurrent Go code who wants a better way to handle panics, avoid leaking Goroutines, or simply have more readable concurrent code. It's still a young project though and I expect it to evolve and improve over time. One thing I've had to think about is what I *don't* want it to be. 
+`Conc` is hopefully already useful to anyone writing concurrent Go code who wants a better way to handle panics, avoid leaking Goroutines, or simply have more readable concurrent code. It's still a young project though and I expect it to evolve and improve over time. One thing I've had to think about is what I *don't* want it to be. 
 
 My main goal with `conc` is that it should be hard to use incorrectly. Concurrent code is infamous for causing headaches and hard-to-identify bugs, and while many developers might feel like they are smart enough to avoid the problems associated with concurrent programming, in reality these bugs can burn anyone.
 
 ![Puppies parallel programming](https://storage.googleapis.com/sourcegraph-assets/blog/upload_ee1c4226c42ba701cde2324025599202.png)
 
-This goal of "make it hard to use incorrectly" comes with tradeoffs. Specifically, it means some (potentially useful) features are unlikely to be added to conc because they would break this goal. Shortly after the library went public I got a request to [add channels to conc](https://github.com/sourcegraph/conc/issues/56) and while I can see how a user of conc could find this valuable, I'd like to keep things "hard to misuse" wherever possible.
+This goal of "make it hard to use incorrectly" comes with tradeoffs. Specifically, it means some (potentially useful) features are unlikely to be added to `conc` because they would break this goal. Shortly after the library went public I got a request to [add channels to `conc`](https://github.com/sourcegraph/conc/issues/56) and while I can see how a user of `conc` could find this valuable, I'd like to keep things "hard to misuse" wherever possible.
 
 ![GitHub issues conversation](https://storage.googleapis.com/sourcegraph-assets/blog/upload_e8c695bc11b8f2a62ceafaefa0d354dd.png)
 
 ## Challenges I faced while building conc
 
-Conc is quite a small library, coming in at just under 2000 lines of Go code, but it took a lot of tweaking to get it to a point where I was happy to release it publicly.
+`Conc` is quite a small library, coming in at just under 2000 lines of Go code, but it took a lot of tweaking to get it to a point where I was happy to release it publicly.
 
 ![SCC conc statistics](https://storage.googleapis.com/sourcegraph-assets/blog/upload_622f8a97c46fe4a1742ac48e45a35c2d.png)
 
@@ -267,40 +253,17 @@ To me, the API feels very natural now and most of the tweaks I did were to exten
 * They make it **hard to understand** what's actually happening under the hood
 * They contain **surprising** implementation details that catch users off guard
 
-Often I found that I had to reduce the feature set of Conc in order to keep it simple and safe. I've made some slight tweaks after getting some feedback from users that further these goals. 
+Often I found that I had to reduce the feature set of `conc` in order to keep it simple and safe. I've made some slight tweaks after getting some feedback from users that further these goals. 
 
 For example, at Sourcegraph we generally use `GO_MAX_PROCS` to limit Goroutines to the number of core available. For us, that's often a sane default, but Go's scheduler can happily handle 1000s of routines. For a majority of users, having this somewhat arbitrary limit was **surprising**, so by following the goal of "follow the principle of least surprise" it made sense to remove this.
 
 ### challenge #2: Discovering edge cases with panics
 
-Panics aren't meant to be used as a way of exception handling, but I need `conc` to behave well even when a user gives it code that panics. One thing I learned about Go in spite of coding in it for years is that when you intercept a panic with a `nil` value, it will look like nothing actually went wrong.
+Panics aren't meant to be used as a way of exception handling, but I need `conc` to behave well even when a user gives it code that panics. For example I ran into [this issue](https://github.com/golang/go/issues/25448) that when you intercept a panic with a `nil` value, it will look like nothing actually went wrong, though that has now [been fixed](https://go-review.googlesource.com/c/go/+/461956?tab=comments).
 
-For example, running the following code will print "did not panic", even though a panic occurs.
-
-```go
-package main
-
-func main() {
-	defer func() {
-		if r := recover(); r != nil {
-			println("caught a panic!")
-		} else {
-			println("did not panic")
-		}
-	}()
-
-	panic(nil)
-}
-```
-
-## Releasing `conc` to the world
+## Releasing conc to the world
 
 After I made the GitHub repository public, I posted about `conc` internally. I expected my coworkers to look over it and maybe give some comments or criticism, but it quickly got shared over [to Reddit](https://www.reddit.com/r/golang/comments/1022agb/conc_better_structured_concurrency_for_go/), where it received a bit of (mainly positive) attention. There's since been some discussion [on GitHub](https://github.com/sourcegraph/conc/issues?q=is%3Aissue+is%3Aclosed) and [on Hacker News](https://news.ycombinator.com/item?id=34344514) and I've made some small tweaks based on feedback.
 
-It's been fun to watch `conc` spreading across GitHub as people discover it. Currently there are [423 matches](https://sourcegraph.com/search?q=context%3Aglobal+sourcegraph%2Fconc&patternType=standard&sm=1&groupBy=repo) for `sourcegraph/conc`. Many of these are automatic summaries of trending repositories or similar, but it's also made its way for example into [Kong](https://sourcegraph.com/github.com/Kong/kubernetes-ingress-controller/-/blob/internal/dataplane/kong_client.go) already.
-
-If you're using or expecting to use `conc` in your own project, please continue the conversation. I'm keen to make `conc` the easiest and sanest way to manage concurrency in Go.
-
-Internally now I'm working on simplifying parts of the Sourcegraph codebase to use `conc` instead of naked Goroutines or other workarounds to handle panics in concurrent code. 
-
+If you're using or expecting to use `conc` in your own project, please continue the conversation. I'm keen to make `conc` the easiest and sanest way to manage concurrency in Go. You can [open a GitHub issue](https://github.com/sourcegraph/conc/issues) or [join the Sourcegraph Discord server](https://github.com/sourcegraph/conc/issues).
 
