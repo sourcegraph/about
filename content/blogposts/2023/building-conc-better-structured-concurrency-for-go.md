@@ -16,7 +16,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/conc-og-soci
 
 Go was already designed to make concurrency easier than it is in other languages, but at Sourcegraph I still found myself running into the same problems when writing concurrent code.
 
-Specifically, handling panics is difficult, because we don't want the entire process to crash when a panic occurs in a spawned Goroutine, but Go doesn't provide a clean way to isolate parent goroutines from panics spawned by subroutines.
+In particular, it is difficult to write concurrent code that operates reasonably in the face of panics. We don't want the entire process to crash when a panic occurs in a spawned goroutine, and we want to avoid other problems that can be triggered by panics like deadlocks or leaked goroutines. Go does not provide an easy way to do this natively.
 
 So I built [conc](https://github.com/sourcegraph/conc), a library that makes writing concurrent code more elegant and reduces the amount of boilerplate code. The code below shows how much boilerplate you can reduce when using `conc` instead of the Go standard library.
 
