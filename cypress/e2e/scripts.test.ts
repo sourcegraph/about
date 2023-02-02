@@ -36,14 +36,6 @@ describe('Third party scripts', () => {
     it('renders Cookiebot script in the head', () => {
         cy.get('#script-cookiebot').parent().should('have.prop', 'tagName').should('equal', 'HEAD')
     })
-
-    it('renders Triblio web personalization script in the head', () => {
-        cy.get('#script-triblio-personalization').parent().should('have.prop', 'tagName').should('equal', 'HEAD')
-    })
-
-    it('renders Triblio Analaytics and Overlay Cards script in the body', () => {
-        cy.get('#script-triblio-analytics').parent().should('have.prop', 'tagName').should('equal', 'BODY')
-    })
 })
 
 export {}

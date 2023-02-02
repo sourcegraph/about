@@ -6,9 +6,6 @@ export default class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
-                    {/* So that Triblio (and other third-party scripts) can read the full URL. More details here: https://learning.triblio.com/article/212-understanding-site-referrer-policy */}
-                    <meta name="referrer" content="no-referrer-when-downgrade" />
-
                     <meta charSet="utf-8" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
@@ -92,26 +89,6 @@ export default class MyDocument extends Document {
                         data-domain="about.sourcegraph.com"
                         src="https://plausible.io/js/plausible.js"
                         strategy="afterInteractive"
-                    />
-
-                    {/* Triblio "Webpage Personalization" */}
-                    {/* Triblio recommends this in the head which we follow with beforeInteractive */}
-                    <Script
-                        id="script-triblio-personalization"
-                        type="text/javascript"
-                        src="https://tribl.io/h.js?orgId=Yee6bMKj7QSARqAePdE8"
-                        async={true}
-                        strategy="beforeInteractive"
-                    />
-
-                    {/* Triblio "Analytics and Overlay Cards" */}
-                    {/* Triblio recommends this in the body which aligns with Next.js' recommendation for analytics */}
-                    <Script
-                        id="script-triblio-analytics"
-                        type="text/javascript"
-                        src="https://tribl.io/footer.js?orgId=Yee6bMKj7QSARqAePdE8"
-                        strategy="afterInteractive"
-                        defer={true}
                     />
                 </Head>
                 <body>
