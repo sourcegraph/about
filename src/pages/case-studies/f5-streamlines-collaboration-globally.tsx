@@ -9,7 +9,7 @@ export const CaseStudy: FunctionComponent = () => (
             description:
                 "With Sourcegraph, F5's global workforce can stay better connected and quickly solve problems across the entire codebase.",
         }}
-        className="navbar-dark tw-bg-black"
+        className="tw-bg-black"
     >
         <CaseStudyLayout
             customer="F5"

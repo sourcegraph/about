@@ -22,6 +22,7 @@ import {
 } from '../components'
 import { DownloadAppButton } from '../components/DownloadAppButton'
 import { buttonLocation, buttonStyle } from '../data/tracking'
+import { SHOW_APP } from '../components/ShowApp'
 
 const StartFreeButton: FunctionComponent<{ className?: string }> = ({ className }) => (
     <a
@@ -142,9 +143,6 @@ const PLAN_COLORS: Record<
 const PricingPage: FunctionComponent = () => {
     const [activeKey, setActiveKey] = useState<number | null>(null)
 
-    // Viewing the page with ?dev shows the new "For individual devs" Sourcegraph App option.
-    const showForIndividualDevs = true //  useRouter().query.dev !== undefined
-
     return (
         <Layout
             meta={{
@@ -158,7 +156,7 @@ const PricingPage: FunctionComponent = () => {
                     <h1>Pricing</h1>
                     <p className="tw-text-lg tw-pt-2">
                         Sourcegraph code intelligence maximizes code efficiency and security&mdash;
-                        {showForIndividualDevs ? (
+                        {SHOW_APP ? (
                             <>for individual devs up to the world's largest software teams.</>
                         ) : (
                             <>for every dev team.</>
@@ -170,10 +168,10 @@ const PricingPage: FunctionComponent = () => {
             <ContentSection
                 className={classNames(
                     'tw-grid tw-grid-cols-1 tw-gap-sm',
-                    showForIndividualDevs ? 'md:tw-grid-cols-9' : 'md:tw-grid-cols-8'
+                    SHOW_APP ? 'md:tw-grid-cols-9' : 'md:tw-grid-cols-8'
                 )}
             >
-                {showForIndividualDevs && (
+                {SHOW_APP && (
                     <div className="tw-col-span-full lg:tw-col-span-3 tw-self-start">
                         <h5 className="tw-bg-vermillion-100 tw-text-vermillion-500 tw-font-normal badge tw-block tw-mb-xxs tw-p-xxs">
                             For individual devs
@@ -194,13 +192,8 @@ const PricingPage: FunctionComponent = () => {
                         />
                     </div>
                 )}
-                <div
-                    className={classNames(
-                        'tw-col-span-full lg:tw-col-span-6',
-                        showForIndividualDevs ? '' : 'lg:tw-col-start-2'
-                    )}
-                >
-                    {showForIndividualDevs && (
+                <div className={classNames('tw-col-span-full lg:tw-col-span-6', SHOW_APP ? '' : 'lg:tw-col-start-2')}>
+                    {SHOW_APP && (
                         <h5 className="tw-bg-violet-100 tw-text-violet-600 tw-font-normal badge tw-block tw-mb-xxs tw-p-xxs">
                             For organizations
                         </h5>

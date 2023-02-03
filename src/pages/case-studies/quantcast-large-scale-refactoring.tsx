@@ -9,7 +9,7 @@ export const CaseStudy: FunctionComponent = () => (
             description:
                 'Learn how after discovering and deploying Sourcegraph, Quantcast was able to do major refactors with confidence.',
         }}
-        className="tw-bg-black navbar-dark"
+        className="tw-bg-black"
     >
         <CaseStudyLayout
             customer="Quantcast"

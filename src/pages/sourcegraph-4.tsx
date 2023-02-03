@@ -28,7 +28,6 @@ const Sourcegraph4: FunctionComponent = () => (
             image: 'https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/meta/sourcegraph-4-post-launch.png',
         }}
         heroAndHeaderClassName="tw-bg-[url('/backgrounds/starship-launch-pills-large.svg')] tw-bg-no-repeat tw-bg-cover tw-bg-center"
-        className="navbar-dark"
         hero={
             <div className="tw-px-sm tw-py-3xl md:tw-py-5xl">
                 <div className="tw-max-w-[850px] tw-mx-auto tw-text-center tw-text-white">

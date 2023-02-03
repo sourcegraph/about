@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import { NavLink, navLinks } from '../navLinks'
 
 import DesktopNav from './DesktopNav'
+import { HorizontalDivider } from './HorizontalDivider'
 import MobileNav from './MobileNav'
 
 interface Props {
@@ -31,9 +32,6 @@ export const Header: FunctionComponent<Props> = props => {
 
     const [lastScrollPosition, setLastScrollPosition] = useState<number>(0)
     const [sticky, setSticky] = useState<boolean>(false)
-
-    const isDarkNav = props.className?.includes('navbar-dark')
-    const isPurpleNav = props.className?.includes('navbar-purple')
 
     /**
      * This checks the scroll position to see if the viewport has been
@@ -70,27 +68,28 @@ export const Header: FunctionComponent<Props> = props => {
         parentElement!.style.paddingTop = `${navHeight}px`
     })
 
-    const navStyle = classNames('header navbar py-3 w-100 fixed-top', props.className, {
-        'bg-white': !isDarkNav && !isPurpleNav && (sticky || isOpen),
-        'tw-bg-violet-800': isPurpleNav && (sticky || isOpen),
-        'tw-bg-black': isDarkNav && (sticky || isOpen),
-    })
+    const navItemClassName = 'tw-font-normal tw-text-white hover:tw-text-blurple-200 tw-text-sm'
 
     return (
-        <nav className={classNames('shadow-sm', navStyle)}>
+        <nav
+            className={classNames(
+                'shadow-sm header navbar tw-h-[40px] w-100 fixed-top tw-border-b-1 tw-border-b-[color:var(--border-color-2)] tw-text-white tw-py-0',
+                props.className
+            )}
+        >
             <div className="container-xl tw-px-0">
                 <Navbar.Brand href="/" onContextMenu={onRightClickLogo} className="tw-mr-0 header tw-flex">
                     <img
-                        src={isDarkNav || isPurpleNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
+                        src="/sourcegraph-reverse-logo.svg"
                         width={150}
-                        height={26}
-                        className="tw-max-w-[150px] tw-w-full"
+                        height={24}
+                        className="tw-max-w-[150px] tw-w-full tw-h-[24px]"
                         aria-label="Sourcegraph - Code Intelligence Platform"
                         alt="Sourcegraph - Code Intelligence Platform"
                         draggable={false}
                     />
                 </Navbar.Brand>
-
+                <HorizontalDivider className="tw-ml-[27px] tw-mr-[10px]" />
                 {!props.minimal && (
                     <>
                         <button
@@ -106,9 +105,9 @@ export const Header: FunctionComponent<Props> = props => {
                             ))}
                         </button>
 
-                        <DesktopNav navLinks={navLinks} />
+                        <DesktopNav navLinks={navLinks} itemClassName={navItemClassName} />
 
-                        <MobileNav navLinks={navLinks} isOpen={isOpen} />
+                        <MobileNav navLinks={navLinks} itemClassName={navItemClassName} isOpen={isOpen} />
                     </>
                 )}
             </div>

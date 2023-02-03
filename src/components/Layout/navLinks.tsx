@@ -7,13 +7,28 @@ import TwitterIcon from 'mdi-react/TwitterIcon'
 import YouTubeIcon from 'mdi-react/YoutubeIcon'
 import { FaDiscord as DiscordIcon } from 'react-icons/fa'
 
+import { SHOW_APP } from '../ShowApp'
+
 export interface NavLink {
     section: string
-    items: {
-        title: string
-        href: string
-        icon?: ReactNode
-    }[]
+    items: (
+        | {
+              title: string
+              href: string
+              icon?: ReactNode
+          }
+        | { divider: true }
+    )[]
+}
+
+const pricingNavLink: NavLink = {
+    section: 'Pricing',
+    items: [
+        {
+            title: 'Pricing',
+            href: '/pricing',
+        },
+    ],
 }
 
 export const navLinks: NavLink[] = [
@@ -36,6 +51,7 @@ export const navLinks: NavLink[] = [
                 title: 'Cloud',
                 href: '/cloud',
             },
+            { divider: true },
             {
                 title: 'All use cases',
                 href: '/use-cases',
@@ -62,6 +78,13 @@ export const navLinks: NavLink[] = [
             },
         ],
     },
+    SHOW_APP
+        ? {
+              section: 'Enterprise',
+              items: [{ title: 'Enterprise', href: '/enterprise' }],
+          }
+        : null,
+    SHOW_APP ? pricingNavLink : null,
     {
         section: 'Resources',
         items: [
@@ -87,15 +110,7 @@ export const navLinks: NavLink[] = [
             },
         ],
     },
-    {
-        section: 'Pricing',
-        items: [
-            {
-                title: 'Pricing',
-                href: '/pricing',
-            },
-        ],
-    },
+    SHOW_APP ? null : pricingNavLink,
     {
         section: 'Docs',
         items: [
@@ -105,7 +120,7 @@ export const navLinks: NavLink[] = [
             },
         ],
     },
-]
+].filter((section): section is NavLink => section !== null)
 
 export const footerLinks: NavLink[] = [
     {

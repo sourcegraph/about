@@ -5,6 +5,9 @@ const plugin = require('tailwindcss/plugin')
 const dlsColors = {
   white: '#ffffff',
   black: '#000000',
+  link: '#4393e7',
+  'brand-secondary': '#a305e1',
+  primary: '#0b70db',
   gray: {
     50: '#F9FAFB',
     100: '#F5F7FB',
@@ -85,7 +88,6 @@ module.exports = {
 
     fontFamily: {
       sans: [
-        'Source Sans Pro',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',

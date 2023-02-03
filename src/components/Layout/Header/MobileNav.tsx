@@ -1,5 +1,6 @@
 import { FunctionComponent, useState } from 'react'
 
+import classNames from 'classnames'
 import { camelCase } from 'lodash'
 import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
 import Link from 'next/link'
@@ -9,10 +10,11 @@ import { NavLink } from '../navLinks'
 
 interface Props {
     navLinks: NavLink[]
+    itemClassName?: string
     isOpen: boolean
 }
 
-const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
+const MobileNav: FunctionComponent<Props> = ({ navLinks, itemClassName, isOpen }) => {
     const initialMobileMenuState = navLinks.reduce(
         (accumulator, navLink) => ({ ...accumulator, [camelCase(navLink.section)]: false }),
         {}
@@ -25,10 +27,10 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
                 {navLinks.map(navLink =>
                     navLink.items.length === 1 ? (
                         navLink.items.map(item =>
-                            item.href.includes('http') ? (
+                            'divider' in item ? null : item.href.includes('http') ? (
                                 <li className="nav-item" role="presentation" key={item.title}>
                                     <a
-                                        className="nav-link"
+                                        className={classNames('nav-link', itemClassName)}
                                         href={item.href}
                                         target="_blank"
                                         rel="noreferrer"
@@ -44,7 +46,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
                                 <li className="nav-item" role="presentation" key={camelCase(item.title)}>
                                     <Link
                                         href={item.href}
-                                        className="nav-link"
+                                        className={classNames('nav-link', itemClassName)}
                                         title={item.title}
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.nav}
@@ -87,10 +89,13 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
                                 }`}
                             >
                                 {navLink.items.map(item =>
-                                    item.href.includes('http') ? (
+                                    'divider' in item ? (
+                                        'TODO(sqs)'
+                                    ) : item.href.includes('http') ? (
                                         <li key={camelCase(item.title)} className="nav-link" role="presentation">
                                             <a
                                                 href={item.href}
+                                                className={classNames(itemClassName)}
                                                 target="_blank"
                                                 rel="noreferrer"
                                                 title={item.title}
@@ -105,6 +110,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
                                         <li key={camelCase(item.title)} className="nav-link" role="presentation">
                                             <Link
                                                 href={item.href}
+                                                className={classNames(itemClassName)}
                                                 title={item.title}
                                                 data-button-style={buttonStyle.text}
                                                 data-button-location={buttonLocation.nav}

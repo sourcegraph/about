@@ -9,7 +9,7 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{ buttonLocati
 }) => (
     <Link
         href="/demo"
-        className="btn btn-link tw-whitespace-nowrap"
+        className="btn btn-link tw-text-violet-300 tw-whitespace-nowrap"
         title="Meet with a product expert"
         data-button-style={buttonStyle.outline}
         data-button-location={buttonLocation}

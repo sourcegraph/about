@@ -62,7 +62,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
     }
 
     return (
-        <div className={`tw-flex tw-flex-col min-vh-100 tw-bg-white ${props.className || ''}`}>
+        <div className={`tw-flex tw-flex-col min-vh-100 ${props.className || ''}`}>
             <Head>
                 <title>{meta.externalTitle || meta.title}</title>
                 <meta name="description" content={meta.externalDescription || meta.description} />
@@ -114,7 +114,6 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                         isBlog={isBlog}
                         isProductPage={isProductPage}
                         minimal={props.minimal}
-                        className={props.className}
                         navLinks={navLinks}
                     />
 

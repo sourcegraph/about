@@ -2,10 +2,19 @@ import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 import ArrowRightThinIcon from 'mdi-react/ArrowRightThinIcon'
+import SearchIcon from 'mdi-react/SearchIcon'
 import TriangleSmallUpIcon from 'mdi-react/TriangleSmallUpIcon'
 import Link from 'next/link'
 
-import { ContentSection, CoreFeatures, CtaSection, Layout, IntegrationsSection, Background } from '../components'
+import {
+    ContentSection,
+    CoreFeatures,
+    CtaSection,
+    Layout,
+    IntegrationsSection,
+    Background,
+    Heading,
+} from '../components'
 import { DemoVideo } from '../components/DemoVideo'
 import { DownloadAppButton } from '../components/DownloadAppButton'
 import { buttonLocation } from '../data/tracking'
@@ -17,7 +26,7 @@ const Home: FunctionComponent = () => (
             description:
                 "Big codebases are less painful with Sourcegraph's code intelligence: universal code search+nav and large-scale fixes/refactors.",
         }}
-        heroAndHeaderClassName="tw-bg-black"
+        heroAndHeaderClassName="tw-bg-black" // tw-bg-[color:var(--body-bg)]"
         className="navbar-dark"
     >
         <HomeHero />
@@ -31,13 +40,25 @@ const Home: FunctionComponent = () => (
         <CtaSection />
     </Layout>
 )
-const DESCRIPTION_FEATURE_TERM_CLASS_NAME =
-    'tw-underline tw-decoration-1 tw-underline-offset-4 tw-decoration-gray-400 tw-decoration-dotted'
 
 const HomeHero: FunctionComponent = () => (
-    <Background variant="black" className="tw-pb-[150px]">
-        <div className="tw-mx-auto tw-pt-md md:tw-py-3xl tw-text-center">
-            <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-lg tw-mx-lg">
+    <Background variant="black" className="tw-pb-[450px]">
+        <div className="tw-mx-auto tw-text-center container-xl">
+            <div className="tw-py-lg tw-hidden">
+                <div className="btn-group">
+                    <div className="btn btn-sm btn-secondary tw-min-w-[150px]">About</div>
+                    <div className="btn btn-sm btn-outline-secondary tw-min-w-[150px]">Search public code</div>
+                </div>
+            </div>
+            <div className="tw-py-xl">
+                <Link
+                    href="https://sourcegraph.test:3443"
+                    className="btn btn-outline-secondary tw-w-2/3 tw-text-left tw-pl-xs tw-py-xxs tw-border-2 tw-bg-gray-700 tw-font-mono"
+                >
+                    <SearchIcon className="tw-inline" /> Search public code...
+                </Link>
+            </div>
+            <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-lg">
                 <div className="tw-col-span-full md:tw-col-span-1">
                     <header className="tw-mb-md">
                         <h1 className="tw-text-xl md:tw-text-5xl lg:tw-text-6xl tw-mb-sm tw-whitespace-nowrap tw-text-transparent tw-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">

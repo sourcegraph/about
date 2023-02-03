@@ -14,7 +14,7 @@
         @apply tw-font-sans tw-text-base tw-tracking-normal tw-font-normal tw-antialiased;
     }
     body {
-        @apply tw-bg-gray-50;
+        background-color: var(--body-bg);
     }
     h1 {
         @apply tw-font-sans tw-text-6xl md:tw-text-7xl tw-tracking-normal tw-font-semibold;
@@ -37,14 +37,8 @@
     code {
         @apply tw-font-mono tw-text-base tw-font-medium tw-tracking-tightest tw-break-words;
     }
-    /* Inline Links */
-    p a,
-    li a {
-        @apply tw-font-normal hover:tw-underline;
-    }
-    /* Standalone Links (Usually CTAs) */
     a {
-        @apply tw-text-blurple-400 tw-font-bold;
+        @apply tw-font-normal hover:tw-underline tw-text-link;
     }
 
     /* Lists */
@@ -153,4 +147,11 @@
             radial-gradient(29.03% 79.03% at 103.02% 53.38%, theme(colors.violet.400 / 60%) 0%, transparent 73.04%),
             #000;
     }
+}
+
+:root {
+    --body-bg: #14171f;
+    --color-bg-3: #343a4d;
+    --color-bg-1: #181b26;
+    --border-color-2: #343a4d;
 }

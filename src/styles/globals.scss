@@ -15,8 +15,11 @@
 
 /* ==================== Bootstrap Colors ==================== */
 $blurple: #5033e1;
+$primary: #0b70db;
+$brand-secondary: #a305e1;
 $theme-colors: (
-    'primary': $blurple,
+    'primary': $primary,
+    'brand-secondary': $brand-secondary,
     'blurple': $blurple,
 );
 
@@ -54,11 +57,21 @@ $spacers: (
     ),
 );
 
+
+
+
+$dropdown-bg: var(--color-bg-1);
+$dropdown-color: white;
+$dropdown-border-color: var(--border-color-2);
+$dropdown-divider-bg: var(--border-color-2);
+$dropdown-link-color: white;
+$dropdown-link-hover-bg: var(--color-bg-3);
+$dropdown-link-hover-color: white;
+$dropdown-link-active-bg: var(--primary);
+$dropdown-link-active-color: white;
+$dropdown-spacer: -4px;
+
 $navbar-nav-link-padding-x: $spacer * 0.75;
-$navbar-light-color: $dark;
-$navbar-light-hover-color: $blurple;
-$navbar-dark-color: $light;
-$navbar-dark-hover-color: $blurple;
 
 $btn-padding-x: 1.5rem;
 $btn-font-weight: 600;

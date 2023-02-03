@@ -6,7 +6,7 @@ export const TrySourcegraphForFreeButton: React.FunctionComponent<{ buttonLocati
     buttonLocation,
 }) => (
     <a
-        className="btn btn-primary tw-whitespace-nowrap"
+        className="btn btn-brand-secondary tw-whitespace-nowrap"
         href="https://signup.sourcegraph.com"
         title="Start for free"
         data-button-style={buttonStyle.primary}
