@@ -205,12 +205,6 @@
   to = "/blog/big-code-survey-2020"
 
 
-# Due to our collocated directory for the homepage
-[[redirects]]
-  from = "/home/*"
-  to = "/"
-  force = true
-
 [[redirects]]
   from = "/get-started"
   to = "/get-started/self-hosted"
