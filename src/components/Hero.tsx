@@ -68,7 +68,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
 
             {cta && (
                 <div
-                    className={classNames('tw-mt-md tw-flex tw-flex-col max-w-350', {
+                    className={classNames('tw-mt-md tw-flex tw-flex-col', {
                         'tw-items-center tw-mx-auto': centerContent,
                     })}
                 >

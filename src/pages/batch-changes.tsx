@@ -12,6 +12,7 @@ import {
     Video,
     YouTube,
 } from '../components'
+import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const batchChangesDemoFormURL = '/contact/request-batch-changes-demo'
@@ -29,34 +30,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                 product="batch changes"
                 title={'Automate large-scale\ncode changes'}
                 subtitle="Keep your code up to date, fix critical security issues, and pay down tech debt across all of your repositories with Batch Changes."
-                cta={
-                    <div className="tw-text-left tw-flex-col md:tw-flex-row md:tw-flex">
-                        <div className="mb-3 mb-md-0">
-                            <a
-                                href="https://signup.sourcegraph.com"
-                                className="btn btn-primary w-100 max-w-350"
-                                title="Get free trial"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
-                                Get free trial
-                            </a>
-                        </div>
-                        <div className="ml-md-3">
-                            <a
-                                href="https://sourcegraph.com"
-                                className="btn btn-outline-primary w-100 max-w-350"
-                                title="Search code"
-                                data-button-style={buttonStyle.outline}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
-                                Search code
-                            </a>
-                        </div>
-                    </div>
-                }
+                cta={<StandardCallToAction buttonLocation={buttonLocation.hero} />}
                 displayUnderNav={true}
             />
         }

@@ -95,12 +95,12 @@ const Webinar: FunctionComponent = () => {
                         <a
                             className="mt-4 btn btn-primary col-12 col-md-3 col-xl-2"
                             href="https://signup.sourcegraph.com"
-                            title="Get free trial"
+                            title="Start for free"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.body}
                             data-button-type="cta"
                         >
-                            Get free trial
+                            Start for free
                         </a>
                     </ContentSection>
                 }

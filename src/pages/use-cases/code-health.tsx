@@ -18,6 +18,7 @@ import {
     ThreeUpText,
     TwoColumnSection,
 } from '../../components'
+import { StandardCallToAction } from '../../components/cta/StandardCallToAction'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
@@ -252,34 +253,7 @@ const UseCasePage: FunctionComponent = () => (
                 title={'Healthy code,\n happy teams'}
                 subtitle="Improve code health with large-scale changes and track key initiatives across your
                 entire codebase."
-                cta={
-                    <div className="tw-text-center tw-flex-col md:tw-flex-row md:tw-flex">
-                        <div className="mb-3 mb-md-0">
-                            <a
-                                href="https://sourcegraph.com"
-                                className="btn btn-primary w-100 max-w-350"
-                                title="Search code"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
-                                Search code
-                            </a>
-                        </div>
-                        <div className="ml-md-3">
-                            <a
-                                href="https://signup.sourcegraph.com"
-                                className="btn btn-outline-primary w-100 max-w-350"
-                                title="Get free trial"
-                                data-button-style={buttonStyle.outline}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
-                                Get free trial
-                            </a>
-                        </div>
-                    </div>
-                }
+                cta={<StandardCallToAction buttonLocation={buttonLocation.hero} />}
             />
         }
     >
@@ -350,12 +324,12 @@ const UseCasePage: FunctionComponent = () => (
                     <a
                         href="https://signup.sourcegraph.com"
                         className="btn btn-primary max-w-350 w-100"
-                        title="Get free trial"
+                        title="Start for free"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        Get free trial
+                        Start for free
                     </a>
                     <Link
                         href="/use-cases"

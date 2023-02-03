@@ -40,12 +40,12 @@ const BusinessCTA: FunctionComponent<{ className?: string; btnOnMobile?: boolean
                     : 'btn btn-primary'
             )}
             href="https://signup.sourcegraph.com"
-            title="Get free trial"
+            title="Start for free"
             data-button-style={buttonStyle.primary}
             data-button-location={buttonLocation.trySourcegraph}
             data-button-type="cta"
         >
-            Get free trial
+            Start for free
         </a>
     )
 }

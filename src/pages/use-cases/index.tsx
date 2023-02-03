@@ -57,7 +57,7 @@ const UseCases: React.FunctionComponent = () => (
                         </div>
 
                         <div className="mb-6 tw-pt-sm col-lg-5 mt-lg-6">
-                            <h4 className="tw-pb-xxs">See how customers use Sourcegraph to</h4>
+                            <h4 className="tw-pb-xxs tw-text-xl">See how customers use Sourcegraph to...</h4>
 
                             <div className="list-group">
                                 {features.map((feature: { id: string; description: string }) => (
@@ -117,25 +117,15 @@ const UseCases: React.FunctionComponent = () => (
                                 </li>
                                 <li>Alert for known vulnerabilities and risky code changes with code monitoring</li>
                             </ul>
-                            <a
-                                className="btn btn-outline-primary"
-                                href="https://signup.sourcegraph.com"
-                                title="Get free trial"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Get free trial <ArrowRightBoxIcon className="ml-1 tw-inline" />
-                            </a>
                             <Link
                                 href="/use-cases/code-security"
-                                className="tw-ml-8"
                                 title="Learn more"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                Learn more
+                                Learn more about code security with Sourcegraph{' '}
+                                <ArrowRightBoxIcon className="ml-1 tw-inline" />
                             </Link>
                         </>
                     }
@@ -196,25 +186,15 @@ const UseCases: React.FunctionComponent = () => (
                                 </li>
                                 <li>Get answers faster with shareable links to specific code</li>
                             </ul>
-                            <a
-                                className="btn btn-outline-primary"
-                                href="https://signup.sourcegraph.com"
-                                title="Get free trial"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Get free trial <ArrowRightBoxIcon className="ml-1 tw-inline" />
-                            </a>
                             <Link
                                 href="/use-cases/onboarding"
-                                className="tw-ml-8"
                                 title="Learn more"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                Learn more
+                                Learn more about dev onboarding with Sourcegraph{' '}
+                                <ArrowRightBoxIcon className="ml-1 tw-inline" />
                             </Link>
                         </>
                     }
@@ -251,25 +231,15 @@ const UseCases: React.FunctionComponent = () => (
                                     a search notebook
                                 </li>
                             </ul>
-                            <a
-                                className="btn btn-outline-primary"
-                                href="https://signup.sourcegraph.com"
-                                title="Get free trial"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Get free trial <ArrowRightBoxIcon className="ml-1 tw-inline" />
-                            </a>
                             <Link
                                 href="/use-cases/incident-response"
-                                className="tw-ml-8"
                                 title="Learn more"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                Learn more
+                                Learn more about incident response with Sourcegraph{' '}
+                                <ArrowRightBoxIcon className="ml-1 tw-inline" />
                             </Link>
                         </>
                     }
@@ -344,25 +314,15 @@ const UseCases: React.FunctionComponent = () => (
                                 </li>
                                 <li>Add a code monitor to alert you of commits using an out-of-date library</li>
                             </ul>
-                            <a
-                                className="btn btn-outline-primary"
-                                href="https://signup.sourcegraph.com"
-                                title="Get free trial"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Get free trial <ArrowRightBoxIcon className="ml-1 tw-inline" />
-                            </a>
                             <Link
                                 href="/use-cases/code-reuse"
-                                className="tw-ml-8"
                                 title="Learn more"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                Learn more
+                                Learn more about code reuse with Sourcegraph{' '}
+                                <ArrowRightBoxIcon className="ml-1 tw-inline" />
                             </Link>
                         </>
                     }
@@ -397,25 +357,15 @@ const UseCases: React.FunctionComponent = () => (
                                 </li>
                                 <li>Efficiently tackle tech debt from legacy systems and acquisitions</li>
                             </ul>
-                            <a
-                                className="btn btn-outline-primary"
-                                href="https://signup.sourcegraph.com"
-                                title="Get free trial"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Get free trial <ArrowRightBoxIcon className="ml-1 tw-inline" />
-                            </a>
                             <Link
                                 href="/use-cases/code-health"
-                                className="tw-ml-8"
                                 title="Learn more"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                Learn more
+                                Learn more about code health with Sourcegraph{' '}
+                                <ArrowRightBoxIcon className="ml-1 tw-inline" />
                             </Link>
                         </>
                     }

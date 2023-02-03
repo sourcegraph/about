@@ -56,12 +56,12 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                     <a
                         className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
                         href="https://signup.sourcegraph.com"
-                        title="Get free trial"
+                        title="Start for free"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.bodyDemo}
                         data-button-type="cta"
                     >
-                        Get free trial
+                        Start for free
                     </a>
                 </div>
             </div>

@@ -4,7 +4,8 @@ import { FaGitAlt, FaLocationArrow } from 'react-icons/fa'
 import { MdOutlineAvTimer, MdBarChart } from 'react-icons/md'
 
 import { Layout, Hero, ContentSection, CtaSection, TwoColumnSection, Blockquote } from '../components'
-import { buttonStyle, buttonLocation } from '../data/tracking'
+import { StandardCallToAction } from '../components/cta/StandardCallToAction'
+import { buttonLocation } from '../data/tracking'
 
 const Cloud: FunctionComponent = () => (
     <Layout
@@ -22,34 +23,7 @@ const Cloud: FunctionComponent = () => (
                 titleClassName="tw-text-transparent tw-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-white/10 tw-to-violet-200"
                 subtitle="Sourcegraph Cloud’s dedicated, single-tenant SaaS solution is the easiest way to get Sourcegraph in the cloud. Get full code intelligence for your codebase quickly, securely, and without having to host."
                 centerContent={true}
-                cta={
-                    <div className="tw-flex-col md:tw-flex-row md:tw-flex">
-                        <div className="mb-3 mb-md-0">
-                            <a
-                                href="https://signup.sourcegraph.com"
-                                className="btn tw-bg-white tw-text-blurple-400 hover:tw-bg-blurple-400 hover:tw-text-white w-100 max-w-350"
-                                title="Get free trial"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
-                                Get free trial
-                            </a>
-                        </div>
-                        <div className="ml-md-3">
-                            <a
-                                href="https://sourcegraph.com"
-                                className="btn tw-text-white tw-border-white hover:tw-bg-blurple-400 hover:tw-border-blurple-400 w-100 max-w-350"
-                                title="Search code"
-                                data-button-style={buttonStyle.outline}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
-                                Search code
-                            </a>
-                        </div>
-                    </div>
-                }
+                cta={<StandardCallToAction buttonLocation={buttonLocation.hero} />}
                 floatingImg="/code-intelligence-platform-illustration.svg"
                 displayUnderNav={true}
             />
