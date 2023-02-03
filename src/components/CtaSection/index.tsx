@@ -11,7 +11,7 @@ import illustration from './illustration.svg'
 
 interface Cta {
     text: string
-    ctaStyle?: 'primaryButtonWhite' | 'outlineButtonLight'
+    ctaStyle?: 'primaryButtonWhite' | 'outlineButtonLight' | 'link'
     link?: string
 }
 
@@ -22,14 +22,6 @@ interface CtaSection {
     cta2?: Cta | boolean
 }
 
-/**
- * This is a CTA used within the CTA Section
- *
- * @param props - component props
- * @param props.text - text for the cta
- * @param props.ctaStyle - prop to display as a primary or outline button
- * @param props.link - href string
- */
 const Cta: FunctionComponent<Cta> = ({ text, ctaStyle, link }) => {
     const externalLink = link?.includes('http')
 
@@ -50,6 +42,7 @@ const Cta: FunctionComponent<Cta> = ({ text, ctaStyle, link }) => {
                     ctaStyle === 'primaryButtonWhite',
                 'btn tw-text-white tw-border-white hover:tw-bg-blurple-400 hover:tw-border-blurple-400':
                     ctaStyle === 'outlineButtonLight',
+                'btn btn-link tw-text-white hover:tw-text-blurple-200': ctaStyle === 'link',
             })}
             data-button-style={ctaTrackingStyle}
             data-button-location={buttonLocation.body}
@@ -80,13 +73,13 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
     title = 'Try Sourcegraph on your code.',
     description = 'Experience code intelligence with a free trial for you and your team, or search millions of open source repositories.',
     cta1 = {
-        text: 'Get free trial',
+        text: 'Start for free',
         ctaStyle: 'primaryButtonWhite',
         link: 'https://signup.sourcegraph.com',
     },
     cta2 = {
-        text: 'Request a demo',
-        ctaStyle: 'outlineButtonLight',
+        text: 'Meet with a product expert',
+        ctaStyle: 'link',
         link: '/demo',
     },
 }) => {
@@ -101,18 +94,14 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                     // eslint-disable-next-line react/forbid-dom-props
                     style={lgAndUp ? { background: `url('${illustration}')` } : undefined}
                 >
-                    <div className="tw-col-span-full md:tw-col-span-7 lg:tw-col-span-5 lg:tw-col-start-4">
+                    <div className="tw-col-span-full md:tw-col-span-7 lg:tw-col-span-5 lg:tw-col-start-4 lg:tw-pl-xl">
                         <h2 className="tw-text-violet-200 tw-mb-sm">{title}</h2>
                         <p className="tw-text-lg tw-max-w-2xl">{description}</p>
                     </div>
 
                     <div
                         className={classNames(
-                            'tw-col-span-full md:tw-col-span-4 tw-flex tw-flex-col lg:tw-flex-row tw-items-start md:tw-items-center',
-                            {
-                                'lg:tw-justify-end': cta2,
-                                'lg:tw-justify-center': !cta2,
-                            }
+                            'tw-col-span-full md:tw-col-span-5 lg:tw-col-span-4 tw-flex tw-flex-col tw-items-center'
                         )}
                     >
                         {cta1 && (
@@ -122,7 +111,7 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
                         )}
 
                         {cta2 && typeof cta2 === 'object' && (
-                            <div className="tw-mt-sm lg:tw-ml-md">
+                            <div className="tw-mt-sm">
                                 <Cta {...cta2} />
                             </div>
                         )}

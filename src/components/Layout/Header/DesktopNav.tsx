@@ -88,12 +88,12 @@ const DesktopNav: FunctionComponent<DesktopNav> = ({ navLinks }) => {
                 <Nav.Link
                     className="px-5 py-2 ml-xs btn btn-primary font-weight-bold"
                     href="https://signup.sourcegraph.com"
-                    title="Get free trial"
+                    title="Start for free"
                     data-button-style={buttonStyle.primary}
                     data-button-location={buttonLocation.nav}
                     data-button-type="cta"
                 >
-                    Get free trial
+                    Start for free
                 </Nav.Link>
             </Nav>
         </>

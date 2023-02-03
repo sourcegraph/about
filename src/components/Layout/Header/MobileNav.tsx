@@ -137,12 +137,12 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
                     <a
                         className="nav-link"
                         href="https://signup.sourcegraph.com"
-                        title="Get free trial"
+                        title="Start for free"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.nav}
                         data-button-type="cta"
                     >
-                        Get free trial
+                        Start for free
                     </a>
                 </li>
             </ul>

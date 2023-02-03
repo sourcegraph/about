@@ -165,12 +165,12 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                     <a
                         className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
                         href="https://signup.sourcegraph.com"
-                        title="Get free trial"
+                        title="Start for free"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.hero}
                         data-button-type="cta"
                     >
-                        Get free trial
+                        Start for free
                     </a>
                 </div>
             </div>
@@ -308,12 +308,12 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                 <a
                     className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
                     href="https://signup.sourcegraph.com"
-                    title="Get free trial"
+                    title="Start for free"
                     data-button-style={buttonStyle.primary}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
                 >
-                    Get free trial
+                    Start for free
                 </a>
             </div>
         </ContentSection>
