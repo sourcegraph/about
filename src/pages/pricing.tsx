@@ -18,7 +18,9 @@ import {
     BIZ_FEATURES_OVERVIEW,
     ENTERPRISE_FEATURES_OVERVIEW,
     ALL_FEATURES_COMPARED_DATA,
+    Badge,
 } from '../components'
+import { DownloadAppButton } from '../components/DownloadAppButton'
 import { buttonLocation, buttonStyle } from '../data/tracking'
 
 const StartFreeButton: FunctionComponent<{ className?: string }> = ({ className }) => (
@@ -115,19 +117,33 @@ const faqData = [
     },
 ]
 
-const PLAN_COLORS: Record<'business' | 'enterprise', { borderColorClass: string; textColorClass: string }> = {
-    business: {
+const PLAN_COLORS: Record<
+    'dev' | 'superdev' | 'business' | 'enterprise',
+    { borderColorClass: string; textColorClass: string }
+> = {
+    dev: {
         borderColorClass: 'tw-border-t-vermillion-300',
         textColorClass: 'tw-text-vermillion-300',
     },
-    enterprise: {
+    superdev: {
+        borderColorClass: 'tw-border-t-vermillion-500',
+        textColorClass: 'tw-text-vermillion-500',
+    },
+    business: {
         borderColorClass: 'tw-border-t-violet-400',
         textColorClass: 'tw-text-violet-400',
+    },
+    enterprise: {
+        borderColorClass: 'tw-border-t-violet-600',
+        textColorClass: 'tw-text-violet-600',
     },
 }
 
 const PricingPage: FunctionComponent = () => {
     const [activeKey, setActiveKey] = useState<number | null>(null)
+
+    // Viewing the page with ?dev shows the new "For individual devs" Sourcegraph App option.
+    const showForIndividualDevs = true //  useRouter().query.dev !== undefined
 
     return (
         <Layout
@@ -138,35 +154,85 @@ const PricingPage: FunctionComponent = () => {
             }}
             className="bg-white"
             hero={
-                <div className="container tw-pt-5xl tw-text-center">
-                    <h1>Plans for every dev team</h1>
+                <div className="container tw-pt-3xl tw-text-center">
+                    <h1>Pricing</h1>
+                    <p className="tw-text-lg tw-pt-2">
+                        Sourcegraph code intelligence maximizes code efficiency and security&mdash;
+                        {showForIndividualDevs ? (
+                            <>for individual devs up to the world's largest software teams.</>
+                        ) : (
+                            <>for every dev team.</>
+                        )}
+                    </p>
                 </div>
             }
         >
-            <ContentSection className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-12 tw-gap-sm">
-                <div className="tw-mb-sm md:tw-mb-0 tw-col-span-full md:tw-col-start-2 md:tw-col-span-5">
-                    <PricingPlan
-                        name="Business"
-                        description="Full platform access for teams and orgs, all on a single-tenant cloud instance."
-                        price="$99 per active user/month"
-                        buttons={<StartFreeButton />}
-                        features={BIZ_FEATURES_OVERVIEW}
-                        {...PLAN_COLORS.business}
-                    />
-                </div>
-
-                <div className="tw-col-span-full md:tw-col-start-7 md:tw-col-span-5">
-                    <PricingPlan
-                        name="Enterprise"
-                        description="Enterprise-grade security, scale, and support with custom deployment options."
-                        price="Custom pricing"
-                        buttons={<EnterpriseButtons />}
-                        beforeFeatures={
-                            <div className="tw-text-xl tw-font-semibold tw-mb-sm">Everything in Business, plus:</div>
-                        }
-                        features={ENTERPRISE_FEATURES_OVERVIEW}
-                        {...PLAN_COLORS.enterprise}
-                    />
+            <ContentSection
+                className={classNames(
+                    'tw-grid tw-grid-cols-1 tw-gap-sm',
+                    showForIndividualDevs ? 'md:tw-grid-cols-9' : 'md:tw-grid-cols-8'
+                )}
+            >
+                {showForIndividualDevs && (
+                    <div className="tw-col-span-full lg:tw-col-span-3 tw-self-start">
+                        <h5 className="tw-bg-vermillion-100 tw-text-vermillion-500 tw-font-normal badge tw-block tw-mb-xxs tw-p-xxs">
+                            For individual devs
+                        </h5>
+                        <PricingPlan
+                            name="Dev"
+                            nameBadge={<Badge color="white-outlined" size="small" text="Alpha" />}
+                            description="Code intelligence and search, running locally on your machine."
+                            price="Free forever"
+                            buttons={
+                                <DownloadAppButton
+                                    orientation="horizontal"
+                                    buttonLocation={buttonLocation.trySourcegraph}
+                                />
+                            }
+                            features={[]}
+                            {...PLAN_COLORS.dev}
+                        />
+                    </div>
+                )}
+                <div
+                    className={classNames(
+                        'tw-col-span-full lg:tw-col-span-6',
+                        showForIndividualDevs ? '' : 'lg:tw-col-start-2'
+                    )}
+                >
+                    {showForIndividualDevs && (
+                        <h5 className="tw-bg-violet-100 tw-text-violet-600 tw-font-normal badge tw-block tw-mb-xxs tw-p-xxs">
+                            For organizations
+                        </h5>
+                    )}
+                    <div className="tw-grid tw-gap-sm tw-grid-cols-1 md:tw-grid-cols-6">
+                        <div className="tw-col-span-full md:tw-col-span-3">
+                            <PricingPlan
+                                name="Business"
+                                description="A full code intelligence platform for teams and orgs, on a dedicated cloud instance."
+                                price="$99"
+                                priceInterval="per active user/month"
+                                buttons={<StartFreeButton />}
+                                features={BIZ_FEATURES_OVERVIEW}
+                                {...PLAN_COLORS.business}
+                            />
+                        </div>
+                        <div className="tw-col-span-full md:tw-col-span-3">
+                            <PricingPlan
+                                name="Enterprise"
+                                description="Enterprise-grade security, scale, and support with custom deployment options."
+                                price="Custom pricing"
+                                buttons={<EnterpriseButtons />}
+                                beforeFeatures={
+                                    <div className="tw-text-xl tw-font-semibold tw-mb-sm">
+                                        Everything in Business, plus:
+                                    </div>
+                                }
+                                features={ENTERPRISE_FEATURES_OVERVIEW}
+                                {...PLAN_COLORS.enterprise}
+                            />
+                        </div>
+                    </div>
                 </div>
             </ContentSection>
 

@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactNode } from 'react'
+import React, { FunctionComponent, ReactNode } from 'react'
 
 import Head from 'next/head'
 import { useRouter } from 'next/router'
@@ -18,7 +18,7 @@ interface LayoutProps {
         icon?: string
         canonical?: string
     }
-    children: ReactNode
+    children?: ReactNode
     minimal?: boolean
 
     hero?: ReactNode
@@ -122,7 +122,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                 </div>
             )}
 
-            <section className="tw-flex-1">{props.children}</section>
+            {props.children && <section className="tw-flex-1">{props.children}</section>}
 
             {!props.hideFooter && <Footer className={`${props.className || ''}`} minimal={props.minimal} />}
         </div>

@@ -36,32 +36,6 @@ export const navLinks: NavLink[] = [
                 title: 'Cloud',
                 href: '/cloud',
             },
-        ],
-    },
-    {
-        section: 'Resources',
-        items: [
-            {
-                title: 'All resources',
-                href: '/resources',
-            },
-            {
-                title: 'Blog',
-                href: '/blog',
-            },
-            {
-                title: 'Podcast',
-                href: '/podcast',
-            },
-            {
-                title: 'Case studies',
-                href: '/case-studies',
-            },
-        ],
-    },
-    {
-        section: 'Use cases',
-        items: [
             {
                 title: 'All use cases',
                 href: '/use-cases',
@@ -89,6 +63,31 @@ export const navLinks: NavLink[] = [
         ],
     },
     {
+        section: 'Resources',
+        items: [
+            {
+                title: 'Docs',
+                href: 'https://docs.sourcegraph.com',
+            },
+            {
+                title: 'Blog',
+                href: '/blog',
+            },
+            {
+                title: 'Podcast',
+                href: '/podcast',
+            },
+            {
+                title: 'Case studies',
+                href: '/case-studies',
+            },
+            {
+                title: 'All resources',
+                href: '/resources',
+            },
+        ],
+    },
+    {
         section: 'Pricing',
         items: [
             {
@@ -103,15 +102,6 @@ export const navLinks: NavLink[] = [
             {
                 title: 'Docs',
                 href: 'https://docs.sourcegraph.com',
-            },
-        ],
-    },
-    {
-        section: 'Sourcegraph',
-        items: [
-            {
-                title: 'Search code',
-                href: 'https://sourcegraph.com/search',
             },
         ],
     },

@@ -7,6 +7,7 @@ import { PricingPlanFeature } from './PricingPlanFeature'
 
 interface Props {
     name: string
+    nameBadge?: ReactNode
     description: string
     price: string
     priceInterval?: string
@@ -20,6 +21,7 @@ interface Props {
 /** A pricing plan on the pricing page. */
 export const PricingPlan: FunctionComponent<Props> = ({
     name,
+    nameBadge,
     description,
     price,
     priceInterval,
@@ -32,7 +34,9 @@ export const PricingPlan: FunctionComponent<Props> = ({
     <div
         className={`h-100 sm:tw-p-md tw-p-xs tw-shadow-lg tw-border-t-16 tw-rounded tw-border-gray-200 ${borderColorClass}`}
     >
-        <h2 className="tw-mb-sm tw-font-semibold">{name}</h2>
+        <h2 className="tw-mb-sm tw-font-semibold">
+            {name} {nameBadge}
+        </h2>
         <h4 className="tw-my-sm">
             <span className="tw-text-xl">{price}</span>{' '}
             {priceInterval && <span className="tw-text-base tw-font-normal">{priceInterval}</span>}
