@@ -19,53 +19,38 @@ import {
     ENTERPRISE_FEATURES_OVERVIEW,
     ALL_FEATURES_COMPARED_DATA,
 } from '../components'
-import { breakpoints } from '../data/breakpoints'
 import { buttonLocation, buttonStyle } from '../data/tracking'
-import { useWindowWidth } from '../hooks/windowWidth'
 
-const BusinessCTA: FunctionComponent<{ className?: string; btnOnMobile?: boolean }> = ({ className, btnOnMobile }) => {
-    const windowWidth = useWindowWidth()
-    const isMdOrDown = windowWidth < breakpoints.lg
+const StartFreeButton: FunctionComponent<{ className?: string }> = ({ className }) => (
+    <a
+        className={classNames('btn btn-primary', 'tw-w-full md:tw-w-auto', className)}
+        href="https://signup.sourcegraph.com"
+        title="Start for free"
+        data-button-style={buttonStyle.primary}
+        data-button-location={buttonLocation.trySourcegraph}
+        data-button-type="cta"
+    >
+        Start for free
+    </a>
+)
 
-    return (
-        <a
-            className={classNames(
-                btnOnMobile && 'btn btn-primary',
-                'tw-w-full md:tw-w-auto',
-                className,
-                btnOnMobile
-                    ? 'md:tw-mr-xs tw-mr-0 tw-mb-xs lg:tw-mb-0'
-                    : isMdOrDown
-                    ? 'font-weight-normal'
-                    : 'btn btn-primary'
-            )}
-            href="https://signup.sourcegraph.com"
-            title="Start for free"
-            data-button-style={buttonStyle.primary}
-            data-button-location={buttonLocation.trySourcegraph}
-            data-button-type="cta"
-        >
-            Start for free
-        </a>
-    )
-}
+const ContactUsButton: FunctionComponent<{ className?: string }> = ({ className }) => (
+    <Link
+        href="/contact/request-info?form_submission_source=pricing-enterprise"
+        className={classNames('btn btn-outline-primary tw-w-full md:tw-w-auto', className)}
+        title="Contact us"
+        data-button-style={buttonStyle.outline}
+        data-button-location={buttonLocation.bodyDemo}
+        data-button-type="cta"
+    >
+        Contact us
+    </Link>
+)
 
-const EnterpriseCTA: FunctionComponent<{ btnOnMobile?: boolean }> = ({ btnOnMobile }) => (
-    <div className="tw-flex-wrap">
-        <BusinessCTA btnOnMobile={btnOnMobile} className="md:tw-mr-xs tw-mb-xs md:tw-mb-0 tw-w-full md:tw-w-auto" />
-        <Link
-            href="/contact/request-info?form_submission_source=pricing-enterprise"
-            className={classNames(
-                'btn btn-outline-primary',
-                !btnOnMobile ? 'tw-hidden lg:tw-inline-block tw-w-auto' : 'tw-w-full md:tw-w-auto'
-            )}
-            title="Contact us"
-            data-button-style={buttonStyle.outline}
-            data-button-location={buttonLocation.bodyDemo}
-            data-button-type="cta"
-        >
-            Contact us
-        </Link>
+const EnterpriseButtons: FunctionComponent<{ contactUsClassName?: string }> = ({ contactUsClassName }) => (
+    <div className="tw-flex tw-flex-wrap tw-gap-xs">
+        <StartFreeButton />
+        <ContactUsButton className={contactUsClassName} />
     </div>
 )
 
@@ -82,9 +67,9 @@ const faqData = [
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
                 >
-                    docs
+                    documentation
                 </a>{' '}
-                for additional details on how monthly active users are calculated.
+                for more information.
             </p>
         ),
     },
@@ -130,6 +115,17 @@ const faqData = [
     },
 ]
 
+const PLAN_COLORS: Record<'business' | 'enterprise', { borderColorClass: string; textColorClass: string }> = {
+    business: {
+        borderColorClass: 'tw-border-t-vermillion-300',
+        textColorClass: 'tw-text-vermillion-300',
+    },
+    enterprise: {
+        borderColorClass: 'tw-border-t-violet-400',
+        textColorClass: 'tw-text-violet-400',
+    },
+}
+
 const PricingPage: FunctionComponent = () => {
     const [activeKey, setActiveKey] = useState<number | null>(null)
 
@@ -151,22 +147,25 @@ const PricingPage: FunctionComponent = () => {
                 <div className="tw-mb-sm md:tw-mb-0 tw-col-span-full md:tw-col-start-2 md:tw-col-span-5">
                     <PricingPlan
                         name="Business"
-                        price="$99 per active user/month"
                         description="Full platform access for teams and orgs, all on a single-tenant cloud instance."
+                        price="$99 per active user/month"
+                        buttons={<StartFreeButton />}
                         features={BIZ_FEATURES_OVERVIEW}
-                        isEnterprise={false}
-                        buttons={<BusinessCTA btnOnMobile={true} />}
+                        {...PLAN_COLORS.business}
                     />
                 </div>
 
                 <div className="tw-col-span-full md:tw-col-start-7 md:tw-col-span-5">
                     <PricingPlan
                         name="Enterprise"
-                        price="Custom pricing"
                         description="Enterprise-grade security, scale, and support with custom deployment options."
+                        price="Custom pricing"
+                        buttons={<EnterpriseButtons />}
+                        beforeFeatures={
+                            <div className="tw-text-xl tw-font-semibold tw-mb-sm">Everything in Business, plus:</div>
+                        }
                         features={ENTERPRISE_FEATURES_OVERVIEW}
-                        isEnterprise={true}
-                        buttons={<EnterpriseCTA btnOnMobile={true} />}
+                        {...PLAN_COLORS.enterprise}
                     />
                 </div>
             </ContentSection>
@@ -177,30 +176,34 @@ const PricingPage: FunctionComponent = () => {
             <CustomerLogos />
 
             <div className="tw-py-3xl md:tw-py-5xl md:tw-max-w-screen-xl tw-mx-auto tw-overflow-hidden md:tw-overflow-visible">
-                <table className="tw-relative tw-border-0 tw-table-fixed">
+                <table className="tw-relative tw-border-0 tw-table-fixed tw-border-spacing-0 tw-border-separate">
                     <thead>
-                        <tr className="md:tw-sticky md:tw-top-16">
-                            <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
-                                <div className="lg:tw-h-60 md:tw-h-[157px] sm:tw-h-[140px] tw-h-[133px] md:tw-p-xs tw-p-xxs md:tw-pt-xs tw-pt-md md:tw-pr-xs tw-border-b-1 tw-border-gray-200">
+                        <tr className="md:tw-sticky md:tw-top-16 tw-border-0">
+                            <th className="tw-border-0 tw-border-b tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
+                                <div className="lg:tw-h-60 md:tw-h-[157px] sm:tw-h-[140px] tw-h-[133px] md:tw-p-xs tw-p-xxs md:tw-pt-xs tw-pt-md md:tw-pr-xs">
                                     <h2 className="md:tw-max-w-[250px] tw-text-xl sm:tw-text-4xl lg:tw-text-7xl">
                                         Compare all features
                                     </h2>
                                 </div>
                             </th>
-                            <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
-                                <div className="tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-1 tw-border-gray-200 tw-border-t-vermillion-300">
+                            <th className="tw-border-0 tw-border-b tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
+                                <div
+                                    className={`tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-1 tw-border-gray-200 tw-border-b-0 ${PLAN_COLORS.business.borderColorClass}`}
+                                >
                                     <h2 className="tw-text-xl md:tw-text-4xl tw-mb-sm">Business</h2>
                                     <h4 className="tw-font-normal tw-hidden lg:tw-block tw-mb-sm">
                                         $99 per active user/month
                                     </h4>
-                                    <BusinessCTA />
+                                    <StartFreeButton />
                                 </div>
                             </th>
-                            <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
-                                <div className="tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-b-1 tw-border-gray-200 tw-border-t-violet-400">
+                            <th className="tw-border-0 tw-border-b tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
+                                <div
+                                    className={`tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-gray-200  ${PLAN_COLORS.enterprise.borderColorClass}`}
+                                >
                                     <h2 className="tw-text-xl md:tw-text-4xl tw-mb-sm">Enterprise</h2>
                                     <h4 className="tw-font-normal tw-hidden lg:tw-block tw-mb-sm">Custom pricing</h4>
-                                    <EnterpriseCTA />
+                                    <EnterpriseButtons contactUsClassName="tw-hidden lg:tw-block" />
                                 </div>
                             </th>
                         </tr>
@@ -235,7 +238,9 @@ const PricingPage: FunctionComponent = () => {
                                         {typeof feature.business === 'string' ? (
                                             feature.business
                                         ) : feature.business ? (
-                                            <CheckIcon className="mr-2 icon-inline tw-text-vermillion-300 tw-inline" />
+                                            <CheckIcon
+                                                className={`mr-2 icon-inline ${PLAN_COLORS.business.textColorClass} tw-inline`}
+                                            />
                                         ) : null}
                                         {feature.disclaimer && (
                                             <i className="tw-block tw-text-sm">{feature.disclaimer}</i>
@@ -246,7 +251,9 @@ const PricingPage: FunctionComponent = () => {
                                         {typeof feature.enterprise === 'string' ? (
                                             feature.enterprise
                                         ) : feature.enterprise ? (
-                                            <CheckIcon className="mr-2 icon-inline tw-text-violet-400 tw-inline" />
+                                            <CheckIcon
+                                                className={`mr-2 icon-inline ${PLAN_COLORS.enterprise.textColorClass} tw-inline`}
+                                            />
                                         ) : null}
                                         {feature.disclaimer && (
                                             <i className="tw-block tw-text-sm">{feature.disclaimer}</i>
