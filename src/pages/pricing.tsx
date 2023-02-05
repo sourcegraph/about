@@ -48,7 +48,7 @@ const ContactUsButton: FunctionComponent<{ className?: string }> = ({ className 
 )
 
 const EnterpriseButtons: FunctionComponent<{ contactUsClassName?: string }> = ({ contactUsClassName }) => (
-    <div className="tw-flex tw-flex-wrap tw-gap-2">
+    <div className="tw-flex tw-flex-wrap tw-gap-xs">
         <StartFreeButton />
         <ContactUsButton className={contactUsClassName} />
     </div>
@@ -117,12 +117,12 @@ const faqData = [
 
 const PLAN_COLORS: Record<'business' | 'enterprise', { borderColorClass: string; textColorClass: string }> = {
     business: {
-        borderColorClass: 'tw-border-t-violet-400',
-        textColorClass: 'tw-text-violet-400',
+        borderColorClass: 'tw-border-t-vermillion-300',
+        textColorClass: 'tw-text-vermillion-300',
     },
     enterprise: {
-        borderColorClass: 'tw-border-t-violet-600',
-        textColorClass: 'tw-text-violet-600',
+        borderColorClass: 'tw-border-t-violet-400',
+        textColorClass: 'tw-text-violet-400',
     },
 }
 
@@ -176,17 +176,17 @@ const PricingPage: FunctionComponent = () => {
             <CustomerLogos />
 
             <div className="tw-py-3xl md:tw-py-5xl md:tw-max-w-screen-xl tw-mx-auto tw-overflow-hidden md:tw-overflow-visible">
-                <table className="tw-relative tw-border-0 tw-table-fixed">
+                <table className="tw-relative tw-border-0 tw-table-fixed tw-border-spacing-0 tw-border-separate">
                     <thead>
-                        <tr className="md:tw-sticky md:tw-top-16 tw-border-b">
-                            <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
+                        <tr className="md:tw-sticky md:tw-top-16 tw-border-0">
+                            <th className="tw-border-0 tw-border-b tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
                                 <div className="lg:tw-h-60 md:tw-h-[157px] sm:tw-h-[140px] tw-h-[133px] md:tw-p-xs tw-p-xxs md:tw-pt-xs tw-pt-md md:tw-pr-xs">
                                     <h2 className="md:tw-max-w-[250px] tw-text-xl sm:tw-text-4xl lg:tw-text-7xl">
                                         Compare all features
                                     </h2>
                                 </div>
                             </th>
-                            <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
+                            <th className="tw-border-0 tw-border-b tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
                                 <div
                                     className={`tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-1 tw-border-gray-200 tw-border-b-0 ${PLAN_COLORS.business.borderColorClass}`}
                                 >
@@ -197,7 +197,7 @@ const PricingPage: FunctionComponent = () => {
                                     <StartFreeButton />
                                 </div>
                             </th>
-                            <th className="tw-border-0 tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
+                            <th className="tw-border-0 tw-border-b tw-text-start tw-bg-white tw-p-0 tw-w-1/3">
                                 <div
                                     className={`tw-h-full lg:tw-h-60 md:tw-p-sm tw-p-xxs tw-pb-md tw-border-t-16 tw-border-gray-200  ${PLAN_COLORS.enterprise.borderColorClass}`}
                                 >
