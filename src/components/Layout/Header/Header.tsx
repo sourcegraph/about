@@ -115,5 +115,3 @@ export const Header: FunctionComponent<Props> = props => {
         </nav>
     )
 }
-
-export default Header
