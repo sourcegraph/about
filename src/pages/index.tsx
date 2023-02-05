@@ -82,7 +82,7 @@ const HomeHeroWithoutApp: FunctionComponent = () => (
             <StandardCallToAction center={true} buttonLocation={buttonLocation.hero} />
 
             <div className="tw-max-w-4xl tw-mx-auto tw-my-3xl">
-                <DemoVideo video="homepage-demo-202301" className="shadow w-100" />
+                <DemoVideo video="homepage-demo-202301" className="shadow w-100 tw-relative tw-z-10" />
             </div>
 
             <div className="tw-mx-auto tw-text-center max-w-700">
