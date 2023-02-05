@@ -67,9 +67,9 @@ const faqData = [
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
                 >
-                    docs
+                    documentation
                 </a>{' '}
-                for additional details on how monthly active users are calculated.
+                for more information.
             </p>
         ),
     },
@@ -117,12 +117,12 @@ const faqData = [
 
 const PLAN_COLORS: Record<'business' | 'enterprise', { borderColorClass: string; textColorClass: string }> = {
     business: {
-        borderColorClass: 'tw-border-t-vermillion-300',
-        textColorClass: 'tw-text-vermillion-300',
-    },
-    enterprise: {
         borderColorClass: 'tw-border-t-violet-400',
         textColorClass: 'tw-text-violet-400',
+    },
+    enterprise: {
+        borderColorClass: 'tw-border-t-violet-600',
+        textColorClass: 'tw-text-violet-600',
     },
 }
 
