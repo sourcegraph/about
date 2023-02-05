@@ -50,15 +50,15 @@ const HomeHero: FunctionComponent = () => (
                     <div className="btn btn-sm btn-outline-secondary tw-min-w-[150px]">Search public code</div>
                 </div>
             </div>
-            <div className="tw-py-xl">
+            <div className="tw-py-xl tw-hidden">
                 <Link
                     href="https://sourcegraph.test:3443"
-                    className="btn btn-outline-secondary tw-w-2/3 tw-text-left tw-pl-xs tw-py-xxs tw-border-2 tw-bg-gray-700 tw-font-mono"
+                    className="btn btn-outline-secondary tw-w-3/5 tw-text-left tw-pl-xs tw-py-xxs tw-border-2 tw-bg-gray-700 [&:not(:hover)]:tw-text-gray-400 [&:not(:hover)]:tw-border-gray-600"
                 >
-                    <SearchIcon className="tw-inline" /> Search public code...
+                    <SearchIcon className="tw-inline tw-mr-xxs" /> Search public code...
                 </Link>
             </div>
-            <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-lg">
+            <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-lg tw-pt-3xl">
                 <div className="tw-col-span-full md:tw-col-span-1">
                     <header className="tw-mb-md">
                         <h1 className="tw-text-xl md:tw-text-5xl lg:tw-text-6xl tw-mb-sm tw-whitespace-nowrap tw-text-transparent tw-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">

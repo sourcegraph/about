@@ -2,6 +2,7 @@ import React, { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
 import { camelCase } from 'lodash'
+import SearchIcon from 'mdi-react/SearchIcon'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 
@@ -109,7 +110,7 @@ const DesktopNav: FunctionComponent<DesktopNav> = ({ navLinks, itemClassName, cl
                         <Nav.Link
                             className={classNames(
                                 itemClassName,
-                                'tw-py-[3px] tw-px-0 [&:not(:hover)]:tw-text-gray-300'
+                                'tw-py-[3px] tw-px-0 [&:not(:hover)]:tw-text-gray-300 tw-hidden'
                             )}
                             href="https://sourcegraph.com"
                             title="Search"
@@ -119,19 +120,28 @@ const DesktopNav: FunctionComponent<DesktopNav> = ({ navLinks, itemClassName, cl
                         >
                             Search public code
                         </Nav.Link>
+                        <Nav.Link
+                            href="https://sourcegraph.test:3443"
+                            className={classNames(
+                                'btn btn-outline-secondary tw-flex tw-items-center tw-font-normal tw-text-left tw-pl-xxs tw-py-[1px] tw-text-sm tw-bg-gray-700 [&:not(:hover)]:tw-text-gray-400 [&:not(:hover)]:tw-border-gray-600',
+                                itemClassName
+                            )}
+                        >
+                            <SearchIcon className="tw-mr-xxs" /> Search public code...
+                        </Nav.Link>
                         <HorizontalDivider className="tw-mx-xs" />
                         <SignInDropdown
                             buttonStyle={buttonStyle.primary}
                             buttonLocation={buttonLocation.nav}
                             buttonClassName={classNames(
-                                'tw-py-[3px] [&:not(:hover)]:tw-text-gray-300 tw-text-sm tw-px-0',
+                                'tw-py-[3px] [&:not(:hover)]:tw-text-gray-300 tw-text-sm tw-px-0 tw-mr-xs',
                                 itemClassName
                             )}
                             itemClassName={itemClassName}
                         />
-                        <HorizontalDivider className="tw-mx-xs" />
+                        <HorizontalDivider className="tw-mx-xs tw-hidden" />
                         <Nav.Link
-                            className="tw-ml-[4px] tw-py-[3px] tw-px-xs btn btn-sm btn-primary font-weight-bold"
+                            className="tw-ml-[4px] tw-py-[3px] tw-px-xs btn btn-sm tw-bg-violet-500 tw-border-violet-500 tw-text-white font-weight-bold"
                             href="https://signup.sourcegraph.com"
                             title="Start for free"
                             data-button-style={buttonStyle.primary}
