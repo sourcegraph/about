@@ -21,8 +21,8 @@ import {
     Badge,
 } from '../components'
 import { DownloadAppButton } from '../components/DownloadAppButton'
-import { buttonLocation, buttonStyle } from '../data/tracking'
 import { SHOW_APP } from '../components/ShowApp'
+import { buttonLocation, buttonStyle } from '../data/tracking'
 
 const StartFreeButton: FunctionComponent<{ className?: string }> = ({ className }) => (
     <a
@@ -177,10 +177,11 @@ const PricingPage: FunctionComponent = () => {
                             For individual devs
                         </h5>
                         <PricingPlan
-                            name="Dev"
+                            name="Superdev"
                             nameBadge={<Badge color="white-outlined" size="small" text="Alpha" />}
                             description="Code intelligence and search, running locally on your machine."
-                            price="Free forever"
+                            price="$60"
+                            priceInterval="per year"
                             buttons={
                                 <DownloadAppButton
                                     orientation="horizontal"
@@ -201,10 +202,10 @@ const PricingPage: FunctionComponent = () => {
                     <div className="tw-grid tw-gap-sm tw-grid-cols-1 md:tw-grid-cols-6">
                         <div className="tw-col-span-full md:tw-col-span-3">
                             <PricingPlan
-                                name="Business"
+                                name="Quickstart"
                                 description="A full code intelligence platform for teams and orgs, on a dedicated cloud instance."
-                                price="$99"
-                                priceInterval="per active user/month"
+                                price="$2k"
+                                priceInterval="per month"
                                 buttons={<StartFreeButton />}
                                 features={BIZ_FEATURES_OVERVIEW}
                                 {...PLAN_COLORS.business}

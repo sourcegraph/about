@@ -1,1 +1,1 @@
-export const SHOW_APP = false
+export const SHOW_APP = true

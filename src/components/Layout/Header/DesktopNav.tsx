@@ -120,15 +120,7 @@ const DesktopNav: FunctionComponent<DesktopNav> = ({ navLinks, itemClassName, cl
                         >
                             Search public code
                         </Nav.Link>
-                        <Nav.Link
-                            href="https://sourcegraph.test:3443"
-                            className={classNames(
-                                'btn btn-outline-secondary tw-flex tw-items-center tw-font-normal tw-text-left tw-pl-xxs tw-py-[1px] tw-text-sm tw-bg-gray-700 [&:not(:hover)]:tw-text-gray-400 [&:not(:hover)]:tw-border-gray-600',
-                                itemClassName
-                            )}
-                        >
-                            <SearchIcon className="tw-mr-xxs" /> Search public code...
-                        </Nav.Link>
+                        <SearchPublicCodeInputLikeButton className={itemClassName} />
                         <HorizontalDivider className="tw-mx-xs" />
                         <SignInDropdown
                             buttonStyle={buttonStyle.primary}
@@ -153,25 +145,16 @@ const DesktopNav: FunctionComponent<DesktopNav> = ({ navLinks, itemClassName, cl
                     </>
                 ) : (
                     <>
-                        <Nav.Link
-                            className={classNames(itemClassName, 'tw-py-[3px] tw-px-0')}
-                            href="https://sourcegraph.com"
-                            title="Search"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.nav}
-                            data-button-type="cta"
-                        >
-                            Search public code
-                        </Nav.Link>
+                        <SearchPublicCodeInputLikeButton className={itemClassName} />
                         <HorizontalDivider className="tw-mx-xs" />
                         <SignInDropdown
                             buttonStyle={buttonStyle.primary}
                             buttonLocation={buttonLocation.nav}
-                            buttonClassName="tw-py-[3px] btn btn-sm btn-outline-secondary tw-text-white tw-font-normal"
+                            buttonClassName="tw-py-[3px] [&:not(:hover)]:tw-text-grary-300 tw-text-sm tw-px-0 tw-mr-xsl"
                             itemClassName={itemClassName}
                         />
                         <Nav.Link
-                            className="tw-ml-xxs tw-py-[3px] tw-px-xs btn btn-sm btn-primary font-weight-bold"
+                            className="tw-ml-xxs tw-py-[3px] tw-px-xs btn btn-sm btn-primary tw-bg-violet-500 tw-border-violet-500 tw-text-white font-weight-bold"
                             href="https://signup.sourcegraph.com"
                             title="Start for free"
                             data-button-style={buttonStyle.primary}
@@ -186,5 +169,17 @@ const DesktopNav: FunctionComponent<DesktopNav> = ({ navLinks, itemClassName, cl
         </>
     )
 }
+
+const SearchPublicCodeInputLikeButton: React.FunctionComponent<{ className?: string }> = ({ className }) => (
+    <Nav.Link
+        href="https://sourcegraph.test:3443"
+        className={classNames(
+            'btn btn-outline-secondary tw-flex tw-items-center tw-font-normal tw-text-left tw-pl-xxs tw-py-[1px] tw-text-sm tw-bg-gray-700 [&:not(:hover)]:tw-text-gray-300 [&:not(:hover)]:tw-border-gray-300',
+            className
+        )}
+    >
+        <SearchIcon className="tw-mr-xxs" /> Search public code...
+    </Nav.Link>
+)
 
 export default DesktopNav

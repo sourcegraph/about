@@ -32,7 +32,7 @@ const Home: FunctionComponent = () => (
         heroAndHeaderClassName="tw-bg-black" // tw-bg-[color:var(--body-bg)]"
         className="navbar-dark"
     >
-        {SHOW_APP ? <HomeHeroWithApp /> : <HomeHeroWithoutApp />}
+        <HomeHero />
 
         <ContentSection background="white">
             <CoreFeatures />
@@ -44,151 +44,144 @@ const Home: FunctionComponent = () => (
     </Layout>
 )
 
-const HomeHeroWithoutApp: FunctionComponent = () => (
-    <div className="tw-relative tw-px-sm tw-bg-white tw-text-black">
-        {['/backgrounds/mesh-left.png', '/backgrounds/mesh-right.png'].map((image, index) => (
-            <div
-                key={`mesh-container-${Math.random()}`}
-                className={classNames('tw-hidden xl:tw-block tw-absolute tw-top-0', {
-                    ['tw-left-0']: index === 0,
-                    ['tw-right-0']: index === 1,
-                })}
-            >
-                <img
-                    src={image}
-                    alt="Sourcegraph mesh branding"
-                    draggable={false}
-                    className="tw-h-full tw-w-auto"
-                    width={index === 0 ? 376 : 365}
-                    height={630}
-                />
-                <div className="tw-absolute tw-bottom-0 tw-left-0 tw-w-full tw-h-[80px] tw-bg-gradient-to-b tw-from-transparent tw-to-white" />
+const HomeHero: FunctionComponent = () => (
+    <Background variant={SHOW_APP ? 'black' : 'white'} className="tw-relative">
+        {!SHOW_APP &&
+            ['/backgrounds/mesh-left.png', '/backgrounds/mesh-right.png'].map((image, index) => (
+                <div
+                    key={`mesh-container-${Math.random()}`}
+                    className={classNames('tw-hidden xl:tw-block tw-absolute tw-top-0', {
+                        ['tw-left-0']: index === 0,
+                        ['tw-right-0']: index === 1,
+                    })}
+                >
+                    <img
+                        src={image}
+                        alt="Sourcegraph mesh branding"
+                        draggable={false}
+                        className="tw-h-full tw-w-auto"
+                        width={index === 0 ? 376 : 365}
+                        height={630}
+                    />
+                    <div className="tw-absolute tw-bottom-0 tw-left-0 tw-w-full tw-h-[80px] tw-bg-gradient-to-b tw-from-transparent tw-to-white" />
+                </div>
+            ))}
+
+        {SHOW_APP ? (
+            <div className="tw-mx-auto tw-text-center container-xl">
+                <div className="tw-py-xl tw-hidden">
+                    <Link
+                        href="https://sourcegraph.test:3443"
+                        className="btn btn-outline-secondary tw-w-3/5 tw-text-left tw-pl-xs tw-py-xxs tw-border-2 tw-bg-gray-700 [&:not(:hover)]:tw-text-gray-400 [&:not(:hover)]:tw-border-gray-600"
+                    >
+                        <SearchIcon className="tw-inline tw-mr-xxs" /> Search public code...
+                    </Link>
+                </div>
+                <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-lg tw-pt-3xl">
+                    <div className="tw-col-span-full md:tw-col-span-1">
+                        <header className="tw-mb-md">
+                            <h1 className="tw-text-xl md:tw-text-5xl lg:tw-text-6xl tw-mb-sm tw-whitespace-nowrap tw-text-transparent tw-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">
+                                Find. Fix. Flow.
+                            </h1>
+                            <p className="tw-text-lg md:tw-text-xl tw-mb-sm">
+                                Big codebases are less painful with Sourcegraph's code intelligence:{' '}
+                                <SubtleLink color="tw-text-white" href="TODO" className="tw-font-semibold">
+                                    universal&nbsp;code&nbsp;search+nav+AI
+                                </SubtleLink>{' '}
+                                and{' '}
+                                <SubtleLink color="tw-text-white" href="TODO" className="tw-font-semibold">
+                                    large‑scale&nbsp;fixes/refactors
+                                </SubtleLink>
+                                .
+                            </p>
+                            <ul className="tw-text-sm tw-text-gray-300 tw-ml-0 tw-list-none">
+                                <li className="tw-text-gray-300">
+                                    Works alongside your{' '}
+                                    <SubtleLink color="tw-text-gray-300" href="TODO">
+                                        editor
+                                    </SubtleLink>{' '}
+                                    and{' '}
+                                    <SubtleLink color="tw-text-gray-300" href="TODO">
+                                        code&nbsp;host
+                                    </SubtleLink>
+                                    .
+                                </li>
+                                <li className="tw-text-gray-300 tw-hidden">
+                                    Supports{' '}
+                                    <SubtleLink color="tw-text-gray-300" href="TODO">
+                                        55 programming languages
+                                    </SubtleLink>
+                                    <SubtleLink color="tw-text-gray-300" href="TODO">
+                                        Supports all&nbsp;languages&nbsp;&amp;&nbsp;repositories.
+                                    </SubtleLink>
+                                </li>
+                                <li>
+                                    <SubtleLink color="tw-text-gray-300" href="TODO">
+                                        Anonymous and free.
+                                    </SubtleLink>
+                                </li>
+                            </ul>
+                        </header>
+
+                        <div className="tw-mx-auto tw-mt-md">
+                            <HomeActions />
+                        </div>
+                    </div>
+                    <div className="tw-col-span-full md:tw-col-span-2">
+                        <DemoVideo video="homepage-demo-202301" className="tw-rounded tw-border" />
+                    </div>
+                </div>
             </div>
-        ))}
+        ) : (
+            <div className="tw-mx-auto tw-pt-md md:tw-pt-4xl tw-text-center">
+                <h1 className="tw-text-4xl tw-leading-10 sm:tw-text-6xl md:tw-text-[3.5rem] lg:tw-text-[4rem] lg:tw-leading-[1]">
+                    <span className="mb-2 tw-text-transparent tw-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">
+                        Find. Fix. Flow.
+                    </span>
+                </h1>
 
-        <div className="tw-mx-auto tw-pt-md md:tw-pt-4xl tw-text-center">
-            <h1 className="tw-text-4xl tw-leading-10 sm:tw-text-6xl md:tw-text-[3.5rem] lg:tw-text-[4rem] lg:tw-leading-[1]">
-                <span className="mb-2 tw-text-transparent tw-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">
-                    Find. Fix. Flow.
-                </span>
-            </h1>
+                <Heading size="h5" as="h2" className="tw-my-md tw-mx-auto tw-max-w-4xl !tw-font-normal">
+                    Big codebases are less painful with Sourcegraph's&nbsp;code&nbsp;intelligence:
+                    <br />
+                    universal&nbsp;code&nbsp;search+nav and large-scale&nbsp;fixes/refactors.
+                </Heading>
 
-            <Heading size="h5" as="h2" className="tw-my-md tw-mx-auto tw-max-w-4xl !tw-font-normal">
-                Big codebases are less painful with Sourcegraph's&nbsp;code&nbsp;intelligence:
-                <br />
-                universal&nbsp;code&nbsp;search+nav and large-scale&nbsp;fixes/refactors.
-            </Heading>
+                <StandardCallToAction center={true} buttonLocation={buttonLocation.hero} />
 
-            <StandardCallToAction center={true} buttonLocation={buttonLocation.hero} />
+                <div className="tw-max-w-4xl tw-mx-auto tw-my-3xl">
+                    <DemoVideo video="homepage-demo-202301" className="shadow w-100 tw-relative tw-z-10" />
+                </div>
 
-            <div className="tw-max-w-4xl tw-mx-auto tw-my-3xl">
-                <DemoVideo video="homepage-demo-202301" className="shadow w-100 tw-relative tw-z-10" />
-            </div>
+                <div className="tw-mx-auto tw-text-center max-w-700">
+                    <h2 className="tw-mb-2">
+                        Over{' '}
+                        <Link
+                            href="/case-studies"
+                            className="tw-text-violet-400"
+                            title="1.8 million engineers"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.hero}
+                            data-button-type="cta"
+                        >
+                            1.8M engineers
+                        </Link>{' '}
+                        use Sourcegraph to build software you rely on
+                    </h2>
 
-            <div className="tw-mx-auto tw-text-center max-w-700">
-                <h2 className="tw-mb-2">
-                    Over{' '}
                     <Link
                         href="/case-studies"
-                        className="tw-text-violet-400"
-                        title="1.8 million engineers"
+                        title="Learn how our customers use Sourcegraph"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.hero}
                         data-button-type="cta"
                     >
-                        1.8M engineers
-                    </Link>{' '}
-                    use Sourcegraph to build software you rely on
-                </h2>
-
-                <Link
-                    href="/case-studies"
-                    title="Learn how our customers use Sourcegraph"
-                    data-button-style={buttonStyle.text}
-                    data-button-location={buttonLocation.hero}
-                    data-button-type="cta"
-                >
-                    Learn how our customers use Sourcegraph
-                </Link>
+                        Learn how our customers use Sourcegraph
+                    </Link>
+                </div>
             </div>
-        </div>
+        )}
 
         <CustomerLogos />
-    </div>
-)
-
-const HomeHeroWithApp: FunctionComponent = () => (
-    <Background variant="black" className="tw-pb-[450px]">
-        <div className="tw-mx-auto tw-text-center container-xl">
-            <div className="tw-py-lg tw-hidden">
-                <div className="btn-group">
-                    <div className="btn btn-sm btn-secondary tw-min-w-[150px]">About</div>
-                    <div className="btn btn-sm btn-outline-secondary tw-min-w-[150px]">Search public code</div>
-                </div>
-            </div>
-            <div className="tw-py-xl tw-hidden">
-                <Link
-                    href="https://sourcegraph.test:3443"
-                    className="btn btn-outline-secondary tw-w-3/5 tw-text-left tw-pl-xs tw-py-xxs tw-border-2 tw-bg-gray-700 [&:not(:hover)]:tw-text-gray-400 [&:not(:hover)]:tw-border-gray-600"
-                >
-                    <SearchIcon className="tw-inline tw-mr-xxs" /> Search public code...
-                </Link>
-            </div>
-            <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-lg tw-pt-3xl">
-                <div className="tw-col-span-full md:tw-col-span-1">
-                    <header className="tw-mb-md">
-                        <h1 className="tw-text-xl md:tw-text-5xl lg:tw-text-6xl tw-mb-sm tw-whitespace-nowrap tw-text-transparent tw-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-violet-400 tw-to-vermillion-300">
-                            Find. Fix. Flow.
-                        </h1>
-                        <p className="tw-text-lg md:tw-text-xl tw-mb-sm">
-                            Big codebases are less painful with Sourcegraph's code intelligence:{' '}
-                            <SubtleLink color="tw-text-white" href="TODO" className="tw-font-semibold">
-                                universal&nbsp;code&nbsp;search+nav+AI
-                            </SubtleLink>{' '}
-                            and{' '}
-                            <SubtleLink color="tw-text-white" href="TODO" className="tw-font-semibold">
-                                large‑scale&nbsp;fixes/refactors
-                            </SubtleLink>
-                            .
-                        </p>
-                        <ul className="tw-text-sm tw-text-gray-300 tw-ml-0 tw-list-none">
-                            <li className="tw-text-gray-300">
-                                Works alongside your{' '}
-                                <SubtleLink color="tw-text-gray-300" href="TODO">
-                                    editor
-                                </SubtleLink>{' '}
-                                and{' '}
-                                <SubtleLink color="tw-text-gray-300" href="TODO">
-                                    code&nbsp;host
-                                </SubtleLink>
-                                .
-                            </li>
-                            <li className="tw-text-gray-300 tw-hidden">
-                                Supports{' '}
-                                <SubtleLink color="tw-text-gray-300" href="TODO">
-                                    55 programming languages
-                                </SubtleLink>
-                                <SubtleLink color="tw-text-gray-300" href="TODO">
-                                    Supports all&nbsp;languages&nbsp;&amp;&nbsp;repositories.
-                                </SubtleLink>
-                            </li>
-                            <li>
-                                <SubtleLink color="tw-text-gray-300" href="TODO">
-                                    Anonymous and free.
-                                </SubtleLink>
-                            </li>
-                        </ul>
-                    </header>
-
-                    <div className="tw-mx-auto tw-mt-md">
-                        <HomeActions />
-                    </div>
-                </div>
-                <div className="tw-col-span-full md:tw-col-span-2">
-                    <DemoVideo video="homepage-demo-202301" className="tw-rounded tw-border" />
-                </div>
-            </div>
-        </div>
     </Background>
 )
 
