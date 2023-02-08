@@ -1,11 +1,13 @@
 import { FunctionComponent } from 'react'
-import { buttonStyle, buttonLocation } from '@data'
+
 import CheckboxMarkedOutlineIcon from 'mdi-react/CheckboxMarkedOutlineIcon'
+
 import {
     ContentSection,
     Hero,
     Layout
-} from '@components'
+} from '../components'
+import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const signupUrl = 'https://sourcegraph.typeform.com/to/pIXTgwrd'
 
@@ -19,7 +21,7 @@ export const CodyPage: FunctionComponent = () => (
         hero={
             <Hero
                 variant="darkNebulous2"
-                product="cody (beta)"
+                product="cody"
                 title='Read, write, and understand code 10x faster with AI'
                 subtitle="Your {intelligent, code-aware, enterprise-ready} programmer's assistant."
                 cta={

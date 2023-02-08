@@ -2,7 +2,7 @@ import { FunctionComponent, ReactNode } from 'react'
 
 import classNames from 'classnames'
 
-import { BackButton, Background, ContentSection, TwoColumnSection } from '.'
+import { BackButton, Background, Badge, ContentSection, TwoColumnSection } from '.'
 
 interface BackButton {
     text: string
@@ -10,7 +10,7 @@ interface BackButton {
 }
 
 interface Hero extends Background {
-    product?: 'code search' | 'batch changes' | 'code insights' | 'sourcegraph cloud' | 'cody (beta)'
+    product?: 'code search' | 'batch changes' | 'code insights' | 'sourcegraph cloud' | 'cody'
     title: string | ReactNode
     titleClassName?: string
     backButton?: BackButton
@@ -40,7 +40,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
     centerContent = false,
 }) => {
     let illustration: Background['illustration']
-    if (product && product !== 'sourcegraph cloud' && product !== 'cody (beta)') {
+    if (product && product !== 'sourcegraph cloud' && product !== 'cody') {
         const illustrationName: string = product.split(' ')[1]
         illustration = illustrationName as Background['illustration']
     }
@@ -55,7 +55,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
 
             <div className="tw-flex tw-flex-col-reverse">
                 <h1 className={classNames(titleClassName, 'tw-whitespace-pre-line')}>{title}</h1>
-                {product && <h6 className="mb-2">{product}</h6>}
+                {product && <h6 className="mb-2">{product} {product==='cody' && <Badge text="beta" size='small' color='white-outlined' />}</h6>}
             </div>
 
             {description && <p className="tw-max-w-xl tw-mt-sm tw-text-lg">{description}</p>}
