@@ -41,7 +41,7 @@ Katie absolutely adores dogs.
 
 She wanted to create a set of Go packages that help other people be better dog owners. If dogs are happy, Katie's happy.
 
-She begins to create a new [repository](https://github.com/katiehockman/puppies) on Github, and starts creating Go packages for all of the source code that she wants to provide.
+She begins to create a new [repository](https://github.com/katiehockman/puppies) on GitHub, and starts creating Go packages for all of the source code that she wants to provide.
 
 - She created [walk](https://github.com/katiehockman/puppies/tree/master/walk), a package that can algorithmically decide the best dog walking route in your neighborhood.
 - She then created [bark](https://github.com/katiehockman/puppies/tree/master/bark). A package that can tell you what your dog is thinking based on the audio you provide from their bark.
@@ -168,7 +168,7 @@ This is where module proxies come in.
 />
 
 This is what the flow looks like without a proxy. Pretty simple, right?
-A Go developer runs a go command, like `go get`. And the go command hits the origin server directly every time the package isn't in the user's local cache. By origin server here, we're referring to any place where Go source code is hosted. Like Github, for example.
+A Go developer runs a go command, like `go get`. And the go command hits the origin server directly every time the package isn't in the user's local cache. By origin server here, we're referring to any place where Go source code is hosted. Like GitHub, for example.
 
 'go get' changes behavior depending on whether the go command is running in module-aware mode or if its running in GOPATH mode. Proxies are only used in module-aware mode, so that's the behavior we're going to discuss.
 
@@ -340,7 +340,7 @@ If you didn't check in your go.sum file, what happens if the proxy serves you so
 
 All of a sudden, our relatively secure direct endpoint has been replaced by a proxy that has every ability to lie to us, and isn't really trustworthy on its own.
 
-In the best possible scenario, we can imagine a world where the code author tells us what the go.sum lines should be, and we can always validate against that. But with Go code living in so many different origins like Github and Bitbucket, there is no single place to host code, and that's a great part of the go ecosystem that we don't want to change.
+In the best possible scenario, we can imagine a world where the code author tells us what the go.sum lines should be, and we can always validate against that. But with Go code living in so many different origins like GitHub and Bitbucket, there is no single place to host code, and that's a great part of the go ecosystem that we don't want to change.
 
 What we can do _instead_ is the next best thing: let's make sure that everyone agrees to add the _same_ go.sum lines to their module's go.sum file.
 
@@ -733,7 +733,7 @@ And she is personally happy, because now she has a set of solutions that can hel
 
 ...which will make for happier puppies everywhere. :)
 
-The Go team plans on fine-tuning these features, and they hope you'll try them out and give them feedback when you can! They'd love to hear how the mirror and checksum database are working for you, and we encourage you to file issues on Github as you spot them. The dogs of the world thank you.
+The Go team plans on fine-tuning these features, and they hope you'll try them out and give them feedback when you can! They'd love to hear how the mirror and checksum database are working for you, and we encourage you to file issues on GitHub as you spot them. The dogs of the world thank you.
 
 Katie Hockman, Google, Go Open Source
 

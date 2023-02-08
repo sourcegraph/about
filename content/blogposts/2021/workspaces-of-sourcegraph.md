@@ -155,7 +155,7 @@ In my editor I keep open every file (usually < 60) that I have interacted with w
 - Plugins/features highlights
   - Builtin Neovim LSP for code navigation/intel
   - FZF/ripgrep for global file/content search
-  - Shortcuts to open my current location in Github/Sourcegraph
+  - Shortcuts to open my current location in GitHub/Sourcegraph
 - Hammerspoon for custom keybindings and window management
 
 ![Workspace 1 of Camden Cheek, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/camden.png)

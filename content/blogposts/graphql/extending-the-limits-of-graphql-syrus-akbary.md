@@ -17,7 +17,7 @@ Syrus Akbary (@syrusakbary) is a prolific contributor in the GraphQL community. 
 
 ## Graphene (Python) Today
 
-Python Graphene was one of the first significant community projects to develop after the initial GraphQL announcement and is just a little over two years old now. Apart from the GraphQL-js reference implementation, it is the most starred GraphQL project on Github. Yes, that an imperfect metric, but it shows that there are a lot of people excited about what Graphene is doing.
+Python Graphene was one of the first significant community projects to develop after the initial GraphQL announcement and is just a little over two years old now. Apart from the GraphQL-js reference implementation, it is the most starred GraphQL project on GitHub. Yes, that an imperfect metric, but it shows that there are a lot of people excited about what Graphene is doing.
 
 
 ![akbary-1](//images.contentful.com/le3mxztn6yoo/54WEsX4ry8WKIM22sOI2KG/3953c4b0af55d2d681920fbac828679a/akbary-1.png)
