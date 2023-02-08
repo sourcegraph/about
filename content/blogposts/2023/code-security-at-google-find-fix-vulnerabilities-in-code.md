@@ -6,7 +6,7 @@ authors:
 publishDate: 2023-02-08T10:00-07:00
 description: 'Some interesting ways Google ensures their codebase stays secure, across billions of lines of code and ~30,000 software engineers.'
 tags: [blog]
-slug: 'how-google-finds-and-fixes-vulnerabilities-in-code'
+slug: 'code-security-at-google-find-fix-vulnerabilities-in-code'
 published: true
 ---
 
