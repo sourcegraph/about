@@ -22,7 +22,7 @@ He didn't own the API code, but he wanted GraphQL at Netlify. There was some res
 
 Netlify is Rails + Go + Mongo, so it wasn't simple to add something to the API.
 
-He initially tried Github's graphql-ruby Ruby gem. But that integrates with SQL, not Mongo, so that didn't work.
+He initially tried GitHub's graphql-ruby Ruby gem. But that integrates with SQL, not Mongo, so that didn't work.
 
 Then he tried node: express-graphql, apollo server, graphql-anywhere, graphql-code-generator. These succeeded in building a schema from Mongo, but the schema didn't work.
 

@@ -13,7 +13,7 @@ published: true
 
 
 Tony Ghita is an engineer at Twitch on the API platform team. He's been leading GraphQL API implementation efforts at Twitch for the past year or so.
-You can find him on Github, Twitch, and Twitter as tonyghita. Tony says you can also check the Equifax dump for further information.
+You can find him on GitHub, Twitch, and Twitter as tonyghita. Tony says you can also check the Equifax dump for further information.
 
 Tony begins with some very cute pictures of his puppy Finn, a great way to grab the audience's attention.
 

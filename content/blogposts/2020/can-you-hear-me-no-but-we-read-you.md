@@ -14,7 +14,7 @@ canonical: https://fastcompany.com/90565930/im-deaf-and-this-is-what-happens-whe
 
 _This article originally appeared on [Fast Company](https://fastcompany.com/90565930/im-deaf-and-this-is-what-happens-when-i-get-on-a-zoom-call)._
 
-At Sourcegraph, we’re all-remote. That means we write a lot—in emails, Google Docs, Github, and Slack. We work hard to cultivate a written-first culture.
+At Sourcegraph, we’re all-remote. That means we write a lot—in emails, Google Docs, GitHub, and Slack. We work hard to cultivate a written-first culture.
 
 And that works beautifully for me. Because, you see, I have a hearing problem. Or as I like to say, I’m deaf as a post.
 

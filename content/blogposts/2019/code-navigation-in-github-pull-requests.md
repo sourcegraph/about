@@ -20,7 +20,7 @@ Here's what it looks like:
 
 <Figure 
    src="https://sourcegraphstatic.com/code-navigation-in-github-pull-requests-typescript-hover.png" 
-   alt="Github pull request demonstrating code navigation to help review code."
+   alt="GitHub pull request demonstrating code navigation to help review code."
 />
 
 How does it help? Suppose you're reviewing a pull request that calls a function you don't recognize. You'll be able to quickly answer:
