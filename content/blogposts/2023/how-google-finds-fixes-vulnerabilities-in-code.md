@@ -10,7 +10,7 @@ slug: 'how-google-finds-and-fixes-vulnerabilities-in-code'
 published: true
 ---
 
-Google has a [multi-billion-line codebase](https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext) and ~30,000 software engineers. Here are a few things we found interesting about how Google keeps its massive codebase secure, from the O'Reilly book [Software Engineering at Google](https://abseil.io/resources/swe-book) (published in March 2020 and [free to read](https://abseil.io/resources/swe-book/html/toc.html)).
+Google has a [multi-billion-line codebase](https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext) and ~30,000 software engineers. Here are a few things we found interesting about how Google keeps its massive codebase secure and thinks about vulnerability management, from the O'Reilly book [Software Engineering at Google](https://abseil.io/resources/swe-book) (published in March 2020 and [free to read](https://abseil.io/resources/swe-book/html/toc.html)).
 
 ### Keeping static analysis actionable with strict criteria and a quick feedback loop
 
