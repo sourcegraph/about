@@ -37,6 +37,12 @@
             border: 1px solid var(--sg-color-gray-200);
         }
 
+        blockquote {
+            padding-left: 2rem;
+            border-left: solid 4px var(--sg-color-gray-200);
+            margin-bottom: 1.25rem;
+        }
+
         pre code {
             border: none;
         }
