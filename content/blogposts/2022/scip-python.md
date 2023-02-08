@@ -78,7 +78,7 @@ Additionally, if any child classes implement or override a particular class meth
 Use the `scip-python index` command to index a Python codebase.
 
  ```bash
-npm install -g @sourcegraph/scip-python @sourecgraph/src
+npm install -g @sourcegraph/scip-python @sourcegraph/src
 
 cd my-python-project 
 # Ensure you are in virtualenv that has dependencies installed
