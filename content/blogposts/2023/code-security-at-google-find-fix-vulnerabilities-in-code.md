@@ -43,6 +43,6 @@ The 2017 blog post retelling the Operation Rosehub story ends with a plea for de
 
 ### Thank you
 
-We are so appreciative of Google and the authors of the [Software Engineering at Google](https://abseil.io/resources/swe-book) book for sharing what they've learned--and for making the [book PDF accessible to everyone](https://twitter.com/TitusWinters/status/1385370425128062986).
+We are so appreciative of Google and the authors of the [Software Engineering at Google](https://abseil.io/resources/swe-book) book for sharing what they've learned--and for making the book [free to read for everyone](https://abseil.io/resources/swe-book/html/toc.html).
 
 Want to see more about how Google manages their massive codebase? Check out "[An ex-Googler's guide to dev tools](https://about.sourcegraph.com/blog/ex-googler-guide-dev-tools/)."
