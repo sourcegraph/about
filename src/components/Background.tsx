@@ -82,6 +82,7 @@ export interface Background {
         | 'infrared'
         | 'aurora'
         | 'radialSpace'
+        | 'purple'
         // Starship Variants
         | 'starshipLaunchPills'
     children?: ReactNode
@@ -137,6 +138,7 @@ const backgrounds: { [key: string]: StaticImageData | string } = {
     infrared: 'sg-bg-gradient-infrared',
     aurora: 'sg-bg-gradient-aurora',
     radialSpace: 'sg-bg-radial-space',
+    purple: 'sg-bg-gradient-purple',
     // Starship Variants
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     starshipLaunchPills,

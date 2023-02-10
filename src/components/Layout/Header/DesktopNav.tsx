@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
 import { camelCase } from 'lodash'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
@@ -8,10 +9,11 @@ import { buttonStyle, buttonLocation } from '../../../data/tracking'
 import { NavLink } from '../navLinks'
 
 interface DesktopNav {
+    dark?: boolean
     navLinks: NavLink[]
 }
 
-const DesktopNav: FunctionComponent<DesktopNav> = ({ navLinks }) => (
+const DesktopNav: FunctionComponent<DesktopNav> = ({ dark = false, navLinks }) => (
     <>
         <Nav className="mr-auto left-nav ml-lg-5">
             {navLinks.map(navLink =>
@@ -79,7 +81,10 @@ const DesktopNav: FunctionComponent<DesktopNav> = ({ navLinks }) => (
 
         <Nav className="right-nav lg:tw-justify-end">
             <Nav.Link
-                className="px-5 py-2 ml-xs btn btn-primary font-weight-bold"
+                className={classNames(
+                    'px-5 py-2 ml-xs btn font-weight-bold',
+                    dark ? 'tw-bg-white tw-text-violet-400' : 'btn-primary'
+                )}
                 href="https://signup.sourcegraph.com"
                 title="Start for free"
                 data-button-style={buttonStyle.primary}
