@@ -180,7 +180,7 @@ const HomeHero: FunctionComponent = () => (
                 </div>
             </div>
         )}
-
+        <div className="tw-h-[500px]" />
         <CustomerLogos />
     </Background>
 )
@@ -221,6 +221,10 @@ const HomeActions: React.FunctionComponent<{}> = () => (
                 Web
             </Link>{' '}
             (public code only),{' '}
+            <Link href="TODO" className="tw-text-violet-300 tw-no-underline tw-font-normal">
+                Cloud/self-hosted server
+            </Link>
+            ,{' '}
             <Link href="TODO" className="tw-text-violet-300 tw-no-underline tw-font-normal">
                 build from source
             </Link>
