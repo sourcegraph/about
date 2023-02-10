@@ -34,6 +34,9 @@ export const Header: FunctionComponent<Props> = props => {
 
     const isDarkNav = props.className?.includes('navbar-dark')
     const isPurpleNav = props.className?.includes('navbar-purple')
+    const isTransparentNav = props.className?.includes('navbar-transparent')
+
+    const dark = isDarkNav || isPurpleNav || isTransparentNav
 
     /**
      * This checks the scroll position to see if the viewport has been
@@ -71,17 +74,21 @@ export const Header: FunctionComponent<Props> = props => {
     })
 
     const navStyle = classNames('header navbar py-3 w-100 fixed-top', props.className, {
-        'bg-white': !isDarkNav && !isPurpleNav && (sticky || isOpen),
-        'tw-bg-violet-800': isPurpleNav && (sticky || isOpen),
+        'bg-white': !isDarkNav && !isPurpleNav && !isTransparentNav && (sticky || isOpen),
+        'tw-bg-violet-750': (isPurpleNav || isTransparentNav) && (sticky || isOpen),
         'tw-bg-black': isDarkNav && (sticky || isOpen),
     })
 
     return (
-        <nav className={classNames('shadow-sm', navStyle)}>
+        <nav className={navStyle}>
             <div className="container-xl tw-px-0">
                 <Navbar.Brand href="/" onContextMenu={onRightClickLogo} className="tw-mr-0 header tw-flex">
                     <img
-                        src={isDarkNav || isPurpleNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
+                        src={
+                            isDarkNav || isPurpleNav || isTransparentNav
+                                ? '/sourcegraph-reverse-logo.svg'
+                                : '/sourcegraph-logo.svg'
+                        }
                         width={150}
                         height={26}
                         className="tw-max-w-[150px] tw-w-full"
@@ -106,7 +113,7 @@ export const Header: FunctionComponent<Props> = props => {
                             ))}
                         </button>
 
-                        <DesktopNav navLinks={navLinks} />
+                        <DesktopNav navLinks={navLinks} dark={dark} />
 
                         <MobileNav navLinks={navLinks} isOpen={isOpen} />
                     </>

@@ -5,40 +5,40 @@ import classNames from 'classnames'
 import { StaticImageData } from 'next/image'
 
 // Light Nebulous Variants
-import lightNebulousSaturn1 from './assets/backgrounds/light-nebulous-saturn-1.jpg'
-import lightNebulousSaturn2 from './assets/backgrounds/light-nebulous-saturn-2.jpg'
-import lightNebulousVenus1 from './assets/backgrounds/light-nebulous-venus-1.jpg'
-import lightNebulousVenus2 from './assets/backgrounds/light-nebulous-venus-2.jpg'
-import lightNebulousMars from './assets/backgrounds/light-nebulous-mars.jpg'
-import lightNebulousAurora from './assets/backgrounds/light-nebulous-aurora.jpg'
+import lightNebulousSaturn1 from './Background-assets/backgrounds/light-nebulous-saturn-1.jpg'
+import lightNebulousSaturn2 from './Background-assets/backgrounds/light-nebulous-saturn-2.jpg'
+import lightNebulousVenus1 from './Background-assets/backgrounds/light-nebulous-venus-1.jpg'
+import lightNebulousVenus2 from './Background-assets/backgrounds/light-nebulous-venus-2.jpg'
+import lightNebulousMars from './Background-assets/backgrounds/light-nebulous-mars.jpg'
+import lightNebulousAurora from './Background-assets/backgrounds/light-nebulous-aurora.jpg'
 // Dark Nebulous Variants
-import darkNebulous1 from './assets/backgrounds/dark-nebulous-1.jpg'
-import darkNebulous1Md from './assets/backgrounds/dark-nebulous-1-md.jpg'
-import darkNebulous1Sm from './assets/backgrounds/dark-nebulous-1-sm.jpg'
-import darkNebulous2 from './assets/backgrounds/dark-nebulous-2.jpg'
-import darkNebulous2Md from './assets/backgrounds/dark-nebulous-2-md.jpg'
-import darkNebulous2Sm from './assets/backgrounds/dark-nebulous-2-sm.jpg'
-import darkNebulous3 from './assets/backgrounds/dark-nebulous-3.jpg'
-import darkNebulous3Md from './assets/backgrounds/dark-nebulous-3-md.jpg'
-import darkNebulous3Sm from './assets/backgrounds/dark-nebulous-3-sm.jpg'
+import darkNebulous1 from './Background-assets/backgrounds/dark-nebulous-1.jpg'
+import darkNebulous1Md from './Background-assets/backgrounds/dark-nebulous-1-md.jpg'
+import darkNebulous1Sm from './Background-assets/backgrounds/dark-nebulous-1-sm.jpg'
+import darkNebulous2 from './Background-assets/backgrounds/dark-nebulous-2.jpg'
+import darkNebulous2Md from './Background-assets/backgrounds/dark-nebulous-2-md.jpg'
+import darkNebulous2Sm from './Background-assets/backgrounds/dark-nebulous-2-sm.jpg'
+import darkNebulous3 from './Background-assets/backgrounds/dark-nebulous-3.jpg'
+import darkNebulous3Md from './Background-assets/backgrounds/dark-nebulous-3-md.jpg'
+import darkNebulous3Sm from './Background-assets/backgrounds/dark-nebulous-3-sm.jpg'
 // Code Variants
-import venusCode from './assets/backgrounds/venus-code.jpg'
-import venusCode2 from './assets/backgrounds/venus-code-2.jpg'
-import saturnCode from './assets/backgrounds/saturn-code.jpg'
-import marsCode from './assets/backgrounds/mars-code.jpg'
+import venusCode from './Background-assets/backgrounds/venus-code.jpg'
+import venusCode2 from './Background-assets/backgrounds/venus-code-2.jpg'
+import saturnCode from './Background-assets/backgrounds/saturn-code.jpg'
+import marsCode from './Background-assets/backgrounds/mars-code.jpg'
 // Grid Variants
-import darkMultiGrid from './assets/backgrounds/dark-multi-grid.jpg'
-import darkSimpleGrid from './assets/backgrounds/dark-simple-grid.jpg'
-import darkAuroraGrid from './assets/backgrounds/dark-aurora-grid.jpg'
+import darkMultiGrid from './Background-assets/backgrounds/dark-multi-grid.jpg'
+import darkSimpleGrid from './Background-assets/backgrounds/dark-simple-grid.jpg'
+import darkAuroraGrid from './Background-assets/backgrounds/dark-aurora-grid.jpg'
 // Starship Variants
-import starshipLaunchPills from './assets/backgrounds/starship-launch-pills.svg'
+import starshipLaunchPills from './Background-assets/backgrounds/starship-launch-pills.svg'
 // Illustrations
-import changes from './assets/illustrations/changes.svg'
-import insights from './assets/illustrations/insights.svg'
-import search from './assets/illustrations/search.svg'
+import changes from './Background-assets/illustrations/changes.svg'
+import insights from './Background-assets/illustrations/insights.svg'
+import search from './Background-assets/illustrations/search.svg'
 
-import { useWindowWidth } from '../../hooks/windowWidth'
-import { breakpoints } from '../../data/breakpoints'
+import { useWindowWidth } from '../hooks/windowWidth'
+import { breakpoints } from '../data/breakpoints'
 
 export interface Background {
     variant: // Standard Variants
@@ -82,6 +82,7 @@ export interface Background {
         | 'infrared'
         | 'aurora'
         | 'radialSpace'
+        | 'purple'
         // Starship Variants
         | 'starshipLaunchPills'
     children?: ReactNode
@@ -137,6 +138,7 @@ const backgrounds: { [key: string]: StaticImageData | string } = {
     infrared: 'sg-bg-gradient-infrared',
     aurora: 'sg-bg-gradient-aurora',
     radialSpace: 'sg-bg-radial-space',
+    purple: 'sg-bg-gradient-purple',
     // Starship Variants
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     starshipLaunchPills,

@@ -20,7 +20,7 @@
         @apply tw-font-sans tw-text-6xl md:tw-text-7xl tw-tracking-normal tw-font-semibold;
     }
     h2 {
-        @apply tw-font-sans tw-text-4xl md:tw-text-5xl tw-tracking-normal tw-font-semibold;
+        @apply tw-font-sans tw-text-4xl tw-tracking-normal tw-font-semibold;
     }
     h3 {
         @apply tw-font-sans tw-text-3xl tw-tracking-normal tw-font-normal;
@@ -44,7 +44,7 @@
     }
     /* Standalone Links (Usually CTAs) */
     a {
-        @apply tw-text-blurple-400 tw-font-bold;
+        @apply tw-text-blurple-400 tw-font-semibold;
     }
 
     /* Lists */
@@ -134,6 +134,12 @@
     }
     .sg-bg-radial-space {
         background: radial-gradient(80.77% 80.77% at 50% 80.77%, theme(colors.violet.600) 0%, theme(colors.violet.700) 45.13%, theme(colors.violet.800) 100%);
+    }
+    .sg-bg-gradient-purple {
+        background: linear-gradient(to right, theme(colors.violet.750), theme(colors.violet.600));
+    }
+    .sg-bg-gradient-purple-white {
+        background-image: linear-gradient(to right, #ffffff, theme(colors.violet.300));
     }
 
     /* Starship Backgrounds */

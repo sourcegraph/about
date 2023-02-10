@@ -1,12 +1,20 @@
 import React from 'react'
 
+import classNames from 'classnames'
+
 import { buttonStyle } from '../../data/tracking'
 
-export const TrySourcegraphForFreeButton: React.FunctionComponent<{ buttonLocation: number }> = ({
-    buttonLocation,
-}) => (
+export const TrySourcegraphForFreeButton: React.FunctionComponent<{
+    buttonLocation: number
+    dark?: boolean
+    size?: 'md' | 'lg'
+}> = ({ buttonLocation, dark = false, size = 'md' }) => (
     <a
-        className="btn btn-primary tw-whitespace-nowrap"
+        className={classNames(
+            'btn btn-primary tw-whitespace-nowrap',
+            dark && 'tw-bg-white tw-text-violet-500',
+            size === 'lg' && 'tw-py-xs'
+        )}
         href="https://signup.sourcegraph.com"
         title="Start for free"
         data-button-style={buttonStyle.primary}

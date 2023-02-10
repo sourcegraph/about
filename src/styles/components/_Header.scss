@@ -28,10 +28,10 @@
     }
 
     &.navbar-dark,
-    &.navbar-purple {
-        .nav .nav-link,
-        .right-nav .tw-text-blurple-400 {
-            color: $white !important;
+    &.navbar-purple,
+    &.navbar-transparent {
+        .nav .nav-link {
+            color: $white;
         }
         .nav-link a {
             color: #fff;
@@ -87,7 +87,8 @@
         }
     }
     &.navbar-dark .nav-line,
-    &.navbar-purple .nav-line {
+    &.navbar-purple .nav-line,
+    &.navbar-transparent .nav-line {
         background: #fff;
     }
 
