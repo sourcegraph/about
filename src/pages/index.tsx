@@ -83,8 +83,6 @@ const HomeHero: FunctionComponent = () => (
             </Heading>
 
             <p className="tw-text-gray-200 tw-my-md">
-                Supports many repositories, huge monorepos, and 40+&nbsp;languages.
-                <br />
                 Works&nbsp;alongside your code&nbsp;host and editor.
                 <br />
                 Built on{' '}

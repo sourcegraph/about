@@ -139,7 +139,7 @@
         background: linear-gradient(to right, theme(colors.violet.750), theme(colors.violet.600));
     }
     .sg-bg-gradient-purple-white {
-        background-image: linear-gradient(to right, #E9C7FF, theme(colors.violet.400));
+        background-image: linear-gradient(to right, #ffffff, theme(colors.violet.300));
     }
 
     /* Starship Backgrounds */
