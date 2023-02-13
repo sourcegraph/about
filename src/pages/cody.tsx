@@ -53,7 +53,7 @@ export const CodyPage: FunctionComponent = () => (
                     Answer questions about both general programming topics and your specific codebase from right inside your editor. Cody knows about your local code and can learn from all the code and documentation inside your organization.
                 </p>
                 <img
-                    className="tw-mt-6 tw-mx-auto tw-h-auto tw-max-w-xl"
+                    className="tw-mt-6 tw-mx-auto tw-h-auto tw-max-w-xl tw-drop-shadow-xl"
                     alt="Chatbot dialog"
                     src="https://user-images.githubusercontent.com/1646931/211680462-7013ece4-e312-46e4-89e3-90731dff6710.png" />
             </div>
@@ -69,19 +69,6 @@ export const CodyPage: FunctionComponent = () => (
                 <img className="tw-mt-6 tw-mx-auto tw-h-auto tw-max-w-5xl"
                     alt="Refactoring command"
                     src="https://user-images.githubusercontent.com/1646931/211680700-7eebb3e8-387a-4e53-a3c8-a8e31246cc47.png" />
-            </div>
-        </ContentSection>
-        <ContentSection
-            background="white"
-        >
-            <div className="flex-wrap tw-flex">
-                <h2 className="mb-3 tw-text-center w-100">Context-aware autocomplete</h2>
-                <p className="tw-text-center icon-subheader w-100">
-                    Let Cody suggest intelligent code completions generated with context from your codebase.
-                </p>
-                <img className="tw-mt-6 tw-mx-auto tw-h-auto tw-max-w-5xl"
-                    alt="Refactoring editor command"
-                    src="https://user-images.githubusercontent.com/1646931/211681094-d4df94ce-7602-4ee5-8af0-f8dfddc73f6b.png" />
             </div>
         </ContentSection>
         <ContentSection
