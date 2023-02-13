@@ -31,11 +31,7 @@ if strings.EqualFold(string1, string2) {
 }
 ```
 
-These short-and-sweet replacements are a great way to learn framework
-idioms or library functions, like `strings.EqualFold` in Go.<sup>1</sup> And as a
-codebase grows, small inefficiencies like this one, and inconsistencies
-opportunities compound. Code patterns creep in that affect readability and
-performance—and [it matters](https://www.digitalocean.com/blog/how-to-efficiently-compare-strings-in-go/?).
+These short-and-sweet replacements (even if [not *always* semantics-preserving](https://github.com/golang/go/issues/52204)) are a great way to learn framework idioms or library functions, like `strings.EqualFold` in Go.<sup>1</sup> And as a codebase grows, small inefficiencies and inconsistencies compound. Code patterns creep in that affect readability and performance—and [it matters](https://www.digitalocean.com/blog/how-to-efficiently-compare-strings-in-go/?).
 
 ## Running code checks quickly, easily, and comprehensively
 
@@ -301,7 +297,7 @@ feedback@sourcegraph.com. Happy searching!
 
 ---
 
-<sup>1</sup> Another one of my favorites tools using the same principle is [Kibit](https://github.com/jonase/kibit) for Clojure.
+<sup>1</sup> Another one of my favorite tools using the same principle is [Kibit](https://github.com/jonase/kibit) for Clojure.
 <br/>
 <sup>2</sup> See the [structural search reference](https://about.sourcegraph.com/blog/code-search-turned-code-checker/) for more details about special syntax.
 <br/>
