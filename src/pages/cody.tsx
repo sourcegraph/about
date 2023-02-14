@@ -20,7 +20,7 @@ export const CodyPage: FunctionComponent = () => (
         className="navbar-dark"
         hero={
             <Hero
-                variant="darkNebulous2"
+                variant="radialSpace"
                 product="cody"
                 title='Read, write, and understand code 10x faster with AI'
                 subtitle="Your {intelligent, code-aware, enterprise-ready} programmer's assistant."
@@ -66,7 +66,7 @@ export const CodyPage: FunctionComponent = () => (
                 <p className="tw-text-center icon-subheader w-100">
                     Take the toil out of writing tests and refactoring. Pattern-match from existing code and never write boilerplate again.
                 </p>
-                <img className="tw-mt-6 tw-mx-auto tw-h-auto tw-max-w-5xl"
+                <img className="tw-mt-6 tw-mx-auto tw-h-auto tw-max-w-5xl tw-drop-shadow-xl"
                     alt="Refactoring command"
                     src="https://user-images.githubusercontent.com/1646931/211680700-7eebb3e8-387a-4e53-a3c8-a8e31246cc47.png" />
             </div>
