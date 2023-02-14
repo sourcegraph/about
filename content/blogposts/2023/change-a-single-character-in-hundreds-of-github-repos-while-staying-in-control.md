@@ -62,7 +62,7 @@ This kind of dependency update is clearly a feather in the monorepo's cap but le
 
 Whenever we see this argument crop up and we hear "…although, with the right tooling…", we're sitting here going: "Hey! That's us! We are the right tooling!".
 
-![Leonardo DiCaprio as Rick Dalton from Once Upon a Time In Hollywood, pointing at something he recognized on the TV](./rick.jpg)
+![Leonardo DiCaprio as Rick Dalton from Once Upon a Time In Hollywood, pointing at something he recognized on the TV](https://storage.googleapis.com/sourcegraph-assets/blog/dax-feb-2023/image3.jpg)
 
 Because we know Sourcegraph is the best tool for this job, we'll eat our own dog food. Updating multiple repos at once is nothing new, though, so let's look at some other options at our disposal.
 
