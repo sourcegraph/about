@@ -8,8 +8,8 @@ description: 'How we upgraded from actions/checkout@v2 to actions/checkout@v3 fo
 tags: [blog]
 slug: 'change-a-single-character-in-hundreds-of-github-repos-while-staying-in-control'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/conc-og-social.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/conc-og-social.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/dax-feb-2023/sg-og-Image-batch-changes-dax.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/dax-feb-2023/sg-og-Image-batch-changes-dax.png
 ---
 
 **Sourcegraph is a code intelligence tool that goes far beyond search. In this post, we'll look at how we can update a single character across hundreds of repositories using Sourcegraph's [Batch Changes](https://about.sourcegraph.com/batch-changes) feature.**
@@ -36,11 +36,11 @@ That is why you may have noticed a deprecation warning from GitHub below each of
 
 Searching the open-source repositories indexed by Sourcegraph, we see that at least 520k actions in about 200k repositories use `actions/checkout@v2`. You can also [search Sourcegraph](https://sourcegraph.com/search?q=context:global+actions/checkout%40v2+count:600000&patternType=standard&sm=0&groupBy=repo) to see for yourself.
 
-![Screenshot of Sourcegraph interface showing search results for files containing "uses: actions/checkout@v2". The result count, 521.0k, is highlighted.](./sourcegraph-search-checkout.png)
+![Screenshot of Sourcegraph interface showing search results for files containing "uses: actions/checkout@v2". The result count, 521.0k, is highlighted.](https://storage.googleapis.com/sourcegraph-assets/blog/dax-feb-2023/image2.png)
 
 Even if GitHub were to publish a point release of `actions/checkout@v2`, tens of thousands of actions still use specific versions of `checkout@v2.*`.
 
-![Screenshot of Sourcegraph interface showing search results for files containing "uses: actions/checkout@v2.". The result count shows 12.2k.](./sourcegraph-search-checkout-point.png)
+![Screenshot of Sourcegraph interface showing search results for files containing "uses: actions/checkout@v2.". The result count shows 12.2k.](https://storage.googleapis.com/sourcegraph-assets/blog/dax-feb-2023/image4.png)
 
 Updating a small dependency like this might not be a problem if you maintain only a handful of repositories, but we've seen the numbers: Even the most staunch monorepo proponents have dozens of supporting repositories.
 
@@ -98,11 +98,11 @@ The GitHub Actions update makes an excellent example, so if you'd like a quick o
 
 The rest of this guide assumes that you already use [Sourcegraph cloud](https://about.sourcegraph.com/cloud) or that you have Sourcegraph [installed](https://docs.sourcegraph.com/). You should also have [Docker](https://docs.docker.com/get-docker/) and the [Sourcegraph CLI](https://docs.sourcegraph.com/cli) installed locally.
 
-![A screenshot of the Sourcegraph UI, highlighting the Batch Change menu item, and the button to create a batch change.](./sourcegraph-batch-change-create.png)
+![A screenshot of the Sourcegraph UI, highlighting the Batch Change menu item, and the button to create a batch change.](https://storage.googleapis.com/sourcegraph-assets/blog/dax-feb-2023/image6.png)
 
 In Sourcegraph, click on **Batch Changes** in the top menu, then on **Create batch change**.
 
-![A screenshot of the Sourcegraph UI, showing the configuration page for a new batch change.](./sourcegraph-batch-change-name.png)
+![A screenshot of the Sourcegraph UI, showing the configuration page for a new batch change.](https://storage.googleapis.com/sourcegraph-assets/blog/dax-feb-2023/image5.png)
 
 Select your namespace and enter a descriptive name for this batch change (use only letters, numbers, \_, and -).
 
@@ -110,7 +110,7 @@ Set the visibility for this batch change (for now, as of January 2023, all batch
 
 Click **Create**.
 
-![A screenshot of the Sourcegraph UI, showing the batch spec page for a new batch change, with the spec field highlighted.](./sourcegraph-batch-change-spec.png)
+![A screenshot of the Sourcegraph UI, showing the batch spec page for a new batch change, with the spec field highlighted.](https://storage.googleapis.com/sourcegraph-assets/blog/dax-feb-2023/image8.png)
 
 Now we'll update the batch spec, a YAML file that specifies exactly what a batch change should do.
 
@@ -213,7 +213,7 @@ Test the search by clicking **Preview workspaces**.
 
 If your search correctly matches the repositories you'd like to update, click on **Download for src-cli**.
 
-![Sourcegraph UI with the Download spec button highlighted](./sourcegraph-download-spec.png)
+![Sourcegraph UI with the Download spec button highlighted](https://storage.googleapis.com/sourcegraph-assets/blog/dax-feb-2023/image7.png)
 
 In the popup, click **Download spec** to download the change spec and save it on your local machine.
 
@@ -224,11 +224,11 @@ This command will download the necessary Docker images and start a local contain
 
 If the change looks correct and you would like to proceed, click on **Apply** or run `src batch apply` in the terminal. Your local machine will now commit and push the changes, then open pull requests to merge your changes into your main branch.
 
-![Sourcegraph UI showing change sets for a batch change](./sourcegraph-changesets.png)
+![Sourcegraph UI showing change sets for a batch change](https://storage.googleapis.com/sourcegraph-assets/blog/dax-feb-2023/image1.png)
 
 While the change is being applied and after Sourcegraph opens pull requests, you can visit the batch change work page in Sourcegraph to check on progress.
 
-![Sourcegraph UI showing a burn-down chart for a batch change](./sourcegraph-burndown-chart.png)
+![Sourcegraph UI showing a burn-down chart for a batch change](https://storage.googleapis.com/sourcegraph-assets/blog/dax-feb-2023/image11.png)
 
 Click on **Burndown chart** to see progress as a chart indicating how your change is being merged across repositories.
 
