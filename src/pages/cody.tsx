@@ -59,7 +59,7 @@ export const CodyPage: FunctionComponent = () => (
             </div>
         </ContentSection>
         <ContentSection
-            background="darkNebulous3"
+            background="radialSpace"
         >
             <div >
                 <h2 className="mb-3 tw-text-center w-100">Intelligent refactoring</h2>
