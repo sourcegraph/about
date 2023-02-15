@@ -23,7 +23,7 @@ const Cloud: FunctionComponent = () => (
                 titleClassName="tw-text-transparent tw-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-white/10 tw-to-violet-200"
                 subtitle="Sourcegraph Cloud’s dedicated, single-tenant SaaS solution is the easiest way to get Sourcegraph in the cloud. Get full code intelligence for your codebase quickly, securely, and without having to host."
                 centerContent={true}
-                cta={<StandardCallToAction buttonLocation={buttonLocation.hero} />}
+                cta={<StandardCallToAction buttonLocation={buttonLocation.hero} center={true} dark={true} />}
                 floatingImg="/code-intelligence-platform-illustration.svg"
                 displayUnderNav={true}
             />
