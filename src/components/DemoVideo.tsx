@@ -20,7 +20,8 @@ export const DemoVideo: React.FunctionComponent<{
     video: keyof typeof VIDEOS
     splash?: boolean
     className?: string
-}> = ({ video, splash = false, className }) => {
+    splashClassName?: string
+}> = ({ video, splash = false, className, splashClassName }) => {
     const videoRef = useRef<HTMLVideoElement>(null)
 
     const [isShowing, setIsShowing] = useState(false)
@@ -71,7 +72,11 @@ export const DemoVideo: React.FunctionComponent<{
             tabIndex={0}
         >
             <div
-                className="tw-absolute tw-top-0 tw-right-0 tw-bottom-0 tw-left-0 tw-bg-contain tw-opacity-40" // eslint-disable-next-line react/forbid-dom-props
+                className={classNames(
+                    'tw-absolute tw-top-0 tw-right-0 tw-bottom-0 tw-left-0 tw-bg-contain tw-opacity-40',
+                    splashClassName
+                )}
+                // eslint-disable-next-line react/forbid-dom-props
                 style={{
                     backgroundImage: `url(${videoInfo.poster})`,
                 }}

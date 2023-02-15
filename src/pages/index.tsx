@@ -27,7 +27,7 @@ const Home: FunctionComponent = () => (
         className="navbar-transparent tw-text-white"
         hero={<HomeHero />}
     >
-        <ContentSection background="white" parentClassName="tw-border-b-8 tw-border-b-violet-400">
+        <ContentSection background="white">
             <div className="tw-mx-auto tw-text-center max-w-700">
                 <h2 className="tw-mb-2">
                     Over{' '}
@@ -105,12 +105,13 @@ const HomeHero: FunctionComponent = () => (
                 size="lg"
             />
         </div>
-        <SolidColorBottomHalfSection className="tw-mt-2xl" bottomHalfClassName="tw-bg-white">
+        <SolidColorBottomHalfSection className="tw-mt-2xl tw-rounded-lg" bottomHalfClassName="tw-bg-white">
             <div className="tw-mx-sm">
                 <DemoVideo
                     video="homepage-demo-202301"
                     splash={true}
-                    className="tw-mx-auto w-100 tw-max-w-4xl tw-bg-violet-750"
+                    className="tw-mx-auto w-100 tw-max-w-4xl tw-bg-violet-750 tw-rounded-lg"
+                    splashClassName="tw-rounded-lg"
                 />
             </div>
         </SolidColorBottomHalfSection>
