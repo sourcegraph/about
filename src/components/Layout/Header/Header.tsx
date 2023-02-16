@@ -61,11 +61,15 @@ export const Header: FunctionComponent<Props> = props => {
         parentElement!.style.paddingTop = `${navHeight}px`
     })
 
-    const navStyle = classNames('header navbar tw-py-4 tw-w-full fixed-top', props.className, {
-        'bg-white': !isDarkNav && !isPurpleNav && !isTransparentNav && (sticky || isOpen),
-        'tw-bg-violet-750': (isPurpleNav || isTransparentNav) && (sticky || isOpen),
-        'tw-bg-black': isDarkNav && (sticky || isOpen),
-    })
+    const navStyle = classNames(
+        'header navbar tw-py-4 tw-w-full tw-fixed tw-top-0 tw-right-0 tw-left-0 tw-z-[1030]',
+        props.className,
+        {
+            'bg-white': !isDarkNav && !isPurpleNav && !isTransparentNav && (sticky || isOpen),
+            'tw-bg-violet-750': (isPurpleNav || isTransparentNav) && (sticky || isOpen),
+            'tw-bg-black': isDarkNav && (sticky || isOpen),
+        }
+    )
 
     return (
         <nav className={navStyle}>
