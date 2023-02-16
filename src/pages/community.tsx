@@ -13,7 +13,7 @@ export const Community: FunctionComponent = () => (
         className="community-page"
         heroAndHeaderClassName="tw-bg-blue-200"
         hero={
-            <div className="container tw-pb-sm">
+            <div className="tw-container tw-mx-auto tw-pb-sm">
                 <div className="tw-p-8 row">
                     <div className="col-lg-6">
                         <div className="text-uppercase">Join us</div>

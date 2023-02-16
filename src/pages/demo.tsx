@@ -12,12 +12,12 @@ const Demo: FunctionComponent = () => (
         }}
         heroAndHeaderClassName="sg-bg-gradient-venus"
         hero={
-            <div className="container tw-pt-3xl tw-pb-lg">
+            <div className="tw-container tw-mx-auto tw-pt-3xl tw-pb-lg">
                 <h1>Schedule a demo with a product expert</h1>
             </div>
         }
     >
-        <div className="container tw-pt-xl">
+        <div className="tw-container tw-mx-auto tw-pt-xl">
             <div className="row">
                 <div className="tw-mt-2 col-lg-6 tw-pr-md">
                     <p className="tw-mb-8">

@@ -46,7 +46,7 @@ const UseCases: React.FunctionComponent = () => (
         }}
         hero={
             <Background variant="lightNebulousAurora">
-                <div className="container">
+                <div className="tw-container tw-mx-auto">
                     <div className="row tw-items-center">
                         <div className="tw-mt-16 col-lg-7 mb-lg-6 md:tw-pr-12">
                             <h1 className="tw-mb-0">Our customers move faster with Sourcegraph</h1>

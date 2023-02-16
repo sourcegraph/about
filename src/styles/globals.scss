@@ -39,23 +39,6 @@ $btn-font-weight: 600;
 $card-spacer-y: 1.25rem;
 $card-spacer-x: 1.25rem;
 
-$grid-gutter-width: 2rem;
-
-$container-max-widths: (
-    sm: 640px,
-    md: 768px,
-    lg: 1024px,
-    xl: 1280px,
-);
-
-$grid-breakpoints: (
-    xs: 0,
-    sm: 640px,
-    md: 768px,
-    lg: 1024px,
-    xl: 1280px,
-);
-
 /* ==================== Bootstrap Components ==================== */
 @import 'node_modules/bootstrap/scss/root';
 @import 'node_modules/bootstrap/scss/grid';

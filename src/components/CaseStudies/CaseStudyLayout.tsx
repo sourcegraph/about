@@ -66,7 +66,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                     </div>
                 )}
                 {quote && !heroImage && (
-                    <div className="container tw-pt-xs">
+                    <div className="tw-container tw-pt-xs">
                         <div className="case-studies__quote row tw-justify-center">
                             {quote.image && (
                                 <div className="col-12 col-lg-9">

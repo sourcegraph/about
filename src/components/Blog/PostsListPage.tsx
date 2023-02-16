@@ -16,7 +16,7 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
 
     return (
         <Layout meta={blogInfo.meta} className="bg-light navbar-light">
-            <div className="container-lg">
+            <div className="md:tw-container tw-px-sm tw-mx-auto">
                 <BlogHeader {...blogInfo} />
 
                 <div className="tw-pt-sm">

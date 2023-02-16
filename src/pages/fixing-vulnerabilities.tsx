@@ -11,7 +11,7 @@ const FixingVulnerabilities: FunctionComponent = () => (
                 "Search within and across repositories to find and fix vulnerabilities in minutes, and deploy fixes with confidence knowing you've found every instance of affected code.",
         }}
     >
-        <div className="container tw-py-24">
+        <div className="tw-container tw-mx-auto tw-py-24">
             <div className="row">
                 <div className="col-lg-6">
                     <h1 className="tw-mb-6">Find and fix security vulnerabilities faster</h1>
@@ -38,7 +38,7 @@ const FixingVulnerabilities: FunctionComponent = () => (
             </div>
         </div>
 
-        <div className="container tw-text-center tw-py-24 tw-max-w-[650px]">
+        <div className="tw-container tw-mx-auto tw-text-center tw-py-24 tw-max-w-[650px]">
             <h2>Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk.</h2>
 
             <div className="tw-mx-auto tw-mt-8 tw-max-w-[400px]">

@@ -138,7 +138,7 @@ const PricingPage: FunctionComponent = () => {
             }}
             className="tw-bg-white"
             hero={
-                <div className="container tw-pt-5xl tw-text-center">
+                <div className="tw-container tw-mx-auto tw-pt-5xl tw-text-center">
                     <h1>Plans for every dev team</h1>
                 </div>
             }

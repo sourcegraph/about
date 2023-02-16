@@ -155,7 +155,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
         }}
         hero={
             <div className="sg-bg-gradient-saturn">
-                <div className="container tw-py-16 lg:tw-py-5xl md:tw-text-center">
+                <div className="tw-container tw-mx-auto tw-py-16 lg:tw-py-5xl md:tw-text-center">
                     <h1>Key traits of a code intelligence platform</h1>
                     <h3 className="tw-py-6 md:tw-mx-auto tw-max-w-[750px]">
                         Sourcegraph helps developers save time and move faster, regardless of how complex your codebase

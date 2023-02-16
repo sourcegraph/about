@@ -24,7 +24,7 @@ export const CaseStudy: FunctionComponent = () => (
             pdf="https://sourcegraphstatic.com/convoy_software_engineers_and_data_scientists_work_better_together.pdf"
         >
             <ContentSection background="white">
-                <div className="container">
+                <div className="tw-container tw-mx-auto">
                     <p>
                         Sourcegraph is transforming how engineers and data scientists collaborate, resulting in greater
                         efficiency and improved data integrity. Sourcegraph's multi-repository company-wide code search

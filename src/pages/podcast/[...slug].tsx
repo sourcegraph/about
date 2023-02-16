@@ -38,11 +38,11 @@ const PodcastPage: NextPage<PageProps> = ({ post, content }) => {
     return (
         <Layout meta={meta}>
             <article>
-                <div className="container-lg">
+                <div className="lg:tw-container tw-px-sm tw-mx-auto">
                     <BlogHeader {...podcastInfo} />
                 </div>
                 <div className="post-template tw-mt-8 tw-bg-white">
-                    <div className="container-lg">
+                    <div className="tw-max-w-screen-xl tw-mx-auto">
                         <PostTemplate
                             post={post}
                             content={content}
