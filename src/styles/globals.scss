@@ -27,35 +27,7 @@ $input-btn-padding-y: 0.55rem;
 
 @import 'node_modules/bootstrap/scss/variables';
 
-/* Set variables that rely on Bootstrap variables. */
-$spacer: 1rem;
-$spacers: (
-    0: 0,
-    1: (
-        $spacer * 0.25,
-    ),
-    2: (
-        $spacer * 0.5,
-    ),
-    3: $spacer,
-    4: (
-        $spacer * 1.5,
-    ),
-    5: (
-        $spacer * 2,
-    ),
-    6: (
-        $spacer * 4,
-    ),
-    7: (
-        $spacer * 6,
-    ),
-    8: (
-        $spacer * 8,
-    ),
-);
-
-$navbar-nav-link-padding-x: $spacer * 0.75;
+$navbar-nav-link-padding-x: 0.75rem;
 $navbar-light-color: $dark;
 $navbar-light-hover-color: $blurple;
 $navbar-dark-color: $light;
@@ -64,8 +36,8 @@ $navbar-dark-hover-color: $blurple;
 $btn-padding-x: 1.5rem;
 $btn-font-weight: 600;
 
-$card-spacer-y: 1.25 * $spacer;
-$card-spacer-x: 1.25 * $spacer;
+$card-spacer-y: 1.25rem;
+$card-spacer-x: 1.25rem;
 
 $grid-gutter-width: 2rem;
 

@@ -16,7 +16,7 @@
             display: inline-block;
             flex: 0 0 20%;
             max-width: 10rem;
-            padding-right: map-get($spacers, 3);
+            padding-right: 1rem;
             &-badge {
                 @extend .badge;
                 border: solid 1px var(--primary);
