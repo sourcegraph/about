@@ -49,7 +49,7 @@ const UseCases: React.FunctionComponent = () => (
                 <div className="container">
                     <div className="row tw-items-center">
                         <div className="mt-6 col-lg-7 mb-lg-6 md:tw-pr-12">
-                            <h1 className="mb-0">Our customers move faster with Sourcegraph</h1>
+                            <h1 className="tw-mb-0">Our customers move faster with Sourcegraph</h1>
                             <p className="my-5">
                                 Companies of all sizes and in all industries use Sourcegraph's code intelligence
                                 platform to understand, fix, and automate across their entire codebase.

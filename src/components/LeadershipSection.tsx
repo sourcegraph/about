@@ -117,7 +117,7 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                         </a>
                     </h5>
 
-                    <p className="mb-0">{staff.title}</p>
+                    <p className="tw-mb-0">{staff.title}</p>
 
                     <ul className="tw-ml-0 tw-mt-1 tw-list-none tw-flex">
                         {staff.github && (

@@ -21,7 +21,7 @@ export const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
 
     return (
         <div id="mobile-navbar" className={`collapse navbar-collapse ${isOpen ? 'show' : 'hide'}`}>
-            <ul className="ml-0 nav navbar-nav">
+            <ul className="tw-ml-0 nav navbar-nav">
                 {navLinks.map(navLink =>
                     navLink.items.length === 1 ? (
                         navLink.items.map(item =>

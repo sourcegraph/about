@@ -41,7 +41,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
         {buttons}
 
         {(beforeFeatures || features.length > 0) && (
-            <div className="tw-py-sm ml-0">
+            <div className="tw-py-sm tw-ml-0">
                 {beforeFeatures}
                 {features.map(node => (
                     <div key={node.topic} className="tw-px-0 bg-transparent border-0">

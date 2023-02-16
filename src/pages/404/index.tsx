@@ -8,7 +8,7 @@ const Custom404: React.FunctionComponent = () => (
     <Layout className="bg-white">
         <div className={`${styles.errorPage} tw-flex tw-flex-col tw-items-center tw-justify-center text-dark`}>
             <div className={`${styles.circle} tw-rounded-full`}>
-                <div className={`${styles.icon} my-0 tw-mx-auto`}>
+                <div className={`${styles.icon} tw-my-0 tw-mx-auto`}>
                     <SignDirectionIcon />
                 </div>
             </div>

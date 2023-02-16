@@ -77,7 +77,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                 <div
                     className={
                         carouselHook.autoAdvance
-                            ? 'lg:tw-flex tw-flex-col tw-justify-between tw-hidden col-md-2 m-0 tw-px-0 col-lg-5'
+                            ? 'lg:tw-flex tw-flex-col tw-justify-between tw-hidden col-md-2 tw-m-0 tw-px-0 col-lg-5'
                             : 'lg:tw-flex tw-hidden ml-lg-7 col-lg-4 h-550'
                     }
                 >
@@ -98,7 +98,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                                         ? 'tw-transition-all tw-duration-500 tw-ease-in-out tw-text-black sg-border-gradient-saturn tw-border-2 tw-border-solid tw-px-2'
                                         : 'tw-text-gray-300'
                                     : '',
-                                index !== carouselItems.length - 1 ? 'mb-2' : 'mb-0'
+                                index !== carouselItems.length - 1 ? 'mb-2' : 'tw-mb-0'
                             )}
                             key={item.title}
                             onClick={() => carouselHook.moveCarousel(index)}
@@ -118,7 +118,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                             >
                                 {item.title}
                             </h5>
-                            {item.subtitle && <p className="mb-0">{item.subtitle}</p>}
+                            {item.subtitle && <p className="tw-mb-0">{item.subtitle}</p>}
                         </div>
                     ))}
                     <ArrowDownIcon

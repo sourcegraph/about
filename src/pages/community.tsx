@@ -17,7 +17,7 @@ export const Community: FunctionComponent = () => (
                 <div className="p-5 row">
                     <div className="col-lg-6">
                         <div className="text-uppercase">Join us</div>
-                        <h1 className="mb-0">Welcome to the Sourcegraph Community</h1>
+                        <h1 className="tw-mb-0">Welcome to the Sourcegraph Community</h1>
                         <p className="my-5">
                             Seek guidance. Share best practices. Ask questions. The Sourcegraph Community is your new
                             platform to connect with one of the world's most talented developer communities. Here, we
@@ -171,7 +171,7 @@ export const Community: FunctionComponent = () => (
 
         <ContentSection>
             <div className="tw-max-w-screen-xl sm:tw-grid sm:tw-grid-cols-2 tw-mx-auto tw-px-4">
-                <div className="tw-mb-4 sm:mb-0 sm:tw-pr-4">
+                <div className="tw-mb-4 sm:tw-mb-0 sm:tw-pr-4">
                     <h2 className="mb-3">We’d love to hear from you!</h2>
                     <br />
                     Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn,

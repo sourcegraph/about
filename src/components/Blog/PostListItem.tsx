@@ -37,7 +37,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
             </h4>
 
             {frontmatter.authors?.length && (
-                <p className="mb-0 text-align-center text-secondary">
+                <p className="tw-mb-0 text-align-center text-secondary">
                     {frontmatter.authors.map((a, index) => (
                         <span key={a.name} data-author={a.name}>
                             {a.url ? (
@@ -75,7 +75,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
             )}
 
             {frontmatter.publishDate && (
-                <p className="mb-0 text-align-center text-secondary">
+                <p className="tw-mb-0 text-align-center text-secondary">
                     <time dateTime={frontmatter.publishDate}>{formatDate(frontmatter.publishDate)}</time>
                 </p>
             )}

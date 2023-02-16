@@ -58,7 +58,7 @@ export const BoardSection: FunctionComponent<{ className?: string }> = ({ classN
                         alt={`Sourcegraph Board of Directors: ${boardMembers.name} - ${boardMembers.title}`}
                     />
                     <h5>{boardMembers.name}</h5>
-                    <p className="mb-0">{boardMembers.title}</p>
+                    <p className="tw-mb-0">{boardMembers.title}</p>
                 </div>
             ))}
         </div>

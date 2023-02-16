@@ -37,7 +37,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
 
             {frontmatter.changelogItems?.length ? (
                 <div>
-                    <h3 className="tw-pt-sm tw-pb-xxs m-0 card-body release-post__changelog-header">
+                    <h3 className="tw-pt-sm tw-pb-xxs tw-m-0 card-body release-post__changelog-header">
                         Changelog highlights
                     </h3>
 
