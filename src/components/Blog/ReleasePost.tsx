@@ -30,7 +30,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
     const body = (
         <>
             {content && (
-                <div className="release-post__body">
+                <div className="release-post__body tw-p-sm">
                     <MDXRemote {...content} components={components as ReleaseComponents} />
                 </div>
             )}
@@ -44,14 +44,14 @@ export const ReleasePost: FunctionComponent<Props> = ({
                             <li key={url} className="tw-bg-white [&:not(:last-child)]:tw-border-b-1 tw-m-0 tw-p-0">
                                 <a
                                     href={url}
-                                    className="release-post__item md:tw-flex tw-px-xs tw-py-xxs tw-text-black"
+                                    className="release-post__item tw-block md:tw-flex tw-px-xs tw-py-xxs tw-text-black"
                                     title={`${category}: ${description}`}
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <span className="tw-mb-2 release-post__item-category md:tw-mb-0">
-                                        <span className="release-post__item-category-badge">{category}</span>
+                                    <span className="tw-mb-2 release-post__item-category md:tw-mb-0 tw-block md:tw-inline">
+                                        <Badge text={category} breakWords={false} size="large" color="white-outlined" />
                                     </span>
                                     <span className="release-post__item-description">{description}</span>
                                 </a>

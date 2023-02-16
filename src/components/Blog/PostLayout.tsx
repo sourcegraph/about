@@ -26,7 +26,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
     renderTitleAsLink = false,
     contentClassName = '',
 }) => (
-    <Tag className={`blog-post ${className}`}>
+    <Tag className={`blog-post tw-p-sm ${className}`}>
         <header className={headerClassName}>
             <h2>
                 {renderTitleAsLink === true ? (
