@@ -50,7 +50,7 @@ export const BoardSection: FunctionComponent<{ className?: string }> = ({ classN
             {BOARD.map(boardMembers => (
                 <div
                     key={`${boardMembers.name.replace(' ', '-').toLowerCase()}`}
-                    className="mb-6 col-lg-4 tw-flex tw-flex-col"
+                    className="tw-mb-16 col-lg-4 tw-flex tw-flex-col"
                 >
                     <img
                         className="tw-mb-6 max-w-200 tw-rounded-full"

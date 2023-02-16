@@ -107,7 +107,7 @@ export const CaseStudy: FunctionComponent = () => (
                         Jon said, “because it’s part of our bedrock. It's why customers like us, and we have to take it
                         seriously.”
                     </p>
-                    <h3 className="mt-6 tw-mb-6 max-w-600">Log4j: The vulnerability that rocked an industry</h3>
+                    <h3 className="tw-mt-16 tw-mb-6 max-w-600">Log4j: The vulnerability that rocked an industry</h3>
                     <p>
                         <b>In December of 2021,</b> software companies around the world discovered that Log4j, an
                         open-source logging library bundled in many software packages, contained significant
@@ -149,7 +149,7 @@ export const CaseStudy: FunctionComponent = () => (
                         vulnerability.
                     </p>
 
-                    <h3 className="mt-6 tw-mb-6 max-w-600">
+                    <h3 className="tw-mt-16 tw-mb-6 max-w-600">
                         Nutanix used Sourcegraph to identify every instance of Log4j within 2 days
                     </h3>
                     <p>

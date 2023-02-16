@@ -120,7 +120,7 @@ export const CaseStudy: FunctionComponent = () => (
                         from clients, or searching for things in the code more easily than we could through other
                         tools.”
                     </p>
-                    <h3 className="mt-6 tw-mb-6 max-w-600">
+                    <h3 className="tw-mt-16 tw-mb-6 max-w-600">
                         Codecov reduced time to resolution with 100% confidence when facing Log4j
                     </h3>
                     <p>
@@ -171,7 +171,7 @@ export const CaseStudy: FunctionComponent = () => (
                         floundering around trying to use other code search tools.”
                     </p>
 
-                    <h3 className="mt-6 tw-mb-6">Codecov makes code review secure and comprehensive</h3>
+                    <h3 className="tw-mt-16 tw-mb-6">Codecov makes code review secure and comprehensive</h3>
                     <p>
                         When he's not responding to the latest vulnerability, one of Mitchell's primary responsibilities
                         is performing security reviews on PRs and ensuring that other developers don't accidentally

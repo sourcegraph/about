@@ -237,7 +237,7 @@ export const CaseStudy: FunctionComponent = () => (
                         <li>Eliminating unused code and technical debt</li>
                         <li>Driving adoption of a new component library</li>
                     </ol>
-                    <h3 className="mt-6 tw-mb-6 max-w-600">
+                    <h3 className="tw-mt-16 tw-mb-6 max-w-600">
                         HashiCorp saves time managing dependencies across multiple web properties
                     </h3>
                     <p>
@@ -280,7 +280,7 @@ export const CaseStudy: FunctionComponent = () => (
                         means we have more time to focus on useful work, like building a new component library.”
                     </p>
 
-                    <h3 className="mt-6 tw-mb-6">Web team accelerates developer velocity by an estimated 4X</h3>
+                    <h3 className="tw-mt-16 tw-mb-6">Web team accelerates developer velocity by an estimated 4X</h3>
                     <p>
                         Bryce’s team maintains a dozen different websites spread across different repositories. These
                         sites include hashicorp.com and each product’s reference documentation site. A major pain point
@@ -344,7 +344,7 @@ export const CaseStudy: FunctionComponent = () => (
                         level.”
                     </p>
 
-                    <h3 className="mt-6 tw-mb-6">Creating a new component library</h3>
+                    <h3 className="tw-mt-16 tw-mb-6">Creating a new component library</h3>
                     <p>
                         The Web Platform team is building an open-source component library for Next.js called Swingset.
                         Bryce explains, “Our applications are already using Swingset. It enables us to document our

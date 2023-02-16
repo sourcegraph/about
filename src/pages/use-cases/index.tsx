@@ -48,7 +48,7 @@ const UseCases: React.FunctionComponent = () => (
             <Background variant="lightNebulousAurora">
                 <div className="container">
                     <div className="row tw-items-center">
-                        <div className="mt-6 col-lg-7 mb-lg-6 md:tw-pr-12">
+                        <div className="tw-mt-16 col-lg-7 mb-lg-6 md:tw-pr-12">
                             <h1 className="tw-mb-0">Our customers move faster with Sourcegraph</h1>
                             <p className="tw-my-8">
                                 Companies of all sizes and in all industries use Sourcegraph's code intelligence
@@ -56,7 +56,7 @@ const UseCases: React.FunctionComponent = () => (
                             </p>
                         </div>
 
-                        <div className="mb-6 tw-pt-sm col-lg-5 mt-lg-6">
+                        <div className="tw-mb-16 tw-pt-sm col-lg-5 mt-lg-6">
                             <h4 className="tw-pb-xxs tw-text-xl">See how customers use Sourcegraph to...</h4>
 
                             <div className="list-group">

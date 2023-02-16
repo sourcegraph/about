@@ -57,7 +57,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         }
     >
         <ContentSection>
-            <div className="mt-6">
+            <div className="tw-mt-16">
                 <CustomerLogos monochrome={true} />
             </div>
         </ContentSection>

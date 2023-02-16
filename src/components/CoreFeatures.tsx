@@ -190,7 +190,7 @@ export const CoreFeatures: FunctionComponent = () => {
                         )}
                     </div>
 
-                    <div className="tw-px-8 mb-6 tw-py-0 col-lg-6 mb-lg-0">
+                    <div className="tw-px-8 tw-mb-16 tw-py-0 col-lg-6 mb-lg-0">
                         <video
                             className={`shadow w-100 max-w-550 tw-block tw-mx-auto tw-rounded video-${index}`}
                             autoPlay={false}
