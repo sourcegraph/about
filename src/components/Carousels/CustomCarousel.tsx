@@ -50,7 +50,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
             <div
                 className={classNames(
                     'tw-flex flex-wrap tw-items-center',
-                    autoAdvance ? 'tw-justify-center' : 'lg:tw-flex-row tw-flex-col py-8'
+                    autoAdvance ? 'tw-justify-center' : 'lg:tw-flex-row tw-flex-col tw-py-32'
                 )}
             >
                 {/* Mobile Image Caption (Button Label) */}

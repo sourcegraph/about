@@ -144,7 +144,7 @@ export const CoreFeatures: FunctionComponent = () => {
                     key={feature.productFeature}
                     className={classNames('row tw-flex-col-reverse lg:tw-flex-row', {
                         'lg:tw-flex-row-reverse': index % 2,
-                        'mb-8': index !== features.length - 1,
+                        'tw-mb-32': index !== features.length - 1,
                     })}
                 >
                     <div
