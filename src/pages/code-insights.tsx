@@ -378,8 +378,8 @@ const CodeInsightsPage: FunctionComponent = () => (
 
         <ContentSection>
             <div className="flex-wrap tw-flex">
-                <h2 className="tw-mb-4 tw-text-center w-100">Engineering leadership with superpowers</h2>
-                <p className="tw-text-center icon-subheader w-100">
+                <h2 className="tw-mb-4 tw-text-center tw-w-full">Engineering leadership with superpowers</h2>
+                <p className="tw-text-center icon-subheader tw-w-full">
                     Code Insights provides reliable real-time reporting directly from the codebase, making engineering
                     leaders and their teams more effective.
                 </p>
@@ -448,7 +448,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Migrations',
                         content: (
-                            <div className="flex-wrap tw-mt-8 w-100 tw-flex">
+                            <div className="flex-wrap tw-mt-8 tw-w-full tw-flex">
                                 {templates.migrations.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -458,7 +458,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Version Tracking',
                         content: (
-                            <div className="flex-wrap tw-mt-8 w-100 tw-flex tw-justify-center">
+                            <div className="flex-wrap tw-mt-8 tw-w-full tw-flex tw-justify-center">
                                 {templates.versionTracking.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -468,7 +468,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Security',
                         content: (
-                            <div className="flex-wrap tw-mt-8 w-100 tw-flex tw-justify-center">
+                            <div className="flex-wrap tw-mt-8 tw-w-full tw-flex tw-justify-center">
                                 {templates.security.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -478,7 +478,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Code Health',
                         content: (
-                            <div className="flex-wrap tw-mt-8 w-100 tw-flex tw-justify-center">
+                            <div className="flex-wrap tw-mt-8 tw-w-full tw-flex tw-justify-center">
                                 {templates.codeHealth.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -509,7 +509,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Migrations',
                         content: (
-                            <div className="tw-mt-8 w-100 tw-justify-center">
+                            <div className="tw-mt-8 tw-w-full tw-justify-center">
                                 <TabCarousel items={templates.migrations} autoAdvance={true} />
                             </div>
                         ),
@@ -517,7 +517,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Version Tracking',
                         content: (
-                            <div className="tw-mt-8 w-100 tw-justify-center">
+                            <div className="tw-mt-8 tw-w-full tw-justify-center">
                                 <TabCarousel items={templates.versionTracking} autoAdvance={true} />
                             </div>
                         ),
@@ -525,7 +525,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Security',
                         content: (
-                            <div className="tw-mt-8 w-100 tw-justify-center">
+                            <div className="tw-mt-8 tw-w-full tw-justify-center">
                                 <TabCarousel items={templates.security} autoAdvance={true} />
                             </div>
                         ),
@@ -533,7 +533,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Code Health',
                         content: (
-                            <div className="tw-mt-8 w-100 tw-justify-center">
+                            <div className="tw-mt-8 tw-w-full tw-justify-center">
                                 <TabCarousel items={templates.codeHealth} autoAdvance={true} />
                             </div>
                         ),

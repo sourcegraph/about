@@ -110,7 +110,7 @@ const HomeHero: FunctionComponent = () => (
                 <DemoVideo
                     video="homepage-demo-202301"
                     splash={true}
-                    className="tw-mx-auto w-100 tw-max-w-4xl tw-bg-violet-750 tw-rounded-lg"
+                    className="tw-mx-auto tw-w-full tw-max-w-4xl tw-bg-violet-750 tw-rounded-lg"
                     splashClassName="tw-rounded-lg"
                 />
             </div>

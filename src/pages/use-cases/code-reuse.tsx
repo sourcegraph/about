@@ -282,7 +282,7 @@ const CodeReusePage: FunctionComponent = () => (
                 <div className="tw-px-0 tw-text-center col-12">
                     <a
                         href="https://signup.sourcegraph.com"
-                        className="btn btn-primary max-w-350 w-100"
+                        className="btn btn-primary max-w-350 tw-w-full"
                         title="Start for free"
                         data-button-style={buttonStyle.outline}
                         data-button-location={buttonLocation.body}

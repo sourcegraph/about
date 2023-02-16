@@ -83,7 +83,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
 
         {slugPath && (
             <div className="tw-pt-0 card-body tw-flex flex-card tw-items-center">
-                <div className="row w-100">
+                <div className="row tw-w-full">
                     <div className="tw-pb-xs col-md-9 md:tw-pb-0">
                         {frontmatter.description ? (
                             <p>{truncate(frontmatter.description, { length: 300 })}</p>
@@ -112,7 +112,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                             data-button-type="cta"
                         >
                             <img
-                                className="w-100"
+                                className="tw-w-full"
                                 src={
                                     frontmatter.heroImage
                                         ? frontmatter.heroImage

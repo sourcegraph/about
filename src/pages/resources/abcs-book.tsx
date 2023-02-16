@@ -23,7 +23,7 @@ export const AbcsEbook: FunctionComponent = () => (
                 <p className="tw-text-center">
                     <img
                         src="/other/abcs-book/our-abcs-hero.png"
-                        className="tw-px-2 tw-mb-4 w-100"
+                        className="tw-px-2 tw-mb-4 tw-w-full"
                         role="presentation"
                         alt="Our ABCs: Always Be Coding book"
                     />

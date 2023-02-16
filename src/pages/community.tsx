@@ -40,7 +40,7 @@ export const Community: FunctionComponent = () => (
                             src="/community/hero_illustration.svg"
                             alt="Sourcegraph Community"
                             title="Sourcegraph Community"
-                            className="tw-w-100 tw-mt-5xl"
+                            className="tw-w-full tw-mt-5xl"
                         />
                     </div>
                 </div>

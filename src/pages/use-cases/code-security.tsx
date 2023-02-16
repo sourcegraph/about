@@ -321,7 +321,7 @@ const UseCasePage: FunctionComponent = () => (
                 </div>
                 <div className="tw-px-0 tw-text-center col-12">
                     <a
-                        className="btn btn-primary max-w-350 w-100"
+                        className="btn btn-primary max-w-350 tw-w-full"
                         href="https://signup.sourcegraph.com"
                         title="Start for free"
                         data-button-style={buttonStyle.primary}

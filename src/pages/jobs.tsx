@@ -58,7 +58,7 @@ const CareersPage: FunctionComponent = () => {
             text: "Just because we're remote doesn't mean we're apart \n#life-at-sourcegraph",
             img: (
                 <img
-                    className="w-100 max-w-450"
+                    className="tw-w-full max-w-450"
                     src="/careers/culture1.png"
                     alt="Photograph strip of Sourcegraph team members"
                 />
@@ -71,19 +71,19 @@ const CareersPage: FunctionComponent = () => {
                     We're moving <i>fast</i> to create a world in which everyone can code
                 </span>
             ),
-            img: <img className="w-100 max-w-450" src="/careers/culture2.png" alt="Group riding go karts" />,
+            img: <img className="tw-w-full max-w-450" src="/careers/culture2.png" alt="Group riding go karts" />,
         },
         {
             className: 'sg-bg-gradient-venus',
             text: 'Work whenever and wherever \n#life-is-beachy',
-            img: <img className="w-100 max-w-450" src="/careers/culture3.png" alt="Sourcegrapher on a beach" />,
+            img: <img className="tw-w-full max-w-450" src="/careers/culture3.png" alt="Sourcegrapher on a beach" />,
         },
         {
             className: 'sg-bg-gradient-saturn',
             text: 'Our pets are Sourcegraph Teammates, too \n#pets-of-sourcegraph',
             img: (
                 <img
-                    className="w-100 max-w-450"
+                    className="tw-w-full max-w-450"
                     src="/careers/culture4.png"
                     alt="Black and white cat next to it's doppleganger cat Sourcegraph sticker"
                 />
@@ -92,7 +92,7 @@ const CareersPage: FunctionComponent = () => {
         {
             className: 'sg-bg-gradient-mars',
             text: 'Creating the next generation of Sourcegraph coders, one baby at a time',
-            img: <img className="w-100 max-w-450" src="/careers/culture5.png" alt="Baby holding a coding babybook" />,
+            img: <img className="tw-w-full max-w-450" src="/careers/culture5.png" alt="Baby holding a coding babybook" />,
         },
     ]
     const valueItems = [
@@ -100,14 +100,14 @@ const CareersPage: FunctionComponent = () => {
             value: 'High quality work',
             description:
                 'You are responsible for finding out what high-quality work looks like and producing that high-quality work iteratively.',
-            img: <img className="mt-10 w-100 max-w-500" src="/careers/1highquality.svg" alt="Diamond illustration" />,
+            img: <img className="mt-10 tw-w-full max-w-500" src="/careers/1highquality.svg" alt="Diamond illustration" />,
         },
         {
             value: 'Being customer-first',
             description: 'You earn and keep the trust of our customers by putting their interests first.',
             img: (
                 <img
-                    className="mt-10 w-100 max-w-500"
+                    className="mt-10 tw-w-full max-w-500"
                     src="/careers/2customerdriven.svg"
                     alt="Fist bump illustration"
                 />
@@ -117,7 +117,7 @@ const CareersPage: FunctionComponent = () => {
             value: 'Working as a team',
             description:
                 'You work collaboratively with your peers, cross-functional teammates, and leadership to create shared success, trust, and belonging.',
-            img: <img className="mt-10 w-100 max-w-500" src="/careers/3team.svg" alt="Tandem bicycle illustration" />,
+            img: <img className="mt-10 tw-w-full max-w-500" src="/careers/3team.svg" alt="Tandem bicycle illustration" />,
         },
         {
             value: 'High agency',
@@ -125,7 +125,7 @@ const CareersPage: FunctionComponent = () => {
                 'You have the power and the responsibility to improve Sourcegraph as a company and as a product. You deliver regardless of the circumstances.',
             img: (
                 <img
-                    className="mt-10 w-100 max-w-500"
+                    className="mt-10 tw-w-full max-w-500"
                     src="/careers/4highagency.svg"
                     alt="Stamp labeled 'First class' illustration"
                 />
@@ -137,7 +137,7 @@ const CareersPage: FunctionComponent = () => {
                 'You make people from all groups and backgrounds feel comfortable belonging to our team and community.',
             img: (
                 <img
-                    className="mt-10 w-100 max-w-500"
+                    className="mt-10 tw-w-full max-w-500"
                     src="/careers/5welcoming.svg"
                     alt="Head illustration with a heart in the center"
                 />
@@ -148,7 +148,7 @@ const CareersPage: FunctionComponent = () => {
             description: 'You proactively communicate in an open and transparent way.',
             img: (
                 <img
-                    className="mt-10 w-100 max-w-500"
+                    className="mt-10 tw-w-full max-w-500"
                     src="/careers/6open.svg"
                     alt="X-ray vision glasses illustration"
                 />
@@ -158,7 +158,7 @@ const CareersPage: FunctionComponent = () => {
             value: 'Continuous growth',
             description:
                 'You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.',
-            img: <img className="mt-10 w-100 max-w-500" src="/careers/7growth.svg" alt="Tall giraffe illustration" />,
+            img: <img className="mt-10 tw-w-full max-w-500" src="/careers/7growth.svg" alt="Tall giraffe illustration" />,
         },
     ]
 
@@ -370,7 +370,7 @@ const CareersPage: FunctionComponent = () => {
                     </div>
                     <div className="col-lg-6 max-h-600 tw-flex tw-justify-center">
                         <img
-                            className="w-100 max-w-450"
+                            className="tw-w-full max-w-450"
                             src="/careers/great-place-to-work.png"
                             alt="Graphic portraying that 94% of employees at Sourcegraph say it is a great place to work compared to 57% of employees at a typical U.S.-based company."
                         />
