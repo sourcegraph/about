@@ -11,7 +11,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                 'Get sharable links to help new developers ask questions with context, and enable senior devs to share knowledge without running local searches for specific bits of code.',
         }}
     >
-        <div className="container py-7">
+        <div className="container tw-py-24">
             <div className="row">
                 <div className="col-lg-6 lg:tw-pr-md">
                     <h1 className="tw-mb-6">Accelerate developer onboarding and decrease time to first commit</h1>
@@ -34,7 +34,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
         </div>
 
         <div className="sg-bg-gradient-saturn">
-            <div className="container py-7 max-w-650">
+            <div className="container tw-py-24 max-w-650">
                 <Blockquote
                     headline="Learn how Convoy increases the efficiency and confidence of entry level developers"
                     quote="For our new developers, Sourcegraph has been invaluable to get to know the repository
@@ -49,7 +49,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
         </div>
 
         <div className="tw-text-center">
-            <div className="container py-7 max-w-650">
+            <div className="container tw-py-24 max-w-650">
                 <h2>Ready to accelerate developer onboarding? Let's talk.</h2>
 
                 <div className="tw-mt-8 tw-mx-auto max-w-400">

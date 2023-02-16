@@ -344,7 +344,7 @@ const CareersPage: FunctionComponent = () => {
                 >
                     {valueItems.map(item => (
                         <Carousel.Item key={item.value}>
-                            <div className="tw-flex tw-flex-col tw-items-center min-h-550 py-7">
+                            <div className="tw-flex tw-flex-col tw-items-center min-h-550 tw-py-24">
                                 <h5 className=" text-uppercase">We value:</h5>
                                 <h2 className="">{item.value}</h2>
                                 <p className="tw-text-center col-8">{item.description}</p>

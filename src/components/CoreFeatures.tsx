@@ -131,7 +131,7 @@ export const CoreFeatures: FunctionComponent = () => {
 
     return (
         <>
-            <div className="tw-text-center mb-7">
+            <div className="tw-text-center tw-mb-24">
                 <h2>How developers use Sourcegraph</h2>
                 <p className="tw-mx-auto tw-my-xs tw-max-w-3xl tw-text-lg">
                     Sourcegraph's code intelligence platform is built with features that help you understand, fix, and
