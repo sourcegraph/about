@@ -12,7 +12,7 @@ interface Props {
     isOpen: boolean
 }
 
-const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
+export const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
     const initialMobileMenuState = navLinks.reduce(
         (accumulator, navLink) => ({ ...accumulator, [camelCase(navLink.section)]: false }),
         {}
@@ -149,5 +149,3 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
         </div>
     )
 }
-
-export default MobileNav

@@ -13,7 +13,7 @@ interface DesktopNav {
     navLinks: NavLink[]
 }
 
-const DesktopNav: FunctionComponent<DesktopNav> = ({ dark = false, navLinks }) => (
+export const DesktopNav: FunctionComponent<DesktopNav> = ({ dark = false, navLinks }) => (
     <>
         <Nav className="mr-auto left-nav ml-lg-5">
             {navLinks.map(navLink =>
@@ -96,5 +96,3 @@ const DesktopNav: FunctionComponent<DesktopNav> = ({ dark = false, navLinks }) =
         </Nav>
     </>
 )
-
-export default DesktopNav

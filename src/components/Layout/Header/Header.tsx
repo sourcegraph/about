@@ -5,8 +5,8 @@ import Navbar from 'react-bootstrap/Navbar'
 
 import { NavLink, navLinks } from '../navLinks'
 
-import DesktopNav from './DesktopNav'
-import MobileNav from './MobileNav'
+import { DesktopNav } from './DesktopNav'
+import { MobileNav } from './MobileNav'
 
 interface Props {
     isHome?: boolean
