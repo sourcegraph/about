@@ -41,7 +41,7 @@ const About: FunctionComponent = () => (
                 'The pace at which humans can write code is the main thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer.',
         }}
     >
-        <div className="tw-bg-white content-page text-dark">
+        <div className="tw-bg-white content-page tw-text-black">
             <ContentSection>
                 <h1>About Sourcegraph</h1>
                 <p className="tw-text-xl tw-max-w-4xl tw-mt-6">
@@ -178,7 +178,11 @@ const About: FunctionComponent = () => (
                 <div className="tw-mx-8 row tw-items-center">
                     {INVESTORS.map(investor => (
                         <div key={investor.image} className="tw-mx-auto tw-my-8 col-md-4">
-                            <img src={investor.image} alt={investor.name} className="tw-px-2 tw-py-0 tw-mx-0 tw-my-1 tw-w-full" />
+                            <img
+                                src={investor.image}
+                                alt={investor.name}
+                                className="tw-px-2 tw-py-0 tw-mx-0 tw-my-1 tw-w-full"
+                            />
                         </div>
                     ))}
                 </div>

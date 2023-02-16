@@ -16,7 +16,7 @@ const ContactPage: NextPage<ContactPageProps> = ({ title, description, masterFor
             description,
         }}
     >
-        <div className="tw-bg-white text-dark">
+        <div className="tw-bg-white tw-text-black">
             <div className="tw-px-8 tw-py-8 container-xl">
                 <div className="row">
                     <div className="col-md-6">
