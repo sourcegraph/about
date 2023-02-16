@@ -58,7 +58,6 @@ export {
 
 // Layouts
 export { Layout } from './Layout/Layout'
-export { WhitePaperPage } from './WhitePaperPage'
 export { ContentPage } from './ContentPage'
 export { GatedResourceLayout } from './GatedResourceLayout' // Webinars, Guides, Reports
 
