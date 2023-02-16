@@ -20,10 +20,6 @@
 
     &__testimonial {
         height: 505px;
-
-        @include media-breakpoint-down(sm) {
-            height: 565px;
-        }
     }
 
     &__logo {
@@ -46,10 +42,6 @@
 
             &::after {
                 content: '"';
-            }
-
-            @include media-breakpoint-down(sm) {
-                font-size: 1.5rem;
             }
         }
         .blockquote-footer::before {

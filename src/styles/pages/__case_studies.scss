@@ -33,10 +33,6 @@
             &::after {
                 content: '”';
             }
-
-            @include media-breakpoint-up(lg) {
-                font-size: 1.9rem;
-            }
         }
         a {
             font-size: 1rem;
