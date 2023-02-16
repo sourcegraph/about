@@ -184,14 +184,6 @@
     z-index: 1075 !important;
 }
 
-/* ======== Bootstrap Tooltip style overrides ======== */
-.tooltip-inner {
-    background-color: #fff;
-    color: black;
-    text-align: start;
-    font-size: 0.75rem;
-}
-
 /* ======== Bootstrap Accordion style overrides ======== */
 .accordion-button {
     width: 96%;
