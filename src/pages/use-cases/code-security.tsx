@@ -252,7 +252,9 @@ const UseCasePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="tw-mb-6 tw-max-w-[400px]">Identifying & resolving security vulnerabilities is painful</h2>
+                        <h2 className="tw-mb-6 tw-max-w-[400px]">
+                            Identifying & resolving security vulnerabilities is painful
+                        </h2>
                         <p>
                             Existing tooling doesn't enable teams to be agile and effective when responding to security
                             vulnerabilities. What does that mean for you?

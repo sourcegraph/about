@@ -41,13 +41,15 @@ const ShiftLeftPage: FunctionComponent = () => (
             <div className="sg-bg-gradient-venus">
                 <div className="tw-max-w-screen-md tw-px-sm tw-mx-auto tw-py-5xl md:tw-text-center">
                     <h1>Shift Left: The good parts</h1>
-                    <h3 className="tw-mt-6 tw-mb-0 md:tw-mx-auto tw-max-w-[750px]">5 practical ways to help your org shift left</h3>
+                    <h3 className="tw-mt-6 tw-mb-0 md:tw-mx-auto tw-max-w-[750px]">
+                        5 practical ways to help your org shift left
+                    </h3>
                 </div>
             </div>
         }
     >
         <ContentSection background="white">
-            <div className="tw-mx-auto max-w-md-650">
+            <div className="tw-mx-auto tw-max-w-[650px]">
                 <p>
                     Everyone's telling us to "shift left" these days. This raises some questions. What's being shifted?
                     Who's doing the shifting? How far left should we be shifting it?

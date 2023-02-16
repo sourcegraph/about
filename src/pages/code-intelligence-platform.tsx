@@ -300,7 +300,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             <div className="tw-mx-auto tw-max-w-[800px] md:tw-text-center">
                 <h2>Sourcegraph’s code intelligence platform is more than simply search.</h2>
 
-                <p className="tw-my-8 max-w-md-450 md:tw-mx-auto">
+                <p className="tw-my-8 tw-max-w-[450px] md:tw-mx-auto">
                     The platform drives velocity by helping development teams quickly get unblocked, save time resolving
                     issues, and gain insights to make better decisions.
                 </p>
