@@ -9,9 +9,6 @@ import { DesktopNav } from './DesktopNav'
 import { MobileNav } from './MobileNav'
 
 interface Props {
-    isHome?: boolean
-    isBlog?: boolean
-    isProductPage?: boolean
     minimal?: boolean
     className?: string
     navLinks: NavLink[]

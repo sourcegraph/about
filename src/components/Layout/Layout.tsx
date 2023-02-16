@@ -33,10 +33,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
     const router = useRouter()
     const { pathname, asPath } = router
 
-    const isHome = pathname === '/'
-    const isBlog = pathname === '/blog'
     const isArticle = ['/blog/', '/podcast/', '/release/'].includes(pathname.replace('[...slug]', ''))
-    const isProductPage = pathname.startsWith('/product/')
 
     const meta: LayoutProps['meta'] = {
         ...props.meta,
@@ -109,14 +106,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
 
             {!props.hideHeader && (
                 <div className={props.heroAndHeaderClassName}>
-                    <Header
-                        isHome={isHome}
-                        isBlog={isBlog}
-                        isProductPage={isProductPage}
-                        minimal={props.minimal}
-                        className={props.className}
-                        navLinks={navLinks}
-                    />
+                    <Header minimal={props.minimal} className={props.className} navLinks={navLinks} />
 
                     {props.hero}
                 </div>
