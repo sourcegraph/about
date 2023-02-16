@@ -143,7 +143,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                     className="tw-font-bold tw-no-underline"
                 >
                     {linkText}
-                    <ArrowRightIcon size={20} className="ml-1 tw-inline" />
+                    <ArrowRightIcon size={20} className="tw-ml-1 tw-inline" />
                 </a>
             ) : (
                 <Link
@@ -155,7 +155,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                     className="tw-font-bold tw-no-underline"
                 >
                     {linkText}
-                    <ArrowRightIcon size={20} className="ml-1 tw-inline" />
+                    <ArrowRightIcon size={20} className="tw-ml-1 tw-inline" />
                 </Link>
             )}
         </div>

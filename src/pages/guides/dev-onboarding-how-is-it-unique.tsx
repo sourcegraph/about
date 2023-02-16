@@ -38,16 +38,16 @@ export const Guide: FunctionComponent = () => (
                     </p>
                     <p>Download the developer onboarding guide to learn:</p>
                     <ul>
-                        <li className="mb-1">
+                        <li className="tw-mb-1">
                             How developer onboarding differs from general employee onboarding, and how to offer the best
                             of both
                         </li>
-                        <li className="mb-1">
+                        <li className="tw-mb-1">
                             How to build the foundational <i>and</i> exceptional components of a developer onboarding
                             program
                         </li>
-                        <li className="mb-1">Examples of how 3 major tech companies onboard their developers</li>
-                        <li className="mb-1">And more!</li>
+                        <li className="tw-mb-1">Examples of how 3 major tech companies onboard their developers</li>
+                        <li className="tw-mb-1">And more!</li>
                     </ul>
                 </section>
             }

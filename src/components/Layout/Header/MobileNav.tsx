@@ -78,7 +78,7 @@ export const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
                                 tabIndex={0}
                             >
                                 {navLink.section}
-                                <ChevronDownIcon className="ml-1 tw-inline" />
+                                <ChevronDownIcon className="tw-ml-1 tw-inline" />
                             </span>
                             <ul
                                 id={navLink.section.split(' ').join('-').toLowerCase() + '-menu'}

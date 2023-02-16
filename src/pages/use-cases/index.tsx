@@ -71,7 +71,7 @@ const UseCases: React.FunctionComponent = () => (
                                         data-button-type="cta"
                                     >
                                         {feature.description}
-                                        <ArrowRightIcon className="ml-1" />
+                                        <ArrowRightIcon className="tw-ml-1" />
                                     </Link>
                                 ))}
                             </div>
@@ -125,7 +125,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-type="cta"
                             >
                                 Learn more about code security with Sourcegraph{' '}
-                                <ArrowRightBoxIcon className="ml-1 tw-inline" />
+                                <ArrowRightBoxIcon className="tw-ml-1 tw-inline" />
                             </Link>
                         </>
                     }
@@ -194,7 +194,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-type="cta"
                             >
                                 Learn more about dev onboarding with Sourcegraph{' '}
-                                <ArrowRightBoxIcon className="ml-1 tw-inline" />
+                                <ArrowRightBoxIcon className="tw-ml-1 tw-inline" />
                             </Link>
                         </>
                     }
@@ -239,7 +239,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-type="cta"
                             >
                                 Learn more about incident response with Sourcegraph{' '}
-                                <ArrowRightBoxIcon className="ml-1 tw-inline" />
+                                <ArrowRightBoxIcon className="tw-ml-1 tw-inline" />
                             </Link>
                         </>
                     }
@@ -322,7 +322,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-type="cta"
                             >
                                 Learn more about code reuse with Sourcegraph{' '}
-                                <ArrowRightBoxIcon className="ml-1 tw-inline" />
+                                <ArrowRightBoxIcon className="tw-ml-1 tw-inline" />
                             </Link>
                         </>
                     }
@@ -365,7 +365,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-type="cta"
                             >
                                 Learn more about code health with Sourcegraph{' '}
-                                <ArrowRightBoxIcon className="ml-1 tw-inline" />
+                                <ArrowRightBoxIcon className="tw-ml-1 tw-inline" />
                             </Link>
                         </>
                     }

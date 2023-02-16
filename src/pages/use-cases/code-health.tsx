@@ -272,15 +272,15 @@ const UseCasePage: FunctionComponent = () => (
                             for you?
                         </p>
                         <ul>
-                            <li className="mt-1">
+                            <li className="tw-mt-1">
                                 Old versions, libraries, or functions are littered throughout your code, resulting in
                                 incidents and backward compatibility issues.
                             </li>
-                            <li className="mt-1">
+                            <li className="tw-mt-1">
                                 Unclear code ownership leads to unclear responsibility, making it hard for developers to
                                 find the right domain expert when they need help.
                             </li>
-                            <li className="mt-1">
+                            <li className="tw-mt-1">
                                 Engineering managers struggle to justify prioritizing and addressing tech debt because
                                 success is difficult to track and measure.
                             </li>

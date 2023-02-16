@@ -59,7 +59,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                             {quote && (
                                 <div className="tw-text-left">
                                     <p className="text-light">{quote.text}</p>
-                                    <footer className="mt-1 blockquote-footer text-light">{quote.author}</footer>
+                                    <footer className="tw-mt-1 blockquote-footer text-light">{quote.author}</footer>
                                 </div>
                             )}
                         </div>
@@ -80,7 +80,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                             <div className="col-12 col-lg-9">
                                 <blockquote className="blockquote">
                                     <p className="text-light">{quote.text}</p>
-                                    <footer className="mt-1 blockquote-footer text-light">{quote.author}</footer>
+                                    <footer className="tw-mt-1 blockquote-footer text-light">{quote.author}</footer>
                                 </blockquote>
                             </div>
                         </div>

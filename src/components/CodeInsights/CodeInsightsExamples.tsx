@@ -43,7 +43,7 @@ const CodeInsightSearchExample: React.FunctionComponent<CodeInsightSearchExample
     return (
         <View
             title={data.title}
-            subtitle={<CodeInsightsQueryBlock className="mt-1">{data.repositories}</CodeInsightsQueryBlock>}
+            subtitle={<CodeInsightsQueryBlock className="tw-mt-1">{data.repositories}</CodeInsightsQueryBlock>}
             className={classNames(className, styles.card)}
         >
             <div className={styles.chart}>
@@ -71,7 +71,7 @@ const CodeInsightCaptureExample: React.FunctionComponent<CodeInsightCaptureExamp
     return (
         <View
             title={data.title}
-            subtitle={<CodeInsightsQueryBlock className="mt-1">All repositories</CodeInsightsQueryBlock>}
+            subtitle={<CodeInsightsQueryBlock className="tw-mt-1">All repositories</CodeInsightsQueryBlock>}
             className={classNames(className, styles.card)}
         >
             <div className={styles.captureGroup}>
