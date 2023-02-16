@@ -17,7 +17,7 @@ export const StandardCallToAction: React.FunctionComponent<{
             'tw-justify-center': center,
         })}
     >
-        <div className="tw-mb-4 sm:tw-px-0 mb-sm-0 mr-sm-3">
+        <div className="tw-mb-4 sm:tw-px-0 sm:tw-mb-0 sm:tw-mr-4">
             <TrySourcegraphForFreeButton buttonLocation={buttonLocation} dark={dark} size={size} />
         </div>
         <div>

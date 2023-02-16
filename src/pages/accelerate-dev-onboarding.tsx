@@ -27,7 +27,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                     </div>
                 </div>
 
-                <div className="tw-mt-6 col-lg-6 mt-lg-0">
+                <div className="tw-mt-6 col-lg-6 lg:tw-mt-0">
                     <YouTube title="Accelerate developer onboarding with Sourcegraph" id="DgwvhRW1Cbc" />
                 </div>
             </div>

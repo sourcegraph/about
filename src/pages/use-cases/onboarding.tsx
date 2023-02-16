@@ -278,7 +278,7 @@ const UseCasePage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="tw-mx-6 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
+            <div className="tw-mx-6 row tw-flex tw-flex-col lg:tw-mx-0 tw-text-center">
                 <div className="tw-mb-8 tw-mx-auto tw-flex tw-flex-col tw-text-center tw-max-w-[550px]">
                     <h2 className="">Give your team the onboarding experience they deserve.</h2>
                     <p>

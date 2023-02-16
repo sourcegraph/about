@@ -265,7 +265,7 @@ const UseCasePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="mb-md-4 tw-max-w-[500px]">Improving code health can be daunting</h2>
+                        <h2 className="md:tw-mb-6 tw-max-w-[500px]">Improving code health can be daunting</h2>
                         <p className="tw-max-w-[500px]">
                             Engineering teams need to track and measure code quality consistently to monitor code health
                             across their entire codebase, but current tools don't make this easy. What does that mean
@@ -315,7 +315,7 @@ const UseCasePage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="tw-mx-6 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
+            <div className="tw-mx-6 row tw-flex tw-flex-col lg:tw-mx-0 tw-text-center">
                 <div className="tw-mb-8 tw-mx-auto tw-flex tw-flex-col tw-text-center tw-max-w-[600px]">
                     <h2 className="">Get started with Sourcegraph</h2>
                     <p>Give your team the tools they need to build a healthier codebase.</p>

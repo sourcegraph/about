@@ -32,7 +32,7 @@ const CarouselItem: FunctionComponent<{
             </div>
         </div>
         <h3>{props.header}</h3>
-        <h4 className="tw-my-4 lg:tw-hidden tw-block mb-lg-0">{props.subtitle}</h4>
+        <h4 className="tw-my-4 lg:tw-hidden tw-block lg:tw-mb-0">{props.subtitle}</h4>
         <p className="tw-py-4">{props.text}</p>
     </>
 )

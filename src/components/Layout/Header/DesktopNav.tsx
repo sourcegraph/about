@@ -15,7 +15,7 @@ interface DesktopNav {
 
 export const DesktopNav: FunctionComponent<DesktopNav> = ({ dark = false, navLinks }) => (
     <>
-        <Nav className="mr-auto left-nav ml-lg-5">
+        <Nav className="mr-auto left-nav lg:tw-ml-8">
             {navLinks.map(navLink =>
                 navLink.items.length === 1 ? (
                     navLink.items.map((item: { href: string; title: string }) =>

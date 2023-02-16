@@ -76,7 +76,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                         )}
                     </div>
                 </div>
-                <div className="tw-mb-8 mb-lg-0 tw-flex tw-flex-col lg:tw-flex-row lg:tw-justify-end">
+                <div className="tw-mb-8 lg:tw-mb-0 tw-flex tw-flex-col lg:tw-flex-row lg:tw-justify-end">
                     <div className="tw-mb-4 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center tw-max-w-[50px]">
                         <AlertIcon size={40} className="tw-p-1 tw-text-violet-400" />
                     </div>
@@ -97,7 +97,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                 </div>
             </div>
             <div className="col-lg-6 col-12">
-                <div className="tw-mb-8 mb-lg-0 tw-flex tw-flex-col lg:tw-flex-row xl:tw-justify-center">
+                <div className="tw-mb-8 lg:tw-mb-0 tw-flex tw-flex-col lg:tw-flex-row xl:tw-justify-center">
                     <div className="tw-mb-4 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center tw-max-w-[50px]">
                         <CheckCircleIcon size={40} className="tw-p-1 tw-text-violet-400" />
                     </div>
@@ -124,7 +124,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                 style={{ marginBottom: boxHalfHeight }}
                 className="sg-bg-gradient-venus lg:tw-absolute xl:tw-right-5xl lg:tw-right-sm lg:tw-bottom-0 tw-max-w-[700px] lg:tw-max-w-[500px] tw-mx-auto tw-p-8 tw-w-[95%]"
             >
-                <div className="ml-lg-0 tw-flex tw-flex-col lg:tw-flex-row">
+                <div className="lg:tw-ml-0 tw-flex tw-flex-col lg:tw-flex-row">
                     <div className="tw-mb-4 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center tw-max-w-[50px]">
                         <ChartLineVariantIcon size={40} className="tw-p-1 tw-text-violet-400" />
                     </div>
