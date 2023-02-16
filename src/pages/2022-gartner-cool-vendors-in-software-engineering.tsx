@@ -30,7 +30,7 @@ export const Report: FunctionComponent = () => (
             resource="https://www.gartner.com/doc/reprints?id=1-2A44UTV8&ct=220524&st=sb"
             description={
                 <section className="col-md-6 col-12 lg:tw-pr-3xl">
-                    <h3 className="tw-pb-md font-weight-normal">
+                    <h3 className="tw-pb-md tw-font-normal">
                         Get complimentary access to the 2022 Gartner® Cool Vendors™ report.
                     </h3>
                     <p className="tw-pb-xxs">

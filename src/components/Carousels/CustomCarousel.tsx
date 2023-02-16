@@ -110,10 +110,10 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                             <h5
                                 className={classNames(
                                     'tw-mb-1',
-                                    animateTransition ? 'tw-text-lg' : 'font-weight-normal',
+                                    animateTransition ? 'tw-text-lg' : 'tw-font-normal',
                                     !animateTransition &&
                                         item === carouselHook.carouselItems.currentItem &&
-                                        'font-weight-bold'
+                                        'tw-font-bold'
                                 )}
                             >
                                 {item.title}
