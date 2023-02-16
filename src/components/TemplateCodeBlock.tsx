@@ -12,7 +12,7 @@ interface TemplateCodeBlock {
 
 export const TemplateCodeBlock: FunctionComponent<TemplateCodeBlock> = ({ template }) => (
     <div className="tw-flex-wrap tw-flex tw-flex-row tw-w-full tw-justify-center md:tw-flex-col md:tw-justify-start md:tw-w-1/2">
-        <div className="p-4 tw-mx-2 tw-mb-4 border tw-rounded tw-grow tw-bg-white border-light" key={template.header}>
+        <div className="tw-p-6 tw-mx-2 tw-mb-4 border tw-rounded tw-grow tw-bg-white border-light" key={template.header}>
             <h5>{template.header}</h5>
             <p>{template.description}</p>
             {template.queries.map(query => (

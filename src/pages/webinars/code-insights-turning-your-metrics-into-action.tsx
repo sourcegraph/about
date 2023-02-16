@@ -93,7 +93,7 @@ const Webinar: FunctionComponent = () => {
                     <ContentSection className="tw-flex tw-flex-col tw-items-center">
                         <h1 className="tw-text-center">Want to learn more about Code Insights?</h1>
                         <a
-                            className="mt-4 btn btn-primary col-12 col-md-3 col-xl-2"
+                            className="tw-mt-6 btn btn-primary col-12 col-md-3 col-xl-2"
                             href="https://signup.sourcegraph.com"
                             title="Start for free"
                             data-button-style={buttonStyle.primary}

@@ -47,7 +47,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                     </p>
                 </div>
                 <div className="row">
-                    <div className="mt-4 col-md-6">
+                    <div className="tw-mt-6 col-md-6">
                         <Figure
                             src="/batch-changes/asking_developers_to_update_repos.svg"
                             alt="Graphic of many developers individually updating repositories, while some are not updating their repositories."
@@ -59,7 +59,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                             centre={true}
                         />
                     </div>
-                    <div className="mt-4 col-md-6">
+                    <div className="tw-mt-6 col-md-6">
                         <Figure
                             src="/batch-changes/using_batch_changes_to_update_repos.svg"
                             alt="Graphic of a single developer updating a lot of repositories."

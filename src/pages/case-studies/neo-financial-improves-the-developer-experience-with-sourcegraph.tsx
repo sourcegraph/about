@@ -205,7 +205,7 @@ export const CaseStudy: FunctionComponent = () => (
 
             <ContentSection background="white" slimWidth={true}>
                 <div className="tw-mx-auto">
-                    <h3 className="mb-4">Banking on the developer experience</h3>
+                    <h3 className="tw-mb-6">Banking on the developer experience</h3>
 
                     <p>
                         Originally, developer experience and productivity teams were only found in the largest

@@ -77,7 +77,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                 }
                 rightColumn={
                     <>
-                        <h2 className="mb-4">Find and fix code in any code host, language, or repository</h2>
+                        <h2 className="tw-mb-6">Find and fix code in any code host, language, or repository</h2>
                         <ul>
                             <li className="tw-mb-4">
                                 Be more efficient by reusing high-quality code. Find code across thousands of
@@ -102,7 +102,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="mb-4">Move faster with Sourcegraph</h2>
+                        <h2 className="tw-mb-6">Move faster with Sourcegraph</h2>
 
                         <h5>Onboard 2.5x quicker</h5>
                         <p>
@@ -146,7 +146,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="mb-4">Understand your code and its dependencies</h2>
+                        <h2 className="tw-mb-6">Understand your code and its dependencies</h2>
                         <ul>
                             <li className="tw-mb-4">
                                 Onboard to codebases faster with cross-repository code navigation features like “Go to
@@ -194,7 +194,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                 }
                 rightColumn={
                     <>
-                        <h2 className="mb-4">Create evergreen documentation with Notebooks</h2>
+                        <h2 className="tw-mb-6">Create evergreen documentation with Notebooks</h2>
                         <ul>
                             <li className="tw-mb-4">
                                 Enable engineers to commit their first line of code faster through living documentation

@@ -36,7 +36,7 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
 
             <div className="tw-flex tw-justify-center">
                 <ArrowLeftIcon
-                    className="mr-4 tw-cursor-pointer"
+                    className="tw-mr-6 tw-cursor-pointer"
                     onClick={() => carouselHook.moveCarousel('decrement')}
                     color={carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                 />
@@ -49,7 +49,7 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
                     ))}
                 </div>
                 <ArrowRightIcon
-                    className="ml-4 tw-cursor-pointer"
+                    className="tw-ml-6 tw-cursor-pointer"
                     onClick={() => carouselHook.moveCarousel()}
                     color={carouselHook.isAdvancing ? '#000' : '#D0D0D0'}
                 />

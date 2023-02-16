@@ -385,7 +385,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                 </p>
                 <div className="tw-flex tw-flex-col col-lg-6 lg:tw-px-3xl tw-justify-around">
                     <div className="tw-py-4 tw-flex lg:tw-py-md">
-                        <div className="mr-4">
+                        <div className="tw-mr-6">
                             <BullsEyeArrowIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
                         <div className="tw-flex tw-flex-col">
@@ -394,7 +394,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                         </div>
                     </div>
                     <div className="tw-py-4 tw-flex lg:tw-py-md">
-                        <div className="mr-4 icon">
+                        <div className="tw-mr-6 icon">
                             <LighteningBoltOutlineIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
                         <div className="tw-flex tw-flex-col">
@@ -407,7 +407,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                 </div>
                 <div className="tw-flex tw-flex-col col-lg-6 lg:tw-px-3xl tw-justify-around">
                     <div className="tw-py-4 tw-flex lg:tw-py-md">
-                        <div className="mr-4">
+                        <div className="tw-mr-6">
                             <TrendingUpIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
                         <div className="tw-flex tw-flex-col">
@@ -416,7 +416,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                         </div>
                     </div>
                     <div className="tw-py-4 tw-flex lg:tw-py-md">
-                        <div className="mr-4">
+                        <div className="tw-mr-6">
                             <RocketLaunchOutlineIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
                         <div className="tw-flex tw-flex-col">
@@ -542,7 +542,7 @@ const CodeInsightsPage: FunctionComponent = () => (
             />
             <div className="tw-text-center">
                 <a
-                    className="py-4 tw-px-0 col-7"
+                    className="tw-py-6 tw-px-0 col-7"
                     href="https://docs.sourcegraph.com/code_insights"
                     title="Code Insights on docs."
                     data-button-style={buttonStyle.text}

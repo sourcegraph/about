@@ -13,14 +13,14 @@ export const Hackathons: FunctionComponent = () => (
         }}
     >
         <section className="px-5 tw-text-center tw-mb-7">
-            <h1 className="mt-4">Set up Sourcegraph during a hackathon</h1>
+            <h1 className="tw-mt-6">Set up Sourcegraph during a hackathon</h1>
             <p>
                 We'll give you access to Sourcegraph Enterprise features so you can ship code search and intelligence to
                 your team.
             </p>
         </section>
 
-        <section className="p-4 bg-white tw-m-auto tw-flex tw-justify-around tw-flex-col lg:tw-flex-row tw-max-w-screen-xl">
+        <section className="tw-p-6 bg-white tw-m-auto tw-flex tw-justify-around tw-flex-col lg:tw-flex-row tw-max-w-screen-xl">
             <div className="tw-mt-0 tw-mb-2 mr-lg-5">
                 <div className="p-5 tw-rounded tw-flex tw-flex-col tw-bg-gray-100">
                     <p>

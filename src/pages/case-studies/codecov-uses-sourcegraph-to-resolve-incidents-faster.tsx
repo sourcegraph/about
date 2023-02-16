@@ -120,7 +120,7 @@ export const CaseStudy: FunctionComponent = () => (
                         from clients, or searching for things in the code more easily than we could through other
                         tools.”
                     </p>
-                    <h3 className="mt-6 mb-4 max-w-600">
+                    <h3 className="mt-6 tw-mb-6 max-w-600">
                         Codecov reduced time to resolution with 100% confidence when facing Log4j
                     </h3>
                     <p>
@@ -171,7 +171,7 @@ export const CaseStudy: FunctionComponent = () => (
                         floundering around trying to use other code search tools.”
                     </p>
 
-                    <h3 className="mt-6 mb-4">Codecov makes code review secure and comprehensive</h3>
+                    <h3 className="mt-6 tw-mb-6">Codecov makes code review secure and comprehensive</h3>
                     <p>
                         When he's not responding to the latest vulnerability, one of Mitchell's primary responsibilities
                         is performing security reviews on PRs and ensuring that other developers don't accidentally
@@ -201,7 +201,7 @@ export const CaseStudy: FunctionComponent = () => (
                         />
                     </div>
 
-                    <h3 className="mb-4">
+                    <h3 className="tw-mb-6">
                         Codecov speeds up developer onboarding and saves senior developers time and effort
                     </h3>
                     <p>
@@ -238,7 +238,7 @@ export const CaseStudy: FunctionComponent = () => (
 
             <ContentSection background="white" slimWidth={true}>
                 <div className="tw-mx-auto">
-                    <h3 className="mb-4 max-w-650">Sourcegraph Cloud was the right fit for a growing team</h3>
+                    <h3 className="tw-mb-6 max-w-650">Sourcegraph Cloud was the right fit for a growing team</h3>
                     <p>
                         Codecov wanted something they could get up and running quickly, so they turned to Sourcegraph
                         Cloud.

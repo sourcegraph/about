@@ -157,7 +157,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             <div className="sg-bg-gradient-saturn">
                 <div className="container py-6 lg:tw-py-5xl md:tw-text-center">
                     <h1>Key traits of a code intelligence platform</h1>
-                    <h3 className="py-4 md:tw-mx-auto max-w-750">
+                    <h3 className="tw-py-6 md:tw-mx-auto max-w-750">
                         Sourcegraph helps developers save time and move faster, regardless of how complex your codebase
                         is: any code host, any language, and any repository.
                     </h3>
@@ -191,7 +191,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="mb-4">Get unblocked</h2>
+                        <h2 className="tw-mb-6">Get unblocked</h2>
                         <ul>
                             <li className="tw-mb-4">
                                 Sourcegraph helps developers uncover answers, understand code, and take actions in the
@@ -235,7 +235,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                 }
                 rightColumn={
                     <>
-                        <h2 className="mb-4">Save time resolving issues</h2>
+                        <h2 className="tw-mb-6">Save time resolving issues</h2>
                         <ul>
                             <li className="tw-mb-4">
                                 Sourcegraph helps development teams quickly identify, resolve, and proactively prevent
@@ -264,7 +264,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="mb-4">Gain insights and track progress</h2>
+                        <h2 className="tw-mb-6">Gain insights and track progress</h2>
                         <ul>
                             <li className="tw-mb-4">
                                 Developers use insights to track migration and deprecation projects to completion and

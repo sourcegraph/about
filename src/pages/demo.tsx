@@ -27,7 +27,7 @@ const Demo: FunctionComponent = () => (
                     <HubSpotForm masterFormName="contactMulti" chiliPiper={true} />
                 </div>
                 <div className="col-lg-6">
-                    <DemoVideo video="homepage-demo-202301" className="my-4" />
+                    <DemoVideo video="homepage-demo-202301" className="tw-my-6" />
                 </div>
             </div>
         </div>

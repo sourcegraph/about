@@ -152,19 +152,19 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <MagnifyIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: 'Find unhealthy code',
         description:
             'Build a healthier codebase by finding references to deprecated services, libraries, URL patterns, and more across all your repositories.',
     },
     {
-        icon: <WrenchOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <WrenchOutlineIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: 'Remediate code health issues',
         description:
             'Tackle refactoring efforts and tech debt from legacy systems and acquisitions with automated pull requests across your entire codebase.',
     },
     {
-        icon: <ClipBoardPulseOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <ClipBoardPulseOutlineIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: 'Monitor code health initiatives',
         description:
             'Stay on top of code health changes. Monitor and measure code health initiatives and get actionable insights into the impact of large-scale changes.',
@@ -315,7 +315,7 @@ const UseCasePage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
+            <div className="tw-mx-6 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
                 <div className="mb-5 tw-mx-auto tw-flex tw-flex-col tw-text-center max-w-600">
                     <h2 className="">Get started with Sourcegraph</h2>
                     <p>Give your team the tools they need to build a healthier codebase.</p>
@@ -333,7 +333,7 @@ const UseCasePage: FunctionComponent = () => (
                     </a>
                     <Link
                         href="/use-cases"
-                        className="mt-4 tw-flex tw-justify-center"
+                        className="tw-mt-6 tw-flex tw-justify-center"
                         title="Explore other use cases"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}

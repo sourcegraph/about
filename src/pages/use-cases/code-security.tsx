@@ -146,19 +146,19 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <TimerOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <TimerOutlineIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: 'Reduce time to discovery and resolution',
         description:
             'Find every instance of a vulnerability and start remediating in minutes instead of days or weeks. Use that head start to deploy fixes sooner.',
     },
     {
-        icon: <AutoFixIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <AutoFixIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: 'Automate fixing, merging, and deploying fixes',
         description:
             'Automate PRs to fix vulnerabilities across your entire codebase so you can be 100% confident you resolved every vulnerability.',
     },
     {
-        icon: <ShieldAlertOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <ShieldAlertOutlineIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: 'Alert for risky code changes & known vulnerabilities',
         description:
             'Get on top of vulnerabilities by monitoring your repositories for commits when risky patterns and known vulnerabilities enter your codebase.',
@@ -252,7 +252,7 @@ const UseCasePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="mb-4 max-w-400">Identifying & resolving security vulnerabilities is painful</h2>
+                        <h2 className="tw-mb-6 max-w-400">Identifying & resolving security vulnerabilities is painful</h2>
                         <p>
                             Existing tooling doesn't enable teams to be agile and effective when responding to security
                             vulnerabilities. What does that mean for you?
@@ -311,7 +311,7 @@ const UseCasePage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
+            <div className="tw-mx-6 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
                 <div className="mb-5 tw-mx-auto tw-flex tw-flex-col tw-text-center">
                     <h2>Get started with Sourcegraph</h2>
                     <p className="max-w-450">
@@ -332,7 +332,7 @@ const UseCasePage: FunctionComponent = () => (
                     </a>
                     <Link
                         href="/use-cases"
-                        className="mt-4 tw-flex tw-justify-center "
+                        className="tw-mt-6 tw-flex tw-justify-center "
                         title="Explore other use cases"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}

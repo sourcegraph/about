@@ -41,7 +41,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             <div className="sg-bg-gradient-venus">
                 <div className="tw-max-w-screen-md tw-px-sm tw-mx-auto tw-py-5xl md:tw-text-center">
                     <h1>Shift Left: The good parts</h1>
-                    <h3 className="mt-4 tw-mb-0 md:tw-mx-auto max-w-750">5 practical ways to help your org shift left</h3>
+                    <h3 className="tw-mt-6 tw-mb-0 md:tw-mx-auto max-w-750">5 practical ways to help your org shift left</h3>
                 </div>
             </div>
         }
@@ -69,7 +69,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="mb-4">Shift left #1: Get validation from your users!</h2>
+                        <h2 className="tw-mb-6">Shift left #1: Get validation from your users!</h2>
                         <p>
                             You definitely don’t want to end up with an Over-Engineered Boondoggle that doesn't actually
                             solve a real problem. The best way to avoid this is to get validation from your users ASAP,
@@ -120,7 +120,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                 }
                 rightColumn={
                     <>
-                        <h2 className="mb-4">Shift left #2: Know thy codebase!</h2>
+                        <h2 className="tw-mb-6">Shift left #2: Know thy codebase!</h2>
                         <p>
                             Working on informative documentation will help developers write code faster and avoid
                             problems down the line. Understanding your codebase will help you understand what to code
@@ -147,7 +147,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="mb-4">Shift left #3: Write tests now, thank yourself later</h2>
+                        <h2 className="tw-mb-6">Shift left #3: Write tests now, thank yourself later</h2>
                         <p>
                             Do you ever buy an ice cream without a game plan? I thought so. First, you run through all
                             the scenarios and figure out the best outcome from those preliminary tests. Testing early on
@@ -202,7 +202,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                 }
                 rightColumn={
                     <>
-                        <h2 className="mb-4">Shift left #4: When it comes to security — keep your house in order</h2>
+                        <h2 className="tw-mb-6">Shift left #4: When it comes to security — keep your house in order</h2>
                         <p>
                             You have to be prepared for problems in life and in code. Skip the security headaches and
                             time-consuming review cycles by planning ahead. You can do this by empowering developers
@@ -238,7 +238,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="mb-4">Shift left #5: Review your review</h2>
+                        <h2 className="tw-mb-6">Shift left #5: Review your review</h2>
                         <p>
                             Reviewing code can get a lot harder as the project gets more and more complex. Make sure
                             your project has the right reviewing tools to keep up with its scale.

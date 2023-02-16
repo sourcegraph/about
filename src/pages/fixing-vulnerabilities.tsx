@@ -14,7 +14,7 @@ const FixingVulnerabilities: FunctionComponent = () => (
         <div className="container py-7">
             <div className="row">
                 <div className="col-lg-6">
-                    <h1 className="mb-4">Find and fix security vulnerabilities faster</h1>
+                    <h1 className="tw-mb-6">Find and fix security vulnerabilities faster</h1>
                     <h4>You can't fix what you can't find</h4>
                     <p>
                         Search within and across your repositories to find and fix vulnerabilities in minutes, not
@@ -32,7 +32,7 @@ const FixingVulnerabilities: FunctionComponent = () => (
                     <YouTube
                         title="Finding and fixing vulnerabilities with Sourcegraph"
                         id="13OqKPXqZXo"
-                        className="mt-4 mt-lg-0"
+                        className="tw-mt-6 mt-lg-0"
                     />
                 </div>
             </div>

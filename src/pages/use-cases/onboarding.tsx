@@ -169,19 +169,19 @@ const blogResourceItems = [
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <MagnifyIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: 'Find answers across all repositories',
         description:
             'Codebases grow increasingly complex over time. Sourcegraph enables developers to search everything at once without needing to clone and search locally.',
     },
     {
-        icon: <UploadIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <UploadIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: 'Share knowledge quickly with links to specific code',
         description:
             'Knowledge sharing takes time. With Sourcegraph, developers can share links directly to specific lines of code and ask questions with context included.',
     },
     {
-        icon: <CompassOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <CompassOutlineIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: 'Navigate and understand large codebases',
         description:
             "Make new codebases approachable, not aggravating. Search across all your repositories in one place with Sourcegraph's IDE-inspired features.",
@@ -218,7 +218,7 @@ const UseCasePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="mb-4 max-w-400">Developer onboarding is slow and expensive</h2>
+                        <h2 className="tw-mb-6 max-w-400">Developer onboarding is slow and expensive</h2>
                         <p>
                             Current tools and practices don't enable teams to onboard developers effectively or
                             efficiently.
@@ -278,7 +278,7 @@ const UseCasePage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
+            <div className="tw-mx-6 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
                 <div className="mb-5 tw-mx-auto tw-flex tw-flex-col tw-text-center max-w-550">
                     <h2 className="">Give your team the onboarding experience they deserve.</h2>
                     <p>
@@ -299,7 +299,7 @@ const UseCasePage: FunctionComponent = () => (
                     </a>
                     <Link
                         href="/use-cases"
-                        className="mt-4 tw-flex tw-justify-center "
+                        className="tw-mt-6 tw-flex tw-justify-center "
                         title="Explore other use cases"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}

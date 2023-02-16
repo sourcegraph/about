@@ -89,7 +89,7 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
         <h2>Leadership</h2>
         <div className="my-5 row">
             {LEADERS.map(staff => (
-                <div key={`${staff.name.replace(' ', '-').toLowerCase()}`} className="my-4 col-lg-4">
+                <div key={`${staff.name.replace(' ', '-').toLowerCase()}`} className="tw-my-6 col-lg-4">
                     <a
                         href={staff.bio}
                         title={`Sourcegraph team: ${staff.name} - ${staff.title}`}
@@ -98,7 +98,7 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                         data-button-type="cta"
                     >
                         <img
-                            className="mb-4 max-w-200 tw-rounded-full"
+                            className="tw-mb-6 max-w-200 tw-rounded-full"
                             src={staff.image}
                             alt={`Sourcegraph team: ${staff.name} - ${staff.title}`}
                         />

@@ -175,7 +175,7 @@ const CareersPage: FunctionComponent = () => {
                     </div>
                 </div>
                 <a
-                    className="mt-4 btn btn-primary"
+                    className="tw-mt-6 btn btn-primary"
                     href="https://grnh.se/c685479c4us"
                     title="Explore our jobs"
                     target="_blank"

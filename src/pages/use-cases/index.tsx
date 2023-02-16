@@ -101,7 +101,7 @@ const UseCases: React.FunctionComponent = () => (
                                 with automated fixes and pull requests. With Sourcegraph, timely resolution is a search
                                 away.
                             </p>
-                            <ul className="my-4">
+                            <ul className="tw-my-6">
                                 <li>Reduce time to recovery with a single search</li>
                                 <li>
                                     Automate fixing, merging, and deploying changes with{' '}
@@ -175,7 +175,7 @@ const UseCases: React.FunctionComponent = () => (
                                 code and context. Unlike splintered tooling and knowledge management systems that
                                 require manual interaction and upkeep, Sourcegraph helps devs self-serve.
                             </p>
-                            <ul className="my-4">
+                            <ul className="tw-my-6">
                                 <li>
                                     Search across all repositories and multiple branches to find answers in staging,
                                     dev, and production environments
@@ -217,7 +217,7 @@ const UseCases: React.FunctionComponent = () => (
                                 issue everywhere so it won't reoccur, and assure incident responders that all holes are
                                 plugged.&rdquo;
                             </p>
-                            <ul className="my-4">
+                            <ul className="tw-my-6">
                                 <li>
                                     Quickly understand all context & dependencies around the codebase to self-serve or
                                     involve relevant teams
@@ -290,7 +290,7 @@ const UseCases: React.FunctionComponent = () => (
                                 codebase and more time for you to spend on more interesting work. Sourcegraph makes it
                                 easy to:
                             </p>
-                            <ul className="my-4">
+                            <ul className="tw-my-6">
                                 <li>
                                     Quickly discover code you can trust for reuse by typing your query and getting an
                                     answer
@@ -346,7 +346,7 @@ const UseCases: React.FunctionComponent = () => (
                                 measure code quality consistently. Sourcegraph helps teams figure out the components of
                                 code health they have all agreed on and work towards a healthier codebase.
                             </p>
-                            <ul className="my-4">
+                            <ul className="tw-my-6">
                                 <li>
                                     Search for and refactor references to deprecated services, libraries, URL patterns,
                                     and more across all your repositories with confidence

@@ -16,7 +16,7 @@ export const StaffSpotlight: FunctionComponent<{
             // Multi staff design
             <div>
                 <div className="tw-mx-auto tw-max-w-screen-sm">
-                    <h5 className="mb-4">About {customer}</h5>
+                    <h5 className="tw-mb-6">About {customer}</h5>
                     <p>{about}</p>
                 </div>
 

@@ -196,19 +196,19 @@ const blogResourceItems = [
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <MagnifyIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: 'Assess incidents quickly',
         description:
             "Pinpoint the code responsible for the incident and find the root cause in your codebase. Understand the code's functionality to verify the issue.",
     },
     {
-        icon: <ClockTimeThreeOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <ClockTimeThreeOutlineIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: 'Plan your remediation',
         description:
             'Reduce time to resolution by supplying response teams with actionable details, like links to all affected code.',
     },
     {
-        icon: <WebIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <WebIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
         subtitle: 'Execute your plan globally',
         description:
             "Fix the root cause and confirm the same issue doesn't reoccur in other areas by locating the code pattern and automating fixes across your entire codebase.",
@@ -253,7 +253,7 @@ const IncidentResponsePage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
+            <div className="tw-mx-6 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
                 <div className="mb-5 tw-mx-auto tw-flex tw-flex-col tw-text-center max-w-600">
                     <h2 className="">Get started with Sourcegraph</h2>
                     <p>
@@ -274,7 +274,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                     </a>
                     <Link
                         href="/use-cases"
-                        className="mt-4 tw-flex tw-justify-center "
+                        className="tw-mt-6 tw-flex tw-justify-center "
                         title="Explore other use cases"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
