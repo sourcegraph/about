@@ -26,7 +26,7 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
                         <div className="tw-flex tw-justify-center">
                             <button
                                 type="button"
-                                className="my-5 btn btn-primary"
+                                className="tw-my-8 btn btn-primary"
                                 onClick={() => loadMoreHook.setPage(loadMoreHook.page + 1)}
                             >
                                 Load more

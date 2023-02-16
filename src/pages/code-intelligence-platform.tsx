@@ -163,7 +163,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                     </h3>
 
                     <a
-                        className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
+                        className="tw-mt-8 btn btn-primary tw-block sm:tw-inline-block"
                         href="https://signup.sourcegraph.com"
                         title="Start for free"
                         data-button-style={buttonStyle.primary}
@@ -300,13 +300,13 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
             <div className="tw-mx-auto max-w-800 md:tw-text-center">
                 <h2>Sourcegraph’s code intelligence platform is more than simply search.</h2>
 
-                <p className="my-5 max-w-md-450 md:tw-mx-auto">
+                <p className="tw-my-8 max-w-md-450 md:tw-mx-auto">
                     The platform drives velocity by helping development teams quickly get unblocked, save time resolving
                     issues, and gain insights to make better decisions.
                 </p>
 
                 <a
-                    className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
+                    className="tw-mt-8 btn btn-primary tw-block sm:tw-inline-block"
                     href="https://signup.sourcegraph.com"
                     title="Start for free"
                     data-button-style={buttonStyle.primary}

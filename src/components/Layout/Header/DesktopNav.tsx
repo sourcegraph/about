@@ -82,7 +82,7 @@ export const DesktopNav: FunctionComponent<DesktopNav> = ({ dark = false, navLin
         <Nav className="right-nav lg:tw-justify-end">
             <Nav.Link
                 className={classNames(
-                    'px-5 tw-py-2 ml-xs btn font-weight-bold',
+                    'tw-px-8 tw-py-2 ml-xs btn font-weight-bold',
                     dark ? 'tw-bg-white tw-text-violet-400' : 'btn-primary'
                 )}
                 href="https://signup.sourcegraph.com"

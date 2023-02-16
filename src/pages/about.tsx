@@ -175,9 +175,9 @@ const About: FunctionComponent = () => (
 
             <ContentSection>
                 <h2>Investors</h2>
-                <div className="mx-5 row tw-items-center">
+                <div className="tw-mx-8 row tw-items-center">
                     {INVESTORS.map(investor => (
-                        <div key={investor.image} className="tw-mx-auto my-5 col-md-4">
+                        <div key={investor.image} className="tw-mx-auto tw-my-8 col-md-4">
                             <img src={investor.image} alt={investor.name} className="tw-px-2 tw-py-0 tw-mx-0 tw-my-1 w-100" />
                         </div>
                     ))}

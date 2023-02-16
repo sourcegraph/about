@@ -12,7 +12,7 @@ export const Hackathons: FunctionComponent = () => (
             description: 'Set up Sourcegraph at a Hackathon',
         }}
     >
-        <section className="px-5 tw-text-center tw-mb-7">
+        <section className="tw-px-8 tw-text-center tw-mb-7">
             <h1 className="tw-mt-6">Set up Sourcegraph during a hackathon</h1>
             <p>
                 We'll give you access to Sourcegraph Enterprise features so you can ship code search and intelligence to
@@ -22,7 +22,7 @@ export const Hackathons: FunctionComponent = () => (
 
         <section className="tw-p-6 bg-white tw-m-auto tw-flex tw-justify-around tw-flex-col lg:tw-flex-row tw-max-w-screen-xl">
             <div className="tw-mt-0 tw-mb-2 mr-lg-5">
-                <div className="p-5 tw-rounded tw-flex tw-flex-col tw-bg-gray-100">
+                <div className="tw-p-8 tw-rounded tw-flex tw-flex-col tw-bg-gray-100">
                     <p>
                         Want to win your hackathon? Set up Sourcegraph and bring the power of code search and code
                         intelligence to your engineering team!

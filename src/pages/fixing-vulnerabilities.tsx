@@ -23,7 +23,7 @@ const FixingVulnerabilities: FunctionComponent = () => (
                         vulnerability-free.
                     </p>
 
-                    <div className="mt-5 max-w-400">
+                    <div className="tw-mt-8 max-w-400">
                         <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                     </div>
                 </div>
@@ -41,9 +41,9 @@ const FixingVulnerabilities: FunctionComponent = () => (
         <div className="container tw-text-center py-7 max-w-650">
             <h2>Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk.</h2>
 
-            <div className="tw-mx-auto mt-5 max-w-400">
+            <div className="tw-mx-auto tw-mt-8 max-w-400">
                 <a
-                    className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
+                    className="tw-mt-8 btn btn-primary tw-block sm:tw-inline-block"
                     href="https://signup.sourcegraph.com"
                     title="Start for free"
                     data-button-style={buttonStyle.primary}

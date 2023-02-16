@@ -442,13 +442,13 @@ const CodeInsightsPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="sg-bg-gradient-venus tw-hidden md:tw-block">
-            <h2 className="mb-5 tw-text-center">Popular Code Insights templates</h2>
+            <h2 className="tw-mb-8 tw-text-center">Popular Code Insights templates</h2>
             <Tabs
                 tabs={[
                     {
                         title: 'Migrations',
                         content: (
-                            <div className="flex-wrap mt-5 w-100 tw-flex">
+                            <div className="flex-wrap tw-mt-8 w-100 tw-flex">
                                 {templates.migrations.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -458,7 +458,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Version Tracking',
                         content: (
-                            <div className="flex-wrap mt-5 w-100 tw-flex tw-justify-center">
+                            <div className="flex-wrap tw-mt-8 w-100 tw-flex tw-justify-center">
                                 {templates.versionTracking.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -468,7 +468,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Security',
                         content: (
-                            <div className="flex-wrap mt-5 w-100 tw-flex tw-justify-center">
+                            <div className="flex-wrap tw-mt-8 w-100 tw-flex tw-justify-center">
                                 {templates.security.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -478,7 +478,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Code Health',
                         content: (
-                            <div className="flex-wrap mt-5 w-100 tw-flex tw-justify-center">
+                            <div className="flex-wrap tw-mt-8 w-100 tw-flex tw-justify-center">
                                 {templates.codeHealth.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -503,13 +503,13 @@ const CodeInsightsPage: FunctionComponent = () => (
 
         {/* Use Cases Carousel */}
         <ContentSection parentClassName="sg-bg-gradient-venus tw-block md:tw-hidden">
-            <h2 className="mb-5 tw-text-center">Popular Code Insights templates</h2>
+            <h2 className="tw-mb-8 tw-text-center">Popular Code Insights templates</h2>
             <Tabs
                 tabs={[
                     {
                         title: 'Migrations',
                         content: (
-                            <div className="mt-5 w-100 tw-justify-center">
+                            <div className="tw-mt-8 w-100 tw-justify-center">
                                 <TabCarousel items={templates.migrations} autoAdvance={true} />
                             </div>
                         ),
@@ -517,7 +517,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Version Tracking',
                         content: (
-                            <div className="mt-5 w-100 tw-justify-center">
+                            <div className="tw-mt-8 w-100 tw-justify-center">
                                 <TabCarousel items={templates.versionTracking} autoAdvance={true} />
                             </div>
                         ),
@@ -525,7 +525,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Security',
                         content: (
-                            <div className="mt-5 w-100 tw-justify-center">
+                            <div className="tw-mt-8 w-100 tw-justify-center">
                                 <TabCarousel items={templates.security} autoAdvance={true} />
                             </div>
                         ),
@@ -533,7 +533,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Code Health',
                         content: (
-                            <div className="mt-5 w-100 tw-justify-center">
+                            <div className="tw-mt-8 w-100 tw-justify-center">
                                 <TabCarousel items={templates.codeHealth} autoAdvance={true} />
                             </div>
                         ),

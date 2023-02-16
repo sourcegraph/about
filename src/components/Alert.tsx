@@ -6,5 +6,5 @@ interface AlertProps {
 }
 
 export const Alert: FunctionComponent<AlertProps> = ({ type = 'primary', children }) => (
-    <div className={`alert alert-${type} my-5`}>{children}</div>
+    <div className={`alert alert-${type} tw-my-8`}>{children}</div>
 )

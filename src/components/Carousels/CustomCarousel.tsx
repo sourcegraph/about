@@ -55,7 +55,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
             >
                 {/* Mobile Image Caption (Button Label) */}
                 {hasImages && (
-                    <div className="mb-5 tw-block lg:tw-hidden mb-lg-0 md:tw-mx-auto">
+                    <div className="tw-mb-8 tw-block lg:tw-hidden mb-lg-0 md:tw-mx-auto">
                         {carouselItems.map((item, index) => (
                             <h3
                                 className={classNames(
@@ -134,7 +134,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                 {/* Carousel Item */}
                 <div
                     className={classNames(
-                        'tw-relative col-lg-5 col-md-10 col-sm-12 tw-p-6 py-5 tw-flex tw-items-center lg:tw-justify-start tw-justify-center',
+                        'tw-relative col-lg-5 col-md-10 col-sm-12 tw-p-6 tw-py-8 tw-flex tw-items-center lg:tw-justify-start tw-justify-center',
                         hasImages
                             ? 'tw-min-h-[500px]'
                             : animateTransition && !isMdOrDown

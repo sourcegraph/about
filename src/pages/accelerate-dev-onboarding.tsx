@@ -22,7 +22,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                         context included, and enable senior devs to share their knowledge at scale.
                     </p>
 
-                    <div className="mt-5 max-w-400">
+                    <div className="tw-mt-8 max-w-400">
                         <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                     </div>
                 </div>
@@ -52,9 +52,9 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
             <div className="container py-7 max-w-650">
                 <h2>Ready to accelerate developer onboarding? Let's talk.</h2>
 
-                <div className="mt-5 tw-mx-auto max-w-400">
+                <div className="tw-mt-8 tw-mx-auto max-w-400">
                     <a
-                        className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
+                        className="tw-mt-8 btn btn-primary tw-block sm:tw-inline-block"
                         href="https://signup.sourcegraph.com"
                         title="Start for free"
                         data-button-style={buttonStyle.primary}

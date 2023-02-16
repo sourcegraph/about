@@ -278,7 +278,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             <div className="tw-mx-auto max-w-800 md:tw-text-center">
                 <h2>Ready to shift left?</h2>
 
-                <p className="my-5 max-w-650 md:tw-mx-auto">
+                <p className="tw-my-8 max-w-650 md:tw-mx-auto">
                     Shifting left means getting a head start on some of the most important aspects of the development
                     process. Both the general philosophy and the specific process changes of shift left can be boosted
                     by using tools that enable the developer to take full charge of shipping a new feature or bug fix.

@@ -40,7 +40,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
 }) => (
     <>
         <div className={`${kebabCase(customer)}-${className} ${className}`}>
-            <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
+            <CaseStudyJumbotron className="tw-mb-8" customer={customer} logo={logo}>
                 {heroImage && (
                     <div className="case-studies__quote row tw-pt-xs">
                         <div className="col-lg-3">

@@ -29,7 +29,7 @@ export const AbcsEbook: FunctionComponent = () => (
                     />
                 </p>
 
-                <p className="my-5 tw-text-center">
+                <p className="tw-my-8 tw-text-center">
                     <a
                         className="button btn btn-primary"
                         id="abc-dlbook"
@@ -47,7 +47,7 @@ export const AbcsEbook: FunctionComponent = () => (
             <div className="tw-mt-4 row md:tw-justify-center">
                 <div className="col-md-8">
                     <YouTube id="6bCO63O4swI" title="Our ABCs: Always Be Coding children's book by Sourcegraph" />
-                    <p className="mt-5">
+                    <p className="tw-mt-8">
                         At Sourcegraph, many of us have young children who we're trying to provide fun new learning
                         experiences for at home.
                     </p>
@@ -89,7 +89,7 @@ export const AbcsEbook: FunctionComponent = () => (
                             />
                         </a>
                     </p>
-                    <p className="my-5 tw-text-center">
+                    <p className="tw-my-8 tw-text-center">
                         <a
                             className="button btn btn-primary"
                             id="abc-dlbook"

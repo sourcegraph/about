@@ -14,11 +14,11 @@ export const Community: FunctionComponent = () => (
         heroAndHeaderClassName="tw-bg-blue-200"
         hero={
             <div className="container tw-pb-sm">
-                <div className="p-5 row">
+                <div className="tw-p-8 row">
                     <div className="col-lg-6">
                         <div className="text-uppercase">Join us</div>
                         <h1 className="tw-mb-0">Welcome to the Sourcegraph Community</h1>
-                        <p className="my-5">
+                        <p className="tw-my-8">
                             Seek guidance. Share best practices. Ask questions. The Sourcegraph Community is your new
                             platform to connect with one of the world's most talented developer communities. Here, we
                             encourage everyone to learn from each other and share everything they know. Because when we
@@ -48,7 +48,7 @@ export const Community: FunctionComponent = () => (
         }
     >
         <ContentSection background="white">
-            <h2 className="mb-5 tw-text-center">What's next?</h2>
+            <h2 className="tw-mb-8 tw-text-center">What's next?</h2>
             <Tabs
                 tabs={[
                     {

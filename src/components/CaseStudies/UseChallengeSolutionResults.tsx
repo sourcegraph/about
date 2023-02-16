@@ -55,7 +55,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
     return (
         <div className="tw-relative tw-flex lg:tw-flex-row tw-flex-col tw-py-xl">
             <div className="col-lg-6 col-12">
-                <div className="mb-5 tw-flex tw-flex-col lg:tw-flex-row lg:tw-justify-end">
+                <div className="tw-mb-8 tw-flex tw-flex-col lg:tw-flex-row lg:tw-justify-end">
                     <div className="tw-mb-4 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
                         <ClipboardTextIcon size={40} className="tw-p-1 tw-text-violet-400" />
                     </div>
@@ -76,7 +76,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                         )}
                     </div>
                 </div>
-                <div className="mb-5 mb-lg-0 tw-flex tw-flex-col lg:tw-flex-row lg:tw-justify-end">
+                <div className="tw-mb-8 mb-lg-0 tw-flex tw-flex-col lg:tw-flex-row lg:tw-justify-end">
                     <div className="tw-mb-4 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
                         <AlertIcon size={40} className="tw-p-1 tw-text-violet-400" />
                     </div>
@@ -97,7 +97,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                 </div>
             </div>
             <div className="col-lg-6 col-12">
-                <div className="mb-5 mb-lg-0 tw-flex tw-flex-col lg:tw-flex-row xl:tw-justify-center">
+                <div className="tw-mb-8 mb-lg-0 tw-flex tw-flex-col lg:tw-flex-row xl:tw-justify-center">
                     <div className="tw-mb-4 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
                         <CheckCircleIcon size={40} className="tw-p-1 tw-text-violet-400" />
                     </div>

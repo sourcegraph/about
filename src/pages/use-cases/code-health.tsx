@@ -316,7 +316,7 @@ const UseCasePage: FunctionComponent = () => (
 
         <ContentSection parentClassName="tw-bg-gray-100">
             <div className="tw-mx-6 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
-                <div className="mb-5 tw-mx-auto tw-flex tw-flex-col tw-text-center max-w-600">
+                <div className="tw-mb-8 tw-mx-auto tw-flex tw-flex-col tw-text-center max-w-600">
                     <h2 className="">Get started with Sourcegraph</h2>
                     <p>Give your team the tools they need to build a healthier codebase.</p>
                 </div>

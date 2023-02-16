@@ -52,7 +52,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                             src="/batch-changes/asking_developers_to_update_repos.svg"
                             alt="Graphic of many developers individually updating repositories, while some are not updating their repositories."
                             caption={
-                                <div className="mt-5">
+                                <div className="tw-mt-8">
                                     Asking <strong>developers</strong> to update repositories
                                 </div>
                             }
@@ -64,7 +64,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                             src="/batch-changes/using_batch_changes_to_update_repos.svg"
                             alt="Graphic of a single developer updating a lot of repositories."
                             caption={
-                                <div className="mt-5">
+                                <div className="tw-mt-8">
                                     Using <strong className="text-purple">Batch Changes</strong> to update repositories
                                 </div>
                             }
@@ -167,13 +167,13 @@ export const BatchChangesPage: FunctionComponent = () => (
 
         {/* Use Cases */}
         <ContentSection>
-            <h2 className="mb-5 tw-text-center">How developers are using Batch Changes </h2>
+            <h2 className="tw-mb-8 tw-text-center">How developers are using Batch Changes </h2>
             <Tabs
                 tabs={[
                     {
                         title: 'Configuration',
                         content: (
-                            <div className="mt-5 row tw-justify-center">
+                            <div className="tw-mt-8 row tw-justify-center">
                                 <div className="col-lg-8">
                                     <p>
                                         Quickly edit every CI, build, and other configuration files to make changes such
@@ -193,7 +193,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                     {
                         title: 'Refactoring',
                         content: (
-                            <div className="mt-5 row tw-justify-center">
+                            <div className="tw-mt-8 row tw-justify-center">
                                 <div className="col-lg-8">
                                     <p>
                                         Use language-aware tooling of your choice to perform complex refactors like
@@ -213,7 +213,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                     {
                         title: 'Security',
                         content: (
-                            <div className="mt-5 row tw-justify-center">
+                            <div className="tw-mt-8 row tw-justify-center">
                                 <div className="col-lg-8">
                                     <p>
                                         Refactor code to replace insecure functions, update vulnerable packages, or
