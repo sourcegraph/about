@@ -85,15 +85,15 @@ const Webinar: FunctionComponent = () => {
                         </p>
                         <p>In this session, you’ll learn:</p>
                         <ul>
-                            <li className="mb-2">
+                            <li className="tw-mb-2">
                                 How Jon enabled his team to confidently find & fix every instance of Log4j across a
                                 sprawling codebase in under 4 days
                             </li>
-                            <li className="mb-2">
+                            <li className="tw-mb-2">
                                 How this experience led to a renewed trust in Nutanix's vulnerability remediation for
                                 management and customers
                             </li>
-                            <li className="mb-2">Best practices to prepare for the next security vulnerability</li>
+                            <li className="tw-mb-2">Best practices to prepare for the next security vulnerability</li>
                         </ul>
                     </section>
                 }

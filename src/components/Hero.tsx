@@ -55,7 +55,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
 
             <div className="tw-flex tw-flex-col-reverse">
                 <h1 className={classNames(titleClassName, 'tw-whitespace-pre-line')}>{title}</h1>
-                {product && <h6 className="mb-2">{product}</h6>}
+                {product && <h6 className="tw-mb-2">{product}</h6>}
             </div>
 
             {description && <p className="tw-max-w-xl tw-mt-sm tw-text-lg">{description}</p>}

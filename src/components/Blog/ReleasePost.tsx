@@ -52,7 +52,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                <span className="mb-2 release-post__item-category mb-md-0">
+                                <span className="tw-mb-2 release-post__item-category mb-md-0">
                                     <span className="release-post__item-category-badge">{category}</span>
                                 </span>
                                 <span className="release-post__item-description">{description}</span>

@@ -82,7 +82,7 @@ export const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
                             </span>
                             <ul
                                 id={navLink.section.split(' ').join('-').toLowerCase() + '-menu'}
-                                className={`sub-menu collapse navbar-collapse ml-2 ${
+                                className={`sub-menu collapse navbar-collapse tw-ml-2 ${
                                     openMobileMenu[camelCase(navLink.section)] ? 'show' : 'hide'
                                 }`}
                             >

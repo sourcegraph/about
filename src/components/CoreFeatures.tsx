@@ -168,7 +168,7 @@ export const CoreFeatures: FunctionComponent = () => {
                                 href={feature.ctaLink}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="mt-2 btn btn-outline-primary"
+                                className="tw-mt-2 btn btn-outline-primary"
                                 title={`Learn more about ${startCase(feature.productFeature)}`}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
@@ -179,7 +179,7 @@ export const CoreFeatures: FunctionComponent = () => {
                         ) : (
                             <Link
                                 href={feature.ctaLink}
-                                className="mt-2 btn btn-outline-primary"
+                                className="tw-mt-2 btn btn-outline-primary"
                                 title={'Learn more about ' + startCase(feature.productFeature)}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}

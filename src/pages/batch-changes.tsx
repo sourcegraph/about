@@ -83,7 +83,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                     <>
                         <h2 className="mb-3 tw-max-w-md">Search, define, execute, and track code changes</h2>
                         <ul>
-                            <li className="mt-2">
+                            <li className="tw-mt-2">
                                 Find all occurrences of code to change with Sourcegraph{' '}
                                 <a
                                     href="http://about.sourcegraph.com/"
@@ -95,11 +95,11 @@ export const BatchChangesPage: FunctionComponent = () => (
                                     universal code search
                                 </a>
                             </li>
-                            <li className="mt-2">
+                            <li className="tw-mt-2">
                                 Programmatically define changes by creating a declarative specification file
                             </li>
-                            <li className="mt-2">Execute specifications via a lightweight CLI</li>
-                            <li className="mt-2">
+                            <li className="tw-mt-2">Execute specifications via a lightweight CLI</li>
+                            <li className="tw-mt-2">
                                 Track changeset lifecycle status across multiple code hosts via the Sourcegraph UI
                             </li>
                         </ul>

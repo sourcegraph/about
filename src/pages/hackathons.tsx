@@ -21,7 +21,7 @@ export const Hackathons: FunctionComponent = () => (
         </section>
 
         <section className="p-4 bg-white tw-m-auto tw-flex tw-justify-around tw-flex-col lg:tw-flex-row tw-max-w-screen-xl">
-            <div className="tw-mt-0 mb-2 mr-lg-5">
+            <div className="tw-mt-0 tw-mb-2 mr-lg-5">
                 <div className="p-5 tw-rounded tw-flex tw-flex-col tw-bg-gray-100">
                     <p>
                         Want to win your hackathon? Set up Sourcegraph and bring the power of code search and code

@@ -31,7 +31,7 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
         title: 'Sourcegraph Podcast',
         belowTitle: (
             <>
-                <p className="my-2 tw-text-xl">Conversations, stories, and insights from dev tool creators</p>
+                <p className="tw-my-2 tw-text-xl">Conversations, stories, and insights from dev tool creators</p>
                 <PodcastSubscribeLinks linkClassName="tw-mx-1" />
             </>
         ),

@@ -36,13 +36,13 @@ export const Guide: FunctionComponent = () => (
                     </p>
                     <p>Download this guide to learn:</p>
                     <ul>
-                        <li className="mb-2">
+                        <li className="tw-mb-2">
                             How companies and open source projects are handling developer onboarding
                         </li>
-                        <li className="mb-2">
+                        <li className="tw-mb-2">
                             Why open source projects can serve as a model for effective remote onboarding
                         </li>
-                        <li className="mb-2">
+                        <li className="tw-mb-2">
                             What the three pillars of a successful developer onboarding experience are
                         </li>
                     </ul>

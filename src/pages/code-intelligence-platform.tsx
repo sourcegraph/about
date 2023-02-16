@@ -27,7 +27,7 @@ const CarouselItem: FunctionComponent<{
 }> = props => (
     <>
         <div className="tw-mb-4 tw-text-center tw-bg-violet-100 tw-rounded-full tw-max-w-[40px]">
-            <div className="p-2 tw-text-violet-400 tw-flex tw-justify-center">
+            <div className="tw-p-2 tw-text-violet-400 tw-flex tw-justify-center">
                 <props.icon />
             </div>
         </div>

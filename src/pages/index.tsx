@@ -71,7 +71,7 @@ const HomeHero: FunctionComponent = () => (
     <div>
         <div className="tw-px-sm tw-mx-auto tw-pt-md md:tw-pt-2xl tw-text-center">
             <h1 className="tw-text-4xl tw-leading-10 sm:tw-text-6xl md:tw-text-[3.5rem] lg:tw-text-[4rem] lg:tw-leading-[1]">
-                <span className="mb-2 tw-text-transparent sg-bg-gradient-purple-white tw-bg-clip-text">
+                <span className="tw-mb-2 tw-text-transparent sg-bg-gradient-purple-white tw-bg-clip-text">
                     Find. Fix. Flow.
                 </span>
             </h1>

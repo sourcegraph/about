@@ -92,13 +92,13 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                     {carouselItems.map((item, index) => (
                         <div
                             className={classNames(
-                                'custom-carousel-item tw-cursor-pointer display-5 max-w-375 py-2 tw-mb-0',
+                                'custom-carousel-item tw-cursor-pointer display-5 max-w-375 tw-py-2 tw-mb-0',
                                 animateTransition
                                     ? item === carouselHook.carouselItems.currentItem
                                         ? 'tw-transition-all tw-duration-500 tw-ease-in-out tw-text-black sg-border-gradient-saturn tw-border-2 tw-border-solid tw-px-2'
                                         : 'tw-text-gray-300'
                                     : '',
-                                index !== carouselItems.length - 1 ? 'mb-2' : 'tw-mb-0'
+                                index !== carouselItems.length - 1 ? 'tw-mb-2' : 'tw-mb-0'
                             )}
                             key={item.title}
                             onClick={() => carouselHook.moveCarousel(index)}

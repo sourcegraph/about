@@ -70,18 +70,18 @@ const Webinar: FunctionComponent = () => {
                             Shawn King will teach you:
                         </p>
                         <ul>
-                            <li className="mb-2">What Code Insights is and why it's important</li>
-                            <li className="mb-2">
+                            <li className="tw-mb-2">What Code Insights is and why it's important</li>
+                            <li className="tw-mb-2">
                                 Best practices for getting started from top-tier engineering organizations
                             </li>
-                            <li className="mb-2">
+                            <li className="tw-mb-2">
                                 How to dive deeper into your data with advanced examples, including:
                             </li>
                             <ul>
-                                <li className="mb-2">Metadata/config tracking</li>
-                                <li className="mb-2">Commit signals</li>
-                                <li className="mb-2">Making use of advanced Sourcegraph filters</li>
-                                <li className="mb-2">
+                                <li className="tw-mb-2">Metadata/config tracking</li>
+                                <li className="tw-mb-2">Commit signals</li>
+                                <li className="tw-mb-2">Making use of advanced Sourcegraph filters</li>
+                                <li className="tw-mb-2">
                                     Pattern tracking versions and licenses with regular expression capture groups
                                 </li>
                             </ul>

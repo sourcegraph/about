@@ -56,7 +56,7 @@ const CodeInsightSearchExample: React.FunctionComponent<CodeInsightSearchExample
                 {data.series.map(line => (
                     // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     <LegendItem key={line.dataKey.toString()} color={getLineStroke<any>(line)}>
-                        <span className={classNames(styles.legendMigrationItem, 'tw-shrink-0 mr-2')}>{line.name}</span>
+                        <span className={classNames(styles.legendMigrationItem, 'tw-shrink-0 tw-mr-2')}>{line.name}</span>
                         <CodeInsightsQueryBlock>{line.query}</CodeInsightsQueryBlock>
                     </LegendItem>
                 ))}
@@ -89,7 +89,7 @@ const CodeInsightCaptureExample: React.FunctionComponent<CodeInsightCaptureExamp
                     ))}
                 </LegendBlock>
             </div>
-            <CodeInsightsQueryBlock className="mt-2">{data.query}</CodeInsightsQueryBlock>
+            <CodeInsightsQueryBlock className="tw-mt-2">{data.query}</CodeInsightsQueryBlock>
         </View>
     )
 }

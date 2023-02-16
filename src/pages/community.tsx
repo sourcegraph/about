@@ -139,18 +139,18 @@ export const Community: FunctionComponent = () => (
                 ]}
             />
         </ContentSection>
-        
+
         <ContentSection>
             <div className="row">
                 <div className="col-lg-6">
                     <h2 className="mt-5 mb-3">DM us on Discord. We're here.</h2>
                     What you seek is seeking you — come, chat and collaborate with inspiring engineers like you.
                     <ul className="tw-my-3">
-                        <li className="mt-2">Ask questions - any questions: what is the best sit-stand desk?</li>
-                        <li className="mt-2">
+                        <li className="tw-mt-2">Ask questions - any questions: what is the best sit-stand desk?</li>
+                        <li className="tw-mt-2">
                             Reach out to the community, discover new ideas &#38; seek or give mentorship
                         </li>
-                        <li className="mt-2">Share the road less traveled so that everyone can learn</li>
+                        <li className="tw-mt-2">Share the road less traveled so that everyone can learn</li>
                     </ul>
                     <a
                         className="btn btn-primary"

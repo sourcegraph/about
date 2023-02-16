@@ -46,7 +46,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
                 {features.map(node => (
                     <div key={node.topic} className="tw-px-0 bg-transparent border-0">
                         <div className="tw-text-xl tw-font-semibold tw-flex tw-items-center">
-                            <CheckIcon className={`mr-2 ${textColorClass}`} />
+                            <CheckIcon className={`tw-mr-2 ${textColorClass}`} />
                             <h5 className="tw-w-full">{node.topic}</h5>
                         </div>
                         <ul className="tw-ml-2xl tw-mb-xs">

@@ -19,7 +19,7 @@ const Demo: FunctionComponent = () => (
     >
         <div className="container tw-pt-xl">
             <div className="row">
-                <div className="mt-2 col-lg-6 tw-pr-md">
+                <div className="tw-mt-2 col-lg-6 tw-pr-md">
                     <p className="mb-5">
                         Want to see Sourcegraph in action and speak with a product expert? Fill out the form below, and
                         we'll be in touch.

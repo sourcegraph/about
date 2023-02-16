@@ -12,11 +12,11 @@ interface TemplateCodeBlock {
 
 export const TemplateCodeBlock: FunctionComponent<TemplateCodeBlock> = ({ template }) => (
     <div className="tw-flex-wrap tw-flex tw-flex-row tw-w-full tw-justify-center md:tw-flex-col md:tw-justify-start md:tw-w-1/2">
-        <div className="p-4 mx-2 mb-3 border tw-rounded tw-grow tw-bg-white border-light" key={template.header}>
+        <div className="p-4 tw-mx-2 mb-3 border tw-rounded tw-grow tw-bg-white border-light" key={template.header}>
             <h5>{template.header}</h5>
             <p>{template.description}</p>
             {template.queries.map(query => (
-                <div className="p-2 my-2 border tw-rounded tw-bg-gray-100 tw-font-mono tw-text-sm" key={Math.random()}>
+                <div className="tw-p-2 tw-my-2 border tw-rounded tw-bg-gray-100 tw-font-mono tw-text-sm" key={Math.random()}>
                     {query}
                 </div>
             ))}

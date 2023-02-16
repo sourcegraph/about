@@ -239,7 +239,7 @@ const PricingPage: FunctionComponent = () => {
                                             feature.business
                                         ) : feature.business ? (
                                             <CheckIcon
-                                                className={`mr-2 icon-inline ${PLAN_COLORS.business.textColorClass} tw-inline`}
+                                                className={`tw-mr-2 icon-inline ${PLAN_COLORS.business.textColorClass} tw-inline`}
                                             />
                                         ) : null}
                                         {feature.disclaimer && (
@@ -252,7 +252,7 @@ const PricingPage: FunctionComponent = () => {
                                             feature.enterprise
                                         ) : feature.enterprise ? (
                                             <CheckIcon
-                                                className={`mr-2 icon-inline ${PLAN_COLORS.enterprise.textColorClass} tw-inline`}
+                                                className={`tw-mr-2 icon-inline ${PLAN_COLORS.enterprise.textColorClass} tw-inline`}
                                             />
                                         ) : null}
                                         {feature.disclaimer && (
