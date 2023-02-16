@@ -30,7 +30,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
     textColorClass,
 }) => (
     <div
-        className={`h-100 sm:tw-p-md tw-p-xs tw-shadow-lg tw-border-t-16 tw-rounded tw-border-gray-200 ${borderColorClass}`}
+        className={`tw-h-full sm:tw-p-md tw-p-xs tw-shadow-lg tw-border-t-16 tw-rounded tw-border-gray-200 ${borderColorClass}`}
     >
         <h2 className="tw-mb-sm tw-font-semibold">{name}</h2>
         <h4 className="tw-my-sm">
