@@ -36,8 +36,6 @@ $navbar-dark-hover-color: $blurple;
 $btn-padding-x: 1.5rem;
 $btn-font-weight: 600;
 
-$card-spacer-y: 1.25rem;
-$card-spacer-x: 1.25rem;
 
 /* ==================== Bootstrap Components ==================== */
 @import 'node_modules/bootstrap/scss/root';
@@ -48,7 +46,6 @@ $card-spacer-x: 1.25rem;
 @import 'node_modules/bootstrap/scss/transitions';
 @import 'node_modules/bootstrap/scss/nav';
 @import 'node_modules/bootstrap/scss/navbar';
-@import 'node_modules/bootstrap/scss/card';
 @import 'node_modules/bootstrap/scss/media';
 @import 'node_modules/bootstrap/scss/list-group';
 @import 'node_modules/bootstrap/scss/tooltip';

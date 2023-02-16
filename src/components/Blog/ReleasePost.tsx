@@ -30,16 +30,14 @@ export const ReleasePost: FunctionComponent<Props> = ({
     const body = (
         <>
             {content && (
-                <div className="card-body release-post__body">
+                <div className="release-post__body">
                     <MDXRemote {...content} components={components as ReleaseComponents} />
                 </div>
             )}
 
             {frontmatter.changelogItems?.length ? (
                 <div>
-                    <h3 className="tw-pt-sm tw-pb-xxs tw-m-0 card-body release-post__changelog-header">
-                        Changelog highlights
-                    </h3>
+                    <h3 className="tw-pt-sm tw-pb-xxs tw-m-0 release-post__changelog-header">Changelog highlights</h3>
 
                     <div className="tw-border-y tw-border-solid tw-border-gray-200 list-group list-group-flush">
                         {frontmatter.changelogItems?.map(({ url, category, description }) => (
@@ -100,7 +98,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                         </li>
                     </ul>
 
-                    <div className="card-body release-post__body">
+                    <div className="release-post__body">
                         * Please{' '}
                         <Link
                             href="/demo"
@@ -186,7 +184,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                 )}
             </header>
 
-            <div className="card-body">{body}</div>
+            {body}
         </Tag>
     )
 }

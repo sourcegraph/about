@@ -91,10 +91,8 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
         </header>
 
         {content && (
-            <div className="card-body">
-                <div className={`blog-post__html ${contentClassName}`}>
-                    <MDXRemote {...content} components={components as PostComponents} />
-                </div>
+            <div className={`blog-post__html ${contentClassName}`}>
+                <MDXRemote {...content} components={components as PostComponents} />
             </div>
         )}
     </Tag>

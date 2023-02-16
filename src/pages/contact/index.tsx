@@ -22,16 +22,13 @@ const ContactHome: FunctionComponent = () => (
     >
         <ContentPage title={title} description={description}>
             <ContentSection className="tw-pt-3xl tw-pb-xxs">
-                <div className="row">
-                    <div className="tw-pb-1 tw-mb-6 col-md-6">
-                        <div className="card">
-                            <h5 className="card-header">Product support</h5>
-                            <div className="card-body">
-                                <p className="card-text">For help using Sourcegraph:</p>
-                            </div>
-                            <div className="list-group list-group-flush">
+                <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-md">
+                    <section className="tw-border-1 tw-rounded-lg tw-p-xs">
+                        <h4>Product support</h4>
+                        <p>For help using Sourcegraph:</p>
+                        <ul className="tw-list-none tw-ml-0">
+                            <li>
                                 <a
-                                    className="list-group-item list-group-item-action"
                                     href="https://github.com/sourcegraph/sourcegraph/issues"
                                     target="_blank"
                                     rel="noreferrer"
@@ -42,8 +39,9 @@ const ContactHome: FunctionComponent = () => (
                                 >
                                     <GithubIcon className="tw-inline" /> File a public issue
                                 </a>
+                            </li>
+                            <li>
                                 <a
-                                    className="list-group-item list-group-item-action"
                                     href="mailto:support@sourcegraph.com"
                                     target="_blank"
                                     rel="noreferrer"
@@ -54,51 +52,43 @@ const ContactHome: FunctionComponent = () => (
                                 >
                                     <EmailIcon className="tw-inline" /> Email support@sourcegraph.com
                                 </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="tw-pb-1 tw-mb-6 col-md-6">
-                        <div className="card">
-                            <h5 className="card-header">Sales</h5>
-                            <div className="card-body">
-                                <p className="card-text tw-mb-2">For information about products and purchasing:</p>
-                                <Link
-                                    href="/demo"
-                                    className="btn btn-outline-primary stretched-link"
-                                    title="Contact sales"
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    Contact sales
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="tw-pb-1 tw-mb-6 col-md-6">
-                        <div className="card">
-                            <h5 className="card-header">Jobs</h5>
-                            <div className="card-body">
-                                <p className="card-text tw-mb-2">For information about joining our team:</p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section className="tw-border-1 tw-rounded-lg tw-p-xs">
+                        <h4>Sales</h4>
+                        <p>For information about products and purchasing:</p>
+                        <Link
+                            href="/demo"
+                            className="btn btn-outline-primary"
+                            title="Contact sales"
+                            data-button-style={buttonStyle.outline}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Contact sales
+                        </Link>
+                    </section>
+                    <section className="tw-border-1 tw-rounded-lg tw-p-xs">
+                        <h4>Jobs</h4>
+
+                        <p>For information about joining our team:</p>
+                        <a
+                            href="https://boards.greenhouse.io/sourcegraph91"
+                            className="btn btn-outline-primary"
+                            title="See career opportunities"
+                            data-button-style={buttonStyle.outline}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            See career opportunities
+                        </a>
+                    </section>
+                    <section className="tw-border-1 tw-rounded-lg tw-p-xs">
+                        <h4>Everything else</h4>
+                        <ul className="tw-list-none tw-ml-0">
+                            <li>
                                 <a
-                                    href="https://boards.greenhouse.io/sourcegraph91"
-                                    className="btn btn-outline-primary stretched-link"
-                                    title="See career opportunities"
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    See career opportunities
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="tw-pb-1 tw-mb-6 col-md-6">
-                        <div className="card">
-                            <h5 className="card-header">Everything else</h5>
-                            <div className="list-group list-group-flush">
-                                <a
-                                    className="list-group-item list-group-item-action"
                                     href="mailto:hi@sourcegraph.com"
                                     target="_blank"
                                     rel="noreferrer"
@@ -109,8 +99,9 @@ const ContactHome: FunctionComponent = () => (
                                 >
                                     <EmailIcon className="tw-inline" /> hi@sourcegraph.com
                                 </a>
+                            </li>
+                            <li>
                                 <a
-                                    className="list-group-item list-group-item-action"
                                     href="https://twitter.com/sourcegraph"
                                     target="_blank"
                                     rel="noreferrer"
@@ -121,8 +112,9 @@ const ContactHome: FunctionComponent = () => (
                                 >
                                     <TwitterIcon className="tw-inline" /> @sourcegraph
                                 </a>
+                            </li>
+                            <li>
                                 <a
-                                    className="list-group-item list-group-item-action"
                                     target="_blank"
                                     href="https://github.com/sourcegraph"
                                     rel="noreferrer"
@@ -133,8 +125,9 @@ const ContactHome: FunctionComponent = () => (
                                 >
                                     <GithubIcon className="tw-inline" /> github.com/sourcegraph
                                 </a>
+                            </li>
+                            <li>
                                 <a
-                                    className="list-group-item list-group-item-action"
                                     target="_blank"
                                     href="https://www.linkedin.com/company/sourcegraph"
                                     rel="noreferrer"
@@ -145,33 +138,33 @@ const ContactHome: FunctionComponent = () => (
                                 >
                                     <LinkedinIcon className="tw-inline" /> Sourcegraph on LinkedIn
                                 </a>
-                                <div className="list-group-item tw-flex p-relative">
-                                    <MapMarkerIcon className="tw-inline tw-mr-1" />
-                                    <div>
-                                        Sourcegraph
-                                        <br />
-                                        548 Market St PMB 20739
-                                        <br />
-                                        San Francisco, CA 94104-5401 (USA)
-                                        <br />
-                                        <small>
-                                            <a
-                                                target="_blank"
-                                                href="https://goo.gl/maps/6YT8WWAFQBPotMt77"
-                                                rel="noreferrer"
-                                                title="View on Google Maps"
-                                                data-button-style={buttonStyle.text}
-                                                data-button-location={buttonLocation.body}
-                                                data-button-type="cta"
-                                            >
-                                                View on Google Maps
-                                            </a>
-                                        </small>
-                                    </div>
+                            </li>
+                            <li className="tw-flex p-relative">
+                                <MapMarkerIcon className="tw-inline tw-mr-1" />
+                                <div>
+                                    Sourcegraph
+                                    <br />
+                                    548 Market St PMB 20739
+                                    <br />
+                                    San Francisco, CA 94104-5401 (USA)
+                                    <br />
+                                    <small>
+                                        <a
+                                            target="_blank"
+                                            href="https://goo.gl/maps/6YT8WWAFQBPotMt77"
+                                            rel="noreferrer"
+                                            title="View on Google Maps"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            View on Google Maps
+                                        </a>
+                                    </small>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </li>
+                        </ul>
+                    </section>
                 </div>
             </ContentSection>
         </ContentPage>

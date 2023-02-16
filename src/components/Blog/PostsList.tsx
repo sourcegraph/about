@@ -14,8 +14,8 @@ interface Props {
 
 export const PostsList: FunctionComponent<Props> = ({ posts }) => {
     const postProps: Omit<PostComponentProps, 'post' | 'url'> = {
-        className: 'posts-list__post card',
-        headerClassName: 'card-header tw-bg-white border-bottom-0 tw-text-center',
+        className: 'posts-list__post tw-bg-white tw-border-1 tw-p-xs',
+        headerClassName: 'tw-text-center',
         tag: 'li',
         content: null,
     }
