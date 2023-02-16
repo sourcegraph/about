@@ -136,7 +136,7 @@ const PricingPage: FunctionComponent = () => {
                 description:
                     "See pricing for Sourcegraph's code intelligence platform. Get started with a free trial today.",
             }}
-            className="bg-white"
+            className="tw-bg-white"
             hero={
                 <div className="container tw-pt-5xl tw-text-center">
                     <h1>Plans for every dev team</h1>

@@ -65,7 +65,7 @@ export const Header: FunctionComponent<Props> = props => {
         'header navbar tw-py-4 tw-w-full tw-fixed tw-top-0 tw-right-0 tw-left-0 tw-z-[1030]',
         props.className,
         {
-            'bg-white': !isDarkNav && !isPurpleNav && !isTransparentNav && (sticky || isOpen),
+            'tw-bg-white': !isDarkNav && !isPurpleNav && !isTransparentNav && (sticky || isOpen),
             'tw-bg-violet-750': (isPurpleNav || isTransparentNav) && (sticky || isOpen),
             'tw-bg-black': isDarkNav && (sticky || isOpen),
         }

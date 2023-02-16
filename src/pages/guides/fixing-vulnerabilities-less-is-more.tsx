@@ -9,7 +9,7 @@ export const Guide: FunctionComponent = () => (
             description:
                 'When finding security vulnerabilities, simplicity is key. Learn how to decrease recovery time with a single search by improving tooling and processes.',
         }}
-        className="bg-white"
+        className="tw-bg-white"
         hero={
             <Hero
                 variant="darkSimpleGrid"

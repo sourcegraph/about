@@ -9,7 +9,7 @@ export const Guide: FunctionComponent = () => (
             description:
                 'A guide to understanding how to create a developer onboarding program that differs from general employee onboarding and creates an engaged development team.',
         }}
-        className="bg-white"
+        className="tw-bg-white"
         hero={
             <Hero
                 variant="darkSimpleGrid"

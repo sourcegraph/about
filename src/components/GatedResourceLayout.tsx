@@ -47,7 +47,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
         <>
             {hasWatchNowQuery ? (
                 // ---- RECORDING BODY VARIATION ----
-                <div className="bg-white">
+                <div className="tw-bg-white">
                     <div className="container tw-py-3xl lg:tw-py-5xl video-embed embed-responsive embed-responsive-16by9">
                         <iframe
                             className="md:tw-p-5xl embed-responsive-item"

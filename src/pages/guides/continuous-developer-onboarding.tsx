@@ -9,7 +9,7 @@ export const Guide: FunctionComponent = () => (
             description:
                 'Continuous onboarding shifts traditional onboarding practices to cultivate an environment that enables developers to build themselves as flexible and resilient engineers.',
         }}
-        className="bg-white"
+        className="tw-bg-white"
         hero={
             <Hero
                 variant="darkSimpleGrid"
