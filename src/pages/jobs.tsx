@@ -76,7 +76,13 @@ const CareersPage: FunctionComponent = () => {
         {
             className: 'sg-bg-gradient-venus',
             text: 'Work whenever and wherever \n#life-is-beachy',
-            img: <img className="tw-w-full tw-max-w-[450px]" src="/careers/culture3.png" alt="Sourcegrapher on a beach" />,
+            img: (
+                <img
+                    className="tw-w-full tw-max-w-[450px]"
+                    src="/careers/culture3.png"
+                    alt="Sourcegrapher on a beach"
+                />
+            ),
         },
         {
             className: 'sg-bg-gradient-saturn',
@@ -92,7 +98,13 @@ const CareersPage: FunctionComponent = () => {
         {
             className: 'sg-bg-gradient-mars',
             text: 'Creating the next generation of Sourcegraph coders, one baby at a time',
-            img: <img className="tw-w-full tw-max-w-[450px]" src="/careers/culture5.png" alt="Baby holding a coding babybook" />,
+            img: (
+                <img
+                    className="tw-w-full tw-max-w-[450px]"
+                    src="/careers/culture5.png"
+                    alt="Baby holding a coding babybook"
+                />
+            ),
         },
     ]
     const valueItems = [
@@ -100,7 +112,13 @@ const CareersPage: FunctionComponent = () => {
             value: 'High quality work',
             description:
                 'You are responsible for finding out what high-quality work looks like and producing that high-quality work iteratively.',
-            img: <img className="mt-10 tw-w-full tw-max-w-[500px]" src="/careers/1highquality.svg" alt="Diamond illustration" />,
+            img: (
+                <img
+                    className="mt-10 tw-w-full tw-max-w-[500px]"
+                    src="/careers/1highquality.svg"
+                    alt="Diamond illustration"
+                />
+            ),
         },
         {
             value: 'Being customer-first',
@@ -117,7 +135,13 @@ const CareersPage: FunctionComponent = () => {
             value: 'Working as a team',
             description:
                 'You work collaboratively with your peers, cross-functional teammates, and leadership to create shared success, trust, and belonging.',
-            img: <img className="mt-10 tw-w-full tw-max-w-[500px]" src="/careers/3team.svg" alt="Tandem bicycle illustration" />,
+            img: (
+                <img
+                    className="mt-10 tw-w-full tw-max-w-[500px]"
+                    src="/careers/3team.svg"
+                    alt="Tandem bicycle illustration"
+                />
+            ),
         },
         {
             value: 'High agency',
@@ -158,7 +182,13 @@ const CareersPage: FunctionComponent = () => {
             value: 'Continuous growth',
             description:
                 'You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.',
-            img: <img className="mt-10 tw-w-full tw-max-w-[500px]" src="/careers/7growth.svg" alt="Tall giraffe illustration" />,
+            img: (
+                <img
+                    className="mt-10 tw-w-full tw-max-w-[500px]"
+                    src="/careers/7growth.svg"
+                    alt="Tall giraffe illustration"
+                />
+            ),
         },
     ]
 
@@ -203,7 +233,7 @@ const CareersPage: FunctionComponent = () => {
             </div>
 
             <ContentSection background="white">
-                <div className="flex-wrap tw-flex">
+                <div className="tw-flex-wrap tw-flex">
                     <div className="tw-m-auto">
                         <h2 className="tw-mx-auto tw-text-center tw-max-w-2xl tw-mb-6">
                             Happy, healthy, and always in the flow.

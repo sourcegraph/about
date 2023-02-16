@@ -49,7 +49,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
 
             <div
                 className={classNames(
-                    'tw-flex flex-wrap tw-items-center',
+                    'tw-flex tw-flex-wrap tw-items-center',
                     autoAdvance ? 'tw-justify-center' : 'lg:tw-flex-row tw-flex-col tw-py-32'
                 )}
             >

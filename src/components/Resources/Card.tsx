@@ -67,7 +67,7 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                     {resource.title.length > 100 ? `${resource.title.slice(0, 97)}...` : resource.title}
                 </h4>
 
-                <div className="flex-wrap tw-flex tw-mb-sm">
+                <div className="tw-flex-wrap tw-flex tw-mb-sm">
                     {resource.subjects
                         .slice(0, 3)
                         .sort()

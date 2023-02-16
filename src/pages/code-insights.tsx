@@ -377,7 +377,7 @@ const CodeInsightsPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection>
-            <div className="flex-wrap tw-flex">
+            <div className="tw-flex tw-flex-wrap">
                 <h2 className="tw-mb-4 tw-text-center tw-w-full">Engineering leadership with superpowers</h2>
                 <p className="tw-text-center icon-subheader tw-w-full">
                     Code Insights provides reliable real-time reporting directly from the codebase, making engineering
@@ -448,7 +448,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Migrations',
                         content: (
-                            <div className="flex-wrap tw-mt-8 tw-w-full tw-flex">
+                            <div className="tw-flex-wrap tw-mt-8 tw-w-full tw-flex">
                                 {templates.migrations.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -458,7 +458,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Version Tracking',
                         content: (
-                            <div className="flex-wrap tw-mt-8 tw-w-full tw-flex tw-justify-center">
+                            <div className="tw-flex-wrap tw-mt-8 tw-w-full tw-flex tw-justify-center">
                                 {templates.versionTracking.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -468,7 +468,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Security',
                         content: (
-                            <div className="flex-wrap tw-mt-8 tw-w-full tw-flex tw-justify-center">
+                            <div className="tw-flex-wrap tw-mt-8 tw-w-full tw-flex tw-justify-center">
                                 {templates.security.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -478,7 +478,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Code Health',
                         content: (
-                            <div className="flex-wrap tw-mt-8 tw-w-full tw-flex tw-justify-center">
+                            <div className="tw-flex-wrap tw-mt-8 tw-w-full tw-flex tw-justify-center">
                                 {templates.codeHealth.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
