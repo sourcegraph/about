@@ -33,7 +33,7 @@ const items = [
             <CarouselItem
                 header="Response to incidents faster"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         No heroics required: Quickly understand all the context and dependencies around your codebase
                         with{' '}
                         <Link
@@ -68,7 +68,7 @@ const items = [
             <CarouselItem
                 header="Limit the impact of incidents"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Automate the deployment of fixes everywhere and at scale. With{' '}
                         <Link
                             href="/batch-changes"
@@ -93,7 +93,7 @@ const items = [
             <CarouselItem
                 header="Track remediation progress"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Visualize fixes in progress and track their deployment. With{' '}
                         <Link
                             href="/code-insights"
@@ -117,7 +117,7 @@ const items = [
             <CarouselItem
                 header="Monitor for unsafe code"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Close the loop on your incident response efforts. After finding the root cause, use{' '}
                         <a
                             href="https://docs.sourcegraph.com/code_monitoring"

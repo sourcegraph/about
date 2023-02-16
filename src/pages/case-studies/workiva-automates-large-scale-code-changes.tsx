@@ -77,7 +77,7 @@ export const CaseStudy: FunctionComponent = () => {
                         without any ongoing maintenance. The team has already used Batch Changes to:
                     </p>
 
-                    <ul className="mt-3">
+                    <ul className="tw-mt-4">
                         <li>Propagate a new version of React to all frontend repositories</li>
                         <li>Update API versions of Kubernetes resources</li>
                         <li>Migrate to a new CDN while updating all code references</li>

@@ -34,7 +34,7 @@ const items = [
             <CarouselItem
                 header="Find vulnerabilities"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Vulnerabilities are inevitable, but they don't have to be disruptive. With{' '}
                         <Link
                             href="/code-search"
@@ -59,7 +59,7 @@ const items = [
             <CarouselItem
                 header="Automatically merge and deploy fixes"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Deploy fixes at scale. Don't let the size and complexity of your codebase hold you back. With{' '}
                         <Link
                             href="/batch-changes"
@@ -83,7 +83,7 @@ const items = [
             <CarouselItem
                 header="Proactively monitor for the presence of vulnerable code"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Get ahead of vulnerabilities. With{' '}
                         <a
                             href="https://docs.sourcegraph.com/code_monitoring"
@@ -108,7 +108,7 @@ const items = [
             <CarouselItem
                 header="Ensure removal of security vulnerabilities"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Get the full picture of an incident. Track how long the vulnerable code has been in your
                         codebase and how quickly you're removing it. With{' '}
                         <Link
@@ -133,7 +133,7 @@ const items = [
             <CarouselItem
                 header="Bring peace of mind to customers"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         The last thing you want to do is walk back an “all clear” report. With Sourcegraph, you can know
                         you'll find every instance of affected code, be able to fix it at scale, monitor for its
                         presence long-term, and ensure your customers that your code is safe.

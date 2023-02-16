@@ -35,7 +35,7 @@ const items = [
             <CarouselItem
                 header="Find old versions easily"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Use{' '}
                         <Link
                             href="/code-search"
@@ -59,7 +59,7 @@ const items = [
             <CarouselItem
                 header="Automate version updates and communications"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         With{' '}
                         <Link
                             href="/batch-changes"
@@ -83,7 +83,7 @@ const items = [
             <CarouselItem
                 header="Get everyone on the same page with living docs"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Create living, actionable documentation with{' '}
                         <a
                             href="https://docs.sourcegraph.com/notebooks"
@@ -106,7 +106,7 @@ const items = [
             <CarouselItem
                 header="Monitor for deprecated code"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Make sure deprecated endpoints don't sneak back into your code. Get alerts for new occurrences
                         of deprecated methods or restricted patterns with{' '}
                         <a
@@ -130,7 +130,7 @@ const items = [
             <CarouselItem
                 header="Develop a data-driven relationship with your code"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Create dashboards to track mitigations, package use, version adoption, code smells, codebase
                         size, and more to understand code health with{' '}
                         <Link

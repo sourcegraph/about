@@ -79,15 +79,15 @@ export const CodeSearchPage: FunctionComponent = () => (
                     <>
                         <h2 className="mb-4">Find and fix code in any code host, language, or repository</h2>
                         <ul>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Be more efficient by reusing high-quality code. Find code across thousands of
                                 repositories and multiple code hosts in seconds.
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Resolve issues and incidents faster by pinpointing root causes with symbol, commit, and
                                 diff searches.
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Discover every instance of vulnerable or buggy code in milliseconds and have complete
                                 confidence in what's in your codebase.
                             </li>
@@ -148,15 +148,15 @@ export const CodeSearchPage: FunctionComponent = () => (
                     <>
                         <h2 className="mb-4">Understand your code and its dependencies</h2>
                         <ul>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Onboard to codebases faster with cross-repository code navigation features like “Go to
                                 definition” and "Find references."
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Complete code reviews, get up to speed on unfamiliar code, and determine the impact of
                                 code changes with the confidence of compiler-accurate code navigation.
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Determine root causes quickly with precise code navigation that tracks dependencies and
                                 references across repositories.
                             </li>
@@ -196,15 +196,15 @@ export const CodeSearchPage: FunctionComponent = () => (
                     <>
                         <h2 className="mb-4">Create evergreen documentation with Notebooks</h2>
                         <ul>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Enable engineers to commit their first line of code faster through living documentation
                                 that references live code.
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Resolve incidents quickly with web-based documentation that is collaborative and
                                 shareable.
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Spend less time updating stale docs. Embed notebooks anywhere you can embed HTML, like
                                 your own internal docs tooling.
                             </li>

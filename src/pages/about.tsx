@@ -154,7 +154,7 @@ const About: FunctionComponent = () => (
                     .
                 </p>
                 <a
-                    className="mt-3 btn btn-primary"
+                    className="tw-mt-4 btn btn-primary"
                     href="https://boards.greenhouse.io/sourcegraph91"
                     title="Open roles - we're hiring!"
                     data-button-style={buttonStyle.primary}

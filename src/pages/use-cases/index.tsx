@@ -93,7 +93,7 @@ const UseCases: React.FunctionComponent = () => (
                     centerContent={true}
                     leftColumn={
                         <>
-                            <h2 className="mb-3">Improve code security</h2>
+                            <h2 className="tw-mb-4">Improve code security</h2>
                             <h5>Find, fix, and track vulnerable code quickly across your entire codebase.</h5>
                             <p>
                                 You can't fix what you can't find. Remediate vulnerabilities with confidence knowing you
@@ -165,7 +165,7 @@ const UseCases: React.FunctionComponent = () => (
                     }
                     rightColumn={
                         <>
-                            <h2 className="mb-3">Accelerate developer onboarding</h2>
+                            <h2 className="tw-mb-4">Accelerate developer onboarding</h2>
                             <h5>
                                 Decrease time to first commit with self-serve onboarding, codebase exploration, and
                                 knowledge sharing.
@@ -208,7 +208,7 @@ const UseCases: React.FunctionComponent = () => (
                     centerContent={true}
                     leftColumn={
                         <>
-                            <h2 className="mb-3">Resolve incidents faster</h2>
+                            <h2 className="tw-mb-4">Resolve incidents faster</h2>
                             <h5>Identify the root cause in code and fix the issue everywhere.</h5>
                             <p>
                                 &ldquo;Every minute matters when responding to a business-critical incident. Downtime =
@@ -282,7 +282,7 @@ const UseCases: React.FunctionComponent = () => (
                     }
                     rightColumn={
                         <>
-                            <h2 className="mb-3">Streamline code reuse</h2>
+                            <h2 className="tw-mb-4">Streamline code reuse</h2>
                             <h5>Stop wasting time rewriting code.</h5>
                             <p>
                                 With Sourcegraph, you can find existing code libraries for reuse and avoid spending time
@@ -336,7 +336,7 @@ const UseCases: React.FunctionComponent = () => (
                     centerContent={true}
                     leftColumn={
                         <>
-                            <h2 className="mb-3">Boost code health</h2>
+                            <h2 className="tw-mb-4">Boost code health</h2>
                             <h5>
                                 Improve code posture with large-scale changes and track code health initiatives towards
                                 completion.

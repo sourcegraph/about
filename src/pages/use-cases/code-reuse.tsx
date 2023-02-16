@@ -34,7 +34,7 @@ const items = [
             <CarouselItem
                 header="Find code to reuse"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Find out if a teammate has already solved your problem. With{' '}
                         <Link
                             href="/code-search"
@@ -57,7 +57,7 @@ const items = [
             <CarouselItem
                 header="Improve code stability and trustworthiness"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Code reuse avoids introducing preventable bugs. By using a reviewed and tested piece of code
                         that's known to work, you can feel confident that your code is secure and stable.
                     </p>
@@ -71,7 +71,7 @@ const items = [
             <CarouselItem
                 header="Automate PRs to make code consistent"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Spend less time on manual updates. Whether refactoring duplicate code or updating a shared
                         library, automate changes seamlessly across your entire codebase with{' '}
                         <Link
@@ -95,7 +95,7 @@ const items = [
             <CarouselItem
                 header="Alert for deprecated code use"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Catch deprecated code as it’s committed with{' '}
                         <a
                             href="https://docs.sourcegraph.com/code_monitoring"
@@ -119,7 +119,7 @@ const items = [
             <CarouselItem
                 header="Track your code reuse efforts "
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Get visibility into code reuse progress. Track the prevalence of shared code in your codebase
                         over time with{' '}
                         <Link

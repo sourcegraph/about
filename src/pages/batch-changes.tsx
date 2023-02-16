@@ -38,7 +38,7 @@ export const BatchChangesPage: FunctionComponent = () => (
         {/* Overview */}
         <ContentSection>
             <div className="tw-text-center">
-                <h2 className="mb-3">Change code everywhere with a single declarative file</h2>
+                <h2 className="tw-mb-4">Change code everywhere with a single declarative file</h2>
                 <div className="row tw-justify-center">
                     <p className="col-md-8">
                         Batch Changes gives you a declarative structure for finding and modifying code across all of
@@ -81,7 +81,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="mb-3 tw-max-w-md">Search, define, execute, and track code changes</h2>
+                        <h2 className="tw-mb-4 tw-max-w-md">Search, define, execute, and track code changes</h2>
                         <ul>
                             <li className="tw-mt-2">
                                 Find all occurrences of code to change with Sourcegraph{' '}
@@ -143,7 +143,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="mb-3 tw-max-w-sm">Track changes from creation to merge</h2>
+                        <h2 className="tw-mb-4 tw-max-w-sm">Track changes from creation to merge</h2>
                         <p>Tracking changes to many repositories requires spreadsheets and manual labor.</p>
                         <p>
                             With Batch Changes, you can automatically track changeset lifecycle status, like check
@@ -254,7 +254,7 @@ export const BatchChangesPage: FunctionComponent = () => (
 
         {/* Demo */}
         <ContentSection>
-            <h2 className="mb-3 tw-text-center">See Batch Changes in action</h2>
+            <h2 className="tw-mb-4 tw-text-center">See Batch Changes in action</h2>
             <div className="row tw-justify-center md:tw-pt-sm">
                 <div className="col-lg-8">
                     <YouTube title="Sourcegraph Batch Changes demo" id="eOmiyXIWTCw" />

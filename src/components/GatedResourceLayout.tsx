@@ -68,7 +68,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
 
                     <div className="tw-pb-3xl col-md-6 col-12 md:tw-pb-0">
                         <h2>{formLabel}</h2>
-                        <div className="mt-3 tw-p-sm tw-drop-shadow sg-border-gradient-saturn tw-border-solid tw-border-3">
+                        <div className="tw-mt-4 tw-p-sm tw-drop-shadow sg-border-gradient-saturn tw-border-solid tw-border-3">
                             {!hasWatchNowQuery && !demioForm && (
                                 <HubSpotForm
                                     masterFormName="gatedMulti"

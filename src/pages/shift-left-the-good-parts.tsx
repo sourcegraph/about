@@ -77,11 +77,11 @@ const ShiftLeftPage: FunctionComponent = () => (
                         </p>
                         <p>Some ways to help you achieve this include:</p>
                         <ul>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Save time by stitching together existing components and making use of external libraries
                                 instead of reinventing the wheel.
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Consider cutting things that you might think are essential. Do you really need a
                                 production environment? Maybe use a tunneling tool like Ngrok and serve your product
                                 directly from your local machine.
@@ -128,11 +128,11 @@ const ShiftLeftPage: FunctionComponent = () => (
                         </p>
                         <p>To achieve this you could:</p>
                         <ul>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Add useful features and information to your documentation to help readers navigate and
                                 understand it.
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Keep track of which team members wrote what so that developers can reach out to those
                                 who will be able to help them understand the code.
                             </li>
@@ -156,15 +156,15 @@ const ShiftLeftPage: FunctionComponent = () => (
                         </p>
                         <p>Shifting testing left will:</p>
                         <ul>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Create a robust and reliable codebase with tools for debugging early on in the
                                 development process.
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Help to establish what you code will achieve, thus helping to inform the user validation
                                 step.
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Provide an outline of the code, which can be used to provide helpful context for
                                 developers.
                             </li>
@@ -211,10 +211,10 @@ const ShiftLeftPage: FunctionComponent = () => (
                         </p>
                         <p>Achieve this by:</p>
                         <ul>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Running recurring searches for vulnerable code blocks and dependencies.
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Search for your own set of regular expressions and{' '}
                                 <Link
                                     href="https://docs.sourcegraph.com/code_search/reference/structural#syntax-reference"
@@ -245,15 +245,15 @@ const ShiftLeftPage: FunctionComponent = () => (
                         </p>
                         <p>Here are some great reviewing tricks:</p>
                         <ul>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Break up large changesets into smaller changesets (e.g., using feature flags). These
                                 smaller changes can be more easily reviewed and validated.
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Help to establish what you code will achieve, thus helping to inform the user validation
                                 step.
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Use go-to-definition and find references to conduct code reviews that are both thorough
                                 and efficient.
                             </li>

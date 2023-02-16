@@ -32,8 +32,8 @@ const CarouselItem: FunctionComponent<{
             </div>
         </div>
         <h3>{props.header}</h3>
-        <h4 className="my-3 lg:tw-hidden tw-block mb-lg-0">{props.subtitle}</h4>
-        <p className="py-3">{props.text}</p>
+        <h4 className="tw-my-4 lg:tw-hidden tw-block mb-lg-0">{props.subtitle}</h4>
+        <p className="tw-py-4">{props.text}</p>
     </>
 )
 
@@ -193,11 +193,11 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                     <>
                         <h2 className="mb-4">Get unblocked</h2>
                         <ul>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Sourcegraph helps developers uncover answers, understand code, and take actions in the
                                 codebase without interrupting teammates.
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Developers at <i>a well-known American social news site</i> save 30 – 60 minutes a day
                                 with faster access to answers.
                             </li>
@@ -237,11 +237,11 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                     <>
                         <h2 className="mb-4">Save time resolving issues</h2>
                         <ul>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Sourcegraph helps development teams quickly identify, resolve, and proactively prevent
                                 issues from happening again.
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 <Link
                                     href="/case-studies/indeed-accelerates-development-velocity"
                                     title="Indeed"
@@ -266,12 +266,12 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                     <>
                         <h2 className="mb-4">Gain insights and track progress</h2>
                         <ul>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 Developers use insights to track migration and deprecation projects to completion and
                                 visualize version spread and security vulnerabilities, while leaders rely on analytics
                                 to make data-driven decisions and create clear success metrics for their teams.
                             </li>
-                            <li className="mb-3">
+                            <li className="tw-mb-4">
                                 A <i>top hybrid multi-cloud provider</i> resolves security vulnerabilities 4x faster and
                                 measures progress each step of the way.
                             </li>

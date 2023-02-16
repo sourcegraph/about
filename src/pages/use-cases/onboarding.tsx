@@ -34,7 +34,7 @@ const items = [
             <CarouselItem
                 header="Make knowledge self-serve"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         With Sourcegraph, developers can find answers without waiting for a teammate to point them to
                         the relevant code. When questions arise, devs feel more confident that they're asking a more
                         focused and informed question.
@@ -49,7 +49,7 @@ const items = [
             <CarouselItem
                 header="Enable developers to learn by example"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         With{' '}
                         <Link
                             href="/code-search"
@@ -73,7 +73,7 @@ const items = [
             <CarouselItem
                 header="Get code history and ownership at a glance"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         Sourcegraph natively supports Git-based version control systems. Searches can quickly reveal who
                         updated code and when, helping developers find the right stakeholders to solve problems
                         effectively.
@@ -88,7 +88,7 @@ const items = [
             <CarouselItem
                 header="Visualize contributions and chart team progress"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         <Link
                             href="/code-insights"
                             title="Code Insights"
@@ -111,7 +111,7 @@ const items = [
             <CarouselItem
                 header="Document and share actionable code snippets"
                 text={
-                    <p className="py-3">
+                    <p className="tw-py-4">
                         With{' '}
                         <a
                             href="https://docs.sourcegraph.com/notebooks"

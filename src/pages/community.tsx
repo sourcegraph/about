@@ -139,40 +139,10 @@ export const Community: FunctionComponent = () => (
                 ]}
             />
         </ContentSection>
-
-        <ContentSection>
-            <div className="row">
-                <div className="col-lg-6">
-                    <h2 className="mt-5 mb-3">DM us on Discord. We're here.</h2>
-                    What you seek is seeking you — come, chat and collaborate with inspiring engineers like you.
-                    <ul className="tw-my-3">
-                        <li className="tw-mt-2">Ask questions - any questions: what is the best sit-stand desk?</li>
-                        <li className="tw-mt-2">
-                            Reach out to the community, discover new ideas &#38; seek or give mentorship
-                        </li>
-                        <li className="tw-mt-2">Share the road less traveled so that everyone can learn</li>
-                    </ul>
-                    <a
-                        className="btn btn-primary"
-                        href="https://discord.gg/rDPqBejz93"
-                        title="Join us on Discord"
-                        data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Join us on Discord
-                    </a>
-                </div>
-                <div className="col-lg-5">
-                    <img className="mt-6 w-100" src="/community/SG_DM_us_on_slack.png" alt="DM us on Discord!" />
-                </div>
-            </div>
-        </ContentSection>
-
         <ContentSection>
             <div className="tw-max-w-screen-xl sm:tw-grid sm:tw-grid-cols-2 tw-mx-auto tw-px-4">
                 <div className="tw-mb-4 sm:tw-mb-0 sm:tw-pr-4">
-                    <h2 className="mb-3">We’d love to hear from you!</h2>
+                    <h2 className="tw-mb-4">We’d love to hear from you!</h2>
                     <br />
                     Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn,
                     or email us at{' '}

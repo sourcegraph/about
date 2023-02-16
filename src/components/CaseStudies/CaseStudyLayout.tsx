@@ -71,7 +71,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                             {quote.image && (
                                 <div className="col-12 col-lg-9">
                                     <img
-                                        className="mb-3 tw-rounded-full img-fluid tw-mx-auto tw-block"
+                                        className="tw-mb-4 tw-rounded-full img-fluid tw-mx-auto tw-block"
                                         src={quote.image}
                                         alt={quote.author}
                                     />
@@ -89,7 +89,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                 {pdf && (
                     <a
                         href={pdf}
-                        className="mt-3 btn btn-primary"
+                        className="tw-mt-4 btn btn-primary"
                         rel="nofollow noreferrer"
                         target="_blank"
                         title="Download PDF"

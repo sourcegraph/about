@@ -332,7 +332,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="mb-3">
+                        <h2 className="tw-mb-4">
                             Finally, useful engineering metrics{' '}
                             <span>
                                 <i>you</i>
@@ -378,13 +378,13 @@ const CodeInsightsPage: FunctionComponent = () => (
 
         <ContentSection>
             <div className="flex-wrap tw-flex">
-                <h2 className="mb-3 tw-text-center w-100">Engineering leadership with superpowers</h2>
+                <h2 className="tw-mb-4 tw-text-center w-100">Engineering leadership with superpowers</h2>
                 <p className="tw-text-center icon-subheader w-100">
                     Code Insights provides reliable real-time reporting directly from the codebase, making engineering
                     leaders and their teams more effective.
                 </p>
                 <div className="tw-flex tw-flex-col col-lg-6 lg:tw-px-3xl tw-justify-around">
-                    <div className="py-3 tw-flex lg:tw-py-md">
+                    <div className="tw-py-4 tw-flex lg:tw-py-md">
                         <div className="mr-4">
                             <BullsEyeArrowIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
@@ -393,7 +393,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                             <p className="icon-paragraph">Measure goals and progress in your codebase</p>
                         </div>
                     </div>
-                    <div className="py-3 tw-flex lg:tw-py-md">
+                    <div className="tw-py-4 tw-flex lg:tw-py-md">
                         <div className="mr-4 icon">
                             <LighteningBoltOutlineIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
@@ -406,7 +406,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     </div>
                 </div>
                 <div className="tw-flex tw-flex-col col-lg-6 lg:tw-px-3xl tw-justify-around">
-                    <div className="py-3 tw-flex lg:tw-py-md">
+                    <div className="tw-py-4 tw-flex lg:tw-py-md">
                         <div className="mr-4">
                             <TrendingUpIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
@@ -415,7 +415,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                             <p className="icon-paragraph">Tie trends and metrics to owners on the teams</p>
                         </div>
                     </div>
-                    <div className="py-3 tw-flex lg:tw-py-md">
+                    <div className="tw-py-4 tw-flex lg:tw-py-md">
                         <div className="mr-4">
                             <RocketLaunchOutlineIcon className="icon tw-text-blurple-400" size={70} />
                         </div>
@@ -433,7 +433,7 @@ const CodeInsightsPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection>
-            <h2 className="mb-3 tw-text-center">See Code Insights in action</h2>
+            <h2 className="tw-mb-4 tw-text-center">See Code Insights in action</h2>
             <div className="row tw-justify-center md:tw-pt-sm">
                 <div className="col-lg-8">
                     <YouTube id="fMCUJQHfbUA" title="Sourcegraph Code Insights demo" />

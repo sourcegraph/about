@@ -158,7 +158,7 @@ export const CoreFeatures: FunctionComponent = () => {
                         </span>
                         <h2>{feature.title}</h2>
                         <p className="tw-mt-sm">{feature.description}</p>
-                        <ul className="my-3">
+                        <ul className="tw-my-4">
                             {feature.details.map(detail => (
                                 <li key={detail}>{detail}</li>
                             ))}

@@ -23,7 +23,7 @@ export const AbcsEbook: FunctionComponent = () => (
                 <p className="tw-text-center">
                     <img
                         src="/other/abcs-book/our-abcs-hero.png"
-                        className="tw-px-2 mb-3 w-100"
+                        className="tw-px-2 tw-mb-4 w-100"
                         role="presentation"
                         alt="Our ABCs: Always Be Coding book"
                     />
@@ -44,7 +44,7 @@ export const AbcsEbook: FunctionComponent = () => (
                 </p>
             </div>
 
-            <div className="mt-3 row md:tw-justify-center">
+            <div className="tw-mt-4 row md:tw-justify-center">
                 <div className="col-md-8">
                     <YouTube id="6bCO63O4swI" title="Our ABCs: Always Be Coding children's book by Sourcegraph" />
                     <p className="mt-5">

@@ -185,7 +185,7 @@ const CareersPage: FunctionComponent = () => {
                     data-button-type="cta"
                 >
                     Explore our jobs
-                    <ArrowRightIcon className="ml-3 tw-inline" />
+                    <ArrowRightIcon className="tw-ml-4 tw-inline" />
                 </a>
             </ContentSection>
 
@@ -401,7 +401,7 @@ const CareersPage: FunctionComponent = () => {
                         data-button-type="cta"
                     >
                         Explore our jobs
-                        <ArrowRightIcon className="ml-3 tw-inline" />
+                        <ArrowRightIcon className="tw-ml-4 tw-inline" />
                     </a>
                 </div>
             </ContentSection>
