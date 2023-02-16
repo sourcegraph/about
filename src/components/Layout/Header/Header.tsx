@@ -14,15 +14,6 @@ interface Props {
     navLinks: NavLink[]
 }
 
-const onRightClickLogo = (event: React.MouseEvent): void => {
-    event.preventDefault()
-
-    if (event.button === 2) {
-        window.location.href =
-            'https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/Sourcegraph%20Brand%20Kit%202.2%20-%20May%202021.zip'
-    }
-}
-
 export const Header: FunctionComponent<Props> = props => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
@@ -79,7 +70,7 @@ export const Header: FunctionComponent<Props> = props => {
     return (
         <nav className={navStyle}>
             <div className="container-xl tw-px-0">
-                <Navbar.Brand href="/" onContextMenu={onRightClickLogo} className="tw-mr-0 header tw-flex">
+                <Navbar.Brand href="/" className="tw-mr-0 header tw-flex">
                     <img
                         src={
                             isDarkNav || isPurpleNav || isTransparentNav
