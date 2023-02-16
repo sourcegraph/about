@@ -160,3 +160,12 @@
             #000;
     }
 }
+
+/**
+ * Needed to make sure cookie banner doesn't have white text on white background
+ * (Cards for the website are configured to have white background, but body text is also configured to be white).
+ */
+#CybotCookiebotDialog {
+    color: #000000;
+    z-index: 1075 !important;
+}
