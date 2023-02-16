@@ -237,7 +237,7 @@ export const CaseStudy: FunctionComponent = () => (
                         <li>Eliminating unused code and technical debt</li>
                         <li>Driving adoption of a new component library</li>
                     </ol>
-                    <h3 className="tw-mt-16 tw-mb-6 max-w-600">
+                    <h3 className="tw-mt-16 tw-mb-6 tw-max-w-[600px]">
                         HashiCorp saves time managing dependencies across multiple web properties
                     </h3>
                     <p>

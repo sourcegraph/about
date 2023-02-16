@@ -53,7 +53,7 @@ export const BoardSection: FunctionComponent<{ className?: string }> = ({ classN
                     className="tw-mb-16 col-lg-4 tw-flex tw-flex-col"
                 >
                     <img
-                        className="tw-mb-6 max-w-200 tw-rounded-full"
+                        className="tw-mb-6 tw-max-w-[200px] tw-rounded-full"
                         src={boardMembers.image}
                         alt={`Sourcegraph Board of Directors: ${boardMembers.name} - ${boardMembers.title}`}
                     />

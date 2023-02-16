@@ -98,7 +98,7 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                         data-button-type="cta"
                     >
                         <img
-                            className="tw-mb-6 max-w-200 tw-rounded-full"
+                            className="tw-mb-6 tw-max-w-[200px] tw-rounded-full"
                             src={staff.image}
                             alt={`Sourcegraph team: ${staff.name} - ${staff.title}`}
                         />

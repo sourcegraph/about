@@ -28,7 +28,7 @@ const Home: FunctionComponent = () => (
         hero={<HomeHero />}
     >
         <ContentSection background="white">
-            <div className="tw-mx-auto tw-text-center max-w-700">
+            <div className="tw-mx-auto tw-text-center tw-max-w-[700px]">
                 <h2 className="tw-mb-2">
                     Over{' '}
                     <Link

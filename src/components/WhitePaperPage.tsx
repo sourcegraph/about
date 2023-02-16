@@ -17,7 +17,7 @@ interface Props {
 export const WhitePaperPage: FunctionComponent<Props> = ({ title, className, pdf, children, heroBackgroundImage }) => (
     <div className={className}>
         <div
-            className={classNames('jumbotron min-h-250 tw-flex tw-items-center text-light', className, {
+            className={classNames('jumbotron tw-min-h-[250px] tw-flex tw-items-center text-light', className, {
                 ['tw-bg-n-repeat tw-bg-cover tw-bg-center']: heroBackgroundImage,
             })}
             // eslint-disable-next-line react/forbid-dom-props

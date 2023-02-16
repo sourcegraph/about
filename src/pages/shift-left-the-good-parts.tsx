@@ -41,7 +41,7 @@ const ShiftLeftPage: FunctionComponent = () => (
             <div className="sg-bg-gradient-venus">
                 <div className="tw-max-w-screen-md tw-px-sm tw-mx-auto tw-py-5xl md:tw-text-center">
                     <h1>Shift Left: The good parts</h1>
-                    <h3 className="tw-mt-6 tw-mb-0 md:tw-mx-auto max-w-750">5 practical ways to help your org shift left</h3>
+                    <h3 className="tw-mt-6 tw-mb-0 md:tw-mx-auto tw-max-w-[750px]">5 practical ways to help your org shift left</h3>
                 </div>
             </div>
         }
@@ -275,10 +275,10 @@ const ShiftLeftPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="sg-bg-gradient-venus">
-            <div className="tw-mx-auto max-w-800 md:tw-text-center">
+            <div className="tw-mx-auto tw-max-w-[800px] md:tw-text-center">
                 <h2>Ready to shift left?</h2>
 
-                <p className="tw-my-8 max-w-650 md:tw-mx-auto">
+                <p className="tw-my-8 tw-max-w-[650px] md:tw-mx-auto">
                     Shifting left means getting a head start on some of the most important aspects of the development
                     process. Both the general philosophy and the specific process changes of shift left can be boosted
                     by using tools that enable the developer to take full charge of shipping a new feature or bug fix.

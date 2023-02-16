@@ -26,7 +26,7 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
                     <div
                         key={item.header}
                         className={
-                            index === carouselHook.carouselItems.currentItemIndex ? 'tw-block h-400' : 'tw-hidden'
+                            index === carouselHook.carouselItems.currentItemIndex ? 'tw-block tw-h-[400px]' : 'tw-hidden'
                         }
                     >
                         <TemplateCodeBlock template={item} />

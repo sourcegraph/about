@@ -252,7 +252,7 @@ const UseCasePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="tw-mb-6 max-w-400">Identifying & resolving security vulnerabilities is painful</h2>
+                        <h2 className="tw-mb-6 tw-max-w-[400px]">Identifying & resolving security vulnerabilities is painful</h2>
                         <p>
                             Existing tooling doesn't enable teams to be agile and effective when responding to security
                             vulnerabilities. What does that mean for you?
@@ -314,14 +314,14 @@ const UseCasePage: FunctionComponent = () => (
             <div className="tw-mx-6 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
                 <div className="tw-mb-8 tw-mx-auto tw-flex tw-flex-col tw-text-center">
                     <h2>Get started with Sourcegraph</h2>
-                    <p className="max-w-450">
+                    <p className="tw-max-w-[450px]">
                         Find, fix, and track vulnerable code quickly across your entire codebase to improve code
                         security.
                     </p>
                 </div>
                 <div className="tw-px-0 tw-text-center col-12">
                     <a
-                        className="btn btn-primary max-w-350 tw-w-full"
+                        className="btn btn-primary tw-max-w-[350px] tw-w-full"
                         href="https://signup.sourcegraph.com"
                         title="Start for free"
                         data-button-style={buttonStyle.primary}

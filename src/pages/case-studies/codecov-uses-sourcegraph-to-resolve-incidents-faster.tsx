@@ -120,7 +120,7 @@ export const CaseStudy: FunctionComponent = () => (
                         from clients, or searching for things in the code more easily than we could through other
                         tools.”
                     </p>
-                    <h3 className="tw-mt-16 tw-mb-6 max-w-600">
+                    <h3 className="tw-mt-16 tw-mb-6 tw-max-w-[600px]">
                         Codecov reduced time to resolution with 100% confidence when facing Log4j
                     </h3>
                     <p>
@@ -238,7 +238,7 @@ export const CaseStudy: FunctionComponent = () => (
 
             <ContentSection background="white" slimWidth={true}>
                 <div className="tw-mx-auto">
-                    <h3 className="tw-mb-6 max-w-650">Sourcegraph Cloud was the right fit for a growing team</h3>
+                    <h3 className="tw-mb-6 tw-max-w-[650px]">Sourcegraph Cloud was the right fit for a growing team</h3>
                     <p>
                         Codecov wanted something they could get up and running quickly, so they turned to Sourcegraph
                         Cloud.

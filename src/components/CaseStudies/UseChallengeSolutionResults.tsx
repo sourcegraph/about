@@ -56,7 +56,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
         <div className="tw-relative tw-flex lg:tw-flex-row tw-flex-col tw-py-xl">
             <div className="col-lg-6 col-12">
                 <div className="tw-mb-8 tw-flex tw-flex-col lg:tw-flex-row lg:tw-justify-end">
-                    <div className="tw-mb-4 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
+                    <div className="tw-mb-4 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center tw-max-w-[50px]">
                         <ClipboardTextIcon size={40} className="tw-p-1 tw-text-violet-400" />
                     </div>
                     <div className="tw-pl-xs col-11 col-lg-9">
@@ -77,7 +77,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     </div>
                 </div>
                 <div className="tw-mb-8 mb-lg-0 tw-flex tw-flex-col lg:tw-flex-row lg:tw-justify-end">
-                    <div className="tw-mb-4 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
+                    <div className="tw-mb-4 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center tw-max-w-[50px]">
                         <AlertIcon size={40} className="tw-p-1 tw-text-violet-400" />
                     </div>
                     <div className="tw-pl-xs col-11 col-lg-9">
@@ -98,7 +98,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
             </div>
             <div className="col-lg-6 col-12">
                 <div className="tw-mb-8 mb-lg-0 tw-flex tw-flex-col lg:tw-flex-row xl:tw-justify-center">
-                    <div className="tw-mb-4 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
+                    <div className="tw-mb-4 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center tw-max-w-[50px]">
                         <CheckCircleIcon size={40} className="tw-p-1 tw-text-violet-400" />
                     </div>
                     <div className="tw-pl-xs col-11 col-lg-9">
@@ -125,7 +125,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                 className="sg-bg-gradient-venus lg:tw-absolute xl:tw-right-5xl lg:tw-right-sm lg:tw-bottom-0 tw-max-w-[700px] lg:tw-max-w-[500px] tw-mx-auto tw-p-8 tw-w-[95%]"
             >
                 <div className="ml-lg-0 tw-flex tw-flex-col lg:tw-flex-row">
-                    <div className="tw-mb-4 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
+                    <div className="tw-mb-4 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center tw-max-w-[50px]">
                         <ChartLineVariantIcon size={40} className="tw-p-1 tw-text-violet-400" />
                     </div>
                     <div className="tw-pr-0 tw-pl-xs col-lg-10 col-11">

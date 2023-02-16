@@ -218,7 +218,7 @@ const UseCasePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="tw-mb-6 max-w-400">Developer onboarding is slow and expensive</h2>
+                        <h2 className="tw-mb-6 tw-max-w-[400px]">Developer onboarding is slow and expensive</h2>
                         <p>
                             Current tools and practices don't enable teams to onboard developers effectively or
                             efficiently.
@@ -279,7 +279,7 @@ const UseCasePage: FunctionComponent = () => (
 
         <ContentSection parentClassName="tw-bg-gray-100">
             <div className="tw-mx-6 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
-                <div className="tw-mb-8 tw-mx-auto tw-flex tw-flex-col tw-text-center max-w-550">
+                <div className="tw-mb-8 tw-mx-auto tw-flex tw-flex-col tw-text-center tw-max-w-[550px]">
                     <h2 className="">Give your team the onboarding experience they deserve.</h2>
                     <p>
                         Enable all your devs to find the answers they need to work more efficiently, ship code more
@@ -288,7 +288,7 @@ const UseCasePage: FunctionComponent = () => (
                 </div>
                 <div className="tw-px-0 tw-text-center col-12">
                     <a
-                        className="btn btn-primary max-w-350 tw-w-full"
+                        className="btn btn-primary tw-max-w-[350px] tw-w-full"
                         href="https://signup.sourcegraph.com"
                         title="Start for free"
                         data-button-style={buttonStyle.primary}

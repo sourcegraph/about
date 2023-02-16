@@ -22,7 +22,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                         context included, and enable senior devs to share their knowledge at scale.
                     </p>
 
-                    <div className="tw-mt-8 max-w-400">
+                    <div className="tw-mt-8 tw-max-w-[400px]">
                         <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                     </div>
                 </div>
@@ -34,7 +34,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
         </div>
 
         <div className="sg-bg-gradient-saturn">
-            <div className="container tw-py-24 max-w-650">
+            <div className="container tw-py-24 tw-max-w-[650px]">
                 <Blockquote
                     headline="Learn how Convoy increases the efficiency and confidence of entry level developers"
                     quote="For our new developers, Sourcegraph has been invaluable to get to know the repository
@@ -49,10 +49,10 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
         </div>
 
         <div className="tw-text-center">
-            <div className="container tw-py-24 max-w-650">
+            <div className="container tw-py-24 tw-max-w-[650px]">
                 <h2>Ready to accelerate developer onboarding? Let's talk.</h2>
 
-                <div className="tw-mt-8 tw-mx-auto max-w-400">
+                <div className="tw-mt-8 tw-mx-auto tw-max-w-[400px]">
                     <a
                         className="tw-mt-8 btn btn-primary tw-block sm:tw-inline-block"
                         href="https://signup.sourcegraph.com"

@@ -265,8 +265,8 @@ const UseCasePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="mb-md-4 max-w-500">Improving code health can be daunting</h2>
-                        <p className="max-w-500">
+                        <h2 className="mb-md-4 tw-max-w-[500px]">Improving code health can be daunting</h2>
+                        <p className="tw-max-w-[500px]">
                             Engineering teams need to track and measure code quality consistently to monitor code health
                             across their entire codebase, but current tools don't make this easy. What does that mean
                             for you?
@@ -316,14 +316,14 @@ const UseCasePage: FunctionComponent = () => (
 
         <ContentSection parentClassName="tw-bg-gray-100">
             <div className="tw-mx-6 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
-                <div className="tw-mb-8 tw-mx-auto tw-flex tw-flex-col tw-text-center max-w-600">
+                <div className="tw-mb-8 tw-mx-auto tw-flex tw-flex-col tw-text-center tw-max-w-[600px]">
                     <h2 className="">Get started with Sourcegraph</h2>
                     <p>Give your team the tools they need to build a healthier codebase.</p>
                 </div>
                 <div className="tw-px-0 tw-text-center col-12">
                     <a
                         href="https://signup.sourcegraph.com"
-                        className="btn btn-primary max-w-350 tw-w-full"
+                        className="btn btn-primary tw-max-w-[350px] tw-w-full"
                         title="Start for free"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.body}

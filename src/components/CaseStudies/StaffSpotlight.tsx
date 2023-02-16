@@ -26,7 +26,7 @@ export const StaffSpotlight: FunctionComponent<{
                     {staff.map(a => (
                         <div key={a.name} className="md:tw-text-center">
                             <img
-                                className="tw-rounded-full max-w-150 tw-inline tw-mb-sm"
+                                className="tw-rounded-full tw-max-w-[150px] tw-inline tw-mb-sm"
                                 width={150}
                                 height={150}
                                 src={a.image}
@@ -44,7 +44,7 @@ export const StaffSpotlight: FunctionComponent<{
                 {staff[0].image && (
                     <div className="tw-mb-sm md:tw-mb-0">
                         <img
-                            className="tw-rounded-full tw-w-full max-w-150"
+                            className="tw-rounded-full tw-w-full tw-max-w-[150px]"
                             width={150}
                             src={staff[0].image}
                             alt={staff[0].name}

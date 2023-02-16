@@ -226,7 +226,7 @@ const CodeReusePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="tw-mb-6 max-w-600">Finding reliable, reusable code is tedious and inefficient</h2>
+                        <h2 className="tw-mb-6 tw-max-w-[600px]">Finding reliable, reusable code is tedious and inefficient</h2>
                         <p className="tw-mt-8">
                             Current tools don’t fully enable teams to innersource and use existing code to develop a
                             more secure and coherent codebase. What does that mean for you and your team?
@@ -272,7 +272,7 @@ const CodeReusePage: FunctionComponent = () => (
 
         <ContentSection parentClassName="tw-bg-gray-100">
             <div className="tw-mx-6 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
-                <div className="tw-mb-8 tw-mx-auto tw-flex tw-flex-col tw-text-center max-w-600">
+                <div className="tw-mb-8 tw-mx-auto tw-flex tw-flex-col tw-text-center tw-max-w-[600px]">
                     <h2 className="">Get started with Sourcegraph</h2>
                     <p>
                         Make it easier to discover trustworthy code for reuse so your teams can spend more time solving
@@ -282,7 +282,7 @@ const CodeReusePage: FunctionComponent = () => (
                 <div className="tw-px-0 tw-text-center col-12">
                     <a
                         href="https://signup.sourcegraph.com"
-                        className="btn btn-primary max-w-350 tw-w-full"
+                        className="btn btn-primary tw-max-w-[350px] tw-w-full"
                         title="Start for free"
                         data-button-style={buttonStyle.outline}
                         data-button-location={buttonLocation.body}

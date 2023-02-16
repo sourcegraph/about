@@ -8,7 +8,7 @@ const Uninstall: FunctionComponent = () => (
             <section className="tw-text-center tw-py-6 bg-dark text-light">
                 <h1>Thank you for using Sourcegraph</h1>
             </section>
-            <section className="tw-p-6 tw-mx-auto max-w-500 bg-white text-dark">
+            <section className="tw-p-6 tw-mx-auto tw-max-w-[500px] bg-white text-dark">
                 <div className="measure-wide center">
                     <div className="tw-flex tw-flex-col tw-p-6 tw-mx-auto">
                         <h3>Why did you uninstall the Sourcegraph browser extension?</h3>
