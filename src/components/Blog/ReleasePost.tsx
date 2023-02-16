@@ -39,24 +39,25 @@ export const ReleasePost: FunctionComponent<Props> = ({
                 <div>
                     <h3 className="tw-pt-sm tw-pb-xxs tw-m-0 release-post__changelog-header">Changelog highlights</h3>
 
-                    <div className="tw-border-y tw-border-solid tw-border-gray-200 list-group list-group-flush">
+                    <ol className="tw-border-y tw-border-solid tw-border-gray-200 tw-list-none tw-ml-0">
                         {frontmatter.changelogItems?.map(({ url, category, description }) => (
-                            <a
-                                href={url}
-                                className="release-post__item md:tw-flex list-group-item list-group-item-action"
-                                key={url}
-                                title={`${category}: ${description}`}
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                <span className="tw-mb-2 release-post__item-category md:tw-mb-0">
-                                    <span className="release-post__item-category-badge">{category}</span>
-                                </span>
-                                <span className="release-post__item-description">{description}</span>
-                            </a>
+                            <li key={url} className="tw-bg-white [&:not(:last-child)]:tw-border-b-1 tw-m-0 tw-p-0">
+                                <a
+                                    href={url}
+                                    className="release-post__item md:tw-flex tw-px-xs tw-py-xxs tw-text-black"
+                                    title={`${category}: ${description}`}
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    <span className="tw-mb-2 release-post__item-category md:tw-mb-0">
+                                        <span className="release-post__item-category-badge">{category}</span>
+                                    </span>
+                                    <span className="release-post__item-description">{description}</span>
+                                </a>
+                            </li>
                         ))}
-                    </div>
+                    </ol>
 
                     <ul className="tw-mb-0 tw-py-4 tw-flex-wrap tw-list-none tw-flex-col md:tw-flex-row md:tw-flex">
                         <li>

@@ -59,22 +59,26 @@ const UseCases: React.FunctionComponent = () => (
                         <div className="tw-mb-16 tw-pt-sm col-lg-5 mt-lg-6">
                             <h4 className="tw-pb-xxs tw-text-xl">See how customers use Sourcegraph to...</h4>
 
-                            <div className="list-group">
+                            <ul className="tw-list-none tw-ml-0">
                                 {features.map((feature: { id: string; description: string }) => (
-                                    <Link
+                                    <li
                                         key={feature.id}
-                                        href={`#${kebabCase(feature.id)}`}
-                                        className="list-group-item list-group-item-action tw-flex tw-justify-between tw-items-center tw-no-underline"
-                                        title={feature.description}
-                                        data-button-style={buttonStyle.textWithArrow}
-                                        data-button-location={buttonLocation.hero}
-                                        data-button-type="cta"
+                                        className="tw-bg-white [&:not(:last-child)]:tw-border-b-1 tw-m-0 tw-p-0"
                                     >
-                                        {feature.description}
-                                        <ArrowRightIcon className="tw-ml-1" />
-                                    </Link>
+                                        <Link
+                                            href={`#${kebabCase(feature.id)}`}
+                                            className="tw-px-xs tw-py-xxs tw-flex tw-justify-between tw-items-center tw-no-underline"
+                                            title={feature.description}
+                                            data-button-style={buttonStyle.textWithArrow}
+                                            data-button-location={buttonLocation.hero}
+                                            data-button-type="cta"
+                                        >
+                                            {feature.description}
+                                            <ArrowRightIcon className="tw-ml-1" />
+                                        </Link>
+                                    </li>
                                 ))}
-                            </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
