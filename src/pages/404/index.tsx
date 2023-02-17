@@ -5,7 +5,7 @@ import { Layout } from '../../components'
 import styles from './404.module.scss'
 
 const Custom404: React.FunctionComponent = () => (
-    <Layout className="tw-bg-white">
+    <Layout headerColorTheme="white">
         <div className={`${styles.errorPage} tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-black`}>
             <div className={`${styles.circle} tw-rounded-full`}>
                 <div className={`${styles.icon} tw-my-0 tw-mx-auto`}>

@@ -242,7 +242,7 @@ const UseCasePage: FunctionComponent = () => (
             description:
                 'Tackle refactoring efforts and tech debt from legacy systems with automated pull requests across your entire codebase to boost code health.',
         }}
-        className="use-cases-page navbar-light"
+        className="use-cases-page"
         hero={
             <Hero
                 variant="lightNebulousVenus2"

@@ -44,7 +44,6 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
             description:
                 'Find your own answers with self-serve onboarding, codebase exploration, and knowledge sharing, without waiting for someone to point you to the relevant code.',
         }}
-        className="navbar-light"
         hero={
             <Hero
                 variant="lightNebulousVenus2"

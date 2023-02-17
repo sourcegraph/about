@@ -8,7 +8,7 @@ import { NavLink, navLinks } from '../navLinks'
 import { DesktopNav } from './DesktopNav'
 import { MobileNav } from './MobileNav'
 
-export type HeaderColorTheme = 'purple' | 'dark' | 'default'
+export type HeaderColorTheme = 'purple' | 'dark' | 'white' | 'default'
 
 interface Props {
     minimal?: boolean
@@ -66,12 +66,13 @@ export const Header: FunctionComponent<Props> = ({ colorTheme = 'default', ...pr
     const navStyle = classNames(
         'header navbar tw-py-4 tw-w-full tw-fixed tw-top-0 tw-right-0 tw-left-0 tw-z-[1030]',
         props.className,
+        colorTheme === 'white' && 'tw-bg-white',
         isPurpleNav && 'navbar-purple',
         isDarkNav && 'navbar-dark',
         {
             'tw-bg-white': !isDarkNav && !isPurpleNav && (sticky || isOpen),
             'tw-bg-violet-750': isPurpleNav && (sticky || isOpen),
-            'tw-bg-black': isDarkNav && (sticky || isOpen),
+            'tw-bg-black': colorTheme === 'dark',
         }
     )
 

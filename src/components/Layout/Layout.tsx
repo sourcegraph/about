@@ -30,7 +30,7 @@ interface LayoutProps {
     hideHeader?: boolean
 }
 
-export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, ...props }) => {
+export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, className, ...props }) => {
     const router = useRouter()
     const { pathname, asPath } = router
 
@@ -60,7 +60,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, ...pr
     }
 
     return (
-        <div className={`tw-flex tw-flex-col tw-min-h-screen ${props.className || ''}`}>
+        <div className={`tw-flex tw-flex-col tw-min-h-screen ${className || ''}`}>
             <Head>
                 <title>{meta.externalTitle || meta.title}</title>
                 <meta name="description" content={meta.externalDescription || meta.description} />
@@ -107,12 +107,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, ...pr
 
             {!props.hideHeader && (
                 <div className={props.heroAndHeaderClassName}>
-                    <Header
-                        minimal={props.minimal}
-                        className={props.className}
-                        colorTheme={headerColorTheme}
-                        navLinks={navLinks}
-                    />
+                    <Header minimal={props.minimal} colorTheme={headerColorTheme} navLinks={navLinks} />
 
                     {props.hero}
                 </div>
@@ -121,11 +116,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, ...pr
             <section className="tw-flex-1">{props.children}</section>
 
             {!props.hideFooter && (
-                <Footer
-                    className={`${props.className || ''}`}
-                    dark={headerColorTheme === 'dark' || headerColorTheme === 'purple'}
-                    minimal={props.minimal}
-                />
+                <Footer dark={headerColorTheme === 'dark' || headerColorTheme === 'purple'} minimal={props.minimal} />
             )}
         </div>
     )

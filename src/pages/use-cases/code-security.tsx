@@ -230,7 +230,7 @@ const UseCasePage: FunctionComponent = () => (
             description:
                 'Search your repositories and find vulnerabilities in minutes, not days. Learn more about Sourcegraph for code security.',
         }}
-        className="use-cases-page navbar-light"
+        className="use-cases-page"
         hero={
             <Hero
                 variant="lightNebulousVenus2"

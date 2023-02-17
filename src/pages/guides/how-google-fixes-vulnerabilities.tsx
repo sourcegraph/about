@@ -9,7 +9,6 @@ export const Guide: FunctionComponent = () => (
             description:
                 'See how tech companies large and small address code security. In this post, we explore how Google, Microsoft, Lyft, GitLab, and Atlassian find and fix vulnerabilities.',
         }}
-        className="tw-bg-white"
         hero={
             <Hero
                 variant="darkSimpleGrid"

@@ -222,7 +222,7 @@ const IncidentResponsePage: FunctionComponent = () => (
             description:
                 'Identify the root cause of an incident, understand its potential impact, fix the issue everywhere in your codebase. Incident response from Sourcegraph.',
         }}
-        className="use-cases-page navbar-light"
+        className="use-cases-page"
         hero={
             <Hero
                 variant="lightNebulousVenus2"

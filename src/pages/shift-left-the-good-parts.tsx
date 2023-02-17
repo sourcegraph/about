@@ -36,7 +36,6 @@ const ShiftLeftPage: FunctionComponent = () => (
             title: 'Shift Left - Sourcegraph',
             description: 'How to empower your security and engineering organizations to shift left',
         }}
-        className="tw-bg-white"
         hero={
             <div className="sg-bg-gradient-venus">
                 <div className="tw-max-w-screen-md tw-px-sm tw-mx-auto tw-py-5xl md:tw-text-center">

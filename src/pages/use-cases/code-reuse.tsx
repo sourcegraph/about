@@ -203,7 +203,7 @@ const CodeReusePage: FunctionComponent = () => (
             description:
                 'Find existing code libraries for reuse and avoid spending time on problems a teammate already solved for a more secure and coherent codebase.',
         }}
-        className="use-cases-page navbar-light"
+        className="use-cases-page"
         hero={
             <Hero
                 variant="lightNebulousVenus2"
@@ -226,7 +226,9 @@ const CodeReusePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="tw-mb-6 tw-max-w-[600px]">Finding reliable, reusable code is tedious and inefficient</h2>
+                        <h2 className="tw-mb-6 tw-max-w-[600px]">
+                            Finding reliable, reusable code is tedious and inefficient
+                        </h2>
                         <p className="tw-mt-8">
                             Current tools don’t fully enable teams to innersource and use existing code to develop a
                             more secure and coherent codebase. What does that mean for you and your team?

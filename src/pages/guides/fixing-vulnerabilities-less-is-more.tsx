@@ -9,7 +9,6 @@ export const Guide: FunctionComponent = () => (
             description:
                 'When finding security vulnerabilities, simplicity is key. Learn how to decrease recovery time with a single search by improving tooling and processes.',
         }}
-        className="tw-bg-white"
         hero={
             <Hero
                 variant="darkSimpleGrid"
@@ -44,7 +43,9 @@ export const Guide: FunctionComponent = () => (
                         Download “<strong>Less is more: Finding and fixing security vulnerabilities</strong>” to learn:
                     </p>
                     <ul>
-                        <li className="tw-mb-2">How simplicity complements complexity in the pursuit of code security</li>
+                        <li className="tw-mb-2">
+                            How simplicity complements complexity in the pursuit of code security
+                        </li>
                         <li className="tw-mb-2">
                             What today’s code security ecosystem lacks and what that means for your business
                         </li>

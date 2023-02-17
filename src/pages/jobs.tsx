@@ -193,7 +193,7 @@ const CareersPage: FunctionComponent = () => {
     ]
 
     return (
-        <Layout className="jobs-page" heroAndHeaderClassName="tw-bg-white">
+        <Layout className="jobs-page" headerColorTheme="white">
             <ContentSection background="white">
                 <div className="row">
                     <div className="col-lg-10">

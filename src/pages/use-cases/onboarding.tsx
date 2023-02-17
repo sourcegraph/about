@@ -195,7 +195,7 @@ const UseCasePage: FunctionComponent = () => (
             description:
                 'Decrease time to first commit for new developers, help existing engineers master your codebase, and fast-track full codebase understanding.',
         }}
-        className="use-cases-page navbar-light"
+        className="use-cases-page"
         hero={
             <Hero
                 variant="lightNebulousVenus2"

@@ -15,7 +15,7 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
     const loadMoreHook = useLoadMore(allPosts, 1, posts)
 
     return (
-        <Layout meta={blogInfo.meta} className="bg-light navbar-light">
+        <Layout meta={blogInfo.meta}>
             <div className="md:tw-container tw-px-sm tw-mx-auto">
                 <BlogHeader {...blogInfo} />
 

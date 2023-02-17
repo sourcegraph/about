@@ -9,7 +9,6 @@ export const CaseStudy: FunctionComponent = () => (
             description:
                 'Sourcegraph provides Criteo the ability to cross boundaries of different codebases and languages authored by different people with different tools.',
         }}
-        className="tw-bg-black"
         headerColorTheme="dark"
     >
         <CaseStudyLayout

@@ -13,7 +13,6 @@ export const CaseStudy: FunctionComponent = () => {
                     'Sourcegraph case study: Learn how Sourcegraph helped Lyft ensure (largely) issue-free production deploys during their monolith to microservices decomposition',
                 // image: "https://about.sourcegraph.com/lyft-sourcegraph-case-study-og-embed.jpg"-pending approval
             }}
-            className="tw-bg-black"
             headerColorTheme="dark"
         >
             <CaseStudyLayout

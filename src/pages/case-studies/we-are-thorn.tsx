@@ -9,7 +9,6 @@ export const CaseStudy: FunctionComponent = () => (
             description:
                 'Learn how Sourcegraph code search enabled Thorn to systematically sunset legacy systems safely, removing huge amounts of tech debt in the process.',
         }}
-        className="tw-bg-black"
         headerColorTheme="dark"
     >
         <CaseStudyLayout

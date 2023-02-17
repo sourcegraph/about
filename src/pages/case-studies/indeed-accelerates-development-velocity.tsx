@@ -15,7 +15,6 @@ export const CaseStudy: FunctionComponent = () => {
                 description:
                     'Indeed case study. Learn how Indeed keeps code up to date and accelerates development velocity',
             }}
-            className="tw-bg-black"
             headerColorTheme="dark"
         >
             <CaseStudyLayout
