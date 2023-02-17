@@ -87,9 +87,9 @@ const LEADERS: {
 export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div id="leadership" className={`leadership-section ${className}`}>
         <h2>Leadership</h2>
-        <div className="tw-my-8 row">
+        <div className="tw-my-8 tw-grid tw-gap-xl tw-grid-cols-1 sm:tw-grid-cols-2 md:tw-grid-cols-3">
             {LEADERS.map(staff => (
-                <div key={`${staff.name.replace(' ', '-').toLowerCase()}`} className="tw-my-6 col-lg-4">
+                <div key={`${staff.name.replace(' ', '-').toLowerCase()}`} className="">
                     <a
                         href={staff.bio}
                         title={`Sourcegraph team: ${staff.name} - ${staff.title}`}

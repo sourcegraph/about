@@ -11,25 +11,23 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                 'Get sharable links to help new developers ask questions with context, and enable senior devs to share knowledge without running local searches for specific bits of code.',
         }}
     >
-        <div className="tw-container tw-mx-auto tw-py-24">
-            <div className="row">
-                <div className="col-lg-6 lg:tw-pr-md">
-                    <h1 className="tw-mb-6">Accelerate developer onboarding and decrease time to first commit</h1>
-                    <h4>Self-serve onboarding, codebase exploration, and knowledge sharing</h4>
-                    <p>
-                        With Sourcegraph, developers can find their own answers without waiting for someone to point
-                        them to the relevant code. Get sharable links to help developers ask specific questions with
-                        context included, and enable senior devs to share their knowledge at scale.
-                    </p>
+        <div className="tw-container tw-mx-auto tw-py-24 tw-grid tw-gap-md tw-grid-cols-1 lg:tw-grid-cols-2">
+            <div>
+                <h1 className="tw-mb-6">Accelerate developer onboarding and decrease time to first commit</h1>
+                <h4>Self-serve onboarding, codebase exploration, and knowledge sharing</h4>
+                <p>
+                    With Sourcegraph, developers can find their own answers without waiting for someone to point them to
+                    the relevant code. Get sharable links to help developers ask specific questions with context
+                    included, and enable senior devs to share their knowledge at scale.
+                </p>
 
-                    <div className="tw-mt-8 tw-max-w-[400px]">
-                        <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
-                    </div>
+                <div className="tw-mt-8 tw-max-w-[400px]">
+                    <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                 </div>
+            </div>
 
-                <div className="tw-mt-6 col-lg-6 lg:tw-mt-0">
-                    <YouTube title="Accelerate developer onboarding with Sourcegraph" id="DgwvhRW1Cbc" />
-                </div>
+            <div>
+                <YouTube title="Accelerate developer onboarding with Sourcegraph" id="DgwvhRW1Cbc" />
             </div>
         </div>
 

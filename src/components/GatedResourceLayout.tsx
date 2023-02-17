@@ -66,7 +66,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 <ContentSection background="white" className="tw-flex tw-flex-col-reverse md:tw-flex-row">
                     {description}
 
-                    <div className="tw-pb-3xl col-md-6 col-12 md:tw-pb-0">
+                    <div className="tw-pb-3xl md:tw-pb-0">
                         <h2>{formLabel}</h2>
                         <div className="tw-mt-4 tw-p-sm tw-drop-shadow sg-border-gradient-saturn tw-border-solid tw-border-3">
                             {!hasWatchNowQuery && !demioForm && (
@@ -100,7 +100,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
 
                     <section className="tw-flex-wrap tw-flex">
                         {speakers.map((speaker: Speaker) => (
-                            <div key={speaker.name} className="tw-pl-0 col-lg-5 col-md-6 col-12 lg:tw-pr-5xl">
+                            <div key={speaker.name} className="tw-pl-0 lg:tw-pr-5xl">
                                 <img className="tw-py-sm" width="140" src={speaker.img} alt={speaker.name} />
                                 <h5>{speaker.name}</h5>
                                 <figcaption className="tw-my-xxs tw-text-gray-400 tw-max-w-[250px]">

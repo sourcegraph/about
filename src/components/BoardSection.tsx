@@ -46,12 +46,9 @@ export const BoardSection: FunctionComponent<{ className?: string }> = ({ classN
     <div id="board" className={`${className}`}>
         <h2>Board of Directors</h2>
 
-        <div className="tw-my-8 row">
+        <div className="tw-my-8 tw-grid tw-gap-xl tw-grid-cols-1 sm:tw-grid-cols-2 md:tw-grid-cols-3">
             {BOARD.map(boardMembers => (
-                <div
-                    key={`${boardMembers.name.replace(' ', '-').toLowerCase()}`}
-                    className="tw-mb-16 col-lg-4 tw-flex tw-flex-col"
-                >
+                <div key={`${boardMembers.name.replace(' ', '-').toLowerCase()}`} className="tw-flex tw-flex-col">
                     <img
                         className="tw-mb-6 tw-max-w-[200px] tw-rounded-full"
                         src={boardMembers.image}

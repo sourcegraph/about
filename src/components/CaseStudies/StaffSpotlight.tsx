@@ -52,7 +52,7 @@ export const StaffSpotlight: FunctionComponent<{
                     </div>
                 )}
 
-                <div className="tw-pl-0 col-md-9 md:tw-pl-md">
+                <div className="tw-pl-0 md:tw-pl-md">
                     <h3>{staff[0].name}</h3>
                     <p className="tw-text-gray-400">{staff[0].title}</p>
 

@@ -108,7 +108,7 @@ export const Header: FunctionComponent<Props> = ({ colorTheme = 'default', ...pr
 
                         <DesktopNav navLinks={navLinks} dark={dark} />
 
-                        <MobileNav navLinks={navLinks} isOpen={isOpen} />
+                        {false && <MobileNav navLinks={navLinks} isOpen={isOpen} />}
                     </>
                 )}
             </div>

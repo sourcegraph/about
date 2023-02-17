@@ -50,7 +50,7 @@ const Webinar: FunctionComponent = () => {
                     })
                 }}
                 description={
-                    <section className="col-md-6 col-12 lg:tw-pr-3xl">
+                    <section>
                         <p>
                             Learn how to use Code Insights to turn your most pressing analytics questions into KPIs you
                             can track with mere seconds of setup.
@@ -93,7 +93,7 @@ const Webinar: FunctionComponent = () => {
                     <ContentSection className="tw-flex tw-flex-col tw-items-center">
                         <h1 className="tw-text-center">Want to learn more about Code Insights?</h1>
                         <a
-                            className="tw-mt-6 btn btn-primary col-12 col-md-3 col-xl-2"
+                            className="tw-mt-6 btn btn-primary"
                             href="https://signup.sourcegraph.com"
                             title="Start for free"
                             data-button-style={buttonStyle.primary}

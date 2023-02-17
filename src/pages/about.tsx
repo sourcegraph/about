@@ -175,9 +175,9 @@ const About: FunctionComponent = () => (
 
             <ContentSection>
                 <h2>Investors</h2>
-                <div className="tw-mx-8 row tw-items-center">
+                <div className="tw-mx-8 tw-grid tw-gap-lg tw-grid-cols-1 md:tw-grid-cols-3">
                     {INVESTORS.map(investor => (
-                        <div key={investor.image} className="tw-mx-auto tw-my-8 col-md-4">
+                        <div key={investor.image} className="tw-max-w-xs">
                             <img
                                 src={investor.image}
                                 alt={investor.name}

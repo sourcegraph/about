@@ -22,7 +22,7 @@ export const Guide: FunctionComponent = () => (
             formLabel="Download the guide"
             resource="/guides/optimizing-developer-onboarding.pdf"
             description={
-                <section className="col-md-6 col-12 lg:tw-pr-3xl">
+                <section>
                     <p>
                         What are the processes and tools that make for a successful developer onboarding program? We
                         surveyed 31 open source maintainers and project leads to understand the impact and intricacies

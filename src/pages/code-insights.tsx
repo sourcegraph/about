@@ -383,7 +383,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     Code Insights provides reliable real-time reporting directly from the codebase, making engineering
                     leaders and their teams more effective.
                 </p>
-                <div className="tw-flex tw-flex-col col-lg-6 lg:tw-px-3xl tw-justify-around">
+                <div className="tw-flex tw-flex-col lg:tw-px-3xl tw-justify-around">
                     <div className="tw-py-4 tw-flex lg:tw-py-md">
                         <div className="tw-mr-6">
                             <BullsEyeArrowIcon className="icon tw-text-blurple-400" size={70} />
@@ -405,7 +405,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                         </div>
                     </div>
                 </div>
-                <div className="tw-flex tw-flex-col col-lg-6 lg:tw-px-3xl tw-justify-around">
+                <div className="tw-flex tw-flex-col lg:tw-px-3xl tw-justify-around">
                     <div className="tw-py-4 tw-flex lg:tw-py-md">
                         <div className="tw-mr-6">
                             <TrendingUpIcon className="icon tw-text-blurple-400" size={70} />
@@ -434,11 +434,7 @@ const CodeInsightsPage: FunctionComponent = () => (
 
         <ContentSection>
             <h2 className="tw-mb-4 tw-text-center">See Code Insights in action</h2>
-            <div className="row tw-justify-center md:tw-pt-sm">
-                <div className="col-lg-8">
-                    <YouTube id="fMCUJQHfbUA" title="Sourcegraph Code Insights demo" />
-                </div>
-            </div>
+            <YouTube id="fMCUJQHfbUA" title="Sourcegraph Code Insights demo" className="tw-mx-auto tw-max-w-4xl" />
         </ContentSection>
 
         <ContentSection parentClassName="sg-bg-gradient-venus tw-hidden md:tw-block">

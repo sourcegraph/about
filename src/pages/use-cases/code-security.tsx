@@ -18,6 +18,7 @@ import {
     TwoColumnSection,
 } from '../../components'
 import { StandardCallToAction } from '../../components/cta/StandardCallToAction'
+import { UseCasePageCallToAction } from '../../components/cta/UseCasePageCallToAction'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
@@ -313,38 +314,10 @@ const UseCasePage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="tw-mx-6 row tw-flex tw-flex-col lg:tw-mx-0 tw-text-center">
-                <div className="tw-mb-8 tw-mx-auto tw-flex tw-flex-col tw-text-center">
-                    <h2>Get started with Sourcegraph</h2>
-                    <p className="tw-max-w-[450px]">
-                        Find, fix, and track vulnerable code quickly across your entire codebase to improve code
-                        security.
-                    </p>
-                </div>
-                <div className="tw-px-0 tw-text-center col-12">
-                    <a
-                        className="btn btn-primary tw-max-w-[350px] tw-w-full"
-                        href="https://signup.sourcegraph.com"
-                        title="Start for free"
-                        data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Start for free
-                    </a>
-                    <Link
-                        href="/use-cases"
-                        className="tw-mt-6 tw-flex tw-justify-center "
-                        title="Explore other use cases"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Explore other use cases
-                    </Link>
-                </div>
-            </div>
-
+            <UseCasePageCallToAction
+                text="Find, fix, and track vulnerable code quickly across your entire codebase to improve code security."
+                buttonLocation={buttonLocation.body}
+            />
             <div className="tw-mt-4xl">
                 <CustomerLogos />
             </div>

@@ -81,8 +81,8 @@ export const IntegrationsSection: FunctionComponent = () => (
     <ContentSection background="white">
         <h2 className="tw-mb-3xl">Works with your code, infrastructure, and tools</h2>
 
-        <div className="row">
-            <div className="tw-mb-8 col-lg-6">
+        <div className="tw-grid tw-gap-md tw-grid-cols-1 lg:tw-grid-cols-2">
+            <div>
                 <Heading size="h4" as="h3">
                     All your repositories + 2M open source (and counting)
                 </Heading>
@@ -102,7 +102,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                 </a>
             </div>
 
-            <div className="tw-mb-8 col-lg-6">
+            <div>
                 <Heading size="h4" as="h3">
                     All your languages
                 </Heading>
@@ -122,7 +122,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                 </a>
             </div>
 
-            <div className="tw-mb-8 col-lg-6">
+            <div>
                 <Heading size="h4" as="h3">
                     Your most used tools
                 </Heading>
@@ -142,7 +142,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                 </a>
             </div>
 
-            <div className="tw-mb-8 col-lg-6">
+            <div>
                 <Heading size="h4" as="h3">
                     Deployment options
                 </Heading>

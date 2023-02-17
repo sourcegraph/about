@@ -82,46 +82,44 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
         </header>
 
         {slugPath && (
-            <div className="tw-pt-0 tw-flex tw-items-center">
-                <div className="row tw-w-full">
-                    <div className="tw-pb-xs col-md-9 md:tw-pb-0">
-                        {frontmatter.description ? (
-                            <p>{truncate(frontmatter.description, { length: 300 })}</p>
-                        ) : (
-                            <p>{typeof excerpt === 'string' && excerpt}</p>
-                        )}
-                        <div className="tw-text-center xs:tw-text-left">
-                            <Link
-                                href={`/${blogType}/${slugPath}`}
-                                title="Read more"
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                Read more
-                            </Link>
-                        </div>
-                    </div>
-
-                    <div className="col-md-3 tw-flex">
+            <div className="tw-pt-0 tw-grid tw-gap-sm tw-grid-cols-1 md:tw-grid-cols-3">
+                <div className="md:tw-col-span-2">
+                    {frontmatter.description ? (
+                        <p>{truncate(frontmatter.description, { length: 300 })}</p>
+                    ) : (
+                        <p>{typeof excerpt === 'string' && excerpt}</p>
+                    )}
+                    <div className="tw-text-center xs:tw-text-left">
                         <Link
                             href={`/${blogType}/${slugPath}`}
-                            title={frontmatter.title}
-                            data-button-style={buttonStyle.image}
+                            title="Read more"
+                            data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
                             data-button-type="cta"
                         >
-                            <img
-                                className="tw-w-full"
-                                src={
-                                    frontmatter.heroImage
-                                        ? frontmatter.heroImage
-                                        : 'https://storage.googleapis.com/sourcegraph-assets/sourcegraph-social-image.png'
-                                }
-                                alt={frontmatter.title}
-                            />
+                            Read more
                         </Link>
                     </div>
+                </div>
+
+                <div>
+                    <Link
+                        href={`/${blogType}/${slugPath}`}
+                        title={frontmatter.title}
+                        data-button-style={buttonStyle.image}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        <img
+                            className="tw-w-full"
+                            src={
+                                frontmatter.heroImage
+                                    ? frontmatter.heroImage
+                                    : 'https://storage.googleapis.com/sourcegraph-assets/sourcegraph-social-image.png'
+                            }
+                            alt={frontmatter.title}
+                        />
+                    </Link>
                 </div>
             </div>
         )}

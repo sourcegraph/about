@@ -18,8 +18,8 @@ const ContactPage: NextPage<ContactPageProps> = ({ title, description, masterFor
     >
         <div className="tw-bg-white tw-text-black">
             <div className="tw-px-8 tw-py-8 xl:tw-container tw-mx-auto">
-                <div className="row">
-                    <div className="col-md-6">
+                <div className="tw-grid tw-gap-md tw-grid-cols-1 md:tw-grid-cols-2">
+                    <div>
                         <h1>{title}</h1>
                         <h3 className="tw-font-normal">{description}</h3>
 
@@ -28,7 +28,7 @@ const ContactPage: NextPage<ContactPageProps> = ({ title, description, masterFor
                         </div>
                     </div>
 
-                    <div className="col-md-6">
+                    <div>
                         <CustomerLogos />
                     </div>
                 </div>

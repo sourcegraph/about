@@ -46,9 +46,9 @@ const UseCases: React.FunctionComponent = () => (
         }}
         hero={
             <Background variant="lightNebulousAurora">
-                <div className="tw-container tw-mx-auto">
-                    <div className="row tw-items-center">
-                        <div className="tw-mt-16 col-lg-7 mb-lg-6 md:tw-pr-12">
+                <div className="tw-container tw-mx-auto tw-py-16 tw-px-8">
+                    <div className="tw-grid tw-gap-lg tw-grid-cols-1 lg:tw-grid-cols-2">
+                        <div>
                             <h1 className="tw-mb-0">Our customers move faster with Sourcegraph</h1>
                             <p className="tw-my-8">
                                 Companies of all sizes and in all industries use Sourcegraph's code intelligence
@@ -56,8 +56,8 @@ const UseCases: React.FunctionComponent = () => (
                             </p>
                         </div>
 
-                        <div className="tw-mb-16 tw-pt-sm col-lg-5 mt-lg-6">
-                            <h4 className="tw-pb-xxs tw-text-xl">See how customers use Sourcegraph to...</h4>
+                        <div className="tw-max-w-xl">
+                            <h4 className="tw-mt-4 tw-pb-xxs tw-text-xl">See how customers use Sourcegraph to...</h4>
 
                             <ul className="tw-list-none tw-ml-0">
                                 {features.map((feature: { id: string; description: string }) => (

@@ -25,8 +25,8 @@ export const CaseStudy: FunctionComponent = () => {
                 }}
             >
                 <ContentSection background="white" slimWidth={true}>
-                    <div className="row">
-                        <div className="col">
+                    <div className="tw-grid tw-gap-md tw-grid-cols-1 lg:tw-grid-cols-2">
+                        <div>
                             <h3 className="tw-pb-1">Before Sourcegraph</h3>
                             <ul>
                                 <li>
@@ -47,12 +47,12 @@ export const CaseStudy: FunctionComponent = () => {
                             </ul>
                         </div>
 
-                        <div className="col">
+                        <div>
                             <table>
                                 <tbody>
                                     <tr>
                                         <th className="bg-light">Languages</th>
-                                        <td>C++, Javascript, and Python</td>
+                                        <td>C++, JavaScript, and Python</td>
                                     </tr>
                                     <tr>
                                         <th className="bg-light">Developers</th>

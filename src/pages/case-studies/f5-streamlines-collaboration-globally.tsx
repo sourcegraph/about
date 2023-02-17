@@ -21,7 +21,7 @@ export const CaseStudy: FunctionComponent = () => (
                 image: '/case-studies/satish-surapaneni-f5.jpg',
             }}
         >
-            <ContentSection background="white" slimWidth={true} className="tw-col-md-6 tw-pb-md">
+            <ContentSection background="white" slimWidth={true} className="tw-pb-md">
                 <p>
                     F5 focuses on the development, delivery, security, performance, and availability of web applications
                     across any multi-cloud environment. The team behind its next-gen software infrastructure project

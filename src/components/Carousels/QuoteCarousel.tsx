@@ -37,7 +37,7 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items }) 
         >
             {items.map(item => (
                 <Carousel.Item key={item.quote}>
-                    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center tw-mx-auto col-lg-8 col-12 md:tw-min-h-[550px]">
+                    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center tw-mx-auto md:tw-min-h-[550px]">
                         <Blockquote
                             key={item.quote}
                             quote={item.quote}

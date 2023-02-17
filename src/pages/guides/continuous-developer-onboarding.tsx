@@ -22,7 +22,7 @@ export const Guide: FunctionComponent = () => (
             formLabel="Download the guide"
             resource="/guides/sg-continuous-developer-onboarding.pdf"
             description={
-                <section className="col-md-6 col-12 lg:tw-pr-3xl">
+                <section>
                     <p>
                         Companies often define developer onboarding as a process exclusive to new hires. But developer
                         onboarding continues far past a developer's first few months. Engineers want to explore new

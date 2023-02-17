@@ -77,8 +77,8 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                 <div
                     className={
                         carouselHook.autoAdvance
-                            ? 'lg:tw-flex tw-flex-col tw-justify-between tw-hidden col-md-2 tw-m-0 tw-px-0 col-lg-5'
-                            : 'lg:tw-flex tw-hidden lg:tw-ml-24 col-lg-4 tw-h-[550px]'
+                            ? 'lg:tw-flex tw-flex-col tw-justify-between tw-hidden tw-m-0 tw-px-0'
+                            : 'lg:tw-flex tw-hidden lg:tw-ml-24 tw-h-[550px]'
                     }
                 >
                     <ArrowUpIcon
@@ -134,7 +134,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                 {/* Carousel Item */}
                 <div
                     className={classNames(
-                        'tw-relative col-lg-5 col-md-10 col-sm-12 tw-p-6 tw-py-8 tw-flex tw-items-center lg:tw-justify-start tw-justify-center',
+                        'tw-relative tw-p-6 tw-py-8 tw-flex tw-items-center lg:tw-justify-start tw-justify-center',
                         hasImages
                             ? 'tw-min-h-[500px]'
                             : animateTransition && !isMdOrDown

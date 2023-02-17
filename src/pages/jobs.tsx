@@ -195,15 +195,11 @@ const CareersPage: FunctionComponent = () => {
     return (
         <Layout className="jobs-page" headerColorTheme="white">
             <ContentSection background="white">
-                <div className="row">
-                    <div className="col-lg-10">
-                        <h1 className="tw-mb-xs">Let's build the future together.</h1>
-                        <h3>
-                            We're developing the world's most advanced code search navigation platform with brilliant
-                            dreamers around the globe.
-                        </h3>
-                    </div>
-                </div>
+                <h1 className="tw-mb-xs">Let's build the future together.</h1>
+                <h3>
+                    We're developing the world's most advanced code search navigation platform with brilliant dreamers
+                    around the globe.
+                </h3>
                 <a
                     className="tw-mt-6 btn btn-primary"
                     href="https://grnh.se/c685479c4us"
@@ -238,8 +234,8 @@ const CareersPage: FunctionComponent = () => {
                         <h2 className="tw-mx-auto tw-text-center tw-max-w-2xl tw-mb-6">
                             Happy, healthy, and always in the flow.
                         </h2>
-                        <p className="tw-mx-auto tw-text-center col-lg-6">
-                            Our Teammates are our most valuable resource. That's why we provide total rewards that are
+                        <p className="tw-mx-auto tw-text-center">
+                            Our teammates are our most valuable resource. That's why we provide total rewards that are
                             highly competitive and allow you to thrive both personally and professionally.
                         </p>
                         <p className="tw-mt-6 tw-text-center">
@@ -359,7 +355,7 @@ const CareersPage: FunctionComponent = () => {
                     <Carousel.Item className={item.className} key={item.className}>
                         <div className="tw-flex tw-flex-col md:tw-flex-row tw-py-5xl tw-px-6 tw-max-w-screen-xl tw-mx-auto tw-items-center">
                             <h2 className="tw-mb-6">{item.text}</h2>
-                            <div className="col-lg-6 tw-max-h-[600px] tw-flex tw-justify-center">{item.img}</div>
+                            <div className="tw-max-h-[600px] tw-flex tw-justify-center">{item.img}</div>
                         </div>
                     </Carousel.Item>
                 ))}
@@ -398,7 +394,7 @@ const CareersPage: FunctionComponent = () => {
                             Certification&trade; proves it.
                         </p>
                     </div>
-                    <div className="col-lg-6 tw-max-h-[600px] tw-flex tw-justify-center">
+                    <div className="tw-max-h-[600px] tw-flex tw-justify-center">
                         <img
                             className="tw-w-full tw-max-w-[450px]"
                             src="/careers/great-place-to-work.png"
@@ -411,13 +407,11 @@ const CareersPage: FunctionComponent = () => {
             <ContentSection background="white">
                 <div className="tw-flex tw-flex-col tw-items-center tw-text-center">
                     <div>
-                        <div className="col-lg-12">
-                            <h2 className="tw-mb-xs">What you seek is seeking you</h2>
-                            <p>
-                                We're looking forward to reminding you that "you're on mute"{' '}
-                                <img src="../SmileyWink.svg" alt="Smiling winky face emoji" className="tw-inline" />
-                            </p>
-                        </div>
+                        <h2 className="tw-mb-xs">What you seek is seeking you</h2>
+                        <p>
+                            We're looking forward to reminding you that "you're on mute"{' '}
+                            <img src="../SmileyWink.svg" alt="Smiling winky face emoji" className="tw-inline" />
+                        </p>
                     </div>
 
                     <a

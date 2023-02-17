@@ -66,7 +66,7 @@ const Webinar: FunctionComponent = () => {
                     })
                 }}
                 description={
-                    <section className="col-md-6 col-12 lg:tw-pr-3xl">
+                    <section>
                         <p>
                             For Nutanix, when 20,000+ of the world's most advanced data centers rely on your company's
                             software, any security vulnerability is a concern. But when the Log4j vulnerability hit,
@@ -103,7 +103,7 @@ const Webinar: FunctionComponent = () => {
                         <h1 className="tw-text-center">Interesting in learning more?</h1>
                         <Link
                             href="/case-studies/nutanix-fixed-log4j-with-sourcegraph"
-                            className="tw-mt-6 btn btn-primary col-12 col-md-5 col-xl-3"
+                            className="tw-mt-6 btn btn-primary"
                             title="Read the Nutanix Case Study"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.body}

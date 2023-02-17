@@ -185,7 +185,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection background="white">
-            <h2 className="tw-px-0 tw-pb-md col-12 col-lg-6">Sourcegraph helps enterprise development teams...</h2>
+            <h2 className="tw-px-0 tw-pb-md">Sourcegraph helps enterprise development teams...</h2>
 
             <TwoColumnSection
                 centerContent={true}

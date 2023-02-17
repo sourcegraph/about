@@ -14,8 +14,8 @@ export const Community: FunctionComponent = () => (
         heroAndHeaderClassName="tw-bg-blue-200"
         hero={
             <div className="tw-container tw-mx-auto tw-pb-sm">
-                <div className="tw-p-8 row">
-                    <div className="col-lg-6">
+                <div className="tw-p-8 tw-grid tw-gap-lg tw-grid-cols-1 lg:tw-grid-cols-2">
+                    <div>
                         <div className="text-uppercase">Join us</div>
                         <h1 className="tw-mb-0">Welcome to the Sourcegraph Community</h1>
                         <p className="tw-my-8">
@@ -35,7 +35,7 @@ export const Community: FunctionComponent = () => (
                             Join our Discord
                         </a>
                     </div>
-                    <div className="col-lg-6">
+                    <div>
                         <img
                             src="/community/hero_illustration.svg"
                             alt="Sourcegraph Community"

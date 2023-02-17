@@ -18,6 +18,7 @@ import {
     TwoColumnSection,
 } from '../../components'
 import { StandardCallToAction } from '../../components/cta/StandardCallToAction'
+import { UseCasePageCallToAction } from '../../components/cta/UseCasePageCallToAction'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
@@ -273,38 +274,10 @@ const CodeReusePage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="tw-mx-6 row tw-flex tw-flex-col lg:tw-mx-0 tw-text-center">
-                <div className="tw-mb-8 tw-mx-auto tw-flex tw-flex-col tw-text-center tw-max-w-[600px]">
-                    <h2 className="">Get started with Sourcegraph</h2>
-                    <p>
-                        Make it easier to discover trustworthy code for reuse so your teams can spend more time solving
-                        new problems and less time rewriting code.
-                    </p>
-                </div>
-                <div className="tw-px-0 tw-text-center col-12">
-                    <a
-                        href="https://signup.sourcegraph.com"
-                        className="btn btn-primary tw-max-w-[350px] tw-w-full"
-                        title="Start for free"
-                        data-button-style={buttonStyle.outline}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Start for free
-                    </a>
-                    <Link
-                        href="/use-cases"
-                        className="tw-mt-6 tw-flex tw-justify-center "
-                        title="Explore other use cases"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Explore other use cases
-                    </Link>
-                </div>
-            </div>
-
+            <UseCasePageCallToAction
+                text="Make it easier to discover trustworthy code for reuse so your teams can spend more time solving new problems and less time rewriting code."
+                buttonLocation={buttonLocation.body}
+            />
             <div className="tw-mt-4xl">
                 <CustomerLogos />
             </div>

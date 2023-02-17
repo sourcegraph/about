@@ -42,8 +42,8 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
         <div className={`${kebabCase(customer)}-${className} ${className}`}>
             <CaseStudyJumbotron className="tw-mb-8 tw-pb-12" customer={customer} logo={logo}>
                 {heroImage && (
-                    <div className="case-studies__quote row tw-pt-xs">
-                        <div className="col-lg-3">
+                    <div className="case-studies__quote tw-grid tw-gap-md tw-grid-cols-1 lg:tw-grid-cols-4 tw-pt-xs">
+                        <div>
                             <a
                                 href={heroLink}
                                 rel="nofollow"
@@ -55,7 +55,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                                 <img className="tw-mx-auto tw-block" src={heroImage} alt={customer} />
                             </a>
                         </div>
-                        <div className="col-lg-9">
+                        <div className="lg:tw-col-span-3">
                             {quote && (
                                 <div className="tw-text-left">
                                     <p>{quote.text}</p>
@@ -67,9 +67,9 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                 )}
                 {quote && !heroImage && (
                     <div className="tw-container tw-pt-xs">
-                        <div className="case-studies__quote row tw-justify-center">
+                        <div className="case-studies__quote tw-grid tw-gap-md tw-grid-cols-1 tw-justify-center">
                             {quote.image && (
-                                <div className="col-12 col-lg-9">
+                                <div>
                                     <img
                                         className="tw-mb-4 tw-rounded-full tw-mx-auto tw-block"
                                         src={quote.image}
@@ -77,7 +77,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                                     />
                                 </div>
                             )}
-                            <div className="col-12 col-lg-9">
+                            <div>
                                 <blockquote className="blockquote">
                                     <p>{quote.text}</p>
                                     <footer className="tw-mt-1 blockquote-footer">{quote.author}</footer>

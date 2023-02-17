@@ -18,15 +18,15 @@ const Demo: FunctionComponent = () => (
         }
     >
         <div className="tw-container tw-mx-auto tw-pt-xl">
-            <div className="row">
-                <div className="tw-mt-2 col-lg-6 tw-pr-md">
+            <div className="tw-grid tw-gap-md tw-grid-cols-1 lg:tw-grid-cols-2">
+                <div>
                     <p className="tw-mb-8">
                         Want to see Sourcegraph in action and speak with a product expert? Fill out the form below, and
                         we'll be in touch.
                     </p>
                     <HubSpotForm masterFormName="contactMulti" chiliPiper={true} />
                 </div>
-                <div className="col-lg-6">
+                <div>
                     <DemoVideo video="homepage-demo-202301" className="tw-my-6" />
                 </div>
             </div>

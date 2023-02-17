@@ -20,7 +20,7 @@ export const CaseStudy: FunctionComponent = () => (
                 author: 'François Jehl, Senior Engineering Manager, Criteo',
             }}
         >
-            <ContentSection background="white" slimWidth={true} className="tw-col-md-6 tw-pb-md">
+            <ContentSection background="white" slimWidth={true} className="tw-pb-md">
                 <p>
                     Founded in France in 2005, Criteo partners with retailers to recommend products to potential
                     customers through ad retargeting. The company has massive volumes of data stored in its on-premise
@@ -32,29 +32,25 @@ export const CaseStudy: FunctionComponent = () => (
                     work in multiple repositories, this small-scale search strategy isn't sufficient and can be a major
                     time sink.
                 </p>
-                <div className="row md:tw-justify-center tw-pt-xs">
-                    <div className="col-md-4">
-                        <figure>
-                            <img
-                                src="/case-studies/francois-jehl-criteo.jpg"
-                                alt="François Jehl, Senior Engineering Manager, Criteo"
-                                title="François Jehl, Senior Engineering Manager, Criteo"
-                                className="tw-w-full tw-rounded-full tw-mx-auto tw-block tw-mb-4"
-                            />
-                            <figcaption>François Jehl, Senior Engineering Manager, Criteo</figcaption>
-                        </figure>
-                    </div>
-                    <div className="col-md-4">
-                        <figure>
-                            <img
-                                src="/case-studies/loic-teikiteetini-vaysse-criteo.jpg"
-                                alt="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
-                                title="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
-                                className="tw-w-full tw-rounded-full tw-mx-auto tw-block tw-mb-4"
-                            />
-                            <figcaption>Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo</figcaption>
-                        </figure>
-                    </div>
+                <div className="tw-grid tw-gap-lg tw-grid-cols-1 md:tw-grid-cols-2 tw-justify-center tw-text-center tw-pt-xs">
+                    <figure>
+                        <img
+                            src="/case-studies/francois-jehl-criteo.jpg"
+                            alt="François Jehl, Senior Engineering Manager, Criteo"
+                            title="François Jehl, Senior Engineering Manager, Criteo"
+                            className="tw-w-full tw-rounded-full tw-mx-auto tw-block tw-mb-4 tw-max-w-[200px]"
+                        />
+                        <figcaption>François Jehl, Senior Engineering Manager, Criteo</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="/case-studies/loic-teikiteetini-vaysse-criteo.jpg"
+                            alt="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
+                            title="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
+                            className="tw-w-full tw-rounded-full tw-mx-auto tw-block tw-mb-4 tw-max-w-[200px]"
+                        />
+                        <figcaption>Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo</figcaption>
+                    </figure>
                 </div>
                 <Blockquote
                     quote="Before Sourcegraph, we were struggling to search code in an accurate and timely manner. The legacy text-based search we relied on had security issues, and its performance was poor in terms of the quality of searches and response times."
