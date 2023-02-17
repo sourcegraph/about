@@ -47,35 +47,6 @@ export const Community: FunctionComponent = () => (
             </div>
         }
     >
-        <ContentSection>
-            <div className="row">
-                <div className="col-lg-6">
-                    <h2 className="mt-5 mb-3">DM us on Discord. We're here.</h2>
-                    What you seek is seeking you — come, chat and collaborate with inspiring engineers like you.
-                    <ul className="tw-my-3">
-                        <li className="mt-2">Ask questions - any questions: what is the best sit-stand desk?</li>
-                        <li className="mt-2">
-                            Reach out to the community, discover new ideas &#38; seek or give mentorship
-                        </li>
-                        <li className="mt-2">Share the road less traveled so that everyone can learn</li>
-                    </ul>
-                    <a
-                        className="btn btn-primary"
-                        href="https://discord.gg/rDPqBejz93"
-                        title="Join us on Discord"
-                        data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Join us on Discord
-                    </a>
-                </div>
-                <div className="col-lg-5">
-                    <img className="mt-6 w-100" src="/community/SG_DM_us_on_slack.png" alt="DM us on Discord!" />
-                </div>
-            </div>
-        </ContentSection>
-
         <ContentSection background="white">
             <h2 className="mb-5 tw-text-center">What's next?</h2>
             <Tabs
@@ -91,38 +62,17 @@ export const Community: FunctionComponent = () => (
                                 <ul>
                                     <li>
                                         <a
-                                            href="https://www.gophercon.com/"
-                                            title="GopherCon 2022"
+                                            href="https://us.pycon.org/2023/"
+                                            title="Pycon 2023"
                                             data-button-style={buttonStyle.text}
                                             data-button-location={buttonLocation.body}
                                             data-button-type="cta"
                                         >
-                                            GopherCon 2022
+                                            Pycon 2023 · Salt Lake City, Utah
                                         </a>{' '}
-                                        - 10/6 - 10/8
+                                        - April 19-27
                                     </li>
                                 </ul>
-                            </div>
-                        ),
-                    },
-                    {
-                        title: 'Dev Tool Time',
-                        content: (
-                            <div className="tw-max-w-xl tw-m-auto">
-                                <YouTube title="Dev Tool Time" id="QNYoOCLocAI" />
-                                <p className="tw-pt-xs">
-                                    Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
-                                    <a
-                                        href="https://srcgr.ph/dev-tool-time-playlist"
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.body}
-                                        data-button-type="cta"
-                                        title="YouTube Channel"
-                                    >
-                                        YouTube channel
-                                    </a>{' '}
-                                    and subscribe to keep up with new episodes.
-                                </p>
                             </div>
                         ),
                     },
@@ -130,7 +80,7 @@ export const Community: FunctionComponent = () => (
                         title: 'Sourcegraph Podcast',
                         content: (
                             <div className="tw-max-w-xl tw-m-auto">
-                                <YouTube title="Sourcegraph Podcast" id="VgVDMd2VlaU" />
+                                <YouTube title="Sourcegraph Podcast" id="ZLtqHFxEDm8" />
                                 <p className="tw-pt-xs">
                                     <strong>Subscribe:</strong>&nbsp;
                                     <a
@@ -188,6 +138,35 @@ export const Community: FunctionComponent = () => (
                     },
                 ]}
             />
+        </ContentSection>
+        
+        <ContentSection>
+            <div className="row">
+                <div className="col-lg-6">
+                    <h2 className="mt-5 mb-3">DM us on Discord. We're here.</h2>
+                    What you seek is seeking you — come, chat and collaborate with inspiring engineers like you.
+                    <ul className="tw-my-3">
+                        <li className="mt-2">Ask questions - any questions: what is the best sit-stand desk?</li>
+                        <li className="mt-2">
+                            Reach out to the community, discover new ideas &#38; seek or give mentorship
+                        </li>
+                        <li className="mt-2">Share the road less traveled so that everyone can learn</li>
+                    </ul>
+                    <a
+                        className="btn btn-primary"
+                        href="https://discord.gg/rDPqBejz93"
+                        title="Join us on Discord"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        Join us on Discord
+                    </a>
+                </div>
+                <div className="col-lg-5">
+                    <img className="mt-6 w-100" src="/community/SG_DM_us_on_slack.png" alt="DM us on Discord!" />
+                </div>
+            </div>
         </ContentSection>
 
         <ContentSection>
