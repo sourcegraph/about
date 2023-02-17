@@ -106,27 +106,6 @@ export const Community: FunctionComponent = () => (
                         ),
                     },
                     {
-                        title: 'Dev Tool Time',
-                        content: (
-                            <div className="tw-max-w-xl tw-m-auto">
-                                <YouTube title="Dev Tool Time" id="QNYoOCLocAI" />
-                                <p className="tw-pt-xs">
-                                    Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
-                                    <a
-                                        href="https://srcgr.ph/dev-tool-time-playlist"
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.body}
-                                        data-button-type="cta"
-                                        title="YouTube Channel"
-                                    >
-                                        YouTube channel
-                                    </a>{' '}
-                                    and subscribe to keep up with new episodes.
-                                </p>
-                            </div>
-                        ),
-                    },
-                    {
                         title: 'Sourcegraph Podcast',
                         content: (
                             <div className="tw-max-w-xl tw-m-auto">
