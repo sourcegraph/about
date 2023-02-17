@@ -3,8 +3,8 @@ import { FunctionComponent, ReactNode } from 'react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
-import Footer from './Footer'
-import { Header } from './Header/Header'
+import { Footer } from './Footer'
+import { Header, HeaderColorTheme } from './Header/Header'
 import { navLinks } from './navLinks'
 
 interface LayoutProps {
@@ -23,13 +23,14 @@ interface LayoutProps {
 
     hero?: ReactNode
     heroAndHeaderClassName?: string
+    headerColorTheme?: HeaderColorTheme
 
     className?: string
     hideFooter?: boolean
     hideHeader?: boolean
 }
 
-export const Layout: FunctionComponent<LayoutProps> = props => {
+export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, ...props }) => {
     const router = useRouter()
     const { pathname, asPath } = router
 
@@ -106,7 +107,12 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
 
             {!props.hideHeader && (
                 <div className={props.heroAndHeaderClassName}>
-                    <Header minimal={props.minimal} className={props.className} navLinks={navLinks} />
+                    <Header
+                        minimal={props.minimal}
+                        className={props.className}
+                        colorTheme={headerColorTheme}
+                        navLinks={navLinks}
+                    />
 
                     {props.hero}
                 </div>
@@ -114,7 +120,13 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
 
             <section className="tw-flex-1">{props.children}</section>
 
-            {!props.hideFooter && <Footer className={`${props.className || ''}`} minimal={props.minimal} />}
+            {!props.hideFooter && (
+                <Footer
+                    className={`${props.className || ''}`}
+                    dark={headerColorTheme === 'dark' || headerColorTheme === 'purple'}
+                    minimal={props.minimal}
+                />
+            )}
         </div>
     )
 }

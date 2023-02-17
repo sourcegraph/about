@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, useMemo } from 'react'
 
 import classNames from 'classnames'
 import Link from 'next/link'
@@ -10,16 +10,14 @@ import { footerLinks, socialLinks, postscriptLinks } from './navLinks'
 
 interface Props {
     minimal?: boolean
+    dark?: boolean
     className?: string
 }
 
-const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
-    const isDarkNav = className?.includes('navbar-dark')
-
+export const Footer: FunctionComponent<Props> = ({ minimal, dark, className }) => {
+    const year = useMemo(() => new Date().getFullYear(), [])
     return (
-        <footer
-            className={classNames(className, { 'tw-pt-16 tw-pb-2': !minimal, 'tw-bg-black tw-text-white': isDarkNav })}
-        >
+        <footer className={classNames(className, { 'tw-pt-16 tw-pb-2': !minimal, 'tw-bg-black tw-text-white': dark })}>
             <div className="tw-max-w-screen-xl tw-mx-auto tw-px-4">
                 {!minimal && (
                     <div className="tw-mb-8 tw-flex tw-flex-col-reverse sm:tw-grid sm:tw-grid-cols-12">
@@ -32,7 +30,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                                 data-button-type="cta"
                             >
                                 <img
-                                    src={isDarkNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
+                                    src={dark ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
                                     alt="Sourcegraph - Code Intelligence Platform"
                                     className="tw-max-w-[264px] tw-w-full tw-h-auto"
                                     draggable={false}
@@ -54,8 +52,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                                             data-button-location={buttonLocation.footer}
                                             data-button-type="cta"
                                             className={classNames('tw-mr-3', {
-                                                'tw-text-gray-300 hover:tw-text-white': isDarkNav,
-                                                'tw-text-gray-400 hover:tw-text-black': !isDarkNav,
+                                                'tw-text-gray-300 hover:tw-text-white': dark,
+                                                'tw-text-gray-400 hover:tw-text-black': !dark,
                                             })}
                                         >
                                             {item.icon}
@@ -84,8 +82,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                                                         data-button-location={buttonLocation.footer}
                                                         data-button-type="cta"
                                                         className={classNames('tw-font-medium', {
-                                                            'tw-text-gray-300': isDarkNav,
-                                                            'tw-text-gray-500': !isDarkNav,
+                                                            'tw-text-gray-300': dark,
+                                                            'tw-text-gray-500': !dark,
                                                         })}
                                                     >
                                                         {item.title}
@@ -98,8 +96,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                                                         data-button-location={buttonLocation.footer}
                                                         data-button-type="cta"
                                                         className={classNames('tw-font-medium', {
-                                                            'tw-text-gray-300': isDarkNav,
-                                                            'tw-text-gray-500': !isDarkNav,
+                                                            'tw-text-gray-300': dark,
+                                                            'tw-text-gray-500': !dark,
                                                         })}
                                                     >
                                                         {item.title}
@@ -116,9 +114,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
 
                 <div className={classNames('tw-text-sm', { 'tw-py-4': minimal, 'tw-pt-sm tw-pb-2': !minimal })}>
                     <ul className="tw-ml-0 tw-list-none">
-                        <li className="tw-text-gray-500 tw-mr-lg sm:tw-inline">
-                            &copy; {new Date().getFullYear()} Sourcegraph, Inc.
-                        </li>
+                        <li className="tw-text-gray-500 tw-mr-lg sm:tw-inline">&copy; {year} Sourcegraph, Inc.</li>
 
                         {postscriptLinks.items.map(item => (
                             <li key={item.title} className="tw-inline-block tw-mt-xxs sm:tw-mt-0">
@@ -126,8 +122,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                                     key={item.title}
                                     href={item.href}
                                     className={classNames('tw-p-0 tw-mr-5', {
-                                        'tw-text-gray-300': isDarkNav,
-                                        'tw-text-gray-500': !isDarkNav,
+                                        'tw-text-gray-300': dark,
+                                        'tw-text-gray-500': !dark,
                                     })}
                                     title={item.title}
                                     data-button-style={buttonStyle.text}
@@ -144,5 +140,3 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
         </footer>
     )
 }
-
-export default Footer

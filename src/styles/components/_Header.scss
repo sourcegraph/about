@@ -28,8 +28,7 @@
     }
 
     &.navbar-dark,
-    &.navbar-purple,
-    &.navbar-transparent {
+    &.navbar-purple {
         .nav .nav-link {
             color: $white;
         }
@@ -87,8 +86,7 @@
         }
     }
     &.navbar-dark .nav-line,
-    &.navbar-purple .nav-line,
-    &.navbar-transparent .nav-line {
+    &.navbar-purple .nav-line {
         background: #fff;
     }
 

@@ -10,7 +10,8 @@ export const CaseStudy: FunctionComponent = () => (
                 'Sourcegraph case study: At Convoy, Sourcegraph is transforming how engineers and data scientists collaborate, resulting in greater efficiency and improved data integrity.',
             image: '/case-studies/convoy2-sourcegraph-case-study-og-embed.jpg',
         }}
-        className="navbar-dark tw-bg-black"
+        className="tw-bg-black"
+        headerColorTheme="dark"
     >
         <CaseStudyLayout
             customer="Convoy"

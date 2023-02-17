@@ -24,7 +24,7 @@ const Home: FunctionComponent = () => (
                 "Big codebases are less painful with Sourcegraph's code intelligence: universal code search+nav and large-scale fixes/refactors.",
         }}
         heroAndHeaderClassName="sg-bg-gradient-purple"
-        className="navbar-transparent tw-text-white"
+        headerColorTheme="purple"
         hero={<HomeHero />}
     >
         <ContentSection background="white">
@@ -68,7 +68,7 @@ const Home: FunctionComponent = () => (
 )
 
 const HomeHero: FunctionComponent = () => (
-    <div>
+    <div className="tw-text-white">
         <div className="tw-px-sm tw-mx-auto tw-pt-md md:tw-pt-2xl tw-text-center">
             <h1 className="tw-text-4xl tw-leading-10 sm:tw-text-6xl md:tw-text-[3.5rem] lg:tw-text-[4rem] lg:tw-leading-[1]">
                 <span className="tw-mb-2 tw-text-transparent sg-bg-gradient-purple-white tw-bg-clip-text">

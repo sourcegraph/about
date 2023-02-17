@@ -9,7 +9,8 @@ export const CaseStudy: FunctionComponent = () => (
             description:
                 'Sourcegraph empowers developers at CERN to reuse existing code and manage mission-critical code changes with ease',
         }}
-        className="navbar-dark tw-bg-black"
+        className="tw-bg-black"
+        headerColorTheme="dark"
     >
         <CaseStudyLayout
             customer="CERN"

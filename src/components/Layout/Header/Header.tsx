@@ -8,23 +8,25 @@ import { NavLink, navLinks } from '../navLinks'
 import { DesktopNav } from './DesktopNav'
 import { MobileNav } from './MobileNav'
 
+export type HeaderColorTheme = 'purple' | 'dark' | 'default'
+
 interface Props {
     minimal?: boolean
+    colorTheme?: HeaderColorTheme
     className?: string
     navLinks: NavLink[]
 }
 
-export const Header: FunctionComponent<Props> = props => {
+export const Header: FunctionComponent<Props> = ({ colorTheme = 'default', ...props }) => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
     const [lastScrollPosition, setLastScrollPosition] = useState<number>(0)
     const [sticky, setSticky] = useState<boolean>(false)
 
-    const isDarkNav = props.className?.includes('navbar-dark')
-    const isPurpleNav = props.className?.includes('navbar-purple')
-    const isTransparentNav = props.className?.includes('navbar-transparent')
+    const isDarkNav = colorTheme === 'dark'
+    const isPurpleNav = colorTheme === 'purple'
 
-    const dark = isDarkNav || isPurpleNav || isTransparentNav
+    const dark = isDarkNav || isPurpleNav
 
     /**
      * This checks the scroll position to see if the viewport has been
@@ -64,9 +66,11 @@ export const Header: FunctionComponent<Props> = props => {
     const navStyle = classNames(
         'header navbar tw-py-4 tw-w-full tw-fixed tw-top-0 tw-right-0 tw-left-0 tw-z-[1030]',
         props.className,
+        isPurpleNav && 'navbar-purple',
+        isDarkNav && 'navbar-dark',
         {
-            'tw-bg-white': !isDarkNav && !isPurpleNav && !isTransparentNav && (sticky || isOpen),
-            'tw-bg-violet-750': (isPurpleNav || isTransparentNav) && (sticky || isOpen),
+            'tw-bg-white': !isDarkNav && !isPurpleNav && (sticky || isOpen),
+            'tw-bg-violet-750': isPurpleNav && (sticky || isOpen),
             'tw-bg-black': isDarkNav && (sticky || isOpen),
         }
     )
@@ -76,11 +80,7 @@ export const Header: FunctionComponent<Props> = props => {
             <div className="xl:tw-container tw-flex tw-w-full tw-mx-auto tw-flex-wrap tw-items-center tw-justify-between tw-px-0">
                 <Navbar.Brand href="/" className="tw-mr-0 header tw-flex">
                     <img
-                        src={
-                            isDarkNav || isPurpleNav || isTransparentNav
-                                ? '/sourcegraph-reverse-logo.svg'
-                                : '/sourcegraph-logo.svg'
-                        }
+                        src={isDarkNav || isPurpleNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
                         width={150}
                         height={26}
                         className="tw-max-w-[150px] tw-w-full"
