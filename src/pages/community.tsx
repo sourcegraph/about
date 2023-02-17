@@ -91,15 +91,15 @@ export const Community: FunctionComponent = () => (
                                 <ul>
                                     <li>
                                         <a
-                                            href="https://www.gophercon.com/"
-                                            title="GopherCon 2022"
+                                            href="https://us.pycon.org/2023/"
+                                            title="Pycon 2023"
                                             data-button-style={buttonStyle.text}
                                             data-button-location={buttonLocation.body}
                                             data-button-type="cta"
                                         >
-                                            GopherCon 2022
+                                            Pycon 2023 · Salt Lake City, Utah
                                         </a>{' '}
-                                        - 10/6 - 10/8
+                                        - April 19-27
                                     </li>
                                 </ul>
                             </div>
