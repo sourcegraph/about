@@ -5,7 +5,7 @@
 .changelog-header {
     font-size: 80%;
     font-weight: normal;
-    color: $secondary;
+    color: var(--sg-color-gray-400);
     text-transform: uppercase;
 }
 

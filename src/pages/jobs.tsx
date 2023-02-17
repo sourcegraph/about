@@ -1,112 +1,11 @@
 import { FunctionComponent } from 'react'
 
-import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-import Carousel from 'react-bootstrap/Carousel'
 
-import { Layout, ContentSection, QuoteCarousel, ThreeUpText } from '../components'
+import { Layout, ContentSection, ThreeUpText } from '../components'
 import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const CareersPage: FunctionComponent = () => {
-    const glassdoorReviewItems = [
-        {
-            header: 'Just interviewed and accepted role / position',
-            quote: 'Transparency and openness are genuine and real differentiators. Highly collaborative and focused exec team.',
-            by: 'Current Employee, Nov 23, 2021 - ',
-            linkText: 'Read full review',
-            link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW55781366.htm',
-        },
-        {
-            header: 'Progressive company that means what they say',
-            quote: 'For the first time ever.. I have no complaints about my place of employment.',
-            by: 'Current Employee, Sep 3, 2021 - ',
-            linkText: 'Read full review',
-            link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW52059760.htm',
-        },
-        {
-            header: 'Fast paced startup that cares',
-            quote: 'Great teams full of extremely smart people. Management that cares about the well being of its employees. Full remote and async culture.',
-            by: 'Current Employee, Feb 4, 2021 - ',
-            linkText: 'Read full review',
-            link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW41989078.htm',
-        },
-        {
-            header: 'Great start to an awesome adventure',
-            quote: 'Professional at a level many pre-IPO companies are not. Really good product that is easy to get behind and support. Dedicated leadership that support all employees. Everyone is motivated and pulling in the same direction.',
-            by: 'Current Employee, Aug 28, 2021 - ',
-            linkText: 'Read full review',
-            link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW51765366.htm',
-        },
-        {
-            header: 'Awesome people, incredible company',
-            quote: 'Competitive pay, smart and awesome management leaders, strong product, and amazing company growth.',
-            by: 'Current Employee, Jul 20, 2021 - ',
-            linkText: 'Read full review',
-            link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW50015620.htm',
-        },
-        {
-            header: 'Sourcegraph is my dream company',
-            quote: "Sourcegraph will make huge impact on the software industry. By improving the productivity of developers, Sourcegraph advances the rate of technological progress enabling us to bring the future sooner. As a software developer, I can't think of a better way to make a positive impact on the world.",
-            by: 'Current Employee, Sep 15, 2016 - ',
-            linkText: 'Read full review',
-            link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW11950185.htm',
-        },
-    ]
-    const cultureItems = [
-        {
-            className: 'sg-bg-gradient-saturn',
-            text: "Just because we're remote doesn't mean we're apart \n#life-at-sourcegraph",
-            img: (
-                <img
-                    className="tw-w-full tw-max-w-[450px]"
-                    src="/careers/culture1.png"
-                    alt="Photograph strip of Sourcegraph team members"
-                />
-            ),
-        },
-        {
-            className: 'sg-bg-gradient-mars',
-            text: (
-                <span>
-                    We're moving <i>fast</i> to create a world in which everyone can code
-                </span>
-            ),
-            img: <img className="tw-w-full tw-max-w-[450px]" src="/careers/culture2.png" alt="Group riding go karts" />,
-        },
-        {
-            className: 'sg-bg-gradient-venus',
-            text: 'Work whenever and wherever \n#life-is-beachy',
-            img: (
-                <img
-                    className="tw-w-full tw-max-w-[450px]"
-                    src="/careers/culture3.png"
-                    alt="Sourcegrapher on a beach"
-                />
-            ),
-        },
-        {
-            className: 'sg-bg-gradient-saturn',
-            text: 'Our pets are Sourcegraph Teammates, too \n#pets-of-sourcegraph',
-            img: (
-                <img
-                    className="tw-w-full tw-max-w-[450px]"
-                    src="/careers/culture4.png"
-                    alt="Black and white cat next to it's doppleganger cat Sourcegraph sticker"
-                />
-            ),
-        },
-        {
-            className: 'sg-bg-gradient-mars',
-            text: 'Creating the next generation of Sourcegraph coders, one baby at a time',
-            img: (
-                <img
-                    className="tw-w-full tw-max-w-[450px]"
-                    src="/careers/culture5.png"
-                    alt="Baby holding a coding babybook"
-                />
-            ),
-        },
-    ]
     const valueItems = [
         {
             value: 'High quality work',
@@ -350,39 +249,19 @@ const CareersPage: FunctionComponent = () => {
                 />
             </ContentSection>
 
-            <Carousel controls={false}>
-                {cultureItems.map(item => (
-                    <Carousel.Item className={item.className} key={item.className}>
-                        <div className="tw-flex tw-flex-col md:tw-flex-row tw-py-5xl tw-px-6 tw-max-w-screen-xl tw-mx-auto tw-items-center">
-                            <h2 className="tw-mb-6">{item.text}</h2>
-                            <div className="tw-max-h-[600px] tw-flex tw-justify-center">{item.img}</div>
-                        </div>
-                    </Carousel.Item>
-                ))}
-            </Carousel>
-
-            <ContentSection>
-                <Carousel
-                    prevIcon={<ArrowLeftIcon color="#808080" />}
-                    prevLabel=""
-                    nextIcon={<ArrowRightIcon color="#808080" />}
-                    nextLabel=""
-                >
+            <ContentSection background="lightNebulousSaturn1">
+                <h2 className="tw-text-center tw-mb-16">We value:</h2>
+                <div className="tw-grid tw-gap-lg tw-grid-cols-2 lg:tw-grid-cols-4 tw-max-w-6xl tw-mx-auto">
                     {valueItems.map(item => (
-                        <Carousel.Item key={item.value}>
-                            <div className="tw-flex tw-flex-col tw-items-center tw-min-h-[550px] tw-py-24">
-                                <h5 className=" text-uppercase">We value:</h5>
-                                <h2 className="">{item.value}</h2>
-                                <p className="tw-text-center col-8">{item.description}</p>
+                        <div key={item.value}>
+                            <div className="tw-flex tw-flex-col tw-items-center tw-min-h-[250px]">
+                                <h4 className="">{item.value}</h4>
+                                <p className="tw-text-center">{item.description}</p>
                                 {item.img}
                             </div>
-                        </Carousel.Item>
+                        </div>
                     ))}
-                </Carousel>
-            </ContentSection>
-
-            <ContentSection parentClassName="sg-bg-gradient-saturn">
-                <QuoteCarousel items={glassdoorReviewItems} />
+                </div>
             </ContentSection>
 
             <ContentSection background="white">
@@ -406,25 +285,17 @@ const CareersPage: FunctionComponent = () => {
 
             <ContentSection background="white">
                 <div className="tw-flex tw-flex-col tw-items-center tw-text-center">
-                    <div>
-                        <h2 className="tw-mb-xs">What you seek is seeking you</h2>
-                        <p>
-                            We're looking forward to reminding you that "you're on mute"{' '}
-                            <img src="../SmileyWink.svg" alt="Smiling winky face emoji" className="tw-inline" />
-                        </p>
-                    </div>
-
                     <a
                         className="tw-my-2 btn btn-primary"
                         href="https://grnh.se/c685479c4us"
-                        title="Explore our jobs"
+                        title="Explore our open roles"
                         target="_blank"
                         rel="nofollow noreferrer"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        Explore our jobs
+                        Explore our open roles
                         <ArrowRightIcon className="tw-ml-4 tw-inline" />
                     </a>
                 </div>
