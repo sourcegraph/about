@@ -137,6 +137,10 @@ export const footerLinks: NavLink[] = [
                 title: 'Sourcegraph overview (PDF)',
                 href: '/handouts/Sourcegraph-Overview.pdf',
             },
+            {
+                title: 'Accessibility',
+                href: '/accessibility'
+            }
         ],
     },
     {
