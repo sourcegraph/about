@@ -17,14 +17,6 @@
         &.btn-primary {
             color: $white;
         }
-        &.btn-outline-primary {
-            color: $blurple;
-
-            &:hover {
-                background-color: $blurple;
-                color: $white;
-            }
-        }
     }
 
     &.navbar-dark,

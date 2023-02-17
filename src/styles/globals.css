@@ -44,7 +44,7 @@
     }
     /* Standalone Links (Usually CTAs) */
     a {
-        @apply tw-text-blurple-400 tw-font-semibold;
+        @apply tw-text-blurple-400;
     }
 
     /* Lists */
@@ -80,6 +80,33 @@
        * sticky nav, which is 74px in height.
        */
         scroll-margin-top: 74px;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply tw-rounded tw-py-2 tw-px-6 tw-inline-block;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.2s;
+        transition-property: background, color;
+    }
+    .btn:not(.btn-link) {
+        @apply tw-font-semibold;
+    }
+
+    .btn-primary {
+        @apply tw-bg-violet-400 hover:tw-bg-violet-500 tw-text-white;
+    }
+    .btn-outline-primary {
+        @apply tw-border-1 tw-border-violet-400 tw-text-violet-400 tw-bg-white hover:tw-bg-violet-400 hover:tw-text-white;
+    }
+
+    .btn-secondary {
+        @apply tw-bg-gray-400 hover:tw-bg-gray-500 tw-text-white;
+    }
+
+    .btn-link {
+        @apply tw-text-violet-400 hover:tw-text-violet-500 hover:tw-underline;
     }
 }
 

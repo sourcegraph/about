@@ -13,14 +13,6 @@
 @import 'node_modules/bootstrap/scss/functions';
 @import 'node_modules/bootstrap/scss/mixins';
 
-/* ==================== Bootstrap Colors ==================== */
-$blurple: #5033e1;
-$violet-400: #A112FF;
-$theme-colors: (
-    'primary': $violet-400,
-    'blurple': $blurple,
-);
-
 /* ==================== Bootstrap Overrides ==================== */
 
 $input-btn-padding-y: 0.55rem;
@@ -29,7 +21,6 @@ $input-btn-padding-y: 0.55rem;
 
 $navbar-nav-link-padding-x: 0.75rem;
 $navbar-light-color: $dark;
-$navbar-light-hover-color: $blurple;
 
 $btn-padding-x: 1.5rem;
 $btn-font-weight: 600;
@@ -38,7 +29,6 @@ $btn-font-weight: 600;
 /* ==================== Bootstrap Components ==================== */
 @import 'node_modules/bootstrap/scss/root';
 @import 'node_modules/bootstrap/scss/grid';
-@import 'node_modules/bootstrap/scss/buttons';
 @import 'node_modules/bootstrap/scss/nav';
 @import 'node_modules/bootstrap/scss/navbar';
 @import 'node_modules/bootstrap/scss/dropdown';
