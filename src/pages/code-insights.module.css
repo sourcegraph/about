@@ -1,0 +1,77 @@
+/* Icon overrides */
+.container :global(.mdi-icon):global(.icon) {
+    border-radius: 45%;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.container :global(.tab-carousel) {
+    transition: background-color 0.5s ease;
+}
+
+.icon-subheader {
+    padding: 0 250px;
+}
+@media only screen and (max-width: 768px) {
+    .icon-subheader {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .icon-paragraph {
+        font-size: 14px;
+    }
+}
+
+.container :global(.custom-carousel) {
+    transition: background-color 0.5s ease;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+    .container :global(.custom-carousel) {
+        flex-direction: row;
+    }
+}
+
+.container :global(.custom-carousel) :global(.custom-carousel-item) {
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0 10px 10px;
+    font-size: 18px;
+    float: left;
+    width: 100%;
+}
+
+.container :global(.custom-carousel) :global(.custom-carousel-item):global(.active) {
+    font-weight: 600 !important;
+    display: block;
+}
+@media only screen and (max-width: 992px) {
+    .container :global(.custom-carousel) :global(.custom-carousel-item):global(.active) {
+        margin: 20px 20px 0 20px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container :global(.custom-carousel) :global(.custom-carousel-item) {
+        padding: 0;
+        margin: 20px 0;
+        display: none;
+        line-height: 2.5rem;
+        width: auto;
+    }
+}
+
+.container :global(.custom-carousel) li {
+    margin: 0;
+    cursor: default;
+}
+
+.container :global(.custom-carousel) p {
+    font-size: 1.125em;
+    line-height: 1.75rem;
+}

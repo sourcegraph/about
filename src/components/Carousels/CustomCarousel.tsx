@@ -49,7 +49,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
 
             <div
                 className={classNames(
-                    'tw-flex tw-flex-wrap tw-items-center',
+                    'tw-grid tw-gap-md tw-grid-cols-1 lg:tw-grid-cols-2 tw-items-center',
                     autoAdvance ? 'tw-justify-center' : 'lg:tw-flex-row tw-flex-col tw-py-32'
                 )}
             >
@@ -78,7 +78,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                     className={
                         carouselHook.autoAdvance
                             ? 'lg:tw-flex tw-flex-col tw-justify-between tw-hidden tw-m-0 tw-px-0'
-                            : 'lg:tw-flex tw-hidden lg:tw-ml-24 tw-h-[550px]'
+                            : 'lg:tw-flex tw-hidden tw-h-[550px]'
                     }
                 >
                     <ArrowUpIcon
@@ -134,7 +134,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                 {/* Carousel Item */}
                 <div
                     className={classNames(
-                        'tw-relative tw-p-6 tw-py-8 tw-flex tw-items-center lg:tw-justify-start tw-justify-center',
+                        'tw-relative tw-flex tw-items-center lg:tw-justify-start tw-justify-center',
                         hasImages
                             ? 'tw-min-h-[500px]'
                             : animateTransition && !isMdOrDown
@@ -146,6 +146,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                         <div
                             key={item.title}
                             className={classNames(
+                                'tw-overflow-hidden',
                                 animateTransition && 'tw-absolute',
                                 animateTransition
                                     ? item === carouselHook.carouselItems.currentItem
@@ -154,7 +155,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                                     : '',
                                 !animateTransition
                                     ? item === carouselHook.carouselItems.currentItem
-                                        ? 'tw-block'
+                                        ? 'tw-block tw-w-full'
                                         : 'tw-hidden'
                                     : ''
                             )}

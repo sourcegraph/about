@@ -7,6 +7,8 @@ import { Layout, BlogHeader, BLOG_TYPE_TO_INFO } from '../../components'
 import { Post, POST_TYPE_TO_COMPONENT, postType, urlToPost } from '../../interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '../../lib'
 
+import styles from './PodcastPost.module.css'
+
 export interface PageProps {
     post: Post
     content: MDXRemoteSerializeResult
@@ -41,15 +43,15 @@ const PodcastPage: NextPage<PageProps> = ({ post, content }) => {
                 <div className="lg:tw-container tw-px-sm tw-mx-auto">
                     <BlogHeader {...podcastInfo} />
                 </div>
-                <div className="post-template tw-mt-8 tw-bg-white">
+                <div className="tw-mt-8 tw-bg-white">
                     <div className="tw-max-w-screen-xl tw-mx-auto">
                         <PostTemplate
                             post={post}
                             content={content}
                             url={urlToPost(post)}
-                            className="post-template__post podcast-post tw-max-w-[750px] tw-mx-auto"
+                            className="tw-max-w-[750px] tw-mx-auto"
                             headerClassName="tw-bg-white tw-border-b-0 tw-text-center tw-pt-md"
-                            contentClassName="podcast-post__body"
+                            contentClassName={`${styles.body} tw-break-words`}
                         />
                     </div>
                 </div>

@@ -41,7 +41,7 @@ const About: FunctionComponent = () => (
                 'The pace at which humans can write code is the main thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer.',
         }}
     >
-        <div className="tw-bg-white content-page tw-text-black">
+        <div className="tw-bg-white tw-text-black">
             <ContentSection>
                 <h1>About Sourcegraph</h1>
                 <p className="tw-text-xl tw-max-w-4xl tw-mt-6">

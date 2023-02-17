@@ -6,6 +6,7 @@ import { ContentSection, CtaSection } from '..'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 import { CaseStudyJumbotron } from './CaseStudyJumbotron'
+import styles from './CaseStudyLayout.module.css'
 
 interface Quote {
     text: string
@@ -42,7 +43,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
         <div className={`${kebabCase(customer)}-${className} ${className}`}>
             <CaseStudyJumbotron className="tw-mb-8 tw-pb-12" customer={customer} logo={logo}>
                 {heroImage && (
-                    <div className="case-studies__quote tw-grid tw-gap-md tw-grid-cols-1 lg:tw-grid-cols-4 tw-pt-xs">
+                    <div className={`${styles.quote} tw-grid tw-gap-md tw-grid-cols-1 lg:tw-grid-cols-4 tw-pt-xs`}>
                         <div>
                             <a
                                 href={heroLink}
@@ -67,7 +68,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                 )}
                 {quote && !heroImage && (
                     <div className="tw-container tw-pt-xs">
-                        <div className="case-studies__quote tw-grid tw-gap-md tw-grid-cols-1 tw-justify-center">
+                        <div className={`${styles.quote} tw-grid tw-gap-md tw-grid-cols-1 tw-justify-center`}>
                             {quote.image && (
                                 <div>
                                     <img

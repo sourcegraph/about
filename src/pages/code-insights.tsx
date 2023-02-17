@@ -34,6 +34,8 @@ import { CodeInsightExampleType } from '../components/CodeInsights/types'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { buttonStyle, buttonLocation } from '../data/tracking'
 
+import styles from './code-insights.module.css'
+
 const items = [
     {
         title: 'Track migrations, adoption, and deprecations',
@@ -315,7 +317,7 @@ const CodeInsightsPage: FunctionComponent = () => (
             description:
                 'Draw insights from your codebase about how different initiatives are tracking over time. Code Insights is now generally available for teams of all sizes.',
         }}
-        className="code-insights-page"
+        className={styles.container}
         hero={
             <Hero
                 variant="lightNebulousVenus2"
@@ -379,7 +381,7 @@ const CodeInsightsPage: FunctionComponent = () => (
         <ContentSection>
             <div className="tw-flex tw-flex-wrap">
                 <h2 className="tw-mb-4 tw-text-center tw-w-full">Engineering leadership with superpowers</h2>
-                <p className="tw-text-center icon-subheader tw-w-full">
+                <p className={`tw-text-center ${styles['icon-subheader']} tw-w-full`}>
                     Code Insights provides reliable real-time reporting directly from the codebase, making engineering
                     leaders and their teams more effective.
                 </p>
@@ -390,7 +392,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                         </div>
                         <div className="tw-flex tw-flex-col">
                             <h5>Set goals</h5>
-                            <p className="icon-paragraph">Measure goals and progress in your codebase</p>
+                            <p className={`${styles['icon-paragraph']}`}>Measure goals and progress in your codebase</p>
                         </div>
                     </div>
                     <div className="tw-py-4 tw-flex lg:tw-py-md">
@@ -399,7 +401,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                         </div>
                         <div className="tw-flex tw-flex-col">
                             <h5>Plan proactively</h5>
-                            <p className="icon-paragraph">
+                            <p className={`${styles['icon-paragraph']}`}>
                                 Stay on top of engineering initiatives and catch issues before they escalate
                             </p>
                         </div>
@@ -412,7 +414,9 @@ const CodeInsightsPage: FunctionComponent = () => (
                         </div>
                         <div className="tw-flex tw-flex-col">
                             <h5>Track ownership & trends</h5>
-                            <p className="icon-paragraph">Tie trends and metrics to owners on the teams</p>
+                            <p className={`${styles['icon-paragraph']}`}>
+                                Tie trends and metrics to owners on the teams
+                            </p>
                         </div>
                     </div>
                     <div className="tw-py-4 tw-flex lg:tw-py-md">
@@ -421,7 +425,9 @@ const CodeInsightsPage: FunctionComponent = () => (
                         </div>
                         <div className="tw-flex tw-flex-col">
                             <h5>Celebrate progress</h5>
-                            <p className="icon-paragraph">Visualize the momentum and motivate your teammates</p>
+                            <p className={`${styles['icon-paragraph']}`}>
+                                Visualize the momentum and motivate your teammates
+                            </p>
                         </div>
                     </div>
                 </div>

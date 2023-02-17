@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
@@ -8,6 +9,8 @@ import { Alert, Badge, Blockquote, Figure, HubSpotForm, TableWrapper, Video, You
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 import { PostComponentProps } from '../../interfaces/posts'
 import { formatDate } from '../../util'
+
+import styles from './PostLayout.module.css'
 
 type PostComponents = import('mdx/types').MDXComponents
 const components = { Alert, Badge, Blockquote, HubSpotForm, Figure, OpenInNewIcon, TableWrapper, Video, YouTube }
@@ -26,7 +29,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
     renderTitleAsLink = false,
     contentClassName = '',
 }) => (
-    <Tag className={`blog-post tw-p-sm ${className}`}>
+    <Tag className={`tw-p-sm ${className}`}>
         <header className={headerClassName}>
             <h2>
                 {renderTitleAsLink === true ? (
@@ -91,7 +94,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
         </header>
 
         {content && (
-            <div className={`blog-post__html ${contentClassName}`}>
+            <div className={classNames('tw-min-h-[60vh]', styles.content, contentClassName)}>
                 <MDXRemote {...content} components={components as PostComponents} />
             </div>
         )}

@@ -6,6 +6,8 @@ import Link from 'next/link'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 import { PostComponentProps } from '../../interfaces/posts'
 
+import styles from './LinkPost.module.css'
+
 interface Props extends PostComponentProps {
     post: PostComponentProps['post']
 }
@@ -33,11 +35,11 @@ export const LinkPost: FunctionComponent<Props> = ({ post, content, url, classNa
     )
 
     return (
-        <Tag className={`link-post ${className}`}>
+        <Tag className={`tw-overflow-hidden ${className}`}>
             <div>
                 {title}
                 {content && (
-                    <div className="link-post__html tw-inline">
+                    <div className={`${styles.html} tw-inline`}>
                         <MDXRemote {...content} />
                     </div>
                 )}

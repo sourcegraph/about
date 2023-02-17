@@ -27,24 +27,7 @@ $btn-font-weight: 600;
 
 
 /* ==================== Bootstrap Components ==================== */
-@import 'node_modules/bootstrap/scss/root';
 @import 'node_modules/bootstrap/scss/nav';
 @import 'node_modules/bootstrap/scss/navbar';
 @import 'node_modules/bootstrap/scss/dropdown';
 @import 'node_modules/bootstrap/scss/carousel';
-
-/* ==================== Components ==================== */
-@import 'components/blog/BlogPost';
-@import 'components/blog/LinkPost';
-@import 'components/blog/PodcastPost';
-@import 'components/blog/PostsList';
-@import 'components/blog/ReleasePost';
-@import 'components/Header';
-@import 'components/TestimonialCarousel';
-@import 'components/HubSpotForms';
-
-/* ==================== Pages ==================== */
-@import 'pages/_case_studies';
-@import 'pages/content';
-@import 'pages/code-insights';
-@import 'templates/PostTemplate';

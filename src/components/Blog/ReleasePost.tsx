@@ -9,6 +9,8 @@ import { buttonStyle, buttonLocation } from '../../data/tracking'
 import { PostComponentProps } from '../../interfaces/posts'
 import { formatDate } from '../../util'
 
+import styles from './ReleasePost.module.css'
+
 type ReleaseComponents = import('mdx/types').MDXComponents
 const components = { Alert, Badge, Figure, OpenInNewIcon, Video, YouTube }
 
@@ -30,30 +32,32 @@ export const ReleasePost: FunctionComponent<Props> = ({
     const body = (
         <>
             {content && (
-                <div className="release-post__body tw-p-sm">
+                <div className={`${styles.body} tw-p-sm`}>
                     <MDXRemote {...content} components={components as ReleaseComponents} />
                 </div>
             )}
 
             {frontmatter.changelogItems?.length ? (
                 <div>
-                    <h3 className="tw-pt-sm tw-pb-xxs tw-m-0 release-post__changelog-header">Changelog highlights</h3>
+                    <h3 className={`tw-pt-sm tw-pb-xxs tw-m-0 ${styles['changelog-header']}`}>Changelog highlights</h3>
 
                     <ol className="tw-border-y tw-border-solid tw-border-gray-200 tw-list-none tw-ml-0">
                         {frontmatter.changelogItems?.map(({ url, category, description }) => (
                             <li key={url} className="tw-bg-white [&:not(:last-child)]:tw-border-b-1 tw-m-0 tw-p-0">
                                 <a
                                     href={url}
-                                    className="release-post__item tw-block md:tw-flex tw-px-xs tw-py-xxs tw-text-black"
+                                    className={`${styles.item} tw-block md:tw-flex tw-px-xs tw-py-xxs tw-text-black`}
                                     title={`${category}: ${description}`}
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <span className="tw-mb-2 release-post__item-category md:tw-mb-0 tw-block md:tw-inline">
+                                    <span
+                                        className={`tw-mb-2 ${styles['item-category']} md:tw-mb-0 tw-block md:tw-inline`}
+                                    >
                                         <Badge text={category} breakWords={false} size="large" color="white-outlined" />
                                     </span>
-                                    <span className="release-post__item-description">{description}</span>
+                                    <span className={styles['item-description']}>{description}</span>
                                 </a>
                             </li>
                         ))}
@@ -99,7 +103,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                         </li>
                     </ul>
 
-                    <div className="release-post__body">
+                    <div className={styles.body}>
                         * Please{' '}
                         <Link
                             href="/demo"
@@ -159,8 +163,8 @@ export const ReleasePost: FunctionComponent<Props> = ({
     )
 
     return (
-        <Tag className={`release-post ${className}`}>
-            <header className={`release-post__header ${headerClassName}`}>
+        <Tag className={className}>
+            <header className={headerClassName}>
                 <h1 className={titleClassName}>
                     {renderTitleAsLink === true ? (
                         <Link
