@@ -44,7 +44,7 @@ const About: FunctionComponent = () => (
         <div className="bg-white text-black">
             <ContentSection>
                 <h1>About Sourcegraph</h1>
-                <p className="text-xl max-w-4xl mt-6">
+                <p className="mt-6 max-w-4xl text-xl">
                     Sourcegraph builds universal code search for every developer and company so they can innovate
                     faster. We help developers and companies with billions of lines of code create the software you use
                     every day.
@@ -154,7 +154,7 @@ const About: FunctionComponent = () => (
                     .
                 </p>
                 <a
-                    className="mt-4 btn btn-primary"
+                    className="btn btn-primary mt-4"
                     href="https://boards.greenhouse.io/sourcegraph91"
                     title="Open roles - we're hiring!"
                     data-button-style={buttonStyle.primary}
@@ -175,14 +175,10 @@ const About: FunctionComponent = () => (
 
             <ContentSection>
                 <h2>Investors</h2>
-                <div className="mx-8 grid gap-lg grid-cols-1 md:grid-cols-3">
+                <div className="mx-8 grid grid-cols-1 gap-lg md:grid-cols-3">
                     {INVESTORS.map(investor => (
                         <div key={investor.image} className="max-w-xs">
-                            <img
-                                src={investor.image}
-                                alt={investor.name}
-                                className="px-2 py-0 mx-0 my-1 w-full"
-                            />
+                            <img src={investor.image} alt={investor.name} className="mx-0 my-1 w-full px-2 py-0" />
                         </div>
                     ))}
                 </div>

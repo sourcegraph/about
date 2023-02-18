@@ -76,19 +76,17 @@ const templates = {
             description: 'Track migration from global CSS to CSS modules.',
             queries: [
                 <>
-                    <span className="text-blue-400">select:</span>file{' '}
-                    <span className="text-blue-400">lang:</span>SCSS <span className="text-blue-400">file:</span>
+                    <span className="text-blue-400">select:</span>file <span className="text-blue-400">lang:</span>SCSS{' '}
+                    <span className="text-blue-400">file:</span>
                     module <span className="text-blue-400">patterntype:</span>regexp{' '}
-                    <span className="text-blue-400">archived:</span>no{' '}
-                    <span className="text-blue-400">fork:</span>no
+                    <span className="text-blue-400">archived:</span>no <span className="text-blue-400">fork:</span>no
                 </>,
                 <>
                     <span className="text-blue-400">type:</span>file <span className="text-blue-400">lang:</span>
                     scss
                     <span className="text-blue-400">-file:</span>module{' '}
                     <span className="text-blue-400">patterntype:</span>regexp{' '}
-                    <span className="text-blue-400">archived:</span>no{' '}
-                    <span className="text-blue-400">fork:</span>no
+                    <span className="text-blue-400">archived:</span>no <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -111,14 +109,12 @@ const templates = {
             description: "What's the status of migrating to React function components from class components?",
             queries: [
                 <>
-                    <span className="text-blue-400">patterntype:</span>regexp
-                    const\s\w+:\s(React\.)?FunctionComponent <span className="text-blue-400">archived:</span>no{' '}
-                    <span className="text-blue-400">fork:</span>no
+                    <span className="text-blue-400">patterntype:</span>regexp const\s\w+:\s(React\.)?FunctionComponent{' '}
+                    <span className="text-blue-400">archived:</span>no <span className="text-blue-400">fork:</span>no
                 </>,
                 <>
                     <span className="text-blue-400">patterntype:</span>regexp extends\s(React\.)?(Pure)?Component{' '}
-                    <span className="text-blue-400">archived:</span>no{' '}
-                    <span className="text-blue-400">fork:</span>no
+                    <span className="text-blue-400">archived:</span>no <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -127,8 +123,7 @@ const templates = {
             description: 'How many repos contain a config or docs file in a specific directory?',
             queries: [
                 <>
-                    <span className="text-blue-400">select:</span>repo{' '}
-                    <span className="text-blue-400">file:</span>
+                    <span className="text-blue-400">select:</span>repo <span className="text-blue-400">file:</span>
                     docs/*/new_config_filename <span className="text-blue-400">archived:</span>no{' '}
                     <span className="text-blue-400">fork:</span>no
                 </>,
@@ -152,8 +147,7 @@ const templates = {
             queries: [
                 <>
                     <span className="text-blue-400">lang:</span>gradle org\.apache\.logging\.log4j['"] 2\.([0-9]+)\.{' '}
-                    <span className="text-blue-400">archived:</span>no{' '}
-                    <span className="text-blue-400">fork:</span>no
+                    <span className="text-blue-400">archived:</span>no <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -163,8 +157,7 @@ const templates = {
             queries: [
                 <>
                     <span className="text-blue-400">file:</span>package.json "license":\s"(.*)"{' '}
-                    <span className="text-blue-400">archived:</span>no{' '}
-                    <span className="text-blue-400">fork:</span>no
+                    <span className="text-blue-400">archived:</span>no <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -197,8 +190,7 @@ const templates = {
             queries: [
                 <>
                     this.skip() <span className="text-blue-400">patterntype:</span>literal{' '}
-                    <span className="text-blue-400">archived:</span>no{' '}
-                    <span className="text-blue-400">fork:</span>no
+                    <span className="text-blue-400">archived:</span>no <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -210,8 +202,7 @@ const templates = {
                     <span className="text-blue-400">lang:</span>gradle org\.apache\.logging\.log4j['"]
                     2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16)(\.[0-9]+){' '}
                     <span className="text-blue-400">patterntype:</span>regexp{' '}
-                    <span className="text-blue-400">archived:</span>no{' '}
-                    <span className="text-blue-400">fork:</span>no
+                    <span className="text-blue-400">archived:</span>no <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -221,8 +212,7 @@ const templates = {
             queries: [
                 <>
                     regexMatchingAPIKey <span className="text-blue-400">patterntype:</span>regexp{' '}
-                    <span className="text-blue-400">archived:</span>no{' '}
-                    <span className="text-blue-400">fork:</span>no
+                    <span className="text-blue-400">archived:</span>no <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -233,8 +223,8 @@ const templates = {
             description: 'How many TODOs are in a specific part of the codebase (or all of it)?',
             queries: [
                 <>
-                    TODO <span className="text-blue-400">archived:</span>no{' '}
-                    <span className="text-blue-400">fork:</span>no
+                    TODO <span className="text-blue-400">archived:</span>no <span className="text-blue-400">fork:</span>
+                    no
                 </>,
             ],
         },
@@ -244,8 +234,7 @@ const templates = {
             queries: [
                 <>
                     <span className="text-blue-400">type:</span>commit revert{' '}
-                    <span className="text-blue-400">archived:</span>no{' '}
-                    <span className="text-blue-400">fork:</span>no
+                    <span className="text-blue-400">archived:</span>no <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -256,8 +245,7 @@ const templates = {
                 <>
                     <span className="text-blue-400">file:</span>\.eslintignore .\n{' '}
                     <span className="text-blue-400">patterntype:</span>regexp{' '}
-                    <span className="text-blue-400">archived:</span>no{' '}
-                    <span className="text-blue-400">fork:</span>no
+                    <span className="text-blue-400">archived:</span>no <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -267,8 +255,7 @@ const templates = {
             queries: [
                 <>
                     <span className="text-blue-400">lang:</span>java @deprecated{' '}
-                    <span className="text-blue-400">archived:</span>no{' '}
-                    <span className="text-blue-400">fork:</span>no
+                    <span className="text-blue-400">archived:</span>no <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -363,7 +350,7 @@ const CodeInsightsPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="sg-bg-gradient-venus">
-            <div className="max-w-screen-lg mx-auto">
+            <div className="mx-auto max-w-screen-lg">
                 <Blockquote
                     headline="Trusted by engineering teams worldwide"
                     quote="As we've grown, so has the need to better track and communicate our progress and
@@ -380,13 +367,13 @@ const CodeInsightsPage: FunctionComponent = () => (
 
         <ContentSection>
             <div className="flex flex-wrap">
-                <h2 className="mb-4 text-center w-full">Engineering leadership with superpowers</h2>
+                <h2 className="mb-4 w-full text-center">Engineering leadership with superpowers</h2>
                 <p className={`text-center ${styles['icon-subheader']} w-full`}>
                     Code Insights provides reliable real-time reporting directly from the codebase, making engineering
                     leaders and their teams more effective.
                 </p>
-                <div className="flex flex-col lg:px-3xl justify-around">
-                    <div className="py-4 flex lg:py-md">
+                <div className="flex flex-col justify-around lg:px-3xl">
+                    <div className="flex py-4 lg:py-md">
                         <div className="mr-6">
                             <BullsEyeArrowIcon className="icon text-blurple-400" size={70} />
                         </div>
@@ -395,8 +382,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                             <p className={`${styles['icon-paragraph']}`}>Measure goals and progress in your codebase</p>
                         </div>
                     </div>
-                    <div className="py-4 flex lg:py-md">
-                        <div className="mr-6 icon">
+                    <div className="flex py-4 lg:py-md">
+                        <div className="icon mr-6">
                             <LighteningBoltOutlineIcon className="icon text-blurple-400" size={70} />
                         </div>
                         <div className="flex flex-col">
@@ -407,8 +394,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col lg:px-3xl justify-around">
-                    <div className="py-4 flex lg:py-md">
+                <div className="flex flex-col justify-around lg:px-3xl">
+                    <div className="flex py-4 lg:py-md">
                         <div className="mr-6">
                             <TrendingUpIcon className="icon text-blurple-400" size={70} />
                         </div>
@@ -419,7 +406,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                             </p>
                         </div>
                     </div>
-                    <div className="py-4 flex lg:py-md">
+                    <div className="flex py-4 lg:py-md">
                         <div className="mr-6">
                             <RocketLaunchOutlineIcon className="icon text-blurple-400" size={70} />
                         </div>
@@ -450,7 +437,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Migrations',
                         content: (
-                            <div className="flex-wrap mt-8 w-full flex">
+                            <div className="mt-8 flex w-full flex-wrap">
                                 {templates.migrations.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -460,7 +447,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Version Tracking',
                         content: (
-                            <div className="flex-wrap mt-8 w-full flex justify-center">
+                            <div className="mt-8 flex w-full flex-wrap justify-center">
                                 {templates.versionTracking.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -470,7 +457,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Security',
                         content: (
-                            <div className="flex-wrap mt-8 w-full flex justify-center">
+                            <div className="mt-8 flex w-full flex-wrap justify-center">
                                 {templates.security.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -480,7 +467,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Code Health',
                         content: (
-                            <div className="flex-wrap mt-8 w-full flex justify-center">
+                            <div className="mt-8 flex w-full flex-wrap justify-center">
                                 {templates.codeHealth.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -544,7 +531,7 @@ const CodeInsightsPage: FunctionComponent = () => (
             />
             <div className="text-center">
                 <a
-                    className="py-6 px-0 col-7"
+                    className="col-7 py-6 px-0"
                     href="https://docs.sourcegraph.com/code_insights"
                     title="Code Insights on docs."
                     data-button-style={buttonStyle.text}

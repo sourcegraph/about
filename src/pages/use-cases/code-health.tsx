@@ -153,19 +153,19 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="mb-6 text-blurple-400 inline" size={40} />,
+        icon: <MagnifyIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Find unhealthy code',
         description:
             'Build a healthier codebase by finding references to deprecated services, libraries, URL patterns, and more across all your repositories.',
     },
     {
-        icon: <WrenchOutlineIcon className="mb-6 text-blurple-400 inline" size={40} />,
+        icon: <WrenchOutlineIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Remediate code health issues',
         description:
             'Tackle refactoring efforts and tech debt from legacy systems and acquisitions with automated pull requests across your entire codebase.',
     },
     {
-        icon: <ClipBoardPulseOutlineIcon className="mb-6 text-blurple-400 inline" size={40} />,
+        icon: <ClipBoardPulseOutlineIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Monitor code health initiatives',
         description:
             'Stay on top of code health changes. Monitor and measure code health initiatives and get actionable insights into the impact of large-scale changes.',
@@ -266,7 +266,7 @@ const UseCasePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="md:mb-6 max-w-[500px]">Improving code health can be daunting</h2>
+                        <h2 className="max-w-[500px] md:mb-6">Improving code health can be daunting</h2>
                         <p className="max-w-[500px]">
                             Engineering teams need to track and measure code quality consistently to monitor code health
                             across their entire codebase, but current tools don't make this easy. What does that mean

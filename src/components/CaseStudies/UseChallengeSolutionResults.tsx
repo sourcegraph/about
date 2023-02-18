@@ -53,10 +53,10 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
     }, [])
 
     return (
-        <div className="relative flex gap-lg lg:flex-row flex-col py-xl">
+        <div className="relative flex flex-col gap-lg py-xl lg:flex-row">
             <div>
                 <div className="mb-8 flex flex-col lg:flex-row lg:justify-end">
-                    <div className="mb-4 rounded p-1 text-center flex bg-violet-100 self-start justify-center items-center max-w-[50px]">
+                    <div className="mb-4 flex max-w-[50px] items-center justify-center self-start rounded bg-violet-100 p-1 text-center">
                         <ClipboardTextIcon size={40} className="p-1 text-violet-400" />
                     </div>
                     <div className="pl-xs">
@@ -76,8 +76,8 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                         )}
                     </div>
                 </div>
-                <div className="mb-8 lg:mb-0 flex flex-col lg:flex-row lg:justify-end">
-                    <div className="mb-4 rounded p-1 text-center flex bg-violet-100 self-start justify-center items-center max-w-[50px]">
+                <div className="mb-8 flex flex-col lg:mb-0 lg:flex-row lg:justify-end">
+                    <div className="mb-4 flex max-w-[50px] items-center justify-center self-start rounded bg-violet-100 p-1 text-center">
                         <AlertIcon size={40} className="p-1 text-violet-400" />
                     </div>
                     <div className="pl-xs">
@@ -97,8 +97,8 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                 </div>
             </div>
             <div>
-                <div className="mb-8 lg:mb-0 flex flex-col lg:flex-row xl:justify-center">
-                    <div className="mb-4 rounded p-1 text-center flex bg-violet-100 self-start justify-center items-center max-w-[50px]">
+                <div className="mb-8 flex flex-col lg:mb-0 lg:flex-row xl:justify-center">
+                    <div className="mb-4 flex max-w-[50px] items-center justify-center self-start rounded bg-violet-100 p-1 text-center">
                         <CheckCircleIcon size={40} className="p-1 text-violet-400" />
                     </div>
                     <div className="pl-xs">
@@ -122,16 +122,16 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                 ref={box}
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ marginBottom: boxHalfHeight }}
-                className="sg-bg-gradient-venus lg:absolute xl:right-5xl lg:right-sm lg:bottom-0 max-w-[700px] lg:max-w-[500px] mx-auto p-8 w-[95%]"
+                className="sg-bg-gradient-venus mx-auto w-[95%] max-w-[700px] p-8 lg:absolute lg:right-sm lg:bottom-0 lg:max-w-[500px] xl:right-5xl"
             >
-                <div className="lg:ml-0 flex flex-col lg:flex-row">
-                    <div className="mb-4 rounded p-1 text-center flex bg-violet-100 self-start justify-center items-center max-w-[50px]">
+                <div className="flex flex-col lg:ml-0 lg:flex-row">
+                    <div className="mb-4 flex max-w-[50px] items-center justify-center self-start rounded bg-violet-100 p-1 text-center">
                         <ChartLineVariantIcon size={40} className="p-1 text-violet-400" />
                     </div>
                     <div className="pr-0 pl-xs">
                         <h4>Results</h4>
                         {results.length > 1 ? (
-                            <ul className="pl-6 mb-0 ml-0">
+                            <ul className="mb-0 ml-0 pl-6">
                                 {results.map(result => (
                                     <ListItemType key={result.text} item={result} />
                                 ))}

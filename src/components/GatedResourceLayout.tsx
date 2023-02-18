@@ -48,9 +48,9 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             {hasWatchNowQuery ? (
                 // ---- RECORDING BODY VARIATION ----
                 <div className="bg-white">
-                    <div className="container mx-auto py-3xl lg:py-5xl video-embed embed-responsive embed-responsive-16by9">
+                    <div className="video-embed embed-responsive embed-responsive-16by9 container mx-auto py-3xl lg:py-5xl">
                         <iframe
-                            className="md:p-5xl embed-responsive-item"
+                            className="embed-responsive-item md:p-5xl"
                             src={videoSrc}
                             allowFullScreen={true}
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -68,7 +68,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
 
                     <div className="pb-3xl md:pb-0">
                         <h2>{formLabel}</h2>
-                        <div className="mt-4 p-sm drop-shadow sg-border-gradient-saturn border-solid border-3">
+                        <div className="sg-border-gradient-saturn mt-4 border-3 border-solid p-sm drop-shadow">
                             {!hasWatchNowQuery && !demioForm && (
                                 <HubSpotForm
                                     masterFormName="gatedMulti"
@@ -98,14 +98,12 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 <ContentSection background="white" parentClassName={classNames({ 'pt-0': !hasWatchNowQuery })}>
                     <h2>Speakers</h2>
 
-                    <section className="flex-wrap flex">
+                    <section className="flex flex-wrap">
                         {speakers.map((speaker: Speaker) => (
                             <div key={speaker.name} className="pl-0 lg:pr-5xl">
                                 <img className="py-sm" width="140" src={speaker.img} alt={speaker.name} />
                                 <h5>{speaker.name}</h5>
-                                <figcaption className="my-xxs text-gray-400 max-w-[250px]">
-                                    {speaker.title}
-                                </figcaption>
+                                <figcaption className="my-xxs max-w-[250px] text-gray-400">{speaker.title}</figcaption>
                                 <p>{speaker.bio}</p>
                             </div>
                         ))}

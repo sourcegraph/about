@@ -38,7 +38,7 @@ interface Filters {
  * @param props.onClick - the click function
  */
 const Filter: FunctionComponent<Filter> = ({ text, checked = false, onClick }) => (
-    <div className="first-letter:capitalize mr-xs mb-xs">
+    <div className="mr-xs mb-xs first-letter:capitalize">
         <Badge text={text} onClick={onClick} color="white-outlined" size="large" checked={checked} />
     </div>
 )
@@ -53,8 +53,8 @@ const Filter: FunctionComponent<Filter> = ({ text, checked = false, onClick }) =
  * @param props.resetFilterGroup - function to reset a filter gorup by title
  */
 const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters, setFilter, resetFilterGroup }) => (
-    <div className="md:grid md:grid-cols-12 first-of-type:mb-xs">
-        <h6 className="mb-xs md:mb-0 md:mr-5xl md:col-span-2 lg:whitespace-nowrap">{title}</h6>
+    <div className="first-of-type:mb-xs md:grid md:grid-cols-12">
+        <h6 className="mb-xs md:col-span-2 md:mb-0 md:mr-5xl lg:whitespace-nowrap">{title}</h6>
 
         <div className="flex flex-wrap md:col-span-10">
             {filters.map(filter => (
@@ -92,7 +92,7 @@ export const Filters: FunctionComponent<Filters> = ({
     disabledClear,
 }) => (
     <div className="bg-gray-50 py-3xl px-sm">
-        <div className="flex max-w-[1062px] mx-auto">
+        <div className="mx-auto flex max-w-[1062px]">
             <div>
                 {groups
                     .sort((a, b) => (a.title > b.title ? 1 : -1))
@@ -109,7 +109,7 @@ export const Filters: FunctionComponent<Filters> = ({
 
             <div
                 className={classNames('mb-sm whitespace-nowrap', {
-                    'text-blurple-400 cursor-pointer': !disabledClear,
+                    'cursor-pointer text-blurple-400': !disabledClear,
                     'text-gray-300': disabledClear,
                 })}
                 onClick={() => !disabledClear && resetFilterGroups()}
@@ -117,7 +117,7 @@ export const Filters: FunctionComponent<Filters> = ({
                 role={(!disabledClear && 'button') || undefined}
                 tabIndex={0}
             >
-                <CloseCircleOutlineIcon size={24} className="inline mr-1 align-top" />
+                <CloseCircleOutlineIcon size={24} className="mr-1 inline align-top" />
                 Clear
             </div>
         </div>

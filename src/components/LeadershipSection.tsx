@@ -87,7 +87,7 @@ const LEADERS: {
 export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div id="leadership" className={`leadership-section ${className}`}>
         <h2>Leadership</h2>
-        <div className="my-8 grid gap-xl grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <div className="my-8 grid grid-cols-1 gap-xl sm:grid-cols-2 md:grid-cols-3">
             {LEADERS.map(staff => (
                 <div key={`${staff.name.replace(' ', '-').toLowerCase()}`} className="">
                     <a
@@ -119,7 +119,7 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
 
                     <p className="mb-0">{staff.title}</p>
 
-                    <ul className="ml-0 mt-1 list-none flex">
+                    <ul className="ml-0 mt-1 flex list-none">
                         {staff.github && (
                             <li className="mr-2">
                                 <a

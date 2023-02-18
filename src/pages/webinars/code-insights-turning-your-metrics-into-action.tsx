@@ -93,7 +93,7 @@ const Webinar: FunctionComponent = () => {
                     <ContentSection className="flex flex-col items-center">
                         <h1 className="text-center">Want to learn more about Code Insights?</h1>
                         <a
-                            className="mt-6 btn btn-primary"
+                            className="btn btn-primary mt-6"
                             href="https://signup.sourcegraph.com"
                             title="Start for free"
                             data-button-style={buttonStyle.primary}

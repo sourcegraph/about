@@ -197,19 +197,19 @@ const blogResourceItems = [
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="mb-6 text-blurple-400 inline" size={40} />,
+        icon: <MagnifyIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Assess incidents quickly',
         description:
             "Pinpoint the code responsible for the incident and find the root cause in your codebase. Understand the code's functionality to verify the issue.",
     },
     {
-        icon: <ClockTimeThreeOutlineIcon className="mb-6 text-blurple-400 inline" size={40} />,
+        icon: <ClockTimeThreeOutlineIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Plan your remediation',
         description:
             'Reduce time to resolution by supplying response teams with actionable details, like links to all affected code.',
     },
     {
-        icon: <WebIcon className="mb-6 text-blurple-400 inline" size={40} />,
+        icon: <WebIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Execute your plan globally',
         description:
             "Fix the root cause and confirm the same issue doesn't reoccur in other areas by locating the code pattern and automating fixes across your entire codebase.",

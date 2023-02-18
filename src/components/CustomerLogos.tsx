@@ -153,7 +153,7 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
 
     return (
         <div className={classNames({ 'bg-black text-white': dark })}>
-            <div className="mb-xl text-center max-w-xl mx-auto">
+            <div className="mx-auto mb-xl max-w-xl text-center">
                 {overline && (
                     <Heading size="h6" as="h2">
                         {overline}
@@ -169,8 +169,8 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
 
             <div
                 className={classNames(
-                    'flex-wrap mx-auto flex items-center justify-center max-w-screen-xl select-none',
-                    { 'brightness-0': dark || monochrome, 'invert': dark }
+                    'mx-auto flex max-w-screen-xl select-none flex-wrap items-center justify-center',
+                    { 'brightness-0': dark || monochrome, invert: dark }
                 )}
                 ref={container}
             >

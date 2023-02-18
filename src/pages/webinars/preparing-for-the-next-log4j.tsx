@@ -37,9 +37,9 @@ const Webinar: FunctionComponent = () => {
                     title="Preparing for the Next Log4j"
                     subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
                     leftColumn={
-                        <div className="flex items-center h-full">
+                        <div className="flex h-full items-center">
                             <img
-                                className="border-r-2 md:border-r-3 border-r-black inline mr-xs pr-xs md:mr-sm md:pr-sm w-[65px] md:w-[95px]"
+                                className="mr-xs inline w-[65px] border-r-2 border-r-black pr-xs md:mr-sm md:w-[95px] md:border-r-3 md:pr-sm"
                                 src="/sourcegraph/sourcegraph-mark.svg"
                                 alt="Sourcegraph mark"
                             />
@@ -103,7 +103,7 @@ const Webinar: FunctionComponent = () => {
                         <h1 className="text-center">Interesting in learning more?</h1>
                         <Link
                             href="/case-studies/nutanix-fixed-log4j-with-sourcegraph"
-                            className="mt-6 btn btn-primary"
+                            className="btn btn-primary mt-6"
                             title="Read the Nutanix Case Study"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.body}

@@ -17,8 +17,8 @@ const ContactPage: NextPage<ContactPageProps> = ({ title, description, masterFor
         }}
     >
         <div className="bg-white text-black">
-            <div className="px-8 py-8 xl:container mx-auto">
-                <div className="grid gap-md grid-cols-1 md:grid-cols-2">
+            <div className="mx-auto px-8 py-8 xl:container">
+                <div className="grid grid-cols-1 gap-md md:grid-cols-2">
                     <div>
                         <h1>{title}</h1>
                         <h3 className="font-normal">{description}</h3>

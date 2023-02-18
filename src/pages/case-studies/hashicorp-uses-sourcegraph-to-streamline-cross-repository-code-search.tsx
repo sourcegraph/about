@@ -108,7 +108,7 @@ export const CaseStudy: FunctionComponent = () => (
 
             <ContentSection background="white" slimWidth={true}>
                 <div className="mx-auto pt-5xl">
-                    <p className="pt-3xl sm:pt-5xl sm:mt-0 mt-5xl">
+                    <p className="mt-5xl pt-3xl sm:mt-0 sm:pt-5xl">
                         Every day, millions of developers and DevOps engineers rely on HashiCorp to efficiently
                         provision, manage, and secure their cloud infrastructure.{' '}
                         <a
@@ -366,7 +366,7 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection background="white">
-                <div className="max-w-4xl mx-auto">
+                <div className="mx-auto max-w-4xl">
                     <StaffSpotlight
                         customer="HashiCorp"
                         about={

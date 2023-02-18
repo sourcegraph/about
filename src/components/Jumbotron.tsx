@@ -26,10 +26,10 @@ export const Jumbotron: FunctionComponent<Props> = ({
     children,
 }) => (
     <div className={`jumbotron rounded-none ${COLORS[color]} ${className}`}>
-        <div className="mx-auto container text-center pt-6 pb-8">
+        <div className="container mx-auto pt-6 pb-8 text-center">
             {logomark && (
                 <img
-                    className="mb-1 w-8 h-8 mx-auto"
+                    className="mx-auto mb-1 h-8 w-8"
                     src="/sourcegraph/sourcegraph-mark.svg"
                     aria-hidden="true"
                     alt="Sourcegraph mark"

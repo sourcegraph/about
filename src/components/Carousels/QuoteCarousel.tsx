@@ -22,7 +22,7 @@ interface QuoteCarouselProps {
 export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items }) => (
     <>
         {items.map(item => (
-            <div key={item.quote} className="mx-auto max-w-2xl my-20">
+            <div key={item.quote} className="mx-auto my-20 max-w-2xl">
                 <Blockquote
                     key={item.quote}
                     quote={item.quote}

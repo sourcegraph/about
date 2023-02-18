@@ -15,16 +15,14 @@ interface BackButtonProps {
 export const BackButton: FunctionComponent<BackButtonProps> = ({ href, text, light = false }) => (
     <Link
         href={href}
-        className="uppercase mb-xs block cursor-pointer"
+        className="mb-xs block cursor-pointer uppercase"
         data-button-style={buttonStyle.textWithArrow}
         data-button-location={buttonLocation.hero}
         data-button-type="cta"
     >
-        <ArrowLeftIcon
-            className={classNames('mb-1 inline', { 'text-white': light, 'text-black': !light })}
-        />
+        <ArrowLeftIcon className={classNames('mb-1 inline', { 'text-white': light, 'text-black': !light })} />
         <span
-            className={classNames('text-lg ml-4 font-semibold', {
+            className={classNames('ml-4 text-lg font-semibold', {
                 'text-white': light,
                 'text-black': !light,
             })}

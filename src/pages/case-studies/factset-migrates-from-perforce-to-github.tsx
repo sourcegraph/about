@@ -25,7 +25,7 @@ export const CaseStudy: FunctionComponent = () => {
                 }}
             >
                 <ContentSection background="white" slimWidth={true}>
-                    <div className="grid gap-md grid-cols-1 lg:grid-cols-2">
+                    <div className="grid grid-cols-1 gap-md lg:grid-cols-2">
                         <div>
                             <h3 className="pb-1">Before Sourcegraph</h3>
                             <ul>

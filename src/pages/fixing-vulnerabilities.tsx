@@ -12,7 +12,7 @@ const FixingVulnerabilities: FunctionComponent = () => (
         }}
     >
         <div className="container mx-auto py-24">
-            <div className="grid gap-md grid-cols-1 lg:grid-cols-2">
+            <div className="grid grid-cols-1 gap-md lg:grid-cols-2">
                 <div>
                     <h1 className="mb-6">Find and fix security vulnerabilities faster</h1>
                     <h4>You can't fix what you can't find</h4>
@@ -32,18 +32,18 @@ const FixingVulnerabilities: FunctionComponent = () => (
                     <YouTube
                         title="Finding and fixing vulnerabilities with Sourcegraph"
                         id="13OqKPXqZXo"
-                        className="mt-6 mt-lg-0"
+                        className="mt-lg-0 mt-6"
                     />
                 </div>
             </div>
         </div>
 
-        <div className="container mx-auto text-center py-24 max-w-[650px]">
+        <div className="container mx-auto max-w-[650px] py-24 text-center">
             <h2>Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk.</h2>
 
             <div className="mx-auto mt-8 max-w-[400px]">
                 <a
-                    className="mt-8 btn btn-primary block sm:inline-block"
+                    className="btn btn-primary mt-8 block sm:inline-block"
                     href="https://signup.sourcegraph.com"
                     title="Start for free"
                     data-button-style={buttonStyle.primary}

@@ -23,7 +23,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                 {renderTitleAsLink === true ? (
                     <Link
                         href={`/${blogType}/${slugPath}`}
-                        className="text-gray-600 block"
+                        className="block text-gray-600"
                         title={frontmatter.title}
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
@@ -37,7 +37,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
             </h4>
 
             {frontmatter.authors?.length && (
-                <p className="mb-0 text-align-center text-secondary">
+                <p className="text-align-center text-secondary mb-0">
                     {frontmatter.authors.map((a, index) => (
                         <span key={a.name} data-author={a.name}>
                             {a.url ? (
@@ -75,14 +75,14 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
             )}
 
             {frontmatter.publishDate && (
-                <p className="mb-0 text-align-center text-secondary">
+                <p className="text-align-center text-secondary mb-0">
                     <time dateTime={frontmatter.publishDate}>{formatDate(frontmatter.publishDate)}</time>
                 </p>
             )}
         </header>
 
         {slugPath && (
-            <div className="pt-0 grid gap-sm grid-cols-1 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-sm pt-0 md:grid-cols-3">
                 <div className="md:col-span-2">
                     {frontmatter.description ? (
                         <p>{truncate(frontmatter.description, { length: 300 })}</p>

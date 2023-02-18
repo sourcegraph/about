@@ -80,13 +80,13 @@ export const Header: FunctionComponent<Props> = ({ colorTheme = 'default', ...pr
 
     return (
         <nav className={navStyle}>
-            <div className="xl:container flex w-full mx-auto flex-wrap items-center justify-between px-0">
-                <Navbar.Brand href="/" className="mr-0 header flex">
+            <div className="mx-auto flex w-full flex-wrap items-center justify-between px-0 xl:container">
+                <Navbar.Brand href="/" className="header mr-0 flex">
                     <img
                         src={isDarkNav || isPurpleNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
                         width={150}
                         height={26}
-                        className="max-w-[150px] w-full"
+                        className="w-full max-w-[150px]"
                         aria-label="Sourcegraph - Code Intelligence Platform"
                         alt="Sourcegraph - Code Intelligence Platform"
                         draggable={false}

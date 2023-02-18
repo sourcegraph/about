@@ -40,16 +40,16 @@ const PodcastPage: NextPage<PageProps> = ({ post, content }) => {
     return (
         <Layout meta={meta}>
             <article>
-                <div className="lg:container px-sm mx-auto">
+                <div className="mx-auto px-sm lg:container">
                     <BlogHeader {...podcastInfo} />
                 </div>
                 <div className="mt-8 bg-white">
-                    <div className="max-w-screen-xl mx-auto">
+                    <div className="mx-auto max-w-screen-xl">
                         <PostTemplate
                             post={post}
                             content={content}
                             url={urlToPost(post)}
-                            className="max-w-[750px] mx-auto"
+                            className="mx-auto max-w-[750px]"
                             headerClassName="bg-white border-b-0 text-center pt-md"
                             contentClassName={`${styles.body} break-words`}
                         />

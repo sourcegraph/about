@@ -49,13 +49,13 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
 
             <div
                 className={classNames(
-                    'grid gap-md grid-cols-1 lg:grid-cols-2 items-center',
-                    autoAdvance ? 'justify-center' : 'lg:flex-row flex-col py-32'
+                    'grid grid-cols-1 items-center gap-md lg:grid-cols-2',
+                    autoAdvance ? 'justify-center' : 'flex-col py-32 lg:flex-row'
                 )}
             >
                 {/* Mobile Image Caption (Button Label) */}
                 {hasImages && (
-                    <div className="mb-8 block lg:hidden lg:mb-0 md:mx-auto">
+                    <div className="mb-8 block md:mx-auto lg:mb-0 lg:hidden">
                         {carouselItems.map((item, index) => (
                             <h3
                                 className={classNames(
@@ -77,8 +77,8 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                 <div
                     className={
                         carouselHook.autoAdvance
-                            ? 'lg:flex flex-col justify-between hidden m-0 px-0'
-                            : 'lg:flex hidden h-[550px]'
+                            ? 'm-0 hidden flex-col justify-between px-0 lg:flex'
+                            : 'hidden h-[550px] lg:flex'
                     }
                 >
                     <ArrowUpIcon
@@ -92,10 +92,10 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                     {carouselItems.map((item, index) => (
                         <div
                             className={classNames(
-                                'custom-carousel-item cursor-pointer display-5 max-w-[375px] py-2 mb-0',
+                                'custom-carousel-item display-5 mb-0 max-w-[375px] cursor-pointer py-2',
                                 animateTransition
                                     ? item === carouselHook.carouselItems.currentItem
-                                        ? 'transition-all duration-500 ease-in-out text-black sg-border-gradient-saturn border-2 border-solid px-2'
+                                        ? 'sg-border-gradient-saturn border-2 border-solid px-2 text-black transition-all duration-500 ease-in-out'
                                         : 'text-gray-300'
                                     : '',
                                 index !== carouselItems.length - 1 ? 'mb-2' : 'mb-0'
@@ -111,9 +111,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                                 className={classNames(
                                     'mb-1',
                                     animateTransition ? 'text-lg' : 'font-normal',
-                                    !animateTransition &&
-                                        item === carouselHook.carouselItems.currentItem &&
-                                        'font-bold'
+                                    !animateTransition && item === carouselHook.carouselItems.currentItem && 'font-bold'
                                 )}
                             >
                                 {item.title}
@@ -134,11 +132,11 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                 {/* Carousel Item */}
                 <div
                     className={classNames(
-                        'relative flex items-center lg:justify-start justify-center',
+                        'relative flex items-center justify-center lg:justify-start',
                         hasImages
                             ? 'min-h-[500px]'
                             : animateTransition && !isMdOrDown
-                            ? 'bg-gray-50 h-[550px]'
+                            ? 'h-[550px] bg-gray-50'
                             : 'min-h-[300px]'
                     )}
                 >
@@ -150,7 +148,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                                 animateTransition && 'absolute',
                                 animateTransition
                                     ? item === carouselHook.carouselItems.currentItem
-                                        ? 'transition-all duration-1000 ease-in-out opacity-100 xl:w-[450px] lg:w-[350px]'
+                                        ? 'opacity-100 transition-all duration-1000 ease-in-out lg:w-[350px] xl:w-[450px]'
                                         : 'opacity-0'
                                     : '',
                                 !animateTransition
@@ -171,7 +169,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
                 </div>
 
                 {/* Mobile Indicators */}
-                <div className="my-6 mx-auto lg:hidden flex items-center">
+                <div className="my-6 mx-auto flex items-center lg:hidden">
                     <ArrowLeftIcon
                         className="mr-6 cursor-pointer"
                         onClick={() => carouselHook.moveCarousel('decrement')}

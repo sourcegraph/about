@@ -39,22 +39,20 @@ export const ReleasePost: FunctionComponent<Props> = ({
 
             {frontmatter.changelogItems?.length ? (
                 <div>
-                    <h3 className={`pt-sm pb-xxs m-0 ${styles['changelog-header']}`}>Changelog highlights</h3>
+                    <h3 className={`m-0 pt-sm pb-xxs ${styles['changelog-header']}`}>Changelog highlights</h3>
 
-                    <ol className="border-y border-solid border-gray-200 list-none ml-0">
+                    <ol className="ml-0 list-none border-y border-solid border-gray-200">
                         {frontmatter.changelogItems?.map(({ url, category, description }) => (
-                            <li key={url} className="bg-white [&:not(:last-child)]:border-b-1 m-0 p-0">
+                            <li key={url} className="m-0 bg-white p-0 [&:not(:last-child)]:border-b-1">
                                 <a
                                     href={url}
-                                    className={`${styles.item} block md:flex px-xs py-xxs text-black`}
+                                    className={`${styles.item} block px-xs py-xxs text-black md:flex`}
                                     title={`${category}: ${description}`}
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <span
-                                        className={`mb-2 ${styles['item-category']} md:mb-0 block md:inline`}
-                                    >
+                                    <span className={`mb-2 ${styles['item-category']} block md:mb-0 md:inline`}>
                                         <Badge text={category} breakWords={false} size="large" color="white-outlined" />
                                     </span>
                                     <span className={styles['item-description']}>{description}</span>
@@ -63,7 +61,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                         ))}
                     </ol>
 
-                    <ul className="mb-0 py-4 flex-wrap list-none flex-col md:flex-row md:flex">
+                    <ul className="mb-0 list-none flex-col flex-wrap py-4 md:flex md:flex-row">
                         <li>
                             <a
                                 href="https://docs.sourcegraph.com/admin/install"
@@ -119,7 +117,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                     </div>
                 </div>
             ) : (
-                <ul className="border-t mt-md mb-0 py-4 flex-wrap list-none flex-col md:flex-row md:flex">
+                <ul className="mt-md mb-0 list-none flex-col flex-wrap border-t py-4 md:flex md:flex-row">
                     <li>
                         <a
                             href="https://docs.sourcegraph.com/admin/install"

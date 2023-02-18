@@ -12,7 +12,7 @@ export const TrySourcegraphForFreeButton: React.FunctionComponent<{
     <a
         className={classNames(
             'btn btn-primary whitespace-nowrap',
-            dark && 'bg-white text-violet-500 border-0',
+            dark && 'border-0 bg-white text-violet-500',
             size === 'lg' && 'py-xs'
         )}
         href="https://signup.sourcegraph.com"

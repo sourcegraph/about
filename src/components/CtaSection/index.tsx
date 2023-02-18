@@ -40,7 +40,7 @@ const Cta: FunctionComponent<Cta> = ({ text, ctaStyle, link }) => {
             className={classNames({
                 'btn bg-white text-blurple-400 hover:bg-blurple-400 hover:text-white':
                     ctaStyle === 'primaryButtonWhite',
-                'btn text-white border-white hover:bg-blurple-400 hover:border-blurple-400':
+                'btn border-white text-white hover:border-blurple-400 hover:bg-blurple-400':
                     ctaStyle === 'outlineButtonLight',
                 'btn btn-link text-white hover:text-blurple-200': ctaStyle === 'link',
             })}
@@ -90,20 +90,16 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
         <>
             <div className="bg-violet-700 text-white">
                 <div
-                    className="max-w-screen-xl mx-auto bg-[center_left] bg-repeat-y grid items-center grid-cols-12 min-h-[291px] h-full px-sm lg:pl-0 py-3xl"
+                    className="mx-auto grid h-full min-h-[291px] max-w-screen-xl grid-cols-12 items-center bg-[center_left] bg-repeat-y px-sm py-3xl lg:pl-0"
                     // eslint-disable-next-line react/forbid-dom-props
                     style={lgAndUp ? { background: `url('${illustration}')` } : undefined}
                 >
                     <div className="col-span-full md:col-span-7 lg:col-span-5 lg:col-start-4 lg:pl-xl">
-                        <h2 className="text-violet-200 mb-sm">{title}</h2>
-                        <p className="text-lg max-w-2xl">{description}</p>
+                        <h2 className="mb-sm text-violet-200">{title}</h2>
+                        <p className="max-w-2xl text-lg">{description}</p>
                     </div>
 
-                    <div
-                        className={classNames(
-                            'col-span-full md:col-span-5 lg:col-span-4 flex flex-col items-center'
-                        )}
-                    >
+                    <div className={classNames('col-span-full flex flex-col items-center md:col-span-5 lg:col-span-4')}>
                         {cta1 && (
                             <div className="mt-sm">
                                 <Cta {...cta1} />

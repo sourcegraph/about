@@ -100,7 +100,7 @@ export const CaseStudy: FunctionComponent = () => (
 
             <ContentSection background="white" slimWidth={true}>
                 <div className="mx-auto pt-5xl">
-                    <p className="pt-3xl sm:mt-0 mt-5xl">
+                    <p className="mt-5xl pt-3xl sm:mt-0">
                         As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the
                         complexity involved in securing the multitude of applications and solutions required to power
                         such a large organization. “Security is something that we care about intensely here at Nutanix,”

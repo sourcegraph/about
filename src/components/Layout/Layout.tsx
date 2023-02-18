@@ -60,7 +60,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
     }
 
     return (
-        <div className={`flex flex-col min-h-screen ${className || ''}`}>
+        <div className={`flex min-h-screen flex-col ${className || ''}`}>
             <Head>
                 <title>{meta.externalTitle || meta.title}</title>
                 <meta name="description" content={meta.externalDescription || meta.description} />

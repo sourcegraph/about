@@ -144,7 +144,7 @@ export const Badge: FunctionComponent<Badge> = ({
     return link ? (
         <a href={link} className={classNames('no-underline', styles)} tabIndex={0}>
             {text}
-            {icon && <Icon className="inline ml-1" size={size === 'small' ? 12 : 14} />}
+            {icon && <Icon className="ml-1 inline" size={size === 'small' ? 12 : 14} />}
         </a>
     ) : (
         <div
@@ -155,7 +155,7 @@ export const Badge: FunctionComponent<Badge> = ({
             role={onClick ? 'button' : undefined}
         >
             {text}
-            {icon && <Icon className="inline ml-1" size={size === 'small' ? 12 : 14} />}
+            {icon && <Icon className="ml-1 inline" size={size === 'small' ? 12 : 14} />}
         </div>
     )
 }

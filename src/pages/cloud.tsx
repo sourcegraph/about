@@ -30,17 +30,17 @@ const Cloud: FunctionComponent = () => (
         }
     >
         <ContentSection background="white">
-            <div className="lg:flex flex-row">
-                <h2 className="lg:basis-1/3 min-w-[400px] max-w-3xl mb-md">
+            <div className="flex-row lg:flex">
+                <h2 className="mb-md min-w-[400px] max-w-3xl lg:basis-1/3">
                     Get in flow with a private, fully-featured Sourcegraph instance
                 </h2>
 
-                <div className="basis-2/3 max-w-full">
+                <div className="max-w-full basis-2/3">
                     <TwoColumnSection
                         blockOnMdAndDown={true}
                         leftColumn={
                             <div className="mb-md">
-                                <div className="mb-5 p-2.5 rounded flex items-center bg-violet-100 max-w-[48px] max-h-[48px]">
+                                <div className="mb-5 flex max-h-[48px] max-w-[48px] items-center rounded bg-violet-100 p-2.5">
                                     <FaGitAlt size={32} className="text-violet-400" />
                                 </div>
                                 <p className="max-w-sm">
@@ -51,7 +51,7 @@ const Cloud: FunctionComponent = () => (
                         }
                         rightColumn={
                             <div className="mb-md">
-                                <div className="mb-5 p-2.5 rounded flex items-center bg-violet-100 max-w-[48px] max-h-[48px]">
+                                <div className="mb-5 flex max-h-[48px] max-w-[48px] items-center rounded bg-violet-100 p-2.5">
                                     <FaLocationArrow size={32} className="p-1 text-violet-400" />
                                 </div>
                                 <p className="max-w-sm">
@@ -66,7 +66,7 @@ const Cloud: FunctionComponent = () => (
                         blockOnMdAndDown={true}
                         leftColumn={
                             <div>
-                                <div className="mb-5 p-2.5 rounded flex items-center bg-violet-100 max-w-[48px] max-h-[48px]">
+                                <div className="mb-5 flex max-h-[48px] max-w-[48px] items-center rounded bg-violet-100 p-2.5">
                                     <MdOutlineAvTimer size={45} className="text-violet-400" />
                                 </div>
                                 <p className="max-w-sm">
@@ -77,7 +77,7 @@ const Cloud: FunctionComponent = () => (
                         }
                         rightColumn={
                             <div>
-                                <div className="mb-5 p-2.5 rounded flex items-center bg-violet-100 max-w-[48px] max-h-[48px]">
+                                <div className="mb-5 flex max-h-[48px] max-w-[48px] items-center rounded bg-violet-100 p-2.5">
                                     <MdBarChart size={32} className="text-violet-400" />
                                 </div>
                                 <p className="max-w-sm">
@@ -140,20 +140,20 @@ const Cloud: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <div className="flex justify-center">
-                        <span className="h-px mt-[40px] bg-gray-300 w-1/5" />
+                        <span className="mt-[40px] h-px w-1/5 bg-gray-300" />
                         <div className="ml-sm text-center">
                             <img src="/security/ccpa.svg" alt="CCPA badge" />
-                            <p className="text-gray-400 mt-xxs mb-0">CCPA</p>
+                            <p className="mt-xxs mb-0 text-gray-400">CCPA</p>
                         </div>
                         <div className="mx-sm text-center">
                             <img src="/security/gdpr.svg" alt="GDPR badge" />
-                            <p className="text-gray-400 mt-xxs mb-0">GDPR</p>
+                            <p className="mt-xxs mb-0 text-gray-400">GDPR</p>
                         </div>
                         <div className="mr-sm text-center">
                             <img src="/security/soc2.svg" alt="SOC2 Type 2 badge" />
-                            <p className="text-gray-400 mt-xxs mb-0">SOC2 TYPE 2</p>
+                            <p className="mt-xxs mb-0 text-gray-400">SOC2 TYPE 2</p>
                         </div>
-                        <span className="h-px mt-[40px] bg-gray-300 w-1/5" />
+                        <span className="mt-[40px] h-px w-1/5 bg-gray-300" />
                     </div>
                 }
                 rightColumn={

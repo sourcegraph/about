@@ -22,18 +22,13 @@ export const Figure: FunctionComponent<Figure> = ({
     shadow = true,
 }) => (
     <figure>
-        <img
-            src={src}
-            alt={alt}
-            title={alt}
-            className={classNames({ 'mx-auto': centre, 'drop-shadow-xl': shadow })}
-        />
+        <img src={src} alt={alt} title={alt} className={classNames({ 'mx-auto': centre, 'drop-shadow-xl': shadow })} />
         {caption && (
             <figcaption className="mt-3">
                 {link ? (
-                    <a href={link} className="not-italic flex">
+                    <a href={link} className="flex not-italic">
                         {caption}
-                        {linkIcon && <OpenInNewIcon className="ml-xxs my-auto" size={18} />}
+                        {linkIcon && <OpenInNewIcon className="my-auto ml-xxs" size={18} />}
                     </a>
                 ) : (
                     caption

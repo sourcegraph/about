@@ -32,13 +32,13 @@ export const CaseStudy: FunctionComponent = () => (
                     work in multiple repositories, this small-scale search strategy isn't sufficient and can be a major
                     time sink.
                 </p>
-                <div className="grid gap-lg grid-cols-1 md:grid-cols-2 justify-center text-center pt-xs">
+                <div className="grid grid-cols-1 justify-center gap-lg pt-xs text-center md:grid-cols-2">
                     <figure>
                         <img
                             src="/case-studies/francois-jehl-criteo.jpg"
                             alt="François Jehl, Senior Engineering Manager, Criteo"
                             title="François Jehl, Senior Engineering Manager, Criteo"
-                            className="w-full rounded-full mx-auto block mb-4 max-w-[200px]"
+                            className="mx-auto mb-4 block w-full max-w-[200px] rounded-full"
                         />
                         <figcaption>François Jehl, Senior Engineering Manager, Criteo</figcaption>
                     </figure>
@@ -47,7 +47,7 @@ export const CaseStudy: FunctionComponent = () => (
                             src="/case-studies/loic-teikiteetini-vaysse-criteo.jpg"
                             alt="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
                             title="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
-                            className="w-full rounded-full mx-auto block mb-4 max-w-[200px]"
+                            className="mx-auto mb-4 block w-full max-w-[200px] rounded-full"
                         />
                         <figcaption>Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo</figcaption>
                     </figure>

@@ -28,7 +28,7 @@ export const ResourceList: FunctionComponent<ResourceList> = ({ items, title = '
             <Link
                 href={item.href}
                 key={item.title}
-                className="py-md mx-0 w-full border-b border-solid border-b-gray-200 grid grid-cols-12 hover:bg-gray-50 hover:px-sm transition-padding ease-in-out duration-300"
+                className="transition-padding mx-0 grid w-full grid-cols-12 border-b border-solid border-b-gray-200 py-md duration-300 ease-in-out hover:bg-gray-50 hover:px-sm"
                 data-button-style={buttonStyle.resourceListItem}
                 data-button-location={buttonLocation.body}
                 data-button-type="cta"
@@ -37,13 +37,13 @@ export const ResourceList: FunctionComponent<ResourceList> = ({ items, title = '
                 <div className="col-span-12 sm:col-span-8 sm:pr-sm">
                     <h6 className="text-blurple-400">{item.type}</h6>
                     <h3 className="text-black">{item.title}</h3>
-                    <p className="mt-xs text-black font-normal max-w-3xl">{item.description}</p>
+                    <p className="mt-xs max-w-3xl font-normal text-black">{item.description}</p>
                 </div>
 
-                <div className="flex items-center justify-center sm:justify-end col-span-12 sm:col-span-4 mt-xs sm:mt-0">
-                    <div className="inline-block max-w-[250px] w-full min-h-[150px] h-full">
+                <div className="col-span-12 mt-xs flex items-center justify-center sm:col-span-4 sm:mt-0 sm:justify-end">
+                    <div className="inline-block h-full min-h-[150px] w-full max-w-[250px]">
                         <img
-                            className="flex-1 w-full"
+                            className="w-full flex-1"
                             alt={item.img ? item.img.alt : item.title}
                             src={item.img ? item.img.src : '/blog/thumbnails/default.png'}
                         />

@@ -12,7 +12,7 @@ export const Hackathons: FunctionComponent = () => (
             description: 'Set up Sourcegraph at a Hackathon',
         }}
     >
-        <section className="px-8 text-center mb-7">
+        <section className="mb-7 px-8 text-center">
             <h1 className="mt-6">Set up Sourcegraph during a hackathon</h1>
             <p>
                 We'll give you access to Sourcegraph Enterprise features so you can ship code search and intelligence to
@@ -20,9 +20,9 @@ export const Hackathons: FunctionComponent = () => (
             </p>
         </section>
 
-        <section className="p-6 bg-white m-auto flex justify-around flex-col lg:flex-row max-w-screen-xl">
+        <section className="m-auto flex max-w-screen-xl flex-col justify-around bg-white p-6 lg:flex-row">
             <div className="mt-0 mb-2 lg:mr-8">
-                <div className="p-8 rounded flex flex-col bg-gray-100">
+                <div className="flex flex-col rounded bg-gray-100 p-8">
                     <p>
                         Want to win your hackathon? Set up Sourcegraph and bring the power of code search and code
                         intelligence to your engineering team!
@@ -42,7 +42,7 @@ export const Hackathons: FunctionComponent = () => (
                         </a>
                         , and we'll get back to you ASAP on how to get started!
                     </p>
-                    <div className="border-t mt-6 border-gray-300">
+                    <div className="mt-6 border-t border-gray-300">
                         <p className="pt-sm">
                             Get started with the{' '}
                             <a
@@ -85,7 +85,7 @@ export const Hackathons: FunctionComponent = () => (
                             </a>
                             , and we'll get back to you ASAP on how to get started!
                         </p>
-                        <div className="border-t border-gray-300 mt-6">
+                        <div className="mt-6 border-t border-gray-300">
                             <p className="pt-sm">
                                 Get started with the{' '}
                                 <a

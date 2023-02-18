@@ -67,19 +67,19 @@ export const Blockquote: FunctionComponent<{
             {headline ? largeText ? <h2>{headline}</h2> : <h4 className="mb-sm">{headline}</h4> : null}
 
             {largeText ? (
-                <h3 className="font-normal text-3xl">&ldquo;{quote}&rdquo;</h3>
+                <h3 className="text-3xl font-normal">&ldquo;{quote}&rdquo;</h3>
             ) : (
                 <p className="font-normal">&ldquo;{quote}&rdquo;</p>
             )}
 
-            {author && <figcaption className="text-gray-400 mt-4">&mdash; {author}</figcaption>}
+            {author && <figcaption className="mt-4 text-gray-400">&mdash; {author}</figcaption>}
 
             {logo &&
                 (logo.href ? (
                     <Link href={logo.href}>
                         <img
                             src={logo.src}
-                            className={classNames('mt-4 max-w-[150px h-[80px]]', {
+                            className={classNames('max-w-[150px h-[80px]] mt-4', {
                                 'mx-auto': !border && center,
                             })}
                             width="110px"
@@ -89,7 +89,7 @@ export const Blockquote: FunctionComponent<{
                 ) : (
                     <img
                         src={logo.src}
-                        className={classNames('mt-4 max-w-[150px h-[80px]]', {
+                        className={classNames('max-w-[150px h-[80px]] mt-4', {
                             'mx-auto': !border && center,
                         })}
                         width="110px"

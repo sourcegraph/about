@@ -43,7 +43,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
         <div className={`${kebabCase(customer)}-${className} ${className}`}>
             <CaseStudyJumbotron className="mb-8 pb-12" customer={customer} logo={logo}>
                 {heroImage && (
-                    <div className={`${styles.quote} grid gap-md grid-cols-1 lg:grid-cols-4 pt-xs`}>
+                    <div className={`${styles.quote} grid grid-cols-1 gap-md pt-xs lg:grid-cols-4`}>
                         <div>
                             <a
                                 href={heroLink}
@@ -60,7 +60,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                             {quote && (
                                 <div className="text-left">
                                     <p>{quote.text}</p>
-                                    <footer className="mt-1 blockquote-footer">{quote.author}</footer>
+                                    <footer className="blockquote-footer mt-1">{quote.author}</footer>
                                 </div>
                             )}
                         </div>
@@ -68,11 +68,11 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                 )}
                 {quote && !heroImage && (
                     <div className="container pt-xs">
-                        <div className={`${styles.quote} grid gap-md grid-cols-1 justify-center`}>
+                        <div className={`${styles.quote} grid grid-cols-1 justify-center gap-md`}>
                             {quote.image && (
                                 <div>
                                     <img
-                                        className="mb-4 rounded-full mx-auto block"
+                                        className="mx-auto mb-4 block rounded-full"
                                         src={quote.image}
                                         alt={quote.author}
                                     />
@@ -81,7 +81,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                             <div>
                                 <blockquote className="blockquote">
                                     <p>{quote.text}</p>
-                                    <footer className="mt-1 blockquote-footer">{quote.author}</footer>
+                                    <footer className="blockquote-footer mt-1">{quote.author}</footer>
                                 </blockquote>
                             </div>
                         </div>
@@ -90,7 +90,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                 {pdf && (
                     <a
                         href={pdf}
-                        className="mt-4 btn btn-primary"
+                        className="btn btn-primary mt-4"
                         rel="nofollow noreferrer"
                         target="_blank"
                         title="Download PDF"

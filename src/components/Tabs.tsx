@@ -16,7 +16,7 @@ export const Tabs: FunctionComponent<Tabs> = ({ tabs }) => {
 
     return (
         <div>
-            <div className="flex-row text-center xs:flex xs:text-left items-center justify-center border-b border-solid border-b-gray-200">
+            <div className="flex-row items-center justify-center border-b border-solid border-b-gray-200 text-center xs:flex xs:text-left">
                 {tabs.map((tab, index) => (
                     <div
                         key={tab.title}
@@ -25,7 +25,7 @@ export const Tabs: FunctionComponent<Tabs> = ({ tabs }) => {
                         role="button"
                         tabIndex={0}
                         className={classNames(
-                            'border-b-3 border-solid border-transparent px-4 py-2 cursor-pointer text-lg font-semibold text-center',
+                            'cursor-pointer border-b-3 border-solid border-transparent px-4 py-2 text-center text-lg font-semibold',
                             { 'border-b-violet-400 bg-transparent': currentTab === index }
                         )}
                     >
@@ -39,8 +39,8 @@ export const Tabs: FunctionComponent<Tabs> = ({ tabs }) => {
                     <div
                         key={tab.title}
                         className={classNames({
-                            'block': currentTab === index,
-                            'hidden': currentTab !== index,
+                            block: currentTab === index,
+                            hidden: currentTab !== index,
                         })}
                     >
                         {tab.content}

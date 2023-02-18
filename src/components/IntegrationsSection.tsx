@@ -72,7 +72,7 @@ const selfHostedOptions: string[] = [
 
 const renderListItems = (items: string[]): ReactNode =>
     items.map((item: string) => (
-        <li key={item} className="my-2 mr-2 list-inline-item">
+        <li key={item} className="list-inline-item my-2 mr-2">
             <Badge text={item} size="small" breakWords={true} />
         </li>
     ))
@@ -81,15 +81,13 @@ export const IntegrationsSection: FunctionComponent = () => (
     <ContentSection background="white">
         <h2 className="mb-3xl">Works with your code, infrastructure, and tools</h2>
 
-        <div className="grid gap-md grid-cols-1 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-md lg:grid-cols-2">
             <div>
                 <Heading size="h4" as="h3">
                     All your repositories + 2M open source (and counting)
                 </Heading>
 
-                <ul className="lg:max-w-lg list-none ml-0 flex flex-wrap mb-xxs">
-                    {renderListItems(codeHosts)}
-                </ul>
+                <ul className="ml-0 mb-xxs flex list-none flex-wrap lg:max-w-lg">{renderListItems(codeHosts)}</ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     title="Have a repository not covered here?"
@@ -107,9 +105,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                     All your languages
                 </Heading>
 
-                <ul className="lg:max-w-xl list-none ml-0 flex flex-wrap mb-xxs">
-                    {renderListItems(languages)}
-                </ul>
+                <ul className="ml-0 mb-xxs flex list-none flex-wrap lg:max-w-xl">{renderListItems(languages)}</ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     title="Need a different language?"
@@ -127,9 +123,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                     Your most used tools
                 </Heading>
 
-                <ul className="lg:max-w-md list-none ml-0 flex flex-wrap mb-xxs">
-                    {renderListItems(tools)}
-                </ul>
+                <ul className="ml-0 mb-xxs flex list-none flex-wrap lg:max-w-md">{renderListItems(tools)}</ul>
                 <a
                     href="https://docs.sourcegraph.com/integration"
                     title="See all integrations"
@@ -147,21 +141,21 @@ export const IntegrationsSection: FunctionComponent = () => (
                     Deployment options
                 </Heading>
 
-                <ul className="list-none ml-0 mb-xxs">
+                <ul className="ml-0 mb-xxs list-none">
                     <li className="list-inline-item text-wrap">
                         <Heading size="h5" as="h4" className="mt-xs text-lg !font-normal">
                             Cloud:
                         </Heading>
-                        <ul className="list-none m-0 flex flex-wrap">
+                        <ul className="m-0 flex list-none flex-wrap">
                             {renderListItems(['Single-tenant Sourcegraph Cloud instance'])}
                         </ul>
                     </li>
 
-                    <li className="list-none m-0">
+                    <li className="m-0 list-none">
                         <Heading size="h5" as="h4" className="mt-xxs text-lg !font-normal">
                             Self-hosted by you:
                         </Heading>
-                        <ul className="lg:max-w-sm list-none m-0 flex flex-wrap">
+                        <ul className="m-0 flex list-none flex-wrap lg:max-w-sm">
                             {renderListItems(selfHostedOptions)}
                         </ul>
                     </li>

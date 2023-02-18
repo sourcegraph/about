@@ -16,7 +16,7 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
 
     return (
         <Layout meta={blogInfo.meta}>
-            <div className="md:container px-sm mx-auto">
+            <div className="mx-auto px-sm md:container">
                 <BlogHeader {...blogInfo} />
 
                 <div className="pt-sm">
@@ -26,7 +26,7 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
                         <div className="flex justify-center">
                             <button
                                 type="button"
-                                className="my-8 btn btn-primary"
+                                className="btn btn-primary my-8"
                                 onClick={() => loadMoreHook.setPage(loadMoreHook.page + 1)}
                             >
                                 Load more

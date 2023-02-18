@@ -111,9 +111,7 @@ export const CaseStudy: FunctionComponent = () => (
 
             <ContentSection background="white" slimWidth={true}>
                 <div className="mx-auto pt-5xl">
-                    <h3 className="pt-5xl sm:mt-0 mt-5xl mb-sm">
-                        Improving the developer experience with Sourcegraph
-                    </h3>
+                    <h3 className="mt-5xl mb-sm pt-5xl sm:mt-0">Improving the developer experience with Sourcegraph</h3>
 
                     <p>
                         Before Sourcegraph, tracking libraries manually and searching in GitHub made the process of
@@ -162,7 +160,7 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
                 </div>
 
-                <div className="max-w-xl mx-auto my-5xl">
+                <div className="mx-auto my-5xl max-w-xl">
                     <Blockquote
                         inline={true}
                         quote="I want to put Code Insights on our TV in the kitchen to show all the insights dashboards so that people will just pass by and remember them."

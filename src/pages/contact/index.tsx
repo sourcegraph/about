@@ -22,11 +22,11 @@ const ContactHome: FunctionComponent = () => (
     >
         <ContentPage title={title} description={description}>
             <ContentSection className="pt-3xl pb-xxs">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-md">
-                    <section className="border-1 rounded-lg p-xs">
+                <div className="grid grid-cols-1 gap-md md:grid-cols-2">
+                    <section className="rounded-lg border-1 p-xs">
                         <h4>Product support</h4>
                         <p>For help using Sourcegraph:</p>
-                        <ul className="list-none ml-0">
+                        <ul className="ml-0 list-none">
                             <li>
                                 <a
                                     href="https://github.com/sourcegraph/sourcegraph/issues"
@@ -55,7 +55,7 @@ const ContactHome: FunctionComponent = () => (
                             </li>
                         </ul>
                     </section>
-                    <section className="border-1 rounded-lg p-xs">
+                    <section className="rounded-lg border-1 p-xs">
                         <h4>Sales</h4>
                         <p>For information about products and purchasing:</p>
                         <Link
@@ -69,7 +69,7 @@ const ContactHome: FunctionComponent = () => (
                             Contact sales
                         </Link>
                     </section>
-                    <section className="border-1 rounded-lg p-xs">
+                    <section className="rounded-lg border-1 p-xs">
                         <h4>Jobs</h4>
 
                         <p>For information about joining our team:</p>
@@ -84,9 +84,9 @@ const ContactHome: FunctionComponent = () => (
                             See career opportunities
                         </a>
                     </section>
-                    <section className="border-1 rounded-lg p-xs">
+                    <section className="rounded-lg border-1 p-xs">
                         <h4>Everything else</h4>
-                        <ul className="list-none ml-0">
+                        <ul className="ml-0 list-none">
                             <li>
                                 <a
                                     href="mailto:hi@sourcegraph.com"
@@ -139,8 +139,8 @@ const ContactHome: FunctionComponent = () => (
                                     <LinkedinIcon className="inline" /> Sourcegraph on LinkedIn
                                 </a>
                             </li>
-                            <li className="flex p-relative">
-                                <MapMarkerIcon className="inline mr-1" />
+                            <li className="p-relative flex">
+                                <MapMarkerIcon className="mr-1 inline" />
                                 <div>
                                     Sourcegraph
                                     <br />

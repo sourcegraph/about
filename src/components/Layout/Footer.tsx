@@ -18,10 +18,10 @@ export const Footer: FunctionComponent<Props> = ({ minimal, dark, className }) =
     const year = useMemo(() => new Date().getFullYear(), [])
     return (
         <footer className={classNames(className, { 'pt-16 pb-2': !minimal, 'bg-black text-white': dark })}>
-            <div className="max-w-screen-xl mx-auto px-4">
+            <div className="mx-auto max-w-screen-xl px-4">
                 {!minimal && (
                     <div className="mb-8 flex flex-col-reverse sm:grid sm:grid-cols-12">
-                        <div className="col-span-12 lg:col-span-5 mt-xl sm:mt-0 sm:mb-sm lg:mb-0">
+                        <div className="col-span-12 mt-xl sm:mt-0 sm:mb-sm lg:col-span-5 lg:mb-0">
                             <Link
                                 href="/"
                                 title="Sourcegraph - Universal code search"
@@ -32,14 +32,14 @@ export const Footer: FunctionComponent<Props> = ({ minimal, dark, className }) =
                                 <img
                                     src={dark ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
                                     alt="Sourcegraph - Code Intelligence Platform"
-                                    className="max-w-[264px] w-full h-auto"
+                                    className="h-auto w-full max-w-[264px]"
                                     draggable={false}
                                     width={264}
                                     height={48}
                                 />
                             </Link>
 
-                            <ul className="mx-0 mt-3 list-none flex">
+                            <ul className="mx-0 mt-3 flex list-none">
                                 {socialLinks.items.map(item => (
                                     <li className="mr-5" key={item.title}>
                                         <a
@@ -63,9 +63,9 @@ export const Footer: FunctionComponent<Props> = ({ minimal, dark, className }) =
                             </ul>
                         </div>
 
-                        <div className="col-span-12 lg:col-span-7 sm:grid sm:grid-cols-12">
+                        <div className="col-span-12 sm:grid sm:grid-cols-12 lg:col-span-7">
                             {footerLinks.map(section => (
-                                <div className="mb-md sm:mb-0 sm:col-span-4" key={section.section}>
+                                <div className="mb-md sm:col-span-4 sm:mb-0" key={section.section}>
                                     <Heading size="h5" as="h2" className="mb-xs">
                                         {section.section}
                                     </Heading>
@@ -114,14 +114,14 @@ export const Footer: FunctionComponent<Props> = ({ minimal, dark, className }) =
 
                 <div className={classNames('text-sm', { 'py-4': minimal, 'pt-sm pb-2': !minimal })}>
                     <ul className="ml-0 list-none">
-                        <li className="text-gray-500 mr-lg sm:inline">&copy; {year} Sourcegraph, Inc.</li>
+                        <li className="mr-lg text-gray-500 sm:inline">&copy; {year} Sourcegraph, Inc.</li>
 
                         {postscriptLinks.items.map(item => (
-                            <li key={item.title} className="inline-block mt-xxs sm:mt-0">
+                            <li key={item.title} className="mt-xxs inline-block sm:mt-0">
                                 <Link
                                     key={item.title}
                                     href={item.href}
-                                    className={classNames('p-0 mr-5', {
+                                    className={classNames('mr-5 p-0', {
                                         'text-gray-300': dark,
                                         'text-gray-500': !dark,
                                     })}

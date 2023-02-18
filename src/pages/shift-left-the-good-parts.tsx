@@ -38,11 +38,9 @@ const ShiftLeftPage: FunctionComponent = () => (
         }}
         hero={
             <div className="sg-bg-gradient-venus">
-                <div className="max-w-screen-md px-sm mx-auto py-5xl md:text-center">
+                <div className="mx-auto max-w-screen-md px-sm py-5xl md:text-center">
                     <h1>Shift Left: The good parts</h1>
-                    <h3 className="mt-6 mb-0 md:mx-auto max-w-[750px]">
-                        5 practical ways to help your org shift left
-                    </h3>
+                    <h3 className="mt-6 mb-0 max-w-[750px] md:mx-auto">5 practical ways to help your org shift left</h3>
                 </div>
             </div>
         }

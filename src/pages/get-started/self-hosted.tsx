@@ -13,7 +13,7 @@ export const SelfHostedPage: FunctionComponent = () => (
                 'Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.',
         }}
         hero={
-            <div className="py-md px-6 xl:px-0 max-w-screen-xl mx-auto">
+            <div className="mx-auto max-w-screen-xl py-md px-6 xl:px-0">
                 <h1 className="mb-3">
                     <strong>Get started</strong>
                 </h1>
@@ -42,7 +42,7 @@ export const SelfHostedPage: FunctionComponent = () => (
                     </p>
                 </div>
 
-                <div className="lg:col-span-6 mt-16 lg:mt-0">
+                <div className="mt-16 lg:col-span-6 lg:mt-0">
                     <div className="mb-8">
                         <Install />
                     </div>

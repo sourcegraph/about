@@ -21,11 +21,11 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag
 
     return (
         <Tag className={classNames(Tag === 'li' && 'text-sm')}>
-            <div className="flex my-xxs" title={feature.description}>
+            <div className="my-xxs flex" title={feature.description}>
                 <div className={classNames('text-lg', className)}>{feature.label}</div>
 
                 {feature.description && isSmOrUp && (
-                    <span className="ml-xxs my-auto text-gray-300">
+                    <span className="my-auto ml-xxs text-gray-300">
                         <InformationCircleOutlineIcon size={isMdOrDown ? 25 : 19} />
                     </span>
                 )}

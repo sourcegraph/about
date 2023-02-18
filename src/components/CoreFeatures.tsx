@@ -131,7 +131,7 @@ export const CoreFeatures: FunctionComponent = () => {
 
     return (
         <>
-            <div className="text-center mb-24">
+            <div className="mb-24 text-center">
                 <h2>How developers use Sourcegraph</h2>
                 <p className="mx-auto my-xs max-w-3xl text-lg">
                     Sourcegraph's code intelligence platform is built with features that help you understand, fix, and
@@ -142,18 +142,13 @@ export const CoreFeatures: FunctionComponent = () => {
             {features.map((feature, index) => (
                 <div
                     key={feature.productFeature}
-                    className={classNames(
-                        'grid gap-lg grid-cols-1 lg:grid-cols-2 flex-col-reverse lg:flex-row',
-                        {
-                            'lg:flex-row-reverse': index % 2,
-                            'mb-32': index !== features.length - 1,
-                        }
-                    )}
+                    className={classNames('grid grid-cols-1 flex-col-reverse gap-lg lg:grid-cols-2 lg:flex-row', {
+                        'lg:flex-row-reverse': index % 2,
+                        'mb-32': index !== features.length - 1,
+                    })}
                 >
                     <div>
-                        <span className="mb-2 text-md uppercase font-semibold block">
-                            {feature.productFeature}
-                        </span>
+                        <span className="text-md mb-2 block font-semibold uppercase">{feature.productFeature}</span>
                         <h2>{feature.title}</h2>
                         <p className="mt-sm">{feature.description}</p>
                         <ul className="my-4">
@@ -166,7 +161,7 @@ export const CoreFeatures: FunctionComponent = () => {
                                 href={feature.ctaLink}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="mt-2 btn btn-outline-primary"
+                                className="btn btn-outline-primary mt-2"
                                 title={`Learn more about ${startCase(feature.productFeature)}`}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
@@ -177,7 +172,7 @@ export const CoreFeatures: FunctionComponent = () => {
                         ) : (
                             <Link
                                 href={feature.ctaLink}
-                                className="mt-2 btn btn-outline-primary"
+                                className="btn btn-outline-primary mt-2"
                                 title={'Learn more about ' + startCase(feature.productFeature)}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
@@ -190,7 +185,7 @@ export const CoreFeatures: FunctionComponent = () => {
 
                     <div>
                         <video
-                            className={`shadow w-full max-w-[550px] block mx-auto rounded video-${index}`}
+                            className={`mx-auto block w-full max-w-[550px] rounded shadow video-${index}`}
                             autoPlay={false}
                             muted={true}
                             loop={true}

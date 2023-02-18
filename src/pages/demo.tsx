@@ -18,7 +18,7 @@ const Demo: FunctionComponent = () => (
         }
     >
         <div className="container mx-auto pt-xl">
-            <div className="grid gap-md grid-cols-1 lg:grid-cols-2">
+            <div className="grid grid-cols-1 gap-md lg:grid-cols-2">
                 <div>
                     <p className="mb-8">
                         Want to see Sourcegraph in action and speak with a product expert? Fill out the form below, and

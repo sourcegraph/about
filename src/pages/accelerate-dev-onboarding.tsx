@@ -11,7 +11,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                 'Get sharable links to help new developers ask questions with context, and enable senior devs to share knowledge without running local searches for specific bits of code.',
         }}
     >
-        <div className="container mx-auto py-24 grid gap-md grid-cols-1 lg:grid-cols-2">
+        <div className="container mx-auto grid grid-cols-1 gap-md py-24 lg:grid-cols-2">
             <div>
                 <h1 className="mb-6">Accelerate developer onboarding and decrease time to first commit</h1>
                 <h4>Self-serve onboarding, codebase exploration, and knowledge sharing</h4>
@@ -32,7 +32,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
         </div>
 
         <div className="sg-bg-gradient-saturn">
-            <div className="container mx-auto py-24 max-w-[650px]">
+            <div className="container mx-auto max-w-[650px] py-24">
                 <Blockquote
                     headline="Learn how Convoy increases the efficiency and confidence of entry level developers"
                     quote="For our new developers, Sourcegraph has been invaluable to get to know the repository
@@ -46,12 +46,12 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
             </div>
         </div>
 
-        <div className="container mx-auto text-center py-24 max-w-[650px]">
+        <div className="container mx-auto max-w-[650px] py-24 text-center">
             <h2>Ready to accelerate developer onboarding? Let's talk.</h2>
 
-            <div className="mt-8 mx-auto max-w-[400px]">
+            <div className="mx-auto mt-8 max-w-[400px]">
                 <a
-                    className="mt-8 btn btn-primary block sm:inline-block"
+                    className="btn btn-primary mt-8 block sm:inline-block"
                     href="https://signup.sourcegraph.com"
                     title="Start for free"
                     data-button-style={buttonStyle.primary}

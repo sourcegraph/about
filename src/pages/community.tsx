@@ -14,7 +14,7 @@ export const Community: FunctionComponent = () => (
         heroAndHeaderClassName="bg-blue-200"
         hero={
             <div className="container mx-auto pb-sm">
-                <div className="p-8 grid gap-lg grid-cols-1 lg:grid-cols-2">
+                <div className="grid grid-cols-1 gap-lg p-8 lg:grid-cols-2">
                     <div>
                         <div className="text-uppercase">Join us</div>
                         <h1 className="mb-0">Welcome to the Sourcegraph Community</h1>
@@ -40,7 +40,7 @@ export const Community: FunctionComponent = () => (
                             src="/community/hero_illustration.svg"
                             alt="Sourcegraph Community"
                             title="Sourcegraph Community"
-                            className="w-full mt-5xl"
+                            className="mt-5xl w-full"
                         />
                     </div>
                 </div>
@@ -54,7 +54,7 @@ export const Community: FunctionComponent = () => (
                     {
                         title: 'Events',
                         content: (
-                            <div className="max-w-xl m-auto">
+                            <div className="m-auto max-w-xl">
                                 <p>
                                     Keynote speakers. Job opportunities and partnerships. You can find us in every major
                                     industry event. Give us an air-hug if you see us.
@@ -79,7 +79,7 @@ export const Community: FunctionComponent = () => (
                     {
                         title: 'Sourcegraph Podcast',
                         content: (
-                            <div className="max-w-xl m-auto">
+                            <div className="m-auto max-w-xl">
                                 <YouTube title="Sourcegraph Podcast" id="ZLtqHFxEDm8" />
                                 <p className="pt-xs">
                                     <strong>Subscribe:</strong>&nbsp;
@@ -140,7 +140,7 @@ export const Community: FunctionComponent = () => (
             />
         </ContentSection>
         <ContentSection>
-            <div className="max-w-screen-xl sm:grid sm:grid-cols-2 mx-auto px-4">
+            <div className="mx-auto max-w-screen-xl px-4 sm:grid sm:grid-cols-2">
                 <div className="mb-4 sm:mb-0 sm:pr-4">
                     <h2 className="mb-4">We’d love to hear from you!</h2>
                     <br />
@@ -157,9 +157,9 @@ export const Community: FunctionComponent = () => (
                     </a>
                     .
                 </div>
-                <div className="flex flex-col md:items-center md:flex-row md:justify-center">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-center">
                     <a
-                        className="mb-4 btn btn-secondary md:mr-4 md:mb-0"
+                        className="btn btn-secondary mb-4 md:mr-4 md:mb-0"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"

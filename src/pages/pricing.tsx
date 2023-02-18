@@ -139,8 +139,8 @@ const PricingPage: FunctionComponent = () => {
                 </div>
             }
         >
-            <ContentSection className="grid grid-cols-1 lg:grid-cols-12 gap-sm">
-                <div className="mb-sm md:mb-0 col-span-full md:col-start-2 md:col-span-5">
+            <ContentSection className="grid grid-cols-1 gap-sm lg:grid-cols-12">
+                <div className="col-span-full mb-sm md:col-span-5 md:col-start-2 md:mb-0">
                     <PricingPlan
                         name="Business"
                         description="Full platform access for teams and orgs, all on a single-tenant cloud instance."
@@ -151,14 +151,14 @@ const PricingPage: FunctionComponent = () => {
                     />
                 </div>
 
-                <div className="col-span-full md:col-start-7 md:col-span-5">
+                <div className="col-span-full md:col-span-5 md:col-start-7">
                     <PricingPlan
                         name="Enterprise"
                         description="Enterprise-grade security, scale, and support with custom deployment options."
                         price="Custom pricing"
                         buttons={<EnterpriseButtons />}
                         beforeFeatures={
-                            <div className="text-xl font-semibold mb-sm">Everything in Business, plus:</div>
+                            <div className="mb-sm text-xl font-semibold">Everything in Business, plus:</div>
                         }
                         features={ENTERPRISE_FEATURES_OVERVIEW}
                         {...PLAN_COLORS.enterprise}
@@ -166,35 +166,35 @@ const PricingPage: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <h2 className="text-center mx-auto mb-5 max-w-2xl">The code intelligence platform for modern dev teams</h2>
+            <h2 className="mx-auto mb-5 max-w-2xl text-center">The code intelligence platform for modern dev teams</h2>
             <CustomerLogos />
 
-            <div className="py-3xl md:py-5xl md:max-w-screen-xl mx-auto overflow-hidden md:overflow-visible">
-                <table className="relative border-0 table-fixed border-spacing-0 border-separate">
+            <div className="mx-auto overflow-hidden py-3xl md:max-w-screen-xl md:overflow-visible md:py-5xl">
+                <table className="relative table-fixed border-separate border-spacing-0 border-0">
                     <thead>
-                        <tr className="md:sticky md:top-16 border-0">
-                            <th className="border-0 border-b text-start bg-white p-0 w-1/3">
-                                <div className="lg:h-60 md:h-[157px] sm:h-[140px] h-[133px] md:p-xs p-xxs md:pt-xs pt-md md:pr-xs">
-                                    <h2 className="md:max-w-[250px] text-xl sm:text-4xl lg:text-7xl">
+                        <tr className="border-0 md:sticky md:top-16">
+                            <th className="w-1/3 border-0 border-b bg-white p-0 text-start">
+                                <div className="h-[133px] p-xxs pt-md sm:h-[140px] md:h-[157px] md:p-xs md:pt-xs md:pr-xs lg:h-60">
+                                    <h2 className="text-xl sm:text-4xl md:max-w-[250px] lg:text-7xl">
                                         Compare all features
                                     </h2>
                                 </div>
                             </th>
-                            <th className="border-0 border-b text-start bg-white p-0 w-1/3">
+                            <th className="w-1/3 border-0 border-b bg-white p-0 text-start">
                                 <div
-                                    className={`h-full lg:h-60 md:p-sm p-xxs pb-md border-t-16 border-1 border-gray-200 border-b-0 ${PLAN_COLORS.business.borderColorClass}`}
+                                    className={`h-full border-1 border-t-16 border-b-0 border-gray-200 p-xxs pb-md md:p-sm lg:h-60 ${PLAN_COLORS.business.borderColorClass}`}
                                 >
-                                    <h2 className="text-xl md:text-4xl mb-sm">Business</h2>
-                                    <h4 className="font-normal hidden lg:block mb-sm">$99 per active user/month</h4>
+                                    <h2 className="mb-sm text-xl md:text-4xl">Business</h2>
+                                    <h4 className="mb-sm hidden font-normal lg:block">$99 per active user/month</h4>
                                     <StartFreeButton />
                                 </div>
                             </th>
-                            <th className="border-0 border-b text-start bg-white p-0 w-1/3">
+                            <th className="w-1/3 border-0 border-b bg-white p-0 text-start">
                                 <div
-                                    className={`h-full lg:h-60 md:p-sm p-xxs pb-md border-t-16 border-gray-200  ${PLAN_COLORS.enterprise.borderColorClass}`}
+                                    className={`h-full border-t-16 border-gray-200 p-xxs pb-md md:p-sm lg:h-60  ${PLAN_COLORS.enterprise.borderColorClass}`}
                                 >
-                                    <h2 className="text-xl md:text-4xl mb-sm">Enterprise</h2>
-                                    <h4 className="font-normal hidden lg:block mb-sm">Custom pricing</h4>
+                                    <h2 className="mb-sm text-xl md:text-4xl">Enterprise</h2>
+                                    <h4 className="mb-sm hidden font-normal lg:block">Custom pricing</h4>
                                     <EnterpriseButtons contactUsClassName="hidden lg:block" />
                                 </div>
                             </th>
@@ -203,8 +203,8 @@ const PricingPage: FunctionComponent = () => {
                     {ALL_FEATURES_COMPARED_DATA.map(section => (
                         <tbody key={section.topic}>
                             <tr className="bg-white" key={section.topic}>
-                                <th colSpan={100} className="pt-lg md:p-xs p-xxs text-start border-0">
-                                    <h3 className="text-xl md:text-2xl font-semibold md:font-normal">
+                                <th colSpan={100} className="border-0 p-xxs pt-lg text-start md:p-xs">
+                                    <h3 className="text-xl font-semibold md:text-2xl md:font-normal">
                                         {section.topic}
                                     </h3>
                                 </th>
@@ -218,31 +218,31 @@ const PricingPage: FunctionComponent = () => {
                                     key={feature.label}
                                 >
                                     {/* Feature title */}
-                                    <td className="border-0 md:p-xs p-xxs">
+                                    <td className="border-0 p-xxs md:p-xs">
                                         <PricingPlanFeature
                                             feature={ALL_FEATURE_INFO[feature.label]}
                                             tag="h5"
-                                            className="text-sm sm:text-base font-normal md:font-semibold"
+                                            className="text-sm font-normal sm:text-base md:font-semibold"
                                         />
                                     </td>
                                     {/* Business plan specs */}
-                                    <td className="border-0 border-x-1 md:p-xs p-xxs text-center text-sm sm:text-base align-middle">
+                                    <td className="border-0 border-x-1 p-xxs text-center align-middle text-sm sm:text-base md:p-xs">
                                         {typeof feature.business === 'string' ? (
                                             feature.business
                                         ) : feature.business ? (
                                             <CheckIcon
-                                                className={`mr-2 icon-inline ${PLAN_COLORS.business.textColorClass} inline`}
+                                                className={`icon-inline mr-2 ${PLAN_COLORS.business.textColorClass} inline`}
                                             />
                                         ) : null}
                                         {feature.disclaimer && <i className="block text-sm">{feature.disclaimer}</i>}
                                     </td>
                                     {/* Enterprise plan specs */}
-                                    <td className="border-0 md:p-xs p-xxs text-center text-sm sm:text-base align-middle">
+                                    <td className="border-0 p-xxs text-center align-middle text-sm sm:text-base md:p-xs">
                                         {typeof feature.enterprise === 'string' ? (
                                             feature.enterprise
                                         ) : feature.enterprise ? (
                                             <CheckIcon
-                                                className={`mr-2 icon-inline ${PLAN_COLORS.enterprise.textColorClass} inline`}
+                                                className={`icon-inline mr-2 ${PLAN_COLORS.enterprise.textColorClass} inline`}
                                             />
                                         ) : null}
                                         {feature.disclaimer && <i className="block text-sm">{feature.disclaimer}</i>}
@@ -266,15 +266,15 @@ const PricingPage: FunctionComponent = () => {
             />
 
             <ContentSection className="grid grid-cols-5">
-                <h2 className="col-span-full md:col-span-2 mb-md max-w-md">Frequently asked questions</h2>
+                <h2 className="col-span-full mb-md max-w-md md:col-span-2">Frequently asked questions</h2>
 
                 <div className="col-span-full md:col-span-3">
                     {faqData.map((item, index) => (
-                        <div key={item.q} className="border-t-1 border-gray-200 max-w-2xl mb-sm">
-                            <div className="flex justify-between items-center">
-                                <h4 className="text-start mt-sm">{item.q}</h4>
+                        <div key={item.q} className="mb-sm max-w-2xl border-t-1 border-gray-200">
+                            <div className="flex items-center justify-between">
+                                <h4 className="mt-sm text-start">{item.q}</h4>
                             </div>
-                            <div className="max-w-xl mt-xs">{item.a}</div>
+                            <div className="mt-xs max-w-xl">{item.a}</div>
                         </div>
                     ))}
                 </div>

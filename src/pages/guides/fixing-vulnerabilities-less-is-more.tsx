@@ -43,9 +43,7 @@ export const Guide: FunctionComponent = () => (
                         Download “<strong>Less is more: Finding and fixing security vulnerabilities</strong>” to learn:
                     </p>
                     <ul>
-                        <li className="mb-2">
-                            How simplicity complements complexity in the pursuit of code security
-                        </li>
+                        <li className="mb-2">How simplicity complements complexity in the pursuit of code security</li>
                         <li className="mb-2">
                             What today’s code security ecosystem lacks and what that means for your business
                         </li>

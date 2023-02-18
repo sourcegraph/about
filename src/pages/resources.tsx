@@ -91,8 +91,8 @@ const Resources: FunctionComponent = () => {
 
             <ContentSection background="white" className="max-w-[1062px]">
                 {!!noResults && (
-                    <div className="text-center max-w-md mx-auto mb-3xl">
-                        <span className="bg-violet-100 text-violet-400 w-md h-md p-1 rounded-full inline-flex items-center justify-center mb-xxs">
+                    <div className="mx-auto mb-3xl max-w-md text-center">
+                        <span className="mb-xxs inline-flex h-md w-md items-center justify-center rounded-full bg-violet-100 p-1 text-violet-400">
                             <AlertOutlineIcon className="inline" size={18} />
                         </span>
                         <h4>We're stumped!</h4>
@@ -102,7 +102,7 @@ const Resources: FunctionComponent = () => {
                     </div>
                 )}
 
-                <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-x-sm gap-y-xl">
+                <div className="grid gap-x-sm gap-y-xl sm:grid-cols-2 xl:grid-cols-3">
                     {resources.map(resource => (
                         <Card key={resource.title} resource={resource} />
                     ))}

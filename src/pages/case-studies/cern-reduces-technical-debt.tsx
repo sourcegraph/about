@@ -55,7 +55,7 @@ export const CaseStudy: FunctionComponent = () => (
                         src="/case-studies/chris-roderick-cern.jpg"
                         alt="Chris Roderick, Applications and Services Section Leader, CERN"
                         title="Chris Roderick, Applications and Services Section Leader, CERN"
-                        className="rounded-full mx-auto block flex-grow-0 max-w-[150px]"
+                        className="mx-auto block max-w-[150px] flex-grow-0 rounded-full"
                     />
                     <div className="flex-1">
                         <Blockquote

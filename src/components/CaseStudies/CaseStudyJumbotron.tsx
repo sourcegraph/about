@@ -23,7 +23,7 @@ export const CaseStudyJumbotron: FunctionComponent<Props> = ({
             <BackButton href="/case-studies" text="Case Studies" light={color === 'dark'} />
         </div>
         <div className="container mx-auto py-4 text-center">
-            {logo && <img className="max-h-12 my-3 mx-auto" src={logo} alt={customer} />}
+            {logo && <img className="my-3 mx-auto max-h-12" src={logo} alt={customer} />}
             {children}
         </div>
     </div>

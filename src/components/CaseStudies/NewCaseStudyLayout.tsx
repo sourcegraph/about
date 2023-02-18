@@ -22,7 +22,7 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, childre
 
             <ContentSection background="white">
                 <h2 className="mb-2xl">Explore other case studies</h2>
-                <div className="grid grid-cols-1 xs:grid-cols-2 gap-xl">
+                <div className="grid grid-cols-1 gap-xl xs:grid-cols-2">
                     {uniqueCaseStudyList.map(study => (
                         <div key={study.name} className="flex items-end">
                             <CaseStudyCard study={study} />

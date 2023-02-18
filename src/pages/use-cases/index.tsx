@@ -47,7 +47,7 @@ const UseCases: React.FunctionComponent = () => (
         hero={
             <Background variant="lightNebulousAurora">
                 <div className="container mx-auto py-16 px-8">
-                    <div className="grid gap-lg grid-cols-1 lg:grid-cols-2">
+                    <div className="grid grid-cols-1 gap-lg lg:grid-cols-2">
                         <div>
                             <h1 className="mb-0">Our customers move faster with Sourcegraph</h1>
                             <p className="my-8">
@@ -59,15 +59,12 @@ const UseCases: React.FunctionComponent = () => (
                         <div className="max-w-xl">
                             <h4 className="mt-4 pb-xxs text-xl">See how customers use Sourcegraph to...</h4>
 
-                            <ul className="list-none ml-0">
+                            <ul className="ml-0 list-none">
                                 {features.map((feature: { id: string; description: string }) => (
-                                    <li
-                                        key={feature.id}
-                                        className="bg-white [&:not(:last-child)]:border-b-1 m-0 p-0"
-                                    >
+                                    <li key={feature.id} className="m-0 bg-white p-0 [&:not(:last-child)]:border-b-1">
                                         <Link
                                             href={`#${kebabCase(feature.id)}`}
-                                            className="px-xs py-xxs flex justify-between items-center no-underline"
+                                            className="flex items-center justify-between px-xs py-xxs no-underline"
                                             title={feature.description}
                                             data-button-style={buttonStyle.textWithArrow}
                                             data-button-location={buttonLocation.hero}

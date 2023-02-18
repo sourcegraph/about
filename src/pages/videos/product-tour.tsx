@@ -15,7 +15,7 @@ const Webinar: FunctionComponent = () => {
             hero={<Hero variant="marsCode" title={title} subtitle={description} />}
         >
             <ContentSection>
-                <div className="max-w-screen-md mx-auto">
+                <div className="mx-auto max-w-screen-md">
                     <YouTube id="7JeHvfwsxIY" title={title} />
                 </div>
             </ContentSection>

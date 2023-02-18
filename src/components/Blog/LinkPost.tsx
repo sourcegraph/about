@@ -45,7 +45,7 @@ export const LinkPost: FunctionComponent<Props> = ({ post, content, url, classNa
                 )}
             </div>
 
-            <div className="pt-0 bg-transparent border-t-0">
+            <div className="border-t-0 bg-transparent pt-0">
                 <Link
                     href={url}
                     className="text-gray-500"

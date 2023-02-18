@@ -40,17 +40,14 @@ export const Modal: FunctionComponent<Modal> = ({ title, children, open, handleC
         <Portal>
             <div
                 className={classNames(
-                    'fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-[9999] px-sm',
-                    { 'hidden': !open, 'block animate-fadeIn': open }
+                    'fixed top-0 left-0 z-[9999] flex h-full w-full items-center justify-center bg-black/50 px-sm',
+                    { hidden: !open, 'block animate-fadeIn': open }
                 )}
             >
-                <div
-                    className="relative max-w-2xl w-full mx-auto bg-white p-lg rounded-lg"
-                    ref={modalReference}
-                >
+                <div className="relative mx-auto w-full max-w-2xl rounded-lg bg-white p-lg" ref={modalReference}>
                     <h4 className="mb-md pr-lg">{title}</h4>
                     <CloseIcon
-                        className="absolute top-6 right-6 text-blurple-400 cursor-pointer"
+                        className="absolute top-6 right-6 cursor-pointer text-blurple-400"
                         onClick={handleClose}
                     />
                     {children}

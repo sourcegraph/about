@@ -33,9 +33,7 @@ export const CaseStudy: FunctionComponent = () => (
                     ensuring that more children are found, faster.
                 </p>
 
-                <h2 className="pt-md pb-1">
-                    Sunsetting deprecated systems was costly and risked production stability
-                </h2>
+                <h2 className="pt-md pb-1">Sunsetting deprecated systems was costly and risked production stability</h2>
                 <p>
                     Determining which code relied on legacy architecture was difficult. Developers took too long to
                     ensure that changes to legacy systems didn't affect production stability.

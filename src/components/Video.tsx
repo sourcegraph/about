@@ -53,9 +53,9 @@ export const Video: FunctionComponent<Video> = ({
         {caption && (
             <figcaption className="mt-3">
                 {link ? (
-                    <a href={link} className="not-italic font-normal flex">
+                    <a href={link} className="flex font-normal not-italic">
                         {caption}
-                        {linkIcon && <OpenInNewIcon className="ml-xxs my-auto" size={18} />}
+                        {linkIcon && <OpenInNewIcon className="my-auto ml-xxs" size={18} />}
                     </a>
                 ) : (
                     caption

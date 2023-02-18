@@ -142,19 +142,19 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <XmlIcon className="mb-6 text-blurple-400 inline" size={40} />,
+        icon: <XmlIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Quickly find trustworthy code to reuse',
         description:
             'Search your entire codebase to discover existing code to reuse. Gather crucial context, like who wrote the code, when, and where it’s used.',
     },
     {
-        icon: <FolderUploadOutlineIcon className="mb-6 text-blurple-400 inline" size={40} />,
+        icon: <FolderUploadOutlineIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Safely maintain and improve shared libraries',
         description:
             'Automate PRs to push global updates. Get alerts when out-of-date libraries or deprecated functions are used, and eliminate duplicative code.',
     },
     {
-        icon: <AccountGroupOutlineIcon className="mb-6 text-blurple-400 inline" size={40} />,
+        icon: <AccountGroupOutlineIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Understand your team’s code reuse efforts',
         description:
             'Code maintainers or stakeholders can easily track and understand innersourcing and code reuse trends within the team.',

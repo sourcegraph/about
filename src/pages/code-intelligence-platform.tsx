@@ -26,13 +26,13 @@ const CarouselItem: FunctionComponent<{
     text: string
 }> = props => (
     <>
-        <div className="mb-4 text-center bg-violet-100 rounded-full max-w-[40px]">
-            <div className="p-2 text-violet-400 flex justify-center">
+        <div className="mb-4 max-w-[40px] rounded-full bg-violet-100 text-center">
+            <div className="flex justify-center p-2 text-violet-400">
                 <props.icon />
             </div>
         </div>
         <h3>{props.header}</h3>
-        <h4 className="my-4 lg:hidden block lg:mb-0">{props.subtitle}</h4>
+        <h4 className="my-4 block lg:mb-0 lg:hidden">{props.subtitle}</h4>
         <p className="py-4">{props.text}</p>
     </>
 )
@@ -155,15 +155,15 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
         }}
         hero={
             <div className="sg-bg-gradient-saturn">
-                <div className="container mx-auto py-16 lg:py-5xl md:text-center">
+                <div className="container mx-auto py-16 md:text-center lg:py-5xl">
                     <h1>Key traits of a code intelligence platform</h1>
-                    <h3 className="py-6 md:mx-auto max-w-[750px]">
+                    <h3 className="max-w-[750px] py-6 md:mx-auto">
                         Sourcegraph helps developers save time and move faster, regardless of how complex your codebase
                         is: any code host, any language, and any repository.
                     </h3>
 
                     <a
-                        className="mt-8 btn btn-primary block sm:inline-block"
+                        className="btn btn-primary mt-8 block sm:inline-block"
                         href="https://signup.sourcegraph.com"
                         title="Start for free"
                         data-button-style={buttonStyle.primary}
@@ -306,7 +306,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                 </p>
 
                 <a
-                    className="mt-8 btn btn-primary block sm:inline-block"
+                    className="btn btn-primary mt-8 block sm:inline-block"
                     href="https://signup.sourcegraph.com"
                     title="Start for free"
                     data-button-style={buttonStyle.primary}

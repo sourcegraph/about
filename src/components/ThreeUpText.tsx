@@ -28,9 +28,9 @@ const ItemTitle = ({ text, small }: ItemTitle): ReactElement => {
     return (
         <Tag
             className={classNames('mb-4', {
-                'text-blurple-400 font-semibold': !small,
+                'font-semibold text-blurple-400': !small,
                 'text-black': small,
-                'md:max-w-xs md:mx-auto': typeof text === 'string' && text.length > 20,
+                'md:mx-auto md:max-w-xs': typeof text === 'string' && text.length > 20,
             })}
         >
             {text}
@@ -43,7 +43,7 @@ export const ThreeUpText: FunctionComponent<ThreeUpText> = ({ title, subTitle, i
         {title && (
             <h2
                 className={classNames('md:text-center', {
-                    'max-w-2xl mx-auto': !fullWidthTitle,
+                    'mx-auto max-w-2xl': !fullWidthTitle,
                     'mb-16': !subTitle,
                     'mb-4': subTitle,
                 })}
@@ -54,11 +54,11 @@ export const ThreeUpText: FunctionComponent<ThreeUpText> = ({ title, subTitle, i
 
         {subTitle && <p className="mb-16">{subTitle}</p>}
 
-        <div className="sm:max-w-md sm:mx-auto lg:max-w-none lg:grid lg:grid-cols-12 lg:gap-8">
+        <div className="sm:mx-auto sm:max-w-md lg:grid lg:max-w-none lg:grid-cols-12 lg:gap-8">
             {items.map((item, index) => (
                 <div
                     key={`item-${index + 1}-${item.description}`}
-                    className="col-span-12 lg:mb-0 mb-8 sm:max-w-md sm:w-full lg:col-span-4 lg:max-w-none"
+                    className="col-span-12 mb-8 sm:w-full sm:max-w-md lg:col-span-4 lg:mb-0 lg:max-w-none"
                 >
                     {item.icon && <div className="mb-sm">{item.icon}</div>}
                     <ItemTitle text={item.subtitle} small={!!item.icon} />

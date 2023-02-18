@@ -100,7 +100,7 @@ const CareersPage: FunctionComponent = () => {
                     around the globe.
                 </h3>
                 <a
-                    className="mt-6 btn btn-primary"
+                    className="btn btn-primary mt-6"
                     href="https://grnh.se/c685479c4us"
                     title="Explore our jobs"
                     target="_blank"
@@ -114,25 +114,23 @@ const CareersPage: FunctionComponent = () => {
                 </a>
             </ContentSection>
 
-            <div className="text-center bg-white">
+            <div className="bg-white text-center">
                 <img
                     src="../careers/careers_hero_img.jpg"
                     alt="Sourcegraph team members jumping"
-                    className="max-w-screen-2xl w-full hidden md:inline"
+                    className="hidden w-full max-w-screen-2xl md:inline"
                 />
                 <img
                     src="../careers/careers_hero_img_mobile.jpg"
                     alt="Sourcegraph team members jumping"
-                    className="w-full inline md:hidden"
+                    className="inline w-full md:hidden"
                 />
             </div>
 
             <ContentSection background="white">
-                <div className="flex-wrap flex">
+                <div className="flex flex-wrap">
                     <div className="m-auto">
-                        <h2 className="mx-auto text-center max-w-2xl mb-6">
-                            Happy, healthy, and always in the flow.
-                        </h2>
+                        <h2 className="mx-auto mb-6 max-w-2xl text-center">Happy, healthy, and always in the flow.</h2>
                         <p className="mx-auto text-center">
                             Our teammates are our most valuable resource. That's why we provide total rewards that are
                             highly competitive and allow you to thrive both personally and professionally.
@@ -161,9 +159,7 @@ const CareersPage: FunctionComponent = () => {
                     title="Benefits"
                     items={[
                         {
-                            icon: (
-                                <img className="mb-2 sm:mx-auto" src="/careers/Remote.svg" alt="Map pin icon" />
-                            ),
+                            icon: <img className="mb-2 sm:mx-auto" src="/careers/Remote.svg" alt="Map pin icon" />,
                             subtitle: 'Work fully remote',
                             description: 'Anywhere and at anytime',
                         },
@@ -173,30 +169,18 @@ const CareersPage: FunctionComponent = () => {
                             description: '...with a 30-day minimum',
                         },
                         {
-                            icon: (
-                                <img className="mb-2 sm:mx-auto" src="/careers/Travel.svg" alt="Airplane icon" />
-                            ),
+                            icon: <img className="mb-2 sm:mx-auto" src="/careers/Travel.svg" alt="Airplane icon" />,
                             subtitle: 'Generous travel budgets',
                             description: 'Meet your team across the globe',
                         },
                         {
-                            icon: (
-                                <img
-                                    className="mb-2 sm:mx-auto"
-                                    src="/careers/Salary.svg"
-                                    alt="Dollar bill icon"
-                                />
-                            ),
+                            icon: <img className="mb-2 sm:mx-auto" src="/careers/Salary.svg" alt="Dollar bill icon" />,
                             subtitle: 'Competitive pay + equity',
                             description: 'So you can live your best life',
                         },
                         {
                             icon: (
-                                <img
-                                    className="mb-2 sm:mx-auto"
-                                    src="/careers/Medical.svg"
-                                    alt="Medical cross icon"
-                                />
+                                <img className="mb-2 sm:mx-auto" src="/careers/Medical.svg" alt="Medical cross icon" />
                             ),
                             subtitle: 'Medical, dental, and vision',
                             description: 'Got you covered 100% (US only)',
@@ -235,13 +219,7 @@ const CareersPage: FunctionComponent = () => {
                             description: 'Take care of yourself on our dime',
                         },
                         {
-                            icon: (
-                                <img
-                                    className="mb-2 sm:mx-auto"
-                                    src="/careers/FamilyPlanning.svg"
-                                    alt="Baby icon"
-                                />
-                            ),
+                            icon: <img className="mb-2 sm:mx-auto" src="/careers/FamilyPlanning.svg" alt="Baby icon" />,
                             subtitle: 'Family Planning benefits',
                             description: '$25K, because family comes first',
                         },
@@ -250,11 +228,11 @@ const CareersPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection background="lightNebulousSaturn1">
-                <h2 className="text-center mb-16">We value:</h2>
-                <div className="grid gap-lg grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+                <h2 className="mb-16 text-center">We value:</h2>
+                <div className="mx-auto grid max-w-6xl grid-cols-2 gap-lg lg:grid-cols-4">
                     {valueItems.map(item => (
                         <div key={item.value}>
-                            <div className="flex flex-col items-center min-h-[250px]">
+                            <div className="flex min-h-[250px] flex-col items-center">
                                 <h4 className="">{item.value}</h4>
                                 <p className="text-center">{item.description}</p>
                                 {item.img}
@@ -265,7 +243,7 @@ const CareersPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection background="white">
-                <div className="flex flex-col md:flex-row px-6 max-w-screen-xl mx-auto items-center">
+                <div className="mx-auto flex max-w-screen-xl flex-col items-center px-6 md:flex-row">
                     <div>
                         <h2 className="mb-6">Our employees say we're a Great Place to Work&trade;</h2>
                         <p>
@@ -273,7 +251,7 @@ const CareersPage: FunctionComponent = () => {
                             Certification&trade; proves it.
                         </p>
                     </div>
-                    <div className="max-h-[600px] flex justify-center">
+                    <div className="flex max-h-[600px] justify-center">
                         <img
                             className="w-full max-w-[450px]"
                             src="/careers/great-place-to-work.png"
@@ -286,7 +264,7 @@ const CareersPage: FunctionComponent = () => {
             <ContentSection background="white">
                 <div className="flex flex-col items-center text-center">
                     <a
-                        className="my-2 btn btn-primary"
+                        className="btn btn-primary my-2"
                         href="https://grnh.se/c685479c4us"
                         title="Explore our open roles"
                         target="_blank"

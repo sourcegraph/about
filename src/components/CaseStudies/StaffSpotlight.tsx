@@ -20,20 +20,18 @@ export const StaffSpotlight: FunctionComponent<{
                     <p>{about}</p>
                 </div>
 
-                <div
-                    className={`grid gap-6 grid-cols-1 md:grid-cols-${staff.length} mt-16 max-w-screen-lg mx-auto`}
-                >
+                <div className={`grid grid-cols-1 gap-6 md:grid-cols-${staff.length} mx-auto mt-16 max-w-screen-lg`}>
                     {staff.map(a => (
                         <div key={a.name} className="md:text-center">
                             <img
-                                className="rounded-full max-w-[150px] inline mb-sm"
+                                className="mb-sm inline max-w-[150px] rounded-full"
                                 width={150}
                                 height={150}
                                 src={a.image}
                                 alt={a.name}
                             />
                             <h3>{a.name}</h3>
-                            <p className="text-gray-400 md:max-w-[250px] mx-auto">{a.title}</p>
+                            <p className="mx-auto text-gray-400 md:max-w-[250px]">{a.title}</p>
                         </div>
                     ))}
                 </div>
@@ -44,7 +42,7 @@ export const StaffSpotlight: FunctionComponent<{
                 {staff[0].image && (
                     <div className="mb-sm md:mb-0">
                         <img
-                            className="rounded-full w-full max-w-[150px]"
+                            className="w-full max-w-[150px] rounded-full"
                             width={150}
                             src={staff[0].image}
                             alt={staff[0].name}

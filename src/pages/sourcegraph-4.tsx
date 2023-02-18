@@ -31,15 +31,15 @@ const Sourcegraph4: FunctionComponent = () => (
         headerColorTheme="dark"
         hero={
             <div className="px-sm py-3xl md:py-5xl">
-                <div className="max-w-[850px] mx-auto text-center text-white">
+                <div className="mx-auto max-w-[850px] text-center text-white">
                     <img
                         src="/sourcegraph/sourcegraph-4-starship-reflected.svg"
                         alt="Sourcegraph 4.0 Starship"
-                        className="mx-auto max-w-screen-md w-full"
+                        className="mx-auto w-full max-w-screen-md"
                     />
 
                     <h1 className="mb-sm mt-3xl sm:mt-36">From code search to code intelligence</h1>
-                    <h3 className="mb-5xl mx-auto max-w-2xl">
+                    <h3 className="mx-auto mb-5xl max-w-2xl">
                         Sourcegraph 4.0, the latest release of our code intelligence platform, is now available.
                     </h3>
 
@@ -107,7 +107,7 @@ const Sourcegraph4: FunctionComponent = () => (
                     items={[
                         {
                             icon: (
-                                <span className="inline-block bg-violet-100 text-violet-400 rounded-lg p-3">
+                                <span className="inline-block rounded-lg bg-violet-100 p-3 text-violet-400">
                                     <MagnifyIcon />
                                 </span>
                             ),
@@ -116,7 +116,7 @@ const Sourcegraph4: FunctionComponent = () => (
                         },
                         {
                             icon: (
-                                <span className="inline-block bg-violet-100 text-violet-400 rounded-lg p-3">
+                                <span className="inline-block rounded-lg bg-violet-100 p-3 text-violet-400">
                                     <CloudUploadIcon />
                                 </span>
                             ),
@@ -125,7 +125,7 @@ const Sourcegraph4: FunctionComponent = () => (
                         },
                         {
                             icon: (
-                                <span className="inline-block bg-violet-100 text-violet-400 rounded-lg p-3">
+                                <span className="inline-block rounded-lg bg-violet-100 p-3 text-violet-400">
                                     <img src="/icons/batch-changes.svg" alt="" width={24} height={24} />
                                 </span>
                             ),
@@ -142,7 +142,7 @@ const Sourcegraph4: FunctionComponent = () => (
                         },
                         {
                             icon: (
-                                <span className="inline-block bg-violet-100 text-violet-400 rounded-lg p-3">
+                                <span className="inline-block rounded-lg bg-violet-100 p-3 text-violet-400">
                                     <HeartOutlineIcon />
                                 </span>
                             ),
@@ -151,7 +151,7 @@ const Sourcegraph4: FunctionComponent = () => (
                         },
                         {
                             icon: (
-                                <span className="inline-block bg-violet-100 text-violet-400 rounded-lg p-3">
+                                <span className="inline-block rounded-lg bg-violet-100 p-3 text-violet-400">
                                     <BarChartIcon />
                                 </span>
                             ),
@@ -161,7 +161,7 @@ const Sourcegraph4: FunctionComponent = () => (
                         },
                         {
                             icon: (
-                                <span className="inline-block bg-violet-100 text-violet-400 rounded-lg p-3">
+                                <span className="inline-block rounded-lg bg-violet-100 p-3 text-violet-400">
                                     <UpdateIcon />
                                 </span>
                             ),
@@ -172,15 +172,15 @@ const Sourcegraph4: FunctionComponent = () => (
                 />
             </div>
 
-            <div className="max-w-5xl mx-auto text-center">
+            <div className="mx-auto max-w-5xl text-center">
                 <h2 className="mb-3xl">Experience 4.0 with the Sourcegraph Engineering team</h2>
 
-                <div className="max-w-[800px] mx-auto aspect-video">
+                <div className="mx-auto aspect-video max-w-[800px]">
                     <TwitchPlayer video="1604525409" autoplay={false} width="100%" height="100%" />
                 </div>
             </div>
 
-            <h2 className="mt-5xl mb-3xl max-w-[700px] mx-auto text-center">
+            <h2 className="mx-auto mt-5xl mb-3xl max-w-[700px] text-center">
                 Join these engineering orgs pushing forward modern software development
             </h2>
 

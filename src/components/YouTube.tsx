@@ -44,7 +44,7 @@ export const YouTube: FunctionComponent<YouTube> = ({
         <figure>
             <div className={`aspect-video ${className}`}>
                 <iframe
-                    className="w-full h-full"
+                    className="h-full w-full"
                     src={`https://www.youtube.com/embed/${id}?autoplay=${autoplay ? 1 : 0}&cc_load_policy=${
                         captions ? 1 : 0
                     }&start=${start}&end=${end}&loop=${loop ? 1 : 0}&controls=${controls ? 1 : 0}&modestbranding=${

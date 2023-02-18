@@ -28,7 +28,7 @@ const Home: FunctionComponent = () => (
         hero={<HomeHero />}
     >
         <ContentSection background="white">
-            <div className="mx-auto text-center max-w-[700px]">
+            <div className="mx-auto max-w-[700px] text-center">
                 <h2 className="mb-2">
                     Over{' '}
                     <Link
@@ -69,11 +69,9 @@ const Home: FunctionComponent = () => (
 
 const HomeHero: FunctionComponent = () => (
     <div className="text-white">
-        <div className="px-sm mx-auto pt-md md:pt-2xl text-center">
+        <div className="mx-auto px-sm pt-md text-center md:pt-2xl">
             <h1 className="text-4xl leading-10 sm:text-6xl md:text-[3.5rem] lg:text-[4rem] lg:leading-[1]">
-                <span className="mb-2 text-transparent sg-bg-gradient-purple-white bg-clip-text">
-                    Find. Fix. Flow.
-                </span>
+                <span className="sg-bg-gradient-purple-white mb-2 bg-clip-text text-transparent">Find. Fix. Flow.</span>
             </h1>
 
             <Heading size="h5" as="h2" className="my-md mx-auto max-w-4xl !font-normal">
@@ -82,7 +80,7 @@ const HomeHero: FunctionComponent = () => (
                 universal&nbsp;code&nbsp;search+nav and large-scale&nbsp;fixes/refactors.
             </Heading>
 
-            <p className="text-gray-200 my-md">
+            <p className="my-md text-gray-200">
                 Works&nbsp;alongside your code&nbsp;host and editor.
                 <br />
                 Built on{' '}
@@ -90,7 +88,7 @@ const HomeHero: FunctionComponent = () => (
                     href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-inherit underline decoration-1 decoration-[#ffffff55] decoration-dotted underline-offset-4"
+                    className="text-inherit underline decoration-[#ffffff55] decoration-dotted decoration-1 underline-offset-4"
                 >
                     open source
                 </a>
@@ -110,7 +108,7 @@ const HomeHero: FunctionComponent = () => (
                 <DemoVideo
                     video="homepage-demo-202301"
                     splash={true}
-                    className="mx-auto w-full max-w-4xl bg-violet-750 rounded-lg"
+                    className="mx-auto w-full max-w-4xl rounded-lg bg-violet-750"
                     splashClassName="rounded-lg"
                 />
             </div>
@@ -124,10 +122,8 @@ const SolidColorBottomHalfSection: React.FunctionComponent<{
     children: React.ReactNode
 }> = ({ className, bottomHalfClassName, children }) => (
     <div className={classNames('relative', className)}>
-        <div
-            className={classNames('absolute bottom-0 left-0 right-0 h-1/2 z-0', bottomHalfClassName)}
-        />
-        <div className="z-10 sticky">{children}</div>
+        <div className={classNames('absolute bottom-0 left-0 right-0 z-0 h-1/2', bottomHalfClassName)} />
+        <div className="sticky z-10">{children}</div>
     </div>
 )
 

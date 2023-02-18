@@ -33,7 +33,7 @@ const COLOR_CLASSES: Record<NonNullable<AlertProps['type']>, { backgroundColor: 
 export const Alert: FunctionComponent<AlertProps> = ({ type = 'primary', children }) => (
     <div
         className={classNames(
-            'px-sm py-xs rounded-lg border-1 my-8',
+            'my-8 rounded-lg border-1 px-sm py-xs',
             COLOR_CLASSES[type].backgroundColor,
             COLOR_CLASSES[type].borderColor
         )}

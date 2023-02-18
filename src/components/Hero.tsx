@@ -47,8 +47,8 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
 
     const mainContent = (
         <div
-            className={classNames(product && product !== 'sourcegraph cloud' && 'max-w-[700px] w-full', {
-                'md:text-center md:mx-auto': centerContent,
+            className={classNames(product && product !== 'sourcegraph cloud' && 'w-full max-w-[700px]', {
+                'md:mx-auto md:text-center': centerContent,
             })}
         >
             {backButton && <BackButton href={backButton.link} text={backButton.text} />}
@@ -58,18 +58,16 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
                 {product && <h6 className="mb-2">{product}</h6>}
             </div>
 
-            {description && <p className="max-w-xl mt-sm text-lg">{description}</p>}
+            {description && <p className="mt-sm max-w-xl text-lg">{description}</p>}
 
             {subtitle && (
-                <h3 className={classNames('max-w-4xl mt-sm', { 'mx-auto text-centeZ': centerContent })}>
-                    {subtitle}
-                </h3>
+                <h3 className={classNames('mt-sm max-w-4xl', { 'text-centeZ mx-auto': centerContent })}>{subtitle}</h3>
             )}
 
             {cta && (
                 <div
                     className={classNames('mt-md flex flex-col', {
-                        'items-center mx-auto': centerContent,
+                        'mx-auto items-center': centerContent,
                     })}
                 >
                     {cta}
@@ -80,7 +78,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
                 <img
                     src={floatingImg}
                     alt={floatingImg}
-                    className="hidden md:block absolute bottom--80 left-0 w-full bg-transparent h-[450px]"
+                    className="absolute bottom--80 left-0 hidden h-[450px] w-full bg-transparent md:block"
                 />
             )}
         </div>

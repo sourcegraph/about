@@ -49,21 +49,18 @@ export const Install: FunctionComponent = () => {
 
     return (
         <div
-            className={classNames(
-                'bg-white rounded-[20px] overflow-hidden shadow-[-4px_4px_10px_0_rgba(0,0,0,0.25)]',
-                {
-                    'animate-fadeOutSlow': close,
-                }
-            )}
+            className={classNames('overflow-hidden rounded-[20px] bg-white shadow-[-4px_4px_10px_0_rgba(0,0,0,0.25)]', {
+                'animate-fadeOutSlow': close,
+            })}
         >
-            <div className="flex items-center px-4 bg-[#f1f1f1] h-11">
+            <div className="flex h-11 items-center bg-[#f1f1f1] px-4">
                 {['close', 'minimize', 'fullscreen'].map(action => (
                     <span
                         key={action}
-                        className={classNames('bg-white rounded-full mr-2 w-3.5 h-3.5', {
+                        className={classNames('mr-2 h-3.5 w-3.5 rounded-full bg-white', {
                             'hover:bg-vermillion-300': action === 'close',
-                            'hover:bg-lemon-300 cursor-help': action === 'minimize',
-                            'hover:bg-green-400 cursor-help': action === 'fullscreen',
+                            'cursor-help hover:bg-lemon-300': action === 'minimize',
+                            'cursor-help hover:bg-green-400': action === 'fullscreen',
                         })}
                         onClick={action === 'close' ? () => setClose(true) : undefined}
                         onKeyDown={action === 'close' ? () => setClose(true) : undefined}
@@ -85,11 +82,11 @@ export const Install: FunctionComponent = () => {
                         className="ml-4 align-text-top"
                         tabIndex={0}
                     >
-                        <CopyIcon className="inline align-text-top w-9 h-9" />
+                        <CopyIcon className="inline h-9 w-9 align-text-top" />
                     </span>
                 </h3>
 
-                <code className="block my-6 pr-8 text-lg bg-white">
+                <code className="my-6 block bg-white pr-8 text-lg">
                     <small className={classNames('break-words', { 'animate-flash-background': copied })}>
                         {installText}
                     </small>

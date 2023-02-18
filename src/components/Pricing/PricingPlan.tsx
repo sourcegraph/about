@@ -29,23 +29,21 @@ export const PricingPlan: FunctionComponent<Props> = ({
     borderColorClass,
     textColorClass,
 }) => (
-    <div
-        className={`h-full sm:p-md p-xs shadow-lg border-t-16 rounded border-gray-200 ${borderColorClass}`}
-    >
+    <div className={`h-full rounded border-t-16 border-gray-200 p-xs shadow-lg sm:p-md ${borderColorClass}`}>
         <h2 className="mb-sm font-semibold">{name}</h2>
         <h4 className="my-sm">
             <span className="text-xl">{price}</span>{' '}
             {priceInterval && <span className="text-base font-normal">{priceInterval}</span>}
         </h4>
-        <h3 className="font-normal max-w-sm text-lg my-sm">{description}</h3>
+        <h3 className="my-sm max-w-sm text-lg font-normal">{description}</h3>
         {buttons}
 
         {(beforeFeatures || features.length > 0) && (
-            <div className="py-sm ml-0">
+            <div className="ml-0 py-sm">
                 {beforeFeatures}
                 {features.map(node => (
-                    <div key={node.topic} className="px-0 bg-transparent border-0">
-                        <div className="text-xl font-semibold flex items-center">
+                    <div key={node.topic} className="border-0 bg-transparent px-0">
+                        <div className="flex items-center text-xl font-semibold">
                             <CheckIcon className={`mr-2 ${textColorClass}`} />
                             <h5 className="w-full">{node.topic}</h5>
                         </div>

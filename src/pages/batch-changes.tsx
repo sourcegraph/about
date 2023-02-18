@@ -39,14 +39,14 @@ export const BatchChangesPage: FunctionComponent = () => (
         <ContentSection>
             <div className="text-center">
                 <h2 className="mb-4">Change code everywhere with a single declarative file</h2>
-                <div className="justify-center mb-8">
+                <div className="mb-8 justify-center">
                     <p>
                         Batch Changes gives you a declarative structure for finding and modifying code across all of
                         your repositories. With a simple UI, it is easy to track and manage all of your changesets
                         through checks and code reviews until each change is merged.
                     </p>
                 </div>
-                <div className="grid gap-md grid-cols-1 md:grid-cols-2">
+                <div className="grid grid-cols-1 gap-md md:grid-cols-2">
                     <div>
                         <Figure
                             src="/batch-changes/asking_developers_to_update_repos.svg"
@@ -121,7 +121,7 @@ export const BatchChangesPage: FunctionComponent = () => (
 
         {/* Social proof */}
         <ContentSection>
-            <div className="max-w-4xl mx-auto">
+            <div className="mx-auto max-w-4xl">
                 <Blockquote
                     quote="The ability to automate downstream changes that Sourcegraph Batch Changes provides is a key
                         capability for reducing the hidden burden of updates pushed across teams and enabling us to
@@ -228,7 +228,7 @@ export const BatchChangesPage: FunctionComponent = () => (
 
         {/* Social proof */}
         <ContentSection parentClassName="bg-gray-100">
-            <div className="max-w-4xl mx-auto">
+            <div className="mx-auto max-w-4xl">
                 <Blockquote
                     quote="Sourcegraph Batch Changes gives us the confidence we need to understand the total impact of
                         large-scale code changes before we make them. This enables the entire team to make more

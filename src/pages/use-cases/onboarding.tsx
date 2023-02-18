@@ -170,19 +170,19 @@ const blogResourceItems = [
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="mb-6 text-blurple-400 inline" size={40} />,
+        icon: <MagnifyIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Find answers across all repositories',
         description:
             'Codebases grow increasingly complex over time. Sourcegraph enables developers to search everything at once without needing to clone and search locally.',
     },
     {
-        icon: <UploadIcon className="mb-6 text-blurple-400 inline" size={40} />,
+        icon: <UploadIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Share knowledge quickly with links to specific code',
         description:
             'Knowledge sharing takes time. With Sourcegraph, developers can share links directly to specific lines of code and ask questions with context included.',
     },
     {
-        icon: <CompassOutlineIcon className="mb-6 text-blurple-400 inline" size={40} />,
+        icon: <CompassOutlineIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Navigate and understand large codebases',
         description:
             "Make new codebases approachable, not aggravating. Search across all your repositories in one place with Sourcegraph's IDE-inspired features.",

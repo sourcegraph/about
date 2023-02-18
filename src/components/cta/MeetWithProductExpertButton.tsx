@@ -15,7 +15,7 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{
     <Link
         href="/demo"
         className={classNames(
-            'btn btn-link whitespace-nowrap inline-flex items-center',
+            'btn btn-link inline-flex items-center whitespace-nowrap',
             dark && 'text-white',
             size === 'lg' && 'py-xs'
         )}

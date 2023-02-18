@@ -45,16 +45,14 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
     }
 
     return (
-        <div className="bg-white shadow-md rounded-lg sm:min-h-[540px] md:min-h-[475px]">
+        <div className="rounded-lg bg-white shadow-md sm:min-h-[540px] md:min-h-[475px]">
             <div
                 className={classNames(
-                    'h-[54px] overflow-hidden rounded-t-lg flex items-center px-sm bg-gradient-to-r',
+                    'flex h-[54px] items-center overflow-hidden rounded-t-lg bg-gradient-to-r px-sm',
                     backgrounds[resource.contentType] || 'from-gray-200 to-gray-300'
                 )}
             >
-                <div className="first-letter:capitalize font-medium font-mono text-sm">
-                    {resource.contentType}
-                </div>
+                <div className="font-mono text-sm font-medium first-letter:capitalize">{resource.contentType}</div>
             </div>
 
             {/* Card Info */}
@@ -67,7 +65,7 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                     {resource.title.length > 100 ? `${resource.title.slice(0, 97)}...` : resource.title}
                 </h4>
 
-                <div className="flex-wrap flex mb-sm">
+                <div className="mb-sm flex flex-wrap">
                     {resource.subjects
                         .slice(0, 3)
                         .sort()
@@ -80,7 +78,7 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                         <div className="group relative">
                             <Badge text={`+${resource.subjects.slice(3).length}`} size="small" />
 
-                            <div className="hidden group-hover:flex group-hover:animate-fadeIn absolute left-0 top-0 shadow-md bg-white pt-xxs pl-xxs rounded-md flex-col cursor-default">
+                            <div className="absolute left-0 top-0 hidden cursor-default flex-col rounded-md bg-white pt-xxs pl-xxs shadow-md group-hover:flex group-hover:animate-fadeIn">
                                 {resource.subjects.slice(3).map(subject => (
                                     <span key={subject} className="mr-2 mb-2 first-letter:capitalize">
                                         <Badge text={subject} size="small" />
@@ -91,13 +89,13 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                     )}
                 </div>
 
-                <div className="text-sm mb-sm">
+                <div className="mb-sm text-sm">
                     {resource.description.length > 170
                         ? `${resource.description.slice(0, 167)}...`
                         : resource.description}
                 </div>
 
-                <div className="flex mt-auto">
+                <div className="mt-auto flex">
                     <Link
                         href={resource.link}
                         data-button-style={buttonStyle.textWithArrow}
@@ -105,11 +103,11 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                         data-button-type="cta"
                     >
                         {ctaText}
-                        <ArrowRightIcon className="inline ml-xs" />
+                        <ArrowRightIcon className="ml-xs inline" />
                     </Link>
 
                     {resource.featured && (
-                        <span className="ml-auto bg-violet-100 rounded-full w-sm h-sm d-flex items-center justify-center">
+                        <span className="d-flex ml-auto h-sm w-sm items-center justify-center rounded-full bg-violet-100">
                             <StarIcon className="text-violet-400" size={18} />
                         </span>
                     )}

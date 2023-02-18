@@ -17,13 +17,13 @@ export const AbcsEbook: FunctionComponent = () => (
         }}
     >
         <ContentSection>
-            <div className="max-w-5xl mx-auto">
-                <h1 className="text-center mb-sm">Our ABCs: Always Be Coding children's book</h1>
+            <div className="mx-auto max-w-5xl">
+                <h1 className="mb-sm text-center">Our ABCs: Always Be Coding children's book</h1>
 
                 <p className="text-center">
                     <img
                         src="/other/abcs-book/our-abcs-hero.png"
-                        className="px-2 mb-4 w-full"
+                        className="mb-4 w-full px-2"
                         role="presentation"
                         alt="Our ABCs: Always Be Coding book"
                     />
@@ -44,7 +44,7 @@ export const AbcsEbook: FunctionComponent = () => (
                 </p>
             </div>
 
-            <div className="mt-4 max-w-2xl mx-auto">
+            <div className="mx-auto mt-4 max-w-2xl">
                 <YouTube id="6bCO63O4swI" title="Our ABCs: Always Be Coding children's book by Sourcegraph" />
                 <p className="mt-8">
                     At Sourcegraph, many of us have young children who we're trying to provide fun new learning
@@ -82,7 +82,7 @@ export const AbcsEbook: FunctionComponent = () => (
                     >
                         <img
                             src="/other/abcs-book/our-abcs.png"
-                            className="mt-10 mx-auto shadow-xl"
+                            className="mx-auto mt-10 shadow-xl"
                             width="350px"
                             alt="Book cover: Our ABCs"
                         />
@@ -135,7 +135,7 @@ export const AbcsEbook: FunctionComponent = () => (
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        <TwitterIcon className="inline mr-2 align-top" />
+                        <TwitterIcon className="mr-2 inline align-top" />
                         Click to Tweet
                     </a>
                 </p>
@@ -161,8 +161,8 @@ export const AbcsEbook: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="sg-bg-gradient-saturn">
-            <div className="max-w-4xl mx-auto">
-                <h3 className="text-center mb-6">About Sourcegraph</h3>
+            <div className="mx-auto max-w-4xl">
+                <h3 className="mb-6 text-center">About Sourcegraph</h3>
                 <p>
                     Sourcegraph empowers all developers to explore, navigate and better understand all code, faster,
                     with{' '}
