@@ -29,13 +29,13 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
     renderTitleAsLink = false,
     contentClassName = '',
 }) => (
-    <Tag className={`tw-p-sm ${className}`}>
+    <Tag className={`p-sm ${className}`}>
         <header className={headerClassName}>
             <h2>
                 {renderTitleAsLink === true ? (
                     <Link
                         href={url}
-                        className="tw-block"
+                        className="block"
                         title={post.frontmatter.title}
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
@@ -49,7 +49,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
             </h2>
 
             {post.frontmatter.authors?.length && (
-                <p className="tw-mb-0 text-align-center text-secondary">
+                <p className="mb-0 text-align-center text-secondary">
                     {post.frontmatter.authors.map((a, index) => (
                         <span key={a.name} data-author={a.name}>
                             {a.url ? (
@@ -87,14 +87,14 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
             )}
 
             {post.frontmatter.publishDate && (
-                <p className="tw-mb-0 text-align-center text-secondary">
+                <p className="mb-0 text-align-center text-secondary">
                     <time dateTime={post.frontmatter.publishDate}>{formatDate(post.frontmatter.publishDate)}</time>
                 </p>
             )}
         </header>
 
         {content && (
-            <div className={classNames('tw-min-h-[60vh]', styles.content, contentClassName)}>
+            <div className={classNames('min-h-[60vh]', styles.content, contentClassName)}>
                 <MDXRemote {...content} components={components as PostComponents} />
             </div>
         )}

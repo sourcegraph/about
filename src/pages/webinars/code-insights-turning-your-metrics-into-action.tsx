@@ -70,18 +70,18 @@ const Webinar: FunctionComponent = () => {
                             Shawn King will teach you:
                         </p>
                         <ul>
-                            <li className="tw-mb-2">What Code Insights is and why it's important</li>
-                            <li className="tw-mb-2">
+                            <li className="mb-2">What Code Insights is and why it's important</li>
+                            <li className="mb-2">
                                 Best practices for getting started from top-tier engineering organizations
                             </li>
-                            <li className="tw-mb-2">
+                            <li className="mb-2">
                                 How to dive deeper into your data with advanced examples, including:
                             </li>
                             <ul>
-                                <li className="tw-mb-2">Metadata/config tracking</li>
-                                <li className="tw-mb-2">Commit signals</li>
-                                <li className="tw-mb-2">Making use of advanced Sourcegraph filters</li>
-                                <li className="tw-mb-2">
+                                <li className="mb-2">Metadata/config tracking</li>
+                                <li className="mb-2">Commit signals</li>
+                                <li className="mb-2">Making use of advanced Sourcegraph filters</li>
+                                <li className="mb-2">
                                     Pattern tracking versions and licenses with regular expression capture groups
                                 </li>
                             </ul>
@@ -90,10 +90,10 @@ const Webinar: FunctionComponent = () => {
                 }
                 videoSrc="https://www.youtube.com/embed/dXKvetMozB0"
                 learnMoreCTA={
-                    <ContentSection className="tw-flex tw-flex-col tw-items-center">
-                        <h1 className="tw-text-center">Want to learn more about Code Insights?</h1>
+                    <ContentSection className="flex flex-col items-center">
+                        <h1 className="text-center">Want to learn more about Code Insights?</h1>
                         <a
-                            className="tw-mt-6 btn btn-primary"
+                            className="mt-6 btn btn-primary"
                             href="https://signup.sourcegraph.com"
                             title="Start for free"
                             data-button-style={buttonStyle.primary}

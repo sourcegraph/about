@@ -76,19 +76,19 @@ const templates = {
             description: 'Track migration from global CSS to CSS modules.',
             queries: [
                 <>
-                    <span className="tw-text-blue-400">select:</span>file{' '}
-                    <span className="tw-text-blue-400">lang:</span>SCSS <span className="tw-text-blue-400">file:</span>
-                    module <span className="tw-text-blue-400">patterntype:</span>regexp{' '}
-                    <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    <span className="text-blue-400">select:</span>file{' '}
+                    <span className="text-blue-400">lang:</span>SCSS <span className="text-blue-400">file:</span>
+                    module <span className="text-blue-400">patterntype:</span>regexp{' '}
+                    <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
                 <>
-                    <span className="tw-text-blue-400">type:</span>file <span className="tw-text-blue-400">lang:</span>
+                    <span className="text-blue-400">type:</span>file <span className="text-blue-400">lang:</span>
                     scss
-                    <span className="tw-text-blue-400">-file:</span>module{' '}
-                    <span className="tw-text-blue-400">patterntype:</span>regexp{' '}
-                    <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    <span className="text-blue-400">-file:</span>module{' '}
+                    <span className="text-blue-400">patterntype:</span>regexp{' '}
+                    <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -97,12 +97,12 @@ const templates = {
             description: 'How far along is the Python major version migration?',
             queries: [
                 <>
-                    #!/usr/bin/env python3 <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    #!/usr/bin/env python3 <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
                 <>
-                    #!/usr/bin/env python2 <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    #!/usr/bin/env python2 <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -111,14 +111,14 @@ const templates = {
             description: "What's the status of migrating to React function components from class components?",
             queries: [
                 <>
-                    <span className="tw-text-blue-400">patterntype:</span>regexp
-                    const\s\w+:\s(React\.)?FunctionComponent <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    <span className="text-blue-400">patterntype:</span>regexp
+                    const\s\w+:\s(React\.)?FunctionComponent <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
                 <>
-                    <span className="tw-text-blue-400">patterntype:</span>regexp extends\s(React\.)?(Pure)?Component{' '}
-                    <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    <span className="text-blue-400">patterntype:</span>regexp extends\s(React\.)?(Pure)?Component{' '}
+                    <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -127,10 +127,10 @@ const templates = {
             description: 'How many repos contain a config or docs file in a specific directory?',
             queries: [
                 <>
-                    <span className="tw-text-blue-400">select:</span>repo{' '}
-                    <span className="tw-text-blue-400">file:</span>
-                    docs/*/new_config_filename <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    <span className="text-blue-400">select:</span>repo{' '}
+                    <span className="text-blue-400">file:</span>
+                    docs/*/new_config_filename <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -141,8 +141,8 @@ const templates = {
             description: 'Detect and track which Java versions are present or most popular in your code base.',
             queries: [
                 <>
-                    {'<java.version>(.*)</java.version>'} <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    {'<java.version>(.*)</java.version>'} <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -151,9 +151,9 @@ const templates = {
             description: 'Which log4j versions are present, including vulnerable versions?',
             queries: [
                 <>
-                    <span className="tw-text-blue-400">lang:</span>gradle org\.apache\.logging\.log4j['"] 2\.([0-9]+)\.{' '}
-                    <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    <span className="text-blue-400">lang:</span>gradle org\.apache\.logging\.log4j['"] 2\.([0-9]+)\.{' '}
+                    <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -162,9 +162,9 @@ const templates = {
             description: 'See the breakdown of licenses from package.json files.',
             queries: [
                 <>
-                    <span className="tw-text-blue-400">file:</span>package.json "license":\s"(.*)"{' '}
-                    <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    <span className="text-blue-400">file:</span>package.json "license":\s"(.*)"{' '}
+                    <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -173,8 +173,8 @@ const templates = {
             description: "Which python versions are in use or haven't been updated?",
             queries: [
                 <>
-                    #!/usr/bin/env python([0-9]\.[0-9]+) <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    #!/usr/bin/env python([0-9]\.[0-9]+) <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -186,8 +186,8 @@ const templates = {
                 'Confirm that a vulnerable open source library has been fully removed, or the speed of the deprecation.',
             queries: [
                 <>
-                    vulnerableLibrary@14.3.9 <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    vulnerableLibrary@14.3.9 <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -196,9 +196,9 @@ const templates = {
             description: 'See how many tests have skip conditions.',
             queries: [
                 <>
-                    this.skip() <span className="tw-text-blue-400">patterntype:</span>literal{' '}
-                    <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    this.skip() <span className="text-blue-400">patterntype:</span>literal{' '}
+                    <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -207,11 +207,11 @@ const templates = {
             description: 'What vulnerable log4j versions are present?',
             queries: [
                 <>
-                    <span className="tw-text-blue-400">lang:</span>gradle org\.apache\.logging\.log4j['"]
+                    <span className="text-blue-400">lang:</span>gradle org\.apache\.logging\.log4j['"]
                     2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16)(\.[0-9]+){' '}
-                    <span className="tw-text-blue-400">patterntype:</span>regexp{' '}
-                    <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    <span className="text-blue-400">patterntype:</span>regexp{' '}
+                    <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -220,9 +220,9 @@ const templates = {
             description: 'How quickly do we notice and remove API keys when they are committed?',
             queries: [
                 <>
-                    regexMatchingAPIKey <span className="tw-text-blue-400">patterntype:</span>regexp{' '}
-                    <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    regexMatchingAPIKey <span className="text-blue-400">patterntype:</span>regexp{' '}
+                    <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -233,8 +233,8 @@ const templates = {
             description: 'How many TODOs are in a specific part of the codebase (or all of it)?',
             queries: [
                 <>
-                    TODO <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    TODO <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -243,9 +243,9 @@ const templates = {
             description: 'How frequently are there commits with “revert” in the commit message?',
             queries: [
                 <>
-                    <span className="tw-text-blue-400">type:</span>commit revert{' '}
-                    <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    <span className="text-blue-400">type:</span>commit revert{' '}
+                    <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -254,10 +254,10 @@ const templates = {
             description: 'How many linter override rules exist?',
             queries: [
                 <>
-                    <span className="tw-text-blue-400">file:</span>\.eslintignore .\n{' '}
-                    <span className="tw-text-blue-400">patterntype:</span>regexp{' '}
-                    <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    <span className="text-blue-400">file:</span>\.eslintignore .\n{' '}
+                    <span className="text-blue-400">patterntype:</span>regexp{' '}
+                    <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -266,9 +266,9 @@ const templates = {
             description: 'How many times are deprecated calls used?',
             queries: [
                 <>
-                    <span className="tw-text-blue-400">lang:</span>java @deprecated{' '}
-                    <span className="tw-text-blue-400">archived:</span>no{' '}
-                    <span className="tw-text-blue-400">fork:</span>no
+                    <span className="text-blue-400">lang:</span>java @deprecated{' '}
+                    <span className="text-blue-400">archived:</span>no{' '}
+                    <span className="text-blue-400">fork:</span>no
                 </>,
             ],
         },
@@ -334,7 +334,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="tw-mb-4">
+                        <h2 className="mb-4">
                             Finally, useful engineering metrics{' '}
                             <span>
                                 <i>you</i>
@@ -363,7 +363,7 @@ const CodeInsightsPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="sg-bg-gradient-venus">
-            <div className="tw-max-w-screen-lg tw-mx-auto">
+            <div className="max-w-screen-lg mx-auto">
                 <Blockquote
                     headline="Trusted by engineering teams worldwide"
                     quote="As we've grown, so has the need to better track and communicate our progress and
@@ -379,27 +379,27 @@ const CodeInsightsPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection>
-            <div className="tw-flex tw-flex-wrap">
-                <h2 className="tw-mb-4 tw-text-center tw-w-full">Engineering leadership with superpowers</h2>
-                <p className={`tw-text-center ${styles['icon-subheader']} tw-w-full`}>
+            <div className="flex flex-wrap">
+                <h2 className="mb-4 text-center w-full">Engineering leadership with superpowers</h2>
+                <p className={`text-center ${styles['icon-subheader']} w-full`}>
                     Code Insights provides reliable real-time reporting directly from the codebase, making engineering
                     leaders and their teams more effective.
                 </p>
-                <div className="tw-flex tw-flex-col lg:tw-px-3xl tw-justify-around">
-                    <div className="tw-py-4 tw-flex lg:tw-py-md">
-                        <div className="tw-mr-6">
-                            <BullsEyeArrowIcon className="icon tw-text-blurple-400" size={70} />
+                <div className="flex flex-col lg:px-3xl justify-around">
+                    <div className="py-4 flex lg:py-md">
+                        <div className="mr-6">
+                            <BullsEyeArrowIcon className="icon text-blurple-400" size={70} />
                         </div>
-                        <div className="tw-flex tw-flex-col">
+                        <div className="flex flex-col">
                             <h5>Set goals</h5>
                             <p className={`${styles['icon-paragraph']}`}>Measure goals and progress in your codebase</p>
                         </div>
                     </div>
-                    <div className="tw-py-4 tw-flex lg:tw-py-md">
-                        <div className="tw-mr-6 icon">
-                            <LighteningBoltOutlineIcon className="icon tw-text-blurple-400" size={70} />
+                    <div className="py-4 flex lg:py-md">
+                        <div className="mr-6 icon">
+                            <LighteningBoltOutlineIcon className="icon text-blurple-400" size={70} />
                         </div>
-                        <div className="tw-flex tw-flex-col">
+                        <div className="flex flex-col">
                             <h5>Plan proactively</h5>
                             <p className={`${styles['icon-paragraph']}`}>
                                 Stay on top of engineering initiatives and catch issues before they escalate
@@ -407,23 +407,23 @@ const CodeInsightsPage: FunctionComponent = () => (
                         </div>
                     </div>
                 </div>
-                <div className="tw-flex tw-flex-col lg:tw-px-3xl tw-justify-around">
-                    <div className="tw-py-4 tw-flex lg:tw-py-md">
-                        <div className="tw-mr-6">
-                            <TrendingUpIcon className="icon tw-text-blurple-400" size={70} />
+                <div className="flex flex-col lg:px-3xl justify-around">
+                    <div className="py-4 flex lg:py-md">
+                        <div className="mr-6">
+                            <TrendingUpIcon className="icon text-blurple-400" size={70} />
                         </div>
-                        <div className="tw-flex tw-flex-col">
+                        <div className="flex flex-col">
                             <h5>Track ownership & trends</h5>
                             <p className={`${styles['icon-paragraph']}`}>
                                 Tie trends and metrics to owners on the teams
                             </p>
                         </div>
                     </div>
-                    <div className="tw-py-4 tw-flex lg:tw-py-md">
-                        <div className="tw-mr-6">
-                            <RocketLaunchOutlineIcon className="icon tw-text-blurple-400" size={70} />
+                    <div className="py-4 flex lg:py-md">
+                        <div className="mr-6">
+                            <RocketLaunchOutlineIcon className="icon text-blurple-400" size={70} />
                         </div>
-                        <div className="tw-flex tw-flex-col">
+                        <div className="flex flex-col">
                             <h5>Celebrate progress</h5>
                             <p className={`${styles['icon-paragraph']}`}>
                                 Visualize the momentum and motivate your teammates
@@ -434,23 +434,23 @@ const CodeInsightsPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection parentClassName="tw-bg-gray-100">
+        <ContentSection parentClassName="bg-gray-100">
             <CustomCarousel items={items} hasImages={true} title="How engineering teams use Code Insights" />
         </ContentSection>
 
         <ContentSection>
-            <h2 className="tw-mb-4 tw-text-center">See Code Insights in action</h2>
-            <YouTube id="fMCUJQHfbUA" title="Sourcegraph Code Insights demo" className="tw-mx-auto tw-max-w-4xl" />
+            <h2 className="mb-4 text-center">See Code Insights in action</h2>
+            <YouTube id="fMCUJQHfbUA" title="Sourcegraph Code Insights demo" className="mx-auto max-w-4xl" />
         </ContentSection>
 
-        <ContentSection parentClassName="sg-bg-gradient-venus tw-hidden md:tw-block">
-            <h2 className="tw-mb-8 tw-text-center">Popular Code Insights templates</h2>
+        <ContentSection parentClassName="sg-bg-gradient-venus hidden md:block">
+            <h2 className="mb-8 text-center">Popular Code Insights templates</h2>
             <Tabs
                 tabs={[
                     {
                         title: 'Migrations',
                         content: (
-                            <div className="tw-flex-wrap tw-mt-8 tw-w-full tw-flex">
+                            <div className="flex-wrap mt-8 w-full flex">
                                 {templates.migrations.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -460,7 +460,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Version Tracking',
                         content: (
-                            <div className="tw-flex-wrap tw-mt-8 tw-w-full tw-flex tw-justify-center">
+                            <div className="flex-wrap mt-8 w-full flex justify-center">
                                 {templates.versionTracking.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -470,7 +470,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Security',
                         content: (
-                            <div className="tw-flex-wrap tw-mt-8 tw-w-full tw-flex tw-justify-center">
+                            <div className="flex-wrap mt-8 w-full flex justify-center">
                                 {templates.security.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -480,7 +480,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Code Health',
                         content: (
-                            <div className="tw-flex-wrap tw-mt-8 tw-w-full tw-flex tw-justify-center">
+                            <div className="flex-wrap mt-8 w-full flex justify-center">
                                 {templates.codeHealth.map(template => (
                                     <TemplateCodeBlock key={template.header} template={template} />
                                 ))}
@@ -490,7 +490,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                 ]}
             />
 
-            <div className="tw-w-full tw-text-center">
+            <div className="w-full text-center">
                 <a
                     href="https://docs.sourcegraph.com/code_insights"
                     title="Code Insights on docs."
@@ -504,14 +504,14 @@ const CodeInsightsPage: FunctionComponent = () => (
         </ContentSection>
 
         {/* Use Cases Carousel */}
-        <ContentSection parentClassName="sg-bg-gradient-venus tw-block md:tw-hidden">
-            <h2 className="tw-mb-8 tw-text-center">Popular Code Insights templates</h2>
+        <ContentSection parentClassName="sg-bg-gradient-venus block md:hidden">
+            <h2 className="mb-8 text-center">Popular Code Insights templates</h2>
             <Tabs
                 tabs={[
                     {
                         title: 'Migrations',
                         content: (
-                            <div className="tw-mt-8 tw-w-full tw-justify-center">
+                            <div className="mt-8 w-full justify-center">
                                 <TabCarousel items={templates.migrations} autoAdvance={true} />
                             </div>
                         ),
@@ -519,7 +519,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Version Tracking',
                         content: (
-                            <div className="tw-mt-8 tw-w-full tw-justify-center">
+                            <div className="mt-8 w-full justify-center">
                                 <TabCarousel items={templates.versionTracking} autoAdvance={true} />
                             </div>
                         ),
@@ -527,7 +527,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Security',
                         content: (
-                            <div className="tw-mt-8 tw-w-full tw-justify-center">
+                            <div className="mt-8 w-full justify-center">
                                 <TabCarousel items={templates.security} autoAdvance={true} />
                             </div>
                         ),
@@ -535,16 +535,16 @@ const CodeInsightsPage: FunctionComponent = () => (
                     {
                         title: 'Code Health',
                         content: (
-                            <div className="tw-mt-8 tw-w-full tw-justify-center">
+                            <div className="mt-8 w-full justify-center">
                                 <TabCarousel items={templates.codeHealth} autoAdvance={true} />
                             </div>
                         ),
                     },
                 ]}
             />
-            <div className="tw-text-center">
+            <div className="text-center">
                 <a
-                    className="tw-py-6 tw-px-0 col-7"
+                    className="py-6 px-0 col-7"
                     href="https://docs.sourcegraph.com/code_insights"
                     title="Code Insights on docs."
                     data-button-style={buttonStyle.text}

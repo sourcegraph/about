@@ -15,18 +15,18 @@ interface BackButtonProps {
 export const BackButton: FunctionComponent<BackButtonProps> = ({ href, text, light = false }) => (
     <Link
         href={href}
-        className="tw-uppercase tw-mb-xs tw-block tw-cursor-pointer"
+        className="uppercase mb-xs block cursor-pointer"
         data-button-style={buttonStyle.textWithArrow}
         data-button-location={buttonLocation.hero}
         data-button-type="cta"
     >
         <ArrowLeftIcon
-            className={classNames('tw-mb-1 tw-inline', { 'tw-text-white': light, 'tw-text-black': !light })}
+            className={classNames('mb-1 inline', { 'text-white': light, 'text-black': !light })}
         />
         <span
-            className={classNames('tw-text-lg tw-ml-4 tw-font-semibold', {
-                'tw-text-white': light,
-                'tw-text-black': !light,
+            className={classNames('text-lg ml-4 font-semibold', {
+                'text-white': light,
+                'text-black': !light,
             })}
         >
             {text}

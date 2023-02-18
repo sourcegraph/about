@@ -38,9 +38,9 @@ const ShiftLeftPage: FunctionComponent = () => (
         }}
         hero={
             <div className="sg-bg-gradient-venus">
-                <div className="tw-max-w-screen-md tw-px-sm tw-mx-auto tw-py-5xl md:tw-text-center">
+                <div className="max-w-screen-md px-sm mx-auto py-5xl md:text-center">
                     <h1>Shift Left: The good parts</h1>
-                    <h3 className="tw-mt-6 tw-mb-0 md:tw-mx-auto tw-max-w-[750px]">
+                    <h3 className="mt-6 mb-0 md:mx-auto max-w-[750px]">
                         5 practical ways to help your org shift left
                     </h3>
                 </div>
@@ -48,7 +48,7 @@ const ShiftLeftPage: FunctionComponent = () => (
         }
     >
         <ContentSection background="white">
-            <div className="tw-mx-auto tw-max-w-[650px]">
+            <div className="mx-auto max-w-[650px]">
                 <p>
                     Everyone's telling us to "shift left" these days. This raises some questions. What's being shifted?
                     Who's doing the shifting? How far left should we be shifting it?
@@ -70,7 +70,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="tw-mb-6">Shift left #1: Get validation from your users!</h2>
+                        <h2 className="mb-6">Shift left #1: Get validation from your users!</h2>
                         <p>
                             You definitely don’t want to end up with an Over-Engineered Boondoggle that doesn't actually
                             solve a real problem. The best way to avoid this is to get validation from your users ASAP,
@@ -78,11 +78,11 @@ const ShiftLeftPage: FunctionComponent = () => (
                         </p>
                         <p>Some ways to help you achieve this include:</p>
                         <ul>
-                            <li className="tw-mb-4">
+                            <li className="mb-4">
                                 Save time by stitching together existing components and making use of external libraries
                                 instead of reinventing the wheel.
                             </li>
-                            <li className="tw-mb-4">
+                            <li className="mb-4">
                                 Consider cutting things that you might think are essential. Do you really need a
                                 production environment? Maybe use a tunneling tool like Ngrok and serve your product
                                 directly from your local machine.
@@ -121,7 +121,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                 }
                 rightColumn={
                     <>
-                        <h2 className="tw-mb-6">Shift left #2: Know thy codebase!</h2>
+                        <h2 className="mb-6">Shift left #2: Know thy codebase!</h2>
                         <p>
                             Working on informative documentation will help developers write code faster and avoid
                             problems down the line. Understanding your codebase will help you understand what to code
@@ -129,11 +129,11 @@ const ShiftLeftPage: FunctionComponent = () => (
                         </p>
                         <p>To achieve this you could:</p>
                         <ul>
-                            <li className="tw-mb-4">
+                            <li className="mb-4">
                                 Add useful features and information to your documentation to help readers navigate and
                                 understand it.
                             </li>
-                            <li className="tw-mb-4">
+                            <li className="mb-4">
                                 Keep track of which team members wrote what so that developers can reach out to those
                                 who will be able to help them understand the code.
                             </li>
@@ -148,7 +148,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="tw-mb-6">Shift left #3: Write tests now, thank yourself later</h2>
+                        <h2 className="mb-6">Shift left #3: Write tests now, thank yourself later</h2>
                         <p>
                             Do you ever buy an ice cream without a game plan? I thought so. First, you run through all
                             the scenarios and figure out the best outcome from those preliminary tests. Testing early on
@@ -157,15 +157,15 @@ const ShiftLeftPage: FunctionComponent = () => (
                         </p>
                         <p>Shifting testing left will:</p>
                         <ul>
-                            <li className="tw-mb-4">
+                            <li className="mb-4">
                                 Create a robust and reliable codebase with tools for debugging early on in the
                                 development process.
                             </li>
-                            <li className="tw-mb-4">
+                            <li className="mb-4">
                                 Help to establish what you code will achieve, thus helping to inform the user validation
                                 step.
                             </li>
-                            <li className="tw-mb-4">
+                            <li className="mb-4">
                                 Provide an outline of the code, which can be used to provide helpful context for
                                 developers.
                             </li>
@@ -203,7 +203,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                 }
                 rightColumn={
                     <>
-                        <h2 className="tw-mb-6">Shift left #4: When it comes to security — keep your house in order</h2>
+                        <h2 className="mb-6">Shift left #4: When it comes to security — keep your house in order</h2>
                         <p>
                             You have to be prepared for problems in life and in code. Skip the security headaches and
                             time-consuming review cycles by planning ahead. You can do this by empowering developers
@@ -212,10 +212,10 @@ const ShiftLeftPage: FunctionComponent = () => (
                         </p>
                         <p>Achieve this by:</p>
                         <ul>
-                            <li className="tw-mb-4">
+                            <li className="mb-4">
                                 Running recurring searches for vulnerable code blocks and dependencies.
                             </li>
-                            <li className="tw-mb-4">
+                            <li className="mb-4">
                                 Search for your own set of regular expressions and{' '}
                                 <Link
                                     href="https://docs.sourcegraph.com/code_search/reference/structural#syntax-reference"
@@ -239,22 +239,22 @@ const ShiftLeftPage: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="tw-mb-6">Shift left #5: Review your review</h2>
+                        <h2 className="mb-6">Shift left #5: Review your review</h2>
                         <p>
                             Reviewing code can get a lot harder as the project gets more and more complex. Make sure
                             your project has the right reviewing tools to keep up with its scale.
                         </p>
                         <p>Here are some great reviewing tricks:</p>
                         <ul>
-                            <li className="tw-mb-4">
+                            <li className="mb-4">
                                 Break up large changesets into smaller changesets (e.g., using feature flags). These
                                 smaller changes can be more easily reviewed and validated.
                             </li>
-                            <li className="tw-mb-4">
+                            <li className="mb-4">
                                 Help to establish what you code will achieve, thus helping to inform the user validation
                                 step.
                             </li>
-                            <li className="tw-mb-4">
+                            <li className="mb-4">
                                 Use go-to-definition and find references to conduct code reviews that are both thorough
                                 and efficient.
                             </li>
@@ -276,10 +276,10 @@ const ShiftLeftPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="sg-bg-gradient-venus">
-            <div className="tw-mx-auto tw-max-w-[800px] md:tw-text-center">
+            <div className="mx-auto max-w-[800px] md:text-center">
                 <h2>Ready to shift left?</h2>
 
-                <p className="tw-my-8 tw-max-w-[650px] md:tw-mx-auto">
+                <p className="my-8 max-w-[650px] md:mx-auto">
                     Shifting left means getting a head start on some of the most important aspects of the development
                     process. Both the general philosophy and the specific process changes of shift left can be boosted
                     by using tools that enable the developer to take full charge of shipping a new feature or bug fix.

@@ -40,7 +40,7 @@ export const CaseStudy: FunctionComponent = () => {
                         author={justinPhilips}
                     />
 
-                    <h2 className="tw-pt-md tw-pb-1">From monolith to microservices</h2>
+                    <h2 className="pt-md pb-1">From monolith to microservices</h2>
 
                     <p>
                         The largest refactoring effort in Lyft's 10-year history came in 2018 when the number one
@@ -75,7 +75,7 @@ export const CaseStudy: FunctionComponent = () => {
                         author={justinPhilips}
                     />
 
-                    <h2 className="tw-pt-md tw-pb-1">
+                    <h2 className="pt-md pb-1">
                         The refactoring and the decomposition of legacy applications is constant
                     </h2>
 
@@ -101,7 +101,7 @@ export const CaseStudy: FunctionComponent = () => {
                         author="Aneesh Agrawal, Software Engineer, Lyft"
                     />
 
-                    <p className="tw-pb-md">
+                    <p className="pb-md">
                         Using Sourcegraph code search, Lyft software engineers were able to verify the migration and
                         deprecation of code from their monolith to microservices at scale, significantly reducing the
                         risk to production stability during deployment of the new microservices.

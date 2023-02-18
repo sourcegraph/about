@@ -19,11 +19,11 @@ export const CaseStudyJumbotron: FunctionComponent<Props> = ({
     children,
 }) => (
     <div className={`jumbotron ${COLORS[color]} ${className}`}>
-        <div className="tw-container tw-mx-auto tw-pt-md sm:tw-pl-0">
+        <div className="container mx-auto pt-md sm:pl-0">
             <BackButton href="/case-studies" text="Case Studies" light={color === 'dark'} />
         </div>
-        <div className="tw-container tw-mx-auto tw-py-4 tw-text-center">
-            {logo && <img className="tw-max-h-12 tw-my-3 tw-mx-auto" src={logo} alt={customer} />}
+        <div className="container mx-auto py-4 text-center">
+            {logo && <img className="max-h-12 my-3 mx-auto" src={logo} alt={customer} />}
             {children}
         </div>
     </div>

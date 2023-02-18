@@ -131,9 +131,9 @@ export const CoreFeatures: FunctionComponent = () => {
 
     return (
         <>
-            <div className="tw-text-center tw-mb-24">
+            <div className="text-center mb-24">
                 <h2>How developers use Sourcegraph</h2>
-                <p className="tw-mx-auto tw-my-xs tw-max-w-3xl tw-text-lg">
+                <p className="mx-auto my-xs max-w-3xl text-lg">
                     Sourcegraph's code intelligence platform is built with features that help you understand, fix, and
                     automate across your entire codebase.
                 </p>
@@ -143,20 +143,20 @@ export const CoreFeatures: FunctionComponent = () => {
                 <div
                     key={feature.productFeature}
                     className={classNames(
-                        'tw-grid tw-gap-lg tw-grid-cols-1 lg:tw-grid-cols-2 tw-flex-col-reverse lg:tw-flex-row',
+                        'grid gap-lg grid-cols-1 lg:grid-cols-2 flex-col-reverse lg:flex-row',
                         {
-                            'lg:tw-flex-row-reverse': index % 2,
-                            'tw-mb-32': index !== features.length - 1,
+                            'lg:flex-row-reverse': index % 2,
+                            'mb-32': index !== features.length - 1,
                         }
                     )}
                 >
                     <div>
-                        <span className="tw-mb-2 tw-text-md tw-uppercase tw-font-semibold tw-block">
+                        <span className="mb-2 text-md uppercase font-semibold block">
                             {feature.productFeature}
                         </span>
                         <h2>{feature.title}</h2>
-                        <p className="tw-mt-sm">{feature.description}</p>
-                        <ul className="tw-my-4">
+                        <p className="mt-sm">{feature.description}</p>
+                        <ul className="my-4">
                             {feature.details.map(detail => (
                                 <li key={detail}>{detail}</li>
                             ))}
@@ -166,7 +166,7 @@ export const CoreFeatures: FunctionComponent = () => {
                                 href={feature.ctaLink}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="tw-mt-2 btn btn-outline-primary"
+                                className="mt-2 btn btn-outline-primary"
                                 title={`Learn more about ${startCase(feature.productFeature)}`}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
@@ -177,7 +177,7 @@ export const CoreFeatures: FunctionComponent = () => {
                         ) : (
                             <Link
                                 href={feature.ctaLink}
-                                className="tw-mt-2 btn btn-outline-primary"
+                                className="mt-2 btn btn-outline-primary"
                                 title={'Learn more about ' + startCase(feature.productFeature)}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
@@ -190,7 +190,7 @@ export const CoreFeatures: FunctionComponent = () => {
 
                     <div>
                         <video
-                            className={`shadow tw-w-full tw-max-w-[550px] tw-block tw-mx-auto tw-rounded video-${index}`}
+                            className={`shadow w-full max-w-[550px] block mx-auto rounded video-${index}`}
                             autoPlay={false}
                             muted={true}
                             loop={true}

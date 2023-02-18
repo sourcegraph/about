@@ -23,7 +23,7 @@ import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h3 className="tw-mb-8 lg:tw-mb-0">{header}</h3>
+        <h3 className="mb-8 lg:mb-0">{header}</h3>
         {text}
     </>
 )
@@ -35,7 +35,7 @@ const items = [
             <CarouselItem
                 header="Find vulnerabilities"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Vulnerabilities are inevitable, but they don't have to be disruptive. With{' '}
                         <Link
                             href="/code-search"
@@ -60,7 +60,7 @@ const items = [
             <CarouselItem
                 header="Automatically merge and deploy fixes"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Deploy fixes at scale. Don't let the size and complexity of your codebase hold you back. With{' '}
                         <Link
                             href="/batch-changes"
@@ -84,7 +84,7 @@ const items = [
             <CarouselItem
                 header="Proactively monitor for the presence of vulnerable code"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Get ahead of vulnerabilities. With{' '}
                         <a
                             href="https://docs.sourcegraph.com/code_monitoring"
@@ -109,7 +109,7 @@ const items = [
             <CarouselItem
                 header="Ensure removal of security vulnerabilities"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Get the full picture of an incident. Track how long the vulnerable code has been in your
                         codebase and how quickly you're removing it. With{' '}
                         <Link
@@ -134,7 +134,7 @@ const items = [
             <CarouselItem
                 header="Bring peace of mind to customers"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         The last thing you want to do is walk back an “all clear” report. With Sourcegraph, you can know
                         you'll find every instance of affected code, be able to fix it at scale, monitor for its
                         presence long-term, and ensure your customers that your code is safe.
@@ -147,19 +147,19 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <TimerOutlineIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <TimerOutlineIcon className="mb-6 text-blurple-400 inline" size={40} />,
         subtitle: 'Reduce time to discovery and resolution',
         description:
             'Find every instance of a vulnerability and start remediating in minutes instead of days or weeks. Use that head start to deploy fixes sooner.',
     },
     {
-        icon: <AutoFixIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <AutoFixIcon className="mb-6 text-blurple-400 inline" size={40} />,
         subtitle: 'Automate fixing, merging, and deploying fixes',
         description:
             'Automate PRs to fix vulnerabilities across your entire codebase so you can be 100% confident you resolved every vulnerability.',
     },
     {
-        icon: <ShieldAlertOutlineIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <ShieldAlertOutlineIcon className="mb-6 text-blurple-400 inline" size={40} />,
         subtitle: 'Alert for risky code changes & known vulnerabilities',
         description:
             'Get on top of vulnerabilities by monitoring your repositories for commits when risky patterns and known vulnerabilities enter your codebase.',
@@ -253,7 +253,7 @@ const UseCasePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="tw-mb-6 tw-max-w-[400px]">
+                        <h2 className="mb-6 max-w-[400px]">
                             Identifying & resolving security vulnerabilities is painful
                         </h2>
                         <p>
@@ -278,7 +278,7 @@ const UseCasePage: FunctionComponent = () => (
                     </>
                 }
                 rightColumn={
-                    <div className="tw-bg-white tw-p-8 lg:tw-ml-10">
+                    <div className="bg-white p-8 lg:ml-10">
                         <h4>Log4j was the tip of the iceberg</h4>
                         <p>
                             Log4j is a prime example of how challenging it is to create a cohesive response across
@@ -313,12 +313,12 @@ const UseCasePage: FunctionComponent = () => (
             <QuoteCarousel items={quoteCarouselItems} />
         </ContentSection>
 
-        <ContentSection parentClassName="tw-bg-gray-100">
+        <ContentSection parentClassName="bg-gray-100">
             <UseCasePageCallToAction
                 text="Find, fix, and track vulnerable code quickly across your entire codebase to improve code security."
                 buttonLocation={buttonLocation.body}
             />
-            <div className="tw-mt-4xl">
+            <div className="mt-4xl">
                 <CustomerLogos />
             </div>
         </ContentSection>

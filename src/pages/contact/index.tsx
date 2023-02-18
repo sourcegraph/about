@@ -21,12 +21,12 @@ const ContactHome: FunctionComponent = () => (
         }}
     >
         <ContentPage title={title} description={description}>
-            <ContentSection className="tw-pt-3xl tw-pb-xxs">
-                <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-md">
-                    <section className="tw-border-1 tw-rounded-lg tw-p-xs">
+            <ContentSection className="pt-3xl pb-xxs">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-md">
+                    <section className="border-1 rounded-lg p-xs">
                         <h4>Product support</h4>
                         <p>For help using Sourcegraph:</p>
-                        <ul className="tw-list-none tw-ml-0">
+                        <ul className="list-none ml-0">
                             <li>
                                 <a
                                     href="https://github.com/sourcegraph/sourcegraph/issues"
@@ -37,7 +37,7 @@ const ContactHome: FunctionComponent = () => (
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <GithubIcon className="tw-inline" /> File a public issue
+                                    <GithubIcon className="inline" /> File a public issue
                                 </a>
                             </li>
                             <li>
@@ -50,12 +50,12 @@ const ContactHome: FunctionComponent = () => (
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <EmailIcon className="tw-inline" /> Email support@sourcegraph.com
+                                    <EmailIcon className="inline" /> Email support@sourcegraph.com
                                 </a>
                             </li>
                         </ul>
                     </section>
-                    <section className="tw-border-1 tw-rounded-lg tw-p-xs">
+                    <section className="border-1 rounded-lg p-xs">
                         <h4>Sales</h4>
                         <p>For information about products and purchasing:</p>
                         <Link
@@ -69,7 +69,7 @@ const ContactHome: FunctionComponent = () => (
                             Contact sales
                         </Link>
                     </section>
-                    <section className="tw-border-1 tw-rounded-lg tw-p-xs">
+                    <section className="border-1 rounded-lg p-xs">
                         <h4>Jobs</h4>
 
                         <p>For information about joining our team:</p>
@@ -84,9 +84,9 @@ const ContactHome: FunctionComponent = () => (
                             See career opportunities
                         </a>
                     </section>
-                    <section className="tw-border-1 tw-rounded-lg tw-p-xs">
+                    <section className="border-1 rounded-lg p-xs">
                         <h4>Everything else</h4>
-                        <ul className="tw-list-none tw-ml-0">
+                        <ul className="list-none ml-0">
                             <li>
                                 <a
                                     href="mailto:hi@sourcegraph.com"
@@ -97,7 +97,7 @@ const ContactHome: FunctionComponent = () => (
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <EmailIcon className="tw-inline" /> hi@sourcegraph.com
+                                    <EmailIcon className="inline" /> hi@sourcegraph.com
                                 </a>
                             </li>
                             <li>
@@ -110,7 +110,7 @@ const ContactHome: FunctionComponent = () => (
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <TwitterIcon className="tw-inline" /> @sourcegraph
+                                    <TwitterIcon className="inline" /> @sourcegraph
                                 </a>
                             </li>
                             <li>
@@ -123,7 +123,7 @@ const ContactHome: FunctionComponent = () => (
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <GithubIcon className="tw-inline" /> github.com/sourcegraph
+                                    <GithubIcon className="inline" /> github.com/sourcegraph
                                 </a>
                             </li>
                             <li>
@@ -136,11 +136,11 @@ const ContactHome: FunctionComponent = () => (
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <LinkedinIcon className="tw-inline" /> Sourcegraph on LinkedIn
+                                    <LinkedinIcon className="inline" /> Sourcegraph on LinkedIn
                                 </a>
                             </li>
-                            <li className="tw-flex p-relative">
-                                <MapMarkerIcon className="tw-inline tw-mr-1" />
+                            <li className="flex p-relative">
+                                <MapMarkerIcon className="inline mr-1" />
                                 <div>
                                     Sourcegraph
                                     <br />

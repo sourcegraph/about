@@ -13,7 +13,7 @@ You, as a United States government entity, are required, when entering into agre
 
 Sourcegraph and You (together, the **"Parties"**) agree that modifications to the Sourcegraph Terms of Service (the **"ToS"**) are appropriate to accommodate Your legal status, Your public (in contrast to private) mission, and other special circumstances. Accordingly, the ToS are hereby modified by this Amendment as they pertain to the Government's use of the Company web site and services:
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## A. Public purpose
 
@@ -21,7 +21,7 @@ Sourcegraph and You (together, the **"Parties"**) agree that modifications to th
 
 1. **Government entity**. "You" within the ToS shall mean the Government itself and shall not bind, in their individual capacity, the individual(s) who utilize the Company site or services on the Government's behalf. Company will look solely to the Government to enforce any violation or breach of the ToS by such individuals, subject to federal law.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## B. Your content on Sourcegraph
 
@@ -33,7 +33,7 @@ Sourcegraph and You (together, the **"Parties"**) agree that modifications to th
 
 3. **Provision of data**. In case of termination of service, within 30 days of such termination, upon request, Company will provide you with all user-generated content that is publicly visible. Data will be provided in a commonly used file or database format as Company deems appropriate. Company will not provide data if doing so would violate its privacy policy, available at https://about.sourcegraph.com/privacy.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## C. Unpaid and paid plans
 
@@ -45,7 +45,7 @@ Sourcegraph and You (together, the **"Parties"**) agree that modifications to th
 
 3. **No business relationship created**. The Parties are independent entities and nothing in this Amendment or ToS creates an agency, partnership, joint venture, or employer/employee relationship.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## D. Federal Regulations
 
@@ -55,7 +55,7 @@ Sourcegraph and You (together, the **"Parties"**) agree that modifications to th
 
 2. **Federal Records**. Government acknowledges that use of Company's site and services may require management of Federal records. Government and user-generated content may meet the definition of Federal records as determined by the agency. If the Company holds Federal records, the Government and the Company must manage Federal records in accordance with all applicable records management laws and regulations, including but not limited to the Federal Records Act (44 U.S.C. chs. 21, 29, 31, 33), and regulations of the National Archives and Records Administration (NARA) at 36 CFR Chapter XII Subchapter B). Managing the records includes, but is not limited to, secure storage, retrievability, and proper disposition of all Federal records including transfer of permanently valuable records to NARA in a format and manner acceptable to NARA at the time of transfer. The Government is responsible for ensuring that the Company is compliant with applicable records management laws and regulations through the life and termination of the Agreement.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## E. General Conditions
 
@@ -69,7 +69,7 @@ Sourcegraph and You (together, the **"Parties"**) agree that modifications to th
 
 4. **Assignment**. Neither party may assign its obligations under this Amendment or ToS to any third-party without prior written consent of the other; however, Sourcegraph may, without the Government's consent, assign its obligations to an Government using the service under a free usage plan under this Amendment or ToS to an affiliate or to a successor or acquirer, as the case may be, in connection with a merger, acquisition, corporate reorganization or consolidation, or the sale of all or substantially all of Sourcegraph's assets.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## F. Changes to this agreement
 

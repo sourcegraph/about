@@ -27,19 +27,19 @@ const Sourcegraph4: FunctionComponent = () => (
             description: 'Introducing Sourcegraph 4.0, the code intelligence platform for the modern development team.',
             image: 'https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/meta/sourcegraph-4-post-launch.png',
         }}
-        heroAndHeaderClassName="tw-bg-[url('/backgrounds/starship-launch-pills-large.svg')] tw-bg-no-repeat tw-bg-cover tw-bg-center"
+        heroAndHeaderClassName="bg-[url('/backgrounds/starship-launch-pills-large.svg')] bg-no-repeat bg-cover bg-center"
         headerColorTheme="dark"
         hero={
-            <div className="tw-px-sm tw-py-3xl md:tw-py-5xl">
-                <div className="tw-max-w-[850px] tw-mx-auto tw-text-center tw-text-white">
+            <div className="px-sm py-3xl md:py-5xl">
+                <div className="max-w-[850px] mx-auto text-center text-white">
                     <img
                         src="/sourcegraph/sourcegraph-4-starship-reflected.svg"
                         alt="Sourcegraph 4.0 Starship"
-                        className="tw-mx-auto tw-max-w-screen-md tw-w-full"
+                        className="mx-auto max-w-screen-md w-full"
                     />
 
-                    <h1 className="tw-mb-sm -tw-mt-3xl sm:-tw-mt-36">From code search to code intelligence</h1>
-                    <h3 className="tw-mb-5xl tw-mx-auto tw-max-w-2xl">
+                    <h1 className="mb-sm mt-3xl sm:mt-36">From code search to code intelligence</h1>
+                    <h3 className="mb-5xl mx-auto max-w-2xl">
                         Sourcegraph 4.0, the latest release of our code intelligence platform, is now available.
                     </h3>
 
@@ -87,8 +87,8 @@ const Sourcegraph4: FunctionComponent = () => (
             ]}
         />
 
-        <ContentSection background="white" parentClassName="tw-pt-0 md:tw-pt-0">
-            <div className="tw-mb-5xl">
+        <ContentSection background="white" parentClassName="pt-0 md:pt-0">
+            <div className="mb-5xl">
                 <ThreeUpText
                     title={
                         <>
@@ -107,7 +107,7 @@ const Sourcegraph4: FunctionComponent = () => (
                     items={[
                         {
                             icon: (
-                                <span className="tw-inline-block tw-bg-violet-100 tw-text-violet-400 tw-rounded-lg tw-p-3">
+                                <span className="inline-block bg-violet-100 text-violet-400 rounded-lg p-3">
                                     <MagnifyIcon />
                                 </span>
                             ),
@@ -116,7 +116,7 @@ const Sourcegraph4: FunctionComponent = () => (
                         },
                         {
                             icon: (
-                                <span className="tw-inline-block tw-bg-violet-100 tw-text-violet-400 tw-rounded-lg tw-p-3">
+                                <span className="inline-block bg-violet-100 text-violet-400 rounded-lg p-3">
                                     <CloudUploadIcon />
                                 </span>
                             ),
@@ -125,14 +125,14 @@ const Sourcegraph4: FunctionComponent = () => (
                         },
                         {
                             icon: (
-                                <span className="tw-inline-block tw-bg-violet-100 tw-text-violet-400 tw-rounded-lg tw-p-3">
+                                <span className="inline-block bg-violet-100 text-violet-400 rounded-lg p-3">
                                     <img src="/icons/batch-changes.svg" alt="" width={24} height={24} />
                                 </span>
                             ),
                             subtitle: (
                                 <div>
                                     Server-side Batch Changes{' '}
-                                    <span className="tw-ml-xxs">
+                                    <span className="ml-xxs">
                                         <Badge color="light-gray" size="small" text="Beta" />
                                     </span>
                                 </div>
@@ -142,7 +142,7 @@ const Sourcegraph4: FunctionComponent = () => (
                         },
                         {
                             icon: (
-                                <span className="tw-inline-block tw-bg-violet-100 tw-text-violet-400 tw-rounded-lg tw-p-3">
+                                <span className="inline-block bg-violet-100 text-violet-400 rounded-lg p-3">
                                     <HeartOutlineIcon />
                                 </span>
                             ),
@@ -151,7 +151,7 @@ const Sourcegraph4: FunctionComponent = () => (
                         },
                         {
                             icon: (
-                                <span className="tw-inline-block tw-bg-violet-100 tw-text-violet-400 tw-rounded-lg tw-p-3">
+                                <span className="inline-block bg-violet-100 text-violet-400 rounded-lg p-3">
                                     <BarChartIcon />
                                 </span>
                             ),
@@ -161,7 +161,7 @@ const Sourcegraph4: FunctionComponent = () => (
                         },
                         {
                             icon: (
-                                <span className="tw-inline-block tw-bg-violet-100 tw-text-violet-400 tw-rounded-lg tw-p-3">
+                                <span className="inline-block bg-violet-100 text-violet-400 rounded-lg p-3">
                                     <UpdateIcon />
                                 </span>
                             ),
@@ -172,15 +172,15 @@ const Sourcegraph4: FunctionComponent = () => (
                 />
             </div>
 
-            <div className="tw-max-w-5xl tw-mx-auto tw-text-center">
-                <h2 className="tw-mb-3xl">Experience 4.0 with the Sourcegraph Engineering team</h2>
+            <div className="max-w-5xl mx-auto text-center">
+                <h2 className="mb-3xl">Experience 4.0 with the Sourcegraph Engineering team</h2>
 
-                <div className="tw-max-w-[800px] tw-mx-auto tw-aspect-video">
+                <div className="max-w-[800px] mx-auto aspect-video">
                     <TwitchPlayer video="1604525409" autoplay={false} width="100%" height="100%" />
                 </div>
             </div>
 
-            <h2 className="tw-mt-5xl tw-mb-3xl tw-max-w-[700px] tw-mx-auto tw-text-center">
+            <h2 className="mt-5xl mb-3xl max-w-[700px] mx-auto text-center">
                 Join these engineering orgs pushing forward modern software development
             </h2>
 

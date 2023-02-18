@@ -17,19 +17,19 @@ export const AbcsEbook: FunctionComponent = () => (
         }}
     >
         <ContentSection>
-            <div className="tw-max-w-5xl tw-mx-auto">
-                <h1 className="tw-text-center tw-mb-sm">Our ABCs: Always Be Coding children's book</h1>
+            <div className="max-w-5xl mx-auto">
+                <h1 className="text-center mb-sm">Our ABCs: Always Be Coding children's book</h1>
 
-                <p className="tw-text-center">
+                <p className="text-center">
                     <img
                         src="/other/abcs-book/our-abcs-hero.png"
-                        className="tw-px-2 tw-mb-4 tw-w-full"
+                        className="px-2 mb-4 w-full"
                         role="presentation"
                         alt="Our ABCs: Always Be Coding book"
                     />
                 </p>
 
-                <p className="tw-my-8 tw-text-center">
+                <p className="my-8 text-center">
                     <a
                         className="button btn btn-primary"
                         id="abc-dlbook"
@@ -44,9 +44,9 @@ export const AbcsEbook: FunctionComponent = () => (
                 </p>
             </div>
 
-            <div className="tw-mt-4 tw-max-w-2xl tw-mx-auto">
+            <div className="mt-4 max-w-2xl mx-auto">
                 <YouTube id="6bCO63O4swI" title="Our ABCs: Always Be Coding children's book by Sourcegraph" />
-                <p className="tw-mt-8">
+                <p className="mt-8">
                     At Sourcegraph, many of us have young children who we're trying to provide fun new learning
                     experiences for at home.
                 </p>
@@ -70,10 +70,10 @@ export const AbcsEbook: FunctionComponent = () => (
                     code. Or at least it will provide an engaging and educational distraction to give you a break for a
                     few minutes!
                 </p>
-                <p className="tw-text-center">
+                <p className="text-center">
                     <a
                         href="https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf"
-                        className="tw-block"
+                        className="block"
                         id="abc-dlbook"
                         title="Book cover: Our ABCs"
                         data-button-style={buttonStyle.image}
@@ -82,13 +82,13 @@ export const AbcsEbook: FunctionComponent = () => (
                     >
                         <img
                             src="/other/abcs-book/our-abcs.png"
-                            className="tw-mt-10 tw-mx-auto tw-shadow-xl"
+                            className="mt-10 mx-auto shadow-xl"
                             width="350px"
                             alt="Book cover: Our ABCs"
                         />
                     </a>
                 </p>
-                <p className="tw-my-8 tw-text-center">
+                <p className="my-8 text-center">
                     <a
                         className="button btn btn-primary"
                         id="abc-dlbook"
@@ -102,7 +102,7 @@ export const AbcsEbook: FunctionComponent = () => (
                     </a>
                 </p>
 
-                <p className="tw-text-center">
+                <p className="text-center">
                     We hope you enjoy the book and would love to get your feedback{' '}
                     <a
                         href="https://twitter.com/intent/tweet?text=For%20all%20children%20at%20home%20that%20wonder%20what%20their%20techie%20parents%20do%20all%20day%2C%20night%2C%20and%20some%20weekends%2C%20too%2C%20they%20need%20the%20%22Our%20ABCs%3A%20Always%20Be%20Coding%22%20book%20by%20@sourcegraph%20-%20https%3A//about.sourcegraph.com/abc%20%23ABCsbook"
@@ -126,7 +126,7 @@ export const AbcsEbook: FunctionComponent = () => (
                     .
                 </p>
 
-                <p className="tw-text-center">
+                <p className="text-center">
                     <a
                         className="button btn btn-primary"
                         href="https://twitter.com/intent/tweet?text=For%20all%20children%20at%20home%20that%20wonder%20what%20their%20techie%20parents%20do%20all%20day%2C%20night%2C%20and%20some%20weekends%2C%20too%2C%20they%20need%20the%20%22Our%20ABCs%3A%20Always%20Be%20Coding%22%20book%20by%20@sourcegraph%20-%20https%3A//about.sourcegraph.com/abc%20%23abcsbook%20%23TYCTWD%20%23TODASTW%20%23BringYourKidsToWorkDay"
@@ -135,23 +135,23 @@ export const AbcsEbook: FunctionComponent = () => (
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        <TwitterIcon className="tw-inline tw-mr-2 tw-align-top" />
+                        <TwitterIcon className="inline mr-2 align-top" />
                         Click to Tweet
                     </a>
                 </p>
 
-                <h2 className="tw-mt-5xl">FAQs</h2>
+                <h2 className="mt-5xl">FAQs</h2>
 
                 <p>We've had quite a few folks reach out with questions about this book and future ones.</p>
 
-                <h3 className="tw-pt-xs">Do you plan on selling this as a physical book?</h3>
+                <h3 className="pt-xs">Do you plan on selling this as a physical book?</h3>
                 <p>
                     We want to make it easy for folks to get a physical copy and while we don't (yet) have plans to
                     print and distribute, we're looking into vendors that can print and ship on demand. In any case, the
                     PDF is high-resolution so you can print it yourself.
                 </p>
 
-                <h3 className="tw-pt-xs">Do you have any other books like this planned?</h3>
+                <h3 className="pt-xs">Do you have any other books like this planned?</h3>
                 <p>
                     We've been blown away by the response to this book and while we'd love to add "children's book
                     authoring" to the list of Sourcegraph capabilities, we haven't yet decided if we plan to turn this
@@ -161,8 +161,8 @@ export const AbcsEbook: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="sg-bg-gradient-saturn">
-            <div className="tw-max-w-4xl tw-mx-auto">
-                <h3 className="tw-text-center tw-mb-6">About Sourcegraph</h3>
+            <div className="max-w-4xl mx-auto">
+                <h3 className="text-center mb-6">About Sourcegraph</h3>
                 <p>
                     Sourcegraph empowers all developers to explore, navigate and better understand all code, faster,
                     with{' '}

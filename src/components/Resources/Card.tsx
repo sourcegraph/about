@@ -37,52 +37,52 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
 
     // Content Type background mapping
     const backgrounds: BackgroundVariant = {
-        'virtual event': 'tw-from-vermillion-100 tw-to-violet-400',
-        video: 'tw-from-violet-100 tw-to-cerise-300',
-        'blog post': 'tw-from-violet-200 tw-to-vermillion-300',
-        guide: 'tw-from-blue-200 tw-to-violet-400',
-        'customer story': 'tw-from-green-100 tw-to-blue-300',
+        'virtual event': 'from-vermillion-100 to-violet-400',
+        video: 'from-violet-100 to-cerise-300',
+        'blog post': 'from-violet-200 to-vermillion-300',
+        guide: 'from-blue-200 to-violet-400',
+        'customer story': 'from-green-100 to-blue-300',
     }
 
     return (
-        <div className="tw-bg-white tw-shadow-md tw-rounded-lg sm:tw-min-h-[540px] md:tw-min-h-[475px]">
+        <div className="bg-white shadow-md rounded-lg sm:min-h-[540px] md:min-h-[475px]">
             <div
                 className={classNames(
-                    'tw-h-[54px] tw-overflow-hidden tw-rounded-t-lg tw-flex tw-items-center tw-px-sm tw-bg-gradient-to-r',
-                    backgrounds[resource.contentType] || 'tw-from-gray-200 tw-to-gray-300'
+                    'h-[54px] overflow-hidden rounded-t-lg flex items-center px-sm bg-gradient-to-r',
+                    backgrounds[resource.contentType] || 'from-gray-200 to-gray-300'
                 )}
             >
-                <div className="first-letter:tw-capitalize tw-font-medium tw-font-mono tw-text-sm">
+                <div className="first-letter:capitalize font-medium font-mono text-sm">
                     {resource.contentType}
                 </div>
             </div>
 
             {/* Card Info */}
             <div
-                className="tw-flex tw-flex-col tw-p-sm"
+                className="flex flex-col p-sm"
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ height: 'calc(100% - 54px)' }}
             >
-                <h4 className="tw-mb-sm">
+                <h4 className="mb-sm">
                     {resource.title.length > 100 ? `${resource.title.slice(0, 97)}...` : resource.title}
                 </h4>
 
-                <div className="tw-flex-wrap tw-flex tw-mb-sm">
+                <div className="flex-wrap flex mb-sm">
                     {resource.subjects
                         .slice(0, 3)
                         .sort()
                         .map(subject => (
-                            <span key={subject} className="tw-mr-2 tw-mb-2 first-letter:tw-capitalize">
+                            <span key={subject} className="mr-2 mb-2 first-letter:capitalize">
                                 <Badge text={subject} size="small" />
                             </span>
                         ))}
                     {!!resource.subjects.slice(3).length && (
-                        <div className="tw-group tw-relative">
+                        <div className="group relative">
                             <Badge text={`+${resource.subjects.slice(3).length}`} size="small" />
 
-                            <div className="tw-hidden group-hover:tw-flex group-hover:tw-animate-fadeIn tw-absolute tw-left-0 tw-top-0 tw-shadow-md tw-bg-white tw-pt-xxs tw-pl-xxs tw-rounded-md tw-flex-col tw-cursor-default">
+                            <div className="hidden group-hover:flex group-hover:animate-fadeIn absolute left-0 top-0 shadow-md bg-white pt-xxs pl-xxs rounded-md flex-col cursor-default">
                                 {resource.subjects.slice(3).map(subject => (
-                                    <span key={subject} className="tw-mr-2 tw-mb-2 first-letter:tw-capitalize">
+                                    <span key={subject} className="mr-2 mb-2 first-letter:capitalize">
                                         <Badge text={subject} size="small" />
                                     </span>
                                 ))}
@@ -91,13 +91,13 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                     )}
                 </div>
 
-                <div className="tw-text-sm tw-mb-sm">
+                <div className="text-sm mb-sm">
                     {resource.description.length > 170
                         ? `${resource.description.slice(0, 167)}...`
                         : resource.description}
                 </div>
 
-                <div className="tw-flex tw-mt-auto">
+                <div className="flex mt-auto">
                     <Link
                         href={resource.link}
                         data-button-style={buttonStyle.textWithArrow}
@@ -105,12 +105,12 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                         data-button-type="cta"
                     >
                         {ctaText}
-                        <ArrowRightIcon className="tw-inline tw-ml-xs" />
+                        <ArrowRightIcon className="inline ml-xs" />
                     </Link>
 
                     {resource.featured && (
-                        <span className="tw-ml-auto tw-bg-violet-100 tw-rounded-full tw-w-sm tw-h-sm d-flex tw-items-center tw-justify-center">
-                            <StarIcon className="tw-text-violet-400" size={18} />
+                        <span className="ml-auto bg-violet-100 rounded-full w-sm h-sm d-flex items-center justify-center">
+                            <StarIcon className="text-violet-400" size={18} />
                         </span>
                     )}
                 </div>

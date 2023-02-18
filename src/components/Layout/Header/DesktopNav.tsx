@@ -15,7 +15,7 @@ interface DesktopNav {
 
 export const DesktopNav: FunctionComponent<DesktopNav> = ({ dark = false, navLinks }) => (
     <>
-        <Nav className="tw-mr-auto left-nav lg:tw-ml-8">
+        <Nav className="mr-auto left-nav lg:ml-8">
             {navLinks.map(navLink =>
                 navLink.items.length === 1 ? (
                     navLink.items.map((item: { href: string; title: string }) =>
@@ -79,11 +79,11 @@ export const DesktopNav: FunctionComponent<DesktopNav> = ({ dark = false, navLin
             )}
         </Nav>
 
-        <Nav className="right-nav lg:tw-justify-end">
+        <Nav className="right-nav lg:justify-end">
             <Nav.Link
                 className={classNames(
-                    'tw-px-8 tw-py-2 tw-ml-xs btn tw-font-bold',
-                    dark ? 'tw-bg-white tw-text-violet-400' : 'btn-primary'
+                    'px-8 py-2 ml-xs btn font-bold',
+                    dark ? 'bg-white text-violet-400' : 'btn-primary'
                 )}
                 href="https://signup.sourcegraph.com"
                 title="Start for free"

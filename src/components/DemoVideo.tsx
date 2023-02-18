@@ -63,7 +63,7 @@ export const DemoVideo: React.FunctionComponent<{
         <div
             onClick={onPlayClick}
             onKeyUp={onPlayClick}
-            className={classNames('tw-relative tw-flex tw-items-center tw-justify-center tw-cursor-pointer', className)}
+            className={classNames('relative flex items-center justify-center cursor-pointer', className)}
             // eslint-disable-next-line react/forbid-dom-props
             style={{
                 aspectRatio: videoInfo.dimensions,
@@ -73,7 +73,7 @@ export const DemoVideo: React.FunctionComponent<{
         >
             <div
                 className={classNames(
-                    'tw-absolute tw-top-0 tw-right-0 tw-bottom-0 tw-left-0 tw-bg-contain tw-opacity-40',
+                    'absolute top-0 right-0 bottom-0 left-0 bg-contain opacity-40',
                     splashClassName
                 )}
                 // eslint-disable-next-line react/forbid-dom-props
@@ -81,7 +81,7 @@ export const DemoVideo: React.FunctionComponent<{
                     backgroundImage: `url(${videoInfo.poster})`,
                 }}
             />
-            <PlayCircleIcon className="tw-w-[100px] tw-h-[100px]" />
+            <PlayCircleIcon className="w-[100px] h-[100px]" />
         </div>
     )
 }

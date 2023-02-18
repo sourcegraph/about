@@ -37,22 +37,22 @@ export const BatchChangesPage: FunctionComponent = () => (
     >
         {/* Overview */}
         <ContentSection>
-            <div className="tw-text-center">
-                <h2 className="tw-mb-4">Change code everywhere with a single declarative file</h2>
-                <div className="tw-justify-center tw-mb-8">
+            <div className="text-center">
+                <h2 className="mb-4">Change code everywhere with a single declarative file</h2>
+                <div className="justify-center mb-8">
                     <p>
                         Batch Changes gives you a declarative structure for finding and modifying code across all of
                         your repositories. With a simple UI, it is easy to track and manage all of your changesets
                         through checks and code reviews until each change is merged.
                     </p>
                 </div>
-                <div className="tw-grid tw-gap-md tw-grid-cols-1 md:tw-grid-cols-2">
+                <div className="grid gap-md grid-cols-1 md:grid-cols-2">
                     <div>
                         <Figure
                             src="/batch-changes/asking_developers_to_update_repos.svg"
                             alt="Graphic of many developers individually updating repositories, while some are not updating their repositories."
                             caption={
-                                <div className="tw-mt-8">
+                                <div className="mt-8">
                                     Asking <strong>developers</strong> to update repositories
                                 </div>
                             }
@@ -64,7 +64,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                             src="/batch-changes/using_batch_changes_to_update_repos.svg"
                             alt="Graphic of a single developer updating a lot of repositories."
                             caption={
-                                <div className="tw-mt-8">
+                                <div className="mt-8">
                                     Using <strong className="text-purple">Batch Changes</strong> to update repositories
                                 </div>
                             }
@@ -81,9 +81,9 @@ export const BatchChangesPage: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="tw-mb-4 tw-max-w-md">Search, define, execute, and track code changes</h2>
+                        <h2 className="mb-4 max-w-md">Search, define, execute, and track code changes</h2>
                         <ul>
-                            <li className="tw-mt-2">
+                            <li className="mt-2">
                                 Find all occurrences of code to change with Sourcegraph{' '}
                                 <a
                                     href="http://about.sourcegraph.com/"
@@ -95,11 +95,11 @@ export const BatchChangesPage: FunctionComponent = () => (
                                     universal code search
                                 </a>
                             </li>
-                            <li className="tw-mt-2">
+                            <li className="mt-2">
                                 Programmatically define changes by creating a declarative specification file
                             </li>
-                            <li className="tw-mt-2">Execute specifications via a lightweight CLI</li>
-                            <li className="tw-mt-2">
+                            <li className="mt-2">Execute specifications via a lightweight CLI</li>
+                            <li className="mt-2">
                                 Track changeset lifecycle status across multiple code hosts via the Sourcegraph UI
                             </li>
                         </ul>
@@ -121,7 +121,7 @@ export const BatchChangesPage: FunctionComponent = () => (
 
         {/* Social proof */}
         <ContentSection>
-            <div className="tw-max-w-4xl tw-mx-auto">
+            <div className="max-w-4xl mx-auto">
                 <Blockquote
                     quote="The ability to automate downstream changes that Sourcegraph Batch Changes provides is a key
                         capability for reducing the hidden burden of updates pushed across teams and enabling us to
@@ -136,12 +136,12 @@ export const BatchChangesPage: FunctionComponent = () => (
         </ContentSection>
 
         {/* Track */}
-        <ContentSection parentClassName="tw-bg-gray-100">
+        <ContentSection parentClassName="bg-gray-100">
             <TwoColumnSection
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="tw-mb-4 tw-max-w-sm">Track changes from creation to merge</h2>
+                        <h2 className="mb-4 max-w-sm">Track changes from creation to merge</h2>
                         <p>Tracking changes to many repositories requires spreadsheets and manual labor.</p>
                         <p>
                             With Batch Changes, you can automatically track changeset lifecycle status, like check
@@ -165,19 +165,19 @@ export const BatchChangesPage: FunctionComponent = () => (
 
         {/* Use Cases */}
         <ContentSection>
-            <h2 className="tw-mb-8 tw-text-center">How developers are using Batch Changes </h2>
+            <h2 className="mb-8 text-center">How developers are using Batch Changes </h2>
             <Tabs
                 tabs={[
                     {
                         title: 'Configuration',
                         content: (
-                            <div className="tw-mx-auto tw-max-w-4xl">
+                            <div className="mx-auto max-w-4xl">
                                 <p>
                                     Quickly edit every CI, build, and other configuration files to make changes such as
                                     altering steps, migrating versions, or changing base images.
                                 </p>
                                 <img
-                                    className="tw-mt-6 tw-h-auto tw-w-full"
+                                    className="mt-6 h-auto w-full"
                                     width="750"
                                     height="400"
                                     src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/update-circle-ci-username.png"
@@ -189,13 +189,13 @@ export const BatchChangesPage: FunctionComponent = () => (
                     {
                         title: 'Refactoring',
                         content: (
-                            <div className="tw-mx-auto tw-max-w-4xl">
+                            <div className="mx-auto max-w-4xl">
                                 <p>
                                     Use language-aware tooling of your choice to perform complex refactors like updating
                                     an API and its function calls or replacing libraries entirely.
                                 </p>
                                 <img
-                                    className="tw-mt-6 tw-h-auto tw-w-full"
+                                    className="mt-6 h-auto w-full"
                                     width="850"
                                     height="380"
                                     src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/comby-sprintf-to-itoa.png"
@@ -207,13 +207,13 @@ export const BatchChangesPage: FunctionComponent = () => (
                     {
                         title: 'Security',
                         content: (
-                            <div className="tw-mx-auto tw-max-w-4xl">
+                            <div className="mx-auto max-w-4xl">
                                 <p>
                                     Refactor code to replace insecure functions, update vulnerable packages, or modify
                                     container configurations across hundreds of repositories.
                                 </p>
                                 <img
-                                    className="tw-mt-6 tw-h-auto tw-w-full"
+                                    className="mt-6 h-auto w-full"
                                     width="750"
                                     height="472"
                                     src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/pin-docker-images.png"
@@ -227,8 +227,8 @@ export const BatchChangesPage: FunctionComponent = () => (
         </ContentSection>
 
         {/* Social proof */}
-        <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="tw-max-w-4xl tw-mx-auto">
+        <ContentSection parentClassName="bg-gray-100">
+            <div className="max-w-4xl mx-auto">
                 <Blockquote
                     quote="Sourcegraph Batch Changes gives us the confidence we need to understand the total impact of
                         large-scale code changes before we make them. This enables the entire team to make more
@@ -244,8 +244,8 @@ export const BatchChangesPage: FunctionComponent = () => (
 
         {/* Demo */}
         <ContentSection>
-            <h2 className="tw-mb-4 tw-text-center">See Batch Changes in action</h2>
-            <YouTube title="Sourcegraph Batch Changes demo" id="eOmiyXIWTCw" className="tw-mx-auto tw-max-w-4xl" />
+            <h2 className="mb-4 text-center">See Batch Changes in action</h2>
+            <YouTube title="Sourcegraph Batch Changes demo" id="eOmiyXIWTCw" className="mx-auto max-w-4xl" />
         </ContentSection>
 
         <CtaSection />

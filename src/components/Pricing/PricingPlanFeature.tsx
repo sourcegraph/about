@@ -20,12 +20,12 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag
     const isSmOrUp = windowWidth > breakpoints.xs
 
     return (
-        <Tag className={classNames(Tag === 'li' && 'tw-text-sm')}>
-            <div className="tw-flex tw-my-xxs" title={feature.description}>
-                <div className={classNames('tw-text-lg', className)}>{feature.label}</div>
+        <Tag className={classNames(Tag === 'li' && 'text-sm')}>
+            <div className="flex my-xxs" title={feature.description}>
+                <div className={classNames('text-lg', className)}>{feature.label}</div>
 
                 {feature.description && isSmOrUp && (
-                    <span className="tw-ml-xxs tw-my-auto tw-text-gray-300">
+                    <span className="ml-xxs my-auto text-gray-300">
                         <InformationCircleOutlineIcon size={isMdOrDown ? 25 : 19} />
                     </span>
                 )}

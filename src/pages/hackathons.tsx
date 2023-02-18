@@ -12,17 +12,17 @@ export const Hackathons: FunctionComponent = () => (
             description: 'Set up Sourcegraph at a Hackathon',
         }}
     >
-        <section className="tw-px-8 tw-text-center tw-mb-7">
-            <h1 className="tw-mt-6">Set up Sourcegraph during a hackathon</h1>
+        <section className="px-8 text-center mb-7">
+            <h1 className="mt-6">Set up Sourcegraph during a hackathon</h1>
             <p>
                 We'll give you access to Sourcegraph Enterprise features so you can ship code search and intelligence to
                 your team.
             </p>
         </section>
 
-        <section className="tw-p-6 tw-bg-white tw-m-auto tw-flex tw-justify-around tw-flex-col lg:tw-flex-row tw-max-w-screen-xl">
-            <div className="tw-mt-0 tw-mb-2 lg:tw-mr-8">
-                <div className="tw-p-8 tw-rounded tw-flex tw-flex-col tw-bg-gray-100">
+        <section className="p-6 bg-white m-auto flex justify-around flex-col lg:flex-row max-w-screen-xl">
+            <div className="mt-0 mb-2 lg:mr-8">
+                <div className="p-8 rounded flex flex-col bg-gray-100">
                     <p>
                         Want to win your hackathon? Set up Sourcegraph and bring the power of code search and code
                         intelligence to your engineering team!
@@ -42,8 +42,8 @@ export const Hackathons: FunctionComponent = () => (
                         </a>
                         , and we'll get back to you ASAP on how to get started!
                     </p>
-                    <div className="tw-border-t tw-mt-6 tw-border-gray-300">
-                        <p className="tw-pt-sm">
+                    <div className="border-t mt-6 border-gray-300">
+                        <p className="pt-sm">
                             Get started with the{' '}
                             <a
                                 target="_blank"
@@ -85,8 +85,8 @@ export const Hackathons: FunctionComponent = () => (
                             </a>
                             , and we'll get back to you ASAP on how to get started!
                         </p>
-                        <div className="tw-border-t tw-border-gray-300 tw-mt-6">
-                            <p className="tw-pt-sm">
+                        <div className="border-t border-gray-300 mt-6">
+                            <p className="pt-sm">
                                 Get started with the{' '}
                                 <a
                                     target="_blank"

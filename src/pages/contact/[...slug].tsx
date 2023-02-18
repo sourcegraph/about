@@ -16,14 +16,14 @@ const ContactPage: NextPage<ContactPageProps> = ({ title, description, masterFor
             description,
         }}
     >
-        <div className="tw-bg-white tw-text-black">
-            <div className="tw-px-8 tw-py-8 xl:tw-container tw-mx-auto">
-                <div className="tw-grid tw-gap-md tw-grid-cols-1 md:tw-grid-cols-2">
+        <div className="bg-white text-black">
+            <div className="px-8 py-8 xl:container mx-auto">
+                <div className="grid gap-md grid-cols-1 md:grid-cols-2">
                     <div>
                         <h1>{title}</h1>
-                        <h3 className="tw-font-normal">{description}</h3>
+                        <h3 className="font-normal">{description}</h3>
 
-                        <div className="tw-mt-8">
+                        <div className="mt-8">
                             <HubSpotForm masterFormName={masterFormName} formId={formId} chiliPiper={true} />
                         </div>
                     </div>

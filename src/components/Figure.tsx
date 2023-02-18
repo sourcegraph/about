@@ -26,14 +26,14 @@ export const Figure: FunctionComponent<Figure> = ({
             src={src}
             alt={alt}
             title={alt}
-            className={classNames({ 'tw-mx-auto': centre, 'tw-drop-shadow-xl': shadow })}
+            className={classNames({ 'mx-auto': centre, 'drop-shadow-xl': shadow })}
         />
         {caption && (
-            <figcaption className="tw-mt-3">
+            <figcaption className="mt-3">
                 {link ? (
-                    <a href={link} className="tw-not-italic tw-flex">
+                    <a href={link} className="not-italic flex">
                         {caption}
-                        {linkIcon && <OpenInNewIcon className="tw-ml-xxs tw-my-auto" size={18} />}
+                        {linkIcon && <OpenInNewIcon className="ml-xxs my-auto" size={18} />}
                     </a>
                 ) : (
                     caption

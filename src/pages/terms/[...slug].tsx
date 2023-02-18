@@ -42,8 +42,8 @@ const TermPage: NextPage<PageProps> = ({ page, content }) => {
 
     return (
         <Layout meta={meta}>
-            <section className="tw-bg-gray-200 tw-text-center tw-py-8">{page && <h1>{title}</h1>}</section>
-            <section className="tw-max-w-3xl tw-mx-auto tw-my-xl">
+            <section className="bg-gray-200 text-center py-8">{page && <h1>{title}</h1>}</section>
+            <section className="max-w-3xl mx-auto my-xl">
                 {content && <MDXRemote {...content} components={components as Components} />}
             </section>
         </Layout>

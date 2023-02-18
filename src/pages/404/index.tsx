@@ -6,9 +6,9 @@ import styles from './404.module.scss'
 
 const Custom404: React.FunctionComponent = () => (
     <Layout headerColorTheme="white">
-        <div className={`${styles.errorPage} tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-black`}>
-            <div className={`${styles.circle} tw-rounded-full`}>
-                <div className={`${styles.icon} tw-my-0 tw-mx-auto`}>
+        <div className={`${styles.errorPage} flex flex-col items-center justify-center text-black`}>
+            <div className={`${styles.circle} rounded-full`}>
+                <div className={`${styles.icon} my-0 mx-auto`}>
                     <SignDirectionIcon />
                 </div>
             </div>

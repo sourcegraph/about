@@ -56,7 +56,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         }
     >
         <ContentSection>
-            <div className="tw-mt-16">
+            <div className="mt-16">
                 <CustomerLogos monochrome={true} />
             </div>
         </ContentSection>
@@ -65,7 +65,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
             <CoreFeatures />
         </ContentSection>
 
-        <div className="tw-bg-gray-100">
+        <div className="bg-gray-100">
             <IntegrationsSection />
         </div>
 

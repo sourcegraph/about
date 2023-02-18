@@ -8,11 +8,11 @@ import { BlogTypeInfo } from '../../interfaces/posts'
 interface Props extends Pick<BlogTypeInfo, 'title' | 'belowTitle' | 'baseUrl'> {}
 
 export const BlogHeader: FunctionComponent<Props> = ({ title, belowTitle, baseUrl }) => (
-    <div className="tw-py-sm">
+    <div className="py-sm">
         <h1>
             <Link
                 href={baseUrl}
-                className="tw-text-black"
+                className="text-black"
                 title={title}
                 data-button-style={buttonStyle.text}
                 data-button-location={buttonLocation.hero}

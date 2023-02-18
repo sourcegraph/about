@@ -23,7 +23,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                 {renderTitleAsLink === true ? (
                     <Link
                         href={`/${blogType}/${slugPath}`}
-                        className="tw-text-gray-600 tw-block"
+                        className="text-gray-600 block"
                         title={frontmatter.title}
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
@@ -37,7 +37,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
             </h4>
 
             {frontmatter.authors?.length && (
-                <p className="tw-mb-0 text-align-center text-secondary">
+                <p className="mb-0 text-align-center text-secondary">
                     {frontmatter.authors.map((a, index) => (
                         <span key={a.name} data-author={a.name}>
                             {a.url ? (
@@ -75,21 +75,21 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
             )}
 
             {frontmatter.publishDate && (
-                <p className="tw-mb-0 text-align-center text-secondary">
+                <p className="mb-0 text-align-center text-secondary">
                     <time dateTime={frontmatter.publishDate}>{formatDate(frontmatter.publishDate)}</time>
                 </p>
             )}
         </header>
 
         {slugPath && (
-            <div className="tw-pt-0 tw-grid tw-gap-sm tw-grid-cols-1 md:tw-grid-cols-3">
-                <div className="md:tw-col-span-2">
+            <div className="pt-0 grid gap-sm grid-cols-1 md:grid-cols-3">
+                <div className="md:col-span-2">
                     {frontmatter.description ? (
                         <p>{truncate(frontmatter.description, { length: 300 })}</p>
                     ) : (
                         <p>{typeof excerpt === 'string' && excerpt}</p>
                     )}
-                    <div className="tw-text-center xs:tw-text-left">
+                    <div className="text-center xs:text-left">
                         <Link
                             href={`/${blogType}/${slugPath}`}
                             title="Read more"
@@ -111,7 +111,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                         data-button-type="cta"
                     >
                         <img
-                            className="tw-w-full"
+                            className="w-full"
                             src={
                                 frontmatter.heroImage
                                     ? frontmatter.heroImage

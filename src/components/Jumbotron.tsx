@@ -2,8 +2,8 @@ import { FunctionComponent } from 'react'
 
 export const COLORS = {
     white: '',
-    dark: 'tw-bg-black tw-text-white',
-    purple: 'tw-bg-violet-400 tw-text-white',
+    dark: 'bg-black text-white',
+    purple: 'bg-violet-400 text-white',
 }
 
 interface Props {
@@ -25,11 +25,11 @@ export const Jumbotron: FunctionComponent<Props> = ({
     description,
     children,
 }) => (
-    <div className={`jumbotron tw-rounded-none ${COLORS[color]} ${className}`}>
-        <div className="tw-mx-auto tw-container tw-text-center tw-pt-6 tw-pb-8">
+    <div className={`jumbotron rounded-none ${COLORS[color]} ${className}`}>
+        <div className="mx-auto container text-center pt-6 pb-8">
             {logomark && (
                 <img
-                    className="tw-mb-1 tw-w-8 tw-h-8 tw-mx-auto"
+                    className="mb-1 w-8 h-8 mx-auto"
                     src="/sourcegraph/sourcegraph-mark.svg"
                     aria-hidden="true"
                     alt="Sourcegraph mark"

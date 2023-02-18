@@ -20,7 +20,7 @@ export const CaseStudy: FunctionComponent = () => (
                 author: 'François Jehl, Senior Engineering Manager, Criteo',
             }}
         >
-            <ContentSection background="white" slimWidth={true} className="tw-pb-md">
+            <ContentSection background="white" slimWidth={true} className="pb-md">
                 <p>
                     Founded in France in 2005, Criteo partners with retailers to recommend products to potential
                     customers through ad retargeting. The company has massive volumes of data stored in its on-premise
@@ -32,13 +32,13 @@ export const CaseStudy: FunctionComponent = () => (
                     work in multiple repositories, this small-scale search strategy isn't sufficient and can be a major
                     time sink.
                 </p>
-                <div className="tw-grid tw-gap-lg tw-grid-cols-1 md:tw-grid-cols-2 tw-justify-center tw-text-center tw-pt-xs">
+                <div className="grid gap-lg grid-cols-1 md:grid-cols-2 justify-center text-center pt-xs">
                     <figure>
                         <img
                             src="/case-studies/francois-jehl-criteo.jpg"
                             alt="François Jehl, Senior Engineering Manager, Criteo"
                             title="François Jehl, Senior Engineering Manager, Criteo"
-                            className="tw-w-full tw-rounded-full tw-mx-auto tw-block tw-mb-4 tw-max-w-[200px]"
+                            className="w-full rounded-full mx-auto block mb-4 max-w-[200px]"
                         />
                         <figcaption>François Jehl, Senior Engineering Manager, Criteo</figcaption>
                     </figure>
@@ -47,7 +47,7 @@ export const CaseStudy: FunctionComponent = () => (
                             src="/case-studies/loic-teikiteetini-vaysse-criteo.jpg"
                             alt="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
                             title="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
-                            className="tw-w-full tw-rounded-full tw-mx-auto tw-block tw-mb-4 tw-max-w-[200px]"
+                            className="w-full rounded-full mx-auto block mb-4 max-w-[200px]"
                         />
                         <figcaption>Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo</figcaption>
                     </figure>
@@ -60,7 +60,7 @@ export const CaseStudy: FunctionComponent = () => (
                     quote="When looking for alternatives, the general consensus was 'If you're a giant like Google, you can simply build your own code search engine. If that's not you, then buy Sourcegraph."
                     author="François Jehl"
                 />
-                <h2 className="tw-pt-md tw-pb-1">Prioritize developer happiness and productivity follows</h2>
+                <h2 className="pt-md pb-1">Prioritize developer happiness and productivity follows</h2>
                 <Blockquote
                     quote="At Criteo, developer happiness is our top priority—not just productivity. We want to tackle the things that developers see as hurdles in their day-to-day life. By providing them with the right tools, like Sourcegraph, we've found that increased productivity is a natural byproduct."
                     author="François Jehl"
@@ -77,7 +77,7 @@ export const CaseStudy: FunctionComponent = () => (
                     for—perhaps just patterns that need to be deprecated. With our previous tools, the results were not
                     good,” said François Jehl.
                 </p>
-                <h2 className="tw-pt-md tw-pb-1">Survey says Sourcegraph is the ultimate time-saver</h2>
+                <h2 className="pt-md pb-1">Survey says Sourcegraph is the ultimate time-saver</h2>
                 <p>
                     Criteo conducted an internal survey with Sourcegraph early adopters to determine how Sourcegraph has
                     impacted its developers' workflows. The survey found that 83 percent of those developers used

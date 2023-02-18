@@ -101,8 +101,8 @@ interface IllustrationStyle {
 // Background variant to image or gradient class mapping
 const backgrounds: { [key: string]: StaticImageData | string } = {
     // Standard Variants
-    white: 'tw-bg-white tw-text-black',
-    black: 'tw-bg-black tw-text-white',
+    white: 'bg-white text-black',
+    black: 'bg-black text-white',
     // Light Nebulous Variants
     lightNebulousSaturn1,
     lightNebulousSaturn2,
@@ -197,12 +197,12 @@ export const Background: FunctionComponent<Background> = ({ variant, children, i
 
     const styleClasses = classNames(className, {
         [utilityBackground]: isUtilityBackground,
-        'tw-text-white':
+        'text-white':
             variant.includes('dark') ||
             variant.includes('starship') ||
             variant.includes('black') ||
             variant.toLowerCase().includes('space'),
-        'tw-text-black':
+        'text-black':
             (!variant.includes('dark') &&
                 !variant.includes('starship') &&
                 !variant.includes('black') &&

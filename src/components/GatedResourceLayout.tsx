@@ -47,10 +47,10 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
         <>
             {hasWatchNowQuery ? (
                 // ---- RECORDING BODY VARIATION ----
-                <div className="tw-bg-white">
-                    <div className="tw-container tw-mx-auto tw-py-3xl lg:tw-py-5xl video-embed embed-responsive embed-responsive-16by9">
+                <div className="bg-white">
+                    <div className="container mx-auto py-3xl lg:py-5xl video-embed embed-responsive embed-responsive-16by9">
                         <iframe
-                            className="md:tw-p-5xl embed-responsive-item"
+                            className="md:p-5xl embed-responsive-item"
                             src={videoSrc}
                             allowFullScreen={true}
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -59,16 +59,16 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                         />
                     </div>
 
-                    <div className="tw-bg-gray-100">{learnMoreCTA}</div>
+                    <div className="bg-gray-100">{learnMoreCTA}</div>
                 </div>
             ) : (
                 // ---- DEFAULT BODY VARIATION ----
-                <ContentSection background="white" className="tw-flex tw-flex-col-reverse md:tw-flex-row">
+                <ContentSection background="white" className="flex flex-col-reverse md:flex-row">
                     {description}
 
-                    <div className="tw-pb-3xl md:tw-pb-0">
+                    <div className="pb-3xl md:pb-0">
                         <h2>{formLabel}</h2>
-                        <div className="tw-mt-4 tw-p-sm tw-drop-shadow sg-border-gradient-saturn tw-border-solid tw-border-3">
+                        <div className="mt-4 p-sm drop-shadow sg-border-gradient-saturn border-solid border-3">
                             {!hasWatchNowQuery && !demioForm && (
                                 <HubSpotForm
                                     masterFormName="gatedMulti"
@@ -95,15 +95,15 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             )}
 
             {speakers?.length && (
-                <ContentSection background="white" parentClassName={classNames({ 'tw-pt-0': !hasWatchNowQuery })}>
+                <ContentSection background="white" parentClassName={classNames({ 'pt-0': !hasWatchNowQuery })}>
                     <h2>Speakers</h2>
 
-                    <section className="tw-flex-wrap tw-flex">
+                    <section className="flex-wrap flex">
                         {speakers.map((speaker: Speaker) => (
-                            <div key={speaker.name} className="tw-pl-0 lg:tw-pr-5xl">
-                                <img className="tw-py-sm" width="140" src={speaker.img} alt={speaker.name} />
+                            <div key={speaker.name} className="pl-0 lg:pr-5xl">
+                                <img className="py-sm" width="140" src={speaker.img} alt={speaker.name} />
                                 <h5>{speaker.name}</h5>
-                                <figcaption className="tw-my-xxs tw-text-gray-400 tw-max-w-[250px]">
+                                <figcaption className="my-xxs text-gray-400 max-w-[250px]">
                                     {speaker.title}
                                 </figcaption>
                                 <p>{speaker.bio}</p>

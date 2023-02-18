@@ -43,7 +43,7 @@ const CodeInsightSearchExample: React.FunctionComponent<CodeInsightSearchExample
     return (
         <View
             title={data.title}
-            subtitle={<CodeInsightsQueryBlock className="tw-mt-1">{data.repositories}</CodeInsightsQueryBlock>}
+            subtitle={<CodeInsightsQueryBlock className="mt-1">{data.repositories}</CodeInsightsQueryBlock>}
             className={classNames(className, styles.card)}
         >
             <div className={styles.chart}>
@@ -56,7 +56,7 @@ const CodeInsightSearchExample: React.FunctionComponent<CodeInsightSearchExample
                 {data.series.map(line => (
                     // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     <LegendItem key={line.dataKey.toString()} color={getLineStroke<any>(line)}>
-                        <span className={classNames(styles.legendMigrationItem, 'tw-shrink-0 tw-mr-2')}>{line.name}</span>
+                        <span className={classNames(styles.legendMigrationItem, 'shrink-0 mr-2')}>{line.name}</span>
                         <CodeInsightsQueryBlock>{line.query}</CodeInsightsQueryBlock>
                     </LegendItem>
                 ))}
@@ -71,7 +71,7 @@ const CodeInsightCaptureExample: React.FunctionComponent<CodeInsightCaptureExamp
     return (
         <View
             title={data.title}
-            subtitle={<CodeInsightsQueryBlock className="tw-mt-1">All repositories</CodeInsightsQueryBlock>}
+            subtitle={<CodeInsightsQueryBlock className="mt-1">All repositories</CodeInsightsQueryBlock>}
             className={classNames(className, styles.card)}
         >
             <div className={styles.captureGroup}>
@@ -89,7 +89,7 @@ const CodeInsightCaptureExample: React.FunctionComponent<CodeInsightCaptureExamp
                     ))}
                 </LegendBlock>
             </div>
-            <CodeInsightsQueryBlock className="tw-mt-2">{data.query}</CodeInsightsQueryBlock>
+            <CodeInsightsQueryBlock className="mt-2">{data.query}</CodeInsightsQueryBlock>
         </View>
     )
 }

@@ -11,40 +11,40 @@
 @layer base {
     /* Typography */
     html {
-        @apply tw-font-sans tw-text-base tw-tracking-normal tw-font-normal tw-antialiased;
+        @apply font-sans text-base tracking-normal font-normal antialiased;
     }
     body {
-        @apply tw-bg-gray-50;
+        @apply bg-gray-50;
     }
     h1 {
-        @apply tw-font-sans tw-text-6xl md:tw-text-7xl tw-tracking-normal tw-font-semibold;
+        @apply font-sans text-6xl md:text-7xl tracking-normal font-semibold;
     }
     h2 {
-        @apply tw-font-sans tw-text-4xl tw-tracking-normal tw-font-semibold;
+        @apply font-sans text-4xl tracking-normal font-semibold;
     }
     h3 {
-        @apply tw-font-sans tw-text-3xl tw-tracking-normal tw-font-normal;
+        @apply font-sans text-3xl tracking-normal font-normal;
     }
     h4 {
-        @apply tw-font-sans tw-text-2xl tw-tracking-normal tw-font-semibold;
+        @apply font-sans text-2xl tracking-normal font-semibold;
     }
     h5 {
-        @apply tw-font-sans tw-text-xl tw-tracking-normal tw-font-semibold;
+        @apply font-sans text-xl tracking-normal font-semibold;
     }
     h6 {
-        @apply tw-font-sans tw-text-lg tw-tracking-wide tw-font-semibold tw-uppercase;
+        @apply font-sans text-lg tracking-wide font-semibold uppercase;
     }
     code {
-        @apply tw-font-mono tw-text-base tw-font-medium tw-tracking-tightest tw-break-words;
+        @apply font-mono text-base font-medium tracking-tightest break-words;
     }
     /* Inline Links */
     p a,
     li a {
-        @apply tw-font-normal hover:tw-underline;
+        @apply font-normal hover:underline;
     }
     /* Standalone Links (Usually CTAs) */
     a {
-        @apply tw-text-blurple-400;
+        @apply text-blurple-400;
     }
 
     /* Lists */
@@ -56,22 +56,22 @@
 
     /* Paragraphs */
     p {
-        @apply tw-mb-3;
+        @apply mb-3;
     }
 
     /* Tables */
     table {
-        @apply tw-w-full tw-max-w-full tw-mb-4 tw-bg-transparent tw-border-collapse tw-border tw-border-solid tw-border-gray-200;
+        @apply w-full max-w-full mb-4 bg-transparent border-collapse border border-solid border-gray-200;
     }
     td,
     th {
-        @apply tw-p-3 tw-align-top tw-border tw-border-solid tw-border-gray-200;
+        @apply p-3 align-top border border-solid border-gray-200;
     }
     th {
-        @apply tw-align-middle tw-border-b tw-border-solid tw-border-b-gray-200;
+        @apply align-middle border-b border-solid border-b-gray-200;
     }
     tr:nth-child(even) {
-        @apply tw-bg-gray-100;
+        @apply bg-gray-100;
     }
     /* Elements with id's */
     *[id] {
@@ -85,28 +85,28 @@
 
 @layer components {
     .btn {
-        @apply tw-rounded tw-py-2 tw-px-6 tw-inline-block;
+        @apply rounded py-2 px-6 inline-block;
         transition-timing-function: ease-in-out;
         transition-duration: 0.2s;
         transition-property: background, color;
     }
     .btn:not(.btn-link) {
-        @apply tw-font-semibold;
+        @apply font-semibold;
     }
 
     .btn-primary {
-        @apply tw-bg-violet-400 hover:tw-bg-violet-500 tw-text-white;
+        @apply bg-violet-400 hover:bg-violet-500 text-white;
     }
     .btn-outline-primary {
-        @apply tw-border-1 tw-border-violet-400 tw-text-violet-400 tw-bg-white hover:tw-bg-violet-400 hover:tw-text-white;
+        @apply border-1 border-violet-400 text-violet-400 bg-white hover:bg-violet-400 hover:text-white;
     }
 
     .btn-secondary {
-        @apply tw-bg-gray-400 hover:tw-bg-gray-500 tw-text-white;
+        @apply bg-gray-400 hover:bg-gray-500 text-white;
     }
 
     .btn-link {
-        @apply tw-text-violet-400 hover:tw-text-violet-500 hover:tw-underline;
+        @apply text-violet-400 hover:text-violet-500 hover:underline;
     }
 }
 
@@ -144,22 +144,22 @@
 
     /* Simple Backgrounds */
     .sg-bg-gradient-venus {
-        @apply tw-bg-gradient-to-r tw-from-blue-200/50 tw-to-green-200/50;
+        @apply bg-gradient-to-r from-blue-200/50 to-green-200/50;
     }
     .sg-bg-gradient-saturn {
-        @apply tw-bg-gradient-to-r tw-from-violet-200 tw-to-blue-200;
+        @apply bg-gradient-to-r from-violet-200 to-blue-200;
     }
     .sg-bg-gradient-mars {
-        @apply tw-bg-gradient-to-r tw-from-vermillion-200/70 tw-to-violet-200/70;
+        @apply bg-gradient-to-r from-vermillion-200/70 to-violet-200/70;
     }
     .sg-bg-gradient-aquamarine {
-        @apply tw-bg-gradient-to-r tw-from-blue-300 tw-to-blurple-400;
+        @apply bg-gradient-to-r from-blue-300 to-blurple-400;
     }
     .sg-bg-gradient-infrared {
-        @apply tw-bg-gradient-to-r tw-from-violet-400 tw-to-vermillion-300;
+        @apply bg-gradient-to-r from-violet-400 to-vermillion-300;
     }
     .sg-bg-gradient-aurora {
-        @apply tw-bg-gradient-to-r tw-from-blue-300 tw-to-violet-400;
+        @apply bg-gradient-to-r from-blue-300 to-violet-400;
     }
     .sg-bg-radial-space {
         background: radial-gradient(

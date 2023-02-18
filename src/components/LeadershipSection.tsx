@@ -87,7 +87,7 @@ const LEADERS: {
 export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div id="leadership" className={`leadership-section ${className}`}>
         <h2>Leadership</h2>
-        <div className="tw-my-8 tw-grid tw-gap-xl tw-grid-cols-1 sm:tw-grid-cols-2 md:tw-grid-cols-3">
+        <div className="my-8 grid gap-xl grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             {LEADERS.map(staff => (
                 <div key={`${staff.name.replace(' ', '-').toLowerCase()}`} className="">
                     <a
@@ -98,7 +98,7 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                         data-button-type="cta"
                     >
                         <img
-                            className="tw-mb-6 tw-max-w-[200px] tw-rounded-full"
+                            className="mb-6 max-w-[200px] rounded-full"
                             src={staff.image}
                             alt={`Sourcegraph team: ${staff.name} - ${staff.title}`}
                         />
@@ -107,7 +107,7 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                     <h5>
                         <a
                             href={staff.bio}
-                            className="tw-text-black"
+                            className="text-black"
                             title={staff.name}
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
@@ -117,17 +117,17 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                         </a>
                     </h5>
 
-                    <p className="tw-mb-0">{staff.title}</p>
+                    <p className="mb-0">{staff.title}</p>
 
-                    <ul className="tw-ml-0 tw-mt-1 tw-list-none tw-flex">
+                    <ul className="ml-0 mt-1 list-none flex">
                         {staff.github && (
-                            <li className="tw-mr-2">
+                            <li className="mr-2">
                                 <a
                                     href={staff.github}
                                     target="_blank"
                                     rel="nofollow noreferrer"
                                     aria-label="GitHub"
-                                    className="tw-text-black"
+                                    className="text-black"
                                     title="Github icon"
                                     data-button-style={buttonStyle.image}
                                     data-button-location={buttonLocation.body}
@@ -138,13 +138,13 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                             </li>
                         )}
                         {staff.twitter && (
-                            <li className="tw-mr-2">
+                            <li className="mr-2">
                                 <a
                                     href={staff.twitter}
                                     target="_blank"
                                     rel="nofollow noreferrer"
                                     aria-label="Twitter"
-                                    className="tw-text-black"
+                                    className="text-black"
                                     title="Twitter icon"
                                     data-button-style={buttonStyle.image}
                                     data-button-location={buttonLocation.body}
@@ -154,13 +154,13 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                                 </a>
                             </li>
                         )}
-                        <li className="tw-mr-2">
+                        <li className="mr-2">
                             <a
                                 href={staff.linkedin}
                                 target="_blank"
                                 rel="nofollow noreferrer"
                                 aria-label="LinkedIn"
-                                className="tw-text-black"
+                                className="text-black"
                                 title="Linkedin icon"
                                 data-button-style={buttonStyle.image}
                                 data-button-location={buttonLocation.body}

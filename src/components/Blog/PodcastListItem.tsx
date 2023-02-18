@@ -26,7 +26,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
     }
 
     return (
-        <article className={`podcast-post ${className} tw-p-6`}>
+        <article className={`podcast-post ${className} p-6`}>
             <PostListItem
                 frontmatter={newFrontmatter}
                 excerpt={excerpt}
@@ -38,11 +38,11 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                 <>
                     <PodcastAudioPlayer source={frontmatter.audioSrc} />
 
-                    <div className="tw-flex-1">
+                    <div className="flex-1">
                         <div>
                             <Link
                                 href={`/podcast/${slugPath}`}
-                                className="tw-mr-6 tw-text-gray-400"
+                                className="mr-6 text-gray-400"
                                 title="Permalink"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
@@ -53,7 +53,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
 
                             <Link
                                 href={`/podcast/${slugPath}#notes`}
-                                className="tw-mr-6 tw-text-gray-400"
+                                className="mr-6 text-gray-400"
                                 title="Show notes"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
@@ -63,7 +63,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                             </Link>
                             <Link
                                 href={`/podcast/${slugPath}#transcript`}
-                                className="tw-mr-6 tw-text-gray-400"
+                                className="mr-6 text-gray-400"
                                 title="Transcript"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
@@ -74,7 +74,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                             {frontmatter.videoID && (
                                 <a
                                     href={`https://www.youtube.com/v/${frontmatter.videoID}`}
-                                    className="tw-mr-6 tw-text-gray-400"
+                                    className="mr-6 text-gray-400"
                                     target="_blank"
                                     rel="noreferrer"
                                     title="Watch the video"

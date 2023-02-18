@@ -47,7 +47,7 @@ We're iterating on [server-side Batch Changes](https://about.sourcegraph.com/blo
 - When running server-side Batch Changes, you can now mount files on batch change steps containers using `steps.mount`. This is useful when your batch change needs to run long scripts or binaries that change frequently because file mounts allow you to iterate on those scripts and binaries without needing to bake them into the container and rebuild the container every time they change. You can read more about this feature in the [3.41 release post](https://about.sourcegraph.com/blog/release/3.41).
 - Previously, server-side batch changes could only be edited or deleted by the users that created them (or site admins). Now, users can create server-side batch changes in an organization namespace, which allows any user within that organization to edit or delete the batch change, making it easier to work collaboratively on batch changes with other devs.
 
-<a href="https://docs.sourcegraph.com/batch_changes/how-tos/server_side_file_mounts" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/batch_changes/how-tos/server_side_file_mounts" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 <br />
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
@@ -68,7 +68,7 @@ In 4.0, we launched a new version of the reference panel. In 4.1, we've added fu
   title="The reference panel featuring syntax highlighting and improved functionality."
 />
 <br />
-<a href="https://docs.sourcegraph.com/code_navigation/explanations/features#find-references" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/code_navigation/explanations/features#find-references" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 <br />
 Sourcegraph 4.1 is now available to download. For Sourcegraph Cloud users, instances will be upgraded to 4.1 beginning October 24.

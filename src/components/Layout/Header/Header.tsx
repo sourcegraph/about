@@ -66,27 +66,27 @@ export const Header: FunctionComponent<Props> = ({ colorTheme = 'default', ...pr
 
     const navStyle = classNames(
         styles.container,
-        'navbar tw-py-4 tw-w-full !tw-fixed tw-top-0 tw-right-0 tw-left-0 tw-z-[1030]',
+        'navbar py-4 w-full !fixed top-0 right-0 left-0 z-[1030]',
         props.className,
-        colorTheme === 'white' && 'tw-bg-white',
+        colorTheme === 'white' && 'bg-white',
         isPurpleNav && 'navbar-purple',
         isDarkNav && 'navbar-dark',
         {
-            'tw-bg-white': !isDarkNav && !isPurpleNav && (sticky || isOpen),
-            'tw-bg-violet-750': isPurpleNav && (sticky || isOpen),
-            'tw-bg-black': colorTheme === 'dark',
+            'bg-white': !isDarkNav && !isPurpleNav && (sticky || isOpen),
+            'bg-violet-750': isPurpleNav && (sticky || isOpen),
+            'bg-black': colorTheme === 'dark',
         }
     )
 
     return (
         <nav className={navStyle}>
-            <div className="xl:tw-container tw-flex tw-w-full tw-mx-auto tw-flex-wrap tw-items-center tw-justify-between tw-px-0">
-                <Navbar.Brand href="/" className="tw-mr-0 header tw-flex">
+            <div className="xl:container flex w-full mx-auto flex-wrap items-center justify-between px-0">
+                <Navbar.Brand href="/" className="mr-0 header flex">
                     <img
                         src={isDarkNav || isPurpleNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
                         width={150}
                         height={26}
-                        className="tw-max-w-[150px] tw-w-full"
+                        className="max-w-[150px] w-full"
                         aria-label="Sourcegraph - Code Intelligence Platform"
                         alt="Sourcegraph - Code Intelligence Platform"
                         draggable={false}
@@ -97,7 +97,7 @@ export const Header: FunctionComponent<Props> = ({ colorTheme = 'default', ...pr
                     <>
                         <button
                             type="button"
-                            className={classNames('navbar-toggler tw-justify-end', { ['isOpen']: isOpen })}
+                            className={classNames('navbar-toggler justify-end', { ['isOpen']: isOpen })}
                             data-toggle="collapse"
                             data-target="#mobile-navbar"
                             onClick={() => setIsOpen(!isOpen)}

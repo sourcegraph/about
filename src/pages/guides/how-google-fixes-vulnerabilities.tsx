@@ -32,14 +32,14 @@ export const Guide: FunctionComponent = () => (
                         <strong>Download this guide to learn:</strong>
                     </p>
                     <ul>
-                        <li className="tw-mb-2">
+                        <li className="mb-2">
                             How Google, Microsoft, Lyft, GitLab, and Atlassian find and fix vulnerabilities throughout
                             their respective codebases
                         </li>
-                        <li className="tw-mb-2">
+                        <li className="mb-2">
                             Which capabilities are necessary to mitigate a known vulnerability quickly
                         </li>
-                        <li className="tw-mb-2">How do these companies respond to zero-day vulnerabilities</li>
+                        <li className="mb-2">How do these companies respond to zero-day vulnerabilities</li>
                     </ul>
                 </section>
             }

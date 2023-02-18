@@ -23,7 +23,7 @@ import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h3 className="tw-mb-8 lg:tw-mb-0">{header}</h3>
+        <h3 className="mb-8 lg:mb-0">{header}</h3>
         {text}
     </>
 )
@@ -35,7 +35,7 @@ const items = [
             <CarouselItem
                 header="Find code to reuse"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Find out if a teammate has already solved your problem. With{' '}
                         <Link
                             href="/code-search"
@@ -58,7 +58,7 @@ const items = [
             <CarouselItem
                 header="Improve code stability and trustworthiness"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Code reuse avoids introducing preventable bugs. By using a reviewed and tested piece of code
                         that's known to work, you can feel confident that your code is secure and stable.
                     </p>
@@ -72,7 +72,7 @@ const items = [
             <CarouselItem
                 header="Automate PRs to make code consistent"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Spend less time on manual updates. Whether refactoring duplicate code or updating a shared
                         library, automate changes seamlessly across your entire codebase with{' '}
                         <Link
@@ -96,7 +96,7 @@ const items = [
             <CarouselItem
                 header="Alert for deprecated code use"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Catch deprecated code as it’s committed with{' '}
                         <a
                             href="https://docs.sourcegraph.com/code_monitoring"
@@ -120,7 +120,7 @@ const items = [
             <CarouselItem
                 header="Track your code reuse efforts "
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Get visibility into code reuse progress. Track the prevalence of shared code in your codebase
                         over time with{' '}
                         <Link
@@ -142,19 +142,19 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <XmlIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <XmlIcon className="mb-6 text-blurple-400 inline" size={40} />,
         subtitle: 'Quickly find trustworthy code to reuse',
         description:
             'Search your entire codebase to discover existing code to reuse. Gather crucial context, like who wrote the code, when, and where it’s used.',
     },
     {
-        icon: <FolderUploadOutlineIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <FolderUploadOutlineIcon className="mb-6 text-blurple-400 inline" size={40} />,
         subtitle: 'Safely maintain and improve shared libraries',
         description:
             'Automate PRs to push global updates. Get alerts when out-of-date libraries or deprecated functions are used, and eliminate duplicative code.',
     },
     {
-        icon: <AccountGroupOutlineIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <AccountGroupOutlineIcon className="mb-6 text-blurple-400 inline" size={40} />,
         subtitle: 'Understand your team’s code reuse efforts',
         description:
             'Code maintainers or stakeholders can easily track and understand innersourcing and code reuse trends within the team.',
@@ -227,10 +227,10 @@ const CodeReusePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="tw-mb-6 tw-max-w-[600px]">
+                        <h2 className="mb-6 max-w-[600px]">
                             Finding reliable, reusable code is tedious and inefficient
                         </h2>
-                        <p className="tw-mt-8">
+                        <p className="mt-8">
                             Current tools don’t fully enable teams to innersource and use existing code to develop a
                             more secure and coherent codebase. What does that mean for you and your team?
                         </p>
@@ -273,12 +273,12 @@ const CodeReusePage: FunctionComponent = () => (
             <CustomCarousel items={items} title="How Sourcegraph helps" />
         </ContentSection>
 
-        <ContentSection parentClassName="tw-bg-gray-100">
+        <ContentSection parentClassName="bg-gray-100">
             <UseCasePageCallToAction
                 text="Make it easier to discover trustworthy code for reuse so your teams can spend more time solving new problems and less time rewriting code."
                 buttonLocation={buttonLocation.body}
             />
-            <div className="tw-mt-4xl">
+            <div className="mt-4xl">
                 <CustomerLogos />
             </div>
         </ContentSection>

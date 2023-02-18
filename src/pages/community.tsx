@@ -11,14 +11,14 @@ export const Community: FunctionComponent = () => (
                 "Sourcegraph is so much more than a universal code search engine. It's the story of new gen-developers who renaissance-d the way we work, live, and collaborate. It's our unparalleled thinking that creates endless possibilities, to rebuild, to disrupt and to innovate relentlessly despite all the complexities of the big code. But we're just getting started. Imagine the road ahead if we take this journey together.",
         }}
         className="community-page"
-        heroAndHeaderClassName="tw-bg-blue-200"
+        heroAndHeaderClassName="bg-blue-200"
         hero={
-            <div className="tw-container tw-mx-auto tw-pb-sm">
-                <div className="tw-p-8 tw-grid tw-gap-lg tw-grid-cols-1 lg:tw-grid-cols-2">
+            <div className="container mx-auto pb-sm">
+                <div className="p-8 grid gap-lg grid-cols-1 lg:grid-cols-2">
                     <div>
                         <div className="text-uppercase">Join us</div>
-                        <h1 className="tw-mb-0">Welcome to the Sourcegraph Community</h1>
-                        <p className="tw-my-8">
+                        <h1 className="mb-0">Welcome to the Sourcegraph Community</h1>
+                        <p className="my-8">
                             Seek guidance. Share best practices. Ask questions. The Sourcegraph Community is your new
                             platform to connect with one of the world's most talented developer communities. Here, we
                             encourage everyone to learn from each other and share everything they know. Because when we
@@ -40,7 +40,7 @@ export const Community: FunctionComponent = () => (
                             src="/community/hero_illustration.svg"
                             alt="Sourcegraph Community"
                             title="Sourcegraph Community"
-                            className="tw-w-full tw-mt-5xl"
+                            className="w-full mt-5xl"
                         />
                     </div>
                 </div>
@@ -48,13 +48,13 @@ export const Community: FunctionComponent = () => (
         }
     >
         <ContentSection background="white">
-            <h2 className="tw-mb-8 tw-text-center">What's next?</h2>
+            <h2 className="mb-8 text-center">What's next?</h2>
             <Tabs
                 tabs={[
                     {
                         title: 'Events',
                         content: (
-                            <div className="tw-max-w-xl tw-m-auto">
+                            <div className="max-w-xl m-auto">
                                 <p>
                                     Keynote speakers. Job opportunities and partnerships. You can find us in every major
                                     industry event. Give us an air-hug if you see us.
@@ -79,9 +79,9 @@ export const Community: FunctionComponent = () => (
                     {
                         title: 'Sourcegraph Podcast',
                         content: (
-                            <div className="tw-max-w-xl tw-m-auto">
+                            <div className="max-w-xl m-auto">
                                 <YouTube title="Sourcegraph Podcast" id="ZLtqHFxEDm8" />
-                                <p className="tw-pt-xs">
+                                <p className="pt-xs">
                                     <strong>Subscribe:</strong>&nbsp;
                                     <a
                                         href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA"
@@ -140,9 +140,9 @@ export const Community: FunctionComponent = () => (
             />
         </ContentSection>
         <ContentSection>
-            <div className="tw-max-w-screen-xl sm:tw-grid sm:tw-grid-cols-2 tw-mx-auto tw-px-4">
-                <div className="tw-mb-4 sm:tw-mb-0 sm:tw-pr-4">
-                    <h2 className="tw-mb-4">We’d love to hear from you!</h2>
+            <div className="max-w-screen-xl sm:grid sm:grid-cols-2 mx-auto px-4">
+                <div className="mb-4 sm:mb-0 sm:pr-4">
+                    <h2 className="mb-4">We’d love to hear from you!</h2>
                     <br />
                     Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn,
                     or email us at{' '}
@@ -157,9 +157,9 @@ export const Community: FunctionComponent = () => (
                     </a>
                     .
                 </div>
-                <div className="tw-flex tw-flex-col md:tw-items-center md:tw-flex-row md:tw-justify-center">
+                <div className="flex flex-col md:items-center md:flex-row md:justify-center">
                     <a
-                        className="tw-mb-4 btn btn-secondary md:tw-mr-4 md:tw-mb-0"
+                        className="mb-4 btn btn-secondary md:mr-4 md:mb-0"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"

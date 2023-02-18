@@ -31,12 +31,12 @@ export const Heading: FunctionComponent<Heading> = ({ as, size, children, classN
     const Tag = as ?? size
 
     const sizes = {
-        h1: 'tw-font-sans tw-text-6xl md:tw-text-7xl tw-tracking-normal tw-font-semibold',
-        h2: 'tw-font-sans tw-text-4xl md:tw-text-5xl tw-tracking-normal tw-font-semibold',
-        h3: 'tw-font-sans tw-text-3xl tw-tracking-normal tw-font-normal',
-        h4: 'tw-font-sans tw-text-2xl tw-tracking-normal tw-font-semibold',
-        h5: 'tw-font-sans tw-text-xl tw-tracking-normal tw-font-semibold',
-        h6: 'tw-font-sans tw-text-lg tw-tracking-wide tw-font-semibold tw-uppercase',
+        h1: 'font-sans text-6xl md:text-7xl tracking-normal font-semibold',
+        h2: 'font-sans text-4xl md:text-5xl tracking-normal font-semibold',
+        h3: 'font-sans text-3xl tracking-normal font-normal',
+        h4: 'font-sans text-2xl tracking-normal font-semibold',
+        h5: 'font-sans text-xl tracking-normal font-semibold',
+        h6: 'font-sans text-lg tracking-wide font-semibold uppercase',
     }
 
     return <Tag className={classNames(className, sizes[size])}>{children}</Tag>

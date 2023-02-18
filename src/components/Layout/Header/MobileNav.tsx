@@ -21,7 +21,7 @@ export const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
 
     return (
         <div id="mobile-navbar" className={`collapse navbar-collapse ${isOpen ? 'show' : 'hide'}`}>
-            <ul className="tw-ml-0 nav navbar-nav">
+            <ul className="ml-0 nav navbar-nav">
                 {navLinks.map(navLink =>
                     navLink.items.length === 1 ? (
                         navLink.items.map(item =>
@@ -56,7 +56,7 @@ export const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
                             )
                         )
                     ) : (
-                        <li className="tw-items-center nav-item" role="presentation" key={navLink.section}>
+                        <li className="items-center nav-item" role="presentation" key={navLink.section}>
                             <span
                                 role="button"
                                 className="nav-link navbar-toggle collapsed"
@@ -78,11 +78,11 @@ export const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
                                 tabIndex={0}
                             >
                                 {navLink.section}
-                                <ChevronDownIcon className="tw-ml-1 tw-inline" />
+                                <ChevronDownIcon className="ml-1 inline" />
                             </span>
                             <ul
                                 id={navLink.section.split(' ').join('-').toLowerCase() + '-menu'}
-                                className={`sub-menu collapse navbar-collapse tw-ml-2 ${
+                                className={`sub-menu collapse navbar-collapse ml-2 ${
                                     openMobileMenu[camelCase(navLink.section)] ? 'show' : 'hide'
                                 }`}
                             >
@@ -133,7 +133,7 @@ export const MobileNav: FunctionComponent<Props> = ({ navLinks, isOpen }) => {
                     </a>
                 </li>
 
-                <li className="tw-items-center nav-item" role="presentation">
+                <li className="items-center nav-item" role="presentation">
                     <a
                         className="nav-link"
                         href="https://signup.sourcegraph.com"

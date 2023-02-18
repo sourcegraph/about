@@ -22,7 +22,7 @@ import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h3 className="tw-mb-8 lg:tw-mb-0">{header}</h3>
+        <h3 className="mb-8 lg:mb-0">{header}</h3>
         {text}
     </>
 )
@@ -34,7 +34,7 @@ const items = [
             <CarouselItem
                 header="Response to incidents faster"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         No heroics required: Quickly understand all the context and dependencies around your codebase
                         with{' '}
                         <Link
@@ -69,7 +69,7 @@ const items = [
             <CarouselItem
                 header="Limit the impact of incidents"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Automate the deployment of fixes everywhere and at scale. With{' '}
                         <Link
                             href="/batch-changes"
@@ -94,7 +94,7 @@ const items = [
             <CarouselItem
                 header="Track remediation progress"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Visualize fixes in progress and track their deployment. With{' '}
                         <Link
                             href="/code-insights"
@@ -118,7 +118,7 @@ const items = [
             <CarouselItem
                 header="Monitor for unsafe code"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Close the loop on your incident response efforts. After finding the root cause, use{' '}
                         <a
                             href="https://docs.sourcegraph.com/code_monitoring"
@@ -197,19 +197,19 @@ const blogResourceItems = [
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <MagnifyIcon className="mb-6 text-blurple-400 inline" size={40} />,
         subtitle: 'Assess incidents quickly',
         description:
             "Pinpoint the code responsible for the incident and find the root cause in your codebase. Understand the code's functionality to verify the issue.",
     },
     {
-        icon: <ClockTimeThreeOutlineIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <ClockTimeThreeOutlineIcon className="mb-6 text-blurple-400 inline" size={40} />,
         subtitle: 'Plan your remediation',
         description:
             'Reduce time to resolution by supplying response teams with actionable details, like links to all affected code.',
     },
     {
-        icon: <WebIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <WebIcon className="mb-6 text-blurple-400 inline" size={40} />,
         subtitle: 'Execute your plan globally',
         description:
             "Fix the root cause and confirm the same issue doesn't reoccur in other areas by locating the code pattern and automating fixes across your entire codebase.",
@@ -253,12 +253,12 @@ const IncidentResponsePage: FunctionComponent = () => (
             <QuoteCarousel items={quoteCarouselItems} />
         </ContentSection>
 
-        <ContentSection parentClassName="tw-bg-gray-100">
+        <ContentSection parentClassName="bg-gray-100">
             <UseCasePageCallToAction
                 text="Respond to incidents with confidence and speed, and remediate issues at their root to ensure they don't reoccur."
                 buttonLocation={buttonLocation.body}
             />
-            <div className="tw-mt-4xl">
+            <div className="mt-4xl">
                 <CustomerLogos />
             </div>
         </ContentSection>

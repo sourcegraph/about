@@ -72,28 +72,28 @@ const selfHostedOptions: string[] = [
 
 const renderListItems = (items: string[]): ReactNode =>
     items.map((item: string) => (
-        <li key={item} className="tw-my-2 tw-mr-2 list-inline-item">
+        <li key={item} className="my-2 mr-2 list-inline-item">
             <Badge text={item} size="small" breakWords={true} />
         </li>
     ))
 
 export const IntegrationsSection: FunctionComponent = () => (
     <ContentSection background="white">
-        <h2 className="tw-mb-3xl">Works with your code, infrastructure, and tools</h2>
+        <h2 className="mb-3xl">Works with your code, infrastructure, and tools</h2>
 
-        <div className="tw-grid tw-gap-md tw-grid-cols-1 lg:tw-grid-cols-2">
+        <div className="grid gap-md grid-cols-1 lg:grid-cols-2">
             <div>
                 <Heading size="h4" as="h3">
                     All your repositories + 2M open source (and counting)
                 </Heading>
 
-                <ul className="lg:tw-max-w-lg tw-list-none tw-ml-0 tw-flex tw-flex-wrap tw-mb-xxs">
+                <ul className="lg:max-w-lg list-none ml-0 flex flex-wrap mb-xxs">
                     {renderListItems(codeHosts)}
                 </ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     title="Have a repository not covered here?"
-                    className="tw-font-normal"
+                    className="font-normal"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
@@ -107,13 +107,13 @@ export const IntegrationsSection: FunctionComponent = () => (
                     All your languages
                 </Heading>
 
-                <ul className="lg:tw-max-w-xl tw-list-none tw-ml-0 tw-flex tw-flex-wrap tw-mb-xxs">
+                <ul className="lg:max-w-xl list-none ml-0 flex flex-wrap mb-xxs">
                     {renderListItems(languages)}
                 </ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     title="Need a different language?"
-                    className="tw-font-normal"
+                    className="font-normal"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
@@ -127,13 +127,13 @@ export const IntegrationsSection: FunctionComponent = () => (
                     Your most used tools
                 </Heading>
 
-                <ul className="lg:tw-max-w-md tw-list-none tw-ml-0 tw-flex tw-flex-wrap tw-mb-xxs">
+                <ul className="lg:max-w-md list-none ml-0 flex flex-wrap mb-xxs">
                     {renderListItems(tools)}
                 </ul>
                 <a
                     href="https://docs.sourcegraph.com/integration"
                     title="See all integrations"
-                    className="tw-font-normal"
+                    className="font-normal"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
@@ -147,21 +147,21 @@ export const IntegrationsSection: FunctionComponent = () => (
                     Deployment options
                 </Heading>
 
-                <ul className="tw-list-none tw-ml-0 tw-mb-xxs">
+                <ul className="list-none ml-0 mb-xxs">
                     <li className="list-inline-item text-wrap">
-                        <Heading size="h5" as="h4" className="tw-mt-xs tw-text-lg !tw-font-normal">
+                        <Heading size="h5" as="h4" className="mt-xs text-lg !font-normal">
                             Cloud:
                         </Heading>
-                        <ul className="tw-list-none tw-m-0 tw-flex tw-flex-wrap">
+                        <ul className="list-none m-0 flex flex-wrap">
                             {renderListItems(['Single-tenant Sourcegraph Cloud instance'])}
                         </ul>
                     </li>
 
-                    <li className="tw-list-none tw-m-0">
-                        <Heading size="h5" as="h4" className="tw-mt-xxs tw-text-lg !tw-font-normal">
+                    <li className="list-none m-0">
+                        <Heading size="h5" as="h4" className="mt-xxs text-lg !font-normal">
                             Self-hosted by you:
                         </Heading>
-                        <ul className="lg:tw-max-w-sm tw-list-none tw-m-0 tw-flex tw-flex-wrap">
+                        <ul className="lg:max-w-sm list-none m-0 flex flex-wrap">
                             {renderListItems(selfHostedOptions)}
                         </ul>
                     </li>
@@ -169,7 +169,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                 <a
                     href="https://docs.sourcegraph.com/admin/install"
                     title="Learn about deploying Sourcegraph"
-                    className="tw-font-normal"
+                    className="font-normal"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"

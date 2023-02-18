@@ -46,35 +46,35 @@ const UseCases: React.FunctionComponent = () => (
         }}
         hero={
             <Background variant="lightNebulousAurora">
-                <div className="tw-container tw-mx-auto tw-py-16 tw-px-8">
-                    <div className="tw-grid tw-gap-lg tw-grid-cols-1 lg:tw-grid-cols-2">
+                <div className="container mx-auto py-16 px-8">
+                    <div className="grid gap-lg grid-cols-1 lg:grid-cols-2">
                         <div>
-                            <h1 className="tw-mb-0">Our customers move faster with Sourcegraph</h1>
-                            <p className="tw-my-8">
+                            <h1 className="mb-0">Our customers move faster with Sourcegraph</h1>
+                            <p className="my-8">
                                 Companies of all sizes and in all industries use Sourcegraph's code intelligence
                                 platform to understand, fix, and automate across their entire codebase.
                             </p>
                         </div>
 
-                        <div className="tw-max-w-xl">
-                            <h4 className="tw-mt-4 tw-pb-xxs tw-text-xl">See how customers use Sourcegraph to...</h4>
+                        <div className="max-w-xl">
+                            <h4 className="mt-4 pb-xxs text-xl">See how customers use Sourcegraph to...</h4>
 
-                            <ul className="tw-list-none tw-ml-0">
+                            <ul className="list-none ml-0">
                                 {features.map((feature: { id: string; description: string }) => (
                                     <li
                                         key={feature.id}
-                                        className="tw-bg-white [&:not(:last-child)]:tw-border-b-1 tw-m-0 tw-p-0"
+                                        className="bg-white [&:not(:last-child)]:border-b-1 m-0 p-0"
                                     >
                                         <Link
                                             href={`#${kebabCase(feature.id)}`}
-                                            className="tw-px-xs tw-py-xxs tw-flex tw-justify-between tw-items-center tw-no-underline"
+                                            className="px-xs py-xxs flex justify-between items-center no-underline"
                                             title={feature.description}
                                             data-button-style={buttonStyle.textWithArrow}
                                             data-button-location={buttonLocation.hero}
                                             data-button-type="cta"
                                         >
                                             {feature.description}
-                                            <ArrowRightIcon className="tw-ml-1" />
+                                            <ArrowRightIcon className="ml-1" />
                                         </Link>
                                     </li>
                                 ))}
@@ -86,18 +86,18 @@ const UseCases: React.FunctionComponent = () => (
         }
     >
         <div className="use-cases-page">
-            <div className="tw-pt-3xl">
+            <div className="pt-3xl">
                 <CustomerLogos />
             </div>
 
-            <hr className="tw-my-4xl" />
+            <hr className="my-4xl" />
 
             <ContentSection id="code-security">
                 <TwoColumnSection
                     centerContent={true}
                     leftColumn={
                         <>
-                            <h2 className="tw-mb-4">Improve code security</h2>
+                            <h2 className="mb-4">Improve code security</h2>
                             <h5>Find, fix, and track vulnerable code quickly across your entire codebase.</h5>
                             <p>
                                 You can't fix what you can't find. Remediate vulnerabilities with confidence knowing you
@@ -105,7 +105,7 @@ const UseCases: React.FunctionComponent = () => (
                                 with automated fixes and pull requests. With Sourcegraph, timely resolution is a search
                                 away.
                             </p>
-                            <ul className="tw-my-6">
+                            <ul className="my-6">
                                 <li>Reduce time to recovery with a single search</li>
                                 <li>
                                     Automate fixing, merging, and deploying changes with{' '}
@@ -129,7 +129,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-type="cta"
                             >
                                 Learn more about code security with Sourcegraph{' '}
-                                <ArrowRightBoxIcon className="tw-ml-1 tw-inline" />
+                                <ArrowRightBoxIcon className="ml-1 inline" />
                             </Link>
                         </>
                     }
@@ -169,7 +169,7 @@ const UseCases: React.FunctionComponent = () => (
                     }
                     rightColumn={
                         <>
-                            <h2 className="tw-mb-4">Accelerate developer onboarding</h2>
+                            <h2 className="mb-4">Accelerate developer onboarding</h2>
                             <h5>
                                 Decrease time to first commit with self-serve onboarding, codebase exploration, and
                                 knowledge sharing.
@@ -179,7 +179,7 @@ const UseCases: React.FunctionComponent = () => (
                                 code and context. Unlike splintered tooling and knowledge management systems that
                                 require manual interaction and upkeep, Sourcegraph helps devs self-serve.
                             </p>
-                            <ul className="tw-my-6">
+                            <ul className="my-6">
                                 <li>
                                     Search across all repositories and multiple branches to find answers in staging,
                                     dev, and production environments
@@ -198,7 +198,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-type="cta"
                             >
                                 Learn more about dev onboarding with Sourcegraph{' '}
-                                <ArrowRightBoxIcon className="tw-ml-1 tw-inline" />
+                                <ArrowRightBoxIcon className="ml-1 inline" />
                             </Link>
                         </>
                     }
@@ -212,7 +212,7 @@ const UseCases: React.FunctionComponent = () => (
                     centerContent={true}
                     leftColumn={
                         <>
-                            <h2 className="tw-mb-4">Resolve incidents faster</h2>
+                            <h2 className="mb-4">Resolve incidents faster</h2>
                             <h5>Identify the root cause in code and fix the issue everywhere.</h5>
                             <p>
                                 &ldquo;Every minute matters when responding to a business-critical incident. Downtime =
@@ -221,7 +221,7 @@ const UseCases: React.FunctionComponent = () => (
                                 issue everywhere so it won't reoccur, and assure incident responders that all holes are
                                 plugged.&rdquo;
                             </p>
-                            <ul className="tw-my-6">
+                            <ul className="my-6">
                                 <li>
                                     Quickly understand all context & dependencies around the codebase to self-serve or
                                     involve relevant teams
@@ -243,7 +243,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-type="cta"
                             >
                                 Learn more about incident response with Sourcegraph{' '}
-                                <ArrowRightBoxIcon className="tw-ml-1 tw-inline" />
+                                <ArrowRightBoxIcon className="ml-1 inline" />
                             </Link>
                         </>
                     }
@@ -286,7 +286,7 @@ const UseCases: React.FunctionComponent = () => (
                     }
                     rightColumn={
                         <>
-                            <h2 className="tw-mb-4">Streamline code reuse</h2>
+                            <h2 className="mb-4">Streamline code reuse</h2>
                             <h5>Stop wasting time rewriting code.</h5>
                             <p>
                                 With Sourcegraph, you can find existing code libraries for reuse and avoid spending time
@@ -294,7 +294,7 @@ const UseCases: React.FunctionComponent = () => (
                                 codebase and more time for you to spend on more interesting work. Sourcegraph makes it
                                 easy to:
                             </p>
-                            <ul className="tw-my-6">
+                            <ul className="my-6">
                                 <li>
                                     Quickly discover code you can trust for reuse by typing your query and getting an
                                     answer
@@ -326,7 +326,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-type="cta"
                             >
                                 Learn more about code reuse with Sourcegraph{' '}
-                                <ArrowRightBoxIcon className="tw-ml-1 tw-inline" />
+                                <ArrowRightBoxIcon className="ml-1 inline" />
                             </Link>
                         </>
                     }
@@ -340,7 +340,7 @@ const UseCases: React.FunctionComponent = () => (
                     centerContent={true}
                     leftColumn={
                         <>
-                            <h2 className="tw-mb-4">Boost code health</h2>
+                            <h2 className="mb-4">Boost code health</h2>
                             <h5>
                                 Improve code posture with large-scale changes and track code health initiatives towards
                                 completion.
@@ -350,7 +350,7 @@ const UseCases: React.FunctionComponent = () => (
                                 measure code quality consistently. Sourcegraph helps teams figure out the components of
                                 code health they have all agreed on and work towards a healthier codebase.
                             </p>
-                            <ul className="tw-my-6">
+                            <ul className="my-6">
                                 <li>
                                     Search for and refactor references to deprecated services, libraries, URL patterns,
                                     and more across all your repositories with confidence
@@ -369,7 +369,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-type="cta"
                             >
                                 Learn more about code health with Sourcegraph{' '}
-                                <ArrowRightBoxIcon className="tw-ml-1 tw-inline" />
+                                <ArrowRightBoxIcon className="ml-1 inline" />
                             </Link>
                         </>
                     }
@@ -388,7 +388,7 @@ const UseCases: React.FunctionComponent = () => (
                 />
             </ContentSection>
 
-            <div className="tw-border-t tw-border-t-gray-200">
+            <div className="border-t border-t-gray-200">
                 <CtaSection />
             </div>
         </div>

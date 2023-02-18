@@ -60,7 +60,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
     }
 
     return (
-        <div className={`tw-flex tw-flex-col tw-min-h-screen ${className || ''}`}>
+        <div className={`flex flex-col min-h-screen ${className || ''}`}>
             <Head>
                 <title>{meta.externalTitle || meta.title}</title>
                 <meta name="description" content={meta.externalDescription || meta.description} />
@@ -113,7 +113,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
                 </div>
             )}
 
-            <section className="tw-flex-1">{props.children}</section>
+            <section className="flex-1">{props.children}</section>
 
             {!props.hideFooter && (
                 <Footer dark={headerColorTheme === 'dark' || headerColorTheme === 'purple'} minimal={props.minimal} />

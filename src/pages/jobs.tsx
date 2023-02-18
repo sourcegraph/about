@@ -13,7 +13,7 @@ const CareersPage: FunctionComponent = () => {
                 'You are responsible for finding out what high-quality work looks like and producing that high-quality work iteratively.',
             img: (
                 <img
-                    className="mt-10 tw-w-full tw-max-w-[500px]"
+                    className="mt-10 w-full max-w-[500px]"
                     src="/careers/1highquality.svg"
                     alt="Diamond illustration"
                 />
@@ -24,7 +24,7 @@ const CareersPage: FunctionComponent = () => {
             description: 'You earn and keep the trust of our customers by putting their interests first.',
             img: (
                 <img
-                    className="mt-10 tw-w-full tw-max-w-[500px]"
+                    className="mt-10 w-full max-w-[500px]"
                     src="/careers/2customerdriven.svg"
                     alt="Fist bump illustration"
                 />
@@ -36,7 +36,7 @@ const CareersPage: FunctionComponent = () => {
                 'You work collaboratively with your peers, cross-functional teammates, and leadership to create shared success, trust, and belonging.',
             img: (
                 <img
-                    className="mt-10 tw-w-full tw-max-w-[500px]"
+                    className="mt-10 w-full max-w-[500px]"
                     src="/careers/3team.svg"
                     alt="Tandem bicycle illustration"
                 />
@@ -48,7 +48,7 @@ const CareersPage: FunctionComponent = () => {
                 'You have the power and the responsibility to improve Sourcegraph as a company and as a product. You deliver regardless of the circumstances.',
             img: (
                 <img
-                    className="mt-10 tw-w-full tw-max-w-[500px]"
+                    className="mt-10 w-full max-w-[500px]"
                     src="/careers/4highagency.svg"
                     alt="Stamp labeled 'First class' illustration"
                 />
@@ -60,7 +60,7 @@ const CareersPage: FunctionComponent = () => {
                 'You make people from all groups and backgrounds feel comfortable belonging to our team and community.',
             img: (
                 <img
-                    className="mt-10 tw-w-full tw-max-w-[500px]"
+                    className="mt-10 w-full max-w-[500px]"
                     src="/careers/5welcoming.svg"
                     alt="Head illustration with a heart in the center"
                 />
@@ -71,7 +71,7 @@ const CareersPage: FunctionComponent = () => {
             description: 'You proactively communicate in an open and transparent way.',
             img: (
                 <img
-                    className="mt-10 tw-w-full tw-max-w-[500px]"
+                    className="mt-10 w-full max-w-[500px]"
                     src="/careers/6open.svg"
                     alt="X-ray vision glasses illustration"
                 />
@@ -83,7 +83,7 @@ const CareersPage: FunctionComponent = () => {
                 'You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.',
             img: (
                 <img
-                    className="mt-10 tw-w-full tw-max-w-[500px]"
+                    className="mt-10 w-full max-w-[500px]"
                     src="/careers/7growth.svg"
                     alt="Tall giraffe illustration"
                 />
@@ -94,13 +94,13 @@ const CareersPage: FunctionComponent = () => {
     return (
         <Layout className="jobs-page" headerColorTheme="white">
             <ContentSection background="white">
-                <h1 className="tw-mb-xs">Let's build the future together.</h1>
+                <h1 className="mb-xs">Let's build the future together.</h1>
                 <h3>
                     We're developing the world's most advanced code search navigation platform with brilliant dreamers
                     around the globe.
                 </h3>
                 <a
-                    className="tw-mt-6 btn btn-primary"
+                    className="mt-6 btn btn-primary"
                     href="https://grnh.se/c685479c4us"
                     title="Explore our jobs"
                     target="_blank"
@@ -110,34 +110,34 @@ const CareersPage: FunctionComponent = () => {
                     data-button-type="cta"
                 >
                     Explore our jobs
-                    <ArrowRightIcon className="tw-ml-4 tw-inline" />
+                    <ArrowRightIcon className="ml-4 inline" />
                 </a>
             </ContentSection>
 
-            <div className="tw-text-center tw-bg-white">
+            <div className="text-center bg-white">
                 <img
                     src="../careers/careers_hero_img.jpg"
                     alt="Sourcegraph team members jumping"
-                    className="tw-max-w-screen-2xl tw-w-full tw-hidden md:tw-inline"
+                    className="max-w-screen-2xl w-full hidden md:inline"
                 />
                 <img
                     src="../careers/careers_hero_img_mobile.jpg"
                     alt="Sourcegraph team members jumping"
-                    className="tw-w-full tw-inline md:tw-hidden"
+                    className="w-full inline md:hidden"
                 />
             </div>
 
             <ContentSection background="white">
-                <div className="tw-flex-wrap tw-flex">
-                    <div className="tw-m-auto">
-                        <h2 className="tw-mx-auto tw-text-center tw-max-w-2xl tw-mb-6">
+                <div className="flex-wrap flex">
+                    <div className="m-auto">
+                        <h2 className="mx-auto text-center max-w-2xl mb-6">
                             Happy, healthy, and always in the flow.
                         </h2>
-                        <p className="tw-mx-auto tw-text-center">
+                        <p className="mx-auto text-center">
                             Our teammates are our most valuable resource. That's why we provide total rewards that are
                             highly competitive and allow you to thrive both personally and professionally.
                         </p>
-                        <p className="tw-mt-6 tw-text-center">
+                        <p className="mt-6 text-center">
                             Learn more in{' '}
                             <a
                                 target="_blank"
@@ -162,19 +162,19 @@ const CareersPage: FunctionComponent = () => {
                     items={[
                         {
                             icon: (
-                                <img className="tw-mb-2 sm:tw-mx-auto" src="/careers/Remote.svg" alt="Map pin icon" />
+                                <img className="mb-2 sm:mx-auto" src="/careers/Remote.svg" alt="Map pin icon" />
                             ),
                             subtitle: 'Work fully remote',
                             description: 'Anywhere and at anytime',
                         },
                         {
-                            icon: <img className="tw-mb-2 sm:tw-mx-auto" src="/careers/PTO.svg" alt="Sun icon" />,
+                            icon: <img className="mb-2 sm:mx-auto" src="/careers/PTO.svg" alt="Sun icon" />,
                             subtitle: 'Unlimited PTO',
                             description: '...with a 30-day minimum',
                         },
                         {
                             icon: (
-                                <img className="tw-mb-2 sm:tw-mx-auto" src="/careers/Travel.svg" alt="Airplane icon" />
+                                <img className="mb-2 sm:mx-auto" src="/careers/Travel.svg" alt="Airplane icon" />
                             ),
                             subtitle: 'Generous travel budgets',
                             description: 'Meet your team across the globe',
@@ -182,7 +182,7 @@ const CareersPage: FunctionComponent = () => {
                         {
                             icon: (
                                 <img
-                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    className="mb-2 sm:mx-auto"
                                     src="/careers/Salary.svg"
                                     alt="Dollar bill icon"
                                 />
@@ -193,7 +193,7 @@ const CareersPage: FunctionComponent = () => {
                         {
                             icon: (
                                 <img
-                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    className="mb-2 sm:mx-auto"
                                     src="/careers/Medical.svg"
                                     alt="Medical cross icon"
                                 />
@@ -204,7 +204,7 @@ const CareersPage: FunctionComponent = () => {
                         {
                             icon: (
                                 <img
-                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    className="mb-2 sm:mx-auto"
                                     src="/careers/ProfessionalDevelopment.svg"
                                     alt="Graduation cap icon"
                                 />
@@ -215,7 +215,7 @@ const CareersPage: FunctionComponent = () => {
                         {
                             icon: (
                                 <img
-                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    className="mb-2 sm:mx-auto"
                                     src="/careers/OfficeBudget.svg"
                                     alt="Headphones icon"
                                 />
@@ -226,7 +226,7 @@ const CareersPage: FunctionComponent = () => {
                         {
                             icon: (
                                 <img
-                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    className="mb-2 sm:mx-auto"
                                     src="/careers/Wellness.svg"
                                     alt="Person jogging icon"
                                 />
@@ -237,7 +237,7 @@ const CareersPage: FunctionComponent = () => {
                         {
                             icon: (
                                 <img
-                                    className="tw-mb-2 sm:tw-mx-auto"
+                                    className="mb-2 sm:mx-auto"
                                     src="/careers/FamilyPlanning.svg"
                                     alt="Baby icon"
                                 />
@@ -250,13 +250,13 @@ const CareersPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection background="lightNebulousSaturn1">
-                <h2 className="tw-text-center tw-mb-16">We value:</h2>
-                <div className="tw-grid tw-gap-lg tw-grid-cols-2 lg:tw-grid-cols-4 tw-max-w-6xl tw-mx-auto">
+                <h2 className="text-center mb-16">We value:</h2>
+                <div className="grid gap-lg grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
                     {valueItems.map(item => (
                         <div key={item.value}>
-                            <div className="tw-flex tw-flex-col tw-items-center tw-min-h-[250px]">
+                            <div className="flex flex-col items-center min-h-[250px]">
                                 <h4 className="">{item.value}</h4>
-                                <p className="tw-text-center">{item.description}</p>
+                                <p className="text-center">{item.description}</p>
                                 {item.img}
                             </div>
                         </div>
@@ -265,17 +265,17 @@ const CareersPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection background="white">
-                <div className="tw-flex tw-flex-col md:tw-flex-row tw-px-6 tw-max-w-screen-xl tw-mx-auto tw-items-center">
+                <div className="flex flex-col md:flex-row px-6 max-w-screen-xl mx-auto items-center">
                     <div>
-                        <h2 className="tw-mb-6">Our employees say we're a Great Place to Work&trade;</h2>
+                        <h2 className="mb-6">Our employees say we're a Great Place to Work&trade;</h2>
                         <p>
                             Our employees have spoken! Our company culture is amazing and our Great Place to Work
                             Certification&trade; proves it.
                         </p>
                     </div>
-                    <div className="tw-max-h-[600px] tw-flex tw-justify-center">
+                    <div className="max-h-[600px] flex justify-center">
                         <img
-                            className="tw-w-full tw-max-w-[450px]"
+                            className="w-full max-w-[450px]"
                             src="/careers/great-place-to-work.png"
                             alt="Graphic portraying that 94% of employees at Sourcegraph say it is a great place to work compared to 57% of employees at a typical U.S.-based company."
                         />
@@ -284,9 +284,9 @@ const CareersPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection background="white">
-                <div className="tw-flex tw-flex-col tw-items-center tw-text-center">
+                <div className="flex flex-col items-center text-center">
                     <a
-                        className="tw-my-2 btn btn-primary"
+                        className="my-2 btn btn-primary"
                         href="https://grnh.se/c685479c4us"
                         title="Explore our open roles"
                         target="_blank"
@@ -296,7 +296,7 @@ const CareersPage: FunctionComponent = () => {
                         data-button-type="cta"
                     >
                         Explore our open roles
-                        <ArrowRightIcon className="tw-ml-4 tw-inline" />
+                        <ArrowRightIcon className="ml-4 inline" />
                     </a>
                 </div>
             </ContentSection>

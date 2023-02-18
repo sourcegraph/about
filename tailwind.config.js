@@ -188,14 +188,6 @@ module.exports = {
     },
   },
 
-  /**
-   * This prefix is added before Tailwind classes so we can progressively
-   * remove Bootstrap without any class name conflicts.
-   *
-   * TODO: Remove this once Bootstrap is removed completely
-   */
-  prefix: 'tw-',
-
   plugins: [
     plugin(({ addBase }) => {
       const extractColors = (colors, colorGroup = '') => {

@@ -11,9 +11,9 @@ export const TrySourcegraphForFreeButton: React.FunctionComponent<{
 }> = ({ buttonLocation, dark = false, size = 'md' }) => (
     <a
         className={classNames(
-            'btn btn-primary tw-whitespace-nowrap',
-            dark && 'tw-bg-white tw-text-violet-500 tw-border-0',
-            size === 'lg' && 'tw-py-xs'
+            'btn btn-primary whitespace-nowrap',
+            dark && 'bg-white text-violet-500 border-0',
+            size === 'lg' && 'py-xs'
         )}
         href="https://signup.sourcegraph.com"
         title="Start for free"

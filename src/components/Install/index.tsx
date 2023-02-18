@@ -50,20 +50,20 @@ export const Install: FunctionComponent = () => {
     return (
         <div
             className={classNames(
-                'tw-bg-white tw-rounded-[20px] tw-overflow-hidden tw-shadow-[-4px_4px_10px_0_rgba(0,0,0,0.25)]',
+                'bg-white rounded-[20px] overflow-hidden shadow-[-4px_4px_10px_0_rgba(0,0,0,0.25)]',
                 {
-                    'tw-animate-fadeOutSlow': close,
+                    'animate-fadeOutSlow': close,
                 }
             )}
         >
-            <div className="tw-flex tw-items-center tw-px-4 tw-bg-[#f1f1f1] tw-h-11">
+            <div className="flex items-center px-4 bg-[#f1f1f1] h-11">
                 {['close', 'minimize', 'fullscreen'].map(action => (
                     <span
                         key={action}
-                        className={classNames('tw-bg-white tw-rounded-full tw-mr-2 tw-w-3.5 tw-h-3.5', {
-                            'hover:tw-bg-vermillion-300': action === 'close',
-                            'hover:tw-bg-lemon-300 tw-cursor-help': action === 'minimize',
-                            'hover:tw-bg-green-400 tw-cursor-help': action === 'fullscreen',
+                        className={classNames('bg-white rounded-full mr-2 w-3.5 h-3.5', {
+                            'hover:bg-vermillion-300': action === 'close',
+                            'hover:bg-lemon-300 cursor-help': action === 'minimize',
+                            'hover:bg-green-400 cursor-help': action === 'fullscreen',
                         })}
                         onClick={action === 'close' ? () => setClose(true) : undefined}
                         onKeyDown={action === 'close' ? () => setClose(true) : undefined}
@@ -73,7 +73,7 @@ export const Install: FunctionComponent = () => {
                 ))}
             </div>
 
-            <div className="tw-p-8">
+            <div className="p-8">
                 <h3>
                     Install Sourcegraph locally
                     <span
@@ -82,21 +82,21 @@ export const Install: FunctionComponent = () => {
                         // eslint-disable-next-line @typescript-eslint/no-misused-promises
                         onKeyDown={copy}
                         role="button"
-                        className="tw-ml-4 tw-align-text-top"
+                        className="ml-4 align-text-top"
                         tabIndex={0}
                     >
-                        <CopyIcon className="tw-inline tw-align-text-top tw-w-9 tw-h-9" />
+                        <CopyIcon className="inline align-text-top w-9 h-9" />
                     </span>
                 </h3>
 
-                <code className="tw-block tw-my-6 tw-pr-8 tw-text-lg tw-bg-white">
-                    <small className={classNames('tw-break-words', { 'tw-animate-flash-background': copied })}>
+                <code className="block my-6 pr-8 text-lg bg-white">
+                    <small className={classNames('break-words', { 'animate-flash-background': copied })}>
                         {installText}
                     </small>
                 </code>
 
                 <a
-                    className="tw-inline-block tw-text-lg"
+                    className="inline-block text-lg"
                     href="https://docs.sourcegraph.com"
                     title="Deploy to a server or cluster"
                     data-button-style={buttonStyle.text}

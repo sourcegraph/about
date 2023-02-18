@@ -28,12 +28,12 @@ const Home: FunctionComponent = () => (
         hero={<HomeHero />}
     >
         <ContentSection background="white">
-            <div className="tw-mx-auto tw-text-center tw-max-w-[700px]">
-                <h2 className="tw-mb-2">
+            <div className="mx-auto text-center max-w-[700px]">
+                <h2 className="mb-2">
                     Over{' '}
                     <Link
                         href="/case-studies"
-                        className="tw-text-violet-400"
+                        className="text-violet-400"
                         title="1.8 million engineers"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.hero}
@@ -68,21 +68,21 @@ const Home: FunctionComponent = () => (
 )
 
 const HomeHero: FunctionComponent = () => (
-    <div className="tw-text-white">
-        <div className="tw-px-sm tw-mx-auto tw-pt-md md:tw-pt-2xl tw-text-center">
-            <h1 className="tw-text-4xl tw-leading-10 sm:tw-text-6xl md:tw-text-[3.5rem] lg:tw-text-[4rem] lg:tw-leading-[1]">
-                <span className="tw-mb-2 tw-text-transparent sg-bg-gradient-purple-white tw-bg-clip-text">
+    <div className="text-white">
+        <div className="px-sm mx-auto pt-md md:pt-2xl text-center">
+            <h1 className="text-4xl leading-10 sm:text-6xl md:text-[3.5rem] lg:text-[4rem] lg:leading-[1]">
+                <span className="mb-2 text-transparent sg-bg-gradient-purple-white bg-clip-text">
                     Find. Fix. Flow.
                 </span>
             </h1>
 
-            <Heading size="h5" as="h2" className="tw-my-md tw-mx-auto tw-max-w-4xl !tw-font-normal">
+            <Heading size="h5" as="h2" className="my-md mx-auto max-w-4xl !font-normal">
                 Big codebases are less painful with Sourcegraph's&nbsp;code&nbsp;intelligence:
                 <br />
                 universal&nbsp;code&nbsp;search+nav and large-scale&nbsp;fixes/refactors.
             </Heading>
 
-            <p className="tw-text-gray-200 tw-my-md">
+            <p className="text-gray-200 my-md">
                 Works&nbsp;alongside your code&nbsp;host and editor.
                 <br />
                 Built on{' '}
@@ -90,7 +90,7 @@ const HomeHero: FunctionComponent = () => (
                     href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph"
                     target="_blank"
                     rel="noreferrer"
-                    className="tw-text-inherit tw-underline tw-decoration-1 tw-decoration-[#ffffff55] tw-decoration-dotted tw-underline-offset-4"
+                    className="text-inherit underline decoration-1 decoration-[#ffffff55] decoration-dotted underline-offset-4"
                 >
                     open source
                 </a>
@@ -105,13 +105,13 @@ const HomeHero: FunctionComponent = () => (
                 size="lg"
             />
         </div>
-        <SolidColorBottomHalfSection className="tw-mt-2xl tw-rounded-lg" bottomHalfClassName="tw-bg-white">
-            <div className="tw-mx-sm">
+        <SolidColorBottomHalfSection className="mt-2xl rounded-lg" bottomHalfClassName="bg-white">
+            <div className="mx-sm">
                 <DemoVideo
                     video="homepage-demo-202301"
                     splash={true}
-                    className="tw-mx-auto tw-w-full tw-max-w-4xl tw-bg-violet-750 tw-rounded-lg"
-                    splashClassName="tw-rounded-lg"
+                    className="mx-auto w-full max-w-4xl bg-violet-750 rounded-lg"
+                    splashClassName="rounded-lg"
                 />
             </div>
         </SolidColorBottomHalfSection>
@@ -123,11 +123,11 @@ const SolidColorBottomHalfSection: React.FunctionComponent<{
     bottomHalfClassName: string
     children: React.ReactNode
 }> = ({ className, bottomHalfClassName, children }) => (
-    <div className={classNames('tw-relative', className)}>
+    <div className={classNames('relative', className)}>
         <div
-            className={classNames('tw-absolute tw-bottom-0 tw-left-0 tw-right-0 tw-h-1/2 tw-z-0', bottomHalfClassName)}
+            className={classNames('absolute bottom-0 left-0 right-0 h-1/2 z-0', bottomHalfClassName)}
         />
-        <div className="tw-z-10 tw-sticky">{children}</div>
+        <div className="z-10 sticky">{children}</div>
     </div>
 )
 

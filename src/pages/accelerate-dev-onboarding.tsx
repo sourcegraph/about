@@ -11,9 +11,9 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                 'Get sharable links to help new developers ask questions with context, and enable senior devs to share knowledge without running local searches for specific bits of code.',
         }}
     >
-        <div className="tw-container tw-mx-auto tw-py-24 tw-grid tw-gap-md tw-grid-cols-1 lg:tw-grid-cols-2">
+        <div className="container mx-auto py-24 grid gap-md grid-cols-1 lg:grid-cols-2">
             <div>
-                <h1 className="tw-mb-6">Accelerate developer onboarding and decrease time to first commit</h1>
+                <h1 className="mb-6">Accelerate developer onboarding and decrease time to first commit</h1>
                 <h4>Self-serve onboarding, codebase exploration, and knowledge sharing</h4>
                 <p>
                     With Sourcegraph, developers can find their own answers without waiting for someone to point them to
@@ -21,7 +21,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                     included, and enable senior devs to share their knowledge at scale.
                 </p>
 
-                <div className="tw-mt-8 tw-max-w-[400px]">
+                <div className="mt-8 max-w-[400px]">
                     <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                 </div>
             </div>
@@ -32,7 +32,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
         </div>
 
         <div className="sg-bg-gradient-saturn">
-            <div className="tw-container tw-mx-auto tw-py-24 tw-max-w-[650px]">
+            <div className="container mx-auto py-24 max-w-[650px]">
                 <Blockquote
                     headline="Learn how Convoy increases the efficiency and confidence of entry level developers"
                     quote="For our new developers, Sourcegraph has been invaluable to get to know the repository
@@ -46,12 +46,12 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
             </div>
         </div>
 
-        <div className="tw-container tw-mx-auto tw-text-center tw-py-24 tw-max-w-[650px]">
+        <div className="container mx-auto text-center py-24 max-w-[650px]">
             <h2>Ready to accelerate developer onboarding? Let's talk.</h2>
 
-            <div className="tw-mt-8 tw-mx-auto tw-max-w-[400px]">
+            <div className="mt-8 mx-auto max-w-[400px]">
                 <a
-                    className="tw-mt-8 btn btn-primary tw-block sm:tw-inline-block"
+                    className="mt-8 btn btn-primary block sm:inline-block"
                     href="https://signup.sourcegraph.com"
                     title="Start for free"
                     data-button-style={buttonStyle.primary}

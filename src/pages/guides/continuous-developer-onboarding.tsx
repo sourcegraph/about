@@ -40,14 +40,14 @@ export const Guide: FunctionComponent = () => (
                         <strong>Download this guide to learn:</strong>
                     </p>
                     <ul>
-                        <li className="tw-mb-1">
+                        <li className="mb-1">
                             How to recontextualize traditional onboarding practices with long-term developer growth in
                             mind
                         </li>
-                        <li className="tw-mb-1">
+                        <li className="mb-1">
                             How to cultivate an environment that enables developers to be flexible and resilient
                         </li>
-                        <li className="tw-mb-1">
+                        <li className="mb-1">
                             How to approach people, knowledge, and tools as fundamental aspects of engineering culture
                         </li>
                     </ul>

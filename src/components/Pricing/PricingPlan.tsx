@@ -30,26 +30,26 @@ export const PricingPlan: FunctionComponent<Props> = ({
     textColorClass,
 }) => (
     <div
-        className={`tw-h-full sm:tw-p-md tw-p-xs tw-shadow-lg tw-border-t-16 tw-rounded tw-border-gray-200 ${borderColorClass}`}
+        className={`h-full sm:p-md p-xs shadow-lg border-t-16 rounded border-gray-200 ${borderColorClass}`}
     >
-        <h2 className="tw-mb-sm tw-font-semibold">{name}</h2>
-        <h4 className="tw-my-sm">
-            <span className="tw-text-xl">{price}</span>{' '}
-            {priceInterval && <span className="tw-text-base tw-font-normal">{priceInterval}</span>}
+        <h2 className="mb-sm font-semibold">{name}</h2>
+        <h4 className="my-sm">
+            <span className="text-xl">{price}</span>{' '}
+            {priceInterval && <span className="text-base font-normal">{priceInterval}</span>}
         </h4>
-        <h3 className="tw-font-normal tw-max-w-sm tw-text-lg tw-my-sm">{description}</h3>
+        <h3 className="font-normal max-w-sm text-lg my-sm">{description}</h3>
         {buttons}
 
         {(beforeFeatures || features.length > 0) && (
-            <div className="tw-py-sm tw-ml-0">
+            <div className="py-sm ml-0">
                 {beforeFeatures}
                 {features.map(node => (
-                    <div key={node.topic} className="tw-px-0 tw-bg-transparent tw-border-0">
-                        <div className="tw-text-xl tw-font-semibold tw-flex tw-items-center">
-                            <CheckIcon className={`tw-mr-2 ${textColorClass}`} />
-                            <h5 className="tw-w-full">{node.topic}</h5>
+                    <div key={node.topic} className="px-0 bg-transparent border-0">
+                        <div className="text-xl font-semibold flex items-center">
+                            <CheckIcon className={`mr-2 ${textColorClass}`} />
+                            <h5 className="w-full">{node.topic}</h5>
                         </div>
-                        <ul className="tw-ml-2xl tw-mb-xs">
+                        <ul className="ml-2xl mb-xs">
                             {node?.features?.map(feature => (
                                 <div key={feature}>
                                     <PricingPlanFeature feature={SPOTLIGHT_FEATURE_INFO[feature]} tag="li" />

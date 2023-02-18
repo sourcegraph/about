@@ -13,19 +13,19 @@ const CaseStudiesHome: FunctionComponent = () => (
             }}
         >
             <div>
-                <div className="tw-text-center tw-py-lg tw-px-6">
-                    <h1 className="tw-mb-xs">Sourcegraph case studies</h1>
+                <div className="text-center py-lg px-6">
+                    <h1 className="mb-xs">Sourcegraph case studies</h1>
                     <h4>Learn how engineering teams understand, fix, and automate across their entire codebase</h4>
                 </div>
 
-                <div className="tw-max-w-screen-xl tw-mx-auto tw-px-6 tw-mb-3xl">
-                    <ul className="tw-flex-wrap tw-grid tw-grid-cols-12 tw-list-none tw-ml-0 tw-gap-6">
+                <div className="max-w-screen-xl mx-auto px-6 mb-3xl">
+                    <ul className="flex-wrap grid grid-cols-12 list-none ml-0 gap-6">
                         {CASESTUDIES.map(study => (
                             <li
-                                className="grid-cols-4 tw-flex tw-col-span-12 md:tw-col-span-6 lg:tw-col-span-4"
+                                className="grid-cols-4 flex col-span-12 md:col-span-6 lg:col-span-4"
                                 key={study.name}
                             >
-                                <div className="tw-bg-white tw-border tw-border-solid tw-border-gray-200 tw-w-full tw-p-sm">
+                                <div className="bg-white border border-solid border-gray-200 w-full p-sm">
                                     <CaseStudyCard study={study} />
                                 </div>
                             </li>

@@ -38,11 +38,11 @@ const Cta: FunctionComponent<Cta> = ({ text, ctaStyle, link }) => {
             title={text}
             href={link}
             className={classNames({
-                'btn tw-bg-white tw-text-blurple-400 hover:tw-bg-blurple-400 hover:tw-text-white':
+                'btn bg-white text-blurple-400 hover:bg-blurple-400 hover:text-white':
                     ctaStyle === 'primaryButtonWhite',
-                'btn tw-text-white tw-border-white hover:tw-bg-blurple-400 hover:tw-border-blurple-400':
+                'btn text-white border-white hover:bg-blurple-400 hover:border-blurple-400':
                     ctaStyle === 'outlineButtonLight',
-                'btn btn-link tw-text-white hover:tw-text-blurple-200': ctaStyle === 'link',
+                'btn btn-link text-white hover:text-blurple-200': ctaStyle === 'link',
             })}
             data-button-style={ctaTrackingStyle}
             data-button-location={buttonLocation.body}
@@ -88,30 +88,30 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
 
     return (
         <>
-            <div className="tw-bg-violet-700 tw-text-white">
+            <div className="bg-violet-700 text-white">
                 <div
-                    className="tw-max-w-screen-xl tw-mx-auto tw-bg-[center_left] tw-bg-repeat-y tw-grid tw-items-center tw-grid-cols-12 tw-min-h-[291px] tw-h-full tw-px-sm lg:tw-pl-0 tw-py-3xl"
+                    className="max-w-screen-xl mx-auto bg-[center_left] bg-repeat-y grid items-center grid-cols-12 min-h-[291px] h-full px-sm lg:pl-0 py-3xl"
                     // eslint-disable-next-line react/forbid-dom-props
                     style={lgAndUp ? { background: `url('${illustration}')` } : undefined}
                 >
-                    <div className="tw-col-span-full md:tw-col-span-7 lg:tw-col-span-5 lg:tw-col-start-4 lg:tw-pl-xl">
-                        <h2 className="tw-text-violet-200 tw-mb-sm">{title}</h2>
-                        <p className="tw-text-lg tw-max-w-2xl">{description}</p>
+                    <div className="col-span-full md:col-span-7 lg:col-span-5 lg:col-start-4 lg:pl-xl">
+                        <h2 className="text-violet-200 mb-sm">{title}</h2>
+                        <p className="text-lg max-w-2xl">{description}</p>
                     </div>
 
                     <div
                         className={classNames(
-                            'tw-col-span-full md:tw-col-span-5 lg:tw-col-span-4 tw-flex tw-flex-col tw-items-center'
+                            'col-span-full md:col-span-5 lg:col-span-4 flex flex-col items-center'
                         )}
                     >
                         {cta1 && (
-                            <div className="tw-mt-sm">
+                            <div className="mt-sm">
                                 <Cta {...cta1} />
                             </div>
                         )}
 
                         {cta2 && typeof cta2 === 'object' && (
-                            <div className="tw-mt-sm">
+                            <div className="mt-sm">
                                 <Cta {...cta2} />
                             </div>
                         )}

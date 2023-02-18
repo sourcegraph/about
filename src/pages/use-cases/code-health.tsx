@@ -24,7 +24,7 @@ import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h3 className="tw-mb-8 lg:tw-mb-0">{header}</h3>
+        <h3 className="mb-8 lg:mb-0">{header}</h3>
         {text}
     </>
 )
@@ -36,7 +36,7 @@ const items = [
             <CarouselItem
                 header="Find old versions easily"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Use{' '}
                         <Link
                             href="/code-search"
@@ -60,7 +60,7 @@ const items = [
             <CarouselItem
                 header="Automate version updates and communications"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         With{' '}
                         <Link
                             href="/batch-changes"
@@ -84,7 +84,7 @@ const items = [
             <CarouselItem
                 header="Get everyone on the same page with living docs"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Create living, actionable documentation with{' '}
                         <a
                             href="https://docs.sourcegraph.com/notebooks"
@@ -107,7 +107,7 @@ const items = [
             <CarouselItem
                 header="Monitor for deprecated code"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Make sure deprecated endpoints don't sneak back into your code. Get alerts for new occurrences
                         of deprecated methods or restricted patterns with{' '}
                         <a
@@ -131,7 +131,7 @@ const items = [
             <CarouselItem
                 header="Develop a data-driven relationship with your code"
                 text={
-                    <p className="tw-py-4">
+                    <p className="py-4">
                         Create dashboards to track mitigations, package use, version adoption, code smells, codebase
                         size, and more to understand code health with{' '}
                         <Link
@@ -153,19 +153,19 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <MagnifyIcon className="mb-6 text-blurple-400 inline" size={40} />,
         subtitle: 'Find unhealthy code',
         description:
             'Build a healthier codebase by finding references to deprecated services, libraries, URL patterns, and more across all your repositories.',
     },
     {
-        icon: <WrenchOutlineIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <WrenchOutlineIcon className="mb-6 text-blurple-400 inline" size={40} />,
         subtitle: 'Remediate code health issues',
         description:
             'Tackle refactoring efforts and tech debt from legacy systems and acquisitions with automated pull requests across your entire codebase.',
     },
     {
-        icon: <ClipBoardPulseOutlineIcon className="tw-mb-6 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <ClipBoardPulseOutlineIcon className="mb-6 text-blurple-400 inline" size={40} />,
         subtitle: 'Monitor code health initiatives',
         description:
             'Stay on top of code health changes. Monitor and measure code health initiatives and get actionable insights into the impact of large-scale changes.',
@@ -266,22 +266,22 @@ const UseCasePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="md:tw-mb-6 tw-max-w-[500px]">Improving code health can be daunting</h2>
-                        <p className="tw-max-w-[500px]">
+                        <h2 className="md:mb-6 max-w-[500px]">Improving code health can be daunting</h2>
+                        <p className="max-w-[500px]">
                             Engineering teams need to track and measure code quality consistently to monitor code health
                             across their entire codebase, but current tools don't make this easy. What does that mean
                             for you?
                         </p>
                         <ul>
-                            <li className="tw-mt-1">
+                            <li className="mt-1">
                                 Old versions, libraries, or functions are littered throughout your code, resulting in
                                 incidents and backward compatibility issues.
                             </li>
-                            <li className="tw-mt-1">
+                            <li className="mt-1">
                                 Unclear code ownership leads to unclear responsibility, making it hard for developers to
                                 find the right domain expert when they need help.
                             </li>
-                            <li className="tw-mt-1">
+                            <li className="mt-1">
                                 Engineering managers struggle to justify prioritizing and addressing tech debt because
                                 success is difficult to track and measure.
                             </li>
@@ -315,12 +315,12 @@ const UseCasePage: FunctionComponent = () => (
             <QuoteCarousel items={quoteCarouselItems} />
         </ContentSection>
 
-        <ContentSection parentClassName="tw-bg-gray-100">
+        <ContentSection parentClassName="bg-gray-100">
             <UseCasePageCallToAction
                 text="Give your team the tools they need to build a healthier codebase."
                 buttonLocation={buttonLocation.body}
             />
-            <div className="tw-mt-4xl">
+            <div className="mt-4xl">
                 <CustomerLogos />
             </div>
         </ContentSection>

@@ -38,17 +38,17 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
     return (
         <Layout meta={meta}>
             <article>
-                <div className="lg:tw-container tw-px-sm tw-mx-auto">
+                <div className="lg:container px-sm mx-auto">
                     <BlogHeader {...blogInfo} />
                 </div>
-                <div className="tw-mt-8 tw-bg-white">
-                    <div className="tw-max-w-screen-xl tw-mx-auto">
+                <div className="mt-8 bg-white">
+                    <div className="max-w-screen-xl mx-auto">
                         <PostTemplate
                             post={post}
                             content={content}
                             url={urlToPost(post)}
-                            className="tw-mx-auto tw-max-w-[840px]"
-                            headerClassName="tw-bg-white tw-border-b-0 tw-text-center tw-pt-md tw-pb-sm"
+                            className="mx-auto max-w-[840px]"
+                            headerClassName="bg-white border-b-0 text-center pt-md pb-sm"
                         />
                     </div>
                 </div>

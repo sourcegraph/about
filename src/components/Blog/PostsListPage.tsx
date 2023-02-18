@@ -16,17 +16,17 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
 
     return (
         <Layout meta={blogInfo.meta}>
-            <div className="md:tw-container tw-px-sm tw-mx-auto">
+            <div className="md:container px-sm mx-auto">
                 <BlogHeader {...blogInfo} />
 
-                <div className="tw-pt-sm">
+                <div className="pt-sm">
                     <PostsList posts={loadMoreHook.currentRecords} />
 
                     {loadMoreHook.currentRecords.length < allPosts.length && (
-                        <div className="tw-flex tw-justify-center">
+                        <div className="flex justify-center">
                             <button
                                 type="button"
-                                className="tw-my-8 btn btn-primary"
+                                className="my-8 btn btn-primary"
                                 onClick={() => loadMoreHook.setPage(loadMoreHook.page + 1)}
                             >
                                 Load more

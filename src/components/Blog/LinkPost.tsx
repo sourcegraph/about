@@ -17,7 +17,7 @@ interface Props extends PostComponentProps {
  * This post always displays its full text and never hides it behind a "Read more" link.
  */
 export const LinkPost: FunctionComponent<Props> = ({ post, content, url, className = '', tag: Tag = 'div' }) => {
-    const titleClassName = 'tw-text-base link-post__html tw-inline'
+    const titleClassName = 'text-base link-post__html inline'
     const title = post.frontmatter.canonical ? (
         <h2 className={titleClassName}>
             <Link
@@ -35,20 +35,20 @@ export const LinkPost: FunctionComponent<Props> = ({ post, content, url, classNa
     )
 
     return (
-        <Tag className={`tw-overflow-hidden ${className}`}>
+        <Tag className={`overflow-hidden ${className}`}>
             <div>
                 {title}
                 {content && (
-                    <div className={`${styles.html} tw-inline`}>
+                    <div className={`${styles.html} inline`}>
                         <MDXRemote {...content} />
                     </div>
                 )}
             </div>
 
-            <div className="tw-pt-0 tw-bg-transparent tw-border-t-0">
+            <div className="pt-0 bg-transparent border-t-0">
                 <Link
                     href={url}
-                    className="tw-text-gray-500"
+                    className="text-gray-500"
                     title={post.frontmatter.publishDate}
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}

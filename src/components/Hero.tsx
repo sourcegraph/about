@@ -47,29 +47,29 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
 
     const mainContent = (
         <div
-            className={classNames(product && product !== 'sourcegraph cloud' && 'tw-max-w-[700px] tw-w-full', {
-                'md:tw-text-center md:tw-mx-auto': centerContent,
+            className={classNames(product && product !== 'sourcegraph cloud' && 'max-w-[700px] w-full', {
+                'md:text-center md:mx-auto': centerContent,
             })}
         >
             {backButton && <BackButton href={backButton.link} text={backButton.text} />}
 
-            <div className="tw-flex tw-flex-col-reverse">
-                <h1 className={classNames(titleClassName, 'tw-whitespace-pre-line')}>{title}</h1>
-                {product && <h6 className="tw-mb-2">{product}</h6>}
+            <div className="flex flex-col-reverse">
+                <h1 className={classNames(titleClassName, 'whitespace-pre-line')}>{title}</h1>
+                {product && <h6 className="mb-2">{product}</h6>}
             </div>
 
-            {description && <p className="tw-max-w-xl tw-mt-sm tw-text-lg">{description}</p>}
+            {description && <p className="max-w-xl mt-sm text-lg">{description}</p>}
 
             {subtitle && (
-                <h3 className={classNames('tw-max-w-4xl tw-mt-sm', { 'tw-mx-auto tw-text-centeZ': centerContent })}>
+                <h3 className={classNames('max-w-4xl mt-sm', { 'mx-auto text-centeZ': centerContent })}>
                     {subtitle}
                 </h3>
             )}
 
             {cta && (
                 <div
-                    className={classNames('tw-mt-md tw-flex tw-flex-col', {
-                        'tw-items-center tw-mx-auto': centerContent,
+                    className={classNames('mt-md flex flex-col', {
+                        'items-center mx-auto': centerContent,
                     })}
                 >
                     {cta}
@@ -80,7 +80,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
                 <img
                     src={floatingImg}
                     alt={floatingImg}
-                    className="tw-hidden md:tw-block tw-absolute tw-bottom--80 tw-left-0 tw-w-full tw-bg-transparent tw-h-[450px]"
+                    className="hidden md:block absolute bottom--80 left-0 w-full bg-transparent h-[450px]"
                 />
             )}
         </div>
@@ -91,10 +91,10 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
             background={variant}
             illustration={illustration}
             parentClassName={classNames({
-                '-tw-mt-[68px] md:-tw-mt-[74px] tw-pt-5xl md:!tw-pt-[148px]': displayUnderNav,
-                'tw-relative md:tw-h-[750px] lg:tw-mb-xs md:tw-mb-4xl tw-mb-0': floatingImg,
+                '-mt-[68px] md:-mt-[74px] pt-5xl md:!pt-[148px]': displayUnderNav,
+                'relative md:h-[750px] lg:mb-xs md:mb-4xl mb-0': floatingImg,
             })}
-            className="tw-flex tw-items-center"
+            className="flex items-center"
         >
             {leftColumn ? (
                 <TwoColumnSection leftColumn={leftColumn} rightColumn={mainContent} mergeColumns={mergeColumns} />

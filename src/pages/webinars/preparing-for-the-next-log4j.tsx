@@ -37,16 +37,16 @@ const Webinar: FunctionComponent = () => {
                     title="Preparing for the Next Log4j"
                     subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
                     leftColumn={
-                        <div className="tw-flex tw-items-center tw-h-full">
+                        <div className="flex items-center h-full">
                             <img
-                                className="tw-border-r-2 md:tw-border-r-3 tw-border-r-black tw-inline tw-mr-xs tw-pr-xs md:tw-mr-sm md:tw-pr-sm tw-w-[65px] md:tw-w-[95px]"
+                                className="border-r-2 md:border-r-3 border-r-black inline mr-xs pr-xs md:mr-sm md:pr-sm w-[65px] md:w-[95px]"
                                 src="/sourcegraph/sourcegraph-mark.svg"
                                 alt="Sourcegraph mark"
                             />
                             <img
                                 src="/external-logos/nutanix-logo.svg"
                                 alt="Nutanix logo"
-                                className="tw-inline tw-h-[15px] md:tw-h-[22px]"
+                                className="inline h-[15px] md:h-[22px]"
                             />
                         </div>
                     }
@@ -85,25 +85,25 @@ const Webinar: FunctionComponent = () => {
                         </p>
                         <p>In this session, you’ll learn:</p>
                         <ul>
-                            <li className="tw-mb-2">
+                            <li className="mb-2">
                                 How Jon enabled his team to confidently find & fix every instance of Log4j across a
                                 sprawling codebase in under 4 days
                             </li>
-                            <li className="tw-mb-2">
+                            <li className="mb-2">
                                 How this experience led to a renewed trust in Nutanix's vulnerability remediation for
                                 management and customers
                             </li>
-                            <li className="tw-mb-2">Best practices to prepare for the next security vulnerability</li>
+                            <li className="mb-2">Best practices to prepare for the next security vulnerability</li>
                         </ul>
                     </section>
                 }
                 videoSrc="https://www.youtube.com/embed/ANcbjQJ0OGI"
                 learnMoreCTA={
-                    <ContentSection className="tw-flex tw-flex-col tw-items-center">
-                        <h1 className="tw-text-center">Interesting in learning more?</h1>
+                    <ContentSection className="flex flex-col items-center">
+                        <h1 className="text-center">Interesting in learning more?</h1>
                         <Link
                             href="/case-studies/nutanix-fixed-log4j-with-sourcegraph"
-                            className="tw-mt-6 btn btn-primary"
+                            className="mt-6 btn btn-primary"
                             title="Read the Nutanix Case Study"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.body}

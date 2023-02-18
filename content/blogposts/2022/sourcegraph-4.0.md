@@ -51,7 +51,7 @@ You can choose to group your search results by location (repository or file), au
   title="High-level aggregations"
   caption="The power of Code Insights is now within the search UI to surface usage patterns about your code"
 />
-<a href="https://docs.sourcegraph.com/code_insights/explanations/search_results_aggregations" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/code_insights/explanations/search_results_aggregations" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
   
 <br />
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
@@ -63,7 +63,7 @@ Search results are now front and center with the improved interface. The search 
 
 We also made major performance improvements to make rendering search results, files, and repositories faster than ever. 
 
-<div className="tw-mb-sm">
+<div className="mb-sm">
   <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/New-Search-UI.png"
     alt="UI Improvements"
@@ -89,7 +89,7 @@ Auto-indexing allows you to set up precise code navigation for any chosen reposi
   caption="Auto-indexing is now supported for 9 languages and allows you to set up precise code navigation, automatically"
 />
 
-<a href="https://docs.sourcegraph.com/code_navigation/explanations/auto_indexing" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/code_navigation/explanations/auto_indexing" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 <br />
 <Badge link="https://docs.sourcegraph.com/integration" text="Extensions" color="vermillion" size="small" />
@@ -102,7 +102,7 @@ Now that top extensions are part of the core functionality, there will be greate
 
 This update *does not* impact our IDE extensions, which will continue to allow you to search and navigate across all of your repositories without ever leaving your IDE or checking them out locally. Our browser extensions will continue to have code navigation support, but other functionality to the code host will be discontinued (e.g. code coverage information).
 
-<div className="tw-mb-sm">
+<div className="mb-sm">
   <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Blame.png"
     alt="Git Blame"
@@ -126,7 +126,7 @@ Your code navigation experience just got better with a refreshed version of the 
   caption="Stay within your workflow and quickly access references with the revamped reference panel"
 />
 
-<a href="https://docs.sourcegraph.com/code_navigation/explanations/features#find-references" className="tw-not-italic tw-flex tw-items-center">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/code_navigation/explanations/features#find-references" className="not-italic flex items-center">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 
 
@@ -153,7 +153,7 @@ This feature requires admins to set up executors (much like CI agents), which So
   caption="Large-scale changes can be run across thousands of repositories with server-side Batch Changes"
 />
 
-<a href="https://docs.sourcegraph.com/batch_changes/explanations/server_side" className="tw-not-italic tw-flex tw-items-center">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/batch_changes/explanations/server_side" className="not-italic flex items-center">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 ### <a id="dedicated-sourcegraph-cloud-instances-for-enterprise"></a> ☁️ Dedicated Sourcegraph Cloud instances for enterprise
 
@@ -165,7 +165,7 @@ After almost a decade of developing self-hosted Sourcegraph, we’ve gained the 
 
 Dedicated, single-tenant Sourcegraph Cloud instances are now generally available and the best way for teams to use Sourcegraph. You can read more in our announcement blog [here](/blog/enterprise-cloud), or [sign up for a 15-day trial for your organization](https://signup.sourcegraph.com/).
 
-<a href="https://docs.sourcegraph.com/cloud" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/cloud" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
   
 <br />
 <Badge link="https://docs.sourcegraph.com/cloud" text="Admin" color="violet" size="small" />
@@ -176,7 +176,7 @@ We know that your code is one of your most important and sensitive assets. Every
 
 Check out our [Security Portal](https://security.sourcegraph.com/) to access the report and learn more about our security program.
 
-<a href="https://security.sourcegraph.com/" className="tw-not-italic tw-flex tw-items-center">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://security.sourcegraph.com/" className="not-italic flex items-center">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 ### <a id="advanced-admin-capabilities"></a> 📈 Advanced admin capabilities
 <br />
@@ -195,7 +195,7 @@ We know that upgrading Sourcegraph can be a time-intensive process, especially i
   caption="Upgrade to 4.0 directly from version 3.20 or higher with multi-version upgrades"
 />
 
-<a href="https://docs.sourcegraph.com/admin/updates#multi-version-upgrades" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/admin/updates#multi-version-upgrades" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 <br />
 <Badge link="https://docs.sourcegraph.com/admin/analytics" text="Admin" color="violet" size="small" />
@@ -213,7 +213,7 @@ With in-product analytics, you can now report on:
 - How often IDE and browser extensions are used across your organization, and how much time has been saved as a result.
 - The number of navigation events and the percentage of your repositories that allow precise code navigation.
 
-<div className="tw-mb-sm">
+<div className="mb-sm">
   <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.0/Search.png"
     alt="In-product analytics"
@@ -221,7 +221,7 @@ With in-product analytics, you can now report on:
   />
 </div>
 
-<a href="https://docs.sourcegraph.com/admin/analytics" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/admin/analytics" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 <br />
 <Badge link="https://docs.sourcegraph.com/admin/observability/opentelemetry" text="Admin" color="violet" size="small" />
@@ -230,7 +230,7 @@ With in-product analytics, you can now report on:
 
 [OpenTelemetry (OTEL)](https://opentelemetry.io/) is an open specification for exporting observability data. We’ve added OpenTelemetry support in Sourcegraph 4.0 so you can easily export tracing data from Sourcegraph into your preferred observability solution. This is a breaking change as we now require you to export tracing with the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/). This is deployed by default in all Sourcegraph deployment methods and replaces the Jaeger agents and collectors that was previously the default.
 
-<a href="https://docs.sourcegraph.com/admin/observability/opentelemetry" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/admin/observability/opentelemetry" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 <br />
 <Badge link="https://docs.sourcegraph.com/admin/external_service" text="Admin" color="violet" size="small" />
@@ -244,7 +244,7 @@ New enhancements to the repository status page help you better understand the cu
   caption="See the current state of your repositories being synced"
 />
 
-<a href="https://docs.sourcegraph.com/admin/external_service" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/admin/external_service" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 <style>
 {`
