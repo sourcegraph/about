@@ -210,26 +210,3 @@
     color: #000000;
     z-index: 1075 !important;
 }
-
-/* ======== Bootstrap Carousel style overrides ======== */
-.carousel .carousel-indicators {
-    bottom: -50px;
-}
-.carousel .carousel-indicators .active {
-    opacity: 1;
-}
-.carousel .carousel-indicators button {
-    background-color: #000;
-    opacity: 0.5;
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    border: 0 none;
-    margin: 0 8px;
-}
-@media (max-width: 1280px /* var(--breakpoint-xl) */) {
-    .carousel .carousel-control-prev,
-    .carousel .carousel-control-next {
-        display: none;
-    }
-}

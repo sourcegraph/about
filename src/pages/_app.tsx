@@ -1,9 +1,6 @@
 // Tailwind
 import '../styles/globals.css'
 
-// TODO: Remove once Bootstrap is completely removed
-import '../styles/globals.scss'
-
 import { ReactNode } from 'react'
 
 import type { AppProps } from 'next/app'
