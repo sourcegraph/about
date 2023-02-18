@@ -8,7 +8,7 @@
     margin-right: 10px;
 }
 
-.container :global(.nav-link) {
+.container :global(.nav-link):not(:global(.btn)) {
     padding: 9px 5px;
     font-weight: 400;
 }
@@ -19,8 +19,8 @@
     color: #ffffff;
 }
 
-.container:global(.navbar-dark) :global(.nav) :global(.nav-link),
-.container:global(.navbar-purple) :global(.nav) :global(.nav-link) {
+.container:global(.navbar-dark) :global(.nav) :global(.nav-link):not(:global(.btn)),
+.container:global(.navbar-purple) :global(.nav) :global(.nav-link):not(:global(.btn)) {
     color: #ffffff;
 }
 .container:global(.navbar-dark) :global(.nav-link) a,

@@ -196,9 +196,6 @@ module.exports = {
    */
   prefix: 'tw-',
 
-  // Remove this when Bootstrap and custom CSS tech debt is removed completely
-  important: true,
-
   plugins: [
     plugin(({ addBase }) => {
       const extractColors = (colors, colorGroup = '') => {

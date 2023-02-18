@@ -66,7 +66,7 @@ export const Header: FunctionComponent<Props> = ({ colorTheme = 'default', ...pr
 
     const navStyle = classNames(
         styles.container,
-        'navbar tw-py-4 tw-w-full tw-fixed tw-top-0 tw-right-0 tw-left-0 tw-z-[1030]',
+        'navbar tw-py-4 tw-w-full !tw-fixed tw-top-0 tw-right-0 tw-left-0 tw-z-[1030]',
         props.className,
         colorTheme === 'white' && 'tw-bg-white',
         isPurpleNav && 'navbar-purple',
