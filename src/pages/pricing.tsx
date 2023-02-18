@@ -2,10 +2,7 @@ import { FunctionComponent, useState } from 'react'
 
 import classNames from 'classnames'
 import CheckIcon from 'mdi-react/CheckIcon'
-import MinusIcon from 'mdi-react/MinusIcon'
-import PlusIcon from 'mdi-react/PlusIcon'
 import Link from 'next/link'
-import Accordion from 'react-bootstrap/Accordion'
 
 import {
     ContentSection,
@@ -169,9 +166,7 @@ const PricingPage: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <h2 className="text-center mx-auto mb-5 max-w-2xl">
-                The code intelligence platform for modern dev teams
-            </h2>
+            <h2 className="text-center mx-auto mb-5 max-w-2xl">The code intelligence platform for modern dev teams</h2>
             <CustomerLogos />
 
             <div className="py-3xl md:py-5xl md:max-w-screen-xl mx-auto overflow-hidden md:overflow-visible">
@@ -190,9 +185,7 @@ const PricingPage: FunctionComponent = () => {
                                     className={`h-full lg:h-60 md:p-sm p-xxs pb-md border-t-16 border-1 border-gray-200 border-b-0 ${PLAN_COLORS.business.borderColorClass}`}
                                 >
                                     <h2 className="text-xl md:text-4xl mb-sm">Business</h2>
-                                    <h4 className="font-normal hidden lg:block mb-sm">
-                                        $99 per active user/month
-                                    </h4>
+                                    <h4 className="font-normal hidden lg:block mb-sm">$99 per active user/month</h4>
                                     <StartFreeButton />
                                 </div>
                             </th>
@@ -241,9 +234,7 @@ const PricingPage: FunctionComponent = () => {
                                                 className={`mr-2 icon-inline ${PLAN_COLORS.business.textColorClass} inline`}
                                             />
                                         ) : null}
-                                        {feature.disclaimer && (
-                                            <i className="block text-sm">{feature.disclaimer}</i>
-                                        )}
+                                        {feature.disclaimer && <i className="block text-sm">{feature.disclaimer}</i>}
                                     </td>
                                     {/* Enterprise plan specs */}
                                     <td className="border-0 md:p-xs p-xxs text-center text-sm sm:text-base align-middle">
@@ -254,9 +245,7 @@ const PricingPage: FunctionComponent = () => {
                                                 className={`mr-2 icon-inline ${PLAN_COLORS.enterprise.textColorClass} inline`}
                                             />
                                         ) : null}
-                                        {feature.disclaimer && (
-                                            <i className="block text-sm">{feature.disclaimer}</i>
-                                        )}
+                                        {feature.disclaimer && <i className="block text-sm">{feature.disclaimer}</i>}
                                     </td>
                                 </tr>
                             ))}
@@ -280,25 +269,14 @@ const PricingPage: FunctionComponent = () => {
                 <h2 className="col-span-full md:col-span-2 mb-md max-w-md">Frequently asked questions</h2>
 
                 <div className="col-span-full md:col-span-3">
-                    <Accordion>
-                        {faqData.map((item, index) => (
-                            <Accordion.Item
-                                key={item.q}
-                                eventKey={item.q}
-                                className="border-t-1 border-gray-200 max-w-2xl mb-sm"
-                            >
-                                <Accordion.Header onClick={() => setActiveKey(activeKey !== index ? index : null)}>
-                                    <div className="flex justify-between items-center">
-                                        <h4 className="text-start mt-sm">{item.q}</h4>
-                                        <span className="text-gray-400 font-normal mt-xs">
-                                            {activeKey === index ? <MinusIcon /> : <PlusIcon />}
-                                        </span>
-                                    </div>
-                                </Accordion.Header>
-                                <Accordion.Body className="max-w-xl mt-xs">{item.a}</Accordion.Body>
-                            </Accordion.Item>
-                        ))}
-                    </Accordion>
+                    {faqData.map((item, index) => (
+                        <div key={item.q} className="border-t-1 border-gray-200 max-w-2xl mb-sm">
+                            <div className="flex justify-between items-center">
+                                <h4 className="text-start mt-sm">{item.q}</h4>
+                            </div>
+                            <div className="max-w-xl mt-xs">{item.a}</div>
+                        </div>
+                    ))}
                 </div>
             </ContentSection>
         </Layout>

@@ -211,11 +211,6 @@
     z-index: 1075 !important;
 }
 
-/* ======== Bootstrap Accordion style overrides ======== */
-.accordion-button {
-    width: 96%;
-}
-
 /* ======== Bootstrap Carousel style overrides ======== */
 .carousel .carousel-indicators {
     bottom: -50px;
