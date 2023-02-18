@@ -16,11 +16,20 @@ changelogItems:
     category: 
 ---
 
-<Badge link="https://docs.sourcegraph.com/admin/external_service/bitbucket_cloud" text="Admin" color="violet" size="small" />
+<Badge link="https://docs.sourcegraph.com/code_insights" text="Code Insights" color="green" size="small" />
 
-#### Highlight 1
+#### The new Code Insights UI makes it easier to run insights over specific repositories
 
-Highlight 1 copy
+We've introduced a new UI for Code Insights creation. You can now use Sourcegraph query syntax to select repositories for an insight to run over. Previously, repositories had to be explicitly listed. This change makes it easier to select very specific and large repository groups to run insights over.
+
+The new query system allows you to select repositories with these filters:
+- `repo:`
+- `-repo:`
+- `repo:has.path()`
+- `repo:has.file()`
+- `repo:has.commit.after()`
+- `repo:.*`
+
 
 <br />
 <Badge link="https://docs.sourcegraph.com/admin/workers" text="Admin" color="violet" size="small" />
