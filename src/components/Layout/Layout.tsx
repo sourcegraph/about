@@ -5,7 +5,6 @@ import { useRouter } from 'next/router'
 
 import { Footer } from './Footer'
 import { Header, HeaderColorTheme } from './Header/Header'
-import { navLinks } from './navLinks'
 
 interface LayoutProps {
     meta?: {
@@ -107,7 +106,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
 
             {!props.hideHeader && (
                 <div className={props.heroAndHeaderClassName}>
-                    <Header minimal={props.minimal} colorTheme={headerColorTheme} navLinks={navLinks} />
+                    <Header minimal={props.minimal} colorTheme={headerColorTheme || 'white'} />
 
                     {props.hero}
                 </div>

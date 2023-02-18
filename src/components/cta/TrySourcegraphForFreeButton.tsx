@@ -8,7 +8,8 @@ export const TrySourcegraphForFreeButton: React.FunctionComponent<{
     buttonLocation: number
     dark?: boolean
     size?: 'md' | 'lg'
-}> = ({ buttonLocation, dark = false, size = 'md' }) => (
+    children?: string
+}> = ({ buttonLocation, dark = false, size = 'md', children = 'Try Sourcegraph for free' }) => (
     <a
         className={classNames(
             'btn btn-primary whitespace-nowrap',
@@ -21,6 +22,6 @@ export const TrySourcegraphForFreeButton: React.FunctionComponent<{
         data-button-location={buttonLocation}
         data-button-type="cta"
     >
-        Try Sourcegraph for free
+        {children}
     </a>
 )
