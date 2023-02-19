@@ -11,7 +11,7 @@ import {
     ContentSection,
     useFilters,
     Hero,
-    CtaSection,
+    CallToActionContentSection,
 } from '../components'
 
 const sortResources = (resources: Resource[]): Resource[] =>
@@ -71,7 +71,7 @@ const Resources: FunctionComponent = () => {
                 title: 'Sourcegraph - Resources',
                 description: 'Sourcegraph workshops, case studies, whitepapers, blog posts, and recorded events',
             }}
-            heroAndHeaderClassName="tw-bg-white"
+            heroAndHeaderClassName="bg-white"
             hero={
                 <Hero
                     variant="white"
@@ -89,27 +89,27 @@ const Resources: FunctionComponent = () => {
                 disabledClear={!checkedFilters.length}
             />
 
-            <ContentSection background="white" className="tw-max-w-[1062px]">
+            <ContentSection background="white" className="max-w-[1062px]">
                 {!!noResults && (
-                    <div className="tw-text-center tw-max-w-md tw-mx-auto tw-mb-3xl">
-                        <span className="tw-bg-violet-100 tw-text-violet-400 tw-w-md tw-h-md tw-p-1 tw-rounded-full tw-inline-flex tw-items-center tw-justify-center tw-mb-xxs">
-                            <AlertOutlineIcon className="tw-inline" size={18} />
+                    <div className="mx-auto mb-3xl max-w-md text-center">
+                        <span className="mb-xxs inline-flex h-md w-md items-center justify-center rounded-full bg-violet-100 p-1 text-violet-400">
+                            <AlertOutlineIcon className="inline" size={18} />
                         </span>
                         <h4>We're stumped!</h4>
-                        <p className="tw-text-lg">
+                        <p className="text-lg">
                             Sorry, we don't have a match for that. Try adjusting the filters to expand the results.
                         </p>
                     </div>
                 )}
 
-                <div className="tw-grid sm:tw-grid-cols-2 xl:tw-grid-cols-3 tw-gap-x-sm tw-gap-y-xl">
+                <div className="grid gap-x-sm gap-y-xl sm:grid-cols-2 xl:grid-cols-3">
                     {resources.map(resource => (
                         <Card key={resource.title} resource={resource} />
                     ))}
                 </div>
             </ContentSection>
 
-            <CtaSection />
+            <CallToActionContentSection />
         </Layout>
     )
 }

@@ -152,25 +152,25 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
     }, [])
 
     return (
-        <div className={classNames({ 'tw-bg-black tw-text-white': dark })}>
-            <div className="tw-mb-xl tw-text-center tw-max-w-xl tw-mx-auto">
+        <div className={classNames({ 'bg-black text-white': dark })}>
+            <div className="mx-auto mb-xl max-w-xl text-center">
                 {overline && (
                     <Heading size="h6" as="h2">
                         {overline}
                     </Heading>
                 )}
                 {headline && (
-                    <Heading size="h2" as="h3" className="tw-my-2">
+                    <Heading size="h2" as="h3" className="my-2">
                         {headline}
                     </Heading>
                 )}
-                {description && <p className="tw-text-lg">{description}</p>}
+                {description && <p className="text-lg">{description}</p>}
             </div>
 
             <div
                 className={classNames(
-                    'tw-flex-wrap tw-mx-auto tw-flex tw-items-center tw-justify-center tw-max-w-screen-xl tw-select-none',
-                    { 'tw-brightness-0': dark || monochrome, 'tw-invert': dark }
+                    'mx-auto flex max-w-screen-xl select-none flex-wrap items-center justify-center',
+                    { 'brightness-0': dark || monochrome, invert: dark }
                 )}
                 ref={container}
             >
@@ -178,8 +178,8 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
                     <Link
                         key={logo.name}
                         href={logo.link ? logo.link : '/case-studies'}
-                        className={classNames('tw-mx-6 tw-mb-xl tw-shrink-0', {
-                            'xl:tw-mb-0': index > (logos.length - 1) / 2 && containerWidth >= breakpoints.xl,
+                        className={classNames('mx-6 mb-xl shrink-0', {
+                            'xl:mb-0': index > (logos.length - 1) / 2 && containerWidth >= breakpoints.xl,
                         })}
                         title={`${logo.name} logo`}
                         data-button-style={buttonStyle.image}

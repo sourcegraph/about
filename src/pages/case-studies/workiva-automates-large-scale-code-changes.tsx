@@ -15,7 +15,7 @@ export const CaseStudy: FunctionComponent = () => {
                 description:
                     'Workiva case study. Learn how Workiva uses Sourcegraph Batch Changes to reduce the time it takes to make large-scale code updates by 80%.',
             }}
-            className="navbar-dark tw-bg-black"
+            headerColorTheme="dark"
         >
             <CaseStudyLayout
                 customer="Workiva"
@@ -28,7 +28,7 @@ export const CaseStudy: FunctionComponent = () => {
                 }}
             >
                 <ContentSection background="white" slimWidth={true}>
-                    <h2 className="tw-pt-md tw-pb-1">Paying down tech debt</h2>
+                    <h2 className="pt-md pb-1">Paying down tech debt</h2>
 
                     <p>
                         The Client Platform Team at Workiva is responsible for developing and maintaining the frameworks
@@ -59,7 +59,7 @@ export const CaseStudy: FunctionComponent = () => {
                         author={trentGrover}
                     />
 
-                    <h2 className="tw-pt-md tw-pb-1">Automating large-scale updates with Batch Changes</h2>
+                    <h2 className="pt-md pb-1">Automating large-scale updates with Batch Changes</h2>
 
                     <p>
                         As an organization that values paying down tech debt, Workiva's Client Platform team started
@@ -77,7 +77,7 @@ export const CaseStudy: FunctionComponent = () => {
                         without any ongoing maintenance. The team has already used Batch Changes to:
                     </p>
 
-                    <ul className="mt-3">
+                    <ul className="mt-4">
                         <li>Propagate a new version of React to all frontend repositories</li>
                         <li>Update API versions of Kubernetes resources</li>
                         <li>Migrate to a new CDN while updating all code references</li>
@@ -93,7 +93,7 @@ export const CaseStudy: FunctionComponent = () => {
                         author="Evan Weible, Staff Software Engineer, Workiva"
                     />
 
-                    <h2 className="tw-pt-md tw-pb-1">
+                    <h2 className="pt-md pb-1">
                         Workiva reduces the time it takes to make large-scale code changes by 80%
                     </h2>
 
@@ -118,7 +118,7 @@ export const CaseStudy: FunctionComponent = () => {
                         author="Evan Weible, Staff Software Engineer, Workiva"
                     />
 
-                    <h3 className="tw-pt-md tw-pb-1">About Workiva</h3>
+                    <h3 className="pt-md pb-1">About Workiva</h3>
 
                     <p>
                         Founded in 2008, Workiva's platform enables thousands of enterprises around the world to manage

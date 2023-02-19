@@ -2,10 +2,11 @@ import { FunctionComponent } from 'react'
 
 import { kebabCase } from 'lodash'
 
-import { ContentSection, CtaSection } from '..'
+import { ContentSection, CallToActionContentSection } from '..'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 import { CaseStudyJumbotron } from './CaseStudyJumbotron'
+import styles from './CaseStudyLayout.module.css'
 
 interface Quote {
     text: string
@@ -40,10 +41,10 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
 }) => (
     <>
         <div className={`${kebabCase(customer)}-${className} ${className}`}>
-            <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
+            <CaseStudyJumbotron className="mb-8 pb-12" customer={customer} logo={logo}>
                 {heroImage && (
-                    <div className="case-studies__quote row tw-pt-xs">
-                        <div className="col-lg-3">
+                    <div className={`${styles.quote} grid grid-cols-1 gap-md pt-xs lg:grid-cols-4`}>
+                        <div>
                             <a
                                 href={heroLink}
                                 rel="nofollow"
@@ -52,35 +53,35 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                             >
-                                <img className="img-fluid tw-mx-auto tw-block" src={heroImage} alt={customer} />
+                                <img className="mx-auto block" src={heroImage} alt={customer} />
                             </a>
                         </div>
-                        <div className="col-lg-9">
+                        <div className="lg:col-span-3">
                             {quote && (
-                                <div className="tw-text-left">
-                                    <p className="text-light">{quote.text}</p>
-                                    <footer className="mt-1 blockquote-footer text-light">{quote.author}</footer>
+                                <div className="text-left">
+                                    <p>{quote.text}</p>
+                                    <footer className="blockquote-footer mt-1">{quote.author}</footer>
                                 </div>
                             )}
                         </div>
                     </div>
                 )}
                 {quote && !heroImage && (
-                    <div className="container tw-pt-xs">
-                        <div className="case-studies__quote row tw-justify-center">
+                    <div className="container pt-xs">
+                        <div className={`${styles.quote} grid grid-cols-1 justify-center gap-md`}>
                             {quote.image && (
-                                <div className="col-12 col-lg-9">
+                                <div>
                                     <img
-                                        className="mb-3 tw-rounded-full img-fluid tw-mx-auto tw-block"
+                                        className="mx-auto mb-4 block rounded-full"
                                         src={quote.image}
                                         alt={quote.author}
                                     />
                                 </div>
                             )}
-                            <div className="col-12 col-lg-9">
+                            <div>
                                 <blockquote className="blockquote">
-                                    <p className="text-light">{quote.text}</p>
-                                    <footer className="mt-1 blockquote-footer text-light">{quote.author}</footer>
+                                    <p>{quote.text}</p>
+                                    <footer className="blockquote-footer mt-1">{quote.author}</footer>
                                 </blockquote>
                             </div>
                         </div>
@@ -89,7 +90,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                 {pdf && (
                     <a
                         href={pdf}
-                        className="mt-3 btn btn-primary"
+                        className="btn btn-primary mt-4"
                         rel="nofollow noreferrer"
                         target="_blank"
                         title="Download PDF"
@@ -97,7 +98,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        <i className="fa fa-file-pdf tw-pr-xxs" />
+                        <i className="fa fa-file-pdf pr-xxs" />
                         Download PDF
                     </a>
                 )}
@@ -110,6 +111,6 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
             {children}
         </div>
 
-        <CtaSection />
+        <CallToActionContentSection />
     </>
 )

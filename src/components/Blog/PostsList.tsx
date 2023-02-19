@@ -14,13 +14,13 @@ interface Props {
 
 export const PostsList: FunctionComponent<Props> = ({ posts }) => {
     const postProps: Omit<PostComponentProps, 'post' | 'url'> = {
-        className: 'posts-list__post card',
-        headerClassName: 'card-header bg-white border-bottom-0 tw-text-center',
+        className: 'mb-8 bg-white border-1 p-xs',
+        headerClassName: 'text-center',
         tag: 'li',
         content: null,
     }
     return (
-        <ul className="posts-list list-unstyled tw-ml-0">
+        <ul className="ml-0 list-none">
             {posts.map(post => {
                 const PostList = POST_INDEX_TYPE_TO_COMPONENT[postIndexType(post.frontmatter)]
 

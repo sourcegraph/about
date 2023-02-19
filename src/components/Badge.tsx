@@ -55,96 +55,96 @@ export const Badge: FunctionComponent<Badge> = ({
     const colors = {
         'light-gray': {
             base: '',
-            unchecked: 'tw-bg-gray-200 tw-text-gray-500',
-            checked: 'tw-bg-gray-300 tw-text-gray-600',
-            hover: 'hover:tw-bg-gray-300 hover:tw-text-gray-600',
+            unchecked: 'bg-gray-200 text-gray-500',
+            checked: 'bg-gray-300 text-gray-600',
+            hover: 'hover:bg-gray-300 hover:text-gray-600',
         },
         white: {
             base: '',
-            unchecked: 'tw-bg-white',
-            checked: 'tw-bg-gray-500 tw-text-white',
-            hover: 'hover:tw-bg-gray-200 hover:tw-text-gray-500',
+            unchecked: 'bg-white',
+            checked: 'bg-gray-500 text-white',
+            hover: 'hover:bg-gray-200 hover:text-gray-500',
         },
         'white-outlined': {
-            base: 'tw-border tw-border-solid tw-border-gray-500',
-            unchecked: 'tw-bg-white tw-text-gray-500',
-            checked: 'tw-bg-gray-500 tw-text-white',
-            hover: 'hover:tw-bg-gray-500 hover:tw-text-white',
+            base: 'border border-solid border-gray-500',
+            unchecked: 'bg-white text-gray-500',
+            checked: 'bg-gray-500 text-white',
+            hover: 'hover:bg-gray-500 hover:text-white',
         },
         'dark-gray': {
             base: '',
-            unchecked: 'tw-bg-gray-500 tw-text-white',
-            checked: 'tw-bg-gray-700 tw-text-white',
-            hover: 'hover:tw-bg-gray-700 hover:tw-text-white',
+            unchecked: 'bg-gray-500 text-white',
+            checked: 'bg-gray-700 text-white',
+            hover: 'hover:bg-gray-700 hover:text-white',
         },
         blue: {
-            base: 'tw-bg-blue-100 tw-text-blue-400',
+            base: 'bg-blue-100 text-blue-400',
             unchecked: '',
             checked: '',
-            hover: 'hover:tw-bg-blue-400 hover:tw-text-blue-100',
+            hover: 'hover:bg-blue-400 hover:text-blue-100',
         },
         blurple: {
-            base: 'tw-bg-blurple-100 tw-text-blurple-500',
+            base: 'bg-blurple-100 text-blurple-500',
             unchecked: '',
             checked: '',
-            hover: 'hover:tw-bg-blurple-500 hover:tw-text-blurple-100',
+            hover: 'hover:bg-blurple-500 hover:text-blurple-100',
         },
         violet: {
-            base: 'tw-bg-violet-100 tw-text-violet-600',
+            base: 'bg-violet-100 text-violet-600',
             unchecked: '',
             checked: '',
-            hover: 'hover:tw-bg-violet-600 hover:tw-text-violet-100',
+            hover: 'hover:bg-violet-600 hover:text-violet-100',
         },
         cerise: {
-            base: 'tw-bg-cerise-100 tw-text-cerise-600',
+            base: 'bg-cerise-100 text-cerise-600',
             unchecked: '',
             checked: '',
-            hover: 'hover:tw-bg-cerise-600 hover:tw-text-cerise-100',
+            hover: 'hover:bg-cerise-600 hover:text-cerise-100',
         },
         vermillion: {
-            base: 'tw-bg-vermillion-100 tw-text-vermillion-500',
+            base: 'bg-vermillion-100 text-vermillion-500',
             unchecked: '',
             checked: '',
-            hover: 'hover:tw-bg-vermillion-500 hover:tw-text-vermillion-100',
+            hover: 'hover:bg-vermillion-500 hover:text-vermillion-100',
         },
         green: {
-            base: 'tw-bg-green-100 tw-text-green-500',
+            base: 'bg-green-100 text-green-500',
             unchecked: '',
             checked: '',
-            hover: 'hover:tw-bg-green-500 hover:tw-text-green-100',
+            hover: 'hover:bg-green-500 hover:text-green-100',
         },
         lemon: {
-            base: 'tw-bg-lemon-100 tw-text-vermillion-500',
+            base: 'bg-lemon-100 text-vermillion-500',
             unchecked: '',
             checked: '',
-            hover: 'hover:tw-bg-lemon-500 hover:tw-text-lemon-100',
+            hover: 'hover:bg-lemon-500 hover:text-lemon-100',
         },
     }
 
     const sizes = {
-        small: 'tw-text-xs tw-px-2 tw-py-1',
-        large: 'tw-text-sm tw-px-4 tw-py-[6px]',
+        small: 'text-xs px-2 py-1',
+        large: 'text-sm px-4 py-[6px]',
     }
 
     const styles = classNames(
-        'tw-inline tw-font-mono tw-align-middle tw-font-medium',
+        'inline font-mono align-middle font-medium',
         sizes[size],
         colors[color].base,
         {
             [colors[color].unchecked]: !checked || !onClick,
             [colors[color].checked]: checked,
             [colors[color].hover]: !!onClick || !!link,
-            'tw-cursor-pointer tw-transition-all tw-ease-out': !!onClick,
-            'tw-rounded-full': circle,
-            'tw-rounded-md': !circle,
+            'cursor-pointer transition-all ease-out': !!onClick,
+            'rounded-full': circle,
+            'rounded-md': !circle,
         },
-        breakWords ? 'tw-break-words' : 'tw-whitespace-nowrap'
+        breakWords ? 'break-words' : 'whitespace-nowrap'
     )
 
     return link ? (
-        <a href={link} className={classNames('tw-no-underline', styles)} tabIndex={0}>
+        <a href={link} className={classNames('no-underline', styles)} tabIndex={0}>
             {text}
-            {icon && <Icon className="tw-inline tw-ml-1" size={size === 'small' ? 12 : 14} />}
+            {icon && <Icon className="ml-1 inline" size={size === 'small' ? 12 : 14} />}
         </a>
     ) : (
         <div
@@ -155,7 +155,7 @@ export const Badge: FunctionComponent<Badge> = ({
             role={onClick ? 'button' : undefined}
         >
             {text}
-            {icon && <Icon className="tw-inline tw-ml-1" size={size === 'small' ? 12 : 14} />}
+            {icon && <Icon className="ml-1 inline" size={size === 'small' ? 12 : 14} />}
         </div>
     )
 }

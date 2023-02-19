@@ -47,7 +47,7 @@ Sourcegraph users frequently want to answer questions regarding who has accessed
 
 In 4.2, Sourcegraph now ships with an easy-to-consume audit log. The log contains security events, Gitserver access events, and GraphQL requests. The audit log is available for Sourcegraph self-hosted instances, with availability coming soon for Sourcegraph Cloud.
 
-<a href="https://docs.sourcegraph.com/admin/audit_log" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/admin/audit_log" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 <br />
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
@@ -62,7 +62,7 @@ Sourcegraph supports two types of secrets: namespaced secrets that can only be a
 
 This feature is in Beta, and feedback is very welcome. Tweet at us, or drop a comment in this [issue](https://github.com/sourcegraph/sourcegraph/issues/44597).
 
-<a href="https://docs.sourcegraph.com/admin/executor_secrets" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/admin/executor_secrets" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 <br />
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
@@ -73,7 +73,7 @@ To help you find information in your codebase faster than ever, we're introducin
 
 Smart Search helps find search results that are likely to be more useful than showing "no results" by trying slight variations of a user's original query. Smart Search automatically tries alternative queries based on a handful of rules (we know how easy it is to get tripped up by query syntax). When a query alternative finds results, those results are shown immediately. See the documentation to learn more about Smart Search behavior and configuration.
 
-<a href="https://docs.sourcegraph.com/code_search/explanations/features#smart-search" className="tw-not-italic tw-flex tw-items-center tw-mb-sm">Docs<OpenInNewIcon className="tw-ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/code_search/explanations/features#smart-search" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 <br />
 Sourcegraph 4.2 is now available to download. For Sourcegraph Cloud users, instances will be upgraded to 4.2 beginning December 5.

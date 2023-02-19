@@ -1,5 +1,7 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
+import styles from './HubSpotForm.module.css'
+
 declare global {
     interface Window {
         hbspt?: {
@@ -320,5 +322,5 @@ export const HubSpotForm: FunctionComponent<HubSpotForm> = ({
         }
     }, [formId, masterFormName, onFormSubmitted, inlineMessage, chiliPiper, formCreated])
 
-    return <div id="form-target" />
+    return <div id="form-target" className={styles.container} />
 }

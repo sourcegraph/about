@@ -37,16 +37,16 @@ const Webinar: FunctionComponent = () => {
                     title="Preparing for the Next Log4j"
                     subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
                     leftColumn={
-                        <div className="tw-flex tw-items-center tw-h-full">
+                        <div className="flex h-full items-center">
                             <img
-                                className="tw-border-r-2 md:tw-border-r-3 tw-border-r-black tw-inline tw-mr-xs tw-pr-xs md:tw-mr-sm md:tw-pr-sm tw-w-[65px] md:tw-w-[95px]"
+                                className="mr-xs inline w-[65px] border-r-2 border-r-black pr-xs md:mr-sm md:w-[95px] md:border-r-3 md:pr-sm"
                                 src="/sourcegraph/sourcegraph-mark.svg"
                                 alt="Sourcegraph mark"
                             />
                             <img
                                 src="/external-logos/nutanix-logo.svg"
                                 alt="Nutanix logo"
-                                className="tw-inline tw-h-[15px] md:tw-h-[22px]"
+                                className="inline h-[15px] md:h-[22px]"
                             />
                         </div>
                     }
@@ -66,7 +66,7 @@ const Webinar: FunctionComponent = () => {
                     })
                 }}
                 description={
-                    <section className="col-md-6 col-12 lg:tw-pr-3xl">
+                    <section>
                         <p>
                             For Nutanix, when 20,000+ of the world's most advanced data centers rely on your company's
                             software, any security vulnerability is a concern. But when the Log4j vulnerability hit,
@@ -99,11 +99,11 @@ const Webinar: FunctionComponent = () => {
                 }
                 videoSrc="https://www.youtube.com/embed/ANcbjQJ0OGI"
                 learnMoreCTA={
-                    <ContentSection className="tw-flex tw-flex-col tw-items-center">
-                        <h1 className="tw-text-center">Interesting in learning more?</h1>
+                    <ContentSection className="flex flex-col items-center">
+                        <h1 className="text-center">Interesting in learning more?</h1>
                         <Link
                             href="/case-studies/nutanix-fixed-log4j-with-sourcegraph"
-                            className="mt-4 btn btn-primary col-12 col-md-5 col-xl-3"
+                            className="btn btn-primary mt-6"
                             title="Read the Nutanix Case Study"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.body}

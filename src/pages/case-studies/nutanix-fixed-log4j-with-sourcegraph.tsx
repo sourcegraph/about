@@ -51,7 +51,7 @@ export const CaseStudy: FunctionComponent = () => (
         }
     >
         <NewCaseStudyLayout customer="Nutanix">
-            <ContentSection background="white" className="tw-flex tw-justify-center">
+            <ContentSection background="white" className="flex justify-center">
                 <Blockquote
                     inline={true}
                     quote="Sourcegraph was the right product at the right time."
@@ -99,15 +99,15 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection background="white" slimWidth={true}>
-                <div className="tw-mx-auto tw-pt-5xl">
-                    <p className="tw-pt-3xl sm:tw-mt-0 tw-mt-5xl">
+                <div className="mx-auto pt-5xl">
+                    <p className="mt-5xl pt-3xl sm:mt-0">
                         As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the
                         complexity involved in securing the multitude of applications and solutions required to power
                         such a large organization. “Security is something that we care about intensely here at Nutanix,”
                         Jon said, “because it’s part of our bedrock. It's why customers like us, and we have to take it
                         seriously.”
                     </p>
-                    <h3 className="mt-6 mb-4 max-w-600">Log4j: The vulnerability that rocked an industry</h3>
+                    <h3 className="mt-16 mb-6 max-w-[600px]">Log4j: The vulnerability that rocked an industry</h3>
                     <p>
                         <b>In December of 2021,</b> software companies around the world discovered that Log4j, an
                         open-source logging library bundled in many software packages, contained significant
@@ -149,7 +149,7 @@ export const CaseStudy: FunctionComponent = () => (
                         vulnerability.
                     </p>
 
-                    <h3 className="mt-6 mb-4 max-w-600">
+                    <h3 className="mt-16 mb-6 max-w-[600px]">
                         Nutanix used Sourcegraph to identify every instance of Log4j within 2 days
                     </h3>
                     <p>
@@ -199,7 +199,7 @@ export const CaseStudy: FunctionComponent = () => (
                         without completely flying by the seats of our pants.”
                     </p>
 
-                    <div className="tw-py-5xl">
+                    <div className="py-5xl">
                         <Blockquote
                             quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
                             better than having to say, 'Well, boss, I think we got it all.'"
@@ -208,7 +208,7 @@ export const CaseStudy: FunctionComponent = () => (
                         />
                     </div>
 
-                    <h3 className="mb-4">Nutanix has renewed confidence in its vulnerability remediation</h3>
+                    <h3 className="mb-6">Nutanix has renewed confidence in its vulnerability remediation</h3>
                     <p>
                         <b>Tracking down the Log4j vulnerability was,</b> in Jon's words, like “herding cats who were
                         herding mice at the same time.”
@@ -248,8 +248,8 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection background="white" slimWidth={true}>
-                <div className="tw-mx-auto">
-                    <h3 className="mb-4">Log4j is the tip of the open-source vulnerability iceberg</h3>
+                <div className="mx-auto">
+                    <h3 className="mb-6">Log4j is the tip of the open-source vulnerability iceberg</h3>
                     <p>
                         <b>With Sourcegraph's help,</b> Nutanix was able to transform a trust-threatening risk into a
                         trust-building opportunity. Their customers, Jon explained, were worried about hundreds of other
@@ -271,7 +271,7 @@ export const CaseStudy: FunctionComponent = () => (
                         <Link href="/use-cases/code-security">find and fix the next vulnerability</Link>.
                     </p>
 
-                    <div className="tw-mt-5xl">
+                    <div className="mt-5xl">
                         <StaffSpotlight
                             customer="Nutanix"
                             about={

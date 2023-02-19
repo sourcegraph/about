@@ -12,7 +12,7 @@ export const CaseStudy: FunctionComponent = () => {
                 description:
                     'FactSet case study. Learn how FactSet uses Sourcegraph after migrating from Perforce to GitHub.',
             }}
-            className="navbar-dark tw-bg-black"
+            headerColorTheme="dark"
         >
             <CaseStudyLayout
                 customer="FactSet"
@@ -25,9 +25,9 @@ export const CaseStudy: FunctionComponent = () => {
                 }}
             >
                 <ContentSection background="white" slimWidth={true}>
-                    <div className="row">
-                        <div className="col">
-                            <h3 className="tw-pb-1">Before Sourcegraph</h3>
+                    <div className="grid grid-cols-1 gap-md lg:grid-cols-2">
+                        <div>
+                            <h3 className="pb-1">Before Sourcegraph</h3>
                             <ul>
                                 <li>
                                     Inability to search across repositories after monolith to microservices migration
@@ -36,7 +36,7 @@ export const CaseStudy: FunctionComponent = () => {
                                 <li>Difficult to ensure consistency across the organization</li>
                             </ul>
 
-                            <h3 className="tw-pt-md tw-pb-1">After Sourcegraph</h3>
+                            <h3 className="pt-md pb-1">After Sourcegraph</h3>
                             <ul>
                                 <li>
                                     Able to search all code in any language, including C++, across all 12,000+
@@ -47,12 +47,12 @@ export const CaseStudy: FunctionComponent = () => {
                             </ul>
                         </div>
 
-                        <div className="col">
+                        <div>
                             <table>
                                 <tbody>
                                     <tr>
                                         <th className="bg-light">Languages</th>
-                                        <td>C++, Javascript, and Python</td>
+                                        <td>C++, JavaScript, and Python</td>
                                     </tr>
                                     <tr>
                                         <th className="bg-light">Developers</th>
@@ -80,7 +80,7 @@ export const CaseStudy: FunctionComponent = () => {
                         author={derrickFaunce}
                     />
 
-                    <h2 className="tw-pt-md tw-pb-1">Migrating from monolith to microservices</h2>
+                    <h2 className="pt-md pb-1">Migrating from monolith to microservices</h2>
                     <p>
                         In 2019, FactSet's engineering team started a huge code migration project to transition from a
                         monolithic code repository in Perforce to microservices in GitHub. Part of the reason for
@@ -111,7 +111,7 @@ export const CaseStudy: FunctionComponent = () => {
                         Services at FactSet.
                     </p>
 
-                    <h2 className="tw-pt-md tw-pb-1">Expanding throughout the organization</h2>
+                    <h2 className="pt-md pb-1">Expanding throughout the organization</h2>
                     <p>
                         Initially, the developer services team deployed Sourcegraph to the engineers responsible for the
                         real-time news and quotes engine. But after receiving positive feedback, the team gave another

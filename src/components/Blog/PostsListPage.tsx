@@ -15,18 +15,18 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
     const loadMoreHook = useLoadMore(allPosts, 1, posts)
 
     return (
-        <Layout meta={blogInfo.meta} className="bg-light navbar-light">
-            <div className="container-lg">
+        <Layout meta={blogInfo.meta}>
+            <div className="mx-auto px-sm md:container">
                 <BlogHeader {...blogInfo} />
 
-                <div className="tw-pt-sm">
+                <div className="pt-sm">
                     <PostsList posts={loadMoreHook.currentRecords} />
 
                     {loadMoreHook.currentRecords.length < allPosts.length && (
-                        <div className="tw-flex tw-justify-center">
+                        <div className="flex justify-center">
                             <button
                                 type="button"
-                                className="my-5 btn btn-primary"
+                                className="btn btn-primary my-8"
                                 onClick={() => loadMoreHook.setPage(loadMoreHook.page + 1)}
                             >
                                 Load more

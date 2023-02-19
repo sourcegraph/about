@@ -3,9 +3,8 @@ import { FunctionComponent, ReactNode } from 'react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
-import Footer from './Footer'
-import { Header } from './Header/Header'
-import { navLinks } from './navLinks'
+import { Footer } from './Footer'
+import { Header, HeaderColorTheme } from './Header/Header'
 
 interface LayoutProps {
     meta?: {
@@ -23,20 +22,18 @@ interface LayoutProps {
 
     hero?: ReactNode
     heroAndHeaderClassName?: string
+    headerColorTheme?: HeaderColorTheme
 
     className?: string
     hideFooter?: boolean
     hideHeader?: boolean
 }
 
-export const Layout: FunctionComponent<LayoutProps> = props => {
+export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, className, ...props }) => {
     const router = useRouter()
     const { pathname, asPath } = router
 
-    const isHome = pathname === '/'
-    const isBlog = pathname === '/blog'
     const isArticle = ['/blog/', '/podcast/', '/release/'].includes(pathname.replace('[...slug]', ''))
-    const isProductPage = pathname.startsWith('/product/')
 
     const meta: LayoutProps['meta'] = {
         ...props.meta,
@@ -62,7 +59,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
     }
 
     return (
-        <div className={`tw-flex tw-flex-col min-vh-100 ${props.className || ''}`}>
+        <div className={`flex min-h-screen flex-col ${className || ''}`}>
             <Head>
                 <title>{meta.externalTitle || meta.title}</title>
                 <meta name="description" content={meta.externalDescription || meta.description} />
@@ -109,22 +106,23 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
 
             {!props.hideHeader && (
                 <div className={props.heroAndHeaderClassName}>
-                    <Header
-                        isHome={isHome}
-                        isBlog={isBlog}
-                        isProductPage={isProductPage}
-                        minimal={props.minimal}
-                        className={props.className}
-                        navLinks={navLinks}
-                    />
+                    <Header minimal={props.minimal} colorTheme={headerColorTheme || 'white'} />
 
                     {props.hero}
                 </div>
             )}
+            <style>{`body { background-color: ${
+                headerColorTheme === 'purple'
+                    ? 'var(--sg-color-violet-750)'
+                    : headerColorTheme === 'dark'
+                    ? 'black'
+                    : 'var(--sg-color-gray-50)'
+            }; }`}</style>
+            <section className="flex-1">{props.children}</section>
 
-            <section className="tw-flex-1">{props.children}</section>
-
-            {!props.hideFooter && <Footer className={`${props.className || ''}`} minimal={props.minimal} />}
+            {!props.hideFooter && (
+                <Footer dark={headerColorTheme === 'dark' || headerColorTheme === 'purple'} minimal={props.minimal} />
+            )}
         </div>
     )
 }

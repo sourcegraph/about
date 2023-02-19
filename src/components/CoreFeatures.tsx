@@ -131,9 +131,9 @@ export const CoreFeatures: FunctionComponent = () => {
 
     return (
         <>
-            <div className="tw-text-center mb-7">
+            <div className="mb-24 text-center">
                 <h2>How developers use Sourcegraph</h2>
-                <p className="tw-mx-auto tw-my-xs tw-max-w-3xl tw-text-lg">
+                <p className="mx-auto my-xs max-w-3xl text-lg">
                     Sourcegraph's code intelligence platform is built with features that help you understand, fix, and
                     automate across your entire codebase.
                 </p>
@@ -142,23 +142,16 @@ export const CoreFeatures: FunctionComponent = () => {
             {features.map((feature, index) => (
                 <div
                     key={feature.productFeature}
-                    className={classNames('row tw-flex-col-reverse lg:tw-flex-row', {
-                        'lg:tw-flex-row-reverse': index % 2,
-                        'mb-8': index !== features.length - 1,
+                    className={classNames('grid grid-cols-1 flex-col-reverse gap-lg lg:grid-cols-2 lg:flex-row', {
+                        'lg:flex-row-reverse': index % 2,
+                        'mb-32': index !== features.length - 1,
                     })}
                 >
-                    <div
-                        className={classNames('col-lg-6', {
-                            'lg:tw-pr-5xl lg:tw-pl-0': index % 2 === 0,
-                            'lg:tw-pl-5xl lg:tw-pr-0': index % 2,
-                        })}
-                    >
-                        <span className="tw-mb-2 tw-text-md tw-uppercase tw-font-semibold tw-block">
-                            {feature.productFeature}
-                        </span>
+                    <div>
+                        <span className="text-md mb-2 block font-semibold uppercase">{feature.productFeature}</span>
                         <h2>{feature.title}</h2>
-                        <p className="tw-mt-sm">{feature.description}</p>
-                        <ul className="my-3">
+                        <p className="mt-sm">{feature.description}</p>
+                        <ul className="my-4">
                             {feature.details.map(detail => (
                                 <li key={detail}>{detail}</li>
                             ))}
@@ -168,7 +161,7 @@ export const CoreFeatures: FunctionComponent = () => {
                                 href={feature.ctaLink}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="mt-2 btn btn-outline-primary"
+                                className="btn btn-outline-primary mt-2"
                                 title={`Learn more about ${startCase(feature.productFeature)}`}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
@@ -179,7 +172,7 @@ export const CoreFeatures: FunctionComponent = () => {
                         ) : (
                             <Link
                                 href={feature.ctaLink}
-                                className="mt-2 btn btn-outline-primary"
+                                className="btn btn-outline-primary mt-2"
                                 title={'Learn more about ' + startCase(feature.productFeature)}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
@@ -190,9 +183,9 @@ export const CoreFeatures: FunctionComponent = () => {
                         )}
                     </div>
 
-                    <div className="px-5 mb-6 tw-py-0 col-lg-6 mb-lg-0">
+                    <div>
                         <video
-                            className={`shadow w-100 max-w-550 tw-block tw-mx-auto tw-rounded video-${index}`}
+                            className={`mx-auto block w-full max-w-[550px] rounded shadow video-${index}`}
                             autoPlay={false}
                             muted={true}
                             loop={true}

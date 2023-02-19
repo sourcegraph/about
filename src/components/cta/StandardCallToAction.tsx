@@ -13,11 +13,11 @@ export const StandardCallToAction: React.FunctionComponent<{
     size?: 'md' | 'lg'
 }> = ({ center, buttonLocation, dark = false, chevron = false, size = 'md' }) => (
     <div
-        className={classNames('tw-mx-auto tw-w-full tw-flex-col sm:tw-flex-row sm:tw-flex tw-items-center', {
-            'tw-justify-center': center,
+        className={classNames('mx-auto w-full flex-col items-center sm:flex sm:flex-row', {
+            'justify-center': center,
         })}
     >
-        <div className="mb-3 sm:tw-px-0 mb-sm-0 mr-sm-3">
+        <div className="mb-4 sm:mb-0 sm:mr-4 sm:px-0">
             <TrySourcegraphForFreeButton buttonLocation={buttonLocation} dark={dark} size={size} />
         </div>
         <div>

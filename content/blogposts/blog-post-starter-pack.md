@@ -103,11 +103,11 @@ Or, you may want to include a link within your Alert:
 
 Use the `Badge` component to call out specific topics or versions of content.
 
-<div className="tw-mb-sm">
+<div className="mb-sm">
   <Badge text="Default badge" size="small" />
 </div>
 
-<div className="tw-flex tw-justify-between">
+<div className="flex justify-between">
   <Badge text="light-gray" size="small" color="light-gray" />
   <Badge text="white" size="small" color="white" />
   <Badge text="white-outlined" size="small" color="white-outlined" />
@@ -125,7 +125,7 @@ Change the <b>color</b> of the Badge by setting its `color` property to one of t
 <Badge text="lemon" size="small" color="blurple" />
 ```
 
-<div className="tw-mt-sm">
+<div className="mt-sm">
   <Badge text="NEW!" size="small" color="violet" circle={true} />
 </div>
 <b>Round</b> the edges for a "pill badge" effect, add `circle={true}` property for the markdown.
@@ -133,7 +133,7 @@ Change the <b>color</b> of the Badge by setting its `color` property to one of t
 <Badge text="NEW!" size="small" color="violet" circle={true} />
 ```
 
-<div className="tw-mt-sm">
+<div className="mt-sm">
   <Badge text="Search code" color="cerise" link="https://sourcegraph.com/" size="small" />
 </div>
 To add a <b>link</b> to your badge, pass the badge a link as seen below:
@@ -141,7 +141,7 @@ To add a <b>link</b> to your badge, pass the badge a link as seen below:
 <Badge text="Search code" color="cerise" link="https://sourcegraph.com/" size="small" />
 ```
 
-<div className="tw-mt-sm">
+<div className="mt-sm">
   <Badge text="BETA" color="vermillion" size="large" />
 </div>
 To use a <b>larger badge</b>, give the component a `size="large"` property.

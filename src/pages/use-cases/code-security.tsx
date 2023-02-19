@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 import {
     ContentSection,
-    CtaSection,
+    CallToActionContentSection,
     CustomCarousel,
     CustomerLogos,
     Hero,
@@ -18,11 +18,12 @@ import {
     TwoColumnSection,
 } from '../../components'
 import { StandardCallToAction } from '../../components/cta/StandardCallToAction'
+import { UseCasePageCallToAction } from '../../components/cta/UseCasePageCallToAction'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h3 className="tw-mb-8 lg:tw-mb-0">{header}</h3>
+        <h3 className="mb-8 lg:mb-0">{header}</h3>
         {text}
     </>
 )
@@ -34,7 +35,7 @@ const items = [
             <CarouselItem
                 header="Find vulnerabilities"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         Vulnerabilities are inevitable, but they don't have to be disruptive. With{' '}
                         <Link
                             href="/code-search"
@@ -59,7 +60,7 @@ const items = [
             <CarouselItem
                 header="Automatically merge and deploy fixes"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         Deploy fixes at scale. Don't let the size and complexity of your codebase hold you back. With{' '}
                         <Link
                             href="/batch-changes"
@@ -83,7 +84,7 @@ const items = [
             <CarouselItem
                 header="Proactively monitor for the presence of vulnerable code"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         Get ahead of vulnerabilities. With{' '}
                         <a
                             href="https://docs.sourcegraph.com/code_monitoring"
@@ -108,7 +109,7 @@ const items = [
             <CarouselItem
                 header="Ensure removal of security vulnerabilities"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         Get the full picture of an incident. Track how long the vulnerable code has been in your
                         codebase and how quickly you're removing it. With{' '}
                         <Link
@@ -133,7 +134,7 @@ const items = [
             <CarouselItem
                 header="Bring peace of mind to customers"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         The last thing you want to do is walk back an “all clear” report. With Sourcegraph, you can know
                         you'll find every instance of affected code, be able to fix it at scale, monitor for its
                         presence long-term, and ensure your customers that your code is safe.
@@ -146,19 +147,19 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <TimerOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <TimerOutlineIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Reduce time to discovery and resolution',
         description:
             'Find every instance of a vulnerability and start remediating in minutes instead of days or weeks. Use that head start to deploy fixes sooner.',
     },
     {
-        icon: <AutoFixIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <AutoFixIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Automate fixing, merging, and deploying fixes',
         description:
             'Automate PRs to fix vulnerabilities across your entire codebase so you can be 100% confident you resolved every vulnerability.',
     },
     {
-        icon: <ShieldAlertOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <ShieldAlertOutlineIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Alert for risky code changes & known vulnerabilities',
         description:
             'Get on top of vulnerabilities by monitoring your repositories for commits when risky patterns and known vulnerabilities enter your codebase.',
@@ -230,7 +231,7 @@ const UseCasePage: FunctionComponent = () => (
             description:
                 'Search your repositories and find vulnerabilities in minutes, not days. Learn more about Sourcegraph for code security.',
         }}
-        className="use-cases-page navbar-light"
+        className="use-cases-page"
         hero={
             <Hero
                 variant="lightNebulousVenus2"
@@ -252,7 +253,9 @@ const UseCasePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="mb-4 max-w-400">Identifying & resolving security vulnerabilities is painful</h2>
+                        <h2 className="mb-6 max-w-[400px]">
+                            Identifying & resolving security vulnerabilities is painful
+                        </h2>
                         <p>
                             Existing tooling doesn't enable teams to be agile and effective when responding to security
                             vulnerabilities. What does that mean for you?
@@ -275,7 +278,7 @@ const UseCasePage: FunctionComponent = () => (
                     </>
                 }
                 rightColumn={
-                    <div className="tw-bg-white tw-p-8 lg:tw-ml-10">
+                    <div className="bg-white p-8 lg:ml-10">
                         <h4>Log4j was the tip of the iceberg</h4>
                         <p>
                             Log4j is a prime example of how challenging it is to create a cohesive response across
@@ -310,47 +313,19 @@ const UseCasePage: FunctionComponent = () => (
             <QuoteCarousel items={quoteCarouselItems} />
         </ContentSection>
 
-        <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
-                <div className="mb-5 tw-mx-auto tw-flex tw-flex-col tw-text-center">
-                    <h2>Get started with Sourcegraph</h2>
-                    <p className="max-w-450">
-                        Find, fix, and track vulnerable code quickly across your entire codebase to improve code
-                        security.
-                    </p>
-                </div>
-                <div className="tw-px-0 tw-text-center col-12">
-                    <a
-                        className="btn btn-primary max-w-350 w-100"
-                        href="https://signup.sourcegraph.com"
-                        title="Start for free"
-                        data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Start for free
-                    </a>
-                    <Link
-                        href="/use-cases"
-                        className="mt-4 tw-flex tw-justify-center "
-                        title="Explore other use cases"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Explore other use cases
-                    </Link>
-                </div>
-            </div>
-
-            <div className="tw-mt-4xl">
+        <ContentSection parentClassName="bg-gray-100">
+            <UseCasePageCallToAction
+                text="Find, fix, and track vulnerable code quickly across your entire codebase to improve code security."
+                buttonLocation={buttonLocation.body}
+            />
+            <div className="mt-4xl">
                 <CustomerLogos />
             </div>
         </ContentSection>
 
         <ResourceList items={blogResourceItems} />
 
-        <CtaSection />
+        <CallToActionContentSection />
     </Layout>
 )
 

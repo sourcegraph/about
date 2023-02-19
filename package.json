@@ -48,6 +48,8 @@
     "pnpm": "^7.26.1"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.11",
+    "@heroicons/react": "^2.0.15",
     "@mapbox/rehype-prism": "^0.8.0",
     "@visx/axis": "^2.12.2",
     "@visx/curve": "^2.1.0",
@@ -96,7 +98,6 @@
     "@types/react": "18.0.20",
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.4.8",
-    "bootstrap": "4.6.0",
     "cypress": "10.8.0",
     "eslint": "^8.32.0",
     "eslint-config-next": "^13.1.2",
@@ -107,7 +108,7 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.7.2",
     "prettier": "^2.5.1",
-    "react-bootstrap": "2.0.0",
+    "prettier-plugin-tailwindcss": "^0.2.3",
     "react-icons": "^4.4.0",
     "react-spring": "^9.4.4",
     "react-twitch-embed": "^3.0.1",

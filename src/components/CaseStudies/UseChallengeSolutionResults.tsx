@@ -53,22 +53,22 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
     }, [])
 
     return (
-        <div className="tw-relative tw-flex lg:tw-flex-row tw-flex-col tw-py-xl">
-            <div className="col-lg-6 col-12">
-                <div className="mb-5 tw-flex tw-flex-col lg:tw-flex-row lg:tw-justify-end">
-                    <div className="mb-3 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
-                        <ClipboardTextIcon size={40} className="tw-p-1 tw-text-violet-400" />
+        <div className="relative flex flex-col gap-lg py-xl lg:flex-row">
+            <div>
+                <div className="mb-8 flex flex-col lg:flex-row lg:justify-end">
+                    <div className="mb-4 flex max-w-[50px] items-center justify-center self-start rounded bg-violet-100 p-1 text-center">
+                        <ClipboardTextIcon size={40} className="p-1 text-violet-400" />
                     </div>
-                    <div className="tw-pl-xs col-11 col-lg-9">
+                    <div className="pl-xs">
                         <h4>Use case</h4>
                         {useCases.length > 1 ? (
-                            <ul className="mb-0 ml-0 tw-pl-sm">
+                            <ul className="mb-0 ml-0 pl-sm">
                                 {useCases.map(useCase => (
                                     <ListItemType key={useCase.text} item={useCase} />
                                 ))}
                             </ul>
                         ) : useCases[0].href ? (
-                            <p className="tw-mb-0">
+                            <p className="mb-0">
                                 <Link href={useCases[0].href}>{useCases[0].text}</Link>
                             </p>
                         ) : (
@@ -76,14 +76,14 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                         )}
                     </div>
                 </div>
-                <div className="mb-5 mb-lg-0 tw-flex tw-flex-col lg:tw-flex-row lg:tw-justify-end">
-                    <div className="mb-3 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
-                        <AlertIcon size={40} className="tw-p-1 tw-text-violet-400" />
+                <div className="mb-8 flex flex-col lg:mb-0 lg:flex-row lg:justify-end">
+                    <div className="mb-4 flex max-w-[50px] items-center justify-center self-start rounded bg-violet-100 p-1 text-center">
+                        <AlertIcon size={40} className="p-1 text-violet-400" />
                     </div>
-                    <div className="tw-pl-xs col-11 col-lg-9">
+                    <div className="pl-xs">
                         <h4>Challenge</h4>
                         {challenges.length > 1 ? (
-                            <ul className="mb-0 ml-0 tw-pl-sm">
+                            <ul className="mb-0 ml-0 pl-sm">
                                 {challenges.map(challenge => (
                                     <ListItemType key={challenge.text} item={challenge} />
                                 ))}
@@ -96,15 +96,15 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     </div>
                 </div>
             </div>
-            <div className="col-lg-6 col-12">
-                <div className="mb-5 mb-lg-0 tw-flex tw-flex-col lg:tw-flex-row xl:tw-justify-center">
-                    <div className="mb-3 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
-                        <CheckCircleIcon size={40} className="tw-p-1 tw-text-violet-400" />
+            <div>
+                <div className="mb-8 flex flex-col lg:mb-0 lg:flex-row xl:justify-center">
+                    <div className="mb-4 flex max-w-[50px] items-center justify-center self-start rounded bg-violet-100 p-1 text-center">
+                        <CheckCircleIcon size={40} className="p-1 text-violet-400" />
                     </div>
-                    <div className="tw-pl-xs col-11 col-lg-9">
+                    <div className="pl-xs">
                         <h4>Solution</h4>
                         {solutions.length > 1 ? (
-                            <ul className="mb-0 ml-0 tw-pl-sm">
+                            <ul className="mb-0 ml-0 pl-sm">
                                 {solutions.map(solution => (
                                     <ListItemType key={solution.text} item={solution} />
                                 ))}
@@ -122,16 +122,16 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                 ref={box}
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ marginBottom: boxHalfHeight }}
-                className="sg-bg-gradient-venus lg:tw-absolute xl:tw-right-5xl lg:tw-right-sm lg:tw-bottom-0 tw-max-w-[700px] lg:tw-max-w-[500px] tw-mx-auto tw-p-8 tw-w-[95%]"
+                className="sg-bg-gradient-venus mx-auto w-[95%] max-w-[700px] p-8 lg:absolute lg:right-sm lg:bottom-0 lg:max-w-[500px] xl:right-5xl"
             >
-                <div className="ml-lg-0 tw-flex tw-flex-col lg:tw-flex-row">
-                    <div className="mb-3 tw-rounded tw-p-1 tw-text-center tw-flex tw-bg-violet-100 tw-self-start col-1 col-lg-2 tw-justify-center tw-items-center max-w-50">
-                        <ChartLineVariantIcon size={40} className="tw-p-1 tw-text-violet-400" />
+                <div className="flex flex-col lg:ml-0 lg:flex-row">
+                    <div className="mb-4 flex max-w-[50px] items-center justify-center self-start rounded bg-violet-100 p-1 text-center">
+                        <ChartLineVariantIcon size={40} className="p-1 text-violet-400" />
                     </div>
-                    <div className="tw-pr-0 tw-pl-xs col-lg-10 col-11">
+                    <div className="pr-0 pl-xs">
                         <h4>Results</h4>
                         {results.length > 1 ? (
-                            <ul className="tw-pl-6 tw-mb-0 tw-ml-0">
+                            <ul className="mb-0 ml-0 pl-6">
                                 {results.map(result => (
                                     <ListItemType key={result.text} item={result} />
                                 ))}

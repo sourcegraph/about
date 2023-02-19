@@ -26,14 +26,14 @@ const CarouselItem: FunctionComponent<{
     text: string
 }> = props => (
     <>
-        <div className="tw-mb-4 tw-text-center tw-bg-violet-100 tw-rounded-full tw-max-w-[40px]">
-            <div className="p-2 tw-text-violet-400 tw-flex tw-justify-center">
+        <div className="mb-4 max-w-[40px] rounded-full bg-violet-100 text-center">
+            <div className="flex justify-center p-2 text-violet-400">
                 <props.icon />
             </div>
         </div>
         <h3>{props.header}</h3>
-        <h4 className="my-3 lg:tw-hidden tw-block mb-lg-0">{props.subtitle}</h4>
-        <p className="py-3">{props.text}</p>
+        <h4 className="my-4 block lg:mb-0 lg:hidden">{props.subtitle}</h4>
+        <p className="py-4">{props.text}</p>
     </>
 )
 
@@ -155,15 +155,15 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
         }}
         hero={
             <div className="sg-bg-gradient-saturn">
-                <div className="container py-6 lg:tw-py-5xl md:tw-text-center">
+                <div className="container mx-auto py-16 md:text-center lg:py-5xl">
                     <h1>Key traits of a code intelligence platform</h1>
-                    <h3 className="py-4 md:tw-mx-auto max-w-750">
+                    <h3 className="max-w-[750px] py-6 md:mx-auto">
                         Sourcegraph helps developers save time and move faster, regardless of how complex your codebase
                         is: any code host, any language, and any repository.
                     </h3>
 
                     <a
-                        className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
+                        className="btn btn-primary mt-8 block sm:inline-block"
                         href="https://signup.sourcegraph.com"
                         title="Start for free"
                         data-button-style={buttonStyle.primary}
@@ -185,19 +185,19 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection background="white">
-            <h2 className="tw-px-0 tw-pb-md col-12 col-lg-6">Sourcegraph helps enterprise development teams...</h2>
+            <h2 className="px-0 pb-md">Sourcegraph helps enterprise development teams...</h2>
 
             <TwoColumnSection
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="mb-4">Get unblocked</h2>
+                        <h2 className="mb-6">Get unblocked</h2>
                         <ul>
-                            <li className="mb-3">
+                            <li className="mb-4">
                                 Sourcegraph helps developers uncover answers, understand code, and take actions in the
                                 codebase without interrupting teammates.
                             </li>
-                            <li className="mb-3">
+                            <li className="mb-4">
                                 Developers at <i>a well-known American social news site</i> save 30 – 60 minutes a day
                                 with faster access to answers.
                             </li>
@@ -235,13 +235,13 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                 }
                 rightColumn={
                     <>
-                        <h2 className="mb-4">Save time resolving issues</h2>
+                        <h2 className="mb-6">Save time resolving issues</h2>
                         <ul>
-                            <li className="mb-3">
+                            <li className="mb-4">
                                 Sourcegraph helps development teams quickly identify, resolve, and proactively prevent
                                 issues from happening again.
                             </li>
-                            <li className="mb-3">
+                            <li className="mb-4">
                                 <Link
                                     href="/case-studies/indeed-accelerates-development-velocity"
                                     title="Indeed"
@@ -264,14 +264,14 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                 centerContent={true}
                 leftColumn={
                     <>
-                        <h2 className="mb-4">Gain insights and track progress</h2>
+                        <h2 className="mb-6">Gain insights and track progress</h2>
                         <ul>
-                            <li className="mb-3">
+                            <li className="mb-4">
                                 Developers use insights to track migration and deprecation projects to completion and
                                 visualize version spread and security vulnerabilities, while leaders rely on analytics
                                 to make data-driven decisions and create clear success metrics for their teams.
                             </li>
-                            <li className="mb-3">
+                            <li className="mb-4">
                                 A <i>top hybrid multi-cloud provider</i> resolves security vulnerabilities 4x faster and
                                 measures progress each step of the way.
                             </li>
@@ -297,16 +297,16 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection>
-            <div className="tw-mx-auto max-w-800 md:tw-text-center">
+            <div className="mx-auto max-w-[800px] md:text-center">
                 <h2>Sourcegraph’s code intelligence platform is more than simply search.</h2>
 
-                <p className="my-5 max-w-md-450 md:tw-mx-auto">
+                <p className="my-8 max-w-[450px] md:mx-auto">
                     The platform drives velocity by helping development teams quickly get unblocked, save time resolving
                     issues, and gain insights to make better decisions.
                 </p>
 
                 <a
-                    className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
+                    className="btn btn-primary mt-8 block sm:inline-block"
                     href="https://signup.sourcegraph.com"
                     title="Start for free"
                     data-button-style={buttonStyle.primary}

@@ -38,7 +38,7 @@ interface Filters {
  * @param props.onClick - the click function
  */
 const Filter: FunctionComponent<Filter> = ({ text, checked = false, onClick }) => (
-    <div className="first-letter:tw-capitalize tw-mr-xs tw-mb-xs">
+    <div className="mr-xs mb-xs first-letter:capitalize">
         <Badge text={text} onClick={onClick} color="white-outlined" size="large" checked={checked} />
     </div>
 )
@@ -53,10 +53,10 @@ const Filter: FunctionComponent<Filter> = ({ text, checked = false, onClick }) =
  * @param props.resetFilterGroup - function to reset a filter gorup by title
  */
 const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters, setFilter, resetFilterGroup }) => (
-    <div className="md:tw-grid md:tw-grid-cols-12 first-of-type:tw-mb-xs">
-        <h6 className="tw-mb-xs md:tw-mb-0 md:tw-mr-5xl md:tw-col-span-2 lg:tw-whitespace-nowrap">{title}</h6>
+    <div className="first-of-type:mb-xs md:grid md:grid-cols-12">
+        <h6 className="mb-xs md:col-span-2 md:mb-0 md:mr-5xl lg:whitespace-nowrap">{title}</h6>
 
-        <div className="tw-flex tw-flex-wrap md:tw-col-span-10">
+        <div className="flex flex-wrap md:col-span-10">
             {filters.map(filter => (
                 <Filter
                     key={filter.text}
@@ -91,8 +91,8 @@ export const Filters: FunctionComponent<Filters> = ({
     resetFilterGroups,
     disabledClear,
 }) => (
-    <div className="tw-bg-gray-50 tw-py-3xl tw-px-sm">
-        <div className="tw-flex tw-max-w-[1062px] tw-mx-auto">
+    <div className="bg-gray-50 py-3xl px-sm">
+        <div className="mx-auto flex max-w-[1062px]">
             <div>
                 {groups
                     .sort((a, b) => (a.title > b.title ? 1 : -1))
@@ -108,16 +108,16 @@ export const Filters: FunctionComponent<Filters> = ({
             </div>
 
             <div
-                className={classNames('tw-mb-sm tw-whitespace-nowrap', {
-                    'tw-text-blurple-400 tw-cursor-pointer': !disabledClear,
-                    'tw-text-gray-300': disabledClear,
+                className={classNames('mb-sm whitespace-nowrap', {
+                    'cursor-pointer text-blurple-400': !disabledClear,
+                    'text-gray-300': disabledClear,
                 })}
                 onClick={() => !disabledClear && resetFilterGroups()}
                 onKeyDown={() => !disabledClear && resetFilterGroups()}
                 role={(!disabledClear && 'button') || undefined}
                 tabIndex={0}
             >
-                <CloseCircleOutlineIcon size={24} className="tw-inline tw-mr-1 tw-align-top" />
+                <CloseCircleOutlineIcon size={24} className="mr-1 inline align-top" />
                 Clear
             </div>
         </div>

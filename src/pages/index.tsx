@@ -6,7 +6,7 @@ import Link from 'next/link'
 import {
     ContentSection,
     CoreFeatures,
-    CtaSection,
+    CallToActionContentSection,
     Layout,
     IntegrationsSection,
     CustomerLogos,
@@ -24,16 +24,17 @@ const Home: FunctionComponent = () => (
                 "Big codebases are less painful with Sourcegraph's code intelligence: universal code search+nav and large-scale fixes/refactors.",
         }}
         heroAndHeaderClassName="sg-bg-gradient-purple"
-        className="navbar-transparent tw-text-white"
+        headerColorTheme="purple"
+        className="bg-violet-750"
         hero={<HomeHero />}
     >
         <ContentSection background="white">
-            <div className="tw-mx-auto tw-text-center max-w-700">
-                <h2 className="tw-mb-2">
+            <div className="mx-auto max-w-[700px] text-center">
+                <h2 className="mb-2">
                     Over{' '}
                     <Link
                         href="/case-studies"
-                        className="tw-text-violet-400"
+                        className="text-violet-400"
                         title="1.8 million engineers"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.hero}
@@ -63,26 +64,24 @@ const Home: FunctionComponent = () => (
 
         <IntegrationsSection />
 
-        <CtaSection />
+        <CallToActionContentSection />
     </Layout>
 )
 
 const HomeHero: FunctionComponent = () => (
-    <div>
-        <div className="tw-px-sm tw-mx-auto tw-pt-md md:tw-pt-2xl tw-text-center">
-            <h1 className="tw-text-4xl tw-leading-10 sm:tw-text-6xl md:tw-text-[3.5rem] lg:tw-text-[4rem] lg:tw-leading-[1]">
-                <span className="mb-2 tw-text-transparent sg-bg-gradient-purple-white tw-bg-clip-text">
-                    Find. Fix. Flow.
-                </span>
+    <div className="text-white">
+        <div className="mx-auto px-sm pt-md text-center md:pt-2xl">
+            <h1 className="text-4xl leading-10 sm:text-6xl md:text-[3.5rem] lg:text-[4rem] lg:leading-[1]">
+                <span className="sg-bg-gradient-purple-white mb-2 bg-clip-text text-transparent">Find. Fix. Flow.</span>
             </h1>
 
-            <Heading size="h5" as="h2" className="tw-my-md tw-mx-auto tw-max-w-4xl !tw-font-normal">
+            <Heading size="h5" as="h2" className="my-md mx-auto max-w-4xl !font-normal">
                 Big codebases are less painful with Sourcegraph's&nbsp;code&nbsp;intelligence:
                 <br />
                 universal&nbsp;code&nbsp;search+nav and large-scale&nbsp;fixes/refactors.
             </Heading>
 
-            <p className="tw-text-gray-200 tw-my-md">
+            <p className="my-md text-gray-200">
                 Works&nbsp;alongside your code&nbsp;host and editor.
                 <br />
                 Built on{' '}
@@ -90,7 +89,7 @@ const HomeHero: FunctionComponent = () => (
                     href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph"
                     target="_blank"
                     rel="noreferrer"
-                    className="tw-text-inherit tw-underline tw-decoration-1 tw-decoration-[#ffffff55] tw-decoration-dotted tw-underline-offset-4"
+                    className="text-inherit underline decoration-[#ffffff55] decoration-dotted decoration-1 underline-offset-4"
                 >
                     open source
                 </a>
@@ -105,13 +104,13 @@ const HomeHero: FunctionComponent = () => (
                 size="lg"
             />
         </div>
-        <SolidColorBottomHalfSection className="tw-mt-2xl tw-rounded-lg" bottomHalfClassName="tw-bg-white">
-            <div className="tw-mx-sm">
+        <SolidColorBottomHalfSection className="mt-2xl rounded-lg" bottomHalfClassName="bg-white">
+            <div className="mx-sm">
                 <DemoVideo
                     video="homepage-demo-202301"
                     splash={true}
-                    className="tw-mx-auto w-100 tw-max-w-4xl tw-bg-violet-750 tw-rounded-lg"
-                    splashClassName="tw-rounded-lg"
+                    className="mx-auto w-full max-w-4xl rounded-lg bg-violet-750"
+                    splashClassName="rounded-lg"
                 />
             </div>
         </SolidColorBottomHalfSection>
@@ -123,11 +122,9 @@ const SolidColorBottomHalfSection: React.FunctionComponent<{
     bottomHalfClassName: string
     children: React.ReactNode
 }> = ({ className, bottomHalfClassName, children }) => (
-    <div className={classNames('tw-relative', className)}>
-        <div
-            className={classNames('tw-absolute tw-bottom-0 tw-left-0 tw-right-0 tw-h-1/2 tw-z-0', bottomHalfClassName)}
-        />
-        <div className="tw-z-10 tw-sticky">{children}</div>
+    <div className={classNames('relative', className)}>
+        <div className={classNames('absolute bottom-0 left-0 right-0 z-0 h-1/2', bottomHalfClassName)} />
+        <div className="sticky z-10">{children}</div>
     </div>
 )
 

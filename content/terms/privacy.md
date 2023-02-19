@@ -11,7 +11,7 @@ At Sourcegraph, Inc. (**"Sourcegraph," "we," "our,"** or **"us"**), we value the
 
 Capitalized terms that are not defined in this Privacy Policy have the meaning given them in our <a href="/terms">Terms of Service</a>.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## Short version
 
@@ -22,7 +22,7 @@ Capitalized terms that are not defined in this Privacy Policy have the meaning g
 - We use cookies to provide, protect, and promote our own products. ([read more](#cookies))
 - You can exercise your rights under privacy laws. ([read more](#global-privacy-practices))
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## What is Sourcegraph’s business model?
 
@@ -30,7 +30,7 @@ Capitalized terms that are not defined in this Privacy Policy have the meaning g
 
 We make money through paid subscriptions to use our Services. We do not sell your information.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## What information do we collect, and for what purpose
 
@@ -121,7 +121,7 @@ Sourcegraph does not intentionally collect “Sensitive Personal Information,”
 
 We do not intentionally collect any Personal Information that is stored in your repositories or other free-form content inputs. Any Personal Information within a user's repository is the responsibility of the repository owner.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## Bases for processing your information
 
@@ -135,7 +135,7 @@ Where laws like GDPR govern our processing of your Personal Information, Sourceg
 
 **Consent:** We may rely on your consent to use your personal information for certain direct marketing purposes, such as sending you newsletter updates about Sourcegraph products. You may withdraw your consent at any time through the unsubscribe feature provided with each marketing email or by contacting us at the address given at the end of this Privacy Policy.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## Does Sourcegraph review my repository contents?
 
@@ -157,7 +157,7 @@ If you have a private repository on Sourcegraph Cloud or a Sourcegraph managed i
 
 We may scan our servers and content to detect certain tokens or security signatures of known active malware, known vulnerabilities in dependencies, or other content known to violate our Terms of Service, based on algorithmic fingerprinting techniques (collectively, "automated scanning").
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## Does Sourcegraph share my information?
 
@@ -199,7 +199,7 @@ From time to time, we may share information about product announcements, product
 
 Sourcegraph users will continue to receive transactional messages related to your use of our Services such as account management, technical, and security notices, even if you unsubscribe from promotional emails.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## Third-party tracking and online advertising
 
@@ -215,7 +215,7 @@ You may also be able to limit certain interest-based mobile advertising through 
 
 **Google Analytics and Advertising**. We may also utilize certain forms of display advertising and other advanced features through Google Analytics, such as Remarketing with Google Analytics, Google Display Network Impression Reporting, and Google Analytics Demographics and Interest Reporting. These features enable us to use first-party cookies (such as the Google Analytics cookie) and third-party cookies to inform, optimize, and display ads based on your past visits to the Sites. You may control your advertising preferences or opt-out of certain Google advertising products by visiting the Google Ads Preferences Manager, currently available at https://google.com/ads/preferences, or by vising NAI’s online resources at http://www.networkadvertising.org/choices.Google provides further information about its own privacy practices and offers a browser add-on to opt out of Google Analytics tracking at https://tools.google.com/dlpage/gaoptout.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## Global privacy practices
 
@@ -245,7 +245,7 @@ Additional rights that may apply to you in certain instances:
 
 To exercise your privacy rights, you can contact us directly at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## Data storage, security, deletion, and retention
 
@@ -275,7 +275,7 @@ You can remove your Personal Information from Sourcegraph at any time by deletin
 
 For questions about reviewing, modifying, or deleting your account information, contact us at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## Children's privacy
 
@@ -283,7 +283,7 @@ For questions about reviewing, modifying, or deleting your account information, 
 
 Sourcegraph does not knowingly collect or solicit any information from anyone under the age of 13 or knowingly allow such persons to register as Users. If you are based in the European Union, we will not knowingly collect your information if you are under the age of 16. Different countries may have different minimum age limits. If you are below the minimum age for providing consent for data collection in your country, you may not have a Sourcegraph account. In the event that we learn that we have collected personal information from a child under age 13 or the applicable minimum age limit, we will delete that information as quickly as possible. If you believe that we might have any information from a child under 13 or otherwise under the applicable minimum age limit, please contact us at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## Links to other web sites and services
 
@@ -291,7 +291,7 @@ Sourcegraph does not knowingly collect or solicit any information from anyone un
 
 Our Service may integrate with or contain links to other third-party sites and services. We are not responsible for the practices employed by third-party websites or services embedded in, linked to, or linked from the Service and your interactions with any third-party website or service are subject to that third-party's own rules and policies.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## How to contact us
 
@@ -299,7 +299,7 @@ Our Service may integrate with or contain links to other third-party sites and s
 
 If you have any questions about this Privacy Policy or the Service, please contact us at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
 
 ## Changes to our privacy policy
 

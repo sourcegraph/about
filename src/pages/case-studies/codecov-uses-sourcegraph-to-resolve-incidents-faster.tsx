@@ -51,7 +51,7 @@ export const CaseStudy: FunctionComponent = () => (
     >
         <NewCaseStudyLayout customer="Codecov">
             <ContentSection background="white" slimWidth={true}>
-                <div className="tw-mx-auto">
+                <div className="mx-auto">
                     <Blockquote
                         quote="Sourcegraph allows us to be more efficient with our time, whether it's code review, answering security-related questions from clients, or searching for things in the code much more easily than we could through our code host's native search functionality."
                         author="Jeff Holland, Lead Security Engineer at Codecov"
@@ -107,8 +107,8 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection background="white" slimWidth={true}>
-                <div className="tw-mx-auto tw-pt-5xl">
-                    <p className="tw-pt-3xl sm:tw-mt-0 tw-mt-5xl">
+                <div className="mx-auto pt-5xl">
+                    <p className="mt-5xl pt-3xl sm:mt-0">
                         In 2021, security engineers Mitchell Borrego and Jeff Holland joined Codecov with the goal of
                         creating a cutting-edge security program. Their responsibilities include security tooling,
                         compliance, and code review from a security perspective. Working with Jerrod Engelberg, CEO of
@@ -120,7 +120,7 @@ export const CaseStudy: FunctionComponent = () => (
                         from clients, or searching for things in the code more easily than we could through other
                         tools.”
                     </p>
-                    <h3 className="mt-6 mb-4 max-w-600">
+                    <h3 className="mt-16 mb-6 max-w-[600px]">
                         Codecov reduced time to resolution with 100% confidence when facing Log4j
                     </h3>
                     <p>
@@ -171,7 +171,7 @@ export const CaseStudy: FunctionComponent = () => (
                         floundering around trying to use other code search tools.”
                     </p>
 
-                    <h3 className="mt-6 mb-4">Codecov makes code review secure and comprehensive</h3>
+                    <h3 className="mt-16 mb-6">Codecov makes code review secure and comprehensive</h3>
                     <p>
                         When he's not responding to the latest vulnerability, one of Mitchell's primary responsibilities
                         is performing security reviews on PRs and ensuring that other developers don't accidentally
@@ -193,7 +193,7 @@ export const CaseStudy: FunctionComponent = () => (
                         that nothing is getting past me.”
                     </p>
 
-                    <div className="tw-py-5xl">
+                    <div className="py-5xl">
                         <Blockquote
                             quote="With Sourcegraph, onboarding is certainly faster and certainly better. It provided a significant value to us in understanding our codebase at large."
                             author="Mitchell Borrego, Security Engineer, Codecov"
@@ -201,7 +201,7 @@ export const CaseStudy: FunctionComponent = () => (
                         />
                     </div>
 
-                    <h3 className="mb-4">
+                    <h3 className="mb-6">
                         Codecov speeds up developer onboarding and saves senior developers time and effort
                     </h3>
                     <p>
@@ -237,8 +237,8 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection background="white" slimWidth={true}>
-                <div className="tw-mx-auto">
-                    <h3 className="mb-4 max-w-650">Sourcegraph Cloud was the right fit for a growing team</h3>
+                <div className="mx-auto">
+                    <h3 className="mb-6 max-w-[650px]">Sourcegraph Cloud was the right fit for a growing team</h3>
                     <p>
                         Codecov wanted something they could get up and running quickly, so they turned to Sourcegraph
                         Cloud.
@@ -255,7 +255,7 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
                 </div>
 
-                <div className="tw-mt-5xl">
+                <div className="mt-5xl">
                     <StaffSpotlight
                         customer="Codecov"
                         about={

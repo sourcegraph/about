@@ -12,22 +12,22 @@ const Demo: FunctionComponent = () => (
         }}
         heroAndHeaderClassName="sg-bg-gradient-venus"
         hero={
-            <div className="container tw-pt-3xl tw-pb-lg">
+            <div className="container mx-auto pt-3xl pb-lg">
                 <h1>Schedule a demo with a product expert</h1>
             </div>
         }
     >
-        <div className="container tw-pt-xl">
-            <div className="row">
-                <div className="mt-2 col-lg-6 tw-pr-md">
-                    <p className="mb-5">
+        <div className="container mx-auto pt-xl">
+            <div className="grid grid-cols-1 gap-md lg:grid-cols-2">
+                <div>
+                    <p className="mb-8">
                         Want to see Sourcegraph in action and speak with a product expert? Fill out the form below, and
                         we'll be in touch.
                     </p>
                     <HubSpotForm masterFormName="contactMulti" chiliPiper={true} />
                 </div>
-                <div className="col-lg-6">
-                    <DemoVideo video="homepage-demo-202301" className="my-4" />
+                <div>
+                    <DemoVideo video="homepage-demo-202301" className="my-6" />
                 </div>
             </div>
         </div>

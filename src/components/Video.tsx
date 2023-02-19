@@ -35,7 +35,7 @@ export const Video: FunctionComponent<Video> = ({
 }) => (
     <figure>
         <video
-            className="tw-w-full tw-drop-shadow-xl"
+            className="w-full drop-shadow-xl"
             width={1280}
             height={720}
             autoPlay={autoPlay}
@@ -51,11 +51,11 @@ export const Video: FunctionComponent<Video> = ({
             <source type="video/mp4" src={`${hosts[host]}${source.mp4}.mp4`} data-cookieconsent="ignore" />
         </video>
         {caption && (
-            <figcaption className="tw-mt-3">
+            <figcaption className="mt-3">
                 {link ? (
-                    <a href={link} className="tw-not-italic tw-font-normal tw-flex">
+                    <a href={link} className="flex font-normal not-italic">
                         {caption}
-                        {linkIcon && <OpenInNewIcon className="tw-ml-xxs tw-my-auto" size={18} />}
+                        {linkIcon && <OpenInNewIcon className="my-auto ml-xxs" size={18} />}
                     </a>
                 ) : (
                     caption

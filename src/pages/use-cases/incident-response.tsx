@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 import {
     ContentSection,
-    CtaSection,
+    CallToActionContentSection,
     CustomCarousel,
     CustomerLogos,
     Hero,
@@ -17,11 +17,12 @@ import {
     ThreeUpText,
 } from '../../components'
 import { StandardCallToAction } from '../../components/cta/StandardCallToAction'
+import { UseCasePageCallToAction } from '../../components/cta/UseCasePageCallToAction'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h3 className="tw-mb-8 lg:tw-mb-0">{header}</h3>
+        <h3 className="mb-8 lg:mb-0">{header}</h3>
         {text}
     </>
 )
@@ -33,7 +34,7 @@ const items = [
             <CarouselItem
                 header="Response to incidents faster"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         No heroics required: Quickly understand all the context and dependencies around your codebase
                         with{' '}
                         <Link
@@ -68,7 +69,7 @@ const items = [
             <CarouselItem
                 header="Limit the impact of incidents"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         Automate the deployment of fixes everywhere and at scale. With{' '}
                         <Link
                             href="/batch-changes"
@@ -93,7 +94,7 @@ const items = [
             <CarouselItem
                 header="Track remediation progress"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         Visualize fixes in progress and track their deployment. With{' '}
                         <Link
                             href="/code-insights"
@@ -117,7 +118,7 @@ const items = [
             <CarouselItem
                 header="Monitor for unsafe code"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         Close the loop on your incident response efforts. After finding the root cause, use{' '}
                         <a
                             href="https://docs.sourcegraph.com/code_monitoring"
@@ -196,19 +197,19 @@ const blogResourceItems = [
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <MagnifyIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Assess incidents quickly',
         description:
             "Pinpoint the code responsible for the incident and find the root cause in your codebase. Understand the code's functionality to verify the issue.",
     },
     {
-        icon: <ClockTimeThreeOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <ClockTimeThreeOutlineIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Plan your remediation',
         description:
             'Reduce time to resolution by supplying response teams with actionable details, like links to all affected code.',
     },
     {
-        icon: <WebIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <WebIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Execute your plan globally',
         description:
             "Fix the root cause and confirm the same issue doesn't reoccur in other areas by locating the code pattern and automating fixes across your entire codebase.",
@@ -222,7 +223,7 @@ const IncidentResponsePage: FunctionComponent = () => (
             description:
                 'Identify the root cause of an incident, understand its potential impact, fix the issue everywhere in your codebase. Incident response from Sourcegraph.',
         }}
-        className="use-cases-page navbar-light"
+        className="use-cases-page"
         hero={
             <Hero
                 variant="lightNebulousVenus2"
@@ -252,47 +253,19 @@ const IncidentResponsePage: FunctionComponent = () => (
             <QuoteCarousel items={quoteCarouselItems} />
         </ContentSection>
 
-        <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
-                <div className="mb-5 tw-mx-auto tw-flex tw-flex-col tw-text-center max-w-600">
-                    <h2 className="">Get started with Sourcegraph</h2>
-                    <p>
-                        Respond to incidents with confidence and speed, and remediate issues at their root to ensure
-                        they don't reoccur.
-                    </p>
-                </div>
-                <div className="tw-px-0 tw-text-center col-12">
-                    <a
-                        className="btn btn-primary max-w-350 w-100"
-                        href="https://signup.sourcegraph.com"
-                        title="Start for free"
-                        data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Start for free
-                    </a>
-                    <Link
-                        href="/use-cases"
-                        className="mt-4 tw-flex tw-justify-center "
-                        title="Explore other use cases"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Explore other use cases
-                    </Link>
-                </div>
-            </div>
-
-            <div className="tw-mt-4xl">
+        <ContentSection parentClassName="bg-gray-100">
+            <UseCasePageCallToAction
+                text="Respond to incidents with confidence and speed, and remediate issues at their root to ensure they don't reoccur."
+                buttonLocation={buttonLocation.body}
+            />
+            <div className="mt-4xl">
                 <CustomerLogos />
             </div>
         </ContentSection>
 
         <ResourceList items={blogResourceItems} />
 
-        <CtaSection />
+        <CallToActionContentSection />
     </Layout>
 )
 

@@ -7,7 +7,7 @@ export { Blockquote } from './Blockquote'
 export { BoardSection } from './BoardSection'
 export { ContentSection } from './ContentSection'
 export { CoreFeatures } from './CoreFeatures'
-export { CtaSection } from './CtaSection'
+export { CallToActionContentSection } from './cta/CallToActionContentSection'
 export { CustomerLogos } from './CustomerLogos'
 export { DemioForm } from './DemioForm'
 export { Figure } from './Figure'
@@ -58,7 +58,6 @@ export {
 
 // Layouts
 export { Layout } from './Layout/Layout'
-export { WhitePaperPage } from './WhitePaperPage'
 export { ContentPage } from './ContentPage'
 export { GatedResourceLayout } from './GatedResourceLayout' // Webinars, Guides, Reports
 

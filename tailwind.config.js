@@ -144,6 +144,7 @@ module.exports = {
        */
       screens: {
         xs: '480px',
+        md: '830px',
       },
 
       spacing: {
@@ -187,17 +188,6 @@ module.exports = {
       },
     },
   },
-
-  /**
-   * This prefix is added before Tailwind classes so we can progressively
-   * remove Bootstrap without any class name conflicts.
-   *
-   * TODO: Remove this once Bootstrap is removed completely
-   */
-  prefix: 'tw-',
-
-  // Remove this when Bootstrap and custom CSS tech debt is removed completely
-  important: true,
 
   plugins: [
     plugin(({ addBase }) => {

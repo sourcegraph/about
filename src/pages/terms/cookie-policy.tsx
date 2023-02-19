@@ -12,7 +12,7 @@ const CookiePolicy: FunctionComponent = () => (
     >
         <ContentPage title="Sourcegraph cookie policy" description="How we use cookies.">
             <ContentSection>
-                <div className="content-page__body text-dark">
+                <div className="text-black">
                     <script
                         id="CookieDeclaration"
                         data-cbid="fb31dc3e-afb3-4be8-ae84-7090bba7797d"

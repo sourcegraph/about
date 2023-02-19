@@ -3,7 +3,7 @@ import path from 'path'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import { Layout, BlogHeader, BLOG_TYPE_TO_INFO, CtaSection } from '../../components'
+import { Layout, BlogHeader, BLOG_TYPE_TO_INFO, CallToActionContentSection } from '../../components'
 import { Post, POST_TYPE_TO_COMPONENT, postType, urlToPost } from '../../interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '../../lib'
 
@@ -38,23 +38,23 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
     return (
         <Layout meta={meta}>
             <article>
-                <div className="container-lg">
+                <div className="mx-auto px-sm lg:container">
                     <BlogHeader {...blogInfo} />
                 </div>
-                <div className="mt-5 bg-white post-template">
-                    <div className="tw-max-w-screen-xl tw-mx-auto">
+                <div className="mt-8 bg-white">
+                    <div className="mx-auto max-w-screen-xl">
                         <PostTemplate
                             post={post}
                             content={content}
                             url={urlToPost(post)}
-                            className="tw-mx-auto post-template__post blog-post tw-max-w-[840px]"
-                            headerClassName="card-header bg-white border-bottom-0 tw-text-center tw-pt-md"
+                            className="mx-auto max-w-[840px]"
+                            headerClassName="bg-white border-b-0 text-center pt-md pb-sm"
                         />
                     </div>
                 </div>
             </article>
 
-            <CtaSection />
+            <CallToActionContentSection />
         </Layout>
     )
 }

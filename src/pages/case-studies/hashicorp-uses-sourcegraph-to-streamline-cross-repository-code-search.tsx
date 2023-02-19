@@ -50,7 +50,7 @@ export const CaseStudy: FunctionComponent = () => (
     >
         <NewCaseStudyLayout customer="HashiCorp">
             <ContentSection background="white" slimWidth={true}>
-                <div className="tw-mx-auto">
+                <div className="mx-auto">
                     <Blockquote
                         quote="By its nature and capabilities, Sourcegraph can be a tool to reduce friction, speed up feedback loops, and improve developer velocity."
                         author="Bryce Kalow, Senior Web Engineer, HashiCorp"
@@ -107,8 +107,8 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection background="white" slimWidth={true}>
-                <div className="tw-mx-auto tw-pt-5xl">
-                    <p className="tw-pt-3xl sm:tw-pt-5xl sm:tw-mt-0 tw-mt-5xl">
+                <div className="mx-auto pt-5xl">
+                    <p className="mt-5xl pt-3xl sm:mt-0 sm:pt-5xl">
                         Every day, millions of developers and DevOps engineers rely on HashiCorp to efficiently
                         provision, manage, and secure their cloud infrastructure.{' '}
                         <a
@@ -237,7 +237,7 @@ export const CaseStudy: FunctionComponent = () => (
                         <li>Eliminating unused code and technical debt</li>
                         <li>Driving adoption of a new component library</li>
                     </ol>
-                    <h3 className="mt-6 mb-4 max-w-600">
+                    <h3 className="mt-16 mb-6 max-w-[600px]">
                         HashiCorp saves time managing dependencies across multiple web properties
                     </h3>
                     <p>
@@ -280,7 +280,7 @@ export const CaseStudy: FunctionComponent = () => (
                         means we have more time to focus on useful work, like building a new component library.”
                     </p>
 
-                    <h3 className="mt-6 mb-4">Web team accelerates developer velocity by an estimated 4X</h3>
+                    <h3 className="mt-16 mb-6">Web team accelerates developer velocity by an estimated 4X</h3>
                     <p>
                         Bryce’s team maintains a dozen different websites spread across different repositories. These
                         sites include hashicorp.com and each product’s reference documentation site. A major pain point
@@ -312,7 +312,7 @@ export const CaseStudy: FunctionComponent = () => (
                         for changes impacting all apps by a factor of four.
                     </p>
 
-                    <div className="tw-py-5xl">
+                    <div className="py-5xl">
                         <Blockquote
                             quote="Folks always want to address tech debt but rarely can make time for it. Sourcegraph gives us the ability to not just find tech debt, but really pinpoint it and then make it clear where it exists and how to address it at a high level."
                             author="Bryce Kalow, Senior Web Engineer, HashiCorp"
@@ -320,7 +320,7 @@ export const CaseStudy: FunctionComponent = () => (
                         />
                     </div>
 
-                    <h3 className="mb-4">Visibility into code usage reduces technical debt</h3>
+                    <h3 className="mb-6">Visibility into code usage reduces technical debt</h3>
                     <p>
                         Like virtually all engineering organizations, HashiCorp’s Web Platform team fights a continual
                         battle with tech debt. According to Bryce, Sourcegraph was “transformative,” allowing the team
@@ -344,7 +344,7 @@ export const CaseStudy: FunctionComponent = () => (
                         level.”
                     </p>
 
-                    <h3 className="mt-6 mb-4">Creating a new component library</h3>
+                    <h3 className="mt-16 mb-6">Creating a new component library</h3>
                     <p>
                         The Web Platform team is building an open-source component library for Next.js called Swingset.
                         Bryce explains, “Our applications are already using Swingset. It enables us to document our
@@ -366,7 +366,7 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection background="white">
-                <div className="tw-max-w-4xl tw-mx-auto">
+                <div className="mx-auto max-w-4xl">
                     <StaffSpotlight
                         customer="HashiCorp"
                         about={

@@ -14,7 +14,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/typeform-x-b
 ---
 
 <p
-className="tw-max-w-lg tw-text-center"
+className="max-w-lg text-center"
 >
 <Figure
 src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-001.jpg"
@@ -35,7 +35,7 @@ Here at Typeform, we own more than four hundred active git repositories, and wit
 ## **Modifying 271 CI Pipelines with Bruno**
 
 <p
-className="tw-max-w-md tw-text-center"
+className="max-w-md text-center"
 >
 <Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-002.png"
@@ -117,7 +117,7 @@ Our second experience with the Batch Changes feature was led by David Salvador:
 ## **Improving overall security with David**
 
 <p
-className="tw-max-w-lg tw-text-center"
+className="max-w-lg text-center"
 >
 <Figure
 src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-005.jpg"

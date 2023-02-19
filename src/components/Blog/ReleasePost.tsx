@@ -9,6 +9,8 @@ import { buttonStyle, buttonLocation } from '../../data/tracking'
 import { PostComponentProps } from '../../interfaces/posts'
 import { formatDate } from '../../util'
 
+import styles from './ReleasePost.module.css'
+
 type ReleaseComponents = import('mdx/types').MDXComponents
 const components = { Alert, Badge, Figure, OpenInNewIcon, Video, YouTube }
 
@@ -30,41 +32,40 @@ export const ReleasePost: FunctionComponent<Props> = ({
     const body = (
         <>
             {content && (
-                <div className="card-body release-post__body">
+                <div className={`${styles.body} p-sm`}>
                     <MDXRemote {...content} components={components as ReleaseComponents} />
                 </div>
             )}
 
             {frontmatter.changelogItems?.length ? (
                 <div>
-                    <h3 className="tw-pt-sm tw-pb-xxs m-0 card-body release-post__changelog-header">
-                        Changelog highlights
-                    </h3>
+                    <h3 className={`m-0 pt-sm pb-xxs ${styles['changelog-header']}`}>Changelog highlights</h3>
 
-                    <div className="tw-border-y tw-border-solid tw-border-gray-200 list-group list-group-flush">
+                    <ol className="ml-0 list-none border-y border-solid border-gray-200">
                         {frontmatter.changelogItems?.map(({ url, category, description }) => (
-                            <a
-                                href={url}
-                                className="release-post__item md:tw-flex list-group-item list-group-item-action"
-                                key={url}
-                                title={`${category}: ${description}`}
-                                data-button-style={buttonStyle.text}
-                                data-button-location={buttonLocation.body}
-                                data-button-type="cta"
-                            >
-                                <span className="mb-2 release-post__item-category mb-md-0">
-                                    <span className="release-post__item-category-badge">{category}</span>
-                                </span>
-                                <span className="release-post__item-description">{description}</span>
-                            </a>
+                            <li key={url} className="m-0 bg-white p-0 [&:not(:last-child)]:border-b-1">
+                                <a
+                                    href={url}
+                                    className={`${styles.item} block px-xs py-xxs text-black md:flex`}
+                                    title={`${category}: ${description}`}
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
+                                    <span className={`mb-2 ${styles['item-category']} block md:mb-0 md:inline`}>
+                                        <Badge text={category} breakWords={false} size="large" color="white-outlined" />
+                                    </span>
+                                    <span className={styles['item-description']}>{description}</span>
+                                </a>
+                            </li>
                         ))}
-                    </div>
+                    </ol>
 
-                    <ul className="tw-mb-0 tw-py-4 tw-flex-wrap tw-list-none tw-flex-col md:tw-flex-row md:tw-flex">
+                    <ul className="mb-0 list-none flex-col flex-wrap py-4 md:flex md:flex-row">
                         <li>
                             <a
                                 href="https://docs.sourcegraph.com/admin/install"
-                                className="tw-text-gray-400"
+                                className="text-gray-400"
                                 title="How to install"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
@@ -76,7 +77,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                         <li>
                             <a
                                 href="https://docs.sourcegraph.com/admin/updates"
-                                className="tw-text-gray-400"
+                                className="text-gray-400"
                                 title="How to upgrade"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
@@ -85,11 +86,11 @@ export const ReleasePost: FunctionComponent<Props> = ({
                                 How to upgrade
                             </a>
                         </li>
-                        <li className="tw-flex-1" />
+                        <li className="flex-1" />
                         <li>
                             <a
                                 href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
-                                className="tw-text-gray-400"
+                                className="text-gray-400"
                                 title="Full changelog"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
@@ -100,7 +101,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                         </li>
                     </ul>
 
-                    <div className="card-body release-post__body">
+                    <div className={styles.body}>
                         * Please{' '}
                         <Link
                             href="/demo"
@@ -116,11 +117,11 @@ export const ReleasePost: FunctionComponent<Props> = ({
                     </div>
                 </div>
             ) : (
-                <ul className="tw-border-t tw-mt-md tw-mb-0 tw-py-4 tw-flex-wrap tw-list-none tw-flex-col md:tw-flex-row md:tw-flex">
+                <ul className="mt-md mb-0 list-none flex-col flex-wrap border-t py-4 md:flex md:flex-row">
                     <li>
                         <a
                             href="https://docs.sourcegraph.com/admin/install"
-                            className="tw-text-gray-400"
+                            className="text-gray-400"
                             title="How to install"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
@@ -132,7 +133,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                     <li>
                         <a
                             href="https://docs.sourcegraph.com/admin/updates"
-                            className="tw-text-gray-400"
+                            className="text-gray-400"
                             title="How to upgrade"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
@@ -141,11 +142,11 @@ export const ReleasePost: FunctionComponent<Props> = ({
                             How to upgrade
                         </a>
                     </li>
-                    <li className="tw-flex-1" />
+                    <li className="flex-1" />
                     <li>
                         <a
                             href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
-                            className="tw-text-gray-400"
+                            className="text-gray-400"
                             title="Full changelog"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
@@ -160,13 +161,13 @@ export const ReleasePost: FunctionComponent<Props> = ({
     )
 
     return (
-        <Tag className={`release-post ${className}`}>
-            <header className={`release-post__header ${headerClassName}`}>
+        <Tag className={className}>
+            <header className={headerClassName}>
                 <h1 className={titleClassName}>
                     {renderTitleAsLink === true ? (
                         <Link
                             href={url}
-                            className="tw-block"
+                            className="block"
                             title={frontmatter.title}
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
@@ -180,13 +181,13 @@ export const ReleasePost: FunctionComponent<Props> = ({
                 </h1>
 
                 {frontmatter.publishDate && (
-                    <time className="tw-text-gray-400" dateTime={frontmatter.publishDate}>
+                    <time className="text-gray-400" dateTime={frontmatter.publishDate}>
                         {formatDate(frontmatter.publishDate)}
                     </time>
                 )}
             </header>
 
-            <div className="card-body">{body}</div>
+            {body}
         </Tag>
     )
 }

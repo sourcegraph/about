@@ -1,0 +1,34 @@
+.description {
+    margin-bottom: 0;
+}
+
+.changelog-header {
+    font-size: 80%;
+    font-weight: normal;
+    color: var(--sg-color-gray-400);
+    text-transform: uppercase;
+}
+
+.item-category {
+    flex: 0 0 20%;
+    max-width: 10rem;
+    padding-right: 1rem;
+}
+
+.item-description {
+    flex: 1;
+    min-width: 20rem;
+    color: var(--body-color);
+}
+.item-description p:last-child {
+    margin-bottom: 0;
+}
+
+.item:hover {
+    background-color: var(--sg-color-gray-100);
+    text-decoration: none;
+}
+
+.body > p:last-child {
+    margin-bottom: 0;
+}

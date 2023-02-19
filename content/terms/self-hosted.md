@@ -9,8 +9,8 @@ See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of self-hosted Sourcegraph instances.
 
-<div className="tw-break-words tw-bg-gray-100 tw-p-sm tw-mb-sm">
-  <span className="tw-text-blurple-400">
+<div className="break-words bg-gray-100 p-sm mb-sm">
+  <span className="text-blurple-400">
     ## Is this the right Terms of Service for me?
   </span>
 
@@ -29,7 +29,7 @@ Thank you for using Sourcegraph! This page lays out the basic terms and conditio
 
 PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION. THE AGREEMENT CONTAINS A MANDATORY INDIVIDUAL ARBITRATION AND CLASS ACTION/JURY TRIAL WAIVER PROVISION THAT REQUIRES THE USE OF ARBITRATION ON AN INDIVIDUAL BASIS TO RESOLVE DISPUTES, RATHER THAN JURY TRIALS OR CLASS ACTIONS.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
   ## 0. Table of contents
 </span>
 
@@ -116,7 +116,7 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
   </table>
 </TableWrapper>
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
   ## 1. Definitions
 </span>
 
@@ -142,11 +142,11 @@ As used on this page, the following terms have the following specific meanings:
 
 1.10 **“Your Code”** means the source code and all source code metadata (e.g. version control system (VCS) data) that you analyze via the Software.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
   ## 2. Account terms
 </span>
 
-<span className="tw-text-gray-400">
+<span className="text-gray-400">
   *__Short version__: You – or the organization you work for – is responsible for your instance and its security, as well as everything posted on it. You must be 18 or over to use our services.*
 </span>
 
@@ -158,11 +158,11 @@ As used on this page, the following terms have the following specific meanings:
 
 3. **Security**. You’re responsible for the security of your Instance when using our Software. While we may offer tools to help you maintain your Instance’s security, these are not guaranteed to work. You’re responsible for all Content posted on your Instance under your user account, even if you didn't post it. We have no liability of any kind for any loss or damage from your failure to secure your Instance.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
   ## 3. Acceptable use
 </span>
 
-<span className="tw-text-gray-400">
+<span className="text-gray-400">
   *__Short version__: You’re allowed to use Sourcegraph for any reasonable purposes (e.g., don’t try to re-sell it, don’t violate your license, etc.). If you post any comments or other content, you’re responsible for it, and we have the right to display it to other users per your settings. If you give us a great idea about how to improve our services, we can use it.*
 </span>
 
@@ -192,21 +192,21 @@ As used on this page, the following terms have the following specific meanings:
 
 3.8 **Trials**. We provide all Software offered on a trial or proof of concept (“**POC**”) basis as stated in an Order Form or web portal sign-up “as is” and without warranties or indemnity from us.  
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
   ## 4. Usage data
 </span>
 
-<span className="tw-text-gray-400">
+<span className="text-gray-400">
   *__Short version__: We have the right to collect Usage Data from self-hosted Sourcegraph instances, as described in our [Privacy Policy](/terms/privacy) and specifically listed in our [product documentation](https://docs.sourcegraph.com/admin/pings).*
 </span>
 
 We may collect Usage Data derived from your use of the Software to develop, improve, support, and operate our products. If we share or publicly disclose any information constituting or derived from Usage Data, we will aggregate or anonymize that information such that no personal data can be identified.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
   ## 5. Data protection
 </span>
 
-<span className="tw-text-gray-400">
+<span className="text-gray-400">
   *__Short version__: Our privacy policy tells you what you need to know about how we use any personal information you provide to us. The internet is a dangerous place and, while we’ve instituted safeguards to protect your information, you understand that data breaches happen and we can’t guarantee perfect security.*
 </span>
 
@@ -214,11 +214,11 @@ Data security and user privacy are very, VERY important to us. Please read our [
 
 As the Software is provided in the form of a self-hosted Instance, Sourcegraph will not have access to any of Your Code unless you include Your Code via email or other support channels to Sourcegraph. We have implemented, and the Software contains, commercially reasonable technical and organizational measures designed to secure Your Code and any other information you provide that is stored on your Instance (which we do not have access to), and any information that we do have access to (such as support emails you send to us, Usage Data, etc.), from accidental loss and from unauthorized access, use, alteration or disclosure. However, we cannot guarantee that unauthorized third parties will never be able to defeat those measures or use your information for improper purposes. You understand that internet technologies have the inherent potential for disclosure. 
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
   ## 6. Confidentiality
 </span>
 
-<span className="tw-text-gray-400">
+<span className="text-gray-400">
   *__Short version__: We will each protect the other party’s confidential information.*
 </span>
 
@@ -236,11 +236,11 @@ As the Software is provided in the form of a self-hosted Instance, Sourcegraph w
 
 6.3 **Restrictions on Use and Disclosure**. Neither party will use the other party's Confidential Information except as permitted under this Agreement. Each party agrees to maintain in confidence and protect the other party's Confidential Information using at least the same degree of care as it uses for its own information of a similar nature, but in any event at least a reasonable degree of care. Each party agrees to take all reasonable precautions to prevent any unauthorized disclosure of the other party's Confidential Information, including, without limitation, disclosing such Confidential Information only to its employees, independent contractors, consultants, and legal and financial advisors (collectively, **"Representatives"**) who (i) have a need to know such information, and (ii) are subject to confidentiality obligations at least as protective of the Confidential Information as the terms of this Agreement. Each party is responsible for all acts and omissions of its Representatives. The foregoing obligations will not restrict either party from disclosing Confidential Information of the other party if required by any governmental body, so long as, to the extent allowed under applicable law, the party required to make the disclosure gives reasonable notice to the other party to enable it to contest the requirement. The restrictions set forth in this Section will survive the termination or expiration of this Agreement. The terms of this Section 6 supersede any non-disclosure or confidentiality agreement entered into by the parties prior to the effective date of this Agreement.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
   ## 7. Term; Termination
 </span>
 
-<span className="tw-text-gray-400">
+<span className="text-gray-400">
   *__Short version__: You may shut down your instance any time. We may terminate the agreement at any time, at which point your right to use the software will immediately expire.*
 </span>
 
@@ -252,11 +252,11 @@ As the Software is provided in the form of a self-hosted Instance, Sourcegraph w
 
 7.4 **Effect of Termination; Survival**. Upon termination of this Agreement, you may no longer use the Software, and if any fees were owed prior to termination, you must pay those fees immediately. Any provisions of this Agreement that, by their terms or their nature, should survive the termination of this Agreement shall so survive. For purposes of clarity, your right to use the Software will not survive any termination of this Agreement.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
   ## 8. Fees
 </span>
 
-<span className="tw-text-gray-400">
+<span className="text-gray-400">
   *__Short version__: You’re responsible for any fees associated with your use of Sourcegraph. Your subscription will automatically renew, unless an Order Form states otherwise.*
 </span>
 
@@ -268,11 +268,11 @@ As the Software is provided in the form of a self-hosted Instance, Sourcegraph w
 
 8.4 **No Refunds**. All fees and charges are earned upon receipt by us and are nonrefundable unless negotiated otherwise, except (a) as expressly set forth herein, and/or (b) as required by applicable law.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
   ### **9. Maintenance; Warranties; disclaimer**
 </span>
 
-<span className="tw-text-gray-400">
+<span className="text-gray-400">
   *__Short version__: Other than the warranties explicitly set forth in this section, Sourcegraph is provided “as is” with no guarantees of any kind (unless applicable law provides you additional mandatory rights). Please read this section carefully.*
 </span>
 
@@ -284,11 +284,11 @@ OTHER THAN THE WARRANTIES EXPLICITLY SET FORTH IN THIS SECTION 10, THE SOFTWARE,
 
 CERTAIN JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS, EXCLUSIONS, OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS AS PROVIDED BY LAW.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
   ### **10. Limitation of liability**
 </span>
 
-<span className="tw-text-gray-400">
+<span className="text-gray-400">
   *__Short version__: Each party’s liability is limited to direct damages wherever possible, and to no more than $100 or the amount you paid us to access the software. Please read this section carefully.*
 </span>
 
@@ -296,11 +296,11 @@ EACH PARTY WILL BE LIABLE TO THE OTHER PARTY FOR DIRECT DAMAGES ONLY. THE FOLLOW
 
 EXCEPT WHERE PROHIBITED BY LAW OR FEES OWED EXCEED THE BELOW LIMIT, NEITHER PARTY’S TOTAL LIABILITY TO THE OTHER (AGGREGATED ACROSS ALL CLAIMS) WILL EXCEED YOUR ANNUAL LICENSE FEE IN THE SUBSCRIPTION YEAR IN WHICH THE UNDERLYING CLAIM AROSE OR ONE HUNDRED DOLLARS ($100), WHICHEVER IS GREATER.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
   ### **11. Indemnification**
 </span>
 
-<span className="tw-text-gray-400">
+<span className="text-gray-400">
   *__Short version__: Each of us agrees to defend the other against third-party lawsuits that result from matters under our respective responsibility.*
 </span>
 
@@ -310,21 +310,21 @@ EXCEPT WHERE PROHIBITED BY LAW OR FEES OWED EXCEED THE BELOW LIMIT, NEITHER PART
 
 11.3 **Procedure**. Each party must give the other prompt written notice of any defense or indemnity sought and reasonable cooperation in the defense. The defending party will have sole control of the defense and settlement, provided that neither party may enter into a settlement placing any material obligation of any kind, including any admission of liability or payment of any amount, on the other party without the other party’s prior written approval, not to be unreasonably withheld, conditioned, or delayed.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
   ### **12. Export controls**
 </span>
 
-<span className="tw-text-gray-400">
+<span className="text-gray-400">
   *__Short version__: Don’t use our site or software if you’re located in an embargoed country.*
 </span>
 
 The Software and the underlying information and technology may not be downloaded or otherwise exported or re-exported (a) into (or to a national or resident of) any country to which the U.S. has embargoed goods; or (b) to anyone on the U.S. Treasury Department’s list of Specially Designated Nationals or the U.S. Commerce Department’s Table of Deny Orders. By downloading or using the Software, you are agreeing to the foregoing and you represent and warrant that you are not located in, under the control of, or a national or resident of any such country or on any such list and you agree to comply with all export laws and other applicable laws.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
   ### **13. Governing law; arbitration; and class action/jury trial waiver**
 </span>
 
-<span className="tw-text-gray-400">
+<span className="text-gray-400">
   *__Short version__: If you're based in California like we are, the agreement is governed by California law, and all disputes must be brought there; otherwise, the Agreement is governed by New York law and disputes must be brought in New York. If you have a claim against us, you’ll work with us to arbitrate it on an individual basis instead of via class action or jury trial.*
 </span>
 
@@ -352,7 +352,7 @@ The Software and the underlying information and technology may not be downloaded
 
 13.3 **Class Action/Jury Trial Waiver**. WITH RESPECT TO ALL PERSONS AND ENTITIES, REGARDLESS OF WHETHER THEY HAVE OBTAINED OR USED THE SOFTWARE FOR PERSONAL, COMMERCIAL OR OTHER PURPOSES, ALL CLAIMS MUST BE BROUGHT IN THE PARTIES’ INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS ACTION, COLLECTIVE ACTION, PRIVATE ATTORNEY GENERAL ACTION OR OTHER REPRESENTATIVE PROCEEDING. THIS WAIVER APPLIES TO CLASS ARBITRATION, AND, UNLESS WE AGREE OTHERWISE, THE ARBITRATOR MAY NOT CONSOLIDATE MORE THAN ONE PERSON’S CLAIMS. YOU AGREE THAT, BY ENTERING INTO THE AGREEMENT, WE ARE EACH WAIVING THE RIGHT TO A TRIAL BY JURY OR TO PARTICIPATE IN A CLASS ACTION, COLLECTIVE ACTION, PRIVATE ATTORNEY GENERAL ACTION, OR OTHER REPRESENTATIVE PROCEEDING OF ANY KIND.
 
-<span className="tw-text-blurple-400">
+<span className="text-blurple-400">
   ### **14. Miscellaneous**
 </span>
 

@@ -11,10 +11,10 @@ const FixingVulnerabilities: FunctionComponent = () => (
                 "Search within and across repositories to find and fix vulnerabilities in minutes, and deploy fixes with confidence knowing you've found every instance of affected code.",
         }}
     >
-        <div className="container py-7">
-            <div className="row">
-                <div className="col-lg-6">
-                    <h1 className="mb-4">Find and fix security vulnerabilities faster</h1>
+        <div className="container mx-auto py-24">
+            <div className="grid grid-cols-1 gap-md lg:grid-cols-2">
+                <div>
+                    <h1 className="mb-6">Find and fix security vulnerabilities faster</h1>
                     <h4>You can't fix what you can't find</h4>
                     <p>
                         Search within and across your repositories to find and fix vulnerabilities in minutes, not
@@ -23,27 +23,27 @@ const FixingVulnerabilities: FunctionComponent = () => (
                         vulnerability-free.
                     </p>
 
-                    <div className="mt-5 max-w-400">
+                    <div className="mt-8 max-w-[400px]">
                         <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                     </div>
                 </div>
 
-                <div className="col-lg-6">
+                <div>
                     <YouTube
                         title="Finding and fixing vulnerabilities with Sourcegraph"
                         id="13OqKPXqZXo"
-                        className="mt-4 mt-lg-0"
+                        className="mt-lg-0 mt-6"
                     />
                 </div>
             </div>
         </div>
 
-        <div className="container tw-text-center py-7 max-w-650">
+        <div className="container mx-auto max-w-[650px] py-24 text-center">
             <h2>Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk.</h2>
 
-            <div className="tw-mx-auto mt-5 max-w-400">
+            <div className="mx-auto mt-8 max-w-[400px]">
                 <a
-                    className="mt-5 btn btn-primary tw-block sm:tw-inline-block"
+                    className="btn btn-primary mt-8 block sm:inline-block"
                     href="https://signup.sourcegraph.com"
                     title="Start for free"
                     data-button-style={buttonStyle.primary}

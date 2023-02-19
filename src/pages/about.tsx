@@ -41,10 +41,10 @@ const About: FunctionComponent = () => (
                 'The pace at which humans can write code is the main thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer.',
         }}
     >
-        <div className="bg-white content-page text-dark">
+        <div className="bg-white text-black">
             <ContentSection>
                 <h1>About Sourcegraph</h1>
-                <p className="tw-text-xl tw-max-w-4xl tw-mt-6">
+                <p className="mt-6 max-w-4xl text-xl">
                     Sourcegraph builds universal code search for every developer and company so they can innovate
                     faster. We help developers and companies with billions of lines of code create the software you use
                     every day.
@@ -52,8 +52,8 @@ const About: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection parentClassName="sg-bg-gradient-venus">
-                <h2 className="tw-mb-6">Learn all about Sourcegraph</h2>
-                <p className="tw-max-w-4xl">
+                <h2 className="mb-6">Learn all about Sourcegraph</h2>
+                <p className="max-w-4xl">
                     The{' '}
                     <a
                         href="https://handbook.sourcegraph.com"
@@ -119,8 +119,8 @@ const About: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection>
-                <h2 className="tw-mb-6">Sourcegraph team</h2>
-                <p className="tw-max-w-2xl">
+                <h2 className="mb-6">Sourcegraph team</h2>
+                <p className="max-w-2xl">
                     Sourcegraph is an{' '}
                     <a
                         href="https://handbook.sourcegraph.com/company/remote"
@@ -154,7 +154,7 @@ const About: FunctionComponent = () => (
                     .
                 </p>
                 <a
-                    className="mt-3 btn btn-primary"
+                    className="btn btn-primary mt-4"
                     href="https://boards.greenhouse.io/sourcegraph91"
                     title="Open roles - we're hiring!"
                     data-button-style={buttonStyle.primary}
@@ -175,10 +175,10 @@ const About: FunctionComponent = () => (
 
             <ContentSection>
                 <h2>Investors</h2>
-                <div className="mx-5 row tw-items-center">
+                <div className="mx-8 grid grid-cols-1 gap-lg md:grid-cols-3">
                     {INVESTORS.map(investor => (
-                        <div key={investor.image} className="tw-mx-auto my-5 col-md-4">
-                            <img src={investor.image} alt={investor.name} className="px-2 tw-py-0 mx-0 my-1 w-100" />
+                        <div key={investor.image} className="max-w-xs">
+                            <img src={investor.image} alt={investor.name} className="mx-0 my-1 w-full px-2 py-0" />
                         </div>
                     ))}
                 </div>

@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import { FaGitAlt, FaLocationArrow } from 'react-icons/fa'
 import { MdOutlineAvTimer, MdBarChart } from 'react-icons/md'
 
-import { Layout, Hero, ContentSection, CtaSection, TwoColumnSection, Blockquote } from '../components'
+import { Layout, Hero, ContentSection, CallToActionContentSection, TwoColumnSection, Blockquote } from '../components'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { buttonLocation } from '../data/tracking'
 
@@ -14,13 +14,13 @@ const Cloud: FunctionComponent = () => (
             description:
                 'Sourcegraph Cloud’s dedicated, single-tenant SaaS solution is the easiest way to get Sourcegraph in the cloud. Get full code intelligence for your codebase quickly, securely, and without having to host.',
         }}
-        className="navbar-purple"
+        headerColorTheme="purple"
         hero={
             <Hero
                 product="sourcegraph cloud"
                 variant="radialSpace"
                 title="Find, understand, & fix code faster than ever"
-                titleClassName="tw-text-transparent tw-block tw-bg-clip-text tw-bg-gradient-to-l tw-from-white/10 tw-to-violet-200"
+                titleClassName="text-transparent block bg-clip-text bg-gradient-to-l from-white/10 to-violet-200"
                 subtitle="Sourcegraph Cloud’s dedicated, single-tenant SaaS solution is the easiest way to get Sourcegraph in the cloud. Get full code intelligence for your codebase quickly, securely, and without having to host."
                 centerContent={true}
                 cta={<StandardCallToAction buttonLocation={buttonLocation.hero} center={true} dark={true} />}
@@ -30,31 +30,31 @@ const Cloud: FunctionComponent = () => (
         }
     >
         <ContentSection background="white">
-            <div className="lg:tw-flex tw-flex-row">
-                <h2 className="lg:tw-basis-1/3 tw-min-w-[400px] tw-max-w-3xl tw-mb-md">
+            <div className="flex-row lg:flex">
+                <h2 className="mb-md min-w-[400px] max-w-3xl lg:basis-1/3">
                     Get in flow with a private, fully-featured Sourcegraph instance
                 </h2>
 
-                <div className="tw-basis-2/3 tw-max-w-full">
+                <div className="max-w-full basis-2/3">
                     <TwoColumnSection
                         blockOnMdAndDown={true}
                         leftColumn={
-                            <div className="tw-mb-md">
-                                <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
-                                    <FaGitAlt size={32} className="tw-text-violet-400" />
+                            <div className="mb-md">
+                                <div className="mb-5 flex max-h-[48px] max-w-[48px] items-center rounded bg-violet-100 p-2.5">
+                                    <FaGitAlt size={32} className="text-violet-400" />
                                 </div>
-                                <p className="tw-max-w-sm">
+                                <p className="max-w-sm">
                                     Search all your code, all in one place. Sourcegraph connects to any Git-based code
                                     host so you can view your entire codebase in a single unified view.
                                 </p>
                             </div>
                         }
                         rightColumn={
-                            <div className="tw-mb-md">
-                                <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
-                                    <FaLocationArrow size={32} className="tw-p-1 tw-text-violet-400" />
+                            <div className="mb-md">
+                                <div className="mb-5 flex max-h-[48px] max-w-[48px] items-center rounded bg-violet-100 p-2.5">
+                                    <FaLocationArrow size={32} className="p-1 text-violet-400" />
                                 </div>
-                                <p className="tw-max-w-sm">
+                                <p className="max-w-sm">
                                     Navigate your codebase with IDE-level code navigation that works across
                                     repositories, so you can track references, definitions, and implementations with
                                     perfect accuracy.
@@ -66,10 +66,10 @@ const Cloud: FunctionComponent = () => (
                         blockOnMdAndDown={true}
                         leftColumn={
                             <div>
-                                <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
-                                    <MdOutlineAvTimer size={45} className="tw-text-violet-400" />
+                                <div className="mb-5 flex max-h-[48px] max-w-[48px] items-center rounded bg-violet-100 p-2.5">
+                                    <MdOutlineAvTimer size={45} className="text-violet-400" />
                                 </div>
-                                <p className="tw-max-w-sm">
+                                <p className="max-w-sm">
                                     Fix and update code across your entire codebase in hours rather than weeks with
                                     Batch Changes.
                                 </p>
@@ -77,10 +77,10 @@ const Cloud: FunctionComponent = () => (
                         }
                         rightColumn={
                             <div>
-                                <div className="tw-mb-5 tw-p-2.5 tw-rounded tw-flex tw-items-center tw-bg-violet-100 tw-max-w-[48px] tw-max-h-[48px]">
-                                    <MdBarChart size={32} className="tw-text-violet-400" />
+                                <div className="mb-5 flex max-h-[48px] max-w-[48px] items-center rounded bg-violet-100 p-2.5">
+                                    <MdBarChart size={32} className="text-violet-400" />
                                 </div>
-                                <p className="tw-max-w-sm">
+                                <p className="max-w-sm">
                                     Track migrations, measure goals, and visualize changes in your code with Code
                                     Insights.
                                 </p>
@@ -96,7 +96,7 @@ const Cloud: FunctionComponent = () => (
                 leftColumn={
                     <>
                         <h2>Start searching and stay in flow, no maintenance necessary</h2>
-                        <ul className="tw-ml-md tw-mt-sm">
+                        <ul className="ml-md mt-sm">
                             <li>
                                 Get a dedicated Sourcegraph Cloud instance with no manual deployment required. Simply
                                 connect to your code hosts and start searching, navigating, and automating your code.
@@ -112,7 +112,7 @@ const Cloud: FunctionComponent = () => (
                     </>
                 }
                 rightColumn={
-                    <div className="tw-border-l tw-border-gray-300 tw-py-2">
+                    <div className="border-l border-gray-300 py-2">
                         <Blockquote
                             headline="Sourcegraph Cloud was the right fit for Codecov’s growing team"
                             quote="Sourcegraph Cloud was an unlock for us. We didn't feel like Sourcegraph was a product that we needed to run on our own infrastructure."
@@ -139,27 +139,27 @@ const Cloud: FunctionComponent = () => (
                 reverseOnMobile={true}
                 centerContent={true}
                 leftColumn={
-                    <div className="tw-flex tw-justify-center">
-                        <span className="tw-h-px tw-mt-[40px] tw-bg-gray-300 tw-w-1/5" />
-                        <div className="tw-ml-sm tw-text-center">
+                    <div className="flex justify-center">
+                        <span className="mt-[40px] h-px w-1/5 bg-gray-300" />
+                        <div className="ml-sm text-center">
                             <img src="/security/ccpa.svg" alt="CCPA badge" />
-                            <p className="tw-text-gray-400 tw-mt-xxs tw-mb-0">CCPA</p>
+                            <p className="mt-xxs mb-0 text-gray-400">CCPA</p>
                         </div>
-                        <div className="tw-mx-sm tw-text-center">
+                        <div className="mx-sm text-center">
                             <img src="/security/gdpr.svg" alt="GDPR badge" />
-                            <p className="tw-text-gray-400 tw-mt-xxs tw-mb-0">GDPR</p>
+                            <p className="mt-xxs mb-0 text-gray-400">GDPR</p>
                         </div>
-                        <div className="tw-mr-sm tw-text-center">
+                        <div className="mr-sm text-center">
                             <img src="/security/soc2.svg" alt="SOC2 Type 2 badge" />
-                            <p className="tw-text-gray-400 tw-mt-xxs tw-mb-0">SOC2 TYPE 2</p>
+                            <p className="mt-xxs mb-0 text-gray-400">SOC2 TYPE 2</p>
                         </div>
-                        <span className="tw-h-px tw-mt-[40px] tw-bg-gray-300 tw-w-1/5" />
+                        <span className="mt-[40px] h-px w-1/5 bg-gray-300" />
                     </div>
                 }
                 rightColumn={
                     <>
                         <h2>Safeguard your data with single-tenant, security-first instances</h2>
-                        <ul className="tw-ml-md tw-mt-sm">
+                        <ul className="ml-md mt-sm">
                             <li>
                                 Feel secure: all instances are isolated and single-tenant, so you don’t have to
                                 configure your own instance security.
@@ -180,7 +180,7 @@ const Cloud: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <CtaSection />
+        <CallToActionContentSection />
     </Layout>
 )
 

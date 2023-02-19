@@ -8,7 +8,7 @@ interface Props {
 
 export const PodcastSubscribeLinks: FunctionComponent<Props> = ({ linkClassName = '' }) => (
     <div>
-        <span className="tw-text-gray-500">Subscribe:</span>{' '}
+        <span className="text-gray-500">Subscribe:</span>{' '}
         <a
             target="_blank"
             rel="noreferrer"

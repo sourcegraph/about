@@ -8,7 +8,7 @@ import Link from 'next/link'
 import {
     Blockquote,
     ContentSection,
-    CtaSection,
+    CallToActionContentSection,
     CustomCarousel,
     CustomerLogos,
     Hero,
@@ -19,11 +19,12 @@ import {
     TwoColumnSection,
 } from '../../components'
 import { StandardCallToAction } from '../../components/cta/StandardCallToAction'
+import { UseCasePageCallToAction } from '../../components/cta/UseCasePageCallToAction'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h3 className="tw-mb-8 lg:tw-mb-0">{header}</h3>
+        <h3 className="mb-8 lg:mb-0">{header}</h3>
         {text}
     </>
 )
@@ -35,7 +36,7 @@ const items = [
             <CarouselItem
                 header="Find old versions easily"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         Use{' '}
                         <Link
                             href="/code-search"
@@ -59,7 +60,7 @@ const items = [
             <CarouselItem
                 header="Automate version updates and communications"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         With{' '}
                         <Link
                             href="/batch-changes"
@@ -83,7 +84,7 @@ const items = [
             <CarouselItem
                 header="Get everyone on the same page with living docs"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         Create living, actionable documentation with{' '}
                         <a
                             href="https://docs.sourcegraph.com/notebooks"
@@ -106,7 +107,7 @@ const items = [
             <CarouselItem
                 header="Monitor for deprecated code"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         Make sure deprecated endpoints don't sneak back into your code. Get alerts for new occurrences
                         of deprecated methods or restricted patterns with{' '}
                         <a
@@ -130,7 +131,7 @@ const items = [
             <CarouselItem
                 header="Develop a data-driven relationship with your code"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         Create dashboards to track mitigations, package use, version adoption, code smells, codebase
                         size, and more to understand code health with{' '}
                         <Link
@@ -152,19 +153,19 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <MagnifyIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Find unhealthy code',
         description:
             'Build a healthier codebase by finding references to deprecated services, libraries, URL patterns, and more across all your repositories.',
     },
     {
-        icon: <WrenchOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <WrenchOutlineIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Remediate code health issues',
         description:
             'Tackle refactoring efforts and tech debt from legacy systems and acquisitions with automated pull requests across your entire codebase.',
     },
     {
-        icon: <ClipBoardPulseOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <ClipBoardPulseOutlineIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Monitor code health initiatives',
         description:
             'Stay on top of code health changes. Monitor and measure code health initiatives and get actionable insights into the impact of large-scale changes.',
@@ -242,7 +243,7 @@ const UseCasePage: FunctionComponent = () => (
             description:
                 'Tackle refactoring efforts and tech debt from legacy systems with automated pull requests across your entire codebase to boost code health.',
         }}
-        className="use-cases-page navbar-light"
+        className="use-cases-page"
         hero={
             <Hero
                 variant="lightNebulousVenus2"
@@ -265,8 +266,8 @@ const UseCasePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="mb-md-4 max-w-500">Improving code health can be daunting</h2>
-                        <p className="max-w-500">
+                        <h2 className="max-w-[500px] md:mb-6">Improving code health can be daunting</h2>
+                        <p className="max-w-[500px]">
                             Engineering teams need to track and measure code quality consistently to monitor code health
                             across their entire codebase, but current tools don't make this easy. What does that mean
                             for you?
@@ -314,44 +315,19 @@ const UseCasePage: FunctionComponent = () => (
             <QuoteCarousel items={quoteCarouselItems} />
         </ContentSection>
 
-        <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
-                <div className="mb-5 tw-mx-auto tw-flex tw-flex-col tw-text-center max-w-600">
-                    <h2 className="">Get started with Sourcegraph</h2>
-                    <p>Give your team the tools they need to build a healthier codebase.</p>
-                </div>
-                <div className="tw-px-0 tw-text-center col-12">
-                    <a
-                        href="https://signup.sourcegraph.com"
-                        className="btn btn-primary max-w-350 w-100"
-                        title="Start for free"
-                        data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Start for free
-                    </a>
-                    <Link
-                        href="/use-cases"
-                        className="mt-4 tw-flex tw-justify-center"
-                        title="Explore other use cases"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        <p>Explore other use cases</p>
-                    </Link>
-                </div>
-            </div>
-
-            <div className="tw-mt-4xl">
+        <ContentSection parentClassName="bg-gray-100">
+            <UseCasePageCallToAction
+                text="Give your team the tools they need to build a healthier codebase."
+                buttonLocation={buttonLocation.body}
+            />
+            <div className="mt-4xl">
                 <CustomerLogos />
             </div>
         </ContentSection>
 
         <ResourceList items={blogResourceItems} />
 
-        <CtaSection />
+        <CallToActionContentSection />
     </Layout>
 )
 

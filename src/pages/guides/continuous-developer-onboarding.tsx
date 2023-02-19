@@ -9,7 +9,6 @@ export const Guide: FunctionComponent = () => (
             description:
                 'Continuous onboarding shifts traditional onboarding practices to cultivate an environment that enables developers to build themselves as flexible and resilient engineers.',
         }}
-        className="bg-white"
         hero={
             <Hero
                 variant="darkSimpleGrid"
@@ -23,7 +22,7 @@ export const Guide: FunctionComponent = () => (
             formLabel="Download the guide"
             resource="/guides/sg-continuous-developer-onboarding.pdf"
             description={
-                <section className="col-md-6 col-12 lg:tw-pr-3xl">
+                <section>
                     <p>
                         Companies often define developer onboarding as a process exclusive to new hires. But developer
                         onboarding continues far past a developer's first few months. Engineers want to explore new

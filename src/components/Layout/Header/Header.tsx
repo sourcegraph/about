@@ -1,42 +1,26 @@
-import { FunctionComponent, useState, useEffect } from 'react'
+import { FunctionComponent, useState, useEffect, useRef } from 'react'
 
+import { Disclosure } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
-import Navbar from 'react-bootstrap/Navbar'
+import Link from 'next/link'
 
-import { NavLink, navLinks } from '../navLinks'
+import { buttonLocation } from '../../../data/tracking'
+import { TrySourcegraphForFreeButton } from '../../cta/TrySourcegraphForFreeButton'
 
-import DesktopNav from './DesktopNav'
-import MobileNav from './MobileNav'
+import { NavItems } from './NavItems'
+import { PublicCodeSearchLink } from './PublicCodeSearchLink'
+
+export type HeaderColorTheme = 'purple' | 'dark' | 'white'
 
 interface Props {
-    isHome?: boolean
-    isBlog?: boolean
-    isProductPage?: boolean
     minimal?: boolean
-    className?: string
-    navLinks: NavLink[]
+    colorTheme: HeaderColorTheme
 }
 
-const onRightClickLogo = (event: React.MouseEvent): void => {
-    event.preventDefault()
-
-    if (event.button === 2) {
-        window.location.href =
-            'https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/Sourcegraph%20Brand%20Kit%202.2%20-%20May%202021.zip'
-    }
-}
-
-export const Header: FunctionComponent<Props> = props => {
-    const [isOpen, setIsOpen] = useState<boolean>(false)
-
+export const Header: FunctionComponent<Props> = ({ minimal, colorTheme }) => {
     const [lastScrollPosition, setLastScrollPosition] = useState<number>(0)
     const [sticky, setSticky] = useState<boolean>(false)
-
-    const isDarkNav = props.className?.includes('navbar-dark')
-    const isPurpleNav = props.className?.includes('navbar-purple')
-    const isTransparentNav = props.className?.includes('navbar-transparent')
-
-    const dark = isDarkNav || isPurpleNav || isTransparentNav
 
     /**
      * This checks the scroll position to see if the viewport has been
@@ -61,64 +45,176 @@ export const Header: FunctionComponent<Props> = props => {
         return () => window.removeEventListener('scroll', handleScroll)
     })
 
+    const navRef = useRef<HTMLElement>(null)
+
     /**
      * This sets a top buffer for the sticky nav's main position by using
      * the height of the navbar.
      */
     useEffect(() => {
-        const nav = document.querySelector('.navbar')
-        const navHeight = nav?.getBoundingClientRect().height || 74
-        const parentElement = nav?.parentElement
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        parentElement!.style.paddingTop = `${navHeight}px`
-    })
-
-    const navStyle = classNames('header navbar py-3 w-100 fixed-top', props.className, {
-        'bg-white': !isDarkNav && !isPurpleNav && !isTransparentNav && (sticky || isOpen),
-        'tw-bg-violet-750': (isPurpleNav || isTransparentNav) && (sticky || isOpen),
-        'tw-bg-black': isDarkNav && (sticky || isOpen),
-    })
+        if (navRef.current) {
+            const navHeight = navRef.current.getBoundingClientRect().height || 74
+            const parentElement = navRef.current.parentElement
+            if (parentElement) {
+                parentElement.style.paddingTop = `${navHeight}px`
+            }
+        }
+    }, [])
 
     return (
-        <nav className={navStyle}>
-            <div className="container-xl tw-px-0">
-                <Navbar.Brand href="/" onContextMenu={onRightClickLogo} className="tw-mr-0 header tw-flex">
-                    <img
-                        src={
-                            isDarkNav || isPurpleNav || isTransparentNav
-                                ? '/sourcegraph-reverse-logo.svg'
-                                : '/sourcegraph-logo.svg'
-                        }
-                        width={150}
-                        height={26}
-                        className="tw-max-w-[150px] tw-w-full"
-                        aria-label="Sourcegraph - Code Intelligence Platform"
-                        alt="Sourcegraph - Code Intelligence Platform"
-                        draggable={false}
-                    />
-                </Navbar.Brand>
-
-                {!props.minimal && (
-                    <>
-                        <button
-                            type="button"
-                            className={classNames('navbar-toggler tw-justify-end', { ['isOpen']: isOpen })}
-                            data-toggle="collapse"
-                            data-target="#mobile-navbar"
-                            onClick={() => setIsOpen(!isOpen)}
-                        >
-                            <span className="sr-only">Toggle navigation</span>
-                            {[0, 1, 2].map(key => (
-                                <div key={key} className="nav-line" />
-                            ))}
-                        </button>
-
-                        <DesktopNav navLinks={navLinks} dark={dark} />
-
-                        <MobileNav navLinks={navLinks} isOpen={isOpen} />
-                    </>
-                )}
-            </div>
-        </nav>
+        <Disclosure as="nav" className={classNames('fixed top-0 left-0 right-0 z-[1030]')} ref={navRef}>
+            {({ open }) => <HeaderContent colorTheme={colorTheme} minimal={minimal} open={open} sticky={sticky} />}
+        </Disclosure>
     )
 }
+
+const HEADER_CONTENT_THEME_CLASS: Record<
+    HeaderColorTheme,
+    Record<'container' | 'item' | 'menu' | 'menuItem' | 'menuItemActive' | 'divider' | 'button' | 'panel', string>
+> = {
+    white: {
+        container: 'bg-white',
+        item: 'text-black hover:bg-violet-200 focus:ring-black',
+        menu: 'bg-white ring-black',
+        menuItem: 'text-black',
+        menuItemActive: 'bg-violet-200',
+        divider: 'border-black/25',
+        button: 'text-gray-500 hover:bg-violet-200 hover:text-black focus:ring-black',
+        panel: 'border-black/25',
+    },
+    dark: {
+        container: 'bg-black',
+        item: 'text-white hover:bg-white/25 focus:ring-white',
+        menu: 'bg-gray-700 ring-white',
+        menuItem: 'text-white',
+        menuItemActive: 'bg-gray-600',
+        divider: 'border-white/25',
+        button: 'text-gray-300 hover:bg-gray-700 hover:text-white focus:ring-white',
+        panel: 'border-white/25',
+    },
+    purple: {
+        container: 'bg-violet-750',
+        item: 'text-white hover:bg-violet-600 focus:ring-white',
+        menu: 'bg-violet-750 ring-white',
+        menuItem: 'text-white',
+        menuItemActive: 'bg-violet-600',
+        divider: 'border-white/25',
+        button: 'text-gray-300 hover:bg-gray-700 hover:text-white focus:ring-white',
+        panel: 'border-white/25',
+    },
+}
+
+const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean }> = ({
+    colorTheme,
+    open,
+    sticky,
+    ...props
+}) => {
+    const dark = colorTheme === 'dark' || colorTheme === 'purple'
+    const classes = HEADER_CONTENT_THEME_CLASS[colorTheme]
+    const callToAction = (
+        <>
+            <PublicCodeSearchLink dark={dark} />
+            <TrySourcegraphForFreeButton buttonLocation={buttonLocation.nav} dark={dark}>
+                Start for free
+            </TrySourcegraphForFreeButton>
+        </>
+    )
+    return (
+        <>
+            <div
+                className={classNames(
+                    'transition',
+                    (sticky || open) && HEADER_CONTENT_THEME_CLASS[colorTheme].container
+                )}
+            >
+                <div className="mx-auto max-w-7xl px-2 md:px-6">
+                    <div className="relative flex h-16 items-center justify-between">
+                        <div className="flex flex-1 items-center md:items-stretch md:justify-start">
+                            <div className="flex flex-shrink-0 items-center">
+                                <Link
+                                    href="/"
+                                    className={classNames(
+                                        'block rounded-md py-1 px-2 focus:outline-none focus:ring-2 md:-ml-2',
+                                        dark ? 'focus:ring-white' : 'focus:ring-black'
+                                    )}
+                                >
+                                    <img
+                                        src={dark ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
+                                        width={150}
+                                        height={26}
+                                        className="block"
+                                        aria-label="Sourcegraph - Code Intelligence Platform"
+                                        alt="Sourcegraph - Code Intelligence Platform"
+                                    />
+                                </Link>
+                            </div>
+                            {!props.minimal && (
+                                <>
+                                    <div className="hidden flex-1 md:ml-4 md:block">
+                                        <div className="flex space-x-3">
+                                            <NavItems
+                                                classes={{
+                                                    ...classes,
+                                                    item: classNames(
+                                                        'whitespace-nowrap rounded-md p-2 font-medium text-sm focus:outline-none focus:ring-2',
+                                                        classes.item
+                                                    ),
+                                                    menu: classNames(
+                                                        'absolute right-0 z-10 w-48 origin-top-right shadow-lg',
+                                                        classes.menu
+                                                    ),
+                                                }}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="hidden items-center space-x-3 pr-2 md:ml-6 md:flex md:pr-0">
+                                        {callToAction}
+                                    </div>
+                                </>
+                            )}
+                        </div>
+                        <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
+                            {/* Mobile menu button*/}
+                            <Disclosure.Button
+                                className={classNames(
+                                    'inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset',
+                                    HEADER_CONTENT_THEME_CLASS[colorTheme].button
+                                )}
+                            >
+                                <span className="sr-only">Open main menu</span>
+                                {open ? (
+                                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                                ) : (
+                                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                                )}
+                            </Disclosure.Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <Disclosure.Panel
+                className={classNames(
+                    'border-b md:hidden',
+                    HEADER_CONTENT_THEME_CLASS[colorTheme].container,
+                    HEADER_CONTENT_THEME_CLASS[colorTheme].panel
+                )}
+            >
+                <div className="space-y-1 px-2 pt-2 pb-3">
+                    <NavItems
+                        linkElement={DisclosureButton}
+                        classes={{
+                            ...classes,
+                            item: classNames('block rounded-md px-3 py-2 text-base font-medium', classes.item),
+                        }}
+                    />
+                    <div className="ml-3 !mt-2 flex flex-col items-start space-y-4">{callToAction}</div>
+                </div>
+            </Disclosure.Panel>
+        </>
+    )
+}
+
+const DisclosureButton: React.FunctionComponent<
+    Pick<React.ComponentProps<typeof Link>, 'href' | 'className' | 'aria-current' | 'children'>
+> = props => <Disclosure.Button as={Link} {...props} />

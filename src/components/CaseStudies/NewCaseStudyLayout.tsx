@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { ContentSection, CtaSection } from '..'
+import { ContentSection, CallToActionContentSection } from '..'
 
 import { CaseStudyCard, CASESTUDIES } from './CaseStudyCard'
 
@@ -18,13 +18,13 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, childre
         <>
             {children}
 
-            <CtaSection />
+            <CallToActionContentSection />
 
             <ContentSection background="white">
-                <h2 className="tw-mb-2xl">Explore other case studies</h2>
-                <div className="tw-grid tw-grid-cols-1 xs:tw-grid-cols-2 tw-gap-xl">
+                <h2 className="mb-2xl">Explore other case studies</h2>
+                <div className="grid grid-cols-1 gap-xl xs:grid-cols-2">
                     {uniqueCaseStudyList.map(study => (
-                        <div key={study.name} className="tw-flex tw-items-end">
+                        <div key={study.name} className="flex items-end">
                             <CaseStudyCard study={study} />
                         </div>
                     ))}

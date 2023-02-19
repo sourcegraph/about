@@ -22,28 +22,28 @@ interface ResourceList {
 
 export const ResourceList: FunctionComponent<ResourceList> = ({ items, title = 'Related Resources' }) => (
     <ContentSection background="white">
-        <h2 className="tw-mb-3xl">{title}</h2>
+        <h2 className="mb-3xl">{title}</h2>
 
         {items.map(item => (
             <Link
                 href={item.href}
                 key={item.title}
-                className="tw-py-md tw-mx-0 tw-w-full tw-border-b tw-border-solid tw-border-b-gray-200 tw-grid tw-grid-cols-12 hover:tw-bg-gray-50 hover:tw-px-sm tw-transition-padding tw-ease-in-out tw-duration-300"
+                className="transition-padding mx-0 grid w-full grid-cols-12 border-b border-solid border-b-gray-200 py-md duration-300 ease-in-out hover:bg-gray-50 hover:px-sm"
                 data-button-style={buttonStyle.resourceListItem}
                 data-button-location={buttonLocation.body}
                 data-button-type="cta"
                 title={item.title}
             >
-                <div className="tw-col-span-12 sm:tw-col-span-8 sm:tw-pr-sm">
-                    <h6 className="tw-text-blurple-400">{item.type}</h6>
-                    <h3 className="tw-text-black">{item.title}</h3>
-                    <p className="tw-mt-xs tw-text-black tw-font-normal tw-max-w-3xl">{item.description}</p>
+                <div className="col-span-12 sm:col-span-8 sm:pr-sm">
+                    <h6 className="text-blurple-400">{item.type}</h6>
+                    <h3 className="text-black">{item.title}</h3>
+                    <p className="mt-xs max-w-3xl font-normal text-black">{item.description}</p>
                 </div>
 
-                <div className="tw-flex tw-items-center tw-justify-center sm:tw-justify-end tw-col-span-12 sm:tw-col-span-4 tw-mt-xs sm:tw-mt-0">
-                    <div className="tw-inline-block tw-max-w-[250px] tw-w-full tw-min-h-[150px] tw-h-full">
+                <div className="col-span-12 mt-xs flex items-center justify-center sm:col-span-4 sm:mt-0 sm:justify-end">
+                    <div className="inline-block h-full min-h-[150px] w-full max-w-[250px]">
                         <img
-                            className="tw-flex-1 tw-w-full"
+                            className="w-full flex-1"
                             alt={item.img ? item.img.alt : item.title}
                             src={item.img ? item.img.src : '/blog/thumbnails/default.png'}
                         />

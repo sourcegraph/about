@@ -1,0 +1,84 @@
+.content img,
+			.content object,
+			/* Gif-like videos */
+			.content video[autoplay][loop][muted]:not([controls]) {
+    width: 100%;
+    margin: 3rem auto 2rem auto;
+    display: block;
+    border-style: none;
+    height: auto; /* Allow providing the media width and height as HTML attributes for aspect-ratio calculation to avoid layout shift */
+    aspect-ratio: attr(width) / attr(height);
+}
+
+.content table,
+.content video-embed {
+    margin: 3rem auto;
+}
+
+.content figcaption {
+    font-style: italic;
+}
+
+.content figure {
+    margin-bottom: 3rem;
+}
+
+.content p,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content ul,
+.content ol,
+.content pre,
+.content figure,
+.content img,
+.content object,
+.content table,
+.content blockquote,
+.content video {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    border-radius: 3px;
+    background: var(--sg-color-gray-100);
+    color: var(--sg-color-blue-500);
+    border: 1px solid var(--sg-color-gray-200);
+}
+
+.content blockquote {
+    padding-left: 2rem;
+    border-left: solid 4px var(--sg-color-gray-200);
+    margin-bottom: 1.25rem;
+}
+
+.content pre code {
+    border: none;
+}
+
+.content p {
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+}
+
+.content ul,
+.content ol {
+    line-height: 1.8;
+    padding-left: 0;
+}
+.content li {
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Fixes uneven or excessive spacing in lists (we only want the li's padding, not the p's also). */
+.content ul > li > p:only-of-type {
+    margin-bottom: 0;
+}

@@ -1,0 +1,34 @@
+.quote {
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+
+.quote img {
+    max-width: 150px;
+}
+
+.quote p {
+    text-indent: 0.4em;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+}
+
+.quote p::before {
+    text-indent: -0.4em;
+    content: '“';
+    position: absolute;
+    margin-left: -2px;
+}
+
+.quote p::after {
+    content: '”';
+}
+
+.quote a {
+    font-size: 1rem;
+}
+.quote footer {
+    font-size: 1rem;
+    font-weight: 400;
+}

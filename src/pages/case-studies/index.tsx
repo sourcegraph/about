@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CtaSection } from '../../components'
+import { Layout, CallToActionContentSection } from '../../components'
 import { CaseStudyCard, CASESTUDIES } from '../../components/CaseStudies/CaseStudyCard'
 
 const CaseStudiesHome: FunctionComponent = () => (
@@ -13,19 +13,16 @@ const CaseStudiesHome: FunctionComponent = () => (
             }}
         >
             <div>
-                <div className="tw-text-center tw-py-lg tw-px-6">
-                    <h1 className="tw-mb-xs">Sourcegraph case studies</h1>
+                <div className="py-lg px-6 text-center">
+                    <h1 className="mb-xs">Sourcegraph case studies</h1>
                     <h4>Learn how engineering teams understand, fix, and automate across their entire codebase</h4>
                 </div>
 
-                <div className="tw-max-w-screen-xl tw-mx-auto tw-px-6 tw-mb-3xl">
-                    <ul className="tw-flex-wrap tw-grid tw-grid-cols-12 tw-list-none tw-ml-0 tw-gap-6">
+                <div className="mx-auto mb-3xl max-w-screen-xl px-6">
+                    <ul className="ml-0 grid list-none grid-cols-12 flex-wrap gap-6">
                         {CASESTUDIES.map(study => (
-                            <li
-                                className="grid-cols-4 tw-flex tw-col-span-12 md:tw-col-span-6 lg:tw-col-span-4"
-                                key={study.name}
-                            >
-                                <div className="tw-bg-white tw-border tw-border-solid tw-border-gray-200 tw-w-full tw-p-sm">
+                            <li className="col-span-12 flex grid-cols-4 md:col-span-6 lg:col-span-4" key={study.name}>
+                                <div className="w-full border border-solid border-gray-200 bg-white p-sm">
                                     <CaseStudyCard study={study} />
                                 </div>
                             </li>
@@ -33,7 +30,7 @@ const CaseStudiesHome: FunctionComponent = () => (
                     </ul>
                 </div>
 
-                <CtaSection />
+                <CallToActionContentSection />
             </div>
         </Layout>
     </>

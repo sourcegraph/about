@@ -110,10 +110,8 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection background="white" slimWidth={true}>
-                <div className="tw-mx-auto tw-pt-5xl">
-                    <h3 className="tw-pt-5xl sm:tw-mt-0 tw-mt-5xl tw-mb-sm">
-                        Improving the developer experience with Sourcegraph
-                    </h3>
+                <div className="mx-auto pt-5xl">
+                    <h3 className="mt-5xl mb-sm pt-5xl sm:mt-0">Improving the developer experience with Sourcegraph</h3>
 
                     <p>
                         Before Sourcegraph, tracking libraries manually and searching in GitHub made the process of
@@ -136,7 +134,7 @@ export const CaseStudy: FunctionComponent = () => (
                         do? Okay, that’s pretty cool’ and then they start using it too.”
                     </p>
 
-                    <h3 className="tw-mt-xl tw-mb-sm">Acting quickly with Sourcegraph</h3>
+                    <h3 className="mt-xl mb-sm">Acting quickly with Sourcegraph</h3>
 
                     <p>
                         Recently, Neo Financial was rebranding their savings accounts to be called Money Accounts. The
@@ -162,7 +160,7 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
                 </div>
 
-                <div className="tw-max-w-xl tw-mx-auto tw-my-5xl">
+                <div className="mx-auto my-5xl max-w-xl">
                     <Blockquote
                         inline={true}
                         quote="I want to put Code Insights on our TV in the kitchen to show all the insights dashboards so that people will just pass by and remember them."
@@ -170,7 +168,7 @@ export const CaseStudy: FunctionComponent = () => (
                     />
                 </div>
 
-                <h3 className="tw-mb-sm">Visualizing the codebase with Code Insights</h3>
+                <h3 className="mb-sm">Visualizing the codebase with Code Insights</h3>
 
                 <p>
                     With Code Insights, you can seamlessly track and visualize everything in your codebase, with
@@ -204,8 +202,8 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection background="white" slimWidth={true}>
-                <div className="tw-mx-auto">
-                    <h3 className="mb-4">Banking on the developer experience</h3>
+                <div className="mx-auto">
+                    <h3 className="mb-6">Banking on the developer experience</h3>
 
                     <p>
                         Originally, developer experience and productivity teams were only found in the largest
@@ -247,7 +245,7 @@ export const CaseStudy: FunctionComponent = () => (
                         into this ‘renaissance’ of DX tooling that’s coming out in the industry.”
                     </p>
 
-                    <div className="tw-mt-5xl">
+                    <div className="mt-5xl">
                         <StaffSpotlight
                             customer="Neo Financial"
                             about={

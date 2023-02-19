@@ -9,7 +9,6 @@ export const Guide: FunctionComponent = () => (
             description:
                 'A guide to understanding how to create a developer onboarding program that differs from general employee onboarding and creates an engaged development team.',
         }}
-        className="bg-white"
         hero={
             <Hero
                 variant="darkSimpleGrid"
@@ -23,7 +22,7 @@ export const Guide: FunctionComponent = () => (
             formLabel="Download the guide"
             resource="/guides/sg-dev-onboarding-what-makes-it-unique.pdf"
             description={
-                <section className="col-md-6 col-12 lg:tw-pr-3xl">
+                <section>
                     <p>
                         Your organization's ability to onboard new developers may be the difference between high
                         attrition rates and an engaged, productive development team. But designing effective, delightful

@@ -21,22 +21,22 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
 }) => (
     <div
         className={classNames(
-            !mergeColumns && `tw-grid ${blockOnMdAndDown ? 'md' : 'lg'}:tw-grid-cols-12 tw-gap-y-xl lg:tw-gap-x-xl`, // done
+            !mergeColumns && `grid ${blockOnMdAndDown ? 'md' : 'lg'}:grid-cols-12 gap-y-xl lg:gap-x-xl`, // done
             {
-                'tw-flex tw-flex-col lg:tw-flex-row': mergeColumns, // done
-                'tw-items-center': centerContent, // done
+                'flex flex-col lg:flex-row': mergeColumns, // done
+                'items-center': centerContent, // done
             }
         )}
     >
         <div
-            className={classNames(!mergeColumns && `tw-col-span-12 ${blockOnMdAndDown ? 'md' : 'lg'}:tw-col-span-6`, {
-                'tw-mb-sm lg:tw-mb-0 lg:tw-pr-xl': mergeColumns, // done
-                'tw-order-last lg:tw-order-first': reverseOnMobile,
+            className={classNames(!mergeColumns && `col-span-12 ${blockOnMdAndDown ? 'md' : 'lg'}:col-span-6`, {
+                'mb-sm lg:mb-0 lg:pr-xl': mergeColumns, // done
+                'order-last lg:order-first': reverseOnMobile,
             })}
         >
             {leftColumn}
         </div>
-        <div className={classNames(!mergeColumns && `tw-col-span-12 ${blockOnMdAndDown ? 'md' : 'lg'}:tw-col-span-6`)}>
+        <div className={classNames(!mergeColumns && `col-span-12 ${blockOnMdAndDown ? 'md' : 'lg'}:col-span-6`)}>
             {rightColumn}
         </div>
     </div>

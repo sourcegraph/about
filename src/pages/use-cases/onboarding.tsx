@@ -8,7 +8,7 @@ import Link from 'next/link'
 import {
     Blockquote,
     ContentSection,
-    CtaSection,
+    CallToActionContentSection,
     CustomCarousel,
     CustomerLogos,
     Hero,
@@ -18,11 +18,12 @@ import {
     TwoColumnSection,
 } from '../../components'
 import { StandardCallToAction } from '../../components/cta/StandardCallToAction'
+import { UseCasePageCallToAction } from '../../components/cta/UseCasePageCallToAction'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h3 className="tw-mb-8 lg:tw-mb-0">{header}</h3>
+        <h3 className="mb-8 lg:mb-0">{header}</h3>
         {text}
     </>
 )
@@ -34,7 +35,7 @@ const items = [
             <CarouselItem
                 header="Make knowledge self-serve"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         With Sourcegraph, developers can find answers without waiting for a teammate to point them to
                         the relevant code. When questions arise, devs feel more confident that they're asking a more
                         focused and informed question.
@@ -49,7 +50,7 @@ const items = [
             <CarouselItem
                 header="Enable developers to learn by example"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         With{' '}
                         <Link
                             href="/code-search"
@@ -73,7 +74,7 @@ const items = [
             <CarouselItem
                 header="Get code history and ownership at a glance"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         Sourcegraph natively supports Git-based version control systems. Searches can quickly reveal who
                         updated code and when, helping developers find the right stakeholders to solve problems
                         effectively.
@@ -88,7 +89,7 @@ const items = [
             <CarouselItem
                 header="Visualize contributions and chart team progress"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         <Link
                             href="/code-insights"
                             title="Code Insights"
@@ -111,7 +112,7 @@ const items = [
             <CarouselItem
                 header="Document and share actionable code snippets"
                 text={
-                    <p className="py-3">
+                    <p className="py-4">
                         With{' '}
                         <a
                             href="https://docs.sourcegraph.com/notebooks"
@@ -169,19 +170,19 @@ const blogResourceItems = [
 
 const threeUpTextItems = [
     {
-        icon: <MagnifyIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <MagnifyIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Find answers across all repositories',
         description:
             'Codebases grow increasingly complex over time. Sourcegraph enables developers to search everything at once without needing to clone and search locally.',
     },
     {
-        icon: <UploadIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <UploadIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Share knowledge quickly with links to specific code',
         description:
             'Knowledge sharing takes time. With Sourcegraph, developers can share links directly to specific lines of code and ask questions with context included.',
     },
     {
-        icon: <CompassOutlineIcon className="mb-4 tw-text-blurple-400 tw-inline" size={40} />,
+        icon: <CompassOutlineIcon className="mb-6 inline text-blurple-400" size={40} />,
         subtitle: 'Navigate and understand large codebases',
         description:
             "Make new codebases approachable, not aggravating. Search across all your repositories in one place with Sourcegraph's IDE-inspired features.",
@@ -195,7 +196,7 @@ const UseCasePage: FunctionComponent = () => (
             description:
                 'Decrease time to first commit for new developers, help existing engineers master your codebase, and fast-track full codebase understanding.',
         }}
-        className="use-cases-page navbar-light"
+        className="use-cases-page"
         hero={
             <Hero
                 variant="lightNebulousVenus2"
@@ -218,7 +219,7 @@ const UseCasePage: FunctionComponent = () => (
             <TwoColumnSection
                 leftColumn={
                     <>
-                        <h2 className="mb-4 max-w-400">Developer onboarding is slow and expensive</h2>
+                        <h2 className="mb-6 max-w-[400px]">Developer onboarding is slow and expensive</h2>
                         <p>
                             Current tools and practices don't enable teams to onboard developers effectively or
                             efficiently.
@@ -259,7 +260,7 @@ const UseCasePage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection parentClassName="sg-bg-gradient-saturn">
-            <div className="tw-flex tw-flex-col tw-justify-center lg:tw-px-32">
+            <div className="flex flex-col justify-center lg:px-32">
                 <Blockquote
                     headline="Convoy knows its codebase inside and out"
                     quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
@@ -277,47 +278,21 @@ const UseCasePage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection parentClassName="tw-bg-gray-100">
-            <div className="mx-4 row tw-flex tw-flex-col mx-lg-0 tw-text-center">
-                <div className="mb-5 tw-mx-auto tw-flex tw-flex-col tw-text-center max-w-550">
-                    <h2 className="">Give your team the onboarding experience they deserve.</h2>
-                    <p>
-                        Enable all your devs to find the answers they need to work more efficiently, ship code more
-                        confidently, and stay in flow.
-                    </p>
-                </div>
-                <div className="tw-px-0 tw-text-center col-12">
-                    <a
-                        className="btn btn-primary max-w-350 w-100"
-                        href="https://signup.sourcegraph.com"
-                        title="Start for free"
-                        data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Start for free
-                    </a>
-                    <Link
-                        href="/use-cases"
-                        className="mt-4 tw-flex tw-justify-center "
-                        title="Explore other use cases"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Explore other use cases
-                    </Link>
-                </div>
-            </div>
-
-            <div className="tw-mt-4xl">
+        <ContentSection parentClassName="bg-gray-100">
+            <UseCasePageCallToAction
+                header="Give your team the onboarding experience they deserve."
+                text="Enable all your devs to find the answers they need to work more efficiently, ship code more
+                confidently, and stay in flow."
+                buttonLocation={buttonLocation.body}
+            />
+            <div className="mt-4xl">
                 <CustomerLogos />
             </div>
         </ContentSection>
 
         <ResourceList items={blogResourceItems} />
 
-        <CtaSection />
+        <CallToActionContentSection />
     </Layout>
 )
 

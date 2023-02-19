@@ -9,7 +9,7 @@ export const CaseStudy: FunctionComponent = () => (
             description:
                 'Sourcegraph empowers developers at CERN to reuse existing code and manage mission-critical code changes with ease',
         }}
-        className="navbar-dark tw-bg-black"
+        headerColorTheme="dark"
     >
         <CaseStudyLayout
             customer="CERN"
@@ -21,7 +21,7 @@ export const CaseStudy: FunctionComponent = () => (
                 author: 'Vito Baggiolini, Senior Software Engineer, CERN',
             }}
         >
-            <ContentSection background="white" slimWidth={true} className="tw-col-md-6 tw-pb-md">
+            <ContentSection background="white" slimWidth={true} className="pb-md">
                 <p>
                     Physicists at CERN use some of the world's most powerful particle accelerators to discover what the
                     universe is made of and how it works. Over the last 18 years, the organization's Java codebase for
@@ -31,16 +31,14 @@ export const CaseStudy: FunctionComponent = () => (
                     tool that lets them quickly and effectively search through their entire codebase so they can easily
                     change and reuse code where necessary.{' '}
                 </p>
-                <div className="row md:tw-justify-center tw-pt-xs">
-                    <div className="col-md-8">
-                        <Figure
-                            src="/case-studies/cern-image-lhc-cc.jpg"
-                            alt="Large Hadron Collider, image by CERN"
-                            caption="Large Hadron Collider, image by CERN"
-                        />
-                    </div>
+                <div className="pt-xs">
+                    <Figure
+                        src="/case-studies/cern-image-lhc-cc.jpg"
+                        alt="Large Hadron Collider, image by CERN"
+                        caption="Large Hadron Collider, image by CERN"
+                    />
                 </div>
-                <h2 className="tw-pt-md tw-pb-1">Avoiding reinventing the wheel with universal code search</h2>
+                <h2 className="pt-md pb-1">Avoiding reinventing the wheel with universal code search</h2>
                 <p>
                     Sourcegraph empowers developers at CERN to reuse code that already exists, avoiding duplication and
                     saving developers countless hours redoing work that has already been done. It takes search one step
@@ -52,23 +50,21 @@ export const CaseStudy: FunctionComponent = () => (
                     quote="I was recently tasked with something that I, admittedly, had no idea how to do, but I was sure that someone at CERN must've already done it at some point. Sourcegraph universal code search took me directly to the code I was looking for so I could repurpose it. It's also an invaluable tool for enabling our developers to learn from one another."
                     author="Vito Baggiolini"
                 />
-                <div className="row tw-pt-xs">
-                    <div className="col-md-3 tw-pt-md">
-                        <img
-                            src="/case-studies/chris-roderick-cern.jpg"
-                            alt="Chris Roderick, Applications and Services Section Leader, CERN"
-                            title="Chris Roderick, Applications and Services Section Leader, CERN"
-                            className="w-100 tw-rounded-full img-fluid tw-mx-auto tw-block mb-3"
-                        />
-                    </div>
-                    <div className="col-md-9">
+                <div className="flex items-center gap-md pt-md">
+                    <img
+                        src="/case-studies/chris-roderick-cern.jpg"
+                        alt="Chris Roderick, Applications and Services Section Leader, CERN"
+                        title="Chris Roderick, Applications and Services Section Leader, CERN"
+                        className="mx-auto block max-w-[150px] flex-grow-0 rounded-full"
+                    />
+                    <div className="flex-1">
                         <Blockquote
                             quote="Sourcegraph helps us with technical debt reduction and the consolidation of our codebase by letting us avoid duplication, spot the usage of deprecated APIs or internal (non-API) library code, and identify general purpose code in specific projects (such as utility classes) that can be factored out and shared in a core library."
                             author="Chris Roderick, Applications and Services Section Leader, CERN"
                         />
                     </div>
                 </div>
-                <h2 className="tw-pt-md tw-pb-1">Tackling mission-critical code changes with ease</h2>
+                <h2 className="pt-md pb-1">Tackling mission-critical code changes with ease</h2>
                 <Blockquote
                     quote="Sourcegraph lets us make informed decisions on how to evolve our codebase. For example, a library owner knows exactly how all other developers use their API, and can therefore make educated decisions on how to evolve it."
                     author="Chris Roderick"

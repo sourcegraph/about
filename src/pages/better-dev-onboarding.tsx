@@ -9,7 +9,7 @@ import {
     Layout,
     ResourceList,
     Hero,
-    CtaSection,
+    CallToActionContentSection,
 } from '../components'
 
 const resourceItems = [
@@ -44,7 +44,6 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
             description:
                 'Find your own answers with self-serve onboarding, codebase exploration, and knowledge sharing, without waiting for someone to point you to the relevant code.',
         }}
-        className="navbar-light"
         hero={
             <Hero
                 variant="lightNebulousVenus2"
@@ -57,7 +56,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         }
     >
         <ContentSection>
-            <div className="mt-6">
+            <div className="mt-16">
                 <CustomerLogos monochrome={true} />
             </div>
         </ContentSection>
@@ -66,13 +65,13 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
             <CoreFeatures />
         </ContentSection>
 
-        <div className="tw-bg-gray-100">
+        <div className="bg-gray-100">
             <IntegrationsSection />
         </div>
 
         <ResourceList items={resourceItems} />
 
-        <CtaSection />
+        <CallToActionContentSection />
     </Layout>
 )
 

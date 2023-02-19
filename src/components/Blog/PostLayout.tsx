@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
@@ -8,6 +9,8 @@ import { Alert, Badge, Blockquote, Figure, HubSpotForm, TableWrapper, Video, You
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 import { PostComponentProps } from '../../interfaces/posts'
 import { formatDate } from '../../util'
+
+import styles from './PostLayout.module.css'
 
 type PostComponents = import('mdx/types').MDXComponents
 const components = { Alert, Badge, Blockquote, HubSpotForm, Figure, OpenInNewIcon, TableWrapper, Video, YouTube }
@@ -26,13 +29,13 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
     renderTitleAsLink = false,
     contentClassName = '',
 }) => (
-    <Tag className={`blog-post ${className}`}>
+    <Tag className={`p-sm ${className}`}>
         <header className={headerClassName}>
             <h2>
                 {renderTitleAsLink === true ? (
                     <Link
                         href={url}
-                        className="tw-block"
+                        className="block"
                         title={post.frontmatter.title}
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
@@ -46,7 +49,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
             </h2>
 
             {post.frontmatter.authors?.length && (
-                <p className="mb-0 text-align-center text-secondary">
+                <p className="text-align-center text-secondary mb-0">
                     {post.frontmatter.authors.map((a, index) => (
                         <span key={a.name} data-author={a.name}>
                             {a.url ? (
@@ -84,17 +87,15 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
             )}
 
             {post.frontmatter.publishDate && (
-                <p className="mb-0 text-align-center text-secondary">
+                <p className="text-align-center text-secondary mb-0">
                     <time dateTime={post.frontmatter.publishDate}>{formatDate(post.frontmatter.publishDate)}</time>
                 </p>
             )}
         </header>
 
         {content && (
-            <div className="card-body">
-                <div className={`blog-post__html ${contentClassName}`}>
-                    <MDXRemote {...content} components={components as PostComponents} />
-                </div>
+            <div className={classNames('min-h-[60vh]', styles.content, contentClassName)}>
+                <MDXRemote {...content} components={components as PostComponents} />
             </div>
         )}
     </Tag>

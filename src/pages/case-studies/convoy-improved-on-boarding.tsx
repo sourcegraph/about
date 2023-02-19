@@ -10,7 +10,7 @@ export const CaseStudy: FunctionComponent = () => (
             description:
                 'Sourcegraph case study: At Convoy, Sourcegraph helps improves the developer on-boarding process.',
         }}
-        className="navbar-dark tw-bg-black"
+        headerColorTheme="dark"
     >
         <CaseStudyLayout
             customer="Convoy"
@@ -28,7 +28,7 @@ export const CaseStudy: FunctionComponent = () => (
                     growth comes with challenges: new hires have to quickly learn how to contribute to a dynamic system
                     of microservices.
                 </p>
-                <h2 className="tw-pt-md tw-pb-1">Onboarding new hires</h2>
+                <h2 className="pt-md pb-1">Onboarding new hires</h2>
                 <p>
                     For Brandon Bloom, a new hire who was eager to start contributing, using GitHub's native search
                     across Convoy's voluminous repositories rarely gave him the results he needed. His frustration led

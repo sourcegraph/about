@@ -16,7 +16,7 @@ export const Tabs: FunctionComponent<Tabs> = ({ tabs }) => {
 
     return (
         <div>
-            <div className="tw-flex-row tw-text-center xs:tw-flex xs:tw-text-left tw-items-center tw-justify-center tw-border-b tw-border-solid tw-border-b-gray-200">
+            <div className="flex-row items-center justify-center border-b border-solid border-b-gray-200 text-center xs:flex xs:text-left">
                 {tabs.map((tab, index) => (
                     <div
                         key={tab.title}
@@ -25,8 +25,8 @@ export const Tabs: FunctionComponent<Tabs> = ({ tabs }) => {
                         role="button"
                         tabIndex={0}
                         className={classNames(
-                            'tw-border-b-3 tw-border-solid tw-border-transparent tw-px-4 tw-py-2 tw-cursor-pointer tw-text-lg tw-font-semibold tw-text-center',
-                            { 'tw-border-b-violet-400 tw-bg-transparent': currentTab === index }
+                            'cursor-pointer border-b-3 border-solid border-transparent px-4 py-2 text-center text-lg font-semibold',
+                            { 'border-b-violet-400 bg-transparent': currentTab === index }
                         )}
                     >
                         {tab.title}
@@ -34,13 +34,13 @@ export const Tabs: FunctionComponent<Tabs> = ({ tabs }) => {
                 ))}
             </div>
 
-            <div className="tw-py-6">
+            <div className="py-6">
                 {tabs.map((tab, index) => (
                     <div
                         key={tab.title}
                         className={classNames({
-                            'tw-block': currentTab === index,
-                            'tw-hidden': currentTab !== index,
+                            block: currentTab === index,
+                            hidden: currentTab !== index,
                         })}
                     >
                         {tab.content}

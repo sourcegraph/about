@@ -9,7 +9,6 @@ export const Guide: FunctionComponent = () => (
             description:
                 'See how tech companies large and small address code security. In this post, we explore how Google, Microsoft, Lyft, GitLab, and Atlassian find and fix vulnerabilities.',
         }}
-        className="bg-white"
         hero={
             <Hero
                 variant="darkSimpleGrid"
@@ -22,7 +21,7 @@ export const Guide: FunctionComponent = () => (
             formLabel="Download the e-book"
             resource="/guides/sg-how-companies-fix-vulnerabilities.pdf"
             description={
-                <section className="col-md-6 col-12 lg:tw-pr-3xl">
+                <section>
                     <p>
                         Your organization's ability to find and fix vulnerabilities within the codebase has significant
                         financial implications, not to mention brand impact. Most companies have invested in security

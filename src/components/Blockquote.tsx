@@ -46,41 +46,41 @@ export const Blockquote: FunctionComponent<{
     const isMdOrDown = windowWidth < breakpoints.lg
 
     const getBorderStyle = (): string => {
-        const borderLocation = reverseBorder ? 'tw-border-r-3' : 'tw-border-l-3'
-        const borderNone = reverseBorder ? 'tw-border-r-0' : 'tw-border-l-0'
+        const borderLocation = reverseBorder ? 'border-r-3' : 'border-l-3'
+        const borderNone = reverseBorder ? 'border-r-0' : 'border-l-0'
 
         if (border) {
             if (inline) {
-                return `tw-my-8 tw-border-solid ${borderLocation} tw-border-r-violet-400`
+                return `my-8 border-solid ${borderLocation} border-r-violet-400`
             }
             // Blockquotes in column: Border flips to horizontal for mobile
             if (isMdOrDown) {
-                return `tw-pt-3xl tw-pb-0 tw-mb-0 tw-border-solid ${borderNone} tw-border-t-3 tw-border-t-violet-400`
+                return `pt-3xl pb-0 mb-0 border-solid ${borderNone} border-t-3 border-t-violet-400`
             }
-            return `tw-border-solid ${borderLocation} tw-border-r-violet-400`
+            return `border-solid ${borderLocation} border-r-violet-400`
         }
-        return center ? 'tw-text-center' : 'tw-text-left'
+        return center ? 'text-center' : 'text-left'
     }
 
     return (
-        <blockquote className={classNames('tw-px-md', getBorderStyle())}>
-            {headline ? largeText ? <h2>{headline}</h2> : <h4 className="tw-mb-sm">{headline}</h4> : null}
+        <blockquote className={classNames('px-md', getBorderStyle())}>
+            {headline ? largeText ? <h2>{headline}</h2> : <h4 className="mb-sm">{headline}</h4> : null}
 
             {largeText ? (
-                <h3 className="tw-font-normal tw-text-3xl">&ldquo;{quote}&rdquo;</h3>
+                <h3 className="text-3xl font-normal">&ldquo;{quote}&rdquo;</h3>
             ) : (
-                <p className="tw-font-normal">&ldquo;{quote}&rdquo;</p>
+                <p className="font-normal">&ldquo;{quote}&rdquo;</p>
             )}
 
-            {author && <figcaption className="tw-text-gray-400 tw-mt-4">&mdash; {author}</figcaption>}
+            {author && <figcaption className="mt-4 text-gray-400">&mdash; {author}</figcaption>}
 
             {logo &&
                 (logo.href ? (
                     <Link href={logo.href}>
                         <img
                             src={logo.src}
-                            className={classNames('tw-mt-4 tw-max-w-[150px tw-h-[80px]]', {
-                                'tw-mx-auto': !border && center,
+                            className={classNames('max-w-[150px h-[80px]] mt-4', {
+                                'mx-auto': !border && center,
                             })}
                             width="110px"
                             alt={logo.alt}
@@ -89,8 +89,8 @@ export const Blockquote: FunctionComponent<{
                 ) : (
                     <img
                         src={logo.src}
-                        className={classNames('tw-mt-4 tw-max-w-[150px tw-h-[80px]]', {
-                            'tw-mx-auto': !border && center,
+                        className={classNames('max-w-[150px h-[80px]] mt-4', {
+                            'mx-auto': !border && center,
                         })}
                         width="110px"
                         alt={logo.alt}
@@ -100,7 +100,7 @@ export const Blockquote: FunctionComponent<{
             {link?.href &&
                 (link?.href.includes('http') ? (
                     <a
-                        className={classNames('tw-mt-md tw-flex', !border && center && 'tw-justify-center')}
+                        className={classNames('mt-md flex', !border && center && 'justify-center')}
                         href={link.href}
                         target="_blank"
                         rel="nofollow noreferrer"
@@ -110,19 +110,19 @@ export const Blockquote: FunctionComponent<{
                         data-button-type="cta"
                     >
                         {link.text}
-                        <ArrowRightIcon className="tw-ml-3 tw-inline" />
+                        <ArrowRightIcon className="ml-3 inline" />
                     </a>
                 ) : (
                     <Link
                         href={link.href}
-                        className={classNames('tw-mt-md tw-flex', !border && center && 'tw-justify-center')}
+                        className={classNames('mt-md flex', !border && center && 'justify-center')}
                         title={link.text}
                         data-button-style={buttonStyle.textWithArrow}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
                         {link.text}
-                        <ArrowRightIcon className="tw-ml-3 tw-inline" />
+                        <ArrowRightIcon className="ml-3 inline" />
                     </Link>
                 ))}
         </blockquote>

@@ -10,7 +10,7 @@ export const CaseStudy: FunctionComponent = () => (
                 'Sourcegraph case study: At Convoy, Sourcegraph is transforming how engineers and data scientists collaborate, resulting in greater efficiency and improved data integrity.',
             image: '/case-studies/convoy2-sourcegraph-case-study-og-embed.jpg',
         }}
-        className="navbar-dark tw-bg-black"
+        headerColorTheme="dark"
     >
         <CaseStudyLayout
             customer="Convoy"
@@ -24,7 +24,7 @@ export const CaseStudy: FunctionComponent = () => (
             pdf="https://sourcegraphstatic.com/convoy_software_engineers_and_data_scientists_work_better_together.pdf"
         >
             <ContentSection background="white">
-                <div className="container">
+                <div className="container mx-auto">
                     <p>
                         Sourcegraph is transforming how engineers and data scientists collaborate, resulting in greater
                         efficiency and improved data integrity. Sourcegraph's multi-repository company-wide code search
@@ -40,7 +40,7 @@ export const CaseStudy: FunctionComponent = () => (
                         quote="As a data scientist, it allows me to find code in repos that are owned by engineers. I am able to make sure that the engineers are invoking the logic for my machine learning model correctly or verify how data is created or stored in our database."
                         author="Michael Frasco, Data Scientist, Convoy"
                     />
-                    <h2 className="tw-pt-md tw-pb-1">Avoiding expensive mistakes</h2>
+                    <h2 className="pt-md pb-1">Avoiding expensive mistakes</h2>
                     <p>
                         Prior to using Sourcegraph, Convoy's engineers had to clone repos locally in order to find
                         necessary data. This would cause problems, as Owen, a Senior Software Engineer, recalls:
