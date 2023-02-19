@@ -94,6 +94,9 @@
     .btn-primary {
         @apply bg-violet-400 hover:bg-violet-500 text-white;
     }
+    .btn-inverted-primary {
+        @apply bg-white text-violet-400 hover:bg-violet-400 hover:text-white;
+    }
     .btn-outline-primary {
         @apply border-1 border-violet-400 text-violet-400 bg-white hover:bg-violet-400 hover:text-white;
     }
