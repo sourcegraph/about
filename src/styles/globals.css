@@ -85,7 +85,7 @@
         @apply rounded py-2 px-6 inline-block;
         transition-timing-function: ease-in-out;
         transition-duration: 0.2s;
-        transition-property: background, color;
+        transition-property: background, color, border-color;
     }
     .btn:not(.btn-link) {
         @apply font-semibold;

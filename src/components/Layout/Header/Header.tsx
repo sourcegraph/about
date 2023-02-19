@@ -9,6 +9,7 @@ import { buttonLocation } from '../../../data/tracking'
 import { TrySourcegraphForFreeButton } from '../../cta/TrySourcegraphForFreeButton'
 
 import { NavItems } from './NavItems'
+import { PublicCodeSearchLink } from './PublicCodeSearchLink'
 
 export type HeaderColorTheme = 'purple' | 'dark' | 'white'
 
@@ -109,9 +110,12 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
     const dark = colorTheme === 'dark' || colorTheme === 'purple'
     const classes = HEADER_CONTENT_THEME_CLASS[colorTheme]
     const callToAction = (
-        <TrySourcegraphForFreeButton buttonLocation={buttonLocation.nav} dark={dark}>
-            Start for free
-        </TrySourcegraphForFreeButton>
+        <>
+            <PublicCodeSearchLink dark={dark} />
+            <TrySourcegraphForFreeButton buttonLocation={buttonLocation.nav} dark={dark}>
+                Start for free
+            </TrySourcegraphForFreeButton>
+        </>
     )
     return (
         <>
@@ -162,7 +166,9 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
                                             />
                                         </div>
                                     </div>
-                                    <div className="hidden pr-2 md:ml-6 md:block md:pr-0">{callToAction}</div>
+                                    <div className="hidden items-center space-x-3 pr-2 md:ml-6 md:flex md:pr-0">
+                                        {callToAction}
+                                    </div>
                                 </>
                             )}
                         </div>
@@ -201,7 +207,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
                             item: classNames('block rounded-md px-3 py-2 text-base font-medium', classes.item),
                         }}
                     />
-                    <div className="!mt-4">{callToAction}</div>
+                    <div className="ml-3 !mt-2 flex flex-col items-start space-y-4">{callToAction}</div>
                 </div>
             </Disclosure.Panel>
         </>
@@ -299,15 +305,6 @@ const NAV_LINK_SECTIONS: NavLinkSection[] = [
             {
                 name: 'Docs',
                 href: 'https://docs.sourcegraph.com',
-            },
-        ],
-    },
-    {
-        name: 'Sourcegraph',
-        items: [
-            {
-                name: 'Search code',
-                href: 'https://sourcegraph.com/search',
             },
         ],
     },
