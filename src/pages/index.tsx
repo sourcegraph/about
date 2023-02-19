@@ -21,7 +21,7 @@ const Home: FunctionComponent = () => (
         meta={{
             title: 'Sourcegraph - Code Intelligence Platform',
             description:
-                "Big codebases are less painful with Sourcegraph's code intelligence: universal code search+nav and large-scale fixes/refactors.",
+                'Sourcegraph makes it easy to write, read, and fix code—even in big codebases—with universal code search, large-scale refactors, and more.',
         }}
         heroAndHeaderClassName="sg-bg-gradient-purple"
         headerColorTheme="purple"
@@ -72,13 +72,13 @@ const HomeHero: FunctionComponent = () => (
     <div className="text-white">
         <div className="mx-auto px-sm pt-md text-center md:pt-2xl">
             <h1 className="text-4xl leading-10 sm:text-6xl md:text-[3.5rem] lg:text-[4rem] lg:leading-[1]">
-                <span className="sg-bg-gradient-purple-white mb-2 bg-clip-text text-transparent">Find. Fix. Flow.</span>
+                <span className="sg-bg-gradient-purple-white mb-2 bg-clip-text text-transparent">
+                    Code intelligence
+                </span>
             </h1>
 
             <Heading size="h5" as="h2" className="my-md mx-auto max-w-4xl !font-normal">
-                Big codebases are less painful with Sourcegraph's&nbsp;code&nbsp;intelligence:
-                <br />
-                universal&nbsp;code&nbsp;search+nav and large-scale&nbsp;fixes/refactors.
+                Sourcegraph makes it easy to write, read, and fix code&mdash;even in big codebases.
             </Heading>
 
             <p className="my-md text-gray-200">
