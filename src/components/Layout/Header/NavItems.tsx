@@ -7,6 +7,8 @@ import ChevronUpIcon from 'mdi-react/ChevronUpIcon'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
+import { EXP_SOURCEGRAPH_ENTERPRISE } from '../../../data/experiments'
+
 interface NavLink {
     name: string
     href: string
@@ -19,87 +21,108 @@ interface NavSection {
 
 type NavItem = NavLink | NavSection
 
-const NAV_ITEMS: NavItem[] = [
-    {
-        name: 'Product',
-        links: [
-            {
-                name: 'Code Search',
-                href: '/code-search',
-            },
-            {
-                name: 'Batch Changes',
-                href: '/batch-changes',
-            },
-            {
-                name: 'Code Insights',
-                href: '/code-insights',
-            },
-            {
-                name: 'Cloud',
-                href: '/cloud',
-            },
-        ],
-    },
-    {
-        name: 'Resources',
-        links: [
-            {
-                name: 'All resources',
-                href: '/resources',
-            },
-            {
-                name: 'Blog',
-                href: '/blog',
-            },
-            {
-                name: 'Podcast',
-                href: '/podcast',
-            },
-            {
-                name: 'Case studies',
-                href: '/case-studies',
-            },
-            { divider: true },
-            {
-                name: 'All use cases',
-                href: '/use-cases',
-            },
-            {
-                name: 'Code security',
-                href: '/use-cases/code-security',
-            },
-            {
-                name: 'Developer onboarding',
-                href: '/use-cases/onboarding',
-            },
-            {
-                name: 'Incident response',
-                href: '/use-cases/incident-response',
-            },
-            {
-                name: 'Code reuse',
-                href: '/use-cases/code-reuse',
-            },
-            {
-                name: 'Code health',
-                href: '/use-cases/code-health',
-            },
-        ],
-    },
-    {
-        name: 'Pricing',
-        href: '/pricing',
-    },
-    {
-        name: 'Public code search',
-        href: 'https://sourcegraph.com/search',
-    },
-    {
-        name: 'Docs',
-        href: 'https://docs.sourcegraph.com',
-    },
-]
+const NAV_ITEMS: NavItem[] = EXP_SOURCEGRAPH_ENTERPRISE
+    ? [
+          {
+              name: 'Docs',
+              href: 'https://docs.sourcegraph.com',
+          },
+          {
+              name: 'Enterprise',
+              links: [
+                  { name: 'Sourcegraph Enterprise', href: '/enterprise' },
+                  { name: 'Customers', href: '/case-studies' },
+                  { name: 'Pricing', href: '/pricing' },
+                  { name: 'Contact sales', href: '/contact/request-info' },
+              ],
+          },
+          {
+              name: 'Search public code',
+              href: 'https://sourcegraph.com',
+          },
+          { name: 'Blog', href: '/blog' },
+      ]
+    : [
+          {
+              name: 'Product',
+              links: [
+                  {
+                      name: 'Code Search',
+                      href: '/code-search',
+                  },
+                  {
+                      name: 'Batch Changes',
+                      href: '/batch-changes',
+                  },
+                  {
+                      name: 'Code Insights',
+                      href: '/code-insights',
+                  },
+                  {
+                      name: 'Cloud',
+                      href: '/cloud',
+                  },
+              ],
+          },
+          {
+              name: 'Resources',
+              links: [
+                  {
+                      name: 'All resources',
+                      href: '/resources',
+                  },
+                  {
+                      name: 'Blog',
+                      href: '/blog',
+                  },
+                  {
+                      name: 'Podcast',
+                      href: '/podcast',
+                  },
+                  {
+                      name: 'Case studies',
+                      href: '/case-studies',
+                  },
+                  { divider: true },
+                  {
+                      name: 'All use cases',
+                      href: '/use-cases',
+                  },
+                  {
+                      name: 'Code security',
+                      href: '/use-cases/code-security',
+                  },
+                  {
+                      name: 'Developer onboarding',
+                      href: '/use-cases/onboarding',
+                  },
+                  {
+                      name: 'Incident response',
+                      href: '/use-cases/incident-response',
+                  },
+                  {
+                      name: 'Code reuse',
+                      href: '/use-cases/code-reuse',
+                  },
+                  {
+                      name: 'Code health',
+                      href: '/use-cases/code-health',
+                  },
+              ],
+          },
+          {
+              name: 'Pricing',
+              href: '/pricing',
+          },
+          {
+              name: 'Public code search',
+              href: 'https://sourcegraph.com/search',
+          },
+          {
+              name: 'Docs',
+              href: 'https://docs.sourcegraph.com',
+          },
+      ]
 
 interface Props {
     linkElement?: React.ComponentType<

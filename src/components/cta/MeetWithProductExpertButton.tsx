@@ -11,13 +11,23 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{
     dark?: boolean
     chevron?: boolean
     size?: 'md' | 'lg'
+    requestInfo?: boolean
     children?: string
-}> = ({ buttonLocation, dark = false, chevron = false, size = 'md', children = 'Meet with a product expert' }) => (
+    buttonClassName?: string
+}> = ({
+    buttonLocation,
+    dark = false,
+    chevron = false,
+    size = 'md',
+    buttonClassName = `${dark ? 'btn-outline-white' : 'btn-link'}`,
+    requestInfo = false,
+    children = requestInfo ? 'Contact sales' : 'Talk to an engineer',
+}) => (
     <Link
-        href="/demo"
+        href={requestInfo ? '/contact/request-info' : '/demo'}
         className={classNames(
-            'btn btn-link inline-flex items-center whitespace-nowrap',
-            dark && 'text-white hover:text-violet-200',
+            'btn inline-flex items-center whitespace-nowrap',
+            buttonClassName,
             size === 'lg' && 'py-xs'
         )}
         title={children}
