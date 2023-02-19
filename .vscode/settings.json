@@ -3,5 +3,6 @@
   "search.exclude": {
     "public/": true,
     "content/": true
-  }
+  },
+  "cody.codebase": "github.com/sourcegraph/about"
 }
