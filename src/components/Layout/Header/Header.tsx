@@ -113,34 +113,17 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
             <div
                 className={classNames(
                     'transition',
-                    // TODO(sqs): dont special-case colorTheme==='dark'
-                    (sticky || open || colorTheme === 'dark') && HEADER_CONTENT_THEME_CLASS[colorTheme].container
+                    (sticky || open) && HEADER_CONTENT_THEME_CLASS[colorTheme].container
                 )}
             >
-                <div className="mx-auto max-w-7xl px-2 lg:px-6">
+                <div className="mx-auto max-w-7xl px-2 md:px-6">
                     <div className="relative flex h-16 items-center justify-between">
-                        <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
-                            {/* Mobile menu button*/}
-                            <Disclosure.Button
-                                className={classNames(
-                                    'inline-flex items-center justify-center rounded-md p-2  focus:outline-none focus:ring-2 focus:ring-inset',
-                                    HEADER_CONTENT_THEME_CLASS[colorTheme].button
-                                )}
-                            >
-                                <span className="sr-only">Open main menu</span>
-                                {open ? (
-                                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                                ) : (
-                                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                                )}
-                            </Disclosure.Button>
-                        </div>
-                        <div className="flex flex-1 items-center justify-center lg:items-stretch lg:justify-start">
+                        <div className="flex flex-1 items-center md:items-stretch md:justify-start">
                             <div className="flex flex-shrink-0 items-center">
                                 <Link
                                     href="/"
                                     className={classNames(
-                                        '-ml-2 block rounded-md py-1 px-2 focus:outline-none focus:ring-2',
+                                        'block rounded-md py-1 px-2 focus:outline-none focus:ring-2 md:-ml-2',
                                         dark ? 'focus:ring-white' : 'focus:ring-black'
                                     )}
                                 >
@@ -156,14 +139,14 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
                             </div>
                             {!props.minimal && (
                                 <>
-                                    <div className="hidden flex-1 lg:ml-4 lg:block">
+                                    <div className="hidden flex-1 md:ml-4 md:block">
                                         <div className="flex space-x-3">
                                             <NavItems
                                                 items={NAV_LINK_SECTIONS}
-                                                classNames={{
+                                                classes={{
                                                     ...classes,
                                                     item: classNames(
-                                                        'whitespace-nowrap rounded-md p-2 font-medium focus:outline-none focus:ring-2',
+                                                        'whitespace-nowrap rounded-md p-2 font-medium text-sm focus:outline-none focus:ring-2',
                                                         classes.item
                                                     ),
                                                     menu: classNames(
@@ -174,7 +157,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
                                             />
                                         </div>
                                     </div>
-                                    <div className="absolute inset-y-0 right-0 flex items-center pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0">
+                                    <div className="hidden pr-2 md:ml-6 md:block md:pr-0">
                                         <TrySourcegraphForFreeButton buttonLocation={buttonLocation.nav} dark={dark}>
                                             Start for free
                                         </TrySourcegraphForFreeButton>
@@ -182,12 +165,28 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
                                 </>
                             )}
                         </div>
+                        <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
+                            {/* Mobile menu button*/}
+                            <Disclosure.Button
+                                className={classNames(
+                                    'inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset',
+                                    HEADER_CONTENT_THEME_CLASS[colorTheme].button
+                                )}
+                            >
+                                <span className="sr-only">Open main menu</span>
+                                {open ? (
+                                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                                ) : (
+                                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                                )}
+                            </Disclosure.Button>
+                        </div>
                     </div>
                 </div>
             </div>
             <Disclosure.Panel
                 className={classNames(
-                    'border-b lg:hidden',
+                    'border-b md:hidden',
                     HEADER_CONTENT_THEME_CLASS[colorTheme].container,
                     HEADER_CONTENT_THEME_CLASS[colorTheme].panel
                 )}
@@ -196,7 +195,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
                     <NavItems
                         items={NAV_LINK_SECTIONS}
                         linkElement={DisclosureButton}
-                        classNames={{
+                        classes={{
                             ...classes,
                             item: classNames('block rounded-md px-3 py-2 text-base font-medium', classes.item),
                         }}

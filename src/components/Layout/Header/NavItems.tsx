@@ -15,7 +15,7 @@ interface Props {
     linkElement?: React.ComponentType<
         Pick<React.ComponentProps<typeof Link>, 'href' | 'className' | 'aria-current' | 'children'>
     >
-    classNames: Record<'item' | 'menu' | 'menuItem' | 'menuItemActive', string>
+    classes: Record<'item' | 'menu' | 'menuItem' | 'menuItemActive', string>
 }
 
 const useIsCurrentLink = (): ((href: string) => boolean) => {
@@ -24,7 +24,7 @@ const useIsCurrentLink = (): ((href: string) => boolean) => {
     return isCurrentLink
 }
 
-export const NavItems: React.FunctionComponent<Props> = ({ items, linkElement = Link, classNames }) => {
+export const NavItems: React.FunctionComponent<Props> = ({ items, linkElement = Link, classes }) => {
     const isCurrentLink = useIsCurrentLink()
     return (
         <>
@@ -34,8 +34,8 @@ export const NavItems: React.FunctionComponent<Props> = ({ items, linkElement = 
                     {...item}
                     isCurrentLink={isCurrentLink}
                     linkElement={linkElement}
-                    className={classNames.item}
-                    classNames={classNames}
+                    className={classes.item}
+                    classes={classes}
                 />
             ))}
         </>
@@ -49,46 +49,40 @@ const NavItem: React.FunctionComponent<
             Pick<React.ComponentProps<typeof Link>, 'href' | 'className' | 'aria-current' | 'children'>
         >
         className: string
-        classNames: Record<'menu' | 'menuItem' | 'menuItemActive', string>
+        classes: Record<'menu' | 'menuItem' | 'menuItemActive', string>
     }
-> = ({ name, items, isCurrentLink, linkElement: LinkElement, className, classNames }) =>
+> = ({ name, items, isCurrentLink, linkElement: LinkElement, className, classes }) =>
     items.length === 1 ? (
         <LinkElement
             key={items[0].name}
             href={items[0].href}
-            className={className}
+            className={classNames('flex items-center', className)}
             aria-current={isCurrentLink(items[0].href) ? 'page' : undefined}
         >
             {items[0].name}
         </LinkElement>
     ) : (
-        <NavItemMenu
-            name={name}
-            items={items}
-            isCurrentLink={isCurrentLink}
-            className={className}
-            classNames2={classNames}
-        />
+        <NavItemMenu name={name} items={items} isCurrentLink={isCurrentLink} className={className} classes={classes} />
     )
 
 const NavItemMenu: React.FunctionComponent<
     NavLinkSection & {
         isCurrentLink: (href: string) => boolean
         className: string
-        classNames2: Record<'menu' | 'menuItem' | 'menuItemActive', string>
+        classes: Record<'menu' | 'menuItem' | 'menuItemActive', string>
     }
 > = ({
     name,
     items,
     isCurrentLink,
     className,
-    classNames2: { menu: menuClassName, menuItem: menuItemClassName, menuItemActive: menuItemActiveClassName },
+    classes: { menu: menuClassName, menuItem: menuItemClassName, menuItemActive: menuItemActiveClassName },
 }) => (
     <Menu as="div" className="relative">
         {({ open }) => (
             <>
                 <div>
-                    <Menu.Button className={classNames('flex', className)}>
+                    <Menu.Button className={classNames('flex items-center', className)}>
                         {name}
                         {open ? (
                             <ChevronUpIcon className="ml-[1px] w-xs" />
