@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import {
     Blockquote,
     ContentSection,
-    CtaSection,
+    CallToActionContentSection,
     Figure,
     Hero,
     Layout,
@@ -248,7 +248,7 @@ export const BatchChangesPage: FunctionComponent = () => (
             <YouTube title="Sourcegraph Batch Changes demo" id="eOmiyXIWTCw" className="mx-auto max-w-4xl" />
         </ContentSection>
 
-        <CtaSection />
+        <CallToActionContentSection />
     </Layout>
 )
 

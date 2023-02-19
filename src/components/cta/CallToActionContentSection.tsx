@@ -69,7 +69,7 @@ const Cta: FunctionComponent<Cta> = ({ text, ctaStyle, link }) => {
 /**
  * This is our CTA Section as defined in our DLS. Please refer to it for specs.
  */
-export const CtaSection: FunctionComponent<CtaSection> = ({
+export const CallToActionContentSection: FunctionComponent<CtaSection> = ({
     title = 'Try Sourcegraph on your code.',
     description = 'Experience code intelligence with a free trial for you and your team, or search millions of open source repositories.',
     cta1 = {
@@ -90,9 +90,9 @@ export const CtaSection: FunctionComponent<CtaSection> = ({
         <>
             <div className="bg-violet-700 text-white">
                 <div
-                    className="mx-auto grid h-full min-h-[291px] max-w-screen-xl grid-cols-12 items-center bg-[center_left] bg-repeat-y px-sm py-3xl lg:pl-0"
+                    className="bg-[] mx-auto grid h-full min-h-[291px] max-w-screen-xl grid-cols-12 items-center bg-[center_left] bg-repeat-y px-sm py-3xl lg:pl-0"
                     // eslint-disable-next-line react/forbid-dom-props
-                    style={lgAndUp ? { background: `url('${illustration}')` } : undefined}
+                    style={lgAndUp ? { backgroundImage: `url('${illustration}')` } : undefined}
                 >
                     <div className="col-span-full md:col-span-7 lg:col-span-5 lg:col-start-4 lg:pl-xl">
                         <h2 className="mb-sm text-violet-200">{title}</h2>

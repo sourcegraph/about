@@ -9,7 +9,7 @@ import {
     Layout,
     ResourceList,
     Hero,
-    CtaSection,
+    CallToActionContentSection,
 } from '../components'
 
 const resourceItems = [
@@ -71,7 +71,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
 
         <ResourceList items={resourceItems} />
 
-        <CtaSection />
+        <CallToActionContentSection />
     </Layout>
 )
 

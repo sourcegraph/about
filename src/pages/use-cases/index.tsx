@@ -7,7 +7,7 @@ import {
     Background,
     Blockquote,
     ContentSection,
-    CtaSection,
+    CallToActionContentSection,
     CustomerLogos,
     Layout,
     TwoColumnSection,
@@ -386,7 +386,7 @@ const UseCases: React.FunctionComponent = () => (
             </ContentSection>
 
             <div className="border-t border-t-gray-200">
-                <CtaSection />
+                <CallToActionContentSection />
             </div>
         </div>
     </Layout>

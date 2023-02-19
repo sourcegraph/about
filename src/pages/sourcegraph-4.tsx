@@ -10,7 +10,7 @@ import { TwitchPlayer } from 'react-twitch-embed'
 
 import {
     ContentSection,
-    CtaSection,
+    CallToActionContentSection,
     CustomerLogos,
     Layout,
     ThreeUpText,
@@ -187,7 +187,7 @@ const Sourcegraph4: FunctionComponent = () => (
             <CustomerLogos />
         </ContentSection>
 
-        <CtaSection
+        <CallToActionContentSection
             cta2={{
                 text: 'View pricing',
                 ctaStyle: 'outlineButtonLight',

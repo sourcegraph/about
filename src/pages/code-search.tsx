@@ -9,7 +9,7 @@ import {
     TwoColumnSection,
     Video,
     ResourceList,
-    CtaSection,
+    CallToActionContentSection,
 } from '../components'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { buttonLocation } from '../data/tracking'
@@ -216,7 +216,7 @@ export const CodeSearchPage: FunctionComponent = () => (
 
         <IntegrationsSection />
 
-        <CtaSection />
+        <CallToActionContentSection />
 
         <ResourceList items={blogResources} title="Learn More" />
     </Layout>

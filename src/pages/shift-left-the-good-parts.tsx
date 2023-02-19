@@ -2,7 +2,14 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, ContentSection, TwoColumnSection, Video, ResourceList, CtaSection } from '../components'
+import {
+    Layout,
+    ContentSection,
+    TwoColumnSection,
+    Video,
+    ResourceList,
+    CallToActionContentSection,
+} from '../components'
 import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const blogResourceItems = [
@@ -283,7 +290,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                     by using tools that enable the developer to take full charge of shipping a new feature or bug fix.
                 </p>
 
-                <CtaSection />
+                <CallToActionContentSection />
             </div>
         </ContentSection>
 

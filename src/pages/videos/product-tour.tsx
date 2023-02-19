@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, Hero, CtaSection, ContentSection, YouTube } from '../../components'
+import { Layout, Hero, CallToActionContentSection, ContentSection, YouTube } from '../../components'
 
 const Webinar: FunctionComponent = () => {
     const title = 'Code Intelligence Platform - Product Tour'
@@ -20,7 +20,7 @@ const Webinar: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <CtaSection />
+            <CallToActionContentSection />
         </Layout>
     )
 }

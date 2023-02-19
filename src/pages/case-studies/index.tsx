@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CtaSection } from '../../components'
+import { Layout, CallToActionContentSection } from '../../components'
 import { CaseStudyCard, CASESTUDIES } from '../../components/CaseStudies/CaseStudyCard'
 
 const CaseStudiesHome: FunctionComponent = () => (
@@ -30,7 +30,7 @@ const CaseStudiesHome: FunctionComponent = () => (
                     </ul>
                 </div>
 
-                <CtaSection />
+                <CallToActionContentSection />
             </div>
         </Layout>
     </>

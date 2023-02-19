@@ -8,7 +8,7 @@ import TrendingUpIcon from 'mdi-react/TrendingUpIcon'
 import {
     Blockquote,
     ContentSection,
-    CtaSection,
+    CallToActionContentSection,
     CustomCarousel,
     Hero,
     Layout,
@@ -543,7 +543,7 @@ const CodeInsightsPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <CtaSection />
+        <CallToActionContentSection />
 
         <ResourceList items={blogResourceItems} title="Learn More" />
     </Layout>

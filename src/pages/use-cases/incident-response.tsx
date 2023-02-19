@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 import {
     ContentSection,
-    CtaSection,
+    CallToActionContentSection,
     CustomCarousel,
     CustomerLogos,
     Hero,
@@ -265,7 +265,7 @@ const IncidentResponsePage: FunctionComponent = () => (
 
         <ResourceList items={blogResourceItems} />
 
-        <CtaSection />
+        <CallToActionContentSection />
     </Layout>
 )
 

@@ -6,7 +6,7 @@ import Link from 'next/link'
 import {
     ContentSection,
     CoreFeatures,
-    CtaSection,
+    CallToActionContentSection,
     Layout,
     IntegrationsSection,
     CustomerLogos,
@@ -63,7 +63,7 @@ const Home: FunctionComponent = () => (
 
         <IntegrationsSection />
 
-        <CtaSection />
+        <CallToActionContentSection />
     </Layout>
 )
 

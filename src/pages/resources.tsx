@@ -11,7 +11,7 @@ import {
     ContentSection,
     useFilters,
     Hero,
-    CtaSection,
+    CallToActionContentSection,
 } from '../components'
 
 const sortResources = (resources: Resource[]): Resource[] =>
@@ -109,7 +109,7 @@ const Resources: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <CtaSection />
+            <CallToActionContentSection />
         </Layout>
     )
 }

@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import { kebabCase } from 'lodash'
 
-import { ContentSection, CtaSection } from '..'
+import { ContentSection, CallToActionContentSection } from '..'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 import { CaseStudyJumbotron } from './CaseStudyJumbotron'
@@ -111,6 +111,6 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
             {children}
         </div>
 
-        <CtaSection />
+        <CallToActionContentSection />
     </>
 )

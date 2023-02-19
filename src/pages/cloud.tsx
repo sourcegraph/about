@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import { FaGitAlt, FaLocationArrow } from 'react-icons/fa'
 import { MdOutlineAvTimer, MdBarChart } from 'react-icons/md'
 
-import { Layout, Hero, ContentSection, CtaSection, TwoColumnSection, Blockquote } from '../components'
+import { Layout, Hero, ContentSection, CallToActionContentSection, TwoColumnSection, Blockquote } from '../components'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { buttonLocation } from '../data/tracking'
 
@@ -180,7 +180,7 @@ const Cloud: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <CtaSection />
+        <CallToActionContentSection />
     </Layout>
 )
 

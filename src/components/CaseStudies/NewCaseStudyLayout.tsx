@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { ContentSection, CtaSection } from '..'
+import { ContentSection, CallToActionContentSection } from '..'
 
 import { CaseStudyCard, CASESTUDIES } from './CaseStudyCard'
 
@@ -18,7 +18,7 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, childre
         <>
             {children}
 
-            <CtaSection />
+            <CallToActionContentSection />
 
             <ContentSection background="white">
                 <h2 className="mb-2xl">Explore other case studies</h2>

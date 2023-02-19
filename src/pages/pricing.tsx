@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 import {
     ContentSection,
-    CtaSection,
+    CallToActionContentSection,
     CustomerLogos,
     Layout,
     PricingPlan,
@@ -254,7 +254,7 @@ const PricingPage: FunctionComponent = () => {
                 </table>
             </div>
 
-            <CtaSection
+            <CallToActionContentSection
                 title="Free for small teams"
                 description="Small teams can use a limited version of Sourcegraph’s code intelligence platform for free to search personal and open source projects. The free version can only be self-hosted and supports one code host integration."
                 cta1={{
