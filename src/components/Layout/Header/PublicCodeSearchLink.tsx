@@ -11,13 +11,13 @@ export const PublicCodeSearchLink: React.FunctionComponent<{ dark: boolean }> = 
     <a
         href="https://sourcegraph.com/search"
         className={classNames(
-            'btn flex items-center whitespace-nowrap rounded border py-1 pl-2 pr-3 text-xs !font-normal',
+            'btn flex items-center whitespace-nowrap rounded border py-1 pl-2 pr-3 text-sm !font-normal',
             dark
                 ? 'border-white/30 bg-white/5 text-white/60 hover:border-white hover:bg-white/25 hover:text-white'
                 : 'border-black/50 bg-white/25 text-black/60 hover:border-black hover:bg-white hover:text-black'
         )}
     >
         <SearchIcon className="mr-1 h-[18px] w-[18px]" /> <span className="lg:hidden">Public code</span>
-        <span className="hidden lg:inline">Search public code...</span>
+        <span className="hidden lg:inline">Public code search</span>
     </a>
 )
