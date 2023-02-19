@@ -11,7 +11,8 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{
     dark?: boolean
     chevron?: boolean
     size?: 'md' | 'lg'
-}> = ({ buttonLocation, dark = false, chevron = false, size = 'md' }) => (
+    children?: string
+}> = ({ buttonLocation, dark = false, chevron = false, size = 'md', children = 'Meet with a product expert' }) => (
     <Link
         href="/demo"
         className={classNames(
@@ -19,11 +20,11 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{
             dark && 'text-white hover:text-violet-200',
             size === 'lg' && 'py-xs'
         )}
-        title="Meet with a product expert"
+        title={children}
         data-button-style={buttonStyle.outline}
         data-button-location={buttonLocation}
         data-button-type="cta"
     >
-        Meet with a product expert {chevron && <ChevronRightIcon className="ml-[3px]" />}
+        {children} {chevron && <ChevronRightIcon className="ml-[3px]" />}
     </Link>
 )
