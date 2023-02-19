@@ -70,7 +70,7 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme }) => {
 
 const HEADER_CONTENT_THEME_CLASS: Record<
     HeaderColorTheme,
-    Record<'container' | 'item' | 'menu' | 'menuItem' | 'menuItemActive' | 'button' | 'panel', string>
+    Record<'container' | 'item' | 'menu' | 'menuItem' | 'menuItemActive' | 'divider' | 'button' | 'panel', string>
 > = {
     white: {
         container: 'bg-white',
@@ -78,15 +78,17 @@ const HEADER_CONTENT_THEME_CLASS: Record<
         menu: 'bg-white ring-black',
         menuItem: 'text-black',
         menuItemActive: 'bg-violet-200',
+        divider: 'border-black/25',
         button: 'text-gray-500 hover:bg-violet-200 hover:text-black focus:ring-black',
         panel: 'border-black/25',
     },
     dark: {
         container: 'bg-black',
-        item: 'text-white hover:bg-[#ffffff33] focus:ring-white',
+        item: 'text-white hover:bg-white/25 focus:ring-white',
         menu: 'bg-gray-700 ring-white',
         menuItem: 'text-white',
         menuItemActive: 'bg-gray-600',
+        divider: 'border-white/25',
         button: 'text-gray-300 hover:bg-gray-700 hover:text-white focus:ring-white',
         panel: 'border-white/25',
     },
@@ -96,6 +98,7 @@ const HEADER_CONTENT_THEME_CLASS: Record<
         menu: 'bg-violet-750 ring-white',
         menuItem: 'text-white',
         menuItemActive: 'bg-violet-600',
+        divider: 'border-white/25',
         button: 'text-gray-300 hover:bg-gray-700 hover:text-white focus:ring-white',
         panel: 'border-white/25',
     },
@@ -151,7 +154,6 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
                                     <div className="hidden flex-1 md:ml-4 md:block">
                                         <div className="flex space-x-3">
                                             <NavItems
-                                                items={NAV_LINK_SECTIONS}
                                                 classes={{
                                                     ...classes,
                                                     item: classNames(
@@ -200,7 +202,6 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
             >
                 <div className="space-y-1 px-2 pt-2 pb-3">
                     <NavItems
-                        items={NAV_LINK_SECTIONS}
                         linkElement={DisclosureButton}
                         classes={{
                             ...classes,
@@ -217,95 +218,3 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
 const DisclosureButton: React.FunctionComponent<
     Pick<React.ComponentProps<typeof Link>, 'href' | 'className' | 'aria-current' | 'children'>
 > = props => <Disclosure.Button as={Link} {...props} />
-
-export interface NavLinkSection {
-    name: string
-    items: { name: string; href: string }[]
-}
-
-const NAV_LINK_SECTIONS: NavLinkSection[] = [
-    {
-        name: 'Product',
-        items: [
-            {
-                name: 'Code Search',
-                href: '/code-search',
-            },
-            {
-                name: 'Batch Changes',
-                href: '/batch-changes',
-            },
-            {
-                name: 'Code Insights',
-                href: '/code-insights',
-            },
-            {
-                name: 'Cloud',
-                href: '/cloud',
-            },
-        ],
-    },
-    {
-        name: 'Resources',
-        items: [
-            {
-                name: 'All resources',
-                href: '/resources',
-            },
-            {
-                name: 'Blog',
-                href: '/blog',
-            },
-            {
-                name: 'Podcast',
-                href: '/podcast',
-            },
-            {
-                name: 'Case studies',
-                href: '/case-studies',
-            },
-            {
-                name: 'All use cases',
-                href: '/use-cases',
-            },
-            {
-                name: 'Code security',
-                href: '/use-cases/code-security',
-            },
-            {
-                name: 'Developer onboarding',
-                href: '/use-cases/onboarding',
-            },
-            {
-                name: 'Incident response',
-                href: '/use-cases/incident-response',
-            },
-            {
-                name: 'Code reuse',
-                href: '/use-cases/code-reuse',
-            },
-            {
-                name: 'Code health',
-                href: '/use-cases/code-health',
-            },
-        ],
-    },
-    {
-        name: 'Pricing',
-        items: [
-            {
-                name: 'Pricing',
-                href: '/pricing',
-            },
-        ],
-    },
-    {
-        name: 'Docs',
-        items: [
-            {
-                name: 'Docs',
-                href: 'https://docs.sourcegraph.com',
-            },
-        ],
-    },
-]

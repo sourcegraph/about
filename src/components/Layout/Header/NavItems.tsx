@@ -7,76 +7,149 @@ import ChevronUpIcon from 'mdi-react/ChevronUpIcon'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { NavLinkSection } from './Header'
+interface NavLink {
+    name: string
+    href: string
+}
+
+interface NavSection {
+    name: string
+    links: (NavLink | { divider: true })[]
+}
+
+type NavItem = NavLink | NavSection
+
+const NAV_ITEMS: NavItem[] = [
+    {
+        name: 'Product',
+        links: [
+            {
+                name: 'Code Search',
+                href: '/code-search',
+            },
+            {
+                name: 'Batch Changes',
+                href: '/batch-changes',
+            },
+            {
+                name: 'Code Insights',
+                href: '/code-insights',
+            },
+            {
+                name: 'Cloud',
+                href: '/cloud',
+            },
+        ],
+    },
+    {
+        name: 'Resources',
+        links: [
+            {
+                name: 'All resources',
+                href: '/resources',
+            },
+            {
+                name: 'Blog',
+                href: '/blog',
+            },
+            {
+                name: 'Podcast',
+                href: '/podcast',
+            },
+            {
+                name: 'Case studies',
+                href: '/case-studies',
+            },
+            { divider: true },
+            {
+                name: 'All use cases',
+                href: '/use-cases',
+            },
+            {
+                name: 'Code security',
+                href: '/use-cases/code-security',
+            },
+            {
+                name: 'Developer onboarding',
+                href: '/use-cases/onboarding',
+            },
+            {
+                name: 'Incident response',
+                href: '/use-cases/incident-response',
+            },
+            {
+                name: 'Code reuse',
+                href: '/use-cases/code-reuse',
+            },
+            {
+                name: 'Code health',
+                href: '/use-cases/code-health',
+            },
+        ],
+    },
+    {
+        name: 'Pricing',
+        href: '/pricing',
+    },
+    {
+        name: 'Docs',
+        href: 'https://docs.sourcegraph.com',
+    },
+]
 
 interface Props {
-    items: NavLinkSection[]
-
     linkElement?: React.ComponentType<
         Pick<React.ComponentProps<typeof Link>, 'href' | 'className' | 'aria-current' | 'children'>
     >
-    classes: Record<'item' | 'menu' | 'menuItem' | 'menuItemActive', string>
+    classes: Record<'item' | 'menu' | 'menuItem' | 'menuItemActive' | 'divider', string>
 }
 
-const useIsCurrentLink = (): ((href: string) => boolean) => {
+export const NavItems: React.FunctionComponent<Props> = ({ linkElement: LinkElement = Link, classes }) => {
     const router = useRouter()
     const isCurrentLink = useCallback((href: string): boolean => router.asPath === href, [router.asPath])
-    return isCurrentLink
-}
-
-export const NavItems: React.FunctionComponent<Props> = ({ items, linkElement = Link, classes }) => {
-    const isCurrentLink = useIsCurrentLink()
     return (
         <>
-            {items.map(item => (
-                <NavItem
-                    key={item.name}
-                    {...item}
-                    isCurrentLink={isCurrentLink}
-                    linkElement={linkElement}
-                    className={classes.item}
-                    classes={classes}
-                />
-            ))}
+            {NAV_ITEMS.map(item =>
+                'href' in item ? (
+                    <LinkElement
+                        key={item.name}
+                        href={item.href}
+                        className={classNames('flex items-center', classes.item)}
+                        aria-current={isCurrentLink(item.href) ? 'page' : undefined}
+                    >
+                        {item.name}
+                    </LinkElement>
+                ) : (
+                    <NavItemMenu
+                        name={item.name}
+                        links={item.links}
+                        isCurrentLink={isCurrentLink}
+                        className={classes.item}
+                        classes={classes}
+                    />
+                )
+            )}
         </>
     )
 }
 
-const NavItem: React.FunctionComponent<
-    NavLinkSection & {
-        isCurrentLink: (href: string) => boolean
-        linkElement: React.ComponentType<
-            Pick<React.ComponentProps<typeof Link>, 'href' | 'className' | 'aria-current' | 'children'>
-        >
-        className: string
-        classes: Record<'menu' | 'menuItem' | 'menuItemActive', string>
-    }
-> = ({ name, items, isCurrentLink, linkElement: LinkElement, className, classes }) =>
-    items.length === 1 ? (
-        <LinkElement
-            key={items[0].name}
-            href={items[0].href}
-            className={classNames('flex items-center', className)}
-            aria-current={isCurrentLink(items[0].href) ? 'page' : undefined}
-        >
-            {items[0].name}
-        </LinkElement>
-    ) : (
-        <NavItemMenu name={name} items={items} isCurrentLink={isCurrentLink} className={className} classes={classes} />
-    )
-
 const NavItemMenu: React.FunctionComponent<
-    NavLinkSection & {
+    NavSection & {
         isCurrentLink: (href: string) => boolean
         className: string
-        classes: Record<'menu' | 'menuItem' | 'menuItemActive', string>
+        classes: Record<'menu' | 'menuItem' | 'menuItemActive' | 'divider', string>
     }
 > = ({
     name,
-    items,
+    links,
     isCurrentLink,
     className,
-    classes: { menu: menuClassName, menuItem: menuItemClassName, menuItemActive: menuItemActiveClassName },
+    classes: {
+        menu: menuClassName,
+        menuItem: menuItemClassName,
+        menuItemActive: menuItemActiveClassName,
+        divider: dividerClassName,
+    },
 }) => (
     <Menu as="div" className="relative">
         {({ open }) => (
@@ -106,23 +179,29 @@ const NavItemMenu: React.FunctionComponent<
                             'mt-2 rounded-md py-1 ring-1 ring-opacity-25 focus:outline-none'
                         )}
                     >
-                        {items.map(item => (
-                            <Menu.Item key={item.name}>
-                                {({ active }) => (
-                                    <Link
-                                        href={item.href}
-                                        className={classNames(
-                                            'block px-4 py-2 text-sm',
-                                            menuItemClassName,
-                                            active && menuItemActiveClassName
-                                        )}
-                                        aria-current={isCurrentLink(item.href) ? 'page' : undefined}
-                                    >
-                                        {item.name}
-                                    </Link>
-                                )}
-                            </Menu.Item>
-                        ))}
+                        {links.map(link =>
+                            'divider' in link ? (
+                                <Menu.Item disabled={true}>
+                                    <hr className={classNames('my-1', dividerClassName)} />
+                                </Menu.Item>
+                            ) : (
+                                <Menu.Item key={link.name}>
+                                    {({ active }) => (
+                                        <Link
+                                            href={link.href}
+                                            className={classNames(
+                                                'block px-4 py-2 text-sm',
+                                                menuItemClassName,
+                                                active && menuItemActiveClassName
+                                            )}
+                                            aria-current={isCurrentLink(link.href) ? 'page' : undefined}
+                                        >
+                                            {link.name}
+                                        </Link>
+                                    )}
+                                </Menu.Item>
+                            )
+                        )}
                     </Menu.Items>
                 </Transition>
             </>
