@@ -269,7 +269,7 @@ const PricingPage: FunctionComponent = () => {
                 <h2 className="col-span-full mb-md max-w-md md:col-span-2">Frequently asked questions</h2>
 
                 <div className="col-span-full md:col-span-3">
-                    {faqData.map((item, index) => (
+                    {faqData.map(item => (
                         <div key={item.q} className="mb-sm max-w-2xl border-t-1 border-gray-200">
                             <div className="flex items-center justify-between">
                                 <h4 className="mt-sm text-start">{item.q}</h4>
