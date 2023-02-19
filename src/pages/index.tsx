@@ -81,7 +81,7 @@ const HomeHero: FunctionComponent = () => (
                 Sourcegraph makes it easy to write, read, and fix code&mdash;even in big codebases.
             </Heading>
 
-            <p className="my-md text-gray-200">
+            <p className="my-md text-white/75">
                 Works&nbsp;alongside your code&nbsp;host and editor.
                 <br />
                 Built on{' '}
