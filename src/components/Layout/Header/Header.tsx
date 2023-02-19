@@ -108,6 +108,11 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
 }) => {
     const dark = colorTheme === 'dark' || colorTheme === 'purple'
     const classes = HEADER_CONTENT_THEME_CLASS[colorTheme]
+    const callToAction = (
+        <TrySourcegraphForFreeButton buttonLocation={buttonLocation.nav} dark={dark}>
+            Start for free
+        </TrySourcegraphForFreeButton>
+    )
     return (
         <>
             <div
@@ -157,11 +162,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
                                             />
                                         </div>
                                     </div>
-                                    <div className="hidden pr-2 md:ml-6 md:block md:pr-0">
-                                        <TrySourcegraphForFreeButton buttonLocation={buttonLocation.nav} dark={dark}>
-                                            Start for free
-                                        </TrySourcegraphForFreeButton>
-                                    </div>
+                                    <div className="hidden pr-2 md:ml-6 md:block md:pr-0">{callToAction}</div>
                                 </>
                             )}
                         </div>
@@ -200,6 +201,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
                             item: classNames('block rounded-md px-3 py-2 text-base font-medium', classes.item),
                         }}
                     />
+                    <div className="!mt-4">{callToAction}</div>
                 </div>
             </Disclosure.Panel>
         </>
