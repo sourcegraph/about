@@ -23,7 +23,7 @@ const Home: FunctionComponent = () => (
             description:
                 'Sourcegraph makes it easy to write, read, and fix code—even in big codebases—with universal code search, large-scale refactors, and more.',
         }}
-        heroAndHeaderClassName="sg-bg-gradient-purple"
+        heroAndHeaderClassName="sg-bg-gradient-purple text-white"
         headerColorTheme="purple"
         className="bg-violet-750"
         hero={<HomeHero />}
@@ -69,7 +69,7 @@ const Home: FunctionComponent = () => (
 )
 
 const HomeHero: FunctionComponent = () => (
-    <div className="text-white">
+    <>
         <div className="mx-auto px-sm pt-md text-center md:pt-2xl">
             <h1 className="text-4xl leading-10 sm:text-6xl md:text-[3.5rem] lg:text-[4rem] lg:leading-[1]">
                 <span className="sg-bg-gradient-purple-white mb-2 bg-clip-text text-transparent">
@@ -114,7 +114,7 @@ const HomeHero: FunctionComponent = () => (
                 />
             </div>
         </SolidColorBottomHalfSection>
-    </div>
+    </>
 )
 
 const SolidColorBottomHalfSection: React.FunctionComponent<{
