@@ -111,7 +111,13 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
                     {props.hero}
                 </div>
             )}
-
+            <style>{`body { background-color: ${
+                headerColorTheme === 'purple'
+                    ? 'var(--sg-color-violet-750)'
+                    : headerColorTheme === 'dark'
+                    ? 'black'
+                    : 'var(--sg-color-gray-50)'
+            }; }`}</style>
             <section className="flex-1">{props.children}</section>
 
             {!props.hideFooter && (

@@ -164,7 +164,13 @@ interface Props {
 export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, className }) => {
     const year = useMemo(() => new Date().getFullYear(), [])
     return (
-        <footer className={classNames(className, !minimal && 'pt-16 pb-2', dark ? 'bg-black text-white' : '')}>
+        <footer
+            className={classNames(
+                className,
+                !minimal && 'pt-16 pb-2',
+                dark ? 'bg-black text-white' : 'bg-gray-50 text-black'
+            )}
+        >
             <div className="mx-auto max-w-screen-xl px-4">
                 {!minimal && (
                     <div className="mb-8 flex flex-col-reverse sm:grid sm:grid-cols-12">

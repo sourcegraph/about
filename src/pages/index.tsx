@@ -25,6 +25,7 @@ const Home: FunctionComponent = () => (
         }}
         heroAndHeaderClassName="sg-bg-gradient-purple"
         headerColorTheme="purple"
+        className="bg-violet-750"
         hero={<HomeHero />}
     >
         <ContentSection background="white">

@@ -13,9 +13,6 @@
     html {
         @apply font-sans text-base tracking-normal font-normal antialiased;
     }
-    body {
-        @apply bg-gray-50;
-    }
     h1 {
         @apply font-sans text-6xl md:text-7xl tracking-normal font-semibold;
     }
