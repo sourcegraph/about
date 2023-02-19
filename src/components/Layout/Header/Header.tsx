@@ -9,7 +9,6 @@ import { buttonLocation } from '../../../data/tracking'
 import { TrySourcegraphForFreeButton } from '../../cta/TrySourcegraphForFreeButton'
 
 import { NavItems } from './NavItems'
-import { PublicCodeSearchLink } from './PublicCodeSearchLink'
 
 export type HeaderColorTheme = 'purple' | 'dark' | 'white'
 
@@ -113,12 +112,9 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
     const dark = colorTheme === 'dark' || colorTheme === 'purple'
     const classes = HEADER_CONTENT_THEME_CLASS[colorTheme]
     const callToAction = (
-        <>
-            <PublicCodeSearchLink dark={dark} />
-            <TrySourcegraphForFreeButton buttonLocation={buttonLocation.nav} dark={dark}>
-                Start for free
-            </TrySourcegraphForFreeButton>
-        </>
+        <TrySourcegraphForFreeButton buttonLocation={buttonLocation.nav} dark={dark}>
+            Start for free
+        </TrySourcegraphForFreeButton>
     )
     return (
         <>

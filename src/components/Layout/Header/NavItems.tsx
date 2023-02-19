@@ -92,6 +92,10 @@ const NAV_ITEMS: NavItem[] = [
         href: '/pricing',
     },
     {
+        name: 'Public code search',
+        href: 'https://sourcegraph.com/search',
+    },
+    {
         name: 'Docs',
         href: 'https://docs.sourcegraph.com',
     },
