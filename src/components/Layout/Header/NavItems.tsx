@@ -92,6 +92,10 @@ const NAV_ITEMS: NavItem[] = [
         href: '/pricing',
     },
     {
+        name: 'Public code search',
+        href: 'https://sourcegraph.com/search',
+    },
+    {
         name: 'Docs',
         href: 'https://docs.sourcegraph.com',
     },
@@ -121,6 +125,7 @@ export const NavItems: React.FunctionComponent<Props> = ({ linkElement: LinkElem
                     </LinkElement>
                 ) : (
                     <NavItemMenu
+                        key={item.name}
                         name={item.name}
                         links={item.links}
                         isCurrentLink={isCurrentLink}
@@ -179,9 +184,10 @@ const NavItemMenu: React.FunctionComponent<
                             'mt-2 rounded-md py-1 ring-1 ring-opacity-25 focus:outline-none'
                         )}
                     >
-                        {links.map(link =>
+                        {links.map((link, index) =>
                             'divider' in link ? (
-                                <Menu.Item disabled={true}>
+                                // eslint-disable-next-line react/no-array-index-key
+                                <Menu.Item key={index} disabled={true}>
                                     <hr className={classNames('my-1', dividerClassName)} />
                                 </Menu.Item>
                             ) : (
