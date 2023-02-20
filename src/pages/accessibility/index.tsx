@@ -18,7 +18,7 @@ const Accessibility: React.FunctionComponent = () => (
             <p>You can check our progress and contribute to accessibility improvements on our <a href="https://github.com/orgs/sourcegraph/projects/238" target="_blank" rel="noopener noreferrer">GitHub project board</a></p>
 
             <h2 className="mt-xl mb-xs">Contact us</h2>
-            <p>If you encounter any accessibility issues while using our product, please let us know by <a href="https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=accessibility%2Cwcag%2F2.1%2Cwcag%2F2.1%2Ffixing&template=accessibility_issue.yaml&title=%5BAccessibility%5D%3A+">raising an issue on GitHub</a>.</p>
+            <p>If you encounter any accessibility issues while using our product, please let us know by <a href="https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=accessibility%2Cwcag%2F2.1%2Cwcag%2F2.1%2Ffixing&template=accessibility_issue.yaml&title=%5BAccessibility%5D%3A+" target="_blank" rel="noopener noreferrer">raising an issue on GitHub</a>.</p>
             <p>We welcome feedback from our users on how we can improve accessibility. If you have any other questions or concerns, please <Link href="/contact">contact us</Link>.</p>
         </ContentSection>
     </Layout>
