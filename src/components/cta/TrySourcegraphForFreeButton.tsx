@@ -17,7 +17,7 @@ export const TrySourcegraphForFreeButton: React.FunctionComponent<{
             size === 'lg' && 'py-xs'
         )}
         href="https://signup.sourcegraph.com"
-        title="Start for free"
+        title={children}
         data-button-style={buttonStyle.primary}
         data-button-location={buttonLocation}
         data-button-type="cta"

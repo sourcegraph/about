@@ -13,15 +13,11 @@ export const StandardCallToAction: React.FunctionComponent<{
     size?: 'md' | 'lg'
 }> = ({ center, buttonLocation, dark = false, chevron = false, size = 'md' }) => (
     <div
-        className={classNames('mx-auto w-full flex-col items-center sm:flex sm:flex-row', {
+        className={classNames('mx-auto flex w-full flex-col items-center gap-4 sm:flex sm:flex-row', {
             'justify-center': center,
         })}
     >
-        <div className="mb-4 sm:mb-0 sm:mr-4 sm:px-0">
-            <TrySourcegraphForFreeButton buttonLocation={buttonLocation} dark={dark} size={size} />
-        </div>
-        <div>
-            <MeetWithProductExpertButton buttonLocation={buttonLocation} dark={dark} chevron={chevron} size={size} />
-        </div>
+        <TrySourcegraphForFreeButton buttonLocation={buttonLocation} dark={dark} size={size} />
+        <MeetWithProductExpertButton buttonLocation={buttonLocation} dark={dark} chevron={chevron} size={size} />
     </div>
 )

@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import classNames from 'classnames'
+import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
 import {
@@ -12,8 +12,11 @@ import {
     CustomerLogos,
     Heading,
 } from '../components'
+import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { DemoVideo } from '../components/DemoVideo'
+import { GetStartedButton } from '../components/GetStartedButton'
+import { EXP_GET_STARTED, EXP_HIDE_SUBTEXT, EXP_SOURCEGRAPH_ENTERPRISE } from '../data/experiments'
 import { buttonLocation, buttonStyle } from '../data/tracking'
 
 const Home: FunctionComponent = () => (
@@ -21,9 +24,9 @@ const Home: FunctionComponent = () => (
         meta={{
             title: 'Sourcegraph - Code Intelligence Platform',
             description:
-                "Big codebases are less painful with Sourcegraph's code intelligence: universal code search+nav and large-scale fixes/refactors.",
+                'Sourcegraph makes it easy to write, read, and fix code—even in big codebases—with universal code search, large-scale refactors, and more.',
         }}
-        heroAndHeaderClassName="sg-bg-gradient-purple"
+        heroAndHeaderClassName="sg-bg-gradient-purple text-white"
         headerColorTheme="purple"
         className="bg-violet-750"
         hero={<HomeHero />}
@@ -69,62 +72,97 @@ const Home: FunctionComponent = () => (
 )
 
 const HomeHero: FunctionComponent = () => (
-    <div className="text-white">
-        <div className="mx-auto px-sm pt-md text-center md:pt-2xl">
-            <h1 className="text-4xl leading-10 sm:text-6xl md:text-[3.5rem] lg:text-[4rem] lg:leading-[1]">
-                <span className="sg-bg-gradient-purple-white mb-2 bg-clip-text text-transparent">Find. Fix. Flow.</span>
+    <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-2 py-8 md:grid-cols-[2fr_3fr] md:px-6 md:pt-12 md:pb-16 lg:grid-cols-[3fr_5fr] lg:gap-12">
+        <div className="flex flex-col items-center gap-6 text-center xl:gap-8">
+            <h1 className="text-5xl leading-[2rem] lg:text-6xl xl:text-7xl">
+                <span className="sg-bg-gradient-purple-white whitespace-nowrap bg-clip-text text-transparent">
+                    Code intelligence
+                </span>
             </h1>
 
-            <Heading size="h5" as="h2" className="my-md mx-auto max-w-4xl !font-normal">
-                Big codebases are less painful with Sourcegraph's&nbsp;code&nbsp;intelligence:
-                <br />
-                universal&nbsp;code&nbsp;search+nav and large-scale&nbsp;fixes/refactors.
-            </Heading>
-
-            <p className="my-md text-gray-200">
-                Works&nbsp;alongside your code&nbsp;host and editor.
-                <br />
-                Built on{' '}
-                <a
-                    href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-inherit underline decoration-[#ffffff55] decoration-dotted decoration-1 underline-offset-4"
-                >
-                    open source
-                </a>
-                .
+            <p className="mx-auto mb-0 text-lg !font-normal md:text-base lg:text-xl">
+                Sourcegraph makes it easy to read, write, and fix&nbsp;code&mdash;even in big&nbsp;codebases.
             </p>
 
-            <StandardCallToAction
-                center={true}
-                buttonLocation={buttonLocation.hero}
-                dark={true}
-                chevron={true}
-                size="lg"
+            {!EXP_HIDE_SUBTEXT && (
+                <p className="mb-0 text-sm text-white/75">
+                    Universal code search/nav + large-scale fixes/refactors.
+                    <br />
+                    Works&nbsp;alongside your code&nbsp;host and editor.
+                    <br />
+                    Built on{' '}
+                    <a
+                        href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-inherit underline decoration-white/25 decoration-dotted decoration-1 underline-offset-4 hover:text-white hover:decoration-white hover:decoration-solid"
+                    >
+                        open source
+                    </a>
+                    .
+                </p>
+            )}
+
+            <div className="max-w-sm md:w-full">
+                {EXP_GET_STARTED ? (
+                    <>
+                        <Heading size="h6" className="mb-1 text-sm text-white/75">
+                            Get started:
+                        </Heading>
+                        <GetStartedButton
+                            buttonLocation={buttonLocation.hero}
+                            className="w-full"
+                            buttonGroupClassName="items-stretch"
+                            otherVariantsClassName={{
+                                container: 'relative mt-[15px]',
+                                triangle: 'absolute right-[3px] top-[-30px] h-[50px] w-[50px]',
+                            }}
+                        />
+                    </>
+                ) : (
+                    <StandardCallToAction buttonLocation={buttonLocation.hero} size="lg" dark={true} />
+                )}
+            </div>
+
+            {EXP_GET_STARTED && (
+                <>
+                    {EXP_SOURCEGRAPH_ENTERPRISE && <EnterpriseLink />}
+
+                    {!EXP_SOURCEGRAPH_ENTERPRISE && (
+                        <div>
+                            <Heading size="h6" className="mb-1 text-sm text-white/75">
+                                Or:
+                            </Heading>
+                            <MeetWithProductExpertButton
+                                buttonLocation={buttonLocation.hero}
+                                dark={true}
+                                buttonClassName="btn-outline-white !font-normal"
+                            />
+                        </div>
+                    )}
+                </>
+            )}
+        </div>
+        <div className="px-4 md:px-0">
+            <DemoVideo
+                video="homepage-demo-202301"
+                splash={true}
+                className="mx-auto w-full max-w-4xl rounded-lg bg-violet-750"
+                splashClassName="rounded-lg"
             />
         </div>
-        <SolidColorBottomHalfSection className="mt-2xl rounded-lg" bottomHalfClassName="bg-white">
-            <div className="mx-sm">
-                <DemoVideo
-                    video="homepage-demo-202301"
-                    splash={true}
-                    className="mx-auto w-full max-w-4xl rounded-lg bg-violet-750"
-                    splashClassName="rounded-lg"
-                />
-            </div>
-        </SolidColorBottomHalfSection>
     </div>
 )
 
-const SolidColorBottomHalfSection: React.FunctionComponent<{
-    className?: string
-    bottomHalfClassName: string
-    children: React.ReactNode
-}> = ({ className, bottomHalfClassName, children }) => (
-    <div className={classNames('relative', className)}>
-        <div className={classNames('absolute bottom-0 left-0 right-0 z-0 h-1/2', bottomHalfClassName)} />
-        <div className="sticky z-10">{children}</div>
+const EnterpriseLink: React.FunctionComponent = () => (
+    <div>
+        <Link
+            href="/pricing"
+            className="flex items-center text-xl font-semibold text-violet-300 no-underline hover:text-white hover:underline"
+        >
+            Sourcegraph Enterprise <ChevronRightIcon />
+        </Link>
+        <span className="text-sm text-white/75">For organizations using Sourcegraph at scale</span>
     </div>
 )
 

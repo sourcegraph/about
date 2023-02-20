@@ -100,6 +100,9 @@
     .btn-outline-primary {
         @apply border-1 border-violet-400 text-violet-400 bg-white hover:bg-violet-400 hover:text-white;
     }
+    .btn-outline-white {
+        @apply text-white/75 border border-white/75 hover:text-white hover:border-white;
+    }
 
     .btn-secondary {
         @apply bg-gray-400 hover:bg-gray-500 text-white;
@@ -107,6 +110,16 @@
 
     .btn-link {
         @apply text-violet-400 hover:text-violet-500 hover:underline;
+    }
+
+    .btn-group {
+        @apply flex items-stretch;
+    }
+    .btn-group > .btn:not(:last-child) {
+        @apply rounded-r-none;
+    }
+    .btn-group > .btn:not(:first-child) {
+        @apply rounded-l-none ml-[1.5px];
     }
 }
 
@@ -173,7 +186,7 @@
         background: linear-gradient(to right, theme(colors.violet.750), theme(colors.violet.600));
     }
     .sg-bg-gradient-purple-white {
-        background-image: linear-gradient(to right, #ffffff, theme(colors.violet.300));
+        background-image: linear-gradient(to bottom right, theme(colors.violet.100), theme(colors.violet.300),theme(colors.violet.400));
     }
 
     /* Starship Backgrounds */
