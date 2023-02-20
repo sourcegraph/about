@@ -392,8 +392,8 @@
 .container
     :global(.hs-form-e090296f-84f5-4bcb-9093-a533336841b4)
     :global(.hs-button):active:not(:global(.inactive)):not(:global(.link)) {
-    background: var(--sg-color-blruple-400);
-    border-color: var(--sg-color-blruple-400);
+    background: var(--sg-color-blurple-400);
+    border-color: var(--sg-color-blurple-400);
     color: #ffffff;
     font-size: 12px;
     line-height: 12px;
@@ -437,7 +437,7 @@
 
 .container :global(.hs-form-e090296f-84f5-4bcb-9093-a533336841b4) a:link,
 .container :global(.hs-form-e090296f-84f5-4bcb-9093-a533336841b4) a:active {
-    color: var(--sg-color-blruple-500);
+    color: var(--sg-color-blurple-500);
 }
 
 .container :global(.hs-form-e090296f-84f5-4bcb-9093-a533336841b4) a:visited,
