@@ -12,7 +12,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/SG-OG-Image-ca
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/SG-OG-Image-cargo-vet.png
 ---
 
-![alt_text](https://storage.googleapis.com/sourcegraph-assets/blog/image4-cargo-vet.jpg "image_tooltip")
+![](https://storage.googleapis.com/sourcegraph-assets/blog/image4-cargo-vet.jpg)
 
 Our CTO Beyang Liu [wrote a blog post](https://about.sourcegraph.com/blog/why-index-the-oss-universe) about Sourcegraph’s ambitions to index the OSS universe. We have some updates we would like to share with you. 
 
@@ -23,7 +23,7 @@ Our CTO Beyang Liu [wrote a blog post](https://about.sourcegraph.com/blog/why-in
 
 The Rust team launched crates.io in 2014. Fast forward to today, there are over 100,000+ crates available in the registry, totaling over 20 billion downloads. Rust first appeared on Stack Overflow’s yearly survey in 2019 under “most popular technologies.” The latest (2022) has it right behind Go. The bottom line: Rust is growing in popularity, and we will grow with it.
 
-![alt_text](https://storage.googleapis.com/sourcegraph-assets/blog/image2-cargo-vet.png "image_tooltip")
+![](https://storage.googleapis.com/sourcegraph-assets/blog/image2-cargo-vet.png)
 
 We started indexing Rust crates [back in June](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/compare/a284c73e0f0118892066663063a531aff92cf838...20d07c3ec6d0d8fdaadb31e8b4c65ba3490ec2ce?utm_source=chrome-extension&utm_campaign=open-diff-on-sourcegraph#diff-5f4c066d3b85421b8da8afcec9970eb4) of last year, enabling [precise code navigation](https://docs.sourcegraph.com/code_navigation/explanations/precise_code_navigation) for Rust, including across crates What’s great about this index is that it [updates on the fly](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/compare/1f0ebb0ac86d41cb4585dce369aed914aea061a7...e92d876e1c6beae6084e65aa536853cdf0231950?utm_source=chrome-extension&utm_campaign=open-diff-on-sourcegraph&visible=1#diff-f5943471085b96822f6e7b8df5066ab5). For instance, if you compare two versions of a Rust library and a certain version number hasn’t been indexed yet, we will asynchronously download the crate and display the revisions between the two versions once it is ready.
 
@@ -36,7 +36,7 @@ To search the 100k+ crates in our index, you must begin each query with `repo:^c
 3. [Display crates with a license](https://sourcegraph.com/search?q=context:global+repo:%5Ecrates+repo:contains.file%28LICENSE%29+count:100&patternType=standard&sm=0&groupBy=repo)
 
 
-![alt_text](https://storage.googleapis.com/sourcegraph-assets/blog/image3-cargo-vet.jpg "image_tooltip")
+![](https://storage.googleapis.com/sourcegraph-assets/blog/image3-cargo-vet.jpg)
 
 ### Vetting the cargo
 
@@ -47,6 +47,9 @@ Open source supply chain security has become a hot topic of late, and we are all
 
     _“Low-friction reuse of third-party components — via systems like crates.io or npm — is an essential element of modern software development. Unfortunately, it also widens the set of actors who can introduce a security vulnerability into the final product.” – [Motivation of cargo vet](https://mozilla.github.io/cargo-vet/motivation.html#security-risks-of-third-party-code)_
 
+With [precise code navigation](https://docs.sourcegraph.com/code_navigation/explanations/precise_code_navigation) on by default for all Rust packages, auditors are provided with fast and highly accurate code navigation. This was a must-have for the Mozilla team, so we are thrilled to have that finally delivered.
+
+![](https://storage.googleapis.com/sourcegraph-assets/blog/libc-precise-find-ref-cargo-vet-cropped.jpg)
 
 #### Using the cargo vet Sourcegraph integration
 
@@ -74,7 +77,7 @@ cargo vet diff --mode sourcegraph syn 1.0.107 1.0.106
 `# (press ENTER/return to open in your browser)`
 </pre>
 
-![alt_text](https://storage.googleapis.com/sourcegraph-assets/blog/image1-cargo-vet.gif "image_tooltip")
+![](https://storage.googleapis.com/sourcegraph-assets/blog/image1-cargo-vet.gif)
 
 ### Closing thoughts
 
