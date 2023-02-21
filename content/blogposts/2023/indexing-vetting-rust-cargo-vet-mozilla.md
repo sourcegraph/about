@@ -54,28 +54,25 @@ After walking the developer through the process of determining what to audit, ca
 
 **Install the cargo vet subcommand:** 
 
-```bash
-
+<pre>
 cargo install cargo-vet
-```
+</pre>
 
 **Next, choose/clone a Rust project:**
 
-```bash
-
-git clone https://github.com/dtolnay/syn
+<pre>
+git clone `https://github.com/dtolnay/syn`
 cd syn/
-```
+</pre>
 
 **Then run:**
 
-```bash
-
+<pre>
 cargo metadata
 cargo vet init
 cargo vet diff --mode sourcegraph syn 1.0.107 1.0.106
-# (press ENTER/return to open in your browser)
-```
+`# (press ENTER/return to open in your browser)`
+</pre>
 
 ![alt_text](https://storage.googleapis.com/sourcegraph-assets/blog/image1-cargo-vet.gif "image_tooltip")
 
