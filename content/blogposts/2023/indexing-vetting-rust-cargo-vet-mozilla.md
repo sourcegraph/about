@@ -8,6 +8,8 @@ description: 'We have been working with a small team led by Bobby Holley at Mozi
 tags: [blog]
 slug: 'indexing-vetting-rust-cargo-vet-mozilla'
 published: true
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/SG-OG-Image-cargo-vet.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/SG-OG-Image-cargo-vet.png
 ---
 
 ![alt_text](https://storage.googleapis.com/sourcegraph-assets/blog/image4-cargo-vet.jpg "image_tooltip")
@@ -67,8 +69,8 @@ cd syn/
 
 ```bash
 cargo metadata
-cargo vet init
-cargo vet diff --mode sourcegraph syn 1.0.107 1.0.106
+ cargo vet init
+ cargo vet diff --mode sourcegraph syn 1.0.107 1.0.106
 # (press ENTER/return to open in your browser)
 ```
 
@@ -86,4 +88,4 @@ _Thanks to the following people for helping with this post: Fabiana Castellanos,
 
 #### About the author
 
-Justin Dorfman is Sourcegraph’s Open Source Program Manager and is responsible for fostering the adoption of code intelligence in the open source community. You can chat with Justin on Twitter [@jdorfman](https://twitter.com/jdorfman) or our community Discord.
+Justin Dorfman is Sourcegraph’s Open Source Program Manager and is responsible for fostering the adoption of code intelligence in the open source community. You can chat with Justin on Twitter [@jdorfman](https://twitter.com/jdorfman) or our community [Discord](https://srcgr.ph/discord). 
