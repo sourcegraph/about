@@ -140,16 +140,6 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'Codecov uses Sourcegraph to resolve incidents faster',
-        link: '/case-studies/codecov-uses-sourcegraph-to-resolve-incidents-faster',
-        contentType: 'customer story',
-        subjects: ['code security', 'developer onboarding'],
-        description:
-            "Learn how Codecov uses Sourcegraph to resolve incidents like Log4j 12x faster than with their code host's native search  functionality, with 100% confidence.",
-        publishDate: '2022-07-29T21:40:56Z',
-    },
-    {
-        featured: false,
         title: '3 things to know before building a custom, in-house code search tool',
         link: '/guides/things-to-know-before-building-a-code-search-tool.pdf',
         contentType: 'guide',
