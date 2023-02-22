@@ -32,24 +32,22 @@ changelogItems:
 
 #### The new Code Insights UI makes it easier to run insights over specific repositories
 
-We've introduced a new UI for Code Insights creation. You can now use Sourcegraph query syntax to select repositories for an insight to run over. Previously, repositories had to be explicitly listed. This change makes it easier to select very specific and large repository groups to run insights over.
+We've introduced a new UI for insights creation. You can now use Sourcegraph query syntax to select repositories for an insight to run over. Previously, if you wanted an insight to run over more than a few repositories, you had to create an insight that ran over *all* repositories. This change makes it possible to select only the repositories that are relevant to the insights you are creating.
 
-The new query system allows you to select repositories with these filters:
+This makes it especially easy to create insights for related groups of repositories, for example, ones that follow a naming convention such as `-infrastructure`.
+
+The new system allows you to use any of the `repo:` filter options such as:
 - `repo:`
 - `-repo:`
 - `repo:has.path()`
 - `repo:has.file()`
 - `repo:has.commit.after()`
-- `repo:.*`
-
 
 <br />
 <Badge link="https://docs.sourcegraph.com/admin/workers" text="Admin" color="violet" size="small" />
 
 #### Upgrades for Gerrit as a code host
 
-We're improving support for Gerrit-based repositories. Gerrit can now be used as an authentication provider for Sourcegraph so that teams can authenticate direcvtly to Sourcegraph with a shared login.
-
-We're also releasing permissions syncing for Gerrit. Admins can sync repositories to Sourcegraph from Gerrit, and permissions from Gerrit will also sync to Sourcegraph to control who has access to each repository in Sourcegraph.
+We're improving support for Gerrit-based repositories with new permissions syncing for Gerrit. When admins sync repositories from Gerrit, permissions can now also be synced to control who has access to each repository in Sourcegraph. This allows Gerrit repositories to function similar to [other Sourcegraph-supported code hosts](https://docs.sourcegraph.com/admin/external_service). You can find instructions on configuring Gerrit permissions synicng [in our docs](https://docs.sourcegraph.com/admin/external_service/gerrit).
 
 <br />
