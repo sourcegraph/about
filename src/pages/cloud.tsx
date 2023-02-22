@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import { FaGitAlt, FaLocationArrow } from 'react-icons/fa'
 import { MdOutlineAvTimer, MdBarChart } from 'react-icons/md'
 
-import { Layout, Hero, ContentSection, CallToActionContentSection, TwoColumnSection, Blockquote } from '../components'
+import { Layout, Hero, ContentSection, CallToActionContentSection, TwoColumnSection } from '../components'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { buttonLocation } from '../data/tracking'
 
@@ -92,46 +92,20 @@ const Cloud: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection background="white">
-            <TwoColumnSection
-                leftColumn={
-                    <>
-                        <h2>Start searching and stay in flow, no maintenance necessary</h2>
-                        <ul className="ml-md mt-sm">
-                            <li>
-                                Get a dedicated Sourcegraph Cloud instance with no manual deployment required. Simply
-                                connect to your code hosts and start searching, navigating, and automating your code.
-                            </li>
+            <h2>Start searching and stay in flow, no maintenance necessary</h2>
+            <ul className="ml-md mt-sm">
+                <li>
+                    Get a dedicated Sourcegraph Cloud instance with no manual deployment required. Simply connect to
+                    your code hosts and start searching, navigating, and automating your code.
+                </li>
 
-                            <li>
-                                Spend less time maintaining your dev tools and more time shipping great code. Upgrades
-                                and scaling are fully automated.
-                            </li>
+                <li>
+                    Spend less time maintaining your dev tools and more time shipping great code. Upgrades and scaling
+                    are fully automated.
+                </li>
 
-                            <li>Reduce your total cost of ownership and increase time to value.</li>
-                        </ul>
-                    </>
-                }
-                rightColumn={
-                    <div className="border-l border-gray-300 py-2">
-                        <Blockquote
-                            headline="Sourcegraph Cloud was the right fit for Codecov’s growing team"
-                            quote="Sourcegraph Cloud was an unlock for us. We didn't feel like Sourcegraph was a product that we needed to run on our own infrastructure."
-                            author="Jerrod Engelberg, CEO at Codecov"
-                            border={false}
-                            center={false}
-                            logo={{
-                                src: 'external-logos/codecov-logo.svg',
-                                alt: 'Codecov',
-                                href: 'https://about.codecov.io/',
-                            }}
-                            link={{
-                                text: 'Read the case study',
-                                href: '/case-studies/codecov-uses-sourcegraph-to-resolve-incidents-faster',
-                            }}
-                        />
-                    </div>
-                }
-            />
+                <li>Reduce your total cost of ownership and increase time to value.</li>
+            </ul>
         </ContentSection>
 
         <ContentSection background="white">
