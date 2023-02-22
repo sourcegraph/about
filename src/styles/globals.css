@@ -222,4 +222,7 @@
 #CybotCookiebotDialog {
     color: #000000;
     z-index: 1075 !important;
+    background-color: white;
+    height: 400px;
+    max-height: 80%;
 }
