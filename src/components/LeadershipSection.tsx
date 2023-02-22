@@ -77,7 +77,7 @@ const LEADERS: {
     {
         name: 'Aimee Menne',
         image: '/staff/avatar-aimee.jpg',
-        title: 'VP Customer Engineering',
+        title: 'VP Technical Success',
         bio: 'https://handbook.sourcegraph.com/company/team#aimee-menne',
         github: 'https://github.com/amenne',
         linkedin: 'https://www.linkedin.com/in/aimee-menne-8343487/',
