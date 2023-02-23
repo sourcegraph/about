@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 4.5 release"
 publishDate: 2023-02-23T10:00-07:00
-description: "SSourcegraph 4.5 introduces further support for Gerrit as a code host and a new Code Insights UI to make it easier to create repository-scoped insights."
+description: "Sourcegraph 4.5 introduces further support for Gerrit as a code host and a new Code Insights UI to make it easier to create repository-scoped insights."
 tags: [blog, release]
 slug: "release/4.5"
 published: true
