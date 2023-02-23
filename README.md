@@ -23,3 +23,9 @@ Then open [http://localhost:3000](http://localhost:3000) in your web browser.
 ### Need help editing this website?
 
 Ask in the [#marketing channel](https://app.slack.com/client/T02FSM7DL/CNC4YAL1E) (for Sourcegraph team members), and/or [post an issue](https://github.com/sourcegraph/about/issues).
+
+### Troubleshooting
+
+If blog post aren't showing up:
+
+Run: `yarn build:cache`
