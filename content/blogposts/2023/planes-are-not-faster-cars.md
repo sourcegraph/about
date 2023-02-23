@@ -28,20 +28,14 @@ But the real value, the magical impossibility that flying makes possible, is in 
 
 <table>
   <tr>
-   <td>Drive to NYC
-   </td>
-   <td>Fly to NYC
-   </td>
-   <td>Time saved
-   </td>
+   <td>Drive to NYC</td>
+   <td>Fly to NYC</td>
+   <td>Time saved</td>
   </tr>
   <tr>
-   <td>43 hours
-   </td>
-   <td>5 hours
-   </td>
-   <td>38 hours
-   </td>
+   <td>43 hours</td>
+   <td>5 hours</td>
+   <td>38 hours</td>
   </tr>
 </table>
 
@@ -52,20 +46,14 @@ Instead, this is how to think about it:
 
 <table>
   <tr>
-   <td>Drive to NYC
-   </td>
-   <td>Fly to NYC
-   </td>
-   <td>Time saved
-   </td>
+   <td>Drive to NYC</td>
+   <td>Fly to NYC</td>
+   <td>Time saved</td>
   </tr>
   <tr>
-   <td>NOPE
-   </td>
-   <td>5 hours
-   </td>
-   <td>???
-   </td>
+   <td>NOPE</td>
+   <td>5 hours</td>
+   <td>???</td>
   </tr>
 </table>
 
