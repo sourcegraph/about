@@ -7,7 +7,7 @@ import { buttonStyle, buttonLocation } from '../../data/tracking'
 import { ReactComponent as CopyIcon } from './copyIcon.svg'
 
 const installText =
-    'docker run --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm --volume ~/.sourcegraph/config:/etc/sourcegraph --volume ~/.sourcegraph/data:/var/opt/sourcegraph sourcegraph/server:4.4.2'
+    'docker run --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm --volume ~/.sourcegraph/config:/etc/sourcegraph --volume ~/.sourcegraph/data:/var/opt/sourcegraph sourcegraph/server:4.5.0'
 
 export const Install: FunctionComponent = () => {
     const [copied, setCopied] = useState(false)
