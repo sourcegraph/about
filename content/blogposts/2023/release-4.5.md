@@ -43,6 +43,11 @@ The new system allows you to use any of the `repo:` filter options such as:
 - `repo:has.file()`
 - `repo:has.commit.after()`
 
+
+<video controls playsinline mute title="Code Insights UI">
+  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.5/code-insights-new-ui.mp4" />
+</video>
+
 <br />
 <Badge link="https://docs.sourcegraph.com/admin/workers" text="Admin" color="violet" size="small" />
 
