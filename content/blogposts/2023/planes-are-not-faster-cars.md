@@ -16,8 +16,11 @@ But even so, cars have their limits. They only go so fast. You have to drive the
 
 Airplanes! What incredible time savers! They are about 10 times faster than a car, so now getting downtown will take 1/10th as long! Now, instead of driving an hour and a half to the coast, I can get there in under 10 minutes! Right?
 
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-well-yes-but-no.jpeg"
+  alt="Well yes, but actually no"
+/>
 
-TODO - add "well yes but actually no" image        
 
 For now let’s set aside the high setup/teardown time of flying (getting to the airport, security, boarding, why are you making me check this bag when it clearly fits in the overhead bin, deboarding, passport control, more security maybe, now I have to go to baggage claim because they made me check my bag, leaving the airport), but we’ll return to that.
 
