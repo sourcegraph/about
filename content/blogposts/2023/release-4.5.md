@@ -56,6 +56,6 @@ The new system allows you to use any of the `repo:` filter options such as:
 
 #### Upgrades to the Gerrit code host integration
 
-We're improving support for Gerrit-based repositories with new permissions syncing for Gerrit. When admins sync repositories from Gerrit, permissions can now also be synced to control who has access to each repository in Sourcegraph. This allows Gerrit repositories to function similar to [other Sourcegraph-supported code hosts](https://docs.sourcegraph.com/admin/external_service). You can find instructions on configuring Gerrit permissions syncing [in our docs](https://docs.sourcegraph.com/admin/external_service/gerrit).
+When admins sync repositories from Gerrit, permissions can now also be synced to control who has access to each repository in Sourcegraph. This allows Gerrit repositories to function similar to [other Sourcegraph-supported code hosts](https://docs.sourcegraph.com/admin/external_service). You can find instructions to configure Gerrit permissions [in our docs](https://docs.sourcegraph.com/admin/external_service/gerrit).
 
 <br />
