@@ -45,7 +45,7 @@ The new system allows you to use any of the `repo:` filter options such as:
 
 <Video 
   source={{
-    webm: 'blog/release-post/4.5/code-insights-ui',
+    mp4: 'blog/release-post/4.5/code-insights-ui',
   }}
   loop={true}
   title="The Code Insights UI."
