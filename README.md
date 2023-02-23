@@ -26,6 +26,6 @@ Ask in the [#marketing channel](https://app.slack.com/client/T02FSM7DL/CNC4YAL1E
 
 ### Troubleshooting
 
-If blog post aren't showing up:
+If blog posts aren't showing up:
 
 Run: `yarn build:cache`
