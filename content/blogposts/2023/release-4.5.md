@@ -32,7 +32,7 @@ changelogItems:
 
 #### The new Code Insights UI makes it easier to run insights over specific repositories
 
-We've introduced a new UI for insights creation. You can now use Sourcegraph query syntax to select repositories for an insight to run over. Previously, if you wanted an insight to run over more than a few repositories, you had to create an insight that ran over *all* repositories. This change makes it possible to select only the repositories that are relevant to the insights you are creating.
+We've introduced a new UI for insights creation. You can now use Sourcegraph query syntax to select repositories for an insight to run over. Previously, if you wanted an insight to run over more than a few repositories, you had to create an insight that ran over *all* of them. This change makes it possible to select only the repositories that are relevant to the insights you are creating.
 
 This makes it especially easy to create insights for related groups of repositories, for example, ones that follow a naming convention such as `-infrastructure`.
 
