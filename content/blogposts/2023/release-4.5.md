@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 4.5 release"
-publishDate: 2023-02-22T10:00-07:00
-description: "Sourcegraph 4.5 introduces..."
+publishDate: 2023-02-23T10:00-07:00
+description: "SSourcegraph 4.5 introduces further support for Gerrit as a code host and a new Code Insights UI to make it easier to create repository-scoped insights."
 tags: [blog, release]
 slug: "release/4.5"
 published: true
@@ -11,7 +11,7 @@ changelogItems:
   - description: "Zoekt now bypasses the regex engine for common queries, such as `\\bLITERAL\\b case:yes`. This can lead to a significant speed-up for \"Find references\" and \"Find implementations\" if precise code navigation is not available."
     url: https://github.com/sourcegraph/zoekt/pull/526
     category: Search
-  - description: "Code Insights has a new display option: \"Max number of series points to display\". This setting controls the number of data points you see per series on an insight."
+  - description: "Code Insights has a new display option: \"Max number of series points to display.\" This setting controls the number of data points you see per series on an insight."
     url: https://github.com/sourcegraph/sourcegraph/pull/46653
     category: Code Insights
   - description: "You can now export all data for a code insight from the card menu or the standalone page."
@@ -20,10 +20,10 @@ changelogItems:
   - description: Added Gerrit as an officially supported code host with permissions syncing.
     url: https://github.com/sourcegraph/sourcegraph/pull/46763
     category: Admin
-  - description: "Monitoring: the searcher dashboard now contains more detailed request metrics as well as information on interactions with the local cache (via gitserver)."
+  - description: "The searcher monitoring dashboard now contains more detailed request metrics as well as information on interactions with the local cache (via gitserver)."
     url: https://github.com/sourcegraph/sourcegraph/pull/47654
     category: Admin
-  - description: "Zoekt has a new opt-in feature, \"shard merging\". Shard merging consolidates small index files into larger ones, which reduces Zoekt-webserver's memory footprint, especially for users with many small and rarely update repositories."
+  - description: "Zoekt has a new opt-in feature, \"shard merging.\" Shard merging consolidates small index files into larger ones, which reduces Zoekt-webserver's memory footprint, especially for users with many small and rarely update repositories."
     url: https://docs.sourcegraph.com/code_search/explanations/search_details#shard-merging
     category: Admin
 ---
@@ -43,15 +43,18 @@ The new system allows you to use any of the `repo:` filter options such as:
 - `repo:has.file()`
 - `repo:has.commit.after()`
 
-
-<video controls playsinline mute title="Code Insights UI">
-  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.5/code-insights-new-ui.mp4" />
-</video>
+<Video 
+  source={{
+    webm: 'blog/release-post/4.5/code-insights-ui',
+  }}
+  loop={true}
+  title="The Code Insights UI."
+/>
 
 <br />
 <Badge link="https://docs.sourcegraph.com/admin/workers" text="Admin" color="violet" size="small" />
 
-#### Upgrades for Gerrit as a code host
+#### Upgrades to the Gerrit code host integration
 
 We're improving support for Gerrit-based repositories with new permissions syncing for Gerrit. When admins sync repositories from Gerrit, permissions can now also be synced to control who has access to each repository in Sourcegraph. This allows Gerrit repositories to function similar to [other Sourcegraph-supported code hosts](https://docs.sourcegraph.com/admin/external_service). You can find instructions on configuring Gerrit permissions synicng [in our docs](https://docs.sourcegraph.com/admin/external_service/gerrit).
 
