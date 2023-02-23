@@ -17,7 +17,7 @@ changelogItems:
   - description: "You can now export all data for a code insight from the card menu or the standalone page."
     url: https://github.com/sourcegraph/sourcegraph/pull/46694
     category: Code Insights
-- description: Added Gerrit as an officially supported code host with permissions syncing.
+  - description: Added Gerrit as an officially supported code host with permissions syncing.
     url: https://github.com/sourcegraph/sourcegraph/pull/46763
     category: Admin
   - description: "Monitoring: the searcher dashboard now contains more detailed request metrics as well as information on interactions with the local cache (via gitserver)."
