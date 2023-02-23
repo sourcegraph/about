@@ -41,7 +41,7 @@ The new system allows you to use any of the `repo:` filter options such as:
 - `-repo:`
 - `repo:has.path()`
 - `repo:has.file()`
-- `repo:has.commit.after()`
+- `repo:has.commit.after()`  
   
 <Video 
   source={{
@@ -49,7 +49,7 @@ The new system allows you to use any of the `repo:` filter options such as:
   }}
   loop={true}
   title="The Code Insights UI."
-/>
+/>  
   
 <br />
 <Badge link="https://docs.sourcegraph.com/admin/workers" text="Admin" color="violet" size="small" />
