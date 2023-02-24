@@ -7,7 +7,7 @@ import ChevronUpIcon from 'mdi-react/ChevronUpIcon'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { EXP_SOURCEGRAPH_ENTERPRISE } from '../../../data/experiments'
+import { EXP_FEATURES_DROPDOWN, EXP_SOURCEGRAPH_ENTERPRISE } from '../../../data/experiments'
 
 interface NavLink {
     name: string
@@ -23,10 +23,19 @@ type NavItem = NavLink | NavSection
 
 const NAV_ITEMS: NavItem[] = EXP_SOURCEGRAPH_ENTERPRISE
     ? [
-          {
-              name: 'Docs',
-              href: 'https://docs.sourcegraph.com',
-          },
+          EXP_FEATURES_DROPDOWN
+              ? {
+                    name: 'Features',
+                    links: [
+                        { name: 'Code Search', href: '/code-search' },
+                        { name: 'Batch Changes', href: '/batch-changes' },
+                        { name: 'Code Insights', href: '/batch-changes' },
+                    ],
+                }
+              : {
+                    name: 'Docs',
+                    href: 'https://docs.sourcegraph.com',
+                },
           {
               name: 'App',
               href: '/app',
