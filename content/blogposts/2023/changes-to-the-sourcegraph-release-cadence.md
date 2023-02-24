@@ -38,4 +38,4 @@ and significantly smooth out the experience of updating Sourcegraph.
 These changes in release cadence will not reduce our response time for security incidents or other critical incidents affecting the operation of Sourcegraph. 
 Patches will be released out of band as necessary in addition to any other scheduled patches.
 
-We are excited to provide a consistent and stable release schedule for Sourcegraph, 
+We are excited to provide a consistent and stable release schedule for Sourcegraph going forward
