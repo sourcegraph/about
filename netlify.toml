@@ -68,10 +68,6 @@
   to = "/terms/cookie-policy"
 
 [[redirects]]
-  from = "/security"
-  to = "/terms/security"
-
-[[redirects]]
   from = "/terms-private"
   to = "/terms/self-hosted"
 

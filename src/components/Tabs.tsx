@@ -5,18 +5,20 @@ import classNames from 'classnames'
 interface Tab {
     title: string
     content: ReactNode
+    className?: string
 }
 
 interface Tabs {
     tabs: Tab[]
+    navClassName?: string
 }
 
-export const Tabs: FunctionComponent<Tabs> = ({ tabs }) => {
+export const Tabs: FunctionComponent<Tabs> = ({ tabs, navClassName }) => {
     const [currentTab, setCurrentTab] = useState(0)
 
     return (
         <div>
-            <div className="flex-row items-center justify-center border-b border-solid border-b-gray-200 text-center xs:flex xs:text-left">
+            <div className={classNames('flex-row items-center justify-center border-b border-solid border-b-gray-200 text-center xs:flex xs:text-left', navClassName)}>
                 {tabs.map((tab, index) => (
                     <div
                         key={tab.title}
@@ -26,7 +28,8 @@ export const Tabs: FunctionComponent<Tabs> = ({ tabs }) => {
                         tabIndex={0}
                         className={classNames(
                             'cursor-pointer border-b-3 border-solid border-transparent px-4 py-2 text-center text-lg font-semibold',
-                            { 'border-b-violet-400 bg-transparent': currentTab === index }
+                            { 'border-b-violet-400 bg-transparent': currentTab === index },
+                            tab.className
                         )}
                     >
                         {tab.title}

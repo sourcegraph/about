@@ -151,7 +151,7 @@ const POSTSCRIPT_LINKS: Link[] = [
     },
     {
         name: 'Security',
-        href: '/terms/security',
+        href: '/security',
     },
     {
         name: 'Privacy',
