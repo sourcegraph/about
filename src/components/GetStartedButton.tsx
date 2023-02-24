@@ -4,9 +4,11 @@ import { Disclosure } from '@headlessui/react'
 import classNames from 'classnames'
 import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
 import ChevronUpIcon from 'mdi-react/ChevronUpIcon'
+import DownloadIcon from 'mdi-react/DownloadIcon'
 import TriangleSmallUpIcon from 'mdi-react/TriangleSmallUpIcon'
 import Link from 'next/link'
 
+import { EXP_DOWNLOAD_APP } from '../data/experiments'
 import { buttonStyle } from '../data/tracking'
 
 export const GetStartedLinkButton: React.FunctionComponent<{
@@ -78,18 +80,20 @@ interface Variant {
     caption?: string
 }
 
-const VARIANTS: Variant[] = [
-    {
-        name: 'Cloud',
-        href: 'https://signup.sourcegraph.com',
-        caption: 'Start free',
-    },
-    {
-        name: 'Self-hosted',
-        href: 'https://docs.sourcegraph.com',
-        caption: 'AMI, Docker, Kubernetes',
-    },
-]
+const VARIANTS: Variant[] = EXP_DOWNLOAD_APP
+    ? [{ name: 'macOS', href: '#', caption: 'Universal binary' }]
+    : [
+          {
+              name: 'Cloud',
+              href: 'https://signup.sourcegraph.com',
+              caption: 'Start free',
+          },
+          {
+              name: 'Self-hosted',
+              href: 'https://docs.sourcegraph.com',
+              caption: 'AMI, Docker, Kubernetes',
+          },
+      ]
 
 const VariantButton: React.FunctionComponent<{
     variant: Variant
@@ -104,7 +108,9 @@ const VariantButton: React.FunctionComponent<{
         data-button-location={buttonLocation}
         data-button-type="cta"
     >
-        <div className="-mb-1.5 flex items-center justify-center whitespace-nowrap">{name}</div>
+        <div className="-mb-1.5 flex items-center justify-center whitespace-nowrap">
+            {EXP_DOWNLOAD_APP && <DownloadIcon className="mr-1" />} {name}
+        </div>
         {!minimal && <span className="truncate text-xs font-normal text-white/80">{caption}</span>}
     </a>
 )

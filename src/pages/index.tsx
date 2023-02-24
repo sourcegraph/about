@@ -20,7 +20,8 @@ import {
     EXP_GET_STARTED,
     EXP_HIDE_SUBTEXT,
     EXP_SOURCEGRAPH_ENTERPRISE,
-    NO_ENTERPRISE_HOMEPAGE_CALLOUT,
+    EXP_NO_ENTERPRISE_HOMEPAGE_CALLOUT,
+    EXP_DOWNLOAD_APP,
 } from '../data/experiments'
 import { buttonLocation, buttonStyle } from '../data/tracking'
 
@@ -112,9 +113,11 @@ const HomeHero: FunctionComponent = () => (
             <div className="max-w-sm md:w-full">
                 {EXP_GET_STARTED ? (
                     <>
-                        <Heading size="h6" className="mb-1 text-sm text-white/75">
-                            Get started:
-                        </Heading>
+                        {!EXP_DOWNLOAD_APP && (
+                            <Heading size="h6" className="mb-1 text-sm text-white/75">
+                                Get started (TODO: this will emphasize App):
+                            </Heading>
+                        )}
                         <GetStartedButton
                             buttonLocation={buttonLocation.hero}
                             className="w-full"
@@ -132,7 +135,7 @@ const HomeHero: FunctionComponent = () => (
 
             {EXP_GET_STARTED && (
                 <>
-                    {EXP_SOURCEGRAPH_ENTERPRISE && !NO_ENTERPRISE_HOMEPAGE_CALLOUT && <EnterpriseLink />}
+                    {EXP_SOURCEGRAPH_ENTERPRISE && !EXP_NO_ENTERPRISE_HOMEPAGE_CALLOUT && <EnterpriseLink />}
 
                     {!EXP_SOURCEGRAPH_ENTERPRISE && (
                         <div>

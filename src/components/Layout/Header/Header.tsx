@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { EXP_GET_STARTED } from '../../../data/experiments'
+import { EXP_DOWNLOAD_APP, EXP_GET_STARTED } from '../../../data/experiments'
 import { buttonLocation } from '../../../data/tracking'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
 import { TrySourcegraphForFreeButton } from '../../cta/TrySourcegraphForFreeButton'
@@ -116,13 +116,17 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
     const classes = HEADER_CONTENT_THEME_CLASS[colorTheme]
     const callToAction = (
         <>
-            <MeetWithProductExpertButton
-                buttonLocation={buttonLocation.nav}
-                buttonClassName={classNames('!font-normal', dark ? 'btn-outline-white' : 'btn-link')}
-                requestInfo={true}
-            />
+            {!EXP_DOWNLOAD_APP && (
+                <MeetWithProductExpertButton
+                    buttonLocation={buttonLocation.nav}
+                    buttonClassName="btn-outline-white !font-normal"
+                    requestInfo={true}
+                />
+            )}
             {EXP_GET_STARTED ? (
-                <GetStartedLinkButton buttonLocation={buttonLocation.nav} dark={dark} />
+                <GetStartedLinkButton buttonLocation={buttonLocation.nav} dark={true}>
+                    {EXP_DOWNLOAD_APP ? 'Download' : undefined}
+                </GetStartedLinkButton>
             ) : (
                 <TrySourcegraphForFreeButton buttonLocation={buttonLocation.nav} dark={dark}>
                     Start for free

@@ -6,4 +6,6 @@ export const EXP_SOURCEGRAPH_ENTERPRISE = true
 
 export const EXP_FEATURES_DROPDOWN = true
 
-export const NO_ENTERPRISE_HOMEPAGE_CALLOUT = true
+export const EXP_NO_ENTERPRISE_HOMEPAGE_CALLOUT = true
+
+export const EXP_DOWNLOAD_APP = true
