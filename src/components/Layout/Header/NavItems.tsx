@@ -28,6 +28,10 @@ const NAV_ITEMS: NavItem[] = EXP_SOURCEGRAPH_ENTERPRISE
               href: 'https://docs.sourcegraph.com',
           },
           {
+              name: 'App',
+              href: '/app',
+          },
+          {
               name: 'Enterprise',
               links: [
                   { name: 'Sourcegraph Enterprise', href: '/enterprise' },
