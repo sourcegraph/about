@@ -3,8 +3,8 @@ title: Planes aren't faster cars
 authors:
   - name: Chris Pine
     url: https://github.com/chrispine
-publishDate: 2023-02-15T10:00-07:00
-description: 'What’s exciting about time-saving improvements isn’t the time-savings, it’s how they make the impossible become possible.'
+publishDate: 2023-02-24T10:00-07:00
+description: 'What’s exciting about time-saving improvements isn’t the time savings, it’s how they make the impossible become possible.'
 tags: [blog]
 slug: 'planes-are-not-faster-cars'
 published: true
@@ -64,11 +64,11 @@ Instead, this is how to think about it:
 Infinity hours? Or zero? Arguably, flying actually _costs_ time compared to driving because I just wouldn’t drive that distance at all (so zero hours spent). But time saved is missing the point. The point is that _I actually went to NYC_.
 
 
-> **If the time-cost is so large that you’re never going to pay it, time-saving improvements are actually about making the effectively-impossible become possible.**
+> **If the time cost is so large that you’re never going to pay it, time-saving improvements are actually about making the effectively-impossible become possible.**
 
 Now back to those setup/teardown costs I mentioned. Let’s set the dial back to my early career in the (cough) late 1900s. The only programming language I really knew was C/C++. But Ruby was just hitting North America, and for me it was love at first sight.
 
-It was just so _easy!_ I could get the same thing done in roughly 1/10th the number of lines of code! (Yes, it ran 100x slower, but even 1900s computers were so fast that it often didn’t matter.) Very impressive time-savings!
+It was just so _easy!_ I could get the same thing done in roughly 1/10th the number of lines of code! (Yes, it ran 100x slower, but even 1900s computers were so fast that it often didn’t matter.) Very impressive time savings!
 
 But that wasn’t the real magic. The real magic was that, without the setup cost of creating a new project (makefiles or project files, compiler settings, where is this going to live, etc), a whole new realm of _simple_ problems opened up!
 
@@ -89,7 +89,7 @@ How much time did I save compared to writing this in C? It’s irrelevant: I wou
 Both for the very large things (travel to distant cities) and for the very small things (simple questions I have where the setup cost just wasn’t going to be worth it), the principle is the same:
 
 
-> **If the time-cost is so large that you’re never going to pay it, time-saving improvements are actually about making the effectively-impossible become possible.**
+> **If the time cost is so large that you’re never going to pay it, time-saving improvements are actually about making the effectively-impossible become possible.**
 
 So now let’s talk about one of my favorite topics: making code changes at scale! (No surprise there, as I’m on the [Batch Changes](https://docs.sourcegraph.com/batch_changes) [team](https://handbook.sourcegraph.com/departments/engineering/teams/batch-changes/).) Before coming to Sourcegraph and joining Batch Changes, I was responsible for making a small change in about 40 repos owned by about 30 teams. This process took me _6 weeks!_ It was horrible, and I hated all of it.
 
@@ -108,4 +108,4 @@ Literally _every_ time-saving device does this:
 
 And these are just the most obvious food-related examples off the top of my head. (I may or may not be really hungry right now.) In every other (non-food-related domain), it’s the same:
 
-> **What’s exciting about time-saving improvements isn’t the time-savings, it’s how they make the impossible become possible.**
+> **What’s exciting about time-saving improvements isn’t the time savings, it’s how they make the impossible become possible.**
