@@ -16,7 +16,12 @@ import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductEx
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { DemoVideo } from '../components/DemoVideo'
 import { GetStartedButton } from '../components/GetStartedButton'
-import { EXP_GET_STARTED, EXP_HIDE_SUBTEXT, EXP_SOURCEGRAPH_ENTERPRISE } from '../data/experiments'
+import {
+    EXP_GET_STARTED,
+    EXP_HIDE_SUBTEXT,
+    EXP_SOURCEGRAPH_ENTERPRISE,
+    NO_ENTERPRISE_HOMEPAGE_CALLOUT,
+} from '../data/experiments'
 import { buttonLocation, buttonStyle } from '../data/tracking'
 
 const Home: FunctionComponent = () => (
@@ -127,7 +132,7 @@ const HomeHero: FunctionComponent = () => (
 
             {EXP_GET_STARTED && (
                 <>
-                    {EXP_SOURCEGRAPH_ENTERPRISE && <EnterpriseLink />}
+                    {EXP_SOURCEGRAPH_ENTERPRISE && !NO_ENTERPRISE_HOMEPAGE_CALLOUT && <EnterpriseLink />}
 
                     {!EXP_SOURCEGRAPH_ENTERPRISE && (
                         <div>
