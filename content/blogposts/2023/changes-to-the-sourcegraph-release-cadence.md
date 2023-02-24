@@ -21,12 +21,15 @@ Following the March 2023 Starship event, Sourcegraph will move to a quarterly fe
 of these quarterly releases will be version 4.7 which will be released in June 2023. These feature releases will be packed full of the exciting work on our roadmap,
 as well as bug fixes, security updates, and any other infrasturcture changes.
 
+Here are the tentative dates for the next year of Sourcegraph feature releases:
+
 | Version | Release Date       |
 |---------|--------------------|
 | 4.7     | June 13, 2023      |
 | 4.8     | September 12, 2023 |
 | 4.9     | December 12, 2023  |
 | 4.10    | March 12, 2024     |
+
 _Release dates and version numbers are subject to change._
 
 Additionally, we will stabilize the cadence of patches between feature releases with scheduled bi-weekly patch releases. This will allow us to bundle our fixes more efficiently,
@@ -35,4 +38,4 @@ and significantly smooth out the experience of updating Sourcegraph.
 These changes in release cadence will not reduce our response time for security incidents or other critical incidents affecting the operation of Sourcegraph. 
 Patches will be released out of band as necessary in addition to any other scheduled patches.
 
-We are excited to provide a consistent and stable release schedule for Sourcegraph
+We are excited to provide a consistent and stable release schedule for Sourcegraph, 
