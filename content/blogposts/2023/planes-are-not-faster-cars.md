@@ -86,7 +86,7 @@ I thought of a question I could answer with code, wrote the code, got the answer
 
 How much time did I save compared to writing this in C? It’s irrelevant: I would never have bothered writing something so trivial in C. The magic of Ruby wasn’t in the time saved. The magic was in the parts of my world that opened up. Suddenly, I could go from question-to-code-to-answer in just a few seconds!
 
-Both for the very large things (travel to distance cities) and for the very small things (simple questions I have where the setup cost just wasn’t going to be worth it), the principle is the same:
+Both for the very large things (travel to distant cities) and for the very small things (simple questions I have where the setup cost just wasn’t going to be worth it), the principle is the same:
 
 
 > **If the time-cost is so large that you’re never going to pay it, time-saving improvements are actually about making the effectively-impossible become possible.**
