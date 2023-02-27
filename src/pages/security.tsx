@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import KeyboardArrowRightIcon from 'mdi-react/KeyboardArrowRightIcon'
 import Link from 'next/link'
 
 import { ContentSection, Heading, Layout, Tabs } from '../components'
@@ -29,12 +29,12 @@ const SecurityPage: FunctionComponent = () => (
 
                     <Link
                         href="mailto:security@sourcegraph.com"
-                        className="mt-md flex justify-center font-bold"
+                        className="mt-md flex justify-center font-semibold btn-link"
                         title="Contact our security team"
                         data-button-style={buttonStyle.textWithArrow}
                     >
                         Contact our security team
-                        <ArrowRightIcon className="ml-3 inline" />
+                        <KeyboardArrowRightIcon className="ml-3 inline" />
                     </Link>
                 </div>
 
@@ -308,7 +308,7 @@ const SecurityPage: FunctionComponent = () => (
                                         </p>
                                         <Link
                                             href="https://security.sourcegraph.com/"
-                                            className="btn btn-outline-primary"
+                                            className="btn btn-secondary-outlined"
                                             title="Go to Security Trust Portal"
                                             data-button-style={buttonStyle.outline}
                                             target="_blank"
@@ -325,12 +325,12 @@ const SecurityPage: FunctionComponent = () => (
 
                                         <Link
                                             href="/terms/subprocessors"
-                                            className="mt-md flex font-bold"
+                                            className="mt-md flex font-semibold btn-link"
                                             title="Go to Subprocessors"
                                             data-button-style={buttonStyle.textWithArrow}
                                         >
                                             Go to Subprocessors
-                                            <ArrowRightIcon className="ml-3 inline" />
+                                            <KeyboardArrowRightIcon className="ml-3 inline" />
                                         </Link>
                                     </div>
                                 ),
@@ -352,7 +352,7 @@ const SecurityPage: FunctionComponent = () => (
                                         </p>
                                         <Link
                                             href="mailto:security@sourcegraph.com"
-                                            className="btn btn-outline-primary"
+                                            className="btn btn-secondary-outlined"
                                             title="Go to Security Trust Portal"
                                             data-button-style={buttonStyle.outline}
                                         >
