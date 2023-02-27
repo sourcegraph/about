@@ -14,6 +14,8 @@ const SecurityPage: FunctionComponent = () => (
                 description:
                     'We know that source code is one of your most sensitive assets. Every component of Sourcegraph was designed with security in mind.',
             }}
+            heroAndHeaderClassName="bg-white"
+            childrenClassName="bg-white"
         >
             <div className="mx-auto max-w-[1062px]">
                 <div className="py-lg px-6 text-center">
@@ -53,7 +55,7 @@ const SecurityPage: FunctionComponent = () => (
                                         <Heading size="h5" as="h4" className="mt-6">
                                             Infrastructure
                                         </Heading>
-                                        <ul className="mt-4 ml-5">
+                                        <ul className="mt-4 ml-5 space-y-1.5">
                                             <li>
                                                 All infrastructure is hosted on Google Cloud Platform and managed
                                                 through Terraform.
@@ -100,7 +102,7 @@ const SecurityPage: FunctionComponent = () => (
                                         <Heading size="h5" className="mt-6">
                                             Monitoring and Incident Response
                                         </Heading>
-                                        <ul className="mt-4 ml-5">
+                                        <ul className="mt-4 ml-5 space-y-1.5">
                                             <li>
                                                 Our operations team monitors service availability 24x7x365. They
                                                 investigate alerts and potential attacks 24x7x365, triaging and
@@ -143,11 +145,11 @@ const SecurityPage: FunctionComponent = () => (
                                         <Heading size="h3" className="mt-10">
                                             Sourcegraph self-hosted
                                         </Heading>
-                                        <p className="mt-4">
+                                        <p className="mb-0 mt-4">
                                             Sourcegraph self-hosted gives you the most control over deployment and
                                             security options.
                                         </p>
-                                        <ul className="ml-5">
+                                        <ul className="ml-5 space-y-1.5">
                                             <li>
                                                 Sourcegraph self-hosted instances do not send any customer code to other
                                                 servers. Sourcegraph employees have no access to customer code.
@@ -198,7 +200,7 @@ const SecurityPage: FunctionComponent = () => (
                                         <Heading size="h3" className="mt-6">
                                             Shared security model for Sourcegraph Cloud and Sourcegraph.com
                                         </Heading>
-                                        <ul className="mt-4 ml-5">
+                                        <ul className="mt-4 ml-5 space-y-1.5">
                                             <li>
                                                 For these products, Sourcegraph (the company) handles the security of
                                                 the applications, the systems they run on, and the environments those
@@ -222,7 +224,7 @@ const SecurityPage: FunctionComponent = () => (
                                         <Heading size="h5" className="mt-4">
                                             Development
                                         </Heading>
-                                        <ul className="mt-4 ml-5">
+                                        <ul className="mt-4 ml-5 space-y-1.5">
                                             <li>
                                                 Access to all internal systems is protected by multi-factor
                                                 authentication. Access is restricted to those who require it to perform
@@ -262,7 +264,7 @@ const SecurityPage: FunctionComponent = () => (
                                         <Heading size="h5" className="mt-6">
                                             Code Security
                                         </Heading>
-                                        <ul className="mt-4 ml-5">
+                                        <ul className="mt-4 ml-5 space-y-1.5">
                                             <li>
                                                 We employ various tools and processes to ensure Sourcegraph’s code
                                                 remains secure.
@@ -317,7 +319,9 @@ const SecurityPage: FunctionComponent = () => (
                                         <Heading size="h5" as="h4" className="mt-8 mb-xs text-xl">
                                             Subprocessors
                                         </Heading>
-                                        <p>For a list of Sourcegraph's subprocessors, please visit the link below.</p>
+                                        <p className="text-lg">
+                                            For a list of Sourcegraph's subprocessors, please visit the link below.
+                                        </p>
 
                                         <Link
                                             href="/terms/subprocessors"

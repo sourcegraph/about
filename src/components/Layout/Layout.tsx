@@ -1,5 +1,6 @@
 import { FunctionComponent, ReactNode } from 'react'
 
+import classNames from 'classnames'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
@@ -22,6 +23,7 @@ interface LayoutProps {
 
     hero?: ReactNode
     heroAndHeaderClassName?: string
+    childrenClassName?: string
     headerColorTheme?: HeaderColorTheme
 
     className?: string
@@ -118,7 +120,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
                     ? 'black'
                     : 'var(--sg-color-gray-50)'
             }; }`}</style>
-            <section className="flex-1">{props.children}</section>
+            <section className={classNames('flex-1', props.childrenClassName)}>{props.children}</section>
 
             {!props.hideFooter && (
                 <Footer dark={headerColorTheme === 'dark' || headerColorTheme === 'purple'} minimal={props.minimal} />
