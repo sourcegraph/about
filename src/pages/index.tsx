@@ -24,7 +24,7 @@ const Home: FunctionComponent = () => (
         meta={{
             title: 'Sourcegraph - Code Intelligence Platform',
             description:
-                'Sourcegraph makes it easy to write, read, and fix code—even in big codebases—with universal code search, large-scale refactors, and more.',
+                'Sourcegraph makes it easy to write, read, and fix code—even in big, complex codebases—with universal code search, large-scale refactors, and more.',
         }}
         heroAndHeaderClassName="sg-bg-gradient-purple text-white"
         headerColorTheme="purple"
@@ -81,7 +81,8 @@ const HomeHero: FunctionComponent = () => (
             </h1>
 
             <p className="mx-auto mb-0 text-lg !font-normal md:text-base lg:text-xl">
-                Sourcegraph makes it easy to read, write, and fix&nbsp;code&mdash;even in big&nbsp;codebases.
+                Sourcegraph makes it easy to read, write, and fix&nbsp;code&mdash;even in
+                big,&nbsp;complex&nbsp;codebases.
             </p>
 
             {!EXP_HIDE_SUBTEXT && (
