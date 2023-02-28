@@ -109,7 +109,7 @@
     }
 
     .btn-secondary-outlined {
-        @apply border-1 border-violet-400 text-violet-400 bg-white hover:bg-violet-100 focus:ring focus:ring-violet-300 focus:border-transparent focus:focus:outline-none;
+        @apply border-1 border-violet-400 text-violet-400 bg-white outline-none hover:bg-violet-100 focus:ring focus:ring-violet-300 focus:border-transparent;
     }
 
     .btn-link {
