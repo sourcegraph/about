@@ -51,6 +51,10 @@ const NAV_ITEMS: NavItem[] = EXP_SOURCEGRAPH_ENTERPRISE
                       href: '/code-search',
                   },
                   {
+                      name: 'Code Navigation',
+                      href: '/code-navigation',
+                  },
+                  {
                       name: 'Batch Changes',
                       href: '/batch-changes',
                   },
@@ -58,11 +62,57 @@ const NAV_ITEMS: NavItem[] = EXP_SOURCEGRAPH_ENTERPRISE
                       name: 'Code Insights',
                       href: '/code-insights',
                   },
+              ],
+          },
+          {
+              name: 'Usecases',
+              links: [
                   {
-                      name: 'Cloud',
-                      href: '/cloud',
+                      name: 'Improve code security',
+                      href: '/use-cases/code-security',
+                  },
+                  {
+                      name: 'Accelerate onboarding',
+                      href: '/use-cases/onboarding',
+                  },
+                  {
+                      name: 'Resolve incidents faster',
+                      href: '/use-cases/incident-response',
+                  },
+                  {
+                      name: 'Streamline code reuse',
+                      href: '/use-cases/code-reuse',
+                  },
+                  {
+                      name: 'Boost code health',
+                      href: '/use-cases/code-health',
                   },
               ],
+          },
+          {
+              name: 'Deploy',
+              links: [
+                  {
+                      name: 'On Cloud',
+                      href: '/deploy/on-cloud',
+                  },
+                  {
+                      name: 'On Prem',
+                      href: '/deploy/on-premises',
+                  },
+                  {
+                      name: 'Locally',
+                      href: '/deploy/app',
+                  },
+              ],
+          },
+          {
+              name: 'Pricing',
+              href: '/pricing',
+          },
+          {
+              name: 'Public code search',
+              href: 'https://sourcegraph.com/search',
           },
           {
               name: 'Resources',
@@ -83,40 +133,7 @@ const NAV_ITEMS: NavItem[] = EXP_SOURCEGRAPH_ENTERPRISE
                       name: 'Case studies',
                       href: '/case-studies',
                   },
-                  { divider: true },
-                  {
-                      name: 'All use cases',
-                      href: '/use-cases',
-                  },
-                  {
-                      name: 'Code security',
-                      href: '/use-cases/code-security',
-                  },
-                  {
-                      name: 'Developer onboarding',
-                      href: '/use-cases/onboarding',
-                  },
-                  {
-                      name: 'Incident response',
-                      href: '/use-cases/incident-response',
-                  },
-                  {
-                      name: 'Code reuse',
-                      href: '/use-cases/code-reuse',
-                  },
-                  {
-                      name: 'Code health',
-                      href: '/use-cases/code-health',
-                  },
               ],
-          },
-          {
-              name: 'Pricing',
-              href: '/pricing',
-          },
-          {
-              name: 'Public code search',
-              href: 'https://sourcegraph.com/search',
           },
           {
               name: 'Docs',
