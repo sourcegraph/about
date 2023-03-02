@@ -17,18 +17,18 @@ We've made it easier than ever to get started with [Sourcegraph Cloud](https://d
 Additionally, we have evaluated our release cycle, and we are excited to continue to simplify
 the experience of operating Sourcegraph with changes to our release cadence.
 
-Following the March 2023 Starship event, Sourcegraph will move to a quarterly feature release cycle. The first
-of these quarterly releases will be version 4.7 which will be released in June 2023. These feature releases will be packed full of the exciting work on our roadmap,
+Following the Sourcegraph 5.0 Starship event in March 2023, Sourcegraph will move to a quarterly feature release cycle. The first
+of these quarterly releases will be version 5.1 which will be released in June 2023. These feature releases will be packed full of the exciting work on our roadmap,
 as well as bug fixes, security updates, and any other infrasturcture changes.
 
 Here are the tentative dates for the next year of Sourcegraph feature releases:
 
 | Version | Release Date       |
 |---------|--------------------|
-| 4.7     | June 13, 2023      |
-| 4.8     | September 12, 2023 |
-| 4.9     | December 12, 2023  |
-| 4.10    | March 12, 2024     |
+| 5.1     | June 13, 2023      |
+| 5.2     | September 12, 2023 |
+| 5.3     | December 12, 2023  |
+| 5.4     | March 12, 2024     |
 
 _Release dates and version numbers are subject to change._
 
