@@ -56,6 +56,29 @@ const items = [
         ),
     },
     {
+        title: 'Mitigate upstream licensing risks',
+        text: (
+            <CarouselItem
+                header="Mitigate upstream licensing risks"
+                text={
+                    <p className="py-4">
+                        Some open source licenses like GPL require strict compliance to help mitigate any potential risks. With{' '}
+                        <Link
+                            href="/code-search"
+                            title="Code Search"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Code Search
+                        </Link>
+                        , quickly find any instances of GPL licensed code.
+                    </p>
+                }
+            />
+        ),
+    },
+    {
         title: 'Automatically merge and deploy fixes',
         text: (
             <CarouselItem
