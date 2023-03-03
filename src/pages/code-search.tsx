@@ -13,6 +13,7 @@ import {
 } from '../components'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { buttonLocation } from '../data/tracking'
+import { Dropdown } from '../components/Dropdown'
 
 const blogResources = [
     {
@@ -41,6 +42,8 @@ const blogResources = [
         href: '/guides/key-traits-of-a-code-intelligence-platform.pdf',
     },
 ]
+
+  const languages = ['JavaScript', 'TypeScript', 'Python', 'Go']
 
 export const CodeSearchPage: FunctionComponent = () => (
     <Layout
@@ -92,6 +95,8 @@ export const CodeSearchPage: FunctionComponent = () => (
                                 confidence in what's in your codebase.
                             </li>
                         </ul>
+                        <h4 className='mb-6'>Try a sample</h4>
+                        <Dropdown options={languages} defaultOption="JavaScript" onChange= {() => {}} />
                     </>
                 }
             />
