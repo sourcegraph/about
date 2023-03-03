@@ -35,7 +35,9 @@ You must follow the acceptable use policies of the following LLM providers:
 
 <span className="text-blurple-400">
 
-## Other FAQs
+## Other frequently asked questions
+
+</span>
 
 1. *Will my queries or Cody's responses to my queries be used to train any generally available machine learning model?*
 
