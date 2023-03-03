@@ -17,6 +17,7 @@ import {
     ThreeUpText,
     TwoColumnSection,
 } from '../../components'
+import { GenericCallToAction } from '../../components/cta/GenericCallToAction'
 import { StandardCallToAction } from '../../components/cta/StandardCallToAction'
 import { UseCasePageCallToAction } from '../../components/cta/UseCasePageCallToAction'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
@@ -302,6 +303,7 @@ const UseCasePage: FunctionComponent = () => (
                         </Link>
                     </div>
                 }
+                leftColumnCta={<GenericCallToAction buttonLocation={buttonLocation.hero} href="https://sourcegraph.com/search?q=context%3Aglobal+log4j&patternType=standard&sm=1&groupBy=repo&flag=vulnerabilities" children = "Find vulnerabilities in your code" />}
             />
         </ContentSection>
 
