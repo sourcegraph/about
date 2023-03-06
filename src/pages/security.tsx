@@ -66,7 +66,7 @@ const SecurityPage: FunctionComponent = () => (
                                             </li>
                                             <li>
                                                 All storage volumes are encrypted at rest, and data is encrypted
-                                                in-cloud during transport.
+                                                during transport from code host to cloud environment.
                                             </li>
                                             <li>
                                                 Sourcegraph leverages permission management tools for just-in-time
