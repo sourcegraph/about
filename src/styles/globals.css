@@ -108,6 +108,10 @@
         @apply bg-gray-400 hover:bg-gray-500 text-white;
     }
 
+    .btn-secondary-outlined {
+        @apply border-1 border-violet-400 text-violet-400 bg-white outline-none hover:bg-violet-100 focus:ring focus:ring-violet-300 focus:border-transparent;
+    }
+
     .btn-link {
         @apply text-violet-400 hover:text-violet-500 hover:underline;
     }
