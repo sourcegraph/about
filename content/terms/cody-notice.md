@@ -3,7 +3,7 @@ layout: markdown
 title: Cody Notice and Usage Policy
 ---
 
-Last modified: March 3, 2023
+_Last modified: March 3, 2023_
 
 **Sourcegraph Cody** is an AI coding assistant that finds, explains, and writes code using deep context from your codebase. Cody uses Sourcegraph’s Code Intelligence Platform and [Anthropic’s](https://www.anthropic.com/) large language model (LLM) to synthesize responses to user queries. You can access the private **beta version** of Cody through an editor extension. Cody will soon be made available within the Sourcegraph application. 
 
@@ -12,7 +12,7 @@ Last modified: March 3, 2023
 ## Accuracy
 
 </span>
-
+  
 Cody uses context from your codebase to substantially improve the accuracy of its responses compared to other AI-based tools. However, Sourcegraph does not guarantee the accuracy of Cody's answers. 
 
 <span className="text-blurple-400">
@@ -39,15 +39,15 @@ You must follow the acceptable use policies of the following LLM providers:
 
 </span>
 
-1. *Will my queries or Cody's responses to my queries be used to train any generally available machine learning model?*
+#### Will my queries or Cody's responses to my queries be used to train any generally available machine learning model?
 
 No.
 
-1. *Will my queries to Cody be shared with any third parties?*
+#### Will my queries to Cody be shared with any third parties?
 
 Yes, we will send your queries to LLM providers we use for the sole purpose of providing you the service. 
 
-1. *Will the LLMs use my Cody Q&A to train their models?*
+#### Will the LLMs use my Cody Q&A to train their models?
 
 No, Sourcegraph has obtained commitments from our LLM providers that no Cody requests will be used to train LLM models. 
 
