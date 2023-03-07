@@ -1,14 +1,15 @@
 ---
-title: 'Our vision for better code ownership'
+title: "Our vision for better code ownership"
 authors:
   - name: Malo Marrec
     url: https://twitter.com/malomarrec
-publishDate: 2023-01-30T10:00-07:00
-description: 'Code ownership today is broken. We're setting out to fix it.'
+publishDate: 2023-03-09T10:00-07:00
+description: "Code ownership today is broken. We're setting out to fix it."
+slug: our-vision-for-code-ownership
 tags: [blog]
-slug: 'our-vision-for-code-ownership'
 published: true
 ---
+
 
 A few months ago, we started exploring how Sourcegraph could help manage code ownership. For a few years, we’d been hearing from customers that having code ownership integrated within the code intelligence platform would solve many important problems and work hand in hand with Search, Batch Changes, and Code Insights. 
 
