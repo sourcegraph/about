@@ -118,11 +118,11 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
         <>
             <MeetWithProductExpertButton
                 buttonLocation={buttonLocation.nav}
-                buttonClassName="btn-outline-white !font-normal"
+                buttonClassName={classNames('!font-normal', dark ? 'btn-outline-white' : 'btn-link')}
                 requestInfo={true}
             />
             {EXP_GET_STARTED ? (
-                <GetStartedLinkButton buttonLocation={buttonLocation.nav} dark={true} />
+                <GetStartedLinkButton buttonLocation={buttonLocation.nav} dark={dark} />
             ) : (
                 <TrySourcegraphForFreeButton buttonLocation={buttonLocation.nav} dark={dark}>
                     Start for free
