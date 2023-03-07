@@ -7,9 +7,11 @@ import { PodcastListItem } from '../components/Blog/PodcastListItem'
 import { PostLayout } from '../components/Blog/PostLayout'
 import { PostListItem } from '../components/Blog/PostListItem'
 import { ReleasePost } from '../components/Blog/ReleasePost'
+import { LearnPost } from '../components/Blog/LearnPost'
 
 export enum PostType {
     BlogPost,
+    LearnPost,
     LinkPost,
     PressReleasePost,
     ReleasePost,
@@ -98,6 +100,7 @@ export interface PostIndexItemProps {
 
 export const POST_TYPE_TO_COMPONENT: Record<PostType, FunctionComponent<PostComponentProps>> = {
     [PostType.BlogPost]: PostLayout,
+    [PostType.LearnPost]: LearnPost,
     [PostType.LinkPost]: LinkPost,
     [PostType.ReleasePost]: ReleasePost,
     [PostType.PressReleasePost]: PostLayout,

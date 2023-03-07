@@ -1,17 +1,36 @@
-.mainHeader {
+.hero {
     text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+.hero img {
+    margin: auto;
 }
 
 .cardContainer {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
+    // --card-border-color: var(--border-color-2);
 
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    max-width: 30%;
+    flex: 1 0 30%;
+    margin: 1rem;
+}
+
+.card img {
+    padding: 1rem;
 }
 
 .card h1 {
     font-size: 1rem;
+    line-height: normal;
+    margin-bottom: 0.5rem;
 }
 
 .title {

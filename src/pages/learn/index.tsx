@@ -26,7 +26,25 @@ const units: Unit[] = [
         subtitle: 'structured concurrency for Go',
         description: `Concurrency is one of Go's superpowers, but can be tricky to manage. So we open-sourced our library for managing concurrency in Go`,
         thumbnailUrl: 'https://user-images.githubusercontent.com/12631702/210295964-785cc63d-d697-420c-99ff-f492eb81dec9.svg'
-    }
+    },
+    {
+        title: 'conc',
+        subtitle: 'structured concurrency for Go',
+        description: `Concurrency is one of Go's superpowers, but can be tricky to manage. So we open-sourced our library for managing concurrency in Go`,
+        thumbnailUrl: 'https://user-images.githubusercontent.com/12631702/210295964-785cc63d-d697-420c-99ff-f492eb81dec9.svg'
+    },
+    {
+        title: 'conc',
+        subtitle: 'structured concurrency for Go',
+        description: `Concurrency is one of Go's superpowers, but can be tricky to manage. So we open-sourced our library for managing concurrency in Go`,
+        thumbnailUrl: 'https://user-images.githubusercontent.com/12631702/210295964-785cc63d-d697-420c-99ff-f492eb81dec9.svg'
+    },
+    {
+        title: 'conc',
+        subtitle: 'structured concurrency for Go',
+        description: `Concurrency is one of Go's superpowers, but can be tricky to manage. So we open-sourced our library for managing concurrency in Go`,
+        thumbnailUrl: 'https://user-images.githubusercontent.com/12631702/210295964-785cc63d-d697-420c-99ff-f492eb81dec9.svg'
+    },
 ]
 
 const LearnHome: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts }) => (
@@ -36,25 +54,75 @@ const LearnHome: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
             description:
                 'This is the description',
         }}
+        // hero={
+        //     <div className={styles.hero}>
+        //         <img src="https://user-images.githubusercontent.com/1646931/223518348-f3f53082-a41e-4a73-9d8d-b5f915d21587.png"/>
+        //     </div>
+        // }
     >
-        <h1 className={styles.mainHeader}>Sourcegraph University</h1>
+        <div className="mx-auto -x-sm md:container">
+        <h1 className="py-sm">Sourcegraph University</h1>
         <div className={styles.cardContainer}>
         {units.map(unit => (
-            <div className={styles.card}>
+            <div key={unit.title} className={styles.card}>
                 <h1><span className={styles.title}>{unit.title}</span> <span className={styles.subtitle}>{unit.subtitle}</span></h1>
                 <img src={unit.thumbnailUrl} />
-                <p>{unit.description}</p>
+                <div>{unit.description}</div>
             </div>
         ))}
         </div>
-        {/* <div className={`${styles.test}`}>
-            <div>
-                <h2>conc</h2>
-                <h3>Structured concurrency for Go</h3>
-            </div>
-            <div>This is another panel</div>
-        </div> */}
+        </div>
     </Layout>
+)
+
+
+
+
+// const BlogPage: NextPage<PageProps> = ({ post, content }) => {
+//     const title = post.frontmatter.title
+//     const description = post.frontmatter.description ? post.frontmatter.description : post.excerpt
+//     const image = post.frontmatter.socialImage
+//     const videoID = post.frontmatter.videoID
+//     const canonical = post.frontmatter.canonical
+//     const externalTitle = post.frontmatter.externalTitle
+//     const externalDescription = post.frontmatter.externalDescription
+//     const meta = {
+//         title,
+//         image,
+//         videoID,
+//         description,
+//         externalTitle,
+//         externalDescription,
+//         canonical,
+//     }
+
+//     const blogInfo = BLOG_TYPE_TO_INFO[post.fields?.blogType ?? 'blog']
+//     const PostTemplate = POST_TYPE_TO_COMPONENT[postType(post)]
+
+//     return (
+//         <Layout meta={meta}>
+//             <article>
+//                 <div className="mx-auto px-sm lg:container">
+//                     <BlogHeader {...blogInfo} />
+//                 </div>
+//                 <div className="mt-8 bg-white">
+//                     <div className="mx-auto max-w-screen-xl">
+//                         <PostTemplate
+//                             post={post}
+//                             content={content}
+//                             url={urlToPost(post)}
+//                             className="mx-auto max-w-[840px]"
+//                             headerClassName="bg-white border-b-0 text-center pt-md pb-sm"
+//                         />
+//                     </div>
+//                 </div>
+//             </article>
+
+//             <CallToActionContentSection />
+//         </Layout>
+//     )
+// }
+
 
     // <div className={`${styles.test}`}>
 
@@ -85,7 +153,6 @@ const LearnHome: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
     // - swyx
     // - Cassidy Williams
 
-)
 
 export default LearnHome
 

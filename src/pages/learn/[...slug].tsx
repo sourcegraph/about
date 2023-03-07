@@ -14,13 +14,20 @@ export interface PageProps {
 
 const CONTENT_PARENT_DIRECTORY = './content/'
 
-const LearnPage: NextPage<PageProps> = ({ post, content }) => {
-    return <Layout meta={{/* TODO */}}>
-        <article>
-            This is a layout page
-        </article>
-    </Layout>
+// interface PageProps {}
 
+// const LearnPage: FunctionComponent<PageProps> = () => {
+//     return (
+//         <Layout meta={{
+//             title: 'This is the title',
+//             description: 'TODO description',
+//         }}>
+//             <div>This is a page</div>
+//         </Layout>
+//     )
+// }
+
+const LearnPage: NextPage<PageProps> = ({ post, content }) => {
     // const title = post.frontmatter.title
     // const description = post.frontmatter.description ? post.frontmatter.description : post.excerpt
     // const image = post.frontmatter.socialImage
@@ -38,39 +45,29 @@ const LearnPage: NextPage<PageProps> = ({ post, content }) => {
     //     canonical,
     // }
 
-    // const podcastInfo = BLOG_TYPE_TO_INFO[post.fields?.blogType ?? 'podcast']
-    // const PostTemplate = POST_TYPE_TO_COMPONENT[postType(post)]
-
-    // return (
-    //     <Layout meta={meta}>
-    //         <article>
-    //             <div className="container-lg">
-    //                 <BlogHeader {...podcastInfo} />
-    //             </div>
-    //             <div className="post-template mt-5 bg-white">
-    //                 <div className="container-lg">
-    //                     <PostTemplate
-    //                         post={post}
-    //                         content={content}
-    //                         url={urlToPost(post)}
-    //                         className="post-template__post podcast-post max-w-750 tw-mx-auto"
-    //                         headerClassName="card-header bg-white border-bottom-0 tw-text-center tw-pt-md"
-    //                         contentClassName="podcast-post__body"
-    //                     />
-    //                 </div>
-    //             </div>
-    //         </article>
-    //     </Layout>
-    // )
+    return <Layout meta={{/* TODO */}}>
+        <article>
+            <div className="mx-auto px-sm lg:container">
+                Learn header goes here
+                {/* <BlogHeader {...blogInfo} /> */}
+            </div>
+            <div className="mt-8 bg-white">
+                <div className="mx-auto max-w-screen-xl">
+                    <div>Post goes here</div>
+                    <h1>
+                        <span>{post.frontmatter.title}</span>
+                        {/* <span>{post.frontmatter.subtitle}</span> */}
+                    </h1>
+                </div>
+            </div>
+        </article>
+    </Layout>
 }
 
 export default LearnPage
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const allSlugs = await getAllSlugs()
-
-    console.log("# allSlugs", allSlugs?.records['learn']?.contentDirectory, allSlugs?.records['learn']?.recordSlugs)
-
     if (!allSlugs) {
         return { paths: [{ params: { slug: ['404'] } }], fallback: false }
     }

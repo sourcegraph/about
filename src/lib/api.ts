@@ -61,6 +61,7 @@ export const getPages = async (baseDirectory: string): Promise<string[]> => {
 }
 
 export const getAllSlugs = async (): Promise<SlugCacheObject | undefined> => {
+    console.log("# SLUG_CACHE_PATH", SLUG_CACHE_PATH)
     const slugData = (await fs
         .readFile(path.join(process.cwd(), SLUG_CACHE_PATH), 'utf8')
         .catch(error => console.error(error))) as string
