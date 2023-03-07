@@ -26,6 +26,8 @@ Samuel has been working on pydantic since 2017 when he realized the untapped val
   showTitle={true}
 />
 
+We learned after the recording that Samuel closed a seed investment round led by Sequoia, with participation from Partech, Irregular Expressions and angel investors including Bryan Helmig (co-founder and CTO of Zapier), Tristan Handy (founder and CEO of Dbt Labs) and David Cramer (co-founder and CTO of Sentry). 
+
 <hr className="my-6" />
 
 ### Tour de Source
@@ -640,4 +642,5 @@ If you use pydantic and would like to contribute financially to the sustainabili
 - [Pydantic V2 Plan](https://docs.pydantic.dev/blog/pydantic-v2/): Samuel's plans for pydantic v2.
 - [How Pydantic V2 leverages Rust's Superpowers](https://fosdem.org/2023/schedule/event/rust_how_pydantic_v2_leverages_rusts_superpowers/): Samuel's talk at FOSDEM 2023.
 - [The PyO3 user guide](https://pyo3.rs/): An introduction to PyO3: Publish Rust-based Python packages.
+- [I've started a company](https://pydantic.dev/announcement/)
 
