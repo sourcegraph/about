@@ -8,8 +8,6 @@ description: 'Code ownership today is broken. We're setting out to fix it.'
 tags: [blog]
 slug: 'our-vision-for-code-ownership'
 published: true
-heroImage:
-socialImage:
 ---
 
 A few months ago, we started exploring how Sourcegraph could help manage code ownership. For a few years, we’d been hearing from customers that having code ownership integrated within the code intelligence platform would solve many important problems and work hand in hand with Search, Batch Changes, and Code Insights. 
