@@ -7,13 +7,14 @@ import { GetStaticProps } from 'next'
 import { PostsListPage, BLOG_TYPE_TO_INFO } from '../../components'
 import { BlogType, Post, PostIndexComponentProps } from '../../interfaces/posts'
 import { getSortedSlugs, loadMarkdownFile, getMarkdownFiles, serializeMdxSource } from '../../lib'
+import styles from './learn.module.css'
 
 const CONTENT_PARENT_DIRECTORY = './content/'
 
 const LearnHome: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts }) => (
     <div>
         <h1>Sourcegraph University</h1>
-        <div className='flex'>
+        <div className={`${styles.test}`}>
             <div>This is a panel</div>
             <div>This is a panel</div>
         </div>
