@@ -21,7 +21,7 @@ But we realized there is a lot more to the space and that code ownership tooling
 
 To paraphrase a customer, *”CODEOWNERS alone is a solution for small companies. There’s no enterprise solution that works at scale.”*
 
-## Why code ownership
+### Why code ownership
 
 What is code ownership, and why is it useful? Ownership is commonly defined as the one developer, or team of developers, who are responsible for a part of the codebase. 
 
@@ -30,7 +30,26 @@ When we dug deeper with customers, we realized that code ownership doesn’t mea
 - **Accountable party**: “If there’s a problem, who shall I contact?”
 - **Expert**: “Who knows about this code?”
 
-## What's broken
+Code ownership also has wildly different importance for different-sized organizations. In very small organizations with a dozen developers, expertise is trivial to solve because one can easily ask around or take a quick look at the commit history. Accountability is trivial because when there’s a problem, it’s all hands on deck to fix it.
+
+In larger teams, answering those two questions becomes hard. 
+
+The team grows all the time, and so does the codebase. Ownership needs to [grow with the company](https://betterprogramming.pub/the-underestimated-importance-of-clear-code-ownership-baed758e47b8). People join and leave or move around, so it’s virtually impossible to mentally track who you can ask about what part of the code without a code ownership system. Looking at the commit history falls short because the committers might have left or moved, and the history tends to be noisy.
+
+Tools like Sourcegraph help there because you can self-serve answers with Search! But that doesn’t entirely replace finding someone you can ask about code, especially when onboarding, discovering a new system, or making abstraction or interface changes affecting many downstream teams. Studies have shown that code ownership [correlates with code quality](https://www.microsoft.com/en-us/research/publication/code-ownership-and-software-quality-a-replication-study/), substantiating the intuition that comprehensive code ownership coverage helps with keeping code quality high.
+
+When there’s a security vulnerability or an incident, finding who the first responders are is also a big bottleneck. A lot of the companies we talked to often have to resort to blasting large email announcements to find who needs to be involved in fixing things when the incident affects hundreds of repos and no clear owner is identified. This slows down remediation and often leads to resorting to the much-dreaded, always outdated spreadsheet to keep track of who needs to do what. Finally, in large teams, it’s very likely someone’s unavailable. Who’s the next best person? Who can this be escalated to? Those questions are difficult to answer at scale: you can’t just press a button and automatically escalate all the items that need attention.
+
+Having a reliable, up-to-date code ownership system for accountable parties and experts answers those challenges. 
+
+We break down use cases for code ownership into 4 themes:
+- Incident response and security, and bringing down mean time to remediation
+- Productivity, onboarding, and offboarding
+- Platform changes
+- Capacity planning and staffing
+
+  
+### What's broken
 
 Most companies we talked to were either dissatisfied with off-the-shelf tooling, or built their own ownership systems over the years. 
 
@@ -46,7 +65,8 @@ Repo-level ownership is stored in one system, and file-level in CODEOWNERS in an
 
 We think that there’s a ton of potential to go a step further and build a radically better ownership system.
 
-## Our vision for code ownership
+  
+### Our vision for code ownership
 
 We’re introducing a new feature, Sourcegraph Own, that’ll radically improve over state of the art. Own will be an evergreen, scalable, automatically updated code ownership source of truth, that knows both about accountability and expertise, and is deeply integrated into productivity, incident response, platform changes and capacity planning workflows.
 
