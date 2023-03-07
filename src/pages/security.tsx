@@ -45,7 +45,7 @@ const SecurityPage: FunctionComponent = () => (
                     <Tabs
                         tabs={[
                             {
-                                title: 'Product security',
+                                title: 'Product Security',
                                 className: 'md:text-2xl py-5',
                                 content: (
                                     <div>
@@ -251,10 +251,6 @@ const SecurityPage: FunctionComponent = () => (
                                             </li>
                                             <li>Our software components are monitored for CVEs.</li>
                                             <li>
-                                                We utilize industry-leading practices to build and ship our software,
-                                                utilizing distroless Docker images and a secure software supply-chain.
-                                            </li>
-                                            <li>
                                                 We publish signatures and Software Bill-of-Materials (SBOM) for our
                                                 container images, allowing customers to verify the security of our
                                                 products for themselves.
@@ -269,7 +265,7 @@ const SecurityPage: FunctionComponent = () => (
                                                 We employ various tools and processes to ensure Sourcegraph’s code
                                                 remains secure.
                                             </li>
-                                            <li>Containers are scanned for CVEs using GCP tooling.</li>
+                                            <li>Containers are scanned for CVEs using GCP provider-specific tooling.</li>
                                             <li>Code coverage tools are used to ensure unit test coverage.</li>
                                             <li>3rd party penetration tests are conducted annually.</li>
                                             <li>Internal audits of our code and systems are run regularly.</li>
@@ -295,7 +291,7 @@ const SecurityPage: FunctionComponent = () => (
                                 ),
                             },
                             {
-                                title: 'Trust & compliance',
+                                title: 'Trust & Compliance',
                                 className: 'md:text-2xl py-5',
                                 content: (
                                     <div>
@@ -336,7 +332,7 @@ const SecurityPage: FunctionComponent = () => (
                                 ),
                             },
                             {
-                                title: 'Bug bounty',
+                                title: 'Bug Bounty',
                                 className: 'md:text-2xl py-5',
                                 content: (
                                     <div>
@@ -356,7 +352,7 @@ const SecurityPage: FunctionComponent = () => (
                                             title="Go to Security Trust Portal"
                                             data-button-style={buttonStyle.outline}
                                         >
-                                            Report a Vulnerability
+                                            Contact Security Team
                                         </Link>
                                     </div>
                                 ),

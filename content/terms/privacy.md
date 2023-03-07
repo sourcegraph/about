@@ -259,7 +259,7 @@ When we transfer the personal data of EEA, Swiss, and UK residents outside of th
 
 ### How secure is my information?
 
-We secure your information by implementing technical and organizational security controls that you can read about in [Security is core to everything we do](/terms/security).
+We secure your information by implementing technical and organizational security controls that you can read about in [Security is core to everything we do](/security).
 
 When we receive your information, we protect it on our servers using technical, physical, and logical security safeguards. For information stored in any Software installed in your computing system, you are responsible for its security by making use of the security features of your device. We recommend that you take the appropriate steps to secure all computing devices that you use in connection with our Services.
 
