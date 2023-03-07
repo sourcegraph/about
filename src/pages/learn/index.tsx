@@ -11,8 +11,40 @@ import { getSortedSlugs, loadMarkdownFile, getMarkdownFiles, serializeMdxSource 
 const CONTENT_PARENT_DIRECTORY = './content/'
 
 const LearnHome: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts }) => (
-    <div>PostsGridPage</div>
+    <div>
+        <h1>Sourcegraph University</h1>
+        <div className='flex'>
+            <div>This is a panel</div>
+            <div>This is a panel</div>
+        </div>
+    </div>
     // <PostsListPage blogInfo={BLOG_TYPE_TO_INFO[BlogType.Podcast]} posts={posts} allPosts={allPosts} />
+
+    // Units
+    // - Daniel Stenburg, cURL
+    // - conc
+    // - codesearch.ai
+    // - TypeScript ESLint
+    // - Caddy
+    // - NextAuth.js
+    // - Qdrant
+    //
+    // Future units
+    // - Zig
+    // - Kelly Norton
+    // - Nelson Elhage
+    // - Han-Wen Nienhuys
+
+    // Dev tool leaders talk series
+    // - Jason Warner
+    // - Jean Yang
+    // - Max Howell
+    // - Adam Berry
+    // - Max Brunsfeld
+    // - Sugu Sougoumarane
+    // - swyx
+    // - Cassidy Williams
+
 )
 
 export default LearnHome
