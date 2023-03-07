@@ -4,31 +4,70 @@ import { FunctionComponent } from 'react'
 
 import { GetStaticProps } from 'next'
 
-import { PostsListPage, BLOG_TYPE_TO_INFO } from '../../components'
+import { PostsListPage, BLOG_TYPE_TO_INFO, Layout, Hero, ContentSection } from '../../components'
+import { StandardCallToAction } from '../../components/cta/StandardCallToAction'
 import { BlogType, Post, PostIndexComponentProps } from '../../interfaces/posts'
 import { getSortedSlugs, loadMarkdownFile, getMarkdownFiles, serializeMdxSource } from '../../lib'
-import styles from './learn.module.css'
+import styles from './learn.module.scss'
+import { buttonLocation } from '../../data/tracking'
 
 const CONTENT_PARENT_DIRECTORY = './content/'
 
+interface Unit {
+    title: string
+    subtitle: string
+    description: string
+    thumbnailUrl: string
+}
+
+const units: Unit[] = [
+    {
+        title: 'conc',
+        subtitle: 'structured concurrency for Go',
+        description: `Concurrency is one of Go's superpowers, but can be tricky to manage. So we open-sourced our library for managing concurrency in Go`,
+        thumbnailUrl: 'https://user-images.githubusercontent.com/12631702/210295964-785cc63d-d697-420c-99ff-f492eb81dec9.svg'
+    }
+]
+
 const LearnHome: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts }) => (
-    <div>
-        <h1>Sourcegraph University</h1>
-        <div className={`${styles.test}`}>
-            <div>This is a panel</div>
-            <div>This is a panel</div>
+    <Layout
+        meta={{
+            title: 'This is the title',
+            description:
+                'This is the description',
+        }}
+    >
+        <h1 className={styles.mainHeader}>Sourcegraph University</h1>
+        <div className={styles.cardContainer}>
+        {units.map(unit => (
+            <div className={styles.card}>
+                <h1><span className={styles.title}>{unit.title}</span> <span className={styles.subtitle}>{unit.subtitle}</span></h1>
+                <img src={unit.thumbnailUrl} />
+                <p>{unit.description}</p>
+            </div>
+        ))}
         </div>
-    </div>
+        {/* <div className={`${styles.test}`}>
+            <div>
+                <h2>conc</h2>
+                <h3>Structured concurrency for Go</h3>
+            </div>
+            <div>This is another panel</div>
+        </div> */}
+    </Layout>
+
+    // <div className={`${styles.test}`}>
+
     // <PostsListPage blogInfo={BLOG_TYPE_TO_INFO[BlogType.Podcast]} posts={posts} allPosts={allPosts} />
 
     // Units
-    // - Daniel Stenburg, cURL
     // - conc
     // - codesearch.ai
     // - TypeScript ESLint
     // - Caddy
     // - NextAuth.js
     // - Qdrant
+    // - Daniel Stenburg, cURL
     //
     // Future units
     // - Zig
