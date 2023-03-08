@@ -20,7 +20,7 @@ Additionally, we took a look at our release cycle and how frequently Sourcegraph
 We want every version of Sourcegraph to be extremely valuable and extremely stable. Therefore, we are excited to continue to simplify
 the experience of operating Sourcegraph with changes to our release cadence.
 
-Following the Sourcegraph 5.0 Starship event in March 2023, Sourcegraph will move to a quarterly feature release cycle. The first
+Following the Sourcegraph 5.0 Starship event in March 2023, open source and enterprise Sourcegraph will move to a quarterly feature release cycle. The first
 of these quarterly releases will be version 5.1 which will be released in June 2023. These feature releases will be packed full of the exciting work on our roadmap,
 as well as bug fixes, security updates, and any other infrastructure changes.
 
@@ -39,6 +39,6 @@ Additionally, we will stabilize the cadence of patches between feature releases 
 and significantly smooth out the experience of updating Sourcegraph.
 
 These changes in release cadence will not reduce our response time for security incidents or other critical incidents affecting the operation of Sourcegraph. 
-Patches will be released out of band as necessary in addition to any other scheduled patches.
+Patches will be released out of band as necessary in addition to any other scheduled patches. 
 
 We are excited to provide a consistent and stable release schedule for Sourcegraph going forward. And, if you'd like to see more about our upcoming Starship event and the release of Sourcegraph 5.0, you can [check it out here](https://about.sourcegraph.com/starship).
