@@ -11,7 +11,7 @@ interface Tab {
 
 interface Tabs {
     tabs: Tab[]
-    tabBarExtraContent?: string | ReactNode // Extra content in the tab bar
+    tabBarExtraContent?: string | ReactNode
     navClassName?: string
     contentClassName?: string
 }
