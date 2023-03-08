@@ -87,4 +87,4 @@ We're working hard to bring those workflows to life:
 
 Ultimately, we think that Own will be able to provide a powerful off-the-shelf alternative to the homegrown systems of many enterprise customers. But for customers that want to stick with their internal systems, great! Own can ingest existing ownership data and make it available in the Sourcegraph platform.
 
-The first iteration of Sourcegraph Own will release as an experimental feature in Sourcegraph 5.0. [Join our next Starship event on March 23](http://about.sourcegraph.com/starship) to learn more and be the first to try it.
+The first iteration of Sourcegraph Own will release as an experimental feature in Sourcegraph 5.0. [Join our next Starship event on March 23](http://about.sourcegraph.com/starship) to learn more and be the first to try it. Meanwhile, here's a [sneak peek](https://twitter.com/MaloMarrec/status/1629135017174609922).
