@@ -1,11 +1,56 @@
 import path from 'path'
+import classNames from 'classnames'
 
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
+import { MDXRemote } from 'next-mdx-remote'
 import { Layout, BlogHeader, BLOG_TYPE_TO_INFO } from '../../components'
-import { Post, POST_TYPE_TO_COMPONENT, postType, urlToPost } from '../../interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '../../lib'
+import styles from './learn.module.scss'
+
+type FrontMatter = any
+type Post = any
+
+// interface FrontMatter {
+//     slug?: string
+//     title?: string
+//     description?: string
+//     /** Controls the page's `<title>` for SEO and the browser tab label. Defaults to {@link title}. */
+//     externalTitle?: string
+//     /** Controls the page's `<PostIndexItemmeta name="description">` for SEO. Defaults to {@link description}. */
+//     externalDescription?: string
+//     canonical?: string
+//     publishDate?: string
+//     published?: boolean
+//     heroImage?: string
+//     authors?: {
+//         name: string
+//         url?: string
+//     }[]
+//     tags?: string[]
+//     changelogItems?: {
+//         url: string
+//         category: string
+//         description: string
+//     }[]
+//     socialImage?: string
+//     videoID?: string
+//     layout?: string
+//     style?: string
+//     audioSrc?: string
+// }
+
+// interface Post {
+//     frontmatter: FrontMatter
+//     content: string
+//     excerpt?: string
+//     fileAbsolutePath?: string
+//     fields?: {
+//         slug: string
+//         permalink: string
+//     }
+// }
 
 export interface PageProps {
     post: Post
@@ -27,7 +72,7 @@ const CONTENT_PARENT_DIRECTORY = './content/'
 //     )
 // }
 
-const LearnPage: NextPage<PageProps> = ({ post, content }) => {
+
     // const title = post.frontmatter.title
     // const description = post.frontmatter.description ? post.frontmatter.description : post.excerpt
     // const image = post.frontmatter.socialImage
@@ -45,23 +90,39 @@ const LearnPage: NextPage<PageProps> = ({ post, content }) => {
     //     canonical,
     // }
 
-    return <Layout meta={{/* TODO */}}>
-        <article>
-            <div className="mx-auto px-sm lg:container">
-                Learn header goes here
-                {/* <BlogHeader {...blogInfo} /> */}
-            </div>
-            <div className="mt-8 bg-white">
-                <div className="mx-auto max-w-screen-xl">
-                    <div>Post goes here</div>
-                    <h1>
-                        <span>{post.frontmatter.title}</span>
-                        {/* <span>{post.frontmatter.subtitle}</span> */}
-                    </h1>
+const LearnPage: NextPage<PageProps> = ({ post, content }) => {
+    return (
+        <Layout
+            meta={
+                {
+                    /* TODO */
+                }
+            }
+        >
+            <article className={`${styles.learnPostContainer}`}>
+                <div className={`mx-auto px-sm lg:container`}>
+                    <h2 className={`${styles.header}`}>
+                        Open source university
+                    </h2>
+                    <h3 className={styles.header}>
+                        Uplevel your development by learning from the best of open source
+                    </h3>
                 </div>
-            </div>
-        </article>
-    </Layout>
+                <div className="mt-8 bg-white">
+                    <div className="mx-auto max-w-screen-xl">
+                        <h1>
+                            <span>{post.frontmatter.title}</span>
+                            &nbsp;
+                            <span className={styles.subtitle}>{post.frontmatter.subtitle}</span>
+                        </h1>
+                        <div>
+                            <MDXRemote {...content} />
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </Layout>
+    )
 }
 
 export default LearnPage
