@@ -217,6 +217,26 @@
             radial-gradient(29.03% 79.03% at 103.02% 53.38%, theme(colors.violet.400 / 60%) 0%, transparent 73.04%),
             #000;
     }
+    .sg-bg-gradient-starship {
+        background: radial-gradient(
+                    26.66% 22.12% at 19.48% -4.92%,
+                    rgba(80, 51, 225, 0.6) 0%,
+                    rgba(80, 51, 225, 0) 73.04%
+                )
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+            radial-gradient(24.55% 8.76% at -4.2% 100%, rgba(80, 51, 225, 0.6) 0%, rgba(80, 51, 225, 0) 73.04%)
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+            radial-gradient(70.95% 20.05% at 100% 102.94%, rgba(80, 51, 225, 0.6) 0%, rgba(80, 51, 225, 0) 73.04%),
+            radial-gradient(31.39% 34.15% at 100% 9.81%, rgba(80, 51, 225, 0.6) 0%, rgba(80, 51, 225, 0) 73.04%)
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+            radial-gradient(48.54% 30.42% at 14.31% 110.2%, rgba(161, 18, 255, 0.6) 0%, rgba(161, 18, 255, 0) 73.04%)
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+            radial-gradient(43.24% 42.21% at -11.49% -3.07%, rgba(161, 18, 255, 0.6) 0%, rgba(161, 18, 255, 0) 73.04%)
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+            radial-gradient(63.44% 23.09% at 113.44% 53.83%, rgba(161, 18, 255, 0.6) 0%, rgba(161, 18, 255, 0) 73.04%)
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+            #000000;
+    }
 }
 
 /**

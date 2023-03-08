@@ -109,6 +109,8 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      grotesk: ['Space Grotesk'],
+      spaceMono: ['Space Mono'],
     },
 
     fontSize: {
