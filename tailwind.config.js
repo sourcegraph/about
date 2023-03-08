@@ -123,7 +123,8 @@ module.exports = {
       '5xl': ['2.5rem', { lineHeight: '3rem' }], // 40px / 48px
       '6xl': ['3rem', { lineHeight: '3.625rem' }], // 48px / 58px
       '7xl': ['3.25rem', { lineHeight: '3.875rem' }], // 52px / 62px
-      '8xl': ['4.5rem', { lineHeight: '5.375rem' }], // 72px / 86px
+      '8xl': ['3.875rem', { lineHeight: '4.625rem' }], // 62px / 74px
+      '9xl': ['4.5rem', { lineHeight: '5.375rem' }], // 72px / 86px
     },
 
     letterSpacing: {
@@ -185,6 +186,11 @@ module.exports = {
         'flash-background': 'flashBackground 1s ease-out',
         fadeOutSlow: 'fadeOut 1s ease-out',
         fadeIn: 'fadeIn 0.175s ease-in forwards',
+      },
+
+      dropShadow: {
+        xl: `0px 0px 15px ${dlsColors.violet['400']}`,
+        '2xl': `0px 0px 38px ${dlsColors.violet['400']}`,
       },
     },
   },
