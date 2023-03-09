@@ -95,7 +95,7 @@
         @apply bg-violet-400 hover:bg-violet-500 text-white;
     }
     .btn-inverted-primary {
-        @apply bg-white text-violet-400 hover:bg-violet-400 hover:text-white;
+        @apply bg-white text-violet-400 hover:bg-violet-600 hover:text-white focus:bg-white focus:text-violet-400 focus:ring focus:ring-violet-400 focus:border-transparent outline-none;
     }
     .btn-outline-primary {
         @apply border-1 border-violet-400 text-violet-400 bg-white hover:bg-violet-400 hover:text-white;
@@ -216,6 +216,17 @@
             radial-gradient(24.75% 50% at -3.7% 0%, theme(colors.violet.400 / 60%) 0%, transparent 73.04%),
             radial-gradient(29.03% 79.03% at 103.02% 53.38%, theme(colors.violet.400 / 60%) 0%, transparent 73.04%),
             #000;
+    }
+    .sg-bg-gradient-app-large {
+        background: radial-gradient(27.19% 24.43% at 82.36% 56.71%, #270741 0%, rgba(39, 7, 65, 0) 100%),
+            radial-gradient(81.62% 17.03% at -4.13% 79.72%, rgba(158, 23, 105, 0.75) 0.41%, rgba(158, 23, 105, 0) 100%),
+            radial-gradient(
+                38.3% 42.37% at 100% 26.52%,
+                rgba(158, 23, 105, 0.75) 0%,
+                rgba(255, 85, 67, 0) 100%,
+                rgba(158, 23, 105, 0) 100%
+            ),
+            radial-gradient(121.35% 585.52% at 115.38% -2.37%, #270741 0%, #1e0632 71.46%, #0f111a 100%);
     }
 }
 

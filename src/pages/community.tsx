@@ -52,6 +52,7 @@ export const Community: FunctionComponent = () => (
             <Tabs
                 tabs={[
                     {
+                        key: 'events',
                         title: 'Events',
                         content: (
                             <div className="m-auto max-w-xl">
@@ -77,6 +78,7 @@ export const Community: FunctionComponent = () => (
                         ),
                     },
                     {
+                        key: 'sourcegraph_podcast',
                         title: 'Sourcegraph Podcast',
                         content: (
                             <div className="m-auto max-w-xl">

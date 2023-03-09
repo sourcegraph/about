@@ -77,7 +77,7 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
             {
                 name: 'Accessibility',
                 href: '/accessibility',
-            }
+            },
         ],
     },
     {

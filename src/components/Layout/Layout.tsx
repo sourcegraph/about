@@ -24,6 +24,7 @@ interface LayoutProps {
     hero?: ReactNode
     heroAndHeaderClassName?: string
     childrenClassName?: string
+    displayChildrenUnderNav?: boolean
     headerColorTheme?: HeaderColorTheme
 
     className?: string
@@ -120,7 +121,13 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
                     ? 'black'
                     : 'var(--sg-color-gray-50)'
             }; }`}</style>
-            <section className={classNames('flex-1', props.childrenClassName)}>{props.children}</section>
+            <section
+                className={classNames('flex-1', props.childrenClassName, {
+                    '-mt-[68px] pt-5xl md:-mt-[74px] md:!pt-[148px]': props.displayChildrenUnderNav,
+                })}
+            >
+                {props.children}
+            </section>
 
             {!props.hideFooter && (
                 <Footer dark={headerColorTheme === 'dark' || headerColorTheme === 'purple'} minimal={props.minimal} />
