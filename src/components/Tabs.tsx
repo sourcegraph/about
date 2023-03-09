@@ -18,7 +18,12 @@ export const Tabs: FunctionComponent<Tabs> = ({ tabs, navClassName }) => {
 
     return (
         <div>
-            <div className={classNames('flex-row items-center justify-center border-b border-solid border-b-gray-200 text-center xs:flex xs:text-left', navClassName)}>
+            <div
+                className={classNames(
+                    'flex-row items-center justify-center border-b border-solid border-b-gray-200 text-center xs:flex xs:text-left',
+                    navClassName
+                )}
+            >
                 {tabs.map((tab, index) => (
                     <div
                         key={tab.title}

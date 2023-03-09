@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import { buttonLocation } from '../../data/tracking'
+import { GetStartedLinkButton } from '../GetStartedButton'
 import { Heading } from '../Heading'
 
 import { TrySourcegraphForFreeButton } from './TrySourcegraphForFreeButton'
@@ -22,11 +23,17 @@ export const StarshipPageCallToAction: FunctionComponent<StarshipPageCallToActio
                 {title}
             </Heading>
         )}
-        {description && <p className="mt-4">{description}</p>}
+        {description && <p className="mt-4 mb-0 text-lg text-gray-200">{description}</p>}
         {buttonText && (
-            <TrySourcegraphForFreeButton buttonLocation={buttonLocation.trySourcegraph} dark={true}>
-                {buttonText}
-            </TrySourcegraphForFreeButton>
+            <div className="mt-6 flex gap-x-4 md:mt-8">
+                <TrySourcegraphForFreeButton buttonLocation={buttonLocation.trySourcegraph} dark={true}>
+                    {buttonText}
+                </TrySourcegraphForFreeButton>
+                <GetStartedLinkButton
+                    className="hidden border border-white bg-transparent md:block"
+                    buttonLocation={0}
+                />
+            </div>
         )}
     </div>
 )

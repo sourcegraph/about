@@ -1,38 +1,27 @@
-.container :global(.hs-form-private) {
-    display: flex;
-    justify-content: center;
-    column-gap: 12px;
-}
-
 .container :global(.hs-input) {
-    background: black !important;
+    background: var(--sg-color-black) !important;
     padding: 14px 16px;
     border: 1px solid var(--sg-color-gray-500);
     border-radius: 5px;
-    color: white;
-    width: fit-content;
+    color: var(--sg-color-white);
+    width: 100%;
+    max-width: 411px;
 }
 
 .container :global(.hs-email) {
     margin-bottom: 0px;
 }
 
-.container :global(.hs-field-desc) {
-    display: none !important;
-}
-
 .container :global(.actions) {
     margin-bottom: 0px;
-    margin-top: 0px;
     padding: 0px;
 }
 
-.container :global(#label-email-93419890-2b5e-4109-ad13-0fd2ee0c1607) {
-    display: none;
+.container :global(.submitted-message) {
+    color: var(--sg-color-white);
 }
 
-@media only screen and (min-width: 600px) {
-    .container :global(.hs-input) {
-        width: 325px;
-    }
+.container :global(.hs-field-desc),
+.container :global(#label-email-93419890-2b5e-4109-ad13-0fd2ee0c1607) {
+    display: none !important;
 }

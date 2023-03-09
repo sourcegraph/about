@@ -65,8 +65,8 @@ const SecurityPage: FunctionComponent = () => (
                                                 ensuring that customer data is fully segregated.
                                             </li>
                                             <li>
-                                                All storage volumes are encrypted at rest, and data is encrypted
-                                                during transport from code host to cloud environment.
+                                                All storage volumes are encrypted at rest, and data is encrypted during
+                                                transport from code host to cloud environment.
                                             </li>
                                             <li>
                                                 Sourcegraph leverages permission management tools for just-in-time
@@ -265,7 +265,9 @@ const SecurityPage: FunctionComponent = () => (
                                                 We employ various tools and processes to ensure Sourcegraph’s code
                                                 remains secure.
                                             </li>
-                                            <li>Containers are scanned for CVEs using GCP provider-specific tooling.</li>
+                                            <li>
+                                                Containers are scanned for CVEs using GCP provider-specific tooling.
+                                            </li>
                                             <li>Code coverage tools are used to ensure unit test coverage.</li>
                                             <li>3rd party penetration tests are conducted annually.</li>
                                             <li>Internal audits of our code and systems are run regularly.</li>

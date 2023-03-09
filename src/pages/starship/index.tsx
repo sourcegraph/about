@@ -22,6 +22,9 @@ const Starship: FunctionComponent = () => (
         headerColorTheme="purple"
         childrenClassName="sg-bg-gradient-starship"
         displayChildrenUnderNav={true}
+        meta={{
+            image: '/starship/starship_og.png',
+        }}
     >
         {/* Launch Countdown */}
         <div>
@@ -46,15 +49,15 @@ const Starship: FunctionComponent = () => (
         </div>
 
         {/* Event Leads */}
-        <ContentSection className="max-w-[960px] text-center" parentClassName="!pt-0">
+        <ContentSection className="max-w-[960px] text-center md:-mt-[87px]" parentClassName="!pt-0">
             <div className="mb-[83px] flex flex-col md:mb-[96px]">
                 <Heading
                     size="h1"
-                    className="!md:text-[52px] !md:leading-[73px] !text-[39px] !font-medium !leading-[55px] text-white md:!font-grotesk"
+                    className="!text-[39px] !font-medium !leading-[55px] text-white md:!font-grotesk md:!text-[52px] md:!leading-[73px]"
                 >
                     Code intelligence + AI = 🤯
                 </Heading>
-                <Heading size="h3" className="mt-6 font-normal text-white md:mt-4">
+                <Heading size="h3" className="mt-6 font-normal text-gray-200 md:mt-4">
                     Join us on March 23, 2023 for our next Starship launch event, where we’ll unveil the next evolution
                     of Sourcegraph’s code intelligence platform.
                 </Heading>
@@ -65,7 +68,7 @@ const Starship: FunctionComponent = () => (
                     Register for the Starship event:
                 </Heading>
 
-                <div className={classNames('mt-6 px-10', styles.container)}>
+                <div className={classNames('mx-auto mt-6 md:max-w-[491px] md:px-10', styles.container)}>
                     <HubSpotForm formId="93419890-2b5e-4109-ad13-0fd2ee0c1607" />
                 </div>
 
@@ -98,10 +101,7 @@ const Starship: FunctionComponent = () => (
 
         {/* Launch Features */}
         <ContentSection parentClassName="md:!py-0 md:-mt-3">
-            <Heading
-                size="h6"
-                className="text-center text-[21px] font-normal leading-[29px] text-white md:font-spaceMono"
-            >
+            <Heading size="h6" className="text-center text-2xl	 font-normal text-white md:font-spaceMono">
                 WHAT WE’RE SHIPPING
             </Heading>
 
@@ -143,7 +143,7 @@ const Starship: FunctionComponent = () => (
 
         {/* CTA */}
         <ContentSection parentClassName="relative !pt-0 !px-0" className="flex flex-col items-center text-white">
-            <Heading size="h2" className="max-w-[728px] font-medium	px-sm text-center !font-grotesk md:mb-4">
+            <Heading size="h2" className="max-w-[728px] px-sm text-center !font-grotesk !text-4xl font-medium">
                 Over 1.8M engineers use Sourcegraph to build software you rely on
             </Heading>
 

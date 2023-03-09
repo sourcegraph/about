@@ -14,12 +14,14 @@ export const GetStartedLinkButton: React.FunctionComponent<{
     dark?: boolean
     size?: 'md' | 'lg'
     children?: string
-}> = ({ buttonLocation, dark = false, size = 'md', children = 'Get started' }) => (
+    className?: string
+}> = ({ buttonLocation, dark = false, size = 'md', children = 'Get started', className }) => (
     <Link
         className={classNames(
             'btn whitespace-nowrap',
             dark ? 'btn-inverted-primary' : 'btn-primary',
-            size === 'lg' && 'py-xs'
+            size === 'lg' && 'py-xs',
+            className
         )}
         href="/get-started"
         title={children}
