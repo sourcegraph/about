@@ -176,7 +176,10 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                                 </li>
                                 <li className="ml-2.5 text-xs leading-7">Run `Sourcegraph` in your local directory</li>
                                 <li className="ml-2.5 text-xs leading-7">
-                                    The app will automatically detect code in the directory you run it in.
+                                    The app will detect code in the directory you run it in.
+                                </li>
+                                <li className="ml-2.5 text-xs leading-7">
+                                    Your browser will automatically open localhost:3080.
                                 </li>
                             </ol>
                         </div>
