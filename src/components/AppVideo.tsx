@@ -9,9 +9,9 @@ const VIDEOS: Record<
 > = {
     'app-demo-202303': {
         poster: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/app-demo-202303-1_poster.png',
-        track: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/sourcegraph-assets/app-demo-202303-1.vtt',
-        webm: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/sourcegraph-assets/app-demo-202303-1.webm',
-        mp4: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/sourcegraph-assets/app-demo-202303-1.mp4',
+        track: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/app-demo-202303-1.vtt',
+        webm: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/app-demo-202303-1.webm',
+        mp4: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/app-demo-202303-1.mp4',
         dimensions: 16 / 10,
     },
 } as const
