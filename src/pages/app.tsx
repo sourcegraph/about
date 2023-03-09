@@ -159,7 +159,7 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                                     <div className="self-start text-sm leading-7">
                                         Install via{' '}
                                         <Link
-                                            href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+204957.f499bb/sourcegraph_2023.03.23+204957.f499bb_linux_amd64.deb"
+                                            href="https://brew.sh"
                                             title="Homebrew"
                                             className="text-gray-500 underline"
                                             target="_blank"
