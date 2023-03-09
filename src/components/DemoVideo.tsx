@@ -14,6 +14,16 @@ const VIDEOS: Record<
         mp4: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/homepage-demo-202301-1.mp4',
         dimensions: 16 / 9,
     },
+    Record<
+    'app-demo-202303',
+    { poster: string; mp4: string; webm: string; dimensions: number }
+> = {
+    'app-demo-202303': {
+        poster: 'https://sourcegraphstatic.com/app-demo-202303-1_poster.png',
+        webm: 'https://sourcegraphstatic.com/app-demo-202303-1.webm',
+        mp4: 'https://sourcegraphstatic.com/app-demo-202303-1.mp4',
+        dimensions: 16 / 10,
+    },
 } as const
 
 export const DemoVideo: React.FunctionComponent<{
