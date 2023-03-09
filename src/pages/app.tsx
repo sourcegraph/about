@@ -49,7 +49,7 @@ const AppPage: FunctionComponent = () => {
             subtitle: <span className="flex !text-4xl text-white text-left">Lightweight</span>,
             description: (
                 <p className="text-lg text-left text-gray-200">
-                    Install App in minutes. App is a lightweight, single-binary version of Sourcegraph tailored for
+                    Install in minutes. The app is a lightweight, single-binary version of Sourcegraph tailored for
                     developers to use on their local machine.
                 </p>
             ),
@@ -61,7 +61,7 @@ const AppPage: FunctionComponent = () => {
             meta={{
                 title: 'Find, fix, and flow in minutes',
                 description:
-                    'App is a lightweight, single-binary version of Sourcegraph, designed for developers to experience the power of Sourcegraph for free on their local machine.',
+                    'The app is a lightweight, single-binary version of Sourcegraph, designed for developers to experience the power of Sourcegraph for free on their local machine.',
                 image: '/app/app-og.png'
             }}
             headerColorTheme="purple"
@@ -93,7 +93,7 @@ const AppPage: FunctionComponent = () => {
             <div className="mb-8 flex flex-col items-center text-center">
                 <Heading size="h2">Run Sourcegraph for free across all your code</Heading>
                 <p className="my-8 max-w-screen-md text-lg text-gray-200">
-                    App is the easiest way to run Sourcegraph on your local machine for free, complete with code search
+                    The app is the easiest way to run Sourcegraph on your local machine for free, complete with code search
                     and navigation to complement your IDE and local environment. Sync to your GitHub or GitLab account
                     to search and navigate all your code — local and remote — from a single, unified interface.
                 </p>
