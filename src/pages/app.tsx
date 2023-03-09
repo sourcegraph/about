@@ -9,8 +9,8 @@ import SourceBranchIcon from 'mdi-react/SourceBranchIcon'
 import Link from 'next/link'
 
 import { Layout, Heading, Tabs, Badge, ThreeUpText } from '../components'
-import { CodeSnippet } from '../components/CodeSnippet'
 import { DemoVideo } from '../components/AppVideo'
+import { CodeSnippet } from '../components/CodeSnippet'
 
 const AppPage: FunctionComponent = () => {
     const threeUpTextItems = [
