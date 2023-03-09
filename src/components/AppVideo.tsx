@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
 
 const VIDEOS: Record<
-    'homepage-demo-202301',
+    'app-demo-202303',
     { poster: string; track: string; mp4: string; webm: string; dimensions: number }
 > = {
     'app-demo-202303': {
