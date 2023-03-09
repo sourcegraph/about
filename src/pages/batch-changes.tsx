@@ -113,7 +113,6 @@ export const BatchChangesPage: FunctionComponent = () => (
                         }}
                         loop={true}
                         title="Batch Changes: How it works"
-                        caption="Search, define, execute, and track code changes"
                     />
                 }
             />
