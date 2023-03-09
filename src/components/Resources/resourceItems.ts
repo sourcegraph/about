@@ -23,6 +23,15 @@ export interface Resource {
  */
 export const resourceItems: Resource[] = [
     {
+        featured: true,
+        title: 'GitLab solution brief',
+        link: '/guides/sourcegraph-gitlab-solution-brief.pdf',
+        contentType: 'guide',
+        subjects: [],
+        description: "Sourecgraph's native GitLab integration helps developer build better software by freeing them up to focus on complex problems.",
+        publishDate: '2023-03-08T17:32:24Z',
+    },
+    {
         featured: false,
         title: 'Developer velocity vs code security',
         link: '/guides/developer-velocity-vs-code-security.pdf',
