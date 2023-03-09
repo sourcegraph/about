@@ -72,7 +72,7 @@ const Starship: FunctionComponent = () => (
                     <HubSpotForm formId="93419890-2b5e-4109-ad13-0fd2ee0c1607" />
                 </div>
 
-                <p className="mt-4 px-[49px] text-sm text-gray-300">
+                <p className="mt-4 text-sm text-gray-300">
                     We will send you event reminders and announcements of what launched at Starship.
                 </p>
             </div>
