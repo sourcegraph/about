@@ -35,7 +35,7 @@ export const Video: FunctionComponent<Video> = ({
 }) => (
     <figure>
         <video
-            className="w-full drop-shadow-xl"
+            className="w-full"
             width={1280}
             height={720}
             autoPlay={autoPlay}
