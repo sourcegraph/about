@@ -7,12 +7,12 @@ const VIDEOS: Record<
     'homepage-demo-202301',
     { poster: string; track: string; mp4: string; webm: string; dimensions: number }
 > = {
-    'homepage-demo-202301': {
-        poster: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/homepage-demo-202301-1_poster.png',
-        track: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/homepage-demo-202301-1.vtt',
-        webm: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/homepage-demo-202301-0.webm',
-        mp4: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/homepage-demo-202301-1.mp4',
-        dimensions: 16 / 9,
+    'app-demo-202303': {
+        poster: 'https://storage.googleapis.com/sourcegraph-assets/app-demo-202303-1_poster.png',
+        track: 'https://storage.googleapis.com/sourcegraph-assets/app-demo-202303-1.vtt',
+        webm: 'https://storage.googleapis.com/sourcegraph-assets/app-demo-202303-1.webm',
+        mp4: 'https://storage.googleapis.com/sourcegraph-assets/app-demo-202303-1.mp4',
+        dimensions: 16 / 10,
     },
 } as const
 

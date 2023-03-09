@@ -99,7 +99,7 @@ const AppPage: FunctionComponent = () => {
                 </p>
 
                 <DemoVideo
-                    video="homepage-demo-202301"
+                    video="app-demo-202303"
                     splash={true}
                     className="mt-8 w-full max-w-[804px] rounded-lg bg-violet-750 drop-shadow-2xl"
                     splashClassName="rounded-lg"
