@@ -217,7 +217,7 @@
             radial-gradient(29.03% 79.03% at 103.02% 53.38%, theme(colors.violet.400 / 60%) 0%, transparent 73.04%),
             #000;
     }
-    .sg-bg-gradient {
+    .sg-bg-gradient-app-large {
         background: radial-gradient(27.19% 24.43% at 82.36% 56.71%, #270741 0%, rgba(39, 7, 65, 0) 100%),
             radial-gradient(81.62% 17.03% at -4.13% 79.72%, rgba(158, 23, 105, 0.75) 0.41%, rgba(158, 23, 105, 0) 100%),
             radial-gradient(

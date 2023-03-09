@@ -17,13 +17,13 @@ const AppPage: FunctionComponent = () => {
         {
             icon: (
                 <SourceBranchIcon
-                    className="mb-6 rounded bg-violet-200 p-2 text-violet-400 sm:mx-auto lg:mx-0"
+                    className="mb-6 rounded bg-violet-200 p-2 text-violet-400 mx-0"
                     size={35}
                 />
             ),
-            subtitle: <span className="flex !text-4xl text-white lg:text-left">Connected</span>,
+            subtitle: <span className="flex !text-4xl text-white text-left">Connected</span>,
             description: (
-                <p className="text-lg lg:text-left">
+                <p className="text-lg text-left text-gray-200">
                     Search all your code, all in one place. Connect to your local and remote Git-based repositories, so
                     you don't have to jump between your IDE and code host for search.
                 </p>
@@ -32,23 +32,23 @@ const AppPage: FunctionComponent = () => {
         {
             icon: (
                 <RocketLaunchIcon
-                    className="mb-6 rounded bg-violet-200 p-2 text-violet-400 sm:mx-auto lg:mx-0"
+                    className="mb-6 rounded bg-violet-200 p-2 text-violet-400 mx-0"
                     size={35}
                 />
             ),
-            subtitle: <span className="flex !text-4xl text-white lg:text-left">Fast</span>,
+            subtitle: <span className="flex !text-4xl text-white text-left">Fast</span>,
             description: (
-                <p className="text-lg lg:text-left">
+                <p className="text-lg text-left text-gray-200">
                     Navigate thousands of repositories in seconds. Find code while staying in flow, so you can focus
                     less on finding things and more on writing code.
                 </p>
             ),
         },
         {
-            icon: <SendIcon className="mb-6 rounded bg-violet-200 p-2 text-violet-400 sm:mx-auto lg:mx-0" size={35} />,
-            subtitle: <span className="flex !text-4xl text-white lg:text-left">Lightweight</span>,
+            icon: <SendIcon className="mb-6 rounded bg-violet-200 p-2 text-violet-400 mx-0" size={35} />,
+            subtitle: <span className="flex !text-4xl text-white text-left">Lightweight</span>,
             description: (
-                <p className="text-lg lg:text-left">
+                <p className="text-lg text-left text-gray-200">
                     Install App in minutes. App is a lightweight, single-binary version of Sourcegraph tailored for
                     developers to use on their local machine.
                 </p>
@@ -62,9 +62,10 @@ const AppPage: FunctionComponent = () => {
                 title: 'Find, fix, and flow in minutes',
                 description:
                     'App is a lightweight, single-binary version of Sourcegraph, designed for developers to experience the power of Sourcegraph for free on their local machine.',
+                image: '/app/app-og.png'
             }}
             headerColorTheme="purple"
-            childrenClassName="sg-bg-gradient text-white px-sm"
+            childrenClassName="sg-bg-gradient-app-large text-white px-sm"
             displayChildrenUnderNav={true}
         >
             <div className="mx-auto flex max-w-[637px] flex-col items-center justify-center pt-lg text-center">
@@ -79,7 +80,7 @@ const AppPage: FunctionComponent = () => {
                     Find, fix, and flow in minutes
                 </Heading>
 
-                <p className="mt-6 mb-0 text-lg">
+                <p className="mt-6 mb-0 text-lg text-gray-200">
                     The app is a lightweight, single-binary version of Sourcegraph, designed for developers to
                     experience the power of Sourcegraph for free on their local machine.
                 </p>
@@ -91,7 +92,7 @@ const AppPage: FunctionComponent = () => {
 
             <div className="mb-8 flex flex-col items-center text-center">
                 <Heading size="h2">Run Sourcegraph for free across all your code</Heading>
-                <p className="my-8 max-w-screen-md text-lg">
+                <p className="my-8 max-w-screen-md text-lg text-gray-200">
                     App is the easiest way to run Sourcegraph on your local machine for free, complete with code search
                     and navigation to complement your IDE and local environment. Sync to your GitHub or GitLab account
                     to search and navigate all your code — local and remote — from a single, unified interface.
@@ -115,7 +116,7 @@ const AppPage: FunctionComponent = () => {
 
             <div className="mt-[115px] mb-[112px] flex flex-col items-center gap-y-4 text-center">
                 <Heading size="h2">Try Sourcegraph on your code</Heading>
-                <p className="mb-0 text-lg font-normal">
+                <p className="mb-0 text-lg font-normal text-gray-200">
                     Experience the power of Sourcegraph for free on your local machine.
                 </p>
 
@@ -158,7 +159,7 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                                     <div className="self-start text-sm leading-7">
                                         Install via{' '}
                                         <Link
-                                            href="https://brew.sh"
+                                            href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+204957.f499bb/sourcegraph_2023.03.23+204957.f499bb_linux_amd64.deb"
                                             title="Homebrew"
                                             className="text-gray-500 underline"
                                             target="_blank"
