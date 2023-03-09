@@ -7,6 +7,7 @@ import Link from 'next/link'
 
 import { EXP_DOWNLOAD_APP, EXP_GET_STARTED } from '../../../data/experiments'
 import { buttonLocation } from '../../../data/tracking'
+import { BadgeColor } from '../../Badge'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
 import { TrySourcegraphForFreeButton } from '../../cta/TrySourcegraphForFreeButton'
 import { GetStartedLinkButton } from '../../GetStartedButton'
@@ -72,7 +73,9 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme }) => {
 
 const HEADER_CONTENT_THEME_CLASS: Record<
     HeaderColorTheme,
-    Record<'container' | 'item' | 'menu' | 'menuItem' | 'menuItemActive' | 'divider' | 'button' | 'panel', string>
+    Record<'container' | 'item' | 'menu' | 'menuItem' | 'menuItemActive' | 'divider' | 'button' | 'panel', string> & {
+        menuItemBadge: BadgeColor
+    }
 > = {
     white: {
         container: 'bg-white',
@@ -80,6 +83,7 @@ const HEADER_CONTENT_THEME_CLASS: Record<
         menu: 'bg-white ring-black',
         menuItem: 'text-black',
         menuItemActive: 'bg-violet-200',
+        menuItemBadge: 'light-gray',
         divider: 'border-black/25',
         button: 'text-gray-500 hover:bg-violet-200 hover:text-black focus:ring-black',
         panel: 'border-black/25',
@@ -90,6 +94,7 @@ const HEADER_CONTENT_THEME_CLASS: Record<
         menu: 'bg-gray-700 ring-white',
         menuItem: 'text-white',
         menuItemActive: 'bg-gray-600',
+        menuItemBadge: 'dark-gray',
         divider: 'border-white/25',
         button: 'text-gray-300 hover:bg-gray-700 hover:text-white focus:ring-white',
         panel: 'border-white/25',
@@ -100,6 +105,7 @@ const HEADER_CONTENT_THEME_CLASS: Record<
         menu: 'bg-violet-750 ring-white',
         menuItem: 'text-white',
         menuItemActive: 'bg-violet-600',
+        menuItemBadge: 'violet',
         divider: 'border-white/25',
         button: 'text-gray-300 hover:bg-gray-700 hover:text-white focus:ring-white',
         panel: 'border-white/25',

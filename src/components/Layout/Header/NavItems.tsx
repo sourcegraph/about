@@ -7,7 +7,7 @@ import ChevronUpIcon from 'mdi-react/ChevronUpIcon'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { EXP_FEATURES_DROPDOWN, EXP_SOURCEGRAPH_ENTERPRISE } from '../../../data/experiments'
+import { Badge, BadgeColor } from '../../Badge'
 
 interface NavLink {
     name: string
@@ -16,133 +16,55 @@ interface NavLink {
 
 interface NavSection {
     name: string
-    links: (NavLink | { divider: true })[]
+    links: ((NavLink & { badge?: 'beta' }) | { divider: true })[]
 }
 
 type NavItem = NavLink | NavSection
 
-const NAV_ITEMS: NavItem[] = EXP_SOURCEGRAPH_ENTERPRISE
-    ? [
-          EXP_FEATURES_DROPDOWN
-              ? {
-                    name: 'Features',
-                    links: [
-                        { name: 'Code Search', href: '/code-search' },
-                        { name: 'Batch Changes', href: '/batch-changes' },
-                        { name: 'Code Insights', href: '/code-insights' },
-                    ],
-                }
-              : {
-                    name: 'Docs',
-                    href: 'https://docs.sourcegraph.com',
-                },
-          {
-              name: 'App',
-              href: '/app',
-          },
-          {
-              name: 'Enterprise',
-              links: [
-                  { name: 'Sourcegraph Enterprise', href: '/enterprise' },
-                  { name: 'Customers', href: '/case-studies' },
-                  { name: 'Pricing', href: '/pricing' },
-                  { name: 'Contact sales', href: '/contact/request-info' },
-              ],
-          },
-          {
-              name: 'Search public code',
-              href: 'https://sourcegraph.com',
-          },
-          ...(EXP_FEATURES_DROPDOWN ? [{ name: 'Docs', href: 'https://docs.sourcegraph.com' }] : []),
-          { name: 'Blog', href: '/blog' },
-      ]
-    : [
-          {
-              name: 'Product',
-              links: [
-                  {
-                      name: 'Code Search',
-                      href: '/code-search',
-                  },
-                  {
-                      name: 'Batch Changes',
-                      href: '/batch-changes',
-                  },
-                  {
-                      name: 'Code Insights',
-                      href: '/code-insights',
-                  },
-                  {
-                      name: 'Cloud',
-                      href: '/cloud',
-                  },
-              ],
-          },
-          {
-              name: 'Resources',
-              links: [
-                  {
-                      name: 'All resources',
-                      href: '/resources',
-                  },
-                  {
-                      name: 'Blog',
-                      href: '/blog',
-                  },
-                  {
-                      name: 'Podcast',
-                      href: '/podcast',
-                  },
-                  {
-                      name: 'Case studies',
-                      href: '/case-studies',
-                  },
-                  { divider: true },
-                  {
-                      name: 'All use cases',
-                      href: '/use-cases',
-                  },
-                  {
-                      name: 'Code security',
-                      href: '/use-cases/code-security',
-                  },
-                  {
-                      name: 'Developer onboarding',
-                      href: '/use-cases/onboarding',
-                  },
-                  {
-                      name: 'Incident response',
-                      href: '/use-cases/incident-response',
-                  },
-                  {
-                      name: 'Code reuse',
-                      href: '/use-cases/code-reuse',
-                  },
-                  {
-                      name: 'Code health',
-                      href: '/use-cases/code-health',
-                  },
-              ],
-          },
-          {
-              name: 'Pricing',
-              href: '/pricing',
-          },
-          {
-              name: 'Public code search',
-              href: 'https://sourcegraph.com/search',
-          },
-          {
-              name: 'Docs',
-              href: 'https://docs.sourcegraph.com',
-          },
-      ]
+const NAV_ITEMS: NavItem[] = [
+    {
+        name: 'Product',
+        links: [
+            { name: 'Code Search', href: '/code-search' },
+            { name: 'Batch Changes', href: '/batch-changes' },
+            { name: 'Code Insights', href: '/code-insights' },
+            { name: 'Cody (AI)', href: '/code-insights', badge: 'beta' },
+            { name: 'Own', href: '/code-insights', badge: 'beta' },
+        ],
+    },
+    {
+        name: 'App',
+        href: '/app',
+    },
+    {
+        name: 'Enterprise',
+        links: [
+            { name: 'Pricing', href: '/pricing' },
+            {
+                name: 'Enterprise Cloud',
+                href: '/cloud',
+            },
+            { name: 'Customers', href: '/case-studies' },
+            { divider: true },
+            { name: 'Platform/infra teams', href: 'TODO' },
+            { name: 'Security teams', href: 'TODO' },
+            { divider: true },
+            { name: 'Contact sales', href: '/contact/request-info' },
+        ],
+    },
+    {
+        name: 'Search public code',
+        href: 'https://sourcegraph.com',
+    },
+    { name: 'Docs', href: 'https://docs.sourcegraph.com' },
+    { name: 'Blog', href: '/blog' },
+]
 
 interface Props {
     linkElement?: React.ComponentType<
         Pick<React.ComponentProps<typeof Link>, 'href' | 'className' | 'aria-current' | 'children'>
     >
-    classes: Record<'item' | 'menu' | 'menuItem' | 'menuItemActive' | 'divider', string>
+    classes: Record<'item' | 'menu' | 'menuItem' | 'menuItemActive' | 'divider', string> & { menuItemBadge: BadgeColor }
 }
 
 export const NavItems: React.FunctionComponent<Props> = ({ linkElement: LinkElement = Link, classes }) => {
@@ -179,7 +101,7 @@ const NavItemMenu: React.FunctionComponent<
     NavSection & {
         isCurrentLink: (href: string) => boolean
         className: string
-        classes: Record<'menu' | 'menuItem' | 'menuItemActive' | 'divider', string>
+        classes: Record<'menu' | 'menuItem' | 'menuItemActive' | 'divider', string> & { menuItemBadge: BadgeColor }
     }
 > = ({
     name,
@@ -190,6 +112,7 @@ const NavItemMenu: React.FunctionComponent<
         menu: menuClassName,
         menuItem: menuItemClassName,
         menuItemActive: menuItemActiveClassName,
+        menuItemBadge: menuItemBadgeColor,
         divider: dividerClassName,
     },
 }) => (
@@ -233,13 +156,21 @@ const NavItemMenu: React.FunctionComponent<
                                         <Link
                                             href={link.href}
                                             className={classNames(
-                                                'block px-4 py-2 text-sm',
+                                                'flex items-center px-4 py-2 text-sm',
                                                 menuItemClassName,
                                                 active && menuItemActiveClassName
                                             )}
                                             aria-current={isCurrentLink(link.href) ? 'page' : undefined}
                                         >
                                             {link.name}
+                                            {link.badge && (
+                                                <Badge
+                                                    size="xs"
+                                                    color={menuItemBadgeColor}
+                                                    text={link.badge}
+                                                    className="ml-2"
+                                                />
+                                            )}
                                         </Link>
                                     )}
                                 </Menu.Item>

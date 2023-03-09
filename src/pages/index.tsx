@@ -12,17 +12,9 @@ import {
     CustomerLogos,
     Heading,
 } from '../components'
-import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
-import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { DemoVideo } from '../components/DemoVideo'
 import { GetStartedButton } from '../components/GetStartedButton'
-import {
-    EXP_GET_STARTED,
-    EXP_HIDE_SUBTEXT,
-    EXP_SOURCEGRAPH_ENTERPRISE,
-    EXP_NO_ENTERPRISE_HOMEPAGE_CALLOUT,
-    EXP_DOWNLOAD_APP,
-} from '../data/experiments'
+import { EXP_HIDE_SUBTEXT, EXP_DOWNLOAD_APP } from '../data/experiments'
 import { buttonLocation, buttonStyle } from '../data/tracking'
 
 const Home: FunctionComponent = () => (
@@ -93,11 +85,9 @@ const HomeHero: FunctionComponent = () => (
 
             {!EXP_HIDE_SUBTEXT && (
                 <p className="mb-0 text-sm text-white/75">
-                    Universal code search/nav + large-scale fixes/refactors.
-                    <br />
                     Works&nbsp;alongside your code&nbsp;host and editor.
                     <br />
-                    Built on{' '}
+                    Free. Built on{' '}
                     <a
                         href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph"
                         target="_blank"
@@ -111,46 +101,23 @@ const HomeHero: FunctionComponent = () => (
             )}
 
             <div className="max-w-sm md:w-full">
-                {EXP_GET_STARTED ? (
-                    <>
-                        {!EXP_DOWNLOAD_APP && (
-                            <Heading size="h6" className="mb-1 text-sm text-white/75">
-                                Get started (TODO: this will emphasize App):
-                            </Heading>
-                        )}
-                        <GetStartedButton
-                            buttonLocation={buttonLocation.hero}
-                            className="w-full"
-                            buttonGroupClassName="items-stretch"
-                            otherVariantsClassName={{
-                                container: 'relative mt-[15px]',
-                                triangle: 'absolute right-[3px] top-[-30px] h-[50px] w-[50px]',
-                            }}
-                        />
-                    </>
-                ) : (
-                    <StandardCallToAction buttonLocation={buttonLocation.hero} size="lg" dark={true} />
+                {!EXP_DOWNLOAD_APP && (
+                    <Heading size="h6" className="mb-1 text-sm text-white/75">
+                        Get started (TODO: this will emphasize App):
+                    </Heading>
                 )}
+                <GetStartedButton
+                    buttonLocation={buttonLocation.hero}
+                    className="w-full"
+                    buttonGroupClassName="items-stretch"
+                    otherVariantsClassName={{
+                        container: 'relative mt-[15px]',
+                        triangle: 'absolute right-[3px] top-[-30px] h-[50px] w-[50px]',
+                    }}
+                />
             </div>
 
-            {EXP_GET_STARTED && (
-                <>
-                    {EXP_SOURCEGRAPH_ENTERPRISE && !EXP_NO_ENTERPRISE_HOMEPAGE_CALLOUT && <EnterpriseLink />}
-
-                    {!EXP_SOURCEGRAPH_ENTERPRISE && (
-                        <div>
-                            <Heading size="h6" className="mb-1 text-sm text-white/75">
-                                Or:
-                            </Heading>
-                            <MeetWithProductExpertButton
-                                buttonLocation={buttonLocation.hero}
-                                dark={true}
-                                buttonClassName="btn-outline-white !font-normal"
-                            />
-                        </div>
-                    )}
-                </>
-            )}
+            <EnterpriseLink />
         </div>
         <div className="px-4 md:px-0">
             <DemoVideo
@@ -164,12 +131,12 @@ const HomeHero: FunctionComponent = () => (
 )
 
 const EnterpriseLink: React.FunctionComponent = () => (
-    <div>
+    <div className="text-center">
         <Link
             href="/pricing"
             className="flex items-center text-xl font-semibold text-violet-300 no-underline hover:text-white hover:underline"
         >
-            Sourcegraph Enterprise <ChevronRightIcon />
+            For Enterprise <ChevronRightIcon />
         </Link>
         <span className="text-sm text-white/75">For organizations using Sourcegraph at scale</span>
     </div>

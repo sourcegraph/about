@@ -2,27 +2,30 @@ import { ElementType, FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 
+export type BadgeColor =
+    | 'light-gray'
+    | 'white'
+    | 'white-outlined'
+    | 'dark-gray'
+    | 'blue'
+    | 'blurple'
+    | 'violet'
+    | 'cerise'
+    | 'vermillion'
+    | 'green'
+    | 'lemon'
+
 interface Badge {
     text: string
-    size: 'small' | 'large'
-    color?:
-        | 'light-gray'
-        | 'white'
-        | 'white-outlined'
-        | 'dark-gray'
-        | 'blue'
-        | 'blurple'
-        | 'violet'
-        | 'cerise'
-        | 'vermillion'
-        | 'green'
-        | 'lemon'
+    size: 'xs' | 'small' | 'large'
+    color?: BadgeColor
     link?: string
     icon?: ElementType
     onClick?: () => void
     checked?: boolean
     circle?: boolean
     breakWords?: boolean
+    className?: string
 }
 
 /**
@@ -38,6 +41,7 @@ interface Badge {
  * @param props.checked - the controlled checked state
  * @param props.circle - whether it's a basic or circle radius badge
  * @param props.breakWords - whether to break words or not for longer text
+ * @param props.className - class name
  */
 export const Badge: FunctionComponent<Badge> = ({
     text,
@@ -49,6 +53,7 @@ export const Badge: FunctionComponent<Badge> = ({
     checked,
     circle,
     breakWords,
+    className,
 }) => {
     const Icon: ElementType = icon || 'div'
 
@@ -122,6 +127,7 @@ export const Badge: FunctionComponent<Badge> = ({
     }
 
     const sizes = {
+        xs: 'text-[0.65rem] leading-4 px-1 py-0.5',
         small: 'text-xs px-2 py-1',
         large: 'text-sm px-4 py-[6px]',
     }
@@ -138,7 +144,8 @@ export const Badge: FunctionComponent<Badge> = ({
             'rounded-full': circle,
             'rounded-md': !circle,
         },
-        breakWords ? 'break-words' : 'whitespace-nowrap'
+        breakWords ? 'break-words' : 'whitespace-nowrap',
+        className
     )
 
     return link ? (
