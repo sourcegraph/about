@@ -15,13 +15,13 @@ interface FeatureDictionary {
 
 interface FeatureSubsetDictionary {
     label: string
-    business: boolean | string
+    enterpriseStarter: boolean | string
     enterprise: boolean | string
     disclaimer?: string
 }
 
-/** Business spotlight feature set */
-export const BIZ_FEATURES_OVERVIEW: FeatureCluster[] = [
+/** Enterprise Starter spotlight feature set */
+export const ENTERPRISE_STARTER_FEATURES_OVERVIEW: FeatureCluster[] = [
     {
         topic: 'Code intelligence platform',
         features: [
@@ -44,7 +44,7 @@ export const BIZ_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Scale and performance',
-        features: ['businessStorage', 'businessExecutors'],
+        features: ['enterpriseStarterStorage', 'enterpriseStarterExecutors'],
     },
     { topic: '24/5 support' },
     { topic: 'Single-tenant cloud deployment' },
@@ -80,37 +80,37 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
         features: [
             {
                 label: 'codeSearch',
-                business: true,
+                enterpriseStarter: true,
                 enterprise: true,
             },
             {
                 label: 'codeNavigation',
-                business: true,
+                enterpriseStarter: true,
                 enterprise: true,
             },
             {
                 label: 'batchChanges',
-                business: true,
+                enterpriseStarter: true,
                 enterprise: true,
             },
             {
                 label: 'codeInsights',
-                business: true,
+                enterpriseStarter: true,
                 enterprise: true,
             },
             {
                 label: 'notebooks',
-                business: true,
+                enterpriseStarter: true,
                 enterprise: true,
             },
             {
                 label: 'codeMonitoring',
-                business: true,
+                enterpriseStarter: true,
                 enterprise: true,
             },
             {
                 label: 'comprehensiveApi',
-                business: true,
+                enterpriseStarter: true,
                 enterprise: true,
             },
         ],
@@ -120,27 +120,27 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
         features: [
             {
                 label: 'codeHost',
-                business: 'Unlimited',
+                enterpriseStarter: 'Unlimited',
                 enterprise: 'Unlimited',
             },
             {
                 label: 'cloudHosts',
-                business: true,
+                enterpriseStarter: true,
                 enterprise: true,
             },
             {
                 label: 'selfHosts',
-                business: false,
+                enterpriseStarter: false,
                 enterprise: true,
             },
             {
                 label: 'enterpriseHosts',
-                business: false,
+                enterpriseStarter: false,
                 enterprise: true,
             },
             {
                 label: 'privateHosts',
-                business: false,
+                enterpriseStarter: false,
                 enterprise: true,
             },
         ],
@@ -150,37 +150,37 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
         features: [
             {
                 label: 'soc2',
-                business: true,
+                enterpriseStarter: true,
                 enterprise: true,
             },
             {
                 label: 'analytics',
-                business: true,
+                enterpriseStarter: true,
                 enterprise: true,
             },
             {
                 label: 'securityRoles',
-                business: true,
+                enterpriseStarter: true,
                 enterprise: true,
             },
             {
                 label: 'ssoSaml',
-                business: true,
+                enterpriseStarter: true,
                 enterprise: true,
             },
             {
                 label: 'repoPerms',
-                business: true,
+                enterpriseStarter: true,
                 enterprise: true,
             },
             {
                 label: 'customPerms',
-                business: false,
+                enterpriseStarter: false,
                 enterprise: true,
             },
             {
                 label: 'privateInstance',
-                business: false,
+                enterpriseStarter: false,
                 enterprise: true,
             },
         ],
@@ -190,12 +190,12 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
         features: [
             {
                 label: 'codeStorag',
-                business: 'Up to 75GB',
+                enterpriseStarter: 'Up to 75GB',
                 enterprise: 'Over 75GB',
             },
             {
                 label: 'executors',
-                business: '2',
+                enterpriseStarter: '2',
                 enterprise: '4',
             },
         ],
@@ -205,17 +205,17 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
         features: [
             {
                 label: 'support',
-                business: '24/5 support',
+                enterpriseStarter: '24/5 support',
                 enterprise: '24/5 support',
             },
             {
                 label: 'technicalAdvisor',
-                business: 'Available',
+                enterpriseStarter: 'Available',
                 enterprise: true,
             },
             {
                 label: 'supportSla',
-                business: 'Standard',
+                enterpriseStarter: 'Standard',
                 enterprise: 'Priority',
             },
         ],
@@ -225,17 +225,17 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
         features: [
             {
                 label: 'cloudDeployment',
-                business: true,
+                enterpriseStarter: true,
                 enterprise: true,
             },
             {
                 label: 'selfDeployment',
-                business: false,
+                enterpriseStarter: false,
                 enterprise: true,
             },
             {
                 label: 'airGappedDeploy',
-                business: false,
+                enterpriseStarter: false,
                 enterprise: 'Add-on',
             },
         ],
@@ -245,18 +245,18 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
         features: [
             {
                 label: 'price',
-                business: '$99 per active user/month',
+                enterpriseStarter: '$99 per active user/month',
                 enterprise: 'Custom pricing',
                 disclaimer: 'Platform access fee may apply',
             },
             {
                 label: 'contractLength',
-                business: 'Annual',
+                enterpriseStarter: 'Annual',
                 enterprise: 'Annual',
             },
             {
                 label: 'paymentMethod',
-                business: 'Invoice',
+                enterpriseStarter: 'Invoice',
                 enterprise: 'Invoice',
             },
         ],
@@ -369,7 +369,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     ...SECURITY_FEATURE_INFO,
 
     // Scale and performance
-    businessStorage: {
+    enterpriseStarterStorage: {
         label: 'Up to 75GB cloud code storage',
         description: 'Included storage for cloud deployments.',
     },
@@ -377,7 +377,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'Over 75GB cloud code storage',
         description: 'Included storage for cloud deployments.',
     },
-    businessExecutors: {
+    enterpriseStarterExecutors: {
         label: '2 executors',
         description: 'Execute server-side Batch Changes and use auto-indexing for precise code navigation.',
     },

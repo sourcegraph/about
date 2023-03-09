@@ -5,8 +5,9 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { EXP_GET_STARTED } from '../../../data/experiments'
+import { EXP_DOWNLOAD_APP, EXP_GET_STARTED } from '../../../data/experiments'
 import { buttonLocation } from '../../../data/tracking'
+import { BadgeColor } from '../../Badge'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
 import { TrySourcegraphForFreeButton } from '../../cta/TrySourcegraphForFreeButton'
 import { GetStartedLinkButton } from '../../GetStartedButton'
@@ -72,7 +73,9 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme }) => {
 
 const HEADER_CONTENT_THEME_CLASS: Record<
     HeaderColorTheme,
-    Record<'container' | 'item' | 'menu' | 'menuItem' | 'menuItemActive' | 'divider' | 'button' | 'panel', string>
+    Record<'container' | 'item' | 'menu' | 'menuItem' | 'menuItemActive' | 'divider' | 'button' | 'panel', string> & {
+        menuItemBadge: BadgeColor
+    }
 > = {
     white: {
         container: 'bg-white',
@@ -80,6 +83,7 @@ const HEADER_CONTENT_THEME_CLASS: Record<
         menu: 'bg-white ring-black',
         menuItem: 'text-black',
         menuItemActive: 'bg-violet-200',
+        menuItemBadge: 'light-gray',
         divider: 'border-black/25',
         button: 'text-gray-500 hover:bg-violet-200 hover:text-black focus:ring-black',
         panel: 'border-black/25',
@@ -90,6 +94,7 @@ const HEADER_CONTENT_THEME_CLASS: Record<
         menu: 'bg-gray-700 ring-white',
         menuItem: 'text-white',
         menuItemActive: 'bg-gray-600',
+        menuItemBadge: 'dark-gray',
         divider: 'border-white/25',
         button: 'text-gray-300 hover:bg-gray-700 hover:text-white focus:ring-white',
         panel: 'border-white/25',
@@ -100,6 +105,7 @@ const HEADER_CONTENT_THEME_CLASS: Record<
         menu: 'bg-violet-750 ring-white',
         menuItem: 'text-white',
         menuItemActive: 'bg-violet-600',
+        menuItemBadge: 'violet',
         divider: 'border-white/25',
         button: 'text-gray-300 hover:bg-gray-700 hover:text-white focus:ring-white',
         panel: 'border-white/25',
@@ -116,13 +122,17 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
     const classes = HEADER_CONTENT_THEME_CLASS[colorTheme]
     const callToAction = (
         <>
-            <MeetWithProductExpertButton
-                buttonLocation={buttonLocation.nav}
-                buttonClassName={classNames('!font-normal', dark ? 'btn-outline-white' : 'btn-link')}
-                requestInfo={true}
-            />
+            {!EXP_DOWNLOAD_APP && (
+                <MeetWithProductExpertButton
+                    buttonLocation={buttonLocation.nav}
+                    buttonClassName="btn-outline-white !font-normal"
+                    requestInfo={true}
+                />
+            )}
             {EXP_GET_STARTED ? (
-                <GetStartedLinkButton buttonLocation={buttonLocation.nav} dark={dark} />
+                <GetStartedLinkButton buttonLocation={buttonLocation.nav} dark={true}>
+                    {EXP_DOWNLOAD_APP ? 'Download' : undefined}
+                </GetStartedLinkButton>
             ) : (
                 <TrySourcegraphForFreeButton buttonLocation={buttonLocation.nav} dark={dark}>
                     Start for free
