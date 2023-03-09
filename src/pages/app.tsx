@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 import { Layout, Heading, Tabs, Badge, ThreeUpText } from '../components'
 import { CodeSnippet } from '../components/CodeSnippet'
-import { DemoVideo } from '../components/DemoVideo'
+import { DemoVideo } from '../components/AppVideo'
 
 const AppPage: FunctionComponent = () => {
     const threeUpTextItems = [
