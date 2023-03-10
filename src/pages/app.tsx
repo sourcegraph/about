@@ -19,7 +19,7 @@ const DownloadLink: React.FunctionComponent<DownloadLinkProps & { downloadName: 
         const eventArguments = {
             downloadSource: "about",
             downloadName: props.downloadName,
-            downloadLink: props.href,
+            downloadLinkUrl: props.href,
         }
         getEventLogger()?.log("DownloadClick", eventArguments, eventArguments)
     }
