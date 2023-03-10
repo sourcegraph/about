@@ -58,7 +58,7 @@ const Starship: FunctionComponent = () => (
                     Code intelligence + AI = 🤯
                 </Heading>
                 <Heading size="h3" className="mt-6 font-normal text-gray-200 md:mt-4">
-                    Join us on March 23, 2023 for our next Starship launch event, where we’ll unveil the next evolution
+                    Join us on March 23 for our next Starship launch event, where we’ll unveil the next evolution
                     of Sourcegraph’s code intelligence platform.
                 </Heading>
             </div>
@@ -82,13 +82,16 @@ const Starship: FunctionComponent = () => (
             className="mx-auto flex max-w-[1061px] flex-col justify-between md:flex-row"
         >
             <div>
-                <p className="text-left font-mono text-base leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
-                    MARCH 23 STARSHIP TALKS
+                <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-white md:max-w-[491px]">
+                    STARSHIP TALKS
                 </p>
-                <p className="text-left font-grotesk text-2xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
+                <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-blue-300 md:max-w-[491px]">
+                    MARCH 23, 10AM PST
+                </p>
+                <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
                     We’re entering a new era for software and how it’s built.
                 </p>
-                <p className="text-left font-normal text-base leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
+                <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-white md:max-w-[491px]">
                 Join Sourcegraph and some of the leaders building (and backing) the tools devs use today for a series of 
                 talks around the intersection of AI and code intelligence.
                 </p>

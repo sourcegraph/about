@@ -4,7 +4,7 @@ import { buttonLocation } from '../../data/tracking'
 import { GetStartedLinkButton } from '../GetStartedButton'
 import { Heading } from '../Heading'
 
-import { TrySourcegraphForFreeButton } from './TrySourcegraphForFreeButton'
+import { TrySourcegraphAppButton } from './TrySourcegraphForFreeButton'
 
 interface StarshipPageCallToAction {
     title: string
@@ -26,13 +26,10 @@ export const StarshipPageCallToAction: FunctionComponent<StarshipPageCallToActio
         {description && <p className="mt-4 mb-0 text-lg text-gray-200">{description}</p>}
         {buttonText && (
             <div className="mt-6 flex gap-x-4 md:mt-8">
-                <TrySourcegraphForFreeButton buttonLocation={buttonLocation.trySourcegraph} dark={true}>
+                <TrySourcegraphAppButton buttonLocation={buttonLocation.trySourcegraph} dark={true}>
                     {buttonText}
-                </TrySourcegraphForFreeButton>
-                <GetStartedLinkButton
-                    className="hidden border border-white bg-transparent md:block"
-                    buttonLocation={0}
-                />
+                </TrySourcegraphAppButton>
+
             </div>
         )}
     </div>
