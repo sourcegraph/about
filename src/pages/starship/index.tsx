@@ -89,7 +89,7 @@ const Starship: FunctionComponent = () => (
                     STARSHIP TALKS
                 </p>
                 <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-blue-300 md:max-w-[491px]">
-                    MARCH 23, 10AM PST
+                    MARCH 23, 10AM - 12PM PST
                 </p>
                 <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
                     We’re entering a new era for software and how it’s built.
