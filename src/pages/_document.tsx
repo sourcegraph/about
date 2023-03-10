@@ -37,6 +37,10 @@ export default class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Code+Pro&display=swap"
                         rel="stylesheet"
                     />
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono&display=swap"
+                        rel="stylesheet"
+                    />
 
                     {/* Cookiebot */}
                     {/* Cookiebot recommends this in the head, which aligns with Next.js' recommendation for CCMs */}

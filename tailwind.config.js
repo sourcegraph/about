@@ -9,7 +9,7 @@ const dlsColors = {
     50: '#F9FAFB',
     100: '#F5F7FB',
     200: '#DBE2F0',
-    300: '#ABB3C1',
+    300: '#A6B6D9',
     400: '#696B71',
     500: '#484B51',
     600: '#313131',
@@ -109,6 +109,8 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      grotesk: ['Space Grotesk'],
+      spaceMono: ['Space Mono'],
     },
 
     fontSize: {

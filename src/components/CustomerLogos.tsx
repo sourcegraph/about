@@ -22,6 +22,7 @@ interface CustomerLogos {
     description?: string
     dark?: boolean
     monochrome?: boolean
+    className?: string
 }
 
 const logos: Logo[] = [
@@ -117,6 +118,7 @@ const logos: Logo[] = [
  * @param props.description - optional description
  * @param props.dark - dark mode
  * @param props.monochrome - monochrome
+ * @param props.className - classname
  *
  */
 export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
@@ -125,6 +127,7 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
     description,
     dark,
     monochrome,
+    className,
 }) => {
     const container = useRef<HTMLDivElement>(null)
     const [containerWidth, setContainerWidth] = useState<number>(0)
@@ -152,7 +155,7 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
     }, [])
 
     return (
-        <div className={classNames({ 'bg-black text-white': dark })}>
+        <div className={classNames(className, { 'bg-black text-white': dark })}>
             <div className="mx-auto mb-xl max-w-xl text-center">
                 {overline && (
                     <Heading size="h6" as="h2">

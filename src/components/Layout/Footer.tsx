@@ -172,7 +172,8 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
             className={classNames(
                 className,
                 !minimal && 'pt-16 pb-2',
-                dark ? 'bg-black text-white' : 'bg-gray-50 text-black'
+                dark ? 'bg-black text-white' : 'bg-gray-50 text-black',
+                'z-10'
             )}
         >
             <div className="mx-auto max-w-screen-xl px-4">
