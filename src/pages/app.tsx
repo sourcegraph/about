@@ -15,13 +15,14 @@ import { getEventLogger } from '../hooks/eventLogger'
 
 type DownloadLinkProps = React.ComponentProps<typeof Link>
 const DownloadLink: React.FunctionComponent<DownloadLinkProps & { downloadName: string }> = props => {
-    const handleOnClick = () => {
+    const handleOnClick = (): void => {
         const eventArguments = {
-            downloadSource: "about",
+            downloadSource: 'about',
             downloadName: props.downloadName,
             downloadLinkUrl: props.href,
         }
-        getEventLogger()?.log("DownloadClick", eventArguments, eventArguments)
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        getEventLogger()?.log('DownloadClick', eventArguments, eventArguments)
     }
 
     return <Link {...props} onClick={handleOnClick}/>

@@ -4,8 +4,8 @@ import classNames from 'classnames'
 import CheckCircleIcon from 'mdi-react/CheckCircleIcon'
 import ContentCopyIcon from 'mdi-react/ContentCopyIcon'
 
-import { copy } from '../lib/utils'
 import { logCodeSnippetCopied } from '../hooks/eventLogger'
+import { copy } from '../lib/utils'
 
 interface CodeSnippetProps {
     code: string
