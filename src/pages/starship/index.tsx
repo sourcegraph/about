@@ -119,7 +119,7 @@ const Starship: FunctionComponent = () => (
 
             <TwoColWithImage
                 title="Cody AI"
-                description="Code search helps engineers quickly understand and navigate large codebase. But what if you could have a senior engineer as a personal assistant, who can search and read your codebase to find answers to your questions? Cody, Sourcegraph’s new AI coding assistant, will do just that."
+                description="Code search helps engineers quickly understand and navigate large codebases. But what if you could have a senior engineer as a personal assistant, who can search and read your codebase to find answers to your questions? Cody, Sourcegraph’s new AI coding assistant, will do just that."
                 image="/starship/cody-illustration.svg"
                 className="pt-3xl md:pt-5xl"
             />
