@@ -89,7 +89,7 @@ const Starship: FunctionComponent = () => (
                     STARSHIP TALKS
                 </p>
                 <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-blue-300 md:max-w-[491px]">
-                    MARCH 23, 10AM PST
+                    MARCH 23, 10AM - 12PM PST
                 </p>
                 <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
                     We’re entering a new era for software and how it’s built.
@@ -119,7 +119,7 @@ const Starship: FunctionComponent = () => (
 
             <TwoColWithImage
                 title="Cody AI"
-                description="Code search helps engineers quickly understand and navigate large codebase. But what if you could have a senior engineer as a personal assistant, who can search and read your codebase to find answers to your questions? Cody, Sourcegraph’s new AI coding assistant, will do just that."
+                description="Code search helps engineers quickly understand and navigate large codebases. But what if you could have a senior engineer as a personal assistant, who can search and read your codebase to find answers to your questions? Cody, Sourcegraph’s new AI coding assistant, will do just that."
                 image="/starship/cody-illustration.svg"
                 className="pt-3xl md:pt-5xl"
             />
