@@ -53,7 +53,7 @@ const Starship: FunctionComponent = () => (
             <div className="mb-[83px] flex flex-col md:mb-[96px]">
                 <Heading
                     size="h1"
-                    className="!text-[39px] !font-medium !leading-[55px] text-white md:!font-grotesk md:!text-[52px] md:!leading-[73px] md:!tracking-[-1px]"
+                    className="!font-grotesk !text-[39px] !font-medium !leading-[55px] !tracking-[-1px] text-white md:!text-[52px] md:!leading-[73px]"
                 >
                     Code intelligence + AI = 🤯
                 </Heading>
@@ -148,7 +148,7 @@ const Starship: FunctionComponent = () => (
         <ContentSection parentClassName="relative !pt-0 !px-0" className="flex flex-col items-center text-white">
             <Heading
                 size="h2"
-                className="max-w-[728px] px-sm text-center !font-grotesk !text-4xl font-medium tracking-[-1px]"
+                className="max-w-[728px] px-sm text-center !font-grotesk !text-4xl font-medium !tracking-[-1px]"
             >
                 Over 1.8M engineers use Sourcegraph to build software you rely on
             </Heading>
