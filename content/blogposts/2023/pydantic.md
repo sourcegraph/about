@@ -9,7 +9,7 @@ authors:
 publishDate: 2023-03-10T00:00
 tags: [blog]
 slug: exploring-pydantic-with-samuel-colvin
-heroImage: 
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/SG-OG-Image-exploring-pydantic-samuel-colvin.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/SG-OG-Image-exploring-pydantic-samuel-colvin.png
 published: true
 ---
@@ -39,6 +39,6 @@ We learned after the recording that Samuel closed a seed investment round led by
   <iframe className="absolute w-full h-full top-0 left-0"  src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MjE0MQ==" frameborder="0" scrolling="off" loading="lazy" allowfullscreen></iframe>
 </div>
 
-<div id="sm" className="relative w-full overflow-visible pt-10 py-8 min-h-screen block lg:hidden" style={{minWidth: "300px", height: "15500px"}}>
+<div id="sm" className="relative w-full overflow-visible pt-10 py-8 min-h-screen block lg:hidden" style={{minWidth: "300px", height: "16000px"}}>
   <iframe className="absolute w-full h-full top-0 left-0"  src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MjE0MQ==" frameborder="0" scrolling="off" loading="lazy" allowfullscreen></iframe>
 </div>
