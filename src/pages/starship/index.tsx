@@ -24,6 +24,9 @@ const Starship: FunctionComponent = () => (
         displayChildrenUnderNav={true}
         meta={{
             image: '/starship/starship_og.png',
+            title: 'Sourcegraph Starship: coming March 23',
+                description:
+                    'Join us on March 23 for Starship and the release of Sourcegraph 5.0',
         }}
     >
         {/* Launch Countdown */}
@@ -144,7 +147,7 @@ const Starship: FunctionComponent = () => (
 
             <TwoColWithImage
                 title="Support for enterprise scale"
-                description="Sourcegraph’s code intelligence platform helps small and large software teams find and fix code everyday. With Sourcegraph 4.6, we’re improving our platform to meet the demands of even the world’s largest companies."
+                description="Sourcegraph’s code intelligence platform helps small and large software teams find and fix code everyday. With Sourcegraph 5.0, we’re improving our platform to meet the demands of even the world’s largest companies."
                 image="/starship/mid-page-launch-pills.svg"
                 className="mt-[78px]"
             />
