@@ -1,7 +1,6 @@
 import { FunctionComponent } from 'react'
 
 import { buttonLocation } from '../../data/tracking'
-//import { GetStartedLinkButton } from '../GetStartedButton'
 import { Heading } from '../Heading'
 
 import { TrySourcegraphAppButton } from './TrySourcegraphForFreeButton'
