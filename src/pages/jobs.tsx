@@ -96,8 +96,8 @@ const CareersPage: FunctionComponent = () => {
             <ContentSection background="white">
                 <h1 className="mb-xs">Let's build the future together.</h1>
                 <h3>
-                    We're developing the world's most advanced code intelligence platform with brilliant dreamers
-                    around the globe.
+                    We're developing the world's most advanced code intelligence platform with brilliant dreamers around
+                    the globe.
                 </h3>
                 <a
                     className="btn btn-primary mt-6"

@@ -45,6 +45,7 @@ const SecurityPage: FunctionComponent = () => (
                     <Tabs
                         tabs={[
                             {
+                                key: 'product-security',
                                 title: 'Product Security',
                                 className: 'md:text-2xl py-5',
                                 content: (
@@ -293,6 +294,7 @@ const SecurityPage: FunctionComponent = () => (
                                 ),
                             },
                             {
+                                key: 'trust-compliance',
                                 title: 'Trust & Compliance',
                                 className: 'md:text-2xl py-5',
                                 content: (
@@ -334,6 +336,7 @@ const SecurityPage: FunctionComponent = () => (
                                 ),
                             },
                             {
+                                key: 'bug-bounty',
                                 title: 'Bug Bounty',
                                 className: 'md:text-2xl py-5',
                                 content: (

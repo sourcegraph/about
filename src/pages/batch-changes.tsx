@@ -113,7 +113,6 @@ export const BatchChangesPage: FunctionComponent = () => (
                         }}
                         loop={true}
                         title="Batch Changes: How it works"
-                        caption="Search, define, execute, and track code changes"
                     />
                 }
             />
@@ -169,6 +168,7 @@ export const BatchChangesPage: FunctionComponent = () => (
             <Tabs
                 tabs={[
                     {
+                        key: 'configuration',
                         title: 'Configuration',
                         content: (
                             <div className="mx-auto max-w-4xl">
@@ -187,6 +187,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                         ),
                     },
                     {
+                        key: 'refactoring',
                         title: 'Refactoring',
                         content: (
                             <div className="mx-auto max-w-4xl">
@@ -205,6 +206,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                         ),
                     },
                     {
+                        key: 'security',
                         title: 'Security',
                         content: (
                             <div className="mx-auto max-w-4xl">

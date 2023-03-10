@@ -3,17 +3,20 @@ import { FunctionComponent, ReactNode, useState } from 'react'
 import classNames from 'classnames'
 
 interface Tab {
-    title: string
+    key: string
+    title: string | ReactNode
     content: ReactNode
     className?: string
 }
 
 interface Tabs {
     tabs: Tab[]
+    tabBarExtraContent?: string | ReactNode
     navClassName?: string
+    contentClassName?: string
 }
 
-export const Tabs: FunctionComponent<Tabs> = ({ tabs, navClassName }) => {
+export const Tabs: FunctionComponent<Tabs> = ({ tabs, navClassName, contentClassName, tabBarExtraContent }) => {
     const [currentTab, setCurrentTab] = useState(0)
 
     return (
@@ -26,7 +29,7 @@ export const Tabs: FunctionComponent<Tabs> = ({ tabs, navClassName }) => {
             >
                 {tabs.map((tab, index) => (
                     <div
-                        key={tab.title}
+                        key={tab.key}
                         onClick={() => setCurrentTab(index)}
                         onKeyDown={() => setCurrentTab(index)}
                         role="button"
@@ -40,12 +43,14 @@ export const Tabs: FunctionComponent<Tabs> = ({ tabs, navClassName }) => {
                         {tab.title}
                     </div>
                 ))}
+
+                {tabBarExtraContent}
             </div>
 
-            <div className="py-6">
+            <div className={classNames('py-6', contentClassName)}>
                 {tabs.map((tab, index) => (
                     <div
-                        key={tab.title}
+                        key={tab.key}
                         className={classNames({
                             block: currentTab === index,
                             hidden: currentTab !== index,

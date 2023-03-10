@@ -20,8 +20,3 @@
 .container :global(.submitted-message) {
     color: var(--sg-color-white);
 }
-
-.container :global(.hs-field-desc),
-.container :global(#label-email-93419890-2b5e-4109-ad13-0fd2ee0c1607) {
-    display: none !important;
-}

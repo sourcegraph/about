@@ -5,7 +5,7 @@ import classNames from 'classnames'
 interface Item {
     icon?: ReactNode
     subtitle?: string | ReactNode
-    description: string
+    description: string | ReactNode
 }
 
 interface ThreeUpText {
@@ -14,6 +14,7 @@ interface ThreeUpText {
     subTitle?: string | ReactNode
     items: Item[]
     centerContent?: boolean
+    className?: string
 }
 
 interface ItemTitle {
@@ -38,8 +39,14 @@ const ItemTitle = ({ text, small }: ItemTitle): ReactElement => {
     )
 }
 
-export const ThreeUpText: FunctionComponent<ThreeUpText> = ({ title, subTitle, items, fullWidthTitle = false }) => (
-    <div className="sm:text-center">
+export const ThreeUpText: FunctionComponent<ThreeUpText> = ({
+    title,
+    subTitle,
+    items,
+    className,
+    fullWidthTitle = false,
+}) => (
+    <div className={classNames('sm:text-center', className)}>
         {title && (
             <h2
                 className={classNames('md:text-center', {
@@ -62,7 +69,12 @@ export const ThreeUpText: FunctionComponent<ThreeUpText> = ({ title, subTitle, i
                 >
                     {item.icon && <div className="mb-sm">{item.icon}</div>}
                     <ItemTitle text={item.subtitle} small={!!item.icon} />
-                    <p className="lg:px-sm">{item.description}</p>
+
+                    {typeof item.description === 'string' ? (
+                        <p className="lg:px-sm">{item.description}</p>
+                    ) : (
+                        item.description
+                    )}
                 </div>
             ))}
         </div>

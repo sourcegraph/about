@@ -19,7 +19,7 @@ export const Figure: FunctionComponent<Figure> = ({
     link,
     linkIcon = false,
     centre = false,
-    shadow = true,
+    shadow = false,
 }) => (
     <figure>
         <img src={src} alt={alt} title={alt} className={classNames({ 'mx-auto': centre, 'drop-shadow-xl': shadow })} />

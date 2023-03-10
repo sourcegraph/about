@@ -435,6 +435,7 @@ const CodeInsightsPage: FunctionComponent = () => (
             <Tabs
                 tabs={[
                     {
+                        key: 'migrations',
                         title: 'Migrations',
                         content: (
                             <div className="mt-8 flex w-full flex-wrap">
@@ -445,6 +446,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                         ),
                     },
                     {
+                        key: 'version_tracking',
                         title: 'Version Tracking',
                         content: (
                             <div className="mt-8 flex w-full flex-wrap justify-center">
@@ -455,6 +457,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                         ),
                     },
                     {
+                        key: 'security',
                         title: 'Security',
                         content: (
                             <div className="mt-8 flex w-full flex-wrap justify-center">
@@ -465,6 +468,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                         ),
                     },
                     {
+                        key: 'code_health',
                         title: 'Code Health',
                         content: (
                             <div className="mt-8 flex w-full flex-wrap justify-center">
@@ -496,6 +500,7 @@ const CodeInsightsPage: FunctionComponent = () => (
             <Tabs
                 tabs={[
                     {
+                        key: 'migrations',
                         title: 'Migrations',
                         content: (
                             <div className="mt-8 w-full justify-center">
@@ -504,6 +509,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                         ),
                     },
                     {
+                        key: 'version_tracking',
                         title: 'Version Tracking',
                         content: (
                             <div className="mt-8 w-full justify-center">
@@ -512,6 +518,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                         ),
                     },
                     {
+                        key: 'security',
                         title: 'Security',
                         content: (
                             <div className="mt-8 w-full justify-center">
@@ -520,6 +527,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                         ),
                     },
                     {
+                        key: 'code_health',
                         title: 'Code Health',
                         content: (
                             <div className="mt-8 w-full justify-center">

@@ -128,6 +128,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
             >
                 {props.children}
             </section>
+
             {!props.hideFooter && (
                 <Footer dark={headerColorTheme === 'dark' || headerColorTheme === 'purple'} minimal={props.minimal} />
             )}

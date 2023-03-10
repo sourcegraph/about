@@ -22,7 +22,7 @@ export const TwoColWithImage: FunctionComponent<Props> = ({ className, descripti
             {title && (
                 <Heading
                     size="h2"
-                    className="mt-12 min-w-fit !font-grotesk !text-5xl !font-medium !leading-[67px] text-white md:!text-[52px] md:!leading-[73px]"
+                    className="mt-12 min-w-fit !font-grotesk !text-5xl !font-medium !leading-[67px] tracking-[-1px] text-white md:!text-[52px] md:!leading-[73px]"
                 >
                     {title}
                 </Heading>

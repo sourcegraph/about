@@ -34,7 +34,7 @@ const Starship: FunctionComponent = () => (
                     className="h-[67.71px] w-[61.71px] md:h-24 md:w-24"
                     alt="Sourcegraph"
                 />
-                <p className="ml-[17px] font-grotesk text-[40px] font-light leading-[64px] text-white  md:ml-[22px] md:text-[86px] md:leading-[110px]">
+                <p className="ml-[17px] font-grotesk text-[40px] font-light leading-[64px] tracking-[-1px] text-white md:ml-[22px] md:text-[86px] md:leading-[110px]">
                     5.0
                 </p>
                 <div className="ml-2 mt-2.5 h-[56.39px] w-[0.96px] bg-white sm:ml-5 md:h-[88px] md:w-[1.5px]" />
@@ -53,7 +53,7 @@ const Starship: FunctionComponent = () => (
             <div className="mb-[83px] flex flex-col md:mb-[96px]">
                 <Heading
                     size="h1"
-                    className="!text-[39px] !font-medium !leading-[55px] text-white md:!font-grotesk md:!text-[52px] md:!leading-[73px]"
+                    className="!text-[39px] !font-medium !leading-[55px] text-white md:!font-grotesk md:!text-[52px] md:!leading-[73px] md:!tracking-[-1px]"
                 >
                     Code intelligence + AI = 🤯
                 </Heading>
@@ -69,7 +69,10 @@ const Starship: FunctionComponent = () => (
                 </Heading>
 
                 <div className={classNames('mx-auto mt-6 md:max-w-[491px] md:px-10', styles.container)}>
-                    <HubSpotForm formId="93419890-2b5e-4109-ad13-0fd2ee0c1607" />
+                    <HubSpotForm
+                        formId="93419890-2b5e-4109-ad13-0fd2ee0c1607"
+                        inlineMessage="Thanks for registering for Starship! You will receive event updates and product announcements from Sourcegraph in your email."
+                    />
                 </div>
 
                 <p className="mt-4 text-sm text-gray-300">
@@ -83,7 +86,7 @@ const Starship: FunctionComponent = () => (
             className="mx-auto flex max-w-[1061px] flex-col justify-between md:flex-row"
         >
             <div>
-                <p className="text-left font-grotesk text-3xl leading-[42px] text-white md:max-w-[491px]">
+                <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
                     Lorem ipsum about the talks and featured speakers. It is about 1-2 concise sentences long.
                 </p>
                 <img src="/starship/launch.svg" alt="Launch Pill" className="mt-[115px] hidden blur-sm md:block" />
@@ -130,7 +133,7 @@ const Starship: FunctionComponent = () => (
                 title="Sourcegraph Sentinel"
                 description="Take our new Software Composition Analysis (SCA) tool for a spin to see how it lets you monitor, prioritize, and fix vulnerable open source dependencies."
                 image="/starship/sentinel-illustration.svg"
-                className="mt-[78px]"
+                className="mt-[78px] hidden"
             />
 
             <TwoColWithImage
@@ -143,7 +146,10 @@ const Starship: FunctionComponent = () => (
 
         {/* CTA */}
         <ContentSection parentClassName="relative !pt-0 !px-0" className="flex flex-col items-center text-white">
-            <Heading size="h2" className="max-w-[728px] px-sm text-center !font-grotesk !text-4xl font-medium">
+            <Heading
+                size="h2"
+                className="max-w-[728px] px-sm text-center !font-grotesk !text-4xl font-medium tracking-[-1px]"
+            >
                 Over 1.8M engineers use Sourcegraph to build software you rely on
             </Heading>
 
