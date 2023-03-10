@@ -74,10 +74,6 @@ const Starship: FunctionComponent = () => (
                         inlineMessage="Thanks for registering for Starship! You will receive event updates and product announcements from Sourcegraph in your email."
                     />
                 </div>
-
-                <p className="mt-4 text-sm text-gray-300">
-                    We will send you event reminders and announcements of what launched at Starship.
-                </p>
             </div>
         </ContentSection>
 
@@ -86,8 +82,15 @@ const Starship: FunctionComponent = () => (
             className="mx-auto flex max-w-[1061px] flex-col justify-between md:flex-row"
         >
             <div>
-                <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
-                    Lorem ipsum about the talks and featured speakers. It is about 1-2 concise sentences long.
+                <p className="text-left font-mono text-base leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
+                    MARCH 23 STARSHIP TALKS
+                </p>
+                <p className="text-left font-grotesk text-2xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
+                    We’re entering a new era for software and how it’s built.
+                </p>
+                <p className="text-left font-normal text-base leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
+                Join Sourcegraph and some of the leaders building (and backing) the tools devs use today for a series of 
+                talks around the intersection of AI and code intelligence.
                 </p>
                 <img src="/starship/launch.svg" alt="Launch Pill" className="mt-[115px] hidden blur-sm md:block" />
             </div>
@@ -96,9 +99,9 @@ const Starship: FunctionComponent = () => (
                 <Heading size="h6" className="invisible text-white md:visible">
                     FEATURING
                 </Heading>
-                <FeatureUser image="/starship/user.png" name="David Sacks" title="Title" company="Company" />
+                <FeatureUser image="/starship/user.png" name="David Sacks" title="Founder & Partner" company="Craft Ventures" />
                 <FeatureUser image="/starship/user.png" name="Simon Marlow" title="Software Engineer" company="Meta" />
-                <FeatureUser image="/starship/user.png" name="Dario Amodei" title="CEO" company="Anthropic" />
+                <FeatureUser image="/starship/user.png" name="Erica Brescia" title="Manager Director" company="Redpoint Ventures" />
             </div>
         </ContentSection>
 
