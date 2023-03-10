@@ -99,9 +99,9 @@ const Starship: FunctionComponent = () => (
                 <Heading size="h6" className="invisible text-white md:visible">
                     FEATURING
                 </Heading>
-                <FeatureUser image="/starship/user.png" name="David Sacks" title="Founder & Partner" company="Craft Ventures" />
-                <FeatureUser image="/starship/user.png" name="Simon Marlow" title="Software Engineer" company="Meta" />
-                <FeatureUser image="/starship/user.png" name="Erica Brescia" title="Manager Director" company="Redpoint Ventures" />
+                <FeatureUser image="/starship/davidsacks.png" name="David Sacks" title="Founder & Partner" company="Craft Ventures" />
+                <FeatureUser image="/starship/simonmarlow.png" name="Simon Marlow" title="Software Engineer" company="Meta" />
+                <FeatureUser image="/starship/ericabrescia.png" name="Erica Brescia" title="Manager Director" company="Redpoint Ventures" />
             </div>
         </ContentSection>
 
