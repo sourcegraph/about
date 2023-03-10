@@ -9,11 +9,16 @@ interface EventArguments {
 
 let eventLogger: EventLogger
 
-function getEventLogger(): EventLogger {
+export function getEventLogger(): EventLogger {
     if (!eventLogger) {
         eventLogger = new EventLogger('https://sourcegraph.com')
     }
     return eventLogger
+}
+
+export const logCodeSnippetCopied = (snippetName: string = ""): void => {
+    const eventArguments = { snippetName }
+    getEventLogger()?.log('CodeSnippetCopied', eventArguments, eventArguments)
 }
 
 export const useEventLogger = (): void => {

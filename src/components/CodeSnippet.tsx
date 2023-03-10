@@ -5,18 +5,24 @@ import CheckCircleIcon from 'mdi-react/CheckCircleIcon'
 import ContentCopyIcon from 'mdi-react/ContentCopyIcon'
 
 import { copy } from '../lib/utils'
+import { logCodeSnippetCopied } from '../hooks/eventLogger'
 
 interface CodeSnippetProps {
     code: string
+    snippetName?: string
     className?: string
 }
 
-export const CodeSnippet: FunctionComponent<CodeSnippetProps> = ({ code, className }) => {
+export const CodeSnippet: FunctionComponent<CodeSnippetProps> = ({ snippetName, code, className }) => {
     const [copied, setCopied] = useState(false)
     const handleCopy = (): void => {
         copy(code)
             .then(() => setCopied(true))
             .catch(() => setCopied(false))
+
+        if (snippetName) {
+            logCodeSnippetCopied(snippetName)
+        }
     }
 
     const Icon = copied ? CheckCircleIcon : ContentCopyIcon

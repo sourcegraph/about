@@ -11,6 +11,21 @@ import Link from 'next/link'
 import { Layout, Heading, Tabs, Badge, ThreeUpText } from '../components'
 import { DemoVideo } from '../components/AppVideo'
 import { CodeSnippet } from '../components/CodeSnippet'
+import { getEventLogger } from '../hooks/eventLogger'
+
+type DownloadLinkProps = React.ComponentProps<typeof Link>
+const DownloadLink: React.FunctionComponent<DownloadLinkProps & { downloadName: string }> = props => {
+    const handleOnClick = () => {
+        const eventArguments = {
+            downloadSource: "about",
+            downloadName: props.downloadName,
+            downloadLink: props.href,
+        }
+        getEventLogger()?.log("DownloadClick", eventArguments, eventArguments)
+    }
+
+    return <Link {...props} onClick={handleOnClick}/>
+}
 
 const AppPage: FunctionComponent = () => {
     const threeUpTextItems = [
@@ -170,6 +185,7 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                                     </div>
 
                                     <CodeSnippet
+                                        snippetName="app-brew-install"
                                         code="brew install sourcegraph/sourcegraph-app/sourcegraph"
                                         className="-ml-2.5"
                                     />
@@ -198,17 +214,18 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                                 <li className="ml-2.5 text-xs leading-7">
                                     <div className="self-start text-sm leading-7">
                                         Download the{' '}
-                                        <Link
+                                        <DownloadLink
+                                            downloadName="app-download-linux-deb"
                                             href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+205301.ca3646/sourcegraph_2023.03.23+205301.ca3646_linux_amd64.deb"
                                             title="Homebrew"
                                             className="text-gray-500 underline"
                                         >
                                             debian package
-                                        </Link>{' '}
+                                        </DownloadLink>{' '}
                                         and install it:
                                     </div>
 
-                                    <CodeSnippet code="dpkg -i <file.deb>" className="-ml-2.5" />
+                                    <CodeSnippet snippetName="app-deb-install" code="dpkg -i <file.deb>" className="-ml-2.5" />
                                 </li>
                                 <li className="ml-2.5 text-xs leading-7">Run `Sourcegraph` in your local directory.</li>
                                 <li className="ml-2.5 text-xs leading-7">
