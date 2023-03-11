@@ -3,7 +3,7 @@ title: "Our vision for better code ownership"
 authors:
   - name: Malo Marrec
     url: https://twitter.com/malomarrec
-publishDate: 2023-03-09T10:00-07:00
+publishDate: 2023-03-13T10:00-07:00
 description: "Code ownership today is broken. We're setting out to fix it."
 slug: our-vision-for-code-ownership
 tags: [blog]
