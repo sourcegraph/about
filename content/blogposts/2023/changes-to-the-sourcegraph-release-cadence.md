@@ -3,13 +3,11 @@ title: 'Changes to the Sourcegraph release cadence'
 authors:
 - name: Coury Clark
   url: https://github.com/coury-clark
-  publishDate: 2023-03-08T10:00-07:00
-  description: 'A summary of upcoming changes to the Sourcegraph release cadence.'
-  tags: [blog]
-  slug: 'changes-to-the-sourcegraph-release-cadence'
-  published: true
-  heroImage: 
-  socialImage: 
+publishDate: 2023-03-13T10:00-07:00
+description: 'A summary of upcoming changes to the Sourcegraph release cadence.'
+tags: [blog]
+slug: 'changes-to-the-sourcegraph-release-cadence'
+published: true
 ---
 
 The past year we have been focused on improving the experience of administrating and running Sourcegraph in a variety of ways. 
