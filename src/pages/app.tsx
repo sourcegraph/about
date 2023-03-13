@@ -174,7 +174,7 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                                         className="-ml-2.5"
                                     />
                                 </li>
-                                <li className="ml-2.5 text-sm leading-7">Run `Sourcegraph` in your local directory.</li>
+                                <li className="ml-2.5 text-sm leading-7">Run <code className="bg-gray-200 rounded-md p-1 text-xs text-gray-700">sourcegraph</code> in your local directory.</li>
                                 <li className="ml-2.5 text-sm leading-7">
                                     The app will detect code in the directory you run it in.
                                 </li>
@@ -210,7 +210,7 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
 
                                     <CodeSnippet code="dpkg -i <file.deb>" className="-ml-2.5" />
                                 </li>
-                                <li className="ml-2.5 text-sm leading-7">Run `Sourcegraph` in your local directory.</li>
+                                <li className="ml-2.5 text-sm leading-7">Run <code className="bg-gray-200 rounded-md p-1 text-xs text-gray-700">sourcegraph</code> in your local directory.</li>
                                 <li className="ml-2.5 text-sm leading-7">
                                     The app will detect code in the directory you run it in.
                                 </li>
