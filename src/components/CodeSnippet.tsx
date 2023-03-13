@@ -27,7 +27,7 @@ export const CodeSnippet: FunctionComponent<CodeSnippetProps> = ({ code, classNa
     }, [copied])
 
     return (
-        <div className={classNames('my-2 flex justify-between rounded-md bg-gray-200 px-2 pt-3 pb-9', className)}>
+        <div className={classNames('my-2 flex justify-between rounded-md bg-gray-200 px-2 pt-3 pb-3', className)}>
             <code className="text-left text-xs text-gray-700">{code}</code>
 
             <Icon size={16} onClick={handleCopy} onKeyDown={handleCopy} role="button" tabIndex={0} />
