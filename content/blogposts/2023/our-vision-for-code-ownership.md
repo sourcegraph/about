@@ -49,7 +49,7 @@ We break down use cases for code ownership into 4 themes:
 - Productivity, onboarding, and offboarding
 - Platform changes
 - Capacity planning and staffing
-&nbsp;
+<br/>
 
 ### What's broken
 
@@ -79,7 +79,7 @@ Devs, teams, stakeholders. Own will know about developers and cross-functional t
 - **Integrated**. Ownership data will be used to power critical workflows. Own will also know where to notify people and integrate with on-call, ticketing, email, and Slack through Sourcegraph’s upcoming Notification Center.
 - **Code, metadata, services**. Own will know about more than code and integrate with service catalogs so that Sourcegraph can provide a single pane of glass view into the stack.
 - **Scalable and enterprise-ready**. Own will scale to hundreds of thousand of owners and integrate into the most common directory systems through SCIM.
-&nbsp;
+<br/>
   
 We're working hard to bring those workflows to life:
 
