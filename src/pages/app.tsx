@@ -155,7 +155,7 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                     content: (
                         <div className="mx-0.5 flex flex-col px-4">
                             <ol className="m-0 text-left">
-                                <li className="ml-2.5 text-xs leading-7">
+                                <li className="ml-2.5 text-sm leading-7">
                                     <div className="self-start text-sm leading-7">
                                         Install via{' '}
                                         <Link
@@ -171,14 +171,14 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
 
                                     <CodeSnippet
                                         code="brew install sourcegraph/sourcegraph-app/sourcegraph"
-                                        className="-ml-2.5 pb-3"
+                                        className="-ml-2.5"
                                     />
                                 </li>
-                                <li className="ml-2.5 text-xs leading-7">Run `Sourcegraph` in your local directory.</li>
-                                <li className="ml-2.5 text-xs leading-7">
+                                <li className="ml-2.5 text-sm leading-7">Run <code className="bg-gray-200 rounded-md p-1 text-xs text-gray-700">sourcegraph</code> in your local directory.</li>
+                                <li className="ml-2.5 text-sm leading-7">
                                     The app will detect code in the directory you run it in.
                                 </li>
-                                <li className="ml-2.5 text-xs leading-7">
+                                <li className="ml-2.5 text-sm leading-7">
                                     Your browser will automatically open localhost:3080.
                                 </li>
                             </ol>
@@ -195,7 +195,7 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                     content: (
                         <div className="mx-0.5 flex flex-col px-4">
                             <ol className="m-0 text-left">
-                                <li className="ml-2.5 text-xs leading-7">
+                                <li className="ml-2.5 text-sm leading-7">
                                     <div className="self-start text-sm leading-7">
                                         Download the{' '}
                                         <Link
@@ -208,13 +208,13 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                                         and install it:
                                     </div>
 
-                                    <CodeSnippet code="dpkg -i <file.deb>" className="-ml-2.5 pb-3" />
+                                    <CodeSnippet code="dpkg -i <file.deb>" className="-ml-2.5" />
                                 </li>
-                                <li className="ml-2.5 text-xs leading-7">Run `Sourcegraph` in your local directory.</li>
-                                <li className="ml-2.5 text-xs leading-7">
+                                <li className="ml-2.5 text-sm leading-7">Run <code className="bg-gray-200 rounded-md p-1 text-xs text-gray-700">sourcegraph</code> in your local directory.</li>
+                                <li className="ml-2.5 text-sm leading-7">
                                     The app will detect code in the directory you run it in.
                                 </li>
-                                <li className="ml-2.5 text-xs leading-7">
+                                <li className="ml-2.5 text-sm leading-7">
                                     Your browser will automatically open localhost:3080.
                                 </li>
                             </ol>
