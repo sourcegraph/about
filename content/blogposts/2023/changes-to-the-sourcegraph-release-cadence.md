@@ -33,7 +33,7 @@ Here is the tentative schedule for the next year of Sourcegraph feature releases
 
 _Release dates and version numbers are subject to change._
 
-Additionally, we will stabilize the cadence of patches between feature releases with scheduled bi-weekly patch releases. This will allow us to bundle our fixes more efficiently
+Additionally, we will stabilize the cadence of patches between feature releases with scheduled bi-weekly patch releases. This will allow us to bundle our changes more efficiently
 and significantly smooth out the experience of updating Sourcegraph.
 
 These changes in release cadence will not reduce our response time for security incidents or other critical incidents affecting the operation of Sourcegraph. 
