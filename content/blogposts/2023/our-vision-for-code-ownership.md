@@ -8,6 +8,8 @@ description: "Code ownership today is broken. We're setting out to fix it."
 slug: our-vision-for-code-ownership
 tags: [blog]
 published: true
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/sourcegraph-own-og.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/sourcegraph-own-og.png
 ---
 
 
