@@ -171,7 +171,7 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
 
                                     <CodeSnippet
                                         code="brew install sourcegraph/sourcegraph-app/sourcegraph"
-                                        className="-ml-2.5"
+                                        className="-ml-2.5 pb-3"
                                     />
                                 </li>
                                 <li className="ml-2.5 text-xs leading-7">Run `Sourcegraph` in your local directory.</li>
@@ -208,7 +208,7 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                                         and install it:
                                     </div>
 
-                                    <CodeSnippet code="dpkg -i <file.deb>" className="-ml-2.5" />
+                                    <CodeSnippet code="dpkg -i <file.deb>" className="-ml-2.5 pb-3" />
                                 </li>
                                 <li className="ml-2.5 text-xs leading-7">Run `Sourcegraph` in your local directory.</li>
                                 <li className="ml-2.5 text-xs leading-7">
