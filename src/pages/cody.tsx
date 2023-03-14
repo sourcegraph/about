@@ -40,7 +40,7 @@ const CodyPage: FunctionComponent = () => (
                     Request access
                 </Link>
             </div>
-            <div className="hidden md:block">
+            <div className="mt-6 md:mt-0">
                 <img src="/cody/cody.svg" alt="Own Illustration" className="w-full max-w-[630px]" />
             </div>
         </ContentSection>
