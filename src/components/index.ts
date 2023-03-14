@@ -28,7 +28,7 @@ export { ThreeUpText } from './ThreeUpText'
 export { TwoColumnSection } from './TwoColumnSection'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
-export { StarshipPageCallToAction } from './cta/StarshipPageCallToAction'
+export { CallToAction } from './cta/CallToAction'
 
 // Blog
 export {
