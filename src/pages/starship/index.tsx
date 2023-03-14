@@ -140,7 +140,6 @@ const Starship: FunctionComponent = () => (
                 <img src="/starship/launch.svg" alt="Launch Pill" className="mt-[115px] hidden blur-sm md:block" />
             </div>
 
-
         </ContentSection>
 
         {/* Launch Features */}
