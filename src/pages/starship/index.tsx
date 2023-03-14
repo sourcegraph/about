@@ -111,6 +111,38 @@ const Starship: FunctionComponent = () => (
             </div>
         </ContentSection>
 
+        <ContentSection
+            parentClassName="!py-0"
+            className="mx-auto flex max-w-[1061px] flex-col justify-between md:flex-row"
+        >
+            <div className="flex flex-col gap-y-9">
+                <Heading size="h6" className="invisible text-white md:visible">
+                    FEATURING
+                </Heading>
+                <FeatureUser image="/starship/davidsacks.png" name="Bobby Holley" title="Distinguised Engineer" company="Mozilla" />
+                <FeatureUser image="/starship/simonmarlow.png" name="Simon Barendse" title="Software Engineer" company="1Password" />
+                <FeatureUser image="/starship/ericabrescia.png" name="Arun Sathiya" title="Software Engineer" company="1Password" />
+            </div>
+            
+            <div>
+                <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-white md:max-w-[491px]">
+                    DEV TALKS
+                </p>
+                <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-blue-300 md:max-w-[491px]">
+                    MARCH 30, 9AM - 11AM PST
+                </p>
+                <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
+                    See the newest features launching in Sourcegraph 5.0.
+                </p>
+                <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-white md:max-w-[491px]">
+                Join us to hear from the team building Sourcegraph’s code intelligence platform and other devs in the community using Sourcegraph.
+                </p>
+                <img src="/starship/launch.svg" alt="Launch Pill" className="mt-[115px] hidden blur-sm md:block" />
+            </div>
+
+
+        </ContentSection>
+
         {/* Launch Features */}
         <ContentSection parentClassName="md:!py-0 md:-mt-3">
             <Heading size="h6" className="text-center text-2xl	 font-normal text-white md:font-spaceMono">
