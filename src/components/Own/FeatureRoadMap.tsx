@@ -13,12 +13,11 @@ const getStepClassName = (isCompleted: boolean, index: number, stepsLength: numb
     const isLastStep = index === stepsLength - 1
 
     const completedClass = isCompleted ? 'border-l-blue-300' : 'border-violet-500'
-    const fadeTopClass =
-        isFirstStep && isCompleted
+    const fadeTopClass = isFirstStep
+        ? isCompleted
             ? 'sg-completed-roadmap-fade-top'
-            : isFirstStep && !isCompleted
-            ? 'sg-pending-roadmap-fade-top'
-            : ''
+            : 'sg-pending-roadmap-fade-top'
+        : ''
     const fadeBottomClass =
         isLastStep && isCompleted
             ? 'sg-completed-roadmap-fade-bottom'
@@ -31,7 +30,7 @@ const getStepClassName = (isCompleted: boolean, index: number, stepsLength: numb
 }
 
 export const FeatureRoadMap: FunctionComponent<OwnFeatureProps> = ({ steps }) => (
-    <ContentSection className="flex flex-col items-center md:-mt-[25%] h-[100%]">
+    <ContentSection className="flex h-[100%] flex-col items-center md:-mt-[25%]">
         {steps?.map((step, index) => (
             <div className="relative flex w-full items-center" key={step.description}>
                 <div

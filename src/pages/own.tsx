@@ -89,11 +89,11 @@ const OwnPage: FunctionComponent = () => (
             <img
                 src="/own/own-illustration.svg"
                 alt="Own Illustration"
-                className="h-540px absolute mt-20 hidden w-[60%] md:left-[460px] md:block lg:left-[600px] max-h-[540px]"
+                className="h-540px absolute mt-20 hidden max-h-[540px] w-[60%] md:left-[460px] md:block lg:left-[600px]"
             />
         </ContentSection>
 
-        <ContentSection className="grid grid-cols-1 items-center gap-lg gap-x-24 md:grid-cols-2 md:flex-row md:mt-24">
+        <ContentSection className="grid grid-cols-1 items-center gap-lg gap-x-24 md:mt-24 md:grid-cols-2 md:flex-row">
             <OwnContent
                 title="Resolve incidents and security vulnerabilities faster"
                 description="Search for vulnerable or outdated code patterns and reach out to the owners in seconds. Escalate in one click. Don’t waste time emailing around to find who can help. Fast collaboration, fast remediation."
