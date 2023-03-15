@@ -24,7 +24,7 @@ const Starship: FunctionComponent = () => (
         displayChildrenUnderNav={true}
         meta={{
             image: '/starship/starship_og.png',
-            title: 'Sourcegraph Starship: coming March 23',
+            title: 'Sourcegraph Starship: 3/23',
                 description:
                     'Join us on March 23 for Starship and the release of Sourcegraph 5.0',
         }}
@@ -89,12 +89,12 @@ const Starship: FunctionComponent = () => (
                     STARSHIP TALKS
                 </p>
                 <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-blue-300 md:max-w-[491px]">
-                    MARCH 23, 10AM - 12PM PST
+                    MARCH 23, 10AM - 12PM PT
                 </p>
                 <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
-                    We’re entering a new era for software and how it’s built.
+                    We’re entering a new era for software and how it’s built
                 </p>
-                <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-white md:max-w-[491px]">
+                <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-gray-200 md:max-w-[491px]">
                 Join Sourcegraph and some of the leaders building (and backing) the tools devs use today for a series of 
                 talks around the intersection of AI and code intelligence.
                 </p>
@@ -106,9 +106,40 @@ const Starship: FunctionComponent = () => (
                     FEATURING
                 </Heading>
                 <FeatureUser image="/starship/davidsacks.png" name="David Sacks" title="Founder & Partner" company="Craft Ventures" />
-                <FeatureUser image="/starship/simonmarlow.png" name="Simon Marlow" title="Software Engineer" company="Meta" />
+                <FeatureUser image="/starship/simonmarlow.png" name="Simon Marlow" title="Code Intelligence" company="Meta" />
                 <FeatureUser image="/starship/ericabrescia.png" name="Erica Brescia" title="Managing Director" company="Redpoint Ventures" />
             </div>
+        </ContentSection>
+
+        <ContentSection
+            parentClassName="!py-0"
+            className="mx-auto flex max-w-[1061px] flex-col justify-between md:flex-row"
+        >
+            <div className="flex flex-col gap-y-9">
+                <Heading size="h6" className="invisible text-white md:visible">
+                    FEATURING
+                </Heading>
+                <FeatureUser image="/starship/simonbarendse.png" name="Simon Barendse" title="Senior Software Engineer" company="1Password" />
+                <FeatureUser image="/starship/bobbyholley.png" name="Bobby Holley" title="Distinguished Engineer" company="Mozilla" />
+                <FeatureUser image="/starship/tjdevries.png" name="TJ DeVries" title="Software Engineer" company="Sourcegraph" />
+            </div>
+            
+            <div>
+                <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-white md:max-w-[491px]">
+                    DEV TALKS
+                </p>
+                <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-blue-300 md:max-w-[491px]">
+                    MARCH 30, 9AM - 11AM PT
+                </p>
+                <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
+                Explore the current state and future of code intelligence tools
+                </p>
+                <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-gray-200 md:max-w-[491px]">
+                Engineers building innovative developer tools—including 1Password, Neovim, Mozilla, and the Rust programming language—will share insights into the power of code intelligence and how it is transforming the developer experience.
+                </p>
+                <img src="/starship/launch.svg" alt="Launch Pill" className="mt-[115px] hidden blur-sm md:block" />
+            </div>
+
         </ContentSection>
 
         {/* Launch Features */}
