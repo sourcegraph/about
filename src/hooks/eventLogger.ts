@@ -20,7 +20,7 @@ export const logCodeSnippetCopied = (snippetName: string = ''): void => {
     const eventArguments = { snippetName }
 
     // eslint-disable-next-line @typescript-eslint/no-floating-promises
-    getEventLogger()?.log('CodeSnippetCopied', eventArguments, eventArguments)
+    getEventLogger().log('CodeSnippetCopied', eventArguments, eventArguments)
 }
 
 export const useEventLogger = (): void => {
