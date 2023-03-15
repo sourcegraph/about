@@ -115,14 +115,6 @@ const Starship: FunctionComponent = () => (
             parentClassName="!py-0"
             className="mx-auto flex max-w-[1061px] flex-col justify-between md:flex-row"
         >
-            <div className="flex flex-col gap-y-9">
-                <Heading size="h6" className="invisible text-white md:visible">
-                    FEATURING
-                </Heading>
-                <FeatureUser image="/starship/simonbarendse.png" name="Simon Barendse" title="Senior Software Engineer" company="1Password" />
-                <FeatureUser image="/starship/bobbyholley.png" name="Bobby Holley" title="Distinguished Engineer" company="Mozilla" />
-                <FeatureUser image="/starship/tjdevries.png" name="TJ DeVries" title="Software Engineer" company="Sourcegraph" />
-            </div>
             
             <div>
                 <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-white md:max-w-[491px]">
@@ -138,6 +130,15 @@ const Starship: FunctionComponent = () => (
                 Engineers building innovative developer tools—including 1Password, Neovim, Mozilla, and the Rust programming language—will share insights into the power of code intelligence and how it is transforming the developer experience.
                 </p>
                 <img src="/starship/launch.svg" alt="Launch Pill" className="mt-[115px] hidden blur-sm md:block" />
+            </div>
+
+            <div className="flex flex-col gap-y-9">
+                <Heading size="h6" className="invisible text-white md:visible">
+                    FEATURING
+                </Heading>
+                <FeatureUser image="/starship/simonbarendse.png" name="Simon Barendse" title="Senior Software Engineer" company="1Password" />
+                <FeatureUser image="/starship/bobbyholley.png" name="Bobby Holley" title="Distinguished Engineer" company="Mozilla" />
+                <FeatureUser image="/starship/tjdevries.png" name="TJ DeVries" title="Software Engineer" company="Sourcegraph" />
             </div>
 
         </ContentSection>
