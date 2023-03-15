@@ -14,8 +14,8 @@ import { CodeSnippet } from '../components/CodeSnippet'
 import { getEventLogger } from '../hooks/eventLogger'
 
 type DownloadLinkProps = React.ComponentProps<typeof Link> & { downloadName: string }
-const DownloadLink: React.FunctionComponent<DownloadLinkProps > = props => {
-    const {downloadName, ...linkProps} = props
+const DownloadLink: React.FunctionComponent<DownloadLinkProps> = props => {
+    const { downloadName, ...linkProps } = props
     const handleOnClick = (): void => {
         const eventArguments = {
             downloadSource: 'about',
@@ -26,7 +26,7 @@ const DownloadLink: React.FunctionComponent<DownloadLinkProps > = props => {
         getEventLogger()?.log('DownloadClick', eventArguments, eventArguments)
     }
 
-    return <Link {...linkProps} onClick={handleOnClick}/>
+    return <Link {...linkProps} onClick={handleOnClick} />
 }
 
 const AppPage: FunctionComponent = () => {
@@ -227,7 +227,11 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                                         and install it:
                                     </div>
 
-                                    <CodeSnippet snippetName="app-deb-install" code="dpkg -i <file.deb>" className="-ml-2.5" />
+                                    <CodeSnippet
+                                        snippetName="app-deb-install"
+                                        code="dpkg -i <file.deb>"
+                                        className="-ml-2.5"
+                                    />
                                 </li>
                                 <li className="ml-2.5 text-sm leading-7">Run <code className="bg-gray-200 rounded-md p-1 text-xs text-gray-700">sourcegraph</code> in your local directory.</li>
                                 <li className="ml-2.5 text-sm leading-7">
