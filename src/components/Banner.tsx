@@ -9,7 +9,7 @@ export const Banner: FunctionComponent = () => (
             <img
                 src="/starship/starship-blur.svg"
                 alt="Sourcegraph Starship"
-                className="mt-[33px] md:mt-[43px]"
+                className="mt-[33px] md:mt-[32px]"
                 draggable={false}
                 width={251}
                 height={35}
@@ -17,7 +17,7 @@ export const Banner: FunctionComponent = () => (
             <Link
                 href="/starship"
                 title="What’s coming"
-                className="btn relative top-[-183px] mt-[51px] bg-transparent text-violet-300 md:static"
+                className="btn relative !py-0 leading-[22.4px] top-[-183px] mt-[51px] bg-transparent text-violet-300 md:static"
             >
                 What’s coming
                 <ChevronRightIcon className="mb-1 !mb-0 ml-[18px] inline" />
