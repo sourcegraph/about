@@ -13,19 +13,20 @@ import { DemoVideo } from '../components/AppVideo'
 import { CodeSnippet } from '../components/CodeSnippet'
 import { getEventLogger } from '../hooks/eventLogger'
 
-type DownloadLinkProps = React.ComponentProps<typeof Link>
-const DownloadLink: React.FunctionComponent<DownloadLinkProps & { downloadName: string }> = props => {
+type DownloadLinkProps = React.ComponentProps<typeof Link> & { downloadName: string }
+const DownloadLink: React.FunctionComponent<DownloadLinkProps > = props => {
+    const {downloadName, ...linkProps} = props
     const handleOnClick = (): void => {
         const eventArguments = {
             downloadSource: 'about',
-            downloadName: props.downloadName,
-            downloadLinkUrl: props.href,
+            downloadName,
+            downloadLinkUrl: linkProps.href,
         }
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
         getEventLogger()?.log('DownloadClick', eventArguments, eventArguments)
     }
 
-    return <Link {...props} onClick={handleOnClick}/>
+    return <Link {...linkProps} onClick={handleOnClick}/>
 }
 
 const AppPage: FunctionComponent = () => {
