@@ -14,14 +14,11 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/SG-OG-Image-
 published: true
 ---
 
-<Alert type="secondary">We are now to combining the video podcast and Tour de Source (aka Code Deep Dives) into one blog post. We look forward to your feedback.</Alert>
-
 We had the pleasure of interviewing [Samuel Colvin](https://twitter.com/samuel_colvin) creator of [Pydantic](https://docs.pydantic.dev/), an open source data validation library for Python. It validates external data based on Python type hints, which means developers don't need to learn a new data validation specification format or DSL.
 
 Samuel has been working on pydantic since 2017 when he realized the untapped value of type hints in Python. At the time of this recording, Pydantic has been downloaded from PyPI around 22 million times per month.
 
 <YouTube
-  title="Exploring Pydantic with Samuel Colvin" 
   id="dfMbBKoPE20"
   showTitle={true}
 />

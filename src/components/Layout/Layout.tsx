@@ -101,6 +101,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
                 <meta property="og:title" content={meta.title} />
                 <meta property="og:description" content={meta.description} />
                 <meta property="og:type" content={isArticle ? 'article' : 'website'} />
+                <meta property="og:site_name" content="Sourcegraph" />
 
                 <link rel="icon" type="image/png" href={meta.icon} />
 
