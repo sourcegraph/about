@@ -23,7 +23,7 @@ const DownloadLink: React.FunctionComponent<DownloadLinkProps> = props => {
             downloadLinkUrl: linkProps.href,
         }
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger()?.log('DownloadClick', eventArguments, eventArguments)
+        getEventLogger().log('DownloadClick', eventArguments, eventArguments)
     }
 
     return <Link {...linkProps} onClick={handleOnClick} />
