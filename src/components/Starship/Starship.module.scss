@@ -20,3 +20,7 @@
 .container :global(.submitted-message) {
     color: var(--sg-color-white);
 }
+
+.container :global(.hs-button) {
+    border-radius: 5px;
+}

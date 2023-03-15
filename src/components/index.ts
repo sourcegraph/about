@@ -28,7 +28,7 @@ export { ThreeUpText } from './ThreeUpText'
 export { TwoColumnSection } from './TwoColumnSection'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
-export { StarshipPageCallToAction } from './cta/StarshipPageCallToAction'
+export { CallToAction } from './cta/CallToAction'
 
 // Blog
 export {
@@ -77,7 +77,11 @@ export {
 export { Filters, type Filter, Card, resourceItems, type Resource, useFilters } from './Resources'
 
 // Starship
-export { FeatureUser } from './Starship/FeatureUser'
-export { TwoColWithImage } from './Starship/TwoColWithImage'
-export { TwoRowWithImage } from './Starship/TwoRowWithImage'
-export { CountDown } from './Starship/CountDown'
+export {
+    CountDown,
+    FeatureUser,
+    HeadingSection,
+    RegisterEmailSection,
+    TwoColWithImage,
+    TwoRowWithImage,
+} from './Starship'

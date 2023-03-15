@@ -1,7 +1,5 @@
 import { FunctionComponent } from 'react'
 
-import classNames from 'classnames'
-
 import {
     Heading,
     Layout,
@@ -10,12 +8,11 @@ import {
     TwoRowWithImage,
     CountDown,
     CustomerLogos,
-    StarshipPageCallToAction,
-    HubSpotForm,
+    CallToAction,
     ContentSection,
+    HeadingSection,
+    RegisterEmailSection,
 } from '../../components'
-
-import styles from './Starship.module.scss'
 
 const Starship: FunctionComponent = () => (
     <Layout
@@ -25,29 +22,12 @@ const Starship: FunctionComponent = () => (
         meta={{
             image: '/starship/starship_og.png',
             title: 'Sourcegraph Starship: coming March 23',
-                description:
-                    'Join us on March 23 for Starship and the release of Sourcegraph 5.0',
+            description: 'Join us on March 23 for Starship and the release of Sourcegraph 5.0',
         }}
     >
         {/* Launch Countdown */}
         <div>
-            <div className="flex justify-center">
-                <img
-                    src="/sourcegraph/sourcegraph-mark.svg"
-                    className="h-[67.71px] w-[61.71px] md:h-24 md:w-24"
-                    alt="Sourcegraph"
-                />
-                <p className="ml-[17px] font-grotesk text-[40px] font-light leading-[64px] tracking-[-1px] text-white md:ml-[22px] md:text-[86px] md:leading-[110px]">
-                    5.0
-                </p>
-                <div className="ml-2 mt-2.5 h-[56.39px] w-[0.96px] bg-white sm:ml-5 md:h-[88px] md:w-[1.5px]" />
-                <img
-                    src="/starship/starship-blur.svg"
-                    className="ml-2 h-[158px] w-[200px] sm:ml-5 sm:h-[209.9px] sm:w-[284px] md:ml-[31px] md:h-[327.57px] md:w-[442px]"
-                    alt="Starship"
-                />
-            </div>
-
+            <HeadingSection />
             <CountDown className="relative top-[-60px] px-[21px] md:top-[-183px]" launchDate="2023-03-23T13:00:00Z" />
         </div>
 
@@ -61,23 +41,12 @@ const Starship: FunctionComponent = () => (
                     Code intelligence + AI = 🤯
                 </Heading>
                 <Heading size="h3" className="mt-6 font-normal text-gray-200 md:mt-4">
-                    Join us on March 23 for our next Starship launch event, where we’ll unveil the next evolution
-                    of Sourcegraph’s code intelligence platform.
+                    Join us on March 23 for our next Starship launch event, where we’ll unveil the next evolution of
+                    Sourcegraph’s code intelligence platform.
                 </Heading>
             </div>
 
-            <div className="flex-col">
-                <Heading size="h4" className="text-white">
-                    Register for the Starship event:
-                </Heading>
-
-                <div className={classNames('mx-auto mt-6 md:max-w-[491px] md:px-10', styles.container)}>
-                    <HubSpotForm
-                        formId="93419890-2b5e-4109-ad13-0fd2ee0c1607"
-                        inlineMessage="Thanks for registering for Starship! You will receive event updates and product announcements from Sourcegraph in your email."
-                    />
-                </div>
-            </div>
+            <RegisterEmailSection />
         </ContentSection>
 
         <ContentSection
@@ -95,8 +64,8 @@ const Starship: FunctionComponent = () => (
                     We’re entering a new era for software and how it’s built.
                 </p>
                 <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-white md:max-w-[491px]">
-                Join Sourcegraph and some of the leaders building (and backing) the tools devs use today for a series of 
-                talks around the intersection of AI and code intelligence.
+                    Join Sourcegraph and some of the leaders building (and backing) the tools devs use today for a
+                    series of talks around the intersection of AI and code intelligence.
                 </p>
                 <img src="/starship/launch.svg" alt="Launch Pill" className="mt-[115px] hidden blur-sm md:block" />
             </div>
@@ -105,9 +74,24 @@ const Starship: FunctionComponent = () => (
                 <Heading size="h6" className="invisible text-white md:visible">
                     FEATURING
                 </Heading>
-                <FeatureUser image="/starship/davidsacks.png" name="David Sacks" title="Founder & Partner" company="Craft Ventures" />
-                <FeatureUser image="/starship/simonmarlow.png" name="Simon Marlow" title="Software Engineer" company="Meta" />
-                <FeatureUser image="/starship/ericabrescia.png" name="Erica Brescia" title="Managing Director" company="Redpoint Ventures" />
+                <FeatureUser
+                    image="/starship/davidsacks.png"
+                    name="David Sacks"
+                    title="Founder & Partner"
+                    company="Craft Ventures"
+                />
+                <FeatureUser
+                    image="/starship/simonmarlow.png"
+                    name="Simon Marlow"
+                    title="Software Engineer"
+                    company="Meta"
+                />
+                <FeatureUser
+                    image="/starship/ericabrescia.png"
+                    name="Erica Brescia"
+                    title="Managing Director"
+                    company="Redpoint Ventures"
+                />
             </div>
         </ContentSection>
 
@@ -164,7 +148,7 @@ const Starship: FunctionComponent = () => (
 
             <CustomerLogos dark={true} monochrome={true} className="-px-sm !bg-transparent md:pb-5xl" />
 
-            <StarshipPageCallToAction
+            <CallToAction
                 title="Try Sourcegraph App on your code"
                 description="Experience the power of Sourcegraph for free on your local machine."
                 buttonText="Try App"
