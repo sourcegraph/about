@@ -160,10 +160,10 @@ const OwnPage: FunctionComponent = () => (
 
         <ContentSection className="flex flex-col items-center" parentClassName="mt-12 mb-4">
             <Heading className="text-white" size="h3">
-                CTA headline placeholder
+                Try Sourcegraph Own
             </Heading>
 
-            <p className="text-lg text-gray-200">subheading placeholder goes here</p>
+            <p className="text-lg text-gray-200"></p>
             <div className="mt-8 flex flex-row gap-x-4">
                 <Link
                     href="https://docs.sourcegraph.com/own"
