@@ -24,7 +24,7 @@ const Starship: FunctionComponent = () => (
         displayChildrenUnderNav={true}
         meta={{
             image: '/starship/starship_og.png',
-            title: 'Sourcegraph Starship: coming March 23',
+            title: 'Sourcegraph Starship: 3/23',
                 description:
                     'Join us on March 23 for Starship and the release of Sourcegraph 5.0',
         }}
@@ -92,9 +92,9 @@ const Starship: FunctionComponent = () => (
                     MARCH 23, 10AM - 12PM PST
                 </p>
                 <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
-                    We’re entering a new era for software and how it’s built.
+                    We’re entering a new era for software and how it’s built
                 </p>
-                <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-white md:max-w-[491px]">
+                <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-gray-200 md:max-w-[491px]">
                 Join Sourcegraph and some of the leaders building (and backing) the tools devs use today for a series of 
                 talks around the intersection of AI and code intelligence.
                 </p>
@@ -106,7 +106,7 @@ const Starship: FunctionComponent = () => (
                     FEATURING
                 </Heading>
                 <FeatureUser image="/starship/davidsacks.png" name="David Sacks" title="Founder & Partner" company="Craft Ventures" />
-                <FeatureUser image="/starship/simonmarlow.png" name="Simon Marlow" title="Software Engineer" company="Meta" />
+                <FeatureUser image="/starship/simonmarlow.png" name="Simon Marlow" title="Code Intelligence" company="Meta" />
                 <FeatureUser image="/starship/ericabrescia.png" name="Erica Brescia" title="Managing Director" company="Redpoint Ventures" />
             </div>
         </ContentSection>
@@ -119,9 +119,9 @@ const Starship: FunctionComponent = () => (
                 <Heading size="h6" className="invisible text-white md:visible">
                     FEATURING
                 </Heading>
-                <FeatureUser image="/starship/davidsacks.png" name="Bobby Holley" title="Distinguised Engineer" company="Mozilla" />
-                <FeatureUser image="/starship/simonmarlow.png" name="Simon Barendse" title="Software Engineer" company="1Password" />
-                <FeatureUser image="/starship/ericabrescia.png" name="Arun Sathiya" title="Software Engineer" company="1Password" />
+                <FeatureUser image="/starship/simonbarendse.png" name="Simon Barendse" title="Senior Software Engineer" company="1Password" />
+                <FeatureUser image="/starship/bobbyholley.png" name="Bobby Holley" title="Distinguished Engineer" company="Mozilla" />
+                <FeatureUser image="/starship/tjdevries.png" name="TJ DeVries" title="Software Engineer" company="Sourcegraph" />
             </div>
             
             <div>
@@ -132,10 +132,10 @@ const Starship: FunctionComponent = () => (
                     MARCH 30, 9AM - 11AM PST
                 </p>
                 <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
-                    See the newest features launching in Sourcegraph 5.0.
+                    We're entering a new era for software and how it's built
                 </p>
-                <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-white md:max-w-[491px]">
-                Join us to hear from the team building Sourcegraph’s code intelligence platform and other devs in the community using Sourcegraph.
+                <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-gray-200 md:max-w-[491px]">
+                Join Sourcegraph and some of the leaders building (and backing) the tools devs use today for a series of talks around the intersection of AI and code intelligence.
                 </p>
                 <img src="/starship/launch.svg" alt="Launch Pill" className="mt-[115px] hidden blur-sm md:block" />
             </div>
