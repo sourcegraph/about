@@ -29,6 +29,7 @@ export { TwoColumnSection } from './TwoColumnSection'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
 export { StarshipPageCallToAction } from './cta/StarshipPageCallToAction'
+export { Banner } from './Banner'
 
 // Blog
 export {
