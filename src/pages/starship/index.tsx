@@ -89,7 +89,7 @@ const Starship: FunctionComponent = () => (
                     STARSHIP TALKS
                 </p>
                 <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-blue-300 md:max-w-[491px]">
-                    MARCH 23, 10AM - 12PM PST
+                    MARCH 23, 10AM - 12PM PT
                 </p>
                 <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
                     We’re entering a new era for software and how it’s built
@@ -129,13 +129,13 @@ const Starship: FunctionComponent = () => (
                     DEV TALKS
                 </p>
                 <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-blue-300 md:max-w-[491px]">
-                    MARCH 30, 9AM - 11AM PST
+                    MARCH 30, 9AM - 11AM PT
                 </p>
                 <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
-                    We're entering a new era for software and how it's built
+                Explore the current state and future of code intelligence tools
                 </p>
                 <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-gray-200 md:max-w-[491px]">
-                Join Sourcegraph and some of the leaders building (and backing) the tools devs use today for a series of talks around the intersection of AI and code intelligence.
+                Engineers building innovative developer tools—including 1Password, Neovim, Mozilla, and the Rust programming language—will share insights into the power of code intelligence and how it is transforming the developer experience.
                 </p>
                 <img src="/starship/launch.svg" alt="Launch Pill" className="mt-[115px] hidden blur-sm md:block" />
             </div>
