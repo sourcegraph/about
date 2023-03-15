@@ -108,8 +108,8 @@ const OwnPage: FunctionComponent = () => (
                     controls={false}
                     data-cookieconsent="ignore"
                 >
-                    <source type="video/webm" src="/animations/code-intel.webm" data-cookieconsent="ignore" />
-                    <source type="video/mp4" src="/animations/code-intel.mp4" data-cookieconsent="ignore" />
+                    <source type="video/webm" src="https://sourcegraphstatic.com/own-landing-page-1.webm" data-cookieconsent="ignore" />
+                    <source type="video/mp4" src="https://sourcegraphstatic.com/own-landing-page-1.mp4" data-cookieconsent="ignore" />
                 </video>
             </div>
         </ContentSection>
@@ -125,8 +125,8 @@ const OwnPage: FunctionComponent = () => (
                     controls={false}
                     data-cookieconsent="ignore"
                 >
-                    <source type="video/webm" src="/animations/code-search.webm" data-cookieconsent="ignore" />
-                    <source type="video/mp4" src="/animations/code-search.mp4" data-cookieconsent="ignore" />
+                    <source type="video/webm" src="https://sourcegraphstatic.com/own-landing-page-2.webm" data-cookieconsent="ignore" />
+                    <source type="video/mp4" src="https://sourcegraphstatic.com/own-landing-page-2.mp4" data-cookieconsent="ignore" />
                 </video>
             </div>
             <OwnContent
@@ -163,7 +163,7 @@ const OwnPage: FunctionComponent = () => (
                 Try Sourcegraph Own
             </Heading>
 
-            <p className="text-lg text-gray-200"></p>
+            <p className="text-lg text-gray-200">Available now as an experimental feature</p>
             <div className="mt-8 flex flex-row gap-x-4">
                 <Link
                     href="https://docs.sourcegraph.com/own"
