@@ -48,7 +48,7 @@ const Starship: FunctionComponent = () => (
                 />
             </div>
 
-            <CountDown className="relative top-[-60px] px-[21px] md:top-[-183px]" launchDate="2023-03-23T13:00:00Z" />
+            <CountDown className="relative top-[-60px] px-[21px] md:top-[-183px]" launchDate="2023-03-23T17:00:00Z" />
         </div>
 
         {/* Event Leads */}
