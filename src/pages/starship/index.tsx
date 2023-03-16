@@ -75,6 +75,9 @@ const Starship: FunctionComponent = () => (
                     <HubSpotForm
                         formId="93419890-2b5e-4109-ad13-0fd2ee0c1607"
                         inlineMessage="Thanks for registering for Starship! You will receive event updates and product announcements from Sourcegraph in your email."
+                        onFormSubmitted={() => {
+                            window.lintrk?.('track', { conversion_id: 12782521 })
+                        }}
                     />
                 </div>
             </div>
