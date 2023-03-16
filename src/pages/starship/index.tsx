@@ -17,6 +17,15 @@ import {
 
 import styles from './Starship.module.scss'
 
+declare global {
+    interface Window {
+        /* Type definition to add lintrk, part of the Linkedin Insights Tag, to
+         * the window object, allowing to call window.lintrk()
+         */
+        lintrk(eventName: string, eventOptions: { conversion_id: number | string }): void
+    }
+}
+
 const Starship: FunctionComponent = () => (
     <Layout
         headerColorTheme="purple"
