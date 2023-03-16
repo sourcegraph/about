@@ -13,7 +13,6 @@ export default class MyDocument extends Document {
                 <Head>
                     {/* So that Triblio (and other third-party scripts) can read the full URL. More details here: https://learning.triblio.com/article/212-understanding-site-referrer-policy */}
                     <meta name="referrer" content="no-referrer-when-downgrade" />
-
                     <meta charSet="utf-8" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
@@ -21,20 +20,15 @@ export default class MyDocument extends Document {
                     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
                     <meta name="apple-mobile-web-app-title" content="Sourcegraph" />
                     <link rel="apple-touch-startup-image" href="/sourcegraph/sourcegraph-mark.png" />
-
                     <link rel="icon" type="image/png" href="/favicon.png" />
                     <link rel="apple-touch-icon" sizes="180x180" href="/sourcegraph/sourcegraph-mark-touch-180.png" />
-
                     <link rel="manifest" href="/manifest.json" />
-
                     <link rel="alternate" type="application/rss+xml" href="/feed.rss.xml" />
-
                     {/* Sourcegraph Chrome Extension */}
                     <link
                         rel="chrome-webstore-item"
                         href="https://chrome.google.com/webstore/detail/dgjhfomjieaadpoljlnidmbgkdffpack"
                     />
-
                     {/* Google Fonts */}
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -46,7 +40,6 @@ export default class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono&display=swap"
                         rel="stylesheet"
                     />
-
                     {/* Cookiebot */}
                     {/* Cookiebot recommends this in the head, which aligns with Next.js' recommendation for CCMs */}
                     <Script
@@ -57,7 +50,6 @@ export default class MyDocument extends Document {
                         type="text/javascript"
                         strategy="beforeInteractive"
                     />
-
                     {/* GTM Data Layer */}
                     {/* Google recommends this in the head, but Next.js recommends afterInteractive */}
                     {/* Note: Deprecate gtag UA config when we've migrated to GA4 */}
@@ -81,7 +73,6 @@ export default class MyDocument extends Document {
                         gtag('config', 'UA-40540747-17');
                     `}
                     </Script>
-
                     {/* Google Tag Manager */}
                     {/* Google recommends this in the head, but Next.js recommends afterInteractive */}
                     <Script id="script-gtm" data-cookieconsent="ignore" strategy="afterInteractive">
@@ -93,7 +84,6 @@ export default class MyDocument extends Document {
                             })(window,document,'script','dataLayer','GTM-TB4NLS7');  
                         `}
                     </Script>
-
                     {/* Plausible Analytics (GA Alternative) */}
                     {/* Plausible recommends this in the head, but Next.js recommends afterInteractive */}
                     <Script
@@ -102,24 +92,7 @@ export default class MyDocument extends Document {
                         src="https://plausible.io/js/plausible.js"
                         strategy="afterInteractive"
                     />
-
-\                   {/* LinkedIn Insights Tag */}
-                    <Script id="linkedin-insights-tag" type="text/javascript" strategy="afterInteractive">
-                        {`
-                            _linkedin_partner_id = "${linkedinPartnerId}";
-                            window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-                            window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-                            (function(l) {
-                            if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
-                            window.lintrk.q=[]}
-                            var s = document.getElementsByTagName("script")[0];
-                            var b = document.createElement("script");
-                            b.type = "text/javascript";b.async = true;
-                            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-                            s.parentNode.insertBefore(b, s);})(window.lintrk);
-                        `}
-                    </Script>
-
+                
                     {/* Triblio "Webpage Personalization" */}
                     {/* Triblio recommends this in the head which we follow with beforeInteractive */}
                     <Script
@@ -129,7 +102,6 @@ export default class MyDocument extends Document {
                         async={true}
                         strategy="beforeInteractive"
                     />
-
                     {/* Triblio "Analytics and Overlay Cards" */}
                     {/* Triblio recommends this in the body which aligns with Next.js' recommendation for analytics */}
                     <Script
