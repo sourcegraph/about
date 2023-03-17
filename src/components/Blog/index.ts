@@ -8,6 +8,7 @@ export * from './PostLayout'
 export * from './PostsList'
 export * from './PostsListPage'
 export * from './ReleasePost'
+export * from './BlogListItem'
 
 // Blog Post Data
 export * from './postTypes'

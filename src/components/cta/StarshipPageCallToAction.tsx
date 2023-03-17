@@ -28,7 +28,6 @@ export const StarshipPageCallToAction: FunctionComponent<StarshipPageCallToActio
                 <TrySourcegraphAppButton buttonLocation={buttonLocation.trySourcegraph} dark={true}>
                     {buttonText}
                 </TrySourcegraphAppButton>
-
             </div>
         )}
     </div>
