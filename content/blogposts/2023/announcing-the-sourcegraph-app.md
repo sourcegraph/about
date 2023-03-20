@@ -1,7 +1,9 @@
 ---
 title: "Announcing the Sourcegraph app"
+authors:
+  - name: Taylor Sperry
 publishDate: 2023-03-23T10:00-07:00
-description: The Sourcegraph app, now in beta, brings code intelligence to your local machine in a lightweight, single-binary package.
+description: The Sourcegraph app, now in beta, brings code intelligence to your local machine in a free, lightweight package.
 tags: [blog, release]
 slug: "announcing-sourcegraph-app"
 published: true
@@ -13,7 +15,7 @@ We’ve all felt it: navigating Big Code can be _really_ hard. To get the answer
 
 Sourcegraph brings everything you need to know about your code into a single, unified interface, and now it’s easier than ever to get it up and running on your local machine. Today we’re releasing the Sourcegraph app, now in beta.
 
-It’s a free, lightweight single-binary that lets you run powerful code search across all the code you care about (both local and remote) right alongside your IDE.
+The Sourcegraph app is a free, lightweight single-binary that lets you run powerful code search across all the code you care about (both local and remote) right alongside your IDE.
 
 With the app, you can find code patterns and usage examples; leverage the editor extension to search across all your repos as you’re editing code; track security vulnerabilities, versions of languages and packages, and migrations and deprecations; and automate large-scale changes across your codebase.
 
@@ -28,4 +30,4 @@ Here are some of the tried-and-true Sourcegraph features you can expect from the
 - Code Insights
 - Batch Changes
 
-In the future, we’ll introduce open source integration and some of our newer Sourcegraph features, like search ranking, Own, and our new AI coding assistant, Cody. We’re iterating quickly, so be sure to check the docs for updates, and let us know what you think! We can’t wait for you to try it out and would love to hear what you want to see next.
+In the future, we’ll introduce open source integration and some of our newer Sourcegraph features, like search ranking, [Own](https://about.sourcegraph.com/own), and our new AI coding assistant, [Cody](https://about.sourcegraph.com/cody). We’re iterating quickly, so be sure to check the docs for updates, and let us know what you think! We can’t wait for you to try it out and would love to hear what you want to see next.
