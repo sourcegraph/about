@@ -85,14 +85,6 @@ const CodyPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <CallToAction
-            title="Try the Sourcegraph app on your code"
-            description="Experience the power of Sourcegraph for free on your local machine."
-            buttonText="Download the app"
-            className="!mt-0 pb-[112px]"
-            titleClassName="text-4xl leading-[43px] font-semibold"
-            buttonClassName="!mt-4"
-        />
     </Layout>
 )
 
