@@ -5,7 +5,7 @@ authors:
     url: https://twitter.com/malomarrec
 publishDate: 2023-03-23T10:00-07:00
 description: Sourcegraph Own, available now as an experimental feature, integrates evergreen code ownership with Sourcegraph's code intelligence platform.
-tags: [blog, release]
+tags: [blog]
 slug: "announcing-sourcegraph-own"
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/sourcegraph-own-og.png
