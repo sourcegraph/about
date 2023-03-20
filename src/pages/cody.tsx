@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { Badge, ContentSection, Heading, Layout, CallToAction } from '../components'
+import { Badge, ContentSection, Heading, Layout } from '../components'
 
 const CodyPage: FunctionComponent = () => (
     <Layout
