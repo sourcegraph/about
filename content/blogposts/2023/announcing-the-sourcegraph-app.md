@@ -1,11 +1,11 @@
 ---
 title: "Announcing the Sourcegraph app"
+description: 'The Sourcegraph app, now in beta, brings code intelligence to your local machine in a free, lightweight package.'
 authors:
   - name: Taylor Sperry
 publishDate: 2023-03-23T10:00-07:00
-description: The Sourcegraph app, now in beta, brings code intelligence to your local machine in a free, lightweight package.
 tags: [blog]
-slug: "announcing-sourcegraph-app"
+slug: 'announcing-sourcegraph-app'
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-sourcegraph-app.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-sourcegraph-app.png
