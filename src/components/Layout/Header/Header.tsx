@@ -4,6 +4,7 @@ import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import { EXP_GET_STARTED } from '../../../data/experiments'
 import { buttonLocation } from '../../../data/tracking'
@@ -24,6 +25,8 @@ interface Props {
 export const Header: FunctionComponent<Props> = ({ minimal, colorTheme }) => {
     const [lastScrollPosition, setLastScrollPosition] = useState<number>(0)
     const [sticky, setSticky] = useState<boolean>(false)
+    const router = useRouter()
+    const { pathname } = router
 
     /**
      * This checks the scroll position to see if the viewport has been
@@ -68,7 +71,7 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme }) => {
         <Disclosure as="nav" className={classNames('fixed top-0 left-0 right-0 z-[1030]')} ref={navRef}>
             {({ open }) => (
                 <>
-                    <Banner />
+                    {pathname !== '/starship' && <Banner />}
                     <HeaderContent colorTheme={colorTheme} minimal={minimal} open={open} sticky={sticky} />
                 </>
             )}
