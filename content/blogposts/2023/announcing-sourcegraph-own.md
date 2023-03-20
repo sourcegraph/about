@@ -5,8 +5,8 @@ description: Sourcegraph Own, available now as an experimental feature, integrat
 tags: [blog, release]
 slug: "announcing-sourcegraph-own"
 published: true
-heroImage: 
-socialImage: 
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/sourcegraph-own-og.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/sourcegraph-own-og.png
 ---
 
 We recently wrote about our [vision for code ownership](https://about.sourcegraph.com/blog/our-vision-for-code-ownership) and why we think radically better code ownership tooling is needed. In short, code ownership in practice is more nuanced than a simplistic “one file is owned by one dev” model. Even for simple scenarios, current ownership tooling is insufficient outside of the basic PR review workflows. 

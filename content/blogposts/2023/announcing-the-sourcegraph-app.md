@@ -5,8 +5,8 @@ description: The Sourcegraph app, now in beta, brings code intelligence to your 
 tags: [blog, release]
 slug: "announcing-sourcegraph-app"
 published: true
-heroImage: 
-socialImage: 
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-sourcegraph-app.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-sourcegraph-app.png
 ---
 
 We’ve all felt it: navigating Big Code can be _really_ hard. To get the answers you need in a complex codebase, you might end up cloning a bunch of repos onto your local machine, or wasting time toggling between your code host and your IDE, or even writing your own hacky scripts to sync remote code locally.

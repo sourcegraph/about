@@ -5,6 +5,6 @@ description: Announcing Sourcegraph 5.0.
 tags: [blog, release]
 slug: "release/5.0"
 published: true
-heroImage: 
-socialImage: 
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/5.0/sourcegraph-5-0-hero.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/5.0/sourcegraph-5-0-hero.png
 ---
