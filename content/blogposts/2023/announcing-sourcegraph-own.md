@@ -40,3 +40,5 @@ Own also lets you search for things such as:
 VIDEO
 
 Own is experimental, and now available to all Sourcegraph users on version 5.0+. Exposing existing ownership data in a powerful search engine to answer those key questions is only the first step. Hit me up if you’d like a demo or a runthrough of our roadmap!
+  
+Own is brought to you by Juliana Peña, Cezary Bartoszuk, Leo Papaloizos and Erik Seliger.
