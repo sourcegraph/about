@@ -1,0 +1,31 @@
+---
+title: "Announcing the Sourcegraph app"
+publishDate: 2023-03-23T10:00-07:00
+description: The Sourcegraph app, now in beta, brings code intelligence to your local machine in a lightweight, single-binary package.
+tags: [blog, release]
+slug: "announcing-sourcegraph-app"
+published: true
+heroImage: 
+socialImage: 
+---
+
+We’ve all felt it: navigating Big Code can be _really_ hard. To get the answers you need in a complex codebase, you might end up cloning a bunch of repos onto your local machine, or wasting time toggling between your code host and your IDE, or even writing your own hacky scripts to sync remote code locally.
+
+Sourcegraph brings everything you need to know about your code into a single, unified interface, and now it’s easier than ever to get it up and running on your local machine because today we’re launching the Sourcegraph app!
+
+It’s a free, lightweight single-binary that lets you run powerful code search across all the code you care about (both local and remote) right alongside your IDE.
+
+With the app, you can find code patterns and usage examples; leverage the editor extension to search across all your repos as you’re editing code; track security vulnerabilities, versions of languages and packages, and migrations and deprecations; and automate large-scale changes across your codebase.
+
+[You can download the Sourcegraph app here.](https://about.sourcegraph.com/app)
+
+Here are some of the tried-and-true Sourcegraph features you can expect from the app today: 
+
+- Connections to GitHub, GitLab, and Bitbucket
+- Unlimited remote repos and local files
+- Configurable precise code navigation
+- Configurable IDE extensions
+- Code Insights
+- Batch Changes
+
+In the future, we’ll introduce open source integration and some of our newer Sourcegraph features, like search ranking, Own, and our new AI coding assistant, Cody. We’re iterating quickly, so be sure to check the docs for updates, and let us know what you think! We can’t wait for you to try it out and would love to hear what you want to see next.
