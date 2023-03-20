@@ -11,7 +11,6 @@ import {
     IntegrationsSection,
     CustomerLogos,
     Heading,
-    Banner,
 } from '../components'
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
@@ -73,90 +72,87 @@ const Home: FunctionComponent = () => (
 )
 
 const HomeHero: FunctionComponent = () => (
-    <>
-        <Banner />
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-2 py-8 md:grid-cols-[2fr_3fr] md:px-6 md:pt-12 md:pb-16 lg:grid-cols-[3fr_5fr] lg:gap-12">
-            <div className="flex flex-col items-center gap-6 text-center xl:gap-8">
-                <h1 className="text-5xl leading-[2rem] lg:text-6xl xl:text-7xl">
-                    <span className="sg-bg-gradient-purple-white whitespace-nowrap bg-clip-text text-transparent">
-                        Code intelligence
-                    </span>
-                </h1>
+    <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-2 py-8 md:grid-cols-[2fr_3fr] md:px-6 md:pt-12 md:pb-16 lg:grid-cols-[3fr_5fr] lg:gap-12">
+        <div className="flex flex-col items-center gap-6 text-center xl:gap-8">
+            <h1 className="text-5xl leading-[2rem] lg:text-6xl xl:text-7xl">
+                <span className="sg-bg-gradient-purple-white whitespace-nowrap bg-clip-text text-transparent">
+                    Code intelligence
+                </span>
+            </h1>
 
-                <p className="mx-auto mb-0 text-lg !font-normal md:text-base lg:text-xl">
-                    Sourcegraph makes it easy to read, write, and fix&nbsp;code&mdash;even in
-                    big,&nbsp;complex&nbsp;codebases.
+            <p className="mx-auto mb-0 text-lg !font-normal md:text-base lg:text-xl">
+                Sourcegraph makes it easy to read, write, and fix&nbsp;code&mdash;even in
+                big,&nbsp;complex&nbsp;codebases.
+            </p>
+
+            {!EXP_HIDE_SUBTEXT && (
+                <p className="mb-0 text-sm text-white/75">
+                    Universal code search/nav + large-scale fixes/refactors.
+                    <br />
+                    Works&nbsp;alongside your code&nbsp;host and editor.
+                    <br />
+                    Built on{' '}
+                    <a
+                        href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-inherit underline decoration-white/25 decoration-dotted decoration-1 underline-offset-4 hover:text-white hover:decoration-white hover:decoration-solid"
+                    >
+                        open source
+                    </a>
+                    .
                 </p>
+            )}
 
-                {!EXP_HIDE_SUBTEXT && (
-                    <p className="mb-0 text-sm text-white/75">
-                        Universal code search/nav + large-scale fixes/refactors.
-                        <br />
-                        Works&nbsp;alongside your code&nbsp;host and editor.
-                        <br />
-                        Built on{' '}
-                        <a
-                            href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="text-inherit underline decoration-white/25 decoration-dotted decoration-1 underline-offset-4 hover:text-white hover:decoration-white hover:decoration-solid"
-                        >
-                            open source
-                        </a>
-                        .
-                    </p>
-                )}
-
-                <div className="max-w-sm md:w-full">
-                    {EXP_GET_STARTED ? (
-                        <>
-                            <Heading size="h6" className="mb-1 text-sm text-white/75">
-                                Get started:
-                            </Heading>
-                            <GetStartedButton
-                                buttonLocation={buttonLocation.hero}
-                                className="w-full"
-                                buttonGroupClassName="items-stretch"
-                                otherVariantsClassName={{
-                                    container: 'relative mt-[15px]',
-                                    triangle: 'absolute right-[3px] top-[-30px] h-[50px] w-[50px]',
-                                }}
-                            />
-                        </>
-                    ) : (
-                        <StandardCallToAction buttonLocation={buttonLocation.hero} size="lg" dark={true} />
-                    )}
-                </div>
-
-                {EXP_GET_STARTED && (
+            <div className="max-w-sm md:w-full">
+                {EXP_GET_STARTED ? (
                     <>
-                        {EXP_SOURCEGRAPH_ENTERPRISE && <EnterpriseLink />}
-
-                        {!EXP_SOURCEGRAPH_ENTERPRISE && (
-                            <div>
-                                <Heading size="h6" className="mb-1 text-sm text-white/75">
-                                    Or:
-                                </Heading>
-                                <MeetWithProductExpertButton
-                                    buttonLocation={buttonLocation.hero}
-                                    dark={true}
-                                    buttonClassName="btn-outline-white !font-normal"
-                                />
-                            </div>
-                        )}
+                        <Heading size="h6" className="mb-1 text-sm text-white/75">
+                            Get started:
+                        </Heading>
+                        <GetStartedButton
+                            buttonLocation={buttonLocation.hero}
+                            className="w-full"
+                            buttonGroupClassName="items-stretch"
+                            otherVariantsClassName={{
+                                container: 'relative mt-[15px]',
+                                triangle: 'absolute right-[3px] top-[-30px] h-[50px] w-[50px]',
+                            }}
+                        />
                     </>
+                ) : (
+                    <StandardCallToAction buttonLocation={buttonLocation.hero} size="lg" dark={true} />
                 )}
             </div>
-            <div className="px-4 md:px-0">
-                <DemoVideo
-                    video="homepage-demo-202301"
-                    splash={true}
-                    className="mx-auto w-full max-w-4xl rounded-lg bg-violet-750"
-                    splashClassName="rounded-lg"
-                />
-            </div>
+
+            {EXP_GET_STARTED && (
+                <>
+                    {EXP_SOURCEGRAPH_ENTERPRISE && <EnterpriseLink />}
+
+                    {!EXP_SOURCEGRAPH_ENTERPRISE && (
+                        <div>
+                            <Heading size="h6" className="mb-1 text-sm text-white/75">
+                                Or:
+                            </Heading>
+                            <MeetWithProductExpertButton
+                                buttonLocation={buttonLocation.hero}
+                                dark={true}
+                                buttonClassName="btn-outline-white !font-normal"
+                            />
+                        </div>
+                    )}
+                </>
+            )}
         </div>
-    </>
+        <div className="px-4 md:px-0">
+            <DemoVideo
+                video="homepage-demo-202301"
+                splash={true}
+                className="mx-auto w-full max-w-4xl rounded-lg bg-violet-750"
+                splashClassName="rounded-lg"
+            />
+        </div>
+    </div>
 )
 
 const EnterpriseLink: React.FunctionComponent = () => (

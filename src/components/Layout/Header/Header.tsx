@@ -7,6 +7,7 @@ import Link from 'next/link'
 
 import { EXP_GET_STARTED } from '../../../data/experiments'
 import { buttonLocation } from '../../../data/tracking'
+import { Banner } from '../../Banner'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
 import { TrySourcegraphForFreeButton } from '../../cta/TrySourcegraphForFreeButton'
 import { GetStartedLinkButton } from '../../GetStartedButton'
@@ -65,7 +66,12 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme }) => {
 
     return (
         <Disclosure as="nav" className={classNames('fixed top-0 left-0 right-0 z-[1030]')} ref={navRef}>
-            {({ open }) => <HeaderContent colorTheme={colorTheme} minimal={minimal} open={open} sticky={sticky} />}
+            {({ open }) => (
+                <>
+                    <Banner />
+                    <HeaderContent colorTheme={colorTheme} minimal={minimal} open={open} sticky={sticky} />
+                </>
+            )}
         </Disclosure>
     )
 }

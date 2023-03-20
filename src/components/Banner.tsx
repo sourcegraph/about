@@ -1,26 +1,20 @@
-import { FunctionComponent } from 'react'
-
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
+import { FunctionComponent } from 'mdx/types'
 import Link from 'next/link'
 
-export const Banner: FunctionComponent = () => (
-    <div className="sg-bg-gradient-starship-small max-h-[154px] overflow-hidden md:max-h-[125px]">
-        <div className="mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-x-[51px] md:flex-row md:items-start">
-            <img
-                src="/starship/starship-blur.svg"
-                alt="Sourcegraph Starship"
-                className="mt-[33px] md:mt-[32px]"
-                draggable={false}
-                width={251}
-                height={35}
-            />
+export const Banner: FunctionComponent<{}> = () => (
+    <div className="z-[1000] bg-black py-[13px]">
+        <div className="mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-y-[9px] gap-x-12 md:flex-row">
+            <p className="mb-0 font-semibold leading-[22px] text-white">
+                Join us March 23rd for our Starship launch event
+            </p>
             <Link
                 href="/starship"
                 title="What’s coming"
-                className="btn relative !py-0 leading-[22.4px] top-[-183px] mt-[51px] bg-transparent text-violet-300 md:static"
+                className="btn bg-transparent !px-0 !py-0 leading-[22px] text-violet-300"
             >
-                What’s coming
-                <ChevronRightIcon className="mb-1 !mb-0 ml-[18px] inline" />
+                See what’s coming
+                <ChevronRightIcon className="!mb-0 ml-[18px] inline" />
             </Link>
         </div>
     </div>
