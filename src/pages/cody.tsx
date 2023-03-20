@@ -77,11 +77,11 @@ const CodyPage: FunctionComponent = () => (
         >
             <div className="max-w-[529px]">
                 <Heading size="h2" className="!text-4xl text-white">
-                    Cody is now in Private Beta
+                    Cody is now in private beta
                 </Heading>
                 <p className="mt-6 text-lg text-gray-200">
                     Cody works with Sourcegraph’s precise code intelligence and code search to provide even better
-                    results. Cody is now in Private Beta for select users.
+                    results.
                 </p>
             </div>
             <div className="flex max-w-[452px] flex-col justify-center border-t border-gray-500 pt-8 md:h-[232px] md:border-l md:border-t-0 md:pl-8 md:pt-0">
@@ -94,7 +94,7 @@ const CodyPage: FunctionComponent = () => (
                     className="btn mt-8 bg-transparent pl-0 text-white"
                     target="_blank"
                 >
-                    Request Private Beta access
+                    Join private beta waitlist
                     <ChevronRightIcon className="mb-1 !mb-0 ml-[10px] inline" />
                 </Link>
             </div>
