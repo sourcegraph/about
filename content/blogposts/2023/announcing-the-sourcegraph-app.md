@@ -11,7 +11,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-t
 
 We’ve all felt it: navigating Big Code can be _really_ hard. To get the answers you need in a complex codebase, you might end up cloning a bunch of repos onto your local machine, or wasting time toggling between your code host and your IDE, or even writing your own hacky scripts to sync remote code locally.
 
-Sourcegraph brings everything you need to know about your code into a single, unified interface, and now it’s easier than ever to get it up and running on your local machine because today we’re launching the Sourcegraph app!
+Sourcegraph brings everything you need to know about your code into a single, unified interface, and now it’s easier than ever to get it up and running on your local machine. Today we’re releasing the Sourcegraph app, now in beta.
 
 It’s a free, lightweight single-binary that lets you run powerful code search across all the code you care about (both local and remote) right alongside your IDE.
 
