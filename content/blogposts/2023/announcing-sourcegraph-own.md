@@ -37,7 +37,13 @@ Own also lets you search for things such as:
 - What are files that don’t have an owner? This search query can be refined at will to give only the most important hits, that’s the power of Sourcegraph Search! <query>
 - What are the golang files that this person owns? <query>
 
-VIDEO
+<Video 
+  source={{
+    mp4: 'blog/announcing-own-blog-video'
+  }}
+  loop={false}
+  title="An example of searching for code ownership data"
+/>
 
 Own is experimental, and now available to all Sourcegraph users on version 5.0+. Exposing existing ownership data in a powerful search engine to answer those key questions is only the first step. Hit me up if you’d like a demo or a runthrough of our roadmap!
   
