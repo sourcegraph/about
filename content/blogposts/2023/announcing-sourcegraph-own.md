@@ -34,8 +34,8 @@ This is where Sourcgregraph Own comes in! Add select:file.owners(), and you can 
 ANIMATION
 
 Own also lets you search for things such as:
-- What are files that don’t have an owner? This search query can be refined at will to give only the most important hits, that’s the power of Sourcegraph Search! <query>
-- What are the golang files that this person owns? <query>
+- What are files that don’t have an owner? This search query can be refined at will to give only the most important hits, that’s the power of Sourcegraph Search! (add query)
+- What are the golang files that this person owns? (add query)
 
 <Video 
   source={{
