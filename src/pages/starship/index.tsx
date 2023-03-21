@@ -1,35 +1,48 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
+
 import {
     Heading,
     Layout,
+    FeatureUser,
     CustomerLogos,
     StarshipPageCallToAction,
+    HubSpotForm,
     ContentSection,
     BlogListItem,
 } from '../../components'
+
+import styles from './Starship.module.scss'
 import { DemoVideo } from '../../components/DemoVideo'
 
 const blogs = [
     {
-        title: 'From code search towards a code intelligence platform',
-        href: 'https://about.sourcegraph.com/blog/exploring-pydantic-with-samuel-colvin',
+        title: 'Sourcegraph 5.0 release post',
+        href: 'https://about.sourcegraph.com/blog/release/5.0',
         description:
-            'Since its inception, Sourcegraph has evolved from code search into a code intelligence platform. Our CEO and cofounder, Quinn Slack, shares what code intelligence means for the future of software development.',
+            'Sourcegraph 5.0 introduces more than 20 updates and improvements. Learn about them here.',
+        imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/release-post/5.0/sourcegraph-5-0-hero.png',
+    },
+    {
+        title: 'Cheating is all you need',
+        href: '',
+        description:
+            'Description',
         imageSrc: '/products/code-intelligence/hover-tooltip.png',
     },
     {
-        title: 'Sourcegraph 4.0 release post',
-        href: 'https://about.sourcegraph.com/blog/exploring-py',
+        title: 'Announcing Sourcegraph Own',
+        href: 'https://about.sourcegraph.com/blog/announcing-sourcegraph-own',
         description:
-            'Sourcegraph 4.0 includes 12+ features and improvements. Check out the release post for an in-depth look at everything that shipped.',
-        imageSrc: '/products/code-intelligence/hover-tooltip.png',
+            "Sourcegraph Own, available now as an experimental feature, integrates evergreen code ownership with Sourcegraph's code intelligence platform.",
+        imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/sourcegraph-own-og.png',
     },
     {
-        title: 'Secure and scalable Sourcegraph Cloud instances for the enterprise',
-        href: 'https://about.sourcegraph.com/blog/exploring-py',
-        description: 'Sourcegraph Cloud, our single-tenant Cloud solution for enterprise, is now generally available.',
-        imageSrc: '/products/code-intelligence/hover-tooltip.png',
+        title: 'Announcing the Sourcegraph app',
+        href: 'https://about.sourcegraph.com/blog/announcing-sourcegraph-app',
+        description: 'The Sourcegraph app, now in beta, brings code intelligence to your local machine in a free, lightweight package.',
+        imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-sourcegraph-app.png',
     },
 ]
 
@@ -89,12 +102,61 @@ const Starship: FunctionComponent = () => (
                     className="mx-auto mt-16 max-h-[460px] w-full rounded-lg bg-blurple-200 md:mt-24 md:w-[75%]"
                     splashClassName="rounded-lg"
                 />
+                <br/><br/><br/>
+                <div className="flex-col">
+                    <Heading size="h4" className="text-white">
+                        Register for Dev Talks:
+                    </Heading>
+
+                    <div className={classNames('mx-auto mt-6 md:max-w-[491px] md:px-10', styles.container)}>
+                    <HubSpotForm
+                        formId="93419890-2b5e-4109-ad13-0fd2ee0c1607"
+                        inlineMessage="Thanks for registering for Starship Dev Talks! You will receive event updates and product announcements from Sourcegraph in your email."
+                        onFormSubmitted={() => {
+                            window.lintrk?.('track', { conversion_id: 12782521 })
+                        }}
+                    />
+                    </div>
+                </div>
+
             </div>
             <img
                 src="/starship/launch.svg"
                 alt="Launch Pill"
                 className="absolute top-[217.7px] left-[6.29px] hidden blur-sm md:block lg:left-[90.29px]"
             />
+        </ContentSection>
+
+        <ContentSection
+            parentClassName="!py-0"
+            className="mx-auto flex max-w-[1061px] flex-col justify-between md:flex-row"
+        >
+            
+            <div>
+                <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-white md:max-w-[491px]">
+                    UPCOMING: DEV TALKS
+                </p>
+                <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-blue-300 md:max-w-[491px]">
+                    MARCH 30, 9AM - 11AM PT
+                </p>
+                <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
+                Explore the current state and future of code intelligence tools
+                </p>
+                <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-gray-200 md:max-w-[491px]">
+                Engineers building innovative developer tools—including 1Password, Neovim, Mozilla, and the Rust programming language—will share insights into the power of code intelligence and how it is transforming the developer experience.
+                </p>
+                <img src="/starship/launch.svg" alt="Launch Pill" className="mt-[115px] hidden blur-sm md:block" />
+            </div>
+
+            <div className="flex flex-col gap-y-9">
+                <Heading size="h6" className="invisible text-white md:visible">
+                    FEATURING
+                </Heading>
+                <FeatureUser image="/starship/simonbarendse.png" name="Simon Barendse" title="Senior Software Engineer" company="1Password" />
+                <FeatureUser image="/starship/bobbyholley.png" name="Bobby Holley" title="Distinguished Engineer" company="Mozilla" />
+                <FeatureUser image="/starship/tjdevries.png" name="TJ DeVries" title="Software Engineer" company="Sourcegraph" />
+            </div>
+
         </ContentSection>
 
         <ContentSection className="mb-16 pt-[16px] md:mb-24" parentClassName="!py-0">
