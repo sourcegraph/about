@@ -32,9 +32,10 @@ But who owns this code? Who should I be reaching out to? There’s no easy answe
 
 This is where Sourcgregraph Own comes in! Add `select:file.owners()`, and you can get the list of all the owners in scope of this search query in one second. Even better, you can export this to a spreadsheet to, say, email all the owners or send this to a tracking system. Spoiler: we’re working on sending an email or raising a ticket to all owners in one click.
 
-<video playsinline mute loop title="An example of looking at ownership data in Sourcegraph">
+<video playsinline mute loop autoplay title="An example of looking at ownership data in Sourcegraph">
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-own.mp4" />
 </video>
+<br/>
 
 Own also lets you search for things such as:
 - What files don’t have an owner? This search query can be refined at will to give only the most important hits, that’s the power of Sourcegraph search! (add query)
@@ -44,6 +45,7 @@ Own also lets you search for things such as:
 <video controls playsinline title="Searching with Sourcegraph Own">
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-own-blog-video.mp4" type="video/mp4" />
   </video>
+<br/><br/>
 
 Own is experimental and now available to all Sourcegraph users on version 5.0+. Exposing existing ownership data in a powerful search engine to answer those key questions is only the first step. Hit me up if you’d like a demo or a runthrough of our roadmap!
   
