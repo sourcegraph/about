@@ -32,7 +32,14 @@ But who owns this code? Who should I be reaching out to? There’s no easy answe
 
 This is where Sourcgregraph Own comes in! Add `select:file.owners()`, and you can get the list of all the owners in scope of this search query in one second. Even better, you can export this to a spreadsheet to, say, email all the owners or send this to a tracking system. Spoiler: we’re working on sending an email or raising a ticket to all owners in one click.
 
-ANIMATION
+<Video 
+  source={{
+    mp4: '/own-landing-page-3.mp4',
+    webm: '/own-landing-page-3.webm'
+  }}
+  loop={true}
+  title="An example of looking at ownership data in Sourcegraph"
+/>  
 
 Own also lets you search for things such as:
 - What files don’t have an owner? This search query can be refined at will to give only the most important hits, that’s the power of Sourcegraph search! (add query)
