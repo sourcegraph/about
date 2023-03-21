@@ -46,13 +46,9 @@ Own also lets you search for things such as:
 - What are the golang files that this person owns? (add query)
 <br/>
 
-<Video 
-  source={{
-    mp4: 'blog/announcing-own-blog-video'
-  }}
-  loop={false}
-  title="An example of searching for code ownership data"
-/>
+<video controls playsinline title="Searching with Sourcegraph Own">
+  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-own-blog-video.mp4" type="video/mp4" />
+  </video>
 
 Own is experimental and now available to all Sourcegraph users on version 5.0+. Exposing existing ownership data in a powerful search engine to answer those key questions is only the first step. Hit me up if you’d like a demo or a runthrough of our roadmap!
   
