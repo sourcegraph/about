@@ -29,6 +29,7 @@ export { TwoColumnSection } from './TwoColumnSection'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
 export { CallToAction } from './cta/CallToAction'
+export { Banner } from './Banner'
 
 // Blog
 export {
