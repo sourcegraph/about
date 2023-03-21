@@ -12,9 +12,9 @@ import {
     ContentSection,
     BlogListItem,
 } from '../../components'
+import { DemoVideo } from '../../components/DemoVideo'
 
 import styles from './Starship.module.scss'
-import { DemoVideo } from '../../components/DemoVideo'
 
 const blogs = [
     {
