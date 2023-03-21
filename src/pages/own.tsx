@@ -110,12 +110,12 @@ const OwnPage: FunctionComponent = () => (
                 >
                     <source
                         type="video/webm"
-                        src="https://sourcegraphstatic.com/own-landing-page-1.webm"
+                        src="https://sourcegraphstatic.com/own-landing-page-3.webm"
                         data-cookieconsent="ignore"
                     />
                     <source
                         type="video/mp4"
-                        src="https://sourcegraphstatic.com/own-landing-page-1.mp4"
+                        src="https://sourcegraphstatic.com/own-landing-page-3.mp4"
                         data-cookieconsent="ignore"
                     />
                 </video>
