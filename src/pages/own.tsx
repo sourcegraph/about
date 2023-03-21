@@ -108,8 +108,16 @@ const OwnPage: FunctionComponent = () => (
                     controls={false}
                     data-cookieconsent="ignore"
                 >
-                    <source type="video/webm" src="https://sourcegraphstatic.com/own-landing-page-1.webm" data-cookieconsent="ignore" />
-                    <source type="video/mp4" src="https://sourcegraphstatic.com/own-landing-page-1.mp4" data-cookieconsent="ignore" />
+                    <source
+                        type="video/webm"
+                        src="https://sourcegraphstatic.com/own-landing-page-1.webm"
+                        data-cookieconsent="ignore"
+                    />
+                    <source
+                        type="video/mp4"
+                        src="https://sourcegraphstatic.com/own-landing-page-1.mp4"
+                        data-cookieconsent="ignore"
+                    />
                 </video>
             </div>
         </ContentSection>
@@ -125,8 +133,16 @@ const OwnPage: FunctionComponent = () => (
                     controls={false}
                     data-cookieconsent="ignore"
                 >
-                    <source type="video/webm" src="https://sourcegraphstatic.com/own-landing-page-2.webm" data-cookieconsent="ignore" />
-                    <source type="video/mp4" src="https://sourcegraphstatic.com/own-landing-page-2.mp4" data-cookieconsent="ignore" />
+                    <source
+                        type="video/webm"
+                        src="https://sourcegraphstatic.com/own-landing-page-2.webm"
+                        data-cookieconsent="ignore"
+                    />
+                    <source
+                        type="video/mp4"
+                        src="https://sourcegraphstatic.com/own-landing-page-2.mp4"
+                        data-cookieconsent="ignore"
+                    />
                 </video>
             </div>
             <OwnContent
@@ -159,11 +175,11 @@ const OwnPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection className="flex flex-col items-center" parentClassName="mt-12 mb-4">
-            <Heading className="text-white" size="h3">
+            <Heading className="mb-4 !text-[36px] text-white" size="h2">
                 Try Sourcegraph Own
             </Heading>
 
-            <p className="text-lg text-gray-200">Available now as an experimental feature</p>
+            <p className="mb-0 text-lg text-gray-200">Available now as an experimental feature!</p>
             <div className="mt-8 flex flex-row gap-x-4">
                 <Link
                     href="https://docs.sourcegraph.com/own"

@@ -134,6 +134,10 @@
         border-image-slice: 1 !important;
         border-image-source: linear-gradient(to right, theme(colors.violet.200), theme(colors.blue.200)) !important;
     }
+    .sg-border-gradient-banner {
+        border-image-slice: 1 !important;
+        border-image-source: linear-gradient(90.07deg, #5033E1 3.77%, #A112FF 42.1%, #503CDC 94.28%);
+    }
 
     /* ==================== Backgrounds ==================== */
     /* Light Nebulous Backgrounds */
