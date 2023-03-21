@@ -39,9 +39,6 @@ Own also lets you search for things such as:
 - What are the golang files that this person owns? (add query)
 <br/>
 
-
-<video controls src="https://sourcegraphstatic.com/blog/announcing-own-blog-vieo.mp4"></video>
-
 <Video 
   source={{
     mp4: 'blog/announcing-own-blog-video'
