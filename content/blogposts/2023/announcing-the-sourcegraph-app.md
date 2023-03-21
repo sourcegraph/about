@@ -29,5 +29,6 @@ Here are some of the tried-and-true Sourcegraph features you can expect from the
 - Configurable IDE extensions
 - Code Insights
 - Batch Changes
+<br/>
 
 In the future, we’ll introduce open source integration and some of our newer Sourcegraph features, like search ranking, [Own](https://about.sourcegraph.com/own), and our new AI coding assistant, [Cody](https://about.sourcegraph.com/cody). We’re iterating quickly, so be sure to check the docs for updates, and let us know what you think! We can’t wait for you to try it out and would love to hear what you want to see next.

@@ -18,6 +18,7 @@ We’re working on a radically better way to manage code ownership that’ll:
 - Be automatically evergreen, with a high signal-to-noise ratio.
 - Answer nuanced questions about ownership: who knows about code? who ‘s accountable for code?
 - Is natively integrated into key workflows and enterprise systems.
+<br/>
 
 Today, we’re very pleased to announce a new experimental feature, Sourcegraph Own. It’s our very first step towards our vision, laying the foundation for radically better ownership tooling.
 
@@ -36,6 +37,10 @@ ANIMATION
 Own also lets you search for things such as:
 - What are files that don’t have an owner? This search query can be refined at will to give only the most important hits, that’s the power of Sourcegraph Search! (add query)
 - What are the golang files that this person owns? (add query)
+<br/>
+
+
+<video controls src="https://sourcegraphstatic.com/blog/announcing-own-blog-vieo.mp4"></video>
 
 <Video 
   source={{
