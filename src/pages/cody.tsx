@@ -45,7 +45,7 @@ const CodyPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection parentClassName="!py-0" className="mx-auto mt-16 max-w-[768px] text-center md:!mt-2">
+        <ContentSection parentClassName="!pb-0" className="mx-auto mt-16 max-w-[768px] text-center md:!mt-2">
             <Heading size="h2" className="text-white">
                 Codebase-aware chat
             </Heading>
@@ -66,7 +66,7 @@ const CodyPage: FunctionComponent = () => (
                 </Heading>
                 <p className="mt-6 text-lg text-gray-200">
                     Cody works with Sourcegraph’s precise code intelligence and code search to provide even better
-                    results.
+                    accurate results.
                 </p>
             </div>
             <div className="flex max-w-[452px] flex-col justify-center border-t border-gray-500 pt-8 md:h-[232px] md:border-l md:border-t-0 md:pl-8 md:pt-0">
@@ -84,7 +84,6 @@ const CodyPage: FunctionComponent = () => (
                 </Link>
             </div>
         </ContentSection>
-
     </Layout>
 )
 

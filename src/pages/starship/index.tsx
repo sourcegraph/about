@@ -10,7 +10,7 @@ import {
     TwoRowWithImage,
     CountDown,
     CustomerLogos,
-    CallToAction,
+    StarshipPageCallToAction,
     HubSpotForm,
     ContentSection,
 } from '../../components'
@@ -33,8 +33,9 @@ const Starship: FunctionComponent = () => (
         displayChildrenUnderNav={true}
         meta={{
             image: '/starship/starship_og.png',
-            title: 'Sourcegraph Starship: coming March 23',
-            description: 'Join us on March 23 for Starship and the release of Sourcegraph 5.0',
+            title: 'Sourcegraph Starship: 3/23',
+                description:
+                    'Join us on March 23 for Starship and the release of Sourcegraph 5.0',
         }}
     >
         {/* Launch Countdown */}
@@ -69,8 +70,8 @@ const Starship: FunctionComponent = () => (
                     Code intelligence + AI = 🤯
                 </Heading>
                 <Heading size="h3" className="mt-6 font-normal text-gray-200 md:mt-4">
-                    Join us on March 23 for our next Starship launch event, where we’ll unveil the next evolution of
-                    Sourcegraph’s code intelligence platform.
+                    Join us on March 23 for our next Starship launch event, where we’ll unveil the next evolution
+                    of Sourcegraph’s code intelligence platform.
                 </Heading>
             </div>
 
@@ -106,8 +107,8 @@ const Starship: FunctionComponent = () => (
                     We’re entering a new era for software and how it’s built
                 </p>
                 <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-gray-200 md:max-w-[491px]">
-                    Join Sourcegraph and some of the leaders building (and backing) the tools devs use today for a series of 
-                    talks around the intersection of AI and code intelligence.
+                Join Sourcegraph and some of the leaders building (and backing) the tools devs use today for a series of 
+                talks around the intersection of AI and code intelligence.
                 </p>
                 <img src="/starship/launch.svg" alt="Launch Pill" className="mt-[115px] hidden blur-sm md:block" />
             </div>
@@ -207,11 +208,10 @@ const Starship: FunctionComponent = () => (
 
             <CustomerLogos dark={true} monochrome={true} className="-px-sm !bg-transparent md:pb-5xl" />
 
-            <CallToAction
+            <StarshipPageCallToAction
                 title="Try Sourcegraph App on your code"
                 description="Experience the power of Sourcegraph for free on your local machine."
                 buttonText="Try App"
-                titleClassName="!font-grotesk"
             />
 
             <img

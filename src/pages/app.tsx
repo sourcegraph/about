@@ -219,7 +219,7 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                                         <DownloadLink
                                             downloadName="app-download-linux-deb"
                                             href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+205301.ca3646/sourcegraph_2023.03.23+205301.ca3646_linux_amd64.deb"
-                                            title="Homebrew"
+                                            title="Sourcegaph App Debian package"
                                             className="text-gray-500 underline"
                                         >
                                             debian package
