@@ -34,8 +34,8 @@ This is where Sourcgregraph Own comes in! Add `select:file.owners()`, and you ca
 
 <Video 
   source={{
-    mp4: 'own-landing-page-3.mp4',
-    webm: 'own-landing-page-3.webm'
+    webm: 'blog/announcing-own.webm',
+    mp4: 'blog/announcing-own.mp4'
   }}
   loop={true}
   title="An example of looking at ownership data in Sourcegraph"
