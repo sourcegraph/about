@@ -119,7 +119,7 @@ These improvements make it easier to enable precise code intelligence on Sourceg
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 #### Integrate Batch Changes with other tools with outgoing webhooks
 
-Batch Changes allows to apply and track code changes across many repositories and codehosts. In many pipelines, opening and merging changesets requires interacting with other tools: ticketing, custom automation for reviews, etc. Now outgoing webhooks for Batch Changes let you send changeset events out to third party systems.
+Batch Changes enables you to apply and track code changes across many repositories and code hosts. In many pipelines, opening and merging changesets requires interacting with other tools: ticketing, custom automation for reviews, etc. Now, outgoing webhooks for Batch Changes let you send batch change and changeset events out to third party systems automatically.
 
 Site admins can configure outgoing webhooks from admin settings under "Batch Changes" > "Outgoing webhooks." Supported events are listed out in [docs](https://docs.sourcegraph.com/admin/config/webhooks/outgoing#supported-event-types).
 
@@ -138,7 +138,7 @@ Site admins can configure outgoing webhooks from admin settings under "Batch Cha
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 #### Limit access to batch changes
 
-In most companies, Batch Changes can be opened up to all devs: batch changes enforce codehost permissions and only let users open PRs against code they have access to. However, some customers require tighter controls to meet the security and compliance standards of their industry. To meet these needs, we're introducing a role-based access control (RBAC) system to Sourcegraph to enable more granular controls for who can create batch changes.
+In most companies, Batch Changes can be made available to all devs: batch changes respect code host permissions and only let users open changesets against code they have access to. However, some customers require tighter controls to meet the security and compliance standards of their industry. To meet these needs, we're introducing a role-based access control (RBAC) system to Sourcegraph to enable more granular controls for who can create batch changes.
 
 Site admins can limit access to approved users from admin settings under “Site admin” > “Users & auth” > “Roles” by:
 
