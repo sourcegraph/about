@@ -12,7 +12,7 @@ changelogItems:
 
 Sourcegraph 5.0 includes more than 20 updates and new features. 5.0 continues to build on Sourcegraph as a code intellingence platform while also improving the speed and scale of Sourcegraph's core features. 5.0 also introduces AI to the code intelligence plaform with the private beta of [Cody](https://about.sourcegraph.com/cody), the new code-aware programming assistant. 
 
-In addition to the new features included in 5.0, we are also releasing [the Sourcegraph app](https://about.sourcegraph.com/app). The app is a fast, lightweight version of Sourcegraph that can be downloaded and installed locally in minutes. It's the best way for new users to get started with Sourcegraph's free tier and run it on their local machine alongside their IDE.
+In addition to the new features included in 5.0, we are also releasing [the Sourcegraph app](https://about.sourcegraph.com/app). The app is a fast, lightweight version of Sourcegraph that can be downloaded and installed locally in minutes. It's the best way for new users to get started with Sourcegraph for free and run it on their local machine alongside their IDE.
 
 Read on to discover everything included in Sourcegraph 5.0.
 <br/>
