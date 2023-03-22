@@ -96,6 +96,7 @@ Previously, Sourcegraph ordered search results in a simple way that could make i
 
 - Search results are no longer grouped by repository. Instead, we return the most relevant files first. This helps prevent users from requiring workarounds to find what they’re looking for, for example updating the search to exclude certain repositories.
 - Search now incorporates a "file importance" score to help boost high quality, commonly-used files. This score is based on the code dependency graph, and is only available when precise code intelligence is enabled.
+<br/>
 
 These improvements are being released together as a limited beta in 5.0. You can reach out to your account team if you're interested in the beta.
 
