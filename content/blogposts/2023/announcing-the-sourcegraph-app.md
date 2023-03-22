@@ -19,7 +19,7 @@ The Sourcegraph app is a free, lightweight single-binary that lets you run power
 
 With the app, you can find code patterns and usage examples; leverage the editor extension to search across all your repos as you’re editing code; track security vulnerabilities, versions of languages and packages, and migrations and deprecations; and automate large-scale changes across your codebase.
 
-[You can download the Sourcegraph app here.](https://about.sourcegraph.com/app)
+[Download the Sourcegraph app.](https://about.sourcegraph.com/app)
 
 Here are some of the tried-and-true Sourcegraph features you can expect from the app today: 
 

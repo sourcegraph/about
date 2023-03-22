@@ -43,7 +43,7 @@ In 5.0, we’re introducing a number of exciting code exploration experience imp
 
 First and foremost, we've shipped the CodeMirror editor as the default blob viewer. This new editor is much more efficient with large files, making it easier and faster than ever to explore code. It also has great extensibility potential, enabling us to ship more IDE-like code exploration features in future.
 
-We've also enhanced the blob view by adding keyboard navigation. This means you can move around yiour codebase quickly and efficiently without ever having to take your hands off the keyboard. We’ve also added keyboard shortcuts for switching between the code editor, files, and symbols trees (this is behind the feature flag for now).
+We've also enhanced the blob view by adding keyboard navigation. This means you can move around yiour codebase quickly and efficiently without ever having to take your hands off the keyboard. We’ve also added keyboard shortcuts for switching between the code editor, files, and symbols trees. You can turn this on using the `blob-page-switch-areas-shortcuts` feature flag.
 
 We're also shipping file and symbols trees with drastically improved accessibility and a slick browsing experience.
 
