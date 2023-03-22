@@ -61,7 +61,7 @@ Here’s an overview of common problems:
 - There’s no support for escalation or finding the next best owner.
 - Ownership coverage is poor. Many repositories are orphaned, and when there’s an incident, it takes manual work to find owners. Leadership wants to get to high ownership coverage for compliance reasons, and it’s taking a lot of bandwidth.
 - Ownership is not very well integrated into other systems, so it takes manual work or unreliable scripting to glue it all together.
-Repo-level ownership is stored in one system, and file-level in CODEOWNERS in another (or not al all), because keeping an exhaustive index of code is costly. (That’s good news because that’s what Sourcegraph does best!)
+Repo-level ownership is stored in one system, and file-level in CODEOWNERS in another (or not at all), because keeping an exhaustive index of code is costly. (That’s good news because that’s what Sourcegraph does best!)
 - Companies with multiple code hosts don’t have a horizontal source of truth for code ownership.
 - Lastly, even when ownership data is available, it’s not easy to explore and search. A common example of a question that’s very hard to answer is “how can I view all the owners of code that use this function?”
 
