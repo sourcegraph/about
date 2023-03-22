@@ -132,8 +132,8 @@ Site admins can configure outgoing webhooks from admin settings under "Batch Cha
   />
 </div>
 
-<br/>
 <a href="https://docs.sourcegraph.com/admin/config/webhooks/outgoing" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
+<br/>
 
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 #### Limit access to batch changes
