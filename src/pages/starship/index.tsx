@@ -118,7 +118,6 @@ const Starship: FunctionComponent = () => (
                     />
                     </div>
                 </div>
-
             </div>
             <img
                 src="/starship/launch.svg"
@@ -131,7 +130,6 @@ const Starship: FunctionComponent = () => (
             parentClassName="!py-0"
             className="mx-auto flex max-w-[1061px] flex-col justify-between md:flex-row"
         >
-            
             <div>
                 <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-white md:max-w-[491px]">
                     UPCOMING: DEV TALKS
@@ -140,10 +138,12 @@ const Starship: FunctionComponent = () => (
                     MARCH 30, 9AM - 11AM PT
                 </p>
                 <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
-                Explore the current state and future of code intelligence tools
+                    Explore the current state and future of code intelligence tools
                 </p>
                 <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-gray-200 md:max-w-[491px]">
-                Engineers building innovative developer tools—including 1Password, Neovim, Mozilla, and the Rust programming language—will share insights into the power of code intelligence and how it is transforming the developer experience.
+                    Engineers building innovative developer tools—including 1Password, Neovim, Mozilla, and the Rust
+                    programming language—will share insights into the power of code intelligence and how it is
+                    transforming the developer experience.
                 </p>
                 <img src="/starship/launch.svg" alt="Launch Pill" className="mt-[115px] hidden blur-sm md:block" />
             </div>
@@ -152,11 +152,25 @@ const Starship: FunctionComponent = () => (
                 <Heading size="h6" className="invisible text-white md:visible">
                     FEATURING
                 </Heading>
-                <FeatureUser image="/starship/simonbarendse.png" name="Simon Barendse" title="Senior Software Engineer" company="1Password" />
-                <FeatureUser image="/starship/bobbyholley.png" name="Bobby Holley" title="Distinguished Engineer" company="Mozilla" />
-                <FeatureUser image="/starship/tjdevries.png" name="TJ DeVries" title="Software Engineer" company="Sourcegraph" />
+                <FeatureUser
+                    image="/starship/simonbarendse.png"
+                    name="Simon Barendse"
+                    title="Senior Software Engineer"
+                    company="1Password"
+                />
+                <FeatureUser
+                    image="/starship/bobbyholley.png"
+                    name="Bobby Holley"
+                    title="Distinguished Engineer"
+                    company="Mozilla"
+                />
+                <FeatureUser
+                    image="/starship/tjdevries.png"
+                    name="TJ DeVries"
+                    title="Software Engineer"
+                    company="Sourcegraph"
+                />
             </div>
-
         </ContentSection>
 
         <ContentSection className="mb-16 pt-[16px] md:mb-24" parentClassName="!py-0">

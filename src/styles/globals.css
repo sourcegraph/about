@@ -134,6 +134,10 @@
         border-image-slice: 1 !important;
         border-image-source: linear-gradient(to right, theme(colors.violet.200), theme(colors.blue.200)) !important;
     }
+    .sg-border-gradient-banner {
+        border-image-slice: 1 !important;
+        border-image-source: linear-gradient(90.07deg, #5033E1 3.77%, #A112FF 42.1%, #503CDC 94.28%);
+    }
 
     /* ==================== Backgrounds ==================== */
     /* Light Nebulous Backgrounds */
@@ -241,6 +245,29 @@
                 rgba(158, 23, 105, 0) 100%
             ),
             radial-gradient(121.35% 585.52% at 115.38% -2.37%, #270741 0%, #1e0632 71.46%, #0f111a 100%);
+    }
+
+     /* Own Backgrounds */
+    .sg-bg-gradient-own {
+        background: radial-gradient(104.35% 39.93% at 0% 98.47%, #6112A3 0.41%, #270741 54.04%, rgba(30, 6, 50, 0) 94.78%),
+            radial-gradient(109.27% 56.82% at 93.02% 27.51%, #6112A3 0.41%, #270741 54.04%, #1E0632 94.78%), 
+            #FFFFFF;
+    }
+    .sg-completed-roadmap-fade-top {
+        border-image: linear-gradient(to bottom, #08090a00, theme(colors.blue.400) 70%, theme(colors.blue.400)) 1;
+    }
+    .sg-pending-roadmap-fade-top {
+        border-image: linear-gradient(to bottom, #08090a00, theme(colors.violet.400) 70%, theme(colors.violet.400)) 1;
+    }
+    .sg-completed-roadmap-fade-bottom {
+        border-image: linear-gradient(to top, #08090a00, theme(colors.blue.400) 100%, theme(colors.blue.400)) 1;
+    }
+    .sg-pending-roadmap-fade-bottom {
+        border-image: linear-gradient(to top, #08090a00, theme(colors.violet.400) 100%, theme(colors.violet.400)) 1;
+    }
+  
+    .sg-bg-gradient-cody {
+        background: radial-gradient(109.27% 56.82% at 93.02% 27.51%, #6112A3 0.41%, #270741 54.04%, #1E0632 94.78%);
     }
 }
 

@@ -29,6 +29,7 @@ export { TwoColumnSection } from './TwoColumnSection'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
 export { StarshipPageCallToAction } from './cta/StarshipPageCallToAction'
+export { Banner } from './Banner'
 
 // Blog
 export {
@@ -82,3 +83,6 @@ export { FeatureUser } from './Starship/FeatureUser'
 export { TwoColWithImage } from './Starship/TwoColWithImage'
 export { TwoRowWithImage } from './Starship/TwoRowWithImage'
 export { CountDown } from './Starship/CountDown'
+
+// Own
+export { FeatureRoadMap } from './Own'
