@@ -87,8 +87,6 @@ The search input has been redesigned to greatly improve usability. New contextua
   />
 </div><br/>
 
-<Badge link="/code-search" text="Code Intelligence" color="cerise" size="small" />
-
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 #### Intelligent search ranking
 
@@ -102,6 +100,7 @@ These improvements are being released together as a limited beta in 5.0. You can
 
 <br/>
 
+<Badge link="/code-search" text="Code Intelligence" color="cerise" size="small" />
 #### Improved auto-indexing setup experience
 
 We've made significant improvements to Sourcegraph's auto-indexing setup experience to make it easier for users to enable precise code intelligence. Previously, the configuration options were somewhat opaque and could be intimidating for users to configure, even for engineers at Sourcegraph.
