@@ -197,7 +197,7 @@ Sourcegraph customers will now be able to bring their Azure DevOps repositories 
 
 We've made changes to how we handle GitHub and GitLab rate limits. Previously, all GitHub requests would be limited to 5,000 requests per hour (i.e. even if there were 1,000 users on the instance, the total number of requests would not exceed 5,000/hour).
 
-Now we use feedback from the code host to do rate limiting, and each individual user has their own rate limit. This greatly speeds up our permissions syncing process. Customers might see an increase in the number of requests to the code host, but these will not exceed the code host's own imposed rate limits.
+Now we use feedback from the code host to do rate limiting using each individual user's own rate limit. This greatly speeds up our permissions syncing process. Customers might see an increase in the number of requests to the code host, but these will not exceed the code host's own imposed rate limits.
 
 This does not override the custom rate limit that customers can configure in the site config. If that custom rate limit is slower than that of GitHub, it will take precedence.
 
