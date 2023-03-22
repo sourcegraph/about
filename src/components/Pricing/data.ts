@@ -387,7 +387,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
             'Integrate with GitHub Enterprise Server, GitLab self-managed, Bitbucket Server/Data Center, and Perforce.',
     },
     enterpriseOnlyCodeHosts: {
-        label: 'Integrate with all Git-based code hosts',
+        label: 'Integrate with all other code hosts',
         description: 'Integrate with any Git-based code host via src serve-git.',
     },
     privateCodeHosts: {
