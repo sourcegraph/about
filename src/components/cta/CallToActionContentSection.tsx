@@ -75,7 +75,7 @@ export const CallToActionContentSection: FunctionComponent<CtaSection> = ({
     cta1 = {
         text: 'Start for free',
         ctaStyle: 'primaryButtonWhite',
-        link: 'https://signup.sourcegraph.com',
+        link: '/get-started?t=enterprise',
     },
     cta2 = {
         text: 'Meet with a product expert',

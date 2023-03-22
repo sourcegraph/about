@@ -126,7 +126,11 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
         <>
             <MeetWithProductExpertButton
                 buttonLocation={buttonLocation.nav}
-                buttonClassName={classNames('!font-semibold', dark ? 'btn-outline-white' : 'btn-link', 'border-0')}
+                buttonClassName={classNames(
+                    '!font-semibold',
+                    dark ? 'btn-outline-white text-white hover:text-violet-300' : 'btn-link',
+                    'border-0'
+                )}
                 requestInfo={true}
             />
             {EXP_GET_STARTED ? (
@@ -134,7 +138,10 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
             ) : (
                 <Link
                     href="/get-started"
-                    className="btn btn-inverted-primary min-w-fit px-6 font-normal"
+                    className={classNames(
+                        'btn min-w-fit px-6 font-normal',
+                        dark ? 'btn-inverted-primary' : 'btn-primary'
+                    )}
                     title="Download Sourcegraph"
                 >
                     Download Sourcegraph

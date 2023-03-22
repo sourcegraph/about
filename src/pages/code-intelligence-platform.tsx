@@ -162,16 +162,16 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                         is: any code host, any language, and any repository.
                     </h3>
 
-                    <a
+                    <Link
                         className="btn btn-primary mt-8 block sm:inline-block"
-                        href="https://signup.sourcegraph.com"
+                        href="/get-started?t=enterprise"
                         title="Start for free"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.hero}
                         data-button-type="cta"
                     >
                         Start for free
-                    </a>
+                    </Link>
                 </div>
             </div>
         }
@@ -305,16 +305,16 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                     issues, and gain insights to make better decisions.
                 </p>
 
-                <a
+                <Link
                     className="btn btn-primary mt-8 block sm:inline-block"
-                    href="https://signup.sourcegraph.com"
+                    href="/get-started?t=enterprise"
                     title="Start for free"
                     data-button-style={buttonStyle.primary}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
                 >
                     Start for free
-                </a>
+                </Link>
             </div>
         </ContentSection>
 

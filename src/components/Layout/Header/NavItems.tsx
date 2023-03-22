@@ -58,9 +58,9 @@ const NAV_ITEMS: NavItem[] = EXP_SOURCEGRAPH_ENTERPRISE
                       href: '/batch-changes',
                   },
                   {
-                    name: 'Code Insights',
-                    href: '/code-insights',
-                },
+                      name: 'Code Insights',
+                      href: '/code-insights',
+                  },
                   {
                       name: 'Cody (AI)',
                       href: '/cody',
@@ -74,8 +74,8 @@ const NAV_ITEMS: NavItem[] = EXP_SOURCEGRAPH_ENTERPRISE
               ],
           },
           {
-            name: 'App',
-            href: '/app',
+              name: 'App',
+              href: '/app',
           },
           {
               name: 'Enterprise',
@@ -105,7 +105,7 @@ const NAV_ITEMS: NavItem[] = EXP_SOURCEGRAPH_ENTERPRISE
           {
               name: 'Blog',
               href: '/blog',
-          }
+          },
       ]
 
 interface Props {
@@ -129,7 +129,9 @@ export const NavItems: React.FunctionComponent<Props> = ({ linkElement: LinkElem
                         aria-current={isCurrentLink(item.href) ? 'page' : undefined}
                     >
                         {item.name}
-                        {item.badgeText && <Badge className="ml-2" size="small" text={item.badgeText} color="blurple" />}
+                        {item.badgeText && (
+                            <Badge className="ml-2" size="small" text={item.badgeText} color="blurple" />
+                        )}
                     </LinkElement>
                 ) : (
                     <NavItemMenu
@@ -211,7 +213,9 @@ const NavItemMenu: React.FunctionComponent<
                                             aria-current={isCurrentLink(link.href) ? 'page' : undefined}
                                         >
                                             {link.name}
-                                            {link.badgeText && <Badge className="ml-4" size="small" text={link.badgeText} />}
+                                            {link.badgeText && (
+                                                <Badge className="ml-4" size="small" text={link.badgeText} />
+                                            )}
                                         </Link>
                                     )}
                                 </Menu.Item>

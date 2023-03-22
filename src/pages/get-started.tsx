@@ -11,13 +11,15 @@ import { useRouter } from 'next/router'
 
 import { Badge, ContentSection, Heading, HubSpotForm, Layout, Tabs } from '../components'
 
+import styles from '../styles/getStarted.module.scss'
+
 const GetStartedPage: FunctionComponent = () => {
     const router = useRouter()
-    const activeTab = (router.query.app as string) || 'install_app'
+    const activeTab = (router.query.t as string) || 'app'
 
     const handleTabChange = (active: string): void => {
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        router.push(`?app=${active}`)
+        router.push(`?t=${active}`)
     }
 
     const tabExtra = (
@@ -27,11 +29,15 @@ const GetStartedPage: FunctionComponent = () => {
                 <Link
                     target="_blank"
                     href="https://github.com/sourcegraph/sourcegraph.git"
-                    className="flex items-center gap-1 text-lg"
+                    className="flex items-center gap-1 text-lg text-violet-500"
                 >
                     Build from source <LaunchIcon className="h-[12px] w-[12px] text-gray-700" />
                 </Link>
-                <Link target="_blank" href="https://sourcegraph.com" className="flex items-center gap-1 text-lg">
+                <Link
+                    target="_blank"
+                    href="https://sourcegraph.com"
+                    className="flex items-center gap-1 text-lg text-violet-500"
+                >
                     Search public code <LaunchIcon className="h-[12px] w-[12px] text-gray-700" />
                 </Link>
             </div>
@@ -45,17 +51,17 @@ const GetStartedPage: FunctionComponent = () => {
                 description:
                     'Install the app to get started with Sourcegraph quickly and easily. Use it to find, fix, and flow through all the code you care about, for free.',
             }}
-            childrenClassName="bg-white"
+            headerColorTheme="white"
         >
             <ContentSection>
                 <Tabs
-                    activeTabKey={activeTab || 'install_app'}
+                    activeTabKey={activeTab}
                     tabsWrapperClassName="md:flex md:gap-8"
                     navClassName="flex sm:flex-row md:flex-col md:!border-none md:gap-6 md:!justify-start"
                     contentClassName="!py-0"
                     tabs={[
                         {
-                            key: 'install_app',
+                            key: 'app',
                             title: (
                                 <>
                                     <div className="hidden items-center md:flex">
@@ -66,17 +72,16 @@ const GetStartedPage: FunctionComponent = () => {
                                             <p
                                                 className={classNames(
                                                     'm-0 text-base font-normal !text-gray-500',
-                                                    activeTab === 'install_app' && '!text-gray-200'
+                                                    activeTab === 'app' && '!text-gray-200'
                                                 )}
                                             >
-                                                Share Sourcegraph with your team by requesting a cloud or self-hosted
-                                                trial.
+                                                Get started navigating your local and remote code in minutes.
                                             </p>
                                         </div>
                                         <CheckCircleIcon
                                             className={classNames(
                                                 'h-[17px] rounded-full bg-white p-[3px]  text-black',
-                                                activeTab !== 'install_app' && 'opacity-0'
+                                                activeTab !== 'app' && 'opacity-0'
                                             )}
                                         />
                                     </div>
@@ -89,13 +94,13 @@ const GetStartedPage: FunctionComponent = () => {
                             content: <InterstitialAppContent />,
                             className: classNames(
                                 'md:!p-4 md:!border  md:rounded-[5px] md:max-w-[364px] md:!text-left',
-                                activeTab === 'install_app'
+                                activeTab === 'app'
                                     ? 'md:sg-bg-linear-space md:text-white md:shadow-xl'
                                     : 'md:!border-gray-300'
                             ),
                         },
                         {
-                            key: 'entrerprise_trial',
+                            key: 'enterprise',
                             title: (
                                 <>
                                     <div className="hidden items-center md:flex">
@@ -104,7 +109,7 @@ const GetStartedPage: FunctionComponent = () => {
                                             <p
                                                 className={classNames(
                                                     'm-0 text-base font-normal !text-gray-500',
-                                                    activeTab === 'entrerprise_trial' && '!text-gray-200'
+                                                    activeTab === 'enterprise' && '!text-gray-200'
                                                 )}
                                             >
                                                 Share Sourcegraph with your team by requesting a cloud or self-hosted
@@ -114,7 +119,7 @@ const GetStartedPage: FunctionComponent = () => {
                                         <CheckCircleIcon
                                             className={classNames(
                                                 'h-[17px] rounded-full bg-white p-[3px]  text-black',
-                                                activeTab !== 'entrerprise_trial' && 'opacity-0'
+                                                activeTab !== 'enterprise' && 'opacity-0'
                                             )}
                                         />
                                     </div>
@@ -127,7 +132,7 @@ const GetStartedPage: FunctionComponent = () => {
                             content: <EnterPriseTrial />,
                             className: classNames(
                                 'md:!p-4 md:!border md:rounded-[5px] md:max-w-[364px] md:!text-left',
-                                activeTab === 'entrerprise_trial'
+                                activeTab === 'enterprise'
                                     ? 'md:sg-bg-linear-space md:text-white md:shadow-xl'
                                     : 'md:!border-gray-300'
                             ),
@@ -176,6 +181,19 @@ const InterstitialAppContent: FunctionComponent = () => (
             >
                 Download for mac
             </Link>
+
+            <p className="mb-0 mt-2.5 flex text-gray-500">
+                MacOS 13+ required.
+                <Link
+                    href="https://docs.sourcegraph.com/app"
+                    className="ml-1 font-normal text-gray-500 underline"
+                    title="Old versions"
+                    target="_blank"
+                >
+                    Old Versions
+                </Link>
+                .
+            </p>
 
             {/* Linux */}
             <div className="mt-12 flex flex-row gap-x-3">
@@ -277,7 +295,7 @@ const EnterPriseTrial: FunctionComponent = () => (
         </div>
 
         <div className="enterprise-form-bg mt-6 rounded-2xl  py-12 px-6">
-            <div className="mx-auto max-w-[588px] rounded-lg bg-white p-4">
+            <div className={classNames('mx-auto max-w-[588px] rounded-lg bg-white p-4', styles.container)}>
                 <HubSpotForm masterFormName="contactMulti" formId="e090296f-84f5-4bcb-9093-a533336841b4" />
             </div>
         </div>

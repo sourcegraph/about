@@ -36,13 +36,15 @@ const testimonies: TestimonyProps[] = [
         thumbnail: '/testimonies/justin-phillip.svg',
         content: (
             <>
-                <p className="pb-1 text-xl">“During our decomp efforts, we also spent time to refactor our APIs.</p>
+                <p className="pb-1 text-xl">
+                    “During our decomp efforts, we also spent time to refactor our APIs. Many of these APIs were
+                    undocumented and lacked a formalized contract.
+                </p>
                 <p className="pb-1 text-xl">
                     {' '}
-                    Many of these APIs were undocumented and lacked a formalized contract.', 'With the help of
-                    Sourcegraph, we were able to quickly look at all clients of an API and remove unused attributes that
-                    lived in different repositories, ultimately simplifying our APIs and speeding up developer iteration
-                    time.”
+                    With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove
+                    unused attributes that lived in different repositories, ultimately simplifying our APIs and speeding
+                    up developer iteration time.”
                 </p>
             </>
         ),
@@ -70,7 +72,7 @@ const features = [
     },
     {
         title: 'Code intelligence',
-        description: 'Navigate code, find references, see code owners, trace history, security, etc.',
+        description: 'Navigate code, find references, see code owners, trace history, security, and more.',
         image: '/home/code_intelligence.png',
     },
     {
@@ -93,8 +95,10 @@ const Home: FunctionComponent = () => (
         hero={<HomeHero />}
     >
         <div className="flex flex-wrap items-center justify-center gap-3.5 border-b border-gray-200 bg-white py-6 px-sm text-center">
-            <Heading size="h5">Sourcegraph is used by some of the largest companies in the world.</Heading>
-            <Link href="/contact/request-info" className="font-semibold text-violet-500">
+            <Heading size="h5" className="!text-2xl	!leading-[34px]">
+                Sourcegraph is used by some of the largest companies in the world.
+            </Heading>
+            <Link href="/contact/request-info" className="text-xl font-semibold text-violet-500">
                 Learn about Sourcegraph Enterprise <ArrowRightIcon className="ml-1.5 inline" />
             </Link>
         </div>
@@ -124,11 +128,11 @@ const Home: FunctionComponent = () => (
                 ctaLink={
                     <Link
                         href="/case-studies"
-                        title="Learn how innovative companies are using Sourcegraph"
+                        title="See how innovative companies are using Sourcegraph"
                         className="btn bg-transparent py-0 pl-0 text-violet-500"
                     >
-                        Learn how innovative companies are using Sourcegraph
-                        <ChevronRightIcon className="mb-1 !mb-0 ml-[10px] inline" />
+                        See how innovative companies are using Sourcegraph
+                        <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
                     </Link>
                 }
                 className="-px-sm"
@@ -152,10 +156,10 @@ const Home: FunctionComponent = () => (
         <IntegrationsSection />
 
         <ContentSection
-            className="mb-[16px] grid grid-cols-1 overflow-hidden rounded-lg bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:h-[310px] md:grid-cols-8 lg:h-[380px]"
+            className="mb-[16px] grid grid-cols-1 overflow-hidden rounded-lg bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:grid-cols-8 md:max-h-[310px] lg:max-h-[380px]"
             parentClassName="bg-white !pt-0"
         >
-            <div className="p-5 text-white md:col-span-4 lg:p-[80px]">
+            <div className="p-4 md:col-span-4 lg:p-8 xl:p-12">
                 <Badge
                     className="bg-violet-100 text-violet-600 md:bg-violet-600 md:text-violet-100"
                     size="small"
@@ -165,21 +169,16 @@ const Home: FunctionComponent = () => (
                     Cody AI
                 </Heading>
                 <p className="mb-4 text-lg text-gray-200">
-                    Private Beta Cody AI Working with Cody, Sourcegraph’s new AI coding assistant, is like a having a
-                    senior engineer as a personal assistant who can search and read your codebase to find answers to
-                    your questions. Learn more about Cody
+                    Working with Cody, Sourcegraph’s new AI coding assistant, is like a having a senior engineer as a
+                    personal assistant who can search and read your codebase to find answers to your questions.
                 </p>
-                <MeetWithProductExpertButton
-                    buttonClassName="text-white p-0"
-                    chevron={true}
-                    buttonLocation={buttonLocation.body}
-                >
-                    Learn more about Cody
-                </MeetWithProductExpertButton>
+                <Link href="/cody" title="Learn more about Cody" className="flex btn bg-transparent p-0 text-white">
+                    <ChevronRightIcon className="!mb-0 inline" />
+                </Link>
             </div>
-            <div className="relative ml-[96px] h-full w-full md:col-span-4 md:ml-0 lg:ml-40">
+            <div aria-hidden={true} className="relative flex justify-end ml-[96px w-full md:col-span-4 ml-[136px] md:-ml-0 lg:-mt-0 lg:ml-40">
                 <img
-                    className="inset-0 h-[437px] object-cover md:absolute md:-top-[90px] md:h-[537px] md:w-[737px] lg:-top-[90px] lg:h-[637px] lg:w-[537px]"
+                    className="h-[437px] max-w-[637px] md:absolute md:-top-[90px] md:-right-[112px] md:h-[537px] md:w-[737px] lg:-top-[82px] lg:right-[54px] lg:h-[170%]"
                     src="/starship/cody-illustration.svg"
                     alt=""
                 />
@@ -187,20 +186,22 @@ const Home: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection
-            className="relative flex min-w-full flex-col overflow-hidden py-[96px] md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px]"
-            parentClassName="!py-0 bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800"
+            className="relative max-w-full flex flex-col overflow-hidden ml-[32px] md:mx-4 py-[96px] md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px] !m-0"
+            parentClassName="!py-0 bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:px-0"
         >
             <img
                 src="/home/background.svg"
                 alt="bg"
                 className="absolute -right-[300px] top-16 hidden w-[100%] md:inline-block"
+                aria-hidden={true}
             />
             <img
                 src="/home/background.svg"
                 alt="bg"
                 className="absolute -left-[900px] -top-20 hidden w-[100%] md:inline-block"
+                aria-hidden={true}
             />
-            <div className="z-10 flex flex-1 flex-col">
+            <div className="z-10 flex flex-1 flex-col md:pl-sm">
                 <div className="w-fit md:self-end">
                     <Heading className="mb-[10px] text-white" size="h2">
                         Download Sourcegraph
@@ -210,12 +211,12 @@ const Home: FunctionComponent = () => (
                 </div>
             </div>
             <div className="my-[42px] border-b border-gray-400 md:my-0 md:mx-[42px] md:h-[266px] md:border-l" />
-            <div className="z-10 flex flex-1 flex-col">
+            <div className="z-10 flex flex-1 flex-col md:pr-sm">
                 <Heading size="h4" className="mb-4 text-gray-200">
                     Sourcegraph for Enterprise
                 </Heading>
                 <p className="mb-8 max-w-[376px] text-gray-200">
-                    Learn more about how organizations use Sourcegraph at scale or get in touch:
+                    Get in touch to learn how organizations use Sourcegraph at Scale:
                 </p>
                 <div className="flex">
                     <MeetWithProductExpertButton dark={true} requestInfo={true} buttonLocation={buttonLocation.body} />
@@ -237,14 +238,14 @@ const HomeHero: FunctionComponent = () => (
         parentClassName="!py-0 !px-0 overflow-x-clip"
         className="grid grid-cols-1 gap-x-4 pt-12 md:grid-cols-2 md:bg-[url('/home/background.svg')] md:px-6"
     >
-        <div className="mx-auto flex max-w-[529px] flex-col items-center px-sm md: px-0 md:mx-0 md:items-start">
+        <div className="mx-auto flex max-w-[529px] flex-col items-center px-0 md:mx-0 md:items-start">
             <Heading size="h1" className="text-5xl leading-[2rem] lg:text-6xl xl:text-7xl">
                 <span className="sg-bg-gradient-purple-white whitespace-nowrap bg-clip-text text-transparent">
                     Code intelligence
                 </span>
             </Heading>
 
-            <p className="mx-auto mb-0 mt-6 text-center text-[26px] !font-normal leading-[27px] text-gray-200 md:text-left">
+            <p className="mx-auto mb-0 mt-6 text-center text-[26px] !font-normal leading-[36px] text-gray-200 md:text-left">
                 Sourcegraph makes it easy to read, write, and fix&nbsp;code&mdash;even in
                 big,&nbsp;complex&nbsp;codebases.
             </p>
@@ -262,20 +263,8 @@ const HomeHero: FunctionComponent = () => (
             </p>
             <DownloadLink className="flex flex-col items-center md:items-start" />
         </div>
-        <div className="mt-[70px] h-full w-full pl-sm md:mt-0 md:h-[543px] md:w-[758px]">
-            <video
-                autoPlay={true}
-                muted={true}
-                loop={true}
-                playsInline={true}
-                controls={false}
-                data-cookieconsent="ignore"
-                className="rounded-tl-[10px] md:rounded-t-[10px]"
-            >
-                <source type="video/webm" src="/animations/code-intel.webm" data-cookieconsent="ignore" />
-                <source type="video/mp4" src="/animations/code-intel.mp4" data-cookieconsent="ignore" />
-            </video>
-        </div>
+
+        <div className="mt-[70px] w-full rounded-tl-[10px] bg-[url('/home/banner.png')] bg-cover bg-no-repeat ml-sm md:mt-0 h-[362px] md:h-[543px] md:w-[758px] md:rounded-t-[10px]" />
     </ContentSection>
 )
 

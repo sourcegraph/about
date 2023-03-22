@@ -26,7 +26,7 @@ export const Tabs: FunctionComponent<Tabs> = ({
     tabBarExtraContent,
     tabsWrapperClassName,
     onTabChange,
-    activeTabKey: controlledActiveTabKey
+    activeTabKey: controlledActiveTabKey,
 }) => {
     const [currentTab, setCurrentTab] = useState(tabs[0]?.key)
 
@@ -34,7 +34,7 @@ export const Tabs: FunctionComponent<Tabs> = ({
         if (controlledActiveTabKey !== undefined) {
             setCurrentTab(controlledActiveTabKey)
         }
-      }, [controlledActiveTabKey])
+    }, [controlledActiveTabKey])
 
     const handleTabChange = (key: string): void => {
         setCurrentTab(key)

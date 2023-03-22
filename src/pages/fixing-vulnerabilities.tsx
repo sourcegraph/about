@@ -1,5 +1,7 @@
 import { FunctionComponent } from 'react'
 
+import Link from 'next/link'
+
 import { Layout, HubSpotForm, YouTube } from '../components'
 import { buttonStyle, buttonLocation } from '../data/tracking'
 
@@ -42,16 +44,16 @@ const FixingVulnerabilities: FunctionComponent = () => (
             <h2>Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk.</h2>
 
             <div className="mx-auto mt-8 max-w-[400px]">
-                <a
+                <Link
                     className="btn btn-primary mt-8 block sm:inline-block"
-                    href="https://signup.sourcegraph.com"
+                    href="/get-started?t=enterprise"
                     title="Start for free"
                     data-button-style={buttonStyle.primary}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
                 >
                     Start for free
-                </a>
+                </Link>
             </div>
         </div>
     </Layout>

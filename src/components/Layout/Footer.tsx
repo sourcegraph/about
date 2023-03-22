@@ -9,12 +9,13 @@ import YouTubeIcon from 'mdi-react/YoutubeIcon'
 import Link from 'next/link'
 import { FaDiscord as DiscordIcon } from 'react-icons/fa'
 
-import { Heading } from '..'
+import { Badge, Heading } from '..'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 interface Link {
     name: string
     href: string
+    badgeText?: string
 }
 
 interface LinkWithIcon extends Link {
@@ -30,13 +31,28 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
                 href: '/code-search',
             },
             {
+                name: 'Code Insights',
+                href: '/code-insights',
+            },
+            {
                 name: 'Batch Changes',
                 href: '/batch-changes',
             },
             {
-                name: 'Code Insights',
-                href: '/code-insights',
+                name: 'Cody (AI)',
+                href: '/cody',
+                badgeText: 'New',
             },
+            {
+                name: 'Own',
+                href: '/own',
+                badgeText: 'New',
+            },
+        ],
+    },
+    {
+        name: 'Enterprise',
+        items: [
             {
                 name: 'Cloud',
                 href: '/cloud',
@@ -46,8 +62,12 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
                 href: '/pricing',
             },
             {
-                name: 'Use cases',
-                href: '/use-cases',
+                name: 'Customer stories',
+                href: '/case-studies',
+            },
+            {
+                name: 'Sourcegraph overview (PDF)',
+                href: '/handouts/Sourcegraph-Overview.pdf',
             },
         ],
     },
@@ -59,24 +79,20 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
                 href: '/blog',
             },
             {
-                name: 'Docs',
-                href: 'https://docs.sourcegraph.com',
-            },
-            {
-                name: 'Case studies',
-                href: '/case-studies',
-            },
-            {
                 name: 'Changelog',
                 href: 'https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md',
+            },
+            {
+                name: 'Documentation',
+                href: 'https://docs.sourcegraph.com',
             },
             {
                 name: 'Podcast',
                 href: '/podcast',
             },
             {
-                name: 'Accessibility',
-                href: '/accessibility',
+                name: 'Community',
+                href: '/community',
             },
         ],
     },
@@ -88,7 +104,7 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
                 href: '/about',
             },
             {
-                name: 'Careers',
+                name: "Careers - We're hiring!",
                 href: '/jobs',
             },
             {
@@ -98,10 +114,6 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
             {
                 name: 'Handbook',
                 href: 'https://handbook.sourcegraph.com',
-            },
-            {
-                name: 'Community',
-                href: '/community',
             },
             {
                 name: 'Sourcegraph strategy',
@@ -179,7 +191,7 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
             <div className="mx-auto max-w-screen-xl px-4">
                 {!minimal && (
                     <div className="mb-8 flex flex-col-reverse sm:grid sm:grid-cols-12">
-                        <div className="col-span-12 mt-xl sm:mt-0 sm:mb-sm lg:col-span-5 lg:mb-0">
+                        <div className="col-span-12 mt-xl sm:mt-0 sm:mb-sm lg:col-span-4 lg:mb-0">
                             <Link
                                 href="/"
                                 title="Sourcegraph - Universal code search"
@@ -223,15 +235,15 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
                             </ul>
                         </div>
 
-                        <div className="col-span-12 sm:grid sm:grid-cols-12 lg:col-span-7">
+                        <div className="col-span-12 sm:grid sm:grid-cols-12 lg:col-span-8">
                             {FOOTER_LINK_SECTIONS.map(({ name, items }) => (
-                                <div className="mb-md sm:col-span-4 sm:mb-0" key={name}>
+                                <div className="mb-md sm:col-span-3 sm:mb-0" key={name}>
                                     <Heading size="h5" as="h2" className="mb-xs text-base">
                                         {name}
                                     </Heading>
                                     <ul className="ml-0 list-none">
-                                        {items.map(({ name, href, icon: Icon }) => (
-                                            <li className="mb-xxs" key={name}>
+                                        {items.map(({ name, href, icon: Icon, badgeText }) => (
+                                            <li className="mb-xs max-w-[176px]" key={name}>
                                                 <Link
                                                     href={href}
                                                     title={name}
@@ -241,12 +253,15 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
                                                     className={classNames(
                                                         'font-medium',
                                                         dark
-                                                            ? 'text-gray-300 hover:text-white'
+                                                            ? 'text-gray-100 hover:text-white'
                                                             : 'text-gray-500 hover:text-black'
                                                     )}
                                                 >
                                                     {Icon && <Icon className="mr-1 inline w-[20px] opacity-50" />}
                                                     {name}
+                                                    {badgeText && (
+                                                        <Badge className="ml-4" size="small" text={badgeText} />
+                                                    )}
                                                 </Link>
                                             </li>
                                         ))}
@@ -259,7 +274,14 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
 
                 <div className={classNames('text-sm', { 'py-4': minimal, 'pt-sm pb-2': !minimal })}>
                     <ul className="ml-0 list-none">
-                        <li className="mr-lg text-gray-500 sm:inline">&copy; {year} Sourcegraph, Inc.</li>
+                        <li
+                            className={classNames('mr-lg text-gray-200 sm:inline', {
+                                'text-gray-200': dark,
+                                'text-gray-500': !dark,
+                            })}
+                        >
+                            &copy; {year} Sourcegraph, Inc.
+                        </li>
 
                         {POSTSCRIPT_LINKS.map(({ name, href }) => (
                             <li key={name} className="mt-xxs inline-block sm:mt-0">
@@ -267,7 +289,7 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
                                     key={name}
                                     href={href}
                                     className={classNames('mr-5 p-0', {
-                                        'text-gray-300': dark,
+                                        'text-gray-200': dark,
                                         'text-gray-500': !dark,
                                     })}
                                     title={name}
