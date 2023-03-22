@@ -20,9 +20,9 @@ Read on to discover everything included in Sourcegraph 5.0.
 <Badge link="/cody" text="AI" color="blue" size="small" />
 #### Cody, your code-aware programmer's assistant
 
-Cody is an AI coding assistant that can find, explain, and write code. It reads your codebase and feeds the right context to the LLM to answer questions about your entire codebase, instead of being limited to just a couple files. 
+Cody is an AI coding assistant that can find, explain, and write code. Cody can answer questions about both general programming topics and your specific codebase from right inside your editor. Cody is powered by Sourcegraph Code Intelligence, so unlike other coding assistant, it knows about your codebase and not just about open source code.
 
-Cody can answer questions about both general programming topics and your specific codebase from right inside your editor. We're releasing Cody in private beta for 5.0 with general availability coming in a future release. [Learn more about Cody](https://about.sourcegraph.com/cody) or [join the Cody private beta waitlist.](https://sourcegraph.typeform.com/to/pIXTgwrd)
+We're releasing Cody as experimental 5.0 with general availability coming in a future release. [Learn more about Cody](https://about.sourcegraph.com/cody) or [join the Cody private beta waitlist.](https://sourcegraph.typeform.com/to/pIXTgwrd)
 
 <br/>
 
@@ -117,16 +117,11 @@ These improvements make it easier to enable precise code intelligence on Sourceg
 <br/>
 
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
-#### Keep everyone in the loop with outgoing webhooks for batch changes
+#### Integrate Batch Changes with other tools with outgoing webhooks
 
-Batch Changes enables you to efficiently generate and manage multiple changesets at once. Creating changesets is the first hurdle to get over, but getting those changes merged and keeping stakeholders in the loop is sometimes an even bigger challenge. A key part of this is alerting repository owners about incoming changes in the context of their existing tools and workflows.
-Outgoing webhooks for Batch Changes provide a standardized way to get this information into your other tools with minimal additional work. Site admins can configure outgoing webhooks from admin settings under "Batch Changes" > "Outgoing webhooks."
+Batch Changes allows to apply and track code changes across many repositories and codehosts. In many pipelines, opening and merging changesets requires interacting with other tools: ticketing, custom automation for reviews, etc. Now outgoing webhooks for Batch Changes let you send changeset events out to third party systems.
 
-Available events include:
-
-- When a batch change is applied, closed, or deleted
-- When a changeset is published, updated, or closed
-- When there is an error publishing or updating a changeset
+Site admins can configure outgoing webhooks from admin settings under "Batch Changes" > "Outgoing webhooks." Supported events are listed out in [docs](https://docs.sourcegraph.com/admin/config/webhooks/outgoing#supported-event-types).
 
 <br/>
 <div className="mb-sm">
@@ -141,9 +136,10 @@ Available events include:
 <a href="https://docs.sourcegraph.com/admin/config/webhooks/outgoing" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
-#### Limit access to batch changes to designated users
+#### Limit access to batch changes
 
-While batch changes enable efficient bulk creation of changesets, some customers require tighter controls to meet the security and compliance standards of their industry. To meet these needs, we're introducing a role-based access control (RBAC) system to Sourcegraph to enable more granular controls for who can access batch changes.
+In most companies, Batch Changes can be opened up to all devs: batch changes enforce codehost permissions and only let users open PRs against code they have access to. However, some customers require tighter controls to meet the security and compliance standards of their industry. To meet these needs, we're introducing a role-based access control (RBAC) system to Sourcegraph to enable more granular controls for who can create batch changes.
+
 Site admins can limit access to approved users from admin settings under “Site admin” > “Users & auth” > “Roles” by:
 
 - Creating custom user roles with Batch Changes permissions
