@@ -265,6 +265,10 @@
     .sg-pending-roadmap-fade-bottom {
         border-image: linear-gradient(to top, #08090a00, theme(colors.violet.400) 100%, theme(colors.violet.400)) 1;
     }
+  
+    .sg-bg-gradient-cody {
+        background: radial-gradient(109.27% 56.82% at 93.02% 27.51%, #6112A3 0.41%, #270741 54.04%, #1E0632 94.78%);
+    }
 }
 
 /**
