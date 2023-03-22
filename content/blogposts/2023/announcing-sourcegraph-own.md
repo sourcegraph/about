@@ -32,7 +32,7 @@ But who owns this code? Who should I be reaching out to? There’s no easy answe
 
 This is where Sourcgregraph Own comes in! Add `select:file.owners()`, and you can get the list of all the owners in scope of this search query in one second. Even better, you can export this to a spreadsheet to, say, email all the owners or send this to a tracking system. Spoiler: we’re working on sending an email or raising a ticket to all owners in one click.
 
-<video playsinline mute loop autoplay title="An example of looking at ownership data in Sourcegraph">
+<video playsinline autoplay muted loop title="An example of looking at ownership data in Sourcegraph">
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-own.mp4" />
 </video>
 <br/>
