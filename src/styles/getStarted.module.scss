@@ -1,0 +1,14 @@
+.container :global(.actions) {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+
+.container :global(.hs-button) {
+    background: var(--sg-color-violet-400) !important;
+    border-color: var(--sg-color-violet-400) !important;
+}
+
+.container :global(.hs-button:hover) {
+    background: var(--sg-color-violet-500) !important;
+}

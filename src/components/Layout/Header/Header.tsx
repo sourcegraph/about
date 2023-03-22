@@ -10,7 +10,6 @@ import { EXP_GET_STARTED } from '../../../data/experiments'
 import { buttonLocation } from '../../../data/tracking'
 import { Banner } from '../../Banner'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
-import { TrySourcegraphForFreeButton } from '../../cta/TrySourcegraphForFreeButton'
 import { GetStartedLinkButton } from '../../GetStartedButton'
 
 import { NavItems } from './NavItems'
@@ -127,15 +126,26 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
         <>
             <MeetWithProductExpertButton
                 buttonLocation={buttonLocation.nav}
-                buttonClassName={classNames('!font-normal', dark ? 'btn-outline-white' : 'btn-link')}
+                buttonClassName={classNames(
+                    '!font-semibold',
+                    dark ? 'btn-outline-white text-white hover:text-violet-300' : 'btn-link',
+                    'border-0'
+                )}
                 requestInfo={true}
             />
             {EXP_GET_STARTED ? (
                 <GetStartedLinkButton buttonLocation={buttonLocation.nav} dark={dark} />
             ) : (
-                <TrySourcegraphForFreeButton buttonLocation={buttonLocation.nav} dark={dark}>
-                    Start for free
-                </TrySourcegraphForFreeButton>
+                <Link
+                    href="/get-started"
+                    className={classNames(
+                        'btn min-w-fit px-6 font-normal',
+                        dark ? 'btn-inverted-primary' : 'btn-primary'
+                    )}
+                    title="Download Sourcegraph"
+                >
+                    Download Sourcegraph
+                </Link>
             )}
         </>
     )

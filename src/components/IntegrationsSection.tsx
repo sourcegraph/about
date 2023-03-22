@@ -72,7 +72,7 @@ const selfHostedOptions: string[] = [
 
 const renderListItems = (items: string[]): ReactNode =>
     items.map((item: string) => (
-        <li key={item} className="list-inline-item my-2 mr-2">
+        <li key={item} className="list-inline-item">
             <Badge text={item} size="small" breakWords={true} />
         </li>
     ))
@@ -87,11 +87,11 @@ export const IntegrationsSection: FunctionComponent = () => (
                     All your repositories + 2M open source (and counting)
                 </Heading>
 
-                <ul className="ml-0 mb-xxs flex list-none flex-wrap lg:max-w-lg">{renderListItems(codeHosts)}</ul>
+                <ul className="ml-0 mb-xxs flex list-none flex-wrap lg:max-w-lg gap-2">{renderListItems(codeHosts)}</ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     title="Have a repository not covered here?"
-                    className="font-normal"
+                    className="font-normal underline text-violet-500 text-lg"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
@@ -105,11 +105,11 @@ export const IntegrationsSection: FunctionComponent = () => (
                     All your languages
                 </Heading>
 
-                <ul className="ml-0 mb-xxs flex list-none flex-wrap lg:max-w-xl">{renderListItems(languages)}</ul>
+                <ul className="ml-0 mb-xxs flex list-none flex-wrap lg:max-w-xl gap-2">{renderListItems(languages)}</ul>
                 <a
                     href="mailto:feedback@sourcegraph.com"
                     title="Need a different language?"
-                    className="font-normal"
+                    className="font-normal underline text-violet-500 text-lg"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
@@ -123,11 +123,11 @@ export const IntegrationsSection: FunctionComponent = () => (
                     Your most used tools
                 </Heading>
 
-                <ul className="ml-0 mb-xxs flex list-none flex-wrap lg:max-w-md">{renderListItems(tools)}</ul>
+                <ul className="ml-0 mb-xxs flex list-none flex-wrap lg:max-w-md gap-2">{renderListItems(tools)}</ul>
                 <a
                     href="https://docs.sourcegraph.com/integration"
                     title="See all integrations"
-                    className="font-normal"
+                    className="font-normal underline text-violet-500 text-lg"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
@@ -146,7 +146,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                         <Heading size="h5" as="h4" className="mt-xs text-lg !font-normal">
                             Cloud:
                         </Heading>
-                        <ul className="m-0 flex list-none flex-wrap">
+                        <ul className="m-0 flex list-none flex-wrap gap-2">
                             {renderListItems(['Single-tenant Sourcegraph Cloud instance'])}
                         </ul>
                     </li>
@@ -155,7 +155,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                         <Heading size="h5" as="h4" className="mt-xxs text-lg !font-normal">
                             Self-hosted by you:
                         </Heading>
-                        <ul className="m-0 flex list-none flex-wrap lg:max-w-sm">
+                        <ul className="m-0 flex list-none flex-wrap lg:max-w-sm gap-2">
                             {renderListItems(selfHostedOptions)}
                         </ul>
                     </li>
@@ -163,7 +163,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                 <a
                     href="https://docs.sourcegraph.com/admin/install"
                     title="Learn about deploying Sourcegraph"
-                    className="font-normal"
+                    className="font-normal underline text-violet-500 text-lg"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"

@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { Layout, GatedResourceLayout, ContentSection, Hero } from '../../components'
@@ -92,16 +93,16 @@ const Webinar: FunctionComponent = () => {
                 learnMoreCTA={
                     <ContentSection className="flex flex-col items-center">
                         <h1 className="text-center">Want to learn more about Code Insights?</h1>
-                        <a
+                        <Link
                             className="btn btn-primary mt-6"
-                            href="https://signup.sourcegraph.com"
+                            href="/get-started?t=enterprise"
                             title="Start for free"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.body}
                             data-button-type="cta"
                         >
                             Start for free
-                        </a>
+                        </Link>
                     </ContentSection>
                 }
             />
