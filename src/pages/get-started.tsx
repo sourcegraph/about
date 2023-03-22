@@ -10,6 +10,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { Badge, ContentSection, Heading, HubSpotForm, Layout, Tabs } from '../components'
+import { DownloadLink } from '../components/DownloadLink'
 
 import styles from '../styles/getStarted.module.scss'
 
@@ -174,13 +175,14 @@ const InterstitialAppContent: FunctionComponent = () => (
                 <Heading size="h4">macOS</Heading>
             </div>
 
-            <Link
+            <DownloadLink
                 href="https://sourcegraph.com/search"
                 className="btn btn-primary mt-6 w-fit px-4 font-normal"
                 title="Download for mac"
+                downloadName="app-download-mac-dmg"
             >
                 Download for mac
-            </Link>
+            </DownloadLink>
 
             <p className="mb-0 mt-2.5 flex text-gray-500">
                 MacOS 13+ required.
@@ -202,20 +204,22 @@ const InterstitialAppContent: FunctionComponent = () => (
             </div>
 
             <div className="mt-4 flex flex-row gap-x-4">
-                <Link
+                <DownloadLink
                     href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+205301.ca3646/sourcegraph_2023.03.23+205301.ca3646_linux_amd64.deb"
                     className="btn btn-primary w-fit px-4 font-normal"
                     title="Download .deb"
+                    downloadName="app-download-linux-deb"
                 >
                     Download .deb
-                </Link>
-                <Link
+                </DownloadLink>
+                <DownloadLink
                     href="https://sourcegraph.com/search"
                     className="btn btn-primary w-fit px-4 font-normal"
                     title="Download .zip"
+                    downloadName="app-download-linux-zip"
                 >
                     Download .zip
-                </Link>
+                </DownloadLink>
             </div>
 
             <div className="mt-4 flex flex-row gap-x-2">

@@ -7,6 +7,7 @@ import Link from 'next/link'
 
 import { ContentSection, Layout, IntegrationsSection, CustomerLogos, Heading, Badge } from '../components'
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
+import { DownloadLink } from '../components/DownloadLink'
 import { buttonLocation } from '../data/tracking'
 
 interface TestimonyProps {
@@ -16,7 +17,7 @@ interface TestimonyProps {
     github: string
 }
 
-interface DownloadLinkProps {
+interface AppDownloadLinksProps {
     className?: string
 }
 
@@ -207,7 +208,7 @@ const Home: FunctionComponent = () => (
                         Download Sourcegraph
                     </Heading>
                     <p className="mb-8 text-gray-200">For individual developers</p>
-                    <DownloadLink />
+                    <AppDownloadLinks />
                 </div>
             </div>
             <div className="my-[42px] border-b border-gray-400 md:my-0 md:mx-[42px] md:h-[266px] md:border-l" />
@@ -261,23 +262,24 @@ const HomeHero: FunctionComponent = () => (
                 </Link>
                 .
             </p>
-            <DownloadLink className="flex flex-col items-center md:items-start" />
+            <AppDownloadLinks className="flex flex-col items-center md:items-start" />
         </div>
 
         <div className="mt-[70px] w-full rounded-tl-[10px] bg-[url('/home/banner.png')] bg-cover bg-no-repeat ml-sm md:mt-0 h-[362px] md:h-[543px] md:w-[758px] md:rounded-t-[10px]" />
     </ContentSection>
 )
 
-const DownloadLink: FunctionComponent<DownloadLinkProps> = ({ className }) => (
+const AppDownloadLinks: FunctionComponent<AppDownloadLinksProps> = ({ className }) => (
     <div className={className}>
-        <Link
+        <DownloadLink
             href="https://sourcegraph.com/search"
             className="btn btn-inverted-primary w-fit px-4 font-normal"
             title="Download for mac"
+            downloadName="app-download-mac-dmg"
         >
             Download for mac
             <Badge className="ml-2" size="small" text="Beta" color="blurple" />
-        </Link>
+        </DownloadLink>
         <div className="mt-3 flex flex-row">
             <Link
                 href="/get-started"
