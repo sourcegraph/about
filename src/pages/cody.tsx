@@ -23,7 +23,7 @@ const CodyPage: FunctionComponent = () => (
                     <Heading size="h6" className="text-white">
                         CODY
                     </Heading>
-                    <Badge size="small" text="Private beta" color="dark-blue" />
+                    <Badge size="small" text="Experimental" color="dark-blue" />
                 </div>
                 <Heading size="h1" className="mt-2 text-white">
                     Read, write, and understand code 10x faster with AI
@@ -62,7 +62,7 @@ const CodyPage: FunctionComponent = () => (
         >
             <div className="max-w-[529px]">
                 <Heading size="h2" className="!text-4xl text-white">
-                    Cody is now in private beta
+                    Cody is now experimental
                 </Heading>
                 <p className="mt-6 text-lg text-gray-200">
                     Cody works with Sourcegraph’s precise code intelligence and code search to provide even better
@@ -79,7 +79,7 @@ const CodyPage: FunctionComponent = () => (
                     className="btn mt-8 bg-transparent pl-0 text-white"
                     target="_blank"
                 >
-                    Join private beta waitlist
+                    Join the waitlist
                     <ChevronRightIcon className="mb-1 !mb-0 ml-[10px] inline" />
                 </Link>
             </div>
