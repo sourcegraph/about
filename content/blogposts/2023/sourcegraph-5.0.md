@@ -104,7 +104,6 @@ Previously, Sourcegraph ordered search results in a simple way that could make i
 - Search now incorporates a "file importance" score to help boost high quality, commonly-used files. This score is based on the code dependency graph, and is only available when precise code intelligence is enabled.
 
 These improvements are being released together as a limited beta, and will be rolled out to more users over the coming months.
-<br/>
 
 <a href="" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
@@ -127,11 +126,10 @@ Available events include:
     alt="Outgoing webhooks configuration"
     catpion="Outgoing webhooks configuration"
   />
-</div><br/>
+</div>
 
 <br/>
 <a href="https://docs.sourcegraph.com/admin/config/webhooks/outgoing" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
-<br />
 
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 #### Limit access to batch changes to designated users
@@ -149,12 +147,13 @@ While the RBAC system is limited to batch changes for now, the system will soon 
 <br/>
 <Video 
   source={{
-    mp4: 'docs/images/administration/access_control/assign_roles_to_user_light.mp4'
+    webm: 'blog/5.0/batch-changes-rbac',
+    mp4: 'blog/5.0/batch-changes-rbac'
   }}
   loop={true}
   title="RBAC for Batch Changes"
 />
-<br/><br/>
+<br/>
 
 <a href="https://docs.sourcegraph.com/admin/access_control" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
