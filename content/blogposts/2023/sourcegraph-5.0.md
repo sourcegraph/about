@@ -12,7 +12,7 @@ changelogItems:
 
 Sourcegraph 5.0 includes more than 20 updates and new features. 5.0 continues to build on Sourcegraph as a code intellingence platform while also improving the speed and scale of Sourcegraph's core features.
 
-In addition to the new features including in 5.0, we are also releasing [the Sourcegraph app](about.sourcegraph.com/app). The app is a super-fast, lightweight version of Sourcegraph that can be downloaded and installed locally in minutes. It's the best way for new users to get started with Sourcegraph's free tier and run it on their local machine alongside their IDE.
+In addition to the new features included in 5.0, we are also releasing [the Sourcegraph app](https://about.sourcegraph.com/app). The app is a fast, lightweight version of Sourcegraph that can be downloaded and installed locally in minutes. It's the best way for new users to get started with Sourcegraph's free tier and run it on their local machine alongside their IDE.
 
 Read on to discover everything included in Sourcegraph 5.0.
 <br/>
@@ -24,26 +24,36 @@ Sourcegraph Own manages code ownership for your entire codebase across every rep
 
 We are launching a preview of Sourcegraph Own as an experimental feature and will iterate over the coming months to deliver our full roadmap vision to every customer. [Read more in the full announcement for Sourcegraph Own](about.sourcegraph.com/blog/inroducing-sourcegraph-own).
 
-<a href="" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
+<Video 
+  source={{
+    webm: 'blog/announcing-own',
+    mp4: 'blog/announcing-own'
+  }}
+  loop={true}
+  title="An example of looking at ownership data in Sourcegraph"
+/>
+
+<a href="https://docs.sourcegraph.com/own" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br/>
 
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 #### Improved code exploration experience
 
-5.0 includes a number of improvements to the code exploration experience.For the March Starship we’ve made a bunch of exciting code exploration experience improvements.
+In 5.0, we’re introducing a number of exciting code exploration experience improvements.
 
-First and foremost, we've shipped the CodeMirror editor as the default blob viewer. This new editor is much more efficient with large files, making it easier and faster than ever to explore code. It also has great extensibility potential enabling us to bring more IDE-like code exploration features in future.
+First and foremost, we've shipped the CodeMirror editor as the default blob viewer. This new editor is much more efficient with large files, making it easier and faster than ever to explore code. It also has great extensibility potential, enabling us to ship more IDE-like code exploration features in future.
 
-We've also enhanced the blob view by adding the keyboard navigation. This means users can move around the codebase quickly and efficiently, without ever having to take your hands off the keyboard. We’ve also added keyboard shortcuts for switching between the code editor, files, and symbols trees (behind the feature flag for now).
+We've also enhanced the blob view by adding keyboard navigation. This means you can move around yiour codebase quickly and efficiently without ever having to take your hands off the keyboard. We’ve also added keyboard shortcuts for switching between the code editor, files, and symbols trees (this is behind the feature flag for now).
 
-We're shipping new accessible files and symbols trees with drastically improved accessibility and slick browsing experience.
+We're also shipping file and symbols trees with drastically improved accessibility and a slick browsing experience.
 
-We've also made a number of improvements to the repo and directory pages. For example, we're now rendering the README file if there is one in the directory, so you can get a quick overview of what's inside. We've also added a linear file browser, which shows diff stats over the past month, so you can quickly see what's changed recently. And, we're now showing recent commits and contributors, so you can get a sense of who's been working on the codebase.
+Plus, we've made a number of improvements to the repo and directory pages. We're now rendering the README file in the directory so you can get a quick overview of what's inside. We've also added a linear file browser, which shows diff stats over the past month, so you can quickly see what's changed recently. And, we're now showing recent commits and contributors, so you can get a sense of who's been working on the codebase.
 
-Finally, we've made some improvements to the git blame decorations. We've improved the design, and now show the file in the previous revision. And where possible, we're linking to GitHub issues and pull requests, so you can quickly jump to relevant discussions.
+Finally, we've made some improvements to the git blame decorations. We've improved the design and now show the file in the previous revision. Where possible, we're linking to GitHub issues and pull requests, so you can quickly jump to relevant discussions.
 
 All of these improvements add up to a more streamlined, efficient, and powerful code exploration experience. We're excited to see how they'll help our users better understand and work with the codebase!
 
+<br/>
 <Video
   source={{
     webm: 'blog/keyboard-nav',
@@ -55,10 +65,11 @@ All of these improvements add up to a more streamlined, efficient, and powerful 
 <br/>
 
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
-#### A comnpletely re-imagined search input
+#### A completely re-imagined search input
 
 The search input has been redesigned to greatly improve usability. New contextual suggestions help users learn the Sourcegraph query language as they search. These powerful suggestions react to the user’s current query to suggest related filters. How suggestions are displayed has been unified across contexts and filters, and the history mode has been integrated directly in input. Lastly, improved and expanded keyboard shortcuts also make navigation much easier.
 
+<br/>
 <div className="mb-sm">
   <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/5.0/reimagined-search-input.png"
@@ -84,11 +95,24 @@ These improvements make it easier to enable precise code intelligence on Sourceg
 
 <br/>
 
+<Badge link="/code-search" text="Code Search" color="cerise" size="small" />
+#### Intelligent search ranking
+
+Previously, Sourcegraph ordered search results in a simple way that could make it hard to find the most relevant files. In version 4.6, we're releasing two significant improvements to search ranking:
+
+- Search results are no longer grouped by repository. Instead, we return the most relevant files first. This helps prevent users from requiring workarounds to find what they’re looking for, for example updating the search to exclude certain repositories.
+- Search now incorporates a "file importance" score to help boost high quality, commonly-used files. This score is based on the code dependency graph, and is only available when precise code intelligence is enabled.
+
+These improvements are being released together as a limited beta, and will be rolled out to more users over the coming months.
+<br/>
+
+<a href="" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
+
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 #### Keep everyone in the loop with outgoing webhooks for batch changes
 
 Batch Changes enables you to efficiently generate and manage multiple changesets at once. Creating changesets is the first hurdle to get over, but getting those changes merged and keeping stakeholders in the loop is sometimes an even bigger challenge. A key part of this is alerting repository owners about incoming changes in the context of their existing tools and workflows.
-Outgoing webhooks for Batch Changes provide a standardized way to get this information into your other tools with minimal additional work. Site admins can configure outgoing webhooks from admin settings under "Batch Changes" > "Outgoing webhooks".
+Outgoing webhooks for Batch Changes provide a standardized way to get this information into your other tools with minimal additional work. Site admins can configure outgoing webhooks from admin settings under "Batch Changes" > "Outgoing webhooks."
 
 Available events include:
 
@@ -96,6 +120,7 @@ Available events include:
 - When a changeset is published, updated, or closed
 - When there is an error publishing or updating a changeset
 
+<br/>
 <a href="https://docs.sourcegraph.com/admin/config/webhooks/outgoing" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
 
@@ -108,6 +133,7 @@ Site admins can limit access to approved users from admin settings under “Site
 - Creating custom user roles with Batch Changes permissions
 - Revoking default role permissions
 - Assigning designated users to Batch Changes-enabled roles
+<br/>
 
 While the RBAC system is limited to batch changes for now, the system will soon be expanded to cover additional areas of Sourcegraph as well.
 
@@ -117,7 +143,7 @@ While the RBAC system is limited to batch changes for now, the system will soon 
 <Badge text="Code Insights" link="/code-insights" color="green" size="small" />
 #### Improved Code Insights support for instances with a large number of repositories
 
-Code Insights provides precise answers about the trends and composition of your codebase, tranforming it into a queryable database.  Previously, users had to create insights over either a few named repositories or all of their repositories, and running insights over all repositories could often take an impractical amount of time to process. Now, with the new repository selection, users can target their insights to the exact scope of repositories that is relevant to them. Additionally, administrators can now monitor the processing of insights and, when necessary, reprioritize or retry them from within the site admin section.
+Code insights provide precise answers about the trends and composition of your codebase, tranforming it into a queryable database.  Previously, users had to create insights over either a few named repositories or all of their repositories, and running insights over all repositories could often take an impractical amount of time to process. Now, with the new repository selection, users can target their insights to the exact scope of repositories that is relevant to them. Additionally, administrators can now monitor the processing of insights and, when necessary, reprioritize or retry them from within the site admin section.
 
 <a href="https://docs.sourcegraph.com/code_insights" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
@@ -125,7 +151,7 @@ Code Insights provides precise answers about the trends and composition of your 
 <Badge link="https://docs.sourcegraph.com/admin/external_service" text="Code Hosts" color="violet" size="small" />
 #### Impoved Gerrit support with user permissions
 
-Gerrit connections now have their own dedicated code host connection option, as opposed to the “Generic Git Host” connection that had to be used before. Along with this, Gerrit connections can now also enable authorization, which will mark all repositories from that connection as private and require users to authenticate using Gerrit credentials and verify that they have permission to view that repository on Gerrit if they want to be able to view it on Sourcegraph.
+Gerrit connections now have their own dedicated code host connection option as opposed to the “Generic Git Host” connection that had to be used before. Along with this, Gerrit connections can now also enable authorization, which will mark all repositories from that connection as private and require users to authenticate using Gerrit credentials and verify that they have permission to view that repository on Gerrit if they want to be able to view it on Sourcegraph.
 
 <a href="https://docs.sourcegraph.com/admin/external_service/gerrit" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
@@ -133,7 +159,7 @@ Gerrit connections now have their own dedicated code host connection option, as 
 <Badge link="https://docs.sourcegraph.com/admin/external_service" text="Code Hosts" color="violet" size="small" />
 #### Improved support for the Azure DevOps code host
 
-Sourcegraph customers will now be able to bring their Azure DevOps repositories into their Sourcegraph instance. Sourcegraph will sync specified repositories from the customers’ Azure DevOps organizations or projects, and Sourcegraph will also respect and enforce permissions from Azure DevOps, ensuring that only users with access rights to repositories are allowed to access them. Batch Changes will now also support Azure DevOps code hosts and repositories.
+Sourcegraph customers will now be able to bring their Azure DevOps repositories into their Sourcegraph instance. Sourcegraph will sync specified repositories from the customers’ Azure DevOps organizations or projects also respect and enforce permissions from Azure DevOps, ensuring that only users with access rights to repositories are allowed to access them. Batch Changes will now also support Azure DevOps code hosts and repositories.
 
 <a href="https://docs.sourcegraph.com/admin/external_service/azuredevops" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
@@ -143,7 +169,7 @@ Sourcegraph customers will now be able to bring their Azure DevOps repositories 
 
 We've made changes to how we handle GitHub and GitLab rate limits. Previously, all GitHub requests would be limited to 5,000 requests per hour (i.e. even if there were 1,000 users on the instance, the total number of requests would not exceed 5,000/hour).
 
-Now, instead, we use feedback that we get from the code host with every request to do rate limiting, and each individual user has their own rate limit. This greatly speeds up our permissions syncing process. Customers might see an increase in the number of requests to the code host, but these will not exceed the code host's own imposed rate limits.
+Now we use feedback from the code host to do rate limiting, and each individual user has their own rate limit. This greatly speeds up our permissions syncing process. Customers might see an increase in the number of requests to the code host, but these will not exceed the code host's own imposed rate limits.
 
 This does not override the custom rate limit that customers can configure in the site config. If that custom rate limit is slower than that of GitHub, it will take precedence.
 
@@ -173,10 +199,11 @@ Our new account requests feature allows unauthenticated users to request an acco
   - If SMTP is configured, an email with a reset password link is sent to the user.
   - If SMTP is not configured, administrators must manually send a reset password link to the user from the “Users & auth / Account requests” admin page.
 - Administrators can also choose to reject a request. In this case, all new account requests from a previously rejected email will be ignored.
+<br/>
 
 A new analytics data point has been added to the “Analytics / Users” page indicating the number of account requests made during a given period of time. This data can help administrators understand how many people are interested in accessing their instance.
 
-This feature is experimental and enabled by default. However, it can be explicitly disabled by setting `accessRequests.enabled: false` in site configuration experimental features settings.
+This feature is experimental and enabled by default. However, it can be explicitly disabled by adding `accessRequests.enabled: false` to the site configuration experimental features settings.
 <br />
 
 <Badge link="" text="Admin" color="violet" size="small" />
@@ -184,7 +211,7 @@ This feature is experimental and enabled by default. However, it can be explicit
 
 Sourcegraph now supports the [SCIM protocol](https://www.simplecloud.info/), an open industry standard for automating user provisioning and deprovisioning.
 
-SCIM (System for Cross-domain Identity Management) allows userescustomers to connect their identity provider (like [Okta](https://developer.okta.com/docs/concepts/scim/) or [Azure AD](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/sync-scim)) to Sourcegraph and automatically sync user accounts. When a new employee is onboarded, their Sourcegraph account is automatically created. When they leave the organization, their access is promptly revoked.
+SCIM (System for Cross-domain Identity Management) allows users to connect their identity provider (like [Okta](https://developer.okta.com/docs/concepts/scim/) or [Azure AD](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/sync-scim)) to Sourcegraph and automatically sync user accounts. When a new employee is onboarded, their Sourcegraph account is automatically created. When they leave the organization, their access is promptly revoked.
 
 Before SCIM support, IT admins had to manually create and delete Sourcegraph user accounts. Now they can automate these tedious, error-prone tasks, meeting compliance requirements and reducing the risk of outdated user accounts.
 
@@ -194,15 +221,3 @@ With SCIM, you can eliminate the ghost accounts and compliance headaches. [Learn
 
 <a href="https://docs.sourcegraph.com/admin/scim" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
-
-<Badge link="/code-search" text="Code Search" color="cerise" size="small" />
-#### Intelligent search ranking
-
-Previously, Sourcegraph ordered search results in a simple way that could make it hard to find the most relevant files. In version 4.6, we're releasing two significant improvements to search ranking:
-
-- Search results are no longer grouped by repository. Instead, we return the most relevant files first. This helps prevent users from requiring workarounds to find what they’re looking for, for example updating the search to exclude certain repositories.
-- Search now incorporates a "file importance" score to help boost high quality, commonly-used files. This score is based on the code dependency graph, and is only available when precise code intelligence is enabled.
-
-These improvements are being released together as a limited beta, and will be rolled out to more users over the coming months.
-
-<a href="" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
