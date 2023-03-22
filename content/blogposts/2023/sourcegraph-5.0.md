@@ -138,8 +138,6 @@ Sourcegraph customers will now be able to bring their Azure DevOps repositories 
 <a href="https://docs.sourcegraph.com/admin/external_service/azuredevops" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
 
-<Badge>
-
 <Badge link="https://docs.sourcegraph.com/admin/external_service" text="Code Hosts" color="violet" size="small" />
 #### Improved rate limiting for GitHub and GitLab
 
@@ -179,7 +177,6 @@ Our new account requests feature allows unauthenticated users to request an acco
 A new analytics data point has been added to the “Analytics / Users” page indicating the number of account requests made during a given period of time. This data can help administrators understand how many people are interested in accessing their instance.
 
 This feature is experimental and enabled by default. However, it can be explicitly disabled by setting `accessRequests.enabled: false` in site configuration experimental features settings.
-
 <br />
 
 <Badge link="" text="Admin" color="violet" size="small" />
