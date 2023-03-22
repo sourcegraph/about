@@ -109,6 +109,7 @@ In the 5.0 release, we've redesigned the auto-indexing configuration pages to be
 
 - Repository code intelligence coverage dashboard: See the coverage status for a specific repository, including which files/directories are indexed and which are pending indexing. Easily trigger re-indexing of specific paths or the entire repository.
 - Instance code intelligence coverage dashboard (for site administrators): Get an overview of indexing coverage across all repositories in the instance. See repositories with low coverage and trigger indexing jobs to improve coverage.
+<br/>
 
 Additionally, we've added more "code intelligence health" indicators to the Sourcegraph UI so users can quickly see if their code intelligence is up-to-date or if there are any issues they can address.
 
