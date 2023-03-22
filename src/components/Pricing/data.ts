@@ -78,7 +78,7 @@ export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['multiNode'],
     },
     {
-        topic: '24/5 priority support',
+        topic: '24/5 enhanced support',
         features: ['slaSupport', 'technicalAdvisor', 'premiumServices'],
     },
 ]
@@ -149,7 +149,7 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
             },
             {
                 label: 'selfHosts',
-                enterpriseStarter: false,
+                enterpriseStarter: true,
                 enterprise: true,
             },
             {
@@ -230,12 +230,12 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
             {
                 label: 'technicalAdvisor',
                 enterpriseStarter: 'Available',
-                enterprise: true,
+                enterprise: 'With >100k+ spend',
             },
             {
                 label: 'supportSla',
                 enterpriseStarter: 'Standard',
-                enterprise: 'Priority',
+                enterprise: 'Enhanced',
             },
         ],
     },
@@ -250,7 +250,7 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
             {
                 label: 'selfDeployment',
                 enterpriseStarter: 'Single-node',
-                enterprise: true,
+                enterprise: 'Single or Multi-node',
             },
             {
                 label: 'airGappedDeploy',
@@ -375,7 +375,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     // Code host integrations
     cloudHosts: {
         label: 'Unlimited standard cloud code hosts',
-        description: 'Integrate with GitHub.com, GitLab.com, and Bitbucket Cloud.',
+        description: 'Integrate with GitHub Cloud / Enterprise Server, GitLab.com / Self-managed, BitBucket Cloud / Server and Perforce',
     },
     unlimitedCodeHosts: {
         label: 'Unlimited code hosts',
@@ -430,11 +430,11 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
 
     // Support
     slaSupport: {
-        label: 'Priority support SLAs',
+        label: 'Enhanced support SLAs',
         description: 'Priority ticket handling and guaranteed initial response SLA from a dedicated team.',
     },
     technicalAdvisor: {
-        label: 'Technical Advisor (with > $100k spend)',
+        label: 'Technical Advisor (with >$100k+ spend)',
         description:
             'Specialized technical experts to lead training & enablement, strategy, and overall account health.',
     },
@@ -463,7 +463,7 @@ export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
             'Integrate with GitHub Enterprise Server, GitLab self-managed, Bitbucket Server/Data Center, and Perforce.',
     },
     enterpriseHosts: {
-        label: 'All Git-based code hosts',
+        label: 'All other code hosts',
         description: 'Integrate with any Git-based code host via src serve-git.',
     },
     privateHosts: {

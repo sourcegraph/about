@@ -159,9 +159,6 @@ const PricingPage: FunctionComponent = () => {
                         price="Starts at $50k/year"
                         priceDetail="Scales with your team"
                         buttons={<EnterpriseButtons />}
-                        beforeFeatures={
-                            <div className="mb-sm text-xl font-semibold">Everything in Enterprise Starter, plus:</div>
-                        }
                         features={ENTERPRISE_FEATURES_OVERVIEW}
                         {...PLAN_COLORS.enterprise}
                     />
