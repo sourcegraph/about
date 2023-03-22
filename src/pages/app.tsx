@@ -32,40 +32,30 @@ const DownloadLink: React.FunctionComponent<DownloadLinkProps> = props => {
 const AppPage: FunctionComponent = () => {
     const threeUpTextItems = [
         {
-            icon: (
-                <SourceBranchIcon
-                    className="mb-6 rounded bg-violet-200 p-2 text-violet-400 mx-0"
-                    size={35}
-                />
-            ),
-            subtitle: <span className="flex !text-4xl text-white text-left">Connected</span>,
+            icon: <SourceBranchIcon className="mx-0 mb-6 rounded bg-violet-200 p-2 text-violet-400" size={35} />,
+            subtitle: <span className="flex text-left !text-4xl text-white">Connected</span>,
             description: (
-                <p className="text-lg text-left text-gray-200">
+                <p className="text-left text-lg text-gray-200">
                     Search all your code, all in one place. Connect to your local and remote Git-based repositories, so
                     you don't have to jump between your IDE and code host for search.
                 </p>
             ),
         },
         {
-            icon: (
-                <RocketLaunchIcon
-                    className="mb-6 rounded bg-violet-200 p-2 text-violet-400 mx-0"
-                    size={35}
-                />
-            ),
-            subtitle: <span className="flex !text-4xl text-white text-left">Fast</span>,
+            icon: <RocketLaunchIcon className="mx-0 mb-6 rounded bg-violet-200 p-2 text-violet-400" size={35} />,
+            subtitle: <span className="flex text-left !text-4xl text-white">Fast</span>,
             description: (
-                <p className="text-lg text-left text-gray-200">
+                <p className="text-left text-lg text-gray-200">
                     Navigate thousands of repositories in seconds. Find code while staying in flow, so you can focus
                     less on finding things and more on writing code.
                 </p>
             ),
         },
         {
-            icon: <SendIcon className="mb-6 rounded bg-violet-200 p-2 text-violet-400 mx-0" size={35} />,
-            subtitle: <span className="flex !text-4xl text-white text-left">Lightweight</span>,
+            icon: <SendIcon className="mx-0 mb-6 rounded bg-violet-200 p-2 text-violet-400" size={35} />,
+            subtitle: <span className="flex text-left !text-4xl text-white">Lightweight</span>,
             description: (
-                <p className="text-lg text-left text-gray-200">
+                <p className="text-left text-lg text-gray-200">
                     Install in minutes. The app is a lightweight, single-binary version of Sourcegraph tailored for
                     developers to use on their local machine.
                 </p>
@@ -79,7 +69,7 @@ const AppPage: FunctionComponent = () => {
                 title: 'Find, fix, and flow in minutes',
                 description:
                     'The app is a lightweight, single-binary version of Sourcegraph, designed for developers to experience the power of Sourcegraph for free on their local machine.',
-                image: '/app/app-og.png'
+                image: '/app/app-og.png',
             }}
             headerColorTheme="purple"
             childrenClassName="sg-bg-gradient-app-large text-white px-sm"
@@ -102,7 +92,9 @@ const AppPage: FunctionComponent = () => {
                     experience the power of Sourcegraph for free on their local machine.
                 </p>
 
-                <PlatformsInstallSnippet />
+                <div className="mt-10">
+                    <DownloadSection />
+                </div>
             </div>
 
             <ThreeUpText items={threeUpTextItems} className="mx-auto mt-20 mb-28 max-w-screen-xl md:px-sm" />
@@ -110,9 +102,9 @@ const AppPage: FunctionComponent = () => {
             <div className="mb-8 flex flex-col items-center text-center">
                 <Heading size="h2">Run Sourcegraph for free across all your code</Heading>
                 <p className="my-8 max-w-screen-md text-lg text-gray-200">
-                    The app is the easiest way to run Sourcegraph on your local machine for free, complete with code search
-                    and navigation to complement your IDE and local environment. Sync to your GitHub or GitLab account
-                    to search and navigate all your code — local and remote — from a single, unified interface.
+                    The app is the easiest way to run Sourcegraph on your local machine for free, complete with code
+                    search and navigation to complement your IDE and local environment. Sync to your GitHub or GitLab
+                    account to search and navigate all your code — local and remote — from a single, unified interface.
                 </p>
 
                 <DemoVideo
@@ -136,10 +128,9 @@ const AppPage: FunctionComponent = () => {
                 <p className="mb-0 text-lg font-normal text-gray-200">
                     Experience the power of Sourcegraph for free on your local machine.
                 </p>
-
-                <Link href="#install-script" className="btn btn-inverted-primary" title="Download the app">
-                    Download the app
-                </Link>
+                <div className="mt-8">
+                    <DownloadSection />
+                </div>
             </div>
         </Layout>
     )
@@ -192,7 +183,13 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                                         className="-ml-2.5"
                                     />
                                 </li>
-                                <li className="ml-2.5 text-sm leading-7">Run <code className="bg-gray-200 rounded-md p-1 text-xs text-gray-700">sourcegraph</code> in your local directory.</li>
+                                <li className="ml-2.5 text-sm leading-7">
+                                    Run{' '}
+                                    <code className="rounded-md bg-gray-200 p-1 text-xs text-gray-700">
+                                        sourcegraph
+                                    </code>{' '}
+                                    in your local directory.
+                                </li>
                                 <li className="ml-2.5 text-sm leading-7">
                                     The app will detect code in the directory you run it in.
                                 </li>
@@ -233,7 +230,13 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                                         className="-ml-2.5"
                                     />
                                 </li>
-                                <li className="ml-2.5 text-sm leading-7">Run <code className="bg-gray-200 rounded-md p-1 text-xs text-gray-700">sourcegraph</code> in your local directory.</li>
+                                <li className="ml-2.5 text-sm leading-7">
+                                    Run{' '}
+                                    <code className="rounded-md bg-gray-200 p-1 text-xs text-gray-700">
+                                        sourcegraph
+                                    </code>{' '}
+                                    in your local directory.
+                                </li>
                                 <li className="ml-2.5 text-sm leading-7">
                                     The app will detect code in the directory you run it in.
                                 </li>
@@ -249,4 +252,56 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
     </div>
 )
 
+const DownloadSection: FunctionComponent = () => (
+    <>
+        <Link
+            href="https://sourcegraph.com/search"
+            className="btn btn-inverted-primary w-fit px-4 font-normal shadow-btn"
+            title="Download for mac"
+        >
+            Download for mac
+            <Badge className="ml-2" size="small" text="Beta" color="blurple" />
+        </Link>
+        <p className="mt-3 text-sm text-gray-300">
+            MacOS 13+ required.{' '}
+            <Link
+                href="https://docs.sourcegraph.com/app"
+                title="Older versions"
+                className="text-sm leading-[21px] text-gray-300 underline"
+                target="_blank"
+            >
+                Older versions
+            </Link>
+            .
+        </p>
+        <div className="mt-3 flex flex-row justify-center">
+            <Link
+                href="/get-started"
+                title="Linux"
+                className="border-r-1 border-r-gray-300 pr-2 text-sm leading-[21px] text-gray-300 underline"
+            >
+                Linux
+            </Link>
+            <Link
+                href="https://docs.sourcegraph.com/app"
+                title="Other platforms"
+                className="ml-2 text-sm leading-[21px] text-gray-300 underline"
+                target="_blank"
+            >
+                Other options
+            </Link>
+        </div>
+        <p className="mt-3 text-center text-sm leading-[21px] text-gray-300">
+            By using Sourcegraph, you agree to the{' '}
+            <Link href="/terms/privacy" title="Privacy polic" className="text-gray-300 underline">
+                privacy policy
+            </Link>{' '}
+            and{' '}
+            <Link href="/terms" title="Terms" className="text-gray-300 underline">
+                terms
+            </Link>
+            .
+        </p>
+    </>
+)
 export default AppPage
