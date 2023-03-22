@@ -266,7 +266,6 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
                 label: 'price',
                 enterpriseStarter: 'Starts at $5k/year',
                 enterprise: 'Starts at $50k/year',
-                disclaimer: 'Platform access fee may apply',
             },
             {
                 label: 'contractLength',
