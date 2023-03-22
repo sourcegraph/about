@@ -178,7 +178,7 @@ Code insights provide precise answers about the trends and composition of your c
 <Badge link="https://docs.sourcegraph.com/admin/external_service" text="Code Hosts" color="violet" size="small" />
 #### Impoved Gerrit support with user permissions
 
-Gerrit connections now have their own dedicated code host connection option as opposed to the “Generic Git Host” connection that had to be used before. Along with this, Gerrit connections can now also enable authorization, which will mark all repositories from that connection as private and require users to authenticate using Gerrit credentials and verify that they have permission to view that repository on Gerrit if they want to be able to view it on Sourcegraph.
+Gerrit connections now have their own dedicated code host connection option as opposed to the “Generic Git Host” connection that had to be used before. Along with this, Gerrit connections can also be configured to require user authentication, which will require users to provide Gerrit credentials in order to search and browse Gerrit code.
 
 <a href="https://docs.sourcegraph.com/admin/external_service/gerrit" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
