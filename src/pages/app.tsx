@@ -16,40 +16,30 @@ import { DownloadLink } from '../components/DownloadLink'
 const AppPage: FunctionComponent = () => {
     const threeUpTextItems = [
         {
-            icon: (
-                <SourceBranchIcon
-                    className="mb-6 rounded bg-violet-200 p-2 text-violet-400 mx-0"
-                    size={35}
-                />
-            ),
-            subtitle: <span className="flex !text-4xl text-white text-left">Connected</span>,
+            icon: <SourceBranchIcon className="mx-0 mb-6 rounded bg-violet-200 p-2 text-violet-400" size={35} />,
+            subtitle: <span className="flex text-left !text-4xl text-white">Connected</span>,
             description: (
-                <p className="text-lg text-left text-gray-200">
+                <p className="text-left text-lg text-gray-200">
                     Search all your code, all in one place. Connect to your local and remote Git-based repositories, so
                     you don't have to jump between your IDE and code host for search.
                 </p>
             ),
         },
         {
-            icon: (
-                <RocketLaunchIcon
-                    className="mb-6 rounded bg-violet-200 p-2 text-violet-400 mx-0"
-                    size={35}
-                />
-            ),
-            subtitle: <span className="flex !text-4xl text-white text-left">Fast</span>,
+            icon: <RocketLaunchIcon className="mx-0 mb-6 rounded bg-violet-200 p-2 text-violet-400" size={35} />,
+            subtitle: <span className="flex text-left !text-4xl text-white">Fast</span>,
             description: (
-                <p className="text-lg text-left text-gray-200">
+                <p className="text-left text-lg text-gray-200">
                     Navigate thousands of repositories in seconds. Find code while staying in flow, so you can focus
                     less on finding things and more on writing code.
                 </p>
             ),
         },
         {
-            icon: <SendIcon className="mb-6 rounded bg-violet-200 p-2 text-violet-400 mx-0" size={35} />,
-            subtitle: <span className="flex !text-4xl text-white text-left">Lightweight</span>,
+            icon: <SendIcon className="mx-0 mb-6 rounded bg-violet-200 p-2 text-violet-400" size={35} />,
+            subtitle: <span className="flex text-left !text-4xl text-white">Lightweight</span>,
             description: (
-                <p className="text-lg text-left text-gray-200">
+                <p className="text-left text-lg text-gray-200">
                     Install in minutes. The app is a lightweight, single-binary version of Sourcegraph tailored for
                     developers to use on their local machine.
                 </p>
@@ -63,7 +53,7 @@ const AppPage: FunctionComponent = () => {
                 title: 'Find, fix, and flow in minutes',
                 description:
                     'The app is a lightweight, single-binary version of Sourcegraph, designed for developers to experience the power of Sourcegraph for free on their local machine.',
-                image: '/app/app-og.png'
+                image: '/app/app-og.png',
             }}
             headerColorTheme="purple"
             childrenClassName="sg-bg-gradient-app-large text-white px-sm"
@@ -94,9 +84,9 @@ const AppPage: FunctionComponent = () => {
             <div className="mb-8 flex flex-col items-center text-center">
                 <Heading size="h2">Run Sourcegraph for free across all your code</Heading>
                 <p className="my-8 max-w-screen-md text-lg text-gray-200">
-                    The app is the easiest way to run Sourcegraph on your local machine for free, complete with code search
-                    and navigation to complement your IDE and local environment. Sync to your GitHub or GitLab account
-                    to search and navigate all your code — local and remote — from a single, unified interface.
+                    The app is the easiest way to run Sourcegraph on your local machine for free, complete with code
+                    search and navigation to complement your IDE and local environment. Sync to your GitHub or GitLab
+                    account to search and navigate all your code — local and remote — from a single, unified interface.
                 </p>
 
                 <DemoVideo
