@@ -274,10 +274,10 @@ const AppDownloadLinks: FunctionComponent<AppDownloadLinksProps> = ({ className 
         <DownloadLink
             href="https://sourcegraph.com/search"
             className="btn btn-inverted-primary w-fit px-4 font-normal"
-            title="Download for mac"
+            title="Download for Mac"
             downloadName="app-download-mac-dmg"
         >
-            Download for mac
+            Download for Mac
             <Badge className="ml-2" size="small" text="Beta" color="blurple" />
         </DownloadLink>
         <div className="mt-3 flex flex-row">
