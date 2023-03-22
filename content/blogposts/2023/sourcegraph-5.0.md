@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 5.0"
 publishDate: 2023-03-23T10:00-07:00
-description: Announcing Sourcegraph 5.0. The latest release includes 20+ updates, including updates to Sourcegraph's speed, security, and scalability.
+description: "Announcing Sourcegraph 5.0. The latest release includes 20+ updates, including updates to Sourcegraph's speed, security, and scalability."
 tags: [blog, release]
 slug: "release/5.0"
 published: true
