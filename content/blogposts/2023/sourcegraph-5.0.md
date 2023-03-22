@@ -50,7 +50,7 @@ All of these improvements add up to a more streamlined, efficient, and powerful 
   }}
   loop={true}
   title="New keyboard navigation experience in Sourcegraph"
-/><br/>
+/><br />
 
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 #### A comnpletely re-imagined search input
@@ -96,7 +96,7 @@ Available events include:
 
 
 <a href="https://docs.sourcegraph.com/admin/config/webhooks/outgoing" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
-<br/>
+<br />
 
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 #### Limit access to batch changes to designated users
@@ -111,7 +111,7 @@ Site admins can limit access to approved users from admin settings under “Site
 While the RBAC system is limited to batch changes for now, the system will soon be expanded to cover additional areas of Sourcegraph as well.
 
 <a href="https://docs.sourcegraph.com/admin/access_control" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
-<br/>
+<br />
 
 <Badge text="Code Insights" link="/code-insights" color="green" size="small" />
 #### Improved Code Insights support for instances with a large number of repositories
@@ -119,7 +119,7 @@ While the RBAC system is limited to batch changes for now, the system will soon 
 Code Insights provides precise answers about the trends and composition of your codebase, tranforming it into a queryable database.  Previously, users had to create insights over either a few named repositories or all of their repositories, and running insights over all repositories could often take an impractical amount of time to process. Now, with the new repository selection, users can target their insights to the exact scope of repositories that is relevant to them. Additionally, administrators can now monitor the processing of insights and, when necessary, reprioritize or retry them from within the site admin section.
 
 <a href="https://docs.sourcegraph.com/code_insights" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
-<br/>
+<br />
 
 <Badge link="https://docs.sourcegraph.com/admin/external_service" text="Code Hosts" color="violet" size="small" />
 #### Impoved Gerrit support with user permissions
@@ -127,7 +127,7 @@ Code Insights provides precise answers about the trends and composition of your 
 Gerrit connections now have their own dedicated code host connection option, as opposed to the “Generic Git Host” connection that had to be used before. Along with this, Gerrit connections can now also enable authorization, which will mark all repositories from that connection as private and require users to authenticate using Gerrit credentials and verify that they have permission to view that repository on Gerrit if they want to be able to view it on Sourcegraph.
 
 <a href="https://docs.sourcegraph.com/admin/external_service/gerrit" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
-<br/>
+<br />
 
 <Badge link="https://docs.sourcegraph.com/admin/external_service" text="Code Hosts" color="violet" size="small" />
 #### Improved support for the Azure DevOps code host
@@ -135,7 +135,7 @@ Gerrit connections now have their own dedicated code host connection option, as 
 Sourcegraph customers will now be able to bring their Azure DevOps repositories into their Sourcegraph instance. Sourcegraph will sync specified repositories from the customers’ Azure DevOps organizations or projects, and Sourcegraph will also respect and enforce permissions from Azure DevOps, ensuring that only users with access rights to repositories are allowed to access them. Batch Changes will now also support Azure DevOps code hosts and repositories.
 
 <a href="https://docs.sourcegraph.com/admin/external_service/azuredevops" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
-<br/>
+<br />
 
 <Badge>
 
@@ -149,7 +149,7 @@ Now, instead, we use feedback that we get from the code host with every request 
 This does not override the custom rate limit that customers can configure in the site config. If that custom rate limit is slower than that of GitHub, it will take precedence.
 
 <a href="https://docs.sourcegraph.com/admin/external_service/github" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
-<br/>
+<br />
 
 <Badge link="" text="Admin" color="violet" size="small" />
 #### Permissions center
@@ -161,7 +161,7 @@ Historically, debugging repository permissions was time-consuming, extremely con
 The permission center provides a bird’s eye view of who can access code and why, what recently changed with permissions and when, how many permissions were added/removed and what's the reason for the permissions sync. It provides extensive observability and debugability for both current and historical state of permissions within an instance.
 
 <a href="https://docs.sourcegraph.com/admin/permissions/syncing" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
-<br/>
+<br />
 
 <Badge link="" text="Admin" color="violet" size="small" />
 #### Account requests for unauthenticated users
@@ -179,7 +179,7 @@ A new analytics data point has been added to the “Analytics / Users” page in
 
 This feature is experimental and enabled by default. However, it can be explicitly disabled by setting `accessRequests.enabled: false` in site configuration experimental features settings.
 
-<br/>
+<br />
 
 <Badge link="" text="Admin" color="violet" size="small" />
 #### SCIM support
@@ -195,7 +195,7 @@ SCIM support is initially available for user provisioning (groups coming soon!).
 With SCIM, you can eliminate the ghost accounts and compliance headaches. [Learn more in our docs](https://docs.sourcegraph.com/admin/scim) and enable SCIM for your team.
 
 <a href="https://docs.sourcegraph.com/admin/scim" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
-<br/>
+<br />
 
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 #### Intelligent search ranking
@@ -208,4 +208,3 @@ Previously, Sourcegraph ordered search results in a simple way that could make i
 These improvements are being released together as a limited beta, and will be rolled out to more users over the coming months.
 
 <a href="" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
-<br/>
