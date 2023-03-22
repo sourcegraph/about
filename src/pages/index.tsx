@@ -164,7 +164,7 @@ const Home: FunctionComponent = () => (
                 <Badge
                     className="bg-violet-100 text-violet-600 md:bg-violet-600 md:text-violet-100"
                     size="small"
-                    text="Private Beta"
+                    text="Experimental"
                 />
                 <Heading className="mt-3 mb-4 text-white" size="h2">
                     Cody AI
