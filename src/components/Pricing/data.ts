@@ -29,6 +29,8 @@ export const ENTERPRISE_STARTER_FEATURES_OVERVIEW: FeatureCluster[] = [
             'codeNavigation',
             'batchChanges',
             'codeInsights',
+            'cody',
+            'own',
             'notebooks',
             'codeMonitoring',
             'comprehensiveApi',
@@ -46,22 +48,25 @@ export const ENTERPRISE_STARTER_FEATURES_OVERVIEW: FeatureCluster[] = [
         topic: 'Scale and performance',
         features: ['enterpriseStarterStorage', 'enterpriseStarterExecutors'],
     },
+    { 
+        topic: 'Flexible deployment',
+        features: ['cloudDeployment', 'singleNode'],
+    },
     { topic: '24/5 support' },
-    { topic: 'Single-tenant cloud deployment or self-hosted TODO' },
 ]
 
 /** Enterprise spotlight feature set */
 export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
     {
-        topic: 'Flexible deployment',
-        features: ['cloudDeployment', 'selfDeployment'],
-    },
-    {
         topic: 'Code host integrations',
         features: ['unlimitedCodeHosts', 'selfHostedCodeHosts', 'enterpriseOnlyCodeHosts', 'privateCodeHosts'],
     },
     {
-        topic: 'Security and admin',
+        topic: 'Flexible deployment',
+        features: ['cloudDeployment', 'selfDeployment'],
+    },
+    {
+        topic: 'Advanced security and admin',
         features: ['customPerms', 'privateInstance'],
     },
     {
@@ -69,8 +74,12 @@ export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['enterpriseStorage', 'enterpriseExecutors'],
     },
     {
+        topic: 'Custom deployment',
+        features: ['multiNode'],
+    },
+    {
         topic: '24/5 priority support',
-        features: ['slaSupport', 'technicalAdvisor'],
+        features: ['slaSupport', 'technicalAdvisor', 'premiumServices'],
     },
 ]
 
@@ -95,6 +104,16 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
             },
             {
                 label: 'codeInsights',
+                enterpriseStarter: true,
+                enterprise: true,
+            },
+            {
+                label: 'cody',
+                enterpriseStarter: true,
+                enterprise: true,
+            },
+            {
+                label: 'own',
                 enterpriseStarter: true,
                 enterprise: true,
             },
@@ -230,7 +249,7 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
             },
             {
                 label: 'selfDeployment',
-                enterpriseStarter: false,
+                enterpriseStarter: 'Single-node',
                 enterprise: true,
             },
             {
@@ -245,8 +264,8 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
         features: [
             {
                 label: 'price',
-                enterpriseStarter: '$99 per active user/month',
-                enterprise: 'Custom pricing',
+                enterpriseStarter: 'Starts at $5k/year',
+                enterprise: 'Starts at $50k/year',
                 disclaimer: 'Platform access fee may apply',
             },
             {
@@ -296,6 +315,14 @@ const CIP_FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'Comprehensive API',
         description: 'A secure, robust GraphQL API for your repository and code data.',
     },
+    cody: {
+        label: 'Cody (experimental)',
+        description: 'A code-aware, AI programming assistant.',
+    },
+    own: {
+        label: 'Own (experimental)',
+        description: 'Track evergreen code ownership data across your codebase.',
+    },
 }
 
 const SECURITY_FEATURE_INFO: Record<string, FeatureInfo> = {
@@ -329,8 +356,12 @@ const SECURITY_FEATURE_INFO: Record<string, FeatureInfo> = {
 }
 
 const DEPLOYMENT_FEATURE_INFO: Record<string, FeatureInfo> = {
+    flexibleDeployment: {
+        label: 'Flexible deployment',
+        description: '',
+    },
     cloudDeployment: {
-        label: 'Single-tenant cloud deployment',
+        label: 'Single-tenant GCP cloud deployment',
         description: 'Your organization’s dedicated, single-tenant Sourcegraph Cloud instance.',
     },
     selfDeployment: {
@@ -388,15 +419,30 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
 
     ...DEPLOYMENT_FEATURE_INFO,
 
+    // Custom deployment
+    multiNode: {
+        label: 'Multi-node, self-hosted',
+        description: 'Complex multi-node deployment.'
+    },
+    singleNode: {
+        label: 'Standard single-node, self-hosted',
+        description: 'Standard single-node deployment.'
+    },
+
     // Support
     slaSupport: {
         label: 'Priority support SLAs',
         description: 'Priority ticket handling and guaranteed initial response SLA from a dedicated team.',
     },
     technicalAdvisor: {
-        label: 'Technical Advisor',
+        label: 'Technical Advisor (with > $100k spend)',
         description:
             'Specialized technical experts to lead training & enablement, strategy, and overall account health.',
+    },
+    premiumServices: {
+        label: 'Premium services available',
+        description:
+            '',
     },
 }
 

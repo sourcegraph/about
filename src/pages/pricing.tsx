@@ -143,7 +143,7 @@ const PricingPage: FunctionComponent = () => {
                 <div className="col-span-full mb-sm md:col-span-5 md:col-start-2 md:mb-0">
                     <PricingPlan
                         name="Enterprise Starter"
-                        description="Full platform access for teams and orgs, all on a single-tenant cloud instance. Online TOS TODO"
+                        description="Full platform access for teams and orgs. Flexible deployment options. Online Terms of Service and workshop based evaluation path."
                         price="Starts at $5k/year"
                         priceDetail="Scales with your team"
                         buttons={<StartFreeButton />}
@@ -155,7 +155,7 @@ const PricingPage: FunctionComponent = () => {
                 <div className="col-span-full md:col-span-5 md:col-start-7">
                     <PricingPlan
                         name="Enterprise"
-                        description="All the features of Enterprise Starter, with increased scale, support SLAs, and custom deployment options."
+                        description="All the benefits of Enterprise Starter with increased Support SLAs and custom deployment options."
                         price="Starts at $50k/year"
                         priceDetail="Scales with your team"
                         buttons={<EnterpriseButtons />}
