@@ -43,7 +43,7 @@ This is where Sourcgregraph Own comes in! Add `select:file.owners()`, and you ca
 
 Own also lets you search for things such as:
 - What files don’t have an owner? This search query can be refined at will to give only the most important hits, exclude generated files, etc. That’s the power of Sourcegraph search! [Example](https://sourcegraph.com/search?q=context:global+repo:sourcegraph/sourcegraph%24+-file:has.owner%28%29+-file:buildkite+-file:.github+lang:go&patternType=lucky&sm=1&groupBy=repo). 
-- What are the golang files that this person owns? [Example](https://sourcegraph.com/search?q=context:global+repo:sourcegraph/sourcegraph%24+file:has.owner%28eseliger%29+lang:go&patternType=lucky&sm=1&groupBy=repo)
+- What are the golang files that this person owns? [Example](https://sourcegraph.com/search?q=context:global+repo:sourcegraph/sourcegraph%24+file:has.owner%28eseliger%29+lang:go&patternType=lucky&sm=1&groupBy=repo).
 <br/>
 
 <video controls playsinline title="Searching with Sourcegraph Own">
