@@ -30,7 +30,7 @@ We are launching a preview of Sourcegraph Own as an experimental feature and wil
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 #### Improved code exploration experience
 
-5.0 includes a number of improvements to the code exploration experience.For the March Starship we’ve made a bunch of exciting code exploration experience improvements. 
+5.0 includes a number of improvements to the code exploration experience.For the March Starship we’ve made a bunch of exciting code exploration experience improvements.
 
 First and foremost, we've shipped the CodeMirror editor as the default blob viewer. This new editor is much more efficient with large files, making it easier and faster than ever to explore code. It also has great extensibility potential enabling us to bring more IDE-like code exploration features in future.
 
@@ -44,14 +44,15 @@ Finally, we've made some improvements to the git blame decorations. We've improv
 
 All of these improvements add up to a more streamlined, efficient, and powerful code exploration experience. We're excited to see how they'll help our users better understand and work with the codebase!
 
-<Video 
+<Video
   source={{
     webm: 'blog/keyboard-nav',
     mp4: 'blog/keyboard-nav'
   }}
   loop={true}
   title="New keyboard navigation experience in Sourcegraph"
-/><br />
+/>
+<br/>
 
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 #### A comnpletely re-imagined search input
@@ -94,7 +95,6 @@ Available events include:
 - When a batch change is applied, closed, or deleted
 - When a changeset is published, updated, or closed
 - When there is an error publishing or updating a changeset
-
 
 <a href="https://docs.sourcegraph.com/admin/config/webhooks/outgoing" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
@@ -155,7 +155,7 @@ This does not override the custom rate limit that customers can configure in the
 <Badge link="" text="Admin" color="violet" size="small" />
 #### Permissions center
 
-The permissions center brings new tools for site admins and users to understand their repository permissions. To ensure developers only see code they have access to, Sourcegraph syncs permissions directly from users’ various code hosts via a continuous background process. 
+The permissions center brings new tools for site admins and users to understand their repository permissions. To ensure developers only see code they have access to, Sourcegraph syncs permissions directly from users’ various code hosts via a continuous background process.
 
 Historically, debugging repository permissions was time-consuming, extremely confusing, and often not possible as admins were required to access the production DB to debug. The permission center is a new way for admins to understand and work with how permissions are handled across Sourcegraph storing authorization data, all powered by a more scalable database-backed architecture.
 
@@ -171,8 +171,8 @@ Our new account requests feature allows unauthenticated users to request an acco
 
 - Users without an account can now click a “Request access” link on the sign up page to complete the request form. Submitting this form will alert administrators about account requests.
 - Administrators will be notified of the number of new requests waiting for review via an “Account requests” notification button in their Sourcegraph navigation bar. This notification button is not shown if there are no pending requests.
-- Once a request is approved, a new user is created in one of the following ways depending on SMTP configuration: 
-  - If SMTP is configured, an email with a reset password link is sent to the user. 
+- Once a request is approved, a new user is created in one of the following ways depending on SMTP configuration:
+  - If SMTP is configured, an email with a reset password link is sent to the user.
   - If SMTP is not configured, administrators must manually send a reset password link to the user from the “Users & auth / Account requests” admin page.
 - Administrators can also choose to reject a request. In this case, all new account requests from a previously rejected email will be ignored.
 
