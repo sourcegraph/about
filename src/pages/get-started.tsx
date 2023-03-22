@@ -181,7 +181,7 @@ const InterstitialAppContent: FunctionComponent = () => (
                 title="Download for Mac"
                 downloadName="app-download-mac-dmg"
             >
-                Download for mac
+                Download for Mac
             </DownloadLink>
 
             <p className="mb-0 mt-2.5 flex text-gray-500">
