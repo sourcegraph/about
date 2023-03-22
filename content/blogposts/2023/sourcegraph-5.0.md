@@ -17,7 +17,7 @@ In addition to the new features included in 5.0, we are also releasing [the Sour
 Read on to discover everything included in Sourcegraph 5.0.
 <br/>
 
-<Badge link="/own" text="Code Search" color="green" size="small" />
+<Badge link="/own" text="Code Ownership" color="green" size="small" />
 #### Sourcegraph Own preview
 
 Sourcegraph Own manages code ownership for your entire codebase across every repository and code host. React to incidents faster and increase productivity by making it easy to find who owns any code quickly.
@@ -62,7 +62,7 @@ All of these improvements add up to a more streamlined, efficient, and powerful 
   loop={true}
   title="New keyboard navigation experience in Sourcegraph"
 />
-<br/>
+<br/><br/>
 
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 #### A completely re-imagined search input
@@ -80,6 +80,18 @@ The search input has been redesigned to greatly improve usability. New contextua
 
 <Badge link="/code-search" text="Code Intelligence" color="cerise" size="small" />
 
+<Badge link="/code-search" text="Code Search" color="cerise" size="small" />
+#### Intelligent search ranking
+
+Previously, Sourcegraph ordered search results in a simple way that could make it hard to find the most relevant files. In version 4.6, we're releasing two significant improvements to search ranking:
+
+- Search results are no longer grouped by repository. Instead, we return the most relevant files first. This helps prevent users from requiring workarounds to find what they’re looking for, for example updating the search to exclude certain repositories.
+- Search now incorporates a "file importance" score to help boost high quality, commonly-used files. This score is based on the code dependency graph, and is only available when precise code intelligence is enabled.
+
+These improvements are being released together as a limited beta in 5.0. You can reach out to your account team if you're interested in the beta.
+
+<br/>
+
 #### Improved auto-indexing setup experience
 
 We've made significant improvements to Sourcegraph's auto-indexing setup experience to make it easier for users to enable precise code intelligence. Previously, the configuration options were somewhat opaque and could be intimidating for users to configure, even for engineers at Sourcegraph.
@@ -94,18 +106,6 @@ Additionally, we've added more "code intelligence health" indicators to the Sour
 These improvements make it easier to enable precise code intelligence on Sourcegraph and ensure users can rely on the best possible coding experience. Give the new auto-indexing setup experience a try and monitor your code intelligence coverage/health with the new dashboards. As always, we welcome your feedback!
 
 <br/>
-
-<Badge link="/code-search" text="Code Search" color="cerise" size="small" />
-#### Intelligent search ranking
-
-Previously, Sourcegraph ordered search results in a simple way that could make it hard to find the most relevant files. In version 4.6, we're releasing two significant improvements to search ranking:
-
-- Search results are no longer grouped by repository. Instead, we return the most relevant files first. This helps prevent users from requiring workarounds to find what they’re looking for, for example updating the search to exclude certain repositories.
-- Search now incorporates a "file importance" score to help boost high quality, commonly-used files. This score is based on the code dependency graph, and is only available when precise code intelligence is enabled.
-
-These improvements are being released together as a limited beta in 5.0. You can reach out to your account team if you're interested in the beta.
-
-<a href="" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 <Badge link="/batch-changes" text="Batch Changes" color="blue" size="small" />
 #### Keep everyone in the loop with outgoing webhooks for batch changes
@@ -206,7 +206,7 @@ The permission center provides a bird’s eye view of who can access code and wh
 <a href="https://docs.sourcegraph.com/admin/permissions/syncing" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
 
-<Badge link="" text="Admin" color="violet" size="small" />
+<Badge link="https://docs.sourcegraph.com/admin/" text="Admin" color="violet" size="small" />
 #### Account requests for unauthenticated users
 
 Our new account requests feature allows unauthenticated users to request an account if sign up is disabled. Administrators now have the ability to approve or reject requests manually, giving them full control over who can access their instance.
@@ -224,7 +224,7 @@ A new analytics data point has been added to the “Analytics / Users” page in
 This feature is experimental and enabled by default. However, it can be explicitly disabled by adding `accessRequests.enabled: false` to the site configuration experimental features settings.
 <br />
 
-<Badge link="" text="Admin" color="violet" size="small" />
+<Badge link="https://docs.sourcegraph.com/admin/" text="Admin" color="violet" size="small" />
 #### SCIM support
 
 Sourcegraph now supports the [SCIM protocol](https://www.simplecloud.info/), an open industry standard for automating user provisioning and deprovisioning.
