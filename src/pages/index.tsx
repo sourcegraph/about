@@ -273,7 +273,7 @@ const DownloadLink: FunctionComponent<DownloadLinkProps> = ({ className }) => (
         <Link
             href="/get-started"
             className="btn btn-inverted-primary w-fit px-4 font-normal"
-            title="Download for mac"
+            title="Download for Mac"
         >
             Download the app
             <Badge className="ml-2" size="small" text="Beta" color="blurple" />
