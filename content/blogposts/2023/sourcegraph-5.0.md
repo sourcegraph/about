@@ -10,11 +10,20 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post
 changelogItems:
 ---
 
-Sourcegraph 5.0 includes more than 20 updates and new features. 5.0 continues to build on Sourcegraph as a code intellingence platform while also improving the speed and scale of Sourcegraph's core features.
+Sourcegraph 5.0 includes more than 20 updates and new features. 5.0 continues to build on Sourcegraph as a code intellingence platform while also improving the speed and scale of Sourcegraph's core features. 5.0 also introduces AI to the code intelligence plaform with the private beta of [Cody](https://about.sourcegraph.com/cody), the new code-aware programming assistant. 
 
 In addition to the new features included in 5.0, we are also releasing [the Sourcegraph app](https://about.sourcegraph.com/app). The app is a fast, lightweight version of Sourcegraph that can be downloaded and installed locally in minutes. It's the best way for new users to get started with Sourcegraph's free tier and run it on their local machine alongside their IDE.
 
 Read on to discover everything included in Sourcegraph 5.0.
+<br/>
+
+<Badge link="/cody" text="AI" color="blue" size="small" />
+#### Cody, your code-aware programmer's assistant
+
+Cody is an AI coding assistant that can find, explain, and write code. It reads your codebase and feeds the right context to the LLM to answer questions about your entire codebase, instead of being limited to just a couple files. 
+
+Cody can answer questions about both general programming topics and your specific codebase from right inside your editor. We're releasing Cody in private beta for 5.0 with general availability coming in a future release. [Learn more about Cody](https://about.sourcegraph.com/cody) or [join the Cody private beta waitlist.](https://sourcegraph.typeform.com/to/pIXTgwrd)
+
 <br/>
 
 <Badge link="/own" text="Code Ownership" color="green" size="small" />
@@ -22,7 +31,7 @@ Read on to discover everything included in Sourcegraph 5.0.
 
 Sourcegraph Own manages code ownership for your entire codebase across every repository and code host. React to incidents faster and increase productivity by making it easy to find who owns any code quickly.
 
-We are launching a preview of Sourcegraph Own as an experimental feature and will iterate over the coming months to deliver our full roadmap vision to every customer. [Read more in the full announcement for Sourcegraph Own](about.sourcegraph.com/blog/inroducing-sourcegraph-own).
+We are launching a preview of Sourcegraph Own as an experimental feature and will iterate over the coming months to deliver our full roadmap vision to every customer. [Read more in the full announcement for Sourcegraph Own](https://about.sourcegraph.com/blog/inroducing-sourcegraph-own).
 
 <Video 
   source={{
