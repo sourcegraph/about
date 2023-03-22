@@ -120,6 +120,7 @@ const Starship: FunctionComponent = () => (
                 <FeatureUser image="/starship/davidsacks.png" name="David Sacks" title="Founder & Partner" company="Craft Ventures" />
                 <FeatureUser image="/starship/simonmarlow.png" name="Simon Marlow" title="Code Intelligence" company="Meta" />
                 <FeatureUser image="/starship/ericabrescia.png" name="Erica Brescia" title="Managing Director" company="Redpoint Ventures" />
+                <FeatureUser image="/starship/darioamodei.png" name="Dario Amodei" title="CEO and Co-Founder" company="Anthropic" />
             </div>
         </ContentSection>
 
