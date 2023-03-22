@@ -166,13 +166,15 @@ While the RBAC system is limited to batch changes for now, the system will soon 
 <Badge text="Code Insights" link="/code-insights" color="green" size="small" />
 #### Improved Code Insights support for instances with a large number of repositories
 
-Code insights provide precise answers about the trends and composition of your codebase, tranforming it into a queryable database.  Previously, users had to create insights over either a few named repositories or all of their repositories, and running insights over all repositories could often take an impractical amount of time to process. Now, with the new repository selection, users can target their insights to the exact scope of repositories that is relevant to them. Additionally, administrators can now monitor the processing of insights and, when necessary, reprioritize or retry them from within the site admin section.
+Code insights provide precise answers about the trends and composition of your codebase, tranforming it into a queryable database.  
+
+Previously, users had to create insights over either a few named repositories or all of their repositories, and running insights over all repositories could often take an impractical amount of time to process. Now, with the new repository selection, users can target their insights to the exact scope of repositories that is relevant to them. Additionally, administrators can now monitor the processing of insights and, when necessary, reprioritize or retry them from within the site admin section.
 
 <a href="https://docs.sourcegraph.com/code_insights" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
 
 <Badge link="https://docs.sourcegraph.com/admin/external_service" text="Code Hosts" color="violet" size="small" />
-#### Impoved Gerrit support with user permissions
+#### Impoved Gerrit support with repository permissions
 
 Gerrit connections now have their own dedicated code host connection option as opposed to the “Generic Git Host” connection that had to be used before. Along with this, Gerrit connections can also be configured to require user authentication, which will require users to provide Gerrit credentials in order to search and browse Gerrit code.
 
@@ -192,9 +194,7 @@ Sourcegraph customers will now be able to bring their Azure DevOps repositories 
 
 We've made changes to how we handle GitHub and GitLab rate limits. Previously, all GitHub requests would be limited to 5,000 requests per hour (i.e. even if there were 1,000 users on the instance, the total number of requests would not exceed 5,000/hour).
 
-Now we use feedback from the code host to do rate limiting using each individual user's own rate limit. This greatly speeds up our permissions syncing process. Customers might see an increase in the number of requests to the code host, but these will not exceed the code host's own imposed rate limits.
-
-This does not override the custom rate limit that customers can configure in the site config. If that custom rate limit is slower than that of GitHub, it will take precedence.
+Now we use feedback from the code host to provide rate limiting using each individual user's own rate limit. This greatly speeds up our permissions syncing process. Customers might see an increase in the number of requests to the code host, but these will not exceed the code host's own imposed rate limits. Further, this does not override the custom rate limit that administrators can configure in the site config. If that custom rate limit is slower than that of GitHub, it will take precedence.
 
 <a href="https://docs.sourcegraph.com/admin/external_service/github" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
@@ -204,7 +204,7 @@ This does not override the custom rate limit that customers can configure in the
 
 The permissions center brings new tools for site admins and users to understand their repository permissions. To ensure developers only see code they have access to, Sourcegraph syncs permissions directly from users’ various code hosts via a continuous background process.
 
-Historically, debugging repository permissions was time-consuming, extremely confusing, and often not possible as admins were required to access the production DB to debug. The permission center is a new way for admins to understand and work with how permissions are handled across Sourcegraph storing authorization data, all powered by a more scalable database-backed architecture.
+Historically, debugging repository permissions was time-consuming, confusing, and often impossible as admins were required to access the production DB to debug. The permission center is a new way for admins to understand and work with how permissions are handled across Sourcegraph storing authorization data, all powered by a more scalable database-backed architecture.
 
 The permission center provides a bird’s eye view of who can access code and why, what recently changed with permissions and when, how many permissions were added/removed and what's the reason for the permissions sync. It provides extensive observability and debugability for both current and historical state of permissions within an instance.
 
@@ -212,17 +212,11 @@ The permission center provides a bird’s eye view of who can access code and wh
 <br />
 
 <Badge link="https://docs.sourcegraph.com/admin/" text="Admin" color="violet" size="small" />
-#### Account requests for unauthenticated users
+#### Request account for unauthenticated users
 
-Our new account requests feature allows unauthenticated users to request an account if sign up is disabled. Administrators now have the ability to approve or reject requests manually, giving them full control over who can access their instance.
+It can be hard for administrators to control inbound requests for account creation when rolling out an instance of Sourcegraph. Our new request account feature streamlines this process by allowing unauthenticated users to request an account if sign up is disabled. 
 
-- Users without an account can now click a “Request access” link on the sign up page to complete the request form. Submitting this form will alert administrators about account requests.
-- Administrators will be notified of the number of new requests waiting for review via an “Account requests” notification button in their Sourcegraph navigation bar. This notification button is not shown if there are no pending requests.
-- Once a request is approved, a new user is created in one of the following ways depending on SMTP configuration:
-  - If SMTP is configured, an email with a reset password link is sent to the user.
-  - If SMTP is not configured, administrators must manually send a reset password link to the user from the “Users & auth / Account requests” admin page.
-- Administrators can also choose to reject a request. In this case, all new account requests from a previously rejected email will be ignored.
-<br/>
+Users without an account can now click a “Request access” link on the sign up page to complete the request form which is then sent to administrators to approve or reject. Submitting this form will alert administrators about account requests to ensure they maintain full control over who can access their instance while helping gauge interest for Sourcegraph within their organization.
 
 A new analytics data point has been added to the “Analytics / Users” page indicating the number of account requests made during a given period of time. This data can help administrators understand how many people are interested in accessing their instance.
 
@@ -236,11 +230,9 @@ Sourcegraph now supports the [SCIM protocol](https://www.simplecloud.info/), an 
 
 SCIM (System for Cross-domain Identity Management) allows users to connect their identity provider (like [Okta](https://developer.okta.com/docs/concepts/scim/) or [Azure AD](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/sync-scim)) to Sourcegraph and automatically sync user accounts. When a new employee is onboarded, their Sourcegraph account is automatically created. When they leave the organization, their access is promptly revoked.
 
-Before SCIM support, IT admins had to manually create and delete Sourcegraph user accounts. Now they can automate these tedious, error-prone tasks, meeting compliance requirements and reducing the risk of outdated user accounts.
+Before SCIM support, admins had to manually create and delete Sourcegraph user accounts. Now they can automate these tedious, error-prone tasks, meeting compliance requirements and reducing the risk of outdated user accounts. SCIM support is launching in beta with initial availablity for user provisioning (groups coming soon!). We have tested compatibility with Okta and Azure AD, and support full CRUD operations. 
 
-SCIM support is initially available for user provisioning (groups coming soon!). We have tested compatibility with Okta and Azure AD, and support full CRUD operations.
-
-With SCIM, you can eliminate the ghost accounts and compliance headaches. [Learn more in our docs](https://docs.sourcegraph.com/admin/scim) and enable SCIM for your team.
+With SCIM, you can eliminate the ghost accounts and compliance headaches.
 
 <a href="https://docs.sourcegraph.com/admin/scim" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
