@@ -238,14 +238,15 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
 
 const DownloadSection: FunctionComponent = () => (
     <>
-        <Link
+        <DownloadLink
             href="https://sourcegraph.com/search"
             className="btn btn-inverted-primary w-fit px-4 font-normal shadow-btn"
             title="Download for mac"
+            downloadName="app-download-mac-dmg"
         >
             Download for mac
             <Badge className="ml-2" size="small" text="Beta" color="blurple" />
-        </Link>
+        </DownloadLink>
         <p className="mt-3 text-sm text-gray-300">
             MacOS 13+ required.{' '}
             <Link
