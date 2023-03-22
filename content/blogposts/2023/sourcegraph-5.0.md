@@ -76,7 +76,7 @@ The search input has been redesigned to greatly improve usability. New contextua
     alt="The new search UI"
     catpion="A re-imagined search input."
   />
-</div>
+</div><br/>
 
 <Badge link="/code-search" text="Code Intelligence" color="cerise" size="small" />
 
@@ -121,6 +121,15 @@ Available events include:
 - When there is an error publishing or updating a changeset
 
 <br/>
+<div className="mb-sm">
+  <Figure
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/5.0/outgoing-webhooks.png"
+    alt="Outgoing webhooks configuration"
+    catpion="Outgoing webhooks configuration"
+  />
+</div><br/>
+
+<br/>
 <a href="https://docs.sourcegraph.com/admin/config/webhooks/outgoing" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
 
@@ -136,6 +145,16 @@ Site admins can limit access to approved users from admin settings under “Site
 <br/>
 
 While the RBAC system is limited to batch changes for now, the system will soon be expanded to cover additional areas of Sourcegraph as well.
+
+<br/>
+<Video 
+  source={{
+    mp4: 'docs/images/administration/access_control/assign_roles_to_user_light.mp4'
+  }}
+  loop={true}
+  title="RBAC for Batch Changes"
+/>
+<br/><br/>
 
 <a href="https://docs.sourcegraph.com/admin/access_control" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
