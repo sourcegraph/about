@@ -21,7 +21,7 @@ const blogs = [
         title: 'Sourcegraph 5.0 release post',
         href: 'https://about.sourcegraph.com/blog/release/5.0',
         description:
-            'Sourcegraph 5.0 introduces more than 20 updates and improvements. Learn about them here.',
+            'Sourcegraph 5.0 introduces more than 20 updates and improvements.',
         imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/release-post/5.0/sourcegraph-5-0-hero.png',
     },
     {
