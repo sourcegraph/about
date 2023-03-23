@@ -249,14 +249,15 @@ const DownloadSection: FunctionComponent = () => (
         </DownloadLink>
         <p className="mt-3 text-sm text-gray-300">
             MacOS 13+ required.{' '}
-            <Link
+            <DownloadLink
                 href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+209542.7216ba/sourcegraph_2023.03.23+209542.7216ba_darwin_all.zip"
                 title="Older versions"
+                downloadName="app-download-mac-zip"
                 className="text-sm leading-[21px] text-gray-300 underline"
                 target="_blank"
             >
                 Older versions
-            </Link>
+            </DownloadLink>
             .
         </p>
         <div className="mt-3 flex flex-row justify-center">
