@@ -176,7 +176,7 @@ const InterstitialAppContent: FunctionComponent = () => (
             </div>
 
             <DownloadLink
-                href="https://sourcegraph.com/search"
+                href="https://storage.googleapis.com/sourcegraph-app-releases/latest/Sourcegraph%20App.dmg"
                 className="btn btn-primary mt-6 w-fit px-4 font-normal"
                 title="Download for Mac"
                 downloadName='app-download-mac-dmg'
@@ -187,7 +187,7 @@ const InterstitialAppContent: FunctionComponent = () => (
             <p className="mb-0 mt-2.5 flex text-gray-500">
                 MacOS 13+ required.
                 <Link
-                    href="https://docs.sourcegraph.com/app"
+                    href="https://storage.googleapis.com/sourcegraph-app-releases/latest/sourcegraph_latest_macOS_universal_app_bundle.zip"
                     className="ml-1 font-normal text-gray-500 underline"
                     title="Old versions"
                     target="_blank"

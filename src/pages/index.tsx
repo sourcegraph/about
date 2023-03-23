@@ -275,7 +275,7 @@ const HomeHero: FunctionComponent = () => (
 const AppDownloadLinks: FunctionComponent<AppDownloadLinksProps> = ({ className }) => (
     <div className={className}>
         <DownloadLink
-            href="https://sourcegraph.com/search"
+            href="https://storage.googleapis.com/sourcegraph-app-releases/latest/Sourcegraph%20App.dmg"
             className="btn btn-inverted-primary w-fit px-4 font-normal shadow-btn"
             title="Download for Mac"
             downloadName="app-download-mac-dmg"
