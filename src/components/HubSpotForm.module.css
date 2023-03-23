@@ -380,6 +380,13 @@
     width: 100%;
 }
 
+.container :global(.hs-form-e090296f-84f5-4bcb-9093-a533336841b4 .hs-phone),
+.container :global(.hs-form-e090296f-84f5-4bcb-9093-a533336841b4 .hs-firstname),
+.container :global(.hs-form-e090296f-84f5-4bcb-9093-a533336841b4 .hs-lastname),
+.container :global(.hs-form-e090296f-84f5-4bcb-9093-a533336841b4 .hs-company) {
+    display: block !important;
+}
+
 .container :global(.hs-form-e090296f-84f5-4bcb-9093-a533336841b4) :global(.hs-submit) > :global(.actions) {
     text-align: left;
 }
