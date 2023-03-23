@@ -7,7 +7,7 @@ import { PricingPlanFeature } from './PricingPlanFeature'
 
 interface Props {
     name: string
-    description: string
+    description: ReactNode
     price: string
     priceDetail?: string
     buttons: ReactNode
@@ -35,7 +35,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
             <div className="text-xl">{price}</div>{' '}
             {priceDetail && <div className="text-sm font-normal text-gray-400">{priceDetail}</div>}
         </h4>
-        <h3 className="my-sm max-w-sm text-lg font-normal">{description}</h3>
+        {description}
         {buttons}
 
         {(beforeFeatures || features.length > 0) && (
