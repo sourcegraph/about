@@ -1,11 +1,11 @@
 ---
 layout: markdown
-title: Cody Notice and Usage Policy
+title: Cody Usage and Privacy Notice
 ---
 
-Last modified: March 13, 2023
+Last modified: March 22, 2023
 
-**Sourcegraph Cody** is an AI coding assistant that finds, explains, and writes code using deep context from your codebase. Cody uses Sourcegraph’s Code Intelligence Platform and [Anthropic’s](https://www.anthropic.com/) large language model (LLM) to synthesize responses to user queries. You can access the private **beta** version of Cody through an editor extension. Cody will soon be available within the Sourcegraph application. 
+**Sourcegraph Cody** is an AI coding assistant that finds, explains, and writes code using deep context from your codebase. Cody uses Sourcegraph’s Code Intelligence Platform and large language models (LLMs) to synthesize responses to user queries. You can access the private **beta** version of Cody through an editor extension. Cody will soon be available within the Sourcegraph application. 
 
 **Accuracy**:  Cody uses context from your codebase to substantially improve the accuracy of its responses compared to other AI-based tools. However, Sourcegraph does not guarantee the accuracy of Cody's answers. 
 
@@ -20,17 +20,45 @@ You must follow the acceptable use policies of the following LLM providers:
 [Anthropic Acceptable Use Policy](https://www.anthropic.com/aup)
 
 **Other frequently asked questions**
+    
+1. _What data does Sourcegraph collect when you use Cody?_
 
-1. *Will my queries or Cody's responses to my queries be used to train any generally available machine learning model?*
+    Sourcegraph collects and uses the following data to support and improve user experience:
+
+
+    **Usage Data** is usage and operations data in connection with your use of Cody, such as metrics on frequency and length of a user feature engagement. Usage Data does not contain personal data other than an anonymous user ID.
+
+
+    **User Feedback** is any form of feedback that the user submits, including thumbs up and thumbs down clicks and comments or ideas shared for the purpose of giving feedback.
+
+
+    In addition, when used with Sourcegraph Cloud, Sourcegraph also collects and uses the following data solely to provide the Service:
+
+
+    **User Prompts** are user submissions to Cody, such as a query or request. Sourcegraph translates the User Prompt into search query syntax and uses the search query syntax to find relevant code snippets in your codebase. Sourcegraph then submits the search query syntax and relevant code snippets  (“**LLM Prompt**”) to a third-party LLM. 
+
+
+    **Responses** are the outputs returned to you by Cody. 
+
+
+    For individuals who use the Sourcegraph Cody extension without connecting to a Sourcegraph Cloud or Self-hosted account (“**Sourcegraph Cody Community Edition**”), Sourcegraph also collects the following data, as defined above, to support and improve user experience, though none of it will be used to train any generally available models.
+
+* User Prompts
+* LLM Prompts
+* Responses
+
+
+2. _Will my User Prompts or Cody's Responses be used to train any generally available machine learning model?_
 
     No.
 
-1. *Will my queries to Cody be shared with any third parties?*
+3. _Will my User Prompts to Cody be shared with any third parties?_
 
-    Yes, we will send your queries to LLM providers we use for the sole purpose of providing you the service. 
+    We send LLM Prompts to a third-party LLM provider for the sole purpose of providing you the service. 
 
-1. *Will the LLMs use my Cody Q&A to train their models?*
+4. _Will the LLMs use my prompts to train their models?_
 
-    No, Sourcegraph has obtained commitments from our LLM providers that no Cody requests will be used to train LLM models. 
+    No, Sourcegraph has obtained commitments from our LLM providers that no Cody prompts will be used to train LLM models. 
+
 
 For more information, see [docs.sourcegraph.com/cody](https://docs.sourcegraph.com/cody).

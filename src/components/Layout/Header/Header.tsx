@@ -139,7 +139,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
                 <Link
                     href="/get-started"
                     className={classNames(
-                        'btn min-w-fit px-6 font-normal',
+                        'btn min-w-fit px-6 font-normal lg:px-4',
                         dark ? 'btn-inverted-primary' : 'btn-primary'
                     )}
                     title="Download Sourcegraph"
@@ -181,7 +181,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
                             </div>
                             {!props.minimal && (
                                 <>
-                                    <div className="hidden flex-1 md:ml-4 md:block">
+                                    <div className="hidden flex-1 md:ml-4 lg:block">
                                         <div className="flex space-x-3">
                                             <NavItems
                                                 classes={{
@@ -198,13 +198,13 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
                                             />
                                         </div>
                                     </div>
-                                    <div className="hidden items-center space-x-3 pr-2 md:ml-6 md:flex md:pr-0">
+                                    <div className="hidden items-center space-x-3 pr-2 md:ml-6 md:pr-0 lg:ml-0 lg:flex">
                                         {callToAction}
                                     </div>
                                 </>
                             )}
                         </div>
-                        <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
+                        <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
                             {/* Mobile menu button*/}
                             <Disclosure.Button
                                 className={classNames(
@@ -225,7 +225,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
             </div>
             <Disclosure.Panel
                 className={classNames(
-                    'border-b md:hidden',
+                    'border-b lg:hidden',
                     HEADER_CONTENT_THEME_CLASS[colorTheme].container,
                     HEADER_CONTENT_THEME_CLASS[colorTheme].panel
                 )}

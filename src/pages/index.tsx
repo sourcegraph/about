@@ -25,7 +25,7 @@ const testimonies: TestimonyProps[] = [
     {
         thumbnail: '/testimonies/bryce-kalow-2.svg',
         content: (
-            <p className="pb-[4px] text-xl">
+            <p className="pb-[4px] text-lg">
                 “By its nature and capabilities, Sourcegraph can be a tool to reduce friction, speed up feedback loops,
                 and improve developer velocity.”
             </p>
@@ -37,11 +37,11 @@ const testimonies: TestimonyProps[] = [
         thumbnail: '/testimonies/justin-phillip.svg',
         content: (
             <>
-                <p className="pb-1 text-xl">
+                <p className="pb-1 text-lg">
                     “During our decomp efforts, we also spent time to refactor our APIs. Many of these APIs were
                     undocumented and lacked a formalized contract.
                 </p>
-                <p className="pb-1 text-xl">
+                <p className="pb-1 text-lg">
                     {' '}
                     With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove
                     unused attributes that lived in different repositories, ultimately simplifying our APIs and speeding
@@ -55,7 +55,7 @@ const testimonies: TestimonyProps[] = [
     {
         thumbnail: '/testimonies/ronnie-magatti.svg',
         content: (
-            <p className="pb-1 text-xl">
+            <p className="pb-1 text-lg">
                 “With Sourcegraph, developers are more productive and it’s clear that every team is getting 1% better
                 every day.”
             </p>
@@ -157,7 +157,7 @@ const Home: FunctionComponent = () => (
         <IntegrationsSection />
 
         <ContentSection
-            className="mb-[16px] grid grid-cols-1 overflow-hidden rounded-lg bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:grid-cols-8 md:max-h-[310px] lg:max-h-[380px]"
+            className="mb-[16px] grid grid-cols-1 overflow-hidden rounded-lg bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:max-h-[310px] md:grid-cols-8 lg:max-h-[380px]"
             parentClassName="bg-white !pt-0"
         >
             <div className="p-4 md:col-span-4 lg:p-8 xl:p-12">
@@ -173,11 +173,14 @@ const Home: FunctionComponent = () => (
                     Working with Cody, Sourcegraph’s new AI coding assistant, is like a having a senior engineer as a
                     personal assistant who can search and read your codebase to find answers to your questions.
                 </p>
-                <Link href="/cody" title="Learn more about Cody" className="flex btn bg-transparent p-0 text-white">
+                <Link href="/cody" title="Learn more about Cody" className="btn flex bg-transparent p-0 text-white">
                     <ChevronRightIcon className="!mb-0 inline" />
                 </Link>
             </div>
-            <div aria-hidden={true} className="relative flex justify-end ml-[96px w-full md:col-span-4 ml-[136px] md:-ml-0 lg:-mt-0 lg:ml-40">
+            <div
+                aria-hidden={true}
+                className="ml-[96px relative ml-[136px] flex w-full justify-end md:col-span-4 md:-ml-0 lg:-mt-0 lg:ml-40"
+            >
                 <img
                     className="h-[437px] max-w-[637px] md:absolute md:-top-[90px] md:-right-[112px] md:h-[537px] md:w-[737px] lg:-top-[82px] lg:right-[54px] lg:h-[170%]"
                     src="/starship/cody-illustration.svg"
@@ -187,7 +190,7 @@ const Home: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection
-            className="relative max-w-full flex flex-col overflow-hidden ml-[32px] md:mx-4 py-[96px] md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px] !m-0"
+            className="relative !m-0 ml-[32px] flex max-w-full flex-col overflow-hidden py-[96px] md:mx-4 md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px]"
             parentClassName="!py-0 bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:px-0"
         >
             <img
@@ -204,7 +207,7 @@ const Home: FunctionComponent = () => (
             />
             <div className="z-10 flex flex-1 flex-col md:pl-sm">
                 <div className="w-fit md:self-end">
-                    <Heading className="mb-[10px] text-white" size="h2">
+                    <Heading className="mb-[10px] text-white !text-[36px]" size="h2">
                         Download Sourcegraph
                     </Heading>
                     <p className="mb-8 text-gray-200">For individual developers</p>
@@ -213,16 +216,16 @@ const Home: FunctionComponent = () => (
             </div>
             <div className="my-[42px] border-b border-gray-400 md:my-0 md:mx-[42px] md:h-[266px] md:border-l" />
             <div className="z-10 flex flex-1 flex-col md:pr-sm">
-                <Heading size="h4" className="mb-4 text-gray-200">
+                <Heading size="h4" className="mb-4 text-white">
                     Sourcegraph for Enterprise
                 </Heading>
                 <p className="mb-8 max-w-[376px] text-gray-200">
                     Get in touch to learn how organizations use Sourcegraph at Scale:
                 </p>
                 <div className="flex">
-                    <MeetWithProductExpertButton dark={true} requestInfo={true} buttonLocation={buttonLocation.body} />
+                    <MeetWithProductExpertButton dark={true} requestInfo={true} buttonLocation={buttonLocation.body} buttonClassName="text-white btn-outline-white" />
                     <MeetWithProductExpertButton
-                        buttonClassName="text-gray-200"
+                        buttonClassName="text-white"
                         chevron={true}
                         buttonLocation={buttonLocation.body}
                     >
@@ -265,7 +268,7 @@ const HomeHero: FunctionComponent = () => (
             <AppDownloadLinks className="flex flex-col items-center md:items-start" />
         </div>
 
-        <div className="mt-[70px] w-full rounded-tl-[10px] bg-[url('/home/banner.png')] bg-cover bg-no-repeat ml-sm md:mt-0 h-[362px] md:h-[543px] md:w-[758px] md:rounded-t-[10px]" />
+        <div className="mt-[70px] ml-sm h-[362px] w-full rounded-tl-[10px] bg-[url('/home/banner.png')] bg-cover bg-no-repeat md:ml-0 md:mt-0 md:h-[543px] md:w-[758px] md:rounded-t-[10px] xl:w-[878px]" />
     </ContentSection>
 )
 
@@ -273,7 +276,7 @@ const AppDownloadLinks: FunctionComponent<AppDownloadLinksProps> = ({ className 
     <div className={className}>
         <DownloadLink
             href="https://sourcegraph.com/search"
-            className="btn btn-inverted-primary w-fit px-4 font-normal"
+            className="btn btn-inverted-primary w-fit px-4 font-normal shadow-btn"
             title="Download for Mac"
             downloadName="app-download-mac-dmg"
         >
@@ -299,11 +302,11 @@ const AppDownloadLinks: FunctionComponent<AppDownloadLinksProps> = ({ className 
         <p className="mt-3 text-sm leading-[21px] text-gray-300">
             By using Sourcegraph, you agree to the{' '}
             <Link href="/terms/privacy" title="Privacy polic" className="text-gray-300 underline">
-                privacy policy
+                Privacy Policy
             </Link>{' '}
             and{' '}
             <Link href="/terms" title="Terms" className="text-gray-300 underline">
-                terms
+                Terms of Service
             </Link>
             .
         </p>
@@ -311,7 +314,7 @@ const AppDownloadLinks: FunctionComponent<AppDownloadLinksProps> = ({ className 
 )
 
 const Testimony: FunctionComponent<TestimonyProps> = ({ thumbnail, content, about, github }) => (
-    <div className="flex items-start rounded border px-8 py-12 leading-7 md:p-12">
+    <div className="flex items-start rounded-lg border px-8 py-12 leading-7 md:p-12">
         <img className="col-span-1 mr-6 min-w-[40px]" src={thumbnail} alt={about} />
         <div className="col-span-6">
             <div>{content}</div>

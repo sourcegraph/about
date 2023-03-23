@@ -16,22 +16,25 @@ interface TimeProps {
 
 export const CountDown: FunctionComponent<Props> = ({ className, launchDate }) => {
     const [time, setTime] = useState({
-        days: '0',
-        hours: '0',
-        minutes: '0',
-        seconds: '0',
+        days: '00',
+        hours: '00',
+        minutes: '00',
+        seconds: '00',
         launched: false,
     })
 
     useEffect(() => {
         const date = new Date(launchDate).getTime()
-        const getRemainingTime = (): void => {
-            setTime(remainingTime(date))
-        }
-        getRemainingTime()
 
-        const countdown = setInterval(getRemainingTime, 1000)
-
+        const countdown = setInterval(() => {
+            const remainingTimeObj = remainingTime(date)
+            if (remainingTimeObj.launched) {
+                clearInterval(countdown)
+            } else {
+                setTime(remainingTimeObj)
+            }
+        }, 1000)
+        
         return () => clearInterval(countdown)
     }, [launchDate])
 
