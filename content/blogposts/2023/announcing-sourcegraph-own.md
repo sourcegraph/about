@@ -14,17 +14,17 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/sourcegraph-
 
 We recently wrote about our [vision for code ownership](https://about.sourcegraph.com/blog/our-vision-for-code-ownership) and why we think radically better code ownership tooling is needed. In short, code ownership in practice is more nuanced than a simplistic “one file is owned by one dev” model. Even for simple scenarios, current ownership tooling is insufficient outside of the basic PR review workflows. 
 
-We’re working on a radically better way to manage code ownership that’ll:
+We’re working on a better way to manage code ownership that will:
 - Be automatically evergreen, with a high signal-to-noise ratio.
 - Answer nuanced questions about ownership: who knows about code? Who is accountable for code?
 - Is natively integrated into key workflows and enterprise systems.
 <br/>
 
-Today, we’re very pleased to announce a new experimental feature, Sourcegraph Own. It’s our very first step towards our vision, laying the foundation for radically better ownership tooling.
+Today, we’re releasing a new experimental feature, Sourcegraph Own. It’s our very first step towards our vision, laying the foundation for radically better ownership tooling.
 
 In this release, we’ve focused on letting you answer any question about existing code ownership data. Who owns files that relate to this code? Which files are unowned? Who should I contact to get this bad code pattern removed from the codebase? Answering those questions is now one click away.
 
-Sourcegraph Own ingests data from existing CODEOWNERS files and gives you a unified layer to view and search it. Alternatively, you can send your own custom format for code ownership data to Sourcegraph’s API. We’ve added [Teams](https://docs.sourcegraph.com/admin/teams) in Sourcegraph so that any team tree structure can also be represented.
+Sourcegraph Own ingests data from existing CODEOWNERS files and gives you a unified layer to view and search it. You can send your own custom format for code ownership data to Sourcegraph’s API. We’ve added [Teams](https://docs.sourcegraph.com/admin/teams) in Sourcegraph so that any team tree structure can also be represented.
 
 Let’s go through an example of a powerful workflow that Own unlocks. Assume the `Authenticator` symbol is a bad code pattern or is vulnerable and needs to be removed from the codebase. Sourcegraph lets you quickly search for occurrences in the codebase ([example query](https://sourcegraph.com/search?q=context:global+type:symbol+Authenticator%24&patternType=regexp&sm=0)).
 
