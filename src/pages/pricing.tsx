@@ -143,7 +143,15 @@ const PricingPage: FunctionComponent = () => {
                 <div className="col-span-full mb-sm md:col-span-5 md:col-start-2 md:mb-0">
                     <PricingPlan
                         name="Enterprise Starter"
-                        description="Full platform access for teams and orgs. Flexible deployment options. Online Terms of Service and workshop based evaluation path."
+                        description={
+                            <h3 className="my-sm md:min-h-[108px] max-w-sm text-lg font-normal">
+                                Full platform access for teams and orgs. Flexible deployment options.{' '}
+                                <Link href="/terms" title="Online Terms of Service" className="text-black underline">
+                                    Online Terms of Service
+                                </Link>{' '}
+                                and workshop based evaluation path.
+                            </h3>
+                        }
                         price="Starts at $5k/year"
                         priceDetail="Scales with your team"
                         buttons={<StartFreeButton />}
@@ -155,7 +163,12 @@ const PricingPage: FunctionComponent = () => {
                 <div className="col-span-full md:col-span-5 md:col-start-7">
                     <PricingPlan
                         name="Enterprise"
-                        description="All the benefits of Enterprise Starter with increased Support SLAs and custom deployment options."
+                        description={
+                            <h3 className="my-sm md:min-h-[108px] max-w-sm text-lg font-normal">
+                                All the benefits of Enterprise Starter with increased Support SLAs and custom deployment
+                                options.
+                            </h3>
+                        }
                         price="Starts at $50k/year"
                         priceDetail="Scales with your team"
                         buttons={<EnterpriseButtons />}
