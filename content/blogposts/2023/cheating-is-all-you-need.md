@@ -24,13 +24,13 @@ There is something **legendary and historic** happening in software engineering,
 
 LLMs aren’t just the biggest change since social, mobile, or cloud–they’re the biggest thing since the World Wide Web. And on the coding front, they’re the biggest thing since IDEs and Stack Overflow, and may well eclipse them both.
 
-But most of the engineers I personally know are sort of squinting at it and thinking, “Is this another crypto?” Even the devs at Sourcegraph are skeptical. I mean, what engineer isn’t. Being skeptical is a survival skill.
+But most of the engineers I *personally* know are sort of squinting at it and thinking, “Is this another crypto?” Even the devs at Sourcegraph are skeptical. I mean, what engineer isn’t. Being skeptical is a survival skill.
 
-Remember I told you how my Amazon shares would have been worth $130 million USD today if I hadn’t been such a skeptic about how big Amazon was going to get, and unloaded them all back in 2004-ish. Right? I told you about that? I’m sure I mentioned it once or twice. Not that I am bitter. No.
+Remember I told you how my Amazon shares would have been worth $130 million USD today if I hadn’t been such a *skeptic* about how big Amazon was going to get, and unloaded them all back in 2004-ish. Right? I told you about that? I’m sure I mentioned it once or twice. Not that I am bitter. No.
 
 But did I ever tell you about the time AWS was just a demo on some engineer’s laptop? No? Well it was [Ruben Ortega](https://www.linkedin.com/in/rubeneortega/) and [Al Vermeulen](https://www.linkedin.com/in/allan-vermeulen-58835b/). They were walking around the eng department at Amazon, showing their “web service” demo to anyone who’d watch it. This was back in maybe… 2003? Ish? They showed us how you could make a service call over the web, like by hitting a URL and sending the right query parameters.
 
-Well lo and behold we were skeptical. Why the hell would you make a service call over the web? That’s not what it was even designed for! Not to mention, it obviously wouldn’t perform as well as CORBA (Amazon’s stupid-ass RPC system at the time). The whole thing just didn’t make any sense to us.
+Well lo and behold we were *skeptical*. Why the hell would you make a service call over the web? That’s not what it was even designed for! Not to mention, it *obviously* wouldn’t perform as well as CORBA (Amazon’s stupid-ass RPC system at the time). The whole thing just didn’t make any sense to us.
 
 We were seeing the first little flecks of lava from what would become a trillion-dollar volcano of money called AWS and Cloud Computing.
 
@@ -40,11 +40,11 @@ But a lot of us were skeptical. To most of us, those little lava flecks looked l
 
 I could tell you a LOT of stories like the web-services one. Great big shit always starts life as a demo.
 
-What about chatting with people in a browser? Doesn’t matter whether you’re using Facebook, Google Chat, LinkedIn, or just chatting with a customer service agent: if you’re having a conversation with someone in a browser, all that shit started life as a teeny demo of 2 engineers sending messages back and forth over a “hanging GET” channel back in 2005. Entire industries were built on that one little channel, and it wasn’t even very good.
+What about chatting with people in a browser? Doesn’t matter whether you’re using Facebook, Google Chat, LinkedIn, or just chatting with a customer service agent: if you’re having a conversation with someone in a browser, all that shit started life as a teeny demo of 2 engineers sending messages back and forth over a “hanging GET” channel back in 2005. Entire *industries* were built on that one little channel, and it wasn’t even very good.
 
-What about Kubernetes? I remember seeing a demo of that early on, on Brendan Burns’ work laptop, when it was called mini-Borg. Entire industries are being built on Kubernetes, and it’s not even very good either. 😉 Or look at Docker! Something as innocuous as linux cgroups, a little process-isolation manager, became the technical foundation for containers, which now utterly pervade our industry.
+What about Kubernetes? I remember seeing a demo of that early on, on Brendan Burns’ work laptop, when it was called mini-Borg. Entire *industries* are being built on Kubernetes, and it’s not even very good either. 😉 Or look at Docker! Something as innocuous as linux cgroups, a little process-isolation manager, became the technical foundation for containers, which now utterly pervade our industry.
 
-If you can build something as big as Amazon Web Services with a stack based on a simple service call, or whole social networks and customer service suites based on simple browser-to-browser communication, or a robust way of delivering and managing software based on a little process isolation code, then just imagine how big a thing you could build – bear with me here – if you had the goddamn Singularity as your starting point?
+If you can build something as big as Amazon Web Services with a stack based on a simple service call, or whole social networks and customer service suites based on simple browser-to-browser communication, or a robust way of delivering and managing software based on a little process isolation code, then just imagine how big a thing you could build – bear with me here – if you had the *goddamn Singularity* as your starting point?
 
 I mean, I joke, but… I mean… Right? I’m guessing you prolly missed it in OpenAI’s 98-page [GPT-4 technical report](https://cdn.openai.com/papers/gpt-4.pdf), but large models are apparently already prone to discovering that “power-seeking” is an effective strategy for increasing their own robustness. Open the PDF and search for “power-seeking” for a fun and totally 100% non-scary [read](https://twitter.com/Suhail/status/1637952234913939460).
 
@@ -52,13 +52,13 @@ You can build truly massive things by building upon little technical breakthroug
 
 And folks, this technical breakthrough? It ain’t little.
 
-If you’re not pant-peeingly excited and worried about this yet, well… you should be.
+If you’re not pant-peeingly excited *and* worried about this yet, well… you should be.
 
 ##### And yet the Mehs prevail
 
 We did an internal poll at Sourcegraph: Do you have positive sentiment or negative sentiment about LLMs for coding? Options were Positive, Negative, and Meh. And lo, it was about ⅔ Meh or Negative (i.e., Skeptics), which I suspect is fairly representative of the whole industry.
 
-I asked around, and even as of a couple weeks ago, some devs questioned whether ChatGPT could even write working code, let alone write a full program by simply by telling it to write it.
+I asked around, and even as of a couple weeks ago, some devs questioned whether ChatGPT could even write *working* code, let alone write a full program by simply by telling it to write it.
 
 So here I am, talking about money volcanoes, and my coworkers have formed a huge whirling meh-nado. Which natural disaster should you believe?
 
@@ -106,7 +106,7 @@ As you can see from the screenshot, I ran the command and it opened a buffer, pr
 
 In one shot, ChatGPT has produced completely working code from a sloppy English description! With voice input wired up, I could have written this program by asking my computer to do it.
 
-And not only does it work correctly, the code that it wrote is actually pretty decent emacs-lisp code. It’s not complicated, sure. But it’s good code.
+And not only does it work correctly, the code that it wrote is actually pretty decent emacs-lisp code. It’s not *complicated*, sure. But it’s good code.
 
 Of course people have done much, much fancier things than this. Someone [wrote](https://twitter.com/heykahn/status/1635752848398102530?s=20) a product description on a napkin, took a picture, and GPT wrote a working web app that implements the product description on the napkin in the picture. The amount of power here is honestly unknown; it’s more like a cavern that we haven’t fully explored. And it just gets deeper as the LLMs get bigger.
 
@@ -314,7 +314,7 @@ Say hi to Cody:
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-5.png"
     alt="Cody logo"
-    catpion="Cody logo"
+    caption="Cody logo"
 /><br/>
 
 Cody is Sourcegraph’s new LLM-backed coding assistant. Cody knows about your code. It has templated actions, such as writing unit tests, generating doc comments, summarizing code, that kind of thing. You know. Stuff you can choose from a menu. Like other assistants. It even has code completions, if you’re into that sort of thing.
@@ -330,7 +330,7 @@ Currently Cody is a VSCode plugin, though we’ll have it in other places soon e
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-6.png"
     alt="Using Cody in VS Code"
-    catpion="Using Cody in VS Code"
+    caption="Using Cody in VS Code"
 /><br/>
 
 Cody scales up to the very biggest code bases in the world. And even though Cody is still a baby, just like Baby AWS back on Ruben’s stinkpad in 2003, it’s already able to lift a huge space rhino using only the power of the Force. Hang on, sorry wrong baby.
