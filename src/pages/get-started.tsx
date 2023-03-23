@@ -186,15 +186,14 @@ const InterstitialAppContent: FunctionComponent = () => (
 
             <p className="mb-0 mt-2.5 flex text-gray-500">
                 MacOS 13+ required.
-                <DownloadLink
-                    href="https://storage.googleapis.com/sourcegraph-app-releases/latest/sourcegraph_latest_macOS_universal_app_bundle.zip"
+                <Link
+                    href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+209542.7216ba/sourcegraph_2023.03.23+209542.7216ba_darwin_all.zip"
                     className="ml-1 font-normal text-gray-500 underline"
                     title="Old versions"
-                    downloadName="app-download-mac-zip"
                     target="_blank"
                 >
                     Old Versions
-                </DownloadLink>
+                </Link>
                 .
             </p>
 
