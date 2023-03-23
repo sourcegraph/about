@@ -10,7 +10,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post
 changelogItems:
 ---
 
-We all know we're headed towards a future where there are a lot more people coding and even more code generated, much of it written by AI. With today's tools, this will be a mess. But with the right tools, this can lead to the most sustained period of human advancement.
+We're headed towards a future with a lot more people and AIs writing a lot more code. With today's tools, this will be a mess. But with the right tools, this can lead to the most sustained period of human advancement.
 
 We're building the right tools for the future of code. Sourcegraph is a code intelligence platform, which is a combination of 3 things:
 * **The graph of code**, which means all the relevant code plus code navigation, dep graph, ownership, runtime, logging, tracing, deployment, and more.
@@ -23,7 +23,7 @@ Today, we're making another big step toward this vision with Sourcegraph 5.0, wh
 * **Cody**, our AI assistant that feeds context from Sourcegraph's code graph to the LLM to answer your questions about your own entire codebase;
 * **Own**, which adds code ownership information to the code graph;
 * **App**, which runs Sourcegraph as a local desktop app so any dev can start using it quickly;
-* And much more. 
+* and much more. 
 
 Read on to discover everything included in Sourcegraph 5.0.
 <br/>
@@ -31,9 +31,9 @@ Read on to discover everything included in Sourcegraph 5.0.
 <Badge link="/cody" text="AI" color="blue" size="small" />
 #### Cody, your code-aware programmer's assistant
 
-Cody is an AI coding assistant that can find, explain, and write code. Cody can answer questions about both general programming topics and your specific codebase from right inside your editor. Cody is powered by Sourcegraph Code Intelligence, so unlike other coding assistant, it knows about your codebase and not just about open source code.
+Cody is an AI coding assistant that can find, explain, and write code. Cody can answer questions about both general programming topics and your specific codebase from right inside your editor. Cody is powered by Sourcegraph's graph of code intelligence, so unlike other coding assistants, it knows about your codebase and not just about open source code.
 
-We're releasing Cody as experimental in 5.0, with general availability coming in a future release. [Learn more about Cody](https://about.sourcegraph.com/cody) and [sign up for access to Cody.](https://sourcegraph.typeform.com/cody-signup)
+We're releasing Cody as experimental in 5.0, with general availability coming in a future release. [Learn more about Cody](https://about.sourcegraph.com/cody) and [sign up for access to Cody](https://sourcegraph.typeform.com/cody-signup).
 
 <br/>
 
@@ -42,7 +42,7 @@ We're releasing Cody as experimental in 5.0, with general availability coming in
 
 Sourcegraph Own manages code ownership for your entire codebase across every repository and code host. React to incidents faster and increase productivity by making it easy to find who owns any code quickly.
 
-We are launching a preview of Sourcegraph Own as an experimental feature and will iterate over the coming months to deliver our full roadmap vision to every customer. [Read more in the full announcement for Sourcegraph Own](https://about.sourcegraph.com/blog/inroducing-sourcegraph-own).
+We are launching a preview of Sourcegraph Own as an experimental feature and will iterate over the coming months to deliver our full roadmap vision to every customer. [Read more in the full announcement for Sourcegraph Own.](https://about.sourcegraph.com/blog/inroducing-sourcegraph-own)
 
 <Video 
   source={{
@@ -61,7 +61,7 @@ We are launching a preview of Sourcegraph Own as an experimental feature and wil
 
 In 5.0, we’re introducing a number of exciting code exploration experience improvements.
 
-First and foremost, we've shipped the CodeMirror editor as the default blob viewer. This new editor is much more efficient with large files, making it easier and faster than ever to explore code. It also has great extensibility potential, enabling us to ship more IDE-like code exploration features in the future.
+We shipped the CodeMirror editor as the default blob viewer. This new editor is much more efficient with large files, making it easier and faster than ever to explore code. It also has great extensibility potential, enabling us to ship more IDE-like code exploration features in the future.
 
 We've also enhanced the blob view by adding keyboard navigation. This means you can move around your codebase quickly and efficiently without ever taking your hands off the keyboard. We’ve also added keyboard shortcuts for switching between the code editor, files, and symbols trees. You can turn this on using the `blob-page-switch-areas-shortcuts` feature flag.
 
@@ -69,7 +69,7 @@ We're also shipping file and symbol trees with drastically improved accessibilit
 
 Plus, we've made a number of improvements to the repo and directory pages. We're now rendering the README file in the directory so you can get a quick overview of what's inside. We've also added a linear file browser, which shows diff stats over the past month, so you can quickly see what's changed recently. And we're now showing recent commits and contributors, so you can get a sense of who's been working on the codebase.
 
-Finally, we've made some improvements to the git blame decorations. We've improved the design and now show the file in the previous revision. Where possible, we're linking to GitHub issues and pull requests, so you can quickly jump to relevant discussions.
+Finally, we've made some improvements to the Git blame decorations. We've improved the design and now show the file in the previous revision. Where possible, we're linking to GitHub issues and pull requests, so you can quickly jump to relevant discussions.
 
 All of these improvements add up to a more streamlined, efficient, and powerful code exploration experience. We're excited to see how they'll help our users better understand and work with the codebase!
 
@@ -87,7 +87,7 @@ All of these improvements add up to a more streamlined, efficient, and powerful 
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 #### A completely re-imagined search input
 
-The search input has been redesigned to greatly improve usability. New contextual suggestions help users learn the Sourcegraph query language as they search. These powerful suggestions react to the user’s current query to suggest related filters. How suggestions are displayed has been unified across contexts and filters, and the history mode has been integrated directly into input. Lastly, improved and expanded keyboard shortcuts also make navigation much easier.
+The search input has been redesigned to greatly improve usability. New contextual suggestions help users learn the Sourcegraph query language as they search. These powerful suggestions react to the user’s current query to suggest related filters. How suggestions are displayed has been unified across contexts and filters, and the history mode has been integrated directly into input. Finally, improved and expanded keyboard shortcuts also make navigation much easier.
 
 <br/>
 <div className="mb-sm">
@@ -101,7 +101,7 @@ The search input has been redesigned to greatly improve usability. New contextua
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 #### Intelligent search ranking
 
-Previously, Sourcegraph ordered search results in a simple way that could make it hard to find the most relevant files. In version 4.6, we're releasing two significant improvements to search ranking:
+Previously, Sourcegraph ordered search results in a simple way that could make it hard to find the most relevant files. In version 5.0, we're releasing two significant improvements to search ranking:
 
 - Search results are no longer grouped by repository. Instead, we return the most relevant files first. This helps prevent users from requiring workarounds to find what they’re looking for, for example updating the search to exclude certain repositories.
 - Search now incorporates a "file importance" score to help boost high-quality, commonly-used files. This score is based on the code dependency graph and is only available when precise code intelligence is enabled.
