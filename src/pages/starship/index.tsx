@@ -6,16 +6,46 @@ import {
     Heading,
     Layout,
     FeatureUser,
-    TwoColWithImage,
-    TwoRowWithImage,
-    CountDown,
     CustomerLogos,
     StarshipPageCallToAction,
     HubSpotForm,
     ContentSection,
+    BlogListItem,
+    YouTube,
 } from '../../components'
+// import { DemoVideo } from '../../components/DemoVideo'
 
 import styles from './Starship.module.scss'
+
+const blogs = [
+    {
+        title: 'Cheating is All You Need',
+        href: 'https://about.sourcegraph.com/blog/cheating-is-all-you-need',
+        description:
+            'There is something legendary and historic happening in software engineering, right now as we speak, and yet most of you don’t realize at all how big it is.',
+        imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/starship-blog-hero-1.png',
+    },
+    {
+        title: 'Sourcegraph 5.0 release post',
+        href: 'https://about.sourcegraph.com/blog/release/5.0',
+        description:
+            'Sourcegraph 5.0 introduces more than 20 updates and improvements.',
+        imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/release-post/5.0/sourcegraph-5-0-hero.png',
+    },
+    {
+        title: 'Announcing Sourcegraph Own',
+        href: 'https://about.sourcegraph.com/blog/announcing-sourcegraph-own',
+        description:
+            "Sourcegraph Own, available now as an experimental feature, integrates evergreen code ownership with Sourcegraph's code intelligence platform.",
+        imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/sourcegraph-own-og.png',
+    },
+    {
+        title: 'Announcing the Sourcegraph app',
+        href: 'https://about.sourcegraph.com/blog/announcing-sourcegraph-app',
+        description: 'The Sourcegraph app, now in beta, brings code intelligence to your local machine in a free, lightweight package.',
+        imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-sourcegraph-app.png',
+    },
+]
 
 declare global {
     interface Window {
@@ -33,62 +63,67 @@ const Starship: FunctionComponent = () => (
         displayChildrenUnderNav={true}
         meta={{
             image: '/starship/starship_og.png',
-            title: 'Sourcegraph Starship: 3/23',
-            description: 'Join us on March 23 for Starship and the release of Sourcegraph 5.0',
+            title: 'Code intelligence + AI = 🤯',
+            description:
+                'Sourcegraph 5.0, the latest release of our code intelligence platform, is now available. Watch the livestream.',
         }}
     >
-        {/* Launch Countdown */}
-        <div>
-            <div className="flex justify-center">
-                <img
-                    src="/sourcegraph/sourcegraph-mark.svg"
-                    className="h-[67.71px] w-[61.71px] md:h-24 md:w-24"
-                    alt="Sourcegraph"
-                />
-                <p className="ml-[17px] font-grotesk text-[40px] font-light leading-[64px] tracking-[-1px] text-white md:ml-[22px] md:text-[86px] md:leading-[110px]">
-                    5.0
-                </p>
-                <div className="ml-2 mt-2.5 h-[56.39px] w-[0.96px] bg-white sm:ml-5 md:h-[88px] md:w-[1.5px]" />
-                <img
-                    src="/starship/starship-blur.svg"
-                    className="ml-2 h-[158px] w-[200px] sm:ml-5 sm:h-[209.9px] sm:w-[284px] md:ml-[31px] md:h-[327.57px] md:w-[442px]"
-                    alt="Starship"
-                />
-            </div>
-
-            <CountDown className="relative top-[-60px] px-[21px] md:top-[-183px]" launchDate="2023-03-23T17:00:00Z" />
+        <div className="flex justify-center md:mt-[51px]">
+            <img
+                src="/sourcegraph/sourcegraph-mark.svg"
+                className="h-[67.71px] w-[61.71px] md:h-24 md:w-24"
+                alt="Sourcegraph"
+            />
+            <p className="ml-[17px] font-grotesk text-[40px] font-light leading-[64px] tracking-[-1px] text-white md:ml-[22px] md:text-[86px] md:leading-[110px]">
+                5.0
+            </p>
+            <div className="ml-2 mt-2.5 h-[56.39px] w-[0.96px] bg-white sm:ml-5 md:h-[88px] md:w-[1.5px]" />
+            <img
+                src="/starship/starship-blur.svg"
+                className="ml-2 h-[158px] w-[200px] sm:ml-5 sm:h-[209.9px] sm:w-[284px] md:ml-[31px] md:h-[327.57px] md:w-[442px]"
+                alt="Starship"
+            />
         </div>
 
-        {/* Event Leads */}
-        <ContentSection className="max-w-[960px] text-center md:-mt-[87px]" parentClassName="!pt-0">
-            <div className="mb-[83px] flex flex-col md:mb-[96px]">
+        <ContentSection className="relative text-center md:-mt-[22px]" parentClassName="!py-0">
+            <div className="mx-auto mb-[48px] flex max-w-[960px] flex-col md:mb-24">
                 <Heading
                     size="h1"
-                    className="!font-grotesk !text-[39px] !font-medium !leading-[55px] !tracking-[-1px] text-white md:!text-[52px] md:!leading-[73px]"
+                    className="max-w-[860px] self-center !font-grotesk !text-[36px] font-medium leading-[55px] tracking-[-1px] text-white md:text-[52px] md:leading-[73px]"
                 >
                     Code intelligence + AI = 🤯
                 </Heading>
-                <Heading size="h3" className="mt-6 font-normal text-gray-200 md:mt-4">
-                    Join us on March 23 for our next Starship launch event, where we’ll unveil the next evolution of
-                    Sourcegraph’s code intelligence platform.
+                <Heading size="h3" className="mt-6 max-w-[860px] self-center font-normal text-gray-200 md:mt-4">
+                    Sourcegraph 5.0, the latest release of our code intelligence platform, is now available. Watch the
+                    livestream.
                 </Heading>
-            </div>
+                <YouTube
+                    title="Starship Talks: A new era for software and how it’s built" 
+                    id="tggj3o1pL5U"
+                    showTitle={true}
+                />
+                <br/><br/><br/>
+                <div className="flex-col">
+                    <Heading size="h4" className="text-white">
+                        Register for Dev Talks:
+                    </Heading>
 
-            <div className="flex-col">
-                <Heading size="h4" className="text-white">
-                    Register for the Starship event:
-                </Heading>
-
-                <div className={classNames('mx-auto mt-6 md:max-w-[491px] md:px-10', styles.container)}>
+                    <div className={classNames('mx-auto mt-6 md:max-w-[491px] md:px-10', styles.container)}>
                     <HubSpotForm
                         formId="93419890-2b5e-4109-ad13-0fd2ee0c1607"
-                        inlineMessage="Thanks for registering for Starship! You will receive event updates and product announcements from Sourcegraph in your email."
+                        inlineMessage="Thanks for registering for Starship Dev Talks! You will receive event updates and product announcements from Sourcegraph in your email."
                         onFormSubmitted={() => {
                             window.lintrk?.('track', { conversion_id: 12782521 })
                         }}
                     />
+                    </div>
                 </div>
             </div>
+            <img
+                src="/starship/launch.svg"
+                alt="Launch Pill"
+                className="absolute top-[217.7px] left-[6.29px] hidden blur-sm md:block lg:left-[90.29px]"
+            />
         </ContentSection>
 
         <ContentSection
@@ -97,39 +132,7 @@ const Starship: FunctionComponent = () => (
         >
             <div>
                 <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-white md:max-w-[491px]">
-                    STARSHIP TALKS
-                </p>
-                <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-blue-300 md:max-w-[491px]">
-                    MARCH 23, 10AM - 12PM PT
-                </p>
-                <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
-                    We’re entering a new era for software and how it’s built
-                </p>
-                <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-gray-200 md:max-w-[491px]">
-                    Join Sourcegraph and some of the leaders building (and backing) the tools devs use today for a
-                    series of talks around the intersection of AI and code intelligence.
-                </p>
-                <img src="/starship/launch.svg" alt="Launch Pill" className="mt-[115px] hidden blur-sm md:block" />
-            </div>
-
-            <div className="flex flex-col gap-y-9">
-                <Heading size="h6" className="invisible text-white md:visible">
-                    FEATURING
-                </Heading>
-                <FeatureUser image="/starship/davidsacks.png" name="David Sacks" title="Founder & Partner" company="Craft Ventures" />
-                <FeatureUser image="/starship/simonmarlow.png" name="Simon Marlow" title="Code Intelligence" company="Meta" />
-                <FeatureUser image="/starship/ericabrescia.png" name="Erica Brescia" title="Managing Director" company="Redpoint Ventures" />
-                <FeatureUser image="/starship/darioamodei.png" name="Dario Amodei" title="CEO and Co-Founder" company="Anthropic" />
-            </div>
-        </ContentSection>
-
-        <ContentSection
-            parentClassName="!py-0"
-            className="mx-auto flex max-w-[1061px] flex-col justify-between md:flex-row"
-        >
-            <div>
-                <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-white md:max-w-[491px]">
-                    DEV TALKS
+                    UPCOMING: DEV TALKS
                 </p>
                 <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-blue-300 md:max-w-[491px]">
                     MARCH 30, 9AM - 11AM PT
@@ -170,46 +173,13 @@ const Starship: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        {/* Launch Features */}
-        <ContentSection parentClassName="md:!py-0 md:-mt-3">
-            <Heading size="h6" className="text-center text-2xl	 font-normal text-white md:font-spaceMono">
-                WHAT WE’RE SHIPPING
+        <ContentSection className="mb-16 pt-[16px] md:mb-24" parentClassName="!py-0">
+            <Heading size="h3" className="mb-6 max-w-[604px] text-white md:mb-16">
+                Learn more about Sourcegraph 5.0
             </Heading>
-
-            <TwoColWithImage
-                title="Cody AI"
-                description="Code search helps engineers quickly understand and navigate large codebases. But what if you could have a senior engineer as a personal assistant, who can search and read your codebase to find answers to your questions? Cody, Sourcegraph’s new AI coding assistant, will do just that."
-                image="/starship/cody-illustration.svg"
-                className="pt-3xl md:pt-5xl"
-            />
-
-            <TwoRowWithImage
-                title="Code ownership"
-                description="Understanding who owns which parts of a codebase is a common challenge among large and growing software teams. Knowing who to talk to when proposing a change to code or who to contact to help during a service outage is difficult. Sourcegraph is solving this problem with Sourcegraph Own."
-                image="/starship/own-illustration.svg"
-                className="mt-16 md:mt-24"
-            />
-
-            <TwoRowWithImage
-                title="Sourcegraph App"
-                description="We’re releasing a lightweight, single-binary version of Sourcegraph to make running a personal Sourcegraph instance on your local machine more powerful and easier than ever."
-                image="/starship/starship-app.svg"
-                className="mt-[64px] md:mt-[96px]"
-            />
-
-            <TwoColWithImage
-                title="Sourcegraph Sentinel"
-                description="Take our new Software Composition Analysis (SCA) tool for a spin to see how it lets you monitor, prioritize, and fix vulnerable open source dependencies."
-                image="/starship/sentinel-illustration.svg"
-                className="mt-[78px] hidden"
-            />
-
-            <TwoColWithImage
-                title="Support for enterprise scale"
-                description="Sourcegraph’s code intelligence platform helps small and large software teams find and fix code everyday. With Sourcegraph 5.0, we’re improving our platform to meet the demands of even the world’s largest companies."
-                image="/starship/mid-page-launch-pills.svg"
-                className="mt-[78px]"
-            />
+            {blogs.map(blog => (
+                <BlogListItem key={blog.title} {...blog} />
+            ))}
         </ContentSection>
 
         {/* CTA */}

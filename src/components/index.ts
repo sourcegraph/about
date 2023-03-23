@@ -43,6 +43,7 @@ export {
     PostsList,
     PostsListPage,
     ReleasePost,
+    BlogListItem,
 } from './Blog'
 
 // Carousels
