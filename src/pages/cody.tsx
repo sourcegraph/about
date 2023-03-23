@@ -57,7 +57,7 @@ const CodyPage: FunctionComponent = () => (
             </Heading>
             <p className="mt-4 text-lg  text-gray-200">
                 Answer questions about both general programming topics and your specific codebase from right inside your
-                editor. Cody knows about your local code and can learn from all the code and documentation inside your
+                editor. Cody knows about your local code and can learn from the code graph and documentation inside your
                 organization.
             </p>
             <img src="/cody/cody.svg" alt="Own Illustration" className="w-full max-w-[630px]" />
@@ -69,11 +69,10 @@ const CodyPage: FunctionComponent = () => (
         >
             <div className="max-w-[529px]">
                 <Heading size="h2" className="!text-4xl text-white">
-                    Cody is now experimental
+                    Cody is experimental
                 </Heading>
                 <p className="mt-6 text-lg text-gray-200">
-                    Cody works with Sourcegraph’s precise code intelligence and code search to provide even better
-                    accurate results.
+                    Often magical, often frustratingly wrong...but getting better quickly.
                 </p>
             </div>
             <div className="flex max-w-[452px] flex-col justify-center border-t border-gray-500 pt-8 md:h-[232px] md:border-l md:border-t-0 md:pl-8 md:pt-0">
