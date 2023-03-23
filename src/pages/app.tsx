@@ -64,7 +64,7 @@ const AppPage: FunctionComponent = () => {
                     <Heading as="h1" size="h6">
                         SOURCEGRAPH APP
                     </Heading>
-                    <Badge size="small" text="Beta" color="dark-blue" />
+                    <Badge size="small" text="Experimental" color="dark-blue" />
                 </div>
 
                 <Heading as="h2" size="h1" className="mt-2 md:text-8xl">
@@ -238,19 +238,18 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
 
 const DownloadSection: FunctionComponent = () => (
     <>
-        <DownloadLink
-            href="https://sourcegraph.com/search"
+        <Link
+            href="https://storage.googleapis.com/sourcegraph-app-releases/latest/Sourcegraph%20App.dmg"
             className="btn btn-inverted-primary w-fit px-4 font-normal shadow-btn"
-            title="Download for Mac"
-            downloadName="app-download-mac-dmg"
+            title="Download for mac"
         >
-            Download for Mac
+            Download for mac
             <Badge className="ml-2" size="small" text="Beta" color="blurple" />
-        </DownloadLink>
+        </Link>
         <p className="mt-3 text-sm text-gray-300">
             MacOS 13+ required.{' '}
             <Link
-                href="https://docs.sourcegraph.com/app"
+                href="https://storage.googleapis.com/sourcegraph-app-releases/latest/sourcegraph_latest_macOS_universal_app_bundle.zip"
                 title="Older versions"
                 className="text-sm leading-[21px] text-gray-300 underline"
                 target="_blank"
