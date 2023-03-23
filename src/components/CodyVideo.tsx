@@ -48,14 +48,6 @@ export const DemoVideo: React.FunctionComponent<{
             // eslint-disable-next-line react/forbid-dom-props
             style={{ aspectRatio: videoInfo.dimensions }}
         >
-            {/* <track
-                default={true}
-                label="English"
-                kind="captions"
-                srcLang="en"
-                src={videoInfo.track}
-                data-cookieconsent="ignore"
-            /> */}
             <source type="video/webm" src={videoInfo.webm} data-cookieconsent="ignore" />
             <source type="video/mp4" src={videoInfo.mp4} data-cookieconsent="ignore" />
         </video>
