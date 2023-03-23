@@ -16,7 +16,7 @@ We're building the right tools for the future of code. Sourcegraph is a code int
 * **The graph of code**, which means all the relevant code plus code navigation, dep graph, ownership, runtime, logging, tracing, deployment, and more.
 * **Workflows** to help devs write a new feature faster, fix bugs/vulns faster, and do refactors/migrations faster.
 * **Large language models** that read the relevant parts of the code graph to combine general intuition with specific data to power these workflows.
-* <br/>
+<br/>
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/5.0/cip-diagram.png"
