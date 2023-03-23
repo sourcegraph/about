@@ -12,7 +12,7 @@ import {
     PricingPlan,
     PricingPlanFeature,
     ALL_FEATURE_INFO,
-    BIZ_FEATURES_OVERVIEW,
+    BIZ_FEATURES_OVERVIEW as ENTERPRISE_STARTER_FEATURES_OVERVIEW,
     ENTERPRISE_FEATURES_OVERVIEW,
     ALL_FEATURES_COMPARED_DATA,
 } from '../components'
@@ -90,7 +90,7 @@ const faqData = [
     },
     {
         q: 'What are executors?',
-        a: 'Executors are required to run Batch Changes server-side and to use code navigation’s auto-indexing functionality. The Business plan includes 2 executors and the Enterprise plan includes 4 executors.',
+        a: 'Executors are required to run Batch Changes server-side and to use code navigation’s auto-indexing functionality. The Enterprise Starter plan includes 2 executors and the Enterprise plan includes 4 executors.',
     },
     {
         q: 'Does Sourcegraph offer discounts for educational and non-profit organizations?',
@@ -112,8 +112,8 @@ const faqData = [
     },
 ]
 
-const PLAN_COLORS: Record<'business' | 'enterprise', { borderColorClass: string; textColorClass: string }> = {
-    business: {
+const PLAN_COLORS: Record<'enterpriseStarter' | 'enterprise', { borderColorClass: string; textColorClass: string }> = {
+    enterpriseStarter: {
         borderColorClass: 'border-t-vermillion-300',
         textColorClass: 'text-vermillion-300',
     },
@@ -142,24 +142,23 @@ const PricingPage: FunctionComponent = () => {
             <ContentSection className="grid grid-cols-1 gap-sm lg:grid-cols-12">
                 <div className="col-span-full mb-sm md:col-span-5 md:col-start-2 md:mb-0">
                     <PricingPlan
-                        name="Business"
-                        description="Full platform access for teams and orgs, all on a single-tenant cloud instance."
-                        price="$99 per active user/month"
+                        name="Enterprise Starter"
+                        description="Full platform access for teams and orgs. Flexible deployment options. Online Terms of Service and workshop based evaluation path."
+                        price="Starts at $5k/year"
+                        priceDetail="Scales with your team"
                         buttons={<StartFreeButton />}
-                        features={BIZ_FEATURES_OVERVIEW}
-                        {...PLAN_COLORS.business}
+                        features={ENTERPRISE_STARTER_FEATURES_OVERVIEW}
+                        {...PLAN_COLORS.enterpriseStarter}
                     />
                 </div>
 
                 <div className="col-span-full md:col-span-5 md:col-start-7">
                     <PricingPlan
                         name="Enterprise"
-                        description="Enterprise-grade security, scale, and support with custom deployment options."
-                        price="Custom pricing"
+                        description="All the benefits of Enterprise Starter with increased Support SLAs and custom deployment options."
+                        price="Starts at $50k/year"
+                        priceDetail="Scales with your team"
                         buttons={<EnterpriseButtons />}
-                        beforeFeatures={
-                            <div className="mb-sm text-xl font-semibold">Everything in Business, plus:</div>
-                        }
                         features={ENTERPRISE_FEATURES_OVERVIEW}
                         {...PLAN_COLORS.enterprise}
                     />
@@ -182,10 +181,10 @@ const PricingPage: FunctionComponent = () => {
                             </th>
                             <th className="w-1/3 border-0 border-b bg-white p-0 text-start">
                                 <div
-                                    className={`h-full border-1 border-t-16 border-b-0 border-gray-200 p-xxs pb-md md:p-sm lg:h-60 ${PLAN_COLORS.business.borderColorClass}`}
+                                    className={`h-full border-1 border-t-16 border-b-0 border-gray-200 p-xxs pb-md md:p-sm lg:h-60 ${PLAN_COLORS.enterpriseStarter.borderColorClass}`}
                                 >
-                                    <h2 className="mb-sm text-xl md:text-4xl">Business</h2>
-                                    <h4 className="mb-sm hidden font-normal lg:block">$99 per active user/month</h4>
+                                    <h2 className="mb-sm text-xl md:text-4xl">Enterprise Starter</h2>
+                                    <h4 className="mb-sm hidden font-normal lg:block">Starts at $5k/year</h4>
                                     <StartFreeButton />
                                 </div>
                             </th>
@@ -194,7 +193,7 @@ const PricingPage: FunctionComponent = () => {
                                     className={`h-full border-t-16 border-gray-200 p-xxs pb-md md:p-sm lg:h-60  ${PLAN_COLORS.enterprise.borderColorClass}`}
                                 >
                                     <h2 className="mb-sm text-xl md:text-4xl">Enterprise</h2>
-                                    <h4 className="mb-sm hidden font-normal lg:block">Custom pricing</h4>
+                                    <h4 className="mb-sm hidden font-normal lg:block">Starts at $50k/year</h4>
                                     <EnterpriseButtons contactUsClassName="hidden lg:block" />
                                 </div>
                             </th>
@@ -225,13 +224,13 @@ const PricingPage: FunctionComponent = () => {
                                             className="text-sm font-normal sm:text-base md:font-semibold"
                                         />
                                     </td>
-                                    {/* Business plan specs */}
+                                    {/* Enterprise Starter plan specs */}
                                     <td className="border-0 border-x-1 p-xxs text-center align-middle text-sm sm:text-base md:p-xs">
-                                        {typeof feature.business === 'string' ? (
-                                            feature.business
-                                        ) : feature.business ? (
+                                        {typeof feature.enterpriseStarter === 'string' ? (
+                                            feature.enterpriseStarter
+                                        ) : feature.enterpriseStarter ? (
                                             <CheckIcon
-                                                className={`icon-inline mr-2 ${PLAN_COLORS.business.textColorClass} inline`}
+                                                className={`icon-inline mr-2 ${PLAN_COLORS.enterpriseStarter.textColorClass} inline`}
                                             />
                                         ) : null}
                                         {feature.disclaimer && <i className="block text-sm">{feature.disclaimer}</i>}

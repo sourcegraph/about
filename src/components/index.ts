@@ -67,7 +67,7 @@ export { GatedResourceLayout } from './GatedResourceLayout' // Webinars, Guides,
 export { PricingPlanFeature, PricingPlan } from './Pricing'
 export {
     type FeatureCluster,
-    BIZ_FEATURES_OVERVIEW,
+    ENTERPRISE_STARTER_FEATURES_OVERVIEW as BIZ_FEATURES_OVERVIEW,
     ENTERPRISE_FEATURES_OVERVIEW,
     ALL_FEATURES_COMPARED_DATA,
     SPOTLIGHT_FEATURE_INFO,
