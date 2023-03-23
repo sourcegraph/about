@@ -64,7 +64,7 @@ const AppPage: FunctionComponent = () => {
                     <Heading as="h1" size="h6">
                         SOURCEGRAPH APP
                     </Heading>
-                    <Badge size="small" text="Experimental" color="dark-blue" />
+                    <Badge size="small" text="Beta" color="dark-blue" />
                 </div>
 
                 <Heading as="h2" size="h1" className="mt-2 md:text-8xl">
