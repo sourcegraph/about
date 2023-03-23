@@ -11,8 +11,9 @@ import {
     HubSpotForm,
     ContentSection,
     BlogListItem,
+    YouTube,
 } from '../../components'
-import { DemoVideo } from '../../components/DemoVideo'
+// import { DemoVideo } from '../../components/DemoVideo'
 
 import styles from './Starship.module.scss'
 
@@ -96,11 +97,10 @@ const Starship: FunctionComponent = () => (
                     Sourcegraph 5.0, the latest release of our code intelligence platform, is now available. Watch the
                     livestream.
                 </Heading>
-                <DemoVideo
-                    video="homepage-demo-202301"
-                    splash={true}
-                    className="mx-auto mt-16 max-h-[460px] w-full rounded-lg bg-blurple-200 md:mt-24 md:w-[75%]"
-                    splashClassName="rounded-lg"
+                <YouTube
+                    title="Starship Talks: A new era for software and how it’s built" 
+                    id="tggj3o1pL5U"
+                    showTitle={true}
                 />
                 <br/><br/><br/>
                 <div className="flex-col">
