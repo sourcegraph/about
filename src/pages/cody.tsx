@@ -55,6 +55,21 @@ const CodyPage: FunctionComponent = () => (
                 organization.
             </p>
         </ContentSection>
+        
+        <div className="mt-16 px-sm">
+            <video
+                className="mx-auto max-h-[446px] w-full max-w-[800px] rounded-lg bg-gray-300"
+                autoPlay={true}
+                muted={true}
+                loop={true}
+                playsInline={true}
+                controls={false}
+                data-cookieconsent="ignore"
+            >
+                <source type="video/webm" src="/animations/code-intel.webm" data-cookieconsent="ignore" />
+                <source type="video/mp4" src="/animations/code-intel.mp4" data-cookieconsent="ignore" />
+            </video>
+        </div>
 
         <ContentSection
             parentClassName="!py-0"
