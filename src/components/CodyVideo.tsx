@@ -9,7 +9,7 @@ const VIDEOS: Record<
 > = {
     'cody-demo-202303': {
         poster: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-demo-202303-poster.png',
-        //track: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/',
+        // track: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/',
         webm: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-demo-202303.webm',
         mp4: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-demo-202303.mp4',
         dimensions: 16 / 9,
