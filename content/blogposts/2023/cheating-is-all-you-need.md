@@ -2,9 +2,9 @@
 title: "Cheating is All You Need"
 authors:
   - name: Steve Yegge
-    url: https://www.youtube.com/user/SteveYegge
+    url: https://handbook.sourcegraph.com/team/#steve-yegge
 publishDate: 2023-03-23T10:00-07:00
-description: "cheating-is-all-you-need"
+description: "There is something legendary and historic happening in software engineering, right now as we speak, and yet most of you don’t realize at all how big it is."
 tags: [blog]
 slug: 'cheating-is-all-you-need'
 published: true
@@ -307,10 +307,10 @@ OK, you’ve heard the punchline, and the party’s in full swing. Lemme show yo
 
 Say hi to Cody: 
 
-<Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-5.png"
-    alt="Cody logo"
-/><br/>
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-5.png"
+     alt="Cody logo"
+     style="display: block; margin-left: auto; margin-right: auto; width: 15%" />
+     <br/>
 
 Cody is Sourcegraph’s new LLM-backed coding assistant. Cody knows about your code. It has templated actions, such as writing unit tests, generating doc comments, summarizing code, that kind of thing. You know. Stuff you can choose from a menu. Like other assistants. It even has code completions, if you’re into that sort of thing.
 
