@@ -24,6 +24,7 @@ interface Badge {
     checked?: boolean
     circle?: boolean
     breakWords?: boolean
+    className?: string
 }
 
 /**
@@ -39,6 +40,7 @@ interface Badge {
  * @param props.checked - the controlled checked state
  * @param props.circle - whether it's a basic or circle radius badge
  * @param props.breakWords - whether to break words or not for longer text
+ * @param props.className - Wrapper className
  */
 export const Badge: FunctionComponent<Badge> = ({
     text,
@@ -50,6 +52,7 @@ export const Badge: FunctionComponent<Badge> = ({
     checked,
     circle,
     breakWords,
+    className,
 }) => {
     const Icon: ElementType = icon || 'div'
 
@@ -149,13 +152,13 @@ export const Badge: FunctionComponent<Badge> = ({
     )
 
     return link ? (
-        <a href={link} className={classNames('no-underline', styles)} tabIndex={0}>
+        <a href={link} className={classNames('no-underline', styles, className)} tabIndex={0}>
             {text}
             {icon && <Icon className="ml-1 inline" size={size === 'small' ? 12 : 14} />}
         </a>
     ) : (
         <div
-            className={styles}
+            className={classNames(styles, className)}
             onClick={onClick}
             onKeyDown={onClick}
             tabIndex={0}

@@ -8,15 +8,18 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { EXP_SOURCEGRAPH_ENTERPRISE } from '../../../data/experiments'
+import { Badge } from '../../Badge'
 
 interface NavLink {
     name: string
     href: string
+    badgeText?: string
 }
 
 interface NavSection {
     name: string
     links: (NavLink | { divider: true })[]
+    badgeText?: string
 }
 
 type NavItem = NavLink | NavSection
@@ -59,68 +62,49 @@ const NAV_ITEMS: NavItem[] = EXP_SOURCEGRAPH_ENTERPRISE
                       href: '/code-insights',
                   },
                   {
+                      name: 'Cody (AI)',
+                      href: '/cody',
+                      badgeText: 'New',
+                  },
+                  {
+                      name: 'Own',
+                      href: '/own',
+                      badgeText: 'New',
+                  },
+              ],
+          },
+          {
+              name: 'App',
+              href: '/app',
+          },
+          {
+              name: 'Enterprise',
+              links: [
+                  {
                       name: 'Cloud',
                       href: '/cloud',
                   },
-              ],
-          },
-          {
-              name: 'Resources',
-              links: [
                   {
-                      name: 'All resources',
-                      href: '/resources',
+                      name: 'Pricing',
+                      href: '/pricing',
                   },
                   {
-                      name: 'Blog',
-                      href: '/blog',
-                  },
-                  {
-                      name: 'Podcast',
-                      href: '/podcast',
-                  },
-                  {
-                      name: 'Case studies',
+                      name: 'Customer stories',
                       href: '/case-studies',
                   },
-                  { divider: true },
-                  {
-                      name: 'All use cases',
-                      href: '/use-cases',
-                  },
-                  {
-                      name: 'Code security',
-                      href: '/use-cases/code-security',
-                  },
-                  {
-                      name: 'Developer onboarding',
-                      href: '/use-cases/onboarding',
-                  },
-                  {
-                      name: 'Incident response',
-                      href: '/use-cases/incident-response',
-                  },
-                  {
-                      name: 'Code reuse',
-                      href: '/use-cases/code-reuse',
-                  },
-                  {
-                      name: 'Code health',
-                      href: '/use-cases/code-health',
-                  },
               ],
           },
           {
-              name: 'Pricing',
-              href: '/pricing',
-          },
-          {
-              name: 'Public code search',
-              href: 'https://sourcegraph.com/search',
+              name: 'Search public code',
+              href: 'https://sourcegraph.com',
           },
           {
               name: 'Docs',
               href: 'https://docs.sourcegraph.com',
+          },
+          {
+              name: 'Blog',
+              href: '/blog',
           },
       ]
 
@@ -145,6 +129,9 @@ export const NavItems: React.FunctionComponent<Props> = ({ linkElement: LinkElem
                         aria-current={isCurrentLink(item.href) ? 'page' : undefined}
                     >
                         {item.name}
+                        {item.badgeText && (
+                            <Badge className="ml-2" size="small" text={item.badgeText} color="blurple" />
+                        )}
                     </LinkElement>
                 ) : (
                     <NavItemMenu
@@ -226,6 +213,9 @@ const NavItemMenu: React.FunctionComponent<
                                             aria-current={isCurrentLink(link.href) ? 'page' : undefined}
                                         >
                                             {link.name}
+                                            {link.badgeText && (
+                                                <Badge className="ml-4" size="small" text={link.badgeText} />
+                                            )}
                                         </Link>
                                     )}
                                 </Menu.Item>

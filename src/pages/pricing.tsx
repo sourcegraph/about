@@ -19,16 +19,16 @@ import {
 import { buttonLocation, buttonStyle } from '../data/tracking'
 
 const StartFreeButton: FunctionComponent<{ className?: string }> = ({ className }) => (
-    <a
+    <Link
         className={classNames('btn btn-primary', 'w-full md:w-auto', className)}
-        href="https://signup.sourcegraph.com"
+        href="/get-started?t=enterprise"
         title="Start for free"
         data-button-style={buttonStyle.primary}
         data-button-location={buttonLocation.trySourcegraph}
         data-button-type="cta"
     >
         Start for free
-    </a>
+    </Link>
 )
 
 const ContactUsButton: FunctionComponent<{ className?: string }> = ({ className }) => (
@@ -75,15 +75,15 @@ const faqData = [
         a: (
             <p>
                 Yes. We offer a free trial for our paid plans.{' '}
-                <a
-                    href="https://signup.sourcegraph.com"
+                <Link
+                    href="/get-started?t=enterprise"
                     title="Get started"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
                 >
                     Get started
-                </a>{' '}
+                </Link>{' '}
                 with a free trial today.
             </p>
         ),

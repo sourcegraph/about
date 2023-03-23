@@ -200,12 +200,6 @@
   from = "/press/big-code-survey-2020"
   to = "/blog/big-code-survey-2020"
 
-
-[[redirects]]
-  from = "/get-started"
-  to = "/get-started/self-hosted"
-  force = true
-
 [[redirects]]
   from = "/get-started/cloud"
   to = "/get-started/self-hosted"
