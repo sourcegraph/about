@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useState, useRef } from 'react'
+import { FunctionComponent, useEffect, useState, useRef, ReactNode } from 'react'
 
 import classNames from 'classnames'
 import Link from 'next/link'
@@ -23,6 +23,8 @@ interface CustomerLogos {
     dark?: boolean
     monochrome?: boolean
     className?: string
+    ctaLink?: ReactNode
+    headlineClassName?: string
 }
 
 const logos: Logo[] = [
@@ -119,7 +121,8 @@ const logos: Logo[] = [
  * @param props.dark - dark mode
  * @param props.monochrome - monochrome
  * @param props.className - classname
- *
+ * @param props.ctaLink - call to action link
+ * @param props.headlineClassName - headline class name
  */
 export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
     overline,
@@ -128,6 +131,8 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
     dark,
     monochrome,
     className,
+    ctaLink,
+    headlineClassName,
 }) => {
     const container = useRef<HTMLDivElement>(null)
     const [containerWidth, setContainerWidth] = useState<number>(0)
@@ -163,11 +168,12 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
                     </Heading>
                 )}
                 {headline && (
-                    <Heading size="h2" as="h3" className="my-2">
+                    <Heading size="h2" as="h3" className={classNames('my-2', headlineClassName)}>
                         {headline}
                     </Heading>
                 )}
                 {description && <p className="text-lg">{description}</p>}
+                {ctaLink}
             </div>
 
             <div

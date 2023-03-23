@@ -64,7 +64,7 @@ const AppPage: FunctionComponent = () => {
                     <Heading as="h1" size="h6">
                         SOURCEGRAPH APP
                     </Heading>
-                    <Badge size="small" text="Experimental" color="dark-blue" />
+                    <Badge size="small" text="Beta" color="dark-blue" />
                 </div>
 
                 <Heading as="h2" size="h1" className="mt-2 md:text-8xl">
@@ -76,7 +76,9 @@ const AppPage: FunctionComponent = () => {
                     experience the power of Sourcegraph for free on their local machine.
                 </p>
 
-                <PlatformsInstallSnippet />
+                <div className="mt-10">
+                    <DownloadSection />
+                </div>
             </div>
 
             <ThreeUpText items={threeUpTextItems} className="mx-auto mt-20 mb-28 max-w-screen-xl md:px-sm" />
@@ -110,10 +112,9 @@ const AppPage: FunctionComponent = () => {
                 <p className="mb-0 text-lg font-normal text-gray-200">
                     Experience the power of Sourcegraph for free on your local machine.
                 </p>
-
-                <Link href="#install-script" className="btn btn-inverted-primary" title="Download the app">
-                    Download the app
-                </Link>
+                <div className="mt-8">
+                    <DownloadSection />
+                </div>
             </div>
         </Layout>
     )
@@ -198,7 +199,7 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                                         Download the{' '}
                                         <DownloadLink
                                             downloadName="app-download-linux-deb"
-                                            href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+205301.ca3646/sourcegraph_2023.03.23+205301.ca3646_linux_amd64.deb"
+                                            href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+209542.7216ba/sourcegraph_2023.03.23+209542.7216ba_linux_amd64.deb"
                                             title="Sourcegaph App Debian package"
                                             className="text-gray-500 underline"
                                         >
@@ -235,4 +236,58 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
     </div>
 )
 
+const DownloadSection: FunctionComponent = () => (
+    <>
+        <DownloadLink
+            href="https://storage.googleapis.com/sourcegraph-app-releases/latest/Sourcegraph%20App.dmg"
+            className="btn btn-inverted-primary w-fit px-4 font-normal shadow-btn"
+            title="Download for Mac"
+            downloadName="app-download-mac-dmg"
+        >
+            Download for Mac
+            <Badge className="ml-2" size="small" text="Beta" color="blurple" />
+        </DownloadLink>
+        <p className="mt-3 text-sm text-gray-300">
+            MacOS 13+ required.{' '}
+            <DownloadLink
+                href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+209542.7216ba/sourcegraph_2023.03.23+209542.7216ba_darwin_all.zip"
+                title="Older versions"
+                downloadName="app-download-mac-zip"
+                className="text-sm leading-[21px] text-gray-300 underline"
+                target="_blank"
+            >
+                Older versions
+            </DownloadLink>
+            .
+        </p>
+        <div className="mt-3 flex flex-row justify-center">
+            <Link
+                href="/get-started"
+                title="Linux"
+                className="border-r-1 border-r-gray-300 pr-2 text-sm leading-[21px] text-gray-300 underline"
+            >
+                Linux
+            </Link>
+            <Link
+                href="https://docs.sourcegraph.com/app"
+                title="Other platforms"
+                className="ml-2 text-sm leading-[21px] text-gray-300 underline"
+                target="_blank"
+            >
+                Other options
+            </Link>
+        </div>
+        <p className="mt-3 text-center text-sm leading-[21px] text-gray-300">
+            By using Sourcegraph, you agree to the{' '}
+            <Link href="/terms/privacy" title="Privacy polic" className="text-gray-300 underline">
+                privacy policy
+            </Link>{' '}
+            and{' '}
+            <Link href="/terms" title="Terms" className="text-gray-300 underline">
+                terms
+            </Link>
+            .
+        </p>
+    </>
+)
 export default AppPage

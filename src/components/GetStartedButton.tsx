@@ -83,12 +83,12 @@ interface Variant {
 const VARIANTS: Variant[] = [
     {
         name: 'Cloud',
-        href: 'https://signup.sourcegraph.com',
+        href: '/get-started?t=enterprise',
         caption: 'Start free',
     },
     {
         name: 'Self-hosted',
-        href: 'https://docs.sourcegraph.com',
+        href: '/get-started?t=enterprise',
         caption: 'AMI, Docker, Kubernetes',
     },
 ]
@@ -99,7 +99,7 @@ const VariantButton: React.FunctionComponent<{
     buttonLocation: number
     className?: string
 }> = ({ variant: { name, href, caption }, minimal = false, buttonLocation, className }) => (
-    <a
+    <Link
         className={classNames(BUTTON_CLASS_NAME, 'text-center', className)}
         href={href}
         data-button-style={buttonStyle.primary}
@@ -108,7 +108,7 @@ const VariantButton: React.FunctionComponent<{
     >
         <div className="-mb-1.5 flex items-center justify-center whitespace-nowrap">{name}</div>
         {!minimal && <span className="truncate text-xs font-normal text-white/80">{caption}</span>}
-    </a>
+    </Link>
 )
 
 const OtherVariants: React.FunctionComponent<{ className?: string; triangleClassName?: string }> = ({

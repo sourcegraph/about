@@ -120,6 +120,8 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
                     ? 'var(--sg-color-violet-750)'
                     : headerColorTheme === 'dark'
                     ? 'black'
+                    : headerColorTheme === 'white'
+                    ? 'white'
                     : 'var(--sg-color-gray-50)'
             }; }`}</style>
             <section

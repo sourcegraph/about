@@ -156,6 +156,7 @@ const OwnPage: FunctionComponent = () => (
                 title="Own is currently an experimental feature, but we have a big vision for code ownership."
                 description="We’d love your feedback on Own. You can turn it on using the documentation below, or contact us to get a demo and learn more about our roadmap."
                 linkText="Read more about our vision for code ownership."
+                link="https://about.sourcegraph.com/blog/our-vision-for-code-ownership"
             />
 
             <div>

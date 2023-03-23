@@ -9,7 +9,7 @@ interface Props {
     name: string
     description: string
     price: string
-    priceInterval?: string
+    priceDetail?: string
     buttons: ReactNode
     beforeFeatures?: ReactNode
     features: FeatureCluster[]
@@ -22,7 +22,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
     name,
     description,
     price,
-    priceInterval,
+    priceDetail,
     buttons,
     beforeFeatures,
     features,
@@ -32,8 +32,8 @@ export const PricingPlan: FunctionComponent<Props> = ({
     <div className={`h-full rounded border-t-16 border-gray-200 p-xs shadow-lg sm:p-md ${borderColorClass}`}>
         <h2 className="mb-sm font-semibold">{name}</h2>
         <h4 className="my-sm">
-            <span className="text-xl">{price}</span>{' '}
-            {priceInterval && <span className="text-base font-normal">{priceInterval}</span>}
+            <div className="text-xl">{price}</div>{' '}
+            {priceDetail && <div className="text-sm font-normal text-gray-400">{priceDetail}</div>}
         </h4>
         <h3 className="my-sm max-w-sm text-lg font-normal">{description}</h3>
         {buttons}
