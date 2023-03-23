@@ -10,7 +10,7 @@ export const Banner: FunctionComponent<{}> = () => (
             </p>
             <Link
                 href="/starship"
-                title="What’s coming"
+                title="See what’s new"
                 className="btn bg-transparent !px-0 !py-0 leading-[22px] text-violet-300"
             >
                 See what’s new
