@@ -305,10 +305,11 @@ OK, you’ve heard the punchline, and the party’s in full swing. Lemme show yo
 
 ##### A whirlwind tour of Sourcegraph’s Cody
 
+<br/>
 Say hi to Cody: 
 
 <img
-  style={{marginTop: "20px", marginBottom: "20px", width: "20%"}}
+  style={{marginTop: "0px", marginBottom: "20px", width: "15%"}}
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-5.png"
   alt="Cody logo"
 />
