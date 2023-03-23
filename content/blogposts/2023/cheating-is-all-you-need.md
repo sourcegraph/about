@@ -126,9 +126,9 @@ Can you trust code you yeeted over from Stack Overflow? NO!
 
 Can you trust code you copied from somewhere else in your code base? NO!
 
-Can you trust code you just now wrote carefully by hand, yourself? NOOOO!
+Can you trust code you *just now wrote carefully by hand, yourself?* NOOOO!
 
-All you crazy MFs are completely overlooking the fact that **software engineering exists as a discipline because you cannot EVER under any circumstances TRUST CODE.** That’s why we have reviewers. And linters. And debuggers. And unit tests. And integration tests. And staging environments. And runbooks. And all of goddamned Operational Excellence. And security checkers, and compliance scanners, and on, and on and on!
+All you crazy MFs are completely overlooking the fact that **software engineering exists as a discipline because you cannot EVER under any circumstances TRUST CODE.** That’s why we have *reviewers*. And *linters*. And *debuggers*. And *unit tests*. And *integration tests*. And *staging environments*. And *runbooks*. And all of goddamned *Operational Excellence*. And *security checkers*, and *compliance scanners*, and on, and on and on!
 
 So the next one of you to complain that “you can’t trust LLM code” gets a little badge that says “Welcome to *engineering* motherfucker”. You’ve finally learned the secret of the trade: Don’t. Trust. Anything!
 
@@ -138,11 +138,11 @@ Peeps, let’s do some really simple back-of-envelope math. Trust me, it won’t
 - You tweak the last 20% by hand.
 <br/>
 
-How much of a productivity increase is that? Well jeepers, if you’re only doing 1/5th the work, then you are… punches buttons on calculator watch… **five times as productive.** 😲
+How much of a productivity increase is that? Well jeepers, if you’re only doing 1/5th the work, then you are… *punches buttons on calculator watch*… **five times as productive.** 😲
 
-When was the last time you got a 5x productivity boost from anything that didn’t involve some sort of chemicals?
+When was the last time you got a 5x productivity boost from *anything* that didn’t involve some sort of chemicals?
 
-I’m serious. I just don’t get people. How can you not appreciate the historic change happening right now?
+I’m serious. I just don’t get people. How can you not appreciate the *historic* change happening right now?
 
 OK time to get concrete. I’m already on page 7, and my last attempt at this blog ran 25+ pages and languished for weeks.
 
@@ -172,7 +172,7 @@ Here is everything you need to know about the history of LLMs, for our purposes 
       - Google did absolutely nothing with this invention, opting for violent knee-jerking later, as per their usual M.O.
       - Meanwhile, others started training massive Transformers on obscene amounts of data. They began calling them Large Language Models (LLMs).
       - OpenAI came along with ChatGPT on November 30th 2022, the first LLM-based chatbot, missing out on an obvious opportunity to call it Large Marge. Why did they not do this.
-      - Ever since then has been **full batshit insanity**, with new LLM-based products launching daily and technical advances happening every few hours. It’s impossible to track it all.
+      - Ever since then has been **full batshit insanity**, with new LLM-based products launching daily and technical advances happening every few hours. It’s *impossible* to track it all.
       - Money Volcano Alert: First lava flecks detected.
     </td>
  </tr>
@@ -255,9 +255,9 @@ You need a data moat to differentiate yourself in the LLM world.
 
 Why? **Because the data moat is how you populate the context window (“cheat sheet”).**
 
-If you can’t feed the LLM your whole code base, and you can only show it 100k characters at a time, then you’d better be really goddamn good at fetching the right data to stuff into that 100k-char window. Because that’s the only way to affect the quality of the LLM’s output!
+If you can’t feed the LLM your whole code base, and you can only show it 100k characters at a time, then you’d better be *really goddamn good* at fetching the right data to stuff into that 100k-char window. Because that’s the only way to affect the quality of the LLM’s output!
 
-Put another way, you need a sidecar database. The data moat needs to be fast and queryable. This is a Search Problem!
+Put another way, you need a *sidecar database*. The data moat needs to be fast and queryable. This is a Search Problem!
 
 This is true even outside the world of engineering. There are probably 13 hillion jillion killion LLM-based outbound sales products being built like right now, as you’re reading this. But only Salesforce and a few other companies with big data moats are going to be able to differentiate in that space.
 
@@ -269,7 +269,7 @@ The rest is a private Sourcegraph party. I mean, you can come along if you like,
 
 You’ve just graduated from Stevey’s LLM Mini-U, and you have all the necessary theoretical background to appreciate why I feel I am the luckiest damn person on Earth, and why I’m throwing a party, right here on page two thousand eight hundred and ninety six of this blog post.
 
-Because folks, I honestly don’t know how I got so lucky. I joined Sourcegraph in September, not half so much for their product itself as for their Code Intelligence Platform, which was like [the one I built back at Google](https://www.youtube.com/watch?v=KTJs-0EInW8). They’d nearly finished building [v1 of this platform](https://about.sourcegraph.com/blog/announcing-scip) and it was ready to start powering something amazing.
+Because folks, I honestly don’t know *how* I got so lucky. I joined Sourcegraph in September, not half so much for their product itself as for their Code Intelligence Platform, which was like [the one I built back at Google](https://www.youtube.com/watch?v=KTJs-0EInW8). They’d nearly finished building [v1 of this platform](https://about.sourcegraph.com/blog/announcing-scip) and it was ready to start powering something amazing.
 
 And then LLMs landed 10 weeks after I joined. The Singularity, the Cloverfield monster stomping around eating people, and everything else that’s happened since November 30th. Crazy town.
 
@@ -277,7 +277,7 @@ And what do LLMs need again? You, in the front row. Yeah, you.
 
 They need the data moat! The sidecar database. For populating the cheat sheet. Remember?
 
-It’s a Search problem. And Sourcegraph has spent the past ten years building the solution.
+It’s a Search problem. And Sourcegraph has spent the past *ten years* building the solution.
 
 Go figure.
 
@@ -321,7 +321,7 @@ Cody is Sourcegraph’s new LLM-backed coding assistant. Cody knows about your c
 
 Cody is not some vague “representation of a vision for the future of AI”. You can try it *[right now](https://sourcegraph.typeform.com/cody-signup)*.
 
-And it has a chat interface! Which means it’s totally open-ended; you can ask it any question at all about your code base or your environment, and we’ll send it the right cheat sheet. And Cody itself is a platform, because you can use it to build your own LLM-backed workflows.
+And it has a chat interface! Which means it’s totally open-ended; you can ask it any question at all about your code base or your environment, and we’ll send it the right cheat sheet. And Cody itself is a *platform*, because you can use it to build your own LLM-backed workflows.
 
 My favorite kind. Naturally.
 
@@ -335,7 +335,7 @@ Currently Cody is a VSCode plugin, though we’ll have it in other places soon e
 
 Cody scales up to the very biggest code bases in the world. And even though Cody is still a baby, just like Baby AWS back on Ruben’s stinkpad in 2003, it’s already able to lift a huge space rhino using only the power of the Force. Hang on, sorry wrong baby.
 
-Ahem. As I was saying, like Baby AWS, Cody is also a baby with special powers, and honestly… we don’t know how powerful it’s going to get. It seems to be accelerating, if anything.
+Ahem. As I was saying, like Baby AWS, Cody is *also* a baby with special powers, and honestly… we don’t know how powerful it’s going to get. It seems to be accelerating, if anything.
 
 Oh, and you can try it for free.
 
