@@ -1,5 +1,7 @@
 import { FunctionComponent } from 'react'
 
+import Link from 'next/link'
+
 import { Blockquote, Layout, HubSpotForm, YouTube } from '../components'
 import { buttonStyle, buttonLocation } from '../data/tracking'
 
@@ -50,16 +52,16 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
             <h2>Ready to accelerate developer onboarding? Let's talk.</h2>
 
             <div className="mx-auto mt-8 max-w-[400px]">
-                <a
+                <Link
                     className="btn btn-primary mt-8 block sm:inline-block"
-                    href="https://signup.sourcegraph.com"
+                    href="/get-started?t=enterprise"
                     title="Start for free"
                     data-button-style={buttonStyle.primary}
                     data-button-location={buttonLocation.bodyDemo}
                     data-button-type="cta"
                 >
                     Start for free
-                </a>
+                </Link>
             </div>
         </div>
     </Layout>

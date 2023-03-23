@@ -195,6 +195,7 @@ module.exports = {
         '2xl': `0px 0px 38px ${dlsColors.violet['400']}`,
       },
       boxShadow: {
+        xl: `0px 0px 23px ${dlsColors.violet['400']}`,
         btn: `0px 0px 20px rgba(161, 18, 255, 0.7)`,
       },
     },

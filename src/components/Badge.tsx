@@ -40,7 +40,7 @@ interface Badge {
  * @param props.checked - the controlled checked state
  * @param props.circle - whether it's a basic or circle radius badge
  * @param props.breakWords - whether to break words or not for longer text
- * @param props.className - class name
+ * @param props.className - Wrapper className
  */
 export const Badge: FunctionComponent<Badge> = ({
     text,
