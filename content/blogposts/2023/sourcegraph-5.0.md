@@ -16,6 +16,12 @@ We're building the right tools for the future of code. Sourcegraph is a code int
 * **The graph of code**, which means all the relevant code plus code navigation, dep graph, ownership, runtime, logging, tracing, deployment, and more.
 * **Workflows** to help devs write a new feature faster, fix bugs/vulns faster, and do refactors/migrations faster.
 * **Large language models** that read the relevant parts of the code graph to combine general intuition with specific data to power these workflows.
+<br/>
+
+<Figure
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/5.0/cip-diagram.png"
+    alt="Code intelligence platform diagram"
+  /><br/>
 
 "Source_graph_"? "The graph of code"? Yes, we've known the graph of code would be incredibly valuable ever since we started Sourcegraph in 2013. We didn't predict something like LLMs would come so quickly, but we've been hoping for this moment for the last 10 years.
 
@@ -94,7 +100,6 @@ The search input has been redesigned to greatly improve usability. New contextua
   <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/5.0/reimagined-search-input.png"
     alt="The new search UI"
-    catpion="A re-imagined search input."
   />
 </div><br/>
 
@@ -140,7 +145,6 @@ Site admins can configure outgoing webhooks from admin settings under "Batch Cha
   <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/5.0/outgoing-webhooks.png"
     alt="Outgoing webhooks configuration"
-    catpion="Outgoing webhooks configuration"
   />
 </div>
 
