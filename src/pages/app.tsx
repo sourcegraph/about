@@ -250,7 +250,7 @@ const DownloadSection: FunctionComponent = () => (
         <p className="mt-3 text-sm text-gray-300">
             MacOS 13+ required.{' '}
             <Link
-                href="https://storage.googleapis.com/sourcegraph-app-releases/latest/sourcegraph_latest_macOS_universal_app_bundle.zip"
+                href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+209542.7216ba/sourcegraph_2023.03.23+209542.7216ba_darwin_all.zip"
                 title="Older versions"
                 className="text-sm leading-[21px] text-gray-300 underline"
                 target="_blank"
