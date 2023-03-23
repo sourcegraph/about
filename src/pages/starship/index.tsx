@@ -65,7 +65,7 @@ const Starship: FunctionComponent = () => (
             image: '/starship/starship_postlaunch_og.png',
             title: 'Code intelligence + AI = 🤯',
             description:
-                'Sourcegraph 5.0, the latest release of our code intelligence platform, is now available. Watch the livestream.',
+                'Sourcegraph 5.0, the latest release of our code intelligence platform, is now available.',
         }}
     >
         <div className="flex justify-center md:mt-[51px]">
