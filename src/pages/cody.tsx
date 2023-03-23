@@ -4,6 +4,7 @@ import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
 import { Badge, ContentSection, Heading, Layout } from '../components'
+import { DemoVideo } from '../components/CodyVideo'
 
 const CodyPage: FunctionComponent = () => (
     <Layout
@@ -56,19 +57,13 @@ const CodyPage: FunctionComponent = () => (
             </p>
         </ContentSection>
         
-        <div className="mt-16 px-sm">
-            <video
-                className="mx-auto max-h-[446px] w-full max-w-[800px] rounded-lg bg-gray-300"
-                autoPlay={true}
-                muted={true}
-                loop={true}
-                playsInline={true}
-                controls={false}
-                data-cookieconsent="ignore"
-            >
-                <source type="video/webm" src="/animations/code-intel.webm" data-cookieconsent="ignore" />
-                <source type="video/mp4" src="/animations/code-intel.mp4" data-cookieconsent="ignore" />
-            </video>
+        <div className="mb-8 flex flex-col items-center text-center">
+                <DemoVideo
+                    video="cody-demo-202303"
+                    splash={true}
+                    className="mt-8 w-full max-w-[804px] rounded-lg bg-violet-750 drop-shadow-2xl"
+                    splashClassName="rounded-lg"
+                />
         </div>
 
         <ContentSection
