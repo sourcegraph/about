@@ -205,7 +205,7 @@ const InterstitialAppContent: FunctionComponent = () => (
 
             <div className="mt-4 flex flex-row gap-x-4">
                 <DownloadLink
-                    href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+205301.ca3646/sourcegraph_2023.03.23+205301.ca3646_linux_amd64.deb"
+                    href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+209542.7216ba/sourcegraph_2023.03.23+209542.7216ba_linux_amd64.deb"
                     className="btn btn-primary w-fit px-4 font-normal"
                     title="Download .deb"
                     downloadName="app-download-linux-deb"
@@ -213,7 +213,7 @@ const InterstitialAppContent: FunctionComponent = () => (
                     Download .deb
                 </DownloadLink>
                 <DownloadLink
-                    href="https://sourcegraph.com/search"
+                    href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+209542.7216ba/sourcegraph_2023.03.23+209542.7216ba_linux_amd64.zip"
                     className="btn btn-primary w-fit px-4 font-normal"
                     title="Download .zip"
                     downloadName="app-download-linux-zip"
