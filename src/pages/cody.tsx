@@ -33,7 +33,7 @@ const CodyPage: FunctionComponent = () => (
                     Your {'{intelligent, code-aware, enterprise-ready}'} programmer’s assistant.
                 </Heading>
                 <Link
-                    href="https://sourcegraph.typeform.com/to/pIXTgwrd"
+                    href="https://sourcegraph.typeform.com/cody-signup"
                     title="Private beta access request form"
                     className="btn btn-inverted-primary mt-8"
                     target="_blank"
@@ -81,7 +81,7 @@ const CodyPage: FunctionComponent = () => (
                     Interested in deploying Cody for your team? Let us know.
                 </Heading>
                 <Link
-                    href="https://sourcegraph.typeform.com/to/pIXTgwrd"
+                    href="https://sourcegraph.typeform.com/cody-signup"
                     title="Private beta access request form"
                     className="btn mt-8 bg-transparent pl-0 text-white"
                     target="_blank"
