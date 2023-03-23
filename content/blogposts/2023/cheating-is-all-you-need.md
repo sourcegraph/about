@@ -116,7 +116,7 @@ Okay, you asked for it.
 
 ##### Whining about Trust Issues
 
-*<Rant mode fully engaged>*
+*&lt;Rant mode fully engaged&gt;*
 
 One of the craziest damned things I hear devs say about LLM-based coding help is that they can’t “trust” the code that it writes, because it “might have bugs in it”.
 
@@ -148,13 +148,35 @@ OK time to get concrete. I’m already on page 7, and my last attempt at this bl
 
 Let’s finish this.
 
-*<Rant mode disengaged... but lurking>*
+*&lt;Rant mode disengaged... but lurking&gt;*
 
 ##### A Brief Mini-History of LLMs
 
 OK sooooo… this is the part that went on for 20 pages before, so let’s just make it reeeeeal simple. One paragraph.
 
 Here is everything you need to know about the history of LLMs, for our purposes today:
+
+<table border="0">
+ <tr>
+    <td>
+      <Figure
+        src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-3.png"
+        alt="A transformer diagram"
+        catpion="A transformer diagram"
+      />
+    </td>
+    <td>
+      - The Google Brain team published a paper in 2017 called [Attention is All You Need](https://arxiv.org/abs/1706.03762).
+      - It introduced the now-famous Transformer architecture that you see to the left.
+      - Everyone uses this now. It replaced *~everything* in AI.
+      - Google did absolutely nothing with this invention, opting for violent knee-jerking later, as per their usual M.O.
+      - Meanwhile, others started training massive Transformers on obscene amounts of data. They began calling them Large Language Models (LLMs).
+      - OpenAI came along with ChatGPT on November 30th 2022, the first LLM-based chatbot, missing out on an obvious opportunity to call it Large Marge. Why did they not do this.
+      - Ever since then has been **full batshit insanity**, with new LLM-based products launching daily and technical advances happening every few hours. It’s impossible to track it all.
+      - Money Volcano Alert: First lava flecks detected.
+    </td>
+ </tr>
+</table>
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-3.png"
