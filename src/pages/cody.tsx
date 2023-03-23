@@ -18,9 +18,9 @@ const CodyPage: FunctionComponent = () => (
         displayChildrenUnderNav={true}
     >
         {/* Hero Section */}
-        <ContentSection parentClassName="!py-0" className="grid grid-cols-1 md:grid-cols-2">
-            <div className="max-w-[637px]">
-                <div className="flex gap-x-2">
+        <ContentSection parentClassName="!py-0" className="text-center">
+            <div className="mx-auto max-w-[637px]">
+                <div className="center flex items-center justify-center gap-x-2">
                     <Heading size="h6" className="text-white">
                         CODY
                     </Heading>
@@ -29,7 +29,7 @@ const CodyPage: FunctionComponent = () => (
                 <Heading size="h1" className="mt-2 text-white">
                     Read, write, and understand code 10x faster with AI
                 </Heading>
-                <Heading size="h3" className="mt-6 text-white">
+                <Heading size="h4" className="mt-6 !font-normal text-white">
                     Your {'{intelligent, code-aware, enterprise-ready}'} programmer’s assistant.
                 </Heading>
                 <Link
@@ -41,11 +41,11 @@ const CodyPage: FunctionComponent = () => (
                     Request access
                 </Link>
             </div>
-            <div className="mt-6 md:mt-0">
+            <div className="mx-auto mt-6 w-full md:mt-0">
                 <DemoVideo
                     video="cody-demo-202303"
                     splash={true}
-                    className="mt-8 w-full max-w-[804px] rounded-lg bg-violet-750 drop-shadow-2xl"
+                    className="mx-auto mt-8 w-full max-w-[804px] rounded-lg bg-violet-750 drop-shadow-2xl"
                     splashClassName="rounded-lg"
                 />
             </div>
