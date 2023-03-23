@@ -4,6 +4,7 @@ import classNames from 'classnames'
 
 interface TwoColumnSection {
     leftColumn: ReactNode
+    leftColumnCta?: ReactNode
     rightColumn: ReactNode
     reverseOnMobile?: boolean
     blockOnMdAndDown?: boolean
@@ -13,6 +14,7 @@ interface TwoColumnSection {
 
 export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
     leftColumn,
+    leftColumnCta,
     rightColumn,
     reverseOnMobile = false,
     blockOnMdAndDown = false,
@@ -35,6 +37,7 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
             })}
         >
             {leftColumn}
+            {leftColumnCta}
         </div>
         <div className={classNames(!mergeColumns && `col-span-12 ${blockOnMdAndDown ? 'md' : 'lg'}:col-span-6`)}>
             {rightColumn}

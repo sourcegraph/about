@@ -17,6 +17,7 @@ import {
     ThreeUpText,
     TwoColumnSection,
 } from '../../components'
+import { GenericCallToAction } from '../../components/cta/GenericCallToAction'
 import { StandardCallToAction } from '../../components/cta/StandardCallToAction'
 import { UseCasePageCallToAction } from '../../components/cta/UseCasePageCallToAction'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
@@ -49,6 +50,29 @@ const items = [
                         , you can find vulnerabilities across your repositories in a single search. Relieve your
                         engineers from manual work, get a headstart on remediation, and act confidently knowing that
                         you've located all affected code.
+                    </p>
+                }
+            />
+        ),
+    },
+    {
+        title: 'Mitigate upstream licensing risks',
+        text: (
+            <CarouselItem
+                header="Mitigate upstream licensing risks"
+                text={
+                    <p className="py-4">
+                        Some open source licenses like GPL require strict compliance to help mitigate any potential risks. With{' '}
+                        <Link
+                            href="/code-search"
+                            title="Code Search"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Code Search
+                        </Link>
+                        , quickly find any instances of GPL licensed code.
                     </p>
                 }
             />
@@ -302,6 +326,7 @@ const UseCasePage: FunctionComponent = () => (
                         </Link>
                     </div>
                 }
+                leftColumnCta={<GenericCallToAction buttonLocation={buttonLocation.hero} href="https://sourcegraph.com/search?q=context%3Aglobal+log4j&patternType=standard&sm=1&groupBy=repo&flag=vulnerabilities" children = "Find vulnerabilities in your code" />}
             />
         </ContentSection>
 
