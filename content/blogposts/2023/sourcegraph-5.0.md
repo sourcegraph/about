@@ -10,9 +10,9 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post
 changelogItems:
 ---
 
-The future of coding is that there will be a lot more coders and even more code, much of it written by AI. With today's tools, this will be a mess. But with the right tools, this can lead to the most sustained period of human advancement.
+We all know we're headed towards a future where there are a lot more people coding and even more code generated, much of it written by AI. With today's tools, this will be a mess. But with the right tools, this can lead to the most sustained period of human advancement.
 
-We're building the right tools for the future of code. Sourcegraph is a code intelligence platform, which means the combination of 3 things:
+We're building the right tools for the future of code. Sourcegraph is a code intelligence platform, which is a combination of 3 things:
 * **The graph of code**, which means all the relevant code plus code navigation, dep graph, ownership, runtime, logging, tracing, deployment, and more.
 * **Workflows** to help devs write a new feature faster, fix bugs/vulns faster, and do refactors/migrations faster.
 * **Large language models** that read the relevant parts of the code graph to combine general intuition with specific data to power these workflows.
