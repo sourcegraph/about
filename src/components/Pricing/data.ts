@@ -230,7 +230,7 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
             {
                 label: 'technicalAdvisor',
                 enterpriseStarter: 'Available',
-                enterprise: 'With >100k+ spend',
+                enterprise: 'With >100k spend',
             },
             {
                 label: 'supportSla',
@@ -434,7 +434,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Priority ticket handling and guaranteed initial response SLA from a dedicated team.',
     },
     technicalAdvisor: {
-        label: 'Technical Advisor (with >$100k+ spend)',
+        label: 'Technical Advisor (with >$100k spend)',
         description:
             'Specialized technical experts to lead training & enablement, strategy, and overall account health.',
     },
