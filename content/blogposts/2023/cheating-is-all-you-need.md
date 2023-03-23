@@ -148,7 +148,7 @@ OK time to get concrete. I’m already on page 7, and my last attempt at this bl
 
 Let’s finish this.
 
-*<Rant mode disengaged… but lurking>*
+*<Rant mode disengaged... but lurking>*
 
 ##### A Brief Mini-History of LLMs
 
