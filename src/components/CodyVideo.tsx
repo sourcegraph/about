@@ -5,12 +5,12 @@ import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
 
 const VIDEOS: Record<
     'cody-demo-202303',
-    { poster: string; track: string; mp4: string; webm: string; dimensions: number }
+    { poster: string; mp4: string; webm: string; dimensions: number }
 > = {
     'cody-demo-202303': {
         poster: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-demo-202303-poster.png',
         //track: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/',
-        //webm: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/',
+        webm: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-demo-202303.webm',
         mp4: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-demo-202303.mp4',
         dimensions: 16 / 9,
     },
@@ -33,6 +33,7 @@ export const DemoVideo: React.FunctionComponent<{
     const videoInfo = VIDEOS[video]
 
     return isShowing || !splash ? (
+        // eslint-disable-next-line jsx-a11y/media-has-caption
         <video
             className={className}
             autoPlay={isShowing}
@@ -47,14 +48,14 @@ export const DemoVideo: React.FunctionComponent<{
             // eslint-disable-next-line react/forbid-dom-props
             style={{ aspectRatio: videoInfo.dimensions }}
         >
-            <track
+            {/* <track
                 default={true}
                 label="English"
                 kind="captions"
                 srcLang="en"
                 src={videoInfo.track}
                 data-cookieconsent="ignore"
-            />
+            /> */}
             <source type="video/webm" src={videoInfo.webm} data-cookieconsent="ignore" />
             <source type="video/mp4" src={videoInfo.mp4} data-cookieconsent="ignore" />
         </video>
