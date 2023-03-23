@@ -44,7 +44,7 @@ const CodyPage: FunctionComponent = () => (
             <div className="mx-auto mt-6 w-full md:mt-0">
                 <DemoVideo
                     video="cody-demo-202303"
-                    splash={true}
+                    splash={false}
                     className="mx-auto mt-8 w-full max-w-[804px] rounded-lg bg-violet-750 drop-shadow-2xl"
                     splashClassName="rounded-lg"
                 />
