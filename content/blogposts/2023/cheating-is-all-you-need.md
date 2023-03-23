@@ -307,10 +307,12 @@ OK, you’ve heard the punchline, and the party’s in full swing. Lemme show yo
 
 Say hi to Cody: 
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-5.png"
-     alt="Cody logo"
-     style="display: block; margin-left: auto; margin-right: auto; width: 15%" />
-     <br/>
+<img
+  style={{marginTop: "20px", marginBottom: "20px", width: "20%"}}
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-5.png"
+  alt="Cody logo"
+/>
+<br/>
 
 Cody is Sourcegraph’s new LLM-backed coding assistant. Cody knows about your code. It has templated actions, such as writing unit tests, generating doc comments, summarizing code, that kind of thing. You know. Stuff you can choose from a menu. Like other assistants. It even has code completions, if you’re into that sort of thing.
 
@@ -331,7 +333,7 @@ Cody scales up to the very biggest code bases in the world. And even though Cody
 
 Ahem. As I was saying, like Baby AWS, Cody is *also* a baby with special powers, and honestly… we don’t know how powerful it’s going to get. It seems to be accelerating, if anything.
 
-Oh, and you can try it for free.
+Oh, and anyone can [sign up to get access](https://sourcegraph.typeform.com/cody-signup).
 
 OK so anyway here’s how Cody works:
 
