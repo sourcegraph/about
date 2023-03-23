@@ -18,18 +18,18 @@ import styles from './Starship.module.scss'
 
 const blogs = [
     {
+        title: 'Cheating is All You Need',
+        href: 'https://about.sourcegraph.com/blog/cheating-is-all-you-need',
+        description:
+            'There is something legendary and historic happening in software engineering, right now as we speak, and yet most of you don’t realize at all how big it is.',
+        imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/starship-blog-hero-1.png',
+    },
+    {
         title: 'Sourcegraph 5.0 release post',
         href: 'https://about.sourcegraph.com/blog/release/5.0',
         description:
             'Sourcegraph 5.0 introduces more than 20 updates and improvements.',
         imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/release-post/5.0/sourcegraph-5-0-hero.png',
-    },
-    {
-        title: 'Cheating is all you need',
-        href: '',
-        description:
-            'Description',
-        imageSrc: '/products/code-intelligence/hover-tooltip.png',
     },
     {
         title: 'Announcing Sourcegraph Own',
