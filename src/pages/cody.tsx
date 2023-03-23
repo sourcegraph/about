@@ -4,6 +4,7 @@ import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
 import { Badge, ContentSection, Heading, Layout } from '../components'
+import { DemoVideo } from '../components/CodyVideo'
 
 const CodyPage: FunctionComponent = () => (
     <Layout
@@ -41,7 +42,12 @@ const CodyPage: FunctionComponent = () => (
                 </Link>
             </div>
             <div className="mt-6 md:mt-0">
-                <img src="/cody/cody.svg" alt="Own Illustration" className="w-full max-w-[630px]" />
+                <DemoVideo
+                    video="cody-demo-202303"
+                    splash={true}
+                    className="mt-8 w-full max-w-[804px] rounded-lg bg-violet-750 drop-shadow-2xl"
+                    splashClassName="rounded-lg"
+                />
             </div>
         </ContentSection>
 
@@ -54,6 +60,7 @@ const CodyPage: FunctionComponent = () => (
                 editor. Cody knows about your local code and can learn from all the code and documentation inside your
                 organization.
             </p>
+            <img src="/cody/cody.svg" alt="Own Illustration" className="w-full max-w-[630px]" />
         </ContentSection>
 
         <ContentSection
