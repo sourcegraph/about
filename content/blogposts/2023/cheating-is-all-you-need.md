@@ -177,21 +177,6 @@ Here is everything you need to know about the history of LLMs, for our purposes 
     </td>
  </tr>
 </table>
-
-<Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-3.png"
-    alt="A transformer diagram"
-    catpion="A transformer diagram"
-/><br/>
-
-- The Google Brain team published a paper in 2017 called [Attention is All You Need](https://arxiv.org/abs/1706.03762).
-- It introduced the now-famous Transformer architecture that you see to the left.
-- Everyone uses this now. It replaced *~everything* in AI.
-- Google did absolutely nothing with this invention, opting for violent knee-jerking later, as per their usual M.O.
-- Meanwhile, others started training massive Transformers on obscene amounts of data. They began calling them Large Language Models (LLMs).
-- OpenAI came along with ChatGPT on November 30th 2022, the first LLM-based chatbot, missing out on an obvious opportunity to call it Large Marge. Why did they not do this.
-- Ever since then has been **full batshit insanity**, with new LLM-based products launching daily and technical advances happening every few hours. It’s impossible to track it all.
-- Money Volcano Alert: First lava flecks detected.
 <br/>
 
 Congrats, you’re all caught up on the history of LLMs. Go watch [this amazing video](https://www.youtube.com/watch?v=kCc8FmEb1nY) for how to implement it in Python.
