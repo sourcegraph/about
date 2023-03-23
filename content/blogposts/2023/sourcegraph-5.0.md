@@ -10,9 +10,20 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post
 changelogItems:
 ---
 
-Sourcegraph 5.0 includes more than 20 updates and new features. 5.0 continues to build on Sourcegraph as a code intelligence platform while improving the speed and scale of Sourcegraph's core features. 5.0 also introduces AI to the code intelligence platform with the private beta of [Cody](https://about.sourcegraph.com/cody), the new code-aware programming assistant. 
+The future of coding is that there will be a lot more coders and even more code, much of it written by AI. With today's tools, this will be a mess. But with the right tools, this can lead to the most sustained period of human advancement.
 
-In addition to the new features included in 5.0, we are also releasing [the Sourcegraph app](https://about.sourcegraph.com/app). The app is a fast, lightweight version of Sourcegraph that can be downloaded and installed locally in minutes. It's the best way for new users to get started with Sourcegraph for free and run it on their local machine alongside their IDE.
+We're building the right tools for the future of code. Sourcegraph is a code intelligence platform, which means the combination of 3 things:
+* **The graph of code**, which means all the relevant code plus code navigation, dep graph, ownership, runtime, logging, tracing, deployment, and more.
+* **Workflows** to help devs write a new feature faster, fix bugs/vulns faster, and do refactors/migrations faster.
+* **Large language models** that read the relevant parts of the code graph to combine general intuition with specific data to power these workflows.
+
+"Source_graph_"? "The graph of code"? Yes, we've known the graph of code would be incredibly valuable ever since we started Sourcegraph in 2013. We didn't predict something like LLMs would come so quickly, but we've been hoping for this moment for the last 10 years.
+
+Today, we're making another big step toward this vision with Sourcegraph 5.0, which introduces:
+* **Cody**, our AI assistant that feeds context from Sourcegraph's code graph to the LLM to answer your questions about your own entire codebase;
+* **Own**, which adds code ownership information to the code graph;
+* **App**, which runs Sourcegraph as a local desktop app so any dev can start using it quickly;
+* And much more. 
 
 Read on to discover everything included in Sourcegraph 5.0.
 <br/>
@@ -22,7 +33,7 @@ Read on to discover everything included in Sourcegraph 5.0.
 
 Cody is an AI coding assistant that can find, explain, and write code. Cody can answer questions about both general programming topics and your specific codebase from right inside your editor. Cody is powered by Sourcegraph Code Intelligence, so unlike other coding assistant, it knows about your codebase and not just about open source code.
 
-We're releasing Cody as experimental in 5.0, with general availability coming in a future release. [Learn more about Cody](https://about.sourcegraph.com/cody) or [join the Cody private beta waitlist.](https://sourcegraph.typeform.com/to/pIXTgwrd)
+We're releasing Cody as experimental in 5.0, with general availability coming in a future release. [Learn more about Cody](https://about.sourcegraph.com/cody) and [sign up for access to Cody.](https://sourcegraph.typeform.com/cody-signup)
 
 <br/>
 
