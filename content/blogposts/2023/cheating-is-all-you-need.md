@@ -75,7 +75,6 @@ OK. I just typed this prompt into ChatGPT:
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-1.png"
     alt="ChatGPT writing an emacs-lisp function"
-    catpion="ChatGPT writing an emacs-lisp function"
 /><br/>
 
 Here’s the code it spat out, if you can’t read the screenshot:
@@ -99,7 +98,6 @@ I copied this code directly into my Emacs session and ran it, and it did exactly
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-2.png"
     alt="Running the code in an Emacs session"
-    catpion="Running the code in an Emacs session"
 /><br/>
 
 As you can see from the screenshot, I ran the command and it opened a buffer, printed the requested text, and then turned all the words containing ‘i’ red.
@@ -162,7 +160,6 @@ Here is everything you need to know about the history of LLMs, for our purposes 
       <Figure
         src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-3.png"
         alt="A transformer diagram"
-        catpion="A transformer diagram"
       />
     </td>
     <td>
@@ -228,7 +225,6 @@ In an ideal world, you’d just pass your entire code base in with each query. I
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-4.png"
     alt="Diagram of GPT-4 context window versus code base sizes"
-    catpion="Diagram of GPT-4 context window versus code base sizes"
 /><br/>
 
 Which is kind of exciting… until you realize that it’s still just incredibly tiny compared to real-world code bases. It’s an index card vs a textbook… just a slightly bigger index card.
@@ -314,7 +310,6 @@ Say hi to Cody:
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-5.png"
     alt="Cody logo"
-    caption="Cody logo"
 /><br/>
 
 Cody is Sourcegraph’s new LLM-backed coding assistant. Cody knows about your code. It has templated actions, such as writing unit tests, generating doc comments, summarizing code, that kind of thing. You know. Stuff you can choose from a menu. Like other assistants. It even has code completions, if you’re into that sort of thing.
@@ -330,7 +325,6 @@ Currently Cody is a VSCode plugin, though we’ll have it in other places soon e
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-6.png"
     alt="Using Cody in VS Code"
-    caption="Using Cody in VS Code"
 /><br/>
 
 Cody scales up to the very biggest code bases in the world. And even though Cody is still a baby, just like Baby AWS back on Ruben’s stinkpad in 2003, it’s already able to lift a huge space rhino using only the power of the Force. Hang on, sorry wrong baby.
@@ -344,7 +338,6 @@ OK so anyway here’s how Cody works:
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-7.png"
     alt="A diagram of how Cody works"
-    catpion="A diagram of how Cody works"
 /><br/>
 
 Here’s the diagram above, in a nutshell:
