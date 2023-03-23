@@ -399,6 +399,14 @@
     line-height: 12px;
 }
 
+.container :global(.hs-form-e090296f-84f5-4bcb-9093-a533336841b4)
+    .hs-phone
+    .hs-firstname
+    .hs-lastname
+    .hs-company {
+    display: block !important;
+}
+
 .container :global(.hs-form-e090296f-84f5-4bcb-9093-a533336841b4) legend:global(.hs-field-desc) {
     color: #7c98b6;
     font-size: 11px;
