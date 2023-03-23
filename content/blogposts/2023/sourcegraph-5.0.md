@@ -42,7 +42,7 @@ We're releasing Cody as experimental in 5.0, with general availability coming in
 
 Sourcegraph Own manages code ownership for your entire codebase across every repository and code host. React to incidents faster and increase productivity by making it easy to find who owns any code quickly.
 
-We are launching a preview of Sourcegraph Own as an experimental feature and will iterate over the coming months to deliver our full roadmap vision to every customer. [Read more in the full announcement for Sourcegraph Own.](https://about.sourcegraph.com/blog/inroducing-sourcegraph-own)
+We are launching a preview of Sourcegraph Own as an experimental feature and will iterate over the coming months to deliver our full roadmap vision to every customer. [Read more in the full announcement for Sourcegraph Own.](https://about.sourcegraph.com/blog/announcing-sourcegraph-own)
 
 <Video 
   source={{
