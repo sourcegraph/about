@@ -7,7 +7,7 @@ export const Banner: FunctionComponent<{}> = () => (
         <div className="mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-y-[9px] gap-x-12 md:flex-row">
             <p className="mb-0 font-semibold leading-[22px] text-white">
 
-                Sourcegraph 5.0 + Cody have arrived
+                Sourcegraph 5.0 and Cody have arrived
             </p>
             <Link
                 href="/starship"
