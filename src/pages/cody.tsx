@@ -30,7 +30,8 @@ const CodyPage: FunctionComponent = () => (
                     Read, write, and understand code 10x faster with AI
                 </Heading>
                 <Heading size="h4" className="mt-6 !font-normal text-white">
-                    Your {'{intelligent, code-aware, enterprise-ready}'} programmer’s assistant.
+                    Cody answers code questions and writes code for you by reading your entire codebase and the code
+                    graph.
                 </Heading>
                 <Link
                     href="https://sourcegraph.typeform.com/cody-signup"
