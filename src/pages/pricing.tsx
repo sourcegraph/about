@@ -267,11 +267,11 @@ const PricingPage: FunctionComponent = () => {
             </div>
 
             <CallToActionContentSection
-                title="Free for small teams"
-                description="Small teams can use a limited version of Sourcegraph’s code intelligence platform for free to search personal and open source projects. The free version can only be self-hosted and supports one code host integration."
+                title="Try Sourcegraph for free"
+                description="Indivduals can use a limited version of Sourcegraph’s code intelligence platform for free with the Sourcegraph app."
                 cta1={{
-                    text: 'Deploy',
-                    link: 'https://docs.sourcegraph.com/#self-hosted',
+                    text: 'Install the app',
+                    link: 'https://about.sourcegraph.com/get-started',
                     ctaStyle: 'primaryButtonWhite',
                 }}
                 cta2={false}
