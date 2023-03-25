@@ -62,7 +62,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
 
     return (
         <Tag className={className}>
-            <Heading as="h1" size="h2">
+            <Heading as="h1" size="h2" className="!font-grotesk">
                 {frontmatter.title}
             </Heading>
 

@@ -2,17 +2,9 @@ import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 
-import {
-    Heading,
-    Layout,
-    FeatureUser,
-    CustomerLogos,
-    StarshipPageCallToAction,
-    HubSpotForm,
-    ContentSection,
-    YouTube,
-} from '../../components'
+import { Heading, Layout, FeatureUser, CustomerLogos, HubSpotForm, ContentSection, YouTube } from '../../components'
 import { BlogListItem } from '../../components/Blog/BlogListItem'
+import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
 
 import styles from './Starship.module.scss'
 
@@ -193,11 +185,7 @@ const Starship: FunctionComponent = () => (
 
             <CustomerLogos dark={true} monochrome={true} className="-px-sm !bg-transparent md:pb-5xl" />
 
-            <StarshipPageCallToAction
-                title="Try Sourcegraph App on your code"
-                description="Experience the power of Sourcegraph for free on your local machine."
-                buttonText="Try App"
-            />
+            <DownloadAppCallToActionSection colorTheme="dark" />
 
             <img
                 className="absolute hidden h-[280px] lg:left-[8%] lg:bottom-[160px] lg:block 2xl:left-[21%]"

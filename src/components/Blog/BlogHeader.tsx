@@ -17,7 +17,7 @@ export const BlogHeader: FunctionComponent<Props> = ({ title, belowTitle, baseUr
     variant === 'list' ? (
         <div className="py-sm">
             <Heading as="h1" size="h3" className="inline-block !font-normal">
-                <Link href={baseUrl} className="bg-violet-100 px-4 py-2 text-violet-600 hover:underline" title={title}>
+                <Link href={baseUrl} className="bg-violet-100 px-4 py-2 !font-grotesk text-violet-600 hover:underline">
                     {title}
                 </Link>
             </Heading>
@@ -28,7 +28,7 @@ export const BlogHeader: FunctionComponent<Props> = ({ title, belowTitle, baseUr
         <nav className="my-sm">
             <Link
                 href={baseUrl}
-                className="inline-flex items-center bg-violet-100 py-1 pl-2 pr-3 text-violet-600  hover:underline"
+                className="inline-flex items-center bg-violet-100 py-1 pl-2 pr-3 !font-grotesk text-violet-600  hover:underline"
             >
                 <ArrowLeftIcon className="inline h-5" /> {title}
             </Link>

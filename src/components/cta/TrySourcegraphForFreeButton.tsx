@@ -40,7 +40,6 @@ export const TrySourcegraphAppButton: React.FunctionComponent<{
             size === 'lg' && 'py-xs'
         )}
         href="https://about.sourcegraph.com/app"
-        title={children}
         data-button-style={buttonStyle.primary}
         data-button-location={buttonLocation}
         data-button-type="cta"

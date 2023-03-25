@@ -30,7 +30,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
             />
         </Link>
 
-        <Heading as="h2" size="h5" className="b-0 font-bold leading-none">
+        <Heading as="h2" size="h5" className="b-0 !font-grotesk font-bold leading-none">
             <Link
                 href={`/${blogType}/${slugPath}`}
                 className="block text-gray-600 hover:text-violet-500 hover:underline"

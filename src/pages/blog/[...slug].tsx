@@ -3,9 +3,10 @@ import path from 'path'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import { Layout, CallToActionContentSection } from '../../components'
+import { Layout } from '../../components'
 import { BlogHeader } from '../../components/Blog/BlogHeader'
 import { BLOG_TYPE_TO_INFO } from '../../components/Blog/postTypes'
+import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
 import { Post, POST_TYPE_TO_COMPONENT, postType } from '../../interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '../../lib'
 
@@ -44,7 +45,7 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
                 <PostTemplate post={post} content={content} className="max-w-[840px]" />
             </article>
 
-            <CallToActionContentSection />
+            <DownloadAppCallToActionSection colorTheme="light" />
         </Layout>
     )
 }
