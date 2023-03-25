@@ -2,18 +2,9 @@ import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 
-import {
-    Heading,
-    Layout,
-    FeatureUser,
-    CustomerLogos,
-    StarshipPageCallToAction,
-    HubSpotForm,
-    ContentSection,
-    BlogListItem,
-    YouTube,
-} from '../../components'
-// import { DemoVideo } from '../../components/DemoVideo'
+import { Heading, Layout, FeatureUser, CustomerLogos, HubSpotForm, ContentSection, YouTube } from '../../components'
+import { BlogListItem } from '../../components/Blog/BlogListItem'
+import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
 
 import styles from './Starship.module.scss'
 
@@ -28,8 +19,7 @@ const blogs = [
     {
         title: 'Sourcegraph 5.0 release post',
         href: 'https://about.sourcegraph.com/blog/release/5.0',
-        description:
-            'Sourcegraph 5.0 introduces more than 20 updates and improvements.',
+        description: 'Sourcegraph 5.0 introduces more than 20 updates and improvements.',
         imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/release-post/5.0/sourcegraph-5-0-hero.png',
     },
     {
@@ -42,7 +32,8 @@ const blogs = [
     {
         title: 'Announcing the Sourcegraph app',
         href: 'https://about.sourcegraph.com/blog/announcing-sourcegraph-app',
-        description: 'The Sourcegraph app, now in beta, brings code intelligence to your local machine in a free, lightweight package.',
+        description:
+            'The Sourcegraph app, now in beta, brings code intelligence to your local machine in a free, lightweight package.',
         imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-sourcegraph-app.png',
     },
 ]
@@ -64,8 +55,7 @@ const Starship: FunctionComponent = () => (
         meta={{
             image: '/starship/starship_postlaunch_og.png',
             title: 'Code intelligence + AI = 🤯',
-            description:
-                'Sourcegraph 5.0, the latest release of our code intelligence platform, is now available.',
+            description: 'Sourcegraph 5.0, the latest release of our code intelligence platform, is now available.',
         }}
     >
         <div className="flex justify-center md:mt-[51px]">
@@ -98,24 +88,26 @@ const Starship: FunctionComponent = () => (
                     livestream.
                 </Heading>
                 <YouTube
-                    title="Starship Talks: A new era for software and how it’s built" 
+                    title="Starship Talks: A new era for software and how it’s built"
                     id="tggj3o1pL5U"
                     showTitle={true}
                 />
-                <br/><br/><br/>
+                <br />
+                <br />
+                <br />
                 <div className="flex-col">
                     <Heading size="h4" className="text-white">
                         Register for Dev Talks:
                     </Heading>
 
                     <div className={classNames('mx-auto mt-6 md:max-w-[491px] md:px-10', styles.container)}>
-                    <HubSpotForm
-                        formId="93419890-2b5e-4109-ad13-0fd2ee0c1607"
-                        inlineMessage="Thanks for registering for Starship Dev Talks! You will receive event updates and product announcements from Sourcegraph in your email."
-                        onFormSubmitted={() => {
-                            window.lintrk?.('track', { conversion_id: 12782521 })
-                        }}
-                    />
+                        <HubSpotForm
+                            formId="93419890-2b5e-4109-ad13-0fd2ee0c1607"
+                            inlineMessage="Thanks for registering for Starship Dev Talks! You will receive event updates and product announcements from Sourcegraph in your email."
+                            onFormSubmitted={() => {
+                                window.lintrk?.('track', { conversion_id: 12782521 })
+                            }}
+                        />
                     </div>
                 </div>
             </div>
@@ -193,11 +185,7 @@ const Starship: FunctionComponent = () => (
 
             <CustomerLogos dark={true} monochrome={true} className="-px-sm !bg-transparent md:pb-5xl" />
 
-            <StarshipPageCallToAction
-                title="Try Sourcegraph App on your code"
-                description="Experience the power of Sourcegraph for free on your local machine."
-                buttonText="Try App"
-            />
+            <DownloadAppCallToActionSection colorTheme="dark" />
 
             <img
                 className="absolute hidden h-[280px] lg:left-[8%] lg:bottom-[160px] lg:block 2xl:left-[21%]"

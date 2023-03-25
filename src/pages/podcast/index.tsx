@@ -4,7 +4,8 @@ import { FunctionComponent } from 'react'
 
 import { GetStaticProps } from 'next'
 
-import { PostsListPage, BLOG_TYPE_TO_INFO } from '../../components'
+import { PostsListPage } from '../../components/Blog/PostsListPage'
+import { BLOG_TYPE_TO_INFO } from '../../components/Blog/postTypes'
 import { BlogType, Post, PostIndexComponentProps } from '../../interfaces/posts'
 import { getSortedSlugs, loadMarkdownFile, getMarkdownFiles, serializeMdxSource } from '../../lib'
 

@@ -3,8 +3,11 @@ import path from 'path'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import { Layout, BlogHeader, BLOG_TYPE_TO_INFO, CallToActionContentSection } from '../../components'
-import { Post, POST_TYPE_TO_COMPONENT, postType, urlToPost } from '../../interfaces/posts'
+import { Layout } from '../../components'
+import { BlogHeader } from '../../components/Blog/BlogHeader'
+import { BLOG_TYPE_TO_INFO } from '../../components/Blog/postTypes'
+import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
+import { Post, POST_TYPE_TO_COMPONENT, postType } from '../../interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '../../lib'
 
 export interface PageProps {
@@ -37,24 +40,12 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
 
     return (
         <Layout meta={meta}>
-            <article>
-                <div className="mx-auto px-sm lg:container">
-                    <BlogHeader {...blogInfo} />
-                </div>
-                <div className="mt-8 bg-white">
-                    <div className="mx-auto max-w-screen-xl">
-                        <PostTemplate
-                            post={post}
-                            content={content}
-                            url={urlToPost(post)}
-                            className="mx-auto max-w-[840px]"
-                            headerClassName="bg-white border-b-0 text-center pt-md pb-sm"
-                        />
-                    </div>
-                </div>
+            <article className="mx-auto mb-xl max-w-screen-xl px-sm">
+                <BlogHeader {...blogInfo} variant="post" />
+                <PostTemplate post={post} content={content} className="max-w-[840px]" />
             </article>
 
-            <CallToActionContentSection />
+            <DownloadAppCallToActionSection colorTheme="light" />
         </Layout>
     )
 }

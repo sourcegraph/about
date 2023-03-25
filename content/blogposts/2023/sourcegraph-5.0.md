@@ -31,6 +31,7 @@ Today, we're making another big step toward this vision with Sourcegraph 5.0, wh
 * **App**, which runs Sourcegraph as a local desktop app so any dev can start using it quickly;
 * and much more. 
 
+<br/>
 Read on to discover everything included in Sourcegraph 5.0.
 <br/>
 

@@ -87,7 +87,7 @@ const CodyPage: FunctionComponent = () => (
                     target="_blank"
                 >
                     Join the waitlist
-                    <ChevronRightIcon className="mb-1 !mb-0 ml-[10px] inline" />
+                    <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
                 </Link>
             </div>
         </ContentSection>

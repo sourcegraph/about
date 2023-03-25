@@ -1,8 +1,11 @@
 import { FunctionComponent, ReactNode } from 'react'
 
-import { Layout, BlogHeader, PostsList } from '..'
+import { Layout } from '..'
 import { useLoadMore } from '../../hooks/loadMore'
 import { BlogTypeInfo, PostIndexItemProps } from '../../interfaces/posts'
+
+import { BlogHeader } from './BlogHeader'
+import { PostsList } from './PostsList'
 
 interface Props {
     blogInfo: BlogTypeInfo
@@ -16,8 +19,8 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
 
     return (
         <Layout meta={blogInfo.meta}>
-            <div className="mx-auto px-sm md:container">
-                <BlogHeader {...blogInfo} />
+            <div className="mx-auto max-w-screen-xl px-sm">
+                <BlogHeader {...blogInfo} variant="list" />
 
                 <div className="pt-sm">
                     <PostsList posts={loadMoreHook.currentRecords} />

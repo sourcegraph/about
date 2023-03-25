@@ -37,11 +37,14 @@ We've introduced a new UI for insights creation. You can now use Sourcegraph que
 This makes it especially easy to create insights for related groups of repositories, for example, ones that follow a naming convention such as `-infrastructure`.
 
 The new system allows you to use any of the `repo:` filter options such as:
+
 - `repo:`
 - `-repo:`
 - `repo:has.path()`
 - `repo:has.file()`
 - `repo:has.commit.after()`  
+
+<br/>
   
 <Video 
   source={{

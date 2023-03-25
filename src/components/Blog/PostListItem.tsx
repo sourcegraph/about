@@ -1,129 +1,57 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
 import { truncate } from 'lodash'
 import Link from 'next/link'
 
-import { buttonStyle, buttonLocation } from '../../data/tracking'
 import { PostIndexItemProps } from '../../interfaces/posts'
-import { formatDate } from '../../util'
+import { Heading } from '../Heading'
+
+import { BylineAndDate } from './BylineAndDate'
 
 export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
     frontmatter,
     excerpt,
     slugPath,
     className,
-    headerClassName,
-    renderTitleAsLink = false,
     blogType,
     children,
 }) => (
-    <article className={className}>
-        <header className={headerClassName}>
-            <h4>
-                {renderTitleAsLink === true ? (
-                    <Link
-                        href={`/${blogType}/${slugPath}`}
-                        className="block text-gray-600"
-                        title={frontmatter.title}
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        {frontmatter.title}
-                    </Link>
-                ) : (
-                    frontmatter.title
-                )}
-            </h4>
+    <article className={classNames(className, 'space-y-2')}>
+        <Link href={`/${blogType}/${slugPath}`} className="mb-3 block">
+            <img
+                className="w-full rounded-lg"
+                src={
+                    frontmatter.heroImage
+                        ? frontmatter.heroImage
+                        : 'https://storage.googleapis.com/sourcegraph-assets/sourcegraph-social-image.png'
+                }
+                alt={frontmatter.title}
+            />
+        </Link>
 
-            {frontmatter.authors?.length && (
-                <p className="text-align-center text-secondary mb-0">
-                    {frontmatter.authors.map((a, index) => (
-                        <span key={a.name} data-author={a.name}>
-                            {a.url ? (
-                                a.url.includes('http') ? (
-                                    <a
-                                        href={a.url}
-                                        target="_blank"
-                                        rel="nofollow noreferrer"
-                                        title={a.name}
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.body}
-                                        data-button-type="cta"
-                                    >
-                                        {a.name}
-                                    </a>
-                                ) : (
-                                    <Link
-                                        href={a.url}
-                                        title={a.name}
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.body}
-                                        data-button-type="cta"
-                                    >
-                                        {a.name}
-                                    </Link>
-                                )
-                            ) : (
-                                a.name
-                            )}
-                            {/* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */}
-                            {index === frontmatter.authors!.length - 1 ? ' ' : ', '}
-                        </span>
-                    ))}
-                </p>
-            )}
-
-            {frontmatter.publishDate && (
-                <p className="text-align-center text-secondary mb-0">
-                    <time dateTime={frontmatter.publishDate}>{formatDate(frontmatter.publishDate)}</time>
-                </p>
-            )}
-        </header>
+        <Heading as="h2" size="h5" className="b-0 !font-grotesk font-bold leading-none">
+            <Link
+                href={`/${blogType}/${slugPath}`}
+                className="block text-gray-600 hover:text-violet-500 hover:underline"
+                title={frontmatter.title}
+            >
+                {frontmatter.title}
+            </Link>
+        </Heading>
 
         {slugPath && (
-            <div className="grid grid-cols-1 gap-sm pt-0 md:grid-cols-3">
-                <div className="md:col-span-2">
-                    {frontmatter.description ? (
-                        <p>{truncate(frontmatter.description, { length: 300 })}</p>
-                    ) : (
-                        <p>{typeof excerpt === 'string' && excerpt}</p>
-                    )}
-                    <div className="text-center xs:text-left">
-                        <Link
-                            href={`/${blogType}/${slugPath}`}
-                            title="Read more"
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            Read more
-                        </Link>
-                    </div>
-                </div>
-
-                <div>
-                    <Link
-                        href={`/${blogType}/${slugPath}`}
-                        title={frontmatter.title}
-                        data-button-style={buttonStyle.image}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        <img
-                            className="w-full"
-                            src={
-                                frontmatter.heroImage
-                                    ? frontmatter.heroImage
-                                    : 'https://storage.googleapis.com/sourcegraph-assets/sourcegraph-social-image.png'
-                            }
-                            alt={frontmatter.title}
-                        />
-                    </Link>
-                </div>
-            </div>
+            <p className="text-gray-500">
+                {frontmatter.description
+                    ? truncate(frontmatter.description, { length: 300 })
+                    : typeof excerpt === 'string' && excerpt}
+            </p>
         )}
 
         {children}
+
+        {(frontmatter.authors?.length || frontmatter.publishDate) && (
+            <BylineAndDate authors={frontmatter.authors} publishDate={frontmatter.publishDate} />
+        )}
     </article>
 )
