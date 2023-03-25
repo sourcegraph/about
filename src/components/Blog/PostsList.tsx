@@ -14,13 +14,12 @@ interface Props {
 
 export const PostsList: FunctionComponent<Props> = ({ posts }) => {
     const postProps: Omit<PostComponentProps, 'post' | 'url'> = {
-        className: 'mb-8 bg-white border-1 p-xs',
-        headerClassName: 'text-center',
+        className: 'py-6 border-t-1',
         tag: 'li',
         content: null,
     }
     return (
-        <ul className="ml-0 list-none">
+        <ol className="ml-0 grid list-none gap-x-xl gap-y-md sm:grid-cols-2 md:grid-cols-3">
             {posts.map(post => {
                 const PostList = POST_INDEX_TYPE_TO_COMPONENT[postIndexType(post.frontmatter)]
 
@@ -35,6 +34,6 @@ export const PostsList: FunctionComponent<Props> = ({ posts }) => {
                     />
                 )
             })}
-        </ul>
+        </ol>
     )
 }

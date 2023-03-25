@@ -24,7 +24,6 @@ export const ReleasePost: FunctionComponent<Props> = ({
     content,
     url,
     className = '',
-    headerClassName = '',
     titleClassName = '',
     tag: Tag = 'div',
 }) => {
@@ -161,7 +160,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
 
     return (
         <Tag className={className}>
-            <header className={headerClassName}>
+            <header>
                 <h1 className={titleClassName}>
                     <Link
                         href={url}

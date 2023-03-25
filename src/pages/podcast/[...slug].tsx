@@ -52,7 +52,6 @@ const PodcastPage: NextPage<PageProps> = ({ post, content }) => {
                             content={content}
                             url={urlToPost(post)}
                             className="mx-auto max-w-[750px]"
-                            headerClassName="bg-white border-b-0 text-center pt-md"
                             contentClassName={`${styles.body} break-words`}
                         />
                     </div>

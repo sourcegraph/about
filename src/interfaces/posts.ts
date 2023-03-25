@@ -68,7 +68,6 @@ export interface PostComponentProps {
     /** The URL to the post. */
     url: string
 
-    headerClassName?: string
     titleClassName?: string
     className?: string
     tag?: 'li' | 'div' | 'article'
@@ -85,7 +84,6 @@ export interface PostIndexItemProps {
     excerpt: string | MDXRemoteSerializeResult
     slugPath: string
     className?: string
-    headerClassName?: string
     titleClassName?: string
     tag?: 'li' | 'div' | 'article'
     blogType: BlogType

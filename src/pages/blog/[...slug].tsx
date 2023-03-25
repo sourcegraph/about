@@ -50,7 +50,6 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
                             content={content}
                             url={urlToPost(post)}
                             className="mx-auto max-w-[840px]"
-                            headerClassName="bg-white border-b-0 text-center pt-md pb-sm"
                         />
                     </div>
                 </div>

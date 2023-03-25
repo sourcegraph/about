@@ -24,12 +24,11 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
     content,
     url,
     className = '',
-    headerClassName = '',
     tag: Tag = 'article',
     contentClassName = '',
 }) => (
     <Tag className={`p-sm ${className}`}>
-        <header className={headerClassName}>
+        <header>
             <h2>
                 <Link
                     href={url}

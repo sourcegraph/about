@@ -13,7 +13,7 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
         },
     },
     podcast: {
-        title: 'Sourcegraph Podcast',
+        title: 'Podcast',
         belowTitle: (
             <>
                 <p className="my-2 text-xl">Conversations, stories, and insights from dev tool creators</p>
