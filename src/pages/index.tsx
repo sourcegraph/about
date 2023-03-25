@@ -167,14 +167,14 @@ const Home: FunctionComponent = () => (
                     text="Experimental"
                 />
                 <Heading className="mt-3 mb-4 text-white" size="h2">
-                    Cody AI
+                    Cody
                 </Heading>
                 <p className="mb-4 text-lg text-gray-200">
-                    Working with Cody, Sourcegraph’s new AI coding assistant, is like a having a senior engineer as a
-                    personal assistant who can search and read your codebase to find answers to your questions.
+                    Our new AI-powered coding assistant, Cody, answers code questions and writes code for you by reading
+                    your entire codebase and the code graph.
                 </p>
                 <Link href="/cody" title="Learn more about Cody" className="btn flex bg-transparent p-0 text-white">
-                    <ChevronRightIcon className="!mb-0 inline" />
+                    Request access <ChevronRightIcon className="!mb-0 inline" />
                 </Link>
             </div>
             <div
@@ -220,7 +220,7 @@ const Home: FunctionComponent = () => (
                     Sourcegraph for Enterprise
                 </Heading>
                 <p className="mb-8 max-w-[376px] text-gray-200">
-                    Get in touch to learn how organizations use Sourcegraph at Scale:
+                    Get in touch to learn how organizations use Sourcegraph at scale:
                 </p>
                 <div className="flex">
                     <MeetWithProductExpertButton
