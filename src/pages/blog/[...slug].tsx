@@ -6,7 +6,7 @@ import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 import { Layout, CallToActionContentSection } from '../../components'
 import { BlogHeader } from '../../components/Blog/BlogHeader'
 import { BLOG_TYPE_TO_INFO } from '../../components/Blog/postTypes'
-import { Post, POST_TYPE_TO_COMPONENT, postType, urlToPost } from '../../interfaces/posts'
+import { Post, POST_TYPE_TO_COMPONENT, postType } from '../../interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '../../lib'
 
 export interface PageProps {
@@ -41,7 +41,7 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
         <Layout meta={meta}>
             <article className="mx-auto mb-xl max-w-screen-xl px-sm">
                 <BlogHeader {...blogInfo} variant="post" />
-                <PostTemplate post={post} content={content} url={urlToPost(post)} className="max-w-[840px]" />
+                <PostTemplate post={post} content={content} className="max-w-[840px]" />
             </article>
 
             <CallToActionContentSection />

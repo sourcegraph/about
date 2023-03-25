@@ -1,5 +1,0 @@
-/* Allow title to be the first sentence of the post. */
-.html p:nth-child(1),
-.html p:nth-child(2) {
-    display: inline;
-}

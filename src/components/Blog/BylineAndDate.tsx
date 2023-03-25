@@ -19,7 +19,6 @@ export const BylineAndDate: React.FunctionComponent<{
                         ) : (
                             a.name
                         )}
-                        {/* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */}
                         {index === authors.length - 1 ? ' ' : ', '}
                     </span>
                 ))}

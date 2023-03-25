@@ -2,7 +2,6 @@ import { FunctionComponent, ReactNode } from 'react'
 
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import { LinkPost } from '../components/Blog/LinkPost'
 import { PodcastListItem } from '../components/Blog/PodcastListItem'
 import { PostLayout } from '../components/Blog/PostLayout'
 import { PostListItem } from '../components/Blog/PostListItem'
@@ -10,7 +9,6 @@ import { ReleasePost } from '../components/Blog/ReleasePost'
 
 export enum PostType {
     BlogPost,
-    LinkPost,
     ReleasePost,
     PodcastPost,
 }
@@ -65,9 +63,6 @@ export interface PostComponentProps {
     post: Post
     content: MDXRemoteSerializeResult | null
 
-    /** The URL to the post. */
-    url: string
-
     className?: string
     tag?: 'li' | 'div' | 'article'
     contentClassName?: string
@@ -90,7 +85,6 @@ export interface PostIndexItemProps {
 
 export const POST_TYPE_TO_COMPONENT: Record<PostType, FunctionComponent<PostComponentProps>> = {
     [PostType.BlogPost]: PostLayout,
-    [PostType.LinkPost]: LinkPost,
     [PostType.ReleasePost]: ReleasePost,
     [PostType.PodcastPost]: PostLayout,
 }
@@ -105,8 +99,6 @@ export const postType = (post: Post): PostType =>
         ? PostType.ReleasePost
         : post.frontmatter.tags?.includes('podcast')
         ? PostType.PodcastPost
-        : post.frontmatter.style === 'short-inline-title'
-        ? PostType.LinkPost
         : PostType.BlogPost
 
 export const postIndexType = (frontmatter: FrontMatter): PostIndexType =>
@@ -126,13 +118,6 @@ export interface BlogTypeInfo {
     baseUrl: string
     meta: { title: string; description: string; image?: string }
 }
-
-export const urlToPost = (post: Post): string =>
-    post.frontmatter.style === 'short-inline-title' && post.frontmatter.canonical
-        ? post.frontmatter.canonical
-        : post.frontmatter.slug
-        ? post.frontmatter.slug
-        : '/blog'
 
 export interface Page {
     frontmatter: FrontMatter
