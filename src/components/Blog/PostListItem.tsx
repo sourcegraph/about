@@ -4,9 +4,10 @@ import classNames from 'classnames'
 import { truncate } from 'lodash'
 import Link from 'next/link'
 
-import { FrontMatter, PostIndexItemProps } from '../../interfaces/posts'
-import { formatDate } from '../../util'
+import { PostIndexItemProps } from '../../interfaces/posts'
 import { Heading } from '../Heading'
+
+import { BylineAndDate } from './BylineAndDate'
 
 export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
     frontmatter,
@@ -53,36 +54,4 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
             <BylineAndDate authors={frontmatter.authors} publishDate={frontmatter.publishDate} />
         )}
     </article>
-)
-
-const BylineAndDate: React.FunctionComponent<{
-    authors: FrontMatter['authors']
-    publishDate: FrontMatter['publishDate']
-}> = ({ authors, publishDate }) => (
-    <p className="text-sm text-gray-400">
-        {authors?.length && (
-            <span className="mr-1">
-                {authors.map((a, index) => (
-                    <span key={a.name} className="font-semibold text-gray-600">
-                        {a.url ? (
-                            <Link href={a.url} className="font-semibold text-gray-600">
-                                {a.name}
-                            </Link>
-                        ) : (
-                            a.name
-                        )}
-                        {/* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */}
-                        {index === authors.length - 1 ? ' ' : ', '}
-                    </span>
-                ))}
-            </span>
-        )}
-        {publishDate && <PublishDate date={publishDate} />}
-    </p>
-)
-
-const PublishDate: React.FunctionComponent<{ date: string }> = ({ date }) => (
-    <time className="whitespace-nowrap" dateTime={date}>
-        {formatDate(date)}
-    </time>
 )

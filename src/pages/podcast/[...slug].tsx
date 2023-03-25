@@ -3,13 +3,11 @@ import path from 'path'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import { Layout } from '../../components'
+import { CallToActionContentSection, Layout } from '../../components'
 import { BlogHeader } from '../../components/Blog/BlogHeader'
 import { BLOG_TYPE_TO_INFO } from '../../components/Blog/postTypes'
 import { Post, POST_TYPE_TO_COMPONENT, postType, urlToPost } from '../../interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '../../lib'
-
-import styles from './PodcastPost.module.css'
 
 export interface PageProps {
     post: Post
@@ -41,22 +39,12 @@ const PodcastPage: NextPage<PageProps> = ({ post, content }) => {
 
     return (
         <Layout meta={meta}>
-            <article>
-                <div className="mx-auto px-sm lg:container">
-                    <BlogHeader {...podcastInfo} />
-                </div>
-                <div className="mt-8 bg-white">
-                    <div className="mx-auto max-w-screen-xl">
-                        <PostTemplate
-                            post={post}
-                            content={content}
-                            url={urlToPost(post)}
-                            className="mx-auto max-w-[750px]"
-                            contentClassName={`${styles.body} break-words`}
-                        />
-                    </div>
-                </div>
+            <article className="mx-auto mb-xl max-w-screen-xl px-sm">
+                <BlogHeader {...podcastInfo} variant="post" />
+                <PostTemplate post={post} content={content} url={urlToPost(post)} className="max-w-[840px]" />
             </article>
+
+            <CallToActionContentSection />
         </Layout>
     )
 }

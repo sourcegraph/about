@@ -39,20 +39,9 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
 
     return (
         <Layout meta={meta}>
-            <article>
-                <div className="mx-auto px-sm lg:container">
-                    <BlogHeader {...blogInfo} />
-                </div>
-                <div className="mt-8 bg-white">
-                    <div className="mx-auto max-w-screen-xl">
-                        <PostTemplate
-                            post={post}
-                            content={content}
-                            url={urlToPost(post)}
-                            className="mx-auto max-w-[840px]"
-                        />
-                    </div>
-                </div>
+            <article className="mx-auto mb-xl max-w-screen-xl px-sm">
+                <BlogHeader {...blogInfo} variant="post" />
+                <PostTemplate post={post} content={content} url={urlToPost(post)} className="max-w-[840px]" />
             </article>
 
             <CallToActionContentSection />

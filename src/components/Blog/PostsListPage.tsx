@@ -20,7 +20,7 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
     return (
         <Layout meta={blogInfo.meta}>
             <div className="mx-auto max-w-screen-xl px-sm">
-                <BlogHeader {...blogInfo} />
+                <BlogHeader {...blogInfo} variant="list" />
 
                 <div className="pt-sm">
                     <PostsList posts={loadMoreHook.currentRecords} />
