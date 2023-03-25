@@ -11,7 +11,6 @@ import { ReleasePost } from '../components/Blog/ReleasePost'
 export enum PostType {
     BlogPost,
     LinkPost,
-    PressReleasePost,
     ReleasePost,
     PodcastPost,
 }
@@ -19,7 +18,6 @@ export enum PostType {
 export enum PostIndexType {
     BlogPostIndex,
     PodcastIndex,
-    PressReleaseIndex,
 }
 
 export interface Post {
@@ -100,21 +98,17 @@ export const POST_TYPE_TO_COMPONENT: Record<PostType, FunctionComponent<PostComp
     [PostType.BlogPost]: PostLayout,
     [PostType.LinkPost]: LinkPost,
     [PostType.ReleasePost]: ReleasePost,
-    [PostType.PressReleasePost]: PostLayout,
     [PostType.PodcastPost]: PostLayout,
 }
 
 export const POST_INDEX_TYPE_TO_COMPONENT: Record<PostIndexType, FunctionComponent<PostIndexItemProps>> = {
     [PostIndexType.BlogPostIndex]: PostListItem,
     [PostIndexType.PodcastIndex]: PodcastListItem,
-    [PostIndexType.PressReleaseIndex]: PostListItem,
 }
 
 export const postType = (post: Post): PostType =>
     post.frontmatter.tags?.includes('release')
         ? PostType.ReleasePost
-        : post.frontmatter.tags?.includes('press')
-        ? PostType.PressReleasePost
         : post.frontmatter.tags?.includes('podcast')
         ? PostType.PodcastPost
         : post.frontmatter.style === 'short-inline-title'
@@ -122,24 +116,15 @@ export const postType = (post: Post): PostType =>
         : PostType.BlogPost
 
 export const postIndexType = (frontmatter: FrontMatter): PostIndexType =>
-    frontmatter.tags?.includes('podcast')
-        ? PostIndexType.PodcastIndex
-        : frontmatter.tags?.includes('press')
-        ? PostIndexType.PressReleaseIndex
-        : PostIndexType.BlogPostIndex
+    frontmatter.tags?.includes('podcast') ? PostIndexType.PodcastIndex : PostIndexType.BlogPostIndex
 
 export enum BlogType {
-    PressRelease = 'press',
     Podcast = 'podcast',
     Blog = 'blog',
 }
 
 export const blogType = (frontmatter: FrontMatter): BlogType =>
-    frontmatter.tags?.includes('podcast')
-        ? BlogType.Podcast
-        : frontmatter.tags?.includes('press')
-        ? BlogType.PressRelease
-        : BlogType.Blog
+    frontmatter.tags?.includes('podcast') ? BlogType.Podcast : BlogType.Blog
 
 export interface BlogTypeInfo {
     title: string

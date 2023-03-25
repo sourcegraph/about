@@ -19,14 +19,6 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
             description: "Our changelog, announcements, dev posts, and anything else we think you'll find interesting.",
         },
     },
-    press: {
-        title: 'Press releases',
-        baseUrl: '/press',
-        meta: {
-            title: 'Sourcegraph - Press releases',
-            description: 'Press releases from Sourcegraph',
-        },
-    },
     podcast: {
         title: 'Sourcegraph Podcast',
         belowTitle: (

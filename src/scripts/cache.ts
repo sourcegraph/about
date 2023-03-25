@@ -17,7 +17,6 @@ interface Post {
 }
 
 enum BlogType {
-    PressRelease = 'press',
     Podcast = 'podcast',
     Blog = 'blog',
 }
