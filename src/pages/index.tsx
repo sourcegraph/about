@@ -73,7 +73,7 @@ const features = [
     },
     {
         title: 'Code intelligence',
-        description: 'Navigate code, find references, see code owners, trace history, security, and more.',
+        description: 'Navigate code, find references, see code owners, trace history, and more.',
         image: '/home/code_intelligence.png',
     },
     {
@@ -207,7 +207,7 @@ const Home: FunctionComponent = () => (
             />
             <div className="z-10 flex flex-1 flex-col md:pl-sm">
                 <div className="w-fit md:self-end">
-                    <Heading className="mb-[10px] text-white !text-[36px]" size="h2">
+                    <Heading className="mb-[10px] !text-[36px] text-white" size="h2">
                         Download Sourcegraph
                     </Heading>
                     <p className="mb-8 text-gray-200">For individual developers</p>
@@ -223,7 +223,12 @@ const Home: FunctionComponent = () => (
                     Get in touch to learn how organizations use Sourcegraph at Scale:
                 </p>
                 <div className="flex">
-                    <MeetWithProductExpertButton dark={true} requestInfo={true} buttonLocation={buttonLocation.body} buttonClassName="text-white btn-outline-white" />
+                    <MeetWithProductExpertButton
+                        dark={true}
+                        requestInfo={true}
+                        buttonLocation={buttonLocation.body}
+                        buttonClassName="text-white btn-outline-white"
+                    />
                     <MeetWithProductExpertButton
                         buttonClassName="text-white"
                         chevron={true}
