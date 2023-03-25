@@ -4,12 +4,13 @@ import Link from 'next/link'
 
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 import { BlogTypeInfo } from '../../interfaces/posts'
+import { Heading } from '../Heading'
 
 interface Props extends Pick<BlogTypeInfo, 'title' | 'belowTitle' | 'baseUrl'> {}
 
 export const BlogHeader: FunctionComponent<Props> = ({ title, belowTitle, baseUrl }) => (
     <div className="py-sm">
-        <h1>
+        <Heading as="h1" size="h2" className="font-bold">
             <Link
                 href={baseUrl}
                 className="text-black"
@@ -20,7 +21,7 @@ export const BlogHeader: FunctionComponent<Props> = ({ title, belowTitle, baseUr
             >
                 {title}
             </Link>
-        </h1>
+        </Heading>
 
         {belowTitle}
     </div>

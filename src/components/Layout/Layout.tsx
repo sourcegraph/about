@@ -36,7 +36,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
     const router = useRouter()
     const { pathname, asPath } = router
 
-    const isArticle = ['/blog/', '/podcast/', '/release/'].includes(pathname.replace('[...slug]', ''))
+    const isArticle = ['/blog/', '/podcast/'].includes(pathname.replace('[...slug]', ''))
 
     const meta: LayoutProps['meta'] = {
         ...props.meta,
@@ -120,9 +120,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
                     ? 'var(--sg-color-violet-750)'
                     : headerColorTheme === 'dark'
                     ? 'black'
-                    : headerColorTheme === 'white'
-                    ? 'white'
-                    : 'var(--sg-color-gray-50)'
+                    : 'white'
             }; }`}</style>
             <section
                 className={classNames('flex-1', props.childrenClassName, {
