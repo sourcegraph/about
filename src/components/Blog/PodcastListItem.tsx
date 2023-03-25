@@ -17,7 +17,6 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
     slugPath,
     className = '',
     headerClassName = '',
-    renderTitleAsLink = false,
     blogType,
 }) => {
     const newFrontmatter = {
@@ -34,7 +33,6 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                 excerpt={excerpt}
                 slugPath={slugPath}
                 headerClassName={`podcast-post__header ${headerClassName}`}
-                renderTitleAsLink={renderTitleAsLink}
                 blogType={blogType}
             >
                 <>

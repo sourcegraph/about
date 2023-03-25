@@ -27,7 +27,6 @@ export const ReleasePost: FunctionComponent<Props> = ({
     headerClassName = '',
     titleClassName = '',
     tag: Tag = 'div',
-    renderTitleAsLink = false,
 }) => {
     const body = (
         <>
@@ -164,20 +163,16 @@ export const ReleasePost: FunctionComponent<Props> = ({
         <Tag className={className}>
             <header className={headerClassName}>
                 <h1 className={titleClassName}>
-                    {renderTitleAsLink === true ? (
-                        <Link
-                            href={url}
-                            className="block"
-                            title={frontmatter.title}
-                            data-button-style={buttonStyle.text}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                        >
-                            {frontmatter.title}
-                        </Link>
-                    ) : (
-                        frontmatter.title
-                    )}
+                    <Link
+                        href={url}
+                        className="block"
+                        title={frontmatter.title}
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        {frontmatter.title}
+                    </Link>
                 </h1>
 
                 {frontmatter.publishDate && (

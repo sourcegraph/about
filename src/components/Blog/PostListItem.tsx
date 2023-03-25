@@ -13,27 +13,22 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
     slugPath,
     className,
     headerClassName,
-    renderTitleAsLink = false,
     blogType,
     children,
 }) => (
     <article className={className}>
         <header className={headerClassName}>
             <h4>
-                {renderTitleAsLink === true ? (
-                    <Link
-                        href={`/${blogType}/${slugPath}`}
-                        className="block text-gray-600"
-                        title={frontmatter.title}
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        {frontmatter.title}
-                    </Link>
-                ) : (
-                    frontmatter.title
-                )}
+                <Link
+                    href={`/${blogType}/${slugPath}`}
+                    className="block text-gray-600"
+                    title={frontmatter.title}
+                    data-button-style={buttonStyle.text}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                >
+                    {frontmatter.title}
+                </Link>
             </h4>
 
             {frontmatter.authors?.length && (

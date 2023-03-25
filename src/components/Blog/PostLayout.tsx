@@ -26,26 +26,21 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
     className = '',
     headerClassName = '',
     tag: Tag = 'article',
-    renderTitleAsLink = false,
     contentClassName = '',
 }) => (
     <Tag className={`p-sm ${className}`}>
         <header className={headerClassName}>
             <h2>
-                {renderTitleAsLink === true ? (
-                    <Link
-                        href={url}
-                        className="block"
-                        title={post.frontmatter.title}
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        {post.frontmatter.title}
-                    </Link>
-                ) : (
-                    post.frontmatter.title
-                )}
+                <Link
+                    href={url}
+                    className="block"
+                    title={post.frontmatter.title}
+                    data-button-style={buttonStyle.text}
+                    data-button-location={buttonLocation.body}
+                    data-button-type="cta"
+                >
+                    {post.frontmatter.title}
+                </Link>
             </h2>
 
             {post.frontmatter.authors?.length && (

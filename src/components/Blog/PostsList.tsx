@@ -30,7 +30,6 @@ export const PostsList: FunctionComponent<Props> = ({ posts }) => {
                         excerpt={post.excerpt}
                         slugPath={post.slugPath}
                         key={post.frontmatter.title}
-                        renderTitleAsLink={true}
                         blogType={blogType(post.frontmatter)}
                         {...postProps}
                     />

@@ -70,7 +70,6 @@ export interface PostComponentProps {
 
     headerClassName?: string
     titleClassName?: string
-    renderTitleAsLink?: boolean
     className?: string
     tag?: 'li' | 'div' | 'article'
     contentClassName?: string
@@ -89,7 +88,6 @@ export interface PostIndexItemProps {
     headerClassName?: string
     titleClassName?: string
     tag?: 'li' | 'div' | 'article'
-    renderTitleAsLink?: boolean
     blogType: BlogType
     children?: ReactNode
 }
