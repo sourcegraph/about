@@ -7,7 +7,7 @@ publishDate: 2023-03-27T10:00-07:00
 description: "Cody, Sourcegraph's AI-enabled editor assistant, is now open source"
 tags: [blog]
 slug: 'open-sourcing-cody'
-published: false
+published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-hero.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-hero.png
 ---
