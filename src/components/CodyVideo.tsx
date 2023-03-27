@@ -8,7 +8,7 @@ const VIDEOS: Record<
     { poster: string; mp4: string; webm: string; dimensions: number }
 > = {
     'cody-demo-202303': {
-        poster: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-demo-202303-poster.png',
+        poster: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-demo-202303-poster-2.png',
         // track: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/',
         webm: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-demo-202303.webm',
         mp4: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-demo-202303.mp4',
