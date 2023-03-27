@@ -8,8 +8,8 @@ description: "Cody, Sourcegraph's AI-enabled editor assistant, is now open sourc
 tags: [blog]
 slug: 'open-sourcing-cody'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/cody-hero.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/cody-hero.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-hero.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-hero.png
 ---
 
 <p><iframe width="100%" height="415" src="https://www.youtube.com/embed/EKCtoU0oiCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
