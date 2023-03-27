@@ -105,4 +105,4 @@ We're making the same kind of leap. We've spent 9 years building the underlying 
 
 Today, we're releasing [Sourcegraph 4.0](/blog/release/4.0), the first step toward Sourcegraph becoming a code intelligence platform.
 	
-We're also launching [Sourcegraph Cloud](/blog/enterprise-cloud): secure, scalable, dedicated Sourcegraph instances on the cloud. Sourcegraph Cloud is the best way to start using Sourcegraph on your organization's code. [Sign up now.](https://signup.sourcegraph.com/)
+We're also launching [Sourcegraph Cloud](/blog/enterprise-cloud): secure, scalable, dedicated Sourcegraph instances on the cloud. Sourcegraph Cloud is the best way to start using Sourcegraph on your organization's code. [Sign up now.](https://about.sourcegraph.com/get-started?t=enterprise)
