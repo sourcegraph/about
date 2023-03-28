@@ -199,7 +199,6 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
                                         Download the{' '}
                                         <DownloadLink
                                             downloadName="app-download-linux-deb"
-                                            href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+209542.7216ba/sourcegraph_2023.03.23+209542.7216ba_linux_amd64.deb"
                                             title="Sourcegaph App Debian package"
                                             className="text-gray-500 underline"
                                         >
@@ -239,7 +238,6 @@ const PlatformsInstallSnippet: FunctionComponent = () => (
 const DownloadSection: FunctionComponent = () => (
     <>
         <DownloadLink
-            href="https://storage.googleapis.com/sourcegraph-app-releases/latest/Sourcegraph%20App.dmg"
             className="btn btn-inverted-primary w-fit px-4 font-normal shadow-btn"
             title="Download for Mac"
             downloadName="app-download-mac-dmg"
@@ -250,7 +248,6 @@ const DownloadSection: FunctionComponent = () => (
         <p className="mt-3 text-sm text-gray-300">
             MacOS 13+ required.{' '}
             <DownloadLink
-                href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+209542.7216ba/sourcegraph_2023.03.23+209542.7216ba_darwin_all.zip"
                 title="Older versions"
                 downloadName="app-download-mac-zip"
                 className="text-sm leading-[21px] text-gray-300 underline"

@@ -176,10 +176,9 @@ const InterstitialAppContent: FunctionComponent = () => (
             </div>
 
             <DownloadLink
-                href="https://storage.googleapis.com/sourcegraph-app-releases/latest/Sourcegraph%20App.dmg"
                 className="btn btn-primary mt-6 w-fit px-4 font-normal"
                 title="Download for Mac"
-                downloadName='app-download-mac-dmg'
+                downloadName="app-download-mac-dmg"
             >
                 Download for Mac
             </DownloadLink>
@@ -187,7 +186,6 @@ const InterstitialAppContent: FunctionComponent = () => (
             <p className="mb-0 mt-2.5 flex text-gray-500">
                 MacOS 13+ required.
                 <DownloadLink
-                    href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+209542.7216ba/sourcegraph_2023.03.23+209542.7216ba_darwin_all.zip"
                     className="ml-1 font-normal text-gray-500 underline"
                     title="Old versions"
                     target="_blank"
@@ -206,7 +204,6 @@ const InterstitialAppContent: FunctionComponent = () => (
 
             <div className="mt-4 flex flex-row gap-x-4">
                 <DownloadLink
-                    href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+209542.7216ba/sourcegraph_2023.03.23+209542.7216ba_linux_amd64.deb"
                     className="btn btn-primary w-fit px-4 font-normal"
                     title="Download .deb"
                     downloadName="app-download-linux-deb"
@@ -214,7 +211,6 @@ const InterstitialAppContent: FunctionComponent = () => (
                     Download .deb
                 </DownloadLink>
                 <DownloadLink
-                    href="https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+209542.7216ba/sourcegraph_2023.03.23+209542.7216ba_linux_amd64.zip"
                     className="btn btn-primary w-fit px-4 font-normal"
                     title="Download .zip"
                     downloadName="app-download-linux-zip"
