@@ -1,6 +1,6 @@
-import { HubSpotForm } from '../../components'
+import type { HubSpotFormProps } from '../../components'
 
-export interface ContactPageProps extends HubSpotForm {
+export interface ContactPageProps extends HubSpotFormProps {
     title: string
     description: string
 }
