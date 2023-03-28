@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-import { sourcegraphAppDownloads } from '../data/downloads'
+import { appDownloads } from '../data/downloads'
 import { getEventLogger } from '../hooks/eventLogger'
 
-type DownloadLinkProps = Omit<React.ComponentProps<typeof Link> & { downloadName: keyof typeof sourcegraphAppDownloads }, 'href'>
+type DownloadLinkProps = Omit<React.ComponentProps<typeof Link> & { downloadName: keyof typeof appDownloads }, 'href'>
 
 /**
  * Wrapper for the Link component that logs download clicks. Requires a
@@ -12,7 +12,7 @@ type DownloadLinkProps = Omit<React.ComponentProps<typeof Link> & { downloadName
  */
 export const DownloadLink: React.FunctionComponent<DownloadLinkProps> = props => {
     const { downloadName, ...linkProps } = props
-    const href = sourcegraphAppDownloads[downloadName];
+    const href = appDownloads[downloadName]
     const handleOnClick = (): void => {
         const eventArguments = {
             downloadSource: 'about',
