@@ -12,7 +12,7 @@ heroImage: https://sourcegraphstatic.com/blog/llm-mental-models-hero.png
 socialImage: https://sourcegraphstatic.com/blog/llm-mental-models-hero.png
 ---
 
-> _This is an internal document I wrote a month ago for the Sourcegraph team to share my mental model for building and using applications based on an LLM. It mentions [Cody](https://about.sourcegraph.com/cody), Sourcegraph's AI coding assistant, but the points apply to any application using an LLM._
+> _This is an internal document I wrote a month ago for the Sourcegraph team to share my mental model for building and using applications based on an LLM. It mentions [Cody](https://about.sourcegraph.com/cody), Sourcegraph's AI coding assistant, but the points apply to any application using an LLM. Also, everyone should read Steve Yegge's blog post [Cheating Is All You Need](https://about.sourcegraph.com/blog/cheating-is-all-you-need)._
 
 
 ### You need a mental model of LLMs to build _or_ use a LLM-based product
