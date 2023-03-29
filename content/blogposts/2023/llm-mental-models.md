@@ -112,4 +112,4 @@ That's the vision, anyway. It's going to fail in embarrassing ways a million tim
 
 ### Acknowledgments
 
-Thanks to [Shawn Wang (swyx)](https://www.swyx.io/) and [Jonathan Schneider](https://twitter.com/jon_k_schneider) for reviewing this post.
+Thanks to [Shawn Wang (swyx)](https://www.swyx.io/), [Jonathan Schneider](https://twitter.com/jon_k_schneider), [Micheal Benedict](https://twitter.com/micheal), and [John Berryman](https://twitter.com/jnbrymn) for reviewing this post.
