@@ -104,7 +104,7 @@ The techniques to make LLMs really good at answering code questions require acce
 
 A really good code search engine? With the best code intelligence that's getting better and more comprehensive all the time? Sourcegraph here, reporting for duty!
 
-There's much more to be said here, but this is why so many people look at Sourcegraph and think we are _perfectly_ positioned to build amazing things using AI + Sourcegraph's code intelligence and search. Everything we've built so far can be put to work feeing context into a smart LLM. (Again, see Steve Yegge's blog post [Cheating Is All You Need](https://about.sourcegraph.com/blog/cheating-is-all-you-need), and the graphic at the top of our [5.0 announcement blog post](https://storage.googleapis.com/sourcegraph-assets/blog/5.0/cip-diagram.png).)
+There's much more to be said here, but this is why so many people look at Sourcegraph and think we are _perfectly_ positioned to build amazing things using AI + Sourcegraph's code intelligence and search. Everything we've built so far can be put to work feeding context into a smart LLM. (Again, see Steve Yegge's blog post [Cheating Is All You Need](https://about.sourcegraph.com/blog/cheating-is-all-you-need), and the graphic at the top of our [5.0 announcement blog post](https://storage.googleapis.com/sourcegraph-assets/blog/5.0/cip-diagram.png).)
 
 Cody is essentially like a power user of Sourcegraph that can run 1000 searches and read 1000 code files in the blink of an eye, and condense all that information into a single answer (or the right code) for a user within seconds of them starting to use Sourcegraph. (And the same kind of LLM-based application can and will be built on any other kind of good search engine and dataset.)
 
