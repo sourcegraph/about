@@ -1,12 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import classNames from 'classnames'
-
-import { Heading, Layout, FeatureUser, CustomerLogos, HubSpotForm, ContentSection, YouTube } from '../../components'
+import { Heading, Layout, CustomerLogos, ContentSection, YouTube } from '../../components'
 import { BlogListItem } from '../../components/Blog/BlogListItem'
 import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
-
-import styles from './Starship.module.scss'
 
 const blogs = [
     {
@@ -92,77 +88,12 @@ const Starship: FunctionComponent = () => (
                     id="tggj3o1pL5U"
                     showTitle={true}
                 />
-                <br />
-                <br />
-                <br />
-                <div className="flex-col">
-                    <Heading size="h4" className="text-white">
-                        Register for Dev Talks:
-                    </Heading>
-
-                    <div className={classNames('mx-auto mt-6 md:max-w-[491px] md:px-10', styles.container)}>
-                        <HubSpotForm
-                            formId="93419890-2b5e-4109-ad13-0fd2ee0c1607"
-                            inlineMessage="Thanks for registering for Starship Dev Talks! You will receive event updates and product announcements from Sourcegraph in your email."
-                            onFormSubmitted={() => {
-                                window.lintrk?.('track', { conversion_id: 12782521 })
-                            }}
-                        />
-                    </div>
-                </div>
             </div>
             <img
                 src="/starship/launch.svg"
                 alt="Launch Pill"
                 className="absolute top-[217.7px] left-[6.29px] hidden blur-sm md:block lg:left-[90.29px]"
             />
-        </ContentSection>
-
-        <ContentSection
-            parentClassName="!py-0"
-            className="mx-auto flex max-w-[1061px] flex-col justify-between md:flex-row"
-        >
-            <div>
-                <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-white md:max-w-[491px]">
-                    UPCOMING: DEV TALKS
-                </p>
-                <p className="text-left font-spaceMono text-base leading-[42px] tracking-[2px] text-blue-300 md:max-w-[491px]">
-                    MARCH 30, 9AM - 11AM PT
-                </p>
-                <p className="text-left font-grotesk text-3xl leading-[42px] tracking-[-1px] text-white md:max-w-[491px]">
-                    Explore the current state and future of code intelligence tools
-                </p>
-                <p className="text-left font-sans text-base leading-[24px] tracking-[0px] text-gray-200 md:max-w-[491px]">
-                    Engineers building innovative developer tools—including 1Password, Neovim, Mozilla, and the Rust
-                    programming language—will share insights into the power of code intelligence and how it is
-                    transforming the developer experience.
-                </p>
-                <img src="/starship/launch.svg" alt="Launch Pill" className="mt-[115px] hidden blur-sm md:block" />
-            </div>
-
-            <div className="flex flex-col gap-y-9">
-                <Heading size="h6" className="invisible text-white md:visible">
-                    FEATURING
-                </Heading>
-                <FeatureUser
-                    image="/starship/simonbarendse.png"
-                    name="Simon Barendse"
-                    title="Senior Software Engineer"
-                    company="1Password"
-                />
-                <FeatureUser
-                    image="/starship/bobbyholley.png"
-                    name="Bobby Holley"
-                    title="Distinguished Engineer"
-                    company="Mozilla"
-                />
-                <FeatureUser
-                    image="/starship/tjdevries.png"
-                    name="TJ DeVries"
-                    title="Software Engineer"
-                    company="Sourcegraph"
-                />
-            </div>
         </ContentSection>
 
         <ContentSection className="mb-16 pt-[16px] md:mb-24" parentClassName="!py-0">

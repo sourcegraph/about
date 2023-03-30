@@ -17,11 +17,11 @@ export const Banner: FunctionComponent<{}> = () => (
                 .
             </p>
             <Link
-                href="https://www.twitch.tv/sourcegraph"
+                href="/starship"
                 title="See what’s new"
                 className="btn flex items-center bg-transparent !px-0 !py-0 leading-[22px] text-violet-300"
             >
-                🔴 LIVE NOW: Join the dev talks
+                See the recap from our latest Starship event
                 <ChevronRightIcon className="!mb-0 ml-2 inline" />
             </Link>
         </div>
