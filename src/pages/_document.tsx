@@ -42,6 +42,16 @@ export default class MyDocument extends Document {
                         rel="stylesheet"
                     />
 
+                    {/* Google structured data. */}
+                    <Script
+                        id="structured_data"
+                        type="application/ld+json"
+                        strategy='beforeInteractive'
+                        dangerouslySetInnerHTML={{
+                            __html: JSON.stringify({ '@type': 'WebSite', '@context': 'https://schema.org', name: 'Sourcegraph', url: 'https://about.sourcegraph.com'  }),
+                        }}
+                    />
+
                     {/* Cookiebot */}
                     {/* Cookiebot recommends this in the head, which aligns with Next.js' recommendation for CCMs */}
                     <Script
