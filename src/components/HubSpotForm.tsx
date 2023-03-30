@@ -48,7 +48,7 @@ interface CreateHubSpotFormProps {
     chiliPiper?: boolean
 }
 
-export interface HubSpotForm {
+export interface HubSpotFormProps {
     formId?: string
     masterFormName?: 'contactMulti' | 'contactEmail' | 'gatedMulti' | 'gatedEmail'
     onFormSubmitted?: () => void
@@ -120,12 +120,6 @@ const chiliPiperScript = '//js.chilipiper.com/marketing.js'
 // Gets a script element by its id
 const getScriptElement = (id: string): HTMLScriptElement | Element | null => document.querySelector(`#${id}`)
 
-// Removes a script element by its id
-const removeScriptElement = (id: string): void => {
-    const scriptElement: HTMLScriptElement | Element | null = getScriptElement(id)
-    scriptElement?.remove()
-}
-
 /**
  * This loads a script element and appends it to the document head
  *
@@ -164,47 +158,22 @@ const loadScriptElement = (
  * @param chiliPiper - boolean to enable ChiliPiper
  */
 const loadAllScripts = async (chiliPiper?: boolean): Promise<void> => {
+    const loadingScripts: Promise<HTMLScriptElement | Element | null>[] = []
+
     if (!window.hbspt) {
-        await loadScriptElement('hubspot', hubSpotScript)
+        loadingScripts.push(loadScriptElement('hubspot', hubSpotScript))
     }
     if (!window.jQuery) {
-        await loadScriptElement('jquery', jQueryScript)
+        loadingScripts.push(loadScriptElement('jquery', jQueryScript))
     }
     if (!window.ClearbitForHubspot) {
-        await loadScriptElement('clearbit', clearbitScript, true)
+        loadingScripts.push(loadScriptElement('clearbit', clearbitScript, true))
+    }
+    if (chiliPiper && !window.ChiliPiper) {
+        loadingScripts.push(loadScriptElement('chilipiper', chiliPiperScript))
     }
 
-    /**
-     * If ChiliPiper is enabled, load the script and add an event
-     * listener to map the lead data to the ChiliPiper scheduler.
-     */
-    if (chiliPiper) {
-        await loadScriptElement('chilipiper', chiliPiperScript)
-
-        const chiliPiperDomain = 'sourcegraph'
-        const chiliPiperRouter = 'contact-sales'
-
-        window.addEventListener('message', event => {
-            const data = event.data as HubSpotEventProps
-
-            if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
-                const lead = data.data.reduce((object, item) => Object.assign(object, { [item.name]: item.value }), {})
-                const chiliPiperWindow = window.ChiliPiper
-
-                // Prevent schdulder from opening twice
-                const scheduler = document.querySelector('.chilipiper-popup')
-                if (scheduler) {
-                    return
-                }
-
-                chiliPiperWindow?.submit(chiliPiperDomain, chiliPiperRouter, {
-                    map: true,
-                    lead,
-                    closeOnOutside: true,
-                })
-            }
-        })
-    }
+    await Promise.all(loadingScripts)
 }
 
 /**
@@ -218,10 +187,7 @@ const loadAllScripts = async (chiliPiper?: boolean): Promise<void> => {
  * @param CreateHubSpotFormProps.inlineMessage - form submission message
  */
 function createHubSpotForm({ formId, onFormReady, onFormSubmitted, inlineMessage }: CreateHubSpotFormProps): void {
-    const script = getScriptElement('hubspot')
-
-    // When the HubSpot script is loaded, create the form with the config
-    script?.addEventListener('load', () => {
+    const hbsptCreateForm = (): void => {
         window.hbspt?.forms.create({
             region: 'na1',
             portalId: '2762526',
@@ -235,7 +201,16 @@ function createHubSpotForm({ formId, onFormReady, onFormSubmitted, inlineMessage
             onFormSubmitted,
             inlineMessage,
         })
-    })
+    }
+
+    if (window.hbspt) {
+        hbsptCreateForm()
+
+        return
+    }
+
+    // When the HubSpot script is loaded, create the form with the config
+    getScriptElement('hubspot')?.addEventListener('load', hbsptCreateForm)
 }
 
 // This gets called when the HubSpot form is ready
@@ -283,13 +258,13 @@ const onFormReady = (form: HTMLFormElement): void => {
  * @param options.chiliPiper - a boolean prop to enable/disable ChiliPiper
  * @returns - a div element with an id where the HubSpot form renders
  */
-export const HubSpotForm: FunctionComponent<HubSpotForm> = ({
+export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
     formId,
     masterFormName,
     onFormSubmitted,
     inlineMessage = 'Thank you for your interest in Sourcegraph. We will be in contact with you soon!',
     chiliPiper,
-}: HubSpotForm) => {
+}) => {
     const [formCreated, setFormCreated] = useState<boolean>(false)
 
     useEffect(() => {
@@ -314,11 +289,39 @@ export const HubSpotForm: FunctionComponent<HubSpotForm> = ({
             setFormCreated(true)
         }
 
+        const handleMessage = (event: MessageEvent): void => {
+            const data = event.data as HubSpotEventProps
+            const chiliPiperDomain = 'sourcegraph'
+            const chiliPiperRouter = 'contact-sales'
+
+            if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
+                const lead = data.data.reduce((object, item) => Object.assign(object, { [item.name]: item.value }), {})
+
+                // Prevent schdulder from opening twice
+                const scheduler = document.querySelector('.chilipiper-popup')
+
+                if (!window.ChiliPiper || scheduler) {
+                    return
+                }
+
+                window.ChiliPiper.submit(chiliPiperDomain, chiliPiperRouter, {
+                    map: true,
+                    lead,
+                    closeOnOutside: true,
+                })
+            }
+        }
+
+        /**
+         * If ChiliPiper is enabled, load the script and add an event
+         * listener to map the lead data to the ChiliPiper scheduler.
+         */
+        if (chiliPiper) {
+            window.addEventListener('message', handleMessage)
+        }
+
         return () => {
-            removeScriptElement('hubspot')
-            removeScriptElement('jquery')
-            removeScriptElement('clearbit')
-            removeScriptElement('chilipiper')
+            window.removeEventListener('message', handleMessage)
         }
     }, [formId, masterFormName, onFormSubmitted, inlineMessage, chiliPiper, formCreated])
 
