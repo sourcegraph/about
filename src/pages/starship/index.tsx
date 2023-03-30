@@ -1,12 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import classNames from 'classnames'
-
-import { Heading, Layout, FeatureUser, CustomerLogos, HubSpotForm, ContentSection, YouTube } from '../../components'
+import { Heading, Layout, CustomerLogos, ContentSection, YouTube } from '../../components'
 import { BlogListItem } from '../../components/Blog/BlogListItem'
 import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
-
-import styles from './Starship.module.scss'
 
 const blogs = [
     {
