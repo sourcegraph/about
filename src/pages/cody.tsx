@@ -34,10 +34,9 @@ const CodyPage: FunctionComponent = () => (
                     graph.
                 </Heading>
                 <Link
-                    href="https://sourcegraph.typeform.com/cody-signup"
+                    href="#cta"
                     title="Private beta access request form"
                     className="btn btn-inverted-primary mt-8"
-                    target="_blank"
                 >
                     Request access
                 </Link>
@@ -65,28 +64,35 @@ const CodyPage: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection
+            id="cta"
             parentClassName="!py-0"
             className="mx-auto flex flex-col items-center justify-center gap-x-8 py-[112px] md:flex-row"
         >
             <div className="max-w-[529px]">
                 <Heading size="h2" className="!text-4xl text-white">
-                    Cody is experimental
-                </Heading>
-                <p className="mt-6 text-lg text-gray-200">
-                    Often magical, often frustratingly wrong...but getting better quickly.
-                </p>
-            </div>
-            <div className="flex max-w-[452px] flex-col justify-center border-t border-gray-500 pt-8 md:h-[232px] md:border-l md:border-t-0 md:pl-8 md:pt-0">
-                <Heading size="h5" className="text-white">
-                    Interested in deploying Cody for your team? Let us know.
+                    Cody for Teams
                 </Heading>
                 <Link
                     href="https://sourcegraph.typeform.com/cody-signup"
-                    title="Private beta access request form"
+                    title="Join the waitlist for Cody Enterprise"
                     className="btn mt-8 bg-transparent pl-0 text-white"
                     target="_blank"
                 >
-                    Join the waitlist
+                    Join the waitlist for Cody Enterprise
+                    <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
+                </Link>
+            </div>
+            <div className="flex max-w-[452px] flex-col justify-center border-t border-gray-500 pt-8 md:h-[232px] md:border-l md:border-t-0 md:pl-8 md:pt-0">
+                <Heading size="h2" className="!text-4xl text-white">
+                    Cody for Individuals
+                </Heading>
+                <Link
+                    href="https://sourcegraph.typeform.com/cody-signup"
+                    title="Get Cody Community"
+                    className="btn mt-8 bg-transparent pl-0 text-white"
+                    target="_blank"
+                >
+                    Get Cody Community
                     <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
                 </Link>
             </div>
