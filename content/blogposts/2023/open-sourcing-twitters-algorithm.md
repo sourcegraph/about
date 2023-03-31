@@ -20,4 +20,4 @@ Sourcegraph devs (and [our Discord community](https://discord.gg/rDPqBejz93)) wi
 
 #### 2:15am PDT: start the countdown
 
-[@sqs](https://twitter.com/sqs): A little under 10 hours to go until it's open source. We'll be back closer to 12pm PDT (unless Twitter unexpectedly releases it early, which might happen!).
+[@sqs](https://twitter.com/sqs): A little under 10 hours to go until it's open source. We'll be back closer to 12pm PDT (unless Twitter unexpectedly releases it early, which might happen!). If you want to start exploring the rest of Twitter's open-source code in the meantime, here's a [starting point](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/twitter/+algorithm&patternType=standard&sm=0&groupBy=repo).
