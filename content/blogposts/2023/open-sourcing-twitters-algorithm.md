@@ -17,6 +17,19 @@ Sourcegraph devs (and [our Discord community](https://discord.gg/rDPqBejz93)) wi
 <hr />
 <br />
 
+#### 02:02pm
+
+We are signing off for now. Check out the following:
+
+* [Source code for Twitter's Recommendation Algorithm](https://sourcegraph.com/github.com/twitter/the-algorithm)
+* [Request access to Cody](https://about.sourcegraph.com/cody)
+
+#### 01:43pm 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Government requests for intervention on Twitter must have been so pervasive Twitter Engineers even have a class for it in the Twitter Algorithm <a href="https://t.co/F05sD5h9Lk">pic.twitter.com/F05sD5h9Lk</a></p>&mdash; Alec Sears (@alec_sears) <a href="https://twitter.com/alec_sears/status/1641894323846369299?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+[Link to code](https://sourcegraph.com/github.com/twitter/the-algorithm/-/blob/product-mixer/core/src/main/scala/com/twitter/product_mixer/core/functional_component/marshaller/response/urt/item/forward_pivot/SoftInterventionDisplayTypeMarshaller.scala?L22:12)
+
 #### 01:19pm PDT
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Twitter just released source code for &quot;the algorithm&quot;<br /> <br /> Oh, what file is this? Predicates for tweets on the home timeline?<br /> <br /> Oh what is that 2nd image? <a href="https://t.co/UE3dU8e3Os">pic.twitter.com/UE3dU8e3Os</a></p>&mdash; Ólafur Waage (@olafurw) <a href="https://twitter.com/olafurw/status/1641882387666685956?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
