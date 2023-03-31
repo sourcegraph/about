@@ -12,11 +12,21 @@ slug: 'open-sourcing-twitters-algorithm'
 published: true
 ---
 
-We're eager to see Twitter's algorithm go open source today at 12pm PDT. We love a good code dump. What interesting stuff will we find in the code?
-
-<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Algorithm goes open source at noon Pacific Time</p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1641680913661607936?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote> <script async="true" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 Sourcegraph devs (and [our Discord community](https://discord.gg/rDPqBejz93)) will be liveblogging the most interesting things we see once it's published. Follow along here for updates!
+
+<hr />
+<br />
+
+#### 01:19pm PDT
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Twitter just released source code for &quot;the algorithm&quot;<br /> <br /> Oh, what file is this? Predicates for tweets on the home timeline?<br /> <br /> Oh what is that 2nd image? <a href="https://t.co/UE3dU8e3Os">pic.twitter.com/UE3dU8e3Os</a></p>&mdash; Ólafur Waage (@olafurw) <a href="https://twitter.com/olafurw/status/1641882387666685956?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<Badge text="view the code" color="cerise" link="https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/twitter/the-algorithm%24+type:symbol+CandidatePredicates+&patternType=standard&sm=1&groupBy=path" size="small" />
+
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">What is this?<br /> <br />  (<br />  &quot;author_is_elon&quot;,<br />  candidate =&gt;<br />  candidate<br />  .getOrElse(AuthorIdFeature, None).contains(candidate.getOrElse(DDGStatsElonFeature, 0L))),<a href="https://t.co/mLdjWWYHrF">https://t.co/mLdjWWYHrF</a></p>&mdash; David Mander (@davmander) <a href="https://twitter.com/davmander/status/1641882391022125057?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<Badge text="view the code" color="cerise" link="https://sourcegraph.com/github.com/twitter/the-algorithm/-/blob/home-mixer/server/src/main/scala/com/twitter/home_mixer/model/HomeFeatures.scala?L179" size="small" />
 
 #### 12:24pm PDT
 
