@@ -37,11 +37,7 @@ Sourcegraph devs (and [our Discord community](https://discord.gg/rDPqBejz93)) wi
   
 ![](https://p21.p4.n0.cdn.getcloudapp.com/items/2Nublg4R/073a9300-2b01-4ce8-987c-a672cc7082fa.png?v=a84373c7400affdc7e8582280c8c9aa3)
 
-<br />
-
 ![](https://p21.p4.n0.cdn.getcloudapp.com/items/04u65mPd/171a6de0-c4f5-432b-b6ae-aaf7b3b284ac.png?v=ec871ac9ab6fb5065c438070972972d6)
-
-<br />
 
 ![](https://p21.p4.n0.cdn.getcloudapp.com/items/2NubPd5A/7db7de08-5351-4452-af4b-3bb63f628303.png?v=a3c58d03b46d476573eb9c3a029b0c8f)
 
