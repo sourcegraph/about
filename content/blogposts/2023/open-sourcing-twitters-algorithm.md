@@ -28,7 +28,7 @@ The code is now live: https://sourcegraph.com/github.com/twitter/the-algorithm
 
 We are digging in!
 
-#### 12:04am PDT: communications
+#### 12:04pm PDT: communications
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Twitter recommendation source code now available to all on GitHub <a href="https://t.co/9ozsyZANwa">https://t.co/9ozsyZANwa</a></p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1641876892302073875?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
