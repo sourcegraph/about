@@ -24,7 +24,7 @@ Sourcegraph devs (and [our Discord community](https://discord.gg/rDPqBejz93)) wi
 
 [Link to code](https://sourcegraph.com/github.com/twitter/the-algorithm/-/blob/home-mixer/server/src/main/scala/com/twitter/home_mixer/functional_component/decorator/HomeTweetTypePredicates.scala?L225:8)
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A quick search in Twitter&#39;s Recommendation Algorithm for Ukraine. 🇺🇦 topic is on the same list as: <br>Do not amplify, do not public publish, medical misinformation, NSFW, and violence. What do you think it means? 🤔 <a href="https://t.co/PYqm8pZjI4">pic.twitter.com/PYqm8pZjI4</a></p>&mdash; Mykhailo (@mxpoliakov) <a href="https://twitter.com/mxpoliakov/status/1641887314598150145?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A quick search in Twitter&#39;s Recommendation Algorithm for Ukraine. 🇺🇦 topic is on the same list as: <br />Do not amplify, do not public publish, medical misinformation, NSFW, and violence. What do you think it means? 🤔 <a href="https://t.co/PYqm8pZjI4">pic.twitter.com/PYqm8pZjI4</a></p>&mdash; Mykhailo (@mxpoliakov) <a href="https://twitter.com/mxpoliakov/status/1641887314598150145?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 [Link to code](https://sourcegraph.com/github.com/twitter/the-algorithm/-/blob/visibilitylib/src/main/scala/com/twitter/visibility/models/SpaceSafetyLabelType.scala?L25)
 
