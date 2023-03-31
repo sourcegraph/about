@@ -30,6 +30,8 @@ We are signing off for now. Check out the following:
 
 [Link to code](https://sourcegraph.com/github.com/twitter/the-algorithm/-/blob/product-mixer/core/src/main/scala/com/twitter/product_mixer/core/functional_component/marshaller/response/urt/item/forward_pivot/SoftInterventionDisplayTypeMarshaller.scala?L22:12)
 
+=======
+
 #### 01:19pm PDT
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Twitter just released source code for &quot;the algorithm&quot;<br /> <br /> Oh, what file is this? Predicates for tweets on the home timeline?<br /> <br /> Oh what is that 2nd image? <a href="https://t.co/UE3dU8e3Os">pic.twitter.com/UE3dU8e3Os</a></p>&mdash; Ólafur Waage (@olafurw) <a href="https://twitter.com/olafurw/status/1641882387666685956?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
