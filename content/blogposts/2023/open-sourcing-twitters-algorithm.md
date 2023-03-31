@@ -46,3 +46,32 @@ Blog post TL;DR (thank you Cody)
 - Security concerns or issues should be reported through Twitter's official bug bounty program on HackerOne
 - Twitter hopes the global community can help identify issues and suggest improvements to lead to a better Twitter
 - Twitter is doing this to increase transparency and build trust with users, customers, and the public
+
+#### 12:14pm PDT: LOC
+
+```
+--------------------------------------------------------------------------------
+ Language             Files        Lines        Blank      Comment         Code
+--------------------------------------------------------------------------------
+ Scala                 3007       234531        26038        21493       187000
+ Java                  1043       135517        19944        18259        97314
+ Python                 152        21817         3561         5681        12575
+ C++                     51        10614         1630          466         8518
+ Rust                    30         7360          404          275         6681
+ Protobuf                90         9456         1484         4514         3458
+ C/C++ Header            41         2868          482          377         2009
+ Markdown                63         2136          538            0         1598
+ SQL                     23         1262           98           82         1082
+ YAML                     7         1446          376           19         1051
+ XML                      8         1263          175          190          898
+ Bourne Shell             9          267           65           29          173
+ Toml                     4          124            7            3          114
+ reStructuredText         1          132           36            0           96
+ CMake                    2          115           21            7           87
+ INI                      8           76           15           21           40
+ Docker                   1           34            3            6           25
+ JSON                     1            5            0            0            5
+--------------------------------------------------------------------------------
+ Total                 4541       429023        54877        51422       322724
+--------------------------------------------------------------------------------
+```
