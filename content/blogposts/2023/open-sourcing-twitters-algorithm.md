@@ -28,6 +28,7 @@ Sourcegraph devs (and [our Discord community](https://discord.gg/rDPqBejz93)) wi
 
 <Badge text="view the code" color="cerise" link="https://sourcegraph.com/github.com/twitter/the-algorithm/-/blob/home-mixer/server/src/main/scala/com/twitter/home_mixer/model/HomeFeatures.scala?L179" size="small" />
 
+<br />
 #### 12:43pm PDT
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The 4 types of Twitter posters, according to the just open-sourced algorithm 😯<a href="https://t.co/xTLX77vJ75">https://t.co/xTLX77vJ75</a> <a href="https://t.co/SaQN03P9eK">pic.twitter.com/SaQN03P9eK</a></p>&mdash; Amjad Masad ⠕ (@amasad) <a href="https://twitter.com/amasad/status/1641879976529248256?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -38,7 +39,7 @@ Sourcegraph devs (and [our Discord community](https://discord.gg/rDPqBejz93)) wi
 
 [Link to code](https://sourcegraph.com/github.com/twitter/the-algorithm/-/blob/visibilitylib/src/main/scala/com/twitter/visibility/models/SpaceSafetyLabelType.scala?L25)
 
-
+<br />
 #### 12:24pm PDT
 
 * Precise code navigation is now on! [Example](https://sourcegraph.com/github.com/twitter/the-algorithm/-/blob/ann/src/main/scala/com/twitter/ann/annoy/AnnoyCommon.scala?L16:7&popover=pinned)
@@ -51,7 +52,7 @@ Sourcegraph devs (and [our Discord community](https://discord.gg/rDPqBejz93)) wi
 
 ![](https://p21.p4.n0.cdn.getcloudapp.com/items/2NubPd5A/7db7de08-5351-4452-af4b-3bb63f628303.png?v=a3c58d03b46d476573eb9c3a029b0c8f)
 
-
+<br />
 #### 12:14pm PDT: LOC
 
 ```
@@ -81,6 +82,7 @@ Sourcegraph devs (and [our Discord community](https://discord.gg/rDPqBejz93)) wi
 --------------------------------------------------------------------------------
 ```
 
+<br />
 #### 12:04am PDT: communications
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Twitter recommendation source code now available to all on GitHub <a href="https://t.co/9ozsyZANwa">https://t.co/9ozsyZANwa</a></p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1641876892302073875?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -100,12 +102,15 @@ Blog post TL;DR (thank you Cody)
 - Twitter hopes the global community can help identify issues and suggest improvements to lead to a better Twitter
 - Twitter is doing this to increase transparency and build trust with users, customers, and the public
 
+<br />
+<br />
 #### 11:50am PDT: code pushed
 
 The code is now live: https://sourcegraph.com/github.com/twitter/the-algorithm
 
 We are digging in!
 
+<br />
 #### 2:15am PDT: start the countdown
 
 [@sqs](https://twitter.com/sqs): A little under 10 hours to go until it's open source. We'll be back closer to 12pm PDT (unless Twitter unexpectedly releases it early, which might happen!). If you want to start exploring the rest of Twitter's open-source code in the meantime, here's a [starting point](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/twitter/+algorithm&patternType=standard&sm=0&groupBy=repo).
