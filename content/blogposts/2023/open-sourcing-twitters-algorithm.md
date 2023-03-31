@@ -18,6 +18,17 @@ We're eager to see Twitter's algorithm go open source today at 12pm PDT. We love
 
 Sourcegraph devs (and [our Discord community](https://discord.gg/rDPqBejz93)) will be liveblogging the most interesting things we see once it's published. Follow along here for updates!
 
+#### 12:43pm PDT
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The 4 types of Twitter posters, according to the just open-sourced algorithm 😯<a href="https://t.co/xTLX77vJ75">https://t.co/xTLX77vJ75</a> <a href="https://t.co/SaQN03P9eK">pic.twitter.com/SaQN03P9eK</a></p>&mdash; Amjad Masad ⠕ (@amasad) <a href="https://twitter.com/amasad/status/1641879976529248256?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+[Link to code](https://sourcegraph.com/github.com/twitter/the-algorithm/-/blob/home-mixer/server/src/main/scala/com/twitter/home_mixer/functional_component/decorator/HomeTweetTypePredicates.scala?L225:8)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A quick search in Twitter&#39;s Recommendation Algorithm for Ukraine. 🇺🇦 topic is on the same list as: <br />Do not amplify, do not public publish, medical misinformation, NSFW, and violence. What do you think it means? 🤔 <a href="https://t.co/PYqm8pZjI4">pic.twitter.com/PYqm8pZjI4</a></p>&mdash; Mykhailo (@mxpoliakov) <a href="https://twitter.com/mxpoliakov/status/1641887314598150145?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+[Link to code](https://sourcegraph.com/github.com/twitter/the-algorithm/-/blob/visibilitylib/src/main/scala/com/twitter/visibility/models/SpaceSafetyLabelType.scala?L25)
+
+
 #### 12:24pm PDT
 
 * Precise code navigation is now on! [Example](https://sourcegraph.com/github.com/twitter/the-algorithm/-/blob/ann/src/main/scala/com/twitter/ann/annoy/AnnoyCommon.scala?L16:7&popover=pinned)
@@ -25,6 +36,10 @@ Sourcegraph devs (and [our Discord community](https://discord.gg/rDPqBejz93)) wi
   * Using Cody to explore the codebase; it pretty quickly found the search indexer, which handles about half of the tweets
   
 ![](https://p21.p4.n0.cdn.getcloudapp.com/items/2Nublg4R/073a9300-2b01-4ce8-987c-a672cc7082fa.png?v=a84373c7400affdc7e8582280c8c9aa3)
+
+![](https://p21.p4.n0.cdn.getcloudapp.com/items/04u65mPd/171a6de0-c4f5-432b-b6ae-aaf7b3b284ac.png?v=ec871ac9ab6fb5065c438070972972d6)
+
+![](https://p21.p4.n0.cdn.getcloudapp.com/items/2NubPd5A/7db7de08-5351-4452-af4b-3bb63f628303.png?v=a3c58d03b46d476573eb9c3a029b0c8f)
 
 
 #### 12:14pm PDT: LOC
