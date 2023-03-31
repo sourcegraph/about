@@ -23,7 +23,7 @@ Sourcegraph devs (and [our Discord community](https://discord.gg/rDPqBejz93)) wi
 * Precise code navigation is now on! [Example](https://sourcegraph.com/github.com/twitter/the-algorithm/-/blob/ann/src/main/scala/com/twitter/ann/annoy/AnnoyCommon.scala?L16:7&popover=pinned)
 * Cody codebase exploration
   * Using Cody to explore the codebase; it pretty quickly found the search indexer, which handles about half of the tweets
-
+  
 ![](https://p21.p4.n0.cdn.getcloudapp.com/items/2Nublg4R/073a9300-2b01-4ce8-987c-a672cc7082fa.png?v=a84373c7400affdc7e8582280c8c9aa3)
 
 
