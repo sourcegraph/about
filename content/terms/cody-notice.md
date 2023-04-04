@@ -49,7 +49,8 @@ You must follow the acceptable use policies of the following LLM providers:
 
 * User Prompts
 * LLM Prompts
-* Responses\
+* Responses
+
 
 
 
