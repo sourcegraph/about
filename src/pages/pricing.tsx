@@ -144,7 +144,7 @@ const PricingPage: FunctionComponent = () => {
                     <PricingPlan
                         name="Enterprise Starter"
                         description={
-                            <h3 className="my-sm md:min-h-[108px] max-w-sm text-lg font-normal">
+                            <h3 className="my-sm max-w-sm text-lg font-normal md:min-h-[108px]">
                                 Full platform access for teams and orgs. Flexible deployment options.{' '}
                                 <Link href="/terms" title="Online Terms of Service" className="text-black underline">
                                     Online Terms of Service
@@ -164,7 +164,7 @@ const PricingPage: FunctionComponent = () => {
                     <PricingPlan
                         name="Enterprise"
                         description={
-                            <h3 className="my-sm md:min-h-[108px] max-w-sm text-lg font-normal">
+                            <h3 className="my-sm max-w-sm text-lg font-normal md:min-h-[108px]">
                                 All the benefits of Enterprise Starter with increased Support SLAs and custom deployment
                                 options.
                             </h3>
