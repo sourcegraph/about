@@ -23,7 +23,7 @@ You must follow the acceptable use policies of the following LLM providers:
     
 1. _Can you share information about the training set of the LLMs that Cody uses?_
 
-We do not train our own models today. The third-party LLMs available today that Cody may make use of are trained on large datasets of public repositories. You are responsible for ensuring that any Responses you use comply with copyright licenses. 
+    We do not train our own models today. The third-party LLMs available today that Cody may make use of are trained on large datasets of public repositories. You are responsible for ensuring that any Responses you use comply with copyright licenses. 
 
 2. _What data does Sourcegraph collect when you use Cody?_
 
@@ -49,7 +49,7 @@ We do not train our own models today. The third-party LLMs available today that 
 
 * User Prompts
 * LLM Prompts
-* Responses
+* Responses\
 
 
 
