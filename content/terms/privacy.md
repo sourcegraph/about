@@ -3,7 +3,7 @@ layout: markdown
 title: Privacy Policy
 ---
 
-Last modified: April 5, 2022
+Last modified: April 5, 2023
 
 See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Econtent/terms/privacy%5C.md%7C%5Edocs/privacy+type:diff&patternType=standard) since the [previous version](/terms/archives/privacy/2022-09-26/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives).
 
