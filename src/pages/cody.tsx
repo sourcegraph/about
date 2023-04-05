@@ -82,11 +82,11 @@ const CodyPage: FunctionComponent = () => (
                 </Heading>
                 <Link
                     href="https://sourcegraph.typeform.com/cody-signup"
-                    title="Private beta access request form"
+                    title="Cody access form"
                     className="btn mt-8 bg-transparent pl-0 text-white"
                     target="_blank"
                 >
-                    Join the waitlist
+                    Request Cody access
                     <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
                 </Link>
             </div>
