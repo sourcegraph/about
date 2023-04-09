@@ -28,7 +28,6 @@ export { ThreeUpText } from './ThreeUpText'
 export { TwoColumnSection } from './TwoColumnSection'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
-export { Banner } from './Banner'
 
 // Carousels
 export { CustomCarousel, TabCarousel, QuoteCarousel } from './Carousels'

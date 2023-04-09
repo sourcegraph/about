@@ -7,7 +7,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { buttonLocation } from '../../../data/tracking'
-import { Banner } from '../../Banner'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
 
 import { NavItems } from './NavItems'
@@ -66,12 +65,7 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme }) => {
 
     return (
         <Disclosure as="nav" className={classNames('fixed top-0 left-0 right-0 z-[1030]')} ref={navRef}>
-            {({ open }) => (
-                <>
-                    {pathname !== '/starship' && <Banner />}
-                    <HeaderContent colorTheme={colorTheme} minimal={minimal} open={open} sticky={sticky} />
-                </>
-            )}
+            {({ open }) => <HeaderContent colorTheme={colorTheme} minimal={minimal} open={open} sticky={sticky} />}
         </Disclosure>
     )
 }
