@@ -6,11 +6,9 @@ import classNames from 'classnames'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { EXP_GET_STARTED } from '../../../data/experiments'
 import { buttonLocation } from '../../../data/tracking'
 import { Banner } from '../../Banner'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
-import { GetStartedLinkButton } from '../../GetStartedButton'
 
 import { NavItems } from './NavItems'
 
@@ -133,20 +131,16 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
                 )}
                 requestInfo={true}
             />
-            {EXP_GET_STARTED ? (
-                <GetStartedLinkButton buttonLocation={buttonLocation.nav} dark={dark} />
-            ) : (
-                <Link
-                    href="/get-started"
-                    className={classNames(
-                        'btn min-w-fit px-6 font-normal lg:px-4',
-                        dark ? 'btn-inverted-primary' : 'btn-primary'
-                    )}
-                    title="Download Sourcegraph"
-                >
-                    Download Sourcegraph
-                </Link>
-            )}
+            <Link
+                href="/get-started"
+                className={classNames(
+                    'btn min-w-fit px-6 font-normal lg:px-4',
+                    dark ? 'btn-inverted-primary' : 'btn-primary'
+                )}
+                title="Download Sourcegraph"
+            >
+                Download Sourcegraph
+            </Link>
         </>
     )
 
