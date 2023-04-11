@@ -286,7 +286,7 @@ const EnterPriseTrial: FunctionComponent = () => (
                     Cloud
                 </Link>
                 <Link
-                    href="/get-started/self-hosted"
+                    href="https://docs.sourcegraph.com/admin/deploy"
                     title="Server"
                     className="ml-2 text-xl font-semibold text-violet-500"
                 >

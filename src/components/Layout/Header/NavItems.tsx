@@ -7,7 +7,6 @@ import ChevronUpIcon from 'mdi-react/ChevronUpIcon'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { EXP_SOURCEGRAPH_ENTERPRISE } from '../../../data/experiments'
 import { Badge } from '../../Badge'
 
 interface NavLink {
@@ -24,89 +23,68 @@ interface NavSection {
 
 type NavItem = NavLink | NavSection
 
-const NAV_ITEMS: NavItem[] = EXP_SOURCEGRAPH_ENTERPRISE
-    ? [
-          {
-              name: 'Docs',
-              href: 'https://docs.sourcegraph.com',
-          },
-          {
-              name: 'Enterprise',
-              links: [
-                  { name: 'Sourcegraph Enterprise', href: '/enterprise' },
-                  { name: 'Customers', href: '/case-studies' },
-                  { name: 'Pricing', href: '/pricing' },
-                  { name: 'Contact sales', href: '/contact/request-info' },
-              ],
-          },
-          {
-              name: 'Search public code',
-              href: 'https://sourcegraph.com',
-          },
-          { name: 'Blog', href: '/blog' },
-      ]
-    : [
-          {
-              name: 'Product',
-              links: [
-                  {
-                      name: 'Code Search',
-                      href: '/code-search',
-                  },
-                  {
-                      name: 'Batch Changes',
-                      href: '/batch-changes',
-                  },
-                  {
-                      name: 'Code Insights',
-                      href: '/code-insights',
-                  },
-                  {
-                      name: 'Cody (AI)',
-                      href: '/cody',
-                      badgeText: 'New',
-                  },
-                  {
-                      name: 'Own',
-                      href: '/own',
-                      badgeText: 'New',
-                  },
-              ],
-          },
-          {
-              name: 'App',
-              href: '/app',
-          },
-          {
-              name: 'Enterprise',
-              links: [
-                  {
-                      name: 'Cloud',
-                      href: '/cloud',
-                  },
-                  {
-                      name: 'Pricing',
-                      href: '/pricing',
-                  },
-                  {
-                      name: 'Customer stories',
-                      href: '/case-studies',
-                  },
-              ],
-          },
-          {
-              name: 'Search public code',
-              href: 'https://sourcegraph.com',
-          },
-          {
-              name: 'Docs',
-              href: 'https://docs.sourcegraph.com',
-          },
-          {
-              name: 'Blog',
-              href: '/blog',
-          },
-      ]
+const NAV_ITEMS: NavItem[] = [
+    {
+        name: 'Product',
+        links: [
+            {
+                name: 'Code Search',
+                href: '/code-search',
+            },
+            {
+                name: 'Batch Changes',
+                href: '/batch-changes',
+            },
+            {
+                name: 'Code Insights',
+                href: '/code-insights',
+            },
+            {
+                name: 'Cody (AI)',
+                href: '/cody',
+                badgeText: 'New',
+            },
+            {
+                name: 'Own',
+                href: '/own',
+                badgeText: 'New',
+            },
+        ],
+    },
+    {
+        name: 'App',
+        href: '/app',
+    },
+    {
+        name: 'Enterprise',
+        links: [
+            {
+                name: 'Cloud',
+                href: '/cloud',
+            },
+            {
+                name: 'Pricing',
+                href: '/pricing',
+            },
+            {
+                name: 'Customer stories',
+                href: '/case-studies',
+            },
+        ],
+    },
+    {
+        name: 'Search public code',
+        href: 'https://sourcegraph.com',
+    },
+    {
+        name: 'Docs',
+        href: 'https://docs.sourcegraph.com',
+    },
+    {
+        name: 'Blog',
+        href: '/blog',
+    },
+]
 
 interface Props {
     linkElement?: React.ComponentType<
