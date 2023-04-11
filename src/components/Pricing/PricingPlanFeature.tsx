@@ -5,6 +5,7 @@ import InformationCircleOutlineIcon from 'mdi-react/InformationCircleOutlineIcon
 
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
+import { Tooltip } from '../Tooltip'
 
 import { FeatureInfo } from './data'
 
@@ -21,13 +22,16 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag
 
     return (
         <Tag className={classNames(Tag === 'li' && 'text-sm')}>
-            <div className="my-xxs flex" title={feature.description}>
+            <div className="my-xxs flex" title={!isSmOrUp ? feature.description : undefined}>
                 <div className={classNames('text-lg', className)}>{feature.label}</div>
 
                 {feature.description && isSmOrUp && (
-                    <span className="my-auto ml-xxs text-gray-300">
+                    <Tooltip
+                        wrapperClassName="my-auto ml-xxs text-gray-300 flex items-center"
+                        text={feature.description}
+                    >
                         <InformationCircleOutlineIcon size={isMdOrDown ? 25 : 19} />
-                    </span>
+                    </Tooltip>
                 )}
             </div>
         </Tag>
