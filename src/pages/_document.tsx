@@ -46,9 +46,14 @@ export default class MyDocument extends Document {
                     <Script
                         id="structured_data"
                         type="application/ld+json"
-                        strategy='beforeInteractive'
+                        strategy="beforeInteractive"
                         dangerouslySetInnerHTML={{
-                            __html: JSON.stringify({ '@type': 'WebSite', '@context': 'https://schema.org', name: 'Sourcegraph', url: 'https://about.sourcegraph.com'  }),
+                            __html: JSON.stringify({
+                                '@context': 'https://schema.org',
+                                '@type': 'WebSite',
+                                name: 'Sourcegraph',
+                                url: 'https://sourcegraph.com'
+                            }),
                         }}
                     />
 
