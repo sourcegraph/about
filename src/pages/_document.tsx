@@ -52,7 +52,7 @@ export default class MyDocument extends Document {
                                 '@context': 'https://schema.org',
                                 '@type': 'WebSite',
                                 name: 'Sourcegraph',
-                                url: 'https://sourcegraph.com'
+                                url: 'https://sourcegraph.com',
                             }),
                         }}
                     />
