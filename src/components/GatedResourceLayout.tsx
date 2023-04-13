@@ -63,12 +63,12 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 </div>
             ) : (
                 // ---- DEFAULT BODY VARIATION ----
-                <ContentSection background="white" className="flex flex-col-reverse md:flex-row">
+                <ContentSection background="white" className="mb-4 grid grid-cols-1 gap-0  md:grid-cols-2 md:gap-9">
                     {description}
 
-                    <div className="pb-3xl md:pb-0">
-                        <h2>{formLabel}</h2>
-                        <div className="sg-border-gradient-saturn mt-4 border-3 border-solid p-sm drop-shadow">
+                    <div className="order-1 pb-3xl md:order-2 md:pb-0">
+                        <h2 className="mb-[30px]">{formLabel}</h2>
+                        <div className="sg-border-gradient-saturn mt-0 border-3 border-solid p-sm drop-shadow md:mt-4">
                             {!hasWatchNowQuery && !demioForm && (
                                 <HubSpotForm
                                     masterFormName="gatedMulti"

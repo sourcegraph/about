@@ -22,9 +22,10 @@ interface Hero extends Background {
     displayUnderNav?: boolean
     mergeColumns?: boolean
     centerContent?: boolean
+    className?: string
 }
 
-export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illustration'>> = ({
+export const Hero: FunctionComponent<Omit<Hero, 'children' | 'illustration'>> = ({
     variant,
     product,
     title,
@@ -38,6 +39,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
     displayUnderNav = false,
     mergeColumns = false,
     centerContent = false,
+    className,
 }) => {
     let illustration: Background['illustration']
     if (product && product !== 'sourcegraph cloud') {
@@ -88,7 +90,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'className' | 'children' | 'illu
         <ContentSection
             background={variant}
             illustration={illustration}
-            parentClassName={classNames({
+            parentClassName={classNames(className, {
                 '-mt-[68px] md:-mt-[74px] pt-5xl md:!pt-[148px]': displayUnderNav,
                 'relative md:h-[750px] lg:mb-xs md:mb-4xl mb-0': floatingImg,
             })}
