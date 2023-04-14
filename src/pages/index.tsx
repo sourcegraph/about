@@ -126,7 +126,7 @@ const Home: FunctionComponent = () => (
 
         <ContentSection
             className="mb-[16px] grid grid-cols-1 overflow-hidden rounded-lg bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:max-h-[310px] md:grid-cols-8 lg:max-h-[380px]"
-            parentClassName="bg-white"
+            parentClassName="!pb-2 bg-white"
         >
             <div className="p-4 md:col-span-4 lg:p-8 xl:p-12">
                 <Badge
