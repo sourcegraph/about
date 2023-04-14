@@ -124,7 +124,43 @@ const Home: FunctionComponent = () => (
             ))}
         </ContentSection>
 
-        <ContentSection background="white">
+        <ContentSection
+            className="mb-[16px] grid grid-cols-1 overflow-hidden rounded-lg bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:max-h-[310px] md:grid-cols-8 lg:max-h-[380px]"
+            parentClassName="bg-white"
+        >
+            <div className="p-4 md:col-span-4 lg:p-8 xl:p-12">
+                <Badge
+                    className="bg-violet-100 text-violet-600 md:bg-violet-600 md:text-violet-100"
+                    size="small"
+                    text="Experimental"
+                />
+                <Heading className="mt-3 mb-4 text-white" size="h2">
+                    Cody
+                </Heading>
+                <p className="mb-4 text-lg text-gray-200">
+                    Our new AI-powered coding assistant, Cody, answers code questions and writes code for you by reading
+                    your entire codebase and the code graph.
+                </p>
+                <Link href="/cody" title="Learn more about Cody" className="btn flex bg-transparent p-0 text-white">
+                    Get Cody <ChevronRightIcon className="!mb-0 inline" />
+                </Link>
+            </div>
+            <div
+                aria-hidden={true}
+                className="ml-[96px relative ml-[136px] flex w-full justify-end md:col-span-4 md:-ml-0 lg:-mt-0 lg:ml-40"
+            >
+                <img
+                    className="h-[437px] max-w-[637px] md:absolute md:-top-[90px] md:-right-[112px] md:h-[537px] md:w-[737px] lg:-top-[82px] lg:right-[54px] lg:h-[170%]"
+                    src="/starship/cody-illustration.svg"
+                    alt=""
+                />
+            </div>
+        </ContentSection>
+
+        <ContentSection
+            background="white"
+            parentClassName="pt-[0px]"
+        >
             <CustomerLogos
                 ctaLink={
                     <Link
@@ -155,39 +191,6 @@ const Home: FunctionComponent = () => (
         </ContentSection>
 
         <IntegrationsSection />
-
-        <ContentSection
-            className="mb-[16px] grid grid-cols-1 overflow-hidden rounded-lg bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:max-h-[310px] md:grid-cols-8 lg:max-h-[380px]"
-            parentClassName="bg-white !pt-0"
-        >
-            <div className="p-4 md:col-span-4 lg:p-8 xl:p-12">
-                <Badge
-                    className="bg-violet-100 text-violet-600 md:bg-violet-600 md:text-violet-100"
-                    size="small"
-                    text="Experimental"
-                />
-                <Heading className="mt-3 mb-4 text-white" size="h2">
-                    Cody
-                </Heading>
-                <p className="mb-4 text-lg text-gray-200">
-                    Our new AI-powered coding assistant, Cody, answers code questions and writes code for you by reading
-                    your entire codebase and the code graph.
-                </p>
-                <Link href="/cody" title="Learn more about Cody" className="btn flex bg-transparent p-0 text-white">
-                    Request access <ChevronRightIcon className="!mb-0 inline" />
-                </Link>
-            </div>
-            <div
-                aria-hidden={true}
-                className="ml-[96px relative ml-[136px] flex w-full justify-end md:col-span-4 md:-ml-0 lg:-mt-0 lg:ml-40"
-            >
-                <img
-                    className="h-[437px] max-w-[637px] md:absolute md:-top-[90px] md:-right-[112px] md:h-[537px] md:w-[737px] lg:-top-[82px] lg:right-[54px] lg:h-[170%]"
-                    src="/starship/cody-illustration.svg"
-                    alt=""
-                />
-            </div>
-        </ContentSection>
 
         <ContentSection
             className="relative !m-0 ml-[32px] flex max-w-full flex-col overflow-hidden py-[96px] md:mx-4 md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px]"
