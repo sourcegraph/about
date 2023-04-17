@@ -99,7 +99,7 @@ const Home: FunctionComponent = () => (
             <Heading size="h5" className="!text-2xl	!leading-[34px]">
                 Sourcegraph is used by some of the largest companies in the world.
             </Heading>
-            <Link href="/contact/request-info" className="text-xl font-semibold text-violet-500">
+            <Link href="/contact/request-info" className="flex items-center text-xl font-semibold text-violet-500">
                 Learn about Sourcegraph Enterprise <ArrowRightIcon className="ml-1.5 inline" />
             </Link>
         </div>
@@ -124,7 +124,43 @@ const Home: FunctionComponent = () => (
             ))}
         </ContentSection>
 
-        <ContentSection background="white">
+        <ContentSection
+            className="grid grid-cols-1 overflow-hidden rounded-lg bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:max-h-[310px] md:grid-cols-8 lg:max-h-[380px]"
+            parentClassName="!pb-0 bg-white"
+        >
+            <div className="p-4 md:col-span-4 lg:p-8 xl:p-12">
+                <Badge
+                    className="bg-violet-100 text-violet-600 md:bg-violet-600 md:text-violet-100"
+                    size="small"
+                    text="Experimental"
+                />
+                <Heading className="mt-3 mb-4 text-white" size="h2">
+                    Cody
+                </Heading>
+                <p className="mb-4 text-lg text-gray-200">
+                    Our new AI-powered coding assistant, Cody, answers code questions and writes code for you by reading
+                    your entire codebase and the code graph.
+                </p>
+                <Link href="/cody" title="Learn more about Cody" className="btn flex bg-transparent p-0 text-white">
+                    Get Cody <ChevronRightIcon className="!mb-0 inline" />
+                </Link>
+            </div>
+            <div
+                aria-hidden={true}
+                className="ml-[96px relative ml-[136px] flex w-full justify-end md:col-span-4 md:-ml-0 lg:-mt-0 lg:ml-40"
+            >
+                <img
+                    className="h-[437px] max-w-[637px] md:absolute md:-top-[90px] md:-right-[112px] md:h-[537px] md:w-[737px] lg:-top-[82px] lg:right-[54px] lg:h-[170%]"
+                    src="/starship/cody-illustration.svg"
+                    alt=""
+                />
+            </div>
+        </ContentSection>
+
+        <ContentSection
+            background="white"
+            className='pt-[0px]'
+        >
             <CustomerLogos
                 ctaLink={
                     <Link
@@ -155,39 +191,6 @@ const Home: FunctionComponent = () => (
         </ContentSection>
 
         <IntegrationsSection />
-
-        <ContentSection
-            className="mb-[16px] grid grid-cols-1 overflow-hidden rounded-lg bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:max-h-[310px] md:grid-cols-8 lg:max-h-[380px]"
-            parentClassName="bg-white !pt-0"
-        >
-            <div className="p-4 md:col-span-4 lg:p-8 xl:p-12">
-                <Badge
-                    className="bg-violet-100 text-violet-600 md:bg-violet-600 md:text-violet-100"
-                    size="small"
-                    text="Experimental"
-                />
-                <Heading className="mt-3 mb-4 text-white" size="h2">
-                    Cody
-                </Heading>
-                <p className="mb-4 text-lg text-gray-200">
-                    Our new AI-powered coding assistant, Cody, answers code questions and writes code for you by reading
-                    your entire codebase and the code graph.
-                </p>
-                <Link href="/cody" title="Learn more about Cody" className="btn flex bg-transparent p-0 text-white">
-                    Request access <ChevronRightIcon className="!mb-0 inline" />
-                </Link>
-            </div>
-            <div
-                aria-hidden={true}
-                className="ml-[96px relative ml-[136px] flex w-full justify-end md:col-span-4 md:-ml-0 lg:-mt-0 lg:ml-40"
-            >
-                <img
-                    className="h-[437px] max-w-[637px] md:absolute md:-top-[90px] md:-right-[112px] md:h-[537px] md:w-[737px] lg:-top-[82px] lg:right-[54px] lg:h-[170%]"
-                    src="/starship/cody-illustration.svg"
-                    alt=""
-                />
-            </div>
-        </ContentSection>
 
         <ContentSection
             className="relative !m-0 ml-[32px] flex max-w-full flex-col overflow-hidden py-[96px] md:mx-4 md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px]"
@@ -244,10 +247,10 @@ const Home: FunctionComponent = () => (
 
 const HomeHero: FunctionComponent = () => (
     <ContentSection
-        parentClassName="!py-0 !px-0 overflow-x-clip"
+        parentClassName="!py-0 !px-sm overflow-x-clip"
         className="grid grid-cols-1 gap-x-4 pt-12 md:grid-cols-2 md:bg-[url('/home/background.svg')] md:px-6"
     >
-        <div className="mx-auto flex max-w-[529px] flex-col items-center px-0 md:mx-0 md:items-start">
+        <div className="mx-auto flex max-w-[529px] flex-col items-center px-0 md:mx-0 md:items-start w-full">
             <Heading size="h1" className="text-5xl leading-[2rem] lg:text-6xl xl:text-7xl">
                 <span className="sg-bg-gradient-purple-white whitespace-nowrap bg-clip-text text-transparent">
                     Code intelligence
@@ -332,4 +335,4 @@ const Testimony: FunctionComponent<TestimonyProps> = ({ thumbnail, content, abou
         </div>
     </div>
 )
-export default Home
+export default Home;
