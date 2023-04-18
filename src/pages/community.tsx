@@ -73,6 +73,18 @@ export const Community: FunctionComponent = () => (
                                         </a>{' '}
                                         - April 19-27
                                     </li>
+                                    <li>
+                                        <a
+                                            href="https://opencollective.com/sustainoss/events/sustainoss-pycon-2023-meetup-fa5abf53"
+                                            title="Sourcegraph x SustainOSS Meetup"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            Sourcegraph x SustainOSS Meetup · Salt Lake City, Utah
+                                        </a>{' '}
+                                        - April 20th
+                                    </li>
                                 </ul>
                             </div>
                         ),
