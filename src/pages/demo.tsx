@@ -25,7 +25,7 @@ const Demo: FunctionComponent = () => (
             </div>
             <div className="flex flex-col-reverse items-start gap-6 md:flex-row">
                 <DemoVideo video="homepage-demo-202301" className="mt-10 md:w-[50%] md:max-w-[578px]" />
-                <div className="custom-hs-button-primary w-full rounded-[10px] bg-white pt-6 pb-0 pl-6 pr-[1px] shadow-xl md:px-16 md:pt-12 md:pb-[13px] md:pr-8">
+                <div className="w-full rounded-[10px] bg-white pt-6 pb-0 pl-6 pr-[1px] shadow-xl md:px-16 md:pt-12 md:pb-[13px] md:pr-8">
                     <HubSpotForm masterFormName="contactMulti" chiliPiper={true} />
                 </div>
             </div>

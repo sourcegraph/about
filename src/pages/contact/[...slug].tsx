@@ -26,7 +26,7 @@ const ContactPage: NextPage<ContactPageProps> = ({ title, description, masterFor
                     <h2 className='mb-6'>{title}</h2>
                     <h3 className="font-normal text-[18px]">{description}</h3>
 
-                    <div className="mt-5 custom-hs-button-primary">
+                    <div className="mt-5">
                         <HubSpotForm masterFormName={masterFormName} formId={formId} chiliPiper={true} />
                     </div>
                 </div>

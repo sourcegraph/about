@@ -11,8 +11,8 @@
     position: relative;
     text-align: center;
     transition: all 0.15s linear;
-    background-color: var(--sg-color-violet-400);
-    border-color: var(--sg-color-violet-400);
+    background-color: var(--sg-color-violet-400) !important;
+    border-color: var(--sg-color-violet-400) !important;
     color: #fff;
     border-radius: 3px;
     border-style: solid;
@@ -23,13 +23,13 @@
 
 .container :global(.hs-button):hover,
 .container :global(.hs-button):focus {
-    background-color: var(--sg-color-violet-500);
-    border-color: var(--sg-color-violet-500);
+    background-color: var(--sg-color-violet-500) !important;
+    border-color: var(--sg-color-violet-500) !important;
 }
 
 .container :global(.hs-button):active {
-    background-color: var(--sg-color-violet-500);
-    border-color: var(--sg-color-violet-500);
+    background-color: var(--sg-color-violet-500) !important;
+    border-color: var(--sg-color-violet-500) !important;
 }
 
 .container label {
