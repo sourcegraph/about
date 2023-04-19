@@ -132,6 +132,14 @@ export default class MyDocument extends Document {
                         strategy="afterInteractive"
                         defer={true}
                     />
+
+                    {/* Support Tweets Embed */}
+                    <Script
+                        id="tweeter"
+                        type="text/javascript"
+                        src="https://platform.twitter.com/widgets.js"
+                        strategy="afterInteractive"
+                    />
                 </Head>
                 <body>
                     {/* Google Tag Manager (noscript) */}

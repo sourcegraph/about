@@ -5,6 +5,10 @@ import Link from 'next/link'
 
 import { Badge, ContentSection, Heading, Layout } from '../components'
 import { DemoVideo } from '../components/CodyVideo'
+import { TwitterEmbed } from '../components/EmbedTweet'
+
+// Update tweetIds here, to change/add displayed tweets
+const tweetsIds = ['1645903813302185984', '1647765520673046529']
 
 const CodyPage: FunctionComponent = () => (
     <Layout
@@ -64,9 +68,21 @@ const CodyPage: FunctionComponent = () => (
             <img src="/cody/cody.svg" alt="Own Illustration" className="w-full max-w-[630px]" />
         </ContentSection>
 
+        <ContentSection parentClassName="text-center !pb-0">
+            <Heading size="h2" className="text-white">
+                See what devs are building with Cody
+            </Heading>
+
+            <div className="mt-6 grid grid-cols-1 justify-center gap-6 md:mt-16 md:grid-cols-2">
+                {tweetsIds.map(id => (
+                    <TwitterEmbed tweetId={id} key={id} className="flex max-w-[100%] justify-center " />
+                ))}
+            </div>
+        </ContentSection>
+
         <ContentSection
             parentClassName="!py-0"
-            className="mx-auto flex flex-col items-center justify-center gap-x-8 py-[112px] md:flex-row"
+            className="mx-auto flex flex-col items-center justify-center gap-x-8  py-16 md:flex-row md:py-[112px]"
         >
             <div className="max-w-[529px]">
                 <Heading size="h2" className="!text-4xl text-white">
