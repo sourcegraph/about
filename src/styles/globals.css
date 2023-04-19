@@ -275,6 +275,17 @@
     .sg-bg-gradient-cody {
         background: radial-gradient(109.27% 56.82% at 93.02% 27.51%, #6112A3 0.41%, #270741 54.04%, #1E0632 94.78%);
     }
+
+     /* Customise Hubspot button */
+     .custom-hs-button-primary .hs-button {
+        background: var(--sg-color-violet-500) !important;
+        border-color: var(--sg-color-violet-500) !important;
+    }
+
+    .custom-hs-button-primary .hs-button:hover {
+        background: var(--sg-color-violet-400) !important;
+        border-color: var(--sg-color-violet-400) !important;
+    }
 }
 
 /**
