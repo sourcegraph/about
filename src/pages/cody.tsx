@@ -7,9 +7,6 @@ import { Badge, ContentSection, Heading, Layout } from '../components'
 import { DemoVideo } from '../components/CodyVideo'
 import { TwitterEmbed } from '../components/EmbedTweet'
 
-// Update tweetIds here, to change/add displayed tweets
-const tweetsIds = ['1645903813302185984', '1647765520673046529']
-
 const CodyPage: FunctionComponent = () => (
     <Layout
         meta={{
@@ -73,10 +70,12 @@ const CodyPage: FunctionComponent = () => (
                 See what devs are building with Cody
             </Heading>
 
-            <div className="mt-6 grid grid-cols-1 justify-center gap-6 md:mt-16 md:grid-cols-2">
-                {tweetsIds.map(id => (
-                    <TwitterEmbed tweetId={id} key={id} className="flex max-w-[100%] justify-center " />
-                ))}
+            <div className="mt-6 grid w-full grid-cols-1 gap-6 md:mt-16 md:grid-cols-2">
+                <TwitterEmbed tweetId="1645903813302185984" className="flex max-w-[100%] justify-center" />
+                <div className="flex flex-col">
+                    <TwitterEmbed tweetId="1647765520673046529?s=20" className="flex max-w-[100%] justify-center" />
+                    <TwitterEmbed tweetId="1645490165857542145" className="flex max-w-[100%] justify-center " />
+                </div>
             </div>
         </ContentSection>
 
