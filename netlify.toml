@@ -185,6 +185,10 @@
   to = "/use-cases"
 
 [[redirects]]
+  from = "/careers"
+  to = "/jobs"
+
+[[redirects]]
   from = "/cloud-beta"
   to = "/"
 

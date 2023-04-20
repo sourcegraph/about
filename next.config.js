@@ -8,15 +8,6 @@ const nextConfig = {
   productionBrowserSourceMaps: true,
   reactStrictMode: true,
   pageExtensions: ['tsx'],
-  async redirects() {
-    return [
-      {
-        source: '/careers',
-        destination: '/jobs',
-        permanent: true,
-      },
-    ]
-  },
   webpack(config, options) {
     const { isServer } = options
 
