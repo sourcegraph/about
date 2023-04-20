@@ -18,14 +18,14 @@ const Demo: FunctionComponent = () => (
                 <Heading size="h1" className="mb-6 text-white">
                     Schedule a demo with a product expert
                 </Heading>
-                <p className="mb-16 max-w-3xl text-3xl text-white">
+                <p className="mb-16 max-w-3xl text-3xl text-gray-200">
                     Want to see Sourcegraph in action and speak with a product expert? Fill out the form below, and
                     we'll be in touch.
                 </p>
             </div>
             <div className="flex flex-col-reverse items-start gap-6 md:flex-row">
-                <DemoVideo video="homepage-demo-202301" className="mt-10 md:w-[50%] md:max-w-[578px]" />
-                <div className="w-full rounded-[10px] bg-white pt-6 pb-0 pl-6 pr-[1px] shadow-xl md:px-16 md:pt-12 md:pb-[13px] md:pr-8">
+                <DemoVideo video="homepage-demo-202301" className="mt-10 rounded-lg md:w-[50%] md:max-w-[578px]" />
+                <div className="w-full rounded-[10px] bg-gray-50 pt-6 pb-0 pl-6 pr-[1px] shadow-xl md:px-16 md:pt-12 md:pb-[13px] md:pr-8">
                     <HubSpotForm masterFormName="contactMulti" chiliPiper={true} />
                 </div>
             </div>
