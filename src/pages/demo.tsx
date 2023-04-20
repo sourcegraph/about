@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 
-import { Layout, HubSpotForm } from '../components'
+import { ContentSection, Layout, HubSpotForm, Heading } from '../components'
 import { DemoVideo } from '../components/DemoVideo'
 
 const Demo: FunctionComponent = () => (
@@ -10,27 +10,26 @@ const Demo: FunctionComponent = () => (
             description:
                 "From developer onboarding to incident response, see how companies of all sizes use Sourcegraph to solve the industry's most challenging code problems.",
         }}
-        heroAndHeaderClassName="sg-bg-gradient-venus"
-        hero={
-            <div className="container mx-auto pt-3xl pb-lg">
-                <h1>Schedule a demo with a product expert</h1>
-            </div>
-        }
+        headerColorTheme="purple"
+        className="sg-bg-radial-space"
     >
-        <div className="container mx-auto pt-xl">
-            <div className="grid grid-cols-1 gap-md lg:grid-cols-2">
-                <div>
-                    <p className="mb-8">
-                        Want to see Sourcegraph in action and speak with a product expert? Fill out the form below, and
-                        we'll be in touch.
-                    </p>
+        <ContentSection className="md:pb-4">
+            <div className="mb-8">
+                <Heading size="h1" className="mb-6 text-white">
+                    Schedule a demo with a product expert
+                </Heading>
+                <p className="mb-16 max-w-3xl text-3xl text-gray-200">
+                    Want to see Sourcegraph in action and speak with a product expert? Fill out the form below, and
+                    we'll be in touch.
+                </p>
+            </div>
+            <div className="flex flex-col-reverse items-start gap-6 md:flex-row">
+                <DemoVideo video="homepage-demo-202301" className="mt-10 rounded-lg md:w-[50%] md:max-w-[578px]" />
+                <div className="w-full rounded-[10px] bg-gray-50 pt-6 pb-0 pl-6 pr-[1px] shadow-xl md:px-16 md:pt-12 md:pb-[13px] md:pr-8">
                     <HubSpotForm masterFormName="contactMulti" chiliPiper={true} />
                 </div>
-                <div>
-                    <DemoVideo video="homepage-demo-202301" className="my-6" />
-                </div>
             </div>
-        </div>
+        </ContentSection>
     </Layout>
 )
 

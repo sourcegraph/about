@@ -1,6 +1,6 @@
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 
-import { Layout, CustomerLogos, HubSpotForm } from '../../components'
+import { Layout, CustomerLogos, HubSpotForm, ContentSection } from '../../components'
 
 import { slugs, slugData, type ContactPageProps } from './data'
 
@@ -10,30 +10,29 @@ import { slugs, slugData, type ContactPageProps } from './data'
  */
 const ContactPage: NextPage<ContactPageProps> = ({ title, description, masterFormName, formId }) => (
     <Layout
-        minimal={true}
         meta={{
             title: `Sourcegraph - ${title}`,
             description,
         }}
+        headerColorTheme="purple"
+        className='sg-bg-radial-space'
     >
-        <div className="bg-white text-black">
-            <div className="mx-auto px-8 py-8 xl:container">
-                <div className="grid grid-cols-1 gap-md md:grid-cols-2">
-                    <div>
-                        <h1>{title}</h1>
-                        <h3 className="font-normal">{description}</h3>
+        <ContentSection className="relative md:pb-4">
+            <div className="relative z-10 grid grid-cols-1 gap-md md:grid-cols-2">
+                <div className='order-2 md:order-1'>
+                    <CustomerLogos dark={true} monochrome={true} className="!bg-transparent" />
+                </div>
+                <div className='order-1 md:order-2 rounded-[10px] bg-gray-50 shadow-xl pt-6 pb-0 pl-6 pr-[1px] md:pt-12 md:pb-[13px] md:pl-16 md:pr-[30px]'>
+                    <h2 className='mb-6 text-gray-700'>{title}</h2>
+                    <h3 className="font-normal text-[18px] text-gray-500">{description}</h3>
 
-                        <div className="mt-8">
-                            <HubSpotForm masterFormName={masterFormName} formId={formId} chiliPiper={true} />
-                        </div>
-                    </div>
-
-                    <div>
-                        <CustomerLogos />
+                    <div className="mt-5">
+                        <HubSpotForm masterFormName={masterFormName} formId={formId} chiliPiper={true} />
                     </div>
                 </div>
             </div>
-        </div>
+            <img className='absolute top-80 z-5 max-w-[80%] left-1/2 transform -translate-x-1/2' src='/backgrounds/background-contact.svg' alt='' aria-hidden={true}/>
+        </ContentSection>
     </Layout>
 )
 
