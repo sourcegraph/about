@@ -157,9 +157,9 @@ We encourage individuals and commercial users to [donate](https://curl.se/donati
 
 Daniel, through a company called wolfSSL, offers [commercial support](https://curl.se/support.html) for curl users. If you're considering using curl in critical applications or need help on specific aspects of curl, get support from the founder and maintainer himself.
 
-### curl's turning 25 – join the fun
+### Join a live development stream or release presentation
 
-If all of these ways of getting involved seem too serious but you still want to feel a part of this thriving community, show your support by [raising a glass](https://mastodon.social/@bagder/109840750570908248) to curl on 20 March 2023 when the project turns 25 years old.
+To get a glimpse of how Daniel works, follow [curlhacker](https://www.twitch.tv/curlhacker) on Twitch, where he often live streams curl development, presents releases, and discusses curl-related topics. If you missed a stream, you can find recordings of past streams on [Daniel's YouTube channel](https://www.youtube.com/@DanielStenberg).
 
 ## Tour de Source: curl
 
