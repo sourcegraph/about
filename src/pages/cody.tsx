@@ -53,16 +53,19 @@ const CodyPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection parentClassName="!pb-0" className="mx-auto mt-16 max-w-[768px] text-center md:!mt-2">
-            <Heading size="h2" className="text-white">
-                Codebase-aware chat
-            </Heading>
-            <p className="mt-4 text-lg  text-gray-200">
-                Answer questions about both general programming topics and your specific codebase from right inside your
-                editor. Cody knows about your local code and can learn from the code graph and documentation inside your
-                organization.
-            </p>
-            <img src="/cody/cody.svg" alt="Own Illustration" className="w-full max-w-[630px]" />
+        <ContentSection parentClassName="!pb-0" className="mx-auto flex text-center flex-col md:flex-row md:!mt-2">
+            <div className="border-t border-gray-500 pt-6 md:pt-12 text-left">
+                <Heading size="h2" className="text-white">
+                    Codebase-aware chat
+                </Heading>
+                <p className="mt-4 text-lg  text-gray-200">
+                    Answer questions about both general programming topics and your specific codebase from right inside
+                    your editor. Cody knows about your local code and can learn from the code graph and documentation
+                    inside your organization.
+                </p>
+            </div>
+
+            <img src="/cody/cody.svg" alt="Own Illustration" className="w-full md:max-w-[50%]" />
         </ContentSection>
 
         <ContentSection parentClassName="text-center !pb-0">
