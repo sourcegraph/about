@@ -3,7 +3,7 @@ layout: markdown
 title: Cody Usage and Privacy Notice
 ---
 
-Last modified: April 4, 2023
+Last modified: April 4, 2023 (Archived)
 
 ### Sourcegraph Cody
 Sourcegraph Cody is an AI coding assistant that finds, explains, and writes code using deep context from your codebase. Cody uses Sourcegraph’s Code Intelligence Platform and large language models (LLMs) to synthesize responses to user queries. You can access the private **beta** version of Cody through an editor extension. Cody will soon be available within the Sourcegraph application. 
