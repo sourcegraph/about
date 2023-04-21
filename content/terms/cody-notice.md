@@ -5,7 +5,7 @@ title: Cody Usage and Privacy Notice
 
 Last modified: April 21, 2023
 
-See the [previous version](/terms/archives/cody-notice-/2023-04-04) in our archives.
+See the [previous version](/terms/archives/cody-notice/2023-04-04) in our archives.
 
 ### Sourcegraph Cody
 Sourcegraph Cody (“Cody”) is a state-of-the-art AI coding assistant designed to help software developers by answering code questions and generating code. Cody uses Large Language Models (LLMs), Sourcegraph search, and Sourcegraph code intelligence to provide context-specific results to developers, streamlining their workflow, reducing the time spent on repetitive tasks, and improving the quality and consistency of their work. You can access the private **beta** version of Cody through an editor extension. Cody will soon be available within the Sourcegraph application. 
