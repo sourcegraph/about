@@ -268,7 +268,7 @@ const PricingPage: FunctionComponent = () => {
 
             <CallToActionContentSection
                 title="Try Sourcegraph for free"
-                description="Indivduals can use a limited version of Sourcegraph’s code intelligence platform for free with the Sourcegraph app."
+                description="Individuals can use a limited version of Sourcegraph’s code intelligence platform for free with the Sourcegraph app."
                 cta1={{
                     text: 'Install the app',
                     link: 'https://about.sourcegraph.com/get-started',
