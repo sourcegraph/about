@@ -63,15 +63,15 @@ export const Community: FunctionComponent = () => (
                                 <ul>
                                     <li>
                                         <a
-                                            href="https://us.pycon.org/2023/"
-                                            title="Pycon 2023"
+                                            href="https://events.linuxfoundation.org/open-source-summit-north-america/"
+                                            title="Open Source Summit North America 2023"
                                             data-button-style={buttonStyle.text}
                                             data-button-location={buttonLocation.body}
                                             data-button-type="cta"
                                         >
-                                            Pycon 2023 · Salt Lake City, Utah
+                                            Open Source Summit North America · Vancouver Canada
                                         </a>{' '}
-                                        - April 19-27
+                                        - April 10-12
                                     </li>
                                 </ul>
                             </div>
