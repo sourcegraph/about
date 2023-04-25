@@ -24,7 +24,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             image: '/cody/cody-og.png',
         }}
         headerColorTheme="purple"
-        childrenClassName="sg-bg-gradient-ai-radial"
+        childrenClassName="sg-bg-gradient-purple"
         displayChildrenUnderNav={true}
         className="relative"
     >
