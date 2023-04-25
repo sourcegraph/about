@@ -120,19 +120,19 @@ const TheRiseOfAI: FunctionComponent = () => (
         >
             <PercentageContent
                 percentage="73"
-                description="are blocked more frequently due to the growing size of their codebase."
+                description="Are blocked more frequently due to the growing size of their codebase."
                 wrapperClassName="flex-1 grow gap-4"
                 percentageClassName="justify-center"
             />
             <PercentageContent
                 percentage="82"
-                description="say they wish they could spend less time looking for information or old code and more time actually coding."
+                description="Say they wish they could spend less time looking for information or old code and more time actually coding."
                 wrapperClassName="flex-1 gap-4"
                 percentageClassName="justify-center"
             />
             <PercentageContent
                 percentage="85"
-                description="struggle to maintain efficiency."
+                description="Struggle to maintain efficiency."
                 wrapperClassName="flex-1 gap-4"
                 percentageClassName="justify-center"
             />
