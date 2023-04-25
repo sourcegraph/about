@@ -199,6 +199,17 @@
     .sg-bg-gradient-purple-white {
         background-image: linear-gradient(to bottom right, theme(colors.violet.100), theme(colors.violet.300),theme(colors.violet.400));
     }
+    .sg-bg-gradient-ai-radial {
+        background: radial-gradient(27.19% 24.43% at 82.36% 56.71%, #270741 0%, rgba(39, 7, 65, 0) 100%),
+            radial-gradient(81.62% 17.03% at -4.13% 79.72%, rgba(97, 18, 163, 0.67) 0.41%, rgba(97, 18, 163, 0) 100%),
+            radial-gradient(
+                    56.22% 62.27% at 104.24% 25.88%,
+                    rgba(97, 18, 163, 0.71) 0%,
+                    rgba(255, 85, 67, 0) 100%,
+                    rgba(97, 18, 163, 0) 100%
+                ),
+            radial-gradient(121.35% 585.52% at 115.38% -2.37%, #270741 0%, #1e0632 71.46%, #0f111a 100%)
+    }
 
     /* Starship Backgrounds */
     .sg-bg-gradient-starship-small {
