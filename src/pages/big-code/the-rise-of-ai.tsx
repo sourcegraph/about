@@ -4,8 +4,6 @@ import classNames from 'classnames'
 import Link from 'next/link'
 
 import { ContentSection, Heading, Layout } from '../../components'
-import { MeetWithProductExpertButton } from '../../components/cta/MeetWithProductExpertButton'
-import { buttonLocation } from '../../data/tracking'
 
 interface PercentageContentProps {
     percentage: string
@@ -24,7 +22,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             image: '/cody/cody-og.png',
         }}
         headerColorTheme="purple"
-        childrenClassName="sg-bg-gradient-purple"
+        childrenClassName="sg-bg-gradient-app-large"
         displayChildrenUnderNav={true}
         className="relative"
     >
@@ -34,7 +32,7 @@ const TheRiseOfAI: FunctionComponent = () => (
         >
             <div className="flex w-full max-w-[737px] flex-col">
                 <Heading size="h1" className="mb-6 text-white md:!text-[62px] xl:w-[737px]">
-                    Big Code in the Rise of AI
+                    Big Code in AI era
                 </Heading>
 
                 <p className="m-0 text-lg text-gray-200">
@@ -53,7 +51,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             className="mx-sm mt-16 max-w-[838px] text-center text-white md:mx-auto md:mt-[-50px]"
         >
             Developers are struggling more than ever with issues around tech debt, maintenance, collaboration, and
-            scalability. But with the overnight AI boom, the pain of Big Code is only getting worse:
+            scalability. The overnight AI boom means Big Code pains are only getting worse:
         </Heading>
 
         <ContentSection
@@ -70,12 +68,12 @@ const TheRiseOfAI: FunctionComponent = () => (
                 </p>
             </div>
             <div className="flex flex-col items-center gap-3 md:w-[417px]">
-                <img className="h-[237px] w-[237px]" src="/rise-of-ai/20.svg" alt="72%" />
+                <img className="h-[237px] w-[237px]" src="/rise-of-ai/14.svg" alt="72%" />
                 <Heading size="h4" className="text-center text-white">
                     Devs aren’t writing code.
                 </Heading>
                 <p className="text-center text-lg text-white">
-                    Only 20% of devs’ time is actually spent writing new code for core products. The rest is spent
+                    Only 14% of devs’ time is actually spent writing new code for core products. The rest is spent
                     trying to search, understand, and fix code.
                 </p>
             </div>
@@ -95,11 +93,11 @@ const TheRiseOfAI: FunctionComponent = () => (
             parentClassName="!py-0 !px-sm"
             className="mt-16 flex flex-col gap-[34px] rounded-[5px] bg-white p-6 md:mt-[120px] md:flex-row md:p-12 "
         >
-            <Heading size="h1" as="h4" className="text-gray-700 md:w-[51%]">
+            <Heading size="h1" as="h4" className="text-gray-700 md:max-w-[562px]">
                 Only <span className="text-violet-500">65% of devs</span> say their company has a plan to address Big
                 Code.
             </Heading>
-            <div className="flex flex-col md:w-[49%]">
+            <div className="flex flex-col md:w-[562px]">
                 <p className="text-xl font-semibold">
                     Big • Code <span className="font-normal italic text-gray-500"> noun </span>
                 </p>
@@ -127,14 +125,14 @@ const TheRiseOfAI: FunctionComponent = () => (
                 percentageClassName="justify-center"
             />
             <PercentageContent
-                percentage="85"
-                description="struggle to maintain efficiency."
+                percentage="82"
+                description="say they wish they could spend less time looking for information or old code and more time actually coding."
                 wrapperClassName="flex-1 gap-4"
                 percentageClassName="justify-center"
             />
             <PercentageContent
-                percentage="82"
-                description="say they wish they could spend less time looking for information or old code and more time actually coding."
+                percentage="85"
+                description="struggle to maintain efficiency."
                 wrapperClassName="flex-1 gap-4"
                 percentageClassName="justify-center"
             />
@@ -144,11 +142,11 @@ const TheRiseOfAI: FunctionComponent = () => (
             className="grid grid-cols-1 gap-6 px-sm py-16 md:grid-cols-2 md:px-6 md:pt-[112px] md:pb-28"
             parentClassName="!p-0"
         >
-            <div className="max-w-[572px]">
-                <Heading size="h2" as="h4" className="mb-[30px] !text-4xl text-white">
-                    The AI era is here, and no one has a plan.
+            <div>
+                <Heading size="h2" as="h4" className="mb-[30px] max-w-[460px] !text-4xl text-white">
+                    The AI era is here and no one has a plan.
                 </Heading>
-                <p className="text-lg text-gray-200">
+                <p className="max-w-[572px] text-lg text-gray-200">
                     76% of developers are excited about the rise of dev tools powered by AI, but there are still big
                     concerns around AI and its impact on Big Code:
                 </p>
@@ -180,28 +178,28 @@ const TheRiseOfAI: FunctionComponent = () => (
             <div className="grid grid-cols-1 justify-items-center gap-6 rounded-[5px] bg-white p-4 md:grid-cols-2 md:p-12">
                 <PercentageContent
                     percentage="95"
-                    description="need help getting up to speed on the codebase significantly faster."
+                    description="Need help getting up to speed and stay on top of the codebase significantly faster."
                     wrapperClassName="max-w-[411px] gap-4"
                     percentageClassName="justify-start !text-violet-500"
                     descriptionClassName="!text-gray-700 md:text-[22px]"
                 />
                 <PercentageContent
                     percentage="91"
-                    description="want to be able to ID and resolve code issues more efficiently."
+                    description="Want to be able to ID and resolve code issues more efficiently."
                     wrapperClassName="max-w-[411px] gap-4"
                     percentageClassName="justify-start !text-violet-500"
                     descriptionClassName="!text-gray-700 md:text-[22px]"
                 />
                 <PercentageContent
                     percentage="91"
-                    description="would save a significant amount of time if their codebase was fully searchable across all sources and repos."
+                    description="Would save a significant amount of time if their codebase was fully searchable across all sources and repos."
                     wrapperClassName="max-w-[411px] gap-4"
                     percentageClassName="justify-start !text-violet-500"
                     descriptionClassName="!text-gray-700 md:text-[22px]"
                 />
                 <PercentageContent
                     percentage="88"
-                    description="want a tool that would allow them to have a greater output with fewer people and resources."
+                    description="Want a tool that would allow them to have a greater output with fewer people and resources."
                     wrapperClassName="max-w-[411px] gap-4"
                     percentageClassName="justify-start !text-violet-500"
                     descriptionClassName="!text-gray-700 md:text-[22px]"
@@ -211,24 +209,25 @@ const TheRiseOfAI: FunctionComponent = () => (
 
         <ContentSection className="flex flex-col items-center pb-4">
             <Heading size="h2" as="h4" className="mb-4 text-center !text-4xl text-white">
-                CTA here
+                Put AI to work on Big Code.
             </Heading>
             <p className="mb-8 text-center text-lg text-gray-200">Subtitle here</p>
             <div className="flex flex-col gap-4 md:flex-row">
                 <Link
                     href="/guides/fixing-vulnerabilities-less-is-more.pdf"
-                    className='btn min-w-fit px-6 font-normal btn-inverted-primary'
+                    className="btn btn-inverted-primary min-w-fit px-6 font-normal"
                     title="Download the Big Code report"
-                    target='_blank'
+                    target="_blank"
                 >
                     Download the Big Code report
                 </Link>
-                <MeetWithProductExpertButton
-                    buttonClassName="text-white btn-outline-white"
-                    buttonLocation={buttonLocation.body}
+                <Link
+                    href="/cody"
+                    className="btn btn-outline-white min-w-fit px-6 font-normal"
+                    title="Get access to Cody"
                 >
-                    CTA for Cody trial
-                </MeetWithProductExpertButton>
+                    Get access to Cody
+                </Link>
             </div>
         </ContentSection>
 
@@ -238,7 +237,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             <Heading size="h2" as="h4" className="mb-4 text-center !text-4xl">
                 Methodology
             </Heading>
-            <p className="mx-auto max-w-[768px] text-center text-lg text-gray-700 mb-0">
+            <p className="mx-auto mb-0 max-w-[768px] text-center text-lg text-gray-700">
                 To create our Big Code Report, we rely on survey data gathered anonymously by Ground Control Research.
                 The respondents are developers and engineering leaders that vary in experience levels across several
                 engineering disciplines. The respondents work at companies that span all major industries with at least
