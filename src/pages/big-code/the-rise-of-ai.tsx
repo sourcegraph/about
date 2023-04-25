@@ -3,9 +3,9 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { ContentSection, Heading, Layout } from '../components'
-import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
-import { buttonLocation } from '../data/tracking'
+import { ContentSection, Heading, Layout } from '../../components'
+import { MeetWithProductExpertButton } from '../../components/cta/MeetWithProductExpertButton'
+import { buttonLocation } from '../../data/tracking'
 
 interface PercentageContentProps {
     percentage: string
