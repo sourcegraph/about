@@ -43,14 +43,14 @@ const TheRiseOfAI: FunctionComponent = () => (
                     and security of digital products consumers use every day.
                 </p>
             </div>
-
-            <div className="mt-[-50px] ml-9 hidden h-[362px] w-full bg-[url('/rise-of-ai/illustration.png')] bg-cover bg-center bg-no-repeat md:block md:h-[543px] md:w-[758px] xl:w-[878px]" />
         </ContentSection>
+
+        <div className="absolute right-0 ml-9 hidden h-[543px] w-full bg-[url('/rise-of-ai/illustration.png')] bg-cover bg-center bg-no-repeat md:top-[15px] md:block md:w-[400px] lg:top-[30px] lg:w-[500px] xl:w-[550px]" />
 
         <Heading
             as="h2"
             size="h3"
-            className="mx-sm mt-16 max-w-[838px] text-center text-white md:mx-auto md:mt-[-50px]"
+            className="relative z-10 px-sm mt-16 max-w-[838px] text-center text-white md:mx-auto md:mt-[176px]"
         >
             Developers are struggling more than ever with issues around tech debt, maintenance, collaboration, and
             scalability. The overnight AI boom means Big Code pains are only getting worse:
@@ -97,7 +97,10 @@ const TheRiseOfAI: FunctionComponent = () => (
             </Heading>
 
             <div className={classNames('mx-auto mt-4 md:max-w-[491px] md:px-10', styles.container)}>
-                <HubSpotForm formId="3612c366-2e75-4a4b-9212-6dcbd6b008fe" />
+                <HubSpotForm
+                    formId="3612c366-2e75-4a4b-9212-6dcbd6b008fe"
+                    inlineMessage="Thank you! Download the report here → https://info.sourcegraph.com/hubfs/PDFs/big-code-in-ai-report.pdf"
+                />
             </div>
         </div>
 
@@ -241,7 +244,11 @@ const TheRiseOfAI: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <div className="absolute hidden max-w-[30%] bg-[url('/backgrounds/big-code.svg')] bg-cover bg-center bg-no-repeat md:bottom-[1042px] md:ml-0 md:block md:h-[543px] md:w-[758px] lg:bottom-[900px] xl:w-[878px]" />
+        <img
+            src="/backgrounds/big-code.svg"
+            className="absolute hidden max-w-[30%] md:bottom-[1000px] md:ml-[-50px] md:block md:h-[450px] md:w-[758px] lg:bottom-[900px] xl:w-[878px]"
+            alt="Illustration"
+        />
 
         <ContentSection className="py-16 md:py-28" parentClassName="bg-gray-200 !py-0  relative z-10">
             <Heading size="h2" as="h4" className="mb-4 text-center !text-4xl">
