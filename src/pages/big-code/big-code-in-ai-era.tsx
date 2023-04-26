@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 import { ContentSection, Heading, HubSpotForm, Layout } from '../../components'
 
-import styles from '../starship/Starship.module.scss'
+import styles from './BigCode.module.scss'
 
 interface PercentageContentProps {
     percentage: string
@@ -97,7 +97,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             </Heading>
 
             <div className={classNames('mx-auto mt-4 md:max-w-[491px] md:px-10', styles.container)}>
-                <HubSpotForm formId="93419890-2b5e-4109-ad13-0fd2ee0c1607" />
+                <HubSpotForm formId="3612c366-2e75-4a4b-9212-6dcbd6b008fe" />
             </div>
         </div>
 
