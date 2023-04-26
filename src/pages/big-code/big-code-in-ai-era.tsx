@@ -3,7 +3,9 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { ContentSection, Heading, Layout } from '../../components'
+import { ContentSection, Heading, HubSpotForm, Layout } from '../../components'
+
+import styles from '../starship/Starship.module.scss'
 
 interface PercentageContentProps {
     percentage: string
@@ -19,7 +21,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             title: 'The Rise of AI',
             description:
                 'Developers are struggling more than ever with issues around tech debt, maintenance, collaboration, and scalability. But with the overnight AI boom, the pain of Big Code is only getting worse.',
-            image: '/cody/cody-og.png',
+            image: '/rise-of-ai/rise-of-ai-og.png',
         }}
         headerColorTheme="purple"
         childrenClassName="sg-bg-gradient-app-large"
@@ -32,7 +34,7 @@ const TheRiseOfAI: FunctionComponent = () => (
         >
             <div className="flex w-full max-w-[737px] flex-col">
                 <Heading size="h1" className="mb-6 text-white md:!text-[62px] xl:w-[737px]">
-                    Big Code in AI era
+                    Big Code in the AI era
                 </Heading>
 
                 <p className="m-0 text-lg text-gray-200">
@@ -88,6 +90,16 @@ const TheRiseOfAI: FunctionComponent = () => (
                 </p>
             </div>
         </ContentSection>
+
+        <div id="get-report-form" className="mt-[112px] flex flex-col px-sm md:mt-16">
+            <Heading size="h4" className="text-center text-white">
+                Enter your email to get the full report
+            </Heading>
+
+            <div className={classNames('mx-auto mt-4 md:max-w-[491px] md:px-10', styles.container)}>
+                <HubSpotForm formId="93419890-2b5e-4109-ad13-0fd2ee0c1607" />
+            </div>
+        </div>
 
         <ContentSection
             parentClassName="!py-0 !px-sm"
@@ -173,9 +185,9 @@ const TheRiseOfAI: FunctionComponent = () => (
 
         <ContentSection className="md:mb-20 md:px-6" parentClassName="!py-0">
             <Heading size="h2" as="h4" className="mx-auto mb-[54px] max-w-[1061px] text-center !text-4xl text-white">
-                What have those devs ID’d as the biggest threats Big Code and AI present in their day-to-day?
+                The Big Code struggle is real.
             </Heading>
-            <div className="grid grid-cols-1 justify-items-center gap-6 rounded-[5px] bg-white p-4 md:grid-cols-2 md:p-12">
+            <div className="relative z-10 grid grid-cols-1 justify-items-center gap-6 rounded-[5px] bg-white p-4 md:grid-cols-2 md:p-12">
                 <PercentageContent
                     percentage="95"
                     description="Need help getting up to speed and stay on top of the codebase significantly faster."
@@ -209,15 +221,13 @@ const TheRiseOfAI: FunctionComponent = () => (
 
         <ContentSection className="flex flex-col items-center pb-4">
             <Heading size="h2" as="h4" className="mb-4 text-center !text-4xl text-white">
-                Put AI to work on Big Code.
+                Get the full picture on AI & Big Code.
             </Heading>
-            <p className="mb-8 text-center text-lg text-gray-200">Subtitle here</p>
             <div className="flex flex-col gap-4 md:flex-row">
                 <Link
-                    href="/guides/fixing-vulnerabilities-less-is-more.pdf"
+                    href="#get-report-form"
                     className="btn btn-inverted-primary min-w-fit px-6 font-normal"
                     title="Download the Big Code report"
-                    target="_blank"
                 >
                     Download the Big Code report
                 </Link>
@@ -231,7 +241,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <div className="absolute hidden max-w-[30%] bg-[url('/backgrounds/big-code.svg')] bg-cover bg-center bg-no-repeat md:bottom-[944px] md:ml-0 md:block md:h-[543px] md:w-[758px] lg:bottom-[804px] xl:w-[878px]  2xl:bottom-[784px]" />
+        <div className="absolute hidden max-w-[30%] bg-[url('/backgrounds/big-code.svg')] bg-cover bg-center bg-no-repeat md:bottom-[1042px] md:ml-0 md:block md:h-[543px] md:w-[758px] lg:bottom-[900px] xl:w-[878px]" />
 
         <ContentSection className="py-16 md:py-28" parentClassName="bg-gray-200 !py-0  relative z-10">
             <Heading size="h2" as="h4" className="mb-4 text-center !text-4xl">
