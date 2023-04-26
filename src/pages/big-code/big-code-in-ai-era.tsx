@@ -50,7 +50,7 @@ const TheRiseOfAI: FunctionComponent = () => (
         <Heading
             as="h2"
             size="h3"
-            className="relative z-10 px-sm mt-16 max-w-[838px] text-center text-white md:mx-auto md:mt-[176px]"
+            className="relative z-10 mt-16 max-w-[838px] px-sm text-center text-white md:mx-auto md:mt-[176px]"
         >
             Developers are struggling more than ever with issues around tech debt, maintenance, collaboration, and
             scalability. The overnight AI boom means Big Code pains are only getting worse:
@@ -99,7 +99,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             <div className={classNames('mx-auto mt-4 md:max-w-[491px] md:px-10', styles.container)}>
                 <HubSpotForm
                     formId="3612c366-2e75-4a4b-9212-6dcbd6b008fe"
-                    inlineMessage="Thank you! Download the report here → https://info.sourcegraph.com/hubfs/PDFs/big-code-in-ai-report.pdf"
+                    inlineMessage={'Thank you! <a href=\'https://info.sourcegraph.com/hubfs/PDFs/big-code-in-ai-report.pdf\'>Download the report here.</a>'}
                 />
             </div>
         </div>
@@ -108,7 +108,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             parentClassName="!py-0 !px-sm"
             className="mt-16 flex flex-col gap-[34px] rounded-[5px] bg-white p-6 md:mt-[120px] md:flex-row md:p-12 "
         >
-            <Heading size="h1" as="h4" className="text-gray-700 md:max-w-[562px] md:!text-7xl !text-4xl">
+            <Heading size="h1" as="h4" className="!text-4xl text-gray-700 md:max-w-[562px] md:!text-7xl">
                 Only <span className="text-violet-500">65% of devs</span> say their company has a plan to address Big
                 Code.
             </Heading>
