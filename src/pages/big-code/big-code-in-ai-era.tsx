@@ -45,7 +45,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <div className="absolute right-0 ml-9 hidden h-[543px] w-full bg-[url('/rise-of-ai/illustration.png')] bg-cover bg-center bg-no-repeat md:top-[15px] md:block md:w-[400px] lg:top-[30px] lg:w-[500px] xl:w-[550px]" />
+        <div className="absolute right-0 ml-9 hidden h-[600px] w-full bg-[url('/rise-of-ai/illustration.png')] bg-cover bg-center bg-no-repeat md:top-[15px] md:block md:w-[400px] lg:top-[30px] lg:w-[500px] xl:w-[550px]" />
 
         <Heading
             as="h2"
@@ -108,7 +108,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             parentClassName="!py-0 !px-sm"
             className="mt-16 flex flex-col gap-[34px] rounded-[5px] bg-white p-6 md:mt-[120px] md:flex-row md:p-12 "
         >
-            <Heading size="h1" as="h4" className="text-gray-700 md:max-w-[562px]">
+            <Heading size="h1" as="h4" className="text-gray-700 md:max-w-[562px] md:!text-7xl !text-4xl">
                 Only <span className="text-violet-500">65% of devs</span> say their company has a plan to address Big
                 Code.
             </Heading>
@@ -243,12 +243,6 @@ const TheRiseOfAI: FunctionComponent = () => (
                 </Link>
             </div>
         </ContentSection>
-
-        <img
-            src="/backgrounds/big-code.svg"
-            className="absolute hidden max-w-[30%] md:bottom-[1000px] md:ml-[-50px] md:block md:h-[450px] md:w-[758px] lg:bottom-[900px] xl:w-[878px]"
-            alt="Illustration"
-        />
 
         <ContentSection className="py-16 md:py-28" parentClassName="bg-gray-200 !py-0  relative z-10">
             <Heading size="h2" as="h4" className="mb-4 text-center !text-4xl">
