@@ -99,7 +99,9 @@ const TheRiseOfAI: FunctionComponent = () => (
             <div className={classNames('mx-auto mt-4 md:max-w-[491px] md:px-10', styles.container)}>
                 <HubSpotForm
                     formId="3612c366-2e75-4a4b-9212-6dcbd6b008fe"
-                    inlineMessage={'Thank you! <a href=\'https://info.sourcegraph.com/hubfs/PDFs/big-code-in-ai-report.pdf\'>Download the report here.</a>'}
+                    inlineMessage={
+                        'Thank you! <a style="color: var(--sg-color-white);text-decoration: underline;" href=\'https://info.sourcegraph.com/hubfs/PDFs/big-code-in-ai-report.pdf\'>Download the report here.</a>'
+                    }
                 />
             </div>
         </div>
