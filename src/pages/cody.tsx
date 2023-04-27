@@ -128,10 +128,7 @@ const CodyPage: FunctionComponent = () => (
             <div className='order-1 md:order-2 rounded-[10px] bg-gray-50 shadow-xl pt-6 pb-0 pl-6 pr-[1px] md:pt-12 md:pb-[13px] md:pl-16 md:pr-[30px]'>
                 <HubSpotForm masterFormName="contactMulti" formId="05e46684-9fbc-4c4d-b010-f661f247c4c6" />
             </div>
-            
         </ContentSection>
-
-
     </Layout>
 )
 
