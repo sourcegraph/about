@@ -13,7 +13,7 @@ socialImage: Use to set large social image i.e.  https://about.sourcegraph.com/b
 canonical: Use to override the canonical link i.e. https://www.fastcompany.com/90565930/im-deaf-and-this-is-what-happens-when-i-get-on-a-zoom-call
 videoID: 'dQw4w9WgXcQ'
 ---
-Big Code has long been a challenge for enterprise dev teams. Ccodebases today are made up of millions (sometimes billions) of lines of code written by thousands of devs over the span of two to three decades. The complexity that comes from these massive codebases creates massive tech debt, and causes issues around code maintenance, collaboration, and scalability. And with the overnight boom of AI, Big Code pains are about to get much worse. 
+Big Code has long been a challenge for enterprise dev teams. Codebases today are made up of millions (sometimes billions) of lines of code written by thousands of devs over the span of two to three decades. The complexity that comes from these massive codebases creates massive tech debt, and causes issues around code maintenance, collaboration, and scalability. And with the overnight boom of AI, Big Code pains are about to get much worse. 
 
 Today, Sourcegraph is releasing a full data report on AI’s impact on Big Code in the enterprise, “Big Code in the AI era” and the risk companies face if they fail to standardize AI adoption for their teams.
 
