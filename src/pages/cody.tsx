@@ -45,7 +45,7 @@ const CodyPage: FunctionComponent = () => (
                     </Link>
                 
                     <Link
-                        href="#cody-for-work"
+                        href=""
                         title="Cody for work access form"
                         className="btn btn-inverted-primary mt-8 m-4"
                         target="_blank"
@@ -123,9 +123,9 @@ const CodyPage: FunctionComponent = () => (
 
         <ContentSection parentClassName="!pb-0" className="mx-auto mt-16 max-w-[768px] md:!mt-2 pb-20">
             <Heading size="h2" className="text-white text-center mb-4">
-                <a className="text-white">Get Cody for work</a>
+                Get Cody for work
             </Heading>
-            <div id="cody-for-work" className='order-1 md:order-2 rounded-[10px] bg-gray-50 shadow-xl pt-6 pb-0 pl-6 pr-[1px] md:mt-16 md:pt-12 md:pb-[13px] md:pl-16 md:pr-[30px]'>
+            <div className='order-1 md:order-2 rounded-[10px] bg-gray-50 shadow-xl pt-6 pb-0 pl-6 pr-[1px] md:mt-16 md:pt-12 md:pb-[13px] md:pl-16 md:pr-[30px]'>
                 <div className='mt-4 pb-10'>
                     <HubSpotForm masterFormName="contactMulti" formId="05e46684-9fbc-4c4d-b010-f661f247c4c6" />
                 </div>
