@@ -1,15 +1,15 @@
 ---
-title: New data report: Big Code in the AI era
+title: 'New data report: Big Code in the AI era'
 description: AI is the best and worst thing to happen to enterprise dev teams.
 authors:
   - name: Amie Rotherham
-    url: twitter.com/amieroth
+  - url: https://twitter.com/amieroth
 publishDate: 2023-04-27T12:00
 tags: [blog]
 slug: big-code-in-ai-era
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/Big%20code%20report%20blog%20image%20-%201200x675.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/Big%20code%20report%20blog%20image%20-%201200x675.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-sourcegraph-app.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-sourcegraph-app.png
 ---
 Big Code has long been a challenge for enterprise dev teams. Codebases today are made up of millions (sometimes billions) of lines of code written by thousands of devs over the span of two to three decades. The complexity that comes from these massive codebases creates massive tech debt, and causes issues around code maintenance, collaboration, and scalability. And with the overnight boom of AI, Big Code pains are about to get much worse. 
 
