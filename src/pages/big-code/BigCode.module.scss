@@ -1,0 +1,49 @@
+.container {
+    :global(.hs-input) {
+        background: var(--sg-color-black) !important;
+        padding: 14px 16px;
+        border: 1px solid var(--sg-color-gray-500);
+        border-radius: 5px;
+        color: var(--sg-color-white) !important;
+        width: 100%;
+        max-width: 411px;
+    }
+
+    :global(.hs-email),
+    :global(.actions) {
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    :global(.submitted-message) {
+        color: var(--sg-color-white);
+    }
+
+    :global(#label-email-3612c366-2e75-4a4b-9212-6dcbd6b008fe),
+    :global(.hs-form-booleancheckbox-display) {
+        color: var(--sg-color-gray-200);
+    }
+
+    :global(.hs-form-booleancheckbox-display) {
+        display: flex;
+    }
+
+    :global(.hs-submit) {
+        text-align: center;
+    }
+
+    :global(.hs-button) {
+        background: var(--sg-color-white) !important;
+        border-color: var(--sg-color-white) !important;
+        color: var(--sg-color-violet-500);
+    }
+
+    :global(.hs-button):focus,
+    :global(.hs-button):hover {
+        color: var(--sg-color-white);
+    }
+
+    :global(.submitted-message) {
+        text-align: center;
+    }
+}
