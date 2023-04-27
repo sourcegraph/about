@@ -18,7 +18,7 @@ interface PercentageContentProps {
 const TheRiseOfAI: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'The Rise of AI',
+            title: 'Big Code in the AI era',
             description:
                 'Developers are struggling more than ever with issues around tech debt, maintenance, collaboration, and scalability. But with the overnight AI boom, the pain of Big Code is only getting worse.',
             image: '/rise-of-ai/rise-of-ai-og.png',
