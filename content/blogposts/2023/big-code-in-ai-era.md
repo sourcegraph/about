@@ -29,7 +29,7 @@ View the full report here: [**Big Code in the AI era]([about.sourcegraph.com/big
 * 76% of developers are excited about the rise of dev tools powered by AI, but there are still big concerns around AI and its impact on Big Code: 
     * 61% are concerned about AI’s impact on tech debt.
     * 67% expressed concern about code sprawl due to the growth of AI.
-    * 76% are worried about the amount of new code created that will then need to be managed. 
+    * 76% are worried about the amount of new code created and the need to manage it. 
 
 **Innovation is at risk. **
 * What have those devs ID’d as the biggest threats Big Code and AI present in their day-to-day? 
@@ -39,9 +39,9 @@ View the full report here: [**Big Code in the AI era]([about.sourcegraph.com/big
     * 88% want a tool that would allow them to have a greater output with fewer people and resources. 
 
 **We can’t ignore the Big Code problem anymore. **
-* Devs spend almost as much time reading, interpreting, and fixing code as they do writing it, devs told us that they spend only 20% of their time in the codebase writing new code for core products. 
+* Devs spend almost as much time reading, interpreting, and fixing code as they do writing it. Devs told us that they spend only 20% of their time in the codebase writing new code for core products. 
     * That 20% drops down to 14% when you take non-code activities into account like meetings and documentation. 
-* 87% of devs and engineering leaders already struggling to keep their knowledge up to date on the new code.
+* 87% of devs and engineering leaders are already struggling to keep their knowledge up to date on the new code.
 * 74% of developers and engineering leaders say that they already rely too heavily on other people to understand their code base and product architecture in order to develop new code. 
 * Developer satisfaction is taking a big hit because of Big Code: 
     * 73% of devs are blocked more frequently due to the size of their codebase. 
