@@ -8,10 +8,8 @@ publishDate: 2023-04-27T12:00
 tags: [blog]
 slug: big-code-in-ai-era
 published: true
-heroImage: /blog/thumbnail-image.jpg
-socialImage: Use to set large social image i.e.  https://about.sourcegraph.com/blog/sourcegraph-social-img.png
-canonical: Use to override the canonical link i.e. https://www.fastcompany.com/90565930/im-deaf-and-this-is-what-happens-when-i-get-on-a-zoom-call
-videoID: 'dQw4w9WgXcQ'
+heroImage: https://storage.googleapis.com/sourcegraph-assets/Big%20code%20report%20blog%20image%20-%201200x675.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/Big%20code%20report%20blog%20image%20-%201200x675.png
 ---
 Big Code has long been a challenge for enterprise dev teams. Codebases today are made up of millions (sometimes billions) of lines of code written by thousands of devs over the span of two to three decades. The complexity that comes from these massive codebases creates massive tech debt, and causes issues around code maintenance, collaboration, and scalability. And with the overnight boom of AI, Big Code pains are about to get much worse. 
 
