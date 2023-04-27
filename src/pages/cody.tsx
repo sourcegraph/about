@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { Badge, ContentSection, Heading, Layout } from '../components'
+import { Badge, ContentSection, Heading, Layout, HubSpotForm } from '../components'
 import { DemoVideo } from '../components/CodyVideo'
 import { TwitterEmbed } from '../components/EmbedTweet'
 
@@ -34,14 +34,25 @@ const CodyPage: FunctionComponent = () => (
                     Cody answers code questions and writes code for you by reading your entire codebase and the code
                     graph.
                 </Heading>
-                <Link
-                    href="https://sourcegraph.typeform.com/cody-signup"
-                    title="Private beta access request form"
-                    className="btn btn-inverted-primary mt-8"
-                    target="_blank"
-                >
-                    Sign up for access
-                </Link>
+                <div className="">
+                    <Link
+                        href="https://docs.sourcegraph.com/cody"
+                        title="Cody docs"
+                        className="btn btn-inverted-primary mt-8"
+                        target="_blank"
+                    >
+                        Get Cody for free
+                    </Link>
+                
+                    <Link
+                        href="https://sourcegraph.typeform.com/cody-signup"
+                        title="Cody for work access form"
+                        className="btn btn-inverted-primary mt-8"
+                        target="_blank"
+                    >
+                        Get Cody for work
+                    </Link>
+                </div>
             </div>
             <div className="mx-auto mt-6 w-full md:mt-0">
                 <DemoVideo
@@ -84,7 +95,7 @@ const CodyPage: FunctionComponent = () => (
 
         <ContentSection
             parentClassName="!py-0"
-            className="mx-auto flex flex-col items-center justify-center gap-x-8  py-16 md:flex-row md:py-[112px]"
+            className="mx-auto flex flex-col items-center justify-center gap-x-8 py-16 md:flex-row md:py-[112px]"
         >
             <div className="max-w-[529px]">
                 <Heading size="h2" className="!text-4xl text-white">
@@ -96,19 +107,31 @@ const CodyPage: FunctionComponent = () => (
             </div>
             <div className="flex max-w-[452px] flex-col justify-center border-t border-gray-500 pt-8 md:h-[232px] md:border-l md:border-t-0 md:pl-8 md:pt-0">
                 <Heading size="h5" className="text-white">
-                    Interested in deploying Cody for your team? Let us know.
+                    Interested in Cody for personal use? Get started for free.
                 </Heading>
                 <Link
-                    href="https://sourcegraph.typeform.com/cody-signup"
-                    title="Cody sign up form"
+                    href="https://docs.sourcegraph.com/cody"
+                    title="Cody docs"
                     className="btn mt-8 bg-transparent pl-0 text-white"
                     target="_blank"
                 >
-                    Sign up for Cody access
+                    Get Cody
                     <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
                 </Link>
             </div>
         </ContentSection>
+
+        <ContentSection parentClassName="!pb-0" className="mx-auto mt-16 max-w-[768px] md:!mt-2 pb-10">
+            <Heading size="h2" className="text-white text-center">
+                Get Cody for work
+            </Heading>
+            <div className='order-1 md:order-2 rounded-[10px] bg-gray-50 shadow-xl pt-6 pb-0 pl-6 pr-[1px] md:pt-12 md:pb-[13px] md:pl-16 md:pr-[30px]'>
+                <HubSpotForm masterFormName="contactMulti" formId="05e46684-9fbc-4c4d-b010-f661f247c4c6" />
+            </div>
+            
+        </ContentSection>
+
+
     </Layout>
 )
 
