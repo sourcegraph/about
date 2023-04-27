@@ -26,7 +26,7 @@ View the full report: [Big Code in the AI era](https://about.sourcegraph.com/big
 ### Survey highlights
 <br/> 
 **The AI era is here, ready or not.**
-* 76% of developers are excited about the rise of dev tools powered by AI, but there are still big concerns around AI and its impact on Big Code: 
+* 76% of developers are excited about the rise of dev tools powered by AI, but there are still big concerns around AI and its impact on Big Code. 
     * 61% are concerned about AI’s impact on tech debt.
     * 67% expressed concern about code sprawl due to the growth of AI.
     * 76% are worried about the amount of new code created and the need to manage it. 
