@@ -24,23 +24,20 @@ The kicker? Only 65% of devs say their company has a plan to address Big Code pr
 View the full report: [Big Code in the AI era](https://about.sourcegraph.com/big-code/big-code-in-ai-era)
 
 ### Survey highlights
-
-
+<br/> 
 **The AI era is here, ready or not.**
 * 76% of developers are excited about the rise of dev tools powered by AI, but there are still big concerns around AI and its impact on Big Code: 
     * 61% are concerned about AI’s impact on tech debt.
     * 67% expressed concern about code sprawl due to the growth of AI.
     * 76% are worried about the amount of new code created and the need to manage it. 
-
-
+<br/> 
 **Innovation is at risk.**
 * What have those devs ID’d as the biggest threats Big Code and AI present in their day-to-day? 
     * 95% need help getting up to speed on the codebase significantly faster. 
     * 91% want to be able to ID and resolve code issues more efficiently. 
     * 91% would save a significant amount of time if their codebase was fully searchable across all sources and repos. 
     * 88% want a tool that would allow them to have a greater output with fewer people and resources. 
-
-
+<br/> 
 **We can’t ignore the Big Code problem anymore.**
 * Devs spend almost as much time reading, interpreting, and fixing code as they do writing it. Devs told us that they spend only 20% of their time in the codebase writing new code for core products. 
     * That 20% drops down to 14% when you take non-code activities into account like meetings and documentation. 
@@ -50,7 +47,7 @@ View the full report: [Big Code in the AI era](https://about.sourcegraph.com/big
     * 73% of devs are blocked more frequently due to the size of their codebase. 
     * 85% of devs struggle to maintain efficiency in their day-to-day. 
     * 82% wish they could spend less time looking for information or old code and more time actually coding.
-
+<br/> 
 ### How can you get ahead of Big Code + AI pains? 
 
 Are we headed into a future where companies declare bankruptcy on Big Code in hopes of getting back to innovation, or are there strategies and solutions dev teams can adopt to get ahead of Big Code pains in the rise of AI? 
