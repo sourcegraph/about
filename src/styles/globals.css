@@ -275,6 +275,10 @@
     .sg-bg-gradient-cody {
         background: radial-gradient(109.27% 56.82% at 93.02% 27.51%, #6112A3 0.41%, #270741 54.04%, #1E0632 94.78%);
     }
+
+    .sg-bg-gradient-forrester {
+        background: radial-gradient(90.85% 205.59% at -43.06% 143.19%, rgba(171, 179, 193, 0.63) 0%, rgba(171, 179, 193, 0) 100%);
+    }
 }
 
 /**
