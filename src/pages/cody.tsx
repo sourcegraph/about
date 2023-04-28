@@ -45,10 +45,10 @@ const CodyPage: FunctionComponent = () => (
                     </Link>
                 
                     <Link
-                        href=""
+                        href="#cody-for-work"
                         title="Cody for work access form"
                         className="btn btn-inverted-primary mt-8 m-4"
-                        target="_blank"
+                        target=""
                     >
                         Get Cody for work
                     </Link>
@@ -99,31 +99,37 @@ const CodyPage: FunctionComponent = () => (
         >
             <div className="max-w-[529px]">
                 <Heading size="h2" className="!text-4xl text-white">
-                    Cody is experimental
+                    Cody for personal use
                 </Heading>
                 <p className="mt-6 text-lg text-gray-200">
-                    Often magical, often frustratingly wrong...but getting better quickly.
+                    Cody is free for personal use in Sourcegraph.com and in the VS Code extension. See the docs to learn more.
                 </p>
-            </div>
-            <div className="flex max-w-[452px] flex-col justify-center border-t border-gray-500 pt-8 md:h-[232px] md:border-l md:border-t-0 md:pl-8 md:pt-0">
-                <Heading size="h5" className="text-white">
-                    Interested in Cody for personal use? Get started for free.
-                </Heading>
                 <Link
                     href="https://docs.sourcegraph.com/cody"
                     title="Cody docs"
-                    className="btn mt-8 bg-transparent pl-0 text-white"
+                    className="btn mt-6 bg-transparent pl-0 text-white"
                     target="_blank"
                 >
-                    Get Cody
+                    Get started
                     <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
                 </Link>
             </div>
+            <div className="flex max-w-[529px] flex-col justify-center border-t border-gray-500 pt-8 md:h-[232px] md:border-l md:border-t-0 md:pl-8 md:pt-0">
+                <Heading size="h2" className="!text-4xl text-white">
+                    Cody for work
+                </Heading>
+                <p className="mt-6 text-lg text-gray-200">
+                    Cody for work provides context-aware answers based on your own private codebase.
+                </p>
+                <p className="mt-6 text-lg text-gray-200">
+                    Contact us with the form below to learn more.
+                </p>
+            </div>
         </ContentSection>
 
-        <ContentSection parentClassName="!pb-0" className="mx-auto mt-16 max-w-[768px] md:!mt-2 pb-20">
+        <ContentSection id="cody-for-work" parentClassName="!pb-0" className="mx-auto mt-16 max-w-[768px] md:!mt-2 pb-20">
             <Heading size="h2" className="text-white text-center mb-4">
-                Get Cody for work
+                <div>Get Cody for work</div>
             </Heading>
             <div className='order-1 md:order-2 rounded-[10px] bg-gray-50 shadow-xl pt-6 pb-0 pl-6 pr-[1px] md:mt-16 md:pt-12 md:pb-[13px] md:pl-16 md:pr-[30px]'>
                 <div className='mt-4 pb-10'>
