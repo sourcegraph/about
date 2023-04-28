@@ -104,7 +104,7 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
                         <p className="mb-0 text-2xl font-semibold">Return on investment</p>
                     </div>
                     <div className="flex w-[267px] flex-col gap-3 font-semibold text-gray-100">
-                        <p className="mb-0 text-[42px] font-semibold leading-[62px]">&lt;6 mos</p>
+                        <p className="mb-0 text-[42px] font-semibold leading-[62px]">&lt;6 months</p>
                         <p className="mb-0 text-2xl">Break-even point</p>
                     </div>
                     <div className="flex w-[267px] flex-col gap-3 font-semibold text-gray-100">
