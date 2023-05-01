@@ -68,11 +68,7 @@ export const CaseStudy: FunctionComponent = () => (
 
             <ContentSection>
                 <UseChallengeSolutionResults
-                    useCases={[
-                        {
-                            text: 'Code Reuse',
-                        },
-                    ]}
+                    useCases={[{ text: 'Streamline code reuse.', href: '/use-cases/code-reuse' }]}
                     challenges={[
                         {
                             text: 'Unable to understand their codebase and efficiently find code to reuse with code host’s native search functionality.',
