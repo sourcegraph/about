@@ -85,10 +85,11 @@ const CodyPage: FunctionComponent = () => (
             </Heading>
 
             <div className="mt-6 grid w-full grid-cols-1 gap-6 md:mt-16 md:grid-cols-2">
-                <TwitterEmbed tweetId="1645903813302185984" className="flex max-w-[100%] justify-center" />
+                
+                <TwitterEmbed tweetId="1640734465294061571?s=20" className="flex max-w-[100%] justify-center " />
                 <div className="flex flex-col">
-                    <TwitterEmbed tweetId="1647765520673046529?s=20" className="flex max-w-[100%] justify-center" />
-                    <TwitterEmbed tweetId="1645490165857542145" className="flex max-w-[100%] justify-center " />
+                    <TwitterEmbed tweetId="1641845070453243904?s=20" className="flex max-w-[100%] justify-center" />
+                    <TwitterEmbed tweetId="1649289549988896773?s=20" className="flex max-w-[100%] justify-center" />
                 </div>
             </div>
         </ContentSection>
