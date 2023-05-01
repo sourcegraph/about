@@ -71,7 +71,7 @@ export const Community: FunctionComponent = () => (
                                         >
                                             Open Source Summit North America · Vancouver Canada
                                         </a>{' '}
-                                        - April 10-12
+                                        - May 10-12
                                     </li>
                                 </ul>
                             </div>
