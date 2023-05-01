@@ -15,6 +15,7 @@ interface ThreeUpText {
     items: Item[]
     centerContent?: boolean
     className?: string
+    wrapperClassName?: string
 }
 
 interface ItemTitle {
@@ -45,6 +46,7 @@ export const ThreeUpText: FunctionComponent<ThreeUpText> = ({
     items,
     className,
     fullWidthTitle = false,
+    wrapperClassName = '',
 }) => (
     <div className={classNames('sm:text-center', className)}>
         {title && (
@@ -61,7 +63,12 @@ export const ThreeUpText: FunctionComponent<ThreeUpText> = ({
 
         {subTitle && <p className="mb-16">{subTitle}</p>}
 
-        <div className="sm:mx-auto sm:max-w-md lg:grid lg:max-w-none lg:grid-cols-12 lg:gap-8">
+        <div
+            className={classNames(
+                wrapperClassName,
+                'sm:mx-auto sm:max-w-md lg:grid lg:max-w-none lg:grid-cols-12 lg:gap-8'
+            )}
+        >
             {items.map((item, index) => (
                 <div
                     key={`item-${index + 1}-${item.description}`}
