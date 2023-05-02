@@ -12,7 +12,7 @@ import { ContentSection, CustomerLogos, Heading, HubSpotForm, Layout, ThreeUpTex
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
 import { buttonLocation } from '../data/tracking'
 
-import styles from '../styles/TotalEconomicImpact.module.scss'
+import styles from '../styles/CustomHubspotForm.module.scss'
 
 interface BatchChangesInsightProps {
     heading: React.ReactNode
@@ -60,13 +60,13 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
 
     return (
         <Layout
-        meta={{
-            title: 'Forrester Total Economic Impact Report',
-            description: 'A commissioned study conducted by Forrester Consulting on behalf of Sourcegraph',
-        }}
-        headerColorTheme="purple"
-        childrenClassName="sg-bg-gradient-own"
-        displayChildrenUnderNav={true}
+            meta={{
+                title: 'Forrester Total Economic Impact Report',
+                description: 'A commissioned study conducted by Forrester Consulting on behalf of Sourcegraph',
+            }}
+            headerColorTheme="purple"
+            childrenClassName="sg-bg-gradient-own"
+            displayChildrenUnderNav={true}
         >
             <ContentSection
                 parentClassName="!py-0 !px-sm"
@@ -80,7 +80,7 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
                         A commissioned study conducted by Forrester Consulting on behalf of Sourcegraph
                     </Heading>
                 </div>
-                <div className={classNames(styles.container, 'md:min-w-[400px] xl:min-w-[517px]')} id="get-report-form">
+                <div className={classNames(styles.form, 'md:min-w-[400px] xl:min-w-[517px]')} id="get-report-form">
                     <HubSpotForm
                         formId="e09d62b0-7c79-422e-a3d2-98c7c2948716"
                         inlineMessage={
@@ -95,8 +95,8 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
                     Key findings
                 </Heading>
                 <p className="mx-auto mt-[30px] max-w-[572px] text-center text-lg text-gray-100">
-                    Relying on customer interviews, data collection, and financial analysis, Forrester Consulting concluded
-                    that Sourcegraph can provide customers:
+                    Relying on customer interviews, data collection, and financial analysis, Forrester Consulting
+                    concluded that Sourcegraph can provide customers:
                 </p>
                 <div className="mt-16 flex flex-wrap justify-center gap-4 text-center">
                     <div className="flex w-[267px] flex-col gap-3 font-semibold text-gray-100">
@@ -118,7 +118,11 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
                 Incremental profit for customers derives from:
             </Heading>
 
-            <ThreeUpText items={threeUpTextItems} className="mx-auto mt-16 max-w-screen-xl md:px-sm" wrapperClassName='!gap-6' />
+            <ThreeUpText
+                items={threeUpTextItems}
+                className="mx-auto mt-16 max-w-screen-xl md:px-sm"
+                wrapperClassName="!gap-6"
+            />
 
             <Heading size="h1" as="h3" className="mt-16 px-sm text-center text-white md:mt-[192px]">
                 How Sourcegraph achieves this impact
@@ -152,8 +156,8 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
                     <li key="2" className="pb-2">
                         Boosts productivity through{' '}
                         <span className="font-semibold"> faster, and more tailored code search and intelligence </span>
-                        capabilities. Facilitates a deeper understanding of code, code reuse, best practices, accelerating
-                        debugging code, and developer collaboration
+                        capabilities. Facilitates a deeper understanding of code, code reuse, best practices,
+                        accelerating debugging code, and developer collaboration
                     </li>,
                     <li key="3">
                         Considered a <span className="font-semibold">necessary tool</span> by developers in internal
@@ -223,8 +227,8 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
                         )
                     </li>,
                     <li key="2">
-                        Provides <span className="font-semibold">incident responses</span> to application outages or other
-                        issues requiring rapid resolution (with{' '}
+                        Provides <span className="font-semibold">incident responses</span> to application outages or
+                        other issues requiring rapid resolution (with{' '}
                         <Link className="text-gray-200 underline" href="https://about.sourcegraph.com/batch-changes">
                             Batch Change
                         </Link>
@@ -248,7 +252,8 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
 
             <ContentSection className="flex flex-col items-center py-16 md:pt-[208px]" parentClassName="!py-0">
                 <Heading size="h2" className="mx-auto max-w-[846px] text-center !text-4xl text-white">
-                    Download the full report to discover the ROI and cost savings your enterprise can see with Sourcegraph
+                    Download the full report to discover the ROI and cost savings your enterprise can see with
+                    Sourcegraph
                 </Heading>
                 <div className="mt-8 flex flex-row gap-4">
                     <Link

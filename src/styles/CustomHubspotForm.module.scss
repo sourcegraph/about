@@ -1,35 +1,28 @@
-.container {
+.form {
+    :global(.input) {
+        margin-right: 0 !important;
+    }
+
     :global(.hs-input) {
         background: var(--sg-color-black) !important;
         padding: 14px 16px;
         border: 1px solid var(--sg-color-gray-500);
         border-radius: 5px;
         color: var(--sg-color-white) !important;
-        width: 100%;
-        max-width: 411px;
-    }
-
-    :global(.hs-email),
-    :global(.actions) {
-        margin-bottom: 0px;
-        padding: 0px;
     }
 
     :global(.submitted-message) {
         color: var(--sg-color-white);
     }
 
-    :global(#label-email-3612c366-2e75-4a4b-9212-6dcbd6b008fe),
+    label,
     :global(.hs-form-booleancheckbox-display) {
-        color: var(--sg-color-gray-200);
+        color: var(--sg-color-gray-50);
+        margin-bottom: 12px;
     }
 
     :global(.hs-form-booleancheckbox-display) {
         display: flex;
-    }
-
-    :global(.hs-submit) {
-        text-align: center;
     }
 
     :global(.hs-button) {
@@ -45,5 +38,16 @@
 
     :global(.submitted-message) {
         text-align: center;
+    }
+
+    :global(.actions) {
+        margin-bottom: 0px;
+        padding: 0px;
+        margin-top: 9px;
+    }
+
+    :global(a) {
+        text-decoration: underline;
+        color: var(--sg-color-violet-300);
     }
 }
