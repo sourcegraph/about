@@ -36,7 +36,7 @@ We’ve built Cody chat directly into the Sourcegraph.com interface. This versio
 
 <Video 
   source={{
-    mp4: 'blog/cody_for_dotcom_blog'
+    mp4: 'blog/cody-for-dotcom'
   }}
   loop={true}
   title=""
