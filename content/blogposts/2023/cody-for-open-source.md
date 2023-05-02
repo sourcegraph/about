@@ -34,6 +34,14 @@ We’ve built Cody chat directly into the Sourcegraph.com interface. This versio
 
 *Cody-enabled repositories* refer to open source repositories which have embeddings enabled. Embeddings give Cody contextual knowledge of a repository when responding to queries. For repositories that don't have embeddings, Cody will do its best to answer questions based on the context it gets from the file you’re looking at or the code snippet you pass to it. In effect, this means Cody on Sourcegraph.com works best for open source repositories with embeddings.
 
+<Video 
+  source={{
+    mp4: 'blog/cody_for_dotcom_blog'
+  }}
+  loop={true}
+  title=""
+/><br/>
+
 You can [read more about embeddings](https://docs.sourcegraph.com/cody/explanations/code_graph_context), or [see the list of open source repositories with embeddings](https://docs.sourcegraph.com/cody/embedded-repos). If you’d like to request that we add embeddings for a specific open source repository, you can [make a request in our Discord](https://discord.gg/sourcegraph-969688426372825169).
 
 ### Cody in VS Code
@@ -47,7 +55,7 @@ Check out the video below to learn more about the VS Code extension and what Cod
 <YouTube
   title="Sourcegraph Cody: your AI coding assistant" 
   id="fmir_bUyygw"
-  showTitle={true}
+  showTitle={false}
 />
 
 ### The future of Cody
