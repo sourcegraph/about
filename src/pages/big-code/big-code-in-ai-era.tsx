@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 import { ContentSection, Heading, HubSpotForm, Layout } from '../../components'
 
-import styles from './BigCode.module.scss'
+import styles from '../../styles/CustomHubspotForm.module.scss'
 
 interface PercentageContentProps {
     percentage: string
@@ -90,21 +90,6 @@ const TheRiseOfAI: FunctionComponent = () => (
                 </p>
             </div>
         </ContentSection>
-
-        <div id="get-report-form" className="mt-[112px] flex flex-col px-sm md:mt-16">
-            <Heading size="h4" className="text-center text-white">
-                Enter your email to get the full report
-            </Heading>
-
-            <div className={classNames('mx-auto mt-4 md:max-w-[491px] md:px-10', styles.container)}>
-                <HubSpotForm
-                    formId="3612c366-2e75-4a4b-9212-6dcbd6b008fe"
-                    inlineMessage={
-                        'Thank you! <a style="color: var(--sg-color-white);text-decoration: underline;" href=\'https://info.sourcegraph.com/hubfs/PDFs/big-code-in-ai-report.pdf\'>Download the report here.</a>'
-                    }
-                />
-            </div>
-        </div>
 
         <ContentSection
             parentClassName="!py-0 !px-sm"
@@ -224,21 +209,31 @@ const TheRiseOfAI: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection className="flex flex-col items-center pb-4">
-            <Heading size="h2" as="h4" className="mb-4 text-center !text-4xl text-white">
-                Get the full picture on AI & Big Code.
-            </Heading>
-            <div className="flex flex-col gap-4 md:flex-row">
-                <Link
-                    href="#get-report-form"
-                    className="btn btn-inverted-primary min-w-fit px-6 font-normal"
-                    title="Download the Big Code report"
-                >
-                    Download the Big Code report
-                </Link>
+        <ContentSection
+            className="flex flex-col items-center justify-center gap-8 pb-4 md:flex-row"
+            parentClassName="md:!pt-8"
+        >
+            <div className="border-gray-500 border-b md:border-r md:border-b-0 pb-10 md:pb:0 w-full md:w-fit md:pr-8">
+                <Heading size="h2" as="h4" className="!text-4xl text-white">
+                    Get the full report
+                </Heading>
+
+                <div className={classNames('mx-auto mt-4 md:min-w-[400px] xl:min-w-[517px]', styles.form)}>
+                    <HubSpotForm
+                        formId="3612c366-2e75-4a4b-9212-6dcbd6b008fe"
+                        inlineMessage={
+                            'Thank you! <a style="color: var(--sg-color-white);text-decoration: underline;" href=\'https://info.sourcegraph.com/hubfs/PDFs/big-code-in-ai-report.pdf\'>Download the report here.</a>'
+                        }
+                    />
+                </div>
+            </div>
+            <div className='w-full md:w-fit'>
+                <Heading size="h2" as="h4" className="mb-4 !text-4xl text-white md:mb-8">
+                    Put AI to work on Big Code.
+                </Heading>
                 <Link
                     href="/cody"
-                    className="btn btn-outline-white min-w-fit px-6 font-normal"
+                    className="btn btn-outline-white w-fit min-w-fit px-6 font-normal"
                     title="Get access to Cody"
                 >
                     Get access to Cody
