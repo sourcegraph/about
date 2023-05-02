@@ -26,13 +26,21 @@ We’ve built Cody chat directly into the Sourcegraph.com interface. This versio
 
 <br/>
 <img
-  style={{marginTop: "0px", marginBottom: "20px", width: "15%"}}
+  style={{marginTop: "0px", marginBottom: "20px", width: "40%"}}
   src="https://storage.googleapis.com/sourcegraph-assets/blog/ask_cody_button.png"
   alt="Ask Cody button"
 />
 <br/>
 
 *Cody-enabled repositories* refer to open source repositories which have embeddings enabled. Embeddings give Cody contextual knowledge of a repository when responding to queries. For repositories that don't have embeddings, Cody will do its best to answer questions based on the context it gets from the file you’re looking at or the code snippet you pass to it. In effect, this means Cody on Sourcegraph.com works best for open source repositories with embeddings.
+
+<Video 
+  source={{
+    mp4: 'blog/cody-for-dotcom'
+  }}
+  loop={true}
+  title=""
+/>
 
 You can [read more about embeddings](https://docs.sourcegraph.com/cody/explanations/code_graph_context), or [see the list of open source repositories with embeddings](https://docs.sourcegraph.com/cody/embedded-repos). If you’d like to request that we add embeddings for a specific open source repository, you can [make a request in our Discord](https://discord.gg/sourcegraph-969688426372825169).
 
@@ -42,12 +50,12 @@ Cody is also available as a [VS Code extension](https://marketplace.visualstudio
 
 This version of Cody answers questions related to both your local code and open source code. It can search your open project in VS Code to find relevant code and relay it to the LLM as context for queries, plus it can provide context-aware answers for any open source repository that’s embedded on Sourcegraph.com.
 
-Check out the video below to learn more about the VS Code extension and what Cody can do.
+Check out the VS Code extension in action in this video:
 
 <YouTube
   title="Sourcegraph Cody: your AI coding assistant" 
   id="fmir_bUyygw"
-  showTitle={true}
+  showTitle={false}
 />
 
 ### The future of Cody
