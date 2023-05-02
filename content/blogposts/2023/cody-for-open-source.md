@@ -22,7 +22,7 @@ You can use Cody with Sourcegraph.com in two ways: directly on Sourcegraph.com o
 
 ### Cody on Sourcegraph.com
 
-We’ve built Cody chat directly into the Sourcegraph.com interface. This version of Cody can answer general coding questions questions, answer questions about files or code snippets you have open in the interface, and provide context-aware answers relative to any Cody-enabled repositories on Sourcegraph.com.  You’ll now see this button present, which opens a Cody chat window:
+We’ve built Cody chat directly into the Sourcegraph.com interface. This version of Cody can answer general coding questions, answer questions about files or code snippets you have open in the interface, and provide context-aware answers relative to any Cody-enabled repositories on Sourcegraph.com.  While viewing a file, you’ll now see this button, which opens a Cody chat window:
 
 <br/>
 <img
@@ -32,9 +32,9 @@ We’ve built Cody chat directly into the Sourcegraph.com interface. This versio
 />
 <br/>
 
-*Cody-enabled repositories* refer to open source repositories which have embeddings enabled. Embeddings give Cody contextual knowledge of a repository when responding to queries. For repositories that don't have embeddings, Cody will do its best to answer questions based on the context it gets from the file you’re looking at or the code snippet you pass to it. You can [read more about embeddings](https://docs.sourcegraph.com/cody/explanations/code_graph_context), or [see the list of open source repositories with embeddings](https://docs.sourcegraph.com/cody/embedded-repos).
+*Cody-enabled repositories* refer to open source repositories which have embeddings enabled. Embeddings give Cody contextual knowledge of a repository when responding to queries. For repositories that don't have embeddings, Cody will do its best to answer questions based on the context it gets from the file you’re looking at or the code snippet you pass to it. In effect, this means Cody on Sourcegraph.com works best for open source repositories with embeddings.
 
-In effect, this means Cody on Sourcegraph.com works best for open source repositories with embeddings. If you’d like to request that we add embeddings for a specific open source repository, you can [request it in our Discord](https://discord.gg/sourcegraph-969688426372825169).
+You can [read more about embeddings](https://docs.sourcegraph.com/cody/explanations/code_graph_context), or [see the list of open source repositories with embeddings](https://docs.sourcegraph.com/cody/embedded-repos). If you’d like to request that we add embeddings for a specific open source repository, you can [make a request in our Discord](https://discord.gg/sourcegraph-969688426372825169).
 
 ### Cody in VS Code
 
