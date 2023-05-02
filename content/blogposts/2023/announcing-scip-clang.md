@@ -14,15 +14,15 @@ Here's a quick demo showcasing some features:
 scip-clang supports a superset of the functionality of lsif-clang.
 The main additions are:
 
-- scip-clang uses a multi-processing architecture instead of multi-threading,
-  so that indexing failures (such as crashes) in a single translation unit
-  do not affect indexing for other translation units.
+- scip-clang is more fault-tolerant: Indexing failures, such as crashes,
+  when processing a single translation unit, do not affect indexing
+  for other translation units.
 - scip-clang natively supports code navigation for `#include` pragmas and macros.
 - scip-clang is based on Clang 16 instead of Clang 11.
   It consumes Clang as a library rather than as a fork,
-  making it easy to update the version of Clang used in the future. 
+  making it easy to update the version of Clang used in the future.
 
-Some other minor quality-of-life improvements include:
+Additional quality-of-life improvements include:
 
 - scip-clang infers paths to standard headers for GCC and Clang
   from the compilation database without requiring extra command-line flags.
@@ -36,8 +36,7 @@ Some other minor quality-of-life improvements include:
 - scip-clang uses incremental parsing for compilation databases,
   reducing the risk of out-of-memory errors on ingestion.
 
-If you are a Sourcegraph customer using C or C++,
-please [try out scip-clang](https://github.com/sourcegraph/scip-clang),
+Please [try out scip-clang](https://github.com/sourcegraph/scip-clang),
 and let us know if you run into issues,
 or if you have feedback for improvement.
 
