@@ -42,6 +42,12 @@ Cody is also available as a [VS Code extension](https://marketplace.visualstudio
 
 This version of Cody answers questions related to both your local code and open source code. It can search your open project in VS Code to find relevant code and relay it to the LLM as context for queries, plus it can provide context-aware answers for any open source repository that’s embedded on Sourcegraph.com.
 
+<YouTube
+  title="Sourcegraph Cody: your AI coding assistant" 
+  id="fmir_bUyygw"
+  showTitle={true}
+/>
+
 [Check out this video](https://youtu.be/fmir_bUyygw) to learn more about the VS Code extension.
 
 ### The future of Cody
