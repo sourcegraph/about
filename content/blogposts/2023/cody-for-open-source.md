@@ -40,7 +40,7 @@ We’ve built Cody chat directly into the Sourcegraph.com interface. This versio
   }}
   loop={true}
   title=""
-/><br/>
+/>
 
 You can [read more about embeddings](https://docs.sourcegraph.com/cody/explanations/code_graph_context), or [see the list of open source repositories with embeddings](https://docs.sourcegraph.com/cody/embedded-repos). If you’d like to request that we add embeddings for a specific open source repository, you can [make a request in our Discord](https://discord.gg/sourcegraph-969688426372825169).
 
@@ -50,7 +50,7 @@ Cody is also available as a [VS Code extension](https://marketplace.visualstudio
 
 This version of Cody answers questions related to both your local code and open source code. It can search your open project in VS Code to find relevant code and relay it to the LLM as context for queries, plus it can provide context-aware answers for any open source repository that’s embedded on Sourcegraph.com.
 
-Check out the video below to learn more about the VS Code extension and what Cody can do.
+Check out the VS Code extension in action in this video:
 
 <YouTube
   title="Sourcegraph Cody: your AI coding assistant" 
