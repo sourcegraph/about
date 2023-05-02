@@ -9,7 +9,7 @@ We've successfully indexed large codebases such as Chromium with scip-clang.
 
 Here's a quick demo showcasing some features:
 
-<!-- TODO: Add demo here -->
+{/* TODO: Add demo here */}
 
 scip-clang supports a superset of the functionality of lsif-clang.
 The main additions are:
@@ -33,10 +33,12 @@ Some other minor quality-of-life improvements include:
   This translates to faster uploads, a lower likelihood of upload errors,
   and reduced risk of out-of-memory when the Sourcegraph backend
   processes an index.
+- scip-clang uses incremental parsing for compilation databases,
+  reducing the risk of out-of-memory errors on ingestion.
 
 If you are a Sourcegraph customer using C or C++,
 please [try out scip-clang](https://github.com/sourcegraph/scip-clang),
-and let us know if you run into an issues,
+and let us know if you run into issues,
 or if you have feedback for improvement.
 
 As with our other indexers, open source maintainers are also welcome
