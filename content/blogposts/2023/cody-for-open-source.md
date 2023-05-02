@@ -26,7 +26,7 @@ We’ve built Cody chat directly into the Sourcegraph.com interface. This versio
 
 <br/>
 <img
-  style={{marginTop: "0px", marginBottom: "20px", width: "15%"}}
+  style={{marginTop: "0px", marginBottom: "20px", width: "40%"}}
   src="https://storage.googleapis.com/sourcegraph-assets/blog/ask_cody_button.png"
   alt="Ask Cody button"
 />
