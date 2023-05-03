@@ -50,34 +50,69 @@ to benefit from precise code navigation for C and C++.
 scip-clang requires a traversal of the abstract syntax tree
 after type-checking the code, so that type information is available.
 
+Two possible baselines are comparing to purely type-checking
+all translation units in parallel, and comparing to a fast build
+(no debug information and no optimizations).
+
+We've shown the current performance numbers below for two
+different configurations:
+1. Project 1 with 480K SLOC (26M SLOC after preprocessing), tested on a 22 core machine
+2. Project 2 with 2.75M SLOC (460M SLOC after preprocessing), tested on an 88 core machine
+
+|  Operation              | Normalized time (config 1) | Normalized time (config 2) |
+|:-----------------------:|---------------------------:|---------------------------:|
+| Type-checking only      |                       1.00 |                       1.00 |
+| From-scratch fast build |                       1.70 |                       2.30 |
+| scip-clang indexing     |                       1.29 |                       1.52 |
+| lsif-clang indexing     |                       0.84 |                       1.02 |
+
 Compared to a baseline of type-checking all translation units in parallel,
-scip-clang takes about 30% more time.
+scip-clang takes about 30%-50% more time.
 
 In the future, we will be able to reduce this overhead in two ways:
 - [Optimizing the release build](https://github.com/sourcegraph/scip-clang/issues/27)
-  by using well-known techniques such as ThinLTO and PGO.
+  by using well-known techniques such as profile-guided optimization,
+  and changing the default allocator.
 - [Parallelizing the index merging step](https://github.com/sourcegraph/scip-clang/issues/139),
   which combines information about forward declarations
   and project-external symbols across translation units.
-  Depending on codebase size and core count,
-  about 10%-40% of the overall indexing time is spent in index merging.
 
-Compared to our indexer lsif-clang, scip-clang takes about 80%-90%
-more time to index the same codebase. The reason for this is that lsif-clang
-avoids type-checking many declarations, such as compiler-synthesized ones,
-since they are not indexed.
+With these optimizations, indexing should take less than 10%
+extra time compared to type-checking.
+
+Perhaps more surprising is the difference between lsif-clang
+and scip-clang, where scip-clang takes about 50% more time.
+The reason for this is that lsif-clang
+avoids type-checking many declarations,
+such as compiler-synthesized ones, since they are not indexed.
 We're interested in [surfacing information about synthesized declarations](https://github.com/sourcegraph/scip/issues/117#issuecomment-1422654456) in the future,
 so it may not make sense to perform this same optimization in scip-clang,
-only to remove it at a later stage.
+only to remove it at a later stage. 
 
 We hope that the improved robustness and
 higher quality code navigation with scip-clang
 make up for the loss in performance for current lsif-clang adopters.
 
-## What's next
+## The road ahead
 
-In the coming months, we're looking to bring scip-clang up to parity
-with our other indexers. In particular, we'll be adding support for
+In the coming months,
+we'll be adding support for
 [cross-repo navigation](https://github.com/sourcegraph/scip-clang/issues/184),
-as well as proper handling for
-complex language features like [template specializations](https://github.com/sourcegraph/scip-clang/issues/278).
+as well as proper handling for complex language features
+like [template specializations](https://github.com/sourcegraph/scip-clang/issues/278).
+This will bring scip-clang up to parity
+with our other indexers in terms of language support.
+
+With respect to performance,
+the bigger elephant in the room is incrementality.
+Many large codebases utilize caching and incrementality
+via build systems like Bazel
+to keep up with high commit velocity.
+
+In an ideal world, the indexer would be able to leverage
+the incrementality from the build system to only reindex changed code.
+For large codebases, this would bring indexing time from 1-2 hours
+on a high core count machine to within a few minutes for most changes,
+making it possible to index every commit.
+Supporting [incremental indexing](https://github.com/sourcegraph/scip-clang/issues/183)
+is also on our roadmap.
