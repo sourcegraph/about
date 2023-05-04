@@ -36,11 +36,11 @@ const CodyPage: FunctionComponent = () => (
                 </Heading>
                 <Link
                     href="https://sourcegraph.typeform.com/cody-signup"
-                    title="Private beta access request form"
+                    title="Cody access form"
                     className="btn btn-inverted-primary mt-8"
                     target="_blank"
                 >
-                    Sign up for access
+                    Get Cody for free
                 </Link>
             </div>
             <div className="mx-auto mt-6 w-full md:mt-0">
@@ -100,11 +100,11 @@ const CodyPage: FunctionComponent = () => (
                 </Heading>
                 <Link
                     href="https://sourcegraph.typeform.com/cody-signup"
-                    title="Cody sign up form"
+                    title="Cody access form"
                     className="btn mt-8 bg-transparent pl-0 text-white"
                     target="_blank"
                 >
-                    Sign up for Cody access
+                    Get Cody for free
                     <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
                 </Link>
             </div>
