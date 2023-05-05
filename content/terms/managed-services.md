@@ -39,7 +39,9 @@ Managed Services, on the other hand, is a proactive service where Sourcegraph ac
 
 ### Managed Services Packages
 
-#### Application Managed Services Package
+The packages offered for Managed Services are largely dependent on the level of access that you would like to and are able to provide to the Sourcegraph Managed Services Team. For pricing, please discuss with your Sourcegraph contacts.
+
+#### Package 1 - Application Managed Services Package
 
 **Access Granted to Sourcegraph:**
 
@@ -64,7 +66,7 @@ Managed Services, on the other hand, is a proactive service where Sourcegraph ac
 - Security Team
 - Code Host Admin(s)
 
-#### Application and Infrastructure Managed Services Offering
+#### Package 2 - Application and Infrastructure Managed Services Offering
 **Access Granted:**
 
 - Admin access in the Sourcegraph Instance UI and CLI
