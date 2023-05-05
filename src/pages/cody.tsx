@@ -105,7 +105,7 @@ const CodyPage: FunctionComponent = () => (
                     Get Cody for free
                 </Link>
             </div>
-            <div className="mt-8 flex max-w-[554px] flex-col justify-center border-t border-gray-500 pt-8 md:mt-0 md:border-l md:border-t-0 md:pl-8 md:pt-0">
+            <div id="cody-for-work" className="mt-8 flex max-w-[554px] flex-col justify-center border-t border-gray-500 pt-8 md:mt-0 md:border-l md:border-t-0 md:pl-8 md:pt-0">
                 <Heading size="h2" className="!text-4xl text-white">
                     Cody for work
                 </Heading>
