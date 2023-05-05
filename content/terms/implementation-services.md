@@ -112,13 +112,13 @@ Implementation Services Packages include a set number of Implementation Engineer
 
 <table>
   <tr>
-   <td><strong>Package</strong>
+   <td>**Package**
    </td>
-   <td>Allocated IE Time*
+   <td>**Allocated IE Time***
    </td>
-   <td>Timebox
+   <td>**Timebox**
    </td>
-   <td>Cost
+   <td>**Cost**
    </td>
   </tr>
   <tr>
