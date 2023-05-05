@@ -93,8 +93,7 @@ const CodyPage: FunctionComponent = () => (
                     Cody for personal use
                 </Heading>
                 <p className="mt-6 text-lg text-gray-200">
-                    Cody is free for personal use in Sourcegraph.com and in the VS Code extension. See the docs to learn
-                    more.
+                    Cody is free for personal use in Sourcegraph.com and in the VS Code extension. Create a free Sourcegraph.com account to get started.
                 </p>
                 <Link
                     href="https://sourcegraph.com/sign-up"
