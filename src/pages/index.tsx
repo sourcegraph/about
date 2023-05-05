@@ -90,7 +90,7 @@ const Home: FunctionComponent = () => (
             description:
                 'Sourcegraph makes it easy to write, read, and fix code—even in big, complex codebases—with universal code search, large-scale refactors, and more.',
         }}
-        heroAndHeaderClassName="sg-bg-gradient-purple text-white"
+        heroAndHeaderClassName="sg-hero-bg-gradient text-white"
         headerColorTheme="purple"
         className="bg-violet-750"
         hero={<HomeHero />}
@@ -128,9 +128,9 @@ const Home: FunctionComponent = () => (
 
         <ContentSection
             className="flex flex-col overflow-hidden rounded-lg bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:flex-row"
-            parentClassName="!pb-0 bg-white"
+            parentClassName="!pt-6 !pb-0 bg-white"
         >
-            <div className="p-4 text-center md:text-start lg:p-8 xl:p-12">
+            <div className="p-4 text-center md:text-start lg:p-8 xl:p-12 flex flex-col justify-center">
                 <div className="flex w-fit items-center gap-x-2 rounded-[5px] bg-blue-400 py-1 px-[7px]">
                     <img src="/home/cody-icon.svg" alt="Cody Icon" className="h-[17px] w-[17px]" />
                     <p className="text-blue-600 mb-0 text-[12px] font-semibold leading-[21px]">
@@ -157,7 +157,7 @@ const Home: FunctionComponent = () => (
                     </Link>
                 </div>
             </div>
-            <div aria-hidden={true}>
+            <div aria-hidden={true} className="flex justify-center">
                 <img src="/home/app-illustration.svg" alt="App Illustration" />
             </div>
         </ContentSection>
@@ -237,12 +237,12 @@ const Home: FunctionComponent = () => (
                     Cody with Sourcegraph Enterprise uses the code graph to provide context-aware answers based on your
                     own private codebase.
                 </p>
-                <div className="flex">
-                    <Link href="/cody" title="Get Cody for work" className="btn btn-outline-white px-6">
+                <div className="flex flex-col sm:flex-row">
+                    <Link href="/cody" title="Get Cody for work" className="btn btn-outline-white px-6 max-w-[200px]">
                         Get Cody for work
                     </Link>
                     <MeetWithProductExpertButton
-                        buttonClassName="text-white"
+                        buttonClassName="text-white pl-0 mt-3 sm:pl-6 sm:mt-0"
                         chevron={true}
                         buttonLocation={buttonLocation.body}
                     >
@@ -257,7 +257,7 @@ const Home: FunctionComponent = () => (
 const HomeHero: FunctionComponent = () => (
     <ContentSection
         parentClassName="!py-0 !px-sm overflow-x-clip"
-        className="grid grid-cols-1 gap-x-4 gap-y-8 pt-12 pb-12 md:grid-cols-2 md:bg-[url('/home/background.svg')] md:px-6 md:pb-[112px]"
+        className="grid grid-cols-1 gap-x-4 gap-y-8 pt-12 pb-12 md:grid-cols-2 md:bg-[url('/home/hero-illustration.svg')] md:px-6 md:pb-[112px] bg-no-repeat bg-cover bg-right"
     >
         <div className="mx-auto flex w-full max-w-[554px] flex-col items-center px-0 md:mx-0 md:items-start">
             <Heading size="h1" className="max-w-[407px] text-5xl leading-[52px] lg:text-6xl xl:text-7xl">
@@ -280,9 +280,9 @@ const HomeHero: FunctionComponent = () => (
             </Link>
         </div>
 
-        <div>
+        <div className='h-fit overflow-hidden rounded-lg'>
             <video
-                className="rounded-2 mx-auto w-full max-w-[602px] bg-gray-300"
+                className=" mx-auto w-full max-w-[602px] rounded-lg border-8 sg-video-border-gradient"
                 autoPlay={true}
                 muted={true}
                 loop={true}

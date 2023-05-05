@@ -93,7 +93,8 @@ const CodyPage: FunctionComponent = () => (
                     Cody for personal use
                 </Heading>
                 <p className="mt-6 text-lg text-gray-200">
-                    Cody is free for personal use in Sourcegraph.com and in the VS Code extension. Create a free Sourcegraph.com account to get started.
+                    Cody is free for personal use in Sourcegraph.com and in the VS Code extension. Create a free
+                    Sourcegraph.com account to get started.
                 </p>
                 <Link
                     href="https://sourcegraph.com/sign-up"
@@ -104,7 +105,7 @@ const CodyPage: FunctionComponent = () => (
                     Get Cody for free
                 </Link>
             </div>
-            <div className="flex max-w-[554px] flex-col justify-center border-t mt-8 border-gray-500 pt-8 md:border-l md:border-t-0 md:pl-8 md:pt-0 md:mt-0">
+            <div className="mt-8 flex max-w-[554px] flex-col justify-center border-t border-gray-500 pt-8 md:mt-0 md:border-l md:border-t-0 md:pl-8 md:pt-0">
                 <Heading size="h2" className="!text-4xl text-white">
                     Cody for work
                 </Heading>
@@ -115,9 +116,7 @@ const CodyPage: FunctionComponent = () => (
                 <div className={classNames('mx-auto mt-4 md:min-w-[400px] xl:min-w-[554px]', styles.form)}>
                     <HubSpotForm
                         formId="05e46684-9fbc-4c4d-b010-f661f247c4c6"
-                        inlineMessage={
-                            'Thank you! <a style="color: var(--sg-color-white);text-decoration: underline;" href=\'https://info.sourcegraph.com/hubfs/PDFs/big-code-in-ai-report.pdf\'>Download the report here.</a>'
-                        }
+                        inlineMessage="Thank you! We'll get back to you soon"
                     />
                 </div>
             </div>

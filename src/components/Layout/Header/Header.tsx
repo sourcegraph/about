@@ -132,14 +132,15 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
                 requestInfo={true}
             />
             <Link
-                href="/get-started"
+                href="https://sourcegraph.com/sign-up"
                 className={classNames(
                     'btn min-w-fit px-6 font-normal lg:px-4',
                     dark ? 'btn-inverted-primary' : 'btn-primary'
                 )}
                 title="Download Sourcegraph"
+                target="_blank"
             >
-                Download Sourcegraph
+                Get Cody for free
             </Link>
         </>
     )
