@@ -110,36 +110,8 @@ The following represents the various roles and responsibilities of resources inv
 ### Implementation Services Packages
 Implementation Services Packages include a set number of Implementation Engineering hours that must be used within a set number of days from the start of the implementation project. The package selected should, to the best of our ability, reflect the expected amount of time required for the customer to complete the deployment as determined by the original scoping of the project.
 
-<table>
-  <tr>
-   <td>**Package**
-   </td>
-   <td>**Allocated IE Time***
-   </td>
-   <td>**Timebox**
-   </td>
-   <td>**Cost**
-   </td>
-  </tr>
-  <tr>
-   <td>Standard Implementation Services
-   </td>
-   <td>40 hours
-   </td>
-   <td>45 days
-   </td>
-   <td>$10,000
-   </td>
-  </tr>
-  <tr>
-   <td>Advanced Implementation Services
-   </td>
-   <td>120 hours
-   </td>
-   <td>90 days
-   </td>
-   <td>$25,000
-   </td>
-  </tr>
-</table>
-*Allocated Implementation Engineering Time is only an estimate. We do not plan on discretely tracking IE hours, but will estimate the amount of IE time being spent on each implementation.
+**Standard Implementation Services Package**
+- Dedicated implementation project team for 45 days
+
+**Advanced Implementation Services Package**
+- Dedicated implementation project team for 90 days with heighted resource allocation
