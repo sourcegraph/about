@@ -18,50 +18,7 @@ Purchasing Premium Support provides the following services beyond those provided
 
 ### Premium Support SLAs
 
-1st response times for both Standard and Premium Support remain the same. However, Emergency and Severe Impact issues are supported 24 x 7 with Premium Support (versus 24 x 5 with Standard Support).
-
-<table>
-  <tr>
-   <td>Level
-   </td>
-   <td>Description
-   </td>
-   <td>1st Response
-   </td>
-  </tr>
-  <tr>
-   <td>0
-   </td>
-   <td>Emergency
-   </td>
-   <td>2 biz hrs
-   </td>
-  </tr>
-  <tr>
-   <td>1
-   </td>
-   <td>Severe Impact
-   </td>
-   <td>4 biz hrs
-   </td>
-  </tr>
-  <tr>
-   <td>2
-   </td>
-   <td>Medium Impact
-   </td>
-   <td>8 biz hrs
-   </td>
-  </tr>
-  <tr>
-   <td>3
-   </td>
-   <td>Minimal Impact
-   </td>
-   <td>2 biz days
-   </td>
-  </tr>
-</table>
+1st response times for both Standard and Premium Support remain the same according to our [SLAs](https://handbook.sourcegraph.com/departments/technical-success/support/#slas). However, Emergency and Severe Impact issues are supported 24 x 7 with Premium Support (versus 24 x 5 with Standard Support).
 
 ### Premium Support Packages
 
