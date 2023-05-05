@@ -24,5 +24,5 @@ Purchasing Premium Support provides the following services beyond those provided
 
 Each Premium Support Package is priced independently. For pricing, please discuss with your Sourcegraph contacts. The current Packages offered are:
 - Package 1: Premium SLAs
-- Package 2: Dedicated Support
+- Package 2: Dedicated Support (note - purchasing <em>Package 2: Dedicated Support</em> comes with <em>Package 3: Slack Support</em>)
 - Package 3: Slack Support
