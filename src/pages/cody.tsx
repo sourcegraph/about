@@ -1,11 +1,13 @@
 import { FunctionComponent } from 'react'
 
-import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
+import classNames from 'classnames'
 import Link from 'next/link'
 
-import { Badge, ContentSection, Heading, Layout } from '../components'
+import { Badge, ContentSection, Heading, HubSpotForm, Layout } from '../components'
 import { DemoVideo } from '../components/CodyVideo'
 import { TwitterEmbed } from '../components/EmbedTweet'
+
+import styles from '../styles/CustomHubspotForm.module.scss'
 
 const CodyPage: FunctionComponent = () => (
     <Layout
@@ -25,7 +27,7 @@ const CodyPage: FunctionComponent = () => (
                     <Heading size="h6" className="text-white">
                         CODY
                     </Heading>
-                    <Badge size="small" text="Experimental" color="dark-blue" />
+                    <Badge size="small" text="Beta" color="dark-blue" />
                 </div>
                 <Heading size="h1" className="mt-2 text-white">
                     Read, write, and understand code 10x faster with AI
@@ -35,7 +37,7 @@ const CodyPage: FunctionComponent = () => (
                     graph.
                 </Heading>
                 <Link
-                    href="https://sourcegraph.typeform.com/cody-signup"
+                    href="https://sourcegraph.com/sign-up"
                     title="Cody access form"
                     className="btn btn-inverted-primary mt-8"
                     target="_blank"
@@ -53,8 +55,8 @@ const CodyPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection parentClassName="!pb-0" className="mx-auto flex text-center flex-col md:flex-row md:!mt-2">
-            <div className="border-t border-gray-500 pt-6 md:pt-12 text-left">
+        <ContentSection parentClassName="!pb-0" className="mx-auto flex flex-col text-center md:!mt-2 md:flex-row">
+            <div className="border-t border-gray-500 pt-6 text-left md:pt-12">
                 <Heading size="h2" className="text-white">
                     Codebase-aware chat
                 </Heading>
@@ -84,29 +86,39 @@ const CodyPage: FunctionComponent = () => (
 
         <ContentSection
             parentClassName="!py-0"
-            className="mx-auto flex flex-col items-center justify-center gap-x-8  py-16 md:flex-row md:py-[112px]"
+            className="mx-auto flex flex-col justify-center gap-x-8  py-16 md:flex-row md:py-[112px]"
         >
-            <div className="max-w-[529px]">
+            <div className="max-w-[428px]">
                 <Heading size="h2" className="!text-4xl text-white">
-                    Cody is experimental
+                    Cody for personal use
                 </Heading>
                 <p className="mt-6 text-lg text-gray-200">
-                    Often magical, often frustratingly wrong...but getting better quickly.
+                    Cody is free for personal use in Sourcegraph.com and in the VS Code extension. Create a free
+                    Sourcegraph.com account to get started.
                 </p>
-            </div>
-            <div className="flex max-w-[452px] flex-col justify-center border-t border-gray-500 pt-8 md:h-[232px] md:border-l md:border-t-0 md:pl-8 md:pt-0">
-                <Heading size="h5" className="text-white">
-                    Interested in deploying Cody for your team? Let us know.
-                </Heading>
                 <Link
-                    href="https://sourcegraph.typeform.com/cody-signup"
+                    href="https://sourcegraph.com/sign-up"
                     title="Cody access form"
-                    className="btn mt-8 bg-transparent pl-0 text-white"
+                    className="btn btn-inverted-primary mt-1"
                     target="_blank"
                 >
                     Get Cody for free
-                    <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
                 </Link>
+            </div>
+            <div id="cody-for-work" className="mt-8 flex max-w-[554px] flex-col justify-center border-t border-gray-500 pt-8 md:mt-0 md:border-l md:border-t-0 md:pl-8 md:pt-0">
+                <Heading size="h2" className="!text-4xl text-white">
+                    Cody for work
+                </Heading>
+                <p className="mt-6 text-lg text-gray-200">
+                    Cody for work provides context-aware answers based on your own private codebase. Contact us with the
+                    form below to learn more.
+                </p>
+                <div className={classNames('mx-auto mt-4 md:min-w-[400px] xl:min-w-[554px]', styles.form)}>
+                    <HubSpotForm
+                        formId="05e46684-9fbc-4c4d-b010-f661f247c4c6"
+                        inlineMessage="Thank you! We'll get back to you soon"
+                    />
+                </div>
             </div>
         </ContentSection>
     </Layout>

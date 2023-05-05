@@ -90,7 +90,7 @@ const Home: FunctionComponent = () => (
             description:
                 'Sourcegraph makes it easy to write, read, and fix code—even in big, complex codebases—with universal code search, large-scale refactors, and more.',
         }}
-        heroAndHeaderClassName="sg-bg-gradient-purple text-white"
+        heroAndHeaderClassName="sg-hero-bg-gradient text-white"
         headerColorTheme="purple"
         className="bg-violet-750"
         hero={<HomeHero />}
@@ -104,63 +104,65 @@ const Home: FunctionComponent = () => (
             </Link>
         </div>
 
-        <ContentSection
-            parentClassName="!pb-0"
-            background="white"
-            className="flex flex-wrap justify-center gap-6 md:flex-nowrap"
-        >
-            {features.map(({ description, image, title }) => (
-                <div
-                    key={title}
-                    className="flex max-w-[410px] flex-col justify-between gap-6 rounded-lg border border-gray-300 md:gap-y-12"
-                >
-                    <div className="flex flex-col gap-4 p-6 pb-0">
-                        <Heading size="h4">{title}</Heading>
-                        <p className="m-0 text-gray-500">{description}</p>
+        <ContentSection parentClassName="!pb-0" background="white">
+            <Heading size="h2" className="max-w-[915px] text-center !text-4xl md:text-start">
+                <span className="text-violet-500">Sourcegraph’s code intelligence</span> makes it easy to read, write,
+                and fix code–even in big, complex code bases.
+            </Heading>
+            <div className="mt-10 flex flex-wrap justify-center gap-6 md:flex-nowrap">
+                {features.map(({ description, image, title }) => (
+                    <div
+                        key={title}
+                        className="flex max-w-[410px] flex-col justify-between gap-6 rounded-lg border border-gray-300 md:gap-y-12"
+                    >
+                        <div className="flex flex-col gap-4 p-6 pb-0">
+                            <Heading size="h4">{title}</Heading>
+                            <p className="m-0 text-gray-500">{description}</p>
+                        </div>
+
+                        <img src={image} alt={title} className="rounded-b-lg md:h-[250px]" />
                     </div>
+                ))}
+            </div>
+        </ContentSection>
 
-                    <img src={image} alt={title} className="rounded-b-lg md:h-[250px]" />
+        <ContentSection
+            className="flex flex-col overflow-hidden rounded-lg bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:flex-row"
+            parentClassName="!pt-6 !pb-0 bg-white"
+        >
+            <div className="p-4 text-center md:text-start lg:p-8 xl:p-12 flex flex-col justify-center">
+                <div className="flex w-fit items-center gap-x-2 rounded-[5px] bg-blue-400 py-1 px-[7px]">
+                    <img src="/home/cody-icon.svg" alt="Cody Icon" className="h-[17px] w-[17px]" />
+                    <p className="text-blue-600 mb-0 text-[12px] font-semibold leading-[21px]">
+                        Cody is coming to the app June 2023
+                    </p>
                 </div>
-            ))}
-        </ContentSection>
-
-        <ContentSection
-            className="grid grid-cols-1 overflow-hidden rounded-lg bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:max-h-[310px] md:grid-cols-8 lg:max-h-[380px]"
-            parentClassName="!pb-0 bg-white"
-        >
-            <div className="p-4 md:col-span-4 lg:p-8 xl:p-12">
-                <Badge
-                    className="bg-violet-100 text-violet-600 md:bg-violet-600 md:text-violet-100"
-                    size="small"
-                    text="Experimental"
-                />
-                <Heading className="mt-3 mb-4 text-white" size="h2">
-                    Cody
+                <Heading className="my-4 !text-4xl text-white" size="h2">
+                    Download the Sourcegraph app
                 </Heading>
-                <p className="mb-4 text-lg text-gray-200">
-                    Our new AI-powered coding assistant, Cody, answers code questions and writes code for you by reading
-                    your entire codebase and the code graph.
+                <p className="mb-4 text-lg text-gray-200 md:max-w-[614px]">
+                    Find, fix, & navigate code with the free Sourcegraph app. The app includes code search and
+                    navigation, plus Code Insights and Batch Changes for your local code.
                 </p>
-                <Link href="/cody" title="Learn more about Cody" className="btn flex bg-transparent p-0 text-white">
-                    Get Cody <ChevronRightIcon className="!mb-0 inline" />
-                </Link>
+                <div className="flex flex-col items-center gap-4 md:flex-row">
+                    <Link href="/get-started" title="Download the app" className="btn btn-inverted-primary mt-1">
+                        Download the app
+                    </Link>
+                    <Link
+                        href="/get-started?t=enterprise"
+                        title="Sourcegraph for enterprise"
+                        className="btn flex bg-transparent p-0 text-white"
+                    >
+                        Sourcegraph for enterprise <ChevronRightIcon className="!mb-0 inline" />
+                    </Link>
+                </div>
             </div>
-            <div
-                aria-hidden={true}
-                className="ml-[96px relative ml-[136px] flex w-full justify-end md:col-span-4 md:-ml-0 lg:-mt-0 lg:ml-40"
-            >
-                <img
-                    className="h-[437px] max-w-[637px] md:absolute md:-top-[90px] md:-right-[112px] md:h-[537px] md:w-[737px] lg:-top-[82px] lg:right-[54px] lg:h-[170%]"
-                    src="/starship/cody-illustration.svg"
-                    alt=""
-                />
+            <div aria-hidden={true} className="flex justify-center">
+                <img src="/home/app-illustration.svg" alt="App Illustration" />
             </div>
         </ContentSection>
 
-        <ContentSection
-            background="white"
-            className='pt-[0px]'
-        >
+        <ContentSection background="white" className="pt-[0px]">
             <CustomerLogos
                 ctaLink={
                     <Link
@@ -209,31 +211,38 @@ const Home: FunctionComponent = () => (
                 aria-hidden={true}
             />
             <div className="z-10 flex flex-1 flex-col md:pl-sm">
-                <div className="w-fit md:self-end">
+                <div className="max-w-[444px] md:self-end">
                     <Heading className="mb-[10px] !text-[36px] text-white" size="h2">
-                        Download Sourcegraph
+                        Try Cody for free
                     </Heading>
-                    <p className="mb-8 text-gray-200">For individual developers</p>
-                    <AppDownloadLinks />
+                    <p className="mb-0 text-lg text-gray-200">
+                        Cody writes code and answers questions for you, speeding up work and keeping devs in flow.
+                    </p>
+                    <Link
+                        href="https://sourcegraph.com/sign-up"
+                        title="Get started with Cody"
+                        className="btn btn-inverted-primary mt-8 px-4 shadow-btn"
+                        target="_blank"
+                    >
+                        Get started with Cody
+                    </Link>
                 </div>
             </div>
             <div className="my-[42px] border-b border-gray-400 md:my-0 md:mx-[42px] md:h-[266px] md:border-l" />
             <div className="z-10 flex flex-1 flex-col md:pr-sm">
                 <Heading size="h4" className="mb-4 text-white">
-                    Sourcegraph for Enterprise
+                    Cody for Enterprise
                 </Heading>
-                <p className="mb-8 max-w-[376px] text-gray-200">
-                    Get in touch to learn how organizations use Sourcegraph at scale:
+                <p className="mb-8 max-w-[444px] text-lg text-gray-200">
+                    Cody with Sourcegraph Enterprise uses the code graph to provide context-aware answers based on your
+                    own private codebase.
                 </p>
-                <div className="flex">
+                <div className="flex flex-col sm:flex-row">
+                    <Link href="/cody" title="Get Cody for work" className="btn btn-outline-white px-6 max-w-[200px]">
+                        Get Cody for work
+                    </Link>
                     <MeetWithProductExpertButton
-                        dark={true}
-                        requestInfo={true}
-                        buttonLocation={buttonLocation.body}
-                        buttonClassName="text-white btn-outline-white"
-                    />
-                    <MeetWithProductExpertButton
-                        buttonClassName="text-white"
+                        buttonClassName="text-white pl-0 mt-3 sm:pl-6 sm:mt-0"
                         chevron={true}
                         buttonLocation={buttonLocation.body}
                     >
@@ -248,35 +257,52 @@ const Home: FunctionComponent = () => (
 const HomeHero: FunctionComponent = () => (
     <ContentSection
         parentClassName="!py-0 !px-sm overflow-x-clip"
-        className="grid grid-cols-1 gap-x-4 pt-12 md:grid-cols-2 md:bg-[url('/home/background.svg')] md:px-6"
+        className="grid grid-cols-1 gap-x-4 gap-y-8 pt-12 pb-12 md:grid-cols-2 md:bg-[url('/home/hero-illustration.svg')] md:px-6 md:pb-[112px] bg-no-repeat bg-cover bg-right"
     >
-        <div className="mx-auto flex max-w-[529px] flex-col items-center px-0 md:mx-0 md:items-start w-full">
-            <Heading size="h1" className="text-5xl leading-[2rem] lg:text-6xl xl:text-7xl">
-                <span className="sg-bg-gradient-purple-white whitespace-nowrap bg-clip-text text-transparent">
-                    Code intelligence
+        <div className="mx-auto flex w-full max-w-[554px] flex-col items-center px-0 md:mx-0 md:items-start">
+            <Heading size="h1" className="max-w-[407px] text-5xl leading-[52px] lg:text-6xl xl:text-7xl">
+                <span className="sg-bg-gradient-purple-white bg-clip-text text-transparent">
+                    Meet Cody, your AI code assistant
                 </span>
             </Heading>
 
             <p className="mx-auto mb-0 mt-6 text-center text-[26px] !font-normal leading-[36px] text-gray-200 md:text-left">
-                Sourcegraph makes it easy to read, write, and fix&nbsp;code&mdash;even in
-                big,&nbsp;complex&nbsp;codebases.
+                Cody writes code and answers questions using your own code graph as context—even in complex codebases
+                with multiple code hosts.
             </p>
-            <p className="mt-9 mb-6 text-lg text-white">
-                Free. Built on{' '}
-                <Link
-                    href="https://github.com/sourcegraph/sourcegraph"
-                    title="Privacy polic"
-                    className="text-white underline"
-                    target="_blank"
-                >
-                    open source
-                </Link>
-                .
-            </p>
-            <AppDownloadLinks className="flex flex-col items-center md:items-start" />
+            <Link
+                href="https://sourcegraph.com/sign-up"
+                title="Get Cody for free"
+                className="btn btn-inverted-primary mt-9 px-4 shadow-btn"
+                target="_blank"
+            >
+                Get Cody for free
+            </Link>
         </div>
 
-        <div className="mt-[70px] ml-sm h-[362px] w-full rounded-tl-[10px] bg-[url('/home/banner.png')] bg-cover bg-no-repeat md:ml-0 md:mt-0 md:h-[543px] md:w-[758px] md:rounded-t-[10px] xl:w-[878px]" />
+        <div className='h-fit overflow-hidden rounded-lg'>
+            <video
+                className=" mx-auto w-full max-w-[602px] rounded-lg border-8 sg-video-border-gradient"
+                autoPlay={true}
+                muted={true}
+                loop={true}
+                playsInline={true}
+                controls={false}
+                data-cookieconsent="ignore"
+            >
+                <source
+                    type="video/webm"
+                    src="https://storage.googleapis.com/sourcegraph-assets/cody-homepage-05-2023.webm"
+                    data-cookieconsent="ignore"
+                />
+                <source
+                    type="video/mp4"
+                    src=" https://storage.googleapis.com/sourcegraph-assets/cody-homepage-05-2023.mp4"
+                    data-cookieconsent="ignore"
+                />
+            </video>
+        </div>
+
     </ContentSection>
 )
 
@@ -335,4 +361,4 @@ const Testimony: FunctionComponent<TestimonyProps> = ({ thumbnail, content, abou
         </div>
     </div>
 )
-export default Home;
+export default Home

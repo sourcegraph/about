@@ -50,4 +50,37 @@
         text-decoration: underline;
         color: var(--sg-color-violet-300);
     }
+
+    :global(.hs-input[type='checkbox']),
+    :global(.hs-input[type='radio']) {
+        margin-right: 8px;
+    }
+
+    :global(.hs-input[type='radio'])::after,
+    :global(.hs-input[type='checkbox'])::after {
+        content: '';
+        height: 16px;
+        width: 16px;
+        display: block;
+        background: var(--sg-color-gray-700);
+        margin-right: 8px;
+        margin-left: -0.5px;
+        border-radius: 4px;
+        border: 1px solid var(--sg-color-gray-500);
+    }
+
+    :global(.hs-input[type='radio'])::after {
+        border-radius: 50%;
+    }
+
+    :global(.hs-input[type='radio']:checked)::after,
+    :global(.hs-input[type='checkbox']:checked)::after {
+        display: none !important;
+    }
+
+    :global(.hs-form-booleancheckbox) {
+        label {
+            display: block;
+        }
+    }
 }
