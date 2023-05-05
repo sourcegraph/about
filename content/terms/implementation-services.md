@@ -108,10 +108,10 @@ The following represents the various roles and responsibilities of resources inv
   - Manages the code hosts that will be connected to the Sourcegraph instance. Often has deep technical knowledge of the code host and how the organization uses it. If certain tasks need to be performed within the given Code Host, this person will be responsible for doing so.
 
 ### Implementation Services Packages
-Implementation Services Packages include a set number of Implementation Engineering hours that must be used within a set number of days from the start of the implementation project. The package selected should, to the best of our ability, reflect the expected amount of time required for the customer to complete the deployment as determined by the original scoping of the project.
+Implementation Services Packages include a set number of Implementation Engineering hours that must be used within a set number of days from the start of the implementation project. The package selected should, to the best of our ability, reflect the expected amount of time required for the customer to complete the deployment as determined by the original scoping of the project. For pricing, please discuss with your Sourcegraph contacts.
 
-**Standard Implementation Services Package**
+**Package 1 - Standard Implementation Services Package**
 - Dedicated implementation project team for 45 days
 
-**Advanced Implementation Services Package**
+**Package 2 - Advanced Implementation Services Package**
 - Dedicated implementation project team for 90 days with heighted resource allocation
