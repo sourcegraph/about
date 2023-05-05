@@ -15,7 +15,7 @@
     "prettier": "prettier '**/{*.{js?(on),ts?(x),md,scss},.*.js?(on)}' --write --list-different",
     "prettier:check": "pnpm run -s prettier --write=false",
     "cypress": "cypress open",
-    "cypress:headless": "cypress run",
+    "cypress:headless": "cypress run --browser chrome",
     "test": "pnpm run build && start-server-and-test 'pnpm run start' http://127.0.0.1:3000 'pnpm run cypress'",
     "test:ci": "pnpm run build && start-server-and-test 'pnpm run start' http://127.0.0.1:3000 'pnpm run cypress:headless'",
     "analyze": "ANALYZE=true pnpm run build"
