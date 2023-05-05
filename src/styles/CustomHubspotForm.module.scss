@@ -78,4 +78,10 @@
     :global(.hs-input[type='checkbox']:checked)::after {
         display: none !important;
     }
+
+    :global(.hs-form-booleancheckbox) {
+        label {
+            display: block;
+        }
+    }
 }
