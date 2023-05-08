@@ -4,9 +4,10 @@ import classNames from 'classnames'
 import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
 
 const VIDEOS: Record<
-    'homepage-demo-202301',
+    'homepage-demo-202301' | 'cody-demo-202305',
     { poster: string; track: string; mp4: string; webm: string; dimensions: number }
 > = {
+    // Demo of Sourcegraph full platform
     'homepage-demo-202301': {
         poster: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/homepage-demo-202301-1_poster.png',
         track: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/homepage-demo-202301-1.vtt',
@@ -14,6 +15,14 @@ const VIDEOS: Record<
         mp4: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/homepage-demo-202301-1.mp4',
         dimensions: 16 / 9,
     },
+    // Demo of Cody's 4 use cases
+    'cody-demo-202305': {
+        poster: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-use-cases-202305-poster-1.png',
+        track: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-use-cases-202305.vtt',
+        webm: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-use-cases-202305.webm',
+        mp4: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-use-cases-202305.mp4',
+        dimensions: 16 / 9,
+    }
 } as const
 
 export const DemoVideo: React.FunctionComponent<{

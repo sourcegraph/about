@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import Link from 'next/link'
 
 import { Badge, ContentSection, Heading, HubSpotForm, Layout } from '../components'
-import { DemoVideo } from '../components/CodyVideo'
+import { DemoVideo } from '../components/DemoVideo'
 import { TwitterEmbed } from '../components/EmbedTweet'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
@@ -47,7 +47,7 @@ const CodyPage: FunctionComponent = () => (
             </div>
             <div className="mx-auto mt-6 w-full md:mt-0">
                 <DemoVideo
-                    video="cody-demo-202303"
+                    video="cody-demo-202305"
                     splash={false}
                     className="mx-auto mt-8 w-full max-w-[804px] rounded-lg bg-violet-750 drop-shadow-2xl"
                     splashClassName="rounded-lg"
