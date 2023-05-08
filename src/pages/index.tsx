@@ -219,7 +219,7 @@ const Home: FunctionComponent = () => (
                         Cody writes code and answers questions for you, speeding up work and keeping devs in flow.
                     </p>
                     <Link
-                        href="https://sourcegraph.com/sign-up"
+                        href="https://docs.sourcegraph.com/cody/quickstart"
                         title="Get started with Cody"
                         className="btn btn-inverted-primary mt-8 px-4 shadow-btn"
                         target="_blank"
@@ -271,7 +271,7 @@ const HomeHero: FunctionComponent = () => (
                 with multiple code hosts.
             </p>
             <Link
-                href="https://sourcegraph.com/sign-up"
+                href="https://docs.sourcegraph.com/cody/quickstart"
                 title="Get Cody for free"
                 className="btn btn-inverted-primary mt-9 px-4 shadow-btn"
                 target="_blank"
