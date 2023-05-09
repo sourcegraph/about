@@ -10,7 +10,7 @@ This document outlines the basic terms and conditions that apply to Sourcegraph'
 ## Implementation Services Terms of Service
 
 ### Implementation Services Description
-Dedicated, paid Implementation Services to design, plan, and provide hands-on assistance for Sourcegraph self-hosted production deployments projects. This service will:
+Dedicated, paid Implementation Services to design, plan, and provide over the shoulder assistance for Sourcegraph self-hosted production deployments projects. This service will:
 - Reduce time-to-value by expediting initial installs and user onboarding, providing direct access to to the environment, and giving advanced technical admin training to our customers.
 - Provide dedicated technical expertise in implementation project management and engineering with deep technical infrastructure knowledge.
 - Reduce resource burden on customers installing Sourcegraph through hands-on assistance and expertise.
