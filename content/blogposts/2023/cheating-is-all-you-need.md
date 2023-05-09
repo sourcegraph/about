@@ -345,7 +345,7 @@ Oh, and anyone can [sign up to get access](https://sourcegraph.typeform.com/cody
 OK so anyway here’s how Cody works:
 
 <Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-7.png"
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/cheating-is-all-you-need/blog-image-7-v2.png"
     alt="A diagram of how Cody works"
 /><br/>
 
