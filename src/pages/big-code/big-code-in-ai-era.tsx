@@ -21,7 +21,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             title: 'Big Code in the AI era',
             description:
                 'Developers are struggling more than ever with issues around tech debt, maintenance, collaboration, and scalability. But with the overnight AI boom, the pain of Big Code is only getting worse.',
-            image: '/rise-of-ai/rise-of-ai-og.png',
+            image: 'https://about.sourcegraph.com/rise-of-ai/rise-of-ai-og.png',
         }}
         headerColorTheme="purple"
         childrenClassName="sg-bg-gradient-app-large"

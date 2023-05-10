@@ -8,7 +8,7 @@ export const CaseStudy: FunctionComponent = () => (
             title: 'Convoy adopts Sourcegraph Universal Code Search so software engineers and data scientists work better together',
             description:
                 'Sourcegraph case study: At Convoy, Sourcegraph is transforming how engineers and data scientists collaborate, resulting in greater efficiency and improved data integrity.',
-            image: '/case-studies/convoy2-sourcegraph-case-study-og-embed.jpg',
+            image: 'https://about.sourcegraph.com/case-studies/convoy2-sourcegraph-case-study-og-embed.jpg',
         }}
         headerColorTheme="dark"
     >

@@ -48,7 +48,7 @@ const OwnPage: FunctionComponent = () => (
             title: 'Code Ownership',
             description:
                 'Evergreen code ownership across code hosts, powering Code Search, Batch Changes, and Insights.',
-            image: '/own/og-own.png',
+            image: 'https://about.sourcegraph.com/own/og-own.png',
         }}
         headerColorTheme="purple"
         childrenClassName="sg-bg-gradient-own"

@@ -49,7 +49,7 @@ const Starship: FunctionComponent = () => (
         childrenClassName="sg-bg-gradient-starship"
         displayChildrenUnderNav={true}
         meta={{
-            image: '/starship/starship_postlaunch_og.png',
+            image: 'https://about.sourcegraph.com/starship/starship_og.png',
             title: 'Code intelligence + AI = 🤯',
             description: 'Sourcegraph 5.0, the latest release of our code intelligence platform, is now available.',
         }}
