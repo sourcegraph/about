@@ -202,3 +202,148 @@ Why does it matter so much that Copilot doesn’t have them?
 I’m gonna get through this fast. This is the good part. My favorite part. It’s magic!
 
 ##### 768 questions is All You Need
+
+Cody is easily **10 times better with embeddings turned on**. Without embeddings, it falls back to a keyword search with unsatisfying results. What makes embeddings so effective?
+
+What even *are* embeddings? Well, at a high level, you slurp up your whole code base, including documentation, configs, everything, into “vector space”, and it magically 🧙🦄🍄takes each element you encoded, a function, paragraph, comment, whatever, and gives it a **magical arrow of meaning**. 🎯
+
+I spent all last week reading about this, and I want to tell you about this magical arrow, the embedding vector. It is currently the **key battleground** for all coding assistants, because it is how you teach the LLM about your code without doing any fine-tuning.
+
+I’ll warn you though, embeddings are pretty weird. You pull them like a bezoar out of the belly of a *massive* language model with billions of parameters, and each embedding is 768 mystical numbers that fully describe a hunk of text… at least, well enough to find similar hunks. 
+
+Which just happens to be *exactly* the **magical sauce Cody needs**.
+
+If you ask Cody, *Where is the SAML auth code in our codebase?*, how does it know which files to examine in order to give you a great answer? 
+
+<Figure
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-image-5.png"
+    alt="A diagram of Cody's backend technology"
+/><br/>
+
+The answer, as you can probably guess, is embeddings.
+
+We embed your question into the same vector space as the magical arrows we created for your entire code base.
+
+But… how? I mean what the hell even *is* an embedding?
+
+Well, I’m here to tell you that embeddings are basically **LLM poo**. I kicked around a lot of analogies and that one stuck to my shoe, so to speak.
+
+Remember I said that Transformers have biological-seeming “organs”? They ultimately wind up training billions of neurons, but the data goes back and forth through many layers and channels inside the beast, before it **converges on its outputs via backpropagation**. Like when you dream! Or so some say.
+
+Embeddings are a bit of a side effect. They come from a sort of gland you squeeze, underneath the Transformer.  This process is called “sampling its outputs”. **Don’t grab the wrong gland or it gets really angry**.
+
+I deleted literally 10 or 15 pages of text here. Right here at this point.
+
+Instead, I’ll just summarize with this imagined conversation with the LLM:
+
+*You*: I’d like to embed this hunk of text.
+*LLM*: Well give it here, don’t have all day. There it is. *Nomf nom mnomf* That’s good text.
+You: Can I get my embedding now?
+LLM *(paying little attention)*: Yargh, just scrape it off that bigger lump right back there.
+You: What does it do exactly?
+LLM *(bored)*: It represents the “meaning” of your hunk.
+You: What do you mean by “meaning”?
+LLM: The vector contains the answers to 768 questions about your hunk.
+You: What the hell?
+LLM *(perking up)*: That’s actually one of them!
+You: What do these questions do?
+LLM: They let you find other hunks of text that have similar meaning to your starting hunk.
+You: Okay but which questions are you *actually* asking?
+LLM: I don’t feel like talking about it.
+You: I mean, I’d kind of like to know. Don’t you have billions of parameters?
+LLM *(beaming)*: Yup! 175 *billion*, baby. Woo!
+You: So how did you pick 768 questions?
+LLM: That’s the size of my lump. Also my mouth. And my poop chute.
+You: Ew.
+LLM: Yeah but that ain’t nuthin. I can answer 175 billion questions about anything!
+You: Then what good is an embedding that only asks 768 questions?
+LLM: Well your hunks of text aren’t that big, so I don’t need that many questions. Keeps it crisp.
+You: So you’re basically figuring out which 768 questions to ask, *out of 175 billion*.
+LLM: Yup! I hand-select 768 questions that will best allow me to differentiate between every single hunk of text.
+You: So… it’s a game of 20 questions?
+LLM: No. No! Not at all. It’s… much more complicated than that.
+You: …?
+LLM *(blushing)*: Well for starters, the embedding has *768 questions*. That’s a lot more!
+You: It is, but it’s also *pretty far* from billions.
+LLM *(insistent)*: No, no, yer makin’ all these bad assumptions. Who are ye again? It’s not 20 questions, because the answers are in-betweenies too. You just gotta know the right questions to pick, that’s all. You don’t need billions.
+You: OK then, mister smarty. What *exact* questions do you pick?
+LLM *(avoiding eye contact)*: It’s… proprietary.
+You: You can tell me. We’re friends.
+LLM: It’s just questions. Innocent questions. About… stuff.
+You: If you don’t tell me, I’m going to drive a forklift through your data center’s power grid.
+LLM: I… I don’t know! They just grow on my ass!
+
+God, I went round and round on this. Embeddings are “learned” and accumulate on a hidden layer in the LLM, one that is purpose-built for giving you embeddings. And you just have to **believe that the numbers mean something**.
+
+So like I said. They are LLM poo.
+
+I spent way too much time on this. It’s 4am. I’d better get this wrapped.
+
+It’s possible in theory to reverse engineer some of the embedding numbers, but nobody does. You just squint at the numbers and imagine meaning there, like Cypher looking at the encoded Matrix. I don’t know. Maybe someday [model explainability](https://techcrunch.com/2023/05/09/openais-new-tool-attempts-to-explain-language-models-behaviors) will help.
+
+Did I mention that **Embeddings are weird**?
+
+This fun 20-questions analogy, by the way, is credit to Jessie Seidler, our Account Executive extraordinaire, who heard me ranting about embeddings, and she said: “**That’s 20 questions!**”
+
+By the way, in the past weeks, just trying to be able to explain embeddings to customers, I’ve read articles, essays, papers, even whole textbooks. I have been to the mountaintop. I’ve hacked my way through jungles and swamps, trying to make *absolutely certain* that Jessie’s 20-questions analogy is 100% **technically and mathematically defensible**. 
+
+And as far as I can tell, nobody fuckin’ knows.
+
+But it’s a nice mental model.
+
+If you try Cody, *make sure* embeddings are enabled and available for your code base, or you’re not getting even a tenth of the full experience.
+
+##### Our graph makes our embeddings a moat
+
+Last section. I’ll tie it all together now. All three backends. Our graph, search, and embeddings.
+
+<Figure
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-image-6.png"
+    alt="A diagram of Cody's backend technology"
+/><br/>
+
+There’s been a fair amount of research on how to **augment LLMs with structured code graphs**. [GraphCodeBERT](https://arxiv.org/abs/2009.08366) is a pretty good example from back in 2021, focusing on the data-flow graph. A quote from the authors: *We further show that the ***model prefers structure-level attentions*** over token-level attentions in the task of code search.*
+
+But there’s been more research done since then, and I’ve spoken with data scientists at other large companies with extremely large knowledge graphs, and the key takeaway for today is:
+
+<p style="text-align:center">You can **directly embed the code graph itself**.</p>
+
+You can use our graph to create better text chunks, and you can also embed relationships from our graph, including both compiler artifacts such as class/symbol relationships, but also the “people graph” of code ownership, the security/trust graph, and other metadata we record in Sourcegraph’s SCIP code graph.
+
+This property of LLMs – that they work better with structure than simply with pure token streams – is a huge differentiator for Sourcegraph and Cody. I can’t stress it enough. This graph-embedding approach **draws a direct line** between our code intelligence quality and Cody’s performance. 
+
+Moreover, there are many other workflow phases where our code graph can be used by models. I’ll get a whitepaper about this asap, and also include the contribution of our Search indexes, of which we have four!
+
+Competing AI assistants will struggle greatly to compete with us here, because **they don’t have our code graph**.
+
+And it’s a wrap, folks! You made it!
+
+##### Reward function
+
+Congratulations! 🎉
+
+As a reward for completing this **brobdingnagian** post, here is a Cody video for you to watch. It’s one of our Cody team engineers showing off the UI for the next patch release. The fixups feature is live in Cody now, but this new UI is pretty sick. In fact, I think it’s headed in the direction of the future of programming. Take a look and see what you think.
+
+(VIDEO)
+
+This is like science fiction. And Cody knows **your code**, and will always know it best, because of our moat: Our code graph and our precise code intelligence platform.
+
+We are the real deal.
+
+##### Epilogue
+
+Thus ends the saga of the Second Cheating.
+
+The AI landscape has gone completely nutso. It’s a 100-foot wave, crashing towards us. And here at Sourcegraph we’re basically trying to surf it. We are making sure that no matter what happens, **we’re building the best tool out there**.
+
+In my next post, the final chapter, I’ll show you more about the Cody product itself, answer some common questions, and let you know how you can help out.
+
+I genuinely appreciate that you took the time to read all this. I know it was a **bit of a chore**, but hopefully the **bold snippets** helped a little. I’ve literally cut two full blog posts *out* of this one, and probably could have sawed this in half. 
+
+But I’m definitely going to have to come out of blogging retirement and start posting regularly, or these posts will continue getting totally out of hand. The times, they are a-changin’.
+
+Thanks for reading. And please, let us know if you want to come **join our team**. We have all sorts of openings and we’d love to hear from you! In particular, if you’re passionate about this stuff and you’re good at it, we could use you as our **Head of AI**, or as a data scientist or ML engineer. 
+
+If you’re passionate about this stuff, and you spotted any of the (ahem) totally deliberate technical errors in today’s post, we should chat! Check out our [job site](https://boards.greenhouse.io/sourcegraph91) for what’s open at any given time. We should be **hiring even more**, soon.
+
+Until next time! Chapter 3 is coming in a few days. See you next time, m10r!
