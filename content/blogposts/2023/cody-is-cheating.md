@@ -43,7 +43,7 @@ BUT, many of our Enterprise customers and prospects are **already familiar with 
 
 Before I jump into the gory details, let’s recap what’s changed since Episode 1.
 
-#### The Rise and Fall of the GPT Empire
+##### The Rise and Fall of the GPT Empire
 
 Here’s the TL;DR for what happened last week. For a more action-packed account, see my recent Medium post, *[We’re Gonna Need a Bigger Moat](https://steve-yegge.medium.com/were-gonna-need-a-bigger-moat-478a8df6a0d2)*. I’ll just share a recap here.
 
@@ -52,18 +52,6 @@ First, a leaked memo from a Google researcher, “[We have no moat, and neither 
 And second, [Geoffrey Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton), the so-called Godfather of Deep Learning, quit to go on a world tour talking about SkyNet.
 
 The recent chain of events could probably make for an actual blockbuster movie, but for now, to summarize, let’s continue the history lesson I started in *Cheating is All You Need*. One paragraph!
-
-
-
-
-
-
-
-
-
-
-
-
 
 <table border="0">
  <tr>
@@ -74,11 +62,47 @@ The recent chain of events could probably make for an actual blockbuster movie, 
       />
     </td>
     <td>
-      - The 
+      - **Feb 24th**: While Zuck was busy flying the plane into the mountainside, Meta’s AI team opened-sourced their 65-billion parameter [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/) large model
+      - Fortunately, they kept the **secret model weights** under **lock and key** in a vault deep in Zuckville. Meta’s secret sauce, LLaMA’s proprietary weights: safe and sound
+      - **March 8th**: LLaMA’s secret weights are, predictably, [leaked](https://www.theverge.com/2023/3/8/23629362/meta-ai-language-model-llama-leak-online-misuse) to Discord two weeks later. Nice one, Zuck.
+      - A global army of DLC modders descends and begins hacking on LLaMA
+      - **March 19th**: A LLaMA variant strain achieves 90% of ChatGPT’s performance. *Training cost: $300*
+      - March 28th: LLaMA dependency is removed; OSS is free and clear.
+      - Ever since then has been **full batshit** insanity, with new OSS advances launching *daily*, and technical advances happening every few hours. It’s **impossible** to track it all.
+      - **Money volcano alert**: We’re seeing definite signs of volcanic activity!
     </td>
  </tr>
 </table>
 <br/>
+
+Congratulations! You’re all caught up on LLMs. For the month.
+
+Google and Microsoft do actually have a lot of non-AI moats. It will be an interesting fight. But I think **costs are about to come crashing down.**
+
+And much more significantly, even **if** the premium luxury highest-end expensive boutique mainframe LLMs from Google/OpenAI are able to maintain better overall performance under load and in local real-time scenarios – **if** – then even so, at some point, **the OSS model performance still becomes “good enough”**. Because they are all growing smarter together at disaster-movie exponential rates, and because the base OSS models can be **cheaply and easily fine-tuned for your domain**, making their performance trail the boutique LLMs by what seems to be months, at best.
+
+Classic business-school disruption going on here. But the timeline of this one is *insane*.
+
+The real winners here are, conveniently, **me**, **me**, and **me**. Well, really *anyone* selling Enterprise LLM-backed SaaS, *other* than the current big players. But also me.
+
+I’m sure a lot of this advantage applies to other domains that have good embeddings. But I’ll talk about the domain I know, which is coding assistants:  Cody and Copilot. For me, it feels like every new bit of news is accelerating Cody’s race to become the most powerful dev tool in the world.
+
+##### Cody’s impenetrable alligator-filled piranha moat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <Figure
