@@ -53,7 +53,7 @@ const AppPage: FunctionComponent = () => {
                 title: 'Find, fix, and flow in minutes',
                 description:
                     'The app is a lightweight, single-binary version of Sourcegraph, designed for developers to experience the power of Sourcegraph for free on their local machine.',
-                image: '/app/app-og.png',
+                image: 'https://about.sourcegraph.com/app/app-og.png',
             }}
             headerColorTheme="purple"
             childrenClassName="sg-bg-gradient-app-large text-white px-sm"

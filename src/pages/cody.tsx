@@ -14,7 +14,7 @@ const CodyPage: FunctionComponent = () => (
         meta={{
             title: 'Cody',
             description: 'Read, write, and understand code 10x faster with AI',
-            image: '/cody/cody-og.png',
+            image: 'https://about.sourcegraph.com/cody/cody-og.png',
         }}
         headerColorTheme="purple"
         childrenClassName="sg-bg-gradient-cody"
