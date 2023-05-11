@@ -70,6 +70,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
                 <meta name="twitter:title" content={meta.title} />
                 <meta name="twitter:site" content="@sourcegraph" />
                 <meta name="twitter:description" content={meta.description} />
+                <meta name="twitter:creator" content="@sourcegraph" />
 
                 {meta.videoID ? (
                     <>
