@@ -324,7 +324,14 @@ Congratulations! 🎉
 
 As a reward for completing this **brobdingnagian** post, here is a Cody video for you to watch. It’s one of our Cody team engineers showing off the UI for the next patch release. The fixups feature is live in Cody now, but this new UI is pretty sick. In fact, I think it’s headed in the direction of the future of programming. Take a look and see what you think.
 
-(VIDEO)
+<Video 
+  source={{
+    mp4: 'blog/cody-is-cheating/cody-inine-assist'
+  }}
+  loop={false}
+  title="Demo of Cody's Inline Assist"
+/>
+<br/>
 
 This is like science fiction. And Cody knows **your code**, and will always know it best, because of our moat: Our code graph and our precise code intelligence platform.
 
