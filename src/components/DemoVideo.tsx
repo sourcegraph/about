@@ -31,14 +31,16 @@ export const DemoVideo: React.FunctionComponent<{
     className?: string
     splashClassName?: string
     playButton?: React.ReactNode
-}> = ({ video, splash = false, className, splashClassName, playButton }) => {
+    scrollIntoViewOnPlay?: boolean
+}> = ({ video, splash = false, className, splashClassName, playButton, scrollIntoViewOnPlay = true }) => {
     const videoRef = useRef<HTMLVideoElement>(null)
-
     const [isShowing, setIsShowing] = useState(false)
     const onPlayClick = useCallback(() => {
         setIsShowing(true)
-        setTimeout(() => videoRef.current?.scrollIntoView({ block: 'center', inline: 'center' }), 0)
-    }, [])
+        if (scrollIntoViewOnPlay) {
+            setTimeout(() => videoRef.current?.scrollIntoView({ block: 'center', inline: 'center' }), 0)
+        }
+    }, [scrollIntoViewOnPlay])
 
     const videoInfo = VIDEOS[video]
 

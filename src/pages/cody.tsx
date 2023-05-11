@@ -52,6 +52,7 @@ const CodyPage: FunctionComponent = () => (
                     className="mx-auto mt-8 w-full max-w-[804px] rounded-lg bg-violet-750 drop-shadow-2xl"
                     splashClassName="rounded-lg"
                     playButton={<PlayButton title="Watch Cody write & fix code" time="4 min" ctaText="Watch now" />}
+                    scrollIntoViewOnPlay={false}
                 />
             </div>
             <div className="mt-9 flex flex-wrap justify-center gap-y-4 gap-x-8 text-lg text-white md:mt-[58px] md:gap-x-[72px] md:text-2xl">
