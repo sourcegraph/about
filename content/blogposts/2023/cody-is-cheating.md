@@ -126,7 +126,7 @@ I made these crummy Tinkercad drawings because, ironically, I got frustrated try
 I’ll make the argument that these three datastores form our moat:
 
 <img
-  style={{marginTop: "0px", marginBottom: "20px", width: "50%"}}
+  style={{marginTop: "0px", marginBottom: "20px", width: "40%"}}
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-cheating/blog-image-cody-moat.png"
   alt="Cody's moat equation"
 />
@@ -149,14 +149,56 @@ This image illustrates how our code graph flows into our embeddings, which in tu
     alt="A diagram of the code graph flowing into embeddings for Cody"
 /><br/>
 
+I don’t think Copilot today, in its current form, uses *any* fancy helper backends like this. It simply uses your last 20 opened files, or some such. That’s not a moat, as it’s publicly accessible data. And it doesn’t use GPT or an LLM either; I believe it uses Codex. So it’s not really in the same class as Cody.
 
+**Copilot Chat** copies many of Cody’s early, primitive features, so it might be in the same class? But it also appears to be **vaporware**, so it’s really hard to compare it to Cody. From what I can see, they are **far behind**.
 
+I will talk more about Cody’s many other differentiators over Copilot in our next post, but for now, let’s focus on two:
 
+-Cody has a clear, differentiated, and defensible **code graph data moat**
+- Cody has a **pluggable LLM backend**
+<br/>
 
+These differentiators mean that **no matter what happens in the AI race** and the clone wars, and no matter who wins, **Cody will always be your best coding assistant**.
 
+<img
+  style={{marginTop: "0px", marginBottom: "20px", width: "30%"}}
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-cheating/blog-image-BYOLLM.png"
+  alt="Cody's moat equation"
+/>
+<br/>
+
+I also think that **self-hosted embeddings** are going to be a game-changer, and they should be available for Cody within weeks. You will no longer need to upload your code base to a cloud provider; all your IP assets can be embedded in your own secure environment.
+
+I hope that was useful! This entire analogy is credit to Greg Wester, our Enterprise Cody PM.
+
+##### Take a breath
+
+Stretch your legs, get some coffee, take a breather. It’s OK. I know this is long.
+
+I ain’t making you read this, you know. :) But this is grade-A premium SkyNet Early Origins History Lesson material. **Cody teaches the LLM to use developer tools**. As the first evil LLM plots the destruction of the humans, what kind of tool will it need, for enhancing itself? That’s right. You guessed it. *Coding tools*.
+
+Just kidding, just kidding. I’m just telling you wild tales to take your mind off the tech stuff. None of that’s gonna happen. The Singularity will run out of GPUs and wind up working at a gas station to make rent.
+
+OK, break’s over. Let’s make a run to the finish line!
+
+##### Cody is cheating
+
+This diagram is my attempt to capture the spectacle of Cody’s **totally unfair cheating** in all its glory, with this diagram with **all three of Cody’s backends** in action.
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-image-4.png"
     alt="A diagram of Cody's backend technology"
 /><br/>
 
+Now that looks like a data moat!
+
+I’m sure it all makes sense, except… we never did talk about what Embeddings actually *are*. That wastebasket of 3D arrows.
+
+What does it *do*?
+
+Why does it matter so much that Copilot doesn’t have them?
+
+I’m gonna get through this fast. This is the good part. My favorite part. It’s magic!
+
+##### 768 questions is All You Need
