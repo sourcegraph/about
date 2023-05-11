@@ -29,9 +29,7 @@ In upcoming Episode 3, next week, I will show you Cody in action.
     alt="A stylized picture of the Cody logo"
 /><br/>
 
-Did I mention I’m lucky? Well, this is the world poker tournament of software showdowns. This is the Big One. And I got pocket rockets. True story: Yesterday, **Bill Gates flew out** to visit one of our huge customers, trying to woo them into choosing Copilot over Cody. He cast all of his magic spells. I’ve seen what he and Satya can do. They are magicians when it comes to vaporware and spin.
-
-And then we showed that same customer a Cody demo, and haw, haw, HAW HAW HAAAa8 \*cough\* \*cough\* HAAAAAAaaaagh, I’m dying here. Of *course* they picked us. Bill was wasting his time. I’ve been waiting to do that to him for 35 years, and it felt *good*.
+Did I mention I’m lucky? Well, this is the world poker tournament of software showdowns. This is the Big One. And I got pocket rockets.
 
 Because there is truly no comparison to Cody. We’re so far ahead. It’s blowing people’s minds at Copilot shops. You’ll see soon enough!
 
