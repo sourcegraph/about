@@ -89,40 +89,74 @@ I’m sure a lot of this advantage applies to other domains that have good embed
 
 ##### Cody’s impenetrable alligator-filled piranha moat
 
+As LLMs become **commoditized and tiny and cheap** and basically become little pocket [Tamagotchi](https://en.wikipedia.org/wiki/Tamagotchi) that can power literally any app, device, or circuit anywhere on earth, the main takeaway from the history lesson above is that **apps need their own data moats** to be different from the competition.
 
+<img
+  style={{marginTop: "0px", marginBottom: "20px", width: "30%"}}
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-cheating/blog-image-ai-app.png"
+  alt="AI app equation"
+/>
 
+This is true for chatbots like Bard and Claude, but also for coding assistants like Cody and Copilot.
 
+If you build an app and you *don’t* have a moat, then you only have a few options, and people can unfortunately very easily compete with you head-to-head on any of these approaches:
 
+- Invest in **prompt engineering** to present your best context in the actual query
+- Invest in **great UI workflows** and try to stay ahead of your competitors on design
+- Try to **build a marketplace** and start letting devs share each other’s contributions
+<br/>
 
+Everyone does all these already. We are certainly doing all these things with Cody. But it’s not a moat. At least, not until someone pulls ahead and network effects start kicking in, probably in Episode 5 or 6.
 
+So what does a good moat look like? Well, my thesis of *Cheating is All You Need* was that having **high-quality structured data sources** helps you build a context window.
 
+But Cody’s “cheating” is in fact much more deeply aligned to the AI, in the sense that **Sourcegraph’s code graph can be used directly to improve embeddings, fine-tuning, training**, and to significantly raise the quality of nearly every phase and component of your LLM-powered workflows.
 
+##### Sourcegraph Platform 101
 
-
-
-
-
-
-
+At Sourcegraph we are fairly well-known for our **code search**, but perhaps not as well known for our **code graph**, and I’m guessing *very* few of you know about our **embeddings**. These three custom backends, all created from different techniques for “indexing” your code. They are the ingredients to the secret sauce that fills our data moat.
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-image-2.png"
     alt="A diagram of the key technologies powering Cody"
 /><br/>
 
+I made these crummy Tinkercad drawings because, ironically, I got frustrated trying to get an AI to draw them for me. Sorry for the quality. But vector databases should be drawn as a wastebasket full of arrows, and I choose to die on that hill.
+
+I’ll make the argument that these three datastores form our moat:
+
+<img
+  style={{marginTop: "0px", marginBottom: "20px", width: "50%"}}
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-cheating/blog-image-cody-moat.png"
+  alt="Cody's moat equation"
+/>
+<br/>
+
+In a little bit, I’ll dive into more technical detail. But first, let’s compare Cody to Copilot.
+
+In the glossy marketing brochures, **GitHub looks like they have the same moat** as Sourcegraph. But let’s break it down for Copilot:
+
+- **Good**: GitHub’s code search has improved by miles and is quite close to Sourcegraph’s search now. It doesn’t scale as well, it causes edge-case headaches for enterprise users, and it still doesn’t have [ranking](https://about.sourcegraph.com/blog/new-search-ranking). But it’s getting admirably close; Bravo, GitHub search team! **We can consider the code-search terms roughly equal**.
+
+- **Bad**: GitHub’s code graph for their so-called “precise” code intelligence is basically a [cheap plastic imitation](https://nethackwiki.com/wiki/Cheap_plastic_imitation_of_the_Amulet_of_Yendor) of our [SCIP](https://about.sourcegraph.com/blog/announcing-scip) graph, which is 10 years in the making, compiler/IDE-precise, inspired by Grok, and is already being adopted by other language communities. Whereas StackGraphs are **cursed -5 Sauce of the Weak**. I will provide *significantly* more documentation comparing the two within a month or so, if all goes well. Soon!
+
+- **Meh**: Copilot’s embeddings story is a **mess** right now. Broken user model, no multi-repo support, and no clear path to get there. **Sourcegraph already has multi-repo** and we’re now working on scaling to the **largest monorepos**, as well as **self-hosted embeddings**.
+
+This image illustrates how our code graph flows into our embeddings, which in turn assist with search. And all three of them are used directly by both Cody (for context) and the LLM (for tooling).
+
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-image-3.png"
     alt="A diagram of the code graph flowing into embeddings for Cody"
 /><br/>
+
+
+
+
+
+
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-image-4.png"
     alt="A diagram of Cody's backend technology"
 /><br/>
 
-<img
-  style={{marginTop: "0px", marginBottom: "20px", width: "30%"}}
-  src=""
-  alt="Cody's moat equation"
-/>
-<br/>
