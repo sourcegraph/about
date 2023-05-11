@@ -352,4 +352,4 @@ Thanks for reading. And please, let us know if you want to come **join our team*
 
 If you’re passionate about this stuff, and you spotted any of the (ahem) totally deliberate technical errors in today’s post, we should chat! Check out our [job site](https://boards.greenhouse.io/sourcegraph91) for what’s open at any given time. We should be **hiring even more**, soon.
 
-Until next time! Chapter 3 is coming in a few days. See you next time, m10r! 
+Until next time! Chapter 3 is coming in a few days. See you next time, m10r!
