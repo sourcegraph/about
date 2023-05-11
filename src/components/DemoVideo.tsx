@@ -22,7 +22,7 @@ const VIDEOS: Record<
         webm: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-use-cases-202305.webm',
         mp4: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-use-cases-202305.mp4',
         dimensions: 16 / 9,
-    }
+    },
 } as const
 
 export const DemoVideo: React.FunctionComponent<{
@@ -30,14 +30,17 @@ export const DemoVideo: React.FunctionComponent<{
     splash?: boolean
     className?: string
     splashClassName?: string
-}> = ({ video, splash = false, className, splashClassName }) => {
+    playButton?: React.ReactNode
+    scrollIntoViewOnPlay?: boolean
+}> = ({ video, splash = false, className, splashClassName, playButton, scrollIntoViewOnPlay = false }) => {
     const videoRef = useRef<HTMLVideoElement>(null)
-
     const [isShowing, setIsShowing] = useState(false)
     const onPlayClick = useCallback(() => {
         setIsShowing(true)
-        setTimeout(() => videoRef.current?.scrollIntoView({ block: 'center', inline: 'center' }), 0)
-    }, [])
+        if (scrollIntoViewOnPlay) {
+            setTimeout(() => videoRef.current?.scrollIntoView({ block: 'center', inline: 'center' }), 0)
+        }
+    }, [scrollIntoViewOnPlay])
 
     const videoInfo = VIDEOS[video]
 
@@ -87,7 +90,7 @@ export const DemoVideo: React.FunctionComponent<{
                     backgroundImage: `url(${videoInfo.poster})`,
                 }}
             />
-            <PlayCircleIcon className="h-[100px] w-[100px]" />
+            {playButton || <PlayCircleIcon className="h-[100px] w-[100px]" />}
         </div>
     )
 }

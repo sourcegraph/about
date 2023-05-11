@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { Badge, ContentSection, Heading, HubSpotForm, Layout } from '../components'
+import { Badge, ContentSection, Heading, HubSpotForm, Layout, PlayButton } from '../components'
 import { DemoVideo } from '../components/DemoVideo'
 import { TwitterEmbed } from '../components/EmbedTweet'
 
@@ -48,10 +48,17 @@ const CodyPage: FunctionComponent = () => (
             <div className="mx-auto mt-6 w-full md:mt-0">
                 <DemoVideo
                     video="cody-demo-202305"
-                    splash={false}
+                    splash={true}
                     className="mx-auto mt-8 w-full max-w-[804px] rounded-lg bg-violet-750 drop-shadow-2xl"
                     splashClassName="rounded-lg"
+                    playButton={<PlayButton title="Watch Cody write & fix code" time="4 min" ctaText="Watch now" />}
                 />
+            </div>
+            <div className="mt-9 flex flex-wrap justify-center gap-y-4 gap-x-8 text-lg text-white md:mt-[58px] md:gap-x-[72px] md:text-2xl">
+                <p className="mb-0">Generate unit tests</p>
+                <p className="mb-0">Explain code</p>
+                <p className="mb-0">Find code smells</p>
+                <p className="mb-0">Generate code</p>
             </div>
         </ContentSection>
 
@@ -105,7 +112,10 @@ const CodyPage: FunctionComponent = () => (
                     Get Cody for free
                 </Link>
             </div>
-            <div id="cody-for-work" className="mt-8 flex max-w-[554px] flex-col justify-center border-t border-gray-500 pt-8 md:mt-0 md:border-l md:border-t-0 md:pl-8 md:pt-0">
+            <div
+                id="cody-for-work"
+                className="mt-8 flex max-w-[554px] flex-col justify-center border-t border-gray-500 pt-8 md:mt-0 md:border-l md:border-t-0 md:pl-8 md:pt-0"
+            >
                 <Heading size="h2" className="!text-4xl text-white">
                     Cody for work
                 </Heading>
