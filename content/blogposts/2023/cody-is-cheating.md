@@ -91,11 +91,7 @@ I’m sure a lot of this advantage applies to other domains that have good embed
 
 As LLMs become **commoditized and tiny and cheap** and basically become little pocket [Tamagotchi](https://en.wikipedia.org/wiki/Tamagotchi) that can power literally any app, device, or circuit anywhere on earth, the main takeaway from the history lesson above is that **apps need their own data moats** to be different from the competition.
 
-<img
-  style={{marginTop: "0px", marginBottom: "20px", width: "30%"}}
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-cheating/blog-image-ai-app.png"
-  alt="AI app equation"
-/>
+<p style="text-align:center font-style:italic">AI App = Data Moat + LLM</p>
 
 This is true for chatbots like Bard and Claude, but also for coding assistants like Cody and Copilot.
 
@@ -125,12 +121,7 @@ I made these crummy Tinkercad drawings because, ironically, I got frustrated try
 
 I’ll make the argument that these three datastores form our moat:
 
-<img
-  style={{marginTop: "0px", marginBottom: "20px", width: "40%"}}
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-cheating/blog-image-cody-moat.png"
-  alt="Cody's moat equation"
-/>
-<br/>
+<p style="text-align:center font-style:italic">Cody Moat = Embeddings + SCIP Graph + Code Search</p>
 
 In a little bit, I’ll dive into more technical detail. But first, let’s compare Cody to Copilot.
 
@@ -161,12 +152,7 @@ I will talk more about Cody’s many other differentiators over Copilot in our n
 
 These differentiators mean that **no matter what happens in the AI race** and the clone wars, and no matter who wins, **Cody will always be your best coding assistant**.
 
-<img
-  style={{marginTop: "0px", marginBottom: "20px", width: "30%"}}
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-cheating/blog-image-BYOLLM.png"
-  alt="Cody's moat equation"
-/>
-<br/>
+<p style="text-align:center font-style:italic">Cody = Sourcegraph + BYOLLM</p>
 
 I also think that **self-hosted embeddings** are going to be a game-changer, and they should be available for Cody within weeks. You will no longer need to upload your code base to a cloud provider; all your IP assets can be embedded in your own secure environment.
 
