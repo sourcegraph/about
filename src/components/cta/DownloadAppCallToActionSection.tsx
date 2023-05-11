@@ -12,6 +12,7 @@ interface StarshipPageCallToAction {
     description?: string
     buttonText?: string
     colorTheme: 'light' | 'dark'
+    href?: string
 }
 
 export const DownloadAppCallToActionSection: FunctionComponent<StarshipPageCallToAction> = ({
@@ -19,6 +20,7 @@ export const DownloadAppCallToActionSection: FunctionComponent<StarshipPageCallT
     description = 'Sourcegraph makes it easy to read, write, and fix code—even in big, complex codebases.',
     buttonText = 'Download Sourcegraph',
     colorTheme,
+    href
 }) => (
     <div
         className={classNames(
@@ -34,7 +36,7 @@ export const DownloadAppCallToActionSection: FunctionComponent<StarshipPageCallT
         {description && <p className="mt-4 mb-0 text-lg text-gray-200">{description}</p>}
         {buttonText && (
             <div className="mt-6 flex gap-x-4 md:mt-8">
-                <TrySourcegraphAppButton buttonLocation={buttonLocation.trySourcegraph} dark={true}>
+                <TrySourcegraphAppButton href={href} buttonLocation={buttonLocation.trySourcegraph} dark={true}>
                     {buttonText}
                 </TrySourcegraphAppButton>
             </div>

@@ -45,7 +45,13 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
                 <PostTemplate post={post} content={content} className="max-w-[840px]" />
             </article>
 
-            <DownloadAppCallToActionSection colorTheme="light" />
+            <DownloadAppCallToActionSection
+                href='https://sourcegraph.com/sign-up'
+                title="Get Cody, the AI code assistant" 
+                description="Cody writes code and answers questions using your own code graph as context—even in complex codebases with multiple code hosts." 
+                colorTheme="light" 
+                buttonText="Try Cody for free" 
+             />
         </Layout>
     )
 }
