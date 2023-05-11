@@ -25,7 +25,7 @@ In today’s episode, I will explain our moat: **How exactly Cody is differentia
 In upcoming Episode 3, next week, I will show you Cody in action.
 
 <Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-image-hero.png"
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-cheating/blog-image-hero.png"
     alt="A stylized picture of the Cody logo"
 /><br/>
 
@@ -43,7 +43,9 @@ BUT, many of our Enterprise customers and prospects are **already familiar with 
 
 Before I jump into the gory details, let’s recap what’s changed since Episode 1.
 
-##### The Rise and Fall of the GPT Empire
+<br/>
+
+#### The Rise and Fall of the GPT Empire
 
 Here’s the TL;DR for what happened last week. For a more action-packed account, see my recent Medium post, *[We’re Gonna Need a Bigger Moat](https://steve-yegge.medium.com/were-gonna-need-a-bigger-moat-478a8df6a0d2)*. I’ll just share a recap here.
 
@@ -57,7 +59,7 @@ The recent chain of events could probably make for an actual blockbuster movie, 
  <tr>
     <td>
       <Figure
-        src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-image-1.png"
+        src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-cheating/blog-image-1.png"
         alt="LLaMa architecture diagram"
       />
     </td>
@@ -87,11 +89,13 @@ The real winners here are, conveniently, **me**, **me**, and **me**. Well, reall
 
 I’m sure a lot of this advantage applies to other domains that have good embeddings. But I’ll talk about the domain I know, which is coding assistants:  Cody and Copilot. For me, it feels like every new bit of news is accelerating Cody’s race to become the most powerful dev tool in the world.
 
-##### Cody’s impenetrable alligator-filled piranha moat
+<br/>
+
+#### Cody’s impenetrable alligator-filled piranha moat
 
 As LLMs become **commoditized and tiny and cheap** and basically become little pocket [Tamagotchi](https://en.wikipedia.org/wiki/Tamagotchi) that can power literally any app, device, or circuit anywhere on earth, the main takeaway from the history lesson above is that **apps need their own data moats** to be different from the competition.
 
-<p style="text-align:center font-style:italic">AI App = Data Moat + LLM</p>
+*AI App = Data Moat + LLM*
 
 This is true for chatbots like Bard and Claude, but also for coding assistants like Cody and Copilot.
 
@@ -108,12 +112,14 @@ So what does a good moat look like? Well, my thesis of *Cheating is All You Need
 
 But Cody’s “cheating” is in fact much more deeply aligned to the AI, in the sense that **Sourcegraph’s code graph can be used directly to improve embeddings, fine-tuning, training**, and to significantly raise the quality of nearly every phase and component of your LLM-powered workflows.
 
-##### Sourcegraph Platform 101
+<br/>
+
+#### Sourcegraph Platform 101
 
 At Sourcegraph we are fairly well-known for our **code search**, but perhaps not as well known for our **code graph**, and I’m guessing *very* few of you know about our **embeddings**. These three custom backends, all created from different techniques for “indexing” your code. They are the ingredients to the secret sauce that fills our data moat.
 
 <Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-image-2.png"
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-cheating/blog-image-2.png"
     alt="A diagram of the key technologies powering Cody"
 /><br/>
 
@@ -121,7 +127,7 @@ I made these crummy Tinkercad drawings because, ironically, I got frustrated try
 
 I’ll make the argument that these three datastores form our moat:
 
-<p style="text-align:center font-style:italic">Cody Moat = Embeddings + SCIP Graph + Code Search</p>
+*Cody Moat = Embeddings + SCIP Graph + Code Search*
 
 In a little bit, I’ll dive into more technical detail. But first, let’s compare Cody to Copilot.
 
@@ -136,7 +142,7 @@ In the glossy marketing brochures, **GitHub looks like they have the same moat**
 This image illustrates how our code graph flows into our embeddings, which in turn assist with search. And all three of them are used directly by both Cody (for context) and the LLM (for tooling).
 
 <Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-image-3.png"
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-cheating/blog-image-3.png"
     alt="A diagram of the code graph flowing into embeddings for Cody"
 /><br/>
 
@@ -146,19 +152,21 @@ I don’t think Copilot today, in its current form, uses *any* fancy helper back
 
 I will talk more about Cody’s many other differentiators over Copilot in our next post, but for now, let’s focus on two:
 
--Cody has a clear, differentiated, and defensible **code graph data moat**
+- Cody has a clear, differentiated, and defensible **code graph data moat**
 - Cody has a **pluggable LLM backend**
 <br/>
 
 These differentiators mean that **no matter what happens in the AI race** and the clone wars, and no matter who wins, **Cody will always be your best coding assistant**.
 
-<p style="text-align:center font-style:italic">Cody = Sourcegraph + BYOLLM</p>
+*Cody = Sourcegraph + BYOLLM*
 
 I also think that **self-hosted embeddings** are going to be a game-changer, and they should be available for Cody within weeks. You will no longer need to upload your code base to a cloud provider; all your IP assets can be embedded in your own secure environment.
 
 I hope that was useful! This entire analogy is credit to Greg Wester, our Enterprise Cody PM.
 
-##### Take a breath
+<br/>
+
+#### Take a breath
 
 Stretch your legs, get some coffee, take a breather. It’s OK. I know this is long.
 
@@ -168,12 +176,14 @@ Just kidding, just kidding. I’m just telling you wild tales to take your mind 
 
 OK, break’s over. Let’s make a run to the finish line!
 
-##### Cody is cheating
+<br/>
+
+#### Cody is cheating
 
 This diagram is my attempt to capture the spectacle of Cody’s **totally unfair cheating** in all its glory, with this diagram with **all three of Cody’s backends** in action.
 
 <Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-image-4.png"
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-cheating/blog-image-4.png"
     alt="A diagram of Cody's backend technology"
 /><br/>
 
@@ -187,7 +197,9 @@ Why does it matter so much that Copilot doesn’t have them?
 
 I’m gonna get through this fast. This is the good part. My favorite part. It’s magic!
 
-##### 768 questions is All You Need
+<br/>
+
+#### 768 questions is All You Need
 
 Cody is easily **10 times better with embeddings turned on**. Without embeddings, it falls back to a keyword search with unsatisfying results. What makes embeddings so effective?
 
@@ -202,7 +214,7 @@ Which just happens to be *exactly* the **magical sauce Cody needs**.
 If you ask Cody, *Where is the SAML auth code in our codebase?*, how does it know which files to examine in order to give you a great answer? 
 
 <Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-image-5.png"
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-cheating/blog-image-5.png"
     alt="A diagram of Cody's backend technology"
 /><br/>
 
@@ -222,41 +234,41 @@ I deleted literally 10 or 15 pages of text here. Right here at this point.
 
 Instead, I’ll just summarize with this imagined conversation with the LLM:
 
-*You*: I’d like to embed this hunk of text.
-*LLM*: Well give it here, don’t have all day. There it is. *Nomf nom mnomf* That’s good text.
-You: Can I get my embedding now?
-LLM *(paying little attention)*: Yargh, just scrape it off that bigger lump right back there.
-You: What does it do exactly?
-LLM *(bored)*: It represents the “meaning” of your hunk.
-You: What do you mean by “meaning”?
-LLM: The vector contains the answers to 768 questions about your hunk.
-You: What the hell?
-LLM *(perking up)*: That’s actually one of them!
-You: What do these questions do?
-LLM: They let you find other hunks of text that have similar meaning to your starting hunk.
-You: Okay but which questions are you *actually* asking?
-LLM: I don’t feel like talking about it.
-You: I mean, I’d kind of like to know. Don’t you have billions of parameters?
-LLM *(beaming)*: Yup! 175 *billion*, baby. Woo!
-You: So how did you pick 768 questions?
-LLM: That’s the size of my lump. Also my mouth. And my poop chute.
-You: Ew.
-LLM: Yeah but that ain’t nuthin. I can answer 175 billion questions about anything!
-You: Then what good is an embedding that only asks 768 questions?
-LLM: Well your hunks of text aren’t that big, so I don’t need that many questions. Keeps it crisp.
-You: So you’re basically figuring out which 768 questions to ask, *out of 175 billion*.
-LLM: Yup! I hand-select 768 questions that will best allow me to differentiate between every single hunk of text.
-You: So… it’s a game of 20 questions?
-LLM: No. No! Not at all. It’s… much more complicated than that.
-You: …?
-LLM *(blushing)*: Well for starters, the embedding has *768 questions*. That’s a lot more!
-You: It is, but it’s also *pretty far* from billions.
-LLM *(insistent)*: No, no, yer makin’ all these bad assumptions. Who are ye again? It’s not 20 questions, because the answers are in-betweenies too. You just gotta know the right questions to pick, that’s all. You don’t need billions.
-You: OK then, mister smarty. What *exact* questions do you pick?
-LLM *(avoiding eye contact)*: It’s… proprietary.
-You: You can tell me. We’re friends.
-LLM: It’s just questions. Innocent questions. About… stuff.
-You: If you don’t tell me, I’m going to drive a forklift through your data center’s power grid.
+*You*: I’d like to embed this hunk of text.\
+*LLM*: Well give it here, don’t have all day. There it is. *Nomf nom mnomf* That’s good text.\
+You: Can I get my embedding now?\
+LLM *(paying little attention)*: Yargh, just scrape it off that bigger lump right back there.\
+You: What does it do exactly?\
+LLM *(bored)*: It represents the “meaning” of your hunk.\
+You: What do you mean by “meaning”?\
+LLM: The vector contains the answers to 768 questions about your hunk.\
+You: What the hell?\
+LLM *(perking up)*: That’s actually one of them!\
+You: What do these questions do?\
+LLM: They let you find other hunks of text that have similar meaning to your starting hunk.\
+You: Okay but which questions are you *actually* asking?\
+LLM: I don’t feel like talking about it.\
+You: I mean, I’d kind of like to know. Don’t you have billions of parameters?\
+LLM *(beaming)*: Yup! 175 *billion*, baby. Woo!\
+You: So how did you pick 768 questions?\
+LLM: That’s the size of my lump. Also my mouth. And my poop chute.\
+You: Ew.\
+LLM: Yeah but that ain’t nuthin. I can answer 175 billion questions about anything!\
+You: Then what good is an embedding that only asks 768 questions?\
+LLM: Well your hunks of text aren’t that big, so I don’t need that many questions. Keeps it crisp.\
+You: So you’re basically figuring out which 768 questions to ask, *out of 175 billion*.\
+LLM: Yup! I hand-select 768 questions that will best allow me to differentiate between every single hunk of text.\
+You: So… it’s a game of 20 questions?\
+LLM: No. No! Not at all. It’s… much more complicated than that.\
+You: …?\
+LLM *(blushing)*: Well for starters, the embedding has *768 questions*. That’s a lot more!\
+You: It is, but it’s also *pretty far* from billions.\
+LLM *(insistent)*: No, no, yer makin’ all these bad assumptions. Who are ye again? It’s not 20 questions, because the answers are in-betweenies too. You just gotta know the right questions to pick, that’s all. You don’t need billions.\
+You: OK then, mister smarty. What *exact* questions do you pick?\
+LLM *(avoiding eye contact)*: It’s… proprietary.\
+You: You can tell me. We’re friends.\
+LLM: It’s just questions. Innocent questions. About… stuff.\
+You: If you don’t tell me, I’m going to drive a forklift through your data center’s power grid.\
 LLM: I… I don’t know! They just grow on my ass!
 
 God, I went round and round on this. Embeddings are “learned” and accumulate on a hidden layer in the LLM, one that is purpose-built for giving you embeddings. And you just have to **believe that the numbers mean something**.
@@ -279,12 +291,14 @@ But it’s a nice mental model.
 
 If you try Cody, *make sure* embeddings are enabled and available for your code base, or you’re not getting even a tenth of the full experience.
 
-##### Our graph makes our embeddings a moat
+<br/>
+
+#### Our graph makes our embeddings a moat
 
 Last section. I’ll tie it all together now. All three backends. Our graph, search, and embeddings.
 
 <Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-image-6.png"
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-cheating/blog-image-6.png"
     alt="A diagram of Cody's backend technology"
 /><br/>
 
@@ -292,7 +306,7 @@ There’s been a fair amount of research on how to **augment LLMs with structure
 
 But there’s been more research done since then, and I’ve spoken with data scientists at other large companies with extremely large knowledge graphs, and the key takeaway for today is:
 
-<p style="text-align:center">You can **directly embed the code graph itself**.</p>
+You can **directly embed the code graph itself**.
 
 You can use our graph to create better text chunks, and you can also embed relationships from our graph, including both compiler artifacts such as class/symbol relationships, but also the “people graph” of code ownership, the security/trust graph, and other metadata we record in Sourcegraph’s SCIP code graph.
 
@@ -304,26 +318,27 @@ Competing AI assistants will struggle greatly to compete with us here, because *
 
 And it’s a wrap, folks! You made it!
 
-##### Reward function
+<br/>
+
+#### Reward function
 
 Congratulations! 🎉
 
 As a reward for completing this **brobdingnagian** post, here is a Cody video for you to watch. It’s one of our Cody team engineers showing off the UI for the next patch release. The fixups feature is live in Cody now, but this new UI is pretty sick. In fact, I think it’s headed in the direction of the future of programming. Take a look and see what you think.
 
-<Video 
-  source={{
-    mp4: 'blog/cody-is-cheating/cody-inine-assist'
-  }}
-  loop={false}
-  title="Demo of Cody's Inline Assist"
+<YouTube
+  title="Sourcegraph Cody: Inline Assist" 
+  id="cJj2ozoug60"
+  showTitle={false}
 />
-<br/>
 
 This is like science fiction. And Cody knows **your code**, and will always know it best, because of our moat: Our code graph and our precise code intelligence platform.
 
 We are the real deal.
 
-##### Epilogue
+<br/>
+
+#### Epilogue
 
 Thus ends the saga of the Second Cheating.
 
