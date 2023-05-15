@@ -14,6 +14,26 @@ published: true
 for C and C++ code written from the ground up to natively emit [SCIP](https://github.com/sourcegraph/scip)
 and especially support the wide range of language features present in C++.
 
+scip-clang enables precise code navigation,
+similar to clangd-based tooling (such as in VS Code) or CLion.
+Precise code navigation is aware of build configurations,
+macros, and type information, which are not accessible to
+search-based code navigation. Some examples of when this is particularly useful:
+- Navigating class hierarchies, such as those using virtual functions
+  with overriding, or the
+  [Curiously Recurring Template Pattern](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern).
+  In such cases, the "same" method appears in multiple class
+  definitions, leading to false positives with search-based code navigation.
+- Different C++ container types often use identical method names
+  like `find` and `contains`, which may have multiple overloads.
+  Precise code navigation enables accurately navigating
+  to the correct method overload in the correct type
+  without false positives.
+- Understanding whether a definition comes from inside a macro expansion.
+  In such cases, since the definition is not explicitly available
+  in the source, it is not accessible to search-based code navigation,
+  but precise code navigation can accurately point to the macro expansion.
+
 scip-clang is now available in beta, and replaces our older indexer lsif-clang.
 We've successfully indexed large codebases such as Chromium with scip-clang.
 
