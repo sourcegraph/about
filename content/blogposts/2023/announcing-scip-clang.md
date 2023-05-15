@@ -53,6 +53,7 @@ The main additions are:
 - scip-clang is based on Clang 16 instead of Clang 11.
   It consumes Clang as a library rather than as a fork,
   making it easy to update the version of Clang used in the future.
+<br/>
 
 Additional quality-of-life improvements include:
 
@@ -67,6 +68,7 @@ Additional quality-of-life improvements include:
   processes an index.
 - scip-clang uses incremental parsing for compilation databases,
   reducing the risk of out-of-memory errors on ingestion.
+<br/>
 
 Please [try out scip-clang](https://github.com/sourcegraph/scip-clang),
 and let us know if you run into issues,
@@ -108,6 +110,7 @@ In the future, we will be able to reduce this overhead in two ways:
 - [Parallelizing the index merging step](https://github.com/sourcegraph/scip-clang/issues/139),
   which combines information about forward declarations
   and project-external symbols across translation units.
+<br/>
 
 With these optimizations, indexing should take less than 10%
 extra time compared to type-checking.
