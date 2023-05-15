@@ -39,7 +39,9 @@ We've successfully indexed large codebases such as Chromium with scip-clang ([tr
 
 ![Precise code nav in Chromium](https://github.com/sourcegraph/scip-clang/assets/93103176/55ec1429-eef0-4b7d-a99a-0c3c6af23e92)
 
-{/* TODO: Add demo here */}
+Here's a demo showcasing some features:
+
+https://www.loom.com/share/9b3da67e5c984ffa9ecb9cda3610df08
 
 scip-clang supports a superset of the functionality of lsif-clang.
 The main additions are:
