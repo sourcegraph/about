@@ -33,8 +33,8 @@ Some examples of when this is particularly useful:
   without false positives.
 - Understanding whether a definition comes from inside a macro expansion.
   In such cases, since the definition is not explicitly available
-  in the source, it is not accessible to search-based code navigation,
-  but precise code navigation can accurately point to the macro expansion.
+  in the source, it is not accessible to search-based code navigation.
+  However, precise code navigation can accurately point to the macro expansion.
 
 scip-clang is now available in beta, and replaces our older indexer lsif-clang.
 If you'd like to try out precise intelligence for C++, you can explore it
