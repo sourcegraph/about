@@ -14,11 +14,13 @@ published: true
 for C and C++ code written from the ground up to natively emit [SCIP](https://github.com/sourcegraph/scip)
 and especially support the wide range of language features present in C++.
 
-scip-clang enables precise code navigation,
-similar to clangd-based tooling (such as in VS Code) or CLion.
-Precise code navigation is aware of build configurations,
-macros, and type information, which are not accessible to
-search-based code navigation. Some examples of when this is particularly useful:
+For teams using C and C++,
+indexing your code with scip-clang can provide
+a significantly improved code navigation experience in Sourcegraph,
+similar to editors like VS Code/clangd and CLion.
+scip-clang's precise code navigation is aware of build configurations,
+macros, and type information.
+Some examples of when this is particularly useful:
 - Navigating class hierarchies, such as those using virtual functions
   with overriding, or the
   [Curiously Recurring Template Pattern](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern).
@@ -43,7 +45,7 @@ in the following repositories:
 
 ![Precise code nav in Chromium](https://github.com/sourcegraph/scip-clang/assets/93103176/55ec1429-eef0-4b7d-a99a-0c3c6af23e92)
 
-Here's a short demo showcasing some features in action:
+Here's a quick demo showcasing some features in action:
 
 https://www.loom.com/share/9b3da67e5c984ffa9ecb9cda3610df08
 
