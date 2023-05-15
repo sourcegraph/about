@@ -47,7 +47,16 @@ in the following repositories:
 
 Here's a quick demo showcasing some features in action:
 
-https://www.loom.com/share/9b3da67e5c984ffa9ecb9cda3610df08
+<div style={{position: 'relative', paddingBottom: '51.13908872901679%', height: 0}}>
+    <iframe
+        src="https://www.loom.com/share/9b3da67e5c984ffa9ecb9cda3610df08"
+        frameBorder="0"
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen
+        style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}>
+    </iframe>
+</div>
 
 scip-clang supports a superset of the functionality of lsif-clang.
 The main additions are:
