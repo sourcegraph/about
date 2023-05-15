@@ -36,14 +36,13 @@ Some examples of when this is particularly useful:
   in the source, it is not accessible to search-based code navigation.
   However, precise code navigation can accurately point to the macro expansion.
 
-scip-clang is now available in beta, and replaces our older indexer lsif-clang.
-If you'd like to try out precise intelligence for C++, you can explore it
-in the following repositories:
-[Chromium](https://sourcegraph.com/github.com/chromium/chromium@b21c706/-/blob/base/atomic_ref_count.h?L19:7-19:21#tab=references),
-[LLVM](https://sourcegraph.com/github.com/llvm/llvm-project@39a0677/-/blob/llvm/include/llvm/Support/raw_ostream.h?L52:7-52:18#tab=references),
-[Postgres](https://sourcegraph.com/github.com/postgres/postgres@63932a6d38e5dfa6df2a51a04b7314ec1e4d3de7/-/blob/src/backend/optimizer/plan/setrefs.c?L289:21-289:32#tab=references).
-
+You can explore precise code navigation powered by scip-clang in the following repositories:[^1]
+[Chromium](https://sourcegraph.com/github.com/chromium/chromium@b21c706/-/blob/base/atomic_ref_count.h?L19:7-19:21#tab=references) (C++),
+[LLVM](https://sourcegraph.com/github.com/llvm/llvm-project@39a0677/-/blob/llvm/include/llvm/Support/raw_ostream.h?L52:7-52:18#tab=references) (C++),
+[Postgres](https://sourcegraph.com/github.com/postgres/postgres@63932a6d38e5dfa6df2a51a04b7314ec1e4d3de7/-/blob/src/backend/optimizer/plan/setrefs.c?L289:21-289:32#tab=references) (C).
 ![Precise code nav in Chromium](https://github.com/sourcegraph/scip-clang/assets/93103176/55ec1429-eef0-4b7d-a99a-0c3c6af23e92)
+
+[^1]: The code was indexed using default build settings on Linux, so it may lack precise code graph data for platform-specific code like Android, macOS, Windows etc.
 
 Here's a quick demo showcasing some features in action:
 
