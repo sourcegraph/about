@@ -22,7 +22,7 @@ Sourcegraph and Sourcegraph Partner LLMs do not use your data to train any model
 Sourcegraph Partner LLMs will not retain any input or output from the model, including embeddings, beyond the time it takes to generate the output (**"Zero Retention"**).
 
 ### Data collection and use 
-For all deployments, including Self-Hosted, CLoud, and Sourcegraph.com, Sourcegraph collects and uses the following data to support and improve user experience:
+For all deployments, including Self-Hosted, Cloud, and Sourcegraph.com, Sourcegraph collects and uses the following data to support and improve user experience:
 - **Usage Data** is usage and operations data in connection with your use of Cody, such as metrics on frequency and length of a user feature engagement. Usage Data does not contain personal data other than an anonymous user ID.
 - **User Feedback** is any form of feedback that the user submits, including thumbs up and thumbs down clicks and comments or ideas shared for the purpose of giving feedback.
 
@@ -33,7 +33,7 @@ Sourcegraph uses Customer Content solely to provide the service and not for prod
 
 **Self-Hosted:** When you use Cody with a self-hosted instance of Sourcegraph, Sourcegraph does **not** have access to Customer Content unless included via support channels to Sourcegraph, as the software is hosted in the customer's systems. 
 
-**Sourcegraph.com:** For individual users accessing the Sourcegraph Cody extension via Sourcegraph.com, Sourcegraph also collects the following **User Content**
+**Sourcegraph.com:** For individual users accessing the Sourcegraph Cody extension via Sourcegraph.com, Sourcegraph also collects the following **User Content**:
 - User Prompts
 - LLM Prompts
 - Responses
