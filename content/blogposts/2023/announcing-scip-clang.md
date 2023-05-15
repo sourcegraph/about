@@ -17,14 +17,14 @@ and especially support the wide range of language features present in C++.
 For teams using C and C++,
 indexing your code with scip-clang can provide
 a significantly improved code navigation experience in Sourcegraph,
-similar to editors like VS Code/clangd and CLion.
+similar to editors like VS Code (based on clangd) and CLion.
 scip-clang's precise code navigation is aware of build configurations,
 macros, and type information.
 Some examples of when this is particularly useful:
 - Navigating class hierarchies, such as those using virtual functions
   with overriding, or the
   [Curiously Recurring Template Pattern](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern).
-  In such cases, the "same" method appears in multiple class
+  In such cases, identically named methods appear in multiple class
   definitions, leading to false positives with search-based code navigation.
 - Different C++ container types often use identical method names
   like `find` and `contains`, which may have multiple overloads.
