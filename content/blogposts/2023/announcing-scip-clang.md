@@ -35,9 +35,9 @@ search-based code navigation. Some examples of when this is particularly useful:
   but precise code navigation can accurately point to the macro expansion.
 
 scip-clang is now available in beta, and replaces our older indexer lsif-clang.
-We've successfully indexed large codebases such as Chromium with scip-clang.
+We've successfully indexed large codebases such as Chromium with scip-clang ([try it out](https://sourcegraph.com/github.com/chromium/chromium@b21c706/-/blob/base/atomic_ref_count.h?L19:7-19:21#tab=references)).
 
-Here's a quick demo showcasing some features:
+![Precise code nav in Chromium](https://github.com/sourcegraph/scip-clang/assets/93103176/55ec1429-eef0-4b7d-a99a-0c3c6af23e92)
 
 {/* TODO: Add demo here */}
 
