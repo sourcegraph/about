@@ -3,7 +3,7 @@ title: 'Announcing scip-clang: a new SCIP indexer for C and C++'
 authors:
   - name: Varun Gandhi
     url: https://github.com/varungandhi-src
-publishDate: 2023-05-08T10:00-07:00
+publishDate: 2023-05-15T10:00-07:00
 description: 'scip-clang is our new SCIP indexer for C and C++ supporting precise code navigation in Sourcegraph, supporting a wide variety of language features.'
 tags: [blog]
 slug: 'announcing-scip-clang'
