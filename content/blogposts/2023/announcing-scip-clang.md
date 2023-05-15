@@ -85,11 +85,11 @@ Additional quality-of-life improvements include:
   reducing the risk of out-of-memory errors on ingestion.
 <br/>
 
-Please [try out scip-clang](https://github.com/sourcegraph/scip-clang),
+scip-clang is now available in beta.
+Please [try it out](https://github.com/sourcegraph/scip-clang#quick-start),
 and let us know if you run into issues,
 or if you have feedback for improvement.
-
-As with our other indexers, open source maintainers are also welcome
+As with our other indexers, open source maintainers are welcome
 to use scip-clang to index their projects
 and upload indexes to Sourcegraph.com
 to benefit from precise code navigation for C and C++.
