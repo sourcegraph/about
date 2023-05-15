@@ -57,6 +57,7 @@ Here's a quick demo showcasing some features in action:
         style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}>
     </iframe>
 </div>
+<br/>
 
 scip-clang supports a superset of the functionality of lsif-clang.
 The main additions are:
@@ -95,7 +96,7 @@ and upload indexes to Sourcegraph.com
 to benefit from precise code navigation for C and C++.
 
 ## A word about performance
-
+<br/>
 scip-clang requires a traversal of the abstract syntax tree
 after type-checking the code, so that type information is available.
 
@@ -144,7 +145,7 @@ higher quality code navigation with scip-clang
 make up for the loss in performance for current lsif-clang adopters.
 
 ## The road ahead
-
+<br/>
 In the coming months,
 we'll be adding support for
 [cross-repo navigation](https://github.com/sourcegraph/scip-clang/issues/184),
