@@ -49,10 +49,8 @@ Here's a quick demo showcasing some features in action:
 <div style={{position: 'relative', paddingBottom: '77.14285714285715%', height: 0}}>
   <iframe
       src="https://www.loom.com/embed/9b3da67e5c984ffa9ecb9cda3610df08"
-      frameborder="0"
-      webkitallowfullscreen
-      mozallowfullscreen
-      allowfullscreen
+      frameBorder="0"
+      allowFullScreen={true}
       style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}>
   </iframe>
 </div>
