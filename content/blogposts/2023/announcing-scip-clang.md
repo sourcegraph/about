@@ -10,8 +10,6 @@ slug: 'announcing-scip-clang'
 published: true
 ---
 
-# Announcing scip-clang: a new SCIP indexer for C and C++
-
 [scip-clang](https://github.com/sourcegraph/scip-clang) is our new indexer
 for C and C++ code written from the ground up to natively emit [SCIP](https://github.com/sourcegraph/scip)
 and especially support the wide range of language features present in C++.
