@@ -24,7 +24,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             image: 'https://about.sourcegraph.com/rise-of-ai/rise-of-ai-og.png',
         }}
         headerColorTheme="purple"
-        childrenClassName="sg-bg-gradient-app-large"
+        childrenClassName="sg-bg-gradient-mobile md:sg-bg-gradient-app-large"
         displayChildrenUnderNav={true}
         className="relative"
     >
