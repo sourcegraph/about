@@ -71,7 +71,7 @@ export const Community: FunctionComponent = () => (
                                         >
                                             DigiTech Forum 2023 · Singapore
                                         </a>{' '}
-                                        - May 25-26
+                                        - May 25-26, 2023
                                     </li>
                                     <li>
                                         <a
@@ -83,7 +83,7 @@ export const Community: FunctionComponent = () => (
                                         >
                                             Scala Days · Seattle
                                         </a>{' '}
-                                        - June 5-7
+                                        - June 5-7, 2023
                                     </li>
                                     <li>
                                         <a
@@ -95,7 +95,7 @@ export const Community: FunctionComponent = () => (
                                         >
                                             LeadDev · London
                                         </a>{' '}
-                                        - June 27-28
+                                        - June 27-28, 2023
                                     </li>
                                     <li>
                                         <a
@@ -107,7 +107,7 @@ export const Community: FunctionComponent = () => (
                                         >
                                             AWS Summit NYC · New York
                                         </a>{' '}
-                                        - July 26
+                                        - July 26, 2023
                                     </li>
                                     <li>
                                         <a
@@ -131,7 +131,7 @@ export const Community: FunctionComponent = () => (
                                         >
                                             GopherCon · San Diego Marina
                                         </a>{' '}
-                                        - September 26-29
+                                        - September 26-29, 2023
                                     </li>
                                     <li>
                                         <a
@@ -143,43 +143,7 @@ export const Community: FunctionComponent = () => (
                                         >
                                             Devoxx · Belgium
                                         </a>{' '}
-                                        - October 2
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://reactadvanced.com/"
-                                            title="React Advanced"
-                                            data-button-style={buttonStyle.text}
-                                            data-button-location={buttonLocation.body}
-                                            data-button-type="cta"
-                                        >
-                                            React Advanced · London
-                                        </a>{' '}
-                                        - October 20
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/"
-                                            title="KubeCon"
-                                            data-button-style={buttonStyle.text}
-                                            data-button-location={buttonLocation.body}
-                                            data-button-type="cta"
-                                        >
-                                            KubeCon · Chicago
-                                        </a>{' '}
-                                        - November 6-9
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://reinvent.awsevents.com/"
-                                            title="AWS: ReInvent"
-                                            data-button-style={buttonStyle.text}
-                                            data-button-location={buttonLocation.body}
-                                            data-button-type="cta"
-                                        >
-                                            AWS: ReInvent · Las Vegas
-                                        </a>{' '}
-                                        - November 27-30
+                                        - October 2, 2023
                                     </li>
                                     <li>
                                         <a
@@ -191,7 +155,43 @@ export const Community: FunctionComponent = () => (
                                         >
                                             Cloud Expo Asia · Sigapore
                                         </a>{' '}
-                                        - November 27-30
+                                        - Octbober 11-12, 2023
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://reactadvanced.com/"
+                                            title="React Advanced"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            React Advanced · London
+                                        </a>{' '}
+                                        - October 20, 2023
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/"
+                                            title="KubeCon"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            KubeCon · Chicago
+                                        </a>{' '}
+                                        - November 6-9, 2023
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://reinvent.awsevents.com/"
+                                            title="AWS: ReInvent"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            AWS: ReInvent · Las Vegas
+                                        </a>{' '}
+                                        - November 27-30, 2023
                                     </li>
                                 </ul>
                             </div>
