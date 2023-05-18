@@ -7,8 +7,10 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { buttonLocation } from '../../../data/tracking'
+import { AuthenticateModalContent } from '../../AuthenticateModalContent'
 import { Banner } from '../../Banner'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
+import { Modal } from '../../modal'
 
 import { NavItems } from './NavItems'
 
@@ -24,6 +26,8 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme }) => {
     const [sticky, setSticky] = useState<boolean>(false)
     const router = useRouter()
     const { pathname } = router
+
+    const source = pathname.slice(1) || 'about-home'
 
     /**
      * This checks the scroll position to see if the viewport has been
@@ -69,7 +73,13 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme }) => {
             {({ open }) => (
                 <>
                     {pathname !== '/big-code/big-code-in-ai-era' && <Banner />}
-                    <HeaderContent colorTheme={colorTheme} minimal={minimal} open={open} sticky={sticky} />
+                    <HeaderContent
+                        source={source}
+                        colorTheme={colorTheme}
+                        minimal={minimal}
+                        open={open}
+                        sticky={sticky}
+                    />
                 </>
             )}
         </Disclosure>
@@ -112,14 +122,24 @@ const HEADER_CONTENT_THEME_CLASS: Record<
     },
 }
 
-const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean }> = ({
+const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean; source: string }> = ({
     colorTheme,
     open,
     sticky,
+    source,
     ...props
 }) => {
     const dark = colorTheme === 'dark' || colorTheme === 'purple'
     const classes = HEADER_CONTENT_THEME_CLASS[colorTheme]
+    const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false)
+    const openModal = (): void => {
+        setIsSignUpModalOpen(true)
+    }
+
+    const closeModal = (): void => {
+        setIsSignUpModalOpen(false)
+    }
+
     const callToAction = (
         <>
             <MeetWithProductExpertButton
@@ -131,17 +151,20 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean 
                 )}
                 requestInfo={true}
             />
-            <Link
-                href="https://sourcegraph.com/sign-up"
+            <button
+                type="button"
                 className={classNames(
                     'btn min-w-fit px-6 font-normal lg:px-4',
                     dark ? 'btn-inverted-primary' : 'btn-primary'
                 )}
                 title="Download Sourcegraph"
-                target="_blank"
+                onClick={openModal}
             >
                 Get Cody for free
-            </Link>
+            </button>
+            <Modal open={isSignUpModalOpen} handleClose={closeModal}>
+                <AuthenticateModalContent source={source} />
+            </Modal>
         </>
     )
 
