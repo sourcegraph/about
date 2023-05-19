@@ -287,6 +287,17 @@
     .sg-hero-bg-gradient {
         background: radial-gradient(116.94% 133.26% at 52.08% 100%, #6112A3 0.41%, #270741 54.04%, #1E0632 94.78%);
     }
+
+    /* External Auth buttons */
+    .sg-email-auth-btn {
+        border-color: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.1);
+        opacity: 0.7;
+    }
+
+    .sg-gitlab-bg-color {
+        background-color: #6e49cb;
+    }
 }
 
 /**
