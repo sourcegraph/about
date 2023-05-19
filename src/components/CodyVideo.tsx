@@ -2,6 +2,7 @@ import React, { useCallback, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
+
 import { getEventLogger } from '../hooks/eventLogger'
 
 const VIDEOS: Record<
@@ -32,7 +33,7 @@ export const DemoVideo: React.FunctionComponent<{
     }, [])
 
     const videoInfo = VIDEOS[video]
-    const title = "Sourcegraph Cody demo video"
+    const title = 'Sourcegraph Cody demo video'
 
     return isShowing || !splash ? (
         // eslint-disable-next-line jsx-a11y/media-has-caption

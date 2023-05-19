@@ -2,6 +2,7 @@ import React, { useCallback, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
+
 import { getEventLogger } from '../hooks/eventLogger'
 
 const VIDEOS: Record<
@@ -44,7 +45,7 @@ export const DemoVideo: React.FunctionComponent<{
     }, [scrollIntoViewOnPlay])
 
     const videoInfo = VIDEOS[video]
-    const title = "Sourcegraph demo video"
+    const title = 'Sourcegraph demo video'
 
     return isShowing || !splash ? (
         <video

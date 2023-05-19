@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
+
 import { getEventLogger } from '../hooks/eventLogger'
 
 interface Video {
