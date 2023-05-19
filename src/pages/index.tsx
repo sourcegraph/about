@@ -5,8 +5,6 @@ import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import GithubIcon from 'mdi-react/GithubIcon'
 import Link from 'next/link'
 
-import { getEventLogger } from '../hooks/eventLogger'
-
 import {
     ContentSection,
     Layout,
@@ -22,6 +20,7 @@ import {
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
 import { DownloadLink } from '../components/DownloadLink'
 import { buttonLocation } from '../data/tracking'
+import { getEventLogger } from '../hooks/eventLogger'
 import { logAuthPopoverEvent } from '../util'
 
 interface TestimonyProps {
@@ -355,7 +354,7 @@ const HomeHero: FunctionComponent = () => (
                 playsInline={true}
                 controls={false}
                 data-cookieconsent="ignore"
-                onPlay={() => getEventLogger().log('StaticVideoPlayed', {title: "Homepage video"}, {title: "Homepage video"})}
+                onPlay={() => getEventLogger().log('StaticVideoPlayed', {title: 'Homepage video'}, {title: 'Homepage video'})}
             >
                 <source
                     type="video/webm"
