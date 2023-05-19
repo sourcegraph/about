@@ -5,6 +5,7 @@ import { startCase } from 'lodash'
 import Link from 'next/link'
 
 import { buttonLocation, buttonStyle } from '../data/tracking'
+import { getEventLogger } from '../hooks/eventLogger'
 
 interface Video {
     mp4: string
@@ -192,6 +193,7 @@ export const CoreFeatures: FunctionComponent = () => {
                             playsInline={true}
                             controls={false}
                             data-cookieconsent="ignore"
+                            onPlay={() => getEventLogger().log('StaticVideoPlayed', {productFeature: feature.productFeature, title: feature.title}, {productFeature: feature.productFeature, title: feature.title})}
                         >
                             <source type="video/webm" src={feature.video.webm} data-cookieconsent="ignore" />
                             <source type="video/mp4" src={feature.video.mp4} data-cookieconsent="ignore" />

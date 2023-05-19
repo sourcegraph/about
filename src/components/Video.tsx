@@ -2,6 +2,8 @@ import { FunctionComponent } from 'react'
 
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 
+import { getEventLogger } from '../hooks/eventLogger'
+
 interface Video {
     host?: 'gcp' | 'self'
     source: {
@@ -46,6 +48,7 @@ export const Video: FunctionComponent<Video> = ({
             title={title}
             // GCS does not set cookies, so we don't want Cookiebot to block this video based on consent
             data-cookieconsent="ignore"
+            onPlay={() => getEventLogger().log('StaticVideoPlayed', {title}, {title})}
         >
             <source type="video/webm" src={`${hosts[host]}${source.webm}.webm`} data-cookieconsent="ignore" />
             <source type="video/mp4" src={`${hosts[host]}${source.mp4}.mp4`} data-cookieconsent="ignore" />

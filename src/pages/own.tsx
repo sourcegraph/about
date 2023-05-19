@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { Badge, ContentSection, FeatureRoadMap, Heading, Layout } from '../components'
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
 import { buttonLocation } from '../data/tracking'
+import { getEventLogger } from '../hooks/eventLogger'
 
 interface OwnContentProps {
     title: string
@@ -107,6 +108,7 @@ const OwnPage: FunctionComponent = () => (
                     playsInline={true}
                     controls={false}
                     data-cookieconsent="ignore"
+                    onPlay={() => getEventLogger().log('StaticVideoPlayed', {title: 'Own vulnerabilities'}, {title: 'Own vulnerabilities'})}
                 >
                     <source
                         type="video/webm"
@@ -132,6 +134,7 @@ const OwnPage: FunctionComponent = () => (
                     playsInline={true}
                     controls={false}
                     data-cookieconsent="ignore"
+                    onPlay={() => getEventLogger().log('StaticVideoPlayed', {title: 'Own knowledge sharing'}, {title: 'Own knowledge sharing'})}
                 >
                     <source
                         type="video/webm"
