@@ -2,6 +2,7 @@ import React, { useCallback, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
+import { getEventLogger } from '../hooks/eventLogger'
 
 const VIDEOS: Record<
     'homepage-demo-202301' | 'cody-demo-202305',
@@ -43,6 +44,7 @@ export const DemoVideo: React.FunctionComponent<{
     }, [scrollIntoViewOnPlay])
 
     const videoInfo = VIDEOS[video]
+    const title = "Sourcegraph demo video"
 
     return isShowing || !splash ? (
         <video
@@ -50,7 +52,7 @@ export const DemoVideo: React.FunctionComponent<{
             autoPlay={isShowing}
             playsInline={true}
             controls={true}
-            title="Sourcegraph demo video"
+            title={title}
             // Required for cross-origin caption track to work
             crossOrigin="anonymous"
             data-cookieconsent="ignore"
@@ -58,6 +60,7 @@ export const DemoVideo: React.FunctionComponent<{
             ref={videoRef}
             // eslint-disable-next-line react/forbid-dom-props
             style={{ aspectRatio: videoInfo.dimensions }}
+            onPlay={() => getEventLogger().log('StaticVideoPlayed', {title}, {title})}
         >
             <track
                 default={true}

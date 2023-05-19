@@ -4,6 +4,7 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import GithubIcon from 'mdi-react/GithubIcon'
 import Link from 'next/link'
+import { getEventLogger } from '../hooks/eventLogger'
 
 import {
     ContentSection,
@@ -353,6 +354,7 @@ const HomeHero: FunctionComponent = () => (
                 playsInline={true}
                 controls={false}
                 data-cookieconsent="ignore"
+                onPlay={() => getEventLogger().log('StaticVideoPlayed', {title: "Homepage video"}, {title: "Homepage video"})}
             >
                 <source
                     type="video/webm"
