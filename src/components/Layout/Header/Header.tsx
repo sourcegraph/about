@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { buttonLocation } from '../../../data/tracking'
+import { logAuthPopoverEvent } from '../../../util'
 import { AuthenticateModalContent } from '../../AuthenticateModalContent'
 import { Banner } from '../../Banner'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
@@ -134,6 +135,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
     const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false)
     const openModal = (): void => {
         setIsSignUpModalOpen(true)
+        logAuthPopoverEvent(source)
     }
 
     const closeModal = (): void => {

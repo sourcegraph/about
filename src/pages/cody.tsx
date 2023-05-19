@@ -14,6 +14,7 @@ import {
 } from '../components'
 import { DemoVideo } from '../components/DemoVideo'
 import { TwitterEmbed } from '../components/EmbedTweet'
+import { logAuthPopoverEvent } from '../util'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
 
@@ -21,6 +22,7 @@ const CodyPage: FunctionComponent = () => {
     const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false)
     const openModal = (): void => {
         setIsSignUpModalOpen(true)
+        logAuthPopoverEvent('cody')
     }
 
     const closeModal = (): void => {

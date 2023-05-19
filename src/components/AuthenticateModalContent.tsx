@@ -44,7 +44,7 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source }) =
         </p>
         <p className="mt-5 mb-0 text-sm text-gray-500">
             Already have an account?{' '}
-            <Link href="https://sourcegraph.com/sign-in" target="_blank" className="text-violet-500">
+            <Link href="https://sourcegraph.com/sign-in" className="text-violet-500">
                 {' '}
                 Sign in.{' '}
             </Link>

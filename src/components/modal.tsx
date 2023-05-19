@@ -40,13 +40,16 @@ export const Modal: FunctionComponent<Modal> = ({ title, children, open, handleC
     return (
         <Portal>
             <div
-                className={classNames('fixed top-0 left-0 z-[9999] flex h-full w-full items-center justify-center', {
-                    hidden: !open,
-                    'block animate-fadeIn': open,
-                })}
+                className={classNames(
+                    'fixed top-0 left-0 z-[9999] flex h-full w-full items-center justify-center px-sm',
+                    {
+                        hidden: !open,
+                        'block animate-fadeIn': open,
+                    }
+                )}
             >
                 <div
-                    className="relative mx-auto rounded-md bg-white p-sm shadow-sm md:px-[126px] md:py-[73px]"
+                    className="relative mx-auto rounded-md bg-white p-sm md:px-[126px] md:py-[73px] shadow-modal"
                     ref={modalReference}
                 >
                     {title && <h4 className="mb-md pr-lg">{title}</h4>}

@@ -32,7 +32,6 @@ export const EmailAuth: React.FunctionComponent<EmailAuthProps> = ({
             href="https://sourcegraph.com/sign-up?showEmail=true"
             className={classNames('btn mt-2 flex w-full items-center justify-center px-6', className)}
             onClick={handleOnClick}
-            target="_blank"
         >
             {icon && <EmailOutlineIcon className="pr-2" />} {label}
         </Link>

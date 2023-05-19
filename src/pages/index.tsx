@@ -20,6 +20,7 @@ import {
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
 import { DownloadLink } from '../components/DownloadLink'
 import { buttonLocation } from '../data/tracking'
+import { logAuthPopoverEvent } from '../util'
 
 interface TestimonyProps {
     thumbnail: string
@@ -98,6 +99,7 @@ const Home: FunctionComponent = () => {
     const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false)
     const openModal = (): void => {
         setIsSignUpModalOpen(true)
+        logAuthPopoverEvent('about-home')
     }
 
     const closeModal = (): void => {
