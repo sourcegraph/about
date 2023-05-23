@@ -305,7 +305,7 @@ const HomeHero: FunctionComponent = () => (
                 <p className="sg-bg-gradient-purple-white mt-9 bg-clip-text text-[20px] font-semibold text-transparent">
                     Sign up to get free access <span className="text-white">👇</span>
                 </p>
-                <div className="flex gap-2 mb-2">
+                <div className="mb-2 flex gap-2">
                     <ExternalsAuth
                         className="mt-1 w-full justify-center !font-normal"
                         authProvider="github"
@@ -354,7 +354,9 @@ const HomeHero: FunctionComponent = () => (
                 playsInline={true}
                 controls={false}
                 data-cookieconsent="ignore"
-                onPlay={() => getEventLogger().log('StaticVideoPlayed', {title: 'Homepage video'}, {title: 'Homepage video'})}
+                onPlay={() =>
+                    getEventLogger().log('StaticVideoPlayed', { title: 'Homepage video' }, { title: 'Homepage video' })
+                }
             >
                 <source
                     type="video/webm"

@@ -34,7 +34,7 @@ export const CountDown: FunctionComponent<Props> = ({ className, launchDate }) =
                 setTime(remainingTimeObj)
             }
         }, 1000)
-        
+
         return () => clearInterval(countdown)
     }, [launchDate])
 

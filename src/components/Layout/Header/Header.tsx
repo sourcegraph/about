@@ -164,9 +164,6 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
             >
                 Get Cody for free
             </button>
-            <Modal open={isSignUpModalOpen} handleClose={closeModal}>
-                <AuthenticateModalContent source={source} />
-            </Modal>
         </>
     )
 
@@ -261,6 +258,9 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                     <div className="ml-3 !mt-2 flex flex-col items-start space-y-4">{callToAction}</div>
                 </div>
             </Disclosure.Panel>
+            <Modal open={isSignUpModalOpen} handleClose={closeModal}>
+                <AuthenticateModalContent source={source} />
+            </Modal>
         </>
     )
 }

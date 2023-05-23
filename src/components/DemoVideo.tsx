@@ -61,7 +61,7 @@ export const DemoVideo: React.FunctionComponent<{
             ref={videoRef}
             // eslint-disable-next-line react/forbid-dom-props
             style={{ aspectRatio: videoInfo.dimensions }}
-            onPlay={() => getEventLogger().log('StaticVideoPlayed', {title, video}, {title, video})}
+            onPlay={() => getEventLogger().log('StaticVideoPlayed', { title, video }, { title, video })}
         >
             <track
                 default={true}

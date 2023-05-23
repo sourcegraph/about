@@ -5,10 +5,7 @@ import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
 
 import { getEventLogger } from '../hooks/eventLogger'
 
-const VIDEOS: Record<
-    'app-demo-202304',
-    { poster: string; mp4: string; webm: string; dimensions: number }
-> = {
+const VIDEOS: Record<'app-demo-202304', { poster: string; mp4: string; webm: string; dimensions: number }> = {
     'app-demo-202304': {
         poster: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/website/app/demo-videos/app-demo-202304-poster.png',
         // track: '',
@@ -50,7 +47,7 @@ export const DemoVideo: React.FunctionComponent<{
             ref={videoRef}
             // eslint-disable-next-line react/forbid-dom-props
             style={{ aspectRatio: videoInfo.dimensions }}
-            onPlay={() => getEventLogger().log('StaticVideoPlayed', {title}, {title})}
+            onPlay={() => getEventLogger().log('StaticVideoPlayed', { title }, { title })}
         >
             <source type="video/webm" src={videoInfo.webm} data-cookieconsent="ignore" />
             <source type="video/mp4" src={videoInfo.mp4} data-cookieconsent="ignore" />

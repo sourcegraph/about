@@ -48,7 +48,7 @@ export const ENTERPRISE_STARTER_FEATURES_OVERVIEW: FeatureCluster[] = [
         topic: 'Scale and performance',
         features: ['enterpriseStarterStorage', 'enterpriseStarterExecutors'],
     },
-    { 
+    {
         topic: 'Flexible deployment',
         features: ['cloudDeployment', 'singleNode'],
     },
@@ -375,7 +375,8 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     // Code host integrations
     cloudHosts: {
         label: 'Unlimited standard cloud code hosts',
-        description: 'Integrate with GitHub Cloud / Enterprise Server, GitLab.com / Self-managed, BitBucket Cloud / Server and Perforce',
+        description:
+            'Integrate with GitHub Cloud / Enterprise Server, GitLab.com / Self-managed, BitBucket Cloud / Server and Perforce',
     },
     unlimitedCodeHosts: {
         label: 'Unlimited code hosts',
@@ -421,11 +422,11 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     // Custom deployment
     multiNode: {
         label: 'Multi-node, self-hosted',
-        description: 'Complex multi-node deployment.'
+        description: 'Complex multi-node deployment.',
     },
     singleNode: {
         label: 'Standard single-node, self-hosted',
-        description: 'Standard single-node deployment.'
+        description: 'Standard single-node deployment.',
     },
 
     // Support
@@ -440,8 +441,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     premiumServices: {
         label: 'Premium services available',
-        description:
-            '',
+        description: '',
     },
 }
 
