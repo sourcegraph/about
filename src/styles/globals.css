@@ -287,8 +287,19 @@
     .sg-hero-bg-gradient {
         background: radial-gradient(116.94% 133.26% at 52.08% 100%, #6112A3 0.41%, #270741 54.04%, #1E0632 94.78%);
     }
+  
+    .sg-aws-bg-gradient {
+        background: radial-gradient(112.81% 41.73% at 95.07% 0%, #270741 0%, rgba(39, 7, 65, 0) 100%),
+        radial-gradient(81.62% 17.03% at -4.13% 79.72%, rgba(0, 161, 199, 0.69) 0.41%, rgba(97, 18, 163, 0) 100%),
+        radial-gradient(121.35% 585.52% at 115.38% -2.37%, #270741 0%, #1E0632 71.46%, #0F111A 100%);
+    }
 
-    /* External Auth buttons */
+    .sg-aws-mobile-bg-gradient {
+        background: radial-gradient(112.81% 41.73% at 95.07% 0%, #270741 0%, rgba(39, 7, 65, 0) 100%), 
+        radial-gradient(133.63% 27.87% at -6.16% 90.56%, rgba(0, 161, 199, 0.69) 0.41%, rgba(97, 18, 163, 0) 100%),
+        radial-gradient(121.35% 585.52% at 115.38% -2.37%, #270741 0%, #1E0632 71.46%, #0F111A 100%);
+    }
+
     .sg-email-auth-btn {
         border-color: rgba(255, 255, 255, 0.1);
         background: rgba(255, 255, 255, 0.1);
