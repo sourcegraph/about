@@ -213,7 +213,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             className="flex flex-col items-center justify-center gap-8 pb-4 md:flex-row"
             parentClassName="md:!pt-8"
         >
-            <div className="border-gray-500 border-b md:border-r md:border-b-0 pb-10 md:pb:0 w-full md:w-fit md:pr-8">
+            <div className="md:pb:0 w-full border-b border-gray-500 pb-10 md:w-fit md:border-r md:border-b-0 md:pr-8">
                 <Heading size="h2" as="h4" className="!text-4xl text-white">
                     Get the full report
                 </Heading>
@@ -227,7 +227,7 @@ const TheRiseOfAI: FunctionComponent = () => (
                     />
                 </div>
             </div>
-            <div className='w-full md:w-fit'>
+            <div className="w-full md:w-fit">
                 <Heading size="h2" as="h4" className="mb-4 !text-4xl text-white md:mb-8">
                     Put AI to work on Big Code.
                 </Heading>

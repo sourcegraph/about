@@ -108,7 +108,13 @@ const OwnPage: FunctionComponent = () => (
                     playsInline={true}
                     controls={false}
                     data-cookieconsent="ignore"
-                    onPlay={() => getEventLogger().log('StaticVideoPlayed', {title: 'Own vulnerabilities'}, {title: 'Own vulnerabilities'})}
+                    onPlay={() =>
+                        getEventLogger().log(
+                            'StaticVideoPlayed',
+                            { title: 'Own vulnerabilities' },
+                            { title: 'Own vulnerabilities' }
+                        )
+                    }
                 >
                     <source
                         type="video/webm"
@@ -134,7 +140,13 @@ const OwnPage: FunctionComponent = () => (
                     playsInline={true}
                     controls={false}
                     data-cookieconsent="ignore"
-                    onPlay={() => getEventLogger().log('StaticVideoPlayed', {title: 'Own knowledge sharing'}, {title: 'Own knowledge sharing'})}
+                    onPlay={() =>
+                        getEventLogger().log(
+                            'StaticVideoPlayed',
+                            { title: 'Own knowledge sharing' },
+                            { title: 'Own knowledge sharing' }
+                        )
+                    }
                 >
                     <source
                         type="video/webm"

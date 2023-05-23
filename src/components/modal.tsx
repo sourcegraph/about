@@ -49,7 +49,7 @@ export const Modal: FunctionComponent<Modal> = ({ title, children, open, handleC
                 )}
             >
                 <div
-                    className="relative mx-auto rounded-md bg-white p-sm md:px-[126px] md:py-[73px] shadow-modal"
+                    className="relative mx-auto rounded-md bg-white p-sm shadow-modal md:px-[126px] md:py-[73px]"
                     ref={modalReference}
                 >
                     {title && <h4 className="mb-md pr-lg">{title}</h4>}
