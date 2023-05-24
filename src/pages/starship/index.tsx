@@ -8,28 +8,40 @@ const blogs = [
     {
         title: 'Cheating is All You Need',
         href: 'https://about.sourcegraph.com/blog/cheating-is-all-you-need',
-        description:
-            'There is something legendary and historic happening in software engineering, right now as we speak, and yet most of you don’t realize at all how big it is.',
+        description: (
+            <p className="text-gray-200">
+                There is something legendary and historic happening in software engineering, right now as we speak, and
+                yet most of you don’t realize at all how big it is.
+            </p>
+        ),
         imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/starship-blog-hero-1.png',
     },
     {
         title: 'Sourcegraph 5.0 release post',
         href: 'https://about.sourcegraph.com/blog/release/5.0',
-        description: 'Sourcegraph 5.0 introduces more than 20 updates and improvements.',
+        description: <p className="text-gray-200">Sourcegraph 5.0 introduces more than 20 updates and improvements.</p>,
         imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/release-post/5.0/sourcegraph-5-0-hero.png',
     },
     {
         title: 'Announcing Sourcegraph Own',
         href: 'https://about.sourcegraph.com/blog/announcing-sourcegraph-own',
-        description:
-            "Sourcegraph Own, available now as an experimental feature, integrates evergreen code ownership with Sourcegraph's code intelligence platform.",
+        description: (
+            <p className="text-gray-200">
+                Sourcegraph Own, available now as an experimental feature, integrates evergreen code ownership with
+                Sourcegraph's code intelligence platform.
+            </p>
+        ),
         imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/sourcegraph-own-og.png',
     },
     {
         title: 'Announcing the Sourcegraph app',
         href: 'https://about.sourcegraph.com/blog/announcing-sourcegraph-app',
-        description:
-            'The Sourcegraph app, now in beta, brings code intelligence to your local machine in a free, lightweight package.',
+        description: (
+            <p className="text-gray-200">
+                The Sourcegraph app, now in beta, brings code intelligence to your local machine in a free, lightweight
+                package.
+            </p>
+        ),
         imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-sourcegraph-app.png',
     },
 ]

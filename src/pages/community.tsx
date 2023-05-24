@@ -63,15 +63,135 @@ export const Community: FunctionComponent = () => (
                                 <ul>
                                     <li>
                                         <a
-                                            href="https://events.linuxfoundation.org/open-source-summit-north-america/"
-                                            title="Open Source Summit North America 2023"
+                                            href="https://www.innovationandsecurity.co/"
+                                            title="DigiTech Forum 2023"
                                             data-button-style={buttonStyle.text}
                                             data-button-location={buttonLocation.body}
                                             data-button-type="cta"
                                         >
-                                            Open Source Summit North America · Vancouver Canada
+                                            DigiTech Forum 2023 · Singapore
                                         </a>{' '}
-                                        - May 10-12
+                                        - May 25-26, 2023
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://scaladays.org/"
+                                            title="Scala Days 2023"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            Scala Days · Seattle
+                                        </a>{' '}
+                                        - June 5-7, 2023
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://leaddev.com/leaddev-london"
+                                            title="LeadDev London"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            LeadDev · London
+                                        </a>{' '}
+                                        - June 27-28, 2023
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://aws.amazon.com/events/summits/new-york/"
+                                            title="AWS Summit NYC"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            AWS Summit NYC · New York
+                                        </a>{' '}
+                                        - July 26, 2023
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.thestrangeloop.com"
+                                            title="Strange Loop"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            Strange Loop · St. Louis, MO
+                                        </a>{' '}
+                                        - September 21-22, 2023
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.gophercon.com/home"
+                                            title="GopherCon 2023"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            GopherCon · San Diego Marina
+                                        </a>{' '}
+                                        - September 26-29, 2023
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://devoxx.be/"
+                                            title="Devoxx Belgium"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            Devoxx · Belgium
+                                        </a>{' '}
+                                        - October 2, 2023
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.cloudexpoasia.com/"
+                                            title="Cloud Expo Asia"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            Cloud Expo Asia · Sigapore
+                                        </a>{' '}
+                                        - Octbober 11-12, 2023
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://reactadvanced.com/"
+                                            title="React Advanced"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            React Advanced · London
+                                        </a>{' '}
+                                        - October 20, 2023
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/"
+                                            title="KubeCon"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            KubeCon · Chicago
+                                        </a>{' '}
+                                        - November 6-9, 2023
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://reinvent.awsevents.com/"
+                                            title="AWS: ReInvent"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.body}
+                                            data-button-type="cta"
+                                        >
+                                            AWS: ReInvent · Las Vegas
+                                        </a>{' '}
+                                        - November 27-30, 2023
                                     </li>
                                 </ul>
                             </div>

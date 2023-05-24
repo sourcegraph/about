@@ -48,7 +48,7 @@ export const ThreeUpText: FunctionComponent<ThreeUpText> = ({
     fullWidthTitle = false,
     wrapperClassName = '',
 }) => (
-    <div className={classNames('sm:text-center', className)}>
+    <div className={classNames('px-sm text-center', className)}>
         {title && (
             <h2
                 className={classNames('md:text-center', {

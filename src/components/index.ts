@@ -31,6 +31,10 @@ export { Video } from './Video'
 export { YouTube } from './YouTube'
 export { Tooltip } from './Tooltip'
 
+export { AuthenticateModalContent } from './AuthenticateModalContent'
+export { ExternalsAuth } from './cta/ExternalsAuth'
+export { EmailAuth } from './cta/EmailAuth'
+
 // Carousels
 export { CustomCarousel, TabCarousel, QuoteCarousel } from './Carousels'
 

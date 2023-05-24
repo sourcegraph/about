@@ -3,10 +3,9 @@ import React, { useCallback, useRef, useState } from 'react'
 import classNames from 'classnames'
 import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
 
-const VIDEOS: Record<
-    'cody-demo-202303',
-    { poster: string; mp4: string; webm: string; dimensions: number }
-> = {
+import { getEventLogger } from '../hooks/eventLogger'
+
+const VIDEOS: Record<'cody-demo-202303', { poster: string; mp4: string; webm: string; dimensions: number }> = {
     'cody-demo-202303': {
         poster: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-demo-202303-poster-2.png',
         // track: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/',
@@ -31,6 +30,7 @@ export const DemoVideo: React.FunctionComponent<{
     }, [])
 
     const videoInfo = VIDEOS[video]
+    const title = 'Sourcegraph Cody demo video'
 
     return isShowing || !splash ? (
         // eslint-disable-next-line jsx-a11y/media-has-caption
@@ -39,7 +39,7 @@ export const DemoVideo: React.FunctionComponent<{
             autoPlay={isShowing}
             playsInline={true}
             controls={true}
-            title="Sourcegraph demo video"
+            title={title}
             // Required for cross-origin caption track to work
             crossOrigin="anonymous"
             data-cookieconsent="ignore"
@@ -47,6 +47,7 @@ export const DemoVideo: React.FunctionComponent<{
             ref={videoRef}
             // eslint-disable-next-line react/forbid-dom-props
             style={{ aspectRatio: videoInfo.dimensions }}
+            onPlay={() => getEventLogger().log('StaticVideoPlayed', { title }, { title })}
         >
             <source type="video/webm" src={videoInfo.webm} data-cookieconsent="ignore" />
             <source type="video/mp4" src={videoInfo.mp4} data-cookieconsent="ignore" />

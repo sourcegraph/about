@@ -103,7 +103,7 @@ export const IntegrationsSection: FunctionComponent = () => (
 
         <div className="grid grid-cols-1 gap-md lg:grid-cols-2">
             <div className="flex flex-col gap-y-6">
-                <Heading size="h4" as="h3" className='!font-semibold !text-[20px] !leading-7'>
+                <Heading size="h4" as="h3" className="!text-[20px] !font-semibold !leading-7">
                     All your repositories + 2M open source (and counting)
                 </Heading>
 
@@ -121,7 +121,7 @@ export const IntegrationsSection: FunctionComponent = () => (
             </div>
 
             <div className="flex flex-col gap-y-6">
-                <Heading size="h4" as="h3" className='!font-semibold !text-[20px] !leading-7'>
+                <Heading size="h4" as="h3" className="!text-[20px] !font-semibold !leading-7">
                     All your languages
                 </Heading>
 
@@ -139,7 +139,7 @@ export const IntegrationsSection: FunctionComponent = () => (
             </div>
 
             <div className="flex flex-col gap-y-6">
-                <Heading size="h4" as="h3" className='!font-semibold !text-[20px] !leading-7'>
+                <Heading size="h4" as="h3" className="!text-[20px] !font-semibold !leading-7">
                     All your tools
                 </Heading>
 
@@ -157,7 +157,7 @@ export const IntegrationsSection: FunctionComponent = () => (
             </div>
 
             <div className="flex flex-col gap-y-6">
-                <Heading size="h4" as="h3" className='!font-semibold !text-[20px] !leading-7'>
+                <Heading size="h4" as="h3" className="!text-[20px] !font-semibold !leading-7">
                     Deployment options
                 </Heading>
 

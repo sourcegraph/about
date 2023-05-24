@@ -20,7 +20,7 @@ export const DownloadAppCallToActionSection: FunctionComponent<StarshipPageCallT
     description = 'Sourcegraph makes it easy to read, write, and fix code—even in big, complex codebases.',
     buttonText = 'Download Sourcegraph',
     colorTheme,
-    href
+    href,
 }) => (
     <div
         className={classNames(
