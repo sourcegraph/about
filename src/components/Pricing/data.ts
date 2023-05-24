@@ -315,7 +315,7 @@ const CIP_FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'A secure, robust GraphQL API for your repository and code data.',
     },
     cody: {
-        label: 'Cody (experimental)',
+        label: 'Cody (beta)',
         description: 'A code-aware, AI programming assistant.',
     },
     own: {
