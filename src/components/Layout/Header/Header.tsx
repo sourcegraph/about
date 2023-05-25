@@ -6,12 +6,10 @@ import classNames from 'classnames'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
+import { useAuthModal } from '../../../context/AuthModalContext'
 import { buttonLocation } from '../../../data/tracking'
-import { logAuthPopoverEvent } from '../../../util'
-import { AuthenticateModalContent } from '../../AuthenticateModalContent'
 import { Banner } from '../../Banner'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
-import { Modal } from '../../modal'
 
 import { NavItems } from './NavItems'
 
@@ -130,17 +128,11 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
     source,
     ...props
 }) => {
+    const { openModal } = useAuthModal()
+
+    const handleOpenModal = (): void => openModal(source)
     const dark = colorTheme === 'dark' || colorTheme === 'purple'
     const classes = HEADER_CONTENT_THEME_CLASS[colorTheme]
-    const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false)
-    const openModal = (): void => {
-        setIsSignUpModalOpen(true)
-        logAuthPopoverEvent(source)
-    }
-
-    const closeModal = (): void => {
-        setIsSignUpModalOpen(false)
-    }
 
     const callToAction = (
         <>
@@ -160,7 +152,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                     dark ? 'btn-inverted-primary' : 'btn-primary'
                 )}
                 title="Download Sourcegraph"
-                onClick={openModal}
+                onClick={handleOpenModal}
             >
                 Get Cody for free
             </button>
@@ -258,9 +250,6 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                     <div className="ml-3 !mt-2 flex flex-col items-start space-y-4">{callToAction}</div>
                 </div>
             </Disclosure.Panel>
-            <Modal open={isSignUpModalOpen} handleClose={closeModal}>
-                <AuthenticateModalContent source={source} />
-            </Modal>
         </>
     )
 }

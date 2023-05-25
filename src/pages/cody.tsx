@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from 'react'
+import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
@@ -9,8 +9,6 @@ import {
     Heading,
     Layout,
     PlayButton,
-    Modal,
-    AuthenticateModalContent,
     ExternalsAuth,
     EmailAuth,
     Badge,
@@ -18,7 +16,7 @@ import {
 } from '../components'
 import { DemoVideo } from '../components/DemoVideo'
 import { TwitterEmbed } from '../components/EmbedTweet'
-import { logAuthPopoverEvent } from '../util'
+import { useAuthModal } from '../context/AuthModalContext'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
 
@@ -89,15 +87,9 @@ const codyFeatures2 = [
 ]
 
 const CodyPage: FunctionComponent = () => {
-    const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false)
-    const openModal = (): void => {
-        setIsSignUpModalOpen(true)
-        logAuthPopoverEvent('cody')
-    }
+    const { openModal } = useAuthModal()
 
-    const closeModal = (): void => {
-        setIsSignUpModalOpen(false)
-    }
+    const handleOpenModal = (): void => openModal('cody')
 
     return (
         <Layout
@@ -185,7 +177,10 @@ const CodyPage: FunctionComponent = () => {
                 <div className="mt-16 flex flex-col gap-6 text-[24px] font-semibold text-white">
                     <div className="flex flex-col gap-6 md:flex-row">
                         {/* TODO: Add link to web ui */}
-                        <Link href="" className="cody-platforms-bg-gradient w-full border border-white/[.04] py-6 text-white">
+                        <Link
+                            href=""
+                            className="cody-platforms-bg-gradient w-full border border-white/[.04] py-6 text-white"
+                        >
                             Sourcegraph Web UI
                         </Link>{' '}
                         <Link
@@ -196,15 +191,31 @@ const CodyPage: FunctionComponent = () => {
                         </Link>
                     </div>
                     <div className="flex flex-col gap-6 md:flex-row">
-                        <div className="w-full select-none border border-dashed border-white/[.15] py-6 text-white">
+                        <button
+                            type="button"
+                            onClick={handleOpenModal}
+                            className="w-full select-none border border-dashed border-white/[.15] py-6 text-white"
+                        >
                             Sourcegraph app
                             <Badge className="ml-2" size="small" text="Coming soon!" color="light-gray" />
-                        </div>
-                        <div className="w-full select-none border border-dashed border-white/[.15] py-6 text-white">
+                        </button>
+                        <button
+                            type="button"
+                            onClick={handleOpenModal}
+                            className="w-full select-none border border-dashed border-white/[.15] py-6 text-white"
+                        >
                             IntelliJ extension
                             <Badge className="ml-2" size="small" text="Coming soon!" color="light-gray" />
-                        </div>
+                        </button>
                     </div>
+
+                    <button
+                        type="button"
+                        onClick={handleOpenModal}
+                        className="cody-text-gradient w-fit self-center bg-clip-text text-lg text-transparent"
+                    >
+                        Sign up to get started <ChevronRightIcon className="ml-1 inline text-vermillion-300" />
+                    </button>
                 </div>
             </ContentSection>
 
@@ -212,7 +223,7 @@ const CodyPage: FunctionComponent = () => {
                 parentClassName="!pb-0 !pt-16 md:!pt-[152px]"
                 className="mx-auto flex flex-col items-center gap-y-8 gap-x-[83px] text-center md:!mt-2 md:flex-row md:items-start"
             >
-                <div className="border-t border-gray-500 pt-6 text-left md:pt-12">
+                <div className="border-t border-gray-500 pt-12 text-left">
                     <Heading size="h2" className="!text-[36px] text-white">
                         Codebase-aware intelligence
                     </Heading>
@@ -222,7 +233,7 @@ const CodyPage: FunctionComponent = () => {
                         documentation inside your organization to do just that.
                     </p>
                     <Link
-                        href="docs.sourcegraph.com"
+                        href="https://docs.sourcegraph.com/cody"
                         className="inline-flex items-center whitespace-nowrap font-semibold text-white"
                         title="See the Cody docs"
                     >
@@ -230,7 +241,7 @@ const CodyPage: FunctionComponent = () => {
                     </Link>
                 </div>
 
-                <div className="h-fit max-w-[625px] md:w-[50%] md:min-w-[450px] overflow-hidden rounded-lg bg-violet-750 drop-shadow-xl">
+                <div className="h-fit max-w-[625px] overflow-hidden rounded-lg bg-violet-750 drop-shadow-xl md:w-[50%] md:min-w-[450px]">
                     <video
                         className="sg-video-border-gradient w-full rounded-lg border-8"
                         autoPlay={true}
@@ -250,7 +261,7 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection parentClassName="!py-0" className="mt-16">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-14 justify-center">
+                <div className="grid grid-cols-1 justify-center gap-x-6 gap-y-14 sm:grid-cols-2 md:grid-cols-3">
                     {codyFeatures1.map(item => (
                         <div key={item.heading} className="sm:max-w-[410px]">
                             <Heading size="h4" className="text-white">
@@ -266,7 +277,7 @@ const CodyPage: FunctionComponent = () => {
                 parentClassName="!pb-0 !pt-16"
                 className="mx-auto flex flex-col items-center gap-y-8 gap-x-[83px] text-center md:!mt-2 md:flex-row md:items-start"
             >
-                <div className="border-t border-gray-500 pt-6 text-left md:pt-12">
+                <div className="border-t border-gray-500 pt-12 text-left">
                     <Heading size="h2" className="!text-[36px] text-white">
                         AI-generated code
                     </Heading>
@@ -278,7 +289,7 @@ const CodyPage: FunctionComponent = () => {
                     </p>
                 </div>
 
-                <div className="h-fit max-w-[625px] md:w-[50%] md:min-w-[450px] overflow-hidden rounded-lg bg-violet-750 drop-shadow-xl">
+                <div className="h-fit max-w-[625px] overflow-hidden rounded-lg bg-violet-750 drop-shadow-xl md:w-[50%] md:min-w-[450px]">
                     <video
                         className="sg-video-border-gradient w-full rounded-lg border-8"
                         autoPlay={true}
@@ -298,7 +309,7 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection parentClassName="!py-0" className="mt-16">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-14 justify-center">
+                <div className="grid grid-cols-1 justify-center gap-x-6 gap-y-14 sm:grid-cols-2 md:grid-cols-3">
                     {codyFeatures2.map(item => (
                         <div key={item.heading} className="md:max-w-[410px]">
                             <Heading size="h4" className="text-white">
@@ -315,7 +326,7 @@ const CodyPage: FunctionComponent = () => {
                 parentClassName="!py-0 !pt-20 md:!pt-[188px]"
                 className="cody-contact-form-wrapper rounded-lg"
             >
-                <div className="flex flex-col gap-6 py-16 pl-8 pr-8 md:flex-row md:py-[96px] md:pl-[80px]">
+                <div className="flex flex-col gap-6 py-16 px-6 md:flex-row md:px-8 md:py-[96px] md:pl-[80px]">
                     <div className="max-w-[614px]">
                         <Heading size="h2" className="!text-[36px] text-white">
                             Get Cody{' '}
@@ -416,9 +427,6 @@ const CodyPage: FunctionComponent = () => {
                     </Link>
                 </div>
             </ContentSection>
-            <Modal open={isSignUpModalOpen} handleClose={closeModal}>
-                <AuthenticateModalContent source="cody" />
-            </Modal>
         </Layout>
     )
 }

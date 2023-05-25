@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactNode, useState } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
@@ -12,16 +12,14 @@ import {
     CustomerLogos,
     Heading,
     Badge,
-    Modal,
-    AuthenticateModalContent,
     ExternalsAuth,
     EmailAuth,
 } from '../components'
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
 import { DownloadLink } from '../components/DownloadLink'
+import { useAuthModal } from '../context/AuthModalContext'
 import { buttonLocation } from '../data/tracking'
 import { getEventLogger } from '../hooks/eventLogger'
-import { logAuthPopoverEvent } from '../util'
 
 interface TestimonyProps {
     thumbnail: string
@@ -97,15 +95,10 @@ const features = [
 ]
 
 const Home: FunctionComponent = () => {
-    const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false)
-    const openModal = (): void => {
-        setIsSignUpModalOpen(true)
-        logAuthPopoverEvent('about-home')
-    }
+    const { openModal } = useAuthModal()
 
-    const closeModal = (): void => {
-        setIsSignUpModalOpen(false)
-    }
+    const handleOpenModal = (): void => openModal('about-home')
+
     return (
         <Layout
             meta={{
@@ -243,7 +236,7 @@ const Home: FunctionComponent = () => {
                         </p>
                         <button
                             type="button"
-                            onClick={openModal}
+                            onClick={handleOpenModal}
                             title="Get started with Cody"
                             className="btn btn-inverted-primary mt-8 px-4 shadow-btn"
                         >
@@ -278,9 +271,6 @@ const Home: FunctionComponent = () => {
                     </div>
                 </div>
             </ContentSection>
-            <Modal open={isSignUpModalOpen} handleClose={closeModal}>
-                <AuthenticateModalContent source="about-home" />
-            </Modal>
         </Layout>
     )
 }
