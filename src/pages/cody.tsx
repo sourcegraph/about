@@ -178,12 +178,14 @@ const CodyPage: FunctionComponent = () => {
                     <div className="flex flex-col gap-6 md:flex-row">
                         {/* TODO: Add link to web ui */}
                         <Link
-                            href=""
+                            target='_blank'
+                            href="https://sourcegraph.com/cody"
                             className="cody-platforms-bg-gradient w-full border border-white/[.04] py-6 text-white"
                         >
                             Sourcegraph Web UI
                         </Link>{' '}
                         <Link
+                            target='_blank'
                             href="https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai"
                             className="cody-platforms-bg-gradient w-full border border-white/[.04] py-6 text-white"
                         >
