@@ -3,7 +3,7 @@ layout: markdown
 title: Terms of Service for Sourcegraph Premium Support
 ---
 
-Last Modified: May 5, 2023
+Last Modified: May 25, 2023
 
 This document outlines the basic terms and conditions that apply to Sourcegraph's Premium Support Offerings.
 
@@ -26,3 +26,4 @@ Each Premium Support Package is priced independently. For pricing, please discus
 - Package 1: Premium SLAs
 - Package 2: Dedicated Support (note - purchasing <em>Package 2: Dedicated Support</em> comes with <em>Package 3: Slack Support</em>)
 - Package 3: Slack Support
+- Package 4: Slack Account Management
