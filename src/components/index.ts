@@ -36,7 +36,7 @@ export { ExternalsAuth } from './cta/ExternalsAuth'
 export { EmailAuth } from './cta/EmailAuth'
 
 // Carousels
-export { CustomCarousel, TabCarousel, QuoteCarousel } from './Carousels'
+export { CustomCarousel, TabCarousel, QuoteCarousel, VideoCarousel } from './Carousels'
 
 // Case Studies
 export {

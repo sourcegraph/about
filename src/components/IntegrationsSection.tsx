@@ -1,6 +1,6 @@
 import { FunctionComponent, ReactNode } from 'react'
 
-import { buttonStyle, buttonLocation } from '../data/tracking'
+import Link from 'next/link'
 
 import { Badge, ContentSection, Heading } from '.'
 
@@ -82,12 +82,13 @@ const tools: string[] = [
     'SonarQube',
 ]
 
-const selfHostedOptions: string[] = [
+const deploymentOptions: string[] = [
     'Kubernetes cluster',
     'Amazon EKS or EC2',
     'Google GKE',
     'Microsoft Azure AKS',
     'Docker Compose',
+    'Docker Compose in GCP',
 ]
 
 const renderListItems = (items: string[]): ReactNode =>
@@ -102,94 +103,57 @@ export const IntegrationsSection: FunctionComponent = () => (
         <h2 className="mb-12">Works with your code, infrastructure, and tools</h2>
 
         <div className="grid grid-cols-1 gap-md lg:grid-cols-2">
-            <div className="flex flex-col gap-y-6">
-                <Heading size="h4" as="h3" className="!text-[20px] !font-semibold !leading-7">
+            <div className="flex flex-col">
+                <Heading size="h4" as="h3" className="mb-6 !text-[20px] !font-semibold !leading-7">
                     All your repositories + 2M open source (and counting)
                 </Heading>
 
                 <ul className="ml-0 flex list-none flex-wrap gap-2 lg:max-w-lg">{renderListItems(codeHosts)}</ul>
-                <a
-                    href="mailto:feedback@sourcegraph.com"
-                    title="Have a repository not covered here?"
-                    className="text-lg font-normal text-violet-500 underline"
-                    data-button-style={buttonStyle.text}
-                    data-button-location={buttonLocation.body}
-                    data-button-type="cta"
-                >
-                    Have a repository not covered here?
-                </a>
+                <Link href="mailto:feedback@sourcegraph.com" className="mt-2">
+                    <Badge
+                        text="Request one"
+                        size="small"
+                        className="w-fit hover:bg-violet-100 hover:text-violet-600"
+                    />
+                </Link>
             </div>
 
-            <div className="flex flex-col gap-y-6">
-                <Heading size="h4" as="h3" className="!text-[20px] !font-semibold !leading-7">
+            <div className="flex flex-col">
+                <Heading size="h4" as="h3" className="mb-6 !text-[20px] !font-semibold !leading-7">
                     All your languages
                 </Heading>
 
                 <ul className="ml-0 flex list-none flex-wrap gap-2 lg:max-w-xl">{renderListItems(languages)}</ul>
-                <a
-                    href="mailto:feedback@sourcegraph.com"
-                    title="Need a different language?"
-                    className="text-lg font-normal text-violet-500 underline"
-                    data-button-style={buttonStyle.text}
-                    data-button-location={buttonLocation.body}
-                    data-button-type="cta"
-                >
-                    Need a different language?
-                </a>
+                <Link href="mailto:feedback@sourcegraph.com" className="mt-2">
+                    <Badge
+                        text="Request one"
+                        size="small"
+                        className="w-fit hover:bg-violet-100 hover:text-violet-600"
+                    />
+                </Link>
             </div>
 
-            <div className="flex flex-col gap-y-6">
-                <Heading size="h4" as="h3" className="!text-[20px] !font-semibold !leading-7">
+            <div className="flex flex-col">
+                <Heading size="h4" as="h3" className="mb-6 !text-[20px] !font-semibold !leading-7">
                     All your tools
                 </Heading>
 
                 <ul className="ml-0 flex list-none flex-wrap gap-2 lg:max-w-md">{renderListItems(tools)}</ul>
-                <a
-                    href="https://docs.sourcegraph.com/integration"
-                    title="See all integrations"
-                    className="text-lg font-normal text-violet-500 underline"
-                    data-button-style={buttonStyle.text}
-                    data-button-location={buttonLocation.body}
-                    data-button-type="cta"
-                >
-                    See all integrations
-                </a>
+                <Link href="https://docs.sourcegraph.com/integration" target="_blank" className="mt-2">
+                    <Badge text="See more" size="small" className="w-fit hover:bg-violet-100 hover:text-violet-600" />
+                </Link>
             </div>
 
-            <div className="flex flex-col gap-y-6">
-                <Heading size="h4" as="h3" className="!text-[20px] !font-semibold !leading-7">
+            <div className="flex flex-col">
+                <Heading size="h4" as="h3" className="mb-6 !text-[20px] !font-semibold !leading-7">
                     Deployment options
                 </Heading>
-
-                <ul className="ml-0 list-none">
-                    <li className="list-inline-item text-wrap">
-                        <Heading size="h5" as="h4" className="text-base !font-normal">
-                            Self-hosted by you:
-                        </Heading>
-                        <ul className="m-0 mt-3.5 flex list-none flex-wrap gap-2 lg:max-w-sm">
-                            {renderListItems(selfHostedOptions)}
-                        </ul>
-                    </li>
-
-                    <li className="m-0 list-none">
-                        <Heading size="h5" as="h4" className="mt-3 text-base !font-normal">
-                            Managed and hosted by us:
-                        </Heading>
-                        <ul className="m-0 mt-3 flex list-none flex-wrap gap-2 lg:max-w-sm">
-                            {renderListItems(['Docker Compose in GCP'])}
-                        </ul>
-                    </li>
+                <ul className="ml-0 flex list-none flex-wrap gap-2 lg:max-w-md">
+                    {renderListItems(deploymentOptions)}
                 </ul>
-                <a
-                    href="https://docs.sourcegraph.com/admin/install"
-                    title="Learn about deploying Sourcegraph"
-                    className="text-lg font-normal text-violet-500 underline"
-                    data-button-style={buttonStyle.text}
-                    data-button-location={buttonLocation.body}
-                    data-button-type="cta"
-                >
-                    Learn about deploying Sourcegraph
-                </a>
+                <Link href="https://docs.sourcegraph.com/admin/install" target="_blank" className="mt-2">
+                    <Badge text="Learn more" size="small" className="w-fit hover:bg-violet-100 hover:text-violet-600" />
+                </Link>
             </div>
         </div>
     </ContentSection>
