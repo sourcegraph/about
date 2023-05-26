@@ -20,3 +20,5 @@ Are you interested in terms for...
 - **[Government](/terms/gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you’re using our software as an employee or contractor of the U.S. Government, our [Supplemental Terms for U.S. Government Users](/terms/gov) apply. Those terms and conditions supplement these terms and conditions.
 
 - **[Cody](/terms/cody-notice)**: Terms for Cody.
+
+- **[Professional Services](/terms/professional-services)**: Terms and descriptions for Sourcegraph's Professional Services Offerings.
