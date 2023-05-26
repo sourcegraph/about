@@ -67,7 +67,7 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
         <Link
             href="https://sourcegraph.com/.auth/github/login?pc=https%3A%2F%2Fgithub.com%2F%3A%3Ae917b2b7fa9040e1edd4"
             className={classNames(
-                `btn flex h-12 items-center px-6 text-lg ${
+                `btn flex md:h-12 items-center px-4 md:px-6 md:text-lg ${
                     dark ? 'hover:btn-primary bg-black text-white ' : 'btn-inverted-primary text-black'
                 }`,
                 className
@@ -81,7 +81,7 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
         <Link
             href="https://sourcegraph.com/.auth/gitlab/login?pc=https%3A%2F%2Fgitlab.com%2F%3A%3A262309265ae76179773477bd50c93c7022007a4810c344c69a7371da11949c48"
             className={classNames(
-                `btn flex h-12 items-center px-6 text-lg ${
+                `btn flex md:h-12 items-center px-4 md:px-6 md:text-lg ${
                     dark ? 'sg-gitlab-bg-color hover:btn-primary text-white ' : 'btn-inverted-primary text-black'
                 }`,
                 className
