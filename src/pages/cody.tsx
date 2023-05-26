@@ -190,22 +190,20 @@ const CodyPage: FunctionComponent = () => {
                         </Heading>
                     </div>
                     <div className="flex flex-col gap-6 md:flex-row">
-                        <button
-                            type="button"
-                            onClick={handleOpenModal}
-                            className="w-full select-none border border-dashed border-white/[.15] py-6 text-white"
+                        <Heading
+                            size='h4'
+                            className="w-full border border-dashed border-white/[.15] py-6 text-white"
                         >
                             Sourcegraph app
                             <Badge className="ml-2" size="small" text="Coming soon!" color="light-gray" />
-                        </button>
-                        <button
-                            type="button"
-                            onClick={handleOpenModal}
-                            className="w-full select-none border border-dashed border-white/[.15] py-6 text-white"
+                        </Heading>
+                        <Heading
+                            size='h4'
+                            className="w-full border border-dashed border-white/[.15] py-6 text-white"
                         >
                             IntelliJ extension
                             <Badge className="ml-2" size="small" text="Coming soon!" color="light-gray" />
-                        </button>
+                        </Heading>
                     </div>
 
                     <button
