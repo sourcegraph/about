@@ -111,9 +111,9 @@ const codyFeatures = [
 
 const carouselVideos = [
     {
-        title: 'Code Fixup',
-        description: 'Cody edits and improves code directly using inline instructions.',
-        video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-fixup-may2023.mp4',
+        title: 'Recipes',
+        description: 'Generate unit tests, summarize changes, or create docs with prebuilt recipes.',
+        video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-unit-test-may2023.mp4',
         link: '/cody',
     },
     {
@@ -123,15 +123,15 @@ const carouselVideos = [
         link: '/cody',
     },
     {
-        title: 'Completion',
-        description: 'Cody offers code completions in real time as you code or type comments.',
-        video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-completion-may2023.mp4',
+        title: 'Code Fixup',
+        description: 'Cody edits and improves code directly using inline instructions.',
+        video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-fixup-may2023.mp4',
         link: '/cody',
     },
     {
-        title: 'Recipes',
-        description: 'Generate unit tests, summarize changes, or create docs with prebuilt recipes.',
-        video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-unit-test-may2023.mp4',
+        title: 'Completion',
+        description: 'Cody offers code completions in real time as you code or type comments.',
+        video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-completion-may2023.mp4',
         link: '/cody',
     },
 ]
@@ -364,7 +364,7 @@ const HomeHero: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection className="pb-4" parentClassName="!py-0 px-0 md:px-sm">
+        <ContentSection className="md:pb-4" parentClassName="!py-0 px-0 md:px-sm">
             <div className="sg-home-cta mt-[88px] mb-0 flex flex-col overflow-hidden md:mt-6 md:mb-24 md:flex-row">
                 <div className="flex flex-col justify-center p-4 text-center md:text-start lg:p-8 xl:p-12">
                     <div className="flex w-fit items-center gap-x-2 rounded-[5px] bg-blue-400 py-1 px-[7px]">
