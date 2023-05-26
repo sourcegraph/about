@@ -3,12 +3,17 @@
         margin-right: 0 !important;
     }
 
+    :global(.hs-input),
     :global(.hs-input) {
         background: var(--sg-color-black) !important;
         padding: 14px 16px;
         border: 1px solid var(--sg-color-gray-500);
         border-radius: 5px;
         color: var(--sg-color-white) !important;
+    }
+
+    :global(.hs-input)::selection {
+        background: transparent;
     }
 
     :global(.submitted-message) {
@@ -98,6 +103,10 @@
         color: var(--sg-color-white) !important;
     }
 
+    :global(.hs-input)::placeholder {
+        color: white;
+    }
+
     :global(.submitted-message) {
         color: var(--sg-color-white);
     }
@@ -136,5 +145,13 @@
     :global(a) {
         text-decoration: underline;
         color: var(--sg-color-violet-300);
+    }
+
+    :global(#label-firstname-05e46684-9fbc-4c4d-b010-f661f247c4c6),
+    :global(#label-lastname-05e46684-9fbc-4c4d-b010-f661f247c4c6),
+    :global(#label-email-05e46684-9fbc-4c4d-b010-f661f247c4c6),
+    :global(#label-company-05e46684-9fbc-4c4d-b010-f661f247c4c6),
+    :global(#label-jobtitle-05e46684-9fbc-4c4d-b010-f661f247c4c6) {
+        display: none;
     }
 }

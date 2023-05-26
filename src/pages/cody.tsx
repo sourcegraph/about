@@ -77,12 +77,12 @@ const codyFeatures2 = [
     {
         heading: 'Unit tests',
         description:
-            'Cody writes unit tests for you, saving you time and letting you stay focused on building software. Highlight a code block and trigger the Generate a unit test recipe; Cody will write a unit test ready to be pasted into your code.',
+            'Cody writes unit tests for you, saving you time and letting you stay focused on building software. Highlight a code block and trigger the "Generate a unit test" recipe; Cody will write a unit test ready to be pasted into your code.',
     },
     {
         heading: 'Code completions',
         description:
-            'Cody can suggest code while you code. Start writing code and Cody will suggest the next few lines for you. Choose to accept it, or open the command palette and click Cody: View Suggestions to see various code snippets Cody suggests using. ',
+            'Start writing code or write a comment and Cody will suggest the next few lines for you. Choose to accept it, or open the command palette and click "Cody: View Suggestions" to see various code snippets Cody suggests using.',
     },
 ]
 
@@ -163,7 +163,7 @@ const CodyPage: FunctionComponent = () => {
                     <DemoVideo
                         video="cody-demo-202305"
                         splash={true}
-                        className="mx-auto mt-8 w-full max-w-[804px] rounded-lg bg-violet-750 drop-shadow-2xl"
+                        className="mx-auto mt-8 w-full max-w-[1062px] rounded-lg bg-violet-750 drop-shadow-2xl"
                         splashClassName="rounded-lg"
                         playButton={<PlayButton title="Watch Cody write & fix code" time="4 min" ctaText="Watch now" />}
                     />
@@ -176,21 +176,18 @@ const CodyPage: FunctionComponent = () => {
 
                 <div className="mt-16 flex flex-col gap-6 text-[24px] font-semibold text-white">
                     <div className="flex flex-col gap-6 md:flex-row">
-                        {/* TODO: Add link to web ui */}
-                        <Link
-                            target='_blank'
-                            href="https://sourcegraph.com/cody"
+                        <Heading
+                            size="h4"
                             className="cody-platforms-bg-gradient w-full border border-white/[.04] py-6 text-white"
                         >
                             Sourcegraph Web UI
-                        </Link>{' '}
-                        <Link
-                            target='_blank'
-                            href="https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai"
+                        </Heading>{' '}
+                        <Heading
+                            size="h4"
                             className="cody-platforms-bg-gradient w-full border border-white/[.04] py-6 text-white"
                         >
                             VS Code extension
-                        </Link>
+                        </Heading>
                     </div>
                     <div className="flex flex-col gap-6 md:flex-row">
                         <button
@@ -245,7 +242,7 @@ const CodyPage: FunctionComponent = () => {
 
                 <div className="h-fit max-w-[625px] overflow-hidden rounded-lg bg-violet-750 drop-shadow-xl md:w-[50%] md:min-w-[450px]">
                     <video
-                        className="sg-video-border-gradient w-full rounded-lg border-8"
+                        className="sg-video-border-gradient w-full rounded-lg"
                         autoPlay={true}
                         muted={true}
                         loop={true}
@@ -293,7 +290,7 @@ const CodyPage: FunctionComponent = () => {
 
                 <div className="h-fit max-w-[625px] overflow-hidden rounded-lg bg-violet-750 drop-shadow-xl md:w-[50%] md:min-w-[450px]">
                     <video
-                        className="sg-video-border-gradient w-full rounded-lg border-8"
+                        className="sg-video-border-gradient w-full rounded-lg"
                         autoPlay={true}
                         muted={true}
                         loop={true}
