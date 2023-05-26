@@ -3,12 +3,17 @@
         margin-right: 0 !important;
     }
 
+    :global(.hs-input),
     :global(.hs-input) {
         background: var(--sg-color-black) !important;
         padding: 14px 16px;
         border: 1px solid var(--sg-color-gray-500);
         border-radius: 5px;
         color: var(--sg-color-white) !important;
+    }
+
+    :global(.hs-input)::selection {
+        background: transparent;
     }
 
     :global(.submitted-message) {
@@ -82,5 +87,71 @@
         label {
             display: block;
         }
+    }
+}
+
+.codyForm {
+    :global(.input) {
+        margin-right: 0 !important;
+    }
+
+    :global(.hs-input) {
+        background: rgba(255, 255, 255, 0.1) !important;
+        padding: 14px 16px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 8px;
+        color: var(--sg-color-white) !important;
+    }
+
+    :global(.hs-input)::placeholder {
+        color: white;
+    }
+
+    :global(.submitted-message) {
+        color: var(--sg-color-white);
+    }
+
+    label,
+    :global(.hs-form-booleancheckbox-display) {
+        color: var(--sg-color-gray-50);
+        margin-bottom: 12px;
+    }
+
+    :global(.hs-form-booleancheckbox-display) {
+        display: flex;
+    }
+
+    :global(.hs-button) {
+        background: var(--sg-color-white) !important;
+        border-color: var(--sg-color-white) !important;
+        color: var(--sg-color-violet-500);
+    }
+
+    :global(.hs-button):focus,
+    :global(.hs-button):hover {
+        color: var(--sg-color-white);
+    }
+
+    :global(.submitted-message) {
+        text-align: center;
+    }
+
+    :global(.actions) {
+        margin-bottom: 0px;
+        padding: 0px;
+        margin-top: 9px;
+    }
+
+    :global(a) {
+        text-decoration: underline;
+        color: var(--sg-color-violet-300);
+    }
+
+    :global(#label-firstname-05e46684-9fbc-4c4d-b010-f661f247c4c6),
+    :global(#label-lastname-05e46684-9fbc-4c4d-b010-f661f247c4c6),
+    :global(#label-email-05e46684-9fbc-4c4d-b010-f661f247c4c6),
+    :global(#label-company-05e46684-9fbc-4c4d-b010-f661f247c4c6),
+    :global(#label-jobtitle-05e46684-9fbc-4c4d-b010-f661f247c4c6) {
+        display: none;
     }
 }
