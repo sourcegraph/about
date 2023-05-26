@@ -1,6 +1,6 @@
 ---
 layout: markdown
-title: Table of Contents for Terms of Service for Sourcegraph Professional Services
+title: Terms of Service for Sourcegraph Professional Services
 ---
 
 Last Modified: May 9, 2023
