@@ -43,7 +43,7 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
             containerElement.style.height = `${containerHeight}px`
         }
     }, [currentVideo])
-      
+
     useEffect(() => {
         // Update the height initially
         handleResize()
@@ -145,7 +145,7 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
 
             <div className="flex flex-col-reverse md:flex-col">
                 <div>
-                    <p className="md:mt-4 mb-2 text-center text-xl font-semibold text-white">
+                    <p className="mb-2 text-center text-xl font-semibold text-white md:mt-4">
                         {videos[currentVideo].title}
                     </p>
                     <div className="flex flex-wrap justify-center">
@@ -156,7 +156,7 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
                     </div>
                 </div>
 
-                <div className="mb-6 flex items-center justify-center md:mb-0 mt-6 md:mt-4">
+                <div className="mb-6 mt-6 flex items-center justify-center md:mb-0 md:mt-4">
                     <ChevronLeftIcon
                         className="hidden cursor-pointer text-white opacity-80 hover:opacity-100 md:block"
                         onClick={prevVideo}

@@ -133,7 +133,7 @@ const carouselVideos = [
         description: 'Generate unit tests, summarize changes, or create docs with prebuilt recipes.',
         video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-unit-test-may2023.mp4',
         link: '/cody',
-    }
+    },
 ]
 
 const Home: FunctionComponent = () => (
