@@ -20,6 +20,6 @@ This Professional Services Exhibit (“PSE”) describes the Professional Servic
 
 ### Available Professional Services Offerings
 
-- [Implementation Services](/terms/implementation-services.md) - Dedicated implementation engineering support to design, plan, and execute your production implementation.
-- [Managed Services](/terms/managed-services.md) - Hands-on Sourcegraph management of self-hosted production instances with dedicated experts.
-- [Premium Support](/terms/premium-support.md) - Improved SLAs and assigned support engineers for improved instance management
+- [Implementation Services](/terms/implementation-services) - Dedicated implementation engineering support to design, plan, and execute your production implementation.
+- [Managed Services](/terms/managed-services) - Hands-on Sourcegraph management of self-hosted production instances with dedicated experts.
+- [Premium Support](/terms/premium-support) - Improved SLAs and assigned support engineers for improved instance management
