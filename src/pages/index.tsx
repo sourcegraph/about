@@ -114,25 +114,25 @@ const carouselVideos = [
         title: 'Code Fixup',
         description: 'Cody edits and improves code directly using inline instructions.',
         video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-fixup-may2023.mp4',
-        link: '',
+        link: '/cody',
     },
     {
         title: 'Context-aware chat',
         description: 'Cody can explain what code is doing—at a high level or in detail.',
         video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-web-chat-may2023.mp4',
-        link: '',
+        link: '/cody',
     },
     {
         title: 'Completion',
         description: 'Cody offers code completions in real time as you code or type comments.',
         video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-completion-may2023.mp4',
-        link: '',
+        link: '/cody',
     },
     {
         title: 'Recipes',
         description: 'Generate unit tests, summarize changes, or create docs with prebuilt recipes.',
         video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-unit-test-may2023.mp4',
-        link: '',
+        link: '/cody',
     }
 ]
 
