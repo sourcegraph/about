@@ -1,11 +1,11 @@
 import { FunctionComponent, useEffect, useRef, useState, useCallback, ReactNode } from 'react'
 
 import classNames from 'classnames'
-import { debounce } from 'lodash'
 import ChevronLeftIcon from 'mdi-react/ChevronLeftIcon'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
+import { breakpoints } from '../../data/breakpoints'
 import { useCarousel } from '../../hooks/carousel'
 
 interface Video {
@@ -22,6 +22,7 @@ interface VideosCarouselProps {
 export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }) => {
     const [touchStart, setTouchStart] = useState(0)
     const [touchEnd, setTouchEnd] = useState(0)
+    const [isLargeScreen, setIsLargeScreen] = useState(false)
 
     const carouselHook = useCarousel(
         videos.map(item => item.video),
@@ -34,6 +35,7 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
 
     const handleResize = useCallback(() => {
         // Calculate and set the height of the container based on the aspect ratio of the video
+        setIsLargeScreen(window.innerWidth >= breakpoints.lg)
         const videoElement = videoRefs.current[currentVideo]
         const containerElement = containerRef.current
         if (videoElement && containerElement) {
@@ -43,6 +45,14 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
             containerElement.style.height = `${containerHeight}px`
         }
     }, [currentVideo])
+
+    // Reset the video playback
+    useEffect(() => {
+        const videoElement = videoRefs.current[carouselHook.carouselItems.currentItemIndex ?? 0]
+        if (videoElement) {
+            videoElement.currentTime = 0
+        }
+    }, [carouselHook.carouselItems.currentItemIndex])
 
     useEffect(() => {
         // Update the height initially
@@ -79,21 +89,13 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
         preLoadVideos()
     }, [videos])
 
-    const handleTouchStart = useCallback(
-        () =>
-            debounce((event: React.TouchEvent<HTMLDivElement>) => {
-                setTouchStart(event.targetTouches[0].clientX)
-            }, 200),
-        []
-    )
+    const handleTouchStart = useCallback((event: React.TouchEvent<HTMLDivElement>) => {
+        setTouchStart(event.touches[0].clientX)
+    }, [])
 
-    const handleTouchMove = useCallback(
-        () =>
-            debounce((event: React.TouchEvent<HTMLDivElement>) => {
-                setTouchEnd(event.targetTouches[0].clientX)
-            }, 200),
-        []
-    )
+    const handleTouchMove = useCallback((event: React.TouchEvent<HTMLDivElement>) => {
+        setTouchEnd(event.changedTouches[0].clientX)
+    }, [])
 
     const handleTouchEnd = useCallback(() => {
         if (touchStart - touchEnd > 50) {
@@ -116,9 +118,9 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
     return (
         <div
             className="w-full"
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
+            onTouchStart={isLargeScreen ? undefined : handleTouchStart}
+            onTouchMove={isLargeScreen ? undefined : handleTouchMove}
+            onTouchEnd={isLargeScreen ? undefined : handleTouchEnd}
         >
             <div ref={containerRef}>
                 {videos.map((item, index) => (
@@ -134,7 +136,7 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
                         playsInline={true}
                         controls={false}
                         data-cookieconsent="ignore"
-                        onClick={nextVideo}
+                        onClick={isLargeScreen ? nextVideo : undefined}
                         id="videoPlayer"
                     >
                         <source type="video/webm" src={item.video} data-cookieconsent="ignore" />
@@ -142,7 +144,6 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
                     </video>
                 ))}
             </div>
-
             <div className="flex flex-col-reverse md:flex-col">
                 <div>
                     <p className="mb-2 text-center text-xl font-semibold text-white md:mt-4">
