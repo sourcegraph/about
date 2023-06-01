@@ -158,7 +158,7 @@ These differentiators mean that **no matter what happens in the AI race** and th
 
 <p style={{textAlign: 'center'}}>*Cody* &nbsp; = &nbsp; *Sourcegraph* &nbsp; + &nbsp; *BYOLLM*</p>
 
-I also think that **self-hosted embeddings** are going to be a game-changer, and they should be available for Cody within weeks. You will no longer need to upload your code base to a cloud provider; all your IP assets can be embedded in your own secure environment.
+I also think that **self-hosted embeddings** are going to be a game-changer, and we’re working to make them available for Cody soon. You will no longer need to upload your code base to a cloud provider; all your IP assets can be embedded in your own secure environment.
 
 I hope that was useful! This entire analogy is credit to Greg Wester, our Enterprise Cody PM.
 
