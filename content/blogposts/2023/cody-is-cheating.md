@@ -131,7 +131,7 @@ In a little bit, I’ll dive into more technical detail. But first, let’s comp
 
 In the glossy marketing brochures, **GitHub looks like they have the same moat** as Sourcegraph. But let’s break it down for Copilot:
 
-- **Good**: GitHub’s code search has improved by miles and is quite close to Sourcegraph’s search now. It doesn’t scale as well, it causes edge-case headaches for enterprise users, and it still doesn’t have [ranking](https://about.sourcegraph.com/blog/new-search-ranking). But it’s getting admirably close; Bravo, GitHub search team! **We can consider the code-search terms roughly equal**.
+- **Good**: GitHub’s code search has improved by miles. It doesn’t scale as well as Sourcegraph's search, it causes edge-case headaches for enterprise users, and it still doesn’t have [ranking](https://about.sourcegraph.com/blog/new-search-ranking). But it’s getting admirably close; Bravo, GitHub search team!
 
 - **Bad**: GitHub’s code graph for their so-called “precise” code intelligence is basically a [cheap plastic imitation](https://nethackwiki.com/wiki/Cheap_plastic_imitation_of_the_Amulet_of_Yendor) of our [SCIP](https://about.sourcegraph.com/blog/announcing-scip) graph, which is 10 years in the making, compiler/IDE-precise, inspired by Grok, and is already being adopted by other language communities. Whereas StackGraphs are **cursed -5 Sauce of the Weak**. I will provide *significantly* more documentation comparing the two within a month or so, if all goes well. Soon!
 
