@@ -363,45 +363,6 @@ const HomeHero: FunctionComponent = () => (
                 ))}
             </div>
         </ContentSection>
-
-        <ContentSection className="md:pb-4" parentClassName="!py-0 px-0 md:px-sm">
-            <div className="sg-home-cta mt-[88px] mb-0 flex flex-col overflow-hidden md:mt-6 md:mb-24 md:flex-row">
-                <div className="flex flex-col justify-center p-4 text-center md:text-start lg:p-8 xl:p-12">
-                    <div className="flex w-fit items-center gap-x-2 rounded-[5px] bg-blue-400 py-1 px-[7px]">
-                        <img src="/home/cody-icon.svg" alt="Cody Icon" className="h-[17px] w-[17px]" />
-                        <p className="text-blue-600 mb-0 text-[12px] font-semibold leading-[21px]">
-                            Cody is coming to the app June 2023
-                        </p>
-                    </div>
-                    <Heading className="my-4 !text-4xl text-white" size="h2">
-                        Download the Sourcegraph app
-                    </Heading>
-                    <p className="mb-4 text-lg text-gray-200 md:max-w-[614px]">
-                        Find, fix, & navigate code with the free Sourcegraph app. The app includes code search and
-                        navigation, plus Code Insights and Batch Changes for your local code.
-                    </p>
-                    <div className="flex flex-col items-center gap-4 md:flex-row">
-                        <Link href="/get-started" title="Download the app" className="btn btn-inverted-primary mt-1">
-                            Download the app
-                        </Link>
-                        <Link
-                            href="/get-started?t=enterprise"
-                            title="Sourcegraph for enterprise"
-                            className="btn flex bg-transparent p-0 text-white"
-                        >
-                            Sourcegraph for enterprise <ChevronRightIcon className="!mb-0 inline" />
-                        </Link>
-                    </div>
-                </div>
-                <div aria-hidden={true} className="flex justify-center">
-                    <img
-                        className="relative -right-[50px] sm:right-0"
-                        src="/home/app-illustration.png"
-                        alt="App Illustration"
-                    />
-                </div>
-            </div>
-        </ContentSection>
     </>
 )
 
