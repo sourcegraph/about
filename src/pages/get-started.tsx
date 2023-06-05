@@ -49,8 +49,7 @@ const GetStartedPage: FunctionComponent = () => {
         <Layout
             meta={{
                 title: 'Install the Cody app',
-                description:
-                    'Connect your code with Cody in minutes.',
+                description: 'Connect your code with Cody in minutes.',
             }}
             headerColorTheme="white"
         >
@@ -68,7 +67,8 @@ const GetStartedPage: FunctionComponent = () => {
                                     <div className="hidden items-center md:flex">
                                         <div className="flex-col gap-y-2">
                                             <Heading size="h4">
-                                                Install the app <Badge text="Experimental" size="small" color="blurple" />
+                                                Install the app{' '}
+                                                <Badge text="Experimental" size="small" color="blurple" />
                                             </Heading>
                                             <p
                                                 className={classNames(
@@ -155,7 +155,8 @@ const InterstitialAppContent: FunctionComponent = () => (
         </Heading>
         <div className="mt-4 flex flex-col justify-between gap-x-4 gap-y-[10px] md:flex-row md:items-end">
             <p className="mb-0 max-w-[590px] text-lg text-gray-500">
-                Install the app to connect your code with Cody quickly and easily. Cody answers code questions and writes code for you by reading your entire codebase and the code graph. 
+                Install the app to connect your code with Cody quickly and easily. Cody answers code questions and
+                writes code for you by reading your entire codebase and the code graph.
             </p>
             <Link
                 href="/app"
@@ -182,7 +183,6 @@ const InterstitialAppContent: FunctionComponent = () => (
                 Download for Mac <Badge text="Experimental" size="small" color="blurple" />
             </DownloadLink>
 
-        
             {/* Windows */}
             <div className="mt-12 flex flex-row items-center gap-x-3">
                 <MicrosoftWindowsIcon />
