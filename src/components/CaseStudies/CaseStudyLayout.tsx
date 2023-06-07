@@ -1,9 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import { kebabCase } from 'lodash'
-
 import { ContentSection, CallToActionContentSection } from '..'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
+import { kebabCase } from '../../lib/utils'
 
 import { CaseStudyJumbotron } from './CaseStudyJumbotron'
 import styles from './CaseStudyLayout.module.css'

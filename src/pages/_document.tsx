@@ -1,5 +1,4 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
-import Script from 'next/script'
 
 export default class MyDocument extends Document {
     public override render(): JSX.Element {
@@ -43,10 +42,9 @@ export default class MyDocument extends Document {
                     />
 
                     {/* Google structured data. */}
-                    <Script
+                    <script
                         id="structured_data"
                         type="application/ld+json"
-                        strategy="beforeInteractive"
                         dangerouslySetInnerHTML={{
                             __html: JSON.stringify({
                                 '@context': 'https://schema.org',
@@ -59,77 +57,77 @@ export default class MyDocument extends Document {
 
                     {/* Cookiebot */}
                     {/* Cookiebot recommends this in the head, which aligns with Next.js' recommendation for CCMs */}
-                    <Script
+                    <script
                         id="script-cookiebot"
                         src="https://consent.cookiebot.com/uc.js"
                         data-cbid="fb31dc3e-afb3-4be8-ae84-7090bba7797d"
                         data-blockingmode="auto"
-                        type="text/javascript"
-                        strategy="beforeInteractive"
+                        async={true}
+                        defer={true}
                     />
 
                     {/* GTM Data Layer */}
                     {/* Google recommends this in the head, but Next.js recommends afterInteractive */}
                     {/* Note: Deprecate gtag UA config when we've migrated to GA4 */}
-                    <Script id="script-gtm-data-layer" data-cookieconsent="ignore" strategy="afterInteractive">
-                        {`
-                        window.dataLayer = window.dataLayer || [];
-                        
-                        function gtag() {
-                            dataLayer.push(arguments);
-                        }
-                        
-                        gtag("consent", "default", {
-                            ad_storage: "denied",
-                            analytics_storage: "denied",
-                            wait_for_update: 500,
-                        });
-                        
-                        gtag("set", "ads_data_redaction", true);
-                        
-                        gtag('js', new Date());
-                        gtag('config', 'UA-40540747-17');
-                    `}
-                    </Script>
+                    <script
+                        id="script-gtm-data-layer"
+                        data-cookieconsent="ignore"
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag() {
+                                    dataLayer.push(arguments);
+                                }
+                                gtag("consent", "default", {
+                                    ad_storage: "denied",
+                                    analytics_storage: "denied",
+                                    wait_for_update: 500,
+                                });
+                                gtag("set", "ads_data_redaction", true);
+                                gtag('js', new Date());
+                                gtag('config', 'UA-40540747-17');
+                            `,
+                        }}
+                    />
 
                     {/* Google Tag Manager */}
                     {/* Google recommends this in the head, but Next.js recommends afterInteractive */}
-                    <Script id="script-gtm" data-cookieconsent="ignore" strategy="afterInteractive" async={true} defer={true}>
-                        {`
-                            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                            })(window,document,'script','dataLayer','GTM-TB4NLS7');  
-                        `}
-                    </Script>
+                    <script
+                        id="script-gtm"
+                        data-cookieconsent="ignore"
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async={true}=true;j.src=
+                                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                                })(window,document,'script','dataLayer','GTM-TB4NLS7');
+                            `,
+                        }}
+                        async={true}
+                        defer={true}
+                    />
 
                     {/* Plausible Analytics (GA Alternative) */}
-                    {/* Plausible recommends this in the head, but Next.js recommends afterInteractive */}
-                    <Script
+                    <script
                         id="script-plausible"
                         data-domain="about.sourcegraph.com"
                         src="https://plausible.io/js/plausible.js"
-                        strategy="afterInteractive"
+                        async={true}
+                        defer={true}
                     />
 
                     {/* Triblio "Webpage Personalization" */}
-                    {/* Triblio recommends this in the head which we follow with beforeInteractive */}
-                    <Script
+                    <script
                         id="script-triblio-personalization"
-                        type="text/javascript"
                         src="https://tribl.io/h.js?orgId=Yee6bMKj7QSARqAePdE8"
                         async={true}
-                        strategy="beforeInteractive"
                     />
 
                     {/* Triblio "Analytics and Overlay Cards" */}
-                    {/* Triblio recommends this in the body which aligns with Next.js' recommendation for analytics */}
-                    <Script
+                    <script
                         id="script-triblio-analytics"
-                        type="text/javascript"
                         src="https://tribl.io/footer.js?orgId=Yee6bMKj7QSARqAePdE8"
-                        strategy="afterInteractive"
                         defer={true}
                     />
                 </Head>
@@ -150,7 +148,7 @@ export default class MyDocument extends Document {
                     <NextScript />
 
                     {/* Load Cookiebot asynchronously after the page has rendered */}
-                    <Script id="script-cookiebot-after" strategy="afterInteractive" async={true} defer={true}>
+                    <script id="script-cookiebot-after" async={true} defer={true}>
                         {`
                             function loadCookiebot() {
                                 var cb = function() {
@@ -168,7 +166,7 @@ export default class MyDocument extends Document {
                                 window.addEventListener('load', loadCookiebot);
                             }
                         `}
-                    </Script>
+                    </script>
                 </body>
             </Html>
         )
