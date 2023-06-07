@@ -34,7 +34,7 @@ interface LayoutProps {
 
 export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, className, ...props }) => {
     const navRef = useRef<HTMLElement>(null)
-    const [navOffsetY, setNavOffsetY] = useState(0)
+    const [contentOffsetY, setContentOffsetY] = useState(0)
     const router = useRouter()
     const { pathname, asPath } = router
 
@@ -70,7 +70,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
     useEffect(() => {
         if (navRef.current) {
             const navHeight = navRef.current.getBoundingClientRect().height || 116
-            setNavOffsetY(navHeight)
+            setContentOffsetY(navHeight)
         }
     }, [])
 
@@ -126,7 +126,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
                 <div
                     className={classNames(props.heroAndHeaderClassName, 'pt-[147px] md:pt-[116px]')}
                     // eslint-disable-next-line react/forbid-dom-props
-                    style={{ paddingTop: navOffsetY !== 0 ? navOffsetY : undefined }}
+                    style={{ paddingTop: contentOffsetY !== 0 ? contentOffsetY : undefined }}
                 >
                     <Header minimal={props.minimal} colorTheme={headerColorTheme || 'white'} navRef={navRef} />
 

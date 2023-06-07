@@ -24,7 +24,6 @@ interface Props {
 export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }) => {
     const [lastScrollPosition, setLastScrollPosition] = useState<number>(0)
     const [sticky, setSticky] = useState<boolean>(false)
-    const [contentOffsetY, setContentOffsetY] = useState(116)
     const router = useRouter()
     const { pathname } = router
 

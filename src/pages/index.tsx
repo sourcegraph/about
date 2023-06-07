@@ -343,8 +343,18 @@ const HomeHero: FunctionComponent = () => (
                 bases.
             </Heading>
 
-            <img loading="lazy" alt="Home Illustartion" src="/home/home-illustration.svg" className="mx-auto hidden py-6 md:block md:w-[859px] lg:w-[1005px] h-[465px]" />
-            <img loading="lazy" alt="Home Illustartion" src="/home/home-illustration-mobile.svg" className="mx-auto py-6 md:hidden w-fit h-[285px]" />
+            <img
+                loading="lazy"
+                alt="Home Illustartion"
+                src="/home/home-illustration.svg"
+                className="mx-auto hidden h-[465px] py-6 md:block md:w-[859px] lg:w-[1005px]"
+            />
+            <img
+                loading="lazy"
+                alt="Home Illustartion"
+                src="/home/home-illustration-mobile.svg"
+                className="mx-auto h-[285px] w-fit py-6 md:hidden"
+            />
 
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 md:justify-start">
                 {codyFeatures.map(item => (
@@ -365,7 +375,7 @@ const HomeHero: FunctionComponent = () => (
 
 const Testimony: FunctionComponent<TestimonyProps> = ({ thumbnail, content, about, github }) => (
     <div className="flex items-start rounded-lg border px-8 py-12 leading-7 md:p-12">
-        <img className="col-span-1 mr-6 w-[40px] h-[40px]" src={thumbnail} alt={about} loading="lazy" />
+        <img className="col-span-1 mr-6 h-[40px] w-[40px]" src={thumbnail} alt={about} loading="lazy" />
         <div className="col-span-6">
             <div>{content}</div>
             <div className="mb-4 text-base text-gray-400"> - {about}</div>

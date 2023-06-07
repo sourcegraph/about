@@ -109,7 +109,7 @@ export const getAllPublishedBlogPosts = async (): Promise<BlogPost[] | null> => 
         allSlugs.map(async (slug): Promise<BlogPost> => {
             const filePath = files.records[slug.slugPath].filePath
             const file = (await loadMarkdownFile(path.resolve(CONTENT_PARENT_DIRECTORY, filePath))) as Post
-            const excerpt = convertExcerptMarkdown(truncate(file.content, 300 ))
+            const excerpt = convertExcerptMarkdown(truncate(file.content, 300))
             return {
                 frontmatter: file.frontmatter,
                 excerpt,
