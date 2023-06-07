@@ -176,7 +176,7 @@ const Home: FunctionComponent = () => (
         <IntegrationsSection />
 
         <ContentSection
-            className="relative !m-0 ml-[32px] flex max-w-full flex-col overflow-hidden py-[96px] md:mx-4 md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px]"
+            className="relative flex max-w-full flex-col overflow-hidden py-[96px] md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px]"
             parentClassName="!py-0 bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:px-0"
         >
             <img
