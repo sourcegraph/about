@@ -94,7 +94,7 @@ export default class MyDocument extends Document {
 
                     {/* Google Tag Manager */}
                     {/* Google recommends this in the head, but Next.js recommends afterInteractive */}
-                    <Script id="script-gtm" data-cookieconsent="ignore" strategy="afterInteractive">
+                    <Script id="script-gtm" data-cookieconsent="ignore" strategy="afterInteractive" async={true} defer={true}>
                         {`
                             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -145,9 +145,30 @@ export default class MyDocument extends Document {
                             title="GTM"
                         />
                     </noscript>
-
+                    
                     <Main />
                     <NextScript />
+
+                    {/* Load Cookiebot asynchronously after the page has rendered */}
+                    <Script id="script-cookiebot-after" strategy="afterInteractive" async={true} defer={true}>
+                        {`
+                            function loadCookiebot() {
+                                var cb = function() {
+                                    if (typeof Cookiebot !== 'undefined') {
+                                        Cookiebot.init();
+                                    } else {
+                                        setTimeout(cb, 50);
+                                    }
+                                };
+                                cb();
+                            }
+                            if (document.readyState === 'complete') {
+                                loadCookiebot();
+                            } else {
+                                window.addEventListener('load', loadCookiebot);
+                            }
+                        `}
+                    </Script>
                 </body>
             </Html>
         )

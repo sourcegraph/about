@@ -122,7 +122,7 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
             onTouchMove={isLargeScreen ? undefined : handleTouchMove}
             onTouchEnd={isLargeScreen ? undefined : handleTouchEnd}
         >
-            <div ref={containerRef}>
+            <div ref={containerRef} className='max-w-full h-[300px] xl:max-w-[602px] xl:h-[376px]'>
                 {videos.map((item, index) => (
                     <video
                         ref={element => (videoRefs.current[index] = element || null)}
@@ -172,6 +172,7 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
                                     'opacity-100': index === currentVideo,
                                     'opacity-50': index !== currentVideo,
                                 })}
+                                aria-label='carousel-control'
                             />
                         ))}
                     </div>

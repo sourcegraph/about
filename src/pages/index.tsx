@@ -16,7 +16,6 @@ import {
     VideoCarousel,
 } from '../components'
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
-import { DownloadLink } from '../components/DownloadLink'
 import { buttonLocation } from '../data/tracking'
 
 interface TestimonyProps {
@@ -24,10 +23,6 @@ interface TestimonyProps {
     content: ReactNode
     about: string
     github: string
-}
-
-interface AppDownloadLinksProps {
-    className?: string
 }
 
 const testimonies: TestimonyProps[] = [
@@ -189,12 +184,14 @@ const Home: FunctionComponent = () => (
                 alt="bg"
                 className="absolute -right-[300px] top-16 hidden w-[100%] md:inline-block"
                 aria-hidden={true}
+                loading="lazy"
             />
             <img
                 src="/home/background.svg"
                 alt="bg"
                 className="absolute -left-[900px] -top-20 hidden w-[100%] md:inline-block"
                 aria-hidden={true}
+                loading="lazy"
             />
             <div className="z-10 flex flex-1 flex-col md:pl-sm">
                 <div className="max-w-[444px] md:self-end">
@@ -346,8 +343,8 @@ const HomeHero: FunctionComponent = () => (
                 bases.
             </Heading>
 
-            <img alt="Home Illustartion" src="/home/home-illustration.svg" className="mx-auto hidden py-6 md:block" />
-            <img alt="Home Illustartion" src="/home/home-illustration-mobile.svg" className="mx-auto py-6 md:hidden" />
+            <img loading="lazy" alt="Home Illustartion" src="/home/home-illustration.svg" className="mx-auto hidden py-6 md:block md:w-[859px] lg:w-[1005px] h-[465px]" />
+            <img loading="lazy" alt="Home Illustartion" src="/home/home-illustration-mobile.svg" className="mx-auto py-6 md:hidden w-fit h-[285px]" />
 
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 md:justify-start">
                 {codyFeatures.map(item => (
@@ -366,49 +363,9 @@ const HomeHero: FunctionComponent = () => (
     </>
 )
 
-const AppDownloadLinks: FunctionComponent<AppDownloadLinksProps> = ({ className }) => (
-    <div className={className}>
-        <DownloadLink
-            className="btn btn-inverted-primary w-fit px-4 font-normal shadow-btn"
-            title="Download for Mac"
-            downloadName="app-download-mac-dmg"
-        >
-            Download for Mac
-            <Badge className="ml-2" size="small" text="Beta" color="blurple" />
-        </DownloadLink>
-        <div className="mt-3 flex flex-row">
-            <Link
-                href="/get-started"
-                title="Linux"
-                className="border-r-1 border-r-gray-300 pr-2 text-sm leading-[21px] text-gray-300 underline"
-            >
-                Linux
-            </Link>
-            <Link
-                href="/get-started"
-                title="Other platforms"
-                className="ml-2 text-sm leading-[21px] text-gray-300 underline"
-            >
-                Other platforms
-            </Link>
-        </div>
-        <p className="mt-3 text-sm leading-[21px] text-gray-300">
-            By using Sourcegraph, you agree to the{' '}
-            <Link href="/terms/privacy" title="Privacy polic" className="text-gray-300 underline">
-                Privacy Policy
-            </Link>{' '}
-            and{' '}
-            <Link href="/terms" title="Terms" className="text-gray-300 underline">
-                Terms of Service
-            </Link>
-            .
-        </p>
-    </div>
-)
-
 const Testimony: FunctionComponent<TestimonyProps> = ({ thumbnail, content, about, github }) => (
     <div className="flex items-start rounded-lg border px-8 py-12 leading-7 md:p-12">
-        <img className="col-span-1 mr-6 min-w-[40px]" src={thumbnail} alt={about} />
+        <img className="col-span-1 mr-6 w-[40px] h-[40px]" src={thumbnail} alt={about} loading="lazy" />
         <div className="col-span-6">
             <div>{content}</div>
             <div className="mb-4 text-base text-gray-400"> - {about}</div>
