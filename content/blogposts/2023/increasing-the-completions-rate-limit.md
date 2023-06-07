@@ -3,7 +3,7 @@ title: "We're doubling the Cody completions rate limit"
 authors:
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
-publishDate: 2023-06-07T10:00-07:00
+publishDate: 2023-06-08T10:00-07:00
 description: "We’ve increased the completions rate limit to 1,000 completions per day for Sourcegraph.com users."
 tags: [blog]
 slug: 'increasing-cody-completions-rate-limit'
