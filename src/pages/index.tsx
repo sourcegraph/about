@@ -175,25 +175,22 @@ const Home: FunctionComponent = () => (
 
         <IntegrationsSection />
 
-        <ContentSection
-            className="relative flex max-w-full flex-col overflow-hidden py-[96px] md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px]"
-            parentClassName="!py-0 bg-gradient-to-tr from-violet-600 via-violet-750 to-violet-800 md:px-0"
-        >
+        <div className="relative flex max-w-full flex-col overflow-hidden py-[96px] px-sm md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px]">
             <img
                 src="/home/background.svg"
                 alt="bg"
-                className="absolute -right-[300px] top-16 hidden w-[100%] md:inline-block"
+                className="absolute -right-[600px] top-10 hidden w-[100%] opacity-50 md:inline-block"
                 aria-hidden={true}
                 loading="lazy"
             />
             <img
                 src="/home/background.svg"
                 alt="bg"
-                className="absolute -left-[900px] -top-20 hidden w-[100%] md:inline-block"
+                className="absolute -left-[900px] -top-20 hidden w-[100%] opacity-50 md:inline-block"
                 aria-hidden={true}
                 loading="lazy"
             />
-            <div className="z-10 flex flex-1 flex-col md:pl-sm">
+            <div className="z-10 flex flex-1 flex-col">
                 <div className="max-w-[444px] md:self-end">
                     <Heading className="mb-[10px] !text-[36px] text-white" size="h2">
                         Try Cody for free
@@ -242,7 +239,7 @@ const Home: FunctionComponent = () => (
                 </div>
             </div>
             <div className="my-[42px] border-b border-gray-400 md:my-0 md:mx-[42px] md:h-[266px] md:border-l" />
-            <div className="z-10 flex flex-1 flex-col md:pr-sm">
+            <div className="z-10 flex flex-1 flex-col">
                 <Heading size="h4" className="mb-4 text-white">
                     Cody for Enterprise
                 </Heading>
@@ -263,13 +260,13 @@ const Home: FunctionComponent = () => (
                     </MeetWithProductExpertButton>
                 </div>
             </div>
-        </ContentSection>
+        </div>
     </Layout>
 )
 
 const HomeHero: FunctionComponent = () => (
     <>
-        <ContentSection parentClassName="!py-0 !px-sm overflow-x-clip">
+        <ContentSection parentClassName="!pt-0 !px-sm overflow-x-clip">
             <div className="grid grid-cols-1 gap-x-4 gap-y-16 bg-right bg-no-repeat pt-12 pb-11 md:grid-cols-2 md:px-6 md:pb-[96px] lg:bg-[url('/home/home-hero-bg.png')] lg:bg-[length:800px_600px] xl:bg-[length:1000px_800px]">
                 <div className="mx-auto flex w-full max-w-[567px] flex-col items-center px-0 md:mx-0 md:items-start">
                     <Heading
