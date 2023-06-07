@@ -72,11 +72,17 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
                     videos.map(async (item, index) => {
                         const videoElement = videoRefs.current[index]
                         if (videoElement && videoElement.src !== item.video) {
-                            await new Promise((resolve, reject) => {
-                                videoElement.addEventListener('loadstart', resolve)
-                                videoElement.addEventListener('error', reject)
-                                videoElement.src = item.video
-                            })
+                            // Check if the video is already cached in the browser
+                            if (!videoElement.hasAttribute('data-cached')) {
+                                await new Promise<void>((resolve, reject) => {
+                                    videoElement.addEventListener('canplaythrough', () => {
+                                        videoElement.setAttribute('data-cached', 'true')
+                                        resolve()
+                                    })
+                                    videoElement.addEventListener('error', reject)
+                                    videoElement.src = item.video
+                                })
+                            }
                         }
                     })
                 )
