@@ -47,7 +47,6 @@ export default class MyDocument extends Document {
                         id="structured_data"
                         type="application/ld+json"
                         strategy="beforeInteractive"
-                        async={true}
                         dangerouslySetInnerHTML={{
                             __html: JSON.stringify({
                                 '@context': 'https://schema.org',
@@ -67,7 +66,51 @@ export default class MyDocument extends Document {
                         data-blockingmode="auto"
                         type="text/javascript"
                         strategy="beforeInteractive"
-                        async={true}
+                    />
+
+                    {/* GTM Data Layer */}
+                    {/* Google recommends this in the head, but Next.js recommends afterInteractive */}
+                    {/* Note: Deprecate gtag UA config when we've migrated to GA4 */}
+                    <Script id="script-gtm-data-layer" data-cookieconsent="ignore" strategy="afterInteractive">
+                        {`
+                        window.dataLayer = window.dataLayer || [];
+                        
+                        function gtag() {
+                            dataLayer.push(arguments);
+                        }
+                        
+                        gtag("consent", "default", {
+                            ad_storage: "denied",
+                            analytics_storage: "denied",
+                            wait_for_update: 500,
+                        });
+                        
+                        gtag("set", "ads_data_redaction", true);
+                        
+                        gtag('js', new Date());
+                        gtag('config', 'UA-40540747-17');
+                    `}
+                    </Script>
+
+                    {/* Google Tag Manager */}
+                    {/* Google recommends this in the head, but Next.js recommends afterInteractive */}
+                    <Script id="script-gtm" data-cookieconsent="ignore" strategy="afterInteractive">
+                        {`
+                            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                            })(window,document,'script','dataLayer','GTM-TB4NLS7');  
+                        `}
+                    </Script>
+
+                    {/* Plausible Analytics (GA Alternative) */}
+                    {/* Plausible recommends this in the head, but Next.js recommends afterInteractive */}
+                    <Script
+                        id="script-plausible"
+                        data-domain="about.sourcegraph.com"
+                        src="https://plausible.io/js/plausible.js"
+                        strategy="afterInteractive"
                     />
 
                     {/* Triblio "Webpage Personalization" */}
@@ -87,9 +130,9 @@ export default class MyDocument extends Document {
                         type="text/javascript"
                         src="https://tribl.io/footer.js?orgId=Yee6bMKj7QSARqAePdE8"
                         strategy="afterInteractive"
+                        defer={true}
                     />
                 </Head>
-
                 <body>
                     {/* Google Tag Manager (noscript) */}
                     <noscript>
@@ -105,52 +148,6 @@ export default class MyDocument extends Document {
 
                     <Main />
                     <NextScript />
-
-                    {/* GTM Data Layer */}
-                    {/* Google recommends this in the head, but Next.js recommends afterInteractive */}
-                    {/* Note: Deprecate gtag UA config when we've migrated to GA4 */}
-                    <Script id="script-gtm-data-layer" data-cookieconsent="ignore" strategy="afterInteractive">
-                        {`
-                            window.dataLayer = window.dataLayer || [];
-
-                            function gtag() {
-                                dataLayer.push(arguments);
-                            }
-
-                            gtag("consent", "default", {
-                                ad_storage: "denied",
-                                analytics_storage: "denied",
-                                wait_for_update: 500,
-                            });
-
-                            gtag("set", "ads_data_redaction", true);
-
-                            gtag('js', new Date());
-                            gtag('config', 'UA-40540747-17');
-                        `}
-                    </Script>
-
-                    {/* Plausible Analytics (GA Alternative) */}
-                    {/* Plausible recommends this in the head, but Next.js recommends afterInteractive */}
-                    <Script
-                        id="script-plausible"
-                        data-domain="about.sourcegraph.com"
-                        src="https://plausible.io/js/plausible.js"
-                        strategy="afterInteractive"
-                        defer={true}
-                    />
-
-                    {/* Google Tag Manager */}
-                    {/* Google recommends this in the head, but Next.js recommends afterInteractive */}
-                    <Script id="script-gtm" data-cookieconsent="ignore" strategy="afterInteractive">
-                        {`
-                            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                            })(window,document,'script','dataLayer','GTM-TB4NLS7');
-                        `}
-                    </Script>
                 </body>
             </Html>
         )
