@@ -30,4 +30,4 @@ We quietly released completions in May, and we’ve been collecting feedback sin
 
 ### Get started with Cody completions
 
-Completions are now available for all Cody users as an experimental feature, and you can [turn them on in the VS Code settings panel](https://docs.sourcegraph.com/cody/completions). If you’re new to Cody, you can [sign up for a free Sourcegraph.com account](https://sourcegraph.com/sign-up) to get access.
+Completions are now available for all Cody users connected to Sourcegraph.com as an experimental feature, and you can [turn them on in the VS Code settings panel](https://docs.sourcegraph.com/cody/completions). If you’re new to Cody, you can [sign up for a free Sourcegraph.com account](https://sourcegraph.com/sign-up) to get access.
