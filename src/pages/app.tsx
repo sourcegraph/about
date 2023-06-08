@@ -80,13 +80,14 @@ const DownloadSection: FunctionComponent = () => (
             <Badge className="ml-2" size="small" text="Experimental" color="blurple" />
         </DownloadLink>
         <div className="mt-3 flex flex-row justify-center">
+            <p>Apple silicon required. </p>
             <Link
                 href="https://docs.sourcegraph.com/app"
                 title="Other platforms"
                 className="ml-2 text-sm leading-[21px] text-gray-300 underline"
                 target="_blank"
             >
-                Other options
+                Other options.
             </Link>
         </div>
         <p className="mt-3 text-center text-sm leading-[21px] text-gray-300">
