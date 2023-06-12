@@ -12,9 +12,10 @@ published: true
 
 We're excited to announce cross-repository precise code navigation support
 for C and C++ in [scip-clang](https://sourcegraph.com/github.com/sourcegraph/scip-clang).
-This feature addition brings scip-clang up to parity with our other SCIP indexers,
-and provides best-in-class online code navigation for C++ codebases spread out across
-multiple repositories.
+We [initially released scip-clang last month](https://about.sourcegraph.com/blog/announcing-scip-clang),
+and this feature addition brings scip-clang up to parity with our other SCIP indexers,
+providing best-in-class online code navigation
+for C++ codebases spread out across multiple repositories.
 
 Here is a demo showcasing how it works:
 
@@ -28,17 +29,11 @@ Here is a demo showcasing how it works:
 </div>
 <br/>
 
-<!-- TODO: Should we mention Boost? On one hand, it's an easily recognizable name,
-  and I indexed the different libraries in it, but the caveat is that some headers were not
-  indexed because the compilation database generated was incomplete,
-  because not all code in Boost is buildable by CMake,
-  and I used CMake to generate the compilation database,
-  since Boost's official build system B2 doesn't seem to support emitting
-  a compilation database.
--->
-
 Cross-repository code navigation works for all features supported by scip-clang,
-such as types, methods, macros, forward declarations etc.
+such as [types](https://sourcegraph.com/github.com/sourcegraph/scip-clang@v0.2.0/-/blob/indexer/Indexer.h?L167:9-167:22#tab=references),
+[methods](https://sourcegraph.com/github.com/sourcegraph/scip-clang@v0.2.0/-/blob/indexer/Indexer.cc?L68:23-68:30#tab=references),
+[macros](https://sourcegraph.com/github.com/boostorg/assert@boost-1.82.0/-/blob/include/boost/assert.hpp?L60:10-60:22#tab=references),
+[forward declarations](https://sourcegraph.com/github.com/sourcegraph/scip-clang@v0.2.0/-/blob/indexer/Indexer.h?L39:7-39:11#tab=references) etc.
 
 The primary change required to benefit from cross-repository code navigation
 is supplying an extra package map file in JSON format, which describes:
@@ -50,29 +45,13 @@ is supplying an extra package map file in JSON format, which describes:
 The package map JSON format offers a flexible way
 of providing package information that can be targeted
 by different build systems and package managers.
-
-<!-- TODO: Better wording? Omit? -->
-Ideally, scip-clang would automatically infer package information from file system layout,
-but the large variety in build systems and package management strategies
-in the C and C++ ecosystems make this approach unfeasible in general.
+We decided to go with this approach as
+the large variety in C and C++ build tooling
+makes it difficult for scip-clang to automatically
+infer package information from file system layout.
 
 More details about the package map format, including examples,
 can be found in the [scip-clang documentation](https://sourcegraph.com/github.com/sourcegraph/scip-clang/blob/main/docs/CrossRepo.md).
 
-<!-- Not sure how much detail I should provide on the problem
-  with deep dependency trees and the point about feedback being
-  needed on helping prioritize what to work on next.
-
-## Next steps
-
-Quadratic scaling for deep dependency trees due to forward declarations.
-https://github.com/sourcegraph/scip-clang/blob/main/docs/CrossRepo.md#limitations
--- Looking for feedback on suitable solution
-
-One of the other sources of complexity is the presence of different
-standard libraries for C and C++. Not only do these vary across platforms,
-but even on Linux, there are different standard libraries for each language:
-glibc and musl being the most popular for C,
-and libstdc++ and libc++ being the popular ones for C++.
-
--->
+Please try out the new cross-repository code navigation
+and let us know what you think!
