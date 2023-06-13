@@ -198,6 +198,7 @@ module.exports = {
         xl: `0px 0px 23px ${dlsColors.violet['400']}`,
         btn: `0px 0px 20px rgba(161, 18, 255, 0.7)`,
         modal: `0px 5px 23px rgba(0, 0, 0, 0.2)`,
+        card: `0px 0px 20px -2px #A112FF80`,
       },
     },
   },

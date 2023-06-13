@@ -2,7 +2,7 @@ import classNames from 'classnames'
 import GithubIcon from 'mdi-react/GithubIcon'
 import Link from 'next/link'
 
-import { getEventLogger } from '../../hooks/eventLogger'
+import { EventName, getEventLogger } from '../../hooks/eventLogger'
 
 export interface AuthProvider {
     serviceType: 'github' | 'gitlab'
@@ -61,7 +61,7 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
             description: '',
         }
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger().log('SignupInitiated', eventArguments, eventArguments)
+        getEventLogger().log(EventName.SIGNUP_INITIATED, eventArguments, eventArguments)
     }
     return authProvider === 'github' ? (
         <Link

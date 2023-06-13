@@ -349,6 +349,9 @@
     .sg-bg-gradient-cody {
         background: radial-gradient(196.63% 32.01% at 101.28% 2%, #6112A3 0.41%, rgba(39, 7, 65, 0) 54.04%), radial-gradient(151.99% 42.7% at 15.73% 91.97%, #6112A3 0.41%, rgba(39, 7, 65, 0) 54.04%), #1E0632;
     }
+    .sg-resource-hero {
+        background: linear-gradient(273.62deg, #6112A3 -7.78%, #1E0632 15.45%, #350A59 68.2%, #270741 88.9%, #6112A3 103.85%);
+    }
 }
 
 /**

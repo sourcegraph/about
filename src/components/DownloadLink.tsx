@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import { appDownloads } from '../data/downloads'
-import { getEventLogger } from '../hooks/eventLogger'
+import { EventName, getEventLogger } from '../hooks/eventLogger'
 
 type DownloadLinkProps = Omit<React.ComponentProps<typeof Link> & { downloadName: keyof typeof appDownloads }, 'href'>
 
@@ -20,7 +20,7 @@ export const DownloadLink: React.FunctionComponent<DownloadLinkProps> = props =>
             downloadLinkUrl: href,
         }
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger().log('DownloadClick', eventArguments, eventArguments)
+        getEventLogger().log(EventName.DOWNLOAD_CLICK, eventArguments, eventArguments)
     }
 
     return <Link href={href} {...linkProps} onClick={handleOnClick} />

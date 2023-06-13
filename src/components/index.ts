@@ -8,6 +8,7 @@ export { BoardSection } from './BoardSection'
 export { ContentSection } from './ContentSection'
 export { CoreFeatures } from './CoreFeatures'
 export { CallToActionContentSection } from './cta/CallToActionContentSection'
+export { CallToActionWithCody } from './cta/CallToActionWithCody'
 export { CustomerLogos } from './CustomerLogos'
 export { DemioForm } from './DemioForm'
 export { Figure } from './Figure'
@@ -65,7 +66,7 @@ export {
 } from './Pricing'
 
 // Resources
-export { Filters, type Filter, Card, resourceItems, type Resource, useFilters } from './Resources'
+export { Filters, type Filter, Card, ResourceCard, resourceItems, type Resource, useFilters } from './Resources'
 
 // Starship
 export { FeatureUser } from './Starship/FeatureUser'

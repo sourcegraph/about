@@ -5,7 +5,7 @@ import { startCase } from 'lodash'
 import Link from 'next/link'
 
 import { buttonLocation, buttonStyle } from '../data/tracking'
-import { getEventLogger } from '../hooks/eventLogger'
+import { EventName, getEventLogger } from '../hooks/eventLogger'
 
 interface Video {
     mp4: string
@@ -195,7 +195,7 @@ export const CoreFeatures: FunctionComponent = () => {
                             data-cookieconsent="ignore"
                             onPlay={() =>
                                 getEventLogger().log(
-                                    'StaticVideoPlayed',
+                                    EventName.STATIC_VIDEO_PLAYED,
                                     { productFeature: feature.productFeature, title: feature.title },
                                     { productFeature: feature.productFeature, title: feature.title }
                                 )
