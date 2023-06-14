@@ -31,7 +31,7 @@ export const Report: FunctionComponent = () => (
         <GatedResourceLayout
             title="Cool Vendors in Software Engineering: Enhancing Developer Productivity"
             formLabel="Download the report"
-            resource="https://www.gartner.com/doc/reprints?id=1-2A44UTV8&ct=220524&st=sb"
+            resource="https://www.gartner.com/reprints/?id=1-2D6RVJEE&ct=230410&st=sb"
             description={
                 <section className="order-2 md:order-1">
                     <h3 className="pb-md font-normal">
