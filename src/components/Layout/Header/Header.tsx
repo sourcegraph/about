@@ -1,4 +1,4 @@
-import { FunctionComponent, useState, useEffect, useRef } from 'react'
+import { FunctionComponent, useState, useEffect, RefObject } from 'react'
 
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -18,9 +18,10 @@ export type HeaderColorTheme = 'purple' | 'dark' | 'white'
 interface Props {
     minimal?: boolean
     colorTheme: HeaderColorTheme
+    navRef?: RefObject<HTMLElement>
 }
 
-export const Header: FunctionComponent<Props> = ({ minimal, colorTheme }) => {
+export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }) => {
     const [lastScrollPosition, setLastScrollPosition] = useState<number>(0)
     const [sticky, setSticky] = useState<boolean>(false)
     const router = useRouter()
@@ -50,22 +51,6 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme }) => {
 
         return () => window.removeEventListener('scroll', handleScroll)
     })
-
-    const navRef = useRef<HTMLElement>(null)
-
-    /**
-     * This sets a top buffer for the sticky nav's main position by using
-     * the height of the navbar.
-     */
-    useEffect(() => {
-        if (navRef.current) {
-            const navHeight = navRef.current.getBoundingClientRect().height || 74
-            const parentElement = navRef.current.parentElement
-            if (parentElement) {
-                parentElement.style.paddingTop = `${navHeight}px`
-            }
-        }
-    }, [])
 
     return (
         <Disclosure as="nav" className={classNames('fixed top-0 left-0 right-0 z-[1030]')} ref={navRef}>

@@ -1,10 +1,10 @@
 import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
-import { truncate } from 'lodash'
 import Link from 'next/link'
 
 import { PostIndexItemProps } from '../../interfaces/posts'
+import { truncate } from '../../lib/utils'
 import { Heading } from '../Heading'
 
 import { BylineAndDate } from './BylineAndDate'
@@ -43,7 +43,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
         {slugPath && (
             <p className="text-gray-500">
                 {frontmatter.description
-                    ? truncate(frontmatter.description, { length: 300 })
+                    ? truncate(frontmatter.description, 300)
                     : typeof excerpt === 'string' && excerpt}
             </p>
         )}

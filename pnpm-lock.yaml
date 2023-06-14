@@ -61,9 +61,6 @@ dependencies:
   gray-matter:
     specifier: ^4.0.3
     version: 4.0.3
-  lodash:
-    specifier: ^4.17.21
-    version: 4.17.21
   next:
     specifier: ^13.1.1
     version: 13.1.2(@babel/core@7.21.4)(react-dom@18.2.0)(react@18.2.0)(sass@1.54.9)
@@ -132,9 +129,6 @@ devDependencies:
   '@types/d3-time-format':
     specifier: ^4.0.0
     version: 4.0.0
-  '@types/lodash':
-    specifier: ^4.14.180
-    version: 4.14.185
   '@types/mapbox__rehype-prism':
     specifier: ^0.8.0
     version: 0.8.0
@@ -4061,6 +4055,7 @@ packages:
 
   /@types/lodash@4.14.185:
     resolution: {integrity: sha512-evMDG1bC4rgQg4ku9tKpuMh5iBNEwNa3tf9zRHdP1qlv+1WUg44xat4IxCE14gIpZRGUUWAx2VhItCZc25NfMA==}
+    dev: false
 
   /@types/mapbox__rehype-prism@0.8.0:
     resolution: {integrity: sha512-C3Bucs6nlHJg0FKhKsN6cx3Mklh1Ah9trAl6VPH0PuSUH4QtOW4H1eF/70zKn3RdEen4nZ9D5wLL0O/eLSQ+zg==}

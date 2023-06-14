@@ -72,11 +72,17 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
                     videos.map(async (item, index) => {
                         const videoElement = videoRefs.current[index]
                         if (videoElement && videoElement.src !== item.video) {
-                            await new Promise((resolve, reject) => {
-                                videoElement.addEventListener('loadstart', resolve)
-                                videoElement.addEventListener('error', reject)
-                                videoElement.src = item.video
-                            })
+                            // Check if the video is already cached in the browser
+                            if (!videoElement.hasAttribute('data-cached')) {
+                                await new Promise<void>((resolve, reject) => {
+                                    videoElement.addEventListener('canplaythrough', () => {
+                                        videoElement.setAttribute('data-cached', 'true')
+                                        resolve()
+                                    })
+                                    videoElement.addEventListener('error', reject)
+                                    videoElement.src = item.video
+                                })
+                            }
                         }
                     })
                 )
@@ -122,7 +128,7 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
             onTouchMove={isLargeScreen ? undefined : handleTouchMove}
             onTouchEnd={isLargeScreen ? undefined : handleTouchEnd}
         >
-            <div ref={containerRef}>
+            <div ref={containerRef} className="h-[300px] max-w-full xl:h-[376px] xl:max-w-[602px]">
                 {videos.map((item, index) => (
                     <video
                         ref={element => (videoRefs.current[index] = element || null)}
@@ -172,6 +178,7 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
                                     'opacity-100': index === currentVideo,
                                     'opacity-50': index !== currentVideo,
                                 })}
+                                aria-label="carousel-control"
                             />
                         ))}
                     </div>
