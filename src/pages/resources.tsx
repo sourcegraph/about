@@ -26,7 +26,7 @@ const Resources: FunctionComponent = () => {
     const [displayLimit, setDisplayLimit] = useState<number>(6)
 
     // Featured and unfeatured resources
-    const featuredResource = useMemo(() => sortResources(resourceItems.filter(item => item.featured))[0], [])
+    const featuredResource = useMemo(() => sortResources(resourceItems.filter(item => item.featured)), [])[0]
     const unfeaturedResources = useMemo(() => sortResources(resourceItems.filter(item => !item.featured)), [])
 
     // Apply filters
@@ -51,16 +51,11 @@ const Resources: FunctionComponent = () => {
 
             let filteredResources = resources
 
-            if (!checkedContentTypes?.length && checkedSubjects?.length) {
-                filteredResources = filterBySubjects(filteredResources, checkedSubjects)
-            }
-
-            if (checkedContentTypes?.length && !checkedSubjects?.length) {
+            if (checkedContentTypes?.length) {
                 filteredResources = filterByContentType(filteredResources, checkedContentTypes)
             }
 
-            if (checkedContentTypes?.length && checkedSubjects?.length) {
-                filteredResources = filterByContentType(filteredResources, checkedContentTypes)
+            if (checkedSubjects?.length) {
                 filteredResources = filterBySubjects(filteredResources, checkedSubjects)
             }
 
@@ -109,9 +104,7 @@ const Resources: FunctionComponent = () => {
     const noResults = checkedFilters?.length && !resources?.length
 
     // Resources to render on UI
-    const resourcesToDisplay = noResults
-        ? [featuredResource]
-        : resources.slice(0, Math.min(displayLimit, resources.length))
+    const resourcesToDisplay = resources.slice(0, Math.min(displayLimit, resources.length))
 
     const handleShowMore = (): void => {
         setDisplayLimit(prevLimit => Math.min(prevLimit + 6, resources.length))
@@ -165,7 +158,7 @@ const Resources: FunctionComponent = () => {
                         <p className="pb-1 text-center font-[500] capitalize lg:text-left">
                             {featuredResource.contentType}
                         </p>
-                        <Heading size="h2" className="mb-8 md:mb-4 text-center !text-4xl lg:text-left">
+                        <Heading size="h2" className="mb-8 text-center !text-4xl md:mb-4 lg:text-left">
                             {featuredResource.title}
                         </Heading>
                         <Link

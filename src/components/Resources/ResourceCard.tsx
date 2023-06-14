@@ -71,9 +71,7 @@ export const ResourceCard: FunctionComponent<Card> = ({ resource, className, onC
                         )}
                     </div>
 
-                    <div className="mb-auto text-base">
-                        {truncate(description, { length: 170 })}
-                    </div>
+                    <div className="mb-auto text-base">{truncate(description, { length: 170 })}</div>
 
                     <div className="mt-2 font-semibold lowercase text-violet-500 first-letter:capitalize hover:text-violet-400">
                         {ctaText}

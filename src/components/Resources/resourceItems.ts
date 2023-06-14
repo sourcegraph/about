@@ -272,7 +272,7 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'Sourcegraph product tour',
+        title: 'Code Intelligence Platform - Product Tour',
         link: '/videos/product-tour',
         contentType: 'video',
         subjects: ['code intelligence', 'code search', 'batch changes'],
