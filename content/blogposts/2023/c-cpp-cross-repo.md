@@ -3,7 +3,7 @@ title: 'Cross-repository precise code navigation for C and C++'
 authors:
   - name: Varun Gandhi
     url: https://github.com/varungandhi-src
-publishDate: 2023-06-12T10:00-07:00
+publishDate: 2023-06-14T15:00-07:00
 description: 'Sourcegraph now supports cross-repository precise code navigation for C and C++ for code indexed by scip-clang.'
 tags: [blog]
 slug: 'c-cpp-cross-repo'
