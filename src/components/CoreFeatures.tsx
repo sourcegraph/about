@@ -1,11 +1,11 @@
 import { FunctionComponent, ReactNode, useEffect } from 'react'
 
 import classNames from 'classnames'
-import { startCase } from 'lodash'
 import Link from 'next/link'
 
 import { buttonLocation, buttonStyle } from '../data/tracking'
 import { getEventLogger } from '../hooks/eventLogger'
+import { startCase } from '../lib/utils'
 
 interface Video {
     mp4: string
