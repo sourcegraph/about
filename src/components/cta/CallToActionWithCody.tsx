@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
@@ -9,7 +9,7 @@ import { EmailAuth } from './EmailAuth'
 import { ExternalsAuth } from './ExternalsAuth'
 import { MeetWithProductExpertButton } from './MeetWithProductExpertButton'
 
-export const CallToActionWithCody: FC = () => (
+export const CallToActionWithCody: FunctionComponent = () => (
     <div className="relative flex max-w-full flex-col overflow-hidden py-[96px] px-sm md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px]">
         <img
             src="/home/background.svg"

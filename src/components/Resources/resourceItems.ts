@@ -91,7 +91,7 @@ export const resourceItems: Resource[] = [
     {
         featured: false,
         title: 'Sourcegraph for Platform Engineering',
-        link: '/guide/Sourcegraph-for-platform-engineering',
+        link: '/guide/Sourcegraph-for-platform-engineering.pdf',
         contentType: 'guide',
         subjects: ['code search', 'code insights', 'code reuse'],
         description:
