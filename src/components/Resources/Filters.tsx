@@ -97,7 +97,7 @@ const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters, setFilter
                                         />
                                     ))}
                                     <Filter
-                                        text="All &times;"
+                                        text="All"
                                         checked={filters.every(filter => !filter.checked)}
                                         onClick={() => resetFilterGroup(title)}
                                     />
@@ -122,7 +122,7 @@ const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters, setFilter
                         />
                     ))}
                     <Filter
-                        text="All &times;"
+                        text="All"
                         checked={filters.every(filter => !filter.checked)}
                         onClick={() => resetFilterGroup(title)}
                     />

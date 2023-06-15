@@ -24,6 +24,7 @@ const Resources: FunctionComponent = () => {
     const { filterGroups, setFilter, resetFilterGroup, resetFilterGroups } = useFilters()
     const [searchTerm, setSearchTerm] = useState<string>('')
     const [displayLimit, setDisplayLimit] = useState<number>(6)
+    const [filteredResources, setFilteredResources] = useState<Resource[]>([])
 
     // Featured and unfeatured resources
     const featuredResource = useMemo(() => sortResources(resourceItems.filter(item => item.featured)), [])[0]
@@ -35,7 +36,7 @@ const Resources: FunctionComponent = () => {
 
     const filterBySubjects = (resources: Resource[], subjects: string[]): Resource[] =>
         resources.filter(item =>
-            subjects.every(subject => item.subjects.some(itemSubjects => itemSubjects.includes(subject)))
+            subjects.some(subject => item.subjects.some(itemSubjects => itemSubjects.includes(subject)))
         )
 
     const applyFilters = useCallback(
@@ -88,6 +89,7 @@ const Resources: FunctionComponent = () => {
         (resources: Resource[]): Resource[] => {
             let filteredResources = applyFilters(resources)
             filteredResources = applySearch(filteredResources)
+            setFilteredResources(filteredResources)
             return filteredResources
         },
         [applyFilters, applySearch]
@@ -155,7 +157,7 @@ const Resources: FunctionComponent = () => {
             <ContentSection background="white" parentClassName="bg-gray-50 !py-0">
                 <div className="relative -top-[107px] -mb-[43px] -mt-[70px] flex max-w-[1280px] flex-col justify-between gap-x-[144px] rounded-md border border-gray-500 bg-white px-[23px] py-[31px] shadow-sm md:-top-[84px] md:-mb-[84px] lg:flex-row lg:px-[79px] lg:py-[63px]">
                     <div className="flex flex-col items-center justify-center lg:items-start">
-                        <p className="pb-1 text-center font-[500] capitalize lg:text-left">
+                        <p className="pb-1 text-center font-mono font-[500] capitalize lg:text-left">
                             {featuredResource.contentType}
                         </p>
                         <Heading size="h2" className="mb-8 text-center !text-4xl md:mb-4 lg:text-left">
@@ -167,11 +169,7 @@ const Resources: FunctionComponent = () => {
                         >{`Read the ${featuredResource.contentType}`}</Link>
                     </div>
                     <div className="flex justify-center lg:justify-end">
-                        <img
-                            className="max-h-[252px] w-full rounded-lg"
-                            src="https://placehold.co/421x252?text=Featured%20Resource"
-                            alt="Featured resource"
-                        />
+                        <img className="max-h-[252px] w-full rounded-lg" src="/big-code.png" alt="Featured resource" />
                     </div>
                     <Link
                         href={featuredResource.link}
@@ -231,11 +229,7 @@ const Resources: FunctionComponent = () => {
                             <p className="text-lg">Please try searching with different terms or adjust your filters.</p>
                         </div>
                     ) : (
-                        <div
-                            className={`grid grid-cols-1 gap-x-[22px] gap-y-[22px] md:gap-y-[46px] ${
-                                resourcesToDisplay.length < 2 ? 'lg:grid-cols-1' : 'lg:grid-cols-2'
-                            } `}
-                        >
+                        <div className="grid grid-cols-1 gap-x-[22px] gap-y-[22px] md:gap-y-[46px] lg:grid-cols-2">
                             {resourcesToDisplay.map(resource => (
                                 <ResourceCard
                                     key={resource.title}
@@ -246,7 +240,7 @@ const Resources: FunctionComponent = () => {
                         </div>
                     )}
                     <div className="mx-auto mt-12 flex justify-center gap-x-2 md:mx-0 md:justify-start">
-                        {displayLimit > 6 && (
+                        {displayLimit > 6 && filteredResources.length > 6 && (
                             <button
                                 type="button"
                                 className="rounded-[5px] bg-violet-500 px-6 py-2  text-base font-semibold text-white hover:bg-violet-400"

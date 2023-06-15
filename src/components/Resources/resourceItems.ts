@@ -1,4 +1,4 @@
-type ContentTypes = 'virtual event' | 'blog post' | 'guide' | 'customer story' | 'video' | 'whitepaper' | 'case study'
+type ContentTypes = 'virtual event' | 'blog post' | 'guide' | 'customer story' | 'video' | 'whitepaper'
 type Subjects =
     | 'code security'
     | 'developer onboarding'
@@ -63,7 +63,7 @@ export const resourceItems: Resource[] = [
         contentType: 'whitepaper',
         subjects: [],
         description:
-            'Context awareness is key to the quality and precision of Cody. This paper outlines how Cody fetches the right context at the right time to answer queries.',
+            'Through a close look at what goes on under the hood of a typical user interaction with Cody you’ll learn how the platform gives Cody a unique advantage compared to other coding assistants today and how that advantage will grow in the future.',
         publishDate: '2023-06-16T17:32:24Z',
         keyword: ['Cody', 'AI'],
     },
@@ -79,9 +79,9 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'Neo Financial case study',
+        title: 'Update to Neo Financial improves the developer experience with Sourcegraph',
         link: '/case-studies/neo-financial-improves-the-developer-experience-with-sourcegraph',
-        contentType: 'case study',
+        contentType: 'customer story',
         subjects: ['code search', 'code insights'],
         description:
             'Learn how Neo Financial attacts and retains top engineering talent by providing a culture, and tools like Sourcegraph, that focus on improving the developer experience.',
@@ -91,10 +91,11 @@ export const resourceItems: Resource[] = [
     {
         featured: false,
         title: 'Sourcegraph for Platform Engineering',
-        link: 'https://sourcegraph.highspot.com/items/63a3491704ea61ab3909a530?lfrm=shp.7',
+        link: '/guide/Sourcegraph-for-platform-engineering',
         contentType: 'guide',
         subjects: ['code search', 'code insights', 'code reuse'],
-        description: 'Move into resources',
+        description:
+            'Sourcegraph allows platform engineering teams to move faster and de -risk large -scale changes, while giving their leaders visibility into where initiatives really stand to meet OKRs.',
         publishDate: '2023-03-08T17:32:24Z',
         keyword: ['Platform engineering', 'code search', 'code insights', 'Tech debt', 'code reuse'],
     },
@@ -133,7 +134,7 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'Hashicorp case study',
+        title: 'Hashicorp customer story',
         link: '/case-studies/hashicorp-uses-sourcegraph-to-streamline-cross-repository-code-search',
         contentType: 'customer story',
         subjects: ['code search', 'code reuse', 'batch changes'],

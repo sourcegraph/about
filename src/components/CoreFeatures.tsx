@@ -1,11 +1,11 @@
 import { FunctionComponent, ReactNode, useEffect } from 'react'
 
 import classNames from 'classnames'
-import { startCase } from 'lodash'
 import Link from 'next/link'
 
 import { buttonLocation, buttonStyle } from '../data/tracking'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
+import { startCase } from '../lib/utils'
 
 interface Video {
     mp4: string
@@ -174,7 +174,7 @@ export const CoreFeatures: FunctionComponent = () => {
                             <Link
                                 href={feature.ctaLink}
                                 className="btn btn-outline-primary mt-2"
-                                title={'Learn more about ' + startCase(feature.productFeature)}
+                                title={`Learn more about ${startCase(feature.productFeature)}`}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
