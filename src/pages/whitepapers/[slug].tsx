@@ -37,7 +37,7 @@ interface Props {
 const PdfPage: NextPage<Props> = ({ filePath, meta = {} }) => (
     <Layout meta={meta} hideFooter={true} hideHeader={true}>
         <div className="flex h-screen flex-col">
-            <object title={meta?.title} data={filePath} type="application/pdf" width="100%" height="100%" />
+            <embed title={meta?.title} src={filePath} type="application/pdf" width="100%" height="100%" />
         </div>
     </Layout>
 )
