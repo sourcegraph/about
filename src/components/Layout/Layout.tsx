@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 import { Footer } from './Footer'
 import { Header, HeaderColorTheme } from './Header/Header'
 
-export interface LayoutProps {
+interface LayoutProps {
     meta?: {
         title?: string
         description?: string
