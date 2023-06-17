@@ -1,5 +1,7 @@
 import React, { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
+
 interface WordEntry {
     key: string
     val: string
@@ -18,9 +20,16 @@ export interface WordStyle {
 export interface ColoredCodeProps {
     words: WordStyle[]
     code: string
+    isSelected?: boolean
+    selectedStyle?: string
 }
 
-export const ColoredCode: FunctionComponent<ColoredCodeProps> = ({ words, code }) => {
+export const ColoredCode: FunctionComponent<ColoredCodeProps> = ({
+    words,
+    code,
+    isSelected = false,
+    selectedStyle = '',
+}) => {
     const wordStyleDict: { [key: string]: string } = words.reduce(
         (wordStyleDict, { word, style }) => ({
             ...wordStyleDict,
@@ -47,7 +56,10 @@ export const ColoredCode: FunctionComponent<ColoredCodeProps> = ({ words, code }
 
     const coloredCode = code.split(specialsRegex).flatMap((fragment, index) =>
         fragment.split(wordsRegex).map((innerFragment, innerIndex) => {
-            const style = wordStyleDict[innerFragment] || ''
+            const style = classNames(
+                isSelected && selectedStyle ? selectedStyle : undefined,
+                wordStyleDict[innerFragment]
+            )
             const key = `${index}-${innerFragment}-${innerIndex}`
             return (
                 <span key={key} className={style}>

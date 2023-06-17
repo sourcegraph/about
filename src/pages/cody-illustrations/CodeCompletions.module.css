@@ -1,5 +1,5 @@
 .frame {
-    background: linear-gradient(140deg, #6F5E8C, #5E6E8C, transparent, transparent);
+    background: linear-gradient(140deg, #6f5e8c, #5e6e8c, transparent, transparent);
     position: relative;
     border-radius: 10px;
     display: flex;
@@ -10,7 +10,7 @@
     padding: 15px;
 }
 .frame:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 4px;
     bottom: 4px;
@@ -43,12 +43,18 @@
     z-index: 2;
     text-align: left;
     white-space: pre-wrap;
+    display: block;
 }
 
 .codeGenerated {
     color: var(--sg-color-gray-400);
 }
 
+.codeSelected {
+    background-color: rgba(0, 84, 130, 0.3);
+    padding-top: 0.233rem;
+    padding-bottom: 0.233rem;
+}
 
 @keyframes fadeIn {
     0% {

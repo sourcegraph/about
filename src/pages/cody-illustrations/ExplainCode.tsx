@@ -21,7 +21,7 @@ const ExplainCode: FunctionComponent = () => {
     return base ** exponent;
 }`
 
-    return <CodeBlock code={code} wordsStyle={wordsStyle} gutter={{ from: 6, to: 8 }} />
+    return <CodeBlock code={code} wordsStyle={wordsStyle} gutter={{ from: 6, to: 8 }} isSelected={true}/>
 }
 
 export default ExplainCode

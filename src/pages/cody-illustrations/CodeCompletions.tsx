@@ -34,7 +34,7 @@ const CodeCompletions: FunctionComponent = () => {
 }`
 
     return (
-        <CodeBlock code={coloredCode} codeGenerated={grayCode} wordsStyle={wordsStyle} gutter={{ from: 8, to: 15 }} />
+        <CodeBlock code={coloredCode} codeGenerated={grayCode} wordsStyle={wordsStyle} gutter={{ from: 8, to: 15 }}  />
     )
 }
 

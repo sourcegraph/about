@@ -17,9 +17,16 @@ interface CodeBlockProps {
     codeGenerated?: string
     wordsStyle: WordStyle[]
     gutter: GutterRange
+    isSelected?: boolean
 }
 
-const CodeBlock: FunctionComponent<CodeBlockProps> = ({ code, codeGenerated, wordsStyle, gutter }) => {
+const CodeBlock: FunctionComponent<CodeBlockProps> = ({
+    code,
+    codeGenerated,
+    wordsStyle,
+    gutter,
+    isSelected = false,
+}) => {
     const gutterLines = Array.from(
         { length: gutter.to - gutter.from + 1 },
         (unused, index) => index + gutter.from
@@ -29,7 +36,12 @@ const CodeBlock: FunctionComponent<CodeBlockProps> = ({ code, codeGenerated, wor
         <div className={styles.frame}>
             <div className={styles.gutter}>{gutterLines}</div>
             <div className={styles.code}>
-                <ColoredCode words={wordsStyle} code={code} />
+                <ColoredCode
+                    words={wordsStyle}
+                    code={code}
+                    isSelected={isSelected}
+                    selectedStyle={styles.codeSelected}
+                />
                 <Cursor />
                 {codeGenerated && (
                     <div className={classNames(styles.fadeIn, styles.codeGenerated)}>{codeGenerated}</div>

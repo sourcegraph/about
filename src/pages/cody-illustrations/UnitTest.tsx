@@ -23,7 +23,7 @@ const UnitTest: FunctionComponent = () => {
         { word: ')', style: styles.colorParenthesis },
     ]
 
-    return <CodeBlock code={code} wordsStyle={wordsStyle} gutter={{ from: 7, to: 9 }} />
+    return <CodeBlock code={code} wordsStyle={wordsStyle} gutter={{ from: 7, to: 9 }} isSelected={true} />
 }
 
 export default UnitTest

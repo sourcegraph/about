@@ -19,6 +19,7 @@ import { TwitterEmbed } from '../components/EmbedTweet'
 import { useAuthModal } from '../context/AuthModalContext'
 
 import CodeCompletions from './cody-illustrations/CodeCompletions'
+import CodeSmells from './cody-illustrations/CodeSmells'
 import ExplainCode from './cody-illustrations/ExplainCode'
 import UnitTest from './cody-illustrations/UnitTest'
 
@@ -255,6 +256,7 @@ const CodyPage: FunctionComponent = () => {
                     <CodeCompletions />
                     <UnitTest />
                     <ExplainCode />
+                    <CodeSmells />
                 </div>
             </ContentSection>
 
