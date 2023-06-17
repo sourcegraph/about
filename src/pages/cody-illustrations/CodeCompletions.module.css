@@ -1,0 +1,102 @@
+.frame {
+    background: linear-gradient(140deg, #6F5E8C, #5E6E8C, transparent, transparent);
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    font-family: SF Mono, monospace;
+    font-size: 0.85rem;
+    gap: 10px;
+    overflow: hidden;
+    padding: 15px;
+}
+.frame:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    background-color: var(--sg-color-gray-700);
+    border-radius: 7px;
+    z-index: 1;
+}
+
+.cursor {
+    margin-left: 2px;
+    display: inline-block;
+    width: 2px;
+    height: 1.25em;
+    animation: blink 2s step-end infinite;
+    position: relative;
+    bottom: -3px;
+}
+
+.gutter {
+    color: var(--sg-color-gray-500);
+    width: 20px;
+    text-align: right;
+    z-index: 2;
+}
+
+.code {
+    color: var(--sg-color-white);
+    z-index: 2;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+.codeGenerated {
+    color: var(--sg-color-gray-400);
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        background: var(--sg-color-white);
+    }
+    50% {
+        background: transparent;
+    }
+    100% {
+        background: var(--sg-color-white);
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.4s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    font-style: italic;
+}
+
+/* Code parts colors */
+.colorFunction {
+    color: var(--sg-color-violet-300);
+}
+
+.colorSymbol {
+    color: var(--sg-color-green-300);
+}
+
+.colorVariable {
+    color: var(--sg-color-blue-300);
+}
+
+.colorBrackets {
+    color: var(--sg-color-lemon-400);
+}
+
+.colorParenthesis,
+.colorCommands {
+    color: var(--sg-color-cerise-300);
+}

@@ -18,6 +18,10 @@ import { DemoVideo } from '../components/DemoVideo'
 import { TwitterEmbed } from '../components/EmbedTweet'
 import { useAuthModal } from '../context/AuthModalContext'
 
+import CodeCompletions from './cody-illustrations/CodeCompletions'
+import ExplainCode from './cody-illustrations/ExplainCode'
+import UnitTest from './cody-illustrations/UnitTest'
+
 import styles from '../styles/CustomHubspotForm.module.scss'
 
 const codyFeatures1 = [
@@ -232,8 +236,8 @@ const CodyPage: FunctionComponent = () => {
                     </Link>
                 </div>
 
-                <div className="h-fit max-w-[625px] overflow-hidden rounded-lg bg-violet-750 drop-shadow-xl md:w-[50%] md:min-w-[450px]">
-                    <video
+                <div className="h-fit max-w-[625px] overflow-hidden md:w-[50%] md:min-w-[450px]">
+                    {/* <video
                         className="sg-video-border-gradient w-full rounded-lg"
                         autoPlay={true}
                         muted={true}
@@ -247,7 +251,10 @@ const CodyPage: FunctionComponent = () => {
                             src="https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-web-chat-may2023.mp4"
                             data-cookieconsent="ignore"
                         />
-                    </video>
+                    </video> */}
+                    <CodeCompletions />
+                    <UnitTest />
+                    <ExplainCode />
                 </div>
             </ContentSection>
 
