@@ -12,6 +12,10 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
 
+[[headers]]
+  for = "/terms/archives/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
 
 # ========== SOURCEGRAPH REDIRECTS ==========
 [[redirects]]
