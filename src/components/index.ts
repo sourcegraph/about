@@ -8,6 +8,7 @@ export { BoardSection } from './BoardSection'
 export { ContentSection } from './ContentSection'
 export { CoreFeatures } from './CoreFeatures'
 export { CallToActionContentSection } from './cta/CallToActionContentSection'
+export { CallToActionWithCody } from './cta/CallToActionWithCody'
 export { CustomerLogos } from './CustomerLogos'
 export { DemioForm } from './DemioForm'
 export { Figure } from './Figure'
@@ -36,7 +37,7 @@ export { ExternalsAuth } from './cta/ExternalsAuth'
 export { EmailAuth } from './cta/EmailAuth'
 
 // Carousels
-export { CustomCarousel, TabCarousel, QuoteCarousel } from './Carousels'
+export { CustomCarousel, TabCarousel, QuoteCarousel, VideoCarousel } from './Carousels'
 
 // Case Studies
 export {

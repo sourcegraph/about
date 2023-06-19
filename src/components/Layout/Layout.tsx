@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactNode } from 'react'
+import { FunctionComponent, ReactNode, useEffect, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 import Head from 'next/head'
@@ -33,6 +33,8 @@ interface LayoutProps {
 }
 
 export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, className, ...props }) => {
+    const navRef = useRef<HTMLElement>(null)
+    const [contentOffsetY, setContentOffsetY] = useState(0)
     const router = useRouter()
     const { pathname, asPath } = router
 
@@ -60,6 +62,17 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
         videoMeta.embedURL = `https://www.youtube.com/embed/${meta.videoID}`
         videoMeta.watchURL = `https://www.youtube.com/v/${meta.videoID}`
     }
+
+    /**
+     * This sets a top buffer for the sticky nav's main position by using
+     * the height of the navbar.
+     */
+    useEffect(() => {
+        if (navRef.current) {
+            const navHeight = navRef.current.getBoundingClientRect().height || 116
+            setContentOffsetY(navHeight)
+        }
+    }, [])
 
     return (
         <div className={`flex min-h-screen flex-col ${className || ''}`}>
@@ -110,8 +123,12 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
             </Head>
 
             {!props.hideHeader && (
-                <div className={props.heroAndHeaderClassName}>
-                    <Header minimal={props.minimal} colorTheme={headerColorTheme || 'white'} />
+                <div
+                    className={classNames(props.heroAndHeaderClassName, 'pt-[147px] md:pt-[116px]')}
+                    // eslint-disable-next-line react/forbid-dom-props
+                    style={{ paddingTop: contentOffsetY !== 0 ? contentOffsetY : undefined }}
+                >
+                    <Header minimal={props.minimal} colorTheme={headerColorTheme || 'white'} navRef={navRef} />
 
                     {props.hero}
                 </div>

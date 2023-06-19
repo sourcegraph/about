@@ -63,30 +63,6 @@ export const Community: FunctionComponent = () => (
                                 <ul>
                                     <li>
                                         <a
-                                            href="https://www.innovationandsecurity.co/"
-                                            title="DigiTech Forum 2023"
-                                            data-button-style={buttonStyle.text}
-                                            data-button-location={buttonLocation.body}
-                                            data-button-type="cta"
-                                        >
-                                            DigiTech Forum 2023 · Singapore
-                                        </a>{' '}
-                                        - May 25-26, 2023
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://scaladays.org/"
-                                            title="Scala Days 2023"
-                                            data-button-style={buttonStyle.text}
-                                            data-button-location={buttonLocation.body}
-                                            data-button-type="cta"
-                                        >
-                                            Scala Days · Seattle
-                                        </a>{' '}
-                                        - June 5-7, 2023
-                                    </li>
-                                    <li>
-                                        <a
                                             href="https://leaddev.com/leaddev-london"
                                             title="LeadDev London"
                                             data-button-style={buttonStyle.text}

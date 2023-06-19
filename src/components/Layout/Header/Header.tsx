@@ -1,4 +1,4 @@
-import { FunctionComponent, useState, useEffect, useRef } from 'react'
+import { FunctionComponent, useState, useEffect, RefObject } from 'react'
 
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -6,12 +6,10 @@ import classNames from 'classnames'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
+import { useAuthModal } from '../../../context/AuthModalContext'
 import { buttonLocation } from '../../../data/tracking'
-import { logAuthPopoverEvent } from '../../../util'
-import { AuthenticateModalContent } from '../../AuthenticateModalContent'
 import { Banner } from '../../Banner'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
-import { Modal } from '../../modal'
 
 import { NavItems } from './NavItems'
 
@@ -20,9 +18,10 @@ export type HeaderColorTheme = 'purple' | 'dark' | 'white'
 interface Props {
     minimal?: boolean
     colorTheme: HeaderColorTheme
+    navRef?: RefObject<HTMLElement>
 }
 
-export const Header: FunctionComponent<Props> = ({ minimal, colorTheme }) => {
+export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }) => {
     const [lastScrollPosition, setLastScrollPosition] = useState<number>(0)
     const [sticky, setSticky] = useState<boolean>(false)
     const router = useRouter()
@@ -52,22 +51,6 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme }) => {
 
         return () => window.removeEventListener('scroll', handleScroll)
     })
-
-    const navRef = useRef<HTMLElement>(null)
-
-    /**
-     * This sets a top buffer for the sticky nav's main position by using
-     * the height of the navbar.
-     */
-    useEffect(() => {
-        if (navRef.current) {
-            const navHeight = navRef.current.getBoundingClientRect().height || 74
-            const parentElement = navRef.current.parentElement
-            if (parentElement) {
-                parentElement.style.paddingTop = `${navHeight}px`
-            }
-        }
-    }, [])
 
     return (
         <Disclosure as="nav" className={classNames('fixed top-0 left-0 right-0 z-[1030]')} ref={navRef}>
@@ -130,17 +113,11 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
     source,
     ...props
 }) => {
+    const { openModal } = useAuthModal()
+
+    const handleOpenModal = (): void => openModal(source)
     const dark = colorTheme === 'dark' || colorTheme === 'purple'
     const classes = HEADER_CONTENT_THEME_CLASS[colorTheme]
-    const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false)
-    const openModal = (): void => {
-        setIsSignUpModalOpen(true)
-        logAuthPopoverEvent(source)
-    }
-
-    const closeModal = (): void => {
-        setIsSignUpModalOpen(false)
-    }
 
     const callToAction = (
         <>
@@ -160,7 +137,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                     dark ? 'btn-inverted-primary' : 'btn-primary'
                 )}
                 title="Download Sourcegraph"
-                onClick={openModal}
+                onClick={handleOpenModal}
             >
                 Get Cody for free
             </button>
@@ -258,9 +235,6 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                     <div className="ml-3 !mt-2 flex flex-col items-start space-y-4">{callToAction}</div>
                 </div>
             </Disclosure.Panel>
-            <Modal open={isSignUpModalOpen} handleClose={closeModal}>
-                <AuthenticateModalContent source={source} />
-            </Modal>
         </>
     )
 }

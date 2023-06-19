@@ -48,9 +48,8 @@ const GetStartedPage: FunctionComponent = () => {
     return (
         <Layout
             meta={{
-                title: 'Install the Sourcegraph app',
-                description:
-                    'Install the app to get started with Sourcegraph quickly and easily. Use it to find, fix, and flow through all the code you care about, for free.',
+                title: 'Install the Cody app',
+                description: 'Connect your code with Cody in minutes.',
             }}
             headerColorTheme="white"
         >
@@ -68,7 +67,8 @@ const GetStartedPage: FunctionComponent = () => {
                                     <div className="hidden items-center md:flex">
                                         <div className="flex-col gap-y-2">
                                             <Heading size="h4">
-                                                Install the app <Badge text="Beta" size="small" color="blurple" />
+                                                Install the app{' '}
+                                                <Badge text="Experimental" size="small" color="blurple" />
                                             </Heading>
                                             <p
                                                 className={classNames(
@@ -76,7 +76,7 @@ const GetStartedPage: FunctionComponent = () => {
                                                     activeTab === 'app' && '!text-gray-200'
                                                 )}
                                             >
-                                                Get started navigating your local and remote code in minutes.
+                                                Connect your code with Cody in minutes.
                                             </p>
                                         </div>
                                         <CheckCircleIcon
@@ -88,7 +88,7 @@ const GetStartedPage: FunctionComponent = () => {
                                     </div>
 
                                     <div className="mb-2 flex gap-x-2 font-normal md:hidden">
-                                        Sourcegraph App <Badge text="Beta" size="small" color="blurple" className="" />
+                                        Cody App <Badge text="Beta" size="small" color="blurple" className="" />
                                     </div>
                                 </>
                             ),
@@ -151,12 +151,12 @@ const GetStartedPage: FunctionComponent = () => {
 const InterstitialAppContent: FunctionComponent = () => (
     <div className="mt-8 md:mt-0">
         <Heading size="h1" className="text-4xl text-gray-700 md:text-[56px]">
-            Install the Sourcegraph app
+            Install the Cody app
         </Heading>
         <div className="mt-4 flex flex-col justify-between gap-x-4 gap-y-[10px] md:flex-row md:items-end">
             <p className="mb-0 max-w-[590px] text-lg text-gray-500">
-                Install the app to get started with Sourcegraph quickly and easily. Use it to find, fix, and flow
-                through all the code you care about, for free.
+                Install the app to connect your code with Cody quickly and easily. Cody answers code questions and
+                writes code for you by reading your entire codebase and the code graph.
             </p>
             <Link
                 href="/app"
@@ -180,49 +180,8 @@ const InterstitialAppContent: FunctionComponent = () => (
                 title="Download for Mac"
                 downloadName="app-download-mac-dmg"
             >
-                Download for Mac
+                Download for Mac <Badge text="Experimental" size="small" color="blurple" />
             </DownloadLink>
-
-            <p className="mb-0 mt-2.5 flex text-gray-500">
-                MacOS 13+ required.
-                <DownloadLink
-                    className="ml-1 font-normal text-gray-500 underline"
-                    title="Old versions"
-                    target="_blank"
-                    downloadName="app-download-mac-zip"
-                >
-                    Old Versions
-                </DownloadLink>
-                .
-            </p>
-
-            {/* Linux */}
-            <div className="mt-12 flex flex-row gap-x-3">
-                <img src="/linux-icon.svg" alt="Linux icon" />
-                <Heading size="h4">Linux</Heading>
-            </div>
-
-            <div className="mt-4 flex flex-row gap-x-4">
-                <DownloadLink
-                    className="btn btn-primary w-fit px-4 font-normal"
-                    title="Download .deb"
-                    downloadName="app-download-linux-deb"
-                >
-                    Download .deb
-                </DownloadLink>
-                <DownloadLink
-                    className="btn btn-primary w-fit px-4 font-normal"
-                    title="Download .zip"
-                    downloadName="app-download-linux-zip"
-                >
-                    Download .zip
-                </DownloadLink>
-            </div>
-
-            <div className="mt-4 flex flex-row gap-x-2">
-                <p className="mb-0 text-base text-gray-500">After installing or unzipping, run</p>
-                <Badge text="sourcegraph" size="small" />
-            </div>
 
             {/* Windows */}
             <div className="mt-12 flex flex-row items-center gap-x-3">

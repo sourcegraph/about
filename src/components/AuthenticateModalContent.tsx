@@ -14,7 +14,7 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source }) =
         <p className="text-lg text-gray-600">Sign up to get free access:</p>
         <ExternalsAuth
             authProvider="github"
-            label="Continue With Github"
+            label="Continue With GitHub"
             dark={true}
             className="mt-4"
             source={source}

@@ -1,12 +1,11 @@
 import fs from 'fs/promises'
 import path from 'path'
 
-import { truncate } from 'lodash'
-
 import { FrontMatter, Post } from '../interfaces/posts'
 import { convertExcerptMarkdown } from '../util/convertExcerptMarkdown'
 
 import { loadMarkdownFile } from './loadMarkdown'
+import { truncate } from './utils'
 
 interface Record {
     slugPath: string
@@ -110,7 +109,7 @@ export const getAllPublishedBlogPosts = async (): Promise<BlogPost[] | null> => 
         allSlugs.map(async (slug): Promise<BlogPost> => {
             const filePath = files.records[slug.slugPath].filePath
             const file = (await loadMarkdownFile(path.resolve(CONTENT_PARENT_DIRECTORY, filePath))) as Post
-            const excerpt = convertExcerptMarkdown(truncate(file.content, { length: 300 }))
+            const excerpt = convertExcerptMarkdown(truncate(file.content, 300))
             return {
                 frontmatter: file.frontmatter,
                 excerpt,

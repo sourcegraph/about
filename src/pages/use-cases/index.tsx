@@ -1,4 +1,3 @@
-import { kebabCase } from 'lodash'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
@@ -13,6 +12,7 @@ import {
     TwoColumnSection,
 } from '../../components'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
+import { kebabCase } from '../../lib/utils'
 
 const features: { id: string; description: string }[] = [
     {
