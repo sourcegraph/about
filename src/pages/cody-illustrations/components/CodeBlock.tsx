@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent, CSSProperties } from 'react'
 
 import classNames from 'classnames'
 
@@ -18,6 +18,7 @@ interface CodeBlockProps {
     wordsStyle: WordStyle[]
     gutter: GutterRange
     isSelected?: boolean
+    width?: string
 }
 
 const CodeBlock: FunctionComponent<CodeBlockProps> = ({
@@ -26,14 +27,20 @@ const CodeBlock: FunctionComponent<CodeBlockProps> = ({
     wordsStyle,
     gutter,
     isSelected = false,
+    width = 'auto',
 }) => {
     const gutterLines = Array.from(
         { length: gutter.to - gutter.from + 1 },
         (unused, index) => index + gutter.from
     ).join(' ')
 
+    const containerStyle: CSSProperties = {
+        width, 
+    }
+
     return (
-        <div className={styles.frame}>
+        // eslint-disable-next-line react/forbid-dom-props
+        <div className={classNames(styles.frame, styles.codeFrame)} style={containerStyle}>
             <div className={styles.gutter}>{gutterLines}</div>
             <div className={styles.code}>
                 <ColoredCode

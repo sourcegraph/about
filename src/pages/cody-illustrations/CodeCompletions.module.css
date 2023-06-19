@@ -1,15 +1,11 @@
 .frame {
-    background: linear-gradient(140deg, #6f5e8c, #5e6e8c, transparent, transparent);
     position: relative;
     border-radius: 10px;
     display: flex;
-    font-family: SF Mono, monospace;
-    font-size: 0.74rem;
-    line-height: 1.05rem;
     gap: 12px;
     overflow: hidden;
-    padding: 12px;
 }
+
 .frame:before {
     content: '';
     position: absolute;
@@ -22,6 +18,22 @@
     z-index: 1;
 }
 
+.codeFrame {
+    background: linear-gradient(140deg, #6f5e8c, #5e6e8c, transparent, transparent);
+    font-family: SF Mono, monospace;
+    font-size: 0.74rem;
+    line-height: 1.05rem;
+    padding: 12px;
+}
+
+.answerFrame {
+    background: linear-gradient(162deg, #00a5ff, #78cfff, #7f00ab, transparent, transparent, transparent);
+    font-family: 'Source Sans Pro', SF Pro, Serif;
+    font-size: 16px;
+    padding: 18px;
+    z-index: 3;
+}
+
 .cursor {
     margin-left: 2px;
     display: inline-block;
@@ -32,12 +44,24 @@
     bottom: -3px;
 }
 
+.codyLogo {
+    z-index: 3;
+}
+
 .gutter {
     color: var(--sg-color-gray-500);
     width: 12px;
     text-align: right;
     line-height: 1.07rem;
     z-index: 2;
+}
+
+.text {
+    color: var(--sg-color-white);
+    z-index: 2;
+    text-align: left;
+    white-space: pre-wrap;
+    display: block;
 }
 
 .code {
@@ -56,6 +80,47 @@
     background-color: rgba(0, 84, 130, 0.3);
     padding-top: 0.07rem;
     padding-bottom: 0.07rem;
+}
+
+.typewriter {
+    color: transparent;
+    overflow: hidden;
+    white-space: pre;
+    animation: typing 3s steps(40, end), colorChange 0.1s 3s forwards;
+}
+
+.pointerAnimation {
+    position: relative;
+    animation: movePointer 2s ease-out;
+    animation-fill-mode: forwards;
+    z-index: 11;
+}
+
+@keyframes movePointer {
+    0% {
+        top: 82px;
+        left: 490px;
+    }
+
+    100% {
+        left: 440px;
+        top: 160px;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes colorChange {
+    to {
+        color: var(--sg-color-white);
+    }
 }
 
 @keyframes fadeIn {

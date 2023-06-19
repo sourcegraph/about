@@ -24,6 +24,7 @@ import ExplainCode from './cody-illustrations/ExplainCode'
 import UnitTest from './cody-illustrations/UnitTest'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
+import CodyAnswer from './cody-illustrations/components/CodyAnswer'
 
 const codyFeatures1 = [
     {
@@ -253,10 +254,9 @@ const CodyPage: FunctionComponent = () => {
                             data-cookieconsent="ignore"
                         />
                     </video> */}
-                    <CodeCompletions />
-                    <UnitTest />
+                    
                     <ExplainCode />
-                    <CodeSmells />
+                    
                 </div>
             </ContentSection>
 
