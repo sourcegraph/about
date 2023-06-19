@@ -20,15 +20,13 @@ export interface WordStyle {
 export interface ColoredCodeProps {
     words: WordStyle[]
     code: string
-    isSelected?: boolean
-    selectedStyle?: string
+    selectedStyle?: string | undefined
 }
 
 export const ColoredCode: FunctionComponent<ColoredCodeProps> = ({
     words,
     code,
-    isSelected = false,
-    selectedStyle = '',
+    selectedStyle,
 }) => {
     const wordStyleDict: { [key: string]: string } = words.reduce(
         (wordStyleDict, { word, style }) => ({
@@ -38,7 +36,7 @@ export const ColoredCode: FunctionComponent<ColoredCodeProps> = ({
         {}
     )
 
-    const wordEntries = Object.entries(wordStyleDict).reduce(
+    const wordEntries: WordEntries = Object.entries(wordStyleDict).reduce(
         (acc, [key, val]: [string, string]) => {
             if (!/\w/.test(key)) {
                 acc.specials.push({ key, val })
@@ -56,10 +54,7 @@ export const ColoredCode: FunctionComponent<ColoredCodeProps> = ({
 
     const coloredCode = code.split(specialsRegex).flatMap((fragment, index) =>
         fragment.split(wordsRegex).map((innerFragment, innerIndex) => {
-            const style = classNames(
-                isSelected && selectedStyle ? selectedStyle : undefined,
-                wordStyleDict[innerFragment]
-            )
+            const style = classNames(selectedStyle, wordStyleDict[innerFragment])
             const key = `${index}-${innerFragment}-${innerIndex}`
             return (
                 <span key={key} className={style}>

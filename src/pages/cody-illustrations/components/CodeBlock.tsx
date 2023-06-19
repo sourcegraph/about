@@ -39,8 +39,7 @@ const CodeBlock: FunctionComponent<CodeBlockProps> = ({
                 <ColoredCode
                     words={wordsStyle}
                     code={code}
-                    isSelected={isSelected}
-                    selectedStyle={styles.codeSelected}
+                    selectedStyle={isSelected ? styles.codeSelected : undefined}
                 />
                 <Cursor />
                 {codeGenerated && (
