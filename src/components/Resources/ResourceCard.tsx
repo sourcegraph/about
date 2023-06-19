@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import { forwardRef } from 'react'
 
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
@@ -14,7 +14,7 @@ interface Card {
     onClick: () => void
 }
 
-export const ResourceCard: FunctionComponent<Card> = ({ resource, className, onClick }) => {
+export const ResourceCard = forwardRef<HTMLAnchorElement, Card>(({ resource, className, onClick }, ref) => {
     const { title, description, contentType, link, subjects } = resource
 
     // CTA text mapping
@@ -35,6 +35,7 @@ export const ResourceCard: FunctionComponent<Card> = ({ resource, className, onC
                 className
             )}
             onClick={onClick}
+            ref={ref}
         >
             <div className="flex h-full flex-col">
                 <div className="flex h-[54px] items-center rounded-t-lg border-b-1 border-gray-500 px-4 py-sm">
@@ -53,4 +54,6 @@ export const ResourceCard: FunctionComponent<Card> = ({ resource, className, onC
             </div>
         </Link>
     )
-}
+})
+
+ResourceCard.displayName = 'ResourceCard'

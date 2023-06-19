@@ -42,16 +42,20 @@ interface Filters {
  * @param props.checked - the enabled/disabled status
  * @param props.onClick - the click function
  */
-const Filter: FunctionComponent<Filter> = ({ text, checked = false, onClick }) => (
-    <Badge
-        className="first-letter:capitalize"
-        text={text}
-        onClick={onClick}
-        color="violet-outlined"
-        size="large"
-        checked={checked}
-    />
-)
+const Filter: FunctionComponent<Filter> = ({ text, checked = false, onClick }) => {
+    const wordsToCapitalizeFirst = ['code monitoring']
+
+    return (
+        <Badge
+            className={wordsToCapitalizeFirst.includes(text) ? 'first-letter:capitalize' : 'capitalize'}
+            text={text}
+            onClick={onClick}
+            color="violet-outlined"
+            size="large"
+            checked={checked}
+        />
+    )
+}
 
 /**
  * A Filter Group displaying the title of filters and filter pills/dropdown menus

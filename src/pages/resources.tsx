@@ -1,4 +1,4 @@
-import { FunctionComponent, useCallback, useEffect, useMemo, useState } from 'react'
+import { FunctionComponent, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
 import CloseIcon from 'mdi-react/CloseIcon'
 import SearchIcon from 'mdi-react/SearchIcon'
@@ -23,8 +23,11 @@ const sortResources = (resources: Resource[]): Resource[] =>
 const Resources: FunctionComponent = () => {
     const { filterGroups, setFilter, resetFilterGroup, resetFilterGroups } = useFilters()
     const [searchTerm, setSearchTerm] = useState<string>('')
-    const [displayLimit, setDisplayLimit] = useState<number>(6)
     const [filteredResources, setFilteredResources] = useState<Resource[]>([])
+
+    const [displayLimit, setDisplayLimit] = useState<number>(6)
+    const [previousDisplayLimit, setPreviousDisplayLimit] = useState<number>(displayLimit)
+    const lastDisplayItemRef = useRef<HTMLAnchorElement>(null)
 
     // Featured and unfeatured resources
     const featuredResource = useMemo(() => sortResources(resourceItems.filter(item => item.featured)), [])[0]
@@ -112,6 +115,11 @@ const Resources: FunctionComponent = () => {
         setDisplayLimit(prevLimit => Math.min(prevLimit + 6, resources.length))
     }
 
+    const handleShowLess = (): void => {
+        setPreviousDisplayLimit(displayLimit)
+        setDisplayLimit(current => (current - 6 < 6 ? 6 : current - 6))
+    }
+
     const handlerResourceItemClick = (resource: Resource, isFeatured?: boolean): void => {
         const { title, contentType, description } = resource
         const eventArguments = {
@@ -131,6 +139,13 @@ const Resources: FunctionComponent = () => {
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [resourcesToDisplay.length])
+
+    useEffect(() => {
+        // Scroll the last resource item into view if display limit is reduced
+        if (displayLimit < previousDisplayLimit && lastDisplayItemRef.current) {
+            lastDisplayItemRef.current.scrollIntoView({ behavior: 'smooth' })
+        }
+    }, [displayLimit, previousDisplayLimit])
 
     return (
         <Layout
@@ -230,11 +245,12 @@ const Resources: FunctionComponent = () => {
                         </div>
                     ) : (
                         <div className="grid grid-cols-1 gap-x-[22px] gap-y-[22px] md:gap-y-[46px] lg:grid-cols-2">
-                            {resourcesToDisplay.map(resource => (
+                            {resourcesToDisplay.map((resource, index) => (
                                 <ResourceCard
                                     key={resource.title}
                                     resource={resource}
                                     onClick={() => handlerResourceItemClick(resource)}
+                                    ref={index === resourcesToDisplay.length - 1 ? lastDisplayItemRef : null}
                                 />
                             ))}
                         </div>
@@ -244,7 +260,7 @@ const Resources: FunctionComponent = () => {
                             <button
                                 type="button"
                                 className="rounded-[5px] bg-violet-500 px-6 py-2  text-base font-semibold text-white hover:bg-violet-400"
-                                onClick={() => setDisplayLimit(current => current - 6)}
+                                onClick={() => handleShowLess()}
                             >
                                 Show Less
                             </button>
