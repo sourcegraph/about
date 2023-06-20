@@ -51,7 +51,7 @@ makes it difficult for scip-clang to automatically
 infer package information from file system layout.
 
 More details about the package map format, including examples,
-can be found in the [scip-clang documentation](https://sourcegraph.com/github.com/sourcegraph/scip-clang/blob/main/docs/CrossRepo.md).
+can be found in the [scip-clang documentation](https://sourcegraph.com/github.com/sourcegraph/scip-clang/-/blob/docs/CrossRepo.md).
 
 Please try out the new cross-repository code navigation
 and let us know what you think!
