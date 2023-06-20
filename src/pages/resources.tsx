@@ -143,7 +143,9 @@ const Resources: FunctionComponent = () => {
     useEffect(() => {
         // Scroll the last resource item into view if display limit is reduced
         if (displayLimit < previousDisplayLimit && lastDisplayItemRef.current) {
-            lastDisplayItemRef.current.scrollIntoView({ behavior: 'smooth' })
+            const cardRect = lastDisplayItemRef.current.getBoundingClientRect()
+            const scrollOffset = cardRect.top - 170
+            window.scrollTo({ top: window.scrollY + scrollOffset, behavior: 'smooth' })
         }
     }, [displayLimit, previousDisplayLimit])
 
