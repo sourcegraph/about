@@ -19,18 +19,9 @@ We are super excited to share the new Cody features we will be releasing on June
 1. Read the terms below
 1. Follow [@Sourcegraph](https://twitter.com/sourcegraph) on Twitter
 1. Retweet & Like [this tweet](#)
+1. [Download the Cody App](#)
 
 _Easy right?_
-
-**Other things you can do:**
-
-1. [RSVP to the Twitter Space](#) talking about the new features
-1. [Join our Discord](https://discord.com/servers/sourcegraph-969688426372825169)
-1. Sign up for our newsletter below
-
-<div style={{ display: 'flex', justifyContent: 'center' }}>
-<Alert>HubSpot form here</Alert>
-</div>
 
 <hr />
 <br />
