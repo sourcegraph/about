@@ -48,7 +48,7 @@ export const resourceItems: Resource[] = [
     {
         featured: false,
         title: 'Cody context architecture',
-        link: '/whitepaper/cody-context-architecture',
+        link: '/whitepaper/cody-context-architecture.pdf',
         contentType: 'whitepaper',
         subjects: [],
         description:
@@ -59,7 +59,7 @@ export const resourceItems: Resource[] = [
     {
         featured: false,
         title: "How Sourcegraph's AI platform powers Cody",
-        link: '/whitepaper/how-sourcegraph-ai-platform-powers-cody',
+        link: '/whitepaper/how-sourcegraph-ai-platform-powers-cody.pdf',
         contentType: 'whitepaper',
         subjects: [],
         description:
