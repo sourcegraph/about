@@ -70,6 +70,10 @@ const NAV_ITEMS: NavItem[] = [
                 name: 'Customer stories',
                 href: '/case-studies',
             },
+            {
+                name: 'Resources library',
+                href: '/resources',
+            },
         ],
     },
     {
