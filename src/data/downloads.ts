@@ -1,4 +1,4 @@
-const appVersionString = 'v2023.6.16%2B1314.6c2d49d47c/Cody_2023.6.16+1314.6c2d49d47c_aarch64.dmg'
+const appVersionString = 'v2023.6.21%2B1321.8c3a4999f2/Cody_2023.6.21+1321.8c3a4999f2_aarch64.dmg'
 
 const appDownloadPrefix = 'https://github.com/sourcegraph/sourcegraph/releases/download/app-'
 
