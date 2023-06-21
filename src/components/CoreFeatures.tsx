@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import Link from 'next/link'
 
 import { buttonLocation, buttonStyle } from '../data/tracking'
-import { getEventLogger } from '../hooks/eventLogger'
+import { EventName, getEventLogger } from '../hooks/eventLogger'
 import { startCase } from '../lib/utils'
 
 interface Video {
@@ -174,7 +174,7 @@ export const CoreFeatures: FunctionComponent = () => {
                             <Link
                                 href={feature.ctaLink}
                                 className="btn btn-outline-primary mt-2"
-                                title={'Learn more about ' + startCase(feature.productFeature)}
+                                title={`Learn more about ${startCase(feature.productFeature)}`}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
@@ -195,7 +195,7 @@ export const CoreFeatures: FunctionComponent = () => {
                             data-cookieconsent="ignore"
                             onPlay={() =>
                                 getEventLogger().log(
-                                    'StaticVideoPlayed',
+                                    EventName.STATIC_VIDEO_PLAYED,
                                     { productFeature: feature.productFeature, title: feature.title },
                                     { productFeature: feature.productFeature, title: feature.title }
                                 )

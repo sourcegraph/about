@@ -18,6 +18,7 @@ interface Badge {
         | 'green'
         | 'lemon'
         | 'dark-blue'
+        | 'violet-outlined'
     link?: string
     icon?: ElementType
     onClick?: () => void
@@ -104,6 +105,12 @@ export const Badge: FunctionComponent<Badge> = ({
             unchecked: '',
             checked: '',
             hover: 'hover:bg-violet-600 hover:text-violet-100',
+        },
+        'violet-outlined': {
+            base: 'border border-solid border-violet-600',
+            unchecked: 'bg-white text-violet-600',
+            checked: 'bg-violet-200 text-violet-600',
+            hover: 'md:hover:bg-violet-200 md:hover:text-violet-600',
         },
         cerise: {
             base: 'bg-cerise-100 text-cerise-600',
