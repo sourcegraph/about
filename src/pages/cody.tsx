@@ -25,6 +25,7 @@ import UnitTest from './cody-illustrations/UnitTest'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
 import CodyAnswer from './cody-illustrations/components/CodyAnswer'
+import LottieAnimation from './cody-illustrations/Lottie'
 
 const codyFeatures1 = [
     {
@@ -256,7 +257,7 @@ const CodyPage: FunctionComponent = () => {
                     </video> */}
                     
                     <ExplainCode />
-                    
+                    <LottieAnimation />
                 </div>
             </ContentSection>
 

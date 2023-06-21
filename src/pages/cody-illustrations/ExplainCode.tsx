@@ -35,7 +35,7 @@ const ExplainCode: FunctionComponent = () => {
                 <ActionIllustration />
             </div>
 
-            <CodeBlock
+        <CodeBlock
                 code={code}
                 wordsStyle={wordsStyle}
                 gutter={{ from: 6, to: 8 }}
