@@ -287,6 +287,12 @@
     .sg-hero-bg-gradient {
         background: radial-gradient(116.94% 133.26% at 52.08% 100%, #6112A3 0.41%, #270741 54.04%, #1E0632 94.78%);
     }
+    .sg-bg-gradient-mobile {
+        background: radial-gradient(27.19% 24.43% at 82.36% 56.71%, #270741 0%, rgba(39, 7, 65, 0) 100%), 
+        radial-gradient(142.09% 18.17% at 20.93% 85.07%, rgba(158, 23, 105, 0.55) 0.41%, rgba(158, 23, 105, 0) 100%),
+        radial-gradient(79.36% 15.65% at 100% 10.69%, rgba(158, 23, 105, 0.45) 0%, rgba(255, 85, 67, 0) 100%, rgba(158, 23, 105, 0) 100%),
+        radial-gradient(121.35% 585.52% at 115.38% -2.37%, #270741 0%, #1E0632 71.46%, #0F111A 100%), #FFFFFF;
+    }
   
     .sg-aws-bg-gradient {
         background: radial-gradient(112.81% 41.73% at 95.07% 0%, #270741 0%, rgba(39, 7, 65, 0) 100%),
