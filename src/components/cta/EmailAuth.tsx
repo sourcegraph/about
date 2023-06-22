@@ -30,7 +30,10 @@ export const EmailAuth: React.FunctionComponent<EmailAuthProps> = ({
     return (
         <Link
             href="https://sourcegraph.com/sign-up?showEmail=true"
-            className={classNames('btn flex w-full items-center justify-center', className)}
+            className={classNames(
+                'btn hover:sg-bg-hover-signup-button flex w-full items-center justify-center',
+                className
+            )}
             onClick={handleOnClick}
         >
             {icon && <EmailOutlineIcon className="pr-2" />} {label}

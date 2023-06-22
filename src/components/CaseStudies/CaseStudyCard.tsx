@@ -134,7 +134,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
-                    className="font-bold no-underline"
+                    className="font-bold no-underline hover:text-violet-300"
                 >
                     {linkText}
                     <ArrowRightIcon size={20} className="ml-1 inline" />
@@ -146,7 +146,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
-                    className="font-bold no-underline"
+                    className="font-bold no-underline  hover:text-violet-300"
                 >
                     {linkText}
                     <ArrowRightIcon size={20} className="ml-1 inline" />

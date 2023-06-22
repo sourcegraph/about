@@ -72,7 +72,7 @@ const AppPage: FunctionComponent = () => (
 const DownloadSection: FunctionComponent = () => (
     <>
         <DownloadLink
-            className="btn btn-inverted-primary w-fit px-4 font-normal shadow-btn"
+            className="btn btn-inverted-primary hover:sg-bg-hover-link-button w-fit px-4 font-normal shadow-btn hover:text-violet-400"
             title="Download for Mac"
             downloadName="app-download-mac-dmg"
         >

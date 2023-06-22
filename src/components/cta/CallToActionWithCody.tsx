@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
 import Link from 'next/link'
 
 import { buttonLocation } from '../../data/tracking'
@@ -9,8 +10,13 @@ import { EmailAuth } from './EmailAuth'
 import { ExternalsAuth } from './ExternalsAuth'
 import { MeetWithProductExpertButton } from './MeetWithProductExpertButton'
 
-export const CallToActionWithCody: FunctionComponent = () => (
-    <div className="relative flex max-w-full flex-col overflow-hidden py-[96px] px-sm md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px]">
+export const CallToActionWithCody: FunctionComponent<{ className?: string }> = ({ className }) => (
+    <div
+        className={classNames(
+            'relative flex max-w-full flex-col overflow-hidden py-[96px] px-sm md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px]',
+            className
+        )}
+    >
         <img
             src="/home/background.svg"
             alt="bg"

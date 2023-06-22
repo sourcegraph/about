@@ -139,7 +139,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                 title="Download Sourcegraph"
                 onClick={handleOpenModal}
             >
-                Get Cody for free
+                Get started with Cody
             </button>
         </>
     )
