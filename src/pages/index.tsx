@@ -47,8 +47,11 @@ const carouselVideos = [
 ]
 
 const Home: FunctionComponent = () => {
+    const windowWidth = useWindowWidth()
+    const isMobile = windowWidth < breakpoints.lg
+
     const innovationSectionRef = useRef<HTMLDivElement>(null)
-    const { isInView } = useInView(innovationSectionRef, 0.5)
+    const { isInView } = useInView(innovationSectionRef, isMobile ? 0.2 : 0.5)
 
     return (
         <Layout
@@ -136,8 +139,8 @@ const HomeHero: FunctionComponent = () => {
     const whatIsSourcegraphRef = useRef<HTMLDivElement>(null)
     const codyGraph = useRef<HTMLImageElement>(null)
 
-    const { isInView: isWhatIsSourcegraphInView } = useInView(whatIsSourcegraphRef)
-    const { isInView: isCodyGraphInView } = useInView(codyGraph, 0.5)
+    const { isInView: isWhatIsSourcegraphInView } = useInView(whatIsSourcegraphRef, isMobile ? 0.5 : 1)
+    const { isInView: isCodyGraphInView } = useInView(codyGraph, isMobile ? 1 : 0.5)
 
     return (
         <>
@@ -148,8 +151,7 @@ const HomeHero: FunctionComponent = () => {
                             size="h1"
                             className="w-full text-center !text-[42px] leading-[65px] text-white md:max-w-[516px] md:text-start md:!text-[62px]"
                         >
-                            Meet Cody, your{' '}
-                            <br />
+                            Meet Cody, your <br />
                             <span className="sg-bg-gradient-infrared bg-clip-text text-transparent">
                                 AI coding assistant
                             </span>
