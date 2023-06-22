@@ -146,9 +146,10 @@ const HomeHero: FunctionComponent = () => {
                     <div className="mx-auto flex w-full max-w-[567px] flex-col items-center px-0 md:mx-0 md:items-start">
                         <Heading
                             size="h1"
-                            className="w-full text-center !text-[42px] leading-[58px] text-white md:max-w-[407px] md:text-start md:!text-[52px]"
+                            className="w-full text-center !text-[42px] leading-[65px] text-white md:max-w-[516px] md:text-start md:!text-[62px]"
                         >
                             Meet Cody, your{' '}
+                            <br />
                             <span className="sg-bg-gradient-infrared bg-clip-text text-transparent">
                                 AI coding assistant
                             </span>
