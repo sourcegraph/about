@@ -48,7 +48,7 @@ const carouselVideos = [
 
 const Home: FunctionComponent = () => {
     const innovationSectionRef = useRef<HTMLDivElement>(null)
-    const { isInView } = useInView(innovationSectionRef, 0.9)
+    const { isInView } = useInView(innovationSectionRef, 0.5)
 
     return (
         <Layout
