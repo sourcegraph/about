@@ -76,3 +76,6 @@ export { CountDown } from './Starship/CountDown'
 
 // Own
 export { FeatureRoadMap } from './Own'
+
+// Cody
+export { CodyFeatureCard } from './CodyFeatureCard'
