@@ -43,8 +43,8 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
         const { clientX, clientY } = event
         const { top, left } = cardRef.current.getBoundingClientRect()
 
-        const relativeX = clientX - left - 120
-        const relativeY = clientY - top - 120
+        const relativeX = clientX - left - 130
+        const relativeY = clientY - top - 130
 
         hoverEffectRef.current.style.top = `${relativeY}px`
         hoverEffectRef.current.style.left = `${relativeX}px`
@@ -84,11 +84,14 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
                     {heading}
                 </Heading>
             )}
-            {subHeading && <Heading size="h4">{subHeading}</Heading>}
-            <p className={classNames(descriptionClassName, 'm-0 text-lg font-normal')}>{description}</p>
+            {subHeading && (
+                <Heading size="h4" className="mb-2">
+                    {subHeading}
+                </Heading>
+            )}
+            <p className={classNames(descriptionClassName, 'm-0 text-base font-normal text-gray-200')}>{description}</p>
             {hovered && (
                 <div
-                    id="cursor-card"
                     className="sg-cody-feature-card-highlight absolute z-10 h-72 w-72 rounded-[50%] bg-white transition-all duration-300 ease-in-out"
                     ref={hoverEffectRef}
                 />

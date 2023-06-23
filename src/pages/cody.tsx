@@ -110,7 +110,7 @@ const CodyPage: FunctionComponent = () => {
             displayChildrenUnderNav={true}
         >
             {/* Hero Section */}
-            <ContentSection parentClassName="!py-0" className="pt-12 text-center md:pt-0">
+            <ContentSection parentClassName="!py-0" className="pt-16 text-center md:pt-[10px]">
                 <div className="mx-auto max-w-[637px]">
                     <div className="center flex items-center justify-center gap-x-4">
                         <img src="/cody/cody-logo.png" alt="Cody Logo" className="h-[21px] w-[23px]" />
@@ -193,18 +193,20 @@ const CodyPage: FunctionComponent = () => {
                             }
                             description="The app is a free, native desktop client for Cody. The app builds your local code graph
                                 and connects to your IDE extensions to make Cody more powerful and accurate."
+                            descriptionClassName="!text-lg"
                         />
 
                         <div className="flex w-full max-w-[509px] flex-col gap-y-6">
                             <Heading
                                 size="h4"
-                                className="cody-platforms-bg-gradient w-full border border-white/[.04] py-6 text-white"
+                                className="cody-platforms-bg-gradient flex w-full items-center justify-center gap-4 border border-white/[.04] py-4 px-6 text-white"
                             >
+                                <img src="/icons/vscode.svg" height={34} width={38} alt="IntelliJ Icon" />
                                 VS Code extension
                             </Heading>{' '}
                             <Heading
                                 size="h4"
-                                className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] py-6 px-4 text-white"
+                                className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] py-4 px-6 text-white"
                             >
                                 <img src="/icons/IntelliJ.svg" height={38} width={38} alt="IntelliJ Icon" />
                                 IntelliJ
@@ -212,7 +214,7 @@ const CodyPage: FunctionComponent = () => {
                             </Heading>
                             <Heading
                                 size="h4"
-                                className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] py-6 px-4 text-white"
+                                className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] py-4 px-6 text-white"
                             >
                                 <img src="/icons/Neovim-logo.svg" height={38} width={38} alt="Neovim Icon" />
                                 Neovim
@@ -220,7 +222,7 @@ const CodyPage: FunctionComponent = () => {
                             </Heading>
                             <Heading
                                 size="h4"
-                                className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] py-6 px-4 text-white"
+                                className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] py-4 px-6 text-white"
                             >
                                 <img src="/icons/EmacsIcon.svg" height={38} width={38} alt="Emacs Icon" />
                                 Emacs
@@ -244,7 +246,7 @@ const CodyPage: FunctionComponent = () => {
                 parentClassName="!py-0 !pt-20 md:!pt-[120px]"
                 className="cody-contact-form-wrapper rounded-lg"
             >
-                <div className="flex flex-col gap-6 py-16 px-6 md:flex-row md:px-8 md:py-[96px] md:pl-[80px]">
+                <div className="flex flex-col gap-6 py-16 px-6 md:flex-row md:px-20 md:py-[96px] md:pr-[53px]">
                     <div className="max-w-[614px]">
                         <Heading size="h2" className="!text-[36px] text-white">
                             Get Cody{' '}
@@ -313,7 +315,6 @@ const CodyPage: FunctionComponent = () => {
                             description={description}
                             subHeading={heading}
                             image={image}
-                            descriptionClassName="text-sm"
                             className="!max-w-full"
                         />
                     ))}
@@ -321,12 +322,7 @@ const CodyPage: FunctionComponent = () => {
 
                 <div className="mt-8 grid grid-cols-1 justify-center gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-3 md:gap-y-9">
                     {codyFeatures1.slice(4, 8).map(({ description, heading }) => (
-                        <CodyFeatureCard
-                            key={heading}
-                            description={description}
-                            subHeading={heading}
-                            descriptionClassName="text-sm"
-                        />
+                        <CodyFeatureCard key={heading} description={description} subHeading={heading} />
                     ))}
                 </div>
             </ContentSection>
@@ -397,26 +393,25 @@ const CodyPage: FunctionComponent = () => {
                     See what devs are building with Cody
                 </Heading>
 
-                <div className="mt-6 grid w-full grid-cols-1 gap-6 md:mt-16 md:grid-cols-2">
-                    <TwitterEmbed tweetId="1645903813302185984" className="flex max-w-[100%] justify-center" />
-                    <div className="flex flex-col">
-                        <TwitterEmbed tweetId="1647765520673046529?s=20" className="flex max-w-[100%] justify-center" />
-                        <TwitterEmbed tweetId="1645490165857542145" className="flex max-w-[100%] justify-center " />
+                <div className="mt-6 flex w-full flex-wrap justify-center gap-x-6 md:mt-16 md:grid-cols-2">
+                    <TwitterEmbed tweetId="1645903813302185984" className="flex w-full max-w-[500px] justify-center" />
+                    <div className="flex w-full max-w-[500px] flex-col gap-1">
+                        <TwitterEmbed tweetId="1647765520673046529?s=20" className="flex justify-center" />
+                        <TwitterEmbed tweetId="1645490165857542145" className="flex justify-center " />
                     </div>
                 </div>
             </ContentSection>
 
             <ContentSection
                 parentClassName="!py-0"
-                className="mx-auto flex flex-col items-center justify-center gap-x-8 py-16  md:flex-row md:items-start md:py-[112px]"
+                className="mx-auto flex flex-col items-center justify-center gap-x-8 py-24  md:flex-row md:items-start md:pb-[112px] md:pt-[208px]"
             >
                 <div className="max-w-[550px]">
                     <Heading size="h2" className="!text-4xl text-white">
                         Cody for personal use
                     </Heading>
                     <p className="mt-6 text-lg text-gray-200">
-                        Cody is free for personal use in Sourcegraph.com and in the VS Code extension. Create a free
-                        Sourcegraph.com account to get started.
+                        Cody is free for personal use in the Cody app and IDE extensions. Sign up to get access.
                     </p>
                     <div className="mt-6 flex flex-wrap gap-2">
                         <ExternalsAuth
@@ -465,8 +460,8 @@ const CodyPage: FunctionComponent = () => {
                         Cody for work
                     </Heading>
                     <p className="mt-6 text-lg text-gray-200">
-                        Cody for work provides context-aware answers based on your own private codebase. Contact us with
-                        the form below to learn more.
+                        Cody for Enterprise provides context-aware answers based on your own private codebase. Contact
+                        our sales team to learn more.
                     </p>
                     <Link href="#contact-form" title="Cody access form" className="btn btn-inverted-primary mt-1 w-fit">
                         Get Cody for work

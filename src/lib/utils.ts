@@ -80,7 +80,10 @@ export const kebabCase = (input: string): string => {
         .toLowerCase()
 }
 
-export const debounce = <F extends (...args: any[]) => void>(func: F, delay: number): ((...args: Parameters<F>) => void) => {
+export const debounce = <F extends (...args: any[]) => void>(
+    func: F,
+    delay: number
+): ((...args: Parameters<F>) => void) => {
     let timerId: NodeJS.Timeout
 
     return (...args: Parameters<F>): void => {
