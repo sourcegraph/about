@@ -20,6 +20,7 @@ const CodyAnswer: FunctionComponent<CodyAnswerProps> = ({ text, width = 'auto' }
     }
 
     return (
+        // eslint-disable-next-line react/forbid-dom-props
         <div className={classNames(styles.frame, styles.answerFrame)} style={containerStyle}>
             <div className={styles.codyLogo}>
                 <CodyLogo />
@@ -27,7 +28,7 @@ const CodyAnswer: FunctionComponent<CodyAnswerProps> = ({ text, width = 'auto' }
             <div className={styles.text}>
                 {lines.map((line, index) => (
                     // eslint-disable-next-line react/forbid-dom-props
-                    <div key={line} className={styles.typewriter} style={{ animationDelay: `${index * 1}s` }}>
+                    <div key={line} className={styles.typewriter} style={{ animationDelay: `${index * 0.6}s` }}>
                         {line}
                     </div>
                 ))}

@@ -255,9 +255,11 @@ const CodyPage: FunctionComponent = () => {
                             data-cookieconsent="ignore"
                         />
                     </video> */}
-                    
+                    <CodeCompletions />
+                    <CodeSmells />
                     <ExplainCode />
-                    <LottieAnimation />
+                    <UnitTest />
+                    <br />
                 </div>
             </ContentSection>
 

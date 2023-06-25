@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 
-import animationData from '/public/animations/3ExplainCode.json'
+import animationData from '/public/animations/UnitTest.lottie.json'
 
 import LottiePlayer, { LottiePlayerHandles } from '../../components/LottiePlayer'
 
@@ -18,7 +18,15 @@ const LottieAnimation = () => {
         }
     }
 
-    return <LottiePlayer ref={playerRef} animationData={animationData} autoplay={false} onClick={handleClick} />
+    return (
+        <LottiePlayer
+            ref={playerRef}
+            animationData={animationData}
+            autoplay={true}
+            loop={false}
+            onClick={handleClick}
+        />
+    )
 }
 
 export default LottieAnimation

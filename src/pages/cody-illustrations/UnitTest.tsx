@@ -3,6 +3,7 @@ import React, { FunctionComponent } from 'react'
 import styles from './CodeCompletions.module.css'
 import CodeBlock from './components/CodeBlock'
 import { WordStyle } from './components/ColoredCode'
+import CodyAnswer from './components/CodyAnswer'
 
 const UnitTest: FunctionComponent = () => {
     const code = `function sortArray(array) { 
@@ -23,7 +24,25 @@ const UnitTest: FunctionComponent = () => {
         { word: ')', style: styles.colorParenthesis },
     ]
 
-    return <CodeBlock code={code} wordsStyle={wordsStyle} gutter={{ from: 7, to: 9 }} isSelected={true} />
+    const codyAnswer = "Here's a unit test for the selected code:"
+
+    return (
+        <div>
+            <div className={styles.slideIn}>
+                <CodeBlock
+                    code={code}
+                    wordsStyle={wordsStyle}
+                    gutter={{ from: 7, to: 9 }}
+                    isSelected={true}
+                    width="400px"
+                />
+            </div>
+
+            <div style={{ position: 'relative', left: '100px', top: '-15px' }} className={styles.slideIn}>
+                <CodyAnswer text={codyAnswer} width="490px" />
+            </div>
+        </div>
+    )
 }
 
 export default UnitTest

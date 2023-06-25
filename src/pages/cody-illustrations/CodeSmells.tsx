@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react'
 
 import styles from './CodeCompletions.module.css'
 import CodeBlock from './components/CodeBlock'
+import CodyAnswer from './components/CodyAnswer'
 import { WordStyle } from './components/ColoredCode'
 
 const CodeSmells: FunctionComponent = () => {
@@ -29,7 +30,24 @@ const CodeSmells: FunctionComponent = () => {
   return users;
 }`
 
-    return <CodeBlock code={code} wordsStyle={wordsStyle} gutter={{ from: 12, to: 17 }} isSelected={true} />
+    const codyAnswer = "Consider using the 'map' method for array iteration instead of a 'for' loop."
+
+    return (
+        <div>
+            <div className={styles.slideIn}>
+                <CodeBlock
+                    code={code}
+                    wordsStyle={wordsStyle}
+                    gutter={{ from: 12, to: 17 }}
+                    isSelected={true}
+                    width="450px"
+                />
+            </div>
+            <div style={{ position: 'relative', left: '60px', top: '-15px' }} className={styles.slideIn}>
+                <CodyAnswer text={codyAnswer} width="560px" />
+            </div>
+        </div>
+    )
 }
 
 export default CodeSmells

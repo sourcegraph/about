@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from 'react'
 
 import styles from './CodeCompletions.module.css'
+import { Widget, Submenu, Pointer } from './components/Atoms'
 import CodeBlock from './components/CodeBlock'
 import CodyAnswer from './components/CodyAnswer'
 import { WordStyle } from './components/ColoredCode'
-import { ActionIllustration, Pointer } from './components/Atoms'
 
 const ExplainCode: FunctionComponent = () => {
     const wordsStyle: WordStyle[] = [
@@ -27,23 +27,17 @@ const ExplainCode: FunctionComponent = () => {
 
     return (
         <div>
-            <div className={styles.pointerAnimation}>
-                <Pointer />
+            <div className={styles.slideIn}>
+                <CodeBlock
+                    code={code}
+                    wordsStyle={wordsStyle}
+                    gutter={{ from: 6, to: 8 }}
+                    isSelected={true}
+                    width="400px"
+                />
             </div>
 
-            <div style={{ position: 'relative', left: '380px', top: '82px', zIndex: 10 }}>
-                <ActionIllustration />
-            </div>
-
-        <CodeBlock
-                code={code}
-                wordsStyle={wordsStyle}
-                gutter={{ from: 6, to: 8 }}
-                isSelected={true}
-                width="400px"
-            />
-
-            <div style={{ position: 'relative', left: '100px', top: '-20px' }}>
+            <div style={{ position: 'relative', left: '100px', top: '-20px' }} className={styles.slideIn}>
                 <CodyAnswer text={codyAnswer} width="490px" />
             </div>
         </div>
