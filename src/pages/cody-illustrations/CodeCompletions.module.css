@@ -31,7 +31,12 @@
     font-family: 'Source Sans Pro', SF Pro, Serif;
     font-size: 16px;
     padding: 18px;
+    opacity: .8;
     z-index: 3;
+}
+
+.answerFrame:before {
+    background-color: #33063e;
 }
 
 .cursor {
@@ -86,7 +91,16 @@
     color: transparent;
     overflow: hidden;
     white-space: pre;
-    animation: typing 3s steps(40, end), colorChange 0.1s 3s forwards;
+    animation: typing .6s steps(20, end), colorChange 0.1s 3s forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 .pointerAnimation {
@@ -108,14 +122,37 @@
     }
 }
 
-@keyframes typing {
-    from {
-        width: 0;
+@keyframes clickEffect {
+    0% {
+      transform: scale(1);
     }
-    to {
-        width: 100%;
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .clickEffect {
+    animation: clickEffect 0.3s linear;
+  }
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-13%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(2px);
+        opacity: 1;
     }
 }
+
+.slideIn {
+    animation: slideIn 1s ease-out forwards;
+}
+
 
 @keyframes colorChange {
     to {
