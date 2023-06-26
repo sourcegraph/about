@@ -252,6 +252,10 @@ const SecurityPage: FunctionComponent = () => (
                                             </li>
                                             <li>Our software components are monitored for CVEs.</li>
                                             <li>
+                                                We utilize industry-leading practices to build and ship our software,
+                                                utilizing distroless Docker images and a secure software supply-chain.
+                                            </li>
+                                            <li>
                                                 We publish signatures and Software Bill-of-Materials (SBOM) for our
                                                 container images, allowing customers to verify the security of our
                                                 products for themselves.
