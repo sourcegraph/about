@@ -31,7 +31,7 @@
     font-family: 'Source Sans Pro', SF Pro, Serif;
     font-size: 16px;
     padding: 18px;
-    opacity: .8;
+    opacity: 0.8;
     z-index: 3;
 }
 
@@ -91,7 +91,7 @@
     color: transparent;
     overflow: hidden;
     white-space: pre;
-    animation: typing .6s steps(20, end), colorChange 0.1s 3s forwards;
+    animation: typing 0.6s steps(20, end), colorChange 0.1s 3s forwards;
 }
 
 @keyframes typing {
@@ -124,19 +124,19 @@
 
 @keyframes clickEffect {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
     50% {
-      transform: scale(1.2);
+        transform: scale(1.2);
     }
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
-  .clickEffect {
+}
+
+.clickEffect {
     animation: clickEffect 0.3s linear;
-  }
+}
 
 @keyframes slideIn {
     0% {
@@ -152,7 +152,6 @@
 .slideIn {
     animation: slideIn 1s ease-out forwards;
 }
-
 
 @keyframes colorChange {
     to {

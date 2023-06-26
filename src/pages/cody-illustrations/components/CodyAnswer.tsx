@@ -5,18 +5,21 @@ import classNames from 'classnames'
 import styles from '../CodeCompletions.module.css'
 
 import { CodyLogo } from './Atoms'
+import { ColoredCode, WordStyle } from './ColoredCode'
 
 interface CodyAnswerProps {
     text: string
     width?: string
+    code?: string
+    wordsStyle?: WordStyle[]
 }
 
-const CodyAnswer: FunctionComponent<CodyAnswerProps> = ({ text, width = 'auto' }) => {
+const CodyAnswer: FunctionComponent<CodyAnswerProps> = ({ text, width = 'auto', code = '', wordsStyle }) => {
     // Split text into lines
     const lines = text.split('\n')
 
     const containerStyle: CSSProperties = {
-        width, 
+        width,
     }
 
     return (
@@ -32,6 +35,8 @@ const CodyAnswer: FunctionComponent<CodyAnswerProps> = ({ text, width = 'auto' }
                         {line}
                     </div>
                 ))}
+
+                {code && wordsStyle && <ColoredCode words={wordsStyle} code={code} isTypeWrited={true} />}
             </div>
         </div>
     )
