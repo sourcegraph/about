@@ -12,7 +12,7 @@ const UnitTest: FunctionComponent = () => {
 }`
 
     const wordsStyle: WordStyle[] = [
-        { word: 'Test sorts the array', style: styles.colorText },
+        { word: 'Test sorted array', style: styles.colorText },
         { word: 'function', style: styles.colorFunction },
         { word: 'sortArray', style: styles.colorSymbol },
         { word: 'toEqual', style: styles.colorSymbol },
@@ -33,7 +33,7 @@ const UnitTest: FunctionComponent = () => {
 
     const codyAnswer = "Here's a unit test for the selected code:"
     const codeAnswer = `
-test('Test sorts the array', () => {
+test('Test sorted array', () => {
     expect(sortArray([3, 1, 2])).toEqual([1, 2, 3]);
 });`
 

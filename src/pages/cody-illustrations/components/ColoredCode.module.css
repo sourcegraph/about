@@ -6,6 +6,7 @@
     animation: lineReveal 0.7s forwards ease-in-out;
     font-family: SF Mono, monospace;
     font-size: 0.83rem;
+    line-height: 1.32rem;
 }
 
 .lineWrapper::after {

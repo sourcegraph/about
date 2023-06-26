@@ -30,7 +30,7 @@ const CodyAnswer: FunctionComponent<CodyAnswerProps> = ({ text, width = 'auto', 
             <div className={styles.text}>
                 {lines.map((line, index) => (
                     // eslint-disable-next-line react/forbid-dom-props
-                    <div key={line} className={styles.typewriter} style={{ animationDelay: `${index * 1.2}s` }}>
+                    <div key={line} className={styles.typewriter} style={{ animationDelay: `${index * 1}s` }}>
                         {line}
                     </div>
                 ))}
