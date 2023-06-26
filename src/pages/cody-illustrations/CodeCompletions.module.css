@@ -39,16 +39,6 @@
     background-color: #33063e;
 }
 
-.cursor {
-    margin-left: 2px;
-    display: inline-block;
-    width: 2px;
-    height: 1.25em;
-    animation: blink 2s step-end infinite;
-    position: relative;
-    bottom: -3px;
-}
-
 .codyLogo {
     z-index: 3;
 }
@@ -103,6 +93,12 @@
     }
 }
 
+@keyframes colorChange {
+    to {
+        color: var(--sg-color-white);
+    }
+}
+
 .pointerAnimation {
     position: relative;
     animation: movePointer 2s ease-out;
@@ -122,48 +118,14 @@
     }
 }
 
-@keyframes clickEffect {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.clickEffect {
-    animation: clickEffect 0.3s linear;
-}
-
-@keyframes slideIn {
-    0% {
-        transform: translateY(50%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.slideIn {
-    animation: slideIn 1s ease-out forwards;
-}
-
-@keyframes colorChange {
-    to {
-        color: var(--sg-color-white);
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.cursor {
+    margin-left: 2px;
+    display: inline-block;
+    width: 2px;
+    height: 1.25em;
+    animation: blink 2s step-end infinite;
+    position: relative;
+    bottom: -3px;
 }
 
 @keyframes blink {
@@ -178,6 +140,19 @@
     }
 }
 
+.slideIn {
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(50%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .fadeIn {
     animation: fadeIn 0.4s ease-out;
     animation-fill-mode: forwards;
@@ -186,7 +161,17 @@
     font-style: italic;
 }
 
-/* Code parts colors */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Colors */
+
 .colorFunction {
     color: var(--sg-color-violet-300);
 }
