@@ -1,46 +1,17 @@
 import { FunctionComponent } from 'react'
 
+import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
+import Link from 'next/link'
+
 import {
-    Blockquote,
     ContentSection,
     IntegrationsSection,
     Layout,
-    Hero,
     TwoColumnSection,
+    Heading,
+    CustomerLogos,
     Video,
-    ResourceList,
-    CallToActionContentSection,
 } from '../components'
-import { StandardCallToAction } from '../components/cta/StandardCallToAction'
-import { buttonLocation } from '../data/tracking'
-
-const blogResources = [
-    {
-        title: 'Code search tidbits: 4 underrated features',
-        description:
-            "You can do some pretty wild things with Sourcegraph that you won't find in any other code search tool today. Read about 4 short-and-sweet tidbits of underrated search features that go a bit extra.",
-        type: 'Blog',
-        href: '/blog/code-search-tidbits-episode-1',
-    },
-    {
-        title: 'How we used Notebooks to make our CI more accessible and understandable',
-        description:
-            'Learn how Notebooks—Sourcegraph’s in-app living documentaiton—makes it easier to document complex codebases.',
-        type: 'Blog post',
-        href: '/blog/notebooks-ci',
-        img: {
-            src: '/blog/thumbnails/notebooks-ci.jpg',
-            alt: 'Sourcegraph Noebooks CI',
-        },
-    },
-    {
-        title: 'Key traits of a code intelligence platform',
-        description:
-            'Sourcegraph is more than search. Engage and enable your teams by helping developers get unblocked, resolve issues faster, and gain codebase insights.',
-        type: 'Guide',
-        href: '/guides/key-traits-of-a-code-intelligence-platform.pdf',
-    },
-]
 
 export const CodeSearchPage: FunctionComponent = () => (
     <Layout
@@ -50,18 +21,42 @@ export const CodeSearchPage: FunctionComponent = () => (
                 'Onboard to a new codebase, find answers faster, and identify security risks with Sourcegraph Code Search. Search across all the repositories you work with.',
         }}
         hero={
-            <Hero
-                variant="lightNebulousMars"
-                product="code search"
-                title={'Search your code.\nAll of it.'}
-                subtitle="Onboard to a new codebase, understand code faster, and identify security risks with universal code search."
-                cta={<StandardCallToAction buttonLocation={buttonLocation.hero} />}
-                displayUnderNav={true}
-            />
+            <>
+                <ContentSection
+                    parentClassName="!py-0 !px-sm overflow-x-clip"
+                    className="grid grid-cols-1 py-8 md:grid-cols-2 pt-16 md:pt-28"
+                >
+                    <div className="flex w-full flex-col">
+                        <Heading size="h1" className="text-white md:text-start md:!text-[52px]">
+                            Find, understand, and fix your code
+                        </Heading>
+
+                        <p className="pt-6 pb-5 text-3xl text-gray-200">
+                            Code Search, along with complimentary tools, helps devs find, fix, and onboard to new code
+                            quickly.
+                        </p>
+
+                        <Link href="/contact/request-info" className="btn btn-inverted-primary w-fit">
+                            Try Code Search for free
+                        </Link>
+                    </div>
+                </ContentSection>
+
+                <div className="absolute right-0 ml-9 hidden h-[579px] w-full bg-[url('/code-search/code-search-hero.svg')] bg-cover bg-center bg-no-repeat md:top-[110px] md:block md:w-[436px] lg:top-[191px] lg:w-[556px] xl:w-[726px]" />
+            </>
         }
+        headerColorTheme="purple"
+        className="sg-bg-code-search"
     >
-        <ContentSection background="white">
+        <CustomerLogos
+            className="-px-sm md:pt[180px] !bg-transparent lg:pt-[200px] xl:pt-[275px]"
+            monochrome={true}
+            dark={true}
+        />
+
+        <ContentSection parentClassName="!pb-0 md:!pb-24" className="md:pt-12">
             <TwoColumnSection
+                className="xl:!gap-x-[100px]"
                 centerContent={true}
                 reverseOnMobile={true}
                 leftColumn={
@@ -73,12 +68,14 @@ export const CodeSearchPage: FunctionComponent = () => (
                         }}
                         title="Sourcegraph Code Search"
                         loop={true}
+                        className="rounded-[5px] object-cover shadow-video lg:h-[401px] lg:w-[577px]"
                     />
                 }
                 rightColumn={
-                    <>
-                        <h2 className="mb-6">Find and fix code in any code host, language, or repository</h2>
-                        <ul>
+                    <div className="">
+                        <p className="text-lg font-semibold text-white">CODE SEARCH</p>
+                        <h2 className="mb-6 text-white">Find and fix code in any code host, language, or repository</h2>
+                        <ul className="text-lg text-gray-200">
                             <li className="mb-4">
                                 Be more efficient by reusing high-quality code. Find code across thousands of
                                 repositories and multiple code hosts in seconds.
@@ -92,62 +89,22 @@ export const CodeSearchPage: FunctionComponent = () => (
                                 confidence in what's in your codebase.
                             </li>
                         </ul>
-                    </>
+                        <Link href="/case-studies/nutanix-fixed-log4j-with-sourcegraph" className="flex font-semibold text-white">
+                            Read how Nutanix used Code Search to mitigate Log4j vulnerabilities <ChevronRightIcon />
+                        </Link>
+                    </div>
                 }
             />
         </ContentSection>
 
-        <ContentSection parentClassName="sg-bg-gradient-venus">
+        <ContentSection parentClassName="!pb-0 md:!pb-24">
             <TwoColumnSection
-                centerContent={true}
+                className="xl:!gap-x-[113px]"
                 leftColumn={
-                    <>
-                        <h2 className="mb-6">Move faster with Sourcegraph</h2>
-
-                        <h5>Onboard 2.5x quicker</h5>
-                        <p>
-                            Search across every repository and code host to get to know the repository structure and
-                            learn from other developers' code.
-                        </p>
-
-                        <h5>Improve developer happiness and productivity</h5>
-                        <p>
-                            Get answers faster without waiting for context from teammates or dealing with stale local
-                            clones.
-                        </p>
-
-                        <h5>Mitigate security and compliance risks</h5>
-                        <p>
-                            Get alerts for vulnerabilities and then automate security fixes across your entire codebase.
-                        </p>
-                    </>
-                }
-                rightColumn={
-                    <Blockquote
-                        inline={false}
-                        quote="At Criteo, developer happiness is our top priority-not just productivity. By providing them with the right tools, like Sourcegraph, we've found that increased productivity is a natural byproduct."
-                        author="Francois Jehl, Senior Engineering Manager at Criteo"
-                        logo={{
-                            src: '/external-logos/criteo-logo.svg',
-                            alt: 'Criteo logo',
-                            href: '/case-studies/criteo-tackles-big-code',
-                        }}
-                        link={{
-                            href: '/case-studies/criteo-tackles-big-code',
-                            text: 'Read the case study',
-                        }}
-                    />
-                }
-            />
-        </ContentSection>
-
-        <ContentSection background="white">
-            <TwoColumnSection
-                centerContent={true}
-                leftColumn={
-                    <>
-                        <h2 className="mb-6">Understand your code and its dependencies</h2>
-                        <ul>
+                    <div className="">
+                        <p className="text-lg font-semibold text-white">CODE NAVIGATION</p>
+                        <h2 className="mb-6 text-white">Understand your code and its dependencies</h2>
+                        <ul className="text-lg text-gray-200">
                             <li className="mb-4">
                                 Onboard to codebases faster with cross-repository code navigation features like “Go to
                                 definition” and "Find references."
@@ -161,7 +118,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                                 references across repositories.
                             </li>
                         </ul>
-                    </>
+                    </div>
                 }
                 rightColumn={
                     <Video
@@ -170,55 +127,114 @@ export const CodeSearchPage: FunctionComponent = () => (
                             mp4: '/animations/code-intel',
                             webm: '/animations/code-intel',
                         }}
-                        title="Sourcegraph Code Intelligence"
+                        title="Sourcegraph Notebooks"
                         loop={true}
+                        className="rounded-[5px] object-cover shadow-video lg:h-[401px] lg:w-[577px]"
                     />
                 }
             />
         </ContentSection>
 
-        <ContentSection background="white">
+        <ContentSection parentClassName="!pb-0 md:!pb-24">
             <TwoColumnSection
+                className="xl:!gap-x-[100px]"
                 centerContent={true}
                 reverseOnMobile={true}
                 leftColumn={
                     <Video
-                        host="self"
                         source={{
-                            mp4: '/animations/notebooks',
-                            webm: '/animations/notebooks',
+                            mp4: 'batch-changes/how-it-works',
+                            webm: 'batch-changes/how-it-works',
                         }}
-                        title="Sourcegraph Notebooks"
                         loop={true}
+                        title="Batch Changes: How it works"
+                        className="rounded-[5px] object-cover shadow-video lg:h-[401px] lg:w-[577px]"
                     />
                 }
                 rightColumn={
-                    <>
-                        <h2 className="mb-6">Create evergreen documentation with Notebooks</h2>
-                        <ul>
+                    <div className="">
+                        <p className="text-lg font-semibold text-white">BATCH CHANGES</p>
+                        <h2 className="mb-6 text-white">Automate large-scale code changes</h2>
+                        <ul className="text-lg text-gray-200">
                             <li className="mb-4">
-                                Enable engineers to commit their first line of code faster through living documentation
-                                that references live code.
+                                Find all occurrences of code to change with Code Search and programmatically those
+                                changes by creating a declarative specification file.
                             </li>
                             <li className="mb-4">
-                                Resolve incidents quickly with web-based documentation that is collaborative and
-                                shareable.
-                            </li>
-                            <li className="mb-4">
-                                Spend less time updating stale docs. Embed notebooks anywhere you can embed HTML, like
-                                your own internal docs tooling.
+                                Automatically track changeset lifecycle status, like check state, reviews, and merge
+                                status via the Sourcegraph UI so you can get the changesets merged.
                             </li>
                         </ul>
-                    </>
+                        <Link href="/case-studies/indeed-accelerates-development-velocity" className="flex font-semibold text-white">
+                            Read how Indeed uses Batch Changes to accelerate development <ChevronRightIcon />
+                        </Link>
+                    </div>
+                }
+            />
+        </ContentSection>
+
+        <ContentSection className="md:pb-4">
+            <TwoColumnSection
+                className="xl:!gap-x-[113px]"
+                centerContent={true}
+                leftColumn={
+                    <div className="">
+                        <p className="text-lg font-semibold text-white">CODE INSIGHT</p>
+                        <h2 className="mb-6 text-white">Track what really matters to you and your team</h2>
+                        <ul className="text-lg text-gray-200">
+                            <li className="mb-4">
+                                Make data-driven decisions using visualizations based on the power and accuracy of
+                                Sourcegraph Code Search.
+                            </li>
+                            <li className="mb-4">
+                                Engineering teams can track migrations and deprecations, ensure removal of security
+                                vulnerabilities, track code smells and health, and much more.
+                            </li>
+                        </ul>
+                        <Link href="https://about.sourcegraph.com/blog/announcing-code-insights" className="flex font-semibold text-white">
+                            Learn more about Code Insights <ChevronRightIcon />
+                        </Link>
+                    </div>
+                }
+                rightColumn={
+                    <Video
+                        source={{
+                            mp4: 'code_insights/code-insights-720',
+                            webm: 'code_insights/code-insights-720',
+                        }}
+                        title="Code Insights"
+                        loop={true}
+                        className="rounded-lg object-cover shadow-video lg:h-[401px] lg:w-[577px]"
+                    />
                 }
             />
         </ContentSection>
 
         <IntegrationsSection />
-
-        <CallToActionContentSection />
-
-        <ResourceList items={blogResources} title="Learn More" />
+        <ContentSection background="white" className="py-4">
+            <div className="mx-auto flex max-w-[1092px] flex-col items-center justify-between gap-x-8 rounded-md bg-[lightgray] bg-[url('/code-search/cta-background.png')]  bg-cover bg-center bg-no-repeat py-16 px-8 shadow-cta md:rounded-2xl md:bg-[length:974px_348px] md:py-24 md:px-20 lg:flex-row lg:bg-[length:1092px_324px]">
+                <div className="max-w-[516px] pb-16 md:pb-0">
+                    <Heading size="h2" className="mb-2 !text-3xl text-white md:!text-4xl">
+                        Try Sourcegraph on your code
+                    </Heading>
+                    <p className="max-w-2xl text-lg text-gray-200">
+                        Experience code intelligence with a free trial for you and your team, or search millions of open
+                        source repositories.
+                    </p>
+                </div>
+                <div className="flex flex-col items-start justify-start gap-4 md:flex-row md:items-center md:justify-center">
+                    <Link className="btn btn-inverted-primary" href="/get-started?t=enterprise">
+                        Start for free
+                    </Link>
+                    <Link
+                        className="rounded-[5px] border border-gray-200 py-2 px-6 text-gray-200 hover:border-white hover:text-white"
+                        href="/demo"
+                    >
+                        Meet with a product expert
+                    </Link>
+                </div>
+            </div>
+        </ContentSection>
     </Layout>
 )
 

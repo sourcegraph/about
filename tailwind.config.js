@@ -199,6 +199,8 @@ module.exports = {
         btn: `0px 0px 20px rgba(161, 18, 255, 0.7)`,
         modal: `0px 5px 23px rgba(0, 0, 0, 0.2)`,
         card: `0px 0px 20px -2px #A112FF80`,
+        video: `0px 0px 40px 3px rgba(161, 18, 255, 0.50)`,
+        cta: `0px 25px 50px -12px rgba(0, 0, 0, 0.25)`,
       },
     },
   },
