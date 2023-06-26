@@ -89,8 +89,12 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
                 private codebase.
             </p>
             <div className="flex flex-col sm:flex-row">
-                <Link href="/cody" title="Get Cody for work" className="btn btn-outline-white max-w-[200px] px-6">
-                    Get Cody for work
+                <Link
+                    href="/cody"
+                    title="Get Cody for Enterprise"
+                    className="rounded-[5px] border border-gray-200 py-2 px-6 text-gray-200 hover:border-white hover:text-white"
+                >
+                    Get Cody for Enterprise
                 </Link>
                 <MeetWithProductExpertButton
                     buttonClassName="text-white pl-0 mt-3 sm:pl-6 sm:mt-0"

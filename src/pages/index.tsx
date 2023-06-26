@@ -1,7 +1,9 @@
-import { FunctionComponent, useRef } from 'react'
+/* eslint-disable react/forbid-dom-props */
+import { FunctionComponent, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
+import PlusIcon from 'mdi-react/PlusIcon'
 import Link from 'next/link'
 
 import {
@@ -13,19 +15,21 @@ import {
     EmailAuth,
     VideoCarousel,
     CallToActionWithCody,
+    Badge,
 } from '../components'
 import { TwitterEmbed } from '../components/EmbedTweet'
 import { breakpoints } from '../data/breakpoints'
 import { useInView } from '../hooks/useInView'
 import { useWindowWidth } from '../hooks/windowWidth'
 
+interface AvailabilityImageProps {
+    src: string
+    alt: string
+    onHover: () => void
+    onMouseLeave: () => void
+}
+
 const carouselVideos = [
-    {
-        title: 'Code Fixup',
-        description: 'Cody edits and improves code directly using inline instructions.',
-        video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-fixup-may2023.mp4',
-        link: '/cody',
-    },
     {
         title: 'Context-aware chat',
         description: 'Cody can explain what code is doing—at a high level or in detail.',
@@ -44,6 +48,12 @@ const carouselVideos = [
         video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-unit-test-may2023.mp4',
         link: '/cody',
     },
+    {
+        title: 'Inline chat',
+        description: 'Cody edits and improves code directly using inline instructions.',
+        video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-fixup-may2023.mp4',
+        link: '/cody',
+    },
 ]
 
 const Home: FunctionComponent = () => {
@@ -51,7 +61,10 @@ const Home: FunctionComponent = () => {
     const isMobile = windowWidth < breakpoints.lg
 
     const innovationSectionRef = useRef<HTMLDivElement>(null)
-    const { isInView } = useInView(innovationSectionRef, isMobile ? 0.2 : 0.5)
+    const lightRef = useRef<HTMLImageElement>(null)
+
+    const isInnovationSectionRefInView = useInView(innovationSectionRef, isMobile ? 0.2 : 0.5)
+    const isLightRefInView = useInView(lightRef, isMobile ? 1 : 0.8)
 
     return (
         <Layout
@@ -65,19 +78,17 @@ const Home: FunctionComponent = () => {
             className="sg-bg-gradient-radial-home"
             hero={<HomeHero />}
         >
-            <div
-                ref={innovationSectionRef}
-                className={classNames('transition-opacity duration-1000', isInView ? 'opacity-100' : 'opacity-10')}
-            >
-                <img
-                    src="/home/light.svg"
-                    className={classNames(
-                        'mx-auto hidden max-h-[89px] pb-2 transition-opacity duration-1000 md:block',
-                        isInView ? 'opacity-100' : 'opacity-0'
-                    )}
-                    alt=""
-                    aria-hidden={true}
-                />
+            <img
+                src="/home/light.svg"
+                className={classNames(
+                    'mx-auto max-h-[89px] pb-2 transition-opacity',
+                    isLightRefInView ? 'animate-slideFadeIn' : 'opacity-0'
+                )}
+                alt=""
+                aria-hidden={true}
+                ref={lightRef}
+            />
+            <div ref={innovationSectionRef}>
                 <ContentSection parentClassName="!py-0">
                     <CustomerLogos
                         ctaLink={
@@ -90,8 +101,11 @@ const Home: FunctionComponent = () => {
                                 <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
                             </Link>
                         }
-                        className="-px-sm !bg-transparent"
-                        headline="1.8M+ devs at the world's leading eng orgs are Sourcegraph customers"
+                        className={classNames(
+                            '-px-sm !bg-transparent transition-opacity duration-1000',
+                            isInnovationSectionRefInView ? 'opacity-100 delay-[800ms]' : 'opacity-10'
+                        )}
+                        headline="Over 1.8M engineers use Sourcegraph"
                         headlineClassName="!text-4xl"
                         monochrome={true}
                         dark={true}
@@ -133,19 +147,22 @@ const Home: FunctionComponent = () => {
 }
 
 const HomeHero: FunctionComponent = () => {
+    const [hoveredImageText, setHoveredImageText] = useState('')
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
 
+    const lightRef = useRef<HTMLImageElement>(null)
     const whatIsSourcegraphRef = useRef<HTMLDivElement>(null)
     const codyGraph = useRef<HTMLImageElement>(null)
 
-    const { isInView: isWhatIsSourcegraphInView } = useInView(whatIsSourcegraphRef, isMobile ? 0.5 : 1)
-    const { isInView: isCodyGraphInView } = useInView(codyGraph, isMobile ? 1 : 0.5)
+    const isLightRefInView = useInView(lightRef, isMobile ? 0.5 : 0.8)
+    const isWhatIsSourcegraphInView = useInView(whatIsSourcegraphRef, isMobile ? 0.5 : 0.8)
+    const isCodyGraphInView = useInView(codyGraph, isMobile ? 0.5 : 0.8)
 
     return (
         <>
             <ContentSection parentClassName="!py-0 !px-sm overflow-x-clip" className="pb-[55px] md:pb-0">
-                <div className="grid grid-cols-1 gap-x-4 gap-y-16 bg-right bg-no-repeat pt-16 pb-11 md:grid-cols-2 md:px-6 md:pt-24 md:pb-16 lg:bg-[url('/home/home-hero-bg.png')] lg:bg-[length:800px_600px] xl:bg-[length:1000px_800px]">
+                <div className="grid grid-cols-1 gap-x-4 gap-y-16 bg-right bg-no-repeat pt-16 pb-11 md:grid-cols-2 md:px-6 md:pt-24 md:pb-8 lg:bg-[url('/home/home-hero-bg.png')] lg:bg-[length:800px_600px] xl:bg-[length:1000px_800px]">
                     <div className="mx-auto flex w-full max-w-[567px] flex-col items-center px-0 md:mx-0 md:items-start">
                         <Heading
                             size="h1"
@@ -209,21 +226,74 @@ const HomeHero: FunctionComponent = () => {
                 </div>
 
                 <div
+                    className="flex flex-col items-center bg-violet-400 bg-opacity-10 py-8"
+                    style={{ width: '100vw', marginLeft: 'calc((100% - 100vw) / 2)' }}
+                >
+                    <p className="text-2xl font-semibold text-violet-200">Available on:</p>
+                    <div className="flex flex-col items-center justify-center gap-y-8 md:flex-row md:gap-x-4">
+                        <div className="flex items-center justify-center gap-4">
+                            <AvailabilityImage
+                                src="/home/cody-logo.svg"
+                                alt="Cody App"
+                                onHover={() => setHoveredImageText('Cody App')}
+                                onMouseLeave={() => setHoveredImageText('')}
+                            />
+                            <PlusIcon size={25} className="text-white" />
+                            <AvailabilityImage
+                                src="/home/vs-code-logo.svg"
+                                alt="VS Code marketplace"
+                                onHover={() => setHoveredImageText('VS Code marketplace')}
+                                onMouseLeave={() => setHoveredImageText('')}
+                            />
+                        </div>
+                        <div className="relative flex rounded-lg border border-dashed border-gray-200 border-opacity-20">
+                            <Badge
+                                text="Join the waitlist"
+                                size="small"
+                                className="absolute -right-[4.25px] -top-[24.25px] w-fit text-gray-500 hover:cursor-pointer hover:bg-violet-100 hover:text-violet-600"
+                            />
+                            <AvailabilityImage
+                                src="/home/intelliJ-logo.svg"
+                                alt="IntelliJ (coming soon)"
+                                onHover={() => setHoveredImageText('IntelliJ (coming soon)')}
+                                onMouseLeave={() => setHoveredImageText('')}
+                            />
+                            <AvailabilityImage
+                                src="/home/neoVim-logo.svg"
+                                alt="neoVim (coming soon)"
+                                onHover={() => setHoveredImageText('neoVim (coming soon)')}
+                                onMouseLeave={() => setHoveredImageText('')}
+                            />
+                            <AvailabilityImage
+                                src="/home/emacs-logo.svg"
+                                alt="Emacs(coming soon)"
+                                onHover={() => setHoveredImageText('Emacs(coming soon)')}
+                                onMouseLeave={() => setHoveredImageText('')}
+                            />
+                        </div>
+                    </div>
+                    <p className={`pt-2 text-2xl font-semibold text-violet-200 ${hoveredImageText ? '' : 'opacity-0'}`}>
+                        {hoveredImageText || 'keep the space in the layout'}
+                    </p>
+                </div>
+
+                <img
+                    src="/home/light.svg"
+                    className={classNames(
+                        'mx-auto max-h-[89px] pt-[20px] pb-4 md:pt-0 md:pb-[17px]',
+                        isLightRefInView ? 'animate-slideFadeIn' : 'opacity-0'
+                    )}
+                    alt=""
+                    aria-hidden={true}
+                    ref={lightRef}
+                />
+                <div
                     ref={whatIsSourcegraphRef}
                     className={classNames(
                         'mx-auto max-w-[758px] transition-opacity duration-1000',
-                        isWhatIsSourcegraphInView ? 'opacity-100' : 'opacity-10'
+                        isWhatIsSourcegraphInView ? 'opacity-100 delay-[800ms]' : 'opacity-10'
                     )}
                 >
-                    <img
-                        src="/home/light.svg"
-                        className={classNames(
-                            'mx-auto max-h-[89px] pt-[20px] pb-4 md:pt-0 md:pb-[17px]',
-                            isWhatIsSourcegraphInView ? 'opacity-100' : 'opacity-0'
-                        )}
-                        alt=""
-                        aria-hidden={true}
-                    />
                     <Heading size="h6" className="text-center text-white">
                         What is sourcegraph?
                     </Heading>
@@ -238,10 +308,10 @@ const HomeHero: FunctionComponent = () => {
                     <img
                         loading="lazy"
                         alt="Home Illustartion"
-                        src="/home/home-illustration-mobile.svg"
+                        src="/home/glow.svg"
                         className={classNames(
                             'mx-auto h-[285px] w-fit py-6 transition-opacity duration-1000 md:hidden',
-                            isCodyGraphInView ? 'opacity-100' : 'opacity-10'
+                            isCodyGraphInView ? 'opacity-100 delay-[800ms]' : 'opacity-10'
                         )}
                         ref={codyGraph}
                     />
@@ -249,10 +319,10 @@ const HomeHero: FunctionComponent = () => {
                     <img
                         loading="lazy"
                         alt="Home Illustartion"
-                        src="/home/home-illustration.svg"
+                        src="/home/glow.svg"
                         className={classNames(
                             'mx-auto hidden h-[465px] pt-2 pb-[73px] transition-opacity duration-1000 md:block md:w-[859px] lg:w-[1005px]',
-                            isCodyGraphInView ? 'opacity-100' : 'opacity-10'
+                            isCodyGraphInView ? 'opacity-100 delay-[800ms]' : 'opacity-10'
                         )}
                         ref={codyGraph}
                     />
@@ -341,4 +411,17 @@ const HomeHero: FunctionComponent = () => {
         </>
     )
 }
+
+const AvailabilityImage: React.FC<AvailabilityImageProps> = ({ src, alt, onHover, onMouseLeave }) => {
+    const handleMouseEnter = (): void => {
+        onHover()
+    }
+
+    return (
+        <div className="group relative" onMouseEnter={handleMouseEnter} onMouseLeave={onMouseLeave}>
+            <img src={src} alt={alt} />
+        </div>
+    )
+}
+
 export default Home

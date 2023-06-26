@@ -1,6 +1,6 @@
 import { useState, useEffect, RefObject } from 'react'
 
-export const useInView = (elementRef: RefObject<Element>, customThreshold?: number): { isInView: boolean } => {
+export const useInView = (elementRef: RefObject<Element>, customThreshold?: number): boolean => {
     const [isInView, setIsInView] = useState(false)
 
     useEffect(() => {
@@ -22,5 +22,5 @@ export const useInView = (elementRef: RefObject<Element>, customThreshold?: numb
         }
     }, [elementRef, customThreshold])
 
-    return { isInView }
+    return isInView
 }

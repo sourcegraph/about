@@ -188,6 +188,7 @@ module.exports = {
         'flash-background': 'flashBackground 1s ease-out',
         fadeOutSlow: 'fadeOut 1s ease-out',
         fadeIn: 'fadeIn 0.175s ease-in forwards',
+        slideFadeIn: 'slideFadeIn 1s ease-in-out',
       },
 
       dropShadow: {

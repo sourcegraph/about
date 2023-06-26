@@ -378,6 +378,17 @@
     .sg-bg-hover-external-auth-button {
         background: radial-gradient(335.42% 234.22% at 56.46% 72.22%, rgba(0, 84, 130, 0.20) 0%, rgba(161, 18, 255, 0.20) 36.46%, rgba(161, 18, 255, 0.00) 68.23%), #FFF;
     }
+
+    @keyframes slideFadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
 }
 
 /**
