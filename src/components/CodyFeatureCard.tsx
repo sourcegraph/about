@@ -1,4 +1,4 @@
-import { FunctionComponent, MouseEvent, useRef, useState } from 'react'
+import { FunctionComponent, MouseEvent, MutableRefObject, useEffect, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 
@@ -16,6 +16,7 @@ interface Props {
     className?: string
     descriptionClassName?: string
     plainOnMobile?: boolean
+    animation?: React.ReactNode
 }
 
 export const CodyFeatureCard: FunctionComponent<Props> = ({
@@ -26,6 +27,7 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
     subHeading,
     descriptionClassName,
     plainOnMobile = true,
+    animation,
 }) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.sm
@@ -57,6 +59,9 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
         setHovered(shouldHover)
     }
 
+    const animationContainerRef = useRef<HTMLDivElement>(null)
+    const isInViewport = useAnimatinIsOnScreen(animationContainerRef)
+
     return (
         <div
             className={classNames(
@@ -79,6 +84,16 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
                     className={classNames('mb-5 w-full', plainOnMobile && 'hidden sm:block')}
                 />
             )}
+            {animation && (
+                <div
+                    // eslint-disable-next-line react/forbid-dom-props
+                    style={{ height: 190, overflow:'hidden' }}
+                    className={classNames('w-full', plainOnMobile && 'hidden sm:block')}
+                    ref={animationContainerRef}
+                >
+                    {isInViewport && animation}
+                </div>
+            )}
             {heading && (
                 <Heading size="h2" className="mb-6 !text-4xl">
                     {heading}
@@ -98,4 +113,29 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
             )}
         </div>
     )
+}
+
+const useAnimatinIsOnScreen = (ref: MutableRefObject<HTMLElement | null>): boolean => {
+    const [isIntersecting, setIntersecting] = useState(false)
+    const hasIntersected = useRef(false)
+
+    useEffect(() => {
+        const currentRef = ref.current
+        const observer = new IntersectionObserver(([entry]) => {
+            if (!hasIntersected.current && entry.isIntersecting) {
+                setIntersecting(true)
+                hasIntersected.current = true
+            }
+        })
+        if (currentRef) {
+            observer.observe(currentRef)
+        }
+        return () => {
+            if (currentRef) {
+                observer.unobserve(currentRef)
+            }
+        }
+    }, [ref])
+
+    return isIntersecting
 }
