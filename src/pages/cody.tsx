@@ -21,11 +21,10 @@ import { useAuthModal } from '../context/AuthModalContext'
 import CodeCompletions from './cody-illustrations/CodeCompletions'
 import CodeSmells from './cody-illustrations/CodeSmells'
 import ExplainCode from './cody-illustrations/ExplainCode'
+import SummarizeCode from './cody-illustrations/SummarizeCode'
 import UnitTest from './cody-illustrations/UnitTest'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
-import CodyAnswer from './cody-illustrations/components/CodyAnswer'
-import LottieAnimation from './cody-illustrations/Lottie'
 
 const codyFeatures1 = [
     {
@@ -260,6 +259,7 @@ const CodyPage: FunctionComponent = () => {
                     <ExplainCode />
                     <UnitTest />
                     <br />
+                    
                 </div>
             </ContentSection>
 
@@ -312,6 +312,7 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection parentClassName="!py-0" className="mt-16">
+            <UnitTest />
                 <div className="grid grid-cols-1 justify-center gap-x-6 gap-y-14 sm:grid-cols-2 md:grid-cols-3">
                     {codyFeatures2.map(item => (
                         <div key={item.heading} className="md:max-w-[410px]">
@@ -322,6 +323,7 @@ const CodyPage: FunctionComponent = () => {
                         </div>
                     ))}
                 </div>
+                <SummarizeCode />
             </ContentSection>
 
             <ContentSection
