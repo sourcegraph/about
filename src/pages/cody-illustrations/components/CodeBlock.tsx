@@ -48,7 +48,7 @@ const CodeBlock: FunctionComponent<CodeBlockProps> = ({
                     code={code}
                     selectedStyle={isSelected ? styles.codeSelected : undefined}
                 />
-                <Cursor />
+                
                 {codeGenerated && (
                     <div className={classNames(styles.fadeIn, styles.codeGenerated)}>{codeGenerated}</div>
                 )}

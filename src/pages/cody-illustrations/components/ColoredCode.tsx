@@ -2,6 +2,7 @@ import React, { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
 
+import { Cursor } from './Atoms'
 import styles from './ColoredCode.module.css'
 
 interface WordEntry {
@@ -24,6 +25,7 @@ export interface ColoredCodeProps {
     code: string
     selectedStyle?: string | undefined
     isTypeWrited?: boolean
+    showCursor?: boolean;
 }
 
 export const ColoredCode: FunctionComponent<ColoredCodeProps> = ({
@@ -31,6 +33,7 @@ export const ColoredCode: FunctionComponent<ColoredCodeProps> = ({
     code,
     selectedStyle,
     isTypeWrited: isAnimated = false,
+    showCursor = true
 }) => {
     const [lines, setLines] = useState<string[]>([])
 
@@ -75,16 +78,17 @@ export const ColoredCode: FunctionComponent<ColoredCodeProps> = ({
             })
         )
 
-        const key = `line-${index}-${line}`; 
+        const key = `line-${index}-${line}`
 
         return (
             <div
                 className={isAnimated ? styles.lineWrapper : undefined}
                 key={key}
                 // eslint-disable-next-line react/forbid-dom-props
-                style={isAnimated ? { animationDelay: `${index * 1}s` } : {}}
+                style={isAnimated ? { animationDelay: `${index * 0.6}s` } : {}}
             >
                 {wordsInLine}
+                {showCursor && index === lines.length - 1 && <Cursor />}
             </div>
         )
     })

@@ -140,12 +140,10 @@
 
 @keyframes slideIn {
     0% {
-        transform: translateY(-13%);
-        opacity: 0.5;
+        transform: translateY(-25%);
     }
     100% {
-        transform: translateY(2px);
-        opacity: 1;
+        transform: translateY(3px);
     }
 }
 
@@ -208,4 +206,8 @@
 .colorParenthesis,
 .colorCommands {
     color: var(--sg-color-cerise-300);
+}
+
+.colorText {
+    color: var(--sg-color-vermillion-200);
 }

@@ -36,7 +36,9 @@ const CodyAnswer: FunctionComponent<CodyAnswerProps> = ({ text, width = 'auto', 
                     </div>
                 ))}
 
-                {code && wordsStyle && <ColoredCode words={wordsStyle} code={code} isTypeWrited={true} />}
+                {code && wordsStyle && (
+                    <ColoredCode words={wordsStyle} code={code} isTypeWrited={true} showCursor={false} />
+                )}
             </div>
         </div>
     )

@@ -11,15 +11,17 @@ const UnitTest: FunctionComponent = () => {
 }`
 
     const wordsStyle: WordStyle[] = [
+        { word: 'Test sorts the array', style: styles.colorText },
         { word: 'function', style: styles.colorFunction },
         { word: 'sortArray', style: styles.colorSymbol },
         { word: 'toEqual', style: styles.colorSymbol },
         { word: 'array', style: styles.colorVariable },
+        { word: 'a', style: styles.colorVariable },
+        { word: 'b', style: styles.colorVariable },
         { word: 'return', style: styles.colorCommands },
         { word: 'sort', style: styles.colorFunction },
         { word: 'expect', style: styles.colorSymbol },
-        { word: 'a', style: styles.colorVariable },
-        { word: 'b', style: styles.colorVariable },
+        { word: 'test', style: styles.colorSymbol },
         { word: '{', style: styles.colorBrackets },
         { word: '}', style: styles.colorBrackets },
         { word: '[', style: styles.colorParenthesis },
@@ -30,10 +32,9 @@ const UnitTest: FunctionComponent = () => {
 
     const codyAnswer = "Here's a unit test for the selected code:"
     const codeAnswer = `
-test('Sorts the array [3, 1, 2] to [1, 2, 3]', () => {
+test('Test sorts the array', () => {
     expect(sortArray([3, 1, 2])).toEqual([1, 2, 3]);
-});
-`
+});`
 
     return (
         <div>

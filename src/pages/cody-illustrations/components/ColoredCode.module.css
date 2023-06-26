@@ -1,9 +1,9 @@
 .lineWrapper {
-    white-space: nowrap;
+    white-space: pre;
     overflow: hidden;
     position: relative;
     width: 0;
-    animation: lineReveal 1s forwards;
+    animation: lineReveal 0.7s forwards ease-in-out;
     font-family: SF Mono, monospace;
     font-size: 0.83rem;
 }

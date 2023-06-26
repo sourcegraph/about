@@ -23,7 +23,7 @@ const ExplainCode: FunctionComponent = () => {
     return base ** exponent;
 }`
     const codyAnswer =
-        'This code helps you find the result of raising a number (base)\n to a specific power(exponent). For example, 2 and 3 are the\nbase and exponent, resulting in 8.'
+        'This code helps you find the result of raising a number (base)\nto a specific power(exponent). For example, 2 and 3 are the\nbase and exponent, resulting in 8.'
 
     return (
         <div>
