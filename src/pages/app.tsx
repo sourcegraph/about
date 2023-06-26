@@ -14,7 +14,7 @@ const AppPage: FunctionComponent = () => (
             image: 'https://about.sourcegraph.com/app/app-og.png',
         }}
         headerColorTheme="purple"
-        childrenClassName="sg-bg-gradient-app-large text-white px-sm"
+        childrenClassName="sg-bg-gradient-mobile md:sg-bg-gradient-app-large text-white px-sm"
         displayChildrenUnderNav={true}
     >
         <div className="mx-auto flex max-w-[637px] flex-col items-center justify-center pt-lg text-center">
