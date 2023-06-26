@@ -2,7 +2,7 @@ import classNames from 'classnames'
 import EmailOutlineIcon from 'mdi-react/EmailOutlineIcon'
 import Link from 'next/link'
 
-import { getEventLogger } from '../../hooks/eventLogger'
+import { EventName, getEventLogger } from '../../hooks/eventLogger'
 
 interface EmailAuthProps {
     label?: React.ReactNode | string
@@ -24,7 +24,7 @@ export const EmailAuth: React.FunctionComponent<EmailAuthProps> = ({
             description: '',
         }
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger().log('SignupInitiated', eventArguments, eventArguments)
+        getEventLogger().log(EventName.SIGNUP_INITIATED, eventArguments, eventArguments)
     }
 
     return (

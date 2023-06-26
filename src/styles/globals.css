@@ -125,6 +125,9 @@
     .btn-group > .btn:not(:first-child) {
         @apply rounded-l-none ml-[1.5px];
     }
+    .btn-default-outlined {
+        @apply text-white border border-white text-base font-semibold hover:bg-white hover:text-violet-500
+    }
 }
 
 /* Custom Utilities */
@@ -287,6 +290,12 @@
     .sg-hero-bg-gradient {
         background: radial-gradient(116.94% 133.26% at 52.08% 100%, #6112A3 0.41%, #270741 54.04%, #1E0632 94.78%);
     }
+    .sg-bg-gradient-mobile {
+        background: radial-gradient(27.19% 24.43% at 82.36% 56.71%, #270741 0%, rgba(39, 7, 65, 0) 100%), 
+        radial-gradient(142.09% 18.17% at 20.93% 85.07%, rgba(158, 23, 105, 0.55) 0.41%, rgba(158, 23, 105, 0) 100%),
+        radial-gradient(79.36% 15.65% at 100% 10.69%, rgba(158, 23, 105, 0.45) 0%, rgba(255, 85, 67, 0) 100%, rgba(158, 23, 105, 0) 100%),
+        radial-gradient(121.35% 585.52% at 115.38% -2.37%, #270741 0%, #1E0632 71.46%, #0F111A 100%), #FFFFFF;
+    }
   
     .sg-aws-bg-gradient {
         background: radial-gradient(112.81% 41.73% at 95.07% 0%, #270741 0%, rgba(39, 7, 65, 0) 100%),
@@ -311,7 +320,7 @@
     }
 
     .sg-home-cody-feature-div {
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02)), radial-gradient(46.56% 46.56% at 21.69% 3.44%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02)), radial-gradient(46.56% 46.56% at 21.69% 3.44%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%) ;
         border: 1px solid rgba(255, 255, 255, 0.04);
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
         border-radius: 8px;
@@ -322,7 +331,7 @@
     }
 
     .sg-home-cta {
-        background: radial-gradient(46.56% 46.56% at 21.69% 3.44%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(93.7% 108.2% at 52.08% 100%, #6112A3 0.41%, #270741 54.04%, #1E0632 94.78%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        background: radial-gradient(46.56% 46.56% at 21.69% 3.44%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%) , linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(93.7% 108.2% at 52.08% 100%, #6112A3 0.41%, #270741 54.04%, #1E0632 94.78%) ;
         border: 1px solid rgba(255, 255, 255, 0.04);
         /* shadow-2xl */
 
@@ -348,6 +357,16 @@
     }
     .sg-bg-gradient-cody {
         background: radial-gradient(196.63% 32.01% at 101.28% 2%, #6112A3 0.41%, rgba(39, 7, 65, 0) 54.04%), radial-gradient(151.99% 42.7% at 15.73% 91.97%, #6112A3 0.41%, rgba(39, 7, 65, 0) 54.04%), #1E0632;
+    }
+    .sg-resource-hero {
+        background: linear-gradient(273.62deg, #6112A3 -7.78%, #1E0632 15.45%, #350A59 68.2%, #270741 88.9%, #6112A3 103.85%);
+    }
+    .sg-cody-feature-card {
+        background: linear-gradient(0deg, rgba(188, 79, 255, 0.06), rgba(188, 79, 255, 0.06)), radial-gradient(63.3% 72.11% at 95.66% -10.78%, rgba(188, 79, 255, 0.13) 0%, rgba(188, 79, 255, 0.0325) 100%);
+    }
+
+    .sg-cody-feature-card-highlight {
+        background: radial-gradient(73.85% 73.85% at 49.82% 45.76%, rgba(0, 84, 130, 0.12) 0%, rgba(161, 18, 255, 0.11) 36.46%, rgba(161, 18, 255, 0.00) 68.23%);
     }
 }
 

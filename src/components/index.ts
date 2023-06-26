@@ -66,7 +66,7 @@ export {
 } from './Pricing'
 
 // Resources
-export { Filters, type Filter, Card, resourceItems, type Resource, useFilters } from './Resources'
+export { Filters, type Filter, Card, ResourceCard, resourceItems, type Resource, useFilters } from './Resources'
 
 // Starship
 export { FeatureUser } from './Starship/FeatureUser'
@@ -76,3 +76,6 @@ export { CountDown } from './Starship/CountDown'
 
 // Own
 export { FeatureRoadMap } from './Own'
+
+// Cody
+export { CodyFeatureCard } from './CodyFeatureCard'

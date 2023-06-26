@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import { EventName, getEventLogger } from '../../hooks/eventLogger'
+
 import { resourceItems, Filter } from '.'
 
 interface UseFilters {
@@ -17,6 +19,14 @@ interface UseFilters {
  * based on our resource items data.
  */
 export const useFilters = (): UseFilters => {
+    const logResourceClickEvent = (groupTitle: string, type: string): void => {
+        const eventName =
+            groupTitle === 'Content Type' ? EventName.RESOURCE_CONTENT_TYPE_FILTER : EventName.RESOURCE_SUBJECT_FILTER
+
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        getEventLogger().log(eventName, { type }, { type })
+    }
+
     const defaultFilterGroups = [
         {
             title: 'Content Type',
@@ -60,6 +70,7 @@ export const useFilters = (): UseFilters => {
         ]
 
         setFilterGroups(updatedFilterGroups)
+        logResourceClickEvent(groupTitle, filter.text)
     }
 
     /**

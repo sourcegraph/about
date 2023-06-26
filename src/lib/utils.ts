@@ -79,3 +79,17 @@ export const kebabCase = (input: string): string => {
         .replace(/[\s_]+/g, '-') // Replace spaces and underscores with hyphens
         .toLowerCase()
 }
+
+export const debounce = <F extends (...args: any[]) => void>(
+    func: F,
+    delay: number
+): ((...args: Parameters<F>) => void) => {
+    let timerId: NodeJS.Timeout
+
+    return (...args: Parameters<F>): void => {
+        clearTimeout(timerId)
+        timerId = setTimeout(() => {
+            func(...args)
+        }, delay)
+    }
+}

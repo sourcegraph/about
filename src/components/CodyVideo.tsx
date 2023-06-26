@@ -3,7 +3,7 @@ import React, { useCallback, useRef, useState } from 'react'
 import classNames from 'classnames'
 import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
 
-import { getEventLogger } from '../hooks/eventLogger'
+import { EventName, getEventLogger } from '../hooks/eventLogger'
 
 const VIDEOS: Record<'cody-demo-202303', { poster: string; mp4: string; webm: string; dimensions: number }> = {
     'cody-demo-202303': {
@@ -47,7 +47,7 @@ export const DemoVideo: React.FunctionComponent<{
             ref={videoRef}
             // eslint-disable-next-line react/forbid-dom-props
             style={{ aspectRatio: videoInfo.dimensions }}
-            onPlay={() => getEventLogger().log('StaticVideoPlayed', { title }, { title })}
+            onPlay={() => getEventLogger().log(EventName.STATIC_VIDEO_PLAYED, { title }, { title })}
         >
             <source type="video/webm" src={videoInfo.webm} data-cookieconsent="ignore" />
             <source type="video/mp4" src={videoInfo.mp4} data-cookieconsent="ignore" />

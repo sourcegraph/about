@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { Badge, ContentSection, FeatureRoadMap, Heading, Layout } from '../components'
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
 import { buttonLocation } from '../data/tracking'
-import { getEventLogger } from '../hooks/eventLogger'
+import { EventName, getEventLogger } from '../hooks/eventLogger'
 
 interface OwnContentProps {
     title: string
@@ -110,7 +110,7 @@ const OwnPage: FunctionComponent = () => (
                     data-cookieconsent="ignore"
                     onPlay={() =>
                         getEventLogger().log(
-                            'StaticVideoPlayed',
+                            EventName.STATIC_VIDEO_PLAYED,
                             { title: 'Own vulnerabilities' },
                             { title: 'Own vulnerabilities' }
                         )
@@ -142,7 +142,7 @@ const OwnPage: FunctionComponent = () => (
                     data-cookieconsent="ignore"
                     onPlay={() =>
                         getEventLogger().log(
-                            'StaticVideoPlayed',
+                            EventName.STATIC_VIDEO_PLAYED,
                             { title: 'Own knowledge sharing' },
                             { title: 'Own knowledge sharing' }
                         )
