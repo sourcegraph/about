@@ -6,7 +6,7 @@ tags: [blog]
 slug: cody-gitlab-integration
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/Sourcegraph%20x%20Gitlab.png
-socialImage: Use to set large social image i.e.  https://storage.googleapis.com/sourcegraph-assets/blog/Sourcegraph%20x%20Gitlab.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/Sourcegraph%20x%20Gitlab.png
 ---
 
 As developers continue to lean into AI, Sourcegraph is making its AI coding assistant, Cody, more broadly available. 
