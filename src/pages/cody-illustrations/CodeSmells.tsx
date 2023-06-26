@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-dom-props */
 import React, { FunctionComponent } from 'react'
 
 import styles from './CodeCompletions.module.css'
@@ -17,9 +18,9 @@ const CodeSmells: FunctionComponent = () => {
         { word: ']', style: styles.colorParenthesis },
         { word: 'updateUsersWithAge', style: styles.colorSymbol },
         { word: 'map', style: styles.colorSymbol },
-        { word: 'calcAge', style: styles.colorSymbol },
+        { word: 'getAge', style: styles.colorSymbol },
         { word: 'users', style: styles.colorVariable },
-        { word: 'user', style: styles.colorVariable },
+        { word: 'usr', style: styles.colorVariable },
         { word: 'i', style: styles.colorVariable },
         { word: 'for', style: styles.colorFunction },
         { word: 'let', style: styles.colorFunction },
@@ -27,27 +28,27 @@ const CodeSmells: FunctionComponent = () => {
 
     const code = `function updateUsersWithAge(users) {
   for (let i = 0; i < users.length; i++) {
-    users[i].age = calcAge(users[i].dateOfBirth);
+    users[i].age = getAge(users[i].dateOfBirth);
   }
   return users;
 }`
 
     const codyAnswer = "Consider using the 'map' method for array iteration instead of a 'for' loop."
-    const codeAnswer = 'users.map(user => ({ ...user, age: calcAge(user.dateOfBirth)}))'
+    const codeAnswer = 'users.map(usr => ({ ...usr, age: getAge(user.dateOfBirth)}))'
 
     return (
         <div>
-            <div className={styles.slideIn}>
+            <div className={styles.slideIn} style={{ position: 'relative', left: '60px' }}>
                 <CodeBlock
                     code={code}
                     wordsStyle={wordsStyle}
                     gutter={{ from: 12, to: 17 }}
                     isSelected={true}
-                    width="450px"
+                    width="500px"
                 />
             </div>
-            <div style={{ position: 'relative', left: '40px', top: '-15px' }} className={styles.slideIn}>
-                <CodyAnswer text={codyAnswer} code={codeAnswer} wordsStyle={wordsStyle} width="585px" />
+            <div style={{ position: 'relative', top: '-28px' }} className={styles.slideIn}>
+                <CodyAnswer text={codyAnswer} code={codeAnswer} wordsStyle={wordsStyle} width="570px" />
             </div>
         </div>
     )

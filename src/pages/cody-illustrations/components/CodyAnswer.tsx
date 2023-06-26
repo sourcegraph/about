@@ -15,7 +15,6 @@ interface CodyAnswerProps {
 }
 
 const CodyAnswer: FunctionComponent<CodyAnswerProps> = ({ text, width = 'auto', code = '', wordsStyle }) => {
-    // Split text into lines
     const lines = text.split('\n')
 
     const containerStyle: CSSProperties = {

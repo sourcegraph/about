@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-dom-props */
 import React, { FunctionComponent } from 'react'
 
 import styles from './CodeCompletions.module.css'
@@ -48,8 +49,8 @@ test('Test sorts the array', () => {
                 />
             </div>
 
-            <div style={{ position: 'relative', left: '80px', top: '-15px' }} className={styles.slideIn}>
-                <CodyAnswer text={codyAnswer} width="520px" code={codeAnswer} wordsStyle={wordsStyle} />
+            <div style={{ position: 'relative', left: '65px', top: '-27px' }} className={styles.slideIn}>
+                <CodyAnswer text={codyAnswer} width="500px" code={codeAnswer} wordsStyle={wordsStyle} />
             </div>
         </div>
     )

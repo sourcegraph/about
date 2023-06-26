@@ -30,7 +30,7 @@
     background: linear-gradient(162deg, #00a5ff, #78cfff, #7f00ab, transparent, transparent, transparent);
     font-family: 'Source Sans Pro', SF Pro, Serif;
     font-size: 16px;
-    padding: 18px;
+    padding: 13px 18px;
     opacity: 0.8;
     z-index: 3;
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-dom-props */
 import React, { FunctionComponent } from 'react'
 
 import styles from './CodeCompletions.module.css'
@@ -37,8 +38,8 @@ const ExplainCode: FunctionComponent = () => {
                 />
             </div>
 
-            <div style={{ position: 'relative', left: '100px', top: '-20px' }} className={styles.slideIn}>
-                <CodyAnswer text={codyAnswer} width="490px" />
+            <div style={{ position: 'relative', left: '78px', top: '-10px' }} className={styles.slideIn}>
+                <CodyAnswer text={codyAnswer} width="485px" />
             </div>
         </div>
     )
