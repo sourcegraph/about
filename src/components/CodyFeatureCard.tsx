@@ -4,7 +4,6 @@ import classNames from 'classnames'
 
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
-import { debounce } from '../lib/utils'
 
 import { Heading } from './Heading'
 
@@ -31,12 +30,14 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
     const isMobile = windowWidth < breakpoints.sm
     const [hovered, setHovered] = useState(false)
 
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+
     const cardRef = useRef<HTMLDivElement>(null)
     const hoverEffectRef = useRef<HTMLDivElement>(null)
 
     const shouldHideHoverEffect = isMobile && plainOnMobile
 
-    const handleMouseMove = debounce((event: MouseEvent): void => {
+    const handleMouseMove = (event: MouseEvent): void => {
         if (!hoverEffectRef.current || !cardRef.current || shouldHideHoverEffect) {
             return
         }
@@ -46,9 +47,11 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
         const relativeX = clientX - left - 130
         const relativeY = clientY - top - 130
 
-        hoverEffectRef.current.style.top = `${relativeY}px`
-        hoverEffectRef.current.style.left = `${relativeX}px`
-    }, 15)
+        setMousePosition({
+            x: relativeX,
+            y: relativeY
+        })
+    }
 
     const toggleHovered = (shouldHover: boolean): void => {
         if (shouldHideHoverEffect) {
@@ -92,8 +95,12 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
             <p className={classNames(descriptionClassName, 'm-0 text-base font-normal text-gray-200')}>{description}</p>
             {hovered && (
                 <div
-                    className="sg-cody-feature-card-highlight absolute z-10 h-72 w-72 rounded-[50%] bg-white transition-all duration-300 ease-in-out"
+                    className="sg-cody-feature-card-highlight absolute z-10 h-72 w-72 rounded-[50%]"
                     ref={hoverEffectRef}
+                    // eslint-disable-next-line react/forbid-dom-props
+                    style={{
+                        transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`,
+                    }}
                 />
             )}
         </div>

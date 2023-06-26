@@ -77,7 +77,7 @@ const codyFeatures2 = [
             'Cody can suggest code while you code. Start writing code and Cody will suggest the next few lines for you. Choose to accept it, or open the command palette and click Cody: View Suggestions to see various code snippets Cody suggests using.',
     },
     {
-        heading: 'Code fixup',
+        heading: 'Inline code fixes',
         description:
             'Cody edits and improves code directly using inline instructions. Simply type what you want Cody to do above or below a block of Cody and hit the Fixup hotkey; Cody will directly edit that code within your editor, saving you the need to copy and paste code from the chat.',
     },
@@ -253,8 +253,8 @@ const CodyPage: FunctionComponent = () => {
                             <span className="cody-text-gradient bg-clip-text text-transparent"> where you work </span>
                         </Heading>
                         <p className="mt-4 text-lg text-gray-200">
-                            Cody for work provides context-aware answers based on your own private codebase. Contact us
-                            through the form to learn more.
+                            Cody for Enterprise provides context-aware answers based on your own private codebase.
+                            Contact us through the form to learn more.
                         </p>
                     </div>
                     <div className={classNames('md:min-w-[400px] xl:min-w-[554px]', styles.codyForm)}>
@@ -333,7 +333,7 @@ const CodyPage: FunctionComponent = () => {
             >
                 <div className="border-t border-gray-500 pt-12 text-left">
                     <Heading size="h2" className="!text-[36px] text-white">
-                        Code generation
+                        AI-generated code
                     </Heading>
                     <p className="mt-[30px] max-w-[572px] text-lg text-gray-200">
                         Cody uses knowledge of your codebase to write and fix code. Generate everything from boilerplate
@@ -408,7 +408,7 @@ const CodyPage: FunctionComponent = () => {
             >
                 <div className="max-w-[550px]">
                     <Heading size="h2" className="!text-4xl text-white">
-                        Cody for personal use
+                        Try Cody for free
                     </Heading>
                     <p className="mt-6 text-lg text-gray-200">
                         Cody is free for personal use in the Cody app and IDE extensions. Sign up to get access.
@@ -457,7 +457,7 @@ const CodyPage: FunctionComponent = () => {
                     className="mt-8 flex max-w-[554px] flex-col border-t border-gray-500 pt-8 md:mt-0 md:border-l md:border-t-0 md:pl-8 md:pt-0"
                 >
                     <Heading size="h2" className="!text-4xl text-white">
-                        Cody for work
+                        Cody for Enterprise
                     </Heading>
                     <p className="mt-6 text-lg text-gray-200">
                         Cody for Enterprise provides context-aware answers based on your own private codebase. Contact
