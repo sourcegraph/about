@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect } from 'react'
+import { FunctionComponent, useEffect, cloneElement } from 'react'
 
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
@@ -20,29 +20,36 @@ import { TwitterEmbed } from '../components/EmbedTweet'
 import { useAuthModal } from '../context/AuthModalContext'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 
+import CodeCompletions from './cody-illustrations/CodeCompletions'
+import CodeSmells from './cody-illustrations/CodeSmells'
+import DebuggingAssistance from './cody-illustrations/DebuggingAssistance'
+import ExplainCode from './cody-illustrations/ExplainCode'
+import SummarizeCode from './cody-illustrations/SummarizeCode'
+import UnitTest from './cody-illustrations/UnitTest'
+
 import styles from '../styles/CustomHubspotForm.module.scss'
 
 const codyFeatures1 = [
     {
-        image: '/cody/features/ExplainCode.png',
+        animation: <ExplainCode />,
         heading: 'Code explanation',
         description:
             'Cody can explain what code is doing—at a high level or in detail. Highlight any code block or an entire file and Cody will explain what’s happening in conversational language.',
     },
     {
-        image: '/cody/features/CodeSmells.png',
+        animation: <CodeSmells />,
         heading: 'Code smells',
         description:
             'Cody can act as a pair programmer and analyze code blocks for code smells, potential bugs, and unhandled errors. Cody will point out issues in selected code such as magic numbers, unhandled edge cases, or unclear variables names, with suggestions to fix those issues.',
     },
     {
-        image: '/cody/features/SummarizeCode.png',
+        animation: <SummarizeCode />,
         heading: 'Summarize recent code changes',
         description:
             'Cody is able to reference recent diffs to tell you about recent changes to your code. Cody can generate summaries of changes to an entire repository over the last day or week or summarize the changes specific to a selected file.',
     },
     {
-        image: '/cody/features/optimize.png',
+        animation: <DebuggingAssistance />,
         heading: 'Debugging assistance',
         description:
             'Cody can help you debug and improve your code. Pass in a code snippet to the Cody chat and request a specific fix—such as handing for a new edge case—and Cody will provide a rewritten code suggestion.',
@@ -66,13 +73,13 @@ const codyFeatures1 = [
 
 const codyFeatures2 = [
     {
-        image: '/cody/features/UnitTest.png',
+        animation: <UnitTest />,
         heading: 'Unit tests',
         description:
             'Cody writes unit tests for you, saving you time and letting you stay focused on building software. Highlight a code block and trigger the Generate a unit test recipe; Cody will write a unit test ready to be pasted into your code.',
     },
     {
-        image: '/cody/features/CodeCompletions.png',
+        animation: <CodeCompletions />,
         heading: 'Code completions',
         description:
             'Cody can suggest code while you code. Start writing code and Cody will suggest the next few lines for you. Choose to accept it, or open the command palette and click Cody: View Suggestions to see various code snippets Cody suggests using.',
@@ -321,7 +328,7 @@ const CodyPage: FunctionComponent = () => {
                     >
                         <source
                             type="video/mp4"
-                            src="https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_explain_June23.mp4"
+                            src="https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-web-chat-may2023.mp4"
                             data-cookieconsent="ignore"
                         />
                     </video>
@@ -330,15 +337,23 @@ const CodyPage: FunctionComponent = () => {
 
             <ContentSection parentClassName="!py-0" className="mt-16 md:mt-[128px]">
                 <div className="grid grid-cols-1 justify-between gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-2 md:gap-y-9">
-                    {codyFeatures1.slice(0, 4).map(({ description, heading, image }) => (
-                        <CodyFeatureCard
-                            key={heading}
-                            description={description}
-                            subHeading={heading}
-                            image={image}
-                            className="!max-w-full"
-                        />
-                    ))}
+                    {codyFeatures1.slice(0, 4).map(({ description, heading, animation }, index) => {
+                        // Delay answer animation, creating a cascade effect 
+                        const AnimationWithDelay = animation
+                            ? cloneElement(animation, { answerDelay: index * 2 })
+                            : animation
+
+                        return (
+                            <CodyFeatureCard
+                                key={heading}
+                                description={description}
+                                subHeading={heading}
+                                animation={AnimationWithDelay} 
+                                descriptionClassName="text-sm"
+                                className="!max-w-full"
+                            />
+                        )
+                    })}
                 </div>
 
                 <div className="mt-8 grid grid-cols-1 justify-center gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-3 md:gap-y-9">
@@ -376,7 +391,7 @@ const CodyPage: FunctionComponent = () => {
                     >
                         <source
                             type="video/mp4"
-                            src="https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_inline_June23.mp4"
+                            src="https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-fixup-may2023.mp4"
                             data-cookieconsent="ignore"
                         />
                     </video>
@@ -385,12 +400,12 @@ const CodyPage: FunctionComponent = () => {
 
             <ContentSection parentClassName="!py-0" className="mt-16">
                 <div className="grid grid-cols-1 justify-between gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-2 md:gap-y-9">
-                    {codyFeatures2.slice(0, 2).map(({ description, heading, image }) => (
+                    {codyFeatures2.slice(0, 2).map(({ description, heading, animation }) => (
                         <CodyFeatureCard
                             key={heading}
                             description={description}
                             subHeading={heading}
-                            image={image}
+                            animation={animation}
                             descriptionClassName="text-sm"
                             className="!max-w-full"
                         />

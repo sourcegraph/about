@@ -1,0 +1,220 @@
+.frame {
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    gap: 12px;
+    overflow: hidden;
+}
+
+.frame:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    left: 3px;
+    right: 3px;
+    background-color: var(--sg-color-gray-700);
+    border-radius: 7px;
+    z-index: 1;
+}
+
+.codeFrame {
+    background: linear-gradient(140deg, #6f5e8c, #5e6e8c, transparent, transparent);
+    font-family: SF Mono, monospace;
+    font-size: 0.74rem;
+    line-height: 1.05rem;
+    padding: 12px;
+}
+
+.answerFrame {
+    background: linear-gradient(162deg, #00a5ff, #78cfff, #7f00ab, transparent, transparent, transparent);
+    font-family: 'Source Sans Pro', SF Pro, Serif;
+    font-size: 16px;
+    padding: 13px 18px;
+    opacity: 0.9;
+    z-index: 3;
+}
+
+.answerFrame:before {
+    background-color: #33063e;
+}
+
+.codyLogo {
+    z-index: 3;
+}
+
+.gutter {
+    color: var(--sg-color-gray-500);
+    width: 12px;
+    text-align: right;
+    line-height: 1.07rem;
+    z-index: 2;
+}
+
+.text {
+    color: var(--sg-color-white);
+    z-index: 2;
+    text-align: left;
+    white-space: pre-wrap;
+    display: block;
+}
+
+.code {
+    color: var(--sg-color-white);
+    z-index: 2;
+    text-align: left;
+    white-space: pre-wrap;
+    display: block;
+}
+
+.codeGenerated {
+    color: var(--sg-color-gray-400);
+}
+
+.codeSelected {
+    background-color: rgba(0, 84, 130, 0.3);
+    padding-top: 0.07rem;
+    padding-bottom: 0.07rem;
+}
+
+.typewriter {
+    color: transparent;
+    overflow: hidden;
+    white-space: pre;
+    animation: typing 1.1s steps(30, end), colorChange 0.1s 3s forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes colorChange {
+    to {
+        color: var(--sg-color-white);
+    }
+}
+
+.pointerAnimation {
+    position: relative;
+    animation: movePointer 2s ease-out;
+    animation-fill-mode: forwards;
+    z-index: 11;
+}
+
+@keyframes movePointer {
+    0% {
+        top: 82px;
+        left: 490px;
+    }
+
+    100% {
+        left: 440px;
+        top: 160px;
+    }
+}
+
+.cursor {
+    margin-left: 2px;
+    display: inline-block;
+    width: 2px;
+    height: 1.25em;
+    animation: blink 2s step-end infinite;
+    position: relative;
+    bottom: -3px;
+}
+
+@keyframes blink {
+    0% {
+        background: var(--sg-color-white);
+    }
+    50% {
+        background: transparent;
+    }
+    100% {
+        background: var(--sg-color-white);
+    }
+}
+
+.slideIn {
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(50%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slideInFromRight {
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(5%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.4s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Colors */
+
+.colorFunction {
+    color: var(--sg-color-violet-300);
+}
+
+.colorSymbol {
+    color: var(--sg-color-green-300);
+}
+
+.colorVariable {
+    color: var(--sg-color-blue-300);
+}
+
+.colorBrackets {
+    color: var(--sg-color-lemon-400);
+}
+
+.colorParenthesis,
+.colorCommands {
+    color: var(--sg-color-cerise-300);
+}
+
+.colorError {
+    color: var(--sg-color-white);
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--sg-color-vermillion-400);
+}
+
+.colorText {
+    color: var(--sg-color-vermillion-200);
+}
