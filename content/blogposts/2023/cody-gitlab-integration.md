@@ -12,7 +12,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/Sourcegraph%20
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/Sourcegraph%20x%20Gitlab.png
 ---
 
-As developers continue to lean into AI, Sourcegraph is making its AI coding assistant, Cody, more broadly available. 
+As developers continue to lean into AI, Sourcegraph is making its AI coding assistant, [Cody](https://about.sourcegraph.com/cody), more broadly available. 
 
 Today, Sourcegraph announced that Cody now integrates with GitLab, the most comprehensive AI-powered enterprise DevSecOps platform. Cody provides customers with multiple ways to take advantage of AI capabilities. 
 
