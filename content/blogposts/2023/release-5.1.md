@@ -10,25 +10,22 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post
 changelogItems:
   - description: "Improved symbol generation and performance using tree-sitter."
     url: 
-    category: Syntactic code navigation improvements
+    category: Code nav
   - description: "Allow multi-version upgrades with the standard upgrade flow; any instance can upgrade to 5.1+ from any other version (3.20+)."
     url: https://docs.sourcegraph.com/admin/updates/automatic
-    category: Improved multi-version upgrades
-  - description: "You can now export all data for a code insight from the card menu or the standalone page."
-    url: https://github.com/sourcegraph/sourcegraph/pull/46694
-    category: Code Insights
+    category: Admin
   - description: Sourcegraph connects to GitHub through GitHub Apps rather than personal access tokens for improved security, control and permissions management for customers.
     url: https://github.com/sourcegraph/sourcegraph/pull/46763
-    category: GitHub App support
+    category: Security
   - description: "src-cli improvement to provide admins better visibility into resource utilization."
     url: https://docs.sourcegraph.com/admin/deploy/resource_estimator
-    category: Resource right-sizer
+    category: Admin
   - description: "Security containers switched to Wolfi, which is built with security, minimalism, and auditability in mind to decrease the risk of supply chain vulnerabilities."
     url: https://docs.sourcegraph.com/dev/background-information/wolfi
-    category: Container security upgrade
+    category: Security
   - description: "Sourcegraph Cloud now maintains audit logs retrievable by site admins."
     url: https://docs.sourcegraph.com/admin/audit_log#cloud
-    category: Audit logs export (Cloud)
+    category: Admin
     
    
 ---
@@ -50,7 +47,7 @@ Site admins can [add precise code navigation](https://docs.sourcegraph.com/code_
     mp4: 'blog/release-post/5.1/c_codenav',
   }}
   loop={true}
-  title="The Code Insights UI."
+  title="scip-clang"
 />  
   
 <br />
@@ -68,7 +65,7 @@ Site admins can [turn on ownership signals](https://docs.sourcegraph.com/own#ena
     mp4: 'blog/release-post/5.1/own_gif',
   }}
   loop={true}
-  title="The Code Insights UI."
+  title="Ownership inference"
 />  
   
 <br />
@@ -83,10 +80,10 @@ Repository metadata can be [added through the web UI, src-cli and GraphQL API](h
   
 <Video 
   source={{
-    mp4: 'blog/release-post/4.5/metadata_gif',
+    mp4: 'blog/release-post/5.1/metadata_gif',
   }}
   loop={true}
-  title="The Code Insights UI."
+  title="Custom repository metadata"
 />  
   
 <br />
