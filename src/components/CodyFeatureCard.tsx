@@ -1,14 +1,14 @@
-import { FunctionComponent, MouseEvent, MutableRefObject, useEffect, useRef, useState } from 'react'
+import { FunctionComponent, MouseEvent, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 
 import { breakpoints } from '../data/breakpoints'
+import { useInView } from '../hooks/useInView'
 import { useWindowWidth } from '../hooks/windowWidth'
 
 import { Heading } from './Heading'
 
 interface Props {
-    image?: string
     heading?: string | React.ReactNode
     subHeading?: string | React.ReactNode
     description: string
@@ -19,7 +19,6 @@ interface Props {
 }
 
 export const CodyFeatureCard: FunctionComponent<Props> = ({
-    image,
     heading,
     description,
     className,
@@ -63,7 +62,7 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
     }
 
     const animationContainerRef = useRef<HTMLDivElement>(null)
-    const isInViewport = useAnimatinIsOnScreen(animationContainerRef)
+    const isInViewport = useInView(animationContainerRef)
 
     return (
         <div
@@ -79,14 +78,6 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
             onMouseLeave={() => toggleHovered(false)}
             onMouseMove={handleMouseMove}
         >
-            {image && (
-                <img
-                    src={image}
-                    alt="Cody Feature"
-                    height={180}
-                    className={classNames('mb-5 w-full', plainOnMobile && 'hidden sm:block')}
-                />
-            )}
             {animation && (
                 <div
                     // eslint-disable-next-line react/forbid-dom-props
@@ -120,29 +111,4 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
             )}
         </div>
     )
-}
-
-const useAnimatinIsOnScreen = (ref: MutableRefObject<HTMLElement | null>): boolean => {
-    const [isIntersecting, setIntersecting] = useState(false)
-    const hasIntersected = useRef(false)
-
-    useEffect(() => {
-        const currentRef = ref.current
-        const observer = new IntersectionObserver(([entry]) => {
-            if (!hasIntersected.current && entry.isIntersecting) {
-                setIntersecting(true)
-                hasIntersected.current = true
-            }
-        })
-        if (currentRef) {
-            observer.observe(currentRef)
-        }
-        return () => {
-            if (currentRef) {
-                observer.unobserve(currentRef)
-            }
-        }
-    }, [ref])
-
-    return isIntersecting
 }

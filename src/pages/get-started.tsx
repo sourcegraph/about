@@ -176,7 +176,7 @@ const InterstitialAppContent: FunctionComponent = () => (
             </div>
 
             <DownloadLink
-                className="btn btn-primary mt-6 w-fit px-4 font-normal"
+                className="btn btn-primary hover:sg-bg-hover-link-button mt-6 w-fit px-4 font-normal hover:text-violet-400"
                 title="Download for Mac"
                 downloadName="app-download-mac-dmg"
             >

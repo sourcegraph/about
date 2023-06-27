@@ -9,6 +9,7 @@ interface TwoColumnSection {
     blockOnMdAndDown?: boolean
     centerContent?: boolean
     mergeColumns?: boolean
+    className?: string
 }
 
 export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
@@ -18,6 +19,7 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
     blockOnMdAndDown = false,
     centerContent = false,
     mergeColumns = false,
+    className,
 }) => (
     <div
         className={classNames(
@@ -25,7 +27,8 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
             {
                 'flex flex-col lg:flex-row': mergeColumns, // done
                 'items-center': centerContent, // done
-            }
+            },
+            className
         )}
     >
         <div

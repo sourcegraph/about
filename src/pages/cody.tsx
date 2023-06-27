@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect } from 'react'
+import { FunctionComponent, useEffect, cloneElement } from 'react'
 
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
@@ -14,21 +14,19 @@ import {
     Badge,
     HubSpotForm,
     CodyFeatureCard,
+    TwitterEmbed,
+    CodeCompletions,
+    CodeSmells,
+    DebuggingAssistance,
+    ExplainCode,
+    SummarizeCode,
+    UnitTest,
 } from '../components'
 import { DemoVideo } from '../components/DemoVideo'
-import { TwitterEmbed } from '../components/EmbedTweet'
 import { useAuthModal } from '../context/AuthModalContext'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 
-import CodeCompletions from './cody-illustrations/CodeCompletions'
-import CodeSmells from './cody-illustrations/CodeSmells'
-import DebuggingAssistance from './cody-illustrations/DebuggingAssistance'
-import ExplainCode from './cody-illustrations/ExplainCode'
-import SummarizeCode from './cody-illustrations/SummarizeCode'
-import UnitTest from './cody-illustrations/UnitTest'
-
 import styles from '../styles/CustomHubspotForm.module.scss'
-import React from 'react'
 
 const codyFeatures1 = [
     {
@@ -329,7 +327,7 @@ const CodyPage: FunctionComponent = () => {
                     >
                         <source
                             type="video/mp4"
-                            src="https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-web-chat-may2023.mp4"
+                            src="https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_explain_June23.mp4"
                             data-cookieconsent="ignore"
                         />
                     </video>
@@ -339,9 +337,9 @@ const CodyPage: FunctionComponent = () => {
             <ContentSection parentClassName="!py-0" className="mt-16 md:mt-[128px]">
                 <div className="grid grid-cols-1 justify-between gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-2 md:gap-y-9">
                     {codyFeatures1.slice(0, 4).map(({ description, heading, animation }, index) => {
-                        // Delay answer animation, creating a cascade effect 
+                        // Delay answer animation, creating a cascade effect
                         const AnimationWithDelay = animation
-                            ? React.cloneElement(animation, { answerDelay: index * 2 })
+                            ? cloneElement(animation, { answerDelay: index * 2 })
                             : animation
 
                         return (
@@ -349,7 +347,7 @@ const CodyPage: FunctionComponent = () => {
                                 key={heading}
                                 description={description}
                                 subHeading={heading}
-                                animation={AnimationWithDelay} 
+                                animation={AnimationWithDelay}
                                 descriptionClassName="text-sm"
                                 className="!max-w-full"
                             />
@@ -392,7 +390,7 @@ const CodyPage: FunctionComponent = () => {
                     >
                         <source
                             type="video/mp4"
-                            src="https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-fixup-may2023.mp4"
+                            src="https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_inline_June23.mp4"
                             data-cookieconsent="ignore"
                         />
                     </video>
@@ -401,12 +399,11 @@ const CodyPage: FunctionComponent = () => {
 
             <ContentSection parentClassName="!py-0" className="mt-16">
                 <div className="grid grid-cols-1 justify-between gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-2 md:gap-y-9">
-                    {codyFeatures2.slice(0, 2).map(({ description, heading, image, animation }) => (
+                    {codyFeatures2.slice(0, 2).map(({ description, heading, animation }) => (
                         <CodyFeatureCard
                             key={heading}
                             description={description}
                             subHeading={heading}
-                            image={image}
                             animation={animation}
                             descriptionClassName="text-sm"
                             className="!max-w-full"

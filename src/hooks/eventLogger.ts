@@ -76,4 +76,9 @@ export const enum EventName {
     RESOURCE_SUBJECT_FILTER = 'ResourceSubjectFilter',
     RESOURCE_FEATURED_ITEM_CLICK = 'ResourceFeaturedItemClick',
     EMPTY_RESOURCE_SEARCH_RESULT = 'EmptyResourceSearchResult',
+    DOWNLOAD_APP = 'DownloadApp',
+    DOWNLOAD_IDE = 'DownloadIDE',
+    JOIN_IDE_WAITLIST = 'JoinIDEWaitlist',
+    SEARCH_LEARN_MORE_CTA = 'SearchLearnMoreCTA',
+    CODY_LEARN_MORE_CTA = 'CodyLearnMoreCTA',
 }
