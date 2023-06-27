@@ -16,15 +16,16 @@ import {
 export const CodeSearchPage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph - Code Search',
+            title: 'Sourcegraph | Code Search',
             description:
-                'Onboard to a new codebase, find answers faster, and identify security risks with Sourcegraph Code Search. Search across all the repositories you work with.',
+                'Code Search helps devs explore their codebase, make large-scale migrations, and fix security issues faster—especially in large, distributed codebases.',
+            image: 'https://about.sourcegraph.com/code-search/code-search-og.png',
         }}
         hero={
             <>
                 <ContentSection
                     parentClassName="!py-0 !px-sm overflow-x-clip"
-                    className="grid grid-cols-1 py-8 md:grid-cols-2 pt-16 md:pt-28"
+                    className="grid grid-cols-1 pb-8 pt-20 md:grid-cols-2 md:pt-28 md:pb-16"
                 >
                     <div className="flex w-full flex-col">
                         <Heading size="h1" className="text-white md:text-start md:!text-[52px]">
@@ -48,11 +49,7 @@ export const CodeSearchPage: FunctionComponent = () => (
         headerColorTheme="purple"
         className="sg-bg-code-search"
     >
-        <CustomerLogos
-            className="-px-sm md:pt[180px] !bg-transparent lg:pt-[200px] xl:pt-[275px]"
-            monochrome={true}
-            dark={true}
-        />
+        <CustomerLogos className="-px-sm !bg-transparent md:pt-0 lg:pt-32 md:pb-16" monochrome={true} dark={true} />
 
         <ContentSection parentClassName="!pb-0 md:!pb-24" className="md:pt-12">
             <TwoColumnSection
@@ -89,7 +86,10 @@ export const CodeSearchPage: FunctionComponent = () => (
                                 confidence in what's in your codebase.
                             </li>
                         </ul>
-                        <Link href="/case-studies/nutanix-fixed-log4j-with-sourcegraph" className="flex font-semibold text-white">
+                        <Link
+                            href="/case-studies/nutanix-fixed-log4j-with-sourcegraph"
+                            className="flex font-semibold text-white"
+                        >
                             Read how Nutanix used Code Search to mitigate Log4j vulnerabilities <ChevronRightIcon />
                         </Link>
                     </div>
@@ -165,7 +165,10 @@ export const CodeSearchPage: FunctionComponent = () => (
                                 status via the Sourcegraph UI so you can get the changesets merged.
                             </li>
                         </ul>
-                        <Link href="/case-studies/indeed-accelerates-development-velocity" className="flex font-semibold text-white">
+                        <Link
+                            href="/case-studies/indeed-accelerates-development-velocity"
+                            className="flex font-semibold text-white"
+                        >
                             Read how Indeed uses Batch Changes to accelerate development <ChevronRightIcon />
                         </Link>
                     </div>
@@ -191,7 +194,10 @@ export const CodeSearchPage: FunctionComponent = () => (
                                 vulnerabilities, track code smells and health, and much more.
                             </li>
                         </ul>
-                        <Link href="https://about.sourcegraph.com/blog/announcing-code-insights" className="flex font-semibold text-white">
+                        <Link
+                            href="https://about.sourcegraph.com/blog/announcing-code-insights"
+                            className="flex font-semibold text-white"
+                        >
                             Learn more about Code Insights <ChevronRightIcon />
                         </Link>
                     </div>
@@ -223,7 +229,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                     </p>
                 </div>
                 <div className="flex flex-col items-start justify-start gap-4 md:flex-row md:items-center md:justify-center">
-                    <Link className="btn btn-inverted-primary" href="/get-started?t=enterprise">
+                    <Link className="btn btn-inverted-primary" href="/contact/request-info">
                         Start for free
                     </Link>
                     <Link
