@@ -39,7 +39,7 @@ test('Test sorted array', () => {
 
     return (
         <div>
-            <div className={styles.slideIn}>
+            <div className={styles.slideInFromRight}>
                 <CodeBlock
                     code={code}
                     wordsStyle={wordsStyle}
@@ -49,7 +49,7 @@ test('Test sorted array', () => {
                 />
             </div>
 
-            <div style={{ position: 'relative', left: '65px', top: '-27px' }} className={styles.slideIn}>
+            <div style={{ position: 'relative', left: '65px', top: '-27px' }} className={styles.slideInFromRight}>
                 <CodyAnswer text={codyAnswer} width="500px" code={codeAnswer} wordsStyle={wordsStyle} />
             </div>
         </div>

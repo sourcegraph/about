@@ -27,6 +27,7 @@ import SummarizeCode from './cody-illustrations/SummarizeCode'
 import UnitTest from './cody-illustrations/UnitTest'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
+import React from 'react'
 
 const codyFeatures1 = [
     {
@@ -316,16 +317,23 @@ const CodyPage: FunctionComponent = () => {
 
             <ContentSection parentClassName="!py-0" className="mt-16 md:mt-[128px]">
                 <div className="grid grid-cols-1 justify-between gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-2 md:gap-y-9">
-                    {codyFeatures1.slice(0, 4).map(({ description, heading, image, animation }) => (
-                        <CodyFeatureCard
-                            key={heading}
-                            description={description}
-                            subHeading={heading}
-                            image={image}
-                            animation={animation}
-                            className="!max-w-full"
-                        />
-                    ))}
+                    {codyFeatures1.slice(0, 4).map(({ description, heading, animation }, index) => {
+                        // Delay answer animation, creating a cascade effect 
+                        const AnimationWithDelay = animation
+                            ? React.cloneElement(animation, { answerDelay: index * 2 })
+                            : animation
+
+                        return (
+                            <CodyFeatureCard
+                                key={heading}
+                                description={description}
+                                subHeading={heading}
+                                animation={AnimationWithDelay} 
+                                descriptionClassName="text-sm"
+                                className="!max-w-full"
+                            />
+                        )
+                    })}
                 </div>
 
                 <div className="mt-8 grid grid-cols-1 justify-center gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-3 md:gap-y-9">

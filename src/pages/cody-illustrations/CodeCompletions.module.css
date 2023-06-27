@@ -31,7 +31,7 @@
     font-family: 'Source Sans Pro', SF Pro, Serif;
     font-size: 16px;
     padding: 13px 18px;
-    opacity: 0.8;
+    opacity: 0.9;
     z-index: 3;
 }
 
@@ -153,6 +153,21 @@
     }
 }
 
+.slideInFromRight {
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(5%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .fadeIn {
     animation: fadeIn 0.4s ease-out;
     animation-fill-mode: forwards;
@@ -191,6 +206,13 @@
 .colorParenthesis,
 .colorCommands {
     color: var(--sg-color-cerise-300);
+}
+
+.colorError {
+    color: var(--sg-color-white);
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--sg-color-vermillion-400);
 }
 
 .colorText {

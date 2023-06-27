@@ -1,13 +1,26 @@
 /* eslint-disable react/forbid-dom-props */
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent, useEffect, useState } from 'react'
 
 import styles from './CodeCompletions.module.css'
-import { Widget, Submenu, Pointer } from './components/Atoms'
 import CodeBlock from './components/CodeBlock'
 import CodyAnswer from './components/CodyAnswer'
 import { WordStyle } from './components/ColoredCode'
 
-const ExplainCode: FunctionComponent = () => {
+interface ExplainCodeProps {
+    answerDelay?: number
+}
+
+const ExplainCode: FunctionComponent<ExplainCodeProps> = ({ answerDelay = 0 }) => {
+    const [shouldRender, setShouldRender] = useState(false)
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShouldRender(true)
+        }, answerDelay * 1000)
+
+        return () => clearTimeout(timer)
+    }, [answerDelay])
+
     const wordsStyle: WordStyle[] = [
         { word: 'const', style: styles.colorFunction },
         { word: 'calculatePower', style: styles.colorSymbol },
@@ -28,7 +41,7 @@ const ExplainCode: FunctionComponent = () => {
 
     return (
         <div>
-            <div className={styles.slideIn}>
+            <div className={styles.slideInFromRight}>
                 <CodeBlock
                     code={code}
                     wordsStyle={wordsStyle}
@@ -38,9 +51,11 @@ const ExplainCode: FunctionComponent = () => {
                 />
             </div>
 
-            <div style={{ position: 'relative', left: '78px', top: '-10px' }} className={styles.slideIn}>
-                <CodyAnswer text={codyAnswer} width="485px" />
-            </div>
+            {shouldRender && (
+                <div style={{ position: 'relative', left: '78px', top: '-10px' }} className={styles.slideInFromRight}>
+                    <CodyAnswer text={codyAnswer} width="485px" />
+                </div>
+            )}
         </div>
     )
 }

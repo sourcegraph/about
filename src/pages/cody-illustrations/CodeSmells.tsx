@@ -1,12 +1,26 @@
 /* eslint-disable react/forbid-dom-props */
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent, useEffect, useState } from 'react'
 
 import styles from './CodeCompletions.module.css'
 import CodeBlock from './components/CodeBlock'
 import CodyAnswer from './components/CodyAnswer'
 import { WordStyle } from './components/ColoredCode'
 
-const CodeSmells: FunctionComponent = () => {
+interface CodeSmellsProps {
+    answerDelay?: number
+}
+
+const CodeSmells: FunctionComponent<CodeSmellsProps> = ({ answerDelay = 0 }) => {
+    const [shouldRender, setShouldRender] = useState(false)
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShouldRender(true)
+        }, answerDelay * 1000)
+
+        return () => clearTimeout(timer)
+    }, [answerDelay])
+
     const wordsStyle: WordStyle[] = [
         { word: 'function', style: styles.colorFunction },
         { word: 'return', style: styles.colorCommands },
@@ -38,7 +52,7 @@ const CodeSmells: FunctionComponent = () => {
 
     return (
         <div>
-            <div className={styles.slideIn} style={{ position: 'relative', left: '60px' }}>
+            <div className={styles.slideInFromRight} style={{ position: 'relative', left: '60px' }}>
                 <CodeBlock
                     code={code}
                     wordsStyle={wordsStyle}
@@ -47,9 +61,12 @@ const CodeSmells: FunctionComponent = () => {
                     width="500px"
                 />
             </div>
-            <div style={{ position: 'relative', top: '-28px' }} className={styles.slideIn}>
-                <CodyAnswer text={codyAnswer} code={codeAnswer} wordsStyle={wordsStyle} width="570px" />
-            </div>
+
+            {shouldRender && (
+                <div style={{ position: 'relative', top: '-28px' }} className={styles.slideInFromRight}>
+                    <CodyAnswer text={codyAnswer} code={codeAnswer} wordsStyle={wordsStyle} width="570px" />
+                </div>
+            )}
         </div>
     )
 }
