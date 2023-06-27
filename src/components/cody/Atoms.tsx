@@ -2,9 +2,9 @@ import React, { FunctionComponent } from 'react'
 
 import styles from './cody-illustrations/CodeCompletions.module.css'
 
-export const Cursor: FunctionComponent = () => <span className={styles.cursor} />
+export const Cursor: FunctionComponent = (): JSX.Element => <span className={styles.cursor} />
 
-export const CodyLogo: FunctionComponent = () => (
+export const CodyLogo: FunctionComponent = (): JSX.Element => (
     <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
             fill-rule="evenodd"

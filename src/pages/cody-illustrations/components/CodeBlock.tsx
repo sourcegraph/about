@@ -4,7 +4,6 @@ import classNames from 'classnames'
 
 import styles from '../CodeCompletions.module.css'
 
-import { Cursor } from './Atoms'
 import { ColoredCode, WordStyle } from './ColoredCode'
 
 interface GutterRange {

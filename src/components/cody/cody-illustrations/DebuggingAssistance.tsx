@@ -1,8 +1,8 @@
 /* eslint-disable react/forbid-dom-props */
 import React, { FunctionComponent, useEffect, useState } from 'react'
 
-import {CodeBlock} from '../CodeBlock'
-import {CodyAnswer} from '../CodyAnswer'
+import { CodeBlock } from '../CodeBlock'
+import { CodyAnswer } from '../CodyAnswer'
 import { WordStyle } from '../ColoredCode'
 
 import styles from './CodeCompletions.module.css'
@@ -44,7 +44,7 @@ export const DebuggingAssistance: FunctionComponent<DebuggingAssistanceProps> = 
     ]
 
     const codeAnswer = `async fetchUser() {
-    const response = await fetch("https://api.example.com/users/\${this.userId}");
+    const response = await fetch("https://api.example.com/users/{this.userId}");
     const user = await response.json();
     return user;
 }`
@@ -54,7 +54,7 @@ export const DebuggingAssistance: FunctionComponent<DebuggingAssistanceProps> = 
         this.userId = userId; 
     } 
     async fetchUser() { 
-        const response = await fetch("https://api.example.com/users/\${t 
+        const response = await fetch("https://api.example.com/users/{t 
         const user = awai response.json();
             return user; 
         }`
