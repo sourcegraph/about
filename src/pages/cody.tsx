@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, useEffect } from 'react'
 
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
@@ -18,6 +18,7 @@ import {
 import { DemoVideo } from '../components/DemoVideo'
 import { TwitterEmbed } from '../components/EmbedTweet'
 import { useAuthModal } from '../context/AuthModalContext'
+import { EventName, getEventLogger } from '../hooks/eventLogger'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
 
@@ -96,13 +97,33 @@ const codyFeatures2 = [
 const CodyPage: FunctionComponent = () => {
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal('cody')
+    const handleOpenModal = (): void => {
+        const eventArguments = {
+            source: 'about-cody-deployment',
+            description: 'Get started with cody for free button click',
+        }
+
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        getEventLogger()?.log(EventName.CODY_GET_STARTED_CTA, eventArguments, eventArguments)
+
+        openModal('about-cody-deployment')
+    }
+
+    useEffect(() => {
+        const eventArguments = {
+            description: 'About - Cody page view',
+            source: 'about-cody',
+        }
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        getEventLogger()?.log(EventName.VIEW_ABOUT_CODY, eventArguments, eventArguments)
+    }, [])
 
     return (
         <Layout
             meta={{
                 title: 'Cody | AI coding assistant',
-                description: 'Cody is the most powerful and accurate AI coding assistant for writing, fixing, and maintaining code.',
+                description:
+                    'Cody is the most powerful and accurate AI coding assistant for writing, fixing, and maintaining code.',
                 image: 'https://about.sourcegraph.com/cody/cody-og.png',
             }}
             headerColorTheme="purple"
@@ -132,18 +153,18 @@ const CodyPage: FunctionComponent = () => {
                             className="w-fit justify-center !font-normal"
                             authProvider="github"
                             label="GitHub"
-                            source="cody"
+                            source="about-cody"
                         />
                         <ExternalsAuth
                             className="w-fit justify-center !font-normal"
                             authProvider="gitlab"
                             label="GitLab"
-                            source="cody"
+                            source="about-cody"
                         />
                         <EmailAuth
                             icon={true}
                             className="sg-email-auth-btn h-12 w-fit border bg-white bg-opacity-10 text-lg !font-normal text-white"
-                            source="cody"
+                            source="about-cody"
                             label="Email"
                         />
                     </div>
