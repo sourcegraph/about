@@ -3,28 +3,29 @@ import { FunctionComponent, MouseEvent, useRef, useState } from 'react'
 import classNames from 'classnames'
 
 import { breakpoints } from '../data/breakpoints'
+import { useInView } from '../hooks/useInView'
 import { useWindowWidth } from '../hooks/windowWidth'
 
 import { Heading } from './Heading'
 
 interface Props {
-    image?: string
     heading?: string | React.ReactNode
     subHeading?: string | React.ReactNode
     description: string
     className?: string
     descriptionClassName?: string
     plainOnMobile?: boolean
+    animation?: React.ReactNode
 }
 
 export const CodyFeatureCard: FunctionComponent<Props> = ({
-    image,
     heading,
     description,
     className,
     subHeading,
     descriptionClassName,
     plainOnMobile = true,
+    animation,
 }) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.sm
@@ -60,6 +61,9 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
         setHovered(shouldHover)
     }
 
+    const animationContainerRef = useRef<HTMLDivElement>(null)
+    const isInViewport = useInView(animationContainerRef)
+
     return (
         <div
             className={classNames(
@@ -74,13 +78,15 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
             onMouseLeave={() => toggleHovered(false)}
             onMouseMove={handleMouseMove}
         >
-            {image && (
-                <img
-                    src={image}
-                    alt="Cody Feature"
-                    height={180}
-                    className={classNames('mb-5 w-full', plainOnMobile && 'hidden sm:block')}
-                />
+            {animation && (
+                <div
+                    // eslint-disable-next-line react/forbid-dom-props
+                    style={{ height: 190, overflow:'hidden' }}
+                    className={classNames('w-full', plainOnMobile && 'hidden sm:block')}
+                    ref={animationContainerRef}
+                >
+                    {isInViewport && animation}
+                </div>
             )}
             {heading && (
                 <Heading size="h2" className="mb-6 !text-4xl">
