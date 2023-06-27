@@ -103,6 +103,20 @@
         color: var(--sg-color-white) !important;
     }
 
+    :global(.hs-input[type='email']),
+    :global(.hs-input[type='text']) {
+        width: 100% !important;
+    }
+
+    :global(.form-columns-2) {
+        display: flex;
+        gap: 0.5rem;
+
+        > div {
+            width: 100% !important;
+        }
+    }
+
     :global(.hs-input)::placeholder {
         color: white;
     }

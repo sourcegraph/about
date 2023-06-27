@@ -133,13 +133,13 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
             <button
                 type="button"
                 className={classNames(
-                    'btn min-w-fit px-6 font-normal lg:px-4',
-                    dark ? 'btn-inverted-primary' : 'btn-primary'
+                    'btn min-w-fit px-6 lg:px-4',
+                    dark ? 'btn-inverted-primary text-violet-500' : 'btn-primary'
                 )}
                 title="Download Sourcegraph"
                 onClick={handleOpenModal}
             >
-                Get started with Cody
+                Get started with Cody free
             </button>
         </>
     )
@@ -181,7 +181,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                                                 classes={{
                                                     ...classes,
                                                     item: classNames(
-                                                        'whitespace-nowrap rounded-md p-2 font-medium text-sm focus:outline-none focus:ring-2',
+                                                        'whitespace-nowrap rounded-md p-2 font-medium text-base focus:outline-none focus:ring-2',
                                                         classes.item
                                                     ),
                                                     menu: classNames(

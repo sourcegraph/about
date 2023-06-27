@@ -15,18 +15,21 @@ import {
     EmailAuth,
     VideoCarousel,
     CallToActionWithCody,
-    Badge,
 } from '../components'
 import { TwitterEmbed } from '../components/EmbedTweet'
 import { breakpoints } from '../data/breakpoints'
+import { EventName, getEventLogger } from '../hooks/eventLogger'
 import { useInView } from '../hooks/useInView'
 import { useWindowWidth } from '../hooks/windowWidth'
 
-interface AvailabilityImageProps {
+interface AvailabilityIconProps {
+    href: string
     src: string
     alt: string
     onHover: () => void
     onMouseLeave: () => void
+    eventName: string
+    type: string
 }
 
 const carouselVideos = [
@@ -69,9 +72,9 @@ const Home: FunctionComponent = () => {
     return (
         <Layout
             meta={{
-                title: 'Sourcegraph - Code Intelligence Platform',
+                title: 'Sourcegraph | Code AI platform',
                 description:
-                    'Sourcegraph makes it easy to write, read, and fix code—even in big, complex codebases—with universal code search, large-scale refactors, and more.',
+                    'Sourcegraph’s code AI platform makes it easy for devs to write, fix, and maintain code with Cody, the AI coding assistant, and Code Search.',
             }}
             heroAndHeaderClassName="text-white"
             headerColorTheme="purple"
@@ -159,10 +162,19 @@ const HomeHero: FunctionComponent = () => {
     const isWhatIsSourcegraphInView = useInView(whatIsSourcegraphRef, isMobile ? 0.5 : 0.8)
     const isCodyGraphInView = useInView(codyGraph, isMobile ? 0.5 : 0.8)
 
+    const handleOnClick = (eventName: string): void => {
+        const eventArguments = {
+            source: 'about-home',
+            description: '',
+        }
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        getEventLogger().log(eventName, eventArguments, eventArguments)
+    }
+
     return (
         <>
             <ContentSection parentClassName="!py-0 !px-sm overflow-x-clip" className="pb-[55px] md:pb-0">
-                <div className="grid grid-cols-1 gap-x-4 gap-y-16 bg-right bg-no-repeat pt-16 pb-11 md:grid-cols-2 md:px-6 md:pt-24 md:pb-8 lg:bg-[url('/home/home-hero-bg.png')] lg:bg-[length:800px_600px] xl:bg-[length:1000px_800px]">
+                <div className="grid grid-cols-1 gap-x-4 gap-y-16 bg-right bg-no-repeat pt-16 pb-11 md:grid-cols-2 md:px-6 md:pt-32 md:pb-8 lg:bg-[url('/home/home-hero-bg.png')] lg:bg-[length:800px_600px] xl:bg-[length:1000px_800px]">
                     <div className="mx-auto flex w-full max-w-[567px] flex-col items-center px-0 md:mx-0 md:items-start">
                         <Heading
                             size="h1"
@@ -226,55 +238,70 @@ const HomeHero: FunctionComponent = () => {
                 </div>
 
                 <div
-                    className="flex flex-col items-center bg-violet-400 bg-opacity-10 py-8"
-                    style={{ width: '100vw', marginLeft: 'calc((100% - 100vw) / 2)' }}
+                    className="flex flex-col items-center bg-violet-400 bg-opacity-10 py-8 md:mb-16"
+                    style={{
+                        width: '100vw',
+                        marginLeft: 'calc((100% - 100vw) / 2)',
+                        transition: 'height 800ms ease-in-out',
+                    }}
                 >
                     <p className="text-2xl font-semibold text-violet-200">Available on:</p>
+
                     <div className="flex flex-col items-center justify-center gap-y-8 md:flex-row md:gap-x-4">
                         <div className="flex items-center justify-center gap-4">
-                            <AvailabilityImage
+                            <AvailabilityIcon
+                                href="https://sourcegraph.com/get-cody"
                                 src="/home/cody-logo.svg"
                                 alt="Cody App"
                                 onHover={() => setHoveredImageText('Cody App')}
                                 onMouseLeave={() => setHoveredImageText('')}
+                                eventName={EventName.DOWNLOAD_APP}
+                                type="distribution"
                             />
                             <PlusIcon size={25} className="text-white" />
-                            <AvailabilityImage
+                            <AvailabilityIcon
+                                href="https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai#:~:text=Cody%20for%20VS%20Code%20is,not%20just%20your%20open%20files"
                                 src="/home/vs-code-logo.svg"
                                 alt="VS Code marketplace"
                                 onHover={() => setHoveredImageText('VS Code marketplace')}
                                 onMouseLeave={() => setHoveredImageText('')}
+                                eventName={EventName.DOWNLOAD_IDE}
+                                type="VS Code"
                             />
                         </div>
+
                         <div className="relative flex rounded-lg border border-dashed border-gray-200 border-opacity-20">
-                            <Badge
-                                text="Join the waitlist"
-                                size="small"
-                                className="absolute -right-[4.25px] -top-[24.25px] w-fit text-gray-500 hover:cursor-pointer hover:bg-violet-100 hover:text-violet-600"
-                            />
-                            <AvailabilityImage
+                            <AvailabilityIcon
+                                href="https://info.sourcegraph.com/waitlist"
                                 src="/home/intelliJ-logo.svg"
                                 alt="IntelliJ (coming soon)"
                                 onHover={() => setHoveredImageText('IntelliJ (coming soon)')}
                                 onMouseLeave={() => setHoveredImageText('')}
+                                eventName={EventName.JOIN_IDE_WAITLIST}
+                                type="IntelliJ"
                             />
-                            <AvailabilityImage
+                            <AvailabilityIcon
+                                href="https://info.sourcegraph.com/waitlist"
                                 src="/home/neoVim-logo.svg"
                                 alt="neoVim (coming soon)"
                                 onHover={() => setHoveredImageText('neoVim (coming soon)')}
                                 onMouseLeave={() => setHoveredImageText('')}
+                                eventName={EventName.JOIN_IDE_WAITLIST}
+                                type="NeoVim"
                             />
-                            <AvailabilityImage
+                            <AvailabilityIcon
+                                href="https://info.sourcegraph.com/waitlist"
                                 src="/home/emacs-logo.svg"
                                 alt="Emacs(coming soon)"
                                 onHover={() => setHoveredImageText('Emacs(coming soon)')}
                                 onMouseLeave={() => setHoveredImageText('')}
+                                eventName={EventName.JOIN_IDE_WAITLIST}
+                                type="Emacs"
                             />
                         </div>
                     </div>
-                    <p className={`pt-2 text-2xl font-semibold text-violet-200 ${hoveredImageText ? '' : 'opacity-0'}`}>
-                        {hoveredImageText || 'keep the space in the layout'}
-                    </p>
+
+                    <p className="mb-0 h-9 pt-2 text-2xl font-semibold text-violet-200">{hoveredImageText}</p>
                 </div>
 
                 <img
@@ -308,7 +335,7 @@ const HomeHero: FunctionComponent = () => {
                     <img
                         loading="lazy"
                         alt="Home Illustartion"
-                        src="/home/glow.svg"
+                        src="/home/glow-mobile.svg"
                         className={classNames(
                             'mx-auto h-[285px] w-fit py-6 transition-opacity duration-1000 md:hidden',
                             isCodyGraphInView ? 'opacity-100 delay-[800ms]' : 'opacity-10'
@@ -319,7 +346,7 @@ const HomeHero: FunctionComponent = () => {
                     <img
                         loading="lazy"
                         alt="Home Illustartion"
-                        src="/home/glow.svg"
+                        src="/home/glow-desktop.svg"
                         className={classNames(
                             'mx-auto hidden h-[465px] pt-2 pb-[73px] transition-opacity duration-1000 md:block md:w-[859px] lg:w-[1005px]',
                             isCodyGraphInView ? 'opacity-100 delay-[800ms]' : 'opacity-10'
@@ -329,30 +356,7 @@ const HomeHero: FunctionComponent = () => {
                 )}
 
                 <div className="flex flex-col items-center">
-                    <div className="mb-6 flex flex-col gap-[13px] md:flex-row">
-                        <div className="sg-bg-gradient-cip-tools flex flex-col items-start justify-end gap-4 rounded-lg border border-black border-opacity-[4%] p-6 md:pt-[60px]">
-                            <Heading size="h4" className="text-white ">
-                                Code graph
-                            </Heading>
-                            <p className="mb-0 text-[18px] text-gray-200">
-                                Sourcegraph builds a compiler-accurate map of your code graph, the only graph that
-                                includes all your code including all code hosts, dependencies, and code-related data,
-                                providing Cody and Code Search with deep knowledge of your entire codebase.
-                            </p>
-                        </div>
-                        <div className="sg-bg-gradient-cip-tools flex flex-col items-start justify-end gap-4 rounded-lg border border-black border-opacity-[4%] p-6 md:pt-[60px]">
-                            <Heading size="h4" className="text-white">
-                                Tools & workflows
-                            </Heading>
-                            <p className="mb-0 text-[18px] text-gray-200">
-                                Tools and workflows are the capabilities that make Cody and Code Search extra powerful.
-                                Batch Changes lets you make coordinated changes and migrations across all your
-                                repositories, while Code Insights gives you the power to map time series trends from
-                                patterns in your codebase.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="sg-bg-gradient-cip-cody mb-6 grid grid-cols-1 gap-x-[30px] rounded-lg border border-black border-opacity-[4%] md:grid-cols-2">
+                    <div className="sg-bg-gradient-cip-cody mb-6 grid grid-cols-1 gap-x-[30px] overflow-hidden rounded-lg border border-white border-opacity-[0.04] md:grid-cols-2">
                         <div className="flex flex-col items-start gap-6 px-6 py-8 md:gap-4 md:py-[84.5px] md:pl-20">
                             <Heading size="h4" className="text-5xl text-white md:text-[52px]">
                                 Cody
@@ -363,17 +367,19 @@ const HomeHero: FunctionComponent = () => {
                                 writing and shipping code.
                             </p>
                             <Link
-                                href="#"
+                                href="/cody"
                                 className="hover:sg-bg-hover-link-button flex items-center justify-center rounded-[5px] bg-white py-2 px-6 font-semibold text-violet-500"
+                                onClick={() => handleOnClick(EventName.CODY_LEARN_MORE_CTA)}
                             >
                                 Learn more about Cody
                             </Link>
                         </div>
-                        <img src="/home/cody-graph.svg" className="hidden md:block" alt="cody graph" />
-                        <img src="/home/code-graph-mobile.svg" className="mb-8 md:hidden" alt="cody graph" />
+                        <div className="mb-8 -mr-[64px] md:mb-0 md:mr-0">
+                            <img src="/home/cody-graph.svg" alt="cody graph" />
+                        </div>
                     </div>
-                    <div className="sg-bg-gradient-cip-cody relative grid h-[700px] w-full grid-cols-1 gap-x-[30px] overflow-hidden rounded-lg border border-black border-opacity-[4%] md:flex md:h-full md:justify-between">
-                        <div className="flex shrink flex-col items-start gap-6 px-6 py-8 md:w-[614px] md:gap-4 md:py-[84.5px] md:pl-20">
+                    <div className="sg-bg-gradient-cip-cody relative grid h-full w-full grid-cols-1 gap-x-[30px] overflow-hidden rounded-lg border border-white border-opacity-[0.04] md:flex md:h-[384px] md:justify-between">
+                        <div className="flex shrink flex-col items-start gap-6 px-6 py-0 pt-8 md:w-[614px] md:gap-4 md:py-[84.5px] md:pl-20">
                             <Heading size="h4" className="text-5xl text-white md:text-[52px]">
                                 Code Search
                             </Heading>
@@ -384,23 +390,25 @@ const HomeHero: FunctionComponent = () => {
                             </p>
                             <div className="flex flex-col gap-x-4 gap-y-4 md:flex-row md:flex-wrap lg:gap-y-8">
                                 <Link
-                                    href="#"
+                                    href="/code-search"
                                     className="hover:sg-bg-hover-link-button flex items-center justify-center rounded-[5px] bg-white py-2 px-6 font-semibold text-violet-500"
+                                    onClick={() => handleOnClick(EventName.SEARCH_LEARN_MORE_CTA)}
                                 >
-                                    Learn more about Cody
+                                    Learn more about Code Search
                                 </Link>
                                 <Link
-                                    href="#"
+                                    href="/contact/request-info"
                                     className="flex items-center justify-center gap-[10px] pb-4 font-semibold text-white lg:pb-0"
+                                    onClick={() => handleOnClick(EventName.SEARCH_LEARN_MORE_CTA)}
                                 >
                                     Learn more about Enterprise <ChevronRightIcon />
                                 </Link>
                             </div>
                         </div>
-                        <div className="md:flex md:items-center md:justify-end">
+                        <div className="-mr-12 md:mr-0 md:flex md:items-center md:justify-end">
                             <img
                                 src="/home/code-graph.svg"
-                                className="absolute -right-[18px] top-[332px] h-[384px] w-[608px] md:static md:h-full md:w-full"
+                                className="-mt-4 h-[384px] w-[608px] md:mt-0 md:h-[496px]"
                                 alt=""
                                 aria-hidden={true}
                             />
@@ -412,15 +420,39 @@ const HomeHero: FunctionComponent = () => {
     )
 }
 
-const AvailabilityImage: React.FC<AvailabilityImageProps> = ({ src, alt, onHover, onMouseLeave }) => {
+const AvailabilityIcon: React.FC<AvailabilityIconProps> = ({
+    href,
+    src,
+    alt,
+    onHover,
+    onMouseLeave,
+    eventName,
+    type,
+}) => {
+    const handleOnClick = (): void => {
+        const eventArguments = {
+            type,
+            source: 'about-home',
+            description: '',
+        }
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        getEventLogger().log(eventName, eventArguments, eventArguments)
+    }
     const handleMouseEnter = (): void => {
         onHover()
     }
 
     return (
-        <div className="group relative" onMouseEnter={handleMouseEnter} onMouseLeave={onMouseLeave}>
+        <Link
+            href={href}
+            target="_blank"
+            onClick={handleOnClick}
+            className="group relative"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={onMouseLeave}
+        >
             <img src={src} alt={alt} />
-        </div>
+        </Link>
     )
 }
 

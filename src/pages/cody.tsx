@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, useEffect } from 'react'
 
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
@@ -13,52 +13,75 @@ import {
     EmailAuth,
     Badge,
     HubSpotForm,
+    CodyFeatureCard,
 } from '../components'
 import { DemoVideo } from '../components/DemoVideo'
 import { TwitterEmbed } from '../components/EmbedTweet'
 import { useAuthModal } from '../context/AuthModalContext'
+import { EventName, getEventLogger } from '../hooks/eventLogger'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
 
 const codyFeatures1 = [
+    {
+        image: '/cody/features/ExplainCode.png',
+        heading: 'Code explanation',
+        description:
+            'Cody can explain what code is doing—at a high level or in detail. Highlight any code block or an entire file and Cody will explain what’s happening in conversational language.',
+    },
+    {
+        image: '/cody/features/CodeSmells.png',
+        heading: 'Code smells',
+        description:
+            'Cody can act as a pair programmer and analyze code blocks for code smells, potential bugs, and unhandled errors. Cody will point out issues in selected code such as magic numbers, unhandled edge cases, or unclear variables names, with suggestions to fix those issues.',
+    },
+    {
+        image: '/cody/features/SummarizeCode.png',
+        heading: 'Summarize recent code changes',
+        description:
+            'Cody is able to reference recent diffs to tell you about recent changes to your code. Cody can generate summaries of changes to an entire repository over the last day or week or summarize the changes specific to a selected file.',
+    },
+    {
+        image: '/cody/features/optimize.png',
+        heading: 'Debugging assistance',
+        description:
+            'Cody can help you debug and improve your code. Pass in a code snippet to the Cody chat and request a specific fix—such as handing for a new edge case—and Cody will provide a rewritten code suggestion.',
+    },
+    {
+        heading: 'Translate language',
+        description:
+            'Cody translates selected between programming languages. You can feed code snippets to Cody—for example, a certain function—and Cody can translate that code, providing you with a code snippet of another language with the same functionality.',
+    },
     {
         heading: 'Code navigation',
         description:
             'Cody can help you find functions & components from around your codebase. Ask Cody where a certain component is defined—such as a webapp navbar, or an API schema—and Cody will point you to the file where it lives.',
     },
     {
-        heading: 'Code explanation',
-        description:
-            'Cody can explain what code is doing—at a high level or in detail. Highlight any code block or an entire file and Cody will explain what’s happening in conversational language.',
-    },
-    {
-        heading: 'Code smells',
-        description:
-            'Cody can act as a pair programmer and analyze code blocks for code smells, potential bugs, and unhandled errors. Cody will point out issues in selected code such as magic numbers, unhandled edge cases, or unclear variables names, with suggestions to fix those issues.',
-    },
-    {
-        heading: 'Summarize recent code changes',
-        description:
-            'Cody is able to reference recent diffs to tell you about recent changes to your code. Cody can generate summaries of changes to an entire repository over the last day or week or summarize the changes specific to a selected file.',
-    },
-    {
-        heading: 'Translate language',
-        description:
-            'Cody translates selected code between programming languages. You can feed code snippets to Cody—for example, a certain function—and Cody can translate that code, providing you with a code snippet of another language with the same functionality.',
-    },
-    {
-        heading: 'Debugging assistance',
-        description:
-            'Cody can help you debug and improve your code. Pass in a code snippet to the Cody chat and request a specific fix—such as handling for a new edge case—and Cody will provide a rewritten code suggestion.',
-    },
-    {
         heading: 'Reference tracking',
         description:
-            'Cody knows where all your functions are referenced throughout your code and can find and return  function references at your request.',
+            'Cody knows where all your functions are referenced throughout your code. Ask Cody to find where a specific function is referenced and it will give you the main files where it’s referenced.',
     },
 ]
 
 const codyFeatures2 = [
+    {
+        image: '/cody/features/UnitTest.png',
+        heading: 'Unit tests',
+        description:
+            'Cody writes unit tests for you, saving you time and letting you stay focused on building software. Highlight a code block and trigger the Generate a unit test recipe; Cody will write a unit test ready to be pasted into your code.',
+    },
+    {
+        image: '/cody/features/CodeCompletions.png',
+        heading: 'Code completions',
+        description:
+            'Cody can suggest code while you code. Start writing code and Cody will suggest the next few lines for you. Choose to accept it, or open the command palette and click Cody: View Suggestions to see various code snippets Cody suggests using.',
+    },
+    {
+        heading: 'Inline code fixes',
+        description:
+            'Cody edits and improves code directly using inline instructions. Simply type what you want Cody to do above or below a block of Cody and hit the Fixup hotkey; Cody will directly edit that code within your editor, saving you the need to copy and paste code from the chat.',
+    },
     {
         heading: 'Documentation generation',
         description:
@@ -69,33 +92,38 @@ const codyFeatures2 = [
         description:
             'Cody generates new code on request via the chat. You can ask Cody to write boilerplate code, API calls, or even specific code based on your instruction and requirements.',
     },
-    {
-        heading: 'Code fixup',
-        description:
-            'Cody edits and improves code directly using inline instructions. Simply type what you want Cody to do above or below a block of Cody and hit the Fixup hotkey; Cody will directly edit that code within your editor, saving you the need to copy and paste code from the chat.',
-    },
-    {
-        heading: 'Unit tests',
-        description:
-            'Cody writes unit tests for you, saving you time and letting you stay focused on building software. Highlight a code block and trigger the "Generate a unit test" recipe; Cody will write a unit test ready to be pasted into your code.',
-    },
-    {
-        heading: 'Code completions',
-        description:
-            'Start writing code or write a comment and Cody will suggest the next few lines for you. Choose to accept it, or open the command palette and click "Cody: View Suggestions" to see various code snippets Cody suggests using.',
-    },
 ]
 
 const CodyPage: FunctionComponent = () => {
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal('cody')
+    const handleOpenModal = (): void => {
+        const eventArguments = {
+            source: 'about-cody-deployment',
+            description: 'Get started with cody for free button click',
+        }
+
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        getEventLogger()?.log(EventName.CODY_GET_STARTED_CTA, eventArguments, eventArguments)
+
+        openModal('about-cody-deployment')
+    }
+
+    useEffect(() => {
+        const eventArguments = {
+            description: 'About - Cody page view',
+            source: 'about-cody',
+        }
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        getEventLogger()?.log(EventName.VIEW_ABOUT_CODY, eventArguments, eventArguments)
+    }, [])
 
     return (
         <Layout
             meta={{
-                title: 'Cody',
-                description: 'Read, write, and understand code 10x faster with AI',
+                title: 'Cody | AI coding assistant',
+                description:
+                    'Cody is the most powerful and accurate AI coding assistant for writing, fixing, and maintaining code.',
                 image: 'https://about.sourcegraph.com/cody/cody-og.png',
             }}
             headerColorTheme="purple"
@@ -103,8 +131,8 @@ const CodyPage: FunctionComponent = () => {
             displayChildrenUnderNav={true}
         >
             {/* Hero Section */}
-            <ContentSection parentClassName="!py-0" className="pt-12 text-center md:pt-0">
-                <div className="mx-auto max-w-[780px]">
+            <ContentSection parentClassName="!py-0" className="pt-16 text-center md:pt-[10px]">
+                <div className="mx-auto max-w-[637px]">
                     <div className="center flex items-center justify-center gap-x-4">
                         <img src="/cody/cody-logo.png" alt="Cody Logo" className="h-[21px] w-[23px]" />
                         <p className="mb-0 text-[28px] font-semibold text-white">Meet Cody,</p>
@@ -117,7 +145,7 @@ const CodyPage: FunctionComponent = () => {
                         Cody answers code questions and writes code for you by reading your entire codebase and the code
                         graph.
                     </Heading>
-                    <p className="sg-bg-gradient-purple-white mt-8 bg-clip-text text-[20px] font-semibold text-transparent">
+                    <p className="mt-8 text-[20px] font-semibold text-white">
                         Sign up to get free access <span className="text-white">👇</span>
                     </p>
                     <div className="mt-4 flex flex-wrap justify-center gap-2">
@@ -125,18 +153,18 @@ const CodyPage: FunctionComponent = () => {
                             className="w-fit justify-center !font-normal"
                             authProvider="github"
                             label="GitHub"
-                            source="cody"
+                            source="about-cody"
                         />
                         <ExternalsAuth
                             className="w-fit justify-center !font-normal"
                             authProvider="gitlab"
                             label="GitLab"
-                            source="cody"
+                            source="about-cody"
                         />
                         <EmailAuth
                             icon={true}
                             className="sg-email-auth-btn h-12 w-fit border bg-white bg-opacity-10 text-lg !font-normal text-white"
-                            source="cody"
+                            source="about-cody"
                             label="Email"
                         />
                     </div>
@@ -174,44 +202,93 @@ const CodyPage: FunctionComponent = () => {
                     <span className="cody-text-gradient bg-clip-text text-transparent"> where you need it most </span>
                 </Heading>
 
-                <div className="mt-16 flex flex-col gap-6 text-[24px] font-semibold text-white">
-                    <div className="flex flex-col gap-6 md:flex-row">
-                        <Heading
-                            size="h4"
-                            className="cody-platforms-bg-gradient w-full border border-white/[.04] py-6 text-white"
-                        >
-                            Sourcegraph Web UI
-                        </Heading>{' '}
-                        <Heading
-                            size="h4"
-                            className="cody-platforms-bg-gradient w-full border border-white/[.04] py-6 text-white"
-                        >
-                            VS Code extension
-                        </Heading>
-                    </div>
-                    <div className="flex flex-col gap-6 md:flex-row">
-                        <Heading size="h4" className="w-full border border-dashed border-white/[.15] py-6 text-white">
-                            Sourcegraph app
-                            <Badge className="ml-2" size="small" text="Coming soon!" color="light-gray" />
-                        </Heading>
-                        <Heading size="h4" className="w-full border border-dashed border-white/[.15] py-6 text-white">
-                            IntelliJ extension
-                            <Badge className="ml-2" size="small" text="Coming soon!" color="light-gray" />
-                        </Heading>
+                <div className="mt-16 flex flex-col gap-16 text-[24px] font-semibold text-white">
+                    <div className="flex w-full flex-wrap justify-center gap-6 md:flex-nowrap">
+                        <CodyFeatureCard
+                            plainOnMobile={false}
+                            className="justify-end md:pt-[180px]"
+                            heading={
+                                <>
+                                    Cody app <Badge size="large" text="New!" color="light-gray" />
+                                </>
+                            }
+                            description="The app is a free, native desktop client for Cody. The app builds your local code graph
+                                and connects to your IDE extensions to make Cody more powerful and accurate."
+                            descriptionClassName="!text-lg"
+                        />
+
+                        <div className="flex w-full max-w-[509px] flex-col gap-y-6">
+                            <Heading
+                                size="h4"
+                                className="cody-platforms-bg-gradient flex w-full items-center justify-center gap-4 border border-white/[.04] py-4 px-6 text-white"
+                            >
+                                <img src="/icons/vscode.svg" height={34} width={38} alt="IntelliJ Icon" />
+                                VS Code extension
+                            </Heading>{' '}
+                            <Heading
+                                size="h4"
+                                className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] py-4 px-6 text-white"
+                            >
+                                <img src="/icons/IntelliJ.svg" height={38} width={38} alt="IntelliJ Icon" />
+                                IntelliJ
+                                <Badge size="small" text="Coming soon!" color="light-gray" />
+                            </Heading>
+                            <Heading
+                                size="h4"
+                                className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] py-4 px-6 text-white"
+                            >
+                                <img src="/icons/Neovim-logo.svg" height={38} width={38} alt="Neovim Icon" />
+                                Neovim
+                                <Badge size="small" text="Coming soon!" color="light-gray" />
+                            </Heading>
+                            <Heading
+                                size="h4"
+                                className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] py-4 px-6 text-white"
+                            >
+                                <img src="/icons/EmacsIcon.svg" height={38} width={38} alt="Emacs Icon" />
+                                Emacs
+                                <Badge size="small" text="Coming soon!" color="light-gray" />
+                            </Heading>
+                        </div>
                     </div>
 
                     <button
                         type="button"
                         onClick={handleOpenModal}
-                        className="cody-text-gradient w-fit self-center bg-clip-text text-lg text-transparent"
+                        className="btn btn-default-outlined w-fit self-center"
                     >
-                        Sign up to get started <ChevronRightIcon className="ml-1 inline text-vermillion-300" />
+                        Get started with Cody for free
                     </button>
                 </div>
             </ContentSection>
 
             <ContentSection
-                parentClassName="!pb-0 !pt-16 md:!pt-[152px]"
+                id="contact-form"
+                parentClassName="!py-0 !pt-20 md:!pt-[120px]"
+                className="cody-contact-form-wrapper rounded-lg"
+            >
+                <div className="flex flex-col gap-6 py-16 px-6 md:flex-row md:px-20 md:py-[96px] md:pr-[53px]">
+                    <div className="max-w-[614px]">
+                        <Heading size="h2" className="!text-[36px] text-white">
+                            Get Cody{' '}
+                            <span className="cody-text-gradient bg-clip-text text-transparent"> where you work </span>
+                        </Heading>
+                        <p className="mt-4 text-lg text-gray-200">
+                            Cody for Enterprise provides context-aware answers based on your own private codebase.
+                            Contact us through the form to learn more.
+                        </p>
+                    </div>
+                    <div className={classNames('md:min-w-[400px] xl:min-w-[554px]', styles.codyForm)}>
+                        <HubSpotForm
+                            formId="05e46684-9fbc-4c4d-b010-f661f247c4c6"
+                            inlineMessage="Thank you! We'll get back to you soon"
+                        />
+                    </div>
+                </div>
+            </ContentSection>
+
+            <ContentSection
+                parentClassName="!pb-0 !pt-16 md:!pt-[112px]"
                 className="mx-auto flex flex-col items-center gap-y-8 gap-x-[83px] text-center md:!mt-2 md:flex-row md:items-start"
             >
                 <div className="border-t border-gray-500 pt-12 text-left">
@@ -251,22 +328,29 @@ const CodyPage: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <ContentSection parentClassName="!py-0" className="mt-16">
-                <div className="grid grid-cols-1 justify-center gap-x-6 gap-y-14 sm:grid-cols-2 md:grid-cols-3">
-                    {codyFeatures1.map(item => (
-                        <div key={item.heading} className="sm:max-w-[410px]">
-                            <Heading size="h4" className="text-white">
-                                {item.heading}
-                            </Heading>
-                            <p className="mt-2 mb-0 text-base text-gray-200">{item.description}</p>
-                        </div>
+            <ContentSection parentClassName="!py-0" className="mt-16 md:mt-[128px]">
+                <div className="grid grid-cols-1 justify-between gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-2 md:gap-y-9">
+                    {codyFeatures1.slice(0, 4).map(({ description, heading, image }) => (
+                        <CodyFeatureCard
+                            key={heading}
+                            description={description}
+                            subHeading={heading}
+                            image={image}
+                            className="!max-w-full"
+                        />
+                    ))}
+                </div>
+
+                <div className="mt-8 grid grid-cols-1 justify-center gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-3 md:gap-y-9">
+                    {codyFeatures1.slice(4, 8).map(({ description, heading }) => (
+                        <CodyFeatureCard key={heading} description={description} subHeading={heading} />
                     ))}
                 </div>
             </ContentSection>
 
             <ContentSection
-                parentClassName="!pb-0 !pt-16"
-                className="mx-auto flex flex-col items-center gap-y-8 gap-x-[83px] text-center md:!mt-2 md:flex-row md:items-start"
+                parentClassName="!py-0"
+                className="mx-auto mt-16 flex flex-col items-center gap-y-8 gap-x-[83px] text-center md:!mt-[176px] md:!mb-[128px] md:flex-row md:items-start"
             >
                 <div className="border-t border-gray-500 pt-12 text-left">
                     <Heading size="h2" className="!text-[36px] text-white">
@@ -300,40 +384,28 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection parentClassName="!py-0" className="mt-16">
-                <div className="grid grid-cols-1 justify-center gap-x-6 gap-y-14 sm:grid-cols-2 md:grid-cols-3">
-                    {codyFeatures2.map(item => (
-                        <div key={item.heading} className="md:max-w-[410px]">
-                            <Heading size="h4" className="text-white">
-                                {item.heading}
-                            </Heading>
-                            <p className="mt-2 mb-0 text-base text-gray-200">{item.description}</p>
-                        </div>
+                <div className="grid grid-cols-1 justify-between gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-2 md:gap-y-9">
+                    {codyFeatures2.slice(0, 2).map(({ description, heading, image }) => (
+                        <CodyFeatureCard
+                            key={heading}
+                            description={description}
+                            subHeading={heading}
+                            image={image}
+                            descriptionClassName="text-sm"
+                            className="!max-w-full"
+                        />
                     ))}
                 </div>
-            </ContentSection>
 
-            <ContentSection
-                id="contact-form"
-                parentClassName="!py-0 !pt-20 md:!pt-[188px]"
-                className="cody-contact-form-wrapper rounded-lg"
-            >
-                <div className="flex flex-col gap-6 py-16 px-6 md:flex-row md:px-8 md:py-[96px] md:pl-[80px]">
-                    <div className="max-w-[614px]">
-                        <Heading size="h2" className="!text-[36px] text-white">
-                            Get Cody{' '}
-                            <span className="cody-text-gradient bg-clip-text text-transparent"> where you work </span>
-                        </Heading>
-                        <p className="mt-4 text-lg text-gray-200">
-                            Cody for work provides context-aware answers based on your own private codebase. Contact us
-                            through the form to learn more.
-                        </p>
-                    </div>
-                    <div className={classNames('md:min-w-[400px] xl:min-w-[554px]', styles.codyForm)}>
-                        <HubSpotForm
-                            formId="05e46684-9fbc-4c4d-b010-f661f247c4c6"
-                            inlineMessage="Thank you! We'll get back to you soon"
+                <div className="mt-8 grid grid-cols-1 justify-center gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-3 md:gap-y-9">
+                    {codyFeatures2.slice(2, 5).map(({ description, heading }) => (
+                        <CodyFeatureCard
+                            key={heading}
+                            description={description}
+                            subHeading={heading}
+                            descriptionClassName="text-sm"
                         />
-                    </div>
+                    ))}
                 </div>
             </ContentSection>
 
@@ -342,26 +414,25 @@ const CodyPage: FunctionComponent = () => {
                     See what devs are building with Cody
                 </Heading>
 
-                <div className="mt-6 grid w-full grid-cols-1 gap-6 md:mt-16 md:grid-cols-2">
-                    <TwitterEmbed tweetId="1645903813302185984" className="flex max-w-[100%] justify-center" />
-                    <div className="flex flex-col">
-                        <TwitterEmbed tweetId="1647765520673046529?s=20" className="flex max-w-[100%] justify-center" />
-                        <TwitterEmbed tweetId="1645490165857542145" className="flex max-w-[100%] justify-center " />
+                <div className="mt-6 flex w-full flex-wrap justify-center gap-x-6 md:mt-16 md:grid-cols-2">
+                    <TwitterEmbed tweetId="1645903813302185984" className="flex w-full max-w-[500px] justify-center" />
+                    <div className="flex w-full max-w-[500px] flex-col gap-1">
+                        <TwitterEmbed tweetId="1647765520673046529?s=20" className="flex justify-center" />
+                        <TwitterEmbed tweetId="1645490165857542145" className="flex justify-center " />
                     </div>
                 </div>
             </ContentSection>
 
             <ContentSection
                 parentClassName="!py-0"
-                className="mx-auto flex flex-col items-center justify-center gap-x-8 py-16  md:flex-row md:items-start md:py-[112px]"
+                className="mx-auto flex flex-col items-center justify-center gap-x-8 py-24  md:flex-row md:items-start md:pb-[112px] md:pt-[208px]"
             >
                 <div className="max-w-[550px]">
                     <Heading size="h2" className="!text-4xl text-white">
-                        Cody for personal use
+                        Try Cody for free
                     </Heading>
                     <p className="mt-6 text-lg text-gray-200">
-                        Cody is free for personal use in Sourcegraph.com and in the VS Code extension. Create a free
-                        Sourcegraph.com account to get started.
+                        Cody is free for personal use in the Cody app and IDE extensions. Sign up to get access.
                     </p>
                     <div className="mt-6 flex flex-wrap gap-2">
                         <ExternalsAuth
@@ -407,11 +478,11 @@ const CodyPage: FunctionComponent = () => {
                     className="mt-8 flex max-w-[554px] flex-col border-t border-gray-500 pt-8 md:mt-0 md:border-l md:border-t-0 md:pl-8 md:pt-0"
                 >
                     <Heading size="h2" className="!text-4xl text-white">
-                        Cody for work
+                        Cody for Enterprise
                     </Heading>
                     <p className="mt-6 text-lg text-gray-200">
-                        Cody for work provides context-aware answers based on your own private codebase. Contact us with
-                        the form below to learn more.
+                        Cody for Enterprise provides context-aware answers based on your own private codebase. Contact
+                        our sales team to learn more.
                     </p>
                     <Link href="#contact-form" title="Cody access form" className="btn btn-inverted-primary mt-1 w-fit">
                         Get Cody for work
