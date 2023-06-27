@@ -8,31 +8,41 @@ published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/5.1/sourcegraph-5-1-release-og-image.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/5.1/sourcegraph-5-1-release-og-image.png
 changelogItems:
+  - description: "Batch Changes on Gerrit is now available."
+    url: 
+    category: Batch changes
+  - description: "Batch Changes now supports signing commits for PRs created on GitHub via GitHub Apps (bot account), providing extra verification that Batch Changes commits initiate from Sourcegraph."
+    url: 
+    category: Batch changes
   - description: "Improved symbol generation and performance using tree-sitter."
     url: 
-    category: Code nav
+    category: Code navigation
+  - description: "Auto-indexing for TypeScript, JavaScript, Go, Java, Kotlin and Scala are enabled by default."
+    url: https://docs.sourcegraph.com/code_navigation/how-to/configure_auto_indexing
+    category: Code navigation
   - description: "Allow multi-version upgrades with the standard upgrade flow; any instance can upgrade to 5.1+ from any other version (3.20+)."
     url: https://docs.sourcegraph.com/admin/updates/automatic
     category: Admin
-  - description: Sourcegraph connects to GitHub through GitHub Apps rather than personal access tokens for improved security, control and permissions management for customers.
-    url: https://github.com/sourcegraph/sourcegraph/pull/46763
-    category: Security
   - description: "src-cli improvement to provide admins better visibility into resource utilization."
     url: https://docs.sourcegraph.com/admin/deploy/resource_estimator
+    category: Admin
+  - description: "Sourcegraph Cloud now maintains audit logs retrievable by site admins."
+    url: https://docs.sourcegraph.com/admin/audit_log#cloud
     category: Admin
   - description: "Security containers switched to Wolfi, which is built with security, minimalism, and auditability in mind to decrease the risk of supply chain vulnerabilities."
     url: https://docs.sourcegraph.com/dev/background-information/wolfi
     category: Security
-  - description: "Sourcegraph Cloud now maintains audit logs retrievable by site admins."
-    url: https://docs.sourcegraph.com/admin/audit_log#cloud
-    category: Admin
-    
-   
+  - description: Sourcegraph connects to GitHub through GitHub Apps rather than personal access tokens for improved security, control and permissions management for customers.
+    url: https://github.com/sourcegraph/sourcegraph/pull/46763
+    category: Security
+
+
 ---
 
 With 5.1, Sourcegraph continues to centralize code-related data with support for more code hosts and code metadata. Bringing all of this data into one place helps reduce the complexity of working in a large and distributed software environment, and helps developers to spend less time finding what they're looking for and spend more time writing code.
 
 Read on to discover everything included in the 5.1 release. 
+<br/><br/>
 
 #### Precise cross-repository code navigation for C and C++
 
@@ -51,6 +61,7 @@ Site admins can [add precise code navigation](https://docs.sourcegraph.com/code_
 />  
   
 <br />
+<br/><br/>
 
 #### Ownership inference
 
@@ -69,6 +80,7 @@ Site admins can [turn on ownership signals](https://docs.sourcegraph.com/own#ena
 />  
   
 <br />
+<br/><br/>
 
 #### Custom repository metadata 
 
@@ -87,19 +99,11 @@ Repository metadata can be [added through the web UI, src-cli and GraphQL API](h
 />  
   
 <br />
+<br/><br/>
 
 #### Complete Perforce support
 
 We see many teams using Perforce in combination with Git, and until now, they lacked a single experience. Now devs can search and navigate code hosted in either version control systems in Sourcegraph.
 
 Sourcegraph completes support Perforce as a part of 5.1. There is now support for streams and changelists so Perforce code and its version control system components are seamlessly integrated into Sourcegraph’s tools side-by-side with other supported code hosts.
-
-#### Signed commits in Batch Changes
-
-Batch Changes now supports signing commits for pull requests created on GitHub via GitHub Apps, providing an extra layer of verification that Batch Changes commits are really from Sourcegraph. Commits are now authored by the App (bot account) in GitHub instead of the batch change author.
-
-Site admins can go to Site Admin > Batch Changes > Settings to register a new GitHub App for commit signing in any organization/user on their GitHub instance that owns repositories. Once connected, any pull requests created by Batch Changes on those repositories will automatically use the GitHub App to push and sign commits.
-
-#### Batch Changes for Gerrit
-
-Batch Changes automates large-scale code changes across GitHub, GitLab, Azure DevOps, Bitbucket, and now Gerrit. Developers can create, track, and update changes across diverse repositories with a single action.
+<br/><br/>
