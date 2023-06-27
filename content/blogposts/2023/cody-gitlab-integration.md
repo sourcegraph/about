@@ -1,5 +1,5 @@
 ---
-title: "Cody Now Integrates with GitLab"
+title: "Cody now integrates with GitLab"
 description: "GitLab customers can leverage Cody to tap into the full knowledge of their codebase, no matter the size, with a simple chat interface."
 authors:
   - name: Amie Rotherham
