@@ -101,8 +101,8 @@ const CodyPage: FunctionComponent = () => {
     return (
         <Layout
             meta={{
-                title: 'Cody',
-                description: 'Read, write, and understand code 10x faster with AI',
+                title: 'Cody | AI coding assistant',
+                description: 'Cody is the most powerful and accurate AI coding assistant for writing, fixing, and maintaining code.',
                 image: 'https://about.sourcegraph.com/cody/cody-og.png',
             }}
             headerColorTheme="purple"

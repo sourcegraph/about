@@ -44,12 +44,12 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
         const { clientX, clientY } = event
         const { top, left } = cardRef.current.getBoundingClientRect()
 
-        const relativeX = clientX - left - 130
-        const relativeY = clientY - top - 130
+        const relativeX = clientX - left - 150
+        const relativeY = clientY - top - 180
 
         setMousePosition({
             x: relativeX,
-            y: relativeY
+            y: relativeY,
         })
     }
 
