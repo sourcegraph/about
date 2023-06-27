@@ -321,7 +321,7 @@ const CodyPage: FunctionComponent = () => {
                     >
                         <source
                             type="video/mp4"
-                            src="https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-web-chat-may2023.mp4"
+                            src="https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_explain_June23.mp4"
                             data-cookieconsent="ignore"
                         />
                     </video>
@@ -376,7 +376,7 @@ const CodyPage: FunctionComponent = () => {
                     >
                         <source
                             type="video/mp4"
-                            src="https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-fixup-may2023.mp4"
+                            src="https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_inline_June23.mp4"
                             data-cookieconsent="ignore"
                         />
                     </video>
