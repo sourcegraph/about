@@ -19,7 +19,7 @@ Today, Sourcegraph announced that Cody now integrates with GitLab, the most comp
 Key features of the integration include:
 * **Chat-based interface in your IDE:** Cody natively integrates with VS Code and comes pre-packaged with 9 recipes that allow devs to explain, understand, generate, translate, summarize, and detect ‘code smell’ across repositories and even generate fixes and unit tests. 
 * **Powerful and accurate AI:** Cody leverages Sourcegraph’s code graph to fetch code context, resulting in more precise outputs in line with an organization’s codebase and best practices. Developers can work more efficiently and intelligently within their editors while referencing knowledge from their entire codebase via AI.
-* **Accelerated Development:** By seamlessly connecting an organization's private codebase, documentation, and language libraries, Cody empowers developers to move even faster, delivering results quickly and reliably.
+* **Accelerated development:** By seamlessly connecting an organization's private codebase, documentation, and language libraries, Cody empowers developers to move even faster, delivering results quickly and reliably.
 
 With Sourcegraph’s Cody, customers leveraging the integration can tap into the full knowledge of their codebase, no matter the size, with a simple chat interface. They can quickly and easily find, understand, explain, generate, refactor, and debug code right from their IDE throughout the software development lifecycle. 
 
