@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-dom-props */
 import React, { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
@@ -25,7 +26,8 @@ export interface ColoredCodeProps {
     code: string
     selectedStyle?: string | undefined
     isTypeWrited?: boolean
-    showCursor?: boolean;
+    showCursor?: boolean
+    animationDelay?: number
 }
 
 export const ColoredCode: FunctionComponent<ColoredCodeProps> = ({
@@ -33,7 +35,8 @@ export const ColoredCode: FunctionComponent<ColoredCodeProps> = ({
     code,
     selectedStyle,
     isTypeWrited: isAnimated = false,
-    showCursor = true
+    showCursor = true,
+    animationDelay = 0,
 }) => {
     const [lines, setLines] = useState<string[]>([])
 
@@ -84,8 +87,7 @@ export const ColoredCode: FunctionComponent<ColoredCodeProps> = ({
             <div
                 className={isAnimated ? styles.lineWrapper : undefined}
                 key={key}
-                // eslint-disable-next-line react/forbid-dom-props
-                style={isAnimated ? { animationDelay: `${index * 0.6}s` } : {}}
+                style={isAnimated ? { animationDelay: `${animationDelay + index * 0.6}s` } : {}}
             >
                 {wordsInLine}
                 {showCursor && index === lines.length - 1 && <Cursor />}

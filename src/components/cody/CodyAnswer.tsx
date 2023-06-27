@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-dom-props */
 import React, { CSSProperties, FunctionComponent } from 'react'
 
 import classNames from 'classnames'
@@ -16,29 +17,39 @@ interface CodyAnswerProps {
 export const CodyAnswer: FunctionComponent<CodyAnswerProps> = ({ text, width = 'auto', code = '', wordsStyle }) => {
     const lines = text.split('\n')
 
+    const delayByLine = 1 // seconds
+    const delayBeforeCodeStart = lines.length * delayByLine
+
     const containerStyle: CSSProperties = {
         width,
     }
 
     return (
-        // eslint-disable-next-line react/forbid-dom-props
         <div className={classNames(styles.frame, styles.answerFrame)} style={containerStyle}>
             <div className={styles.codyLogo}>
                 <CodyLogo />
             </div>
             <div className={styles.text}>
                 {lines.map((line, index) => (
-                    // eslint-disable-next-line react/forbid-dom-props
-                    <div key={line} className={styles.typewriter} style={{ animationDelay: `${index * 1}s` }}>
+                    <div
+                        key={line}
+                        className={styles.typewriter}
+                        style={{ animationDelay: `${index * delayByLine}s` }}
+                    >
                         {line}
                     </div>
                 ))}
 
                 {code && wordsStyle && (
-                    <ColoredCode words={wordsStyle} code={code} isTypeWrited={true} showCursor={false} />
+                    <ColoredCode
+                        words={wordsStyle}
+                        code={code}
+                        isTypeWrited={true}
+                        showCursor={false}
+                        animationDelay={delayBeforeCodeStart}
+                    />
                 )}
             </div>
         </div>
     )
 }
-
