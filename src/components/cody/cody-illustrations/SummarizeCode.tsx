@@ -1,15 +1,16 @@
 /* eslint-disable react/forbid-dom-props */
 import React, { FunctionComponent, useEffect, useState } from 'react'
 
+import {CodyAnswer} from '../CodyAnswer'
+import { Commits } from '../Commits'
+
 import styles from './CodeCompletions.module.css'
-import CodyAnswer from './components/CodyAnswer'
-import { Commits } from './components/Commits'
 
 interface SummarizeCodeProps {
     answerDelay?: number
 }
 
-const SummarizeCode: FunctionComponent<SummarizeCodeProps> = ({ answerDelay = 0 }) => {
+export const SummarizeCode: FunctionComponent<SummarizeCodeProps> = ({ answerDelay = 0 }) => {
     const [shouldRender, setShouldRender] = useState(false)
 
     useEffect(() => {
@@ -37,5 +38,3 @@ const SummarizeCode: FunctionComponent<SummarizeCodeProps> = ({ answerDelay = 0 
         </div>
     )
 }
-
-export default SummarizeCode

@@ -1,12 +1,13 @@
 /* eslint-disable react/forbid-dom-props */
 import React, { FunctionComponent } from 'react'
 
-import styles from './CodeCompletions.module.css'
-import CodeBlock from './components/CodeBlock'
-import CodyAnswer from './components/CodyAnswer'
-import { WordStyle } from './components/ColoredCode'
+import {CodeBlock} from '../CodeBlock'
+import {CodyAnswer} from '../CodyAnswer'
+import { WordStyle } from '../ColoredCode'
 
-const UnitTest: FunctionComponent = () => {
+import styles from './CodeCompletions.module.css'
+
+export const UnitTest: FunctionComponent = () => {
     const code = `function sortArray(array) { 
     return array.sort((a, b) => a - b); 
 }`
@@ -56,4 +57,3 @@ test('Test sorted array', () => {
     )
 }
 
-export default UnitTest

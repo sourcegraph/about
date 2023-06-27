@@ -1,10 +1,11 @@
 import React, { FunctionComponent } from 'react'
 
-import styles from './CodeCompletions.module.css'
-import CodeBlock from './components/CodeBlock'
-import { WordStyle } from './components/ColoredCode'
+import { CodeBlock } from '../CodeBlock'
+import { WordStyle } from '../ColoredCode'
 
-const CodeCompletions: FunctionComponent = () => {
+import styles from './CodeCompletions.module.css'
+
+export const CodeCompletions: FunctionComponent = () => {
     const wordsStyle: WordStyle[] = [
         { word: 'function', style: styles.colorFunction },
         { word: 'const', style: styles.colorFunction },
@@ -45,4 +46,3 @@ const CodeCompletions: FunctionComponent = () => {
     )
 }
 
-export default CodeCompletions

@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 
-import styles from '../CodeCompletions.module.css'
+import styles from './cody-illustrations/CodeCompletions.module.css'
 
 export const Cursor: FunctionComponent = () => <span className={styles.cursor} />
 
@@ -27,7 +27,7 @@ export const CodyLogo: FunctionComponent = () => (
     </svg>
 )
 
-export const Pointer = () => (
+export const Pointer: FunctionComponent = () => (
     <svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_1316_6287)">
             <mask
@@ -86,7 +86,7 @@ export const Pointer = () => (
     </svg>
 )
 
-export const Widget = () => (
+export const Widget: FunctionComponent = () => (
     <svg width="127" height="50" viewBox="0 0 127 50" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_1550_6514)">
             <rect x="8" y="7" width="109" height="32" rx="6.52381" fill="#0F111A" shape-rendering="crispEdges" />
@@ -141,7 +141,7 @@ export const Widget = () => (
     </svg>
 )
 
-export const Submenu = () => (
+export const Submenu: FunctionComponent = () => (
     <svg width="98" height="53" viewBox="0 0 98 53" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1550_6515)">
             <rect x="0.706543" width="96.7698" height="52.1905" rx="4.34921" fill="#0F111A" />
@@ -171,7 +171,7 @@ export const Submenu = () => (
     </svg>
 )
 
-export const Debugging = () => (
+export const Debugging: FunctionComponent = () => (
     <svg width="268" height="178" viewBox="0 0 268 178" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1556_7101)">
             <path

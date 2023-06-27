@@ -2,9 +2,8 @@ import React, { CSSProperties, FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 
-import styles from '../CodeCompletions.module.css'
-
 import { CodyLogo } from './Atoms'
+import styles from './cody-illustrations/CodeCompletions.module.css'
 import { ColoredCode, WordStyle } from './ColoredCode'
 
 interface CodyAnswerProps {
@@ -14,7 +13,7 @@ interface CodyAnswerProps {
     wordsStyle?: WordStyle[]
 }
 
-const CodyAnswer: FunctionComponent<CodyAnswerProps> = ({ text, width = 'auto', code = '', wordsStyle }) => {
+export const CodyAnswer: FunctionComponent<CodyAnswerProps> = ({ text, width = 'auto', code = '', wordsStyle }) => {
     const lines = text.split('\n')
 
     const containerStyle: CSSProperties = {
@@ -43,4 +42,3 @@ const CodyAnswer: FunctionComponent<CodyAnswerProps> = ({ text, width = 'auto', 
     )
 }
 
-export default CodyAnswer

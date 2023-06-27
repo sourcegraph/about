@@ -2,9 +2,7 @@ import React, { FunctionComponent, CSSProperties } from 'react'
 
 import classNames from 'classnames'
 
-import styles from '../CodeCompletions.module.css'
-
-import { Cursor } from './Atoms'
+import styles from './cody-illustrations/CodeCompletions.module.css'
 import { ColoredCode, WordStyle } from './ColoredCode'
 
 interface GutterRange {
@@ -21,7 +19,7 @@ interface CodeBlockProps {
     width?: string
 }
 
-const CodeBlock: FunctionComponent<CodeBlockProps> = ({
+export const CodeBlock: FunctionComponent<CodeBlockProps> = ({
     code,
     codeGenerated,
     wordsStyle,
@@ -57,4 +55,3 @@ const CodeBlock: FunctionComponent<CodeBlockProps> = ({
     )
 }
 
-export default CodeBlock

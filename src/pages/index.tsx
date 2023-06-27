@@ -36,25 +36,25 @@ const carouselVideos = [
     {
         title: 'Context-aware chat',
         description: 'Cody can explain what code is doing—at a high level or in detail.',
-        video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-web-chat-may2023.mp4',
+        video: 'https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_explain_June23.mp4',
         link: '/cody',
     },
     {
-        title: 'Completion',
-        description: 'Cody offers code completions in real time as you code or type comments.',
-        video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-completion-may2023.mp4',
+        title: 'Autocomplete',
+        description: 'Cody offers code autocompletions in real time as you code or type comments.',
+        video: 'https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_autocomplete_June23.mp4',
         link: '/cody',
     },
     {
         title: 'Recipes',
         description: 'Generate unit tests, summarize changes, or create docs with prebuilt recipes.',
-        video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-unit-test-may2023.mp4',
+        video: 'https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_unittest_June23.mp4',
         link: '/cody',
     },
     {
         title: 'Inline chat',
         description: 'Cody edits and improves code directly using inline instructions.',
-        video: 'https://storage.googleapis.com/sourcegraph-assets/website/Product%20Animations/cody-fixup-may2023.mp4',
+        video: 'https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_inline_June23.mp4',
         link: '/cody',
     },
 ]
@@ -126,17 +126,17 @@ const Home: FunctionComponent = () => {
                 <div className="relative -mt-[10px] grid w-full grid-cols-1 gap-x-6 md:grid-cols-2">
                     <div className="relative grid auto-rows-min grid-cols-1">
                         <TwitterEmbed
-                            tweetId="1670706886948139008"
+                            tweetId="1653717721639419905"
                             className="mb-1 flex justify-center xl:-mr-[78px]"
                         />
                         <TwitterEmbed
-                            tweetId="1669244167317233664"
+                            tweetId="1639077704715894784"
                             className="mb-1 flex justify-center xl:-mr-[78px]"
                         />
                     </div>
                     <div className="relative grid grid-cols-1">
                         <TwitterEmbed
-                            tweetId="1653717721639419905"
+                            tweetId="1665267475125026817"
                             className="mb-1 flex justify-center xl:-ml-[78px]"
                         />
                         <TwitterEmbed tweetId="1656134934820683782" className="flex justify-center xl:-ml-[78px]" />

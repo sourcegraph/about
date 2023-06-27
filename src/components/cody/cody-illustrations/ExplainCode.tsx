@@ -1,16 +1,17 @@
 /* eslint-disable react/forbid-dom-props */
 import React, { FunctionComponent, useEffect, useState } from 'react'
 
+import {CodeBlock} from '../CodeBlock'
+import {CodyAnswer} from '../CodyAnswer'
+import { WordStyle } from '../ColoredCode'
+
 import styles from './CodeCompletions.module.css'
-import CodeBlock from './components/CodeBlock'
-import CodyAnswer from './components/CodyAnswer'
-import { WordStyle } from './components/ColoredCode'
 
 interface ExplainCodeProps {
     answerDelay?: number
 }
 
-const ExplainCode: FunctionComponent<ExplainCodeProps> = ({ answerDelay = 0 }) => {
+export const ExplainCode: FunctionComponent<ExplainCodeProps> = ({ answerDelay = 0 }) => {
     const [shouldRender, setShouldRender] = useState(false)
 
     useEffect(() => {
@@ -60,4 +61,3 @@ const ExplainCode: FunctionComponent<ExplainCodeProps> = ({ answerDelay = 0 }) =
     )
 }
 
-export default ExplainCode

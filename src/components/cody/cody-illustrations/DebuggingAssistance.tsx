@@ -1,17 +1,17 @@
 /* eslint-disable react/forbid-dom-props */
 import React, { FunctionComponent, useEffect, useState } from 'react'
 
+import {CodeBlock} from '../CodeBlock'
+import {CodyAnswer} from '../CodyAnswer'
+import { WordStyle } from '../ColoredCode'
+
 import styles from './CodeCompletions.module.css'
-import { Debugging } from './components/Atoms'
-import CodyAnswer from './components/CodyAnswer'
-import { WordStyle } from './components/ColoredCode'
-import CodeBlock from './components/CodeBlock'
 
 interface DebuggingAssistanceProps {
     answerDelay?: number
 }
 
-const DebuggingAssistance: FunctionComponent<DebuggingAssistanceProps> = ({ answerDelay = 0 }) => {
+export const DebuggingAssistance: FunctionComponent<DebuggingAssistanceProps> = ({ answerDelay = 0 }) => {
     const [shouldRender, setShouldRender] = useState(false)
 
     useEffect(() => {
@@ -44,7 +44,7 @@ const DebuggingAssistance: FunctionComponent<DebuggingAssistanceProps> = ({ answ
     ]
 
     const codeAnswer = `async fetchUser() {
-    const response = await fetch("https://api.example.com/users/\${this.userId}\");
+    const response = await fetch("https://api.example.com/users/\${this.userId}");
     const user = await response.json();
     return user;
 }`
@@ -81,5 +81,3 @@ const DebuggingAssistance: FunctionComponent<DebuggingAssistanceProps> = ({ answ
         </div>
     )
 }
-
-export default DebuggingAssistance
