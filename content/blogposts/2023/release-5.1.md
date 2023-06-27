@@ -5,8 +5,8 @@ description: "Announcing Sourcegraph 5.1. The latest release includes updates to
 tags: [blog, release]
 slug: "release/5.1"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.5/sourcegraph-4-5-hero.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.5/sourcegraph-4-5-hero.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/5.1/sourcegraph-5-1-release-og-image.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/5.1/sourcegraph-5-1-release-og-image.png
 changelogItems:
   - description: "Improved symbol generation and performance using tree-sitter."
     url: 
@@ -43,7 +43,17 @@ Sourcegraph’s latest SCIP indexer, [scip-clang](https://sourcegraph.com/github
 
 Site admins can [add precise code navigation](https://docs.sourcegraph.com/code_navigation/how-to/adding_lsif_to_many_repos) to their Sourcegraph instance by running the SCIP indexers as a periodic job in CI infrastructure. 
 
-[GIF: take from here]
+<br/>
+  
+<Video 
+  source={{
+    mp4: 'blog/release-post/5.1/c_codenav',
+  }}
+  loop={true}
+  title="The Code Insights UI."
+/>  
+  
+<br />
 
 #### Ownership inference
 
@@ -51,7 +61,17 @@ Sourcegraph [started ingesting code ownership data](https://about.sourcegraph.co
 
 Site admins can [turn on ownership signals](https://docs.sourcegraph.com/own#enabling-sourcegraph-own) by going to ```Site Admin > Code Graph > Ownership Signals``` and enabling recent-contributors and recent-views. 
 
-[GIF]
+<br/>
+  
+<Video 
+  source={{
+    mp4: 'blog/release-post/5.1/own_gif',
+  }}
+  loop={true}
+  title="The Code Insights UI."
+/>  
+  
+<br />
 
 #### Custom repository metadata 
 
@@ -59,7 +79,17 @@ Custom repository metadata brings user-defined key-value pairs into the code gra
 
 Repository metadata can be [added through the web UI, src-cli and GraphQL API](https://docs.sourcegraph.com/admin/repo/metadata). 
 
-[GIF from here]
+<br/>
+  
+<Video 
+  source={{
+    mp4: 'blog/release-post/4.5/metadata_gif',
+  }}
+  loop={true}
+  title="The Code Insights UI."
+/>  
+  
+<br />
 
 #### Complete Perforce support
 
@@ -73,43 +103,6 @@ Batch Changes now supports signing commits for pull requests created on GitHub v
 
 Site admins can go to Site Admin > Batch Changes > Settings to register a new GitHub App for commit signing in any organization/user on their GitHub instance that owns repositories. Once connected, any pull requests created by Batch Changes on those repositories will automatically use the GitHub App to push and sign commits.
 
-[GIF]
-
 #### Batch Changes for Gerrit
 
 Batch Changes automates large-scale code changes across GitHub, GitLab, Azure DevOps, Bitbucket, and now Gerrit. Developers can create, track, and update changes across diverse repositories with a single action.
-
-<Badge link="https://docs.sourcegraph.com/code_insights" text="Code Insights" color="green" size="small" />
-
-#### The new Code Insights UI makes it easier to run insights over specific repositories
-
-We've introduced a new UI for insights creation. You can now use Sourcegraph query syntax to select repositories for an insight to run over. Previously, if you wanted an insight to run over more than a few repositories, you had to create an insight that ran over *all* of them. This change makes it possible to select only the repositories that are relevant to the insights you are creating.
-
-This makes it especially easy to create insights for related groups of repositories, for example, ones that follow a naming convention such as `-infrastructure`.
-
-The new system allows you to use any of the `repo:` filter options such as:
-
-- `repo:`
-- `-repo:`
-- `repo:has.path()`
-- `repo:has.file()`
-- `repo:has.commit.after()`  
-
-<br/>
-  
-<Video 
-  source={{
-    mp4: 'blog/release-post/4.5/code-insights-ui',
-  }}
-  loop={true}
-  title="The Code Insights UI."
-/>  
-  
-<br />
-<Badge link="https://docs.sourcegraph.com/admin/workers" text="Admin" color="violet" size="small" />
-
-#### Upgrades to the Gerrit code host integration
-
-When admins sync repositories from Gerrit, permissions can now also be synced to control who has access to each repository in Sourcegraph. This allows Gerrit repositories to function similar to [other Sourcegraph-supported code hosts](https://docs.sourcegraph.com/admin/external_service). You can find instructions to configure Gerrit permissions [in our docs](https://docs.sourcegraph.com/admin/external_service/gerrit).
-
-<br />
