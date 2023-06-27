@@ -339,7 +339,7 @@ const CodyPage: FunctionComponent = () => {
                     {codyFeatures1.slice(0, 4).map(({ description, heading, animation }, index) => {
                         // Delay answer animation, creating a cascade effect
                         const AnimationWithDelay = animation
-                            ? cloneElement(animation, { answerDelay: index * 2 })
+                            ? cloneElement(animation, { answerDelay: index * 2.2 })
                             : animation
 
                         return (
