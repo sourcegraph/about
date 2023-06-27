@@ -69,6 +69,8 @@ export const enum EventName {
     VIEW_STATIC_PAGE = 'ViewStaticPage',
     STATIC_PAGE_BUTTON_CLICKED = 'StaticPageButtonClicked',
     ABOUT_GET_CODY_POPOVER = 'AboutGetCodyPopover',
+    VIEW_ABOUT_CODY = 'ViewAboutCody',
+    CODY_GET_STARTED_CTA = 'CodyGetStartedCTA',
     RESOURCE_ITEM_CLICK = 'ResourceItemClick',
     RESOURCE_CONTENT_TYPE_FILTER = 'ResourceContentTypeFilter',
     RESOURCE_SUBJECT_FILTER = 'ResourceSubjectFilter',

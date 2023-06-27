@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, useEffect } from 'react'
 
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
@@ -18,6 +18,7 @@ import {
 import { DemoVideo } from '../components/DemoVideo'
 import { TwitterEmbed } from '../components/EmbedTweet'
 import { useAuthModal } from '../context/AuthModalContext'
+import { EventName, getEventLogger } from '../hooks/eventLogger'
 
 import CodeCompletions from './cody-illustrations/CodeCompletions'
 import CodeSmells from './cody-illustrations/CodeSmells'
@@ -85,7 +86,7 @@ const codyFeatures2 = [
             'Cody can suggest code while you code. Start writing code and Cody will suggest the next few lines for you. Choose to accept it, or open the command palette and click Cody: View Suggestions to see various code snippets Cody suggests using.',
     },
     {
-        heading: 'Code fixup',
+        heading: 'Inline code fixes',
         description:
             'Cody edits and improves code directly using inline instructions. Simply type what you want Cody to do above or below a block of Cody and hit the Fixup hotkey; Cody will directly edit that code within your editor, saving you the need to copy and paste code from the chat.',
     },
@@ -104,13 +105,33 @@ const codyFeatures2 = [
 const CodyPage: FunctionComponent = () => {
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal('cody')
+    const handleOpenModal = (): void => {
+        const eventArguments = {
+            source: 'about-cody-deployment',
+            description: 'Get started with cody for free button click',
+        }
+
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        getEventLogger()?.log(EventName.CODY_GET_STARTED_CTA, eventArguments, eventArguments)
+
+        openModal('about-cody-deployment')
+    }
+
+    useEffect(() => {
+        const eventArguments = {
+            description: 'About - Cody page view',
+            source: 'about-cody',
+        }
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        getEventLogger()?.log(EventName.VIEW_ABOUT_CODY, eventArguments, eventArguments)
+    }, [])
 
     return (
         <Layout
             meta={{
-                title: 'Cody',
-                description: 'Read, write, and understand code 10x faster with AI',
+                title: 'Cody | AI coding assistant',
+                description:
+                    'Cody is the most powerful and accurate AI coding assistant for writing, fixing, and maintaining code.',
                 image: 'https://about.sourcegraph.com/cody/cody-og.png',
             }}
             headerColorTheme="purple"
@@ -140,18 +161,18 @@ const CodyPage: FunctionComponent = () => {
                             className="w-fit justify-center !font-normal"
                             authProvider="github"
                             label="GitHub"
-                            source="cody"
+                            source="about-cody"
                         />
                         <ExternalsAuth
                             className="w-fit justify-center !font-normal"
                             authProvider="gitlab"
                             label="GitLab"
-                            source="cody"
+                            source="about-cody"
                         />
                         <EmailAuth
                             icon={true}
                             className="sg-email-auth-btn h-12 w-fit border bg-white bg-opacity-10 text-lg !font-normal text-white"
-                            source="cody"
+                            source="about-cody"
                             label="Email"
                         />
                     </div>
@@ -261,8 +282,8 @@ const CodyPage: FunctionComponent = () => {
                             <span className="cody-text-gradient bg-clip-text text-transparent"> where you work </span>
                         </Heading>
                         <p className="mt-4 text-lg text-gray-200">
-                            Cody for work provides context-aware answers based on your own private codebase. Contact us
-                            through the form to learn more.
+                            Cody for Enterprise provides context-aware answers based on your own private codebase.
+                            Contact us through the form to learn more.
                         </p>
                     </div>
                     <div className={classNames('md:min-w-[400px] xl:min-w-[554px]', styles.codyForm)}>
@@ -349,7 +370,7 @@ const CodyPage: FunctionComponent = () => {
             >
                 <div className="border-t border-gray-500 pt-12 text-left">
                     <Heading size="h2" className="!text-[36px] text-white">
-                        Code generation
+                        AI-generated code
                     </Heading>
                     <p className="mt-[30px] max-w-[572px] text-lg text-gray-200">
                         Cody uses knowledge of your codebase to write and fix code. Generate everything from boilerplate
@@ -425,7 +446,7 @@ const CodyPage: FunctionComponent = () => {
             >
                 <div className="max-w-[550px]">
                     <Heading size="h2" className="!text-4xl text-white">
-                        Cody for personal use
+                        Try Cody for free
                     </Heading>
                     <p className="mt-6 text-lg text-gray-200">
                         Cody is free for personal use in the Cody app and IDE extensions. Sign up to get access.
@@ -474,7 +495,7 @@ const CodyPage: FunctionComponent = () => {
                     className="mt-8 flex max-w-[554px] flex-col border-t border-gray-500 pt-8 md:mt-0 md:border-l md:border-t-0 md:pl-8 md:pt-0"
                 >
                     <Heading size="h2" className="!text-4xl text-white">
-                        Cody for work
+                        Cody for Enterprise
                     </Heading>
                     <p className="mt-6 text-lg text-gray-200">
                         Cody for Enterprise provides context-aware answers based on your own private codebase. Contact
