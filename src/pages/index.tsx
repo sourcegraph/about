@@ -126,17 +126,17 @@ const Home: FunctionComponent = () => {
                 <div className="relative -mt-[10px] grid w-full grid-cols-1 gap-x-6 md:grid-cols-2">
                     <div className="relative grid auto-rows-min grid-cols-1">
                         <TwitterEmbed
-                            tweetId="1653717721639419905"
+                            tweetId="1670706886948139008"
                             className="mb-1 flex justify-center xl:-mr-[78px]"
                         />
                         <TwitterEmbed
-                            tweetId="1639077704715894784"
+                            tweetId="1669244167317233664"
                             className="mb-1 flex justify-center xl:-mr-[78px]"
                         />
                     </div>
                     <div className="relative grid grid-cols-1">
                         <TwitterEmbed
-                            tweetId="1665267475125026817"
+                            tweetId="1653717721639419905"
                             className="mb-1 flex justify-center xl:-ml-[78px]"
                         />
                         <TwitterEmbed tweetId="1656134934820683782" className="flex justify-center xl:-ml-[78px]" />
