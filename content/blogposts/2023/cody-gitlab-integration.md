@@ -21,7 +21,7 @@ Key features of the integration include:
 * **Powerful and accurate AI:** Cody leverages Sourcegraph’s code graph to fetch code context, resulting in more precise outputs in line with an organization’s codebase and best practices. Developers can work more efficiently and intelligently within their editors while referencing knowledge from their entire codebase via AI.
 * **Accelerated development:** By seamlessly connecting an organization's private codebase, documentation, and language libraries, Cody empowers developers to move even faster, delivering results quickly and reliably.
 
-With Sourcegraph’s Cody, customers leveraging the integration can tap into the full knowledge of their codebase, no matter the size, with a simple chat interface. They can quickly and easily find, understand, explain, generate, refactor, and debug code right from their IDE throughout the software development lifecycle. 
+With Sourcegraph’s Cody, customers using the integration can tap into the full knowledge of their codebase, no matter the size, with a simple chat interface. They can quickly and easily find, understand, explain, generate, refactor, and debug code right from their IDE throughout the software development lifecycle. 
 
 Devs see immediate value with Cody:  
 * Save time and resources: Cody writes code and answers questions using your own code graph as context, whether it’s across multiple instances of their code repository or multiple code hosts. Examples include: 
