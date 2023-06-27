@@ -1,9 +1,12 @@
 ---
-title: 'Cody Now Integrates with GitLab'
-description: 'GitLab customers can leverage Cody to tap into the full knowledge of their codebase, no matter the size, with a simple chat interface'
+title: "Cody Now Integrates with GitLab"
+description: "GitLab customers can leverage Cody to tap into the full knowledge of their codebase, no matter the size, with a simple chat interface."
+authors:
+  - name: Amie Rotherham
+    url: https://twitter.com/amieroth
 publishDate: 2023-06-26T12:00
 tags: [blog]
-slug: 'cody-gitlab-integration'
+slug: "cody-gitlab-integration"
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/Sourcegraph%20x%20Gitlab.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/Sourcegraph%20x%20Gitlab.png
