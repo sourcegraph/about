@@ -22,7 +22,7 @@ import {
     SummarizeCode,
     UnitTest,
 } from '../components'
-import { DemoVideo } from '../components/DemoVideo'
+import { DemoVideo } from '../components/CodyVideo'
 import { useAuthModal } from '../context/AuthModalContext'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 
@@ -195,11 +195,11 @@ const CodyPage: FunctionComponent = () => {
                 </div>
                 <div className="mx-auto mt-12 w-full">
                     <DemoVideo
-                        video="cody-demo-202305"
+                        video="cody-promo-202306"
                         splash={true}
                         className="mx-auto mt-8 w-full max-w-[1062px] rounded-lg bg-violet-750 drop-shadow-2xl"
                         splashClassName="rounded-lg"
-                        playButton={<PlayButton title="Watch Cody write & fix code" time="4 min" ctaText="Watch now" />}
+                        playButton={<PlayButton title="See Cody in action" time="2 min" ctaText="Watch now" />}
                     />
                 </div>
 
