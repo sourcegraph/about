@@ -13,6 +13,7 @@ interface Props {
     buttons: ReactNode
     beforeFeatures?: ReactNode
     features: FeatureCluster[]
+    afterFeatures?: ReactNode
     borderColorClass: string
     textColorClass: string
 }
@@ -26,6 +27,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
     buttons,
     beforeFeatures,
     features,
+    afterFeatures,
     borderColorClass,
     textColorClass,
 }) => (
@@ -38,7 +40,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
         {description}
         {buttons}
 
-        {(beforeFeatures || features.length > 0) && (
+        {(beforeFeatures || afterFeatures || features.length > 0) && (
             <div className="ml-0 py-sm">
                 {beforeFeatures}
                 {features.map(node => (
@@ -56,6 +58,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
                         </ul>
                     </div>
                 ))}
+                {afterFeatures}
             </div>
         )}
     </div>

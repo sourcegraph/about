@@ -24,29 +24,15 @@ interface LinkWithIcon extends Link {
 
 const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
     {
-        name: 'Product',
+        name: 'Products',
         items: [
+            {
+                name: 'Cody',
+                href: '/cody',
+            },
             {
                 name: 'Code Search',
                 href: '/code-search',
-            },
-            {
-                name: 'Code Insights',
-                href: '/code-insights',
-            },
-            {
-                name: 'Batch Changes',
-                href: '/batch-changes',
-            },
-            {
-                name: 'Cody (AI)',
-                href: '/cody',
-                badgeText: 'New',
-            },
-            {
-                name: 'Own',
-                href: '/own',
-                badgeText: 'New',
             },
         ],
     },
@@ -65,10 +51,6 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
                 name: 'Customer stories',
                 href: '/case-studies',
             },
-            {
-                name: 'Sourcegraph overview (PDF)',
-                href: '/handouts/Sourcegraph-Overview.pdf',
-            },
         ],
     },
     {
@@ -77,6 +59,10 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
             {
                 name: 'Blog',
                 href: '/blog',
+            },
+            {
+                name: 'Library',
+                href: '/resources',
             },
             {
                 name: 'Changelog',

@@ -63,17 +63,6 @@ export { Layout } from './Layout/Layout'
 export { ContentPage } from './ContentPage'
 export { GatedResourceLayout } from './GatedResourceLayout' // Webinars, Guides, Reports
 
-// Pricing
-export { PricingPlanFeature, PricingPlan } from './Pricing'
-export {
-    type FeatureCluster,
-    ENTERPRISE_STARTER_FEATURES_OVERVIEW as BIZ_FEATURES_OVERVIEW,
-    ENTERPRISE_FEATURES_OVERVIEW,
-    ALL_FEATURES_COMPARED_DATA,
-    SPOTLIGHT_FEATURE_INFO,
-    ALL_FEATURE_INFO,
-} from './Pricing'
-
 // Resources
 export { Filters, type Filter, Card, ResourceCard, resourceItems, type Resource, useFilters } from './Resources'
 

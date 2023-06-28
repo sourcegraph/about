@@ -496,9 +496,18 @@ const CodyPage: FunctionComponent = () => {
                         Cody for Enterprise provides context-aware answers based on your own private codebase. Contact
                         our sales team to learn more.
                     </p>
-                    <Link href="#contact-form" title="Cody access form" className="btn btn-inverted-primary mt-1 w-fit">
-                        Get Cody for work
-                    </Link>
+                    <div className="flex items-center gap-sm">
+                        <Link
+                            href="#contact-form"
+                            title="Cody access form"
+                            className="btn btn-inverted-primary mt-1 w-fit"
+                        >
+                            Get Cody for work
+                        </Link>
+                        <Link href="/cody/pricing" className="mt-1 text-white">
+                            Pricing and plans
+                        </Link>
+                    </div>
                 </div>
             </ContentSection>
         </Layout>
