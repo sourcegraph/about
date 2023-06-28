@@ -76,7 +76,7 @@ Special shoutout to community members Deepak Kumar and Momil Ijaz for contributi
 
 ## Inline chat
 
-While recipes provide the ability to quickly accomplish specific tasks, Cody chat gives users more freeform capabilities. As a user, you may want to ask Cody questions like:
+While recipes help quickly accomplish specific tasks, Cody chat gives users more freeform capabilities. As a user, you may want to ask Cody questions like:
 
 - Why is this code not working like I expect it to?
 - Why is this function so slow?
