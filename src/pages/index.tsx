@@ -326,7 +326,7 @@ const HomeHero: FunctionComponent = () => {
                     </Heading>
 
                     <Heading size="h2" className="mx-auto mt-4 max-w-[728px] text-center !text-4xl text-white">
-                        Sourcegraph is an AI platform that makes it easy to read, write, and fix code–even in big,
+                        Sourcegraph is a code AI platform that makes it easy to read, write, and fix code–even in big,
                         complex code bases.
                     </Heading>
                 </div>
