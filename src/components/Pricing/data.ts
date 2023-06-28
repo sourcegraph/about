@@ -41,7 +41,7 @@ export const ENTERPRISE_STARTER_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Security and admin',
-        features: ['ssoSaml', 'securityRoles', 'repoPerms', 'analytics'],
+        features: ['ssoSaml', 'securityRoles', 'repoPerms', 'analytics', 'soc2'],
     },
     {
         topic: 'Scale and performance',
@@ -70,179 +70,11 @@ export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Flexible deployment',
-        features: ['cloudDeployment', 'selfHostedSingleNode', 'selfHostedMultiNode'],
+        features: ['cloudDeployment', 'selfHostedSingleNode', 'selfHostedMultiNode', 'airgappedDeployment'],
     },
     {
         topic: '24/5 enhanced support',
-        features: ['slaSupport', 'technicalAdvisor', 'premiumServices'],
-    },
-]
-
-export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
-    {
-        topic: 'Features',
-        features: [
-            {
-                label: 'codeSearch',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'codeNavigation',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'batchChanges',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'codeInsights',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'ownership',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'notebooks',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'codeMonitoring',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'comprehensiveApi',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-        ],
-    },
-    {
-        topic: 'Code host integrations',
-        features: [
-            {
-                label: 'cloudCodeHosts',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'selfHostedCodeHosts',
-                enterpriseStarter: false,
-                enterprise: true,
-            },
-            {
-                label: 'otherCodeHosts',
-                enterpriseStarter: false,
-                enterprise: true,
-            },
-        ],
-    },
-    {
-        topic: 'Security, compliance, and admin',
-        features: [
-            {
-                label: 'soc2',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'analytics',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'securityRoles',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'ssoSaml',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'repoPerms',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'customPerms',
-                enterpriseStarter: false,
-                enterprise: true,
-            },
-            {
-                label: 'privateInstance',
-                enterpriseStarter: false,
-                enterprise: true,
-            },
-        ],
-    },
-    {
-        topic: 'Scale and performance',
-        features: [
-            {
-                label: 'codeStorag',
-                enterpriseStarter: 'Up to 75GB',
-                enterprise: 'Over 75GB',
-            },
-            {
-                label: 'executors',
-                enterpriseStarter: '2',
-                enterprise: '4',
-            },
-        ],
-    },
-    {
-        topic: 'Support',
-        features: [
-            {
-                label: 'support',
-                enterpriseStarter: '24/5 support',
-                enterprise: '24/5 support',
-            },
-            {
-                label: 'technicalAdvisor',
-                enterpriseStarter: 'Available',
-                enterprise: 'With >$100k spend',
-            },
-            {
-                label: 'supportSla',
-                enterpriseStarter: 'Standard',
-                enterprise: 'Enhanced',
-            },
-        ],
-    },
-    {
-        topic: 'Deployment',
-        features: [
-            {
-                label: 'cloudDeployment',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'selfHostedSingleNode',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'selfHostedMultiNode',
-                enterpriseStarter: false,
-                enterprise: true,
-            },
-            {
-                label: 'airGappedDeploy',
-                enterpriseStarter: false,
-                enterprise: 'Additional fee',
-            },
-        ],
+        features: ['slaSupport', 'technicalAdvisor', 'professionalServices'],
     },
 ]
 
@@ -289,7 +121,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Track and infer code ownership across your codebase.',
     },
 
-    // Security
+    // Security and admin
     ssoSaml: {
         label: 'SSO/SAML',
         description: 'Single sign-on user authentication with SAML, OAuth, OpenID Connect, and HTTP auth proxy.',
@@ -317,6 +149,10 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'In-product analytics',
         description: 'Understand user engagement and calculate the value of using Sourcegraph.',
     },
+    soc2: {
+        label: 'SOC 2 Type II',
+        description: '',
+    },
 
     // Deployment
     flexibleDeployment: {
@@ -334,6 +170,10 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     selfHostedSingleNode: {
         label: 'Self-hosted (single-node)',
         description: 'Self-hosted deployment on a single node.',
+    },
+    airgappedDeployment: {
+        label: 'Air-gapped deployment',
+        description: 'Available only with a professional services package to ensure adequate support.',
     },
 
     // Code hosts
@@ -382,49 +222,8 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
         description:
             'Specialized technical experts to lead training & enablement, strategy, and overall account health.',
     },
-    premiumServices: {
-        label: 'Premium services available',
+    professionalServices: {
+        label: 'Professional services available',
         description: '',
-    },
-}
-
-export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
-    ...FEATURE_INFO,
-
-    // Security and admin
-    soc2: {
-        label: 'SOC 2 Type II',
-        description: '',
-    },
-
-    // Scale and performance
-    codeStorag: {
-        label: 'Cloud code storage',
-        description: 'Included storage for cloud deployments.',
-    },
-    executors: {
-        label: 'Executors',
-        description: 'Execute server-side Batch Changes and use auto-indexing for precise code navigation.',
-    },
-
-    // Support
-    support: {
-        label: 'Support',
-    },
-    technicalAdvisor: {
-        label: 'Technical Advisor',
-        description:
-            'Specialized technical experts to lead training & enablement, strategy, and overall account health.',
-    },
-    supportSla: {
-        label: 'Support SLA',
-        description:
-            'Priority support SLAs: priority ticket handling and guaranteed initial response SLA from a dedicated team.',
-    },
-
-    // Deployment
-    airGappedDeploy: {
-        label: 'Air-gapped deployment',
-        description: 'Deploy Sourcegraph in an offline environment on your organization’s infrastructure.',
     },
 }

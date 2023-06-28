@@ -1,18 +1,10 @@
 import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
-import CheckIcon from 'mdi-react/CheckIcon'
 import Link from 'next/link'
 
 import { ContentSection, CallToActionContentSection, CustomerLogos, Layout } from '../components'
-import {
-    PricingPlan,
-    PricingPlanFeature,
-    ALL_FEATURE_INFO,
-    ENTERPRISE_STARTER_FEATURES_OVERVIEW,
-    ENTERPRISE_FEATURES_OVERVIEW,
-    ALL_FEATURES_COMPARED_DATA,
-} from '../components/Pricing'
+import { PricingPlan, ENTERPRISE_STARTER_FEATURES_OVERVIEW, ENTERPRISE_FEATURES_OVERVIEW } from '../components/Pricing'
 import { buttonLocation, buttonStyle } from '../data/tracking'
 
 const StartFreeButton: FunctionComponent<{ className?: string }> = ({ className }) => (
@@ -163,89 +155,6 @@ const PricingPage: FunctionComponent = () => (
 
         <h2 className="mx-auto mb-5 max-w-2xl text-center">Trusted by sophisticated dev teams</h2>
         <CustomerLogos />
-
-        <div className="mx-auto overflow-hidden py-3xl md:max-w-screen-xl md:overflow-visible md:py-5xl">
-            <table className="relative table-fixed border-separate border-spacing-0 border-0">
-                <thead>
-                    <tr className="border-0 md:sticky md:top-16">
-                        <th className="w-1/3 border-0 border-b bg-white p-0 text-start">
-                            <div className="h-[133px] p-xxs pt-md sm:h-[140px] md:h-[157px] md:p-xs md:pt-xs md:pr-xs lg:h-60">
-                                <h2 className="text-xl sm:text-4xl md:max-w-[250px] lg:text-7xl">
-                                    Compare all features
-                                </h2>
-                            </div>
-                        </th>
-                        <th className="w-1/3 border-0 border-b bg-white p-0 text-start">
-                            <div
-                                className={`h-full border-1 border-t-16 border-b-0 border-gray-200 p-xxs pb-md md:p-sm lg:h-60 ${PLAN_COLORS.enterpriseStarter.borderColorClass}`}
-                            >
-                                <h2 className="mb-sm text-xl md:text-4xl">Enterprise Starter</h2>
-                                <h4 className="mb-sm hidden font-normal lg:block">Starts at $5k/year</h4>
-                                <StartFreeButton />
-                            </div>
-                        </th>
-                        <th className="w-1/3 border-0 border-b bg-white p-0 text-start">
-                            <div
-                                className={`h-full border-t-16 border-gray-200 p-xxs pb-md md:p-sm lg:h-60  ${PLAN_COLORS.enterprise.borderColorClass}`}
-                            >
-                                <h2 className="mb-sm text-xl md:text-4xl">Enterprise</h2>
-                                <h4 className="mb-sm hidden font-normal lg:block">Starts at $50k/year</h4>
-                                <EnterpriseButtons contactUsClassName="hidden lg:block" />
-                            </div>
-                        </th>
-                    </tr>
-                </thead>
-                {ALL_FEATURES_COMPARED_DATA.map(section => (
-                    <tbody key={section.topic}>
-                        <tr className="bg-white" key={section.topic}>
-                            <th colSpan={100} className="border-0 p-xxs pt-lg text-start md:p-xs">
-                                <h3 className="text-xl font-semibold md:text-2xl md:font-normal">{section.topic}</h3>
-                            </th>
-                        </tr>
-                        {section.features.map((feature, index) => (
-                            <tr
-                                className={classNames(
-                                    'border-0',
-                                    index + 1 === section.features.length && 'border-b-1 border-gray-200'
-                                )}
-                                key={feature.label}
-                            >
-                                {/* Feature title */}
-                                <td className="border-0 p-xxs md:p-xs">
-                                    <PricingPlanFeature
-                                        feature={ALL_FEATURE_INFO[feature.label]}
-                                        tag="h5"
-                                        className="text-sm font-normal sm:text-base md:font-semibold"
-                                    />
-                                </td>
-                                {/* Enterprise Starter plan specs */}
-                                <td className="border-0 border-x-1 p-xxs text-center align-middle text-sm sm:text-base md:p-xs">
-                                    {typeof feature.enterpriseStarter === 'string' ? (
-                                        feature.enterpriseStarter
-                                    ) : feature.enterpriseStarter ? (
-                                        <CheckIcon
-                                            className={`icon-inline mr-2 ${PLAN_COLORS.enterpriseStarter.textColorClass} inline`}
-                                        />
-                                    ) : null}
-                                    {feature.disclaimer && <i className="block text-sm">{feature.disclaimer}</i>}
-                                </td>
-                                {/* Enterprise plan specs */}
-                                <td className="border-0 p-xxs text-center align-middle text-sm sm:text-base md:p-xs">
-                                    {typeof feature.enterprise === 'string' ? (
-                                        feature.enterprise
-                                    ) : feature.enterprise ? (
-                                        <CheckIcon
-                                            className={`icon-inline mr-2 ${PLAN_COLORS.enterprise.textColorClass} inline`}
-                                        />
-                                    ) : null}
-                                    {feature.disclaimer && <i className="block text-sm">{feature.disclaimer}</i>}
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                ))}
-            </table>
-        </div>
 
         <CallToActionContentSection
             title="Try Sourcegraph for free"
