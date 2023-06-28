@@ -25,6 +25,7 @@ For organizations to leverage ownership they need data. The owners graph needs t
 To simplify this task, Sourcegraph displays recent contributors and viewers of your codebase. Think of it as your ownership compass, helping you make informed decisions on code owners and saving you time.
 
 ## How code ownership can improve your workflows
+</br>
 
 ### Case 1: Streamlined project management
 
@@ -32,7 +33,7 @@ Imagine a large-scale software development project with multiple teams. It can g
 
 ### Case 2: Enhanced code review process
 
-Figuring out who can lend the second pair of eyes on your code change can often be a challenge, especially if the code base that is being modified is foreign. Search can be leveraged here as well - owners of search results can be quickly determined with select:file.owners.
+Figuring out who can lend the second pair of eyes on your code change can often be a challenge, especially if the code base that is being modified is foreign. Search can be leveraged here as well - owners of search results can be quickly determined with `select:file.owners`.
 
 ### Case 3: Fostering collaboration and knowledge sharing
 
