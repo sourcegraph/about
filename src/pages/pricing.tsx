@@ -118,8 +118,7 @@ const PricingPage: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Sourcegraph | Pricing',
-            description:
-                "See pricing for Sourcegraph's code intelligence platform. Get started with a free trial today.",
+            description: 'Pricing and plans for Sourcegraph Cody and Code Search. Get started with a free trial today.',
         }}
         hero={
             <div className="container mx-auto pt-5xl text-center">
