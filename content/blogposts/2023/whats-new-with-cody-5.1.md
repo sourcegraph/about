@@ -142,21 +142,19 @@ The app is the best way to use Cody for free, and it’s [available to download 
 
 ## Thank you
 
-Cody is an open-source project. Thank you to the following community members for their contributions to code, issues, docs, and more!
+Cody is an open source project. Thank you to the following community members for their contributions to code, issues, docs, and more!
 
-- Deepak Kumar
-- Momil Ijaz
-- @juliawritescode
-- Anthony Gilbert
-- DocumentWrite
-- Fahd Mirza
-- Gergely Orosz
-- John Samuelson
-- Marc Seitz
-- Mark Wolfe
-- Matt Holt
-- Siddhant Khare
-- Vadim Peretokin
-- Vipul Gupta
+- [Deepak Kumar](https://twitter.com/deepakdk3478)
+- [Momil Ijaz](https://github.com/Momilijaz96)
+- [@juliawritescode](https://twitter.com/juliawritescode)
+- [Anthony Gilbert](https://twitter.com/anthony_codes)
+- [DocumentWrite](https://twitter.com/documentwrites)
+- [John Samuelson](https://twitter.com/SamuelsonTweets)
+- [Marc Seitz](https://twitter.com/mfts0)
+- [Mark Wolfe](https://twitter.com/wolfeidau)
+- [Matt Holt](https://twitter.com/mholt6)
+- [Siddhant Khare](https://twitter.com/Siddhant_K_code)
+- [Vadim Peretokin](https://twitter.com/vadi2)
+- [Vipul Gupta](https://twitter.com/vipulgupta2048)
 
 To start contributing to Cody, [join our Discord](https://discord.com/servers/sourcegraph-969688426372825169).
