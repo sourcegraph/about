@@ -38,15 +38,15 @@ const NAV_ITEMS: NavItem[] = [
         ],
     },
     {
+        name: 'Pricing',
+        href: '/pricing',
+    },
+    {
         name: 'Enterprise',
         links: [
             {
                 name: 'Cloud',
                 href: '/cloud',
-            },
-            {
-                name: 'Pricing',
-                href: '/pricing',
             },
             {
                 name: 'Customer stories',
