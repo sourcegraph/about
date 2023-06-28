@@ -178,7 +178,7 @@ const PricingPage: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <h2 className="mx-auto mb-5 max-w-2xl text-center">The code intelligence platform for modern dev teams</h2>
+            <h2 className="mx-auto mb-5 max-w-2xl text-center">Trusted by sophisticated dev teams</h2>
             <CustomerLogos />
 
             <div className="mx-auto overflow-hidden py-3xl md:max-w-screen-xl md:overflow-visible md:py-5xl">
