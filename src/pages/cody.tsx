@@ -420,7 +420,7 @@ const CodyPage: FunctionComponent = () => {
                     ))}
                 </div>
             </ContentSection>
-
+            
             <ContentSection
                 parentClassName="!py-0"
                 className="mx-auto flex flex-col items-center justify-center gap-x-8 py-24  md:flex-row md:items-start md:pb-[112px] md:pt-[208px]"
