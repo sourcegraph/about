@@ -114,7 +114,7 @@ Repository metadata can be [added through the web UI, src-cli and GraphQL API](h
 
 #### Complete Perforce support
 
-We see many teams using Perforce in combination with Git, and until recently, they lacked a single experience. Now, devs can search and navigate code hosted in either version control systems in Sourcegraph.
+We see many teams using Perforce in combination with Git, and until recently, they lacked a single experience to search and understand all their code. Now, devs can search and navigate code hosted in either version control systems in Sourcegraph.
 
 Sourcegraph completes support Perforce as a part of 5.1. There is now support for streams and changelists so Perforce code and its version control system components are seamlessly integrated into Sourcegraph’s tools side-by-side with other supported code hosts.
 <br/><br/>
