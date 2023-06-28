@@ -7,7 +7,7 @@ authors:
   description: 'Relicensing Sourcegraph OSS'
   tags: [blog]
   slug: 'relicensing-sourcegraph-core'
-  published: false
+  published: true
 ---
 
 We are excited to share the news about an important evolution in our product licensing strategy as we prepare for Sourcegraph 5.1. After much deliberation and thoughtful consideration, we have decided to move the code search parts of Sourcegraph from open source software (OSS) to an enterprise license for all future developments.
