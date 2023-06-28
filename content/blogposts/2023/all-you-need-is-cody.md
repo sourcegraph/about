@@ -28,7 +28,7 @@ Just to make absolutely certain, between you and me, that you know I am not a li
 
 1990, my first programming job while in college, some statistics prof hired me because I'd taken some programming courses, and they handed me five hundred (500) source files in FORTRAN on a floppy disk. Not Fortran-77 or anything nice like that. FORTRAN. It had no comments, and the prof who hired me told me some handwavy stuff about the pilfger gromak and the weasel snarfs. And yeah. Took my first check and ran as fast as my cowardly legs could carry me. What even _was_ that. I was out hunting bokoblins and they handed me a Gleeok. I mean, seriously.
 
-2005, Amazon.com. Been there 6+ years, decorated hero, luncheoning with big B on the side, and one summer day I somehow manage to be the last person touching my nose when Werner Vogels decided that someone "senior" (hi STEVEY) needed to implement **software load balancing** , a new concept that had emerged from research in Fucking Whereverville, and Werner had his hands on a copy of the source code from a fellow researcher. It was many thousands of lines of straight K&R C files (because lol ANSI, right?) with its own pointer-arithmetic DSL bullshit, custom data structures and memory management, no build file, no documentation, and it had all been carefully run through a comment stripper to ensure I would be _maximally_ inconvenienced on this project. I mean, I've spent a _lot_ of time in the Nethack core source code, and I know my C. But this was just insanity. Was it a hit job? I don't know. Perhaps. But it sure did the trick. I left Amazon. Now you know the real story.
+2005, Amazon.com. Been there 6+ years, decorated hero, luncheoning with big B on the side, and one summer day I somehow manage to be the last person touching my nose when Werner Vogels decided that someone "senior" (hi STEVEY) needed to implement **software load balancing** , a new concept that had emerged from research in Fucking Whereverville, and Werner had his hands on a copy of the source code from a fellow researcher. It was many thousands of lines of straight K&R C files (because lol ANSI, right?) with its own pointer-arithmetic DSL BS, like a BSL, custom data structures and memory management, no build file, no documentation, and it had all been carefully run through a comment stripper to ensure I would be _maximally_ inconvenienced on this project. I mean, I've spent a _lot_ of time in the Nethack core source code, and I know my C. But this was just insanity. Was it a hit job? I don't know. Perhaps. But it sure did the trick. I left Amazon. Now you know the real story.
 
 #### **The Big Ball of Crap pattern** (_Design Patterns,_ Gamma, Helm, Johnson, Vlissides, 1994)
 
@@ -52,7 +52,7 @@ And it feels so incredibly _unfair_ when it happens, because what the actual is 
 
 Well now we get to the punchline, and it's why I've been raving like a lunatic at _everyone_, even my good friends (sorry Ronald!) about this for the past month or so.
 
-Because if I'd had Cody–today's Cody–at _any point_ in my career during one of those crises, I would have come through like a **storybook FUCKING superhero**.
+Because if I'd had Cody–today's Cody–at _any point_ in my career during one of those crises, I would have come through like a **storybook friggin' superhero**.
 
 Ah, me.
 
@@ -72,7 +72,7 @@ For the rest of this post, Imma just show you stuff. Random shit I can do with C
 
 You're going to wish you've had this since forever.
 
-To work along with me on your own code, and ask Cody about your own random legacy shit ball, and watch what a fucking WIZARD Cody is with your undocumented ugly-ass ancient twice-acquired COBOL/Perl-DSL 790k-line career-ending ass-hairball that your team happens to own at this particular moment, then [**click here to get Cody for free**](https://about.sourcegraph.com/cody). You know that link is legit because no self-respecting phishing bot would _ever_ have said that.
+To work along with me on your own code, and ask Cody about your own random legacy shit ball, and watch what a fuckin' wizard Cody is with your undocumented ugly-ass ancient twice-acquired COBOL/Perl-DSL 790k-line career-ending ass-hairball that your team happens to own at this particular moment, then [**click here to get Cody for free**](https://about.sourcegraph.com/cody). You know that link is legit because no self-respecting phishing bot would _ever_ have said that.
 
 It doesn't matter what language you're using, how big your godawful codebase is, how many repos it's spread across, what code host(s) you're using, how many goats you regularly sacrifice to the single engineer at the company who understands the code, _Cody will 100% understand it and help you accomplish your goals with the code._
 
