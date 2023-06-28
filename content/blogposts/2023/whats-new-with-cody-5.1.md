@@ -112,7 +112,7 @@ Multi-repository context fetching is available when using Cody via the web inter
 
 We want Cody to be available wherever you write code, and the #1 request we’ve received is to bring Cody to IntelliJ and other JetBrains IDEs. Cody is now available as a plugin for JetBrains IDEs (AppCode, Android Studio, CLion, GoLand, IntelliJ IDEA, PhpStorm, PyCharm, Rider, RubyMine, WebStorm, and all new IDEs that JetBrains releases), and you can [download it today](https://plugins.jetbrains.com/plugin/9682-sourcegraph). The plugin supports the Cody chat sidebar, recipes, and code autocomplete.
 
-You can connect the JetBrains plugin to a Sourcegraph.com account to use on public code, and to a Sourcegraph Enterprise account or the Cody desktop app to use for a private codebase.
+You can connect the JetBrains plugin to a Sourcegraph.com account to use on public code and to a Sourcegraph Enterprise account or the Cody desktop app to use for a private codebase.
 
 Cody is also available for VS Code, with support coming soon for Neovim and Emacs. [Join the waitlist](https://info.sourcegraph.com/waitlist) to be notified when more editors are available or to request a new editor.
 
