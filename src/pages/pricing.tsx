@@ -146,10 +146,10 @@ const PricingPage: FunctionComponent = () => {
                         description={
                             <h3 className="my-sm max-w-sm text-lg font-normal md:min-h-[108px]">
                                 Full platform access for teams and orgs. Flexible deployment options.{' '}
-                                <Link href="/terms" title="Online Terms of Service" className="text-black underline">
-                                    Online Terms of Service
+                                <Link href="/terms" className="text-black underline">
+                                    Online terms of service
                                 </Link>{' '}
-                                and workshop based evaluation path.
+                                and workshop-based evaluation path.
                             </h3>
                         }
                         price="Starts at $5k/year"
@@ -165,7 +165,7 @@ const PricingPage: FunctionComponent = () => {
                         name="Enterprise"
                         description={
                             <h3 className="my-sm max-w-sm text-lg font-normal md:min-h-[108px]">
-                                All the benefits of Enterprise Starter with increased Support SLAs and custom deployment
+                                All the benefits of Enterprise Starter with increased support SLAs and custom deployment
                                 options.
                             </h3>
                         }
