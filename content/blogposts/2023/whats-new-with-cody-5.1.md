@@ -11,9 +11,13 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/5.1/whats-new-
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/5.1/whats-new-cody-5-1.png
 ---
 
-The June 2023 release of Cody (version 5.1) brings even more powerful and accurate code AI to devs. Not only can Cody suggest AI-generated autocompletions in your editor like GitHub Copilot, it can also write entire files, fix bugs, refactor code, and answer questions about your entire codebase. Cody’s power and accuracy comes from supplying the LLM with better context about your codebase--also known as “cheating” from Steve Yegge’s [Cheating Is All You Need](https://about.sourcegraph.com/blog/cheating-is-all-you-need) post--which builds on our work at Sourcegraph creating the leading code search engine.
+<YouTube
+  title="Sourcegraph Cody: Inline Assist" 
+  id="o5eB8J2HvAk"
+  showTitle={false}
+/>
 
-Don’t take our word for it: Michael Natkin, SVP of Software Engineering, [recently said](https://blog.glowforge.com/ai-saas-tools-dont-trust-definitely-verify/) about his team’s experience with Cody, “It was important to us that we work with someone who could not just deliver now but would be poised to be the leader for many years to come. To that end, they did a great job explaining why their static code analysis background was the “peanut butter and chocolate” to work with modern LLM technology. That code analysis and search product was already mature and useful – the AI just unlocked new capabilities.” 
+The June 2023 release of Cody (version 5.1) brings even more powerful and accurate code AI to devs. Not only can Cody suggest AI-generated autocompletions in your editor like GitHub Copilot, it can also write entire files, fix bugs, refactor code, and answer questions about your entire codebase. Cody’s power and accuracy comes from supplying the LLM with better context about your codebase--also known as “cheating” from Steve Yegge’s [Cheating Is All You Need](https://about.sourcegraph.com/blog/cheating-is-all-you-need) post--which builds on our work at Sourcegraph creating the leading code search engine.
 
 Highlights:
 
