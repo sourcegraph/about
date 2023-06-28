@@ -421,6 +421,20 @@ const CodyPage: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
+            <ContentSection parentClassName="text-center !pb-0 !pt-[112px]">
+                <Heading size="h2" className="text-white">
+                    See what devs are building with Cody
+                </Heading>
+
+                <div className="mt-6 flex w-full flex-wrap justify-center gap-x-6 md:mt-16 md:grid-cols-2">
+                    <TwitterEmbed tweetId="1645903813302185984" className="flex w-full max-w-[500px] justify-center" />
+                    <div className="flex w-full max-w-[500px] flex-col gap-1">
+                        <TwitterEmbed tweetId="1647765520673046529?s=20" className="flex justify-center" />
+                        <TwitterEmbed tweetId="1645490165857542145" className="flex justify-center " />
+                    </div>
+                </div>
+            </ContentSection>
+
             <ContentSection
                 parentClassName="!py-0"
                 className="mx-auto flex flex-col items-center justify-center gap-x-8 py-24  md:flex-row md:items-start md:pb-[112px] md:pt-[208px]"
