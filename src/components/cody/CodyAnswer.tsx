@@ -31,11 +31,7 @@ export const CodyAnswer: FunctionComponent<CodyAnswerProps> = ({ text, width = '
             </div>
             <div className={styles.text}>
                 {lines.map((line, index) => (
-                    <div
-                        key={line}
-                        className={styles.typewriter}
-                        style={{ animationDelay: `${index * delayByLine}s` }}
-                    >
+                    <div key={line} className={styles.typewriter} style={{ animationDelay: `${index * delayByLine}s` }}>
                         {line}
                     </div>
                 ))}

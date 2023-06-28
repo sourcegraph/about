@@ -199,7 +199,7 @@ const CodyPage: FunctionComponent = () => {
                         splash={true}
                         className="mx-auto mt-8 w-full max-w-[1062px] rounded-lg bg-violet-750 drop-shadow-2xl"
                         splashClassName="rounded-lg"
-                        playButton={<PlayButton title="See Cody in action" time="2 min" ctaText="Watch now" />}
+                        showPlayButton={false}
                     />
                 </div>
 
@@ -228,22 +228,21 @@ const CodyPage: FunctionComponent = () => {
                                 size="h4"
                                 className="cody-platforms-bg-gradient flex w-full items-center justify-center gap-4 border border-white/[.04] py-4 px-6 text-white"
                             >
-                                <img src="/icons/vscode.svg" height={34} width={38} alt="IntelliJ Icon" />
+                                <img src="/icons/vscode.svg" height={34} width={34} alt="VScode Icon" />
                                 VS Code extension
                             </Heading>{' '}
                             <Heading
                                 size="h4"
-                                className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] py-4 px-6 text-white"
+                                className="cody-platforms-bg-gradient flex w-full items-center justify-center gap-4 border border-white/[.04] py-4 px-6 text-white"
                             >
-                                <img src="/icons/IntelliJ.svg" height={38} width={38} alt="IntelliJ Icon" />
-                                IntelliJ
-                                <Badge size="small" text="Coming soon!" color="light-gray" />
+                                <img src="/icons/IntelliJ.svg" height={34} width={34} alt="IntelliJ Icon" />
+                                IntelliJ extension
                             </Heading>
                             <Heading
                                 size="h4"
                                 className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] py-4 px-6 text-white"
                             >
-                                <img src="/icons/Neovim-logo.svg" height={38} width={38} alt="Neovim Icon" />
+                                <img src="/icons/Neovim-logo.svg" height={34} width={34} alt="Neovim Icon" />
                                 Neovim
                                 <Badge size="small" text="Coming soon!" color="light-gray" />
                             </Heading>
@@ -251,7 +250,7 @@ const CodyPage: FunctionComponent = () => {
                                 size="h4"
                                 className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] py-4 px-6 text-white"
                             >
-                                <img src="/icons/EmacsIcon.svg" height={38} width={38} alt="Emacs Icon" />
+                                <img src="/icons/EmacsIcon.svg" height={34} width={34} alt="Emacs Icon" />
                                 Emacs
                                 <Badge size="small" text="Coming soon!" color="light-gray" />
                             </Heading>

@@ -1,7 +1,7 @@
 /* eslint-disable react/forbid-dom-props */
 import React, { FunctionComponent, useEffect, useState } from 'react'
 
-import {CodyAnswer} from '../CodyAnswer'
+import { CodyAnswer } from '../CodyAnswer'
 import { Commits } from '../Commits'
 
 import styles from './CodeCompletions.module.css'

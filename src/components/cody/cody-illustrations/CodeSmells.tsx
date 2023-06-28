@@ -71,4 +71,3 @@ export const CodeSmells: FunctionComponent<CodeSmellsProps> = ({ answerDelay = 0
         </div>
     )
 }
-

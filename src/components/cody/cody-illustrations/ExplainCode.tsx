@@ -1,8 +1,8 @@
 /* eslint-disable react/forbid-dom-props */
 import React, { FunctionComponent, useEffect, useState } from 'react'
 
-import {CodeBlock} from '../CodeBlock'
-import {CodyAnswer} from '../CodyAnswer'
+import { CodeBlock } from '../CodeBlock'
+import { CodyAnswer } from '../CodyAnswer'
 import { WordStyle } from '../ColoredCode'
 
 import styles from './CodeCompletions.module.css'
@@ -60,4 +60,3 @@ export const ExplainCode: FunctionComponent<ExplainCodeProps> = ({ answerDelay =
         </div>
     )
 }
-

@@ -30,7 +30,8 @@ export const DemoVideo: React.FunctionComponent<{
     splash?: boolean
     className?: string
     splashClassName?: string
-}> = ({ video, splash = false, className, splashClassName }) => {
+    showPlayButton?: boolean
+}> = ({ video, splash = false, className, splashClassName, showPlayButton = true }) => {
     const videoRef = useRef<HTMLVideoElement>(null)
 
     const [isShowing, setIsShowing] = useState(false)
@@ -82,7 +83,7 @@ export const DemoVideo: React.FunctionComponent<{
                     backgroundImage: `url(${videoInfo.poster})`,
                 }}
             />
-            <PlayCircleIcon className="h-[100px] w-[100px]" />
+            {showPlayButton && <PlayCircleIcon className="h-[100px] w-[100px]" />}
         </div>
     )
 }

@@ -1,8 +1,8 @@
 /* eslint-disable react/forbid-dom-props */
 import React, { FunctionComponent } from 'react'
 
-import {CodeBlock} from '../CodeBlock'
-import {CodyAnswer} from '../CodyAnswer'
+import { CodeBlock } from '../CodeBlock'
+import { CodyAnswer } from '../CodyAnswer'
 import { WordStyle } from '../ColoredCode'
 
 import styles from './CodeCompletions.module.css'
@@ -56,4 +56,3 @@ test('Test sorted array', () => {
         </div>
     )
 }
-

@@ -33,7 +33,7 @@ export const CodeBlock: FunctionComponent<CodeBlockProps> = ({
     ).join(' ')
 
     const containerStyle: CSSProperties = {
-        width, 
+        width,
     }
 
     return (
@@ -46,7 +46,7 @@ export const CodeBlock: FunctionComponent<CodeBlockProps> = ({
                     code={code}
                     selectedStyle={isSelected ? styles.codeSelected : undefined}
                 />
-                
+
                 {codeGenerated && (
                     <div className={classNames(styles.fadeIn, styles.codeGenerated)}>{codeGenerated}</div>
                 )}
@@ -54,4 +54,3 @@ export const CodeBlock: FunctionComponent<CodeBlockProps> = ({
         </div>
     )
 }
-

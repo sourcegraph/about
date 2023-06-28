@@ -15,6 +15,7 @@ import {
     EmailAuth,
     VideoCarousel,
     CallToActionWithCody,
+    Badge,
 } from '../components'
 import { TwitterEmbed } from '../components/EmbedTweet'
 import { breakpoints } from '../data/breakpoints'
@@ -30,6 +31,7 @@ interface AvailabilityIconProps {
     onMouseLeave: () => void
     eventName: string
     type: string
+    className?: string
 }
 
 const carouselVideos = [
@@ -173,8 +175,8 @@ const HomeHero: FunctionComponent = () => {
 
     return (
         <>
-            <ContentSection parentClassName="!py-0 !px-sm overflow-x-clip" className="pb-[55px] md:pb-0">
-                <div className="grid grid-cols-1 gap-x-4 gap-y-16 bg-right bg-no-repeat pt-16 pb-11 md:grid-cols-2 md:px-6 md:pt-32 md:pb-8 lg:bg-[url('/home/home-hero-bg.png')] lg:bg-[length:800px_600px] xl:bg-[length:1000px_800px]">
+            <ContentSection parentClassName="!py-0 !px-sm overflow-x-clip" className="relative pb-[55px] md:pb-0">
+                <div className="grid grid-cols-1 gap-x-4 gap-y-16  pt-16 pb-11 md:grid-cols-2 md:px-6 md:pt-32 md:pb-8">
                     <div className="mx-auto flex w-full max-w-[567px] flex-col items-center px-0 md:mx-0 md:items-start">
                         <Heading
                             size="h1"
@@ -235,6 +237,13 @@ const HomeHero: FunctionComponent = () => {
                     </div>
 
                     <VideoCarousel videos={carouselVideos} />
+
+                    <img
+                        className="absolute top-0 right-0 !-mr-12 hidden lg:block"
+                        src="/home/light-instance.svg"
+                        alt=""
+                        aria-hidden={true}
+                    />
                 </div>
 
                 <div
@@ -268,18 +277,26 @@ const HomeHero: FunctionComponent = () => {
                                 eventName={EventName.DOWNLOAD_IDE}
                                 type="VS Code"
                             />
-                        </div>
-
-                        <div className="relative flex rounded-lg border border-dashed border-gray-200 border-opacity-20">
                             <AvailabilityIcon
-                                href="https://info.sourcegraph.com/waitlist"
+                                href="https://plugins.jetbrains.com/plugin/9682-sourcegraph"
                                 src="/home/intelliJ-logo.svg"
-                                alt="IntelliJ (coming soon)"
-                                onHover={() => setHoveredImageText('IntelliJ (coming soon)')}
+                                alt="IntelliJ marketplace"
+                                onHover={() => setHoveredImageText('IntelliJ marketplace')}
                                 onMouseLeave={() => setHoveredImageText('')}
                                 eventName={EventName.JOIN_IDE_WAITLIST}
                                 type="IntelliJ"
+                                className="rounded-[10px] border border-gray-200 border-opacity-20"
                             />
+                        </div>
+
+                        <div className="relative flex rounded-lg border border-dashed border-gray-200 border-opacity-20">
+                            <Link href="https://info.sourcegraph.com/waitlist" target="_blank">
+                                <Badge
+                                    text="Join the waitlist"
+                                    size="small"
+                                    className="absolute -right-[4.25px] -top-[24.25px] w-fit text-gray-500 hover:bg-violet-100 hover:text-violet-600"
+                                />
+                            </Link>
                             <AvailabilityIcon
                                 href="https://info.sourcegraph.com/waitlist"
                                 src="/home/neoVim-logo.svg"
@@ -428,6 +445,7 @@ const AvailabilityIcon: React.FC<AvailabilityIconProps> = ({
     onMouseLeave,
     eventName,
     type,
+    className,
 }) => {
     const handleOnClick = (): void => {
         const eventArguments = {
@@ -438,17 +456,14 @@ const AvailabilityIcon: React.FC<AvailabilityIconProps> = ({
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
         getEventLogger().log(eventName, eventArguments, eventArguments)
     }
-    const handleMouseEnter = (): void => {
-        onHover()
-    }
 
     return (
         <Link
             href={href}
             target="_blank"
             onClick={handleOnClick}
-            className="group relative"
-            onMouseEnter={handleMouseEnter}
+            className={classNames('group relative', className)}
+            onMouseEnter={onHover}
             onMouseLeave={onMouseLeave}
         >
             <img src={src} alt={alt} />

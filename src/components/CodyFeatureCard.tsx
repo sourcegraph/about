@@ -81,7 +81,7 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
             {animation && (
                 <div
                     // eslint-disable-next-line react/forbid-dom-props
-                    style={{ height: 190, overflow:'hidden' }}
+                    style={{ height: 190, overflow: 'hidden' }}
                     className={classNames('w-full', plainOnMobile && 'hidden sm:block')}
                     ref={animationContainerRef}
                 >
