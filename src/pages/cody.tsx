@@ -8,7 +8,6 @@ import {
     ContentSection,
     Heading,
     Layout,
-    PlayButton,
     ExternalsAuth,
     EmailAuth,
     Badge,
