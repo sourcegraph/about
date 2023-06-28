@@ -29,7 +29,7 @@ changelogItems:
   - description: "Sourcegraph Cloud now maintains audit logs retrievable by site admins."
     url: https://docs.sourcegraph.com/admin/audit_log#cloud
     category: Admin
-  - description: "Security containers switched to Wolfi, which is built with security, minimalism, and auditability in mind to decrease the risk of supply chain vulnerabilities."
+  - description: "Switched to using Wolfi for our containers, which is built with security, minimalism, and auditability in mind to decrease the risk of supply chain vulnerabilities."
     url: https://docs.sourcegraph.com/dev/background-information/wolfi
     category: Security
   - description: Sourcegraph connects to GitHub through GitHub Apps rather than personal access tokens for improved security, control and permissions management for customers.
