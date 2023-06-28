@@ -24,7 +24,7 @@ interface LinkWithIcon extends Link {
 
 const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
     {
-        name: 'Product',
+        name: 'Products',
         items: [
             {
                 name: 'Cody',
