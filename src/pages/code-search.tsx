@@ -38,7 +38,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                         </p>
 
                         <Link href="/contact/request-info" className="btn btn-inverted-primary w-fit">
-                            Try Code Search for free
+                            Meet with a product expert
                         </Link>
                     </div>
                 </ContentSection>
@@ -229,9 +229,6 @@ export const CodeSearchPage: FunctionComponent = () => (
                     </p>
                 </div>
                 <div className="flex w-full flex-col items-start justify-start gap-4 md:w-fit md:flex-row md:items-center md:justify-center">
-                    <Link className="btn btn-inverted-primary w-full text-center md:w-fit" href="/contact/request-info">
-                        Start for free
-                    </Link>
                     <Link
                         className="w-full rounded-[5px] border border-gray-200 py-2 px-6 text-center text-gray-200 hover:border-white hover:text-white md:w-fit"
                         href="/demo"
