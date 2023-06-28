@@ -1,5 +1,5 @@
 ---
-title: `Cody June 2023 (version 5.1): Better codegen, more recipes, more context, more editors`
+title: "Cody June 2023 (version 5.1): Better codegen, more recipes, more context, more editors"
 authors:
   - name: Ryan Phillips
     url: 
