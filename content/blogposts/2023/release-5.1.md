@@ -43,8 +43,11 @@ With 5.1, Sourcegraph continues to centralize code-related data with support for
 
 Read on to discover everything included in the 5.1 release. 
 <br/><br/>
+<Alert>
+    We also have a number of new updates to Cody, our AI coding assistant, releasing in 5.1. Check out [our Cody post](https://about.sourcegraph.com/blog/cody-in-sourcegraph-5-1) to read more about how we’re making Cody even more powerful and accurate. 
+</Alert>
 
-> We also have a number of new updates to Cody, our AI coding assistant, releasing in 5.1. Check out [our Cody post](https://about.sourcegraph.com/blog/cody-in-sourcegraph-5-1) to read more about how we’re making Cody even more powerful and accurate. 
+<Badge text="Code Search" color="violet" size="small" />
 
 #### Precise cross-repository code navigation for C and C++
 
@@ -65,6 +68,8 @@ Site admins can [add precise code navigation](https://docs.sourcegraph.com/code_
 <br />
 <br/><br/>
 
+<Badge text="Code graph" color="green" size="small" />
+
 #### Ownership inference
 
 Sourcegraph [started ingesting code ownership data](https://about.sourcegraph.com/blog/our-vision-for-code-ownership), including CODEOWNERS, in 5.0, and in this release is moving from experimental to beta. It’s not always easy to assign ownership to code, and sometimes the data is out of date, and in 5.1, Sourcegraph now also infers code ownership from code and code host metadata (e.g. recent commits). Read more about how we help maintain ownership coverage from our [tech lead’s blog post](https://about.sourcegraph.com/blog/boosting-code-ownership). 
@@ -84,6 +89,8 @@ Site admins can [turn on ownership signals](https://docs.sourcegraph.com/own#ena
 <br />
 <br/><br/>
 
+<Badge text="Code graph" color="green" size="small" />
+
 #### Custom repository metadata 
 
 Custom repository metadata brings user-defined key-value pairs into the code graph, so users can filter search results based on custom metadata they define. For example, metadata could indicate a repository's maintenance status, allowing users to exclude deprecated or unmaintained libraries from their results. 
@@ -102,6 +109,8 @@ Repository metadata can be [added through the web UI, src-cli and GraphQL API](h
   
 <br />
 <br/><br/>
+
+<Badge text="Code graph" color="green" size="small" />
 
 #### Complete Perforce support
 
