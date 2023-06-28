@@ -105,8 +105,8 @@ const Home: FunctionComponent = () => {
                             </Link>
                         }
                         className={classNames(
-                            '-px-sm !bg-transparent transition-opacity duration-1000',
-                            isInnovationSectionRefInView ? 'opacity-100 delay-[800ms]' : 'opacity-10'
+                            '-px-sm !bg-transparent transition-opacity duration-300',
+                            isInnovationSectionRefInView ? 'opacity-100 delay-[100ms]' : 'opacity-10'
                         )}
                         headline="Over 1.8M engineers use Sourcegraph"
                         headlineClassName="!text-4xl"
@@ -242,7 +242,7 @@ const HomeHero: FunctionComponent = () => {
                     style={{
                         width: '100vw',
                         marginLeft: 'calc((100% - 100vw) / 2)',
-                        transition: 'height 800ms ease-in-out',
+                        transition: 'height 300ms ease-in-out',
                     }}
                 >
                     <p className="text-2xl font-semibold text-violet-200">Available on:</p>
@@ -317,8 +317,8 @@ const HomeHero: FunctionComponent = () => {
                 <div
                     ref={whatIsSourcegraphRef}
                     className={classNames(
-                        'mx-auto max-w-[758px] transition-opacity duration-1000',
-                        isWhatIsSourcegraphInView ? 'opacity-100 delay-[800ms]' : 'opacity-10'
+                        'mx-auto max-w-[758px] transition-opacity duration-300',
+                        isWhatIsSourcegraphInView ? 'opacity-100 delay-[100ms]' : 'opacity-10'
                     )}
                 >
                     <Heading size="h6" className="text-center text-white">
@@ -337,8 +337,8 @@ const HomeHero: FunctionComponent = () => {
                         alt="Home Illustartion"
                         src="/home/glow-mobile.svg"
                         className={classNames(
-                            'mx-auto h-[285px] w-fit py-6 transition-opacity duration-1000 md:hidden',
-                            isCodyGraphInView ? 'opacity-100 delay-[800ms]' : 'opacity-10'
+                            'mx-auto h-[285px] w-fit py-6 transition-opacity duration-300 md:hidden',
+                            isCodyGraphInView ? 'opacity-100 delay-[100ms]' : 'opacity-10'
                         )}
                         ref={codyGraph}
                     />
@@ -348,8 +348,8 @@ const HomeHero: FunctionComponent = () => {
                         alt="Home Illustartion"
                         src="/home/glow-desktop.svg"
                         className={classNames(
-                            'mx-auto hidden h-[465px] pt-2 pb-[73px] transition-opacity duration-1000 md:block md:w-[859px] lg:w-[1005px]',
-                            isCodyGraphInView ? 'opacity-100 delay-[800ms]' : 'opacity-10'
+                            'mx-auto hidden h-[465px] pt-2 pb-[73px] transition-opacity duration-300 md:block md:w-[859px] lg:w-[1005px]',
+                            isCodyGraphInView ? 'opacity-100 delay-[100ms]' : 'opacity-10'
                         )}
                         ref={codyGraph}
                     />
