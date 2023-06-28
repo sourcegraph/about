@@ -44,7 +44,7 @@ With 5.1, Sourcegraph continues to centralize code-related data with support for
 Read on to discover everything included in the 5.1 release. 
 <br/><br/>
 <Alert>
-    We also have a number of new updates to Cody, our AI coding assistant, releasing in 5.1. Check out [our Cody post](https://about.sourcegraph.com/blog/cody-in-sourcegraph-5-1) to read more about how we’re making Cody even more powerful and accurate. 
+    We also have a number of new updates to Cody, our AI coding assistant, releasing in 5.1. Check out [our Cody post](https://about.sourcegraph.com/blog/cody-in-sourcegraph-5-1) for more on how we’re making Cody even more powerful and accurate. 
 </Alert>
 
 <Badge text="Code Search" color="violet" size="small" />
