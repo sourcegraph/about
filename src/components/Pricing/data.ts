@@ -23,14 +23,13 @@ interface FeatureSubsetDictionary {
 /** Enterprise Starter spotlight feature set */
 export const ENTERPRISE_STARTER_FEATURES_OVERVIEW: FeatureCluster[] = [
     {
-        topic: 'Code intelligence platform',
+        topic: 'Features',
         features: [
             'codeSearch',
             'codeNavigation',
             'batchChanges',
             'codeInsights',
-            'cody',
-            'own',
+            'ownership',
             'notebooks',
             'codeMonitoring',
             'comprehensiveApi',
@@ -85,7 +84,7 @@ export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
 
 export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
     {
-        topic: 'Code intelligence platform',
+        topic: 'Features',
         features: [
             {
                 label: 'codeSearch',
@@ -108,12 +107,7 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
                 enterprise: true,
             },
             {
-                label: 'cody',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'own',
+                label: 'ownership',
                 enterpriseStarter: true,
                 enterprise: true,
             },
@@ -283,7 +277,7 @@ export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
 
 /** Feature info dictionaries */
 
-const CIP_FEATURE_INFO: Record<string, FeatureInfo> = {
+const FEATURE_INFO: Record<string, FeatureInfo> = {
     codeSearch: {
         label: 'Code Search',
         description: 'Super-fast, intuitive, and powerful code search across your entire codebase.',
@@ -318,9 +312,9 @@ const CIP_FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'Cody (beta)',
         description: 'A code-aware, AI programming assistant.',
     },
-    own: {
-        label: 'Own (experimental)',
-        description: 'Track evergreen code ownership data across your codebase.',
+    ownership: {
+        label: 'Code ownership',
+        description: 'Track and infer code ownership across your codebase.',
     },
 }
 
@@ -370,7 +364,7 @@ const DEPLOYMENT_FEATURE_INFO: Record<string, FeatureInfo> = {
 }
 
 export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
-    ...CIP_FEATURE_INFO,
+    ...FEATURE_INFO,
 
     // Code host integrations
     cloudHosts: {
@@ -446,7 +440,7 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
 }
 
 export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
-    ...CIP_FEATURE_INFO,
+    ...FEATURE_INFO,
 
     // Code host integrations
     codeHost: {
