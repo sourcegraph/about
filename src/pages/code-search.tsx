@@ -33,7 +33,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                         </Heading>
 
                         <p className="pt-6 pb-5 text-3xl text-gray-200">
-                            Code Search, along with complimentary tools, helps devs find, fix, and onboard to new code
+                            Code Search, along with complementary tools, helps devs find, fix, and onboard to new code
                             quickly.
                         </p>
 
