@@ -59,7 +59,7 @@ If you want to try Cody autocomplete and compare it with GitHub Copilot, you can
 
 ## New and improved recipes
 
-Cody can explain, write, fix, and refactor code using your codebase’s own APIs, documentation, and usage patterns. This goes way beyond autocomplete or prompt engineering. It’s possible only because Cody supplies context about your own code to a powerful LLM, so it can perform higher-level coding tasks.
+Cody can explain, write, fix, and refactor code using your codebase’s own APIs, docs, and usage patterns. This goes way beyond autocomplete or prompt engineering. It’s possible only because Cody supplies context about your own code to a powerful LLM, so it can perform higher-level coding tasks.
 
 In this release, we’ve added and updated many of our favorite recipes:
 
@@ -135,7 +135,7 @@ Ask Cody a question in your editor and Cody will fetch context from the app’s 
 Context from the app improves all of Cody's features:
 
 - **Code autocomplete**: Cody makes autocompletions based on existing components in a repository, such as React components or functions, regardless of if those components are in open files or elsewhere in a repository.
-- **Chat**: Ask Cody about functions or components that are being imported from another file, and Cody will find the component’s defintion to explain it. Other code AI tools often can’t find where components are defined if the relevant file isn’t already open.
+- **Chat**: Ask Cody about functions or components that are being imported from another file, and Cody will find the component’s definition to explain it. Other code AI tools often can’t find where components are defined if the relevant file isn’t already open.
 - **Recipes**: Cody can summarize recent changes to a repository based on context of the commit history. If you ask other code AI tools to do this, they’ll simply say they don’t have access to that data.
 
 The app is the best way to use Cody for free, and it’s [available to download today](https://about.sourcegraph.com/cody).
