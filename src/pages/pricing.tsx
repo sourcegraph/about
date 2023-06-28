@@ -4,18 +4,15 @@ import classNames from 'classnames'
 import CheckIcon from 'mdi-react/CheckIcon'
 import Link from 'next/link'
 
+import { ContentSection, CallToActionContentSection, CustomerLogos, Layout } from '../components'
 import {
-    ContentSection,
-    CallToActionContentSection,
-    CustomerLogos,
-    Layout,
     PricingPlan,
     PricingPlanFeature,
     ALL_FEATURE_INFO,
-    BIZ_FEATURES_OVERVIEW as ENTERPRISE_STARTER_FEATURES_OVERVIEW,
+    ENTERPRISE_STARTER_FEATURES_OVERVIEW,
     ENTERPRISE_FEATURES_OVERVIEW,
     ALL_FEATURES_COMPARED_DATA,
-} from '../components'
+} from '../components/Pricing'
 import { buttonLocation, buttonStyle } from '../data/tracking'
 
 const StartFreeButton: FunctionComponent<{ className?: string }> = ({ className }) => (
@@ -53,24 +50,6 @@ const EnterpriseButtons: FunctionComponent<{ contactUsClassName?: string }> = ({
 
 const faqData = [
     {
-        q: 'How are monthly active users calculated?',
-        a: (
-            <p>
-                A monthly active user is any user who accesses Sourcegraph in a given month. See the{' '}
-                <a
-                    href="https://docs.sourcegraph.com/admin/pricing"
-                    title="docs"
-                    data-button-style={buttonStyle.text}
-                    data-button-location={buttonLocation.body}
-                    data-button-type="cta"
-                >
-                    documentation
-                </a>{' '}
-                for more information.
-            </p>
-        ),
-    },
-    {
         q: 'Is there a free trial of the paid plans?',
         a: (
             <p>
@@ -91,6 +70,18 @@ const faqData = [
     {
         q: 'What are executors?',
         a: 'Executors are required to run Batch Changes server-side and to use code navigation’s auto-indexing functionality. The Enterprise Starter plan includes 2 executors and the Enterprise plan includes 4 executors.',
+    },
+    {
+        q: 'My organization requires the use of its own legal contract. Which plan is right for me?',
+        a: (
+            <p>
+                Only the Enterprise plan supports this. The Enterprise Starter plan uses our{' '}
+                <Link href="/terms" className="text-black underline">
+                    online terms of service
+                </Link>
+                .
+            </p>
+        ),
     },
     {
         q: 'Does Sourcegraph offer discounts for educational and non-profit organizations?',
@@ -145,11 +136,7 @@ const PricingPage: FunctionComponent = () => {
                         name="Enterprise Starter"
                         description={
                             <h3 className="my-sm max-w-sm text-lg font-normal md:min-h-[108px]">
-                                Full platform access for teams and orgs. Flexible deployment options.{' '}
-                                <Link href="/terms" className="text-black underline">
-                                    Online terms of service
-                                </Link>{' '}
-                                and workshop-based evaluation path.
+                                Powerful, easy code search for teams and organizations.
                             </h3>
                         }
                         price="Starts at $5k/year"
@@ -165,8 +152,8 @@ const PricingPage: FunctionComponent = () => {
                         name="Enterprise"
                         description={
                             <h3 className="my-sm max-w-sm text-lg font-normal md:min-h-[108px]">
-                                All the benefits of Enterprise Starter with increased support SLAs and custom deployment
-                                options.
+                                Everything in Enterprise Starter, plus additional integration, deployment, security, and
+                                support options.
                             </h3>
                         }
                         price="Starts at $50k/year"
