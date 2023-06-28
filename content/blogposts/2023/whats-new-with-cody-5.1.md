@@ -2,7 +2,6 @@
 title: "Cody June 2023 (version 5.1): Better codegen, more recipes, more context, more editors"
 authors:
   - name: Ryan Phillips
-    url: 
 publishDate: 2023-06-28T10:00-07:00
 description: 'The June 2023 release of Cody (version 5.1) makes it more powerful and accurate with better autocomplete, new and improved recipes, multi-repository context, inline chat, support for JetBrains IDEs, and a new Cody desktop app. Cody is free forever for devs on both public and private code.'
 tags: [blog]

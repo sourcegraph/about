@@ -39,7 +39,7 @@ changelogItems:
 
 ---
 
-With 5.1, Sourcegraph continues to centralize code-related data with support for more code hosts and code metadata. Bringing all of this data into one place helps reduce the complexity of working in a large and distributed software environment, and helps developers to spend less time finding what they're looking for and spend more time writing code.
+With 5.1, Sourcegraph continues to centralize code-related data with support for more code hosts and code metadata. Bringing all of this data into one place helps reduce the complexity of working in a large and distributed software environment and helps developers to spend less time finding what they're looking for and spend more time writing code.
 
 Read on to discover everything included in the 5.1 release. 
 <br/><br/>
@@ -72,7 +72,7 @@ Site admins can [add precise code navigation](https://docs.sourcegraph.com/code_
 
 #### Ownership inference
 
-Sourcegraph [started ingesting code ownership data](https://about.sourcegraph.com/blog/our-vision-for-code-ownership), including CODEOWNERS, in 5.0, and in this release is moving from experimental to beta. It’s not always easy to assign ownership to code, and sometimes the data is out of date, and in 5.1, Sourcegraph now also infers code ownership from code and code host metadata (e.g. recent commits). Read more about how we help maintain ownership coverage from our [tech lead’s blog post](https://about.sourcegraph.com/blog/boosting-code-ownership). 
+Sourcegraph [started ingesting code ownership data](https://about.sourcegraph.com/blog/our-vision-for-code-ownership), including CODEOWNERS, in 5.0, and moves from experimental to beta in this release. It’s not always easy to assign ownership to code, and sometimes the data is out of date—in 5.1, Sourcegraph also infers code ownership from code and code host metadata (e.g. recent commits). Read more about how we help maintain ownership coverage from our [tech lead’s blog post](https://about.sourcegraph.com/blog/boosting-code-ownership). 
 
 Site admins can [turn on ownership signals](https://docs.sourcegraph.com/own#enabling-sourcegraph-own) by going to ```Site Admin > Code Graph > Ownership Signals``` and enabling recent-contributors and recent-views. 
 
@@ -114,7 +114,7 @@ Repository metadata can be [added through the web UI, src-cli and GraphQL API](h
 
 #### Complete Perforce support
 
-We see many teams using Perforce in combination with Git, and until now, they lacked a single experience. Now devs can search and navigate code hosted in either version control systems in Sourcegraph.
+We see many teams using Perforce in combination with Git, and until recently, they lacked a single experience. Now, devs can search and navigate code hosted in either version control systems in Sourcegraph.
 
 Sourcegraph completes support Perforce as a part of 5.1. There is now support for streams and changelists so Perforce code and its version control system components are seamlessly integrated into Sourcegraph’s tools side-by-side with other supported code hosts.
 <br/><br/>
