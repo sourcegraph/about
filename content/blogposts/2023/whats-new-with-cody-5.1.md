@@ -72,7 +72,7 @@ In this release, we’ve added and updated many of our favorite recipes:
 - **Generate pull request description**
 - **Optimize code performance**
 
-Special shoutout to community members Deepak Kumar and Momil Ijaz for contributing recipes to Cody!
+Special shoutout to community members **Deepak Kumar** and **Momal Ijaz** for contributing recipes to Cody!
 
 ## Inline chat
 
@@ -145,7 +145,7 @@ The app is the best way to use Cody for free, and it’s [available to download 
 Cody is an open source project. Thank you to the following community members for their contributions to code, issues, docs, and more!
 
 - [Deepak Kumar](https://twitter.com/deepakdk3478)
-- [Momil Ijaz](https://github.com/Momilijaz96)
+- [Momal Ijaz](https://github.com/Momilijaz96)
 - [@juliawritescode](https://twitter.com/juliawritescode)
 - [Anthony Gilbert](https://twitter.com/anthony_codes)
 - [DocumentWrite](https://twitter.com/documentwrites)
