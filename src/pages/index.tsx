@@ -177,7 +177,7 @@ const HomeHero: FunctionComponent = () => {
         <>
             <ContentSection parentClassName="!py-0 !px-sm overflow-x-clip" className="relative pb-[55px] md:pb-0">
                 <div className="grid grid-cols-1 gap-x-4 gap-y-16  pt-16 pb-11 md:grid-cols-2 md:px-6 md:pt-32 md:pb-8">
-                    <div className="mx-auto flex w-full max-w-[567px] flex-col items-center px-0 md:mx-0 md:items-start hero-content">
+                    <div className="hero-content mx-auto flex w-full max-w-[567px] flex-col items-center px-0 md:mx-0 md:items-start">
                         <Heading
                             size="h1"
                             className="w-full text-center !text-[42px] leading-[65px] text-white md:max-w-[516px] md:text-start md:!text-[62px]"
@@ -239,7 +239,7 @@ const HomeHero: FunctionComponent = () => {
                     <VideoCarousel videos={carouselVideos} />
 
                     <img
-                     className="absolute top-0 right-0 !-mr-12 hidden lg:block z hero-background"
+                        className="z hero-background absolute top-0 right-0 !-mr-12 hidden lg:block"
                         src="/home/light-instance.svg"
                         alt=""
                         aria-hidden={true}
@@ -261,8 +261,8 @@ const HomeHero: FunctionComponent = () => {
                             <AvailabilityIcon
                                 href="https://sourcegraph.com/get-cody"
                                 src="/home/cody-logo.svg"
-                                alt="Cody App"
-                                onHover={() => setHoveredImageText('Cody App')}
+                                alt="Cody desktop app"
+                                onHover={() => setHoveredImageText('Cody desktop app')}
                                 onMouseLeave={() => setHoveredImageText('')}
                                 eventName={EventName.DOWNLOAD_APP}
                                 type="distribution"
@@ -271,7 +271,7 @@ const HomeHero: FunctionComponent = () => {
                             <AvailabilityIcon
                                 href="https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai#:~:text=Cody%20for%20VS%20Code%20is,not%20just%20your%20open%20files"
                                 src="/home/vs-code-logo.svg"
-                                alt="VS Code marketplace"
+                                alt="VS Code"
                                 onHover={() => setHoveredImageText('VS Code marketplace')}
                                 onMouseLeave={() => setHoveredImageText('')}
                                 eventName={EventName.DOWNLOAD_IDE}
@@ -280,8 +280,8 @@ const HomeHero: FunctionComponent = () => {
                             <AvailabilityIcon
                                 href="https://plugins.jetbrains.com/plugin/9682-sourcegraph"
                                 src="/home/intelliJ-logo.svg"
-                                alt="IntelliJ marketplace"
-                                onHover={() => setHoveredImageText('IntelliJ marketplace')}
+                                alt="JetBrains (IntelliJ, WebStorm, etc.)"
+                                onHover={() => setHoveredImageText('JetBrains (IntelliJ, WebStorm, etc.)')}
                                 onMouseLeave={() => setHoveredImageText('')}
                                 eventName={EventName.JOIN_IDE_WAITLIST}
                                 type="IntelliJ"
@@ -300,8 +300,8 @@ const HomeHero: FunctionComponent = () => {
                             <AvailabilityIcon
                                 href="https://info.sourcegraph.com/waitlist"
                                 src="/home/neoVim-logo.svg"
-                                alt="neoVim (coming soon)"
-                                onHover={() => setHoveredImageText('neoVim (coming soon)')}
+                                alt="Neovim (coming soon)"
+                                onHover={() => setHoveredImageText('Neovim (coming soon)')}
                                 onMouseLeave={() => setHoveredImageText('')}
                                 eventName={EventName.JOIN_IDE_WAITLIST}
                                 type="NeoVim"
@@ -309,8 +309,8 @@ const HomeHero: FunctionComponent = () => {
                             <AvailabilityIcon
                                 href="https://info.sourcegraph.com/waitlist"
                                 src="/home/emacs-logo.svg"
-                                alt="Emacs(coming soon)"
-                                onHover={() => setHoveredImageText('Emacs(coming soon)')}
+                                alt="Emacs (coming soon)"
+                                onHover={() => setHoveredImageText('Emacs (coming soon)')}
                                 onMouseLeave={() => setHoveredImageText('')}
                                 eventName={EventName.JOIN_IDE_WAITLIST}
                                 type="Emacs"
