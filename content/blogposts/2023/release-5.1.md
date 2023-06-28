@@ -16,10 +16,10 @@ changelogItems:
     category: Batch changes
   - description: "Improved symbol generation and performance using tree-sitter."
     url: 
-    category: Code navigation
+    category: Code nav
   - description: "Auto-indexing for TypeScript, JavaScript, Go, Java, Kotlin and Scala are enabled by default."
     url: https://docs.sourcegraph.com/code_navigation/how-to/configure_auto_indexing
-    category: Code navigation
+    category: Code nav
   - description: "Allow multi-version upgrades with the standard upgrade flow; any instance can upgrade to 5.1+ from any other version (3.20+)."
     url: https://docs.sourcegraph.com/admin/updates/automatic
     category: Admin
@@ -44,6 +44,8 @@ With 5.1, Sourcegraph continues to centralize code-related data with support for
 Read on to discover everything included in the 5.1 release. 
 <br/><br/>
 
+> We also have a number of new updates to Cody, our AI coding assistant, releasing in 5.1. Check out [our Cody post](https://about.sourcegraph.com/blog/cody-in-sourcegraph-5-1) to read more about how we’re making Cody even more powerful and accurate. 
+
 #### Precise cross-repository code navigation for C and C++
 
 Sourcegraph’s latest SCIP indexer, [scip-clang](https://sourcegraph.com/github.com/sourcegraph/scip-clang), adds precise code navigation for C and C++. C and C++ precise code navigation works for all features supported by scip-clang, such as types, methods, macros, forward declarations, and more. Cross-repository navigation is also supported, so if you reference a function outside of your current repository, you can jump directly to its definition as long as it’s indexed.
@@ -54,7 +56,7 @@ Site admins can [add precise code navigation](https://docs.sourcegraph.com/code_
   
 <Video 
   source={{
-    mp4: 'blog/release-post/5.1/c_codenav',
+    mp4: 'blog/release-post/5.1/codenav_gif',
   }}
   loop={true}
   title="scip-clang"
@@ -73,7 +75,7 @@ Site admins can [turn on ownership signals](https://docs.sourcegraph.com/own#ena
   
 <Video 
   source={{
-    mp4: 'blog/release-post/5.1/own_gif',
+    mp4: 'blog/release-post/5.1/own_gif3',
   }}
   loop={true}
   title="Ownership inference"
@@ -92,7 +94,7 @@ Repository metadata can be [added through the web UI, src-cli and GraphQL API](h
   
 <Video 
   source={{
-    mp4: 'blog/release-post/5.1/metadata_gif',
+    mp4: 'blog/release-post/5.1/metadata_gif2',
   }}
   loop={true}
   title="Custom repository metadata"
