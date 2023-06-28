@@ -16,7 +16,7 @@ export const DownloadLink: React.FunctionComponent<DownloadLinkProps> = props =>
     const handleOnClick = (): void => {
         const eventArguments = {
             downloadSource: 'about',
-            downloadName,
+            type: downloadName,
             downloadLinkUrl: href,
         }
         // eslint-disable-next-line @typescript-eslint/no-floating-promises

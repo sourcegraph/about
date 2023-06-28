@@ -63,7 +63,7 @@ export const useLogAllLinkClicks = (): void => {
 
 export const enum EventName {
     STATIC_VIDEO_PLAYED = 'StaticVideoPlayed',
-    DOWNLOAD_CLICK = 'DownloadClick',
+    DOWNLOAD_CLICK = 'DownloadApp',
     SIGNUP_INITIATED = 'SignupInitiated',
     CODE_SNIPPET_COPIED = 'CodeSnippetCopied',
     VIEW_STATIC_PAGE = 'ViewStaticPage',
