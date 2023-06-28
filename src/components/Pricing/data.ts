@@ -23,14 +23,13 @@ interface FeatureSubsetDictionary {
 /** Enterprise Starter spotlight feature set */
 export const ENTERPRISE_STARTER_FEATURES_OVERVIEW: FeatureCluster[] = [
     {
-        topic: 'Code intelligence platform',
+        topic: 'Features',
         features: [
             'codeSearch',
             'codeNavigation',
             'batchChanges',
             'codeInsights',
-            'cody',
-            'own',
+            'ownership',
             'notebooks',
             'codeMonitoring',
             'comprehensiveApi',
@@ -38,19 +37,19 @@ export const ENTERPRISE_STARTER_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Code host integrations',
-        features: ['cloudHosts'],
+        features: ['cloudCodeHosts'],
     },
     {
         topic: 'Security and admin',
-        features: ['ssoSaml', 'securityRoles', 'repoPerms', 'analytics'],
+        features: ['ssoSaml', 'securityRoles', 'repoPerms', 'analytics', 'soc2'],
     },
     {
         topic: 'Scale and performance',
         features: ['enterpriseStarterStorage', 'enterpriseStarterExecutors'],
     },
     {
-        topic: 'Flexible deployment',
-        features: ['cloudDeployment', 'singleNode'],
+        topic: 'Standard deployment',
+        features: ['cloudDeployment', 'selfHostedSingleNode'],
     },
     { topic: '24/5 support' },
 ]
@@ -59,11 +58,7 @@ export const ENTERPRISE_STARTER_FEATURES_OVERVIEW: FeatureCluster[] = [
 export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
     {
         topic: 'Code host integrations',
-        features: ['unlimitedCodeHosts', 'selfHostedCodeHosts', 'enterpriseOnlyCodeHosts', 'privateCodeHosts'],
-    },
-    {
-        topic: 'Flexible deployment',
-        features: ['cloudDeployment', 'selfDeployment'],
+        features: ['cloudCodeHosts', 'selfHostedCodeHosts', 'otherCodeHosts'],
     },
     {
         topic: 'Advanced security and admin',
@@ -74,216 +69,19 @@ export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['enterpriseStorage', 'enterpriseExecutors'],
     },
     {
-        topic: 'Custom deployment',
-        features: ['multiNode'],
+        topic: 'Flexible deployment',
+        features: ['cloudDeployment', 'selfHostedSingleNode', 'selfHostedMultiNode', 'airgappedDeployment'],
     },
     {
         topic: '24/5 enhanced support',
-        features: ['slaSupport', 'technicalAdvisor', 'premiumServices'],
-    },
-]
-
-export const ALL_FEATURES_COMPARED_DATA: FeatureDictionary[] = [
-    {
-        topic: 'Code intelligence platform',
-        features: [
-            {
-                label: 'codeSearch',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'codeNavigation',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'batchChanges',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'codeInsights',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'cody',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'own',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'notebooks',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'codeMonitoring',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'comprehensiveApi',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-        ],
-    },
-    {
-        topic: 'Code host integrations',
-        features: [
-            {
-                label: 'codeHost',
-                enterpriseStarter: 'Unlimited',
-                enterprise: 'Unlimited',
-            },
-            {
-                label: 'cloudHosts',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'selfHosts',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'enterpriseHosts',
-                enterpriseStarter: false,
-                enterprise: true,
-            },
-            {
-                label: 'privateHosts',
-                enterpriseStarter: false,
-                enterprise: true,
-            },
-        ],
-    },
-    {
-        topic: 'Security, compliance, and admin',
-        features: [
-            {
-                label: 'soc2',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'analytics',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'securityRoles',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'ssoSaml',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'repoPerms',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'customPerms',
-                enterpriseStarter: false,
-                enterprise: true,
-            },
-            {
-                label: 'privateInstance',
-                enterpriseStarter: false,
-                enterprise: true,
-            },
-        ],
-    },
-    {
-        topic: 'Scale and performance',
-        features: [
-            {
-                label: 'codeStorag',
-                enterpriseStarter: 'Up to 75GB',
-                enterprise: 'Over 75GB',
-            },
-            {
-                label: 'executors',
-                enterpriseStarter: '2',
-                enterprise: '4',
-            },
-        ],
-    },
-    {
-        topic: 'Support',
-        features: [
-            {
-                label: 'support',
-                enterpriseStarter: '24/5 support',
-                enterprise: '24/5 support',
-            },
-            {
-                label: 'technicalAdvisor',
-                enterpriseStarter: 'Available',
-                enterprise: 'With >100k spend',
-            },
-            {
-                label: 'supportSla',
-                enterpriseStarter: 'Standard',
-                enterprise: 'Enhanced',
-            },
-        ],
-    },
-    {
-        topic: 'Deployment',
-        features: [
-            {
-                label: 'cloudDeployment',
-                enterpriseStarter: true,
-                enterprise: true,
-            },
-            {
-                label: 'selfDeployment',
-                enterpriseStarter: 'Single-node',
-                enterprise: 'Single or Multi-node',
-            },
-            {
-                label: 'airGappedDeploy',
-                enterpriseStarter: false,
-                enterprise: 'Add-on',
-            },
-        ],
-    },
-    {
-        topic: 'Usage and billing',
-        features: [
-            {
-                label: 'price',
-                enterpriseStarter: 'Starts at $5k/year',
-                enterprise: 'Starts at $50k/year',
-            },
-            {
-                label: 'contractLength',
-                enterpriseStarter: 'Annual',
-                enterprise: 'Annual',
-            },
-            {
-                label: 'paymentMethod',
-                enterpriseStarter: 'Invoice',
-                enterprise: 'Invoice',
-            },
-        ],
+        features: ['slaSupport', 'technicalAdvisor', 'professionalServices'],
     },
 ]
 
 /** Feature info dictionaries */
 
-const CIP_FEATURE_INFO: Record<string, FeatureInfo> = {
+const FEATURE_INFO: Record<string, FeatureInfo> = {
+    // Features
     codeSearch: {
         label: 'Code Search',
         description: 'Super-fast, intuitive, and powerful code search across your entire codebase.',
@@ -318,13 +116,12 @@ const CIP_FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'Cody (beta)',
         description: 'A code-aware, AI programming assistant.',
     },
-    own: {
-        label: 'Own (experimental)',
-        description: 'Track evergreen code ownership data across your codebase.',
+    ownership: {
+        label: 'Code ownership',
+        description: 'Track and infer code ownership across your codebase.',
     },
-}
 
-const SECURITY_FEATURE_INFO: Record<string, FeatureInfo> = {
+    // Security and admin
     ssoSaml: {
         label: 'SSO/SAML',
         description: 'Single sign-on user authentication with SAML, OAuth, OpenID Connect, and HTTP auth proxy.',
@@ -352,52 +149,50 @@ const SECURITY_FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'In-product analytics',
         description: 'Understand user engagement and calculate the value of using Sourcegraph.',
     },
-}
+    soc2: {
+        label: 'SOC 2 Type II',
+        description: '',
+    },
 
-const DEPLOYMENT_FEATURE_INFO: Record<string, FeatureInfo> = {
+    // Deployment
     flexibleDeployment: {
         label: 'Flexible deployment',
         description: '',
     },
     cloudDeployment: {
-        label: 'Single-tenant GCP cloud deployment',
-        description: 'Your organization’s dedicated, single-tenant Sourcegraph Cloud instance.',
+        label: 'Sourcegraph Cloud',
+        description: 'A single-tenant, dedicated cloud instance for your organization, managed by Sourcegraph.',
     },
-    selfDeployment: {
-        label: 'Self-hosted deployment',
-        description: 'Deploy with Docker, Docker Compose, or Kubernetes on your organization’s infrastructure.',
+    selfHostedMultiNode: {
+        label: 'Self-hosted (multi-node cluster)',
+        description: 'Self-hosted deployment on a multi-node cluster, for more complex needs.',
+    },
+    selfHostedSingleNode: {
+        label: 'Self-hosted (single-node)',
+        description: 'Self-hosted deployment on a single node.',
+    },
+    airgappedDeployment: {
+        label: 'Air-gapped deployment',
+        description: 'Available only with a professional services package to ensure adequate support.',
+    },
+
+    // Code hosts
+    cloudCodeHosts: {
+        label: 'Popular cloud code hosts',
+        description: 'GitHub.com, GitLab.com, and Bitbucket Cloud.',
+    },
+    selfHostedCodeHosts: {
+        label: 'Self-hosted code hosts',
+        description: 'GitHub Enterprise Server, GitLab Self-managed, Bitbucket Server/Data Center, and Perforce.',
+    },
+    otherCodeHosts: {
+        label: 'All other code hosts',
+        description: 'Other Git-based code hosts, and code hosts accessible only on a private network.',
     },
 }
 
 export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
-    ...CIP_FEATURE_INFO,
-
-    // Code host integrations
-    cloudHosts: {
-        label: 'Unlimited standard cloud code hosts',
-        description:
-            'Integrate with GitHub Cloud / Enterprise Server, GitLab.com / Self-managed, BitBucket Cloud / Server and Perforce',
-    },
-    unlimitedCodeHosts: {
-        label: 'Unlimited code hosts',
-        description: 'Search, understand, fix, and automate across multiple code hosts.',
-    },
-    selfHostedCodeHosts: {
-        label: 'Integrate with self-hosted code hosts',
-        description:
-            'Integrate with GitHub Enterprise Server, GitLab self-managed, Bitbucket Server/Data Center, and Perforce.',
-    },
-    enterpriseOnlyCodeHosts: {
-        label: 'Integrate with all other code hosts',
-        description: 'Integrate with any Git-based code host via src serve-git.',
-    },
-    privateCodeHosts: {
-        label: 'Integrate with private code hosts',
-        description:
-            'Integrate with supported code hosts deployed on a private network (only available for self-hosted deployments).',
-    },
-
-    ...SECURITY_FEATURE_INFO,
+    ...FEATURE_INFO,
 
     // Scale and performance
     enterpriseStarterStorage: {
@@ -417,18 +212,6 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Execute server-side Batch Changes and use auto-indexing for precise code navigation.',
     },
 
-    ...DEPLOYMENT_FEATURE_INFO,
-
-    // Custom deployment
-    multiNode: {
-        label: 'Multi-node, self-hosted',
-        description: 'Complex multi-node deployment.',
-    },
-    singleNode: {
-        label: 'Standard single-node, self-hosted',
-        description: 'Standard single-node deployment.',
-    },
-
     // Support
     slaSupport: {
         label: 'Enhanced support SLAs',
@@ -439,86 +222,8 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
         description:
             'Specialized technical experts to lead training & enablement, strategy, and overall account health.',
     },
-    premiumServices: {
-        label: 'Premium services available',
+    professionalServices: {
+        label: 'Professional services available',
         description: '',
-    },
-}
-
-export const ALL_FEATURE_INFO: Record<string, FeatureInfo> = {
-    ...CIP_FEATURE_INFO,
-
-    // Code host integrations
-    codeHost: {
-        label: 'Code host integrations',
-        description: 'Search, understand, fix, and automate across multiple code hosts.',
-    },
-    cloudHosts: {
-        label: 'Cloud code hosts',
-        description: 'Integrate with GitHub.com, GitLab.com, and Bitbucket Cloud.',
-    },
-    selfHosts: {
-        label: 'Self-hosted code hosts',
-        description:
-            'Integrate with GitHub Enterprise Server, GitLab self-managed, Bitbucket Server/Data Center, and Perforce.',
-    },
-    enterpriseHosts: {
-        label: 'All other code hosts',
-        description: 'Integrate with any Git-based code host via src serve-git.',
-    },
-    privateHosts: {
-        label: 'Private code hosts',
-        description:
-            'Integrate with supported code hosts deployed on a private network (only available for self-hosted deployments).',
-    },
-
-    // Security and admin
-    soc2: {
-        label: 'SOC 2 Type II',
-        description: '',
-    },
-    ...SECURITY_FEATURE_INFO,
-
-    // Scale and performance
-    codeStorag: {
-        label: 'Cloud code storage',
-        description: 'Included storage for cloud deployments.',
-    },
-    executors: {
-        label: 'Executors',
-        description: 'Execute server-side Batch Changes and use auto-indexing for precise code navigation.',
-    },
-
-    // Support
-    support: {
-        label: 'Support',
-    },
-    technicalAdvisor: {
-        label: 'Technical Advisor',
-        description:
-            'Specialized technical experts to lead training & enablement, strategy, and overall account health.',
-    },
-    supportSla: {
-        label: 'Support SLA',
-        description:
-            'Priority support SLAs: priority ticket handling and guaranteed initial response SLA from a dedicated team.',
-    },
-
-    // Deployment
-    ...DEPLOYMENT_FEATURE_INFO,
-    airGappedDeploy: {
-        label: 'Air-gapped deployment',
-        description: 'Deploy Sourcegraph in an offline environment on your organization’s infrastructure. (add-on)',
-    },
-
-    // Usage and billing
-    price: {
-        label: 'Price',
-    },
-    contractLength: {
-        label: 'Contract length',
-    },
-    paymentMethod: {
-        label: 'Payment method',
     },
 }

@@ -3,7 +3,7 @@ title: 'New data report: Big Code in the AI era'
 description: AI is the best and worst thing to happen to enterprise dev teams.
 authors:
   - name: Amie Rotherham
-  - url: https://twitter.com/amieroth
+    url: https://twitter.com/amieroth
 publishDate: 2023-04-27T12:00
 tags: [blog]
 slug: big-code-in-ai-era

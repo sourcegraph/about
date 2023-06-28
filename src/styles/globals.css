@@ -292,6 +292,14 @@
         filter: drop-shadow(0px 0px 22px rgba(161, 18, 255, 0.4));
     }
 
+    .hero-content{
+        z-index: 1;
+    }
+
+    .hero-background{
+        z-index: 0;
+    }
+
     .sg-hero-bg-gradient {
         background: radial-gradient(116.94% 133.26% at 52.08% 100%, #6112A3 0.41%, #270741 54.04%, #1E0632 94.78%);
     }

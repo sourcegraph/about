@@ -3,7 +3,7 @@ title: 'Opening access to Cody for Sourcegraph.com'
 description: Cody is now available to anyone with a Sourcegraph.com account.
 authors:
   - name: Alex Isken
-  - url: https://github.com/iskyOS
+    url: https://github.com/iskyOS
 publishDate: 2023-05-02T12:00
 tags: [blog]
 slug: cody-for-open-source
