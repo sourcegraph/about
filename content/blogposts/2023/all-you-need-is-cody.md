@@ -28,7 +28,7 @@ Just to make absolutely certain, between you and me, that you know I am not a li
 
 1990, my first programming job while in college, some statistics prof hired me because I'd taken some programming courses, and they handed me five hundred (500) source files in FORTRAN on a floppy disk. Not Fortran-77 or anything nice like that. FORTRAN. It had no comments, and the prof who hired me told me some handwavy stuff about the pilfger gromak and the weasel snarfs. And yeah. Took my first check and ran as fast as my cowardly legs could carry me. What even _was_ that. I was out hunting bokoblins and they handed me a Gleeok. I mean, seriously.
 
-2005, Amazon.com. Been there 6+ years, decorated hero, luncheoning with big B on the side, and one summer day I somehow manage to be the last person touching my nose when Werner Vogels decided that someone "senior" (hi STEVEY) needed to implement **software load balancing** , a new concept that had emerged from research in Fucking Whereverville, and Werner had his hands on a copy of the source code from a fellow researcher. It was many thousands of lines of straight K&R C files (because lol ANSI, right?) with its own pointer-arithmetic DSL bullshit, custom data structures and memory management, no build file, no documentation, and it had all been carefully run through a comment stripper to ensure I would be _maximally_ fucked on this project. I mean, I've spent a _lot_ of time in the Nethack core source code, and I know my C. But this was just insanity. Was it a hit job? I don't know. Perhaps. But it sure did the trick. I left Amazon. Now you know the real story.
+2005, Amazon.com. Been there 6+ years, decorated hero, luncheoning with big B on the side, and one summer day I somehow manage to be the last person touching my nose when Werner Vogels decided that someone "senior" (hi STEVEY) needed to implement **software load balancing** , a new concept that had emerged from research in Fucking Whereverville, and Werner had his hands on a copy of the source code from a fellow researcher. It was many thousands of lines of straight K&R C files (because lol ANSI, right?) with its own pointer-arithmetic DSL bullshit, custom data structures and memory management, no build file, no documentation, and it had all been carefully run through a comment stripper to ensure I would be _maximally_ inconvenienced on this project. I mean, I've spent a _lot_ of time in the Nethack core source code, and I know my C. But this was just insanity. Was it a hit job? I don't know. Perhaps. But it sure did the trick. I left Amazon. Now you know the real story.
 
 #### **The Big Ball of Crap pattern** (_Design Patterns,_ Gamma, Helm, Johnson, Vlissides, 1994)
 
@@ -46,7 +46,7 @@ And it makes you feel like a fraud. An absolute fuckin' fraud.
 
 And it's ironic, because I've written and shipped a ton of code, in a ton of systems. But you never remember that stuff, do you? You just remember the times you sucked and you failed.
 
-And it feels so incredibly _unfair_ when it happens, because what the actual fuck is this code anyway? Who wrote this? A troll? Dammit!
+And it feels so incredibly _unfair_ when it happens, because what the actual is this code anyway? Who wrote this? A troll? Dammit!
 
 #### Baby it doesn't have to be that way ♫
 
