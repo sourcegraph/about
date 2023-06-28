@@ -133,6 +133,8 @@ But Cody is not just about Q&A! Cody also has recipes.
 Continuing with the path finding code, let's open my ugly 20-year-old A\* search code and see what Cody can do with it.
 
 In the next example I've selected the core worker function from the class, and I'll use the popup recipe-chooser to ask Cody to tell me how I can optimize this code.
+
+<br/>
 <img
   style={{marginTop: "0px", marginBottom: "20px", width: "80%"}}
   src="https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/blog%20images/image4.png"
@@ -176,6 +178,7 @@ Cody is like having a really smart friend who knows your codebase. It's like hav
 
 Cody's explanatory powers are essentially limitless. It can explain SQL, and relate schemas to the code that manipulates them. E.g., here I ask Cody where the database layer is.
 
+<br/>
 <img
   style={{marginTop: "0px", marginBottom: "20px", width: "70%"}}
   src="https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/blog%20images/image7.png"
@@ -290,6 +293,7 @@ OK let's try to make it hallucinate by turning off embeddings.
 
 First off, I'll ask the keyword-search version where the vampire code is, since I know it's all over the place.
 
+<br/>
 <img
   style={{marginTop: "0px", marginBottom: "20px", width: "70%"}}
   src="https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/blog%20images/image14.png"
@@ -299,6 +303,7 @@ Interestingly it did OK, but it definitely did not find the main classes that ar
 
 Now let's turn embeddings back on and try the exact same query.
 
+<br/>
 <img
   style={{marginTop: "0px", marginBottom: "20px", width: "70%"}}
   src="https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/blog%20images/image15.png"
