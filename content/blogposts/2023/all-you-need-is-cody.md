@@ -133,9 +133,9 @@ But Cody is not just about Q&A! Cody also has recipes.
 Continuing with the path finding code, let's open my ugly 20-year-old A\* search code and see what Cody can do with it.
 
 In the next example I've selected the core worker function from the class, and I'll use the popup recipe-chooser to ask Cody to tell me how I can optimize this code.
-
-<Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/blog%20images/image4.png"
+<img
+  style={{marginTop: "0px", marginBottom: "20px", width: "80%"}}
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/blog%20images/image4.png"
 /><br/>
 
 Let's see what Cody has to say!
@@ -147,7 +147,7 @@ Let's see what Cody has to say!
 Okay! For those of you who can't read the screen, Cody has printed out instructions and a lovely table for us:
 
 <Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/5.1/cody-code-output.png"
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/5.1/cody-optimize.png"
 />
 
 ```kotlin
@@ -176,8 +176,9 @@ Cody is like having a really smart friend who knows your codebase. It's like hav
 
 Cody's explanatory powers are essentially limitless. It can explain SQL, and relate schemas to the code that manipulates them. E.g., here I ask Cody where the database layer is.
 
-<Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/blog%20images/image7.png"
+<img
+  style={{marginTop: "0px", marginBottom: "20px", width: "70%"}}
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/blog%20images/image7.png"
 /><br/>
 
 I'll open one of these files, MailDB.java, and ask a specific question about ugly code.
@@ -283,22 +284,24 @@ You can turn them on and off in the Cody Settings:
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/blog%20images/image13.png"
-/><br/>
+/>
 
 OK let's try to make it hallucinate by turning off embeddings.
 
 First off, I'll ask the keyword-search version where the vampire code is, since I know it's all over the place.
 
-<Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/blog%20images/image14.png"
+<img
+  style={{marginTop: "0px", marginBottom: "20px", width: "70%"}}
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/blog%20images/image14.png"
 /><br/>
 
 Interestingly it did OK, but it definitely did not find the main classes that are involved. In particular it doesn't find `VampireSkills.kt`, which is where most of the abilities are implemented.
 
 Now let's turn embeddings back on and try the exact same query.
 
-<Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/blog%20images/image15.png"
+<img
+  style={{marginTop: "0px", marginBottom: "20px", width: "70%"}}
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/blog%20images/image15.png"
 /><br/>
 
 There it is! Also found the Races class which has some additional functionality.
