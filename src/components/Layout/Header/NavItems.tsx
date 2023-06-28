@@ -25,7 +25,7 @@ type NavItem = NavLink | NavSection
 
 const NAV_ITEMS: NavItem[] = [
     {
-        name: 'Product',
+        name: 'Products',
         links: [
             {
                 name: 'Cody',
