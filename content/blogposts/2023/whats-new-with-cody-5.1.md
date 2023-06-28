@@ -37,7 +37,7 @@ Like GitHub Copilot, Cody suggests AI-generated autocompletions in your editor. 
 - **Broader context for more idiomatic code suggestions**: Cody is the first code AI to autocomplete based on context from the entire repository, using embeddings-based semantic search. This means Cody can generate better code that uses more of your codebase’s own APIs and idiomatic usage patterns, compared to GitHub Copilot and others that only use recent files and open tabs.
 - **More powerful LLM (Anthropic Claude)**: An LLM with greater general reasoning capability plus a larger context window means Cody’s suggestions can be better and more accurate than other code AI tools (including GitHub Copilot) that use simpler LLMs.
 - **Free for devs (unlike GitHub Copilot)**, with a very generous [rate limit](https://about.sourcegraph.com/blog/increasing-the-completions-rate-limit).
-- 
+
 Today, most devs will find Cody’s autocomplete and GitHub Copilot’s autocomplete roughly equivalent (but remember that Cody is free!).
 
 We expect Cody autocomplete to keep improving quickly. Our approach—more and better context, more powerful LLM—is different from that of other AI code autocomplete tools that optimize for limited context and small models. We’re optimistic that this maximal approach will definitively surpass the minimal approach.
@@ -59,14 +59,14 @@ Cody can explain, write, fix, and refactor code using your codebase’s own APIs
 
 In this release, we’ve added and updated many of our favorite recipes:
 
-**Explain code** using broad knowledge of your codebase and internal APIs
-**Generate unit test** using your preferred test frameworks and conventions
-**Generate docstring** using your codebase’s style
-**Improve variable names** because naming is one of the hard things about computer science
-**Smell code** to find and fix code smells
-**Generate release notes** based on recent commits
-**Generate pull request description**
-**Optimize code performance**
+- **Explain code** using broad knowledge of your codebase and internal APIs
+- **Generate unit test** using your preferred test frameworks and conventions
+- **Generate docstring** using your codebase’s style
+- **Improve variable names** because naming is one of the hard things about computer science
+- **Smell code** to find and fix code smells
+- **Generate release notes** based on recent commits
+- **Generate pull request description**
+- **Optimize code performance**
 
 Special shoutout to community members Deepak Kumar and Momil Ijaz for contributing recipes to Cody!
 
@@ -78,7 +78,7 @@ While recipes provide the ability to quickly accomplish specific tasks, Cody cha
 - Why is this function so slow?
 - Can you make this thing work?
 
-Inline chat for Cody, now in Beta, makes it easy to ask questions and get direct inline fixes at any point in your code. You can start a chat with Cody directly at a certain point in your code file, and Cody will use the context at that line to answer your question.
+Inline chat for Cody, now in beta, makes it easy to ask questions and get direct inline fixes at any point in your code. You can start a chat with Cody directly at a certain point in your code file, and Cody will use the context at that line to answer your question.
 
 Cody can also write and edit code itself, and you can use inline chat to requests fixes and refactors. Cody will make direct edits to your code, and you can choose to accept or undo any changes.
 
