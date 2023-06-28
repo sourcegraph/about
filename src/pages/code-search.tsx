@@ -38,7 +38,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                         </p>
 
                         <Link href="/contact/request-info" className="btn btn-inverted-primary w-fit">
-                        Meet with a product expert
+                            Meet with a product expert
                         </Link>
                     </div>
                 </ContentSection>
