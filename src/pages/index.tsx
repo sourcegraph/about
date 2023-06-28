@@ -354,7 +354,7 @@ const HomeHero: FunctionComponent = () => {
                         alt="Home Illustartion"
                         src="/home/glow-mobile.svg"
                         className={classNames(
-                            'mx-auto h-[285px] w-fit py-6 transition-opacity duration-300 md:hidden',
+                            'py-6 transition-opacity duration-300 md:hidden',
                             isCodyGraphInView ? 'opacity-100 delay-[100ms]' : 'opacity-10'
                         )}
                         ref={codyGraph}
