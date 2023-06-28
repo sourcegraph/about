@@ -82,7 +82,7 @@ Inline chat for Cody, now in Beta, makes it easy to ask questions and get direct
 
 Cody can also write and edit code itself, and you can use inline chat to requests fixes and refactors. Cody will make direct edits to your code, and you can choose to accept or undo any changes.
 
-To open a Cody inline chat, click the `+` icon to the left of any line in your file. With the chat window open, you can either ask Cody questions or use a slash command, such as:![alt]( '{"class": "", "title": ""}')
+To open a Cody inline chat, click the `+` icon to the left of any line in your file. With the chat window open, you can either ask Cody questions or use a slash command, such as:
 
 - **/fixup**. Cody will make changes directly to your code inline.
 - **/touch**. Cody puts its output in a new file.
