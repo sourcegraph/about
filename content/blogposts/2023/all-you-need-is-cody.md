@@ -20,11 +20,11 @@ Let's go.
 
 Do you want to know what my _lowest_ points have been, during my career as a professional programmer? I'll tell you. It's when someone hands me a nasty ancient old undocumented uncommented unholy fuck-all gigantic gob of code, and says, " **Stevey, you're senior. Own this code, and make the following changes in the following time frame."**
 
-And I spend a week, just sorta trying to get a bird's-eye view of what the hell is going on, and then another week, and another week, and it's starting to look like I am NEVER going to understand this fucking code. And it becomes one of those moments when you realize you fucked up, and god knows how you got here, but the only honorable way out is career suicide. And you leave the job, the team, even the company, in misery and disgrace.
+And I spend a week, just sorta trying to get a bird's-eye view of what the hell is going on, and then another week, and another week, and it's starting to look like I am NEVER going to understand this fuckin' code. And it becomes one of those moments when you realize you fucked up, and god knows how you got here, but the only honorable way out is career suicide. And you leave the job, the team, even the company, in misery and disgrace.
 
-You'd be a fat fuckin' liar if you said this has _never_ happened to you. Or maybe you're truly in the 1% of all devs that can read undocumented code in languages you've never seen, like the Franz Liszt of code understanding, and if so, bully for you. For the rest of us, _it ain't like that._
+You'd be a liar if you said this has _never_ happened to you. Or maybe you're truly in the 1% of all devs that can read undocumented code in languages you've never seen, like the Franz Liszt of code understanding, and if so, bully for you. For the rest of us, _it ain't like that._
 
-Just to make absolutely certain, between you and me, that you know I am not a fucking liar, I'll tell you some of my most miserable career failures. Shit that absolutely pains me to talk about. Shit I try to keep secret. Fuck it. Today's the day. This hurts my very soul, but you need to hear it.
+Just to make absolutely certain, between you and me, that you know I am not a liar, I'll tell you some of my most miserable career failures. Shit that absolutely pains me to talk about. Shit I try to keep secret. Fuck it. Today's the day. This hurts my very soul, but you need to hear it.
 
 1990, my first programming job while in college, some statistics prof hired me because I'd taken some programming courses, and they handed me five hundred (500) source files in FORTRAN on a floppy disk. Not Fortran-77 or anything nice like that. FORTRAN. It had no comments, and the prof who hired me told me some handwavy stuff about the pilfger gromak and the weasel snarfs. And yeah. Took my first check and ran as fast as my cowardly legs could carry me. What even _was_ that. I was out hunting bokoblins and they handed me a Gleeok. I mean, seriously.
 
