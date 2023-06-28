@@ -13,7 +13,7 @@ type Subjects =
     | 'onboarding'
     | 'developer productivity'
     | 'code intelligence'
-    | 'perforce'
+    | 'cody'
     | 'code monitoring'
     | 'integrations'
     | 'code search'
@@ -50,7 +50,7 @@ export const resourceItems: Resource[] = [
         title: 'Cody context architecture',
         link: '/whitepaper/cody-context-architecture.pdf',
         contentType: 'whitepaper',
-        subjects: [],
+        subjects: ['cody', 'AI'],
         description:
             'Context awareness is key to the quality and precision of Cody. This paper outlines how Cody fetches the right context at the right time to answer queries.',
         publishDate: '2023-06-16T17:32:24Z',
@@ -61,7 +61,7 @@ export const resourceItems: Resource[] = [
         title: "How Sourcegraph's AI platform powers Cody",
         link: '/whitepaper/how-sourcegraph-ai-platform-powers-cody.pdf',
         contentType: 'whitepaper',
-        subjects: [],
+        subjects: ['cody', 'AI'],
         description:
             'Through a close look at what goes on under the hood of a typical user interaction with Cody you’ll learn how the platform gives Cody a unique advantage compared to other coding assistants today and how that advantage will grow in the future.',
         publishDate: '2023-06-16T17:32:24Z',
