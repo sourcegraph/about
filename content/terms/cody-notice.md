@@ -42,10 +42,10 @@ Sourcegraph uses Customer Content solely to provide the service and not for prod
 Sourcegraph shall indemnify you against any claims alleging that your use of Cody infringes third-party intellectual property rights in accordance with the indemnification terms in your agreement. For paid subscriptions, Sourcegraph's indemnification obligation is excluded from any liability cap. You must use the most current version available and any filters provided by Sourcegraph.
 
 ### Security
-Sourcegraph will process Customer Content in accordance with the [Security Exhibit](https://about.sourcegraph.com/security-exhibit.pdf) f you are an Organization established in the European Economic Area, the United Kingdom, or Switzerland, or otherwise obliged to comply with the General Data Protection Regulation (GDPR), we will process any information relating to identified or identifiable natural persons in accordance with our [Data Processing Addendum](https://about.sourcegraph.com/dpa.pdf), which will be incorporated by reference into the terms of this Agreement. 
+Sourcegraph will process Customer Content in accordance with the [Security Exhibit](https://about.sourcegraph.com/security-exhibit.pdf) .
 
 ### Acceptable use
-You must follow the acceptable use policies of the following LLM providers:
+You may not use Cody for unlawful purposes. Additionally, you must follow the acceptable use policies of the following LLM providers:
 
 [Anthropic Acceptable Use Policy](https://www.anthropic.com/aup)
 
