@@ -340,7 +340,7 @@ export const resourceItems: Resource[] = [
         title: 'FactSet migrates from Perforce to GitHub',
         link: '/case-studies/factset-migrates-from-perforce-to-github',
         contentType: 'customer story',
-        subjects: ['perforce'],
+        subjects: [],
         description: 'Learn how FactSet uses Sourcegraph after migrating from Perforce to GitHub.',
         publishDate: '2021-09-01T21:14:48Z',
         keyword: ['FactSet', 'perforce', 'GitHub', 'Code host migration'],
