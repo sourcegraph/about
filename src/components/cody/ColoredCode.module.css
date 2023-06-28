@@ -1,0 +1,29 @@
+.lineWrapper {
+    white-space: pre;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+    animation: lineReveal 0.7s forwards ease-in-out;
+    font-family: SF Mono, monospace;
+    font-size: 0.83rem;
+    line-height: 1.32rem;
+}
+
+.lineWrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+@keyframes lineReveal {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}

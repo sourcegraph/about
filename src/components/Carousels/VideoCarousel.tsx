@@ -123,7 +123,7 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
 
     return (
         <div
-            className="w-full"
+            className="z-10 w-full"
             onTouchStart={isLargeScreen ? undefined : handleTouchStart}
             onTouchMove={isLargeScreen ? undefined : handleTouchMove}
             onTouchEnd={isLargeScreen ? undefined : handleTouchEnd}

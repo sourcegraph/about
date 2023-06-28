@@ -8,7 +8,6 @@ import { useRouter } from 'next/router'
 
 import { useAuthModal } from '../../../context/AuthModalContext'
 import { buttonLocation } from '../../../data/tracking'
-import { Banner } from '../../Banner'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
 
 import { NavItems } from './NavItems'
@@ -55,16 +54,7 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
     return (
         <Disclosure as="nav" className={classNames('fixed top-0 left-0 right-0 z-[1030]')} ref={navRef}>
             {({ open }) => (
-                <>
-                    {pathname !== '/big-code/big-code-in-ai-era' && <Banner />}
-                    <HeaderContent
-                        source={source}
-                        colorTheme={colorTheme}
-                        minimal={minimal}
-                        open={open}
-                        sticky={sticky}
-                    />
-                </>
+                <HeaderContent source={source} colorTheme={colorTheme} minimal={minimal} open={open} sticky={sticky} />
             )}
         </Disclosure>
     )
@@ -133,13 +123,13 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
             <button
                 type="button"
                 className={classNames(
-                    'btn min-w-fit px-6 font-normal lg:px-4',
-                    dark ? 'btn-inverted-primary' : 'btn-primary'
+                    'btn min-w-fit px-6 lg:px-4',
+                    dark ? 'btn-inverted-primary text-violet-500' : 'btn-primary'
                 )}
                 title="Download Sourcegraph"
                 onClick={handleOpenModal}
             >
-                Get Cody for free
+                Get started with Cody free
             </button>
         </>
     )
@@ -181,7 +171,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                                                 classes={{
                                                     ...classes,
                                                     item: classNames(
-                                                        'whitespace-nowrap rounded-md p-2 font-medium text-sm focus:outline-none focus:ring-2',
+                                                        'whitespace-nowrap rounded-md p-2 font-medium text-base focus:outline-none focus:ring-2',
                                                         classes.item
                                                     ),
                                                     menu: classNames(

@@ -5,12 +5,22 @@ import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
 
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 
-const VIDEOS: Record<'cody-demo-202303', { poster: string; mp4: string; webm: string; dimensions: number }> = {
+const VIDEOS: Record<
+    'cody-demo-202303' | 'cody-promo-202306',
+    { poster: string; mp4: string; webm: string; dimensions: number }
+> = {
     'cody-demo-202303': {
         poster: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-demo-202303-poster-2.png',
         // track: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/',
         webm: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-demo-202303.webm',
         mp4: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-demo-202303.mp4',
+        dimensions: 16 / 9,
+    },
+    // June 2023 Cody video
+    'cody-promo-202306': {
+        poster: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-promo-202306-poster.png',
+        webm: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-promo-202306.webm',
+        mp4: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-promo-202306.mp4',
         dimensions: 16 / 9,
     },
 } as const
@@ -20,7 +30,8 @@ export const DemoVideo: React.FunctionComponent<{
     splash?: boolean
     className?: string
     splashClassName?: string
-}> = ({ video, splash = false, className, splashClassName }) => {
+    showPlayButton?: boolean
+}> = ({ video, splash = false, className, splashClassName, showPlayButton = true }) => {
     const videoRef = useRef<HTMLVideoElement>(null)
 
     const [isShowing, setIsShowing] = useState(false)
@@ -72,7 +83,7 @@ export const DemoVideo: React.FunctionComponent<{
                     backgroundImage: `url(${videoInfo.poster})`,
                 }}
             />
-            <PlayCircleIcon className="h-[100px] w-[100px]" />
+            {showPlayButton && <PlayCircleIcon className="h-[100px] w-[100px]" />}
         </div>
     )
 }

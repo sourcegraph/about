@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 
 import { EventName, getEventLogger } from '../hooks/eventLogger'
@@ -17,6 +18,7 @@ interface Video {
     title: string
     controls?: boolean
     autoPlay?: boolean
+    className?: string
 }
 
 const hosts = {
@@ -34,10 +36,11 @@ export const Video: FunctionComponent<Video> = ({
     title,
     controls = false,
     autoPlay = true,
+    className,
 }) => (
     <figure>
         <video
-            className="w-full"
+            className={classNames('w-full', className)}
             width={1280}
             height={720}
             autoPlay={autoPlay}

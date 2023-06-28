@@ -31,6 +31,15 @@ export { TwoColumnSection } from './TwoColumnSection'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
 export { Tooltip } from './Tooltip'
+export { TwitterEmbed } from './EmbedTweet'
+export {
+    CodeCompletions,
+    CodeSmells,
+    DebuggingAssistance,
+    ExplainCode,
+    SummarizeCode,
+    UnitTest,
+} from './cody/cody-illustrations'
 
 export { AuthenticateModalContent } from './AuthenticateModalContent'
 export { ExternalsAuth } from './cta/ExternalsAuth'
@@ -76,3 +85,6 @@ export { CountDown } from './Starship/CountDown'
 
 // Own
 export { FeatureRoadMap } from './Own'
+
+// Cody
+export { CodyFeatureCard } from './CodyFeatureCard'
