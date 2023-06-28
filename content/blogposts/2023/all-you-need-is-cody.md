@@ -243,7 +243,7 @@ But wouldn't it be nice if we could just have Cody… you know… _fix_ it? I'll
 Boom! There it is. And you can click on the IDE's built-in diffs to see what changes Cody made.
 
 <Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/blog%20images/image2.png"
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/blog%20images/image12.png"
 /><br/>
 
 And I couldn't really show it in a blog post, but I was able to continue working in the file while Cody was making the change, asynchronously, even though it was only a few seconds. In fact I can kick off multiple async Cody workers and wait for all of them.
@@ -277,7 +277,7 @@ Fair warning: There may be some bugs. 🙂 The team has been working _really_ ha
 
 #### Settle only for the Best
 
-Tip: Don't screw around with non-Embeddings Cody. Or in fact, _any_ coding assistant without embeddings. It ain't worth it. It leads to a totally suboptimal user experience, and you just… just don't fuck around with it. Seriously. If your Cody says `NOT INDEXED` then you need to stop and go get embeddings for your repos.
+Tip: Don't screw around with non-Embeddings Cody. Or in fact, _any_ coding assistant without embeddings. It ain't worth it. It leads to a totally suboptimal user experience, and you just… just don't screw around with it. Seriously. If your Cody says `NOT INDEXED` then you need to stop and go get embeddings for your repos.
 
 The difference is that without embeddings, it all sort of looks the same, except your new smart Cody workers all just took shrooms, and they are going to hallucinate wildly with incredibly convincing made-up shit about your code. It is at first glance absolutely indistinguishable from your real code, but it can be as high as 30-40% bullshit.
 
