@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@headlessui/react':
     specifier: ^1.7.11
@@ -65,6 +61,12 @@ dependencies:
   gray-matter:
     specifier: ^4.0.3
     version: 4.0.3
+  js-cookie:
+    specifier: ^3.0.5
+    version: 3.0.5
+  lodash:
+    specifier: ^4.17.21
+    version: 4.17.21
   lottie-web:
     specifier: ^5.12.2
     version: 5.12.2
@@ -136,6 +138,12 @@ devDependencies:
   '@types/d3-time-format':
     specifier: ^4.0.0
     version: 4.0.0
+  '@types/js-cookie':
+    specifier: ^3.0.3
+    version: 3.0.3
+  '@types/lodash':
+    specifier: ^4.14.180
+    version: 4.14.185
   '@types/mapbox__rehype-prism':
     specifier: ^0.8.0
     version: 0.8.0
@@ -3733,7 +3741,7 @@ packages:
     resolution: {integrity: sha512-orgIdiq3cKf3oeIqyhBBRvHFrJfKYyqRM87r9p13gh/5zkBBDQKrOkoz9WwJHBaeiiwUpr8sL0VjmAP0o59Gdw==}
     dependencies:
       date-fns: 2.29.3
-      js-cookie: 3.0.1
+      js-cookie: 3.0.5
       uuid: 8.3.2
     dev: true
 
@@ -4043,6 +4051,10 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
+  /@types/js-cookie@3.0.3:
+    resolution: {integrity: sha512-Xe7IImK09HP1sv2M/aI+48a20VX+TdRJucfq4vfRVy6nWN8PYPOEnlMRSgxJAgYQIXJVL8dZ4/ilAM7dWNaOww==}
+    dev: true
+
   /@types/js-yaml@4.0.5:
     resolution: {integrity: sha512-FhpRzf927MNQdRZP0J5DLIdTXhjLYzeUTmLAu69mnVksLH9CJY3IuSeEgbKUki7GQZm0WqDkGzyxju2EZGD2wA==}
     dev: false
@@ -4062,7 +4074,6 @@ packages:
 
   /@types/lodash@4.14.185:
     resolution: {integrity: sha512-evMDG1bC4rgQg4ku9tKpuMh5iBNEwNa3tf9zRHdP1qlv+1WUg44xat4IxCE14gIpZRGUUWAx2VhItCZc25NfMA==}
-    dev: false
 
   /@types/mapbox__rehype-prism@0.8.0:
     resolution: {integrity: sha512-C3Bucs6nlHJg0FKhKsN6cx3Mklh1Ah9trAl6VPH0PuSUH4QtOW4H1eF/70zKn3RdEen4nZ9D5wLL0O/eLSQ+zg==}
@@ -8772,10 +8783,9 @@ packages:
       '@sideway/pinpoint': 2.0.0
     dev: true
 
-  /js-cookie@3.0.1:
-    resolution: {integrity: sha512-+0rgsUXZu4ncpPxRL+lNEptWMOWl9etvPHc/koSRp6MPwpRYAhmk0dUG00J4bxVV3r9uUzfo24wW0knS07SKSw==}
-    engines: {node: '>=12'}
-    dev: true
+  /js-cookie@3.0.5:
+    resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
+    engines: {node: '>=14'}
 
   /js-sdsl@4.2.0:
     resolution: {integrity: sha512-dyBIzQBDkCqCu+0upx25Y2jGdbTGxE9fshMsCdK0ViOongpV+n5tXRcZY9v7CaVQ79AGS9KA1KHtojxiM7aXSQ==}
@@ -14220,4 +14230,3 @@ packages:
   /zwitch@2.0.2:
     resolution: {integrity: sha512-JZxotl7SxAJH0j7dN4pxsTV6ZLXoLdGME+PsjkL/DaBrVryK9kTGq06GfKrwcSOqypP+fdXGoCHE36b99fWVoA==}
     dev: false
-
