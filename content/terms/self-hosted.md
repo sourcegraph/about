@@ -3,9 +3,9 @@ layout: markdown
 title: Terms of Service for Self-hosted Sourcegraph Instances
 ---
 
-Last modified: March 30, 2023
+Last modified: June 28, 2023
 
-See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Econtent/terms/self-hosted%5C.md%7C%5Edocs/terms-self-hosted%5C.md+type:diff&patternType=standard) since the [previous version](/terms/archives/self-hosted/2022-09-09/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives).
+See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Econtent/terms/self-hosted%5C.md%7C%5Edocs/terms-self-hosted%5C.md+type:diff&patternType=standard) since the [previous version](/terms/archives/self-hosted/2023-06-28/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives).
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of self-hosted Sourcegraph instances.
 
@@ -176,7 +176,7 @@ As used on this page, the following terms have the following specific meanings:
 
 3. use the Software to analyze any source code or other Content that is not Your Code; or
 
-4. use any release of the Software that is more than three (3) versions older than the then-most-current release of the Software.
+4. use any release of the Software that is more than one (1) version older than the then-most-current release of the Software.
 
 3.3 **No Sensitive Data**. You acknowledge and agree that, (i) the Software is not designed to store Sensitive Data (as defined below), and (ii) you will not use the Software to store Sensitive Data. “Sensitive Data” means: (i) special categories of data enumerated in European Union Regulation 2016/679, Article 9(1) or any successor legislation; (ii) protected health information as defined in HIPAA; (iii) payment cardholder information or financial account information, including bank account numbers or other personally identifiable financial information; (iv) social security numbers, driver’s license numbers, or other government identification numbers; (v) private encryption keys, passwords, or other credentials; (vi) other information subject to regulation or protection under specific laws such as the Children’s Online Privacy Protection Act or Gramm-Leach-Bliley Act (“GLBA”) or related rules or regulations; or (vi) any data similar to the above protected under applicable laws. You acknowledge that the Software and related features are not intended to meet any legal obligations for these uses, including HIPAA and GLBA requirements and that we are not a Business Associate as defined under HIPAA. Therefore, notwithstanding anything else in this Agreement, we have no liability for Sensitive Data processed in connection with your use of the Software.
 
