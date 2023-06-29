@@ -1,4 +1,5 @@
 import classNames from 'classnames'
+import Cookies from 'js-cookie'
 import GithubIcon from 'mdi-react/GithubIcon'
 import Link from 'next/link'
 
@@ -62,6 +63,10 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
         }
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
         getEventLogger().log(EventName.SIGNUP_INITIATED, eventArguments, eventArguments)
+        Cookies.set('cody.survey.show', JSON.stringify(true), {
+            expires: 365,
+            domain: 'sourcegraph.com',
+        })
     }
     return authProvider === 'github' ? (
         <Link
