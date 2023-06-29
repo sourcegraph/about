@@ -141,7 +141,7 @@ const Home: FunctionComponent = () => {
                             tweetId="1653717721639419905"
                             className="mb-1 flex justify-center xl:-ml-[78px]"
                         />
-                        <TwitterEmbed tweetId="1669445982801760256" className="flex justify-center xl:-ml-[78px]" />
+                        <TwitterEmbed tweetId="1674180760431910913" className="flex justify-center xl:-ml-[78px]" />
                     </div>
                 </div>
             </ContentSection>
