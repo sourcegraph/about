@@ -43,11 +43,11 @@ export const CodeSearchPage: FunctionComponent = () => (
                     </div>
                 </ContentSection>
 
-                <div className="absolute right-0 ml-9 hidden h-[579px] w-full bg-[url('/code-search/code-search-hero.svg')] bg-cover bg-center bg-no-repeat md:top-[110px] md:block md:w-[436px] lg:top-[191px] lg:w-[556px] xl:w-[726px]" />
+                <div className="absolute -right-[272px]  hidden h-[579px] w-[90%] bg-[url('/code-search/code-search-hero.svg')] bg-contain  bg-center bg-no-repeat md:top-[110px] md:flex  lg:top-[142px] lg:w-[80%] xl:top-[176px] xl:-right-[414px] xl:w-full" />
             </>
         }
         headerColorTheme="purple"
-        className="sg-bg-code-search"
+        className="sg-bg-code-search relative overflow-hidden"
     >
         <CustomerLogos className="-px-sm !bg-transparent md:pt-0 md:pb-16 lg:pt-32" monochrome={true} dark={true} />
 

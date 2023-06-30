@@ -90,7 +90,7 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
             </p>
             <div className="flex flex-col sm:flex-row">
                 <Link
-                    href="/cody"
+                    href="/cody#contact-form"
                     title="Get Cody for Enterprise"
                     className="rounded-[5px] border border-gray-200 py-2 px-6 text-gray-200 hover:border-white hover:text-white"
                 >

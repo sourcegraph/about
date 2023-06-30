@@ -17,7 +17,7 @@ import {
     CallToActionWithCody,
     Badge,
 } from '../components'
-import { TwitterEmbed } from '../components/EmbedTweet'
+// import { TwitterEmbed } from '../components/EmbedTweet'
 import { breakpoints } from '../data/breakpoints'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 import { useInView } from '../hooks/useInView'
@@ -118,7 +118,7 @@ const Home: FunctionComponent = () => {
                 </ContentSection>{' '}
             </div>
 
-            <ContentSection
+            {/* <ContentSection
                 parentClassName="!pb-0"
                 className="flex flex-col items-center justify-center md:pt-4 md:pb-[46px]"
             >
@@ -144,9 +144,9 @@ const Home: FunctionComponent = () => {
                         <TwitterEmbed tweetId="1674180760431910913" className="flex justify-center xl:-ml-[78px]" />
                     </div>
                 </div>
-            </ContentSection>
+            </ContentSection> */}
 
-            <CallToActionWithCody className="-mt-[10px] md:mt-0" />
+            <CallToActionWithCody className="-mt-[10px] md:mt-32" />
         </Layout>
     )
 }
