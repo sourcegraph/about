@@ -70,7 +70,6 @@ In this release, we’ve added and updated many of our favorite recipes:
 - **Smell code** to find and fix code smells
 - **Generate release notes** based on recent commits
 - **Generate pull request description**
-- **Optimize code performance**
 
 Special shoutout to community members **Deepak Kumar** and **Momal Ijaz** for contributing recipes to Cody!
 
