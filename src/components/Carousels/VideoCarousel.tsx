@@ -23,10 +23,11 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
     const [touchStart, setTouchStart] = useState(0)
     const [touchEnd, setTouchEnd] = useState(0)
     const [isLargeScreen, setIsLargeScreen] = useState(false)
+    const [showControls, setShowControls] = useState(false)
 
     const carouselHook = useCarousel(
         videos.map(item => item.video),
-        true
+        false
     )
     const currentVideo = carouselHook.carouselItems.currentItemIndex ?? 0
 
@@ -64,6 +65,21 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
             window.removeEventListener('resize', handleResize)
         }
     }, [handleResize])
+
+    useEffect(() => {
+        const videoElement = videoRefs.current[carouselHook.carouselItems.currentItemIndex ?? 0]
+
+        if (showControls) {
+            Promise.resolve(videoElement?.pause()).catch(error => {
+                console.error('Error pausing video:', error)
+            })
+        } else {
+            Promise.resolve(videoElement?.play()).catch(error => {
+                console.error('Error playing video:', error)
+            })
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [showControls])
 
     useEffect(() => {
         const preLoadVideos = async (): Promise<void> => {
@@ -121,6 +137,13 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
         carouselHook.moveCarousel()
     }
 
+    // Goto next video 3sec after ending one video
+    const handleVideoEnd = (): void => {
+        setTimeout(() => {
+            nextVideo()
+        }, 3000)
+    }
+
     return (
         <div
             className="z-10 w-full"
@@ -130,6 +153,7 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
         >
             <div ref={containerRef} className="h-[300px] max-w-full xl:h-[376px] xl:max-w-[602px]">
                 {videos.map((item, index) => (
+                    // eslint-disable-next-line jsx-a11y/mouse-events-have-key-events
                     <video
                         ref={element => (videoRefs.current[index] = element || null)}
                         key={item.video}
@@ -138,11 +162,13 @@ export const VideoCarousel: FunctionComponent<VideosCarouselProps> = ({ videos }
                         }`}
                         autoPlay={true}
                         muted={true}
-                        loop={true}
                         playsInline={true}
-                        controls={false}
+                        controls={showControls}
                         data-cookieconsent="ignore"
                         onClick={isLargeScreen ? nextVideo : undefined}
+                        onMouseOver={() => setShowControls(true)}
+                        onMouseOut={() => setShowControls(false)}
+                        onEnded={handleVideoEnd}
                         id="videoPlayer"
                     >
                         <source type="video/webm" src={item.video} data-cookieconsent="ignore" />

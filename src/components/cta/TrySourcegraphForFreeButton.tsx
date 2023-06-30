@@ -17,7 +17,7 @@ export const TrySourcegraphForFreeButton: React.FunctionComponent<{
             dark ? 'btn-inverted-primary' : 'btn-primary',
             size === 'lg' && 'py-xs'
         )}
-        href="/get-started?t=enterprise"
+        href="/contact/request-info"
         title={children}
         data-button-style={buttonStyle.primary}
         data-button-location={buttonLocation}
@@ -33,13 +33,7 @@ export const TrySourcegraphAppButton: React.FunctionComponent<{
     size?: 'md' | 'lg'
     children?: string
     href?: string
-}> = ({
-    buttonLocation,
-    dark = false,
-    size = 'md',
-    href = 'https://about.sourcegraph.com/app',
-    children = 'Try Sourcegraph for free',
-}) => (
+}> = ({ buttonLocation, dark = false, size = 'md', href = '/app', children = 'Try Sourcegraph for free' }) => (
     <a
         className={classNames(
             'btn whitespace-nowrap',

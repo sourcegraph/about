@@ -13,7 +13,7 @@ import {
     Badge,
     HubSpotForm,
     CodyFeatureCard,
-    TwitterEmbed,
+    // TwitterEmbed,
     CodeCompletions,
     CodeSmells,
     DebuggingAssistance,
@@ -198,7 +198,8 @@ const CodyPage: FunctionComponent = () => {
                         splash={true}
                         className="mx-auto mt-8 w-full max-w-[1062px] rounded-lg bg-violet-750 drop-shadow-2xl"
                         splashClassName="rounded-lg"
-                        showPlayButton={false}
+                        showPlayButton={true}
+                        playIconClassName="opacity-100 text-white"
                     />
                 </div>
 
@@ -320,7 +321,7 @@ const CodyPage: FunctionComponent = () => {
                         muted={true}
                         loop={true}
                         playsInline={true}
-                        controls={false}
+                        controls={true}
                         data-cookieconsent="ignore"
                     >
                         <source
@@ -383,7 +384,7 @@ const CodyPage: FunctionComponent = () => {
                         muted={true}
                         loop={true}
                         playsInline={true}
-                        controls={false}
+                        controls={true}
                         data-cookieconsent="ignore"
                     >
                         <source
@@ -421,7 +422,7 @@ const CodyPage: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <ContentSection parentClassName="text-center !pb-0 !pt-[112px]">
+            {/* <ContentSection parentClassName="text-center !pb-0 !pt-[112px]">
                 <Heading size="h2" className="text-white">
                     See what devs are building with Cody
                 </Heading>
@@ -433,7 +434,7 @@ const CodyPage: FunctionComponent = () => {
                         <TwitterEmbed tweetId="1645490165857542145" className="flex justify-center " />
                     </div>
                 </div>
-            </ContentSection>
+            </ContentSection> */}
 
             <ContentSection
                 parentClassName="!py-0"
