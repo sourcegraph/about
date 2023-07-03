@@ -1,27 +1,33 @@
 ---
-title: "TODO"
+title: "(TODO - write title and rename file)"
 authors:
   - name: Eric Fritz
     url: https://eric-fritz.com
   - name: Cesar Jimenez
 publishDate: 2023-06-30T10:00-07:00
-description: "TODO"
+description: "(TODO - write of description)"
 tags: [blog]
-slug: 'todo'
+slug: '(TODO - update slug)'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/all-you-need-is-cody.png # TODO
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/all-you-need-is-cody.png # TODO
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/(TODO - get hero/social image).png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/(TODO - get hero/social image).png
 ---
 
-TODO
+(TODO - attention grabber and introduction)
 
-## Content
+## Orthogonal search dimensions
 
-TODO
+(TODO - rewrite this paragraph) Consider embeddings-powered search to be good at answering high-level questions. You're asking a question about auth, of course we want to include relevant files about auth docs, etc. Ask a question about how code is implemented, suddenly the 10,000 foot view doesn't make sense. Using our heap of compiler-accurate source code indexes (SCIP), we can traverse semantic relationships between pieces of code and include the relevant ones in the context window. This gives us a detail-oriented source view on the same data.
 
-## Examples (rename to ~use cases)
+<a href="https://storage.googleapis.com/sourcegraph-assets/blog/scip-powered-cody/architecture.png" target="_blank">
+    <Figure
+        src="https://storage.googleapis.com/sourcegraph-assets/blog/scip-powered-cody/architecture.png"
+        alt="An sequence diagram showing the steps of resolving precise code intelligence context for a Cody query." />
+</a>
 
-TODO
+(TODO - rewrite this paragraph) The context sent to the API is anything that the user can reasonably see: the current repository, the current commit, the closest commit on remote, a list of open files, the user’s text selection, a diff between the editor state and remote; or a particular user query or recipe invocation. From here, the code intelligence context service can perform a cheap syntactic analysis (via TreeSitter) to extract symbol names from the currently visible code. These symbol names can be translated into SCIP names, giving us a set of root symbols to begin a traversal of relationships. The API gathers relevant code metadata, locations, and source text, and returns it to the Cody client for inclusion in the context window. Following different types of relationship edges will have different effects based on the user’s intent. If a user is looking to explain or generate a unit test for an arbitrary piece of code, it’s intuitive that exposing the implementation of invoked functions will be beneficial. If a user is generating a user form that populates a given type, it’s similarly intuitive that exposing the definitions and documentation of each of the type’s properties would prevent a response with hallucinated or mis-typed form fields. Supposing that the Sourcegraph Enterprise has also indexed package hosts, the global SCIP index will also include all relevant downstream dependencies. This allows us to traverse very deeply into the symbol graph to gather relevant context.
+
+(TODO - introduce the following examples section)
 
 ### Risperidone
 
@@ -106,9 +112,7 @@ In the following example, we admit to Cody that our implementation to roll a pai
 
 Cody makes an assumption that `random.RandomInt(6)` would return a value in the range of `[0, 6)`, which is reasonable given the documented behavior of Go's builtin [`rand#Intn`](https://pkg.go.dev/math/rand#Intn), as well as many other language standard libraries that follow the same convention. Following this assumption, Cody proposes an alternative implementation that would actually address the _seemingly incorrect_ output.
 
-What Cody (without SCIP) wasn't aware of was that our custom `random` package pulled an [xkcd#221](https://xkcd.com/221/) and simply returned the same value unconditionally. This makes Cody's assumption (and therefore all downstream inferences) wrong.
-
-When we include the definition of the `RandomInt` function, Cody immediately focuses on the obvious bug, and proposes an alternative solution at the correct level of abstraction.
+What Cody (without SCIP) wasn't aware of was that our custom `random` package pulled an [xkcd#221](https://xkcd.com/221/) and simply returned the same value unconditionally. This makes Cody's assumption (and therefore all downstream inferences) wrong. When we also include the definition of the `RandomInt` function, Cody immediately zeroes-in on the obvious bug, and proposes an alternative solution **at the correct level of abstraction**.
 
 <a href="https://storage.googleapis.com/sourcegraph-assets/blog/scip-powered-cody/dice-scip.png" target="_blank">
     <Figure
@@ -117,8 +121,18 @@ When we include the definition of the `RandomInt` function, Cody immediately foc
         caption="SCIP-powered Cody checking behind every door due to extreme paranoia." />
 </a>
 
+While this is a very contrived example (specifically constructed for inclusion in this blog post to remove all the real-world muck), Cody has been witnessed to find other real-world, cross-boundary bug such as the values for a user-defined limit not being passed from a GraphQL layer down to the database layer where zero (the default value) results were always returned. Without sufficient context, Cody suggestions may be incorrect or only act as a local band-aid instead of a root cause fix.
+
 ## What we're exploring
 
-TODO
+This is fertile land and there's no shortage of exploratory work ahead of us, including but not limited to:
+
+- Supporting larger traversal depths
+- Enhance embeddings with precise data 
+- Supporting non-definition relationships (references, implementations, prototypes, type definitions, etc)
+- Tune target relationships based on the user's input query (it seems that the optimal context to provide changes differs by task type)
+- Calculate second-order data from a snapshot of SCIP indexes and expose that to the LLM:
+  - Match SCIP indexes to CVE databases to warn of possible vulnerabliities in existing code or code being generated
+  - Global document or symbol ranking signals, which could be helpful to determine what data to include in a limited context window
 
 I, for one, would prefer our future AI overlords to be as intelligent as possible.
