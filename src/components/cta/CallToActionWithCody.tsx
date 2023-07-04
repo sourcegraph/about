@@ -74,7 +74,7 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
                         target="_blank"
                         href="https://about.sourcegraph.com/terms/privacy"
                     >
-                        Private Policy
+                        Privacy Policy
                     </Link>
                 </p>
             </div>
@@ -92,12 +92,12 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
                 <Link
                     href="/cody#contact-form"
                     title="Get Cody for Enterprise"
-                    className="rounded-[5px] border border-gray-200 py-2 px-6 text-gray-200 hover:border-white hover:text-white"
+                    className="rounded-[5px] border border-white py-2 px-6 text-white hover:bg-color-violet-600"
                 >
                     Get Cody for Enterprise
                 </Link>
                 <MeetWithProductExpertButton
-                    buttonClassName="text-white pl-0 mt-3 sm:pl-6 sm:mt-0"
+                    buttonClassName="text-white pl-0 mt-3 sm:pl-6 sm:mt-0 hover:text-violet-300 hover:underline"
                     chevron={true}
                     buttonLocation={buttonLocation.body}
                 >
