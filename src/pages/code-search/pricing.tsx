@@ -44,6 +44,19 @@ const EnterpriseButtons: FunctionComponent<{ contactUsClassName?: string }> = ({
     </div>
 )
 
+const FreeButton: FunctionComponent<{ className?: string }> = ({ className }) => (
+    <Link
+        href="https://docs.sourcegraph.com/admin/deploy"
+        className={classNames('btn btn-outline-primary w-full md:w-auto', className)}
+        title="Self-deploy for free"
+        data-button-style={buttonStyle.outline}
+        data-button-location={buttonLocation.bodyDemo}
+        data-button-type="cta"
+    >
+        Self-deploy for free
+    </Link>
+)
+
 const faqData = [
     {
         q: 'Is there a free trial of the paid plans?',
@@ -157,6 +170,14 @@ const PricingPage: FunctionComponent = () => (
                     features={ENTERPRISE_FEATURES_OVERVIEW}
                     {...PLAN_COLORS.enterprise}
                 />
+            </div>
+
+            <div className="col-span-full mb-sm md:col-span-10 md:col-start-2 md:mb-0 text-center rounded border-t-16 border-gray-200 shadow-lg border-t-violet-500 p-xs ">
+                <h2 className="mb-sm font-semibold">Free</h2>
+                <h3 className="my-sm text-lg font-normal">
+                    Self-deploy Sourcegraph Code Search for free, for up to 10 users. Perfect for hobbyists and solo developers. <Link href="/contact/request-info?form_submission_source=pricing-free">Contact us</Link> any time to start an Enterprise trial.
+                </h3>
+                <FreeButton />
             </div>
         </ContentSection>
 
