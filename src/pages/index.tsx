@@ -218,7 +218,7 @@ const HomeHero: FunctionComponent = () => {
                             <p className="mt-4 text-sm text-violet-300 opacity-70">
                                 By registering, you agree to our{' '}
                                 <Link
-                                    className="text-violet-300 underline"
+                                    className="text-violet-300 underline hover:text-violet-200"
                                     target="_blank"
                                     href="https://about.sourcegraph.com/terms"
                                 >
@@ -226,11 +226,11 @@ const HomeHero: FunctionComponent = () => {
                                 </Link>{' '}
                                 and{' '}
                                 <Link
-                                    className="text-violet-300 underline"
+                                    className="text-violet-300 underline hover:text-violet-200"
                                     target="_blank"
                                     href="https://about.sourcegraph.com/terms/privacy"
                                 >
-                                    Private Policy
+                                    Privacy Policy
                                 </Link>
                             </p>
                         </div>
@@ -415,7 +415,7 @@ const HomeHero: FunctionComponent = () => {
                                 </Link>
                                 <Link
                                     href="/contact/request-info"
-                                    className="flex items-center justify-center gap-[10px] pb-4 font-semibold text-white lg:pb-0"
+                                    className="flex items-center justify-center gap-[10px] pb-4 font-semibold text-white lg:pb-0 hover:text-violet-300 hover:underline"
                                     onClick={() => handleOnClick(EventName.SEARCH_LEARN_MORE_CTA)}
                                 >
                                     Learn more about Enterprise <ChevronRightIcon />
