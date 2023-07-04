@@ -453,4 +453,23 @@ export const resourceItems: Resource[] = [
         publishDate: '2019-06-25T01:10:08Z',
         keyword: ['Technical Debt', 'Legacy Code', 'Deprecation'],
     },
+    {
+        featured: false,
+        title: 'Sourcegraph Professional Services Offerings',
+        link: '/guides/professional-services-offerings.pdf',
+        contentType: 'guide',
+        subjects: [],
+        description:
+            'Sourcegraph Professional Services provides a suite of specialized services – technical and non-technical, consultative and hands-on – to help companies maximize the value of Sourcegraph through deep partnership',
+        publishDate: '2023-07-05T00:00:00Z',
+        keyword: [
+            'services',
+            'offerings',
+            'customer service',
+            'customer',
+            'CE',
+            'customer engineering',
+            'professional services',
+        ],
+    },
 ]
