@@ -188,7 +188,7 @@ const CodyPage: FunctionComponent = () => {
                             target="_blank"
                             href="https://about.sourcegraph.com/terms/privacy"
                         >
-                            Private Policy
+                            Privacy Policy
                         </Link>
                     </p>
                 </div>
@@ -482,7 +482,7 @@ const CodyPage: FunctionComponent = () => {
                             target="_blank"
                             href="https://about.sourcegraph.com/terms/privacy"
                         >
-                            Private Policy
+                            Privacy Policy
                         </Link>
                     </p>
                 </div>
