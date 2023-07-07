@@ -102,10 +102,10 @@ const codyFeatures2 = [
 const CodyPage: FunctionComponent = () => {
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => {
+    const handleOpenModal = (description: string): void => {
         const eventArguments = {
             source: 'about-cody-deployment',
-            description: 'Get started with cody for free button click',
+            description
         }
 
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
@@ -209,57 +209,73 @@ const CodyPage: FunctionComponent = () => {
                 </Heading>
 
                 <div className="mt-16 flex flex-col gap-16 text-[24px] font-semibold text-white">
-                    <div className="flex w-full flex-wrap justify-center gap-6 md:flex-nowrap">
-                        <CodyFeatureCard
-                            plainOnMobile={false}
-                            className="justify-end md:pt-[180px]"
-                            heading={
-                                <>
-                                    Cody app <Badge size="large" text="New!" color="light-gray" />
-                                </>
-                            }
-                            description="The app is a free, native desktop client for Cody. The app builds your local code graph
-                                and connects to your IDE extensions to make Cody more powerful and accurate."
-                            descriptionClassName="!text-lg"
-                        />
+                    <div className="flex w-full flex-wrap justify-center md:flex-nowrap">
+                        <div className='flex flex-col'>
+                            <CodyFeatureCard
+                                plainOnMobile={false}
+                                icon="/sourcegraph-mark.png"
+                                subHeading="Step 1: Sign up"
+                                description="Sign up for a Sourcegraph.com account."
+                                descriptionClassName="!text-lg"
+                                onClick={() => handleOpenModal('Sign up for a Sourcegraph.com account')}
+                            />
+                            <img className='my-2 mx-auto' src="/cody/down-arrow.svg" width={16} height={45} alt="Down arrow" />
+                            <CodyFeatureCard
+                                plainOnMobile={false}
+                                icon="cody/cody-color-icon.png"
+                                subHeading="Step 2: Install Cody app"
+                                description="The app is a free, lightweight, native desktop version of Sourcegraph that connects your local code to our AI coding assistant, Cody."
+                                descriptionClassName="!text-lg"
+                                onClick={() => window.location.replace('https://sourcegraph.com/get-cody')}
+                            />
+                            <img className='my-2 mx-auto md:hidden' src="/cody/down-arrow.svg" width={16} height={45} alt="Down arrow" />
+                        </div>
 
-                        <div className="flex w-full max-w-[509px] flex-col gap-y-6">
-                            <Heading
-                                size="h4"
-                                className="cody-platforms-bg-gradient flex w-full items-center justify-center gap-4 border border-white/[.04] py-4 px-6 text-white"
+                        <img className='mx-2 hidden md:block mt-[168px]' src="/cody/right-arrow.svg" width={61.5} height={104} alt="Right arrow" />
+
+                        <div className="sg-cody-feature-card rounded-lg p-6	flex w-full max-w-[509px] flex-col gap-y-6">
+                            <Heading size='h4' className='text-white'>
+                                Step 3: Install IDE extension
+                            </Heading>
+                            <Link
+                                href="vscode:extension/sourcegraph.cody-ai"
+                                className="cody-platforms-bg-gradient flex w-full items-center justify-center gap-4 border border-white/[.04] rounded-lg py-4 px-6 text-white hover:sg-bg-hover-ide-extension-button"
                             >
                                 <img src="/icons/vscode.svg" height={34} width={34} alt="VScode Icon" />
                                 VS Code extension
-                            </Heading>{' '}
-                            <Heading
-                                size="h4"
-                                className="cody-platforms-bg-gradient flex w-full items-center justify-center gap-4 border border-white/[.04] py-4 px-6 text-white"
+                            </Link>{' '}
+                            <Link
+                                href="https://plugins.jetbrains.com/plugin/9682-sourcegraph"
+                                target='_blank'
+                                className="cody-platforms-bg-gradient flex w-full items-center justify-center gap-4 border border-white/[.04] rounded-lg py-4 px-6 text-white hover:sg-bg-hover-ide-extension-button"
                             >
                                 <img src="/icons/IntelliJ.svg" height={34} width={34} alt="IntelliJ Icon" />
                                 IntelliJ extension
-                            </Heading>
-                            <Heading
-                                size="h4"
-                                className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] py-4 px-6 text-white"
+                            </Link>
+                            <Link
+                                href="https://info.sourcegraph.com/waitlist"
+                                target='_blank'
+                                className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] rounded-lg py-4 px-6 text-white"
                             >
                                 <img src="/icons/Neovim-logo.svg" height={34} width={34} alt="Neovim Icon" />
                                 Neovim
                                 <Badge size="small" text="Coming soon!" color="light-gray" />
-                            </Heading>
-                            <Heading
-                                size="h4"
-                                className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] py-4 px-6 text-white"
+                            </Link>
+                            <Link
+                                href="https://info.sourcegraph.com/waitlist"
+                                target="_blank"
+                                className="flex w-full items-center justify-center gap-4 border border-dashed border-white/[.15] rounded-lg py-4 px-6 text-white"
                             >
                                 <img src="/icons/EmacsIcon.svg" height={34} width={34} alt="Emacs Icon" />
                                 Emacs
                                 <Badge size="small" text="Coming soon!" color="light-gray" />
-                            </Heading>
+                            </Link>
                         </div>
                     </div>
 
                     <button
                         type="button"
-                        onClick={handleOpenModal}
+                        onClick={() => handleOpenModal('Get started with cody for free button click')}
                         className="btn btn-default-outlined w-fit self-center"
                     >
                         Get started with Cody for free
