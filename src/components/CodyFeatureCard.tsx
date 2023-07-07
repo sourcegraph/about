@@ -16,6 +16,8 @@ interface Props {
     descriptionClassName?: string
     plainOnMobile?: boolean
     animation?: React.ReactNode
+    icon?: string
+    onClick?: () => void
 }
 
 export const CodyFeatureCard: FunctionComponent<Props> = ({
@@ -26,6 +28,8 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
     descriptionClassName,
     plainOnMobile = true,
     animation,
+    icon,
+    onClick,
 }) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.sm
@@ -65,15 +69,18 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
     const isInViewport = useInView(animationContainerRef)
 
     return (
+        // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
         <div
             className={classNames(
                 className,
                 'relative flex w-full max-w-[509px] flex-col overflow-hidden text-left text-white',
                 plainOnMobile && isMobile
                     ? '!bg-transparent p-0'
-                    : 'sg-cody-feature-card rounded-lg border border-white border-opacity-[0.04] p-6'
+                    : 'sg-cody-feature-card rounded-lg border border-white border-opacity-[0.04] p-6',
+                onClick && 'cursor-pointer'
             )}
             ref={cardRef}
+            onClick={onClick}
             onMouseEnter={() => toggleHovered(true)}
             onMouseLeave={() => toggleHovered(false)}
             onMouseMove={handleMouseMove}
@@ -87,6 +94,9 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
                 >
                     {isInViewport && animation}
                 </div>
+            )}
+            {icon && (
+                <img className='mb-4' src={icon} height={38} width={38} alt="Icon" />
             )}
             {heading && (
                 <Heading size="h2" className="mb-6 !text-4xl">
