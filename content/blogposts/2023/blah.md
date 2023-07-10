@@ -15,6 +15,9 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/(TODO - get 
 
 (TODO - attention grabber and introduction)
 
+FIRST DRAFT:
+Within the rapidly expanding domain of artificial intelligence, the capacity for Large Language Models (LLMs) to sift through extensive codebases and provide insightful responses has evolved into a critical necessity for today's software developers. The traditional search methodologies have proven insufficient time and again, as developers find themselves spending countless hours grappling with them, only to be left navigating through a labyrinth of misleading results, hallucinations and vague responses to their code-related inquiries.
+
 ## Orthogonal search dimensions
 
 (TODO - rewrite this paragraph) Consider embeddings-powered search to be good at answering high-level questions. You're asking a question about auth, of course we want to include relevant files about auth docs, etc. Ask a question about how code is implemented, suddenly the 10,000 foot view doesn't make sense. Using our heap of compiler-accurate source code indexes (SCIP), we can traverse semantic relationships between pieces of code and include the relevant ones in the context window. This gives us a detail-oriented source view on the same data.
@@ -128,7 +131,7 @@ While this is a very contrived example (specifically constructed for inclusion i
 This is fertile land and there's no shortage of exploratory work ahead of us, including but not limited to:
 
 - Supporting larger traversal depths
-- Enhance embeddings with precise data 
+- Enhance embeddings with precise data
 - Supporting non-definition relationships (references, implementations, prototypes, type definitions, etc)
 - Tune target relationships based on the user's input query (it seems that the optimal context to provide changes differs by task type)
 - Calculate second-order data from a snapshot of SCIP indexes and expose that to the LLM:
