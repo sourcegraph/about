@@ -5,11 +5,12 @@ import { useRouter } from 'next/router'
 const AppPage: FunctionComponent = () => {
   const router = useRouter()
 
-  useEffect(() => {
-    void router.push('/cody')
-  }, [])
-
-  return null
+useEffect(() => {
+  router.push('/cody').catch(error => {
+    console.error('Error pushing to /cody', error)
+    })
+},[])
+return null  
 }
 
 export default AppPage
