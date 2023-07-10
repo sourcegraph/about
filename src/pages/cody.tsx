@@ -2,7 +2,10 @@ import { FunctionComponent, useEffect, cloneElement } from 'react'
 
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
+import { GetStaticProps } from 'next'
 import Link from 'next/link'
+import { EmbeddedTweet, TweetSkeleton } from 'react-tweet'
+import { Tweet, getTweet } from 'react-tweet/api'
 
 import {
     ContentSection,
@@ -13,7 +16,6 @@ import {
     Badge,
     HubSpotForm,
     CodyFeatureCard,
-    // TwitterEmbed,
     CodeCompletions,
     CodeSmells,
     DebuggingAssistance,
@@ -25,7 +27,13 @@ import { DemoVideo } from '../components/CodyVideo'
 import { useAuthModal } from '../context/AuthModalContext'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 
+import { CODY_PAGE_TWEET_IDS } from './constants'
+
 import styles from '../styles/CustomHubspotForm.module.scss'
+
+interface CodyProps {
+    tweets: (Tweet | undefined)[]
+}
 
 const codyFeatures1 = [
     {
@@ -99,7 +107,7 @@ const codyFeatures2 = [
     },
 ]
 
-const CodyPage: FunctionComponent = () => {
+const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (description: string): void => {
@@ -438,19 +446,27 @@ const CodyPage: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            {/* <ContentSection parentClassName="text-center !pb-0 !pt-[112px]">
+            <ContentSection parentClassName="text-center !pb-0 !pt-[112px]" className="-mb-[25px] md:-mb-[137px]">
                 <Heading size="h2" className="text-white">
                     See what devs are building with Cody
                 </Heading>
 
-                <div className="mt-6 flex w-full flex-wrap justify-center gap-x-6 md:mt-16 md:grid-cols-2">
-                    <TwitterEmbed tweetId="1645903813302185984" className="flex w-full max-w-[500px] justify-center" />
-                    <div className="flex w-full max-w-[500px] flex-col gap-1">
-                        <TwitterEmbed tweetId="1647765520673046529?s=20" className="flex justify-center" />
-                        <TwitterEmbed tweetId="1645490165857542145" className="flex justify-center " />
+                <div className="relative mt-6 grid w-full grid-cols-1 gap-x-6 md:grid-cols-2">
+                    <div className="relative grid auto-rows-min grid-cols-1">
+                        <div className="mb-1 flex justify-center xl:-mr-[80px]">
+                            {tweets[0] ? <EmbeddedTweet key={tweets[0].id_str} tweet={tweets[0]} /> : <TweetSkeleton />}
+                        </div>
+                    </div>
+                    <div className="relative grid auto-rows-min grid-cols-1">
+                        <div className="mb-1 -mt-[30px] flex justify-center md:mt-0 xl:-ml-[80px]">
+                            {tweets[1] ? <EmbeddedTweet key={tweets[1].id_str} tweet={tweets[1]} /> : <TweetSkeleton />}
+                        </div>
+                        <div className="-mt-[30px] flex justify-center xl:-ml-[80px]">
+                            {tweets[2] ? <EmbeddedTweet key={tweets[2].id_str} tweet={tweets[2]} /> : <TweetSkeleton />}
+                        </div>
                     </div>
                 </div>
-            </ContentSection> */}
+            </ContentSection>
 
             <ContentSection
                 parentClassName="!py-0"
@@ -529,6 +545,22 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
         </Layout>
     )
+}
+
+export const getStaticProps: GetStaticProps<CodyProps> = async () => {
+    try {
+        const tweetPromises = CODY_PAGE_TWEET_IDS.map(tweetId => getTweet(tweetId))
+        const tweetResponses = await Promise.allSettled(tweetPromises)
+
+        const validTweets = tweetResponses
+            .filter(response => response.status === 'fulfilled')
+            .map(response => (response as PromiseFulfilledResult<Tweet>).value)
+
+        return { props: { tweets: validTweets } }
+    } catch (error) {
+        console.error('Error fetching tweets:', error)
+        return { props: { tweets: [] } }
+    }
 }
 
 export default CodyPage

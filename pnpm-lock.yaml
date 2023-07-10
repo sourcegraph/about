@@ -85,6 +85,9 @@ dependencies:
   react-popper:
     specifier: ^2.3.0
     version: 2.3.0(@popperjs/core@2.11.7)(react-dom@18.2.0)(react@18.2.0)
+  react-tweet:
+    specifier: ^3.0.1
+    version: 3.0.1(react-dom@18.2.0)(react@18.2.0)
   rehype-autolink-headings:
     specifier: ^6.1.1
     version: 6.1.1
@@ -2615,15 +2618,21 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       core-js-pure: 3.25.1
-      regenerator-runtime: 0.13.9
+      regenerator-runtime: 0.13.11
     dev: true
 
   /@babel/runtime@7.19.0:
     resolution: {integrity: sha512-eR8Lo9hnDS7tqkO7NsV+mKvCmv5boaXFSZ70DnfhcgiEne8hv9oCEd36Klw74EtizEqLsy4YnW8UWwpBVolHZA==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      regenerator-runtime: 0.13.9
+      regenerator-runtime: 0.13.11
     dev: true
+
+  /@babel/runtime@7.22.6:
+    resolution: {integrity: sha512-wDb5pWm4WDdF6LFUde3Jl8WzPA+3ZbxYqkC6xAXuD3irdEHN1k0NfTRrJD8ZD378SJ61miMLCqIOXYhd8x+AJQ==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.13.11
 
   /@babel/template@7.18.10:
     resolution: {integrity: sha512-TI+rCtooWHr3QJ27kJxfjutghu44DLnasDMwpDqCXVTal9RLp3RSYNh4NdBrRP2cQAoG9A8juOQl6P6oZG4JxA==}
@@ -3652,7 +3661,7 @@ packages:
       react-native:
         optional: true
     dependencies:
-      '@babel/runtime': 7.19.0
+      '@babel/runtime': 7.22.6
       '@types/react-reconciler': 0.26.7
       its-fine: 1.1.0(react@18.2.0)
       react: 18.2.0
@@ -3899,6 +3908,12 @@ packages:
     dependencies:
       tslib: 2.4.0
 
+  /@swc/helpers@0.5.1:
+    resolution: {integrity: sha512-sJ902EfIzn1Fa+qYmjdQqh8tPsoxyBz+8yBKC2HKUxyezKJFwPGOn7pv4WY6QuQW//ySQi5lJjA/ZT9sNWWNTg==}
+    dependencies:
+      tslib: 2.4.0
+    dev: false
+
   /@szmarczak/http-timer@1.1.2:
     resolution: {integrity: sha512-XIB2XbzHTN6ieIjfIMV9hlVcfPU26s2vafYWQcZHWXHOxiaRZYEDKEwdl129Zyg50+foYV2jCgtrqSA6qNuNSA==}
     engines: {node: '>=6'}
@@ -3911,7 +3926,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       '@babel/code-frame': 7.18.6
-      '@babel/runtime': 7.19.0
+      '@babel/runtime': 7.22.6
       '@types/aria-query': 4.2.2
       aria-query: 4.2.2
       chalk: 4.1.2
@@ -4927,7 +4942,7 @@ packages:
     resolution: {integrity: sha512-o/HelwhuKpTj/frsOsbNLNgnNGVIFsVP/SW2BSF14gVl7kAfMOJ6/8wUAUvG1R1NHKrfG+2sHZTu0yauT1qBrA==}
     engines: {node: '>=6.0'}
     dependencies:
-      '@babel/runtime': 7.19.0
+      '@babel/runtime': 7.22.6
       '@babel/runtime-corejs3': 7.19.1
     dev: true
 
@@ -5740,6 +5755,11 @@ packages:
     engines: {node: '>=0.8'}
     dev: true
 
+  /clsx@1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
+
   /collection-visit@1.0.0:
     resolution: {integrity: sha512-lNkKvzEeMBBjUGHZ+q6z9pSJla0KWAQPvtzhEV9+iGyQYG+pBpl7xKDhxoNSOZH2hhv0v5k0y2yAM4o4SjoSkw==}
     engines: {node: '>=0.10.0'}
@@ -6266,6 +6286,13 @@ packages:
     resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
     engines: {node: '>=0.11'}
     dev: true
+
+  /date-fns@2.30.0:
+    resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
+    engines: {node: '>=0.11'}
+    dependencies:
+      '@babel/runtime': 7.22.6
+    dev: false
 
   /dayjs@1.11.5:
     resolution: {integrity: sha512-CAdX5Q3YW3Gclyo5Vpqkgpj8fSdLQcRuzfX6mC6Phy0nfJ0eGYOeS7m4mt2plDWLAtA4TqTakvbboHvUxfe4iA==}
@@ -9629,7 +9656,7 @@ packages:
   /metro-runtime@0.73.9:
     resolution: {integrity: sha512-d5Hs83FpKB9r8q8Vb95+fa6ESpwysmPr4lL1I2rM2qXAFiO7OAPT9Bc23WmXgidkBtD0uUFdB2lG+H1ATz8rZg==}
     dependencies:
-      '@babel/runtime': 7.19.0
+      '@babel/runtime': 7.22.6
       react-refresh: 0.4.3
     dev: true
 
@@ -11704,7 +11731,7 @@ packages:
       react-native-gradle-plugin: 0.71.17
       react-refresh: 0.4.3
       react-shallow-renderer: 16.15.0(react@18.2.0)
-      regenerator-runtime: 0.13.9
+      regenerator-runtime: 0.13.11
       scheduler: 0.23.0
       stacktrace-parser: 0.1.10
       use-sync-external-store: 1.2.0(react@18.2.0)
@@ -11796,6 +11823,20 @@ packages:
       - zdog
     dev: true
 
+  /react-tweet@3.0.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-CXi9Lc5HajpnOWr8lxg1lmd3N1LNxVk9hC9Gb+Vb9JmAAqYL7ChBClyKITkrmJNuKvt2MwH8Y2q0PLvDWYjYxw==}
+    peerDependencies:
+      react: '>= 18.0.0'
+      react-dom: '>= 18.0.0'
+    dependencies:
+      '@swc/helpers': 0.5.1
+      clsx: 1.2.1
+      date-fns: 2.30.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      swr: 2.2.0(react@18.2.0)
+    dev: false
+
   /react-twitch-embed@3.0.1(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ZjsLB3AVDQiGpL30u5TNq0CrBSuZXMvhbTgNSeQwoT9ehGud3R4LHxA5PZlt/TEquRVEsNNryLtQbXekk/kyUQ==}
     engines: {node: '>=8', npm: '>=5'}
@@ -11824,7 +11865,7 @@ packages:
       react-dom: '>=16.8'
       zdog: '>=1.1'
     dependencies:
-      '@babel/runtime': 7.19.0
+      '@babel/runtime': 7.22.6
       lodash-es: 4.17.21
       pointer-events-polyfill: 0.4.4-pre
       react: 18.2.0
@@ -11945,14 +11986,13 @@ packages:
     resolution: {integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==}
     dev: true
 
-  /regenerator-runtime@0.13.9:
-    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
-    dev: true
+  /regenerator-runtime@0.13.11:
+    resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
 
   /regenerator-transform@0.15.0:
     resolution: {integrity: sha512-LsrGtPmbYg19bcPHwdtmXwbW+TqNvtY4riE3P83foeHRroMbH6/2ddFBfab3t7kbzc7v7p4wbkIecHImqt0QNg==}
     dependencies:
-      '@babel/runtime': 7.19.0
+      '@babel/runtime': 7.22.6
     dev: true
 
   /regex-not@1.0.2:
@@ -13015,6 +13055,15 @@ packages:
       stable: 0.1.8
     dev: true
 
+  /swr@2.2.0(react@18.2.0):
+    resolution: {integrity: sha512-AjqHOv2lAhkuUdIiBu9xbuettzAzWXmCEcLONNKJRba87WAefz8Ca9d6ds/SzrPc235n1IxWYdhJ2zF3MNUaoQ==}
+    peerDependencies:
+      react: ^16.11.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      use-sync-external-store: 1.2.0(react@18.2.0)
+    dev: false
+
   /synckit@0.8.4:
     resolution: {integrity: sha512-Dn2ZkzMdSX827QbowGbU/4yjWuvNaCoScLLoMo/yKbu+P4GBR6cRGKZH27k6a9bRzdqcyd1DE96pQtQ6uNkmyw==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -13727,7 +13776,6 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
-    dev: true
 
   /use@3.1.1:
     resolution: {integrity: sha512-cwESVXlO3url9YWlFW/TA9cshCEhtu7IKJ/p5soJ/gGpj7vbvFrAY/eIioQ6Dw23KjZhYgiIo8HOs1nQ2vr/oQ==}
