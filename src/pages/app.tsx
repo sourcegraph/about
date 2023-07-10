@@ -6,7 +6,7 @@ const AppPage: FunctionComponent = () => {
   const router = useRouter()
 
   useEffect(() => {
-    router.push('/cody')
+    void router.push('/cody')
   }, [])
 
   return null
