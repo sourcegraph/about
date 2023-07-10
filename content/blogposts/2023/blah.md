@@ -22,15 +22,25 @@ Within the rapidly expanding domain of artificial intelligence, the capacity for
 
 (TODO - rewrite this paragraph) Consider embeddings-powered search to be good at answering high-level questions. You're asking a question about auth, of course we want to include relevant files about auth docs, etc. Ask a question about how code is implemented, suddenly the 10,000 foot view doesn't make sense. Using our heap of compiler-accurate source code indexes (SCIP), we can traverse semantic relationships between pieces of code and include the relevant ones in the context window. This gives us a detail-oriented source view on the same data.
 
+(ATTEMPT AT REWRITE:)
+Think of embeddings-powered search as an excellent tool for addressing broad, high-level inquiries. For instance, when you pose a question about authentication, it naturally seeks to incorporate pertinent documents related to this topic. However, when the query shifts to implementation specifics of a certain code, the expansive, overarching 10,000 foot view perspective isn't as effective. That's where our vast repository of compiler-accurate Source Code Indexes (SCIP) comes into play. SCIP allows us to navigate the semantic relationships between different code snippets, including the most relevant ones within the context window. As a result, we gain a detail-oriented source view of the same data, enabling us to provide more granular context with precision.
+
+(DRAFT: EXPANDING ON THE GENERAL SENSE OF THE ABOVE)
+Leveraging SCIP provides a more granular analysis, allowing us to retrieve the intrinsic relationships and patterns that may remain obscured with traditional embeddings-powered search methods. It breaks away from the limitations of a high-level perspective, ensuring that even the smallest connections aren't overlooked. This detailed approach allows us to deliver a solution that meet the varying complexity of developer's inquiries, from high-level concepts to intricate code implementation specifics.
+
 <a href="https://storage.googleapis.com/sourcegraph-assets/blog/scip-powered-cody/architecture.png" target="_blank">
     <Figure
         src="https://storage.googleapis.com/sourcegraph-assets/blog/scip-powered-cody/architecture.png"
         alt="An sequence diagram showing the steps of resolving precise code intelligence context for a Cody query." />
 </a>
 
+Specifically,
 (TODO - rewrite this paragraph) The context sent to the API is anything that the user can reasonably see: the current repository, the current commit, the closest commit on remote, a list of open files, the user’s text selection, a diff between the editor state and remote; or a particular user query or recipe invocation. From here, the code intelligence context service can perform a cheap syntactic analysis (via TreeSitter) to extract symbol names from the currently visible code. These symbol names can be translated into SCIP names, giving us a set of root symbols to begin a traversal of relationships. The API gathers relevant code metadata, locations, and source text, and returns it to the Cody client for inclusion in the context window. Following different types of relationship edges will have different effects based on the user’s intent. If a user is looking to explain or generate a unit test for an arbitrary piece of code, it’s intuitive that exposing the implementation of invoked functions will be beneficial. If a user is generating a user form that populates a given type, it’s similarly intuitive that exposing the definitions and documentation of each of the type’s properties would prevent a response with hallucinated or mis-typed form fields. Supposing that the Sourcegraph Enterprise has also indexed package hosts, the global SCIP index will also include all relevant downstream dependencies. This allows us to traverse very deeply into the symbol graph to gather relevant context.
 
 (TODO - introduce the following examples section)
+
+(ATTEMPT AT INTRO - I hate it but trying to set up the "Let's look at ...")
+Diving into the realm of Large Language Models (LLMs), we've discovered that providing enough context initially is the optimal way to prevent any 'hallucinations'. Let's delve into an example featuring Cody, our AI that manages to interpret the semantic relationships of code commendably, even without leveraging the full potential of precise code intelligence, as long as the code is visible to the underlying LLM.
 
 ### Risperidone
 
