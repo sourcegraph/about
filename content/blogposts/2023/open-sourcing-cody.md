@@ -14,7 +14,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-hero.pn
 
 <p><iframe width="100%" height="415" src="https://www.youtube.com/embed/EKCtoU0oiCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
 
-We've open-sourced Cody, Sourcegraph's AI-enabled editor assistant under the Apache 2.0 license. You can [view the code](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/tree/client/cody) and join our [livestreams](https://www.twitch.tv/sourcegraph) where we'll show you around the codebase and build new features in public. Or just [install it](https://docs.sourcegraph.com/cody#install-cody) and try it out.
+We've open-sourced Cody, Sourcegraph's AI-enabled editor assistant under the Apache 2.0 license. You can [view the code](https://github.com/sourcegraph/cody) and join our [livestreams](https://www.twitch.tv/sourcegraph) where we'll show you around the codebase and build new features in public. Or just [install it](https://docs.sourcegraph.com/cody#install-cody) and try it out.
 
 What is Cody? Cody is like ChatGPT in your editor, but it knows about your code. Like other AI coding assistants, Cody makes use of Large Language Models (LLMs) under the hood. But where Cody differentiates is in its ability to fetch context from your broader codebase and Sourcegraph's code graph. This enables Cody to ground its answers factually and generate code that mirrors the patterns of your codebase. Cody's not perfect. It can fetch the wrong context and hallucinate, but in our experience it performs far better than other tools that rely solely on LLMs and local context.
 
