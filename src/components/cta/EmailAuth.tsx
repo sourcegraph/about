@@ -29,7 +29,7 @@ export const EmailAuth: React.FunctionComponent<EmailAuthProps> = ({
 
     return (
         <Link
-            href="https://sourcegraph.com/sign-up?showEmail=true&returnTo=/get-cody"
+            href="https://sourcegraph.com/sign-up?showEmail=true&returnTo=/post-sign-up"
             className={classNames(
                 'btn hover:sg-bg-hover-signup-button flex w-full items-center justify-center',
                 className
