@@ -291,7 +291,7 @@ const HomeHero: FunctionComponent = () => {
                                 alt="JetBrains (IntelliJ, WebStorm, etc.)"
                                 onHover={() => setHoveredImageText('JetBrains (IntelliJ, WebStorm, etc.)')}
                                 onMouseLeave={() => setHoveredImageText('')}
-                                eventName={EventName.JOIN_IDE_WAITLIST}
+                                eventName={EventName.DOWNLOAD_IDE}
                                 type="IntelliJ"
                                 className="rounded-[10px] border border-gray-200 border-opacity-20"
                             />
