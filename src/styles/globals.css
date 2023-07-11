@@ -381,7 +381,8 @@
         background: linear-gradient(0deg, rgba(219, 0, 255, 0.05) 0%, rgba(219, 0, 255, 0.05) 100%), radial-gradient(95.96% 68.15% at 95.66% -10.78%, rgba(229, 156, 255, 0.13) 0%, rgba(255, 255, 255, 0.00) 100%);
     }
     .sg-cody-feature-card-highlight {
-        background: radial-gradient(72.52% 69.69% at 49.93% 49.93%, rgba(0, 84, 130, 0.12) 0%, rgba(161, 18, 255, 0.11) 36.46%, rgba(161, 18, 255, 0.00) 62.50%);
+        background: radial-gradient(217.56% 209.07% at 49.93% 49.93%, rgba(0, 84, 130, 0.12) 0%, rgba(161, 18, 255, 0.11) 36.46%, rgba(161, 18, 255, 0.00) 62.50%);
+        filter: blur(40px);
     }
     .sg-bg-hover-link-button {
         background: radial-gradient(101.36% 319.74% at 56.46% 72.22%, rgba(0, 84, 130, 0.2) 0%, rgba(161, 18, 255, 0.2) 36.46%, rgba(161, 18, 255, 0) 68.23%), #FFFFFF;
