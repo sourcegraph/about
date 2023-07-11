@@ -22,8 +22,6 @@ Thank you for using Sourcegraph! This page lays out the basic terms and conditio
 
   - **[A self-hosted Sourcegraph instance](/terms/self-hosted)**: If you’d like to use a self-hosted Sourcegraph instance (e.g. one deployed via the `docker run` command in our [Quickstart](https://docs.sourcegraph.com)) to search, navigate, and analyze your code, rather than the Sourcegraph Cloud instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with your self-hosted instance, please see our [terms and conditions](/terms/self-hosted).
 
-  - **[Sourcegraph OSS](https://github.com/sourcegraph/sourcegraph/blob/main/LICENSE.apache)**: It is possible to run a version of Sourcegraph without some Enterprise features from our open source code available at https://github.com/sourcegraph/sourcegraph. If you want to follow the instructions there to build and run Sourcegraph OSS from source, please see the open source license (Apache 2.0) at https://github.com/sourcegraph/sourcegraph/blob/main/LICENSE.apache.
-
   - **[Government](/terms/gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you’re using our software as an employee or contractor of the U.S. Government, our [Supplemental Terms for U.S. Government Users](/terms/gov) apply. Those terms and conditions supplement these terms and conditions.
 </div>
 
