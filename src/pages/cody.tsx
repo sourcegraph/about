@@ -125,7 +125,6 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
     const handleOnClick = (eventName: string, type: string): void => {
         const eventArguments = {
             source: 'cody',
-            description: '',
             type
         }
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
