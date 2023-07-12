@@ -122,6 +122,15 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
         openModal('about-cody-deployment')
     }
 
+    const handleOnClick = (eventName: string, type: string): void => {
+        const eventArguments = {
+            source: 'cody',
+            type
+        }
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        getEventLogger().log(eventName, eventArguments, eventArguments)
+    }
+
     useEffect(() => {
         const eventArguments = {
             description: 'About - Cody page view',
@@ -248,6 +257,7 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                             <Link
                                 href="vscode:extension/sourcegraph.cody-ai"
                                 className="cody-platforms-bg-gradient flex w-full items-center justify-center gap-4 border border-white/[.04] rounded-lg py-4 px-6 text-white hover:sg-bg-hover-ide-extension-button"
+                                onClick={() => handleOnClick(EventName.DOWNLOAD_IDE, 'VS Code')}
                             >
                                 <img src="/icons/vscode.svg" height={34} width={34} alt="VScode Icon" />
                                 VS Code extension
@@ -256,6 +266,7 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                                 href="https://plugins.jetbrains.com/plugin/9682-sourcegraph"
                                 target='_blank'
                                 className="cody-platforms-bg-gradient flex w-full items-center justify-center gap-4 border border-white/[.04] rounded-lg py-4 px-6 text-white hover:sg-bg-hover-ide-extension-button"
+                                onClick={() => handleOnClick(EventName.DOWNLOAD_IDE, 'IntelliJ')}
                             >
                                 <img src="/icons/IntelliJ.svg" height={34} width={34} alt="IntelliJ Icon" />
                                 IntelliJ extension
