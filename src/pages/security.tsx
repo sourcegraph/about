@@ -288,9 +288,7 @@ const SecurityPage: FunctionComponent = () => (
                                             Software Bill of Materials and OSS usage
                                         </Heading>
                                         <p className="mt-4">
-                                            Sourcegraph is an OSS product licensed under Apache 2.0. We also make great
-                                            use of open source components and ship them as part of our application. Full
-                                            lists of tools and licenses can be found{' '}
+                                            A full list of tools and licenses can be found{' '}
                                             <Link
                                                 href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/tree/third-party-licenses"
                                                 title="here"
