@@ -38,8 +38,8 @@ export const GatedPageLayout: FunctionComponent<Props> = ({
             image: ogImage,
         }}
         headerColorTheme="dark"
-        childrenClassName="bg-gray-700"
-        displayChildrenUnderNav={true}
+        className="bg-gray-700"
+        heroAndHeaderClassName="!pt-[96px] md:!pt-[128px]"
     >
         {pageType === 'A' ? (
             <>
@@ -58,15 +58,15 @@ export const GatedPageLayout: FunctionComponent<Props> = ({
                             {description}
                         </Heading>
                     </div>
-                    <div className="sg-bg-whitepaper-image absolute bottom-[150px] top-0 right-0 hidden h-[490px] w-[510px] md:block" />
+                    <div className="sg-bg-whitepaper-image absolute bottom-[150px] top-0 right-0 h-[490px] w-[300px] md:w-[510px]" />
                     <img src={image} alt="Whitepaper" className="z-10 hidden md:block" />
                 </ContentSection>
                 <ContentSection
                     parentClassName="!py-0 relative z-10"
-                    className="pt-16 pb-24 xl:px-6"
+                    className="pt-16 pb-4 md:pb-12 xl:px-6"
                     background="white"
                 >
-                    <div className="flex flex-col justify-between gap-6 md:flex-row">
+                    <div className="flex flex-col-reverse justify-between gap-6 md:flex-row">
                         <div className="max-w-[628px]">{outlineContent}</div>
                         <div className="w-full rounded-lg border border-gray-500 bg-gray-100 pt-10 pb-1 pl-8 md:max-w-[580px]">
                             <Heading size="h4" className="mb-6">
@@ -78,7 +78,7 @@ export const GatedPageLayout: FunctionComponent<Props> = ({
                         </div>
                     </div>
 
-                    <Heading size="h2" className="mx-auto mt-[96px] max-w-2xl text-center">
+                    <Heading size="h2" className="mx-auto mt-[128px] max-w-2xl text-center md:mt-[96px]">
                         Sourcegraph is trusted by the world’s leading enterprises
                     </Heading>
                     <CustomerLogos monochrome={true} />
@@ -87,9 +87,9 @@ export const GatedPageLayout: FunctionComponent<Props> = ({
         ) : (
             <ContentSection
                 parentClassName="!py-0"
-                className="flex flex-col justify-between gap-[50px] pb-16 md:flex-row xl:px-6"
+                className="flex flex-col justify-between gap-[96px] pb-16 md:flex-row md:gap-[50px] xl:px-6"
             >
-                <div className="relative flex max-w-[662px] flex-col gap-[64px] py-8 text-white">
+                <div className="relative flex max-w-[662px] flex-col gap-[64px] pt-8 text-white md:py-8">
                     <div>
                         <Heading size="h6" className="">
                             {type}
@@ -101,7 +101,7 @@ export const GatedPageLayout: FunctionComponent<Props> = ({
                             {description}
                         </Heading>
                     </div>
-                    <div className="sg-bg-whitepaper-image absolute bottom-[100px] hidden h-[490px] w-[510px] md:block" />
+                    <div className="sg-bg-whitepaper-image absolute right-0 h-[490px] w-[300px] md:left-0 md:bottom-[100px] md:w-[510px]" />
                     <img src={image} alt="Whitepaper" className="z-10 hidden max-h-[309px]  max-w-[464px] md:block" />
                 </div>
 

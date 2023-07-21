@@ -10,7 +10,7 @@ export const ForesterTotalEconomicImpactPageA: FunctionComponent = () => (
         description="A commissioned study conducted by Forrester Consulting on behalf of Sourcegraph."
         image="/resources/forrester-whitepaper.svg"
         outlineContent={
-            <p className="text-lg text-gray-700">
+            <p className="mb-0 text-lg text-gray-700">
                 Developer organizations are increasingly focused on improving productivity, due to the high cost and
                 challenges of finding and retaining high-quality talent. Code intelligence platforms such as Sourcegraph
                 aid developers by providing developer-focused, featurerich, and high-speed code search and intelligence
