@@ -115,10 +115,6 @@ const ThankYouPage: NextPage<ThankYouProps> = ({ actionPage, pdfUrl }) => (
 export default ThankYouPage
 
 export const getStaticPaths: GetStaticPaths = () => {
-    if (!slugs) {
-        return { paths: [{ params: { slug: ['404'] } }], fallback: false }
-    }
-
     const paths = slugs.map(slug => ({ params: { slug: slug.split('/') } }))
 
     return {
@@ -128,5 +124,5 @@ export const getStaticPaths: GetStaticPaths = () => {
 }
 
 export const getStaticProps: GetStaticProps = ({ params }) => ({
-    props: (params?.slug && slugData[params?.slug[0]]) || {},
+    props: (params?.slug && slugData[params.slug[0]]) || {},
 })
