@@ -405,6 +405,9 @@
         background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(80, 51, 225, 0.70) 0%, rgba(161, 18, 255, 0.11) 100%);
         filter: blur(137px);
     }
+    .sg-bg-thank-you-page {
+        background: radial-gradient(77.59% 66.42% at 19.01% 113.38%, rgba(80, 49, 238, 0.70) 0%, rgba(161, 18, 255, 0.11) 100%);
+    }
 
     /* Used to define custom tailwind slide in animation */
     @keyframes slideFadeIn {

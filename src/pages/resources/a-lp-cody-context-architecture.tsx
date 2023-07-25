@@ -27,10 +27,8 @@ export const CodyContextArchitecturePageA: FunctionComponent = () => (
             </>
         }
         formId="39c8517d-3d63-4162-b777-6d0fb72973ed"
-        formInlineMessage={
-            'Thank you! <a style="text-decoration: underline;" href=\'https://about.sourcegraph.com/whitepaper/cody-context-architecture.pdf\' target="_blank">Download the report here.</a>'
-        }
         ogImage="https://about.sourcegraph.com/resources/cody-context-architecture-og.png"
+        actionPage="cody-context-architecture"
     />
 )
 
