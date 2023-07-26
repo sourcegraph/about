@@ -108,7 +108,7 @@ const PricingPage: FunctionComponent = () => (
                         </h3>
                     }
                     price="Contact us"
-                    priceDetail="Beta access available to Code Search customers"
+                    priceDetail="Usage-based pricing"
                     buttons={<ContactUsButton />}
                     beforeFeatures={<p>Everything in the free tier, plus:</p>}
                     features={[
@@ -116,16 +116,15 @@ const PricingPage: FunctionComponent = () => (
                         { topic: 'User management' },
                         { topic: 'Single-tenant deployment' },
                         { topic: 'Audit logging' },
-                        { topic: 'pooled organization usage' },
-                        { topic: 'Daily rate limits while in beta' },
-                        { topic: 'Web and API access' },                        
+                        { topic: 'No rate limits' },
+                        { topic: 'Web and API access' },
+                        { topic: 'Consolidated billing' },
                         { topic: 'Configurable LLMs' },
-                        { topic: 'Bring-your-own Key for Anthropic and OpenAI' },
                         { topic: '24/5 support' },
                     ]}
                     afterFeatures={
                         <p>
-                            Enterprise-wide license agreements and bring-your-own-key for
+                            Enterprise-wide license agreements, committed volume pricing, and bring-your-own-key for
                             Anthropic/OpenAI are available by request.
                         </p>
                     }
