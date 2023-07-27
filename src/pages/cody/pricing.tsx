@@ -116,19 +116,13 @@ const PricingPage: FunctionComponent = () => (
                         { topic: 'User management' },
                         { topic: 'Single-tenant deployment' },
                         { topic: 'Audit logging' },
-                        { topic: 'pooled organization usage' },
+                        { topic: 'Pooled organization usage' },
                         { topic: 'Daily rate limits while in beta' },
                         { topic: 'Web and API access' },                        
                         { topic: 'Configurable LLMs' },
                         { topic: 'Bring-your-own Key for Anthropic and OpenAI' },
                         { topic: '24/5 support' },
                     ]}
-                    afterFeatures={
-                        <p>
-                            Enterprise-wide license agreements and bring-your-own-key for
-                            Anthropic/OpenAI are available by request.
-                        </p>
-                    }
                     {...PLAN_COLORS.enterprise}
                 />
             </div>
