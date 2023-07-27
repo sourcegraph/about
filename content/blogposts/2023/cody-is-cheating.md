@@ -151,16 +151,12 @@ I don’t think Copilot today, in its current form, uses *any* fancy helper back
 I will talk more about Cody’s many other differentiators over Copilot in our next post, but for now, let’s focus on two:
 
 - Cody has a clear, differentiated, and defensible **code graph data moat**
-- Cody has a **pluggable LLM backend**
+- Cody has a **pluggable LLM backend**, with support for users bringing their own LLM license keys
 <br/>
 
 These differentiators mean that **no matter what happens in the AI race** and the clone wars, and no matter who wins, **Cody will always be your best coding assistant**.
 
-<p style={{textAlign: 'center'}}>*Cody* &nbsp; = &nbsp; *Sourcegraph* &nbsp; + &nbsp; *BYOLLM*</p>
-
-I also think that **self-hosted embeddings** are going to be a game-changer, and we’re working to make them available for Cody soon. You will no longer need to upload your code base to a cloud provider; all your IP assets can be embedded in your own secure environment.
-
-I hope that was useful! This entire analogy is credit to Greg Wester, our Enterprise Cody PM.
+<p style={{textAlign: 'center'}}>*Cody* &nbsp; = &nbsp; *Sourcegraph* &nbsp; + &nbsp; *LLM (BYOK)*</p>
 
 <br/>
 
