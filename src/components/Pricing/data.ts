@@ -26,6 +26,7 @@ export const ENTERPRISE_STARTER_FEATURES_OVERVIEW: FeatureCluster[] = [
         topic: 'Features',
         features: [
             'codeSearch',
+            'cody',
             'codeNavigation',
             'batchChanges',
             'codeInsights',
@@ -113,8 +114,8 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'A secure, robust GraphQL API for your repository and code data.',
     },
     cody: {
-        label: 'Cody (beta)',
-        description: 'A code-aware, AI programming assistant.',
+        label: 'Cody (Beta)',
+        description: 'A code-aware, AI programming assistant for writing, fixing, and optimizing code.',
     },
     ownership: {
         label: 'Code ownership',
