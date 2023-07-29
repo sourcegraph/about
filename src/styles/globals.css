@@ -400,6 +400,14 @@
     .sg-bg-hover-ide-extension-button {
         background: radial-gradient(376.40% 162.44% at 63.88% 64.06%, rgba(0, 84, 130, 0.20) 0%, rgba(161, 18, 255, 0.20) 36.46%, rgba(161, 18, 255, 0.00) 68.23%), linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), radial-gradient(95.96% 68.15% at 95.66% -10.78%, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.00) 100%);
     }
+    .sg-bg-whitepaper-image {
+        border-radius: 509.66px;
+        background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(80, 51, 225, 0.70) 0%, rgba(161, 18, 255, 0.11) 100%);
+        filter: blur(137px);
+    }
+    .sg-bg-thank-you-page {
+        background: radial-gradient(77.59% 66.42% at 19.01% 113.38%, rgba(80, 49, 238, 0.70) 0%, rgba(161, 18, 255, 0.11) 100%);
+    }
 
     /* Used to define custom tailwind slide in animation */
     @keyframes slideFadeIn {

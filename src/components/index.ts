@@ -61,6 +61,7 @@ export {
 export { Layout } from './Layout/Layout'
 export { ContentPage } from './ContentPage'
 export { GatedResourceLayout } from './GatedResourceLayout' // Webinars, Guides, Reports
+export { GatedPageLayout } from './GatedPageLayout'
 
 // Resources
 export { Filters, type Filter, Card, ResourceCard, resourceItems, type Resource, useFilters } from './Resources'
