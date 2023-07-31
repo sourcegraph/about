@@ -77,3 +77,7 @@ export { FeatureRoadMap } from './Own'
 
 // Cody
 export { CodyFeatureCard } from './CodyFeatureCard'
+export { CodySteps } from './cody/CodySteps'
+export { CodebaseAwareIntelligence } from './cody/CodebaseAwareIntelligence'
+export { AiGeneratedCode } from './cody/AiGeneratedCode'
+export { CodyTweets } from './cody/CodyTweets'

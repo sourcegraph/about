@@ -12,24 +12,24 @@ import {
     ExternalsAuth,
     EmailAuth,
     HubSpotForm,
+    PlayButton,
     CodySteps,
-    AiGeneratedCode,
     CodebaseAwareIntelligence,
+    AiGeneratedCode,
     CodyTweets,
-} from '../components'
-import { DemoVideo } from '../components/CodyVideo'
-import { useAuthModal } from '../context/AuthModalContext'
-import { EventName, getEventLogger } from '../hooks/eventLogger'
+} from '../../components'
+import { DemoVideo } from '../../components/DemoVideo'
+import { useAuthModal } from '../../context/AuthModalContext'
+import { EventName, getEventLogger } from '../../hooks/eventLogger'
+import { CODY_PAGE_TWEET_IDS } from '../constants'
 
-import { CODY_PAGE_TWEET_IDS } from './constants'
-
-import styles from '../styles/CustomHubspotForm.module.scss'
+import styles from '../../styles/CustomHubspotForm.module.scss'
 
 interface CodyProps {
     tweets: (Tweet | undefined)[]
 }
 
-const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
+const DemoCodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (description: string): void => {
@@ -70,116 +70,38 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                 image: 'https://about.sourcegraph.com/cody/cody-og.png',
             }}
             headerColorTheme="purple"
-            childrenClassName="sg-bg-gradient-cody"
-            displayChildrenUnderNav={true}
+            className="sg-bg-code-search"
         >
             {/* Hero Section */}
-            <ContentSection parentClassName="!py-0" className="pt-16 text-center md:pt-[10px]">
-                <div className="mx-auto max-w-[637px]">
-                    <div className="center flex items-center justify-center gap-x-4">
-                        <img src="/cody/cody-logo.png" alt="Cody Logo" className="h-[21px] w-[23px]" />
-                        <p className="mb-0 text-[28px] font-semibold text-white">Meet Cody,</p>
-                    </div>
-                    <Heading size="h1" className="mt-2 text-white md:!text-[69px] md:!leading-[81px]">
-                        The AI that knows your{' '}
-                        <span className="cody-heading bg-clip-text text-transparent"> entire codebase </span>
-                    </Heading>
-                    <Heading size="h4" className="mx-auto mt-6 max-w-[637px]  !font-normal text-gray-200">
-                        Cody answers code questions and writes code for you by reading your entire codebase and the code
-                        graph.
-                    </Heading>
-                    <p className="mt-8 text-[20px] font-semibold text-white">
-                        Sign up to get free access <span className="text-white">👇</span>
-                    </p>
-                    <div className="mt-4 flex flex-wrap justify-center gap-2">
-                        <ExternalsAuth
-                            className="w-fit justify-center !font-normal"
-                            authProvider="github"
-                            label="GitHub"
-                            source="about-cody"
-                        />
-                        <ExternalsAuth
-                            className="w-fit justify-center !font-normal"
-                            authProvider="gitlab"
-                            label="GitLab"
-                            source="about-cody"
-                        />
-                        <EmailAuth
-                            icon={true}
-                            className="sg-email-auth-btn h-12 w-fit border bg-white bg-opacity-10 text-lg !font-normal text-white"
-                            source="about-cody"
-                            label="Email"
-                        />
-                    </div>
-                    <p className="mt-4 text-[14px] text-violet-300 opacity-70">
-                        By registering, you agree to our{' '}
-                        <Link
-                            className="text-violet-300 underline"
-                            target="_blank"
-                            href="https://about.sourcegraph.com/terms"
+            <ContentSection parentClassName="!py-0" className="mb-2 md:mt-16">
+                <div className="flex flex-col justify-between gap-12  md:flex-row md:gap-6">
+                    <div className="md:mt-[56px]">
+                        <Heading
+                            size="h1"
+                            className="cody-heading max-w-[662px] bg-clip-text !text-[69px] !leading-[69px] !tracking-[-0.69px] text-transparent"
                         >
-                            Terms of Service
-                        </Link>{' '}
-                        and{' '}
-                        <Link
-                            className="text-violet-300 underline"
-                            target="_blank"
-                            href="https://about.sourcegraph.com/terms/privacy"
-                        >
-                            Privacy Policy
-                        </Link>
-                    </p>
+                            The AI that knows your entire codebase
+                        </Heading>
+                        <Heading size="h3" className="mt-8 max-w-[628px] text-white">
+                            Cody answers technical questions and writes code directly in your IDE, using your code graph
+                            for context and accuracy.
+                        </Heading>
+                    </div>
+                    <div className={classNames('max-w-[520px] md:mt-[80px] md:w-[520px]', styles.codyForm)}>
+                        <Heading size="h3" className="mb-[22px] text-white">
+                            Talk to an expert today
+                        </Heading>
+                        <HubSpotForm formId="255d54c8-65db-435e-b131-d8dc4ab9ea96" />
+                    </div>
                 </div>
-                <div className="mx-auto mt-12 w-full">
+                <div className="mx-auto mt-16 w-full md:mt-[96px]">
                     <DemoVideo
                         video="cody-promo-202306"
                         splash={true}
-                        className="mx-auto mt-8 w-full max-w-[1062px] rounded-lg bg-violet-750 drop-shadow-2xl"
+                        className="mx-auto mt-8 w-full max-w-[1062px] rounded-lg bg-violet-750  drop-shadow-2xl"
                         splashClassName="rounded-lg"
-                        showPlayButton={true}
-                        playIconClassName="opacity-100 text-white"
+                        playButton={<PlayButton title="Watch Cody write & fix code" time="4 min" ctaText="Watch now" />}
                     />
-                </div>
-
-                <Heading size="h2" className="mx-auto mt-12 max-w-[540px] !text-[36px] text-white md:mt-[96px]">
-                    We’re working to bring you Cody{' '}
-                    <span className="cody-text-gradient bg-clip-text text-transparent"> where you need it most </span>
-                </Heading>
-
-                <div className="mt-16 flex flex-col gap-16 text-[24px] font-semibold text-white">
-                    <CodySteps handleOpenModal={handleOpenModal} handleOnClick={handleOnClick} />
-                    <button
-                        type="button"
-                        onClick={() => handleOpenModal('Get started with cody for free button click')}
-                        className="btn btn-default-outlined w-fit self-center"
-                    >
-                        Get started with Cody for free
-                    </button>
-                </div>
-            </ContentSection>
-
-            <ContentSection
-                id="contact-form"
-                parentClassName="!py-0 !pt-20 md:!pt-[120px]"
-                className="cody-contact-form-wrapper rounded-lg"
-            >
-                <div className="flex flex-col gap-6 py-16 px-6 md:flex-row md:px-20 md:py-[96px] md:pr-[53px]">
-                    <div className="max-w-[614px]">
-                        <Heading size="h2" className="!text-[36px] text-white">
-                            Get Cody{' '}
-                            <span className="cody-text-gradient bg-clip-text text-transparent"> where you work </span>
-                        </Heading>
-                        <p className="mt-4 text-lg text-gray-200">
-                            Cody for Enterprise provides context-aware answers based on your own private codebase.
-                            Contact us through the form to learn more.
-                        </p>
-                    </div>
-                    <div className={classNames('md:min-w-[400px] xl:min-w-[554px]', styles.codyForm)}>
-                        <HubSpotForm
-                            formId="05e46684-9fbc-4c4d-b010-f661f247c4c6"
-                            inlineMessage="Thank you! We'll get back to you soon"
-                        />
-                    </div>
                 </div>
             </ContentSection>
 
@@ -187,7 +109,22 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
 
             <AiGeneratedCode />
 
-            <ContentSection parentClassName="text-center !pb-0 !pt-[112px]" className="-mb-[25px] md:-mb-[137px]">
+            <Heading
+                size="h2"
+                className="mx-auto mt-12 max-w-[540px] text-center !text-[36px] text-white md:mt-[208px]"
+            >
+                We’re working to bring you Cody{' '}
+                <span className="cody-text-gradient bg-clip-text text-transparent"> where you need it most </span>
+            </Heading>
+
+            <div className="mt-16 flex flex-col gap-16 text-[24px] font-semibold text-white">
+                <CodySteps handleOpenModal={handleOpenModal} handleOnClick={handleOnClick} />
+            </div>
+
+            <ContentSection
+                parentClassName="text-center !pb-0 pt-16 !md:pt-[96px]"
+                className="-mb-[25px] md:-mb-[137px]"
+            >
                 <Heading size="h2" className="text-white">
                     See what devs are building with Cody
                 </Heading>
@@ -201,7 +138,7 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
             >
                 <div className="max-w-[550px]">
                     <Heading size="h2" className="!text-4xl text-white">
-                        Try Cody for free
+                        Cody for personal use
                     </Heading>
                     <p className="mt-6 text-lg text-gray-200">
                         Cody is free for personal use in the Cody app and IDE extensions. Sign up to get access.
@@ -264,9 +201,6 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                         >
                             Get Cody for work
                         </Link>
-                        <Link href="/cody/pricing" className="mt-1 text-white">
-                            Pricing and plans
-                        </Link>
                     </div>
                 </div>
             </ContentSection>
@@ -290,4 +224,4 @@ export const getStaticProps: GetStaticProps<CodyProps> = async () => {
     }
 }
 
-export default CodyPage
+export default DemoCodyPage
