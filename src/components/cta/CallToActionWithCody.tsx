@@ -92,7 +92,7 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
                 <Link
                     href="/cody#contact-form"
                     title="Get Cody for Enterprise"
-                    className="rounded-[5px] border border-white py-2 px-6 text-white hover:bg-color-violet-600"
+                    className="hover:bg-color-violet-600 rounded-[5px] border border-white py-2 px-6 text-white"
                 >
                     Get Cody for Enterprise
                 </Link>

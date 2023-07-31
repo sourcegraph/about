@@ -95,9 +95,7 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
                     {isInViewport && animation}
                 </div>
             )}
-            {icon && (
-                <img className='mb-4' src={icon} height={38} width={38} alt="Icon" />
-            )}
+            {icon && <img className="mb-4" src={icon} height={38} width={38} alt="Icon" />}
             {heading && (
                 <Heading size="h2" className="mb-6 !text-4xl">
                     {heading}
