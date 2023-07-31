@@ -60,11 +60,12 @@ const LEADERS: {
         linkedin: 'https://www.linkedin.com/in/tammy-zhu-30040820/',
     },
     {
-        name: 'Greg Bastis',
-        image: '/staff/avatar-greg.jpg',
-        title: 'VP Sales',
-        bio: 'https://handbook.sourcegraph.com/company/team#greg-bastis',
-        linkedin: 'https://www.linkedin.com/in/gregbastis/',
+        name: 'Chris Sells',
+        image: '/staff/avatar-chris.jpg',
+        title: 'Head of Product',
+        bio: 'https://handbook.sourcegraph.com/team/#chris-sells',
+        github: 'https://github.com/csells',
+        linkedin: 'https://www.linkedin.com/in/csells/',
     },
     {
         name: 'Carly Jones',
