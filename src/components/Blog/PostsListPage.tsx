@@ -43,7 +43,7 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
                                 )}
                             >
                                 <Heading size="h5" className="mb-8 normal-case">
-                                    Subscribe headline
+                                    Subscribe to the latest news from Sourcegraph
                                 </Heading>
 
                                 <HubSpotForm formId="ab908b80-d1ed-44fd-968c-505c85ed72ac" inlineMessage='Thanks, you are now subscribed!' />
