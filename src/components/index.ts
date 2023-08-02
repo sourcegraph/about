@@ -31,6 +31,7 @@ export { TwoColumnSection } from './TwoColumnSection'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
 export { Tooltip } from './Tooltip'
+export { SearchInput } from './SearchInput'
 export {
     CodeCompletions,
     CodeSmells,

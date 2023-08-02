@@ -118,7 +118,7 @@ const PricingPage: FunctionComponent = () => (
                         { topic: 'Audit logging' },
                         { topic: 'Pooled organization usage' },
                         { topic: 'Daily rate limits while in beta' },
-                        { topic: 'Web and API access' },                        
+                        { topic: 'Web and API access' },
                         { topic: 'Configurable LLMs' },
                         { topic: 'Bring-your-own Key for Anthropic and OpenAI' },
                         { topic: '24/5 support' },
