@@ -91,7 +91,7 @@ const DemoCodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                         <Heading size="h3" className="mb-[22px] text-white">
                             Talk to an expert today
                         </Heading>
-                        <HubSpotForm formId="255d54c8-65db-435e-b131-d8dc4ab9ea96" />
+                        <HubSpotForm formId="255d54c8-65db-435e-b131-d8dc4ab9ea96" chiliPiper={true} />
                     </div>
                 </div>
                 <div className="mx-auto mt-16 w-full md:mt-[96px]">
