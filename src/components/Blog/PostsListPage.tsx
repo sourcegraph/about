@@ -34,7 +34,7 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
                         <BlogHeader {...blogInfo} variant="list" className="pt-0 md:pt-sm" />
 
                         <div className="flex flex-col-reverse gap-6 sm:flex-col md:gap-8">
-                            <SearchInput onSearch={setSearchTerm} label="SEARCH" className="bg-gray-50 p-6" />
+                            <SearchInput onSearch={setSearchTerm} label="SEARCH"  />
 
                             <div
                                 className={classNames(
@@ -46,7 +46,7 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
                                     Subscribe headline
                                 </Heading>
 
-                                <HubSpotForm formId="ab908b80-d1ed-44fd-968c-505c85ed72ac" />
+                                <HubSpotForm formId="ab908b80-d1ed-44fd-968c-505c85ed72ac" inlineMessage='Thanks, you are now subscribed!' />
                             </div>
                         </div>
                     </div>
