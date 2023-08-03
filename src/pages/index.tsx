@@ -190,15 +190,15 @@ const HomeHero: FunctionComponent = () => {
                             size="h1"
                             className="w-full text-center !text-[42px] leading-[65px] text-white md:max-w-[516px] md:text-start md:!text-[62px]"
                         >
-                            Find & fix code with <br />
+                            Find & fix code with<br />
                             <span className="sg-bg-gradient-infrared bg-clip-text text-transparent">
-                                Code Search plus AI
+                                Code Search + AI
                             </span>
                         </Heading>
 
                         <p className="mb-0 mt-6 text-center text-[26px] font-normal leading-[36px] text-gray-200 md:text-left">
                             Search & refactor code across any size codebase, plus write & fix code fast with Cody, the 
-                            AI that uses your codebase as context.
+                            AI that uses your code graph as context.
                         </p>
                         <div className="flex flex-col items-center md:items-start">
                             <p className="mt-9 text-xl font-semibold text-white">Sign up to get Cody for free 👇</p>
