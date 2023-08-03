@@ -190,18 +190,18 @@ const HomeHero: FunctionComponent = () => {
                             size="h1"
                             className="w-full text-center !text-[42px] leading-[65px] text-white md:max-w-[516px] md:text-start md:!text-[62px]"
                         >
-                            Meet Cody, your <br />
+                            Find & fix code with <br />
                             <span className="sg-bg-gradient-infrared bg-clip-text text-transparent">
-                                AI coding assistant
+                                Code Search plus AI
                             </span>
                         </Heading>
 
                         <p className="mb-0 mt-6 text-center text-[26px] font-normal leading-[36px] text-gray-200 md:text-left">
-                            Cody writes code and answers questions using your own code graph as context—even in complex
-                            codebases with multiple code hosts.
+                            Search & refactor code across any size codebase, plus write & fix code fast with Cody, the 
+                            AI that uses your codebase as context.
                         </p>
                         <div className="flex flex-col items-center md:items-start">
-                            <p className="mt-9 text-xl font-semibold text-white">Sign up to get free access 👇</p>
+                            <p className="mt-9 text-xl font-semibold text-white">Sign up to get Cody for free 👇</p>
                             <div className="flex max-w-[319px] flex-col">
                                 <div className="mb-2 flex gap-2">
                                     <ExternalsAuth
