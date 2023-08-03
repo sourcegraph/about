@@ -195,8 +195,8 @@ const DemoCodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                     </p>
                     <div className="flex items-center gap-sm">
                         <Link
-                            href="#contact-form"
-                            title="Cody access form"
+                            href="https://about.sourcegraph.com/contact/request-info"
+                            title="Cody info form"
                             className="btn btn-inverted-primary mt-1 w-fit"
                         >
                             Get Cody for work
