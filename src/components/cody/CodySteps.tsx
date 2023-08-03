@@ -27,7 +27,11 @@ export const CodySteps: FunctionComponent<CodeSnippetProps> = ({ handleOpenModal
             <CodyFeatureCard
                 plainOnMobile={false}
                 icon="/cody/cody-color-icon.png"
-                subHeading="Step 2: Install Cody app"
+                subHeading={
+                    <div>
+                        Step 2: Install Cody app <Badge size="small" text="BETA" color="light-gray" />
+                    </div>
+                }
                 description="The app is a free, lightweight, native desktop version of Sourcegraph that connects your local code to our AI coding assistant, Cody."
                 descriptionClassName="!text-lg"
                 onClick={() => window.location.replace('https://sourcegraph.com/get-cody')}

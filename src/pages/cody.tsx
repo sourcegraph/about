@@ -16,6 +16,7 @@ import {
     AiGeneratedCode,
     CodebaseAwareIntelligence,
     CodyTweets,
+    Badge,
 } from '../components'
 import { DemoVideo } from '../components/CodyVideo'
 import { useAuthModal } from '../context/AuthModalContext'
@@ -78,7 +79,8 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                 <div className="mx-auto max-w-[637px]">
                     <div className="center flex items-center justify-center gap-x-4">
                         <img src="/cody/cody-logo.png" alt="Cody Logo" className="h-[21px] w-[23px]" />
-                        <p className="mb-0 text-[28px] font-semibold text-white">Meet Cody,</p>
+                        <p className="mb-0 text-[28px] font-semibold text-white">Meet Cody </p>
+                        <Badge size="small" text="BETA" color="dark-blue" />
                     </div>
                     <Heading size="h1" className="mt-2 text-white md:!text-[69px] md:!leading-[81px]">
                         The AI that knows your{' '}
@@ -189,7 +191,7 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
 
             <ContentSection parentClassName="text-center !pb-0 !pt-[112px]" className="-mb-[25px] md:-mb-[137px]">
                 <Heading size="h2" className="text-white">
-                    See what devs are building with Cody
+                    See what devs are building with Cody (beta)
                 </Heading>
 
                 <CodyTweets tweets={tweets} />
@@ -201,7 +203,7 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
             >
                 <div className="max-w-[550px]">
                     <Heading size="h2" className="!text-4xl text-white">
-                        Try Cody for free
+                        Cody for personal use (beta)
                     </Heading>
                     <p className="mt-6 text-lg text-gray-200">
                         Cody is free for personal use in the Cody app and IDE extensions. Sign up to get access.
@@ -250,7 +252,7 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                     className="mt-8 flex max-w-[554px] flex-col border-t border-gray-500 pt-8 md:mt-0 md:border-l md:border-t-0 md:pl-8 md:pt-0"
                 >
                     <Heading size="h2" className="!text-4xl text-white">
-                        Cody for Enterprise
+                        Cody for Enterprise (beta)
                     </Heading>
                     <p className="mt-6 text-lg text-gray-200">
                         Cody for Enterprise provides context-aware answers based on your own private codebase. Contact

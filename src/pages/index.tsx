@@ -131,7 +131,7 @@ const Home: FunctionComponent<HomeProps> = ({ tweets }) => {
                 className="-mb-[25px] flex flex-col items-center justify-center md:-mb-[97px] md:pt-4"
             >
                 <Heading size="h3" className="mb-16 text-center !text-4xl font-semibold text-white md:mb-16">
-                    See what devs are saying about Cody
+                    See what devs are saying about Cody (beta)
                 </Heading>
                 <div className="relative -mt-[25px] grid w-full grid-cols-1 gap-x-6 md:grid-cols-2">
                     <div className="relative grid auto-rows-min grid-cols-1">
@@ -186,6 +186,7 @@ const HomeHero: FunctionComponent = () => {
             <ContentSection parentClassName="!py-0 !px-sm overflow-x-clip" className="relative pb-[55px] md:pb-0">
                 <div className="grid grid-cols-1 gap-x-4 gap-y-16  pt-16 pb-11 md:grid-cols-2 md:px-6 md:pt-32 md:pb-8">
                     <div className="hero-content mx-auto flex w-full max-w-[567px] flex-col items-center px-0 md:mx-0 md:items-start">
+                        <Badge size="small" text="BETA" color="dark-blue" />
                         <Heading
                             size="h1"
                             className="w-full text-center !text-[42px] leading-[65px] text-white md:max-w-[516px] md:text-start md:!text-[62px]"
@@ -360,7 +361,7 @@ const HomeHero: FunctionComponent = () => {
                     <img
                         loading="lazy"
                         alt="Home Illustartion"
-                        src="/home/glow-mobile.svg"
+                        src="/home/glow.svg"
                         className={classNames(
                             'py-6 transition-opacity duration-300 md:hidden',
                             isCodyGraphInView ? 'opacity-100 delay-[100ms]' : 'opacity-10'
@@ -371,7 +372,7 @@ const HomeHero: FunctionComponent = () => {
                     <img
                         loading="lazy"
                         alt="Home Illustartion"
-                        src="/home/glow-desktop.svg"
+                        src="/home/glow.svg"
                         className={classNames(
                             'mx-auto hidden h-[465px] pt-2 pb-[73px] transition-opacity duration-300 md:block md:w-[859px] lg:w-[1005px]',
                             isCodyGraphInView ? 'opacity-100 delay-[100ms]' : 'opacity-10'
@@ -384,7 +385,7 @@ const HomeHero: FunctionComponent = () => {
                     <div className="sg-bg-gradient-cip-cody mb-6 grid grid-cols-1 gap-x-[30px] overflow-hidden rounded-lg border border-white border-opacity-[0.04] md:grid-cols-2">
                         <div className="flex flex-col items-start gap-6 px-6 py-8 md:gap-4 md:py-[84.5px] md:pl-20">
                             <Heading size="h4" className="text-5xl text-white md:text-[52px]">
-                                Cody
+                                Cody <Badge size="small" text="BETA" color="light-gray" />
                             </Heading>
                             <p className="mb-0 text-[18px] text-gray-200">
                                 Write, fix, and maintain code with the most powerful & accurate AI coding assistant.
@@ -396,7 +397,7 @@ const HomeHero: FunctionComponent = () => {
                                 className="hover:sg-bg-hover-link-button flex items-center justify-center rounded-[5px] bg-white py-2 px-6 font-semibold text-violet-500"
                                 onClick={() => handleOnClick(EventName.CODY_LEARN_MORE_CTA)}
                             >
-                                Learn more about Cody
+                                Learn more about Cody (beta)
                             </Link>
                         </div>
                         <div className="mb-8 -mr-[64px] md:mb-0 md:mr-0">
