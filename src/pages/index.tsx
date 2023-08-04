@@ -186,7 +186,6 @@ const HomeHero: FunctionComponent = () => {
             <ContentSection parentClassName="!py-0 !px-sm overflow-x-clip" className="relative pb-[55px] md:pb-0">
                 <div className="grid grid-cols-1 gap-x-4 gap-y-16  pt-16 pb-11 md:grid-cols-2 md:px-6 md:pt-32 md:pb-8">
                     <div className="hero-content mx-auto flex w-full max-w-[567px] flex-col items-center px-0 md:mx-0 md:items-start">
-                        <Badge size="small" text="BETA" color="dark-blue" />
                         <Heading
                             size="h1"
                             className="w-full text-center !text-[42px] leading-[65px] text-white md:max-w-[516px] md:text-start md:!text-[62px]"
