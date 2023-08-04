@@ -34,7 +34,7 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
         <div className="z-10 flex flex-1 flex-col">
             <div className="max-w-[444px] md:self-end">
                 <Heading className="mb-[10px] !text-[36px] text-white" size="h2">
-                    Try Cody for free
+                    Try Cody for free (beta)
                 </Heading>
                 <p className="mb-0 text-lg text-gray-200">
                     Cody writes code and answers questions for you, speeding up work and keeping devs in flow.
@@ -82,7 +82,7 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
         <div className="my-[42px] border-b border-gray-400 md:my-0 md:mx-[42px] md:h-[266px] md:border-l" />
         <div className="z-10 flex flex-1 flex-col">
             <Heading size="h4" className="mb-4 text-white">
-                Cody for Enterprise
+                Cody for Enterprise (beta)
             </Heading>
             <p className="mb-8 max-w-[444px] text-lg text-gray-200">
                 Cody with Sourcegraph Enterprise uses the code graph to provide context-aware answers based on your own
