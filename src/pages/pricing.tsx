@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { ContentSection, CustomerLogos, Layout } from '../components'
+import { Badge, ContentSection, CustomerLogos, Layout } from '../components'
 
 const PricingPage: FunctionComponent = () => (
     <Layout
@@ -23,7 +23,7 @@ const PricingPage: FunctionComponent = () => (
                     className="btn btn-secondary-outlined flex items-center justify-center gap-2 text-3xl"
                     href="/cody/pricing"
                 >
-                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[27px] w-[27px]" /> Cody
+                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[27px] w-[27px]" /> Cody <Badge size="small" text="BETA" color="violet" />
                 </Link>
                 <Link
                     className="btn btn-secondary-outlined flex items-center justify-center gap-2 text-3xl"
