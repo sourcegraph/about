@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { ContentSection, Layout } from '../../components'
+import { Badge, ContentSection, Layout } from '../../components'
 import { PricingPlan } from '../../components/Pricing'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 
@@ -53,9 +53,9 @@ const PricingPage: FunctionComponent = () => (
         hero={
             <div className="container mx-auto pt-5xl text-center">
                 <h1 className="flex items-center justify-center gap-3">
-                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[48px] w-[48px]" /> Cody pricing
-                    and plans
+                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[48px] w-[48px]" /> Cody <Badge size="small" text="BETA" color="violet" />
                 </h1>
+                <p className="text-black text-3xl mt-6">pricing and plans</p>
             </div>
         }
     >
