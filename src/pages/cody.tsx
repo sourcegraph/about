@@ -284,6 +284,8 @@ export const getStaticProps: GetStaticProps<CodyProps> = async () => {
         const validTweets = tweetResponses
             .filter(response => response.status === 'fulfilled')
             .map(response => (response as PromiseFulfilledResult<Tweet>).value)
+            // FIXME: There is an error with twitter API => tweet is empty object now
+            .filter(tweet => Object.keys(tweet).length)
 
         return { props: { tweets: validTweets } }
     } catch (error) {
