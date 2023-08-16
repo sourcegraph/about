@@ -27,24 +27,24 @@ const Cloud: FunctionComponent = () => (
                 cta={
                     <div className="mx-auto flex w-full flex-col items-center justify-center gap-6 sm:flex sm:flex-row md:gap-4">
                         <Link
-                            className="btn btn-inverted-primary min-w-[135px] whitespace-nowrap"
+                            className="btn btn-inverted-primary min-w-[214px] whitespace-nowrap"
                             href="/contact/request-info"
-                            title="Get free trial"
+                            title="Try Sourcegraph for free"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation}
                             data-button-type="cta"
                         >
-                            Get free trial
+                            Try Sourcegraph for free
                         </Link>
                         <Link
-                            className="btn btn-outline-white inline-flex min-w-[135px] items-center whitespace-nowrap"
-                            href="/get-started"
-                            title="Get started"
+                            className="btn btn-outline-white inline-flex min-w-[214px] items-center whitespace-nowrap"
+                            href="/demo"
+                            title="Talk to an engineer"
                             data-button-style={buttonStyle.outline}
                             data-button-location={buttonLocation.hero}
                             data-button-type="cta"
                         >
-                            Get started
+                            Talk to an engineer
                         </Link>
                     </div>
                 }
@@ -218,9 +218,15 @@ const Cloud: FunctionComponent = () => (
                         source repositories.
                     </p>
                 </div>
-                <div className="flex w-full flex-col items-start justify-start gap-4 md:w-fit md:flex-row md:items-center md:justify-center">
+                <div className="flex w-full flex-col items-start justify-start gap-4 md:w-fit md:flex-row md:items-center md:justify-center lg:flex-col">
                     <Link
-                        className="btn btn-inverted-primary min-w-fit px-6 text-center text-violet-500 lg:px-4"
+                        className="btn btn-inverted-primary min-w-fit bg-white px-6 text-center text-blurple-400 hover:bg-blurple-400 hover:text-white"
+                        href="/contact/request-info"
+                    >
+                        Start for free
+                    </Link>
+                    <Link
+                        className="btn btn-link min-w-fit px-0 text-center text-white hover:text-blurple-200  md:px-6 lg:px-4"
                         href="/demo"
                     >
                         Meet with a product expert
