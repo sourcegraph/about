@@ -487,6 +487,8 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
         const validTweets = tweetResponses
             .filter(response => response.status === 'fulfilled')
             .map(response => (response as PromiseFulfilledResult<Tweet>).value)
+            // Filter out empty tweet
+            .filter(tweet => tweet && Object.keys(tweet).length)
 
         return { props: { tweets: validTweets } }
     } catch (error) {
