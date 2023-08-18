@@ -20,6 +20,7 @@ import {
 } from '../components'
 import { DemoVideo } from '../components/CodyVideo'
 import { useAuthModal } from '../context/AuthModalContext'
+// eslint-disable-next-line import/extensions
 import Tweets from '../data/tweets.json'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 

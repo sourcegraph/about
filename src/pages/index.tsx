@@ -21,6 +21,7 @@ import {
     Badge,
 } from '../components'
 import { breakpoints } from '../data/breakpoints'
+// eslint-disable-next-line import/extensions
 import Tweets from '../data/tweets.json'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 import { useInView } from '../hooks/useInView'
@@ -480,7 +481,7 @@ const AvailabilityIcon: React.FC<AvailabilityIconProps> = ({
     )
 }
 
-export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+export const getStaticProps: GetStaticProps<HomeProps> = () => {
     try {
         const tweets = HOME_PAGE_TWEET_IDS.map(tweetId => Tweets[tweetId] as any)
 

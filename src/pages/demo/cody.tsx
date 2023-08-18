@@ -20,8 +20,9 @@ import {
 } from '../../components'
 import { DemoVideo } from '../../components/DemoVideo'
 import { useAuthModal } from '../../context/AuthModalContext'
-import { EventName, getEventLogger } from '../../hooks/eventLogger'
+// eslint-disable-next-line import/extensions
 import Tweets from '../../data/tweets.json'
+import { EventName, getEventLogger } from '../../hooks/eventLogger'
 import { CODY_PAGE_TWEET_IDS } from '../constants'
 
 import styles from '../../styles/CustomHubspotForm.module.scss'
@@ -209,7 +210,7 @@ const DemoCodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
     )
 }
 
-export const getStaticProps: GetStaticProps<CodyProps> = async () => {
+export const getStaticProps: GetStaticProps<CodyProps> = () => {
     try {
         const tweets = CODY_PAGE_TWEET_IDS.map(tweetId => Tweets[tweetId] as any)
 
