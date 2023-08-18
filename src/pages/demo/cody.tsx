@@ -3,7 +3,7 @@ import { FunctionComponent, useEffect } from 'react'
 import classNames from 'classnames'
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
-import { Tweet, getTweet } from 'react-tweet/api'
+import { Tweet } from 'react-tweet/api'
 
 import {
     ContentSection,
@@ -21,6 +21,7 @@ import {
 import { DemoVideo } from '../../components/DemoVideo'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { EventName, getEventLogger } from '../../hooks/eventLogger'
+import Tweets from '../../data/tweets.json'
 import { CODY_PAGE_TWEET_IDS } from '../constants'
 
 import styles from '../../styles/CustomHubspotForm.module.scss'
@@ -210,16 +211,9 @@ const DemoCodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
 
 export const getStaticProps: GetStaticProps<CodyProps> = async () => {
     try {
-        const tweetPromises = CODY_PAGE_TWEET_IDS.map(tweetId => getTweet(tweetId))
-        const tweetResponses = await Promise.allSettled(tweetPromises)
+        const tweets = CODY_PAGE_TWEET_IDS.map(tweetId => Tweets[tweetId] as any)
 
-        const validTweets = tweetResponses
-            .filter(response => response.status === 'fulfilled')
-            .map(response => (response as PromiseFulfilledResult<Tweet>).value)
-            // Filter out empty tweet
-            .filter(tweet => tweet && Object.keys(tweet).length)
-
-        return { props: { tweets: validTweets } }
+        return { props: { tweets } }
     } catch (error) {
         console.error('Error fetching tweets:', error)
         return { props: { tweets: [] } }
