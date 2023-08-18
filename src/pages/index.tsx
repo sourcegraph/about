@@ -7,7 +7,7 @@ import PlusIcon from 'mdi-react/PlusIcon'
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
 import { EmbeddedTweet, TweetSkeleton } from 'react-tweet'
-import { Tweet, getTweet } from 'react-tweet/api'
+import { Tweet } from 'react-tweet/api'
 
 import {
     ContentSection,
@@ -21,6 +21,8 @@ import {
     Badge,
 } from '../components'
 import { breakpoints } from '../data/breakpoints'
+// eslint-disable-next-line import/extensions
+import Tweets from '../data/tweets.json'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 import { useInView } from '../hooks/useInView'
 import { useWindowWidth } from '../hooks/windowWidth'
@@ -479,16 +481,11 @@ const AvailabilityIcon: React.FC<AvailabilityIconProps> = ({
     )
 }
 
-export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+export const getStaticProps: GetStaticProps<HomeProps> = () => {
     try {
-        const tweetPromises = HOME_PAGE_TWEET_IDS.map(tweetId => getTweet(tweetId))
-        const tweetResponses = await Promise.allSettled(tweetPromises)
+        const tweets = HOME_PAGE_TWEET_IDS.map(tweetId => Tweets[tweetId] as any)
 
-        const validTweets = tweetResponses
-            .filter(response => response.status === 'fulfilled')
-            .map(response => (response as PromiseFulfilledResult<Tweet>).value)
-
-        return { props: { tweets: validTweets } }
+        return { props: { tweets } }
     } catch (error) {
         console.error('Error fetching tweets:', error)
         return { props: { tweets: [] } }

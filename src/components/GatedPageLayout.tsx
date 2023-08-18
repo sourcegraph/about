@@ -87,7 +87,11 @@ export const GatedPageLayout: FunctionComponent<Props> = ({
                                     Download the whitepaper
                                 </Heading>
                                 <div className={styles.gatedPageForm}>
-                                    <HubSpotForm formId={formId} onFormSubmitted={onFormSubmitted} />
+                                    <HubSpotForm
+                                        formId={formId}
+                                        onFormSubmitted={onFormSubmitted}
+                                        overrideFormShorten={true}
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -128,7 +132,7 @@ export const GatedPageLayout: FunctionComponent<Props> = ({
                             Download the whitepaper
                         </Heading>
                         <div className={styles.gatedPageForm}>
-                            <HubSpotForm formId={formId} onFormSubmitted={onFormSubmitted} />
+                            <HubSpotForm formId={formId} onFormSubmitted={onFormSubmitted} overrideFormShorten={true} />
                         </div>
                     </div>
                 </ContentSection>
