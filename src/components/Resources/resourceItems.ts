@@ -472,4 +472,15 @@ export const resourceItems: Resource[] = [
             'professional services',
         ],
     },
+    {
+        featured: false,
+        title: 'Cody: security and legal whitepaper',
+        link: '/whitepapers/cody-security-and-legal.pdf',
+        contentType: 'whitepaper',
+        subjects: ['cody'],
+        description:
+            "Learn more about the critical aspects of Cody's integration into enterprise environments, including security and legal considerations. Each section covers the current state, future state, and key discussion topics.",
+        publishDate: '2023-08-19T00:00:00Z',
+        keyword: ['cody', 'security', 'legal'],
+    },
 ]
