@@ -3,7 +3,7 @@ import { FunctionComponent, useEffect } from 'react'
 import classNames from 'classnames'
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
-import { Tweet, getTweet } from 'react-tweet/api'
+import { Tweet } from 'react-tweet/api'
 
 import {
     ContentSection,
@@ -20,6 +20,8 @@ import {
 } from '../components'
 import { DemoVideo } from '../components/CodyVideo'
 import { useAuthModal } from '../context/AuthModalContext'
+// eslint-disable-next-line import/extensions
+import Tweets from '../data/tweets.json'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 
 import { CODY_PAGE_TWEET_IDS } from './constants'
@@ -276,16 +278,11 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
     )
 }
 
-export const getStaticProps: GetStaticProps<CodyProps> = async () => {
+export const getStaticProps: GetStaticProps<CodyProps> = () => {
     try {
-        const tweetPromises = CODY_PAGE_TWEET_IDS.map(tweetId => getTweet(tweetId))
-        const tweetResponses = await Promise.allSettled(tweetPromises)
+        const tweets = CODY_PAGE_TWEET_IDS.map(tweetId => Tweets[tweetId] as any)
 
-        const validTweets = tweetResponses
-            .filter(response => response.status === 'fulfilled')
-            .map(response => (response as PromiseFulfilledResult<Tweet>).value)
-
-        return { props: { tweets: validTweets } }
+        return { props: { tweets } }
     } catch (error) {
         console.error('Error fetching tweets:', error)
         return { props: { tweets: [] } }
