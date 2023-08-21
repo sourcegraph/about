@@ -42,6 +42,16 @@ We’ve added a Cody Commands menu that is accessible in code via a keyboard sho
 
 The Code Smells command was updated with a prompt that is now programming language aware, and provides much more accurate recommendations for detecting problems with readability, maintainability, performance, and security. The command also now better handles cases where Cody doesn’t have any strong recommendations for improving the code.
 
+## Fix problems with Code Actions
+
+You can now ask Cody to fix and explain any problems highlighted by VS Code’s Code Actions:
+
+<img width="373" alt="Screenshot 2023-08-21 at 9 35 59 pm" src="https://github.com/sourcegraph/cody/assets/153/7cc293a8-08f1-4869-a3ad-bc6f938fef05">
+
+You can also use it directly from your Problems tab, including asking Cody to fix any number of the problems in parallel:
+
+<img width="500" alt="" src="https://github.com/sourcegraph/cody/assets/153/7d4fc58e-9fa7-431b-8b80-6a351f597545">
+
 ## Chat UI Improvements
 
 We’ve updated the chat message input so it now correctly handles multi-line wrapping, includes a button for showing the command list, correctly shows a keyboard focus outline, and has better support for high contrast themes:
