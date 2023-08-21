@@ -14,7 +14,9 @@ heroImage: https://github.com/sourcegraph/about/assets/153/d7f7c5b0-2655-44f4-80
 socialImage: https://github.com/sourcegraph/about/assets/153/d7f7c5b0-2655-44f4-8084-aa76d8fce00c
 ---
 
-We’ve just released [Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.8, with improved recipes (now commands), a refreshed UI, and faster autocomplete. Here’s what’s new in v0.8, and a few of the improvements we’ve made since the [June release](https://about.sourcegraph.com/blog/cody-in-sourcegraph-5-1).
+We’ve just released [Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.8, with faster autocomplete, improved recipes (now commands), new chat layout, improved code smell detection, custom commands, and more.
+
+Here’s what’s new in v0.8, and a few of the improvements we’ve made since the [June release](https://about.sourcegraph.com/blog/cody-in-sourcegraph-5-1).
 
 ### Improved autocomplete
 
