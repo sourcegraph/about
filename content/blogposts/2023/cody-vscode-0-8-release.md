@@ -1,5 +1,5 @@
 ---
-title: "Cody for VS Code v0.8 Release"
+title: "Cody for VS Code v0.8 release"
 authors:
   - name: Kalan
     url: https://handbook.sourcegraph.com/team/#kalan-chan
@@ -10,8 +10,8 @@ description: "Faster autocomplete, improved recipes (now commands), new chat lay
 tags: [blog]
 slug: "cody-vscode-0-8-release"
 published: true
-heroImage: https://github.com/sourcegraph/about/assets/153/478566e5-e6d8-4a7c-b17f-54df0801f597
-socialImage: https://github.com/sourcegraph/about/assets/153/478566e5-e6d8-4a7c-b17f-54df0801f597
+heroImage: https://github.com/sourcegraph/about/assets/153/d7f7c5b0-2655-44f4-8084-aa76d8fce00c
+socialImage: https://github.com/sourcegraph/about/assets/153/d7f7c5b0-2655-44f4-8084-aa76d8fce00c
 ---
 
 We’ve just released [Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.8, with improved recipes (now commands), a refreshed UI, and faster autocomplete. Here’s what’s new in v0.8, and a few of the improvements we’ve made since the [June release](https://about.sourcegraph.com/blog/cody-in-sourcegraph-5-1).
@@ -76,7 +76,7 @@ The new Editor Title Icon setting adds a Cody button in the top right corner of 
 
 ### Changelog
 
-See the [changelog](https://github.com/sourcegraph/cody/blob/main/vscode/CHANGELOG.md) for a complete list of changes, or the notes on the [GitHub release](https://github.com/sourcegraph/cody/releases).
+See the [changelog](https://github.com/sourcegraph/cody/blob/main/vscode/CHANGELOG.md) and [GitHub releases](https://github.com/sourcegraph/cody/releases) for a complete list of changes.
 
 ### Thank you
 
