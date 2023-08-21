@@ -30,27 +30,27 @@ This release builds on a number of autocomplete improvements we’ve made since 
 
 We’ve updated the chat layout to be more compact and focused on the conversation. The input now correctly handles multi-line wrapping, has a Commands button, and better supports high contrast themes:
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-new-chat-layout.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:263}} />
+<img alt="Screenshot of new Cody v0.8 chat layout" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-new-chat-layout.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:263}} />
 
 ### Recipes are now Commands
 
 Recipes are now called commands, and they have a new home in the redesigned chat input. Instead of the big blue buttons you now run commands using a command-line/REPL-like interface in the chat window:
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-commands.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:251}} />
+<img alt="Screenshot of new Cody v0.8 command popover" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-commands.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:251}} />
 
 You can also invoke commands directly in your code editor using the new Cody command (keyboard shortcut: Option+c on Mac, or Alt+c on Windows):
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-commands2.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:570}} />
+<img alt="Screenshot of new Cody v0.8 command menu" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-commands2.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:570}} />
 
-### Code Action support
+### Code Actions support
 
 You can now ask Cody to fix and explain any problems highlighted by VS Code’s Code Actions:
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-code-actions.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:373}} />
+<img alt="Screenshot of new Cody v0.8 Code Actions support" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-code-actions.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:373}} />
 
 You can also use it directly from your Problems tab:
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-code-actions2.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:500}} />
+<img alt="Screenshot of new Cody v0.8 Code Actions support in the problems tab" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-code-actions2.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:500}} />
 
 ### Improved Code Smell detection
 
@@ -60,7 +60,7 @@ The Code Smells command uses a new prompt that is programming language aware, an
 
 Included in the changes from recipes to commands, we included support for adding your own custom commands.
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-custom-commands.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:700}} />
+<img alt="Screenshot of new Cody v0.8 custom command" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-custom-commands.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:700}} />
 
 Custom Commands are defined in JSON and allow you to call out to CLI tools, write custom prompts, and configure what context is sent to the LLM. They can be stored locally and available across all your projects, or checked into your repository to share with teammates. To test them out and provide feedback, see the [Custom Commands documentation](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MzA1NQ==#experimental-feature-editor-title-icon-cec8e75d-14ed-46c0-95e7-527fe520b32a).
 
@@ -68,13 +68,13 @@ Custom Commands are defined in JSON and allow you to call out to CLI tools, writ
 
 The new Code Lens setting places a Cody button above every top-level function in a file, and let’s you run command commands on the block of code:
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-code-lens.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:450}} />
+<img alt="Screenshot of new Cody v0.8 code lens" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-code-lens.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:450}} />
 
 ### Editor Title Icon (Experimental)
 
 The new Editor Title Icon setting adds a Cody button in the top right corner of your editor for easier access to the Code Commands menu:
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-title-icon.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:350}} />
+<img alt="Screenshot of new Cody v0.8 editor title icon" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-title-icon.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:350}} />
 
 ### Changelog
 
