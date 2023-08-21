@@ -40,7 +40,7 @@ Recipes are now called commands, and they have a new home in the redesigned chat
 
 You can also invoke commands directly in your code editor using the new Cody command (keyboard shortcut: Option+c on Mac, or Alt+c on Windows):
 
-<img src=https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-commands2.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:570}} />
+<img src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-commands2.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:570}} />
 
 ### Code Action support
 
