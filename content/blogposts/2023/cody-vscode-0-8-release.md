@@ -52,6 +52,9 @@ You can also use it directly from your Problems tab:
 
 <img alt="Screenshot of new Cody v0.8 Code Actions support in the problems tab" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-code-actions2.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:500}} />
 
+### Improved Generate Unit Tests
+The Generate unit tests command now uses context from file dependencies and existing tests as examples to generate higher quality test stubs. It is recommended to set up test files before running the command to get optimal results.
+
 ### Improved Code Smell detection
 
 The Code Smells command uses a new prompt that is programming language aware, and provides better advice on whether code is idiomatic. It also provides more accurate recommendations for readability, maintainability, performance, and security.
