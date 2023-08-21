@@ -10,8 +10,8 @@ description: "Cody Update //todo - improvement"
 tags: [blog]
 slug: "cody-vscode-0-8-release"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/all-you-need-is-cody.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/all-you-need-is-cody.png
+heroImage: https://github.com/sourcegraph/about/assets/153/478566e5-e6d8-4a7c-b17f-54df0801f597
+socialImage: https://github.com/sourcegraph/about/assets/153/478566e5-e6d8-4a7c-b17f-54df0801f597
 ---
 
 We’ve just released [Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.8, with improved recipes (now commands), a refreshed UI, and faster autocomplete. Here’s what’s new in v0.8, and a few of the improvements we’ve made since the [June release](https://about.sourcegraph.com/blog/cody-in-sourcegraph-5-1).
