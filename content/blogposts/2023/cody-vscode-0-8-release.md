@@ -1,14 +1,14 @@
 ---
-title: "Cody Update //todo - title improvement"
+title: "Cody for VS Code v0.8 Release"
 authors:
   - name: Kalan
     url: https://handbook.sourcegraph.com/team/#kalan-chan
   - name: Tim
     url: https://handbook.sourcegraph.com/team/#tim-lucas
-publishDate: 2023-08-14T10:00-07:00
+publishDate: 2023-08-20T10:00-07:00
 description: "Cody Update //todo - improvement"
 tags: [blog]
-slug: 'Cody-update'
+slug: "cody-vscode-0-8-release"
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/all-you-need-is-cody.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/all-you-need-is-cody.png
