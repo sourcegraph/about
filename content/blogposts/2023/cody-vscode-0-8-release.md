@@ -78,7 +78,7 @@ The new Code Lens setting places a Cody button above every top-level function in
 
 ### Editor Title Icon (Experimental)
 
-The new Editor Title Icon setting adds a Cody button in the top right corner of your editor for easier access to the Code Commands menu:
+The new Editor Title Icon setting (off by default) adds a Cody button in the top right corner of your editor for easier access to the CodY Commands menu:
 
 <img alt="Screenshot of new Cody v0.8 editor title icon" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-title-icon.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:350}} />
 
