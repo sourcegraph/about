@@ -18,7 +18,7 @@ We’ve just released [Cody for VS Code](https://marketplace.visualstudio.com/it
 
 Here’s what’s new in v0.8, and a few of the improvements we’ve made since the [June release](https://about.sourcegraph.com/blog/cody-in-sourcegraph-5-1). 
 
-See [here](https://github.com/sourcegraph/cody/releases/tag/vscode-v0.8.0) for the full v0.8 changelog.
+See [here](https://github.com/sourcegraph/cody/releases/tag/vscode-v0.8.0) for the full v0.8 release notes.
 
 ### Improved autocomplete
 
