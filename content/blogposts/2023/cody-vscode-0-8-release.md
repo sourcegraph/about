@@ -22,7 +22,8 @@ Here’s what’s new in v0.8, and a few of the improvements we’ve made since 
 
 This release builds on a number of autocomplete improvements we’ve made since June:
 
-* Reduced p75 response time by 40% to &lt;1300ms, with autocomplete now using Claude Instant 1.2
+* Reduced single-line completion p75 response time by 40% to &lt;1300ms
+* Autocomplete is now using Claude Instant 1.2
 * Increased response quality by 10% (as measured by our acceptance rate) by better use of embeddings and code snippets for context, using the latest coding models, and new post-processing heuristics (e.g. avoiding duplicate code and unhelpful bracket insertion)
 * Added a new autocomplete cache for more deterministic and stable results
 
