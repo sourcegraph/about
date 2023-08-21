@@ -480,7 +480,7 @@ export const resourceItems: Resource[] = [
         subjects: ['cody'],
         description:
             "Learn more about the critical aspects of Cody's integration into enterprise environments, including security and legal considerations. Each section covers the current state, future state, and key discussion topics.",
-        publishDate: '2023-08-19T00:00:00Z',
+        publishDate: '2023-08-21T00:00:00Z',
         keyword: ['cody', 'security', 'legal'],
     },
 ]
