@@ -6,7 +6,7 @@ authors:
   - name: Tim
     url: https://handbook.sourcegraph.com/team/#tim-lucas
 publishDate: 2023-08-20T10:00-07:00
-description: "Cody Update //todo - improvement"
+description: "Faster autocomplete, improved recipes (now commands), new chat layout, improved code smell detection, custom commands, and more."
 tags: [blog]
 slug: "cody-vscode-0-8-release"
 published: true
