@@ -30,23 +30,28 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
         <Layout meta={blogInfo.meta}>
             <div className="mx-auto max-w-screen-xl px-sm md:mt-5">
                 <div className="flex flex-col gap-8 sm:flex-row">
-                    <div className="w-full flex-grow-0 sm:max-w-[300px] md:mb-16 md:max-w-[400px] md:pt-6">
-                        <BlogHeader {...blogInfo} variant="list" className="pt-0 md:pt-sm" />
+                    <div>
+                        <div className="sticky top-5 sm:max-w-[300px] md:mb-16 md:max-w-[320px] md:pt-6">
+                            <BlogHeader {...blogInfo} variant="list" className="pt-0 md:pt-sm" />
 
-                        <div className="flex flex-col-reverse gap-6 sm:flex-col md:gap-8">
-                            <SearchInput onSearch={setSearchTerm} label="SEARCH"  />
+                            <div className="flex flex-col-reverse gap-6 sm:flex-col md:gap-8">
+                                <SearchInput onSearch={setSearchTerm} label="SEARCH" />
 
-                            <div
-                                className={classNames(
-                                    styles.blogForm,
-                                    'flex flex-col items-start rounded-2xl bg-gray-100 p-6'
-                                )}
-                            >
-                                <Heading size="h5" className="mb-8 normal-case">
-                                    Subscribe to the latest news from Sourcegraph
-                                </Heading>
+                                <div
+                                    className={classNames(
+                                        styles.blogForm,
+                                        'flex flex-col items-start rounded-2xl bg-gray-100 p-6'
+                                    )}
+                                >
+                                    <Heading size="h5" className="mb-8 normal-case">
+                                        Subscribe to the latest news from Sourcegraph
+                                    </Heading>
 
-                                <HubSpotForm formId="ab908b80-d1ed-44fd-968c-505c85ed72ac" inlineMessage='Thanks, you are now subscribed!' />
+                                    <HubSpotForm
+                                        formId="ab908b80-d1ed-44fd-968c-505c85ed72ac"
+                                        inlineMessage="Thanks, you are now subscribed!"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
