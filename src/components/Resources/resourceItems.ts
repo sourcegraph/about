@@ -483,4 +483,14 @@ export const resourceItems: Resource[] = [
         publishDate: '2023-08-21T00:00:00Z',
         keyword: ['cody', 'security', 'legal'],
     },
+    {
+        featured: false,
+        title: 'Why Sourcegraph’s single-tenant cloud instance is the most secure way to deploy Sourcegraph',
+        link: '/guides/single-tenant-cloud-instance-is-the-most-secure-way-to-deploy-Sourcegraph.pdf',
+        contentType: 'guide',
+        subjects: [],
+        description: "Learn why Sourcegraph's single-tenant cloud instance provides the highest level of security.",
+        publishDate: '2023-08-21T00:00:00Z',
+        keyword: ['cloud', 'deploy', 'deployment'],
+    },
 ]
