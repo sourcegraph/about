@@ -89,7 +89,7 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                         <span className="cody-heading bg-clip-text text-transparent"> entire codebase </span>
                     </Heading>
                     <Heading size="h4" className="mx-auto mt-6 max-w-[637px]  !font-normal text-gray-200">
-                        Cody writes, understands, and fixes code with autocomplete + chat, using your codebase and the code graph for context.
+                        Cody writes, understands, and fixes code with autocomplete + chat, using your code graph for context.
                     </Heading>
                     <p className="mt-8 text-[20px] font-semibold text-white">
                         Get started <span className="text-white">👇</span>
@@ -161,9 +161,9 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                 </div>
             </ContentSection>
 
-            <CodebaseAwareIntelligence />
-
             <AiGeneratedCode />
+            
+            <CodebaseAwareIntelligence />
 
             <ContentSection
                 id="contact-form"

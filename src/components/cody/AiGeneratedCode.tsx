@@ -8,16 +8,16 @@ import { CodeCompletions, UnitTest } from './cody-illustrations'
 
 const aiGeneratedCodeFeatures = [
     {
+        animation: <CodeCompletions />,
+        heading: 'Autocomplete',
+        description:
+            'Cody autocompletes single lines, or whole functions, in any programming language, configuration file, or documentation. It’s powered by the latest instant LLM models for accuracy and performance.',
+    },
+    {
         animation: <UnitTest />,
         heading: 'Unit tests',
         description:
             'Cody writes unit tests for you, saving you time and letting you stay focused on building software. Highlight a code block and trigger the Generate a unit test recipe; Cody will write a unit test ready to be pasted into your code.',
-    },
-    {
-        animation: <CodeCompletions />,
-        heading: 'Code completions',
-        description:
-            'Cody can suggest code while you code. Start writing code and Cody will suggest the next few lines for you. Choose to accept it, or open the command palette and click Cody: View Suggestions to see various code snippets Cody suggests using.',
     },
     {
         heading: 'Inline code fixes',
