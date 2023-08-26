@@ -84,16 +84,15 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                         <p className="mb-0 text-[28px] font-semibold text-white">Meet Cody </p>
                         <Badge size="small" text="BETA" color="dark-blue" />
                     </div>
-                    <Heading size="h1" className="mt-2 text-white md:!text-[69px] md:!leading-[81px]">
-                        The AI that knows your{' '}
+                    <Heading size="h1" className="mt-2 text-white md:!text-[46px] md:!leading-[81px]">
+                        We're building the only AI that knows your{' '}
                         <span className="cody-heading bg-clip-text text-transparent"> entire codebase </span>
                     </Heading>
                     <Heading size="h4" className="mx-auto mt-6 max-w-[637px]  !font-normal text-gray-200">
-                        Cody answers code questions and writes code for you by reading your entire codebase and the code
-                        graph.
+                        Cody writes, understands, and fixes code with autocomplete + chat, using your codebase and the code graph for context.
                     </Heading>
                     <p className="mt-8 text-[20px] font-semibold text-white">
-                        Sign up to get free access <span className="text-white">👇</span>
+                        Get started <span className="text-white">👇</span>
                     </p>
                     <div className="mt-4 flex flex-wrap justify-center gap-2">
                         <ExternalsAuth
@@ -162,6 +161,10 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                 </div>
             </ContentSection>
 
+            <CodebaseAwareIntelligence />
+
+            <AiGeneratedCode />
+
             <ContentSection
                 id="contact-form"
                 parentClassName="!py-0 !pt-20 md:!pt-[120px]"
@@ -186,10 +189,6 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                     </div>
                 </div>
             </ContentSection>
-
-            <CodebaseAwareIntelligence />
-
-            <AiGeneratedCode />
 
             <ContentSection parentClassName="text-center !pb-0 !pt-[112px]" className="-mb-[25px] md:-mb-[137px]">
                 <Heading size="h2" className="text-white">
