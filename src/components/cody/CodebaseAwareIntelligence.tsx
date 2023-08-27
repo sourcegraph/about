@@ -17,6 +17,12 @@ const codebaseAwareIntelligenceFeatures = [
             'Cody can explain what code is doing at a high level or in detail in conversational language.',
     },
     {
+        animation: <UnitTest />,
+        heading: 'Unit tests',
+        description:
+            'Cody writes unit tests for you with a single click, saving you time so you can stay focused on shipping software.',
+    },
+    {
         animation: <CodeSmells />,
         heading: 'Code smells',
         description:
@@ -24,15 +30,9 @@ const codebaseAwareIntelligenceFeatures = [
     },
     {
         animation: <SummarizeCode />,
-        heading: 'Summarize recent code changes',
+        heading: 'Summaries of recent code change',
         description:
-            'Cody is able to reference recent diffs to tell you about recent changes to your code, generating a summary of recent changes.',
-    },
-    {
-        animation: <UnitTest />,
-        heading: 'Unit tests',
-        description:
-            'Cody writes unit tests for you with a single click, saving you time and letting you stay focused on shipping software.',
+            'Cody is able to reference diffs to tell you about recent changes to your code, generating a summary of changes.',
     },
 ]
 
@@ -44,7 +44,7 @@ export const CodebaseAwareIntelligence: FunctionComponent = () => (
         >
             <div className="border-t border-gray-500 pt-12 text-left">
                 <Heading size="h2" className="!text-[36px] text-white">
-                    Codebase-aware chat and commands
+                    Codebase-aware <b>chat and commands</b>
                 </Heading>
                 <p className="my-[30px] max-w-[572px] text-lg text-gray-200">
                     Ask Cody questions in the chat view or run pre-built commands for common actions.

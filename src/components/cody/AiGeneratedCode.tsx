@@ -32,7 +32,7 @@ export const AiGeneratedCode: FunctionComponent = () => (
         >
             <div className="border-t border-gray-500 pt-12 text-left">
                 <Heading size="h2" className="!text-[36px] text-white">
-                    Code faster with AI-assisted autocomplete
+                    Code faster with AI-assisted <b>autocomplete</b>
                 </Heading>
                 <p className="mt-[30px] max-w-[572px] text-lg text-gray-200">
                     Cody suggests completions as you type using context from your code. It’s powered by the latest instant LLM models for accuracy and performance.
