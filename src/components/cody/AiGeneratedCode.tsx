@@ -15,9 +15,9 @@ const aiGeneratedCodeFeatures = [
     },
     {
         animation: <CodeCompletions />,
-        heading: 'Code completions',
+        heading: 'Autocomplete',
         description:
-            'Cody can suggest code while you code. Start writing code and Cody will suggest the next few lines for you. Choose to accept it, or open the command palette and click Cody: View Suggestions to see various code snippets Cody suggests using.',
+            'Cody makes suggestions while you code. Start typing code and Cody will suggest the next few lines for you. Choose to accept it, or open the command palette and click Cody: View Suggestions to see various code snippets Cody suggests using.',
     },
     {
         heading: 'Inline code fixes',
