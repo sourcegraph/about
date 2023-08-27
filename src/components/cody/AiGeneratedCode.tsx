@@ -1,39 +1,27 @@
 import { FunctionComponent } from 'react'
 
+import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
+import Link from 'next/link'
+
 import { CodyFeatureCard } from '../CodyFeatureCard'
 import { ContentSection } from '../ContentSection'
 import { Heading } from '../Heading'
 
-import { CodeCompletions, UnitTest } from './cody-illustrations'
+import { CodeCompletions } from './cody-illustrations'
 
 const aiGeneratedCodeFeatures = [
-    {
-        animation: <UnitTest />,
-        heading: 'Unit tests',
-        description:
-            'Cody writes unit tests for you, saving you time and letting you stay focused on building software. Highlight a code block and trigger the unit test command; Cody will write a unit test ready to be pasted into your code.',
-    },
     {
         animation: <CodeCompletions />,
         heading: 'Autocomplete',
         description:
-            'Cody makes suggestions while you code. Start typing code and Cody will suggest the next few lines for you. Choose to accept it, or open the command palette and click Cody: View Suggestions to see various code snippets Cody suggests using.',
+            'Cody autocompletes single lines, or whole functions, in any programming language, configuration file, or documentation.',
     },
-    {
-        heading: 'Inline code fixes',
-        description:
-            'Cody edits and improves code directly using inline instructions. Simply tell what you want Cody it to do, then hit "Apply" after Cody generates a change.',
-    },
-    {
-        heading: 'Documentation generation',
-        description:
-            'Cody can read and understand your code, which means it can also write documentation for you. Highlight a snippet of code—for example, a function or class—and Cody can generate a docstring for it.',
-    },
-    {
-        heading: 'Code generation',
-        description:
-            'Cody generates new code on request via the chat. You can ask Cody to write boilerplate code, API calls, or even specific code based on your instruction and requirements.',
-    },
+    // {
+    //     animation: <DebuggingAssistance />,
+    //     heading: 'Debugging',
+    //     description:
+    //         'Cody helps debug errors and suggest solutions to fix code.',
+    // },
 ]
 
 export const AiGeneratedCode: FunctionComponent = () => (
@@ -44,14 +32,22 @@ export const AiGeneratedCode: FunctionComponent = () => (
         >
             <div className="border-t border-gray-500 pt-12 text-left">
                 <Heading size="h2" className="!text-[36px] text-white">
-                    AI-generated code
+                    Code faster with AI-assisted <b>autocomplete</b>
                 </Heading>
                 <p className="mt-[30px] max-w-[572px] text-lg text-gray-200">
-                    Cody uses knowledge of your codebase to write and fix code. Generate everything from boilerplate
-                    code to API resolvers that rely on the context and style of your codebase. You can even ask Cody to
-                    fix code blocks for errors, readability, or unhandled edge cases, and Cody will make changes
-                    directly in your working file.
+                    Cody suggests completions as you type using context from your code. It’s powered by the latest instant LLM models for accuracy and performance.
                 </p>
+                <p className="mt-[30px] max-w-[572px] text-lg text-gray-200">
+                    Autocomplete supports any programming language because it uses LLMs trained on broad data, and it 
+                    works great with Python, Go, JavaScript, and TypeScript code.
+                </p>
+                <Link
+                    href="https://docs.sourcegraph.com/cody"
+                    className="inline-flex items-center whitespace-nowrap font-semibold text-white"
+                    title="See the Cody docs"
+                >
+                    See the Cody docs <ChevronRightIcon className="ml-[3px]" />
+                </Link>
             </div>
 
             <div className="h-fit max-w-[625px] overflow-hidden rounded-lg bg-violet-750 drop-shadow-xl md:w-[50%] md:min-w-[450px]">
@@ -66,14 +62,14 @@ export const AiGeneratedCode: FunctionComponent = () => (
                 >
                     <source
                         type="video/mp4"
-                        src="https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_inline_June23.mp4"
+                        src="https://storage.googleapis.com/sourcegraph-assets/cody/website_august2023/autocomplete_inline.mp4"
                         data-cookieconsent="ignore"
                     />
                 </video>
             </div>
         </ContentSection>
         <ContentSection parentClassName="!py-0" className="mt-16">
-            <div className="grid grid-cols-1 justify-between gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-2 md:gap-y-9">
+            <div className="flex justify-center">
                 {aiGeneratedCodeFeatures.slice(0, 2).map(({ description, heading, animation }) => (
                     <CodyFeatureCard
                         key={heading}
@@ -81,7 +77,7 @@ export const AiGeneratedCode: FunctionComponent = () => (
                         subHeading={heading}
                         animation={animation}
                         descriptionClassName="text-sm"
-                        className="!max-w-full"
+                        className="!max-w-2xl"
                     />
                 ))}
             </div>

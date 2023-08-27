@@ -84,16 +84,15 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                         <p className="mb-0 text-[28px] font-semibold text-white">Meet Cody </p>
                         <Badge size="small" text="BETA" color="dark-blue" />
                     </div>
-                    <Heading size="h1" className="mt-2 text-white md:!text-[69px] md:!leading-[81px]">
-                        The AI that knows your{' '}
+                    <Heading size="h1" className="mt-2 text-white md:!text-[48px] md:!leading-[81px]">
+                        We're building the only AI that knows your{' '}
                         <span className="cody-heading bg-clip-text text-transparent"> entire codebase </span>
                     </Heading>
                     <Heading size="h4" className="mx-auto mt-6 max-w-[637px]  !font-normal text-gray-200">
-                        Cody answers code questions and writes code for you by reading your entire codebase and the code
-                        graph.
+                        Cody writes, understands, and fixes code with autocomplete and chat, using your code graph for context and accuracy.
                     </Heading>
                     <p className="mt-8 text-[20px] font-semibold text-white">
-                        Sign up to get free access <span className="text-white">👇</span>
+                        Get started <span className="text-white">👇</span>
                     </p>
                     <div className="mt-4 flex flex-wrap justify-center gap-2">
                         <ExternalsAuth
@@ -146,8 +145,8 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                 </div>
 
                 <Heading size="h2" className="mx-auto mt-12 max-w-[540px] !text-[36px] text-white md:mt-[96px]">
-                    We’re working to bring you Cody{' '}
-                    <span className="cody-text-gradient bg-clip-text text-transparent"> where you need it most </span>
+                    We're bringing Cody to{' '}
+                    <p><span className="cody-text-gradient bg-clip-text text-transparent"> your favorite IDEs </span></p>
                 </Heading>
 
                 <div className="mt-16 flex flex-col gap-16 text-[24px] font-semibold text-white">
@@ -161,6 +160,10 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                     </button>
                 </div>
             </ContentSection>
+
+            <AiGeneratedCode />
+            
+            <CodebaseAwareIntelligence />
 
             <ContentSection
                 id="contact-form"
@@ -187,13 +190,9 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                 </div>
             </ContentSection>
 
-            <CodebaseAwareIntelligence />
-
-            <AiGeneratedCode />
-
             <ContentSection parentClassName="text-center !pb-0 !pt-[112px]" className="-mb-[25px] md:-mb-[137px]">
                 <Heading size="h2" className="text-white">
-                    See what devs are building with Cody (beta)
+                    See what devs are building with Cody
                 </Heading>
 
                 <CodyTweets tweets={tweets} />
@@ -205,7 +204,7 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
             >
                 <div className="max-w-[550px]">
                     <Heading size="h2" className="!text-4xl text-white">
-                        Cody for personal use (beta)
+                        Cody for personal use <Badge size="small" text="BETA" color="dark-blue" />
                     </Heading>
                     <p className="mt-6 text-lg text-gray-200">
                         Cody is free for personal use in the Cody app and IDE extensions. Sign up to get access.
@@ -254,7 +253,7 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                     className="mt-8 flex max-w-[554px] flex-col border-t border-gray-500 pt-8 md:mt-0 md:border-l md:border-t-0 md:pl-8 md:pt-0"
                 >
                     <Heading size="h2" className="!text-4xl text-white">
-                        Cody for Enterprise (beta)
+                        Cody for Enterprise <Badge size="small" text="BETA" color="dark-blue" />
                     </Heading>
                     <p className="mt-6 text-lg text-gray-200">
                         Cody for Enterprise provides context-aware answers based on your own private codebase. Contact
