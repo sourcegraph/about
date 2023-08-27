@@ -44,13 +44,14 @@ export const AiGeneratedCode: FunctionComponent = () => (
         >
             <div className="border-t border-gray-500 pt-12 text-left">
                 <Heading size="h2" className="!text-[36px] text-white">
-                    AI-generated code
+                    Code faster with AI-assisted autocomplete
                 </Heading>
                 <p className="mt-[30px] max-w-[572px] text-lg text-gray-200">
-                    Cody uses knowledge of your codebase to write and fix code. Generate everything from boilerplate
-                    code to API resolvers that rely on the context and style of your codebase. You can even ask Cody to
-                    fix code blocks for errors, readability, or unhandled edge cases, and Cody will make changes
-                    directly in your working file.
+                    Cody makes single-line and multi-line suggestions as you type. Every day, Cody helps developers write {'>'}25,000 lines of code.
+                </p>
+                <p className="mt-[30px] max-w-[572px] text-lg text-gray-200">
+                Cody supports any programming language because it uses LLMs trained on broad data, and it 
+                works great with Python, Go, JavaScript, and TypeScript code.
                 </p>
             </div>
 
@@ -66,7 +67,7 @@ export const AiGeneratedCode: FunctionComponent = () => (
                 >
                     <source
                         type="video/mp4"
-                        src="https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_inline_June23.mp4"
+                        src="https://storage.googleapis.com/sourcegraph-assets/cody/website_august2023/autocomplete_inline.mp4"
                         data-cookieconsent="ignore"
                     />
                 </video>

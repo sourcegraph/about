@@ -59,12 +59,15 @@ export const CodebaseAwareIntelligence: FunctionComponent = () => (
         >
             <div className="border-t border-gray-500 pt-12 text-left">
                 <Heading size="h2" className="!text-[36px] text-white">
-                    Codebase-aware intelligence
+                    Codebase-aware chat and commands
                 </Heading>
                 <p className="my-[30px] max-w-[572px] text-lg text-gray-200">
-                    Answer questions about both general programming topics and your specific codebase from right inside
-                    your editor. Cody knows about your local code and can learn from the code graph and documentation
-                    inside your organization to do just that.
+                    Ask Cody questions in the chat view, or inline with code, 
+                    and it will use Sourcegraph’s code graph to answer using knowledge of 
+                    your entire codebase.
+                </p>
+                <p className="my-[30px] max-w-[572px] text-lg text-gray-200">
+                    We’re experimenting with several methods of context retrieval to improve Cody’s accuracy, including embeddings, keyword search, and hybrid search.
                 </p>
                 <Link
                     href="https://docs.sourcegraph.com/cody"
@@ -87,7 +90,7 @@ export const CodebaseAwareIntelligence: FunctionComponent = () => (
                 >
                     <source
                         type="video/mp4"
-                        src="https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_explain_June23.mp4"
+                        src="https://storage.googleapis.com/sourcegraph-assets/cody/website_august2023/Context_Chat.mp4"
                         data-cookieconsent="ignore"
                     />
                 </video>
