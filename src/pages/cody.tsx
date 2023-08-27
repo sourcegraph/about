@@ -174,7 +174,7 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                     <div className="max-w-[614px]">
                         <Heading size="h2" className="!text-[36px] text-white">
                             Get Cody{' '}
-                            <span className="cody-text-gradient bg-clip-text text-transparent"> where you work </span>
+                            <span className="cody-text-gradient bg-clip-text text-transparent"> for Enterprise </span>
                         </Heading>
                         <p className="mt-4 text-lg text-gray-200">
                             Cody for Enterprise provides context-aware answers based on your own private codebase.
