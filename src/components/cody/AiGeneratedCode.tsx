@@ -7,7 +7,7 @@ import { CodyFeatureCard } from '../CodyFeatureCard'
 import { ContentSection } from '../ContentSection'
 import { Heading } from '../Heading'
 
-import { CodeCompletions, DebuggingAssistance, UnitTest } from './cody-illustrations'
+import { CodeCompletions, DebuggingAssistance } from './cody-illustrations'
 
 const aiGeneratedCodeFeatures = [
     {
@@ -69,7 +69,7 @@ export const AiGeneratedCode: FunctionComponent = () => (
             </div>
         </ContentSection>
         <ContentSection parentClassName="!py-0" className="mt-16">
-            <div className="grid grid-cols-1 justify-between gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-2 md:gap-y-9">
+            <div className="grid grid-cols-1 justify-between gap-x-6 gap-y-6 sm:grid-cols-3 md:grid-cols-2 md:gap-y-9">
                 {aiGeneratedCodeFeatures.slice(0, 2).map(({ description, heading, animation }) => (
                     <CodyFeatureCard
                         key={heading}

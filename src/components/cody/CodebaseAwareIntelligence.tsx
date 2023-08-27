@@ -7,7 +7,7 @@ import { CodyFeatureCard } from '../CodyFeatureCard'
 import { ContentSection } from '../ContentSection'
 import { Heading } from '../Heading'
 
-import { CodeSmells, DebuggingAssistance, ExplainCode, SummarizeCode, UnitTest } from './cody-illustrations'
+import { CodeSmells, ExplainCode, SummarizeCode, UnitTest } from './cody-illustrations'
 
 const codebaseAwareIntelligenceFeatures = [
     {
