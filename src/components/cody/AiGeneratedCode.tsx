@@ -7,7 +7,7 @@ import { CodyFeatureCard } from '../CodyFeatureCard'
 import { ContentSection } from '../ContentSection'
 import { Heading } from '../Heading'
 
-import { CodeCompletions, DebuggingAssistance } from './cody-illustrations'
+import { CodeCompletions } from './cody-illustrations'
 
 const aiGeneratedCodeFeatures = [
     {
