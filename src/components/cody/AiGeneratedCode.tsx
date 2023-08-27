@@ -11,18 +11,18 @@ const aiGeneratedCodeFeatures = [
         animation: <UnitTest />,
         heading: 'Unit tests',
         description:
-            'Cody writes unit tests for you, saving you time and letting you stay focused on building software. Highlight a code block and trigger the Generate a unit test recipe; Cody will write a unit test ready to be pasted into your code.',
+            'Cody writes unit tests for you, saving you time and letting you stay focused on building software. Highlight a code block and trigger the unit test command; Cody will write a unit test ready to be pasted into your code.',
     },
     {
         animation: <CodeCompletions />,
-        heading: 'Code completions',
+        heading: 'Autocomplete',
         description:
-            'Cody can suggest code while you code. Start writing code and Cody will suggest the next few lines for you. Choose to accept it, or open the command palette and click Cody: View Suggestions to see various code snippets Cody suggests using.',
+            'Cody makes suggestions while you code. Start typing code and Cody will suggest the next few lines for you. Choose to accept it, or open the command palette and click Cody: View Suggestions to see various code snippets Cody suggests using.',
     },
     {
         heading: 'Inline code fixes',
         description:
-            'Cody edits and improves code directly using inline instructions. Simply type what you want Cody to do above or below a block of Cody and hit the Fixup hotkey; Cody will directly edit that code within your editor, saving you the need to copy and paste code from the chat.',
+            'Cody edits and improves code directly using inline instructions. Simply tell what you want Cody it to do, then hit "Apply" after Cody generates a change.',
     },
     {
         heading: 'Documentation generation',

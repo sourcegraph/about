@@ -32,12 +32,12 @@ const codebaseAwareIntelligenceFeatures = [
         animation: <DebuggingAssistance />,
         heading: 'Debugging assistance',
         description:
-            'Cody can help you debug and improve your code. Pass in a code snippet to the Cody chat and request a specific fix—such as handing for a new edge case—and Cody will provide a rewritten code suggestion.',
+            'Cody can help you debug and improve your code. Pass in a code snippet to the Cody chat and request a specific fix—such as handling for a new edge case—and Cody will provide a rewritten code suggestion.',
     },
     {
         heading: 'Translate language',
         description:
-            'Cody translates selected between programming languages. You can feed code snippets to Cody—for example, a certain function—and Cody can translate that code, providing you with a code snippet of another language with the same functionality.',
+            'Cody translates code between programming languages. You can feed code snippets to Cody—for example, a certain function—and Cody can translate that code, providing you with a code snippet of another language with the same functionality.',
     },
     {
         heading: 'Code navigation',
