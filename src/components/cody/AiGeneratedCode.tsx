@@ -1,10 +1,13 @@
 import { FunctionComponent } from 'react'
 
+import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
+import Link from 'next/link'
+
 import { CodyFeatureCard } from '../CodyFeatureCard'
 import { ContentSection } from '../ContentSection'
 import { Heading } from '../Heading'
 
-import { CodeCompletions, UnitTest } from './cody-illustrations'
+import { CodeCompletions, DebuggingAssistance, UnitTest } from './cody-illustrations'
 
 const aiGeneratedCodeFeatures = [
     {
@@ -14,25 +17,10 @@ const aiGeneratedCodeFeatures = [
             'Cody autocompletes single lines, or whole functions, in any programming language, configuration file, or documentation. It’s powered by the latest instant LLM models for accuracy and performance.',
     },
     {
-        animation: <UnitTest />,
-        heading: 'Unit tests',
+        animation: <DebuggingAssistance />,
+        heading: 'Debugging',
         description:
             'Cody writes unit tests for you, saving you time and letting you stay focused on building software. Highlight a code block and trigger the Generate a unit test recipe; Cody will write a unit test ready to be pasted into your code.',
-    },
-    {
-        heading: 'Inline code fixes',
-        description:
-            'Cody edits and improves code directly using inline instructions. Simply type what you want Cody to do above or below a block of Cody and hit the Fixup hotkey; Cody will directly edit that code within your editor, saving you the need to copy and paste code from the chat.',
-    },
-    {
-        heading: 'Documentation generation',
-        description:
-            'Cody can read and understand your code, which means it can also write documentation for you. Highlight a snippet of code—for example, a function or class—and Cody can generate a docstring for it.',
-    },
-    {
-        heading: 'Code generation',
-        description:
-            'Cody generates new code on request via the chat. You can ask Cody to write boilerplate code, API calls, or even specific code based on your instruction and requirements.',
     },
 ]
 
@@ -53,6 +41,13 @@ export const AiGeneratedCode: FunctionComponent = () => (
                 Cody supports any programming language because it uses LLMs trained on broad data, and it 
                 works great with Python, Go, JavaScript, and TypeScript code.
                 </p>
+                <Link
+                    href="https://docs.sourcegraph.com/cody"
+                    className="inline-flex items-center whitespace-nowrap font-semibold text-white"
+                    title="See the Cody docs"
+                >
+                    See the Cody docs <ChevronRightIcon className="ml-[3px]" />
+                </Link>
             </div>
 
             <div className="h-fit max-w-[625px] overflow-hidden rounded-lg bg-violet-750 drop-shadow-xl md:w-[50%] md:min-w-[450px]">

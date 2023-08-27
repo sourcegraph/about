@@ -7,47 +7,32 @@ import { CodyFeatureCard } from '../CodyFeatureCard'
 import { ContentSection } from '../ContentSection'
 import { Heading } from '../Heading'
 
-import { CodeSmells, DebuggingAssistance, ExplainCode, SummarizeCode } from './cody-illustrations'
+import { CodeSmells, DebuggingAssistance, ExplainCode, SummarizeCode, UnitTest } from './cody-illustrations'
 
 const codebaseAwareIntelligenceFeatures = [
     {
         animation: <ExplainCode />,
         heading: 'Code explanation',
         description:
-            'Cody can explain what code is doing—at a high level or in detail. Highlight any code block or an entire file and Cody will explain what’s happening in conversational language.',
+            'Cody can explain what code is doing at a high level or in detail in conversational language.',
     },
     {
         animation: <CodeSmells />,
         heading: 'Code smells',
         description:
-            'Cody can act as a pair programmer and analyze code blocks for code smells, potential bugs, and unhandled errors. Cody will point out issues in selected code such as magic numbers, unhandled edge cases, or unclear variables names, with suggestions to fix those issues.',
+            'Cody can act as a pair programmer and analyze code blocks for code smells, such as unhandled edge cases, unsafe patterns, or unclear variables names, with suggestions to fix those issues.',
     },
     {
         animation: <SummarizeCode />,
         heading: 'Summarize recent code changes',
         description:
-            'Cody is able to reference recent diffs to tell you about recent changes to your code. Cody can generate summaries of changes to an entire repository over the last day or week or summarize the changes specific to a selected file.',
+            'Cody is able to reference recent diffs to tell you about recent changes to your code, generating a summary of recent changes.',
     },
     {
-        animation: <DebuggingAssistance />,
-        heading: 'Debugging assistance',
+        animation: <UnitTest />,
+        heading: 'Unit tests',
         description:
-            'Cody can help you debug and improve your code. Pass in a code snippet to the Cody chat and request a specific fix—such as handing for a new edge case—and Cody will provide a rewritten code suggestion.',
-    },
-    {
-        heading: 'Translate language',
-        description:
-            'Cody translates selected between programming languages. You can feed code snippets to Cody—for example, a certain function—and Cody can translate that code, providing you with a code snippet of another language with the same functionality.',
-    },
-    {
-        heading: 'Code navigation',
-        description:
-            'Cody can help you find functions & components from around your codebase. Ask Cody where a certain component is defined—such as a webapp navbar, or an API schema—and Cody will point you to the file where it lives.',
-    },
-    {
-        heading: 'Reference tracking',
-        description:
-            'Cody knows where all your functions are referenced throughout your code. Ask Cody to find where a specific function is referenced and it will give you the main files where it’s referenced.',
+            'Cody writes unit tests for you with a single click, saving you time and letting you stay focused on shipping software.',
     },
 ]
 
@@ -62,19 +47,19 @@ export const CodebaseAwareIntelligence: FunctionComponent = () => (
                     Codebase-aware chat and commands
                 </Heading>
                 <p className="my-[30px] max-w-[572px] text-lg text-gray-200">
-                    Ask Cody questions in the chat view, or inline with code, 
-                    and it will use Sourcegraph’s code graph to answer using knowledge of 
-                    your entire codebase.
+                    Ask Cody questions in the chat view or run pre-built commands for common actions.
+                    Cody will use Sourcegraph’s code graph to answer using knowledge of 
+                    your codebase.
                 </p>
                 <p className="my-[30px] max-w-[572px] text-lg text-gray-200">
                     We’re experimenting with several methods of context retrieval to improve Cody’s accuracy, including embeddings, keyword search, and hybrid search.
                 </p>
                 <Link
-                    href="https://docs.sourcegraph.com/cody"
+                    href="https://about.sourcegraph.com/whitepaper/cody-context-architecture.pdf"
                     className="inline-flex items-center whitespace-nowrap font-semibold text-white"
-                    title="See the Cody docs"
+                    title="Read about Cody's context-aware architecture"
                 >
-                    See the Cody docs <ChevronRightIcon className="ml-[3px]" />
+                    Read about Cody's context-aware architecture <ChevronRightIcon className="ml-[3px]" />
                 </Link>
             </div>
 

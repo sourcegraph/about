@@ -145,8 +145,8 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                 </div>
 
                 <Heading size="h2" className="mx-auto mt-12 max-w-[540px] !text-[36px] text-white md:mt-[96px]">
-                    We’re working to bring you Cody{' '}
-                    <span className="cody-text-gradient bg-clip-text text-transparent"> where you need it most </span>
+                    We're bringing Cody to{' '}
+                    <p><span className="cody-text-gradient bg-clip-text text-transparent"> your favorite IDEs </span></p>
                 </Heading>
 
                 <div className="mt-16 flex flex-col gap-16 text-[24px] font-semibold text-white">
