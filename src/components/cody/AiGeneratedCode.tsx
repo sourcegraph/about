@@ -14,14 +14,14 @@ const aiGeneratedCodeFeatures = [
         animation: <CodeCompletions />,
         heading: 'Autocomplete',
         description:
-            'Cody autocompletes single lines, or whole functions, in any programming language, configuration file, or documentation. It’s powered by the latest instant LLM models for accuracy and performance.',
+            'Cody autocompletes single lines, or whole functions, in any programming language, configuration file, or documentation.',
     },
-    {
-        animation: <DebuggingAssistance />,
-        heading: 'Debugging',
-        description:
-            'Cody writes unit tests for you, saving you time and letting you stay focused on building software. Highlight a code block and trigger the Generate a unit test recipe; Cody will write a unit test ready to be pasted into your code.',
-    },
+    // {
+    //     animation: <DebuggingAssistance />,
+    //     heading: 'Debugging',
+    //     description:
+    //         'Cody helps debug errors and suggest solutions to fix code.',
+    // },
 ]
 
 export const AiGeneratedCode: FunctionComponent = () => (
@@ -35,11 +35,11 @@ export const AiGeneratedCode: FunctionComponent = () => (
                     Code faster with AI-assisted autocomplete
                 </Heading>
                 <p className="mt-[30px] max-w-[572px] text-lg text-gray-200">
-                    Cody makes single-line and multi-line suggestions as you type. Every day, Cody helps developers write {'>'}25,000 lines of code.
+                    Cody suggests completions as you type using context from your code. It’s powered by the latest instant LLM models for accuracy and performance.
                 </p>
                 <p className="mt-[30px] max-w-[572px] text-lg text-gray-200">
-                Cody supports any programming language because it uses LLMs trained on broad data, and it 
-                works great with Python, Go, JavaScript, and TypeScript code.
+                    Autocomplete supports any programming language because it uses LLMs trained on broad data, and it 
+                    works great with Python, Go, JavaScript, and TypeScript code.
                 </p>
                 <Link
                     href="https://docs.sourcegraph.com/cody"
@@ -69,7 +69,7 @@ export const AiGeneratedCode: FunctionComponent = () => (
             </div>
         </ContentSection>
         <ContentSection parentClassName="!py-0" className="mt-16">
-            <div className="grid grid-cols-1 justify-between gap-x-6 gap-y-6 sm:grid-cols-3 md:grid-cols-2 md:gap-y-9">
+            <div className="flex justify-center">
                 {aiGeneratedCodeFeatures.slice(0, 2).map(({ description, heading, animation }) => (
                     <CodyFeatureCard
                         key={heading}
@@ -77,7 +77,7 @@ export const AiGeneratedCode: FunctionComponent = () => (
                         subHeading={heading}
                         animation={animation}
                         descriptionClassName="text-sm"
-                        className="!max-w-full"
+                        className="!max-w-2xl"
                     />
                 ))}
             </div>
