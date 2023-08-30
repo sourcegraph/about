@@ -90,10 +90,10 @@ We have no indication that any of this data was viewed, modified, or copied, but
 
 As soon as we understood the scope of the incident we took the following steps:
 
-- We identified the malicious account and fully revoked its access
-- We proactively rotated a subset of Sourcegraph customer license keys that may have been viewed
-- We temporarily reduced the rate limits for all free community users
-- We created new processes and tests and will continue to monitor for malicious activity and abuse
+- Identified the malicious account and fully revoked its access
+- Proactively rotated a subset of Sourcegraph customer license keys that may have been viewed
+- Temporarily reduced the rate limits for all free community users
+- Created new processes and tests and will continue to monitor for malicious activity and abuse
 
 By expanding our secret scanning through additional static analysis tests, we will ensure we can better detect and prevent this kind of leak in the future.
 
