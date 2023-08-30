@@ -115,12 +115,12 @@ No private customer data or code was accessible.
 
 If you are part of the subset of customers whose Sourcegraph license keys may have been accessed, your account team will reach out with steps and a new license key as soon as possible. _Note: The Sourcegraph license key does not enable any access to a customer instance._
 
-For free-tier users with Sourcegraph.com account: No action is needed.
+For free-tier users with a Sourcegraph.com account: No action is needed.
 
 **What email addresses were viewable?**
 
-- Paid customers: When a Sourcegraph customer receives their license, they provide one email address to associate with their license key. Only this recipient email is stored in Sourcegraph.com and no other customer emails were accessible
-- Community users: Sourcegraph.com account email addresses
+- Paid customers: When a Sourcegraph customer receives their license, they provide one email address to associate with their license key. Only this recipient email is stored in Sourcegraph.com and no other customer emails were accessible.
+- Community users: Sourcegraph.com account email addresses.
 
 **I have more questions, who can I contact?**
 
