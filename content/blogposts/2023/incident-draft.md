@@ -71,16 +71,14 @@ As more users discovered the proxy app, they created free Sourcegraph.com accoun
 
 The impact of the malicious user having admin access was limited to a subset of:
 
-**Paid Customers**
-
-- The license key recipient’s name and email address
-- Sourcegraph license key 
+- **Paid Customers**
+  - The license key recipient’s name and email address
+  - Sourcegraph license key
 
 <br/>
 
-**Free-Tier Community Users**
-
-- Email addresses
+- **Free-Tier Community Users**
+  - Email addresses
 
 <br/>
 
