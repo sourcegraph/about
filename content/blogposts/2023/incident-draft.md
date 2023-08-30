@@ -16,7 +16,7 @@ published: true
 
 - Paid customers: 
   - The license key recipient’s name and email address. 
-  - A subset of customers’ Sourcegraph license keys may have been accessed (note that license keys _do not_ enable access to Sourcegraph instances). We are reaching out directly to those who may have been impacted to rotate license keys. 
+  - A small subset of customers’ Sourcegraph license keys may have been accessed (note that license keys _do not_ enable access to Sourcegraph instances). We are reaching out directly to those who may have been impacted to rotate license keys. 
 - Community users: 
   - Sourcegraph account email addresses. No action is required. 
 
@@ -28,7 +28,7 @@ published: true
 
 ### Background
 
-Sourcegraph experienced a security incident on August 30, 2023 where a malicious actor used a leaked admin access token in our public Sourcegraph instance at Sourcegraph.com. The malicious external user used their privileges to increase API rate limits for users. 
+Sourcegraph experienced a security incident on August 30, 2023 where a malicious actor used a leaked admin access token in our public Sourcegraph instance at Sourcegraph.com. The malicious external user used their privileges to increase API rate limits for a small number of users. 
 
 On August 30, 2023 our team noticed a significant increase in API usage and began investigating the cause. 
 
@@ -41,13 +41,13 @@ On August 30, 2023 our team noticed a significant increase in API usage and bega
 
 The spike in usage was ruled as isolated and inorganic and our security, engineering, and support teams quickly assembled to understand what was going on.
 
-Our security team identified a code commit from July 14 where a site-admin access token was accidentally leaked in a PR and was leveraged to impersonate a user to gain access to the administrative console of our system. 
+Our security team identified a code commit from July 14 where a site-admin access token was accidentally leaked in a pull request and was leveraged to impersonate a user to gain access to the administrative console of our system. 
 
 In the spirit of transparency, we want to share the full timeline of the incident and what we have done to resolve this incident, as well as additional steps we’re taking to prevent this kind of leak in the future.
 
 ### Timeline
 
-On July 14, 2023 _(2023-07-14 22:01:00 UTC)_ a Sourcegraph engineer accidentally committed a code change that had an active site-admin access token. The site-admin access token had broad privileges to view and modify account information on Sourcegraph.com.
+On July 14, 2023 _(2023-07-14 22:01:00 UTC)_ a Sourcegraph engineer accidentally committed a code change that contained an active site-admin access token. The site-admin access token had broad privileges to view and modify account information on Sourcegraph.com.
 
 _Sourcegraph.com is an instance of Sourcegraph that contains public code only. It’s also used for authentication for free-tier Cody users. It is separate from all paid customer instances (both on-premises and cloud). The instance also hosts our license management for all customers._
 
