@@ -95,7 +95,7 @@ As soon as we understood the scope of the incident we took the following steps:
 - Temporarily reduced the rate limits for all free community users
 - Created new processes and tests and will continue to monitor for malicious activity and abuse
 
-By expanding our secret scanning through additional static analysis tests, we will ensure we can better detect and prevent this kind of leak in the future.
+Expanding our secret scanning through additional static analysis tests will ensure we can better detect and prevent this kind of leak in the future.
 
 If you’re a Community user, we know these rate limit reductions aren’t ideal for devs who are using Cody to help them write and understand code. This reduction will be short-term while we investigate the issue further.
 
