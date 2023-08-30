@@ -20,6 +20,8 @@ published: true
 - Community users: 
   - Sourcegraph account email addresses. No action is required. 
 
+<br/>
+
 **No other customer info, including private code, emails, passwords, usernames, or other PII, was accessible.**
 
 <br/>
