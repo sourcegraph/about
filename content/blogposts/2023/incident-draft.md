@@ -28,7 +28,7 @@ published: true
 
 ### Background
 
-Sourcegraph experienced a security incident on August 30, 2023 where a malicious actor used an admin access token in our public Sourcegraph instance at Sourcegraph.com that was errantly available. The malicious external user used their privileges to increase API rate limits for users. 
+Sourcegraph experienced a security incident on August 30, 2023 where a malicious actor used a leaked admin access token in our public Sourcegraph instance at Sourcegraph.com. The malicious external user used their privileges to increase API rate limits for users. 
 
 On August 30, 2023 our team noticed a significant increase in API usage and began investigating the cause. 
 
@@ -47,7 +47,7 @@ In the spirit of transparency, we want to share the full timeline of the inciden
 
 ### Timeline
 
-On July 14, 2023 _(2023-07-14 22:01:00.000 UTC)_ a Sourcegraph engineer accidentally committed a code change that had an active site-admin access token. The site-admin access token had broad privileges to view and modify account information on Sourcegraph.com.
+On July 14, 2023 _(2023-07-14 22:01:00 UTC)_ a Sourcegraph engineer accidentally committed a code change that had an active site-admin access token. The site-admin access token had broad privileges to view and modify account information on Sourcegraph.com.
 
 _Sourcegraph.com is an instance of Sourcegraph that contains public code only. It’s also used for authentication for free-tier Cody users. It is separate from all paid customer instances (both on-premises and cloud). The instance also hosts our license management for all customers._
 
@@ -103,7 +103,7 @@ If you’re a Community user, we know these rate limit reductions aren’t ideal
 
 ### Next steps
 
-Our teams are actively working to create a long term solution for our community and customers to prevent future incidents like this. While we are not ready to publicly share our additional mitigation options at this time as our internal investigation is still ongoing, know that we are working around the clock to implement a solution that is least disruptive to the Sourcegraph community at large.
+Our teams are actively working to create a long-term solution for our community and customers to prevent future incidents like this. While we are not ready to publicly share our additional mitigation options at this time as our internal investigation is still ongoing, know that we are working around the clock to implement a solution that is least disruptive to the Sourcegraph community at large.
 
 Stay tuned for more updates and be sure to join our [Discord community](https://discord.gg/rDPqBejz93) for the latest.
 
