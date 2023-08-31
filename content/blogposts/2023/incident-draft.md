@@ -39,7 +39,7 @@ On August 30, 2023 our team noticed a significant increase in API usage and bega
 />
 <br/>
 
-The spike in usage was ruled as isolated and inorganic and our security, engineering, and support teams quickly assembled to understand what was going on.
+The spike in usage was ruled as isolated and inorganic and our security, engineering, and support teams assembled to understand what was going on.
 
 Our security team identified a code commit from July 14 where a site-admin access token was accidentally leaked in a pull request and was leveraged to impersonate a user to gain access to the administrative console of our system. 
 
@@ -82,7 +82,9 @@ The impact of the malicious user having admin access was limited to a subset of:
 
 <br/>
 
-We have no indication that any of this data was viewed, modified, or copied, but the malicious user could have viewed license key recipient’s emails and community user email addresses as they navigated the admin dashboard.
+We have no indication that any of this data was viewed, modified, or copied, but the malicious user could have viewed license key recipients' emails and community user email addresses as they navigated the admin dashboard.
+
+Regarding paid customer license key exposure, we saw that the user accessed a page in the admin dashboard where they would have only seen the first 20 license key items. We were able to determine which items those were at the time of viewing because of stable sorting.
 
 **Important Note: Customers’ private data or code was not viewed during this incident. Customer private data and code resides in isolated environments and were therefore not impacted by this event.**
 
