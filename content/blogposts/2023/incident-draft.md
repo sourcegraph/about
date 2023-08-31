@@ -39,7 +39,7 @@ On August 30, 2023 our team noticed a significant increase in API usage and bega
 />
 <br/>
 
-The spike in usage was ruled as isolated and inorganic and our security, engineering, and support teams assembled to understand what was going on.
+The spike in usage was ruled as isolated and inorganic and our security, engineering, and support teams quickly assembled to understand what was going on.
 
 Our security team identified a code commit from July 14 where a site-admin access token was accidentally leaked in a pull request and was leveraged to impersonate a user to gain access to the administrative console of our system. 
 
@@ -127,3 +127,7 @@ For free-tier users with a Sourcegraph.com account: No action is needed.
 **I have more questions, who can I contact?**
 
 Reach out to your Account team (Technical Advisor or Account Executive) or our Support team at [support@sourcegraph.com](mailto:support@sourcegraph.com).
+
+<br/><br/>
+
+_Updated August 31, 2023: Added a detail to the `Impact` section clarifying how we determined which license keys could have been viewed._
