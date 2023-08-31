@@ -82,7 +82,9 @@ The impact of the malicious user having admin access was limited to a subset of:
 
 <br/>
 
-We have no indication that any of this data was viewed, modified, or copied, but the malicious user could have viewed license key recipient’s emails and community user email addresses as they navigated the admin dashboard.
+We have no indication that any of this data was viewed, modified, or copied, but the malicious user could have viewed license key recipients' emails and community user email addresses as they navigated the admin dashboard.
+
+Regarding paid customer license key exposure, we saw that the user accessed a page in the admin dashboard where they would have only seen the first 20 license key items. We were able to determine which items those were at the time of viewing because of stable sorting.
 
 **Important Note: Customers’ private data or code was not viewed during this incident. Customer private data and code resides in isolated environments and were therefore not impacted by this event.**
 
@@ -125,3 +127,7 @@ For free-tier users with a Sourcegraph.com account: No action is needed.
 **I have more questions, who can I contact?**
 
 Reach out to your Account team (Technical Advisor or Account Executive) or our Support team at [support@sourcegraph.com](mailto:support@sourcegraph.com).
+
+<br/><br/>
+
+_Updated August 31, 2023: Added a detail to the `Impact` section clarifying how we determined which license keys could have been viewed._
