@@ -9,7 +9,7 @@ import { buttonStyle, buttonLocation } from '../../data/tracking'
 interface CaseStudy {
     name: string
     logo: string
-    title: string
+    title: string | React.ReactNode
     altTitle?: string
     url: string
     linkText?: string
@@ -107,30 +107,43 @@ export const CASESTUDIES: CaseStudy[] = [
         title: 'Thorn deprecates legacy code safely.',
         url: '/case-studies/we-are-thorn',
     },
+    {
+        name: 'Nine',
+        logo: '/case-studies/nine-logo.svg',
+        title: 'Nine empowers productivity and enhances security with Sourcegraph.',
+        url: '/case-studies/how-sourcegraph-transformed-nine-development-workflow',
+    },
 ]
 
-export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boolean }> = ({
+export const CaseStudyCard: FunctionComponent<{
+    study: CaseStudy
+    bwLogo?: boolean
+    logoClass?: string
+    titleClassName?: string
+}> = ({
     study: { name, logo, altTitle, title, url, linkText = 'Read the case study' },
     bwLogo,
+    logoClass,
+    titleClassName,
 }) => (
     <div className="grow">
         <div className="md:pr-12">
             <img
-                className={classNames('mb-6 max-h-[60px] max-w-[135px]', { 'brightness-0': bwLogo })}
+                className={classNames('mb-6 max-h-[60px] max-w-[135px]', { 'brightness-0': bwLogo }, logoClass)}
                 src={logo}
                 alt={`${name} logo`}
             />
 
             {altTitle && <h5>{altTitle}</h5>}
 
-            <p>{title}</p>
+            <p className={titleClassName}>{title}</p>
 
             {url.includes('http') ? (
                 <a
                     href={url}
                     target="_blank"
                     rel="nofollow noreferrer"
-                    title={linkText + ': ' + title}
+                    title={`${linkText}: ${title}`}
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
@@ -142,7 +155,7 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
             ) : (
                 <Link
                     href={url}
-                    title={linkText + ': ' + title}
+                    title={`${linkText}: ${title}`}
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"

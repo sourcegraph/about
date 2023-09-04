@@ -29,7 +29,9 @@ export const Blockquote: FunctionComponent<{
     center?: boolean
     border?: boolean
     reverseBorder?: boolean
+    leftBorderAccent?: boolean
     inline?: boolean // inline vs. col layout
+    parentClassName?: string
 }> = ({
     quote,
     author,
@@ -41,6 +43,8 @@ export const Blockquote: FunctionComponent<{
     border = true,
     reverseBorder = false,
     inline = true,
+    leftBorderAccent = false,
+    parentClassName,
 }) => {
     const windowWidth = useWindowWidth()
     const isMdOrDown = windowWidth < breakpoints.lg
@@ -51,19 +55,21 @@ export const Blockquote: FunctionComponent<{
 
         if (border) {
             if (inline) {
-                return `my-8 border-solid ${borderLocation} border-r-violet-400`
+                return `my-8 border-solid ${borderLocation} ${
+                    leftBorderAccent ? 'border-l-violet-400' : 'border-r-violet-400'
+                } `
             }
             // Blockquotes in column: Border flips to horizontal for mobile
             if (isMdOrDown) {
                 return `pt-3xl pb-0 mb-0 border-solid ${borderNone} border-t-3 border-t-violet-400`
             }
-            return `border-solid ${borderLocation} border-r-violet-400`
+            return `border-solid ${borderLocation} border-violet-400`
         }
         return center ? 'text-center' : 'text-left'
     }
 
     return (
-        <blockquote className={classNames('px-md', getBorderStyle())}>
+        <blockquote className={classNames('px-md', getBorderStyle(), parentClassName)}>
             {headline ? largeText ? <h2>{headline}</h2> : <h4 className="mb-sm">{headline}</h4> : null}
 
             {largeText ? (
