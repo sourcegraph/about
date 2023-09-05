@@ -1,6 +1,8 @@
 ---
 title: "Cody for VS Code v0.10 release"
 authors:
+  - name: Kalan
+    url: https://handbook.sourcegraph.com/team/#kalan-chan
   - name: Tim
     url: https://handbook.sourcegraph.com/team/#tim-lucas
 publishDate: 2023-09-04T10:00-07:00
