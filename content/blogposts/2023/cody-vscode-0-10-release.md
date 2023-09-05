@@ -1,8 +1,6 @@
 ---
 title: "Cody for VS Code v0.10 release"
 authors:
-  - name: Kalan
-    url: https://handbook.sourcegraph.com/team/#kalan-chan
   - name: Tim
     url: https://handbook.sourcegraph.com/team/#tim-lucas
 publishDate: 2023-09-04T10:00-07:00
@@ -18,15 +16,23 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.
 
 ### Command UX improvements ⚡️
 
-The Cody command menu (accessible anywhere using the keyboard shortcut Opt-C or Alt-C) has been improved to xyz:
+The Cody command menu (accessible anywhere using the keyboard shortcut Opt-C or Alt-C) now shows the slash commands, both `/ask` and `/edit` take an argument: 
 
-(gif)
+<img alt="Screenshot of Cody v0.10 command menu" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-command-quickpick.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:610}} />
+
+And we've improved support for just typing a question or edit and hitting Enter:
+
+<img alt="Screenshot of Cody v0.10 command fallbacks" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-command-quickpick-fallback.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:609}} />
+
+We've also updated the chat command menu to clearly spearate the built-in commands and custom commands:
+
+<img alt="Screenshot of Cody v0.10 chat view command popover" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-chat-menu.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:361}} />
 
 ### JSON export of chat history 💿
 
-The new "Export JSON" button in Chat History allows you to export and inspect your chat history as JSON:
+The new "Export" button in Chat History allows you to export and inspect your chat history as JSON:
 
-(image)
+<img alt="Screenshot of Cody v0.10 chat JSON export buttton" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-chat-export.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:306}} />
 
 The export includes the full conversation between Cody and the LLM, allowing you to see how Cody works, send your chat history to Sourcegraph support, and more easily develop custom commands.
 
@@ -50,7 +56,7 @@ The export includes the full conversation between Cody and the LLM, allowing you
 
 ### Updated custom command JSON format 📄
 
-[Custom Cody Commands](TODO) is an experimental feature for extending and customizing Cody. They can be configured locally, or shared with your team by checking them in to your repository.
+Custom Cody Commands is an experimental feature for extending and customizing Cody. They can be configured locally, or shared with your team by checking them in to your repository.
 
 We’ve updated the JSON configuration format so it now requires a `slashCommand` (it's used as the configuration key) and replaced the command name with a sentence-cased `description`:
 
@@ -72,11 +78,9 @@ Old configuration files will be automatically updated to the new format. It's re
 
 ### Autocomplete rate limit visibiity 👀
 
-We’ve improved the visiblity of [autocompletion rate limits](TODO). When a rate limit is being applied the Cody statusbar icon now changes color. The settings menu also provides information about the rate limit, and links through to the documentation.
+We’ve improved the visiblity of [autocompletion rate limits](https://docs.sourcegraph.com/cody/troubleshooting#autocomplete-rate-limits). When a rate limit is being applied the Cody statusbar icon now changes color. The settings menu also provides information about the rate limit, and links through to the documentation.
 
-(image of yellow statusbar icon)
-
-(image of quickpick w/ error)
+<img alt="Screenshot of Cody v0.10 showing an autocomplete warning" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-autocomplete-rate-limit.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:613}} />
 
 ### Increased autocomplete speed with TLS connection reuse 🏃‍♀️💨
 
