@@ -24,7 +24,7 @@ And we've improved support for just typing a question or edit and hitting Enter:
 
 <img alt="Screenshot of Cody v0.10 command fallbacks" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-command-quickpick-fallback.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:609}} />
 
-We've also updated the chat command menu to clearly spearate the built-in commands and custom commands:
+We've also updated the chat command menu to clearly separate the built-in commands and custom commands:
 
 <img alt="Screenshot of Cody v0.10 chat view command popover" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-chat-menu.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:361}} />
 
