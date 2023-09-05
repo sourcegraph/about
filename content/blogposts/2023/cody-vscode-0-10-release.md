@@ -4,7 +4,7 @@ authors:
   - name: Tim
     url: https://handbook.sourcegraph.com/team/#tim-lucas
 publishDate: 2023-09-04T10:00-07:00
-description: "[ody for VS Code v0.10 is now available, and includes command menu UX improvements, JSON export, JSON format changes to custom commands, autocomplete rate limit visibility, and autocomplete TLS connection reuse."
+description: "Command menu UX improvements, JSON export, JSON format changes to custom commands, autocomplete rate limit visibility, and autocomplete TLS connection reuse."
 tags: [blog]
 slug: "cody-vscode-0-10-release"
 published: true
@@ -14,7 +14,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.
 
 [Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.10 is now available, and includes command menu UX improvements, JSON export, JSON format changes to custom commands, autocomplete rate limit visibility, and autocomplete TLS connection reuse.
 
-### Command UX improvements ⚡️
+### Command UX improvements
 
 The Cody command menu (accessible anywhere using the keyboard shortcut Opt-C or Alt-C) now shows the slash commands, both `/ask` and `/edit` take an argument: 
 
@@ -28,7 +28,7 @@ We've also updated the chat command menu to clearly spearate the built-in comman
 
 <img alt="Screenshot of Cody v0.10 chat view command popover" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-chat-menu.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:361}} />
 
-### JSON export of chat history 💿
+### JSON export of chat history
 
 The new "Export" button in Chat History allows you to export and inspect your chat history as JSON:
 
@@ -54,7 +54,7 @@ The export includes the full conversation between Cody and the LLM, allowing you
 }
 ```
 
-### Updated custom command JSON format 📄
+### Updated custom command JSON format
 
 Custom Cody Commands is an experimental feature for extending and customizing Cody. They can be configured locally, or shared with your team by checking them in to your repository.
 
@@ -76,13 +76,13 @@ We’ve updated the JSON configuration format so it now requires a `slashCommand
 
 Old configuration files will be automatically updated to the new format. It's recommended you also update your custom command descriptions to use sentence case, to match the built-in Cody commands.
 
-### Autocomplete rate limit visibiity 👀
+### Autocomplete rate limit visibiity
 
 We’ve improved the visiblity of [autocompletion rate limits](https://docs.sourcegraph.com/cody/troubleshooting#autocomplete-rate-limits). When a rate limit is being applied the Cody statusbar icon now changes color. The settings menu also provides information about the rate limit, and links through to the documentation.
 
 <img alt="Screenshot of Cody v0.10 showing an autocomplete warning" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-autocomplete-rate-limit.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:613}} />
 
-### Increased autocomplete speed with TLS connection reuse 🏃‍♀️💨
+### Increased autocomplete speed with TLS connection reuse
 
 We added support for reusing TLS connections, resulting in a 5-10% speed up of autocomplete responses. Due to VS Code limitations, to enable TLS connection reuse you must configure your VS Code "Http: Proxy Support" setting to "off":
 
@@ -92,11 +92,11 @@ We added support for reusing TLS connections, resulting in a 5-10% speed up of a
 }
 ```
 
-### Changelog 📰
+### Changelog
 
 See the [changelog](https://github.com/sourcegraph/cody/blob/main/vscode/CHANGELOG.md) and [GitHub releases](https://github.com/sourcegraph/cody/releases) for a complete list of changes.
 
-### Thank you 🙏
+### Thank you
 
 Cody is [open source](https://github.com/sourcegraph/cody), and wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
