@@ -1,7 +1,7 @@
 ---
 title: "Cody for VS Code v0.10 release"
 authors:
-  - name: Tim
+  - name: Tim Lucas
     url: https://handbook.sourcegraph.com/team/#tim-lucas
 publishDate: 2023-09-04T10:00-07:00
 description: "Command menu UX improvements, JSON export, JSON format changes to custom commands, autocomplete rate limit visibility, and autocomplete TLS connection reuse."
