@@ -14,7 +14,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.
 
 [Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.10 is now available, and includes command menu UX improvements, JSON export, JSON format changes to custom commands, autocomplete rate limit visibility, and autocomplete TLS connection reuse.
 
-### Command UX improvements
+### Command menu UX improvements
 
 The Cody command menu (accessible anywhere using the keyboard shortcut Opt-C or Alt-C) now shows the slash commands, both `/ask` and `/edit` take an argument: 
 
@@ -28,7 +28,7 @@ We've also updated the chat command menu to clearly spearate the built-in comman
 
 <img alt="Screenshot of Cody v0.10 chat view command popover" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-chat-menu.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:361}} />
 
-### JSON export of chat history
+### Chat history JSON export
 
 The new "Export" button in Chat History allows you to export and inspect your chat history as JSON:
 
@@ -82,7 +82,7 @@ We’ve improved the visiblity of [autocompletion rate limits](https://docs.sour
 
 <img alt="Screenshot of Cody v0.10 showing an autocomplete warning" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-autocomplete-rate-limit.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:613}} />
 
-### Increased autocomplete speed with TLS connection reuse
+### Faster autocomplete with TLS connection reuse
 
 We added support for reusing TLS connections, resulting in a 5-10% speed up of autocomplete responses. Due to VS Code limitations, to enable TLS connection reuse you must configure your VS Code "Http: Proxy Support" setting to "off":
 
