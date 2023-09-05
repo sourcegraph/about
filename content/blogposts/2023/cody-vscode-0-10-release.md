@@ -82,15 +82,10 @@ We’ve improved the visiblity of [autocompletion rate limits](https://docs.sour
 
 <img alt="Screenshot of Cody v0.10 showing an autocomplete warning" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-autocomplete-rate-limit.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:613}} />
 
-### Faster autocomplete with TLS connection reuse
+### Autocomplete and streaming improvements
 
-We added support for reusing TLS connections, resulting in a 5-10% speed up of autocomplete responses. Due to VS Code limitations, to enable TLS connection reuse you must configure your VS Code "Http: Proxy Support" setting to "off":
+Autocompletions will now appear faster. We improved autocompletion latency, resulting in 40% faster multi-line completions and 10% faster single-line completions.  
 
-```json
-{
-    "http.proxySupport": "off"
-}
-```
 
 ### Changelog
 
