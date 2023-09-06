@@ -9,7 +9,7 @@ import { buttonStyle, buttonLocation } from '../../data/tracking'
 interface CaseStudy {
     name: string
     logo: string
-    title: string | React.ReactNode
+    title: string
     altTitle?: string
     url: string
     linkText?: string
@@ -118,18 +118,22 @@ export const CASESTUDIES: CaseStudy[] = [
 export const CaseStudyCard: FunctionComponent<{
     study: CaseStudy
     bwLogo?: boolean
-    logoClass?: string
+    logoClassName?: string
     titleClassName?: string
+    linkClassName?: string
+    icon?: React.ReactNode
 }> = ({
     study: { name, logo, altTitle, title, url, linkText = 'Read the case study' },
     bwLogo,
-    logoClass,
+    logoClassName,
     titleClassName,
+    linkClassName,
+    icon = <ArrowRightIcon size={20} className="ml-1 inline" />,
 }) => (
     <div className="grow">
         <div className="md:pr-12">
             <img
-                className={classNames('mb-6 max-h-[60px] max-w-[135px]', { 'brightness-0': bwLogo }, logoClass)}
+                className={classNames('mb-6 max-h-[60px] max-w-[135px]', { 'brightness-0': bwLogo }, logoClassName)}
                 src={logo}
                 alt={`${name} logo`}
             />
@@ -143,26 +147,26 @@ export const CaseStudyCard: FunctionComponent<{
                     href={url}
                     target="_blank"
                     rel="nofollow noreferrer"
-                    title={`${linkText}: ${title}`}
+                    title={linkText + ': ' + title}
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
-                    className="font-bold no-underline hover:text-violet-300"
+                    className={classNames('font-bold no-underline hover:text-violet-300', linkClassName)}
                 >
                     {linkText}
-                    <ArrowRightIcon size={20} className="ml-1 inline" />
+                    {icon}
                 </a>
             ) : (
                 <Link
                     href={url}
-                    title={`${linkText}: ${title}`}
+                    title={linkText + ': ' + title}
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
-                    className="font-bold no-underline  hover:text-violet-300"
+                    className={classNames('font-bold no-underline hover:text-violet-300', linkClassName)}
                 >
                     {linkText}
-                    <ArrowRightIcon size={20} className="ml-1 inline" />
+                    {icon}
                 </Link>
             )}
         </div>

@@ -1,11 +1,12 @@
 import { FunctionComponent, ReactNode } from 'react'
 
+import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
 import { Badge, ContentSection, Heading, Hero, Layout, Blockquote, CaseStudyCard } from '../../components'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 
-export const CUSTOMERSTORIES = [
+export const CUSTOMER_STORIES = [
     [
         {
             name: 'CLOUDFLARE',
@@ -45,9 +46,9 @@ export const CaseStudy: FunctionComponent = () => (
             title: 'Nine empowers productivity and enhances security with Sourcegraph',
             description:
                 "Learn how Sourcegraph products have revolutionized Nine's development workflow, increasing developer productivity, efficient code management, and enhanced security.",
-            image: 'https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/meta/case-study-neo.png',
         }}
         className="relative"
+        heroAndHeaderClassName="pt-[98px] md:pt-[32px]"
         hero={
             <Hero
                 className="relative"
@@ -58,12 +59,20 @@ export const CaseStudy: FunctionComponent = () => (
                 variant="white"
                 title={
                     <div>
-                        <Badge color="violet" text="CUSTOMER STORIES" size="small" className="relative md:-top-[5px]" />
-                        <Heading size="h1" className="relative pb-16 !text-[52px] md:-top-[2px] lg:w-[949px]">
+                        <Badge
+                            color="violet"
+                            text="CUSTOMER STORIES"
+                            size="small"
+                            className="relative -top-[24px] z-10 md:-top-[5px]"
+                        />
+                        <Heading
+                            size="h1"
+                            className="relative -top-3 z-10 pb-16 !text-[52px] md:-top-[2px] lg:w-[949px]"
+                        >
                             Empowering productivity, enhancing security: How Sourcegraph transformed Nine’s development
-                            workflow.
+                            workflow
                         </Heading>
-                        <div className="relative z-[10] flex w-full flex-col gap-x-8 rounded-lg border border-gray-500 bg-white py-16 px-12 md:absolute md:top-[504px] md:right-0 md:flex-row xl:w-[1280px] 2xl:right-40">
+                        <div className="relative z-[10] -mt-3 flex w-full flex-col gap-x-8 rounded-lg border border-gray-500 bg-white py-16 px-12 shadow-lg md:flex-row lg:absolute lg:top-[504px] lg:right-0 lg:mt-0 xl:w-[1280px] 2xl:right-40">
                             <img
                                 className="mb-8 w-[148px] md:mb-0"
                                 src="/case-studies/nine-logo.svg"
@@ -87,7 +96,7 @@ export const CaseStudy: FunctionComponent = () => (
             />
         }
     >
-        <ContentSection className="mt-[48px] px-1 md:mt-[250.8px]" parentClassName="md:!px-0 !py-0">
+        <ContentSection className="mt-[48px] px-1 lg:mt-[250.8px]" parentClassName="!py-0 relative z-10">
             <div className="mx-auto flex w-full flex-col-reverse gap-x-12 md:flex-row">
                 <ContentSection className="w-full md:w-[378px]" parentClassName="!py-0 !px-0">
                     <SidebarContent
@@ -114,7 +123,7 @@ export const CaseStudy: FunctionComponent = () => (
                             open source repositories.
                         </p>
                         <Link
-                            className="btn btn-inverted-primary min-w-fit rounded-md bg-white py-3 px-5 text-center text-base text-violet-500 hover:!bg-violet-400 md:py-2 md:px-6"
+                            className="btn btn-inverted-primary flex min-w-fit self-center rounded-md bg-white py-3 px-5 text-center text-base text-violet-500 hover:!bg-violet-400 md:self-start md:py-2 md:px-6"
                             href="/demo"
                         >
                             Meet with a product expert
@@ -135,6 +144,7 @@ export const CaseStudy: FunctionComponent = () => (
                                         data-button-type="cta"
                                         target="_blank"
                                         rel="noreferrer"
+                                        className="text-black underline"
                                     >
                                         Nine
                                     </Link>
@@ -149,6 +159,7 @@ export const CaseStudy: FunctionComponent = () => (
                                         data-button-type="cta"
                                         target="_blank"
                                         rel="noreferrer"
+                                        className="text-black underline"
                                     >
                                         Code Search
                                     </Link>{' '}
@@ -161,6 +172,7 @@ export const CaseStudy: FunctionComponent = () => (
                                         data-button-type="cta"
                                         target="_blank"
                                         rel="noreferrer"
+                                        className="text-black underline"
                                     >
                                         Batch Changes
                                     </Link>
@@ -221,6 +233,7 @@ export const CaseStudy: FunctionComponent = () => (
                                         data-button-type="cta"
                                         target="_blank"
                                         rel="noreferrer"
+                                        className="text-black underline"
                                     >
                                         Code Search
                                     </Link>
@@ -233,6 +246,7 @@ export const CaseStudy: FunctionComponent = () => (
                                         data-button-type="cta"
                                         target="_blank"
                                         rel="noreferrer"
+                                        className="text-black underline"
                                     >
                                         Batch Changes
                                     </Link>
@@ -245,6 +259,7 @@ export const CaseStudy: FunctionComponent = () => (
                                         data-button-type="cta"
                                         target="_blank"
                                         rel="noreferrer"
+                                        className="text-black underline"
                                     >
                                         code monitoring
                                     </Link>{' '}
@@ -304,13 +319,13 @@ export const CaseStudy: FunctionComponent = () => (
 
                                 <div className="py-8">
                                     <Blockquote
-                                        parentClassName="w-full pl-[46px] !pr-0"
+                                        className="w-full pl-[46px] !pr-0"
                                         largeText={true}
                                         leftBorderAccent={true}
-                                        quote="Sourcegraph helped me answer a question in like 5 seconds flat this afternoon. Normally I probably would have bugged a bunch of people, but the overview of “here is that snippet, and the list of repos using it” made it self-served"
+                                        quote="Sourcegraph helped me answer a question in like 5 seconds flat this afternoon. Normally I probably would have bugged a bunch of people, but the overview of “here is that snippet, and the list of repos using it” made it self-served."
                                         author={
                                             <span>
-                                                Todd Turner,
+                                                Todd Turner
                                                 <span className=" mt-[10px] block">Platform Engineer, Nine.</span>
                                             </span>
                                         }
@@ -342,25 +357,23 @@ export const CaseStudy: FunctionComponent = () => (
                                     With Sourcegraph, Nine Engineering has enhanced developer productivity and better
                                     team collaboration.{' '}
                                     <Link
-                                        href="https://about.sourcegraph.com"
+                                        href="/"
                                         title="Learn more about Sourcegraph"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.body}
                                         data-button-type="cta"
-                                        target="_blank"
-                                        rel="noreferrer"
+                                        className="text-black underline"
                                     >
                                         Learn more about Sourcegraph
                                     </Link>{' '}
                                     and how we can improve your engineering operations by signing up for a{' '}
                                     <Link
-                                        href="https://about.sourcegraph.com/demo"
+                                        href="/demo"
                                         title="demo"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.body}
                                         data-button-type="cta"
-                                        target="_blank"
-                                        rel="noreferrer"
+                                        className="text-black underline"
                                     >
                                         demo
                                     </Link>{' '}
@@ -376,14 +389,16 @@ export const CaseStudy: FunctionComponent = () => (
                     Explore other customer stories
                 </Heading>
                 <div className="z-[10] ml-0 flex flex-col-reverse md:flex-col">
-                    {CUSTOMERSTORIES.map((study, index) => (
-                        <div key={index} className="m-0 grid gap-x-[162px]  md:grid-cols-2 ">
+                    {CUSTOMER_STORIES.map((study, index) => (
+                        <div key={index} className="m-0 grid gap-x-[258px]  md:grid-cols-2 ">
                             {study.map(std => (
                                 <div className="w-[298px] pb-[46px] pr-0 md:first:pb-[30px]" key={std.name}>
                                     <CaseStudyCard
-                                        titleClassName="text-lg"
-                                        logoClass={std.logoSize}
+                                        titleClassName="text-lg w-[298px]"
+                                        logoClassName={std.logoSize}
                                         study={std}
+                                        linkClassName="text-violet-500 hover:text-violet-400"
+                                        icon={<ChevronRightIcon size={20} className="ml-1 inline" />}
                                         key={std.name}
                                     />
                                 </div>
@@ -403,21 +418,23 @@ const CaseStudyContent: FunctionComponent<{
     title?: string
 }> = ({ content, title }) => (
     <div className="mb-[48px]">
-        {title && <h2 className="mb-[24px]">{title}</h2>}
+        {title && (
+            <Heading size="h2" className="mb-[24px] !text-4xl">
+                {title}
+            </Heading>
+        )}
         {typeof content === 'string' ? <p className="text-lg">{content}</p> : content}
     </div>
 )
 
 const SidebarContent: FunctionComponent<{
     content: string | ReactNode
-    title?: string
+    title: string
 }> = ({ content, title }) => (
     <div className="mb-16  md:w-[378px]">
-        {title && (
-            <Heading size="h1" className="mb-4 !text-[52px] text-violet-500">
-                {title}
-            </Heading>
-        )}
+        <Heading size="h1" className="mb-4 !text-[52px] text-violet-500">
+            {title}
+        </Heading>
         {typeof content === 'string' ? <p className="text-[18px]">{content}</p> : content}
     </div>
 )

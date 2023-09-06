@@ -508,7 +508,7 @@ export const resourceItems: Resource[] = [
         ],
         description:
             "Learn how Sourcegraph has revolutionized Nine's development workflow, increasing developer productivity, efficient code management, and enhanced security.",
-        publishDate: '2023-09-01T00:00:00Z',
+        publishDate: '2023-09-06T00:00:00Z',
         keyword: [
             'developer productivity',
             'security',
