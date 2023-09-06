@@ -18,6 +18,12 @@ interface CaseStudy {
 // TODO: This data will eventually live in our CMS
 export const CASESTUDIES: CaseStudy[] = [
     {
+        name: 'Nine',
+        logo: '/case-studies/nine-logo.svg',
+        title: 'Nine empowers productivity and enhances security with Sourcegraph.',
+        url: '/case-studies/how-sourcegraph-transformed-nine-development-workflow',
+    },
+    {
         name: 'Neo Financial',
         logo: '/external-logos/neo-financial.svg',
         title: 'Neo Financial improves the developer experience with Sourcegraph.',
@@ -106,12 +112,6 @@ export const CASESTUDIES: CaseStudy[] = [
         logo: '/external-logos/thorn-logo.svg',
         title: 'Thorn deprecates legacy code safely.',
         url: '/case-studies/we-are-thorn',
-    },
-    {
-        name: 'Nine',
-        logo: '/case-studies/nine-logo.svg',
-        title: 'Nine empowers productivity and enhances security with Sourcegraph.',
-        url: '/case-studies/how-sourcegraph-transformed-nine-development-workflow',
     },
 ]
 

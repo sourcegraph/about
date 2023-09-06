@@ -9,11 +9,11 @@ import { buttonStyle, buttonLocation } from '../../data/tracking'
 export const CUSTOMER_STORIES = [
     [
         {
-            name: 'CLOUDFLARE',
-            logo: '/external-logos/cloudflare-logo.svg',
-            title: 'Cloudflare accelerates debugging and improves security.',
-            url: '/case-studies/',
-            logoSize: 'w-[137px] h-[51px]',
+            name: 'Neo Financial',
+            logo: '/external-logos/neo-financial.svg',
+            title: 'Neo Financial improves the developer experience with Sourcegraph.',
+            url: '/case-studies/neo-financial-improves-the-developer-experience-with-sourcegraph',
+            logoSize: 'w-[81px] h-[25px]',
         },
         {
             name: 'FactSet',
@@ -40,6 +40,7 @@ export const CUSTOMER_STORIES = [
         },
     ],
 ]
+
 export const CaseStudy: FunctionComponent = () => (
     <Layout
         meta={{
