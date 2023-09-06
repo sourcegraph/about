@@ -76,9 +76,9 @@ We’ve updated the JSON configuration format so it now requires a `slashCommand
 
 Old configuration files will be automatically updated to the new format. It's recommended you also update your custom command descriptions to use sentence case, to match the built-in Cody commands.
 
-### Autocomplete rate limit visibiity
+### Autocomplete rate limit visibility
 
-We’ve improved the visiblity of [autocompletion rate limits](https://docs.sourcegraph.com/cody/troubleshooting#autocomplete-rate-limits). When a rate limit is being applied the Cody statusbar icon now changes color. The settings menu also provides information about the rate limit, and links through to the documentation.
+We’ve improved the visibility of [autocompletion rate limits](https://docs.sourcegraph.com/cody/troubleshooting#autocomplete-rate-limits). When a rate limit is being applied the Cody status bar icon now changes color. The settings menu also provides information about the rate limit, and links through to the documentation.
 
 <img alt="Screenshot of Cody v0.10 showing an autocomplete warning" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-autocomplete-rate-limit.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:613}} />
 
