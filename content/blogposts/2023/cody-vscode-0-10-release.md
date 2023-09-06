@@ -16,25 +16,25 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.
 
 ### Command menu UX improvements
 
-The Cody command menu (accessible anywhere using the keyboard shortcut Opt-C or Alt-C) now shows the slash commands, both `/ask` and `/edit` take an argument: 
+The Cody command menu (accessible with Opt-C or Alt-C) has been reorganized to show the slash name for each command, and which commands take arguments:
 
 <img alt="Screenshot of Cody v0.10 command menu" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-command-quickpick.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:610}} />
 
-And we've improved support for just typing a question or edit and hitting Enter:
+We've also improved being able to quickly ask a question or perform a code edit by typing directly into the Cody command menu input:
 
 <img alt="Screenshot of Cody v0.10 command fallbacks" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-command-quickpick-fallback.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:609}} />
 
-We've also updated the chat command menu to clearly separate the built-in commands and custom commands:
+The chat command menu was also updated to more clearly separate the built-in commands and custom commands:
 
 <img alt="Screenshot of Cody v0.10 chat view command popover" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-chat-menu.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:361}} />
 
 ### Chat history JSON export
 
-The new "Export" button in Chat History allows you to export and inspect your chat history as JSON:
+You can now export and inspect your chat history as JSON using the new "Export" button in Chat History:
 
 <img alt="Screenshot of Cody v0.10 chat JSON export buttton" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-chat-export.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:306}} />
 
-The export includes the full conversation between Cody and the LLM, allowing you to see how Cody works, send your chat history to Sourcegraph support, and more easily develop custom commands.
+The export includes the full conversation between Cody and the LLM allowing you to see how Cody works, send your chat history to Sourcegraph support, or more easily develop custom commands.
 
 ```json
 {
