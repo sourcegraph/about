@@ -4,7 +4,7 @@ authors:
   - name: Tim Lucas
     url: https://handbook.sourcegraph.com/team/#tim-lucas
 publishDate: 2023-09-04T10:00-07:00
-description: "Command menu UX improvements, JSON export, JSON format changes to custom commands, autocomplete rate limit visibility, and autocomplete TLS connection reuse."
+description: "Command menu UX improvements, JSON export, JSON format changes to custom commands, autocomplete rate limit visibility, and streamed autocomplete responses."
 tags: [blog]
 slug: "cody-vscode-0-10-release"
 published: true
@@ -12,7 +12,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-
 socialImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-og-image.jpg
 ---
 
-[Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.10 is now available, and includes command menu UX improvements, JSON export, JSON format changes to custom commands, autocomplete rate limit visibility, and autocomplete TLS connection reuse.
+[Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.10 is now available, and includes command menu UX improvements, JSON export, JSON format changes to custom commands, autocomplete rate limit visibility, and streamed autocomplete responses.
 
 ### Command menu UX improvements
 
@@ -82,7 +82,7 @@ We’ve improved the visibility of [autocompletion rate limits](https://docs.sou
 
 <img alt="Screenshot of Cody v0.10 showing an autocomplete warning" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-autocomplete-rate-limit.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:613}} />
 
-### Faster autocompletions with streaming responses
+### Streamed autocomplete responses
 
 Autocompletions now accept a streamed response from the server, and terminate the stream processing as soon as possible. These two changes have resulted in a 40% speed up of multi-line completions, and 10% speedup for single-line completions.
 
