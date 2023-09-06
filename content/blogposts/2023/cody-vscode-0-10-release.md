@@ -82,10 +82,9 @@ We’ve improved the visibility of [autocompletion rate limits](https://docs.sou
 
 <img alt="Screenshot of Cody v0.10 showing an autocomplete warning" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-autocomplete-rate-limit.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:613}} />
 
-### Autocomplete and streaming improvements
+### Faster autocompletions with streaming responses
 
-Autocompletions will now appear faster. We improved autocompletion latency, resulting in 40% faster multi-line completions and 10% faster single-line completions.  
-
+Autocompletions now accept a streamed response from the server, and terminate the stream processing as soon as possible. These two changes have resulted in a 40% speed up of multi-line completions, and 10% speedup for single-line completions.
 
 ### Changelog
 
