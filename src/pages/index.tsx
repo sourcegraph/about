@@ -15,7 +15,6 @@ import {
     CustomerLogos,
     Heading,
     ExternalsAuth,
-    EmailAuth,
     VideoCarousel,
     CallToActionWithCody,
     Badge,
@@ -219,11 +218,6 @@ const HomeHero: FunctionComponent = () => {
                                         source="about-home"
                                     />
                                 </div>
-                                <EmailAuth
-                                    icon={true}
-                                    className="sg-email-auth-btn col-span-2 h-12 border bg-white bg-opacity-10 text-lg !font-normal text-white"
-                                    source="about-home"
-                                />
                             </div>
                             <p className="mt-4 text-sm text-violet-300 opacity-70">
                                 By registering, you agree to our{' '}

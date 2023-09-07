@@ -10,7 +10,6 @@ import {
     Heading,
     Layout,
     ExternalsAuth,
-    EmailAuth,
     HubSpotForm,
     PlayButton,
     CodySteps,
@@ -157,12 +156,6 @@ const DemoCodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                             authProvider="gitlab"
                             label="GitLab"
                             source="cody"
-                        />
-                        <EmailAuth
-                            icon={true}
-                            className="sg-email-auth-btn h-12 w-fit border bg-white bg-opacity-10 text-lg !font-normal text-white"
-                            source="cody"
-                            label="Email"
                         />
                     </div>
                     <p className="mt-4 mb-0 text-[14px] text-violet-300 opacity-70">
