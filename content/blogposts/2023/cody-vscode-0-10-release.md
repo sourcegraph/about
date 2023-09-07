@@ -58,7 +58,7 @@ The export includes the full conversation between Cody and the LLM allowing you 
 
 Custom Cody Commands is an experimental feature for extending and customizing Cody. They can be configured locally, or shared with your team by checking them in to your repository.
 
-We’ve updated the JSON configuration format so it now requires a `slashCommand` (it's used as the configuration key) and replaced the command name with a sentence-cased `description`:
+We've updated the JSON configuration format so it now requires a slash command. Now the command is defined by the JSON object key rather than in a special field. We removed the old `slashCommand` field and added a new `description` field that describes how each command is used.
 
 ```diff
 {
