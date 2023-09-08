@@ -58,7 +58,7 @@ const carouselVideos = [
     },
     {
         title: 'Commands',
-        description: 'Generate unit tests, find code smells, or create docs with built-in and custom commands.',
+        description: 'Generate unit tests, find code smells, or create docs with built-in commands.',
         video: 'https://storage.googleapis.com/sourcegraph-assets/cody/homepage_sept2023/Unit_Test_WebSept.mp4',
         link: '/cody',
     },
