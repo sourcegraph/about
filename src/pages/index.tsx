@@ -45,26 +45,26 @@ interface AvailabilityIconProps {
 
 const carouselVideos = [
     {
-        title: 'Context-aware chat',
-        description: 'Cody can explain what code is doing—at a high level or in detail.',
-        video: 'https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_explain_June23.mp4',
-        link: '/cody',
-    },
-    {
         title: 'Autocomplete',
-        description: 'Cody offers code autocompletions in real time as you code or type comments.',
+        description: 'Cody autocompletes single lines, or whole functions, in real time as you code.',
         video: 'https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_autocomplete_June23.mp4',
         link: '/cody',
     },
     {
-        title: 'Recipes',
-        description: 'Generate unit tests, summarize changes, or create docs with prebuilt recipes.',
-        video: 'https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_unittest_June23.mp4',
+        title: 'Context-aware chat',
+        description: 'Cody answers questions using deep knowledge of your codebase.',
+        video: 'https://storage.googleapis.com/sourcegraph-assets/cody/homepage_sept2023/Context_Chat_WebSept.mp4',
+        link: '/cody',
+    },
+    {
+        title: 'Commands',
+        description: 'Generate unit tests, find code smells, or create docs with built-in commands.',
+        video: 'https://storage.googleapis.com/sourcegraph-assets/cody/homepage_sept2023/Unit_Test_WebSept.mp4',
         link: '/cody',
     },
     {
         title: 'Inline chat',
-        description: 'Cody edits and improves code directly using inline instructions.',
+        description: 'Edit and improve code quickly by giving Cody inline instructions.',
         video: 'https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_inline_June23.mp4',
         link: '/cody',
     },
@@ -384,8 +384,8 @@ const HomeHero: FunctionComponent = () => {
                             </Heading>
                             <p className="mb-0 text-[18px] text-gray-200">
                                 Write, fix, and maintain code with the most powerful & accurate AI coding assistant.
-                                Cody uses the code graph to understand your entire codebase and help developers focus on
-                                writing and shipping code.
+                                Cody uses the code graph to understand your entire codebase and help developers write and ship 
+                                code with autocomplete and commands.
                             </p>
                             <Link
                                 href="/cody"
