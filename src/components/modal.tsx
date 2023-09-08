@@ -12,9 +12,19 @@ interface Modal {
     open: boolean
     handleClose: () => void
     showCloseIcon?: boolean
+    modalClassName?: string
+    modalOuterWrapperClassName?: string
 }
 
-export const Modal: FunctionComponent<Modal> = ({ title, children, open, handleClose, showCloseIcon = false }) => {
+export const Modal: FunctionComponent<Modal> = ({
+    title,
+    children,
+    open,
+    handleClose,
+    showCloseIcon = false,
+    modalClassName,
+    modalOuterWrapperClassName,
+}) => {
     const modalReference = useRef(null)
     useOnClickOutside(modalReference, handleClose)
 
@@ -45,11 +55,15 @@ export const Modal: FunctionComponent<Modal> = ({ title, children, open, handleC
                     {
                         hidden: !open,
                         'block animate-fadeIn': open,
-                    }
+                    },
+                    modalOuterWrapperClassName
                 )}
             >
                 <div
-                    className="relative mx-auto rounded-md bg-white p-sm shadow-modal md:px-[126px] md:py-[73px]"
+                    className={classNames(
+                        'relative mx-auto rounded-md bg-white p-sm shadow-modal md:px-[126px] md:py-[73px]',
+                        modalClassName
+                    )}
                     ref={modalReference}
                 >
                     {title && <h4 className="mb-md pr-lg">{title}</h4>}

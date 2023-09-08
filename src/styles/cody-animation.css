@@ -1,0 +1,143 @@
+.cody-animation code[class*='language-'],
+.cody-animation pre[class*='language-'] {
+    background: transparent;
+    color: white;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-family: 'Fira Code', 'Fira Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+    -webkit-hyphens: none;
+    hyphens: none;
+}
+
+.cody-animation pre[class*='language-'] {
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    border-radius: 0;
+}
+
+.cody-animation :not(pre) > code[class*='language-'] {
+    padding: 0.2em 0.3em;
+    border-radius: 0;
+    white-space: normal;
+}
+
+.cody-animation .token.comment,
+.cody-animation .token.prolog,
+.cody-animation .token.cdata {
+    color: hsl(220, 10%, 40%);
+}
+
+.cody-animation .token.doctype,
+.cody-animation .token.punctuation,
+.cody-animation .token.entity {
+    color: hsl(220, 14%, 71%);
+}
+
+.cody-animation .token.attr-name,
+.cody-animation .token.class-name,
+.cody-animation .token.boolean,
+.cody-animation .token.constant,
+.cody-animation .token.number,
+.cody-animation .token.atrule {
+    color: hsl(29, 54%, 61%);
+}
+
+.cody-animation .token.keyword {
+    color: hsl(286, 60%, 67%);
+}
+
+.cody-animation .token.property,
+.cody-animation .token.tag,
+.cody-animation .token.symbol,
+.cody-animation .token.deleted,
+.cody-animation .token.important {
+    color: hsl(355, 65%, 65%);
+}
+
+.cody-animation .token.selector,
+.cody-animation .token.string,
+.cody-animation .token.char,
+.cody-animation .token.builtin,
+.cody-animation .token.inserted,
+.cody-animation .token.regex,
+.cody-animation .token.attr-value,
+.cody-animation .token.attr-value > .token.punctuation {
+    color: hsl(95, 38%, 62%);
+}
+
+.cody-animation .token.variable,
+.cody-animation .token.operator,
+.cody-animation .token.function {
+    color: hsl(207, 82%, 66%);
+}
+
+.cody-animation .token.url {
+    color: hsl(187, 47%, 55%);
+}
+
+.cody-animation .token.attr-value > .token.punctuation.attr-equals,
+.cody-animation .token.special-attr > .token.attr-value > .token.value.css {
+    color: hsl(220, 14%, 71%);
+}
+
+.cody-animation .language-javascript .token.operator {
+    color: hsl(286, 60%, 67%);
+}
+
+.cody-animation
+    .language-javascript
+    .token.template-string
+    > .token.interpolation
+    > .token.interpolation-punctuation.punctuation {
+    color: hsl(5, 48%, 51%);
+}
+
+.cody-animation code[class*='language-']::selection,
+.cody-animation pre[class*='language-']::selection,
+.cody-animation .token::selection,
+.cody-animation .number::selection,
+.cody-animation .symbol::selection {
+    background-color: hsl(220, 13%, 28%);
+    color: inherit;
+    text-shadow: none;
+}
+
+.cody-animation code[class*='language-'],
+.cody-animation pre[class*='language-'] {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.apply-gray,
+.apply-gray code[class*='language-'],
+.apply-gray pre[class*='language-'],
+.apply-gray code[class*='language-'] .token,
+.apply-gray code[class*='language-'] .operator {
+    color: #5e6e8c !important;
+}
+
+.blinking-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
