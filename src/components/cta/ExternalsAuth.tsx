@@ -81,13 +81,15 @@ const GoogleColorIcon: React.FunctionComponent<React.PropsWithChildren<{ classNa
     </svg>
 )
 
+
 export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
     label,
     authProvider = 'github',
     source,
     dark,
     className,
-}) => {
+}: ExternalsAuthProps): React.ReactElement | null => {
+
     useEffect(() => {
         const { buttonId, conversionId } = getAuthButtonsTracker(authProvider)
         const script = document.createElement('script')
@@ -132,8 +134,10 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
         })
     }
 
+    let link: React.ReactElement;
+
     if (authProvider === 'github') {
-        return (
+        link = (
             <Link
                 href="https://sourcegraph.com/.auth/github/login?pc=https%3A%2F%2Fgithub.com%2F%3A%3Ae917b2b7fa9040e1edd4&redirect=/get-cody"
                 className={classNames(
@@ -151,7 +155,7 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
     }
 
     if (authProvider === 'google') {
-        return (
+        link = (
             <Link
                 href="https://sourcegraph.com/.auth/openidconnect/login?pc=google"
                 className={classNames(
@@ -169,7 +173,7 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
     }
 
     if (authProvider === 'gitlab') {
-        return (
+        link = (
             <Link
                 href="https://sourcegraph.com/.auth/gitlab/login?pc=https%3A%2F%2Fgitlab.com%2F%3A%3A262309265ae76179773477bd50c93c7022007a4810c344c69a7371da11949c48&redirect=/get-cody"
                 className={classNames(
@@ -186,4 +190,6 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
             </Link>
         );
     }
+
+    return link;
 }
