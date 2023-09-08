@@ -106,6 +106,12 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                             label="GitLab"
                             source="about-cody"
                         />
+                        <ExternalsAuth
+                            className="w-fit justify-center !font-normal"
+                            authProvider="google"
+                            label="Google"
+                            source="about-cody"
+                        />
                     </div>
                     <p className="mt-4 text-[14px] text-violet-300 opacity-70">
                         By registering, you agree to our{' '}
@@ -213,6 +219,12 @@ const CodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                             className="w-fit justify-center !font-normal"
                             authProvider="gitlab"
                             label="GitLab"
+                            source="cody"
+                        />
+                        <ExternalsAuth
+                            className="w-fit justify-center !font-normal"
+                            authProvider="google"
+                            label="Google"
                             source="cody"
                         />
                     </div>
