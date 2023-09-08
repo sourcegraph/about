@@ -51,6 +51,12 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
                         label="GitLab"
                         source="about-home"
                     />
+                    <ExternalsAuth
+                        className="w-fit !font-normal"
+                        authProvider="google"
+                        label="Google"
+                        source="about-home"
+                    />
                 </div>
                 <p className="mt-4 mb-0 text-[14px] text-white opacity-70">
                     By registering, you agree to our{' '}
