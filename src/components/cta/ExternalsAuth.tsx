@@ -9,7 +9,7 @@ import { EventName, getEventLogger } from '../../hooks/eventLogger'
 import { getAuthButtonsTracker } from '../../lib/utils'
 
 export interface AuthProvider {
-    serviceType: 'github' | 'gitlab'
+    serviceType: 'github' | 'gitlab' | 'google'
 }
 
 interface ExternalsAuthProps {
