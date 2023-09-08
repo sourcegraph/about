@@ -99,14 +99,19 @@ interface ButtonTrackerData {
     conversionId: string
 }
 
-export const getAuthButtonsTracker = (provider: 'github' | 'gitlab'): ButtonTrackerData => {
+export const getAuthButtonsTracker = (provider: 'github' | 'gitlab' | 'google'): ButtonTrackerData => {
     if (provider === 'github') {
         return {
             buttonId: 'githubButton',
             conversionId: 'IE36JRZchpg6WWkoBm1cNN',
         }
     }
-
+    else if (provider === 'google') {
+        return {
+            buttonId: 'googleButton',
+            conversionId: 'someID',
+        }
+    }
     return {
         buttonId: 'gitlabButton',
         conversionId: 'sL3CVtxUlXaAvWjHZb7PTW',

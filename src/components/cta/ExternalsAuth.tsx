@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import classNames from 'classnames'
 import Cookies from 'js-cookie'
 import GithubIcon from 'mdi-react/GithubIcon'
+import GoogleColorIcon from './GoogleColorIcon'
 import Link from 'next/link'
 
 import { EventName, getEventLogger } from '../../hooks/eventLogger'
@@ -49,6 +50,10 @@ const GitlabColorIcon: React.FunctionComponent<React.PropsWithChildren<{ classNa
         <path d="M9.99902 19.2023L13.6835 7.8689H18.8444L9.99902 19.2023Z" fill="#FC6D26" />
         <path d="M9.99907 19.2023L1.15918 7.8689H6.31995L9.99907 19.2023Z" fill="#FC6D26" />
     </svg>
+)
+
+const GoogleColorIcon: React.FunctionComponent<React.PropsWithChildren<{ className?: string }>> = ({ className }) => (
+    // need to fill this in
 )
 
 export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
@@ -102,34 +107,53 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
         })
     }
 
-    return authProvider === 'github' ? (
-        <Link
-            href="https://sourcegraph.com/.auth/github/login?pc=https%3A%2F%2Fgithub.com%2F%3A%3Ae917b2b7fa9040e1edd4&redirect=/get-cody"
-            className={classNames(
-                `btn hover:sg-bg-hover-external-auth-button flex items-center px-4 hover:text-black md:h-12 md:px-6 md:text-lg
+    if (authProvider === 'github') {
+        return (
+            <Link
+                href="https://sourcegraph.com/.auth/github/login?pc=https%3A%2F%2Fgithub.com%2F%3A%3Ae917b2b7fa9040e1edd4&redirect=/get-cody"
+                className={classNames(
+                    `btn hover:sg-bg-hover-external-auth-button flex items-center px-4 hover:text-black md:h-12 md:px-6 md:text-lg
                  ${dark ? 'hover:btn-primary bg-black text-white ' : 'btn-inverted-primary text-black'}`,
-                className
-            )}
-            onClick={handleOnClick}
-            id="githubButton"
-        >
-            <GithubIcon className="pr-2" />
-            {label}
-        </Link>
-    ) : (
-        <Link
-            href="https://sourcegraph.com/.auth/gitlab/login?pc=https%3A%2F%2Fgitlab.com%2F%3A%3A262309265ae76179773477bd50c93c7022007a4810c344c69a7371da11949c48&redirect=/get-cody"
-            className={classNames(
-                `btn hover:sg-bg-hover-external-auth-button flex items-center px-4 hover:text-black md:h-12 md:px-6 md:text-lg ${
-                    dark ? 'sg-gitlab-bg-color hover:btn-primary text-white ' : 'btn-inverted-primary text-black'
-                }`,
-                className
-            )}
-            onClick={handleOnClick}
-            id="gitlabButton"
-        >
-            <GitlabColorIcon className="pr-2" />
-            {label}
-        </Link>
-    )
-}
+                    className
+                )}
+                onClick={handleOnClick}
+                id="githubButton"
+            >
+                <GithubIcon className="pr-2" />
+                {label}
+            </Link>
+        );
+    } else if (authProvider === 'google') {
+        return (
+            <Link
+                href="https://sourcegraph.com/.auth/openidconnect/login?pc=google"
+                className={classNames(
+                    `btn hover:sg-bg-hover-external-auth-button flex items-center px-4 hover:text-black md:h-12 md:px-6 md:text-lg 
+                    ${dark ? 'sg-gitlab-bg-color hover:btn-primary text-white ' : 'btn-inverted-primary text-black' }`,
+                    className
+                )}
+                onClick={handleOnClick}
+                id="googleButton"
+            >
+                <GoogleColorIcon className="pr-2" />
+                {label}
+            </Link>
+        );
+    } else {
+        return (
+            <Link
+                href="https://sourcegraph.com/.auth/gitlab/login?pc=https%3A%2F%2Fgitlab.com%2F%3A%3A262309265ae76179773477bd50c93c7022007a4810c344c69a7371da11949c48&redirect=/get-cody"
+                className={classNames(
+                    `btn hover:sg-bg-hover-external-auth-button flex items-center px-4 hover:text-black md:h-12 md:px-6 md:text-lg 
+                    ${dark ? 'sg-gitlab-bg-color hover:btn-primary text-white ' : 'btn-inverted-primary text-black'
+                    }`,
+                    className
+                )}
+                onClick={handleOnClick}
+                id="gitlabButton"
+            >
+                <GitlabColorIcon className="pr-2" />
+                {label}
+            </Link>
+        );
+    }
