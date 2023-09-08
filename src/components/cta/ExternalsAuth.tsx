@@ -81,7 +81,6 @@ const GoogleColorIcon: React.FunctionComponent<React.PropsWithChildren<{ classNa
     </svg>
 )
 
-
 export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
     label,
     authProvider = 'github',
@@ -135,6 +134,7 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
     }
 
     let link: React.ReactElement;
+    link =  <Link href="" />;
 
     if (authProvider === 'github') {
         link = (
