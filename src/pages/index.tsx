@@ -217,6 +217,12 @@ const HomeHero: FunctionComponent = () => {
                                         label="GitLab"
                                         source="about-home"
                                     />
+                                    <ExternalsAuth
+                                        className="col-span-1 mt-1 w-full justify-center !font-normal"
+                                        authProvider="google"
+                                        label="Google"
+                                        source="about-home"
+                                    />
                                 </div>
                             </div>
                             <p className="mt-4 text-sm text-violet-300 opacity-70">
