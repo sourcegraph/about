@@ -99,38 +99,40 @@ export const CaseStudy: FunctionComponent = () => (
     >
         <ContentSection className="mt-[48px] px-1 lg:mt-[250.8px]" parentClassName="!py-0 relative z-10">
             <div className="mx-auto flex w-full flex-col-reverse gap-x-12 md:flex-row">
-                <ContentSection className="w-full md:w-[378px]" parentClassName="!py-0 !px-0">
-                    <SidebarContent
-                        title="$276K saved"
-                        content="$276K saved in trial period: Nine's platform engineering team saved an estimated
+                <div>
+                    <div className="sticky top-[54px] w-full md:w-[378px]">
+                        <SidebarContent
+                            title="$276K saved"
+                            content="$276K saved in trial period: Nine's platform engineering team saved an estimated
                             $276,000 in time through efficient code search and batch changes."
-                    />
-                    <SidebarContent
-                        title="1200 hours saved"
-                        content="1200 hours saved annually: Batch Changes significantly reduced time by automating
+                        />
+                        <SidebarContent
+                            title="1200 hours saved"
+                            content="1200 hours saved annually: Batch Changes significantly reduced time by automating
                             opening changesets across many repositories and codehosts."
-                    />
-                    <SidebarContent
-                        title="Improved security response"
-                        content="Nine responded more effectively to security threats by quickly identifying
+                        />
+                        <SidebarContent
+                            title="Improved security response"
+                            content="Nine responded more effectively to security threats by quickly identifying
                             vulnerabilities and automating security-related changes across repositories."
-                    />
-                    <div className="sg-bg-code-search-cta mx-auto flex w-full flex-col rounded-lg py-12 px-6 text-center sm:items-center md:w-[378px] md:items-center md:text-left">
-                        <Heading size="h2" className="pb-4 !text-4xl text-white ">
-                            Try Sourcegraph on your code
-                        </Heading>
-                        <p className="pb-1 text-lg text-gray-200">
-                            Experience code intelligence with a free trial for you and your team, or search millions of
-                            open source repositories.
-                        </p>
-                        <Link
-                            className="btn btn-inverted-primary flex min-w-fit self-center rounded-md bg-white py-3 px-5 text-center text-base text-violet-500 hover:!bg-violet-400 md:self-start md:py-2 md:px-6"
-                            href="/demo"
-                        >
-                            Meet with a product expert
-                        </Link>
+                        />
+                        <div className="sg-bg-code-search-cta mx-auto flex w-full flex-col rounded-lg py-12 px-6 text-center sm:items-center md:w-[378px] md:items-center md:text-left">
+                            <Heading size="h2" className="pb-4 !text-4xl text-white ">
+                                Try Sourcegraph on your code
+                            </Heading>
+                            <p className="pb-1 text-lg text-gray-200">
+                                Experience code intelligence with a free trial for you and your team, or search millions
+                                of open source repositories.
+                            </p>
+                            <Link
+                                className="btn btn-inverted-primary flex min-w-fit self-center rounded-md bg-white py-3 px-5 text-center text-base text-violet-500 hover:!bg-violet-400 md:self-start md:py-2 md:px-6"
+                                href="/demo"
+                            >
+                                Meet with a product expert
+                            </Link>
+                        </div>
                     </div>
-                </ContentSection>
+                </div>
                 <ContentSection className="pb-4 md:pb-0 md:pt-[35px]" parentClassName="!px-0 !py-0">
                     <CaseStudyContent
                         content={
