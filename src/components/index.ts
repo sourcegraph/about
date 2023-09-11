@@ -43,7 +43,6 @@ export {
 
 export { AuthenticateModalContent } from './AuthenticateModalContent'
 export { ExternalsAuth } from './cta/ExternalsAuth'
-export { EmailAuth } from './cta/EmailAuth'
 
 // Carousels
 export { CustomCarousel, TabCarousel, QuoteCarousel, VideoCarousel } from './Carousels'

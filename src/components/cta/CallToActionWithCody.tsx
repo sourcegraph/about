@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { buttonLocation } from '../../data/tracking'
 import { Heading } from '../Heading'
 
-import { EmailAuth } from './EmailAuth'
 import { ExternalsAuth } from './ExternalsAuth'
 import { MeetWithProductExpertButton } from './MeetWithProductExpertButton'
 
@@ -51,12 +50,6 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
                         authProvider="gitlab"
                         label="GitLab"
                         source="about-home"
-                    />
-                    <EmailAuth
-                        icon={true}
-                        className="sg-email-auth-btn w-fit border bg-white bg-opacity-10 px-4 !font-normal text-white md:h-12 md:px-6 md:text-lg"
-                        source="about-home"
-                        label="Email"
                     />
                 </div>
                 <p className="mt-4 mb-0 text-[14px] text-white opacity-70">
