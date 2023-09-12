@@ -152,22 +152,6 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
                 {label}
             </Link>
         );
-    } else if (authProvider === 'google') {
-        link = (
-            <Link
-                href="https://sourcegraph.com/.auth/openidconnect/login?pc=google"
-                className={classNames(
-                    `btn hover:sg-bg-hover-external-auth-button flex items-center pl-3 pr-3 hover:text-black md:h-12 md:text-lg 
-                    ${dark ? 'sg-gitlab-bg-color hover:btn-primary text-white ' : 'btn-inverted-primary text-black' }`,
-                    className
-                )}
-                onClick={handleOnClick}
-                id="googleButton"
-            >   
-                <GoogleColorIcon className="pr-4" />
-                <span className="pr-2">{label}</span>
-            </Link>
-        );
     } else if (authProvider === 'gitlab') {
         link = (
             <Link
@@ -183,6 +167,22 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
             >
                 <GitlabColorIcon className="pr-2" />
                 {label}
+            </Link>
+        );
+    } else if (authProvider === 'google') {
+        link = (
+            <Link
+                href="https://sourcegraph.com/.auth/openidconnect/login?pc=google"
+                className={classNames(
+                    `btn hover:sg-bg-hover-external-auth-button flex items-center pl-3 pr-3 hover:text-black md:h-12 md:text-lg 
+                    ${dark ? 'sg-gitlab-bg-color hover:btn-primary text-white ' : 'btn-inverted-primary text-black' }`,
+                    className
+                )}
+                onClick={handleOnClick}
+                id="googleButton"
+            >   
+                <GoogleColorIcon className="pr-4" />
+                <span className="pr-2">{label}</span>
             </Link>
         );
     }
