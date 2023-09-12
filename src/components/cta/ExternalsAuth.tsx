@@ -58,6 +58,7 @@ const GoogleColorIcon: React.FunctionComponent<React.PropsWithChildren<{ classNa
       width="46"
       height="46"
       viewBox="0 0 46 46"
+      className={className}
     >
       <g fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
         <g transform="translate(-1 -1)">
