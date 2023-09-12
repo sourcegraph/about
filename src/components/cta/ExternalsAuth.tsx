@@ -151,9 +151,7 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
                 {label}
             </Link>
         );
-    }
-
-    if (authProvider === 'google') {
+    } else if (authProvider === 'google') {
         link = (
             <Link
                 href="https://sourcegraph.com/.auth/openidconnect/login?pc=google"
