@@ -167,9 +167,7 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
                 <span className="pr-2">{label}</span>
             </Link>
         );
-    }
-
-    if (authProvider === 'gitlab') {
+    } else if (authProvider === 'gitlab') {
         link = (
             <Link
                 href="https://sourcegraph.com/.auth/gitlab/login?pc=https%3A%2F%2Fgitlab.com%2F%3A%3A262309265ae76179773477bd50c93c7022007a4810c344c69a7371da11949c48&redirect=/get-cody"
