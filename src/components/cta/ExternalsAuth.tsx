@@ -133,8 +133,7 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
         })
     }
 
-    let link: React.ReactElement;
-    link =  <Link href="" />;
+    let link: React.ReactElement = <Link href="" />;
 
     if (authProvider === 'github') {
         link = (
