@@ -310,7 +310,7 @@ const CodyPage: FunctionComponent = () => {
             <ContentSection
                 id="contact-form"
                 parentClassName="!py-0"
-                className="mx-auto flex flex-col gap-6 py-16 pt-16 md:flex-row md:flex-wrap md:py-[112px]"
+                className="mx-auto flex flex-col gap-6 py-16 pt-16 md:flex-row md:py-[112px]"
             >
                 <div className="flex flex-col gap-8 md:max-w-[352px]">
                     <Heading size="h2" className="!text-[47px] text-white">
