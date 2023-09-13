@@ -177,7 +177,7 @@ const CodyPage: FunctionComponent = () => {
                 parentClassName="!py-0"
                 className="flex w-full flex-col items-center gap-x-12 gap-y-12 pt-16 md:flex-row md:px-8 md:pt-0"
             >
-                <div className="flex w-full flex-wrap justify-center gap-x-6 gap-y-8 py-4 md:gap-x-8 h-32">
+                <div className="flex w-full flex-wrap justify-center gap-x-6 gap-y-8 py-4 md:gap-x-8 md:h-32">
                    <div className="flex flex-col h-full items-center justify-center">
                     <Heading size="h6" className="whitespace-nowrap !text-lg text-gray-200">
                         Cody is available for: 
