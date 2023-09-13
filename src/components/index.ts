@@ -43,6 +43,7 @@ export {
 
 export { AuthenticateModalContent } from './AuthenticateModalContent'
 export { ExternalsAuth } from './cta/ExternalsAuth'
+export { EmailAuth } from './cta/EmailAuth'
 
 // Carousels
 export { CustomCarousel, TabCarousel, QuoteCarousel, VideoCarousel } from './Carousels'
@@ -81,3 +82,4 @@ export { CodySteps } from './cody/CodySteps'
 export { CodebaseAwareIntelligence } from './cody/CodebaseAwareIntelligence'
 export { AiGeneratedCode } from './cody/AiGeneratedCode'
 export { CodyTweets } from './cody/CodyTweets'
+export { CodyAnimation } from './CodyAnimation/CodyAnimation'
