@@ -6,13 +6,13 @@ import Prism from 'prismjs'
 interface CodeHighlighterProps {
     children?: ReactNode
     text?: string
-    styled?: boolean
+    highlighted?: boolean
     inline?: boolean
 }
 export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
     children,
     text,
-    styled = true,
+    highlighted = true,
     inline = false,
 }) => {
     const codeRef = useRef<HTMLElement>(null)
@@ -26,7 +26,7 @@ export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
     return (
         <div
             className={classNames('cody-animation m-0 p-0', {
-                'apply-gray': !styled,
+                'apply-gray': !highlighted,
                 'inline-block': inline,
             })}
         >

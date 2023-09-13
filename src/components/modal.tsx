@@ -13,7 +13,7 @@ interface Modal {
     handleClose: () => void
     showCloseIcon?: boolean
     modalClassName?: string
-    modalOuterWrapperClassName?: string
+    modalBackdropClassName?: string
 }
 
 export const Modal: FunctionComponent<Modal> = ({
@@ -23,7 +23,7 @@ export const Modal: FunctionComponent<Modal> = ({
     handleClose,
     showCloseIcon = false,
     modalClassName,
-    modalOuterWrapperClassName,
+    modalBackdropClassName,
 }) => {
     const modalReference = useRef(null)
     useOnClickOutside(modalReference, handleClose)
@@ -56,7 +56,7 @@ export const Modal: FunctionComponent<Modal> = ({
                         hidden: !open,
                         'block animate-fadeIn': open,
                     },
-                    modalOuterWrapperClassName
+                    modalBackdropClassName
                 )}
             >
                 <div

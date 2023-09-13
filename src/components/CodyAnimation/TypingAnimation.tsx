@@ -5,27 +5,27 @@ import { CodeHighlighter } from './CodeHighlighter'
 
 interface TypingAnimationProps {
     code: string
-    completed: () => void
+    onCompleted: () => void
     speed?: number
 }
 
-export const TypingAnimation: FunctionComponent<TypingAnimationProps> = ({ code, completed, speed = 40 }) => {
-    const [animatedCode, setText] = useState('')
+export const TypingAnimation: FunctionComponent<TypingAnimationProps> = ({ code, onCompleted, speed = 40 }) => {
+    const [animatedCode, setAnimatedCode] = useState('')
     const [index, setIndex] = useState(0)
     const intervalRef = useRef<NodeJS.Timeout>()
 
     useEffect(() => {
         intervalRef.current = setInterval(() => {
             if (index < code.length) {
-                setText((prev: string) => prev + code[index])
-                setIndex((prev: number) => prev + 1)
+                setAnimatedCode(prev => prev + code[index])
+                setIndex(prev => prev + 1)
             } else {
-                clearInterval(intervalRef.current ?? undefined)
-                completed()
+                clearInterval(intervalRef.current)
+                onCompleted()
             }
         }, speed)
-        return () => clearInterval(intervalRef.current ?? undefined)
-    }, [index, code, completed, speed])
+        return () => clearInterval(intervalRef.current)
+    }, [index, code, onCompleted, speed])
 
     return <CodeHighlighter text={animatedCode} inline={true} />
 }

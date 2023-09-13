@@ -1,22 +1,13 @@
-import { FunctionComponent, ReactNode, useEffect, useState } from 'react'
+import { FunctionComponent, ReactNode, useEffect, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import {
-    ContentSection,
-    Heading,
-    Layout,
-    ExternalsAuth,
-    EmailAuth,
-    HubSpotForm,
-    Badge,
-    Modal,
-    CodyAnimation,
-} from '../components'
-// eslint-disable-next-line import/extensions
+import { ContentSection, Heading, Layout, ExternalsAuth, HubSpotForm, Badge, Modal, CodyAnimation } from '../components'
+import { breakpoints } from '../data/breakpoints'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
+import { useWindowWidth } from '../hooks/windowWidth'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
 
@@ -49,6 +40,8 @@ const VIDEO_TAB_CONTENT = [
 
 const CodyPage: FunctionComponent = () => {
     const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+    const windowWidth = useWindowWidth()
+    const isMobile = windowWidth < breakpoints.lg
 
     useEffect(() => {
         const eventArguments = {
@@ -68,12 +61,12 @@ const CodyPage: FunctionComponent = () => {
                 image: 'https://about.sourcegraph.com/cody/cody-og.png',
             }}
             headerColorTheme="purple"
-            childrenClassName="sg-bg-gradient-cody"
+            childrenClassName={isMobile ? 'sg-bg-gradient-cody-mobile' : 'sg-bg-gradient-cody'}
             displayChildrenUnderNav={true}
         >
             {/* Hero Section */}
             <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 text-center md:mt-0 md:pt-[22px]">
-                <div className="mx-auto w-full px-6 md:w-[849px]">
+                <div className="mx-auto w-full px-6 md:w-[849px] lg:w-[895px]">
                     <div className="center flex items-center justify-center gap-x-4">
                         <Heading size="h1" className="!text-[53px] text-white md:!text-[62px]">
                             Meet Cody{' '}
@@ -84,7 +77,7 @@ const CodyPage: FunctionComponent = () => {
                             alt="Cody Logo"
                         />
                     </div>
-                    <div className="mx-auto pt-6 text-[41px] font-semibold leading-[41px] text-white md:text-[47px] md:leading-[47px]">
+                    <div className="mx-auto w-full pt-6 text-[41px] font-semibold leading-[41px] text-white md:text-[47px] md:leading-[47px]">
                         We’re building the only AI coding assistant that knows your{' '}
                         <span className="cody-heading bg-clip-text text-transparent"> entire codebase </span>
                     </div>
@@ -95,7 +88,7 @@ const CodyPage: FunctionComponent = () => {
                     <div className="mt-8 text-lg font-semibold text-white">
                         Get Started with Cody <Badge size="small" text="BETA" color="violet" />
                     </div>
-                    <div className="mx-auto mt-4 flex w-[212px] flex-wrap justify-center gap-2 sm:w-[512px]">
+                    <div className="mx-auto mt-4 flex flex-wrap justify-center gap-2 sm:w-[512px]">
                         <ExternalsAuth
                             className="w-fit justify-center !font-normal"
                             authProvider="github"
@@ -107,12 +100,6 @@ const CodyPage: FunctionComponent = () => {
                             authProvider="gitlab"
                             label="GitLab"
                             source="about-cody"
-                        />
-                        <EmailAuth
-                            icon={true}
-                            className="sg-email-auth-btn h-12 w-fit flex-1 border bg-white bg-opacity-10 text-lg !font-normal text-white sm:flex-none"
-                            source="about-cody"
-                            label="Email"
                         />
                     </div>
                     <p className="mt-4 text-[14px] text-violet-300 opacity-70">
@@ -141,9 +128,9 @@ const CodyPage: FunctionComponent = () => {
                 </div>
                 <ContentSection
                     parentClassName="!py-0 !px-0"
-                    className="relative mx-auto mt-16 flex w-full flex-col gap-[39px] overflow-hidden border border-white border-opacity-20 bg-[#612590] py-16 px-0 md:-top-10 md:mt-0 md:flex-row md:rounded-lg md:pt-[120px] md:pb-[47px]  md:pl-[62px] xl:max-w-[1280px]"
+                    className="relative mx-auto mt-16 flex w-full flex-col gap-[15px] overflow-hidden border border-white border-opacity-20 bg-[#612590] py-16 px-0 md:-top-[88px] md:-mb-[32px] md:mt-0 md:flex-row md:rounded-lg md:pt-[120px] md:pb-[47px]  md:pl-[62px] xl:max-w-[1280px]"
                 >
-                    <div className="flex w-full flex-col px-6 md:w-[510px]">
+                    <div className="flex w-full flex-col px-6 md:w-[543px]">
                         <img className="h-[46px] w-[46px]" src="/cody/cody-icon.svg" alt="Cody Icon" />
                         <Heading size="h2" className="pt-4 text-left !text-4xl text-white">
                             Code faster with AI-assisted autocomplete{' '}
@@ -158,20 +145,20 @@ const CodyPage: FunctionComponent = () => {
                             </p>
                         </div>
                         <Heading size="h5" className="pt-8 pb-4 text-left !text-xl text-gray-200">
-                            [BETA] Cody autocomplete is driven by rapid experimentation
+                            Cody autocomplete is improving every day
                         </Heading>
                         <div className="text-left text-gray-200">
                             <p>
-                                We’re building Cody with the belief that high-quality autocomplete must balance speed
-                                and accuracy.
+                                High-quality autocomplete must balance speed and accuracy. We’re actively experimenting
+                                with new LLMs and context retrieval methods to build the best autocomplete experience.
                             </p>
                             <p className="mb-0">
-                                Throughout the Beta, we’ll continue experimenting with new LLMs and context retrieval
-                                methods to build the best autocomplete experience.
+                                Cody’s broad training data means it supports all programming languages, but it works
+                                especially well for Python, Go, JavaScript, and TypeScript.
                             </p>
                         </div>
                     </div>
-                    <div className="relative w-full overflow-hidden">
+                    <div className="relative w-full overflow-hidden md:w-[670px]">
                         <img
                             className="relative top-4 -right-4 hidden  w-[670px] md:flex"
                             src="/cody/autocomplete.svg"
@@ -188,12 +175,12 @@ const CodyPage: FunctionComponent = () => {
 
             <ContentSection
                 parentClassName="!py-0"
-                className="flex w-full flex-col items-center gap-x-6 gap-y-12 pt-16 md:flex-row md:px-8 md:pt-4"
+                className="flex w-full flex-col items-center gap-x-12 gap-y-12 pt-16 md:flex-row md:px-8 md:pt-0"
             >
                 <Heading size="h6" className="whitespace-nowrap !text-lg text-gray-200">
                     Cody is available for:
                 </Heading>
-                <div className="flex w-full flex-wrap justify-center gap-x-6 gap-y-8 py-4 md:gap-x-8 md:px-6">
+                <div className="flex w-full flex-wrap justify-center gap-x-6 gap-y-8 py-4 md:justify-start md:gap-x-8">
                     <div className="flex items-center gap-x-4 md:px-6">
                         <img className="" src="/icons/intelliJ.svg" alt="IntelliJ IDE marketplace" />{' '}
                         <Heading size="h4" className="!text-2xl text-gray-200">
@@ -221,12 +208,12 @@ const CodyPage: FunctionComponent = () => {
                 className="flex w-full flex-col gap-y-[17.5px] md:gap-y-16 md:px-[60px] xl:max-w-[1280px]"
                 parentClassName="!px-0 !pb-0"
             >
-                <div className="w-full px-6 pb-10 md:w-[554px] md:pb-16">
+                <div className="w-full px-6 md:w-[554px]">
                     <img className="" src="/cody/cody-chat.svg" alt="Cody Chat" />
                     <Heading size="h2" className="py-[18px] text-left !text-4xl text-white">
                         AI-powered chat for your code
                     </Heading>
-                    <p className="text-left text-lg text-gray-200">
+                    <p className="mb-0 text-left text-lg text-gray-200">
                         Cody chat helps unblock you when you’re jumping into new projects, trying to understand legacy
                         code, or taking on tricky problems.
                     </p>
@@ -241,9 +228,9 @@ const CodyPage: FunctionComponent = () => {
                             <p className="mb-0 py-[11px] px-[10px]">Why isn’t this code working??</p>
                         </div>
                     </div>
-                    <div className="w-full md:max-w-[746px]">
+                    <div className="w-full">
                         <img
-                            className="relative hidden w-full self-stretch pl-6 md:flex md:px-6"
+                            className="relative hidden max-w-[809px] self-stretch md:flex"
                             src="/cody/cody-chat-interface.svg"
                             alt="Cody Chat interface"
                         />
@@ -271,11 +258,11 @@ const CodyPage: FunctionComponent = () => {
                 className="rounded-lg border border-white border-opacity-20 bg-[#612590] px-6 py-8 md:px-[60px] md:py-[72px]"
             >
                 <VideoTab
-                    icon="/cody/cody-with-angular-bracket.svg"
+                    icon="/cody/slash-logo.svg"
                     headerText="Run custom and pre-built commands"
                     description={
                         <p className="mt-[18px] mb-0 text-lg text-gray-200">
-                            Write, describe, fix, and smell code with hotkey commands.
+                            Write, describe, fix, and smell code with commands.
                             <br />
                             We’re adding new commands frequently, plus you can create & share your own custom commands.
                         </p>
@@ -284,22 +271,22 @@ const CodyPage: FunctionComponent = () => {
                 />
             </ContentSection>
 
-            <ContentSection parentClassName="!pb-0" className="flex flex-col gap-[33px] md:flex-row">
-                <div className="flex max-w-[624px] flex-col gap-[30px]">
+            <ContentSection parentClassName="!pb-0" className="flex flex-col gap-12 md:flex-row">
+                <div className="flex max-w-[661px] flex-col gap-[30px]">
                     <Heading size="h2" className="!text-4xl text-white">
                         Cody knows your code
                     </Heading>
                     <p className="mb-0 text-lg text-gray-200">
-                        Cody’s context means it can answer questions that require an understanding of multiple files, or
-                        entire repositories, to answer. Plus, Cody can make suggestions that use your own APIs and
-                        idioms.
+                        Cody uses context to answer questions that require an understanding of multiple files or even
+                        entire repositories. Plus, this context allows Cody to make suggestions that use your own APIs
+                        and idioms.
                         <br />
                         <br />
                         We’re experimenting with several methods of context retrieval to improve Cody’s accuracy,
                         including embeddings, keyword search, and hybrid search.
                     </p>
                 </div>
-                <div className="text-white">
+                <div className="rounded-bl-8 rounded-br-8 bg-[#0F111A] bg-opacity-40 text-white">
                     <div className="cody-whitepaper-border h-[2px]" />
                     <div className="mt-3 flex flex-col gap-3 p-6">
                         <p className="mb-0 font-mono text-sm">Whitepaper</p>
@@ -321,18 +308,15 @@ const CodyPage: FunctionComponent = () => {
             <ContentSection
                 id="contact-form"
                 parentClassName="!py-0"
-                className="mx-auto flex flex-col gap-8 py-16 pt-16 md:flex-row md:flex-wrap md:py-[112px]"
+                className="mx-auto flex flex-col gap-6 py-16 pt-16 md:flex-row md:flex-wrap md:py-[112px]"
             >
-                <div className="flex flex-col gap-8 md:max-w-[293px]">
-                    <Heading size="h2" className="!text-4xl text-white">
+                <div className="flex flex-col gap-8 md:max-w-[352px]">
+                    <Heading size="h2" className="!text-[47px] text-white">
                         Get started with Cody (beta)
                     </Heading>
-                    <p className="text-base text-gray-200">
-                        Get started with our free-forever tier or get access for your company with our Enterprise plan.
-                    </p>
                 </div>
 
-                <div className="rounded-lg border border-white border-opacity-25 bg-[#612590] p-6">
+                <div className="max-w-[440px] rounded-lg border border-white border-opacity-25 bg-[#612590] p-6">
                     <Heading size="h2" className="!text-4xl text-white">
                         Cody free tier
                     </Heading>
@@ -354,12 +338,6 @@ const CodyPage: FunctionComponent = () => {
                                 source="about-cody"
                             />
                         </div>
-                        <EmailAuth
-                            icon={true}
-                            className="sg-email-auth-btn h-12 border bg-white bg-opacity-10 text-lg !font-normal text-white md:w-fit"
-                            source="about-cody"
-                            label="Email"
-                        />
                     </div>
                     <p className="mt-4 text-[14px] text-violet-300 opacity-70">
                         By registering, you agree to our{' '}
@@ -381,7 +359,7 @@ const CodyPage: FunctionComponent = () => {
                     </p>
                 </div>
 
-                <div className="flex min-h-[295px] flex-col justify-end gap-4 rounded-lg border border-white border-opacity-40 p-6">
+                <div className="flex min-h-[295px] max-w-[440px] flex-col gap-4 rounded-lg border border-white border-opacity-40 p-6">
                     <Heading size="h2" className="!text-4xl text-white">
                         Cody Enterprise
                     </Heading>
@@ -413,7 +391,7 @@ const CodyPage: FunctionComponent = () => {
             <Modal
                 open={isContactModalOpen}
                 handleClose={() => setIsContactModalOpen(false)}
-                modalOuterWrapperClassName="cody-contact-modal"
+                modalBackdropClassName="cody-contact-modal"
                 modalClassName="bg-[#632590] border border-opacity-20 border-white px-6 py-[64px] md:px-[80px] md:py-[96px]"
             >
                 <div className="flex flex-col gap-8 md:flex-row md:gap-10">
@@ -444,7 +422,17 @@ const VideoTab: FunctionComponent<{
     description: string | ReactNode
     tabContent: { header: string; description: string; videoSrc: string }[]
 }> = ({ icon, headerText, description, tabContent }) => {
-    const [selectedContent, setSelectedContent] = useState(tabContent[0])
+    const [selectedContentIndex, setSelectedContentIndex] = useState(0)
+    const videoRefs = useRef<(HTMLVideoElement | null)[]>(new Array(tabContent.length).fill(null))
+
+    // Reset the video playback
+    useEffect(() => {
+        const videoElement = videoRefs.current[selectedContentIndex]
+        if (videoElement) {
+            videoElement.currentTime = 0
+        }
+    }, [selectedContentIndex, tabContent])
+
     return (
         <div>
             <img src={icon} alt="Cody logo" />
@@ -461,10 +449,13 @@ const VideoTab: FunctionComponent<{
                     {tabContent.map((content, index) => (
                         <button
                             key={index}
-                            onClick={() => setSelectedContent(content)}
-                            className={`rounded px-[10px] py-2 text-left text-white hover:bg-[#270741] md:rounded-r-none ${
-                                selectedContent === content && 'bg-[#270741]'
-                            }`}
+                            onClick={() => setSelectedContentIndex(index)}
+                            className={classNames(
+                                'rounded px-[10px] py-2 text-left text-white hover:bg-[#270741] hover:bg-opacity-40 md:rounded-r-none',
+                                {
+                                    'bg-[#270741] hover:bg-opacity-100': selectedContentIndex === index,
+                                }
+                            )}
                             type="button"
                         >
                             <Heading size="h5">{content.header}</Heading>
@@ -475,10 +466,11 @@ const VideoTab: FunctionComponent<{
                 <div className="max-w-[750px]">
                     {tabContent.map((content, index) => (
                         <video
+                            ref={element => (videoRefs.current[index] = element ?? null)}
                             id={`video-${content.header}`}
-                            className={`rounded-lg border-[6px] border-[#4E2A72] ${
-                                selectedContent !== content && 'hidden'
-                            }`}
+                            className={classNames('rounded-lg border-[6px] border-[#4E2A72]', {
+                                hidden: selectedContentIndex !== index,
+                            })}
                             autoPlay={true}
                             muted={true}
                             loop={true}

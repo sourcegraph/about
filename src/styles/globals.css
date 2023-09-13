@@ -366,7 +366,10 @@
         background-image:  linear-gradient(to bottom right, rgba(97, 18, 163, 1), rgba(255, 85, 67, 1));
     }
     .sg-bg-gradient-cody {
-        background: radial-gradient(60.68% 62.24% at 49.2% 16.27%, #6112A3 0.41%, rgba(39, 7, 65, 0.00) 54.04%), #1E0632;
+        background: radial-gradient(48.68% 17% at 49.2% 17.9%, #6112A3 0.41%, rgba(39, 7, 65, 0.00) 54.04%), #1E0632;
+    }
+    .sg-bg-gradient-cody-mobile {
+        background: radial-gradient(98.68% 16% at 49.2% 13.9%, #6112A3 0.41%, rgba(39, 7, 65, 0.00) 54.04%), #1E0632;
     }
     .sg-bg-gradient-cip-cody {
         background: linear-gradient(0deg, rgba(206, 131, 255, 0.05), rgba(206, 131, 255, 0.05)), radial-gradient(63.3% 72.11% at 95.66% -10.78%, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0) 100%), rgba(0, 0, 0, 0.17);
