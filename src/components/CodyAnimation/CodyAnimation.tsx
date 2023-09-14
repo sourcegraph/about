@@ -16,8 +16,6 @@ const timingFrames = {
     frame3: 1500,
 }
 
-const lineNumbers = 15
-
 const codes: string[] = [
     'function bubbleSort(array) {',
     '   let swapped;',
@@ -77,6 +75,7 @@ export const CodyAnimation: FunctionComponent = () => {
         }
     }, [isCodyAnimationRefInView, applySuggestion])
 
+    const lineNumbers = countTotalLines(codes)
     const activeLine = showSuggestion ? lineNumbers : nextLine ? 2 : 1
 
     return (
@@ -117,4 +116,17 @@ export const CodyAnimation: FunctionComponent = () => {
             </div>
         </>
     )
+}
+
+const countTotalLines = (codes: string[]): number => {
+    let totalLines = 0
+    for (const code of codes) {
+        const lines = code.split('\n')
+        for (const line of lines) {
+            if (line.trim() !== '') {
+                totalLines++
+            }
+        }
+    }
+    return totalLines
 }
