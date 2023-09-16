@@ -20,11 +20,10 @@ import {
     Badge,
 } from '../components'
 import { breakpoints } from '../data/breakpoints'
-// eslint-disable-next-line import/extensions
-import Tweets from '../data/tweets.json'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 import { useInView } from '../hooks/useInView'
 import { useWindowWidth } from '../hooks/windowWidth'
+import { preloadTweets } from '../util'
 
 import { HOME_PAGE_TWEET_IDS } from './constants'
 
@@ -191,14 +190,15 @@ const HomeHero: FunctionComponent = () => {
                             size="h1"
                             className="w-full text-center !text-[42px] leading-[65px] text-white md:max-w-[516px] md:text-start md:!text-[58px]"
                         >
-                            Find & fix code with<br />
+                            Find & fix code with
+                            <br />
                             <span className="sg-bg-gradient-infrared bg-clip-text text-transparent">
                                 Code Search + AI
                             </span>
                         </Heading>
 
                         <p className="mb-0 mt-6 text-center text-[26px] font-normal leading-[36px] text-gray-200 md:text-left">
-                            Search & refactor code across any size codebase, plus write & fix code fast with Cody, the 
+                            Search & refactor code across any size codebase, plus write & fix code fast with Cody, the
                             AI that uses your code graph as context.
                         </p>
                         <div className="flex flex-col items-center md:items-start">
@@ -384,8 +384,8 @@ const HomeHero: FunctionComponent = () => {
                             </Heading>
                             <p className="mb-0 text-[18px] text-gray-200">
                                 Write, fix, and maintain code with the most powerful & accurate AI coding assistant.
-                                Cody uses the code graph to understand your entire codebase and help developers write and ship 
-                                code with autocomplete and commands.
+                                Cody uses the code graph to understand your entire codebase and help developers write
+                                and ship code with autocomplete and commands.
                             </p>
                             <Link
                                 href="/cody"
@@ -475,15 +475,8 @@ const AvailabilityIcon: React.FC<AvailabilityIconProps> = ({
     )
 }
 
-export const getStaticProps: GetStaticProps<HomeProps> = () => {
-    try {
-        const tweets = HOME_PAGE_TWEET_IDS.map(tweetId => Tweets[tweetId] as any)
-
-        return { props: { tweets } }
-    } catch (error) {
-        console.error('Error fetching tweets:', error)
-        return { props: { tweets: [] } }
-    }
-}
+export const getStaticProps: GetStaticProps<HomeProps> = async () => ({
+    props: { tweets: await preloadTweets(HOME_PAGE_TWEET_IDS) },
+})
 
 export default Home

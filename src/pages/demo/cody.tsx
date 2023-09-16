@@ -19,9 +19,8 @@ import {
 } from '../../components'
 import { DemoVideo } from '../../components/DemoVideo'
 import { useAuthModal } from '../../context/AuthModalContext'
-// eslint-disable-next-line import/extensions
-import Tweets from '../../data/tweets.json'
 import { EventName, getEventLogger } from '../../hooks/eventLogger'
+import { preloadTweets } from '../../util'
 import { CODY_PAGE_TWEET_IDS } from '../constants'
 
 import styles from '../../styles/CustomHubspotForm.module.scss'
@@ -203,15 +202,8 @@ const DemoCodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
     )
 }
 
-export const getStaticProps: GetStaticProps<CodyProps> = () => {
-    try {
-        const tweets = CODY_PAGE_TWEET_IDS.map(tweetId => Tweets[tweetId] as any)
-
-        return { props: { tweets } }
-    } catch (error) {
-        console.error('Error fetching tweets:', error)
-        return { props: { tweets: [] } }
-    }
-}
+export const getStaticProps: GetStaticProps<CodyProps> = async () => ({
+    props: { tweets: await preloadTweets(CODY_PAGE_TWEET_IDS) },
+})
 
 export default DemoCodyPage
