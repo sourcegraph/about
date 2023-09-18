@@ -340,7 +340,7 @@ Cody scales up to the very biggest code bases in the world. And even though Cody
 
 Ahem. As I was saying, like Baby AWS, Cody is *also* a baby with special powers, and honestly… we don’t know how powerful it’s going to get. It seems to be accelerating, if anything.
 
-Oh, and anyone can [sign up to get access](https://sourcegraph.typeform.com/cody-signup).
+Oh, and anyone can ~sign up to get access~ [start using Cody now](https://cody.dev). _(Edited after Cody was released.)_
 
 OK so anyway here’s how Cody works:
 
