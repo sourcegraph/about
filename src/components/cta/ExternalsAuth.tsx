@@ -1,9 +1,12 @@
+import { useEffect } from 'react'
+
 import classNames from 'classnames'
 import Cookies from 'js-cookie'
 import GithubIcon from 'mdi-react/GithubIcon'
 import Link from 'next/link'
 
 import { EventName, getEventLogger } from '../../hooks/eventLogger'
+import { getAuthButtonsTracker } from '../../lib/utils'
 
 export interface AuthProvider {
     serviceType: 'github' | 'gitlab'
@@ -55,6 +58,36 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
     dark,
     className,
 }) => {
+    useEffect(() => {
+        const { buttonId, conversionId } = getAuthButtonsTracker(authProvider)
+        const script = document.createElement('script')
+        script.async = true
+        script.innerHTML = `
+            document.getElementById("${buttonId}").addEventListener("click", function() {
+                !function(s,a,e,v,n,t,z) {
+                    if(s.saq) return;
+                    n=s.saq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                    if(!s._saq)s._saq=n;
+                    n.push=n;
+                    n.loaded=!0;
+                    n.version='1.0';
+                    n.queue=[];
+                    t=a.createElement(e);
+                    t.async=!0;
+                    t.src=v;
+                    z=a.getElementsByTagName(e)[0];
+                    z.parentNode.insertBefore(t,z)
+                }(window,document,'script','https://tags.srv.stackadapt.com/events.js');
+                saq('conv', '${conversionId}');
+            });
+        `
+        document.head.append(script)
+
+        return () => {
+            script.remove()
+        }
+    }, [authProvider])
+
     const handleOnClick = (): void => {
         const eventArguments = {
             type: authProvider,
@@ -68,6 +101,7 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
             domain: 'sourcegraph.com',
         })
     }
+
     return authProvider === 'github' ? (
         <Link
             href="https://sourcegraph.com/.auth/github/login?pc=https%3A%2F%2Fgithub.com%2F%3A%3Ae917b2b7fa9040e1edd4&redirect=/get-cody"
@@ -77,13 +111,14 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
                 className
             )}
             onClick={handleOnClick}
+            id="githubButton"
         >
             <GithubIcon className="pr-2" />
             {label}
         </Link>
     ) : (
         <Link
-            href="https://sourcegraph.com/.auth/gitlab/login?pc=https%3A%2F%2Fgitlab.com%2F%3A%3A262309265ae76179773477bd50c93c7022007a4810c344c69a7371da11949c48&redirect=/get-cody"
+            href="https://sourcegraph.com/.auth/gitlab/login?pc=https%3A%2F%2Fgitlab.com%2F%3A%3Ab45ecb474e92c069567822400cf73db6e39917635bf682f062c57aca68a1e41c&redirect=/get-cody"
             className={classNames(
                 `btn hover:sg-bg-hover-external-auth-button flex items-center px-4 hover:text-black md:h-12 md:px-6 md:text-lg ${
                     dark ? 'sg-gitlab-bg-color hover:btn-primary text-white ' : 'btn-inverted-primary text-black'
@@ -91,6 +126,7 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
                 className
             )}
             onClick={handleOnClick}
+            id="gitlabButton"
         >
             <GitlabColorIcon className="pr-2" />
             {label}

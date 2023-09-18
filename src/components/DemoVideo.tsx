@@ -6,7 +6,7 @@ import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 
 const VIDEOS: Record<
-    'homepage-demo-202301' | 'cody-demo-202305',
+    'homepage-demo-202301' | 'cody-demo-202305' | 'cody-promo-202306',
     { poster: string; track: string; mp4: string; webm: string; dimensions: number }
 > = {
     // Demo of Sourcegraph full platform
@@ -23,6 +23,14 @@ const VIDEOS: Record<
         track: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-use-cases-202305.vtt',
         webm: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-use-cases-202305.webm',
         mp4: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-use-cases-202305.mp4',
+        dimensions: 16 / 9,
+    },
+    // June 2023 Cody video
+    'cody-promo-202306': {
+        poster: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-promo-202306-poster.png',
+        track: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-promo-202306.vtt',
+        webm: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-promo-202306.webm',
+        mp4: 'https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/cody-promo-202306.mp4',
         dimensions: 16 / 9,
     },
 } as const

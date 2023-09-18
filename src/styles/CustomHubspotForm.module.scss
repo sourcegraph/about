@@ -169,3 +169,38 @@
         display: none;
     }
 }
+
+.gatedPageForm {
+    :global(.hs-input) {
+        border-radius: 8px;
+    }
+}
+
+.blogForm {
+    :global(.hs-input),
+    :global(.hs-input) {
+        max-width: 301px;
+        width: 100%;
+        border: none;
+        height: 40px;
+        background-color: var(--sg-color-white) !important;
+        color: var(--sg-color-gray-700) !important;
+        border-bottom: 1px solid var(--sg-color-blurple-300) !important;
+        padding: 8px 12px;
+        outline: none;
+        border-radius: 0;
+    }
+
+    :global(.hs-email) {
+        margin: 0;
+    }
+
+    :global(.actions) {
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    :global(.form-target) {
+        width: 100%;
+    }
+}

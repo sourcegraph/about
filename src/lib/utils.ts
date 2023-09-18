@@ -93,3 +93,22 @@ export const debounce = <F extends (...args: any[]) => void>(
         }, delay)
     }
 }
+
+interface ButtonTrackerData {
+    buttonId: string
+    conversionId: string
+}
+
+export const getAuthButtonsTracker = (provider: 'github' | 'gitlab'): ButtonTrackerData => {
+    if (provider === 'github') {
+        return {
+            buttonId: 'githubButton',
+            conversionId: 'IE36JRZchpg6WWkoBm1cNN',
+        }
+    }
+
+    return {
+        buttonId: 'gitlabButton',
+        conversionId: 'sL3CVtxUlXaAvWjHZb7PTW',
+    }
+}

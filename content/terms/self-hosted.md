@@ -5,7 +5,7 @@ title: Terms of Service for Self-hosted Sourcegraph Instances
 
 Last modified: June 28, 2023
 
-See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Econtent/terms/self-hosted%5C.md%7C%5Edocs/terms-self-hosted%5C.md+type:diff&patternType=standard) since the [previous version](/terms/archives/self-hosted/2023-06-28/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives).
+See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Econtent/terms/self-hosted%5C.md%7C%5Edocs/terms-self-hosted%5C.md+type:diff&patternType=standard) since the [previous version](/terms/archives/self-hosted/2023-03-30/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives).
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of self-hosted Sourcegraph instances.
 

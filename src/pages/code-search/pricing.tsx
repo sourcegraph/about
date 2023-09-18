@@ -172,10 +172,12 @@ const PricingPage: FunctionComponent = () => (
                 />
             </div>
 
-            <div className="col-span-full mb-sm md:col-span-10 md:col-start-2 md:mb-0 text-center rounded border-t-16 border-gray-200 shadow-lg border-t-violet-500 p-xs ">
+            <div className="col-span-full mb-sm rounded border-t-16 border-gray-200 border-t-violet-500 p-xs text-center shadow-lg md:col-span-10 md:col-start-2 md:mb-0 ">
                 <h2 className="mb-sm font-semibold">Free</h2>
                 <h3 className="my-sm text-lg font-normal">
-                    Self-deploy Sourcegraph Code Search for free, for up to 10 users. Perfect for hobbyists and solo developers. <Link href="/contact/request-info?form_submission_source=pricing-free">Contact us</Link> any time to start an Enterprise trial.
+                    Self-deploy Sourcegraph Code Search for free, for up to 10 users. Perfect for hobbyists and solo
+                    developers. <Link href="/contact/request-info?form_submission_source=pricing-free">Contact us</Link>{' '}
+                    any time to start an Enterprise trial.
                 </h3>
                 <FreeButton />
             </div>

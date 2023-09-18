@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { ContentSection, Layout } from '../../components'
+import { Badge, ContentSection, Layout } from '../../components'
 import { PricingPlan } from '../../components/Pricing'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 
@@ -53,9 +53,10 @@ const PricingPage: FunctionComponent = () => (
         hero={
             <div className="container mx-auto pt-5xl text-center">
                 <h1 className="flex items-center justify-center gap-3">
-                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[48px] w-[48px]" /> Cody pricing
-                    and plans
+                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[48px] w-[48px]" /> Cody{' '}
+                    <Badge size="small" text="BETA" color="violet" />
                 </h1>
+                <p className="mt-6 text-3xl text-black">pricing and plans</p>
             </div>
         }
     >
@@ -108,7 +109,7 @@ const PricingPage: FunctionComponent = () => (
                         </h3>
                     }
                     price="Contact us"
-                    priceDetail="Usage-based pricing"
+                    priceDetail="Beta access available to Code Search customers"
                     buttons={<ContactUsButton />}
                     beforeFeatures={<p>Everything in the free tier, plus:</p>}
                     features={[
@@ -116,18 +117,13 @@ const PricingPage: FunctionComponent = () => (
                         { topic: 'User management' },
                         { topic: 'Single-tenant deployment' },
                         { topic: 'Audit logging' },
-                        { topic: 'No rate limits' },
+                        { topic: 'Pooled organization usage' },
+                        { topic: 'Daily rate limits while in beta' },
                         { topic: 'Web and API access' },
-                        { topic: 'Consolidated billing' },
                         { topic: 'Configurable LLMs' },
+                        { topic: 'Bring-your-own Key for Anthropic and OpenAI' },
                         { topic: '24/5 support' },
                     ]}
-                    afterFeatures={
-                        <p>
-                            Enterprise-wide license agreements, committed volume pricing, and bring-your-own-key for
-                            Anthropic/OpenAI are available by request.
-                        </p>
-                    }
                     {...PLAN_COLORS.enterprise}
                 />
             </div>

@@ -4,7 +4,10 @@ import { FunctionComponent, useRef, useState } from 'react'
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import PlusIcon from 'mdi-react/PlusIcon'
+import { GetStaticProps } from 'next'
 import Link from 'next/link'
+import { EmbeddedTweet, TweetSkeleton } from 'react-tweet'
+import { Tweet } from 'react-tweet/api'
 
 import {
     ContentSection,
@@ -12,16 +15,22 @@ import {
     CustomerLogos,
     Heading,
     ExternalsAuth,
-    EmailAuth,
     VideoCarousel,
     CallToActionWithCody,
     Badge,
 } from '../components'
-// import { TwitterEmbed } from '../components/EmbedTweet'
 import { breakpoints } from '../data/breakpoints'
+// eslint-disable-next-line import/extensions
+import Tweets from '../data/tweets.json'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 import { useInView } from '../hooks/useInView'
 import { useWindowWidth } from '../hooks/windowWidth'
+
+import { HOME_PAGE_TWEET_IDS } from './constants'
+
+interface HomeProps {
+    tweets: (Tweet | undefined)[]
+}
 
 interface AvailabilityIconProps {
     href: string
@@ -36,32 +45,32 @@ interface AvailabilityIconProps {
 
 const carouselVideos = [
     {
-        title: 'Context-aware chat',
-        description: 'Cody can explain what code is doing—at a high level or in detail.',
-        video: 'https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_explain_June23.mp4',
-        link: '/cody',
-    },
-    {
         title: 'Autocomplete',
-        description: 'Cody offers code autocompletions in real time as you code or type comments.',
+        description: 'Cody autocompletes single lines, or whole functions, in real time as you code.',
         video: 'https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_autocomplete_June23.mp4',
         link: '/cody',
     },
     {
-        title: 'Recipes',
-        description: 'Generate unit tests, summarize changes, or create docs with prebuilt recipes.',
-        video: 'https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_unittest_June23.mp4',
+        title: 'Context-aware chat',
+        description: 'Cody answers questions using deep knowledge of your codebase.',
+        video: 'https://storage.googleapis.com/sourcegraph-assets/cody/homepage_sept2023/Context_Chat_WebSept.mp4',
+        link: '/cody',
+    },
+    {
+        title: 'Commands',
+        description: 'Generate unit tests, find code smells, or create docs with built-in commands.',
+        video: 'https://storage.googleapis.com/sourcegraph-assets/cody/homepage_sept2023/Unit_Test_WebSept.mp4',
         link: '/cody',
     },
     {
         title: 'Inline chat',
-        description: 'Cody edits and improves code directly using inline instructions.',
+        description: 'Edit and improve code quickly by giving Cody inline instructions.',
         video: 'https://storage.googleapis.com/sourcegraph-assets/cody/website_june2023/cody_inline_June23.mp4',
         link: '/cody',
     },
 ]
 
-const Home: FunctionComponent = () => {
+const Home: FunctionComponent<HomeProps> = ({ tweets }) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
 
@@ -118,33 +127,33 @@ const Home: FunctionComponent = () => {
                 </ContentSection>{' '}
             </div>
 
-            {/* <ContentSection
+            <ContentSection
                 parentClassName="!pb-0"
-                className="flex flex-col items-center justify-center md:pt-4 md:pb-[46px]"
+                className="-mb-[25px] flex flex-col items-center justify-center md:-mb-[97px] md:pt-4"
             >
                 <Heading size="h3" className="mb-16 text-center !text-4xl font-semibold text-white md:mb-16">
-                    See what devs are saying about Cody
+                    See what devs are saying about Cody (beta)
                 </Heading>
-                <div className="relative -mt-[10px] grid w-full grid-cols-1 gap-x-6 md:grid-cols-2">
+                <div className="relative -mt-[25px] grid w-full grid-cols-1 gap-x-6 md:grid-cols-2">
                     <div className="relative grid auto-rows-min grid-cols-1">
-                        <TwitterEmbed
-                            tweetId="1670706886948139008"
-                            className="mb-1 flex justify-center xl:-mr-[78px]"
-                        />
-                        <TwitterEmbed
-                            tweetId="1669244167317233664"
-                            className="mb-1 flex justify-center xl:-mr-[78px]"
-                        />
+                        <div className="mb-1 -mt-[30px] flex justify-center md:mt-0 xl:-mr-[80px]">
+                            {tweets[0] ? <EmbeddedTweet key={tweets[0].id_str} tweet={tweets[0]} /> : <TweetSkeleton />}
+                        </div>
+
+                        <div className="mb-1 -mt-[30px] flex justify-center xl:-mr-[80px]">
+                            {tweets[1] ? <EmbeddedTweet key={tweets[1].id_str} tweet={tweets[1]} /> : <TweetSkeleton />}
+                        </div>
                     </div>
-                    <div className="relative grid grid-cols-1">
-                        <TwitterEmbed
-                            tweetId="1653717721639419905"
-                            className="mb-1 flex justify-center xl:-ml-[78px]"
-                        />
-                        <TwitterEmbed tweetId="1674180760431910913" className="flex justify-center xl:-ml-[78px]" />
+                    <div className="relative grid auto-rows-min grid-cols-1">
+                        <div className="mb-1 -mt-[30px] flex justify-center md:mt-0 xl:-ml-[80px]">
+                            {tweets[2] ? <EmbeddedTweet key={tweets[2].id_str} tweet={tweets[2]} /> : <TweetSkeleton />}
+                        </div>
+                        <div className="-mt-[30px] flex justify-center xl:-ml-[80px]">
+                            {tweets[3] ? <EmbeddedTweet key={tweets[3].id_str} tweet={tweets[3]} /> : <TweetSkeleton />}
+                        </div>
                     </div>
                 </div>
-            </ContentSection> */}
+            </ContentSection>
 
             <CallToActionWithCody className="-mt-[10px] md:mt-32" />
         </Layout>
@@ -180,20 +189,20 @@ const HomeHero: FunctionComponent = () => {
                     <div className="hero-content mx-auto flex w-full max-w-[567px] flex-col items-center px-0 md:mx-0 md:items-start">
                         <Heading
                             size="h1"
-                            className="w-full text-center !text-[42px] leading-[65px] text-white md:max-w-[516px] md:text-start md:!text-[62px]"
+                            className="w-full text-center !text-[42px] leading-[65px] text-white md:max-w-[516px] md:text-start md:!text-[58px]"
                         >
-                            Meet Cody, your <br />
+                            Find & fix code with<br />
                             <span className="sg-bg-gradient-infrared bg-clip-text text-transparent">
-                                AI coding assistant
+                                Code Search + AI
                             </span>
                         </Heading>
 
                         <p className="mb-0 mt-6 text-center text-[26px] font-normal leading-[36px] text-gray-200 md:text-left">
-                            Cody writes code and answers questions using your own code graph as context—even in complex
-                            codebases with multiple code hosts.
+                            Search & refactor code across any size codebase, plus write & fix code fast with Cody, the 
+                            AI that uses your code graph as context.
                         </p>
                         <div className="flex flex-col items-center md:items-start">
-                            <p className="mt-9 text-xl font-semibold text-white">Sign up to get free access 👇</p>
+                            <p className="mt-9 text-xl font-semibold text-white">Sign up to get Cody for free 👇</p>
                             <div className="flex max-w-[319px] flex-col">
                                 <div className="mb-2 flex gap-2">
                                     <ExternalsAuth
@@ -209,11 +218,6 @@ const HomeHero: FunctionComponent = () => {
                                         source="about-home"
                                     />
                                 </div>
-                                <EmailAuth
-                                    icon={true}
-                                    className="sg-email-auth-btn col-span-2 h-12 border bg-white bg-opacity-10 text-lg !font-normal text-white"
-                                    source="about-home"
-                                />
                             </div>
                             <p className="mt-4 text-sm text-violet-300 opacity-70">
                                 By registering, you agree to our{' '}
@@ -283,7 +287,7 @@ const HomeHero: FunctionComponent = () => {
                                 alt="JetBrains (IntelliJ, WebStorm, etc.)"
                                 onHover={() => setHoveredImageText('JetBrains (IntelliJ, WebStorm, etc.)')}
                                 onMouseLeave={() => setHoveredImageText('')}
-                                eventName={EventName.JOIN_IDE_WAITLIST}
+                                eventName={EventName.DOWNLOAD_IDE}
                                 type="IntelliJ"
                                 className="rounded-[10px] border border-gray-200 border-opacity-20"
                             />
@@ -352,7 +356,7 @@ const HomeHero: FunctionComponent = () => {
                     <img
                         loading="lazy"
                         alt="Home Illustartion"
-                        src="/home/glow-mobile.svg"
+                        src="/home/glow.svg"
                         className={classNames(
                             'py-6 transition-opacity duration-300 md:hidden',
                             isCodyGraphInView ? 'opacity-100 delay-[100ms]' : 'opacity-10'
@@ -363,7 +367,7 @@ const HomeHero: FunctionComponent = () => {
                     <img
                         loading="lazy"
                         alt="Home Illustartion"
-                        src="/home/glow-desktop.svg"
+                        src="/home/glow.svg"
                         className={classNames(
                             'mx-auto hidden h-[465px] pt-2 pb-[73px] transition-opacity duration-300 md:block md:w-[859px] lg:w-[1005px]',
                             isCodyGraphInView ? 'opacity-100 delay-[100ms]' : 'opacity-10'
@@ -376,19 +380,19 @@ const HomeHero: FunctionComponent = () => {
                     <div className="sg-bg-gradient-cip-cody mb-6 grid grid-cols-1 gap-x-[30px] overflow-hidden rounded-lg border border-white border-opacity-[0.04] md:grid-cols-2">
                         <div className="flex flex-col items-start gap-6 px-6 py-8 md:gap-4 md:py-[84.5px] md:pl-20">
                             <Heading size="h4" className="text-5xl text-white md:text-[52px]">
-                                Cody
+                                Cody <Badge size="small" text="BETA" color="light-gray" />
                             </Heading>
                             <p className="mb-0 text-[18px] text-gray-200">
                                 Write, fix, and maintain code with the most powerful & accurate AI coding assistant.
-                                Cody uses the code graph to understand your entire codebase and help developers focus on
-                                writing and shipping code.
+                                Cody uses the code graph to understand your entire codebase and help developers write and ship 
+                                code with autocomplete and commands.
                             </p>
                             <Link
                                 href="/cody"
                                 className="hover:sg-bg-hover-link-button flex items-center justify-center rounded-[5px] bg-white py-2 px-6 font-semibold text-violet-500"
                                 onClick={() => handleOnClick(EventName.CODY_LEARN_MORE_CTA)}
                             >
-                                Learn more about Cody
+                                Learn more about Cody (beta)
                             </Link>
                         </div>
                         <div className="mb-8 -mr-[64px] md:mb-0 md:mr-0">
@@ -415,7 +419,15 @@ const HomeHero: FunctionComponent = () => {
                                 </Link>
                                 <Link
                                     href="/contact/request-info"
+<<<<<<< Updated upstream
                                     className="flex items-center justify-center gap-[10px] pb-4 font-semibold text-white lg:pb-0 hover:text-violet-300 hover:underline"
+=======
+<<<<<<< HEAD
+                                    className="flex items-center justify-center gap-[10px] pb-4 font-semibold text-white lg:pb-0 hover:text-violet-300 hover:underline"
+=======
+                                    className="flex items-center justify-center gap-[10px] pb-4 font-semibold text-white hover:text-violet-300 hover:underline lg:pb-0"
+>>>>>>> 57aa6e086ab5d1ed05b01e0faf971a93557e42a7
+>>>>>>> Stashed changes
                                     onClick={() => handleOnClick(EventName.SEARCH_LEARN_MORE_CTA)}
                                 >
                                     Learn more about Enterprise <ChevronRightIcon />
@@ -469,6 +481,17 @@ const AvailabilityIcon: React.FC<AvailabilityIconProps> = ({
             <img src={src} alt={alt} />
         </Link>
     )
+}
+
+export const getStaticProps: GetStaticProps<HomeProps> = () => {
+    try {
+        const tweets = HOME_PAGE_TWEET_IDS.map(tweetId => Tweets[tweetId] as any)
+
+        return { props: { tweets } }
+    } catch (error) {
+        console.error('Error fetching tweets:', error)
+        return { props: { tweets: [] } }
+    }
 }
 
 export default Home

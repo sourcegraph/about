@@ -36,11 +36,19 @@ const LEADERS: {
     {
         name: 'Steve Yegge',
         image: '/staff/avatar-stevey.png',
-        title: 'Head of Engineering',
+        title: 'Head of Engineering (Cody and AI)',
         bio: 'https://handbook.sourcegraph.com/company/team#steve-yegge',
         github: 'https://github.com/steveyegge',
         linkedin: 'https://www.linkedin.com/in/steveyegge/',
         twitter: 'https://twitter.com/steve_yegge',
+    },
+    {
+        name: 'Erika Rice Scherpelz',
+        image: '/staff/erika-rice-scherpelz.png',
+        title: 'Head of Engineering (Search and Platform)',
+        bio: 'https://handbook.sourcegraph.com/team/#erika-rice-scherpelz',
+        github: 'https://github.com/erikars',
+        linkedin: 'https://www.linkedin.com/in/erikars/',
     },
     {
         name: 'Dan Adler',
@@ -60,11 +68,12 @@ const LEADERS: {
         linkedin: 'https://www.linkedin.com/in/tammy-zhu-30040820/',
     },
     {
-        name: 'Greg Bastis',
-        image: '/staff/avatar-greg.jpg',
-        title: 'VP Sales',
-        bio: 'https://handbook.sourcegraph.com/company/team#greg-bastis',
-        linkedin: 'https://www.linkedin.com/in/gregbastis/',
+        name: 'Chris Sells',
+        image: '/staff/avatar-chris.jpg',
+        title: 'Head of Product',
+        bio: 'https://handbook.sourcegraph.com/team/#chris-sells',
+        github: 'https://github.com/csells',
+        linkedin: 'https://www.linkedin.com/in/csells/',
     },
     {
         name: 'Carly Jones',
@@ -81,6 +90,15 @@ const LEADERS: {
         bio: 'https://handbook.sourcegraph.com/company/team#aimee-menne',
         github: 'https://github.com/amenne',
         linkedin: 'https://www.linkedin.com/in/aimee-menne-8343487/',
+    },
+    {
+        name: 'Raman Sharma',
+        image: '/staff/raman-sharma.png',
+        title: 'Chief Marketing Officer',
+        bio: 'https://handbook.sourcegraph.com/team/',
+        github: 'https://github.com/creativefisher',
+        linkedin: 'https://www.linkedin.com/in/ramansharma',
+        twitter: 'https://twitter.com/rasharm',
     },
 ]
 

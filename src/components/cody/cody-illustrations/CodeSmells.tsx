@@ -49,7 +49,7 @@ export const CodeSmells: FunctionComponent<CodeSmellsProps> = ({ answerDelay = 0
 }`
 
     const codyAnswer = "Consider using the 'map' method for array iteration instead of a 'for' loop."
-    const codeAnswer = 'users.map(usr => ({ ...usr, age: getAge(user.dateOfBirth)}))'
+    const codeAnswer = 'users.map(user => ({ ...user, age: getAge(user.dateOfBirth)}))'
 
     return (
         <div>

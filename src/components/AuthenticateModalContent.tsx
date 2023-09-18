@@ -2,7 +2,6 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { EmailAuth } from './cta/EmailAuth'
 import { ExternalsAuth } from './cta/ExternalsAuth'
 
 interface Props {
@@ -26,12 +25,6 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source }) =
             className="mt-4"
             source={source}
         />
-        <div className="mt-4 flex flex-row text-gray-500">
-            Or,&nbsp;
-            <span>
-                <EmailAuth label="continue with email" className="mt-0 !p-0 text-violet-500" source={source} />
-            </span>
-        </div>
         <p className="mt-5 text-sm text-gray-400">
             By registering, you agree to our{' '}
             <Link href="/terms" className="text-violet-400">

@@ -1,7 +1,5 @@
 import { FunctionComponent, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
-import CloseIcon from 'mdi-react/CloseIcon'
-import SearchIcon from 'mdi-react/SearchIcon'
 import Link from 'next/link'
 
 import {
@@ -14,6 +12,7 @@ import {
     useFilters,
     CallToActionWithCody,
     Heading,
+    SearchInput,
 } from '../components'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 
@@ -202,29 +201,7 @@ const Resources: FunctionComponent = () => {
             >
                 <div className="w-full md:max-w-[371px]">
                     <div className="flex w-full items-center justify-between">
-                        <div className="w-full">
-                            <Heading size="h6" className="pb-4 text-gray-700">
-                                SEARCH
-                            </Heading>
-                            <div className="relative flex w-full items-center">
-                                <SearchIcon size={20} className="absolute left-3 text-gray-400" />
-                                <input
-                                    type="text"
-                                    value={searchTerm}
-                                    onChange={event => setSearchTerm(event.target.value)}
-                                    className="h-[54px] w-full rounded-lg border border-gray-300 py-2 pl-12 pr-[16px] focus:border-2 focus:border-violet-400 focus:shadow-card focus:outline-none"
-                                />
-                                {searchTerm && (
-                                    <button
-                                        type="button"
-                                        className="absolute right-2 top-4 text-gray-400"
-                                        onClick={() => setSearchTerm('')}
-                                    >
-                                        <CloseIcon size={24} className="mr-1 inline align-top" />
-                                    </button>
-                                )}
-                            </div>
-                        </div>
+                        <SearchInput onSearch={setSearchTerm} label="SEARCH" />
                     </div>
 
                     <Filters

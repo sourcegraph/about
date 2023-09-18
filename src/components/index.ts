@@ -31,7 +31,7 @@ export { TwoColumnSection } from './TwoColumnSection'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
 export { Tooltip } from './Tooltip'
-export { TwitterEmbed } from './EmbedTweet'
+export { SearchInput } from './SearchInput'
 export {
     CodeCompletions,
     CodeSmells,
@@ -62,6 +62,7 @@ export {
 export { Layout } from './Layout/Layout'
 export { ContentPage } from './ContentPage'
 export { GatedResourceLayout } from './GatedResourceLayout' // Webinars, Guides, Reports
+export { GatedPageLayout } from './GatedPageLayout'
 
 // Resources
 export { Filters, type Filter, Card, ResourceCard, resourceItems, type Resource, useFilters } from './Resources'
@@ -77,3 +78,8 @@ export { FeatureRoadMap } from './Own'
 
 // Cody
 export { CodyFeatureCard } from './CodyFeatureCard'
+export { CodySteps } from './cody/CodySteps'
+export { CodebaseAwareIntelligence } from './cody/CodebaseAwareIntelligence'
+export { AiGeneratedCode } from './cody/AiGeneratedCode'
+export { CodyTweets } from './cody/CodyTweets'
+export { CodyAnimation } from './CodyAnimation/CodyAnimation'

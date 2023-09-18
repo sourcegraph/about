@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { buttonLocation } from '../../data/tracking'
 import { Heading } from '../Heading'
 
-import { EmailAuth } from './EmailAuth'
 import { ExternalsAuth } from './ExternalsAuth'
 import { MeetWithProductExpertButton } from './MeetWithProductExpertButton'
 
@@ -34,7 +33,7 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
         <div className="z-10 flex flex-1 flex-col">
             <div className="max-w-[444px] md:self-end">
                 <Heading className="mb-[10px] !text-[36px] text-white" size="h2">
-                    Try Cody for free
+                    Try Cody for free (beta)
                 </Heading>
                 <p className="mb-0 text-lg text-gray-200">
                     Cody writes code and answers questions for you, speeding up work and keeping devs in flow.
@@ -51,12 +50,6 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
                         authProvider="gitlab"
                         label="GitLab"
                         source="about-home"
-                    />
-                    <EmailAuth
-                        icon={true}
-                        className="sg-email-auth-btn w-fit border bg-white bg-opacity-10 px-4 !font-normal text-white md:h-12 md:px-6 md:text-lg"
-                        source="about-home"
-                        label="Email"
                     />
                 </div>
                 <p className="mt-4 mb-0 text-[14px] text-white opacity-70">
@@ -82,7 +75,7 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
         <div className="my-[42px] border-b border-gray-400 md:my-0 md:mx-[42px] md:h-[266px] md:border-l" />
         <div className="z-10 flex flex-1 flex-col">
             <Heading size="h4" className="mb-4 text-white">
-                Cody for Enterprise
+                Cody for Enterprise (beta)
             </Heading>
             <p className="mb-8 max-w-[444px] text-lg text-gray-200">
                 Cody with Sourcegraph Enterprise uses the code graph to provide context-aware answers based on your own
@@ -92,7 +85,15 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
                 <Link
                     href="/cody#contact-form"
                     title="Get Cody for Enterprise"
+<<<<<<< Updated upstream
                     className="rounded-[5px] border border-white py-2 px-6 text-white hover:bg-color-violet-600"
+=======
+<<<<<<< HEAD
+                    className="rounded-[5px] border border-white py-2 px-6 text-white hover:bg-color-violet-600"
+=======
+                    className="hover:bg-color-violet-600 rounded-[5px] border border-white py-2 px-6 text-white"
+>>>>>>> 57aa6e086ab5d1ed05b01e0faf971a93557e42a7
+>>>>>>> Stashed changes
                 >
                     Get Cody for Enterprise
                 </Link>

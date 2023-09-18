@@ -1,5 +1,7 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
+import classNames from 'classnames'
+
 import styles from './HubSpotForm.module.css'
 
 declare global {
@@ -54,6 +56,7 @@ export interface HubSpotFormProps {
     onFormSubmitted?: () => void
     inlineMessage?: string
     chiliPiper?: boolean
+    overrideFormShorten?: boolean
 }
 
 interface ChiliPiperAPIProps {
@@ -256,6 +259,7 @@ const onFormReady = (form: HTMLFormElement): void => {
  * @param options.onFormSubmitted - a callback that runs after a form submission
  * @param options.inlineMessage - a message to display after a form submission
  * @param options.chiliPiper - a boolean prop to enable/disable ChiliPiper
+ * @param options.overrideFormShorten - a boolean prop to override `display:none` made by clearbitScript
  * @returns - a div element with an id where the HubSpot form renders
  */
 export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
@@ -264,6 +268,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
     onFormSubmitted,
     inlineMessage = 'Thank you for your interest in Sourcegraph. We will be in contact with you soon!',
     chiliPiper,
+    overrideFormShorten,
 }) => {
     const [formCreated, setFormCreated] = useState<boolean>(false)
 
@@ -325,5 +330,10 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
         }
     }, [formId, masterFormName, onFormSubmitted, inlineMessage, chiliPiper, formCreated])
 
-    return <div id="form-target" className={styles.container} />
+    return (
+        <div
+            id="form-target"
+            className={classNames(styles.container, overrideFormShorten && styles.overrideFormShorten)}
+        />
+    )
 }

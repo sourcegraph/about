@@ -104,6 +104,16 @@ export default class MyDocument extends Document {
                         `}
                     </Script>
 
+                    {/* StackAdapt Pixel */}
+                    <Script id="stack-adapt-pixel" data-cookieconsent="ignore" strategy="afterInteractive">
+                        {`
+                            !function(s,a,e,v,n,t,z){if(s.saq)return;n=s.saq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                            if(!s._saq)s._saq=n;n.push=n;n.loaded=!0;n.version='1.0';n.queue=[];t=a.createElement(e);
+                            t.async=!0;t.src=v;z=a.getElementsByTagName(e)[0];z.parentNode.insertBefore(t,z)}(window,document,'script','https://tags.srv.stackadapt.com/events.js');
+                            saq('ts', 'RhgJyv1POYn3YCYB1MQ6Gw');
+                        `}
+                    </Script>
+
                     {/* Plausible Analytics (GA Alternative) */}
                     {/* Plausible recommends this in the head, but Next.js recommends afterInteractive */}
                     <Script
