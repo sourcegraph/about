@@ -157,6 +157,12 @@ const DemoCodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                             label="GitLab"
                             source="cody"
                         />
+                        <ExternalsAuth
+                            className="w-fit justify-center !font-normal"
+                            authProvider="google"
+                            label="Google"
+                            source="cody"
+                        />
                     </div>
                     <p className="mt-4 mb-0 text-[14px] text-violet-300 opacity-70">
                         By registering, you agree to our{' '}
