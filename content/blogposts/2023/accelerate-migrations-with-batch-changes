@@ -34,9 +34,6 @@ The combination of Batch Changes with project-management tools like Issues and E
 A huge benefit of batch changes is that they run in a modular container architecture. This lets you run multiple containers, stepwise, over the repository files in a completely isolated virtual environment.
 
 Batch changes will:
-
-
-
 * Run your migration script(s) via auto-scaling executors in the cloud
 * Preview the changesets
 * Automate the creation of merge requests
@@ -59,9 +56,6 @@ Sourcegraph Batch Changes, used in conjunction with GitLab Issues and Epics, all
 ## Implementation Details
 
 At a high level, [this working example](https://gitlab.com/developers6370122/sourcegraph-batch-pnpm-examples/batch-change/-/tree/main?ref_type=heads) has a few key files:
-
-
-
 * batch-spec.yaml
 * createIssue.js
 * gitlab-script.Dockerfile
@@ -75,9 +69,6 @@ The batch spec file is the most important part of this process, because it ties 
 ```yaml
 
 steps:
-
-
-
 * run: # The command to run when the container starts
 
     container: # The container to use
@@ -111,9 +102,6 @@ The gitlab-script.Dockerfile and node-pnpm.Dockerfile are example Dockerfiles to
 ## Putting it all together
 
 The [example batch-spec.yaml](https://gitlab.com/developers6370122/sourcegraph-batch-pnpm-examples/batch-change/-/blob/main/batch-spec.yaml?ref_type=heads) has 3 steps:
-
-
-
 1. Use Ruby scripting to update package.json files in the repository
 2. Run “pnpm import” and delete lockfiles
 3. Run the createIssue.js script (which requires environment variables) and output the issue link to be used in the merge request description
@@ -142,9 +130,6 @@ Since we linked the issue in the merge request description of each changeset, Gi
 ### Tips
 
 This example was created as a minimum viable example to demonstrate this integration, and I’d like to give the following tips to anyone who tries to adapt it for their own use:
-
-
-
 * If it’s your first time using Batch Changes, run through our[ Quickstart guide](https://docs.sourcegraph.com/batch_changes/quickstart)
 * Refer to the Batch Changes[ reference docs](https://docs.sourcegraph.com/batch_changes/references)
 * Don’t forget to set the required environment variables and[ executor secrets](https://docs.sourcegraph.com/admin/executors/executor_secrets)!
