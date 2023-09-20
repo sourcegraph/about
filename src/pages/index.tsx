@@ -191,20 +191,21 @@ const HomeHero: FunctionComponent = () => {
                             size="h1"
                             className="w-full text-center !text-[42px] leading-[65px] text-white md:max-w-[516px] md:text-start md:!text-[58px]"
                         >
-                            Find & fix code with<br />
+                            Find & fix code with
+                            <br />
                             <span className="sg-bg-gradient-infrared bg-clip-text text-transparent">
                                 Code Search + AI
                             </span>
                         </Heading>
 
                         <p className="mb-0 mt-6 text-center text-[26px] font-normal leading-[36px] text-gray-200 md:text-left">
-                            Search & refactor code across any size codebase, plus write & fix code fast with Cody, the 
+                            Search & refactor code across any size codebase, plus write & fix code fast with Cody, the
                             AI that uses your code graph as context.
                         </p>
                         <div className="flex flex-col items-center md:items-start">
                             <p className="mt-9 text-xl font-semibold text-white">Sign up to get Cody for free 👇</p>
                             <div className="flex max-w-[319px] flex-col">
-                                <div className="mb-2 flex gap-2">
+                                <div className="mb-2 flex flex-wrap gap-2 md:flex-nowrap">
                                     <ExternalsAuth
                                         className="col-span-1 mt-1 w-full justify-center !font-normal"
                                         authProvider="github"
@@ -215,6 +216,12 @@ const HomeHero: FunctionComponent = () => {
                                         className="col-span-1 mt-1 w-full justify-center !font-normal"
                                         authProvider="gitlab"
                                         label="GitLab"
+                                        source="about-home"
+                                    />
+                                    <ExternalsAuth
+                                        className="col-span-1 mt-1 w-full justify-center !font-normal"
+                                        authProvider="google"
+                                        label="Google"
                                         source="about-home"
                                     />
                                 </div>
@@ -384,8 +391,8 @@ const HomeHero: FunctionComponent = () => {
                             </Heading>
                             <p className="mb-0 text-[18px] text-gray-200">
                                 Write, fix, and maintain code with the most powerful & accurate AI coding assistant.
-                                Cody uses the code graph to understand your entire codebase and help developers write and ship 
-                                code with autocomplete and commands.
+                                Cody uses the code graph to understand your entire codebase and help developers write
+                                and ship code with autocomplete and commands.
                             </p>
                             <Link
                                 href="/cody"

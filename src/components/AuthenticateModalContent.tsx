@@ -25,6 +25,13 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source }) =
             className="mt-4"
             source={source}
         />
+        <ExternalsAuth
+            authProvider="google"
+            label="Continue With Google"
+            dark={true}
+            className="mt-4"
+            source={source}
+        />
         <p className="mt-5 text-sm text-gray-400">
             By registering, you agree to our{' '}
             <Link href="/terms" className="text-violet-400">
