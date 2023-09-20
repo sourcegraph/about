@@ -32,13 +32,13 @@ You can now add a custom starter message that prepend chat requests to Cody by s
 }
 ```
 
-## Smarter Autocompletions with Increased Context Awareness
+### Smarter Autocompletions with Increased Context Awareness
 
 Cody now has greater awareness of the surrounding code context when providing completions. This increased context awareness results in smarter completions like useful docstrings in addition to avoiding variable name duplication. Cody can now provide more relevant suggestions based on what comes after your cursor.
 
 To enable, set `cody.autocomplete.advanced.model` to `claude-instant-infill`.
 
-## Higher Quality Unit Tests Generation
+### Higher Quality Unit Tests Generation
 
 We've enhanced unit test generation with framework detection and contextual scaffolding.
 
