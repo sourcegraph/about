@@ -28,7 +28,7 @@ You can now add a custom starter message that prepend chat requests to Cody by s
 
 ```json
 {
-    "cody.chat.preInstruction": "My name is Jeff."
+    "cody.chat.preInstruction": "I am a frontend engineer."
 }
 ```
 
