@@ -20,7 +20,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.12.
 
 ### User Onboarding and Sign-in Experience
 
-New users can now sign up for Cody using their Github and Gitlab account. 
+New users can now sign up and sign in for Cody using their Github and Gitlab accounts. 
 
 ### Cody Pre-Instructions
 
