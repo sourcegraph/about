@@ -174,23 +174,23 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
                     onClick={handleOnClick}
                     id="gitlabButton"
                 >
-                    <GitlabColorIcon className="h-8 w-8 pr-2" />
+                    <GitlabColorIcon className="h-9 w-9 pr-2" />
                     {label}
                 </Link>
             )
         case 'google':
             return (
                 <Link
-                    href="https://sourcegraph.com/.auth/openidconnect/login?pc=google"
+                    href="https://sourcegraph.com/.auth/openidconnect/login?pc=google&redirect=/get-cody"
                     className={classNames(
-                        'btn hover:sg-bg-hover-external-auth-button flex items-center px-4 hover:text-black md:h-12 md:px-4 md:text-lg',
-                        dark ? 'sg-gitlab-bg-color hover:btn-primary text-white ' : 'btn-inverted-primary text-black',
+                        'btn hover:sg-bg-hover-external-auth-button flex items-center pl-3 pr-3 hover:text-black md:h-12 md:text-lg',
+                        dark ? 'hover:btn-primary text-white ' : 'btn-inverted-primary text-black',
                         className
                     )}
                     onClick={handleOnClick}
                     id="googleButton"
                 >
-                    <GoogleColorIcon className="h-10 w-10" />
+                    <GoogleColorIcon className="h-11 w-11" />
                     <span className="pr-2">{label}</span>
                 </Link>
             )
