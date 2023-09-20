@@ -5,21 +5,22 @@ authors:
     url: https://handbook.sourcegraph.com/team/#kalan-chan
   - name: Tim Lucas
     url: https://handbook.sourcegraph.com/team/#tim-lucas
+  - name: Beatrix Woo
+    url: https://handbook.sourcegraph.com/team/#beatrix-woo  
 publishDate: 2023-09-20T0:00-07:00
-description: "Command menu UX improvements, JSON export, JSON format changes to custom commands, autocomplete rate limit visibility, and streamed autocomplete responses."
+description: "new onboarding & sign in experience, more custom configuration options, and improved Cody performance"
 tags: [blog]
 slug: "cody-vscode-0-12-release"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-og-image.jpg
-socialImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.0-og-image.jpg
+heroImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.12.0-og-image.jpg
+socialImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.12.0-og-image.jpg
 ---
 
 [Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.12 is now available and includes a new onboarding & sign in experience, more custom configuration options, and improved Cody performance.
 
 ### User Onboarding and Sign-in Experience
 
-// TODO
-
+New users can now sign up for Cody using their Github and Gitlab account. 
 
 ### Cody Pre-Instructions
 
@@ -31,9 +32,24 @@ You can now add set a custom starter message that prepend chat requests to Cody 
 }
 ```
 
-### Manually Trigger Autocompletions
-Autocompletions can now be triggered manually using `alt + \`. Simply move your cursor to a block of code, press `alt + \`, and Cody will analyze the code and provide autocomplete suggestions.
+## Smarter Autocompletions with Increased Context Awareness
 
+Cody now has greater awareness of the surrounding code context when providing completions. This increased context awareness results in smarter completions like useful docstrings in addition to avoiding variable name duplication. Cody can now provide more relevant suggestions based on what comes after your cursor.
+
+To enable, set `cody.autocomplete.advanced.model` to `claude-instant-infill`.
+
+## Higher Quality Unit Tests Generation
+
+We've enhanced unit test generation with framework detection and contextual scaffolding.
+
+The improved tests should now:
+- Use the correct testing framework - The tests will automatically detect and use the testing framework in your project, whether it’s PyTest, UnitTest, etc.
+- Include imports - The command will intelligently add necessary imports for the test code, avoiding common issues like missing imports. 
+- Add relevant context - The generated tests will include stubs and setup code to put the tests in context, instead of just isolated assertions.
+
+### Manually Trigger Autocompletions
+
+Autocompletions can now be triggered manually using `alt + \`. Move your cursor to a block of code, press `alt + \`, and Cody will provide autocomplete suggestions. 
 
 ### Changelog
 
