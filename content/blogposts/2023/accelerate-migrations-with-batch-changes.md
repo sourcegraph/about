@@ -114,7 +114,7 @@ Batch changes can be run locally (for faster iteration during development/testin
 Since we linked the issue in the merge request description of each changeset, GitLab links all the merge requests to their associated issues, and all the issues to the parent Epic. 
 
 <Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/CC%20blog%202.png"
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/GitLab%20BC%20blog/CC%20blog%201.png"
 />
 
 ### Tips
