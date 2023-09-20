@@ -24,7 +24,7 @@ New users can now sign up and sign in for Cody using their Github and Gitlab acc
 
 ### Cody Pre-Instructions
 
-You can now add set a custom starter message that prepend chat requests to Cody by setting the `cody.chat.preInstruction` configuration in `settings.json`.
+You can now add a custom starter message that prepend chat requests to Cody by setting the `cody.chat.preInstruction` configuration in `settings.json`.
 
 ```json
 {
