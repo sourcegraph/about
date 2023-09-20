@@ -7,7 +7,7 @@ authors:
     url: https://handbook.sourcegraph.com/team/#tim-lucas
   - name: Beatrix Woo
     url: https://handbook.sourcegraph.com/team/#beatrix-woo  
-publishDate: 2023-09-20T0:00-07:00
+publishDate: 2023-09-20T10:00-07:00
 description: "new onboarding & sign in experience, more custom configuration options, and improved Cody performance"
 tags: [blog]
 slug: "cody-vscode-0-12-release"
