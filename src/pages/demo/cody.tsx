@@ -109,7 +109,7 @@ const DemoCodyPage: FunctionComponent = () => {
                         <div className="mt-6 text-lg font-semibold text-white">
                             Get Started with Cody <Badge size="small" text="BETA" color="violet" />
                         </div>
-                        <div className="mt-4 flex flex-wrap gap-2 sm:w-[512px]">
+                        {/* <div className="mt-4 flex flex-wrap gap-2 sm:w-[512px]">
                             <ExternalsAuth
                                 className="w-fit !font-normal"
                                 authProvider="github"
@@ -120,6 +120,27 @@ const DemoCodyPage: FunctionComponent = () => {
                                 className="w-fit justify-center !font-normal"
                                 authProvider="gitlab"
                                 label="GitLab"
+                                source="about-cody"
+                            />
+                        </div> */}
+
+                        <div className="mt-4 flex flex-wrap gap-2 sm:w-[512px]">
+                            <ExternalsAuth
+                                className="w-fit justify-center !font-normal"
+                                authProvider="github"
+                                label="GitHub"
+                                source="about-cody"
+                            />
+                            <ExternalsAuth
+                                className="w-fit justify-center !font-normal"
+                                authProvider="gitlab"
+                                label="GitLab"
+                                source="about-cody"
+                            />
+                            <ExternalsAuth
+                                className="w-fit justify-center !font-normal"
+                                authProvider="google"
+                                label="Google"
                                 source="about-cody"
                             />
                         </div>
@@ -364,7 +385,7 @@ const DemoCodyPage: FunctionComponent = () => {
                             fetches the right context at the right time to answer queries.
                         </p>
                         <Link
-                            href="/whitepaper/cody-context-architecture.pdf"
+                            href="/resources/a-lp-cody-context-architecture"
                             className="flex gap-[10px] pb-4 font-semibold text-white hover:text-violet-300 hover:underline"
                         >
                             Read more <ChevronRightIcon />

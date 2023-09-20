@@ -21,7 +21,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick }) => 
             </Heading>
         </div>
 
-        <div className="max-w-[440px] rounded-lg border border-white border-opacity-25 bg-[#612590] p-6">
+        <div className="max-w-[440px] rounded-lg border border-white border-opacity-25 bg-[#612590] p-6 md:max-w-fit">
             <Heading size="h2" className="!text-4xl text-white">
                 Cody free tier
             </Heading>
@@ -29,7 +29,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick }) => 
                 Free forever for individual devs on public and private code, with a generous rate limit.
             </p>
             <div className="mt-6 flex flex-col flex-wrap gap-4 md:flex-row md:gap-2">
-                <div className="flex flex-row gap-4 md:gap-2">
+                <div className="flex flex-row flex-wrap gap-4 md:gap-2 lg:flex-nowrap">
                     <ExternalsAuth
                         className="flex-1 justify-center !font-normal md:w-fit"
                         authProvider="github"
@@ -40,6 +40,12 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick }) => 
                         className="flex-1 justify-center !font-normal md:w-fit"
                         authProvider="gitlab"
                         label="GitLab"
+                        source="about-cody"
+                    />
+                    <ExternalsAuth
+                        className="flex-1 justify-center !font-normal md:w-fit"
+                        authProvider="google"
+                        label="Google"
                         source="about-cody"
                     />
                 </div>
@@ -60,7 +66,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick }) => 
             </p>
         </div>
 
-        <div className="flex min-h-[295px] max-w-[440px]  flex-col items-start justify-end gap-4 rounded-lg border border-white border-opacity-40 p-6">
+        <div className="flex min-h-[295px] max-w-[440px] flex-col gap-4 rounded-lg border border-white border-opacity-40 p-6">
             <Heading size="h2" className="!text-4xl text-white">
                 Cody Enterprise
             </Heading>
