@@ -23,8 +23,7 @@ The combination of Batch Changes with project-management tools like Issues and E
 
 ### pnpm
 
-
-### [pnpm](https://pnpm.io/) is a fast, disk-space-efficient package manager that has quickly become a favored alternative to yarn and npm. At the time of this writing, there are dozens of blog posts by individuals and organizations that have migrated from npm or yarn to begin using pnpm.
+[pnpm](https://pnpm.io/) is a fast, disk-space-efficient package manager that has quickly become a favored alternative to yarn and npm. At the time of this writing, there are dozens of blog posts by individuals and organizations that have migrated from npm or yarn to begin using pnpm.
 
 
 ### Sourcegraph Batch Changes
@@ -108,24 +107,15 @@ The [example batch-spec.yaml](https://gitlab.com/developers6370122/sourcegraph-b
 
 Batch changes can be run locally (for faster iteration during development/testing) or on a Sourcegraph Enterprise instance with cloud executors. Once the changesets are applied, Sourcegraph uses the configured user access tokens to open the merge requests.
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
+<Figure
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/CC%20blog%201.png"
+/>
 
 Since we linked the issue in the merge request description of each changeset, GitLab links all the merge requests to their associated issues, and all the issues to the parent Epic. 
 
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
-
+<Figure
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/CC%20blog%202.png"
+/>
 
 ### Tips
 
