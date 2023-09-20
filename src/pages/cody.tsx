@@ -4,7 +4,17 @@ import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Heading, Layout, ExternalsAuth, HubSpotForm, Badge, Modal, CodyAnimation } from '../components'
+import {
+    ContentSection,
+    Heading,
+    Layout,
+    ExternalsAuth,
+    HubSpotForm,
+    Badge,
+    Modal,
+    CodyAnimation,
+    CodyCta,
+} from '../components'
 import { breakpoints } from '../data/breakpoints'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 import { useWindowWidth } from '../hooks/windowWidth'
@@ -177,11 +187,11 @@ const CodyPage: FunctionComponent = () => {
                 parentClassName="!py-0"
                 className="flex w-full flex-col items-center gap-x-12 gap-y-12 pt-16 md:flex-row md:px-8 md:pt-0"
             >
-                <div className="flex w-full flex-wrap justify-center gap-x-6 gap-y-8 py-4 md:gap-x-8 md:h-32">
-                   <div className="flex flex-col h-full items-center justify-center">
-                    <Heading size="h6" className="whitespace-nowrap !text-lg text-gray-200">
-                        Cody is available for: 
-                    </Heading>
+                <div className="flex w-full flex-wrap justify-center gap-x-6 gap-y-8 py-4 md:h-32 md:gap-x-8">
+                    <div className="flex h-full flex-col items-center justify-center">
+                        <Heading size="h6" className="whitespace-nowrap !text-lg text-gray-200">
+                            Cody is available for:
+                        </Heading>
                     </div>
                     <div className="flex items-center gap-x-4 md:px-6">
                         <img className="" src="/icons/intelliJ.svg" alt="IntelliJ IDE marketplace" />{' '}
@@ -306,90 +316,7 @@ const CodyPage: FunctionComponent = () => {
                     </div>
                 </div>
             </ContentSection>
-
-            <ContentSection
-                id="contact-form"
-                parentClassName="!py-0"
-                className="mx-auto flex flex-col gap-6 py-16 pt-16 md:flex-row md:py-[112px]"
-            >
-                <div className="flex flex-col gap-8 md:max-w-[352px]">
-                    <Heading size="h2" className="!text-[47px] text-white">
-                        Get started with Cody (beta)
-                    </Heading>
-                </div>
-
-                <div className="max-w-[440px] rounded-lg border border-white border-opacity-25 bg-[#612590] p-6">
-                    <Heading size="h2" className="!text-4xl text-white">
-                        Cody free tier
-                    </Heading>
-                    <p className="mt-6 max-w-[413.5px] text-lg text-gray-200">
-                        Free forever for individual devs on public and private code, with a generous rate limit.
-                    </p>
-                    <div className="mt-6 flex flex-col flex-wrap gap-4 md:flex-row md:gap-2">
-                        <div className="flex flex-row gap-4 md:gap-2">
-                            <ExternalsAuth
-                                className="flex-1 justify-center !font-normal md:w-fit"
-                                authProvider="github"
-                                label="GitHub"
-                                source="about-cody"
-                            />
-                            <ExternalsAuth
-                                className="flex-1 justify-center !font-normal md:w-fit"
-                                authProvider="gitlab"
-                                label="GitLab"
-                                source="about-cody"
-                            />
-                        </div>
-                    </div>
-                    <p className="mt-4 text-[14px] text-violet-300 opacity-70">
-                        By registering, you agree to our{' '}
-                        <Link
-                            className="text-violet-300 underline"
-                            target="_blank"
-                            href="https://about.sourcegraph.com/terms"
-                        >
-                            Terms of Service
-                        </Link>{' '}
-                        and{' '}
-                        <Link
-                            className="text-violet-300 underline"
-                            target="_blank"
-                            href="https://about.sourcegraph.com/terms/privacy"
-                        >
-                            Privacy Policy
-                        </Link>
-                    </p>
-                </div>
-
-                <div className="flex min-h-[295px] max-w-[440px] flex-col gap-4 rounded-lg border border-white border-opacity-40 p-6">
-                    <Heading size="h2" className="!text-4xl text-white">
-                        Cody Enterprise
-                    </Heading>
-                    <p className="text-lg text-gray-200">Beta access available to Code Search customers.</p>
-                    <div className="flex max-w-[356px] flex-col flex-wrap gap-4 md:flex-row">
-                        <button
-                            title="Get started with Cody"
-                            className="btn btn-inverted-primary text-center"
-                            type="button"
-                            onClick={() => setIsContactModalOpen(true)}
-                        >
-                            Contact us
-                        </button>
-                        <Link
-                            href="/pricing"
-                            className="hidden items-center justify-center gap-[10px] font-semibold text-white hover:text-violet-300 hover:underline md:flex"
-                        >
-                            Pricing and plans <ChevronRightIcon />
-                        </Link>
-                        <Link
-                            href="/pricing"
-                            className="hover:bg-color-violet-600 rounded-[5px] border border-white px-5 py-3 text-center font-semibold text-white md:hidden"
-                        >
-                            Pricing and plans
-                        </Link>
-                    </div>
-                </div>
-            </ContentSection>
+            <CodyCta onContactClick={() => setIsContactModalOpen(true)} />
             <Modal
                 open={isContactModalOpen}
                 handleClose={() => setIsContactModalOpen(false)}
