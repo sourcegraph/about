@@ -23,8 +23,6 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.10.
 
 ### Cody Pre-Instructions
 
-You can now export and inspect your chat history as JSON using the new "Export" button in Chat History:
-
 You can now add set a custom starter message that prepend chat requests to Cody by setting the `cody.chat.preInstruction` configuration in `settings.json`.
 
 ```json
@@ -32,6 +30,9 @@ You can now add set a custom starter message that prepend chat requests to Cody 
     "cody.chat.preInstruction": "My name is Jeff."
 }
 ```
+
+### Manually Trigger Autocompletions
+Autocompletions can now be triggered manually using `alt + \`. Simply move your cursor to a block of code, press `alt + \`, and Cody will analyze the code and provide autocomplete suggestions.
 
 
 ### Changelog
