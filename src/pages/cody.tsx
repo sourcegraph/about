@@ -155,7 +155,10 @@ const CodyPage: FunctionComponent = () => {
 
             <div className="mt-6 hidden flex-row items-center justify-center gap-4 md:flex">
                 <img className="" src="/cody/Avatar.svg" alt="Avatar" />
-                <p className="mb-0 text-lg text-gray-200">TINO WENING</p>
+                <div className="flex-col">
+                    <p className="mb-0 text-lg font-semibold text-gray-200">TINO WENING</p>
+                    <p className="mb-0 text-lg text-gray-200">ENGINEER</p>
+                </div>
             </div>
 
             <CodyVideoTab

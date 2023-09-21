@@ -42,7 +42,7 @@ export const CodyAutocomplete: FunctionComponent = () => (
             <div className="relative w-full overflow-hidden md:w-[670px]">
                 <img
                     className="relative top-4 -right-4 hidden  w-[670px] md:flex"
-                    src="/cody/autocomplete.svg"
+                    src="/cody/single-line-autocomplete.svg"
                     alt="Cody auto complete"
                 />
                 <img

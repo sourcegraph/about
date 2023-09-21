@@ -12,6 +12,7 @@ export const CodyVideoTab: FunctionComponent<{
 }> = ({ icon, headerText, description, tabContent }) => {
     const [selectedContentIndex, setSelectedContentIndex] = useState(0)
     const videoRefs = useRef<(HTMLVideoElement | null)[]>(new Array(tabContent.length).fill(null))
+    const [videoTime, setVideoTime] = useState({ currentTime: 0, duration: 0 })
 
     // Reset the video playback
     useEffect(() => {
@@ -20,6 +21,29 @@ export const CodyVideoTab: FunctionComponent<{
             videoElement.currentTime = 0
         }
     }, [selectedContentIndex, tabContent])
+
+    const changeSelectedContent = (index: number): void => {
+        if (index === tabContent.length - 1) {
+            setSelectedContentIndex(0)
+        } else {
+            setSelectedContentIndex(index + 1)
+        }
+    }
+    const onTimeUpdateHandler = (event: React.SyntheticEvent<HTMLVideoElement>): void => {
+        const video = event.target as HTMLVideoElement
+        setVideoTime({
+            currentTime: video.currentTime,
+            duration: video.duration,
+        })
+    }
+
+    const onLoadedMetadataHandler = (event: React.SyntheticEvent<HTMLVideoElement>): void => {
+        const video = event.target as HTMLVideoElement
+        setVideoTime(prev => ({
+            ...prev,
+            duration: video.duration,
+        }))
+    }
 
     return (
         <ContentSection
@@ -65,15 +89,26 @@ export const CodyVideoTab: FunctionComponent<{
                                 })}
                                 autoPlay={true}
                                 muted={true}
-                                loop={true}
                                 playsInline={true}
                                 controls={false}
                                 data-cookieconsent="ignore"
                                 key={index}
+                                onEnded={() => changeSelectedContent(index)}
+                                onTimeUpdate={onTimeUpdateHandler}
+                                onLoadedMetadata={onLoadedMetadataHandler}
                             >
                                 <source type="video/mp4" src={content.videoSrc} />
                             </video>
                         ))}
+                        <div className="h-[10px] w-full rounded-lg pt-[16px]">
+                            <div
+                                // eslint-disable-next-line react/forbid-dom-props
+                                style={{
+                                    width: `${(videoTime.currentTime / videoTime.duration) * 100}%`,
+                                }}
+                                className="h-[10px] rounded-lg bg-[#CE9CFF66]"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
