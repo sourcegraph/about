@@ -23,13 +23,13 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.12.
 The `/test` command has seen improvements with this release. Unit test generation now better detects your testing framework, adds any dependency imports as needed, and includes the necessary stubs and test setup code:
 
 
-<img alt="TODO" src="https://github.com/sourcegraph/about/assets/153/a722d10f-b4bf-453b-98a9-fcbb3c6ece67" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:388}} />
+<img alt="Screenshot of an improved unit test" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/generate-unit-test.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:388}} />
 
 ### Chat pre-instructions
 
 We’ve added a new `cody.chat.preInstruction` setting you can use instruct Cody at the beginning of every chat. For example, to have Cody output TypeScript you would set the pre-instruction to `Prefer TypeScript over JavaScript`:
 
-<img alt="TODO" src="https://github.com/sourcegraph/cody/assets/153/f11a52d9-4966-4ca0-9538-2d00b114531c" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:737}} />
+<img alt="Screenshot of chat output with a pre-instruction set" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/pre-instructions.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:737}} />
 
 To set a pre-instruction, in your VS Code user or workspace settings configure the `cody.chat.preInstruction` setting.
 
@@ -37,13 +37,13 @@ To set a pre-instruction, in your VS Code user or workspace settings configure t
 
 We added [new documentation](https://docs.sourcegraph.com/cody/custom-commands) for the experimental custom commands feature:
 
-<a href="https://docs.sourcegraph.com/cody/custom-commands"><img alt="Custom Commands documentation" src="https://github.com/sourcegraph/cody/assets/153/b0c17095-7f3c-45e8-aecf-1b604652a930" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:995}} /></a>
+<a href="https://docs.sourcegraph.com/cody/custom-commands"><img alt="Screenshot of the new custom Commands documentation" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/custom-commands-docs.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:995}} /></a>
 
 The "New Custom Command…" menu has been updated and allows you to choose where to save your new command, and a button for showing the generated JSON.
 
-<img alt="New Custom Command menu" src="https://github.com/sourcegraph/cody/assets/153/6ec03b67-0647-4339-8621-634eea0651b6" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:623}} />
+<img alt="Screenshot of the New Custom Command menu save location" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/custom-commands-save-location.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:623}} />
 
-<img alt="New Custom Command menu" src="https://github.com/sourcegraph/cody/assets/153/6ec03b67-0647-4339-8621-634eea0651b6" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:473}} />
+<img alt="Screenshot of the New Custom Command menu JSON button" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/custom-commands-json-button.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:473}} />
 
 ### Insert at cursor no longer replaces selection
 
@@ -63,9 +63,7 @@ In cases where autocompletions don't automatically trigger, you can now request 
 
 For new users, you can now sign in to Cody directly using a Github, Gitlab or Google account:
 
-<img alt="" src="https://github.com/sourcegraph/about/assets/153/c201438f-98fb-4e20-a6d3-7c929b0786d9" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:246}} />
-
-For now, we’ve removed the ability to log into Cody App to use private embeddings, but we’ll be re-introducing support for Cody App in the next release.
+<img alt="Screenshot of the new sign in page" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/sign-in.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:246}} />
 
 ### Changelog
 
