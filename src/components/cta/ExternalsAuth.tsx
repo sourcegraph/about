@@ -52,45 +52,23 @@ const GitlabColorIcon: React.FunctionComponent<React.PropsWithChildren<{ classNa
 )
 
 const GoogleColorIcon: React.FunctionComponent<React.PropsWithChildren<{ className?: string }>> = ({ className }) => (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        width="24"
-        height="24"
-        viewBox="0 0 46 46"
-        className={className}
-    >
-        <g fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
-            <g transform="translate(-1 -1)">
-                <g filter="url(#filter-1)" transform="translate(4 4)">
-                    <g>
-                        <use fill="#FFF" xlinkHref="#path-2" />
-                        <use xlinkHref="#path-2" />
-                        <use xlinkHref="#path-2" />
-                        <use xlinkHref="#path-2" />
-                    </g>
-                </g>
-                <g transform="translate(15 15)">
-                    <path
-                        fill="#4285F4"
-                        d="M17.64 9.205c0-.639-.057-1.252-.164-1.841H9v3.481h4.844a4.14 4.14 0 01-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615z"
-                    />
-                    <path
-                        fill="#34A853"
-                        d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 009 18z"
-                    />
-                    <path
-                        fill="#FBBC05"
-                        d="M3.964 10.71A5.41 5.41 0 013.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 000 9c0 1.452.348 2.827.957 4.042l3.007-2.332z"
-                    />
-                    <path
-                        fill="#EA4335"
-                        d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 00.957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z"
-                    />
-                    <path d="M0 0h18v18H0V0z" />
-                </g>
-            </g>
-        </g>
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+        <path
+            fill="#FFC107"
+            d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
+        />
+        <path
+            fill="#FF3D00"
+            d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
+        />
+        <path
+            fill="#4CAF50"
+            d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
+        />
+        <path
+            fill="#1976D2"
+            d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
+        />
     </svg>
 )
 
@@ -158,7 +136,7 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
                     onClick={handleOnClick}
                     id="githubButton"
                 >
-                    <GithubIcon className="h-8 w-8 pr-2" />
+                    <GithubIcon className='mr-2' />
                     {label}
                 </Link>
             )
@@ -174,7 +152,7 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
                     onClick={handleOnClick}
                     id="gitlabButton"
                 >
-                    <GitlabColorIcon className="h-9 w-9 pr-2" />
+                    <GitlabColorIcon className='mr-2' />
                     {label}
                 </Link>
             )
@@ -183,15 +161,15 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
                 <Link
                     href="https://sourcegraph.com/.auth/openidconnect/login?pc=google&redirect=/get-cody"
                     className={classNames(
-                        'btn hover:sg-bg-hover-external-auth-button flex items-center px-4 hover:text-black md:h-12 md:text-lg',
+                        'btn hover:sg-bg-hover-external-auth-button flex items-center px-4 hover:text-black md:h-12 md:px-6 md:text-lg',
                         dark ? 'sg-gitlab-bg-color hover:btn-primary text-white ' : 'btn-inverted-primary text-black',
                         className
                     )}
                     onClick={handleOnClick}
                     id="googleButton"
                 >
-                    <GoogleColorIcon className="h-11 w-11" />
-                    <span className="pr-2">{label}</span>
+                    <GoogleColorIcon className='w-6 h-6 mr-2' />
+                    {label}
                 </Link>
             )
         default:

@@ -42,6 +42,7 @@ const CodyPage: FunctionComponent = () => {
     const [isContactModalOpen, setIsContactModalOpen] = useState(false)
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
+    const isXsMobile = windowWidth < 396
 
     useEffect(() => {
         const eventArguments = {
@@ -89,20 +90,23 @@ const CodyPage: FunctionComponent = () => {
                         Get Started with Cody <Badge size="small" text="BETA" color="violet" />
                     </div>
                     <div className="mx-auto mt-4 flex flex-wrap justify-center gap-2 sm:w-[512px]">
+                        <div className="flex w-[228px] gap-2 md:w-fit">
+                            <ExternalsAuth
+                                className="w-fit  justify-center !font-normal"
+                                authProvider="github"
+                                label="GitHub"
+                                source="about-cody"
+                            />
+                            <ExternalsAuth
+                                className="w-fit justify-center !font-normal"
+                                authProvider="gitlab"
+                                label="GitLab"
+                                source="about-cody"
+                            />
+                        </div>
+
                         <ExternalsAuth
-                            className="w-fit justify-center !font-normal"
-                            authProvider="github"
-                            label="GitHub"
-                            source="about-cody"
-                        />
-                        <ExternalsAuth
-                            className="w-fit justify-center !font-normal"
-                            authProvider="gitlab"
-                            label="GitLab"
-                            source="about-cody"
-                        />
-                        <ExternalsAuth
-                            className="w-fit justify-center !font-normal"
+                            className={`w-fit justify-center !font-normal ${isXsMobile ? 'max-w-[228px] flex-1' : ''}`}
                             authProvider="google"
                             label="Google"
                             source="about-cody"
