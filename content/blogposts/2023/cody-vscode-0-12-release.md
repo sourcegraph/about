@@ -8,7 +8,7 @@ authors:
   - name: Beatrix Woo
     url: https://handbook.sourcegraph.com/team/#beatrix-woo  
 publishDate: 2023-09-20T10:00-07:00
-description: "new onboarding & sign in experience, more custom configuration options, and improved Cody performance"
+description: "Improved unit test generation, customizable chat pre-instructions, new custom command documentation, a new claude-instant-infill autocomplete model, and a new sign in experience."
 tags: [blog]
 slug: "cody-vscode-0-12-release"
 published: true
@@ -16,40 +16,54 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.12.0-
 socialImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.12.0-og-image.jpg
 ---
 
-[Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.12 is now available and includes a new onboarding & sign in experience, more custom configuration options, and improved Cody performance.
+[Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.12 is now available and includes improved unit test generation, customizable chat pre-instructions, new custom command documentation, a new claude-instant-infill autocomplete model, and a new sign in experience.
 
-### User Onboarding and Sign-in Experience
+### Improved unit test generation
 
-New users can now sign up and sign in for Cody using their Github and Gitlab accounts. 
+The `/test` command has seen improvements with this release. Unit test generation now better detects your testing framework, adds any dependency imports as needed, and includes the necessary stubs and test setup code:
 
-### Cody Pre-Instructions
 
-You can now add a custom starter message that prepend chat requests to Cody by setting the `cody.chat.preInstruction` configuration in `settings.json`.
+<img alt="Screenshot of an improved unit test" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/generate-unit-test.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:388}} />
 
-```json
-{
-    "cody.chat.preInstruction": "I am a frontend engineer."
-}
-```
+### Chat pre-instructions
 
-### Smarter Autocompletions with Increased Context Awareness
+We’ve added a new `cody.chat.preInstruction` setting you can use instruct Cody at the beginning of every chat. For example, to have Cody output TypeScript you would set the pre-instruction to `Prefer TypeScript over JavaScript`:
 
-Cody now has greater awareness of the surrounding code context when providing completions. This increased context awareness results in smarter completions like useful docstrings in addition to avoiding variable name duplication. Cody can now provide more relevant suggestions based on what comes after your cursor.
+<img alt="Screenshot of chat output with a pre-instruction set" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/pre-instructions.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:737}} />
 
-To enable, set `cody.autocomplete.advanced.model` to `claude-instant-infill`.
+To set a pre-instruction, in your VS Code user or workspace settings configure the `cody.chat.preInstruction` setting.
 
-### Higher Quality Unit Tests Generation
+### New custom commands documentation and menu improvements
 
-We've enhanced unit test generation with framework detection and contextual scaffolding.
+We added [new documentation](https://docs.sourcegraph.com/cody/custom-commands) for the experimental custom commands feature:
 
-The improved tests should now:
-- Use the correct testing framework - The tests will automatically detect and use the testing framework in your project, whether it’s PyTest, UnitTest, etc.
-- Include imports - The command will intelligently add necessary imports for the test code, avoiding common issues like missing imports. 
-- Add relevant context - The generated tests will include stubs and setup code to put the tests in context, instead of just isolated assertions.
+<a href="https://docs.sourcegraph.com/cody/custom-commands"><img alt="Screenshot of the new custom Commands documentation" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/custom-commands-docs.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:995}} /></a>
 
-### Manually Trigger Autocompletions
+The "New Custom Command…" menu has been updated and allows you to choose where to save your new command, and a button for showing the generated JSON.
 
-Autocompletions can now be triggered manually using `alt + \`. Move your cursor to a block of code, press `alt + \`, and Cody will provide autocomplete suggestions. 
+<img alt="Screenshot of the New Custom Command menu save location" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/custom-commands-save-location.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:623}} />
+
+<img alt="Screenshot of the New Custom Command menu JSON button" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/custom-commands-json-button.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:473}} />
+
+### Insert at cursor no longer replaces selection
+
+When you use the "Insert at Cursor" button in Cody’s chat view and have code selected in your editor, the code will be inserted before your selection instead of replacing the selected code.
+
+### New autocomplete model: clause-instant-infill
+
+We've added an additional autocomplete model `clause-instant-infill` that can produce higher quality autocompletions using the context of surrounding code. For example, it performs better at autocompleting function documentation, and suggesting variable names that are not already in use.
+
+To try out the new model, in your VS Code user or workspace settings configure the `cody.autocomplete.advanced.model` setting to `claude-instant-infill`.
+
+### Manually request an autocomplete
+
+In cases where autocompletions don't automatically trigger, you can now request them manually using `opt + \` on Mac, or `alt + \` on Windows and Linux.
+
+### New sign in experience
+
+For new users, you can now sign in to Cody directly using a Github, Gitlab or Google account:
+
+<img alt="Screenshot of the new sign in page" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/sign-in.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:246}} />
 
 ### Changelog
 
@@ -59,6 +73,6 @@ See the [changelog](https://github.com/sourcegraph/cody/blob/main/vscode/CHANGEL
 
 Cody is [open source](https://github.com/sourcegraph/cody), and wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
-<hr style={{marginTop:"2rem",marginBottom:"2rem"}}/>
+<hr style={{marginTop:"2rem",marginBottom:"2rem"}} />
 
 To get started with Cody, [install it from the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai).
