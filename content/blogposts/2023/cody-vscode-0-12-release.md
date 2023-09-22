@@ -8,7 +8,7 @@ authors:
   - name: Beatrix Woo
     url: https://handbook.sourcegraph.com/team/#beatrix-woo  
 publishDate: 2023-09-20T10:00-07:00
-description: "Improved unit test generation, customizable chat pre-instructions, new custom command documentation, a new claude-instant-infill autocomplete model, and a new sign in experience."
+description: "Improved unit test generation, customizable chat pre-instructions, new custom command documentation, a new claude-instant-infill autocomplete model, experimental code graph context support for autocomplete, and a new sign in experience."
 tags: [blog]
 slug: "cody-vscode-0-12-release"
 published: true
