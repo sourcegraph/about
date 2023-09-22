@@ -146,15 +146,21 @@ const DemoCodyPage: FunctionComponent<CodyProps> = ({ tweets }) => {
                     </p>
                     <div className="mt-6 flex flex-wrap gap-2">
                         <ExternalsAuth
-                            className="w-fit justify-center !font-normal"
+                            className="w-fit flex-1 justify-center !font-normal"
                             authProvider="github"
                             label="GitHub"
                             source="cody"
                         />
                         <ExternalsAuth
-                            className="w-fit justify-center !font-normal"
+                            className="w-fit flex-1 justify-center !font-normal"
                             authProvider="gitlab"
                             label="GitLab"
+                            source="cody"
+                        />
+                        <ExternalsAuth
+                            className="w-fit flex-1 justify-center !font-normal"
+                            authProvider="google"
+                            label="Google"
                             source="cody"
                         />
                     </div>

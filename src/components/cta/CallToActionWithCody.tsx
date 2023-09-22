@@ -40,15 +40,21 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
                     <ExternalsAuth
-                        className="w-fit !font-normal"
+                        className="w-fit flex-1 justify-center !font-normal"
                         authProvider="github"
                         label="GitHub"
                         source="about-home"
                     />
                     <ExternalsAuth
-                        className="w-fit !font-normal"
+                        className="w-fit flex-1 justify-center !font-normal"
                         authProvider="gitlab"
                         label="GitLab"
+                        source="about-home"
+                    />
+                    <ExternalsAuth
+                        className="w-fit flex-1 justify-center !font-normal"
+                        authProvider="google"
+                        label="Google"
                         source="about-home"
                     />
                 </div>
