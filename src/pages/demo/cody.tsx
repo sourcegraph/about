@@ -62,6 +62,7 @@ const VIDEO_TAB_CONTENT = [
 const DemoCodyPage: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
+    const isXsMobile = windowWidth < 396
 
     const formContainerRef = useRef<HTMLDivElement | null>(null)
 
@@ -119,20 +120,25 @@ const DemoCodyPage: FunctionComponent = () => {
                         </div>
 
                         <div className="mt-4 flex flex-wrap gap-2 sm:w-[512px]">
+                            <div className="flex w-[228px] flex-wrap gap-2 md:w-fit">
+                                <ExternalsAuth
+                                    className="max-w-[228px] flex-1 justify-center !font-normal  xs:w-fit xs:flex-grow-0"
+                                    authProvider="github"
+                                    label="GitHub"
+                                    source="about-cody"
+                                />
+                                <ExternalsAuth
+                                    className="max-w-[228px] flex-1 justify-center !font-normal xs:w-fit xs:flex-grow-0"
+                                    authProvider="gitlab"
+                                    label="GitLab"
+                                    source="about-cody"
+                                />
+                            </div>
+
                             <ExternalsAuth
-                                className="w-fit justify-center !font-normal"
-                                authProvider="github"
-                                label="GitHub"
-                                source="about-cody"
-                            />
-                            <ExternalsAuth
-                                className="w-fit justify-center !font-normal"
-                                authProvider="gitlab"
-                                label="GitLab"
-                                source="about-cody"
-                            />
-                            <ExternalsAuth
-                                className="w-fit justify-center !font-normal"
+                                className={`w-fit justify-center !font-normal ${
+                                    isXsMobile ? 'max-w-[228px] flex-1' : ''
+                                }`}
                                 authProvider="google"
                                 label="Google"
                                 source="about-cody"
