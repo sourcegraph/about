@@ -94,7 +94,7 @@ const DemoCodyPage: FunctionComponent = () => {
         >
             {/* Hero Section */}
             <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 md:mt-0 md:pt-[22px] md:pb-9">
-                <div className="flex flex-col justify-between gap-y-6 px-sm lg:flex-row lg:gap-x-[70px] lg:gap-y-0 lg:px-0">
+                <div className="flex flex-col justify-between gap-y-6 px-sm lg:flex-row lg:gap-x-[70px] lg:gap-y-0">
                     <div className="w-full max-w-[656px]">
                         <div className="center flex items-center gap-x-4">
                             <Heading size="h1" className="!text-[53px] text-white md:!text-[62px]">
@@ -175,7 +175,7 @@ const DemoCodyPage: FunctionComponent = () => {
                 parentClassName="!py-0"
                 className="flex w-full flex-col items-center justify-around  gap-y-12 gap-x-6 pt-16 text-center md:flex-row md:px-8 md:pt-10 md:pb-[64px]"
             >
-                <div className="w-[441px]">
+                <div className="max-w-[441px]">
                     <div className="mx-auto mb-[24px] flex h-12 w-12 items-center justify-center rounded-[7px] bg-violet-100 ">
                         <RocketIcon color="purple" size="2rem" />
                     </div>
@@ -186,7 +186,7 @@ const DemoCodyPage: FunctionComponent = () => {
                     <p className="mb-0 text-gray-200">Embeddings for greater codebase context</p>
                 </div>
 
-                <div className="w-[441px]">
+                <div className="max-w-[441px]">
                     <div className="mx-auto mb-[24px] flex h-12 w-12 items-center justify-center rounded-[7px] bg-violet-100">
                         <StarIcon color="purple" size="2rem" />
                     </div>
@@ -197,7 +197,7 @@ const DemoCodyPage: FunctionComponent = () => {
                     <p className="mb-0 text-gray-200">Supports all code hosts and multiple LLM options</p>
                 </div>
 
-                <div className="w-[441px]">
+                <div className="max-w-[441px]">
                     <div className="mx-auto mb-[24px] flex h-12 w-12 items-center justify-center rounded-[7px] bg-violet-100">
                         <LockIcon color="purple" size="2rem" />
                     </div>
