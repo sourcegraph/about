@@ -356,6 +356,9 @@
     .cody-whitepaper-border {
         background: linear-gradient(90deg, #6112A3 0.12%, #FF5543 99.95%);
     }
+    .cody-btn-text {
+        background-image: linear-gradient(90deg, #6112A3 0.12%, #FF5543 99.95%);
+    }
     .cody-contact-modal {
         background: linear-gradient(0deg, rgba(9, 9, 9, 0.70) 0%, rgba(9, 9, 9, 0.70) 100%);
     }
