@@ -59,7 +59,7 @@ export const CaseStudy: FunctionComponent = () => (
                 }}
                 variant="white"
                 title={
-                    <div>
+                    <ContentSection parentClassName='!px-0 !py-0'>
                         <Badge
                             color="violet"
                             text="CUSTOMER STORIES"
@@ -73,35 +73,34 @@ export const CaseStudy: FunctionComponent = () => (
                             Empowering productivity, enhancing security: How Sourcegraph transformed Nine’s development
                             workflow
                         </Heading>
-                        <div className="relative z-[10] -mt-3 flex w-full flex-col gap-x-8 rounded-lg border border-gray-500 bg-white py-16 px-12 shadow-lg md:flex-row lg:absolute lg:top-[504px] lg:right-0 lg:mt-0 xl:w-[1280px] 2xl:right-40">
+                        <div className="relative z-[10] -mt-3 flex w-full flex-col gap-x-8 rounded-lg border border-gray-500 bg-white py-16 px-12 shadow-lg md:-mt-[2px] md:flex-row  xl:w-[1280px]">
                             <img
                                 className="mb-8 w-[148px] md:mb-0"
                                 src="/case-studies/nine-logo.svg"
                                 alt="Nine 3D logo"
                             />
                             <p className="mb-0 w-full text-[18px] font-normal leading-[27px]">
-                                Nine is Australia’s Media Company. They’re the home of Australia’s most loved
-                                content and trusted brands across News, Sport, and Entertainment, including Channel
-                                9, Gem, Go, 9Now, radio stations 2GB, 3AW, 4BC, 6PR and publications that span The
-                                Sydney Morning Herald, The Australian Financial Review, to the breadth of
-                                nine.com.au.
+                                Nine is Australia’s Media Company. They’re the home of Australia’s most loved content
+                                and trusted brands across News, Sport, and Entertainment, including Channel 9, Gem, Go,
+                                9Now, radio stations 2GB, 3AW, 4BC, 6PR and publications that span The Sydney Morning
+                                Herald, The Australian Financial Review, to the breadth of nine.com.au.
                             </p>
                         </div>
                         <div className="absolute top-0 right-0 mt-56 h-full  w-full bg-[url('/case-studies/top-radials.svg')] bg-contain bg-right  bg-no-repeat md:hidden" />
-                    </div>
+                    </ContentSection>
                 }
                 displayUnderNav={true}
             />
         }
     >
-        <ContentSection className="mt-[48px] px-1 lg:mt-[250.8px]" parentClassName="!py-0 relative z-10">
+        <ContentSection className="mt-[48px] px-1 lg:mt-[26.75px]" parentClassName="!py-0 relative z-10">
             <div className="mx-auto flex w-full flex-col-reverse gap-x-12 md:flex-row">
                 <div>
                     <div className="sticky top-[54px] w-full md:w-[378px]">
                         <SidebarContent
                             title="$276K saved"
-                            content="$276K saved in trial period: Nine's platform engineering team saved an estimated
-                            $276,000 in time through efficient code search and batch changes."
+                            content="$276K saved in trial period: Nine's Platform Engineering team saved an estimated
+                            $276,000 in time through efficient Code Search and Batch Changes."
                         />
                         <SidebarContent
                             title="1200 hours saved"
@@ -176,7 +175,7 @@ export const CaseStudy: FunctionComponent = () => (
                                     >
                                         Batch Changes
                                     </Link>
-                                    , Nine predicts Sourcegraph will save 30 developers from their platform engineering
+                                    , Nine predicts Sourcegraph will save 30 developers from their Platform Engineering
                                     team up to 1200 hours annually and $276K in savings during six months of usage.
                                 </p>
 
@@ -338,12 +337,7 @@ export const CaseStudy: FunctionComponent = () => (
                                     changesets across multiple repositories and codehosts.
                                 </p>
 
-                                <p className="m-0 text-lg">
-                                    For instance, changesets created and merged went from 75 on average in a given month
-                                    to 400 after using Batch Changes.
-                                </p>
-
-                                <p className="text-lg">
+                                <p className="pt-9 text-lg">
                                     With Sourcegraph, Nine Engineering has enhanced developer productivity and better
                                     team collaboration.{' '}
                                     <Link
