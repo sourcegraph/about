@@ -105,6 +105,7 @@ export const CodyVideoTab: FunctionComponent<{
                                 // eslint-disable-next-line react/forbid-dom-props
                                 style={{
                                     width: `${(videoTime.currentTime / videoTime.duration) * 100}%`,
+                                    transition: 'width 0.3s ease-out',
                                 }}
                                 className="h-[10px] rounded-lg bg-[#CE9CFF66]"
                             />
