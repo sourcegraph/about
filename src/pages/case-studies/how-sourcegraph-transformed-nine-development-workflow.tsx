@@ -79,16 +79,13 @@ export const CaseStudy: FunctionComponent = () => (
                                 src="/case-studies/nine-logo.svg"
                                 alt="Nine 3D logo"
                             />
-                            <div>
-                                <Heading size="h4" className="pb-5 !text-xl font-semibold">
-                                    Industry – Number of devs
-                                </Heading>
-                                <p className="w-full text-[18px] font-normal leading-[27px]">
-                                    Nutanix has 20,000 customers, an annual revenue of nearly $1.394 billion, and over
-                                    6,000 employees. Organizations around the world rely on Nutanix software as a single
-                                    platform to manage any app at any scale for their hybrid multi-cloud environments.
-                                </p>
-                            </div>
+                            <p className="mb-0 w-full text-[18px] font-normal leading-[27px]">
+                                Nine is Australia’s Media Company. They’re the home of Australia’s most loved
+                                content and trusted brands across News, Sport, and Entertainment, including Channel
+                                9, Gem, Go, 9Now, radio stations 2GB, 3AW, 4BC, 6PR and publications that span The
+                                Sydney Morning Herald, The Australian Financial Review, to the breadth of
+                                nine.com.au.
+                            </p>
                         </div>
                         <div className="absolute top-0 right-0 mt-56 h-full  w-full bg-[url('/case-studies/top-radials.svg')] bg-contain bg-right  bg-no-repeat md:hidden" />
                     </div>
@@ -345,16 +342,6 @@ export const CaseStudy: FunctionComponent = () => (
                                     For instance, changesets created and merged went from 75 on average in a given month
                                     to 400 after using Batch Changes.
                                 </p>
-
-                                <div className="-mx-4 py-[68px] md:mx-auto">
-                                    <img
-                                        src="/case-studies/nine-performance-graph.svg"
-                                        alt="this stuff happening here"
-                                        width={518}
-                                        height={243}
-                                        className="block"
-                                    />
-                                </div>
 
                                 <p className="text-lg">
                                     With Sourcegraph, Nine Engineering has enhanced developer productivity and better
