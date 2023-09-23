@@ -8,7 +8,7 @@ authors:
   - name: Beatrix Woo
     url: https://handbook.sourcegraph.com/team/#beatrix-woo  
 publishDate: 2023-09-20T10:00-07:00
-description: "Improved unit test generation, customizable chat pre-instructions, new custom command documentation, a new claude-instant-infill autocomplete model, and a new sign in experience."
+description: "Improved unit test generation, customizable chat pre-instructions, new custom command documentation, a new claude-instant-infill autocomplete model, experimental code graph context support for autocomplete, and a new sign in experience."
 tags: [blog]
 slug: "cody-vscode-0-12-release"
 published: true
@@ -18,12 +18,11 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.12.
 
 [Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.12 is now available and includes improved unit test generation, customizable chat pre-instructions, new custom command documentation, a new claude-instant-infill autocomplete model, and a new sign in experience.
 
-### Improved unit test generation
+### Improved unit test generation (/test)
 
-The `/test` command has seen improvements with this release. Unit test generation now better detects your testing framework, adds any dependency imports as needed, and includes the necessary stubs and test setup code:
+Unit test generation now better detects your testing framework, adds any dependency imports as needed, and includes the necessary stubs and test setup code:
 
-
-<img alt="Screenshot of an improved unit test" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/generate-unit-test.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:388}} />
+<img alt="Screenshot of an improved unit test" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/generate-unit-test-2.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:628}} />
 
 ### Chat pre-instructions
 
@@ -49,11 +48,13 @@ The "New Custom Command…" menu has been updated and allows you to choose where
 
 When you use the "Insert at Cursor" button in Cody’s chat view and have code selected in your editor, the code will be inserted before your selection instead of replacing the selected code.
 
-### New autocomplete model: clause-instant-infill
+### New claude-instant-infill autocomplete model
 
-We've added an additional autocomplete model `clause-instant-infill` that can produce higher quality autocompletions using the context of surrounding code. For example, it performs better at autocompleting function documentation, and suggesting variable names that are not already in use.
+We've migrated to an all-new `claude-instant-infill` autocomplete model that can produce higher quality autocompletions using the context of surrounding code. For example, it performs better at autocompleting function documentation, and suggesting variable names that are not already in use. This new model is enabled by default.
 
-To try out the new model, in your VS Code user or workspace settings configure the `cody.autocomplete.advanced.model` setting to `claude-instant-infill`.
+### Code graph context for autocomplete
+
+We've added experimental code graph context fetching support for autocomplete. This is a complete reimagining of context retrieval for autocomplete, and uses the underlying language server and temporal heuristics (recently viewed symbols) to populate the context for autocomplete suggestions. It’s currently supports JavaScript, TypeScript, and Go, and we'll be testing how it performs against embeddings and local keyword context.
 
 ### Manually request an autocomplete
 
