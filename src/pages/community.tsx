@@ -63,18 +63,6 @@ export const Community: FunctionComponent = () => (
                                 <ul>
                                     <li>
                                         <a
-                                            href="https://www.thestrangeloop.com"
-                                            title="Strange Loop"
-                                            data-button-style={buttonStyle.text}
-                                            data-button-location={buttonLocation.body}
-                                            data-button-type="cta"
-                                        >
-                                            Strange Loop · St. Louis, MO
-                                        </a>{' '}
-                                        - September 21-22, 2023
-                                    </li>
-                                    <li>
-                                        <a
                                             href="https://www.gophercon.com/home"
                                             title="GopherCon 2023"
                                             data-button-style={buttonStyle.text}
