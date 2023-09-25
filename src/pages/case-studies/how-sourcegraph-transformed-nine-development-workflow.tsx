@@ -337,7 +337,7 @@ export const CaseStudy: FunctionComponent = () => (
                                     changesets across multiple repositories and codehosts.
                                 </p>
 
-                                <p className="pt-9 text-lg">
+                                <p className="text-lg">
                                     With Sourcegraph, Nine Engineering has enhanced developer productivity and better
                                     team collaboration.{' '}
                                     <Link
