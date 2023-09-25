@@ -415,8 +415,8 @@ const SidebarContent: FunctionComponent<{
     content: string | ReactNode
     title: string
 }> = ({ content, title }) => (
-    <div className="mb-16  md:w-[378px]">
-        <Heading size="h1" className="mb-4 !text-[52px] text-violet-500">
+    <div className="mb-8  md:w-[378px]">
+        <Heading size="h2" className="mb-2 !text-[30px] text-violet-500">
             {title}
         </Heading>
         {typeof content === 'string' ? <p className="text-[18px]">{content}</p> : content}
