@@ -493,4 +493,33 @@ export const resourceItems: Resource[] = [
         publishDate: '2023-08-21T00:00:00Z',
         keyword: ['cloud', 'deploy', 'deployment'],
     },
+    {
+        featured: false,
+        title: 'Nine empowers productivity and enhances security with Sourcegraph',
+        link: '/case-studies/how-sourcegraph-transformed-nine-development-workflow',
+        contentType: 'customer story',
+        subjects: [
+            'developer productivity',
+            'security',
+            'code security',
+            'batch changes',
+            'code search',
+            'code monitoring',
+        ],
+        description:
+            "Learn how Sourcegraph has revolutionized Nine's development workflow, increasing developer productivity, efficient code management, and enhanced security.",
+        publishDate: '2023-09-06T00:00:00Z',
+        keyword: [
+            'developer productivity',
+            'security',
+            'code security',
+            'batch changes',
+            'code search',
+            'code monitoring',
+            'AWS',
+            'Kubernetes',
+            'platform',
+            'platform engineering',
+        ],
+    },
 ]

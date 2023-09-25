@@ -18,6 +18,12 @@ interface CaseStudy {
 // TODO: This data will eventually live in our CMS
 export const CASESTUDIES: CaseStudy[] = [
     {
+        name: 'Nine',
+        logo: '/case-studies/nine-logo.svg',
+        title: 'Nine empowers productivity and enhances security with Sourcegraph.',
+        url: '/case-studies/how-sourcegraph-transformed-nine-development-workflow',
+    },
+    {
         name: 'Neo Financial',
         logo: '/external-logos/neo-financial.svg',
         title: 'Neo Financial improves the developer experience with Sourcegraph.',
@@ -109,21 +115,32 @@ export const CASESTUDIES: CaseStudy[] = [
     },
 ]
 
-export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boolean }> = ({
+export const CaseStudyCard: FunctionComponent<{
+    study: CaseStudy
+    bwLogo?: boolean
+    logoClassName?: string
+    titleClassName?: string
+    linkClassName?: string
+    icon?: React.ReactNode
+}> = ({
     study: { name, logo, altTitle, title, url, linkText = 'Read the case study' },
     bwLogo,
+    logoClassName,
+    titleClassName,
+    linkClassName,
+    icon = <ArrowRightIcon size={20} className="ml-1 inline" />,
 }) => (
     <div className="grow">
         <div className="md:pr-12">
             <img
-                className={classNames('mb-6 max-h-[60px] max-w-[135px]', { 'brightness-0': bwLogo })}
+                className={classNames('mb-6 max-h-[60px] max-w-[135px]', { 'brightness-0': bwLogo }, logoClassName)}
                 src={logo}
                 alt={`${name} logo`}
             />
 
             {altTitle && <h5>{altTitle}</h5>}
 
-            <p>{title}</p>
+            <p className={titleClassName}>{title}</p>
 
             {url.includes('http') ? (
                 <a
@@ -134,10 +151,10 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
-                    className="font-bold no-underline hover:text-violet-300"
+                    className={classNames('font-bold no-underline hover:text-violet-300', linkClassName)}
                 >
                     {linkText}
-                    <ArrowRightIcon size={20} className="ml-1 inline" />
+                    {icon}
                 </a>
             ) : (
                 <Link
@@ -146,10 +163,10 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
-                    className="font-bold no-underline  hover:text-violet-300"
+                    className={classNames('font-bold no-underline hover:text-violet-300', linkClassName)}
                 >
                     {linkText}
-                    <ArrowRightIcon size={20} className="ml-1 inline" />
+                    {icon}
                 </Link>
             )}
         </div>
