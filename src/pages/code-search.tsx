@@ -157,7 +157,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                         <h2 className="mb-6 text-white">Automate large-scale code changes</h2>
                         <ul className="text-lg text-gray-200">
                             <li className="mb-4">
-                                Find all occurrences of code to change with Code Search and programmatically those
+                                Find all occurrences of code to change with Code Search and programmatically make those
                                 changes by creating a declarative specification file.
                             </li>
                             <li className="mb-4">
