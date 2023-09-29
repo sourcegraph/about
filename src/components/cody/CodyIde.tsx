@@ -23,7 +23,6 @@ export const CodyIde: FunctionComponent = () => {
                     <Heading size="h4" className="!text-2xl text-gray-200">
                         IntelliJ
                     </Heading>
-                    <Badge text="Experimental" size="small" color="light-gray" />
                 </div>
                 <div className="flex items-center  gap-x-4 md:px-6">
                     <img className="" src="/icons/vscode.svg" alt="VS Code IDE Marketplace" />{' '}
@@ -33,10 +32,14 @@ export const CodyIde: FunctionComponent = () => {
                 </div>
                 <div className="flex items-center  gap-x-4 md:px-6">
                     <img className="" src="/icons/Neovim-logo.svg" alt="NeoVim IDE" />{' '}
-                    <Badge text="Coming soon" size="small" color="light-gray" />
+                    <Heading size="h4" className="!text-2xl text-gray-200">
+                        Neovim
+                    </Heading>
                 </div>
                 <div className="flex items-center  gap-x-4 md:px-6">
-                    <img className="" src="/icons/EmacsIcon.svg" alt="Emacs IDE" />{' '}
+                    <img className="" src="/icons/EmacsIcon.svg" alt="Emacs IDE" />{' '}<Heading size="h4" className="!text-2xl text-gray-200">
+                        Emacs
+                    </Heading>
                     <Badge text="Coming soon" size="small" color="light-gray" />
                 </div>
             </div>
