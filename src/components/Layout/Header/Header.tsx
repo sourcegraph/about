@@ -56,8 +56,8 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
         <Disclosure as="nav" className={classNames('fixed top-0 left-0 right-0 z-[1030]')} ref={navRef}>
             {({ open }) => (
                 <>
-                    {pathname !== '/big-code/big-code-in-ai-era' && <Banner />}
-                    <HeaderContent colorTheme={colorTheme} minimal={minimal} open={open} sticky={sticky} />
+                    <Banner />
+                    <HeaderContent colorTheme={colorTheme} minimal={minimal} open={open} sticky={sticky} source={source} />
                 </>
             )}
         </Disclosure>
