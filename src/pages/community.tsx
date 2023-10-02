@@ -63,30 +63,6 @@ export const Community: FunctionComponent = () => (
                                 <ul>
                                     <li>
                                         <a
-                                            href="https://www.gophercon.com/home"
-                                            title="GopherCon 2023"
-                                            data-button-style={buttonStyle.text}
-                                            data-button-location={buttonLocation.body}
-                                            data-button-type="cta"
-                                        >
-                                            GopherCon · San Diego Marina
-                                        </a>{' '}
-                                        - September 26-29, 2023
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://devoxx.be/"
-                                            title="Devoxx Belgium"
-                                            data-button-style={buttonStyle.text}
-                                            data-button-location={buttonLocation.body}
-                                            data-button-type="cta"
-                                        >
-                                            Devoxx · Belgium
-                                        </a>{' '}
-                                        - October 2, 2023
-                                    </li>
-                                    <li>
-                                        <a
                                             href="https://www.cloudexpoasia.com/"
                                             title="Cloud Expo Asia"
                                             data-button-style={buttonStyle.text}
