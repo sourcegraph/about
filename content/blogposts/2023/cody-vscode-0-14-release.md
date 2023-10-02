@@ -20,15 +20,17 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.14.
 
 ## Inline Documentation with /doc
 
-Previously when using the `/doc` command, the generated documentation would be shown in the chat view. It will now directly insert the documentation text right above the selected code in your editor. This makes it easier to quickly add documentation stubs as you code.
+The `/doc` command now adds the generated documentation directly above your selected code. You no longer need to copy and paste the generated documentation from the chat view.
 
 <!-- TODO add example screenshot here -->
 
-## Experimental smart selection
+## Smart selection for `/doc` and `/test`
 
-We've started work on a smart selection capability that will automatically determine what code to run the `/doc` and `/test` commands on based on heuristics like scope and recent activity. This will remove the need to manually highlight code before generating documentation or tests.
+You can now use the `/doc` and `/test` commands without selecting any code first, and Cody will use the position of your cursor to guess out what you're wanting to document or code.
 
-Smart selection is still experimental but we're excited about the potential to streamline workflows. 
+(image)
+
+This feature is still under development, and doesn't yet handle cases xyz. Please give it a test and provide feedback.
 
 <!-- TODO add example screenshot here -->
 
@@ -44,7 +46,7 @@ This enables custom commands to be tailored for specific use cases like refactor
 
 <!-- TODO add example screenshot here -->
 
-## Save code blocks to files
+## New code block actions in chat
 
 We added a new "Save to File..." button on code blocks in the chat view. This allows you to easily extract and save code Cody generates to a file in your project.
 
