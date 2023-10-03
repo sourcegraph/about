@@ -39,9 +39,7 @@ Custom commands now support a new `mode` configuration field that allows command
 - `edit` - Runs the prompt on the selected code for refactoring workflows
 - `insert` - Runs the prompt and inserts the response on top of the selection
 
-This enables custom commands to be tailored for specific use cases like refactoring or documentation generation.
-
-<!-- TODO add link to updated docs here -->
+This enables custom commands to be tailored for specific use cases like refactoring or documentation generation. See [docs](https://docs.sourcegraph.com/cody/custom-commands) for more details.
 
 ## New code block actions in chat
 
