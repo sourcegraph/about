@@ -13,7 +13,7 @@ export const Banner: FunctionComponent<{}> = () => (
                 title="RSVP to the livestream"
                 className="btn bg-transparent !px-0 !py-0 leading-[22px] text-violet-300"
             >
-                RSVP
+                RSVP to the livestream
                 <ChevronRightIcon className="!mb-0 ml-[18px] inline" />
             </Link>
         </div>
