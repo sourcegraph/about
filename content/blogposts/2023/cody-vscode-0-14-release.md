@@ -5,7 +5,7 @@ authors:
     url: https://handbook.sourcegraph.com/team/#kalan-chan
   - name: Tim Lucas
     url: https://handbook.sourcegraph.com/team/#tim-lucas
-publishDate: 2023-10-04T10:00-07:00
+publishDate: 2023-10-04T10:00-01:00
 description: "Smart selection for /doc and /test, improvements to /doc, a new mode configuration for custom commands, and updated code block action buttons in chat."
 tags: [blog]
 slug: "cody-vscode-0-14-release"
