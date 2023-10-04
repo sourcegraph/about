@@ -1,8 +1,8 @@
 ---
 title: "Introducing enhancements to Code Search and Cody, including a 2x increase in autocomplete quality"
 authors:
-  - name:
-    url:
+  - name: Alex Isken
+    url: https://handbook.sourcegraph.com/team/#alex-isken
 publishDate: 2023-10-04T10:00-07:00
 description: "New versions of Cody and Code Search are now available, including Cody for Neovim and support for OpenAI LLMs in Cody."
 tags: [blog]
@@ -18,7 +18,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-octo
   showTitle={false}
 />
 
-Today, we're announcing a major upgrade to Cody that achieves a best-in-class initial completion acceptance rate of 30%. Cody now supports using OpenAI and open source language models in addition to the models from Anthropic already supported, and Cody LLMs can now be hosted on Azure OpenAI and AWS Bedrock. Cody is also now available for Neovim, in addition to VS Code and JetBrains IDEs. We've also revamped the Cody onboarding experience, which no longer requires installing a separate app, greatly simplifying the installation process.
+Today, we're announcing a major upgrade to Cody that achieves a best-in-class initial completion acceptance rate of 30%. Cody now supports using OpenAI and open source language models in addition to the models from Anthropic already supported, and Cody LLMs can now be hosted on Azure OpenAI and AWS Bedrock. Cody is also now available for Neovim, in addition to VS Code and [JetBrains IDEs](https://docs.sourcegraph.com/cody/explanations/cody_clients#cody-ide-extensions). We've also revamped the Cody onboarding experience, which no longer requires installing a separate app, greatly simplifying the installation process.
 
 Code Search version 5.2 also gets a number of usability upgrades, including better onboarding for admins. We’ve also shipped improved git debuggability to make troubleshooting gitserver faster for customers running large Sourcegraph instances.
 
@@ -34,7 +34,7 @@ Completion Acceptance Rate (CAR) has become a de facto standard way to measure t
 
 In June, Cody’s CAR was 15%, which frankly, we were not happy with. Now with this October release, and our continued improvement to context, we’re proud to say that the latest Cody achieves as high as 30% acceptance rate among users on average. Cody autocomplete is also now much quicker, with multiline latency improving from 3.4 seconds to 2.4 seconds and single-line latencies from 2.0 seconds to 1.1 seconds on average. And we’ve got plenty of headroom yet in these numbers, so stay tuned for further improvements in future releases.
 
-A major factor in Cody’s improved performance comes from incorporating open source LLMs into Cody. Cody now uses the [StarCoder](https://huggingface.co/bigcode/starcoder) model for the majority of its completions - specifically, StarCoder running on Fireworks, a new platform that provides fast inference for open source LLMs. Going forward, Cody Community users will make use of a combination of proprietary LLMs from Anthropic and open source models like StarCoder (the CAR we report comes from using Cody with StarCoder).
+A major factor in Cody’s improved performance comes from incorporating open source LLMs into Cody. Cody for community now uses the [StarCoder](https://github.com/bigcode-project/starcoder) model for the majority of its completions - specifically, StarCoder running on Fireworks, a new platform that provides fast inference for open source LLMs. Going forward, Cody community users will make use of a combination of proprietary LLMs from Anthropic and open source models like StarCoder (the CAR we report comes from using Cody with StarCoder).
 
 Cody also now incorporates syntactic signals to inform when it triggers a completion, including recent user behavior and recently viewed files. In some cases, this means adding latency to Cody’s completions to yield a better experience. We’ve also shipped code graph context for a select number of users, making use of Tree-sitter to fetch related snippets of code that help eliminate type errors, a common mistake in hallucinated code generations.
 
