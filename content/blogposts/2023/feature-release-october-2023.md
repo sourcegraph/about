@@ -38,7 +38,7 @@ A major factor in Cody’s improved performance comes from incorporating open so
 
 Another factor driving improved CAR is that Cody now uses the [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) to determine when to trigger a completion and whether to generate a single-line or multi-line completion. Here's an example of where Cody opts for a one-shot multiline completion in contrast to another coding assistant that generates code line by line.
 
-_Cody:_
+#### Cody:
 <Video 
   source={{
     webm: 'blog/release-october-2023/cody_multilinereturn',
@@ -48,7 +48,7 @@ _Cody:_
   title="Cody multiline autocomplete"
 />
 
-_Other coding assistant:_
+#### Other coding assistant:
 <Video 
   source={{
     webm: 'blog/release-october-2023/competitor_multilinereturn',
