@@ -298,6 +298,16 @@ const HomeHero: FunctionComponent = () => {
                                 type="IntelliJ"
                                 className="rounded-[10px] border border-gray-200 border-opacity-20"
                             />
+                            <AvailabilityIcon
+                                href="https://github.com/sourcegraph/sg.nvim"
+                                src="/home/neoVim-logo.svg"
+                                alt="Neovim"
+                                onHover={() => setHoveredImageText('Neovim')}
+                                onMouseLeave={() => setHoveredImageText('')}
+                                eventName={EventName.DOWNLOAD_IDE}
+                                type="NeoVim"
+                                className="rounded-[10px] border border-gray-200 border-opacity-20"
+                            />
                         </div>
 
                         <div className="relative flex rounded-lg border border-dashed border-gray-200 border-opacity-20">
@@ -305,18 +315,10 @@ const HomeHero: FunctionComponent = () => {
                                 <Badge
                                     text="Join the waitlist"
                                     size="small"
-                                    className="absolute -right-[4.25px] -top-[24.25px] w-fit text-gray-500 hover:bg-violet-100 hover:text-violet-600"
+                                    className="absolute -left-[24px] -top-[24.25px] w-fit text-gray-500 hover:bg-violet-100 hover:text-violet-600"
                                 />
                             </Link>
-                            <AvailabilityIcon
-                                href="https://info.sourcegraph.com/waitlist"
-                                src="/home/neoVim-logo.svg"
-                                alt="Neovim (coming soon)"
-                                onHover={() => setHoveredImageText('Neovim (coming soon)')}
-                                onMouseLeave={() => setHoveredImageText('')}
-                                eventName={EventName.JOIN_IDE_WAITLIST}
-                                type="NeoVim"
-                            />
+
                             <AvailabilityIcon
                                 href="https://info.sourcegraph.com/waitlist"
                                 src="/home/emacs-logo.svg"
