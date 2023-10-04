@@ -108,8 +108,8 @@ The VS Code extension has received a similar upgrade as JetBrains, with under-th
 
 The `/doc` and `/test` commands have also been updated:
 
-- `/doc` now adds docstrings directly to your code without you needing to copy & paste from the chat sidebar.
-- `/test` now better detects your testing framework, adds any dependency imports as needed, and includes the necessary stubs and test setup code.
+- `/doc` now adds docstrings directly to your code without you needing to copy & paste from the chat sidebar
+- `/test` now better detects your testing framework, adds any dependency imports as needed, and includes the necessary stubs and test setup code
 
 <br/>
 
@@ -184,7 +184,7 @@ The steps needed to fully configure a fresh new Sourcegraph installation were pr
 
 <br/>
 
-This change makes the setup process far more straightforward for admins to get the best experience on their new instance.
+This change makes the setup process more straightforward for admins to get the best experience on their new instance.
 
 ### Get started today
 
