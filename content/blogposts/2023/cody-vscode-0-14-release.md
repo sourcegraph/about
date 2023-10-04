@@ -1,12 +1,12 @@
 ---
-title: "Cody for VS Code v0.12 release"
+title: "Cody for VS Code v0.14 release"
 authors:
   - name: Kalan Chan
     url: https://handbook.sourcegraph.com/team/#kalan-chan
   - name: Tim Lucas
     url: https://handbook.sourcegraph.com/team/#tim-lucas
 publishDate: 2023-10-04T10:00-07:00
-description: "Smart selection for `/doc` and `/test`, Inline Documentation with /doc, New custom command modes, New code block actions in chat"
+description: "Smart selection for /doc and /test, improvements to /doc, a new mode configuration for custom commands, and updated code block action buttons in chat."
 tags: [blog]
 slug: "cody-vscode-0-14-release"
 published: true
@@ -17,19 +17,22 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 [Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.14 is now available and includes improvements to the `/doc` and `/test` commands, a new mode configuration for custom commands, and experimental smart selection.
 
 
-## Smart selection for `/doc` and `/test`
+## Smart selection for /doc and /test
 
 You can now use the `/doc` and `/test` commands without selecting any code first, and Cody will use the position of your cursor to guess out what you're wanting to document or code.
+
+For unit tests, it means you can now generate them by right clicking on a function name and selecting "Cody → Generate Unit Tests". Or using the keyboard, anywhere in a function, by pressing option-c (Mac) or alt-c (Windows/Linux) and running `/test`.
 
 <img alt="Screenshot of an smart selection" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-14-release/smart-select.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:628}} />
 
 This feature is still under development, please give it a test and provide feedback.
-## Inline Documentation with /doc
+## Improvements to /doc
 
 The `/doc` command now adds the generated documentation directly above your selected code. You no longer need to copy and paste the generated documentation from the chat view.
 
-<img alt="Screenshot of an inline doc generation" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-14-release/inline-doc-2.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:628}} />
-
+ <img alt="Screenshot of an inline doc generation" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-14-release/inline-doc-2.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:628}} />
+ 
+We've also improved the `/doc` command’s underlying prompt so it now better matches your existing comment styles, generates more concise explanations, and better understands when to use a docstring-style API comment vs a plain code comment.
 
 ## New custom command modes 
 
@@ -39,11 +42,13 @@ Custom commands now support a new `mode` configuration field that allows command
 - `edit` - Runs the prompt on the selected code for refactoring workflows
 - `insert` - Runs the prompt and inserts the response on top of the selection
 
-This enables custom commands to be tailored for specific use cases like refactoring or documentation generation. See [docs](https://docs.sourcegraph.com/cody/custom-commands) for more details.
+See the [custom commands documentation](https://docs.sourcegraph.com/cody/custom-commands) for details on the new `mode` property.
 
-## New code block actions in chat
+## New Copy, Insert and Save to File buttons
 
-We added a new "Save to File..." button on code blocks in the chat view. This allows you to easily extract and save code Cody generates to a file in your project.
+The "Copy" and "Insert at Cursor" actions on chat code blocks are now always visible, accessible via a new bar on the bottom of the code blocks.
+
+We've also added a new "Save to File..." button, allowing you to save the code block directly to a new file in your project.
 
 <img alt="Screenshot of an Save To File in chat" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-14-release/save-to-file.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:628}} />
 
