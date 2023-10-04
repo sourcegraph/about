@@ -98,6 +98,8 @@ The JetBrains plugin has been rewritten with a new architecture that significant
   title="Cody in JetBrains"
 />
 
+Cody for Neovim remains experimental as we continue to tweak the UX based on community feedback. If you have feedback, let us know in [Discord](https://discord.gg/rDPqBejz93).
+
 [Download Cody for JetBrains](https://plugins.jetbrains.com/plugin/9682-sourcegraph-cody--code-search).
 
 ### Performance improvements and command updates for Cody in VS Code
