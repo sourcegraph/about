@@ -136,7 +136,7 @@ Cody now supports OpenAI models, and enterprise Cody users can choose from these
 
 <br/>
 
-<a href="https://docs.sourcegraph.com/cody/overview/enable-cody-enterprise#using-a-third-party-llm-provider" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/cody/overview/enable-cody-enterprise#using-a-third-party-llm-provider-directly" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 ## Cody Enterprise users can bring their own LLM provider with Azure OpenAI and AWS Bedrock
 
@@ -144,7 +144,7 @@ Alongside support for OpenAI models, users now have more choice in how they run 
 
 By default, Cody accesses LLMs directly via Anthropic & OpenAI’s respective APIs (with 0 retention on both inputs and outputs). By configuring Cody to use Azure OpenAI or Bedrock instead, users can securely route requests from Cody to their own Azure & AWS accounts, plus control their own LLM costs directly.
 
-<a href="https://docs.sourcegraph.com/cody/overview/enable-cody-enterprise#anthropic-claude-through-aws-bedrock-span-style-margin-left-0-25rem-class-badge-badge-experimental-experimental-span" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
+<a href="https://docs.sourcegraph.com/cody/overview/enable-cody-enterprise#azure-openai-span-class-badge-badge-experimental-experimental-span" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
 ## Code Search
 
