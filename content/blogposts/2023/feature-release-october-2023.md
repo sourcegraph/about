@@ -20,7 +20,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-octo
 
 Today, we're announcing a major upgrade to Cody that achieves a best-in-class initial completion acceptance rate of 30%. Cody now supports using OpenAI and open source language models in addition to the models from Anthropic already supported, and Cody LLMs can now be hosted on Azure OpenAI and AWS Bedrock. Cody is also now available for Neovim, in addition to VS Code and [JetBrains IDEs](https://docs.sourcegraph.com/cody/explanations/cody_clients#cody-ide-extensions). We've also revamped the Cody onboarding experience, which no longer requires installing a separate app, greatly simplifying the installation process.
 
-Code Search version 5.2 also gets a number of usability upgrades, including better onboarding for admins. We’ve also shipped improved git debuggability to make troubleshooting gitserver faster for customers running large Sourcegraph instances.
+Sourcegraph Code Search 5.2 features a number of admin usability improvements, including improved admin onboarding and troubleshooting features for repository syncing on very large codebases.
 
 Read on to learn more about what’s new. And, if you’d like to learn more about how we view the evolution of the code AI landscape, check out our other post: [How we’re thinking about the levels of Code AI](https://about.sourcegraph.com/blog/levels-of-code-ai).
 
@@ -30,15 +30,13 @@ Read on to learn more about what’s new. And, if you’d like to learn more abo
 
 ### Speed & quality improvements across Cody IDE clients
 
-Completion Acceptance Rate (CAR) has become a de facto standard way to measure the combined latency and quality of autocompletions produced by AI coding assistants. If the response quality is high but it takes too long to appear, it will be rejected. Likewise, if it comes quickly but is of low quality, the response will also be rejected. A raising CAR measures our ability to hit the sweet spot between the two as we optimize for users accepting the suggestion Cody makes. 
+Completion Acceptance Rate (CAR) has become a standard way to measure the quality of completions produced by AI coding assistants. Both response quality and latency affect CAR as high quality slow completions and low quality fast completions are more likely to be rejected.
 
-In June, Cody’s CAR was 15%, which frankly, we were not happy with. Now with this October release, and our continued improvement to context, we’re proud to say that the latest Cody achieves as high as 30% acceptance rate among users on average. Cody autocomplete is also now much quicker, with multiline latency improving from 3.4 seconds to 2.4 seconds and single-line latencies from 2.0 seconds to 1.1 seconds on average. And we’ve got plenty of headroom yet in these numbers, so stay tuned for further improvements in future releases.
+Cody's initial CAR in June was 15%. With the latest updates, Cody's daily CAR has reached as high as 30%. Cody autocomplete is also now much quicker, with average multiline latency improving from 3.4 seconds to 2.4 seconds and single-line latencies from 2.0 seconds to 1.1 seconds.
 
-A major factor in Cody’s improved performance comes from incorporating open source LLMs into Cody. Cody for community now uses the [StarCoder](https://github.com/bigcode-project/starcoder) model for the majority of its completions - specifically, StarCoder running on Fireworks, a new platform that provides fast inference for open source LLMs. Going forward, Cody community users will make use of a combination of proprietary LLMs from Anthropic and open source models like StarCoder (the CAR we report comes from using Cody with StarCoder).
+A major factor in Cody’s improved performance comes from incorporating open source LLMs into Cody. Cody now uses the [StarCoder model](https://github.com/bigcode-project/starcoder) for the majority of its completions in the community edition. Cody’s StarCoder runs on Fireworks, a new platform that provides very fast inference for open source LLMs. Going forward, Cody for community users will make use of a combination of proprietary LLMs from Anthropic and open source models like StarCoder (the CAR we report comes from using Cody with StarCoder).
 
-Cody also now incorporates syntactic signals to inform when it triggers a completion, including recent user behavior and recently viewed files. In some cases, this means adding latency to Cody’s completions to yield a better experience. We’ve also shipped code graph context for a select number of users, making use of Tree-sitter to fetch related snippets of code that help eliminate type errors, a common mistake in hallucinated code generations.
-
-Behaviorally, Cody now uses [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) to determine when to trigger a completion and whether to generate a single-line or multi-line completion. Here's an example of where Cody opts for a one-shot multiline completion in contrast to other coding assistants that generate code line by line.
+Another factor driving improved CAR is that Cody now uses the [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) to determine when to trigger a completion and whether to generate a single-line or multi-line completion. Here's an example of where Cody opts for a one-shot multiline completion in contrast to another coding assistant that generates code line by line.
 
 _Cody:_
 <Video 
@@ -60,7 +58,7 @@ _Other coding assistant:_
   title="Competitor multiline autocomplete"
 />
 
-Cody itself remains open source, while integrating with Sourcegraph Code Search (source available) and proprietary LLMs. Sourcegraph remains committed to its philosophy of striving for open source for single player dev tools like Cody. We also believe freedom of choice in the fast-moving model landscape will be a competitive advantage and accelerator of progress for Cody that will compound over time. 
+Cody itself remains open source. We also believe our ability to integrate the best open source and proprietary LLMs in the fast-moving model landscape will be a competitive advantage and accelerator of progress for Cody that will compound over time. 
 
 ### Cody for Neovim, now available as experimental
 
