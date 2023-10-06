@@ -64,7 +64,7 @@ This dashboard can be found under `Site Admin` > `Maintenance` > `Background job
 
 We've been using Anthropic's new language model, Claude, to build an in-editor coding assistant called Cody that helps you understand code and reduces day-to-day sources of programmer toil. We see huge potential for integrating the natural language abilities of LLMs with Sourcegraph's code intelligence. The early results are already promising, and we're just getting started.
 
-Cody will roll out soon in private beta. If you're interested in early access to Cody, you can [submit this form](https://sourcegraph.typeform.com/cody-signup).
+Cody will roll out soon in private beta. If you're interested in early access to Cody, you can [submit this form](https://about.sourcegraph.com/cody).
 
 <video controls playsinline mute title="Cody demo" caption="Sourcegraph's new AI coding assistant">
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/4.4/cody-demo.mp4" />

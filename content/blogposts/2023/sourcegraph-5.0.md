@@ -40,7 +40,7 @@ Read on to discover everything included in Sourcegraph 5.0.
 
 Cody is an AI coding assistant that can find, explain, and write code. Cody can answer questions about both general programming topics and your specific codebase from right inside your editor. Cody is powered by Sourcegraph's graph of code intelligence, so unlike other coding assistants, it knows about your codebase and not just about open source code.
 
-We're releasing Cody as experimental in 5.0, with general availability coming in a future release. [Learn more about Cody](https://about.sourcegraph.com/cody) and [sign up for access to Cody](https://sourcegraph.typeform.com/cody-signup).
+We're releasing Cody as experimental in 5.0, with general availability coming in a future release. [Learn more about Cody](https://about.sourcegraph.com/cody) and [sign up for access to Cody](https://about.sourcegraph.com/cody).
 
 <br/>
 

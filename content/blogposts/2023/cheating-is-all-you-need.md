@@ -323,7 +323,7 @@ Say hi to Cody:
 
 Cody is Sourcegraph’s new LLM-backed coding assistant. Cody knows about your code. It has templated actions, such as writing unit tests, generating doc comments, summarizing code, that kind of thing. You know. Stuff you can choose from a menu. Like other assistants. It even has code completions, if you’re into that sort of thing.
 
-Cody is not some vague “representation of a vision for the future of AI”. You can try it *[right now](https://sourcegraph.typeform.com/cody-signup)*.
+Cody is not some vague “representation of a vision for the future of AI”. You can try it *[right now](https://about.sourcegraph.com/cody)*.
 
 And it has a chat interface! Which means it’s totally open-ended; you can ask it any question at all about your code base or your environment, and we’ll send it the right cheat sheet. And Cody itself is a *platform*, because you can use it to build your own LLM-backed workflows.
 
