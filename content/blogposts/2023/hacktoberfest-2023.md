@@ -1,5 +1,5 @@
 ---
-title: "How Cody AI can help you make awesome Hacktoberfest contributions"
+title: "How Cody can help you make awesome Hacktoberfest contributions"
 authors:
   - name: Justin Dorfman
     url: https://twitter.com/jdorfman
