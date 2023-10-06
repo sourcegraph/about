@@ -189,7 +189,7 @@ const HomeHero: FunctionComponent = () => {
                     <div className="hero-content mx-auto flex w-full max-w-[567px] flex-col items-center px-0 md:mx-0 md:items-start">
                         <Heading
                             size="h1"
-                            className="w-full text-center !text-[42px] leading-[65px] text-white md:max-w-[516px] md:text-start md:!text-[58px]"
+                            className="w-full text-center !text-[42px] leading-tight text-white md:max-w-[516px] md:text-start md:!text-[58px]"
                         >
                             Find & fix code with
                             <br />
