@@ -32,7 +32,7 @@ Read on to learn more about what’s new. And, if you’d like to learn more abo
 
 Completion Acceptance Rate (CAR) has become a standard way to measure the quality of completions produced by AI coding assistants. Both response quality and latency affect CAR as high quality slow completions and low quality fast completions are more likely to be rejected.
 
-Cody's initial CAR in June was 15%. With the latest updates, Cody's daily CAR has reached as high as 30%. Cody autocomplete is also now much quicker, with average multiline latency improving from 3.4 seconds to 2.4 seconds and single-line latencies from 2.0 seconds to 1.1 seconds.
+Cody's initial CAR in June was 15%. With the latest updates, Cody's daily CAR has reached as high as 30%. Cody autocomplete is also now much quicker, with P75 multiline latency improving from 3.4 seconds to 2.4 seconds and single-line latencies from 2.0 seconds to 1.1 seconds.
 
 A major factor in Cody’s improved performance comes from incorporating open source LLMs into Cody. Cody now uses the [StarCoder model](https://github.com/bigcode-project/starcoder) for the majority of its completions in the community edition. Cody’s StarCoder runs on [Fireworks](http://fireworks.ai/), a new platform that provides very fast inference for open source LLMs. Going forward, Cody for community users will make use of a combination of proprietary LLMs from Anthropic and open source models like StarCoder (the CAR we report comes from using Cody with StarCoder).
 
