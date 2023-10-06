@@ -34,7 +34,7 @@ Today, virtually all code written is human-initiated, where a human writes, debu
 
 ### Level 0 - No AI assistance
 
-At this base level, the developer writes all code manually without any AI assistance. This reflects the traditional software development process that relies solely on human developers writing code. The developer is responsible for all aspects of programming, including writing, structuring, testing, debugging, and maintaining a codebase. AI does not generate or modify any part of the codebase. All logic, planning, and implementation comes from the human developer. This level serves as the starting point before introducing any AI assistance into the development workflow.
+At this base level, the developer writes all code manually without any AI assistance. The developer is responsible for all aspects of programming, including writing, structuring, testing, debugging, and maintaining a codebase. AI does not generate or modify any part of the codebase. All logic, planning, and implementation comes from the human developer. This level serves as the starting point before introducing any AI assistance into the development workflow.
 
 In self-driving car terminology, this represents the SAE level 0 of driving automation, which is "No Automation." A vehicle operating at Level 0 is fully reliant on the human driver. The human driver performs all the tasks from acceleration to braking, steering, and everything in between.
 
@@ -86,7 +86,7 @@ This is like SAE Level 2 (Partial Automation), which includes features like traf
 
 ## AI-initiated coding
 
-Code AI levels 1 and 2 about human-initiated coding, where the AI coding assistant performs a single operation in response to human direction, and where the AI's output is (intended to be) reviewed by the human.
+Code AI levels 1 and 2 are about human-initiated coding, where the AI coding assistant performs a single operation in response to human direction, and where the AI's output is (intended to be) reviewed by the human.
 
 The next two levels, levels 3 and 4 of code AI, are where the code AI performs multiple steps (operations) to accomplish a human's higher-level intent. The human does not review the output of each step.
 
