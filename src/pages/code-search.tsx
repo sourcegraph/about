@@ -24,7 +24,7 @@ export const CodeSearchPage: FunctionComponent = () => (
         hero={
             <>
                 <ContentSection
-                    parentClassName="!py-0 !px-sm overflow-x-clip"
+                    parentClassName="!py-0 !px-sm overflow-x-clip relative z-20"
                     className="grid grid-cols-1 pb-8 pt-20 md:grid-cols-2 md:pt-28 md:pb-16"
                 >
                     <div className="flex w-full flex-col">
