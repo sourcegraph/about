@@ -63,18 +63,6 @@ export const Community: FunctionComponent = () => (
                                 <ul>
                                     <li>
                                         <a
-                                            href="https://www.cloudexpoasia.com/"
-                                            title="Cloud Expo Asia"
-                                            data-button-style={buttonStyle.text}
-                                            data-button-location={buttonLocation.body}
-                                            data-button-type="cta"
-                                        >
-                                            Cloud Expo Asia · Sigapore
-                                        </a>{' '}
-                                        - Octbober 11-12, 2023
-                                    </li>
-                                    <li>
-                                        <a
                                             href="https://reactadvanced.com/"
                                             title="React Advanced"
                                             data-button-style={buttonStyle.text}
