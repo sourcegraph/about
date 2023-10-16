@@ -18,7 +18,7 @@ At Sourcegraph, we recently [announced support for integrating Amazon Bedrock](h
 
 ### What is Amazon Bedrock
 
-[Amazon Bedrock](https://aws.amazon.com/bedrock/) is a fully managed service that provides AWS customers access to a number of different foundation models on-demand, including models from Amazon and other third parties such as Anthropic. This includes Claude 2 and Claude Instant, two of the models commonly used to power Sourcegraph's Cody. Foundational models can be privately customized with your own data stored at Amazon Simple Storage Service (Amazon S3). Users can adjust the hyperparameters to achieve the best model performance.
+[Amazon Bedrock](https://aws.amazon.com/bedrock/) is a fully managed service that provides AWS customers access to a number of different foundation models on-demand, including models from Amazon and other third parties such as Anthropic. This includes Claude 2 and Claude Instant, two of the models commonly used to power Sourcegraph's Cody. Foundation models can be privately customized with your own data stored at Amazon Simple Storage Service (Amazon S3). Users can adjust the hyperparameters to achieve the best model performance.
 
 Bedrock also offers security for the data being sent to and from the model. All data processed by the service is encrypted in transit and at rest, and content sent to the service (such as user prompts and context) is not used to improve the base models, nor is it shared with third-party model providers.
 
@@ -47,6 +47,6 @@ The following diagram illustrates the data flow when using Cody with Anthropic's
 
 ### Getting started with Cody and Amazon Bedrock
 
-In summary, using Cody with Amazon Bedrock lets organizations bring coding AI to their teams while taking advantage of the data and pricing controls of their existing cloud provider.
+In summary, using Cody with Amazon Bedrock lets organizations bring code AI to their teams while taking advantage of the data and pricing controls of their existing cloud provider.
 
 If you're not already using Cody and you're interested in using it with Amazon Bedrock, you can [contact us about Cody Enterprise](https://about.sourcegraph.com/contact/request-info). If you're already a Cody Enterprise customer and you'd like to configure Amazon Bedrock for your account, you can [find instructions in the docs](https://docs.sourcegraph.com/cody/overview/enable-cody-enterprise#anthropic-claude-through-aws-bedrock) or contact your Technical Advisor.
