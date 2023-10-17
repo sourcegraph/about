@@ -3,7 +3,7 @@ layout: markdown
 title: Terms of Service for Sourcegraph Cloud
 ---
 
-![Long Banner_Blue](https://github.com/sourcegraph/about/assets/117413623/c7ce94a6-5c24-40a1-a258-6e797bce8744)
+[![Short Banner_White](https://github.com/sourcegraph/about/assets/117413623/c16c9d18-d382-44bb-8d13-e616c015ae47)](https://app.termscout.com/certify/sourcegraph-certified-contract#ccr-highlights)
 
 Last modified: October 10, 2023
 
