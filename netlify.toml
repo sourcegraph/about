@@ -1,6 +1,7 @@
 [build]
   publish = "out"
-  command = "pnpm run build && mv ./out/_next/static/chunks/pages/_app-* ./ && mv ./out/_next/static/chunks/pages/index-* ./ && rm -rf ./out/_next/static/chunks/pages && mkdir -p ./out/_next/static/chunks/pages && mv ./_app-* ./out/_next/static/chunks/pages && mv ./index-* ./out/_next/static/chunks/pages"
+#  command = "pnpm run build && mv ./out/_next/static/chunks/pages/_app-* ./ && mv ./out/_next/static/chunks/pages/index-* ./ && rm -rf ./out/_next/static/chunks/pages && mkdir -p ./out/_next/static/chunks/pages && mv ./_app-* ./out/_next/static/chunks/pages && mv ./index-* ./out/_next/static/chunks/pages"
+  command = "pnpm run build"
 
 [build.environment]
 # Keep this in sync with package.json "engines".
