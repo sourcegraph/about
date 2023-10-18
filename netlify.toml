@@ -1,6 +1,6 @@
 [build]
   publish = "out"
-  command = "pnpm run build"
+  command = "pnpm run build && rm -rf ./out/_next/static/chunks/pages"
 
 [build.environment]
 # Keep this in sync with package.json "engines".
