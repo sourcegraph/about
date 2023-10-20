@@ -50,7 +50,7 @@ I prefer having it on the right hand side so I moved the Cody extension to the s
 
 Splitting up the IDE into these three sections works great for me as it allows me to easily navigate my codebase, make changes to the code, and always have Cody at the ready to assist.
 
-You can hide the primary and secondary sidebars when you need to focus on your code with the Command + B and Command + Option + B shortcuts. Additionally, you can use Cody inline without having to dedicate a panel for it.
+You can hide the primary and secondary sidebars when you need to focus on your code with the <kbd>Command</kbd> + <kbd>B</kbd> and <kbd>Command</kbd> + <kbd>Option</kbd> + <kbd>B</kbd> shortcuts. Additionally, you can use Cody inline without having to dedicate a panel for it.
 
 ## Inline Chat
 
