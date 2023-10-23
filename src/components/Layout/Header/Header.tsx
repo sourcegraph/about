@@ -8,7 +8,6 @@ import { useRouter } from 'next/router'
 
 import { useAuthModal } from '../../../context/AuthModalContext'
 import { buttonLocation } from '../../../data/tracking'
-import { Banner } from '../../Banner'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
 
 import { NavItems } from './NavItems'
@@ -55,10 +54,7 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
     return (
         <Disclosure as="nav" className={classNames('fixed top-0 left-0 right-0 z-[1030]')} ref={navRef}>
             {({ open }) => (
-                <>
-                    <Banner />
-                    <HeaderContent colorTheme={colorTheme} minimal={minimal} open={open} sticky={sticky} source={source} />
-                </>
+                <HeaderContent colorTheme={colorTheme} minimal={minimal} open={open} sticky={sticky} source={source} />
             )}
         </Disclosure>
     )
