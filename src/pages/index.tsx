@@ -420,7 +420,7 @@ const HomeHero: FunctionComponent = () => {
                             </p>
                             <div className="flex flex-col gap-x-4 gap-y-4 md:flex-row md:flex-wrap lg:gap-y-8">
                                 <Link
-                                    href="https://testwww.sourcegraph.com/code-search"
+                                    href="https://testwww.sourcegraph.com/search"
                                     className="hover:sg-bg-hover-link-button flex items-center justify-center rounded-[5px] bg-white py-2 px-6 font-semibold text-violet-500"
                                     onClick={() => handleOnClick(EventName.SEARCH_LEARN_MORE_CTA)}
                                 >
