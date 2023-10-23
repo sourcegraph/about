@@ -51,8 +51,8 @@ go mod init mflix
 Now that we have our Go module created, let's install the dependencies for our project. We'll keep it really simple and just install the gin and mongodb libraries.
 
 ```bash
-go  get  github.com/gin-gonic/gin
-go  get  go.mongodb.org/mongo-driver/mongo
+go get github.com/gin-gonic/gin
+go get go.mongodb.org/mongo-driver/mongo
 ```
 
 With our dependencies fetched and installed, we're ready to start building our application.
@@ -106,7 +106,7 @@ import (
 
     "github.com/gin-gonic/gin"
 
-       // Add the MongoDB driver packages 
+    // Add the MongoDB driver packages 
     "go.mongodb.org/mongo-driver/mongo"
     "go.mongodb.org/mongo-driver/mongo/options"
 )
