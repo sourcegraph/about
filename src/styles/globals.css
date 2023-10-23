@@ -35,6 +35,9 @@
     code {
         @apply font-mono text-base font-medium tracking-tightest break-words;
     }
+    kbd {
+        @apply bg-gray-200 border border-gray-400 rounded shadow-sm text-gray-500 text-sm inline-block px-2 py-1
+    } 
     /* Inline Links */
     p a,
     li a {
