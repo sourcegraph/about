@@ -68,7 +68,7 @@ To use inline chat, click on + icon on the line of code you want to start the co
   title="Cody AI Inline Chat"
 />
 
-Inline chat can be a great alternative if you are constrained by space or prefer a more minimal interface. We built Cody to be helpful, not get in your way. Inline chat also supports shortcuts, so if you want to start a new inline chat, hit Command + Shift + C to start a new inline chat. You can have multiple inline chats in a file, and I find this really useful when onboarding onto a new codebase and want to understand what the different functions are doing.
+Inline chat can be a great alternative if you are constrained by space or prefer a more minimal interface. We built Cody to be helpful, not get in your way. Inline chat also supports shortcuts, so if you want to start a new inline chat, hit <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> to start a new inline chat. You can have multiple inline chats in a file, and I find this really useful when onboarding onto a new codebase and want to understand what the different functions are doing.
 
 ## Commands 
 
@@ -78,7 +78,7 @@ With Cody, we have a feature called commands that helps developers run repetitiv
 
 Cody also allows you to define your own custom commands. So, if you find yourself writing the same prompt over and over and over again, turn it into a [custom command](https://docs.sourcegraph.com/cody/custom-commands).
 
-The Option + C shortcut will bring up the Cody commands window, allowing you to execute any of the prebuilt as well as any custom commands you define. You can additionally execute any of the commands within the Cody Chat prompt window by starting your query with `/`. 
+The <kbd>Option</kbd> + <kbd>C</kbd> shortcut will bring up the Cody commands window, allowing you to execute any of the prebuilt as well as any custom commands you define. You can additionally execute any of the commands within the Cody Chat prompt window by starting your query with `/`. 
 
 ![Cody custom commands](https://storage.googleapis.com/sourcegraph-assets/blog/power-users-guide-to-cody-for-vs-code/cody-commands.png)
 
@@ -102,7 +102,7 @@ What I love most about the CodeLens functionality is that it highlights the spec
 
 We covered a lot of shortcuts in this article, but there are a few more shortcuts and features that you should be aware of.
 
-Command + Shift + V opens up the `/edit` command window allowing you to quickly ask Cody to fix, enhance, or change a piece of code. You can also use it to add new code. For example, let's say we wanted to add an additional event listener for a different element in our Chrome extension.
+<kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> opens up the `/edit` command window allowing you to quickly ask Cody to fix, enhance, or change a piece of code. You can also use it to add new code. For example, let's say we wanted to add an additional event listener for a different element in our Chrome extension.
 
 Our existing code might look like this:
 
@@ -111,7 +111,6 @@ document.getElementById('add-text').addEventListener('click',  function()  {
   const  text  =  document.getElementById('text-input').value;
   chrome.runtime.sendMessage({action:  "addText",  text:  text});
 });
-
 ```
 
  We could accomplish this a couple of different ways:
@@ -122,7 +121,7 @@ document.getElementById('add-text').addEventListener('click',  function()  {
 
 -   Use Cody edit to generate the new code
 
-Let's see how option three would work. We'll navigate to a line below our existing implementation. Hit Command + Shift + V and ask Cody to do it for us.
+Let's see how option three would work. We'll navigate to a line below our existing implementation. Hit <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> and ask Cody to do it for us.
 
 <Video 
   source={{
