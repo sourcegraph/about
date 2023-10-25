@@ -401,16 +401,6 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'Convoy improves developer onboarding',
-        link: '/case-studies/convoy-improved-on-boarding',
-        contentType: 'customer story',
-        subjects: ['onboarding', 'developer productivity'],
-        description: 'At Convoy, Sourcegraph helps improve the developer onboarding process.',
-        publishDate: '2019-11-11T17:12:10Z',
-        keyword: ['Convoy', 'onboarding', 'developer productivity'],
-    },
-    {
-        featured: false,
         title: 'Lyft ensures production stability during monolith to microservices transition',
         link: '/case-studies/lyft-monolith-to-microservices',
         contentType: 'customer story',

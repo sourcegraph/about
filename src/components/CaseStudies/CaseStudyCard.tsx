@@ -78,12 +78,6 @@ export const CASESTUDIES: CaseStudy[] = [
         url: '/case-studies/f5-streamlines-collaboration-globally',
     },
     {
-        name: 'Convoy',
-        logo: '/external-logos/convoy-logo.svg',
-        title: 'Convoy improves developer onboarding.',
-        url: '/case-studies/convoy-improved-on-boarding',
-    },
-    {
         name: 'Lyft',
         logo: '/external-logos/lyft-logo.svg',
         title: 'Lyft ensures production stability during monolith to microservices transition.',
