@@ -125,7 +125,7 @@ Using the suggest widget to steer the LLM results is absolutely magical:
     mp4: 'blog/the-lifecycle-of-a-code-ai-completion/suggest-widget'
   }}
   loop={true}
-  title="Level 2"
+  title="Using the suggeststion widget to drive the autocomplete result"
 />
 
 ## Retrieval
