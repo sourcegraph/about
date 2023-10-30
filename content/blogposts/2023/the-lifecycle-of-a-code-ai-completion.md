@@ -12,7 +12,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/the-lifecycle-
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/the-lifecycle-of-a-code-ai-completion/lifecycle-of-code-ai-completion-blog.png
 ---
 
-Generative AI, whether for code, text, images, or other use cases, appears as a magic black box to many users. Users typically navigate to a website, install an app, or set up an extension and start seeing the results of the AI tool. But, have you ever wondered what goes into this magic black box or how it really works? 
+Generative AI, whether for code, text, images, or other use cases, appears as a magic black box to many users. Users typically navigate to a website, install an app, or set up an extension and start seeing the results of the AI tool. But, have you ever wondered what goes into this magic black box or how it really works?
 
 In this post, we want to demystify what goes into a code AI completion for [Cody](https://cody.dev), our code AI assistant that knows your entire codebase. Leveraging a Large Language Model (LLM) to generate a code AI response is fairly trivial, but doing so in a production-grade application that serves many different use cases, coding languages, workflows, and other variables while achieving a high-level of completion acceptance and developer happiness is a whole other thing. We’ll cover the importance of the underlying LLM but also expand the implementation to a fully featured AI engineering system that features various pre and post processing steps, discuss the role of context and how to retrieve it, and more as we explore the lifecycle of a code AI completion. Let’s dive in!
 
@@ -20,7 +20,7 @@ In this post, we want to demystify what goes into a code AI completion for [Cody
 
 In its minimal form, a code autocomplete request takes the current code inside the editor and asks an LLM to complete it. You can do this with ChatGPT too! Consider the following example:
 
-```
+```ts
 // sort.js
 function bubbleSort(array) {
      |
@@ -63,15 +63,15 @@ However, our trivial implementation has a few shortcomings: In a real world appl
 
 ## How to get great AI completions
 
-Before we dive into the specifics, let’s outline a few basics principles for getting great AI completions. In fact, the principles are the same as if you’re asking someone new on the team to do great work! In order to do their work, the new dev (or the AI assistant) needs to have an understanding of the task at hand. We refer to this knowledge as context. The more _context_ you have, the more effective you’ll be in a project. 
+Before we dive into the specifics, let’s outline a few basics principles for getting great AI completions. In fact, the principles are the same as if you’re asking someone new on the team to do great work! In order to do their work, the new dev (or the AI assistant) needs to have an understanding of the task at hand. We refer to this knowledge as context. The more _context_ you have, the more effective you’ll be in a project.
 
 For code completions, we can use the current code file as the basis for our context. When writing code, you start by pointing the cursor at a specific position inside the document. From that position, we can define the _**prefix**_ as the text before and the _**suffix**_ as the text below that cursor. When coding, your lowest level task is to insert code between the prefix and the suffix.
 
-However, a developer will also look at other files in the project and try to understand relationships between them: Some of this extended _**context might**_ come from introduction material during their onboarding, their own mental model, existing code and API interfaces, and so much more. 
+However, a developer will also look at other files in the project and try to understand relationships between them: Some of this extended _**context might**_ come from introduction material during their onboarding, their own mental model, existing code and API interfaces, and so much more.
 
 To get great AI completions, we need to think along the same lines and must be able to extract relevant context for the current problem. Modern LLMs already come with a lot of context from the data they were trained on. They know the programming language and are familiar with a lot of the open source libraries that are commonly associated with it. So our task is to fill in the gaps and add context that is specific to the project at hand.
 
-In AI engineering, we call this process RAG (retrieval augmented generation). We _**retrieve**_ specific knowledge, like code snippets and documentation, from any external knowledge source (which may or may not be included in the model training set) and use it to guide the generative process. If I point you to an arbitrary file in an arbitrary codebase and ask you to “write some code”, you’d also appreciate some context about that codebase. RAG is about automating this process. 
+In AI engineering, we call this process RAG (retrieval augmented generation). We _**retrieve**_ specific knowledge, like code snippets and documentation, from any external knowledge source (which may or may not be included in the model training set) and use it to guide the generative process. If I point you to an arbitrary file in an arbitrary codebase and ask you to “write some code”, you’d also appreciate some context about that codebase. RAG is about automating this process.
 
 When working on code completions inside the editor, we can use APIs available in the editor to get as much context as possible. For example: What repo are you working on? What are other files that you have recently edited? Are you trying to write a docstring, implement a function body, or work out the right arguments for a method call?
 
@@ -111,7 +111,7 @@ At Sourcegraph, we are long-time users of Tree-sitter for improving our code sea
 
 Tree-sitter is great for this use case because it is extremely fast, supports incremental parsing (so after a document is parsed, changes can be applied with very low latency) and it’s robustness allows us to use it even when the document is currently being worked on and contains syntax errors.
 
-During the planning step, we use Tree-sitter to categorize the autocomplete request into different syntactic actions like implementing a function body, writing a docstring, or implementing a method call. We can then use this information to focus on different types of contexts or modify the parameters for the generation phase. 
+During the planning step, we use Tree-sitter to categorize the autocomplete request into different syntactic actions like implementing a function body, writing a docstring, or implementing a method call. We can then use this information to focus on different types of contexts or modify the parameters for the generation phase.
 
 
 ### Suggestion widget interaction
@@ -120,7 +120,7 @@ If you’ve worked with VS Code you’re probably familiar with the suggestion w
 
 Using the suggest widget to steer the LLM results is absolutely magical:
 
-<Video 
+<Video
   source={{
     mp4: 'blog/the-lifecycle-of-a-code-ai-completion/suggest-widget'
   }}
@@ -134,9 +134,9 @@ Depending on the model being used, there are varying limitations for how long su
 
 **One of the biggest constraints on the retrieval implementation is _latency_**: Retrieval happens before any of the generation work can start and is thus in the hot path of the life cycle. We generally want the end to end latency (that is, the time between the keystroke and the autocomplete becoming visible) to be as fast as possible, definitely under one second and since this must account for network latency and inference speed, there’s not a lot of room for expensive retrieval.
 
-From the first version on, Cody’s main retrieval mechanism was to look at *editor context*. This takes into account other tabs you have open or files that you recently looked at. The result of such retrieval processes are a few example code snippets that are sorted by relevance. We currently use a sliding window [Jaccard similarity](https://philippspiess.com/note/engineering/ml/jaccard-similarity) search to do that: We take a few lines above the current cursor position as the “reference” and then start a sliding window over relevant files to find the best possible matches. 
+From the first version on, Cody’s main retrieval mechanism was to look at *editor context*. This takes into account other tabs you have open or files that you recently looked at. The result of such retrieval processes are a few example code snippets that are sorted by relevance. We currently use a sliding window [Jaccard similarity](https://philippspiess.com/note/engineering/ml/jaccard-similarity) search to do that: We take a few lines above the current cursor position as the “reference” and then start a sliding window over relevant files to find the best possible matches.
 
-In order to reduce client CPU pressure, we limit the files to the most relevant ones. These are usually the files you looked at very recently and are generally written in the same programming language. 
+In order to reduce client CPU pressure, we limit the files to the most relevant ones. These are usually the files you looked at very recently and are generally written in the same programming language.
 
 ![Class implementation as context](https://storage.googleapis.com/sourcegraph-assets/blog/the-lifecycle-of-a-code-ai-completion/class-implementation-as-context.png)
 
@@ -150,7 +150,7 @@ As we move to the next stage, let’s dive into the heart of the autocomplete pr
 
 Sourcegraph has been a vivid early adopter of Anthropic’s Claude. Because of this, our Autocomplete journey started with early experiments in prompting Claude Instant (for its faster response times) to create code completions similar to the ChatGPT example we explored above. We quickly learned that a simple prompt resulted in a lot of frustration for our users:
 
-* **No Fill in the Middle support**: Without adding information from the document suffix, the LLM would often repeat code that is already in the next line. In the terminology of LLMs, this use case is often described as fill in the middle (FITM) or infilling, as the problem is to insert text in the middle of existing text.  
+* **No Fill in the Middle support**: Without adding information from the document suffix, the LLM would often repeat code that is already in the next line. In the terminology of LLMs, this use case is often described as fill in the middle (FITM) or infilling, as the problem is to insert text in the middle of existing text.
 * **Latency**: We measured that a significant number of requests came back with no response at all (so the LLM decided to terminate the request early).
 * **Quality**: Slight variants in the prompt could have a huge impact on quality. E.g. When we ran an experiment with a prompt that tried to improve the accuracy of comments, we learned that mentioning the term comment caused an increase in comments being generated rather than actual code.
 
@@ -158,27 +158,27 @@ Over the past months, we have made a lot of improvements to the Claude Instant p
 
 The first major update to the prompt changed three things which caused the quality, and more specifically the number of no responses to improve dramatically:
 
-* **We moved from markdown backtick tags for code segments to XML tags as [suggested by Anthropic](https://docs.anthropic.com/claude/docs/constructing-a-prompt#mark-different-parts-of-the-prompt)**. Since Claude has been fine tuned to pay special attention to the structure created by XML tags, we found an improvement in response quality with this easy change. It pays off to read the docs! 
+* **We moved from markdown backtick tags for code segments to XML tags as [suggested by Anthropic](https://docs.anthropic.com/claude/docs/constructing-a-prompt#mark-different-parts-of-the-prompt)**. Since Claude has been fine tuned to pay special attention to the structure created by XML tags, we found an improvement in response quality with this easy change. It pays off to read the docs!
 * **We found that including whitespace at the end of the prompt would cause significantly worse responses.** In the `bubbleSort` example above, we would end the prompt in all of the whitespace that lead to the cursor so it would end in `\n` followed by four spaces. In real world applications, the indentation would often be higher resulting in even more whitespace. We achieved a significant reduction of empty responses by trimming the prompt and accounting for the whitespace differences in post-processing.
 * We also started to **lay words in Claude’s mouth** by omitting information in the initial question and then leading with this in the assistant prompt. An example for this could be a completion for these two lines:
 
-```
-const array = [1, 2, 3];
-console.log(|
-```
+    ```ts
+    const array = [1, 2, 3];
+    console.log(|
+    ```
 
-Which would translate into a prompt like this:
+    Which would translate into a prompt like this:
 
-```
-Human: Complete the following code
-<code>
-const array = [1, 2, 3];
-</code>
+    ```jsx
+    Human: Complete the following code
+    <code>
+    const array = [1, 2, 3];
+    </code>
 
-Assistant: Sure! Here is the completion:
-<code>
-console.log(
-```
+    Assistant: Sure! Here is the completion:
+    <code>
+    console.log(
+    ```
 
 The second major update was to add support for **Fill in the Middle**: Instead of only quoting the prefix, we also added information about the code after the cursor into the prompt. This was not trivial since simple implementations often caused the LLM to simply repeat from the suffix without generating new code. We ended up using a combination of XML tags and the extended reasoning capabilities of Claude Instant 1.2 to our advantage here.
 
@@ -293,11 +293,8 @@ By adding a lot of metadata from the previous steps to every autocomplete event,
 One such example is to reduce the frequency of completions on positions where we know that they are unhelpful. One example is if you're at the end of a line but the statement on that line is already complete:
 
 ```ts
-
 console.log();|
-
               // ^ showing an autocomplete at this point is likely not very useful 😅
-
 ```
 
 ## Reliability
@@ -310,7 +307,7 @@ There are a few basics for reliability like unit testing and tracking production
 
 I won’t go into detail about this and I don’t think this is controversial anymore but automating your tests allows you to move faster. Most of the day to day improvements on heuristics outlined above rely on a large integration test suite that calls directly into the `provideInlineCompletionItems` API that VSCode uses. By running through the whole autocomplete architecture, we can write tests by defining a document and potential LLM responses and make assertions on all steps along the way. Here’s an example of such a test:
 
-```
+```ts
 it('properly truncates multi-line responses for python', async () => {
     const items = await getInlineCompletionsInsertText(
         params(
