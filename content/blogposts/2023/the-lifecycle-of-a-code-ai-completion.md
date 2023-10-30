@@ -294,7 +294,7 @@ One such example is to reduce the frequency of completions on positions where we
 
 ```ts
 console.log();|
-              // ^ showing an autocomplete at this point is likely not very useful 😅
+           // ^ showing an autocomplete at this point is likely not very useful 😅
 ```
 
 ## Reliability
