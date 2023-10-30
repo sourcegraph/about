@@ -156,31 +156,31 @@ Sourcegraph has been a vivid early adopter of Anthropic’s Claude. Because of t
 
 Over the past months, we have made a lot of improvements to the Claude Instant prompt, let me highlight some in particular:
 
-The first major update to the prompt changed three things which caused the quality, and more specifically the number of no responses to improve dramatically:
+* The first major update to the prompt changed three things which caused the quality, and more specifically the number of no responses to improve dramatically:
 
-* **We moved from markdown backtick tags for code segments to XML tags as [suggested by Anthropic](https://docs.anthropic.com/claude/docs/constructing-a-prompt#mark-different-parts-of-the-prompt)**. Since Claude has been fine tuned to pay special attention to the structure created by XML tags, we found an improvement in response quality with this easy change. It pays off to read the docs!
-* **We found that including whitespace at the end of the prompt would cause significantly worse responses.** In the `bubbleSort` example above, we would end the prompt in all of the whitespace that lead to the cursor so it would end in `\n` followed by four spaces. In real world applications, the indentation would often be higher resulting in even more whitespace. We achieved a significant reduction of empty responses by trimming the prompt and accounting for the whitespace differences in post-processing.
-* We also started to **lay words in Claude’s mouth** by omitting information in the initial question and then leading with this in the assistant prompt. An example for this could be a completion for these two lines:
+    * **We moved from markdown backtick tags for code segments to XML tags as [suggested by Anthropic](https://docs.anthropic.com/claude/docs/constructing-a-prompt#mark-different-parts-of-the-prompt)**. Since Claude has been fine tuned to pay special attention to the structure created by XML tags, we found an improvement in response quality with this easy change. It pays off to read the docs!
+    * **We found that including whitespace at the end of the prompt would cause significantly worse responses.** In the `bubbleSort` example above, we would end the prompt in all of the whitespace that lead to the cursor so it would end in `\n` followed by four spaces. In real world applications, the indentation would often be higher resulting in even more whitespace. We achieved a significant reduction of empty responses by trimming the prompt and accounting for the whitespace differences in post-processing.
+    * We also started to **lay words in Claude’s mouth** by omitting information in the initial question and then leading with this in the assistant prompt. An example for this could be a completion for these two lines:
 
-    ```ts
-    const array = [1, 2, 3];
-    console.log(|
-    ```
+        ```ts
+        const array = [1, 2, 3];
+        console.log(|
+        ```
 
-    Which would translate into a prompt like this:
+        Which would translate into a prompt like this:
 
-    ```jsx
-    Human: Complete the following code
-    <code>
-    const array = [1, 2, 3];
-    </code>
+        ```jsx
+        Human: Complete the following code
+        <code>
+        const array = [1, 2, 3];
+        </code>
 
-    Assistant: Sure! Here is the completion:
-    <code>
-    console.log(
-    ```
+        Assistant: Sure! Here is the completion:
+        <code>
+        console.log(
+        ```
 
-The second major update was to add support for **Fill in the Middle**: Instead of only quoting the prefix, we also added information about the code after the cursor into the prompt. This was not trivial since simple implementations often caused the LLM to simply repeat from the suffix without generating new code. We ended up using a combination of XML tags and the extended reasoning capabilities of Claude Instant 1.2 to our advantage here.
+* The second major update was to add support for **Fill in the Middle**: Instead of only quoting the prefix, we also added information about the code after the cursor into the prompt. This was not trivial since simple implementations often caused the LLM to simply repeat from the suffix without generating new code. We ended up using a combination of XML tags and the extended reasoning capabilities of Claude Instant 1.2 to our advantage here.
 
 ### The strive for faster latencies
 
