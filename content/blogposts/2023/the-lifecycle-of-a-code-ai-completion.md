@@ -3,7 +3,7 @@ title: "The lifecycle of a code AI completion"
 authors:
   - name: Philipp Spiess
     url: https://handbook.sourcegraph.com/team/#philipp-spiess
-publishDate: 2023-10-30T10:00-07:00
+publishDate: 2023-10-31T10:00-07:00
 description: "Demystifying code AI: Learn how Cody analyzes context, retrieves references, prompts models, and refines completions behind the scenes."
 tags: [blog]
 slug: 'the-lifecycle-of-a-code-ai-completion'
