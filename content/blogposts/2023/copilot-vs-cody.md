@@ -50,7 +50,7 @@ The query we'll pose is: **"How do I start this app up in development mode?"**
 
 ![Setup development environment](https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot-vs-cody-context-driven-development/setup-dev-environment.png)
 
-Both Cody and Copilot were able to give us a response to this question as well. The difference between the two responses again highlights the importance of having the right context.
+The difference in response quality here call out the importance of having quality context in code AI tools.
 
 Cody read 12 files to generate the response and walked us through installing the required JavaScript and PHP dependencies, setting up an `.env` file, creating a local database, running a database migration to set up the correct tables and seed data, and finally starting the server.
 
