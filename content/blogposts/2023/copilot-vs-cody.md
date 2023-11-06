@@ -52,7 +52,7 @@ The query we'll pose is: **"How do I start this app up in development mode?"**
 
 Both Cody and Copilot were able to give us a response to this question as well. The difference between the two responses again highlights the importance of having the right context.
 
-Cody read 12 files to generate the response and walked the developer through installing the required JavaScript and PHP dependencies, setting up an `.env` file, creating a local database, running a database migration to set up the correct tables and seed data, and finally starting the server.
+Cody read 12 files to generate the response and walked us through installing the required JavaScript and PHP dependencies, setting up an `.env` file, creating a local database, running a database migration to set up the correct tables and seed data, and finally starting the server.
 
 Copilot, on the other hand, initially told us to navigate to the project directory, but since we are already in the project directory, this step is unnecessary. Copilot then told us to install the dependencies and run the project. But there were some glaring issues. Without a proper `.env` file in the project directory, the app will not start. Not only that, but the `npm start` command, while common in Node and JavaScript projects, does not exist in this codebase. To start the local server, this codebase requires running the `npm run dev` command, which Cody correctly suggested.
 
