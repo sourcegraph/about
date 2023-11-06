@@ -1,5 +1,5 @@
 ---
-title: "Copilot vs. Cody: Why Context Matters for Code AI"
+title: "Copilot vs. Cody: Why context matters for code AI"
 authors:
   - name: Ado Kukic
     url: https://handbook.sourcegraph.com/team/#ado-kukic
