@@ -72,7 +72,7 @@ Now that we know a bit about what the application does and have it running local
 
 Cody finds the `Video` model and provides us with the various properties that are present on it. Copilot states that it does not have direct access to our codebase and therefore does not know what properties exist on the `Video` model. It does try to guess and assume some properties that may or may not exist.
 
-Getting the properties of a model is neat, but not something to necessarily write home about. Let's try a more tricky question. In this project, we spend a lot of time working with LLMs and one of the most important things is keeping track of costs. Let's ask our code AI assistants how we can calculate our costs for a video. The query will be: **"How do I calculate the OpenAI cost for a video?"**
+Getting the properties of a model is neat, but not something to necessarily write home about. Let's try a trickier question. In this project, we spend a lot of time working with LLMs and one of the most important things is keeping track of costs. Let's ask our code AI assistants how we can calculate our costs for a video. The query will be: **"How do I calculate the OpenAI cost for a video?"**
 
 ![Explain calculating costs of OpenAI call](https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot-vs-cody-context-driven-development/calculate-costs-explain.png)
 
