@@ -104,7 +104,7 @@ Copilot - 0.5
 
 We'll use the `millisecondsToTimecode` function that Cody gave us and continue adding functionality to our application. The timecode conversion function that both Cody and Copilot returned gives us a string in the format of "00:00:00" and while this is valid, we should also add the number of frames between a second. This will ensure that we trim the video at max precision. So the full format becomes hour:minute:second:frame.
 
-To get the frame count we'll need to know the frame rate at which the video was encoded as well as what the remainder of milliseconds if any we have for our trim operation. Let's ask Cody and Copilot to update the existing function to accommodate our needs.
+To get the frame count, we'll need to know the frame rate at which the video was encoded and the remainder of milliseconds, if any, we have for our trim operation. Let's ask Cody and Copilot to update the existing function to accommodate our needs.
 
 ![Using code AI to edit functionality](https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot-vs-cody-context-driven-development/edit-function-with-new-functionality.png)
 
