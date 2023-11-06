@@ -144,7 +144,7 @@ Moving forward, when I navigated to the next line, both Cody and Copilot gave me
 
 Testing this code works and we're able to successfully convert our milliseconds to a timecode format that will allow our API to trim the video at the precise time we declare. For our final autocompletion test, let's see if our code AI assistant can help us with the next steps which will be to call the [AWS Elemental MediaConvert](https://aws.amazon.com/mediaconvert/) API to process the video trimming.
 
-I will start us off by adding a comment `// Call AWS Elemental Media Convert API to trim video` will hit enter and observe what each code AI assistant does.
+I will start us off by adding the comment `// Call AWS Elemental Media Convert API to trim video`, hitting enter, and observing what each code AI assistant does.
 
 ![Media Convert autocomplete](https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot-vs-cody-context-driven-development/media-convert-autocomplete.png)
 
