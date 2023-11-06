@@ -148,7 +148,7 @@ I will start us off by adding the comment `// Call AWS Elemental Media Convert A
 
 ![Media Convert autocomplete](https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot-vs-cody-context-driven-development/media-convert-autocomplete.png)
 
-Since we make extensive use of the AWS Elemental MediaConvert API, Cody was able to find how we've invoked it in other actions, and gave us helpful completions every step of the way. What really blew me away was the fact that it also found and suggested the required endpoint in our AWS client configuration for this API.
+Since we make extensive use of the AWS Elemental MediaConvert API, Cody was able to find how we've invoked it in other actions and gave us helpful completions every step of the way. What really blew me away was the fact that it also found and suggested the required endpoint in our AWS client configuration for this API.
 
 Copilot on the other hand struggled at every step of the way. From suggesting non-existing functions like `createMediaConvert()` to setting the wrong region for our codebase, the autocompletions were all unusable without me having to go in and fix every line of code manually. I have to give Cody the win here as well. The score now stands at:
 
