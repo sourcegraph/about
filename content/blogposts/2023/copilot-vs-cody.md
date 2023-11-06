@@ -76,7 +76,7 @@ Getting the properties of a model is neat, but not something to necessarily writ
 
 ![Explain calculating costs of OpenAI call](https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot-vs-cody-context-driven-development/calculate-costs-explain.png)
 
-Cody is able to find an existing function called `calculateOpenAICost()` and gives us a detailed explanation of what this function does, how it works, and where it's located if we want to learn more. Copilot on the other hand gives us a general answer on how to calculate the cost of an OpenAI call and some pricing information. With these two examples, I think we can give Cody the win here as well.
+Cody is able to find an existing function called `calculateOpenAICost()` and gives us a detailed explanation of what this function does, how it works, and where it's located if we want to learn more. Copilot on the other hand gives us some generic suggestions on how to calculate the cost of an OpenAI call, which we'll then have to dive deeper into and validate ourselves. With these two examples, I think we can give Cody the win here as well.
 
 Cody - 3
 
