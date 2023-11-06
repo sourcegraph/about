@@ -112,7 +112,7 @@ For Cody, with my `TrimVideoAction.php` file open, I was able to say **"add the 
 
 For Copilot, I tried the same query, but Copilot could not understand that I wanted to update the `millisecondsToTimecode()` function, so eventually I had to ask the question and copy and paste the function into the chat window to get a working result. Copilot was able to understand my prompt and returned an updated `millisecondsToTimecode()` function that also returned the frame count. The one thing that I think Copilot did better was it made the frame rate a parameter. Videos typically have varying frame rates typically ranging from 24fps to 30fps, and the frame rate is something we store in the `Video` model as a value because each video is different, so this was a nice touch.
 
-Cody also supports commands, and one of the most used commands is the `/edit` command which allows us to highlight a piece of code, and tell Cody to update it based on the prompt. I ran the `/edit` command and asked Cody to make the frame rate a parameter and it was also able to achieve the task.
+Cody also supports commands, and one of the most used commands is the `/edit` command, which allows us to highlight a piece of code and tell Cody to update it based on the prompt. I ran the `/edit` command and asked Cody to make the frame rate a parameter, and it was also able to achieve the task.
 
 ![Cody edit command in action](https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot-vs-cody-context-driven-development/cody-edit-command.png)
 
