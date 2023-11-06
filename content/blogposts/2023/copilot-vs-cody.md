@@ -1,12 +1,12 @@
 ---
-title: "Copilot vs. Cody: Context-Driven Development"
+title: "Copilot vs. Cody: Why context matters for code AI"
 authors:
   - name: Ado Kukic
     url: https://handbook.sourcegraph.com/team/#ado-kukic
 publishDate: 2023-11-06T10:00-07:00
-description: "Does your AI coding assistant really understand your code? We tested GitHub Copilot vs Cody on a production codebase to see the difference context makes."
+description: "There has been a ton of hype around code AI tools like GitHub Copilot and Cody, but how well do these tools actually deliver on real-world development tasks today?"
 tags: [blog]
-slug: 'copilot-vs-cody-context-driven-development'
+slug: 'copilot-vs-cody-why-context-matters-for-code-ai'
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot-vs-cody-context-driven-development/copilot-vs-cody-blog.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot-vs-cody-context-driven-development/copilot-vs-cody-blog.png
