@@ -88,7 +88,7 @@ Now we get to the fun parts - writing code. As developers, we are accustomed to 
 
 For our next scenario, we want to add a new [action](https://laravelactions.com/2.x/one-class-one-task.html) to our codebase that will allow us to trim a video. This will allow us to splice up longer videos into smaller more manageable files for further processing. The API that we are using to trim the video requires that we give it the trim start and end times in a [SMPTE timecode](https://en.wikipedia.org/wiki/SMPTE_timecode) format. In our codebase, we store all video durations in milliseconds. So what we need to do is to add a function to convert our start and end times from milliseconds to a valid SMPTE timecode format.
 
-We can write this function ourselves or we can ask our code AI assistants to do it. Let's opt for the latter. **"Write a function to convert milliseconds to a timecode format"** is our query.
+We can write this function ourselves or we can ask our code AI assistants to do it. Let's opt for the latter. Our query is: **"Write a function to convert milliseconds to a timecode format"**.
 
 ![Using code AI to create a new function](https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot-vs-cody-context-driven-development/create-new-function.png)
 
