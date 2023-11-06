@@ -84,7 +84,7 @@ Copilot - 0
 
 ## Scenario: Adding new functionality to our codebase
 
-Now we get to the fun parts - writing code. As developers, we are accustomed to having our IDE making it easier to write code through syntax highlighting, intellisense, and other enhancements that make it easier for us to focus on the hard parts. Code AI assistants can go a step further here in writing some or a lot of the code for us.
+Now we get to the fun parts - writing code. As developers, we are accustomed to having our IDE making it easier to write code through syntax highlighting, IntelliSense, and other enhancements that make it easier for us to focus on the hard parts. Code AI assistants can go a step further here in writing some or a lot of the code for us.
 
 For our next scenario, we want to add a new [action](https://laravelactions.com/2.x/one-class-one-task.html) to our codebase that will allow us to trim a video. This will allow us to splice up longer videos into smaller more manageable files for further processing. The API that we are using to trim the video requires that we give it the trim start and end times in a [SMPTE timecode](https://en.wikipedia.org/wiki/SMPTE_timecode) format. In our codebase, we store all video durations in milliseconds. So what we need to do is to add a function to convert our start and end times from milliseconds to a valid SMPTE timecode format.
 
