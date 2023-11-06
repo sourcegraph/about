@@ -108,7 +108,7 @@ To get the frame count, we'll need to know the frame rate at which the video was
 
 ![Using code AI to edit functionality](https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot-vs-cody-context-driven-development/edit-function-with-new-functionality.png)
 
-For Cody, with my `TrimVideoAction.php` file open, I was able to say **"add the frame number to the timecode"** and Cody had enough context to understand that I was talking about the `millisecondsToTimecode()` function and it gave me an updated function that also added the number of left-over frames if any.
+For Cody, with my `TrimVideoAction.php` file open, I was able to say **"add the frame number to the timecode"** and Cody had enough context to understand that I was talking about the `millisecondsToTimecode()` function, and it gave me an updated function that also added the number of left-over frames if any.
 
 For Copilot, I tried the same query, but Copilot could not understand that I wanted to update the `millisecondsToTimecode()` function, so eventually I had to ask the question and copy and paste the function into the chat window to get a working result. Copilot was able to understand my prompt and returned an updated `millisecondsToTimecode()` function that also returned the frame count. The one thing that I think Copilot did better was it made the frame rate a parameter. Videos typically have varying frame rates typically ranging from 24fps to 30fps, and the frame rate is something we store in the `Video` model as a value because each video is different, so this was a nice touch.
 
