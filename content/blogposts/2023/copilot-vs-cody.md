@@ -92,7 +92,7 @@ We can write this function ourselves or we can ask our code AI assistants to do 
 
 ![Using code AI to create a new function](https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot-vs-cody-context-driven-development/create-new-function.png)
 
-Both Cody and Copilot were able to understand our query and provided a working solution. There is one subtle difference that gives Cody a major advantage though. We are creating a Laravel Action, which is written in PHP. Cody has given us the code as a PHP function. Copilot on the other hand gave us a working implementation in JavaScript.
+Here Copilot generates a working function, but there's one problem--it's in the wrong language. Cody recognizes we're working in a PHP codebase and generates the code in PHP.
 
 This is another perfect example of why context is so important. Cody inferred that since we have a `.php` file open, we probably want our implementation in PHP, whereas Copilot lacking the context gave us a general solution in a different language. If we were to insert the two functions into our file, the Cody `millisecondsToTimecode` function would work, but the Copilot `msToTimecode` would throw all sorts of errors. Cody wins here as well, but we'll give Copilot half a point because it did give us a working solution.
 
