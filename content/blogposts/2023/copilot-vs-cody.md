@@ -1,10 +1,10 @@
 ---
-title: "Copilot vs. Cody: Why context matters for code AI"
+title: "Copilot vs. Cody: Why Context Matters for Code AI"
 authors:
   - name: Ado Kukic
     url: https://handbook.sourcegraph.com/team/#ado-kukic
 publishDate: 2023-11-06T10:00-07:00
-description: "There has been a ton of hype around code AI tools like GitHub Copilot and Cody, but how well do these tools actually deliver on real-world development tasks today?"
+description: "Does your AI coding assistant really understand your code? We tested GitHub Copilot vs Cody on a production codebase to see the difference context makes."
 tags: [blog]
 slug: 'copilot-vs-cody-why-context-matters-for-code-ai'
 published: true
@@ -12,7 +12,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot-vs-cody-context-driven-development/copilot-vs-cody-blog.png
 ---
 
-Code AI assistants like GitHub Copilot and [Cody](https://cody.dev) promise developers increased productivity, better workflows, and an improved developer experience. There is a lot of hype around these tools and many promises made, but how good are these tools at actually delivering on these promises?
+There has been a ton of hype around code AI tools like GitHub Copilot and [Cody](https://cody.dev), but how well do these tools actually deliver on real-world development tasks today?
 
 In this post, we'll take Cody and Copilot for a spin on the code of an AI-powered video editing app. The code for this app is private, meaning it could not have been included in the training data for any of the LLMs in use for code generation today, which is also the case for much of the code under active development at companies today. We'll put the code AI assistants through various real-world scenarios and see if they make the developer's life easier or harder.
 
