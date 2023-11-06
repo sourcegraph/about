@@ -14,19 +14,19 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/github-copil
 
 Code AI assistants like GitHub Copilot and [Cody](https://cody.dev) promise developers increased productivity, better workflows, and an improved developer experience. There is a lot of hype around these tools and many promises made, but how good are these tools at actually delivering on these promises?
 
-In this post, I want to put two of the most popular coding assistants head to head and see if they can improve a developer's experience. We'll put the code AI assistants through various real-world scenarios and see if they make the developer's life easier or harder.
+In this post, we'll take Cody and Copilot for a spin on the code of an AI-powered video editing app. The code for this app is private, meaning it could not have been included in the training data for any of the LLMs in use for code generation today, which is also the case for much of the code under active development at companies today. We'll put the code AI assistants through various real-world scenarios and see if they make the developer's life easier or harder.
 
 ## Setup
 
-For this blog post, I wanted to use a production-grade application to test how the two code AI assistants handle scenarios, from teaching me about a codebase to helping me get set up with it, adding new functionality, debugging, and more.
+For this blog post, we'll use a production-grade application to test how the two code AI assistants handle scenarios, from teaching me about a codebase to helping me set it up, add new functionality, debug, and more.
 
 I will be using [Visual Studio Code](https://code.visualstudio.com/), and I have two versions installed locally: the latest stable version of Visual Studio Code and an Insiders version. On each of these versions, I have either [Cody](https://cody.dev) or Copilot installed as the only extension. I will be using the same prompts for each assistant and will provide thoughts and commentary on their output. The codebase we'll be using for these scenarios is for a web application called [Video Tap](https://videotap.com) that allows users to repurpose their long-form video-based content into various written and short-form video formats. Let's dive in!
 
 ## Scenario: Learning about a codebase
 
-For our first scenario, let's place ourselves in the shoes of a new developer onboarding onto a codebase. Without a code AI assistant, the developer would likely first look at the `readme.md` file to see if it gives a good overview or perhaps reach out to the maintainer of the codebase for a walkthrough.
+For our first scenario, let's place ourselves in the shoes of a new developer onboarding onto a codebase. Without a code AI assistant, the developer would likely first look at the `README.md` file to see if it gives a good overview or perhaps reach out to the maintainer of the codebase for a walkthrough.
 
-In my personal experience, the `readme.md` files of projects are often hit or miss. They may include an amazing overview and instructions, or they may be completely blank and everything in between. With a code AI assistant that supports chat functionality, we can ask it to tell us what a codebase does. Let's try it with Cody and Copilot to see which one does better.
+In my personal experience, the `README.md` files of projects are often hit or miss. They may include an amazing overview and instructions, or they may be completely blank and everything in between. With a code AI assistant that supports chat functionality, we can ask it to tell us what a codebase does. Let's try it with Cody and Copilot to see which one does better.
 
 Our query will be: **"What does this application do?"**
 
@@ -44,13 +44,13 @@ Copilot - 0
 
 ## Scenario: Setting up the development environment
 
-Now that our developer knows a little bit about what the application does, the next logical thing for them to do is to figure out how to set up the local development environment so that they can run the application and make code changes themselves. Without a code AI assistant, the developer would again likely search for a `readme.md` file or similar instructions on how to get set up. But with Cody and Copilot ready, we can ask them how to get this application running locally.
+Now that our developer knows a little bit about what the application does, the next logical thing for them to do is to figure out how to set up the local development environment so that they can run the application and make code changes themselves. Without a code AI assistant, the developer would again likely search for a `README.md` file or similar instructions on how to get set up. But with Cody and Copilot ready, we can ask them how to get this application running locally.
 
 The query we'll pose is: **"How do I start this app up in development mode?"**
 
 ![Setup development environment](https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot-vs-cody-context-driven-development/setup-dev-environment.png)
 
-The difference in response quality here call out the importance of having quality context in code AI tools.
+The difference in response quality here highlights the importance of having quality context for the code AI assistant.
 
 Cody read 12 files to generate the response and walked us through installing the required JavaScript and PHP dependencies, setting up an `.env` file, creating a local database, running a database migration to set up the correct tables and seed data, and finally starting the server.
 
@@ -84,7 +84,7 @@ Copilot - 0
 
 ## Scenario: Adding new functionality to our codebase
 
-Now we get to the fun parts - writing code. As developers, we are accustomed to having our IDE making it easier to write code through syntax highlighting, IntelliSense, and other enhancements that make it easier for us to focus on the hard parts. Code AI assistants can go a step further here in writing some or a lot of the code for us.
+Now we get to the fun parts -- writing code. As developers, we are accustomed to having our IDE making it easier to write code through syntax highlighting, IntelliSense, and other enhancements that make it easier for us to focus on the hard parts. Code AI assistants can go a step further here in writing some or a lot of the code for us.
 
 For our next scenario, we want to add a new [action](https://laravelactions.com/2.x/one-class-one-task.html) to our codebase that will allow us to trim a video. This will allow us to splice up longer videos into smaller more manageable files for further processing. The API that we are using to trim the video requires that we give it the trim start and end times in a [SMPTE timecode](https://en.wikipedia.org/wiki/SMPTE_timecode) format. In our codebase, we store all video durations in milliseconds. So what we need to do is to add a function to convert our start and end times from milliseconds to a valid SMPTE timecode format.
 
