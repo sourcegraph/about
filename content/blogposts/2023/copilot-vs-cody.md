@@ -32,7 +32,7 @@ Our query will be: **"What does this application do?"**
 
 ![Explain what a codebase does](https://storage.googleapis.com/sourcegraph-assets/blog/github-copilot-vs-cody-context-driven-development/explain-what-codebase-does.png)
 
-Both Cody and Copilot were able to give us an answer to our query. Cody is on the left-hand side, and Copilot is on the right, and we'll use this format throughout the post. Copilot told us about the different technologies used in the repository, while Cody told us the tech stack, APIs used, as well as the major features of the application.
+Both Cody and Copilot were able to give us an answer to our query. Cody is on the left-hand side, and Copilot is on the right. Copilot told us about the different technologies used in the repository, while Cody told us the tech stack, APIs used, as well as the major features of the application.
 
 **Cody also cites its sources**, and we can see in the above screenshot that Cody used 14 files from our codebase to get enough context to generate a detailed response. Copilot, on the other hand, does not provide visibility into how it came up with the answer.
 
