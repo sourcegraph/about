@@ -81,13 +81,13 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick }) => 
                     Contact us
                 </button>
                 <Link
-                    href="/pricing"
+                    href="/cody/pricing"
                     className="hidden items-center justify-center gap-[10px] font-semibold text-white hover:text-violet-300 hover:underline md:flex"
                 >
                     Pricing and plans <ChevronRightIcon />
                 </Link>
                 <Link
-                    href="/pricing"
+                    href="/cody/pricing"
                     className="hover:bg-color-violet-600 rounded-[5px] border border-white px-5 py-3 text-center font-semibold text-white md:hidden"
                 >
                     Pricing and plans

@@ -37,7 +37,12 @@
     }
     kbd {
         @apply bg-gray-200 border border-gray-400 rounded shadow-sm text-gray-500 text-sm inline-block px-2 py-1
-    } 
+    }
+    @media only screen and (max-width: 768px) {
+        kbd {
+            @apply mt-0.5 mb-0.5
+        }
+    }
     /* Inline Links */
     p a,
     li a {
