@@ -63,15 +63,15 @@ export const Community: FunctionComponent = () => (
                                 <ul>
                                     <li>
                                         <a
-                                            href="https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/"
-                                            title="KubeCon"
+                                            href="https://portal.gitnation.org/events/react-summit-us-2023"
+                                            title="React Summit US 2023"
                                             data-button-style={buttonStyle.text}
                                             data-button-location={buttonLocation.body}
                                             data-button-type="cta"
                                         >
-                                            KubeCon · Chicago
+                                            React Summit US 2023 · New York
                                         </a>{' '}
-                                        - November 6-9, 2023
+                                        - November 13-15, 2023
                                     </li>
                                     <li>
                                         <a
