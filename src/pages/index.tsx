@@ -270,16 +270,6 @@ const HomeHero: FunctionComponent = () => {
                     <div className="flex flex-col items-center justify-center gap-y-8 md:flex-row md:gap-x-4">
                         <div className="flex items-center justify-center gap-4">
                             <AvailabilityIcon
-                                href="https://sourcegraph.com/get-cody"
-                                src="/home/cody-logo.svg"
-                                alt="Cody desktop app"
-                                onHover={() => setHoveredImageText('Cody desktop app')}
-                                onMouseLeave={() => setHoveredImageText('')}
-                                eventName={EventName.DOWNLOAD_APP}
-                                type="distribution"
-                            />
-                            <PlusIcon size={25} className="text-white" />
-                            <AvailabilityIcon
                                 href="https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai#:~:text=Cody%20for%20VS%20Code%20is,not%20just%20your%20open%20files"
                                 src="/home/vs-code-logo.svg"
                                 alt="VS Code"
