@@ -3,7 +3,6 @@ import { FunctionComponent, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
-import PlusIcon from 'mdi-react/PlusIcon'
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
 import { EmbeddedTweet, TweetSkeleton } from 'react-tweet'
