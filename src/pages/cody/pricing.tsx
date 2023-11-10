@@ -5,19 +5,25 @@ import Link from 'next/link'
 
 import { Badge, ContentSection, Layout } from '../../components'
 import { PricingPlan } from '../../components/Pricing'
+import { useAuthModal } from '../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 
-const GetStartedButton: FunctionComponent<{ className?: string }> = ({ className }) => (
-    <Link
-        className={classNames('btn btn-primary', 'w-full md:w-auto', className)}
-        href="https://sourcegraph.com/get-cody"
-        data-button-style={buttonStyle.primary}
-        data-button-location={buttonLocation.body}
-        data-button-type="cta"
-    >
-        Get started
-    </Link>
-)
+const GetStartedButton: FunctionComponent<{ className?: string }> = ({ className }) => {
+    const { openModal } = useAuthModal()
+
+    const handleOpenModal = (): void => openModal('cody')
+
+    return (
+        <button
+            title="Get started"
+            className={classNames('btn btn-primary', className)}
+            type="button"
+            onClick={handleOpenModal}
+        >
+            Get started
+        </button>
+    )
+}
 
 const ContactUsButton: FunctionComponent<{ className?: string }> = ({ className }) => (
     <Link
