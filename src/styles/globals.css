@@ -428,6 +428,14 @@
         background: linear-gradient(185deg, #2C1848 4.11%, rgba(46, 24, 75, 0.00) 131.92%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), radial-gradient(95.96% 68.15% at 95.66% -10.78%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(0, 0, 0, 0.17);
     }
 
+    .sg-bg-careers-cta {
+        background: radial-gradient(34.84% 119.01% at 46.84% 100%, rgba(130, 13, 222, 0.50) 0%, rgba(130, 13, 222, 0.00) 100%), #270741;
+    }
+
+    .sg-career-carouel-image {
+        box-shadow: 8px 8px 0px 0px rgba(161, 18, 255, 0.70);
+    }
+
     /* Used to define custom tailwind slide in animation */
     @keyframes slideFadeIn {
         0% {
