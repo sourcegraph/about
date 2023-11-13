@@ -88,5 +88,5 @@ export { CodyIde } from './cody/CodyIde'
 export { CodyAnimation } from './CodyAnimation/CodyAnimation'
 export { CodyAutocomplete } from './cody/CodyAutocomplete'
 export { CodyChat } from './cody/CodyChat'
-
+export { ContextAnimation } from './CodyAnimation/ContextAnimation'
 export { CodyCta } from './cta/CodyCta'

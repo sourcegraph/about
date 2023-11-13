@@ -1,7 +1,7 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
-import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
+import DownloadIcon from 'mdi-react/DownloadIcon'
 import Link from 'next/link'
 
 import {
@@ -17,6 +17,7 @@ import {
     CodyAutocomplete,
     CodyChat,
     CodyVideoTab,
+    ContextAnimation,
 } from '../components'
 import { breakpoints } from '../data/breakpoints'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
@@ -178,38 +179,26 @@ const CodyPage: FunctionComponent = () => {
                 tabContent={VIDEO_TAB_CONTENT}
             />
 
-            <ContentSection parentClassName="!pb-0" className="flex flex-col gap-12 md:flex-row">
-                <div className="flex max-w-[661px] flex-col gap-[30px]">
-                    <Heading size="h2" className="!text-4xl text-white">
-                        Cody knows your code
+            <ContentSection parentClassName="!pb-0" className="flex flex-col gap-12 md:flex-row md:justify-between">
+                <div className="flex md:max-w-[501px] flex-col w-full">
+                    <Heading size="h2" className="mb-1 !text-4xl text-white">
+                        Sourcegraph powered <span className="cody-heading bg-clip-text text-transparent">context</span>
                     </Heading>
-                    <p className="mb-0 text-lg text-gray-200">
-                        Cody uses context to answer questions that require an understanding of multiple files or even
-                        entire repositories. Plus, this context allows Cody to make suggestions that use your own APIs
-                        and idioms.
-                        <br />
-                        <br />
-                        We’re experimenting with several methods of context retrieval to improve Cody’s accuracy,
-                        including embeddings, keyword search, and hybrid search.
+                    <p className="mb-0 text-lg text-violet-200">
+                        Sourcegraph’s code graph and analysis tools allow Cody to autocomplete, explain, and edit your
+                        code with additional context.
                     </p>
+                    <img src="/cody/context_illustration.svg" className="my-6" alt="cody context illustration" />
+                    <Link
+                        href="/whitepaper/cody-context-architecture.pdf"
+                        className="flex items-center gap-[5px] font-semibold text-violet-300 underline hover:text-white"
+                    >
+                        <DownloadIcon className="h-4 w-4" />
+                        Cody Context Architecture whitepaper
+                    </Link>
                 </div>
-                <div className="rounded-bl-8 rounded-br-8 bg-[#0F111A] bg-opacity-40 text-white">
-                    <div className="cody-whitepaper-border h-[2px]" />
-                    <div className="mt-3 flex flex-col gap-3 p-6">
-                        <p className="mb-0 font-mono text-sm">Whitepaper</p>
-                        <p className="mb-0 font-grotesk text-xl">Cody context architecture</p>
-                        <p className="mb-0 text-gray-200">
-                            Context awareness is key to the quality and precision of Cody. This paper outlines how Cody
-                            fetches the right context at the right time to answer queries.
-                        </p>
-                        <Link
-                            href="/whitepaper/cody-context-architecture.pdf"
-                            className="flex gap-[10px] pb-4 font-semibold text-white hover:text-violet-300 hover:underline"
-                        >
-                            Read more <ChevronRightIcon />
-                        </Link>
-                    </div>
-                </div>
+
+                <ContextAnimation />
             </ContentSection>
             <CodyCta onContactClick={() => setIsContactModalOpen(true)} />
             <Modal

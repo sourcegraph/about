@@ -1,5 +1,7 @@
 import { FunctionComponent } from 'react'
 
+import { FaAngleRight } from 'react-icons/fa'
+
 import { Badge, ContentSection, Heading } from '..'
 import { useAuthModal } from '../../context/AuthModalContext'
 
@@ -37,20 +39,23 @@ export const CodyIde: FunctionComponent = () => {
                     </Heading>
                 </div>
                 <div className="flex items-center  gap-x-4 md:px-6">
-                    <img className="" src="/icons/EmacsIcon.svg" alt="Emacs IDE" />{' '}<Heading size="h4" className="!text-2xl text-gray-200">
+                    <img className="" src="/icons/EmacsIcon.svg" alt="Emacs IDE" />{' '}
+                    <Heading size="h4" className="!text-2xl text-gray-200">
                         Emacs
                     </Heading>
                     <Badge text="Coming soon" size="small" color="light-gray" />
                 </div>
             </div>
-            <div className="flex items-center justify-center hover:bg-violet-700">
+            <div className="flex items-center justify-center">
                 <button
                     title="Sign up to get started"
-                    className="btn cody-btn-text rounded-[5px] border border-white bg-clip-text text-center text-transparent"
+                    className="btn flex rounded-[5px] border border-white bg-white text-center text-transparent"
                     type="button"
                     onClick={handleOpenModal}
                 >
-                    Sign up to get started
+                    <span className="cody-btn-text flex items-center gap-2 bg-clip-text">
+                        Sign up to get started <FaAngleRight className="text-violet-400" />
+                    </span>
                 </button>
             </div>
         </ContentSection>
