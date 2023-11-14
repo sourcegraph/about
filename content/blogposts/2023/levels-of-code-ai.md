@@ -127,3 +127,11 @@ We expect to see code AI take on increasingly complex coding tasks with greater 
 We hope other people find these levels of code AI useful as a tool for thought in understanding, evaluating, and building code AI, and monitoring its impact.
 
 Tell us what you think about the code AI levels and help us improve them as a tool for thought!
+
+---
+
+### Other related work
+
+We'll update this list with other interesting papers and posts that attempt to define levels of AI. [Submit a PR](https://github.com/sourcegraph/about/edit/main/content/blogposts/2023/levels-of-code-ai.md) if there's a link we should add.
+
+- [Levels of AGI: Operationalizing Progress on the Path to AGI (arXiv:2311.02462 [cs.AI])](https://arxiv.org/abs/2311.02462) (2023-11-04)
