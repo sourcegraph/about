@@ -22,7 +22,7 @@ export const CodyAutocomplete: FunctionComponent = () => (
                 </p>
                 <div className="sg-bg-cody-everyday flex w-full items-center justify-center rounded-lg p-6 md:w-[459px]">
                     <p className="mb-0 w-full text-center text-xl font-semibold text-gray-200 md:w-[313px]">
-                        Every day, Cody help developers write &gt; 25,000 lines of code
+                        Every day, Cody helps developers write &gt; 25,000 lines of code
                     </p>
                 </div>
                 <Heading size="h5" className="pt-8 pb-4 text-left !text-xl text-gray-200">
