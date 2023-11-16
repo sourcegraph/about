@@ -74,7 +74,7 @@ const NAV_ITEMS: NavItem[] = [
     },
     {
         name: 'Search public code',
-        href: 'https://sourcegraph.com',
+        href: 'https://sourcegraph.com/search',
     },
 ]
 
