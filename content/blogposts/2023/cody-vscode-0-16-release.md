@@ -7,6 +7,8 @@ authors:
     url: https://handbook.sourcegraph.com/team/#beatrix-woo
   - name: Tim Lucas
     url: https://handbook.sourcegraph.com/team/#tim-lucas
+  - name: Kalan Chan
+    url: https://handbook.sourcegraph.com/team/#kalan-chan
   
 publishDate: 2023-11-16T10:00-01:00
 description: "The latest release improves the chat experience with more control over context and AI models, while also enhancing commands by allowing additional user input instructions."
