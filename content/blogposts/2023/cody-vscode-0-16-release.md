@@ -15,8 +15,8 @@ description: "The latest release improves the chat experience with more control 
 tags: [blog]
 slug: "cody-vscode-0-16-release"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/vscode-v0-16-release/cody-vscode-0.16.0-og-image.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/vscode-v0-16-release/cody-vscode-0.16.0-og-image.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/vscode-v0-16-release/cody-vscode-0.16.0-og-image.jpg
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/vscode-v0-16-release/cody-vscode-0.16.0-og-image.jpg
 ---
 
 We're excited to announce the release of [Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.16! This release includes completions, editing, interfaces, chat, commands, and more improvements. 
