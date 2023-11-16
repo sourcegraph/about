@@ -48,6 +48,10 @@ We’ve been working on a whole new Cody chat experience, which can be enabled v
 
 <small><center>Did someone say GPT-4?</center></small>
 
+## @ your context command
+
+Users can now select which context files are used for each chat question. A new “source” field identifies the purpose of each context file, such as embeddings or searches by keyword or filename. These changes provide users with more visibility into how context files are selected and used to inform chat conversations in Cody.
+
 
 ![alt_text](https://storage.googleapis.com/sourcegraph-assets/blog/vscode-v0-16-release/image3.png "image_tooltip")
 
