@@ -86,7 +86,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                             <li className="mt-2">
                                 Find all occurrences of code to change with Sourcegraph{' '}
                                 <a
-                                    href="http://about.sourcegraph.com/"
+                                    href="http://sourcegraph.com/"
                                     title="universal code search"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}

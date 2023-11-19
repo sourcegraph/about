@@ -69,7 +69,7 @@ const caseStudies = [
     {
         heading: 'Case study',
         title: 'Neo Financial improves the developer experience with Sourcegraph',
-        href: 'https://about.sourcegraph.com/case-studies/neo-financial-improves-the-developer-experience-with-sourcegraph',
+        href: 'https://sourcegraph.com/case-studies/neo-financial-improves-the-developer-experience-with-sourcegraph',
         description: (
             <p>
                 Learn how Neo Financial attacts and retains top engineering talent by providing a culture, and tools
@@ -81,7 +81,7 @@ const caseStudies = [
     {
         heading: 'Case study',
         title: 'Workiva reduces the time it takes to make large-scale code changes',
-        href: 'https://about.sourcegraph.com/case-studies/workiva-automates-large-scale-code-changes',
+        href: 'https://sourcegraph.com/case-studies/workiva-automates-large-scale-code-changes',
         description: (
             <p>
                 Learn how Workiva uses Sourcegraph Batch Changes to reduce the time it takes to make large-scale code
@@ -98,7 +98,7 @@ const AWS: FunctionComponent = () => (
         childrenClassName="sg-aws-mobile-bg-gradient md:sg-aws-bg-gradient"
         displayChildrenUnderNav={true}
         meta={{
-            image: 'https://about.sourcegraph.com/aws/sourcegraph_aws.png',
+            image: 'https://sourcegraph.com/aws/sourcegraph_aws.png',
             title: 'AWS',
             description:
                 'Sourcegraph has built AMI’s tailored to perform best on AWS—while taking advantage of AWS’s world-class security and scalability',
