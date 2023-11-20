@@ -45,7 +45,13 @@ const CareersPage: FunctionComponent = () => {
         },
     ]
 
-    const carouselImages = ['/careers/Career1.jpg', '/careers/Career2.jpg', '/careers/Career3.jpg']
+    const carouselImages = [
+        '/careers/Career1.jpg',
+        '/careers/Career2.jpg',
+        '/careers/Career3.jpg',
+        '/careers/Career4.jpg',
+        '/careers/Career5.jpg',
+    ]
 
     return (
         <Layout className="jobs-page" headerColorTheme="white">
@@ -71,7 +77,7 @@ const CareersPage: FunctionComponent = () => {
             </ContentSection>
 
             <div className="h-[477px]">
-                <Ticker duration={20}>
+                <Ticker duration={10}>
                     {carouselImages.map((item, index) => (
                         <img
                             key={index}
