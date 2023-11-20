@@ -49,7 +49,7 @@ const OwnPage: FunctionComponent = () => (
             title: 'Code Ownership',
             description:
                 'Evergreen code ownership across code hosts, powering Code Search, Batch Changes, and Insights.',
-            image: 'https://about.sourcegraph.com/own/og-own.png',
+            image: 'https://sourcegraph.com/own/og-own.png',
         }}
         headerColorTheme="purple"
         childrenClassName="sg-bg-gradient-own"
@@ -171,7 +171,7 @@ const OwnPage: FunctionComponent = () => (
                 title="Own is currently an experimental feature, but we have a big vision for code ownership."
                 description="We’d love your feedback on Own. You can turn it on using the documentation below, or contact us to get a demo and learn more about our roadmap."
                 linkText="Read more about our vision for code ownership."
-                link="https://about.sourcegraph.com/blog/our-vision-for-code-ownership"
+                link="https://sourcegraph.com/blog/our-vision-for-code-ownership"
             />
 
             <div>

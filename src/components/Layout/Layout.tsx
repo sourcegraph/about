@@ -45,8 +45,8 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
         description:
             props.meta?.description ||
             'Find and fix things across all of your code with Sourcegraph universal code search.',
-        image: props.meta?.image || 'https://about.sourcegraph.com/sourcegraph-universal-og.png',
-        icon: props.meta?.icon || 'https://about.sourcegraph.com/favicon.png',
+        image: props.meta?.image || 'https://sourcegraph.com/sourcegraph-universal-og.png',
+        icon: props.meta?.icon || 'https://sourcegraph.com/favicon.png',
     }
 
     const videoMeta = {
@@ -97,7 +97,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
                     </>
                 )}
 
-                <meta property="og:url" content={`https://about.sourcegraph.com${asPath}`} />
+                <meta property="og:url" content={`https://sourcegraph.com${asPath}`} />
                 <meta property="og:title" content={meta.title} />
                 <meta property="og:description" content={meta.description} />
                 <meta property="og:type" content={isArticle ? 'article' : 'website'} />

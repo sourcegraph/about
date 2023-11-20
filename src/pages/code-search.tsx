@@ -19,7 +19,7 @@ export const CodeSearchPage: FunctionComponent = () => (
             title: 'Sourcegraph | Code Search',
             description:
                 'Code Search helps devs explore their codebase, make large-scale migrations, and fix security issues faster—especially in large, distributed codebases.',
-            image: 'https://about.sourcegraph.com/code-search/code-search-og.png',
+            image: 'https://sourcegraph.com/code-search/code-search-og.png',
         }}
         hero={
             <>
@@ -195,7 +195,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                             </li>
                         </ul>
                         <Link
-                            href="https://about.sourcegraph.com/blog/announcing-code-insights"
+                            href="https://sourcegraph.com/blog/announcing-code-insights"
                             className="flex font-semibold text-white"
                         >
                             Learn more about Code Insights <ChevronRightIcon />

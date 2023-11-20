@@ -7,7 +7,7 @@ import { DownloadAppCallToActionSection } from '../../components/cta/DownloadApp
 const blogs = [
     {
         title: 'Cheating is All You Need',
-        href: 'https://about.sourcegraph.com/blog/cheating-is-all-you-need',
+        href: 'https://sourcegraph.com/blog/cheating-is-all-you-need',
         description: (
             <p className="text-gray-200">
                 There is something legendary and historic happening in software engineering, right now as we speak, and
@@ -18,13 +18,13 @@ const blogs = [
     },
     {
         title: 'Sourcegraph 5.0 release post',
-        href: 'https://about.sourcegraph.com/blog/release/5.0',
+        href: 'https://sourcegraph.com/blog/release/5.0',
         description: <p className="text-gray-200">Sourcegraph 5.0 introduces more than 20 updates and improvements.</p>,
         imageSrc: 'https://storage.googleapis.com/sourcegraph-assets/blog/release-post/5.0/sourcegraph-5-0-hero.png',
     },
     {
         title: 'Announcing Sourcegraph Own',
-        href: 'https://about.sourcegraph.com/blog/announcing-sourcegraph-own',
+        href: 'https://sourcegraph.com/blog/announcing-sourcegraph-own',
         description: (
             <p className="text-gray-200">
                 Sourcegraph Own, available now as an experimental feature, integrates evergreen code ownership with
@@ -35,7 +35,7 @@ const blogs = [
     },
     {
         title: 'Announcing the Sourcegraph app',
-        href: 'https://about.sourcegraph.com/blog/announcing-sourcegraph-app',
+        href: 'https://sourcegraph.com/blog/announcing-sourcegraph-app',
         description: (
             <p className="text-gray-200">
                 The Sourcegraph app, now in beta, brings code intelligence to your local machine in a free, lightweight
@@ -61,7 +61,7 @@ const Starship: FunctionComponent = () => (
         childrenClassName="sg-bg-gradient-starship"
         displayChildrenUnderNav={true}
         meta={{
-            image: 'https://about.sourcegraph.com/starship/starship_og.png',
+            image: 'https://sourcegraph.com/starship/starship_og.png',
             title: 'Code intelligence + AI = 🤯',
             description: 'Sourcegraph 5.0, the latest release of our code intelligence platform, is now available.',
         }}
