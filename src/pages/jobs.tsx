@@ -46,11 +46,11 @@ const CareersPage: FunctionComponent = () => {
     ]
 
     const carouselImages = [
-        '/careers/Career1.jpg',
-        '/careers/Career2.jpg',
-        '/careers/Career3.jpg',
-        '/careers/Career4.jpg',
-        '/careers/Career5.jpg',
+        '/careers/Career1.png',
+        '/careers/Career2.png',
+        '/careers/Career3.png',
+        '/careers/Career4.png',
+        '/careers/Career5.png',
     ]
 
     return (
@@ -82,7 +82,7 @@ const CareersPage: FunctionComponent = () => {
                         <img
                             key={index}
                             src={item}
-                            className="sg-career-carouel-image ml-[50px] h-[469px] rounded-2xl"
+                            className="ml-[50px] h-[469px] rounded-2xl"
                             alt="Career"
                         />
                     ))}

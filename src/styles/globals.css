@@ -432,10 +432,6 @@
         background: radial-gradient(34.84% 119.01% at 46.84% 100%, rgba(130, 13, 222, 0.50) 0%, rgba(130, 13, 222, 0.00) 100%), #270741;
     }
 
-    .sg-career-carouel-image {
-        box-shadow: 8px 8px 0px 0px rgba(161, 18, 255, 0.70);
-    }
-
     /* Used to define custom tailwind slide in animation */
     @keyframes slideFadeIn {
         0% {
