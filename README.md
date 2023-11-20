@@ -1,6 +1,6 @@
-# [about.sourcegraph.com](https://about.sourcegraph.com) (Sourcegraph marketing site)
+# [sourcegraph.com](https://sourcegraph.com) (Sourcegraph marketing site)
 
-This repository contains the [about.sourcegraph.com](https://about.sourcegraph.com) website.
+This repository contains the [sourcegraph.com](https://sourcegraph.com) website.
 
 ## Development
 

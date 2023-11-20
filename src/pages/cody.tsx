@@ -73,7 +73,7 @@ const CodyPage: FunctionComponent = () => {
                 title: 'Cody | AI coding assistant',
                 description:
                     'Cody is the most powerful and accurate AI coding assistant for writing, fixing, and maintaining code.',
-                image: 'https://about.sourcegraph.com/cody/cody-og.png',
+                image: 'https://sourcegraph.com/cody/cody-og.png',
             }}
             headerColorTheme="purple"
             childrenClassName={isMobile ? 'sg-bg-gradient-cody-mobile' : 'sg-bg-gradient-cody'}
@@ -131,7 +131,7 @@ const CodyPage: FunctionComponent = () => {
                         <Link
                             className="text-violet-300 underline"
                             target="_blank"
-                            href="https://about.sourcegraph.com/terms"
+                            href="https://sourcegraph.com/terms"
                         >
                             Terms of Service
                         </Link>{' '}
@@ -139,7 +139,7 @@ const CodyPage: FunctionComponent = () => {
                         <Link
                             className="text-violet-300 underline"
                             target="_blank"
-                            href="https://about.sourcegraph.com/terms/privacy"
+                            href="https://sourcegraph.com/terms/privacy"
                         >
                             Privacy Policy
                         </Link>

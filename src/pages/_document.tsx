@@ -118,7 +118,7 @@ export default class MyDocument extends Document {
                     {/* Plausible recommends this in the head, but Next.js recommends afterInteractive */}
                     <Script
                         id="script-plausible"
-                        data-domain="about.sourcegraph.com"
+                        data-domain="sourcegraph.com"
                         src="https://plausible.io/js/plausible.js"
                         strategy="afterInteractive"
                     />

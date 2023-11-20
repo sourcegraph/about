@@ -230,7 +230,7 @@ const HomeHero: FunctionComponent = () => {
                                 <Link
                                     className="text-violet-300 underline hover:text-violet-200"
                                     target="_blank"
-                                    href="https://about.sourcegraph.com/terms"
+                                    href="https://sourcegraph.com/terms"
                                 >
                                     Terms of Service
                                 </Link>{' '}
@@ -238,7 +238,7 @@ const HomeHero: FunctionComponent = () => {
                                 <Link
                                     className="text-violet-300 underline hover:text-violet-200"
                                     target="_blank"
-                                    href="https://about.sourcegraph.com/terms/privacy"
+                                    href="https://sourcegraph.com/terms/privacy"
                                 >
                                     Privacy Policy
                                 </Link>

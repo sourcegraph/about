@@ -52,14 +52,14 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick }) => 
             </div>
             <p className="mt-4 text-[14px] text-violet-300 opacity-70">
                 By registering, you agree to our{' '}
-                <Link className="text-violet-300 underline" target="_blank" href="https://about.sourcegraph.com/terms">
+                <Link className="text-violet-300 underline" target="_blank" href="https://sourcegraph.com/terms">
                     Terms of Service
                 </Link>{' '}
                 and{' '}
                 <Link
                     className="text-violet-300 underline"
                     target="_blank"
-                    href="https://about.sourcegraph.com/terms/privacy"
+                    href="https://sourcegraph.com/terms/privacy"
                 >
                     Privacy Policy
                 </Link>
