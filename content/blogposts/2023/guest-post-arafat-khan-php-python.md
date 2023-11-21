@@ -47,7 +47,7 @@ I fired up my Python repo in Vscode and started out with some basic PHP setup qu
 These are just silly PHP 1O1 questions but for someone who didn’t have the slightest clue of what they were doing, this was such a timesaver. It’s almost as if I had a mid-level PHP Developer sitting next to me who was guiding me through the whole process. After answering my questions, it would also give me a couple of different follow-up questions that it already knew I would ask. That was surprisingly helpful. I would literally just press the button to ask the pre-decided follow-up questions and those questions would help me gain a better understanding of the flow.        
 
 <Figure
-  src="https://storage.cloud.google.com/sourcegraph-assets/blog/guest-post-arafat-khan-php-python/guest-post-arafat-khan-php-python-image-3-full.png"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/guest-post-arafat-khan-php-python-image-3-full-035250.png"
   caption="Basic PHP Project Setup Questions"
 />
 
