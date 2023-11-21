@@ -9,8 +9,8 @@ description: "When tasked with creating a printing API in PHP despite having zer
 tags: [blog]
 slug: "guest-post-arafat-khan-php-python"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/vscode-v0-16-release/cody-vscode-0.16.0-og-image.jpg
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/vscode-v0-16-release/cody-vscode-0.16.0-og-image.jpg
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/guest-post-arafat-khan-php-python-og.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/guest-post-arafat-khan-php-python-og.png
 ---
 
 <Alert type="secondary">This is a guest blog post from our community. <a href="https://discord.com/servers/sourcegraph-969688426372825169" target="_blank">Join our Discord</a> to meet the author and connect with other developers passionate about Code Search and AI!</Alert>
