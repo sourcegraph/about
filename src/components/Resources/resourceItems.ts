@@ -476,7 +476,7 @@ export const resourceItems: Resource[] = [
     {
         featured: false,
         title: 'Why Sourcegraph’s single-tenant cloud instance is the most secure way to deploy Sourcegraph',
-        link: '/guides/single-tenant-cloud-instance-is-the-most-secure-way-to-deploy-Sourcegraph.pdf',
+        link: '/guides/single-tenant-cloud-instance-is-the-most-secure-way-to-deploy-Sourcegraph-nov2023.pdf',
         contentType: 'guide',
         subjects: [],
         description: "Learn why Sourcegraph's single-tenant cloud instance provides the highest level of security.",
