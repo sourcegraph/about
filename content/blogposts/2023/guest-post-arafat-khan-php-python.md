@@ -68,7 +68,7 @@ The foundation of the PHP package was laid, and all that remained was to build t
 To do the real building, I started out with the root of the entire codebase, which is the Auth class(This class will authorize all the calls going to the Print API and validate them). The goal was very simple, select my Python code and ask Cody to generate a basic PHP scaffolding for it.
 
 <YouTube
-  title="Accelerate developer onboarding with Sourcegraph" 
+  title="Cody select and explain" 
   id="UdMCERz9hcY"
   showTitle={true}
 />
