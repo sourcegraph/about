@@ -227,7 +227,7 @@ I like the speed and convenience of Cody but I can’t quite tell why using the 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/guest-post-arafat-khan-php-python/image_7.png"
 />
 
-I asked a question here that touches 11 different files, each of which would easily exceed the context window of GPT 4 (Never mind the copy-pasting hassle). It sifts through all the files and shows me how they are interconnected and what calls touch which parts. This to me, is the most important feature of Cody: the ability to answer questions that are deeply tangled in the complexity of the codebase. It helps me answer questions that I simply can’t find through a simple copy-paste because the real problem is sometimes_ I don’t even know where to look_ when I am dealing with very large codebases.
+I asked a question here that touches 11 different files, each of which would easily exceed the context window of GPT 4 (Never mind the copy-pasting hassle). It sifts through all the files and shows me how they are interconnected and what calls touch which parts. This to me, is the most important feature of Cody: the ability to answer questions that are deeply tangled in the complexity of the codebase. It helps me answer questions that I simply can’t find through a simple copy-paste because the real problem is sometimes _I don’t even know where to look_ when I am dealing with very large codebases.
 
 
 # 
