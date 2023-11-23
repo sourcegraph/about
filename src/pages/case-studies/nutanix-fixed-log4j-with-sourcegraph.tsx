@@ -69,7 +69,7 @@ export const CaseStudy: FunctionComponent = () => (
                     useCases={[
                         {
                             text: 'Find and fix security vulnerabilities quickly across the codebase.',
-                            href: '/use-cases/code-security',
+                            href: '/code-search',
                         },
                     ]}
                     challenges={[
@@ -267,8 +267,7 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
                     <p>
                         Log4j is one of many reasons why monitoring and updating is now a renewed priority. “Companies
-                        will have to be more diligent,” Jon said. With Sourcegraph, Nutanix is prepared to{' '}
-                        <Link href="/use-cases/code-security">find and fix the next vulnerability</Link>.
+                        will have to be more diligent,” Jon said. With Sourcegraph, Nutanix is prepared to find and fix the next vulnerability.
                     </p>
 
                     <div className="mt-5xl">
