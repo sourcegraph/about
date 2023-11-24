@@ -5,17 +5,16 @@ import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
-import { EmbeddedTweet, TweetSkeleton } from 'react-tweet'
 import { Tweet } from 'react-tweet/api'
 
 import {
     ContentSection,
     Layout,
-    CustomerLogos,
+    // CustomerLogos,
     Heading,
     ExternalsAuth,
     VideoCarousel,
-    CallToActionWithCody,
+    // CallToActionWithCody,
     Badge,
 } from '../components'
 import { breakpoints } from '../data/breakpoints'
@@ -69,29 +68,30 @@ const carouselVideos = [
     },
 ]
 
-const Home: FunctionComponent<HomeProps> = ({ tweets }) => {
-    const windowWidth = useWindowWidth()
-    const isMobile = windowWidth < breakpoints.lg
+const Home: FunctionComponent<HomeProps> = ({ tweets }) => 
+    // const windowWidth = useWindowWidth()
+    // const isMobile = windowWidth < breakpoints.lg
 
-    const innovationSectionRef = useRef<HTMLDivElement>(null)
-    const lightRef = useRef<HTMLImageElement>(null)
+    // const innovationSectionRef = useRef<HTMLDivElement>(null)
+    // const lightRef = useRef<HTMLImageElement>(null)
 
-    const isInnovationSectionRefInView = useInView(innovationSectionRef, isMobile ? 0.2 : 0.5)
-    const isLightRefInView = useInView(lightRef, isMobile ? 1 : 0.8)
+    // const isInnovationSectionRefInView = useInView(innovationSectionRef, isMobile ? 0.2 : 0.5)
+    // const isLightRefInView = useInView(lightRef, isMobile ? 1 : 0.8)
 
-    return (
+     (
         <Layout
             meta={{
                 title: 'Sourcegraph | Code AI platform',
                 description:
                     'Sourcegraph’s code AI platform makes it easy for devs to write, fix, and maintain code with Cody, the AI coding assistant, and Code Search.',
+                image: 'https://about.sourcegraph.com/cody/cody-og.png',
             }}
             heroAndHeaderClassName="text-white"
             headerColorTheme="purple"
             className="sg-bg-gradient-radial-home"
-            hero={<HomeHero />}
+        // hero={<HomeHero />}
         >
-            <img
+            {/* <img
                 src="/home/light.svg"
                 className={classNames(
                     'mx-auto max-h-[89px] pb-2 transition-opacity',
@@ -100,8 +100,8 @@ const Home: FunctionComponent<HomeProps> = ({ tweets }) => {
                 alt=""
                 aria-hidden={true}
                 ref={lightRef}
-            />
-            <div ref={innovationSectionRef}>
+            /> */}
+            {/* <div ref={innovationSectionRef}>
                 <ContentSection parentClassName="!py-0">
                     <CustomerLogos
                         ctaLink={
@@ -124,9 +124,9 @@ const Home: FunctionComponent<HomeProps> = ({ tweets }) => {
                         dark={true}
                     />
                 </ContentSection>{' '}
-            </div>
+            </div> */}
 
-            <ContentSection
+            {/* <ContentSection
                 parentClassName="!pb-0"
                 className="-mb-[25px] flex flex-col items-center justify-center md:-mb-[97px] md:pt-4"
             >
@@ -154,10 +154,9 @@ const Home: FunctionComponent<HomeProps> = ({ tweets }) => {
                 </div>
             </ContentSection>
 
-            <CallToActionWithCody className="-mt-[10px] md:mt-32" />
+            <CallToActionWithCody className="-mt-[10px] md:mt-32" /> */}
         </Layout>
     )
-}
 
 const HomeHero: FunctionComponent = () => {
     const [hoveredImageText, setHoveredImageText] = useState('')
