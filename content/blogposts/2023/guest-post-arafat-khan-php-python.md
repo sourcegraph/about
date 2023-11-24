@@ -223,7 +223,7 @@ All these features, such as _autocomplete, explanation, code fixes, and testing,
 
 ## Why use Cody when you have Chat GPT-4?
 
-I like the speed and convenience of Cody but I can’t quite tell why using the Vscode extension is so much better than using GPT 4 if I just wanted to ask code questions. This is where the real magic of Cody comes in. Cody can answer questions about your entire codebase and sift through all the different parts to find the most relevant information pertaining to your question. It uses the [Claude 100K model](https://www.anthropic.com/index/100k-context-windows) (soon to be the [200K model](https://www.anthropic.com/index/claude-2-1)) so it has the capacity to fit in so much more context than my copy-pasting hacks ever could. Take, for example, this question
+I like the speed and convenience of Cody but I can’t quite tell why using the Vscode extension is so much better than using ChatGPT if I just wanted to ask code questions. This is where the real magic of Cody comes in. Cody can answer questions about your entire codebase and sift through all the different parts to find the most relevant information pertaining to your question. It uses the [Claude 100K model](https://www.anthropic.com/index/100k-context-windows) (soon to be the [200K model](https://www.anthropic.com/index/claude-2-1)) so it has the capacity to fit in so much more context than my copy-pasting hacks ever could. Take, for example, this question
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/guest-post-arafat-khan-php-python/image_7.png"
