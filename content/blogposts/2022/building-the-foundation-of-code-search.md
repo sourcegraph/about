@@ -70,7 +70,7 @@ Untangling the build system from its Google internals burned Han-Wen out, and he
 
 Han-Wen’s years of experience with Git were put to good use on the project.
 
-Since Google’s Code Search team was also in Munich in those days, Han-Wen started by talking to them. One of the developers on the team explained how code search is built and the algorithms it involves, but warned Han-Wen that implementing code search from scratch is a lot of work. Maybe, the code search developer suggested, the better approach would be to open source the internal code search.
+Since Google’s Code Search team was also in Munich in those days, Han-Wen started by talking to them. One of the developers on the team explained how code search is built and the algorithms it involves, but warned Han-Wen that implementing code search from scratch is a lot of work. Maybe, the code search developer suggested, the better approach would be to open source the internal code search. (The original version of Google's internal code search is described in [Russ Cox's blog post](https://swtch.com/~rsc/regexp/regexp4.html).)
 
 Han-Wen says, “If you say to me, ‘Han-Wen, this is way too difficult. You're not going to be able to do that.’ That is waving a red flag to a bull and that's why I thought, I'm going to prove you wrong. I'm going to prove that this is actually really easy.”
 
