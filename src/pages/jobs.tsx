@@ -1,10 +1,9 @@
 import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
-import Ticker from 'framer-motion-ticker'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 
-import { Layout, ContentSection, ThreeUpText } from '../components'
+import { Layout, ContentSection, ThreeUpText, InfiniteCarousel } from '../components'
 import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const CareersPage: FunctionComponent = () => {
@@ -76,18 +75,7 @@ const CareersPage: FunctionComponent = () => {
                 </a>
             </ContentSection>
 
-            <div className="h-[477px]">
-                <Ticker duration={10}>
-                    {carouselImages.map((item, index) => (
-                        <img
-                            key={index}
-                            src={item}
-                            className="ml-[50px] h-[469px] rounded-2xl"
-                            alt="Career"
-                        />
-                    ))}
-                </Ticker>
-            </div>
+            <InfiniteCarousel images={carouselImages} />
 
             <ContentSection background="white" parentClassName="!pt-[104px] !pb-16">
                 <div className="flex flex-wrap">

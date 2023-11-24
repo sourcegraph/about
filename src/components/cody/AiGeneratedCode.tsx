@@ -35,10 +35,11 @@ export const AiGeneratedCode: FunctionComponent = () => (
                     Code faster with AI-assisted <b>autocomplete</b>
                 </Heading>
                 <p className="mt-[30px] max-w-[572px] text-lg text-gray-200">
-                    Cody suggests completions as you type using context from your code. It’s powered by the latest instant LLM models for accuracy and performance.
+                    Cody suggests completions as you type using context from your code. It’s powered by the latest
+                    instant LLM models for accuracy and performance.
                 </p>
                 <p className="mt-[30px] max-w-[572px] text-lg text-gray-200">
-                    Autocomplete supports any programming language because it uses LLMs trained on broad data, and it 
+                    Autocomplete supports any programming language because it uses LLMs trained on broad data, and it
                     works great with Python, Go, JavaScript, and TypeScript code.
                 </p>
                 <Link

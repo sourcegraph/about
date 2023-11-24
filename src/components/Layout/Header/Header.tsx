@@ -57,7 +57,13 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
             {({ open }) => (
                 <>
                     <Banner />
-                    <HeaderContent colorTheme={colorTheme} minimal={minimal} open={open} sticky={sticky} source={source} />
+                    <HeaderContent
+                        colorTheme={colorTheme}
+                        minimal={minimal}
+                        open={open}
+                        sticky={sticky}
+                        source={source}
+                    />
                 </>
             )}
         </Disclosure>

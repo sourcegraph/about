@@ -13,8 +13,7 @@ const codebaseAwareIntelligenceFeatures = [
     {
         animation: <ExplainCode />,
         heading: 'Code explanation',
-        description:
-            'Cody can explain what code is doing at a high level or in detail in conversational language.',
+        description: 'Cody can explain what code is doing at a high level or in detail in conversational language.',
     },
     {
         animation: <UnitTest />,
@@ -47,12 +46,12 @@ export const CodebaseAwareIntelligence: FunctionComponent = () => (
                     Codebase-aware <b>chat and commands</b>
                 </Heading>
                 <p className="my-[30px] max-w-[572px] text-lg text-gray-200">
-                    Ask Cody questions in the chat view or run pre-built commands for common actions.
-                    Cody will use Sourcegraph’s code graph to answer using knowledge of 
-                    your codebase.
+                    Ask Cody questions in the chat view or run pre-built commands for common actions. Cody will use
+                    Sourcegraph’s code graph to answer using knowledge of your codebase.
                 </p>
                 <p className="my-[30px] max-w-[572px] text-lg text-gray-200">
-                    We’re experimenting with several methods of context retrieval to improve Cody’s accuracy, including embeddings, keyword search, and hybrid search.
+                    We’re experimenting with several methods of context retrieval to improve Cody’s accuracy, including
+                    embeddings, keyword search, and hybrid search.
                 </p>
                 <Link
                     href="https://about.sourcegraph.com/whitepaper/cody-context-architecture.pdf"

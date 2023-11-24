@@ -59,7 +59,7 @@ export const CaseStudy: FunctionComponent = () => (
                 }}
                 variant="white"
                 title={
-                    <ContentSection parentClassName='!px-0 !py-0'>
+                    <ContentSection parentClassName="!px-0 !py-0">
                         <Badge
                             color="violet"
                             text="CUSTOMER STORIES"

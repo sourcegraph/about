@@ -7,6 +7,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('./cody-animation.css');
+@import url('./slider-animation.css');
 
 /* Base Styles */
 @layer base {
@@ -431,6 +432,8 @@
     .sg-bg-careers-cta {
         background: radial-gradient(34.84% 119.01% at 46.84% 100%, rgba(130, 13, 222, 0.50) 0%, rgba(130, 13, 222, 0.00) 100%), #270741;
     }
+
+   
 
     /* Used to define custom tailwind slide in animation */
     @keyframes slideFadeIn {
