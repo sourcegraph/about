@@ -248,7 +248,7 @@ I asked a question here that touches 11 different files, each of which would eas
 * [PHP Code](https://github.com/arafatkatze/epson-connect-php) —[ PHP Docs](https://arafatkatze.github.io/epson-connect-php/packages/Epsonconnectphp-Epson.html)
 * [Print API Blog](https://medium.com/@Arafatkatze/epson-connect-api-for-developers-a-comprehensive-guide-ae639a80eefb)
 
-    To anyone embarking on a similar journey or facing the challenge of diving into unfamiliar territory, I would say that AI tools in 2023 are like the internet in the late 90s. You can deny its existence an impact all you wish, but there is very soon going to be a future that’s so deeply entwined with AI that you wouldn’t be able to think of a life without it. I strongly recommend people try out AI coding assistants. There’s quite a few out there, but Cody is the best one.
+    To anyone embarking on a similar journey or facing the challenge of diving into unfamiliar territory, I would say that AI tools in 2023 are like the internet in the late 90s. You can deny its existence and impact all you wish, but there is very soon going to be a future that’s so deeply entwined with AI that you wouldn’t be able to think of a life without it. I strongly recommend people try out AI coding assistants. There’s quite a few out there, but Cody is the best one.
 
 
 <hr style={{marginTop:"2rem",marginBottom:"2rem"}} />
