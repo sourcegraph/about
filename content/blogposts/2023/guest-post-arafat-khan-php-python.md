@@ -214,7 +214,9 @@ However, with Cody, I experienced a much faster approach:
 />
 
 Sometimes, I would just describe what the function is “supposed” to do in a comment, and just like magic, Cody would write it for me.
-
+            <div>
+                <YouTube title="Autocomplete with Cody" id="UdMCERz9hcY" />
+            </div>
 The above example is a classic Cody’s autocomplete feature. It works surprisingly well for all kinds of code completion tasks, especially when your repo already has a reasonable amount of code to give it context. This autocomplete system is grounded in a complex foundation, and for those interested in its intricacies, you can delve deeper [here](https://about.sourcegraph.com/blog/the-lifecycle-of-a-code-ai-completion).
 
 All these features, such as _autocomplete, explanation, code fixes, and testing,_ made my job as a programmer a lot easier. I was able to build the building blocks of my code, and then, inch by inch, I was getting closer to completing the entire project. As I was building more and more of this codebase, a question that crossed my mind was:
