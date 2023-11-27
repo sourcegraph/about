@@ -61,7 +61,7 @@ func DotUnroll4(a, b []float32) float32 {
 }
 ```
 
-In our unrolled code, the dependencies between multiply instructions are removed, enabling the CPU to take more advantage of pipelining. This increases our throughput by TODO% compared to our naive implementation.
+In our unrolled code, the dependencies between multiply instructions are removed, enabling the CPU to take more advantage of pipelining. This increases our throughput by 38% compared to our naive implementation.
 
 <SIMDChart
     rows={[
@@ -151,8 +151,6 @@ This technique translates well to many memory-safe compiled languages like [Rust
 Exercise for the reader: why is it significant that we slice like `a[i:i+4:i+4]` rather than just `a[i:i+4]`?
 
 </aside>
-
-TODO: add discussion about `unsafe` package?
 
 ## Quantization
 
