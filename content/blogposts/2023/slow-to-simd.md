@@ -5,53 +5,15 @@ authors:
     url: https://github.com/camdencheek
 tags: [blog]
 slug: 'slow-to-simd'
-published: false
+published: true
 ---
-
-<style>
-    .chart-container {
-        display: grid;
-        grid-template-columns: max-content auto;
-        width: 80%;
-        max-width: 800px;
-        margin: 20px auto;
-        overflow: hidden;
-    }
-
-    .bar-text {
-        display: flex;
-        margin: 10px;
-        grid-column: 1;
-    }
-
-    .bar-text code {
-        display: flex;
-        grid-column: 1;
-    }
-
-    .bar-value {
-        grid-column: 2;
-        margin: 2px;
-        background-color: lightgray;
-    }
-
-    .bar-value span {
-        display: flex;
-        margin: 8px;
-        text-align: left;
-    }
-</style>
-
-# From Slow to SIMD: An Optimization Story
 
 So, there's this function. It's called a lot. More importantly, all those calls are on the critical path of a key user interaction.
 Let's talk about making it fast.
 
 TODO: add link to code for this blog post
 
-<aside>
 Spoiler: it's a dot product.
-</aside>
 
 ## Some background (or [skip to the juicy stuff](#the-target))
 
@@ -101,12 +63,12 @@ func DotUnroll4(a, b []float32) float32 {
 
 In our unrolled code, the dependencies between multiply instructions are removed, enabling the CPU to take more advantage of pipelining. This increases our throughput by TODO% compared to our naive implementation.
 
-<div class="chart-container">
-<div class="bar-text" style="grid-row: 1;"><code>DotNaive</code></div>
-<div class="bar-value" style="grid-row: 1; width: 73%"><span>941489 vec/s</span></div>
-<div class="bar-text" style="grid-row: 2;"><code>DotUnroll4</code></div>
-<div class="bar-value" style="grid-row: 2; width: 100%;"><span>1293605 vec/s</span></div>
-</div>
+<SIMDChart
+    rows={[
+        {name: "DotNaive", value: 941489},
+        {name: "DotUnroll4", value: 1293605},
+    ]}
+/>
 
 Note that we can actually improve this slightly more by twiddling with the number of iterations we unroll. On the benchmark machine, 8 seemed to be optimal, but on my laptop, 4 performs best. However, the improvement is quite platform dependent and fairly minimal, so for the rest of the post, I'll stick with an unroll depth of 4 for readability.
 
@@ -172,16 +134,15 @@ func DotBCE(a, b []float32) float32 {
 }
 ```
 
-<div class="chart-container">
-<div class="bar-text" style="grid-row: 1;"><code>DotNaive</code></div>
-<div class="bar-value" style="grid-row: 1; width: 69%"><span>941489 vec/s</span></div>
-<div class="bar-text" style="grid-row: 2;"><code>DotUnroll4</code></div>
-<div class="bar-value" style="grid-row: 2; width: 94%;"><span>1293605 vec/s</span></div>
-<div class="bar-text" style="grid-row: 3;"><code>DotBCE</code></div>
-<div class="bar-value" style="grid-row: 3; width: 100%;"><span>1372632 vec/s</span></div>
-</div>
-
 Interestingly, the benchmark for this updated implementation shows a performance impact even greater than just using the `-B` flag! This one yields an 11% improvement compared to the 2.5% from `-B`. I actually don't have a good explanation for this. I'd love to hear if someone has an idea of why the difference is larger.
+
+<SIMDChart
+    rows={[
+        {name: "DotNaive", value: 941489},
+        {name: "DotUnroll4", value: 1293605},
+        {name: "DotBCE", value: 1372632},
+    ]}
+/>
 
 This technique translates well to many memory-safe compiled languages like [Rust](https://nnethercote.github.io/perf-book/bounds-checks.html).
 
@@ -208,7 +169,7 @@ There are [plenty of ways](https://en.wikipedia.org/wiki/Dimensionality_reductio
 I won't get into exactly _how_ we decide to do the translation between `float32` and `int8`, since that's a pretty [deep topic](https://huggingface.co/docs/optimum/concept_guides/quantization), but suffice it to say our function now looks like the following:
 
 ```go
-func DotInt8(a, b []int8) int32 {
+func DotInt8BCE(a, b []int8) int32 {
 	if len(a) != len(b) {
 		panic("slices must have equal lengths")
 	}
@@ -231,16 +192,15 @@ This change yields a 4x reduction in memory usage at the cost of some recall pre
 
 Re-running the benchmarks shows we suffer a perf hit from this change. Taking a look at the generated assembly (with `go tool compile -S`), there are a bunch of new instructions to convert `int8` to `int32`, so I expect that's the source of the slowdown. We'll make up for that in the next section.
 
-<div class="chart-container">
-<div class="bar-text" style="grid-row: 1;"><code>DotNaive</code></div>
-<div class="bar-value" style="grid-row: 1; width: 69%"><span>0.94M vec/s</span></div>
-<div class="bar-text" style="grid-row: 2;"><code>DotUnroll4</code></div>
-<div class="bar-value" style="grid-row: 2; width: 94%;"><span>1.29M vec/s</span></div>
-<div class="bar-text" style="grid-row: 3;"><code>DotBCE</code></div>
-<div class="bar-value" style="grid-row: 3; width: 100%;"><span>1.37M vec/s</span></div>
-<div class="bar-text" style="grid-row: 4;"><code>DotInt8BCE</code></div>
-<div class="bar-value" style="grid-row: 4; width: 90%;"><span>1.23M vec/s</span></div>
-</div>
+<SIMDChart
+    rows={[
+        {name: "DotNaive", value: 941489},
+        {name: "DotUnroll4", value: 1293605},
+        {name: "DotBCE", value: 1372632},
+        {name: "DotInt8BCE", value: 1239881},
+    ]}
+/>
+
 
 ## SIMD
 
@@ -256,7 +216,7 @@ I want this routine to be reasonably portable, so I'm going to restrict myself t
 
 <summary>Full code for <code>DotAVX2</code></summary>
 
-```asm
+```
 #include "textflag.h"
 
 TEXT ·DotAVX2(SB), NOSPLIT, $0-52
@@ -327,18 +287,15 @@ TODO: add links to the reference docs for the instructions
 
 Let's see what this earned us.
 
-<div class="chart-container">
-<div class="bar-text" style="grid-row: 1;"><code>DotNaive</code></div>
-<div class="bar-value" style="grid-row: 1; width: 11%"><span>0.94M vec/s</span></div>
-<div class="bar-text" style="grid-row: 2;"><code>DotUnroll4</code></div>
-<div class="bar-value" style="grid-row: 2; width: 15%;"><span>1.29M vec/s</span></div>
-<div class="bar-text" style="grid-row: 3;"><code>DotBCE</code></div>
-<div class="bar-value" style="grid-row: 3; width: 16%;"><span>1.37M vec/s</span></div>
-<div class="bar-text" style="grid-row: 4;"><code>DotInt8BCE</code></div>
-<div class="bar-value" style="grid-row: 4; width: 14%;"><span>1.23M vec/s</span></div>
-<div class="bar-text" style="grid-row: 5;"><code>DotAVX2</code></div>
-<div class="bar-value" style="grid-row: 5; width: 100%;"><span>7.07M vec/s</span></div>
-</div>
+<SIMDChart
+    rows={[
+        {name: "DotNaive", value: 941489},
+        {name: "DotUnroll4", value: 1293605},
+        {name: "DotBCE", value: 1372632},
+        {name: "DotInt8BCE", value: 1239881},
+        {name: "DotAVX2", value: 7076545},
+    ]}
+/>
 
 Woah, that's a 530% increase in throughput from our previous best! SIMD for the win 🚀
 
@@ -359,7 +316,7 @@ Full code for <code>DotVNNI</code>
 
 </summary>
 
-```asm
+```
 #include "textflag.h"
 
 // DotVNNI calculates the dot product of two slices using AVX512 VNNI
@@ -441,20 +398,16 @@ end:
 
 This implementation yielded another 21% improvement. Not bad!
 
-<div class="chart-container">
-<div class="bar-text" style="grid-row: 1;"><code>DotNaive</code></div>
-<div class="bar-value" style="grid-row: 1; width: 11%"><span>0.94M vec/s</span></div>
-<div class="bar-text" style="grid-row: 2;"><code>DotUnroll4</code></div>
-<div class="bar-value" style="grid-row: 2; width: 15%;"><span>1.29M vec/s</span></div>
-<div class="bar-text" style="grid-row: 3;"><code>DotBCE</code></div>
-<div class="bar-value" style="grid-row: 3; width: 16%;"><span>1.37M vec/s</span></div>
-<div class="bar-text" style="grid-row: 4;"><code>DotInt8BCE</code></div>
-<div class="bar-value" style="grid-row: 4; width: 14%;"><span>1.23M vec/s</span></div>
-<div class="bar-text" style="grid-row: 5;"><code>DotAVX2</code></div>
-<div class="bar-value" style="grid-row: 5; width: 81%;"><span>7.07M vec/s</span></div>
-<div class="bar-text" style="grid-row: 6;"><code>DotVNNI</code></div>
-<div class="bar-value" style="grid-row: 6; width: 100%;"><span>7.07M vec/s</span></div>
-</div>
+<SIMDChart
+    rows={[
+        {name: "DotNaive", value: 941489},
+        {name: "DotUnroll4", value: 1293605},
+        {name: "DotBCE", value: 1372632},
+        {name: "DotInt8BCE", value: 1239881},
+        {name: "DotAVX2", value: 7076545},
+        {name: "DotVNNI", value: 8699165},
+    ]}
+/>
 
 ## Bonus material
 
