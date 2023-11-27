@@ -3,9 +3,9 @@ import { FunctionComponent, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
-import { GetStaticProps } from 'next'
+// import { GetStaticProps } from 'next'
 import Link from 'next/link'
-import { EmbeddedTweet, TweetSkeleton } from 'react-tweet'
+// import { EmbeddedTweet, TweetSkeleton } from 'react-tweet'
 import { Tweet } from 'react-tweet/api'
 
 import {
@@ -14,18 +14,18 @@ import {
     CustomerLogos,
     Heading,
     ExternalsAuth,
-    VideoCarousel,
+    // VideoCarousel,
     CallToActionWithCody,
     Badge,
 } from '../components'
 import { breakpoints } from '../data/breakpoints'
 // eslint-disable-next-line import/extensions
-import Tweets from '../data/tweets.json'
+// import Tweets from '../data/tweets.json'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 import { useInView } from '../hooks/useInView'
 import { useWindowWidth } from '../hooks/windowWidth'
 
-import { HOME_PAGE_TWEET_IDS } from './constants'
+// import { HOME_PAGE_TWEET_IDS } from './constants'
 
 interface HomeProps {
     tweets: (Tweet | undefined)[]
@@ -69,7 +69,7 @@ const carouselVideos = [
     },
 ]
 
-const Home: FunctionComponent<HomeProps> = ({ tweets }) => {
+const Home: FunctionComponent<HomeProps> = () => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
 
@@ -134,7 +134,7 @@ const Home: FunctionComponent<HomeProps> = ({ tweets }) => {
                 <Heading size="h3" className="mb-16 text-center !text-4xl font-semibold text-white md:mb-16">
                     See what devs are saying about Cody (beta)
                 </Heading>
-                <div className="relative -mt-[25px] grid w-full grid-cols-1 gap-x-6 md:grid-cols-2">
+                {/* <div className="relative -mt-[25px] grid w-full grid-cols-1 gap-x-6 md:grid-cols-2">
                     <div className="relative grid auto-rows-min grid-cols-1">
                         <div className="mb-1 -mt-[30px] flex justify-center md:mt-0 xl:-mr-[80px]">
                             {tweets[0] ? <EmbeddedTweet key={tweets[0].id_str} tweet={tweets[0]} /> : <TweetSkeleton />}
@@ -152,7 +152,7 @@ const Home: FunctionComponent<HomeProps> = ({ tweets }) => {
                             {tweets[3] ? <EmbeddedTweet key={tweets[3].id_str} tweet={tweets[3]} /> : <TweetSkeleton />}
                         </div>
                     </div>
-                </div>
+                </div> */}
             </ContentSection>
 
             <CallToActionWithCody className="-mt-[10px] md:mt-32" />
@@ -247,7 +247,7 @@ const HomeHero: FunctionComponent = () => {
                         </div>
                     </div>
 
-                    <VideoCarousel videos={carouselVideos} />
+                    {/* <VideoCarousel videos={carouselVideos} /> */}
 
                     <img
                         className="z hero-background absolute top-0 right-0 !-mr-12 hidden lg:block"
@@ -474,15 +474,15 @@ const AvailabilityIcon: React.FC<AvailabilityIconProps> = ({
     )
 }
 
-export const getStaticProps: GetStaticProps<HomeProps> = () => {
-    try {
-        const tweets = HOME_PAGE_TWEET_IDS.map(tweetId => Tweets[tweetId] as any)
+// export const getStaticProps: GetStaticProps<HomeProps> = () => {
+//     try {
+//         const tweets = HOME_PAGE_TWEET_IDS.map(tweetId => Tweets[tweetId] as any)
 
-        return { props: { tweets } }
-    } catch (error) {
-        console.error('Error fetching tweets:', error)
-        return { props: { tweets: [] } }
-    }
-}
+//         return { props: { tweets } }
+//     } catch (error) {
+//         console.error('Error fetching tweets:', error)
+//         return { props: { tweets: [] } }
+//     }
+// }
 
 export default Home
