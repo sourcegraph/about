@@ -82,15 +82,13 @@ const Home: FunctionComponent<HomeProps> = () => {
     return (
         <Layout
             meta={{
-                title: 'Sourcegraph | Code AI platform',
+                title: 'Cody | AI coding assistant',
                 description:
-                    'Sourcegraph code AI platform makes it easy for devs to write, fix, and maintain code with Cody, the AI coding assistant, and Code Search.',
+                    'Cody is the most powerful and accurate AI coding assistant for writing, fixing, and maintaining code.',
                 image: 'https://sourcegraph.com/cody/cody-og.png',
             }}
-            heroAndHeaderClassName="text-white"
             headerColorTheme="purple"
-            className="sg-bg-gradient-radial-home"
-            hero={<HomeHero />}
+            displayChildrenUnderNav={true}
         >
             {/* <img
                 src="/home/light.svg"
