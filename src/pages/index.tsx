@@ -1,28 +1,28 @@
 /* eslint-disable react/forbid-dom-props */
-import { FunctionComponent, useRef, useState } from 'react'
+import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
-import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
+// import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 // import { GetStaticProps } from 'next'
 import Link from 'next/link'
 // import { EmbeddedTweet, TweetSkeleton } from 'react-tweet'
 import { Tweet } from 'react-tweet/api'
 
 import {
-    ContentSection,
+    // ContentSection,
     Layout,
-    CustomerLogos,
-    Heading,
-    ExternalsAuth,
+    // CustomerLogos,
+    // Heading,
+    // ExternalsAuth,
     // VideoCarousel,
-    CallToActionWithCody,
-    Badge,
+    // CallToActionWithCody,
+    // Badge,
 } from '../components'
-import { breakpoints } from '../data/breakpoints'
+// import { breakpoints } from '../data/breakpoints'
 // eslint-disable-next-line import/extensions
 // import Tweets from '../data/tweets.json'
-import { EventName, getEventLogger } from '../hooks/eventLogger'
-import { useInView } from '../hooks/useInView'
+import { getEventLogger } from '../hooks/eventLogger'
+// import { useInView } from '../hooks/useInView'
 import { useWindowWidth } from '../hooks/windowWidth'
 
 // import { HOME_PAGE_TWEET_IDS } from './constants'
@@ -71,13 +71,13 @@ const carouselVideos = [
 
 const Home: FunctionComponent<HomeProps> = () => {
     const windowWidth = useWindowWidth()
-    const isMobile = windowWidth < breakpoints.lg
+    // const isMobile = windowWidth < breakpoints.lg
 
-    const innovationSectionRef = useRef<HTMLDivElement>(null)
-    const lightRef = useRef<HTMLImageElement>(null)
+    // const innovationSectionRef = useRef<HTMLDivElement>(null)
+    // const lightRef = useRef<HTMLImageElement>(null)
 
-    const isInnovationSectionRefInView = useInView(innovationSectionRef, isMobile ? 0.2 : 0.5)
-    const isLightRefInView = useInView(lightRef, isMobile ? 1 : 0.8)
+    // const isInnovationSectionRefInView = useInView(innovationSectionRef, isMobile ? 0.2 : 0.5)
+    // const isLightRefInView = useInView(lightRef, isMobile ? 1 : 0.8)
 
     return (
         <Layout
@@ -92,7 +92,7 @@ const Home: FunctionComponent<HomeProps> = () => {
             className="sg-bg-gradient-radial-home"
             hero={<HomeHero />}
         >
-            <img
+            {/* <img
                 src="/home/light.svg"
                 className={classNames(
                     'mx-auto max-h-[89px] pb-2 transition-opacity',
@@ -134,7 +134,7 @@ const Home: FunctionComponent<HomeProps> = () => {
                 <Heading size="h3" className="mb-16 text-center !text-4xl font-semibold text-white md:mb-16">
                     See what devs are saying about Cody (beta)
                 </Heading>
-                {/* <div className="relative -mt-[25px] grid w-full grid-cols-1 gap-x-6 md:grid-cols-2">
+                <div className="relative -mt-[25px] grid w-full grid-cols-1 gap-x-6 md:grid-cols-2">
                     <div className="relative grid auto-rows-min grid-cols-1">
                         <div className="mb-1 -mt-[30px] flex justify-center md:mt-0 xl:-mr-[80px]">
                             {tweets[0] ? <EmbeddedTweet key={tweets[0].id_str} tweet={tweets[0]} /> : <TweetSkeleton />}
@@ -152,26 +152,26 @@ const Home: FunctionComponent<HomeProps> = () => {
                             {tweets[3] ? <EmbeddedTweet key={tweets[3].id_str} tweet={tweets[3]} /> : <TweetSkeleton />}
                         </div>
                     </div>
-                </div> */}
+                </div>
             </ContentSection>
 
-            <CallToActionWithCody className="-mt-[10px] md:mt-32" />
+            <CallToActionWithCody className="-mt-[10px] md:mt-32" /> */}
         </Layout>
     )
 }
 
 const HomeHero: FunctionComponent = () => {
-    const [hoveredImageText, setHoveredImageText] = useState('')
-    const windowWidth = useWindowWidth()
-    const isMobile = windowWidth < breakpoints.lg
+    // const [hoveredImageText, setHoveredImageText] = useState('')
+    // const windowWidth = useWindowWidth()
+    // const isMobile = windowWidth < breakpoints.lg
 
-    const lightRef = useRef<HTMLImageElement>(null)
-    const whatIsSourcegraphRef = useRef<HTMLDivElement>(null)
-    const codyGraph = useRef<HTMLImageElement>(null)
+    // const lightRef = useRef<HTMLImageElement>(null)
+    // const whatIsSourcegraphRef = useRef<HTMLDivElement>(null)
+    // const codyGraph = useRef<HTMLImageElement>(null)
 
-    const isLightRefInView = useInView(lightRef, isMobile ? 0.5 : 0.8)
-    const isWhatIsSourcegraphInView = useInView(whatIsSourcegraphRef, isMobile ? 0.5 : 0.8)
-    const isCodyGraphInView = useInView(codyGraph, isMobile ? 0.5 : 0.8)
+    // const isLightRefInView = useInView(lightRef, isMobile ? 0.5 : 0.8)
+    // const isWhatIsSourcegraphInView = useInView(whatIsSourcegraphRef, isMobile ? 0.5 : 0.8)
+    // const isCodyGraphInView = useInView(codyGraph, isMobile ? 0.5 : 0.8)
 
     const handleOnClick = (eventName: string): void => {
         const eventArguments = {
@@ -184,7 +184,7 @@ const HomeHero: FunctionComponent = () => {
 
     return (
         <>
-            <ContentSection parentClassName="!py-0 !px-sm overflow-x-clip" className="relative pb-[55px] md:pb-0">
+            {/* <ContentSection parentClassName="!py-0 !px-sm overflow-x-clip" className="relative pb-[55px] md:pb-0">
                 <div className="grid grid-cols-1 gap-x-4 gap-y-16  pt-16 pb-11 md:grid-cols-2 md:px-6 md:pt-32 md:pb-8">
                     <div className="hero-content mx-auto flex w-full max-w-[567px] flex-col items-center px-0 md:mx-0 md:items-start">
                         <Heading
@@ -247,7 +247,7 @@ const HomeHero: FunctionComponent = () => {
                         </div>
                     </div>
 
-                    {/* <VideoCarousel videos={carouselVideos} /> */}
+                    <VideoCarousel videos={carouselVideos} />
 
                     <img
                         className="z hero-background absolute top-0 right-0 !-mr-12 hidden lg:block"
@@ -435,7 +435,8 @@ const HomeHero: FunctionComponent = () => {
                         </div>
                     </div>
                 </div>
-            </ContentSection>
+            </ContentSection> */}
+            Home
         </>
     )
 }
