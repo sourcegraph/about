@@ -12,7 +12,7 @@
     grid-column: 1;
 }
 
-.chart-text > code {
+.chart-text code {
     display: flex;
     padding: 0;
     border: none;
@@ -25,7 +25,7 @@
     background-color: var(--sg-color-violet-200);
 }
 
-.chart-bar > span {
+.chart-bar span {
     display: flex;
     margin: 8px;
     text-align: left;
