@@ -21,9 +21,9 @@ export const Chart: FunctionComponent<Props> = ({ rows }) => {
             {rows.map(({ name, value }, index) => (
                 <>
                     {/* eslint-disable react/forbid-dom-props */}
-                    <div className={styles['chart-text']} key={name + '-text'} style={{ gridRow: index + 1 }}>
-                        <code>{name}</code>
-                    </div>
+                    <code className={styles['chart-text']} key={name + '-text'} style={{ gridRow: index + 1 }}>
+                        {name}
+                    </code>
                     {/* eslint-disable react/forbid-dom-props */}
                     <div
                         className={styles['chart-bar']}
