@@ -399,6 +399,8 @@ This implementation yielded another 21% improvement. Not bad!
 
 # What's next?
 
+Well, I'm pretty happy with an 9.3x increase in throughput and a 4x reduction in memory usage, so I'll probably leave it here.
+
 The real life answer here is probably "use an index". There is a ton of good work out there focused on making nearest neighbor search fast, and there are plenty of batteries-included vector DBs that make it pretty easy to deploy. We're working towards migrating away from our hand-rolled solution so we can scale more cheaply.
 
 _However_, if you want some fun food for thought, a colleague of built a proof-of-concept [dot product on the GPU](https://github.com/sourcegraph/sourcegraph/compare/main...nsc/embeddings-fun#diff-eed4a741ebe632c484dce236a3f4b1eee16e9a2bec6749003b3dbc41449c497c).
