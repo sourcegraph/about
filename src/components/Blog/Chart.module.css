@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 
-.chart-text {
+.chart-container code.chart-text {
     display: flex;
     margin: 10px;
     grid-column: 1;
