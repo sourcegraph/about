@@ -10,10 +10,6 @@
     display: flex;
     margin: 10px;
     grid-column: 1;
-}
-
-.chart-text code {
-    display: flex;
     padding: 0;
     border: none;
     background: none;
