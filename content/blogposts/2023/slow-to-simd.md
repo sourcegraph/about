@@ -63,7 +63,7 @@ func DotUnroll4(a, b []float32) float32 {
 
 In our unrolled code, the dependencies between multiply instructions are removed, enabling the CPU to take more advantage of pipelining. This increases our throughput by 38% compared to our naive implementation.
 
-<SIMDChart
+<Chart
     rows={[
         {name: "DotNaive", value: 941489},
         {name: "DotUnroll4", value: 1293605},
@@ -136,7 +136,7 @@ func DotBCE(a, b []float32) float32 {
 
 Interestingly, the benchmark for this updated implementation shows a performance impact even greater than just using the `-B` flag! This one yields an 11% improvement compared to the 2.5% from `-B`. I actually don't have a good explanation for this. I'd love to hear if someone has an idea of why the difference is larger.
 
-<SIMDChart
+<Chart
     rows={[
         {name: "DotNaive", value: 941489},
         {name: "DotUnroll4", value: 1293605},
@@ -190,7 +190,7 @@ This change yields a 4x reduction in memory usage at the cost of some recall pre
 
 Re-running the benchmarks shows we suffer a perf hit from this change. Taking a look at the generated assembly (with `go tool compile -S`), there are a bunch of new instructions to convert `int8` to `int32`, so I expect that's the source of the slowdown. We'll make up for that in the next section.
 
-<SIMDChart
+<Chart
     rows={[
         {name: "DotNaive", value: 941489},
         {name: "DotUnroll4", value: 1293605},
@@ -285,7 +285,7 @@ TODO: add links to the reference docs for the instructions
 
 Let's see what this earned us.
 
-<SIMDChart
+<Chart
     rows={[
         {name: "DotNaive", value: 941489},
         {name: "DotUnroll4", value: 1293605},
@@ -396,7 +396,7 @@ end:
 
 This implementation yielded another 21% improvement. Not bad!
 
-<SIMDChart
+<Chart
     rows={[
         {name: "DotNaive", value: 941489},
         {name: "DotUnroll4", value: 1293605},
