@@ -8,11 +8,11 @@ import { Alert, Badge, Blockquote, Figure, Heading, HubSpotForm, TableWrapper, V
 import { PostComponentProps } from '../../interfaces/posts'
 
 import { BylineAndDate } from './BylineAndDate'
+import { Chart } from './Chart'
 import styles from './PostLayout.module.css'
-import { SIMDChart } from '../Chart'
 
 type PostComponents = import('mdx/types').MDXComponents
-const components = { Alert, Badge, Blockquote, HubSpotForm, Figure, OpenInNewIcon, TableWrapper, Video, YouTube, SIMDChart }
+const components = { Alert, Badge, Blockquote, Chart, HubSpotForm, Figure, OpenInNewIcon, TableWrapper, Video, YouTube }
 
 /**
  * This component is used to render all types of posts:

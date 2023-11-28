@@ -1,5 +1,6 @@
-import classNames from 'classnames'
 import { FunctionComponent } from 'react'
+
+import classNames from 'classnames'
 
 import styles from './Chart.module.css'
 
@@ -12,16 +13,18 @@ interface Props {
     rows: ChartRow[]
 }
 
-export const SIMDChart: FunctionComponent<Props> = ({ rows }) => {
+export const Chart: FunctionComponent<Props> = ({ rows }) => {
     const maxValue = Math.max(...rows.map(row => row.value))
 
     return (
         <div className={classNames(styles['chart-container'])}>
             {rows.map(({ name, value }, index) => (
                 <>
+                    {/* eslint-disable react/forbid-dom-props */}
                     <div className={styles['chart-text']} key={name + '-text'} style={{ gridRow: index + 1 }}>
                         <code>{name}</code>
                     </div>
+                    {/* eslint-disable react/forbid-dom-props */}
                     <div
                         className={styles['chart-bar']}
                         key={name + '-bar'}
