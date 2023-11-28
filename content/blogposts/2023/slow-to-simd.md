@@ -11,8 +11,6 @@ published: true
 So, there's this function. It's called a lot. More importantly, all those calls are on the critical path of a key user interaction.
 Let's talk about making it fast.
 
-TODO: add link to code for this blog post
-
 Spoiler: it's a dot product.
 
 ## Some background (or [skip to the juicy stuff](#the-target))
@@ -37,7 +35,7 @@ func DotNaive(a, b []float32) float32 {
 }
 ```
 
-Unless otherwise stated, all benchmarks are run on an Intel Xeon Platinum 8481C 2.70GHz CPU. This is a `c3-highcpu-44` GCE VM.
+Unless otherwise stated, all benchmarks are run on an Intel Xeon Platinum 8481C 2.70GHz CPU. This is a `c3-highcpu-44` GCE VM. The code in this blog post can all be found in runnable form [here](https://github.com/camdencheek/simd_blog).
 
 ## Loop unrolling
 
@@ -61,12 +59,12 @@ func DotUnroll4(a, b []float32) float32 {
 }
 ```
 
-In our unrolled code, the dependencies between multiply instructions are removed, enabling the CPU to take more advantage of pipelining. This increases our throughput by 38% compared to our naive implementation.
+In our unrolled code, the dependencies between multiply instructions are removed, enabling the CPU to take more advantage of pipelining. This increases our throughput by 37% compared to our naive implementation.
 
 <Chart
     rows={[
-        {name: "DotNaive", value: 941489},
-        {name: "DotUnroll4", value: 1293605},
+        {name: "DotNaive", value: 941900},
+        {name: "DotUnroll4", value: 1286000},
     ]}
 />
 
@@ -106,10 +104,6 @@ func DotUnroll4(a, b []float32) float32 {
 
 In a hot loop like this, even with modern branch prediction, the additional branches per iteration can add up to a pretty significant performance penalty. This is especially true in our case because the inserted jumps limit how much we can take advantage of pipelining.
 
-To assess the impact of bounds checking, a trick I recently learned is to use the `-gcflags="-B"` option. It builds the binary without the bounds checks, allowing you to compare benchmarks with and without bounds checking. The comparison indicates that bounds checking reduces throughput by roughly TODO%.
-
-That's small enough that it probably wouldn't even be worth poking at. However, running this locally on an M1 Macbook yields a difference of over 30%, so I'm still going to go through the exercise of removing these checks.
-
 If we can convince the compiler that these reads can never be out of bounds, it won't insert these runtime checks. This technique is known as "bounds-checking elimination", and the same pattern can be applied to many different memory-safe compiled languages.
 
 In theory, we should be able to do all checks once, outside the loop, and the compiler would be able to determine that all the slice indexing is safe. However, I couldn't find the right combination of checks to convince the compiler that what I'm doing is safe. I landed on a combination of asserting the lengths are equal and moving all the bounds checking to the top of the loop. This was enough to hit nearly the speed of the bounds-check-free version.
@@ -118,6 +112,10 @@ In theory, we should be able to do all checks once, outside the loop, and the co
 func DotBCE(a, b []float32) float32 {
 	if len(a) != len(b) {
 		panic("slices must have equal lengths")
+	}
+
+    if len(a)%4 != 0 {
+		panic("slice length must be multiple of 4")
 	}
 
 	sum := float32(0)
@@ -134,23 +132,19 @@ func DotBCE(a, b []float32) float32 {
 }
 ```
 
-Interestingly, the benchmark for this updated implementation shows a performance impact even greater than just using the `-B` flag! This one yields an 11% improvement compared to the 2.5% from `-B`. I actually don't have a good explanation for this. I'd love to hear if someone has an idea of why the difference is larger.
+The minimizing of bounds checking nets a 9% improvement. Consistently non-zero, but nothing to write home about. 
 
 <Chart
     rows={[
-        {name: "DotNaive", value: 941489},
-        {name: "DotUnroll4", value: 1293605},
-        {name: "DotBCE", value: 1372632},
+        {name: "DotNaive", value: 941900},
+        {name: "DotUnroll4", value: 1286000},
+        {name: "DotBCE", value: 1407000},
     ]}
 />
 
 This technique translates well to many memory-safe compiled languages like [Rust](https://nnethercote.github.io/perf-book/bounds-checks.html).
 
-<aside>
-
 Exercise for the reader: why is it significant that we slice like `a[i:i+4:i+4]` rather than just `a[i:i+4]`?
-
-</aside>
 
 ## Quantization
 
@@ -192,10 +186,10 @@ Re-running the benchmarks shows we suffer a perf hit from this change. Taking a 
 
 <Chart
     rows={[
-        {name: "DotNaive", value: 941489},
-        {name: "DotUnroll4", value: 1293605},
-        {name: "DotBCE", value: 1372632},
-        {name: "DotInt8BCE", value: 1239881},
+        {name: "DotNaive", value: 941900},
+        {name: "DotUnroll4", value: 1286000},
+        {name: "DotBCE", value: 1407000},
+        {name: "DotInt8BCE", value: 1240000},
     ]}
 />
 
@@ -208,13 +202,13 @@ For those unfamiliar, SIMD stands for "Single Instruction Multiple Data". Just l
 
 We have a problem though. Go does not expose SIMD intrinsics like [C](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html) or [Rust](https://doc.rust-lang.org/beta/core/simd/index.html). We have two options here: write it in C and use Cgo, or write it by hand for Go's assembler. I try hard to avoid Cgo whenever possible for [many reasons that are not at all original](https://dave.cheney.net/2016/01/18/cgo-is-not-go), but one of those reasons is that Cgo imposes a performance penalty, and performance of this snippet is paramount. Also, getting my hands dirty with some assembly sounds fun, so that's what I'm going to do.
 
-I want this routine to be reasonably portable, so I'm going to restrict myself to only AVX2 instructions, which are supported on most `x86_64` server CPUs these days. We can use [runtime feature detection](TODO) to fall back to a slower option in pure Go.
+I want this routine to be reasonably portable, so I'm going to restrict myself to only AVX2 instructions, which are supported on most `x86_64` server CPUs these days. We can use [runtime feature detection](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@3ac2170c6523dd074835919a1804f197cf86e451/-/blob/internal/embeddings/dot_amd64.go?L17-21) to fall back to a slower option in pure Go.
 
 <details>
 
 <summary>Full code for <code>DotAVX2</code></summary>
 
-```
+<pre>
 #include "textflag.h"
 
 TEXT ·DotAVX2(SB), NOSPLIT, $0-52
@@ -269,7 +263,7 @@ end:
 	MOVL R8, ret+48(FP)
 	VZEROALL
 	RET
-```
+</pre>
 
 </details>
 
@@ -287,11 +281,11 @@ Let's see what this earned us.
 
 <Chart
     rows={[
-        {name: "DotNaive", value: 941489},
-        {name: "DotUnroll4", value: 1293605},
-        {name: "DotBCE", value: 1372632},
-        {name: "DotInt8BCE", value: 1239881},
-        {name: "DotAVX2", value: 7076545},
+        {name: "DotNaive", value: 941900},
+        {name: "DotUnroll4", value: 1286000},
+        {name: "DotBCE", value: 1407000},
+        {name: "DotInt8BCE", value: 1240000},
+        {name: "DotAVX2", value: 7000000},
     ]}
 />
 
@@ -308,13 +302,9 @@ Previously, we limited ourselves to AVX2, but what if we _didn't_? The VNNI exte
 The only problem is that the instruction requires one vector to be signed bytes, and the other to be _unsigned_ bytes. Both of our vectors are signed. We can employ [a trick from Intel's developer guide](https://www.intel.com/content/www/us/en/docs/onednn/developer-guide-reference/2023-0/nuances-of-int8-computations.html#DOXID-DEV-GUIDE-INT8-COMPUTATIONS-1DG-I8-COMP-S12) to help us out. Basically, add 128 to one of our vectors to ensure it's in range of an unsigned integer, then keep track of how much overshoot we need to correct for at the end.
 
 <details>
-<summary>
+<summary>Full code for <code>DotVNNI</code></summary>
 
-Full code for <code>DotVNNI</code>
-
-</summary>
-
-```
+<pre>
 #include "textflag.h"
 
 // DotVNNI calculates the dot product of two slices using AVX512 VNNI
@@ -390,7 +380,7 @@ end:
 	MOVL R8, ret+48(FP)
 	VZEROALL
 	RET
-```
+</pre>
 
 </details>
 
@@ -398,20 +388,24 @@ This implementation yielded another 21% improvement. Not bad!
 
 <Chart
     rows={[
-        {name: "DotNaive", value: 941489},
-        {name: "DotUnroll4", value: 1293605},
-        {name: "DotBCE", value: 1372632},
-        {name: "DotInt8BCE", value: 1239881},
-        {name: "DotAVX2", value: 7076545},
-        {name: "DotVNNI", value: 8699165},
+        {name: "DotNaive", value: 941900},
+        {name: "DotUnroll4", value: 1286000},
+        {name: "DotBCE", value: 1407000},
+        {name: "DotInt8BCE", value: 1240000},
+        {name: "DotAVX2", value: 7000000},
+        {name: "DotVNNI", value: 8765000},
     ]}
 />
+
+# What's next?
+
+The real life answer here is probably "use an index". There is a ton of good work out there focused on making nearest neighbor search fast, and there are plenty of batteries-included vector DBs that make it pretty easy to deploy. We're working towards migrating away from our hand-rolled solution so we can scale more cheaply.
+
+_However_, if you want some fun food for thought, a colleague of built a proof-of-concept [dot product on the GPU](https://github.com/sourcegraph/sourcegraph/compare/main...nsc/embeddings-fun#diff-eed4a741ebe632c484dce236a3f4b1eee16e9a2bec6749003b3dbc41449c497c).
 
 ## Bonus material
 
 - If you haven't used [benchstat](https://pkg.go.dev/golang.org/x/perf/cmd/benchstat), you should. It's great. Super simple statistical comparison of benchmark results.
 - Don't miss the [compiler explorer](https://go.godbolt.org/z/qT3M7nPGf), which is an extremely useful tool for digging into compiler codegen.
-- I got [nerd sniped](https://twitter.com/sluongng/status/1654066471230636033) into implementing [a version with ARM NEON](TODO), which made for an interesting comparison.
-- If you haven't come across it, the [Agner Fog Instruction Tables](https://www.agner.org/optimize/) make for some great reference material for low-level optimizations.
-- Probably the best solution to searching large numbers of vectors is to build an index. There are many vector databases (TODO: add links) that can do this, but they all come with new memory/storage/deployment tradeoffs. TODO: maybe add something about qdrant?
-- TODO: GPU acceleration
+- There's also that time I got [nerd sniped](https://twitter.com/sluongng/status/1654066471230636033) into implementing [a version with ARM NEON](https://github.com/camdencheek/simd_blog/blob/main/dot_arm64.s), which made for some interesting comparisons.
+- If you haven't come across it, the [Agner Fog Instruction Tables](https://www.agner.org/optimize/) make for some great reference material for low-level optimizations. For this work, I used them to help grok differences instruction latencies and why some pipeline better than others.
