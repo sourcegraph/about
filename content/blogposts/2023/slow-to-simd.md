@@ -208,7 +208,7 @@ I want this routine to be reasonably portable, so I'm going to restrict myself t
 
 <summary>Full code for <code>DotAVX2</code></summary>
 
-<pre>
+```
 #include "textflag.h"
 
 TEXT ·DotAVX2(SB), NOSPLIT, $0-52
@@ -263,7 +263,7 @@ end:
 	MOVL R8, ret+48(FP)
 	VZEROALL
 	RET
-</pre>
+```
 
 </details>
 
@@ -302,7 +302,7 @@ The only problem is that the instruction requires one vector to be signed bytes,
 <details>
 <summary>Full code for <code>DotVNNI</code></summary>
 
-<pre>
+```
 #include "textflag.h"
 
 // DotVNNI calculates the dot product of two slices using AVX512 VNNI
@@ -378,7 +378,7 @@ end:
 	MOVL R8, ret+48(FP)
 	VZEROALL
 	RET
-</pre>
+```
 
 </details>
 
