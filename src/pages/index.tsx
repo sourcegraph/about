@@ -85,6 +85,7 @@ const Home: FunctionComponent<HomeProps> = ({ tweets }) => {
                 title: 'Sourcegraph | Code AI platform',
                 description:
                     'Sourcegraph’s code AI platform makes it easy for devs to write, fix, and maintain code with Cody, the AI coding assistant, and Code Search.',
+                image: 'https://sourcegraph.com/cody/cody-og.png'
             }}
             heroAndHeaderClassName="text-white"
             headerColorTheme="purple"
