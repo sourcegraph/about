@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { Badge, ContentSection, Layout } from '../../../components'
+import { ContentSection, Layout } from '../../../components'
 import { useAuthModal } from '../../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../../data/tracking'
 
