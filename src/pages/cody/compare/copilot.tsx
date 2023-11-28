@@ -36,18 +36,6 @@ const ContactUsButton: FunctionComponent<{ className?: string }> = ({ className 
         Contact us
     </Link>
 )
-
-const PLAN_COLORS: Record<'freeTier' | 'enterprise', { borderColorClass: string; textColorClass: string }> = {
-    freeTier: {
-        borderColorClass: 'border-t-violet-300',
-        textColorClass: 'text-violet-400',
-    },
-    enterprise: {
-        borderColorClass: 'border-t-violet-400',
-        textColorClass: 'text-violet-400',
-    },
-}
-
 const PricingPage: FunctionComponent = () => (
     <Layout
         meta={{
@@ -65,6 +53,13 @@ const PricingPage: FunctionComponent = () => (
     >
         <ContentSection className="grid grid-cols-1 gap-lg md:grid-cols-12">
             <div className="col-span-full">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
                 <table>
                     <thead>
                         <tr>
