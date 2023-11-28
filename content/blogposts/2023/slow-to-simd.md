@@ -269,11 +269,9 @@ end:
 
 The core loop of the implementation depends on three main instructions:
 
-- `VPMOVSXBW`, which loads `int8`s into a vector `int16`s
-- `VPMADDWD`, which multiplies two `int16` vectors element-wise, then adds together adjacent pairs to produce a vector of `int32`s
-- `VPADDD`, which accumulates the resulting `int32` vector into our running sum
-
-TODO: add links to the reference docs for the instructions
+- [`VPMOVSXBW`](https://www.felixcloutier.com/x86/pmovsx), which loads `int8`s into a vector `int16`s
+- [`VPMADDWD`](https://www.felixcloutier.com/x86/pmaddwd), which multiplies two `int16` vectors element-wise, then adds together adjacent pairs to produce a vector of `int32`s
+- [`VPADDD`](https://www.felixcloutier.com/x86/paddb:paddw:paddd:paddq), which accumulates the resulting `int32` vector into our running sum
 
 `VPMADDWD` is a real heavy lifter here. By combining the multiply and add steps into one, not only does it save instructions, it also helps us avoid overflow issues by simultaneously widening the result to an `int32`.
 
@@ -291,7 +289,7 @@ Let's see what this earned us.
 
 Woah, that's a 530% increase in throughput from our previous best! SIMD for the win 🚀
 
-Now, it wasn't all sunshine and rainbows. Hand-writing assembly in Go is weird. It uses a [custom assembler](https://go.dev/doc/asm), which means that its assembly language looks just-different-enough-to-be-confusing compared to the assembly snippets you usually find online. It has some weird quirks like [changing the order of instruction arguments](TODO) or [using different names for instructions](TODO). Some instructions don't even _have_ names in the go assembler and can only be used via their [binary encoding](TODO). Shameless plug: I found sourcegraph.com invaluable for finding examples of Go assembly to draw from.
+Now, it wasn't all sunshine and rainbows. Hand-writing assembly in Go is weird. It uses a [custom assembler](https://go.dev/doc/asm), which means that its assembly language looks just-different-enough-to-be-confusing compared to the assembly snippets you usually find online. It has some weird quirks like [changing the order of instruction operands](https://www.quasilyte.dev/blog/post/go-asm-complementary-reference/#operands-order) or [using different names for instructions](https://www.quasilyte.dev/blog/post/go-asm-complementary-reference/#mnemonics). Some instructions don't even _have_ names in the go assembler and can only be used via their [binary encoding](https://go.dev/doc/asm#unsupported_opcodes). Shameless plug: I found sourcegraph.com invaluable for finding examples of Go assembly to draw from.
 
 That said, compared to Cgo, there are some nice benefits. Debugging still works well, the assembly can be stepped through, and registers can be inspected. There are no extra build steps (a C toolchain doesn't need to be set up). It's easy to set up a pure-Go fallback so cross-compilation still works. Common problems are caught by `go vet`.
 
