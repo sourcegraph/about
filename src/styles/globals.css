@@ -7,7 +7,6 @@
 @tailwind components;
 @tailwind utilities;
 @import url('./cody-animation.css');
-@import url('./slider-animation.css');
 
 /* Base Styles */
 @layer base {
