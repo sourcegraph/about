@@ -71,18 +71,18 @@ const PricingPage: FunctionComponent = () => (
                     <tbody>
                         <tr>
                             <td>Autocomplete</td>
-                            <td>✅</td>
-                            <td>✅</td>
+                            <td>✓</td>
+                            <td>✓</td>
                         </tr>
                         <tr>
                             <td>Chat</td>
-                            <td>✅</td>
-                            <td>✅</td>
+                            <td>✓</td>
+                            <td>✓</td>
                         </tr>
                         <tr>
                             <td>Inline Chat</td>
-                            <td>✅</td>
-                            <td>❌</td>
+                            <td>✓</td>
+                            <td>x</td>
                         </tr>
                         <tr>
                             <td>
@@ -90,88 +90,88 @@ const PricingPage: FunctionComponent = () => (
                                 <li>Generate unit tests</li>
                                 <li>Explain code</li>
                             </td>
-                            <td>✅</td>
-                            <td>❌</td>
+                            <td>✓</td>
+                            <td>x</td>
                         </tr>
                         <tr>
                             <td>Users can choose and change models</td>
                             <td>
-                                ✅<li>Anthropic Claude 2</li> <li>OpenAI GPT-3.5-Turbo</li> <li>OpenAI GPT-4</li>
+                                ✓<li>Anthropic Claude 2</li> <li>OpenAI GPT-3.5-Turbo</li> <li>OpenAI GPT-4</li>
                             </td>
-                            <td>✅ GPT-4</td>
+                            <td>✓ GPT-4</td>
                         </tr>
                         <tr>
                             <td>Autocomplete model</td>
                             <td>
-                                ✅<li>Anthropic Claude Instant</li>
+                                ✓<li>Anthropic Claude Instant</li>
                                 <li>OpenAI GPT-3.5 Turbo</li>
                                 <li>Anthropic Claude Instant</li> <li>OpenAI GPT-3.5 Turbo</li>
                             </td>
-                            <td>❌</td>
+                            <td>x</td>
                         </tr>
                         <tr>
                             <td>Bring your own LLM API key with Azure OpenAI & AWS Bedrock</td>
-                            <td>✅</td>
-                            <td>❌</td>
+                            <td>✓</td>
+                            <td>x</td>
                         </tr>
                         <tr>
                             <td>Code in the local file</td>
-                            <td>✅</td>
-                            <td>✅</td>
+                            <td>✓</td>
+                            <td>✓</td>
                         </tr>
                         <tr>
                             <td>Neighboring editor tabs</td>
-                            <td>✅</td>
-                            <td>✅</td>
+                            <td>✓</td>
+                            <td>✓</td>
                         </tr>
                         <tr>
                             <td>Entire codebase spanning all code hosts (via embeddings)</td>
-                            <td>✅</td>
-                            <td>❌</td>
+                            <td>✓</td>
+                            <td>x</td>
                         </tr>
                         <tr>
                             <td>Zero retention for data sharing</td>
-                            <td>✅</td>
-                            <td>❌ Available, but only on Business tier</td>
+                            <td>✓</td>
+                            <td>x Available, but only on Business tier</td>
                         </tr>
                         <tr>
                             <td>IP indemnity</td>
-                            <td>✅</td>
-                            <td>❌ No indemnity for pre-release software</td>
+                            <td>✓</td>
+                            <td>x No indemnity for pre-release software</td>
                         </tr>
 
                         <tr>
                             <td>Web app</td>
-                            <td>✅</td>
+                            <td>✓</td>
 
-                            <td>❌</td>
+                            <td>x</td>
                         </tr>
                         <tr>
                             <td>VS Code</td>
-                            <td>✅</td>
+                            <td>✓</td>
 
-                            <td>✅</td>
+                            <td>✓</td>
                         </tr>
                         <tr>
                             <td>JetBrains</td>
-                            <td>✅</td>
+                            <td>✓</td>
 
-                            <td>❌</td>
+                            <td>x</td>
                         </tr>
                         <tr>
                             <td>Neovim</td>
-                            <td>✅ Experimental</td>
-                            <td>✅</td>
+                            <td>✓ Experimental</td>
+                            <td>✓</td>
                         </tr>
                         <tr>
                             <td>Visual Studio</td>
-                            <td>❌</td>
+                            <td>x</td>
 
-                            <td>✅</td>
+                            <td>✓</td>
                         </tr>
                         <tr>
                             <td>Mobile App</td>
-                            <td>❌</td>
+                            <td>x</td>
 
                             <td>⚠️ Coming soon</td>
                         </tr>
