@@ -180,7 +180,7 @@ const CodyPage: FunctionComponent = () => {
             />
 
             <ContentSection parentClassName="!pb-0" className="flex flex-col gap-12 md:flex-row md:justify-between">
-                <div className="flex md:max-w-[501px] flex-col w-full">
+                <div className="flex w-full flex-col md:max-w-[501px]">
                     <Heading size="h2" className="mb-1 !text-4xl text-white">
                         Sourcegraph powered <span className="cody-heading bg-clip-text text-transparent">context</span>
                     </Heading>

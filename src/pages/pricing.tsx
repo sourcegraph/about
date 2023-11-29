@@ -23,7 +23,8 @@ const PricingPage: FunctionComponent = () => (
                     className="btn btn-secondary-outlined flex items-center justify-center gap-2 text-3xl"
                     href="/cody/pricing"
                 >
-                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[27px] w-[27px]" /> Cody <Badge size="small" text="BETA" color="violet" />
+                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[27px] w-[27px]" /> Cody{' '}
+                    <Badge size="small" text="BETA" color="violet" />
                 </Link>
                 <Link
                     className="btn btn-secondary-outlined flex items-center justify-center gap-2 text-3xl"

@@ -56,14 +56,20 @@ export const Hero: FunctionComponent<Omit<Hero, 'children' | 'illustration'>> = 
             {backButton && <BackButton href={backButton.link} text={backButton.text} />}
 
             <div className="flex flex-col-reverse">
-                <h1 className={classNames(titleClassName, 'whitespace-pre-line', { 'text-center mx-auto': centerContent })}>{title}</h1>
-                {product && <h6 className={classNames('mb-2', { 'text-center mx-auto': centerContent })}>{product}</h6>}
+                <h1
+                    className={classNames(titleClassName, 'whitespace-pre-line', {
+                        'mx-auto text-center': centerContent,
+                    })}
+                >
+                    {title}
+                </h1>
+                {product && <h6 className={classNames('mb-2', { 'mx-auto text-center': centerContent })}>{product}</h6>}
             </div>
 
             {description && <p className="mt-sm max-w-xl text-lg">{description}</p>}
 
             {subtitle && (
-                <h3 className={classNames('mt-sm max-w-4xl', { 'text-center mx-auto': centerContent })}>{subtitle}</h3>
+                <h3 className={classNames('mt-sm max-w-4xl', { 'mx-auto text-center': centerContent })}>{subtitle}</h3>
             )}
 
             {cta && (
