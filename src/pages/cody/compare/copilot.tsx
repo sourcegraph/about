@@ -63,11 +63,12 @@ const PricingPage: FunctionComponent = () => (
                 <table>
                     <thead>
                         <tr>
-                            <th>Feature</th>
-                            <th>Sourcegraph Cody</th>
-                            <th>GitHub Copilot Individual</th>
+                            <th className="font-semibold">Feature</th>
+                            <th className="font-semibold">Sourcegraph Cody</th>
+                            <th className="font-semibold">GitHub Copilot Individual</th>
                         </tr>
                     </thead>
+
                     <tbody>
                         <tr>
                             <td>Autocomplete</td>
