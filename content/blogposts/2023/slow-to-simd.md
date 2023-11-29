@@ -1,11 +1,15 @@
 ---
 title: "From Slow to SIMD: An Optimization Story"
+publishDate: 2023-11-29T10:00-07:00
 authors:
   - name: Camden Cheek
     url: https://github.com/camdencheek
 tags: [blog]
 slug: 'slow-to-simd'
-published: true
+published: true 
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-from-slow-to-simd-og.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-from-slow-to-simd-og.png
+
 ---
 
 So, there's this function. It's called a lot. More importantly, all those calls are on the critical path of a key user interaction.
