@@ -295,7 +295,7 @@ Woah, that's a 530% increase in throughput from our previous best! SIMD for the 
 
 Now, it wasn't all sunshine and rainbows. Hand-writing assembly in Go is weird. It uses a [custom assembler](https://go.dev/doc/asm), which means that its assembly language looks just-different-enough-to-be-confusing compared to the assembly snippets you usually find online. It has some weird quirks like [changing the order of instruction operands](https://www.quasilyte.dev/blog/post/go-asm-complementary-reference/#operands-order) or [using different names for instructions](https://www.quasilyte.dev/blog/post/go-asm-complementary-reference/#mnemonics). Some instructions don't even _have_ names in the go assembler and can only be used via their [binary encoding](https://go.dev/doc/asm#unsupported_opcodes). Shameless plug: I found sourcegraph.com invaluable for finding examples of Go assembly to draw from.
 
-That said, compared to Cgo, there are some nice benefits. Debugging still works well, the assembly can be stepped through, and registers can be inspected. There are no extra build steps (a C toolchain doesn't need to be set up). It's easy to set up a pure-Go fallback so cross-compilation still works. Common problems are caught by `go vet`.
+That said, compared to Cgo, there are some nice benefits. Debugging still works well, the assembly can be stepped through, and registers can be inspected using `delve`. There are no extra build steps (a C toolchain doesn't need to be set up). It's easy to set up a pure-Go fallback so cross-compilation still works. Common problems are caught by `go vet`.
 
 ## SIMD...but bigger
 
