@@ -157,7 +157,7 @@ const FeatureComponent: FunctionComponent<{item: any}> = (item:any) => {
                 {data.feature} 
 
                 {data.feature_details && data.feature_details.length > 0 && 
-                    <button className="ml-2 text-xs" onClick={()=>toggleFeatureDetails()}>ⓘ</button>
+                    <button type="button" className="ml-2 text-xs" onClick={()=>toggleFeatureDetails()}>ⓘ</button>
                 } 
 
                 {showFeatureDetails && 
@@ -177,7 +177,7 @@ const FeatureComponent: FunctionComponent<{item: any}> = (item:any) => {
             <td className="w-1/4 text-center relative">
                 {data.cody}
                 {data.cody_details && data.cody_details.length > 0 && 
-                    <button className="ml-2 text-xs absolute" onClick={()=>toggleCodyDetails()}>ⓘ</button>
+                    <button type="button" className="ml-2 text-xs absolute" onClick={()=>toggleCodyDetails()}>ⓘ</button>
                 }
                 {showCodyDetails && Array.isArray(data.cody_details) && data.cody_details.map((item:any, index:number) => (
                     <div key={index} className="text-xs">{item}</div>
@@ -192,7 +192,7 @@ const FeatureComponent: FunctionComponent<{item: any}> = (item:any) => {
             <td className="w-1/4 text-center relative">
                 {data.competitor}
                 {data.competitor_details && data.competitor_details.length > 0 && 
-                    <button className="ml-2 text-xs absolute" onClick={()=>toggleCompetitorDetails()}>ⓘ</button>
+                    <button type="button" className="ml-2 text-xs absolute" onClick={()=>toggleCompetitorDetails()}>ⓘ</button>
                 }
                 {showCompetitorDetails && 
                     <p className="text-xs">{data.competitor_details}</p>
@@ -236,17 +236,10 @@ const PricingPage: FunctionComponent = () => {
                         </tr>
                     </thead>
 
-                    {data && data.map((item) => {
-                        return (
-                            <FeatureComponent item={item} key={item.feature} />
-                        )
-                    })
-                    }
-
                     <tbody>
-                        {data && data.map((item) => {
+                        {data && data.map((item, index: number) => {
                             return (
-                                <FeatureComponent item={item}/>
+                                <FeatureComponent item={item} key={index}/>
                             )
                         })
                         }
