@@ -237,11 +237,9 @@ const PricingPage: FunctionComponent = () => (
                     </thead>
 
                     <tbody>
-                        {data?.map((item, index: number) => {
-                            return (
-                                <FeatureComponent item={item} key={index}/>
-                            )
-                        })
+                        {data?.map((item, index: number) => (
+                            <FeatureComponent item={item} key={index}/>
+                        ))
                         }
                     </tbody>
                 </table>
