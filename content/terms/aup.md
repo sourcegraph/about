@@ -3,8 +3,6 @@ layout: markdown
 title: Acceptable Use Policy
 ---
 
-### Cody Acceptable Use Policy
-
 Last updated:  November 30, 2023
 
 This Acceptable Use Policy applies to your use of our [Services](https://about.sourcegraph.com/terms). By using our Services, you agree to the terms of this Acceptable Use Policy. 
