@@ -9,107 +9,107 @@ import { buttonLocation, buttonStyle } from '../../../data/tracking'
 
 const data = [
     {
-      feature: "Autocomplete",
-      feature_details: "Automatically suggest completions for your code",
+      feature: 'Autocomplete',
+      feature_details: 'Automatically suggest completions for your code',
       view_feature_details: false,
-      cody: "✓",
-      cody_details: "",
+      cody: '✓',
+      cody_details: '',
       view_cody_details: false,
-      competitor: "✓",
-      competitor_details:"",
+      competitor: '✓',
+      competitor_details:'',
       view_competitor_details: false,
     },
     {
-      feature: "Chat",
-      cody: "✓",
-      competitor: "✓"
+      feature: 'Chat',
+      cody: '✓',
+      competitor: '✓'
     },
     {
-      feature: "Inline Chat",
-      cody: "✓",
-      competitor: "x"
+      feature: 'Inline Chat',
+      cody: '✓',
+      competitor: 'x'
     },
     {
-      feature: "Commands, e.g.: Generate unit tests, Explain code",
-      cody: "✓",
-      competitor: "x"
+      feature: 'Commands, e.g.: Generate unit tests, Explain code',
+      cody: '✓',
+      competitor: 'x'
     },
     {
-      feature: "Users can choose and change models",
-      cody: "✓",
-      cody_details: ["Anthropic Claude 2", "OpenAI GPT-3.5-Turbo", "OpenAI GPT-4"],
-      competitor: "✓",
-      competitor_details: ["GPT-4"]
+      feature: 'Users can choose and change models',
+      cody: '✓',
+      cody_details: ['Anthropic Claude 2', 'OpenAI GPT-3.5-Turbo', 'OpenAI GPT-4'],
+      competitor: '✓',
+      competitor_details: ['GPT-4']
     },
     {
-      feature: "Autocomplete model",
-      cody: "✓",
-      cody_details: ["Anthropic Claude Instant", "OpenAI GPT-3.5 Turbo", "OpenAI GPT-4"],
-      competitor: "x"
+      feature: 'Autocomplete model',
+      cody: '✓',
+      cody_details: ['Anthropic Claude Instant', 'OpenAI GPT-3.5 Turbo', 'OpenAI GPT-4'],
+      competitor: 'x'
     },
     {
-      feature: "Bring your own LLM API key with Azure OpenAI & AWS Bedrock",
-      cody: "✓",
-      competitor: "x"
+      feature: 'Bring your own LLM API key with Azure OpenAI & AWS Bedrock',
+      cody: '✓',
+      competitor: 'x'
     },
     {
-      feature: "Code in the local file",
-      cody: "✓",
-      competitor: "✓"
+      feature: 'Code in the local file',
+      cody: '✓',
+      competitor: '✓'
     },
     {
-      feature: "Neighboring editor tabs",
-      cody: "✓",
-      competitor: "✓"
+      feature: 'Neighboring editor tabs',
+      cody: '✓',
+      competitor: '✓'
     },
     {
-      feature: "Entire codebase spanning all code hosts (via embeddings)",
-      cody: "✓",
-      competitor: "x"
+      feature: 'Entire codebase spanning all code hosts (via embeddings)',
+      cody: '✓',
+      competitor: 'x'
     },
     {
-      feature: "Zero retention for data sharing",
-      cody: "✓",
-      competitor: "x",
-      competitor_details: "Available, but only on Business tier"
+      feature: 'Zero retention for data sharing',
+      cody: '✓',
+      competitor: 'x',
+      competitor_details: 'Available, but only on Business tier'
     },
     {
-      feature: "IP indemnity",
-      cody: "✓",
-      competitor: "x",
-      competitor_details: "No indemnity for pre-release software"
+      feature: 'IP indemnity',
+      cody: '✓',
+      competitor: 'x',
+      competitor_details: 'No indemnity for pre-release software'
     },
     {
-      feature: "Web app",
-      cody: "✓",
-      competitor: "x"
+      feature: 'Web app',
+      cody: '✓',
+      competitor: 'x'
     },
     {
-      feature: "VS Code",
-      cody: "✓",
-      competitor: "✓"
+      feature: 'VS Code',
+      cody: '✓',
+      competitor: '✓'
     },
     {
-      feature: "JetBrains",
-      cody: "✓",
-      competitor: "x"
+      feature: 'JetBrains',
+      cody: '✓',
+      competitor: 'x'
     },
     {
-      feature: "Neovim",
-      cody: "✓",
-      cody_details: "Experimental",
-      competitor: "✓"
+      feature: 'Neovim',
+      cody: '✓',
+      cody_details: 'Experimental',
+      competitor: '✓'
     },
     {
-      feature: "Visual Studio",
-      cody: "x",
-      competitor: "✓"
+      feature: 'Visual Studio',
+      cody: 'x',
+      competitor: '✓'
     },
     {
-      feature: "Mobile App",
-      cody: "x",
-      competitor: "x",
-      competitor_details: "Coming soon"
+      feature: 'Mobile App',
+      cody: 'x',
+      competitor: 'x',
+      competitor_details: 'Coming soon'
     }
 ];
 
@@ -187,9 +187,6 @@ const FeatureComponent: FunctionComponent<{item: any}> = (item:any) => {
                     <p>{data.cody_details}</p>
                     
                 }
-
-                
-            
             </td>
             
             <td className="w-1/4 text-center relative">
@@ -241,118 +238,18 @@ const PricingPage: FunctionComponent = () => {
 
                     {data && data.map((item) => {
                         return (
-                            <FeatureComponent item={item}/>
+                            <FeatureComponent item={item} key={item.feature} />
                         )
                     })
                     }
 
                     <tbody>
-                        <tr>
-                            <td>Autocomplete</td>
-                            <td>✓</td>
-                            <td>✓</td>
-                        </tr>
-                        <tr>
-                            <td>Chat</td>
-                            <td>✓</td>
-                            <td>✓</td>
-                        </tr>
-                        <tr>
-                            <td>Inline Chat</td>
-                            <td>✓</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Commands, e.g.,:
-                                <li>Generate unit tests</li>
-                                <li>Explain code</li>
-                            </td>
-                            <td>✓</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <td>Users can choose and change models</td>
-                            <td>
-                                ✓<li>Anthropic Claude 2</li> <li>OpenAI GPT-3.5-Turbo</li> <li>OpenAI GPT-4</li>
-                            </td>
-                            <td>✓ GPT-4</td>
-                        </tr>
-                        <tr>
-                            <td>Autocomplete model</td>
-                            <td>
-                                ✓<li>Anthropic Claude Instant</li>
-                                <li>OpenAI GPT-3.5 Turbo</li>
-                                <li>Anthropic Claude Instant</li> <li>OpenAI GPT-3.5 Turbo</li>
-                            </td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <td>Bring your own LLM API key with Azure OpenAI & AWS Bedrock</td>
-                            <td>✓</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <td>Code in the local file</td>
-                            <td>✓</td>
-                            <td>✓</td>
-                        </tr>
-                        <tr>
-                            <td>Neighboring editor tabs</td>
-                            <td>✓</td>
-                            <td>✓</td>
-                        </tr>
-                        <tr>
-                            <td>Entire codebase spanning all code hosts (via embeddings)</td>
-                            <td>✓</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <td>Zero retention for data sharing</td>
-                            <td>✓</td>
-                            <td>x Available, but only on Business tier</td>
-                        </tr>
-                        <tr>
-                            <td>IP indemnity</td>
-                            <td>✓</td>
-                            <td>x No indemnity for pre-release software</td>
-                        </tr>
-
-                        <tr>
-                            <td>Web app</td>
-                            <td>✓</td>
-
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <td>VS Code</td>
-                            <td>✓</td>
-
-                            <td>✓</td>
-                        </tr>
-                        <tr>
-                            <td>JetBrains</td>
-                            <td>✓</td>
-
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <td>Neovim</td>
-                            <td>✓ Experimental</td>
-                            <td>✓</td>
-                        </tr>
-                        <tr>
-                            <td>Visual Studio</td>
-                            <td>x</td>
-
-                            <td>✓</td>
-                        </tr>
-                        <tr>
-                            <td>Mobile App</td>
-                            <td>x</td>
-
-                            <td>⚠️ Coming soon</td>
-                        </tr>
+                        {data && data.map((item) => {
+                            return (
+                                <FeatureComponent item={item}/>
+                            )
+                        })
+                        }
                     </tbody>
                 </table>
                 Last updated: 2023-11-27
