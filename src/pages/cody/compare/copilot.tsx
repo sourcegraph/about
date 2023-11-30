@@ -148,9 +148,10 @@ const FeatureComponent: FunctionComponent<{item: any}> = (item:any) => {
     const [showFeatureDetails, setShowFeatureDetails] = useState(data.view_feature_details)
     const [showCodyDetails, setShowCodyDetails] = useState(data.view_feature_details)
     const [showCompetitorDetails, setShowCompetitorDetails] = useState(data.view_feature_details)
-    const toggleFeatureDetails = () => setShowFeatureDetails(!showFeatureDetails);
-    const toggleCodyDetails = () => setShowCodyDetails(!showCodyDetails);
-    const toggleCompetitorDetails = () => setShowCompetitorDetails(!showCompetitorDetails);
+    const toggleFeatureDetails = (): void => setShowFeatureDetails(!showFeatureDetails)
+    const toggleCodyDetails = (): void => setShowCodyDetails(!showCodyDetails)
+    const toggleCompetitorDetails = (): void => setShowCompetitorDetails(!showCompetitorDetails)
+
     return (
         <tr>
             <td className="w-1/2">
@@ -202,8 +203,7 @@ const FeatureComponent: FunctionComponent<{item: any}> = (item:any) => {
     )
 }
 
-const PricingPage: FunctionComponent = () => {
-    return (
+const PricingPage: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Sourcegraph Cody vs. GitHub Copilot',
@@ -237,7 +237,7 @@ const PricingPage: FunctionComponent = () => {
                     </thead>
 
                     <tbody>
-                        {data && data.map((item, index: number) => {
+                        {data?.map((item, index: number) => {
                             return (
                                 <FeatureComponent item={item} key={index}/>
                             )
@@ -249,6 +249,6 @@ const PricingPage: FunctionComponent = () => {
             </div>
         </ContentSection>
     </Layout>
-)}
+)
 
 export default PricingPage
