@@ -232,7 +232,7 @@ I like the speed and convenience of Cody, as well as the ability to use it direc
 I asked a question here that touches 11 different files, each of which would easily exceed the context window of ChatGPT (Never mind the copy-pasting hassle). It sifts through all the files and shows me how they are interconnected and what calls touch which parts. This to me, is the most important feature of Cody: the ability to answer questions that are deeply tangled in the complexity of the codebase. It helps me answer questions that I simply can’t find through a simple copy-paste because the real problem is that sometimes _I don’t even know where to look_ when I am dealing with very large codebases. And here's the best part: Cody is soon going to support GPT-4.5-Turbo(So all the Open AI fans still get to stay with their favourite models)
 
 
-#   **Conclusion**
+## Conclusion
 
 
    Cody has made me faster and improved my dev workflow so much that I don’t think I will be coding without it in the future. The daunting Everest climb of learning PHP began to feel more like a stroll in the park. Every obstacle I encountered was promptly addressed, either by directly consulting Cody or by utilizing the resources and code suggestions it provided.
