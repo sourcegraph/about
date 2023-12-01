@@ -252,4 +252,4 @@ I asked a question here that touches 11 different files, each of which would eas
 
 <hr style={{marginTop:"2rem",marginBottom:"2rem"}} />
 
-To get started with Cody, [install it from the VS Code Marketplace](https://about.sourcegraph.com/cody).
+To get started with Cody, check it out on [sourcegraph.com](https://about.sourcegraph.com/cody).
