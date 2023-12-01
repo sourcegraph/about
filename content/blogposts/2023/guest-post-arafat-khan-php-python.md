@@ -4,7 +4,7 @@ authors:
   - name: Arafat Khan
     url: https://twitter.com/arafatkatze
   
-publishDate: 2023-11-21T10:00-01:00
+publishDate: 2023-12-01T10:00-01:00
 description: "When tasked with creating a printing API in PHP despite having zero experience, Arafat Khan leveraged Cody to transform what felt like an Everest climb into a swift 3 day project that resulted in a fully functioning API."
 tags: [blog]
 slug: "building-a-printing-api-in-php-with-cody"
