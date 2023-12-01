@@ -35,7 +35,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
 
         {content && (
             <div className={classNames('min-h-[60vh]', styles.content, contentClassName)}>
-                <MDXRemote {...content} components={components as PostComponents} />
+                <MDXRemote {...content} components={components as PostComponents} lazy={true} />
             </div>
         )}
     </Tag>
