@@ -1,5 +1,5 @@
 ---
-title: "Climbing Mount Everest in Flip-flops: My PHP journey as a Python dev"
+title: "Climbing Mount Everest in Flip-flops: My journey into PHP as a Python dev"
 authors:
   - name: Arafat Khan
     url: https://twitter.com/arafatkatze
