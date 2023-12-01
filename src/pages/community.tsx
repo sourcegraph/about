@@ -56,11 +56,8 @@ export const Community: FunctionComponent = () => (
                         title: 'Events',
                         content: (
                             <div className="m-auto max-w-xl">
-                                <p>
-                                    Keynote speakers. Job opportunities and partnerships. You can find us in every major
-                                    industry event. Give us an air-hug if you see us.
-                                </p>
-                                <ul>
+                                <p>That's it for 2023. See you next year!</p>
+                                {/* <ul>
                                     <li>
                                         <a
                                             href="https://reinvent.awsevents.com/"
@@ -69,11 +66,11 @@ export const Community: FunctionComponent = () => (
                                             data-button-location={buttonLocation.body}
                                             data-button-type="cta"
                                         >
-                                            AWS: ReInvent · Las Vegas
+                                            That's it for 2023
                                         </a>{' '}
                                         - November 27-30, 2023
                                     </li>
-                                </ul>
+                                </ul> */}
                             </div>
                         ),
                     },
