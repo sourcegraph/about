@@ -15,7 +15,7 @@ declare module '*.webm' {
     export default src
 }
 
-declare module '@mapbox/rehype-prism' {
+declare module 'rehype-pretty-code' {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const src: Pluggable<any>
     export default src
