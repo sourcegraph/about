@@ -9,109 +9,109 @@ import { buttonLocation, buttonStyle } from '../../data/tracking'
 
 const data = [
     {
-      feature: 'Autocomplete',
-      feature_details: 'Automatically suggest completions for your code',
-      view_feature_details: false,
-      cody: '✓',
-      cody_details: '',
-      view_cody_details: false,
-      competitor: '✓',
-      competitor_details:'',
-      view_competitor_details: false,
+        feature: 'Autocomplete',
+        feature_details: 'Automatically suggest completions for your code',
+        view_feature_details: false,
+        cody: '✓',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: '✓',
+        competitor_details: '',
+        view_competitor_details: false,
     },
     {
-      feature: 'Chat',
-      cody: '✓',
-      competitor: '✓'
+        feature: 'Chat',
+        cody: '✓',
+        competitor: '✓',
     },
     {
-      feature: 'Inline Chat',
-      cody: '✓',
-      competitor: 'x'
+        feature: 'Inline Chat',
+        cody: '✓',
+        competitor: 'x',
     },
     {
-      feature: 'Commands, e.g.: Generate unit tests, Explain code',
-      cody: '✓',
-      competitor: 'x'
+        feature: 'Commands, e.g.: Generate unit tests, Explain code',
+        cody: '✓',
+        competitor: 'x',
     },
     {
-      feature: 'Users can choose and change models',
-      cody: '✓',
-      cody_details: ['Anthropic Claude 2', 'OpenAI GPT-3.5-Turbo', 'OpenAI GPT-4'],
-      competitor: '✓',
-      competitor_details: ['GPT-4']
+        feature: 'Users can choose and change models',
+        cody: '✓',
+        cody_details: ['Anthropic Claude 2', 'OpenAI GPT-3.5-Turbo', 'OpenAI GPT-4'],
+        competitor: '✓',
+        competitor_details: ['GPT-4'],
     },
     {
-      feature: 'Autocomplete model',
-      cody: '✓',
-      cody_details: ['Anthropic Claude Instant', 'OpenAI GPT-3.5 Turbo', 'OpenAI GPT-4'],
-      competitor: 'x'
+        feature: 'Autocomplete model',
+        cody: '✓',
+        cody_details: ['Anthropic Claude Instant', 'OpenAI GPT-3.5 Turbo', 'OpenAI GPT-4'],
+        competitor: 'x',
     },
     {
-      feature: 'Bring your own LLM API key with Azure OpenAI & AWS Bedrock',
-      cody: '✓',
-      competitor: 'x'
+        feature: 'Bring your own LLM API key with Azure OpenAI & AWS Bedrock',
+        cody: '✓',
+        competitor: 'x',
     },
     {
-      feature: 'Code in the local file',
-      cody: '✓',
-      competitor: '✓'
+        feature: 'Code in the local file',
+        cody: '✓',
+        competitor: '✓',
     },
     {
-      feature: 'Neighboring editor tabs',
-      cody: '✓',
-      competitor: '✓'
+        feature: 'Neighboring editor tabs',
+        cody: '✓',
+        competitor: '✓',
     },
     {
-      feature: 'Entire codebase spanning all code hosts (via embeddings)',
-      cody: '✓',
-      competitor: 'x'
+        feature: 'Entire codebase spanning all code hosts (via embeddings)',
+        cody: '✓',
+        competitor: 'x',
     },
     {
-      feature: 'Zero retention for data sharing',
-      cody: '✓',
-      competitor: 'x',
-      competitor_details: 'Available, but only on Business tier'
+        feature: 'Zero retention for data sharing',
+        cody: '✓',
+        competitor: 'x',
+        competitor_details: 'Available, but only on Business tier',
     },
     {
-      feature: 'IP indemnity',
-      cody: '✓',
-      competitor: 'x',
-      competitor_details: 'No indemnity for pre-release software'
+        feature: 'IP indemnity',
+        cody: '✓',
+        competitor: 'x',
+        competitor_details: 'No indemnity for pre-release software',
     },
     {
-      feature: 'Web app',
-      cody: '✓',
-      competitor: 'x'
+        feature: 'Web app',
+        cody: '✓',
+        competitor: 'x',
     },
     {
-      feature: 'VS Code',
-      cody: '✓',
-      competitor: '✓'
+        feature: 'VS Code',
+        cody: '✓',
+        competitor: '✓',
     },
     {
-      feature: 'JetBrains',
-      cody: '✓',
-      competitor: 'x'
+        feature: 'JetBrains',
+        cody: '✓',
+        competitor: 'x',
     },
     {
-      feature: 'Neovim',
-      cody: '✓',
-      cody_details: 'Experimental',
-      competitor: '✓'
+        feature: 'Neovim',
+        cody: '✓',
+        cody_details: ['Experimental'],
+        competitor: '✓',
     },
     {
-      feature: 'Visual Studio',
-      cody: 'x',
-      competitor: '✓'
+        feature: 'Visual Studio',
+        cody: 'x',
+        competitor: '✓',
     },
     {
-      feature: 'Mobile App',
-      cody: 'x',
-      competitor: 'x',
-      competitor_details: 'Coming soon'
-    }
-];
+        feature: 'Mobile App',
+        cody: 'x',
+        competitor: 'x',
+        competitor_details: 'Coming soon',
+    },
+]
 
 const GetStartedButton: FunctionComponent<{ className?: string }> = ({ className }) => {
     const { openModal } = useAuthModal()
@@ -143,8 +143,8 @@ const ContactUsButton: FunctionComponent<{ className?: string }> = ({ className 
     </Link>
 )
 
-const FeatureComponent: FunctionComponent<{item: any}> = (item:any) => {
-    const data = item.item;
+const FeatureComponent: FunctionComponent<{ item: any }> = (item: any) => {
+    const data = item.item
     const [showFeatureDetails, setShowFeatureDetails] = useState(data.view_feature_details)
     const [showCodyDetails, setShowCodyDetails] = useState(data.view_feature_details)
     const [showCompetitorDetails, setShowCompetitorDetails] = useState(data.view_feature_details)
@@ -155,49 +155,54 @@ const FeatureComponent: FunctionComponent<{item: any}> = (item:any) => {
     return (
         <tr>
             <td className="w-1/2">
-                {data.feature} 
+                {data.feature}
 
-                {data.feature_details && data.feature_details.length > 0 && 
-                    <button type="button" className="ml-2 text-xs" onClick={()=>toggleFeatureDetails()}>ⓘ</button>
-                } 
+                {data.feature_details && data.feature_details.length > 0 && (
+                    <button type="button" className="ml-2 text-xs" onClick={() => toggleFeatureDetails()}>
+                        ⓘ
+                    </button>
+                )}
 
-                {showFeatureDetails && 
-                <>
-                <p className="text-xs">{data.feature_details}</p>
-                <Video 
-                    source={{
-                        mp4: 'blog/release-october-2023/levels-of-code-ai/explain-cody'
-                    }}
-                    loop={true}
-                    title="Cody explains code"
-                    />
-                </>
-                }
+                {showFeatureDetails && (
+                    <>
+                        <p className="text-xs">{data.feature_details}</p>
+                        <Video
+                            source={{
+                                mp4: 'blog/release-october-2023/levels-of-code-ai/explain-cody',
+                            }}
+                            loop={true}
+                            title="Cody explains code"
+                        />
+                    </>
+                )}
             </td>
 
-            <td className="w-1/4 text-center relative">
+            <td className="relative w-1/4 text-center">
                 {data.cody}
-                {data.cody_details && data.cody_details.length > 0 && 
-                    <button type="button" className="ml-2 text-xs absolute" onClick={()=>toggleCodyDetails()}>ⓘ</button>
-                }
-                {showCodyDetails && Array.isArray(data.cody_details) && data.cody_details.map((item:any, index:number) => (
-                    <div key={index} className="text-xs">{item}</div>
-                ))}
+                {data.cody_details && data.cody_details.length > 0 && (
+                    <button type="button" className="absolute ml-2 text-xs" onClick={() => toggleCodyDetails()}>
+                        ⓘ
+                    </button>
+                )}
+                {showCodyDetails &&
+                    Array.isArray(data.cody_details) &&
+                    data.cody_details.map((item: any, index: number) => (
+                        <div key={index} className="text-xs">
+                            {item}
+                        </div>
+                    ))}
 
-                {showCodyDetails && !Array.isArray(data.cody_details) &&
-                    <p>{data.cody_details}</p>
-                    
-                }
+                {showCodyDetails && !Array.isArray(data.cody_details) && <p>{data.cody_details}</p>}
             </td>
-            
-            <td className="w-1/4 text-center relative">
+
+            <td className="relative w-1/4 text-center">
                 {data.competitor}
-                {data.competitor_details && data.competitor_details.length > 0 && 
-                    <button type="button" className="ml-2 text-xs absolute" onClick={()=>toggleCompetitorDetails()}>ⓘ</button>
-                }
-                {showCompetitorDetails && 
-                    <p className="text-xs">{data.competitor_details}</p>
-                }
+                {data.competitor_details && data.competitor_details.length > 0 && (
+                    <button type="button" className="absolute ml-2 text-xs" onClick={() => toggleCompetitorDetails()}>
+                        ⓘ
+                    </button>
+                )}
+                {showCompetitorDetails && <p className="text-xs">{data.competitor_details}</p>}
             </td>
         </tr>
     )
@@ -230,17 +235,16 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="font-semibold border-0 w-1/2">Feature</th>
-                            <th className="font-semibold border-0 w-1/4">Sourcegraph Cody</th>
-                            <th className="font-semibold border-0 w-1/4">GitHub Copilot Individual</th>
+                            <th className="w-1/2 border-0 font-semibold">Feature</th>
+                            <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
+                            <th className="w-1/4 border-0 font-semibold">GitHub Copilot Individual</th>
                         </tr>
                     </thead>
 
                     <tbody>
                         {data?.map((item, index: number) => (
-                            <FeatureComponent item={item} key={index}/>
-                        ))
-                        }
+                            <FeatureComponent item={item} key={index} />
+                        ))}
                     </tbody>
                 </table>
                 Last updated: 2023-11-27
