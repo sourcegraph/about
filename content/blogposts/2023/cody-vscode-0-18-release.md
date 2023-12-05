@@ -28,8 +28,8 @@ Chats now open alongside your code, in a larger window, without needing the Cody
 
 <Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-new-chat-interface-001.gif"
-  alt="Cody for VS Code v0.18.0 Release"
-  caption="Optional image caption"
+  alt="New Chat Interface"
+  caption="New Chat Interface"
 />
 
 
@@ -41,71 +41,57 @@ Cody’s chat view has a completely reworked context dropdown that shows not jus
 <Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-context-controls-002.gif"
   alt="Cody for VS Code v0.18.0 Release"
-  caption="Optional image caption"
+  caption="Context Controls"
 />
 
 
 You can now control whether Cody fetches additional context (e.g. Embeddings), using the new Enhanced Context button in the chat message text input. When enabled, Cody fetches embeddings and includes them with your message to get the best responses from the LLM. When disabled, only @-included files or symbols with be included as context.
 
 
+We’ve also updated `@-mentioning` a file or symbol (`@#-`) in chat so it now supports fuzzy filename searching, letting you quickly find the context you’d like Cody to  include:
+
 <Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-mention-003.png"
   alt="Cody for VS Code v0.18.0 Release"
-  caption="Optional image caption"
+  caption="@-included files"
 />
 
-
-We’ve also updated @-mentioning a file or symbol (@#-) in chat so it now supports fuzzy filename searching, letting you quickly find the context you’d like Cody to  include:
-
-
-<Figure 
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-discord-004.png"
-  alt="Cody for VS Code v0.18.0 Release"
-  caption="Optional image caption"
-/>
 
 
 
 ## Autocomplete Improvements
 
-
 <Figure 
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-autocomplete-multiline-005.jpg"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-discord-004.png"
   alt="Cody for VS Code v0.18.0 Release"
   caption="We listened to your community feedback and worked on adding multi-line autocompletes."
 />
 
-
-__
-
 Autocomplete is now better at detecting when you need to generate a block of code, giving you a single multi-line suggestion instead of needing to generate it line-by-line:
 
-
 <Figure 
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-autocomplete-multiline-006.jpg"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-autocomplete-multiline-005.jpg"
   alt="Cody for VS Code v0.18.0 Release"
-  caption="Optional image caption"
 />
 
 
 We also extended these multi-line completions to code within brackets, so Cody now generates fully expanded parameters for you in a single suggestion:
 
-
 <Figure 
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-trigger-007.png"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-autocomplete-multiline-006.jpg"
   alt="Cody for VS Code v0.18.0 Release"
-  caption="Optional image caption"
 />
+
+
+
 
 
 If you want to request an autocompletion suggestion manually, we’ve updated the command so it now appears properly labeled in the VS Code command palette and keybindings:
 
-
 <Figure 
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-editing-008.jpg"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-trigger-007.png"
   alt="Cody for VS Code v0.18.0 Release"
 />
-
 
 
 ## Code Editing Improvements
