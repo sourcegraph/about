@@ -3,9 +3,9 @@ import { FunctionComponent, useState } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { ContentSection, Layout, Video } from '../../../components'
-import { useAuthModal } from '../../../context/AuthModalContext'
-import { buttonLocation, buttonStyle } from '../../../data/tracking'
+import { ContentSection, Layout, Video } from '../../components'
+import { useAuthModal } from '../../context/AuthModalContext'
+import { buttonLocation, buttonStyle } from '../../data/tracking'
 
 const data = [
     {
@@ -203,7 +203,7 @@ const FeatureComponent: FunctionComponent<{item: any}> = (item:any) => {
     )
 }
 
-const PricingPage: FunctionComponent = () => (
+const CompareCopilotPage: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Sourcegraph Cody vs. GitHub Copilot',
@@ -249,4 +249,4 @@ const PricingPage: FunctionComponent = () => (
     </Layout>
 )
 
-export default PricingPage
+export default CompareCopilotPage
