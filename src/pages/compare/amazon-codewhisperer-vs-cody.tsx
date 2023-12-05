@@ -166,13 +166,6 @@ const FeatureComponent: FunctionComponent<{ item: any }> = (item: any) => {
                 {showFeatureDetails && (
                     <>
                         <p className="text-xs">{data.feature_details}</p>
-                        <Video
-                            source={{
-                                mp4: 'blog/release-october-2023/levels-of-code-ai/explain-cody',
-                            }}
-                            loop={true}
-                            title="Cody explains code"
-                        />
                     </>
                 )}
             </td>
