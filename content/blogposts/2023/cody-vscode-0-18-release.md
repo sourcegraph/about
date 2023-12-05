@@ -48,7 +48,7 @@ We’ve also updated `@-mentioning` a file or symbol (`@#-`) in chat so it now s
 <Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-mention-003.png"
   alt="Cody for VS Code v0.18.0 Release"
-  caption="@-included files"
+  caption="@-included files now supports fuzzy filename search"
 />
 
 ## Autocomplete Improvements
