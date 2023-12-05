@@ -52,7 +52,7 @@ const ComparePage: FunctionComponent = () => (
             </div>
         }
     >
-        <ContentSection className="grid grid-cols-12 gap-lg md:grid-cols-3 ">
+        <ContentSection className="grid grid-cols-1 gap-lg md:grid-cols-3 ">
             <div className="col-span pt-10 pb-10">
                 <h2 className="text-3xl mb-10">Cody vs GitHub Copilot</h2>
                 <p className="mb-10">
@@ -60,7 +60,7 @@ const ComparePage: FunctionComponent = () => (
                     et dolore magna aliqua. Ut enim ad minim veniam, quis 
                 </p>
                 <p>
-                <a className="btn btn-primary text-lg" href="/cody/pricing">See full comparison</a>
+                <a className="btn btn-primary text-lg" href="/compare/copilot-vs-cody">See full comparison</a>
                 </p>
             </div>
             <div className="col-span text-center border pt-10 pb-10 border-gray-200 rounded border-t-16 border-gray-200 p-xs shadow-lg sm:p-md border-t-violet-400">
@@ -87,14 +87,14 @@ const ComparePage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection className="grid grid-cols-12 gap-lg md:grid-cols-3 ">
+        <ContentSection className="grid grid-cols-1 gap-lg md:grid-cols-3 ">
             <div className="col-span pt-10 pb-10">
                 <h2 className="text-3xl mb-10">Cody vs CodeWhisperer</h2>
                 <p>
                     Amazon CodeWhisperer is an AI-powered productivity tool for the IDE and command line.
                 </p>
                 <p>
-                <a className="btn btn-primary text-lg" href="/cody/pricing">See full comparison</a>
+                <a className="btn btn-primary text-lg" href="/compare/amazon-codewhisperer-vs-cody">See full comparison</a>
                 </p>
             </div>
             <div className="col-span text-center border pt-10 pb-10 border-gray-200 rounded border-t-16 border-gray-200 p-xs shadow-lg sm:p-md border-t-violet-400">
@@ -121,7 +121,7 @@ const ComparePage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection className="grid grid-cols-12 gap-lg md:grid-cols-3 ">
+        <ContentSection className="grid grid-cols-1 gap-lg md:grid-cols-3 ">
             <div className="col-span pt-10 pb-10">
                 <h2 className="text-3xl mb-10">Cody vs Cursor</h2>
                 <p>
@@ -129,7 +129,7 @@ const ComparePage: FunctionComponent = () => (
                     et dolore magna aliqua. Ut enim ad minim veniam, quis 
                 </p>
                 <p>
-                <a className="btn btn-primary text-lg" href="/cody/pricing">See full comparison</a>
+                <a className="btn btn-primary text-lg" href="/compare/cursor-vs-cody">See full comparison</a>
                 </p>
             </div>
             <div className="col-span text-center border pt-10 pb-10 border-gray-200 rounded border-t-16 border-gray-200 p-xs shadow-lg sm:p-md border-t-violet-400">
@@ -156,7 +156,7 @@ const ComparePage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection className="grid grid-cols-12 gap-lg md:grid-cols-3 ">
+        <ContentSection className="grid grid-cols-1 gap-lg md:grid-cols-3 ">
             <div className="col-span pt-10 pb-10">
                 <h2 className="text-3xl mb-10">Cody vs TabNine</h2>
                 <p>
@@ -164,7 +164,7 @@ const ComparePage: FunctionComponent = () => (
                     et dolore magna aliqua. Ut enim ad minim veniam, quis 
                 </p>
                 <p>
-                <a className="btn btn-primary text-lg" href="/cody/pricing">See full comparison</a>
+                <a className="btn btn-primary text-lg" href="/compare/tabnine-vs-cody">See full comparison</a>
                 </p>
             </div>
             <div className="col-span text-center border pt-10 pb-10 border-gray-200 rounded border-t-16 border-gray-200 p-xs shadow-lg sm:p-md border-t-violet-400">

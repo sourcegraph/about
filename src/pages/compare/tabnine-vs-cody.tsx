@@ -217,9 +217,9 @@ const CompareCopilotPage: FunctionComponent = () => (
         hero={
             <div className="container mx-auto pt-5xl text-center">
                 <h1 className="flex items-center justify-center gap-3">
-                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[48px] w-[48px]" /> {' '} vs <img src="/assets/compare/github-copilot.svg" alt="GitHub Copilot Logo" className="h-[48px] w-[48px]" />
+                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[48px] w-[48px]" /> {' '} vs <img src="/assets/compare/tabnine.svg" alt="TabNine Logo" className="h-[48px] w-[48px]" />
                 </h1>
-                <p className="mt-6 text-3xl text-black">Sourcegraph Cody vs. GitHub Copilot</p>
+                <p className="mt-6 text-3xl text-black">Sourcegraph Cody vs. TabNine</p>
             </div>
         }
     >
