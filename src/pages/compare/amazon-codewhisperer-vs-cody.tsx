@@ -3,7 +3,7 @@ import { FunctionComponent, useState } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { ContentSection, Layout, Video } from '../../components'
+import { ContentSection, Layout } from '../../components'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 
