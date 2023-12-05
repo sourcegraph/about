@@ -38,7 +38,7 @@ Cody’s chat view has a completely reworked context dropdown that shows not jus
 <Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-context-controls-002.gif"
   alt="Cody for VS Code v0.18.0 Release"
-  caption="Context Controls"
+  caption="Enhanced Context Control"
 />
 
 You can now control whether Cody fetches additional context (e.g. Embeddings), using the new Enhanced Context button in the chat message text input. When enabled, Cody fetches embeddings and includes them with your message to get the best responses from the LLM. When disabled, only @-included files or symbols with be included as context.
