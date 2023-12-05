@@ -19,8 +19,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v0
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/cody-vscode-v0-18-og.png
 ---
 
-The Cody for VS Code v0.18.0 update introduces a new chat interface, allowing for side-by-side chat windows and improved context control, including a reworked context dropdown that shows file names and line ranges, and an Enhanced Context button for better LLM responses.
-
+The Cody for VS Code v0.18 update introduces a new chat interface, allowing for side-by-side chat windows and improved context control, including a reworked context dropdown that shows file names and line ranges, and an Enhanced Context button for better LLM responses.
 
 ## New Chat Interface
 
@@ -32,8 +31,6 @@ Chats now open alongside your code, in a larger window, without needing the Cody
   caption="New Chat Interface"
 />
 
-
-
 ## Context Controls
 
 Cody’s chat view has a completely reworked context dropdown that shows not just the file names but also the exact line ranges that Cody used to provide a chat response. This helps you understand exactly what additional context was included. You can also click any of the context items to open the file with line range selected.
@@ -44,9 +41,7 @@ Cody’s chat view has a completely reworked context dropdown that shows not jus
   caption="Context Controls"
 />
 
-
 You can now control whether Cody fetches additional context (e.g. Embeddings), using the new Enhanced Context button in the chat message text input. When enabled, Cody fetches embeddings and includes them with your message to get the best responses from the LLM. When disabled, only @-included files or symbols with be included as context.
-
 
 We’ve also updated `@-mentioning` a file or symbol (`@#-`) in chat so it now supports fuzzy filename searching, letting you quickly find the context you’d like Cody to  include:
 
@@ -55,9 +50,6 @@ We’ve also updated `@-mentioning` a file or symbol (`@#-`) in chat so it now s
   alt="Cody for VS Code v0.18.0 Release"
   caption="@-included files"
 />
-
-
-
 
 ## Autocomplete Improvements
 
@@ -82,10 +74,6 @@ We also extended these multi-line completions to code within brackets, so Cody n
   alt="Cody for VS Code v0.18.0 Release"
 />
 
-
-
-
-
 If you want to request an autocompletion suggestion manually, we’ve updated the command so it now appears properly labeled in the VS Code command palette and keybindings:
 
 <Figure 
@@ -93,17 +81,13 @@ If you want to request an autocompletion suggestion manually, we’ve updated th
   alt="Cody for VS Code v0.18.0 Release"
 />
 
-
 ## Code Editing Improvements
 
 We’ve made a huge range of improvements to Cody’s code editing command, including increased quality of generated code, auto-applying of edits, auto-formatting of code, streaming responses, a new “Retry” option to retry an edit with an updated prompt, and 3 new code actions:
 
-
-
 * Ask Cody to Edit
 * Ask Cody to Generate
 * Ask Cody to Document
-
 
 <Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/cody-vscode-v0-18-010.png"
@@ -111,29 +95,22 @@ We’ve made a huge range of improvements to Cody’s code editing command, incl
   caption="Ask Cody to Generate"
 />
 
-
 <Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-trigger-009.jpg"
   alt="Cody for VS Code v0.18.0 Release"
 />
 
-
-
 ## Inline Chat Removed
 
 We've removed inline chat as part of the new chat interface changes. Inline chat was built on top of VS Code’s File Commenting API, which proved too difficult to provide a reliable and intuitive chat experience and provide high-quality chat responses. We’ll continue to revisit inline chat experiences as the VS Code team releases non-private APIs available for others to use.
 
-
 ## Changelog
 
-
 See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v0.18.0) and [GitHub releases](https://github.com/sourcegraph/cody/releases) for a complete list of changes.
-
 
 ## Thank you
 
 Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
-
 
 <hr style={{marginTop:"2rem",marginBottom:"2rem"}} />
 
