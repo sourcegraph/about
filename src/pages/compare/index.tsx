@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from 'react'
+import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 import Link from 'next/link'
@@ -60,7 +60,7 @@ const ComparePage: FunctionComponent = () => (
                     et dolore magna aliqua. Ut enim ad minim veniam, quis 
                 </p>
                 <p>
-                <a className="btn btn-primary text-lg" href="/compare/copilot-vs-cody">See full comparison</a>
+                <Link className="btn btn-primary text-lg" href="/compare/copilot-vs-cody">See full comparison</Link>
                 </p>
             </div>
             <div className="col-span text-center border pt-10 pb-10 border-gray-200 rounded border-t-16 border-gray-200 p-xs shadow-lg sm:p-md border-t-violet-400">
@@ -94,7 +94,7 @@ const ComparePage: FunctionComponent = () => (
                     Amazon CodeWhisperer is an AI-powered productivity tool for the IDE and command line.
                 </p>
                 <p>
-                <a className="btn btn-primary text-lg" href="/compare/amazon-codewhisperer-vs-cody">See full comparison</a>
+                <Link className="btn btn-primary text-lg" href="/compare/amazon-codewhisperer-vs-cody">See full comparison</Link>
                 </p>
             </div>
             <div className="col-span text-center border pt-10 pb-10 border-gray-200 rounded border-t-16 border-gray-200 p-xs shadow-lg sm:p-md border-t-violet-400">
@@ -129,7 +129,7 @@ const ComparePage: FunctionComponent = () => (
                     et dolore magna aliqua. Ut enim ad minim veniam, quis 
                 </p>
                 <p>
-                <a className="btn btn-primary text-lg" href="/compare/cursor-vs-cody">See full comparison</a>
+                <Link className="btn btn-primary text-lg" href="/compare/cursor-vs-cody">See full comparison</Link>
                 </p>
             </div>
             <div className="col-span text-center border pt-10 pb-10 border-gray-200 rounded border-t-16 border-gray-200 p-xs shadow-lg sm:p-md border-t-violet-400">
@@ -164,7 +164,7 @@ const ComparePage: FunctionComponent = () => (
                     et dolore magna aliqua. Ut enim ad minim veniam, quis 
                 </p>
                 <p>
-                <a className="btn btn-primary text-lg" href="/compare/tabnine-vs-cody">See full comparison</a>
+                <Link className="btn btn-primary text-lg" href="/compare/tabnine-vs-cody">See full comparison</Link>
                 </p>
             </div>
             <div className="col-span text-center border pt-10 pb-10 border-gray-200 rounded border-t-16 border-gray-200 p-xs shadow-lg sm:p-md border-t-violet-400">
