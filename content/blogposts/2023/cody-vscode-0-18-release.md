@@ -90,14 +90,7 @@ We’ve made a huge range of improvements to Cody’s code editing command, incl
 * Ask Cody to Document
 
 <Figure 
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/cody-vscode-v0-18-010.png"
-  alt="Cody for VS Code v0.18.0 Release"
-  caption="Ask Cody to Generate"
-/>
-
-<Figure 
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-trigger-009.jpg"
-  alt="Cody for VS Code v0.18.0 Release"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-code-editing-improvement.gif"
 />
 
 ## Inline Chat Removed
