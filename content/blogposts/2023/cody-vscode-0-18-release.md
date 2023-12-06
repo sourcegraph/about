@@ -93,6 +93,15 @@ We’ve made a huge range of improvements to Cody’s code editing command, incl
   src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-code-editing-improvement.gif"
 />
 
+## New Search UI 
+
+We discovered that lots of users were using Cody chat to search for code snippets in their codebase but not getting the results they expected. We’ve added a new natural language search feature that uses a local index of your open project to surface code snippets that approximately match a description.
+
+<Figure 
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/blog-v018-new-search-ui.png"
+/>
+
+
 ## Inline Chat Removed
 
 We've removed inline chat as part of the new chat interface changes. Inline chat was built on top of VS Code’s File Commenting API, which proved too difficult to provide a reliable and intuitive chat experience and provide high-quality chat responses. We’ll continue to revisit inline chat experiences as the VS Code team releases non-private APIs available for others to use.
