@@ -322,7 +322,6 @@ const CompareCopilotPage: FunctionComponent = () => (
                     culpa qui officia deserunt mollit anim id est laborum.
                 </p>
 
-
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
