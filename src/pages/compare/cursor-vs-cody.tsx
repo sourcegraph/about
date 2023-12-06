@@ -326,7 +326,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                         <tr>
                             <th className="w-1/2 border-0 font-semibold text-left">Features</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
+                            <th className="w-1/4 border-0 font-semibold">Cursor</th>
                         </tr>
                     </thead>
 
@@ -342,7 +342,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                         <tr>
                             <th className="w-1/2 border-0 font-semibold text-left">IDE support</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
+                            <th className="w-1/4 border-0 font-semibold">Cursor</th>
                         </tr>
                     </thead>
 
@@ -358,7 +358,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                         <tr>
                             <th className="w-1/2 border-0 font-semibold text-left">LLM / Model</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
+                            <th className="w-1/4 border-0 font-semibold">Cursor</th>
                         </tr>
                     </thead>
 
@@ -374,7 +374,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                         <tr>
                             <th className="w-1/2 border-0 font-semibold text-left">Context and personalization</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
+                            <th className="w-1/4 border-0 font-semibold">Cursor</th>
                         </tr>
                     </thead>
 
@@ -390,7 +390,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                         <tr>
                             <th className="w-1/2 border-0 font-semibold text-left">Pricing</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
+                            <th className="w-1/4 border-0 font-semibold">Cursor</th>
                         </tr>
                     </thead>
 
