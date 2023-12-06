@@ -15,8 +15,8 @@ description: "The Cody for VS Code v0.18.0 update introduces a new chat interfac
 tags: [blog]
 slug: "cody-vscode-0-18-release"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/cody-vscode-v0-18-og.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-vscode-v018-release/cody-vscode-v0-18-og.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0.18.0-og-image.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0.18.0-og-image.png
 ---
 
 The Cody for VS Code v0.18.0 update introduces a new chat interface, allowing for side-by-side chat windows, a reworked context dropdown that shows file names and line ranges, and improved context control using the new Enhanced Context Selector.
