@@ -7,10 +7,21 @@ import { ContentSection, Layout } from '../../components'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 
-const data = [
+const featureSupport = [
     {
         feature: 'Autocomplete',
-        feature_details: 'Automatically suggest completions for your code',
+        feature_details: '',
+        view_feature_details: false,
+        cody: '✓',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: 'x',
+        competitor_details: '',
+        view_competitor_details: false,
+    },
+    {
+        feature: 'Chat',
+        feature_details: '',
         view_feature_details: false,
         cody: '✓',
         cody_details: '',
@@ -20,96 +31,181 @@ const data = [
         view_competitor_details: false,
     },
     {
-        feature: 'Chat',
+        feature: 'Commands',
+        feature_details: '',
+        view_feature_details: false,
         cody: '✓',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: 'x',
+        competitor_details: '',
+        view_competitor_details: false,
+    },
+    {
+        feature: 'Custom commands',
+        feature_details: '',
+        view_feature_details: false,
+        cody: '✓',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: 'x',
+        competitor_details: '',
+        view_competitor_details: false,
+    },
+]
+
+const ideSupport = [
+    {
+        feature: 'Visual Studio Code',
+        feature_details: '',
+        view_feature_details: false,
+        cody: '✓',
+        cody_details: '',
+        view_cody_details: false,
         competitor: '✓',
-    },
-    {
-        feature: 'Inline Chat',
-        cody: '✓',
-        competitor: 'x',
-    },
-    {
-        feature: 'Commands, e.g.: Generate unit tests, Explain code',
-        cody: '✓',
-        competitor: 'x',
-    },
-    {
-        feature: 'Users can choose and change models',
-        cody: '✓',
-        cody_details: ['Anthropic Claude 2', 'OpenAI GPT-3.5-Turbo', 'OpenAI GPT-4'],
-        competitor: '✓',
-        competitor_details: ['GPT-4'],
-    },
-    {
-        feature: 'Autocomplete model',
-        cody: '✓',
-        cody_details: ['Anthropic Claude Instant', 'OpenAI GPT-3.5 Turbo', 'OpenAI GPT-4'],
-        competitor: 'x',
-    },
-    {
-        feature: 'Bring your own LLM API key with Azure OpenAI & AWS Bedrock',
-        cody: '✓',
-        competitor: 'x',
-    },
-    {
-        feature: 'Code in the local file',
-        cody: '✓',
-        competitor: '✓',
-    },
-    {
-        feature: 'Neighboring editor tabs',
-        cody: '✓',
-        competitor: '✓',
-    },
-    {
-        feature: 'Entire codebase spanning all code hosts (via embeddings)',
-        cody: '✓',
-        competitor: 'x',
-    },
-    {
-        feature: 'Zero retention for data sharing',
-        cody: '✓',
-        competitor: 'x',
-        competitor_details: 'Available, but only on Business tier',
-    },
-    {
-        feature: 'IP indemnity',
-        cody: '✓',
-        competitor: 'x',
-        competitor_details: 'No indemnity for pre-release software',
-    },
-    {
-        feature: 'Web app',
-        cody: '✓',
-        competitor: 'x',
-    },
-    {
-        feature: 'VS Code',
-        cody: '✓',
-        competitor: '✓',
+        competitor_details: 'Cursor is a standalone fork of VS Code',
+        view_competitor_details: false,
     },
     {
         feature: 'JetBrains',
+        feature_details: '',
+        view_feature_details: false,
         cody: '✓',
+        cody_details: '',
+        view_cody_details: false,
         competitor: 'x',
-    },
-    {
-        feature: 'Neovim',
-        cody: '✓',
-        cody_details: ['Experimental'],
-        competitor: '✓',
+        competitor_details: '',
+        view_competitor_details: false,
     },
     {
         feature: 'Visual Studio',
+        feature_details: '',
+        view_feature_details: false,
         cody: 'x',
-        competitor: '✓',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: 'x',
+        competitor_details: '',
+        view_competitor_details: false,
     },
     {
-        feature: 'Mobile App',
-        cody: 'x',
+        feature: 'Other',
+        feature_details: '',
+        view_feature_details: false,
+        cody: '✓',
+        cody_details: '',
+        view_cody_details: false,
         competitor: 'x',
-        competitor_details: 'Coming soon',
+        competitor_details: '',
+        view_competitor_details: false,
+    },
+]
+
+const llmSupport = [
+    {
+        feature: 'Chat model (default)',
+        feature_details: '',
+        view_feature_details: false,
+        cody: 'Claude 2',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: 'GPT-3.5',
+        competitor_details: '',
+        view_competitor_details: false,
+    },
+    {
+        feature: 'Autcomplete model (default)',
+        feature_details: '',
+        view_feature_details: false,
+        cody: 'StarCoder',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: 'x',
+        competitor_details: '',
+        view_competitor_details: false,
+    },
+    {
+        feature: 'Choose your LLM',
+        feature_details: '',
+        view_feature_details: false,
+        cody: '✓',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: '✓',
+        competitor_details: '',
+        view_competitor_details: false,
+    },
+    {
+        feature: 'Bring your own LLM key',
+        feature_details: '',
+        view_feature_details: false,
+        cody: '✓',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: '✓',
+        competitor_details: '',
+        view_competitor_details: false,
+    },
+    {
+        feature: 'LLM hosting',
+        feature_details: '',
+        view_feature_details: false,
+        cody: 'Cloud',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: 'Cloud',
+        competitor_details: '',
+        view_competitor_details: false,
+    },
+]
+
+const contextSupport = [
+    {
+        feature: 'Personalized responses using codebase context',
+        feature_details: '',
+        view_feature_details: false,
+        cody: '✓',
+        cody_details: 'Available on all tiers',
+        view_cody_details: false,
+        competitor: '✓',
+        competitor_details: 'Available on all tiers',
+        view_competitor_details: false,
+    },
+    {
+        feature: 'Fine-tuned LLM',
+        feature_details: '',
+        view_feature_details: false,
+        cody: 'x',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: 'x',
+        competitor_details: 'Waitlist for Enterprise tier',
+        view_competitor_details: false,
+    },
+]
+
+const pricingSupport = [
+    {
+        feature: 'Free tier offered',
+        feature_details: '',
+        view_feature_details: false,
+        cody: '✓',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: 'x',
+        competitor_details: 'Free for students, teachers, and OSS mainters',
+        view_competitor_details: false,
+    },
+    {
+        feature: 'Pro tier pricing for individuals',
+        feature_details: '',
+        view_feature_details: false,
+        cody: '$9 / user / month',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: '$20 / user /month',
+        competitor_details: '',
+        view_competitor_details: false,
     },
 ]
 
@@ -228,19 +324,84 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold">Feature</th>
+                            <th className="w-1/2 border-0 font-semibold text-left">Features</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">GitHub Copilot Individual</th>
+                            <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
                         </tr>
                     </thead>
 
                     <tbody>
-                        {data?.map((item, index: number) => (
+                        {featureSupport?.map((item, index: number) => (
                             <FeatureComponent item={item} key={index} />
                         ))}
                     </tbody>
                 </table>
-                Last updated: 2023-11-27
+
+                <table className="table-fixed border-0">
+                    <thead>
+                        <tr>
+                            <th className="w-1/2 border-0 font-semibold text-left">IDE support</th>
+                            <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
+                            <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {ideSupport?.map((item, index: number) => (
+                            <FeatureComponent item={item} key={index} />
+                        ))}
+                    </tbody>
+                </table>
+
+                <table className="table-fixed border-0">
+                    <thead>
+                        <tr>
+                            <th className="w-1/2 border-0 font-semibold text-left">LLM / Model</th>
+                            <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
+                            <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {llmSupport?.map((item, index: number) => (
+                            <FeatureComponent item={item} key={index} />
+                        ))}
+                    </tbody>
+                </table>
+                
+                <table className="table-fixed border-0">
+                    <thead>
+                        <tr>
+                            <th className="w-1/2 border-0 font-semibold text-left">Context and personalization</th>
+                            <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
+                            <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {contextSupport?.map((item, index: number) => (
+                            <FeatureComponent item={item} key={index} />
+                        ))}
+                    </tbody>
+                </table>
+
+                <table className="table-fixed border-0">
+                    <thead>
+                        <tr>
+                            <th className="w-1/2 border-0 font-semibold text-left">Pricing</th>
+                            <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
+                            <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {pricingSupport?.map((item, index: number) => (
+                            <FeatureComponent item={item} key={index} />
+                        ))}
+                    </tbody>
+                </table>
+
+                <p>Last updated: 12-06-2023</p>
             </div>
         </ContentSection>
     </Layout>
