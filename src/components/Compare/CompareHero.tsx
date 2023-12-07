@@ -83,7 +83,7 @@ export default function CompareHero({ title, competitorIcon, competitorDescripti
                                 {/* the cody and competitor logos are placed absolutely from that */}
                                 <div className="relative flex items-center gap-5 lg:items-baseline lg:gap-0">
                                     {/* vs box */}
-                                    <div className="relative z-[2] h-16 w-16 rounded-md bg-gray-300 p-0.5 shadow-modal lg:h-24 lg:w-24">
+                                    <div className="relative z-[2] h-16 w-16 rounded-md bg-gray-300 p-1 lg:h-24 lg:w-24">
                                         <div className="flex h-full w-full items-center justify-center rounded bg-white font-extrabold">
                                             <span className="-translate-y-1 bg-gradient-to-br from-gray-400 to-gray-600 bg-clip-text text-4xl leading-none text-transparent lg:text-8xl">
                                                 vs
@@ -92,7 +92,7 @@ export default function CompareHero({ title, competitorIcon, competitorDescripti
                                     </div>
 
                                     {/* cody logo */}
-                                    <div className="-left-40 -top-40 z-[3] order-first h-32 w-32 rounded-md bg-gradient-to-br from-vermillion-300 via-violet-400 to-blue-400 p-0.5 shadow-card lg:absolute lg:order-none lg:h-44 lg:w-44">
+                                    <div className="-left-40 -top-40 z-[3] order-first h-32 w-32 rounded-md bg-gradient-to-br from-vermillion-300 via-violet-400 to-blue-400 p-1 shadow-card lg:absolute lg:order-none lg:h-44 lg:w-44">
                                         <div className="flex h-full w-full items-center justify-center rounded bg-white">
                                             <img
                                                 src="/cody-logomark-default.svg"
@@ -103,7 +103,7 @@ export default function CompareHero({ title, competitorIcon, competitorDescripti
                                     </div>
 
                                     {/* competitor logo */}
-                                    <div className="-bottom-40 -right-40 z-[1] h-32 w-32 rounded-md bg-gray-600 p-0.5 shadow-lg lg:absolute lg:h-44 lg:w-44">
+                                    <div className="-bottom-40 -right-40 z-[1] h-32 w-32 rounded-md bg-gray-600 p-1 shadow-lg lg:absolute lg:h-44 lg:w-44">
                                         <div className="flex h-full w-full items-center justify-center rounded bg-white">
                                             <img
                                                 src={competitorIcon}
