@@ -60,6 +60,15 @@ export default function CompareHero({ title, competitorIcon, competitorDescripti
                     <div className="mx-auto max-w-7xl px-6 pb-24 pt-28 xl:px-0">
                         <div className="gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                             <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+                                {/* comparisons link */}
+                                <a
+                                    href="/compare"
+                                    className="mb-4 inline-block text-sm font-semibold text-gray-400 transition hover:text-blue-500 hover:underline"
+                                >
+                                    Comparisons /
+                                </a>
+
+                                {/* title */}
                                 <h1 className="text-4xl font-bold tracking-tight text-gray-700 sm:text-6xl">{title}</h1>
 
                                 {/* the comparison paragraphs */}
