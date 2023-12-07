@@ -7,9 +7,6 @@ import { breakpoints } from '../../data/breakpoints'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 import { useWindowWidth } from '../../hooks/windowWidth'
 
-import illustration from './illustration.svg'
-import cody from './cody.svg'
-
 interface Cta {
     text: string
     ctaStyle?: 'primaryButtonWhite' | 'outlineButtonLight' | 'link'

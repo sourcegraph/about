@@ -371,7 +371,7 @@ const CompareCopilotPage: FunctionComponent = () => (
             </div>
         </div>
         
-        <CodyCallToActionContentSection title="Get Cody, the AI coding assistant" description="Cody makes it easy to write, fix, and maintain code." cta1={{text:"Try Cody for free", ctaStyle: "primaryButtonWhite", link: "/cody"}} cta2={{text:"See enterprise pricing", ctaStyle:"link", link:"/cody/pricing"}} />
+        <CodyCallToActionContentSection title="Get Cody, the AI coding assistant" description="Cody makes it easy to write, fix, and maintain code." cta1={{text:'Try Cody for free', ctaStyle: 'primaryButtonWhite', link: '/cody'}} cta2={{text:'See enterprise pricing', ctaStyle:'link', link:'/cody/pricing'}} />
 
         <div className="max-w-screen-xl mx-auto my-10">
             <h2 className="mb-10">Compare other code AI assistants</h2>
