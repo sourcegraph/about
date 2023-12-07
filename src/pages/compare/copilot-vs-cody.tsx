@@ -7,15 +7,17 @@ import { ContentSection, Layout } from '../../components'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 
+import { MdCheck, MdClose } from 'react-icons/md'
+
 const featureSupport = [
     {
         feature: 'Autocomplete',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: '✓',
+        competitor: true,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -23,10 +25,10 @@ const featureSupport = [
         feature: 'Chat',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: '✓',
+        competitor: true,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -34,10 +36,10 @@ const featureSupport = [
         feature: 'Commands',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: '✓',
+        competitor: true,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -45,10 +47,10 @@ const featureSupport = [
         feature: 'Custom commands',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: 'x',
+        competitor: false,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -59,10 +61,10 @@ const ideSupport = [
         feature: 'Visual Studio Code',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: '✓',
+        competitor: true,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -70,10 +72,10 @@ const ideSupport = [
         feature: 'JetBrains',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: '✓',
+        competitor: true,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -84,7 +86,7 @@ const ideSupport = [
         cody: 'x',
         cody_details: '',
         view_cody_details: false,
-        competitor: '✓',
+        competitor: true,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -92,10 +94,10 @@ const ideSupport = [
         feature: 'Other',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: ['Neovim'],
         view_cody_details: false,
-        competitor: '✓',
+        competitor: true,
         competitor_details: ['Neovim'],
         view_competitor_details: false,
     },
@@ -128,10 +130,10 @@ const llmSupport = [
         feature: 'Choose your LLM',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: 'x',
+        competitor: false,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -139,10 +141,10 @@ const llmSupport = [
         feature: 'Bring your own LLM key',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: 'x',
+        competitor: false,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -164,10 +166,10 @@ const contextSupport = [
         feature: 'Personalized responses using codebase context',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: 'Available on all tiers',
         view_cody_details: false,
-        competitor: 'x',
+        competitor: false,
         competitor_details: 'Waitlist for Enterprise tier',
         view_competitor_details: false,
     },
@@ -178,7 +180,7 @@ const contextSupport = [
         cody: 'x',
         cody_details: '',
         view_cody_details: false,
-        competitor: 'x',
+        competitor: false,
         competitor_details: 'Waitlist for Enterprise tier',
         view_competitor_details: false,
     },
@@ -189,10 +191,10 @@ const pricingSupport = [
         feature: 'Free tier offered',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: 'x',
+        competitor: false,
         competitor_details: 'Free for students, teachers, and OSS mainters',
         view_competitor_details: false,
     },
@@ -259,20 +261,27 @@ const FeatureComponent: FunctionComponent<{ item: any }> = (item: any) => {
                     </button>
                 )}
 
-                {showFeatureDetails && (
-                    <>
-                        <p className="text-xs">{data.feature_details}</p>
-                    </>
-                )}
+                {showFeatureDetails && <p className="text-xs">{data.feature_details}</p>}
             </td>
 
             <td className="relative w-1/4 text-center">
-                {data.cody}
+                {/* check or x */}
+                {data.cody ? (
+                    <span className="mx-auto inline-flex h-8 w-8 items-center justify-center rounded-full bg-blurple-100/40">
+                        <MdCheck className="h-6 w-6 fill-blurple-400" />
+                    </span>
+                ) : (
+                    <span className="mx-auto inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-50">
+                        <MdClose className="h-6 w-6 fill-gray-500" />
+                    </span>
+                )}
+
                 {data.cody_details && data.cody_details.length > 0 && (
                     <button type="button" className="absolute ml-2 text-xs" onClick={() => toggleCodyDetails()}>
                         ⓘ
                     </button>
                 )}
+
                 {showCodyDetails &&
                     Array.isArray(data.cody_details) &&
                     data.cody_details.map((item: any, index: number) => (
@@ -285,7 +294,17 @@ const FeatureComponent: FunctionComponent<{ item: any }> = (item: any) => {
             </td>
 
             <td className="relative w-1/4 text-center">
-                {data.competitor}
+                {/* check or x */}
+                {data.competitor ? (
+                    <span className="mx-auto inline-flex h-8 w-8 items-center justify-center rounded-full bg-blurple-100/40">
+                        <MdCheck className="h-6 w-6 fill-blurple-400" />
+                    </span>
+                ) : (
+                    <span className="mx-auto inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-50">
+                        <MdClose className="h-6 w-6 fill-gray-200" />
+                    </span>
+                )}
+
                 {data.competitor_details && data.competitor_details.length > 0 && (
                     <button type="button" className="absolute ml-2 text-xs" onClick={() => toggleCompetitorDetails()}>
                         ⓘ
@@ -306,7 +325,12 @@ const CompareCopilotPage: FunctionComponent = () => (
         hero={
             <div className="container mx-auto pt-5xl text-center">
                 <h1 className="flex items-center justify-center gap-3">
-                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[48px] w-[48px]" /> {' '} vs <img src="/assets/compare/github-copilot.svg" alt="GitHub Copilot Logo" className="h-[48px] w-[48px]" />
+                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[48px] w-[48px]" /> vs{' '}
+                    <img
+                        src="/assets/compare/github-copilot.svg"
+                        alt="GitHub Copilot Logo"
+                        className="h-[48px] w-[48px]"
+                    />
                 </h1>
                 <p className="mt-6 text-3xl text-black">Sourcegraph Cody vs. GitHub Copilot</p>
             </div>
@@ -314,16 +338,33 @@ const CompareCopilotPage: FunctionComponent = () => (
     >
         <ContentSection className="grid grid-cols-1 gap-lg md:grid-cols-12">
             <div className="col-span-full">
-                <p>Copilot is an AI code assistant that offers autocomplete, chat, and commands. It has strong autocomplete performance using the OpenAI Codex model, and it offers in-IDE chat with GPT-4 (with chat in the GitHub mobile app coming in 2024). It will also offer deep integration with the GitHub platform when Copilot Enterprise releases in 2024.</p>
+                <p>
+                    Copilot is an AI code assistant that offers autocomplete, chat, and commands. It has strong
+                    autocomplete performance using the OpenAI Codex model, and it offers in-IDE chat with GPT-4 (with
+                    chat in the GitHub mobile app coming in 2024). It will also offer deep integration with the GitHub
+                    platform when Copilot Enterprise releases in 2024.
+                </p>
 
-                <p>Unfortunately, Copilot does not offer a standard free tier. Copilot is also limited in how it uses code context on its Individual and Business tiers; codebase personalization is limited to the upcoming Copilot Enterprise. Copilot Enterprise's use of codebase context will also be limited to code hosted in GitHub.</p>
+                <p>
+                    Unfortunately, Copilot does not offer a standard free tier. Copilot is also limited in how it uses
+                    code context on its Individual and Business tiers; codebase personalization is limited to the
+                    upcoming Copilot Enterprise. Copilot Enterprise's use of codebase context will also be limited to
+                    code hosted in GitHub.
+                </p>
 
-                <p><strong>TL;DR:</strong> Copilot is a good choice for individuals who are willing to pay for a solution or for enterprises looking for a solution that is deeply embedded in the GitHub ecosystem. However, Cody is the better option for individuals who want a free AI code assistant that they can personalize using codebase context, or for users who would like to select which LLM they'd like to use. Cody is also a good option for enterprise users who want to personalize their AI with code from non-GitHub code hosts.</p>
+                <p>
+                    <strong>TL;DR:</strong> Copilot is a good choice for individuals who are willing to pay for a
+                    solution or for enterprises looking for a solution that is deeply embedded in the GitHub ecosystem.
+                    However, Cody is the better option for individuals who want a free AI code assistant that they can
+                    personalize using codebase context, or for users who would like to select which LLM they'd like to
+                    use. Cody is also a good option for enterprise users who want to personalize their AI with code from
+                    non-GitHub code hosts.
+                </p>
 
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold text-left">Features</th>
+                            <th className="w-1/2 border-0 text-left font-semibold">Features</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
                             <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
                         </tr>
@@ -339,7 +380,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold text-left">IDE support</th>
+                            <th className="w-1/2 border-0 text-left font-semibold">IDE support</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
                             <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
                         </tr>
@@ -355,7 +396,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold text-left">LLM / Model</th>
+                            <th className="w-1/2 border-0 text-left font-semibold">LLM / Model</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
                             <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
                         </tr>
@@ -367,11 +408,11 @@ const CompareCopilotPage: FunctionComponent = () => (
                         ))}
                     </tbody>
                 </table>
-                
+
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold text-left">Context and personalization</th>
+                            <th className="w-1/2 border-0 text-left font-semibold">Context and personalization</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
                             <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
                         </tr>
@@ -387,7 +428,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold text-left">Pricing</th>
+                            <th className="w-1/2 border-0 text-left font-semibold">Pricing</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
                             <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
                         </tr>
