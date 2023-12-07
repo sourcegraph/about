@@ -9,6 +9,7 @@ import { OtherComparisons } from '../../components/Compare/OtherComparisons'
 import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
+import CompareHero from '../../components/Compare/CompareHero'
 
 const featureSupport = [
     {
@@ -249,24 +250,37 @@ const CompareCopilotPage: FunctionComponent = () => (
             description: 'Feature comparison of Sourcegraph Cody and Tabnine',
         }}
         hero={
-            <div className="container mx-auto pt-5xl text-center">
-                <h1 className="flex items-center justify-center gap-3">
-                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[48px] w-[48px]" /> {' '} vs <img src="/assets/compare/tabnine.svg" alt="Tabnine Logo" className="h-[48px] w-[48px]" />
-                </h1>
-                <p className="mt-6 text-3xl text-black">Sourcegraph Cody vs. Tabnine</p>
-            </div>
+            <CompareHero
+                title="Sourcegraph Cody vs. Tabnine"
+                competitorDescription="Tabnine Logo"
+                competitorIcon="/assets/compare/tabnine.svg"
+            >
+                <p>
+                    Tabnine is an AI assistant primarily focused on code autocomplete. Tabnine Chat, an in-IDE chat
+                    feature, is also in beta but only for Enterprise users. The free tier of Tabnine has limited
+                    functionality, offering short code completions of 2-3 words, and not offering chat or other AI
+                    commands.
+                </p>
+                <p>
+                    The most unique aspect of Tabnine is its hybrid LLM approach. Tabnine's free tier (Starter) runs a
+                    small model on the user's local machine and a larger model in the cloud. Tabnine Pro also offers a
+                    model where users can run the Tabnine AI models entirely on their local machine.
+                </p>
+                <p>
+                    <strong className="inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500">TL;DR:</strong>{' '}
+                    Tabnine is a good choice for users who want to run their LLM entirely on their local machine, but
+                    its Starter and Pro tiers are restricted to only autocomplete. Cody Free and Cody Pro offer a wider
+                    range of features (autocomplete, chat, and commands) using cloud-based models.
+                </p>
+            </CompareHero>
         }
     >
-        <div className="max-w-screen-xl mx-auto grid grid-cols-1 gap-lg md:grid-cols-12">
+        <div className="mx-auto grid max-w-screen-xl grid-cols-1 gap-lg md:grid-cols-12 xl:px-0">
             <div className="col-span-full">
-                <p>Tabnine is an AI assistant primarily focused on code autocomplete. Tabnine Chat, an in-IDE chat feature, is also in beta but only for Enterprise users. The free tier of Tabnine has limited functionality, offering short code completions of 2-3 words, and not offering chat or other AI commands.</p>
-                <p>The most unique aspect of Tabnine is its hybrid LLM approach. Tabnine's free tier (Starter) runs a small model on the user's local machine and a larger model in the cloud. Tabnine Pro also offers a model where users can run the Tabnine AI models entirely on their local machine.</p>
-                <p><strong>TL;DR:</strong> Tabnine is a good choice for users who want to run their LLM entirely on their local machine, but its Starter and Pro tiers are restricted to only autocomplete. Cody Free and Cody Pro offer a wider range of features (autocomplete, chat, and commands) using cloud-based models.</p>
-                
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold text-left">Features</th>
+                            <th className="w-1/2 border-0 text-left font-semibold">Features</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
                             <th className="w-1/4 border-0 font-semibold">Tabnine</th>
                         </tr>
@@ -282,7 +296,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold text-left">IDE support</th>
+                            <th className="w-1/2 border-0 text-left font-semibold">IDE support</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
                             <th className="w-1/4 border-0 font-semibold">Tabnine</th>
                         </tr>
@@ -298,7 +312,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold text-left">LLM / Model</th>
+                            <th className="w-1/2 border-0 text-left font-semibold">LLM / Model</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
                             <th className="w-1/4 border-0 font-semibold">Tabnine</th>
                         </tr>
@@ -310,11 +324,11 @@ const CompareCopilotPage: FunctionComponent = () => (
                         ))}
                     </tbody>
                 </table>
-                
+
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold text-left">Context and personalization</th>
+                            <th className="w-1/2 border-0 text-left font-semibold">Context and personalization</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
                             <th className="w-1/4 border-0 font-semibold">Tabnine</th>
                         </tr>
@@ -330,7 +344,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold text-left">Pricing</th>
+                            <th className="w-1/2 border-0 text-left font-semibold">Pricing</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
                             <th className="w-1/4 border-0 font-semibold">Tabnine</th>
                         </tr>
@@ -348,14 +362,14 @@ const CompareCopilotPage: FunctionComponent = () => (
         </div>
 
         <DownloadAppCallToActionSection
-                href="https://sourcegraph.com/cody"
-                title="Get Cody, the AI coding assistant"
-                description="Cody makes it easy to write, fix, and maintain code."
-                colorTheme="light"
-                buttonText="Learn more"
-            />
+            href="https://sourcegraph.com/cody"
+            title="Get Cody, the AI coding assistant"
+            description="Cody makes it easy to write, fix, and maintain code."
+            colorTheme="light"
+            buttonText="Learn more"
+        />
 
-        <div className="max-w-screen-xl mx-auto my-10">
+        <div className="mx-auto my-10 max-w-screen-xl">
             <h2 className="mb-10">Compare other code AI assistants</h2>
             <OtherComparisons />
         </div>

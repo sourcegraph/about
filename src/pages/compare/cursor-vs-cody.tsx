@@ -9,6 +9,7 @@ import { OtherComparisons } from '../../components/Compare/OtherComparisons'
 import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
+import CompareHero from '../../components/Compare/CompareHero'
 
 const featureSupport = [
     {
@@ -249,26 +250,41 @@ const CompareCopilotPage: FunctionComponent = () => (
             description: 'Feature comparison of Sourcegraph Cody and Cursor',
         }}
         hero={
-            <div className="container mx-auto pt-5xl text-center">
-                <h1 className="flex items-center justify-center gap-3">
-                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[48px] w-[48px]" /> {' '} vs <img src="/assets/compare/cursor.svg" alt="Cursor Logo" className="h-[48px] w-[48px]" />
-                </h1>
-                <p className="mt-6 text-3xl text-black">Sourcegraph Cody vs. Cursor</p>
-            </div>
+            <CompareHero
+                title="Sourcegraph Cody vs. Cursor"
+                competitorDescription="Cursor Logo"
+                competitorIcon="/assets/compare/cursor.svg"
+            >
+                <p>
+                    Cursor is an “AI-first Code Editor.” Unlike other solutions which are commonly IDE extensions and
+                    plugins, Cursor itself is a fork of VS Code. This gives Cursor some unique functionality, including
+                    its “Auto-debug” feature that can attempt to fix errors that appear in the VS Code terminal. Cursor
+                    also provides codebase context to the LLM, and users can manually select files and symbols to
+                    include as context for questions.
+                </p>
+
+                <p>
+                    The main downside of Cursor being a fork of VS Code is that it is not available to use with other
+                    IDEs (such as the JetBrains family). Also, unlike Cody, Cursor does not presently offer code
+                    autocomplete.
+                </p>
+
+                <p>
+                    <strong className="inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500">TL;DR:</strong>{' '}
+                    Cursor is a good choice for users who are willing to migrate from their preferred IDE to Cursor. It
+                    offers unique functionality and has strong codebase context features. However, Cody is a better
+                    option for users who want code autocomplete or who want their code AI to work within their IDE of
+                    choice.
+                </p>
+            </CompareHero>
         }
     >
-        <div className="max-w-screen-xl mx-auto grid grid-cols-1 gap-lg md:grid-cols-12">
+        <div className="mx-auto grid max-w-screen-xl grid-cols-1 gap-lg md:grid-cols-12 xl:px-0">
             <div className="col-span-full">
-                <p>Cursor is an “AI-first Code Editor.” Unlike other solutions which are commonly IDE extensions and plugins, Cursor itself is a fork of VS Code. This gives Cursor some unique functionality, including its “Auto-debug” feature that can attempt to fix errors that appear in the VS Code terminal. Cursor also provides codebase context to the LLM, and users can manually select files and symbols to include as context for questions.</p>
-
-                <p>The main downside of Cursor being a fork of VS Code is that it is not available to use with other IDEs (such as the JetBrains family). Also, unlike Cody, Cursor does not presently offer code autocomplete.</p>
-
-                <p><strong>TL;DR:</strong> Cursor is a good choice for users who are willing to migrate from their preferred IDE to Cursor. It offers unique functionality and has strong codebase context features. However, Cody is a better option for users who want code autocomplete or who want their code AI to work within their IDE of choice.</p>
-                
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold text-left">Features</th>
+                            <th className="w-1/2 border-0 text-left font-semibold">Features</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
                             <th className="w-1/4 border-0 font-semibold">Cursor</th>
                         </tr>
@@ -284,7 +300,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold text-left">IDE support</th>
+                            <th className="w-1/2 border-0 text-left font-semibold">IDE support</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
                             <th className="w-1/4 border-0 font-semibold">Cursor</th>
                         </tr>
@@ -300,7 +316,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold text-left">LLM / Model</th>
+                            <th className="w-1/2 border-0 text-left font-semibold">LLM / Model</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
                             <th className="w-1/4 border-0 font-semibold">Cursor</th>
                         </tr>
@@ -312,11 +328,11 @@ const CompareCopilotPage: FunctionComponent = () => (
                         ))}
                     </tbody>
                 </table>
-                
+
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold text-left">Context and personalization</th>
+                            <th className="w-1/2 border-0 text-left font-semibold">Context and personalization</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
                             <th className="w-1/4 border-0 font-semibold">Cursor</th>
                         </tr>
@@ -332,7 +348,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
-                            <th className="w-1/2 border-0 font-semibold text-left">Pricing</th>
+                            <th className="w-1/2 border-0 text-left font-semibold">Pricing</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
                             <th className="w-1/4 border-0 font-semibold">Cursor</th>
                         </tr>
@@ -350,14 +366,14 @@ const CompareCopilotPage: FunctionComponent = () => (
         </div>
 
         <DownloadAppCallToActionSection
-                href="https://sourcegraph.com/cody"
-                title="Get Cody, the AI coding assistant"
-                description="Cody makes it easy to write, fix, and maintain code."
-                colorTheme="light"
-                buttonText="Learn more"
-            />
+            href="https://sourcegraph.com/cody"
+            title="Get Cody, the AI coding assistant"
+            description="Cody makes it easy to write, fix, and maintain code."
+            colorTheme="light"
+            buttonText="Learn more"
+        />
 
-        <div className="max-w-screen-xl mx-auto my-10">
+        <div className="mx-auto my-10 max-w-screen-xl">
             <h2 className="mb-10">Compare other code AI assistants</h2>
             <OtherComparisons />
         </div>
