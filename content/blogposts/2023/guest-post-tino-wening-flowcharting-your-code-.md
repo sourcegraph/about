@@ -94,7 +94,6 @@ This is the generated flowchart:
 
 This seamless integration between Cody and Mermaid empowers you to visualize your code effortlessly, transforming complex logic into a visually intuitive representation. As you navigate the flowchart, you'll gain a deeper understanding of the code's structure and behavior, enabling you to identify potential areas for optimization and refinement.
 
-
 ### Other use cases with Cody and Mermaid
 
 Cody's talents extend far beyond simply generating flowcharts. Together with Mermaid, Cody empowers you to revolutionize your coding workflow, transforming it into a visual symphony of creativity and efficiency.
@@ -103,7 +102,13 @@ Imagine the thrill of effortlessly generating UML diagrams, showcasing the intri
 
 Beyond UML diagrams, Cody's versatility shines through in its ability to generate a variety of diagrams, including sequence diagrams, Gantt charts, and even state diagrams. These diagrams serve as invaluable tools for documenting code behavior, process flows, and state transitions, ensuring that your code remains lucid and well-structured.
 
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/guest-post-flowchart-cody-gantt.png"
+  caption="Cody: create a Gantt diagram of @.../detect-multiline.ts formatted for Mermaid."
+/>
+
 So, go ahead and unleash Cody's flowchart-generating prowess, and watch as your code transforms into a masterpiece of visual clarity. Embrace the power of visual storytelling and let your code flow like a well-designed diagram, a testament to your coding mastery.
+
 
 <hr style={{marginTop:"2rem",marginBottom:"2rem"}} />
 
