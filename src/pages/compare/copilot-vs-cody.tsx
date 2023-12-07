@@ -380,7 +380,7 @@ const CompareCopilotPage: FunctionComponent = () => (
             />
 
         <div className="max-w-screen-xl mx-auto my-10">
-            <h2 className="mb-10">Compare other AI Assistants</h2>
+            <h2 className="mb-10">Compare other code AI assistants</h2>
             <OtherComparisons />
         </div>
     </Layout>
