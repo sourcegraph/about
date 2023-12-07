@@ -4,7 +4,7 @@ authors:
   - name: Tino Wening
     url: https://twitter.com/PriNova75
   
-publishDate: 2023-12-01T10:00-02:00
+publishDate: 2023-12-07T10:00-02:00
 description: "What are the benefits of using Cody and Mermaid to generate flowcharts? Guest author, Tino Wening, gives a visual guide to understanding your codebase."
 tags: [blog]
 slug: "using-cody-and-mermaid-to-generate-flowcharts"
@@ -17,17 +17,17 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/guest-blog-f
 
 In the world of programming, understanding the structure and flow of your code is crucial for maintaining, refactoring, and debugging. While code provides a textual representation of your program's logic, sometimes a visual representation can be more intuitive and helpful. Enter flowcharts – diagrams that map out the flow of execution in your code.
 
-We'll dive into the world of Mermaid and explore its potential for generating flowcharts. But first, let's address the elephant in the room: what is Mermaid?
+We'll dive into the world of [Mermaid](https://mermaid.js.org) and explore its potential for generating flowcharts. But first, let's address the elephant in the room: what is Mermaid?
 
 
-## What is Mermaid?
+### What is Mermaid?
 
 Imagine a tool that enables you to create diagrams and flowcharts using simple text commands. That's the magic of Mermaid, a JavaScript-based charting and diagramming library that transforms plain text into visually appealing diagrams.
 
 Think of it as a modern-day version of cave paintings, where instead of depicting scenes on rock walls, you're using text to paint a picture of your code's structure and flow.
 
 
-## Why use Cody and Mermaid to generate flowcharts?
+### Using Mermaid with Cody to generate flowcharts
 
 Now that you have a basic understanding of Mermaid, let's explore why combining it with Cody, is a match made in diagramming heaven.
 
@@ -38,7 +38,7 @@ But here's the twist: Cody doesn't just generate a flowchart; it generates a Mer
 In essence, Cody and Mermaid are like two peas in a pod, complementing each other to create a powerful flowcharting duo.
 
 
-## Benefits of using Cody and Mermaid to generate flowcharts
+### Benefits of using Cody and Mermaid to generate flowcharts
 
 The benefits of using Cody and Mermaid to generate flowcharts are twofold:
 
@@ -51,9 +51,9 @@ The benefits of using Cody and Mermaid to generate flowcharts are twofold:
 So, if you're looking for a way to streamline your flowcharting process and gain a deeper understanding of your code, Cody and Mermaid are your go-to tools.
 
 
-## Use Cody to generate a flowchart of a code snippet
+### Use Cody to generate a flowchart of a code snippet
 
-Now, let's delve into the exciting task of generating flowcharts from code files. Here we open up a JavaScript code file and selecting the following function that serves as an example: 
+Now, let's delve into the exciting task of generating flowcharts from code files. Here we open up a JavaScript file and selecting the following function that serves as an example: 
 
 ```js
 let a, b, c;
@@ -95,7 +95,7 @@ This is the generated flowchart shown in the online viewer:
 This seamless integration between Cody and Mermaid empowers you to visualize your code effortlessly, transforming complex logic into a visually intuitive representation. As you navigate the flowchart, you'll gain a deeper understanding of the code's structure and behavior, enabling you to identify potential areas for optimization and refinement.
 
 
-## Other use cases with Cody and Mermaid
+### Other use cases with Cody and Mermaid
 
 Cody's talents extend far beyond simply generating flowcharts. Together with Mermaid, Cody empowers you to revolutionize your coding workflow, transforming it into a visual symphony of creativity and efficiency.
 
@@ -105,8 +105,6 @@ Beyond UML diagrams, Cody's versatility shines through in its ability to generat
 
 So, go ahead and unleash Cody's flowchart-generating prowess, and watch as your code transforms into a masterpiece of visual clarity. Embrace the power of visual storytelling and let your code flow like a well-designed diagram, a testament to your coding mastery.
 
-
-
 <hr style={{marginTop:"2rem",marginBottom:"2rem"}} />
 
-To get started with Cody, check it out on [sourcegraph.com](https://about.sourcegraph.com/cody).
+To get started with Cody, check it out on [sourcegraph.com](https://sourcegraph.com/cody).
