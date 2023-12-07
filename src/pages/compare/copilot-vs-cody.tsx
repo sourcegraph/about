@@ -4,10 +4,9 @@ import classNames from 'classnames'
 import Link from 'next/link'
 
 import { ContentSection, Layout } from '../../components'
+import { FeatureComponent } from '../../components/Compare/FeatureComponent'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
-
-import { MdCheck, MdClose } from 'react-icons/md'
 
 const featureSupport = [
     {
@@ -83,7 +82,7 @@ const ideSupport = [
         feature: 'Visual Studio',
         feature_details: '',
         view_feature_details: false,
-        cody: 'x',
+        cody: false,
         cody_details: '',
         view_cody_details: false,
         competitor: true,
@@ -177,7 +176,7 @@ const contextSupport = [
         feature: 'Fine-tuned LLM',
         feature_details: '',
         view_feature_details: false,
-        cody: 'x',
+        cody: false,
         cody_details: '',
         view_cody_details: false,
         competitor: false,
@@ -205,7 +204,7 @@ const pricingSupport = [
         cody: '$9 / user / month',
         cody_details: '',
         view_cody_details: false,
-        competitor: '$10 / user /month',
+        competitor: '$10 / user / month',
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -240,81 +239,6 @@ const ContactUsButton: FunctionComponent<{ className?: string }> = ({ className 
         Contact us
     </Link>
 )
-
-const FeatureComponent: FunctionComponent<{ item: any }> = (item: any) => {
-    const data = item.item
-    const [showFeatureDetails, setShowFeatureDetails] = useState(data.view_feature_details)
-    const [showCodyDetails, setShowCodyDetails] = useState(data.view_feature_details)
-    const [showCompetitorDetails, setShowCompetitorDetails] = useState(data.view_feature_details)
-    const toggleFeatureDetails = (): void => setShowFeatureDetails(!showFeatureDetails)
-    const toggleCodyDetails = (): void => setShowCodyDetails(!showCodyDetails)
-    const toggleCompetitorDetails = (): void => setShowCompetitorDetails(!showCompetitorDetails)
-
-    return (
-        <tr>
-            <td className="w-1/2">
-                {data.feature}
-
-                {data.feature_details && data.feature_details.length > 0 && (
-                    <button type="button" className="ml-2 text-xs" onClick={() => toggleFeatureDetails()}>
-                        ⓘ
-                    </button>
-                )}
-
-                {showFeatureDetails && <p className="text-xs">{data.feature_details}</p>}
-            </td>
-
-            <td className="relative w-1/4 text-center">
-                {/* check or x */}
-                {data.cody ? (
-                    <span className="mx-auto inline-flex h-8 w-8 items-center justify-center rounded-full bg-blurple-100/40">
-                        <MdCheck className="h-6 w-6 fill-blurple-400" />
-                    </span>
-                ) : (
-                    <span className="mx-auto inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-50">
-                        <MdClose className="h-6 w-6 fill-gray-500" />
-                    </span>
-                )}
-
-                {data.cody_details && data.cody_details.length > 0 && (
-                    <button type="button" className="absolute ml-2 text-xs" onClick={() => toggleCodyDetails()}>
-                        ⓘ
-                    </button>
-                )}
-
-                {showCodyDetails &&
-                    Array.isArray(data.cody_details) &&
-                    data.cody_details.map((item: any, index: number) => (
-                        <div key={index} className="text-xs">
-                            {item}
-                        </div>
-                    ))}
-
-                {showCodyDetails && !Array.isArray(data.cody_details) && <p>{data.cody_details}</p>}
-            </td>
-
-            <td className="relative w-1/4 text-center">
-                {/* check or x */}
-                {data.competitor ? (
-                    <span className="mx-auto inline-flex h-8 w-8 items-center justify-center rounded-full bg-blurple-100/40">
-                        <MdCheck className="h-6 w-6 fill-blurple-400" />
-                    </span>
-                ) : (
-                    <span className="mx-auto inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-50">
-                        <MdClose className="h-6 w-6 fill-gray-200" />
-                    </span>
-                )}
-
-                {data.competitor_details && data.competitor_details.length > 0 && (
-                    <button type="button" className="absolute ml-2 text-xs" onClick={() => toggleCompetitorDetails()}>
-                        ⓘ
-                    </button>
-                )}
-                {showCompetitorDetails && <p className="text-xs">{data.competitor_details}</p>}
-            </td>
-        </tr>
-    )
-}
 
 const CompareCopilotPage: FunctionComponent = () => (
     <Layout

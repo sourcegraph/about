@@ -4,6 +4,7 @@ import classNames from 'classnames'
 import Link from 'next/link'
 
 import { ContentSection, Layout } from '../../components'
+import { FeatureComponent } from '../../components/Compare/FeatureComponent'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 
@@ -12,10 +13,10 @@ const featureSupport = [
         feature: 'Autocomplete',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: 'x',
+        competitor: false,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -23,10 +24,10 @@ const featureSupport = [
         feature: 'Chat',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: '✓',
+        competitor: true,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -34,10 +35,10 @@ const featureSupport = [
         feature: 'Commands',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: 'x',
+        competitor: false,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -45,10 +46,10 @@ const featureSupport = [
         feature: 'Custom commands',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: 'x',
+        competitor: false,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -59,10 +60,10 @@ const ideSupport = [
         feature: 'Visual Studio Code',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: '✓',
+        competitor: true,
         competitor_details: 'Cursor is a standalone fork of VS Code',
         view_competitor_details: false,
     },
@@ -70,10 +71,10 @@ const ideSupport = [
         feature: 'JetBrains',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: 'x',
+        competitor: false,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -81,10 +82,10 @@ const ideSupport = [
         feature: 'Visual Studio',
         feature_details: '',
         view_feature_details: false,
-        cody: 'x',
+        cody: false,
         cody_details: '',
         view_cody_details: false,
-        competitor: 'x',
+        competitor: false,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -92,10 +93,10 @@ const ideSupport = [
         feature: 'Other',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: 'x',
+        competitor: false,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -120,7 +121,7 @@ const llmSupport = [
         cody: 'StarCoder',
         cody_details: '',
         view_cody_details: false,
-        competitor: 'x',
+        competitor: false,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -128,10 +129,10 @@ const llmSupport = [
         feature: 'Choose your LLM',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: '✓',
+        competitor: true,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -139,10 +140,10 @@ const llmSupport = [
         feature: 'Bring your own LLM key',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: '✓',
+        competitor: true,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -164,10 +165,10 @@ const contextSupport = [
         feature: 'Personalized responses using codebase context',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: 'Available on all tiers',
         view_cody_details: false,
-        competitor: '✓',
+        competitor: true,
         competitor_details: 'Available on all tiers',
         view_competitor_details: false,
     },
@@ -175,10 +176,10 @@ const contextSupport = [
         feature: 'Fine-tuned LLM',
         feature_details: '',
         view_feature_details: false,
-        cody: 'x',
+        cody: false,
         cody_details: '',
         view_cody_details: false,
-        competitor: 'x',
+        competitor: false,
         competitor_details: 'Waitlist for Enterprise tier',
         view_competitor_details: false,
     },
@@ -189,10 +190,10 @@ const pricingSupport = [
         feature: 'Free tier offered',
         feature_details: '',
         view_feature_details: false,
-        cody: '✓',
+        cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: 'x',
+        competitor: false,
         competitor_details: 'Free for students, teachers, and OSS mainters',
         view_competitor_details: false,
     },
@@ -203,7 +204,7 @@ const pricingSupport = [
         cody: '$9 / user / month',
         cody_details: '',
         view_cody_details: false,
-        competitor: '$20 / user /month',
+        competitor: '$20 / user / month',
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -238,64 +239,6 @@ const ContactUsButton: FunctionComponent<{ className?: string }> = ({ className 
         Contact us
     </Link>
 )
-
-const FeatureComponent: FunctionComponent<{ item: any }> = (item: any) => {
-    const data = item.item
-    const [showFeatureDetails, setShowFeatureDetails] = useState(data.view_feature_details)
-    const [showCodyDetails, setShowCodyDetails] = useState(data.view_feature_details)
-    const [showCompetitorDetails, setShowCompetitorDetails] = useState(data.view_feature_details)
-    const toggleFeatureDetails = (): void => setShowFeatureDetails(!showFeatureDetails)
-    const toggleCodyDetails = (): void => setShowCodyDetails(!showCodyDetails)
-    const toggleCompetitorDetails = (): void => setShowCompetitorDetails(!showCompetitorDetails)
-
-    return (
-        <tr>
-            <td className="w-1/2">
-                {data.feature}
-
-                {data.feature_details && data.feature_details.length > 0 && (
-                    <button type="button" className="ml-2 text-xs" onClick={() => toggleFeatureDetails()}>
-                        ⓘ
-                    </button>
-                )}
-
-                {showFeatureDetails && (
-                    <>
-                        <p className="text-xs">{data.feature_details}</p>
-                    </>
-                )}
-            </td>
-
-            <td className="relative w-1/4 text-center">
-                {data.cody}
-                {data.cody_details && data.cody_details.length > 0 && (
-                    <button type="button" className="absolute ml-2 text-xs" onClick={() => toggleCodyDetails()}>
-                        ⓘ
-                    </button>
-                )}
-                {showCodyDetails &&
-                    Array.isArray(data.cody_details) &&
-                    data.cody_details.map((item: any, index: number) => (
-                        <div key={index} className="text-xs">
-                            {item}
-                        </div>
-                    ))}
-
-                {showCodyDetails && !Array.isArray(data.cody_details) && <p>{data.cody_details}</p>}
-            </td>
-
-            <td className="relative w-1/4 text-center">
-                {data.competitor}
-                {data.competitor_details && data.competitor_details.length > 0 && (
-                    <button type="button" className="absolute ml-2 text-xs" onClick={() => toggleCompetitorDetails()}>
-                        ⓘ
-                    </button>
-                )}
-                {showCompetitorDetails && <p className="text-xs">{data.competitor_details}</p>}
-            </td>
-        </tr>
-    )
-}
 
 const CompareCopilotPage: FunctionComponent = () => (
     <Layout
