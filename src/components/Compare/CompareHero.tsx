@@ -1,5 +1,4 @@
 import { FunctionComponent, ReactNode } from 'react'
-import { ReactNode } from 'react'
 
 import Link from 'next/link'
 
@@ -58,12 +57,12 @@ const CompareHero: FunctionComponent<Props> = ({ title, competitorIcon, competit
                         <div className="gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                             <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                                 {/* comparisons link */}
-                                <a
+                                <Link
                                     href="/compare"
                                     className="mb-4 inline-block text-sm font-semibold text-gray-400 transition hover:text-blue-500 hover:underline"
                                 >
                                     Comparisons /
-                                </a>
+                                </Link>
 
                             {/* title */}
                             <h1 className="text-4xl font-bold tracking-tight text-gray-700 sm:text-6xl">{title}</h1>
