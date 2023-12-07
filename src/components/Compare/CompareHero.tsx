@@ -1,3 +1,4 @@
+/* eslint react/forbid-dom-props: 0 */
 import { FunctionComponent, ReactNode } from 'react'
 
 import Link from 'next/link'

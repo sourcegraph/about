@@ -1,8 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import classNames from 'classnames'
 import Link from 'next/link'
-
 import { MdCheck, MdClose } from 'react-icons/md'
 
 import { ContentSection, Layout } from '../../components'
