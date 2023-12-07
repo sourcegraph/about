@@ -4,12 +4,12 @@ import classNames from 'classnames'
 import Link from 'next/link'
 
 import { Layout } from '../../components'
+import CompareHero from '../../components/Compare/CompareHero'
 import { FeatureComponent } from '../../components/Compare/FeatureComponent'
 import { OtherComparisons } from '../../components/Compare/OtherComparisons'
 import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
-import CompareHero from '../../components/Compare/CompareHero'
 
 const featureSupport = [
     {

@@ -3,10 +3,11 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
+import { MdCheck, MdClose } from 'react-icons/md'
+
 import { ContentSection, Layout } from '../../components'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
-import { MdCheck, MdClose } from 'react-icons/md'
 
 const GetStartedButton: FunctionComponent<{ className?: string }> = ({ className }) => {
     const { openModal } = useAuthModal()
@@ -38,27 +39,23 @@ const ContactUsButton: FunctionComponent<{ className?: string }> = ({ className 
     </Link>
 )
 
-function CodyHeader() {
-    return (
-        <div className="mb-8 flex items-center justify-start gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-lg  border border-gray-300 bg-white shadow-sm">
-                <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-6 w-6" />
-            </div>
-            <h3 className="text-2xl font-semibold">Cody</h3>
+const CodyHeader: FunctionComponent = () => (
+    <div className="mb-8 flex items-center justify-start gap-3">
+        <div className="flex h-12 w-12 items-center justify-center rounded-lg  border border-gray-300 bg-white shadow-sm">
+            <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-6 w-6" />
         </div>
-    )
-}
+        <h3 className="text-2xl font-semibold">Cody</h3>
+    </div>
+)
 
-function CompetitorHeader({ title, icon }: { title: string; icon: string }) {
-    return (
-        <div className="mb-8 flex items-center justify-start gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-lg border border-gray-300 bg-white shadow-sm">
-                <img src={icon} alt={`${title} Logo`} className="h-6 w-6" />
-            </div>
-            <h3 className="text-2xl font-semibold">{title}</h3>
+const CompetitorHeader: FunctionComponent<{ title: string; icon: string }> = ({ title, icon }) => (
+    <div className="mb-8 flex items-center justify-start gap-3">
+        <div className="flex h-12 w-12 items-center justify-center rounded-lg border border-gray-300 bg-white shadow-sm">
+            <img src={icon} alt={`${title} Logo`} className="h-6 w-6" />
         </div>
-    )
-}
+        <h3 className="text-2xl font-semibold">{title}</h3>
+    </div>
+)
 
 const ComparePage: FunctionComponent = () => (
     <Layout
