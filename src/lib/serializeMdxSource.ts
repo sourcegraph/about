@@ -11,7 +11,7 @@ export const serializeMdxSource = async (markdownContent: string): Promise<MDXRe
             remarkPlugins: [gfm],
             rehypePlugins: [
                 // Adds syntax highlighting
-                rehypePrettyCode,
+                [rehypePrettyCode, {theme: 'github-light'}],
 
                 // Adds "slug" IDs to each heading, for links and table of contents.
                 rehypeSlug,
