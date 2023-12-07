@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from 'react'
+import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 import Link from 'next/link'

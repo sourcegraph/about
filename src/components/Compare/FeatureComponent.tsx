@@ -1,4 +1,5 @@
 import { FunctionComponent, useState } from 'react'
+
 import { MdCheck, MdClose } from 'react-icons/md'
 
 export const FeatureComponent: FunctionComponent<{ item: any }> = (item: any) => {
@@ -45,7 +46,7 @@ export const FeatureComponent: FunctionComponent<{ item: any }> = (item: any) =>
               )}
 
               {data.cody_details && data.cody_details.length > 0 && (
-                  <button type="button" className="absolute ml-2 text-xs" onClick={() => toggleCodyDetails()}>
+                  <button type="button" className="absolute ml-2 mt-1" onClick={() => toggleCodyDetails()}>
                       ⓘ
                   </button>
               )}
@@ -82,7 +83,7 @@ export const FeatureComponent: FunctionComponent<{ item: any }> = (item: any) =>
               )}
 
               {data.competitor_details && data.competitor_details.length > 0 && (
-                  <button type="button" className="absolute ml-2 text-xs" onClick={() => toggleCompetitorDetails()}>
+                  <button type="button" className="absolute ml-2 mt-1" onClick={() => toggleCompetitorDetails()}>
                       ⓘ
                   </button>
               )}
