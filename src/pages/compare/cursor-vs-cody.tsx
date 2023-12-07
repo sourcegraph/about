@@ -3,8 +3,10 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { ContentSection, Layout } from '../../components'
+import { Layout } from '../../components'
 import { FeatureComponent } from '../../components/Compare/FeatureComponent'
+import { OtherComparisons } from '../../components/Compare/OtherComparisons'
+import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 
@@ -255,7 +257,7 @@ const CompareCopilotPage: FunctionComponent = () => (
             </div>
         }
     >
-        <ContentSection className="grid grid-cols-1 gap-lg md:grid-cols-12">
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 gap-lg md:grid-cols-12">
             <div className="col-span-full">
                 <p>Cursor is an “AI-first Code Editor.” Unlike other solutions which are commonly IDE extensions and plugins, Cursor itself is a fork of VS Code. This gives Cursor some unique functionality, including its “Auto-debug” feature that can attempt to fix errors that appear in the VS Code terminal. Cursor also provides codebase context to the LLM, and users can manually select files and symbols to include as context for questions.</p>
 
@@ -345,7 +347,20 @@ const CompareCopilotPage: FunctionComponent = () => (
 
                 <p>Last updated: 12-06-2023</p>
             </div>
-        </ContentSection>
+        </div>
+
+        <DownloadAppCallToActionSection
+                href="https://sourcegraph.com/cody"
+                title="Get Cody, the AI coding assistant"
+                description="Cody makes it easy to write, fix, and maintain code."
+                colorTheme="light"
+                buttonText="Learn more"
+            />
+
+        <div className="max-w-screen-xl mx-auto my-10">
+            <h2 className="mb-10">Compare other AI Assistants</h2>
+            <OtherComparisons />
+        </div>
     </Layout>
 )
 

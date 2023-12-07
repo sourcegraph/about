@@ -48,7 +48,7 @@ const ComparePage: FunctionComponent = () => (
                 <h1 className="flex items-center justify-center gap-3">
                     Compare
                 </h1>
-                <p className="mt-6 text-3xl text-black">Comparing Cody to other code AI assistants.</p>
+                <p className="mt-6 text-3xl text-black">Compare Cody to other code AI assistants.</p>
             </div>
         }
     >

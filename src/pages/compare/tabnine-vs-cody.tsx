@@ -3,8 +3,10 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { ContentSection, Layout } from '../../components'
+import { Layout } from '../../components'
 import { FeatureComponent } from '../../components/Compare/FeatureComponent'
+import { OtherComparisons } from '../../components/Compare/OtherComparisons'
+import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 
@@ -255,7 +257,7 @@ const CompareCopilotPage: FunctionComponent = () => (
             </div>
         }
     >
-        <ContentSection className="grid grid-cols-1 gap-lg md:grid-cols-12">
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 gap-lg md:grid-cols-12">
             <div className="col-span-full">
                 <p>Tabnine is an AI assistant primarily focused on code autocomplete. Tabnine Chat, an in-IDE chat feature, is also in beta but only for Enterprise users. The free tier of Tabnine has limited functionality, offering short code completions of 2-3 words, and not offering chat or other AI commands.</p>
                 <p>The most unique aspect of Tabnine is its hybrid LLM approach. Tabnine's free tier (Starter) runs a small model on the user's local machine and a larger model in the cloud. Tabnine Pro also offers a model where users can run the Tabnine AI models entirely on their local machine.</p>
@@ -343,7 +345,20 @@ const CompareCopilotPage: FunctionComponent = () => (
 
                 <p>Last updated: 12-06-2023</p>
             </div>
-        </ContentSection>
+        </div>
+
+        <DownloadAppCallToActionSection
+                href="https://sourcegraph.com/cody"
+                title="Get Cody, the AI coding assistant"
+                description="Cody makes it easy to write, fix, and maintain code."
+                colorTheme="light"
+                buttonText="Learn more"
+            />
+
+        <div className="max-w-screen-xl mx-auto my-10">
+            <h2 className="mb-10">Compare other AI Assistants</h2>
+            <OtherComparisons />
+        </div>
     </Layout>
 )
 
