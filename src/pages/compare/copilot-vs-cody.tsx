@@ -314,13 +314,11 @@ const CompareCopilotPage: FunctionComponent = () => (
     >
         <ContentSection className="grid grid-cols-1 gap-lg md:grid-cols-12">
             <div className="col-span-full">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p>Copilot is an AI code assistant that offers autocomplete, chat, and commands. It has strong autocomplete performance using the OpenAI Codex model, and it offers in-IDE chat with GPT-4 (with chat in the GitHub mobile app coming in 2024). It will also offer deep integration with the GitHub platform when Copilot Enterprise releases in 2024.</p>
+
+                <p>Unfortunately, Copilot does not offer a standard free tier. Copilot is also limited in how it uses code context on its Individual and Business tiers; codebase personalization is limited to the upcoming Copilot Enterprise. Copilot Enterprise's use of codebase context will also be limited to code hosted in GitHub.</p>
+
+                <p><strong>TL;DR:</strong> Copilot is a good choice for individuals who are willing to pay for a solution or for enterprises looking for a solution that is deeply embedded in the GitHub ecosystem. However, Cody is the better option for individuals who want a free AI code assistant that they can personalize using codebase context, or for users who would like to select which LLM they'd like to use. Cody is also a good option for enterprise users who want to personalize their AI with code from non-GitHub code hosts.</p>
 
                 <table className="table-fixed border-0">
                     <thead>

@@ -300,33 +300,30 @@ const FeatureComponent: FunctionComponent<{ item: any }> = (item: any) => {
 const CompareCopilotPage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph Cody vs. TabNine',
-            description: 'Feature comparison of Sourcegraph Cody and TabNine',
+            title: 'Sourcegraph Cody vs. Tabnine',
+            description: 'Feature comparison of Sourcegraph Cody and Tabnine',
         }}
         hero={
             <div className="container mx-auto pt-5xl text-center">
                 <h1 className="flex items-center justify-center gap-3">
-                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[48px] w-[48px]" /> {' '} vs <img src="/assets/compare/tabnine.svg" alt="TabNine Logo" className="h-[48px] w-[48px]" />
+                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[48px] w-[48px]" /> {' '} vs <img src="/assets/compare/tabnine.svg" alt="Tabnine Logo" className="h-[48px] w-[48px]" />
                 </h1>
-                <p className="mt-6 text-3xl text-black">Sourcegraph Cody vs. TabNine</p>
+                <p className="mt-6 text-3xl text-black">Sourcegraph Cody vs. Tabnine</p>
             </div>
         }
     >
         <ContentSection className="grid grid-cols-1 gap-lg md:grid-cols-12">
             <div className="col-span-full">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p>Tabnine is an AI assistant primarily focused on code autocomplete. Tabnine Chat, an in-IDE chat feature, is also in beta but only for Enterprise users. The free tier of Tabnine has limited functionality, offering short code completions of 2-3 words, and not offering chat or other AI commands.</p>
+                <p>The most unique aspect of Tabnine is its hybrid LLM approach. Tabnine's free tier (Starter) runs a small model on the user's local machine and a larger model in the cloud. Tabnine Pro also offers a model where users can run the Tabnine AI models entirely on their local machine.</p>
+                <p><strong>TL;DR:</strong> Tabnine is a good choice for users who want to run their LLM entirely on their local machine, but its Starter and Pro tiers are restricted to only autocomplete. Cody Free and Cody Pro offer a wider range of features (autocomplete, chat, and commands) using cloud-based models.</p>
+                <p></p>
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
                             <th className="w-1/2 border-0 font-semibold text-left">Features</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">TabNine</th>
+                            <th className="w-1/4 border-0 font-semibold">Tabnine</th>
                         </tr>
                     </thead>
 
@@ -342,7 +339,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                         <tr>
                             <th className="w-1/2 border-0 font-semibold text-left">IDE support</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">TabNine</th>
+                            <th className="w-1/4 border-0 font-semibold">Tabnine</th>
                         </tr>
                     </thead>
 
@@ -358,7 +355,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                         <tr>
                             <th className="w-1/2 border-0 font-semibold text-left">LLM / Model</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">TabNine</th>
+                            <th className="w-1/4 border-0 font-semibold">Tabnine</th>
                         </tr>
                     </thead>
 
@@ -374,7 +371,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                         <tr>
                             <th className="w-1/2 border-0 font-semibold text-left">Context and personalization</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">TabNine</th>
+                            <th className="w-1/4 border-0 font-semibold">Tabnine</th>
                         </tr>
                     </thead>
 
@@ -390,7 +387,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                         <tr>
                             <th className="w-1/2 border-0 font-semibold text-left">Pricing</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">TabNine</th>
+                            <th className="w-1/4 border-0 font-semibold">Tabnine</th>
                         </tr>
                     </thead>
 

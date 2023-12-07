@@ -314,13 +314,11 @@ const CompareCopilotPage: FunctionComponent = () => (
     >
         <ContentSection className="grid grid-cols-1 gap-lg md:grid-cols-12">
             <div className="col-span-full">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p>Cursor is an “AI-first Code Editor.” Unlike other solutions which are commonly IDE extensions and plugins, Cursor itself is a fork of VS Code. This gives Cursor some unique functionality, including its “Auto-debug” feature that can attempt to fix errors that appear in the VS Code terminal. Cursor also provides codebase context to the LLM, and users can manually select files and symbols to include as context for questions.</p>
+
+                <p>The main downside of Cursor being a fork of VS Code is that it is not available to use with other IDEs (such as the JetBrains family). Also, unlike Cody, Cursor does not presently offer code autocomplete.</p>
+
+                <p><strong>TL;DR:</strong> Cursor is a good choice for users who are willing to migrate from their preferred IDE to Cursor. It offers unique functionality and has strong codebase context features. However, Cody is a better option for users who want code autocomplete or who want their code AI to work within their IDE of choice.</p>
                 
                 <table className="table-fixed border-0">
                     <thead>

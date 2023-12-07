@@ -325,14 +325,11 @@ const CompareCopilotPage: FunctionComponent = () => (
     >
         <ContentSection className="grid grid-cols-1 gap-lg md:grid-cols-12">
             <div className="col-span-full">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                
+                <p>CodeWhisperer is an AI code assistant from Amazon focused on autocomplete, free for individuals with AWS Builder IDs. Uniquely, CodeWhisperer is optimized to give code completions based on best practices for using AWS APIs. Enterprise users can also customize CodeWhisperer for their own codebases, but this is not available for free-tier users.</p>
+
+                <p>CodeWhisperer itself does not offer chat or command features, but AWS offers a chat assistant (“Amazon Q”) in the same IDE extension as CodeWhisperer. Q is currently in a free preview, and it is expected to cost $20 / user / month once it is fully released. </p>
+                <p><strong>TL;DR:</strong> CodeWhisperer is a good solution for developers primarily looking for autocomplete or developers working with AWS APIs. It can also provide context-aware autocomplete for enterprises using the new codebase customization. Meanwhile, Cody is a good option for developers who want more expansive functionality, such as chat and commands alongside autocomplete, or for free-tier users who are looking for a context-aware code AI.</p>
+                <p></p>               
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
