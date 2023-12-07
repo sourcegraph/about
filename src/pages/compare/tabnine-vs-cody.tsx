@@ -4,12 +4,12 @@ import classNames from 'classnames'
 import Link from 'next/link'
 
 import { Layout } from '../../components'
+import CompareHero from '../../components/Compare/CompareHero'
 import { FeatureComponent } from '../../components/Compare/FeatureComponent'
 import { OtherComparisons } from '../../components/Compare/OtherComparisons'
-import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
+import { CodyCallToActionContentSection } from '../../components/cta/CodyCallToActionContentSection'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
-import CompareHero from '../../components/Compare/CompareHero'
 
 const featureSupport = [
     {
@@ -361,12 +361,11 @@ const CompareCopilotPage: FunctionComponent = () => (
             </div>
         </div>
 
-        <DownloadAppCallToActionSection
-            href="https://sourcegraph.com/cody"
+        <CodyCallToActionContentSection
             title="Get Cody, the AI coding assistant"
             description="Cody makes it easy to write, fix, and maintain code."
-            colorTheme="light"
-            buttonText="Learn more"
+            cta1={{ text: 'Try Cody for free', ctaStyle: 'primaryButtonWhite', link: '/cody' }}
+            cta2={{ text: 'See enterprise pricing', ctaStyle: 'link', link: '/cody/pricing' }}
         />
 
         <div className="mx-auto my-10 max-w-screen-xl">
