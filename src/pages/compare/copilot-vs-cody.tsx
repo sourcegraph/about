@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { Layout } from '../../components'
 import { FeatureComponent } from '../../components/Compare/FeatureComponent'
 import { OtherComparisons } from '../../components/Compare/OtherComparisons'
-import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
+import { CodyCallToActionContentSection } from '../../components/cta/CodyCallToActionContentSection'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 
@@ -370,14 +370,8 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <p>Last updated: 12-06-2023</p>
             </div>
         </div>
-
-        <DownloadAppCallToActionSection
-                href="https://sourcegraph.com/cody"
-                title="Get Cody, the AI coding assistant"
-                description="Cody makes it easy to write, fix, and maintain code."
-                colorTheme="light"
-                buttonText="Learn more"
-            />
+        
+        <CodyCallToActionContentSection title="Get Cody, the AI coding assistant" description="Cody makes it easy to write, fix, and maintain code." cta1={{text:"Try Cody for free", ctaStyle: "primaryButtonWhite", link: "/cody"}} cta2={{text:"See enterprise pricing", ctaStyle:"link", link:"/cody/pricing"}} />
 
         <div className="max-w-screen-xl mx-auto my-10">
             <h2 className="mb-10">Compare other code AI assistants</h2>
