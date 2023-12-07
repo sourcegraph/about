@@ -90,7 +90,7 @@ export const CodyCallToActionContentSection: FunctionComponent<CtaSection> = ({
                 <div
                     className="bg-[] mx-auto grid h-full min-h-[291px] max-w-screen-xl grid-cols-12 items-center bg-[center_left] bg-repeat-y px-sm py-3xl lg:pl-0"
                     // eslint-disable-next-line react/forbid-dom-props
-                    style={lgAndUp ? { backgroundImage: `url('/cody/cody-logo.svg')`, backgroundRepeat: 'no-repeat', backgroundSize: '150px' } : undefined}
+                    style={lgAndUp ? { backgroundImage: 'url(\'/cody/cody-logo.svg\')', backgroundRepeat: 'no-repeat', backgroundSize: '150px' } : undefined}
                 >
                     <div className="col-span-full md:col-span-7 lg:col-span-6 lg:col-start-3 lg:pl-xl">
                         <h2 className="mb-sm text-white">{title}</h2>
