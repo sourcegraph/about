@@ -83,7 +83,7 @@ graph TD
     D --> E
 ```
 
-Simply copy and paste this code into a Mermaid viewer, and voilà! The flowchart will magically appear before your eyes, revealing the code's intricate dance in all its glory. A Mermaid viewer and editor can be found at [[https://mermaid.live/](https://mermaid.live/)](https://mermaid.live/](https://mermaid.live/)). If you are using VS Code you can install [this plugin](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) which adds Mermaid diagram and flowchart support to VS Code's built-in Markdown preview.
+Simply copy and paste this code into a Mermaid viewer, and voilà! The flowchart will magically appear before your eyes, revealing the code's intricate dance in all its glory. A Mermaid viewer and editor can be found at [mermaid.live](https://mermaid.live/). If you are using VS Code you can install [this plugin](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) which adds Mermaid diagram and flowchart support to VS Code's built-in Markdown preview.
 
 This is the generated flowchart shown in the online viewer:
 
