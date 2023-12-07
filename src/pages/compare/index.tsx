@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { MdCheck, MdClose } from 'react-icons/md'
 
 import { ContentSection, Layout } from '../../components'
+import { CodyCallToActionContentSection } from '../../components/cta/CodyCallToActionContentSection'
 
 const CodyHeader: FunctionComponent = () => (
     <div className="mb-8 flex items-center justify-start gap-3">
@@ -202,7 +203,7 @@ const ComparePage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection className="mb-32 grid grid-cols-1 gap-1 md:grid-cols-3 ">
+        <ContentSection className="mb-32 grid grid-cols-1 gap-1 md:grid-cols-3">
             <div className="col-span mr-10 pb-5 pt-10">
                 <h2 className="mb-3 text-3xl">Cody vs Tabnine</h2>
                 <p className="mb-5 text-gray-500">
@@ -255,6 +256,14 @@ const ComparePage: FunctionComponent = () => (
                 </ul>
             </div>
         </ContentSection>
+        <div className="-mt-40">
+            <CodyCallToActionContentSection
+                title="Get Cody, the AI coding assistant"
+                description="Cody makes it easy to write, fix, and maintain code."
+                cta1={{ text: 'Try Cody for free', ctaStyle: 'primaryButtonWhite', link: '/cody' }}
+                cta2={{ text: 'See enterprise pricing', ctaStyle: 'link', link: '/cody/pricing' }}
+            />
+        </div>
     </Layout>
 )
 
