@@ -280,7 +280,7 @@ const CompareCopilotPage: FunctionComponent = () => (
             </CompareHero>
         }
     >
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-lg px-6 md:grid-cols-12 xl:px-0">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-lg px-6 md:grid-cols-12 xl:px-0 px-5">
             <div className="col-span-full">
                 <table className="table-fixed border-0">
                     <thead>
