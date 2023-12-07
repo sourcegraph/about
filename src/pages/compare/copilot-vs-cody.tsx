@@ -9,6 +9,7 @@ import { OtherComparisons } from '../../components/Compare/OtherComparisons'
 import { CodyCallToActionContentSection } from '../../components/cta/CodyCallToActionContentSection'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
+import CompareHero from '../../components/Compare/CompareHero'
 
 const featureSupport = [
     {
@@ -249,21 +250,11 @@ const CompareCopilotPage: FunctionComponent = () => (
             description: 'Feature comparison of Sourcegraph Cody and GitHub Copilot',
         }}
         hero={
-            <div className="container mx-auto pt-5xl text-center">
-                <h1 className="flex items-center justify-center gap-3">
-                    <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[48px] w-[48px]" /> vs{' '}
-                    <img
-                        src="/assets/compare/github-copilot.svg"
-                        alt="GitHub Copilot Logo"
-                        className="h-[48px] w-[48px]"
-                    />
-                </h1>
-                <p className="mt-6 text-3xl text-black">Sourcegraph Cody vs. GitHub Copilot</p>
-            </div>
-        }
-    >
-        <div className="max-w-screen-xl mx-auto grid grid-cols-1 gap-lg md:grid-cols-12">
-            <div className="col-span-full">
+            <CompareHero
+                title="Sourcegraph Cody vs GitHub Copilot"
+                competitorDescription="GitHub Copilot Logo"
+                competitorIcon="/assets/compare/github-copilot.svg"
+            >
                 <p>
                     Copilot is an AI code assistant that offers autocomplete, chat, and commands. It has strong
                     autocomplete performance using the OpenAI Codex model, and it offers in-IDE chat with GPT-4 (with
@@ -279,14 +270,18 @@ const CompareCopilotPage: FunctionComponent = () => (
                 </p>
 
                 <p>
-                    <strong>TL;DR:</strong> Copilot is a good choice for individuals who are willing to pay for a
-                    solution or for enterprises looking for a solution that is deeply embedded in the GitHub ecosystem.
-                    However, Cody is the better option for individuals who want a free AI code assistant that they can
-                    personalize using codebase context, or for users who would like to select which LLM they'd like to
-                    use. Cody is also a good option for enterprise users who want to personalize their AI with code from
-                    non-GitHub code hosts.
+                    <strong className="inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500">TL;DR:</strong>{' '}
+                    Copilot is a good choice for individuals who are willing to pay for a solution or for enterprises
+                    looking for a solution that is deeply embedded in the GitHub ecosystem. However, Cody is the better
+                    option for individuals who want a free AI code assistant that they can personalize using codebase
+                    context, or for users who would like to select which LLM they'd like to use. Cody is also a good
+                    option for enterprise users who want to personalize their AI with code from non-GitHub code hosts.
                 </p>
-
+            </CompareHero>
+        }
+    >
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-lg px-6 md:grid-cols-12 xl:px-0">
+            <div className="col-span-full">
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
@@ -367,13 +362,18 @@ const CompareCopilotPage: FunctionComponent = () => (
                     </tbody>
                 </table>
 
-                <p>Last updated: 12-06-2023</p>
+                <p className="mt-1 text-sm text-gray-400">Last updated: 12-06-2023</p>
             </div>
         </div>
-        
-        <CodyCallToActionContentSection title="Get Cody, the AI coding assistant" description="Cody makes it easy to write, fix, and maintain code." cta1={{text:'Try Cody for free', ctaStyle: 'primaryButtonWhite', link: '/cody'}} cta2={{text:'See enterprise pricing', ctaStyle:'link', link:'/cody/pricing'}} />
 
-        <div className="max-w-screen-xl mx-auto my-10">
+        <CodyCallToActionContentSection
+            title="Get Cody, the AI coding assistant"
+            description="Cody makes it easy to write, fix, and maintain code."
+            cta1={{ text: 'Try Cody for free', ctaStyle: 'primaryButtonWhite', link: '/cody' }}
+            cta2={{ text: 'See enterprise pricing', ctaStyle: 'link', link: '/cody/pricing' }}
+        />
+
+        <div className="mx-auto my-10 max-w-screen-xl">
             <h2 className="mb-10">Compare other code AI assistants</h2>
             <OtherComparisons />
         </div>
