@@ -317,7 +317,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <p>Tabnine is an AI assistant primarily focused on code autocomplete. Tabnine Chat, an in-IDE chat feature, is also in beta but only for Enterprise users. The free tier of Tabnine has limited functionality, offering short code completions of 2-3 words, and not offering chat or other AI commands.</p>
                 <p>The most unique aspect of Tabnine is its hybrid LLM approach. Tabnine's free tier (Starter) runs a small model on the user's local machine and a larger model in the cloud. Tabnine Pro also offers a model where users can run the Tabnine AI models entirely on their local machine.</p>
                 <p><strong>TL;DR:</strong> Tabnine is a good choice for users who want to run their LLM entirely on their local machine, but its Starter and Pro tiers are restricted to only autocomplete. Cody Free and Cody Pro offer a wider range of features (autocomplete, chat, and commands) using cloud-based models.</p>
-                <p></p>
+                
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>

@@ -329,7 +329,7 @@ const CompareCopilotPage: FunctionComponent = () => (
 
                 <p>CodeWhisperer itself does not offer chat or command features, but AWS offers a chat assistant (“Amazon Q”) in the same IDE extension as CodeWhisperer. Q is currently in a free preview, and it is expected to cost $20 / user / month once it is fully released. </p>
                 <p><strong>TL;DR:</strong> CodeWhisperer is a good solution for developers primarily looking for autocomplete or developers working with AWS APIs. It can also provide context-aware autocomplete for enterprises using the new codebase customization. Meanwhile, Cody is a good option for developers who want more expansive functionality, such as chat and commands alongside autocomplete, or for free-tier users who are looking for a context-aware code AI.</p>
-                <p></p>               
+              
                 <table className="table-fixed border-0">
                     <thead>
                         <tr>
