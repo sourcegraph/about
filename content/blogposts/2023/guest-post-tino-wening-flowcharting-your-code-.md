@@ -9,8 +9,8 @@ description: "What are the benefits of using Cody and Mermaid to generate flowch
 tags: [blog]
 slug: "using-cody-and-mermaid-to-generate-flowcharts"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/guest-blog-flowcharting-code-cody-mermaid-og.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/guest-blog-flowcharting-code-cody-mermaid-og.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/guest-post-cody-mermaid-tino-w-2x-og.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/guest-post-cody-mermaid-tino-w-2x-og.png
 ---
 
 <Alert type="secondary">This is a guest blog post from our community. <a href="https://discord.com/servers/sourcegraph-969688426372825169" target="_blank">Join our Discord</a> to meet the author and connect with other developers passionate about Code Search and AI!</Alert>
