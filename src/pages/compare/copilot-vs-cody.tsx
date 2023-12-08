@@ -197,7 +197,7 @@ const pricingSupport = [
         cody_details: '',
         view_cody_details: false,
         competitor: false,
-        competitor_details: 'Free for students, teachers, and OSS mainters',
+        competitor_details: 'Free for students, teachers, and OSS maintainers',
         view_competitor_details: false,
     },
     {
