@@ -118,7 +118,7 @@ const Home: FunctionComponent<HomeProps> = ({ tweets }) => {
                             '-px-sm !bg-transparent transition-opacity duration-300',
                             isInnovationSectionRefInView ? 'opacity-100 delay-[100ms]' : 'opacity-10'
                         )}
-                        headline="Over 1.8M engineers use Sourcegraph"
+                        headline="Over 2.5M engineers use Sourcegraph"
                         headlineClassName="!text-4xl"
                         monochrome={true}
                         dark={true}
