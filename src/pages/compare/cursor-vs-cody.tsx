@@ -199,18 +199,7 @@ const pricingSupport = [
         competitor: false,
         competitor_details: 'Free for students, teachers, and OSS mainters',
         view_competitor_details: false,
-    },
-    {
-        feature: 'Pro tier pricing for individuals',
-        feature_details: '',
-        view_feature_details: false,
-        cody: '$9 / user / month',
-        cody_details: '',
-        view_cody_details: false,
-        competitor: '$20 / user / month',
-        competitor_details: '',
-        view_competitor_details: false,
-    },
+    }
 ]
 
 const GetStartedButton: FunctionComponent<{ className?: string }> = ({ className }) => {
