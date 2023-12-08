@@ -1,7 +1,7 @@
-import rehypePrism from '@mapbox/rehype-prism'
 import type { MDXRemoteSerializeResult } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import rehypePrettyCode from 'rehype-pretty-code'
 import rehypeSlug from 'rehype-slug'
 import gfm from 'remark-gfm'
 
@@ -11,7 +11,7 @@ export const serializeMdxSource = async (markdownContent: string): Promise<MDXRe
             remarkPlugins: [gfm],
             rehypePlugins: [
                 // Adds syntax highlighting
-                rehypePrism,
+                [rehypePrettyCode, {theme: 'github-light'}],
 
                 // Adds "slug" IDs to each heading, for links and table of contents.
                 rehypeSlug,
