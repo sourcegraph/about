@@ -52,7 +52,7 @@ const CompareHero: FunctionComponent<Props> = ({ title, competitorIcon, competit
                             </Link>
 
                             {/* title */}
-                            <h1 className="text-4xl font-bold tracking-tight text-gray-700 sm:text-6xl">{title}</h1>
+                            <h1>{title}</h1>
 
                             {/* the comparison paragraphs */}
                             <div className="mt-10 space-y-5 text-base leading-[1.6] text-gray-500 sm:max-w-md lg:mr-10 lg:max-w-none">
