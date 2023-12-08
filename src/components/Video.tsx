@@ -8,7 +8,7 @@ import { EventName, getEventLogger } from '../hooks/eventLogger'
 interface Video {
     host?: 'gcp' | 'self'
     source: {
-        webm: string
+        webm?: string
         mp4: string
     }
     loop: boolean
