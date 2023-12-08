@@ -39,34 +39,20 @@ const CompareHero: FunctionComponent<Props> = ({ title, competitorIcon, competit
                 <rect width="100%" height="100%" strokeWidth={0} fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" />
             </svg>
 
-            {/* gradient */}
-            <div
-                className="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
-                aria-hidden="true"
-            >
-                <div
-                    className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
-                    style={{
-                        clipPath:
-                            'polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)',
-                    }}
-                />
-            </div>
-
-                <div className="overflow-hidden">
-                    <div className="mx-auto max-w-7xl px-6 pb-24 pt-28 xl:px-0">
-                        <div className="gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-                            <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                                {/* comparisons link */}
-                                <Link
-                                    href="/compare"
-                                    className="mb-4 inline-block text-sm font-semibold text-gray-400 transition hover:text-blue-500 hover:underline"
-                                >
-                                    Comparisons /
-                                </Link>
+            <div className="overflow-hidden">
+                <div className="mx-auto max-w-7xl px-6 pb-24 pt-28 xl:px-0">
+                    <div className="gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+                        <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+                            {/* comparisons link */}
+                            <Link
+                                href="/compare"
+                                className="mb-4 inline-block text-sm font-semibold text-gray-400 transition hover:text-blue-500 hover:underline"
+                            >
+                                Comparisons /
+                            </Link>
 
                             {/* title */}
-                            <h1 className="text-4xl font-bold tracking-tight text-gray-700 sm:text-6xl">{title}</h1>
+                            <h1>{title}</h1>
 
                             {/* the comparison paragraphs */}
                             <div className="mt-10 space-y-5 text-base leading-[1.6] text-gray-500 sm:max-w-md lg:mr-10 lg:max-w-none">

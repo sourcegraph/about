@@ -15,7 +15,7 @@ const CodyHeader: FunctionComponent = () => (
     </div>
 )
 
-const CompetitorHeader: FunctionComponent<{title: string, icon: string}> = ({ title, icon }) => (
+const CompetitorHeader: FunctionComponent<{ title: string; icon: string }> = ({ title, icon }) => (
     <div className="mb-8 flex items-center justify-start gap-3">
         <div className="flex h-12 w-12 items-center justify-center rounded-lg border border-gray-300 bg-white shadow-sm">
             <img src={icon} alt={`${title} Logo`} className="h-6 w-6" />
@@ -33,7 +33,7 @@ const ComparePage: FunctionComponent = () => (
         hero={
             <div className="relative isolate bg-white px-6 pb-16 pt-24 lg:px-8">
                 <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="text-gray-900 text-4xl font-bold tracking-tight sm:text-8xl">Compare</h2>
+                    <h1>Compare</h1>
                     <p className="mt-3 text-xl leading-8 text-gray-600">
                         How does Cody stack up to other code AI asssistants?
                     </p>
