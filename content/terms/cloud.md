@@ -1,6 +1,6 @@
 ---
 layout: markdown
-title: Terms of Service for Sourcegraph Cloud
+title: Terms of Service for Sourcegraph
 ---
 
 [![Short Banner_White](https://github.com/sourcegraph/about/assets/117413623/5386f5fd-08c4-4e9f-a4eb-60919d4fd0b2)](https://app.termscout.com/certify/sourcegraph-certified-contract#ccr-highlights)
@@ -10,7 +10,7 @@ Last modified: December 1, 2023
 
 See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/ab[…]rms-dotcom+type:diff&patternType=standard&sm=0&groupBy=author) since the [previous version](/terms/archives/cloud/2023-10-10/) (Cloud) or the [previous version](/terms/archives/self-hosted/2023-06-28) (Self-Hosted) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives).
 
-Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of Sourcegraph Cloud.
+Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of Sourcegraph.
 
 <div className="break-words bg-gray-100 p-sm mb-sm">
   <span className="text-blurple-400">
@@ -21,9 +21,7 @@ Thank you for using Sourcegraph! This page lays out the basic terms and conditio
 
   Are you interested in terms for...
 
-  - **Sourcegraph Cloud**: You're in the right place! Read on.
-
-  - **[A self-hosted Sourcegraph instance](/terms/self-hosted)**: If you’d like to use a self-hosted Sourcegraph instance (e.g. one deployed via the `docker run` command in our [Quickstart](https://docs.sourcegraph.com)) to search, navigate, and analyze your code, rather than the Sourcegraph Cloud instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with your self-hosted instance, please see our [terms and conditions](/terms/self-hosted).
+  - **Sourcegraph**: These terms apply to Cody and code search for hosted and self-hosted instances. Read on.
 
   - **[Government](/terms/gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you’re using our software as an employee or contractor of the U.S. Government, our [Supplemental Terms for U.S. Government Users](/terms/gov) apply. Those terms and conditions supplement these terms and conditions.
 </div>
