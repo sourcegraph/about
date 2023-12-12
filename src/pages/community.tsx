@@ -1,7 +1,50 @@
 import { FunctionComponent } from 'react'
 
-import { ContentSection, Layout, Tabs, YouTube } from '../components'
+import { FaDiscord, FaGithub } from 'react-icons/fa'
+
+import Person1 from '../../public/person1.svg'
+import Person2 from '../../public/person2.svg'
+import Person3 from '../../public/person3.svg'
+import XLogo from '../../public/x-logo.svg'
+import { ContentSection, Layout, Tabs, Heading } from '../components'
 import { buttonStyle, buttonLocation } from '../data/tracking'
+
+const events = {
+    upcoming: [
+        {
+            title: 'React Advanced',
+            location: 'London, UK',
+            date: 'December 7, 2023',
+        },
+        {
+            title: 'React Advanced',
+            location: 'London, UK',
+            date: 'December 7, 2023',
+        },
+        {
+            title: 'React Advanced',
+            location: 'London, UK',
+            date: 'December 7, 2023',
+        },
+    ],
+    past: [
+        {
+            title: 'React Advanced',
+            location: 'London, UK',
+            date: 'December 7, 2023',
+        },
+        {
+            title: 'React Advanced',
+            location: 'London, UK',
+            date: 'December 7, 2023',
+        },
+        {
+            title: 'React Advanced',
+            location: 'London, UK',
+            date: 'December 7, 2023',
+        },
+    ],
+}
 
 export const Community: FunctionComponent = () => (
     <Layout
@@ -10,175 +53,168 @@ export const Community: FunctionComponent = () => (
             description:
                 "Sourcegraph is so much more than a universal code search engine. It's the story of new gen-developers who renaissance-d the way we work, live, and collaborate. It's our unparalleled thinking that creates endless possibilities, to rebuild, to disrupt and to innovate relentlessly despite all the complexities of the big code. But we're just getting started. Imagine the road ahead if we take this journey together.",
         }}
-        className="community-page"
-        heroAndHeaderClassName="bg-blue-200"
-        hero={
-            <div className="container mx-auto pb-sm">
-                <div className="grid grid-cols-1 gap-lg p-8 lg:grid-cols-2">
-                    <div>
-                        <div className="text-uppercase">Join us</div>
-                        <h1 className="mb-0">Welcome to the Sourcegraph Community</h1>
-                        <p className="my-8">
-                            Seek guidance. Share best practices. Ask questions. The Sourcegraph Community is your new
-                            platform to connect with one of the world's most talented developer communities. Here, we
-                            encourage everyone to learn from each other and share everything they know. Because when we
-                            collaborate, we grow faster, better, and stronger.
-                        </p>
-                        <a
-                            className="btn btn-primary"
-                            href="https://discord.gg/rDPqBejz93"
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.body}
-                            data-button-type="cta"
-                            title="Join our Discord"
-                        >
-                            Join our Discord
-                        </a>
-                    </div>
-                    <div>
-                        <img
-                            src="/community/hero_illustration.svg"
-                            alt="Sourcegraph Community"
-                            title="Sourcegraph Community"
-                            className="mt-5xl w-full"
-                        />
-                    </div>
+        className="community-page bg-gray-50"
+    >
+        <ContentSection parentClassName="md:pt-24 md:pb-24 !px-0" className="lg:px-6">
+            <div className="grid grid-cols-1">
+                <Heading size="h1" className="mb-6">
+                    Welcome to the Sourcegraph Community
+                </Heading>
+                <div className="max-w-3xl text-gray-500 ">
+                    <Heading size="h3">
+                        Our community is driven by a shared passion for open source and developer productivity, fueled
+                        by the power of AI tolls & code search.
+                    </Heading>
+                    <br />
+                    <p className="mb-8 text-lg">
+                        Whether you’re a seasoned veteran or a budding enthusiast, join us to explore, learn, and
+                        collaborate, as we collectively transform the way we read, write, and fix code.
+                    </p>
+                    <a
+                        className="btn btn-primary mr-4"
+                        href="https://discord.gg/rDPqBejz93"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                        title="Join our Discord"
+                    >
+                        Discord
+                    </a>
+                    <a
+                        className="btn btn-outline btn-outline-primary"
+                        href="https://docs.sourcegraph.com/"
+                        data-button-style={buttonStyle.outline}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                        title="Write for us"
+                    >
+                        Write for us
+                    </a>
                 </div>
             </div>
-        }
-    >
-        <ContentSection background="white">
-            <h2 className="mb-8 text-center">What's next?</h2>
-            <Tabs
-                tabs={[
-                    {
-                        key: 'events',
-                        title: 'Events',
-                        content: (
-                            <div className="m-auto max-w-xl">
-                                <p>That's it for 2023. See you next year!</p>
-                                {/* <ul>
-                                    <li>
-                                        <a
-                                            href="https://reinvent.awsevents.com/"
-                                            title="AWS: ReInvent"
-                                            data-button-style={buttonStyle.text}
-                                            data-button-location={buttonLocation.body}
-                                            data-button-type="cta"
-                                        >
-                                            That's it for 2023
-                                        </a>{' '}
-                                        - November 27-30, 2023
-                                    </li>
-                                </ul> */}
-                            </div>
-                        ),
-                    },
-                    {
-                        key: 'sourcegraph_podcast',
-                        title: 'Sourcegraph Podcast',
-                        content: (
-                            <div className="m-auto max-w-xl">
-                                <YouTube title="Sourcegraph Podcast" id="ZLtqHFxEDm8" />
-                                <p className="pt-xs">
-                                    <strong>Subscribe:</strong>&nbsp;
-                                    <a
-                                        href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA"
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.body}
-                                        data-button-type="cta"
-                                        title="YouTube"
-                                    >
-                                        YouTube
-                                    </a>
-                                    &nbsp;
-                                    <a
-                                        href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009"
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.body}
-                                        data-button-type="cta"
-                                        title="Apple"
-                                    >
-                                        Apple
-                                    </a>
-                                    &nbsp;
-                                    <a
-                                        href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6"
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.body}
-                                        data-button-type="cta"
-                                        title="Spotify"
-                                    >
-                                        Spotify
-                                    </a>
-                                    &nbsp;
-                                    <a
-                                        href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw=="
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.body}
-                                        data-button-type="cta"
-                                        title="Google"
-                                    >
-                                        Google
-                                    </a>
-                                    &nbsp;
-                                    <a
-                                        href="https://feeds.buzzsprout.com/1097978.rss"
-                                        data-button-style={buttonStyle.text}
-                                        data-button-location={buttonLocation.body}
-                                        data-button-type="cta"
-                                        title="RSS"
-                                    >
-                                        RSS
-                                    </a>
-                                </p>
-                            </div>
-                        ),
-                    },
-                ]}
-            />
         </ContentSection>
-        <ContentSection>
-            <div className="mx-auto max-w-screen-xl px-4 sm:grid sm:grid-cols-2">
-                <div className="mb-4 sm:mb-0 sm:pr-4">
-                    <h2 className="mb-4">We’d love to hear from you!</h2>
-                    <br />
-                    Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn,
-                    or email us at{' '}
-                    <a
-                        href="mailto:community@sourcegraph.com"
-                        title="community@sourcegraph.com"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.trySourcegraph}
-                        data-button-type="cta"
-                    >
-                        community@sourcegraph.com
-                    </a>
-                    .
+        <ContentSection parentClassName="md:py-0" className="lg:px-6">
+            <div className="sg-community-experts mx-auto flex max-w-screen-xl flex-col items-center py-16">
+                <div className="flex max-w-[840px] flex-col items-center">
+                    <Heading size="h2" className="max-w-[672px] text-center">
+                        Our experts are the heart of our community
+                    </Heading>
+                    <p className="text-center text-lg">
+                        Our experts embody the spirit of collaboration and knowledge sharing. They generously contribute
+                        their expertise through insightful blog posts, pull requests, engaging tasks, and active
+                        participation on Discord and other social media.
+                    </p>
+                    <p className="text-center text-lg">
+                        Connect with them to learn from their experiences and broaden your understanding of AI, code
+                        search, and open source.
+                    </p>
                 </div>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-center">
-                    <a
-                        className="btn btn-secondary mb-4 md:mr-4 md:mb-0"
-                        data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.trySourcegraph}
-                        data-button-type="cta"
-                        href="https://discord.gg/rDPqBejz93"
-                        title="Join us on Discord"
-                    >
-                        Join us on Discord
-                    </a>
-                    <br />
-                    <a
-                        className="btn btn-primary"
-                        data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.trySourcegraph}
-                        data-button-type="cta"
-                        href="mailto:community@sourcegraph.com"
-                        title="Send us an email"
-                    >
-                        Send us an email
-                    </a>
+                <div className="flex w-full items-center justify-between gap-8 py-16">
+                    <div className="flex w-full flex-col items-center">
+                        <div className="mb-4 h-12 w-12 rounded-full bg-gray-300">
+                            <img src={Person1} alt="avatar" />
+                        </div>
+                        <Heading size="h4">Bonnie Green</Heading>
+                        <p className="text-grey-700 text-sm">Senior Front-end Developer</p>
+                        <div className="flex gap-4">
+                            <FaDiscord className="text-xl text-gray-400" />
+                            <div>
+                                <img className="text-xl text-gray-400" src={XLogo} alt="x-logo" />
+                            </div>
+                            <FaGithub className="text-xl text-gray-400" />
+                        </div>
+                    </div>
+                    <div className="flex w-full flex-col items-center">
+                        <div className="mb-4 h-12 w-12 rounded-full  bg-gray-300">
+                            <img src={Person2} alt="avatar" />
+                        </div>
+                        <Heading size="h4">Micheal Gough</Heading>
+                        <p className="text-sm text-gray-700">Front-end Developer</p>
+                        <div className="flex gap-4">
+                            <FaDiscord className="text-xl text-gray-400" />
+                            <div>
+                                <img className="text-xl text-gray-400" src={XLogo} alt="x-logo" />
+                            </div>
+                            <FaGithub className="text-xl text-gray-400" />
+                        </div>
+                    </div>
+                    <div className="flex w-full flex-col items-center">
+                        <div className="mb-4 h-12 w-12 rounded-full  bg-gray-300">
+                            <img src={Person3} alt="avatar" />
+                        </div>
+                        <Heading size="h4">Helene Engels</Heading>
+                        <p className="text-sm text-gray-700">Designer</p>
+                        <div className="flex gap-4">
+                            <FaDiscord className="text-xl text-gray-400" />
+                            <img src={XLogo} alt="x-logo" />
+                            <FaGithub className="text-xl text-gray-400" />
+                        </div>
+                    </div>
                 </div>
+                <div>
+                    <p className="text-center text-lg">
+                        Pssst, we pay $250-$500 a blog post.{' '}
+                        <a href="https://docs.sourcegraph.com/" className="text-black underline">
+                            Apply to be a guest author.
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </ContentSection>
+        <ContentSection parentClassName="md:pt-16" className="lg:px-6">
+            <div className="flex flex-col justify-between md:flex-row">
+                <div className="max-w-lg">
+                    <Heading size="h2" className="mb-6">
+                        Events
+                    </Heading>
+                    <p className="pr-5 text-lg">
+                        Sourcegraph actively participates in prominent industry events. We’re always eager to engage
+                        with fellow developers, potential partners, and talented individuals seeking career
+                        opportunities.
+                        <br />
+                        <br />
+                        If you spot us at an event, don’t hesitate to approach — we’d love to connect and share our
+                        passion for code with you.
+                    </p>
+                </div>
+                <Tabs
+                    tabs={[
+                        {
+                            key: 'upcoming_events',
+                            title: 'Upcoming',
+                            content: (
+                                <ul className="ml-0 list-outside list-none">
+                                    {events.upcoming.map((event, index) => (
+                                        <li key={index} className="p-[25px]">
+                                            <Heading size="h6">{event.title}</Heading>
+                                            <Heading size="h4">{event.location}</Heading>
+                                            <p>{event.date}</p>
+                                        </li>
+                                    ))}
+                                </ul>
+                            ),
+                            className: 'pt-0 w-full',
+                        },
+                        {
+                            key: 'past_events',
+                            title: 'Past',
+                            content: (
+                                <ul className="ml-0 list-outside list-none">
+                                    {events.past.map((event, index) => (
+                                        <li key={index} className="p-[25px]">
+                                            <Heading size="h6">{event.title}</Heading>
+                                            <Heading size="h4">{event.location}</Heading>
+                                            <p>{event.date}</p>
+                                        </li>
+                                    ))}
+                                </ul>
+                            ),
+                            className: 'pt-0 w-full',
+                        },
+                    ]}
+                    tabsWrapperClassName="md:w-[548px] max-w-[548px] bg-white border px-6 py-9 bg-gradient-to-b from-white from-7.29% to-gray-50 to-88.08%"
+                    contentClassName="pt-9 pb-0"
+                />
             </div>
         </ContentSection>
     </Layout>
