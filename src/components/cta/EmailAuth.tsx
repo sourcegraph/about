@@ -24,7 +24,7 @@ export const EmailAuth: React.FunctionComponent<EmailAuthProps> = ({
             description: '',
         }
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger().log(EventName.SIGNUP_INITIATED, eventArguments, eventArguments)
+        getEventLogger().log(EventName.AUTH_INITIATED, eventArguments, eventArguments)
     }
 
     return (
