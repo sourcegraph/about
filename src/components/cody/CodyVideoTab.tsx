@@ -48,10 +48,10 @@ export const CodyVideoTab: FunctionComponent<{
     return (
         <ContentSection
             parentClassName="!px-0 !pb-0"
-            className="rounded-lg border border-white border-opacity-20 bg-[#612590] px-6 py-8 md:px-[60px] md:py-[72px]"
+            className="h-[1080px] overflow-hidden border-y border-white border-opacity-20 bg-violet-700 px-6 py-8 md:h-auto md:rounded-lg md:border md:pl-[60px] md:pt-[72px]"
         >
             <div>
-                <img src={icon} alt="Cody logo" />
+                <img className="h-[48px] w-[48px]" src={icon} alt="Cody logo" />
                 <Heading size="h2" className="mt-[18px] !text-4xl text-white">
                     {headerText}
                 </Heading>
@@ -60,31 +60,31 @@ export const CodyVideoTab: FunctionComponent<{
                 ) : (
                     description
                 )}
-                <div className="mt-16 flex flex-col gap-y-8 md:h-[400px] md:flex-row md:items-center">
-                    <div className="flex min-w-fit flex-grow flex-col gap-[18px]">
+                <div className="relative mt-16 flex h-[592px] flex-col gap-y-8 md:h-[400px] md:flex-row">
+                    <div className="mb-8 flex min-w-fit flex-grow flex-col gap-[18px] md:mt-6 md:mb-0">
                         {tabContent.map((content, index) => (
                             <button
                                 key={index}
                                 onClick={() => setSelectedContentIndex(index)}
                                 className={classNames(
-                                    'rounded px-[10px] py-2 text-left text-white hover:bg-[#270741] hover:bg-opacity-40 md:rounded-r-none',
+                                    'rounded px-[10px] py-2 text-left text-white hover:bg-violet-600 hover:bg-opacity-40 md:rounded-r-none',
                                     {
-                                        'bg-[#270741] hover:bg-opacity-100': selectedContentIndex === index,
+                                        'bg-violet-600 hover:bg-opacity-100': selectedContentIndex === index,
                                     }
                                 )}
                                 type="button"
                             >
                                 <Heading size="h5">{content.header}</Heading>
-                                <p className="mb-0">{content.description}</p>
+                                <p className="mb-0 text-lg">{content.description}</p>
                             </button>
                         ))}
                     </div>
-                    <div className="max-w-[750px]">
+                    <div className="relative bottom-0 ml-[-24px] h-auto w-[600px] max-w-[800px] md:absolute md:top-0 md:right-[-50px] md:mr-0 md:h-[426px] md:w-auto">
                         {tabContent.map((content, index) => (
                             <video
                                 ref={element => (videoRefs.current[index] = element ?? null)}
                                 id={`video-${content.header}`}
-                                className={classNames('rounded-lg border-[6px] border-[#4E2A72]', {
+                                className={classNames({
                                     hidden: selectedContentIndex !== index,
                                 })}
                                 autoPlay={true}
@@ -100,16 +100,6 @@ export const CodyVideoTab: FunctionComponent<{
                                 <source type="video/mp4" src={content.videoSrc} />
                             </video>
                         ))}
-                        <div className="h-[10px] w-full rounded-lg pt-[16px]">
-                            <div
-                                // eslint-disable-next-line react/forbid-dom-props
-                                style={{
-                                    width: `${(videoTime.currentTime / videoTime.duration) * 100}%`,
-                                    transition: 'width 0.3s ease-out',
-                                }}
-                                className="h-[10px] rounded-lg bg-[#CE9CFF66]"
-                            />
-                        </div>
                     </div>
                 </div>
             </div>

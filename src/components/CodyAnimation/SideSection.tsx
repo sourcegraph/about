@@ -5,6 +5,13 @@ import classNames from 'classnames'
 import { CodePointer } from './CodePointer'
 import { Line } from './Line'
 
+// TODO: Add support fot the props below
+// codyStartFrom: number;
+// codyEndFrom: number;
+// totalLines: number;
+// activeLine: number;
+// accepted: boolean;
+
 interface SideSectionProp {
     activeLine?: number
     accepted: boolean
@@ -16,15 +23,15 @@ export const SideSection: FunctionComponent<SideSectionProp> = ({ activeLine = 1
     const fadeInLines = Array.from({ length: totalLines - 1 }, (___, lineNumber) => lineNumber + fadeInLinesStartFrom)
     return (
         <div className=" text-right  text-[#5E6E8C]">
-            {activeLine >= 1 && <Line className="pr-[19px]">1</Line>}
+            {activeLine >= 1 && <Line className="pr-[21.5px]">1</Line>}
 
             <div className="relative">
-                <CodePointer active={activeLine >= 4} />
+                <CodePointer active={activeLine >= 10} />
 
                 {fadeInLines.map(line => (
                     <Line
                         key={line}
-                        className={classNames('pr-[19px]', {
+                        className={classNames('pr-[21.5px]', {
                             'opacity-100': line === 2 && activeLine >= 2,
                             'opacity-0': (!accepted && line !== fadeInLinesStartFrom) || activeLine === 1,
                         })}

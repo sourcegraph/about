@@ -1,16 +1,12 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
-import DownloadIcon from 'mdi-react/DownloadIcon'
-import Link from 'next/link'
 
 import {
     ContentSection,
     Heading,
     Layout,
-    ExternalsAuth,
     HubSpotForm,
-    Badge,
     Modal,
     CodyCta,
     CodyIde,
@@ -18,6 +14,8 @@ import {
     CodyChat,
     CodyVideoTab,
     ContextAnimation,
+    CodyPartners,
+    CodyTestimonials,
 } from '../components'
 import { breakpoints } from '../data/breakpoints'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
@@ -76,74 +74,31 @@ const CodyPage: FunctionComponent = () => {
                 image: 'https://sourcegraph.com/cody/cody-og.png',
             }}
             headerColorTheme="purple"
-            childrenClassName={isMobile ? 'sg-bg-gradient-cody-mobile' : 'sg-bg-gradient-cody'}
+            childrenClassName={isMobile ? 'sg-bg-gradient-cody-mobile' : 'sg-bg-gradient-cody-lg'}
             displayChildrenUnderNav={true}
         >
-            {/* Hero Section */}
             <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 text-center md:mt-0 md:pt-[22px]">
                 <div className="mx-auto w-full px-6 md:w-[849px] lg:w-[895px]">
-                    <div className="center flex items-center justify-center gap-x-4">
-                        <Heading size="h1" className="!text-[53px] text-white md:!text-[62px]">
-                            Meet Cody{' '}
-                        </Heading>
-                        <img
-                            src="/cody/cody-logo.svg"
-                            className="h-[45px] w-[49px] md:h-[50px] md:w-[55px]"
-                            alt="Cody Logo"
-                        />
+                    <div className="mx-auto w-full pt-6 text-[48px] font-semibold leading-[58px] text-white md:text-[72px] md:leading-[86px]">
+                        Write less, ship more
                     </div>
-                    <div className="mx-auto w-full pt-6 text-[41px] font-semibold leading-[41px] text-white md:text-[47px] md:leading-[47px]">
-                        We’re building the only AI coding assistant that knows your{' '}
-                        <span className="cody-heading bg-clip-text text-transparent"> entire codebase </span>
-                    </div>
-                    <Heading size="h4" className="mx-auto mt-6 max-w-[637px]  !font-normal text-gray-200">
-                        Cody answers technical questions and writes code directly in your IDE, using your code graph for
-                        context and accuracy.
+                    <Heading
+                        size="h4"
+                        className="mx-auto mt-6 mb-8  max-w-[663px] !font-normal leading-[30px] text-gray-200"
+                    >
+                        Cody is the good kind of know-it-all, using its deep understanding of your codebase to explain,
+                        fix, and help you write code.
                     </Heading>
-                    <div className="mt-8 text-lg font-semibold text-white">
-                        Get Started with Cody <Badge size="small" text="BETA" color="violet" />
-                    </div>
-                    <div className="mx-auto mt-4 flex flex-wrap justify-center gap-2 sm:w-[512px]">
-                        <div className="flex w-[228px] gap-2 md:w-fit">
-                            <ExternalsAuth
-                                className="w-fit  justify-center !font-normal"
-                                authProvider="github"
-                                label="GitHub"
-                                source="about-cody"
-                            />
-                            <ExternalsAuth
-                                className="w-fit justify-center !font-normal"
-                                authProvider="gitlab"
-                                label="GitLab"
-                                source="about-cody"
-                            />
+                    <button
+                        type="button"
+                        className="btn btn-inverted-primary min-w-[204px] px-6 text-violet-500 lg:px-4"
+                        title="Get Cody for free"
+                    >
+                        <div className="flex items-center justify-center">
+                            <img src="/cody/cody-logo.svg" className="mr-2 h-[24px] w-[24px]" alt="Cody Logo" />
+                            Get Cody for free
                         </div>
-
-                        <ExternalsAuth
-                            className={`w-fit justify-center !font-normal ${isXsMobile ? 'max-w-[228px] flex-1' : ''}`}
-                            authProvider="google"
-                            label="Google"
-                            source="about-cody"
-                        />
-                    </div>
-                    <p className="mt-4 text-[14px] text-violet-300 opacity-70">
-                        By registering, you agree to our{' '}
-                        <Link
-                            className="text-violet-300 underline"
-                            target="_blank"
-                            href="https://sourcegraph.com/terms"
-                        >
-                            Terms of Service
-                        </Link>{' '}
-                        and{' '}
-                        <Link
-                            className="text-violet-300 underline"
-                            target="_blank"
-                            href="https://sourcegraph.com/terms/privacy"
-                        >
-                            Privacy Policy
-                        </Link>
-                    </p>
+                    </button>
                 </div>
             </ContentSection>
 
@@ -153,21 +108,12 @@ const CodyPage: FunctionComponent = () => {
 
             <CodyChat />
 
-            <Heading size="h3" className="mx-auto mt-[96px] hidden max-w-[839px] px-sm text-center text-white md:block">
-                “Cody is a game-changer! It helps me work smarter, write cleaner code, and understand projects faster.
-                My productivity is through the roof, thanks to Cody.”
-            </Heading>
+            <CodyPartners />
 
-            <div className="mt-6 hidden flex-row items-center justify-center gap-4 md:flex">
-                <img className="" src="/cody/Avatar.svg" alt="Avatar" />
-                <div className="flex-col">
-                    <p className="mb-0 text-lg font-semibold text-gray-200">TINO WENING</p>
-                    <p className="mb-0 text-lg text-gray-200">ENGINEER</p>
-                </div>
-            </div>
+            <CodyTestimonials />
 
             <CodyVideoTab
-                icon="/cody/slash-logo.svg"
+                icon="/cody/commands-brand-icon.svg"
                 headerText="Run custom and pre-built commands"
                 description={
                     <p className="mt-[18px] mb-0 text-lg text-gray-200">
@@ -179,28 +125,34 @@ const CodyPage: FunctionComponent = () => {
                 tabContent={VIDEO_TAB_CONTENT}
             />
 
-            <ContentSection parentClassName="!pb-0" className="flex flex-col gap-12 md:flex-row md:justify-between">
-                <div className="flex w-full flex-col md:max-w-[501px]">
-                    <Heading size="h2" className="mb-1 !text-4xl text-white">
+            <ContentSection
+                parentClassName="!p-0 !m-0"
+                className="m-0 flex flex-col gap-5 py-16 px-6 md:flex-row md:justify-between md:gap-12 md:px-0 lg:py-28"
+            >
+                <div className="flex w-full flex-col md:mx-[29px] ">
+                    <Heading size="h2" className="mb-1 text-[40px] font-normal leading-10 tracking-[-1px] text-white">
                         Sourcegraph powered <span className="cody-heading bg-clip-text text-transparent">context</span>
                     </Heading>
-                    <p className="mb-0 text-lg text-violet-200">
-                        Sourcegraph’s code graph and analysis tools allow Cody to autocomplete, explain, and edit your
+
+                    <p className="mb-0 mt-[12px] text-2xl font-normal leading-[30px] tracking-[-0.25px] text-white md:max-w-[501px]">
+                        Sourcegraph’s code graph and analysis tools allows Cody to autocomplete, explain, and edit your
                         code with additional context.
                     </p>
-                    <img src="/cody/context_illustration.svg" className="my-6" alt="cody context illustration" />
-                    <Link
-                        href="/whitepaper/cody-context-architecture.pdf"
-                        className="flex items-center gap-[5px] font-semibold text-violet-300 underline hover:text-white"
-                    >
-                        <DownloadIcon className="h-4 w-4" />
-                        Cody Context Architecture whitepaper
-                    </Link>
+                    <img
+                        src="/cody/context_illustration.svg"
+                        className="mt-6 md:max-w-[501px]"
+                        alt="cody context illustration"
+                    />
                 </div>
-
-                <ContextAnimation />
+                <div className="hidden md:flex">
+                    <ContextAnimation />
+                </div>
+                <div className="md:hidden md:h-[333px] md:w-[538px] md:min-w-[399px]">
+                    <img src="/cody/context_illustration_details.svg" alt="cody context illustration details" />
+                </div>
             </ContentSection>
-            <CodyCta onContactClick={() => setIsContactModalOpen(true)} />
+
+            <CodyCta isCodyPage={true} onContactClick={() => setIsContactModalOpen(true)} />
             <Modal
                 open={isContactModalOpen}
                 handleClose={() => setIsContactModalOpen(false)}

@@ -131,6 +131,13 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                 requestInfo={true}
             />
             <button
+                  title="Get started with Cody"
+                  className="btn btn-outline-white text-center"
+                  type="button"
+              >
+                  Login
+            </button>
+            <button
                 type="button"
                 className={classNames(
                     'btn min-w-fit px-6 lg:px-4',
@@ -139,7 +146,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                 title="Download Sourcegraph"
                 onClick={handleOpenModal}
             >
-                Get started with Cody free
+                Get Cody for free
             </button>
         </>
     )

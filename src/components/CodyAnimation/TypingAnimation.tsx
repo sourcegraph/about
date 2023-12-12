@@ -7,9 +7,15 @@ interface TypingAnimationProps {
     code: string
     onCompleted: () => void
     speed?: number
+    showCursor?: boolean
 }
 
-export const TypingAnimation: FunctionComponent<TypingAnimationProps> = ({ code, onCompleted, speed = 40 }) => {
+export const TypingAnimation: FunctionComponent<TypingAnimationProps> = ({
+    code,
+    onCompleted,
+    speed = 40,
+    showCursor = false,
+}) => {
     const [animatedCode, setAnimatedCode] = useState('')
     const [index, setIndex] = useState(0)
     const intervalRef = useRef<NodeJS.Timeout>()
@@ -27,5 +33,5 @@ export const TypingAnimation: FunctionComponent<TypingAnimationProps> = ({ code,
         return () => clearInterval(intervalRef.current)
     }, [index, code, onCompleted, speed])
 
-    return <CodeHighlighter text={animatedCode} inline={true} />
+    return <CodeHighlighter text={animatedCode} inline={true} showCursor={showCursor} />
 }
