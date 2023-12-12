@@ -8,32 +8,43 @@
 @tailwind utilities;
 @import url('./cody-animation.css');
 
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('/fonts/sf-pro/SF-Pro-Text-Regular.otf') format('opentype');
+}
+  
+@font-face {
+    font-family: 'SF Mono';
+    src: url('/fonts/sf-pro/SFMono-Regular.otf') format('opentype');
+}
+
 /* Base Styles */
 @layer base {
     /* Typography */
-    html {
-        @apply font-sans text-base tracking-normal font-normal antialiased;
+    html, body {
+        @apply font-sf text-base tracking-normal font-normal antialiased;
     }
     h1 {
-        @apply font-sans text-6xl md:text-7xl tracking-normal font-semibold;
+        @apply font-sans text-6xl md:text-7xl tracking-normal md:tracking-tightest font-semibold;
     }
     h2 {
-        @apply font-sans text-4xl tracking-normal font-semibold;
+        @apply font-sans text-4xl md:text-5xl tracking-normal md:tracking-tighter font-semibold;
     }
     h3 {
-        @apply font-sans text-3xl tracking-normal font-normal;
+        @apply font-sf text-2xl tracking-tight font-normal;
     }
     h4 {
         @apply font-sans text-2xl tracking-normal font-semibold;
     }
     h5 {
-        @apply font-sans text-xl tracking-normal font-semibold;
+        @apply font-sf text-xl tracking-tight font-semibold;
     }
     h6 {
         @apply font-sans text-lg tracking-wide font-semibold uppercase;
     }
     code {
-        @apply font-mono text-base font-medium tracking-tightest break-words;
+        @apply font-sfMono text-base font-medium tracking-tightest break-words;
     }
     kbd {
         @apply bg-gray-200 border border-gray-400 rounded shadow-sm text-gray-500 text-sm inline-block px-2 py-1
@@ -432,7 +443,22 @@
         background: radial-gradient(34.84% 119.01% at 46.84% 100%, rgba(130, 13, 222, 0.50) 0%, rgba(130, 13, 222, 0.00) 100%), #270741;
     }
 
-   
+    .cody-btn-shadow {
+        box-shadow: 0px 6.4px 16px 0px #e3e7f4, 0px 3.2px 3.2px 0px rgba(0, 0, 0, 0.05);
+    }
+    .pricing-plan-card {
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.03), 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
+    }
+    .faq {
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+    }
+    .plan-top-border {
+      height: 4px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(90deg, #7048E8 0%, #4AC1E8 32.21%, #A112FF 65.39%, #FF5543 104.43%), #EFF2F5;
+    }
+    .pro-box-shadow{
+        box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
+    }
 
     /* Used to define custom tailwind slide in animation */
     @keyframes slideFadeIn {

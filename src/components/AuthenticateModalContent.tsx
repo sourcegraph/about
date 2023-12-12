@@ -6,9 +6,10 @@ import { ExternalsAuth } from './cta/ExternalsAuth'
 
 interface Props {
     source: string
+    plan?: 'pro' | 'free'
 }
 
-export const AuthenticateModalContent: FunctionComponent<Props> = ({ source }) => (
+export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, plan = 'free' }) => (
     <div className="max-w-[325px]">
         <p className="text-lg text-gray-600">Sign up to get free access:</p>
         <ExternalsAuth
@@ -17,6 +18,7 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source }) =
             dark={true}
             className="mt-4"
             source={source}
+            plan={plan}
         />
         <ExternalsAuth
             authProvider="gitlab"
@@ -24,6 +26,7 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source }) =
             dark={true}
             className="mt-4"
             source={source}
+            plan={plan}
         />
         <ExternalsAuth
             authProvider="google"
@@ -31,6 +34,7 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source }) =
             dark={true}
             className="mt-4"
             source={source}
+            plan={plan}
         />
         <p className="mt-5 text-sm text-gray-400">
             By registering, you agree to our{' '}

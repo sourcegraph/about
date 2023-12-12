@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import { usePopper } from 'react-popper'
 
 interface Props {
-    text: string
+    text: ReactNode
     placement?: BasePlacement
     children: ReactNode
     wrapperClassName?: string

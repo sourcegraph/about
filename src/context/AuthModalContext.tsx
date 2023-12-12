@@ -5,7 +5,7 @@ import { logAuthPopoverEvent } from '../util'
 
 interface AuthModalContextProps {
     isSignUpModalOpen: boolean
-    openModal: (source: string) => void
+    openModal: (source: string, plan?: 'free' | 'pro') => void
     closeModal: () => void
 }
 
@@ -20,11 +20,13 @@ export const useAuthModal = (): AuthModalContextProps => useContext(AuthModalCon
 export const AuthModalProvider: FunctionComponent<{ children: ReactNode }> = ({ children }) => {
     const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false)
     const [source, setSource] = useState<string>('')
+    const [plan, setPlan] = useState<'pro' | 'free' | undefined>('free')
 
-    const openModal = (source: string): void => {
+    const openModal = (source: string, plan?: 'pro' | 'free'): void => {
         setSource(source)
         setIsSignUpModalOpen(true)
         logAuthPopoverEvent(source)
+        setPlan(plan ?? 'free')
     }
 
     const closeModal = (): void => {
@@ -38,7 +40,7 @@ export const AuthModalProvider: FunctionComponent<{ children: ReactNode }> = ({ 
 
                 {isSignUpModalOpen && (
                     <Modal open={isSignUpModalOpen} handleClose={closeModal}>
-                        <AuthenticateModalContent source={source} />
+                        <AuthenticateModalContent source={source} plan={plan} />
                     </Modal>
                 )}
             </>

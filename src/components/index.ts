@@ -90,3 +90,6 @@ export { CodyAutocomplete } from './cody/CodyAutocomplete'
 export { CodyChat } from './cody/CodyChat'
 export { ContextAnimation } from './CodyAnimation/ContextAnimation'
 export { CodyCta } from './cta/CodyCta'
+
+// Pricing
+export * from './Pricing/index'
