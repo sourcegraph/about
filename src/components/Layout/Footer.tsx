@@ -159,7 +159,7 @@ const POSTSCRIPT_LINKS: Link[] = [
 
 interface Props {
     minimal?: boolean
-    dark?: boolean
+    dark?: boolean | string
     className?: string
 }
 

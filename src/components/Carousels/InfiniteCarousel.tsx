@@ -1,5 +1,6 @@
 import React, { FC, memo, useEffect, useRef, useState } from 'react'
 
+import classNames from 'classnames'
 import { AnimationPlaybackControls, useAnimate, useInView } from 'framer-motion'
 
 const TICKER_DIRECTION_LEFT = -1
@@ -97,7 +98,10 @@ const TickerAnimation: FC<InfiniteCarouselProps> = memo((props: InfiniteCarousel
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <div ref={scope} className="FMT__container__contents flex">
+            <div
+                ref={scope}
+                className="FMT__container__contents inline-block flex items-center justify-center align-middle"
+            >
                 {children.map((item, index) => (
                     <div key={index} id={`${tickerUUID}_${index}`}>
                         {item}
@@ -113,18 +117,15 @@ const TickerAnimation: FC<InfiniteCarouselProps> = memo((props: InfiniteCarousel
 
 TickerAnimation.displayName = 'TickerAnimation'
 
-export const InfiniteCarousel: FC<{ images: string[] }> = ({ images }) => {
+export const InfiniteCarousel: FC<{ images: { src: string; className?: string }[] }> = ({ images }) => {
     const duplicatedImages = [...images, ...images, ...images, ...images] // Duplicate images for seamless looping
 
     return (
         <>
             <TickerAnimation duration={100}>
                 {duplicatedImages.map((img, index) => (
-                    <div
-                        key={index}
-                        className="h-auto w-[394px] py-0 px-[10px] md:w-[594px] lg:h-[477px] lg:w-[794px] lg:px-[15px]"
-                    >
-                        <img src={img} alt={`slide-${index}`} className="h-auto w-full" />
+                    <div key={index} className={classNames('flex items-center justify-center', img.className)}>
+                        <img src={img.src} alt={`slide-${index}`} className="h-auto w-full" />
                     </div>
                 ))}
             </TickerAnimation>
