@@ -36,7 +36,7 @@ const threeUpTextItems = [
                 allow you to quickly deploy a production-ready Sourcegraph instance tuned to your organization's scale
                 in just a few clicks. More information is available in Sourcegraph{' '}
                 <Link
-                    href="https://docs.sourcegraph.com/admin/deploy/machine-images/aws-ami"
+                    href="https://sourcegraph.com/docs/admin/deploy/machine-images/aws-ami"
                     target="_blank"
                     className="text-white underline"
                 >

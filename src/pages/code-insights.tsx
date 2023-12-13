@@ -7,8 +7,8 @@ import TrendingUpIcon from 'mdi-react/TrendingUpIcon'
 
 import {
     Blockquote,
-    ContentSection,
     CallToActionContentSection,
+    ContentSection,
     CustomCarousel,
     Hero,
     Layout,
@@ -22,17 +22,17 @@ import {
 } from '../components'
 import { CodeInsightExample } from '../components/CodeInsights/CodeInsightsExamples'
 import {
-    SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA,
     ALPINE_VERSIONS_INSIGHT,
-    LOG_4_J_INCIDENT_INSIGHT,
     DEPRECATED_API_USAGE_BY_TEAM,
     LINTER_OVERRIDES,
-    REPOS_WITH_CI_SYSTEM,
+    LOG_4_J_INCIDENT_INSIGHT,
     OPENSSL_PYTHON,
+    REPOS_WITH_CI_SYSTEM,
+    SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA,
 } from '../components/CodeInsights/mock-data'
 import { CodeInsightExampleType } from '../components/CodeInsights/types'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
-import { buttonStyle, buttonLocation } from '../data/tracking'
+import { buttonLocation, buttonStyle } from '../data/tracking'
 
 import styles from './code-insights.module.css'
 
@@ -293,7 +293,7 @@ const blogResourceItems = [
             src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
             alt: 'Code insights documentation thumbnail',
         },
-        href: 'https://docs.sourcegraph.com/code_insights',
+        href: 'https://sourcegraph.com/docs/code_insights',
     },
 ]
 
@@ -483,7 +483,7 @@ const CodeInsightsPage: FunctionComponent = () => (
 
             <div className="w-full text-center">
                 <a
-                    href="https://docs.sourcegraph.com/code_insights"
+                    href="https://sourcegraph.com/docs/code_insights"
                     title="Code Insights on docs."
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
@@ -540,7 +540,7 @@ const CodeInsightsPage: FunctionComponent = () => (
             <div className="text-center">
                 <a
                     className="col-7 py-6 px-0"
-                    href="https://docs.sourcegraph.com/code_insights"
+                    href="https://sourcegraph.com/docs/code_insights"
                     title="Code Insights on docs."
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}

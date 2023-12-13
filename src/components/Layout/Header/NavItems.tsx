@@ -68,7 +68,7 @@ const NAV_ITEMS: NavItem[] = [
             },
             {
                 name: 'Docs',
-                href: 'https://docs.sourcegraph.com',
+                href: 'https://sourcegraph.com/docs',
             },
             {
                 name: 'Cody comparisons',

@@ -74,7 +74,7 @@ const PricingPage: FunctionComponent = () => (
                         <h3 className="my-sm max-w-sm text-lg font-normal md:min-h-[58px]">
                             The most powerful and accurate code AI. Free forever for individual devs on public and
                             private code, with a generous{' '}
-                            <Link href="https://docs.sourcegraph.com/app#rate-limiting">rate limit</Link>.
+                            <Link href="https://sourcegraph.com/docs/app#rate-limiting">rate limit</Link>.
                         </h3>
                     }
                     price="$0"

@@ -161,7 +161,7 @@ const SecurityPage: FunctionComponent = () => (
                                                 updates), self-hosted Sourcegraph instances do not send any personal
                                                 data to other servers. Learn more in our{' '}
                                                 <Link
-                                                    href="https://docs.sourcegraph.com/admin/pings"
+                                                    href="https://sourcegraph.com/docs/admin/pings"
                                                     title="pings documentation"
                                                     className="text-black underline"
                                                     target="_blank"
@@ -182,7 +182,7 @@ const SecurityPage: FunctionComponent = () => (
                                             <li>
                                                 Enterprise customers can configure Sourcegraph to{' '}
                                                 <Link
-                                                    href="https://docs.sourcegraph.com/admin/repo/permissions"
+                                                    href="https://sourcegraph.com/docs/admin/permissions"
                                                     title="enforce repository permissions"
                                                     className="text-black underline"
                                                     target="_blank"

@@ -5,9 +5,9 @@ import Link from 'next/link'
 
 import { ContentSection, CustomerLogos, Layout } from '../../components'
 import {
-    PricingPlan,
-    ENTERPRISE_STARTER_FEATURES_OVERVIEW,
     ENTERPRISE_FEATURES_OVERVIEW,
+    ENTERPRISE_STARTER_FEATURES_OVERVIEW,
+    PricingPlan,
 } from '../../components/Pricing'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 
@@ -46,7 +46,7 @@ const EnterpriseButtons: FunctionComponent<{ contactUsClassName?: string }> = ({
 
 const FreeButton: FunctionComponent<{ className?: string }> = ({ className }) => (
     <Link
-        href="https://docs.sourcegraph.com/admin/deploy"
+        href="https://sourcegraph.com/docs/admin/deploy"
         className={classNames('btn btn-outline-primary w-full md:w-auto', className)}
         title="Self-deploy for free"
         data-button-style={buttonStyle.outline}

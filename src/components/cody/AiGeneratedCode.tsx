@@ -43,7 +43,7 @@ export const AiGeneratedCode: FunctionComponent = () => (
                     works great with Python, Go, JavaScript, and TypeScript code.
                 </p>
                 <Link
-                    href="https://docs.sourcegraph.com/cody"
+                    href="https://sourcegraph.com/docs/cody"
                     className="inline-flex items-center whitespace-nowrap font-semibold text-white"
                     title="See the Cody docs"
                 >

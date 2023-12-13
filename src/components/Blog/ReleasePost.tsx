@@ -5,7 +5,7 @@ import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import { MDXRemote } from 'next-mdx-remote'
 
 import { Alert, Badge, Figure, Heading, Video, YouTube } from '..'
-import { buttonStyle, buttonLocation } from '../../data/tracking'
+import { buttonLocation, buttonStyle } from '../../data/tracking'
 import { PostComponentProps } from '../../interfaces/posts'
 
 import { BylineAndDate } from './BylineAndDate'
@@ -78,12 +78,12 @@ export const ReleasePost: FunctionComponent<Props> = ({
 const CommonLinks: React.FunctionComponent<{ className?: string }> = ({ className }) => (
     <ul className={classNames(className, 'mb-0 ml-0 list-none flex-col flex-wrap gap-md md:flex md:flex-row')}>
         <li>
-            <a href="https://docs.sourcegraph.com/admin/install" className="text-gray-400">
+            <a href="https://sourcegraph.com/docs/admin/install" className="text-gray-400">
                 How to install
             </a>
         </li>
         <li>
-            <a href="https://docs.sourcegraph.com/admin/updates" className="text-gray-400">
+            <a href="https://sourcegraph.com/docs/admin/updates" className="text-gray-400">
                 How to upgrade
             </a>
         </li>
