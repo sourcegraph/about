@@ -22,7 +22,7 @@ const carouselImages = [
 
 const Home: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
-    const isMobile = windowWidth < breakpoints.lg
+    const isMobile = windowWidth < breakpoints.md
 
     const { openModal } = useAuthModal()
 
@@ -210,7 +210,7 @@ const Home: FunctionComponent = () => {
                                         src="/home/code-search-mobile.svg"
                                         alt="Cody Search"
                                     />
-                                    <div className="code-search-gradient absolute top-[600px]   right-[-700px] z-10 h-[1245.828px] w-[524.518px] " />
+                                    <div className="code-search-gradient absolute top-[600px] right-[-700px] z-10 h-[1245.828px] w-full " />
                                 </>
                             ) : (
                                 <>
@@ -394,7 +394,7 @@ const HomeHero: FunctionComponent = () => {
                             muted={true}
                             loop={true}
                             playsInline={true}
-                            controls={true}
+                            controls={false}
                         >
                             <source
                                 type="video/mp4"
