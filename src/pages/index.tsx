@@ -387,7 +387,7 @@ const HomeHero: FunctionComponent = () => {
                     </button>
                 </div>
                 {!isMobile && (
-                    <div className="w-full xl:w-[1062px]">
+                    <div className="w-full lg:w-[1062px]">
                         <video
                             className="rounded-t-lg"
                             autoPlay={true}
