@@ -109,15 +109,17 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      sf: ['SF Pro Text'],
+      sfMono: ['SF Mono'],
       grotesk: ['Space Grotesk'],
       spaceMono: ['Space Mono'],
     },
 
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1.125rem' }], // 12px / 18px
-      sm: ['0.875rem', { lineHeight: '1.313rem' }], // 14px / 21px
-      base: ['1rem', { lineHeight: '1.5rem' }], // 16px / 24px
-      lg: ['1.125rem', { lineHeight: '1.688rem' }], // 18px / 27px
+      sm: ['0.875rem', { lineHeight: '1.313rem', fontWeight: '400', letterSpacing: '0' }], // 14px / 21px
+      base: ['1rem', { lineHeight: '1.5rem', fontWeight: '400', letterSpacing: '-0.005em' }], // 16px / 24px
+      lg: ['1.125rem', { lineHeight: '1.688rem', fontWeight: '400', letterSpacing: '-0.005em' }], // 18px / 27px
       xl: ['1.25rem', { lineHeight: '1.75rem' }], // 20px / 28px
       '2xl': ['1.5rem', { lineHeight: '2.125rem' }], // 24px / 34px
       '3xl': ['1.875rem', { lineHeight: '2.625rem' }], // 30px / 42px

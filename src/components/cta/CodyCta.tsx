@@ -28,13 +28,14 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick, isCod
                 Cody Free
             </Heading>
 
-            <p
+            <Heading
+                size="h3"
                 className={classNames('mt-4 max-w-[413.5px] text-2xl text-gray-500', {
-                    '!leading-[30px] !tracking-[-0.25px] ': isCodyPage,
+                    'leading-[30px] !tracking-[-0.25px]': isCodyPage,
                 })}
             >
                 Use Cody for free in your IDE, no credit card required.
-            </p>
+            </Heading>
             <div className="mt-6 flex flex-col flex-wrap gap-4 md:flex-row md:gap-2">
                 <button title="Get Cody free" className="btn btn-primary text-center" type="button">
                     Get Cody free
@@ -59,14 +60,15 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick, isCod
             >
                 Cody Enterprise
             </Heading>
-            <p
+            <Heading
+                size="h3"
                 className={classNames('text-2xl text-white text-opacity-80', {
-                    '!leading-[30px] !tracking-[-0.25px] ': isCodyPage,
+                    'leading-[30px] !tracking-[-0.25px]': isCodyPage,
                 })}
             >
                 Cody Enterprise provides additional security, scalability, and control for your organization. Unlimited
                 usage and context-awareness of your entire codebase.
-            </p>
+            </Heading>
             <div className="flex max-w-[356px] flex-col flex-wrap gap-4 md:flex-row">
                 <button
                     title="Get started with Cody"

@@ -14,7 +14,7 @@ export const CodyChat: FunctionComponent = () => (
         className="flex w-full  flex-col overflow-hidden border-gray-200 border-opacity-50 pt-[64px] md:rounded-2xl md:border md:bg-violet-700 md:pt-[72px] xl:max-w-[1280px]"
         parentClassName="!px-0 !pb-0"
     >
-        <div className="mx-6  md:ml-14">
+        <div className="mx-6 md:ml-14 md:mb-32">
             <div className="flex w-full max-w-[701px] flex-col gap-[18px]">
                 <img className="h-[48px] w-[48px]" src="/cody/chat-brand-icon.svg" alt="Cody Chat" />
                 <Heading
@@ -30,10 +30,10 @@ export const CodyChat: FunctionComponent = () => (
             </div>
         </div>
 
-        <div className="relative ml-6 mb-[-54px] mt-[44px] flex flex-col pt-[40px] pb-0 text-left md:ml-14 md:flex-row md:pt-[51px] md:pb-28 lg:items-center">
-            <div className=" mr-6 mb-6 flex w-full max-w-[398px] flex-col md:mr-24">
-                <div className="flex flex-col gap-4 text-xl md:text-lg">
-                    <p className="px-[9px] pb-8 text-sm font-[590] uppercase leading-[27px] text-gray-200">
+        <div className="relative flex flex-col  pb-0 text-left md:ml-14 md:flex-row md:pb-28 lg:items-center">
+            <div className="mb-6 flex w-full flex-col md:mr-24">
+                <div className="flex max-w-[380px] flex-col justify-center gap-4 text-xl md:text-lg">
+                    <p className="px-[9px] text-sm font-[590] uppercase leading-[27px] text-gray-200">
                         Cody can answer questions like:
                     </p>
 
@@ -47,9 +47,9 @@ export const CodyChat: FunctionComponent = () => (
                     ))}
                 </div>
             </div>
-            <div className="w-full ">
+            <div className="w-full">
                 <img
-                    className="absolute hidden h-[524px] max-h-[524px] w-[976px] max-w-[976px] self-stretch md:top-0 md:right-[-50px] md:flex"
+                    className="absolute hidden h-[522px]  md:-top-16 md:-right-[128px] md:flex"
                     src="/cody/cody-chat-interface.svg"
                     alt="Cody Chat interface"
                 />

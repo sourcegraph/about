@@ -2,10 +2,10 @@ import { FunctionComponent } from 'react'
 
 import { CodyAnimation, ContentSection, Heading } from '..'
 
-export const CodyAutocomplete: FunctionComponent = () => (
-    <ContentSection parentClassName="!py-0 !px-0" className="relative mx-auto mt-12 w-full md:mt-24">
-        <div className="relative z-[10] mx-auto mb-16 w-full text-6xl text-white md:mb-[-96px] md:w-[816px]">
-            <CodyAnimation />
+export const CodyAutocomplete: FunctionComponent<{ className?: string }> = ({ className }) => (
+    <ContentSection parentClassName="!py-0 !px-0" className='relative mx-auto mt-12 w-full md:mt-24'>
+        <div className='relative z-[10] mx-auto mb-16 w-full text-6xl text-white md:mb-[-96px] md:w-[816px]'>
+            <CodyAnimation className={className} />
         </div>
         <ContentSection
             parentClassName="!py-0 !px-0"

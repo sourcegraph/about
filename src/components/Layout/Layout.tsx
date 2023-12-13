@@ -30,9 +30,17 @@ interface LayoutProps {
     className?: string
     hideFooter?: boolean
     hideHeader?: boolean
+    customFooterClassName?: string
+    customDark?: boolean
 }
 
-export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, className, ...props }) => {
+export const Layout: FunctionComponent<LayoutProps> = ({
+    headerColorTheme,
+    className,
+    customFooterClassName,
+    customDark = true,
+    ...props
+}) => {
     const navRef = useRef<HTMLElement>(null)
     const router = useRouter()
     const { pathname, asPath } = router
@@ -131,7 +139,11 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
             </section>
 
             {!props.hideFooter && (
-                <Footer dark={headerColorTheme === 'dark' || headerColorTheme === 'purple'} minimal={props.minimal} />
+                <Footer
+                    className={customFooterClassName}
+                    dark={headerColorTheme === 'dark' || (headerColorTheme === 'purple' && customDark)}
+                    minimal={props.minimal}
+                />
             )}
         </div>
     )

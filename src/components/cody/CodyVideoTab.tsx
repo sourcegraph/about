@@ -48,7 +48,7 @@ export const CodyVideoTab: FunctionComponent<{
     return (
         <ContentSection
             parentClassName="!px-0 !pb-0"
-            className="h-[1080px] overflow-hidden border-y border-white border-opacity-20 bg-violet-700 px-6 py-8 md:h-auto md:rounded-lg md:border md:pl-[60px] md:pt-[72px]"
+            className="overflow-hidden border-y border-white border-opacity-20 bg-violet-700 px-6 py-8 md:h-auto md:rounded-lg md:border md:pl-[60px] md:pt-[72px]"
         >
             <div>
                 <img className="h-[48px] w-[48px]" src={icon} alt="Cody logo" />

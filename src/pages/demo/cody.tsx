@@ -15,7 +15,7 @@ import {
     HubSpotForm,
     Badge,
     CodyAutocomplete,
-    CodyVideoTab,
+    CodyImageTab,
     CodyCta,
     CodyIde,
     CodyChat,
@@ -32,30 +32,26 @@ declare global {
     }
 }
 
-const VIDEO_TAB_CONTENT = [
+const IMAGE_TAB_CONTENT = [
     {
         header: 'Explain code or entire repositories',
         description: 'Get up to speed on new projects quickly',
-        videoSrc:
-            'https://user-images.githubusercontent.com/81499360/266091359-cb00def8-08e3-4aa3-b8a5-0d0712cd38f6.mp4',
+        imageSrc: {mobile: '/cody/explain-code.png' , desktop: '/cody/explain-code.svg'},
     },
     {
         header: 'Generate unit tests in seconds',
         description: 'Spend more time writing new code',
-        videoSrc:
-            'https://user-images.githubusercontent.com/81499360/266091266-93479f7e-e0b9-4203-b600-36e1777a7164.mp4',
+        imageSrc: {mobile: '/cody/generate-unit-tests.png' , desktop: '/cody/generate-unit-tests.svg'},
     },
     {
         header: 'Describe code smells',
         description: 'Optimize your code for best practices',
-        videoSrc:
-            'https://user-images.githubusercontent.com/81499360/266091553-5f0e9919-16bf-476c-b9f1-929f49b8eb61.mp4',
+        imageSrc: {mobile: '/cody/describe-code-smell.png' , desktop: '/cody/describe-code-smell.svg'},
     },
     {
         header: 'Define your own custom commands',
         description: 'Customize Cody for your workflow',
-        videoSrc:
-            'https://user-images.githubusercontent.com/81499360/266091507-0f2f1929-726c-4e94-b037-b36c8409d031.mp4',
+        imageSrc: {mobile: '/cody/define-custom-command.png' , desktop: '/cody/define-custom-command.svg'},
     },
 ]
 
@@ -229,17 +225,18 @@ const DemoCodyPage: FunctionComponent = () => {
                 <p className="mb-0 text-lg text-gray-200">TINO WENING</p>
             </div>
 
-            <CodyVideoTab
-                icon="/cody/slash-logo.svg"
+            <CodyImageTab
+                icon="/cody/commands-brand-icon.svg"
                 headerText="Run custom and pre-built commands"
                 description={
-                    <p className="mt-[18px] mb-0 text-lg text-gray-200">
-                        Write, describe, fix, and smell code with commands.
-                        <br />
-                        We’re adding new commands frequently, plus you can create & share your own custom commands.
-                    </p>
+                    <Heading
+                        size="h3"
+                        className="mb-0 pt-[18px] text-lg leading-[30px] !tracking-[-0.25px] text-gray-200"
+                    >
+                        Generate, test, and fix code with one-click commands.
+                    </Heading>
                 }
-                tabContent={VIDEO_TAB_CONTENT}
+                tabContent={IMAGE_TAB_CONTENT}
             />
 
             <ContentSection parentClassName="!pb-0" className="flex flex-col gap-12 md:flex-row">

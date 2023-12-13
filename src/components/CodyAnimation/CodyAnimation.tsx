@@ -41,11 +41,12 @@ func (opts UpdateCustomerOptions) Validate() error {`,
     '}',
 ]
 
-export const CodyAnimation: FunctionComponent = () => {
+export const CodyAnimation: FunctionComponent<{className?: string}> = ({className}) => {
     const [startAnimation, setStartAnimation] = useState(false)
     const [nextLine, setNextLine] = useState(false)
     const [showSuggestion, setShowSuggestion] = useState(false)
     const [applySuggestion, setApplySuggestion] = useState(false)
+    const [typingCodeLines, setTypingCodeLines] = useState(0)
 
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
@@ -81,28 +82,38 @@ export const CodyAnimation: FunctionComponent = () => {
         }
     }, [isCodyAnimationRefInView, applySuggestion])
 
-    const lineNumbers = countTotalLines(codes)
-    const activeLine = showSuggestion ? lineNumbers : nextLine ? 2 : 1
+    const lineNumbers = countTotalLines(codes) + 2
+    const activeLine = showSuggestion ? lineNumbers : typingCodeLines || 1
 
     return (
         <>
-            <div className="relative overflow-hidden md:overflow-visible" ref={codyAnimationRef}>
+            <div className={classNames('relative overflow-hidden md:overflow-visible', className)} ref={codyAnimationRef}>
                 <div className="relative left-[81px] mx-auto flex min-h-[412px] w-[728px] rounded-md border border-[#343A4D] bg-[#191B21] py-4 pl-4 text-sm leading-[19.6px] md:left-[0px]">
-                    <SideSection activeLine={activeLine} accepted={applySuggestion} totalLines={lineNumbers} />
-                    <div className="relative ml-[9px] flex-1">
+                    <SideSection
+                        activeLine={activeLine}
+                        codyStartFrom={10}
+                        codyEndFrom={20}
+                        showCodyPointer={applySuggestion || showSuggestion}
+                        totalLines={lineNumbers}
+                    />
+                    <div className="relative ml-[9px] flex-1 ">
                         <Line
-                            className={classNames('flex flex-row items-center', {
+                            className={classNames('flex flex-row items-center ', {
                                 'cody-multiple-lines': !nextLine,
                             })}
                         >
                             {startAnimation ? (
                                 <TypingAnimation
+                                    speed={16}
                                     showCursor={!nextLine}
                                     code={codes[0]}
                                     onCompleted={showSuggestionHandler}
+                                    setCodeLines={setTypingCodeLines}
                                 />
                             ) : (
-                                <BlinkCursor />
+                                <div className="m-0 p-0">
+                                    <BlinkCursor />
+                                </div>
                             )}
                         </Line>
                         {nextLine && (
