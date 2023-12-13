@@ -51,7 +51,7 @@ const Home: FunctionComponent = () => {
                     <InfiniteCarousel images={carouselImages} />
                 </div>
                 <div className="flex flex-col md:px-6 md:max-w-screen-xl mx-auto">
-                    <div className="mx-6 flex flex-col pb-14">
+                    <div className="flex flex-col pb-14 px-6 md:px-0 max-w-[769px]">
                         <div className="flex items-center gap-4 pb-6">
                             <img
                                 className="h-[50px] w-[50px] rounded-t-2xl"
@@ -206,8 +206,8 @@ const Home: FunctionComponent = () => {
                             {isMobile ? (
                                 <>
                                     <img
-                                        className="z-20 ml-6 mr-0 h-[549px] w-[826px]"
-                                        src="/home/code-search-mobile.png"
+                                        className="z-20 ml-6 mr-0 h-[279px] w-[826px]"
+                                        src="/home/code-search-mobile.svg"
                                         alt="Cody Search"
                                     />
                                     <div className="code-search-gradient absolute top-[600px]   right-[-700px] z-10 h-[1245.828px] w-[524.518px] " />
@@ -358,7 +358,7 @@ const Home: FunctionComponent = () => {
 
 const HomeHero: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
-    const isMobile = windowWidth < breakpoints.lg
+    const isMobile = windowWidth < breakpoints.sm
 
     const { openModal } = useAuthModal()
 
@@ -366,14 +366,14 @@ const HomeHero: FunctionComponent = () => {
     return (
         <ContentSection className="flex items-center justify-center" parentClassName="!py-0">
             <div className="mx-auto flex flex-col items-center justify-center text-center">
-                <div className="mx-auto flex flex-col items-center md:pt-16 pt-8 md:pb-[70px] pb-16 md:w-[680px]">
+                <div className="mx-auto flex flex-col items-center pt-8 pb-16 md:w-[680px] md:pt-16 md:pb-[70px]">
                     <Heading
                         size="h1"
-                        className="md:mb-6 mb-8 w-full text-center !text-[48px] lg:-tracking-[0.62px] text-white md:!text-[62px] lg:leading-[65px]"
+                        className="mb-8 w-full text-center !text-[48px] text-white md:mb-6 md:!text-[62px] lg:leading-[65px] lg:-tracking-[0.62px]"
                     >
                         Grok and write code blazingly fast
                     </Heading>
-                    <p className="md:mb-8 mb-10 text-2xl font-normal leading-[30px] -tracking-[0.25px] text-[#FFFFFF99]">
+                    <p className="mb-10 text-2xl font-normal leading-[30px] -tracking-[0.25px] text-[#FFFFFF99] md:mb-8">
                         Sourcegraph deeply understands your code, no matter how large or where it's hosted, to power
                         modern developer experiences.
                     </p>
@@ -387,12 +387,20 @@ const HomeHero: FunctionComponent = () => {
                     </button>
                 </div>
                 {!isMobile && (
-                    <div className="w-full ">
-                        <img
-                            className="max-w-[1062px] rounded-t-2xl"
-                            src="/home/home_hero.png"
-                            alt="Cody Chat interface"
-                        />
+                    <div className="w-full xl:w-[1062px]">
+                        <video
+                            className="rounded-t-lg"
+                            autoPlay={true}
+                            muted={true}
+                            loop={true}
+                            playsInline={true}
+                            controls={true}
+                        >
+                            <source
+                                type="video/mp4"
+                                src="/home/Header-Vid-Non-Rounded.mp4"
+                            />
+                        </video>
                     </div>
                 )}
             </div>
