@@ -1,4 +1,4 @@
-import { ReactElement } from 'react'
+import { FunctionComponent, ReactElement } from 'react'
 
 import Link from 'next/link'
 
@@ -15,111 +15,189 @@ interface FAQData {
     [key: string]: FAQItem[]
 }
 
+const ContactLink: FunctionComponent = () => (
+    <Link
+        href="/contact/request-info"
+        title="Contact us"
+        data-button-style={buttonStyle.text}
+        data-button-location={buttonLocation.body}
+        data-button-type="cta"
+    >
+        Contact us
+    </Link>
+)
+
 export const faqData: FAQData = {
     cody: [
         {
-            question: 'Is there a free trial of the paid plans?',
+            question: 'What’s the difference between the Cody Free, Pro, and Enterprise plans?',
+            answer: (
+                <>
+                    <p>Cody Free and Cody Pro are both offered as standalone products.</p>
+                    <p>
+                        Cody Free is best for individuals working on hobby projects or professional devs trying out AI
+                        coding assistants. Usage limits apply.
+                    </p>
+                    <p>
+                        Cody Pro is best for professional developers and small teams who want unlimited usage and
+                        context for larger codebases. Cody Pro is free until February 2024.
+                    </p>
+                    <p>
+                        Cody Enterprise is for organizations needing security, scalability, and control. It is coming
+                        soon for everyone, but is currently available for existing Code Search customers (
+                        <ContactLink /> if you'd like to learn more).
+                    </p>
+                </>
+            ),
+        },
+        {
+            question: 'How are Cody autocompletions counted for the Cody Free plan?',
             answer: (
                 <p>
-                    Yes. We offer a free trial for our paid plans.{' '}
-                    <Link
-                        href="/get-started?t=enterprise"
-                        title="Get started"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Get started
-                    </Link>{' '}
-                    with a free trial today.
+                    Cody autocompletions are counted based on the number of suggestions that are served to the user in
+                    their IDE as ghost text. This includes all suggestions whether or not they are accepted by the user.
                 </p>
             ),
         },
         {
-            question: 'What are executors?',
-            answer: 'Executors are required to run Batch Changes server-side and to use code navigation’s auto-indexing functionality. The Enterprise Starter plan includes 2 executors and the Enterprise plan includes 4 executors.',
+            question: 'How does Cody’s context and personalization work?',
+            answer: (
+                <>
+                    <p>
+                        Cody offers several ways of retrieving codebase context to personalize its responses. One of the
+                        ways is through embeddings, which we generate by sending repositories to the OpenAI API.
+                    </p>
+                    <p>
+                        Cody Free users can create embeddings for up to 200MB of code, and Cody Pro users can create
+                        embeddings for up to 1GB of code. Cody Enterprise users can create embeddings for
+                        enterprise-scale codebases.
+                    </p>
+                </>
+            ),
         },
         {
-            question: 'My organization requires the use of its own legal contract. Which plan is right for me?',
+            question: 'How can I pay for Cody Pro?',
             answer: (
                 <p>
-                    Only the Enterprise plan supports this. The Enterprise Starter plan uses our{' '}
-                    <Link href="/terms" className="text-black underline">
-                        online terms of service
-                    </Link>
-                    .
+                    Cody Pro is free until February 2024. Prior to February 2024, users will be emailed and asked to
+                    enter a credit card if they would like to continue using Cody Pro. If they choose not to enter a
+                    credit card, their account will move to the Cody Free plan.
                 </p>
             ),
         },
         {
-            question: 'Does Sourcegraph offer discounts for educational and non-profit organizations?',
+            question: 'How can I upgrade or downgrade my plan?',
             answer: (
                 <p>
-                    Sourcegraph supports the work of educational organizations and nonprofits. Please{' '}
+                    Users can upgrade or downgrade between Cody Free and Cody Pro within their account settings at any
+                    time. To upgrade to Cody Enterprise, please{' '}
                     <Link
-                        href="/contact/request-info?form_submission_source=pricing-enterprise"
+                        href="/contact/request-info"
                         title="contact Sourcegraph"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        contact us
+                        contact our Sales team.
                     </Link>{' '}
-                    about discounts for your development teams.
                 </p>
             ),
+        },
+        {
+            question: 'What does “Up to $19 / user / month” mean for Cody Enterprise?',
+            answer: (
+                <>
+                    <p>
+                        We offer a consumption-based pricing model for Cody Enterprise, which allows you to pay less
+                        based on your team’s usage of Cody. The maximum cost is $19 / user / month.
+                    </p>
+                    <p>
+                        We also offer discounts on Cody Enterprise for customers who use their own LLM keys. Contact us
+                        to learn more.We also offer discounts on Cody Enterprise for customers who use their own LLM
+                        keys. <ContactLink /> to learn more.
+                    </p>
+                </>
+            ),
+        },
+        {
+            question:
+                'What’s the difference between “flexible LLM options,” “bring your own LLM key,” and “bring your own LLM”?',
+            answer: (
+                <>
+                    <p>Flexible LLM options: Users can select from multiple options to use for Cody chat.</p>
+                    <p>
+                        Bring your own LLM key: Enterprise customers can optionally provide their own LLM API key for
+                        supported LLMs (including for LLM services such as Azure OpenAI and Amazon Bedrock). In this
+                        scenario, customers pay for their own LLM consumption and we provide a pricing discount for
+                        Cody.
+                    </p>
+                    <p>
+                        Bring your own LLM: This is a future feature that will allow customers to bring their own LLM
+                        models outside of the ones that Cody supports by default.
+                    </p>
+                </>
+            ),
+        },
+        {
+            question: 'Can Cody be run self-hosted?',
+            answer: (
+                <p>
+                    Cody requires Cloud-based services to power its AI features. For customers looking for a fully
+                    self-hosted or air-gapped solution, please <ContactLink /> .
+                </p>
+            ),
+        },
+        {
+            question: 'What if I want to use Cody for more than 50 users?',
+            answer: (
+                <p>
+                    Please <ContactLink /> if you’re interested in using Cody with more than 50 users on the same
+                    account.
+                </p>
+            ),
+        },
+        {
+            question: 'Is an annual contract required for any of the plans?',
+            answer: <p>Cody Enterprise requires an annual contract. Cody Pro is paid on a monthly basis.</p>,
         },
     ],
     codeSearch: [
         {
-            question: 'Is there a free trial of the paid plans?',
+            question: 'How do I deploy Sourcegraph Code Search? Can I run it self-hosted?',
+            answer: 'Code Search can be deployed using Sourcegraph Cloud (we host) or Sourcegraph Self-hosted (you host).',
+        },
+        {
+            question: 'Is my data secure when connected to Code Search?',
             answer: (
                 <p>
-                    Yes. We offer a free trial for our paid plans.{' '}
+                    Sourcegraph has security and reliability controls built for the most demanding enterprises. To learn
+                    more, see our Security page.{' '}
                     <Link
-                        href="/get-started?t=enterprise"
+                        href="/security"
                         title="Get started"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
                     >
-                        Get started
-                    </Link>{' '}
-                    with a free trial today.
-                </p>
-            ),
-        },
-        {
-            question: 'What are executors?',
-            answer: 'Executors are required to run Batch Changes server-side and to use code navigation’s auto-indexing functionality. The Enterprise Starter plan includes 2 executors and the Enterprise plan includes 4 executors.',
-        },
-        {
-            question: 'My organization requires the use of its own legal contract. Which plan is right for me?',
-            answer: (
-                <p>
-                    Only the Enterprise plan supports this. The Enterprise Starter plan uses our{' '}
-                    <Link href="/terms" className="text-black underline">
-                        online terms of service
+                        Security page.
                     </Link>
-                    .
                 </p>
             ),
         },
         {
-            question: 'Does Sourcegraph offer discounts for educational and non-profit organizations?',
+            question: 'What if I want both Code Search and Cody Enterprise?',
             answer: (
                 <p>
-                    Sourcegraph supports the work of educational organizations and nonprofits. Please{' '}
-                    <Link
-                        href="/contact/request-info?form_submission_source=pricing-enterprise"
-                        title="contact Sourcegraph"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        contact us
-                    </Link>{' '}
-                    about discounts for your development teams.
+                    You can purchase both Code Search Enterprise and Cody Enterprise and run them off of the same
+                    Sourcegraph deployment. <ContactLink /> to learn more.
+                </p>
+            ),
+        },
+        {
+            question: 'How can I pay for Code Search?',
+            answer: (
+                <p>
+                    Code Search requires an annual contract. <ContactLink /> to learn more.
                 </p>
             ),
         },

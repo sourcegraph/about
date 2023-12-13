@@ -140,7 +140,7 @@ const Accordion: FunctionComponent<{
                     isOpen ? 'max-h-[500px] ' : 'max-h-0'
                 )}
             >
-                <div className="p-5">{answer}</div>
+                <div className="p-5 leading-5 tracking-[-0.25px] text-gray-700">{answer}</div>
             </div>
         </div>
     )
