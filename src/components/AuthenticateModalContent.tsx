@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import { ExternalsAuth } from './cta/ExternalsAuth'
+import { Heading } from './Heading'
 
 interface Props {
     source: string
@@ -10,7 +11,7 @@ interface Props {
 
 export const AuthenticateModalContent: FunctionComponent<Props> = ({ source }) => (
     <div>
-        <p className="text-lg text-gray-600">Sign up to get free access:</p>
+        <Heading size="h4" className="text-lg text-gray-600 font-semibold">Sign up to get free access</Heading>
         <ExternalsAuth
             authProvider="github"
             label="Continue With GitHub"

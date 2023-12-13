@@ -30,9 +30,17 @@ interface LayoutProps {
     className?: string
     hideFooter?: boolean
     hideHeader?: boolean
+    customFooterClassName?: string
+    customDark?: boolean
 }
 
-export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, className, ...props }) => {
+export const Layout: FunctionComponent<LayoutProps> = ({
+    headerColorTheme,
+    className,
+    customFooterClassName,
+    customDark = true,
+    ...props
+}) => {
     const navRef = useRef<HTMLElement>(null)
     const router = useRouter()
     const { pathname, asPath } = router
@@ -45,7 +53,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
         description:
             props.meta?.description ||
             'Find and fix things across all of your code with Sourcegraph universal code search.',
-        image: props.meta?.image || 'https://sourcegraph.com/sourcegraph-universal-og.png',
+        image: props.meta?.image || 'https://about.sourcegraph.com/sourcegraph-universal-og.png',
         icon: props.meta?.icon || 'https://sourcegraph.com/favicon.png',
     }
 
@@ -132,11 +140,8 @@ export const Layout: FunctionComponent<LayoutProps> = ({ headerColorTheme, class
 
             {!props.hideFooter && (
                 <Footer
-                    dark={
-                        props.heroAndHeaderClassName === 'home-hero'
-                            ? ''
-                            : headerColorTheme === 'dark' || headerColorTheme === 'purple'
-                    }
+                    className={customFooterClassName}
+                    dark={headerColorTheme === 'dark' || (headerColorTheme === 'purple' && customDark)}
                     minimal={props.minimal}
                 />
             )}

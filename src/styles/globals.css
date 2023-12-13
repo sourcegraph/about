@@ -8,20 +8,25 @@
 @tailwind utilities;
 @import url('./cody-animation.css');
 
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('/fonts/SF-Pro-Text-Regular.otf') format('opentype');
+}
+
 /* Base Styles */
 @layer base {
     /* Typography */
     html {
-        @apply font-sans text-base tracking-normal font-normal antialiased;
+        @apply font-sf text-base tracking-normal font-normal antialiased;
     }
     h1 {
-        @apply font-sans text-6xl md:text-7xl tracking-normal font-semibold;
+        @apply font-sans text-6xl md:text-7xl md:tracking-tightest tracking-normal font-semibold;
     }
     h2 {
         @apply font-sans text-4xl tracking-tighter font-semibold;
     }
     h3 {
-        @apply font-sans text-2xl tracking-normal font-normal;
+        @apply font-sf text-2xl tracking-normal font-normal;
     }
     h4 {
         @apply font-sans text-2xl tracking-normal font-semibold;

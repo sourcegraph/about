@@ -118,7 +118,7 @@ const TickerAnimation: FC<InfiniteCarouselProps> = memo((props: InfiniteCarousel
 TickerAnimation.displayName = 'TickerAnimation'
 
 export const InfiniteCarousel: FC<{ images: { src: string; className?: string }[] }> = ({ images }) => {
-    const duplicatedImages = [...images, ...images, ...images, ...images] // Duplicate images for seamless looping
+    const duplicatedImages = [...images, ...images, ...images, ...images, ...images, ...images, ...images, ...images] // Duplicate images for seamless looping
 
     return (
         <>

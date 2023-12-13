@@ -109,6 +109,7 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      sf: ['SF Pro Text'],
       grotesk: ['Space Grotesk'],
       spaceMono: ['Space Mono'],
     },

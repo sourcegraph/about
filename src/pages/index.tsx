@@ -37,96 +37,91 @@ const Home: FunctionComponent = () => {
             }}
             heroAndHeaderClassName="home-hero"
             headerColorTheme="purple"
+            customFooterClassName="!bg-gray-50"
+            customDark={false}
             hero={<HomeHero />}
         >
             <div className="bg-gray-50">
                 <ContentSection parentClassName="!py-0" className="flex items-center justify-center">
-                    <Heading size="h6" className="pt-16 pb-10 text-center">
+                    <p className="pt-16 pb-10 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
                         Over 1.8M engineers use Sourcegraph
-                    </Heading>
+                    </p>
                 </ContentSection>
-                <div className="flex items-center pb-28">
+                <div className="flex items-center pb-16 md:pb-28">
                     <InfiniteCarousel images={carouselImages} />
                 </div>
-                <ContentSection className="flex flex-col lg:px-6">
-                    <div className="mx-6 flex flex-col pb-14  md:mx-0 md:max-w-[769px]">
-                        <div className="flex gap-4 pb-6">
+                <div className="flex flex-col md:px-6 md:max-w-screen-xl mx-auto">
+                    <div className="mx-6 flex flex-col pb-14">
+                        <div className="flex items-center gap-4 pb-6">
                             <img
                                 className="h-[50px] w-[50px] rounded-t-2xl"
                                 src="/home/branded-icons/cody-squircle.svg"
                                 alt="Cody Product logo"
                             />
-                            <Heading size="h1" className="">
-                                Cody
-                            </Heading>
+                            <Heading size="h1">Cody</Heading>
                         </div>
-                        <h3 className="leading-[30px]">
+                        <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
                             Write, fix, and maintain code with the most powerful & accurate AI coding assistant. Cody
                             uses the code graph to understand your entire codebase and help developers focus on writing
                             and shipping code.
-                        </h3>
+                        </Heading>
                     </div>
                     <div className="pb-8">
                         {isMobile ? (
-                            <div className="relative">
+                            <div className="">
                                 <img
                                     className="w-full"
-                                    src="/home/homepage-cody-product-mobile1.png"
-                                    alt="Cody Product logo"
-                                />
-                                <img
-                                    className="absolute top-[341px] w-full px-5"
-                                    src="/home/homepage-cody-product-mobile2.png"
+                                    src="/home/mobile-cody-homepage-illustration.svg"
                                     alt="Cody Product logo"
                                 />
                             </div>
                         ) : (
                             <img
                                 className="h-[568px] w-[1280px]"
-                                src="/home/home_cody_product.png"
+                                src="/home/homepage-cody-product-illustration.svg"
                                 alt="Cody Product logo"
                             />
                         )}
                     </div>
-                    <div className="mx-6 mb-8 flex h-[329px] gap-[19px] overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0">
-                        <div className="flex flex-col py-16 pl-10">
+                    <div className="relative mx-6 mb-8 flex h-auto gap-[19px]  overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:h-[329px]">
+                        <div className="flex  flex-col py-16 pl-10">
                             <img
                                 className="h-[48px] w-[48px]"
                                 src="/home/branded-icons/completions-brand-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <Heading size="h2" className="pb-4 pt-6 -tracking-[1px] md:leading-10">
+                            <Heading size="h2" className="pb-4 pt-6 !-tracking-[1px] md:leading-10">
                                 Faster coding with autocomplete
                             </Heading>
-                            <p className="mb-0 text-2xl leading-[30px] tracking-tight text-gray-500">
+                            <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
                                 Suggestions for single lines or whole functions, in any programming language,
                                 configuration file, or docs.
-                            </p>
+                            </Heading>
                         </div>
                         {!isMobile && (
-                            <div className="relative">
-                                <div className="autocomplete-gradient absolute z-10 h-[392.193px] w-[1087.411px]" />
+                            <div className="h-full w-full">
+                                <div className="autocomplete-gradient absolute z-0 h-[392.193px] w-[1087.411px]" />
                                 <img
-                                    className="relative z-20 h-[421px] w-[784px]"
+                                    className=" relative h-full w-full"
                                     src="/home/multiline-completion.svg"
                                     alt="Multiline Completion"
                                 />
                             </div>
                         )}
                     </div>
-                    <div className="mx-6 mb-8 grid grid-cols-1 gap-6 md:mx-0 md:grid-cols-2">
+                    <div className="mx-6 mb-8 grid grid-cols-1 gap-8 md:mx-0 md:grid-cols-2 md:gap-6">
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white py-16 px-10">
                             <img
                                 className="h-[48px] w-[48px]"
                                 src="/home/branded-icons/chat-brand-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <Heading size="h2" className="pb-4 pt-6 -tracking-[1px] md:leading-10">
-                                Get help with <span>context-aware chat</span>
+                            <Heading size="h2" className="pb-4 pt-6 !-tracking-[1px] md:leading-10">
+                                Get help with context-aware chat
                             </Heading>
-                            <p className="mb-0">
+                            <Heading size="h3" className="mb-0 leading-[30px] !-tracking-[0.25px] text-gray-500">
                                 Query like a human and learn about your code, or get help with tricky problems.
-                            </p>
+                            </Heading>
                         </div>
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white py-16 px-10">
                             <img
@@ -134,25 +129,25 @@ const Home: FunctionComponent = () => {
                                 src="/home/branded-icons/commands-brand-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <Heading size="h2" className="pb-4 pt-6 -tracking-[1px] md:leading-10">
+                            <Heading size="h2" className="pb-4 pt-6 !-tracking-[1px] md:leading-10">
                                 Automate workflows with commands
                             </Heading>
-                            <p className="mb-0">
+                            <Heading size="h3" className="mb-0 leading-[30px] !-tracking-[0.25px] text-gray-500">
                                 Build and personalize commands that automate common tasks. Explain code or generate unit
                                 tests in seconds.
-                            </p>
+                            </Heading>
                         </div>
                     </div>
                     <Link
                         href="https://sourcegraph.com/cody"
                         title="Cody"
-                        className="btn mx-6 p-0 pb-28 text-violet-500 md:mx-0"
+                        className="btn rounded-65px] mx-6 mb-16 border border-violet-500 p-0 px-5 py-3 text-center font-semibold !-tracking-[0.25px]  text-violet-500 hover:border-violet-400 hover:text-violet-400 md:mx-0 md:mb-28 md:border-none md:px-0 md:pb-0 md:pt-0 md:text-left md:text-violet-500"
                     >
                         Learn more about Cody
                         <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
                     </Link>
                     <div className="relative overflow-hidden md:overflow-visible">
-                        <div className="sg-reviews mb-24 grid grid-cols-1 gap-[30px] rounded-none px-6 py-24 md:grid-cols-2 md:rounded-2xl md:px-20">
+                        <div className="sg-reviews mb-28 grid grid-cols-1 gap-[30px] rounded-none px-6 py-24 md:mb-24 md:grid-cols-2 md:rounded-2xl md:px-20">
                             <div className="flex flex-col gap-4 rounded-[10px] border-1 border-gray-200 bg-white p-5">
                                 <div className="flex ">
                                     <img
@@ -162,12 +157,12 @@ const Home: FunctionComponent = () => {
                                     />
                                     <div className="flex flex-col">
                                         <p className="mb-0 text-base text-violet-500">Ronnie Magatti</p>
-                                        <p className="mb-0 text-sm text-gray-500">
+                                        <p className="mb-0 text-sm !-tracking-[0.25px] text-gray-500">
                                             Team Lead & Principal Software Engineer, Neo Financial
                                         </p>
                                     </div>
                                 </div>
-                                <p className="mb-0 text-lg">
+                                <p className="mb-0 text-lg !-tracking-[0.25px] text-gray-700">
                                     With Sourcegraph, developers are more productive and it’s clear that every team is
                                     getting 1% better every day.
                                 </p>
@@ -181,31 +176,31 @@ const Home: FunctionComponent = () => {
                                     />
                                     <div className="flex flex-col">
                                         <p className="mb-0 text-base text-violet-500">Bryce Kalow</p>
-                                        <p className="mb-0 text-sm text-gray-500">Senior Web Engineer, HashiCorp</p>
+                                        <p className="mb-0 text-sm !-tracking-[0.25px] text-gray-500">
+                                            Senior Web Engineer, HashiCorp
+                                        </p>
                                     </div>
                                 </div>
-                                <p className="mb-0 text-lg">
+                                <p className="mb-0 text-lg !-tracking-[0.25px] text-gray-700">
                                     By its nature and capabilities, Sourcegraph can be a tool to reduce friction, speed
                                     up feedback loops, and improve developer velocity.
                                 </p>
                             </div>
                         </div>
-                        <div className="mx-6 mb-14 flex flex-col md:mx-0 md:max-w-[762px]">
-                            <div className="flex gap-4 pb-6">
+                        <div className="z-10 mx-6 mb-14 flex flex-col md:mx-0 md:w-[762px]">
+                            <div className="flex items-center gap-4 pb-6">
                                 <img
                                     className="h-[50px] w-[50px] rounded-t-2xl"
                                     src="/home/branded-icons/Code-Search-squircle.svg"
                                     alt="Cody Product logo"
                                 />
-                                <Heading size="h1" className="">
-                                    Code Search
-                                </Heading>
+                                <Heading size="h1">Code Search</Heading>
                             </div>
-                            <h3 className="leading-[30px]">
+                            <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
                                 Search your entire codebase—every code host and repository, at any scale—in a single
                                 place. Code Search makes it easy for developers to onboard to new codebases, understand
                                 code faster, and find & fix security risks.
-                            </h3>
+                            </Heading>
                         </div>
                         <div className="flex pb-8">
                             {isMobile ? (
@@ -215,7 +210,7 @@ const Home: FunctionComponent = () => {
                                         src="/home/code-search-mobile.png"
                                         alt="Cody Search"
                                     />
-                                    <div className="code-search-gradient absolute top-[600px]   z-10 h-[1245.828px] w-[524.518px] sm:right-[-730.414px] " />
+                                    <div className="code-search-gradient absolute top-[600px]   right-[-700px] z-10 h-[1245.828px] w-[524.518px] " />
                                 </>
                             ) : (
                                 <>
@@ -229,36 +224,36 @@ const Home: FunctionComponent = () => {
                             )}
                         </div>
                     </div>
-                    <div className="gap-19 mx-6 mb-8 flex rounded-2xl border-1 border-gray-200 bg-white md:mx-0">
+                    <div className="gap-19 z-10 mx-6 mb-8 flex rounded-2xl border-1 border-gray-200 bg-white md:mx-0">
                         <div className=" flex max-w-[590px] flex-col py-16 pl-10 pr-[70px]">
                             <img
                                 className="h-[32px] w-[30.316px]"
                                 src="/home/branded-icons/code-search-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <Heading size="h2" className="pb-4 pt-6 -tracking-[1px] md:leading-10">
+                            <Heading size="h2" className="pb-4 pt-6 !-tracking-[1px] md:leading-10">
                                 Find and fix code
                             </Heading>
-                            <h3 className="mb-0">
+                            <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
                                 Find what you need in milliseconds across all of your code–no matter where it lives.
-                            </h3>
+                            </Heading>
                         </div>
-                        {!isMobile && <img className="" src="/home/code graph.svg" alt="Multiline Completion" />}
+                        {!isMobile && <img className="" src="/home/code-graph-home.svg" alt="Multiline Completion" />}
                     </div>
-                    <div className="mx-6 mb-8 flex flex-col gap-6 md:mx-0 md:flex-row">
+                    <div className="mx-6 mb-8 flex flex-col gap-8 md:mx-0 md:flex-row md:gap-6">
                         <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white py-16 px-10 md:w-[566px]">
                             <img
                                 className="h-[48px] w-[48px]"
                                 src="/home/branded-icons/Code-insights-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <Heading size="h2" className="pb-4 pt-6 -tracking-[1px] md:leading-10">
+                            <Heading size="h2" className="pb-4 pt-6 !-tracking-[1px] md:leading-10">
                                 Track trends in your codebase
                             </Heading>
-                            <p className="mb-0">
+                            <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
                                 Onboard to codebases faster. Provide a better understanding of the code and who to reach
                                 out to when they need help.
-                            </p>
+                            </Heading>
                         </div>
                         <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white py-16 px-10">
                             <img
@@ -266,35 +261,35 @@ const Home: FunctionComponent = () => {
                                 src="/home/branded-icons/batch-changes-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <Heading size="h2" className="pb-4 pt-6 -tracking-[1px] md:leading-10">
+                            <Heading size="h2" className="pb-4 pt-6 !-tracking-[1px] md:leading-10">
                                 Automate large-scale code changes
                             </Heading>
-                            <p className="mb-0">
+                            <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
                                 Deeply understand your codebase with Sourcegraph, whether you choose to deploy in the
                                 cloud or on-premise.
-                            </p>
+                            </Heading>
                         </div>
                     </div>
                     <Link
                         href="https://sourcegraph.com/code-search"
                         title="Code Search"
-                        className="btn mx-6 p-0 pb-28 text-violet-500 md:mx-0"
+                        className="btn rounded-65px] mx-6 mb-28 border border-violet-500 p-0 px-5 py-3 text-center font-semibold !-tracking-[0.25px] text-violet-500  hover:border-violet-400 hover:text-violet-400 md:mx-0 md:mb-24 md:border-none md:px-0 md:pb-0 md:pt-0 md:text-left md:text-violet-500"
                     >
                         Learn more about Code Search
                         <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
                     </Link>
-                    <div className="sg-reviews flex flex-col gap-16 rounded-none px-6 py-[73px] text-white md:flex-row md:rounded-2xl md:px-20 md:py-16">
-                        <div className="flex flex-col gap-4">
+                    <div className="sg-reviews flex flex-col gap-6 rounded-none px-6 py-[73px] text-white md:flex-row md:gap-16 md:rounded-2xl md:px-20 md:py-16">
+                        <div className="flex flex-col gap-4 p-5 md:p-0">
                             <div className="flex flex-col">
                                 <p className="mb-0 text-base">Aneesh Agrawal</p>
                                 <p className="mb-0 text-sm">Software Engineer, Lyft</p>
                             </div>
-                            <p className="mb-0 text-[35px] font-normal leading-[43.75px]">
+                            <p className="mb-0 pb-4 text-[35px] font-normal leading-[43.75px] md:pb-0">
                                 Sourcegraph makes it easy to survey and understand existing use cases to make sure we
                                 build the right thing.
                             </p>
                         </div>
-                        <div className="flex self-end whitespace-nowrap">
+                        <div className="flex whitespace-nowrap px-10 md:self-end md:px-0">
                             <Link
                                 href="https://sourcegraph.com/case-studies/lyft-monolith-to-microservices"
                                 title="Case study"
@@ -305,11 +300,11 @@ const Home: FunctionComponent = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="mx-6 grid grid-cols-1 gap-6 py-24 md:mx-0 md:grid-cols-2">
+                    <div className="mx-6 grid grid-cols-1 gap-6 py-16 md:mx-0 md:grid-cols-2 md:py-24">
                         <div className="hover:cta-free-cody relative overflow-hidden rounded-2xl border-1 border-gray-200 bg-white">
                             <div className="cta-top-border absolute top-0 left-0 right-0 rounded-t-2xl" />
                             <div className=" py-16 px-14">
-                                <Heading className="mb-[10px] -tracking-[1px] text-gray-700 md:leading-10" size="h2">
+                                <Heading className="mb-4 !-tracking-[1px] text-gray-700 md:leading-10" size="h2">
                                     Cody Free
                                 </Heading>
                                 <p className="mb-0 text-lg text-gray-500">
@@ -318,7 +313,7 @@ const Home: FunctionComponent = () => {
                                 <div className="mt-6 flex flex-wrap gap-2">
                                     <button
                                         type="button"
-                                        className={classNames('btn btn-primary')}
+                                        className={classNames('btn btn-primary w-full md:w-auto')}
                                         title="free cody"
                                         onClick={handleOpenModal}
                                     >
@@ -329,33 +324,33 @@ const Home: FunctionComponent = () => {
                         </div>
 
                         <div className="cta-home rounded-2xl py-16 px-14 text-white">
-                            <Heading className="mb-[10px] -tracking-[1px] md:leading-10" size="h2">
+                            <Heading className="mb-[10px] !-tracking-[1px] md:leading-10" size="h2">
                                 Cody Enterprise
                             </Heading>
                             <p className="mb-0 text-lg text-[#FFFFFFCC]">
                                 Cody Enterprise provides additional security, scalability, and control for your
                                 organization. Unlimited usage and context-awareness of your entire codebase.
                             </p>
-                            <div className="mt-8 flex items-center gap-4">
+                            <div className="mt-8 flex flex-col items-center gap-4 md:flex-row">
                                 <Link
                                     href="https://sourcegraph.com/contact/request-info"
                                     title="Get Cody for Enterprise"
-                                    className="hover:bg-color-violet-600 rounded-[5px] border border-white py-2 px-6 text-white"
+                                    className="btn hover:bg-color-violet-600 w-full rounded-[5px] border border-white py-2 px-6 text-center text-white md:w-auto"
                                 >
                                     Contact sales
                                 </Link>
                                 <Link
                                     href="https://sourcegraph.com/pricing"
                                     title="See pricing"
-                                    className="btn p-0 text-white "
+                                    className="btn hover:bg-color-violet-600 border-whit w-full rounded-[5px] border px-6 text-center text-white md:w-auto md:border-none"
                                 >
                                     See pricing
-                                    <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
+                                    {!isMobile && <ChevronRightIcon className="!mb-0 ml-[10px] inline" />}
                                 </Link>
                             </div>
                         </div>
                     </div>
-                </ContentSection>
+                </div>
             </div>
         </Layout>
     )
@@ -367,43 +362,41 @@ const HomeHero: FunctionComponent = () => {
 
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal('cody')
+    const handleOpenModal = (): void => openModal('home')
     return (
-        <>
-            <ContentSection className="flex items-center justify-center" parentClassName="!py-0">
-                <div className="mx-auto flex flex-col items-center justify-center text-center">
-                    <div className="mx-auto flex flex-col items-center pt-16 pb-[70px] md:w-[680px]">
-                        <Heading
-                            size="h1"
-                            className="mb-6 w-full text-center !text-[48px] leading-tight text-white md:!text-[62px]"
-                        >
-                            Grok and write code blazingly fast
-                        </Heading>
-                        <p className="mb-8 text-2xl text-[#FFFFFF99]">
-                            Sourcegraph deeply understands your code, no matter how large or where it's hosted, to power
-                            modern developer experiences.
-                        </p>
-                        <button
-                            type="button"
-                            className={classNames('btn btn-inverted-primary text-violet-500')}
-                            title="free cody"
-                            onClick={handleOpenModal}
-                        >
-                            Get Cody for free
-                        </button>
-                    </div>
-                    {!isMobile && (
-                        <div className="w-full ">
-                            <img
-                                className="max-w-[1062px] rounded-t-2xl"
-                                src="/home/home_hero.png"
-                                alt="Cody Chat interface"
-                            />
-                        </div>
-                    )}
+        <ContentSection className="flex items-center justify-center" parentClassName="!py-0">
+            <div className="mx-auto flex flex-col items-center justify-center text-center">
+                <div className="mx-auto flex flex-col items-center md:pt-16 pt-8 md:pb-[70px] pb-16 md:w-[680px]">
+                    <Heading
+                        size="h1"
+                        className="md:mb-6 mb-8 w-full text-center !text-[48px] lg:-tracking-[0.62px] text-white md:!text-[62px] lg:leading-[65px]"
+                    >
+                        Grok and write code blazingly fast
+                    </Heading>
+                    <p className="md:mb-8 mb-10 text-2xl font-normal leading-[30px] -tracking-[0.25px] text-[#FFFFFF99]">
+                        Sourcegraph deeply understands your code, no matter how large or where it's hosted, to power
+                        modern developer experiences.
+                    </p>
+                    <button
+                        type="button"
+                        className={classNames('btn btn-inverted-primary text-violet-500')}
+                        title="free cody"
+                        onClick={handleOpenModal}
+                    >
+                        Get Cody for free
+                    </button>
                 </div>
-            </ContentSection>
-        </>
+                {!isMobile && (
+                    <div className="w-full ">
+                        <img
+                            className="max-w-[1062px] rounded-t-2xl"
+                            src="/home/home_hero.png"
+                            alt="Cody Chat interface"
+                        />
+                    </div>
+                )}
+            </div>
+        </ContentSection>
     )
 }
 
