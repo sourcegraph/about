@@ -97,9 +97,8 @@ export const FREE_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['freeMessageAndcommands'],
     },
     {
-        topic: 'Code context',
+        topic: 'Code context and personalization',
         features: ['freeCodeContext'],
-        description: "Advanced code context is used to personalize Cody's responses to a user's own codebase",
         topicClass: 'mb-6',
     },
     {
@@ -122,9 +121,8 @@ export const PRO_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['proMessageAndcommands'],
     },
     {
-        topic: 'Code context',
+        topic: 'Code context and personalization',
         features: ['proCodeContext'],
-        description: "Advanced code context is used to personalize Cody's responses to a user's own codebase",
         topicClass: 'mb-6',
     },
     {
@@ -147,9 +145,8 @@ export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['proMessageAndcommands'],
     },
     {
-        topic: 'Code context',
-        features: ['proCodeContext'],
-        description: "Advanced code context is used to personalize Cody's responses to a user's own codebase",
+        topic: 'Code context and personalization',
+        features: ['entCodeContext'],
         topicClass: 'mb-6',
     },
     {
@@ -270,7 +267,6 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
                 <span className="font-bold">500 </span> Autocompletions per month
             </p>
         ),
-        description: '500 Autocompletions per month',
     },
     freeMessageAndcommands: {
         label: (
@@ -283,10 +279,8 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         label: (
             <div className="grid gap-6">
                 <p className="m-0">
-                    <span className="font-bold">Limited </span>Advanced context is available for up to 5MB of personal
-                    code.
+                    Personalization for small codebases
                 </p>
-                <p className="m-0">Advanced context is available for any git-based code host</p>
             </div>
         ),
     },
@@ -330,7 +324,14 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     proCodeContext: {
         label: (
             <p className="m-0">
-                <span className="font-bold">Unlimited </span> Advanced context for private codebases
+                Personalization for larger codebases
+            </p>
+        ),
+    },
+    entCodeContext: {
+        label: (
+            <p className="m-0">
+                Advanced personalization for enterprise codebases
             </p>
         ),
     },
