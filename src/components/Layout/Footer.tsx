@@ -27,7 +27,7 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
         name: 'Products',
         items: [
             {
-                name: 'Cody (beta)',
+                name: 'Cody',
                 href: '/cody',
             },
             {
