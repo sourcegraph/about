@@ -110,10 +110,6 @@ export const FREE_FEATURES_OVERVIEW: FeatureCluster[] = [
         topic: 'Support',
         features: ['freeSupport'],
     },
-    {
-        topic: 'Developer limit',
-        features: ['freeLimitation'],
-    },
 ]
 
 export const PRO_FEATURES_OVERVIEW: FeatureCluster[] = [
@@ -139,11 +135,6 @@ export const PRO_FEATURES_OVERVIEW: FeatureCluster[] = [
         topic: 'Support',
         features: ['freeSupport'],
     },
-    {
-        topic: 'Developer limit',
-        features: ['proLimitation'],
-    },
-]
 
 export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
     {
@@ -167,14 +158,6 @@ export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
     {
         topic: 'Compatibility',
         features: ['supportedCodeEditors', 'supportedPL', 'supportCode'],
-    },
-    {
-        topic: 'Support',
-        features: ['freeSupport'],
-    },
-    {
-        topic: 'Developer limit',
-        features: ['enterPriseLimitation'],
     },
 ]
 
@@ -324,7 +307,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'Supports code from all code hosts',
     },
     freeSupport: {
-        label: 'Community support only',
+        label: 'Community support through Discord',
     },
     freeLimitation: {
         label: '1 user',
