@@ -303,7 +303,7 @@ const PricingPage: FunctionComponent = () => {
                                 }
                                 buttons={
                                     <ContactUsButton
-                                        href=""
+                                        href="/contact/request-info?form_submission_source=pricing-enterprise-starter"
                                         title="Contact us"
                                         className="border-violet-700 text-violet-700 hover:border-violet-500 hover:bg-violet-500 hover:text-white"
                                     />
