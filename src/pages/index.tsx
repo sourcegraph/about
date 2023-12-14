@@ -44,7 +44,7 @@ const Home: FunctionComponent = () => {
             <div className="bg-gray-50">
                 <ContentSection parentClassName="!py-0" className="flex items-center justify-center">
                     <p className="pt-16 pb-10 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
-                        Over 1.8M engineers use Sourcegraph
+                        Over 2.5M engineers use Sourcegraph
                     </p>
                 </ContentSection>
                 <div className="flex items-center pb-16 md:pb-28">
