@@ -1,3 +1,5 @@
+/* eslint no-void: 0 */
+/* eslint @typescript-eslint/no-floating-promises: 0 */
 import { FunctionComponent, useState, useEffect } from 'react'
 
 import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
@@ -156,7 +158,7 @@ const PricingPage: FunctionComponent = () => {
     // check to see if the url params has a product
     useEffect(() => {
         if (router.query.product) {
-            setSelectedOption(router.query.product as string)
+            void setSelectedOption(router.query.product as string)
         }
     }, [router.query.product])
 
