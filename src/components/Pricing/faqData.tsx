@@ -39,7 +39,7 @@ export const faqData: FAQData = {
                         coding assistants. Usage limits apply.
                     </p>
                     <p>
-                        Cody Pro is best for professional developers and small teams who want unlimited usage and
+                        Cody Pro is best for professional developers who want unlimited usage and
                         context for larger codebases. Cody Pro is free until February 2024.
                     </p>
                     <p>
@@ -51,7 +51,7 @@ export const faqData: FAQData = {
             ),
         },
         {
-            question: 'How are Cody autocompletions counted for the Cody Free plan?',
+            question: 'How are autocompletions counted for the Cody Free plan?',
             answer: (
                 <p>
                     Cody autocompletions are counted based on the number of suggestions that are served to the user in
@@ -64,8 +64,8 @@ export const faqData: FAQData = {
             answer: (
                 <>
                     <p>
-                        Cody offers several ways of retrieving codebase context to personalize its responses. One of the
-                        ways is through embeddings, which we generate by sending repositories to the OpenAI API.
+                        Cody offers several ways of retrieving codebase context to personalize its responses. One 
+                        way is through embeddings, which are generated for user repositories.
                     </p>
                     <p>
                         Cody Free users can create embeddings for up to 200MB of code, and Cody Pro users can create
