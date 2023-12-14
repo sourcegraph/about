@@ -13,14 +13,6 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-gene
 
 Today, we announce the general availability of Cody 1.0, a new AI coding assistant that uses intelligent code context to answer technical questions, generate code, and suggest completions in your editor.
 
-<-- TODO INSERT WHATS NEW VIDEO -->
-
-<YouTube
-  title="" 
-  id=""
-  showTitle={false}
-/>
-
 Unlike traditional AI coding tools that have only simple local context, Cody searches and navigates your code to integrate relevant context into its responses, similar to how a savvy human developer would (but of course at robot speeds).
 
 Cody's context engine also differs from agent-based context fetchers in some other assistants, which employ a sequence of decisions orchestrated by a language model. The issue we've found with this approach is that it compounds the latency and randomness of multiple serial inference requests, leading to poor and unreliable context quality.
