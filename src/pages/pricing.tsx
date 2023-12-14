@@ -156,7 +156,8 @@ const PricingPage: FunctionComponent = () => {
     // check to see if the url params has a product
     useEffect(() => {
         if (router.query.product) {
-            void setSelectedOption(router.query.product as string)
+            // eslint-disable-next-line @typescript-eslint/no-floating-promises
+            setSelectedOption(router.query.product as string)
         }
     }, [router.query.product])
 
