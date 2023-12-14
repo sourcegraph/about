@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { MdOutlineTrendingUp } from 'react-icons/md'
 
 import {
-    Badge,
     ContentSection,
     Heading,
     Layout,
