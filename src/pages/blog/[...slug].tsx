@@ -46,7 +46,7 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
             </article>
 
             <DownloadAppCallToActionSection
-                href="https://about.sourcegraph.com/cody"
+                href="https://sourcegraph.com/cody"
                 title="Get Cody, the AI coding assistant"
                 description="Cody makes it easy to write, fix, and maintain code."
                 colorTheme="light"
