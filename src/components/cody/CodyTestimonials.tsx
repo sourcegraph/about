@@ -35,15 +35,15 @@ const TESTIMONIALS = [
 
 export const CodyTestimonials: FunctionComponent = () => (
     <ContentSection parentClassName="!py-0" className="w-full py-16 pb-24 md:pb-8 md:pt-24 ">
-        <div className="flex w-full flex-col items-center justify-between gap-x-0  gap-y-[30px] py-6 md:flex-row md:gap-x-[30px]">
+        <div className="flex w-full flex-col items-stretch justify-between  gap-x-0 gap-y-[30px] py-6 md:flex-row md:gap-x-[30px]">
             {TESTIMONIALS.map(testimonial => (
                 <div
                     key={testimonial.name}
-                    className="w-full flex-1 rounded-[10px] border border-gray-200 bg-white p-5 md:h-[278px] "
+                    className="w-full flex-1 rounded-[10px] border border-gray-200 bg-white p-5 md:min-h-[278px] md:items-start"
                 >
                     <div className="mb-4 flex items-center">
                         <img className="mr-[10px] h-10 w-10" src={testimonial.profileImage} alt={testimonial.name} />
-                        <div className="">
+                        <div>
                             <p className="m-0 mb-[-5px] text-base font-normal leading-6 tracking-[-0.25px] text-violet-500">
                                 {testimonial.name}
                             </p>

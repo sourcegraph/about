@@ -3,28 +3,34 @@ import { FunctionComponent, ReactNode, useState } from 'react'
 import classNames from 'classnames'
 
 import { Heading, ContentSection } from '..'
-import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
 
 export const CodyImageTab: FunctionComponent<{
     icon: string
     headerText: string
     description: string | ReactNode
-    tabContent: { header: string; description: string; 
-    imageSrc: {
-        mobile: string
-        desktop: string
-    }
+    tabContent: {
+        header: string
+        description: string
+        imageSrc: {
+            mobile: string
+            desktop: string
+        }
     }[]
 }> = ({ icon, headerText, description, tabContent }) => {
     const [selectedContentIndex, setSelectedContentIndex] = useState(0)
     const windowWidth = useWindowWidth()
-    const isMobile = windowWidth < breakpoints.md
+    const isSmallTablet = windowWidth > 1140
 
     return (
         <ContentSection
             parentClassName="!px-0 !pb-0"
-            className="h-[1080px] overflow-hidden border-y border-white border-opacity-20 bg-violet-700 md:px-6 md:pt-8 md:h-auto md:rounded-lg md:border md:pb-0 md:pl-[60px]"
+            className={classNames(
+                ' h-[auto] overflow-hidden border-y border-white border-opacity-20 bg-violet-700 md:rounded-lg md:border p-6 md:py-0  md:pt-8 md:pb-0 md:pl-[60px]',
+                {
+                    'h-[1080px] md:h-auto': isSmallTablet,
+                }
+            )}
         >
             <div>
                 <img className="h-[48px] w-[48px]" src={icon} alt="Cody logo" />
@@ -36,7 +42,12 @@ export const CodyImageTab: FunctionComponent<{
                 ) : (
                     description
                 )}
-                <div className="relative mt-16 flex h-[592px] flex-col gap-y-8 md:h-[400px] md:flex-row">
+                <div
+                    className={classNames(' relative mt-16 flex gap-y-8', {
+                        'h-[592px] flex-col md:h-[400px] md:flex-row': isSmallTablet,
+                        'flex-col': !isSmallTablet,
+                    })}
+                >
                     <div className="mb-8 flex min-w-fit flex-grow flex-col gap-[18px] md:mt-6 md:mb-0">
                         {tabContent.map((content, index) => (
                             <button
@@ -55,14 +66,22 @@ export const CodyImageTab: FunctionComponent<{
                             </button>
                         ))}
                     </div>
-                    <div className="bottom-0 md:ml-[-24px] h-auto w-full max-w-[800px] md:absolute md:top-0 md:right-[-50px] md:mr-0 md:h-[426px] md:w-auto">
+                    <div
+                        className={classNames(
+                            ' bottom-0 h-auto w-full max-w-[800px] md:ml-[-24px] md:mr-0 md:h-[426px] md:w-auto',
+                            {
+                                'md:absolute md:top-0 md:right-[-50px]': isSmallTablet,
+                                'pb-16': !isSmallTablet,
+                            }
+                        )}
+                    >
                         {tabContent.map((content, index) => (
                             <img
                                 key={index}
                                 className={classNames({
                                     hidden: selectedContentIndex !== index,
                                 })}
-                                src={isMobile ? content.imageSrc.mobile : content.imageSrc.desktop}
+                                src={!isSmallTablet ? content.imageSrc.mobile : content.imageSrc.desktop}
                                 alt={content.header}
                             />
                         ))}
