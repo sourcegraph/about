@@ -50,8 +50,8 @@ const Home: FunctionComponent = () => {
                 <div className="flex items-center pb-16 md:pb-28">
                     <InfiniteCarousel images={carouselImages} />
                 </div>
-                <div className="flex flex-col md:px-6 md:max-w-screen-xl mx-auto">
-                    <div className="flex flex-col pb-14 px-6 md:px-0 max-w-[769px]">
+                <div className="mx-auto flex flex-col md:max-w-screen-xl md:px-6">
+                    <div className="flex max-w-[769px] flex-col px-6 pb-14 md:px-0">
                         <div className="flex items-center gap-4 pb-6">
                             <img
                                 className="h-[50px] w-[50px] rounded-t-2xl"
@@ -387,19 +387,18 @@ const HomeHero: FunctionComponent = () => {
                     </button>
                 </div>
                 {!isMobile && (
-                    <div className="w-full lg:w-[1062px]">
+                    <div className="w-full overflow-hidden lg:w-[1062px]">
                         <video
-                            className="rounded-t-lg"
+                            className="relative bottom-[-6px] rounded-t-lg"
                             autoPlay={true}
                             muted={true}
                             loop={true}
                             playsInline={true}
                             controls={false}
                         >
-                            <source
-                                type="video/mp4"
-                                src="/home/Header-Vid-Non-Rounded.mp4"
-                            />
+                            <source type="video/ogg" src="/home/Header-Vid-Non-Rounded.ogg" />
+                            <source type="video/mp4" src="/home/Header-Vid-Non-Rounded.mp4" />
+                            <source type="video/webm" src="/home/Header-Vid-Non-Rounded.webm" />
                         </video>
                     </div>
                 )}
