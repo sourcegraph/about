@@ -5,14 +5,21 @@ import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
 import { ContentSection, Heading } from '..'
+import { useAuthModal } from '../../context/AuthModalContext'
 
 interface CodyCtaProps {
     onContactClick: () => void
     isCodyPage?: boolean
+    source: string
 }
 
-export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick, isCodyPage = false }) => (
-    <ContentSection
+export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick, isCodyPage = false, source}) => {
+    const { openModal } = useAuthModal()
+
+    const handleOpenModal = (): void => openModal(source)
+
+    return (
+        <ContentSection
         id="contact-form"
         parentClassName="!py-0"
         className="mx-auto flex flex-col gap-6 py-16 md:flex-row md:py-[112px]"
@@ -37,7 +44,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick, isCod
                 Use Cody for free in your IDE, no credit card required.
             </Heading>
             <div className="mt-6 flex flex-col flex-wrap gap-4 md:flex-row md:gap-2">
-                <button title="Get Cody free" className="btn btn-primary text-center" type="button">
+                <button onClick={handleOpenModal} title="Get Cody free" className="btn btn-primary text-center" type="button">
                     Get Cody free
                 </button>
             </div>
@@ -93,4 +100,6 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick, isCod
             </div>
         </div>
     </ContentSection>
-)
+    )
+}
+

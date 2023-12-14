@@ -26,7 +26,7 @@ export const CodyAutocomplete: FunctionComponent<{ className?: string }> = ({ cl
                 </h3>
                 <div className="flex w-full items-center justify-center rounded-lg bg-gray-50 p-6 md:w-[459px]">
                     <h5 className="font-[590px] mb-0 w-full text-center text-xl font-semibold leading-[25px] tracking-[-0.25px] text-gray-500 md:w-[313px]">
-                        Every day, Cody helps developers write &gt; 150,000 lines of code
+                        Every day, Cody helps developers write &gt; 25,000 lines of code
                     </h5>
                 </div>
             </div>
