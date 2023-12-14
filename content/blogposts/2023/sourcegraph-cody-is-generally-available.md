@@ -33,7 +33,7 @@ With this GA announcement, Cody is officially ready for both personal and profes
 [Start using Cody for free today](https://sourcegraph.com/cody). If you’re already using Cody, make sure to update to the latest extension version to get the latest features.
 
 ## Context-enhanced code completions
-
+<br/>
 Cody provides fast single and multi-line completions.
 
 <Video 
@@ -54,7 +54,7 @@ As just one example of the work we’re doing to continue to improve quality, Co
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/cody-person-interface.png"
-    caption="JavaScript definitions of person and personMessage"
+    caption="TypeScript definitions of person and personMessage"
 />
 
 <Figure
