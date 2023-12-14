@@ -281,7 +281,7 @@ const PricingPage: FunctionComponent = () => {
                                 buttons={
                                     <ContactUsButton
                                         href=""
-                                        title="Contact sales"
+                                        title="Request info"
                                         className="border-violet-700 text-violet-700 hover:border-violet-500 hover:bg-violet-500 hover:text-white"
                                     />
                                 }
