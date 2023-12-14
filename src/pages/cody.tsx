@@ -1,54 +1,50 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
-import DownloadIcon from 'mdi-react/DownloadIcon'
-import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import {
     ContentSection,
     Heading,
     Layout,
-    ExternalsAuth,
     HubSpotForm,
-    Badge,
     Modal,
     CodyCta,
     CodyIde,
     CodyAutocomplete,
     CodyChat,
-    CodyVideoTab,
+    CodyImageTab,
     ContextAnimation,
+    CodyPartners,
+    CodyTestimonials,
 } from '../components'
+import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 import { useWindowWidth } from '../hooks/windowWidth'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
 
-const VIDEO_TAB_CONTENT = [
+const IMAGE_TAB_CONTENT = [
     {
         header: 'Explain code or entire repositories',
         description: 'Get up to speed on new projects quickly',
-        videoSrc:
-            'https://user-images.githubusercontent.com/81499360/266091359-cb00def8-08e3-4aa3-b8a5-0d0712cd38f6.mp4',
+        imageSrc: { mobile: '/cody/explain-code.png', desktop: '/cody/explain-code.svg' },
     },
     {
         header: 'Generate unit tests in seconds',
         description: 'Spend more time writing new code',
-        videoSrc:
-            'https://user-images.githubusercontent.com/81499360/266091266-93479f7e-e0b9-4203-b600-36e1777a7164.mp4',
+        imageSrc: { mobile: '/cody/generate-unit-tests.png', desktop: '/cody/generate-unit-tests.svg' },
     },
     {
         header: 'Describe code smells',
         description: 'Optimize your code for best practices',
-        videoSrc:
-            'https://user-images.githubusercontent.com/81499360/266091553-5f0e9919-16bf-476c-b9f1-929f49b8eb61.mp4',
+        imageSrc: { mobile: '/cody/describe-code-smell.png', desktop: '/cody/describe-code-smell.svg' },
     },
     {
         header: 'Define your own custom commands',
         description: 'Customize Cody for your workflow',
-        videoSrc:
-            'https://user-images.githubusercontent.com/81499360/266091507-0f2f1929-726c-4e94-b037-b36c8409d031.mp4',
+        imageSrc: { mobile: '/cody/define-custom-command.png', desktop: '/cody/define-custom-command.svg' },
     },
 ]
 
@@ -56,7 +52,12 @@ const CodyPage: FunctionComponent = () => {
     const [isContactModalOpen, setIsContactModalOpen] = useState(false)
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
-    const isXsMobile = windowWidth < 396
+    const router = useRouter()
+    const { pathname } = router
+    const { openModal } = useAuthModal()
+
+    const source = pathname.slice(1) || 'about-home'
+    const handleOpenModal = (): void => openModal(source)
 
     useEffect(() => {
         const eventArguments = {
@@ -76,131 +77,88 @@ const CodyPage: FunctionComponent = () => {
                 image: 'https://sourcegraph.com/cody/cody-og.png',
             }}
             headerColorTheme="purple"
-            childrenClassName={isMobile ? 'sg-bg-gradient-cody-mobile' : 'sg-bg-gradient-cody'}
+            childrenClassName={isMobile ? 'sg-bg-gradient-cody-mobile' : 'sg-bg-gradient-cody-lg'}
             displayChildrenUnderNav={true}
+            customFooterClassName="!bg-transparent"
         >
-            {/* Hero Section */}
             <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 text-center md:mt-0 md:pt-[22px]">
                 <div className="mx-auto w-full px-6 md:w-[849px] lg:w-[895px]">
-                    <div className="center flex items-center justify-center gap-x-4">
-                        <Heading size="h1" className="!text-[53px] text-white md:!text-[62px]">
-                            Meet Cody{' '}
-                        </Heading>
-                        <img
-                            src="/cody/cody-logo.svg"
-                            className="h-[45px] w-[49px] md:h-[50px] md:w-[55px]"
-                            alt="Cody Logo"
-                        />
+                    <div className="mx-auto w-full pt-6 text-[48px] font-semibold leading-[58px] text-white md:text-[72px] md:leading-[86px]">
+                        Code more, type less
                     </div>
-                    <div className="mx-auto w-full pt-6 text-[41px] font-semibold leading-[41px] text-white md:text-[47px] md:leading-[47px]">
-                        We’re building the only AI coding assistant that knows your{' '}
-                        <span className="cody-heading bg-clip-text text-transparent"> entire codebase </span>
-                    </div>
-                    <Heading size="h4" className="mx-auto mt-6 max-w-[637px]  !font-normal text-gray-200">
-                        Cody answers technical questions and writes code directly in your IDE, using your code graph for
-                        context and accuracy.
+                    <Heading
+                        size="h3"
+                        className="mx-auto mb-8 mt-6  max-w-[663px] leading-[30px] !tracking-[-0.25px] text-gray-200"
+                    >
+                        Cody is a coding AI assistant that uses AI and a deep understanding of your codebase to help
+                        you write and understand code faster.
                     </Heading>
-                    <div className="mt-8 text-lg font-semibold text-white">
-                        Get Started with Cody <Badge size="small" text="BETA" color="violet" />
-                    </div>
-                    <div className="mx-auto mt-4 flex flex-wrap justify-center gap-2 sm:w-[512px]">
-                        <div className="flex w-[228px] gap-2 md:w-fit">
-                            <ExternalsAuth
-                                className="w-fit  justify-center !font-normal"
-                                authProvider="github"
-                                label="GitHub"
-                                source="about-cody"
-                            />
-                            <ExternalsAuth
-                                className="w-fit justify-center !font-normal"
-                                authProvider="gitlab"
-                                label="GitLab"
-                                source="about-cody"
-                            />
+                    <button
+                        type="button"
+                        className="btn btn-inverted-primary min-w-[204px] px-6 text-violet-500 lg:px-4"
+                        title="Get Cody for free"
+                        onClick={handleOpenModal}
+                    >
+                        <div className="flex items-center justify-center">
+                            <img src="/cody/cody-logo.svg" className="mr-2 h-[24px] w-[24px]" alt="Cody Logo" />
+                            Get Cody for free
                         </div>
-
-                        <ExternalsAuth
-                            className={`w-fit justify-center !font-normal ${isXsMobile ? 'max-w-[228px] flex-1' : ''}`}
-                            authProvider="google"
-                            label="Google"
-                            source="about-cody"
-                        />
-                    </div>
-                    <p className="mt-4 text-[14px] text-violet-300 opacity-70">
-                        By registering, you agree to our{' '}
-                        <Link
-                            className="text-violet-300 underline"
-                            target="_blank"
-                            href="https://sourcegraph.com/terms"
-                        >
-                            Terms of Service
-                        </Link>{' '}
-                        and{' '}
-                        <Link
-                            className="text-violet-300 underline"
-                            target="_blank"
-                            href="https://sourcegraph.com/terms/privacy"
-                        >
-                            Privacy Policy
-                        </Link>
-                    </p>
+                    </button>
                 </div>
             </ContentSection>
 
-            <CodyAutocomplete />
+            <CodyAutocomplete className="sg-bg-gradient-cody-hero" />
 
             <CodyIde />
 
             <CodyChat />
 
-            <Heading size="h3" className="mx-auto mt-[96px] hidden max-w-[839px] px-sm text-center text-white md:block">
-                “Cody is a game-changer! It helps me work smarter, write cleaner code, and understand projects faster.
-                My productivity is through the roof, thanks to Cody.”
-            </Heading>
+            <CodyPartners />
 
-            <div className="mt-6 hidden flex-row items-center justify-center gap-4 md:flex">
-                <img className="" src="/cody/Avatar.svg" alt="Avatar" />
-                <div className="flex-col">
-                    <p className="mb-0 text-lg font-semibold text-gray-200">TINO WENING</p>
-                    <p className="mb-0 text-lg text-gray-200">ENGINEER</p>
-                </div>
-            </div>
+            <CodyTestimonials />
 
-            <CodyVideoTab
-                icon="/cody/slash-logo.svg"
+            <CodyImageTab
+                icon="/cody/commands-brand-icon.svg"
                 headerText="Run custom and pre-built commands"
                 description={
-                    <p className="mt-[18px] mb-0 text-lg text-gray-200">
-                        Write, describe, fix, and smell code with commands.
-                        <br />
-                        We’re adding new commands frequently, plus you can create & share your own custom commands.
-                    </p>
+                    <Heading
+                        size="h3"
+                        className="mb-0 pt-[18px] text-lg leading-[30px] !tracking-[-0.25px] text-gray-200"
+                    >
+                        Generate, test, and fix code with one-click commands.
+                    </Heading>
                 }
-                tabContent={VIDEO_TAB_CONTENT}
+                tabContent={IMAGE_TAB_CONTENT}
             />
 
-            <ContentSection parentClassName="!pb-0" className="flex flex-col gap-12 md:flex-row md:justify-between">
-                <div className="flex w-full flex-col md:max-w-[501px]">
-                    <Heading size="h2" className="mb-1 !text-4xl text-white">
+            <ContentSection
+                parentClassName="!p-0 !m-0"
+                className="m-0 flex flex-col gap-5 px-6 py-16 md:flex-row md:justify-between md:gap-12 md:px-0 lg:py-28"
+            >
+                <div className="flex w-full flex-col md:mx-[29px] ">
+                    <Heading size="h2" className="mb-1 text-[40px] font-normal leading-10 tracking-[-1px] text-white">
                         Sourcegraph powered <span className="cody-heading bg-clip-text text-transparent">context</span>
                     </Heading>
-                    <p className="mb-0 text-lg text-violet-200">
-                        Sourcegraph’s code graph and analysis tools allow Cody to autocomplete, explain, and edit your
+
+                    <p className="mb-0 mt-[12px] text-2xl font-normal leading-[30px] tracking-[-0.25px] text-white md:max-w-[501px]">
+                        Sourcegraph’s code graph and analysis tools allows Cody to autocomplete, explain, and edit your
                         code with additional context.
                     </p>
-                    <img src="/cody/context_illustration.svg" className="my-6" alt="cody context illustration" />
-                    <Link
-                        href="/whitepaper/cody-context-architecture.pdf"
-                        className="flex items-center gap-[5px] font-semibold text-violet-300 underline hover:text-white"
-                    >
-                        <DownloadIcon className="h-4 w-4" />
-                        Cody Context Architecture whitepaper
-                    </Link>
+                    <img
+                        src="/cody/context_illustration.svg"
+                        className="mt-6 md:max-w-[501px]"
+                        alt="cody context illustration"
+                    />
                 </div>
-
-                <ContextAnimation />
+                <div className="hidden md:flex">
+                    <ContextAnimation />
+                </div>
+                <div className="md:hidden md:h-[333px] md:w-[538px] md:min-w-[399px]">
+                    <img src="/cody/context_illustration_details.svg" alt="cody context illustration details" />
+                </div>
             </ContentSection>
-            <CodyCta onContactClick={() => setIsContactModalOpen(true)} />
+
+            <CodyCta source="Cody page" isCodyPage={true} onContactClick={() => setIsContactModalOpen(true)} />
             <Modal
                 open={isContactModalOpen}
                 handleClose={() => setIsContactModalOpen(false)}

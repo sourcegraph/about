@@ -133,8 +133,10 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
                             : 'https://sourcegraph.com/.auth/github/login?pc=https%3A%2F%2Fgithub.com%2F%3A%3Ae917b2b7fa9040e1edd4&redirect=/get-cody'
                     }
                     className={classNames(
-                        'btn hover:sg-bg-hover-external-auth-button flex items-center px-4 hover:text-black md:h-12 md:px-6 md:text-lg',
-                        dark ? 'hover:btn-primary bg-black text-white ' : 'btn-inverted-primary text-black',
+                        'hover:sg-bg-hover-external-auth-button flex items-center justify-center px-4 py-2 font-normal hover:text-black md:h-12 md:px-6 md:text-base',
+                        dark
+                            ? 'hover:btn-primary bg-black text-white '
+                            : 'btn-inverted-primary rounded-[3px] border border-gray-400 text-black',
                         className
                     )}
                     onClick={handleOnClick}
@@ -153,8 +155,10 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
                             : 'https://sourcegraph.com/.auth/gitlab/login?pc=https%3A%2F%2Fgitlab.com%2F%3A%3Ab45ecb474e92c069567822400cf73db6e39917635bf682f062c57aca68a1e41c&redirect=/get-cody'
                     }
                     className={classNames(
-                        'btn hover:sg-bg-hover-external-auth-button flex items-center px-4 hover:text-black md:h-12 md:px-6 md:text-lg',
-                        dark ? 'sg-gitlab-bg-color hover:btn-primary text-white ' : 'btn-inverted-primary text-black',
+                        'hover:sg-bg-hover-external-auth-button flex items-center justify-center px-4 py-2 font-normal hover:text-black md:h-12 md:px-6 md:text-base',
+                        dark
+                            ? 'sg-gitlab-bg-color hover:btn-primary text-white '
+                            : 'btn-inverted-primary rounded-[3px] border border-gray-400 text-black',
                         className
                     )}
                     onClick={handleOnClick}
@@ -173,8 +177,10 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
                             : 'https://sourcegraph.com/.auth/openidconnect/login?pc=google&redirect=/get-cody'
                     }
                     className={classNames(
-                        'btn hover:sg-bg-hover-external-auth-button flex items-center px-4 hover:text-black md:h-12 md:px-6 md:text-lg',
-                        dark ? 'sg-gitlab-bg-color hover:btn-primary text-white ' : 'btn-inverted-primary text-black',
+                        'hover:sg-bg-hover-external-auth-button flex items-center justify-center px-4 py-2 font-normal font-normal hover:text-black md:h-12 md:px-6 md:text-base',
+                        dark
+                            ? 'sg-gitlab-bg-color hover:btn-primary text-white '
+                            : 'btn-inverted-primary rounded-[3px] border border-gray-400 text-black',
                         className
                     )}
                     onClick={handleOnClick}

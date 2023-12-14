@@ -267,7 +267,8 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
                     <p>
                         Log4j is one of many reasons why monitoring and updating is now a renewed priority. “Companies
-                        will have to be more diligent,” Jon said. With Sourcegraph, Nutanix is prepared to find and fix the next vulnerability.
+                        will have to be more diligent,” Jon said. With Sourcegraph, Nutanix is prepared to find and fix
+                        the next vulnerability.
                     </p>
 
                     <div className="mt-5xl">

@@ -130,6 +130,13 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                 )}
                 requestInfo={true}
             />
+            <Link href="https://sourcegraph.com/sign-in?returnTo=/cody/manage"
+                  title="Get started with Cody"
+                  className="btn btn-outline-white text-center"
+                  type="button"
+              >
+                  Login
+            </Link>
             <button
                 type="button"
                 className={classNames(
@@ -139,7 +146,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                 title="Download Sourcegraph"
                 onClick={handleOpenModal}
             >
-                Get started with Cody free
+                Get Cody for free
             </button>
         </>
     )
