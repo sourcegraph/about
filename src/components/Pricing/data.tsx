@@ -134,7 +134,8 @@ export const PRO_FEATURES_OVERVIEW: FeatureCluster[] = [
     {
         topic: 'Support',
         features: ['freeSupport'],
-    },
+    }
+]
 
 export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
     {
