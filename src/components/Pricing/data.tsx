@@ -371,10 +371,10 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Claude Instant 1.2, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview',
     },
     BringYourLLMKey: {
-        label: 'Bring your own LLM key',
+        label: 'Bring your own LLM key (coming soon)',
     },
     BringYourLLM: {
-        label: 'Bring your own LLM',
+        label: 'Bring your own LLM (coming soon)',
     },
 }
 
