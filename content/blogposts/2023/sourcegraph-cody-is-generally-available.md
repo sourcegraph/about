@@ -81,7 +81,7 @@ Chat in Cody makes use of a hybrid dense-sparse vector retrieval system that is 
 
 The Turing Test determines whether a human can tell the difference between AI- and human-generated text. The Squirrel Test determines whether an AI can accurately answer a simple question, "What is Squirrel?" For context (see what we did there?), Squirrel is a subsystem of Sourcegraph Code Search that is responsible for serving code navigation actions like "Go to definition" and "Find references." Any human can answer this question accurately with a [single code search](https://sourcegraph.com/search?q=repo%3A%5Egithub%5C.com%2Fsourcegraph%2Fsourcegraph%24+squirrel). Let's see which of these AI assistants can:
 
-<Video 
+<Video controls
   source={{
     mp4: 'blog/cody-is-generally-available/cody-squirrel-test'
   }}
