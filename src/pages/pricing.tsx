@@ -232,15 +232,12 @@ const PricingPage: FunctionComponent = () => {
                                         <p className="mb-0 text-2xl font-semibold">Free</p>
                                     </div>
                                 }
-                                description="Best for hobbyists or light usage"
+                                description="Best for hobbyists"
                                 price={
                                     <div className="flex flex-col p-2">
                                         <p className="mb-0 flex items-center">
                                             <span className="font-sans font-semibold leading-[43px] -tracking-[0.75px]">
-                                                $x
-                                            </span>
-                                            <span className="19.99px ml-[10px] items-center text-sm font-normal leading-[19.99px]">
-                                                /month
+                                                Free
                                             </span>
                                         </p>
                                         <p className="mb-0 text-base font-semibold">No credit card needed</p>
@@ -252,19 +249,19 @@ const PricingPage: FunctionComponent = () => {
                             />
                             <PricingPlan
                                 name={<p className="mb-[13px]">Pro</p>}
-                                description="Best for pro devs and small teams"
+                                description="Best for professional devs and small teams"
                                 price={
                                     <div className="flex flex-col p-2">
                                         <p className="mb-0 flex items-center text-gray-300">
                                             <span className="font-sans font-semibold leading-[43px] -tracking-[0.75px] text-gray-300 line-through">
-                                                $x
+                                                $9
                                             </span>
                                             <span className="ml-[10px] items-center text-sm font-normal leading-[19.99px] text-gray-300">
                                                 /month
                                             </span>
                                         </p>
                                         <p className="mb-0 text-base ">
-                                            Free until xxxx,
+                                            Free until February 2024,
                                             <span className="font-semibold"> no credit card needed</span>
                                         </p>
                                     </div>
@@ -278,10 +275,9 @@ const PricingPage: FunctionComponent = () => {
                                 name={
                                     <div className="mb-2 flex flex-row items-center gap-4">
                                         <p className="mb-0 text-2xl font-semibold">Enterprise</p>
-                                        <Badge size="small" text="beta" color="dark-gray" />
                                     </div>
                                 }
-                                description="Best for teams and orgs"
+                                description="Best for large teams and enterprises"
                                 price=""
                                 priceDetail={<p className="my-2 text-lg font-normal">Coming Soon</p>}
                                 buttons={
@@ -311,7 +307,7 @@ const PricingPage: FunctionComponent = () => {
                                 price={
                                     <div className="flex flex-col py-2">
                                         <span className="text-sm font-medium">Starts at</span>
-                                        <span className="font-semibold leading-[43px] -tracking-[0.75px]">$xx/yr</span>
+                                        <span className="font-semibold leading-[43px] -tracking-[0.75px]">$5k/yr</span>
                                         <p className="mb-0 text-sm font-medium leading-[19.88px]">
                                             Scales with your team
                                         </p>
@@ -333,7 +329,7 @@ const PricingPage: FunctionComponent = () => {
                                 price={
                                     <div className="flex flex-col py-2">
                                         <span className="text-sm font-medium">Starts at</span>
-                                        <span className="font-semibold leading-[43px] -tracking-[0.75px]">$xx/yr</span>
+                                        <span className="font-semibold leading-[43px] -tracking-[0.75px]">$50k/yr</span>
                                         <p className="mb-0 text-sm font-medium leading-[19.88px]">
                                             Scales with your team
                                         </p>
