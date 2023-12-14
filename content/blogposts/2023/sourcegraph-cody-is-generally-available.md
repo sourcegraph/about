@@ -52,19 +52,19 @@ The combination of these qualities allows us to hit a Completion Acceptance Rate
 
 As just one example of the work we’re doing to continue to improve quality, Cody will soon use deeper graph context to make autocomplete suggestions based on symbols defined elsewhere in your codebase. Here you can see the results of our internal testing of Cody (with deeper graph context) next to Copilot. Cody is able to reference the JavaScript `person` interface to determine what variables to pass into the `personMessage` function.
 
-JavaScript definitions of `person` and `personMessage`
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/cody-person-interface.png"
+    caption="JavaScript definitions of `person` and `personMessage`"
 />
 
-Copilot
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/copilot-autocomplete.png"
+    caption="Copilot"
 />
 
-Cody
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/cody-bfg-autocomplete.png"
+    caption="Cody"
 />
 
 Stay tuned to get this and more in a Cody update coming your way soon!
