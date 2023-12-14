@@ -155,10 +155,12 @@ const PricingPage: FunctionComponent = () => {
 
     // check to see if the url params has a product
     useEffect(() => {
-        if (router.query.product) {
-            // @ts-ignore @typescript-eslint/no-floating-promises
-            setSelectedOption(router.query.product as string)
+        async function setOption() {
+            if (router.query.product) {
+                await setSelectedOption(router.query.product as string)
+            }
         }
+        setOption()
     }, [router.query.product])
 
     // choose a product and update the url param
