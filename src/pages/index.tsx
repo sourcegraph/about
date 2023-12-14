@@ -327,7 +327,7 @@ const Home: FunctionComponent = () => {
                                 Cody Enterprise
                             </Heading>
                             <p className="mb-0 text-lg text-[#FFFFFFCC]">
-                                Cody Enterprise provides additional security, scalability, and control for your
+                                Cody Enterprise (coming soon) provides additional security, scalability, and control for your
                                 organization. Unlimited usage and context-awareness of your entire codebase.
                             </p>
                             <div className="mt-8 flex flex-col items-center gap-4 md:flex-row">
@@ -336,7 +336,7 @@ const Home: FunctionComponent = () => {
                                     title="Get Cody for Enterprise"
                                     className="btn hover:bg-color-violet-600 w-full rounded-[5px] border border-white py-2 px-6 text-center text-white md:w-auto"
                                 >
-                                    Contact sales
+                                    Request info
                                 </Link>
                                 <Link
                                     href="https://sourcegraph.com/pricing"
