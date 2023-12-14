@@ -41,15 +41,6 @@ export const CodyIde: FunctionComponent = () => (
                         <span className="text-sm text-white text-opacity-80">EXPERIMENTAL</span>
                     </div>
                 </div>
-                <div className="flex items-center  gap-x-4 md:px-6">
-                    <img className="h-[50px] w-[50px]" src="/icons/EmacsIcon.svg" alt="Emacs IDE" />{' '}
-                    <div>
-                        <Heading size="h4" className="!text-2xl text-gray-200">
-                            Emacs
-                        </Heading>
-                        <span className="text-sm text-white text-opacity-80">COMING SOON</span>
-                    </div>
-                </div>
             </div>
         </div>
     </ContentSection>
