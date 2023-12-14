@@ -23,7 +23,7 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, pla
         />
         <ExternalsAuth
             authProvider="gitlab"
-            label="Continue With Gitlab"
+            label="Continue With GitLab"
             dark={false}
             className="mt-4"
             source={source}
