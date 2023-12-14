@@ -17,7 +17,7 @@ Unlike traditional AI coding tools that have only simple local context, Cody sea
 
 Cody's context engine also differs from agent-based context fetchers in some other assistants, which employ a sequence of decisions orchestrated by a language model. The issue we've found with this approach is that it compounds the latency and randomness of multiple serial inference requests, leading to poor and unreliable context quality.
 
-The Cody context engine makes use of the institutional knowledge we've acquired over the past decade at Sourcegraph building fast and deep code context for developers. Indeed, the name, "Sourcegraph", is a reference to our knowledge graph of code, which provides crucial context for both developers and AI code assistants alike. We'll cover more of the technical details of our approach below, but first, an overview of Cody's features.
+The Cody context engine makes use of the institutional knowledge we've acquired over the past decade at Sourcegraph building fast and deep code context for developers. Indeed, the name "Sourcegraph" is a reference to our knowledge graph of code, which provides crucial context for both developers and AI code assistants alike. We'll cover more of the technical details of our approach below, but first, an overview of Cody's features.
 
 Cody is available as an editor extension for VS Code (GA), JetBrains (beta), and Neovim (experimental). It provides the following in your editor:
 
@@ -192,7 +192,7 @@ We've intentionally made the UI of Cody's natural language search match that of 
 
 We’d like to thank our many partners and collaborators.
 
-- To the team at Anthropic, thank you for partnering with us as you build Claude and supporting us in figuring out how to tap it to its full potential. We `<`3 long context windows!
+- To the team at Anthropic, thank you for partnering with us as you build Claude and supporting us in figuring out how to tap it to its full potential. We \<3 long context windows!
 - To OpenAI, thank you for pushing the edge on code generation. GPT-4 is an amazing model, and we're looking forward to incorporating more multi-modal capabilities into Cody soon.
 - Thank you to Fireworks for providing a blazing-fast inference environment and being very reactive to our feedback and requests.
 - Huge thanks to HuggingFace and ServiceNow for building and releasing StarCoder, which we have adopted as the default model for Cody completions.
