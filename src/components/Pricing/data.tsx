@@ -107,7 +107,7 @@ export const FREE_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Compatibility',
-        features: ['supportedCodeEditors', 'supportedPL', 'supportCode'],
+        features: ['supportedCodeEditors', 'supportedPL', 'supportedLangs', 'supportCode'],
     },
     {
         topic: 'Support',
@@ -135,7 +135,7 @@ export const PRO_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Compatibility',
-        features: ['supportedCodeEditors', 'supportedPL', 'supportCode'],
+        features: ['supportedCodeEditors', 'supportedPL', 'supportedLangs', 'supportCode'],
     },
     {
         topic: 'Support',
@@ -164,10 +164,6 @@ export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
     {
         topic: 'LLM Support',
         features: ['entLLMchoices', 'BringYourLLMKey', 'BringYourLLM'],
-    },
-    {
-        topic: 'Compatibility',
-        features: ['supportedCodeEditors', 'supportedPL', 'supportCode'],
     },
 ]
 
@@ -296,21 +292,20 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
             </div>
         ),
     },
+    supportedLangs: {
+        label: 'Many human language support',
+        description: 'Spanish, French, German, Italian, Chinese, Japanese, Korean, Latin, and Esperanto'
+    },
     supportedCodeEditors: {
-        label: 'All supported code editors',
-        description: (
-            <ul className="m-0 grid list-none gap-2 p-0">
-                <li>VS Code</li>
-                <li>JetBrains</li>
-                <li>Neovim</li>
-            </ul>
-        ),
+        label: 'VS Code, JetBrains, IDEs, and NeoVim',
     },
     supportedPL: {
-        label: 'Supports all programming languages',
+        label: 'All major coding languages',
+        description: 'JavaScript, TypeScript, HTML/CSS, Python, Java, C/C++, C#, PHP, and more'
     },
     supportCode: {
-        label: 'Supports code from all code hosts',
+        label: 'All major code hosts',
+        description: 'GitHub, GitLab, BitBucket, Gerrit, Azure DevOps'
     },
     freeSupport: {
         label: 'Community support through Discord',
