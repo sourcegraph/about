@@ -374,8 +374,8 @@ const HomeHero: FunctionComponent = () => {
                         Grok and write code blazingly fast
                     </Heading>
                     <p className="mb-10 text-2xl font-normal leading-[30px] -tracking-[0.25px] text-[#FFFFFF99] md:mb-8">
-                        Sourcegraph deeply understands your code, no matter how large or where it's hosted, to power
-                        modern developer experiences.
+                        Sourcegraph allows developers to rapidly search, write, and understand code by bringing 
+                        insights from their entire codebase right into the editor
                     </p>
                     <button
                         type="button"
