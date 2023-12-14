@@ -2,8 +2,8 @@ import { FunctionComponent, useState, useEffect } from 'react'
 
 import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
-import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { MdOutlineTrendingUp } from 'react-icons/md'
 
 import {
