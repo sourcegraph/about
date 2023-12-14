@@ -159,7 +159,7 @@ export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Enterprise Features',
-        features: ['singleTenant', 'SAML', 'guardrails'],
+        features: ['everythingInPro', 'entSupport', 'flexDeployment', 'entAdmin', 'guardrails'],
     },
     {
         topic: 'LLM Support',
@@ -341,12 +341,18 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
             </p>
         ),
     },
-    singleTenant: {
-        label: 'Single Tenant',
+    everythingInPro: {
+        label: 'Everything in Pro plus...',
     },
-    SAML: {
-        label: 'SAML / SSO',
+    entSupport: {
+        label: 'Enterprise support',
     },
+    flexDeployment: {
+        label: 'Flexible deployment options',
+    },
+    entAdmin: {
+        label: 'Enterprise admin and security features (SSO, SAML, SCIM, Audit Logs, etc.)',
+    },    
     guardrails: {
         label: 'Guardrails',
     },
