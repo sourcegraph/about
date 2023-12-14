@@ -239,7 +239,6 @@ const PricingPage: FunctionComponent = () => {
                                                 Free
                                             </span>
                                         </p>
-                                        <p className="mb-0 text-base font-semibold">No credit card needed</p>
                                     </div>
                                 }
                                 buttons={<GetStartedButton />}
