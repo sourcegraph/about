@@ -27,7 +27,7 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
         name: 'Products',
         items: [
             {
-                name: 'Cody (beta)',
+                name: 'Cody',
                 href: '/cody',
             },
             {
@@ -169,7 +169,7 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
         <footer
             className={classNames(
                 className,
-                !minimal && 'pt-16 pb-2',
+                !minimal && 'pb-2 pt-16',
                 dark ? 'bg-black text-white' : 'bg-gray-50 text-black',
                 'z-10'
             )}
@@ -177,7 +177,7 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
             <div className="mx-auto max-w-screen-xl px-4">
                 {!minimal && (
                     <div className="mb-8 flex flex-col-reverse sm:grid sm:grid-cols-12">
-                        <div className="col-span-12 mt-xl sm:mt-0 sm:mb-sm lg:col-span-4 lg:mb-0">
+                        <div className="col-span-12 mt-xl sm:mb-sm sm:mt-0 lg:col-span-4 lg:mb-0">
                             <Link
                                 href="/"
                                 title="Sourcegraph - Universal code search"
@@ -258,7 +258,7 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
                     </div>
                 )}
 
-                <div className={classNames('text-sm', { 'py-4': minimal, 'pt-sm pb-2': !minimal })}>
+                <div className={classNames('text-sm', { 'py-4': minimal, 'pb-2 pt-sm': !minimal })}>
                     <ul className="ml-0 list-none">
                         <li
                             className={classNames('mr-lg text-gray-200 sm:inline', {
