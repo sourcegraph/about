@@ -30,7 +30,6 @@ const NAV_ITEMS: NavItem[] = [
             {
                 name: 'Cody',
                 href: '/cody',
-                badgeText: 'BETA',
             },
             {
                 name: 'Code Search',
