@@ -86,6 +86,7 @@ The Turing Test determines whether a human can tell the difference between AI- a
     mp4: 'blog/cody-is-generally-available/cody-squirrel-test'
   }}
   loop={true}
+  autoplay={false}
   title="Cody squirrel test"
 />
 
