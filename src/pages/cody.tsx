@@ -90,12 +90,12 @@ const CodyPage: FunctionComponent = () => {
                         size="h3"
                         className="mx-auto mb-8 mt-6  max-w-[663px] leading-[30px] !tracking-[-0.25px] text-gray-200"
                     >
-                        Cody is a coding AI assistant that uses AI and a deep understanding of your codebase to help
-                        you write and understand code faster.
+                        Cody is a coding AI assistant that uses AI and a deep understanding of your codebase to help you
+                        write and understand code faster.
                     </Heading>
                     <button
                         type="button"
-                        className="btn btn-inverted-primary min-w-[204px] px-6 text-violet-500 lg:px-4"
+                        className="btn btn-inverted-primary min-w-[204px] px-6 py-3 text-violet-500 lg:px-4"
                         title="Get Cody for free"
                         onClick={handleOpenModal}
                     >

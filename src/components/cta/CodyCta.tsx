@@ -24,7 +24,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick, isCod
             parentClassName="!py-0"
             className="mx-auto flex flex-col gap-6 py-16 md:flex-row md:py-[112px]"
         >
-            <div className="relative overflow-hidden rounded-2xl border border-gray-200 border-opacity-25 bg-white px-14 py-16 md:w-1/2 md:p-16">
+            <div className="hover:cta-free-cody relative overflow-hidden rounded-2xl border border-gray-200 border-opacity-25 bg-white px-14 py-16 md:w-1/2 md:p-16">
                 <div className="bg-grad absolute right-0 top-0 h-[3px] w-full flex-1 bg-gradient-to-r from-blue-300 via-violet-400 to-vermillion-300" />
                 <Heading
                     size="h2"
