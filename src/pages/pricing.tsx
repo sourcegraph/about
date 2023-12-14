@@ -280,7 +280,7 @@ const PricingPage: FunctionComponent = () => {
                                 priceDetail={<p className="my-2 text-lg font-normal">Coming Soon</p>}
                                 buttons={
                                     <ContactUsButton
-                                        href=""
+                                        href="https://sourcegraph.com/contact/request-info"
                                         title="Request info"
                                         className="border-violet-700 text-violet-700 hover:border-violet-500 hover:bg-violet-500 hover:text-white"
                                     />
