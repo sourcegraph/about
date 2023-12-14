@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Layout, InfiniteCarousel, Heading } from '../components'
+import { ContentSection, Layout, InfiniteCarousel, Heading, Badge } from '../components'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
@@ -44,7 +44,7 @@ const Home: FunctionComponent = () => {
         >
             <div className="bg-gray-50">
                 <ContentSection parentClassName="!py-0" className="flex items-center justify-center">
-                    <p className="pt-16 pb-10 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
+                    <p className="pb-10 pt-16 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
                         Over 2.5M engineers use Sourcegraph
                     </p>
                 </ContentSection>
@@ -111,7 +111,7 @@ const Home: FunctionComponent = () => {
                         )}
                     </div>
                     <div className="mx-6 mb-8 grid grid-cols-1 gap-8 md:mx-0 md:grid-cols-2 md:gap-6">
-                        <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white py-16 px-10">
+                        <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             <img
                                 className="h-[48px] w-[48px]"
                                 src="/home/branded-icons/chat-brand-icon.svg"
@@ -124,7 +124,7 @@ const Home: FunctionComponent = () => {
                                 Query like a human and learn about your code, or get help with tricky problems.
                             </Heading>
                         </div>
-                        <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white py-16 px-10">
+                        <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             <img
                                 className="h-[48px] w-[48px]"
                                 src="/home/branded-icons/commands-brand-icon.svg"
@@ -211,7 +211,7 @@ const Home: FunctionComponent = () => {
                                         src="/home/code-search-mobile.svg"
                                         alt="Cody Search"
                                     />
-                                    <div className="code-search-gradient absolute top-[600px] right-[-700px] z-10 h-[1245.828px] w-full " />
+                                    <div className="code-search-gradient absolute right-[-700px] top-[600px] z-10 h-[1245.828px] w-full " />
                                 </>
                             ) : (
                                 <>
@@ -242,7 +242,7 @@ const Home: FunctionComponent = () => {
                         {isDesktop && <img src="/home/code-graph-home.svg" alt="Multiline Completion" />}
                     </div>
                     <div className="mx-6 mb-8 flex flex-col gap-8 md:mx-0 md:flex-row md:gap-6">
-                        <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white py-16 px-10 md:w-[566px]">
+                        <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16 md:w-[566px]">
                             <img
                                 className="h-[48px] w-[48px]"
                                 src="/home/branded-icons/Code-insights-icon.svg"
@@ -255,7 +255,7 @@ const Home: FunctionComponent = () => {
                                 Transform your code into a queryable database to create custom dashboards in seconds.
                             </Heading>
                         </div>
-                        <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white py-16 px-10">
+                        <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             <img
                                 className="h-[48px] w-[48px]"
                                 src="/home/branded-icons/batch-changes-icon.svg"
@@ -265,7 +265,8 @@ const Home: FunctionComponent = () => {
                                 Automate large-scale code changes
                             </Heading>
                             <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
-                                Find and make changes across your codebase in one go, whether a version change or a vulnerability fix.
+                                Find and make changes across your codebase in one go, whether a version change or a
+                                vulnerability fix.
                             </Heading>
                         </div>
                     </div>
@@ -301,8 +302,8 @@ const Home: FunctionComponent = () => {
                     </div>
                     <div className="mx-6 grid grid-cols-1 gap-6 py-16 md:mx-0 md:grid-cols-2 md:py-24">
                         <div className="hover:cta-free-cody relative overflow-hidden rounded-2xl border-1 border-gray-200 bg-white">
-                            <div className="cta-top-border absolute top-0 left-0 right-0 rounded-t-2xl" />
-                            <div className=" py-16 px-14">
+                            <div className="cta-top-border absolute left-0 right-0 top-0 rounded-t-2xl" />
+                            <div className=" px-14 py-16">
                                 <Heading className="mb-4 !-tracking-[1px] text-gray-700 md:leading-10" size="h2">
                                     Cody Free
                                 </Heading>
@@ -322,9 +323,9 @@ const Home: FunctionComponent = () => {
                             </div>
                         </div>
 
-                        <div className="cta-home rounded-2xl py-16 px-14 text-white">
+                        <div className="cta-home rounded-2xl px-14 py-16 text-white">
                             <Heading className="mb-[10px] !-tracking-[1px] md:leading-10" size="h2">
-                                Cody Enterprise
+                                Cody Enterprise <Badge text="Coming Soon" color="blurple" size="small" />
                             </Heading>
                             <p className="mb-0 text-lg text-[#FFFFFFCC]">
                                 Cody Enterprise provides additional security, scalability, and control for your
@@ -334,7 +335,7 @@ const Home: FunctionComponent = () => {
                                 <Link
                                     href="https://sourcegraph.com/contact/request-info"
                                     title="Get Cody for Enterprise"
-                                    className="btn hover:bg-color-violet-600 w-full rounded-[5px] border border-white py-2 px-6 text-center text-white md:w-auto"
+                                    className="btn hover:bg-color-violet-600 w-full rounded-[5px] border border-white px-6 py-2 text-center text-white md:w-auto"
                                 >
                                     Request info
                                 </Link>
@@ -365,7 +366,7 @@ const HomeHero: FunctionComponent = () => {
     return (
         <ContentSection className="flex items-center justify-center" parentClassName="!py-0">
             <div className="mx-auto flex flex-col items-center justify-center text-center">
-                <div className="mx-auto flex flex-col items-center pt-8 pb-16 md:w-[680px] md:pt-16 md:pb-[70px]">
+                <div className="mx-auto flex flex-col items-center pb-16 pt-8 md:w-[680px] md:pb-[70px] md:pt-16">
                     <Heading
                         size="h1"
                         className="mb-8 w-full text-center !text-[48px] text-white md:mb-6 md:!text-[62px] lg:leading-[65px] lg:-tracking-[0.62px]"
@@ -373,8 +374,8 @@ const HomeHero: FunctionComponent = () => {
                         Grok and write code blazingly fast
                     </Heading>
                     <p className="mb-10 text-2xl font-normal leading-[30px] -tracking-[0.25px] text-[#FFFFFF99] md:mb-8">
-                        Sourcegraph allows developers to rapidly search, write, and understand code by bringing 
-                        insights from their entire codebase right into the editor
+                        Sourcegraph allows developers to rapidly search, write, and understand code by bringing insights
+                        from their entire codebase right into the editor
                     </p>
                     <button
                         type="button"
