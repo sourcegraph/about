@@ -123,6 +123,15 @@ export const faqData: FAQData = {
             ),
         },
         {
+            question: 'Does Cody use my code to improve the models used by other people?',
+            answer: (
+                <p>
+                    No, for Cody Pro and Cody Enterprise teams. In the future, we do expect to have the capability to use code from individual devs on Cody Free or Cody Pro to improve our models. 
+                    When this becomes available, you will be given an explicit choice of whether or not to participate.
+                </p>
+            ),
+        },
+        {
             question: 'Can Cody be run self-hosted?',
             answer: (
                 <p>
