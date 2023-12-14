@@ -102,6 +102,10 @@ export const FREE_FEATURES_OVERVIEW: FeatureCluster[] = [
         topicClass: 'mb-6',
     },
     {
+        topic: 'LLM Support',
+        features: ['freeLLMsupport'],
+    },
+    {
         topic: 'Compatibility',
         features: ['supportedCodeEditors', 'supportedPL', 'supportCode'],
     },
@@ -124,6 +128,10 @@ export const PRO_FEATURES_OVERVIEW: FeatureCluster[] = [
         topic: 'Code context and personalization',
         features: ['proCodeContext'],
         topicClass: 'mb-6',
+    },
+    {
+        topic: 'LLM Support',
+        features: ['proLLMchat', 'proLLMcommands'],
     },
     {
         topic: 'Compatibility',
@@ -152,6 +160,10 @@ export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
     {
         topic: 'Enterprise Features',
         features: ['LLMKey', 'singleTenant', 'SAML', 'guardrails'],
+    },
+    {
+        topic: 'LLM Support',
+        features: ['entLLMchoices', 'BringYourLLMKey', 'BringYourLLM'],
     },
     {
         topic: 'Compatibility',
@@ -335,15 +347,6 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
             </p>
         ),
     },
-    proLimitation: {
-        label: 'Up to 50 users',
-    },
-    enterPriseLimitation: {
-        label: '>50 users',
-    },
-    LLMKey: {
-        label: 'Bring your own LLM key',
-    },
     singleTenant: {
         label: 'Single Tenant',
     },
@@ -352,6 +355,24 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     guardrails: {
         label: 'Guardrails',
+    },
+    freeLLMsupport: {
+        label: 'Default LLMs for Chat, Commands, and Autocomplete',
+    },
+    proLLMchat: {
+        label: 'Multiple LLM choices for chat',
+    },
+    proLLMcommands: {
+        label: 'Default LLMs for Commands and Autocomplete',
+    },
+    entLLMchoices: {
+        label: 'Flexible LLM choices',
+    },
+    BringYourLLMKey: {
+        label: 'Bring your own LLM key',
+    },
+    BringYourLLM: {
+        label: 'Bring your own LLM',
     },
 }
 
