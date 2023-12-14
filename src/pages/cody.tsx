@@ -18,10 +18,10 @@ import {
     CodyPartners,
     CodyTestimonials,
 } from '../components'
+import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 import { useWindowWidth } from '../hooks/windowWidth'
-import { useAuthModal } from '../context/AuthModalContext'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
 
