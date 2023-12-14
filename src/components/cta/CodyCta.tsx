@@ -65,7 +65,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick, isCod
                     '!text-5xl !leading-10 !tracking-[-1px]': isCodyPage,
                 })}
             >
-                Cody Enterprise
+                Cody Enterprise (Coming soon)
             </Heading>
             <Heading
                 size="h3"
@@ -83,7 +83,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick, isCod
                     type="button"
                     onClick={onContactClick}
                 >
-                    Contact sales
+                    Request info
                 </button>
                 <Link
                     href="/pricing"
