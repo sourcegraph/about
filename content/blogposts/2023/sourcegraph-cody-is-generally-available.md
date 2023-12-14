@@ -50,21 +50,21 @@ By using the open source StarCoder LLM, we've been able to make completion laten
 
 The combination of these qualities allows us to hit a Completion Acceptance Rate of 30% or higher, depending on the scenario. And we’re just getting started. Upcoming versions of Cody will integrate more of Sourcegraph's universal code graph into the context engine. Users of Cody will see these improvements in the coming weeks and months.
 
-As just one example of the work we’re doing to continue to improve quality, Cody will soon use deeper graph context to make autocomplete suggestions based on symbols defined elsewhere in your codebase. Here you can see the results of our internal testing of Cody (with deeper graph context) next to Copilot. Cody is able to reference the JavaScript `person` interface to determine what variables to pass into the `personMessage` function.
+As just one example of the work we’re doing to continue to improve quality, Cody will soon use deeper graph context to make autocomplete suggestions based on symbols defined elsewhere in your codebase. Here you can see the results of our internal testing of Cody (with deeper graph context) next to Copilot. Cody is able to reference the JavaScript `Person` interface to determine what variables to pass into the `personMessage` function.
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/cody-person-interface.png"
-    caption="TypeScript definitions of person and personMessage"
+    caption="TypeScript definitions of Person and personMessage"
 />
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/copilot-autocomplete.png"
-    caption="Copilot"
+    caption="GitHub Copilot suggests invalid code in this case"
 />
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/cody-bfg-autocomplete.png"
-    caption="Cody"
+    caption="Cody suggests valid code in this case because of its superior code context"
 />
 
 Stay tuned to get this and more in a Cody update coming your way soon!
