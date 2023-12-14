@@ -23,6 +23,7 @@ const carouselImages = [
 const Home: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.md
+    const isDesktop = windowWidth > breakpoints.lg
 
     const { openModal } = useAuthModal()
 
@@ -224,7 +225,7 @@ const Home: FunctionComponent = () => {
                             )}
                         </div>
                     </div>
-                    <div className="gap-19 z-10 mx-6 mb-8 flex rounded-2xl border-1 border-gray-200 bg-white md:mx-0">
+                    <div className="gap-19 z-10 mx-6 mb-8 flex justify-between rounded-2xl border-1 border-gray-200 bg-white md:mx-0">
                         <div className=" flex max-w-[590px] flex-col py-16 pl-10 pr-[70px]">
                             <img
                                 className="h-[32px] w-[30.316px]"
@@ -238,7 +239,7 @@ const Home: FunctionComponent = () => {
                                 Find what you need in milliseconds across all of your code–no matter where it lives.
                             </Heading>
                         </div>
-                        {!isMobile && <img className="" src="/home/code-graph-home.svg" alt="Multiline Completion" />}
+                        {isDesktop && <img src="/home/code-graph-home.svg" alt="Multiline Completion" />}
                     </div>
                     <div className="mx-6 mb-8 flex flex-col gap-8 md:mx-0 md:flex-row md:gap-6">
                         <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white py-16 px-10 md:w-[566px]">
