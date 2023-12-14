@@ -159,21 +159,6 @@ const PricingPage: FunctionComponent = () => {
                 description:
                     'Pricing and plans for Sourcegraph Cody and Code Search. Get started with a free trial today.',
             }}
-            hero={
-                <div className="container mx-auto grid gap-8 pb-2xl text-center md:py-3xl">
-                    <h1 className="pt-3xl md:pt-0">Pricing</h1>
-                    {isMobile && (
-                        <ContentSection className="flex max-w-[356px] flex-col gap-4" parentClassName="!py-0">
-                            <button title="Get started" type="button" className="btn btn-primary w-full">
-                                Get started
-                            </button>
-                            <button title="Watch video" type="button" className="btn btn-outline-primary w-full">
-                                Watch video
-                            </button>
-                        </ContentSection>
-                    )}
-                </div>
-            }
             className="bg-gray-50"
         >
             <ContentSection className="mx-auto flex items-center pb-3xl" parentClassName="!py-0">
@@ -280,7 +265,7 @@ const PricingPage: FunctionComponent = () => {
                                 priceDetail={<p className="my-2 text-lg font-normal">Coming Soon</p>}
                                 buttons={
                                     <ContactUsButton
-                                        href=""
+                                        href="https://sourcegraph.com/contact/request-info"
                                         title="Request info"
                                         className="border-violet-700 text-violet-700 hover:border-violet-500 hover:bg-violet-500 hover:text-white"
                                     />
