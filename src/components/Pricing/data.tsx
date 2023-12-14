@@ -159,7 +159,7 @@ export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Enterprise Features',
-        features: ['LLMKey', 'singleTenant', 'SAML', 'guardrails'],
+        features: ['singleTenant', 'SAML', 'guardrails'],
     },
     {
         topic: 'LLM Support',
