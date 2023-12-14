@@ -140,7 +140,7 @@ export const PRO_FEATURES_OVERVIEW: FeatureCluster[] = [
     {
         topic: 'Support',
         features: ['freeSupport'],
-    }
+    },
 ]
 
 export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
@@ -286,26 +286,24 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     freeCodeContext: {
         label: (
             <div className="grid gap-6">
-                <p className="m-0">
-                    Personalization for small codebases
-                </p>
+                <p className="m-0">Personalization for small codebases</p>
             </div>
         ),
     },
     supportedLangs: {
         label: 'Many human language support',
-        description: 'Spanish, French, German, Italian, Chinese, Japanese, Korean, Latin, and Esperanto'
+        description: 'Spanish, French, German, Italian, Chinese, Japanese, Korean, Latin, and Esperanto',
     },
     supportedCodeEditors: {
         label: 'VS Code, JetBrains, IDEs, and NeoVim',
     },
     supportedPL: {
         label: 'All major coding languages',
-        description: 'JavaScript, TypeScript, HTML/CSS, Python, Java, C/C++, C#, PHP, and more'
+        description: 'JavaScript, TypeScript, HTML/CSS, Python, Java, C/C++, C#, PHP, and more',
     },
     supportCode: {
         label: 'All major code hosts',
-        description: 'GitHub, GitLab, BitBucket, Gerrit, Azure DevOps'
+        description: 'GitHub, GitLab, BitBucket, Gerrit, Azure DevOps',
     },
     freeSupport: {
         label: 'Community support through Discord',
@@ -328,18 +326,10 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         ),
     },
     proCodeContext: {
-        label: (
-            <p className="m-0">
-                Personalization for larger codebases
-            </p>
-        ),
+        label: <p className="m-0">Personalization for larger codebases</p>,
     },
     entCodeContext: {
-        label: (
-            <p className="m-0">
-                Advanced personalization for enterprise codebases
-            </p>
-        ),
+        label: <p className="m-0">Advanced personalization for enterprise codebases</p>,
     },
     everythingInPro: {
         label: 'Everything in Pro plus...',
@@ -352,7 +342,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     entAdmin: {
         label: 'Enterprise admin and security features (SSO, SAML, SCIM, Audit Logs, etc.)',
-    },    
+    },
     guardrails: {
         label: 'Guardrails',
     },
@@ -361,14 +351,14 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     proLLMchat: {
         label: 'Multiple LLM choices for chat',
-        description: 'Claude Instant 1.2, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview',
+        description: 'Claude Instant 1.2, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview, Mixtral',
     },
     proLLMcommands: {
         label: 'Default LLMs for Commands and Autocomplete',
     },
     entLLMchoices: {
         label: 'Flexible LLM choices',
-        description: 'Claude Instant 1.2, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview',
+        description: 'Claude Instant 1.2, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview, Mixtral',
     },
     BringYourLLMKey: {
         label: 'Bring your own LLM key',
