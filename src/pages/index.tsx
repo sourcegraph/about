@@ -251,8 +251,7 @@ const Home: FunctionComponent = () => {
                                 Track trends in your codebase
                             </Heading>
                             <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
-                                Onboard to codebases faster. Provide a better understanding of the code and who to reach
-                                out to when they need help.
+                                Transform your code into a queryable database to create custom dashboards in seconds.
                             </Heading>
                         </div>
                         <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white py-16 px-10">
@@ -265,8 +264,7 @@ const Home: FunctionComponent = () => {
                                 Automate large-scale code changes
                             </Heading>
                             <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
-                                Deeply understand your codebase with Sourcegraph, whether you choose to deploy in the
-                                cloud or on-premise.
+                                Find and make changes across your codebase in one go, whether a version change or a vulnerability fix.
                             </Heading>
                         </div>
                     </div>
