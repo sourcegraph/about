@@ -104,22 +104,6 @@ export const faqData: FAQData = {
             ),
         },
         {
-            question: 'What does “Up to $19 / user / month” mean for Cody Enterprise?',
-            answer: (
-                <>
-                    <p>
-                        We offer a consumption-based pricing model for Cody Enterprise, which allows you to pay less
-                        based on your team’s usage of Cody. The maximum cost is $19 / user / month.
-                    </p>
-                    <p>
-                        We also offer discounts on Cody Enterprise for customers who use their own LLM keys. Contact us
-                        to learn more.We also offer discounts on Cody Enterprise for customers who use their own LLM
-                        keys. <ContactLink /> to learn more.
-                    </p>
-                </>
-            ),
-        },
-        {
             question:
                 'What’s the difference between “flexible LLM options,” “bring your own LLM key,” and “bring your own LLM”?',
             answer: (
@@ -143,7 +127,7 @@ export const faqData: FAQData = {
             answer: (
                 <p>
                     Cody requires Cloud-based services to power its AI features. For customers looking for a fully
-                    self-hosted or air-gapped solution, please <ContactLink /> .
+                    self-hosted or air-gapped solution, please <ContactLink />.
                 </p>
             ),
         },
