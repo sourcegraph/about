@@ -59,21 +59,24 @@ export const Modal: FunctionComponent<Modal> = ({
                     modalBackdropClassName
                 )}
             >
-                <div
-                    className={classNames(
-                        'relative mx-auto rounded-md bg-white p-sm shadow-modal md:px-[126px] md:py-[73px]',
-                        modalClassName
-                    )}
-                    ref={modalReference}
-                >
-                    {title && <h4 className="mb-md pr-lg">{title}</h4>}
-                    {showCloseIcon && (
-                        <CloseIcon
-                            className="absolute top-6 right-6 cursor-pointer text-blurple-400"
-                            onClick={handleClose}
-                        />
-                    )}
-                    {children}
+                <div className="relative flex items-center">
+                    <div className="sign-up-modal-gradient absolute z-10 h-[531.097px] w-[570.405px]" />
+                    <div
+                        className={classNames(
+                            'relative z-20 mx-auto w-[507px] rounded-md bg-white p-sm shadow-modal md:p-16',
+                            modalClassName
+                        )}
+                        ref={modalReference}
+                    >
+                        {title && <h4 className="mb-md pr-lg">{title}</h4>}
+                        {showCloseIcon && (
+                            <CloseIcon
+                                className="absolute top-6 right-6 cursor-pointer text-blurple-400"
+                                onClick={handleClose}
+                            />
+                        )}
+                        {children}
+                    </div>
                 </div>
             </div>
         </Portal>

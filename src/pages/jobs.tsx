@@ -45,11 +45,26 @@ const CareersPage: FunctionComponent = () => {
     ]
 
     const carouselImages = [
-        '/careers/Career1.png',
-        '/careers/Career2.png',
-        '/careers/Career3.png',
-        '/careers/Career4.png',
-        '/careers/Career5.png',
+        {
+            src: '/careers/Career1.png',
+            className: 'h-auto w-[394px] py-0 px-[10px] md:w-[594px] lg:h-[477px] lg:w-[794px] lg:px-[15px]',
+        },
+        {
+            src: '/careers/Career2.png',
+            className: 'h-auto w-[394px] py-0 px-[10px] md:w-[594px] lg:h-[477px] lg:w-[794px] lg:px-[15px]',
+        },
+        {
+            src: '/careers/Career3.png',
+            className: 'h-auto w-[394px] py-0 px-[10px] md:w-[594px] lg:h-[477px] lg:w-[794px] lg:px-[15px]',
+        },
+        {
+            src: '/careers/Career4.png',
+            className: 'h-auto w-[394px] py-0 px-[10px] md:w-[594px] lg:h-[477px] lg:w-[794px] lg:px-[15px]',
+        },
+        {
+            src: '/careers/Career5.png',
+            className: 'h-auto w-[394px] py-0 px-[10px] md:w-[594px] lg:h-[477px] lg:w-[794px] lg:px-[15px]',
+        },
     ]
 
     return (

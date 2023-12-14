@@ -199,7 +199,7 @@ const pricingSupport = [
         competitor: false,
         competitor_details: 'Free for students, teachers, and OSS maintainers',
         view_competitor_details: false,
-    }
+    },
 ]
 
 const GetStartedButton: FunctionComponent<{ className?: string }> = ({ className }) => {
@@ -269,7 +269,7 @@ const CompareCopilotPage: FunctionComponent = () => (
             </CompareHero>
         }
     >
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-lg px-6 md:grid-cols-12 xl:px-0 px-5">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-lg px-6 px-5 md:grid-cols-12 xl:px-0">
             <div className="col-span-full">
                 <table className="table-fixed border-0">
                     <thead>
