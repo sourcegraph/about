@@ -28,7 +28,7 @@ Cody is available as an editor extension for VS Code (GA), JetBrains (beta), and
 
 Cody's chat can also be enabled for use in Code Search.
 
-With this GA announcement, Cody is officially ready for both personal and professional coding. Cody is available in two tiers: Cody Free and Cody Pro. Cody Free is identical to Cody Pro but has rate limits on use. Cody Pro will be free through the holidays until February 2024, after which it will be $9/month.
+With this GA announcement, Cody is officially ready for both personal and professional coding. Cody is available in two tiers: Cody Free and Cody Pro. Cody Free is identical to Cody Pro but has rate limits on use. Cody Pro will be free through the holidays until February 2024, after which it will be $9/month. A plan with enterprise-level features and context will be coming soon.
 
 **[Start using Cody for free today](https://sourcegraph.com/cody)**. If you’re already using Cody, make sure to update to the latest extension version to get the latest features.
 
