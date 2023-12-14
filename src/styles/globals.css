@@ -518,6 +518,24 @@
     .code-search {
         background: linear-gradient(233deg, rgba(97, 18, 163, 0.54) 27.87%, rgba(97, 18, 163, 0.00) 119.99%), linear-gradient(0deg, #1A0F22 0%, #1A0F22 100%), var(--grayscale-white, #FFF);
     }
+
+      .cody-btn-shadow {
+        box-shadow: 0px 6.4px 16px 0px #e3e7f4, 0px 3.2px 3.2px 0px rgba(0, 0, 0, 0.05);
+    }
+    .pricing-plan-card {
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.03), 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
+    }
+    .faq {
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+    }
+    .plan-top-border {
+      height: 4px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(90deg, #7048E8 0%, #4AC1E8 32.21%, #A112FF 65.39%, #FF5543 104.43%), #EFF2F5;
+    }
+    .pro-box-shadow{
+        box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
+    }
+  
     /* Used to define custom tailwind slide in animation */
     @keyframes slideFadeIn {
         0% {

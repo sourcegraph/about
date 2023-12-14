@@ -7,9 +7,10 @@ import { Heading } from './Heading'
 
 interface Props {
     source: string
+    plan?: 'pro' | 'free'
 }
 
-export const AuthenticateModalContent: FunctionComponent<Props> = ({ source }) => (
+export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, plan = 'free' }) => (
     <div>
         <Heading size="h4" className="text-lg text-gray-600 font-semibold">Sign up to get free access</Heading>
         <ExternalsAuth
@@ -18,6 +19,7 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source }) =
             dark={false}
             className="mt-8"
             source={source}
+            plan={plan}
         />
         <ExternalsAuth
             authProvider="gitlab"
@@ -25,6 +27,7 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source }) =
             dark={false}
             className="mt-4"
             source={source}
+            plan={plan}
         />
         <ExternalsAuth
             authProvider="google"
@@ -32,6 +35,7 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source }) =
             dark={false}
             className="mt-4"
             source={source}
+            plan={plan}
         />
         <p className="mt-8 text-sm text-gray-500">
             By registering, you agree to our{' '}
