@@ -155,18 +155,9 @@ const PricingPage: FunctionComponent = () => {
 
     // check to see if the url params has a product
     useEffect(() => {
-        // doing this weird fetchData thing for the linting errors
-        const fetchData = async () => {
-            if (router.query.product) {
-                try {
-                    setSelectedOption(router.query.product as string)
-                } catch (error) {
-                    // handle error
-                }
-            }
+        if (router.query.product) {
+            setSelectedOption(router.query.product as string)
         }
-
-        void fetchData()
     }, [router.query.product])
 
     // choose a product and update the url param
