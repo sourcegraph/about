@@ -75,8 +75,6 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick, isCod
             >
                 Cody Enterprise provides additional security, scalability, and control for your organization. Unlimited
                 usage and context-awareness of your entire codebase.
-                
-                Beta access available to Code Search customers.
             </Heading>
             <div className="flex max-w-[356px] flex-col flex-wrap gap-4 md:flex-row">
                 <Link
