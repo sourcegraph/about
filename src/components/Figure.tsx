@@ -6,6 +6,7 @@ interface Figure {
     src: string
     alt: string
     caption?: string | ReactNode
+    captionCenter?: boolean
     link?: string
     linkIcon?: boolean
     centre?: boolean
@@ -16,6 +17,7 @@ export const Figure: FunctionComponent<Figure> = ({
     src,
     alt,
     caption,
+    captionCenter,
     link,
     linkIcon = false,
     centre = false,
@@ -24,7 +26,7 @@ export const Figure: FunctionComponent<Figure> = ({
     <figure>
         <img src={src} alt={alt} title={alt} className={classNames({ 'mx-auto': centre, 'drop-shadow-xl': shadow })} />
         {caption && (
-            <figcaption className="mt-3">
+            <figcaption className={'mt-3 ' + (captionCenter ? 'text-center' : '')}>
                 {link ? (
                     <a href={link} className="flex not-italic">
                         {caption}
