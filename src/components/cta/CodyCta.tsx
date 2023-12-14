@@ -92,7 +92,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick, isCod
                     See pricing <ChevronRightIcon />
                 </Link>
                 <Link
-                    href="/cody/pricing"
+                    href="/pricing"
                     className="hover:bg-color-violet-600 rounded-[5px] border border-white px-5 py-3 text-center font-semibold text-white md:hidden"
                 >
                     See pricing
