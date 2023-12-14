@@ -75,7 +75,7 @@ const OwnPage: FunctionComponent = () => (
                 </Heading>
                 <div className="mt-8 flex flex-row gap-x-4">
                     <Link
-                        href="https://docs.sourcegraph.com/own"
+                        href="https://sourcegraph.com/docs/own"
                         title="Documentation"
                         className="btn btn-inverted-primary"
                     >
@@ -198,7 +198,7 @@ const OwnPage: FunctionComponent = () => (
             <p className="mb-0 text-lg text-gray-200">Available now as an experimental feature!</p>
             <div className="mt-8 flex flex-row gap-x-4">
                 <Link
-                    href="https://docs.sourcegraph.com/own"
+                    href="https://sourcegraph.com/docs/own"
                     title="Documentation"
                     className="btn btn-inverted-primary"
                     target="_blank"

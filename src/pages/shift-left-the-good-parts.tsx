@@ -3,14 +3,14 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import {
-    Layout,
+    CallToActionContentSection,
     ContentSection,
+    Layout,
+    ResourceList,
     TwoColumnSection,
     Video,
-    ResourceList,
-    CallToActionContentSection,
 } from '../components'
-import { buttonStyle, buttonLocation } from '../data/tracking'
+import { buttonLocation, buttonStyle } from '../data/tracking'
 
 const blogResourceItems = [
     {
@@ -223,7 +223,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                             <li className="mb-4">
                                 Search for your own set of regular expressions and{' '}
                                 <Link
-                                    href="https://docs.sourcegraph.com/code_search/reference/structural#syntax-reference"
+                                    href="https://sourcegraph.com/docs/code_search/reference/structural#syntax-reference"
                                     title="Comby patterns"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}

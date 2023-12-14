@@ -2,7 +2,7 @@ import { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
 
-import { buttonStyle, buttonLocation } from '../../data/tracking'
+import { buttonLocation, buttonStyle } from '../../data/tracking'
 import { copy } from '../../lib/utils'
 
 import { ReactComponent as CopyIcon } from './copyIcon.svg'
@@ -79,7 +79,7 @@ export const Install: FunctionComponent = () => {
 
                 <a
                     className="inline-block text-lg"
-                    href="https://docs.sourcegraph.com"
+                    href="https://sourcegraph.com/docs"
                     title="Deploy to a server or cluster"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.trySourcegraph}

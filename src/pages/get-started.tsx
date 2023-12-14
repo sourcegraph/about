@@ -124,7 +124,7 @@ const EnterPriseTrial: FunctionComponent = () => (
                     Cloud
                 </Link>
                 <Link
-                    href="https://docs.sourcegraph.com/admin/deploy"
+                    href="https://sourcegraph.com/docs/admin/deploy"
                     title="Server"
                     className="ml-2 text-xl font-semibold text-violet-500"
                 >
