@@ -55,16 +55,19 @@ As just one example of the work we’re doing to continue to improve quality, Co
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/cody-person-interface.png"
     caption="TypeScript definitions of Person and personMessage"
+    captionCenter="true"
 />
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/copilot-autocomplete.png"
     caption="GitHub Copilot suggests invalid code in this case"
+    captionCenter="true"
 />
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/cody-bfg-autocomplete.png"
     caption="Cody suggests valid code in this case because of its superior code context"
+    captionCenter="true"
 />
 
 Stay tuned to get this and more in a Cody update coming your way soon!
