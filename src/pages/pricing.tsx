@@ -159,6 +159,11 @@ const PricingPage: FunctionComponent = () => {
                 description:
                     'Pricing and plans for Sourcegraph Cody and Code Search. Get started with a free trial today.',
             }}
+            hero={
+                <div className="container mx-auto grid gap-8 pb-2xl text-center md:py-3xl">
+                    <h1 className="pt-3xl md:pt-0">Pricing</h1>
+                </div>
+            }
             className="bg-gray-50"
         >
             <ContentSection className="mx-auto flex items-center pb-3xl" parentClassName="!py-0">
