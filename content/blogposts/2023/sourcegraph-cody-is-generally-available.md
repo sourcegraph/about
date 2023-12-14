@@ -3,7 +3,7 @@ title: 'Sourcegraph Cody is Generally Available'
 authors:
   - name: 'Author'
 publishDate: 2023-12-13T10:00-07:00
-description: 'Today, we announce the general availability of Cody 1.0, a new AI coding assistant that uses intelligent code context to answer technical questions, generate code, and suggest completions in your editor.'
+description: 'Today, we announce the general availability of Cody 1.0, an AI coding assistant that uses intelligent code context to answer technical questions, generate code, and suggest completions in your editor.'
 tags: [blog]
 slug: 'cody-is-generally-available'
 published: true
@@ -30,7 +30,7 @@ Cody's chat can also be enabled for use in Code Search.
 
 With this GA announcement, Cody is officially ready for both personal and professional coding. Cody is available in two tiers: Cody Free and Cody Pro. Cody Free is identical to Cody Pro but has rate limits on use. Cody Pro will be free through the holidays until February 2024, after which it will be $9/month.
 
-[Start using Cody for free today](https://sourcegraph.com/cody). If you’re already using Cody, make sure to update to the latest extension version to get the latest features.
+**[Start using Cody for free today](https://sourcegraph.com/cody)**. If you’re already using Cody, make sure to update to the latest extension version to get the latest features.
 
 ## Context-enhanced code completions
 <br/>
@@ -54,8 +54,8 @@ As just one example of the work we’re doing to continue to improve quality, Co
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/cody-person-interface.png"
+    caption="TypeScript definitions of person and personMessage"
 />
-TypeScript definitions of `person` and `personMessage`
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/copilot-autocomplete.png"
