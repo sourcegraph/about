@@ -75,18 +75,17 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick, isCod
             >
                 Cody Enterprise provides additional security, scalability, and control for your organization. Unlimited
                 usage and context-awareness of your entire codebase.
-                <br/>
+                
                 Beta access available to Code Search customers.
             </Heading>
             <div className="flex max-w-[356px] flex-col flex-wrap gap-4 md:flex-row">
-                <button
-                    title="Get started with Cody"
-                    className="btn btn-outline-white text-center"
-                    type="button"
-                    onClick={onContactClick}
+                <Link
+                    href="https://sourcegraph.com/contact/request-info"
+                    title="Get Cody for Enterprise"
+                    className="btn hover:bg-color-violet-600 w-full rounded-[5px] border border-white py-2 px-6 text-center text-white md:w-auto"
                 >
                     Request info
-                </button>
+                </Link>
                 <Link
                     href="/pricing"
                     className="hidden items-center justify-center gap-[10px] font-semibold text-white hover:text-violet-300 hover:underline md:flex"
