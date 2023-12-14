@@ -139,7 +139,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                 </Heading>
 
                 <ul className="ml-0 flex list-none flex-wrap gap-2 lg:max-w-md">{renderListItems(tools)}</ul>
-                <Link href="https://docs.sourcegraph.com/integration" target="_blank" className="mt-2">
+                <Link href="https://sourcegraph.com/docs/integration" target="_blank" className="mt-2">
                     <Badge text="See more" size="small" className="w-fit hover:bg-violet-100 hover:text-violet-600" />
                 </Link>
             </div>
@@ -151,7 +151,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                 <ul className="ml-0 flex list-none flex-wrap gap-2 lg:max-w-md">
                     {renderListItems(deploymentOptions)}
                 </ul>
-                <Link href="https://docs.sourcegraph.com/admin/install" target="_blank" className="mt-2">
+                <Link href="https://sourcegraph.com/docs/admin/install" target="_blank" className="mt-2">
                     <Badge text="Learn more" size="small" className="w-fit hover:bg-violet-100 hover:text-violet-600" />
                 </Link>
             </div>

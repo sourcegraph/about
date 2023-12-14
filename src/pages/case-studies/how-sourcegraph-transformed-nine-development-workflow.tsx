@@ -3,8 +3,8 @@ import { FunctionComponent, ReactNode } from 'react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { Badge, ContentSection, Heading, Hero, Layout, Blockquote, CaseStudyCard } from '../../components'
-import { buttonStyle, buttonLocation } from '../../data/tracking'
+import { Badge, Blockquote, CaseStudyCard, ContentSection, Heading, Hero, Layout } from '../../components'
+import { buttonLocation, buttonStyle } from '../../data/tracking'
 
 export const CUSTOMER_STORIES = [
     [
@@ -151,7 +151,7 @@ export const CaseStudy: FunctionComponent = () => (
                                     resulting in increased developer productivity, efficient code management, and
                                     enhanced security. By leveraging advanced{' '}
                                     <Link
-                                        href="https://docs.sourcegraph.com/code_search"
+                                        href="https://sourcegraph.com/docs/code_search"
                                         title="Code Search"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.body}
@@ -164,7 +164,7 @@ export const CaseStudy: FunctionComponent = () => (
                                     </Link>{' '}
                                     and{' '}
                                     <Link
-                                        href="https://docs.sourcegraph.com/batch_changes"
+                                        href="https://sourcegraph.com/docs/batch_changes"
                                         title="Batch Changes"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.body}
@@ -225,7 +225,7 @@ export const CaseStudy: FunctionComponent = () => (
                                 <p className="text-lg">
                                     Nine implemented Sourcegraph's advanced{' '}
                                     <Link
-                                        href="https://docs.sourcegraph.com/code_search"
+                                        href="https://sourcegraph.com/docs/code_search"
                                         title="Code Search"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.body}
@@ -238,7 +238,7 @@ export const CaseStudy: FunctionComponent = () => (
                                     </Link>
                                     ,{' '}
                                     <Link
-                                        href="https://docs.sourcegraph.com/batch_changes"
+                                        href="https://sourcegraph.com/docs/batch_changes"
                                         title="Batch Changes"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.body}
@@ -251,7 +251,7 @@ export const CaseStudy: FunctionComponent = () => (
                                     </Link>
                                     , and valuable{' '}
                                     <Link
-                                        href="https://docs.sourcegraph.com/code_monitoring"
+                                        href="https://sourcegraph.com/docs/code_monitoring"
                                         title="code monitoring"
                                         data-button-style={buttonStyle.text}
                                         data-button-location={buttonLocation.body}
