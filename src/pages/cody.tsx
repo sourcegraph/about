@@ -76,14 +76,14 @@ const CodyPage: FunctionComponent = () => {
             <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 text-center md:mt-0 md:pt-[22px]">
                 <div className="mx-auto w-full px-6 md:w-[849px] lg:w-[895px]">
                     <div className="mx-auto w-full pt-6 text-[48px] font-semibold leading-[58px] text-white md:text-[72px] md:leading-[86px]">
-                        Write less, ship more
+                        Code more, type less
                     </div>
                     <Heading
                         size="h3"
                         className="mx-auto mt-6 mb-8  max-w-[663px] leading-[30px] !tracking-[-0.25px] text-gray-200"
                     >
-                        Cody is the good kind of know-it-all, using its deep understanding of your codebase to explain,
-                        fix, and help you write code.
+                        Cody is a coding AI assistant that uses AI and a deep understanding of your codebase
+                        to help you write and understand code faster.
                     </Heading>
                     <button
                         type="button"
