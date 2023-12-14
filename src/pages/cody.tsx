@@ -1,6 +1,7 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
+import { useRouter } from 'next/router'
 
 import {
     ContentSection,
@@ -20,6 +21,7 @@ import {
 import { breakpoints } from '../data/breakpoints'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
 import { useWindowWidth } from '../hooks/windowWidth'
+import { useAuthModal } from '../context/AuthModalContext'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
 
@@ -27,22 +29,22 @@ const IMAGE_TAB_CONTENT = [
     {
         header: 'Explain code or entire repositories',
         description: 'Get up to speed on new projects quickly',
-        imageSrc: {mobile: '/cody/explain-code.png' , desktop: '/cody/explain-code.svg'},
+        imageSrc: { mobile: '/cody/explain-code.png', desktop: '/cody/explain-code.svg' },
     },
     {
         header: 'Generate unit tests in seconds',
         description: 'Spend more time writing new code',
-        imageSrc: {mobile: '/cody/generate-unit-tests.png' , desktop: '/cody/generate-unit-tests.svg'},
+        imageSrc: { mobile: '/cody/generate-unit-tests.png', desktop: '/cody/generate-unit-tests.svg' },
     },
     {
         header: 'Describe code smells',
         description: 'Optimize your code for best practices',
-        imageSrc: {mobile: '/cody/describe-code-smell.png' , desktop: '/cody/describe-code-smell.svg'},
+        imageSrc: { mobile: '/cody/describe-code-smell.png', desktop: '/cody/describe-code-smell.svg' },
     },
     {
         header: 'Define your own custom commands',
         description: 'Customize Cody for your workflow',
-        imageSrc: {mobile: '/cody/define-custom-command.png', desktop: '/cody/define-custom-command.svg'},
+        imageSrc: { mobile: '/cody/define-custom-command.png', desktop: '/cody/define-custom-command.svg' },
     },
 ]
 
@@ -50,6 +52,12 @@ const CodyPage: FunctionComponent = () => {
     const [isContactModalOpen, setIsContactModalOpen] = useState(false)
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
+    const router = useRouter()
+    const { pathname } = router
+    const { openModal } = useAuthModal()
+
+    const source = pathname.slice(1) || 'about-home'
+    const handleOpenModal = (): void => openModal(source)
 
     useEffect(() => {
         const eventArguments = {
@@ -80,15 +88,16 @@ const CodyPage: FunctionComponent = () => {
                     </div>
                     <Heading
                         size="h3"
-                        className="mx-auto mt-6 mb-8  max-w-[663px] leading-[30px] !tracking-[-0.25px] text-gray-200"
+                        className="mx-auto mb-8 mt-6  max-w-[663px] leading-[30px] !tracking-[-0.25px] text-gray-200"
                     >
-                        Cody is a coding AI assistant that utilizes AI and a deep understanding of your codebase to help 
+                        Cody is a coding AI assistant that utilizes AI and a deep understanding of your codebase to help
                         you write and understand code faster.
                     </Heading>
                     <button
                         type="button"
                         className="btn btn-inverted-primary min-w-[204px] px-6 text-violet-500 lg:px-4"
                         title="Get Cody for free"
+                        onClick={handleOpenModal}
                     >
                         <div className="flex items-center justify-center">
                             <img src="/cody/cody-logo.svg" className="mr-2 h-[24px] w-[24px]" alt="Cody Logo" />
@@ -98,7 +107,7 @@ const CodyPage: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <CodyAutocomplete className='sg-bg-gradient-cody-hero' />
+            <CodyAutocomplete className="sg-bg-gradient-cody-hero" />
 
             <CodyIde />
 
@@ -124,7 +133,7 @@ const CodyPage: FunctionComponent = () => {
 
             <ContentSection
                 parentClassName="!p-0 !m-0"
-                className="m-0 flex flex-col gap-5 py-16 px-6 md:flex-row md:justify-between md:gap-12 md:px-0 lg:py-28"
+                className="m-0 flex flex-col gap-5 px-6 py-16 md:flex-row md:justify-between md:gap-12 md:px-0 lg:py-28"
             >
                 <div className="flex w-full flex-col md:mx-[29px] ">
                     <Heading size="h2" className="mb-1 text-[40px] font-normal leading-10 tracking-[-1px] text-white">
@@ -149,7 +158,7 @@ const CodyPage: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <CodyCta source='Cody page' isCodyPage={true} onContactClick={() => setIsContactModalOpen(true)} />
+            <CodyCta source="Cody page" isCodyPage={true} onContactClick={() => setIsContactModalOpen(true)} />
             <Modal
                 open={isContactModalOpen}
                 handleClose={() => setIsContactModalOpen(false)}
