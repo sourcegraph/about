@@ -192,7 +192,7 @@ We've intentionally made the UI of Cody's natural language search match that of 
 
 We’d like to thank our many partners and collaborators.
 
-- To the team at Anthropic, thank you for partnering with us as you build Claude and supporting us in figuring out how to tap it to its full potential. We <`3` long context windows!
+- To the team at Anthropic, thank you for partnering with us as you build Claude and supporting us in figuring out how to tap it to its full potential. We `<`3 long context windows!
 - To OpenAI, thank you for pushing the edge on code generation. GPT-4 is an amazing model, and we're looking forward to incorporating more multi-modal capabilities into Cody soon.
 - Thank you to Fireworks for providing a blazing-fast inference environment and being very reactive to our feedback and requests.
 - Huge thanks to HuggingFace and ServiceNow for building and releasing StarCoder, which we have adopted as the default model for Cody completions.
