@@ -303,7 +303,6 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
                 <li>VS Code</li>
                 <li>JetBrains</li>
                 <li>Neovim</li>
-                <li className="text-[#5E6E8C]">emacs (coming soon)</li>
             </ul>
         ),
     },
@@ -361,12 +360,14 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     proLLMchat: {
         label: 'Multiple LLM choices for chat',
+        description: 'Claude Instant 1.2, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview'
     },
     proLLMcommands: {
         label: 'Default LLMs for Commands and Autocomplete',
     },
     entLLMchoices: {
         label: 'Flexible LLM choices',
+        description: 'Claude Instant 1.2, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview'
     },
     BringYourLLMKey: {
         label: 'Bring your own LLM key',
