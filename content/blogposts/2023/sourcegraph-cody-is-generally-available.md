@@ -54,7 +54,7 @@ As just one example of the work we’re doing to continue to improve quality, Co
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/cody-person-interface.png"
-    caption="JavaScript definitions of `person` and `personMessage`"
+    caption="JavaScript definitions of person and personMessage"
 />
 
 <Figure
