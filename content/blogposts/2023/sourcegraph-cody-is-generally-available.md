@@ -1,8 +1,8 @@
 ---
 title: 'Sourcegraph Cody is Generally Available'
 authors:
-  - name: 'Author'
-publishDate: 2023-12-13T10:00-07:00
+  - name: 'Beyang Liu'
+publishDate: 2023-12-14T10:00-07:00
 description: 'Today, we announce the general availability of Cody 1.0, an AI coding assistant that uses intelligent code context to answer technical questions, generate code, and suggest completions in your editor.'
 tags: [blog]
 slug: 'cody-is-generally-available'
