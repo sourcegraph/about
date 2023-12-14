@@ -77,14 +77,13 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick, isCod
                 usage and context-awareness of your entire codebase.
             </Heading>
             <div className="flex max-w-[356px] flex-col flex-wrap gap-4 md:flex-row">
-                <button
-                    title="Get started with Cody"
-                    className="btn btn-outline-white text-center"
-                    type="button"
-                    onClick={onContactClick}
+                <Link
+                    href="https://sourcegraph.com/contact/request-info"
+                    title="Get Cody for Enterprise"
+                    className="btn hover:bg-color-violet-600 w-full rounded-[5px] border border-white py-2 px-6 text-center text-white md:w-auto"
                 >
-                    Contact sales
-                </button>
+                    Request info
+                </Link>
                 <Link
                     href="/pricing"
                     className="hidden items-center justify-center gap-[10px] font-semibold text-white hover:text-violet-300 hover:underline md:flex"
