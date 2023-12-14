@@ -1,8 +1,11 @@
+/* eslint no-void: 0 */
+/* eslint @typescript-eslint/no-floating-promises: 0 */
 import { FunctionComponent, useState, useEffect } from 'react'
 
 import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { MdOutlineTrendingUp } from 'react-icons/md'
 
 import {
@@ -149,8 +152,22 @@ const PricingPage: FunctionComponent = () => {
     const [selectedOption, setSelectedOption] = useState('cody')
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
-
+    const router = useRouter()
     const faqDataToRender: FAQItem[] = faqData[selectedOption] || []
+
+    // check to see if the url params has a product
+    useEffect(() => {
+        if (router.query.product) {
+            void setSelectedOption(router.query.product as string)
+        }
+    }, [router.query.product])
+
+    // choose a product and update the url param
+    const chooseProduct = (option: string): void => {
+        router.query.product = option
+        router.push(router)
+        setSelectedOption(option)
+    }
 
     return (
         <Layout
@@ -174,7 +191,7 @@ const PricingPage: FunctionComponent = () => {
                             'btn flex items-center justify-items-center gap-[10px] px-6 py-[10px] transition-all duration-700 ease-in-out',
                             selectedOption === 'cody' ? 'cody-btn-shadow bg-white' : 'bg-transparent shadow-none'
                         )}
-                        onClick={() => setSelectedOption('cody')}
+                        onClick={() => chooseProduct('cody')}
                     >
                         <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[22px] w-[24px]" />
                         <div className="flex grid grid-cols-1 justify-items-start gap-2 text-left">
@@ -190,7 +207,7 @@ const PricingPage: FunctionComponent = () => {
                             'btn flex items-center justify-items-center  gap-[10px] justify-self-end px-6 py-[10px] transition-all duration-700 ease-in-out',
                             selectedOption === 'codeSearch' ? 'cody-btn-shadow bg-white' : 'bg-transparent shadow-none'
                         )}
-                        onClick={() => setSelectedOption('codeSearch')}
+                        onClick={() => chooseProduct('codeSearch')}
                     >
                         <img
                             src="/codesearch-logomark-default.svg"
@@ -339,7 +356,7 @@ const PricingPage: FunctionComponent = () => {
                 </div>
             </ContentSection>
             <ContentSection
-                className="grid grid-cols-5 gap-[24px] pt-24 pb-[96px] md:px-[80px]"
+                className="grid grid-cols-5 gap-[24px] pb-[96px] pt-24 md:px-[80px]"
                 parentClassName="!py-0 "
             >
                 <div className="col-span-full border-t-1 md:col-span-2">

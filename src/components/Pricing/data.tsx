@@ -303,7 +303,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     supportCode: {
         label: 'All major code hosts',
-        description: 'GitHub, GitLab, BitBucket, Gerrit, Azure DevOps',
+        description: 'GitHub, GitLab, Bitbucket, Gerrit, Azure DevOps',
     },
     freeSupport: {
         label: 'Community support through Discord',
