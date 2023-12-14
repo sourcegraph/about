@@ -54,8 +54,8 @@ As just one example of the work we’re doing to continue to improve quality, Co
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/cody-person-interface.png"
-    caption="TypeScript definitions of person and personMessage"
 />
+TypeScript definitions of `person` and `personMessage`
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/copilot-autocomplete.png"
@@ -201,4 +201,4 @@ We’d like to thank our many partners and collaborators.
 
 And thank you to the active members of our user and contributor community, with special shoutouts to Arafat Khan, Catalin Pit, Momil Ijaz, Son Luong Ngoc, Tino Wening, Vadim Peretokin, and Deepak Kumar. You are all amazing, and we feel privileged to have you as partners in building Cody. Thank you for reporting bugs, providing detailed feedback, submitting PRs, and, above all, giving Cody a shot when it was still very early.
 
-[Install Cody for free](https://sourcegraph.com/cody)
+**[Install Cody for free](https://sourcegraph.com/cody)**
