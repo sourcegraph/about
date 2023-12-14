@@ -72,8 +72,8 @@ const NAV_ITEMS: NavItem[] = [
             },
             {
                 name: 'Cody comparisons',
-                href: '/compare'
-            }
+                href: '/compare',
+            },
         ],
     },
     {

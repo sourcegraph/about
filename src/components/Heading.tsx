@@ -31,9 +31,9 @@ export const Heading: FunctionComponent<Heading> = ({ as, size, children, classN
     const Tag = as ?? size
 
     const sizes = {
-        h1: 'font-sans text-6xl md:text-7xl tracking-normal font-semibold',
+        h1: 'font-sans text-6xl md:text-7xl md:tracking-tightest tracking-normal font-semibold',
         h2: 'font-sans text-4xl md:text-5xl tracking-normal font-semibold',
-        h3: 'font-sans text-3xl tracking-normal font-normal',
+        h3: 'font-sf text-2xl tracking-tight font-normal',
         h4: 'font-sans text-2xl tracking-normal font-semibold',
         h5: 'font-sans text-xl tracking-normal font-semibold',
         h6: 'font-sans text-lg tracking-wide font-semibold uppercase',
