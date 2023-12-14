@@ -132,15 +132,6 @@ export const faqData: FAQData = {
             ),
         },
         {
-            question: 'What if I want to use Cody for more than 50 users?',
-            answer: (
-                <p>
-                    Please <ContactLink /> if you’re interested in using Cody with more than 50 users on the same
-                    account.
-                </p>
-            ),
-        },
-        {
             question: 'Is an annual contract required for any of the plans?',
             answer: <p>Cody Enterprise requires an annual contract. Cody Pro is paid on a monthly basis.</p>,
         },
