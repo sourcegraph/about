@@ -158,12 +158,12 @@ export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
         topicClass: 'mb-6',
     },
     {
-        topic: 'Enterprise Features',
-        features: ['everythingInPro', 'entSupport', 'flexDeployment', 'entAdmin', 'guardrails'],
-    },
-    {
         topic: 'LLM Support',
         features: ['entLLMchoices', 'BringYourLLMKey', 'BringYourLLM'],
+    },
+    {
+        topic: 'Enterprise Features',
+        features: ['everythingInPro', 'entSupport', 'flexDeployment', 'entAdmin', 'guardrails'],
     },
 ]
 
