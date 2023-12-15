@@ -4,7 +4,7 @@ authors:
   - name: Steve Yegge
     url: https://handbook.sourcegraph.com/team/#steve-yegge
 publishDate: 2023-12-15T10:00-07:00
-description: 'Description goes here'
+description: 'Today I will be regaling you with tales of marvelous cherry-picked new developments in AI, from Sam Altman's recent Uno Reverse incident to bear spraying job-hungry engineers.'
 tags: [blog]
 slug: 'RAG-to-riches'
 published: true
