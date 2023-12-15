@@ -3,8 +3,7 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import InformationCircleOutlineIcon from 'mdi-react/InformationCircleOutlineIcon'
 
-import { breakpoints } from '../../data/breakpoints'
-import { useWindowWidth } from '../../hooks/windowWidth'
+import { Badge } from '../Badge'
 import { Tooltip } from '../Tooltip'
 
 import { FeatureInfo } from './data'
@@ -15,25 +14,51 @@ interface Props {
     className?: string
 }
 
-export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag = 'li', className }) => {
-    const windowWidth = useWindowWidth()
-    const isMdOrDown = windowWidth < breakpoints.lg
-    const isSmOrUp = windowWidth > breakpoints.xs
-
-    return (
-        <Tag className={classNames(Tag === 'li' && 'text-sm')}>
-            <div className="my-xxs flex" title={!isSmOrUp ? feature.description : undefined}>
-                <div className={classNames('text-lg', className)}>{feature.label}</div>
-
-                {feature.description && isSmOrUp && (
-                    <Tooltip
-                        wrapperClassName="my-auto ml-xxs text-gray-300 flex items-center"
-                        text={feature.description}
-                    >
-                        <InformationCircleOutlineIcon size={isMdOrDown ? 25 : 19} />
-                    </Tooltip>
+export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag = 'li', className }) => (
+    <Tag className={classNames(Tag === 'li' && 'text-sm')}>
+        <div className="flex items-center">
+            <div
+                className={classNames(
+                    'text-sm leading-[20px]',
+                    feature.label === 'Guardrails' || feature.label === 'Bring your own LLM' ? 'text-[#5E6E8C]' : 'text-[#343A4D]',
+                    className
                 )}
+            >
+                {feature.label}
             </div>
-        </Tag>
-    )
-}
+            {feature.label === 'Guardrails' && (
+                <Badge
+                    text="coming soon"
+                    size="small"
+                    className="ml-1 px-1 not-italic leading-3 text-gray-500"
+                    color="light-gray"
+                />
+            )}
+            {feature.label === 'Bring your own LLM key' && (
+                <Badge
+                    text="experimental"
+                    size="small"
+                    className="ml-1 px-1 not-italic leading-3 text-gray-500"
+                    color="light-gray"
+                />
+            )}
+            {feature.label === 'Bring your own LLM' && (
+                <Badge
+                    text="coming soon"
+                    size="small"
+                    className="ml-1 px-1 not-italic leading-3 text-gray-500"
+                    color="light-gray"
+                />
+            )}
+            {feature.description && (
+                <Tooltip
+                    wrapperClassName="my-auto ml-xxs text-gray-300 flex items-center"
+                    tooltipClassName="p-2 z-20"
+                    text={feature.description}
+                >
+                    <InformationCircleOutlineIcon size={18} />
+                </Tooltip>
+            )}
+        </div>
+    </Tag>
+)

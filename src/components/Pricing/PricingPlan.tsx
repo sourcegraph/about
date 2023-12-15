@@ -1,21 +1,28 @@
-import { ReactNode, FunctionComponent } from 'react'
+import { ReactNode, FunctionComponent, useState } from 'react'
 
-import CheckIcon from 'mdi-react/CheckIcon'
+import { ChevronDownIcon } from '@heroicons/react/24/outline'
+import classNames from 'classnames'
+import InformationCircleOutlineIcon from 'mdi-react/InformationCircleOutlineIcon'
+
+import { breakpoints } from '../../data/breakpoints'
+import { useWindowWidth } from '../../hooks/windowWidth'
+import { Tooltip } from '../Tooltip'
 
 import { FeatureCluster, SPOTLIGHT_FEATURE_INFO } from './data'
 import { PricingPlanFeature } from './PricingPlanFeature'
 
 interface Props {
-    name: string
+    name: string | ReactNode
     description: ReactNode
-    price: string
-    priceDetail?: string
+    price?: ReactNode
+    priceDetail?: ReactNode
     buttons: ReactNode
-    beforeFeatures?: ReactNode
     features: FeatureCluster[]
-    afterFeatures?: ReactNode
-    borderColorClass: string
-    textColorClass: string
+    borderColorClass?: string
+    shadow?: string
+    nameClass?: string
+    paddingX?: string
+    planClasses?: string
 }
 
 /** A pricing plan on the pricing page. */
@@ -25,41 +32,91 @@ export const PricingPlan: FunctionComponent<Props> = ({
     price,
     priceDetail,
     buttons,
-    beforeFeatures,
     features,
-    afterFeatures,
-    borderColorClass,
-    textColorClass,
-}) => (
-    <div className={`h-full rounded border-t-16 border-gray-200 p-xs shadow-lg sm:p-md ${borderColorClass}`}>
-        <h2 className="mb-sm font-semibold">{name}</h2>
-        <h4 className="my-sm">
-            <div className="text-xl">{price}</div>{' '}
-            {priceDetail && <div className="text-sm font-normal text-gray-400">{priceDetail}</div>}
-        </h4>
-        {description}
-        {buttons}
+    borderColorClass = 'border-gray-200',
+    shadow = 'pricing-plan-card',
+    nameClass,
+    paddingX = 'px-[24px]',
+    planClasses,
+}) => {
+    const [showDetails, setShowDetails] = useState(false)
 
-        {(beforeFeatures || afterFeatures || features.length > 0) && (
-            <div className="ml-0 py-sm">
-                {beforeFeatures}
-                {features.map(node => (
-                    <div key={node.topic} className="border-0 bg-transparent px-0">
-                        <div className="flex items-center text-xl font-semibold">
-                            <CheckIcon className={`mr-2 ${textColorClass}`} />
-                            <h5 className="w-full">{node.topic}</h5>
+    const handleButtonClick = (): void => {
+        setShowDetails(!showDetails)
+    }
+    const windowWidth = useWindowWidth()
+    const isMobile = windowWidth < breakpoints.lg
+
+    return (
+        <div className={classNames('rounded border border-gray-200 bg-white', shadow, planClasses)}>
+            <div className={classNames('rounded-t', borderColorClass)} />
+            <div className={classNames('py-[40px]', paddingX)}>
+                <span className={classNames('mb-2 text-2xl font-semibold', nameClass)}>{name}</span>
+                <span
+                    className={classNames(
+                        'flex border-b-1 pb-[24px] text-base font-normal leading-5 -tracking-[0.25px]',
+                        nameClass ? 'text-violet-500' : 'text-gray-500'
+                    )}
+                >
+                    {description}
+                </span>
+                <span className="my-sm grid gap-[3px]">
+                    {price && <div className="flex items-center text-4xl">{price}</div>}
+                    {priceDetail && priceDetail}
+                </span>
+                {buttons}
+                {isMobile && !showDetails && (
+                    <button
+                        title="see details"
+                        type="button"
+                        className="flex w-full items-center justify-center pt-6 pb-6"
+                        onClick={handleButtonClick}
+                    >
+                        <div className=" flex cursor-pointer flex-row items-center justify-center gap-4 text-lg font-semibold leading-[27px]">
+                            <span>SEE DETAILS</span>
+                            <ChevronDownIcon className="w-xs" />
                         </div>
-                        <ul className="ml-2xl mb-xs">
-                            {node?.features?.map(feature => (
-                                <div key={feature}>
-                                    <PricingPlanFeature feature={SPOTLIGHT_FEATURE_INFO[feature]} tag="li" />
+                    </button>
+                )}
+                <div
+                    className={`${isMobile ? 'transition-max-height overflow-hidden duration-700 ease-in-out' : ''} ${
+                        (isMobile && showDetails) || !isMobile ? 'max-h-[1240px]' : 'max-h-0'
+                    }`}
+                >
+                    {features.length > 0 && (
+                        <div className="ml-0 mt-8 border-t-1">
+                            {features.map(node => (
+                                <div key={node.topic} className="border-0 bg-transparent px-0">
+                                    <div className={classNames('flex items-center pt-[32px] text-sm')}>
+                                        <h5 className="text-base font-semibold leading-5 -tracking-[0.25px]">
+                                            {node.topic}
+                                        </h5>
+                                        {node.description && (
+                                            <Tooltip
+                                                wrapperClassName="my-auto ml-xxs text-gray-300 flex items-center text-sm"
+                                                text={node.description}
+                                                tooltipClassName="p-2"
+                                            >
+                                                <InformationCircleOutlineIcon size={18} />
+                                            </Tooltip>
+                                        )}
+                                    </div>
+                                    <ul className="ml-0 grid list-none gap-y-2 border-b-1 pb-[32px]">
+                                        {node?.features?.map(feature => (
+                                            <div key={feature}>
+                                                <PricingPlanFeature
+                                                    feature={SPOTLIGHT_FEATURE_INFO[feature]}
+                                                    tag="li"
+                                                />
+                                            </div>
+                                        ))}
+                                    </ul>
                                 </div>
                             ))}
-                        </ul>
-                    </div>
-                ))}
-                {afterFeatures}
+                        </div>
+                    )}
+                </div>
             </div>
-        )}
-    </div>
-)
+        </div>
+    )
+}

@@ -10,7 +10,7 @@ import Link from 'next/link'
 import { FaDiscord as DiscordIcon } from 'react-icons/fa'
 
 import { Badge, Heading } from '..'
-import { buttonStyle, buttonLocation } from '../../data/tracking'
+import { buttonLocation, buttonStyle } from '../../data/tracking'
 
 interface Link {
     name: string
@@ -27,7 +27,7 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
         name: 'Products',
         items: [
             {
-                name: 'Cody (beta)',
+                name: 'Cody',
                 href: '/cody',
             },
             {
@@ -70,7 +70,7 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
             },
             {
                 name: 'Documentation',
-                href: 'https://docs.sourcegraph.com',
+                href: 'https://sourcegraph.com/docs',
             },
             {
                 name: 'Podcast',

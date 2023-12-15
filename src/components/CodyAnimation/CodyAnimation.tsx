@@ -1,6 +1,8 @@
 'use client'
 import { FunctionComponent, useState, useCallback, useRef, useEffect } from 'react'
 
+import classNames from 'classnames'
+
 import { breakpoints } from '../../data/breakpoints'
 import { useInViewCody } from '../../hooks/useInViewCody'
 import { useWindowWidth } from '../../hooks/windowWidth'
@@ -17,29 +19,34 @@ const timingFrames = {
 }
 
 const codes: string[] = [
-    'function bubbleSort(array) {',
-    '   let swapped;',
-    `   do {
-       swapped = false;
-       for (let i = 0; i < array.length - 1; i++) {
-           if (array[i] > array [i+1]) {
-              let temp = array[i];
-              array[i] = array[i+1];
-              array[i+1] = temp;
-              swapped = true;
-           }
-       }
-   } while (swapped);
-   return array;
-`,
+    `// UpdateSubscriptionOptions describes a change to apply to a subscription
+// Any nil field will be left unchanged
+func UpdateSubscriptionOptions struct {
+  NewSeatCount         *int
+  NewBillingInterval   *BillingInterval
+  NewCancelAtPeriodEnd *bool
+}
+
+func (opts UpdateCustomerOptions) Validate() error {`,
+    '   if opts.NewSeatCount != nil {',
+    `      if *opts.NewSeatCount <= 0 {
+        }
+    }
+
+    if opts.NewBillingInterval != nil {
+        if !opts.NewBillingInterval.IsValid() {
+            return invalidValueError(“NewBillingInterval”)
+        }
+    }`,
     '}',
 ]
 
-export const CodyAnimation: FunctionComponent = () => {
+export const CodyAnimation: FunctionComponent<{className?: string}> = ({className}) => {
     const [startAnimation, setStartAnimation] = useState(false)
     const [nextLine, setNextLine] = useState(false)
     const [showSuggestion, setShowSuggestion] = useState(false)
     const [applySuggestion, setApplySuggestion] = useState(false)
+    const [typingCodeLines, setTypingCodeLines] = useState(0)
 
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
@@ -75,22 +82,39 @@ export const CodyAnimation: FunctionComponent = () => {
         }
     }, [isCodyAnimationRefInView, applySuggestion])
 
-    const lineNumbers = countTotalLines(codes)
-    const activeLine = showSuggestion ? lineNumbers : nextLine ? 2 : 1
+    const lineNumbers = countTotalLines(codes) + 2
+    const activeLine = showSuggestion ? lineNumbers : typingCodeLines || 1
 
     return (
         <>
-            <div className=" relative overflow-hidden" ref={codyAnimationRef}>
-                <div className="relative left-[56px] mx-auto flex w-[743.091px] rounded-md border border-[#343A4D] bg-[#191B21] pl-[34px] pt-[40px] pb-[26px] text-sm leading-[19.6px] md:left-[0px]">
-                    <SideSection activeLine={activeLine} accepted={applySuggestion} totalLines={lineNumbers} />
-                    <div className="ml-[21px] flex-1">
-                        <Line active={!nextLine} className="flex flex-row items-center">
+            <div className={classNames('relative overflow-hidden md:overflow-visible', className)} ref={codyAnimationRef}>
+                <div className="relative left-[81px] mx-auto flex min-h-[412px] w-[728px] rounded-md border border-[#343A4D] bg-[#191B21] py-4 pl-4 text-sm leading-[19.6px] md:left-[0px]">
+                    <SideSection
+                        activeLine={activeLine}
+                        codyStartFrom={10}
+                        codyEndFrom={20}
+                        showCodyPointer={applySuggestion || showSuggestion}
+                        totalLines={lineNumbers}
+                    />
+                    <div className="relative ml-[9px] flex-1 ">
+                        <Line
+                            className={classNames('flex flex-row items-center ', {
+                                'cody-multiple-lines': !nextLine,
+                            })}
+                        >
                             {startAnimation ? (
-                                <TypingAnimation code={codes[0]} onCompleted={showSuggestionHandler} />
+                                <TypingAnimation
+                                    speed={16}
+                                    showCursor={!nextLine}
+                                    code={codes[0]}
+                                    onCompleted={showSuggestionHandler}
+                                    setCodeLines={setTypingCodeLines}
+                                />
                             ) : (
-                                <BlinkCursor />
+                                <div className="m-0 p-0">
+                                    <BlinkCursor />
+                                </div>
                             )}
-                            {!nextLine && <BlinkCursor />}
                         </Line>
                         {nextLine && (
                             <Line active={nextLine && !applySuggestion} className="flex flex-row items-center">

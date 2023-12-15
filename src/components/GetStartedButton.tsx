@@ -132,7 +132,7 @@ const OtherVariants: React.FunctionComponent<{ className?: string; triangleClass
         </Link>
         , or{' '}
         <Link
-            href="https://docs.sourcegraph.com"
+            href="https://sourcegraph.com/docs"
             className="font-normal text-violet-300 no-underline hover:text-white hover:underline"
         >
             other deployment methods

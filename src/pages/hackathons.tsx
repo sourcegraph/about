@@ -1,9 +1,9 @@
-import React, { FunctionComponent } from 'react'
+import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, HubSpotForm } from '../components'
-import { buttonStyle, buttonLocation } from '../data/tracking'
+import { HubSpotForm, Layout } from '../components'
+import { buttonLocation, buttonStyle } from '../data/tracking'
 
 export const Hackathons: FunctionComponent = () => (
     <Layout
@@ -48,7 +48,7 @@ export const Hackathons: FunctionComponent = () => (
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://docs.sourcegraph.com/admin/install/docker"
+                                href="https://sourcegraph.com/docs/admin/install/docker"
                             >
                                 installation docs.
                             </a>
@@ -91,7 +91,7 @@ export const Hackathons: FunctionComponent = () => (
                                 <a
                                     target="_blank"
                                     rel="noreferrer"
-                                    href="https://docs.sourcegraph.com/admin/install/docker"
+                                    href="https://sourcegraph.com/docs/admin/install/docker"
                                     title="Installation docs"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
@@ -106,7 +106,7 @@ export const Hackathons: FunctionComponent = () => (
                                 <a
                                     target="_blank"
                                     rel="noreferrer"
-                                    href="https://docs.sourcegraph.com/getting-started/tour"
+                                    href="https://sourcegraph.com/docs/getting-started/tour"
                                     title="Sourcegraph tour"
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
@@ -127,12 +127,12 @@ export const Hackathons: FunctionComponent = () => (
                     chiliPiper={true}
                     inlineMessage={`
                         <p>Thank you for your interest in Sourcegraph. We will be in contact with you soon!</p>
-                        
+
                         <p>Get started today:</p>
 
                         <ul>
-                            <li><a href="https://docs.sourcegraph.com/admin/deploy/docker-single-container" target="_blank" rel="noopener noreferrer">Install Sourcegraph with Docker</a> <b>(recommended, easiest)</b></li>
-                            <li><a href="https://docs.sourcegraph.com" target="_blank" rel="noopener noreferrer">Review the documentation</a></li>
+                            <li><a href="https://sourcegraph.com/docs/admin/deploy/docker-single-container" target="_blank" rel="noopener noreferrer">Install Sourcegraph with Docker</a> <b>(recommended, easiest)</b></li>
+                            <li><a href="https://sourcegraph.com/docs" target="_blank" rel="noopener noreferrer">Review the documentation</a></li>
                             <li>Check your email for your 30-day license key.</li>
                         </ul>
                     `}

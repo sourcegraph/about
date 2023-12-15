@@ -2,13 +2,13 @@ import { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
 
-import { buttonStyle, buttonLocation } from '../../data/tracking'
+import { buttonLocation, buttonStyle } from '../../data/tracking'
 import { copy } from '../../lib/utils'
 
 import { ReactComponent as CopyIcon } from './copyIcon.svg'
 
 const installText =
-    'docker run --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm --volume ~/.sourcegraph/config:/etc/sourcegraph --volume ~/.sourcegraph/data:/var/opt/sourcegraph sourcegraph/server:5.2.4'
+    'docker run --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm --volume ~/.sourcegraph/config:/etc/sourcegraph --volume ~/.sourcegraph/data:/var/opt/sourcegraph sourcegraph/server:5.2.5'
 
 export const Install: FunctionComponent = () => {
     const [copied, setCopied] = useState(false)
@@ -79,7 +79,7 @@ export const Install: FunctionComponent = () => {
 
                 <a
                     className="inline-block text-lg"
-                    href="https://docs.sourcegraph.com"
+                    href="https://sourcegraph.com/docs"
                     title="Deploy to a server or cluster"
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.trySourcegraph}
