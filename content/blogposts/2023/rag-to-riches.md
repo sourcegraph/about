@@ -202,6 +202,6 @@ I’ve deleted about forty-six pages of text trying to explain succinctly why Co
 
 If you are wondering what could possibly be the benefit of having a smart programmer hanging around and helping you – and if so, then I am sad that you have never had that experience – then you should get yourself a coding assistant. It’s rad.
 
-Until next time! Hope everyone has a great holiday season. Lemme know what you think of [Cody](https://cody.dev).
+Until next time! Hope everyone has a great holiday season. Lemme know what you think of [Cody](https://about.sourcegraph.com/cody).
 
 Bzzzt!
