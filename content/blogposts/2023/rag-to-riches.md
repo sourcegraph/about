@@ -8,8 +8,8 @@ description: "Today I will be regaling you with tales of marvelous cherry-picked
 tags: [blog]
 slug: 'RAG-to-riches'
 published: true
-heroImage: 'https://storage.googleapis.com/sourcegraph-assets/blog/hacktoberfest-2023-blog-og.jpg'
-socialImage: 'https://storage.googleapis.com/sourcegraph-assets/blog/hacktoberfest-2023-blog-og.jpg'
+heroImage: 'https://storage.googleapis.com/sourcegraph-assets/blog/RAG-to-riches/RAG-to-riches-hero.png'
+socialImage: 'https://storage.googleapis.com/sourcegraph-assets/blog/RAG-to-riches/RAG-to-riches-hero.png'
 ---
 
 I can’t believe how much has transpired in the AI world since my [last post](https://about.sourcegraph.com/blog/all-you-need-is-cody), a post in which I strategically deployed a large battalion of F-words in a hugely successful campaign to get someone else to write our marketing posts. I am happy to report that they immediately dropped everything they were doing and ran and hired an entire marketing team, who now come by almost every day to thank me for not posting, and then give me a suspicious look on the way out, as if I might run a sudden foul billboard ad campaign.
