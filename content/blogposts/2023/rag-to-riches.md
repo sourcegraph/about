@@ -174,7 +174,7 @@ For our last story of the hour, I am pleased to report that Cody, Sourcegraph’
 
 Anyway, Cody is GA! After a mere 9 months of frantic development… but atop Sourcegraph’s foundation of 10 years of code understanding infrastructure. So it’s a baby, but a great big one like in a Miyazaki film. You can use Cody in several clients including the flagship VSCode (GA), IntelliJ (Beta), other JetBrains IDEs (Experimental) and Neovim (Beta). And it has a free tier for you to just screw around with it. Bzzzzzt! One more gnat for your windshield.
 
-Since this isn’t a marketing post, I won’t bore you with Cody’s capabilities. I mean, you can just [download](https://about.sourcegraph.com/cody) it and figure it out. Instead I’ll tell you what’s new with our little RAG-to-riches saga since last time you probably looked.
+Since this isn’t a marketing post, I won’t bore you with Cody’s capabilities. I mean, you can just [download](https://sourcegraph.com/cody) it and figure it out. Instead I’ll tell you what’s new with our little RAG-to-riches saga since last time you probably looked.
 
 Cody has quickly grown from POC quality–some might even say POS quality–earlier this year into a polished and slick GA product. It’s a lot of fun, and it starts making you more productive as soon as you install it. The completion suggestions are fast and satisfyingly accurate, and the Cody chat experience is basically unparalleled, with the chat UI and context specification being dramatically improved. Cody’s overall performance and quality are competitive across the board, it scales up to Enterprise grade, and it offers great variety in choosing LLMs, context, hosting options, guardrails, and more.
 
@@ -202,6 +202,6 @@ I’ve deleted about forty-six pages of text trying to explain succinctly why Co
 
 If you are wondering what could possibly be the benefit of having a smart programmer hanging around and helping you – and if so, then I am sad that you have never had that experience – then you should get yourself a coding assistant. It’s rad.
 
-Until next time! Hope everyone has a great holiday season. Lemme know what you think of [Cody](https://about.sourcegraph.com/cody).
+Until next time! Hope everyone has a great holiday season. Lemme know what you think of [Cody](https://sourcegraph.com/cody).
 
 Bzzzt!
