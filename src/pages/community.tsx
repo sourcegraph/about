@@ -183,7 +183,7 @@ export const Community: FunctionComponent = () => (
         </ContentSection>
         <ContentSection parentClassName="md:pt-16" className="lg:px-6">
             <div className="flex flex-col justify-between md:flex-row">
-                <div className="max-w-lg">
+                <div className="max-w-lg pt-16 pb-[52px] md:py-0">
                     <Heading size="h2" className="mb-6 text-center !leading-[40px] !tracking-[-1px] md:text-left">
                         Events
                     </Heading>
