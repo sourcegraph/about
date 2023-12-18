@@ -58,7 +58,7 @@ const expertsData = [
     {
         name: 'Bilal Khan',
         role: 'Contributor',
-        image: '/community/person1.svg',
+        image: '/community/bilal.jpeg',
         links: {
             discord: 'https://discord.com/users/809613951503040522',
             github: 'https://github.com/ibilalkayy',
@@ -68,7 +68,7 @@ const expertsData = [
     {
         name: 'Deepak Kumar',
         role: 'Cody Expert and Contributor',
-        image: '/community/person2.svg',
+        image: '/community/deepak.jpeg',
         links: {
             discord: 'https://discord.com/users/720294116885397635',
             github: 'https://github.com/deepak2431',
@@ -78,7 +78,7 @@ const expertsData = [
     {
         name: 'Tino Wening',
         role: 'DL/ML/AI Enthusiast & Contributor',
-        image: '/community/person3.svg',
+        image: '/community/tino.jpeg',
         links: {
             discord: 'https://discord.com/users/518125939910115353',
             github: 'https://github.com/PriNova',
@@ -108,7 +108,7 @@ const CommunityExpert: FunctionComponent<{ expert: typeof expertsData[0] }> = ({
     </div>
 )
 
-export const Community: FunctionComponent = () => (
+const Community: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Welcome to the Sourcegraph Community',
