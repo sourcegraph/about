@@ -125,12 +125,12 @@ export const Community: FunctionComponent = () => (
                 <div className="flex max-w-3xl flex-col justify-center text-gray-500 md:justify-center">
                     <Heading size="h3" className="text-center leading-[30px] !tracking-[-0.25px] md:text-left">
                         Our community is driven by a shared passion for open source and developer productivity, fueled
-                        by the power of AI tolls & code search.
+                        by the power of AI tools & code search.
                     </Heading>
                     <br />
                     <p className="mb-8 text-center text-lg tracking-[-0.25px] md:text-left">
                         Whether you’re a seasoned veteran or a budding enthusiast, join us to explore, learn, and
-                        collaborate, as we collectively transform the way we read, write, and fix code.
+                        collaborate as we collectively transform how we read, write, and fix code.
                     </p>
                     <div className="flex justify-center md:justify-start ">
                         <a
