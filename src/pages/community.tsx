@@ -10,36 +10,46 @@ const socialMediaStyles = 'text-xl text-gray-400 hover:text-gray-300 transition-
 const events = {
     upcoming: [
         {
-            title: 'React Advanced',
-            location: 'London, UK',
-            date: 'December 7, 2023',
-        },
-        {
-            title: 'React Advanced',
-            location: 'London, UK',
-            date: 'December 7, 2023',
-        },
-        {
-            title: 'React Advanced',
-            location: 'London, UK',
-            date: 'December 7, 2023',
+            title: 'PyCon',
+            location: 'Pittsburgh, PA',
+            date: 'May 17-19, 2023',
         },
     ],
     past: [
         {
-            title: 'Node Summit',
-            location: 'San Francisco, CA',
-            date: 'July 26, 2024',
+            title: 'AWS: ReInvent',
+            location: 'Las Vegas, NV',
+            date: 'Nov 29, 2023',
         },
         {
-            title: 'Node Summit',
-            location: 'San Francisco, CA',
-            date: 'July 26, 2024',
+            title: 'KubeCon',
+            location: 'Chicago, IL',
+            date: 'Nov 6, 2023',
         },
         {
-            title: 'Node Summit',
+            title: 'React Advanced',
+            location: 'London, UK',
+            date: 'Oct 20, 2023',
+        },
+        {
+            title: 'AI Engineer Summit',
             location: 'San Francisco, CA',
-            date: 'July 26, 2024',
+            date: 'Oct 8, 2023',
+        },
+        {
+            title: 'GopherCon',
+            location: 'San Diego, CA',
+            date: 'Oct 2, 2023',
+        },
+        {
+            title: 'Open Source Summit',
+            location: 'Vancouver, BC',
+            date: 'May 10, 2023',
+        },
+        {
+            title: 'PyCon',
+            location: 'Salt Lake City, UT',
+            date: 'Apr 9, 2023',
         },
     ],
 }
@@ -53,7 +63,7 @@ const expertsData = [
             discord: '',
             github: '',
             twitter: '',
-        }
+        },
     },
     {
         name: 'Micheal Gough',
@@ -63,7 +73,7 @@ const expertsData = [
             discord: '',
             github: '',
             twitter: '',
-        }
+        },
     },
     {
         name: 'Helene Engels',
@@ -73,8 +83,8 @@ const expertsData = [
             discord: '',
             github: '',
             twitter: '',
-        }
-    }
+        },
+    },
 ]
 
 const CommunityExpert: FunctionComponent<{ expert: typeof expertsData[0] }> = ({ expert }) => (
@@ -88,10 +98,10 @@ const CommunityExpert: FunctionComponent<{ expert: typeof expertsData[0] }> = ({
             <a href={expert.links.discord}>
                 <FaDiscord className={socialMediaStyles} />
             </a>
-            <a  href={expert.links.twitter}>
+            <a href={expert.links.twitter}>
                 <img className={`h5 w-5 ${socialMediaStyles}`} src="/icons/x-logo.svg" alt="x-logo" />
             </a>
-            <a  href={expert.links.github}>
+            <a href={expert.links.github}>
                 <FaGithub className={socialMediaStyles} />
             </a>
         </div>
