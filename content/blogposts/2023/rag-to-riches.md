@@ -92,7 +92,7 @@ I can tell you what’s causing it. It’s the same for every company. It’s th
 
 So what we hear from the foot-draggers is, “We’re working on it, we just have to finish a reorg, so-and-so just left, we have a task force we’re trying to put together but things are really chaotic,” etc. They just can’t seem to get _organized_ around AI. It’s not jelling for some reason. 
 
-For most of you, that reason is the Innovator’s Dilemma, and your company will need to develop a sense of life-and-death urgency to get through it. Don’t get left behind by your competitors who _are _getting huge speedups from AI in general, and definitely coding assistants specifically.
+For most of you, that reason is the Innovator’s Dilemma, and your company will need to develop a sense of life-and-death urgency to get through it. Don’t get left behind by your competitors who _are_ getting huge speedups from AI in general, and definitely coding assistants specifically.
 
 If you’re stuck, come talk to me. We’ve heard essentially every idea, request, and concern that a company could possibly bring up, and we can help.
 
@@ -112,7 +112,7 @@ You can see where this is going. Many prospective customers ask us politely if C
 
 Naturally we would never, ever, _ever_ build a monstrous invention like that for under $1M ACV. So instead, discerning companies have converged and even fixated on what is now the most popular coding-assistant metric, Completion Acceptance Rate or CAR, which measures how many times you thought, “well, that code looks kinda right” and hit TAB to accept it, out of the total number of completion suggestions you’re shown. In other words, CAR is the percentage of completion suggestions from the coding assistant that people are accepting.
 
-CAR happens to be a number that Cody is exceptionally good at, among its many other capabilities. For this reason we are often approached by well-meaning-but-also-not-so-much prospects who, inspired by the motto “Be Evil”, try to equate CAR with dev productivity in some sort of 1:1 conversion. Let’s call those prospects Beevils. We meet a lot of beevils in my line of work. We regularly have to explain to beevils – we now call this a beevilsplanation – that if the industry couldn’t quantify dev productivity before, then introducing a speedup like AI doesn’t suddenly make it quantifiable now..
+CAR happens to be a number that Cody is exceptionally good at, among its many other capabilities. For this reason we are often approached by well-meaning-but-also-not-so-much prospects who, inspired by the motto “Be Evil”, try to equate CAR with dev productivity in some sort of 1:1 conversion. Let’s call those prospects Beevils. We meet a lot of beevils in my line of work. We regularly have to explain to beevils – we now call this a beevilsplanation – that if the industry couldn’t quantify dev productivity before, then introducing a speedup like AI doesn’t suddenly make it quantifiable now.
 
 I mean, CAR is a nice metric – it’s a simple proxy metric for response relevance that’s easy to measure and reason about – but using it to measure or even _compare_ developer productivity is like measuring how often an F1 driver hits the gas to estimate their race position. Not a perfect metaphor, but the same basic idea: CAR doesn’t measure or model outcomes.
 
@@ -182,7 +182,7 @@ Cody’s secret sauce and differentiator has always been Sourcegraph’s deep un
 
 That’s what RAG (retrieval-augmented generation) is all about. You augment the LLM’s generation by retrieving as much information as a human might need in order to perform some task, and feeding that to the LLM along with the task instructions. Cody’s RAG is a variant of a rec system, recommending relevant code and other context to the LLM for each task or query–a point made recently on [Latent Space](https://www.latent.space/p/bryan-bischof) by our friends there who recently invited Beyang and myself on for a podcast. Good recommenders need numerous models, domain knowledge bases, fast retrieval over large corpora, and other infrastructure that Sourcegraph had already largely built for code.
 
-Producing the perfect context is a dark art today, but I think Cody is likely the furthest along here from what I can see. Cody’s Context has graduated from “hey we have vector embeddings” to “hey we have a whole squad of engines_.”_ The key to generating great context is to look at the problem from many different lenses, and each of Cody’s backend context providers is a different lens.
+Producing the perfect context is a dark art today, but I think Cody is likely the furthest along here from what I can see. Cody’s Context has graduated from “hey we have vector embeddings” to “hey we have a whole squad of engines.” The key to generating great context is to look at the problem from many different lenses, and each of Cody’s backend context providers is a different lens.
 
 On the retrieval side, Cody has many code-understanding lenses: Among them, a high-speed IDE-like code graph, multiple high-performance code search indexes and engines, natural language search, and more, all acting in concert as specialized retrieval backends, both deterministic and model-backed.
 
