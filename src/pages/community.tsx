@@ -56,33 +56,33 @@ const events = {
 
 const expertsData = [
     {
-        name: 'Bonnie Green',
-        role: 'Senior Front-end Developer',
+        name: 'Bilal Khan',
+        role: 'Contributor',
         image: '/community/person1.svg',
         links: {
-            discord: '',
-            github: '',
-            twitter: '',
+            discord: 'https://discord.com/users/809613951503040522',
+            github: 'https://github.com/ibilalkayy',
+            twitter: 'https://twitter.com/ibilalkayy',
         },
     },
     {
-        name: 'Micheal Gough',
-        role: 'Front-end Developer',
+        name: 'Deepak Kumar',
+        role: 'Cody Expert and Contributor',
         image: '/community/person2.svg',
         links: {
-            discord: '',
-            github: '',
-            twitter: '',
+            discord: 'https://discord.com/users/720294116885397635',
+            github: 'https://github.com/deepak2431',
+            twitter: 'https://twitter.com/deepakdk3478',
         },
     },
     {
-        name: 'Helene Engels',
-        role: 'Designer',
+        name: 'Tino Wening',
+        role: 'DL/ML/AI Enthusiast & Contributor',
         image: '/community/person3.svg',
         links: {
-            discord: '',
-            github: '',
-            twitter: '',
+            discord: 'https://discord.com/users/518125939910115353',
+            github: 'https://github.com/PriNova',
+            twitter: 'https://twitter.com/PriNova75',
         },
     },
 ]
@@ -135,7 +135,7 @@ export const Community: FunctionComponent = () => (
                     <div className="flex justify-center md:justify-start ">
                         <a
                             className="btn btn-primary mr-4 w-[108px] tracking-[-0.25px]"
-                            href="https://discord.gg/rDPqBejz93"
+                            href="https://discord.com/servers/sourcegraph-969688426372825169"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.body}
                             data-button-type="cta"
@@ -145,10 +145,11 @@ export const Community: FunctionComponent = () => (
                         </a>
                         <a
                             className="btn btn-outline btn-outline-primary w-[137px] tracking-[-0.25px]"
-                            href="https://docs.sourcegraph.com/"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSeB3KvQRI6B5A7ghgdNKdyie1ZAsLj8K-OgztKpol_BEghC4A/viewform"
                             data-button-style={buttonStyle.outline}
                             data-button-location={buttonLocation.body}
                             data-button-type="cta"
+                            target="_blank rel=noopener"
                             title="Write for us"
                         >
                             Write for us
@@ -182,8 +183,9 @@ export const Community: FunctionComponent = () => (
                     <p className="mb-0 text-center text-lg tracking-[-0.25px]">
                         Pssst, we pay $250-$500 a blog post.{' '}
                         <a
-                            href="https://docs.sourcegraph.com/"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSeB3KvQRI6B5A7ghgdNKdyie1ZAsLj8K-OgztKpol_BEghC4A/viewform"
                             className="text-black  underline underline-offset-[3.55px]"
+                            target="_blank rel=noopener"
                         >
                             Apply to be a guest author.
                         </a>
