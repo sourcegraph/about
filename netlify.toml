@@ -220,4 +220,8 @@
 [[redirects]]
   from = "/cody/pricing"
   to = "/pricing"
+
+[[redirects]]
+  from = "/code-search/pricing"
+  to = "/pricing"
 # ========== END INDIVIDUAL REDIRECTS ==========
