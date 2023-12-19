@@ -22,7 +22,7 @@ TODO SCREENSHOT/GIF
 
 Or you can see what a React component looks like in your storybook component library:
 
-<img src="screencast-vscode-storybook-v0.gif" width="800" height="547" alt="See what a React component looks like, using OpenCodeGraph" />
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/screencast-vscode-storybook-v0.gif" width="800" height="547" alt="See what a React component looks like, using OpenCodeGraph" />
 
 Or you can make it so everyone who opens a repository in VS Code sees doc links alongside your custom-set code patterns (if you want people to stop asking you the same question and get them to actually RTFM):
 
