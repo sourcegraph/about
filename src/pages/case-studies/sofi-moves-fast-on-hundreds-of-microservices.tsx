@@ -20,8 +20,8 @@ export const CaseStudy: FunctionComponent = () => (
             logo="/external-logos/sofi-logo-white.png"
             quote={{
                 text: 'Sourcegraph is an ingrained part of my daily process at SoFi. With Sourcegraph, our engineers can understand all of the repercussions of committing a change to a service that is exposed to other services.',
-                author: 'Ursula Robertson, Engineering Manager, SoFi',
-                image: '/case-studies/ursula-robertson-sofi.jpg',
+                author: 'Engineering Manager, SoFi',
+                image: '',
             }}
             pdf="https://sourcegraphstatic.com/sofi_case_study.pdf"
         >
