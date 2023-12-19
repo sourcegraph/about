@@ -216,4 +216,8 @@
 [[redirects]]
   from = "/support"
   to = "/contact"
+
+[[redirects]]
+  from = "/cody/pricing"
+  to = "/pricing"
 # ========== END INDIVIDUAL REDIRECTS ==========
