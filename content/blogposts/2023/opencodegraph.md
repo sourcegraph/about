@@ -18,9 +18,11 @@ For example, you can click from your editor to production metrics dashboards:
 
 TODO SCREENSHOT/GIF
 
+<!-- TODO add from https://github.com/sourcegraph/sourcegraph/pull/58166/files -->
+
 Or you can see what a React component looks like in your storybook component library:
 
-TODO SCREENSHOT/GIF
+<img src="screencast-vscode-storybook-v0.gif" width="800" height="547" alt="See what a React component looks like, using OpenCodeGraph" />
 
 Or you can make it so everyone who opens a repository in VS Code sees doc links alongside your custom-set code patterns (if you want people to stop asking you the same question and get them to actually RTFM):
 
