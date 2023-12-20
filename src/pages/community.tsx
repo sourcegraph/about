@@ -57,7 +57,7 @@ const events = {
 const expertsData = [
     {
         name: 'Bilal Khan',
-        role: 'Contributor',
+        role: 'Backend Engineer',
         image: '/community/bilal.jpeg',
         links: {
             discord: 'https://discord.com/users/809613951503040522',
@@ -67,7 +67,7 @@ const expertsData = [
     },
     {
         name: 'Deepak Kumar',
-        role: 'Cody Expert and Contributor',
+        role: 'Software Engineer',
         image: '/community/deepak.jpeg',
         links: {
             discord: 'https://discord.com/users/720294116885397635',
@@ -77,7 +77,7 @@ const expertsData = [
     },
     {
         name: 'Tino Wening',
-        role: 'DL/ML/AI Enthusiast & Contributor',
+        role: 'Developer',
         image: '/community/tino.jpeg',
         links: {
             discord: 'https://discord.com/users/518125939910115353',
@@ -166,7 +166,7 @@ const Community: FunctionComponent = () => (
                     </Heading>
                     <p className="text-center text-lg tracking-[-0.25px]">
                         Our experts embody the spirit of collaboration and knowledge sharing. They generously contribute
-                        their expertise through insightful blog posts, pull requests, engaging tasks, and active
+                        their expertise through insightful blog posts, videos, pull requests, and active
                         participation on Discord and other social media.
                     </p>
                     <p className="mb-0 text-center text-lg tracking-[-0.25px]">
