@@ -3,7 +3,7 @@ title: "Hack with us on OpenCodeGraph, an experimental OSS project for code cont
 authors:
   - name: Quinn Slack
     url: https://handbook.sourcegraph.com/team/#sts=Quinn%20Slack
-publishDate: 2023-12-20T09:00-08:00
+publishDate: 2023-12-20T13:35-08:00
 description: "See contextual info about code from your dev tools in your editor, in code review, and anywhere else you read code."
 tags: [blog]
 slug: 'opencodegraph'
