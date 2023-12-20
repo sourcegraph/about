@@ -57,7 +57,7 @@ const events = {
 const expertsData = [
     {
         name: 'Bilal Khan',
-        role: 'Video and Social Contributor',
+        role: 'Backend Engineer',
         image: '/community/bilal.jpeg',
         links: {
             discord: 'https://discord.com/users/809613951503040522',
@@ -67,7 +67,7 @@ const expertsData = [
     },
     {
         name: 'Deepak Kumar',
-        role: 'Social & Code Contributor',
+        role: 'Software Engineer',
         image: '/community/deepak.jpeg',
         links: {
             discord: 'https://discord.com/users/720294116885397635',
@@ -77,7 +77,7 @@ const expertsData = [
     },
     {
         name: 'Tino Wening',
-        role: 'Social and Blog Contributor',
+        role: 'Developer',
         image: '/community/tino.jpeg',
         links: {
             discord: 'https://discord.com/users/518125939910115353',
