@@ -3,7 +3,7 @@ title: "Hack with us on OpenCodeGraph, an experimental OSS project for code cont
 authors:
   - name: Quinn Slack
     url: https://handbook.sourcegraph.com/team/#sts=Quinn%20Slack
-publishDate: 2023-12-19T22:00-07:00
+publishDate: 2023-12-20T09:00-08:00
 description: "See contextual info about code from your dev tools in your editor, in code review, and anywhere else you read code."
 tags: [blog]
 slug: 'opencodegraph'
@@ -33,6 +33,6 @@ It’s easy to add support for:
 
 <br/>
 
-All this contextual info about code is obviously helpful for humans, but it will also help code AI tools such as [Cody](https://cody.dev) that will eventually consume this information ([sneak preview](https://opencodegraph.org/docs/clients/cody/)). After all, a code AI tool probably needs to see the error logs (not just the code) to fix the damn bug, too.
+All this contextual info about code is obviously helpful for humans, but it will also help code AI tools such as [Cody](https://cody.dev) that will eventually consume this information ([sneak preview](https://opencodegraph.org/docs/clients/cody/)). After all, a code AI tool probably needs to see the docs, metrics, and logs (not just the code) to fix the damn bug, just like a human would.
 
-Get started at [opencodegraph.org](https://opencodegraph.org), see the code in [sourcegraph/opencodegraph](https://github.com/sourcegraph/opencodegraph) (Apache 2.0), and join #opencodegraph in the [Sourcegraph Discord](https://about.sourcegraph.com/community) to chat. We’ll be hacking on it over the holidays, adding support for a lot more context providers and clients. (And if this OpenCodeGraph experiment goes as we hope, it’ll make Sourcegraph Code Search and Cody better in the future.)
+Get started at [opencodegraph.org](https://opencodegraph.org), see the code in [sourcegraph/opencodegraph](https://github.com/sourcegraph/opencodegraph) (Apache 2.0), [follow @sqs](https://twitter.com/sqs) for updates, and join #opencodegraph in the [Sourcegraph Discord](https://about.sourcegraph.com/community) to chat. We’ll be hacking on it over the holidays, adding support for a lot more context providers and clients. (And if this OpenCodeGraph experiment goes as we hope, it’ll make Sourcegraph Code Search and Cody better in the future.)
