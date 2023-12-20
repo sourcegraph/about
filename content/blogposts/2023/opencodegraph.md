@@ -14,19 +14,17 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/opencodegrap
 
 In time for holiday hacking, we’re releasing an experiment we’re calling [OpenCodeGraph](https://opencodegraph.org/), a way for you to see contextual info about code from your dev tools in your editor, in code review, and anywhere else you read code.
 
-For example, you can click from your editor to production metrics dashboards:
+For example, you can click from a GitHub PR to production metrics dashboards:
 
-TODO SCREENSHOT/GIF
+<img src="https://storage.googleapis.com/sourcegraph-assets/opencodegraph/screenshot-github-pr-prometheus-browser-v1.png" width="635" height="261" alt="Click on a metric in code to see the Prometheus dashboard" /> <!-- From https://github.com/sourcegraph/sourcegraph/pull/58166/files -->
 
-<!-- TODO add from https://github.com/sourcegraph/sourcegraph/pull/58166/files -->
-
-Or you can see what a React component looks like in your storybook component library:
+Or, in your editor, you can see what a React component looks like (according to your UI component library):
 
 <img src="https://storage.googleapis.com/sourcegraph-assets/blog/screencast-vscode-storybook-v0.gif" width="800" height="547" alt="See what a React component looks like, using OpenCodeGraph" />
 
-Or you can make it so everyone who opens a repository in VS Code sees doc links alongside your custom-set code patterns (if you want people to stop asking you the same question and get them to actually RTFM):
+Or you can make it so everyone who reviews a PR on GitHub sees contextual links to your internal docs (if you want people to stop asking you the same question and get them to actually RTFM):
 
-TODO SCREENSHOT/GIF
+<img src="https://storage.googleapis.com/sourcegraph-assets/opencodegraph/screenshot-github-links-browser-v0.png" width="659" height="501" alt="See contextual links in a GitHub PR />
 
 It’s easy to add support for:
 
