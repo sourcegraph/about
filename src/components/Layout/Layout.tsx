@@ -68,6 +68,16 @@ export const Layout: FunctionComponent<LayoutProps> = ({
         videoMeta.watchURL = `https://www.youtube.com/v/${meta.videoID}`
     }
 
+    // canonical
+    // always set about.sourcegraph.com to sourcegraph.com
+    // if the canonical is set as a prop, just replace about.sourcegraph.com with sourcegraph.com
+    // if no canonical is set, use the current url without url params
+    let canonical: string | undefined = 'https://sourcegraph.com' + asPath
+
+    if (props.meta?.canonical) {
+        canonical = props.meta?.canonical?.replace('about.sourcegraph.com', 'sourcegraph.com')
+    }
+
     return (
         <div className={`flex min-h-screen flex-col ${className || ''}`}>
             <Head>
@@ -113,7 +123,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({
 
                 <link rel="icon" type="image/png" href={meta.icon} />
 
-                {meta.canonical ? <link rel="canonical" href={meta.canonical} /> : ''}
+                {canonical && <link rel="canonical" href={canonical} />}
             </Head>
 
             {!props.hideHeader && (
