@@ -29,14 +29,14 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, pla
             source={source}
             plan={plan}
         />
-        <ExternalsAuth
+        {/* <ExternalsAuth
             authProvider="google"
             label="Continue With Google"
             dark={false}
             className="mt-4"
             source={source}
             plan={plan}
-        />
+        /> */}
         <p className="mt-8 text-sm text-gray-500">
             By registering, you agree to our{' '}
             <Link href="/terms" className="text-gray-500 underline">

@@ -131,14 +131,14 @@ const DemoCodyPage: FunctionComponent = () => {
                                 />
                             </div>
 
-                            <ExternalsAuth
+                            {/* <ExternalsAuth
                                 className={`w-fit justify-center !font-normal ${
                                     isXsMobile ? 'max-w-[228px] flex-1' : ''
                                 }`}
                                 authProvider="google"
                                 label="Google"
                                 source="about-cody"
-                            />
+                            /> */}
                         </div>
                         <p className="mt-6 text-[14px] text-violet-300 opacity-70">
                             By registering, you agree to our{' '}
