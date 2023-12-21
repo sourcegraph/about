@@ -116,7 +116,7 @@ export const ExternalsAuth: React.FunctionComponent<ExternalsAuthProps> = ({
             description: '',
         }
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger().log(EventName.SIGNUP_INITIATED, eventArguments, eventArguments)
+        getEventLogger().log(EventName.AUTH_INITIATED, eventArguments, eventArguments)
         Cookies.set('cody.survey.show', JSON.stringify(true), {
             expires: 365,
             domain: 'sourcegraph.com',
