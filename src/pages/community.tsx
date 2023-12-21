@@ -134,7 +134,7 @@ const Community: FunctionComponent = () => (
                     </p>
                     <div className="flex justify-center md:justify-start ">
                         <a
-                            className="btn btn-primary mr-4 w-[108px] tracking-[-0.25px]"
+                            className="btn btn-primary mr-4 w-fit tracking-[-0.25px]"
                             href="https://discord.com/servers/sourcegraph-969688426372825169"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.body}
@@ -144,7 +144,7 @@ const Community: FunctionComponent = () => (
                             Discord
                         </a>
                         <a
-                            className="btn btn-outline btn-outline-primary w-[137px] tracking-[-0.25px]"
+                            className="btn btn-outline btn-outline-primary w-fit tracking-[-0.25px]"
                             href="https://docs.google.com/forms/d/e/1FAIpQLSeB3KvQRI6B5A7ghgdNKdyie1ZAsLj8K-OgztKpol_BEghC4A/viewform"
                             data-button-style={buttonStyle.outline}
                             data-button-location={buttonLocation.body}
@@ -166,8 +166,8 @@ const Community: FunctionComponent = () => (
                     </Heading>
                     <p className="text-center text-lg tracking-[-0.25px]">
                         Our experts embody the spirit of collaboration and knowledge sharing. They generously contribute
-                        their expertise through insightful blog posts, videos, pull requests, and active
-                        participation on Discord and other social media.
+                        their expertise through insightful blog posts, videos, pull requests, and active participation
+                        on Discord and other social media.
                     </p>
                     <p className="mb-0 text-center text-lg tracking-[-0.25px]">
                         Connect with them to learn from their experiences and broaden your understanding of AI, code
