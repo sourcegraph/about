@@ -5,7 +5,7 @@ title: Cody Enterprise Terms of Use
 
 Last modified: December 27, 2023
 
-These terms apply to use of Cody pursuant to an Enterprise License granted prior to February 25, 2023. All other use of Cody is governed by the [Sourcegraph Terms](https://sourcegraph.com/terms/cloud).
+These terms apply to use of Cody pursuant to an Enterprise License granted prior to February 15, 2023. All other use of Cody is governed by the [Sourcegraph Terms](https://sourcegraph.com/terms/cloud).
 
 ### Sourcegraph Cody
 **Sourcegraph Cody (“Cody”)** is a state-of-the-art AI coding assistant designed to help software developers by answering code questions and generating code. Cody uses Large Language Models (LLMs), Sourcegraph search, and Sourcegraph code intelligence to provide context-specific results to developers, streamlining their workflow, reducing the time spent on repetitive tasks, and improving the quality and consistency of their work. You can access the **beta** version of Cody through an editor extension. In the event of a conflict between this Cody Terms of Use (“Cody Terms”) and the terms that govern your order form (“Terms”), the terms of the Cody Terms prevail. 
