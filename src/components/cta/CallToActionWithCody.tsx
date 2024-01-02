@@ -84,8 +84,8 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
                 Cody Enterprise (coming soon)
             </Heading>
             <p className="mb-8 max-w-[444px] text-lg text-gray-200">
-                Cody Enterprise provides additional security, scalability, and control for your organization. 
-                Unlimited usage and context-awareness of your entire codebase.
+                Cody Enterprise provides additional security, scalability, and control for your organization. Unlimited
+                usage and context-awareness of your entire codebase.
             </p>
             <div className="flex flex-col sm:flex-row">
                 <Link
