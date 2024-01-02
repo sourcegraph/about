@@ -33,7 +33,7 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
         <div className="z-10 flex flex-1 flex-col">
             <div className="max-w-[444px] md:self-end">
                 <Heading className="mb-[10px] !text-[36px] text-white" size="h2">
-                    Try Cody for free (beta)
+                    Try Cody for free
                 </Heading>
                 <p className="mb-0 text-lg text-gray-200">
                     Cody writes code and answers questions for you, speeding up work and keeping devs in flow.
@@ -81,27 +81,20 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
         <div className="my-[42px] border-b border-gray-400 md:my-0 md:mx-[42px] md:h-[266px] md:border-l" />
         <div className="z-10 flex flex-1 flex-col">
             <Heading size="h4" className="mb-4 text-white">
-                Cody for Enterprise (beta)
+                Cody Enterprise (coming soon)
             </Heading>
             <p className="mb-8 max-w-[444px] text-lg text-gray-200">
-                Cody with Sourcegraph Enterprise uses the code graph to provide context-aware answers based on your own
-                private codebase.
+                Cody Enterprise provides additional security, scalability, and control for your organization. 
+                Unlimited usage and context-awareness of your entire codebase.
             </p>
             <div className="flex flex-col sm:flex-row">
                 <Link
-                    href="/cody#contact-form"
-                    title="Get Cody for Enterprise"
+                    href="https://sourcegraph.com/contact/request-info"
+                    title="Get Cody Enterprise"
                     className="hover:bg-color-violet-600 rounded-[5px] border border-white py-2 px-6 text-white"
                 >
-                    Get Cody for Enterprise
+                    Request info
                 </Link>
-                <MeetWithProductExpertButton
-                    buttonClassName="text-white pl-0 mt-3 sm:pl-6 sm:mt-0 hover:text-violet-300 hover:underline"
-                    chevron={true}
-                    buttonLocation={buttonLocation.body}
-                >
-                    Speak to an engineer
-                </MeetWithProductExpertButton>
             </div>
         </div>
     </div>
