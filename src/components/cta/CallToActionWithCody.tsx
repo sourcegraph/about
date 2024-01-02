@@ -3,11 +3,9 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { buttonLocation } from '../../data/tracking'
 import { Heading } from '../Heading'
 
 import { ExternalsAuth } from './ExternalsAuth'
-import { MeetWithProductExpertButton } from './MeetWithProductExpertButton'
 
 export const CallToActionWithCody: FunctionComponent<{ className?: string }> = ({ className }) => (
     <div
