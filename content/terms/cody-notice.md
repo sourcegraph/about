@@ -30,7 +30,8 @@ For all deployments, including Self-Hosted, Cloud, and Sourcegraph.com, Sourcegr
 **Enterprise Cody:** When you use Cody, Sourcegraph collects the following **Customer Content** solely to provide the Service and not for product improvement purposes:
 - **User Prompts** are user submissions to Cody, such as a query or request. Sourcegraph translates the User Prompt into search query syntax and uses the search query syntax to find relevant code snippets in your codebase. Sourcegraph then submits the search query syntax and relevant code snippets  (“**LLM Prompt**”) to a third-party LLM. 
 - **Responses** are the outputs returned to you by Cody. 
-Sourcegraph uses Customer Content solely to provide the service and not for product improvement purposes. 
+Sourcegraph uses Customer Content solely to provide the service and not for product improvement purposes.
+
 However, Sourcegraph does not collect or have access to User Prompts or Responses for customers with an enterprise license who bring their own LLM API key for a self-hosted deployment, as the software is hosted in the customer’s systems. 
 
 ### VI. Full IP Indemnification
