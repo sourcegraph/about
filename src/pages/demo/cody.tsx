@@ -58,15 +58,8 @@ const IMAGE_TAB_CONTENT = [
 const DemoCodyPage: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
-    const isXsMobile = windowWidth < 396
 
     const formContainerRef = useRef<HTMLDivElement | null>(null)
-
-    const scrollToForm = (): void => {
-        if (formContainerRef.current) {
-            formContainerRef.current.scrollIntoView({ behavior: 'smooth' })
-        }
-    }
 
     useEffect(() => {
         const eventArguments = {
@@ -272,7 +265,7 @@ const DemoCodyPage: FunctionComponent = () => {
                     </div>
                 </div>
             </ContentSection>
-            <CodyCta source='cody demo page' onContactClick={scrollToForm} />
+            <CodyCta source='cody demo page' />
         </Layout>
     )
 }

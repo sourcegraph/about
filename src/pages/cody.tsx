@@ -158,7 +158,7 @@ const CodyPage: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <CodyCta source="Cody page" isCodyPage={true} onContactClick={() => setIsContactModalOpen(true)} />
+            <CodyCta source="Cody page" isCodyPage={true} />
             <Modal
                 open={isContactModalOpen}
                 handleClose={() => setIsContactModalOpen(false)}

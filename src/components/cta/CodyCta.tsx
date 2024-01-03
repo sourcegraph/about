@@ -8,12 +8,11 @@ import { Badge, ContentSection, Heading } from '..'
 import { useAuthModal } from '../../context/AuthModalContext'
 
 interface CodyCtaProps {
-    onContactClick: () => void
     isCodyPage?: boolean
     source: string
 }
 
-export const CodyCta: FunctionComponent<CodyCtaProps> = ({ onContactClick, isCodyPage = false, source }) => {
+export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, source }) => {
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (): void => openModal(source)
