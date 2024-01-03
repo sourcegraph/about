@@ -70,7 +70,7 @@ The following Sourcegraph commitments may not apply if you use your own LLM rela
 Not today. In the future, we expect to have the capability to use code from individual devs using Cody Free or Cody Pro to improve our models. When this becomes available, you will be able to choose whether or not to participate.
 
 #### 4. What data does Sourcegraph.com collect for users without an enterprise license? 
-For individual users accessing the Sourcegraph Cody extension or Cody App via Sourcegraph.com, Sourcegraph also collects the following User Content to support and improve user experience, though none of it will be used to train any generally available models:
+For individual users accessing the Sourcegraph Cody extension via Sourcegraph.com, Sourcegraph also collects the following User Content to support and improve user experience, though none of it will be used to train any generally available models:
 - User Prompts
 - LLM Prompts
 - Responses
