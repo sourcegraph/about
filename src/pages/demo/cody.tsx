@@ -36,22 +36,22 @@ const IMAGE_TAB_CONTENT = [
     {
         header: 'Explain code or entire repositories',
         description: 'Get up to speed on new projects quickly',
-        imageSrc: {mobile: '/cody/explain-code.png' , desktop: '/cody/explain-code.svg'},
+        imageSrc: { mobile: '/cody/explain-code.png', desktop: '/cody/explain-code.svg' },
     },
     {
         header: 'Generate unit tests in seconds',
         description: 'Spend more time writing new code',
-        imageSrc: {mobile: '/cody/generate-unit-tests.png' , desktop: '/cody/generate-unit-tests.svg'},
+        imageSrc: { mobile: '/cody/generate-unit-tests.png', desktop: '/cody/generate-unit-tests.svg' },
     },
     {
         header: 'Describe code smells',
         description: 'Optimize your code for best practices',
-        imageSrc: {mobile: '/cody/describe-code-smell.png' , desktop: '/cody/describe-code-smell.svg'},
+        imageSrc: { mobile: '/cody/describe-code-smell.png', desktop: '/cody/describe-code-smell.svg' },
     },
     {
         header: 'Define your own custom commands',
         description: 'Customize Cody for your workflow',
-        imageSrc: {mobile: '/cody/define-custom-command.png' , desktop: '/cody/define-custom-command.svg'},
+        imageSrc: { mobile: '/cody/define-custom-command.png', desktop: '/cody/define-custom-command.svg' },
     },
 ]
 
@@ -124,14 +124,14 @@ const DemoCodyPage: FunctionComponent = () => {
                                 />
                             </div>
 
-                            {/* <ExternalsAuth
+                            <ExternalsAuth
                                 className={`w-fit justify-center !font-normal ${
                                     isXsMobile ? 'max-w-[228px] flex-1' : ''
                                 }`}
                                 authProvider="google"
                                 label="Google"
                                 source="about-cody"
-                            /> */}
+                            />
                         </div>
                         <p className="mt-6 text-[14px] text-violet-300 opacity-70">
                             By registering, you agree to our{' '}
