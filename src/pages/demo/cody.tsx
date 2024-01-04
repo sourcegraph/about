@@ -58,6 +58,7 @@ const IMAGE_TAB_CONTENT = [
 const DemoCodyPage: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
+    const isXsMobile = windowWidth < 396
 
     const formContainerRef = useRef<HTMLDivElement | null>(null)
 
