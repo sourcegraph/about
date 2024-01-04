@@ -23,7 +23,7 @@ export const CaseStudy: FunctionComponent = () => (
                 author: 'Engineering Manager, SoFi',
                 image: '',
             }}
-            pdf="https://sourcegraphstatic.com/sofi_case_study.pdf"
+            pdf="https://sourcegraphstatic.com/sofi_case_study_2024.pdf"
         >
             <ContentSection background="white" slimWidth={true}>
                 <p>
