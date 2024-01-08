@@ -62,12 +62,6 @@ const DemoCodyPage: FunctionComponent = () => {
 
     const formContainerRef = useRef<HTMLDivElement | null>(null)
 
-    const scrollToForm = (): void => {
-        if (formContainerRef.current) {
-            formContainerRef.current.scrollIntoView({ behavior: 'smooth' })
-        }
-    }
-
     useEffect(() => {
         const eventArguments = {
             description: 'About - Cody page view',
@@ -272,7 +266,7 @@ const DemoCodyPage: FunctionComponent = () => {
                     </div>
                 </div>
             </ContentSection>
-            <CodyCta source="cody demo page" onContactClick={scrollToForm} />
+            <CodyCta source='cody demo page' />
         </Layout>
     )
 }

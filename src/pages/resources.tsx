@@ -9,8 +9,8 @@ import {
     resourceItems,
     Resource,
     ContentSection,
+    CodyCta,
     useFilters,
-    CallToActionWithCody,
     Heading,
     SearchInput,
 } from '../components'
@@ -262,8 +262,7 @@ const Resources: FunctionComponent = () => {
                     </div>
                 </div>
             </ContentSection>
-
-            <CallToActionWithCody />
+            <CodyCta source="Resources Page"/>
         </Layout>
     )
 }
