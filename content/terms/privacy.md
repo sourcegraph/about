@@ -3,11 +3,11 @@ layout: markdown
 title: Privacy Policy
 ---
 
-Last modified: April 5, 2023
+Last modified: January 8, 2024
 
-See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Econtent/terms/privacy%5C.md%7C%5Edocs/privacy+type:diff&patternType=standard) since the [previous version](/terms/archives/privacy/2022-09-26/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives).
+See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Econtent/terms/privacy%5C.md%7C%5Edocs/privacy+type:diff&patternType=standard) since the [previous version](/terms/archives/privacy/2023-04-23/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives).
 
-At Sourcegraph, Inc. (**"Sourcegraph," "we," "our,"** or **"us"**), we value the privacy of our website visitors and Sourcegraph Cloud users (collectively for the purposes of this Privacy Policy, our **"Website"**) and our self-hosted Sourcegraph instances users (collectively with our Website, our **"Service"** or **"Services"**). This Privacy Policy explains how we collect, use, share and protect your personal information that we collect through our Service. This Privacy Policy applies to our Website, Sourcegraph Cloud, and our self-hosted Sourcegraph instances. By using our Service, you agree to the terms of this Privacy Policy and our <a href="/terms">Terms of Service</a>.
+At Sourcegraph, Inc. (**"Sourcegraph," "we," "our,"** or **"us"**), we value your privacy. This Privacy Policy explains how we collect, use, share and protect your personal information that we collect when you use our website and products (collectively, **“Services”**). This Privacy Policy does not apply to Customer Personal Data, which we process on behalf of customers to our business offerings. Our use of that data is instead governed by our customer agreements. By using our Service, you agree to the terms of this Privacy Policy and our <a href="/terms">Terms of Service</a>.
 
 Capitalized terms that are not defined in this Privacy Policy have the meaning given them in our <a href="/terms">Terms of Service</a>.
 
@@ -38,11 +38,11 @@ We make money through paid subscriptions to use our Services. We do not sell you
 
 When you interact with our Services, we collect information that could be used to identify you (**“Personal Information”**). Examples include a username and password, an email address, a name, and an IP address.
 
-Some of the information we collect is stored in a manner that cannot be linked back to you (**“Non-Personal Information”**). Non-Personal Information includes aggregated, non-personally identifying information that does not identify a user or cannot otherwise be reasonably linked or connected with them. We may use such aggregated, non-personally identifying information to improve our Services.
+Some of the information we collect is stored in a manner that cannot be linked back to you (**“Non-Personal Information”**). Non-Personal Information includes aggregated, non-personally identifying information that does not identify a user or cannot otherwise be reasonably linked or connected with them. 
 
 ### Information you provide to us directly
 
-When you register for a Sourcegraph account, participate in forums, comment on blog posts, submit a feedback survey, interact with the chat bot on our Website, or correspond with us, we may collect account information (username, password, email), profile information (display name, avatar URL), Content you post, add, receive, or share on our hosted services, and any payment information. We do not process or store your payment information, but our third-party payment processor does.
+When you register for a Sourcegraph account, participate in forums, comment on blog posts, submit a feedback survey, interact with the chat bot on our website, or correspond with us, we may collect account information (username, password, email), profile information (display name, avatar URL), Content you post, add, receive, or share on our hosted services, and any payment information. We do not process or store your payment information, but our third-party payment processor does.
 
 ### Information we receive from third parties
 
@@ -58,42 +58,38 @@ We use information provided directly by you and third parties to operate, mainta
 
 When you use our Services, Sourcegraph automatically collects data about the Services and how they are used, including:
 
-* Aggregated and high-level information about usage through a server ping. The server ping sends a payload containing data such as total number of users and whether certain features are enabled or in use. For more information about the specific information we have access to, see our [server pings documentation](https://docs.sourcegraph.com/admin/pings). Customers can contact Sourcegraph at support@sourcegraph.com to opt out of server pings.
+* Aggregated and high-level information about usage through a server ping. The server ping sends a payload containing data such as total number of users and whether certain features are enabled or in use. For more information about the specific information we have access to, see our [server pings documentation](https://docs.sourcegraph.com/admin/pings). 
 * Event analytics data and metadata to better understand usage within the Services, including click patterns and length and frequency of feature utilization, tied to an internally-generated user ID number.
 
-For self-hosted instances, the only personal information collected is the email address of the initial Sourcegraph installer and site admin (or, if that user is deleted or demoted to not be an admin, the first such active site admin). This information allows us to contact the technical administrator of the Sourcegraph instance to deliver information about product updates and policy changes, and for customer development purposes. Other than the initial site admin email address, only aggregates of usage data are sent: no usernames, user emails, user personal information, code, repository names, file names, URLs, or other such private content is sent to Sourcegraph.
-
-With regards to connections to the Sourcegraph Cloud extension registry, even from self-hosted Sourcegraph instances, the automatically collected data below will apply.
-
-When you visit or use our Website, including when you access the Sourcegraph Cloud extension registry from your self-hosted instance, we may automatically collect the following information.
+When you visit our website or use our Services, we may automatically collect the following information.
 
 #### Cookies
 
-When you visit or use our Website, we may send one or more cookies — a small text file containing a string of alphanumeric characters — to your computer that uniquely identifies your browser and lets us help you log in faster and enhance your navigation through the Website. A cookie may also convey information to us about how you use the Website(e.g., the pages you view, the links you click, how frequently you access the Website, and other actions you take on the Website), and allow us to track your usage of the Website over time. For more information, see “Third-party tracking and online advertising” below and our [Cookie Policy](/terms/cookie-policy/).
+When you visit our website or use our Services, we may send one or more cookies — a small text file containing a string of alphanumeric characters — to your computer that uniquely identifies your browser and lets us help you log in faster and enhance your navigation through the Services. A cookie may also convey information to us about how you use the Services (e.g., the pages you view, the links you click, how frequently you access the Services, and other actions you take on the Services), and allow us to track your usage of the Services over time. For more information, see “Third-party tracking and online advertising” below and our [Cookie Policy](/terms/cookie-policy/).
 
 #### Log data
 
-As with most websites and technology services delivered over the internet, when you access or use our Website, our servers automatically collect data and record it in log files. This log data may include your web request, IP address, browser type and settings, date and time of use, information about browser configuration, error data, repository name, user ID, and cookie data.
+As with most websites and technology services delivered over the internet, when you access or use our Services, our servers automatically collect data and record it in log files. This log data may include your web request, IP address, browser type and settings, date and time of use, information about browser configuration, error data, repository name, user ID, and cookie data.
 
 #### Access, authorization, and activity audit logs
 
-When you visit or use our Website, we may collect information related to accessing systems and data, including IP addresses, usernames, and data accessed. This information is only retained for the purposes of identifying, analyzing, and resolving potential security incidents. Access to this information is limited to those who require access for these purposes and will only be shared with the relevant customers in the event of a security incident.
+When you visit or use our Services, we may collect information related to accessing systems and data, including IP addresses, usernames, and data accessed. This information is only retained for the purposes of identifying, analyzing, and resolving potential security incidents. Access to this information is limited to those who require access for these purposes and will only be shared with the relevant customers in the event of a security incident.
 
 #### Device data
 
-When you visit or use our Website, we automatically collect information about your device, which may include the type of hardware and software you are using (for example, your operating system and browser type), IP address, and other unique identifiers for devices used to access our Website and Hosted Services.
+When you visit or use our Services, we automatically collect information about your device, which may include the type of hardware and software you are using (for example, your operating system and browser type), IP address, and other unique identifiers for devices used to access our Website and Hosted Services.
 
 #### Location data
 
-This is the geographic area where you use your computer or mobile devices (as indicated by an IP address or similar identifier) when interacting with our Website.
+This is the geographic area where you use your computer or mobile devices (as indicated by an IP address or similar identifier) when interacting with our Services.
 
 #### Email beacons
 
-When we send you emails, we may employ clear gifs (also known as web beacons) in HTML-based emails sent to our users to track which emails are opened and which links are clicked by recipients. The information allows for more accurate reporting and improvement of the Website.
+When we send you emails, we may employ clear gifs (also known as web beacons) in HTML-based emails sent to our users to track which emails are opened and which links are clicked by recipients. The information allows for more accurate reporting and improvement of the Services.
 
 #### Web analytics
 
-We may also collect analytics data, or use third-party analytics tools, to help us measure traffic and usage trends for the Website. These tools collect information sent by your browser or mobile device, including the pages you visit, your use of third-party applications, and other information that assists us in analyzing and improving the Website.
+We may also collect analytics data, or use third-party analytics tools, to help us measure traffic and usage trends for the Services. These tools collect information sent by your browser or mobile device, including the pages you visit, your use of third-party applications, and other information that assists us in analyzing and improving the Services.
 
 Although we do our best to honor the privacy preferences of our users, we are not able to respond to Do Not Track signals from your browser at this time.
 
@@ -103,15 +99,15 @@ We may use the automatically collected data to:
 
 1. remember information so that you will not have to re-enter it during your visit or the next time you visit the site;
 2. provide custom, personalized content and information;
-3. provide and monitor the effectiveness of our Website;
+3. provide and monitor the effectiveness of our Services;
 4. monitor aggregate metrics such as total number of visitors, traffic, usage, and demographic patterns on our website and our Service;
 5. understand user behaviors when using the Services to drive product development and business strategies 
-6. Identify, diagnose and fix technology problems and  security risks;
+6. identify, diagnose and fix technology problems and  security risks;
 7. plan for and enhance our service;
 8. comply with our legal obligations; and
 9. for other purposes with your consent.
 
-### What we do not collect
+### What we do **not** collect
 
 #### Sensitive Personal Information
 
@@ -131,31 +127,9 @@ Where laws like GDPR govern our processing of your Personal Information, Sourceg
 
 **Performance of a contract:** We use your Personal Information to provide the Services you subscribe to and to fulfill requests you make of us.
 
-**Legitimate interests:** We use your Personal Information for our legitimate interests, such as security and fraud prevention, product improvement, and communications about your use of our Services.
+**Legitimate interests:** We use your Personal Information for our legitimate interests, such as security, abuse, and fraud prevention, product improvement, and communications about your use of our Services.
 
 **Consent:** We may rely on your consent to use your personal information for certain direct marketing purposes, such as sending you newsletter updates about Sourcegraph products. You may withdraw your consent at any time through the unsubscribe feature provided with each marketing email or by contacting us at the address given at the end of this Privacy Policy.
-
-<span className="text-blurple-400">
-
-## Does Sourcegraph review my repository contents?
-
-</span>
-
-### Public repositories
-
-If your repository is public, anyone may view its contents.
-
-### Private repositories
-
-If you have a private repository on Sourcegraph Cloud or a Sourcegraph managed instance, Sourcegraph personnel do not review your repository contents or any other Content you store or transfer through our Services, except for the following purposes:
-
-- to investigate and respond to a security incident
-- to assist the repository owner with a support matter
-- to comply with our legal obligations such as responding to a court order
-- if we have reason to believe the contents violate the law, or
-- with your consent.
-
-We may scan our servers and content to detect certain tokens or security signatures of known active malware, known vulnerabilities in dependencies, or other content known to violate our Terms of Service, based on algorithmic fingerprinting techniques (collectively, "automated scanning").
 
 <span className="text-blurple-400">
 
@@ -167,7 +141,7 @@ We may share your personal information with third parties in the instances descr
 
 #### Service providers
 
-Our service providers process your Personal Information as needed to provide our Services to you, including hosting and customer support ticketing. They may only process your Personal Information pursuant to our instructions and to perform their duties to us. See our [Subprocessors](/terms/subprocessors) page for a list of our service providers.
+Our service providers process your Personal Information as needed to provide our Services to you, including your content and processing prompts to help you write code. They may only process your Personal Information pursuant to our instructions and to perform their duties to us. See our [Subprocessors](/terms/subprocessors) page for a list of our service providers.
 
 #### Security purposes
 
@@ -183,15 +157,15 @@ We may share your Personal Information with another entity in connection with a 
 
 #### With your consent
 
-With your consent, we may share your Personal Information with other third parties. If you join an Organization, you agree to provide the administrator of the Organization with the ability to view your activity in the Organization’s access log. Any information or content that you voluntarily disclose by posting to the Website becomes available to the public, as controlled by your privacy settings. If you remove information or content that you posted to the Website, copies may remain viewable in cached and archived pages of the Website, or if other users have copied or saved that information.
+With your consent, we may share your Personal Information with third parties. If you join an Organization, you agree to provide the administrator of the Organization with the ability to view your activity in the Organization’s access log. Any information or content that you post to the Services will be displayed in accordance with your privacy settings. If you remove information or content that you posted to the Services, copies may remain viewable in cached and archived pages of the Services, or if other users have copied or saved that information.
 
 ### Does Sourcegraph share aggregate, Non-Personal Information with third parties?
 
 We share aggregated, Non-Personal Information with others about our product usage like number of users, user growth, and lines of indexed code.
 
-### Does Sourcegraph sell or rent my Personal Information?
+### Does Sourcegraph sell, share, or rent my Personal Information?
 
-No. We do not sell or rent your Personal Information for monetary or other consideration under the CCPA (California Consumer Privacy Act of 2018) or other data privacy laws.
+No. We do not sell, share, or rent your Personal Information for cross-contextual behavioral advertising, whether or not for monetary or other consideration under the CCPA (California Consumer Privacy Act of 2018) or other data privacy laws.
 
 ### Will Sourcegraph send me emails
 
@@ -205,9 +179,9 @@ Sourcegraph users will continue to receive transactional messages related to you
 
 </span>
 
-We participate in interest-based advertising and use third-party advertising companies to serve you targeted advertisements based on your online browsing history and your interests. We permit third-party online advertising networks, social media companies, and other third-party services, to collect information about your use of our Website over time so that they may play or display ads for our products on other websites, apps, or services you may use and on other devices you may use.
+We participate in interest-based advertising and use third-party advertising companies to serve you targeted advertisements based on your online browsing history and your interests. We permit third-party online advertising networks, social media companies, and other third-party services, to collect information about your use of our Services over time so that they may play or display ads for our products on other websites, apps, or services you may use and on other devices you may use.
 
-We and our third-party partners may use cookies and tracking technologies on our Website for the purpose of tracking the effectiveness of our own ads placed on Google, Twitter, etc. (never on private or self-hosted instances). We and our third-party partners use this information to make the advertisements you see online more relevant to your interests, as well as to provide advertising-related services such as reporting, attribution, analytics and market research.
+We and our third-party partners may use cookies and tracking technologies on our Services for the purpose of tracking the effectiveness of our own ads placed on Google, Twitter, etc. We and our third-party partners use this information to make the advertisements you see online more relevant to your interests, as well as to provide advertising-related services such as reporting, attribution, analytics and market research.
 
 To learn more about interest-based advertising and how you may be able to opt-out of some of this advertising, you may wish to visit the Network Advertising Initiative’s online resources, at http://www.networkadvertising.org/choices, and/or the DAA’s resources at www.aboutads.info/choices. You may also be able to set your browser to delete or notify you of cookies by actively managing the settings on your browser or mobile device. Please note that some advertising opt-outs may not be effective unless your browser is set to accept cookies. Furthermore, if you use a different device, change browsers or delete the opt-out cookies, you may need to perform the opt-out task again.
 
@@ -221,7 +195,7 @@ You may also be able to limit certain interest-based mobile advertising through 
 
 </span>
 
-Information we collect will be stored and processed in the United States in accordance with this Privacy Policy but we understand that users from other countries may have different expectations and rights with regard to their privacy. For all Website visitors and users and self-hosted Sourcegraph users, no matter their country of location, we will:
+Information we collect will be stored and processed in the United States in accordance with this Privacy Policy but we understand that users from other countries may have different expectations and rights with regard to their privacy. For all website visitors and Services users, no matter their country of location, we will:
 
 - provide clear methods of unambiguous, informed consent when we do collect your personal information;
 - only collect the minimum amount of personal data necessary for the purpose it is collected for, unless you choose to provide us more;
@@ -289,7 +263,7 @@ Sourcegraph does not knowingly collect or solicit any information from anyone un
 
 </span>
 
-Our Service may integrate with or contain links to other third-party sites and services. We are not responsible for the practices employed by third-party websites or services embedded in, linked to, or linked from the Service and your interactions with any third-party website or service are subject to that third-party's own rules and policies.
+Our Services may integrate with or contain links to other third-party sites and services. We are not responsible for the practices employed by third-party websites or services embedded in, linked to, or linked from the Services and your interactions with any third-party website or service are subject to that third-party's own rules and policies.
 
 <span className="text-blurple-400">
 
