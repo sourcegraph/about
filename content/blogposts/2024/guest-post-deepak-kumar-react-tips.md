@@ -40,11 +40,11 @@ The first tip while using Cody to keep in mind is always to provide the required
 Let's see a few examples of Cody's input prompt, how to provide enough context and build the search bar for our tweet generator app.
 
 The first question I asked Cody is: `I want to build a React app using GPT-4, which can generate the tweet content for me to post on Twitter. Tell me how to begin with this app and how I can develop it in the best possible way.`
-
+https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_1_1.jpg
 <table>
   <tr>
-    <td><img src="./assets/prompt_1_1.jpg" width=280 height=320></td>
-    <td><img src="./assets/prompt_1_2.jpg" width=280 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_1_1.jpg" width=280 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_1_2.jpg" width=280 height=320></td>
   </tr>
  </table>
 
@@ -59,8 +59,8 @@ What if the same question is asked without providing enough context? Let's see t
 
 <table>
   <tr>
-    <td><img src="./assets/prompt_2_1.jpg" width=280 height=320></td>
-    <td><img src="./assets/prompt_2_2.jpg" width=280 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_2_1.jpg" width=280 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_2_2.jpg" width=280 height=320></td>
   </tr>
  </table>
 
@@ -72,7 +72,7 @@ I asked Cody first about the UI components I needed to develop for this app, and
 
 <table>
   <tr>
-    <td><img src="./assets/input_prompt_3.jpg" width=280 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/input_prompt_3.jpg" width=280 height=320></td>
   </tr>
  </table>
 
@@ -82,8 +82,8 @@ Next, I asked about how to build the search input box along with a submit button
 
 <table>
   <tr>
-    <td><img src="./assets/prompt_4_1.jpg" width=280 height=320></td>
-    <td><img src="./assets/prompt_4_2.jpg" width=280 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_4_1.jpg" width=280 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_4_2.jpg" width=280 height=320></td>
   </tr>
  </table>
 
@@ -144,8 +144,8 @@ I input Cody this prompt: `I want to use the keywords from the input to generate
 
 <table>
   <tr>
-    <td><img src="./assets/prompt_5_1.jpg" width=280 height=320></td>
-    <td><img src="./assets/prompt_5_2.jpg" width=280 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_5_1.jpg" width=280 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_5_2.jpg" width=280 height=320></td>
   </tr>
  </table>
 
@@ -155,9 +155,9 @@ The updated Cody prompt: `I want to use the keywords from the input to generate 
 
 <table>
   <tr>
-    <td><img src="./assets/prompt_6_1.jpg" width=280 height=320></td>
-    <td><img src="./assets/prompt_6_2.jpg" width=280 height=320></td>
-    <td><img src="./assets/prompt_6_3.jpg" width=280 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_6_1.jpg" width=280 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_6_2.jpg" width=280 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_6_3.jpg" width=280 height=320></td>
   </tr>
  </table>
 
@@ -193,7 +193,7 @@ Cody prompt for the `/edit` command: Update the Home component to render the Twe
 
 <table>
   <tr>
-    <td><img src="./assets/input_prompt_7.gif" width=680 height=520></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/input_prompt_7.gif" width=680 height=520></td>
   </tr>
  </table>
 
@@ -204,7 +204,7 @@ You can also use the Cody inline chat feature to ask any question related to any
 
 <table>
   <tr>
-    <td><img src="./assets/input_prompt_8.gif" width=680 height=520></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/input_prompt_8.gif" width=680 height=520></td>
   </tr>
  </table>
 
@@ -212,7 +212,7 @@ There is a list of other Cody commands which you can use as per your use case.
 
 <table>
   <tr>
-    <td><img src="./assets/commands.jpg" width=520 height=430></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/commands.jpg" width=520 height=430></td>
   </tr>
  </table>
 
@@ -248,7 +248,7 @@ The `/add-test` command is in action.
 
 <table>
   <tr>
-    <td><img src="./assets/input_prompt_9.gif" width=680 height=520></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/input_prompt_9.gif" width=680 height=520></td>
   </tr>
  </table>
 
@@ -256,7 +256,7 @@ Similarly, you can use the `/doc` command to add documentation to any components
 
 <table>
   <tr>
-    <td><img src="./assets/doc.jpg" width=350 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/doc.jpg" width=350 height=320></td>
   </tr>
  </table>
 
@@ -272,7 +272,7 @@ Question 1: Tell me how the react library is implemented using the current codeb
 
 <table>
   <tr>
-    <td><img src="./assets/react_1.jpg" width=520 height=380></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/react_1.jpg" width=520 height=380></td>
   </tr>
  </table>
 
@@ -284,7 +284,7 @@ Question 2: Tell me more about the DOM diffing algorithms, and explain to me the
 
 <table>
   <tr>
-    <td><img src="./assets/react_2.jpg" width=520 height=380></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/react_2.jpg" width=520 height=380></td>
   </tr>
  </table>
 
@@ -294,9 +294,9 @@ You can also look at any function in detail using the prompt `/search {keyword}`
 
 <table>
   <tr>
-    <td><img src="./assets/prompt_10_1.jpg" width=280 height=320></td>
-    <td><img src="./assets/prompt_10_2.jpg" width=280 height=320></td>
-    <td><img src="./assets/prompt_10_3.jpg" width=280 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_10_1.jpg" width=280 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_10_2.jpg" width=280 height=320></td>
+    <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_10_3.jpg" width=280 height=320></td>
   </tr>
  </table>
 
