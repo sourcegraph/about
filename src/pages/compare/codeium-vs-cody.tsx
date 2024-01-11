@@ -363,7 +363,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                     </tbody>
                 </table>
 
-                <p>Last updated: 2024-01-11</p>
+                <p className="mt-1 text-sm text-gray-400">Last updated: 2024-01-11</p>
             </div>
         </div>
 
