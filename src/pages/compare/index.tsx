@@ -89,7 +89,7 @@ const ComparePage: FunctionComponent = () => (
                         Bring your own LLM key <MdClose className="h-6 w-6 fill-gray-200" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Visual Studio IDE support <MdClose className="h-6 w-6 fill-violet-400" />
+                        Visual Studio IDE support <MdCheck className="h-6 w-6 fill-violet-400" />
                     </li>
                 </ul>
             </div>
