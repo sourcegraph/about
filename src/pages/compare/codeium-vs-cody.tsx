@@ -55,18 +55,7 @@ const featureSupport = [
         competitor: false,
         competitor_details: '',
         view_competitor_details: false,
-    },
-    {
-        feature: 'Security vulnerability scanning',
-        feature_details: '',
-        view_feature_details: false,
-        cody: false,
-        cody_details: '',
-        view_cody_details: false,
-        competitor: false,
-        competitor_details: '',
-        view_competitor_details: false,
-    },
+    }
 ]
 
 const ideSupport = [
@@ -124,7 +113,7 @@ const llmSupport = [
         cody: 'Claude 2',
         cody_details: '',
         view_cody_details: false,
-        competitor: false,
+        competitor: 'Proprietary',
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -168,7 +157,7 @@ const llmSupport = [
         cody: 'Cloud',
         cody_details: '',
         view_cody_details: false,
-        competitor: 'Cloud',
+        competitor: 'Cloud or on-prem',
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -211,6 +200,17 @@ const pricingSupport = [
         competitor_details: '',
         view_competitor_details: false,
     },
+    {
+        feature: 'Pro tier pricing for individuals',
+        feature_details: '',
+        view_feature_details: false,
+        cody: '$9 / user / month',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: '$15 / user / month',
+        competitor_details: '',
+        view_competitor_details: false,
+    }
 ]
 
 const GetStartedButton: FunctionComponent<{ className?: string }> = ({ className }) => {
@@ -256,27 +256,15 @@ const CompareCopilotPage: FunctionComponent = () => (
                 competitorIcon="/assets/compare/codeium.svg"
             >
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    Codeium is an AI coding extension that provides code completion, search, and chat for over 70 programming languages. It is available for many popular IDEs including Visual Studio Code, JetBrains, Visual Studio, and others. 
                 </p>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    Codeium differentiates itself from other AI coding tools by training in-house models on various programming languages, while also providing suppor for popular LLMs like GPT-4.
                 </p>
                 <p>
                     <strong className="inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500">TL;DR:</strong>{' '}
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    Codeium is an code AI extension that provides code completion, search, and chat for over 70 programming languages by training in-house models on their own infrastructure.
                 </p>
             </CompareHero>
         }

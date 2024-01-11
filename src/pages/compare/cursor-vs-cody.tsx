@@ -161,6 +161,17 @@ const llmSupport = [
         competitor_details: '',
         view_competitor_details: false,
     },
+    {
+        feature: 'Pro tier pricing for individuals',
+        feature_details: '',
+        view_feature_details: false,
+        cody: '$9 / user / month',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: '$20 / user / month',
+        competitor_details: '',
+        view_competitor_details: false,
+    }
 ]
 
 const contextSupport = [
