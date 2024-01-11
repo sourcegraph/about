@@ -264,7 +264,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                 </p>
                 <p>
                     <strong className="inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500">TL;DR:</strong>{' '}
-                    Codeium is an code AI extension that provides code completion, search, and chat for over 70 programming languages by training in-house models on their own infrastructure.
+                    Codeium is a code AI extension that provides code completion, search, and chat for over 70 programming languages by training in-house models. Cody is a good choice for users who want more transparency and choice for the model being used, whereas Codeium has more extensive IDE support today.
                 </p>
             </CompareHero>
         }
