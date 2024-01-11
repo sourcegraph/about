@@ -260,7 +260,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                 </p>
 
                 <p>
-                    Codeium differentiates itself from other AI coding tools by training in-house models on various programming languages, while also providing suppor for popular LLMs like GPT-4.
+                    Codeium differentiates itself from other AI coding tools by training in-house models on various programming languages, while also providing support for popular LLMs like GPT-4.
                 </p>
                 <p>
                     <strong className="inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500">TL;DR:</strong>{' '}
