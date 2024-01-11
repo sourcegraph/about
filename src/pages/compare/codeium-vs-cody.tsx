@@ -124,7 +124,7 @@ const llmSupport = [
         cody: 'Claude 2',
         cody_details: '',
         view_cody_details: false,
-        competitor: false,
+        competitor: 'Proprietary',
         competitor_details: '',
         view_competitor_details: false,
     },
