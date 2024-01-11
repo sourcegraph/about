@@ -23,6 +23,11 @@ const data = [
         image: 'tabnine.svg',
         url: '/compare/tabnine-vs-cody',
     },
+    {
+        name: 'Codeium',
+        image: 'codeium.svg',
+        url: '/compare/codeium-vs-cody',
+    },
 ]
 
 export const OtherComparisons: FunctionComponent = () => (

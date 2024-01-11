@@ -118,7 +118,7 @@ const llmSupport = [
         view_competitor_details: false,
     },
     {
-        feature: 'Autcomplete model (default)',
+        feature: 'Autocomplete model (default)',
         feature_details: '',
         view_feature_details: false,
         cody: 'StarCoder',
@@ -161,6 +161,17 @@ const llmSupport = [
         competitor_details: '',
         view_competitor_details: false,
     },
+    {
+        feature: 'Pro tier pricing for individuals',
+        feature_details: '',
+        view_feature_details: false,
+        cody: '$9 / user / month',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: '$20 / user / month',
+        competitor_details: '',
+        view_competitor_details: false,
+    }
 ]
 
 const contextSupport = [
@@ -350,7 +361,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                     </tbody>
                 </table>
 
-                <p>Last updated: 12-06-2023</p>
+                <p className="mt-1 text-sm text-gray-400">Last updated: 2023-12-06</p>
             </div>
         </div>
 

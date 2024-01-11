@@ -20,7 +20,7 @@ const featureSupport = [
         cody_details: '',
         view_cody_details: false,
         competitor: true,
-        competitor_details: 'Limited to 2-3 word completions on free tier',
+        competitor_details: '',
         view_competitor_details: false,
     },
     {
@@ -30,8 +30,8 @@ const featureSupport = [
         cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: false,
-        competitor_details: 'Waiting list',
+        competitor: true,
+        competitor_details: '',
         view_competitor_details: false,
     },
     {
@@ -55,7 +55,7 @@ const featureSupport = [
         competitor: false,
         competitor_details: '',
         view_competitor_details: false,
-    },
+    }
 ]
 
 const ideSupport = [
@@ -100,7 +100,7 @@ const ideSupport = [
         cody_details: ['Neovim'],
         view_cody_details: false,
         competitor: true,
-        competitor_details: ['Eclipse'],
+        competitor_details: ['Neovim ', 'Eclipse ', 'Xcode ', 'Sublime ', 'Emacs '],
         view_competitor_details: false,
     },
 ]
@@ -124,7 +124,7 @@ const llmSupport = [
         cody: 'StarCoder',
         cody_details: '',
         view_cody_details: false,
-        competitor: 'Proprietary',
+        competitor: 'Not disclosed',
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -161,17 +161,6 @@ const llmSupport = [
         competitor_details: '',
         view_competitor_details: false,
     },
-    {
-        feature: 'Pro tier pricing for individuals',
-        feature_details: '',
-        view_feature_details: false,
-        cody: '$9 / user / month',
-        cody_details: '',
-        view_cody_details: false,
-        competitor: '$12 / user / month',
-        competitor_details: '',
-        view_competitor_details: false,
-    }
 ]
 
 const contextSupport = [
@@ -182,8 +171,8 @@ const contextSupport = [
         cody: true,
         cody_details: 'Available on all tiers',
         view_cody_details: false,
-        competitor: false,
-        competitor_details: 'Coming soon for Enterprise tier',
+        competitor: true,
+        competitor_details: 'Available for all tiers',
         view_competitor_details: false,
     },
     {
@@ -211,6 +200,17 @@ const pricingSupport = [
         competitor_details: '',
         view_competitor_details: false,
     },
+    {
+        feature: 'Pro tier pricing for individuals',
+        feature_details: '',
+        view_feature_details: false,
+        cody: '$9 / user / month',
+        cody_details: '',
+        view_cody_details: false,
+        competitor: '$15 / user / month',
+        competitor_details: '',
+        view_competitor_details: false,
+    }
 ]
 
 const GetStartedButton: FunctionComponent<{ className?: string }> = ({ className }) => {
@@ -246,31 +246,25 @@ const ContactUsButton: FunctionComponent<{ className?: string }> = ({ className 
 const CompareCopilotPage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph Cody vs. Tabnine',
-            description: 'Feature comparison of Sourcegraph Cody and Tabnine',
+            title: 'Sourcegraph Cody vs. Codeium',
+            description: 'Feature comparison of Sourcegraph Cody and Codeium',
         }}
         hero={
             <CompareHero
-                title="Sourcegraph Cody vs. Tabnine"
-                competitorDescription="Tabnine Logo"
-                competitorIcon="/assets/compare/tabnine.svg"
+                title="Sourcegraph Cody vs. Codeium"
+                competitorDescription="Codeium Logo"
+                competitorIcon="/assets/compare/codeium.svg"
             >
                 <p>
-                    Tabnine is an AI assistant primarily focused on code autocomplete. Tabnine Chat, an in-IDE chat
-                    feature, is also in beta but only for Enterprise users. The free tier of Tabnine has limited
-                    functionality, offering short code completions of 2-3 words, and not offering chat or other AI
-                    commands.
+                    Codeium is an AI coding extension that provides code completion, search, and chat for over 70 programming languages. It is available for many popular IDEs including Visual Studio Code, JetBrains, Visual Studio, and others. 
                 </p>
+
                 <p>
-                    The most unique aspect of Tabnine is its hybrid LLM approach. Tabnine's free tier (Starter) runs a
-                    small model on the user's local machine and a larger model in the cloud. Tabnine Pro also offers a
-                    model where users can run the Tabnine AI models entirely on their local machine.
+                    Codeium differentiates itself from other AI coding tools by training in-house models on various programming languages, while also providing support for popular LLMs like GPT-4.
                 </p>
                 <p>
                     <strong className="inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500">TL;DR:</strong>{' '}
-                    Tabnine is a good choice for users who want to run their LLM entirely on their local machine, but
-                    its Starter and Pro tiers are restricted to only autocomplete. Cody Free and Cody Pro offer a wider
-                    range of features (autocomplete, chat, and commands) using cloud-based models.
+                    Codeium is a code AI extension that provides code completion, search, and chat for over 70 programming languages by training in-house models. Cody is a good choice for users who want more transparency and choice for the model being used, whereas Codeium has more extensive IDE support today.
                 </p>
             </CompareHero>
         }
@@ -282,7 +276,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                         <tr>
                             <th className="w-1/2 border-0 text-left font-semibold">Features</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">Tabnine</th>
+                            <th className="w-1/4 border-0 font-semibold">Codeium</th>
                         </tr>
                     </thead>
 
@@ -298,7 +292,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                         <tr>
                             <th className="w-1/2 border-0 text-left font-semibold">IDE support</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">Tabnine</th>
+                            <th className="w-1/4 border-0 font-semibold">Codeium</th>
                         </tr>
                     </thead>
 
@@ -314,7 +308,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                         <tr>
                             <th className="w-1/2 border-0 text-left font-semibold">LLM / Model</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">Tabnine</th>
+                            <th className="w-1/4 border-0 font-semibold">Codeium</th>
                         </tr>
                     </thead>
 
@@ -330,7 +324,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                         <tr>
                             <th className="w-1/2 border-0 text-left font-semibold">Context and personalization</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">Tabnine</th>
+                            <th className="w-1/4 border-0 font-semibold">Codeium</th>
                         </tr>
                     </thead>
 
@@ -346,7 +340,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                         <tr>
                             <th className="w-1/2 border-0 text-left font-semibold">Pricing</th>
                             <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                            <th className="w-1/4 border-0 font-semibold">Tabnine</th>
+                            <th className="w-1/4 border-0 font-semibold">Codeium</th>
                         </tr>
                     </thead>
 
@@ -357,7 +351,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                     </tbody>
                 </table>
 
-                <p className="mt-1 text-sm text-gray-400">Last updated: 2023-12-06</p>
+                <p className="mt-1 text-sm text-gray-400">Last updated: 2024-01-11</p>
             </div>
         </div>
 

@@ -69,7 +69,7 @@ const ComparePage: FunctionComponent = () => (
                         Bring your own LLM key <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Custom commands <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                        Visual Studio IDE support <MdClose className="inline-block h-6 w-6 fill-gray-200" />
                     </li>
                 </ul>
             </div>
@@ -89,7 +89,7 @@ const ComparePage: FunctionComponent = () => (
                         Bring your own LLM key <MdClose className="h-6 w-6 fill-gray-200" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Custom commands <MdClose className="h-6 w-6 fill-gray-200" />
+                        Visual Studio IDE support <MdCheck className="h-6 w-6 fill-violet-400" />
                     </li>
                 </ul>
             </div>
@@ -123,7 +123,7 @@ const ComparePage: FunctionComponent = () => (
                         Autocomplete <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Commands <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                        Security vulnerability scanning <MdClose className="inline-block h-6 w-6 fill-gray-200" />
                     </li>
                 </ul>
             </div>
@@ -143,7 +143,7 @@ const ComparePage: FunctionComponent = () => (
                         Autocomplete <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Commands <MdClose className="h-6 w-6 fill-gray-200" />
+                    Security vulnerability scanning <MdCheck className="h-6 w-6 fill-violet-400" />
                     </li>
                 </ul>
             </div>
@@ -177,7 +177,7 @@ const ComparePage: FunctionComponent = () => (
                         Autocomplete <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Commands <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                        Standalone app <MdClose className="inline-block h-6 w-6 fill-gray-200" />
                     </li>
                 </ul>
             </div>
@@ -197,13 +197,13 @@ const ComparePage: FunctionComponent = () => (
                         Autocomplete <MdClose className="h-6 w-6 fill-gray-200" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Commands <MdClose className="h-6 w-6 fill-gray-200" />
+                        Standalone app <MdCheck className="h-6 w-6 fill-violet-400" />
                     </li>
                 </ul>
             </div>
         </ContentSection>
 
-        <ContentSection className="mb-32 grid grid-cols-1 gap-1 md:grid-cols-3">
+        <ContentSection className="grid grid-cols-1 gap-1 md:grid-cols-3 ">
             <div className="col-span mr-10 pb-5 pt-10">
                 <h2 className="mb-3 text-3xl">Cody vs Tabnine</h2>
                 <p className="mb-5 text-gray-500">
@@ -231,7 +231,7 @@ const ComparePage: FunctionComponent = () => (
                         Commands <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Chat <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                        Fine-tuned LLM <MdClose className="inline-block h-6 w-6 fill-gray-200" />
                     </li>
                 </ul>
             </div>
@@ -251,7 +251,58 @@ const ComparePage: FunctionComponent = () => (
                         Commands <MdClose className="h-6 w-6 fill-gray-200" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Chat <MdClose className="h-6 w-6 fill-gray-200" />
+                        Fine-tuned LLM <MdCheck className="h-6 w-6 fill-violet-400" />
+                    </li>
+                </ul>
+            </div>
+        </ContentSection>
+        <ContentSection className="mb-32 grid grid-cols-1 gap-1 md:grid-cols-3">
+            <div className="col-span mr-10 pb-5 pt-10">
+                <h2 className="mb-3 text-3xl">Cody vs Codeium</h2>
+                <p className="mb-5 text-gray-500">
+                    Codeium is an AI assistant that uses in-house built models and infrastructure to provide code completion, chat, and search. Codeium has trained models on over 70 programming langugages.
+                </p>
+                <Link className="btn btn-primary text-lg" href="/compare/codeium-vs-cody">
+                    See full comparison
+                </Link>
+            </div>
+            <div className="col-span rounded border border-gray-200 border-t-violet-400 p-5">
+                <CodyHeader />
+                <ul className="ml-0 list-none text-gray-500">
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Free Plan <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Choose your LLM <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Bring your own LLM key <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Commands <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Visual Studio IDE support <MdClose className="inline-block h-6 w-6 fill-gray-200" />
+                    </li>
+                </ul>
+            </div>
+            <div className="col-span rounded border border-gray-200 border-t-gray-300 bg-gray-100 p-5">
+                <CompetitorHeader icon="/assets/compare/codeium.svg" title="Codeium" />
+                <ul className="ml-0 list-none text-gray-500">
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Free Plan <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Choose your LLM <MdClose className="h-6 w-6 fill-gray-200" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Bring your own LLM key <MdClose className="h-6 w-6 fill-gray-200" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Commands <MdClose className="h-6 w-6 fill-gray-200" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Visual Studio IDE support <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                 </ul>
             </div>
