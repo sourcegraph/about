@@ -129,7 +129,7 @@ const llmSupport = [
         view_competitor_details: false,
     },
     {
-        feature: 'Autcomplete model (default)',
+        feature: 'Autocomplete model (default)',
         feature_details: '',
         view_feature_details: false,
         cody: 'StarCoder',
