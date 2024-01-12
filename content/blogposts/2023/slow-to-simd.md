@@ -159,7 +159,7 @@ We've improved execution speed of our code pretty dramatically at this point, bu
 
 In our situation, we're searching over vectors with 1536 dimensions. With 4-byte elements, this comes out to 6KiB per vector, and we generate roughly a million vectors per GiB of code. That adds up.
 
-When searching the vectors, they need to be held in RAM, which puts some serious memory pressure on our deployments. Moving the vectors out of memory would mean loading them from disk at search time, which is a no-go when performance is so critical.
+When searching the vectors, we want to keep them in RAM which puts some serious memory pressure on our deployments. Moving the vectors out of memory would mean loading them from disk at search time, which can add [significant latency](https://colin-scott.github.io/personal_website/research/interactive_latency.html) on slow disks.
 
 There are [plenty of ways](https://en.wikipedia.org/wiki/Dimensionality_reduction) to compress vectors, but we'll be talking about [_integer quantization_](https://huggingface.co/docs/optimum/concept_guides/quantization), which is relatively simple, but effective. The idea is to reduce the precision of the 4-byte `float32` vector elements by converting them to 1-byte `int8`s.
 
