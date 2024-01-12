@@ -185,7 +185,7 @@ func DotInt8BCE(a, b []int8) int32 {
 }
 ```
 
-This change yields a 4x reduction in memory usage at the cost of some recall precision (which we carefully measured, but is irrelevant to this blog post).
+This change yields a 4x reduction in memory usage at the cost of some accuracy (which we carefully measured, but is irrelevant to this blog post).
 
 Re-running the benchmarks shows we suffer a perf hit from this change. Taking a look at the generated assembly (with `go tool compile -S`), there are a bunch of new instructions to convert `int8` to `int32`, so I expect that's the source of the slowdown. We'll make up for that in the next section.
 
