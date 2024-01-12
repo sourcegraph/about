@@ -109,7 +109,7 @@ func DotUnroll4(a, b []float32) float32 {
 
 In a hot loop like this, even with modern branch prediction, the additional branches per iteration can add up to a pretty significant performance penalty. This is especially true in our case because the inserted jumps limit how much we can take advantage of pipelining.
 
-If we can convince the compiler that these reads can never be out of bounds, it won't insert these runtime checks. This technique is known as "bounds-checking elimination", and the same pattern can be applied to many different memory-safe compiled languages.
+If we can convince the compiler that these reads can never be out of bounds, it won't insert these runtime checks. This technique is known as "bounds-checking elimination", and the same patterns can apply to [languages other than Go](https://github.com/Shnatsel/bounds-check-cookbook/).
 
 In theory, we should be able to do all checks once, outside the loop, and the compiler would be able to determine that all the slice indexing is safe. However, I couldn't find the right combination of checks to convince the compiler that what I'm doing is safe. I landed on a combination of asserting the lengths are equal and moving all the bounds checking to the top of the loop. This was enough to hit nearly the speed of the bounds-check-free version.
 
