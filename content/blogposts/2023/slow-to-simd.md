@@ -19,7 +19,7 @@ Spoiler: it's a dot product.
 
 ## Some background (or [skip to the juicy stuff](#the-target))
 
-At Sourcegraph, we're working on a Code AI tool named [Cody](https://sourcegraph.com/cody). In order for Cody to answer questions well, we need to give it (him?) enough [context](https://about.sourcegraph.com/blog/cheating-is-all-you-need) to work with. One of the [ways we do this](https://about.sourcegraph.com/whitepaper/cody-context-architecture.pdf) is by leveraging [embeddings](https://platform.openai.com/docs/guides/embeddings).
+At Sourcegraph, we're working on a Code AI tool named [Cody](https://sourcegraph.com/cody). In order for Cody to answer questions well, we need to give them enough [context](https://about.sourcegraph.com/blog/cheating-is-all-you-need) to work with. One of the [ways we do this](https://about.sourcegraph.com/whitepaper/cody-context-architecture.pdf) is by leveraging [embeddings](https://platform.openai.com/docs/guides/embeddings).
 
 An [embedding](https://developers.google.com/machine-learning/crash-course/embeddings/video-lecture) is a vector representation of a chunk of text. They are constructed in such a way that semantically similar pieces of text have more similar vectors. When Cody needs more information to answer a query, we run a similarity search over the embeddings to fetch a set of related chunks of code and feed those results to Cody to improve the relevance of results.
 
