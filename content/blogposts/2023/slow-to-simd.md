@@ -77,7 +77,7 @@ Note that we can actually improve this slightly more by twiddling with the numbe
 
 ## Bounds-checking elimination
 
-In order to keep out-of-bounds slice accesses from being [a security vulnerability](https://en.wikipedia.org/wiki/Heartbleed), the go compiler inserts checks before each read. You can check it out in the [generated assembly](https://go.godbolt.org/z/qT3M7nPGf) (look for `runtime.panic`).
+In order to keep out-of-bounds slice accesses from being a security vulnerability (like the famous [Heartbleed](https://en.wikipedia.org/wiki/Heartbleed) exploit), the go compiler inserts checks before each read. You can check it out in the [generated assembly](https://go.godbolt.org/z/qT3M7nPGf) (look for `runtime.panic`).
 
 The compiled code makes it look like we wrote somthing like this:
 
