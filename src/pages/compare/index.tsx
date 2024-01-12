@@ -35,7 +35,7 @@ const ComparePage: FunctionComponent = () => (
                 <div className="mx-auto max-w-2xl text-center">
                     <h1>Compare</h1>
                     <p className="mt-3 text-xl leading-8 text-gray-600">
-                        How does Cody stack up to other code AI asssistants?
+                        How does Cody stack up to other code AI assistants?
                     </p>
                 </div>
             </div>
