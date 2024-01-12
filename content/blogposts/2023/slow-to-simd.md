@@ -27,7 +27,7 @@ The piece relevant to this blog post is that similarity metric, which is just a 
 
 ## The target
 
-This is a simple implementation of a function that calculates the dot product of two vectors. My goal is to outline the journey I took to optimize this function, and to share some tools I picked up along the way.
+This is a simple Go implementation of a function that calculates the dot product of two vectors. My goal is to outline the journey I took to optimize this function, and to share some tools I picked up along the way.
 
 ```go
 func DotNaive(a, b []float32) float32 {
