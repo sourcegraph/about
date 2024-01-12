@@ -21,9 +21,9 @@ Spoiler: it's a dot product.
 
 At Sourcegraph, we're working on a Code AI tool named [Cody](https://sourcegraph.com/cody). In order for Cody to answer questions well, we need to give them enough [context](https://about.sourcegraph.com/blog/cheating-is-all-you-need) to work with. One of the [ways we do this](https://about.sourcegraph.com/whitepaper/cody-context-architecture.pdf) is by leveraging [embeddings](https://platform.openai.com/docs/guides/embeddings).
 
-An [embedding](https://developers.google.com/machine-learning/crash-course/embeddings/video-lecture) is a vector representation of a chunk of text. They are constructed in such a way that semantically similar pieces of text have more similar vectors. When Cody needs more information to answer a query, we run a similarity search over the embeddings to fetch a set of related chunks of code and feed those results to Cody to improve the relevance of results.
+For our purposes, an [embedding](https://developers.google.com/machine-learning/crash-course/embeddings/video-lecture) is a vector representation of a chunk of text. They are constructed in such a way that semantically similar pieces of text have more similar vectors. When Cody needs more information to answer a query, we run a similarity search over the embeddings to fetch a set of related chunks of code and feed those results to Cody to improve the relevance of results.
 
-The piece relevant to this blog post is that similarity metric, which is just a function that spits out a number that's higher if vectors are more similar. For similarity search, a common metric is [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity). However, for normalized vectors (vectors with unit magnitude), cosine similarity yields an [equivalent ranking](https://milvus.io/docs/v1.1.1/metric.md) to the [dot product](https://en.wikipedia.org/wiki/Dot_product). We do not yet build an index over our embeddings, so to run a search, we need to calculate the dot product for every embedding in our data set and keep the top results. And since we cannot start execution of the LLM until we get the necessary context, optimizing this step is crucial.
+The piece relevant to this blog post is that similarity metric, which is just a function that spits out a number that's higher if vectors are more similar. For similarity search, a common metric is [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity). However, for normalized vectors (vectors with unit magnitude), cosine similarity yields an [equivalent ranking](https://developers.google.com/machine-learning/clustering/similarity/measuring-similarity) to the [dot product](https://en.wikipedia.org/wiki/Dot_product). We do not yet build an index over our embeddings, so to run a search, we need to calculate the dot product for every embedding in our data set and keep the top results. And since we cannot start execution of the LLM until we get the necessary context, optimizing this step is crucial.
 
 ## The target
 
@@ -48,6 +48,7 @@ Modern CPUs do this thing called [_instruction pipelining_](https://en.wikipedia
 In our simple implementation, we have data dependencies between our loop iterations. A couple, in fact. Both `i` and `sum` have a read/write pair each iteration, meaning an iteration cannot start executing until the previous is finished.
 
 A common method of squeezing more out of our CPUs in situations like this is known as [_loop unrolling_](https://en.wikipedia.org/wiki/Loop_unrolling). The basic idea is to rewrite our loop so more of our relatively-high-latency multiply instructions can execute simultaneously. Additionally, it amortizes the fixed loop costs (increment and compare) across multiple operations.
+
 
 ```go
 func DotUnroll4(a, b []float32) float32 {
