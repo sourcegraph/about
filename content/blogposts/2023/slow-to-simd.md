@@ -12,22 +12,36 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-from-sl
 
 ---
 
-So, there's this function. It's called a lot. More importantly, all those calls are on the critical path of a key user interaction.
-Let's talk about making it fast.
+So, there's this function. It's called a lot. More importantly, all those calls are on the critical path of a key user
+interaction. Let's talk about making it fast.
 
 Spoiler: it's a dot product.
 
 ## Some background (or [skip to the juicy stuff](#the-target))
 
-At Sourcegraph, we're working on a Code AI tool named [Cody](https://sourcegraph.com/cody). In order for Cody to answer questions well, we need to give them enough [context](https://about.sourcegraph.com/blog/cheating-is-all-you-need) to work with. One of the [ways we do this](https://about.sourcegraph.com/whitepaper/cody-context-architecture.pdf) is by leveraging [embeddings](https://platform.openai.com/docs/guides/embeddings).
+At Sourcegraph, we're working on a Code AI tool named [Cody](https://sourcegraph.com/cody). In order for Cody to answer
+questions well, we need to give them enough [context](https://about.sourcegraph.com/blog/cheating-is-all-you-need) to
+work with. One of the [ways we do this](https://about.sourcegraph.com/whitepaper/cody-context-architecture.pdf) is by
+leveraging [embeddings](https://platform.openai.com/docs/guides/embeddings).
 
-For our purposes, an [embedding](https://developers.google.com/machine-learning/crash-course/embeddings/video-lecture) is a vector representation of a chunk of text. They are constructed in such a way that semantically similar pieces of text have more similar vectors. When Cody needs more information to answer a query, we run a similarity search over the embeddings to fetch a set of related chunks of code and feed those results to Cody to improve the relevance of results.
+For our purposes, an [embedding](https://developers.google.com/machine-learning/crash-course/embeddings/video-lecture)
+is a vector representation of a chunk of text. They are constructed in such a way that semantically similar pieces of
+text have more similar vectors. When Cody needs more information to answer a query, we run a similarity search over the
+embeddings to fetch a set of related chunks of code and feed those results to Cody to improve the relevance of results.
 
-The piece relevant to this blog post is that similarity metric, which is just a function that spits out a number that's higher if vectors are more similar. For similarity search, a common metric is [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity). However, for normalized vectors (vectors with unit magnitude), cosine similarity yields an [equivalent ranking](https://developers.google.com/machine-learning/clustering/similarity/measuring-similarity) to the [dot product](https://en.wikipedia.org/wiki/Dot_product). We do not yet build an index over our embeddings, so to run a search, we need to calculate the dot product for every embedding in our data set and keep the top results. And since we cannot start execution of the LLM until we get the necessary context, optimizing this step is crucial.
+The piece relevant to this blog post is that similarity metric, which is just a function that spits out a number that's
+higher if vectors are more similar. For similarity search, a common metric is [cosine
+similarity](https://en.wikipedia.org/wiki/Cosine_similarity). However, for normalized vectors (vectors with unit
+magnitude), cosine similarity yields an [equivalent
+ranking](https://developers.google.com/machine-learning/clustering/similarity/measuring-similarity) to the [dot
+product](https://en.wikipedia.org/wiki/Dot_product). We do not yet build an index over our embeddings, so to run a
+search, we need to calculate the dot product for every embedding in our data set and keep the top results. And since we
+cannot start execution of the LLM until we get the necessary context, optimizing this step is crucial.
 
 ## The target
 
-This is a simple Go implementation of a function that calculates the dot product of two vectors. My goal is to outline the journey I took to optimize this function, and to share some tools I picked up along the way.
+This is a simple Go implementation of a function that calculates the dot product of two vectors. My goal is to outline
+the journey I took to optimize this function, and to share some tools I picked up along the way.
 
 ```go
 func DotNaive(a, b []float32) float32 {
@@ -39,15 +53,22 @@ func DotNaive(a, b []float32) float32 {
 }
 ```
 
-Unless otherwise stated, all benchmarks are run on an Intel Xeon Platinum 8481C 2.70GHz CPU. This is a `c3-highcpu-44` GCE VM. The code in this blog post can all be found in runnable form [here](https://github.com/camdencheek/simd_blog).
+Unless otherwise stated, all benchmarks are run on an Intel Xeon Platinum 8481C 2.70GHz CPU. This is a `c3-highcpu-44`
+GCE VM. The code in this blog post can all be found in runnable form [here](https://github.com/camdencheek/simd_blog).
 
 ## Loop unrolling
 
-Modern CPUs do this thing called [_instruction pipelining_](https://en.wikipedia.org/wiki/Instruction_pipelining) where it can run multiple instructions simultaneously if it finds no data dependencies between them. A data dependency just means that the input of one instruction depends on the output of another.
+Modern CPUs do this thing called [_instruction pipelining_](https://en.wikipedia.org/wiki/Instruction_pipelining) where
+it can run multiple instructions simultaneously if it finds no data dependencies between them. A data dependency just
+means that the input of one instruction depends on the output of another.
 
-In our simple implementation, we have data dependencies between our loop iterations. A couple, in fact. Both `i` and `sum` have a read/write pair each iteration, meaning an iteration cannot start executing until the previous is finished.
+In our simple implementation, we have data dependencies between our loop iterations. A couple, in fact. Both `i` and
+`sum` have a read/write pair each iteration, meaning an iteration cannot start executing until the previous is finished.
 
-A common method of squeezing more out of our CPUs in situations like this is known as [_loop unrolling_](https://en.wikipedia.org/wiki/Loop_unrolling). The basic idea is to rewrite our loop so more of our relatively-high-latency multiply instructions can execute simultaneously. Additionally, it amortizes the fixed loop costs (increment and compare) across multiple operations.
+A common method of squeezing more out of our CPUs in situations like this is known as [_loop
+unrolling_](https://en.wikipedia.org/wiki/Loop_unrolling). The basic idea is to rewrite our loop so more of our
+relatively-high-latency multiply instructions can execute simultaneously. Additionally, it amortizes the fixed loop
+costs (increment and compare) across multiple operations.
 
 
 ```go
@@ -64,7 +85,8 @@ func DotUnroll4(a, b []float32) float32 {
 }
 ```
 
-In our unrolled code, the dependencies between multiply instructions are removed, enabling the CPU to take more advantage of pipelining. This increases our throughput by 37% compared to our naive implementation.
+In our unrolled code, the dependencies between multiply instructions are removed, enabling the CPU to take more
+advantage of pipelining. This increases our throughput by 37% compared to our naive implementation.
 
 <Chart
     rows={[
@@ -73,13 +95,17 @@ In our unrolled code, the dependencies between multiply instructions are removed
     ]}
 />
 
-Note that we can actually improve this slightly more by twiddling with the number of iterations we unroll. On the benchmark machine, 8 seemed to be optimal, but on my laptop, 4 performs best. However, the improvement is quite platform dependent and fairly minimal, so for the rest of the post, I'll stick with an unroll depth of 4 for readability.
+Note that we can actually improve this slightly more by twiddling with the number of iterations we unroll. On the
+benchmark machine, 8 seemed to be optimal, but on my laptop, 4 performs best. However, the improvement is quite platform
+dependent and fairly minimal, so for the rest of the post, I'll stick with an unroll depth of 4 for readability.
 
 ## Bounds-checking elimination
 
-In order to keep out-of-bounds slice accesses from being a security vulnerability (like the famous [Heartbleed](https://en.wikipedia.org/wiki/Heartbleed) exploit), the go compiler inserts checks before each read. You can check it out in the [generated assembly](https://go.godbolt.org/z/qT3M7nPGf) (look for `runtime.panic`).
+In order to keep out-of-bounds slice accesses from being a security vulnerability (like the famous
+[Heartbleed](https://en.wikipedia.org/wiki/Heartbleed) exploit), the go compiler inserts checks before each read. You
+can check it out in the [generated assembly](https://go.godbolt.org/z/qT3M7nPGf) (look for `runtime.panic`).
 
-The compiled code makes it look like we wrote somthing like this:
+The compiled code makes it look like we wrote something like this:
 
 ```go
 func DotUnroll4(a, b []float32) float32 {
@@ -107,11 +133,18 @@ func DotUnroll4(a, b []float32) float32 {
 }
 ```
 
-In a hot loop like this, even with modern branch prediction, the additional branches per iteration can add up to a pretty significant performance penalty. This is especially true in our case because the inserted jumps limit how much we can take advantage of pipelining.
+In a hot loop like this, even with modern branch prediction, the additional branches per iteration can add up to a
+pretty significant performance penalty. This is especially true in our case because the inserted jumps limit how much we
+can take advantage of pipelining.
 
-If we can convince the compiler that these reads can never be out of bounds, it won't insert these runtime checks. This technique is known as "bounds-checking elimination", and the same patterns can apply to [languages other than Go](https://github.com/Shnatsel/bounds-check-cookbook/).
+If we can convince the compiler that these reads can never be out of bounds, it won't insert these runtime checks. This
+technique is known as "bounds-checking elimination", and the same patterns can apply to [languages other than
+Go](https://github.com/Shnatsel/bounds-check-cookbook/).
 
-In theory, we should be able to do all checks once, outside the loop, and the compiler would be able to determine that all the slice indexing is safe. However, I couldn't find the right combination of checks to convince the compiler that what I'm doing is safe. I landed on a combination of asserting the lengths are equal and moving all the bounds checking to the top of the loop. This was enough to hit nearly the speed of the bounds-check-free version.
+In theory, we should be able to do all checks once, outside the loop, and the compiler would be able to determine that
+all the slice indexing is safe. However, I couldn't find the right combination of checks to convince the compiler that
+what I'm doing is safe. I landed on a combination of asserting the lengths are equal and moving all the bounds checking
+to the top of the loop. This was enough to hit nearly the speed of the bounds-check-free version.
 
 ```go
 func DotBCE(a, b []float32) float32 {
@@ -147,23 +180,35 @@ The minimizing of bounds checking nets a 9% improvement. Consistently non-zero, 
     ]}
 />
 
-This technique translates well to many memory-safe compiled languages like [Rust](https://nnethercote.github.io/perf-book/bounds-checks.html).
+This technique translates well to many memory-safe compiled languages like
+[Rust](https://nnethercote.github.io/perf-book/bounds-checks.html).
 
 Exercise for the reader: why is it significant that we slice like `a[i:i+4:i+4]` rather than just `a[i:i+4]`?
 
 ## Quantization
 
-We've improved execution speed of our code pretty dramatically at this point, but there is another dimension of performance that is relevant here: memory usage.
+We've improved execution speed of our code pretty dramatically at this point, but there is another dimension of
+performance that is relevant here: memory usage.
 
 (If you skipped the background section, this part might not make much sense.)
 
-In our situation, we're searching over vectors with 1536 dimensions. With 4-byte elements, this comes out to 6KiB per vector, and we generate roughly a million vectors per GiB of code. That adds up.
+In our situation, we're searching over vectors with 1536 dimensions. With 4-byte elements, this comes out to 6KiB per
+vector, and we generate roughly a million vectors per GiB of code. That adds up.
 
-When searching the vectors, we want to keep them in RAM which puts some serious memory pressure on our deployments. Moving the vectors out of memory would mean loading them from disk at search time, which can add [significant latency](https://colin-scott.github.io/personal_website/research/interactive_latency.html) on slow disks.
+When searching the vectors, we would like to keep them in RAM since moving the vectors out of memory would mean loading
+them from disk at search time, which can add [significant
+latency](https://colin-scott.github.io/personal_website/research/interactive_latency.html) on slow disks. However, the
+vectors are large enough that keeping them in RAM introduces memory pressure to our system, so we'd like to compress the
+vectors if possible.
 
-There are [plenty of ways](https://en.wikipedia.org/wiki/Dimensionality_reduction) to compress vectors, but we'll be talking about [_integer quantization_](https://huggingface.co/docs/optimum/concept_guides/quantization), which is relatively simple, but effective. The idea is to reduce the precision of the 4-byte `float32` vector elements by converting them to 1-byte `int8`s.
+There are [plenty of ways](https://en.wikipedia.org/wiki/Dimensionality_reduction) to compress vectors, but we'll be
+talking about [_integer quantization_](https://huggingface.co/docs/optimum/concept_guides/quantization), which is
+relatively simple, but effective. The idea is to reduce the precision of the 4-byte `float32` vector elements by
+converting them to 1-byte `int8`s.
 
-I won't get into exactly _how_ we decide to do the translation between `float32` and `int8`, since that's a pretty [deep topic](https://huggingface.co/docs/optimum/concept_guides/quantization), but suffice it to say our function now looks like the following:
+I won't get into exactly _how_ we decide to do the translation between `float32` and `int8`, since that's a pretty [deep
+topic](https://huggingface.co/docs/optimum/concept_guides/quantization), but suffice it to say our function now looks
+like the following:
 
 ```go
 func DotInt8BCE(a, b []int8) int32 {
@@ -185,9 +230,12 @@ func DotInt8BCE(a, b []int8) int32 {
 }
 ```
 
-This change yields a 4x reduction in memory usage at the cost of some accuracy (which we carefully measured, but is irrelevant to this blog post).
+This change yields a 4x reduction in memory usage at the cost of some accuracy (which we carefully measured, but is
+irrelevant to this blog post).
 
-Re-running the benchmarks shows we suffer a perf hit from this change. Taking a look at the generated assembly (with `go tool compile -S`), there are a bunch of new instructions to convert `int8` to `int32`, so I expect that's the source of the slowdown. We'll make up for that in the next section.
+Re-running the benchmarks shows we suffer a perf hit from this change. Taking a look at the generated assembly (with `go
+tool compile -S`), there are a bunch of new instructions to convert `int8` to `int32`, so I expect that's the source of
+the slowdown. We'll make up for that in the next section.
 
 <Chart
     rows={[
@@ -203,11 +251,22 @@ Re-running the benchmarks shows we suffer a perf hit from this change. Taking a 
 
 I always love an excuse to play with SIMD. And this problem seemed like the perfect nail for that hammer.
 
-For those unfamiliar, SIMD stands for "Single Instruction Multiple Data". Just like it's says, it lets you run an operation over a bunch of pieces of data with a single instruction. This is exactly what we want for calculating a dot product.
+For those unfamiliar, SIMD stands for "Single Instruction Multiple Data". Just like it's says, it lets you run an
+operation over a bunch of pieces of data with a single instruction. This is exactly what we want for calculating a dot
+product.
 
-We have a problem though. Go does not expose SIMD intrinsics like [C](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html) or [Rust](https://doc.rust-lang.org/beta/core/simd/index.html). We have two options here: write it in C and use Cgo, or write it by hand for Go's assembler. I try hard to avoid Cgo whenever possible for [many reasons that are not at all original](https://dave.cheney.net/2016/01/18/cgo-is-not-go), but one of those reasons is that Cgo imposes a performance penalty, and performance of this snippet is paramount. Also, getting my hands dirty with some assembly sounds fun, so that's what I'm going to do.
+We have a problem though. Go does not expose SIMD intrinsics like
+[C](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html) or
+[Rust](https://doc.rust-lang.org/beta/core/simd/index.html). We have two options here: write it in C and use Cgo, or
+write it by hand for Go's assembler. I try hard to avoid Cgo whenever possible for [many reasons that are not at all
+original](https://dave.cheney.net/2016/01/18/cgo-is-not-go), but one of those reasons is that Cgo imposes a performance
+penalty, and performance of this snippet is paramount. Also, getting my hands dirty with some assembly sounds fun, so
+that's what I'm going to do.
 
-I want this routine to be reasonably portable, so I'm going to restrict myself to only AVX2 instructions, which are supported on most `x86_64` server CPUs these days. We can use [runtime feature detection](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@3ac2170c6523dd074835919a1804f197cf86e451/-/blob/internal/embeddings/dot_amd64.go?L17-21) to fall back to a slower option in pure Go.
+I want this routine to be reasonably portable, so I'm going to restrict myself to only AVX2 instructions, which are
+supported on most `x86_64` server CPUs these days. We can use [runtime feature
+detection](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@3ac2170c6523dd074835919a1804f197cf86e451/-/blob/internal/embeddings/dot_amd64.go?L17-21)
+to fall back to a slower option in pure Go.
 
 <details>
 
@@ -275,10 +334,13 @@ end:
 The core loop of the implementation depends on three main instructions:
 
 - [`VPMOVSXBW`](https://www.felixcloutier.com/x86/pmovsx), which loads `int8`s into a vector `int16`s
-- [`VPMADDWD`](https://www.felixcloutier.com/x86/pmaddwd), which multiplies two `int16` vectors element-wise, then adds together adjacent pairs to produce a vector of `int32`s
-- [`VPADDD`](https://www.felixcloutier.com/x86/paddb:paddw:paddd:paddq), which accumulates the resulting `int32` vector into our running sum
+- [`VPMADDWD`](https://www.felixcloutier.com/x86/pmaddwd), which multiplies two `int16` vectors element-wise, then adds
+  together adjacent pairs to produce a vector of `int32`s
+- [`VPADDD`](https://www.felixcloutier.com/x86/paddb:paddw:paddd:paddq), which accumulates the resulting `int32` vector
+  into our running sum
 
-`VPMADDWD` is a real heavy lifter here. By combining the multiply and add steps into one, not only does it save instructions, it also helps us avoid overflow issues by simultaneously widening the result to an `int32`.
+`VPMADDWD` is a real heavy lifter here. By combining the multiply and add steps into one, not only does it save
+instructions, it also helps us avoid overflow issues by simultaneously widening the result to an `int32`.
 
 Let's see what this earned us.
 
@@ -294,15 +356,32 @@ Let's see what this earned us.
 
 Woah, that's a 530% increase in throughput from our previous best! SIMD for the win 🚀
 
-Now, it wasn't all sunshine and rainbows. Hand-writing assembly in Go is weird. It uses a [custom assembler](https://go.dev/doc/asm), which means that its assembly language looks just-different-enough-to-be-confusing compared to the assembly snippets you usually find online. It has some weird quirks like [changing the order of instruction operands](https://www.quasilyte.dev/blog/post/go-asm-complementary-reference/#operands-order) or [using different names for instructions](https://www.quasilyte.dev/blog/post/go-asm-complementary-reference/#mnemonics). Some instructions don't even _have_ names in the go assembler and can only be used via their [binary encoding](https://go.dev/doc/asm#unsupported_opcodes). Shameless plug: I found sourcegraph.com invaluable for finding examples of Go assembly to draw from.
+Now, it wasn't all sunshine and rainbows. Hand-writing assembly in Go is weird. It uses a [custom
+assembler](https://go.dev/doc/asm), which means that its assembly language looks just-different-enough-to-be-confusing
+compared to the assembly snippets you usually find online. It has some weird quirks like [changing the order of
+instruction operands](https://www.quasilyte.dev/blog/post/go-asm-complementary-reference/#operands-order) or [using
+different names for instructions](https://www.quasilyte.dev/blog/post/go-asm-complementary-reference/#mnemonics). Some
+instructions don't even _have_ names in the go assembler and can only be used via their [binary
+encoding](https://go.dev/doc/asm#unsupported_opcodes). Shameless plug: I found sourcegraph.com invaluable for finding
+examples of Go assembly to draw from.
 
-That said, compared to Cgo, there are some nice benefits. Debugging still works well, the assembly can be stepped through, and registers can be inspected using `delve`. There are no extra build steps (a C toolchain doesn't need to be set up). It's easy to set up a pure-Go fallback so cross-compilation still works. Common problems are caught by `go vet`.
+That said, compared to Cgo, there are some nice benefits. Debugging still works well, the assembly can be stepped
+through, and registers can be inspected using `delve`. There are no extra build steps (a C toolchain doesn't need to be
+set up). It's easy to set up a pure-Go fallback so cross-compilation still works. Common problems are caught by `go
+vet`.
 
 ## SIMD...but bigger
 
-Previously, we limited ourselves to AVX2, but what if we _didn't_? The VNNI extension to AVX-512 added the [`VPDPBUSD`](https://www.felixcloutier.com/x86/vpdpbusd) instruction, which computes the dot product on `int8` vectors rather than `int16`s. This means we can process four times as many elements in a single instruction because we don't have to convert to `int16` first and our vector width doubles with AVX-512!
+Previously, we limited ourselves to AVX2, but what if we _didn't_? The VNNI extension to AVX-512 added the
+[`VPDPBUSD`](https://www.felixcloutier.com/x86/vpdpbusd) instruction, which computes the dot product on `int8` vectors
+rather than `int16`s. This means we can process four times as many elements in a single instruction because we don't
+have to convert to `int16` first and our vector width doubles with AVX-512!
 
-The only problem is that the instruction requires one vector to be signed bytes, and the other to be _unsigned_ bytes. Both of our vectors are signed. We can employ [a trick from Intel's developer guide](https://www.intel.com/content/www/us/en/docs/onednn/developer-guide-reference/2023-0/nuances-of-int8-computations.html#DOXID-DEV-GUIDE-INT8-COMPUTATIONS-1DG-I8-COMP-S12) to help us out. Basically, add 128 to one of our vectors to ensure it's in range of an unsigned integer, then keep track of how much overshoot we need to correct for at the end.
+The only problem is that the instruction requires one vector to be signed bytes, and the other to be _unsigned_ bytes.
+Both of our vectors are signed. We can employ [a trick from Intel's developer
+guide](https://www.intel.com/content/www/us/en/docs/onednn/developer-guide-reference/2023-0/nuances-of-int8-computations.html#DOXID-DEV-GUIDE-INT8-COMPUTATIONS-1DG-I8-COMP-S12)
+to help us out. Basically, add 128 to one of our vectors to ensure it's in range of an unsigned integer, then keep track
+of how much overshoot we need to correct for at the end.
 
 <details>
 <summary>Full code for <code>DotVNNI</code></summary>
@@ -402,15 +481,25 @@ This implementation yielded another 21% improvement. Not bad!
 
 # What's next?
 
-Well, I'm pretty happy with an 9.3x increase in throughput and a 4x reduction in memory usage, so I'll probably leave it here.
+Well, I'm pretty happy with an 9.3x increase in throughput and a 4x reduction in memory usage, so I'll probably leave it
+here.
 
-The real life answer here is probably "use an index". There is a ton of good work out there focused on making nearest neighbor search fast, and there are plenty of batteries-included vector DBs that make it pretty easy to deploy. We're working towards migrating away from our hand-rolled solution so we can scale more cheaply.
+The real life answer here is probably "use an index". There is a ton of good work out there focused on making nearest
+neighbor search fast, and there are plenty of batteries-included vector DBs that make it pretty easy to deploy. We're
+working towards migrating away from our hand-rolled solution so we can scale more cheaply.
 
-_However_, if you want some fun food for thought, a colleague of built a proof-of-concept [dot product on the GPU](https://github.com/sourcegraph/sourcegraph/compare/main...nsc/embeddings-fun#diff-eed4a741ebe632c484dce236a3f4b1eee16e9a2bec6749003b3dbc41449c497c).
+_However_, if you want some fun food for thought, a colleague of built a proof-of-concept [dot product on the
+GPU](https://github.com/sourcegraph/sourcegraph/compare/main...nsc/embeddings-fun#diff-eed4a741ebe632c484dce236a3f4b1eee16e9a2bec6749003b3dbc41449c497c).
 
 ## Bonus material
 
-- If you haven't used [benchstat](https://pkg.go.dev/golang.org/x/perf/cmd/benchstat), you should. It's great. Super simple statistical comparison of benchmark results.
-- Don't miss the [compiler explorer](https://go.godbolt.org/z/qT3M7nPGf), which is an extremely useful tool for digging into compiler codegen.
-- There's also that time I got [nerd sniped](https://twitter.com/sluongng/status/1654066471230636033) into implementing [a version with ARM NEON](https://github.com/camdencheek/simd_blog/blob/main/dot_arm64.s), which made for some interesting comparisons.
-- If you haven't come across it, the [Agner Fog Instruction Tables](https://www.agner.org/optimize/) make for some great reference material for low-level optimizations. For this work, I used them to help grok differences instruction latencies and why some pipeline better than others.
+- If you haven't used [benchstat](https://pkg.go.dev/golang.org/x/perf/cmd/benchstat), you should. It's great. Super
+  simple statistical comparison of benchmark results.
+- Don't miss the [compiler explorer](https://go.godbolt.org/z/qT3M7nPGf), which is an extremely useful tool for digging
+  into compiler codegen.
+- There's also that time I got [nerd sniped](https://twitter.com/sluongng/status/1654066471230636033) into implementing
+  [a version with ARM NEON](https://github.com/camdencheek/simd_blog/blob/main/dot_arm64.s), which made for some
+  interesting comparisons.
+- If you haven't come across it, the [Agner Fog Instruction Tables](https://www.agner.org/optimize/) make for some great
+  reference material for low-level optimizations. For this work, I used them to help grok differences instruction
+  latencies and why some pipeline better than others.
