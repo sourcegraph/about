@@ -187,19 +187,14 @@ Exercise for the reader: why is it significant that we slice like `a[i:i+4:i+4]`
 
 ## Quantization
 
-We've improved execution speed of our code pretty dramatically at this point, but there is another dimension of
-performance that is relevant here: memory usage.
+We've improved single-core search throughput by ~50% at this point, but now we've hit a new bottleneck: memory usage.
+Our vectors 1536 dimensions. With 4-byte elements, this comes out to 6KiB per vector, and we generate roughly a million
+vectors per GiB of code. That adds up quickly. We had a few customers come to us with some massive monorepos, and we
+wanted to reduce our memory usage so we can support those cases more cheaply.
 
-(If you skipped the background section, this part might not make much sense.)
-
-In our situation, we're searching over vectors with 1536 dimensions. With 4-byte elements, this comes out to 6KiB per
-vector, and we generate roughly a million vectors per GiB of code. That adds up.
-
-When searching the vectors, we would like to keep them in RAM since moving the vectors out of memory would mean loading
-them from disk at search time, which can add [significant
-latency](https://colin-scott.github.io/personal_website/research/interactive_latency.html) on slow disks. However, the
-vectors are large enough that keeping them in RAM introduces memory pressure to our system, so we'd like to compress the
-vectors if possible.
+One possible mitigation would be to move the vectors to disk, but loading them from disk at search time can add
+[significant latency](https://colin-scott.github.io/personal_website/research/interactive_latency.html), especially on
+slow disks. Instead, we chose to compress our vectors with `int8` quantization. 
 
 There are [plenty of ways](https://en.wikipedia.org/wiki/Dimensionality_reduction) to compress vectors, but we'll be
 talking about [_integer quantization_](https://huggingface.co/docs/optimum/concept_guides/quantization), which is
@@ -233,9 +228,10 @@ func DotInt8BCE(a, b []int8) int32 {
 This change yields a 4x reduction in memory usage at the cost of some accuracy (which we carefully measured, but is
 irrelevant to this blog post).
 
-Re-running the benchmarks shows we suffer a perf hit from this change. Taking a look at the generated assembly (with `go
-tool compile -S`), there are a bunch of new instructions to convert `int8` to `int32`, so I expect that's the source of
-the slowdown. We'll make up for that in the next section.
+Unfortunately, re-running the benchmarks shows our search speed regressed a bit from the change. Taking a look at the
+generated assembly (with `go tool compile -S`), there are some new instructions for converting `int8` to `int32`, which
+might explain the difference. I didn't dig too deep though, since all our performance improvements up to this point
+become irrelevant in the next section.
 
 <Chart
     rows={[
