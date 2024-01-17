@@ -29,14 +29,19 @@ is a vector representation of a chunk of text. They are constructed in such a wa
 text have more similar vectors. When Cody needs more information to answer a query, we run a similarity search over the
 embeddings to fetch a set of related chunks of code and feed those results to Cody to improve the relevance of results.
 
-The piece relevant to this blog post is that similarity metric, which is just a function that spits out a number that's
-higher if vectors are more similar. For similarity search, a common metric is [cosine
+The piece relevant to this blog post is that similarity metric, which is the function that determines how similar two
+vectors are. For similarity search, a common metric is [cosine
 similarity](https://en.wikipedia.org/wiki/Cosine_similarity). However, for normalized vectors (vectors with unit
-magnitude), cosine similarity yields an [equivalent
-ranking](https://developers.google.com/machine-learning/clustering/similarity/measuring-similarity) to the [dot
-product](https://en.wikipedia.org/wiki/Dot_product). We do not yet build an index over our embeddings, so to run a
-search, we need to calculate the dot product for every embedding in our data set and keep the top results. And since we
-cannot start execution of the LLM until we get the necessary context, optimizing this step is crucial.
+magnitude), the [dot product](https://en.wikipedia.org/wiki/Dot_product) yields a ranking that's [equivalent to cosine
+similarity](https://developers.google.com/machine-learning/clustering/similarity/measuring-similarity). To run a search,
+we calculate the dot product for every embedding in our data set and keep the top results. And since we cannot
+start execution of the LLM until we get the necessary context, optimizing this step is crucial.
+
+You might be thinking: why not just use an indexed vector DB? Outside of adding yet another piece of infra that we need
+to manage, the construction of an index adds latency and increases resource requirements. Additionally, standard
+nearest-neighbor indexes only provide approximate retrieval, which adds another layer of fuzziness compared to a more
+easily explainable exhaustive search. Given that, we decided to invest a little in our hand-rolled solution to see how
+far we could push it.
 
 ## The target
 
@@ -180,7 +185,7 @@ The minimizing of bounds checking nets a 9% improvement. Consistently non-zero, 
     ]}
 />
 
-This technique translates well to many memory-safe compiled languages like
+This technique translates well to many memory-safe compiled languages like 
 [Rust](https://nnethercote.github.io/perf-book/bounds-checks.html).
 
 Exercise for the reader: why is it significant that we slice like `a[i:i+4:i+4]` rather than just `a[i:i+4]`?
@@ -248,8 +253,8 @@ become irrelevant in the next section.
 I always love an excuse to play with SIMD. And this problem seemed like the perfect nail for that hammer.
 
 For those unfamiliar, SIMD stands for "Single Instruction Multiple Data". Just like it's says, it lets you run an
-operation over a bunch of pieces of data with a single instruction. This is exactly what we want for calculating a dot
-product.
+operation over a bunch of pieces of data with a single instruction. As an example, to add two int32 vectors element-wise,
+we could add them together one by one with the ADD instruction and, with pipelining, get a throughput of 
 
 We have a problem though. Go does not expose SIMD intrinsics like
 [C](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html) or
@@ -331,6 +336,7 @@ The core loop of the implementation depends on three main instructions:
 
 - [`VPMOVSXBW`](https://www.felixcloutier.com/x86/pmovsx), which loads `int8`s into a vector `int16`s
 - [`VPMADDWD`](https://www.felixcloutier.com/x86/pmaddwd), which multiplies two `int16` vectors element-wise, then adds
+fuzzy stack. 
   together adjacent pairs to produce a vector of `int32`s
 - [`VPADDD`](https://www.felixcloutier.com/x86/paddb:paddw:paddd:paddq), which accumulates the resulting `int32` vector
   into our running sum
@@ -376,8 +382,11 @@ have to convert to `int16` first and our vector width doubles with AVX-512!
 The only problem is that the instruction requires one vector to be signed bytes, and the other to be _unsigned_ bytes.
 Both of our vectors are signed. We can employ [a trick from Intel's developer
 guide](https://www.intel.com/content/www/us/en/docs/onednn/developer-guide-reference/2023-0/nuances-of-int8-computations.html#DOXID-DEV-GUIDE-INT8-COMPUTATIONS-1DG-I8-COMP-S12)
-to help us out. Basically, add 128 to one of our vectors to ensure it's in range of an unsigned integer, then keep track
-of how much overshoot we need to correct for at the end.
+to help us out. Given two `int8` elements, <code>a<sub>n</sub></code> and <code>b<sub>n</sub></code>, we do the
+element-wise calculation as <code>a<sub>n</sub>* (b<sub>n</sub> + 128) - a<sub>n</sub> * 128</code>. The
+<code>a<sub>n</sub> * 128</code> term is the overshoot from adding 128 to bump <code>b<sub>n</sub></code> into `u8`
+range. We keep track of that separately and subtract it at the end. Each of the operations in that expression can be
+vectorized.
 
 <details>
 <summary>Full code for <code>DotVNNI</code></summary>
@@ -420,9 +429,6 @@ blockloop:
 	// to compensate by so we can subtract it from the sum at the end.
 	//
 	// Effectively, we are calculating SUM((Z3 + 128) · Z4) - 128 * SUM(Z4).
-    //
-    // The idea for this comes from this doc:
-    // https://www.intel.com/content/www/us/en/docs/onednn/developer-guide-reference/2023-0/nuances-of-int8-computations.html#DOXID-DEV-GUIDE-INT8-COMPUTATIONS-1DG-I8-COMP-S12
 
 	VPADDB Z3, Z2, Z3   // add 128 to Z3, making it unsigned
 	VPDPBUSD Z4, Z3, Z0 // Z0 += Z3 dot Z4
@@ -481,8 +487,7 @@ Well, I'm pretty happy with an 9.3x increase in throughput and a 4x reduction in
 here.
 
 The real life answer here is probably "use an index". There is a ton of good work out there focused on making nearest
-neighbor search fast, and there are plenty of batteries-included vector DBs that make it pretty easy to deploy. We're
-working towards migrating away from our hand-rolled solution so we can scale more cheaply.
+neighbor search fast, and there are plenty of batteries-included vector DBs that make it pretty easy to deploy. 
 
 _However_, if you want some fun food for thought, a colleague of built a proof-of-concept [dot product on the
 GPU](https://github.com/sourcegraph/sourcegraph/compare/main...nsc/embeddings-fun#diff-eed4a741ebe632c484dce236a3f4b1eee16e9a2bec6749003b3dbc41449c497c).
