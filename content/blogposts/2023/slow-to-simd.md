@@ -63,7 +63,7 @@ GCE VM. The code in this blog post can all be found in runnable form [here](http
 
 ## Loop unrolling
 
-Modern CPUs do this thing called [_instruction pipelining_](https://en.wikipedia.org/wiki/Instruction_pipelining) where
+Modern CPUs do this thing called [_instruction pipelining_](https://chadaustin.me/2009/02/latency-vs-throughput/) where
 it can run multiple instructions simultaneously if it finds no data dependencies between them. A data dependency just
 means that the input of one instruction depends on the output of another.
 
@@ -253,8 +253,10 @@ become irrelevant in the next section.
 I always love an excuse to play with SIMD. And this problem seemed like the perfect nail for that hammer.
 
 For those unfamiliar, SIMD stands for "Single Instruction Multiple Data". Just like it's says, it lets you run an
-operation over a bunch of pieces of data with a single instruction. As an example, to add two int32 vectors element-wise,
-we could add them together one by one with the ADD instruction and, with pipelining, get a throughput of 
+operation over a bunch of pieces of data with a single instruction. As an example, to add two `int32` vectors
+element-wise, we could add them together one by one with the `ADD` instruction and, or we can use the `VPADDD`
+instruction to add 64 pairs at a time with the [same](https://uops.info/html-instr/ADD_01_R32_R32.html)
+[latency](https://uops.info/html-instr/VPADDD_YMM_YMM_M256.html) (depending on the architecture).
 
 We have a problem though. Go does not expose SIMD intrinsics like
 [C](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html) or
