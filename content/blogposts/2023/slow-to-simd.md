@@ -250,6 +250,9 @@ become irrelevant in the next section.
 
 ## SIMD
 
+The speed improvements so far were nice, but still not enough for our largest customers. So we started dabbling with
+more dramatic approaches. 
+
 I always love an excuse to play with SIMD. And this problem seemed like the perfect nail for that hammer.
 
 For those unfamiliar, SIMD stands for "Single Instruction Multiple Data". Just like it's says, it lets you run an
