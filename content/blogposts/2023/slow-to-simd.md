@@ -128,7 +128,7 @@ func DotUnroll4(a, b []float32) float32 {
             panic("out of bounds")
         }
 		s2 := a[i+2] * b[i+2]
-        if i+3 >= cap(a) || >= cap(b) {
+        if i+3 >= cap(a) || i+3 >= cap(b) {
             panic("out of bounds")
         }
 		s3 := a[i+3] * b[i+3]
