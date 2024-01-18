@@ -491,7 +491,7 @@ here.
 The real life answer here is probably "use an index". There is a ton of good work out there focused on making nearest
 neighbor search fast, and there are plenty of batteries-included vector DBs that make it pretty easy to deploy. 
 
-_However_, if you want some fun food for thought, a colleague of built a proof-of-concept [dot product on the
+_However_, if you want some fun food for thought, a colleague of mine built a proof-of-concept [dot product on the
 GPU](https://github.com/sourcegraph/sourcegraph/compare/main...nsc/embeddings-fun#diff-eed4a741ebe632c484dce236a3f4b1eee16e9a2bec6749003b3dbc41449c497c).
 
 ## Bonus material
