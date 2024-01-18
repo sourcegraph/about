@@ -1,0 +1,29 @@
+.chart-container {
+    display: grid;
+    grid-template-columns: max-content auto;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.chart-container code.chart-text {
+    display: flex;
+    margin: 10px;
+    grid-column: 1;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.chart-bar {
+    grid-column: 2;
+    margin: 2px;
+    background-color: var(--sg-color-violet-200);
+}
+
+.chart-bar span {
+    display: flex;
+    margin: 8px;
+    text-align: left;
+    white-space: nowrap;
+}
