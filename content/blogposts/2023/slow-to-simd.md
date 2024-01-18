@@ -193,7 +193,7 @@ Exercise for the reader: why is it significant that we slice like `a[i:i+4:i+4]`
 ## Quantization
 
 We've improved single-core search throughput by ~50% at this point, but now we've hit a new bottleneck: memory usage.
-Our vectors 1536 dimensions. With 4-byte elements, this comes out to 6KiB per vector, and we generate roughly a million
+Our vectors are 1536 dimensions. With 4-byte elements, this comes out to 6KiB per vector, and we generate roughly a million
 vectors per GiB of code. That adds up quickly. We had a few customers come to us with some massive monorepos, and we
 wanted to reduce our memory usage so we can support those cases more cheaply.
 
