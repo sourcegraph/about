@@ -56,13 +56,13 @@ const events = {
 
 const expertsData = [
     {
-        name: 'Bilal Khan',
-        role: 'Backend Engineer',
-        image: '/community/bilal.jpeg',
+        name: 'Kynlo Akari',
+        role: 'Developer',
+        image: '/community/kynlo_akari.jpeg',
         links: {
-            discord: 'https://discord.com/users/809613951503040522',
-            github: 'https://github.com/ibilalkayy',
-            twitter: 'https://twitter.com/ibilalkayy',
+            discord: 'https://discord.com/users/937994994868957184',
+            github: 'https://github.com/Kynlos',
+            twitter: 'https://twitter.com/Kynlos',
         },
     },
     {
