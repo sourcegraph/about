@@ -4,7 +4,7 @@ authors:
   - name: Deepak Kumar
     url: https://twitter.com/deepakdk3478
   
-publishDate: 2024-01-09T10:00-07:00
+publishDate: 2024-01-18T10:00-07:00
 description: "Learn how to best leverage Cody in your React based applications."
 tags: [blog]
 slug: "top-5-tips-for-using-cody-with-react"
@@ -24,8 +24,8 @@ In this tutorial, we will build a React app that when given a keyword will gener
 1. [Node.js](https://nodejs.org/en) installed on your machine
 2. Basic knowledge of developing web apps using React
 3. TypeScript (optional)
-4. An OpenAI API key. 
-5. [Cody](https://docs.sourcegraph.com/cody/overview#getting-started) AI assitant installed in your editor. 
+4. An [OpenAI API key](https://platform.openai.com/docs/api-reference). 
+5. [Cody](https://sourcegraph.com/docs/cody#getting-started) AI assitant installed in your editor. 
 
 ## Cody Overview
 
