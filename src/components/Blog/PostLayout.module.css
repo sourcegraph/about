@@ -50,6 +50,7 @@
     background: var(--sg-color-gray-100);
     color: var(--sg-color-blue-500);
     border: 1px solid var(--sg-color-gray-200);
+    text-wrap: wrap;
 }
 
 .content blockquote {
