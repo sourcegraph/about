@@ -15,7 +15,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/og-top-5-tip
 
 <Alert type="secondary">This is a guest blog post from our community. <a href="https://discord.com/servers/sourcegraph-969688426372825169" target="_blank">Join our Discord</a> to meet the author and connect with other developers passionate about Code Search and AI!</Alert>
 
-React is a popular frontend library used for building fast interactive user interfaces. React is a common choice for most organizations in terms of a frontend library. Also, as different LLM models and ChatGPT are here, developers are using them a lot to answer coding questions and write some code. Taking into account how AI helps to boost the productivity of the software developer, many coding AI assistants have been developed, and [Cody](https://about.sourcegraph.com/cody) is one of them created by Sourcegraph. 
+React is a popular frontend library used for building interactive user interfaces. React is a common choice for many organizations. 
 
 In this tutorial, we will build a React app to generate Twitter tweet content using GPT-3 based on the given keyword. We will use Cody as our AI assistant, and learn about five tips to enhance our React development experience.
 
