@@ -29,7 +29,7 @@ In this tutorial, we will build a React app that when given a keyword will gener
 
 ## Cody Overview
 
-Cody is an coding AI assistant developed by Sourcegraph which has the complete context of your codebase, and can provide context aware answers. Cody has many features like chat to answer any questions, provide fast useful auto-completions, commands, inline-chat etc. In this tutorial, we will be using these features of Cody to help with our app effectively.
+Cody is a coding AI assistant developed by Sourcegraph which has the complete context of your codebase, and can provide context aware answers. Cody has many features like chat to answer any questions, provides usefel code completions (code autocomplete), commands, and more. In this tutorial, we will be using many of these features to help build our app effectively.
 
 ## Top 5 tips for using Cody with React
 
