@@ -303,4 +303,4 @@ You can also look at any function in detail using the prompt `/search {keyword}`
 
 ## Conclusion
 
-That's it for this blog. In the blog, we saw different tips about using Cody in the best way as a programming AI assistant. The tips mentioned here can be used with any projects. frameworks, libraries etc. Cody can help you code faster, improve your productivity and unlock new knowledge. To sum this up for best using Cody: Use a proper context with clear prompts to get a better response, and use commands effectively to make the most out of Cody as an AI assistant. 
+In the blog, we saw five different tips for using Cody as an code AI assistant for building React applications. The tips mentioned here can be used with any project, framework, or library. Cody can help you code faster, improve your productivity, and unlock new knowledge. Give [Cody](https://sourcegraph.com/cody) a try today!
