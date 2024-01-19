@@ -269,7 +269,7 @@ The last tip I would like to discuss is how to navigate any codebase faster with
 
 Let's see this with the [React](https://github.com/facebook/react) library codebase by Facebook, which we have used in this app. 
 
-Question 1: Tell me how the react library is implemented using the current codebase as the context.
+Question 1: Tell me how the React library is implemented using the current codebase as the context.
 
 <table>
   <tr>
