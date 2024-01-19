@@ -5,7 +5,7 @@ authors:
     url: https://twitter.com/deepakdk3478
   
 publishDate: 2024-01-09T10:00-07:00
-description: "In this blog, Deepak Kumar has shown how Cody uses the context by building an React application. He has also mentioned few tips of using Cody to get the best result."
+description: "Learn how to best leverage Cody in your React based applications."
 tags: [blog]
 slug: "top-5-tips-for-using-cody-with-react"
 published: true
