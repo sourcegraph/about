@@ -17,7 +17,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/og-top-5-tip
 
 React is a popular frontend library used for building interactive user interfaces. React is a common choice for many organizations. 
 
-In this tutorial, we will build a React app to generate Twitter tweet content using GPT-3 based on the given keyword. We will use Cody as our AI assistant, and learn about five tips to enhance our React development experience.
+In this tutorial, we will build a React app that when given a keyword will generate tweets using GPT-3 . We will use [Cody](https://sourcegraph.com/cody) as our AI assistant, and learn about five tips to enhance our React development experience with AI.
 
 ## Prerequisites
 
