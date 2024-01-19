@@ -40,7 +40,7 @@ The first tip while using Cody to keep in mind is always to provide the required
 Let's see a few examples of Cody's input prompt, how to provide enough context and build the search bar for our tweet generator app.
 
 The first question I asked Cody is: `I want to build a React app using GPT-4, which can generate the tweet content for me to post on Twitter. Tell me how to begin with this app and how I can develop it in the best possible way.`
-https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_1_1.jpg
+
 <table>
   <tr>
     <td><img src="https://github.com/deepak2431/cody-blogs/raw/react-cody-tip/blogs/assets/prompt_1_1.jpg" width="280" height="320" /></td>
