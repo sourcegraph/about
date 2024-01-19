@@ -27,7 +27,7 @@ In this tutorial, we will build a React app that when given a keyword will gener
 4. An [OpenAI API key](https://platform.openai.com/docs/api-reference). 
 5. [Cody](https://sourcegraph.com/docs/cody#getting-started) AI assitant installed in your editor. 
 
-## Cody Overview
+## Cody overview
 
 Cody is a coding AI assistant developed by Sourcegraph which has the complete context of your codebase, and can provide context aware answers. Cody has many features like chat to answer any questions, provides usefel code completions (code autocomplete), commands, and more. In this tutorial, we will be using many of these features to help build our app effectively.
 
