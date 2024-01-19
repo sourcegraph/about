@@ -263,7 +263,7 @@ Similarly, you can use the `/doc` command to add documentation to any components
 
 You can also use the `/edit` command, which we used before for TODO or the `/ask` command to understand how to resolve this. Cody is always there to help you with any coding task you need!
 
-### 5. Navigate Codebases Faster
+### 5. Navigate codebases faster
 
 The last tip I would like to discuss is how to navigate any codebases faster with Cody. Assume you developed this application and passed it to another team developer to work further on it. Now, how can the developer understand this codebase faster and get the answers to questions like the components used, how tweets are generated, rendered, etc? For all this, Cody is a saviour whenever you want to navigate new codebases or an existing one.
 
