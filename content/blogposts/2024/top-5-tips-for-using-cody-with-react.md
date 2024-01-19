@@ -277,7 +277,7 @@ Question 1: Tell me how the react library is implemented using the current codeb
   </tr>
  </table>
 
-You can see that Cody explained the React codebase in brief, as the structure of the repo and the algorithm this library uses.
+You can see that Cody explained the React codebase in brief, as well as the structure of the repo and the algorithms this library uses.
 
 Let's understand more about the DOM diffing algorithm.
 
