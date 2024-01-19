@@ -1,5 +1,5 @@
 ---
-title: "From Slow to SIMD: A Go Optimization Story"
+title: "From slow to SIMD: A Go optimization story"
 publishDate: 2024-01-17T19:00-07:00
 authors:
   - name: Camden Cheek
