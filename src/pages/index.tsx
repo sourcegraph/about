@@ -153,19 +153,19 @@ const Home: FunctionComponent = () => {
                                 <div className="flex ">
                                     <img
                                         className="mr-[10px] h-[40px] w-[40px]"
-                                        src="/home/reviews1.png"
+                                        src="/home/reviews1.svg"
                                         alt="Completions Brand Icon"
                                     />
                                     <div className="flex flex-col">
-                                        <p className="mb-0 text-base text-violet-500">Ronnie Magatti</p>
+                                        <p className="mb-0 text-base text-violet-500">Vito Baggiolini</p>
                                         <p className="mb-0 text-sm !-tracking-[0.25px] text-gray-500">
-                                            Team Lead & Principal Software Engineer, Neo Financial
+                                            Senior Software Engineer, CERN
                                         </p>
                                     </div>
                                 </div>
                                 <p className="mb-0 text-lg !-tracking-[0.25px] text-gray-700">
-                                    With Sourcegraph, developers are more productive and it’s clear that every team is
-                                    getting 1% better every day.
+                                    Sourcegraph is extremely valuable for what we do. It enables us to easily clean up
+                                    deprecated APIs and estimate the risks and costs of our API's evolution.
                                 </p>
                             </div>
                             <div className="flex flex-col gap-4 rounded-[10px] border-1 border-gray-200 bg-white p-5">
