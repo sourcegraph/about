@@ -225,3 +225,13 @@
   from = "/code-search/pricing"
   to = "/pricing"
 # ========== END INDIVIDUAL REDIRECTS ==========
+
+# ========== WHOLE SITE REDIRECT ==========
+
+[[redirects]]
+  from = "/*"
+  to = "https://sourcegraph.com/:splat"
+  status = 301
+  force = true
+
+# ========== END WHOLE SITE REDIRECT ==========
