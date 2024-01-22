@@ -9,11 +9,11 @@ import { buttonLocation, buttonStyle } from '../../data/tracking'
 export const CUSTOMER_STORIES = [
     [
         {
-            name: 'Neo Financial',
-            logo: '/external-logos/neo-financial.svg',
-            title: 'Neo Financial improves the developer experience with Sourcegraph.',
-            url: '/case-studies/neo-financial-improves-the-developer-experience-with-sourcegraph',
-            logoSize: 'w-[81px] h-[25px]',
+            name: 'Indeed',
+            logo: '/external-logos/indeed-logo.svg',
+            title: 'Indeed keeps code up to date and accelerates development velocity.',
+            url: '/case-studies/indeed-accelerates-development-velocity',
+            logoSize: 'w-[150.735px] h-[40.328px]',
         },
         {
             name: 'FactSet',
@@ -25,11 +25,10 @@ export const CUSTOMER_STORIES = [
     ],
     [
         {
-            name: 'Indeed',
-            logo: '/external-logos/indeed-logo.svg',
-            title: 'Indeed keeps code up to date and accelerates development velocity.',
-            url: '/case-studies/indeed-accelerates-development-velocity',
-            logoSize: 'w-[150.735px] h-[40.328px]',
+            name: 'HashiCorp',
+            logo: '/external-logos/hashicorp-logo.svg',
+            title: 'HashiCorp streamlines cross-repository code search and fixes with Sourcegraph.',
+            url: '/case-studies/hashicorp-uses-sourcegraph-to-streamline-cross-repository-code-search',
         },
         {
             name: 'CERN',
