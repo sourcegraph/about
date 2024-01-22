@@ -229,7 +229,7 @@
 # ========== WHOLE SITE REDIRECT ==========
 
 [[redirects]]
-  from = "https://about.sourcegraph.com/"
+  from = "https://deploy-preview-6698--sourcegraph.netlify.app"
   to = "https://sourcegraph.com/"
   status = 301
   force = true
