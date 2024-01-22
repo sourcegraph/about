@@ -24,7 +24,7 @@ export const BlogHeader: FunctionComponent<Props> = ({ title, belowTitle, baseUr
                 </Link>
             </Heading>
 
-            {belowTitle && <div className="mt-4">{belowTitle}</div>}
+            {belowTitle && <div className="mt-5">{belowTitle}</div>}
         </div>
     ) : (
         <nav className={classNames(className, 'my-sm')}>

@@ -26,16 +26,36 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
     contentClassName = '',
 }) => (
     <Tag className={className}>
-        <Heading as="h1" size="h2" className="!font-grotesk">
-            {frontmatter.title}
-        </Heading>
+        <div className="mt-12">
+            <Heading as="h1" size="h2" className="!font-grotesk">
+                {frontmatter.title}
+            </Heading>
+        </div>
 
         {(frontmatter.authors?.length || frontmatter.publishDate) && (
-            <BylineAndDate authors={frontmatter.authors} publishDate={frontmatter.publishDate} />
+            <div className="mt-4">
+                <BylineAndDate authors={frontmatter.authors} publishDate={frontmatter.publishDate} />
+            </div>
         )}
 
         {content && (
-            <div className={classNames('min-h-[60vh]', styles.content, contentClassName)}>
+            <div
+                className={classNames(
+                    'mt-12',
+                    'min-h-[60vh]',
+                    styles.content,
+                    contentClassName,
+                    'prose',
+                    'prose-a:text-blue-400',
+                    'prose-a:no-underline',
+                    'hover:prose-a:text-blue-300',
+                    'hover:prose-a:underline',
+                    'prose-img:rounded-lg',
+                    'prose-img:!mt-8',
+                    'prose-code:before:hidden',
+                    'prose-code:after:hidden'
+                )}
+            >
                 <MDXRemote {...content} components={components as PostComponents} lazy={true} />
             </div>
         )}
