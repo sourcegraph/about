@@ -229,8 +229,8 @@
 # ========== WHOLE SITE REDIRECT ==========
 
 [[redirects]]
-  from = "/*"
-  to = "https://sourcegraph.com/:splat"
+  from = "https://about.sourcegraph.com/"
+  to = "https://sourcegraph.com/"
   status = 301
   force = true
 
