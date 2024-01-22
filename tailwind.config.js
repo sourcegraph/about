@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 const plugin = require('tailwindcss/plugin')
+const typography = require('@tailwindcss/typography')
 
 const dlsColors = {
   white: '#ffffff',
@@ -211,6 +212,7 @@ module.exports = {
   },
 
   plugins: [
+    typography,
     plugin(({ addBase }) => {
       const extractColors = (colors, colorGroup = '') => {
         return Object.keys(colors).reduce((previousColors, colorKey) => {

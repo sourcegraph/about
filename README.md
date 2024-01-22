@@ -28,4 +28,4 @@ Ask in the [#marketing channel](https://app.slack.com/client/T02FSM7DL/CNC4YAL1E
 
 If blog posts aren't showing up:
 
-Run: `yarn build:cache`
+Run: `yarn build:cache` or `pnpm build:cache`
