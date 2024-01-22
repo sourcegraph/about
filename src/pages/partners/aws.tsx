@@ -68,18 +68,6 @@ const threeUpTextItems = [
 const caseStudies = [
     {
         heading: 'Case study',
-        title: 'Neo Financial improves the developer experience with Sourcegraph',
-        href: 'https://sourcegraph.com/case-studies/neo-financial-improves-the-developer-experience-with-sourcegraph',
-        description: (
-            <p>
-                Learn how Neo Financial attacts and retains top engineering talent by providing a culture, and tools
-                like Sourcegraph, that focus on improving the developer experience.
-            </p>
-        ),
-        imageSrc: '/aws/neo.svg',
-    },
-    {
-        heading: 'Case study',
         title: 'Workiva reduces the time it takes to make large-scale code changes',
         href: 'https://sourcegraph.com/case-studies/workiva-automates-large-scale-code-changes',
         description: (

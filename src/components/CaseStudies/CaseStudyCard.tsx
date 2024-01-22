@@ -24,12 +24,6 @@ export const CASESTUDIES: CaseStudy[] = [
         url: '/case-studies/how-sourcegraph-transformed-nine-development-workflow',
     },
     {
-        name: 'Neo Financial',
-        logo: '/external-logos/neo-financial.svg',
-        title: 'Neo Financial improves the developer experience with Sourcegraph.',
-        url: '/case-studies/neo-financial-improves-the-developer-experience-with-sourcegraph',
-    },
-    {
         name: 'HashiCorp',
         logo: '/external-logos/hashicorp-logo.svg',
         title: 'HashiCorp streamlines cross-repository code search and fixes with Sourcegraph.',
