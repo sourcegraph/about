@@ -4,6 +4,8 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
+console.log(process.env);
+
 const nextConfig = {
   productionBrowserSourceMaps: true,
   reactStrictMode: true,
@@ -33,6 +35,17 @@ const nextConfig = {
       }
     )
     return config
+  },
+  redirects() {
+    if(process.env.NODE_ENV === 'production') {
+      return [
+        {
+          source: '/:path*',
+          destination: 'https://sourcegraph.com/:path*',
+          permanent: true
+        }
+      ]
+    } else return []
   },
 }
 
