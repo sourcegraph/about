@@ -76,7 +76,7 @@ const caseStudies = [
                 updates by 80%.
             </p>
         ),
-        imageSrc: '/aws/workiva.svg',
+        imageSrc: '/assets/aws/workiva.svg',
     },
 ]
 
@@ -86,7 +86,7 @@ const AWS: FunctionComponent = () => (
         childrenClassName="sg-aws-mobile-bg-gradient md:sg-aws-bg-gradient"
         displayChildrenUnderNav={true}
         meta={{
-            image: 'https://sourcegraph.com/aws/sourcegraph_aws.png',
+            image: 'https://sourcegraph.com/assets/aws/sourcegraph_aws.png',
             title: 'AWS',
             description:
                 'Sourcegraph has built AMI’s tailored to perform best on AWS—while taking advantage of AWS’s world-class security and scalability',
@@ -118,7 +118,7 @@ const AWS: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <div className="absolute right-0 ml-9 hidden h-[500px] w-full bg-[url('/aws/hero_img.png')] bg-cover bg-center bg-no-repeat md:top-[110px] md:block md:w-[350px] lg:top-[191px] lg:w-[450px] xl:w-[500px]" />
+        <div className="absolute right-0 ml-9 hidden h-[500px] w-full bg-[url('/assets/aws/hero_img.png')] bg-cover bg-center bg-no-repeat md:top-[110px] md:block md:w-[350px] lg:top-[191px] lg:w-[450px] xl:w-[500px]" />
 
         <ThreeUpText
             items={threeUpTextItems}
