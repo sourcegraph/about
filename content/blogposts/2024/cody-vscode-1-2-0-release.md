@@ -90,7 +90,7 @@ Please continue [sending us feedback](https://github.com/sourcegraph/cody/issues
 
 ## Changelog
 
-See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v0.20.0) and [GitHub releases](https://github.com/sourcegraph/cody/releases) for a complete list of changes.
+See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.2.0) and [GitHub releases](https://github.com/sourcegraph/cody/releases) for a complete list of changes.
 
 
 ## Thank you
