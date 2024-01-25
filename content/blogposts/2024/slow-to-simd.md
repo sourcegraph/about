@@ -1,5 +1,5 @@
 ---
-title: "From Slow to SIMD: A Go Optimization Story"
+title: "From slow to SIMD: A Go optimization story"
 publishDate: 2024-01-17T19:00-07:00
 authors:
   - name: Camden Cheek
@@ -369,8 +369,8 @@ compared to the assembly snippets you usually find online. It has some weird qui
 instruction operands](https://www.quasilyte.dev/blog/post/go-asm-complementary-reference/#operands-order) or [using
 different names for instructions](https://www.quasilyte.dev/blog/post/go-asm-complementary-reference/#mnemonics). Some
 instructions don't even _have_ names in the go assembler and can only be used via their [binary
-encoding](https://go.dev/doc/asm#unsupported_opcodes). Shameless plug: I found sourcegraph.com invaluable for finding
-examples of Go assembly to draw from.
+encoding](https://go.dev/doc/asm#unsupported_opcodes). Shameless plug: I found
+[sourcegraph.com](https://sourcegraph.com/search) invaluable for finding examples of Go assembly to draw from.
 
 That said, compared to Cgo, there are some nice benefits. Debugging still works well, the assembly can be stepped
 through, and registers can be inspected using `delve`. There are no extra build steps (a C toolchain doesn't need to be

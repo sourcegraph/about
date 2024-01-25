@@ -42,7 +42,7 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
         <Layout meta={meta}>
             <article className="mx-auto mb-xl max-w-screen-xl px-sm">
                 <BlogHeader {...blogInfo} variant="post" />
-                <PostTemplate post={post} content={content} className="max-w-[840px]" />
+                <PostTemplate post={post} content={content} className="mx-auto max-w-[840px]" />
             </article>
 
             <DownloadAppCallToActionSection

@@ -3,7 +3,7 @@
 			/* Gif-like videos */
 			.content video[autoplay][loop][muted]:not([controls]) {
     width: 100%;
-    margin: 3rem auto 2rem auto;
+    /* margin: 3rem auto 2rem auto; */
     display: block;
     border-style: none;
     height: auto; /* Allow providing the media width and height as HTML attributes for aspect-ratio calculation to avoid layout shift */
@@ -63,9 +63,13 @@
     border: none;
 }
 
-.content p {
+/* .content p {
     line-height: 1.8;
     margin-bottom: 1.25rem;
+} */
+
+.content br {
+    display: none;
 }
 
 .content ul,

@@ -79,17 +79,6 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'Update to Neo Financial improves the developer experience with Sourcegraph',
-        link: '/case-studies/neo-financial-improves-the-developer-experience-with-sourcegraph',
-        contentType: 'customer story',
-        subjects: ['code search', 'code insights'],
-        description:
-            'Learn how Neo Financial attacts and retains top engineering talent by providing a culture, and tools like Sourcegraph, that focus on improving the developer experience.',
-        publishDate: '2023-06-16T17:32:24Z',
-        keyword: ['Neo', 'Neo FInancial', 'code search', 'code insights'],
-    },
-    {
-        featured: false,
         title: 'Sourcegraph for Platform Engineering',
         link: '/guide/Sourcegraph-for-platform-engineering.pdf',
         contentType: 'guide',

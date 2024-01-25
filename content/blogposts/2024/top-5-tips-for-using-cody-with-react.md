@@ -1,5 +1,5 @@
 ---
-title: "Top 5 Tips For Using Cody With React"
+title: "Top 5 tips for using Cody with React"
 authors:
   - name: Deepak Kumar
     url: https://twitter.com/deepakdk3478
@@ -27,13 +27,13 @@ In this tutorial, we will build a React app that when given a keyword will gener
 4. An [OpenAI API key](https://platform.openai.com/docs/api-reference). 
 5. [Cody](https://sourcegraph.com/docs/cody#getting-started) AI assitant installed in your editor. 
 
-## Cody Overview
+## Cody overview
 
 Cody is a coding AI assistant developed by Sourcegraph which has the complete context of your codebase, and can provide context aware answers. Cody has many features like chat to answer any questions, provides usefel code completions (code autocomplete), commands, and more. In this tutorial, we will be using many of these features to help build our app effectively.
 
 ## Top 5 tips for using Cody with React
 
-### 1. Add Enough Context
+### 1. Add enough context
 
 The first tip while using Cody to keep in mind is always to provide the required context, which is info about the coding question or the bug, to get a helpful response. Cody uses three types of context to give the result keyword context, graph context and the codebase context. Codebase context is used by Cody when the repository is indexed, while in another case, the keyword context is used. For this project, all of the responses provided by Cody will be using the keyword context.
 
@@ -136,7 +136,7 @@ const Home = () => {
 export default Home;
 ```
 
-### 2. Input Clear Prompts
+### 2. Input clear prompts
 
 The second tip is that whenever you use Cody, constantly input clear and concise prompts. Let's look into some example prompts that we will use with our app to make this clear. 
 

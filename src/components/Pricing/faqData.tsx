@@ -126,8 +126,7 @@ export const faqData: FAQData = {
             question: 'Does Cody use my code to improve the models used by other people?',
             answer: (
                 <p>
-                    No, for teams on Cody Pro and Cody Enterprise. In the future, we do expect to have the capability to use code from individual devs on Cody Free or Cody Pro to improve our models. 
-                    When this becomes available, you will be given an explicit choice of whether or not to participate.
+                    For Enterprise customers, Sourcegraph will not train on your company’s data. For Free and Pro tier users, Sourcegraph will not train on your data without your permission.
                 </p>
             ),
         },
