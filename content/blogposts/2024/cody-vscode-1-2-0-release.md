@@ -7,15 +7,15 @@ authors:
     url: https://handbook.sourcegraph.com/team/#justin-dorfman
   
 publishDate: 2024-01-25T10:00-01:00
-description: "The Cody for VS Code v1.2.0 update made several improvements to streamline your chat experience and enhance code editing efficiency."
+description: "Cody for VS Code v1.2.0 is now available and includes updated chat history navigation, redesigned chat message editing, improved chat context limit handling, and a number of other bug fixes and improvements."
 tags: [blog]
-slug: "cody-vscode-0-20-release"
+slug: "cody-vscode-1-2-0-release"
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/vscode-v1-2-0-blog/cody-vscode-1.2.0-og-image.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/vscode-v1-2-0-blog/cody-vscode-1.2.0-og-image.png
 ---
 
-We're thrilled to announce the release of Cody v1.2.0, our latest update to our VS Code extension. We made several improvements to streamline your chat experience and enhance code editing efficiency. 
+[Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v1.2.0 is now available and includes updated chat history navigation, redesigned chat message editing, improved chat context limit handling, and a number of other bug fixes and improvements.
 
 ## Chat: Updated chat list and a new history button
 
@@ -67,16 +67,14 @@ We’ve made several changes to the handling of the context window behind chats:
 * The context limit error-like notifications in chat have been removed while we investigate better ways of giving you visibility on what is included or excluded from context.
 
 
-## Clearer Edit action buttons
+## Edits: Relabeled action buttons
 
 The action buttons that appear after performing a Cody code edit have been relabeled to be clear, and “Edits Applied” is now called “Show Diff”:
-
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/vscode-v1-2-0-blog/image-003.png"
   alt="Cody v1.2.0: Clearer Edit action buttons"
 />
-
 
 ## Custom command (beta) updates
 
