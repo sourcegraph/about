@@ -32,9 +32,9 @@ const Home: FunctionComponent = () => {
     return (
         <Layout
             meta={{
-                title: 'Sourcegraph | Code AI platform',
+                title: 'Sourcegraph | Code Intelligence Platform',
                 description:
-                    'Sourcegraph’s code AI platform makes it easy for devs to write, fix, and maintain code with Cody, the AI coding assistant, and Code Search.',
+                    'Sourcegraph’s code intelligence platform makes it easy for devs to write, fix, and maintain code with Cody, the AI coding assistant, and Code Search.',
             }}
             heroAndHeaderClassName="home-hero"
             headerColorTheme="purple"
