@@ -108,7 +108,7 @@ Executing commands is a breeze with these options:
 
 - Type / in the chat box and select your desired command from the pop-up list.
 
-- Use ctrl+shift+v (cmd+shift+v on apple) anywhere in your document to open the Command Menu, and just like magic, you can select and run commands without the chat sidebar.
+- Use ctrl+shift+v (cmd+shift+v on macOS) anywhere in your document to open the Command Menu, and just like magic, you can select and run commands without the chat sidebar.
 
 - Right-click on selected code to open the Cody context menu and choose a command.
 
