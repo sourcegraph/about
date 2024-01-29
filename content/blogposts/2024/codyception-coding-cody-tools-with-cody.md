@@ -51,7 +51,7 @@ Gone are the days of being limited to the Recipes tab and submitting pull reques
 This would then be called in your editor with a slash command: `/implement-code-analytics-tracking`
 
 
-## Getting Started with Custom Commands ##
+## Getting Started with Custom Commands
 
 ![](http://cody.kynlo.co.uk/1.png)
 
@@ -62,7 +62,7 @@ To make your life (and mine) easier with getting started with Custom Commands, I
 Now, nobody is forcing you *hides the pool noodle* to use my little tool, and you are absolutely free to go create these manually!  There's [highly detailed documentation](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MzA1NQ==#custom-commands-194e6b3f-f682-475f-9c66-cfcc84d05c66) written by the amazing [beatrix](https://twitter.com/3eatrix), for those who want to dive even deeper into all of that beautiful behind-the-scenes code!
 
 
-## Examples of Time-Saving Commands ##
+## Examples of Time-Saving Commands
 
 ![](http://cody.kynlo.co.uk/2.png)
 
@@ -96,7 +96,7 @@ Now, nobody is forcing you *hides the pool noodle* to use my little tool, and yo
       }
 ```
 
-## The cody.json File: Tailoring Commands to Your Needs ##
+## The cody.json File: Tailoring Commands to Your Needs
 
 Customizing commands is made easy with the `cody.json` file. Here's how you can leverage it:
 
