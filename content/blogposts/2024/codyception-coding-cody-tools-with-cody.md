@@ -9,8 +9,8 @@ description: "This post with teach you how Custom Commands in Cody can simplify 
 tags: [blog]
 slug: "codyception-coding-cody-tools-with-cody"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/codyception-coding-cody-tools-with-cody-v3.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/codyception-coding-cody-tools-with-cody-v3.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/codyception-coding-cody-tools-with-cody-v4.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/codyception-coding-cody-tools-with-cody-v4.png
 ---
 
 <Alert type="secondary">This is a guest blog post from our community. <a href="https://discord.com/servers/sourcegraph-969688426372825169" target="_blank">Join our Discord</a> to meet the author and connect with other developers passionate about Code Search and AI!</Alert>
