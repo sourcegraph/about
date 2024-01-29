@@ -5,7 +5,7 @@ authors:
     url: https://twitter.com/Kynlos
   
 publishDate: 2024-01-29T10:00-07:00
-description: "This post with teach you how Custom Commands in Cody can simplify your coding process by automating repetitive tasks, saving time and effort. Kynlo guide you through how these commands make coding more efficient and manageable, transforming complex tasks into simple, one-click solutions."
+description: "This post with teach you how Custom Commands in Cody can simplify your coding process by automating repetitive tasks, saving you time and effort."
 tags: [blog]
 slug: "codyception-coding-cody-tools-with-cody"
 published: true
