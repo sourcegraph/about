@@ -54,18 +54,18 @@ This would then be called in your editor with a slash command: `/implement-code-
 
 ## Getting Started with Custom Commands
 
-![](http://cody.kynlo.co.uk/1.png)
+![](https://storage.googleapis.com/sourcegraph-assets/blog/codyception-coding-cody-tools-with-cody-001.png)
 
 To make your life (and mine) easier with getting started with Custom Commands, I [created a handy little tool](https://cody.kynlo.co.uk) for you to use that will generate these commands (which are structured in JSON) based on what you need them to do!
 
-![](http://cody.kynlo.co.uk/codykyn.png)
+![](https://storage.googleapis.com/sourcegraph-assets/blog/codyception-coding-cody-tools-with-cody-002.jpg)
 
 Now, nobody is forcing you *hides the pool noodle* to use my little tool, and you are absolutely free to go create these manually!  There's [highly detailed documentation](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MzA1NQ==#custom-commands-194e6b3f-f682-475f-9c66-cfcc84d05c66) written by the amazing [beatrix](https://twitter.com/3eatrix), for those who want to dive even deeper into all of that beautiful behind-the-scenes code!
 
 
 ## Examples of Time-Saving Commands
 
-![](http://cody.kynlo.co.uk/2.png)
+![](https://storage.googleapis.com/sourcegraph-assets/blog/codyception-coding-cody-tools-with-cody-003.png)
 
 ```json
     "implement-code-localization-support": {
