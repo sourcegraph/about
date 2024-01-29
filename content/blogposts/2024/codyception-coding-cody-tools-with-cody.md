@@ -116,7 +116,7 @@ Understanding the scope of your custom commands is essential:
 - `cody.json` in a project's `.vscode` folder: Commands are available only in that workspace.
 - `cody.json` in the home `.vscode` folder: Commands are available globally across all workspaces.
 
-This flexibility allows you to organize project-specific commands separately from reusable commands accessible globally, enhancing your customization capabilities with Cody.
+This flexibility allows you to organize project-specific commands separately from reusable commands which are accessible globally, enhancing your customization capabilities with Cody.
 
 ## Cody's custom commands syntax
 
