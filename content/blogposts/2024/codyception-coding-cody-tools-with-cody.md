@@ -131,7 +131,7 @@ Executing commands is a breeze with these options:
 
 - Search for >Cody: Commands Menu in your Command Palette to access the Command Menu.
 
-## How I created the commands for [Codyception](https://cody.kynlo.co.uk) with the help of Cody ##
+## How I created the commands for [Codyception](https://cody.kynlo.co.uk) with the help of Cody
 
 
 Alright, buckle up for the extended saga of how I thrust Codyception into the coding cosmos. Picture this: innocently pondering the idea of Cody creating commands for me. It all started with a simple thought, "Hey, wouldn't it be cool?" But like any curious coder, I couldn't resist pushing the boundaries. "Hmm, is there a limit to these commands before something breaks?" I wondered. Little did I know, the quest for limits would propel me into a coding odyssey of epic proportions.
