@@ -35,6 +35,14 @@ We’ve also added a new Chat History button at the top of your chat tabs, so yo
 
 A big thank you to [Deepak Kumar](https://github.com/deepak2431) for contributing to these changes!
 
+## Chat: Removal of slash commands in chat
+
+We have removed slash commands from the chat interface; however, they are still executable from the Cody sidebar, command palette, and context menu.
+
+This also means that typing '/' in chat no longer displays a list of commands.
+
+When executing a default command, you can see the underlying prompt instead of the command name. This enhancement offers improved visibility by allowing you to discern the underlying prompt when executing a default command. This increased visibility enables you to adjust the prompt using the new editing process.
+
 ## Chat: Redesigned chat editing
 
 We’ve updated the chat interface to make it easier to edit chat messages or start a new chat quickly:
