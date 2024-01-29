@@ -21,7 +21,7 @@ So, now that I've successfully confused half of you before I've even started, le
 
 ---
 
-### Friends, Coders, Netizens, lend me your snippets!
+## Friends, Coders, Netizens, lend me your snippets!
 
 
 To start with, let's delve into the significance of Custom Commands within the realm of programming and automation. These commands play a pivotal role by affording you the ability to define specific actions tailored to your precise needs. In more elementary terms, they act as a time-saving mechanism, sparing you considerable effort, especially in tasks characterized by repetition. Consider scenarios like utilizing Cody to insert specific types of comments, code editing, feature incorporation, or even language translation for entire files.  In even more simplistic terms, they let you make a button that does a thing, then you can click that button to do that thing an unlimited amount of times without having to type anything again!  Sound good? I bet it does...so let's talk about it in the context of our main man Cody.
