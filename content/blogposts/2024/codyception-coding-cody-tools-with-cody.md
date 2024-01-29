@@ -28,7 +28,7 @@ To start with, let's talk about the significance of Custom Commands within the r
 
 Cody makes it easy to create and integrate custom commands into your workflow.
 
-In essence, Custom Commands serve as the virtuosos of your coding orchestra, orchestrating intricate symphonies with finesse. As you navigate the coding landscape, allow these commands to be your skilful conductors, ensuring a harmonious and efficient coding experience. 
+In essence, Custom Commands serve as the virtuosos of your coding orchestra, ensuring a harmonious and efficient coding experience.
 
 Are you hungry for more details? Let's put away those cookbooks because we don't need recipes any more!
 
