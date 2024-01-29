@@ -107,7 +107,7 @@ Create `cody.json` in the `.vscode` directory of your project to make commands a
 
 ### Global commands:
 
-Create a new `cody.json` file in the `.vscode` directory of your home directory for commands accessible across multiple projects. Cody will be able to execute these global custom commands in any workspace.
+Create a new `cody.json` file in the `.vscode` directory of your home directory for commands accessible across multiple projects. Cody will have access to these global custom commands in any workspace.
 
 ### Workspace vs. User Commands
 
