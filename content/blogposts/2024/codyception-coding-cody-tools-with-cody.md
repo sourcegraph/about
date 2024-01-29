@@ -32,20 +32,21 @@ Think of Custom Commands as the helpful guides of your coding journey, leading i
 
 Are you hungry for more details? Let's put away those cookbooks because we don't need recipes any more!
 
-## **Evolving from Recipes to Commands** ##
+## Evolving from Recipes to Commands
 
 Gone are the days of being limited to the Recipes tab and submitting pull requests. With Commands, you can effortlessly create and execute reusable prompts without opening the Chat sidebar. This improvement streamlines your workflow and eliminates the need for pull requests, making the process much smoother.
 
-**An example command JSON that would sit comfortably in your cody.json file:**
+### An example command JSON that would sit comfortably in your cody.json file:
 
 ```json
-    "implement-code-analytics-tracking": { 
-      "description": "implement-code-analytics-tracking",
-      "prompt": "Implement code analytics and tracking features in the current project, providing insights into user behavior and system performance.",
+    "algorithm-analysis": {
+      "description": "algorithm-analysis",
+      "prompt": "Analyze and document the algorithms used in the code, detailing their efficiency and how they achieve their intended purpose.",
       "context": {
-        "codebase": true
+        "codebase": true,
+        "selection": true,
+        "currentFile": true
       }
-    }
 ```
 
 This would then be called in your editor with a slash command: `/implement-code-analytics-tracking`
