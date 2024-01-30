@@ -1,5 +1,5 @@
 ---
-title: "Codyception: coding Cody tools with Cody for coding With Cody"
+title: "Codyception: coding Cody tools with Cody for coding with Cody"
 authors:
   - name: Kynlo Akari
     url: https://twitter.com/Kynlos
