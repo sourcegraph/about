@@ -52,7 +52,7 @@ This would then be called in your editor with a slash command: `/implement-code-
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/codyception-coding-cody-tools-with-cody-001.png)
 
-To make your life (and mine) easier with getting started with Custom Commands, I [created a handy little tool](https://cody.kynlo.co.uk) for you to use that will generate these commands (which are structured in JSON) based on what you need them to do!
+You can [create Custom Commands](https://sourcegraph.com/docs/cody/capabilities/commands#custom-commands) directly in Visual Studio Code. But, to make your life easier with getting started with Custom Commands, I [created a handy little tool](https://cody.kynlo.co.uk) that you can use to generate custom commands!
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/codyception-coding-cody-tools-with-cody-002.png)
 
