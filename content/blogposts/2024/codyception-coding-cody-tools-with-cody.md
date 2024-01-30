@@ -128,7 +128,7 @@ Executing commands is a breeze with these options:
 
 Cody swiftly became my favorite AI Coding Assistant, thanks to the arsenal of available models, especially GPT-4 Turbo, and the stellar Cody Pro features. The fantastic team and vibrant community, especially on Discord, set Cody apart. Unmatched support and lightning-fast bug fixes and feature additions make Cody a coding gem.
 
-I hope this glimpse into Cody and the enchantment of Custom Commands sparks your curiosity. Now that you're deep into this post, you're probably itching to try these methods and commands yourself!
+I hope this glimpse into Cody and the enchantment of Custom Commands sparks your curiosity. Now that you're deep into this post, you're probably itching to try these methods and commands yourself! [Try Cody today](https://cody.dev) for yourself. 
 
 Finally, why not [join us on Discord](https://discord.com/servers/sourcegraph-969688426372825169) and share some of your creations with us!
 
