@@ -1,5 +1,5 @@
 ---
-title: "Codyception: Coding Cody Tools With Cody For Coding With Cody"
+title: "Codyception: coding Cody tools with Cody for coding With Cody"
 authors:
   - name: Kynlo Akari
     url: https://twitter.com/Kynlos
@@ -52,7 +52,7 @@ Gone are the days of being limited to the Recipes tab and submitting pull reques
 This would then be called in your editor with a slash command: `/implement-code-analytics-tracking`
 
 
-## Getting Started with Custom Commands
+## Getting started with Custom Commands
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/codyception-coding-cody-tools-with-cody-001.png)
 
@@ -63,7 +63,7 @@ To make your life (and mine) easier with getting started with Custom Commands, I
 Now, nobody is forcing you *hides the pool noodle* to use my little tool, and you are absolutely free to go create these manually!  There's [highly detailed documentation](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MzA1NQ==#custom-commands-194e6b3f-f682-475f-9c66-cfcc84d05c66) written by the amazing [beatrix](https://twitter.com/3eatrix), for those who want to dive even deeper into all of that beautiful behind-the-scenes code!
 
 
-## Examples of Time-Saving Commands
+## Examples of time-saving commands
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/codyception-coding-cody-tools-with-cody-003.png)
 
@@ -97,19 +97,19 @@ Now, nobody is forcing you *hides the pool noodle* to use my little tool, and yo
       }
 ```
 
-## The cody.json File: Tailoring Commands to Your Needs ##
+## The cody.json file: tailoring commands to your needs
 
 Customizing commands is made easy with the `cody.json` file. Here's how you can leverage it:
 
-### Project-Specific Commands:
+### Project-specific commands
 
 Create `cody.json` in the `.vscode` directory of your project to make commands accessible only in that workspace. Cody will execute these custom commands when working on the project.
 
-### Global commands:
+### Global commands
 
 Create a new `cody.json` file in the `.vscode` directory of your home directory for commands accessible across multiple projects. Cody will have access to these global custom commands in any workspace.
 
-### Workspace vs. User Commands
+### Workspace vs. user commands
 
 Understanding the scope of your custom commands is essential:
 
