@@ -118,8 +118,6 @@ Understanding the scope of your custom commands is essential:
 
 This flexibility allows you to organize project-specific commands separately from reusable commands which are accessible globally, enhancing your customization capabilities with Cody.
 
-## Cody's custom commands syntax
-
 ### Running commands made simple
 Executing commands is a breeze with these options:
 
@@ -131,29 +129,12 @@ Executing commands is a breeze with these options:
 
 - Search for >Cody: Commands Menu in your Command Palette to access the Command Menu.
 
-## How I created the commands for [Codyception](https://cody.kynlo.co.uk) with the help of Cody
-
-
-Alright, buckle up for the extended saga of how I thrust Codyception into the coding cosmos. Picture this: innocently pondering the idea of Cody creating commands for me. It all started with a simple thought, "Hey, wouldn't it be cool?" But like any curious coder, I couldn't resist pushing the boundaries. "Hmm, is there a limit to these commands before something breaks?" I wondered. Little did I know, the quest for limits would propel me into a coding odyssey of epic proportions.
-
-So, I let Cody off the leash, and the chaos ensued. It unleashed batches of commands with the fervor of a coding wizard on an espresso binge. Imagine giving a caffeinated robot control of your command center – that's the wild ride I signed up for. "Create more commands!" I hollered, and Cody obediently complied, blissfully ignorant of the impending command overload.
-
-Fast forward, and I found myself submerged in a sea of around 700 commands. Yes, seven hundred! I might have gone a bit overboard, but who's counting when you're knee-deep in the intricate world of Codyception?
-
-Releasing this chaotic creation to the coding community left me in awe of its absurdity. My coding sidekick evolved into an unexpectedly powerful command-generating juggernaut. Codyception surpassed my wildest expectations.
-
-Now, nursing a headache from the mental gymnastics of crafting a blog title, I reflect on this coding rollercoaster. It's like trying to juggle code snippets on a unicycle – challenging yet oddly exhilarating.
-
-Lesson learned: Unleashing Cody can lead to a coding adventure beyond reason. A little experimentation can spark an epic coding odyssey. A virtual coffee might be needed to recover from this rollercoaster, but hey, Codyception is out there, adding a dash of entertainment to coding.
-
-Speaking of Cody, this madness was powered by the formidable GPT-4 Turbo, and the cost in token usage could have been terrifying if not for the prowess of Cody Pro. If you haven't upgraded, do it – you won't regret it!
+## Conclusion
 
 Cody swiftly became my favorite AI Coding Assistant, thanks to the arsenal of available models, especially GPT-4 Turbo, and the stellar Cody Pro features. The fantastic team and vibrant community, especially on Discord, set Cody apart. Unmatched support and lightning-fast bug fixes and feature additions make Cody a coding gem.
 
 I hope this glimpse into Cody and the enchantment of Custom Commands sparks your curiosity. Now that you're deep into this post, you're probably itching to try these methods and commands yourself!
 
-Finally, why not join us on Discord and share some of your creations with us!
+Finally, why not [join us on Discord](https://discord.com/servers/sourcegraph-969688426372825169) and share some of your creations with us!
 
 With that, I bid you farewell!
-
-Until next time :)
