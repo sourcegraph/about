@@ -99,7 +99,7 @@ Customizing commands is made easy with the `cody.json` file. Here's how you can 
 
 ### Project-specific commands
 
-Create `cody.json` in the `.vscode` directory of your project to make commands accessible only in that workspace. Cody will execute these custom commands when working on the project.
+Create `cody.json` in the `.vscode` directory of your project to make commands accessible only in that workspace. Cody will have access to these custom commands when working on the project.
 
 ### Global commands
 
