@@ -44,7 +44,7 @@ With Commands, you can effortlessly create and execute reusable prompts without 
       }
 ```
 
-This would then be called in your editor with a slash command: `/implement-code-analytics-tracking`
+This would then be called in your editor with a slash command: `/algorithm-analysis`
 
 
 ## Getting started with Custom Commands
