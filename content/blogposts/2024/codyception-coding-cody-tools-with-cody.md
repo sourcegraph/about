@@ -30,7 +30,7 @@ Are you hungry for more details? Let's put away those cookbooks because we don't
 
 ## Using Commands with Cody
 
-Gone are the days of being limited to the Recipes tab and submitting pull requests. With Commands, you can effortlessly create and execute reusable prompts without opening the Chat sidebar. This improvement streamlines your workflow and eliminates the need for pull requests, making the process much smoother.
+With Commands, you can effortlessly create and execute reusable prompts without ever opening the Chat sidebar. This improvement streamlines your workflow and unlocks a new level of productivity.
 
 **An example command JSON that would sit comfortably in your cody.json file:**
 
