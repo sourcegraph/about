@@ -15,10 +15,6 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/codyception-
 
 <Alert type="secondary">This is a guest blog post from our community. <a href="https://discord.com/servers/sourcegraph-969688426372825169" target="_blank">Join our Discord</a> to meet the author and connect with other developers passionate about Code Search and AI!</Alert>
 
-OK, I'll admit it took me longer than it should to write that title without messing up, but here we are, there that is, and here we go!
-
-So, now that I've successfully confused half of you before I've even started, let's talk about Custom Commands with Cody.
-
 ---
 
 ## Friends, Coders, Netizens, lend me your snippets!
