@@ -7,7 +7,7 @@ import { Feed } from 'feed'
 import { getAllPublishedBlogPosts } from '../lib/api'
 
 const generateFeeds = async (): Promise<void> => {
-    const baseURL = 'https://about.sourcegraph.com'
+    const baseURL = 'https://sourcegraph.com'
 
     const feed = new Feed({
         title: 'Sourcegraph Blog',
