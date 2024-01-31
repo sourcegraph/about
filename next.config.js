@@ -33,18 +33,7 @@ const nextConfig = {
       }
     )
     return config
-  },
-  redirects() {
-    if(process.env.NODE_ENV === 'production') {
-      return [
-        {
-          source: '/:path*',
-          destination: 'https://sourcegraph.com/:path*',
-          permanent: true
-        }
-      ]
-    } else return []
-  },
+  }
 }
 
 module.exports = withBundleAnalyzer(nextConfig)
