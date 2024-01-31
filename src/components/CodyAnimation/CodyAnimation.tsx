@@ -21,7 +21,7 @@ const timingFrames = {
 const codes: string[] = [
     `// UpdateSubscriptionOptions describes a change to apply to a subscription
 // Any nil field will be left unchanged
-func UpdateSubscriptionOptions struct {
+type UpdateSubscriptionOptions struct {
   NewSeatCount         *int
   NewBillingInterval   *BillingInterval
   NewCancelAtPeriodEnd *bool
