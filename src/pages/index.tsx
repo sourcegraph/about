@@ -9,7 +9,7 @@ import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
 
-const carouselImages = [
+export const carouselImages = [
     { src: '/home/carousel/1password-logo.svg', className: 'w-[190px] h-[37px] mx-6' },
     { src: '/home/carousel/reddit-logo.svg', className: 'w-[120px] h-[41.311px] mx-6' },
     { src: '/home/carousel/databricks-logo.svg', className: 'w-[139px] h-[30px] mx-6' },
