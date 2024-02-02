@@ -74,7 +74,7 @@ export const CodeSearchPage: FunctionComponent = () => (
         className="bg-gray-50"
     >
         <div className="flex items-center py-10 lg:pb-16 lg:pt-24">
-            <InfiniteCarousel images={carouselImages} />
+            <InfiniteCarousel duration={100} images={carouselImages} />
         </div>
 
         <ContentSection className="lg:pl-6" parentClassName="lg:!py-24">
@@ -98,9 +98,9 @@ object-cover lg:h-[401px] lg:w-[577px]"
                 rightColumn={
                     <div>
                         <p className="color-[#0F111A] mb-4 text-lg font-semibold tracking-[3%]">CODE SEARCH</p>
-                        <h2 className="color-[#0F111A] mb-6 leading-10 tracking-[-1px]">
+                        <Heading size="h2" className="color-[#0F111A] mb-6 leading-10 tracking-[-1px]">
                             Find and fix code in any code host, language, or repository
-                        </h2>
+                        </Heading>
                         <ul className="mb-6 text-lg leading-[27px] tracking-[-0.25px] text-[#343A4D]">
                             <li className="mb-3">
                                 Onboard to new repositories and projects more quickly by searching and navigating code
@@ -117,7 +117,7 @@ object-cover lg:h-[401px] lg:w-[577px]"
                         </ul>
                         <Link
                             href="/pricing?product=codeSearch"
-                            className="flex gap-2.5 font-semibold leading-[22.4px] underline"
+                            className="flex gap-2.5 font-semibold leading-[22.4px] text-violet-500 underline"
                         >
                             Read how Nutanix used Code Search to mitigate Log4j vulnerabilities
                             <ChevronRightIcon />
@@ -133,9 +133,9 @@ object-cover lg:h-[401px] lg:w-[577px]"
                 leftColumn={
                     <div>
                         <p className="color-[#0F111A] mb-4 text-lg font-semibold tracking-[3%]">CODE NAVIGATION</p>
-                        <h2 className="color-[#0F111A] mb-6 leading-10 tracking-[-1px]">
+                        <Heading size="h2" className="color-[#0F111A] mb-6 leading-10 tracking-[-1px]">
                             Understand your code and its dependencies
-                        </h2>
+                        </Heading>
                         <ul className="mb-6 text-lg leading-[27px] tracking-[-0.25px] text-[#343A4D]">
                             <li className="mb-3">
                                 Onboard to codebases faster with cross-repository code navigation features like “Go to
@@ -188,9 +188,9 @@ object-cover lg:h-[324px] lg:w-[577px]"
                 rightColumn={
                     <div>
                         <p className="color-[#0F111A] mb-4 text-lg font-semibold tracking-[3%]">BATCH CHANGES</p>
-                        <h2 className="color-[#0F111A] mb-6 leading-10 tracking-[-1px]">
+                        <Heading size="h2" className="color-[#0F111A] mb-6 leading-10 tracking-[-1px]">
                             Automate large-scale code changes
-                        </h2>
+                        </Heading>
                         <ul className="mb-6 text-lg leading-[27px] tracking-[-0.25px] text-[#343A4D]">
                             <li className="mb-3">
                                 Find all occurrences of code to change with Code Search and programmatically those
@@ -204,7 +204,7 @@ object-cover lg:h-[324px] lg:w-[577px]"
 
                         <Link
                             href="/case-studies/indeed-accelerates-development-velocity"
-                            className="flex gap-2.5 font-semibold leading-[22.4px] underline"
+                            className="flex gap-2.5 font-semibold leading-[22.4px] text-violet-500 underline"
                         >
                             Read how Indeed uses Batch Changes to accelerate development
                             <ChevronRightIcon />
@@ -220,9 +220,9 @@ object-cover lg:h-[324px] lg:w-[577px]"
                 leftColumn={
                     <div>
                         <p className="color-[#0F111A] mb-4 text-lg font-semibold tracking-[3%]">CODE INSIGHTS</p>
-                        <h2 className="color-[#0F111A] mb-6 leading-10 tracking-[-1px]">
+                        <Heading size="h2" className="color-[#0F111A] mb-6 leading-10 tracking-[-1px]">
                             Track meaningful insights across your codebase
-                        </h2>
+                        </Heading>
                         <ul className="mb-6 text-lg leading-[27px] tracking-[-0.25px] text-[#343A4D]">
                             <li className="mb-3">
                                 Make data-driven decisions using visualizations based on the power and accuracy of
@@ -235,7 +235,7 @@ object-cover lg:h-[324px] lg:w-[577px]"
                         </ul>
                         <Link
                             href="/blog/announcing-code-insights"
-                            className="flex gap-2.5 font-semibold leading-[22.4px] underline"
+                            className="flex gap-2.5 font-semibold leading-[22.4px] text-violet-500 underline"
                         >
                             Learn more about Code Insights <ChevronRightIcon />
                         </Link>
@@ -268,7 +268,7 @@ object-cover lg:h-[324px] lg:w-[577px]"
                     {codeHosts.map(codeHost => (
                         <div className="flex items-center gap-x-4 py-4 px-6" key={codeHost.name}>
                             <img className="h-[50px] w-[50px]" src={codeHost.icon} alt={codeHost.name} />{' '}
-                            <Heading size="h4" className="!text-2xl text-gray-600">
+                            <Heading size="h3" className="!text-2xl text-gray-600">
                                 {codeHost.name}
                             </Heading>
                         </div>
@@ -286,7 +286,9 @@ object-cover lg:h-[324px] lg:w-[577px]"
                     >
                         <div className="mb-4 flex items-center">
                             <div className="mr-[10px] flex h-10 w-10 items-end justify-center rounded-full bg-gradient-to-b  from-[#CD76F1]  to-[#EE8EA1] pb-0.5">
-                                <h3 className="text-white">{testimonial.avatar}</h3>
+                                <Heading size="h3" className="text-white">
+                                    {testimonial.avatar}
+                                </Heading>
                             </div>
 
                             <div>
@@ -315,13 +317,15 @@ object-cover lg:h-[324px] lg:w-[577px]"
             parentClassName="!py-24"
             className="mx-auto flex flex-col gap-6 md:flex-row lg:pl-6"
         >
-            <div className="hover:cta-free-cody relative overflow-hidden rounded-2xl border border-gray-200 border-opacity-25 bg-violet-600 !px-14 py-16 md:w-1/2 md:p-16">
+            <div className="sg-bg-code-search-new-cta hover:cta-free-cody relative overflow-hidden rounded-2xl border border-gray-200 border-opacity-25 !px-14 py-16 md:w-1/2 md:p-16">
                 <div className="bg-grad absolute right-0 top-0 h-[3px] w-full flex-1 bg-gradient-to-r from-blue-300 via-violet-400 to-vermillion-300" />
-                <h2 className="text-5xl leading-10 tracking-[1px] text-white">Code Search Enterprise</h2>
-                <h3 className="py-4 text-xl leading-[30px] tracking-[-1px] text-white text-opacity-80">
+                <Heading size="h2" className="text-5xl leading-10 text-white">
+                    Code Search Enterprise
+                </Heading>
+                <Heading size="h3" className="py-4 text-xl leading-[30px] tracking-[-1px] text-white text-opacity-80">
                     Get Code Search for your team’s entire private codebase. Contact us to get started with a free
                     trial.
-                </h3>
+                </Heading>
                 <div className="flex max-w-[356px] flex-col flex-wrap gap-4 pt-4 sm:flex-row">
                     <Link
                         href="/contact/request-info"
@@ -343,11 +347,11 @@ object-cover lg:h-[324px] lg:w-[577px]"
                     Try our public Code Search environment
                 </Heading>
 
-                <h3 className="mt-4 text-[20px] leading-[30px] tracking-[-1.5px] text-gray-500">
+                <Heading size="h3" className="mt-4 text-[20px] leading-[30px] tracking-[-1.5px] text-gray-500">
                     See how Code Search works with our public search environment, offering the same search and
                     navigation features as Code Search Enterprise. Search an index of than 2 million public
                     repositories.
-                </h3>
+                </Heading>
                 <div className="mt-6 flex flex-col flex-wrap gap-4 md:flex-row md:gap-2">
                     <Link
                         href="https://sourcegraph.com/search"
@@ -364,21 +368,28 @@ object-cover lg:h-[324px] lg:w-[577px]"
 const CodeSearchHero: FunctionComponent = () => (
     <ContentSection className="flex items-center justify-center" parentClassName="!py-0">
         <div className="mx-auto flex flex-col items-center justify-center text-center">
-            <div className="mx-auto flex flex-col items-center pb-16 pt-8 md:w-[860px] md:pb-[63px] md:pt-16">
+            <div className="mx-auto flex flex-col items-center pb-16 pt-8 md:w-[828px] md:pb-[63px] md:pt-16">
                 <div className="mb-[8px] flex items-center justify-start gap-[8px]">
                     <div className="flex h-[41px] w-[41px] items-center justify-center rounded-xl border-2 border-[#F0F2F2] shadow-lg">
                         <img src="/codesearch-logomark-default.svg" alt="Cody Logo" className="h-6 w-6" />
                     </div>
-                    <h3 className="text-[32px] font-semibold leading-8 tracking-[-2px]">Code Search</h3>
+                    <Heading size="h3" className="font-sans text-[32px] font-semibold leading-8 !tracking-[-2px]">
+                        Code Search
+                    </Heading>
                 </div>
 
                 <div className="container mx-auto mb-6 grid gap-8 text-center">
-                    <h1 className="color-[#0F111A] pt-3xl tracking-[-1px] md:pt-0">Grok your entire codebase</h1>
+                    <Heading size="h1" className="color-[#0F111A] pt-3xl tracking-[-1px] md:pt-0">
+                        Grok your entire codebase
+                    </Heading>
                 </div>
-                <h3 className="mb-10 text-2xl font-normal leading-[30px] -tracking-[0.25px] text-[#343A4D] md:mb-8 md:px-6">
+                <Heading
+                    size="h3"
+                    className="mb-10 text-2xl font-normal leading-[30px] !-tracking-[0.25px] text-[#343A4D] md:mb-8 md:px-6"
+                >
                     Code Search makes it easy to find code, make large-scale changes, and track insights across
                     codebases of any scale and with any number of code hosts.
-                </h3>
+                </Heading>
                 <div className="mx-auto flex flex-col gap-[8px] rounded-[6px] sm:flex-row">
                     <Link href="/contact/request-info" className="btn btn-primary min-w-fit">
                         Contact us for a demo

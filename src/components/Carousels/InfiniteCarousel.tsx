@@ -117,12 +117,15 @@ const TickerAnimation: FC<InfiniteCarouselProps> = memo((props: InfiniteCarousel
 
 TickerAnimation.displayName = 'TickerAnimation'
 
-export const InfiniteCarousel: FC<{ images: { src: string; className?: string }[] }> = ({ images }) => {
+export const InfiniteCarousel: FC<{ images: { src: string; className?: string }[]; duration?: number }> = ({
+    images,
+    duration = 100,
+}) => {
     const duplicatedImages = [...images, ...images, ...images, ...images, ...images, ...images, ...images, ...images] // Duplicate images for seamless looping
 
     return (
         <>
-            <TickerAnimation duration={100}>
+            <TickerAnimation duration={duration}>
                 {duplicatedImages.map((img, index) => (
                     <div key={index} className={classNames('flex items-center justify-center', img.className)}>
                         <img src={img.src} alt={`slide-${index}`} className="h-auto w-full" />
