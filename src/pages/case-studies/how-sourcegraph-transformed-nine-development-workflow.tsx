@@ -4,8 +4,8 @@ import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
 import { Badge, Blockquote, CaseStudyCard, ContentSection, Heading, Hero, Layout } from '../../components'
-import { buttonLocation, buttonStyle } from '../../data/tracking'
 import SidebarCta from '../../components/Resources/SidebarCta'
+import { buttonLocation, buttonStyle } from '../../data/tracking'
 
 export const CUSTOMER_STORIES = [
     [
