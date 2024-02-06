@@ -35,7 +35,7 @@ const GitLabSolutionBrief: NextPage = () => {
                 </div>
 
                 <div className="mt-14 flex flex-col gap-10 md:flex-row">
-                    <div className="prose max-w-[80ch] prose-ul:ml-0">
+                    <div className="prose max-w-[80ch] prose-h2:font-semibold prose-ul:ml-0">
                         <p>
                             GitLab is the most comprehensive DevSecOps platform in the market today, offering a powerful
                             suite of products to help create secure software faster. To bring even more value to GitLab
