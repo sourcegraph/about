@@ -7,7 +7,7 @@ authors:
     url: https://handbook.sourcegraph.com/team/#justin-dorfman
   
 publishDate: 2024-02-07T10:00-01:00
-description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+description: "Cody for VS Code v1.4.0 is now available and includes a completely reworked Generate Unit Tests command, a new code editing menu, Ask Cody to Explain support for terminal output, easier access to Cody commands from chat, faster autocomplete, and more."
 tags: [blog]
 slug: "cody-vscode-1-4-0-release"
 published: true
