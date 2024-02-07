@@ -21,9 +21,12 @@ Cody for VS Code v1.4.0 is now available and includes a completely reworked Gene
 
 We’ve redeveloped the Generate Unit Tests command so instead of outputting the test code into chat it now uses the LLM to automatically find or generate the matching unit test file, and streams the result directly into the file. No more copy and pasting from chat.
 
-<Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-1.4.0/new-general-unit-test-command.gif"
-  alt="Cody v1.4.0: Generate Unit Tests: File creation"
+<Video
+  source={{
+    mp4: 'blog/cody-1.4.0/generate-unit-tests-file-creation-v3'
+  }}
+  loop={true}
+  title="Generate Unit Tests: File creation"
 />
 
 
