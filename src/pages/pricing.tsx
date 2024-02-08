@@ -4,6 +4,7 @@ import { FunctionComponent, useState, useEffect } from 'react'
 
 import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
+import InformationCircleOutlineIcon from 'mdi-react/InformationCircleOutlineIcon'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { MdOutlineTrendingUp } from 'react-icons/md'
@@ -16,24 +17,32 @@ import {
     FREE_FEATURES_OVERVIEW,
     PRO_FEATURES_OVERVIEW,
     ENTERPRISE_CODY_FEATURES_OVERVIEW,
-    ENTERPRISE_STARTER_FEATURES_OVERVIEW,
     ENTERPRISE_FEATURES_OVERVIEW,
     faqData,
     FAQItem,
+    Tooltip,
+    SPOTLIGHT_FEATURE_INFO,
+    FeatureCluster,
+    CODE_INTELLIGENCE_CE_FEATURES,
+    CODE_INTELLIGENCE_CSE_FEATURES,
+    Badge,
 } from '../components'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { buttonLocation, buttonStyle } from '../data/tracking'
 import { useWindowWidth } from '../hooks/windowWidth'
 
-const GetStartedButton: FunctionComponent<{ className?: string }> = ({ className }) => {
+const GetStartedButton: FunctionComponent<{ className?: string; title?: string }> = ({
+    className,
+    title = 'Get Cody free',
+}) => {
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (): void => openModal('pricing')
 
     return (
         <button
-            title="Get Cody free"
+            title={title}
             className={classNames(
                 'btn btn-default-outlined w-full border-violet-700 -tracking-[0.25px] text-violet-700 hover:border-violet-500 hover:bg-violet-500 hover:text-white',
                 className
@@ -41,24 +50,30 @@ const GetStartedButton: FunctionComponent<{ className?: string }> = ({ className
             type="button"
             onClick={handleOpenModal}
         >
-            Get Cody free
+            {title}
         </button>
     )
 }
 
-const GetProButton: FunctionComponent = () => {
+const GetProButton: FunctionComponent<{ className?: string; title?: string }> = ({
+    className,
+    title = 'Get Cody Pro',
+}) => {
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (): void => openModal('cody', 'pro')
     return (
         <button
-            title="Get Cody Pro"
-            className="btn btn-default-outlined flex w-full items-center justify-center gap-2 border-violet-600 bg-violet-500 -tracking-[0.25px] text-white"
+            title={title}
+            className={classNames(
+                'btn btn-default-outlined -mt-[8px] flex w-full items-center justify-center gap-2 border-violet-600 bg-violet-500 -tracking-[0.25px] text-white',
+                className
+            )}
             type="button"
             onClick={handleOpenModal}
         >
             <MdOutlineTrendingUp />
-            Get Cody Pro
+            {title}
         </button>
     )
 }
@@ -97,6 +112,12 @@ const PLAN_COLORS: Record<
     },
 }
 
+const TABS = [
+    { title: 'CODY', subtitle: 'AI coding assistant', key: 'cody' },
+    { title: 'CODE SEARCH', subtitle: 'Find, understand, & fix code', key: 'codeSearch' },
+    { title: 'CODE INTELLIGENCE PLATFORM', subtitle: 'Cody + Code Search', key: 'codeIntelligence' },
+]
+
 const Accordion: FunctionComponent<{
     question: string
     answer: React.ReactNode
@@ -112,7 +133,6 @@ const Accordion: FunctionComponent<{
     useEffect(() => {
         setIsOpen(false)
     }, [selectedOption])
-
     return (
         <div className="faq rounded-lg border border-gray-200 bg-white" key={index}>
             <button
@@ -148,6 +168,56 @@ const Accordion: FunctionComponent<{
     )
 }
 
+const CodeIntelFeatures: FunctionComponent<{ features: FeatureCluster[] }> = ({ features }) => (
+    <div className="ml-0">
+        {features.map(node => (
+            <div key={node.topic} className="border-0 bg-transparent px-0">
+                <div className={classNames('flex items-center pt-[10px] text-sm')}>
+                    <h5 className="mb-3 text-base font-semibold leading-5 -tracking-[0.25px]">{node.topic}</h5>
+                    {node.description && (
+                        <Tooltip
+                            wrapperClassName="my-auto ml-xxs text-gray-300 flex items-center text-sm"
+                            text={node.description}
+                            tooltipClassName="p-2"
+                        >
+                            <InformationCircleOutlineIcon size={18} />
+                        </Tooltip>
+                    )}
+                </div>
+                <ul className="ml-0 grid list-none gap-y-2 pb-[10px]">
+                    {node?.features?.map(nodeFeature => {
+                        const feature = SPOTLIGHT_FEATURE_INFO[nodeFeature]
+                        return (
+                            <li className="text-sm" key={nodeFeature}>
+                                <div className="flex items-center">
+                                    <div className="text-sm leading-[20px] text-[#343A4D]">{feature.label}</div>
+                                    {feature.badgeLabel && (
+                                        <Badge
+                                            text={feature.badgeLabel}
+                                            size="small"
+                                            className="ml-1 px-1 not-italic leading-3 text-gray-500"
+                                            color="light-gray"
+                                        />
+                                    )}
+                                    {feature.description && (
+                                        <Tooltip
+                                            wrapperClassName="my-auto ml-xxs text-gray-300 flex items-center"
+                                            tooltipClassName="p-2 z-20"
+                                            text={feature.description}
+                                        >
+                                            <InformationCircleOutlineIcon size={18} />
+                                        </Tooltip>
+                                    )}
+                                </div>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
+        ))}
+    </div>
+)
+
 const PricingPage: FunctionComponent = () => {
     const [selectedOption, setSelectedOption] = useState('cody')
     const windowWidth = useWindowWidth()
@@ -168,7 +238,6 @@ const PricingPage: FunctionComponent = () => {
         router.push(router)
         setSelectedOption(option)
     }
-
     return (
         <Layout
             meta={{
@@ -177,52 +246,37 @@ const PricingPage: FunctionComponent = () => {
                     'Pricing and plans for Sourcegraph Cody and Code Search. Get started with a free trial today.',
             }}
             hero={
-                <div className="container mx-auto grid gap-8 pb-2xl text-center md:py-3xl">
-                    <h1 className="pt-3xl md:pt-0">Pricing</h1>
-                </div>
+                <>
+                    <div className="container mx-auto grid gap-8 pb-2xl text-center md:py-3xl">
+                        <h1 className="pt-3xl md:pt-0">Pricing</h1>
+                    </div>
+                    <ContentSection className="mx-auto flex items-center" parentClassName="!py-0">
+                        <div className="rounded-[6px mx-auto  flex flex-col gap-[8px] shadow-sm md:flex-row">
+                            {TABS.map(tab => (
+                                <div key={tab.key} className="md:px-16">
+                                    <button
+                                        key={tab.key}
+                                        type="button"
+                                        className="btn !px-0 pt-[10px] pb-0 transition-all duration-700 ease-in-out"
+                                        onClick={() => chooseProduct(tab.key)}
+                                    >
+                                        <div className="grid grid-cols-1 justify-items-start gap-4 text-left">
+                                            <p className="mb-0 font-sans text-[19px] leading-[12px]">{tab.title}</p>
+                                            <p className="pb-2  text-xs font-normal leading-[9px] text-[#5E6E8C]">
+                                                {tab.subtitle}
+                                            </p>
+                                        </div>
+                                    </button>
+                                    {tab.key === selectedOption && <div className="plan-top-border !h-[2px]" />}
+                                </div>
+                            ))}
+                        </div>
+                    </ContentSection>
+                </>
             }
-            className="bg-gray-50"
+            // className="bg-gray-50"
+            childrenClassName="bg-gray-100 pt-0"
         >
-            <ContentSection className="mx-auto flex items-center pb-3xl" parentClassName="!py-0">
-                <div className="mx-auto flex  gap-[8px] rounded-[6px] bg-gray-200 p-1 shadow-sm">
-                    <button
-                        type="button"
-                        className={classNames(
-                            'btn flex items-center justify-items-center gap-[10px] px-6 py-[10px] transition-all duration-700 ease-in-out',
-                            selectedOption === 'cody' ? 'cody-btn-shadow bg-white' : 'bg-transparent shadow-none'
-                        )}
-                        onClick={() => chooseProduct('cody')}
-                    >
-                        <img src="/cody-logomark-default.svg" alt="Cody Logo" className="h-[22px] w-[24px]" />
-                        <div className="flex grid grid-cols-1 justify-items-start gap-2 text-left">
-                            <p className="mb-0 font-sans text-[19px] leading-[12px]">Cody</p>
-                            <p className="mb-0  text-xs font-normal leading-[9px] text-[#5E6E8C]">
-                                AI coding assistant
-                            </p>
-                        </div>
-                    </button>
-                    <button
-                        type="button"
-                        className={classNames(
-                            'btn flex items-center justify-items-center  gap-[10px] justify-self-end px-6 py-[10px] transition-all duration-700 ease-in-out',
-                            selectedOption === 'codeSearch' ? 'cody-btn-shadow bg-white' : 'bg-transparent shadow-none'
-                        )}
-                        onClick={() => chooseProduct('codeSearch')}
-                    >
-                        <img
-                            src="/codesearch-logomark-default.svg"
-                            alt="Cody Logo"
-                            className="h-[25.7px] w-[24.347px]"
-                        />
-                        <div className="flex grid grid-cols-1 justify-items-start gap-2">
-                            <p className="mb-0 font-sans text-[19px] leading-[12px]">Code Search</p>
-                            <p className="mb-0 text-xs font-normal leading-[9px] text-[#5E6E8C]">
-                                Find, understand, & fix code
-                            </p>
-                        </div>
-                    </button>
-                </div>
-            </ContentSection>
             <ContentSection className="mx-auto md:px-[80px]" parentClassName="!py-0 md:!px-0">
                 <div
                     className={classNames(
@@ -235,43 +289,45 @@ const PricingPage: FunctionComponent = () => {
                             <PricingPlan
                                 name={
                                     <div className="mb-2">
-                                        <p className="mb-0 text-2xl font-semibold">Free</p>
+                                        <p className="mb-0 text-[24px] font-semibold leading-[34px]">Free</p>
                                     </div>
                                 }
-                                description="Best for hobbyists"
+                                description="Best for hobbyists or light usage"
                                 price={
                                     <div className="flex flex-col p-2">
                                         <p className="mb-0 flex items-center">
                                             <span className="font-sans font-semibold leading-[43px] -tracking-[0.75px]">
-                                                Free
+                                                $0
                                             </span>
+                                        </p>
+                                        <p className="mb-0 text-[14px] font-normal leading-[19.88px]">
+                                            No credit card needed
                                         </p>
                                     </div>
                                 }
-                                buttons={<GetStartedButton />}
+                                buttons={<GetStartedButton title="Sign up for free" />}
                                 features={FREE_FEATURES_OVERVIEW}
                                 planClasses="md:my-6 md:pr-[30px] mt-6"
                             />
                             <PricingPlan
                                 name={<p className="mb-[13px]">Pro</p>}
-                                description="Best for professional devs and small teams"
+                                description="Best for pro devs and small teams"
                                 price={
-                                    <div className="flex flex-col p-2">
-                                        <p className="mb-0 flex items-center text-gray-300">
-                                            <span className="font-sans font-semibold leading-[43px] -tracking-[0.75px] text-gray-300 line-through">
+                                    <div className="flex flex-col p-2 pb-0">
+                                        <p className="mb-0">
+                                            <span className="font-sans text-[36px] font-semibold leading-[43px]">
                                                 $9
                                             </span>
-                                            <span className="ml-[10px] items-center text-sm font-normal leading-[19.99px] text-gray-300">
-                                                /month
+                                            <span className="ml-[10px] text-[18px] font-normal leading-[43px]">
+                                                per user/month
                                             </span>
                                         </p>
-                                        <p className="mb-0 text-base ">
-                                            Free until February 2024,
-                                            <span className="font-semibold"> no credit card needed</span>
+                                        <p className="leading[19.88px] mb-0 text-[14px] font-normal text-gray-600">
+                                            Billed monthly
                                         </p>
                                     </div>
                                 }
-                                buttons={<GetProButton />}
+                                buttons={<GetProButton title="Sign up for Cody Pro" />}
                                 features={PRO_FEATURES_OVERVIEW}
                                 planClasses={isMobile ? 'z-10 md:w-full' : 'z-10 md:w-[420px] md:my-3'}
                                 {...PLAN_COLORS.pro}
@@ -282,13 +338,23 @@ const PricingPage: FunctionComponent = () => {
                                         <p className="mb-0 text-2xl font-semibold">Enterprise</p>
                                     </div>
                                 }
-                                description="Best for large teams and enterprises"
-                                price=""
-                                priceDetail={<p className="my-2 text-lg font-normal">Coming Soon</p>}
+                                description="Best for teams and orgs"
+                                price={
+                                    <div className="flex flex-col p-2">
+                                        <p className="mb-0 items-center">
+                                            <span className="font-sans font-semibold leading-[43px] -tracking-[0.75px]">
+                                                $19
+                                            </span>
+                                            <span className="ml-[10px] text-[18px] font-normal leading-[43px]">
+                                                per user/month
+                                            </span>
+                                        </p>
+                                    </div>
+                                }
                                 buttons={
                                     <ContactUsButton
                                         href="https://sourcegraph.com/contact/request-info"
-                                        title="Request info"
+                                        title="Contact sales"
                                         className="border-violet-700 text-violet-700 hover:border-violet-500 hover:bg-violet-500 hover:text-white"
                                     />
                                 }
@@ -300,20 +366,26 @@ const PricingPage: FunctionComponent = () => {
                 </div>
                 <div
                     className={classNames(
-                        'transition-opacity duration-700 ease-in-out',
+                        'mt-10 transition-opacity duration-700 ease-in-out',
                         selectedOption === 'codeSearch' ? 'opacity-100' : 'opacity-0'
                     )}
                 >
                     {selectedOption === 'codeSearch' && (
-                        <div className="mx-auto grid max-w-[802px] grid-cols-1 gap-8 md:grid-cols-2 md:gap-0">
+                        <div className="mx-auto flex max-w-[802px] flex-col gap-6 md:flex-row">
                             <PricingPlan
-                                name={<p className="mb-2 text-2xl font-semibold">Enterprise starter</p>}
-                                description="Code search for teams and orgs"
+                                name={<p className="mb-2 text-2xl font-semibold">Enterprise</p>}
+                                description="For orgs needing additional integration, deployment, security, or support options"
                                 price={
-                                    <div className="flex flex-col py-2">
-                                        <span className="text-sm font-medium">Starts at</span>
-                                        <span className="font-semibold leading-[43px] -tracking-[0.75px]">$5k/yr</span>
-                                        <p className="mb-0 text-sm font-medium leading-[19.88px]">
+                                    <div className="flex flex-col p-2 pb-0">
+                                        <p className="mb-0">
+                                            <span className="font-sans font-semibold leading-[43px] -tracking-[0.75px]">
+                                                $49
+                                            </span>
+                                            <span className="ml-[10px] text-[18px] font-normal leading-[43px]">
+                                                per user/month
+                                            </span>
+                                        </p>
+                                        <p className="leading[19.88px] mb-0 text-[14px] font-normal text-gray-500">
                                             Scales with your team
                                         </p>
                                     </div>
@@ -321,42 +393,147 @@ const PricingPage: FunctionComponent = () => {
                                 buttons={
                                     <ContactUsButton
                                         href="/contact/request-info?form_submission_source=pricing-enterprise-starter"
-                                        title="Contact us"
-                                        className="border-violet-700 text-violet-700 hover:border-violet-500 hover:bg-violet-500 hover:text-white"
-                                    />
-                                }
-                                features={ENTERPRISE_STARTER_FEATURES_OVERVIEW}
-                                planClasses="md:mt-6 md:mb-[123px] md:rounded-l"
-                            />
-                            <PricingPlan
-                                name={<p className="mb-[13px]">Enterprise</p>}
-                                description="For orgs needing additional integration, deployment, security, or support options"
-                                price={
-                                    <div className="flex flex-col py-2">
-                                        <span className="text-sm font-medium">Starts at</span>
-                                        <span className="font-semibold leading-[43px] -tracking-[0.75px]">$50k/yr</span>
-                                        <p className="mb-0 text-sm font-medium leading-[19.88px]">
-                                            Scales with your team
-                                        </p>
-                                    </div>
-                                }
-                                buttons={
-                                    <ContactUsButton
-                                        title="Contact us"
-                                        href="/contact/request-info?form_submission_source=pricing-enterprise"
+                                        title="Contact sales"
                                         className="btn-default-outlined border-violet-600 bg-violet-500 text-white hover:bg-white hover:text-violet-500"
                                     />
                                 }
                                 features={ENTERPRISE_FEATURES_OVERVIEW}
-                                planClasses="md:w-[420px] md:-ml-[1px] md:mt-[6px]"
-                                {...PLAN_COLORS.enterprise}
+                                planClasses="rounded-2xl"
                             />
+                            <div className="bg-code-intel relative max-h-[422px] overflow-hidden rounded-2xl border-1 border-gray-200 md:max-h-[368px]">
+                                <div className="absolute right-20 top-2 mr-[-24px] mt-[-36px] flex h-[108px] w-[108px] items-center justify-center rounded-3xl bg-white">
+                                    <img
+                                        src="/cody-logomark-default.svg"
+                                        alt="Cody Logo"
+                                        className=" h-[56px] w-[54px]"
+                                    />
+                                </div>
+                                <div className="absolute top-12 -right-5 flex h-[108px] w-[108px] items-center justify-center rounded-3xl border-2 bg-white">
+                                    <img
+                                        src="/codesearch-logomark-default.svg"
+                                        alt="Cody Logo"
+                                        className="h-[56px] w-[54px]"
+                                    />
+                                </div>
+                                <div className="flex flex-col items-start justify-center gap-6 p-10">
+                                    <Heading className="!text-[52px] !leading-[62px] !-tracking-[1px]" size="h1">
+                                        Better together
+                                    </Heading>
+                                    <p className=" text-[24px] font-normal leading-[30px] tracking-[-0.25px] text-gray-500">
+                                        Unlock the full power of our Code Intelligence platform
+                                    </p>
+                                    <div className=" flex items-center justify-center">
+                                        <ContactUsButton
+                                            href="/contact/request-info?form_submission_source=pricing-enterprise-starter"
+                                            title="View platform bundle details"
+                                            className="btn-default-outlined border-violet-600 bg-violet-500 text-white"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </div>
+                <div
+                    className={classNames(
+                        'mt-10 transition-opacity duration-700 ease-in-out',
+                        selectedOption === 'codeIntelligence' ? 'opacity-100' : 'opacity-0'
+                    )}
+                >
+                    {selectedOption === 'codeIntelligence' && (
+                        <div className=" mx-auto flex max-w-[698px] flex-col">
+                            <div className="bg-code-intel rounded-2xl border border-gray-200 px-6 py-16 md:pt-12 md:pb-16 md:pr-10 md:pl-[41px]">
+                                <div className="flex flex-col gap-8">
+                                    <div className="grid grid-flow-col">
+                                        <div>
+                                            <Heading
+                                                size="h2"
+                                                className="mb-2 !text-[38px] !leading-[43.7px] !tracking-[-0.5px] !text-gray-700"
+                                            >
+                                                Code Intelligence Platform
+                                            </Heading>
+                                            <span className="flex border-b-1 pb-[24px] text-[16px] font-normal leading-5 -tracking-[0.25px] text-gray-700">
+                                                For teams with a minimum of 50 users
+                                            </span>
+                                            <span className="mt-sm mb-2 grid gap-[3px]">
+                                                <div className="flex items-center text-4xl">
+                                                    <div className="flex flex-col p-2">
+                                                        <p className="mb-0">
+                                                            <span className="font-sans font-semibold leading-[43px] -tracking-[0.75px]">
+                                                                $59
+                                                            </span>
+                                                            <span className="ml-[10px] text-[18px] font-normal leading-[43px]">
+                                                                per user/month
+                                                            </span>
+                                                        </p>
+                                                        <p className="leading[19.88px] mb-0 text-[14px] font-normal text-gray-500">
+                                                            Save $9/user when purchasing Cody and Code Search together
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                            <ContactUsButton
+                                                href="/contact/request-info?form_submission_source=pricing-enterprise-starter"
+                                                title="Contact sales"
+                                                className="btn w-fit border-violet-600 bg-violet-500 text-white"
+                                            />
+                                        </div>
+                                        <div className="relative right-24 -top-6 mr-[-24px] mt-[-36px] h-[189.25px] w-[204px] bg-[url('/backgrounds/grid.svg')] md:-top-0 md:-right-4">
+                                            <div className="absolute flex h-[116px] w-[116px] items-center justify-center rounded-3xl border-2 border-gray-200 bg-white">
+                                                <img
+                                                    src="/cody-logomark-default.svg"
+                                                    alt="Cody Logo"
+                                                    className=" h-[60px] w-[57px]"
+                                                />
+                                            </div>
+                                            <div className="absolute bottom-0 right-0 flex h-[116px] w-[116px] items-center justify-center rounded-3xl border-2 border-gray-200 bg-white">
+                                                <img
+                                                    src="/codesearch-logomark-default.svg"
+                                                    alt="Cody Logo"
+                                                    className="h-[60px] w-[57px]"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="h-[1px] bg-gray-200" />
+                                    <div className="transition-max-height max-h-[1240px] overflow-hidden duration-700 ease-in-out">
+                                        <div className="mx-auto flex flex-col gap-8 md:flex-row">
+                                            <div className="">
+                                                <span className="mb-8 text-[24px] font-[590] leading-[30px] tracking-[-0.25px]">
+                                                    Cody Entreprise
+                                                </span>
+                                                <p className="mt-2 pb-[18px] text-base font-normal leading-[27px] -tracking-[0.25px] text-gray-700">
+                                                    All features of <span className="underline"> Cody Enterprise</span>,
+                                                    including:
+                                                </p>
+                                                <CodeIntelFeatures features={CODE_INTELLIGENCE_CE_FEATURES} />
+                                            </div>
+                                            <div className="max-w-[67px]">
+                                                <span className="text-[24px] font-[508] italic leading-[30px] tracking-[-0.25px]">
+                                                    plus
+                                                </span>
+                                            </div>
+                                            <div className="">
+                                                <span className="mb-8 text-[24px] font-[590] leading-[30px] tracking-[-0.25px]">
+                                                    Code Search Entreprise
+                                                </span>
+                                                <p className="mt-2 pb-[18px] text-base font-normal leading-[27px] -tracking-[0.25px] text-gray-700">
+                                                    All features of{' '}
+                                                    <span className="underline"> Code Search Enterprise</span>,
+                                                    including:
+                                                </p>
+                                                <CodeIntelFeatures features={CODE_INTELLIGENCE_CSE_FEATURES} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     )}
                 </div>
             </ContentSection>
             <ContentSection
-                className="grid grid-cols-5 gap-[24px] pb-[96px] pt-24 md:px-[80px]"
+                className="grid grid-cols-5 gap-[24px] pt-2 md:px-[80px] md:pt-24 md:pb-[96px]"
                 parentClassName="!py-0 "
             >
                 <div className="col-span-full border-t-1 md:col-span-2">

@@ -19,8 +19,9 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag
         <div className="flex items-center">
             <div
                 className={classNames(
-                    'text-sm leading-[20px]',
-                    feature.label === 'Guardrails' || feature.label === 'Bring your own LLM' ? 'text-[#5E6E8C]' : 'text-[#343A4D]',
+                    feature.label === 'Guardrails' || feature.label === 'Bring your own LLM'
+                        ? 'text-[#5E6E8C]'
+                        : 'text-gray-500',
                     className
                 )}
             >
@@ -29,14 +30,6 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag
             {feature.label === 'Guardrails' && (
                 <Badge
                     text="coming soon"
-                    size="small"
-                    className="ml-1 px-1 not-italic leading-3 text-gray-500"
-                    color="light-gray"
-                />
-            )}
-            {feature.label === 'Bring your own LLM key' && (
-                <Badge
-                    text="experimental"
                     size="small"
                     className="ml-1 px-1 not-italic leading-3 text-gray-500"
                     color="light-gray"
