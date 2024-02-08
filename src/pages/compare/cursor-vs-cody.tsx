@@ -19,7 +19,7 @@ const featureSupport = [
         cody: true,
         cody_details: '',
         view_cody_details: false,
-        competitor: false,
+        competitor: true,
         competitor_details: '',
         view_competitor_details: false,
     },
@@ -265,15 +265,14 @@ const CompareCopilotPage: FunctionComponent = () => (
 
                 <p>
                     The main downside of Cursor being a fork of VS Code is that it is not available to use with other
-                    IDEs (such as the JetBrains family). Also, unlike Cody, Cursor does not presently offer code
-                    autocomplete.
+                    IDEs (such as the JetBrains family). 
                 </p>
 
                 <p>
                     <strong className="inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500">TL;DR:</strong>{' '}
                     Cursor is a good choice for users who are willing to migrate from their preferred IDE to Cursor. It
                     offers unique functionality and has strong codebase context features. However, Cody is a better
-                    option for users who want code autocomplete or who want their code AI to work within their IDE of
+                    option for users who want LLM choice or who want their code AI to work within their IDE of
                     choice.
                 </p>
             </CompareHero>
@@ -361,7 +360,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                     </tbody>
                 </table>
 
-                <p className="mt-1 text-sm text-gray-400">Last updated: 2023-12-06</p>
+                <p className="mt-1 text-sm text-gray-400">Last updated: 2024-02-08</p>
             </div>
         </div>
 

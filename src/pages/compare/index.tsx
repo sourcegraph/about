@@ -194,7 +194,7 @@ const ComparePage: FunctionComponent = () => (
                         Bring your own LLM key <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Autocomplete <MdClose className="h-6 w-6 fill-gray-200" />
+                        Autocomplete <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
                         Standalone app <MdCheck className="h-6 w-6 fill-violet-400" />
