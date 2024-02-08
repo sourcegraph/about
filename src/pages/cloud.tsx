@@ -3,10 +3,9 @@ import { FunctionComponent } from 'react'
 // import '@dotlottie/player-component';
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
-import { FaGitAlt, FaLocationArrow } from 'react-icons/fa'
-import { MdOutlineAvTimer, MdBarChart } from 'react-icons/md'
+import { MdOutlineSecurity, MdVpnKey, MdLock, MdDoNotDisturb } from 'react-icons/md'
 
-import { Layout, Hero, ContentSection, TwoColumnSection, Heading } from '../components'
+import { Layout, Hero, ContentSection, Heading } from '../components'
 import { breakpoints } from '../data/breakpoints'
 import { buttonLocation, buttonStyle } from '../data/tracking'
 import { useWindowWidth } from '../hooks/windowWidth'
@@ -83,7 +82,7 @@ const Cloud: FunctionComponent = () => {
                         <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
                     </Link>
                 </div>
-                <div className="flex gap-[42px]">
+                <div className="flex flex-wrap gap-[42px] md:flex-nowrap">
                     <img className="w-full" src="/enterprise/cern-logo.svg" alt="Cody Product logo" />
                     <img className="w-full" src="/enterprise/mercado-libre-logo.svg" alt="Cody Product logo" />
                     <img className="w-full" src="/enterprise/SoFi-logo.svg" alt="Cody Product logo" />
@@ -91,7 +90,7 @@ const Cloud: FunctionComponent = () => {
                     <img className="w-full" src="/enterprise/leidos-logo.svg" alt="Cody Product logo" />
                 </div>
             </ContentSection>
-            <ContentSection className="flex gap-6">
+            <ContentSection className="flex flex-col gap-6 md:flex-row">
                 <div className="px-10 py-16">
                     <Heading size="h2">Improve velocity with faster code discovery and understanding</Heading>
                     <p>
@@ -112,15 +111,14 @@ const Cloud: FunctionComponent = () => {
                     </p>
                 </div>
             </ContentSection>
-            <ContentSection className="relative mx-6 mb-8 flex h-auto gap-[19px]  overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:h-[329px]">
+            <ContentSection className="  mb-8 flex h-auto gap-[19px]  overflow-hidden rounded-2xl border-1 border-gray-200 bg-white  md:h-[301px]">
                 <div className="flex  flex-col py-16 pl-10">
                     <Heading size="h2" className="pb-4 pt-6">
                         Developers write code faster using Cody and the power of AI in their IDE
                     </Heading>
                 </div>
                 {!isMobile && (
-                    <div className="h-full w-full">
-                        <div className="autocomplete-gradient absolute z-0 h-[392.193px] w-[1087.411px]" />
+                    <div className="sg-developers relative relative z-10 h-full w-full">
                         <img
                             className=" relative h-full w-full"
                             src="/home/multiline-completion.svg"
@@ -129,7 +127,7 @@ const Cloud: FunctionComponent = () => {
                     </div>
                 )}
             </ContentSection>
-            <ContentSection className="flex gap-6 rounded-2xl border-1 border-gray-200 bg-white py-16 pl-16 pr-6 md:max-h-[784px]">
+            <ContentSection className="flex flex-col gap-6 rounded-2xl border-1 border-gray-200 bg-white py-16 pl-16 pr-6 md:max-h-[784px] md:flex-row">
                 <div className="flex flex-row items-end rounded-2xl border-1 border-gray-200 bg-gray-50 px-20 py-16">
                     <div className="flex flex-col">
                         <span className="text-sm text-gray-500">
@@ -143,17 +141,17 @@ const Cloud: FunctionComponent = () => {
                         </p>
                     </div>
                 </div>
-                <div className="">
+                <div className="relative">
                     <div className="px-10">
-                        <Heading size="h2">
+                        <Heading size="h2" className="mb-4">
                             Complete large-scale migrations and refactors in hours rather than days
                         </Heading>
-                        <p>
+                        <p className="mb-0 w-[349px]">
                             Perform organization-wide migrations and upgrades across every repository and code host with
                             Batch Changes, and track migration progress with Code Insights dashboards.
                         </p>
                     </div>
-                    <img src="enterprise/graph.svg" alt="graph" />
+                    <img src="enterprise/graph.svg" alt="graph" className="h-[470px] w-[558px]" />
                 </div>
             </ContentSection>
             <ContentSection className="flex gap-6">
@@ -207,8 +205,8 @@ const Cloud: FunctionComponent = () => {
                     </Link>
                 </div>
             </ContentSection>
-            <ContentSection className="flex flex-row justify-between  rounded-2xl border-1 border-gray-200 bg-white p-16">
-                <div className="w-[481px]">
+            <ContentSection className="flex flex-row justify-between overflow-hidden  rounded-2xl border-1 border-gray-200 bg-white px-16">
+                <div className="w-[481px] py-16">
                     <img
                         alt="language models brand"
                         className="mb-6"
@@ -222,25 +220,43 @@ const Cloud: FunctionComponent = () => {
                         all your code.
                     </p>
                 </div>
-                <div className="flex flex-row gap-[31.97px]">
-                    <div className="flex flex-col gap-[25px]">
-                        <img alt="" src="/enterprise/vs code.svg" />
-                        <img alt="" src="/enterprise/github.svg" />
-                        <img alt="" src="/enterprise/bitbucket.svg" />
+                <div className=" grid grid-cols-3 gap-[31.97px]">
+                    <div className="relative bottom-[24px] flex  flex-col gap-[25.21px]">
+                        <div className="flex h-[132px] w-[132px] justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100">
+                            <img alt="" src="/enterprise/vs code.svg" />
+                        </div>
+                        <div className="flex h-[132px] w-[132px] justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100">
+                            <img alt="" src="/enterprise/github.svg" />
+                        </div>
+                        <div className="flex h-[132px] w-[132px] justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100">
+                            <img alt="" src="/enterprise/bitbucket.svg" />
+                        </div>
                     </div>
-                    <div className="flex flex-col gap-[25px]">
-                        <img alt="" src="/enterprise/intellij.svg" />
-                        <img alt="" src="/enterprise/neovim.svg" />
-                        <img alt="" src="/enterprise/neovim2.svg" />
+                    <div className=" relative top-[24px] flex flex-col gap-[25px]">
+                        <div className="flex h-[132px] w-[132px] justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100">
+                            <img alt="" src="/enterprise/intellij.svg" />
+                        </div>
+                        <div className="flex h-[132px] w-[132px] justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100">
+                            <img alt="" src="/enterprise/neovim.svg" />
+                        </div>
+                        <div className="flex h-[132px] w-[132px] justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100">
+                            <img alt="" src="/enterprise/neovim2.svg" />
+                        </div>
                     </div>
-                    <div className="flex flex-col gap-[25px]">
-                        <img alt="" src="/enterprise/gerrit.svg" />
-                        <img alt="" src="/enterprise/gitlab.svg" />
-                        <img alt="" src="/enterprise/perforce.svg" />
+                    <div className="relative bottom-[24px] flex flex-col gap-[25px]">
+                        <div className="flex h-[132px] w-[132px] justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100">
+                            <img alt="" src="/enterprise/gerrit.svg" />
+                        </div>
+                        <div className="flex h-[132px] w-[132px] justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100">
+                            <img alt="" src="/enterprise/gitlab.svg" />
+                        </div>
+                        <div className="flex h-[132px] w-[132px] justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100">
+                            <img alt="" src="/enterprise/perforce.svg" />
+                        </div>
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection className="flex gap-6 bg-white">
+            <ContentSection className="grid grid-cols-2 gap-6">
                 <div className="rounded-2xl border-1 border-gray-200 bg-violet-700 py-16 px-20 text-white">
                     <span className="text-sm">
                         Satish Surapaneni
@@ -252,24 +268,36 @@ const Cloud: FunctionComponent = () => {
                         codebase, but it was difficult for them to see and understand other team members’ code.“
                     </p>
                 </div>
-                <div className="rounded-2xl border-1 border-gray-200 py-[71px] px-10">
-                    <Heading size="h6">cody</Heading>
-                    <Heading size="h2">Choose from your favorite Large Language Models</Heading>
-                    <p>
-                        Cody, Sourcegraph’s AI coding assistant, lets you choose from multiple LLM options including
-                        Anthropic Claude 2 and OpenAI GPT-4. You can even bring your own LLM key with Amazon Bedrock and
-                        Azure OpenAI.
-                    </p>
-                    <div className="flex">
-                        <img alt="" src="/enterprise/ai.svg" />
-                        <img alt="" src="/enterprise/open-ai.svg" />
-                        <img alt="" src="/enterprise/amazon-bedrock.svg" />
-                        <img alt="" src="/enterprise/microsoft-azure.svg" />
-                        <img alt="" src="/enterprise/ai.svg" />
+                <div className="relative flex h-[556px] flex-col overflow-hidden rounded-2xl border-1 border-gray-200  py-[71px]">
+                    <div className="flex flex-col gap-4 px-10">
+                        <Heading size="h6">cody</Heading>
+                        <Heading size="h2">Choose from your favorite Large Language Models</Heading>
+                        <p>
+                            Cody, Sourcegraph’s AI coding assistant, lets you choose from multiple LLM options including
+                            Anthropic Claude 2 and OpenAI GPT-4. You can even bring your own LLM key with Amazon Bedrock
+                            and Azure OpenAI.
+                        </p>
+                    </div>
+                    <div className="absolute bottom-[71px] -right-[100px]  flex w-[731px] gap-[21px]">
+                        <div className="flex h-[129.562px] w-[129.562px] items-center  justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100">
+                            <img alt="" src="/enterprise/ai.svg" className="h-[55.64px] w-[79.79px]" />
+                        </div>
+                        <div className="flex h-[129.562px] w-[129.562px] items-center justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100">
+                            <img alt="" src="/enterprise/open-ai.svg" className="h-[55.64px] w-[79.79px]" />
+                        </div>
+                        <div className="flex h-[129.562px] w-[129.562px] items-center  justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100">
+                            <img alt="" src="/enterprise/amazon-bedrock.svg" className="h-[55.64px] w-[79.79px]" />
+                        </div>
+                        <div className="flex h-[129.562px] w-[129.562px] items-center  justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100">
+                            <img alt="" src="/enterprise/microsoft-azure.svg" className="h-[55.64px] w-[79.79px]" />
+                        </div>
+                        <div className="flex h-[129.562px] w-[129.562px] items-center  justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100">
+                            <img alt="" src="/enterprise/ai.svg" className="h-[55.64px] w-[79.79px]" />
+                        </div>
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection className="flex flex-row justify-between rounded-2xl border-1 border-gray-200 bg-white  py-10 pr-10 pl-16">
+            <ContentSection className="flex flex-row justify-between overflow-hidden rounded-2xl border-1 border-gray-200 bg-white  py-10 pr-10 pl-16">
                 <div className="flex flex-col justify-center md:w-[532px]">
                     <img src="/enterprise/code-graph-brand-icon.svg" alt="" className="mb-6 w-[48px]" />
                     <Heading size="h1" className="mb-4">
@@ -279,20 +307,227 @@ const Cloud: FunctionComponent = () => {
                         Leverage AI at any scale. Sourcegraph supports the world's largest codebases.
                     </p>
                 </div>
-                <div className="flex flex-col gap-16 rounded-2xl border-1 border-gray-200 py-10 pl-10 pr-[89px] md:w-[477px]">
-                    <Heading size="h3">
-                        Customers run single-tenant Sourcegraph instances for codebases of epic size:
-                    </Heading>
-                    <div>
-                        <p className="text-[75px] font-semibold leading-[93.75px]">8+</p>
-                        <Heading size="h3">Terabytes of code @ finance industry customer</Heading>
-                    </div>
-                    <div>
-                        <p className="text-[75px] font-semibold leading-[93.75px]">100,000+</p>
-                        <Heading size="h3">Repositories @ finance industry customer</Heading>
+                <div className="sg-scalable relative z-10">
+                    <div className=" relative flex  flex-col gap-16 rounded-2xl border-1 border-gray-200 bg-white py-10 pl-10 pr-[89px]  md:w-[477px]">
+                        <Heading size="h3">
+                            Customers run single-tenant Sourcegraph instances for codebases of epic size:
+                        </Heading>
+                        <div>
+                            <p className="text-[75px] font-semibold leading-[93.75px]">8+</p>
+                            <Heading size="h3">Terabytes of code @ finance industry customer</Heading>
+                        </div>
+                        <div>
+                            <p className="text-[75px] font-semibold leading-[93.75px]">100,000+</p>
+                            <Heading size="h3">Repositories @ finance industry customer</Heading>
+                        </div>
                     </div>
                 </div>
             </ContentSection>
+            <ContentSection
+                parentClassName="!py-0"
+                className="flex flex-row gap-[160px] rounded-2xl border-1 bg-violet-700 py-16 px-20 text-white"
+            >
+                <div className="flex w-[511px] flex-col gap-[70px]">
+                    <img src="enterprise/nine.svg" className="w-[188px]" alt="" />
+                    <p className="mb-0">
+                        Nine’s Platform Engineering team saved hundreds of hours and thousands of dollars by using Code
+                        Search and Batch Changes for their CI/CD refactor.
+                    </p>
+                </div>
+                <div className="relative flex flex-col gap-16 md:w-[477px]">
+                    <div>
+                        <p className="mb-0 text-[75px] font-semibold leading-[93.75px]">$276K</p>
+                        <Heading size="h3">Engineering time saved</Heading>
+                    </div>
+                    <div>
+                        <p className="mb-0 text-[75px] font-semibold leading-[93.75px]">1,200 hours</p>
+                        <Heading size="h3">Estimated annual time savings</Heading>
+                    </div>
+                    <div>
+                        <Link
+                            href="https://sourcegraph.com/case-studies/how-sourcegraph-transformed-nine-development-workflow"
+                            title="Case study"
+                            className="btn mx-6 p-0 px-5 py-3 text-center font-semibold !-tracking-[0.25px] text-white md:mx-0  md:border-none md:px-0 md:pb-0 md:pt-0 md:text-left "
+                        >
+                            Read the case study
+                            <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
+                        </Link>
+                    </div>
+                </div>
+            </ContentSection>
+            <ContentSection className="flex flex-col gap-10 py-0" parentClassName="!py-0 !pt-[120px]">
+                <div className="flex flex-row gap-6">
+                    <div className="flex basis-1/3 flex-col gap-6 p-10">
+                        <img src="enterprise/security-brand-icon.svg" className="w-[51px]" alt="" />
+                        <Heading size="h1">Secure</Heading>
+                    </div>
+                    <div className="flex basis-1/3 flex-col gap-4 p-10">
+                        <Heading size="h4">Deployment options for every team</Heading>
+                        <p>
+                            Choose Sourcegraph Cloud, our single-tenant cloud solution, or self-host Sourcegraph in your
+                            preferred environment.
+                        </p>
+                    </div>
+                    <div className="flex basis-1/3 flex-col gap-4 p-10">
+                        <Heading size="h4">Admin usage analytics</Heading>
+                        <p>
+                            Admins can see anonymized, event-level usage analytics for each feature their teams are
+                            using.
+                        </p>
+                    </div>
+                </div>
+                <div className="flex flex-row">
+                    <div className="flex basis-1/3 flex-col gap-4 p-10">
+                        <Heading size="h4">Granular user permissions</Heading>
+                        <p>
+                            Sync repository permissions with GitHub, GitLab, Bitbucket Cloud, Gerrit, or Perforce.
+                            Alternatively, set your own custom, repository-level permissions.
+                        </p>
+                    </div>
+                    <div className="flex basis-1/3 flex-col gap-4 p-10">
+                        <Heading size="h4">Authentication with SAML and code host OAuth</Heading>
+                        <p>
+                            Admins can choose from multiple user authentication options, including SAML or OAuth via
+                            GitHub or GitLab.
+                        </p>
+                    </div>
+                    <div className="flex basis-1/3 flex-col gap-4 p-10">
+                        <Heading size="h4">SCIM user provisioning</Heading>
+                        <p>Provision and de-provision users with SCIM for Okta and Azure Active Directory.</p>
+                    </div>
+                </div>
+            </ContentSection>
+            <ContentSection className="flex flex-row gap-6">
+                <div className="!md:w-[417px] flex flex-col gap-16 rounded-2xl border-1 border-gray-200 py-16 px-20">
+                    <div>
+                        <p className=" mb-0 font-sans text-[57px] leading-[62px]">&lt;5 minutes</p>
+                        <Heading size="h3">Time to find and fix instances of a vulnerability</Heading>
+                    </div>
+                    <div>
+                        <p className="mb-0 font-sans text-[57px] leading-[62px]">&lt;4 days</p>
+                        <Heading size="h3">Time to deliver Log4j vulnerability patches to customers</Heading>
+                    </div>
+                </div>
+                <div className="flex flex-row items-end rounded-2xl border-1 border-gray-200 bg-white py-16 px-20 ">
+                    <div>
+                        <img src="enterprise/nutanix.svg" alt="" className="mb-6 w-[180px]" />
+                        <p className="mb-16">
+                            Nutanix was able to find every instance of Log4j vulnerabilities in their large codebase and
+                            ship codebase-wide fixes in less than a week
+                        </p>
+                        <div className="text-right">
+                            <Link
+                                href="https://sourcegraph.com/case-studies/how-sourcegraph-transformed-nine-development-workflow"
+                                title="Case study"
+                                className="btn flex-end mx-6 p-0 px-5 py-3  text-center text-right font-semibold !-tracking-[0.25px] text-violet-500 md:mx-0  md:border-none md:px-0 md:pb-0 md:pt-0 md:text-left "
+                            >
+                                Read the case study
+                                <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </ContentSection>
+            <ContentSection className="flex flex-col md:flex-row" parentClassName="!py-0 !pb-[96px]">
+                <div className="p-10">
+                    <img src="/security/soc2.svg" alt="" className="h-[60px] w-[60px]" />
+                    <Heading size="h4">SOC 2 Type 2 compliance</Heading>
+                    <p>
+                        Data privacy is a priority, and Sourcegraph has received a SOC 2 Type 2 report. See our
+                        <Link
+                            href="https://security.sourcegraph.com/"
+                            title="security portal"
+                            className="mx-[3px] text-black underline underline-offset-[3.55px] "
+                        >
+                            security portal
+                        </Link>
+                        for more information.
+                    </p>
+                </div>
+                <div className="p-10">
+                    <div className="flex flex-row gap-10">
+                        <img src="/security/gdpr.svg" alt="GDPR" className="h-[63px] w-[49px]" />
+                        <img src="/security/ccpa.svg" className="h-[62px] w-[62px]" alt="CCPA" />
+                    </div>
+                    <Heading size="h4">GDPR + CCPA</Heading>
+                    <p>
+                        Sourcegraph is compliant with the CCPA and operates in accordance with GDPR data protection
+                        regulations.
+                    </p>
+                </div>
+                <div className="p-10">
+                    <img src="/enterprise/notes.svg" alt="" className="h-[60px] w-[60px]" />
+                    <Heading size="h4">Audit logs</Heading>
+                    <p>Sourcegraph logs security and access events for security teams’ peace of mine.</p>
+                </div>
+            </ContentSection>
+            <ContentSection
+                className="rounded-2xl border-1 border-gray-200 bg-white py-16 px-10"
+                parentClassName="!py-0"
+            >
+                <Heading size="h6" className="mb-4">
+                    cody
+                </Heading>
+                <Heading size="h2" className="mb-10">
+                    Enterprise-grade AI security and governance
+                </Heading>
+                <div className="mb-6 grid grid-cols-3 gap-6 ">
+                    <div className="flex flex-col gap-4 rounded-2xl border-1 border-gray-200 py-10 px-8">
+                        <MdDoNotDisturb size={24} />
+                        <Heading size="h4">Zero retention</Heading>
+                        <p>
+                            Our provided LLMs do not retain data from your requests for longer than the time it takes to
+                            generate an output.
+                        </p>
+                    </div>
+                    <div className="flex flex-col gap-4 rounded-2xl border-1 border-gray-200 py-10 px-8">
+                        <MdVpnKey size={24} />
+                        <Heading size="h4">You retain ownership</Heading>
+                        <p>You retain ownership of all inputs and output generated by Cody.</p>
+                    </div>
+                    <div className="flex flex-col gap-4 rounded-2xl border-1 border-gray-200 py-10 px-8">
+                        <MdOutlineSecurity size={24} />
+                        <Heading size="h4">Uncapped indemnity</Heading>
+                        <p>
+                            We do not train models using data from Cody Enterprise users, so your code stays private to
+                            you.
+                        </p>
+                    </div>
+                </div>
+                <div className="grid grid-cols-3 gap-6">
+                    <div className=" col-span-2 flex flex-row justify-between rounded-2xl border-1 border-gray-200 ">
+                        <div className="">
+                            <div className="w-[411px]">
+                                <img alt="" src="/enterprise/screenshot.svg" className="w-full " />
+                            </div>
+                        </div>
+                        <div className=" py-10">
+                            <div className="!w-[311px]">
+                                <Heading size="h2">Guardrails to catch licensed code</Heading>
+                                <p className="mb-0">
+                                    Sourcegraph automatically checks AI suggestions against open source code and blocks
+                                    matches from being returned to users to prevent IP risk.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-6">
+                        <div className="flex flex-col gap-4 rounded-2xl border-1 border-gray-200 py-10 px-8">
+                            <MdLock size={24} />
+                            <Heading size="h4">No model training with your data</Heading>
+                            <p>
+                                We do not train models using data from Cody Enterprise users, so your code stays private
+                                to you.
+                            </p>
+                        </div>
+                        <div className="flex items-start gap-4 rounded-2xl border-1 border-gray-200 bg-gray-100 py-10 px-8">
+                            <img src="/enterprise/file-document-outline.svg" alt="" />
+                            <Heading size="h5">To learn more, read our Cody security & legal whitepaper</Heading>
+                        </div>
+                    </div>
+                </div>
+            </ContentSection>
+
             <ContentSection className="flex flex-col justify-between gap-6 rounded-2xl border-1 border-gray-200 bg-violet-700 py-16 px-[56px]">
                 <Heading size="h2" className="text-white">
                     Contact us for a demo or to start an enterprise trial
@@ -318,190 +553,6 @@ const Cloud: FunctionComponent = () => {
                     >
                         See Pricing
                     </Link>
-                </div>
-            </ContentSection>
-
-            {/* here */}
-            <ContentSection background="white" className=" md:pb-5xl" parentClassName="!py-0">
-                <div className="flex-row lg:flex">
-                    <h2 className="mb-10 max-w-3xl md:mr-6 md:min-w-[400px] md:pr-4 lg:basis-1/3">
-                        Get in flow with a private, fully-featured Sourcegraph instance
-                    </h2>
-
-                    <div className="max-w-full basis-2/3">
-                        <TwoColumnSection
-                            blockOnMdAndDown={true}
-                            className="!gap-y-8 md:!gap-x-6"
-                            leftColumn={
-                                <div>
-                                    <div className="mb-6 flex max-h-[48px] max-w-[48px] items-center rounded bg-violet-100 p-2.5 md:mb-5">
-                                        <FaGitAlt size={32} className="text-violet-400" />
-                                    </div>
-                                    <p className="m-0">
-                                        Search all your code, all in one place. Sourcegraph connects to any Git-based
-                                        code host so you can view your entire codebase in a single unified view.
-                                    </p>
-                                </div>
-                            }
-                            rightColumn={
-                                <div className="mb-8">
-                                    <div className="mb-6 flex max-h-[48px] max-w-[48px] items-center rounded bg-violet-100 p-2.5">
-                                        <FaLocationArrow size={32} className="p-1 text-violet-400" />
-                                    </div>
-                                    <p className="m-0">
-                                        Navigate your codebase with IDE-level code navigation that works across
-                                        repositories, so you can track references, definitions, and implementations with
-                                        perfect accuracy.
-                                    </p>
-                                </div>
-                            }
-                        />
-                        <TwoColumnSection
-                            blockOnMdAndDown={true}
-                            className="!gap-y-8  md:!gap-x-6"
-                            leftColumn={
-                                <div>
-                                    <div className="mb-6 flex max-h-[48px] max-w-[48px] items-center rounded bg-violet-100 p-2.5">
-                                        <MdOutlineAvTimer size={45} className="text-violet-400" />
-                                    </div>
-                                    <p className="m-0">
-                                        Fix and update code across your entire codebase in hours rather than weeks with{' '}
-                                        <Link href="/batch-changes" className="text-black underline">
-                                            Batch Changes
-                                        </Link>
-                                        .
-                                    </p>
-                                </div>
-                            }
-                            rightColumn={
-                                <div>
-                                    <div className="mb-6 flex max-h-[48px] max-w-[48px] items-center rounded bg-violet-100 p-2.5">
-                                        <MdBarChart size={32} className="text-violet-400" />
-                                    </div>
-                                    <p className="m-0">
-                                        Track migrations, measure goals, and visualize changes in your code with{' '}
-                                        <Link href="/code-insights" className="text-black underline">
-                                            Code Insights
-                                        </Link>
-                                        .
-                                    </p>
-                                </div>
-                            }
-                        />
-                    </div>
-                </div>
-            </ContentSection>
-
-            <ContentSection background="white" className="pt-16 md:py-4" parentClassName="!py-0">
-                <TwoColumnSection
-                    className="!gap-y-16 lg:!gap-x-16"
-                    leftColumn={
-                        <div className="mr-[38px] lg:mr-0">
-                            <h2>Start searching and stay in flow, no maintenance necessary</h2>
-                            <ul className="ml-0 mt-6 list-none lg:max-w-[590px]">
-                                <li>
-                                    Get a dedicated Sourcegraph Cloud instance with no manual deployment required.
-                                    Simply connect to your code hosts and start searching, navigating, and automating
-                                    your code.
-                                </li>
-                            </ul>
-                        </div>
-                    }
-                    rightColumn={
-                        <div className="mr-[38px] lg:mr-0">
-                            <h2>Reduce your total cost of ownership and increase time to value</h2>
-                            <ul className="ml-0 mt-6 list-none lg:max-w-[590px]">
-                                <li>
-                                    Spend less time maintaining your dev tools and more time shipping great code.
-                                    Upgrades and scaling are fully automated.
-                                </li>
-                            </ul>
-                        </div>
-                    }
-                />
-            </ContentSection>
-
-            <ContentSection background="white">
-                <TwoColumnSection
-                    reverseOnMobile={true}
-                    centerContent={true}
-                    className="!gap-y-[101px] lg:!gap-x-[83px]"
-                    leftColumn={
-                        <div className="flex justify-center">
-                            <span className="mt-[30px] h-px w-10 bg-gray-300 md:mt-[46px] md:w-20" />
-                            <div className="mx-[33px] text-center">
-                                <img src="/security/ccpa.svg" alt="CCPA badge" />
-                                <p className="mt-xxs mb-0 font-semibold text-gray-400">CCPA</p>
-                            </div>
-                            <div className="mr-[36.5px] text-center">
-                                <img src="/security/gdpr.svg" alt="GDPR badge" />
-                                <p className="mt-xxs mb-0 font-semibold text-gray-400">GDPR</p>
-                            </div>
-                            <div className="mr-[36.5px] text-center">
-                                <img src="/security/soc2.svg" alt="SOC2 Type 2 badge" />
-                                <p className="mt-xxs mb-0 font-semibold text-gray-400">SOC2 TYPE 2</p>
-                            </div>
-                            <span className="mt-[30px] h-px w-10 bg-gray-300 md:mt-[46px] md:w-20" />
-                        </div>
-                    }
-                    rightColumn={
-                        <>
-                            <h2>Safeguard your data with single-tenant, security-first instances</h2>
-                            <ul className="ml-md mt-sm">
-                                <li>
-                                    Feel secure: all instances are isolated and single-tenant, so you don’t have to
-                                    configure your own instance security.
-                                </li>
-
-                                <li>
-                                    Stay up-to-date and confident with automatic monthly upgrades, service SLAs, and
-                                    backup and restore capability.
-                                </li>
-
-                                <li>
-                                    Prioritize your data’s privacy: Sourcegraph Cloud has received a SOC 2 Type II
-                                    report. See our{' '}
-                                    <a
-                                        href="https://security.sourcegraph.com/"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        className="text-black underline"
-                                    >
-                                        security portal
-                                    </a>{' '}
-                                    for more information.
-                                </li>
-                            </ul>
-                        </>
-                    }
-                />
-            </ContentSection>
-
-            <ContentSection background="white" className="pt-[5px] md:pt-4 md:pb-28" parentClassName="!py-0 !px-0">
-                <div className="sg-bg-code-search-cta rounded-0 mx-auto flex w-full max-w-[941px] flex-col justify-between gap-x-8 bg-no-repeat py-16 px-6 shadow-cta md:items-center md:rounded-2xl md:bg-[lightgray] md:bg-[url('/code-search/cta-background.png')] md:bg-cover md:bg-right md:py-24 md:px-20 lg:flex-row">
-                    <div className="max-w-[516px] pb-8 lg:pb-0">
-                        <Heading size="h2" className="mb-6 !text-4xl text-white">
-                            Try Sourcegraph on your code
-                        </Heading>
-                        <p className="mb-0 max-w-2xl text-lg text-gray-200">
-                            Experience code intelligence with a free trial for you and your team, or search millions of
-                            open source repositories.
-                        </p>
-                    </div>
-                    <div className="flex w-full flex-col items-start justify-start gap-4 md:w-fit md:flex-row md:items-center md:justify-center lg:flex-col">
-                        <Link
-                            className="btn btn-inverted-primary min-w-fit bg-white px-6 text-center text-blurple-400 hover:bg-blurple-400 hover:text-white"
-                            href="/contact/request-info"
-                        >
-                            Start for free
-                        </Link>
-                        <Link
-                            className="btn btn-link min-w-fit px-0 text-center text-white hover:text-blurple-200  md:px-6 lg:px-4"
-                            href="/demo"
-                        >
-                            Meet with a product expert
-                        </Link>
-                    </div>
                 </div>
             </ContentSection>
         </Layout>
