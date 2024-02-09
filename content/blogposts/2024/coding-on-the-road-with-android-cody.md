@@ -1,5 +1,5 @@
 ---
-title: "Coding on the Road with Android and Cody"
+title: "Coding on the road with Android and Cody"
 authors:
   - name: Tino Wening
     url: https://twitter.com/PriNova75
@@ -97,21 +97,21 @@ With Cody by your side, you'll be coding Android apps like a pro, no matter wher
   caption="Codying on the beach"
 />
 
-## Bonus: Nomad Coding Hacks and Fun Facts
+## Bonus: Nomad coding hacks and fun facts
 
 Alright digital nomads, we've unlocked the secrets of coding on the go with Termux, VS Code Web, and Cody. But the adventure doesn't stop there! This bonus chapter is your one-stop shop for optimizing your nomadic coding experience and uncovering some fun facts to fuel your wanderlust.
 
-### Termux Tweaks for the Tech-Savvy Nomad
+### Termux tweaks for the tech-savvy Nomad
 
-* **Power Up Your Shell:** Don't settle for the default bash shell! Install zsh for a more customizable and powerful experience with plugins, themes, and autocompletion.
-* **Keyboard Ninja Moves:** Master essential keyboard shortcuts for faster navigation and editing. Learn to copy, paste, and yank like a pro!
-* **Remote Access:** Manage your Termux environment from anywhere! Set up SSH access to remotely connect and tinker with your code from another device.
+* **Power up your shell:** Don't settle for the default bash shell! Install zsh for a more customizable and powerful experience with plugins, themes, and autocompletion.
+* **Keyboard ninja moves:** Master essential keyboard shortcuts for faster navigation and editing. Learn to copy, paste, and yank like a pro!
+* **Remote access:** Manage your Termux environment from anywhere! Set up SSH access to remotely connect and tinker with your code from another device.
 
-### Fun Facts to Fuel Your Nomadic Coding Soul
+### Fun facts to fuel your Nomadic coding soul
 
-* **Digital Nomad Boom:** The number of digital nomads globally is expected to reach 1 billion by 2035! That's a whole lot of laptops on beaches (and hopefully, more Termux tablets!).
+* **Digital Nomad boom:** The number of digital nomads globally is expected to reach 1 billion by 2035! That's a whole lot of laptops on beaches (and hopefully, more Termux tablets!).
 * **Fastest Wi-Fi:** South Korea holds the crown for the world's fastest average internet speeds. Get your coding fix in Seoul's bustling cafes or serene temples.
-* **Digital Nomad Visa Paradise:** Estonia offers a special "digital nomad visa" for remote workers, making it a haven for location-independent coders. Imagine coding from a medieval town like Tallinn!
+* **Digital Nomad visa paradise:** Estonia offers a special "digital nomad visa" for remote workers, making it a haven for location-independent coders. Imagine coding from a medieval town like Tallinn!
 
 ---
 
