@@ -107,7 +107,7 @@ Alright digital nomads, we've unlocked the secrets of coding on the go with Term
 * **Keyboard Ninja Moves:** Master essential keyboard shortcuts for faster navigation and editing. Learn to copy, paste, and yank like a pro!
 * **Remote Access:** Manage your Termux environment from anywhere! Set up SSH access to remotely connect and tinker with your code from another device.
 
-**Fun Facts to Fuel Your Nomadic Coding Soul:**
+### Fun Facts to Fuel Your Nomadic Coding Soul
 
 * **Digital Nomad Boom:** The number of digital nomads globally is expected to reach 1 billion by 2035! That's a whole lot of laptops on beaches (and hopefully, more Termux tablets!).
 * **Fastest Wi-Fi:** South Korea holds the crown for the world's fastest average internet speeds. Get your coding fix in Seoul's bustling cafes or serene temples.
