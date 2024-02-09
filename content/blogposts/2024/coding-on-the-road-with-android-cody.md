@@ -88,7 +88,7 @@ Here's how Cody can help you build Android apps:
 
 The possibilities are endless, nomads! With Cody, you can build games, productivity apps, social media platforms – anything your nomadic heart desires. And you can do it all from the comfort of your hammock, beach towel, or even that questionable air mattress you found in a hostel in Laos.
 
-Remember, Cody's not here to replace you, he's here to empower you. Think of him as your coding partner, your AI cheerleader, your personal Yoda (minus the green skin and backwards talk). With Cody by your side, you'll be coding Android apps like a pro, no matter where your nomadic adventures take you.
+With Cody by your side, you'll be coding Android apps like a pro, no matter where your nomadic adventures take you.
 
 
 <Figure 
