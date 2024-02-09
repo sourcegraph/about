@@ -40,7 +40,7 @@ export const faqData: FAQData = {
                     </p>
                     <p>
                         Cody Pro is best for professional developers who want unlimited usage and
-                        context for larger codebases. Cody Pro is free until February 2024.
+                        context for larger codebases. 
                     </p>
                     <p>
                         Cody Enterprise is for organizations needing security, scalability, and control. It is coming
@@ -79,7 +79,7 @@ export const faqData: FAQData = {
             question: 'How can I pay for Cody Pro?',
             answer: (
                 <p>
-                    Cody Pro is free until February 2024. Prior to February 2024, users will be emailed and asked to
+                    Cody Pro is free until February 21, 2024. Prior to that date, users will be emailed and asked to
                     enter a credit card if they would like to continue using Cody Pro. If they choose not to enter a
                     credit card, their account will move to the Cody Free plan.
                 </p>
