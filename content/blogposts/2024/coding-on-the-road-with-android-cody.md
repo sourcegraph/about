@@ -21,7 +21,7 @@ Think of Termux as your secret Swiss Army knife for Android. It's a Linux shell 
 
 **But wait, there's more!** Termux isn't just a fancy terminal, it's your portal to a full-fledged coding environment. 
 
-Enter **VS Code, the lightweight code editor that's like your coding bestie.** Imagine VS Code, but shrunk down and living inside Termux, ready to party anywhere you go. Open it in any browser, on any device, and boom – instant coding paradise.
+Enter VS Code, the lightweight code editor that's like your coding bestie. Imagine VS Code, but shrunk down and living inside Termux, ready to party anywhere you go. Open it in any browser, on any device, and boom – instant coding paradise.
 
 **But the real magic spell comes with Cody.** Think of Cody as the Obi-Wan Kenobi to your coding Luke Skywalker. He autocompletes your code, suggests solutions, and even refactors your messy bits like a coding Yoda. No more staring blankly at the screen, Cody's got your back (and your code's future).
 
