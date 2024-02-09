@@ -17,7 +17,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-on-the-
 
 **Hey there, fellow Digital Nomads!** Craving that perfect blend of beachside cocktails and coding deadlines? Ever wished your hotel room came with a built-in IDE, not just a mini bar? Well, strap on your walking shoes and ditch the laptop, because we're about to unlock the secret to mobile coding freedom: Termux and Cody.
 
-**Think of Termux as your secret Swiss Army knife for Android.** It's a Linux shell disguised as an app, giving you access to a whole ecosystem of developer tools, right on your tablet. No more lugging around heavy laptops, just whip out your trusty tablet and get coding under that palm tree. 
+Think of Termux as your secret Swiss Army knife for Android. It's a Linux shell disguised as an app, giving you access to a whole ecosystem of developer tools, right on your tablet. No more lugging around heavy laptops, just whip out your trusty tablet and get coding under that palm tree. 
 
 **But wait, there's more!** Termux isn't just a fancy terminal, it's your portal to a full-fledged coding environment. 
 
