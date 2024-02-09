@@ -19,7 +19,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-on-the-
 
 Think of Termux as your secret Swiss Army knife for Android. It's a Linux shell disguised as an app, giving you access to a whole ecosystem of developer tools, right on your tablet. No more lugging around heavy laptops, just whip out your trusty tablet and get coding under that palm tree. 
 
-**But wait, there's more!** Termux isn't just a fancy terminal, it's your portal to a full-fledged coding environment. 
+But wait, there's more! Termux isn't just a fancy terminal, it's your portal to a full-fledged coding environment. 
 
 Enter VS Code, the lightweight code editor that's like your coding bestie. Imagine VS Code, but shrunk down and living inside Termux, ready to party anywhere you go. Open it in any browser, on any device, and boom – instant coding paradise.
 
