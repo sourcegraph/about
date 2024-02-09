@@ -97,7 +97,7 @@ With Cody by your side, you'll be coding Android apps like a pro, no matter wher
   caption="Codying on the beach"
 />
 
-Bonus: Nomad Coding Hacks and Fun Facts
+## Bonus: Nomad Coding Hacks and Fun Facts
 
 Alright digital nomads, we've unlocked the secrets of coding on the go with Termux, VS Code Web, and Cody. But the adventure doesn't stop there! This bonus chapter is your one-stop shop for optimizing your nomadic coding experience and uncovering some fun facts to fuel your wanderlust.
 
