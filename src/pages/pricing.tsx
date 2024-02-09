@@ -266,8 +266,7 @@ const PricingPage: FunctionComponent = () => {
                                             </span>
                                         </p>
                                         <p className="mb-0 text-base ">
-                                            Free until February 2024,
-                                            <span className="font-semibold"> no credit card needed</span>
+                                            Free until February 21, 2024
                                         </p>
                                     </div>
                                 }
