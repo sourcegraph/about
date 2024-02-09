@@ -9,14 +9,14 @@ import SidebarCta from '../../components/Resources/SidebarCta'
 const GitLabSolutionBrief: NextPage = () => {
     const message = 'hi'
     const meta = {
-        title: 'GitLab Solution Brief',
+        title: 'GitLab and Sourcegraph',
         // image,
         description:
             "Sourecgraph's native GitLab integration helps developer build better software by freeing them up to focus on complex problems.",
-        externalTitle: 'GitLab Solution Brief',
+        externalTitle: 'GitLab and Sourcegraph',
         externalDescription:
             "Sourecgraph's native GitLab integration helps developer build better software by freeing them up to focus on complex problems.",
-        canonical: 'https://sourcegraph.com/resources/gitlab-solution-brief',
+        canonical: 'https://sourcegraph.com/resources/gitlab-and-sourcegraph',
     }
 
     return (
