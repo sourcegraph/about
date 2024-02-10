@@ -37,7 +37,7 @@ With Termux, VS Code, and Cody, the world is your office, and every sunrise is a
 
 Alright, time to roll up our sleeves and get our hands dirty! We're about to transform your tablet into a coding powerhouse, and trust me, it's easier than wrangling a stubborn Wi-Fi hotspot.
 
-**First up, Termux, our trusty Linux in disguise.** Ditch the Google Play Store, we're going rogue with f-droid, the independent app haven. Here's the link, bookmark it like your grandma's secret cookie recipe: [Termux (F-Droid)](https://f-droid.org/en/packages/com.termux/) Just tap, install, and boom – instant Linux playground!
+First up, Termux. Ditch the Google Play Store, we're going rogue with f-droid, the independent app haven. Here's the link: [Termux (F-Droid)](https://f-droid.org/en/packages/com.termux/) Just tap, install, and boom – instant Linux playground!
 
 **Next up, VS Code Web.** It's like magic, but without the capes and weird spells. Just a few quick commands in Termux, and voila – you'll have a web-based coding playground ready to rock.
 
