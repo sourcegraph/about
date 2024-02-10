@@ -39,7 +39,7 @@ Alright, time to roll up our sleeves and get our hands dirty! We're about to tra
 
 First up, Termux. Ditch the Google Play Store, we're going rogue with f-droid, the independent app haven. Here's the link: [Termux (F-Droid)](https://f-droid.org/en/packages/com.termux/) Just tap, install, and boom – instant Linux playground!
 
-**Next up, VS Code Web.** It's like magic, but without the capes and weird spells. Just a few quick commands in Termux, and voila – you'll have a web-based coding playground ready to rock.
+Next up, VS Code Web. It's like magic, but without the capes and weird spells. Just a few quick commands in Termux, and voila – you'll have a web-based coding playground ready to rock.
 
 Here's the quick and dirty guide for the installation wizards among you:
 
