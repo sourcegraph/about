@@ -72,7 +72,7 @@ Finally, the pièce de résistance: Cody, your AI coding sidekick. Download the 
 
 ## Cody: Your AI-powered Copilot for Android Development
 
-Remember that moment when Luke Skywalker first met Obi-Wan Kenobi? That "whoah, this coding life just got a whole lot cooler" feeling? Well, Cody's basically his coding equivalent – your AI sidekick who elevates your Android development game to Jedi-level. No more staring blankly at the screen, struggling with syntax or logic. Cody's got your back (and your code's future).
+Remember that moment when Luke Skywalker first met Obi-Wan Kenobi? That "whoah, this coding life just got a whole lot cooler" feeling? Well, Cody's basically his coding equivalent – your AI sidekick who elevates your Android development game to Jedi-level. No more staring blankly at the screen, struggling with syntax or logic. Cody's got your back.
 
 **Building Android apps with Cody: From idea to app, Cody helps you write clean and efficient code.**
 
