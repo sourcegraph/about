@@ -33,7 +33,7 @@ But the real magic spell comes with Cody. Think of Cody as the Obi-Wan Kenobi to
 
 So, ditch the laptop blues and embrace the nomadic coding revolution. With Termux, VS Code, and Cody, the world is your office, and every sunrise is a new coding adventure. Ready to level up your mobile coding game? Buckle up, let's dive into the nitty-gritty!
 
-Unleashing Your Inner Coding Nomad - Installing Termux, VS Code Web, and Cody
+## Unleashing Your Inner Coding Nomad - Installing Termux, VS Code Web, and Cody
 
 Alright, code warriors, time to roll up our sleeves and get our hands dirty! We're about to transform your tablet into a coding powerhouse, and trust me, it's easier than wrangling a stubborn Wi-Fi hotspot.
 
