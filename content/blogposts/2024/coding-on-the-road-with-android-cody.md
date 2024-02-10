@@ -70,7 +70,7 @@ Open up your browser and navigate to [localhost:8080](http://127.0.0.1:8080) and
   caption="Screenshot of my tablet with Termux on the left and VS Code with Cody on the right"
 />
 
-Cody: Your AI-powered Copilot for Android Development
+## Cody: Your AI-powered Copilot for Android Development
 
 Remember that moment when Luke Skywalker first met Obi-Wan Kenobi? That "whoah, this coding life just got a whole lot cooler" feeling? Well, Cody's basically his coding equivalent – your AI sidekick who elevates your Android development game to Jedi-level. No more staring blankly at the screen, struggling with syntax or logic. Cody's got your back (and your code's future).
 
