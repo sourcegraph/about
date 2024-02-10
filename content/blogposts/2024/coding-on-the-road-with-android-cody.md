@@ -61,7 +61,7 @@ Now, unleash the coding beast with one final command: `code-server .`
 
 Open up your browser and navigate to [localhost:8080](http://127.0.0.1:8080) and **Boom!** You've officially got VS Code Web up and running, ready to code like there's no tomorrow even if you're coding on a beach in Bali. Visit the [coder docs](https://coder.com/docs/code-server/latest/termux#installation) for more information and issues.
 
-**Finally, the pièce de résistance: Cody, your AI coding sidekick.** Download the extension from within VS Code Web (it's like adding sprinkles to your coding sundae!), and get ready for some serious code-fu magic.
+Finally, the pièce de résistance: Cody, your AI coding sidekick. Download the extension from within VS Code Web extensions tab.
 
 
 <Figure 
