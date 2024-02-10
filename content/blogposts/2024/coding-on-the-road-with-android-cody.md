@@ -31,7 +31,7 @@ But the real magic spell comes with Cody. Think of Cody as the Obi-Wan Kenobi to
   caption="Cody as the Obi-Wan Kenobi "
 />
 
-So, ditch the laptop blues and embrace the nomadic coding revolution. With Termux, VS Code, and Cody, the world is your office, and every sunrise is a new coding adventure. Ready to level up your mobile coding game? Buckle up, let's dive into the nitty-gritty!
+With Termux, VS Code, and Cody, the world is your office, and every sunrise is a new coding adventure. Ready to level up your mobile coding game? Buckle up, let's dive into the nitty-gritty!
 
 ## Unleashing Your Inner Coding Nomad - Installing Termux, VS Code Web, and Cody
 
