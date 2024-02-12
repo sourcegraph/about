@@ -335,12 +335,8 @@ export const CodeSearchPage: FunctionComponent = () => {
                         trial.
                     </Heading>
                     <div className="flex max-w-[356px] flex-col flex-wrap gap-4 pt-4 sm:flex-row">
-                        <Link
-                            href="/contact/request-info"
-                            title="Get Cody for Enterprise"
-                            className="btn hover:bg-color-violet-600 w-full max-w-[175px] rounded-[5px] border border-white bg-white px-6 py-2 text-center text-violet-400 md:w-auto"
-                        >
-                            Request info
+                        <Link href="/demo" className="btn btn-primary">
+                            Contact us for a demo
                         </Link>
                         <Link
                             href="/pricing?product=codeSearch"
