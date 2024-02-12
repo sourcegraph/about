@@ -32,6 +32,19 @@ import { breakpoints } from '../data/breakpoints'
 import { buttonLocation, buttonStyle } from '../data/tracking'
 import { useWindowWidth } from '../hooks/windowWidth'
 
+interface Tab {
+    key: string
+    title: string
+    subtitle: string
+}
+
+interface Props {
+    tab: Tab
+    selectedOption: string
+    chooseProduct: (key: string) => void
+    className?: string
+}
+
 const GetStartedButton: FunctionComponent<{ className?: string; title?: string }> = ({
     className,
     title = 'Get Cody free',
@@ -221,7 +234,8 @@ const CodeIntelFeatures: FunctionComponent<{ features: FeatureCluster[] }> = ({ 
 const PricingPage: FunctionComponent = () => {
     const [selectedOption, setSelectedOption] = useState('cody')
     const windowWidth = useWindowWidth()
-    const isMobile = windowWidth < breakpoints.lg
+    const isMobile = windowWidth < breakpoints.md
+    const isMedium = windowWidth < breakpoints.lg
     const router = useRouter()
     const faqDataToRender: FAQItem[] = faqData[selectedOption] || []
 
@@ -247,34 +261,36 @@ const PricingPage: FunctionComponent = () => {
             }}
             hero={
                 <>
-                    <div className="container mx-auto grid gap-8 pb-2xl text-center md:py-3xl">
-                        <h1 className="pt-3xl md:pt-0">Pricing</h1>
+                    <div className="container mx-auto grid pb-[62px] pt-3xl text-center">
+                        <h1 className="text-[52px] font-semibold leading-[62px] -tracking-[1px]">Pricing</h1>
                     </div>
-                    <ContentSection className="mx-auto flex items-center" parentClassName="!py-0">
-                        <div className="rounded-[6px mx-auto  flex flex-col gap-[8px] shadow-sm md:flex-row">
-                            {TABS.map(tab => (
-                                <div key={tab.key} className="md:px-16">
-                                    <button
-                                        key={tab.key}
-                                        type="button"
-                                        className="btn !px-0 pt-[10px] pb-0 transition-all duration-700 ease-in-out"
-                                        onClick={() => chooseProduct(tab.key)}
-                                    >
-                                        <div className="grid grid-cols-1 justify-items-start gap-4 text-left">
-                                            <p className="mb-0 font-sans text-[19px] leading-[12px]">{tab.title}</p>
-                                            <p className="pb-2  text-xs font-normal leading-[9px] text-[#5E6E8C]">
-                                                {tab.subtitle}
-                                            </p>
-                                        </div>
-                                    </button>
-                                    {tab.key === selectedOption && <div className="plan-top-border !h-[2px]" />}
-                                </div>
-                            ))}
+                    <ContentSection className="flex items-center" parentClassName="!py-0">
+                        <div className="mx-auto grid grid-cols-2 gap-x-16 gap-y-8 rounded-[6px] shadow-sm md:grid-cols-3">
+                            {isMobile
+                                ? [
+                                      ...TABS.filter(tab => tab.key === selectedOption),
+                                      ...TABS.filter(tab => tab.key !== selectedOption),
+                                  ].map((tab, index) => (
+                                      <TabComponent
+                                          key={tab.key}
+                                          tab={tab}
+                                          selectedOption={selectedOption}
+                                          chooseProduct={chooseProduct}
+                                          className={classNames(`col-span-${index === 0 ? '2' : '1'}`)}
+                                      />
+                                  ))
+                                : TABS.map(tab => (
+                                      <TabComponent
+                                          key={tab.key}
+                                          tab={tab}
+                                          selectedOption={selectedOption}
+                                          chooseProduct={chooseProduct}
+                                      />
+                                  ))}
                         </div>
                     </ContentSection>
                 </>
             }
-            // className="bg-gray-50"
             childrenClassName="bg-gray-100 pt-0"
         >
             <ContentSection className="mx-auto md:px-[80px]" parentClassName="!py-0 md:!px-0">
@@ -285,82 +301,117 @@ const PricingPage: FunctionComponent = () => {
                     )}
                 >
                     {selectedOption === 'cody' && (
-                        <div className="flex grid grid-cols-1 items-center items-stretch justify-center  gap-8 md:grid-cols-3 md:justify-items-center md:gap-0">
-                            <PricingPlan
-                                name={
-                                    <div className="mb-2">
-                                        <p className="mb-0 text-[24px] font-semibold leading-[34px]">Free</p>
+                        <div className="flex flex-col gap-4">
+                            <div className="flex grid grid-cols-1 items-center items-stretch justify-center  gap-8 md:grid-cols-3 md:justify-items-center md:gap-0">
+                                <PricingPlan
+                                    name={
+                                        <div className="mb-2">
+                                            <p className="mb-0 text-[24px] font-semibold leading-[34px]">Free</p>
+                                        </div>
+                                    }
+                                    description="Best for hobbyists or light usage"
+                                    price={
+                                        <div className="flex flex-col p-2">
+                                            <p className="mb-0 flex items-center">
+                                                <span className="font-sans font-semibold leading-[43px] -tracking-[0.75px]">
+                                                    $0
+                                                </span>
+                                            </p>
+                                            <p className="mb-0 text-[14px] font-normal leading-[19.88px]">
+                                                No credit card needed
+                                            </p>
+                                        </div>
+                                    }
+                                    buttons={<GetStartedButton title="Sign up for free" />}
+                                    features={FREE_FEATURES_OVERVIEW}
+                                    planClasses="md:my-6 md:pr-[30px] mt-6"
+                                />
+                                <PricingPlan
+                                    name={<p className="mb-[13px]">Pro</p>}
+                                    description="Best for pro devs and small teams"
+                                    price={
+                                        <div className="flex flex-col p-2 pb-0">
+                                            <p className="mb-0">
+                                                <span className="font-sans text-[36px] font-semibold leading-[43px]">
+                                                    $9
+                                                </span>
+                                                <span className="ml-[10px] text-[18px] font-normal leading-[43px]">
+                                                    per user/month
+                                                </span>
+                                            </p>
+                                            <p className="leading[19.88px] mb-0 text-[14px] font-normal text-gray-600">
+                                                Billed monthly
+                                            </p>
+                                        </div>
+                                    }
+                                    buttons={<GetProButton title="Sign up for Cody Pro" />}
+                                    features={PRO_FEATURES_OVERVIEW}
+                                    planClasses={isMobile ? 'z-10 md:w-full' : 'z-10 md:w-[420px] md:my-3'}
+                                    {...PLAN_COLORS.pro}
+                                />
+                                <PricingPlan
+                                    name={
+                                        <div className="mb-2 flex flex-row items-center gap-4">
+                                            <p className="mb-0 text-2xl font-semibold">Enterprise</p>
+                                        </div>
+                                    }
+                                    description="Best for teams and orgs"
+                                    price={
+                                        <div className="flex flex-col p-2">
+                                            <p className="mb-0 items-center">
+                                                <span className="font-sans font-semibold leading-[43px] -tracking-[0.75px]">
+                                                    $19
+                                                </span>
+                                                <span className="ml-[10px] text-[18px] font-normal leading-[43px]">
+                                                    per user/month
+                                                </span>
+                                            </p>
+                                        </div>
+                                    }
+                                    buttons={
+                                        <ContactUsButton
+                                            href="https://sourcegraph.com/contact/request-info"
+                                            title="Contact sales"
+                                            className="border-violet-700 text-violet-700 hover:border-violet-500 hover:bg-violet-500 hover:text-white"
+                                        />
+                                    }
+                                    features={ENTERPRISE_CODY_FEATURES_OVERVIEW}
+                                    planClasses="md:my-6 z-5 md:pl-[30px]"
+                                />
+                            </div>
+                            <div className="bg-code-intel flex flex-row flex-wrap justify-between rounded-2xl border-1 border-gray-200 p-6 md:p-12">
+                                <div className="flex flex-col items-start justify-center">
+                                    <Heading className="!text-[52px] !leading-[62px] !-tracking-[1px]" size="h1">
+                                        Better together
+                                    </Heading>
+                                    <p className=" text-[24px] font-normal leading-[30px] tracking-[-0.25px] text-gray-500">
+                                        Unlock the full power of our Code Intelligence platform
+                                    </p>
+                                    <div className=" flex items-center justify-center">
+                                        <ContactUsButton
+                                            href="/contact/request-info?form_submission_source=pricing-enterprise-starter"
+                                            title="View platform bundle details"
+                                            className="btn-default-outlined border-violet-600 bg-violet-500 text-white"
+                                        />
                                     </div>
-                                }
-                                description="Best for hobbyists or light usage"
-                                price={
-                                    <div className="flex flex-col p-2">
-                                        <p className="mb-0 flex items-center">
-                                            <span className="font-sans font-semibold leading-[43px] -tracking-[0.75px]">
-                                                $0
-                                            </span>
-                                        </p>
-                                        <p className="mb-0 text-[14px] font-normal leading-[19.88px]">
-                                            No credit card needed
-                                        </p>
+                                </div>
+                                <div className="mt-0 flex flex-row items-center gap-4 xs:mt-2">
+                                    <div className="flex h-[108px] w-[108px] items-center justify-center rounded-3xl border-2 bg-white">
+                                        <img
+                                            src="/codesearch-logomark-default.svg"
+                                            alt="Cody Logo"
+                                            className="h-[56px] w-[54px]"
+                                        />
                                     </div>
-                                }
-                                buttons={<GetStartedButton title="Sign up for free" />}
-                                features={FREE_FEATURES_OVERVIEW}
-                                planClasses="md:my-6 md:pr-[30px] mt-6"
-                            />
-                            <PricingPlan
-                                name={<p className="mb-[13px]">Pro</p>}
-                                description="Best for pro devs and small teams"
-                                price={
-                                    <div className="flex flex-col p-2 pb-0">
-                                        <p className="mb-0">
-                                            <span className="font-sans text-[36px] font-semibold leading-[43px]">
-                                                $9
-                                            </span>
-                                            <span className="ml-[10px] text-[18px] font-normal leading-[43px]">
-                                                per user/month
-                                            </span>
-                                        </p>
-                                        <p className="leading[19.88px] mb-0 text-[14px] font-normal text-gray-600">
-                                            Billed monthly
-                                        </p>
+                                    <div className="flex h-[108px] w-[108px] items-center justify-center rounded-3xl border-2 bg-white">
+                                        <img
+                                            src="/cody-logomark-default.svg"
+                                            alt="Cody Logo"
+                                            className=" h-[56px] w-[54px]"
+                                        />
                                     </div>
-                                }
-                                buttons={<GetProButton title="Sign up for Cody Pro" />}
-                                features={PRO_FEATURES_OVERVIEW}
-                                planClasses={isMobile ? 'z-10 md:w-full' : 'z-10 md:w-[420px] md:my-3'}
-                                {...PLAN_COLORS.pro}
-                            />
-                            <PricingPlan
-                                name={
-                                    <div className="mb-2 flex flex-row items-center gap-4">
-                                        <p className="mb-0 text-2xl font-semibold">Enterprise</p>
-                                    </div>
-                                }
-                                description="Best for teams and orgs"
-                                price={
-                                    <div className="flex flex-col p-2">
-                                        <p className="mb-0 items-center">
-                                            <span className="font-sans font-semibold leading-[43px] -tracking-[0.75px]">
-                                                $19
-                                            </span>
-                                            <span className="ml-[10px] text-[18px] font-normal leading-[43px]">
-                                                per user/month
-                                            </span>
-                                        </p>
-                                    </div>
-                                }
-                                buttons={
-                                    <ContactUsButton
-                                        href="https://sourcegraph.com/contact/request-info"
-                                        title="Contact sales"
-                                        className="border-violet-700 text-violet-700 hover:border-violet-500 hover:bg-violet-500 hover:text-white"
-                                    />
-                                }
-                                features={ENTERPRISE_CODY_FEATURES_OVERVIEW}
-                                planClasses="md:my-6 z-5 md:pl-[30px]"
-                            />
+                                </div>
+                            </div>
                         </div>
                     )}
                 </div>
@@ -478,7 +529,7 @@ const PricingPage: FunctionComponent = () => {
                                                 className="btn w-fit border-violet-600 bg-violet-500 text-white"
                                             />
                                         </div>
-                                        <div className="relative right-24 -top-6 mr-[-24px] mt-[-36px] h-[189.25px] w-[204px] bg-[url('/backgrounds/grid.svg')] md:-top-0 md:-right-4">
+                                        <div className="relative -right-1 -top-6 mr-[-24px] mt-[-36px] h-[189.25px] w-[204px] bg-[url('/backgrounds/grid.svg')] md:-top-0 md:-right-4">
                                             <div className="absolute flex h-[116px] w-[116px] items-center justify-center rounded-3xl border-2 border-gray-200 bg-white">
                                                 <img
                                                     src="/cody-logomark-default.svg"
@@ -566,5 +617,26 @@ const PricingPage: FunctionComponent = () => {
         </Layout>
     )
 }
+
+const TabComponent = ({ tab, selectedOption, chooseProduct, className }: Props): JSX.Element => (
+    <div key={tab.key} className={classNames('flex justify-center', className)}>
+        <button
+            key={tab.key}
+            type="button"
+            className="btn !px-0 pt-[10px] pb-0 transition-all duration-700 ease-in-out"
+            onClick={() => chooseProduct(tab.key)}
+        >
+            <div className="grid grid-cols-1 justify-items-start gap-1 text-left">
+                <p className="mb-0 text-[18px] font-[590] leading-[27px] -tracking-[0.25px] text-gray-700">
+                    {tab.title}
+                </p>
+                <p className="pb-2 text-[18px] font-normal leading-[27px] -tracking-[0.25px] text-[#5E6E8C]">
+                    {tab.subtitle}
+                </p>
+            </div>
+            {tab.key === selectedOption && <div className="plan-top-border !h-[2px]" />}
+        </button>
+    </div>
+)
 
 export default PricingPage

@@ -99,7 +99,7 @@ export const FREE_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Code context',
-        description: "Advanced code contextis used to personalize Cody's responses to a user's own codebase",
+        description: "Advanced code context is used to personalize Cody's responses to a user's own codebase",
         features: ['freeAdvancedContext', 'freeAvailableAdvancedContext'],
         topicClass: 'mb-6',
     },
@@ -418,14 +418,22 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     BringYourLLM: {
         label: 'Bring your own LLM',
     },
+    codeIntelEntLLMchoices: {
+        label: 'Flexible LLM choices',
+        description: 'Claude Instant 1.2, StarCoder, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview',
+    },
+    codeIntelBringYourLLMKey: {
+        label: 'Bring your own LLM key',
+        description: 'Bring your own key with Azure OpenAI and Amazon Bedrock',
+    },
     codeIntelAdminControls: {
         label: 'Admin controls',
-        description: 'Admin controls',
+        description: 'Use RBAC to manage individual and group permissions to Cody Enterprise',
     },
     codeIntelGuardrails: {
         label: 'Guardrails',
         badgeLabel: 'new',
-        description: 'Guardrails',
+        description: "We scan Cody's output for OSS code, reducing the risk of copyrighted code in suggestions",
     },
 }
 
@@ -494,7 +502,7 @@ export const CODE_INTELLIGENCE_CE_FEATURES: FeatureCluster[] = [
     },
     {
         topic: 'LLM support',
-        features: ['entLLMchoices', 'BringYourLLMKey'],
+        features: ['codeIntelEntLLMchoices', 'codeIntelBringYourLLMKey'],
     },
     {
         topic: 'Advanced security',
