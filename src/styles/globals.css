@@ -638,30 +638,41 @@
    
 
     .sg-scalable::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(173deg, rgba(74, 193, 232, 0.70) -1.63%, rgba(161, 18, 255, 0.70) 60.21%, rgba(255, 85, 67, 0.70) 92.02%), #FFF;
-    filter: blur(50px);
-    opacity: 0.3;
-    z-index: -1;
-}
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(173deg, rgba(74, 193, 232, 0.70) -1.63%, rgba(161, 18, 255, 0.70) 60.21%, rgba(255, 85, 67, 0.70) 92.02%), #FFF;
+        filter: blur(50px);
+        opacity: 0.3;
+        z-index: -1;
+    }
 
     .sg-developers::before{
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(172deg, #4AC1E8 1.16%, #A112FF 25.3%, #FF5543 55.43%), #EFF2F5;
- content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-opacity: 0.3;
-filter: blur(50px);
-z-index: -1;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;    
+        opacity: 0.3;
+        filter: blur(50px);
+        z-index: -1;
+    }
+    .sg-developers-mobile::before{
+       background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(172deg, #4AC1E8 1.16%, #A112FF 25.3%, #FF5543 55.43%), #EFF2F5;
+        content: '';
+        position: absolute;
+        top: 80px;
+        right: 0;
+        bottom: 0;
+        left: 90px;    
+        opacity: 0.3;
+        filter: blur(50px);
+        z-index: -1;
     }
     /* Used to define custom tailwind slide in animation */
     @keyframes slideFadeIn {
