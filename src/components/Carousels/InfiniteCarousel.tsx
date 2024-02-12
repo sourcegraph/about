@@ -124,14 +124,12 @@ export const InfiniteCarousel: FC<{ images: { src: string; className?: string }[
     const duplicatedImages = [...images, ...images, ...images, ...images, ...images, ...images, ...images, ...images] // Duplicate images for seamless looping
 
     return (
-        <>
-            <TickerAnimation duration={duration}>
-                {duplicatedImages.map((img, index) => (
-                    <div key={index} className={classNames('flex items-center justify-center', img.className)}>
-                        <img src={img.src} alt={`slide-${index}`} className="h-auto w-full" />
-                    </div>
-                ))}
-            </TickerAnimation>
-        </>
+        <TickerAnimation duration={duration}>
+            {duplicatedImages.map((img, index) => (
+                <div key={index} className={classNames('flex items-center justify-center', img.className)}>
+                    <img src={img.src} alt={`slide-${index}`} className="h-auto w-full" />
+                </div>
+            ))}
+        </TickerAnimation>
     )
 }
