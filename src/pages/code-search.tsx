@@ -30,7 +30,7 @@ const testimonials = [
         companyName: 'Nine',
         comment: [
             'Sourcegraph helped me answer a question in like 5 seconds flat this afternoon.',
-            'Normally I probably would have bugged a bunch of people, but the overview of “her is that snippet, and the list of repos using it” made it self-served.',
+            'Normally I probably would have bugged a bunch of people, but the overview of “here is that snippet, and the list of repos using it” made it self-served.',
         ],
     },
     {
@@ -115,12 +115,12 @@ export const CodeSearchPage: FunctionComponent = () => {
                                     using symbol, commit, and diff searches.
                                 </li>
                                 <li>
-                                    Efficiently reuse code and avoid duplicative code. Find code across thousands of
+                                    Efficiently reuse existing code. Find code across thousands of
                                     repositories and multiple code hosts in seconds.
                                 </li>
                             </ul>
                             <Link
-                                href="/pricing?product=codeSearch"
+                                href="/case-studies/nutanix-fixed-log4j-with-sourcegraph"
                                 className="flex gap-2.5 font-semibold leading-[22.4px] text-violet-500 underline"
                             >
                                 Read how Nutanix used Code Search to mitigate Log4j vulnerabilities
@@ -199,12 +199,12 @@ export const CodeSearchPage: FunctionComponent = () => {
                             </Heading>
                             <ul className="mb-6 text-lg leading-[27px] tracking-[-0.25px] text-[#343A4D]">
                                 <li className="mb-3">
-                                    Find all occurrences of code to change with Code Search and programmatically those
-                                    changes by creating a declarative specification file
+                                    Find all occurrences of code to change with Code Search and make every
+                                    change with a single, declarative spec file.
                                 </li>
                                 <li>
-                                    Automatically track changeset lifecycle status, like check state, reviews, and merge
-                                    status via the Sourcegraph UI so you can get the changesets merged.
+                                    Automatically track changeset lifecycle status via the Sourcegraph UI. See
+                                    check state, reviews, and merge status to follow changesets to completion.
                                 </li>
                             </ul>
 
@@ -231,12 +231,12 @@ export const CodeSearchPage: FunctionComponent = () => {
                             </Heading>
                             <ul className="mb-6 text-lg leading-[27px] tracking-[-0.25px] text-[#343A4D]">
                                 <li className="mb-3">
-                                    Make data-driven decisions using visualizations based on the power and accuracy of
-                                    Sourcegraph Code Search.
+                                    Make data-driven decisions using visualizations of your entire codebase.
+                                    Simply write a search query and turn it into a chart.
                                 </li>
                                 <li>
                                     Engineering teams can track migrations and deprecations, ensure removal of security
-                                    vulnerabilities, track code smells and health, and much more.
+                                    vulnerabilities, and track code smells and health from visual dashboards.
                                 </li>
                             </ul>
                             <Link
@@ -331,8 +331,8 @@ export const CodeSearchPage: FunctionComponent = () => {
                         size="h3"
                         className="py-4 !text-[18px] !leading-[27px] !tracking-[-0.25px] text-white text-opacity-80"
                     >
-                        Get Code Search for your team’s entire private codebase. Contact us to get started with a free
-                        trial.
+                        Get Code Search for your team’s entire private codebase. Contact us for a demo or to get
+                        started with a free trial.
                     </Heading>
                     <div className="flex max-w-[356px] flex-col flex-wrap gap-4 pt-4 sm:flex-row">
                         <Link href="/demo" className="btn btn-primary">
@@ -361,12 +361,6 @@ export const CodeSearchPage: FunctionComponent = () => {
                             href="https://sourcegraph.com/search"
                             title="Get Cody free"
                             className="btn btn-primary w-[173px] text-center xs:w-fit"
-                        >
-                            Get Cody free
-                        </Link>
-                        <Link
-                            href="https://sourcegraph.com/search"
-                            className="btn text-center text-violet-500 outline outline-1 outline-violet-600"
                         >
                             Try Code Search
                         </Link>
