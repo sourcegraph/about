@@ -30,7 +30,7 @@ const GitLabSolutionBrief: NextPage = () => {
                 <PostTemplate post={post} content={content} className="mx-auto max-w-[840px]" /> */}
                 <div className="mt-12">
                     <Heading as="h1" size="h1" className="!font-grotesk">
-                        Sourcegraph's Code Intelligence Platform available natively in GitLab{' '}
+                        Sourcegraph's Code Intelligence Platform works natively with GitLab{' '}
                     </Heading>
                 </div>
 
@@ -73,20 +73,20 @@ const GitLabSolutionBrief: NextPage = () => {
                         </div>
                         <p className="mt-5 text-xs text-gray-500">* Sourcegraph's Big Code Report, May 2023</p>
 
-                        <h2>Cody and Code Search Natively in GitLab</h2>
+                        <h2>Sourcegraph Features</h2>
 
                         <p>
-                            <strong className="font-bold">Cody</strong>: Cody is an AI coding assistant, answering
-                            technical questions, fixing and generating code with high accuracy. Devs can use Cody
-                            directly in their text editor or wherever they're writing and reading code.
+                            <a href="https:\\sourcegraph.com/cody"><strong className="font-bold">Cody</strong></a>: 
+                            Cody is an AI coding assistant, answering technical questions, fixing and
+                            generating code with high accuracy. Devs can use Cody directly in their
+                            text editor or wherever they're writing and reading code.
                         </p>
 
                         <p>
-                            <strong className="font-bold">Code Search and Navigation</strong>: Answer questions about
-                            your codebase and get unblocked faster. With Code Search and precise code navigation,
-                            developers can find code to reuse, resolve issues and incidents faster, discover every
-                            instance of vulnerable code in milliseconds, and get answers fast without waiting for
-                            context from teammates.
+                            <a href="https:\\sourcegraph.com/code-search"><strong className="font-bold">Code Search</strong></a>:
+                            With Code Search and precise code navigation, developers can find code to reuse,
+                            resolve issues and incidents faster, discover every instance of vulnerable code
+                            in milliseconds, and get answers fast without waiting for context from teammates.
                         </p>
 
                         <p>
@@ -134,7 +134,7 @@ const GitLabSolutionBrief: NextPage = () => {
                             </div>
                         </div>
 
-                        <h2>Features and Benefits</h2>
+                        <h2>Using Sourcegraph with GitLab</h2>
 
                         <p>
                             Sourcegraph's Code Intelligence Platform helps developers build better software by freeing
@@ -145,14 +145,14 @@ const GitLabSolutionBrief: NextPage = () => {
 
                         <ul>
                             <li>
-                                <strong className="font-bold">Write and understand code quicker</strong>: Cody writes
+                                <strong className="font-bold">Write and understand code faster</strong>: Cody writes
                                 code and answers questions using your own code graph as context, whether it's across
                                 multiple instances of GitLab or multiple code hosts.
                             </li>
 
                             <li>
-                                <strong className="font-bold">Stay in Context</strong>: Cody works with GitLab and your
-                                IDEs so you don't have to move to another interface to get answers.
+                                <strong className="font-bold">Stay in Context</strong>: Cody pulls context of GitLab
+                                code into your IDE so you don't have to move to another interface to get answers.
                             </li>
                         </ul>
 
@@ -160,8 +160,8 @@ const GitLabSolutionBrief: NextPage = () => {
 
                         <ul>
                             <li>
-                                <strong className="font-bold">Understand code</strong>: Uncover answers, gather context,
-                                and understand dependencies quickly and without interrupting teammates.
+                                <strong className="font-bold">Understand code</strong>: Search and navigate all of your GitLab code. 
+                                Uncover answers, gather context and understand dependencies quickly and without interrupting teammates.
                             </li>
 
                             <li>
@@ -173,7 +173,7 @@ const GitLabSolutionBrief: NextPage = () => {
                             <li>
                                 <strong className="font-bold">Accelerate codebase-wide changes</strong>: Make
                                 large-scale code changes across code hosts and repositories. Track and manage all of
-                                your changes until each is merged.
+                                your changes until each is merged in GitLab's native merge request flow.
                             </li>
 
                             <li>
@@ -182,22 +182,6 @@ const GitLabSolutionBrief: NextPage = () => {
                                 everything in your codebase, from migrations to code smells.
                             </li>
                         </ul>
-
-                        <h2>About Sourcegraph</h2>
-
-                        <p>
-                            Sourcegraph is a Code Intelligence Platform: “software that builds software”. Our code graph
-                            powers Cody, the most powerful and accurate code AI for writing, fixing, and maintaining
-                            code, and Code Search, helping devs explore their entire codebase and make large-scale
-                            migrations and security fixes. Our customers include 4 of the top 10 banks, 4/5 FAANG
-                            companies, government organizations, Uber, Plaid, and many other companies building the
-                            software that pushes the world forward.
-                        </p>
-
-                        <p>
-                            For more information, e-mail us at{' '}
-                            <a href="mailto:partner@sourcegraph.com">partner@sourcegraph.com</a> or visit our website.
-                        </p>
 
                         <h2>About GitLab</h2>
 
@@ -209,10 +193,6 @@ const GitLabSolutionBrief: NextPage = () => {
                             transparency, consistency, and traceability.
                         </p>
 
-                        <p>
-                            For more information, email us at:{' '}
-                            <a href="mailto:alliance@gitlab.com">alliance@gitlab.com</a> or visit us here.
-                        </p>
                     </div>
                     <div className="flex-shrink">
                         <div className="sticky top-36">
