@@ -126,16 +126,38 @@ export const CaseStudyCard: FunctionComponent<{
 }) => (
     <div className="grow">
         <div className="md:pr-12">
-            <img
-                className={classNames('mb-6 max-h-[60px] max-w-[135px]', { 'brightness-0': bwLogo }, logoClassName)}
-                src={logo}
-                alt={`${name} logo`}
-            />
+            {/* company logo */}
+            {url.includes('http') ? (
+                <a href={url} target="_blank" rel="nofollow noreferrer" title={linkText + ': ' + title}>
+                    <img
+                        className={classNames(
+                            'mb-6 max-h-[60px] max-w-[135px]',
+                            { 'brightness-0': bwLogo },
+                            logoClassName
+                        )}
+                        src={logo}
+                        alt={`${name} logo`}
+                    />
+                </a>
+            ) : (
+                <Link href={url} title={linkText + ': ' + title}>
+                    <img
+                        className={classNames(
+                            'mb-6 max-h-[60px] max-w-[135px]',
+                            { 'brightness-0': bwLogo },
+                            logoClassName
+                        )}
+                        src={logo}
+                        alt={`${name} logo`}
+                    />
+                </Link>
+            )}
 
             {altTitle && <h5>{altTitle}</h5>}
 
             <p className={titleClassName}>{title}</p>
 
+            {/* link to read case study */}
             {url.includes('http') ? (
                 <a
                     href={url}
