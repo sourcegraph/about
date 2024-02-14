@@ -68,12 +68,12 @@ const Qualtrics: FunctionComponent = () => (
                         />
                         <SidebarContent
                             title="25% faster code understanding"
-                            content="Qualtrics engineers report they can understand code and answer questions about code 25%
+                            content="Engineers report understanding code and answering questions about code 25%
                             faster."
                         />
                         <SidebarContent
                             title="Improved unit test coverage"
-                            content="Engineers reported that unit tests, which took one dev day to write, now take roughly 10
+                            content="Unit tests that took one dev day to write now take roughly 10
 minutes, leading to improved unit test coverage faster."
                         />
 
