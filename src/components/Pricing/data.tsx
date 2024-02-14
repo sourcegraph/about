@@ -85,6 +85,10 @@ export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
         topic: 'Enhanced support',
         features: ['slaSupport', 'technicalAdvisor', 'professionalServices'],
     },
+    {
+        topic: 'Developer minimum',
+        features: ['greaterThan10'],
+    },
 ]
 
 /** Free feature set */
@@ -174,7 +178,7 @@ export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['enterpriseSupport'],
     },
     {
-        topic: 'Developer limit',
+        topic: 'Developer minimum',
         features: ['greaterThan50'],
     },
 ]
@@ -345,6 +349,9 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     freeLimitation: {
         label: '1 user',
+    },
+    greaterThan10: {
+        label: '>10 users',
     },
     greaterThan50: {
         label: '>50 users',
