@@ -1,5 +1,7 @@
 import { FunctionComponent, ReactNode } from 'react'
 
+import Link from 'next/link'
+
 import { Badge, Blockquote, ContentSection, Heading, Hero, Layout } from '../../components'
 import MoreCaseStudies from '../../components/CaseStudies/MoreCaseStudies'
 import SidebarCta from '../../components/CaseStudies/SidebarCta'
