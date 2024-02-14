@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactNode } from 'react'
+import { FunctionComponent, ReactNode, useEffect, useState } from 'react'
 
 import { DotLottiePlayer } from '@dotlottie/react-player'
 import classNames from 'classnames'
@@ -17,7 +17,7 @@ const enterpriseDevPlatforms = [
     { src: '/enterprise/bitbucket.svg', alt: 'Bitbucket' },
     { src: '/enterprise/intellij.svg', alt: 'IntelliJ' },
     { src: '/enterprise/neovim.svg', alt: 'Neovim' },
-    { src: '/enterprise/neovim2.svg', alt: 'Neovim 2' },
+    { src: '/enterprise/golang.svg', alt: 'Golang' },
     { src: '/enterprise/gerrit.svg', alt: 'Gerrit' },
     { src: '/enterprise/gitlab.svg', alt: 'GitLab' },
     { src: '/enterprise/perforce.svg', alt: 'Perforce' },
@@ -113,7 +113,7 @@ const securityCardFeatures = [
     {
         icon: <MdOutlineSecurity size={24} />,
         heading: 'Uncapped indemnity',
-        paragraph: 'We do not train models using data from Cody Enterprise users, so your code stays private to you.',
+        paragraph: 'We provide full IP indemnity to enterprise customers.',
     },
 ]
 
@@ -121,6 +121,15 @@ const Enterprise: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.md
     const lgAndUp = windowWidth > breakpoints.lg
+
+    const [videoPlayed, setVideoPlayed] = useState(false)
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setVideoPlayed(true)
+        }, 3090)
+        return () => clearTimeout(timeout)
+    }, [])
 
     return (
         <Layout
@@ -132,9 +141,9 @@ const Enterprise: FunctionComponent = () => {
             className="bg-gray-50"
             hero={
                 <div className="">
-                    {!isMobile && (
+                    {!isMobile && !videoPlayed ? (
                         <DotLottiePlayer
-                            className="absolute inset-0 top-[96px] z-0 h-full w-full object-cover"
+                            className="absolute inset-0 top-[48px] z-0 h-full w-full object-cover"
                             src="https://lottie.host/07b21a4d-e532-47b7-ab01-7bd8faf4ba33/ORhWKPLwKI.lottie"
                             background="transparent"
                             speed={1}
@@ -143,17 +152,25 @@ const Enterprise: FunctionComponent = () => {
                             loop={false}
                             renderer="svg"
                         />
+                    ) : (
+                        !isMobile && (
+                            <div
+                                className="absolute inset-0 top-[48px] z-0 h-full w-full bg-contain bg-center bg-no-repeat"
+                                // eslint-disable-next-line react/forbid-dom-props
+                                style={{ backgroundImage: "url('enterprise/Enterprise-hero-still.png')" }}
+                            />
+                        )
                     )}
                     <Hero
                         variant="transparent"
-                        className="z-10 mx-auto flex items-center justify-center !pt-[122px] pb-8  text-center md:w-[750px] md:!pt-[170px] md:pb-[96px]"
+                        className="relative z-10 mx-auto flex items-center justify-center !pt-[122px] pb-8  text-center md:w-[750px] md:!mt-[-36px]  md:pb-[96px]"
                         title="Modern enterprises are powered by productive developers"
                         subtitle="Give your teams the ability to search, write and understand massive codebases through Sourcegraph's universal and secure Code Intelligence Platform."
                         centerContent={true}
                         cta={
                             <div className="mx-auto flex w-[356px] flex-col items-center justify-center gap-6 sm:flex sm:w-auto  sm:flex-row  md:gap-4">
                                 <Link
-                                    className="btn btn-primary w-full sm:w-auto"
+                                    className="btn btn-primary w-full bg-violet-500 sm:w-auto"
                                     href="/contact/request-info"
                                     title="Contact us for a demo"
                                     data-button-style={buttonStyle.primary}
@@ -170,7 +187,7 @@ const Enterprise: FunctionComponent = () => {
                                     data-button-location={buttonLocation.hero}
                                     data-button-type="cta"
                                 >
-                                    See Pricing
+                                    See pricing
                                 </Link>
                             </div>
                         }
@@ -180,10 +197,10 @@ const Enterprise: FunctionComponent = () => {
             }
         >
             <ContentSection
-                className=" mx-auto mt-0 flex flex-col items-center gap-12 py-16 text-center md:mt-[-135px] md:pt-[282px] md:pb-[96px]"
+                className="relative mx-auto mt-0 flex flex-col items-center gap-12 py-16 text-center md:mt-[-135px] md:pt-[282px] md:pb-[96px]"
                 parentClassName="!py-0 md:px-[80px]"
             >
-                <div className="flex flex-col items-center gap-6  text-center md:w-[615px]">
+                <div className="z-10 flex flex-col items-center gap-6  text-center md:w-[615px]">
                     <h2>Used by 4/5 FAANG and 6/10 largest software companies in the world</h2>
                     <Link
                         href="https://sourcegraph.com/case-studies"
@@ -203,8 +220,8 @@ const Enterprise: FunctionComponent = () => {
                 </div>
             </ContentSection>
             <ContentSection
-                className="flex max-w-[1236px] flex-col gap-6 md:flex-row"
-                parentClassName="md:px-[80px] !py-0"
+                className="flex max-w-[1232px] flex-col gap-6 md:flex-row"
+                parentClassName="!md:px-[80px] !py-0"
             >
                 <div
                     className="flex h-[533px] flex-col justify-between px-0 py-16 md:px-10" // eslint-disable-next-line react/forbid-dom-props
@@ -237,7 +254,7 @@ const Enterprise: FunctionComponent = () => {
                 <div className="h-auto rounded-2xl border-1 border-gray-200 bg-white px-6 py-16  md:max-w-[574px] md:px-20">
                     <p className="mb-0 leading-6 tracking-[-0.25px] text-gray-700">Satish Surapaneni</p>
                     <p className="mb-0 text-sm leading-[19.88px]">Senior Engineering Manager, F5</p>
-                    <p className="mb-0 pt-3 text-[35px] font-normal leading-[43.75px] -tracking-[0.25px]">
+                    <p className="mb-0 pt-3 text-[35px] font-normal leading-[43.75px] -tracking-[2px]">
                         "We are developing software faster than ever, with aggressive schedules, and across boundaries.
                         Things that used to be worked out in a closed room now need to be done while teams are spread
                         out across the globe.”
@@ -245,7 +262,7 @@ const Enterprise: FunctionComponent = () => {
                 </div>
             </ContentSection>
             <ContentSection
-                className="flex h-auto max-w-[1236px] flex-col-reverse justify-between gap-[19px] overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:h-[301px] md:flex-row"
+                className="flex h-auto max-w-[1232px] flex-col-reverse justify-between gap-[19px] overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:h-[301px] md:flex-row"
                 parentClassName="!py-16"
             >
                 <div className="flex  flex-col px-6 py-10 md:py-16 md:pl-10">
@@ -270,14 +287,14 @@ const Enterprise: FunctionComponent = () => {
                 </div>
             </ContentSection>
             <ContentSection
-                className="grid max-w-[1236px] grid-cols-1 gap-8 rounded-2xl border-1  border-gray-200 bg-white py-16 px-6 md:grid-cols-2 md:flex-row md:gap-6 md:pl-16 md:pr-6"
+                className="grid max-w-[1232px] grid-cols-1 gap-8 rounded-2xl border-1  border-gray-200 bg-white py-16 px-6 md:grid-cols-2 md:flex-row md:gap-6 md:pl-16 md:pr-6"
                 parentClassName="md:px-[80px] !py-0"
             >
                 <div className="flex items-center rounded-2xl border-1 border-gray-200 bg-gray-50 px-6 py-16 md:items-end lg:px-20">
                     <div className="flex flex-col">
                         <p className="mb-0 leading-6 tracking-[-0.25px] text-gray-700">Balázs Tóthfalussy</p>
                         <p className="mb-0 text-sm leading-[19.88px]">Engineering Manager, Prezi</p>
-                        <p className="mb-0 pt-3 text-[35px] font-normal leading-[43.75px] -tracking-[0.25px]">
+                        <p className="mb-0 pt-3 text-[35px] font-normal leading-[43.75px] -tracking-[2px]">
                             "As we’ve grown, so has the need to better track and communicate our progress and goals
                             across the engineering team and broader company...
                         </p>
@@ -308,8 +325,8 @@ const Enterprise: FunctionComponent = () => {
                 </div>
             </ContentSection>
             <ContentSection
-                className="flex flex-col gap-6 md:flex-row"
-                parentClassName="md:px-[80px] md:!pb-[96px]  py-16"
+                className="flex max-w-[1232px] flex-col gap-6 md:flex-row"
+                parentClassName="!md:px-[80px] !md:pb-[96px]"
             >
                 <div className="md:pt-6 md:pl-16 md:pr-10">
                     <Heading size="h2" className="mb-4 pt-4 !leading-10 !tracking-[-1px] text-black md:pt-0">
@@ -323,7 +340,7 @@ const Enterprise: FunctionComponent = () => {
                     <img src="enterprise/batch-change.svg" alt="code search" />
                 </div>
                 <div className="rounded-2xl border-1 border-gray-200 bg-white px-6 py-16 md:max-w-[576px] md:px-16">
-                    <p className="mb-5 text-[35px] font-normal leading-[43.75px] -tracking-[0.25px] text-gray-700">
+                    <p className="mb-5 text-[35px] font-normal leading-[43.75px] -tracking-[2px] text-gray-700">
                         “It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
                         better than having to say, 'Well, boss, I think we got it all.'”
                     </p>
@@ -334,7 +351,7 @@ const Enterprise: FunctionComponent = () => {
                 </div>
             </ContentSection>
             <ContentSection
-                className="flex max-w-[1236px] flex-col justify-between rounded-2xl border-1 border-gray-200  bg-violet-700 py-16 px-[56px] md:flex-row"
+                className="flex max-w-[1232px] flex-col justify-between rounded-2xl border-1 border-gray-200  bg-violet-700 py-16 px-[56px] md:flex-row"
                 parentClassName="md:px-[80px] !py-0 md:!pb-[96px] !pb-[64px]"
             >
                 <Heading size="h2" className="mb-8 !leading-10 !tracking-[-1px] text-white md:mb-0">
@@ -359,12 +376,12 @@ const Enterprise: FunctionComponent = () => {
                         data-button-location={buttonLocation.hero}
                         data-button-type="cta"
                     >
-                        See Pricing
+                        See pricing
                     </Link>
                 </div>
             </ContentSection>
             <ContentSection
-                className="flex max-w-[1236px] flex-col justify-between overflow-hidden  rounded-2xl  border-1 border-gray-200 bg-white px-6 md:flex-row md:px-16"
+                className="flex max-w-[1232px] flex-col justify-between overflow-hidden  rounded-2xl  border-1 border-gray-200 bg-white px-6 md:flex-row md:px-16"
                 parentClassName="md:px-[80px] !py-0"
             >
                 <div className="flex flex-col justify-center pt-16 !pb-12 md:w-[492px] md:py-16">
@@ -384,44 +401,29 @@ const Enterprise: FunctionComponent = () => {
                 <div className="flex w-auto justify-center gap-[37px] md:gap-[31.97px]">
                     <div className="relative bottom-[17px] flex flex-col gap-[25.21px]">
                         {enterpriseDevPlatforms.slice(0, 3).map(({ src, alt }) => (
-                            <EnterpriseIcon
-                                className="flex justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100"
-                                key={alt}
-                                src={src}
-                                alt={alt}
-                            />
+                            <EnterpriseIcon className="flex justify-center" key={alt} src={src} alt={alt} />
                         ))}
                     </div>
                     <div className="relative flex flex-col gap-[25px] md:top-[21px]">
                         {enterpriseDevPlatforms.slice(3, 6).map(({ src, alt }) => (
-                            <EnterpriseIcon
-                                className="flex justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100"
-                                key={alt}
-                                src={src}
-                                alt={alt}
-                            />
+                            <EnterpriseIcon className="flex justify-center" key={alt} src={src} alt={alt} />
                         ))}
                     </div>
                     <div className="relative bottom-[17px] flex flex-col gap-[25px]">
                         {enterpriseDevPlatforms.slice(6).map(({ src, alt }) => (
-                            <EnterpriseIcon
-                                className="flex justify-center rounded-[15px] border-1 border-gray-200 bg-gray-100"
-                                key={alt}
-                                src={src}
-                                alt={alt}
-                            />
+                            <EnterpriseIcon className="flex justify-center" key={alt} src={src} alt={alt} />
                         ))}
                     </div>
                 </div>
             </ContentSection>
             <ContentSection
-                className="grid max-w-[1236px] grid-cols-1 gap-6 py-8 md:grid-cols-2 md:py-0"
+                className="grid max-w-[1232px] grid-cols-1 gap-6 py-8 md:grid-cols-2 md:py-0"
                 parentClassName="md:px-[80px]"
             >
                 <div className="rounded-2xl border-1 border-gray-200 bg-violet-700 !py-16 px-6 text-white md:px-20">
                     <p className="mb-0 leading-6 tracking-[-0.25px] text-white opacity-80">Satish Surapaneni</p>
                     <p className="mb-0 text-sm leading-[19.88px] text-white">Senior Engineering Manager, F5</p>
-                    <p className="mb-0 pt-6 text-[35px] font-normal leading-[43.75px] -tracking-[0.25px] md:max-w-[468px]">
+                    <p className="mb-0 pt-6 text-[35px] font-normal leading-[43.75px] -tracking-[2px] md:max-w-[468px]">
                         “Before Sourcegraph, each of our teams was siloed. Developers could understand their own
                         codebase, but it was difficult for them to see and understand other team members’ code.“
                     </p>
@@ -464,7 +466,7 @@ const Enterprise: FunctionComponent = () => {
                 </div>
             </ContentSection>
             <ContentSection
-                className="flex max-w-[1236px] flex-col justify-between overflow-hidden rounded-2xl border-1 border-gray-200 bg-white py-10  px-6 md:flex-row md:pr-10 md:pl-16"
+                className="flex max-w-[1232px] flex-col justify-between overflow-hidden rounded-2xl border-1 border-gray-200 bg-white py-10  px-6 md:flex-row md:pr-10 md:pl-16"
                 parentClassName="md:px-[80px] md:!py-16 py-8"
             >
                 <div className="flex max-w-[532px] flex-col justify-center">
@@ -502,7 +504,7 @@ const Enterprise: FunctionComponent = () => {
             </ContentSection>
             <ContentSection
                 parentClassName="!py-0 md:px-[80px]"
-                className="flex flex-col gap-16 rounded-2xl border-1 bg-violet-700 py-16 px-6 text-white md:flex-row md:gap-[160px] md:px-20"
+                className="flex max-w-[1232px] flex-col gap-16 rounded-2xl border-1 bg-violet-700 py-16 px-6 text-white md:flex-row md:gap-[160px] md:px-20"
             >
                 <div className="flex max-w-[511px] flex-col gap-[70px]">
                     <img src="enterprise/nine.svg" className="w-[188px]" alt="" />
@@ -558,13 +560,13 @@ const Enterprise: FunctionComponent = () => {
                 </div>
             </ContentSection>
             <ContentSection
-                className="flex max-w-[1236px] flex-col gap-6 md:flex-row"
+                className="flex max-w-[1232px] flex-col gap-6 md:flex-row"
                 parentClassName="md:px-[80px] !py-0 md:!py-10"
             >
                 <div className=" flex justify-center rounded-2xl border-1 border-gray-200 py-16 px-6 md:!w-[417px] md:px-20">
                     <div className="flex !w-[278px] flex-col gap-16">
                         <div>
-                            <p className="mb-1 font-sans text-[75px] font-semibold leading-[62px] tracking-[-1px]">
+                            <p className="mb-4 font-sans text-[75px] font-semibold leading-[62px] tracking-[-1px]">
                                 &lt;5 minutes
                             </p>
                             <Heading size="h3" className="!leading-[30px] !tracking-[-0.25px]">
@@ -572,7 +574,7 @@ const Enterprise: FunctionComponent = () => {
                             </Heading>
                         </div>
                         <div>
-                            <p className="mb-3  font-sans text-[75px] font-semibold leading-[62px] tracking-[-1px]">
+                            <p className="mb-4  font-sans text-[75px] font-semibold leading-[62px] tracking-[-1px]">
                                 &lt;4 days
                             </p>
                             <Heading size="h3" className="!leading-[30px] !tracking-[-0.25px]">
@@ -592,7 +594,7 @@ const Enterprise: FunctionComponent = () => {
                             <Link
                                 href="https://sourcegraph.com/case-studies/how-sourcegraph-transformed-nine-development-workflow"
                                 title="Case study"
-                                className="btn flex-end p-0 text-center text-right font-semibold !-tracking-[0.25px] text-violet-500  md:mx-0 md:border-none  md:text-left "
+                                className="btn flex-end p-0 text-center text-right font-semibold !-tracking-[0.25px] text-violet-500 underline  md:mx-0 md:border-none  md:text-left "
                             >
                                 Read the case study
                                 <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
@@ -606,11 +608,11 @@ const Enterprise: FunctionComponent = () => {
                 parentClassName="!py-0 md:!pb-[96px] !pb-[64px] md:px-[80px]"
             >
                 {securityFeatures.map((feature, index) => (
-                    <SecurityFeature key={index} {...feature} />
+                    <SecurityFeature className="max-w-[410px]" key={index} {...feature} />
                 ))}
             </ContentSection>
             <ContentSection
-                className="rounded-2xl border-1 border-gray-200 bg-white py-16 px-6 md:px-10"
+                className="max-w-[1232px] rounded-2xl border-1 border-gray-200 bg-white py-16 px-6 md:px-10"
                 parentClassName="!py-0 md:px-[80px]"
             >
                 <Heading size="h6" className="mb-4">
@@ -625,12 +627,12 @@ const Enterprise: FunctionComponent = () => {
                     ))}
                 </div>
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-                    <div className="col-span-1 flex flex-col-reverse justify-between rounded-2xl border-1 border-gray-200 md:col-span-2 md:flex-row md:items-end ">
-                        <div>
+                    <div className="col-span-1 flex flex-col-reverse justify-between gap-x-[33px] gap-y-4 rounded-2xl border-1 border-gray-200 md:col-span-2 md:flex-row md:items-end ">
+                        <div className="pr-10 md:pr-0">
                             <img alt="" src="/enterprise/screenshot.svg" className="rounded-bl-lg" />
                         </div>
-                        <div className="mt-10 mb-4 pl-10 pt-10 pr-10 md:my-10 md:w-[311px] md:py-10   md:pl-0 md:pb-10">
-                            <div className="flex flex-col gap-4">
+                        <div className="mt-10 mb-4 pl-10 pt-10 pr-10 md:my-10  md:py-10   md:pl-0 md:pb-10">
+                            <div className="flex max-w-[311px] flex-col gap-4">
                                 <Heading size="h2" className="!leading-10 !tracking-[-1px]">
                                     Guardrails to catch licensed code
                                 </Heading>
@@ -651,7 +653,14 @@ const Enterprise: FunctionComponent = () => {
                         <div className="flex items-start gap-4 rounded-2xl border-1 border-gray-200 bg-gray-100 py-10 px-8">
                             <img src="/enterprise/file-document-outline.svg" alt="" />
                             <Heading size="h5" className="!font-[590px] !leading-[25px] !tracking-[-0.25px]">
-                                To learn more, read our Cody security & legal whitepaper
+                                To learn more, read our
+                                <Link
+                                    href="https://sourcegraph.com/whitepapers/cody-security-and-legal.pdf"
+                                    title="Cody security & legal whitepaper"
+                                    className="mx-[3px] text-black underline underline-offset-[4.3px] "
+                                >
+                                    Cody security & legal whitepaper
+                                </Link>
                             </Heading>
                         </div>
                     </div>
@@ -659,7 +668,7 @@ const Enterprise: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection
-                className="flex flex-col justify-between gap-6 rounded-2xl border-1 border-gray-200 bg-violet-700 py-16 px-6 md:px-[56px]"
+                className="flex max-w-[1232px] flex-col justify-between gap-6 rounded-2xl border-1 border-gray-200 bg-violet-700 py-16 px-6 md:px-[56px]"
                 parentClassName="md:px-[80px] !py-[96px]"
             >
                 <Heading size="h2" className="!leading-10 !tracking-[-1px] text-white">
@@ -685,7 +694,7 @@ const Enterprise: FunctionComponent = () => {
                             data-button-location={buttonLocation.hero}
                             data-button-type="cta"
                         >
-                            See Pricing
+                            See pricing
                         </Link>
                     </div>
                 </div>
@@ -718,8 +727,9 @@ const SecurityFeature: FunctionComponent<{
     altText: string
     heading: string
     paragraph: string | ReactNode
-}> = ({ imgSrc, altText, heading, paragraph }) => (
-    <div className="p-10">
+    className?: string
+}> = ({ imgSrc, altText, heading, paragraph, className }) => (
+    <div className={classNames('p-10', className)}>
         <div className="flex flex-row gap-10">
             {imgSrc.map(src => (
                 <img key={altText} src={src} alt={altText} className="mb-8 h-[60px] w-[60px]" />
