@@ -181,7 +181,7 @@ const Enterprise: FunctionComponent = () => {
                                 </Link>
                                 <Link
                                     className="btn  w-full items-center text-violet-500 outline sm:w-auto"
-                                    href="/demo"
+                                    href="/pricing"
                                     title="See Pricing"
                                     data-button-style={buttonStyle.outline}
                                     data-button-location={buttonLocation.hero}
