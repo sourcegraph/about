@@ -452,6 +452,9 @@
             radial-gradient(117.83% 133.36% at 52.08% 100%, #6112a3 0.41%, #270741 54.04%, #1e0632 94.78%)
         );
     }
+    .sg-bg-code-search-new-cta {
+        background: linear-gradient(233deg, rgba(97, 18, 163, 0.54) 27.87%, rgba(97, 18, 163, 0.00) 119.99%), var(--Violet-700, #270741);
+    }
     .sg-cody-feature-card {
         background: linear-gradient(0deg, rgba(219, 0, 255, 0.05) 0%, rgba(219, 0, 255, 0.05) 100%),
             radial-gradient(95.96% 68.15% at 95.66% -10.78%, rgba(229, 156, 255, 0.13) 0%, rgba(255, 255, 255, 0) 100%);
