@@ -370,7 +370,7 @@ const Enterprise: FunctionComponent = () => {
                     </Link>
                     <Link
                         className="btn w-full items-center text-center text-white outline md:w-auto"
-                        href="/demo"
+                        href="/pricing"
                         title="See Pricing"
                         data-button-style={buttonStyle.outline}
                         data-button-location={buttonLocation.hero}
@@ -688,7 +688,7 @@ const Enterprise: FunctionComponent = () => {
                         </Link>
                         <Link
                             className="btn max-w-[356px] items-center text-white outline  md:w-auto"
-                            href="/demo"
+                            href="/pricing"
                             title="See Pricing"
                             data-button-style={buttonStyle.outline}
                             data-button-location={buttonLocation.hero}
