@@ -90,8 +90,8 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'GitLab solution brief',
-        link: '/guides/sourcegraph-gitlab-solution-brief.pdf',
+        title: 'GitLab and Sourcegraph',
+        link: '/resources/gitlab-and-sourcegraph',
         contentType: 'guide',
         subjects: ['code search', 'batch changes', 'code insights', 'code monitoring', 'integrations'],
         description:
