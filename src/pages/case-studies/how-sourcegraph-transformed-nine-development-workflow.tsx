@@ -1,45 +1,11 @@
 import { FunctionComponent, ReactNode } from 'react'
 
-import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { Badge, Blockquote, CaseStudyCard, ContentSection, Heading, Hero, Layout } from '../../components'
+import { Badge, Blockquote, ContentSection, Heading, Hero, Layout } from '../../components'
+import MoreCaseStudies from '../../components/CaseStudies/MoreCaseStudies'
 import SidebarCta from '../../components/Resources/SidebarCta'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
-
-export const CUSTOMER_STORIES = [
-    [
-        {
-            name: 'Indeed',
-            logo: '/external-logos/indeed-logo.svg',
-            title: 'Indeed keeps code up to date and accelerates development velocity.',
-            url: '/case-studies/indeed-accelerates-development-velocity',
-            logoSize: 'w-[150.735px] h-[40.328px]',
-        },
-        {
-            name: 'FactSet',
-            logo: '/external-logos/factset-logo.svg',
-            title: 'FactSet migrates from Perforce to GitHub.',
-            url: '/case-studies/factset-migrates-from-perforce-to-github',
-            logoSize: 'w-[162px] h-[31px]',
-        },
-    ],
-    [
-        {
-            name: 'HashiCorp',
-            logo: '/external-logos/hashicorp-logo.svg',
-            title: 'HashiCorp streamlines cross-repository code search and fixes with Sourcegraph.',
-            url: '/case-studies/hashicorp-uses-sourcegraph-to-streamline-cross-repository-code-search',
-        },
-        {
-            name: 'CERN',
-            logo: '/external-logos/cern-name-logo.svg',
-            title: 'Sourcegraph empowers CERN to tackle code reuse and code changes in mission-critical applications.',
-            url: '/case-studies/cern-reduces-technical-debt',
-            logoSize: 'w-[107px] h-[31px] object-cover',
-        },
-    ],
-]
 
 export const CaseStudy: FunctionComponent = () => (
     <Layout
@@ -354,29 +320,8 @@ export const CaseStudy: FunctionComponent = () => (
                     />
                 </ContentSection>
             </div>
-            <div className="ml-auto flex flex-col pt-16 pb-[18px] md:w-[830px] md:py-16">
-                <Heading size="h2" className="pb-12 !text-4xl md:pb-[59px]">
-                    Explore other customer stories
-                </Heading>
-                <div className="z-[10] ml-0 flex flex-col-reverse md:flex-col">
-                    {CUSTOMER_STORIES.map((study, index) => (
-                        <div key={index} className="m-0 grid gap-x-[258px]  md:grid-cols-2 ">
-                            {study.map(std => (
-                                <div className="w-[298px] pb-[46px] pr-0 md:first:pb-[30px]" key={std.name}>
-                                    <CaseStudyCard
-                                        titleClassName="text-lg w-[298px]"
-                                        logoClassName={std.logoSize}
-                                        study={std}
-                                        linkClassName="text-violet-500 hover:text-violet-400"
-                                        icon={<ChevronRightIcon size={20} className="ml-1 inline" />}
-                                        key={std.name}
-                                    />
-                                </div>
-                            ))}
-                        </div>
-                    ))}
-                </div>
-            </div>
+
+            <MoreCaseStudies />
         </ContentSection>
         <div className="absolute top-0 right-0 hidden h-[30%] w-[40%] bg-[url('/case-studies/side-of-page-radials.svg')] bg-contain bg-right  bg-no-repeat md:flex" />
         <div className="absolute bottom-0 left-0 hidden h-[20%] w-[100%] bg-[url('/case-studies/bottom-page-radials.svg')]  bg-cover bg-left  bg-no-repeat md:inline-block" />
