@@ -530,7 +530,7 @@ const Enterprise: FunctionComponent = () => {
                         <Link
                             href="https://sourcegraph.com/case-studies/how-sourcegraph-transformed-nine-development-workflow"
                             title="Case study"
-                            className="btn p-0  text-left font-semibold !-tracking-[0.25px] text-white  md:border-none  md:text-center "
+                            className="btn p-0 hover:underline  text-left font-semibold !-tracking-[0.25px] text-white  md:border-none  md:text-center "
                         >
                             Read the case study
                             <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
@@ -594,7 +594,7 @@ const Enterprise: FunctionComponent = () => {
                             <Link
                                 href="https://sourcegraph.com/case-studies/how-sourcegraph-transformed-nine-development-workflow"
                                 title="Case study"
-                                className="btn flex-end p-0 text-center text-right font-semibold !-tracking-[0.25px] text-violet-500 underline  md:mx-0 md:border-none  md:text-left "
+                                className="btn flex-end p-0 text-center text-right font-semibold !-tracking-[0.25px] text-violet-500 hover:underline  md:mx-0 md:border-none  md:text-left "
                             >
                                 Read the case study
                                 <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
