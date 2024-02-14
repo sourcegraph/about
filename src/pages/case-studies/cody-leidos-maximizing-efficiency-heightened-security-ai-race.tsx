@@ -10,7 +10,7 @@ const Leidos: FunctionComponent = () => (
             title: 'Cody + Leidos: Maximizing efficiency with heightened security in the AI race',
             description:
                 "Leidos is a Fortune 500 innovation company rapidly addressing the world's most vexing challenges in national security and health. with Sourcegraph.",
-            image: '/case-studies/leidos-og.png',
+            image: 'https://sourcegraph.com/case-studies/leidos-og.png',
         }}
         className="relative"
         heroAndHeaderClassName="pt-[98px] md:pt-[32px]"
