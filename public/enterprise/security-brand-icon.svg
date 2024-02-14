@@ -1,0 +1,13 @@
+<svg width="51" height="62" viewBox="0 0 51 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="security-brand-icon">
+<path id="Vector 40 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M25.9739 5.53809L47.7197 17.7355L46.7887 33.6756C46.3521 41.1494 42.1909 47.905 35.7111 51.6595L25.976 57.3002L15.7774 51.6243C9.11405 47.9158 4.80906 41.0603 4.36454 33.4499L3.44531 17.7123L25.9739 5.53809ZM7.81969 20.1491L8.58221 33.2038C8.94251 39.3722 12.4318 44.9287 17.8327 47.9346L25.9339 52.4433L33.5923 48.0059C38.8444 44.9627 42.2172 39.4872 42.571 33.4294L43.348 20.1259L25.936 10.3593L7.81969 20.1491Z" fill="url(#paint0_linear_1185_4965)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1185_4965" x1="3.44531" y1="40.0421" x2="49.6812" y2="40.0419" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7048E8"/>
+<stop offset="0.308435" stop-color="#4AC1E8"/>
+<stop offset="0.626149" stop-color="#A112FF"/>
+<stop offset="1" stop-color="#FF5543"/>
+</linearGradient>
+</defs>
+</svg>
