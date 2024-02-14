@@ -17,10 +17,7 @@ const Leidos: FunctionComponent = () => (
         hero={
             <Hero
                 className="relative"
-                backButton={{
-                    text: 'Back to Resources',
-                    link: '/case-studies',
-                }}
+                backButton={{ text: 'Back to Resources', link: '/case-studies' }}
                 variant="white"
                 title={
                     <ContentSection parentClassName="!px-0 !py-0">
