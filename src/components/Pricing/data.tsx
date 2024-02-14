@@ -346,14 +346,14 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     proAutoCompletions: {
         label: (
             <p className="m-0 text-[16px] leading-5 -tracking-[0.25px]">
-                <span className="font-bold">Unlimited </span> Autocompletions
+                <span className="font-semibold">Unlimited </span> Autocompletions
             </p>
         ),
     },
     proMessageAndcommands: {
         label: (
             <p className="m-0 text-[16px] leading-5 -tracking-[0.25px]">
-                <span className="font-bold">Unlimited</span> Messages and Commands
+                <span className="font-semibold">Unlimited</span> Messages and Commands
             </p>
         ),
     },
@@ -366,7 +366,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     proCodeContext: {
         label: (
             <p className="m-0 mt-2">
-                <span className="font-bold">Unlimited </span> Advanced context for private codebases
+                <span className="font-semibold">Unlimited </span> Advanced context for private codebases
             </p>
         ),
     },

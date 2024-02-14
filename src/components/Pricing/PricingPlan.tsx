@@ -48,13 +48,13 @@ export const PricingPlan: FunctionComponent<Props> = ({
     const isMobile = windowWidth < breakpoints.lg
 
     return (
-        <div className={classNames('rounded border border-gray-200 bg-white', shadow, planClasses)}>
+        <div className={classNames('rounded-2xl border border-gray-200 bg-white', shadow, planClasses)}>
             <div className={classNames('rounded-t', borderColorClass)} />
             <div className={classNames('py-[40px]', paddingX)}>
                 <span className={classNames('mb-2 text-2xl font-semibold', nameClass)}>{name}</span>
                 <span
                     className={classNames(
-                        'flex border-b-1 pb-[24px] text-base font-normal leading-[19.88px] -tracking-[0.25px]',
+                        'flex border-b-1 pb-[24px] text-base font-normal leading-[20px] -tracking-[0.25px]',
                         nameClass ? 'text-violet-500' : 'text-gray-400'
                     )}
                 >

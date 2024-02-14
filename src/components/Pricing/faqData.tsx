@@ -39,8 +39,8 @@ export const faqData: FAQData = {
                         coding assistants. Usage limits apply.
                     </p>
                     <p>
-                        Cody Pro is best for professional developers who want unlimited usage and
-                        context for larger codebases. 
+                        Cody Pro is best for professional developers who want unlimited usage and context for larger
+                        codebases.
                     </p>
                     <p>
                         Cody Enterprise is for organizations needing security, scalability, and control. It is coming
@@ -64,8 +64,8 @@ export const faqData: FAQData = {
             answer: (
                 <>
                     <p>
-                        Cody offers several ways of retrieving codebase context to personalize its responses. One 
-                        way is through embeddings, which are generated for user repositories.
+                        Cody offers several ways of retrieving codebase context to personalize its responses. One way is
+                        through embeddings, which are generated for user repositories.
                     </p>
                     <p>
                         Cody Free users can create embeddings for up to 200MB of code, and Cody Pro users can create
@@ -126,7 +126,8 @@ export const faqData: FAQData = {
             question: 'Does Cody use my code to improve the models used by other people?',
             answer: (
                 <p>
-                    For Enterprise customers, Sourcegraph will not train on your company’s data. For Free and Pro tier users, Sourcegraph will not train on your data without your permission.
+                    For Enterprise customers, Sourcegraph will not train on your company’s data. For Free and Pro tier
+                    users, Sourcegraph will not train on your data without your permission.
                 </p>
             ),
         },
@@ -154,7 +155,7 @@ export const faqData: FAQData = {
             answer: (
                 <p>
                     Sourcegraph has security and reliability controls built for the most demanding enterprises. To learn
-                    more, see our Security page.{' '}
+                    more, see our{' '}
                     <Link
                         href="/security"
                         title="Get started"
