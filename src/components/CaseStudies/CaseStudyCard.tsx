@@ -18,6 +18,12 @@ interface CaseStudy {
 // TODO: This data will eventually live in our CMS
 export const CASESTUDIES: CaseStudy[] = [
     {
+        name: 'Qualtrics',
+        logo: '/case-studies/qualtrics-logo.png',
+        title: 'Qualtrics serves over 19,000 clients and has an Engineering team of over 1,000 software developers with Sourcegraph.',
+        url: '/case-studies/how-sourcegraph-transformed-nine-development-workflow',
+    },
+    {
         name: 'Nine',
         logo: '/case-studies/nine-logo.svg',
         title: 'Nine empowers productivity and enhances security with Sourcegraph.',
