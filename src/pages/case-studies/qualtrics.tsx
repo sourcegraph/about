@@ -3,6 +3,7 @@ import { FunctionComponent, ReactNode } from 'react'
 import { Badge, Blockquote, ContentSection, Heading, Hero, Layout } from '../../components'
 import MoreCaseStudies from '../../components/CaseStudies/MoreCaseStudies'
 import SidebarCta from '../../components/CaseStudies/SidebarCta'
+import { buttonLocation, buttonStyle } from '../../data/tracking'
 
 const Qualtrics: FunctionComponent = () => (
     <Layout
@@ -136,10 +137,34 @@ minutes, leading to improved unit test coverage faster."
                                     important to us.”
                                 </p>
                                 <p className="pb-2 text-lg">
-                                    Lastly, Qualtrics was already a customer of Sourcegraph with extensive usage of Code
-                                    Search for their engineering teams. According to Gordon Fu, Quality Engineering
-                                    Manager, Qualtrics' existing trust and confidence in Sourcegraph as a vendor led to
-                                    Cody quickly bubbling to the top of their AI evaluation.
+                                    Lastly, Qualtrics was already a customer of Sourcegraph with extensive usage of{' '}
+                                    <Link
+                                        href="/code-search"
+                                        title="Code Search"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="text-black underline"
+                                    >
+                                        Code Search
+                                    </Link>{' '}
+                                    for their engineering teams. According to Gordon Fu, Quality Engineering Manager,
+                                    Qualtrics' existing trust and confidence in Sourcegraph as a vendor led to{' '}
+                                    <Link
+                                        href="/cody"
+                                        title="Cody"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.body}
+                                        data-button-type="cta"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="text-black underline"
+                                    >
+                                        Cody
+                                    </Link>{' '}
+                                    quickly bubbling to the top of their AI evaluation.
                                 </p>
                                 <p className="pb-2 text-lg">
                                     Qualtrics ultimately decided on Cody as their AI coding solution based on its

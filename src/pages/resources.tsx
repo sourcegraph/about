@@ -170,7 +170,7 @@ const Resources: FunctionComponent = () => {
                 </ContentSection>
             }
         >
-            <ContentSection background="white" parentClassName="bg-gray-50 !py-0">
+            <ContentSection background="white" parentClassName="bg-gray-50 !pb-0">
                 <div className="relative -top-[107px] -mb-[43px] -mt-[70px] flex max-w-[1280px] flex-col justify-between rounded-md border border-gray-500 bg-white px-[23px] py-[31px] shadow-sm md:-top-[84px] md:-mb-[84px] md:gap-x-[144px] lg:flex-row lg:px-[79px] lg:py-[63px]">
                     <div className="flex flex-shrink-0 flex-col items-center justify-center lg:items-start">
                         <p className="pb-1 text-center font-mono font-[500] capitalize lg:text-left">
@@ -262,7 +262,7 @@ const Resources: FunctionComponent = () => {
                     </div>
                 </div>
             </ContentSection>
-            <CodyCta source="Resources Page"/>
+            <CodyCta source="Resources Page" />
         </Layout>
     )
 }
