@@ -373,7 +373,7 @@ const PricingPage: FunctionComponent = () => {
                                             <ViewPlatformButton chooseProduct={chooseProduct} />
                                         </div>
                                     </div>
-                                    <div className="mt-0 flex flex-row items-center gap-4 xs:mt-2 ">
+                                    <div className="mt-5 flex flex-row items-center gap-4 lg:mt-0 ">
                                         <div className="flex h-[108px] w-[108px] items-center justify-center rounded-3xl border-2 bg-white">
                                             <img
                                                 src="/codesearch-logomark-default.svg"
@@ -420,22 +420,25 @@ const PricingPage: FunctionComponent = () => {
                                 features={ENTERPRISE_FEATURES_OVERVIEW}
                                 planClasses="rounded-2xl"
                             />
-                            <div className="bg-code-intel relative max-h-[422px] overflow-hidden rounded-2xl border-1 border-gray-200 md:max-h-[368px]">
-                                <div className="absolute right-20 top-2 mr-[-24px] mt-[-36px] flex h-[108px] w-[108px] items-center justify-center rounded-3xl bg-white">
-                                    <img
-                                        src="/cody-logomark-default.svg"
-                                        alt="Cody Logo"
-                                        className=" h-[56px] w-[54px]"
-                                    />
-                                </div>
-                                <div className="absolute top-12 -right-5 flex h-[108px] w-[108px] items-center justify-center rounded-3xl border-2 bg-white">
-                                    <img
-                                        src="/codesearch-logomark-default.svg"
-                                        alt="Cody Logo"
-                                        className="h-[56px] w-[54px]"
-                                    />
-                                </div>
+                            <div className="bg-code-intel relative max-h-[422px] overflow-hidden rounded-2xl border-1 border-gray-200 md:max-h-[390px]">
                                 <div className="flex flex-col items-start justify-center gap-6 p-10">
+                                    <div className="flex gap-x-3">
+                                        <div className="flex h-[108px] w-[108px] items-center justify-center rounded-3xl bg-white sm:absolute sm:right-20 sm:top-2 sm:mr-[-24px] sm:mt-[-36px]">
+                                            <img
+                                                src="/cody-logomark-default.svg"
+                                                alt="Cody Logo"
+                                                className=" h-[56px] w-[54px]"
+                                            />
+                                        </div>
+                                        <div className="flex h-[108px] w-[108px] items-center justify-center rounded-3xl border-2 bg-white sm:absolute sm:top-12 sm:-right-5">
+                                            <img
+                                                src="/codesearch-logomark-default.svg"
+                                                alt="Cody Logo"
+                                                className="h-[56px] w-[54px]"
+                                            />
+                                        </div>
+                                    </div>
+
                                     <Heading
                                         className="!text-[52px] !leading-[62px] !-tracking-[1px] !text-gray-700"
                                         size="h1"
