@@ -39,8 +39,8 @@ const Leidos: FunctionComponent = () => (
                         <div className="relative z-[10] -mt-3 flex w-full flex-col gap-x-8 rounded-lg border border-gray-500 bg-white py-16 px-12 shadow-lg md:-mt-[2px] md:flex-row xl:w-[1280px]">
                             <img
                                 className="mb-8 w-36 object-contain md:mb-0"
-                                src="/case-studies/qualtrics-logo.png"
-                                alt="Qualtrics logo"
+                                src="/case-studies/leidos-logo.svg"
+                                alt="Leidos logo"
                             />
                             <p className="mb-0 text-[18px] font-normal leading-[27px]">
                                 Leidos is a Fortune 500 innovation company rapidly addressing the world's most vexing

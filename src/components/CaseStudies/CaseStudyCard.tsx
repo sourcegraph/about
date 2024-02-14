@@ -24,6 +24,12 @@ export const CASESTUDIES: CaseStudy[] = [
         url: '/case-studies/qualtrics',
     },
     {
+        name: 'Leidos',
+        logo: '/case-studies/leidos-logo.svg',
+        title: "Leidos is a Fortune 500 innovation company rapidly addressing the world's most vexing challenges in national security and health. with Sourcegraph.",
+        url: '/case-studies/cody-leidos-maximizing-efficiency-heightened-security-ai-race',
+    },
+    {
         name: 'Nine',
         logo: '/case-studies/nine-logo.svg',
         title: 'Nine empowers productivity and enhances security with Sourcegraph.',
