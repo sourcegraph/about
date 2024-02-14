@@ -76,6 +76,25 @@ export const faqData: FAQData = {
             ),
         },
         {
+            question: 'What forms of support are available for paid Cody plans?',
+            answer: (
+                <p>
+                    Email and web portal support is available to both Cody Pro and Cody Enterprise customers, and you
+                    can{' '}
+                    <Link
+                        href="/docs/sla"
+                        title="Sourcegraph Docs"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        read more about our SLAs
+                    </Link>
+                    . Premium support with enhanced SLAs is also available as an add-on for Cody Enterprise customers.
+                </p>
+            ),
+        },
+        {
             question: 'How can I pay for Cody Pro?',
             answer: (
                 <p>
@@ -184,6 +203,12 @@ export const faqData: FAQData = {
                     Code Search requires an annual contract. <ContactLink /> to learn more.
                 </p>
             ),
+        },
+    ],
+    codeIntelligence: [
+        {
+            question: 'What is the Code Intelligence Platform?',
+            answer: 'The Code Intelligence Platform refers to the full platform offering from Sourcegraph. Today, this includes both the Cody and Code Search products, which are available at a discount when purchased as a bundle.',
         },
     ],
 }
