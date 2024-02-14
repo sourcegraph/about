@@ -172,7 +172,7 @@ const Enterprise: FunctionComponent = () => {
                         variant="transparent"
                         className="relative z-10 mx-auto flex items-center justify-center !pt-[122px] pb-8  text-center md:!mt-[-36px] md:w-[750px]  md:pb-[96px]"
                         title="Modern enterprises are powered by productive developers"
-                        subtitle="Give your teams the ability to search, write and understand massive codebases through Sourcegraph's universal and secure Code Intelligence Platform."
+                        subtitle="Give your teams the ability to search, write, and understand massive codebases through Sourcegraph's universal and secure Code Intelligence Platform."
                         centerContent={true}
                         cta={
                             <div className="mx-auto flex w-[356px] flex-col items-center justify-center gap-6 sm:flex sm:w-auto  sm:flex-row  md:gap-4">
