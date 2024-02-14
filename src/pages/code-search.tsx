@@ -54,12 +54,12 @@ const testimonials = [
 ]
 
 const codeHosts = [
-    { name: 'GitHub', icon: '/code-hosts/github.svg' },
-    { name: 'GitLab', icon: '/code-hosts/gitlab.svg' },
-    { name: 'Perforce', icon: '/code-hosts/perforce.svg' },
-    { name: 'Bitbucket', icon: '/code-hosts/bitbucket.svg' },
-    { name: 'Gerrit', icon: '/code-hosts/gerrit.svg' },
-    { name: 'any Git-based code host', icon: '/code-hosts/any-git.svg' },
+    { name: 'GitHub', icon: '/code-search/code-hosts/github.svg' },
+    { name: 'GitLab', icon: '/code-search/code-hosts/gitlab.svg' },
+    { name: 'Perforce', icon: '/code-search/code-hosts/perforce.svg' },
+    { name: 'Bitbucket', icon: '/code-search/code-hosts/bitbucket.svg' },
+    { name: 'Gerrit', icon: '/code-search/code-hosts/gerrit.svg' },
+    { name: 'any Git-based code host', icon: '/code-search/code-hosts/any-git.svg' },
 ]
 
 export const CodeSearchPage: FunctionComponent = () => (
@@ -405,7 +405,7 @@ const CodeSearchHero: FunctionComponent = () => (
                 <div className="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-r from-[#4AC1E8] via-[#A112FF] to-[#FF5543] opacity-20 blur-xl" />
                 <img
                     className=" relative mx-auto block w-full md:px-6"
-                    src="/code-search.svg"
+                    src="/code-search/code-search.svg"
                     alt="Cody Product logo"
                 />
             </div>
