@@ -648,7 +648,7 @@ const Enterprise: FunctionComponent = () => {
                             <Heading size="h5" className="!font-[590px] !leading-[25px] !tracking-[-0.25px]">
                                 To learn more, read our
                                 <Link
-                                    href="https://sourcegraph.com/whitepapers/cody-security-and-legal.pdf"
+                                    href="/whitepapers/cody-security-and-legal"
                                     title="Cody security & legal whitepaper"
                                     className="mx-[3px] text-black underline underline-offset-[4.3px] "
                                 >
