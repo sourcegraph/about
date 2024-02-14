@@ -9,7 +9,8 @@ const Leidos: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Cody + Leidos: Maximizing efficiency with heightened security in the AI race',
-            description: 'TODO-DESCRIPTION',
+            description:
+                "Leidos is a Fortune 500 innovation company rapidly addressing the world's most vexing challenges in national security and health. with Sourcegraph.",
             image: '/case-studies/qualtrics-og.png',
         }}
         className="relative"
@@ -277,7 +278,12 @@ const Leidos: FunctionComponent = () => (
                                         largeText={true}
                                         leftBorderAccent={true}
                                         quote="If you haven't yet asked Cody, don't ask me."
-                                        author={<span>TODO - AUTHOR</span>}
+                                        author={
+                                            <span>
+                                                Rob Linger,
+                                                <span className="mt-[10px] block">AI Software Architect at Leidos</span>
+                                            </span>
+                                        }
                                     />
                                 </div>
 
@@ -297,7 +303,7 @@ const Leidos: FunctionComponent = () => (
                                         largeText={true}
                                         leftBorderAccent={true}
                                         quote="I really can't express how blown away I am Cody. I can't go back to... whatever it was like before. I use Cody every day, all day long. No matter what I write, Cody helps improve it and it goes way beyond coding in some specific language, you can make Cody explain things to you every step of the way. Really, this is it, the future of coding."
-                                        author={<span>TODO - AUTHOR</span>}
+                                        author={<span>Leidos Engineer</span>}
                                     />
                                 </div>
                             </div>
