@@ -138,7 +138,7 @@ export const PRO_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Support',
-        features: ['freeSupport'],
+        features: ['proSupport'],
     },
     {
         topic: 'Developer limit',
@@ -171,7 +171,7 @@ export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Support',
-        features: ['freeSupport'],
+        features: ['enterpriseSupport'],
     },
     {
         topic: 'Developer limit',
@@ -336,6 +336,12 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     freeSupport: {
         label: 'Community support only',
+    },
+    proSupport: {
+        label: 'Support with limited SLAs',
+    },
+    enterpriseSupport: {
+        label: 'Enterprise Support',
     },
     freeLimitation: {
         label: '1 user',

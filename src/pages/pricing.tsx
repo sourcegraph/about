@@ -164,7 +164,7 @@ const Accordion: FunctionComponent<{
                 )}
                 onClick={handleToggle}
             >
-                <span className="col-span-11">{question}</span>
+                <span className="col-span-11 text-gray-700">{question}</span>
                 {isOpen ? (
                     <ChevronUpIcon
                         className="col-span-1 w-xs  justify-self-end font-bold text-gray-500"
@@ -183,7 +183,7 @@ const Accordion: FunctionComponent<{
                     isOpen ? 'max-h-[500px] ' : 'max-h-0'
                 )}
             >
-                <div className="p-5 leading-5 tracking-[-0.25px] text-gray-700">{answer}</div>
+                <div className="p-5 leading-5 tracking-[-0.25px] text-gray-500">{answer}</div>
             </div>
         </div>
     )
@@ -194,7 +194,12 @@ const CodeIntelFeatures: FunctionComponent<{ features: FeatureCluster[] }> = ({ 
         {features.map(node => (
             <div key={node.topic} className="border-0 bg-transparent px-0">
                 <div className={classNames('flex items-center pt-[10px] text-sm')}>
-                    <h5 className="mb-3 text-base font-semibold leading-5 -tracking-[0.25px]">{node.topic}</h5>
+                    <Heading
+                        size="h5"
+                        className="mb-3 !text-base !font-semibold !leading-5 !tracking-[-0.25px] !text-gray-700"
+                    >
+                        {node.topic}
+                    </Heading>
                     {node.description && (
                         <Tooltip
                             wrapperClassName="my-auto ml-xxs text-gray-300 flex items-center text-sm"
@@ -270,7 +275,9 @@ const PricingPage: FunctionComponent = () => {
             hero={
                 <>
                     <div className="container mx-auto grid pb-[62px] pt-3xl text-center">
-                        <h1 className="text-[52px] font-semibold leading-[62px] -tracking-[1px]">Pricing</h1>
+                        <Heading size="h1" className="!text-[52px] !font-semibold !leading-[62px] !tracking-[-1px]">
+                            Pricing
+                        </Heading>
                     </div>
                     <ContentSection className="flex justify-center" parentClassName="md:!py-0 pb-8">
                         {isMobile ? (
@@ -297,7 +304,8 @@ const PricingPage: FunctionComponent = () => {
                     </ContentSection>
                 </>
             }
-            childrenClassName="bg-gray-100 pt-0"
+            childrenClassName="pt-0 !bg-gray-50"
+            customFooterClassName="!bg-white"
         >
             <ContentSection className="mx-auto md:px-[80px]" parentClassName="!py-0 md:!px-0">
                 <div
@@ -349,32 +357,37 @@ const PricingPage: FunctionComponent = () => {
                                     planClasses="z-5 md:pl-[30px]"
                                 />
                             </div>
-                            <div className="bg-code-intel-card flex flex-row flex-wrap justify-between rounded-2xl border-1 border-gray-200 p-6 md:p-12">
-                                <div className="flex flex-col items-start justify-center">
-                                    <Heading className="!text-[52px] !leading-[62px] !-tracking-[1px]" size="h1">
-                                        Better together
-                                    </Heading>
-                                    <p className=" text-[24px] font-normal leading-[30px] tracking-[-0.25px] text-gray-500">
-                                        Unlock the full power of our Code Intelligence Platform
-                                    </p>
-                                    <div className="flex items-center justify-center">
-                                        <ViewPlatformButton chooseProduct={chooseProduct} />
+                            <div className="bg-[url('/backgrounds/grid-code-intel.svg')] bg-right">
+                                <div className="bg-code-intel-card flex flex-row flex-wrap justify-between rounded-2xl border-1 border-gray-200 p-6 md:p-12">
+                                    <div className="flex flex-col items-start justify-center gap-4">
+                                        <Heading
+                                            className="!text-[52px] !leading-[62px] !-tracking-[1px] !text-gray-700"
+                                            size="h1"
+                                        >
+                                            Better together
+                                        </Heading>
+                                        <p className="text-[24px] font-normal leading-[30px] tracking-[-0.25px] text-gray-500">
+                                            Unlock the full power of our Code Intelligence Platform
+                                        </p>
+                                        <div className="flex items-center justify-center">
+                                            <ViewPlatformButton chooseProduct={chooseProduct} />
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="mt-0 flex flex-row items-center gap-4 xs:mt-2">
-                                    <div className="flex h-[108px] w-[108px] items-center justify-center rounded-3xl border-2 bg-white">
-                                        <img
-                                            src="/codesearch-logomark-default.svg"
-                                            alt="Cody Logo"
-                                            className="h-[56px] w-[54px]"
-                                        />
-                                    </div>
-                                    <div className="flex h-[108px] w-[108px] items-center justify-center rounded-3xl border-2 bg-white">
-                                        <img
-                                            src="/cody-logomark-default.svg"
-                                            alt="Cody Logo"
-                                            className=" h-[56px] w-[54px]"
-                                        />
+                                    <div className="mt-0 flex flex-row items-center gap-4 xs:mt-2 ">
+                                        <div className="flex h-[108px] w-[108px] items-center justify-center rounded-3xl border-2 bg-white">
+                                            <img
+                                                src="/codesearch-logomark-default.svg"
+                                                alt="Cody Logo"
+                                                className="h-[56px] w-[54px]"
+                                            />
+                                        </div>
+                                        <div className="flex h-[108px] w-[108px] items-center justify-center rounded-3xl border-2 bg-white">
+                                            <img
+                                                src="/cody-logomark-default.svg"
+                                                alt="Cody Logo"
+                                                className=" h-[56px] w-[54px]"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -423,7 +436,10 @@ const PricingPage: FunctionComponent = () => {
                                     />
                                 </div>
                                 <div className="flex flex-col items-start justify-center gap-6 p-10">
-                                    <Heading className="!text-[52px] !leading-[62px] !-tracking-[1px]" size="h1">
+                                    <Heading
+                                        className="!text-[52px] !leading-[62px] !-tracking-[1px] !text-gray-700"
+                                        size="h1"
+                                    >
                                         Better together
                                     </Heading>
                                     <p className=" text-[24px] font-normal leading-[30px] tracking-[-0.25px] text-gray-500">
@@ -496,9 +512,12 @@ const PricingPage: FunctionComponent = () => {
                                     <div className="transition-max-height max-h-[1240px] overflow-hidden duration-700 ease-in-out">
                                         <div className="mx-auto flex flex-col gap-8 md:flex-row">
                                             <div className="">
-                                                <span className="mb-8 text-[24px] font-[590] leading-[30px] tracking-[-0.25px]">
+                                                <Heading
+                                                    size="h4"
+                                                    className="mb-8 !text-[24px] !font-semibold !leading-[30px] !tracking-[-0.25px]"
+                                                >
                                                     Cody Enterprise
-                                                </span>
+                                                </Heading>
                                                 <p className="mt-2 pb-[18px] text-[18px] font-normal leading-[27px] -tracking-[0.25px] text-gray-700">
                                                     All features of <span className="underline"> Cody Enterprise</span>,
                                                     including:
@@ -511,9 +530,12 @@ const PricingPage: FunctionComponent = () => {
                                                 </span>
                                             </div>
                                             <div className="">
-                                                <span className="mb-8 text-[24px] font-[590] leading-[30px] tracking-[-0.25px]">
+                                                <Heading
+                                                    size="h4"
+                                                    className="mb-8 !text-[24px] !font-semibold !leading-[30px] !tracking-[-0.25px]"
+                                                >
                                                     Code Search Enterprise
-                                                </span>
+                                                </Heading>
                                                 <p className="mt-2 pb-[18px] text-[18px] font-normal leading-[27px] -tracking-[0.25px] text-gray-700">
                                                     All features of{' '}
                                                     <span className="underline"> Code Search Enterprise</span>,
@@ -531,7 +553,7 @@ const PricingPage: FunctionComponent = () => {
             </ContentSection>
             <ContentSection
                 className="grid grid-cols-5 gap-[24px] pt-2 md:px-[80px] md:pt-24 md:pb-[96px]"
-                parentClassName="!py-0 "
+                parentClassName="!py-0"
             >
                 <div className="col-span-full border-t-1 md:col-span-2">
                     <Heading size="h1" className="mt-4">
