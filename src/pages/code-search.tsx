@@ -366,8 +366,8 @@ const CodeSearchHero: FunctionComponent = () => (
         <div className="mx-auto flex flex-col items-center justify-center text-center">
             <div className="mx-auto flex flex-col items-center pb-16 pt-8 md:w-[828px] md:pb-[63px] md:pt-16">
                 <div className="mb-[8px] flex items-center justify-start gap-[8px]">
-                    <div className="flex h-[41px] w-[41px] items-center justify-center rounded-xl border-2 border-[#F0F2F2] shadow-lg">
-                        <img src="/codesearch-logomark-default.svg" alt="Cody Logo" className="h-[41px] w-[41px]" />
+                    <div className="flex h-[40px] w-[40px] items-center justify-center rounded-xl border-2 border-[#F0F2F2] shadow-lg">
+                        <img src="/codesearch-logomark-default.svg" alt="Cody Logo" className="h-5 w-5" />
                     </div>
                     <Heading
                         size="h3"
