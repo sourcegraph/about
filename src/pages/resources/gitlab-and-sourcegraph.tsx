@@ -7,6 +7,7 @@ import { BackButton, Heading, Layout } from '../../components'
 import SidebarCta from '../../components/Resources/SidebarCta'
 
 const GitLabSolutionBrief: NextPage = () => {
+    const message = 'hi'
     const meta = {
         title: 'GitLab and Sourcegraph',
         // image,
@@ -75,21 +76,17 @@ const GitLabSolutionBrief: NextPage = () => {
                         <h2>Sourcegraph Features</h2>
 
                         <p>
-                            <a href="https://sourcegraph.com/cody">
-                                <strong className="font-bold">Cody</strong>
-                            </a>
-                            : Cody is an AI coding assistant, answering technical questions, fixing and generating code
-                            with high accuracy. Devs can use Cody directly in their text editor or wherever they're
-                            writing and reading code.
+                            <a href="https:\\sourcegraph.com/cody"><strong className="font-bold">Cody</strong></a>: 
+                            Cody is an AI coding assistant, answering technical questions, fixing and
+                            generating code with high accuracy. Devs can use Cody directly in their
+                            text editor or wherever they're writing and reading code.
                         </p>
 
                         <p>
-                            <a href="https://sourcegraph.com/code-search">
-                                <strong className="font-bold">Code Search</strong>
-                            </a>
-                            : With Code Search and precise code navigation, developers can find code to reuse, resolve
-                            issues and incidents faster, discover every instance of vulnerable code in milliseconds, and
-                            get answers fast without waiting for context from teammates.
+                            <a href="https:\\sourcegraph.com/code-search"><strong className="font-bold">Code Search</strong></a>:
+                            With Code Search and precise code navigation, developers can find code to reuse,
+                            resolve issues and incidents faster, discover every instance of vulnerable code
+                            in milliseconds, and get answers fast without waiting for context from teammates.
                         </p>
 
                         <p>
@@ -163,9 +160,8 @@ const GitLabSolutionBrief: NextPage = () => {
 
                         <ul>
                             <li>
-                                <strong className="font-bold">Understand code</strong>: Search and navigate all of your
-                                GitLab code. Uncover answers, gather context and understand dependencies quickly and
-                                without interrupting teammates.
+                                <strong className="font-bold">Understand code</strong>: Search and navigate all of your GitLab code. 
+                                Uncover answers, gather context and understand dependencies quickly and without interrupting teammates.
                             </li>
 
                             <li>
@@ -196,6 +192,7 @@ const GitLabSolutionBrief: NextPage = () => {
                             plan, build, secure, and deploy software to drive business outcomes faster with complete
                             transparency, consistency, and traceability.
                         </p>
+
                     </div>
                     <div className="flex-shrink">
                         <div className="sticky top-36">

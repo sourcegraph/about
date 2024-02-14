@@ -125,9 +125,13 @@ const Enterprise: FunctionComponent = () => {
     const [videoPlayed, setVideoPlayed] = useState(false)
 
     useEffect(() => {
+        const videoDuration = 3090
+        const transitionTime = 200
+
         const timeout = setTimeout(() => {
             setVideoPlayed(true)
-        }, 3090)
+        }, videoDuration - transitionTime)
+
         return () => clearTimeout(timeout)
     }, [])
 
@@ -141,25 +145,28 @@ const Enterprise: FunctionComponent = () => {
             className="bg-gray-50"
             hero={
                 <div className="">
-                    {!isMobile && !videoPlayed ? (
-                        <DotLottiePlayer
-                            className="absolute inset-0 top-[48px] z-0 h-full w-full object-cover"
-                            src="https://lottie.host/07b21a4d-e532-47b7-ab01-7bd8faf4ba33/ORhWKPLwKI.lottie"
-                            background="transparent"
-                            speed={1}
-                            direction={1}
-                            autoplay={true}
-                            loop={false}
-                            renderer="svg"
-                        />
-                    ) : (
-                        !isMobile && (
+                    {!isMobile && (
+                        <div className="absolute inset-0 top-[48px] z-0 h-full w-full transition-opacity duration-1000 ease-in-out">
+                            <DotLottiePlayer
+                                className={`absolute inset-0 top-[30px] z-0 h-full w-full object-cover opacity-${
+                                    videoPlayed ? '0' : '100'
+                                }`}
+                                src="https://lottie.host/07b21a4d-e532-47b7-ab01-7bd8faf4ba33/ORhWKPLwKI.lottie"
+                                background="transparent"
+                                speed={1}
+                                direction={1}
+                                autoplay={true}
+                                loop={false}
+                                renderer="svg"
+                            />
                             <div
-                                className="absolute inset-0 top-[48px] z-0 h-full w-full bg-contain bg-center bg-no-repeat"
+                                className={`absolute inset-0 top-[30px] z-0 h-full w-full bg-contain bg-center bg-no-repeat opacity-${
+                                    videoPlayed ? '100' : '0'
+                                }`}
                                 // eslint-disable-next-line react/forbid-dom-props
                                 style={{ backgroundImage: "url('enterprise/Enterprise-hero-still.png')" }}
                             />
-                        )
+                        </div>
                     )}
                     <Hero
                         variant="transparent"
@@ -641,7 +648,7 @@ const Enterprise: FunctionComponent = () => {
                             <Heading size="h5" className="!font-[590px] !leading-[25px] !tracking-[-0.25px]">
                                 To learn more, read our
                                 <Link
-                                    href="/whitepapers/cody-security-and-legal"
+                                    href="https://sourcegraph.com/whitepapers/cody-security-and-legal.pdf"
                                     title="Cody security & legal whitepaper"
                                     className="mx-[3px] text-black underline underline-offset-[4.3px] "
                                 >
