@@ -94,7 +94,7 @@ const securityFeatures = [
         imgSrc: ['/enterprise/notes.svg'],
         altText: 'Notes',
         heading: 'Audit logs',
-        paragraph: 'Sourcegraph logs security and access events for security teams’ peace of mine.',
+        paragraph: 'Sourcegraph logs security and access events for security teams’ peace of mind.',
     },
 ]
 
@@ -140,7 +140,7 @@ const Enterprise: FunctionComponent = () => {
             meta={{
                 title: 'Sourcegraph - Enterprise',
                 description:
-                    "Give your teams the ability to search, write and understand massive codebases through Sourcegraph's universal and secure Code Intelligence Platform.",
+                    "Give your teams the ability to search, write, and understand massive codebases through Sourcegraph's universal and secure Code Intelligence Platform.",
             }}
             className="bg-gray-50"
             hero={
@@ -387,7 +387,7 @@ const Enterprise: FunctionComponent = () => {
                         Universal
                     </Heading>
                     <p className="mb-0 text-[24px] leading-[30px] -tracking-[0.25px]">
-                        You don't have to compromise. Sourcegraph work with all major code hosts and IDEs to understand
+                        You don't have to compromise. Sourcegraph works with all major code hosts and IDEs to understand
                         all your code.
                     </p>
                 </div>
@@ -585,7 +585,7 @@ const Enterprise: FunctionComponent = () => {
                         </p>
                         <div className="text-right">
                             <Link
-                                href="https://sourcegraph.com/case-studies/how-sourcegraph-transformed-nine-development-workflow"
+                                href="https://sourcegraph.com/case-studies/nutanix-fixed-log4j-with-sourcegraph"
                                 title="Case study"
                                 className="btn flex-end p-0 text-center text-right font-semibold !-tracking-[0.25px] text-violet-500 hover:underline  md:mx-0 md:border-none  md:text-left "
                             >
