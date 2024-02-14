@@ -11,7 +11,7 @@ const Qualtrics: FunctionComponent = () => (
         meta={{
             title: 'TODO-TITLE',
             description: 'TODO-DESCRIPTION',
-            image: '/case-studies/qualtrics-og.png',
+            image: 'https://sourcegraph.com/case-studies/qualtrics-og.png',
         }}
         className="relative"
         heroAndHeaderClassName="pt-[98px] md:pt-[32px]"
