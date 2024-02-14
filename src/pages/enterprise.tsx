@@ -224,10 +224,7 @@ const Enterprise: FunctionComponent = () => {
                 parentClassName="!md:px-[80px] !py-0"
             >
                 <div
-                    className="flex h-[533px] flex-col justify-between px-0 py-16 md:px-10" // eslint-disable-next-line react/forbid-dom-props
-                    style={{
-                        backgroundImage: "url('/enterprise/grid.svg')",
-                    }}
+                    className="flex h-[533px] flex-col justify-between px-0 py-16 md:px-10"
                 >
                     <div className="flex flex-col gap-4">
                         <Heading size="h2" className="!tracking-[-1px] text-black">
@@ -240,14 +237,9 @@ const Enterprise: FunctionComponent = () => {
                     </div>
                     <div className="flex flex-row justify-center gap-7">
                         <img
-                            className="h-[130px] w-[130px] rounded-t-2xl"
-                            src="/home/branded-icons/Code-Search-squircle.svg"
-                            alt="Cody Product logo"
-                        />
-                        <img
-                            className="h-[130px] w-[130px] rounded-t-2xl"
-                            src="/home/branded-icons/cody-squircle.svg"
-                            alt="Cody Product logo"
+                            className=""
+                            src="/enterprise/cody-search.svg"
+                            alt="Cody and Code Search Product logo"
                         />
                     </div>
                 </div>
