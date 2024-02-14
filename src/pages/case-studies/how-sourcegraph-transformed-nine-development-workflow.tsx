@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 import { Badge, Blockquote, ContentSection, Heading, Hero, Layout } from '../../components'
 import MoreCaseStudies from '../../components/CaseStudies/MoreCaseStudies'
+import SidebarCta from '../../components/Resources/SidebarCta'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 
 export const CaseStudy: FunctionComponent = () => (
