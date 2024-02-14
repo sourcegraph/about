@@ -20,7 +20,7 @@ export const CASESTUDIES: CaseStudy[] = [
     {
         name: 'Qualtrics',
         logo: '/case-studies/qualtrics-logo.png',
-        title: 'Qualtrics speeds up code understanding and writes unit tests faster with Cody.'
+        title: 'Qualtrics speeds up code understanding and writes unit tests faster with Cody.',
         url: '/case-studies/qualtrics-speeds-up-unit-test-creation-and-understanding-code-with-cody',
     },
     {
