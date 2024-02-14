@@ -163,7 +163,7 @@ const Enterprise: FunctionComponent = () => {
                     )}
                     <Hero
                         variant="transparent"
-                        className="relative z-10 mx-auto flex items-center justify-center !pt-[122px] pb-8  text-center md:w-[750px] md:!mt-[-36px]  md:pb-[96px]"
+                        className="relative z-10 mx-auto flex items-center justify-center !pt-[122px] pb-8  text-center md:!mt-[-36px] md:w-[750px]  md:pb-[96px]"
                         title="Modern enterprises are powered by productive developers"
                         subtitle="Give your teams the ability to search, write and understand massive codebases through Sourcegraph's universal and secure Code Intelligence Platform."
                         centerContent={true}
@@ -223,9 +223,7 @@ const Enterprise: FunctionComponent = () => {
                 className="flex max-w-[1232px] flex-col gap-6 md:flex-row"
                 parentClassName="!md:px-[80px] !py-0"
             >
-                <div
-                    className="flex h-[533px] flex-col justify-between px-0 py-16 md:px-10"
-                >
+                <div className="flex h-[533px] flex-col justify-between px-0 py-16 md:px-10">
                     <div className="flex flex-col gap-4">
                         <Heading size="h2" className="!tracking-[-1px] text-black">
                             Improve velocity with faster code discovery and understanding
@@ -236,11 +234,7 @@ const Enterprise: FunctionComponent = () => {
                         </p>
                     </div>
                     <div className="flex flex-row justify-center gap-7">
-                        <img
-                            className=""
-                            src="/enterprise/cody-search.svg"
-                            alt="Cody and Code Search Product logo"
-                        />
+                        <img className="" src="/enterprise/cody-search.svg" alt="Cody and Code Search Product logo" />
                     </div>
                 </div>
                 <div className="h-auto rounded-2xl border-1 border-gray-200 bg-white px-6 py-16  md:max-w-[574px] md:px-20">
@@ -522,7 +516,7 @@ const Enterprise: FunctionComponent = () => {
                         <Link
                             href="https://sourcegraph.com/case-studies/how-sourcegraph-transformed-nine-development-workflow"
                             title="Case study"
-                            className="btn p-0 hover:underline  text-left font-semibold !-tracking-[0.25px] text-white  md:border-none  md:text-center "
+                            className="btn p-0 text-left  font-semibold !-tracking-[0.25px] text-white hover:underline  md:border-none  md:text-center "
                         >
                             Read the case study
                             <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
@@ -647,7 +641,7 @@ const Enterprise: FunctionComponent = () => {
                             <Heading size="h5" className="!font-[590px] !leading-[25px] !tracking-[-0.25px]">
                                 To learn more, read our
                                 <Link
-                                    href="https://sourcegraph.com/whitepapers/cody-security-and-legal.pdf"
+                                    href="/whitepapers/cody-security-and-legal"
                                     title="Cody security & legal whitepaper"
                                     className="mx-[3px] text-black underline underline-offset-[4.3px] "
                                 >
