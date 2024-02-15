@@ -350,7 +350,7 @@ const Enterprise: FunctionComponent = () => {
                 <Heading size="h2" className="mb-8 !leading-10 !tracking-[-1px] text-white md:mb-0">
                     Request a demo or start an enterprise trial
                 </Heading>
-                <div className="flex max-w-[356px] flex-col flex-wrap items-center gap-6 sm:flex-row md:gap-4">
+                <div className="flex max-w-[356px] mx-auto flex-col flex-wrap items-center gap-6 sm:flex-row md:gap-4">
                     <Link
                         className="btn btn-inverted-primary w-full border-gray-200 bg-white text-center text-violet-500 md:w-auto"
                         href="/contact/request-info"
