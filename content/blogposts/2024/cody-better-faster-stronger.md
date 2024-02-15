@@ -8,8 +8,8 @@ tags: [blog]
 slug: 'cody-better-faster-stronger'
 published: true 
 description: "Cody gets even better with multi-repo context support, faster completions, improved commands, and much more. Read on for all the details."
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-from-slow-to-simd-og.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-from-slow-to-simd-og.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-better-faster-stronger/whats-new-in-cody-og.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-better-faster-stronger/whats-new-in-cody-og.png
 ---
 
 Alongside the [general availability of Cody Enterprise today](http://sourcegraph.com/blog/cody-is-enterprise-ready), we're highlighting some updates that are now available to all Cody users. [Cody](https://sourcegraph.com/cody) is a coding assistant that uses AI and a deep understanding of your codebase to help you write and understand code faster.
