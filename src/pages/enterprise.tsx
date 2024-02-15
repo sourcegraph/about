@@ -667,20 +667,20 @@ const Enterprise: FunctionComponent = () => {
                 <Heading size="h2" className="!leading-10 !tracking-[-1px] text-white">
                     Contact us for a demo or to start an enterprise trial
                 </Heading>
-                <div className="items-center text-center">
-                    <div className="flex flex-col gap-6 sm:flex-row md:!w-auto md:gap-4">
+                <div className="text-center md:items-center">
+                    <div className="mx-auto flex max-w-[300px] sm:max-w-full  sm:w-full flex-col items-center gap-6 sm:flex-row md:!w-auto md:gap-4">
                         <Link
-                            className="btn btn-inverted-primary max-w-[356px] bg-white  md:w-auto"
+                            className="btn btn-inverted-primary w-full sm:w-[140px] bg-white  md:w-auto"
                             href="/contact/request-info"
                             title="Contact us"
                             data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation}
+                            data-button-location={buttonLocation} 
                             data-button-type="cta"
                         >
                             Contact us
                         </Link>
                         <Link
-                            className="btn max-w-[356px] items-center text-white outline  md:w-auto"
+                            className="btn w-full sm:w-[140px] items-center text-white outline  md:w-auto"
                             href="/pricing"
                             title="See Pricing"
                             data-button-style={buttonStyle.outline}
