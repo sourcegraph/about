@@ -125,8 +125,6 @@ const CodySecurityAndLegal: NextPage = () => {
                                 To respond to a user request, the Cody client communicates with the Sourcegraph
                                 instance's code context API to fetch code context that is relevant to the query.
                             </li>
-                        </ol>
-                        <ol>
                             <li>
                                 For example, if the user asks Cody "What is the `foo` API?", the code context would
                                 include files that the Sourcegraph instance determines are relevant to `foo`.
@@ -136,18 +134,12 @@ const CodySecurityAndLegal: NextPage = () => {
                                 receive file contents that their user account is permitted to view on the Sourcegraph
                                 instance.
                             </li>
-                        </ol>
-                        <ol>
                             <li>The Cody client concatenates the user request and the code context into the prompt.</li>
-                        </ol>
-                        <ol>
                             <li>
                                 For example, if the user asks Cody "What is the `foo` API?" and a single file `foo.java`
                                 is deemed relevant to the query, the prompt would resemble the following simplified
                                 example: "&lt;contents of foo.java&gt;\n\nWhat is the `foo` API?".
                             </li>
-                        </ol>
-                        <ol>
                             <li>The Cody client sends the prompt to the Sourcegraph instance's completions API.</li>
                             <li>
                                 The Sourcegraph instance's completions API forwards the prompt to the LLM's completions
