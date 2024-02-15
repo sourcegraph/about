@@ -90,7 +90,7 @@ const CareersPage: FunctionComponent = () => {
                 </a>
             </ContentSection>
 
-            <InfiniteCarousel images={carouselImages} />
+            <InfiniteCarousel duration={200} images={carouselImages} />
 
             <ContentSection background="white" parentClassName="!pt-[104px] !pb-16">
                 <div className="flex flex-wrap">

@@ -454,7 +454,7 @@ export const resourceItems: Resource[] = [
     {
         featured: false,
         title: 'Cody: security and legal whitepaper',
-        link: '/whitepapers/cody-security-and-legal.pdf',
+        link: '/whitepapers/cody-security-and-legal',
         contentType: 'whitepaper',
         subjects: ['cody'],
         description:
