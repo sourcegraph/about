@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { Badge, ContentSection, Heading } from '..'
+import { ContentSection, Heading } from '..'
 import { useAuthModal } from '../../context/AuthModalContext'
 
 interface CodyCtaProps {
