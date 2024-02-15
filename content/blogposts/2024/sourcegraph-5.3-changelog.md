@@ -42,7 +42,7 @@ As part of this change, embeddings will no longer be required for Cody Enterpris
 
 ### OSS attribution guardrails [Beta]
 
-Since the LLMs used by Cody are trained using board corpuses of data, it's rare but possible for Cody to return code that closely matches public code. OSS attribution guardrails is a new beta feature designed to reduce a team's exposure to introducing copyrighted code into their codebase.
+Since the LLMs used by Cody are trained using broad corpuses of data, it's rare but possible for Cody to return code that closely matches public code. OSS attribution guardrails is a new beta feature designed to reduce a team's exposure to introducing copyrighted code into their codebase.
 
 Guardrails works by verifying code suggested by Cody against a large corpus of public code. Cody runs this verification check any time it generates a code snippet of 10 lines or more. This impacts code returned to the user in two ways:
 
@@ -90,9 +90,9 @@ Ignore context is an experimental feature and has limitations. Filters are only 
 
 ### StarCoder for Cody Enterprise
 
-In December, we changed Cody Free and Cody Pro to use the open source StarCoder model for autocomplete. Cody previously defaulted to Claude Instant for autocomplete, and early results for StarCoder showed that the model lowered the average latency of autocomplete while also increating completion acceptance rate for most users.
+In December, we changed Cody Free and Cody Pro to use the open source StarCoder model for autocomplete. Cody previously defaulted to Claude Instant for autocomplete, and early results for StarCoder showed that the model lowered the average latency of autocomplete while also increasing completion acceptance rate for most users.
 
-Today we're ready to bring this model to the enterprise, and Code Enterprise users can now choose between Claude Instant and StarCoder for autocomplete. We're always searching for the best models to support each of Cody's functions, and to that end, we'll continue bringing new, high-performance models to Cody.
+Today we're ready to bring this model to the enterprise, and Cody Enterprise users can now choose between Claude Instant and StarCoder for autocomplete. We're always searching for the best models to support each of Cody's functions, and to that end, we'll continue bringing new, high-performance models to Cody.
 
 To switch autocompletions for your Cody Enterprise account to StarCoder, add `"completionModel": "fireworks/starcoder"` to your site configuration.
 
