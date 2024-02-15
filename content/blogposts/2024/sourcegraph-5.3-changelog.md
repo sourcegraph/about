@@ -54,7 +54,7 @@ You can see this latter functionality below:
 
 <Video
   source={{
-    mp4: 'blog/5.3/guardrails.mp4'
+    mp4: 'blog/5.3/guardrails'
   }}
   loop={true}
   title="Cody guardrails example"
