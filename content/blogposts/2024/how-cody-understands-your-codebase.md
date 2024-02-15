@@ -9,7 +9,7 @@ authors:
 tags: [blog]
 slug: 'how-cody-understands-your-codebase'
 published: true
-description: "Sourcegraph Cody uses several methods of context fetching to answer questions and provide code relevant to enterprise-scale codebases."
+description: "Context is key for AI coding assistants. Cody uses several methods of context fetching to provide answers and code relevant to enterprise-scale codebases."
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-cody-understands-your-codebase/how-cody-understands-you-code-og.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-cody-understands-your-codebase/how-cody-understands-you-code-og.png
 
