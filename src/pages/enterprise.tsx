@@ -212,7 +212,7 @@ const Enterprise: FunctionComponent = () => {
                     <Link
                         href="https://sourcegraph.com/case-studies"
                         title="Cody"
-                        className="btn p-0 text-center font-semibold  !-tracking-[0.25px]  text-violet-500 md:text-violet-500"
+                        className="btn p-0 text-center font-semibold hover:underline  !-tracking-[0.25px]  text-violet-500 md:text-violet-500"
                     >
                         Read customer stories
                         <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
@@ -227,7 +227,7 @@ const Enterprise: FunctionComponent = () => {
                 </div>
             </ContentSection>
             <ContentSection
-                className="flex max-w-[1232px] flex-col gap-6 md:flex-row"
+                className="relative flex z-10 max-w-[1232px] flex-col gap-6 md:flex-row"
                 parentClassName="!md:px-[80px] !py-0"
             >
                 <div className="flex h-[533px] flex-col justify-between px-0 py-16 md:px-10">
