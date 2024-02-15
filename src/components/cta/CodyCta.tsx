@@ -69,7 +69,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
                         '!text-5xl !leading-10 !tracking-[-1px]': isCodyPage,
                     })}
                 >
-                    Cody Enterprise <Badge text="Coming Soon" color="blurple" size="small" />
+                    Cody Enterprise
                 </Heading>
                 <Heading
                     size="h3"
