@@ -26,7 +26,7 @@ export const CASESTUDIES: CaseStudy[] = [
     {
         name: 'Leidos',
         logo: '/case-studies/leidos-logo.svg',
-        title: "Leidos is a Fortune 500 innovation company rapidly addressing the world's most vexing challenges in national security and health. with Sourcegraph.",
+        title: 'Leidos uses Cody for its security, context-awareness, and interoperability with the latest LLMs.',
         url: '/case-studies/cody-leidos-maximizing-efficiency-heightened-security-ai-race',
     },
     {
