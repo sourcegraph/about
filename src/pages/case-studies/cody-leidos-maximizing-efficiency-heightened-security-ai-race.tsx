@@ -180,12 +180,11 @@ const Leidos: FunctionComponent = () => (
                                     offering a window into how Sourcegraph communicates with the LLMs.
                                 </p>
                                 <p className="pb-2 text-lg">
-                                    With Cody, Leidos isn't held to a specific LLM. “The best model that's out there
-                                    today may not be the best tomorrow,” says Linger. “When you're working with a lot of
-                                    other solutions, you're locked in. Sourcegraph gives us more flexibility.” LLM
-                                    optionality Cody also makes it possible for Leidos to cater to its customers'
-                                    varying security needs — something not always possible with other AI coding
-                                    assistants.
+                                    With Cody, Leidos isn't held to a specific LLM. “Generative AI is a fast-moving
+                                    field, and the best model that's out there today may not be the best model
+                                    tomorrow,” says Linger. “Something better could come out tomorrow. With a lot of
+                                    solutions, you're locked into an LLM and putting a lot of faith in that model to
+                                    keep up with the pace of change. Using Cody means we can avoid that LLM lock-in.”
                                 </p>
                                 <p className="pb-2 text-lg">
                                     Ultimately, Cody empowers Leidos to focus on the work that matters most, allowing it
