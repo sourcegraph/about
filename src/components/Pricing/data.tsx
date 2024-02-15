@@ -132,7 +132,7 @@ export const PRO_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Code context',
-        description: "Advanced code contextis used to personalize Cody's responses to a user's own codebase",
+        description: "Advanced code context is used to personalize Cody's responses to a user's own codebase",
         features: ['proCodeContext'],
         topicClass: 'mb-6',
     },
@@ -161,7 +161,7 @@ export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Code context',
-        description: "Advanced code contextis used to personalize Cody's responses to a user's own codebase",
+        description: "Advanced code context is used to personalize Cody's responses to a user's own codebase",
         features: ['proCodeContext'],
         topicClass: 'mb-6',
     },

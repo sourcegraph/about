@@ -82,7 +82,7 @@ export const faqData: FAQData = {
                     Email and web portal support is available to both Cody Pro and Cody Enterprise customers, and you
                     can{' '}
                     <Link
-                        href="/docs/sla"
+                        href="https://sourcegraph.com/docs/sla"
                         title="Sourcegraph Docs"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
