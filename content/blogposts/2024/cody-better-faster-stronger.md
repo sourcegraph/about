@@ -191,7 +191,7 @@ Cody for JetBrains features many improvements in core UX and reliability. Cody f
 
 <Video
   source={{
-    mp4: 'blog/cody-1.4.0/jetbrains-features-all'
+    mp4: 'blog/cody-better-faster-stronger/jetbrains-features-all'
   }}
   loop={true}
   title="Cody for JetBrains features"
