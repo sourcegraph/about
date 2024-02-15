@@ -15,9 +15,9 @@ interface FAQData {
     [key: string]: FAQItem[]
 }
 
-const ContactLink: FunctionComponent = () => (
+const ContactLink: FunctionComponent<{ slug?: string }> = ({ slug }) => (
     <Link
-        href="/contact/request-info"
+        href={slug ? `/contact/request-info/?form_submission_source=${slug}` : '/contact/request-info/'}
         title="Contact us"
         data-button-style={buttonStyle.text}
         data-button-location={buttonLocation.body}
@@ -209,6 +209,15 @@ export const faqData: FAQData = {
         {
             question: 'What is the Code Intelligence Platform?',
             answer: 'The Code Intelligence Platform refers to the full platform offering from Sourcegraph. Today, this includes both the Cody and Code Search products, which are available at a discount when purchased as a bundle.',
+        },
+        {
+            question: 'How can I pay for the Code Intelligence Platform plan',
+            answer: (
+                <p>
+                    The Code Intelligence Platform plan requires an annual contract.{' '}
+                    <ContactLink slug="pricing-code-intelligence" /> to learn more.
+                </p>
+            ),
         },
     ],
 }

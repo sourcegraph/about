@@ -29,7 +29,7 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag
             </div>
             {feature.label === 'Guardrails' && (
                 <Badge
-                    text="coming soon"
+                    text="new"
                     size="small"
                     className="ml-1 px-1 not-italic leading-3 text-gray-500"
                     color="light-gray"

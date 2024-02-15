@@ -51,6 +51,7 @@ interface PriceItemProps {
     hasLimit?: boolean
     description?: string
     className?: string
+    amountClassName?: string
 }
 
 const GetStartedButton: FunctionComponent<{ className?: string; title?: string }> = ({
@@ -332,7 +333,14 @@ const PricingPage: FunctionComponent = () => {
                                 <PricingPlan
                                     name={<p className="mb-[13px]">Pro</p>}
                                     description="Best for pro devs and small teams"
-                                    price={<PriceItem amount={9} hasLimit={true} description="Billed monthly" />}
+                                    price={
+                                        <PriceItem
+                                            amountClassName="line-through text-gray-400"
+                                            amount={9}
+                                            hasLimit={true}
+                                            description="Free until Feb 21, 2024"
+                                        />
+                                    }
                                     buttons={<GetProButton title="Sign up for Cody Pro" />}
                                     features={PRO_FEATURES_OVERVIEW}
                                     planClasses={isMobile ? 'z-10 md:w-full' : 'z-10 md:w-[420px] md:-my-3'}
@@ -348,7 +356,7 @@ const PricingPage: FunctionComponent = () => {
                                     price={<PriceItem amount={19} hasLimit={true} />}
                                     buttons={
                                         <ContactUsButton
-                                            href="https://sourcegraph.com/contact/request-info"
+                                            href="https://sourcegraph.com/contact/request-info?form_submission_source=pricing-cody-enterprise"
                                             title="Contact sales"
                                             className="border-violet-700 text-violet-700 hover:border-violet-500 hover:bg-violet-500 hover:text-white"
                                         />
@@ -412,7 +420,7 @@ const PricingPage: FunctionComponent = () => {
                                 price={<PriceItem amount={49} hasLimit={true} description="Scales with your team" />}
                                 buttons={
                                     <ContactUsButton
-                                        href="/contact/request-info?form_submission_source=pricing-enterprise-starter"
+                                        href="/contact/request-info?form_submission_source=pricing-enterprise"
                                         title="Contact sales"
                                         className="btn-default-outlined border-violet-600 bg-violet-500 text-white hover:bg-white hover:text-violet-500"
                                     />
@@ -486,7 +494,7 @@ const PricingPage: FunctionComponent = () => {
                                                 </div>
                                             </span>
                                             <ContactUsButton
-                                                href="/contact/request-info?form_submission_source=pricing-enterprise-starter"
+                                                href="/contact/request-info?form_submission_source=pricing-code-intelligence"
                                                 title="Contact sales"
                                                 className="btn w-full border-violet-600 bg-violet-500 text-white md:w-fit"
                                             />
@@ -620,10 +628,10 @@ const TabComponent = ({ tab, selectedOption, chooseProduct, className }: Props):
     </div>
 )
 
-const PriceItem = ({ amount, description, hasLimit, className }: PriceItemProps): JSX.Element => (
+const PriceItem = ({ amount, description, hasLimit, className, amountClassName }: PriceItemProps): JSX.Element => (
     <div className={classNames('flex flex-col p-2 pb-0', className)}>
-        <p className="mb-0 items-center font-semibold leading-[43px] text-gray-500">
-            <span className="text-[36px]">${amount}</span>
+        <p className="mb-0 flex items-center font-semibold leading-[43px] text-gray-500">
+            <span className={classNames('text-[36px]', amountClassName)}>${amount}</span>
             {hasLimit && <span className="ml-[10px] text-[18px]">per user/month</span>}
         </p>
         {description && <p className="mb-0 text-[14px] font-normal leading-[19.88px] text-gray-600">{description}</p>}
