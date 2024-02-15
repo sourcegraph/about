@@ -7,7 +7,7 @@ authors:
 tags: [blog]
 slug: 'cody-better-faster-stronger'
 published: true 
-description: "Cody Feb 15 tktktktk"
+description: "Cody gets even better with multi-repo context support, faster completions, improved commands, and much more. Read on for all the details."
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-from-slow-to-simd-og.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-from-slow-to-simd-og.png
 ---
@@ -191,10 +191,10 @@ Cody for JetBrains features many improvements in core UX and reliability. Cody f
 
 <Video
   source={{
-    mp4: 'blog/cody-1.4.0/chat-ask-cody-to-explain-terminal-output'
+    mp4: 'blog/cody-1.4.0/jetbrains-features-all'
   }}
   loop={true}
-  title="Edits: New code editing options"
+  title="Cody for JetBrains features"
 />
 
 ## We're just getting started!
