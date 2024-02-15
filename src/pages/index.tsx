@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Layout, InfiniteCarousel, Heading, Badge } from '../components'
+import { ContentSection, Layout, InfiniteCarousel, Heading } from '../components'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
@@ -325,7 +325,7 @@ const Home: FunctionComponent = () => {
 
                         <div className="cta-home rounded-2xl px-14 py-16 text-white">
                             <Heading className="mb-[10px] !-tracking-[1px] md:leading-10" size="h2">
-                                Cody Enterprise <Badge text="Coming Soon" color="blurple" size="small" />
+                                Cody Enterprise
                             </Heading>
                             <p className="mb-0 text-lg text-[#FFFFFFCC]">
                                 Cody Enterprise provides additional security, scalability, and control for your
