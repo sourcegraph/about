@@ -106,6 +106,8 @@ With the launch of Cody Enterprise, we’re also introducing more capabilities t
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-enterprise-ready/analytics.png"
 />
 
+For an even deeper look at all the new Cody capabilities for developers, read [this blog post](https://sourcegraph.com/blog/cody-better-faster-stronger).
+
 With the addition of Cody Enterprise, we now have a [full suite of plans](https://sourcegraph.com/pricing) for individuals and organizations of all different sizes, and a bundle SKU for those interested in both our products:
 
 * **Cody Free** for individual users who want to use Cody for their local code.
