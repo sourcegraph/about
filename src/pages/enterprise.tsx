@@ -146,7 +146,7 @@ const Enterprise: FunctionComponent = () => {
             hero={
                 <div className="">
                     {!isMobile && (
-                        <div className="absolute inset-0 top-[48px] z-0 h-full w-full transition-opacity duration-1000 ease-in-out">
+                        <div className="absolute inset-0 top-[48px] mx-auto max-w-[1280px] z-0 h-full transition-opacity duration-1000 ease-in-out">
                             <DotLottiePlayer
                                 className={`absolute inset-0 top-[30px] z-0 h-full w-full object-cover opacity-${
                                     videoPlayed ? '0' : '100'

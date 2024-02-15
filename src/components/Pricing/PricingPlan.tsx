@@ -48,20 +48,20 @@ export const PricingPlan: FunctionComponent<Props> = ({
     const isMobile = windowWidth < breakpoints.lg
 
     return (
-        <div className={classNames('rounded border border-gray-200 bg-white', shadow, planClasses)}>
+        <div className={classNames('rounded-2xl border border-gray-200 bg-white', shadow, planClasses)}>
             <div className={classNames('rounded-t', borderColorClass)} />
             <div className={classNames('py-[40px]', paddingX)}>
                 <span className={classNames('mb-2 text-2xl font-semibold', nameClass)}>{name}</span>
                 <span
                     className={classNames(
-                        'flex border-b-1 pb-[24px] text-base font-normal leading-5 -tracking-[0.25px]',
-                        nameClass ? 'text-violet-500' : 'text-gray-500'
+                        'flex border-b-1 pb-[24px] text-base font-normal leading-[20px] -tracking-[0.25px]',
+                        nameClass ? 'text-violet-500' : 'text-gray-400'
                     )}
                 >
                     {description}
                 </span>
                 <span className="my-sm grid gap-[3px]">
-                    {price && <div className="flex items-center text-4xl">{price}</div>}
+                    {price && <div className="flex items-center text-4xl text-gray-500">{price}</div>}
                     {priceDetail && priceDetail}
                 </span>
                 {buttons}
@@ -87,8 +87,8 @@ export const PricingPlan: FunctionComponent<Props> = ({
                         <div className="ml-0 mt-8 border-t-1">
                             {features.map(node => (
                                 <div key={node.topic} className="border-0 bg-transparent px-0">
-                                    <div className={classNames('flex items-center pt-[32px] text-sm')}>
-                                        <h5 className="text-base font-semibold leading-5 -tracking-[0.25px]">
+                                    <div className={classNames('mb-2 flex items-center pt-[32px] text-sm')}>
+                                        <h5 className="text-base font-semibold leading-5 -tracking-[0.25px] text-gray-500">
                                             {node.topic}
                                         </h5>
                                         {node.description && (

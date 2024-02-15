@@ -10,8 +10,9 @@ import { buttonLocation, buttonStyle } from '../../data/tracking'
 const Qualtrics: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'TODO-TITLE',
-            description: 'TODO-DESCRIPTION',
+            title: 'Qualtrics speeds up unit test creation and understanding code with Cody',
+            description:
+                "Qualtrics's DevX team uses Cody to speed up developers' ability to understand code and drastically reduce the time it takes to write unit tests.",
             image: '/case-studies/qualtrics-og.png',
         }}
         className="relative"
@@ -36,7 +37,7 @@ const Qualtrics: FunctionComponent = () => (
                             size="h1"
                             className="relative -top-3 z-10 pb-16 !text-[52px] md:-top-[2px] lg:w-[949px]"
                         >
-                            TODO-TITLE FOR QUALTRICS
+                            Qualtrics speeds up unit test creation and understanding code with Cody
                         </Heading>
                         <div className="relative z-[10] -mt-3 flex w-full flex-col gap-x-8 rounded-lg border border-gray-500 bg-white py-16 px-12 shadow-lg md:-mt-[2px] md:flex-row xl:w-[1280px]">
                             <img

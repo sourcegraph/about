@@ -11,7 +11,7 @@ const Qualtrics: FunctionComponent = () => (
         meta={{
             title: 'Qualtrics speeds up unit test creation and understanding code with Cody',
             description:
-                "Qualtrics's DevX team uses Cody to speed up developers' ability to understand code and drastically reduce the time it takes to write unit tests.",
+                "Qualtrics' DevX team uses Cody to speed up developers' ability to understand code and drastically reduce the time it takes to write unit tests.",
             image: 'https://sourcegraph.com/case-studies/qualtrics-og.png',
         }}
         className="relative"
