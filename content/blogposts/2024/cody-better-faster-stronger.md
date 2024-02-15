@@ -63,7 +63,7 @@ Today we support multi-line completions for the following file types: `c`, `cpp`
 
 ### Local inference with Ollama (Experimental)
 
-Cody allows you to run local inference with [Ollama](https://ollama.com/). This means that you can leverage Cody offline and in air-gapped environments. [Community members](https://www.youtube.com/watch?v=gY_E3QBZ-NE) have taken notice and started testing various local LLMs to compare and improve their workflows.
+Cody allows you to run local inference with [Ollama](https://ollama.com/). This means that you can leverage Cody offline and in air-gapped environments to run popular models like `deepseek-coder:6.7b` and `codellama:7b`. [Community members](https://www.youtube.com/watch?v=gY_E3QBZ-NE) have taken notice and started testing various local LLMs to compare and improve their workflows.
 
 <Video
   source={{
