@@ -15,7 +15,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-cody-und
 
 ---
 
-We often say that [Cody](sourcegraph.com/cody) uses a deep understanding of your codebase to help you write and understand code faster. Meanwhile, we’re frequently asked: How does Cody understand _my_ codebase? And what exactly does that mean?
+We often say that [Cody](https://sourcegraph.com/cody) uses a deep understanding of your codebase to help you write and understand code faster. Meanwhile, we’re frequently asked: How does Cody understand _my_ codebase? And what exactly does that mean?
 
 In building Cody, we found that Large Language Models (LLMs), when applied to specific use cases, are only as good as the context they’re given. For Cody, those use cases are writing, understanding, and answering questions about code. Cody needs the context of a user’s codebase to do those things effectively. 
 
