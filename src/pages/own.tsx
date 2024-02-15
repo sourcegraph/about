@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { ContentSection, FeatureRoadMap, Heading, Layout } from '../components'
+import { Badge, ContentSection, FeatureRoadMap, Heading, Layout } from '../components'
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
 import { buttonLocation } from '../data/tracking'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
