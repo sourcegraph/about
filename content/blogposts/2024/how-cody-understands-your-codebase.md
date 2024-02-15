@@ -156,8 +156,8 @@ Although we’re excited about the improvements coming from this change, we beli
 
 TL;DR, Cody Enterprise has two main ways of retrieving context today:
 
-* For chat and commands, Cody uses a combination of local context + remote Sourcegraph search to find context from a user’s entire codebase.
-* For autocomplete, Cody identifies a user’s intent and then pulls local context from the IDE to generate a response extremely quickly.
+* For chat and commands, Cody uses a combination of local context + remote Sourcegraph search to find context from a user’s entire codebase
+* For autocomplete, Cody identifies a user’s intent and then pulls local context from the IDE to generate a response extremely quickly
 
 However, we’re constantly experimenting with new ways to improve Cody’s context retrieval in various dimensions:
 
