@@ -20,8 +20,14 @@ export const CASESTUDIES: CaseStudy[] = [
     {
         name: 'Qualtrics',
         logo: '/case-studies/qualtrics-logo.png',
-        title: 'Qualtrics speeds up code understanding and writes unit tests faster with Cody.',
-        url: '/case-studies/qualtrics-speeds-up-unit-test-creation-and-understanding-code-with-cody',
+        title: 'Qualtrics serves over 19,000 clients and has an Engineering team of over 1,000 software developers with Sourcegraph.',
+        url: '/case-studies/qualtrics',
+    },
+    {
+        name: 'Leidos',
+        logo: '/case-studies/leidos-logo.svg',
+        title: 'Leidos uses Cody for its security, context-awareness, and interoperability with the latest LLMs.',
+        url: '/case-studies/cody-leidos-maximizing-efficiency-heightened-security-ai-race',
     },
     {
         name: 'Nine',
