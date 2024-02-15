@@ -208,7 +208,7 @@ const Enterprise: FunctionComponent = () => {
                 parentClassName="!py-0 md:px-[80px]"
             >
                 <div className="z-10 flex flex-col items-center gap-6  text-center md:w-[615px]">
-                    <h2>Used by 4/5 FAANG and 6/10 largest software companies in the world</h2>
+                    <h2>Used by 6 of the 10 largest software companies in the world</h2>
                     <Link
                         href="https://sourcegraph.com/case-studies"
                         title="Cody"
@@ -481,7 +481,7 @@ const Enterprise: FunctionComponent = () => {
                                 8+
                             </p>
                             <Heading size="h3" className="!leading-[30px] !tracking-[-0.25px]">
-                                Terabytes of code @ finance industry customer
+                                Terabytes of code at finance industry customer
                             </Heading>
                         </div>
                         <div>
@@ -489,7 +489,7 @@ const Enterprise: FunctionComponent = () => {
                                 100,000+
                             </p>
                             <Heading size="h3" className="!leading-[30px] !tracking-[-0.25px]">
-                                Repositories @ finance industry customer
+                                Repositories at finance industry customer
                             </Heading>
                         </div>
                     </div>
