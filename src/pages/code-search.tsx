@@ -326,7 +326,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                     with a free trial.
                 </Heading>
                 <div className="flex max-w-[356px] flex-col flex-wrap gap-4 pt-4 sm:flex-row">
-                    <Link href="/demo" className="btn btn-primary">
+                    <Link href="/demo" className="btn btn-primary max-w-[216px]">
                         Contact us for a demo
                     </Link>
                     <Link

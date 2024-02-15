@@ -10,6 +10,7 @@ export interface FeatureCluster {
 export interface FeatureInfo {
     label: string | ReactNode
     description?: string | ReactNode
+    badgeLabel?: string
 }
 
 interface FeatureDictionary {
@@ -84,6 +85,10 @@ export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
         topic: 'Enhanced support',
         features: ['slaSupport', 'technicalAdvisor', 'professionalServices'],
     },
+    {
+        topic: 'Developer minimum',
+        features: ['greaterThan10'],
+    },
 ]
 
 /** Free feature set */
@@ -97,21 +102,22 @@ export const FREE_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['freeMessageAndcommands'],
     },
     {
-        topic: 'Code context and personalization',
-        features: ['freeCodeContext'],
+        topic: 'Code context',
+        description: "Advanced code context is used to personalize Cody's responses to a user's own codebase",
+        features: ['freeAdvancedContext', 'freeAvailableAdvancedContext'],
         topicClass: 'mb-6',
     },
     {
-        topic: 'LLM Support',
-        features: ['freeLLMsupport'],
-    },
-    {
         topic: 'Compatibility',
-        features: ['supportedCodeEditors', 'supportedPL', 'supportedLangs', 'supportCode'],
+        features: ['supportedCodeEditors', 'supportedPL', 'supportCode'],
     },
     {
         topic: 'Support',
         features: ['freeSupport'],
+    },
+    {
+        topic: 'Developer limit',
+        features: ['freeLimitation'],
     },
 ]
 
@@ -125,21 +131,22 @@ export const PRO_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['proMessageAndcommands'],
     },
     {
-        topic: 'Code context and personalization',
+        topic: 'Code context',
+        description: "Advanced code context is used to personalize Cody's responses to a user's own codebase",
         features: ['proCodeContext'],
         topicClass: 'mb-6',
     },
     {
-        topic: 'LLM Support',
-        features: ['proLLMchat', 'proLLMcommands'],
-    },
-    {
         topic: 'Compatibility',
-        features: ['supportedCodeEditors', 'supportedPL', 'supportedLangs', 'supportCode'],
+        features: ['supportedCodeEditors', 'supportedPL', 'supportCode'],
     },
     {
         topic: 'Support',
-        features: ['freeSupport'],
+        features: ['proSupport'],
+    },
+    {
+        topic: 'Developer limit',
+        features: ['freeLimitation'],
     },
 ]
 
@@ -153,17 +160,26 @@ export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['proMessageAndcommands'],
     },
     {
-        topic: 'Code context and personalization',
-        features: ['entCodeContext'],
+        topic: 'Code context',
+        description: "Advanced code context is used to personalize Cody's responses to a user's own codebase",
+        features: ['proCodeContext'],
         topicClass: 'mb-6',
     },
     {
-        topic: 'LLM Support',
-        features: ['entLLMchoices', 'BringYourLLMKey', 'BringYourLLM'],
+        topic: 'Enterprise Features',
+        features: ['byoLLMKey', 'st', 'ss', 'guardrails'],
     },
     {
-        topic: 'Enterprise Features',
-        features: ['everythingInPro', 'entSupport', 'flexDeployment', 'entAdmin', 'guardrails'],
+        topic: 'Compatibility',
+        features: ['supportedCodeEditors', 'supportedPL', 'supportCode'],
+    },
+    {
+        topic: 'Support',
+        features: ['enterpriseSupport'],
+    },
+    {
+        topic: 'Developer minimum',
+        features: ['greaterThan50'],
     },
 ]
 
@@ -271,14 +287,15 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     freeAutocompletions: {
         label: (
-            <p className="m-0 text-[16px] leading-5 -tracking-[0.25px]">
+            <p className="m-0 text-[16px] leading-5 tracking-[-0.25px]">
                 <span className="font-bold">500 </span> Autocompletions per month
             </p>
         ),
+        description: 'Autocompletions per month',
     },
     freeMessageAndcommands: {
         label: (
-            <p className="m-0 text-[16px] leading-5 -tracking-[0.25px]">
+            <p className="m-0 text-[16px] font-normal -tracking-[0.25px]">
                 <span className="font-bold">20 </span> Messages and Commands per month
             </p>
         ),
@@ -295,38 +312,76 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Spanish, French, German, Italian, Chinese, Japanese, Korean, Latin, and Esperanto',
     },
     supportedCodeEditors: {
-        label: 'VS Code, JetBrains, IDEs, and NeoVim',
+        label: 'All supported code editors',
+        description: (
+            <ul className="ml-0 list-none">
+                <li>VS Code</li>
+                <li>JetBrains</li>
+                <li>Neovim</li>
+                <li className="text-xs text-gray-400">emacs (coming soon)</li>
+            </ul>
+        ),
+    },
+    freeAdvancedContext: {
+        label: (
+            <p className="mt-2 text-[14px] font-normal leading-[19.88px]">
+                <span className="font-bold">Limited </span> Advanced context is available for up to 5MB of personal code
+            </p>
+        ),
+    },
+    freeAvailableAdvancedContext: {
+        label: 'Advanced context is available for any git-based code host',
     },
     supportedPL: {
-        label: 'All major coding languages',
-        description: 'JavaScript, TypeScript, HTML/CSS, Python, Java, C/C++, C#, PHP, and more',
+        label: 'Supports all programming languages',
     },
     supportCode: {
-        label: 'All major code hosts',
-        description: 'GitHub, GitLab, Bitbucket, Gerrit, Azure DevOps',
+        label: 'Supports code from all code hosts',
     },
     freeSupport: {
-        label: 'Community support through Discord',
+        label: 'Community support only',
+    },
+    proSupport: {
+        label: 'Support with limited SLAs',
+    },
+    enterpriseSupport: {
+        label: 'Enterprise Support',
     },
     freeLimitation: {
         label: '1 user',
     },
+    greaterThan10: {
+        label: '>10 users',
+    },
+    greaterThan50: {
+        label: '>50 users',
+    },
     proAutoCompletions: {
         label: (
             <p className="m-0 text-[16px] leading-5 -tracking-[0.25px]">
-                <span className="font-bold">Unlimited </span> Autocompletions
+                <span className="font-semibold">Unlimited </span> Autocompletions
             </p>
         ),
     },
     proMessageAndcommands: {
         label: (
             <p className="m-0 text-[16px] leading-5 -tracking-[0.25px]">
-                <span className="font-bold">Unlimited</span> Messages and Commands
+                <span className="font-semibold">Unlimited</span> Messages and Commands
             </p>
         ),
     },
+    codeIntAutoCompletions: {
+        label: 'Unlimited Autocompletions',
+    },
+    codeIntMessageAndcommands: {
+        label: 'Unlimited Messages and Commands',
+    },
     proCodeContext: {
-        label: <p className="m-0">Personalization for larger codebases</p>,
+        label: (
+            <p className="m-0 mt-2">
+                <span className="font-semibold">Unlimited </span> Advanced context for private codebases
+            </p>
+        ),
     },
     entCodeContext: {
         label: <p className="m-0">Advanced personalization for enterprise codebases</p>,
@@ -342,6 +397,15 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     entAdmin: {
         label: 'Enterprise admin and security features (SSO, SAML, SCIM, Audit Logs, etc.)',
+    },
+    byoLLMKey: {
+        label: 'Bring your own LLM key',
+    },
+    st: {
+        label: 'Single Tenant',
+    },
+    ss: {
+        label: 'SAML / SSO',
     },
     guardrails: {
         label: 'Guardrails',
@@ -362,9 +426,27 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     BringYourLLMKey: {
         label: 'Bring your own LLM key',
+        description: 'Claude Instant 1.2, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview, Mixtral',
     },
     BringYourLLM: {
         label: 'Bring your own LLM',
+    },
+    codeIntelEntLLMchoices: {
+        label: 'Flexible LLM choices',
+        description: 'Claude Instant 1.2, StarCoder, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview',
+    },
+    codeIntelBringYourLLMKey: {
+        label: 'Bring your own LLM key',
+        description: 'Bring your own key with Azure OpenAI and Amazon Bedrock',
+    },
+    codeIntelAdminControls: {
+        label: 'Admin controls',
+        description: 'Use RBAC to manage individual and group permissions to Cody Enterprise',
+    },
+    codeIntelGuardrails: {
+        label: 'Guardrails',
+        badgeLabel: 'new',
+        description: "We scan Cody's output for OSS code, reducing the risk of copyrighted code in suggestions",
     },
 }
 
@@ -396,4 +478,71 @@ export const SPOTLIGHT_FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'Professional services available',
         description: '',
     },
+    advancedCodeContext: {
+        label: 'Advanced code context for enterprise codebases',
+    },
+    codeIntelCodeSearch: {
+        label: 'Code Search',
+    },
+    codeIntelCodeNavigation: {
+        label: 'Code navigation',
+    },
+    codeIntelBatchChanges: {
+        label: 'Batch Changes',
+    },
+    codeIntelCodeInsights: {
+        label: 'Code Insights',
+    },
+    codeIntelNotebooks: {
+        label: 'Notebooks',
+    },
+    codeIntelCodeMonitoring: {
+        label: 'Code monitoring',
+    },
+    codeIntelComprehensiveApi: {
+        label: 'Comprehensive API',
+    },
 }
+
+export const CODE_INTELLIGENCE_CE_FEATURES: FeatureCluster[] = [
+    {
+        topic: 'Features',
+        features: ['codeIntAutoCompletions', 'codeIntMessageAndcommands'],
+    },
+    {
+        topic: 'Code context and personalization',
+        features: ['advancedCodeContext'],
+    },
+    {
+        topic: 'LLM support',
+        features: ['codeIntelEntLLMchoices', 'codeIntelBringYourLLMKey'],
+    },
+    {
+        topic: 'Advanced security',
+        features: ['codeIntelGuardrails', 'codeIntelAdminControls'],
+        topicClass: 'mb-6',
+    },
+]
+
+export const CODE_INTELLIGENCE_CSE_FEATURES: FeatureCluster[] = [
+    {
+        topic: 'Features',
+        features: [
+            'codeIntelCodeSearch',
+            'codeIntelBatchChanges',
+            'codeIntelCodeInsights',
+            'codeIntelNotebooks',
+            'codeIntelCodeMonitoring',
+            'codeIntelComprehensiveApi',
+        ],
+    },
+    {
+        topic: 'Code host integrations',
+        features: ['otherCodeHosts'],
+    },
+    {
+        topic: 'Advanced security',
+        features: ['ssoSaml', 'customPerms'],
+        topicClass: 'mb-6',
+    },
+]
