@@ -373,7 +373,7 @@ const PricingPage: FunctionComponent = () => {
                                             <ViewPlatformButton chooseProduct={chooseProduct} />
                                         </div>
                                     </div>
-                                    <div className="mt-5 flex flex-row items-center gap-4 lg:mt-0 ">
+                                    <div className="mt-5 flex flex-row items-center gap-4 lg:mt-0">
                                         <div className="flex h-[108px] w-[108px] items-center justify-center rounded-3xl border-2 bg-white">
                                             <img
                                                 src="/codesearch-logomark-default.svg"
@@ -438,7 +438,6 @@ const PricingPage: FunctionComponent = () => {
                                             />
                                         </div>
                                     </div>
-
                                     <Heading
                                         className="!text-[52px] !leading-[62px] !-tracking-[1px] !text-gray-700"
                                         size="h1"

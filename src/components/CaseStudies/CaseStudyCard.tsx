@@ -18,6 +18,18 @@ interface CaseStudy {
 // TODO: This data will eventually live in our CMS
 export const CASESTUDIES: CaseStudy[] = [
     {
+        name: 'Qualtrics',
+        logo: '/case-studies/qualtrics-logo.png',
+        title: 'Qualtrics serves over 19,000 clients and has an Engineering team of over 1,000 software developers with Sourcegraph.',
+        url: '/case-studies/qualtrics',
+    },
+    {
+        name: 'Leidos',
+        logo: '/case-studies/leidos-logo.svg',
+        title: 'Leidos uses Cody for its security, context-awareness, and interoperability with the latest LLMs.',
+        url: '/case-studies/cody-leidos-maximizing-efficiency-heightened-security-ai-race',
+    },
+    {
         name: 'Nine',
         logo: '/case-studies/nine-logo.svg',
         title: 'Nine empowers productivity and enhances security with Sourcegraph.',
@@ -120,16 +132,38 @@ export const CaseStudyCard: FunctionComponent<{
 }) => (
     <div className="grow">
         <div className="md:pr-12">
-            <img
-                className={classNames('mb-6 max-h-[60px] max-w-[135px]', { 'brightness-0': bwLogo }, logoClassName)}
-                src={logo}
-                alt={`${name} logo`}
-            />
+            {/* company logo */}
+            {url.includes('http') ? (
+                <a href={url} target="_blank" rel="nofollow noreferrer" title={linkText + ': ' + title}>
+                    <img
+                        className={classNames(
+                            'mb-6 max-h-[60px] max-w-[135px]',
+                            { 'brightness-0': bwLogo },
+                            logoClassName
+                        )}
+                        src={logo}
+                        alt={`${name} logo`}
+                    />
+                </a>
+            ) : (
+                <Link href={url} title={linkText + ': ' + title}>
+                    <img
+                        className={classNames(
+                            'mb-6 max-h-[60px] max-w-[135px]',
+                            { 'brightness-0': bwLogo },
+                            logoClassName
+                        )}
+                        src={logo}
+                        alt={`${name} logo`}
+                    />
+                </Link>
+            )}
 
             {altTitle && <h5>{altTitle}</h5>}
 
             <p className={titleClassName}>{title}</p>
 
+            {/* link to read case study */}
             {url.includes('http') ? (
                 <a
                     href={url}
