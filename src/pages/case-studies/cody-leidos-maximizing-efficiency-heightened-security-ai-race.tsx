@@ -59,7 +59,7 @@ const Leidos: FunctionComponent = () => (
                     <div className="sticky top-[54px] w-full md:w-[378px]">
                         <SidebarContent
                             title="75% reduction in time spent answering questions"
-                            content="Senior Leidos engineers reduced time spent answering teammates' questions from 8 hours/week to 2 hours/week thanks to the “Ask Cody first” policy"
+                            content="Senior Leidos engineers reduced time spent answering teammates' questions from 8 hours per week to 2 hours per week thanks to the “Ask Cody first” policy."
                         />
                         <SidebarContent
                             title="50% reduction in time spent reading and orienting on existing legacy code"
@@ -69,7 +69,7 @@ const Leidos: FunctionComponent = () => (
                         <SidebarContent
                             title="Value-add time on task tripled (coding, writing tests, reviewing others' code)"
                             content="This was possible due to time reduction in other value-detracting tasks (helping 
-                              others, reading, documentation)"
+                              others, reading, documentation)."
                         />
 
                         <SidebarCta />
@@ -95,7 +95,7 @@ const Leidos: FunctionComponent = () => (
                     />
 
                     <CaseStudyContent
-                        title="Leidos's AI Initiative"
+                        title="Leidos' AI Initiative"
                         content={
                             <div className="w-full md:w-[90%] lg:w-[85%]">
                                 <p className="pb-2 text-lg">
@@ -107,7 +107,7 @@ const Leidos: FunctionComponent = () => (
                                         <strong className="font-bold">Security:</strong> What would the coding assistant
                                         do with their data? Where would their information go? How, if at all, could the
                                         AI coding assistant protect their data from unnecessary and potentially risky
-                                        exposure? Given Leidos's clientele across government and defense industries,
+                                        exposure? Given Leidos' clientele across government and defense industries,
                                         security was the absolute highest priority.
                                     </li>
                                     <li>
@@ -208,13 +208,13 @@ const Leidos: FunctionComponent = () => (
                                         development. Software is critical to delivering nearly all capabilities to their
                                         customers, so the less time spent reading, interpreting and getting common
                                         software code elements to work, the more time spent building the actual
-                                        solutions and technology advancements their customers need
+                                        solutions and technology advancements their customers need.
                                     </li>
                                     <li>
                                         To improve its products available to customers – in many cases, Leidos is hired
                                         to deliver solutions to the customer. The faster Leidos builds and advances
-                                        those solutions, the greater their overall ability to be their customers' go to
-                                        provider and succeed as a business
+                                        those solutions, the greater their overall ability to be their customers' go-to
+                                        provider and succeed as a business.
                                     </li>
                                     <li>
                                         To amplify existing contracts already using Cody – Many Leidos customers aren't
