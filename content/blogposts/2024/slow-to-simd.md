@@ -21,7 +21,7 @@ Spoiler: it's a dot product.
 
 At Sourcegraph, we're working on a Code AI tool named [Cody](https://sourcegraph.com/cody). In order for Cody to answer
 questions well, we need to give them enough [context](https://about.sourcegraph.com/blog/cheating-is-all-you-need) to
-work with. One of the [ways we do this](https://about.sourcegraph.com/whitepaper/cody-context-architecture.pdf) is by
+work with. One of the ways we do this is by
 leveraging [embeddings](https://platform.openai.com/docs/guides/embeddings).
 
 For our purposes, an [embedding](https://developers.google.com/machine-learning/crash-course/embeddings/video-lecture)
