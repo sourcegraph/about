@@ -21,7 +21,7 @@ export const CASESTUDIES: CaseStudy[] = [
         name: 'Qualtrics',
         logo: '/case-studies/qualtrics-logo.png',
         title: 'Qualtrics serves over 19,000 clients and has an Engineering team of over 1,000 software developers with Sourcegraph.',
-        url: '/case-studies/qualtrics',
+        url: '/case-studies/qualtrics-speeds-up-unit-tests-and-code-understanding-with-cody',
     },
     {
         name: 'Leidos',
