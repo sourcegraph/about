@@ -26,7 +26,7 @@ We are building Cody out in [public](https://github.com/sourcegraph/cody), but w
 
 As we've [noted](https://sourcegraph.com/blog/cheating-is-all-you-need) from the very start, along with model training data, context is the single biggest determinant of response quality in AI coding tools.
 
-![Context](https://lh7-us.googleusercontent.com/YLbTX0xKB_A6WL9sZluilR-P0VoaAgBQIvJDBX4UZ4M21xn7fLlAzikHkp_BxVVb8zLEFY-MTV_MejRLift9f5wCwrK0Ru7yDJwBsMWkylzQa6Mucpf_Rb0bopH6xxvHz-8V5SIASVkPFkuIb6UidVY)
+![Cody Context Diagram](https://storage.googleapis.com/sourcegraph-assets/blog/cody-better-faster-stronger/context-diagram.png)
 
 We are constantly experimenting with various context sources ranging from embeddings to SPLADE and Sourcegraph search. Check out a more detailed post on [how Cody knows your entire codebase here](http://sourcegraph.com/blog/how-cody-understands-your-codebase). In this post, we wanted to share our design philosophy on how we are approaching the evolution of Cody, from context to AI-native user experiences and more.
 
@@ -40,10 +40,10 @@ Autocomplete allows Cody to intelligently provide single and multi-line code com
 
 <Video
   source={{
-    mp4: 'blog/cody-1.4.0/chat-ask-cody-to-explain-terminal-output'
+    mp4: 'blog/cody-better-faster-stronger/cody-autocomplete'
   }}
   loop={true}
-  title="Edits: New code editing options"
+  title="Cody multi-line autocomplete"
 />
 
 For autocomplete, our team has been laser-focused on ensuring Cody delivers the highest quality completions with industry-leading speed.
@@ -52,13 +52,7 @@ For autocomplete, our team has been laser-focused on ensuring Cody delivers the 
 
 After a number of optimizations in autocomplete logic, and improved traffic routing between the extension and LLM providers, autocompletions are now **24.1%** faster for single line completions, and **24.9%** faster for multi-line completions.
 
-<Video
-  source={{
-    mp4: 'blog/cody-1.4.0/chat-ask-cody-to-explain-terminal-output'
-  }}
-  loop={true}
-  title="Edits: New code editing options"
-/>
+![Median autocomplete performance improvements](https://storage.googleapis.com/sourcegraph-assets/blog/cody-better-faster-stronger/median-autocomplete-performance.png)
 
 ### Improved multi-line completion quality
 
@@ -73,10 +67,10 @@ Cody allows you to run local inference with [Ollama](https://ollama.com/). This 
 
 <Video
   source={{
-    mp4: 'blog/cody-1.4.0/chat-ask-cody-to-explain-terminal-output'
+    mp4: 'blog/cody-better-faster-stronger/ollama-example'
   }}
   loop={true}
-  title="Edits: New code editing options"
+  title="Ollama Local Inference Example"
 />
 
 ## Chat
@@ -89,10 +83,10 @@ For Cody Enterprise users, we are adding the ability to add multiple repositorie
 
 <Video
   source={{
-    mp4: 'blog/cody-1.4.0/chat-ask-cody-to-explain-terminal-output'
+    mp4: 'blog/cody-better-faster-stronger/multi-repo-support'
   }}
   loop={true}
-  title="Edits: New code editing options"
+  title="Cody multi-repo support"
 />
 
 ### LLM Choice
@@ -103,10 +97,10 @@ Our philosophy when it comes to the underlying LLM is that we want to put you in
 
 <Video
   source={{
-    mp4: 'blog/cody-1.4.0/chat-ask-cody-to-explain-terminal-output'
+    mp4: 'blog/cody-better-faster-stronger/choose-llm'
   }}
   loop={true}
-  title="Edits: New code editing options"
+  title="LLM Choice"
 />
 
 For Cody Enterprise users, your admin may select a subset of LLMs for your specific instance that matches your company's needs.
@@ -117,10 +111,10 @@ Cody always cites its sources. This means that you as the developer can inspect 
 
 <Video
   source={{
-    mp4: 'blog/cody-1.4.0/chat-ask-cody-to-explain-terminal-output'
+    mp4: 'blog/cody-better-faster-stronger/context'
   }}
   loop={true}
-  title="Edits: New code editing options"
+  title="Cody enhanced context"
 />
 
 ### Better control over context
@@ -129,10 +123,10 @@ You can explicitly tell Cody to use a file for context by mentioning the file us
 
 <Video
   source={{
-    mp4: 'blog/cody-1.4.0/chat-ask-cody-to-explain-terminal-output'
+    mp4: 'blog/cody-better-faster-stronger/at-mention'
   }}
   loop={true}
-  title="Edits: New code editing options"
+  title="Explicity specify files for Cody context"
 />
 
 ### New Shortcuts
@@ -145,7 +139,13 @@ For Chat, we've added new keyboard shortcuts to streamline the process of starti
 
 - Cmd + / (Windows + / on Windows) to start a new chat within the chat panel.
 
-![](https://lh7-us.googleusercontent.com/bI3StoqAa8PVBK3jAGKLp2-axMPH0y70p4VYV6wr67OpFYbxKSSnBijMF9u5vQCz-KWgNCOL3VDJ1ePpx2BYi9dFLPKf_nsFSVt3v95-Z4kpUgIuL8ioJ9T7LaA0BdkO2oePyXZj2s2_aOcm_8CCfAE)
+<Video
+  source={{
+    mp4: 'blog/cody-better-faster-stronger/new-chat'
+  }}
+  loop={true}
+  title="New chat shortcuts"
+/>
 
 
 ## Commands
@@ -158,22 +158,19 @@ Cody has a redesigned command palette that makes it fast to grok and edit specif
 
 <Video
   source={{
-    mp4: 'blog/cody-1.4.0/chat-ask-cody-to-explain-terminal-output'
+    mp4: 'blog/cody-better-faster-stronger/new-command-palette'
   }}
   loop={true}
-  title="Edits: New code editing options"
+  title="Redesigned Cody command palette"
 />
 
 The new command palette gives you more control over the code you want the command to execute on. Additionally, with the new command palette you can have the same context selection capabilities as with chat, so using the at-mention to bring in specific files or symbols works the same as well as the ability to choose which LLM model you want to use.
 
 The legacy command palette can still be accessed via the Opt + C (Alt + C on windows) shortcut. Originally, you could run commands directly from the chat window, but it confused users because it wasn't clear where the input for that command came from, e.g. which code do you want to edit? In this release, that's been removed in favor of a much clearer option of making your select code in the editor and then executing a command by clicking on the Cody logo in the top right corner of the Chat window.
 
-<Video
-  source={{
-    mp4: 'blog/cody-1.4.0/chat-ask-cody-to-explain-terminal-output'
-  }}
-  loop={true}
-  title="Edits: New code editing options"
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-1.4.0/chat-access-cody-commands-from-chat-v2.png"
+  alt="Access Cody commands from chat"
 />
 
 ### Streamlined Test Generation
@@ -182,10 +179,10 @@ Our beloved Cody command to generate unit tests has also become much easier to u
 
 <Video
   source={{
-    mp4: 'blog/cody-1.4.0/chat-ask-cody-to-explain-terminal-output'
+    mp4: 'blog/cody-better-faster-stronger/generate-tests'
   }}
   loop={true}
-  title="Edits: New code editing options"
+  title="Generate Unit Tests Command"
 />
 
 ## Cody for JetBrains IDE
