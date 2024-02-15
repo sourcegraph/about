@@ -32,7 +32,7 @@ const CodySecurityAndLegal: NextPage = () => {
                 </div>
 
                 <div className="mt-14 flex flex-col gap-10 md:flex-row">
-                    <div className="prose max-w-[80ch] prose-h2:font-semibold prose-a:text-violet-500 prose-a:no-underline hover:prose-a:text-violet-400 hover:prose-a:underline prose-ol:ml-0 prose-ul:ml-0 lg:prose-lg">
+                    <div className="prose max-w-[80ch] prose-h2:font-semibold prose-a:text-violet-500 prose-a:no-underline hover:prose-a:text-violet-400 hover:prose-a:underline prose-code:before:hidden prose-code:after:hidden prose-ol:ml-0 prose-ul:ml-0 lg:prose-lg">
                         <p>This document was last updated on February 14, 2024, and covers Cody Enterprise.</p>
                         <p>
                             Sourcegraph Cody ("Cody") is a state-of-the-art AI coding assistant designed to help
@@ -125,29 +125,23 @@ const CodySecurityAndLegal: NextPage = () => {
                                 To respond to a user request, the Cody client communicates with the Sourcegraph
                                 instance's code context API to fetch code context that is relevant to the query.
                             </li>
-                        </ol>
-                        <ol>
                             <li>
-                                For example, if the user asks Cody "What is the `foo` API?", the code context would
-                                include files that the Sourcegraph instance determines are relevant to `foo`.
+                                For example, if the user asks Cody "What is the <code>foo</code> API?", the code context
+                                would include files that the Sourcegraph instance determines are relevant to{' '}
+                                <code>foo</code>.
                             </li>
                             <li>
                                 Permissions are enforced by Sourcegraph, so that users may only query in repositories or
                                 receive file contents that their user account is permitted to view on the Sourcegraph
                                 instance.
                             </li>
-                        </ol>
-                        <ol>
                             <li>The Cody client concatenates the user request and the code context into the prompt.</li>
-                        </ol>
-                        <ol>
                             <li>
-                                For example, if the user asks Cody "What is the `foo` API?" and a single file `foo.java`
-                                is deemed relevant to the query, the prompt would resemble the following simplified
-                                example: "&lt;contents of foo.java&gt;\n\nWhat is the `foo` API?".
+                                For example, if the user asks Cody "What is the <code>foo</code> API?" and a single file{' '}
+                                <code>foo.java</code> is deemed relevant to the query, the prompt would resemble the
+                                following simplified example: "&lt;contents of foo.java&gt; What is the <code>foo</code>{' '}
+                                API?".
                             </li>
-                        </ol>
-                        <ol>
                             <li>The Cody client sends the prompt to the Sourcegraph instance's completions API.</li>
                             <li>
                                 The Sourcegraph instance's completions API forwards the prompt to the LLM's completions
