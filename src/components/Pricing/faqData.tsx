@@ -65,12 +65,12 @@ export const faqData: FAQData = {
                 <>
                     <p>
                         Cody offers several ways of retrieving codebase context to personalize its responses. One way is
-                        through embeddings, which are generated for user repositories.
+                        through embeddings, which are generated for local user repositories. Cody Free users can create
+                        embeddings for up to 200MB of code, and Cody Pro users can create embeddings for up to 1GB of code.
                     </p>
                     <p>
-                        Cody Free users can create embeddings for up to 200MB of code, and Cody Pro users can create
-                        embeddings for up to 1GB of code. Cody Enterprise users can create embeddings for
-                        enterprise-scale codebases.
+                        Cody Enterprise uses Sourcegraph search to retrieve context instead of embeddings. This method
+                        allows Cody Enterprise to retrieve context from a team's remote, enterprise-scale codebase.
                     </p>
                 </>
             ),
