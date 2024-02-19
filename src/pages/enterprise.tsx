@@ -630,8 +630,8 @@ const Enterprise: FunctionComponent = () => {
                                     Guardrails to catch licensed code
                                 </Heading>
                                 <p className="mb-0 text-[18px] font-normal leading-[27px] -tracking-[0.25px]">
-                                    Sourcegraph automatically checks AI suggestions against open source code and blocks
-                                    matches from being returned to users to prevent IP risk.
+                                    Sourcegraph automatically checks AI suggestions against open source code and highlights
+                                    matches to mitigate IP risk.
                                 </p>
                             </div>
                         </div>
