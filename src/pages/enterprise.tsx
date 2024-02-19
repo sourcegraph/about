@@ -631,7 +631,7 @@ const Enterprise: FunctionComponent = () => {
                                 </Heading>
                                 <p className="mb-0 text-[18px] font-normal leading-[27px] -tracking-[0.25px]">
                                     Sourcegraph automatically checks AI suggestions against open source code and highlights
-                                    matches to users to mitigate IP risk.
+                                    matches to mitigate IP risk.
                                 </p>
                             </div>
                         </div>
