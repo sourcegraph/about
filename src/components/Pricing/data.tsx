@@ -112,7 +112,7 @@ export const FREE_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Compatibility',
-        features: ['supportedCodeEditors', 'supportedPL', 'supportCode'],
+        features: ['supportedCodeEditors', 'supportedProgLanguages', 'supportedHumanLanguages', 'supportedCodeHosts'],
     },
     {
         topic: 'Support',
@@ -144,7 +144,7 @@ export const PRO_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Compatibility',
-        features: ['supportedCodeEditors', 'supportedPL', 'supportCode'],
+        features: ['supportedCodeEditors', 'supportedProgLanguages', 'supportedHumanLanguages', 'supportedCodeHosts'],
     },
     {
         topic: 'Support',
@@ -316,15 +316,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Spanish, French, German, Italian, Chinese, Japanese, Korean, Latin, and Esperanto',
     },
     supportedCodeEditors: {
-        label: 'All supported code editors',
-        description: (
-            <ul className="ml-0 list-none">
-                <li>VS Code</li>
-                <li>JetBrains</li>
-                <li>Neovim</li>
-                <li className="text-xs text-gray-400">emacs (coming soon)</li>
-            </ul>
-        ),
+        label: 'VS Code, JetBrains IDEs, and Neovim',
     },
     freeAdvancedContext: {
         label: (
@@ -336,11 +328,17 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     freeAvailableAdvancedContext: {
         label: 'Advanced context is available for any git-based code host',
     },
-    supportedPL: {
-        label: 'Supports all programming languages',
+    supportedProgLanguages: {
+        label: 'All popular coding languages',
+        description: 'JavaScript, TypeScript, HTML/CSS, Python, Java, C/C++, C#, PHP, and more',
     },
-    supportCode: {
-        label: 'Supports code from all code hosts',
+    supportedHumanLanguages: {
+        label: 'Many human languages',
+        description: 'English, Spanish, French, German, Italian, Chinese, Japanese, Korean, and more',
+    },
+    supportedCodeHosts: {
+        label: 'All major code hosts',
+        description: 'GitHub, GitLab, Bitbucket, Gerrit, Azure DevOps',
     },
     freeSupport: {
         label: 'Community support only',

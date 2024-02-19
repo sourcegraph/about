@@ -19,7 +19,7 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag
         <div className="flex items-center">
             <div
                 className={classNames(
-                    feature.label === 'Guardrails' || feature.label === 'Bring your own LLM'
+                    feature.label === 'Bring your own LLM'
                         ? 'text-[#5E6E8C]'
                         : 'text-gray-500',
                     className
