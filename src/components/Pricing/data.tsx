@@ -102,9 +102,8 @@ export const FREE_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['freeMessageAndcommands'],
     },
     {
-        topic: 'Code context',
-        description: "Advanced code context is used to personalize Cody's responses to a user's own codebase",
-        features: ['freeAdvancedContext', 'freeAvailableAdvancedContext'],
+        topic: 'Code context and personalization',
+        features: ['freeCodeContext'],
         topicClass: 'mb-6',
     },
     {
@@ -131,8 +130,7 @@ export const PRO_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['proMessageAndcommands'],
     },
     {
-        topic: 'Code context',
-        description: "Advanced code context is used to personalize Cody's responses to a user's own codebase",
+        topic: 'Code context and personalization',
         features: ['proCodeContext'],
         topicClass: 'mb-6',
     },
@@ -160,9 +158,8 @@ export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['proMessageAndcommands'],
     },
     {
-        topic: 'Code context',
-        description: "Advanced code context is used to personalize Cody's responses to a user's own codebase",
-        features: ['proCodeContext'],
+        topic: 'Code context and personalization',
+        features: ['entCodeContext'],
         topicClass: 'mb-6',
     },
     {
@@ -303,7 +300,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     freeCodeContext: {
         label: (
             <div className="grid gap-6">
-                <p className="m-0">Personalization for small codebases</p>
+                <p className="m-0">Personalization for small local codebases</p>
             </div>
         ),
     },
@@ -379,7 +376,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     proCodeContext: {
         label: (
             <p className="m-0 mt-2">
-                <span className="font-semibold">Unlimited </span> Advanced context for private codebases
+                Personalization for larger local codebases
             </p>
         ),
     },

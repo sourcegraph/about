@@ -211,7 +211,7 @@ export const faqData: FAQData = {
             answer: 'The Code Intelligence Platform refers to the full platform offering from Sourcegraph. Today, this includes both the Cody and Code Search products, which are available at a discount when purchased as a bundle.',
         },
         {
-            question: 'How can I pay for the Code Intelligence Platform plan',
+            question: 'How can I pay for the Code Intelligence Platform plan?',
             answer: (
                 <p>
                     The Code Intelligence Platform plan requires an annual contract.{' '}
