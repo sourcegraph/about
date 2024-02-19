@@ -102,14 +102,17 @@ export const FREE_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['freeMessageAndcommands'],
     },
     {
-        topic: 'Code context',
-        description: "Advanced code context is used to personalize Cody's responses to a user's own codebase",
-        features: ['freeAdvancedContext', 'freeAvailableAdvancedContext'],
+        topic: 'Code context and personalization',
+        features: ['freeCodeContext'],
         topicClass: 'mb-6',
     },
     {
+        topic: 'LLM Support',
+        features: ['freeLLMsupport'],
+    },
+    {
         topic: 'Compatibility',
-        features: ['supportedCodeEditors', 'supportedPL', 'supportCode'],
+        features: ['supportedCodeEditors', 'supportedProgLanguages', 'supportedHumanLanguages', 'supportedCodeHosts'],
     },
     {
         topic: 'Support',
@@ -131,14 +134,17 @@ export const PRO_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['proMessageAndcommands'],
     },
     {
-        topic: 'Code context',
-        description: "Advanced code context is used to personalize Cody's responses to a user's own codebase",
+        topic: 'Code context and personalization',
         features: ['proCodeContext'],
         topicClass: 'mb-6',
     },
     {
+        topic: 'LLM Support',
+        features: ['proLLMchat', 'proLLMcommands'],
+    },
+    {
         topic: 'Compatibility',
-        features: ['supportedCodeEditors', 'supportedPL', 'supportCode'],
+        features: ['supportedCodeEditors', 'supportedProgLanguages', 'supportedHumanLanguages', 'supportedCodeHosts'],
     },
     {
         topic: 'Support',
@@ -160,18 +166,17 @@ export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
         features: ['proMessageAndcommands'],
     },
     {
-        topic: 'Code context',
-        description: "Advanced code context is used to personalize Cody's responses to a user's own codebase",
-        features: ['proCodeContext'],
+        topic: 'Code context and personalization',
+        features: ['entCodeContext'],
         topicClass: 'mb-6',
     },
     {
-        topic: 'Enterprise Features',
-        features: ['byoLLMKey', 'st', 'ss', 'guardrails'],
+        topic: 'LLM Support',
+        features: ['entLLMchoices', 'BringYourLLMKey', 'BringYourLLM'],
     },
     {
-        topic: 'Compatibility',
-        features: ['supportedCodeEditors', 'supportedPL', 'supportCode'],
+        topic: 'Enterprise features',
+        features: ['everythingInPro', 'flexDeployment', 'entAdmin', 'guardrails'],
     },
     {
         topic: 'Support',
@@ -291,19 +296,18 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
                 <span className="font-bold">500 </span> Autocompletions per month
             </p>
         ),
-        description: 'Autocompletions per month',
     },
     freeMessageAndcommands: {
         label: (
             <p className="m-0 text-[16px] font-normal -tracking-[0.25px]">
-                <span className="font-bold">20 </span> Messages and Commands per month
+                <span className="font-bold">20 </span> Messages and commands per month
             </p>
         ),
     },
     freeCodeContext: {
         label: (
             <div className="grid gap-6">
-                <p className="m-0">Personalization for small codebases</p>
+                <p className="m-0">Personalization for small local codebases</p>
             </div>
         ),
     },
@@ -312,15 +316,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Spanish, French, German, Italian, Chinese, Japanese, Korean, Latin, and Esperanto',
     },
     supportedCodeEditors: {
-        label: 'All supported code editors',
-        description: (
-            <ul className="ml-0 list-none">
-                <li>VS Code</li>
-                <li>JetBrains</li>
-                <li>Neovim</li>
-                <li className="text-xs text-gray-400">emacs (coming soon)</li>
-            </ul>
-        ),
+        label: 'VS Code, JetBrains IDEs, and Neovim',
     },
     freeAdvancedContext: {
         label: (
@@ -332,11 +328,17 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     freeAvailableAdvancedContext: {
         label: 'Advanced context is available for any git-based code host',
     },
-    supportedPL: {
-        label: 'Supports all programming languages',
+    supportedProgLanguages: {
+        label: 'All popular coding languages',
+        description: 'JavaScript, TypeScript, HTML/CSS, Python, Java, C/C++, C#, PHP, and more',
     },
-    supportCode: {
-        label: 'Supports code from all code hosts',
+    supportedHumanLanguages: {
+        label: 'Many human languages',
+        description: 'English, Spanish, French, German, Italian, Chinese, Japanese, Korean, and more',
+    },
+    supportedCodeHosts: {
+        label: 'All major code hosts',
+        description: 'GitHub, GitLab, Bitbucket, Gerrit, Azure DevOps',
     },
     freeSupport: {
         label: 'Community support only',
@@ -345,16 +347,16 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'Support with limited SLAs',
     },
     enterpriseSupport: {
-        label: 'Enterprise Support',
+        label: 'Enterprise support',
     },
     freeLimitation: {
         label: '1 user',
     },
     greaterThan10: {
-        label: '>10 users',
+        label: '10+ users',
     },
     greaterThan50: {
-        label: '>50 users',
+        label: '50+ users',
     },
     proAutoCompletions: {
         label: (
@@ -366,20 +368,20 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     proMessageAndcommands: {
         label: (
             <p className="m-0 text-[16px] leading-5 -tracking-[0.25px]">
-                <span className="font-semibold">Unlimited</span> Messages and Commands
+                <span className="font-semibold">Unlimited</span> Messages and commands
             </p>
         ),
     },
     codeIntAutoCompletions: {
-        label: 'Unlimited Autocompletions',
+        label: 'Unlimited autocompletions',
     },
     codeIntMessageAndcommands: {
-        label: 'Unlimited Messages and Commands',
+        label: 'Unlimited messages and commands',
     },
     proCodeContext: {
         label: (
             <p className="m-0 mt-2">
-                <span className="font-semibold">Unlimited </span> Advanced context for private codebases
+                Personalization for larger local codebases
             </p>
         ),
     },
@@ -389,44 +391,33 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     everythingInPro: {
         label: 'Everything in Pro plus...',
     },
-    entSupport: {
-        label: 'Enterprise support',
-    },
     flexDeployment: {
         label: 'Flexible deployment options',
     },
     entAdmin: {
-        label: 'Enterprise admin and security features (SSO, SAML, SCIM, Audit Logs, etc.)',
-    },
-    byoLLMKey: {
-        label: 'Bring your own LLM key',
-    },
-    st: {
-        label: 'Single Tenant',
-    },
-    ss: {
-        label: 'SAML / SSO',
+        label: 'Enterprise admin and security features (SSO, SAML, SCIM, audit logs, etc.)',
     },
     guardrails: {
         label: 'Guardrails',
+        description: "We scan Cody's output for OSS code, reducing the risk of copyrighted code in suggestions",
     },
     freeLLMsupport: {
-        label: 'Default LLMs for Chat, Commands, and Autocomplete',
+        label: 'Default LLMs for chat, commands, and autocomplete',
     },
     proLLMchat: {
         label: 'Multiple LLM choices for chat',
         description: 'Claude Instant 1.2, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview, Mixtral',
     },
     proLLMcommands: {
-        label: 'Default LLMs for Commands and Autocomplete',
+        label: 'Default LLMs for commands and autocomplete',
     },
     entLLMchoices: {
         label: 'Flexible LLM choices',
-        description: 'Claude Instant 1.2, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview, Mixtral',
+        description: 'Claude Instant 1.2, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview',
     },
     BringYourLLMKey: {
         label: 'Bring your own LLM key',
-        description: 'Claude Instant 1.2, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview, Mixtral',
+        description: 'Bring your own key with Azure OpenAI and Amazon Bedrock',
     },
     BringYourLLM: {
         label: 'Bring your own LLM',

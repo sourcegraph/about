@@ -332,7 +332,7 @@ const PricingPage: FunctionComponent = () => {
                                 />
                                 <PricingPlan
                                     name={<p className="mb-[13px]">Pro</p>}
-                                    description="Best for pro devs and small teams"
+                                    description="Best for professional developers and small teams"
                                     price={
                                         <PriceItem
                                             amountClassName="line-through text-gray-400"
@@ -352,7 +352,7 @@ const PricingPage: FunctionComponent = () => {
                                             <p className="mb-0 text-2xl font-semibold">Enterprise</p>
                                         </div>
                                     }
-                                    description="Best for teams and orgs"
+                                    description="Best for large teams and enterprises"
                                     price={<PriceItem amount={19} hasLimit={true} />}
                                     buttons={
                                         <ContactUsButton

@@ -64,13 +64,13 @@ export const faqData: FAQData = {
             answer: (
                 <>
                     <p>
-                        Cody offers several ways of retrieving codebase context to personalize its responses. One way is
-                        through embeddings, which are generated for user repositories.
+                        Cody can retrieve codebase context to personalize responses in a number of ways. One way is
+                        with embeddings, which are generated for local user repositories. Cody Free users can create
+                        embeddings for up to 200MB of code and Cody Pro users can create embeddings for up to 1GB of code.
                     </p>
                     <p>
-                        Cody Free users can create embeddings for up to 200MB of code, and Cody Pro users can create
-                        embeddings for up to 1GB of code. Cody Enterprise users can create embeddings for
-                        enterprise-scale codebases.
+                        Cody Enterprise uses Sourcegraph search to retrieve context. This method lets Cody
+                        pull context from a team's full codebase at any scale.
                     </p>
                 </>
             ),
@@ -211,7 +211,7 @@ export const faqData: FAQData = {
             answer: 'The Code Intelligence Platform refers to the full platform offering from Sourcegraph. Today, this includes both the Cody and Code Search products, which are available at a discount when purchased as a bundle.',
         },
         {
-            question: 'How can I pay for the Code Intelligence Platform plan',
+            question: 'How can I pay for the Code Intelligence Platform plan?',
             answer: (
                 <p>
                     The Code Intelligence Platform plan requires an annual contract.{' '}
