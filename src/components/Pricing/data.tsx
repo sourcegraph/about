@@ -353,7 +353,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         label: '1 user',
     },
     greaterThan10: {
-        label: '>10 users',
+        label: '10+ users',
     },
     greaterThan50: {
         label: '50+ users',
