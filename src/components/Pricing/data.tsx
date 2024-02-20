@@ -87,7 +87,7 @@ export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Developer minimum',
-        features: ['greaterThan10'],
+        features: ['greaterThan50'],
     },
 ]
 
@@ -351,9 +351,6 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     freeLimitation: {
         label: '1 user',
-    },
-    greaterThan10: {
-        label: '10+ users',
     },
     greaterThan50: {
         label: '50+ users',
