@@ -15,7 +15,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-on-the-
 
 <Alert type="secondary">This is a guest blog post from our community. <a href="https://discord.com/servers/sourcegraph-969688426372825169" target="_blank">Join our Discord</a> to meet the author and connect with other developers passionate about Code Search and AI!</Alert>
 
-**Hey there, fellow Digital Nomads!** Craving that perfect blend of beachside cocktails and coding deadlines? Ever wished your hotel room came with a built-in IDE, not just a mini bar? Well, strap on your walking shoes and ditch the laptop, because we're about to unlock the secret to mobile coding freedom: Termux and Cody.
+**Hey there, fellow Digital Nomads!** Craving that perfect blend of beachside cocktails and coding deadlines? Ever wished your hotel room came with a built-in IDE, not just a mini bar? Well, strap on your walking shoes and ditch the laptop, because we're about to unlock the secret to mobile coding freedom: [Termux](https://termux.dev/) and [Cody](/cody).
 
 Think of Termux as your secret Swiss Army knife for Android. It's a Linux shell disguised as an app, giving you access to a whole ecosystem of developer tools, right on your tablet. No more lugging around heavy laptops, just whip out your trusty tablet and get coding under that palm tree. 
 
@@ -100,7 +100,7 @@ Alright digital nomads, we've unlocked the secrets of coding on the go with Term
 
 ### Termux tweaks for the tech-savvy Nomad
 
-* **Power up your shell:** Don't settle for the default bash shell! Install zsh for a more customizable and powerful experience with plugins, themes, and autocompletion.
+* **Power up your shell:** Don't settle for the default bash shell! Install [zsh](https://www.zsh.org/) for a more customizable and powerful experience with plugins, themes, and autocompletion.
 * **Keyboard ninja moves:** Master essential keyboard shortcuts for faster navigation and editing. Learn to copy, paste, and yank like a pro!
 * **Remote access:** Manage your Termux environment from anywhere! Set up SSH access to remotely connect and tinker with your code from another device.
 
