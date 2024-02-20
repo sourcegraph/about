@@ -4,7 +4,7 @@ authors:
   - name: Tino Wening
     url: https://twitter.com/PriNova75
   
-publishDate: 2024-02-06T10:00-07:00
+publishDate: 2024-02-20T10:00-07:00
 description: "An informal guide for digital nomads, showcasing how Termux and Cody turn your tablet into a beach-friendly coding hub. Ditch the laptop for a lightweight setup with Termux's Linux shell, Visual Studio Code's web interface, and Cody."
 tags: [blog]
 slug: "coding-on-the-road-with-android-cody"
