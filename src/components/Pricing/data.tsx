@@ -87,7 +87,7 @@ export const ENTERPRISE_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Developer minimum',
-        features: ['greaterThan10'],
+        features: ['greaterThan50'],
     },
 ]
 
