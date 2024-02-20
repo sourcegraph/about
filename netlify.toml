@@ -224,6 +224,10 @@
 [[redirects]]
   from = "/code-search/pricing"
   to = "/pricing"
+
+[[redirects]]
+  from = "/cloud"
+  to = "/enterprise"
 # ========== END INDIVIDUAL REDIRECTS ==========
 
 # ========== WHOLE SITE REDIRECT ==========
