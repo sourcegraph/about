@@ -79,7 +79,6 @@ Whether you're building a simple game or a complex social media app, Cody is you
 Here's how Cody can help you build Android apps:
 
 
-
 * **Android-specific suggestions:** Cody knows all the ins and outs, offering suggestions for activities, layouts, and even resource files.
 * **Help with complex tasks:** Need to implement a custom view or handle complex logic? Cody's got your back, providing code snippets and examples to get you started.
 * **Speed up your development:** Forget wasting time on boilerplate code or debugging simple errors. Cody takes care of those pesky details, letting you focus on the big picture.
