@@ -5,7 +5,7 @@ authors:
     url: https://twitter.com/PriNova75
   
 publishDate: 2024-02-06T10:00-07:00
-description: "This post is a fun and informal guide for digital nomads, showcasing how Termux and Cody turn your tablet into a beach-friendly coding hub. It's all about ditching the laptop for a lightweight setup with Termux's Linux shell, VS Code's web version, and Cody."
+description: "An informal guide for digital nomads, showcasing how Termux and Cody turn your tablet into a beach-friendly coding hub. Ditch the laptop for a lightweight setup with Termux's Linux shell, Visual Studio Code's web interface, and Cody."
 tags: [blog]
 slug: "coding-on-the-road-with-android-cody"
 published: true
