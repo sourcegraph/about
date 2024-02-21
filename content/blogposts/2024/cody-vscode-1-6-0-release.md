@@ -10,12 +10,12 @@ authors:
   - name: Philipp Spiess
     url: https://handbook.sourcegraph.com/team/#philipp-spiess
 publishDate: 2024-02-21T10:00-01:00
-description: ""
+description: "This release includes several keyboard shortcuts, enabling login in VSCodium, reducing autocomplete latency, and fixing issues with chat stealing editor focus and displaying file ranges."
 tags: [blog]
 slug: "cody-vscode-1-6-0-release"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-1.4.0/cody-vscode-1.4.0-og-image.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-1.4.0/cody-vscode-1.4.0-og-image.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.6.0/cody-vscode-1.6.0-og-image.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.6.0/cody-vscode-1.6.0-og-image.png
 --- 
 
 We're thrilled to announce the release of Cody v1.6.0, our latest update to our VS Code extension. This release includes several keyboard shortcuts, enabling login in VSCodium, reducing autocomplete latency, and fixing issues with chat stealing editor focus and displaying file ranges. Notable new features include warning users to select large `@-file` mentions in chat and removing leading slashes from command names. 
