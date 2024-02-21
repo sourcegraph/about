@@ -333,14 +333,7 @@ const PricingPage: FunctionComponent = () => {
                                 <PricingPlan
                                     name={<p className="mb-[13px]">Pro</p>}
                                     description="Best for professional developers and small teams"
-                                    price={
-                                        <PriceItem
-                                            amountClassName="line-through text-gray-400"
-                                            amount={9}
-                                            hasLimit={true}
-                                            description="Free until Feb 21, 2024"
-                                        />
-                                    }
+                                    price={<PriceItem amount={9} hasLimit={true} />}
                                     buttons={<GetProButton title="Sign up for Cody Pro" />}
                                     features={PRO_FEATURES_OVERVIEW}
                                     planClasses={isMobile ? 'z-10 md:w-full' : 'z-10 md:w-[420px] md:-my-3'}

@@ -98,9 +98,7 @@ export const faqData: FAQData = {
             question: 'How can I pay for Cody Pro?',
             answer: (
                 <p>
-                    Cody Pro is free until February 21, 2024. Prior to that date, users will be emailed and asked to
-                    enter a credit card if they would like to continue using Cody Pro. If they choose not to enter a
-                    credit card, their account will move to the Cody Free plan.
+                    Cody Pro is billed on a monthly basis and can be paid with a credit card.
                 </p>
             ),
         },
