@@ -9,6 +9,8 @@ authors:
     url: https://handbook.sourcegraph.com/team/#tom-ross
   - name: Philipp Spiess
     url: https://handbook.sourcegraph.com/team/#philipp-spiess
+  - name: Ado Kukic
+    url: https://handbook.sourcegraph.com/team/#ado-kukic
 publishDate: 2024-02-21T10:00-01:00
 description: "This release includes several keyboard shortcuts, enabling login in VSCodium, reducing autocomplete latency, and fixing issues with chat stealing editor focus and displaying file ranges."
 tags: [blog]
@@ -42,7 +44,7 @@ No longer do you need to start with an `@-file` mention. You can now mention any
 
 <Video
   source={{
-    mp4: 'blog/cody-vscode-1.6.0/image-002'
+    mp4: 'blog/cody-vscode-1.6.0/image-002-b'
   }}
   loop={true}
   title="@-file mention improvements"
