@@ -102,7 +102,7 @@ const DemoCodyPage: FunctionComponent = () => {
                             <span className="cody-heading bg-clip-text text-transparent"> entire codebase </span>
                         </div>
                         <Heading size="h4" className="mt-6 max-w-[637px]  !font-normal text-gray-200">
-                            Cody answers technical questions and writes code directly in your IDE, using your code graph
+                            HOLA THIS IS A CHANGE. Cody answers technical questions and writes code directly in your IDE, using your code graph
                             for context and accuracy.
                         </Heading>
                         <div className="mt-6 text-lg font-semibold text-white">
