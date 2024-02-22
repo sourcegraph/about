@@ -96,7 +96,7 @@ export interface BlogPost {
 
 const CONTENT_PARENT_DIRECTORY = './content/'
 
-export const getAllPublishedBlogPosts = async (): Promise<BlogPost[] | null> => {
+export const getAllPublishedBlogPosts = async (tag?: string | string[]): Promise<BlogPost[] | null> => {
     const allSlugs = await getSortedSlugs('blogposts')
     if (!allSlugs) {
         return null
@@ -120,5 +120,11 @@ export const getAllPublishedBlogPosts = async (): Promise<BlogPost[] | null> => 
         })
     )
 
-    return posts.filter(post => post.frontmatter.published)
+    return posts.filter(post => {
+        const hasMatchingTag =
+            tag && Array.isArray(tag)
+                ? tag.some(tagItem => post.frontmatter.published && (post.frontmatter.tags?.includes(tagItem) ?? false))
+                : post.frontmatter.published && (!tag || post.frontmatter.tags?.includes(tag))
+        return hasMatchingTag
+    })
 }

@@ -14,7 +14,8 @@ interface LoadMoreHookObject {
 export const useLoadMoreAndSearch = (
     initialAllRecords: PostIndexItemProps[],
     initialPage: number,
-    initialCurrentRecords: PostIndexItemProps[]
+    initialCurrentRecords: PostIndexItemProps[],
+    itemsPerPage: number = 20
 ): LoadMoreHookObject => {
     const [searchTerm, setSearchTerm] = useState('')
     const [filteredRecords, setFilteredRecords] = useState<PostIndexItemProps[]>(initialAllRecords)
@@ -45,10 +46,10 @@ export const useLoadMoreAndSearch = (
     }, [searchTerm, initialAllRecords])
 
     useEffect(() => {
-        const newPage = page * 20
+        const newPage = page * itemsPerPage
         const newRecords = filteredRecords.slice(0, newPage)
         setCurrentRecords(newRecords)
-    }, [page, filteredRecords])
+    }, [page, filteredRecords, itemsPerPage])
 
     return {
         currentRecords,
