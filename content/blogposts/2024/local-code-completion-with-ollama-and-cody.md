@@ -50,13 +50,7 @@ For example, to download the `codellama` model, you would run the following comm
 ollama pull codellama
 ```
 
-You can also download multiple models at once by specifying a comma-separated list of model names:
-
-```bash
-ollama pull codellama,starcoder
-```
-
-Additionally, you can download a model from a specific version by specifying the version number:
+You can also download a model from a specific version by specifying the version number:
 
 ```bash
 ollama pull codellama:7b
@@ -115,9 +109,9 @@ You can use a tool like [Postman](https://www.postman.com/) to make the request.
 Now that you have Ollama installed and running locally, you can use it with Cody to get local code completion. To do this, you need to install the [Cody VS Code extension](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai). Once you have the extension installed, you can configure it to use Ollama by following these steps: 
 
 1. Navigate to the Cody extension settings by opening the Command Pallete (`Cmd+Shift+P`) and typing `Cody: Extension Settings`.
-2. Scroll down to find the "Cody > Autocomplete > Advanced: Provider" section. From the dropdown menu, select "expermintal-ollama".
+2. Scroll down to find the "Cody > Autocomplete > Advanced: Provider" section. From the dropdown menu, select **"expermintal-ollama"**.
 ![Cody extension settings](https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/cody-ollama-settings.png)
-3. Finally, open up the `settings.json` file and find the `cody.autocomplete.experimental.ollamaOptions` property. You can specify the URL of the Ollama instance you want to use, as well as the model you want to use. For example:
+3. Finally, open up the `settings.json` file and find the `cody.autocomplete.experimental.ollamaOptions` property. Here, you can specify the URL of the Ollama instance if different from the default, as well as the model you want to use. For example:
 
 ```json
 "cody.autocomplete.experimental.ollamaOptions": {
