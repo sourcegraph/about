@@ -12,11 +12,11 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.6.0/cody-vscode-1.6.0-og-image.png
 --- 
 
-Using AI coding assistants is a great way to improve your development workflows. But they typically require access to the Internet. This is a problem for developers who work in air-gapped environments or places with limited Internet access. We are building [Cody](https://sourcegraph.com/cody), an AI coding assistant focused on choice, the right context, and scale.
+Using AI coding assistants is a great way to improve your development workflows. But they typically require access to the Internet. This is a problem for developers who work in air-gapped environments or places with limited Internet access. We are building [Cody](https://sourcegraph.com/cody), an AI coding assistant that has a deep understanding of your entire codebase to help you write and understand code faster.
 
 A few months ago we added an experimental feature to Cody for Visual Studio Code that allows you to have local inference for code completion. This feature uses [Ollama](https://ollama.com/) to run a local LLM model of your choice. Our developer community has been very excited about this feature and we wanted to officially write about it and show you how to use it.
 
-## Ollama for Local Inference
+## Ollama - run LLMs locally
 
 [Ollama](https://ollama.com/) is a tool for running large language models (LLMs) locally. Ollama bundles model weights, configurations, and datasets into a unified package managed by a Modelfile.
 
@@ -24,7 +24,7 @@ A few months ago we added an experimental feature to Cody for Visual Studio Code
 
 Ollama supports many different models, including [Code Llama](https://ollama.com/library/codellama), [StarCoder](https://ollama.com/library/starcoder), [DeepSeek Coder](https://ollama.com/library/deepseek-coder), and many more. Ollama supports both general and special purpose models. Check out the full list [here](https://ollama.com/library).
 
-### Getting Started with Ollama
+### Getting started with Ollama
 
 Ollama is a CLI tool that you can download and install for MacOS, Linux, and Windows. Head over to the [download page](https://ollama.com/download) and download the appropriate package for your operating system. Once you have downloaded and installed Ollama, verify that it is working by running the following command:
 
@@ -36,7 +36,7 @@ This should output the following:
 
 ![Ollama help](https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/ollama-help.png)
 
-### Downloading LLM Models
+### Downloading LLMs
 
 Now you are ready to download and install a LLM. To download a model, you can use the following command:
 
@@ -58,7 +58,7 @@ ollama pull codellama:7b
 
 **Important Note**: Your ability to run a model is heavily dependent on your hardware. The larger the model, the more resources you will need to succesfully run it.
 
-### Running Locally
+### Running LLMs locally
 
 Once you have downloaded a model, you can run it locally by specifying the model name. For example, to run the `codellama` model, you would run the following command:
 
@@ -104,7 +104,7 @@ You can use a tool like [Postman](https://www.postman.com/) to make the request.
 
 ![Ollama from Postman](https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/ollama-postman.png)
 
-## Ollama for Cody
+## Local code completion with Ollama and Cody
 
 Now that you have Ollama installed and running locally, you can use it with Cody to get local code completion. To do this, you need to install the [Cody VS Code extension](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai). Once you have the extension installed, you can configure it to use Ollama by following these steps: 
 
@@ -130,4 +130,6 @@ Now you can also try out other models by changing the `model` value in the `cody
 
 ## Conclusion
 
-With Ollama, you can now get local code completion for your VS Code files. This is a great way to improve your development workflows and make your coding experience more accessible. We hope you find this feature useful and that it helps you get the most out of Cody. If you have any questions or feedback, please let us know by opening an issue on our [GitHub repository](https://github.com/sourcegraph/cody).
+With Ollama and Cody, you can now have local code completion. This is a great way to improve your development workflow whether you're trying new LLMs or catching a flight and lacking Internet access. As mentioned in the intro to this post, Ollama for Cody is still experimental and we are working on improving the experience and bringing you more features.
+
+If you have any questions or feedback, please let us know by opening an issue on our [GitHub repository](https://github.com/sourcegraph/cody) and if you haven't already, [give Cody a try yourself](https://sourcegraph.com/cody)!
