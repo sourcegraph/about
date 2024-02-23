@@ -22,7 +22,7 @@ A few months ago we added an experimental feature to Cody for Visual Studio Code
 
 ![Ollama](https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/ollama.png)
 
-Ollama supports many different models, including [Code Llama](https://ollama.com/library/codellama), [StarCoder](https://ollama.com/library/starcoder), [DeepSeek Coder](https://ollama.com/library/deepseek-coder), and many more. Ollama supports both general and special purpose models. Check out the full list [here](https://ollama.com/library).
+Ollama supports many different models, including [Code Llama](https://ollama.com/library/codellama), [StarCoder](https://ollama.com/library/starcoder), [DeepSeek Coder](https://ollama.com/library/deepseek-coder), and more. Ollama supports both general and special purpose models. Check out the full list [here](https://ollama.com/library).
 
 ### Getting started with Ollama
 
@@ -66,13 +66,13 @@ Once you have downloaded a model, you can run it locally by specifying the model
 ollama run codellama
 ```
 
-By default Ollama will run the model directly in your terminal. Once the model is running, you can interact with it by typing in your prompt and pressing enter. For example, once the terminal is running, you can type in the following prompt:
+By default, Ollama will run the model directly in your terminal. Once the model is running, you can interact with it by typing in your prompt and pressing enter. For example, once the model is running in your terminal, you can type in the following prompt:
 
 ```bash
 Write a JavaScript function that takes a string and returns the number of vowels in the string.
 ```
 
-And press enter. Ollama will respond with an output like this::
+And press enter. Ollama will respond with an output like this:
 
 ![Ollama terminal output](https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/ollama-terminal.png)
 
@@ -86,6 +86,7 @@ To use the REST API, you make a POST request to the `/api/generate` endpoint wit
 {
   "prompt": "Your promt",
   "model": "The model that you want to use",
+  "stream": false
 }
 ```
 
@@ -106,10 +107,12 @@ You can use a tool like [Postman](https://www.postman.com/) to make the request.
 
 ## Local code completion with Ollama and Cody
 
-Now that you have Ollama installed and running locally, you can use it with Cody to get local code completion. To do this, you need to install the [Cody VS Code extension](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai). Once you have the extension installed, you can configure it to use Ollama by following these steps: 
+Now that you have Ollama installed and running locally, you can use it with Cody to get local code completion. By default, Cody uses a remotely hosted version of the StarCoder LLM for code completion. 
 
-1. Navigate to the Cody extension settings by opening the Command Pallete (`Cmd+Shift+P`) and typing `Cody: Extension Settings`.
-2. Scroll down to find the "Cody > Autocomplete > Advanced: Provider" section. From the dropdown menu, select **"expermintal-ollama"**.
+To switch the local code completion, you first need to install the [Cody VS Code extension](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai). Once you have the extension installed, you can configure it to use Ollama by following these steps: 
+
+1. Navigate to the Cody extension settings by opening the command palette (`Cmd+Shift+P`) and typing `Cody: Extension Settings`.
+2. Scroll down to find the **"Cody > Autocomplete > Advanced: Provider"** section. From the dropdown menu, select **"expermintal-ollama"**.
 ![Cody extension settings](https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/ollama-cody-settings.png)
 3. Finally, open up the `settings.json` file and find the `cody.autocomplete.experimental.ollamaOptions` property. Here, you can specify the URL of the Ollama instance if different from the default, as well as the model you want to use. For example:
 
@@ -120,11 +123,11 @@ Now that you have Ollama installed and running locally, you can use it with Cody
 }
 ```
 
-Once you have done this, you will use Ollama to get local code completion for your VS Code files. To verify that it is working, open the Output tab and switch it to Cody by Sourcegraph. Next, open a file and start typing. You should see the following message in the Output tab:
+Once you have done this, Cody will now use Ollama to get local code completion for your VS Code files. To verify that it is working, open the Output tab and switch it to **Cody by Sourcegraph**. Next, open a file and start typing. You should see the following message in the Output tab when a completion is generated:
 
 ![Cody with Ollama in action](https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/cody-ollama-in-action.png)
 
-The above image shows that we are sending the prompt and context to Ollama. The response from Ollama is then sent back to Cody and displayed in the Output tab.
+The above image shows that we are sending the prompt and context to Ollama. The response from Ollama is then sent back to Cody and displayed in the Output tab as well as reflected in the editor.
 
 Now you can also try out other models by changing the `model` value in the `cody.autocomplete.experimental.ollamaOptions` setting. As soon as the `settings.json` file is saved, Cody will automatically update to use the new model. Happy experimenting!
 
