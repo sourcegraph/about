@@ -3,13 +3,13 @@ title: "Local code completion with Ollama and Cody"
 authors:
   - name: Ado Kukic
     url: https://handbook.sourcegraph.com/team/#ado-kukic
-publishDate: 2024-02-24T10:00-01:00
+publishDate: 2024-02-23T10:00-01:00
 description: "Learn how to use Cody for VS Code with Ollama to get local code completion."
 tags: [blog]
 slug: "local-code-completion-with-ollama-and-cody"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.6.0/cody-vscode-1.6.0-og-image.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.6.0/cody-vscode-1.6.0-og-image.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/og-ollama-cody.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/og-ollama-cody.png
 --- 
 
 Using AI coding assistants is a great way to improve your development workflows. But they typically require access to the Internet. This is a problem for developers who work in air-gapped environments or places with limited Internet access. We are building [Cody](https://sourcegraph.com/cody), an AI coding assistant that has a deep understanding of your entire codebase to help you write and understand code faster.
