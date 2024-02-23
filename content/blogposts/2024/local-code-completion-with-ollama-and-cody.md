@@ -4,7 +4,7 @@ authors:
   - name: Ado Kukic
     url: https://handbook.sourcegraph.com/team/#ado-kukic
 publishDate: 2024-02-23T10:00-01:00
-description: "Learn how to use Cody for VS Code with Ollama to get local code completion."
+description: "No Internet? No problem. Learn how to use Ollama with Cody for VS Code to get local code completion."
 tags: [blog]
 slug: "local-code-completion-with-ollama-and-cody"
 published: true
