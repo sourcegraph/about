@@ -50,7 +50,7 @@ For example, to download the `codellama` model, you would run the following comm
 ollama pull codellama
 ```
 
-You can also download a model from a specific version by specifying the version number:
+You can also download a model from a specific version by specifying the parameter size:
 
 ```bash
 ollama pull codellama:7b
@@ -84,7 +84,7 @@ To use the REST API, you make a POST request to the `/api/generate` endpoint wit
 
 ```json
 {
-  "prompt": "Your promt",
+  "prompt": "Your prompt",
   "model": "The model that you want to use",
   "stream": false
 }
@@ -111,7 +111,7 @@ Now that you have Ollama installed and running locally, you can use it with Cody
 
 To switch the local code completion, you first need to install the [Cody VS Code extension](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai). Once you have the extension installed, you can configure it to use Ollama by following these steps: 
 
-1. Navigate to the Cody extension settings by opening the command palette (`Cmd+Shift+P`) and typing `Cody: Extension Settings`.
+1. Navigate to the Cody extension settings by opening the command palette (<kbd>⌘</kbd>+<kbd>shift</kbd>+<kbd>P</kbd>) and typing `Cody: Extension Settings`.
 2. Scroll down to find the **"Cody > Autocomplete > Advanced: Provider"** section. From the dropdown menu, select **"expermintal-ollama"**.
 ![Cody extension settings](https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/ollama-cody-settings.png)
 3. Finally, open up the `settings.json` file and find the `cody.autocomplete.experimental.ollamaOptions` property. Here, you can specify the URL of the Ollama instance if different from the default, as well as the model you want to use. For example:
