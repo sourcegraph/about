@@ -110,7 +110,7 @@ Now that you have Ollama installed and running locally, you can use it with Cody
 
 1. Navigate to the Cody extension settings by opening the Command Pallete (`Cmd+Shift+P`) and typing `Cody: Extension Settings`.
 2. Scroll down to find the "Cody > Autocomplete > Advanced: Provider" section. From the dropdown menu, select **"expermintal-ollama"**.
-![Cody extension settings](https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/cody-ollama-settings.png)
+![Cody extension settings](https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/ollama-cody-settings.png)
 3. Finally, open up the `settings.json` file and find the `cody.autocomplete.experimental.ollamaOptions` property. Here, you can specify the URL of the Ollama instance if different from the default, as well as the model you want to use. For example:
 
 ```json
