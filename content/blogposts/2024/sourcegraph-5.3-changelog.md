@@ -62,7 +62,7 @@ You can see this latter functionality below:
 
 Guardrails is now available in beta. To turn guardrails on for your Cody Enterprise account, add `"attribution.enabled": true` to your site configuration.
 
-[Read more](https://sourcegraph.com/docs/admin/config/batch_changes#rejecting-unverified-commits) about guardrails in the docs.
+[Read more](https://sourcegraph.com/docs/cody/clients/enable-cody-enterprise#guardrails) about guardrails in the docs.
 
 ### Admin controls
 
