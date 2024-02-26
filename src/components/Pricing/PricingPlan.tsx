@@ -78,44 +78,46 @@ export const PricingPlan: FunctionComponent<Props> = ({
                         </div>
                     </button>
                 )}
-                <div
-                    className={`${isMobile ? 'transition-max-height overflow-hidden duration-700 ease-in-out' : ''} ${
-                        (isMobile && showDetails) || !isMobile ? 'max-h-[1240px]' : 'max-h-0'
-                    }`}
-                >
-                    {features.length > 0 && (
-                        <div className="ml-0 mt-8 border-t-1">
-                            {features.map(node => (
-                                <div key={node.topic} className="border-0 bg-transparent px-0">
-                                    <div className={classNames('mb-2 flex items-center pt-[32px] text-sm')}>
-                                        <h5 className="text-base font-semibold leading-5 -tracking-[0.25px] text-gray-500">
-                                            {node.topic}
-                                        </h5>
-                                        {node.description && (
-                                            <Tooltip
-                                                wrapperClassName="my-auto ml-xxs text-gray-300 flex items-center text-sm"
-                                                text={node.description}
-                                                tooltipClassName="p-2"
-                                            >
-                                                <InformationCircleOutlineIcon size={18} />
-                                            </Tooltip>
-                                        )}
+                {(!isMobile || showDetails) && (
+                    <div
+                        className={`${
+                            isMobile ? 'transition-max-height overflow-hidden duration-700 ease-in-out' : ''
+                        }`}
+                    >
+                        {features.length > 0 && (
+                            <div className="ml-0 mt-8 border-t-1">
+                                {features.map(node => (
+                                    <div key={node.topic} className="border-0 bg-transparent px-0">
+                                        <div className={classNames('mb-2 flex items-center pt-[32px] text-sm')}>
+                                            <h5 className="text-base font-semibold leading-5 -tracking-[0.25px] text-gray-500">
+                                                {node.topic}
+                                            </h5>
+                                            {node.description && (
+                                                <Tooltip
+                                                    wrapperClassName="my-auto ml-xxs text-gray-300 flex items-center text-sm"
+                                                    text={node.description}
+                                                    tooltipClassName="p-2"
+                                                >
+                                                    <InformationCircleOutlineIcon size={18} />
+                                                </Tooltip>
+                                            )}
+                                        </div>
+                                        <ul className="ml-0 grid list-none gap-y-2 border-b-1 pb-[32px]">
+                                            {node?.features?.map(feature => (
+                                                <div key={feature}>
+                                                    <PricingPlanFeature
+                                                        feature={SPOTLIGHT_FEATURE_INFO[feature]}
+                                                        tag="li"
+                                                    />
+                                                </div>
+                                            ))}
+                                        </ul>
                                     </div>
-                                    <ul className="ml-0 grid list-none gap-y-2 border-b-1 pb-[32px]">
-                                        {node?.features?.map(feature => (
-                                            <div key={feature}>
-                                                <PricingPlanFeature
-                                                    feature={SPOTLIGHT_FEATURE_INFO[feature]}
-                                                    tag="li"
-                                                />
-                                            </div>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                </div>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                )}
             </div>
         </div>
     )
