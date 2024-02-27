@@ -289,7 +289,7 @@ export const getStaticProps: GetStaticProps<{
     allPosts: Post[]
     posts: Post[]
 }> = async ({ preview = false }) => {
-    const publishedPosts = await getAllPublishedBlogPosts('blog') // Replace this with guest-post
+    const publishedPosts = await getAllPublishedBlogPosts('guest-post') 
     return {
         props: {
             allPosts: publishedPosts ?? [],
