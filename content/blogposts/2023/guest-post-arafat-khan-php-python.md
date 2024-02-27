@@ -6,7 +6,7 @@ authors:
   
 publishDate: 2023-12-01T10:00-01:00
 description: "When tasked with creating a printing API in PHP despite having zero experience, Arafat Khan leveraged Cody to transform what felt like an Everest climb into a swift 3 day project that resulted in a fully functioning API."
-tags: [blog]
+tags: [blog, guest-post]
 slug: "building-a-printing-api-in-php-with-cody"
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/guest-post-arafat-khan-php-python-og.png

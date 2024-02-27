@@ -6,7 +6,7 @@ authors:
   
 publishDate: 2024-01-18T10:00-07:00
 description: "Learn how to best leverage Cody in your React based applications."
-tags: [blog]
+tags: [blog, guest-post]
 slug: "top-5-tips-for-using-cody-with-react"
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/og-top-5-tips-for-using-cody-with-react.png
