@@ -6,7 +6,7 @@ authors:
   
 publishDate: 2023-12-07T10:00-02:00
 description: "What are the benefits of using Cody and Mermaid to generate flowcharts? Guest author, Tino Wening, gives a visual guide to understanding your codebase."
-tags: [blog]
+tags: [blog, guest-post]
 slug: "using-cody-and-mermaid-to-generate-flowcharts"
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/guest-post-cody-mermaid-tino-w-2x-og.png

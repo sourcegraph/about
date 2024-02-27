@@ -6,7 +6,7 @@ authors:
   
 publishDate: 2024-01-30T10:00-07:00
 description: "This post with teach you how Custom Commands in Cody can simplify your coding process by automating repetitive tasks, saving you time and effort."
-tags: [blog]
+tags: [blog, guest-post]
 slug: "codyception-coding-cody-tools-with-cody"
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/codyception-coding-cody-tools-with-cody-v4.png
