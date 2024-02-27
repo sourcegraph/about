@@ -74,7 +74,7 @@ export const CodeSearchPage: FunctionComponent = () => (
         className="bg-gray-50"
     >
         <div className="flex items-center py-10 lg:pb-16 lg:pt-24">
-            <InfiniteCarousel duration={100} images={carouselImages} />
+            <InfiniteCarousel duration={400} images={carouselImages} />
         </div>
 
         <ContentSection className="lg:pl-6" parentClassName="lg:!py-24">

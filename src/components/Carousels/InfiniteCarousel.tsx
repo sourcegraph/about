@@ -13,7 +13,7 @@ interface InfiniteCarouselProps {
 }
 
 const TickerAnimation: FC<InfiniteCarouselProps> = memo((props: InfiniteCarouselProps) => {
-    const { children, duration, isPlaying = true, direction = TICKER_DIRECTION_LEFT } = props
+    const { children, duration = 200, isPlaying = true, direction = TICKER_DIRECTION_LEFT } = props
 
     const tickerRef = useRef<HTMLDivElement>(null)
     const [tickerUUID, setTickerUUID] = useState<string>('')
@@ -53,7 +53,7 @@ const TickerAnimation: FC<InfiniteCarouselProps> = memo((props: InfiniteCarousel
             const controls = animate(
                 scope.current,
                 { x: tickerContentWidth ? tickerContentWidth * direction : 0 },
-                { ease: 'linear', duration: 100, repeat: Infinity }
+                { ease: 'linear', duration, repeat: Infinity }
             )
             controls.play()
             setAnimationControls(controls)
@@ -84,11 +84,11 @@ const TickerAnimation: FC<InfiniteCarouselProps> = memo((props: InfiniteCarousel
     }
 
     const handleMouseEnter = (): void => {
-        handleMouse(300)
+        handleMouse(600)
     }
 
     const handleMouseLeave = (): void => {
-        handleMouse(100)
+        handleMouse(duration)
     }
 
     return (
@@ -119,10 +119,9 @@ TickerAnimation.displayName = 'TickerAnimation'
 
 export const InfiniteCarousel: FC<{ images: { src: string; className?: string }[]; duration?: number }> = ({
     images,
-    duration = 100,
+    duration,
 }) => {
     const duplicatedImages = [...images, ...images, ...images, ...images, ...images, ...images, ...images, ...images] // Duplicate images for seamless looping
-
     return (
         <TickerAnimation duration={duration}>
             {duplicatedImages.map((img, index) => (
