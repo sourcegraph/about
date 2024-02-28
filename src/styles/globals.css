@@ -8,22 +8,12 @@
 @tailwind utilities;
 @import url('./cody-animation.css');
 
-@font-face {
-    font-family: 'SF Pro Text';
-    src: url('/fonts/sf-pro/SF-Pro-Text-Regular.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'SF Mono';
-    src: url('/fonts/sf-pro/SFMono-Regular.otf') format('opentype');
-}
-
 /* Base Styles */
 @layer base {
     /* Typography */
     html,
     body {
-        @apply font-sf text-base font-normal tracking-normal antialiased;
+        @apply font-systemSans text-base font-normal tracking-normal antialiased;
     }
     h1 {
         @apply font-sans text-6xl font-semibold tracking-normal md:text-7xl md:tracking-tightest;
@@ -32,19 +22,19 @@
         @apply font-sans text-4xl font-semibold tracking-normal md:text-5xl md:tracking-tighter;
     }
     h3 {
-        @apply font-sf text-2xl font-normal tracking-tight;
+        @apply font-systemSans text-2xl font-normal tracking-tight;
     }
     h4 {
         @apply font-sans text-2xl font-semibold tracking-normal;
     }
     h5 {
-        @apply font-sf text-xl font-semibold tracking-tight;
+        @apply font-systemSans text-xl font-semibold tracking-tight;
     }
     h6 {
         @apply font-sans text-lg font-semibold uppercase tracking-wide;
     }
     code {
-        @apply break-words font-sfMono text-base font-medium tracking-tightest;
+        @apply break-words font-systemMono text-base font-medium tracking-tightest;
     }
     kbd {
         @apply inline-block rounded border border-gray-400 bg-gray-200 px-2 py-1 text-sm text-gray-500 shadow-sm;
