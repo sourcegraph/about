@@ -18,6 +18,7 @@ interface CtaSection {
     description?: string
     cta1?: Cta
     cta2?: Cta | boolean
+    smallCta?: boolean
 }
 
 const Cta: FunctionComponent<Cta> = ({ text, ctaStyle, link }) => {
@@ -80,46 +81,64 @@ export const CodyCallToActionContentSection: FunctionComponent<CtaSection> = ({
         ctaStyle: 'link',
         link: '/demo',
     },
+    smallCta,
 }) => {
     const windowWidth = useWindowWidth()
     const lgAndUp = windowWidth > breakpoints.lg
 
     return (
-        <>
-            <div className="my-20 bg-violet-700 text-white">
-                <div
-                    className="bg-[] mx-auto grid h-full min-h-[291px] max-w-screen-xl grid-cols-12 items-center bg-[center_left] bg-repeat-y px-sm py-3xl lg:pl-0"
-                    // eslint-disable-next-line react/forbid-dom-props
-                    style={
-                        lgAndUp
-                            ? {
-                                  backgroundImage: "url('/cody/cody-logo.svg')",
-                                  backgroundRepeat: 'no-repeat',
-                                  backgroundSize: '150px',
-                              }
-                            : undefined
+        <div className="my-20 bg-violet-700 text-white">
+            <div
+                className={classNames(
+                    'bg-[] mx-auto h-full min-h-[291px] items-center bg-[center_left] bg-repeat-y px-sm py-3xl lg:pl-0',
+                    {
+                        'grid max-w-screen-xl grid-cols-12': !smallCta,
+                        'mx-auto flex max-w-[1066px] flex-col md:flex-row md:justify-around lg:gap-[76px]': smallCta,
                     }
+                )}
+                // eslint-disable-next-line react/forbid-dom-props
+                style={
+                    lgAndUp && !smallCta
+                        ? {
+                              backgroundImage: "url('/cody/cody-logo.svg')",
+                              backgroundRepeat: 'no-repeat',
+                              backgroundSize: smallCta ? '130px' : '150px',
+                          }
+                        : undefined
+                }
+            >
+                {smallCta && (
+                    <div className="hidden h-[130px] w-[130px] bg-[url('/cody/cody-logo.svg')] bg-contain bg-no-repeat lg:block" />
+                )}
+                <div
+                    className={classNames({
+                        'col-span-full  md:col-span-7 lg:col-span-6 lg:col-start-3 lg:pl-xl': !smallCta,
+                        'w-full md:w-auto': smallCta,
+                    })}
                 >
-                    <div className="col-span-full md:col-span-7 lg:col-span-6 lg:col-start-3 lg:pl-xl">
-                        <h2 className="mb-sm text-white">{title}</h2>
-                        <p className="max-w-2xl text-lg">{description}</p>
-                    </div>
+                    <h2 className="mb-sm text-white">{title}</h2>
+                    <p className="max-w-2xl text-lg">{description}</p>
+                </div>
 
-                    <div className={classNames('col-span-full flex flex-col items-center md:col-span-5 lg:col-span-4')}>
-                        {cta1 && (
-                            <div className="mt-sm">
-                                <Cta {...cta1} />
-                            </div>
-                        )}
+                <div
+                    className={classNames({
+                        'col-span-full flex flex-col items-center md:col-span-5 lg:col-span-4': !smallCta,
+                        'text-center lg:w-fit': smallCta,
+                    })}
+                >
+                    {cta1 && (
+                        <div className="mt-sm">
+                            <Cta {...cta1} />
+                        </div>
+                    )}
 
-                        {cta2 && typeof cta2 === 'object' && (
-                            <div className="mt-sm">
-                                <Cta {...cta2} />
-                            </div>
-                        )}
-                    </div>
+                    {cta2 && typeof cta2 === 'object' && (
+                        <div className="mt-sm">
+                            <Cta {...cta2} />
+                        </div>
+                    )}
                 </div>
             </div>
-        </>
+        </div>
     )
 }
