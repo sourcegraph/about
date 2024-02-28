@@ -1,17 +1,12 @@
 import { FunctionComponent, useEffect, useRef } from 'react'
 
 import classNames from 'classnames'
-import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
-import LockIcon from 'mdi-react/LockIcon'
-import RocketIcon from 'mdi-react/RocketIcon'
-import StarIcon from 'mdi-react/StarIcon'
 import Link from 'next/link'
 
 import {
     ContentSection,
     Heading,
     Layout,
-    ExternalsAuth,
     HubSpotForm,
     Badge,
     CodyAutocomplete,
@@ -19,7 +14,11 @@ import {
     CodyCta,
     CodyIde,
     CodyChat,
+    ContextAnimation,
+    CodyPartners,
+    CodyTestimonials,
 } from '../../components'
+import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
 import { EventName, getEventLogger } from '../../hooks/eventLogger'
 import { useWindowWidth } from '../../hooks/windowWidth'
@@ -58,9 +57,12 @@ const IMAGE_TAB_CONTENT = [
 const DemoCodyPage: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
-    const isXsMobile = windowWidth < 396
 
     const formContainerRef = useRef<HTMLDivElement | null>(null)
+
+    const { openModal } = useAuthModal()
+
+    const handleOpenModal = (): void => openModal('home')
 
     useEffect(() => {
         const eventArguments = {
@@ -102,37 +104,22 @@ const DemoCodyPage: FunctionComponent = () => {
                             <span className="cody-heading bg-clip-text text-transparent"> entire codebase </span>
                         </div>
                         <Heading size="h4" className="mt-6 max-w-[637px]  !font-normal text-gray-200">
-                            Cody answers technical questions and writes code directly in your IDE, using your code graph
-                            for context and accuracy.
+                            Cody is a coding AI assistant that uses AI and a deep understanding of your codebase to help
+                            you write and understand code faster
                         </Heading>
                         <div className="mt-6 text-lg font-semibold text-white">
                             Get Started with Cody <Badge size="small" text="BETA" color="violet" />
                         </div>
 
                         <div className="mt-4 flex flex-wrap gap-2 sm:w-[512px]">
-                            <div className="flex w-[228px] flex-wrap gap-2 md:w-fit">
-                                <ExternalsAuth
-                                    className="max-w-[228px] flex-1 justify-center !font-normal  xs:w-fit xs:flex-grow-0"
-                                    authProvider="github"
-                                    label="GitHub"
-                                    source="about-cody"
-                                />
-                                <ExternalsAuth
-                                    className="max-w-[228px] flex-1 justify-center !font-normal xs:w-fit xs:flex-grow-0"
-                                    authProvider="gitlab"
-                                    label="GitLab"
-                                    source="about-cody"
-                                />
-                            </div>
-
-                            <ExternalsAuth
-                                className={`w-fit justify-center !font-normal ${
-                                    isXsMobile ? 'max-w-[228px] flex-1' : ''
-                                }`}
-                                authProvider="google"
-                                label="Google"
-                                source="about-cody"
-                            />
+                            <button
+                                type="button"
+                                className={classNames('btn btn-inverted-primary text-violet-500')}
+                                title="Download Sourcegraph"
+                                onClick={handleOpenModal}
+                            >
+                                Get Cody for free
+                            </button>
                         </div>
                         <p className="mt-6 text-[14px] text-violet-300 opacity-70">
                             By registering, you agree to our{' '}
@@ -165,59 +152,41 @@ const DemoCodyPage: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <CodyAutocomplete />
-
-            <ContentSection
-                parentClassName="!py-0"
-                className="flex w-full flex-col items-center justify-around  gap-y-12 gap-x-6 pt-16 text-center md:flex-row md:px-8 md:pt-10 md:pb-[64px]"
-            >
-                <div className="max-w-[441px]">
-                    <div className="mx-auto mb-[24px] flex h-12 w-12 items-center justify-center rounded-[7px] bg-violet-100 ">
-                        <RocketIcon color="purple" size="2rem" />
+            <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 text-center md:mt-0 md:pt-[22px]">
+                <div className="mx-auto w-full px-6 md:w-[849px] lg:w-[895px]">
+                    <div className="mx-auto w-full pt-6 text-[48px] font-semibold leading-[58px] text-white md:text-[72px] md:leading-[86px]">
+                        Code more, type less
                     </div>
-
-                    <Heading size="h4" className="mb-[16px] !text-2xl text-gray-200">
-                        Powerful and accurate
+                    <Heading
+                        size="h3"
+                        className="mx-auto mb-8 mt-6  max-w-[663px] leading-[30px] !tracking-[-0.25px] text-gray-200"
+                    >
+                        Cody is a coding AI assistant that uses AI and a deep understanding of your codebase to help you
+                        write and understand code faster.
                     </Heading>
-                    <p className="mb-0 text-gray-200">Embeddings for greater codebase context</p>
-                </div>
-
-                <div className="max-w-[441px]">
-                    <div className="mx-auto mb-[24px] flex h-12 w-12 items-center justify-center rounded-[7px] bg-violet-100">
-                        <StarIcon color="purple" size="2rem" />
-                    </div>
-
-                    <Heading size="h4" className="mb-[16px] !text-2xl text-gray-200">
-                        Universal
-                    </Heading>
-                    <p className="mb-0 text-gray-200">Supports all code hosts and multiple LLM options</p>
-                </div>
-
-                <div className="max-w-[441px]">
-                    <div className="mx-auto mb-[24px] flex h-12 w-12 items-center justify-center rounded-[7px] bg-violet-100">
-                        <LockIcon color="purple" size="2rem" />
-                    </div>
-
-                    <Heading size="h4" className="mb-[16px] !text-2xl text-gray-200">
-                        Scalable and secure
-                    </Heading>
-                    <p className="mb-0 text-gray-200">Zero retention on inputs and outputs, Indemnity</p>
+                    <button
+                        type="button"
+                        className="btn btn-inverted-primary min-w-[204px] px-6 py-3 text-violet-500 lg:px-4"
+                        title="Get Cody for free"
+                        onClick={handleOpenModal}
+                    >
+                        <div className="flex items-center justify-center">
+                            <img src="/cody/cody-logo.svg" className="mr-2 h-[24px] w-[24px]" alt="Cody Logo" />
+                            Get Cody for free
+                        </div>
+                    </button>
                 </div>
             </ContentSection>
+
+            <CodyAutocomplete className="sg-bg-gradient-cody-hero" />
 
             <CodyIde />
 
             <CodyChat />
 
-            <Heading size="h3" className="mx-auto mt-[96px] hidden max-w-[839px] px-sm text-center text-white md:block">
-                “Cody is a game-changer! It helps me work smarter, write cleaner code, and understand projects faster.
-                My productivity is through the roof, thanks to Cody.”
-            </Heading>
+            <CodyPartners />
 
-            <div className="mt-6 hidden flex-row items-center justify-center gap-4 md:flex">
-                <img className="" src="/cody/Avatar.svg" alt="Avatar" />
-                <p className="mb-0 text-lg text-gray-200">TINO WENING</p>
-            </div>
+            <CodyTestimonials />
 
             <CodyImageTab
                 icon="/cody/commands-brand-icon.svg"
@@ -233,40 +202,34 @@ const DemoCodyPage: FunctionComponent = () => {
                 tabContent={IMAGE_TAB_CONTENT}
             />
 
-            <ContentSection parentClassName="!pb-0" className="flex flex-col gap-12 md:flex-row">
-                <div className="flex max-w-[661px] flex-col gap-[30px]">
-                    <Heading size="h2" className="!text-4xl text-white">
-                        Cody knows your code
+            <ContentSection
+                parentClassName="!p-0 !m-0"
+                className="m-0 flex flex-col gap-5 px-6 py-16 md:flex-row md:justify-between md:gap-12 md:px-0 lg:py-28"
+            >
+                <div className="flex w-full flex-col md:mx-[29px] ">
+                    <Heading size="h2" className="mb-1 text-[40px] font-normal leading-10 tracking-[-1px] text-white">
+                        Sourcegraph powered <span className="cody-heading bg-clip-text text-transparent">context</span>
                     </Heading>
-                    <p className="mb-0 text-lg text-gray-200">
-                        Cody uses context to answer questions that require an understanding of multiple files or even
-                        entire repositories. Plus, this context allows Cody to make suggestions that use your own APIs
-                        and idioms.
-                        <br />
-                        <br />
-                        We’re experimenting with several methods of context retrieval to improve Cody’s accuracy,
-                        including embeddings, keyword search, and hybrid search.
+
+                    <p className="mb-0 mt-[12px] text-2xl font-normal leading-[30px] tracking-[-0.25px] text-white md:max-w-[501px]">
+                        Sourcegraph’s code graph and analysis tools allows Cody to autocomplete, explain, and edit your
+                        code with additional context.
                     </p>
+                    <img
+                        src="/cody/context_illustration.svg"
+                        className="mt-6 md:max-w-[501px]"
+                        alt="cody context illustration"
+                    />
                 </div>
-                <div className="rounded-bl-8 rounded-br-8 bg-opacity-40 text-white">
-                    <div className="cody-whitepaper-border h-[2px]" />
-                    <div className="mt-3 flex flex-col gap-3 p-6">
-                        <p className="mb-0 font-mono text-sm">Whitepaper</p>
-                        <p className="mb-0 font-grotesk text-xl">Cody context architecture</p>
-                        <p className="mb-0 text-gray-200">
-                            Context awareness is key to the quality and precision of Cody. This paper outlines how Cody
-                            fetches the right context at the right time to answer queries.
-                        </p>
-                        <Link
-                            href="/resources/a-lp-cody-context-architecture"
-                            className="flex gap-[10px] pb-4 font-semibold text-white hover:text-violet-300 hover:underline"
-                        >
-                            Read more <ChevronRightIcon />
-                        </Link>
-                    </div>
+                <div className="hidden md:flex">
+                    <ContextAnimation />
+                </div>
+                <div className="md:hidden md:h-[333px] md:w-[538px] md:min-w-[399px]">
+                    <img src="/cody/context_illustration_details.svg" alt="cody context illustration details" />
                 </div>
             </ContentSection>
-            <CodyCta source='cody demo page' />
+
+            <CodyCta source="Cody page" isCodyPage={true} />
         </Layout>
     )
 }
