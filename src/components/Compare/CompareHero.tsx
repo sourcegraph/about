@@ -65,7 +65,13 @@ const CompareHero: FunctionComponent<Props> = ({
                                 {/* comparisons link */}
                                 <Link
                                     href="/compare"
-                                    className="mb-4 inline-block text-sm font-semibold text-gray-400 transition hover:text-blue-500 hover:underline"
+                                    className={classNames(
+                                        'mb-4 inline-block text-sm text-gray-400 transition hover:text-blue-500 hover:underline',
+                                        {
+                                            'font-semibold': !simpleStyle,
+                                            'font-normal leading-[19.88px]': simpleStyle,
+                                        }
+                                    )}
                                 >
                                     Comparisons /
                                 </Link>
@@ -99,7 +105,8 @@ const CompareHero: FunctionComponent<Props> = ({
                                                     '-translate-y-1 bg-gradient-to-br from-gray-400 to-gray-600 bg-clip-text leading-none text-transparent ',
                                                     {
                                                         'text-4xl lg:text-8xl': !simpleStyle,
-                                                        'text-4xl': simpleStyle,
+                                                        'text-4xl font-bold lg:text-[34.32px] lg:leading-[40.96px]':
+                                                            simpleStyle,
                                                     }
                                                 )}
                                             >
