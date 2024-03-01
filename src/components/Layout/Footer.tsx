@@ -57,10 +57,6 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
                 href: '/resources',
             },
             {
-                name: 'Library',
-                href: '/resources',
-            },
-            {
                 name: 'Customer stories',
                 href: '/case-studies',
             },
