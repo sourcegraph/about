@@ -37,7 +37,7 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
         ],
     },
     {
-        name: 'Soultions',
+        name: 'Solutions',
         items: [
             {
                 name: 'Enterprise',
