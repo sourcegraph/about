@@ -37,15 +37,11 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
         ],
     },
     {
-        name: 'Enterprise',
+        name: 'Soultions',
         items: [
             {
-                name: 'Pricing',
-                href: '/pricing',
-            },
-            {
-                name: 'Customer stories',
-                href: '/case-studies',
+                name: 'Enterprise',
+                href: '/Enterprise',
             },
         ],
     },
@@ -61,16 +57,16 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
                 href: '/resources',
             },
             {
+                name: 'Customer stories',
+                href: '/case-studies',
+            },
+            {
                 name: 'Changelog',
                 href: 'https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md',
             },
             {
                 name: 'Documentation',
                 href: 'https://sourcegraph.com/docs',
-            },
-            {
-                name: 'Podcast',
-                href: '/podcast',
             },
             {
                 name: 'Community',
