@@ -40,10 +40,6 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
         name: 'Enterprise',
         items: [
             {
-                name: 'Cloud',
-                href: '/cloud',
-            },
-            {
                 name: 'Pricing',
                 href: '/pricing',
             },
