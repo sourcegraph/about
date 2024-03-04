@@ -45,7 +45,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
         setShowDetails(!showDetails)
     }
     const windowWidth = useWindowWidth()
-    const isMobile = windowWidth < breakpoints.lg
+    const isMobile = windowWidth < breakpoints.mdi
 
     return (
         <div className={classNames('rounded-2xl border border-gray-200 bg-white', shadow, planClasses)}>

@@ -20,7 +20,11 @@ const breaks: Breakpoints = {}
 
 for (const screen in screens) {
     if (screens[screen]) {
-        breaks[screen] = Number(screens[screen].slice(0, -2))
+        if (typeof screens[screen] === 'object' && screens[screen] !== null) {
+            breaks[screen] = Number((screens[screen]).min.slice(0, -2));
+        } else {
+            breaks[screen] = Number(screens[screen].slice(0, -2));
+        }
     }
 }
 
