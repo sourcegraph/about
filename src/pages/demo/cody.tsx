@@ -8,7 +8,6 @@ import {
     Heading,
     Layout,
     HubSpotForm,
-    Badge,
     CodyAutocomplete,
     CodyImageTab,
     CodyCta,
@@ -62,7 +61,7 @@ const DemoCodyPage: FunctionComponent = () => {
 
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal('home')
+    const handleOpenModal = (): void => openModal('cody')
 
     useEffect(() => {
         const eventArguments = {
@@ -84,6 +83,7 @@ const DemoCodyPage: FunctionComponent = () => {
             headerColorTheme="purple"
             childrenClassName={isMobile ? 'sg-bg-gradient-cody-mobile' : 'sg-bg-gradient-cody'}
             displayChildrenUnderNav={true}
+            customFooterClassName="!bg-transparent"
         >
             {/* Hero Section */}
             <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 md:mt-0 md:pt-[22px] md:pb-9">
@@ -107,14 +107,11 @@ const DemoCodyPage: FunctionComponent = () => {
                             Cody is a coding AI assistant that uses AI and a deep understanding of your codebase to help
                             you write and understand code faster
                         </Heading>
-                        <div className="mt-6 text-lg font-semibold text-white">
-                            Get Started with Cody <Badge size="small" text="BETA" color="violet" />
-                        </div>
 
                         <div className="mt-4 flex flex-wrap gap-2 sm:w-[512px]">
                             <button
                                 type="button"
-                                className={classNames('btn btn-inverted-primary text-violet-500')}
+                                className='btn btn-inverted-primary text-violet-500'
                                 title="Download Sourcegraph"
                                 onClick={handleOpenModal}
                             >
@@ -152,32 +149,6 @@ const DemoCodyPage: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 text-center md:mt-0 md:pt-[22px]">
-                <div className="mx-auto w-full px-6 md:w-[849px] lg:w-[895px]">
-                    <div className="mx-auto w-full pt-6 text-[48px] font-semibold leading-[58px] text-white md:text-[72px] md:leading-[86px]">
-                        Code more, type less
-                    </div>
-                    <Heading
-                        size="h3"
-                        className="mx-auto mb-8 mt-6  max-w-[663px] leading-[30px] !tracking-[-0.25px] text-gray-200"
-                    >
-                        Cody is a coding AI assistant that uses AI and a deep understanding of your codebase to help you
-                        write and understand code faster.
-                    </Heading>
-                    <button
-                        type="button"
-                        className="btn btn-inverted-primary min-w-[204px] px-6 py-3 text-violet-500 lg:px-4"
-                        title="Get Cody for free"
-                        onClick={handleOpenModal}
-                    >
-                        <div className="flex items-center justify-center">
-                            <img src="/cody/cody-logo.svg" className="mr-2 h-[24px] w-[24px]" alt="Cody Logo" />
-                            Get Cody for free
-                        </div>
-                    </button>
-                </div>
-            </ContentSection>
-
             <CodyAutocomplete className="sg-bg-gradient-cody-hero" />
 
             <CodyIde />
@@ -211,7 +182,7 @@ const DemoCodyPage: FunctionComponent = () => {
                         Sourcegraph powered <span className="cody-heading bg-clip-text text-transparent">context</span>
                     </Heading>
 
-                    <p className="mb-0 mt-[12px] text-2xl font-normal leading-[30px] tracking-[-0.25px] text-white md:max-w-[501px]">
+                    <p className="mb-0 mt-3 text-2xl font-normal leading-[30px] tracking-[-0.25px] text-white md:max-w-[501px]">
                         Sourcegraph’s code graph and analysis tools allows Cody to autocomplete, explain, and edit your
                         code with additional context.
                     </p>
