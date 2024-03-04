@@ -5,4 +5,14 @@ module.exports = {
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   outDir: 'out',
+  robotsTxtOptions: {
+    policies: [
+      {
+        userAgent: '*',
+        disallow: '/*?q=',
+        noindex: '/*?q=',
+        nofollow: '/*?q=',
+      },
+    ],
+  },
 }
