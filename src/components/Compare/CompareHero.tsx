@@ -1,8 +1,6 @@
-/* eslint react/forbid-dom-props: 0 */
 import { FunctionComponent, ReactNode } from 'react'
 
 import classNames from 'classnames'
-import Link from 'next/link'
 
 interface Props {
     title: string
@@ -62,20 +60,6 @@ const CompareHero: FunctionComponent<Props> = ({
                     <div className={classNames('mx-auto max-w-7xl px-6 pb-24 pt-28 xl:px-0', containerClassName)}>
                         <div className="gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                             <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                                {/* comparisons link */}
-                                <Link
-                                    href="/compare"
-                                    className={classNames(
-                                        'mb-4 inline-block text-sm text-gray-400 transition hover:text-blue-500 hover:underline',
-                                        {
-                                            'font-semibold': !simpleStyle,
-                                            'font-normal leading-[19.88px]': simpleStyle,
-                                        }
-                                    )}
-                                >
-                                    Comparisons /
-                                </Link>
-
                                 {/* title */}
                                 <h1 className={titleClassName}>{title}</h1>
 
@@ -89,7 +73,11 @@ const CompareHero: FunctionComponent<Props> = ({
                             <div className="mt-20 flex w-full items-center justify-center lg:mt-0">
                                 {/* vs box is placed in the center */}
                                 {/* the cody and competitor logos are placed absolutely from that */}
-                                <div className="relative flex items-center gap-5 lg:items-baseline lg:gap-0">
+                                <div
+                                    className={classNames('relative flex items-center lg:items-baseline lg:gap-0', {
+                                        'gap-5': !simpleStyle,
+                                    })}
+                                >
                                     {/* vs box */}
                                     <div
                                         className={classNames(
@@ -123,6 +111,7 @@ const CompareHero: FunctionComponent<Props> = ({
                                             '-left-28 -top-24 h-32 w-32 overflow-hidden rounded-[35.46px] border-[4px] border-[#F2F2F2] p-1 lg:h-[137px] lg:w-[137px]':
                                                 simpleStyle,
                                         })}
+                                        // eslint-disable-next-line react/forbid-dom-props
                                         style={{ boxShadow: brandBoxShadow }}
                                     >
                                         <div
@@ -136,7 +125,7 @@ const CompareHero: FunctionComponent<Props> = ({
                                             <img
                                                 src="/cody-logomark-default.svg"
                                                 alt="Cody Logo"
-                                                className={classNames('', {
+                                                className={classNames({
                                                     'h-16 w-16 lg:h-24 lg:w-24': !simpleStyle,
                                                     'h-[74px] w-[74px]': simpleStyle,
                                                 })}
@@ -152,6 +141,7 @@ const CompareHero: FunctionComponent<Props> = ({
                                             '-bottom-24 -right-28 z-[11] overflow-hidden rounded-[35.46px] border-[4px] border-[#F2F2F2] p-1 lg:absolute lg:h-[137px] lg:w-[137px]':
                                                 simpleStyle,
                                         })}
+                                        // eslint-disable-next-line react/forbid-dom-props
                                         style={{ boxShadow: brandBoxShadow }}
                                     >
                                         <div
@@ -165,7 +155,7 @@ const CompareHero: FunctionComponent<Props> = ({
                                             <img
                                                 src={competitorIcon}
                                                 alt={competitorDescription}
-                                                className={classNames('', {
+                                                className={classNames({
                                                     'h-16 w-16 lg:h-24 lg:w-24': !simpleStyle,
                                                     'h-[74px] w-[74px]': simpleStyle,
                                                 })}

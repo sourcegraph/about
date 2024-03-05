@@ -1,218 +1,17 @@
 import { FunctionComponent } from 'react'
 
-import { Layout } from '../../components'
+import { Heading, Layout } from '../../components'
 import CompareHero from '../../components/Compare/CompareHero'
+import { CompareTables } from '../../components/Compare/CompareTables'
+import { copilotVsCody } from '../../components/Compare/constants'
 import { DemoComparisons } from '../../components/Compare/DemoComparisons'
-import { FeatureComponent } from '../../components/Compare/FeatureComponent'
 import { CodyCallToActionContentSection } from '../../components/cta/CodyCallToActionContentSection'
 import { useAuthModal } from '../../context/AuthModalContext'
-
-const featureSupport = [
-    {
-        feature: 'Autocomplete',
-        feature_details: '',
-        view_feature_details: false,
-        cody: true,
-        cody_details: '',
-        view_cody_details: false,
-        competitor: true,
-        competitor_details: '',
-        view_competitor_details: false,
-    },
-    {
-        feature: 'Chat',
-        feature_details: '',
-        view_feature_details: false,
-        cody: true,
-        cody_details: '',
-        view_cody_details: false,
-        competitor: true,
-        competitor_details: '',
-        view_competitor_details: false,
-    },
-    {
-        feature: 'Commands',
-        feature_details: '',
-        view_feature_details: false,
-        cody: true,
-        cody_details: '',
-        view_cody_details: false,
-        competitor: true,
-        competitor_details: '',
-        view_competitor_details: false,
-    },
-    {
-        feature: 'Custom commands',
-        feature_details: '',
-        view_feature_details: false,
-        cody: true,
-        cody_details: '',
-        view_cody_details: false,
-        competitor: false,
-        competitor_details: '',
-        view_competitor_details: false,
-    },
-]
-
-const ideSupport = [
-    {
-        feature: 'Visual Studio Code',
-        feature_details: '',
-        view_feature_details: false,
-        cody: true,
-        cody_details: '',
-        view_cody_details: false,
-        competitor: true,
-        competitor_details: '',
-        view_competitor_details: false,
-    },
-    {
-        feature: 'JetBrains',
-        feature_details: '',
-        view_feature_details: false,
-        cody: true,
-        cody_details: '',
-        view_cody_details: false,
-        competitor: true,
-        competitor_details: '',
-        view_competitor_details: false,
-    },
-    {
-        feature: 'Visual Studio',
-        feature_details: '',
-        view_feature_details: false,
-        cody: false,
-        cody_details: '',
-        view_cody_details: false,
-        competitor: true,
-        competitor_details: '',
-        view_competitor_details: false,
-    },
-    {
-        feature: 'Other',
-        feature_details: '',
-        view_feature_details: false,
-        cody: true,
-        cody_details: ['Neovim'],
-        view_cody_details: false,
-        competitor: true,
-        competitor_details: ['Neovim'],
-        view_competitor_details: false,
-    },
-]
-
-const llmSupport = [
-    {
-        feature: 'Chat model (default)',
-        feature_details: '',
-        view_feature_details: false,
-        cody: 'Claude 2',
-        cody_details: '',
-        view_cody_details: false,
-        competitor: 'GPT-4',
-        competitor_details: '',
-        view_competitor_details: false,
-    },
-    {
-        feature: 'Autocomplete model (default)',
-        feature_details: '',
-        view_feature_details: false,
-        cody: 'StarCoder',
-        cody_details: '',
-        view_cody_details: false,
-        competitor: 'Codex',
-        competitor_details: '',
-        view_competitor_details: false,
-    },
-    {
-        feature: 'Choose your LLM',
-        feature_details: '',
-        view_feature_details: false,
-        cody: true,
-        cody_details: '',
-        view_cody_details: false,
-        competitor: false,
-        competitor_details: '',
-        view_competitor_details: false,
-    },
-    {
-        feature: 'Bring your own LLM key',
-        feature_details: '',
-        view_feature_details: false,
-        cody: true,
-        cody_details: '',
-        view_cody_details: false,
-        competitor: false,
-        competitor_details: '',
-        view_competitor_details: false,
-    },
-    {
-        feature: 'LLM hosting',
-        feature_details: '',
-        view_feature_details: false,
-        cody: 'Cloud',
-        cody_details: '',
-        view_cody_details: false,
-        competitor: 'Cloud',
-        competitor_details: '',
-        view_competitor_details: false,
-    },
-]
-
-const contextSupport = [
-    {
-        feature: 'Personalized responses using codebase context',
-        feature_details: '',
-        view_feature_details: false,
-        cody: true,
-        cody_details: 'Available on all tiers',
-        view_cody_details: false,
-        competitor: false,
-        competitor_details: 'Waitlist for Enterprise tier',
-        view_competitor_details: false,
-    },
-    {
-        feature: 'Fine-tuned LLM',
-        feature_details: '',
-        view_feature_details: false,
-        cody: false,
-        cody_details: '',
-        view_cody_details: false,
-        competitor: false,
-        competitor_details: 'Waitlist for Enterprise tier',
-        view_competitor_details: false,
-    },
-]
-
-const pricingSupport = [
-    {
-        feature: 'Free tier offered',
-        feature_details: '',
-        view_feature_details: false,
-        cody: true,
-        cody_details: '',
-        view_cody_details: false,
-        competitor: false,
-        competitor_details: 'Free for students, teachers, and OSS maintainers',
-        view_competitor_details: false,
-    },
-    {
-        feature: 'Pro tier pricing for individuals',
-        feature_details: '',
-        view_feature_details: false,
-        cody: '$9 / user / month',
-        cody_details: '',
-        view_cody_details: false,
-        competitor: '$10 / user / month',
-        competitor_details: '',
-        view_competitor_details: false,
-    },
-]
 
 const CopilotVsCodyPage: FunctionComponent = () => {
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal('home')
+    const handleOpenModal = (): void => openModal('copilot-vs-cody')
 
     return (
         <Layout
@@ -229,10 +28,13 @@ const CopilotVsCodyPage: FunctionComponent = () => {
                     competitorIcon="/assets/compare/github-copilot.svg"
                     containerClassName="xl:px-6 xl:pt-[121px]"
                 >
-                    <h3 className="mt-[-15px] mb-0 pb-[5px] font-sf leading-[30px] tracking-[-0.25px] lg:w-[671px] lg:text-2xl">
+                    <Heading
+                        size="h3"
+                        className="mt-[-15px] mb-0 pb-[5px] font-sf !leading-[30px] !tracking-[-0.25px] lg:w-[671px] lg:text-2xl"
+                    >
                         H3 Lorem ipsum dolor sit amet consectetur. Ullamcorper feugiat sit est imperdiet fringilla odio
                         pellentesque ut mattis.
-                    </h3>
+                    </Heading>
 
                     <button
                         type="button"
@@ -240,7 +42,7 @@ const CopilotVsCodyPage: FunctionComponent = () => {
                         title="Get Cody for free"
                         onClick={handleOpenModal}
                     >
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-center leading-6 tracking-[-0.25px]">
                             <img src="/cody/cody-logo.svg" className="mr-2 h-[24px] w-[24px]" alt="Cody Logo" /> Get
                             Cody for free
                         </div>
@@ -248,91 +50,7 @@ const CopilotVsCodyPage: FunctionComponent = () => {
                 </CompareHero>
             }
         >
-            <div className="relative z-20 mx-auto grid max-w-[1066px] grid-cols-1 gap-lg bg-white px-5 md:grid-cols-12 lg:pt-[86px] xl:px-0">
-                <div className="col-span-full">
-                    <table className="table-fixed border-0">
-                        <thead>
-                            <tr>
-                                <th className="w-1/2 border-0 text-left font-semibold">Features</th>
-                                <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                                <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            {featureSupport?.map(item => (
-                                <FeatureComponent item={item} key={item.feature} />
-                            ))}
-                        </tbody>
-                    </table>
-
-                    <table className="table-fixed border-0">
-                        <thead>
-                            <tr>
-                                <th className="w-1/2 border-0 text-left font-semibold">IDE support</th>
-                                <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                                <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            {ideSupport?.map(item => (
-                                <FeatureComponent item={item} key={item.feature} />
-                            ))}
-                        </tbody>
-                    </table>
-
-                    <table className="table-fixed border-0">
-                        <thead>
-                            <tr>
-                                <th className="w-1/2 border-0 text-left font-semibold">LLM / Model</th>
-                                <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                                <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            {llmSupport?.map(item => (
-                                <FeatureComponent item={item} key={item.feature} />
-                            ))}
-                        </tbody>
-                    </table>
-
-                    <table className="table-fixed border-0">
-                        <thead>
-                            <tr>
-                                <th className="w-1/2 border-0 text-left font-semibold">Context and personalization</th>
-                                <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                                <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            {contextSupport?.map(item => (
-                                <FeatureComponent item={item} key={item.feature} />
-                            ))}
-                        </tbody>
-                    </table>
-
-                    <table className="table-fixed border-0">
-                        <thead>
-                            <tr>
-                                <th className="w-1/2 border-0 text-left font-semibold">Pricing</th>
-                                <th className="w-1/4 border-0 font-semibold">Sourcegraph Cody</th>
-                                <th className="w-1/4 border-0 font-semibold">GitHub Copilot</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            {pricingSupport?.map(item => (
-                                <FeatureComponent item={item} key={item.feature} />
-                            ))}
-                        </tbody>
-                    </table>
-
-                    <p className="mt-1 text-sm text-gray-400">Last updated: 2023-12-06</p>
-                </div>
-            </div>
+            <CompareTables compareData={copilotVsCody} demoStyle={true} />
 
             <CodyCallToActionContentSection
                 title="Get Cody, the AI coding assistant"
@@ -342,10 +60,7 @@ const CopilotVsCodyPage: FunctionComponent = () => {
                 smallCta={true}
             />
 
-            <div className="mx-auto mb-10 max-w-[1232px]  lg:pt-10">
-                <h2 className="mb-10 px-4 lg:mb-[75px] lg:px-0">Compare other code AI assistants</h2>
-                <DemoComparisons />
-            </div>
+            <DemoComparisons />
         </Layout>
     )
 }

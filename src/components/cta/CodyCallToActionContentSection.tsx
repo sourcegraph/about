@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { breakpoints } from '../../data/breakpoints'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 import { useWindowWidth } from '../../hooks/windowWidth'
+import { Heading } from '../Heading'
 
 interface Cta {
     text: string
@@ -116,7 +117,9 @@ export const CodyCallToActionContentSection: FunctionComponent<CtaSection> = ({
                         'w-full md:w-auto': smallCta,
                     })}
                 >
-                    <h2 className="mb-sm text-white">{title}</h2>
+                    <Heading size="h2" className="mb-sm text-white">
+                        {title}
+                    </Heading>
                     <p className="max-w-2xl text-lg">{description}</p>
                 </div>
 

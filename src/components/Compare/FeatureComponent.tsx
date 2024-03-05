@@ -25,7 +25,7 @@ export const FeatureComponent: FunctionComponent<{ item: any }> = (item: any) =>
                 {showFeatureDetails && <p className="text-xs">{data.feature_details}</p>}
             </td>
 
-            <td className="relative w-1/4 text-center">
+            <td className="relative w-1/4 min-w-[122px] text-center">
                 {/* check or x */}
                 {data.cody === true && (
                     <span className="mx-auto inline-flex h-8 w-8 items-center justify-center rounded-sm bg-violet-100/40">
@@ -54,7 +54,7 @@ export const FeatureComponent: FunctionComponent<{ item: any }> = (item: any) =>
                 {showCodyDetails && !Array.isArray(data.cody_details) && <p>{data.cody_details}</p>}
             </td>
 
-            <td className="relative w-1/4 text-center">
+            <td className="relative w-1/4 min-w-[122px] text-center">
                 {/* check or x */}
                 {data.competitor === true && (
                     <span className="mx-auto inline-flex h-8 w-8 items-center justify-center rounded-sm bg-violet-100/40">
