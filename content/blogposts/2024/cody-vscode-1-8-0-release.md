@@ -49,7 +49,7 @@ Here's how to activate this feature:
 
 ## @-File now supports line numbers
 
-Users can now add line number context to their @-mentioned queries by appending ':line-range' after file names. The line range will be parsed and used to generate more precise code links.
+You can now specify line numbers when you @-mention files in chat, by appending ':line-range' after the file name, allowing you to @-mention parts of large files. We've also updated the Explain Code and Find Code Smells commands to take advantage of this, so it's clearer what lines of code the commands are referencing.
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/@file-line-numbers.gif)
 
