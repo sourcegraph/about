@@ -29,7 +29,7 @@ Claude 3 Sonnet is the faster model, but produces answers with a lower level of 
 
 
 
-## Local Ollama models for Chat and Commands
+## Local Ollama models for chat and commands (experimental)
 
 Cody now supports using [Ollama](https://ollama.com) to run local models for chat and commands, available for Cody Pro users.
 
