@@ -63,7 +63,7 @@ Any user-defined custom command can now have a keyboard shortcut assigned. Simpl
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/keybindings.png)
 
 
-## Local Context is now refreshed daily
+## Automatic updating of local search index
 
 We have implemented automated daily rebuilds for stale local context indexes used by Symf. The service now checks daily whether the codebase and Git metadata has changed compared to the latest indexed state.
 
