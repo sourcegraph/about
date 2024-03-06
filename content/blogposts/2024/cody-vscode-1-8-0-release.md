@@ -11,8 +11,8 @@ description: "This release includes several keyboard shortcuts, enabling login i
 tags: [blog]
 slug: "cody-vscode-1-8-0-release"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.6.0/cody-vscode-1.8.0-og-image.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.6.0/cody-vscode-1.8.0-og-image.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/cody-vscode-1.8.0-og-image.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/cody-vscode-1.8.0-og-image.png
 --- 
 
 We're thrilled to announce the release of Cody v1.8.0, our latest update to our VS Code extension. This release includes support for Claude 3, local Ollama models, and various feature improvements. Notable improvements include @-file line numbers, keybindings for custom commands, and improvements to local context fetching. 
