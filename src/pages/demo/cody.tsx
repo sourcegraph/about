@@ -100,18 +100,18 @@ const DemoCodyPage: FunctionComponent = () => {
                             />
                         </div>
                         <div className="mx-auto w-full pt-6 text-[39px] font-semibold leading-[41px] tracking-[-1.17px] text-white md:text-[39px] md:leading-[47px]">
-                            We’re building the only AI coding assistant <br /> that knows your{' '}
+                            The only AI coding assistant <br /> that knows your{' '}
                             <span className="cody-heading bg-clip-text text-transparent"> entire codebase </span>
                         </div>
                         <Heading size="h4" className="mt-6 max-w-[637px]  !font-normal text-gray-200">
-                            Cody is a coding AI assistant that uses AI and a deep understanding of your codebase to help
-                            you write and understand code faster
+                            Cody uses AI and deep understanding of your codebase to help you write and understand code
+                            faster
                         </Heading>
 
                         <div className="mt-4 flex flex-wrap gap-2 sm:w-[512px]">
                             <button
                                 type="button"
-                                className='btn btn-inverted-primary text-violet-500'
+                                className="btn btn-inverted-primary text-violet-500"
                                 title="Download Sourcegraph"
                                 onClick={handleOpenModal}
                             >
@@ -139,7 +139,7 @@ const DemoCodyPage: FunctionComponent = () => {
                     </div>
                     <div className={classNames('w-full max-w-[554px]', styles.codyForm)} ref={formContainerRef}>
                         <Heading size="h3" className="mb-4 !text-2xl font-semibold text-white">
-                            Schedule a demo
+                            Request Cody Demo
                         </Heading>
                         <HubSpotForm
                             formId="255d54c8-65db-435e-b131-d8dc4ab9ea96"
