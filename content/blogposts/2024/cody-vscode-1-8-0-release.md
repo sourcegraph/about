@@ -17,7 +17,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 [Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v1.8.0 is now available and includes support for Claude 3, local Ollama models, @-mentioning line numbers, keybindings for custom commands, and automatic updating of the local search index.
 
 
-## Claude 3.0 is now available!
+## Support for Claude 3
 
 For Cody Pro users, Cody now supports the new [Claude 3](https://www.anthropic.com/news/claude-3-family) models Claude 3 Opus and Claude 3 Sonnet for Chat, Code Editing and Commands.
 
