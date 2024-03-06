@@ -31,7 +31,7 @@ Claude 3 Sonnet is the faster model, but produces answers with a lower level of 
 
 ## Local Ollama models for Chat and Commands
 
-Cody now supports Ollama models for offline usage within chat and commands. Users can now pull open-source Ollama models locally and utilize them from your local environment. 
+Cody now supports using [Ollama](https://ollama.com) to run local models for chat and commands, available for Cody Pro users.
 
 Here's how to activate this feature:
 1. Download Ollama from https://ollama.com/download
