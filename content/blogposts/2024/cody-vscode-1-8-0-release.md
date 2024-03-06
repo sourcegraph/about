@@ -65,9 +65,7 @@ Any user-defined custom command can now have a keyboard shortcut assigned. Simpl
 
 ## Automatic updating of local search index
 
-We have implemented automated daily rebuilds for stale local context indexes used by Symf. The service now checks daily whether the codebase and Git metadata has changed compared to the latest indexed state.
-
-This ensures Cody has an up to date representation of the codebase, and should see fewer confusing or inaccurate responses. 
+The local search index, used by Cody Free & Cody Pro, now automatically updates every 24 hours to ensure up-to-date code is used for context, reducing the number of confusing or inaccurate responses.
 
 ## Changelog
 
