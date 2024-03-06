@@ -6,7 +6,7 @@ authors:
   - name: Beatrix Woo
     url: https://handbook.sourcegraph.com/team/#beatrix-woo
 publishDate: 2024-03-06T10:00-01:00
-description: "This release includes several keyboard shortcuts, enabling login in VSCodium, reducing autocomplete latency, and fixing issues with chat stealing editor focus and displaying file ranges."
+Cody for VS Code v1.8.0 is now available and includes support for Claude 3, local Ollama models, @-mentioning line numbers, keybindings for custom commands, and automatic updating of the local search index.
 tags: [blog]
 slug: "cody-vscode-1-8-0-release"
 published: true
