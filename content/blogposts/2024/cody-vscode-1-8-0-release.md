@@ -5,7 +5,6 @@ authors:
     url: https://handbook.sourcegraph.com/team/#kalan-chan
   - name: Beatrix Woo
     url: https://handbook.sourcegraph.com/team/#beatrix-woo
-
 publishDate: 2024-03-06T10:00-01:00
 description: "This release includes several keyboard shortcuts, enabling login in VSCodium, reducing autocomplete latency, and fixing issues with chat stealing editor focus and displaying file ranges."
 tags: [blog]
@@ -56,7 +55,7 @@ Users can now add line number context to their @-mentioned queries by appending 
 
 ## Keybinding Support for Custom Commands
 
-Any user-defined custom command can now have a keyboard shortcut assigned. Simply search for cody.command.custom.{CUSTOM_COMMAND_NAME} (e.g. cody.command.custom.commit) in the Keyboard Shortcuts editor to add keybinding.
+Any user-defined custom command can now have a keyboard shortcut assigned. Simply search for `cody.command.custom.CUSTOM_COMMAND_NAME` (e.g. `cody.command.custom.commit`) in the Keyboard Shortcuts editor to add keybinding.
 
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/keybindings.png)
