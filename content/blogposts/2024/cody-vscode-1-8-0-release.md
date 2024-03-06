@@ -19,7 +19,9 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 
 ## Claude 3.0 is now available!
 
-Cody now supports Claude Opus and Sonnet - available for Pro users in Chat and Commands
+For Cody Pro users, Cody now supports the new [Claude 3](https://www.anthropic.com/news/claude-3-family) models Claude 3 Opus and Claude 3 Sonnet for Chat, Code Editing and Commands.
+
+Claude 3 Sonnet is the faster model, but produces answers with a lower level of intelligence. Claude 3 Opus is the most powerful model, providing the highest quality code output and answer quality.
 
 
 
