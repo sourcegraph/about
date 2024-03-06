@@ -33,14 +33,14 @@ Claude 3 Sonnet is the faster model, but produces answers with a lower level of 
 
 Cody now supports using [Ollama](https://ollama.com) to run local models for chat and commands, available for Cody Pro users.
 
-Here's how to activate this feature:
+To setup Cody chat to use Ollama:
+
 1. Download Ollama from https://ollama.com/download
 2. Launch Ollama (ensure the Ollama logo appears in your menu bar)
-3. Choose a chat model (e.g., gemma:7b-instruct-q4_K_M) from the [Ollama Library](https://ollama.com/library)
-4. Pull the chat model locally (e.g., ollama pull gemma:7b-instruct-q4_K_M)
-5. Enable the cody.experimental.ollamaChat configuration
-6. Open a new chat in Cody
-7. In the new chat panel, you should see the chat model you've pulled in the dropdown list
+3. Pull a model down from the [Ollama Library](https://ollama.com/library) (e.g. `ollama pull gemma:7b-instruct-q4_K_M`)
+4. In your Cody VS Code extension settings, set `cody.experimental.ollamaChat` to `true`
+5. Open a new chat in Cody
+6. In the new chat panel, you should see the chat model you've pulled in the dropdown list
 
 
 
