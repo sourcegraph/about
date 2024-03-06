@@ -40,7 +40,7 @@ export const DemoComparisons: FunctionComponent = () => (
         </Heading>
         <div className="grid grid-cols-1 gap-lg text-center md:grid-cols-3">
             {data?.map(assistant => (
-                <div className="col-span mb-10 rounded p-10 text-left hover:shadow-lg sm:p-md" key={assistant.name}>
+                <div className="col-span mb-10 rounded p-10 text-left sm:p-md" key={assistant.name}>
                     <img
                         src={`/assets/compare/${assistant.image}`}
                         className="mb-2 mr-sm inline h-sm w-sm"

@@ -10,12 +10,12 @@ import { CodyCallToActionContentSection } from '../../components/cta/CodyCallToA
 const CompareCopilotPage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph Cody vs. Amazon CodeWhisperer',
+            title: 'Sourcegraph Cody vs Amazon CodeWhisperer',
             description: 'Feature comparison of Sourcegraph Cody and Amazon CodeWhisperer',
         }}
         hero={
             <CompareHero
-                title="Sourcegraph Cody vs. Amazon CodeWhisperer"
+                title="Sourcegraph Cody vs Amazon CodeWhisperer"
                 competitorDescription="Amazon CodeWhisperer Logo"
                 competitorIcon="/assets/compare/amazon-codewhisperer.svg"
             >

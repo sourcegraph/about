@@ -42,7 +42,7 @@ const Cta: FunctionComponent<Cta> = ({ text, ctaStyle, link }) => {
                     ctaStyle === 'primaryButtonWhite',
                 'btn border-white text-white hover:border-blurple-400 hover:bg-blurple-400':
                     ctaStyle === 'outlineButtonLight',
-                'btn btn-link text-white hover:text-blurple-200': ctaStyle === 'link',
+                'btn btn-link text-white': ctaStyle === 'link',
             })}
             data-button-style={ctaTrackingStyle}
             data-button-location={buttonLocation.body}

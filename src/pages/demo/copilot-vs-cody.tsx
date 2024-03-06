@@ -16,7 +16,7 @@ const CopilotVsCodyPage: FunctionComponent = () => {
     return (
         <Layout
             meta={{
-                title: 'Sourcegraph Cody vs. GitHub Copilot',
+                title: 'Sourcegraph Cody vs GitHub Copilot',
                 description: 'Feature comparison of Sourcegraph Cody and Cursor',
             }}
             hero={
@@ -26,7 +26,7 @@ const CopilotVsCodyPage: FunctionComponent = () => {
                     simpleStyle={true}
                     competitorDescription="Copilot Logo"
                     competitorIcon="/assets/compare/github-copilot.svg"
-                    containerClassName="xl:px-6 xl:pt-[121px]"
+                    containerClassName="xl:pt-[121px]"
                 >
                     <Heading
                         size="h3"

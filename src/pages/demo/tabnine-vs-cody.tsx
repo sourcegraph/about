@@ -16,17 +16,17 @@ const TabnineVsCodyPage: FunctionComponent = () => {
     return (
         <Layout
             meta={{
-                title: 'Sourcegraph Cody vs. Tabnine',
+                title: 'Sourcegraph Cody vs Tabnine',
                 description: 'Feature comparison of Sourcegraph Cody and Tabnine',
             }}
             hero={
                 <CompareHero
-                    title="Sourcegraph Cody vs. Tabnine"
+                    title="Sourcegraph Cody vs Tabnine"
                     titleClassName="lg:text-[72px] text-5xl lg:leading-[86px] w-full font-sans max-w-[671px] font-semibold mt-2"
                     simpleStyle={true}
                     competitorDescription="Tabnine Logo"
                     competitorIcon="/assets/compare/tabnine.svg"
-                    containerClassName="xl:px-6 xl:pt-[121px]"
+                    containerClassName="xl:pt-[121px]"
                 >
                     <Heading
                         size="h3"

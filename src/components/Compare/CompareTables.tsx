@@ -18,9 +18,8 @@ export const CompareTables: FunctionComponent<CompareTableProps> = ({
     demoStyle = false,
 }) => (
     <div
-        className={classNames('  mx-auto grid grid-cols-1 gap-lg px-5 md:grid-cols-12 xl:px-0', {
-            'max-w-screen-xl': !demoStyle,
-            'relative z-20 max-w-[1066px] bg-white lg:pt-[86px]': demoStyle,
+        className={classNames('  mx-auto grid max-w-screen-xl grid-cols-1 gap-lg px-5 md:grid-cols-12 xl:px-0', {
+            'relative z-20 bg-white lg:pt-[86px]': demoStyle,
         })}
     >
         <div className="col-span-full">

@@ -10,7 +10,7 @@ import { CodyCallToActionContentSection } from '../../components/cta/CodyCallToA
 const CompareCopilotPage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph Cody vs. GitHub Copilot',
+            title: 'Sourcegraph Cody vs GitHub Copilot',
             description: 'Feature comparison of Sourcegraph Cody and GitHub Copilot',
         }}
         hero={

@@ -16,17 +16,17 @@ const AmazonCodewhispererVsCodyPage: FunctionComponent = () => {
     return (
         <Layout
             meta={{
-                title: 'Sourcegraph Cody vs. Amazon CodeWhisperer',
+                title: 'Sourcegraph Cody vs Amazon CodeWhisperer',
                 description: 'Feature comparison of Sourcegraph Cody and Amazon CodeWhisperer',
             }}
             hero={
                 <CompareHero
-                    title="Sourcegraph Cody vs. Amazon CodeWhisperer"
+                    title="Sourcegraph Cody vs Amazon CodeWhisperer"
                     titleClassName="lg:text-[72px] text-5xl lg:leading-[86px] lg:w-[800px] w-full font-sans font-semibold mt-2"
                     simpleStyle={true}
                     competitorDescription="Amazon CodeWhisperer Logo"
                     competitorIcon="/assets/compare/amazon-codewhisperer.svg"
-                    containerClassName="xl:px-6 xl:pt-[121px]"
+                    containerClassName="xl:pt-[121px]"
                 >
                     <Heading
                         size="h3"

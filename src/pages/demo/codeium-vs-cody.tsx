@@ -16,17 +16,17 @@ const CodeiumVsCodyPage: FunctionComponent = () => {
     return (
         <Layout
             meta={{
-                title: 'Sourcegraph Cody vs. Codeium',
+                title: 'Sourcegraph Cody vs Codeium',
                 description: 'Feature comparison of Sourcegraph Cody and Codeium',
             }}
             hero={
                 <CompareHero
-                    title="Sourcegraph Cody vs. Codeium"
+                    title="Sourcegraph Cody vs Codeium"
                     titleClassName="lg:text-[72px] text-5xl lg:leading-[86px] w-full font-sans max-w-[671px] font-semibold mt-2"
                     simpleStyle={true}
                     competitorDescription="Codeium Logo"
                     competitorIcon="/assets/compare/codeium.svg"
-                    containerClassName="xl:px-6 xl:pt-[121px]"
+                    containerClassName="xl:pt-[121px]"
                 >
                     <Heading
                         size="h3"

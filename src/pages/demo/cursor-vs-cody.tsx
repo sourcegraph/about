@@ -16,17 +16,17 @@ const CursorVsCodyPage: FunctionComponent = () => {
     return (
         <Layout
             meta={{
-                title: 'Sourcegraph Cody vs. Cursor',
+                title: 'Sourcegraph Cody vs Cursor',
                 description: 'Feature comparison of Sourcegraph Cody and Cursor',
             }}
             hero={
                 <CompareHero
-                    title="Sourcegraph Cody vs. Cursor"
+                    title="Sourcegraph Cody vs Cursor"
                     titleClassName="lg:text-[72px] text-5xl lg:leading-[86px] w-full font-sans max-w-[671px] font-semibold mt-2"
                     simpleStyle={true}
                     competitorDescription="Cursor Logo"
                     competitorIcon="/assets/compare/cursor.svg"
-                    containerClassName="xl:px-6 xl:pt-[121px]"
+                    containerClassName="xl:pt-[121px]"
                 >
                     <Heading
                         size="h3"
