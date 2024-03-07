@@ -76,9 +76,14 @@ See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.8
 
 Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
-As always, we value your feedback in [Discord](https://discord.com/servers/sourcegraph-969688426372825169) and [GitHub](https://github.com/sourcegraph/cody/discussions). Happy Codying!
+As always, we value your feedback in [Discord](https://discord.com/servers/sourcegraph-969688426372825169) and [GitHub](https://github.com/sourcegraph/cody/issues/new/choose). Happy Codying!
 
 
-<hr style={{marginTop:"2rem",marginBottom:"2rem"}} />
+---
 
-To get started with Cody, [install it from the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai).
+**To get started with Cody [install it from the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai)**
+
+
+---
+
+Previous release: [Cody for VS Code v1.6.0](/blog/cody-vscode-1-6-0-release)
