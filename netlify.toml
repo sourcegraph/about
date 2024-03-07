@@ -231,8 +231,9 @@
 
 [[redirects]]
   from = "/own"
-  to = "https://sourcegraph.com/docs/own"
+  to = "/docs/own"
   status = 301
+  force = true
 
 # ========== END INDIVIDUAL REDIRECTS ==========
 
