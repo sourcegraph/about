@@ -21,6 +21,12 @@
 [[redirects]]
   from = "/changelog"
   to = "https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
+
+[[redirects]]
+  from = "/own"
+  to = "https://sourcegraph.com/docs/own"
+  status = 301
+  force = true
 # ========== END SOURCEGRAPH REDIRECTS ==========
 
 # ========== HANDBOOK REDIRECTS ==========
@@ -228,12 +234,6 @@
 [[redirects]]
   from = "/cloud"
   to = "/enterprise"
-
-[[redirects]]
-  from = "/own"
-  to = "/docs/own"
-  status = 301
-  force = true
 
 # ========== END INDIVIDUAL REDIRECTS ==========
 
