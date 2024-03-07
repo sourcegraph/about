@@ -2,6 +2,8 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
+import { Heading } from '../Heading'
+
 const data = [
     {
         name: 'GitHub Copilot',
@@ -31,20 +33,25 @@ const data = [
 ]
 
 export const OtherComparisons: FunctionComponent = () => (
-    <div className="grid grid-cols-1 gap-lg text-center md:grid-cols-3">
-        {data?.map(assistant => (
-            <Link href={assistant.url} key={assistant.name}>
-                <div className="col-span mb-10 rounded p-xs hover:shadow-lg sm:p-md">
-                    <img src="/cody-logomark-default.svg" className="mb-2 mr-10 inline h-[48px] w-[48px]" />
-                    <img
-                        src={`/assets/compare/${assistant.image}`}
-                        alt={assistant.name}
-                        className="mb-2 inline h-[48px] w-[48px]"
-                    />
+    <div className="mx-auto my-10 max-w-screen-xl">
+        <Heading size="h2" className="mb-10">
+            Compare other code AI assistants
+        </Heading>
+        <div className="grid grid-cols-1 gap-lg text-center md:grid-cols-3">
+            {data?.map(assistant => (
+                <Link href={assistant.url} key={assistant.name}>
+                    <div className="col-span mb-10 rounded p-xs hover:shadow-lg sm:p-md">
+                        <img src="/cody-logomark-default.svg" className="mb-2 mr-10 inline h-[48px] w-[48px]" />
+                        <img
+                            src={`/assets/compare/${assistant.image}`}
+                            alt={assistant.name}
+                            className="mb-2 inline h-[48px] w-[48px]"
+                        />
 
-                    <p className="text-black">Cody vs {assistant.name}</p>
-                </div>
-            </Link>
-        ))}
+                        <p className="text-black">Cody vs {assistant.name}</p>
+                    </div>
+                </Link>
+            ))}
+        </div>
     </div>
 )

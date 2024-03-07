@@ -63,7 +63,7 @@ export const Modal: FunctionComponent<Modal> = ({
                     <div className="sign-up-modal-gradient absolute z-10 h-[531.097px] w-[570.405px]" />
                     <div
                         className={classNames(
-                            'relative z-20 mx-auto w-[507px] rounded-md bg-white p-sm shadow-modal md:p-16',
+                            'relative z-20 mx-auto w-full max-w-[507px] rounded-md bg-white p-sm shadow-modal md:p-16',
                             modalClassName
                         )}
                         ref={modalReference}
