@@ -57,7 +57,7 @@ You can now specify line numbers when you @-mention files in chat, by appending 
 
 ## Keybinding Support for Custom Commands
 
-Any user-defined custom command can now have a keyboard shortcut assigned. Simply search for `cody.command.custom.CUSTOM_COMMAND_NAME` (e.g. `cody.command.custom.commit`) in the Keyboard Shortcuts editor to add keybinding.
+You can now bind keyboard shortcuts to quickly run your custom commands. To bind a keyboard shortcut, open the Keyboard Shortcuts editor and search for "cody.command.custom." to see the list of your custom commands.
 
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/keybindings.png)
