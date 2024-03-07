@@ -6,7 +6,7 @@ authors:
   - name: Beatrix Woo
     url: https://handbook.sourcegraph.com/team/#beatrix-woo
 publishDate: 2024-03-06T10:00-01:00
-Cody for VS Code v1.8.0 is now available and includes support for Claude 3, local Ollama models, @-mentioning line numbers, keybindings for custom commands, and automatic updating of the local search index.
+description: "Cody for VS Code v1.8.0 is now available and includes support for Claude 3, local Ollama models, @-mentioning line numbers, keybindings for custom commands, and automatic updating of the local search index."
 tags: [blog]
 slug: "cody-vscode-1-8-0-release"
 published: true
@@ -19,21 +19,17 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 
 ## Support for Claude 3
 
-For Cody Pro users, Cody now supports the new [Claude 3](https://www.anthropic.com/news/claude-3-family) models Claude 3 Opus and Claude 3 Sonnet for Chat, Code Editing and Commands.
-
-Claude 3 Sonnet is the faster model, but produces answers with a lower level of intelligence. Claude 3 Opus is the most powerful model, providing the highest quality code output and answer quality.
-
-
+For Cody Pro users, Cody now supports the new [Claude 3](https://www.anthropic.com/news/claude-3-family) models Opus and Sonnet for Chat, Code Editing and Commands.
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/claude3.png)
 
+Claude 3 Sonnet is the faster model, but produces answers with a lower level of intelligence.
 
+Claude 3 Opus (recommended) is the most powerful model, providing the highest quality code output and answer quality.
 
 ## Local Ollama models for chat and commands (experimental)
 
-Cody now supports using [Ollama](https://ollama.com) to run local models for chat and commands, available for Cody Pro users.
-
-To setup Cody chat to use Ollama:
+Cody now supports using [Ollama](https://ollama.com) to run local models for chat and commands, available for Cody Pro users. To setup Cody chat to use Ollama:
 
 1. Download Ollama from https://ollama.com/download
 2. Launch Ollama (ensure the Ollama logo appears in your menu bar)
@@ -47,18 +43,16 @@ To setup Cody chat to use Ollama:
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/localollama.png)
 
 
-## @-File now supports line numbers
+## @-file now supports line numbers
 
-You can now specify line numbers when you @-mention files in chat, by appending ':line-range' after the file name, allowing you to @-mention parts of large files. We've also updated the Explain Code and Find Code Smells commands to take advantage of this, so it's clearer what lines of code the commands are referencing.
+You can now specify line numbers when you @-mention files in chat, by appending ':line-range' after the file name. This allows you to @-mention parts of large files, and makes it clearer what code Explain Code and Find Code Smells commands are referring to.
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/@file-line-numbers.gif)
 
 
-
-## Keybinding Support for Custom Commands
+## Keybinding support for custom commands
 
 You can now bind keyboard shortcuts to quickly run your custom commands. To bind a keyboard shortcut, open the Keyboard Shortcuts editor and search for "cody.command.custom." to see the list of your custom commands.
-
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/keybindings.png)
 
