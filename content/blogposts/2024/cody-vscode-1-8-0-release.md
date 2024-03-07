@@ -23,7 +23,10 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 
 For Cody Pro users, Cody now supports the new [Claude 3](https://www.anthropic.com/news/claude-3-family) models Opus and Sonnet for Chat, Code Editing and Commands.
 
-![](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/claude3.png)
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/claude3-2.png"
+  alt="Choosing Claude 3 Opus in Cody for VS Code Chat"
+/>
 
 Claude 3 Sonnet is the faster model, but produces answers with a lower level of intelligence.
 
@@ -33,31 +36,32 @@ Claude 3 Opus (recommended) is the most powerful model, providing the highest qu
 
 Cody now supports using [Ollama](https://ollama.com) to run local models for chat and commands, available for Cody Pro users. To setup Cody chat to use Ollama:
 
-1. Download Ollama from https://ollama.com/download
+1. [Download Ollama](https://ollama.com/download)
 2. Launch Ollama (ensure the Ollama logo appears in your menu bar)
 3. Pull a model down from the [Ollama Library](https://ollama.com/library) (e.g. `ollama pull gemma:7b-instruct-q4_K_M`)
 4. In your Cody VS Code extension settings, set `cody.experimental.ollamaChat` to `true`
 5. Open a new chat in Cody
 6. In the new chat panel, you should see the chat model you've pulled in the dropdown list
 
-
-
-![](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/localollama.png)
-
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/localollama.png"
+  alt="Choosing an Ollama model in Cody for VS Code Chat"
+/>
 
 ## @-file now supports line numbers
 
 You can now specify line numbers when you @-mention files in chat, by appending ':line-range' after the file name. This allows you to @-mention parts of large files, and makes it clearer what code Explain Code and Find Code Smells commands are referring to.
 
-![](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/@file-line-numbers.gif)
-
+![Specifying line numbers in @-mentions in Cody for VS Code](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/@file-line-numbers.gif)
 
 ## Keybinding support for custom commands
 
 You can now bind keyboard shortcuts to quickly run your custom commands. To bind a keyboard shortcut, open the Keyboard Shortcuts editor and search for "cody.command.custom." to see the list of your custom commands.
 
-![](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/keybindings.png)
-
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/keybindings.png"
+  alt="Setting custom command keybindings in Cody for VS Code"
+/>
 
 ## Automatic updating of local search index
 
