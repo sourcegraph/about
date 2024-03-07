@@ -228,6 +228,12 @@
 [[redirects]]
   from = "/cloud"
   to = "/enterprise"
+
+[[redirects]]
+  from = "/own"
+  to = "/docs/own"
+  status = 301
+
 # ========== END INDIVIDUAL REDIRECTS ==========
 
 # ========== WHOLE SITE REDIRECT ==========
