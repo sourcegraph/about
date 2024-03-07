@@ -18,9 +18,15 @@ export const getStaticProps: GetStaticProps = async ({ preview = false }) => {
     if (!publishedPosts) {
         return { notFound: true }
     }
+    const postsIndexProps = publishedPosts.map(post => ({
+        frontmatter: post.frontmatter,
+        excerpt: post.excerpt,
+        slugPath: post.slugPath,
+        urlPath: post.urlPath,
+    }))
     return {
         props: {
-            allPosts: publishedPosts,
+            allPosts: postsIndexProps,
             posts: publishedPosts.slice(0, 20),
             preview,
         },
