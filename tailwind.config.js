@@ -151,6 +151,7 @@ module.exports = {
       screens: {
         xs: '480px',
         md: '830px',
+        mdi: { min: '1024px' },
         lg: '1124px',
       },
 

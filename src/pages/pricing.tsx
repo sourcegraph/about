@@ -249,6 +249,7 @@ const PricingPage: FunctionComponent = () => {
     const [selectedOption, setSelectedOption] = useState('cody')
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.md
+    const isWindowWidthBelowLg = windowWidth < breakpoints.mdi
     const router = useRouter()
     const faqDataToRender: FAQItem[] = faqData[selectedOption] || []
 
@@ -308,7 +309,7 @@ const PricingPage: FunctionComponent = () => {
             childrenClassName="pt-0 !bg-gray-50"
             customFooterClassName="!bg-white"
         >
-            <ContentSection className="mx-auto md:px-[80px]" parentClassName="!py-0 md:!px-0">
+            <ContentSection className="mx-auto mdi:px-[80px]" parentClassName="!py-0 mdi:!px-0">
                 <div
                     className={classNames(
                         'transition-opacity duration-700 ease-in-out',
@@ -317,7 +318,7 @@ const PricingPage: FunctionComponent = () => {
                 >
                     {selectedOption === 'cody' && (
                         <div className="flex flex-col">
-                            <div className="grid grid-cols-1 items-stretch justify-center  gap-8 py-16 md:grid-cols-3 md:justify-items-center md:gap-0">
+                            <div className="grid grid-cols-1 items-stretch justify-center gap-8 py-16 mdi:grid-cols-3 mdi:justify-items-center mdi:gap-0">
                                 <PricingPlan
                                     name={
                                         <div className="mb-2">
@@ -328,7 +329,7 @@ const PricingPage: FunctionComponent = () => {
                                     price={<PriceItem amount={0} description="No credit card needed" />}
                                     buttons={<GetStartedButton title="Sign up for free" />}
                                     features={FREE_FEATURES_OVERVIEW}
-                                    planClasses="md:pr-[30px]"
+                                    planClasses="mdi:pr-[10px] lg:!pr-[30px] w-full"
                                 />
                                 <PricingPlan
                                     name={<p className="mb-[13px]">Pro</p>}
@@ -336,7 +337,7 @@ const PricingPage: FunctionComponent = () => {
                                     price={<PriceItem amount={9} hasLimit={true} />}
                                     buttons={<GetProButton title="Sign up for Cody Pro" />}
                                     features={PRO_FEATURES_OVERVIEW}
-                                    planClasses={isMobile ? 'z-10 md:w-full' : 'z-10 md:w-[420px] md:-my-3'}
+                                    planClasses={isWindowWidthBelowLg ? 'z-10 md:w-full' : 'z-10 lg:!w-[400px] mdi:w-[310px] md:-my-3'}
                                     {...PLAN_COLORS.pro}
                                 />
                                 <PricingPlan
@@ -355,7 +356,7 @@ const PricingPage: FunctionComponent = () => {
                                         />
                                     }
                                     features={ENTERPRISE_CODY_FEATURES_OVERVIEW}
-                                    planClasses="z-5 md:pl-[30px]"
+                                    planClasses="z-5 mdi:pl-[10px] lg:!pl-[30px] w-full"
                                 />
                             </div>
                             <div className="bg-[url('/backgrounds/grid-code-intel.svg')] bg-right">
