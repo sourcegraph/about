@@ -29,11 +29,11 @@ const CopilotVsCodyPage: FunctionComponent = () => {
                     containerClassName="xl:pt-[121px]"
                 >
                     <Heading
-                        size="h5"
+                        size="h3"
                         className="mt-[-15px] mb-0 pb-[5px] font-sf !leading-[30px] !tracking-[-0.25px] lg:w-[671px] lg:text-2xl"
                     >
-                        Cody is a free, customizable AI coding assistant with support for various LLMs and non-GitHub hosts. Ideal for both individual and enterprise use.
-Copilot is a GitHub-integrated AI solution for individuals and enterprises within the GitHub ecosystem.
+                        Cody is also a good option for enterprise users who want to personalize their AI with code from non-GitHub code hosts.
+                        
                     </Heading>
 
                     <button
