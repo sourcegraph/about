@@ -5,6 +5,8 @@ authors:
     url: https://handbook.sourcegraph.com/team/#kalan-chan
   - name: Beatrix Woo
     url: https://handbook.sourcegraph.com/team/#beatrix-woo
+  - name: Tim Lucas
+    url: https://handbook.sourcegraph.com/team/#tim-lucas
 publishDate: 2024-03-06T10:00-01:00
 description: "Cody for VS Code v1.8.0 is now available and includes support for Claude 3, local Ollama models, @-mentioning line numbers, keybindings for custom commands, and automatic updating of the local search index."
 tags: [blog]
