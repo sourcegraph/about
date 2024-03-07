@@ -32,8 +32,7 @@ const CodeiumVsCodyPage: FunctionComponent = () => {
                         size="h3"
                         className="mt-[-15px] mb-0 pb-[5px] font-sf !leading-[30px] !tracking-[-0.25px] lg:w-[671px] lg:text-2xl"
                     >
-                        H3 Lorem ipsum dolor sit amet consectetur. Ullamcorper feugiat sit est imperdiet fringilla odio
-                        pellentesque ut mattis.
+                        Cody is the better option for users who want more transparency and choice for the model being used.
                     </Heading>
 
                     <button
