@@ -81,6 +81,11 @@ See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v0.1
 
 Cody is [open source](https://github.com/sourcegraph/cody), and wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
-<hr style={{marginTop:"2rem",marginBottom:"2rem"}} />
+---
 
-To get started with Cody, [install it from the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai).
+**To get started with Cody [install it from the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai)**
+
+
+---
+
+Previous release: [Cody for VS Code v0.14](/blog/cody-vscode-0-14-release)

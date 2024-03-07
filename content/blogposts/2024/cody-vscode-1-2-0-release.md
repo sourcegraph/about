@@ -106,6 +106,11 @@ If you missed it above, we mentioned two individuals in this post, **Deepak and 
 💖 Also, a big thank you to everyone else who contributed, filed issues and sent us feedback. 
 
 
-<hr style={{marginTop:"2rem",marginBottom:"2rem"}} />
+---
 
-To get started with Cody, [install it from the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai).
+**To get started with Cody [install it from the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai)**
+
+
+---
+
+Previous release: [Cody for VS Code v1.1.0](/blog/cody-vscode-1.1.0-release)
