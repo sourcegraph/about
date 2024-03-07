@@ -32,8 +32,8 @@ const CursorVsCodyPage: FunctionComponent = () => {
                         size="h3"
                         className="mt-[-15px] mb-0 pb-[5px] font-sf !leading-[30px] !tracking-[-0.25px] lg:w-[671px] lg:text-2xl"
                     >
-                        H3 Lorem ipsum dolor sit amet consectetur. Ullamcorper feugiat sit est imperdiet fringilla odio
-                        pellentesque ut mattis.
+                        Cody is a better option for users who want LLM choice or who want their code AI to work within their IDE of choice.
+
                     </Heading>
 
                     <button
