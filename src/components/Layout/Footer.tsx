@@ -41,7 +41,7 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
         items: [
             {
                 name: 'Enterprise',
-                href: '/Enterprise',
+                href: '/enterprise',
             },
         ],
     },
