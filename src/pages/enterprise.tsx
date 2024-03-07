@@ -740,7 +740,7 @@ const SecurityCard: FunctionComponent<{ icon: ReactNode; heading: string; paragr
 }) => (
     <div className="flex flex-col gap-4 rounded-2xl border-1 border-gray-200 py-10 px-8">
         {icon}
-        <Heading size="h4" className="font-sf !leading-[30px] tracking-[-0.25]">
+        <Heading size="h4" className="font-systemSans !leading-[30px] tracking-[-0.25]">
             {heading}
         </Heading>
         <p className="mb-0 text-[18px] font-normal leading-[27px] -tracking-[0.25px]">{paragraph}</p>
