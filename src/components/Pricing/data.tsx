@@ -403,7 +403,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     proLLMchat: {
         label: 'Multiple LLM choices for chat',
-        description: 'Claude Instant 1.2, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview, Mixtral',
+        description: 'Claude Instant 1.2, Claude 2, Claude 3, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview, Mixtral',
     },
     proLLMcommands: {
         label: 'Default LLMs for commands and autocomplete',
