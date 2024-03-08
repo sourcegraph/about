@@ -403,14 +403,14 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     proLLMchat: {
         label: 'Multiple LLM choices for chat',
-        description: 'Claude Instant 1.2, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview, Mixtral',
+        description: 'Claude Instant 1.2, Claude 2, Claude 3, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview, Mixtral',
     },
     proLLMcommands: {
         label: 'Default LLMs for commands and autocomplete',
     },
     entLLMchoices: {
         label: 'Flexible LLM choices',
-        description: 'Claude Instant 1.2, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview',
+        description: 'Claude Instant 1.2, Claude 2, Claude 3, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview',
     },
     BringYourLLMKey: {
         label: 'Bring your own LLM key',
@@ -421,7 +421,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     codeIntelEntLLMchoices: {
         label: 'Flexible LLM choices',
-        description: 'Claude Instant 1.2, StarCoder, Claude 2, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview',
+        description: 'Claude Instant 1.2, StarCoder, Claude 2, Claude 3, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview',
     },
     codeIntelBringYourLLMKey: {
         label: 'Bring your own LLM key',
