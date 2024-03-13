@@ -31,7 +31,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
                         '!leading-10 !tracking-[-1px]': isCodyPage,
                     })}
                 >
-                    Cody Free
+                    Get started with Cody
                 </Heading>
 
                 <Heading
@@ -49,7 +49,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
                         className="btn btn-primary text-center"
                         type="button"
                     >
-                        Get Cody free
+                        Get Cody for free
                     </button>
                 </div>
             </div>
