@@ -305,7 +305,7 @@ const Home: FunctionComponent = () => {
                             <div className="cta-top-border absolute left-0 right-0 top-0 rounded-t-2xl" />
                             <div className=" px-14 py-16">
                                 <Heading className="mb-4 !-tracking-[1px] text-gray-700 md:leading-10" size="h2">
-                                    Cody Free
+                                    Get started with Cody
                                 </Heading>
                                 <p className="mb-0 text-lg text-gray-500">
                                     Use Cody for free in your IDE, no credit card required.
