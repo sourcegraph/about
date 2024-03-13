@@ -845,7 +845,7 @@ export const tabnineVsCody: CompareDataType = {
             cody_details: '',
             view_cody_details: false,
             competitor: true,
-            competitor_details: '',
+            competitor_details: 'Available for Pro and Enterprise users',
             view_competitor_details: false,
         },
         {
@@ -866,7 +866,7 @@ export const tabnineVsCody: CompareDataType = {
             cody: true,
             cody_details: '',
             view_cody_details: false,
-            competitor: false,
+            competitor: true,
             competitor_details: '',
             view_competitor_details: false,
         },
