@@ -88,7 +88,7 @@ const CodyPage: FunctionComponent = () => {
                     </h1>
                     <Heading
                         size="h3"
-                        className="mx-auto mb-8 mt-6  max-w-[663px] leading-[30px] !tracking-[-0.25px] text-gray-200"
+                        className="mx-auto mb-8 mt-6  max-w-[700px] leading-[30px] !tracking-[-0.25px] text-[#FFFFFFbb]"
                     >
                         Cody is a coding AI assistant that uses AI and a deep understanding of your codebase to help you
                         write and understand code faster.
