@@ -41,7 +41,7 @@ export const TypingAnimation: FunctionComponent<TypingAnimationProps> = ({
     useEffect(() => {
         const observer = new ResizeObserver(entries => {
             for (const entry of entries) {
-                setCodeLines?.(Math.floor(entry.contentRect.height / heightTextSize) || 1)
+                setCodeLines?.(Math.floor(entry.contentRect.height / heightTextSize) || 0)
             }
         })
 

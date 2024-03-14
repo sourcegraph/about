@@ -83,7 +83,7 @@ export const CodyAnimation: FunctionComponent<{className?: string}> = ({classNam
     }, [isCodyAnimationRefInView, applySuggestion])
 
     const lineNumbers = countTotalLines(codes) + 2
-    const activeLine = showSuggestion ? lineNumbers : typingCodeLines || 1
+    const activeLine = (showSuggestion || applySuggestion) ? lineNumbers : startAnimation ? (typingCodeLines + 1) : 1
 
     return (
         <>
