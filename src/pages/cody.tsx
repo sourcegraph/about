@@ -83,9 +83,9 @@ const CodyPage: FunctionComponent = () => {
         >
             <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 text-center md:mt-0 md:pt-[22px]">
                 <div className="mx-auto w-full px-6 md:w-[849px] lg:w-[895px]">
-                    <div className="mx-auto w-full pt-6 text-[48px] font-semibold leading-[58px] text-white md:text-[72px] md:leading-[86px]">
-                        Code more, type less
-                    </div>
+                    <h1 className="mx-auto w-full pt-6 text-[48px] font-semibold leading-[48px] text-white md:text-[72px] md:leading-[86px]">
+                        Code more, type&nbsp;less
+                    </h1>
                     <Heading
                         size="h3"
                         className="mx-auto mb-8 mt-6  max-w-[663px] leading-[30px] !tracking-[-0.25px] text-gray-200"
