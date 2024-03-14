@@ -111,7 +111,7 @@ export const CodyAnimation: FunctionComponent<{className?: string}> = ({classNam
                                     setCodeLines={setTypingCodeLines}
                                 />
                             ) : (
-                                <div className="m-0 p-0">
+                                <div className="m-0 p-0 inline-flex">
                                     <BlinkCursor />
                                 </div>
                             )}
