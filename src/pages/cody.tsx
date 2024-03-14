@@ -95,12 +95,12 @@ const CodyPage: FunctionComponent = () => {
                     </Heading>
                     <button
                         type="button"
-                        className="btn btn-inverted-primary min-w-[204px] px-6 py-3 text-violet-500 lg:px-4"
+                        className="btn btn-inverted-primary px-5 py-3 text-violet-500"
                         title="Get Cody for free"
                         onClick={handleOpenModal}
                     >
                         <div className="flex items-center justify-center">
-                            <img src="/cody/cody-logo.svg" className="mr-2 h-[24px] w-[24px]" alt="Cody Logo" />
+                            <img src="/cody/cody-logo.svg" className="mr-3 h-[18px] w-[18px]" alt="Cody Logo" />
                             Get Cody for free
                         </div>
                     </button>
