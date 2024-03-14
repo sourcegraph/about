@@ -100,7 +100,7 @@ const CodyPage: FunctionComponent = () => {
                         onClick={handleOpenModal}
                     >
                         <div className="flex items-center justify-center">
-                            <img src="/cody/cody-logo.svg" className="mr-3 h-[18px] w-[18px]" alt="Cody Logo" />
+                            <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" />
                             Get Cody for free
                         </div>
                     </button>
