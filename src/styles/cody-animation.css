@@ -2,8 +2,6 @@
 .cody-animation pre[class*='language-'] {
     background: transparent;
     color: #c7ffff;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-    font-family: 'Fira Code', 'Fira Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
     direction: ltr;
     text-align: left;
     white-space: pre;
@@ -15,6 +13,9 @@
     tab-size: 2;
     -webkit-hyphens: none;
     hyphens: none;
+    /* Same stack as font-systemMono */
+    font-family: ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-weight: normal;
 }
 
 .cody-animation pre[class*='language-'] {
@@ -34,6 +35,10 @@
 .cody-animation .token.prolog,
 .cody-animation .token.cdata {
     color: #ce9cff;
+}
+
+.cody-animation .token.comment {
+    font-style: normal;
 }
 
 .cody-animation .token.doctype,
@@ -151,7 +156,7 @@
 .cody-multiple-lines::before {
     content: '';
     position: absolute;
-    bottom: 4.5px;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 20px;

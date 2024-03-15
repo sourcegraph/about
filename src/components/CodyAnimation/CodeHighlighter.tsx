@@ -29,9 +29,9 @@ export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
 
     return (
         <div
-            className={classNames('cody-animation relative m-0 p-0', {
+            className={classNames('cody-animation relative m-0 p-0 inline-flex', {
                 'apply-gray': !highlighted,
-                'inline-block': inline,
+                'inline-flex': inline,
             })}
         >
             <pre>
@@ -39,7 +39,7 @@ export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
                     {text || children}
                 </code>
                 {showCursor && (
-                    <div className="absolute inline-block pl-0.5">
+                    <div className="absolute inline-flex pl-0.5">
                         <BlinkCursor />
                     </div>
                 )}
