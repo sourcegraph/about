@@ -15,6 +15,12 @@ const socialMediaStyles = 'text-xl text-gray-400 hover:text-gray-300 transition-
 const events = {
     upcoming: [
         {
+            title: 'Learning TypeScript Livestream',
+            location: 'YouTube',
+            date: 'Mar 20, 2024',
+            link: 'https://www.youtube.com/watch?v=CY10cOUAkj4',
+        },
+        {
             title: 'PyCon',
             location: 'Pittsburgh, PA',
             date: 'May 17-19, 2024',
@@ -227,7 +233,15 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
                                         {events.upcoming.map(event => (
                                             <li key={event.title} className="p-[25px]">
                                                 <Heading size="h6">{event.date}</Heading>
-                                                <Heading size="h4">{event.title}</Heading>
+                                                {event.link ? (
+                                                    <Heading size="h4">
+                                                        <a href={event.link} target="_blank" rel="noopener noreferrer">
+                                                            {event.title}
+                                                        </a>
+                                                    </Heading>
+                                                ) : (
+                                                    <Heading size="h4">{event.title}</Heading>
+                                                )}
                                                 <p className="mb-0 text-base tracking-[-0.25px]">{event.location}</p>
                                             </li>
                                         ))}
@@ -289,7 +303,7 @@ export const getStaticProps: GetStaticProps<{
     allPosts: Post[]
     posts: Post[]
 }> = async ({ preview = false }) => {
-    const publishedPosts = await getAllPublishedBlogPosts('guest-post') 
+    const publishedPosts = await getAllPublishedBlogPosts('guest-post')
     return {
         props: {
             allPosts: publishedPosts ?? [],
