@@ -396,9 +396,9 @@ const HomeHero: FunctionComponent = () => {
                             playsInline={true}
                             controls={false}
                         >
-                            <source type="video/ogg" src="/home/Header-Vid-Non-Rounded.ogg" />
-                            <source type="video/mp4" src="/home/Header-Vid-Non-Rounded.mp4" />
                             <source type="video/webm" src="/home/Header-Vid-Non-Rounded.webm" />
+                            <source type="video/mp4" src="/home/Header-Vid-Non-Rounded.mp4" />
+                            <source type="video/ogg" src="/home/Header-Vid-Non-Rounded.ogg" />
                         </video>
                     </div>
                 )}
