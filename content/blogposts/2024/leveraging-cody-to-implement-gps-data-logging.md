@@ -87,6 +87,7 @@ I asked Cody for a MATLAB script, and it was quickly delivered. I went to MATLAB
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/leveraging-cody-to-implement-gps-data-logging/image_008.png)
 
 As you can see, Cody was able to help me complete my first project quickly. 
+
 ## Favorite command
 
 Cody has many features, but one of the most important features for people trying to learn is the **“Explain Code”** command. 
