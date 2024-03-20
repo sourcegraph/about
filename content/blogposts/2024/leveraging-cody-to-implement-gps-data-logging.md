@@ -14,7 +14,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/leveraging-c
 
 <Alert type="secondary">This is a guest blog post from our community. <a href="https://discord.com/servers/sourcegraph-969688426372825169" target="_blank">Join our Discord</a> to meet the author and connect with other developers passionate about Code Search and AI!</Alert>
 
-Hello, my name is Charles Goode and I’m an electrical engineering major at Kennesaw State University. I’m here to tell you about Kennesaw Motorsports and to walk you through how I completed my first project on the team with the help of Cody. 
+Hello, my name is Charles Goode and I’m an electrical engineering major at Kennesaw State University. I’m here to tell you about Kennesaw Motorsports and to walk you through how I completed my first project on the team with the help of [Cody](https://sourcegraph.com/cody). 
 
 ## Kennesaw Motorsports
 
