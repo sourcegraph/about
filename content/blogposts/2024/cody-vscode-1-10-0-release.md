@@ -33,7 +33,10 @@ We have made it easier for Cody Pro and Enterprise users to get assistance when 
 
 Generating documentation from code has been improved to automatically detect documentable code blocks and provide hints to quickly generate doc strings. When your cursor is on a documentable symbol in JavaScript, TypeScript, Go or Python, a "Opt/Alt+D to Document" ghost text will appear. Pressing Opt/Alt+D will immediately generate documentation for that code block.
 
-*INSERT GIF*
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/document-command.png"
+  alt="Document Command"
+/>
 
 ## Claude 3 Haiku is now available for Cody Pro 
 
@@ -56,17 +59,16 @@ We've added new commands and shortcuts to make debugging Cody easier, these impr
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/debugging-settings.png"
   alt="debugging options in the settings"
+  figcaption="Export logs and open output channel in the settings panel"
 />
-
-New button in the Cody Setting menu to enable debug mode and open output channel on click
 
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/debugging-command-palette.png"
   alt="debugging options in the command palette"
+  figcaption="All debug commands are also grouped together and are available through the command palette"
 />
 
-All debug commands are also grouped together and are available through the command palette
 
 ## Changelog
 
