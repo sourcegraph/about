@@ -254,6 +254,27 @@
 
         input[type='submit'] {
             width: 100%;
+            border-radius: 5px;
+            border: 1px solid var(--sg-color-violet-600) !important;
+            background: var(--sg-color-violet-500) !important;
+            padding: 11px 30px !important;
+
+            &:hover {
+                border: 1px solid var(--sg-color-violet-600) !important;
+                background: linear-gradient(
+                        80deg,
+                        rgba(112, 72, 232, 0.2) -19.42%,
+                        rgba(74, 193, 232, 0.2) 26.02%,
+                        rgba(161, 18, 255, 0.2) 65.63%,
+                        rgba(255, 85, 67, 0.2) 116.4%
+                    ),
+                    var(--sg-color-violet-600) !important;
+            }
+
+            &:active {
+                border: 3px solid var(--sg-color-violet-300) !important;
+                background: var(--sg-color-violet-500) !important;
+            }
         }
     }
 
