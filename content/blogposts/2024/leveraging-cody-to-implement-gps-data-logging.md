@@ -1,5 +1,5 @@
 ---
-title: "Crossing the Finish Line Faster: Leveraging Cody to Implement GPS Data Logging "
+title: "Crossing the Finish Line Faster: Leveraging Cody to Implement GPS Data Logging"
 authors:
   - name: Charles Goode
   
