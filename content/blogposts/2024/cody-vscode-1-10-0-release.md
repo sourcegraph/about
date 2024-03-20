@@ -20,26 +20,31 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 We have made it easier for Cody Pro and Enterprise users to get assistance when needed, support links are now more prominently displayed so users can easily access help. Cody Pro and Enterprise users can now get more timely responses by filling out a support form. 
 
 <Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/claude3-2.png"
-  alt="Choosing Claude 3 Opus in Cody for VS Code Chat"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/support1.png"
+  alt="Support link in the settings panel"
 />
 
-Claude 3 Sonnet is the faster model, but produces answers with a lower level of intelligence.
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/support2.png"
+  alt="Support link in the Cody settings panel"
+/>
 
-Claude 3 Opus (recommended) is the most powerful model, providing the highest quality code output and answer quality.
+
 
 ## Improved Document Command
 
 Generating documentation from code has been improved to automatically detect documentable code blocks and provide hints to quickly generate doc strings. When your cursor is on a documentable symbol in JavaScript, TypeScript, Go or Python, a "Opt/Alt+D to Document" ghost text will appear. Pressing Opt/Alt+D will immediately generate documentation for that code block.
 
-<Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/localollama.png"
-  alt="Choosing an Ollama model in Cody for VS Code Chat"
-/>
+*INSERT GIF*
 
 ## Claude 3 Haiku is now available for Cody Pro 
 
 Cody Pro users now have access to Anthropic’s latest AI model - Claude 3 Haiku. This new model offers significantly faster speeds while maintaining quality and coherence. Claude 3 Haiku is available in the LLM selection dropdown, read more about Claude 3 Haiku [here](https://www.anthropic.com/news/claude-3-haiku). 
+
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/claude3-haiku.png"
+  alt="Claude3 Haiku in the LLM Selection dropdown"
+/>
 
 ## Better Debugging for Cody
 
@@ -51,10 +56,17 @@ We've added new commands and shortcuts to make debugging Cody easier, these impr
 
 
 <Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.8.0/keybindings.png"
-  alt="Setting custom command keybindings in Cody for VS Code"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/debugging-settings.png"
+  alt="debugging options in the settings"
 />
+New button in the Cody Setting menu to enable debug mode and open output channel on click
 
+
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/debugging-command-palette.png"
+  alt="debugging options in the command palette"
+/>
+All debug commands are also grouped together and are available through the command palette
 
 
 ## Changelog
