@@ -3,7 +3,7 @@ title: "Cody for VS Code v1.10.0 release"
 authors:
   - name: Kalan Chan
     url: https://handbook.sourcegraph.com/team/#kalan-chan
-publishDate: 2024-03-020T10:00-01:00
+publishDate: 2024-03-20T10:00-01:00
 description: "Cody for VS Code v1.10.0 is now available, this release includes support for Claude 3 Haiku, several improvements to doc string generation, and debugging."
 tags: [blog]
 slug: "cody-vscode-1-10-0-release"
@@ -28,8 +28,6 @@ We have made it easier for Cody Pro and Enterprise users to get assistance when 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/support2.png"
   alt="Support link in the Cody settings panel"
 />
-
-
 
 ## Improved Document Command
 
@@ -59,6 +57,7 @@ We've added new commands and shortcuts to make debugging Cody easier, these impr
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/debugging-settings.png"
   alt="debugging options in the settings"
 />
+
 New button in the Cody Setting menu to enable debug mode and open output channel on click
 
 
@@ -66,13 +65,12 @@ New button in the Cody Setting menu to enable debug mode and open output channel
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/debugging-command-palette.png"
   alt="debugging options in the command palette"
 />
-All debug commands are also grouped together and are available through the command palette
 
+All debug commands are also grouped together and are available through the command palette
 
 ## Changelog
 
 See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.8.0) and [GitHub releases](https://github.com/sourcegraph/cody/releases) for a complete list of changes.
-
 
 ## Thank you
 
@@ -80,11 +78,9 @@ Cody wouldn’t be what it is without our amazing contributors 💖 A big thank 
 
 As always, we value your feedback in [Discord](https://discord.com/servers/sourcegraph-969688426372825169) and [GitHub](https://github.com/sourcegraph/cody/issues/new/choose). Happy Codying!
 
-
 ---
 
 **To get started with Cody [install it from the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai)**
-
 
 ---
 
