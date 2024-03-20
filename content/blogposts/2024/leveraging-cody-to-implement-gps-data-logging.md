@@ -4,7 +4,7 @@ authors:
   - name: Charles Goode
   
 publishDate: 2024-03-12T10:00-07:00
-description: "Charles Goode, an electrical engineering student at Kennesaw State University, shares his experience using the Cody AI assistant to rapidly implement a GPS data logging system for the university's Formula SAE racing team, Kennesaw Motorsports."
+description: "Charles Goode, an electrical engineering student at Kennesaw State University, shares his experience using Cody to rapidly implement a GPS data logging system for the university's Formula SAE racing team, Kennesaw Motorsports."
 tags: [blog, guest-post]
 slug: "leveraging-cody-to-implement-gps-data-logging"
 published: true
