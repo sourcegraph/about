@@ -61,7 +61,7 @@ We've made it easier to generate and access Cody’s debug logs, allowing you to
 
 - Debug commands are now grouped in command palette under "Cody Debug"
 - Added an "Open Output Channel" sidebar menu item, that opens the VS Code output panel with "Cody by Sourcegraph" selected
-- Added a debug button in the top right of the Cody settings panel, which sets `{ "cody.debug.verbose": true }` and opens the VS Code output panel
+- Added a debug button in the top right of the Cody settings panel, which sets `{"cody.debug.verbose": true}` and opens the VS Code output panel
 
 
 <Figure
