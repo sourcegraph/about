@@ -31,6 +31,28 @@ We have made it easier for Cody Pro and Enterprise users to get assistance when 
   alt="Support link in the Cody settings panel"
 />
 
+## New debug options
+
+We've made it easier to generate and access Cody’s debug logs, allowing you to debug issues and more easily share that information with Sourcegraph’s support team. Please include logs in your bug reports when possible.
+
+- Debug commands are now grouped in command palette under "Cody Debug"
+- Added an "Open Output Channel" sidebar menu item, that opens the VS Code output panel with "Cody by Sourcegraph" selected
+- Added a debug button in the top right of the Cody settings panel, which sets `{"cody.debug.verbose": true}` and opens the VS Code output panel
+
+
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/debugging-settings.png"
+  alt="debugging options in the settings"
+  caption="Export logs and open output channel in the settings panel"
+/>
+
+
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/debugging-command-palette.png"
+  alt="debugging options in the command palette"
+  caption="All debug commands are also grouped together and are available through the command palette"
+/>
+
 ## Improved Document Command
 
 Generating documentation from code has been improved to automatically detect documentable code blocks and provide hints to quickly generate doc strings. When your cursor is on a documentable symbol in JavaScript, TypeScript, Go or Python, a "Opt/Alt+D to Document" ghost text will appear. Pressing <kbd>Opt</kbd> / <kbd>Alt</kbd> + <kbd>D</kbd> will immediately generate documentation for that code block.
@@ -55,27 +77,6 @@ For Cody Pro users we've added Anthropic’s latest AI model, [Claude 3 Haiku](h
   alt="Claude3 Haiku in the LLM Selection dropdown"
 />
 
-## New debug options
-
-We've made it easier to generate and access Cody’s debug logs, allowing you to debug issues and more easily share that information with Sourcegraph’s support team.
-
-- Debug commands are now grouped in command palette under "Cody Debug"
-- Added an "Open Output Channel" sidebar menu item, that opens the VS Code output panel with "Cody by Sourcegraph" selected
-- Added a debug button in the top right of the Cody settings panel, which sets `{"cody.debug.verbose": true}` and opens the VS Code output panel
-
-
-<Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/debugging-settings.png"
-  alt="debugging options in the settings"
-  caption="Export logs and open output channel in the settings panel"
-/>
-
-
-<Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/debugging-command-palette.png"
-  alt="debugging options in the command palette"
-  caption="All debug commands are also grouped together and are available through the command palette"
-/>
 
 
 ## Changelog
