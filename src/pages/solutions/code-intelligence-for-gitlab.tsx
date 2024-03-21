@@ -54,9 +54,13 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => {
                             Contact us
                         </Link>
                     </div>
-                    <div className="mb-0 w-full md:-mb-[42px] md:w-1/2">
-                        <img className="w-full md:w-[664px]" src="/solutions/gitlab-enterprise.png" alt="Gitlab" />
-                    </div>
+                    {isMobile ? (
+                        <img className="w-full" src="/solutions/gitlab-enterprise-context.svg" alt="Gitlab" />
+                    ) : (
+                        <div className="mb-0 w-full md:-mb-[42px] md:w-1/2">
+                            <img className="w-full md:w-[664px]" src="/solutions/enterprise-context.svg" alt="Gitlab" />
+                        </div>
+                    )}
                 </div>
             </ContentSection>
             <div className="py-md md:py-3xl">
