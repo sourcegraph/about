@@ -52,9 +52,9 @@ For Cody Pro users we've added Anthropic’s latest AI model, [Claude 3 Haiku](h
   alt="Claude3 Haiku in the LLM Selection dropdown"
 />
 
-## Better Debugging for Cody
+## New debug options
 
-We've added new commands and shortcuts to make debugging Cody easier, these improvements enable debugging and accessing logs. 
+We've made it easier to generate and access Cody’s debug logs, allowing you to debug issues and more easily share that information with Sourcegraph’s support team.
 
 - Debug commands now grouped in command palette under "Cody Debug"
 - New sidebar menu item to open the output channel
@@ -64,14 +64,14 @@ We've added new commands and shortcuts to make debugging Cody easier, these impr
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/debugging-settings.png"
   alt="debugging options in the settings"
-  figcaption="Export logs and open output channel in the settings panel"
+  caption="Export logs and open output channel in the settings panel"
 />
 
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/debugging-command-palette.png"
   alt="debugging options in the command palette"
-  figcaption="All debug commands are also grouped together and are available through the command palette"
+  caption="All debug commands are also grouped together and are available through the command palette"
 />
 
 
