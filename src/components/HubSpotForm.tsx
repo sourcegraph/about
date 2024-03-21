@@ -1,6 +1,7 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
+import { useRouter } from 'next/router'
 
 import styles from './HubSpotForm.module.css'
 
@@ -57,6 +58,7 @@ export interface HubSpotFormProps {
     inlineMessage?: string
     chiliPiper?: boolean
     overrideFormShorten?: boolean
+    form_submission_source?: string
 }
 
 interface ChiliPiperAPIProps {
@@ -269,7 +271,28 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
     inlineMessage = 'Thank you for your interest in Sourcegraph. We will be in contact with you soon!',
     chiliPiper,
     overrideFormShorten,
+    form_submission_source,
 }) => {
+    const router = useRouter()
+
+    const updateFormSubmissionSource = (newSource: string): void => {
+        const currentQuery = { ...router.query }
+       if (currentQuery.form_submission_source) {return}
+
+       currentQuery.form_submission_source = newSource
+       // eslint-disable-next-line @typescript-eslint/no-floating-promises
+       router.replace({
+           query: currentQuery,
+       })
+    }
+
+    useEffect(() => {
+        const currentSlug = form_submission_source || ''
+        if (currentSlug) {
+            updateFormSubmissionSource(currentSlug)
+        }
+    }, [form_submission_source, router.query.form_submission_source])
+
     const [formCreated, setFormCreated] = useState<boolean>(false)
 
     useEffect(() => {

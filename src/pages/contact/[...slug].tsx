@@ -8,7 +8,13 @@ import { slugs, slugData, type ContactPageProps } from './data'
  * This is a contact page slug template. The data used to generate these pages
  * can be found in data.ts.
  */
-const ContactPage: NextPage<ContactPageProps> = ({ title, description, masterFormName, formId }) => (
+const ContactPage: NextPage<ContactPageProps> = ({
+    title,
+    description,
+    masterFormName,
+    formId,
+    form_submission_source,
+}) => (
     <Layout
         meta={{
             title: `Sourcegraph - ${title}`,
@@ -27,7 +33,12 @@ const ContactPage: NextPage<ContactPageProps> = ({ title, description, masterFor
                     <h3 className="text-[18px] font-normal text-gray-500">{description}</h3>
 
                     <div className="mt-5">
-                        <HubSpotForm masterFormName={masterFormName} formId={formId} chiliPiper={true} />
+                        <HubSpotForm
+                            masterFormName={masterFormName}
+                            formId={formId}
+                            chiliPiper={true}
+                            {...(form_submission_source && { form_submission_source })}
+                        />
                     </div>
                 </div>
             </div>
@@ -59,3 +70,4 @@ export const getStaticPaths: GetStaticPaths = () => {
 export const getStaticProps: GetStaticProps = ({ params }) => ({
     props: (params?.slug && slugData[params?.slug[0]]) || {},
 })
+
