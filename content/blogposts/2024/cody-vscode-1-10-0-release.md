@@ -37,7 +37,7 @@ Generating documentation from code has been improved to automatically detect doc
 
 <Video 
   source={{
-    mp4: 'blog/vscode-v1-10-Improved-Document-Command'
+    mp4: 'blog/vscode-v1-10-Improved-Document-Command-v2'
   }}
   loop={true}
   title="Improved Document Command"
