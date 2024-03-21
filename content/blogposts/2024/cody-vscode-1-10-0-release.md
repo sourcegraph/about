@@ -3,6 +3,8 @@ title: "Cody for VS Code v1.10.0 release"
 authors:
   - name: Kalan Chan
     url: https://handbook.sourcegraph.com/team/#kalan-chan
+  - name: Justin Dorfman
+    url: https://handbook.sourcegraph.com/team/#justin-dorfman
 publishDate: 2024-03-21T10:00-01:00
 description: "Cody for VS Code v1.10.0 is now available, this release includes support for Claude 3 Haiku, several improvements to doc string generation, and debugging."
 tags: [blog]
@@ -31,7 +33,7 @@ We have made it easier for Cody Pro and Enterprise users to get assistance when 
 
 ## Improved Document Command
 
-Generating documentation from code has been improved to automatically detect documentable code blocks and provide hints to quickly generate doc strings. When your cursor is on a documentable symbol in JavaScript, TypeScript, Go or Python, a "Opt/Alt+D to Document" ghost text will appear. Pressing Opt/Alt+D will immediately generate documentation for that code block.
+Generating documentation from code has been improved to automatically detect documentable code blocks and provide hints to quickly generate doc strings. When your cursor is on a documentable symbol in JavaScript, TypeScript, Go or Python, a "Opt/Alt+D to Document" ghost text will appear. Pressing <kbd>Opt</kbd> / <kbd>Alt</kbd> + <kbd>D</kbd> will immediately generate documentation for that code block.
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/document-command.png"
