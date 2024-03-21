@@ -43,6 +43,9 @@ Generating documentation from code has been improved to automatically detect doc
   title="Improved Document Command"
 />
 
+## GPT-4 Turbo upgrade
+For Cody Pro users, [GPT-4 Turbo](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo) now uses the `gpt-4-0125-preview` model. 
+
 ## Claude 3 Haiku is now available for Cody Pro 
 
 For Cody Pro users we've added Anthropic’s latest AI model, [Claude 3 Haiku](https://www.anthropic.com/news/claude-3-haiku), alongside Sonnet and Opus. This new model offers significantly faster speeds while maintaining quality and coherence. To start using Claude 3 Haiku start a new chat and select it from the list of models:
