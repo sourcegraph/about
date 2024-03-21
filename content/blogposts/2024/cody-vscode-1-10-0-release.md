@@ -45,7 +45,7 @@ Generating documentation from code has been improved to automatically detect doc
 
 ## Claude 3 Haiku is now available for Cody Pro 
 
-Cody Pro users now have access to Anthropic’s latest AI model - Claude 3 Haiku. This new model offers significantly faster speeds while maintaining quality and coherence. Claude 3 Haiku is available in the LLM selection dropdown, read more about Claude 3 Haiku [here](https://www.anthropic.com/news/claude-3-haiku). 
+For Cody Pro users we've added Anthropic’s latest AI model, [Claude 3 Haiku](https://www.anthropic.com/news/claude-3-haiku), alongside Sonnet and Opus. This new model offers significantly faster speeds while maintaining quality and coherence. To start using Claude 3 Haiku start a new chat and select it from the list of models:
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/claude3-haiku.png"
