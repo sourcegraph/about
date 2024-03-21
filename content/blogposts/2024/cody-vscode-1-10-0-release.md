@@ -35,9 +35,12 @@ We have made it easier for Cody Pro and Enterprise users to get assistance when 
 
 Generating documentation from code has been improved to automatically detect documentable code blocks and provide hints to quickly generate doc strings. When your cursor is on a documentable symbol in JavaScript, TypeScript, Go or Python, a "Opt/Alt+D to Document" ghost text will appear. Pressing <kbd>Opt</kbd> / <kbd>Alt</kbd> + <kbd>D</kbd> will immediately generate documentation for that code block.
 
-<Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/document-command.png"
-  alt="Document Command"
+<Video 
+  source={{
+    mp4: 'blog/vscode-v1-10-Improved-Document-Command'
+  }}
+  loop={true}
+  title="Improved Document Command"
 />
 
 ## Claude 3 Haiku is now available for Cody Pro 
