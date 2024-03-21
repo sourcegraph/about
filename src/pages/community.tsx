@@ -15,18 +15,18 @@ const socialMediaStyles = 'text-xl text-gray-400 hover:text-gray-300 transition-
 const events = {
     upcoming: [
         {
-            title: 'Learning TypeScript Livestream',
-            location: 'YouTube',
-            date: 'Mar 20, 2024',
-            link: 'https://www.youtube.com/watch?v=CY10cOUAkj4',
-        },
-        {
             title: 'PyCon',
             location: 'Pittsburgh, PA',
             date: 'May 17-19, 2024',
+            link: 'https://us.pycon.org/2024/',
         },
     ],
     past: [
+        {
+            title: 'Learning TypeScript Livestream',
+            location: 'YouTube',
+            date: 'Mar 20, 2024',
+        },
         {
             title: 'AWS: ReInvent',
             location: 'Las Vegas, NV',
