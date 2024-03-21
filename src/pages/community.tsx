@@ -18,6 +18,7 @@ const events = {
             title: 'PyCon',
             location: 'Pittsburgh, PA',
             date: 'May 17-19, 2024',
+            link: 'https://us.pycon.org/2024/',
         },
     ],
     past: [
