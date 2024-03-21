@@ -3,13 +3,13 @@ title: "Cody for VS Code v1.10.0 release"
 authors:
   - name: Kalan Chan
     url: https://handbook.sourcegraph.com/team/#kalan-chan
-publishDate: 2024-03-20T10:00-01:00
+publishDate: 2024-03-21T10:00-01:00
 description: "Cody for VS Code v1.10.0 is now available, this release includes support for Claude 3 Haiku, several improvements to doc string generation, and debugging."
 tags: [blog]
 slug: "cody-vscode-1-10-0-release"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/cody-vscode-1.10.0-og-image.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/cody-vscode-1.10.0-og-image.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0-og-image-2x.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0-og-image-2x.png
 --- 
 
 [Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v1.10.0 is now available, this release includes support for Claude 3 Haiku, several improvements to doc string generation, and debugging. 
