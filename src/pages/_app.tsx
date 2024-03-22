@@ -5,7 +5,6 @@ import { ReactNode, useEffect } from 'react'
 
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
-
 // PostHog
 import posthog from 'posthog-js'
 import { PostHogProvider } from 'posthog-js/react'
@@ -19,7 +18,7 @@ import 'prism-themes/themes/prism-one-light.css'
 if (typeof window !== 'undefined') {
   posthog.init('phc_GYC9gnJzJhbUMe7qIZPjMpTwAeF4kkC7AGAOXZgJ4pB', {
     api_host: 'https://app.posthog.com',
-    loaded: (posthog) => {
+    loaded: posthog => {
       if (process.env.NODE_ENV === 'development'){posthog.debug()}
     }
   })
@@ -36,7 +35,7 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
       const handleRouteChange = () => posthog?.capture('$pageview')
       router.events.on('routeChangeComplete', handleRouteChange)
 
-      return () => {
+      return (): void => {
         router.events.off('routeChangeComplete', handleRouteChange)
       }
     }, [])
