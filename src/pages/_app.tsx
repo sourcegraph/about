@@ -6,7 +6,7 @@ import { ReactNode, useEffect } from 'react'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 // PostHog
-import posthog from 'posthog-js'
+import posthog, { CaptureResult } from 'posthog-js'
 import { PostHogProvider } from 'posthog-js/react'
 
 import { AuthModalProvider } from '../context/AuthModalContext'
@@ -32,7 +32,7 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
     const router = useRouter()
 
     useEffect(() => {
-      const handleRouteChange = () => posthog?.capture('$pageview')
+      const handleRouteChange = (): void | CaptureResult => posthog?.capture('$pageview')
       router.events.on('routeChangeComplete', handleRouteChange)
 
       return (): void => {
