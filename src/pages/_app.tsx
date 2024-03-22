@@ -2,26 +2,25 @@
 import '../styles/globals.css'
 
 import { ReactNode, useEffect } from 'react'
-import { useRouter } from 'next/router'
 
 import type { AppProps } from 'next/app'
+import { useRouter } from 'next/router'
+
+// PostHog
+import posthog from 'posthog-js'
+import { PostHogProvider } from 'posthog-js/react'
 
 import { AuthModalProvider } from '../context/AuthModalContext'
 import { useEventLogger, useLogAllLinkClicks } from '../hooks/eventLogger'
 import { useLandingSource } from '../hooks/landingSource'
 import 'prism-themes/themes/prism-one-light.css'
 
-// PostHog
-import posthog from 'posthog-js'
-import { PostHogProvider } from 'posthog-js/react'
-
 // Check that PostHog is client-side (used to handle Next.js SSR)
 if (typeof window !== 'undefined') {
   posthog.init('phc_GYC9gnJzJhbUMe7qIZPjMpTwAeF4kkC7AGAOXZgJ4pB', {
     api_host: 'https://app.posthog.com',
-    // Enable debug mode in development
     loaded: (posthog) => {
-      if (process.env.NODE_ENV === 'development') posthog.debug()
+      if (process.env.NODE_ENV === 'development'){posthog.debug()}
     }
   })
 }
