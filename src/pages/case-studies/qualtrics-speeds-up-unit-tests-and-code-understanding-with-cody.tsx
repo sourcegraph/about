@@ -74,8 +74,7 @@ const Qualtrics: FunctionComponent = () => (
                         />
                         <SidebarContent
                             title="Improved unit test coverage"
-                            content="Engineers reported that unit tests, which took one dev day to write, now take roughly 10
-minutes, leading to improved unit test coverage faster."
+                            content="Engineers reported that unit tests, which took devs a full day to write, now take roughly 10 minutes with Cody, leading to improved unit test coverage."
                         />
 
                         <SidebarCta />
