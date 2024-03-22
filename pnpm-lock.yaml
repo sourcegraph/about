@@ -80,6 +80,9 @@ dependencies:
   next-mdx-remote:
     specifier: ^4.0.3
     version: 4.1.0(react-dom@18.2.0)(react@18.2.0)
+  posthog-js:
+    specifier: ^1.116.4
+    version: 1.116.4
   prism-themes:
     specifier: ^1.9.0
     version: 1.9.0
@@ -7760,6 +7763,10 @@ packages:
       xml-js: 1.6.11
     dev: false
 
+  /fflate@0.4.8:
+    resolution: {integrity: sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA==}
+    dev: false
+
   /fflate@0.8.2:
     resolution: {integrity: sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A==}
     dev: false
@@ -11277,6 +11284,17 @@ packages:
       nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: false
+
+  /posthog-js@1.116.4:
+    resolution: {integrity: sha512-PZg208/k5OZRQbd9tnGvUgtyRl1IAYyyh74teyIDIH3EnlsAolBlVM4gcoyEYoVkUi5sZLKitj9gTX3/vnEG4Q==}
+    dependencies:
+      fflate: 0.4.8
+      preact: 10.20.0
+    dev: false
+
+  /preact@10.20.0:
+    resolution: {integrity: sha512-wU7iZw2BjsaKDal3pDRDy/HpPB6cuFOnVUCcw9aIPKG98+ZrXx3F+szkos8BVME5bquyKDKvRlOJFG8kMkcAbg==}
     dev: false
 
   /prebuild-install@7.1.1:
