@@ -58,7 +58,7 @@ const Newsletter: FunctionComponent = () => {
                         {hasThankYouQuery && (
                             <div className="flex items-center gap-2">
                                 <img
-                                    src="/sentiment-very-satisfied.svg"
+                                    src="/newsletter/sentiment-very-satisfied.svg"
                                     alt="sentiment very satisfied"
                                     className="h-sm w-sm"
                                 />
