@@ -159,14 +159,14 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
                             </a>
                             <a
                                 className="btn btn-outline btn-outline-primary w-fit tracking-[-0.25px]"
-                                href="https://docs.google.com/forms/d/e/1FAIpQLSeB3KvQRI6B5A7ghgdNKdyie1ZAsLj8K-OgztKpol_BEghC4A/viewform"
+                                href="https://community.sourcegraph.com/"
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                                 target="_blank rel=noopener"
-                                title="Write for us"
+                                title="Community support"
                             >
-                                Write for us
+                                Community support
                             </a>
                         </div>
                     </div>
