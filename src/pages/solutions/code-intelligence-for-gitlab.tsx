@@ -10,7 +10,7 @@ import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
 import { carouselImages } from '../code-search'
 
-interface SearchTipItemProps {
+interface CodyCardProps {
     title: string
     icon?: string
     description: string
@@ -82,20 +82,20 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => {
                     <img src="/solutions/ai-cody.png" alt="AI Cody" />
                 </div>
                 <div className="relative mt-0 flex flex-col gap-6 md:-mt-[134px] md:flex-row">
-                    <SearchTipItem
+                    <CodyCard
                         title="AI personalized to your code"
                         description="Cody pulls from your entire GitLab codebase to explain and write contextually-aware code."
-                        className="rounded-2xl border border-gray-200 bg-white py-3xl px-lg"
+                        className="order-3 rounded-2xl border border-gray-200 bg-white py-3xl px-lg md:order-1"
                     />
-                    <SearchTipItem
+                    <CodyCard
                         title="Generate code with chat and commands"
                         description="Ask Cody to generate code for you or use a pre-built command to quickly generate unit tests or documentation."
-                        className="rounded-2xl border border-gray-200 bg-white py-3xl px-lg"
+                        className="order-1 rounded-2xl border border-gray-200 bg-white py-3xl px-lg md:order-2"
                     />
-                    <SearchTipItem
+                    <CodyCard
                         title="AI-assisted autocomplete"
                         description="Cody autocompletes code in any programming language, configuration file, or documention."
-                        className="rounded-2xl border border-gray-200 bg-white py-3xl px-lg"
+                        className="order-2 rounded-2xl border border-gray-200 bg-white py-3xl px-lg md:order-3"
                     />
                 </div>
             </ContentSection>
@@ -121,13 +121,13 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => {
                         </div>
                     )}
                     <div className="flex flex-col gap-0 md:gap-lg">
-                        <SearchTipItem
+                        <CodyCard
                             title="Search"
                             description="Find what you need in milliseconds with Code Search."
                             icon="/solutions/search.svg"
                             className="py-xl px-lg md:py-0 md:px-0"
                         />
-                        <SearchTipItem
+                        <CodyCard
                             title="Navigate"
                             description="Quickly understand code with web-based cross-repository code navigation."
                             icon="/solutions/navigate.svg"
@@ -174,13 +174,17 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => {
                     )}
                 </div>
             </ContentSection>
-            <ContactUsCta buttonClassNames="!max-w-full" parentClassNames="mdi:!py-5xl mdi:!px-0 !px-sm !py-md" />
+            <ContactUsCta
+                buttonClassNames="!max-w-full"
+                parentClassNames="mdi:!py-5xl mdi:!px-0 !px-sm !py-md"
+                className="px-2xl py-3xl"
+            />
         </Layout>
     )
 }
 
-const SearchTipItem: FunctionComponent<SearchTipItemProps> = ({ title, description, icon, className }) => (
-    <div className={classNames('flex flex-col gap-4', className)}>
+const CodyCard: FunctionComponent<CodyCardProps> = ({ title, description, icon, className }) => (
+    <div className={classNames('flex w-full flex-col gap-4 xl:w-[410.6px]', className)}>
         {icon && <img src={icon} alt="Search" className="h-6 w-6" />}
         <Heading size="h5" className="!text-2xl !font-[590] !leading-[30px] !-tracking-[0.25px] !text-gray-700">
             {title}

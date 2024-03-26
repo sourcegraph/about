@@ -8,12 +8,20 @@ import { ContentSection } from '../ContentSection'
 import { Heading } from '../Heading'
 
 interface ContactUsCtaProps {
-    buttonClassNames?: string,
+    buttonClassNames?: string
     parentClassNames?: string
+    className?: string
 }
-export const ContactUsCta: FunctionComponent<ContactUsCtaProps> = ({ buttonClassNames, parentClassNames }) => (
+export const ContactUsCta: FunctionComponent<ContactUsCtaProps> = ({
+    buttonClassNames,
+    parentClassNames,
+    className,
+}) => (
     <ContentSection
-        className="flex max-w-[1232px] flex-col justify-between gap-6 rounded-2xl border-1 border-gray-200 bg-violet-700 py-16 px-6 md:px-[56px]"
+        className={classNames(
+            'flex max-w-[1232px] flex-col justify-between gap-6 rounded-2xl border-1 border-gray-200 bg-violet-700 py-16 px-6 md:px-[56px]',
+            className
+        )}
         parentClassName={classNames('md:px-[80px] py-[96px]', parentClassNames)}
     >
         <Heading size="h2" className="!leading-10 !tracking-[-1px] text-white">
