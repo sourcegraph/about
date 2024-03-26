@@ -15,18 +15,18 @@ const socialMediaStyles = 'text-xl text-gray-400 hover:text-gray-300 transition-
 const events = {
     upcoming: [
         {
-            title: 'Learning TypeScript Livestream',
-            location: 'YouTube',
-            date: 'Mar 20, 2024',
-            link: 'https://www.youtube.com/watch?v=CY10cOUAkj4',
-        },
-        {
             title: 'PyCon',
             location: 'Pittsburgh, PA',
             date: 'May 17-19, 2024',
+            link: 'https://us.pycon.org/2024/',
         },
     ],
     past: [
+        {
+            title: 'Learning TypeScript Livestream',
+            location: 'YouTube',
+            date: 'Mar 20, 2024',
+        },
         {
             title: 'AWS: ReInvent',
             location: 'Las Vegas, NV',
@@ -159,14 +159,14 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
                             </a>
                             <a
                                 className="btn btn-outline btn-outline-primary w-fit tracking-[-0.25px]"
-                                href="https://docs.google.com/forms/d/e/1FAIpQLSeB3KvQRI6B5A7ghgdNKdyie1ZAsLj8K-OgztKpol_BEghC4A/viewform"
+                                href="https://community.sourcegraph.com/"
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
                                 target="_blank rel=noopener"
-                                title="Write for us"
+                                title="Community support"
                             >
-                                Write for us
+                                Community support
                             </a>
                         </div>
                     </div>

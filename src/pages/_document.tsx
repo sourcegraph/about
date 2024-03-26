@@ -1,8 +1,20 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document'
+import Document, { DocumentContext, DocumentInitialProps, Head, Html, Main, NextScript } from 'next/document'
 import Script from 'next/script'
 
-export default class MyDocument extends Document {
+interface MyDocumentProps extends DocumentInitialProps {
+    pathName: string
+}
+
+export default class MyDocument extends Document<MyDocumentProps> {
+    public static async getInitialProps(ctx: DocumentContext): Promise<MyDocumentProps> {
+        const initialProps = await Document.getInitialProps(ctx)
+        return { ...initialProps, pathName: ctx.asPath || '' }
+    }
+
     public override render(): JSX.Element {
+        const { pathName } = this.props
+        const isHomepage = pathName === '/'
+
         return (
             <Html lang="en">
                 <Head>
@@ -42,7 +54,7 @@ export default class MyDocument extends Document {
                         rel="stylesheet"
                     />
 
-                    {/* Google structured data. */}
+                    {/* Google structured data. (WebSite) */}
                     <Script
                         id="structured_data"
                         type="application/ld+json"
@@ -56,6 +68,34 @@ export default class MyDocument extends Document {
                             }),
                         }}
                     />
+
+                    {/* Google structured data. (Organization) */}
+                    {isHomepage && (
+                        <Script
+                            id="structured_data_company"
+                            type="application/ld+json"
+                            strategy="beforeInteractive"
+                            dangerouslySetInnerHTML={{
+                                __html: JSON.stringify({
+                                    '@context': 'https://schema.org',
+                                    '@type': 'Organization',
+                                    image: 'https://sourcegraph.com/sourcegraph-logo.svg',
+                                    url: 'https://www.sourcegraph.com',
+                                    sameAs: [
+                                        'https://github.com/sourcegraph',
+                                        'https://twitter.com/sourcegraph',
+                                        'https://www.youtube.com/c/Sourcegraph/featured',
+                                        'https://www.linkedin.com/sourcegraph/',
+                                        'https://discord.com/servers/sourcegraph-969688426372825169',
+                                    ],
+                                    logo: 'https://sourcegraph.com/sourcegraph-logo.svg',
+                                    name: 'Sourcegraph',
+                                    description:
+                                        "Sourcegraph's code intelligence platform makes it easy for devs to write, fix, and maintain code with Cody, the AI coding assistant, and Code Search",
+                                }),
+                            }}
+                        />
+                    )}
 
                     {/* Cookiebot */}
                     {/* Cookiebot recommends this in the head, which aligns with Next.js' recommendation for CCMs */}

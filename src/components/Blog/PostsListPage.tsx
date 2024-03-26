@@ -44,7 +44,7 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
                                     )}
                                 >
                                     <Heading size="h5" className="mb-8 normal-case">
-                                        Subscribe to the latest news from Sourcegraph
+                                        Subscribe for the latest code AI news and product updates
                                     </Heading>
 
                                     <HubSpotForm
