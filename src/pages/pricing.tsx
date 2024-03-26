@@ -337,7 +337,11 @@ const PricingPage: FunctionComponent = () => {
                                     price={<PriceItem amount={9} hasLimit={true} />}
                                     buttons={<GetProButton title="Sign up for Cody Pro" />}
                                     features={PRO_FEATURES_OVERVIEW}
-                                    planClasses={isWindowWidthBelowLg ? 'z-10 md:w-full' : 'z-10 lg:!w-[400px] mdi:w-[310px] md:-my-3'}
+                                    planClasses={
+                                        isWindowWidthBelowLg
+                                            ? 'z-10 md:w-full'
+                                            : 'z-10 lg:!w-[400px] mdi:w-[310px] md:-my-3'
+                                    }
                                     {...PLAN_COLORS.pro}
                                 />
                                 <PricingPlan
@@ -350,7 +354,7 @@ const PricingPage: FunctionComponent = () => {
                                     price={<PriceItem amount={19} hasLimit={true} />}
                                     buttons={
                                         <ContactUsButton
-                                            href="https://sourcegraph.com/contact/request-info?form_submission_source=pricing-cody-enterprise"
+                                            href="/contact/pricing?form_submission_source=pricing-cody-enterprise"
                                             title="Contact sales"
                                             className="border-violet-700 text-violet-700 hover:border-violet-500 hover:bg-violet-500 hover:text-white"
                                         />
@@ -414,7 +418,7 @@ const PricingPage: FunctionComponent = () => {
                                 price={<PriceItem amount={49} hasLimit={true} description="Scales with your team" />}
                                 buttons={
                                     <ContactUsButton
-                                        href="/contact/request-info?form_submission_source=pricing-enterprise"
+                                        href="/contact/pricing?form_submission_source=pricing-enterprise"
                                         title="Contact sales"
                                         className="btn-default-outlined border-violet-600 bg-violet-500 text-white hover:bg-white hover:text-violet-500"
                                     />
@@ -488,7 +492,7 @@ const PricingPage: FunctionComponent = () => {
                                                 </div>
                                             </span>
                                             <ContactUsButton
-                                                href="/contact/request-info?form_submission_source=pricing-code-intelligence"
+                                                href="/contact/pricing?form_submission_source=pricing-code-intelligence"
                                                 title="Contact sales"
                                                 className="btn w-full border-violet-600 bg-violet-500 text-white md:w-fit"
                                             />

@@ -43,6 +43,11 @@ export const slugData: SlugDataProps = {
         description: 'Talk to a product specialist about upgrading to a Team plan.',
         formId: '3fd1217b-2505-4bd7-8a21-70ceb6931cb3',
     },
+    pricing: {
+        title: 'Contact us',
+        description: 'Talk with a product specialist to learn more about Sourcegraph.',
+        formId: 'c8c6536a-0a61-45aa-8811-935a587d7015',
+    },
 }
 
 export const slugs: string[] = Object.keys(slugData)
