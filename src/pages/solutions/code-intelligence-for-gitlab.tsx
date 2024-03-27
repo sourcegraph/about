@@ -48,7 +48,7 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => {
                         </p>
                         <Link
                             className="btn btn-primary flex w-3/4 justify-center bg-violet-500 xs:w-1/2 mdi:w-fit"
-                            href="/contact/request-info"
+                            href="/contact/request-info?form_submission_source=solutions-gitlab"
                             title="Contact us"
                         >
                             Contact us
