@@ -43,8 +43,8 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => {
                             Code Intelligence for GitLab
                         </Heading>
                         <p className="text-wrap !mb-0 pb-md text-2xl font-normal !leading-[30px] -tracking-[0.25px] !text-gray-700">
-                            Sourcegraph AI coding assistant and Code Search functionality integrates natively with
-                            GitLab.
+                            Write and understand code in GitLab environments with native
+                            Cody and Code Search integrations.
                         </p>
                         <Link
                             className="btn btn-primary flex w-3/4 justify-center bg-violet-500 xs:w-1/2 mdi:w-fit"
@@ -55,10 +55,10 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => {
                         </Link>
                     </div>
                     {isMobile ? (
-                        <img className="w-full" src="/solutions/gitlab-enterprise-context.svg" alt="Gitlab" />
+                        <img className="w-full" src="/solutions/gitlab/gitlab-enterprise-context.svg" alt="Gitlab" />
                     ) : (
                         <div className="mb-0 w-full md:-mb-[42px] md:w-1/2">
-                            <img className="w-full md:w-[664px]" src="/solutions/enterprise-context.svg" alt="Gitlab" />
+                            <img className="w-full md:w-[664px]" src="/solutions/gitlab/enterprise-context.svg" alt="Gitlab" />
                         </div>
                     )}
                 </div>
@@ -80,9 +80,9 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => {
                 </div>
                 <div className="relative -ml-6 sm:-ml-[208px] md:ml-0">
                     {isMobile ? (
-                        <img className="w-[612px]" src="/solutions/ai-cody-mobile.svg" alt="AI Cody" />
+                        <img className="w-[612px]" src="/solutions/gitlab/ai-cody-mobile.svg" alt="AI Cody" />
                     ) : (
-                        <img className="w-[928px]" src="/solutions/ai-cody.svg" alt="AI Cody" />
+                        <img className="w-[928px]" src="/solutions/gitlab/ai-cody.svg" alt="AI Cody" />
                     )}
                 </div>
                 <div className="relative mt-0 flex flex-col gap-6 md:-mt-[134px] md:flex-row">
@@ -121,27 +121,27 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => {
                     </div>
                     {isMobile && (
                         <div className="relative -mr-12">
-                            <img className="w-full" src="/solutions/code-search-mobile.svg" alt="Code search" />
+                            <img className="w-full" src="/solutions/gitlab/code-search-mobile.svg" alt="Code search" />
                         </div>
                     )}
                     <div className="flex flex-col gap-0 md:gap-lg">
                         <CodyCard
                             title="Search"
                             description="Find what you need in milliseconds with Code Search."
-                            icon="/solutions/search.svg"
+                            icon="/solutions/gitlab/search.svg"
                             className="py-xl px-lg md:py-0 md:px-0"
                         />
                         <CodyCard
                             title="Navigate"
                             description="Quickly understand code with web-based cross-repository code navigation."
-                            icon="/solutions/navigate.svg"
+                            icon="/solutions/gitlab/navigate.svg"
                             className="py-xl px-lg md:py-0 md:px-0"
                         />
                     </div>
                 </div>
                 {!isMobile && (
                     <div className="relative md:-mt-24 md:-mr-3 mdi:-mt-2 mdi:-mr-6">
-                        <img className="h-[688px] w-[700px]" src="/solutions/code-search.svg" alt="Code search" />
+                        <img className="h-[688px] w-[700px]" src="/solutions/gitlab/code-search.svg" alt="Code search" />
                     </div>
                 )}
             </ContentSection>
@@ -164,16 +164,16 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => {
                 </div>
                 {isMobile && (
                     <div className="-mt-[126px] -mr-[112px]">
-                        <img className="w-full" src="/solutions/tracker-graph.svg" alt="Code tracker graph" />
+                        <img className="w-full" src="/solutions/gitlab/tracker-graph.svg" alt="Code tracker graph" />
                     </div>
                 )}
                 <div className="-mr-[204px] flex flex-row pt-0 md:mr-0 mdi:pt-5">
                     <div className="z-40">
-                        <img src="/solutions/batch-changes.svg" alt="Batch change" />
+                        <img src="/solutions/gitlab/batch-changes.svg" alt="Batch change" />
                     </div>
                     {!isMobile && (
                         <div className="relative -ml-[112px] -mt-[102px]">
-                            <img className="h-[426px]" src="/solutions/tracker-graph.svg" alt="Code tracker graph" />
+                            <img className="h-[426px]" src="/solutions/gitlab/tracker-graph.svg" alt="Code tracker graph" />
                         </div>
                     )}
                 </div>
@@ -204,7 +204,7 @@ const TestimonialCard: FunctionComponent = () => (
     >
         <div className="flex flex-col py-3xl px-sm md:px-20">
             <div className="flex w-full flex-col gap-[70px] mdi:w-[775px]">
-                <img className="h-[54.91px] w-[171.471px]" src="/solutions/qualtrics.svg" alt="Qualtrics" />
+                <img className="h-[54.91px] w-[171.471px]" src="/solutions/gitlab/qualtrics.svg" alt="Qualtrics" />
                 <Heading
                     size="h5"
                     className="!text-[35px] !font-normal !leading-[43.75px] !-tracking-[0.25px] !text-white"
