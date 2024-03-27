@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { MdOutlineSecurity, MdVpnKey, MdLock, MdDoNotDisturb } from 'react-icons/md'
 
 import { Layout, Hero, ContentSection, Heading } from '../components'
+import { ContactUsCta } from '../components/cta/ContactUsCta'
 import { breakpoints } from '../data/breakpoints'
 import { buttonLocation, buttonStyle } from '../data/tracking'
 import { useWindowWidth } from '../hooks/windowWidth'
@@ -146,7 +147,7 @@ const Enterprise: FunctionComponent = () => {
             hero={
                 <div className="">
                     {!isMobile && (
-                        <div className="absolute inset-0 top-[48px] mx-auto max-w-[1280px] z-0 h-full transition-opacity duration-1000 ease-in-out">
+                        <div className="absolute inset-0 top-[48px] z-0 mx-auto h-full max-w-[1280px] transition-opacity duration-1000 ease-in-out">
                             <DotLottiePlayer
                                 className={`absolute inset-0 top-[30px] z-0 h-full w-full object-cover opacity-${
                                     videoPlayed ? '0' : '100'
@@ -212,7 +213,7 @@ const Enterprise: FunctionComponent = () => {
                     <Link
                         href="https://sourcegraph.com/case-studies"
                         title="Cody"
-                        className="btn p-0 text-center font-semibold hover:underline  !-tracking-[0.25px]  text-violet-500 md:text-violet-500"
+                        className="btn p-0 text-center font-semibold !-tracking-[0.25px]  text-violet-500  hover:underline md:text-violet-500"
                     >
                         Read customer stories
                         <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
@@ -227,7 +228,7 @@ const Enterprise: FunctionComponent = () => {
                 </div>
             </ContentSection>
             <ContentSection
-                className="relative flex z-10 max-w-[1232px] flex-col gap-6 md:flex-row"
+                className="relative z-10 flex max-w-[1232px] flex-col gap-6 md:flex-row"
                 parentClassName="!md:px-[80px] !py-0"
             >
                 <div className="flex h-[533px] flex-col justify-between px-0 py-16 md:px-10">
@@ -630,8 +631,8 @@ const Enterprise: FunctionComponent = () => {
                                     Guardrails to catch licensed code
                                 </Heading>
                                 <p className="mb-0 text-[18px] font-normal leading-[27px] -tracking-[0.25px]">
-                                    Sourcegraph automatically checks AI suggestions against open source code and highlights
-                                    matches to mitigate IP risk.
+                                    Sourcegraph automatically checks AI suggestions against open source code and
+                                    highlights matches to mitigate IP risk.
                                 </p>
                             </div>
                         </div>
@@ -659,39 +660,7 @@ const Enterprise: FunctionComponent = () => {
                     </div>
                 </div>
             </ContentSection>
-
-            <ContentSection
-                className="flex max-w-[1232px] flex-col justify-between gap-6 rounded-2xl border-1 border-gray-200 bg-violet-700 py-16 px-6 md:px-[56px]"
-                parentClassName="md:px-[80px] !py-[96px]"
-            >
-                <Heading size="h2" className="!leading-10 !tracking-[-1px] text-white">
-                    Contact us for a demo or to start an enterprise trial
-                </Heading>
-                <div className="text-center md:items-center">
-                    <div className="mx-auto flex max-w-[300px] sm:max-w-full  sm:w-full flex-col items-center gap-6 sm:flex-row md:!w-auto md:gap-4">
-                        <Link
-                            className="btn btn-inverted-primary w-full sm:w-[140px] bg-white  md:w-auto"
-                            href="/contact/request-info"
-                            title="Contact us"
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation} 
-                            data-button-type="cta"
-                        >
-                            Contact us
-                        </Link>
-                        <Link
-                            className="btn w-full sm:w-[140px] items-center text-white outline  md:w-auto"
-                            href="/pricing"
-                            title="See Pricing"
-                            data-button-style={buttonStyle.outline}
-                            data-button-location={buttonLocation.hero}
-                            data-button-type="cta"
-                        >
-                            See pricing
-                        </Link>
-                    </div>
-                </div>
-            </ContentSection>
+            <ContactUsCta />
         </Layout>
     )
 }

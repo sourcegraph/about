@@ -69,7 +69,7 @@ export const resourceItems: Resource[] = [
     {
         featured: false,
         title: 'GitLab and Sourcegraph',
-        link: '/resources/gitlab-and-sourcegraph',
+        link: '/solutions/code-intelligence-for-gitlab',
         contentType: 'guide',
         subjects: ['code search', 'batch changes', 'code insights', 'code monitoring', 'integrations'],
         description:
