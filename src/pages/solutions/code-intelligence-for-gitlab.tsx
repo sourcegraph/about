@@ -78,8 +78,12 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => {
                         Write code faster with AI in your GitLab environment
                     </Heading>
                 </div>
-                <div className="relative -ml-[192px] md:ml-0">
-                    <img src="/solutions/ai-cody.png" alt="AI Cody" />
+                <div className="relative -ml-6 sm:-ml-[208px] md:ml-0">
+                    {isMobile ? (
+                        <img className="w-[612px]" src="/solutions/ai-cody-mobile.svg" alt="AI Cody" />
+                    ) : (
+                        <img className="w-[928px]" src="/solutions/ai-cody.svg" alt="AI Cody" />
+                    )}
                 </div>
                 <div className="relative mt-0 flex flex-col gap-6 md:-mt-[134px] md:flex-row">
                     <CodyCard
@@ -137,7 +141,7 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => {
                 </div>
                 {!isMobile && (
                     <div className="relative md:-mt-24 md:-mr-3 mdi:-mt-2 mdi:-mr-6">
-                        <img className="w[700px] h-[688px]" src="/solutions/code-search.svg" alt="Code search" />
+                        <img className="h-[688px] w-[700px]" src="/solutions/code-search.svg" alt="Code search" />
                     </div>
                 )}
             </ContentSection>
