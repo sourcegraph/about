@@ -98,7 +98,7 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => {
                     />
                     <CodyCard
                         title="AI-assisted autocomplete"
-                        description="Cody autocompletes code in any programming language, configuration file, or documention."
+                        description="Cody autocompletes code in any programming language, configuration file, or documentation."
                         className="order-2 rounded-2xl border border-gray-200 bg-white py-3xl px-lg md:order-3"
                     />
                 </div>
