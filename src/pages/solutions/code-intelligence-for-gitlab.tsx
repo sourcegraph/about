@@ -51,7 +51,7 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => {
                             href="/contact/request-info?form_submission_source=solutions-gitlab"
                             title="Contact us"
                         >
-                            Contact us
+                            Contact us for a demo
                         </Link>
                     </div>
                     {isMobile ? (
