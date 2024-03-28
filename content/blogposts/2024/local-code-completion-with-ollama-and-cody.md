@@ -16,6 +16,8 @@ Using AI coding assistants is a great way to improve your development workflows.
 
 A few months ago we added an experimental feature to Cody for Visual Studio Code that allows you to have local inference for code completion. This feature uses [Ollama](https://ollama.com/) to run a local LLM model of your choice. Our developer community has been very excited about this feature and we wanted to officially write about it and show you how to use it.
 
+> Note: This feature is experimental and only available to Cody Free and Pro users at this time.
+
 ## Ollama - run LLMs locally
 
 [Ollama](https://ollama.com/) is a tool for running large language models (LLMs) locally. Ollama bundles model weights, configurations, and datasets into a unified package managed by a Modelfile.
