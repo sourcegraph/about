@@ -8,8 +8,8 @@ description: "Learn how to use local LLM models to Chat with Cody without an Int
 tags: [blog]
 slug: "local-chat-with-ollama-and-cody"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/og-ollama-cody.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/og-ollama-cody.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/og-local-chat-with-ollama-cody.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/og-local-chat-with-ollama-cody.png
 --- 
 
 A few weeks ago I wrote a [blog post](https://sourcegraph.com/blog/local-code-completion-with-ollama-and-cody) on how you can use Cody's code completion features with local LLM models offline with Ollama. Users loved this feature and so at a recent hackathon our engineering team got together and expanded this functionality to Cody chat as well. Today, let's talk about Cody chat and how you can combine it with Ollama to have a fully offline AI-powered coding experience.
@@ -124,7 +124,7 @@ You can use a tool like [Postman](https://www.postman.com/) to make the request.
 
 ## Local chat with Ollama and Cody
 
-Now that you have Ollama installed and running locally, you can use it with Cody to get local chat with any of the supported models. By default, Cody uses Anthropic's Claude 2 model for chat, but Cody Pro users have unlimited access to additional LLMs including GPT 3.5 Turbo, GPT 4 Turbo, Claude 3 Haiku, Claude 3 Sonnet, **Claude 3 Opus**, and Mixtral 8X7B. Accessing these models requires an Internet connection.
+Now that you have Ollama installed and running locally, you can use it with Cody to get local chat with any of the supported models. By default, Cody uses Anthropic's Claude 2 model for chat, but Cody Pro users have unlimited access to additional LLMs including **GPT 3.5 Turbo**, **GPT 4 Turbo**, **Claude 3 Haiku**, **Claude 3 Sonnet**, **Claude 3 Opus**, and **Mixtral 8X7B**. Accessing these models requires an Internet connection.
 
 You may be asking why you would want to run a local chat model with Cody instead of just making POST requests or building your own UI to interface with the exposed Ollama endpoints. The biggest benefit is that even with local models, you are able to leverage Cody's superior context fetching capabilities to get responses that are tailored to the codebase that you are working in rather than just getting general answers to your questions.
 
