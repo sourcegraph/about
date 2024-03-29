@@ -8,28 +8,37 @@ const TESTIMONIALS = [
         name: 'Joe Previte',
         username: '@jsjoeio',
         url: 'https://twitter.com/jsjoeio',
-        comment: [
-            "I've started using Cody this week and dude, absolute gamechanger",
-            'especially with me onboarding to Haskell at my new job',
-            'literally just gave me the answer, explained it will and it just fixed my error.',
-        ],
+
+        comment: (
+            <>
+                I've started using Cody this week and dude, absolute gamechanger especially with me onboarding to
+                Haskell at my new job literally just gave me the answer, explained it will and it just fixed my error.
+            </>
+        ),
     },
     {
         profileImage: '/cody/testimonial-profile-image2.png',
         name: 'Joshua Coetzer',
         username: 'VS Code marketplace review',
-        comment: [
-            "Absolutely loved using Cody in VSCode for the last few months. It's been a game-changer for me. The way it summarises code blocks and fills in gaps in log statements, error messages, and code comments is incredibly smart.",
-        ],
+        comment: (
+            <>
+                Absolutely loved using Cody in VSCode for the last few months. It's been a game-changer for me. The way
+                it summarises code blocks and fills in gaps in log statements, error messages, and code comments is
+                incredibly smart.
+            </>
+        ),
     },
     {
         profileImage: '/cody/testimonial-profile-image3.png',
         name: 'Reza Shabani',
         username: '@truerezashabani',
         url: 'https://twitter.com/truerezashabani',
-        comment: [
-            'Recently I’ve been super impressed with Cody, and am using it constantly. It’s especially good at answering questions about large repos.',
-        ],
+        comment: (
+            <>
+                Recently I’ve been super impressed with Cody, and am using it constantly. It’s especially good at
+                answering questions about large repos.
+            </>
+        ),
     },
 ]
 
@@ -64,11 +73,7 @@ export const CodyTestimonials: FunctionComponent = () => (
                         </div>
                     </div>
                     <div className="text-lg font-normal leading-[27px] tracking-[-0.25px] text-gray-700">
-                        {testimonial.comment.map(paragraph => (
-                            <p key={paragraph} className="m-0 p-0">
-                                {paragraph}
-                            </p>
-                        ))}
+                        <p className="m-0 p-0">{testimonial.comment}</p>
                     </div>
                 </div>
             ))}
