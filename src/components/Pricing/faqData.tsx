@@ -33,19 +33,17 @@ export const faqData: FAQData = {
             question: 'What’s the difference between the Cody Free, Pro, and Enterprise plans?',
             answer: (
                 <>
-                    <p>Cody Free and Cody Pro are both offered as standalone products.</p>
                     <p>
                         Cody Free is best for individuals working on hobby projects or professional devs trying out AI
                         coding assistants. Usage limits apply.
                     </p>
                     <p>
                         Cody Pro is best for professional developers who want unlimited usage and context for larger
-                        codebases.
+                        local codebases.
                     </p>
                     <p>
-                        Cody Enterprise is for organizations needing security, scalability, and control. It is coming
-                        soon for everyone, but is currently available for existing Code Search customers (
-                        <ContactLink /> if you'd like to learn more).
+                        Cody Enterprise is for organizations needing security, scalability, and control. It uses the 
+                        Sourcegraph platform to provide context of an organization's remote codebase to Cody.
                     </p>
                 </>
             ),
