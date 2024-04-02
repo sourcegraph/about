@@ -4,12 +4,12 @@ import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
+import { useFeatureFlagVariantKey } from 'posthog-js/react'
+
 import { ContentSection, Layout, InfiniteCarousel, Heading } from '../components'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
-
-import { useFeatureFlagVariantKey } from 'posthog-js/react'
 
 export const carouselImages = [
     { src: '/home/carousel/1password-logo.svg', className: 'w-[190px] h-[37px] mx-6' },
