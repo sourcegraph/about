@@ -9,6 +9,8 @@ import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
 
+import { useFeatureFlagVariantKey } from 'posthog-js/react'
+
 export const carouselImages = [
     { src: '/home/carousel/1password-logo.svg', className: 'w-[190px] h-[37px] mx-6' },
     { src: '/home/carousel/reddit-logo.svg', className: 'w-[120px] h-[41.311px] mx-6' },
@@ -362,6 +364,8 @@ const HomeHero: FunctionComponent = () => {
 
     const { openModal } = useAuthModal()
 
+    const variant = useFeatureFlagVariantKey('grok-test')
+
     const handleOpenModal = (): void => openModal('home')
     return (
         <ContentSection className="flex items-center justify-center" parentClassName="!py-0">
@@ -371,7 +375,7 @@ const HomeHero: FunctionComponent = () => {
                         size="h1"
                         className="mb-8 w-full text-center !text-[48px] text-white md:mb-6 md:!text-[62px] lg:leading-[65px] lg:-tracking-[0.62px]"
                     >
-                        Grok and write code blazingly fast
+                        {variant == 'control' ? "Grok" : "Understand"} and write code blazingly fast
                     </Heading>
                     <p className="mb-10 text-2xl font-normal leading-[30px] -tracking-[0.25px] text-[#FFFFFF99] md:mb-8">
                         Sourcegraph allows developers to rapidly search, write, and understand code by bringing insights
