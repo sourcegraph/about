@@ -28,7 +28,7 @@ We’re rolling out Claude 3 to even more users! Claude 3 Sonnet is now the defa
 
 ### Reduced frequency of “Unfortunately….” responses in chat for Cody Enterprise 
 
-We saw an increasing number of Cody chat responses starting with “Unfortunately…”, and we were able to tie that behavior back to Claude 2.1’s more conservative approach to answering questions. We’ve switched the default model for Cody Enterprise users to Claude 2.0 to counteract this. Impacted users should see a drastically reduced rate of “Unfortunately…” responses in chat going forward.
+We saw an increasing number of Cody chat responses starting with “Unfortunately…”, and we were able to tie that behavior back to Claude 2.1’s [more conservative approach](https://www.anthropic.com/news/claude-2-1-prompting) to answering questions. We’ve switched the default model for Cody Enterprise users to Claude 2.0 to counteract this. Impacted users should see a drastically reduced rate of “Unfortunately…” responses in chat going forward.
 
 This change will impact Cody Enterprise users who are running Sourcegraph Cloud and don’t have a model explicitly selected. We’ll also be releasing the option to use Claude 3 models to Enterprise users in an upcoming release.
 
@@ -37,7 +37,7 @@ This change will impact Cody Enterprise users who are running Sourcegraph Cloud 
 
 ### Include larger files with line ranges
 
-Large files couldn’t be added to query context (using @-mention) previously. Now you can add ranges of large files to your context by @-mentioning a large file and appending a number range to the filename (e.g. @filepath/filename:1-10)
+Files that cause Cody’s context window to exceed our token limit couldn’t be added at all to query context (using @-mention) previously. Now you can specify line ranges by @-mentioning a file and appending a number range to the filename (e.g. @filepath/filename:1-10).  This should allow more flexibility for customizing Cody’s context, even when the full file exceeds the token limits.
 
 
 ### @-mention file lookups are now faster
@@ -47,7 +47,7 @@ When you @-mention files to add them to Cody’s context window, the file lookup
 
 ### Cody now tracks @-mentioned files against the max context window
 
-As you @-mention files, Cody will now track the number of characters in those files against the context window limit of the selected chat model. As you @-mention multiple files, Cody will calculate how many tokens of the context window are remaining. As the remaining context window shrinks, you’ll eventually see “File too large” errors when trying to @-mention more files.
+As you @-mention files, Cody will now track the number of characters in those files against the context window limit of our system. As you @-mention multiple files, Cody will calculate how many tokens of the context window are remaining. As the remaining context window shrinks, you’ll eventually see “File too large” errors when trying to @-mention more files.  Over the coming weeks we expect to drastically increase the available context window, stay tuned!
 
 
 ### Improved context quality for JS, TS, Python, and Go
