@@ -39,11 +39,26 @@ This change will impact Cody Enterprise users who are running Sourcegraph Cloud 
 
 Files that cause Cody’s context window to exceed our token limit couldn’t be added at all to query context (using @-mention) previously. Now you can specify line ranges by @-mentioning a file and appending a number range to the filename (e.g. @filepath/filename:1-10).  This should allow more flexibility for customizing Cody’s context, even when the full file exceeds the token limits.
 
+<Video 
+  source={{
+    mp4: 'blog/cody-vscode-1-12-release/track-at-mentioned-files-context-window-stream-go'
+  }}
+  loop={true}
+  title="Add line ranges of large files to context"
+/>
+
 
 ### @-mention file lookups are now faster
 
 When you @-mention files to add them to Cody’s context window, the file lookup now respects `files.exclude`, `search.exclude`, and `.gitgnore` files. The file search is now much faster too (going from >1 second to &lt;100ms in our tests).
 
+<Video 
+  source={{
+    mp4: 'blog/cody-vscode-1-12-release/at-mentions-file-lookups-faster-gitignore'
+  }}
+  loop={true}
+  title="Faster @-file lookup"
+/>
 
 ### Cody now tracks @-mentioned files against the max context window
 
@@ -59,12 +74,12 @@ This small change should lead to a noticeable improvement in context quality for
 
 ## Quality of life improvements to the login flow
 
-We’ve removed some of the back-and-forth steps required to log in to Cody in your IDE. Previously, logging in required several hops between the IDE and the browser and back, and this process is now much faster and simpler when logging in.
+We removed some of the back-and-forth steps required to log in to Cody in your IDE. Logging in used to take several hops between the IDE and the browser and back, and this process is now much faster and simpler when logging in.
 
 
 ## Support forum
 
-This week, we have made our support forum on Discord read-only, meaning you can no longer ask support-related questions there. Instead, we have launched a new [support forum](https://community.sourcegraph.com/) that provides better tools to help answer your questions more quickly. Please note that Discord is not going away; it will still be available for chatting with other community members. 🙂
+We made our support forum on Discord read-only this week, meaning you can no longer ask support-related questions there. Instead, we have launched a new [support forum](https://community.sourcegraph.com/) that provides better tools to help answer your questions more quickly. Please note that Discord is not going away; it will still be available for chatting with other community members. 🙂
 
 If you have a Pro or Enterprise account, we encourage you to email [support@sourcegraph.com](mailto:support@sourcegraph.com) with any issues related to your account, especially billing or other sensitive account information.
 
@@ -84,5 +99,3 @@ As always, we value your feedback in our [support forum](https://community.sourc
 ---
 
 **To get started with Cody [install it from the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai)**
-
-To get started with Cody, [install it from the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai).
