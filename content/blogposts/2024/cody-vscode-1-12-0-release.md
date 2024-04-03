@@ -6,7 +6,7 @@ authors:
   - name: Justin Dorfman
     url: https://handbook.sourcegraph.com/team/#justin-dorfman
 publishDate: 2024-04-03T10:00-01:00
-description: "Cody for VS Code v1.12.0 is now available. This release brings Claude 3 Sonnet to Cody Free users as the new default model plus several improvements to context handling."
+description: "Cody for VS Code v1.12.0 is now available. This release brings Claude 3 Sonnet to Cody Free users as the new default model plus several improvements for context handling."
 tags: [blog]
 slug: "cody-vscode-1-12-0-release"
 published: true
@@ -14,7 +14,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.12.0-og-image.png
 --- 
 
-[Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v1.12.0 is now available! This release includes a number of improvements focused on context handling, particularly around large files. It also includes model upgrades to improve the chat experience for both Free and Enterprise users, including Claude 3 Sonnet becoming the new default model for all Free users.
+[Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v1.12.0 is now available! This release includes several improvements focused on context handling, particularly around large files. It also includes model upgrades to improve the chat experience for both Free and Enterprise users, including Claude 3 Sonnet becoming the new default model for all Free users.
 
 
 ## Model upgrades and chat improvements
@@ -28,9 +28,9 @@ We’re rolling out Claude 3 to even more users! Claude 3 Sonnet is now the defa
 
 ### Reduced frequency of “Unfortunately….” responses in chat for Cody Enterprise 
 
-We saw an increasing number of Cody chat responses starting with “Unfortunately…”, and we were able to tie that behavior back to Claude 2.1’s [more conservative approach](https://www.anthropic.com/news/claude-2-1-prompting) to answering questions. We’ve switched the default model for Cody Enterprise users to Claude 2.0 to counteract this. Impacted users should see a drastically reduced rate of “Unfortunately…” responses in chat going forward.
+We saw an increasing number of Cody chat responses starting with “Unfortunately…” and we were able to tie that behavior back to Claude 2.1’s [more conservative approach](https://www.anthropic.com/news/claude-2-1-prompting) to answering questions. We’ve switched the default model for Cody Enterprise users to Claude 2.0 to counteract this. Impacted users should see a drastically reduced rate of “Unfortunately…” responses in chat going forward.
 
-This change will impact Cody Enterprise users who are running Sourcegraph Cloud and don’t have a model explicitly selected. We’ll also be releasing the option to use Claude 3 models to Enterprise users in an upcoming release.
+This change will impact Cody Enterprise users who are running Sourcegraph Cloud and don’t have a model explicitly selected. We’ll also add the option to use Claude 3 models in Cody Enterprise in an upcoming release.
 
 
 ## Improvements to context handling
@@ -52,9 +52,9 @@ As you @-mention files, Cody will now track the number of characters in those fi
 
 ### Improved context quality for JS, TS, Python, and Go
 
-Cody will now more intelligently select context used for chat and inline edit functions in JavaScript, TypeScript, Python, and Go. Cody will look at the cursor position and select context based on the syntax of the surrounding code instead of the indentation of the surrounding code.
+Cody will now more intelligently select context used for chat and inline edit functions in JavaScript, TypeScript, Python, and Go. Cody will look at the cursor position and select context based on the surrounding code's syntax instead of the surrounding code's indentation.
 
-This small change should lead to a noticeable improvement in context quality for certain scenarios, in particular for inline edits. One example where you can see this is in JavaScript tests. If you run an inline edit for an `it` block, Cody would previously expand to select the entire `describe` block. This bug is fixed using syntactic context selection.
+This small change should lead to a noticeable improvement in context quality for some scenarios, particularly for inline edits. One example of this is in JavaScript tests. If you run an inline edit for an `it` block, Cody would previously expand to select the entire `describe` block. This bug is fixed using syntactic context selection.
 
 
 ## Quality of life improvements to the login flow
@@ -64,9 +64,9 @@ We’ve removed some of the back-and-forth steps required to log in to Cody in y
 
 ## Support forum
 
-This week, we have made our support forum on Discord read-only, meaning that you can no longer ask support-related questions there. Instead, we have launched a new [support forum](https://community.sourcegraph.com/) that provides better tools to help answer your questions more quickly. Please note that Discord is not going away; it will still be available for chatting with other community members. 🙂
+This week, we have made our support forum on Discord read-only, meaning you can no longer ask support-related questions there. Instead, we have launched a new [support forum](https://community.sourcegraph.com/) that provides better tools to help answer your questions more quickly. Please note that Discord is not going away; it will still be available for chatting with other community members. 🙂
 
-If you have a Pro or Enterprise account we encourage you to email [support@sourcegraph.com](mailto:support@sourcegraph.com) for any issues related to your account, especially billing or other sensitive account information.
+If you have a Pro or Enterprise account, we encourage you to email [support@sourcegraph.com](mailto:support@sourcegraph.com) with any issues related to your account, especially billing or other sensitive account information.
 
 
 ## Changelog
