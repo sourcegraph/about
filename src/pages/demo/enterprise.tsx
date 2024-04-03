@@ -2,13 +2,12 @@ import { FunctionComponent, useEffect, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 
-import { Heading, HubSpotForm, Layout } from '../../components'
+import { ContentSection, Heading, HubSpotForm, Layout } from '../../components'
 import { ContactUsCta } from '../../components/cta/ContactUsCta'
 import { RequestDemoCta } from '../../components/cta/RequestDemoCta'
 import { ChooseYourLlmSection } from '../../components/Enterprise/ChooseYourLlmSection'
 import { CompanyUsingCodySection } from '../../components/Enterprise/CompanyUsingCodySection'
 import { EnterpriseGradeSection } from '../../components/Enterprise/EnterpriseGradeSection'
-import { ImprovedVelocitySection } from '../../components/Enterprise/ImprovedVelocitySection'
 import { MigrationsSection } from '../../components/Enterprise/MigrationsSection'
 import { NineCaseStudySection } from '../../components/Enterprise/NineCaseStudySection'
 import { NutanixCaseStudySection } from '../../components/Enterprise/NutanixCaseStudySection'
@@ -42,7 +41,7 @@ const Enterprise: FunctionComponent = () => {
                 <div className="w-full" ref={formContainerRef}>
                     <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-6 px-2 pt-[112px] md:flex-row md:px-6">
                         <div className="flex w-full flex-1 flex-col gap-6">
-                            <Heading size="h1">Modern enterprises are powered by productive developers</Heading>
+                            <h1 className="md:text-6xl">Modern enterprises are powered by productive developers</h1>
                             <Heading size="h3">
                                 Give your teams the ability to search, write, and understand massive codebases through
                                 Sourcegraph's universal and secure Code Intelligence Platform.{' '}
@@ -81,7 +80,33 @@ const Enterprise: FunctionComponent = () => {
             }
         >
             <CompanyUsingCodySection />
-            <ImprovedVelocitySection />
+
+            {/* This is the ImprovedVelocitySection from the Enterprise page, edited to not include the product iconography */}
+            <ContentSection
+                className="relative z-10 flex max-w-[1232px] flex-col gap-6 md:flex-row"
+                parentClassName="!md:px-[80px] !py-0"
+            >
+                <div className="flex h-[533px] flex-col justify-between px-0 py-16 md:px-10">
+                    <div className="flex flex-col gap-4">
+                        <Heading size="h2" className="!tracking-[-1px] text-black">
+                            Improve velocity with faster code discovery and understanding
+                        </Heading>
+                        <p className="mb-0 text-lg leading-[27px] tracking-[-0.25px]">
+                            Developers can find, navigate, and share code across entire codebases in seconds, increasing
+                            development velocity and reducing time spent searching for answers.
+                        </p>
+                    </div>
+                </div>
+                <div className="h-auto rounded-2xl border-1 border-gray-200 bg-white px-6 py-16  md:max-w-[574px] md:px-20">
+                    <p className="mb-0 leading-6 tracking-[-0.25px] text-gray-700">Satish Surapaneni</p>
+                    <p className="mb-0 text-sm leading-[19.88px]">Senior Engineering Manager, F5</p>
+                    <p className="mb-0 pt-3 text-[35px] font-normal leading-[43.75px] -tracking-[2px]">
+                        "We are developing software faster than ever, with aggressive schedules, and across boundaries. Things
+                        that used to be worked out in a closed room now need to be done while teams are spread out across the
+                        globe.”
+                    </p>
+                </div>
+            </ContentSection>
             <WriteCodeFasterSection />
             <MigrationsSection />
             <TrackVulnerabilitiesSection />
