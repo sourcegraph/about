@@ -45,6 +45,7 @@ export {
 export { AuthenticateModalContent } from './AuthenticateModalContent'
 export { ExternalsAuth } from './cta/ExternalsAuth'
 export { EmailAuth } from './cta/EmailAuth'
+export { IdeModalContent } from './IdeModalContent'
 
 // Carousels
 export { CustomCarousel, TabCarousel, QuoteCarousel, VideoCarousel, InfiniteCarousel } from './Carousels'
