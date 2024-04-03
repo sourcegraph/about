@@ -18,8 +18,8 @@ export const ImprovedVelocitySection: FunctionComponent = () => (
                     development velocity and reducing time spent searching for answers.
                 </p>
             </div>
-            <div className="flex flex-row justify-center gap-7">
-                <img className="" src="/enterprise/cody-search.svg" alt="Cody and Code Search Product logo" />
+            <div className="flex justify-center">
+                <img src="/enterprise/cody-search.svg" alt="Cody and Code Search Product logo" />
             </div>
         </div>
         <div className="h-auto rounded-2xl border-1 border-gray-200 bg-white px-6 py-16  md:max-w-[574px] md:px-20">

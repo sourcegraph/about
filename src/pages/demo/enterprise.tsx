@@ -1,6 +1,5 @@
 import { FunctionComponent, useEffect, useRef, useState } from 'react'
 
-import { DotLottiePlayer } from '@dotlottie/react-player'
 import classNames from 'classnames'
 
 import { Heading, HubSpotForm, Layout } from '../../components'
@@ -19,30 +18,17 @@ import { SecurityFeatureSection } from '../../components/Enterprise/SecurityFeat
 import { TrackVulnerabilitiesSection } from '../../components/Enterprise/TrackVulnerabilitiesSection'
 import { UniversalSection } from '../../components/Enterprise/UniversalSection'
 import { WriteCodeFasterSection } from '../../components/Enterprise/WriteCodeFasterSection'
-import { breakpoints } from '../../data/breakpoints'
-import { useWindowWidth } from '../../hooks/windowWidth'
 
 const Enterprise: FunctionComponent = () => {
-    const windowWidth = useWindowWidth()
-    const isMobile = windowWidth < breakpoints.md
-
     const formContainerRef = useRef<HTMLDivElement>(null)
-
-    const [videoPlayed, setVideoPlayed] = useState(false)
     const [formSubmitted, setFormSubmitted] = useState(false)
+    const onScrollToForm = (): void => formContainerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
     useEffect(() => {
-        const videoDuration = 3090
-        const transitionTime = 200
-
-        const timeout = setTimeout(() => {
-            setVideoPlayed(true)
-        }, videoDuration - transitionTime)
-
-        return () => clearTimeout(timeout)
-    }, [])
-
-    const onScrollToForm = (): void => formContainerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        if (formSubmitted && formContainerRef.current) {
+            formContainerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+    }, [formSubmitted])
 
     return (
         <Layout
@@ -54,40 +40,23 @@ const Enterprise: FunctionComponent = () => {
             className="bg-gray-50"
             hero={
                 <div className="w-full" ref={formContainerRef}>
-                    {!isMobile && (
-                        <div className="absolute inset-0 top-[48px] z-0 mx-auto h-full max-w-[1280px] transition-opacity duration-1000 ease-in-out">
-                            <DotLottiePlayer
-                                className={`absolute inset-0 top-[30px] z-0 h-full w-full object-cover opacity-${
-                                    videoPlayed ? '0' : '100'
-                                }`}
-                                src="https://lottie.host/07b21a4d-e532-47b7-ab01-7bd8faf4ba33/ORhWKPLwKI.lottie"
-                                background="transparent"
-                                speed={1}
-                                direction={1}
-                                autoplay={true}
-                                loop={false}
-                                renderer="svg"
-                            />
-                            <div
-                                className={`absolute inset-0 top-[30px] z-0 h-full w-full bg-contain bg-center bg-no-repeat opacity-${
-                                    videoPlayed ? '100' : '0'
-                                }`}
-                                // eslint-disable-next-line react/forbid-dom-props
-                                style={{ backgroundImage: "url('../enterprise/Enterprise-hero-still.png')" }}
-                            />
-                        </div>
-                    )}
-
-                    <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-6 px-2 pt-[112px] md:px-6 lg:flex-row">
-                        <div className="flex flex-1 flex-col gap-6">
+                    <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-6 px-2 pt-[112px] md:flex-row md:px-6">
+                        <div className="flex w-full flex-1 flex-col gap-6">
                             <Heading size="h1">Modern enterprises are powered by productive developers</Heading>
                             <Heading size="h3">
                                 Give your teams the ability to search, write, and understand massive codebases through
                                 Sourcegraph's universal and secure Code Intelligence Platform.{' '}
                             </Heading>
+                            {!formSubmitted && (
+                                <img
+                                    className="hidden md:block"
+                                    src="/enterprise/cody-search.svg"
+                                    alt="Cody and Code Search Product logo"
+                                />
+                            )}
                         </div>
 
-                        <div className="w-full lg:w-[631px]">
+                        <div className="w-full md:w-1/2">
                             <div className="relative z-10 order-1 rounded-2xl border-1 border-gray-200 bg-white pt-6 pb-0 pl-6 pr-[1px] md:order-2 md:pt-12 md:pb-[13px] md:pl-16 md:pr-[30px]">
                                 <h2 className="mb-6 text-gray-700">Contact us for a demo</h2>
                                 <h3 className="text-[18px] font-normal text-gray-500 lg:w-[95%]">
