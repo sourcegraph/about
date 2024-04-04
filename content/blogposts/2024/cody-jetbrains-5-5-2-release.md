@@ -30,7 +30,7 @@ According to Anthropic, Sonnet is as intelligent as Claude 2.0 while being rough
 
 You can now export your chat history from your JetBrains IDE, letting you save or share prompts you’ve used in the past.
 
-You can do this from the Chat History panel. Select a chat log, then right-click -> `Export Chat As JSON`.
+You can do this from the Chat History panel. Select a chat log, then right-click -> `Export Chat As JSON`. Alternatively, hit `Export All Chats As JSON` at the bottom of the panel.
 
 <Video 
   source={{
