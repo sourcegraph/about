@@ -11,11 +11,13 @@ interface ContactUsCtaProps {
     buttonClassNames?: string
     parentClassNames?: string
     className?: string
+    onClickContactUs?: () => void
 }
 export const ContactUsCta: FunctionComponent<ContactUsCtaProps> = ({
     buttonClassNames,
     parentClassNames,
     className,
+    onClickContactUs,
 }) => (
     <ContentSection
         className={classNames(
@@ -34,16 +36,31 @@ export const ContactUsCta: FunctionComponent<ContactUsCtaProps> = ({
                     buttonClassNames
                 )}
             >
-                <Link
-                    className="btn btn-inverted-primary w-full bg-white sm:w-[140px]  md:w-auto"
-                    href="/contact/request-info"
-                    title="Contact us"
-                    data-button-style={buttonStyle.primary}
-                    data-button-location={buttonLocation}
-                    data-button-type="cta"
-                >
-                    Contact us
-                </Link>
+                {onClickContactUs ? (
+                    <button
+                        className="btn btn-inverted-primary w-full bg-white sm:w-[140px]  md:w-auto"
+                        title="Contact us"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation}
+                        data-button-type="cta"
+                        onClick={onClickContactUs}
+                        type="button"
+                    >
+                        Contact us
+                    </button>
+                ) : (
+                    <Link
+                        className="btn btn-inverted-primary w-full bg-white sm:w-[140px]  md:w-auto"
+                        href="/contact/request-info"
+                        title="Contact us"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation}
+                        data-button-type="cta"
+                    >
+                        Contact us
+                    </Link>
+                )}
+
                 <Link
                     className="btn w-full items-center text-white outline sm:w-[140px]  md:w-auto"
                     href="/pricing"
