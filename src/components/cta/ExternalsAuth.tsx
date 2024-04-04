@@ -30,6 +30,7 @@ interface ExternalsLinkProps {
     icon: ReactNode
     id: string
     link: string
+     openInNewTab?: boolean
 }
 
 const PLAN_PRO = 'pro'
@@ -136,6 +137,7 @@ const ExternalsLink: FunctionComponent<ExternalsLinkProps> = ({
     plan = 'free',
     icon,
     link,
+     openInNewTab
 }) => (
     <Link
         href={plan === PLAN_PRO ? `${link + '?pro=true'}` : `${link}`}
@@ -148,6 +150,7 @@ const ExternalsLink: FunctionComponent<ExternalsLinkProps> = ({
         )}
         onClick={handleOnClick}
         id={id}
+         {...(openInNewTab ? {target: '_blank', rel: 'noopener noreferrer'} : {})}
     >
         {icon}
         {label}
@@ -265,6 +268,7 @@ export const ExternalsAuth: FunctionComponent<ExternalsAuthProps> = ({
                         />
                     }
                     link="https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai"
+                    openInNewTab={true}
                 />
             )
         case 'jetbrains':
@@ -278,6 +282,7 @@ export const ExternalsAuth: FunctionComponent<ExternalsAuthProps> = ({
                     handleOnClick={handleOnClick}
                     icon={<JetBrainsColorIcon className="mr-2 h-[11.62px] w-[11.62px]" />}
                     link="https://plugins.jetbrains.com/plugin/9682-sourcegraph-cody--code-search/edit"
+                    openInNewTab={true}
                 />
             )
         default:

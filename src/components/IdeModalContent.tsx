@@ -31,19 +31,9 @@ export const IdeModalContent: FunctionComponent<Props> = ({ source, plan = 'free
             source={source}
             plan={plan}
         />
-        <p className="mt-8 text-sm text-gray-500 md:pr-2 leading-[19.88px]">
-            By registering, you agree to our{' '}
-            <Link href="/terms" className="text-gray-500 underline underline-offset-[3.5px]">
-                Terms of Service
-            </Link>{' '}
-            and{' '}
-            <Link href="/terms/privacy" className="text-gray-500 underline underline-offset-[3.5px]">
-                Privacy Policy.
-            </Link>
-        </p>
         <p className="mt-8 mb-0 text-sm text-gray-500 leading-[19.88px]">
             Already have an account?{' '}
-            <Link href="https://sourcegraph.com/sign-in" className="text-violet-500 underline underline-offset-[3.5px]">
+            <Link href="https://sourcegraph.com/cody/manage" className="text-violet-500 underline underline-offset-[3.5px]">
                 {' '}
                 Sign in.{' '}
             </Link>
