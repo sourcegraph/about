@@ -18,12 +18,12 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/jetbrains-5.
 
 ## Claude 3 Sonnet is the new default model for Cody Free users
 
-We’re expanding Claude 3 support for Cody Free users! Claude 3 Sonnet is now the default model used for all chats and commands for Cody Free users (in addition to Claude 3 models being available for Cody Pro users).
+We’re expanding Claude 3 support! Claude 3 Sonnet is now the default model used for all chats and commands for Cody Free users (in addition to Claude 3 models being available for Cody Pro users).
 
 According to Anthropic, Sonnet is as intelligent as Claude 2.0 while being roughly twice as fast, and Free users should see those speed improvements when chatting with Cody.
 
 <Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/..."
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/jetbrains-5.5.2/cody-jetbrains-5.5.2-claude-3.png"
 />
 
 ## New chat export functionality
@@ -34,16 +34,15 @@ You can do this from the Chat History panel. Select a chat log, then right-click
 
 <Video 
   source={{
-    mp4: 'blog/jetbrains-5.5.2/cody-jetbrains-5.5.2-export-chat-json.mp4'
+    mp4: 'blog/jetbrains-5.5.2/cody-jetbrains-5.5.2-export-chat-json'
   }}
   loop={true}
-  title=""
-  caption="Exporting chat logs to JSON"
+  title="Exporting chat logs to JSON"
 />
 
 ## Improved autocomplete stability and formatting fixes
 
-We’ve fixed some common bugs with autocomplete, including an issue where Cody would occasionally return [redundant](https://github.com/sourcegraph/jetbrains/issues/1133) or blank completions.
+We’ve fixed some common bugs with autocomplete, including issues where Cody would occasionally return [redundant](https://github.com/sourcegraph/jetbrains/issues/1133) or blank completions.
 
 Autocomplete is now more stable, with consistent suggestion formatting.
 
@@ -65,4 +64,4 @@ As always, we value your feedback in our [support forum](https://community.sourc
 
 ---
 
-To get started with Cody, [install it from the JetBrains Marketplace](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat).
+**To get started with Cody, [install it from the JetBrains Marketplace](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat).**
