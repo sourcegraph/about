@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import { GetStaticProps } from 'next'
+import Link from 'next/link'
 import { FaDiscord, FaGithub } from 'react-icons/fa'
 
 import { ContentSection, Layout, Tabs, Heading } from '../components'
@@ -204,6 +205,71 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
                                 Apply to be a guest author.
                             </a>
                         </p>
+                    </div>
+                </div>
+            </ContentSection>
+            <ContentSection parentClassName="!pt-[10px] !pb-0" className="px-6">
+                <div className="flex flex-col justify-start pb-8 md:py-24 md:flex-row md:justify-between">
+                    <div className="flex flex-col md:w-1/2">
+                        <Heading size="h2" className="pb-sm !leading-[40px] !tracking-[-1px] text-gray-700">
+                            Supporting open source
+                        </Heading>
+                        <p className="mb-0 max-w-[534px] font-sans text-lg tracking-[-0.25px] text-gray-700">
+                            At Sourcegraph, we are committed to supporting the open source projects that form the
+                            backbone of our products. We actively contribute to various funding platforms, including
+                            thanks.dev, Open Collective, Stackaid, GitHub Sponsors, and more, to ensure the
+                            sustainability of these critical projects.
+                        </p>
+                    </div>
+                    <div className="mt-lg flex flex-col gap-sm md:mt-0 md:px-4xl">
+                        <div className="flex w-full flex-wrap justify-start gap-lg md:justify-center">
+                            <Link href="https://github.com/orgs/sourcegraph-community/sponsoring"  target="_blank" rel="noopener">
+                                <img
+                                    src="/community/github-sponsors-mona.svg"
+                                    className="h-[97px] w-[81px]"
+                                    alt="GitHub Sponsors link"
+                                />
+                            </Link>
+                            <Link href="https://www.stackaid.us/github/sourcegraph" className="self-center" target="_blank" rel="noopener">
+                                <img
+                                    src="/community/stackaid_dark_light.svg"
+                                    className="h-[31px] w-[223px]"
+                                    alt="StackAid link"
+                                />
+                            </Link>
+                        </div>
+                        <div className="flex w-full flex-wrap items-center justify-start gap-lg md:justify-center">
+                            <Link href="https://opencollective.com/sourcegraph" target="_blank" rel="noopener">
+                                <img
+                                    src="/community/opencollective-ar21.svg"
+                                    className="h-[58px] w-[252px]"
+                                    alt="Open collective link"
+                                />
+                            </Link>
+                            <Link href="https://fossfunders.com/" target="_blank" rel="noopener">
+                                <img
+                                    src="/community/foss-funders.svg"
+                                    className="h-[87px] w-[123px]"
+                                    alt="Foss funders link"
+                                />
+                            </Link>
+                        </div>
+                        <div className="flex w-full flex-row flex-wrap justify-start gap-lg md:justify-center">
+                            <Link href="https://codemirror.net/" target="_blank" rel="noopener">
+                                <img
+                                    src="/community/code-mirror.svg"
+                                    className="h-[87px] w-[87px]"
+                                    alt="Code mirror link"
+                                />
+                            </Link>
+                            <Link href="https://thanks.dev/d/gh/sourcegraph/dependencies" className="self-center" target="_blank" rel="noopener">
+                                <img
+                                    src="/community/thanks-dev.svg"
+                                    className="h-[36px] w-[197px]"
+                                    alt="Thanks dev link"
+                                />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </ContentSection>
