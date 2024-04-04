@@ -5,6 +5,8 @@ authors:
     url: https://handbook.sourcegraph.com/team/#alex-isken
   - name: Justin Dorfman
     url: https://handbook.sourcegraph.com/team/#justin-dorfman
+  - name: Chris Sev
+    url: https://x.com/chris__sev
 publishDate: 2024-04-03T10:00-01:00
 description: "Cody for VS Code v1.12.0 is now available. This release brings Claude 3 Sonnet to Cody Free users as the new default model plus several improvements for context handling."
 tags: [blog]
@@ -16,6 +18,10 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 
 [Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v1.12.0 is now available! This release includes several improvements focused on context handling, particularly around large files. It also includes model upgrades to improve the chat experience for both Free and Enterprise users, including Claude 3 Sonnet becoming the new default model for all Free users.
 
+<YouTube
+  id="TcJMMvCVrn4"
+  showTitle={true}
+/>
 
 ## Model upgrades and chat improvements
 
