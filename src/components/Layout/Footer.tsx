@@ -72,6 +72,10 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
                 name: 'Community',
                 href: '/community',
             },
+            {
+                name: 'Support forum',
+                href: 'https://community.sourcegraph.com',
+            },
         ],
     },
     {
