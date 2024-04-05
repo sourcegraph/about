@@ -11,10 +11,10 @@ changelogItems:
   - description: "Users can now view the commit history at the folder level when browsing."
     url:
     category: Search
-  - description: "Sourcegraph Own has been renamed "code ownership". This change does not impact the feature in any way."
+  - description: "Sourcegraph Own has been renamed 'code ownership'. This change does not impact the feature in any way."
     url:
     category: Search
-  - description: "The "Commits" button in the repository and folder pages links to commits in the current revision instead of in the default branch."
+  - description: "The 'Commits' button in the repository and folder pages links to commits in the current revision instead of in the default branch."
     url:
     category: Search
   - description: "Code Monitors now properly ignore monitors associated with soft-deleted users, which previously would have led to an error on the overview page."
