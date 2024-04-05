@@ -5,8 +5,8 @@ description: "The latest Sourcegraph release includes support for Claude 3 model
 tags: [blog, release]
 slug: "release/April-2024"
 published: true
-heroImage: 
-socialImage: 
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/5.3.9104-april-2024/sourcegraph-5-3-9104-release-image.png 
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/5.3.9104-april-2024/sourcegraph-5-3-9104-release-image.png
 changelogItems:
   - description: "Users can now view the commit history at the folder level when browsing."
     url:
