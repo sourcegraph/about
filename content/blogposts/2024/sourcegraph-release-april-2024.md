@@ -17,20 +17,24 @@ changelogItems:
   - description: "The 'Commits' button in the repository and folder pages links to commits in the current revision instead of in the default branch."
     url:
     category: Search
-  - description: "Code Monitors now properly ignore monitors associated with soft-deleted users, which previously would have led to an error on the overview page."
-    url:
-    category: Code Monitors
   - description: "Search Jobs now supports diff, commit, and path searches. Before, only file searches were supported."
     url:
     category: Search
   - description: "Expanded support for more accurate language detection. Historically, Search relied on the filename to determine the programming language of the file, but now, it includes file contents as well."
     url:
     category: Search
+  - description: "Code Monitors now properly ignore monitors associated with soft-deleted users, which previously would have led to an error on the overview page."
+    url:
+    category: Code Monitors
 
 
 ---
 
-<Badge text="Cody" color="violet" size="small" />
+<br/>
+
+### Claude 3 is now available
+
+<br/>
 
 In Sourcegraph 5.3.9104, Claude 3 is now available as an LLM option for chat and autocomplete for Cody Enterprise, bringing Anthropic’s latest models - Haiku, Sonnet, and Opus - to Enterprise users. Sonnet is a [twofold improvement](https://www.anthropic.com/news/claude-3-family) in speed while remaining just as accurate. Meanwhile, Opus is the most intelligent model from Anthropic yet and has notable improvements in the Needle-In-A-Haystack scoring model, accurately recalling specific context from a large amount of context passed to the model. This translates to more accuracy for Cody when [working with context](https://sourcegraph.com/blog/how-cody-understands-your-codebase) and will enable us to increase the context window for users in the near future.
 
