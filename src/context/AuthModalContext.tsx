@@ -1,6 +1,6 @@
 import { FunctionComponent, ReactNode, createContext, useContext, useState } from 'react'
 
-import { IdeModalContent, Modal } from '../components'
+import { AuthenticateModalContent, Modal } from '../components'
 import { logAuthPopoverEvent } from '../util'
 
 interface AuthModalContextProps {
@@ -40,7 +40,7 @@ export const AuthModalProvider: FunctionComponent<{ children: ReactNode }> = ({ 
 
                 {isSignUpModalOpen && (
                     <Modal open={isSignUpModalOpen} handleClose={closeModal}>
-                        <IdeModalContent source={source} plan={plan} />
+                        <AuthenticateModalContent source={source} plan={plan} />
                     </Modal>
                 )}
             </>
