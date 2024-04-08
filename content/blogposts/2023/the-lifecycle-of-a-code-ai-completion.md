@@ -99,7 +99,7 @@ The first learning we had is that there are situations where a user would only e
 
 Multi-line requests run through the same pipeline but have additional logic during post-processing to make sure the response fits well into the existing document. One interesting learning was that if a user is willing to wait longer for a multi-line request, it usually is worth it to increase latency slightly in favor of quality. For our production setup this means we use a more complex language model for multi-line completions than we do for single-line completions.
 
-Because of the language-specific nature of this heuristic, we generally do not support multi-line completions for all languages. However, we’re always happy to extend our list of supported languages and, since Cody is open-source, you can also [contribute and improve the list](https://github.com/sourcegraph/cody/blob/main/vscode/src/completions/language.ts).
+Because of the language-specific nature of this heuristic, we generally do not support multi-line completions for all languages. However, we’re always happy to extend our list of supported languages and, since Cody is open-source, you can also [contribute and improve the list](https://github.com/sourcegraph/cody/blob/ad2443d4b00fb8a3114c2bbe9751b41dd4e45ef7/vscode/src/completions/detect-multiline.ts#L32-L55).
 
 ### Syntactic triggers
 
