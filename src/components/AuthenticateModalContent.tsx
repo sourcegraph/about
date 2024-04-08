@@ -12,7 +12,9 @@ interface Props {
 
 export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, plan = 'free' }) => (
     <div>
-        <Heading size="h4" className="text-lg text-gray-600 font-semibold">Sign up to get free access</Heading>
+        <Heading size="h4" className="text-lg font-semibold text-gray-600">
+            Sign up to get free access
+        </Heading>
         <ExternalsAuth
             authProvider="github"
             label="Continue With GitHub"
@@ -49,7 +51,7 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, pla
         </p>
         <p className="mt-8 mb-0 text-sm text-gray-500">
             Already have an account?{' '}
-            <Link href="https://sourcegraph.com/sign-in" className="text-violet-500">
+            <Link href="https://sourcegraph.com/sign-in?returnTo=/cody/manage" className="text-violet-500">
                 {' '}
                 Sign in.{' '}
             </Link>
