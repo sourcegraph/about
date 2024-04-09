@@ -312,7 +312,7 @@ export const ExternalsAuth: FunctionComponent<ExternalsAuthProps> = ({
           id='jetbrainsButton'
           handleOnClick={handleOnClick}
           icon={<JetBrainsColorIcon className='mr-2 h-[11.62px] w-[11.62px]' />}
-          link='https://plugins.jetbrains.com/plugin/9682-sourcegraph-cody--code-search/edit'
+          link='https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat'
           openInNewTab={true}
         />
       );
