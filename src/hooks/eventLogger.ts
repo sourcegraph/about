@@ -63,6 +63,8 @@ export const useLogAllLinkClicks = (): void => {
 
 export const enum EventName {
     STATIC_VIDEO_PLAYED = 'StaticVideoPlayed',
+    ENROLLMENT = 'Enrollment',
+    INSTALLATION= 'Installation',
     DOWNLOAD_CLICK = 'DownloadApp',
     AUTH_INITIATED = 'AuthInitiated',
     CODE_SNIPPET_COPIED = 'CodeSnippetCopied',
@@ -81,4 +83,5 @@ export const enum EventName {
     JOIN_IDE_WAITLIST = 'JoinIDEWaitlist',
     SEARCH_LEARN_MORE_CTA = 'SearchLearnMoreCTA',
     CODY_LEARN_MORE_CTA = 'CodyLearnMoreCTA',
+
 }
