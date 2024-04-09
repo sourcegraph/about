@@ -13,7 +13,7 @@ interface Props {
 export const IdeModalContent: FunctionComponent<Props> = ({ source, plan = 'free' }) => (
     <div>
         <Heading size="h4" className="text-2xl font-[590px] text-gray-600 leading-[30px] -tracking-[.25px] md:pr-2">
-            Install the Cody extension in your IDE
+            Install the Cody IDE extension
         </Heading>
         <ExternalsAuth
             authProvider="VS Code"
