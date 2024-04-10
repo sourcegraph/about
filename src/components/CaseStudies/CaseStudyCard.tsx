@@ -36,12 +36,6 @@ export const CASESTUDIES: CaseStudy[] = [
         url: '/case-studies/how-sourcegraph-transformed-nine-development-workflow',
     },
     {
-        name: 'HashiCorp',
-        logo: '/external-logos/hashicorp-logo.svg',
-        title: 'HashiCorp streamlines cross-repository code search and fixes with Sourcegraph.',
-        url: '/case-studies/hashicorp-uses-sourcegraph-to-streamline-cross-repository-code-search',
-    },
-    {
         name: 'Nutanix',
         logo: '/external-logos/nutanix-logo.svg',
         title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph.',
