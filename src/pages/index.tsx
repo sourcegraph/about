@@ -3,7 +3,6 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
-import { useFeatureFlagVariantKey } from 'posthog-js/react'
 
 import { ContentSection, Layout, InfiniteCarousel, Heading } from '../components'
 import { useAuthModal } from '../context/AuthModalContext'
