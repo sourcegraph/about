@@ -99,4 +99,4 @@ Claude 3 models are now available to all Cody users:
 
 **For Cody Pro users:** Haiku, Sonnet, and Opus are now available as options for chat and commands. Pro users can find them in the model dropdown selector in the latest extension versions.
 
-**For Cody Enterprise users:** Haiku, Sonnet, and Opus models are now options to use for Cody chat and commands. Sourcegraph instance admins are able to switch to Claude 3 models once they upgrade to the latest Sourcegraph release (5.3.9104). [Check out the April release blog for more information](https://sourcegraph.com/blog/release/April-2024).
+**For Cody Enterprise users:** Haiku, Sonnet, and Opus models are now options to use for Cody chat and commands. Sourcegraph instance admins can switch to Claude 3 models once they upgrade to the latest Sourcegraph release (5.3.9104). [Check out the April release blog for more information](https://sourcegraph.com/blog/release/April-2024).
