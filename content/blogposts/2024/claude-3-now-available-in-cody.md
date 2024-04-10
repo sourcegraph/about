@@ -95,8 +95,8 @@ You can also [check out our recent video from Chris Sev](https://www.youtube.com
 
 Claude 3 models are now available to all Cody users:
 
-**For Claude Free users:** Sonnet is now the default model powering chat and commands for Free users, replacing Claude 2.0. This change was made in the latest VS Code and JetBrains extension versions ([VS Code v1.12.0](https://sourcegraph.com/blog/cody-vscode-1-12-0-release) and [JetBrains v5.5.2](https://sourcegraph.com/blog/cody-jetbrains-5-5-2-release)).
+**For Claude Free users:** Sonnet is now the default model powering chat and commands, replacing Claude 2.0. This change was made in the latest VS Code and JetBrains extension versions ([VS Code v1.12.0](https://sourcegraph.com/blog/cody-vscode-1-12-0-release) and [JetBrains v5.5.2](https://sourcegraph.com/blog/cody-jetbrains-5-5-2-release)).
 
 **For Cody Pro users:** Haiku, Sonnet, and Opus are now available as options for chat and commands. Pro users can find them in the model dropdown selector in the latest extension versions.
 
-**For Cody Enterprise users:** Haiku, Sonnet, and Opus models are now options to use for Cody chat and commands. Sourcegraph instance admins can switch to Claude 3 models once they upgrade to the latest Sourcegraph release (5.3.9104). [Check out the April release blog for more information](https://sourcegraph.com/blog/release/April-2024).
+**For Cody Enterprise users:** Haiku, Sonnet, and Opus are now available as options for chat and commands. Sourcegraph instance admins can switch to Claude 3 models once they upgrade to the latest Sourcegraph release (5.3.9104). [Check out the April release blog for more information](https://sourcegraph.com/blog/release/April-2024).
