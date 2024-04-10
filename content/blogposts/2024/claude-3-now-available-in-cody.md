@@ -63,7 +63,7 @@ Here, you can see how Claude 3 Opus does a great job explaining code concepts. C
 
 **Example 2: Explaining a coding concept (Axum)**
 
-We can also compare Claude 3 Opus with GPT-4 Turbo. We asked both models to explain another concept: creating a route in Axum. Both models provided a code block, but Claude 3 Opus did a distinctly better job explaining the code step-by-step.
+We can also compare Claude 3 Opus with GPT-4 Turbo. We asked both models to explain another concept: creating a route with Axum. Both models provided a code block, but Claude 3 Opus did a distinctly better job explaining the code step-by-step.
 
 <Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/claude-3-now-available-in-cody/axum-explanation.png"
