@@ -45,8 +45,7 @@ const About: FunctionComponent = () => (
             <ContentSection>
                 <h1>About Sourcegraph</h1>
                 <p className="mt-6 max-w-4xl text-xl">
-                    Sourcegraph builds universal code search for every developer and company so they can innovate
-                    faster. We help developers and companies with billions of lines of code create the software you use
+                Sourcegraph is a code intelligence platform that allows developers to rapidly search, write, and understand code by bringing insights from their entire codebase right into their editor. We help developers and companies with billions of lines of code create the software you use
                     every day.
                 </p>
             </ContentSection>
