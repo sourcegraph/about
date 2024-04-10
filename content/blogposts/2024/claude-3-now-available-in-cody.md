@@ -79,11 +79,13 @@ Let’s also look at an example in the IDE. Here, we asked Cody to explain how a
 <Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/claude-3-now-available-in-cody/claude-2.1-auth.png"
   alt="Claude 2.1 explaining code"
+  caption="Claude 2.1 explaining code"
 />
 
 <Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/claude-3-now-available-in-cody/claude-3-auth.png"
   alt="Claude 3 explaining code"
+  caption="Claude 3 Opus explaining code"
 />
 
 You can also [check out our recent video from Chris Sev](https://www.youtube.com/watch?v=hDSaeVFmglM) for more examples of Claude 3 + Cody.
