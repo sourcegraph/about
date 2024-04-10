@@ -43,7 +43,7 @@ export {
 } from './cody/cody-illustrations'
 
 export { AuthenticateModalContent } from './AuthenticateModalContent'
-export { ExternalsAuth } from './cta/ExternalsAuth'
+export { ExternalProvider } from './cta/ExternalProvider'
 export { EmailAuth } from './cta/EmailAuth'
 export { IdeModalContent } from './IdeModalContent'
 

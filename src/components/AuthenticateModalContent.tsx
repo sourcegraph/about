@@ -2,7 +2,9 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { ExternalsAuth } from './cta/ExternalsAuth'
+import { GITHUB, GITLAB, GOOGLE } from '../pages/constants'
+
+import { ExternalProvider } from './cta/ExternalProvider'
 import { Heading } from './Heading'
 
 interface Props {
@@ -12,25 +14,27 @@ interface Props {
 
 export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, plan = 'free' }) => (
     <div>
-        <Heading size="h4" className="text-lg text-gray-600 font-semibold">Sign up to get free access</Heading>
-        <ExternalsAuth
-            authProvider="github"
+        <Heading size="h4" className="text-lg font-semibold text-gray-600">
+            Sign up to get free access
+        </Heading>
+        <ExternalProvider
+            providerType={GITHUB}
             label="Continue With GitHub"
             dark={false}
             className="mt-8"
             source={source}
             plan={plan}
         />
-        <ExternalsAuth
-            authProvider="gitlab"
+        <ExternalProvider
+            providerType={GITLAB}
             label="Continue With GitLab"
             dark={false}
             className="mt-4"
             source={source}
             plan={plan}
         />
-        <ExternalsAuth
-            authProvider="google"
+        <ExternalProvider
+            providerType={GOOGLE}
             label="Continue With Google"
             dark={false}
             className="mt-4"
@@ -49,7 +53,7 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, pla
         </p>
         <p className="mt-8 mb-0 text-sm text-gray-500">
             Already have an account?{' '}
-            <Link href="https://sourcegraph.com/sign-in" className="text-violet-500">
+            <Link href="https://sourcegraph.com/sign-in?returnTo=/cody/manage" className="text-violet-500">
                 {' '}
                 Sign in.{' '}
             </Link>
