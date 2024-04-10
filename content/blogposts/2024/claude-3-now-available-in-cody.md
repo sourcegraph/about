@@ -45,11 +45,9 @@ Tl;dr: the Claude 3 models are impressive, and they’re now another option that
 
 ### Cody’s performance with Claude 3
 
-We rolled out Claude 3 models to our Cody Pro users in March, and we’ve been collecting feedback since then. So far, we’ve seen extremely encouraging signs pointing to the models’ capability when used with Cody.
+We rolled out Claude 3 models to our Cody Pro users in March, and we’ve been collecting feedback since then. Early feedback has been extremely encouraging, especially around using Claude 3 + Cody for code explanation.
 
-We also recently launched an AI experiment tool called [LLM Litmus Test](https://s0.dev) to help you compare and contrast different models. You can test Claude 3 vs. Claude 2.1 or even Claude 3 vs. GPT-4 Turbo and generate shareable links with your results.
-
-Using the litmus test, we can see some examples of Claude 3 Opus in action.
+We also recently launched an AI experiment tool called [LLM Litmus Test](https://s0.dev) to help you compare and contrast different models. You can test Claude 3 vs. Claude 2.1 or even Claude 3 vs. GPT-4 Turbo and generate shareable links with your results. Using the litmus test, we can see some examples of Claude 3 Opus in action.
 
 
 **Example 1: Explaining a coding concept (React)**
@@ -76,7 +74,7 @@ We can also compare Claude 3 Opus with GPT-4 Turbo. We asked both models to expl
 
 **Example 3: Explaining existing code**
 
-Let’s also look at an example in the IDE. Here, we asked Cody to explain how an authentication component in our codebase works. Claude 2.1 gave a good (if a little truncated) explanation of how the component works, starting with the props the component receives. Claude 3 Opus gave a much more detailed explanation of how the component works, and it structured the information in a way that was easy to follow. It also went into more detail on the props for the component and which of them are optional. 
+Let’s also look at an example in the IDE. Here, we asked Cody to explain how an authentication component in our codebase works. Claude 2.1 gave a good (but slightly simplified) explanation of how the component works, starting with the props the component receives. Claude 3 Opus gave a much more detailed explanation of how the component works, and it structured the information in a way that was easy to follow. It also went into more detail on the props for the component and which of them are optional. 
 
 <Figure 
   src="https://storage.googleapis.com/sourcegraph-assets/blog/claude-3-now-available-in-cody/claude-2.1-auth.png"
