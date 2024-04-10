@@ -6,7 +6,7 @@ authors:
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
   - name: Ado Kukic
-    url: https://twitter.com/adocomplete
+    url: https://twitter.com/ado__dev
   - name: Chris Sev
     url: https://x.com/chris__sev
 tags: [blog]
