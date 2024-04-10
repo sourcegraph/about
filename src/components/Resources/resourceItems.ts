@@ -101,16 +101,6 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'Hashicorp customer story',
-        link: '/case-studies/hashicorp-uses-sourcegraph-to-streamline-cross-repository-code-search',
-        contentType: 'customer story',
-        subjects: ['code search', 'code reuse', 'batch changes'],
-        description: 'Learn how HashiCorp streamlines cross-repository code search and fixes with Sourcegraph.',
-        publishDate: '2022-09-01T17:32:24Z',
-        keyword: ['code search', 'code reuse', 'batch changes', 'Tech debt'],
-    },
-    {
-        featured: false,
         title: 'How DevOps teams can build data driven relationships with their code',
         link: '/guides/devops-data-driven-relationships-with-codebases.pdf',
         contentType: 'guide',
