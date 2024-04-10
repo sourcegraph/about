@@ -45,7 +45,7 @@ Tl;dr: the Claude 3 models are impressive, and they’re now another option that
 
 ### Cody’s performance with Claude 3
 
-We rolled out Claude 3 models to our Cody Pro users in March, and we’ve been collecting feedback since then. Early feedback has been extremely encouraging, especially around using Claude 3 + Cody for code explanation.
+We rolled out Claude 3 models to our Cody Pro users in March, and early feedback has been extremely encouraging. Of Cody Pro users who primarily used GPT-4, over 55% switched their preference to the new Claude 3 models in the month following launch.
 
 We also recently launched an AI experiment tool called [LLM Litmus Test](https://s0.dev) to help you compare and contrast different models. You can test Claude 3 vs. Claude 2.1 or even Claude 3 vs. GPT-4 Turbo and generate shareable links with your results. Using the litmus test, we can see some examples of Claude 3 Opus in action.
 
