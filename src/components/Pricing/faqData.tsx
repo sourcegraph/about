@@ -134,6 +134,18 @@ export const faqData: FAQData = {
                         Bring your own LLM: This is a future feature that will allow customers to bring their own LLM
                         models outside of the ones that Cody supports by default.
                     </p>
+                    <p>
+                        For more information about available LLM options, please{' '}
+                        <Link
+                        href="https://sourcegraph.com/docs/cody/capabilities/supported-models"
+                        title="Sourcegraph Docs"
+                        data-button-style={buttonStyle.text}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
+                        see our docs.
+                    </Link>{' '}
+                    </p>
                 </>
             ),
         },
