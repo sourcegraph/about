@@ -1,6 +1,10 @@
-import { FunctionComponent, ReactNode, createContext, useContext, useState } from 'react'
+import { FunctionComponent, ReactNode, createContext, useContext, useState, useMemo, useCallback } from 'react'
 
-import { AuthenticateModalContent, Modal } from '../components'
+import { useRouter } from 'next/router'
+import { useFeatureFlagVariantKey } from 'posthog-js/react'
+
+import { AuthenticateModalContent, Modal, IdeModalContent } from '../components'
+import { EventName, getEventLogger } from '../hooks/eventLogger'
 import { logAuthPopoverEvent } from '../util'
 
 interface AuthModalContextProps {
@@ -18,29 +22,72 @@ const AuthModalContext = createContext<AuthModalContextProps>({
 export const useAuthModal = (): AuthModalContextProps => useContext(AuthModalContext)
 
 export const AuthModalProvider: FunctionComponent<{ children: ReactNode }> = ({ children }) => {
+    const router = useRouter()
     const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false)
+    const [isControlModalOpen, setIsControlModalOpen] = useState(false)
+
     const [source, setSource] = useState<string>('')
     const [plan, setPlan] = useState<'pro' | 'free' | undefined>('free')
 
-    const openModal = (source: string, plan?: 'pro' | 'free'): void => {
-        setSource(source)
-        setIsSignUpModalOpen(true)
-        logAuthPopoverEvent(source)
-        setPlan(plan ?? 'free')
+    const userFlag = useFeatureFlagVariantKey('install-first')
+
+    const logEvent = (eventArguments: { testName: string; group: string; modal: string }): void => {
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        getEventLogger().log(EventName.ENROLLMENT, eventArguments, eventArguments)
     }
+
+    const displayModal = useCallback((): void => {
+        const eventArguments = {
+            testName: 'AuthInstallModalTest',
+            group: (userFlag as string) ?? '',
+            modal: userFlag === 'control' ? 'signup' : 'installation',
+        }
+        logEvent(eventArguments)
+
+        if (userFlag === 'control') {
+            setIsSignUpModalOpen(true)
+        } else {
+            setIsControlModalOpen(true)
+        }
+    }, [userFlag])
+
+    const openModal = useCallback(
+        (source: string, plan?: 'pro' | 'free') => {
+            setSource(source)
+            if (router.pathname !== '/demo/cody') {
+                displayModal()
+            } else {
+                setIsSignUpModalOpen(true)
+            }
+            logAuthPopoverEvent(source)
+            setPlan(plan ?? 'free')
+        },
+        [displayModal, router.pathname]
+    )
 
     const closeModal = (): void => {
         setIsSignUpModalOpen(false)
+        setIsControlModalOpen(false)
     }
 
+    const authModalContextValue = useMemo(
+        () => ({ isSignUpModalOpen, openModal, closeModal }),
+        [isSignUpModalOpen, openModal]
+    )
+
     return (
-        <AuthModalContext.Provider value={{ isSignUpModalOpen, openModal, closeModal }}>
+        <AuthModalContext.Provider value={authModalContextValue}>
             <>
                 {children}
 
                 {isSignUpModalOpen && (
                     <Modal open={isSignUpModalOpen} handleClose={closeModal}>
                         <AuthenticateModalContent source={source} plan={plan} />
+                    </Modal>
+                )}
+                {isControlModalOpen && (
+                    <Modal open={isControlModalOpen} handleClose={closeModal}>
+                        <IdeModalContent source={source} plan={plan} />
                     </Modal>
                 )}
             </>

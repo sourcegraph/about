@@ -63,6 +63,8 @@ export const useLogAllLinkClicks = (): void => {
 
 export const enum EventName {
     STATIC_VIDEO_PLAYED = 'StaticVideoPlayed',
+    ENROLLMENT = 'ABTestEnrolled',
+    INSTALLATION = 'CodyExtensionInstallInitiated',
     DOWNLOAD_CLICK = 'DownloadApp',
     AUTH_INITIATED = 'AuthInitiated',
     CODE_SNIPPET_COPIED = 'CodeSnippetCopied',

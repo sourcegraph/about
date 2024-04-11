@@ -1,3 +1,6 @@
+import { ProviderType } from '../components/cta/ExternalProvider'
+import { GITHUB, GITLAB, VSCODE, JETBRAINS } from '../pages/constants'
+
 export const copy = async (text: string): Promise<void> => {
     if (navigator.clipboard) {
         await navigator.clipboard.writeText(text)
@@ -99,28 +102,26 @@ interface ButtonTrackerData {
     conversionId: string
 }
 
-export const getAuthButtonsTracker = (
-    provider: 'github' | 'gitlab' | 'google' | 'vscode' | 'jetbrains'
-): ButtonTrackerData => {
-    if (provider === 'github') {
+export const getProviderButtonsTracker = (providerType: ProviderType): ButtonTrackerData => {
+    if (providerType === GITHUB) {
         return {
             buttonId: 'githubButton',
             conversionId: 'IE36JRZchpg6WWkoBm1cNN',
         }
     }
-    if (provider === 'gitlab') {
+    if (providerType === GITLAB) {
         return {
             buttonId: 'gitlabButton',
             conversionId: 'sL3CVtxUlXaAvWjHZb7PTW',
         }
     }
-    if (provider === 'vscode') {
+    if (providerType === VSCODE) {
         return {
             buttonId: 'vscodeButton',
             conversionId: '',
         }
     }
-    if (provider === 'jetbrains') {
+    if (providerType === JETBRAINS) {
         return {
             buttonId: 'jetbrainsButton',
             conversionId: '',

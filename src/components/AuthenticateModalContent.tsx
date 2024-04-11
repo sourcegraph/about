@@ -2,7 +2,9 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { ExternalsAuth } from './cta/ExternalsAuth'
+import { GITHUB, GITLAB, GOOGLE } from '../pages/constants'
+
+import { ExternalProvider } from './cta/ExternalProvider'
 import { Heading } from './Heading'
 
 interface Props {
@@ -15,24 +17,24 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, pla
         <Heading size="h4" className="text-lg font-semibold text-gray-600">
             Sign up to get free access
         </Heading>
-        <ExternalsAuth
-            authProvider="github"
+        <ExternalProvider
+            providerType={GITHUB}
             label="Continue With GitHub"
             dark={false}
             className="mt-8"
             source={source}
             plan={plan}
         />
-        <ExternalsAuth
-            authProvider="gitlab"
+        <ExternalProvider
+            providerType={GITLAB}
             label="Continue With GitLab"
             dark={false}
             className="mt-4"
             source={source}
             plan={plan}
         />
-        <ExternalsAuth
-            authProvider="google"
+        <ExternalProvider
+            providerType={GOOGLE}
             label="Continue With Google"
             dark={false}
             className="mt-4"

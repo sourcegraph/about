@@ -3,9 +3,10 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
+import { GITHUB, GITLAB, GOOGLE } from '../../pages/constants'
 import { Heading } from '../Heading'
 
-import { ExternalsAuth } from './ExternalsAuth'
+import { ExternalProvider } from './ExternalProvider'
 
 export const CallToActionWithCody: FunctionComponent<{ className?: string }> = ({ className }) => (
     <div
@@ -37,21 +38,21 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
                     Cody writes code and answers questions for you, speeding up work and keeping devs in flow.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
-                    <ExternalsAuth
+                    <ExternalProvider
                         className="w-fit flex-1 justify-center !font-normal"
-                        authProvider="github"
+                        providerType={GITHUB}
                         label="GitHub"
                         source="about-home"
                     />
-                    <ExternalsAuth
+                    <ExternalProvider
                         className="w-fit flex-1 justify-center !font-normal"
-                        authProvider="gitlab"
+                        providerType={GITLAB}
                         label="GitLab"
                         source="about-home"
                     />
-                    <ExternalsAuth
+                    <ExternalProvider
                         className="w-fit flex-1 justify-center !font-normal"
-                        authProvider="google"
+                        providerType={GOOGLE}
                         label="Google"
                         source="about-home"
                     />

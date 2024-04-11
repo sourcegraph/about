@@ -6,22 +6,21 @@ import GithubIcon from 'mdi-react/GithubIcon'
 import Link from 'next/link'
 
 import { EventName, getEventLogger } from '../../hooks/eventLogger'
-import { getAuthButtonsTracker } from '../../lib/utils'
+import { getProviderButtonsTracker } from '../../lib/utils'
+import { GITHUB, GITLAB, GOOGLE, VSCODE, JETBRAINS } from '../../pages/constants'
 
-export interface AuthProvider {
-    serviceType: 'github' | 'gitlab' | 'google' | 'vscode' | 'jetbrains'
-}
+export type ProviderType = typeof GITHUB | typeof GITLAB | typeof GOOGLE | typeof VSCODE | typeof JETBRAINS
 
-interface ExternalsAuthProps {
+interface ExternalProviderProps {
     label: string
     source: string
-    authProvider: AuthProvider['serviceType']
+    providerType: ProviderType
     dark?: boolean
     className?: string
     plan?: 'pro' | 'free'
 }
 
-interface ExternalsLinkProps {
+interface ExternalLinkProps {
     label: string
     dark?: boolean
     className?: string
@@ -30,7 +29,7 @@ interface ExternalsLinkProps {
     icon: ReactNode
     id: string
     link: string
-     openInNewTab?: boolean
+    openInNewTab?: boolean
 }
 
 const PLAN_PRO = 'pro'
@@ -128,7 +127,7 @@ const JetBrainsColorIcon: FunctionComponent<PropsWithChildren<{ className?: stri
     </svg>
 )
 
-const ExternalsLink: FunctionComponent<ExternalsLinkProps> = ({
+const ExternalLink: FunctionComponent<ExternalLinkProps> = ({
     label,
     dark,
     id,
@@ -137,7 +136,7 @@ const ExternalsLink: FunctionComponent<ExternalsLinkProps> = ({
     plan = 'free',
     icon,
     link,
-     openInNewTab
+    openInNewTab,
 }) => (
     <Link
         href={plan === PLAN_PRO ? `${link + '?pro=true'}` : `${link}`}
@@ -150,23 +149,33 @@ const ExternalsLink: FunctionComponent<ExternalsLinkProps> = ({
         )}
         onClick={handleOnClick}
         id={id}
-         {...(openInNewTab ? {target: '_blank', rel: 'noopener noreferrer'} : {})}
+        {...(openInNewTab ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
     >
         {icon}
         {label}
     </Link>
 )
-
-export const ExternalsAuth: FunctionComponent<ExternalsAuthProps> = ({
+const logEvent = (
+    eventArguments: {
+        type: string
+        source: string
+        description: string
+    },
+    eventName: string
+): void => {
+    // eslint-disable-next-line @typescript-eslint/no-floating-promises
+    getEventLogger().log(eventName, eventArguments, eventArguments)
+}
+export const ExternalProvider: FunctionComponent<ExternalProviderProps> = ({
     label,
-    authProvider = 'github',
+    providerType = GITHUB,
     source,
     dark,
     className,
     plan = 'free',
 }) => {
     useEffect(() => {
-        const { buttonId, conversionId } = getAuthButtonsTracker(authProvider)
+        const { buttonId, conversionId } = getProviderButtonsTracker(providerType)
         const script = document.createElement('script')
         script.async = true
         script.innerHTML = `
@@ -193,26 +202,29 @@ export const ExternalsAuth: FunctionComponent<ExternalsAuthProps> = ({
         return () => {
             script.remove()
         }
-    }, [authProvider])
+    }, [providerType])
 
     const handleOnClick = (): void => {
         const eventArguments = {
-            type: authProvider,
+            type: providerType,
             source,
             description: '',
         }
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger().log(EventName.AUTH_INITIATED, eventArguments, eventArguments)
-        Cookies.set('cody.survey.show', JSON.stringify(true), {
-            expires: 365,
-            domain: 'sourcegraph.com',
-        })
+        if (providerType === VSCODE || providerType === JETBRAINS) {
+            logEvent(eventArguments, EventName.INSTALLATION)
+        } else {
+            logEvent(eventArguments, EventName.AUTH_INITIATED)
+            Cookies.set('cody.survey.show', JSON.stringify(true), {
+                expires: 365,
+                domain: 'sourcegraph.com',
+            })
+        }
     }
 
-    switch (authProvider) {
-        case 'github':
+    switch (providerType) {
+        case GITHUB:
             return (
-                <ExternalsLink
+                <ExternalLink
                     plan={plan}
                     label={label}
                     dark={dark}
@@ -223,9 +235,9 @@ export const ExternalsAuth: FunctionComponent<ExternalsAuthProps> = ({
                     link="https://sourcegraph.com/.auth/openidconnect/login?prompt_auth=github&pc=sams&&redirect=/get-cody"
                 />
             )
-        case 'gitlab':
+        case GITLAB:
             return (
-                <ExternalsLink
+                <ExternalLink
                     plan={plan}
                     label={label}
                     dark={dark}
@@ -236,9 +248,9 @@ export const ExternalsAuth: FunctionComponent<ExternalsAuthProps> = ({
                     link="https://sourcegraph.com/.auth/openidconnect/login?prompt_auth=gitlab&pc=sams&redirect=/get-cody"
                 />
             )
-        case 'google':
+        case GOOGLE:
             return (
-                <ExternalsLink
+                <ExternalLink
                     plan={plan}
                     label={label}
                     dark={dark}
@@ -249,9 +261,9 @@ export const ExternalsAuth: FunctionComponent<ExternalsAuthProps> = ({
                     link="https://sourcegraph.com/.auth/openidconnect/login?prompt_auth=google&pc=sams&redirect=/get-cody"
                 />
             )
-        case 'vscode':
+        case VSCODE:
             return (
-                <ExternalsLink
+                <ExternalLink
                     plan={plan}
                     label={label}
                     dark={dark}
@@ -271,9 +283,9 @@ export const ExternalsAuth: FunctionComponent<ExternalsAuthProps> = ({
                     openInNewTab={true}
                 />
             )
-        case 'jetbrains':
+        case JETBRAINS:
             return (
-                <ExternalsLink
+                <ExternalLink
                     plan={plan}
                     label={label}
                     dark={dark}
@@ -281,7 +293,7 @@ export const ExternalsAuth: FunctionComponent<ExternalsAuthProps> = ({
                     id="jetbrainsButton"
                     handleOnClick={handleOnClick}
                     icon={<JetBrainsColorIcon className="mr-2 h-[11.62px] w-[11.62px]" />}
-                    link="https://plugins.jetbrains.com/plugin/9682-sourcegraph-cody--code-search/edit"
+                    link="https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat"
                     openInNewTab={true}
                 />
             )
