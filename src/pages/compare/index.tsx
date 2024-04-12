@@ -46,7 +46,7 @@ const ComparePage: FunctionComponent = () => (
                 <h2 className="mb-3 text-3xl">Cody vs GitHub Copilot</h2>
                 <p className="mb-5 text-gray-500">
                     Copilot is an AI code assistant that offers autocomplete, chat, and commands. It has strong
-                    autocomplete performance using the OpenAI Codex model, and it offers in-IDE chat with GPT-4.
+                    autocomplete performance using the OpenAI Codex model, and it offers in-IDE and mobile chat with GPT-4.
                 </p>
                 <Link className="btn btn-primary text-lg" href="/compare/copilot-vs-cody">
                     See full comparison
@@ -80,7 +80,7 @@ const ComparePage: FunctionComponent = () => (
                         Free Plan <MdClose className="h-6 w-6 fill-gray-200" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Personalized responses using codebase context <MdClose className="h-6 w-6 fill-gray-200" />
+                        Personalized responses using codebase context <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
                         Choose your LLM <MdClose className="h-6 w-6 fill-gray-200" />
