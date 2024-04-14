@@ -78,7 +78,7 @@ const LEADERS: {
         name: 'Raman Sharma',
         image: '/staff/raman-sharma.png',
         title: 'Chief Marketing Officer',
-        bio: 'https://handbook.sourcegraph.com/team/',
+        bio: 'https://handbook.sourcegraph.com/team/#raman-sharma',
         github: 'https://github.com/creativefisher',
         linkedin: 'https://www.linkedin.com/in/ramansharma',
         twitter: 'https://twitter.com/rasharm',
