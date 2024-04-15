@@ -40,15 +40,15 @@ export const AuthModalProvider: FunctionComponent<{ children: ReactNode }> = ({ 
     const displayModal = useCallback((): void => {
         const eventArguments = {
             testName: 'AuthInstallModalTest',
-            group: (userFlag as string) ?? '',
-            modal: userFlag === 'control' ? 'signup' : 'installation',
+            group: (userFlag as string) ?? 'undefined',
+            modal: userFlag === 'test' ? 'installation' : 'signup',
         }
         logEvent(eventArguments)
 
-        if (userFlag === 'control') {
-            setIsSignUpModalOpen(true)
-        } else {
+        if (userFlag === 'test') {
             setIsControlModalOpen(true)
+        } else {
+            setIsSignUpModalOpen(true)
         }
     }, [userFlag])
 
