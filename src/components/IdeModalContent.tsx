@@ -10,9 +10,10 @@ import { Heading } from './Heading'
 interface Props {
     source: string
     plan?: 'pro' | 'free'
+    disablePlanParam?: boolean
 }
 
-export const IdeModalContent: FunctionComponent<Props> = ({ source, plan = 'free' }) => (
+export const IdeModalContent: FunctionComponent<Props> = ({ source, plan = 'free',disablePlanParam }) => (
     <div>
         <Heading size="h4" className="font-[590px] text-2xl leading-[30px] -tracking-[.25px] text-gray-600 md:pr-2">
             Install the Cody IDE extension
@@ -24,6 +25,7 @@ export const IdeModalContent: FunctionComponent<Props> = ({ source, plan = 'free
             className="mt-8 !-tracking-[.25px]"
             source={source}
             plan={plan}
+            disablePlanParam={disablePlanParam}
         />
         <ExternalProvider
             providerType={JETBRAINS}

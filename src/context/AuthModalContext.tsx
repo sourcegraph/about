@@ -9,7 +9,7 @@ import { logAuthPopoverEvent } from '../util'
 
 interface AuthModalContextProps {
     isSignUpModalOpen: boolean
-    openModal: (source: string, plan?: 'free' | 'pro') => void
+    openModal: (source: string, plan?: 'free' | 'pro', disablePlanParam?: boolean) => void
     closeModal: () => void
 }
 
@@ -27,6 +27,7 @@ export const AuthModalProvider: FunctionComponent<{ children: ReactNode }> = ({ 
     const [isControlModalOpen, setIsControlModalOpen] = useState(false)
 
     const [source, setSource] = useState<string>('')
+    const [disablePlanParam, setDisablePlanParam] = useState<boolean>(false)
     const [plan, setPlan] = useState<'pro' | 'free' | undefined>('free')
 
     const userFlag = useFeatureFlagVariantKey('install-first')
@@ -52,7 +53,8 @@ export const AuthModalProvider: FunctionComponent<{ children: ReactNode }> = ({ 
     }, [userFlag])
 
     const openModal = useCallback(
-        (source: string, plan?: 'pro' | 'free') => {
+        (source: string, plan?: 'pro' | 'free', disablePlanParam?: boolean) => {
+            setDisablePlanParam(disablePlanParam ?? false)
             setSource(source)
             if (router.pathname !== '/demo/cody') {
                 displayModal()
@@ -87,7 +89,7 @@ export const AuthModalProvider: FunctionComponent<{ children: ReactNode }> = ({ 
                 )}
                 {isControlModalOpen && (
                     <Modal open={isControlModalOpen} handleClose={closeModal}>
-                        <IdeModalContent source={source} plan={plan} />
+                        <IdeModalContent source={source} plan={plan} disablePlanParam={disablePlanParam} />
                     </Modal>
                 )}
             </>

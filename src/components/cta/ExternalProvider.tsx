@@ -18,6 +18,7 @@ interface ExternalProviderProps {
     dark?: boolean
     className?: string
     plan?: 'pro' | 'free'
+    disablePlanParam?: boolean
 }
 
 interface ExternalLinkProps {
@@ -30,6 +31,7 @@ interface ExternalLinkProps {
     id: string
     link: string
     openInNewTab?: boolean
+    disablePlanParam?: boolean 
 }
 
 const PLAN_PRO = 'pro'
@@ -137,9 +139,10 @@ const ExternalLink: FunctionComponent<ExternalLinkProps> = ({
     icon,
     link,
     openInNewTab,
+    disablePlanParam
 }) => (
     <Link
-        href={plan === PLAN_PRO ? `${link + '?pro=true'}` : `${link}`}
+        href={plan === PLAN_PRO && !disablePlanParam ? `${link + '?pro=true'}` : `${link}`}
         className={classNames(
             'hover:sg-bg-hover-external-auth-button flex items-center justify-center px-4 py-2 font-normal hover:text-black md:h-12 md:px-6 md:text-base',
             dark
@@ -173,6 +176,7 @@ export const ExternalProvider: FunctionComponent<ExternalProviderProps> = ({
     dark,
     className,
     plan = 'free',
+    disablePlanParam
 }) => {
     useEffect(() => {
         const { buttonId, conversionId } = getProviderButtonsTracker(providerType)
@@ -281,6 +285,7 @@ export const ExternalProvider: FunctionComponent<ExternalProviderProps> = ({
                     }
                     link="https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai"
                     openInNewTab={true}
+                    disablePlanParam={disablePlanParam}
                 />
             )
         case JETBRAINS:

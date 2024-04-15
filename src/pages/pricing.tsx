@@ -83,7 +83,7 @@ const GetProButton: FunctionComponent<{ className?: string; title?: string }> = 
 }) => {
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal('cody', 'pro')
+    const handleOpenModal = (): void => openModal('cody', 'pro',true)
     return (
         <button
             title={title}
