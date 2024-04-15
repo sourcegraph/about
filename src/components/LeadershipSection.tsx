@@ -83,6 +83,14 @@ const LEADERS: {
         linkedin: 'https://www.linkedin.com/in/ramansharma',
         twitter: 'https://twitter.com/rasharm',
     },
+    {
+        name: 'Brock Perko',
+        image: '/staff/brock-perko.png',
+        title: 'VP Sales',
+        bio: 'https://handbook.sourcegraph.com/team/#brock-perko',
+        github: 'https://github.com/0xPerko',
+        linkedin: 'https://www.linkedin.com/in/brock-perko-5094349/',
+    },
 ]
 
 export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ className = '' }) => (
