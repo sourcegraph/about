@@ -1,5 +1,5 @@
 ---
-title: "Exploring Data Visualization with-d3.js and Cody"
+title: "Exploring Data Visualization with D3.js and Cody"
 authors:
   - name: James Amoo
   
