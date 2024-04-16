@@ -18,6 +18,8 @@ The first AI experiment we've created is called the [LLM Litmus Test](https://s0
 
 We've given you the choice of which LLM, but today we're providing a tool to help you pick YOUR LLM.
 
+<iframe width="650" height="366" src="https://www.youtube-nocookie.com/embed/Vwjzm_mrk_c?si=AR61NT6ktpXG0XIx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## What can you do with the LLM Litmus Test?
 
 These are the main things that you would find valuable with this tool:
