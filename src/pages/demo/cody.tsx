@@ -1,13 +1,11 @@
-import { FunctionComponent, useEffect, useRef } from 'react'
+import { FunctionComponent, useEffect } from 'react'
 
-import classNames from 'classnames'
 import Link from 'next/link'
 
 import {
     ContentSection,
     Heading,
     Layout,
-    HubSpotForm,
     CodyAutocomplete,
     CodyImageTab,
     CodyCta,
@@ -16,13 +14,12 @@ import {
     ContextAnimation,
     CodyPartners,
     CodyTestimonials,
+    YouTube,
 } from '../../components'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
 import { EventName, getEventLogger } from '../../hooks/eventLogger'
 import { useWindowWidth } from '../../hooks/windowWidth'
-
-import styles from '../../styles/CustomHubspotForm.module.scss'
 
 declare global {
     interface Window {
@@ -57,8 +54,6 @@ const DemoCodyPage: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
 
-    const formContainerRef = useRef<HTMLDivElement | null>(null)
-
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (): void => openModal('cody')
@@ -87,8 +82,8 @@ const DemoCodyPage: FunctionComponent = () => {
         >
             {/* Hero Section */}
             <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 md:mt-0 md:pt-[22px] md:pb-9">
-                <div className="flex flex-col justify-between gap-y-6 px-sm lg:flex-row lg:gap-x-[70px] lg:gap-y-0">
-                    <div className="w-full max-w-[656px]">
+                <div className="flex flex-col items-center justify-between gap-y-6 px-sm lg:flex-row lg:gap-x-6 lg:gap-y-0">
+                    <div className="w-full md:max-w-[554px] lg:max-w-[616px]">
                         <div className="center flex items-center gap-x-4">
                             <Heading size="h1" className="!text-[53px] text-white md:!text-[62px]">
                                 Meet Cody{' '}
@@ -137,13 +132,11 @@ const DemoCodyPage: FunctionComponent = () => {
                             </Link>
                         </p>
                     </div>
-                    <div className={classNames('w-full max-w-[554px]', styles.codyForm)} ref={formContainerRef}>
-                        <Heading size="h3" className="mb-4 !text-2xl font-semibold text-white">
-                            Request Cody Demo
-                        </Heading>
-                        <HubSpotForm
-                            formId="255d54c8-65db-435e-b131-d8dc4ab9ea96"
-                            onFormSubmitted={() => window?.saq?.('conv', 'KGsR2v3IRYg4bqhsRm62Hc')}
+                    <div className="w-full md:w-[554px] xl:w-[616px]">
+                        <YouTube
+                            title="Cody - the AI coding assistant that knows your entire codebase"
+                            id="ercrtmYRvD8"
+                            className="w-full lg:h-[388px]"
                         />
                     </div>
                 </div>
