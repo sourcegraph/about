@@ -23,12 +23,11 @@ We've given you the choice of which LLM, but today we're providing a tool to hel
 These are the main things that you would find valuable with this tool:
 
 1.  **Compare LLMs**: Ask any general coding question to two different LLMs and see which is better
-
 2.  **Chat with a Repo**: Add any public repo and ask questions. How to get started with a repo? Where to find certain components... Even where to look to solve an issue
 
 [Try out the LLM Litmus Test ->](https://s0.dev)
 
-![s0.dev LLM Litmus Test](https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-llm-litmus-test/s0.png)
+[![s0.dev LLM Litmus Test](https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-llm-litmus-test/s0.png)](https://s0.dev)
 
 ## Comparing LLMs for Coding Assistance
 
@@ -37,9 +36,7 @@ Here at Sourcegraph, we believe in giving users the choice of which LLM to use f
 When you use Cody, we let you pick your LLM for:
 
 -   Chatting with your code
-
 -   Editing your code inline
-
 -   Creating custom commands
 
 We're a big believer in being LLM agnostic. Each LLM has its own strengths for specific tasks. But we've always gotten the question:
@@ -52,7 +49,7 @@ As with almost all things in software development, the answer is "it depends". N
 
 In addition to comparing LLMs, you can also add a GitHub repo, or repos, and turn on Cody Context. This means that we will search that repo for relevant code snippets to pass to an LLM so that you can get the most accurate and relevant answers.
 
-![LLM with Cody Context](https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-llm-litmus-test/llm-cody-context.png)
+[![LLM with Cody Context](https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-llm-litmus-test/llm-cody-context.png)](https://s0.dev)
 
 You can compare the same LLM with and without Cody Context to see how big of a difference having the correct context makes in your answers.
 
@@ -61,19 +58,12 @@ You can compare the same LLM with and without Cody Context to see how big of a d
 Right now, you can compare the following LLMs.
 
 -   Claude 3 Opus
-
 -   Claude 3 Sonnet
-
 -   Claude 3 Haiku
-
 -   Claude 2.1
-
 -   GPT-4 Turbo (April 2024)
-
 -   GPT-3.5 Turbo
-
 -   Mixtral 8x7B
-
 -   Mixtral 8x22B Preview
 
 ![Supported LLMs](https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-llm-litmus-test/llms-supported.png)
@@ -82,12 +72,12 @@ Right now, you can compare the following LLMs.
 
 Here are some examples that we've created so that you can dive right in and see LLM comparisons.
 
-### Example 1: Explaining React's useCallback() vs useMemo()\
+### Example 1: Explaining React's useCallback() vs useMemo()
 This example is using Claude 2.1 vs Claude 3 Opus.
 
 [Try it out yourself ->](https://s0.dev/share/0653557d-d185-4386-9363-d6c3c67dac4a)
 
-![LLM Litmus Test React Example](https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-llm-litmus-test/llm-litmus-test-example-1.png)
+[![LLM Litmus Test React Example](https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-llm-litmus-test/llm-litmus-test-example-1.png)](https://s0.dev/share/0653557d-d185-4386-9363-d6c3c67dac4a)
 
 ### Example 2: Implementing a pie chart
 
@@ -95,7 +85,7 @@ In this example, I am comparing GPT-4 Turbo (April 2024) vs Claude 3 Opus. I hav
 
 [Try it out yourself ->](https://s0.dev/share/779d024e-67d5-47cc-9552-3d85364d6be9)
 
-![LLM Litmus Test Chart Example](https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-llm-litmus-test/llm-litmus-test-example-2.png)
+[![LLM Litmus Test Chart Example](https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-llm-litmus-test/llm-litmus-test-example-2.png)](https://s0.dev/share/779d024e-67d5-47cc-9552-3d85364d6be9)
 
 ## What's next?
 
@@ -104,7 +94,6 @@ We have plenty of AI experiments coming up next. We want Sourcegraph Labs to be 
 Here's a few experiments we're noodling on:
 
 -   **Repo Ramp-Up**: Onboard new users or open source contributors do your repo with an AI generated FAQ
-
 -   **Issue Sherpa**: Use AI to get guidance on how to solve a specific issue
 
 ## Try it out and share your feedback
