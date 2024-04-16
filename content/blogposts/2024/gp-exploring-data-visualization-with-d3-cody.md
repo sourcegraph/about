@@ -1,5 +1,5 @@
 ---
-title: "Exploring Data Visualization with D3.js and Cody"
+title: "Exploring data visualization with D3.js and Cody"
 authors:
   - name: James Amoo
   
@@ -27,7 +27,7 @@ This article will break down complex concepts to be easily understood. However, 
 * Basic data visualization concepts
 * [Cody](https://sourcegraph.com/docs/cody#getting-started) AI assistant installed in your editor. 
 
-## What is Data Visualization?
+## What is data visualization?
 
 Before we get into the technical aspect, it’s important to understand the concept of data visualization and why we visualize data. One way to convey data is to use text. However, there are situations where textual representation of data does not suffice. For example, showing the rank of some data in ascending order. In conveying data, the most important factor to consider is the comprehension of viewers or anyone who reads the data, which means a conscious effort must be adopted to convey data, through text or graphics. 
 
@@ -43,7 +43,7 @@ A key factor in choosing a library or tool in software development is ease of us
 
 Cody is an open-source coding AI assistant developed by Sourcegraph that aids your development process by providing context-aware solutions based on your codebase. It has features such as code autocomplete, an AI-powered chatbox that helps to debug, provide more information on your code, optimize code for best practices, and more. In this article, you will learn how Cody helps you enhance productivity when visualizing data with-d3. 
 
-## Why Use D3.js for Data Visualization?
+## Why Use D3.js for data visualization?
 
 The use of D3.js in data visualization is beneficial for many reasons, some of which include: 
 
@@ -52,7 +52,7 @@ The use of D3.js in data visualization is beneficial for many reasons, some of w
 * **Scalability**: When dealing with graphically represented data or visual elements, developers are often concerned about performance and speed. D3.js is highly scalable for use in small and large projects. 
 * **Support for Animations**: D3.js allows you to apply custom animations to your visualizations, making it more engaging and visually appealing. 
 * **Framework Support**: As a JavaScript library, D3.js works with all JavaScript frameworks, making it widely used by a highly active community of users. 
-## Getting Started with-d3.js
+## Getting started with D3.js
 
 Now that you have learned about data visualization and the features of D3.js, it is time to see how it works in our application. In this article, we will be working on a Vanilla HTML environment. You can load D3.js from a CDN like so:
 
@@ -62,11 +62,11 @@ Now that you have learned about data visualization and the features of D3.js, it
 </script>
 ```
 
-## Working Principle
+## Working principle
 
 D3.js allows developers to bind arbitrary data to the DOM, which makes it easy to manipulate and update data in real-time. In this section, we will go through the basic logic of selecting elements to be visualized, modifying the elements with custom styling, and joining the data. 
 
-### Selecting Elements
+### Selecting elements
 
 The concept of selecting elements in D3.js isn’t so strange, especially from a JavaScript background. Selecting elements basically entails targeting the particular element you want to modify and visualize. 
 
@@ -107,7 +107,7 @@ And there! Come on, how interesting is this? I tell Cody to _change the method t
 
 There you go. It acts just as expected, targeting all instances of `h1`. 
 
-### Modifying Elements
+### Modifying elements
 
 The next step after the selection of elements is to modify them. Yes, you’ve targeted the element, what styles do you want to pass into it? How do you want it to behave? In the previous section, we saw how we could select elements in D3.js and then change the text color of those elements. When an element is selected, several operations can be performed on it, which entails what modifying elements is all about at the basic level. Here’s an example for your understanding:
 
@@ -119,7 +119,7 @@ d3.select("div")
     .remove()                      // removes selected element from DOM
 ```
 
-### Joining Data
+### Joining data
 
 D3.js allows you to bind data from an array to a specified element using the `.join()` method. This method makes it easy to manipulate data and pass new values to an element. The `.join` method returns the updated version of the selected element. Let’s see how this works:
 
@@ -146,7 +146,7 @@ Here, I created an array called `codyFeatures` which contains some features of C
 
 And there! We have our result just as expected. 
 
-## Visualizing Data Using Charts
+## Visualizing data using charts
 
 Now that we’ve discussed the basic syntax and logic of D3.js. Let’s dive into using some of that logic to create charts to convey some textual data. Here, we want to convey data on a bar chart based on the value in an array of numbers. Let’s start by defining the width and height of our chart.  
 
@@ -245,19 +245,19 @@ And there! I simply tell Cody to _modify this code so the chart appears in ascen
 
 It acts just as we expect it to, in ascending order. I have to say a big thank you to Cody for all the help. 
 
-## Animation and Transition in D3.js
+## Animation and transition in D3.js
 
 When talking about appealing and eye-catching visualization, we must also talk about animation. Animations, when used correctly, add that extra bit of spice to our visualization and make it better. In this section, we will talk about how to apply animation to your visualization in D3.js. 
 
-### The `.transition()` Method
+### The `.transition()` method
 
 This handles the basic functionality of making elements move in D3.js. Without transitions, all elements appear instantaneously on your web browser when loaded or reloaded. Transitions give the flexibility to control the progression of elements on the browser. With the `.transition` method in D3.js, we can monitor the current state of elements and the target state. So, rather than only working with a single(final) state, we’re working with two states here. The element then moves in tune with the difference in values of the two states. We’ll see how that works in a bit. 
 
-### The `.duration()` Method
+### The `.duration()` method
 
 The `.duration()` method is also important in making transitions at the basic level. As you have probably guessed, it allows us to control the time frame of our animation. You can make your animation slow or fast depending on the particular use case. 
 
-### Adding Animations 
+### Adding animations 
 
 Having understood the basic concept of the `.transition()` and `.duration()` methods in D3.js, we can then add animation to our chart. First, we need to revisit our codebase and make a few changes to the properties so we have two states; the current state and the desired or target state. Let’s start by providing the width and height of the bars at the current state and then defining it at the target state. At the current state, we have:
 
