@@ -8,8 +8,8 @@ description: "This article explores data visualizations using D3.js, covering it
 tags: [blog, guest-post]
 slug: "exploring-data-visualization-with-d3-cody"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/gp-exploring-data-visualization-with%20d3-cody/image_og.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/gp-exploring-data-visualization-with%20d3-cody/image_og.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/gp-exploring-data-visualization-with-d3-cody/image_og.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/gp-exploring-data-visualization-with-d3-cody/image_og.png
 ---
 
 <Alert type="secondary">This is a guest blog post from our community. <a href="https://discord.com/servers/sourcegraph-969688426372825169" target="_blank">Join our Discord</a> to meet the author and connect with other developers passionate about Code Search and AI!</Alert>
