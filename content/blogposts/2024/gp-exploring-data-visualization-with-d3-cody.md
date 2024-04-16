@@ -4,7 +4,7 @@ authors:
   - name: James Amoo
   
 publishDate: 2024-04-16T10:00-07:00
-description: "🔴 An informal guide for digital nomads, showcasing how Termux and Cody turn your tablet into a beach-friendly coding hub. Ditch the laptop for a lightweight setup with Termux's Linux shell, Visual Studio Code's web interface, and Cody."
+description: "This article explores data visualizations using D3.js, covering its features, getting started, working principles, and how to create charts with the help of Cody."
 tags: [blog, guest-post]
 slug: "exploring-data-visualization-with-d3-cody"
 published: true
@@ -136,7 +136,6 @@ let codyFeatures = [
     .join("h1")
     .attr("class", "cody")
     .text((d) => d);
-
 ```
 
 Here, I created an array called `codyFeatures` which contains some features of Cody AI. Then I selected the first element with a class of `.cody`, passed the array as a parameter in the `.data` method, and used the `.join` method to bind the values of the array to the element(in this case, the `h1` element). In summary, I dynamically joined the array to the h1 element. Here’s how the result looks:
@@ -320,7 +319,7 @@ And there! We’ve added animation to our chart. Feel free to make some changes 
 
 ## Conclusion
 
-In this article, we learned about data visualizations with-d3.js, the features of D3.js, how to get started with-d3.js, the working principle and logical structure of visualizing data in D3.js, and how to visualize data using charts in D3.js. Also, we used Cody as a coding assistant to enhance our productivity. Apart from the fact that we made some queries to Cody to help write our code, it was also super helpful with the auto-complete feature as I wrote the code.
+In this article, we learned about data visualizations with-d3.js, the features of D3.js, how to get started with-d3.js, the working principle and logical structure of visualizing data in D3.js, and how to visualize data using charts in D3.js. Also, we used Cody as a coding assistant to enhance our productivity. Apart from the fact that we made some queries to Cody to help write our code, it was also super helpful with the autocomplete feature as I wrote the code.
 
 ---
 
