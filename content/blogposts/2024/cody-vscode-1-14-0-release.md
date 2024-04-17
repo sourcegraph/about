@@ -22,8 +22,8 @@ We’ve historically limited Cody to a maximum context window of 7,000 tokens, m
 
 Because of Claude 3’s [improved context recall](https://www.google.com/url?q=https://www.anthropic.com/news/claude-3-family%23:~:text%3DLong%2520context%2520and%2520near%252Dperfect%2520recall&sa=D&source=docs&ust=1713389874874139&usg=AOvVaw2xo3VN2mbBXrMP3p9cCkLc), we can now expand that context window without degrading chat quality. We’ve made huge updates to Cody’s maximum context window for Claude 3 Sonnet and Opus models:
 
-* 30,000 tokens of user-defined context (user text plus `@-mentioned` files)
-* 15,000 tokens of _continuous context_ (context that’s sent back to the LLM to help it recall earlier parts of a continuous conversation)
+* 30,000 tokens of user-defined context (user @-mentioned files)
+* 15,000 tokens of continuous context (user messages and context that's sent back to the LLM to help it recall earlier parts of a continuous conversation)
 
 _Note: One line of code converts to roughly 7.5 tokens, so these limits are approximately 4,000 and 2,000 lines of code, respectively._
 
