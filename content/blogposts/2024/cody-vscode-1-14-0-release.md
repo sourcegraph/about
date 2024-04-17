@@ -6,7 +6,7 @@ authors:
   - name: Justin Dorfman
     url: https://handbook.sourcegraph.com/team/#justin-dorfman
 publishDate: 2024-04-17T10:00-01:00
-description: "Cody for VS Code v1.14.0 is now available and includes bigger context windows, a refreshed chat interface, and more."
+description: "Cody for VS Code v1.14.0 is now available. This update includes expanded input and output context windows, a new chat interface, improved unit tests, and more."
 tags: [blog]
 slug: "cody-vscode-1-14-0-release"
 published: true
