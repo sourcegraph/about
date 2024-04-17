@@ -48,7 +48,7 @@ The chat interface is getting a new look! Cody’s chat log is now structured as
 We’ve improved Cody’s unit test command for JavaScript, TypeScript, Go, and Python code in two ways:
 
 1. Cody will now determine the correct range of code to apply the command to based on the code syntax
-2. When you trigger a Quick Action (Ctrl + . / Cmd + .) on a function symbol, Cody will now given an option to generate a unit test
+2. When you trigger a Quick Action (`Ctrl + .` / `Cmd + .`) on a function symbol, Cody will now given an option to generate a unit test
 
 <Video 
   source={{
