@@ -25,7 +25,7 @@ Because of Claude 3’s [improved context recall](https://www.google.com/url?q=h
 * 30,000 tokens of user-defined context (user text plus @-mentioned files)
 * 15,000 tokens of _continuous context_ (context that’s sent back to the LLM to help it recall earlier parts of a continuous conversation)
 
-_Note: One line of code converts to roughly 7.5 tokens, so these limits are 4,000 and 2,000 lines of code, respectively._
+_Note: One line of code converts to roughly 7.5 tokens, so these limits are approximately 4,000 and 2,000 lines of code, respectively._
 
 This update means two things:
 
