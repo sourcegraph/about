@@ -22,7 +22,7 @@ We’ve historically limited Cody to a maximum context window of 7,000 tokens, m
 
 Because of Claude 3’s [improved context recall](https://www.google.com/url?q=https://www.anthropic.com/news/claude-3-family%23:~:text%3DLong%2520context%2520and%2520near%252Dperfect%2520recall&sa=D&source=docs&ust=1713389874874139&usg=AOvVaw2xo3VN2mbBXrMP3p9cCkLc), we can now expand that context window without degrading chat quality. We’ve made huge updates to Cody’s maximum context window for Claude 3 Sonnet and Opus models:
 
-* 30,000 tokens of user-defined context (user text plus @-mentioned files)
+* 30,000 tokens of user-defined context (user text plus `@-mentioned` files)
 * 15,000 tokens of _continuous context_ (context that’s sent back to the LLM to help it recall earlier parts of a continuous conversation)
 
 _Note: One line of code converts to roughly 7.5 tokens, so these limits are approximately 4,000 and 2,000 lines of code, respectively._
@@ -48,7 +48,7 @@ The chat interface is getting a new look! Cody’s chat log is now structured as
 We’ve improved Cody’s unit test command for JavaScript, TypeScript, Go, and Python code in two ways:
 
 1. Cody will now determine the correct range of code to apply the command to based on the code syntax
-2. When you trigger a Quick Action (`Ctrl + .` / `Cmd + .`) on a function symbol, Cody will now given an option to generate a unit test
+2. When you trigger a Quick Action (<kbd>Ctrl</kbd> + <kbd>.</kbd>/<kbd>Cmd</kbd> + <kbd>.</kbd>) on a function symbol, Cody will now given an option to generate a unit test
 
 <Video 
   source={{
@@ -60,9 +60,9 @@ We’ve improved Cody’s unit test command for JavaScript, TypeScript, Go, and 
 
 ## Add context to chat using right-click
 
-You can now grab code from the open file and use it as context in chat without having to manually @-mention it.
+You can now grab code from the open file and use it as context in chat without having to manually `@-mention` it.
 
-Highlight the code you want to use, then right-click -> “Cody Chat: Add as context.” The highlighted file range will be added as an @-mention in the chat sidebar.
+Highlight the code you want to use, then right-click -> “Cody Chat: Add as context.” The highlighted file range will be added as an `@-mention` in the chat sidebar.
 
 <Video 
   source={{
