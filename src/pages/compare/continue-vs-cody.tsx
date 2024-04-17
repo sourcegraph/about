@@ -15,7 +15,7 @@ const CompareCopilotPage: FunctionComponent = () => (
         }}
         hero={
             <CompareHero
-                title="Sourcegraph Cody vs Cursor"
+                title="Sourcegraph Cody vs Continue"
                 competitorDescription="Continue Logo"
                 competitorIcon="/assets/compare/continue.svg"
             >
