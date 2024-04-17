@@ -26,9 +26,9 @@ const data = [
         url: '/compare/tabnine-vs-cody',
     },
     {
-        name: 'Codeium',
-        image: 'codeium.svg',
-        url: '/compare/codeium-vs-cody',
+        name: 'Continue',
+        image: 'continue.svg',
+        url: '/compare/continue-vs-cody',
     },
 ]
 

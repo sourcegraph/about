@@ -123,7 +123,7 @@ export const CompareTables: FunctionComponent<CompareTableProps> = ({
                 </tbody>
             </Table>
 
-            <p className="mt-1 text-sm text-gray-400">Last updated: 2023-12-06</p>
+            <p className="mt-1 text-sm text-gray-400">Last updated: 2024-04-16</p>
         </div>
     </div>
 )
