@@ -20,20 +20,21 @@ const CompareCopilotPage: FunctionComponent = () => (
                 competitorIcon="/assets/compare/continue.svg"
             >
                 <p>
-                    Continue is an open source autopilot for IDEs, designed to enhance coding with any LLM directly
-                    within the user's preferred development environment. It offers features like task and tab
-                    autocomplete, the ability to ask coding questions, natural language editing, and generating files
-                    from scratch. Continue supports any LLM and provider, offering local-first, modular use and
-                    customization options. It focuses on using the codebase as context, allowing users to continue
-                    working in their flow without switching applications. Additionally, it supports team-wide deployment
-                    and continuous custom model finetuning.
+                    Continue is an "open source autopilot in your IDE," designed to enhance coding with any LLM directly
+                    within the user's preferred development environment. It offers features like autocomplete, the
+                    ability to ask coding questions, natural language editing, and generating files from scratch.
+                    Continue is highly customizable and supports many LLMs and providers. It is "local-first," so users
+                    can bring their own local model to use even when their machine is offline. Continue also supports
+                    cloud-based LLMs, but users must bring their provide their own API key. Continue provides free
+                    access to a few cloud-based models but only on a trial basis.
                 </p>
 
                 <p>
                     <strong className="inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500">TL;DR:</strong>{' '}
-                    Continue is an open source IDE tool that integrates any LLM to boost coding with features like
-                    autocomplete and natural language editing. Cody is a great option for those seeking enterprise
-                    support and customizable commands for a more personalized development experience.
+                    Continue is a highly flexible, open source IDE tool for autocomplete and LLM chat. It's a strong
+                    option for users who want to bring their own models, particularly local models. Cody is a good
+                    option for users who want to use LLMs as a service, users who want free access to LLMs (via Cody
+                    Free), or for teams looking for solutions with enterprise security and support.
                 </p>
             </CompareHero>
         }
