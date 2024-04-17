@@ -1,12 +1,12 @@
 ---
-title: "Cody for VS Code v1.14.0 release"
+title: "Cody for VS Code v1.14.0: Now with bigger context windows and a refreshed chat UI"
 authors:
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
   - name: Justin Dorfman
     url: https://handbook.sourcegraph.com/team/#justin-dorfman
 publishDate: 2024-04-17T10:00-01:00
-description: ""
+description: "Cody for VS Code v1.14.0 is now available and includes bigger context windows, a refreshed chat interface, and more."
 tags: [blog]
 slug: "cody-vscode-1-14-0-release"
 published: true
