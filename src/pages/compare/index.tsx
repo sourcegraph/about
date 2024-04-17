@@ -46,7 +46,8 @@ const ComparePage: FunctionComponent = () => (
                 <h2 className="mb-3 text-3xl">Cody vs GitHub Copilot</h2>
                 <p className="mb-5 text-gray-500">
                     Copilot is an AI code assistant that offers autocomplete, chat, and commands. It has strong
-                    autocomplete performance using the OpenAI Codex model, and it offers in-IDE and mobile chat with GPT-4.
+                    autocomplete performance using the OpenAI Codex model, and it offers in-IDE and mobile chat with
+                    GPT-4.
                 </p>
                 <Link className="btn btn-primary text-lg" href="/compare/copilot-vs-cody">
                     See full comparison
@@ -80,7 +81,8 @@ const ComparePage: FunctionComponent = () => (
                         Free Plan <MdClose className="h-6 w-6 fill-gray-200" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Personalized responses using codebase context <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                        Personalized responses using codebase context{' '}
+                        <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
                         Choose your LLM <MdClose className="h-6 w-6 fill-gray-200" />
@@ -143,7 +145,7 @@ const ComparePage: FunctionComponent = () => (
                         Autocomplete <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                    Security vulnerability scanning <MdCheck className="h-6 w-6 fill-violet-400" />
+                        Security vulnerability scanning <MdCheck className="h-6 w-6 fill-violet-400" />
                     </li>
                 </ul>
             </div>
@@ -260,7 +262,8 @@ const ComparePage: FunctionComponent = () => (
             <div className="col-span mr-10 pb-5 pt-10">
                 <h2 className="mb-3 text-3xl">Cody vs Codeium</h2>
                 <p className="mb-5 text-gray-500">
-                    Codeium is an AI assistant that uses in-house built models and infrastructure to provide code completion, chat, and search. Codeium has trained models on over 70 programming langugages.
+                    Codeium is an AI assistant that uses in-house built models and infrastructure to provide code
+                    completion, chat, and search. Codeium has trained models on over 70 programming langugages.
                 </p>
                 <Link className="btn btn-primary text-lg" href="/compare/codeium-vs-cody">
                     See full comparison
@@ -303,6 +306,58 @@ const ComparePage: FunctionComponent = () => (
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
                         Visual Studio IDE support <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                    </li>
+                </ul>
+            </div>
+        </ContentSection>
+        <ContentSection className="mb-32 grid grid-cols-1 gap-1 md:grid-cols-3">
+            <div className="col-span mr-10 pb-5 pt-10">
+                <h2 className="mb-3 text-3xl">Cody vs Continue</h2>
+                <p className="mb-5 text-gray-500">
+                    Continue is an open source IDE tool that integrates any LLM to enhance coding features like
+                    autocomplete and natural language editing.
+                </p>
+                <Link className="btn btn-primary text-lg" href="/compare/continue-vs-cody">
+                    See full comparison
+                </Link>
+            </div>
+            <div className="col-span rounded border border-gray-200 border-t-violet-400 p-5">
+                <CodyHeader />
+                <ul className="ml-0 list-none text-gray-500">
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Free Plan <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Commands <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Neovim <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Chat <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Fine-tuned LLM <MdClose className="inline-block h-6 w-6 fill-gray-200" />
+                    </li>
+                </ul>
+            </div>
+            <div className="col-span rounded border border-gray-200 border-t-gray-300 bg-gray-100 p-5">
+                <CompetitorHeader icon="/assets/compare/continue.svg" title="Continue" />
+                <ul className="ml-0 list-none text-gray-500">
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Free Plan <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Commands <MdClose className="inline-block h-6 w-6 fill-gray-200" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Neovim <MdClose className="inline-block h-6 w-6 fill-gray-200" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Chat <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                    </li>
+                    <li className="mb-1.5 flex items-center justify-between">
+                        Fine-tuned LLM <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                 </ul>
             </div>

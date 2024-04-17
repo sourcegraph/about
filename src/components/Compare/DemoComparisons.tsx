@@ -31,6 +31,11 @@ const data = [
         image: 'codeium.svg',
         url: '/demo/codeium-vs-cody',
     },
+    {
+        name: 'Compare Cody to Continue',
+        image: 'continue.svg',
+        url: '/demo/continue-vs-cody',
+    },
 ]
 
 export const DemoComparisons: FunctionComponent = () => (
