@@ -3,7 +3,7 @@ title: "Exploring data visualization with D3.js and Cody"
 authors:
   - name: James Amoo
   
-publishDate: 2024-04-17T10:00-07:00
+publishDate: 2024-04-18T10:00-07:00
 description: "This article explores data visualizations using D3.js, covering its features, getting started, working principles, and how to create charts with the help of Cody."
 tags: [blog, guest-post]
 slug: "exploring-data-visualization-with-d3-cody"
