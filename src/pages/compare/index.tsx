@@ -258,7 +258,7 @@ const ComparePage: FunctionComponent = () => (
                 </ul>
             </div>
         </ContentSection>
-        <ContentSection className="mb-32 grid grid-cols-1 gap-1 md:grid-cols-3">
+        <ContentSection className="grid grid-cols-1 gap-1 md:grid-cols-3 ">
             <div className="col-span mr-10 pb-5 pt-10">
                 <h2 className="mb-3 text-3xl">Cody vs Codeium</h2>
                 <p className="mb-5 text-gray-500">
