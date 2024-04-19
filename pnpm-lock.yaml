@@ -71,9 +71,6 @@ dependencies:
   js-cookie:
     specifier: ^3.0.5
     version: 3.0.5
-  lottie-web:
-    specifier: ^5.12.2
-    version: 5.12.2
   next:
     specifier: ^13.1.1
     version: 13.1.2(@babel/core@7.22.20)(react-dom@18.2.0)(react@18.2.0)(sass@1.54.9)
