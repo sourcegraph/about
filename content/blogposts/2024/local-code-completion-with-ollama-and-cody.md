@@ -111,19 +111,17 @@ You can use a tool like [Postman](https://www.postman.com/) to make the request.
 
 Now that you have Ollama installed and running locally, you can use it with Cody to get local code completion. By default, Cody uses a remotely hosted version of the StarCoder LLM for code completion. 
 
-To switch the local code completion, you first need to install the [Cody VS Code extension](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai). Once you have the extension installed, you can configure it to use Ollama by following these steps: 
-
-1. Navigate to the Cody extension settings by opening the command palette (<kbd>⌘</kbd>+<kbd>shift</kbd>+<kbd>P</kbd>) and typing `Cody: Extension Settings`.
-2. Scroll down to find the **"Cody > Autocomplete > Advanced: Provider"** section. From the dropdown menu, select **"expermintal-ollama"**.
-![Cody extension settings](https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/ollama-cody-settings.png)
-3. Finally, open up the `settings.json` file and find the `cody.autocomplete.experimental.ollamaOptions` property. Here, you can specify the URL of the Ollama instance if different from the default, as well as the model you want to use. For example:
+To switch the local code completion, you first need to install the [Cody VS Code extension](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai). Once you have the extension installed, update your VS Code settings to use Ollama with Cody: 
 
 ```json
+"cody.autocomplete.advanced.provider": "experimental-ollama",
 "cody.autocomplete.experimental.ollamaOptions": {
   "url": "http://localhost:11434",
   "model": "codellama"
-}
+},
 ```
+
+(Choose your preferred model; `codellama` is shown in the example above, but it can be any Ollama model name.)
 
 Once you have done this, Cody will now use Ollama to get local code completion for your VS Code files. To verify that it is working, open the Output tab and switch it to **Cody by Sourcegraph**. Next, open a file and start typing. You should see the following message in the Output tab when a completion is generated:
 
