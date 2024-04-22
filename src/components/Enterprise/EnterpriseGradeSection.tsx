@@ -26,7 +26,7 @@ const securityCardFeatures = [
 
 export const EnterpriseGradeSection: FunctionComponent = () => (
     <ContentSection
-        className="max-w-[1232px] rounded-2xl border-1 border-gray-200 bg-white py-16 px-6 md:px-10"
+        className="max-w-[1280px] rounded-2xl border-1 border-gray-200 bg-white py-16 px-6 md:px-10"
         parentClassName="!py-0 md:px-[80px]"
     >
         <Heading size="h6" className="mb-4">
