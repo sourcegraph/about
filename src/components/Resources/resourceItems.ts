@@ -1,4 +1,4 @@
-type ContentTypes = 'virtual event' | 'blog post' | 'guide' | 'customer story' | 'video' | 'whitepaper'
+type ContentTypes = 'virtual event' | 'blog post' | 'guide' | 'customer story' | 'video' | 'whitepaper' | 'comparison'
 type Subjects =
     | 'code security'
     | 'developer onboarding'
@@ -16,7 +16,6 @@ type Subjects =
     | 'cody'
     | 'code monitoring'
     | 'integrations'
-    | 'code search'
 
 export interface Resource {
     title: string
@@ -468,5 +467,75 @@ export const resourceItems: Resource[] = [
             'platform',
             'platform engineering',
         ],
+    },
+    {
+        featured: false,
+        title: 'Sourcegraph Code Search vs GitHub code search',
+        link: 'compare/github-vs-code-search',
+        contentType: 'comparison',
+        subjects: ['code search'],
+        description: 'Feature comparison of Sourcegraph Code Search and GitHub code search',
+        publishDate: '2024-04-23T00:00:00Z',
+        keyword: ['code search'],
+    },
+    {
+        featured: false,
+        title: 'Sourcegraph Cody vs GitHub Copilot',
+        link: 'compare/copilot-vs-cody',
+        contentType: 'comparison',
+        subjects: ['cody'],
+        description: 'Feature comparison of Sourcegraph Cody and GitHub Copilot',
+        publishDate: '2024-04-23T00:00:00Z',
+        keyword: ['cody'],
+    },
+    {
+        featured: false,
+        title: 'Sourcegraph Cody vs Amazon CodeWhisperer',
+        link: 'compare/amazon-codewhisperer-vs-cody',
+        contentType: 'comparison',
+        subjects: ['cody'],
+        description: 'Feature comparison of Sourcegraph Cody and Amazon CodeWhisperer',
+        publishDate: '2024-04-23T00:00:00Z',
+        keyword: ['cody'],
+    },
+    {
+        featured: false,
+        title: 'Sourcegraph Cody vs Cursor',
+        link: 'compare/cursor-vs-cody',
+        contentType: 'comparison',
+        subjects: ['cody'],
+        description: 'Feature comparison of Sourcegraph Cody and Cursor',
+        publishDate: '2024-04-23T00:00:00Z',
+        keyword: ['cody'],
+    },
+    {
+        featured: false,
+        title: 'Sourcegraph Cody vs Tabnine',
+        link: 'compare/tabnine-vs-cody',
+        contentType: 'comparison',
+        subjects: ['cody'],
+        description: 'Feature comparison of Sourcegraph Cody and Tabnine',
+        publishDate: '2024-04-23T00:00:00Z',
+        keyword: ['cody'],
+    },
+    {
+        featured: false,
+        title: 'Sourcegraph Cody vs Codeium',
+        link: 'compare/codeium-vs-cody',
+        contentType: 'comparison',
+        subjects: ['cody'],
+        description: 'Feature comparison of Sourcegraph Cody and Codeium',
+        publishDate: '2024-04-23T00:00:00Z',
+        keyword: ['cody'],
+    },
+    {
+        featured: false,
+        title: 'Sourcegraph Cody vs Continue',
+        link: 'compare/continue-vs-cody',
+        contentType: 'comparison',
+        subjects: ['cody'],
+        description: 'Feature comparison of Sourcegraph Cody and Continue',
+        publishDate: '2024-04-23T00:00:00Z',
+        keyword: ['cody'],
     },
 ]

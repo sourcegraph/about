@@ -6,10 +6,13 @@ interface Props {
     title: string
     competitorIcon: string
     competitorDescription: string
+    defaultIcon?: string
+    defaultIconDescription?: string
     children: ReactNode
     titleClassName?: string
     simpleStyle?: boolean
     containerClassName?: string
+    useCustomImage?: boolean
 }
 
 const CompareHero: FunctionComponent<Props> = ({
@@ -17,9 +20,12 @@ const CompareHero: FunctionComponent<Props> = ({
     titleClassName,
     competitorIcon,
     competitorDescription,
+    defaultIconDescription,
+    defaultIcon,
     children,
     simpleStyle = false,
     containerClassName,
+    useCustomImage = false,
 }) => {
     const brandBoxShadow = simpleStyle ? 'inset 0px 13px 7px -6px #f2f2f2' : ''
     return (
@@ -61,7 +67,7 @@ const CompareHero: FunctionComponent<Props> = ({
                         <div className="gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                             <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                                 {/* title */}
-                                <h1 className={titleClassName}>{title}</h1>
+                                <h1 className={classNames('break-words xs:break-normal', titleClassName)}>{title}</h1>
 
                                 {/* the comparison paragraphs */}
                                 <div className="mt-10 space-y-5 text-base leading-[1.6] text-gray-500 sm:max-w-md lg:mr-10 lg:max-w-none">
@@ -74,60 +80,69 @@ const CompareHero: FunctionComponent<Props> = ({
                                 {/* vs box is placed in the center */}
                                 {/* the cody and competitor logos are placed absolutely from that */}
                                 <div
-                                    className={classNames('relative flex items-center lg:items-baseline lg:gap-0', {
-                                        'gap-5': !simpleStyle,
-                                    })}
+                                    className={classNames(
+                                        'relative flex flex-col items-center lg:items-baseline lg:gap-0 [@media(min-width:375px)]:flex-row',
+                                        {
+                                            'gap-5': !simpleStyle,
+                                        }
+                                    )}
                                 >
                                     {/* vs box */}
                                     <div
-                                        className={classNames(
-                                            'relative z-[2] h-16 w-16 rounded-md p-1 lg:h-24 lg:w-24',
-                                            {
-                                                'bg-gray-300 ': !simpleStyle,
-                                            }
-                                        )}
+                                        className={classNames('relative z-[2] h-16 w-16 ', {
+                                            'rounded-md bg-gray-300 p-1 lg:h-24 lg:w-24':
+                                                !simpleStyle && !useCustomImage,
+                                            'rounded-md p-1 lg:h-24 lg:w-24': simpleStyle && !useCustomImage,
+                                        })}
                                     >
                                         <div className="flex h-full w-full items-center justify-center rounded bg-white font-extrabold">
-                                            <span
-                                                className={classNames(
-                                                    '-translate-y-1 bg-gradient-to-br from-gray-400 to-gray-600 bg-clip-text leading-none text-transparent ',
-                                                    {
-                                                        'text-4xl lg:text-8xl': !simpleStyle,
-                                                        'text-4xl font-bold lg:text-[34.32px] lg:leading-[40.96px]':
-                                                            simpleStyle,
-                                                    }
-                                                )}
-                                            >
-                                                vs
-                                            </span>
+                                            {!useCustomImage ? (
+                                                <span
+                                                    className={classNames(
+                                                        '-translate-y-1 bg-gradient-to-br from-gray-400 to-gray-600 bg-clip-text leading-none text-transparent ',
+                                                        {
+                                                            'text-4xl lg:text-8xl': !simpleStyle,
+                                                            'text-4xl font-bold lg:text-[34.32px] lg:leading-[40.96px]':
+                                                                simpleStyle,
+                                                        }
+                                                    )}
+                                                >
+                                                    vs
+                                                </span>
+                                            ) : (
+                                                <img
+                                                    src="/assets/compare/vs-icon.svg"
+                                                    className="h-full w-full"
+                                                    alt="VS"
+                                                />
+                                            )}
                                         </div>
                                     </div>
 
                                     {/* cody logo */}
                                     <div
-                                        className={classNames(' z-[3] order-first  lg:absolute lg:order-none ', {
+                                        className={classNames(' z-[3] order-first lg:absolute lg:order-none ', {
                                             '-left-40 -top-40 h-32 w-32 rounded-md bg-gradient-to-br from-vermillion-300 via-violet-400 to-blue-400 p-1 shadow-card lg:h-44 lg:w-44':
-                                                !simpleStyle,
+                                                !simpleStyle && !useCustomImage,
+                                            '-left-40 -top-40 h-32 w-32 p-1 lg:h-44 lg:w-44': useCustomImage,
                                             '-left-28 -top-24 h-32 w-32 overflow-hidden rounded-[35.46px] border-[4px] border-[#F2F2F2] p-1 lg:h-[137px] lg:w-[137px]':
-                                                simpleStyle,
+                                                simpleStyle && !useCustomImage,
                                         })}
                                         // eslint-disable-next-line react/forbid-dom-props
                                         style={{ boxShadow: brandBoxShadow }}
                                     >
                                         <div
-                                            className={classNames(
-                                                'flex h-full w-full items-center justify-center rounded ',
-                                                {
-                                                    'bg-white': !simpleStyle,
-                                                }
-                                            )}
+                                            className={classNames('flex h-full w-full items-center justify-center', {
+                                                'rounded bg-white': !simpleStyle && !useCustomImage,
+                                            })}
                                         >
                                             <img
-                                                src="/cody-logomark-default.svg"
-                                                alt="Cody Logo"
+                                                src={defaultIcon ?? '/cody-logomark-default.svg'}
+                                                alt={defaultIconDescription ?? 'Cody Logo'}
                                                 className={classNames({
-                                                    'h-16 w-16 lg:h-24 lg:w-24': !simpleStyle,
+                                                    'h-16 w-16 lg:h-24 lg:w-24': !simpleStyle && !useCustomImage,
                                                     'h-[74px] w-[74px]': simpleStyle,
+                                                    'h-full w-full': useCustomImage && !simpleStyle,
                                                 })}
                                             />
                                         </div>
@@ -137,18 +152,20 @@ const CompareHero: FunctionComponent<Props> = ({
                                     <div
                                         className={classNames('h-32 w-32', {
                                             '-bottom-40 -right-40 z-[1] h-32 w-32 rounded-md bg-gray-600 p-1 shadow-lg lg:absolute  lg:h-44 lg:w-44':
-                                                !simpleStyle,
+                                                !simpleStyle && !useCustomImage,
+                                            '-bottom-40 -right-40 z-[1] h-32 w-32 p-1 lg:absolute lg:h-44 lg:w-44':
+                                                useCustomImage,
                                             '-bottom-24 -right-28 z-[11] overflow-hidden rounded-[35.46px] border-[4px] border-[#F2F2F2] p-1 lg:absolute lg:h-[137px] lg:w-[137px]':
-                                                simpleStyle,
+                                                simpleStyle && !useCustomImage,
                                         })}
                                         // eslint-disable-next-line react/forbid-dom-props
                                         style={{ boxShadow: brandBoxShadow }}
                                     >
                                         <div
                                             className={classNames(
-                                                'flex h-full w-full  items-center justify-center rounded ',
+                                                'flex h-full w-full items-center justify-center rounded ',
                                                 {
-                                                    'bg-white': !simpleStyle,
+                                                    'rounded bg-white': !simpleStyle && !useCustomImage,
                                                 }
                                             )}
                                         >
@@ -156,8 +173,9 @@ const CompareHero: FunctionComponent<Props> = ({
                                                 src={competitorIcon}
                                                 alt={competitorDescription}
                                                 className={classNames({
-                                                    'h-16 w-16 lg:h-24 lg:w-24': !simpleStyle,
+                                                    'h-16 w-16 lg:h-24 lg:w-24': !simpleStyle && !useCustomImage,
                                                     'h-[74px] w-[74px]': simpleStyle,
+                                                    'h-full w-full': useCustomImage && !simpleStyle,
                                                 })}
                                             />
                                         </div>
