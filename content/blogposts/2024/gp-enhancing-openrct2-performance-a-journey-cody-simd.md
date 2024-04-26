@@ -85,7 +85,7 @@ And with prefetch implemented:
   src="https://storage.googleapis.com/sourcegraph-assets/blog/enhancing-openrct2-performance-a-journey-cody-simd/image_010_crop.png"
 />
 
-**A ~5% win, for something that initially seemed 3x slower!** I’m happy with that result. Cody helped me finally find the bottleneck and implement a decent improvement. You can [check the merged PR here](https://github.com/OpenRCT2/OpenRCT2/pull/21894).
+**A ~5% win, for something that initially had been 3x slower!** I’m happy with that result. Cody helped me finally find the bottleneck and implement a decent improvement. You can [check the merged PR here](https://github.com/OpenRCT2/OpenRCT2/pull/21894).
 
 ## Conclusion
 
