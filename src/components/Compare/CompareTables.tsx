@@ -35,7 +35,7 @@ export const CompareTables: FunctionComponent<CompareTableProps> = ({
                     <Table key={data.selection}>
                         <thead>
                             <tr>
-                                <th className="w-1/2 border-0 text-left text-base font-semibold xs:text-base">
+                                <th className="w-1/2 border-0 text-left text-base !font-semibold xs:text-base">
                                     {data.selection}
                                 </th>
                                 <th className="text w-1/4 border-0 text-base !font-semibold !tracking-normal xs:text-base">

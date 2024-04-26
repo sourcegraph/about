@@ -1,11 +1,10 @@
 import { FunctionComponent } from 'react'
 
 import { Layout } from '../../components'
+import { CodeSearchCard } from '../../components/Code-search/CodeSearchCard'
 import CompareHero from '../../components/Compare/CompareHero'
 import { CompareTables } from '../../components/Compare/CompareTables'
 import { githubVsCodeSearch } from '../../components/Compare/constants'
-import { OtherComparisons } from '../../components/Compare/OtherComparisons'
-import { CodyCallToActionContentSection } from '../../components/cta/CodyCallToActionContentSection'
 
 const GithubVsCodeSearch: FunctionComponent = () => (
     <Layout
@@ -15,11 +14,11 @@ const GithubVsCodeSearch: FunctionComponent = () => (
         }}
         hero={
             <CompareHero
-                title="Sourcegraph Code Search vs GitHub code search"
-                competitorDescription="GitHub Copilot Logo"
-                competitorIcon="/assets/compare/github-code-search.svg"
-                defaultIcon="/assets/compare/sourcegraph-code-search.svg"
-                defaultIconDescription="Sourcegraph Cody Logo"
+                title='Sourcegraph Code Search vs GitHub code search'
+                competitorDescription='GitHub Copilot Logo'
+                competitorIcon='/assets/compare/github-code-search.svg'
+                defaultIcon='/assets/compare/sourcegraph-code-search.svg'
+                defaultIconDescription='Sourcegraph Cody Logo'
                 useCustomImage={true}
             >
                 <p>
@@ -37,7 +36,7 @@ const GithubVsCodeSearch: FunctionComponent = () => (
                 </p>
 
                 <p>
-                    <strong className="inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500">TL;DR:</strong>{' '}
+                    <strong className='inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500'>TL;DR:</strong>{' '}
                     GitHub code search is a good choice for individuals or small teams operating with a small codebase
                     looking to find code, issues, or pull requests with simple search queries. Sourcegraph Code Search
                     is a better option for organizations with a large number of repositories or a large and complex
@@ -49,16 +48,8 @@ const GithubVsCodeSearch: FunctionComponent = () => (
             </CompareHero>
         }
     >
-        <CompareTables compareData={githubVsCodeSearch} firstChoiceTitle="Sourcegraph Code Search" />
-
-        <CodyCallToActionContentSection
-            title="Get Cody, the AI coding assistant"
-            description="Cody makes it easy to write, fix, and maintain code."
-            cta1={{ text: 'Try Cody for free', ctaStyle: 'primaryButtonWhite', link: '/cody' }}
-            cta2={{ text: 'See enterprise pricing', ctaStyle: 'link', link: '/cody/pricing' }}
-        />
-
-        <OtherComparisons />
+        <CompareTables compareData={githubVsCodeSearch} firstChoiceTitle='Sourcegraph Code Search' />
+        <CodeSearchCard />
     </Layout>
 )
 
