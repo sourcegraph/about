@@ -16,6 +16,7 @@ interface IntroCardProps {
     contactButtonLabel: string
     scaleMobileImage?: boolean
     textColor?: string
+    buttonHref?: string
 }
 
 export const IntroCard: FunctionComponent<IntroCardProps> = ({
@@ -27,6 +28,7 @@ export const IntroCard: FunctionComponent<IntroCardProps> = ({
     alt,
     scaleMobileImage = false,
     textColor,
+    buttonHref
 }) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.md
@@ -48,7 +50,7 @@ export const IntroCard: FunctionComponent<IntroCardProps> = ({
                     </p>
                     <Link
                         className='absolute z-10 -bottom-[32px] md:relative btn btn-primary flex w-3/4 justify-center bg-violet-500 xs:w-1/2 mdi:w-fit'
-                        href='/contact/request-info?form_submission_source=solutions-gitlab'
+                        href={buttonHref ?? '/contact/request-info?form_submission_source=solutions-gitlab'}
                         title='Contact us'
                     >
                         {contactButtonLabel}
