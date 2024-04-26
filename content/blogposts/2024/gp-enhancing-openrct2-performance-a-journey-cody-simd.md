@@ -17,7 +17,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/enhancing-op
 
 SIMD, Single Instruction Multiple Data, is a way of speeding up computationally intensive tasks by applying the same operation to multiple data items in one go. For this to be applicable, some requirements need to be met, such as data layout or access patterns.
 
-In OpenRCT2 we care a lot about performance and there’s long been a piece of code I suspected could be improved by applying the SIMD approach. I’ve been putting it off due to having to write a lot of code that probably wouldn’t make it to the repository, but I found Cody doesn’t complain about any of that and it dutifully came to help.
+In [OpenRCT2](https://openrct2.org/) we care a lot about performance and there’s long been a piece of code I suspected could be improved by applying the SIMD approach. I’ve been putting it off due to having to write a lot of code that probably wouldn’t make it to the repository, but I found Cody doesn’t complain about any of that and it dutifully came to help.
 
 The code in question is used for arranging paint order and implements checking of bounding box intersections. At a single click of `Explain Code`, Cody explains in detail the responsibilities of this function:
 
