@@ -71,7 +71,7 @@ That doesn’t look quite right. 3x slower than original code. Let’s have Cody
   src="https://storage.googleapis.com/sourcegraph-assets/blog/enhancing-openrct2-performance-a-journey-cody-simd/image_008.png"
 />
 
-OK, that’s a lot of useful information. It seems the code isn’t bottlenecked on ALU, but on memory instead. But then again, Cody mentioned the prefetch effectiveness depends on various factors and I’ve decided to test if moving the prefetch to a place earlier in the paint ordering loop would improve performance.
+OK, that’s a lot of useful information. It seems the code isn’t bottlenecked on the ALU (arithmetic logic unit), but on memory instead. But then again, Cody mentioned the prefetch effectiveness depends on various factors and I’ve decided to test if moving the prefetch to a place earlier in the paint ordering loop would improve performance.
 
 Using another benchmark implemented earlier and a known performance-sensitive map, the code with no prefetch results are
 
@@ -87,7 +87,7 @@ And with prefetch implemented:
 
 A ~5% win, for something that initially seemed 3x slower! I’m happy with that result. Cody helped me finally find the bottleneck and implement a decent improvement. You can [check the merged PR here](https://github.com/OpenRCT2/OpenRCT2/pull/21894).
 
-## Conslusion
+## Conclusion
 
 SIMD optimizations can be a powerful tool for improving performance, but it's crucial to understand the underlying bottlenecks and test assumptions thoroughly. With the assistance of AI tools like Cody, developers can streamline the process of writing tests, benchmarks, and optimized code, ultimately leading to better performance gains.
 
