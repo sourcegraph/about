@@ -73,19 +73,19 @@ That doesn’t look quite right. 3x slower than original code. Let’s have Cody
 
 OK, that’s a lot of useful information. It seems the code isn’t bottlenecked on the ALU (arithmetic logic unit), but on memory instead. But then again, Cody mentioned the prefetch effectiveness depends on various factors and I’ve decided to test if moving the prefetch to a place earlier in the paint ordering loop would improve performance.
 
-Using another benchmark implemented earlier and a known performance-sensitive map, the code with no prefetch results are
+Using another benchmark implemented earlier and a known performance-sensitive map, the code with no prefetch results are:
 
 <Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/enhancing-openrct2-performance-a-journey-cody-simd/image_009.png"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/enhancing-openrct2-performance-a-journey-cody-simd/image_009_crop.png"
 />
 
 And with prefetch implemented:
 
 <Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/enhancing-openrct2-performance-a-journey-cody-simd/image_010.png"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/enhancing-openrct2-performance-a-journey-cody-simd/image_010_crop.png"
 />
 
-A ~5% win, for something that initially seemed 3x slower! I’m happy with that result. Cody helped me finally find the bottleneck and implement a decent improvement. You can [check the merged PR here](https://github.com/OpenRCT2/OpenRCT2/pull/21894).
+**A ~5% win, for something that initially seemed 3x slower!** I’m happy with that result. Cody helped me finally find the bottleneck and implement a decent improvement. You can [check the merged PR here](https://github.com/OpenRCT2/OpenRCT2/pull/21894).
 
 ## Conclusion
 
