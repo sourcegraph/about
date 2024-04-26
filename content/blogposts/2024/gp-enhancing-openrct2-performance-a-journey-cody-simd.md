@@ -5,7 +5,7 @@ authors:
     url: https://github.com/janisozaur
   
 publishDate: 2024-04-25T10:00-07:00
-description: "Learn how Michał Janiszewski used SIMD to optimize the OpenRCT2 project. With the help of Cody, Michał was able to achieve a 5% performance improvement."
+description: "Learn how Michał Janiszewski used SIMD to optimize the OpenRCT2 project. With the help of Cody, Michał was able to achieve a significant performance improvement."
 tags: [blog, guest-post]
 slug: "enhancing-openrct2-performance-a-journey-cody-simd"
 published: true
