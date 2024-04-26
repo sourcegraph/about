@@ -19,13 +19,13 @@ SIMD, Single Instruction Multiple Data, is a way of speeding up computationally 
 
 In [OpenRCT2](https://openrct2.org/) we care a lot about performance and there’s long been a piece of code I suspected could be improved by applying the SIMD approach. I’ve been putting it off due to having to write a lot of code that probably wouldn’t make it to the repository, but I found Cody doesn’t complain about any of that and it dutifully came to help.
 
-The code in question is used for arranging paint order and implements checking of bounding box intersections. At a single click of `Explain Code`, Cody explains in detail the responsibilities of this function:
+The code in question is used for arranging paint order and implements checking of bounding box intersections. At a single click of <kbd>Explain Code</kbd>, Cody explains in detail the responsibilities of this function:
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/enhancing-openrct2-performance-a-journey-cody-simd/image_001.png"
 />
 
-Before we start changing anything, let's generate some tests. With the function still highlighted, that's just one more click on `Generate Unit Tests`.
+Before we start changing anything, let's generate some tests. With the function still highlighted, that's just one more click on <kbd>Generate Unit Tests</kbd>.
 
 Cody explained it didn’t know what testing framework I used and assumed (correctly, as many C++ projects do) that I use [GoogleTest](https://google.github.io/googletest/). It then proceeded to generate test cases for all available scenarios. After a minor cleanup from the comments left in the code, I had my tests ready. The template was correctly recognized and had tests generated. The inclusion of a `.cpp` file instead of `.h` surprised me, but it was the correct approach for testing a `static` function without having to remove the modifier.
 
