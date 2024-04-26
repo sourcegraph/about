@@ -17,15 +17,15 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/enhancing-op
 
 SIMD, Single Instruction Multiple Data, is a way of speeding up computationally intensive tasks by applying the same operation to multiple data items in one go. For this to be applicable, some requirements need to be met, such as data layout or access patterns.
 
-In [OpenRCT2](https://openrct2.org/) we care a lot about performance and there’s long been a piece of code I suspected could be improved by applying the SIMD approach. I’ve been putting it off due to having to write a lot of code that probably wouldn’t make it to the repository, but I found Cody doesn’t complain about any of that and it dutifully came to help.
+In [OpenRCT2](https://openrct2.org/) (free and open source remake of RollerCoaster Tycoon 2) we care a lot about performance and there’s long been a piece of code I suspected could be improved by applying the SIMD approach. I’ve been putting it off due to having to write a lot of code that probably wouldn’t make it to the repository, but I found Cody doesn’t complain about any of that and it dutifully came to help.
 
-The code in question is used for arranging paint order and implements checking of bounding box intersections. At a single click of <kbd>Explain Code</kbd>, Cody explains in detail the responsibilities of this function:
+The code in question is used for arranging paint order and implements checking of bounding box intersections. At a single click of [Explain Code](https://sourcegraph.com/docs/cody/capabilities/commands), Cody explains in detail the responsibilities of this function:
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/enhancing-openrct2-performance-a-journey-cody-simd/image_001.png"
 />
 
-Before we start changing anything, let's generate some tests. With the function still highlighted, that's just one more click on <kbd>Generate Unit Tests</kbd>.
+Before we start changing anything, let's generate some tests. With the function still highlighted, that's just one more click on [Generate Unit Tests](https://sourcegraph.com/docs/cody/capabilities/commands).
 
 Cody explained it didn’t know what testing framework I used and assumed (correctly, as many C++ projects do) that I use [GoogleTest](https://google.github.io/googletest/). It then proceeded to generate test cases for all available scenarios. After a minor cleanup from the comments left in the code, I had my tests ready. The template was correctly recognized and had tests generated. The inclusion of a `.cpp` file instead of `.h` surprised me, but it was the correct approach for testing a `static` function without having to remove the modifier.
 
@@ -89,7 +89,7 @@ And with prefetch implemented:
 
 ## Conclusion
 
-SIMD optimizations can be a powerful tool for improving performance, but it's crucial to understand the underlying bottlenecks and test assumptions thoroughly. With the assistance of AI tools like Cody, developers can streamline the process of writing tests, benchmarks, and optimized code, ultimately leading to better performance gains.
+SIMD optimizations can be a powerful tool for improving performance, but it's crucial to understand the underlying bottlenecks and test assumptions thoroughly. With the assistance of AI tools like Cody, developers can streamline the process of writing tests, benchmarks, and optimized code, ultimately leading to better performance gains. Oh, and if you want to download and play OpenRCT2 yourself, check it out at [https://openrct2.org/downloads](https://openrct2.org/downloads)
 
 ---
 
