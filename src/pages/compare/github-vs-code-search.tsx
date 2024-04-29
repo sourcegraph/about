@@ -9,12 +9,12 @@ import { githubVsCodeSearch } from '../../components/Compare/constants'
 const GithubVsCodeSearch: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph Code Search vs GitHub code search',
-            description: 'Feature comparison of Sourcegraph Code Search and GitHub code search',
+            title: 'Sourcegraph vs GitHub code search',
+            description: 'Feature comparison of Sourcegraph and GitHub code search',
         }}
         hero={
             <CompareHero
-                title='Sourcegraph Code Search vs GitHub code search'
+                title='Sourcegraph vs GitHub code search'
                 competitorDescription='GitHub Copilot Logo'
                 competitorIcon='/assets/compare/github-code-search.svg'
                 defaultIcon='/assets/compare/sourcegraph-code-search.svg'

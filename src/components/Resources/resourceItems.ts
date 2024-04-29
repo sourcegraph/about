@@ -470,11 +470,11 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'Sourcegraph Code Search vs GitHub code search',
+        title: 'Sourcegraph vs GitHub code search',
         link: 'compare/github-vs-code-search',
         contentType: 'comparison',
         subjects: ['code search'],
-        description: 'Feature comparison of Sourcegraph Code Search and GitHub code search',
+        description: 'Feature comparison of Sourcegraph and GitHub code search',
         publishDate: '2024-04-23T00:00:00Z',
         keyword: ['code search'],
     },
