@@ -1,6 +1,12 @@
 import { FunctionComponent, useState } from 'react'
 
+import classNames from 'classnames'
 import { MdCheck, MdClose } from 'react-icons/md'
+
+interface InfoButtonProps {
+    comparator: number
+    handleClick: () => void
+}
 
 export const FeatureComponent: FunctionComponent<{ item: any }> = (item: any) => {
     const data = item.item
@@ -42,9 +48,7 @@ export const FeatureComponent: FunctionComponent<{ item: any }> = (item: any) =>
                 {data.cody.length > 0 && <span className="mx-auto">{data.cody}</span>}
 
                 {data.cody_details && data.cody_details.length > 0 && (
-                    <button type="button" className="absolute ml-2 mt-1" onClick={() => toggleCodyDetails()}>
-                        ⓘ
-                    </button>
+                    <InfoButton comparator={data.cody.length} handleClick={() => toggleCodyDetails()} />
                 )}
 
                 {showCodyDetails &&
@@ -71,12 +75,20 @@ export const FeatureComponent: FunctionComponent<{ item: any }> = (item: any) =>
                 {data.competitor.length > 0 && <span className="mx-auto">{data.competitor}</span>}
 
                 {data.competitor_details && data.competitor_details.length > 0 && (
-                    <button type="button" className="absolute ml-2 mt-1" onClick={() => toggleCompetitorDetails()}>
-                        ⓘ
-                    </button>
+                    <InfoButton comparator={data.cody.length} handleClick={toggleCompetitorDetails} />
                 )}
                 {showCompetitorDetails && <p>{data.competitor_details}</p>}
             </td>
         </tr>
     )
 }
+
+const InfoButton: FunctionComponent<InfoButtonProps> = ({ comparator, handleClick }) => (
+    <button
+        type="button"
+        className={classNames('ml-2', comparator > 0 ? 'md:absolute' : 'absolute mt-1')}
+        onClick={() => handleClick()}
+    >
+        ⓘ
+    </button>
+)
