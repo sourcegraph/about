@@ -1,6 +1,7 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import {
@@ -14,10 +15,11 @@ import {
     CodyAutocomplete,
     CodyChat,
     CodyImageTab,
-    ContextAnimation,
     CodyPartners,
     CodyTestimonials,
 } from '../components'
+import { CodyHowItWorks } from '../components/cody/CodyHowItWorks'
+import { ChooseYourLlmSection } from '../components/Enterprise/ChooseYourLlmSection'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { EventName, getEventLogger } from '../hooks/eventLogger'
@@ -58,6 +60,17 @@ const CodyPage: FunctionComponent = () => {
 
     const source = pathname.slice(1) || 'about-home'
     const handleOpenModal = (): void => openModal(source)
+    const article = {
+        quote: "“Generative AI is a fast-moving field, and the best model that's out there today may not be the best model tomorrow…using Cody means we can avoid that LLM lock-in.”",
+        author: 'Rob Linger',
+        role: 'AI Software Architect, Leidos',
+    }
+
+    const modelCardContent = {
+        title: 'Choose from your favorite LLMs',
+        description:
+            'Cody supports the latest LLMs including Claude 3, GPT-4 Turbo, and Mixtral-8x7B. You can also bring your own LLM key with Amazon Bedrock and Azure OpenAI.',
+    }
 
     useEffect(() => {
         const eventArguments = {
@@ -80,6 +93,7 @@ const CodyPage: FunctionComponent = () => {
             childrenClassName={isMobile ? 'sg-bg-gradient-cody-mobile' : 'sg-bg-gradient-cody-lg'}
             displayChildrenUnderNav={true}
             customFooterClassName="!bg-transparent"
+            className="w-full !overflow-hidden"
         >
             <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 text-center md:mt-0 md:pt-[22px]">
                 <div className="mx-auto w-full px-6 md:w-[849px] lg:w-[895px]">
@@ -130,34 +144,50 @@ const CodyPage: FunctionComponent = () => {
                 }
                 tabContent={IMAGE_TAB_CONTENT}
             />
-
+            <CodyHowItWorks />
+            <ChooseYourLlmSection
+                article={article}
+                reverseQuote={true}
+                className="!mx-sm mt-16 h-auto overflow-hidden md:!min-h-[554px] lg:!mx-auto"
+                authorCardClassName="!text-[#0F111A] !bg-white"
+                modelCardClassName="text-white bg-violet-700 !border-1 !border-[#343A4D]"
+                modelCardContent={modelCardContent}
+                modelDescriptionClassName="!text-[#DBE2F0] text-[24px] leading-[30px]"
+                parentClassName="!p-0"
+            />
             <ContentSection
                 parentClassName="!p-0 !m-0"
-                className="m-0 flex flex-col gap-5 px-6 py-16 md:flex-row md:justify-between md:gap-12 md:px-0 lg:py-28"
+                className="m-0 flex flex-col items-center gap-5 px-6 py-16 md:flex-row md:justify-between md:px-0 lg:py-28"
             >
-                <div className="flex w-full flex-col md:mx-[29px] ">
+                <div className="flex w-full max-w-[570px] flex-col md:ml-[29px]">
                     <Heading size="h2" className="mb-1 text-[40px] font-normal leading-10 tracking-[-1px] text-white">
                         Sourcegraph powered <span className="cody-heading bg-clip-text text-transparent">context</span>
                     </Heading>
 
-                    <p className="mb-0 mt-[12px] text-2xl font-normal leading-[30px] tracking-[-0.25px] text-white md:max-w-[501px]">
-                        Sourcegraph’s code graph and analysis tools allows Cody to autocomplete, explain, and edit your
-                        code with additional context.
+                    <p className="mb-0 mt-[12px] text-2xl font-normal leading-[30px] tracking-[-0.25px] text-[rgba(255,255,255,0.80)] md:max-w-[501px]">
+                        Cody uses your code graph plus{' '}
+                        <Link
+                            href="/code-search"
+                            className="text-[rgba(255,255,255,0.80)] underline underline-offset-[2px]"
+                        >
+                            Code Search
+                        </Link>{' '}
+                        to autocomplete, explain, and edit your code with additional context.
                     </p>
                     <img
-                        src="/cody/context_illustration.svg"
-                        className="mt-6 md:max-w-[501px]"
+                        src="/cody/new_context_illustration.svg"
+                        className="mt-6 md:max-w-full"
                         alt="cody context illustration"
                     />
                 </div>
-                <div className="hidden md:flex">
-                    <ContextAnimation />
-                </div>
-                <div className="md:hidden md:h-[333px] md:w-[538px] md:min-w-[399px]">
-                    <img src="/cody/context_illustration_details.svg" alt="cody context illustration details" />
+                <div className="h-full md:mr-[29px] md:max-h-full md:min-h-[333px] md:w-full md:max-w-[614px]">
+                    <img
+                        src="/cody/new_context_illustration_details.svg"
+                        alt="cody context illustration details"
+                        className="h-full w-full"
+                    />
                 </div>
             </ContentSection>
-
             <CodyCta source="Cody page" isCodyPage={true} />
             <Modal
                 open={isContactModalOpen}
