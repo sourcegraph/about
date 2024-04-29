@@ -186,7 +186,7 @@ export const githubVsCodeSearch: CompareDataType = {
             attributes: [
                 createAttribute({
                     feature: 'IDE',
-                    cody_details: 'VS Code, JetBrains IDEs, Sublime Text, Atom, Gitpod',
+                    cody_details: 'VS Code, JetBrains IDEs',
                 }),
                 createAttribute({
                     feature: 'Integration with documentation for knowledge sharing',
