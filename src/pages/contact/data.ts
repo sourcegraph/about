@@ -3,7 +3,7 @@ import type { HubSpotFormProps } from '../../components'
 export interface ContactPageProps extends HubSpotFormProps {
     title: string
     description: string
-    form_submission_source?: string;
+    form_submission_source?: string
 }
 
 interface SlugDataProps {
@@ -31,6 +31,18 @@ export const slugData: SlugDataProps = {
         description: 'Talk with a product specialist to learn more about Sourcegraph.',
         masterFormName: 'contactMulti',
         form_submission_source: 'request-info',
+    },
+    'request-info-gitlab': {
+        title: 'Contact us',
+        description: 'Talk with a product specialist to learn more about Sourcegraph.',
+        masterFormName: 'contactMulti',
+        form_submission_source: 'solutions-gitlab',
+    },
+    'request-info-bitbucket': {
+        title: 'Contact us',
+        description: 'Talk with a product specialist to learn more about Sourcegraph.',
+        masterFormName: 'contactMulti',
+        form_submission_source: 'solutions-bitbucket',
     },
     'request-trial': {
         title: 'Sign up for a free trial',

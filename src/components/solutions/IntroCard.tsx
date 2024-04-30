@@ -50,7 +50,7 @@ export const IntroCard: FunctionComponent<IntroCardProps> = ({
                     </p>
                     <Link
                         className='absolute z-10 -bottom-[32px] md:relative btn btn-primary flex w-3/4 justify-center bg-violet-500 xs:w-1/2 mdi:w-fit'
-                        href={buttonHref ?? '/contact/request-info?form_submission_source=solutions-gitlab'}
+                        href={buttonHref ?? '/contact/request-info-gitlab?form_submission_source=solutions-gitlab'}
                         title='Contact us'
                     >
                         {contactButtonLabel}
