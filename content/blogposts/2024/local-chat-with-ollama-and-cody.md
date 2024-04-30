@@ -130,11 +130,9 @@ You may be asking why you would want to run a local chat model with Cody instead
 
 To enable local chat, you first need to install the [Cody VS Code extension](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai). Once you have the extension installed, you can configure it to display Ollama models for chat by following these steps: 
 
-1. Navigate to the Cody extension settings by opening the command palette (<kbd>⌘</kbd>+<kbd>shift</kbd>+<kbd>P</kbd>) and typing `Cody: Extension Settings`.
-2. Scroll down to find the **"Cody › Experimental: Ollama Chat"** section.
-3. Ensure the checkbox titled **Enable local Ollama models for chat and commands** is checked. 
-![Cody extension chat settings](https://storage.googleapis.com/sourcegraph-assets/blog/local-code-completion-with-ollama-and-cody/cody-settings-chat.png)
-4. Restart Visual Studio Code.
+1. Navigate to your Visual Studio Code user settings by opening the command palette (<kbd>⌘</kbd>+<kbd>shift</kbd>+<kbd>P</kbd>) and typing `Preferences: Open User Settings (JSON)`.
+2. Add the following property to `settings.json` document: `"cody.experimental.ollamaChat": true`
+3. Restart Visual Studio Code.
 
 Once you have restarted Visual Studio Code, you will have access to any downloaded Ollama model in your LLM selection dropdown in the Cody chat panel. To quickly open up the chat panel you can use the <kbd>⌥</kbd>+<kbd>L</kbd> shortcut. Click on the LLM selection dropdown to see what is available. Local Ollama models will have a "by Ollama" designation.
 
