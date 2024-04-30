@@ -16,10 +16,10 @@ const socialMediaStyles = 'text-xl text-gray-400 hover:text-gray-300 transition-
 const events = {
     upcoming: [
         {
-            title: 'PyCon',
-            location: 'Pittsburgh, PA',
-            date: 'May 17-19, 2024',
-            link: 'https://us.pycon.org/2024/',
+            title: 'designFAO',
+            location: 'Portugal',
+            date: 'Oct 11, 2024',
+            link: 'https://friends.figma.com/events/details/figma-portugal-presents-designfao-partner-event-2/',
         },
     ],
     past: [
@@ -209,7 +209,7 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
                 </div>
             </ContentSection>
             <ContentSection parentClassName="!pt-[10px] !pb-0" className="px-6">
-                <div className="flex flex-col justify-start pb-8 md:py-24 md:flex-row md:justify-between">
+                <div className="flex flex-col justify-start pb-8 md:flex-row md:justify-between md:py-24">
                     <div className="flex flex-col md:w-1/2">
                         <Heading size="h2" className="pb-sm !leading-[40px] !tracking-[-1px] text-gray-700">
                             Supporting open source
@@ -223,14 +223,23 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
                     </div>
                     <div className="mt-lg flex flex-col gap-sm md:mt-0 md:px-4xl">
                         <div className="flex w-full flex-wrap justify-start gap-lg md:justify-center">
-                            <Link href="https://github.com/orgs/sourcegraph-community/sponsoring"  target="_blank" rel="noopener">
+                            <Link
+                                href="https://github.com/orgs/sourcegraph-community/sponsoring"
+                                target="_blank"
+                                rel="noopener"
+                            >
                                 <img
                                     src="/community/github-sponsors-mona.svg"
                                     className="h-[97px] w-[81px]"
                                     alt="GitHub Sponsors link"
                                 />
                             </Link>
-                            <Link href="https://www.stackaid.us/github/sourcegraph" className="self-center" target="_blank" rel="noopener">
+                            <Link
+                                href="https://www.stackaid.us/github/sourcegraph"
+                                className="self-center"
+                                target="_blank"
+                                rel="noopener"
+                            >
                                 <img
                                     src="/community/stackaid_dark_light.svg"
                                     className="h-[31px] w-[223px]"
@@ -262,7 +271,12 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
                                     alt="Code mirror link"
                                 />
                             </Link>
-                            <Link href="https://thanks.dev/d/gh/sourcegraph/dependencies" className="self-center" target="_blank" rel="noopener">
+                            <Link
+                                href="https://thanks.dev/d/gh/sourcegraph/dependencies"
+                                className="self-center"
+                                target="_blank"
+                                rel="noopener"
+                            >
                                 <img
                                     src="/community/thanks-dev.svg"
                                     className="h-[36px] w-[197px]"
