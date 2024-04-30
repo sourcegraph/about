@@ -30,7 +30,7 @@ const GithubVsCodeSearch: FunctionComponent = () => (
                     GitHub code search is available to all users but comes with limitations. Not all code is indexed,
                     search results are restricted to 100 results, and it does not support multi-line searching. It does
                     not offer comprehensive search across branches, nor offers granular search parameters like
-                    structural or case-sensitive search. GitHub code search is unable to make and track large-scale
+                    case-sensitive search. GitHub code search is unable to make and track large-scale
                     changes across repositories and code hosts or transform code into a queryable database to create
                     custom, visual dashboards to track migrations, vulnerabilities, code health, and other metrics.
                 </p>
