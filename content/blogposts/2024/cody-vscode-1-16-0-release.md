@@ -40,9 +40,9 @@ When you create a new command, you’ll now choose a command mode:
 If you haven’t tried custom commands yet, [check out our video](https://www.youtube.com/watch?v=ruVgjt0zIzk) to get started. We’d also love your feedback on how you’re using custom commands [in our forum](https://community.sourcegraph.com/c/cody/5)!
 
 
-## Ollama chat is now available by default for Cody Pro
+## Ollama chat is now available by default
 
-We heard your feedback that the [Ollama chat feature](https://sourcegraph.com/blog/local-chat-with-ollama-and-cody) was difficult to enable since it required editing the settings.json file. We’ve updated Cody to turn on Ollama support by default. Cody Pro users will now see Ollama as an option in the chat dropdown menu whenever Ollama is running on your local machine.
+We heard your feedback that the [Ollama chat feature](https://sourcegraph.com/blog/local-chat-with-ollama-and-cody) was difficult to enable since it required editing the settings.json file. We’ve updated Cody to turn on Ollama support by default. You will now see Ollama as an option in the chat dropdown menu whenever Ollama is running on your local machine.
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-16-release/ollama-models.png"
