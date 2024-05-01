@@ -1,5 +1,6 @@
 import path from 'path'
 
+import classNames from 'classnames'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
@@ -9,8 +10,6 @@ import { BLOG_TYPE_TO_INFO } from '../../components/Blog/postTypes'
 import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
 import { Post, POST_TYPE_TO_COMPONENT, postType } from '../../interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '../../lib'
-
-import classNames from 'classnames'
 
 import styles from '../../styles/CustomHubspotForm.module.scss'
 
