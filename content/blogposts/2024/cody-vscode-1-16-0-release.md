@@ -19,7 +19,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 [Cody for VS Code v1.16](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) is now available. This update includes expanded functionality for custom commands, quality-of-life updates to Cody’s Ollama compatibility, and two new experimental features for power users.
 
 
-# Insert and edit code with more powerful custom commands
+## Insert and edit code with more powerful custom commands
 
 [Custom commands](https://sourcegraph.com/docs/cody/capabilities/commands#custom-commands) let you create predefined actions to run on demand. They were previously limited to chat-based commands that return your output in a chat window. Now, you can create commands to edit or insert code directly in your working file.
 
@@ -85,7 +85,7 @@ The CLI is only intended for human interactive usage. Please [read our thread in
 
 ### ContextMentionProvider API: BYO context sources
 
-We’ve exposed a new ContextMentionProvider API. You can use it to build new context sources that you can then `@-mention` in chat. You can define `triggerPrefixes`, like `@npm:`, then use those prefixes to select context to pass to Cody.
+We’ve exposed a new ContextMentionProvider API. You can use it to build new context sources that you can `@-mention` in chat. You can define `triggerPrefixes`, like `@npm:`, then use those prefixes to select context to pass to Cody.
 
 This API is off by default and only enabled when you set `cody.experimental.noodle` to `true` in VS Code settings. Note that this API and the context provider implementation are subject to change.
 
