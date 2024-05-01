@@ -1,14 +1,17 @@
 import path from 'path'
 
+import classNames from 'classnames'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import { Layout } from '../../components'
+import { Heading, HubSpotForm, Layout } from '../../components'
 import { BlogHeader } from '../../components/Blog/BlogHeader'
 import { BLOG_TYPE_TO_INFO } from '../../components/Blog/postTypes'
 import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
 import { Post, POST_TYPE_TO_COMPONENT, postType } from '../../interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '../../lib'
+
+import styles from '../../styles/CustomHubspotForm.module.scss'
 
 export interface PageProps {
     post: Post
@@ -40,10 +43,30 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
 
     return (
         <Layout meta={meta}>
-            <article className="mx-auto mb-xl max-w-screen-xl px-sm">
-                <BlogHeader {...blogInfo} variant="post" />
-                <PostTemplate post={post} content={content} className="mx-auto max-w-[840px]" />
-            </article>
+            <div className="mx-auto mt-10 mb-xl flex max-w-screen-xl flex-col gap-x-5 md:flex-row ">
+                <article className="flex-1">
+                    <BlogHeader {...blogInfo} variant="post" />
+                    <PostTemplate post={post} content={content} />
+                </article>
+                <aside className="hidden md:block md:w-[350px]">
+                    <div className="sticky top-36">
+                        <div
+                            className={classNames(
+                                styles.blogForm,
+                                'flex flex-col items-start rounded-2xl bg-gray-100 p-6'
+                            )}
+                        >
+                            <Heading size="h5" className="mb-4 normal-case">
+                                Subscribe for the latest code AI news and product updates
+                            </Heading>
+                            <HubSpotForm
+                                formId="ab908b80-d1ed-44fd-968c-505c85ed72ac"
+                                inlineMessage="Thanks, you are now subscribed!"
+                            />
+                        </div>
+                    </div>
+                </aside>
+            </div>
 
             <DownloadAppCallToActionSection
                 href="https://sourcegraph.com/cody"
