@@ -94,14 +94,14 @@ This API is off by default and only enabled when you set `cody.experimental.nood
 
 ## Changelog
 
-See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.14.0) and [GitHub releases](https://github.com/sourcegraph/cody/releases) for a complete list of changes.
+See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.16.0) and [GitHub releases](https://github.com/sourcegraph/cody/releases) for a complete list of changes.
 
 
 ## Thank you
 
 Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
-We value your feedback in our [support forum](https://community.sourcegraph.com/), [Discord](https://discord.com/servers/sourcegraph-969688426372825169) and [GitHub](https://github.com/sourcegraph/cody/discussions). Happy Codying!
+We would love your feedback in our [support forum](https://community.sourcegraph.com/) and on [Discord](https://discord.com/servers/sourcegraph-969688426372825169). Happy Codying!
 
 ---
 
