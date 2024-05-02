@@ -44,7 +44,7 @@ If you continue running into any issues with Cody crashing, please [let us know]
 
 ## Autocomplete tooltips for new users
 
-We added a tooltip for new users to make it easier to get started with autocomplete. The tooltip shows the hotkeys for accepting and cycling through suggestions for new users when they’re shown their first suggestion.
+We added a tooltip for new users to make it easier to get started with autocomplete. The tooltip shows the hotkeys for accepting and cycling through suggestions when you get your first suggestion.
 
 <Video 
   source={{
