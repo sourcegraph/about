@@ -1,12 +1,12 @@
 ---
-title: "Cody for JetBrains v5.5.8: Improvements to multi-repo context and Apple Silicon stability fixes"
+title: "Cody for JetBrains v5.5.8: New mutli-repo context selector and bug fixes for Apple silicon"
 authors:
   - name: Justin Dorfman
     url: https://handbook.sourcegraph.com/team/#justin-dorfman
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
-publishDate: 2024-05-01T10:00-01:00
-description: "Cody for JetBrains v5.5.8 is now available, including ..."
+publishDate: 2024-05-02T10:00-01:00
+description: "Cody for JetBrains v5.5.8 is now available! We’ve updated the multi-repo context selector, improved the extension stability for Apple silicon users, and addied tooltips for new autocomplete users."
 tags: [blog]
 slug: "cody-jetbrains-5-5-8-release"
 published: true
