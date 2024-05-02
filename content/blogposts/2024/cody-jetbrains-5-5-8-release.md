@@ -14,7 +14,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains-5-5-8-release/cody-jetbrains-5.5.8-og-image.jpg
 --- 
 
-[Cody for JetBrains v5.5.8](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) is now available! This update includes improvements to the multi-repo context selector, Apple Silicon stability fixes, and...
+[Cody for JetBrains v5.5.8](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) is now available! We’ve updated the multi-repo context selector, improved the extension stability for Apple silicon users, and addied tooltips for new autocomplete users.
 
 ## New multi-repo context interface for Cody Enterprise
 
@@ -35,6 +35,13 @@ You can now:
 />
 
 
+## Stability improvements for Apple silicon users
+
+We’ve fixed a bug where the extension would crash for Mac users with Apple silicon CPUs, particular users on M2 chipsets. Cody is now more stable for those users. 
+
+If you continue running into any issues with Cody crashing, please [let us know](https://community.sourcegraph.com/).
+
+
 ## Autocomplete tooltips for new users
 
 We added a tooltip for new users to make it easier to get started with autocomplete. The tooltip shows the hotkeys for accepting and cycling through suggestions for new users when they’re shown their first suggestion.
@@ -51,6 +58,7 @@ We added a tooltip for new users to make it easier to get started with autocompl
 ## Changelog
 
 See the [changelog](https://github.com/sourcegraph/jetbrains/releases/tag/v5.5.8) and [GitHub releases](https://github.com/sourcegraph/jetbrains/releases) for a complete list of changes.
+
 
 ## Thank you
 
