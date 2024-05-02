@@ -1,5 +1,5 @@
 ---
-title: "Enhancing OpenRCT2 Performance: A Journey with Cody and SIMD"
+title: "Enhancing OpenRCT2 performance: a journey with Cody and SIMD"
 authors:
   - name: Michał Janiszewski
     url: https://github.com/janisozaur
