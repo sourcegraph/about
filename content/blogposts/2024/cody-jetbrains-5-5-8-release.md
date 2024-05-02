@@ -14,7 +14,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains-5-5-8-release/cody-jetbrains-5.5.8-og-image.jpg
 --- 
 
-[Cody for JetBrains v5.5.8](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) is now available! This update includes a new interface for selecting multiple remote repositories to use as context, stability improvements for Apple silicon users, updates to context windows, and new autocomplete tooltips.
+[Cody for JetBrains v5.5.8](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat/versions/stable/530630) is now available! This update includes a new interface for selecting multiple remote repositories to use as context, stability improvements for Apple silicon users, updates to context windows, and new autocomplete tooltips.
 
 ## New multi-repo context interface for Cody Enterprise
 
