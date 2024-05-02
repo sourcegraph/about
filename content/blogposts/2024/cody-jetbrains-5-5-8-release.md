@@ -1,12 +1,12 @@
 ---
-title: "Cody for JetBrains v5.5.8: New mutli-repo context selector and bug fixes for Apple silicon"
+title: "Cody for JetBrains v5.5.8: Context selector updates, larger context windows, and bug fixes for Apple silicon"
 authors:
   - name: Justin Dorfman
     url: https://handbook.sourcegraph.com/team/#justin-dorfman
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
 publishDate: 2024-05-02T10:00-01:00
-description: "Cody for JetBrains v5.5.8 is now available! We’ve updated the multi-repo context selector, improved the extension stability for Apple silicon users, and added tooltips for new autocomplete users."
+description: "Cody for JetBrains v5.5.8 is now available! We’ve updated the multi-repo context selector, improved the extension stability for Apple silicon users, and increased the context windows for Cody's LLMs."
 tags: [blog]
 slug: "cody-jetbrains-5-5-8-release"
 published: true
@@ -14,7 +14,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains-5-5-8-release/cody-jetbrains-5.5.8-og-image.jpg
 --- 
 
-[Cody for JetBrains v5.5.8](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) is now available! This update includes a new interface for selecting multiple remote repositories to use as context, stability improvements for Apple silicon users, and new autocomplete tooltips.
+[Cody for JetBrains v5.5.8](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) is now available! This update includes a new interface for selecting multiple remote repositories to use as context, stability improvements for Apple silicon users, updates to context windows, and new autocomplete tooltips.
 
 ## New multi-repo context interface for Cody Enterprise
 
@@ -53,6 +53,11 @@ We added a tooltip for new users to make it easier to get started with autocompl
   loop={true}
   title="Autocomplete tooltip for new users"
 />
+
+
+## Expanded context windows for Free and Pro users
+
+JetBrains IDEs now support the expanded context windows we [recently introduced in VS Code](https://sourcegraph.com/blog/cody-vscode-1-14-0-release#bigger-and-better-context-windows-to-improve-chat). Free and Pro users can now push _way more context_ into Cody, so you can ask questions about larger amounts of code, include larger files in context, and have longer back-and-forth chat conversations without losing context. It also means you shouldn’t see Cody’s responses getting cut off mid-answer anymore.
 
 
 ## Changelog
