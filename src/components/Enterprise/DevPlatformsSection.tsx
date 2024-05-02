@@ -28,19 +28,19 @@ const enterpriseLightDevPlatforms = [
     { src: '/enterprise/logo-tiles/perforce-light.svg', alt: 'Perforce' },
 ]
 interface DevPlatformsSectionProps {
-    islight?: boolean
+    isLight?: boolean
     setOneClassName?: string
     setTwoClassName?: string
     setThreeClassName?: string
 }
 
 export const DevPlatformsSection: FunctionComponent<DevPlatformsSectionProps> = ({
-    islight = false,
+    isLight = false,
     setOneClassName,
     setTwoClassName,
     setThreeClassName,
 }) => {
-    const enterpriseDevPlatforms = !islight ? enterpriseLightDevPlatforms : enterpriseDarkDevPlatforms
+    const enterpriseDevPlatforms = !isLight ? enterpriseLightDevPlatforms : enterpriseDarkDevPlatforms
     return (
         <div className="flex w-auto justify-center gap-[37px] md:gap-[31.97px]">
             <div className={classNames('relative flex flex-col', setOneClassName ?? 'bottom-[17px] gap-[25.21px]')}>

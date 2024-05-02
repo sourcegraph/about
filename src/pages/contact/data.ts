@@ -3,7 +3,7 @@ import type { HubSpotFormProps } from '../../components'
 export interface ContactPageProps extends HubSpotFormProps {
     title: string
     description: string
-    form_submission_source?: string;
+    form_submission_source?: string
 }
 
 interface SlugDataProps {

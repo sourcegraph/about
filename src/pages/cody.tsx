@@ -18,7 +18,7 @@ import {
     CodyPartners,
     CodyTestimonials,
 } from '../components'
-import { CodyHowItWorks } from '../components/cody/CodyHowItWorks'
+import { HowCodyWorks } from '../components/cody/HowCodyWorks'
 import { ChooseYourLlmSection } from '../components/Enterprise/ChooseYourLlmSection'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
@@ -114,8 +114,8 @@ const CodyPage: FunctionComponent = () => {
                         onClick={handleOpenModal}
                     >
                         <div className="flex items-center justify-center">
-                            <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" />
-                            Get Cody for free
+                            <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Get
+                            Cody for free
                         </div>
                     </button>
                 </div>
@@ -144,7 +144,7 @@ const CodyPage: FunctionComponent = () => {
                 }
                 tabContent={IMAGE_TAB_CONTENT}
             />
-            <CodyHowItWorks />
+            <HowCodyWorks />
             <ChooseYourLlmSection
                 article={article}
                 reverseQuote={true}
@@ -175,14 +175,14 @@ const CodyPage: FunctionComponent = () => {
                         to autocomplete, explain, and edit your code with additional context.
                     </p>
                     <img
-                        src="/cody/new_context_illustration.svg"
+                        src="assets/cody/new_context_illustration.svg"
                         className="mt-6 md:max-w-full"
                         alt="cody context illustration"
                     />
                 </div>
                 <div className="h-full md:mr-[29px] md:max-h-full md:min-h-[333px] md:w-full md:max-w-[614px]">
                     <img
-                        src="/cody/new_context_illustration_details.svg"
+                        src="assets/cody/new_context_illustration_details.svg"
                         alt="cody context illustration details"
                         className="h-full w-full"
                     />
