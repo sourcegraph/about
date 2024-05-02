@@ -6,7 +6,7 @@ authors:
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
 publishDate: 2024-05-02T10:00-01:00
-description: "Cody for JetBrains v5.5.8 is now available! We’ve updated the multi-repo context selector, improved the extension stability for Apple silicon users, and addied tooltips for new autocomplete users."
+description: "Cody for JetBrains v5.5.8 is now available! We’ve updated the multi-repo context selector, improved the extension stability for Apple silicon users, and added tooltips for new autocomplete users."
 tags: [blog]
 slug: "cody-jetbrains-5-5-8-release"
 published: true
@@ -14,7 +14,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains-5-5-8-release/cody-jetbrains-5.5.8-og-image.jpg
 --- 
 
-[Cody for JetBrains v5.5.8](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) is now available! We’ve updated the multi-repo context selector, improved the extension stability for Apple silicon users, and addied tooltips for new autocomplete users.
+[Cody for JetBrains v5.5.8](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) is now available! This update includes a new interface for selecting multiple remote repositories to use as context, stability improvements for Apple silicon users, and new autocomplete tooltips.
 
 ## New multi-repo context interface for Cody Enterprise
 
