@@ -63,9 +63,6 @@ export const githubVsCodeSearch: CompareDataType = {
                     feature: 'Multi-line search',
                 }),
                 createAttribute({
-                    feature: 'Structural search',
-                }),
-                createAttribute({
                     feature: 'Literal search',
                     competitor: true,
                 }),
