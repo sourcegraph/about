@@ -11,6 +11,25 @@ import { SearchDescriptionSection } from '../../components/solutions/SearchDescr
 import { SolutionExplanationSection } from '../../components/solutions/SolutionExplanationSection'
 import { carouselImages } from '../code-search'
 
+const explanationCardData = [
+    {
+        title: 'AI personalized to your code',
+        description: 'Cody pulls from your entire GitLab codebase to explain and write contextually-aware code.',
+        className: 'order-3 md:order-1',
+    },
+    {
+        title: 'Generate code with chat and commands',
+        description:
+            'Ask Cody to generate code for you or use a pre-built command to quickly generate unit tests or documentation.',
+        className: 'order-1 md:order-2',
+    },
+    {
+        title: 'AI-assisted autocomplete',
+        description: 'Cody autocompletes code in any programming language, configuration file, or documention.',
+        className: 'order-2 md:order-3',
+    },
+]
+
 const CodeIntelligenceForGitlab: FunctionComponent = () => (
     <Layout
         meta={{
@@ -18,7 +37,7 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => (
             description:
                 "Enhance your GitLab experience with Sourcegraph's Code intelligence platform. Try Cody for contextual code writing, command generation, and AI autocompletion. Get seamless integration, code search, personalized code insights, and automation for large-scale code changes. Perfect for developers looking to streamline their workflow and understand their codebase at any scale. Contact us for a demo or start an enterprise trial today.",
         }}
-        className='bg-gray-50 overflow-hidden'
+        className='overflow-hidden bg-gray-50'
     >
         <IntroCard
             title='Code Intelligence for GitLab'
@@ -26,13 +45,16 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => (
                             Cody and Code Search integrations.'
             mainImageUrl='/solutions/gitlab/enterprise-context.svg'
             contactButtonLabel='Contact us for a demo'
-             scaleMobileImage={true}
+            scaleMobileImage={true}
             alt='Gitlab'
         />
         <div className='py-md md:py-3xl'>
             <InfiniteCarousel duration={400} images={carouselImages} />
         </div>
-        <SolutionExplanationSection title='Write code faster with AI in your GitLab environment' />
+        <SolutionExplanationSection
+            title='Write code faster with AI in your GitLab environment'
+            explanationCardData={explanationCardData}
+        />
         <SearchDescriptionSection
             title='Grok and understand your entire codebase'
             description='Search your entire GitLab codebase along with all other code hosts at any scale.'

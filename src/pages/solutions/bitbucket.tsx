@@ -10,6 +10,26 @@ import { SearchDescriptionSection } from '../../components/solutions/SearchDescr
 import { SolutionExplanationSection } from '../../components/solutions/SolutionExplanationSection'
 import { carouselImages } from '../code-search'
 
+const explanationCardData = [
+    {
+        title: 'AI personalized to your code',
+        description:
+            'Cody understands your entire Bitbucket codebase to help explain and write contextually-aware code.',
+        className: 'order-3 md:order-1',
+    },
+    {
+        title: 'Generate code with chat and commands',
+        description: 'Ask Cody to generate code, unit tests, or docs. Autocomplete code in any programming language.',
+        className: 'order-1 md:order-2',
+    },
+    {
+        title: 'Choose your favorite LLM',
+        description:
+            'Choose from multiple LLM options from Anthropic, OpenAI, and more. Bring your own LLM key with Amazon Bedrock and Azure OpenAI.',
+        className: 'order-2 md:order-3',
+    },
+]
+
 const Bitbucket: FunctionComponent = () => (
     <Layout
         meta={{
@@ -17,7 +37,7 @@ const Bitbucket: FunctionComponent = () => (
             description:
                 "Enhance your Bitbucket experience with Sourcegraph's Code intelligence platform. Try Cody for contextual code writing, command generation, and AI autocompletion. Use the best code search tool for Bitbucket with seamless integration, personalized code insights, and automation for large-scale code changes. Perfect for developers looking to streamline their workflow and understand their codebase at any scale. Contact us for a demo or start an enterprise trial today.",
         }}
-        className='bg-gray-50 overflow-hidden'
+        className='overflow-hidden bg-gray-50'
     >
         <IntroCard
             title='Understand and write code faster with Bitbucket + AI'
@@ -36,6 +56,7 @@ const Bitbucket: FunctionComponent = () => (
             title='Code Intelligence for Bitbucket'
             titleTextColor='!text-[#0F111A]'
             subTitleTextColor='!text-[#343A4D]'
+            explanationCardData={explanationCardData}
         />
         <SearchDescriptionSection
             title='The best code search tool for code hosted on Bitbucket'

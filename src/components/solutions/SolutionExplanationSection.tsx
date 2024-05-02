@@ -12,12 +12,14 @@ interface SolutionExplanationSectionProps {
     title: string
     titleTextColor?: string
     subTitleTextColor?: string
+    explanationCardData: { title: string; description: string; className: string }[]
 }
 
 export const SolutionExplanationSection: FunctionComponent<SolutionExplanationSectionProps> = ({
     title,
     titleTextColor,
     subTitleTextColor,
+    explanationCardData,
 }) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.md
@@ -29,7 +31,7 @@ export const SolutionExplanationSection: FunctionComponent<SolutionExplanationSe
             <div className={classNames('w-full text-center md:w-[508px]', titleTextColor ?? '!text-gray-700')}>
                 <Heading
                     size='h3'
-                    className='!font-["Source_Sans_Pro"] !text-4xl !font-semibold !leading-[43px] !-tracking-[1px] md:!text-[40px] md:!leading-10'
+                    className="!font-['Source_Sans_Pro'] !text-4xl !font-semibold !leading-[43px] !-tracking-[1px] md:!text-[40px] md:!leading-10"
                 >
                     {title}
                 </Heading>
@@ -42,27 +44,19 @@ export const SolutionExplanationSection: FunctionComponent<SolutionExplanationSe
                 )}
             </div>
             <div className='relative mt-0 flex flex-col gap-6 md:-mt-[134px] md:flex-row'>
-                <CodyCard
-                    title='AI personalized to your code'
-                    description='Cody pulls from your entire GitLab codebase to explain and write contextually-aware code.'
-                    className='order-3 rounded-2xl border border-gray-200 bg-white py-3xl px-lg md:order-1'
-                    titleTextColor={titleTextColor}
-                    subTitleTextColor={subTitleTextColor}
-                />
-                <CodyCard
-                    title='Generate code with chat and commands'
-                    description='Ask Cody to generate code, unit tests, or docs. Autocomplete code in any programming language.'
-                    className='order-1 rounded-2xl border border-gray-200 bg-white py-3xl px-lg md:order-2'
-                    titleTextColor={titleTextColor}
-                    subTitleTextColor={subTitleTextColor}
-                />
-                <CodyCard
-                    title='Choose your favorite LLM'
-                    description='Choose from multiple LLM options from Anthropic, OpenAI, and more. Bring your own LLM key with Amazon Bedrock and Azure OpenAI.'
-                    className='order-2 rounded-2xl border border-gray-200 bg-white py-3xl px-lg md:order-3'
-                    titleTextColor={titleTextColor}
-                    subTitleTextColor={subTitleTextColor}
-                />
+                {explanationCardData.map(card => (
+                    <CodyCard
+                        key={card.title}
+                        title={card.title}
+                        description={card.description}
+                        className={classNames(
+                            'rounded-2xl border border-gray-200 bg-white py-3xl px-lg',
+                            card.className
+                        )}
+                        titleTextColor={titleTextColor}
+                        subTitleTextColor={subTitleTextColor}
+                    />
+                ))}
             </div>
         </ContentSection>
     )
