@@ -5,8 +5,8 @@ import { ContentSection, Layout } from '../../components'
 const ComparePage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph Cody Compare',
-            description: 'Feature comparison of Sourcegraph Cody and other code AI assistants.',
+            title: 'Sourcegraph Webinars',
+            description: 'Join us for live events and webinars on coding with AI.',
         }}
         hero={
             <div className="relative isolate bg-gray-50 px-6 pt-20 lg:px-8">
