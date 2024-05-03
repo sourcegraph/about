@@ -18,6 +18,10 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 
 [Cody for VS Code v1.16](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) is now available. This update includes expanded functionality for custom commands, quality-of-life updates to Cody’s Ollama compatibility, and two new experimental features for power users.
 
+<YouTube
+  id="EFYTLKoLyVQ"
+  showTitle={true}
+/>
 
 ## Insert and edit code with more powerful custom commands
 
