@@ -24,7 +24,7 @@ export const CodyIde: FunctionComponent = () => (
                     </div>
                 </div>
                 <div className="flex items-center gap-x-4 md:px-6">
-                    <img className="h-[50px] w-[50px]" src="/icons/intelliJ.svg" alt="IntelliJ IDE marketplace" />{' '}
+                    <img className="h-[50px] w-[50px]" src="/icons/IntelliJ.svg" alt="IntelliJ IDE marketplace" />{' '}
                     <div>
                         <Heading size="h4" className="!text-2xl text-gray-200">
                             JetBrains IDEs

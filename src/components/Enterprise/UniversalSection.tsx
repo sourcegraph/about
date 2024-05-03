@@ -2,19 +2,7 @@ import { FunctionComponent } from 'react'
 
 import { ContentSection, Heading } from '..'
 
-import { EnterpriseIcon } from './EnterpriseIcon'
-
-const enterpriseDevPlatforms = [
-    { src: '/enterprise/vscode.svg', alt: 'Visual Studio Code' },
-    { src: '/enterprise/github.svg', alt: 'GitHub' },
-    { src: '/enterprise/bitbucket.svg', alt: 'Bitbucket' },
-    { src: '/enterprise/intellij.svg', alt: 'IntelliJ' },
-    { src: '/enterprise/neovim.svg', alt: 'Neovim' },
-    { src: '/enterprise/golang.svg', alt: 'Golang' },
-    { src: '/enterprise/gerrit.svg', alt: 'Gerrit' },
-    { src: '/enterprise/gitlab.svg', alt: 'GitLab' },
-    { src: '/enterprise/perforce.svg', alt: 'Perforce' },
-]
+import { DevPlatformsSection } from './DevPlatformsSection'
 
 export const UniversalSection: FunctionComponent = () => (
     <ContentSection
@@ -31,22 +19,6 @@ export const UniversalSection: FunctionComponent = () => (
                 your code.
             </p>
         </div>
-        <div className="flex w-auto justify-center gap-[37px] md:gap-[31.97px]">
-            <div className="relative bottom-[17px] flex flex-col gap-[25.21px]">
-                {enterpriseDevPlatforms.slice(0, 3).map(({ src, alt }) => (
-                    <EnterpriseIcon className="flex justify-center" key={alt} src={src} alt={alt} />
-                ))}
-            </div>
-            <div className="relative flex flex-col gap-[25px] md:top-[21px]">
-                {enterpriseDevPlatforms.slice(3, 6).map(({ src, alt }) => (
-                    <EnterpriseIcon className="flex justify-center" key={alt} src={src} alt={alt} />
-                ))}
-            </div>
-            <div className="relative bottom-[17px] flex flex-col gap-[25px]">
-                {enterpriseDevPlatforms.slice(6).map(({ src, alt }) => (
-                    <EnterpriseIcon className="flex justify-center" key={alt} src={src} alt={alt} />
-                ))}
-            </div>
-        </div>
+        <DevPlatformsSection />
     </ContentSection>
 )
