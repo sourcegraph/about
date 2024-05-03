@@ -78,6 +78,16 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
+        title: 'Bitbucket and Sourcegraph',
+        link: '/solutions/bitbucket',
+        contentType: 'guide',
+        subjects: ['code search', 'batch changes', 'code insights', 'code monitoring', 'integrations'],
+        description: 'Sourcegraph provides best-in-class search and AI assistance for code hosted on Bitbucket.',
+        publishDate: '2024-04-19T08:32:24Z',
+        keyword: ['BitBucket', 'code search', 'batch changes', 'code insights', 'code monitoring', 'integrations'],
+    },
+    {
+        featured: false,
         title: 'How Nutanix Remediated the Vulnerability in 4 Days',
         link: '/webinars/preparing-for-the-next-log4j',
         contentType: 'virtual event',

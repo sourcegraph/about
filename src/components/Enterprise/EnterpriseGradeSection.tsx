@@ -1,9 +1,14 @@
 import { FunctionComponent, ReactNode } from 'react'
 
+import classNames from 'classnames'
 import Link from 'next/link'
 import { MdDoNotDisturb, MdLock, MdOutlineSecurity, MdVpnKey } from 'react-icons/md'
 
 import { ContentSection, Heading } from '..'
+
+interface EnterpriseGradeSectionProps {
+    parentClassName?: string
+}
 
 const securityCardFeatures = [
     {
@@ -24,10 +29,13 @@ const securityCardFeatures = [
     },
 ]
 
-export const EnterpriseGradeSection: FunctionComponent = () => (
+export const EnterpriseGradeSection: FunctionComponent<EnterpriseGradeSectionProps> = ({ parentClassName }) => (
     <ContentSection
-        className="max-w-[1232px] rounded-2xl border-1 border-gray-200 bg-white py-16 px-6 md:px-10"
-        parentClassName="!py-0 md:px-[80px]"
+        className="max-w-[1280px] rounded-2xl border-1 border-gray-200 bg-white py-16 px-6 md:px-10"
+        parentClassName={classNames({
+            parentClassName,
+            '!py-0 md:px-[80px]': !parentClassName,
+        })}
     >
         <Heading size="h6" className="mb-4">
             cody
@@ -50,7 +58,11 @@ export const EnterpriseGradeSection: FunctionComponent = () => (
                         <Heading size="h2" className="!leading-10 !tracking-[-1px]">
                             Guardrails to catch licensed code
                         </Heading>
-                        <p className="mb-0 text-[18px] font-normal leading-[27px] -tracking-[0.25px]">
+                        <p
+                            className={classNames('mb-0 text-[18px] font-normal leading-[27px] -tracking-[0.25px]', {
+                                '!font-sans': parentClassName,
+                            })}
+                        >
                             Sourcegraph automatically checks AI suggestions against open source code and highlights
                             matches to mitigate IP risk.
                         </p>

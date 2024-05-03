@@ -277,13 +277,15 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
 
     const updateFormSubmissionSource = (newSource: string): void => {
         const currentQuery = { ...router.query }
-       if (currentQuery.form_submission_source) {return}
+        if (currentQuery.form_submission_source) {
+            return
+        }
 
-       currentQuery.form_submission_source = newSource
-       // eslint-disable-next-line @typescript-eslint/no-floating-promises
-       router.replace({
-           query: currentQuery,
-       })
+        currentQuery.form_submission_source = newSource
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        router.replace({
+            query: currentQuery,
+        })
     }
 
     useEffect(() => {

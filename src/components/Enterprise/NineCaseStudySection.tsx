@@ -8,7 +8,7 @@ import { ContentSection, Heading } from '..'
 export const NineCaseStudySection: FunctionComponent = () => (
     <ContentSection
         parentClassName="!py-0 md:px-[80px]"
-        className="flex max-w-[1232px] flex-col gap-16 rounded-2xl border-1 bg-violet-700 py-16 px-6 text-white md:flex-row md:gap-[160px] md:px-20"
+        className="flex max-w-[1280px] flex-col gap-16 rounded-2xl border-1 bg-violet-700 py-16 px-6 text-white md:flex-row md:gap-[160px] md:px-20"
     >
         <div className="flex max-w-[511px] flex-col gap-[70px]">
             <img src="/enterprise/nine.svg" className="w-[188px]" alt="" />
