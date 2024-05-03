@@ -1,9 +1,14 @@
 import { FunctionComponent, ReactNode } from 'react'
 
+import classNames from 'classnames'
 import Link from 'next/link'
 import { MdDoNotDisturb, MdLock, MdOutlineSecurity, MdVpnKey } from 'react-icons/md'
 
 import { ContentSection, Heading } from '..'
+
+interface EnterpriseGradeSectionProps {
+    parentClassName?: string
+}
 
 const securityCardFeatures = [
     {
@@ -24,10 +29,13 @@ const securityCardFeatures = [
     },
 ]
 
-export const EnterpriseGradeSection: FunctionComponent = () => (
+export const EnterpriseGradeSection: FunctionComponent<EnterpriseGradeSectionProps> = ({ parentClassName }) => (
     <ContentSection
         className="max-w-[1280px] rounded-2xl border-1 border-gray-200 bg-white py-16 px-6 md:px-10"
-        parentClassName="!py-0 md:px-[80px]"
+        parentClassName={classNames({
+            parentClassName,
+            '!py-0 md:px-[80px]': !parentClassName,
+        })}
     >
         <Heading size="h6" className="mb-4">
             cody

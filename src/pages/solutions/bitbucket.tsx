@@ -37,43 +37,45 @@ const Bitbucket: FunctionComponent = () => (
             description:
                 "Enhance your Bitbucket experience with Sourcegraph's Code intelligence platform. Try Cody for contextual code writing, command generation, and AI autocompletion. Use the best code search tool for Bitbucket with seamless integration, personalized code insights, and automation for large-scale code changes. Perfect for developers looking to streamline their workflow and understand their codebase at any scale. Contact us for a demo or start an enterprise trial today.",
         }}
-        className='overflow-hidden bg-gray-50'
+        className="overflow-hidden bg-gray-50"
     >
         <IntroCard
-            title='Understand and write code faster with Bitbucket + AI'
-            description='Sourcegraph’s AI coding assistant and Code Search integrates with Bitbucket Cloud and Bitbucket Data Center.'
-            mainImageUrl='/solutions/bitbucket/bitbucket-enterprise-context.svg'
-            contactButtonLabel='Contact us'
-            alt='BitBucket'
+            title="Understand and write code faster with Bitbucket + AI"
+            description="Sourcegraph’s AI coding assistant and Code Search integrates with Bitbucket Cloud and Bitbucket Data Center."
+            mainImageUrl="/solutions/bitbucket/bitbucket-enterprise-context.svg"
+            contactButtonLabel="Contact us"
+            alt="BitBucket"
             scaleMobileImage={true}
-            textColor='!text-[#0F111A]'
-            buttonHref='/contact/request-info-bitbucket?form_submission_source=solutions-bitbucket'
+            textColor="!text-[#0F111A]"
+            buttonHref="/contact/request-info-bitbucket?form_submission_source=solutions-bitbucket"
         />
-        <div className='py-md md:py-3xl'>
+        <div className="py-md md:py-3xl">
             <InfiniteCarousel duration={400} images={carouselImages} />
         </div>
         <SolutionExplanationSection
-            title='Code Intelligence for Bitbucket'
-            titleTextColor='!text-[#0F111A]'
-            subTitleTextColor='!text-[#343A4D]'
+            title="Code Intelligence for Bitbucket"
+            titleTextColor="!text-[#0F111A]"
+            subTitleTextColor="!text-[#343A4D]"
             explanationCardData={explanationCardData}
         />
+        <div className="mb-[64px]">
+            <EnterpriseGradeSection parentClassName="!py-0 !px-sm mdi:!py-0 mdi:!px-lg" />
+        </div>
         <SearchDescriptionSection
-            title='The best code search tool for code hosted on Bitbucket'
-            description='Search and understand your entire Bitbucket codebase at any scale.'
-            imageUrl='/solutions/bitbucket/code-search.svg'
-            titleTextColor='!text-[#0F111A]'
-            subTitleTextColor='!text-[#343A4D]'
+            title="The best code search tool for code hosted on Bitbucket"
+            description="Search and understand your entire Bitbucket codebase at any scale."
+            imageUrl="/solutions/bitbucket/code-search.svg"
+            titleTextColor="!text-[#0F111A]"
+            subTitleTextColor="!text-[#343A4D]"
         />
-        <div className='!py-md md:!py-5xl'>
+        <div className="!py-md md:!py-5xl">
             <NineCaseStudySection />
         </div>
-        <AutomationSection titleTextColor='!text-[#0F111A]' subTitleTextColor='!text-[#343A4D]' />
-        <EnterpriseGradeSection />
+        <AutomationSection titleTextColor="!text-[#0F111A]" subTitleTextColor="!text-[#343A4D]" />
         <ContactUsCta
-            buttonClassNames='!max-w-full'
-            parentClassNames='mdi:!py-5xl mdi:!px-0 !px-sm !py-md'
-            className='px-2xl py-3xl'
+            buttonClassNames="!max-w-full"
+            parentClassNames="mdi:!py-5xl mdi:!px-0 !px-sm !py-md"
+            className="px-2xl py-3xl"
         />
     </Layout>
 )
