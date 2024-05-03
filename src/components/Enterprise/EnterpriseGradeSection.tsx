@@ -58,7 +58,11 @@ export const EnterpriseGradeSection: FunctionComponent<EnterpriseGradeSectionPro
                         <Heading size="h2" className="!leading-10 !tracking-[-1px]">
                             Guardrails to catch licensed code
                         </Heading>
-                        <p className="mb-0 text-[18px] font-normal leading-[27px] -tracking-[0.25px]">
+                        <p
+                            className={classNames('mb-0 text-[18px] font-normal leading-[27px] -tracking-[0.25px]', {
+                                '!font-sans': parentClassName,
+                            })}
+                        >
                             Sourcegraph automatically checks AI suggestions against open source code and highlights
                             matches to mitigate IP risk.
                         </p>

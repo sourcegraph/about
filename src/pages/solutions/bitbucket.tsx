@@ -58,8 +58,8 @@ const Bitbucket: FunctionComponent = () => (
             subTitleTextColor="!text-[#343A4D]"
             explanationCardData={explanationCardData}
         />
-        <div className="mb-[64px]">
-            <EnterpriseGradeSection parentClassName="!py-0 !px-sm mdi:!py-0 mdi:!px-lg" />
+        <div className="relative -mt-[64px]">
+            <EnterpriseGradeSection parentClassName="!py-0 !px-sm mdi:!py-0 mdi:!px-lg !my-0 md:!py-0" />
         </div>
         <SearchDescriptionSection
             title="The best code search tool for code hosted on Bitbucket"
@@ -71,7 +71,11 @@ const Bitbucket: FunctionComponent = () => (
         <div className="!py-md md:!py-5xl">
             <NineCaseStudySection />
         </div>
-        <AutomationSection titleTextColor="!text-[#0F111A]" subTitleTextColor="!text-[#343A4D]" />
+        <AutomationSection
+            parentClassName="md:!px-lg md:!pb-0 overflow-hidden !px-sm !py-0"
+            titleTextColor="!text-[#0F111A]"
+            subTitleTextColor="!text-[#343A4D]"
+        />
         <ContactUsCta
             buttonClassNames="!max-w-full"
             parentClassNames="mdi:!py-5xl mdi:!px-0 !px-sm !py-md"
