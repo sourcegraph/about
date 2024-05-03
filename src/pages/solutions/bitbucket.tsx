@@ -62,7 +62,7 @@ const Bitbucket: FunctionComponent = () => (
             <EnterpriseGradeSection parentClassName="!py-0 !px-sm mdi:!py-0 mdi:!px-lg !my-0 md:!py-0" />
         </div>
         <SearchDescriptionSection
-            title="The best code search tool for code hosted on Bitbucket"
+            title="The best search tool for code hosted on Bitbucket"
             description="Search and understand your entire Bitbucket codebase at any scale."
             imageUrl="/solutions/bitbucket/code-search.svg"
             titleTextColor="!text-[#0F111A]"
