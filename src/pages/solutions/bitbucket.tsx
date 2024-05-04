@@ -41,7 +41,7 @@ const Bitbucket: FunctionComponent = () => (
     >
         <IntroCard
             title="Understand and write code faster with Bitbucket + AI"
-            description="Sourcegraph’s AI coding assistant and Code Search integrates with Bitbucket Cloud and Bitbucket Data Center."
+            description="Sourcegraph’s AI coding assistant and Code Search integrate with Bitbucket Cloud and Bitbucket Data Center."
             mainImageUrl="/solutions/bitbucket/bitbucket-enterprise-context.svg"
             contactButtonLabel="Contact us"
             alt="BitBucket"
