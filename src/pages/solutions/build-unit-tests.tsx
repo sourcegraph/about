@@ -9,9 +9,9 @@ import { CardSection, CardDescription, QualtricsCard } from '../../components/So
 import { useAuthModal } from '../../context/AuthModalContext'
 import { carouselImages } from '../code-search'
 
-const GenerateUnitTestsPage: FunctionComponent = () => {
+const BuildUnitTestsPage: FunctionComponent = () => {
     const { openModal } = useAuthModal()
-    const handleOpenModal = (): void => openModal('generate-unit-tests')
+    const handleOpenModal = (): void => openModal('build-unit-tests')
 
     return (
         <Layout
@@ -44,7 +44,7 @@ const GenerateUnitTestsPage: FunctionComponent = () => {
                             </button>
 
                             <Link
-                                href="https://sourcegraph.com/contact/request-info?form_submission_source=solutions-unit-testing"
+                                href="https://sourcegraph.com/contact/request-info?form_submission_source=solutions-build-unit-tests"
                                 title="Contact us"
                                 className="btn text-center text-violet-500 outline outline-1 outline-violet-500 hover:text-violet-400 hover:outline-violet-400"
                                 type="button"
@@ -62,7 +62,7 @@ const GenerateUnitTestsPage: FunctionComponent = () => {
                             >
                                 <source
                                     type="video/mp4"
-                                    src="/solutions/generate-unit-tests/generate-unit-tests.mp4"
+                                    src="/solutions/build-unit-tests/generate-unit-tests.mp4"
                                     data-cookieconsent="ignore"
                                 />
                             </video>
@@ -117,7 +117,7 @@ const GenerateUnitTestsPage: FunctionComponent = () => {
                 <div className="relative flex w-full items-start justify-end">
                     <img
                         className="w-full object-right-top md:max-w-[500px] xl:max-w-[688px]"
-                        src="/solutions/generate-unit-tests/generating-unit-test.svg"
+                        src="/solutions/build-unit-tests/generating-unit-test.svg"
                         alt="Cody generating a unit test using the Jest framework and React testing library"
                     />
                 </div>
@@ -125,10 +125,10 @@ const GenerateUnitTestsPage: FunctionComponent = () => {
 
             <QualtricsCard />
             <div className="md:-mb-4">
-                <CodyCta source="Generate Unit Tests Page" isCodyPage={true} />
+                <CodyCta source="Build Unit Tests Page" isCodyPage={true} />
             </div>
         </Layout>
     )
 }
 
-export default GenerateUnitTestsPage
+export default BuildUnitTestsPage
