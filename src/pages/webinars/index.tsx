@@ -7,6 +7,7 @@ const ComparePage: FunctionComponent = () => (
         meta={{
             title: 'Sourcegraph Webinars',
             description: 'Join us for live events and webinars on coding with AI.',
+            image: 'https://sourcegraph.com/assets/webinars/webinar-og.png',
         }}
         hero={
             <div className="relative isolate bg-gray-50 px-6 pt-20 lg:px-8">
