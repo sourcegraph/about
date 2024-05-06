@@ -72,7 +72,7 @@ export const resourceItems: Resource[] = [
         contentType: 'guide',
         subjects: ['code search', 'batch changes', 'code insights', 'code monitoring', 'integrations'],
         description:
-            "Sourcegraph provides best-in-class search and AI assistance for code hosted on GitLab.",
+            'Sourcegraph provides best-in-class search and AI assistance for code hosted on GitLab.',
         publishDate: '2023-03-08T17:32:24Z',
         keyword: ['GitLab', 'code search', 'batch changes', 'code insights', 'code monitoring', 'integrations'],
     },
