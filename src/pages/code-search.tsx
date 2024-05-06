@@ -9,7 +9,8 @@ import { CodeSearchCard } from '../components/Code-search/CodeSearchCard'
 export const carouselImages = [
     { src: '/home/carousel/1password-logo.svg', className: 'w-[208px] h-[40px] mx-6' },
     { src: '/home/carousel/reddit-logo-simple.svg', className: 'w-[131px] h-[37px] mx-6' },
-    { src: '/home/carousel/databricks-logo.svg', className: 'w-[205px] h-[30px] mx-6' },
+    { src: '/home/carousel/leidos-logo.svg', className: 'w-[224px] h-[53px] mx-6' },
+    { src: '/home/carousel/palo-alto-logo.svg', className: 'w-[257px] h-[47px] mx-6' },
     { src: '/home/carousel/qualtrics-logo.svg', className: 'w-[171px] h-[54.9px] mx-6' },
     { src: '/home/carousel/canva-logo.svg', className: 'w-[112px] h-[36px] mx-6' },
     { src: '/home/carousel/podium-logo.svg', className: 'w-[173px] h-[37px] mx-6' },

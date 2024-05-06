@@ -36,8 +36,8 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
 
                 <Heading
                     size="h3"
-                    className={classNames('mt-4 max-w-[413.5px] text-2xl text-gray-500', {
-                        'leading-[30px] !tracking-[-0.25px]': isCodyPage,
+                    className={classNames('mt-4 max-w-[413.5px] font-sans text-[18px] text-gray-500', {
+                        'leading-[27px] !tracking-[-0.25px]': isCodyPage,
                     })}
                 >
                     Use Cody for free in your IDE, no credit card required.
@@ -73,8 +73,8 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
                 </Heading>
                 <Heading
                     size="h3"
-                    className={classNames('text-2xl text-white text-opacity-80', {
-                        'leading-[30px] !tracking-[-0.25px]': isCodyPage,
+                    className={classNames('font-sans text-[18px] text-white text-opacity-80', {
+                        'leading-[27px] -tracking-[0.25px]': isCodyPage,
                     })}
                 >
                     Cody Enterprise provides additional security, scalability, and control for your organization.

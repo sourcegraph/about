@@ -46,6 +46,28 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
+        title: 'Build unit tests with AI',
+        link: '/solutions/build-unit-tests',
+        contentType: 'guide',
+        subjects: ['cody'],
+        description:
+            'Cody lives in your IDE sidebar and generates unit tests using AI, considering your existing code to create relevant tests.',
+        publishDate: '2024-05-06T17:32:24Z',
+        keyword: ['AI', 'Cody'],
+    },
+    {
+        featured: true,
+        title: 'Big Code in the AI era',
+        link: '/big-code/big-code-in-ai-era',
+        contentType: 'guide',
+        subjects: [],
+        description:
+            'Developers are struggling more than ever with issues around tech debt, maintenance, collaboration, and scalability. But with the overnight AI boom, the pain of Big Code is only getting worse.',
+        publishDate: '2023-06-16T17:32:24Z',
+        keyword: ['Big Code', 'AI', 'Cody'],
+    },
+    {
+        featured: false,
         title: 'The Total Economic Impact™ of Sourcegraph code intelligence platform',
         link: '/forrester-total-economic-impact',
         contentType: 'guide',
