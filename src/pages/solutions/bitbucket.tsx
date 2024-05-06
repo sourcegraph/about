@@ -44,7 +44,7 @@ const Bitbucket: FunctionComponent = () => (
             description="Sourcegraph’s AI coding assistant and Code Search integrate with Bitbucket Cloud and Bitbucket Data Center."
             mainImageUrl="/solutions/bitbucket/bitbucket-enterprise-context.svg"
             contactButtonLabel="Contact us"
-            alt="BitBucket"
+            alt="Bitbucket"
             scaleMobileImage={true}
             textColor="!text-[#0F111A]"
             buttonHref="/contact/request-info-bitbucket?form_submission_source=solutions-bitbucket"

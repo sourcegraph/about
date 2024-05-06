@@ -30,7 +30,7 @@ const explanationCardData = [
     },
 ]
 
-const CodeIntelligenceForGitlab: FunctionComponent = () => (
+const GitLab: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Code intelligence for GitLab',
@@ -40,13 +40,13 @@ const CodeIntelligenceForGitlab: FunctionComponent = () => (
         className='overflow-hidden bg-gray-50'
     >
         <IntroCard
-            title='Code Intelligence for GitLab'
+            title='Code intelligence for GitLab'
             description='Write and understand code in GitLab environments with native
                             Cody and Code Search integrations.'
             mainImageUrl='/solutions/gitlab/enterprise-context.svg'
             contactButtonLabel='Contact us for a demo'
             scaleMobileImage={true}
-            alt='Gitlab'
+            alt='GitLab'
         />
         <div className='py-md md:py-3xl'>
             <InfiniteCarousel duration={400} images={carouselImages} />
@@ -106,4 +106,4 @@ const TestimonialCard: FunctionComponent = () => (
     </ContentSection>
 )
 
-export default CodeIntelligenceForGitlab
+export default GitLab
