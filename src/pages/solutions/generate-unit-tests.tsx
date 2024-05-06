@@ -18,7 +18,7 @@ const GenerateUnitTestsPage: FunctionComponent = () => {
             meta={{
                 title: 'Build unit tests with AI',
                 description:
-                    'Cody generates unit tests with a single button click, making unit testing a matter of hours rather than days.',
+                    'Cody lives in your IDE sidebar and generates unit tests using AI, considering your existing code to create relevant tests.',
             }}
             className="bg-gray-50"
             hero={
@@ -118,7 +118,7 @@ const GenerateUnitTestsPage: FunctionComponent = () => {
                     <img
                         className="w-full object-right-top md:max-w-[500px] xl:max-w-[688px]"
                         src="/solutions/generate-unit-tests/generating-unit-test.svg"
-                        alt="Generating Unit Test"
+                        alt="Cody generating a unit test using the Jest framework and React testing library"
                     />
                 </div>
             </ContentSection>
