@@ -9,7 +9,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/m
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/may-2024/sourcegraph-may2024-release-image.png
 changelogItems:
   - description: "Increased both the performance and the default timeout for language usage insights, which will significantly reduce pain for customers with large repos. Both are configurable using environment variables on the frontend container."
-    url:
+    url: https://sourcegraph.com/docs/code_insights/explanations/administration_and_security_of_code_insights#language-stats-performance-configuration
     category: Code Insights
   - description: "Improved Zoekt CPU usage and scalability for customers with a large number of repos."
     url:
@@ -31,7 +31,7 @@ changelogItems:
 
 <br/>
 
-Sourcegraph 5.3.x brings improvements to Code Search with a new search filter [rev:at.time()](https://github.com/sourcegraph/sourcegraph/pull/61513) that provides point-in-time searching. This allows for searching a repo’s state at a specific timestamp rather than at a specific commit, branch, or tag.
+Sourcegraph 5.4.0 brings improvements to Code Search with a new search filter [rev:at.time()](https://sourcegraph.com/docs/code-search/queries#structural-search) that provides point-in-time searching. This allows for searching a repo’s state at a specific timestamp rather than at a specific commit, branch, or tag.
 
 
 <br/>
@@ -42,3 +42,4 @@ Sourcegraph 5.3.x brings improvements to Code Search with a new search filter [r
 
 Code Insights chart drill-downs now utilize the new point-in-time search filter to more accurately represent the results that produced a data point on a chart. Previously a diff search was used to show the difference between a selected point in time on a chart and the one before it, but Code Insights can now show a repository’s state at that exact timestamp. This functionality is useful for those searching large repositories or repositories with lots of history.
 
+Sourcegraph 5.4.0 is now available and users self-hosting Sourcegraph can upgrade their instances. Sourcegraph Cloud users will receive this update within the coming days.
