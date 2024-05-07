@@ -45,7 +45,7 @@ This model offers two distinct differences for Cody customers:
 
 2.  **Pricing control**. In this model, customers manage their own AI model costs via the Amazon Bedrock service. This also means they can choose from Amazon Bedrock's pricing options and consolidate their AI costs with their AWS bill.
 
-TThe following diagram illustrates the data flow when using Cody with Amazon Bedrock:
+The following diagram illustrates the data flow when using Cody with Amazon Bedrock:
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/integrating-cody-with-amazon-bedrock/enterprise-architecture-aws-v0.png"
