@@ -30,7 +30,7 @@ These features make Bedrock a compelling offering to use in conjunction with Cod
 
 ### Standard Cody deployment
 
-By default, Cody operates by routing requests through the [Cody Gateway](https://docs.sourcegraph.com/cody/explanations/cody_gateway), which accesses LLM service APIs (such as Anthropic's APIs) through the public internet. The following diagram illustrates the standard deployment model:
+By default, Cody operates by routing requests through the [Cody Gateway](https://sourcegraph.com/docs/cody/core-concepts/cody-gateway), which accesses LLM service APIs (such as Anthropic's APIs) through the public internet. The following diagram illustrates the standard deployment model:
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/integrating-cody-with-amazon-bedrock/enterprise-architecture-cloud-v2.png"
@@ -56,4 +56,4 @@ The following diagram illustrates the data flow when using Cody with Amazon Bedr
 
 ### Getting started with Cody and Amazon Bedrock
 
-Cody with Amazon Bedrock lets organizations use AI coding assistants for their developers without sacrificing security or data control. If you’re interested in using Cody with Amazon Bedrock, [contact us about Cody Enterprise](https://about.sourcegraph.com/contact/request-info). If you're already a Cody Enterprise customer and you'd like to configure Amazon Bedrock for your account, you can [find instructions in the docs](https://docs.sourcegraph.com/cody/overview/enable-cody-enterprise#anthropic-claude-through-aws-bedrock) or contact your Technical Advisor.
+Cody with Amazon Bedrock lets organizations use AI coding assistants for their developers without sacrificing security or data control. If you’re interested in using Cody with Amazon Bedrock, [contact us about Cody Enterprise](https://sourcegraph.com/contact/request-info). If you're already a Cody Enterprise customer and you'd like to configure Amazon Bedrock for your account, you can [find instructions in the docs](https://sourcegraph.com/docs/cody/clients/enable-cody-enterprise#anthropic-claude-through-aws-bedrock) or contact your Technical Advisor.
