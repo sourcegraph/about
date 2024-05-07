@@ -1,7 +1,7 @@
 ---
 title: "Integrating Cody with Amazon Bedrock"
 authors:
-  - name: Alex Isken, Kelvin Yap
+  - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
   - name: Kelvin Yap
     url: https://handbook.sourcegraph.com/team/#kelvin-yap
