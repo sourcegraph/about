@@ -1,10 +1,12 @@
 ---
 title: "Integrating Cody with Amazon Bedrock"
 authors:
-  - name: Tom Pinckney
-    url: https://handbook.sourcegraph.com/team/#tom-pinckney
-publishDate: 2023-10-16T10:00-07:00
-description: "Developers can now use Amazon Bedrock to provide the LLM backend for Cody."
+  - name: Alex Isken
+    url: https://handbook.sourcegraph.com/team/#alex-isken
+  - name: Kelvin Yap
+    url: https://handbook.sourcegraph.com/team/#kelvin-yap
+publishDate: 2024-05-07T10:00-07:00
+description: "Security-conscious enterprises can use Amazon Bedrock to provide the LLM backend for Cody."
 tags: [blog]
 slug: 'integrating-cody-with-amazon-bedrock'
 published: true
@@ -12,41 +14,46 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/integrating-co
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/integrating-cody-with-amazon-bedrock/amazon-bedrock-hero.png
 ---
 
-The field of AI continues to advance at lightspeed, with new products and services in the AI ecosystem emerging every week. In September, AWS [announced the general availability of Amazon Bedrock](https://aws.amazon.com/blogs/aws/amazon-bedrock-is-now-generally-available-build-and-scale-generative-ai-applications-with-foundation-models/), their managed service that provides on-demand access to [foundation models (FMs)](https://aws.amazon.com/what-is/foundation-models/).
+AI coding assistants like Cody offer significant advantages in developer productivity and innovation. Like any other AI application, these coding assistants also utilize foundational AI models. One popular way of using these models is through public APIs provided either directly by the model provider or hosted by third-party inference providers. This reliance on external AI providers causes some security-conscious enterprises to have concerns about data privacy, intellectual property protection, and the risk of sensitive code getting exposed or compromised.
 
-At Sourcegraph, we recently [announced support for integrating Amazon Bedrock](https://about.sourcegraph.com/blog/feature-release-october-2023). Cody Enterprise customers can now use Anthropic's Claude 2 and Claude Instant models via Bedrock as the LLM backend for the AI coding assistant.
+Cody allays such concerns by supporting private and secure consumption of foundation models through Amazon Bedrock. This means customers can run foundation models effectively like any other resource in their AWS environment, and securely connect these models to Sourcegraph Cody, also running within the same environment.
+
+This allows for pairing Cody's zero retention / training of data with Bedrock's robust security protocols to provide organizations peace of mind about security and control of their sensitive data.
 
 ### What is Amazon Bedrock
 
-[Amazon Bedrock](https://aws.amazon.com/bedrock/) is a fully managed service that provides AWS customers access to a number of different foundation models on-demand, including models from Amazon and other third parties such as Anthropic. This includes Claude 2 and Claude Instant, two of the models commonly used to power Sourcegraph's Cody. Foundation models can be privately customized with your own data stored at Amazon Simple Storage Service (Amazon S3). Users can adjust the hyperparameters to achieve the best model performance.
+[Amazon Bedrock](https://aws.amazon.com/bedrock/) is a fully managed service that provides AWS customers access to several different foundation models on-demand, including models from Amazon and other third parties such as Anthropic. This includes the Claude 3 family, arguably the highest-performing set of models in the market today and [currently available for all Cody users](https://sourcegraph.com/blog/claude-3-now-available-in-cody). Foundation models can be privately customized with your own data stored at Amazon Simple Storage Service (Amazon S3). Users can adjust the hyperparameters to achieve the best model performance.
 
-Bedrock also offers security for the data being sent to and from the model. All data processed by the service is encrypted in transit and at rest, and content sent to the service (such as user prompts and context) is not used to improve the base models, nor is it shared with third-party model providers.
+Bedrock also offers security for the data sent to and from the model. All data processed by the service is encrypted in transit and at rest, and content sent to the service (such as user prompts and context) is not used to improve the base models nor shared with third-party model providers.
 
 These features make Bedrock a compelling offering to use in conjunction with Cody. See the [Amazon Bedrock Security and Compliance guide](https://aws.amazon.com/bedrock/security-compliance/) for a more comprehensive overview of the service's data security.
 
-### Using Cody with Cody Gateway
+### Standard Cody deployment
 
-By default, Cody operates by routing requests through the [Cody Gateway](https://docs.sourcegraph.com/cody/explanations/cody_gateway), which accesses LLM service APIs (such as Anthropic's APIs) through the public internet. However, some organizations would prefer to use an AI service from their existing cloud infrastructure provider. Amazon Bedrock provides this solution.
+By default, Cody operates by routing requests through the [Cody Gateway](https://docs.sourcegraph.com/cody/explanations/cody_gateway), which accesses LLM service APIs (such as Anthropic's APIs) through the public internet. The following diagram illustrates the standard deployment model:
+
+<Figure
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/integrating-cody-with-amazon-bedrock/enterprise-architecture-cloud-v2.png"
+    alt="A diagram showing how Cody talks to the Anthropic API."
+/>
 
 ### Using Cody with Amazon Bedrock
 
-When using Cody with Amazon Bedrock, Cody doesn't talk to the Cody Gateway or Anthropic's APIs. Instead, Cody sends requests to the Bedrock API endpoint within AWS using the customer's own API keys. Today, this integration with Bedrock supports the Claude 2 and Claude Instant models.
+However, some security-conscious organizations are hesitant to process data in such a way, and that’s where Amazon Bedrock can alleviate such concerns. In this configuration, Cody doesn't talk to the Cody Gateway or Anthropic's APIs when using Cody with Amazon Bedrock. Instead, Cody sends requests to the Bedrock API endpoint within AWS utilizing the customer's own API keys.
 
 This model offers two distinct differences for Cody customers:
 
-1.  **Data control**. Using Amazon Bedrock lets customers route requests through their own AWS cloud environment rather than to the Anthropic API. Note that data sent to Amazon Bedrock becomes subject to AWS's own data security policies rather than the security policies that Sourcegraph has negotiated with Anthropic.
+1.  **Data control**. Using Amazon Bedrock lets customers route requests through their own AWS cloud environment rather than to the Anthropic API. Note that data sent to Amazon Bedrock becomes subject to AWS's data security policies rather than the security policies that Sourcegraph has negotiated with Anthropic.
 
 2.  **Pricing control**. In this model, customers manage their own AI model costs via the Amazon Bedrock service. This also means they can choose from Amazon Bedrock's pricing options and consolidate their AI costs with their AWS bill.
 
-The following diagram illustrates the data flow when using Cody with Anthropic's APIs versus Cody with Amazon Bedrock.
+The following diagram illustrates the data flow when using Cody with Amazon Bedrock:
 
 <Figure
-    src="https://storage.googleapis.com/sourcegraph-assets/blog/integrating-cody-with-amazon-bedrock/amazon-bedrock-dataflow.png"
-    alt="A diagram showing how Cody talks to the Anthropic API versus the Bedrock API."
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/integrating-cody-with-amazon-bedrock/enterprise-architecture-aws-v0.png"
+    alt="A diagram showing the dataflow with Anthropic when using Cody with AWS Bedrock."
 />
 
 ### Getting started with Cody and Amazon Bedrock
 
-In summary, using Cody with Amazon Bedrock lets organizations bring code AI to their teams while taking advantage of the data and pricing controls of their existing cloud provider.
-
-If you're not already using Cody and you're interested in using it with Amazon Bedrock, you can [contact us about Cody Enterprise](https://about.sourcegraph.com/contact/request-info). If you're already a Cody Enterprise customer and you'd like to configure Amazon Bedrock for your account, you can [find instructions in the docs](https://docs.sourcegraph.com/cody/overview/enable-cody-enterprise#anthropic-claude-through-aws-bedrock) or contact your Technical Advisor.
+Cody with Amazon Bedrock lets organizations use AI coding assistants for their developers without sacrificing security or data control. If you’re interested in using Cody with Amazon Bedrock, [contact us about Cody Enterprise](https://about.sourcegraph.com/contact/request-info). If you're already a Cody Enterprise customer and you'd like to configure Amazon Bedrock for your account, you can [find instructions in the docs](https://docs.sourcegraph.com/cody/overview/enable-cody-enterprise#anthropic-claude-through-aws-bedrock) or contact your Technical Advisor.
