@@ -2,7 +2,9 @@
 title: "Integrating Cody with Amazon Bedrock"
 authors:
   - name: Alex Isken, Kelvin Yap
-    url:
+    url: https://handbook.sourcegraph.com/team/#alex-isken
+  - name: Kelvin Yap
+    url: https://handbook.sourcegraph.com/team/#kelvin-yap
 publishDate: 2024-05-07T10:00-07:00
 description: "Security-conscious enterprises can use Amazon Bedrock to provide the LLM backend for Cody."
 tags: [blog]
