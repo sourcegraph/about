@@ -19,6 +19,7 @@ interface Video {
     controls?: boolean
     autoPlay?: boolean
     className?: string
+    thumbnail?: string
 }
 
 const hosts = {
@@ -37,6 +38,7 @@ export const Video: FunctionComponent<Video> = ({
     controls = false,
     autoPlay = true,
     className,
+    thumbnail,
 }) => (
     <figure>
         <video
@@ -48,6 +50,7 @@ export const Video: FunctionComponent<Video> = ({
             loop={loop}
             playsInline={true}
             controls={controls}
+            poster={thumbnail}
             title={title}
             // GCS does not set cookies, so we don't want Cookiebot to block this video based on consent
             data-cookieconsent="ignore"
