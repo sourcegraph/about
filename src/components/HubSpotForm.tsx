@@ -27,6 +27,7 @@ declare global {
             forms: []
             addForm: () => void
         }
+        LDBookItV2?: LDBookItV2Props
     }
 }
 
@@ -59,6 +60,20 @@ export interface HubSpotFormProps {
     chiliPiper?: boolean
     overrideFormShorten?: boolean
     form_submission_source?: string
+    bookIt?: boolean
+}
+interface LDBookItInitializeOptions {
+    autoSubmit: boolean
+}
+interface LDBookItV2Props {
+    initialize: (
+        orgId: string,
+        triggerNodeName: string,
+        hiddenFieldName: string,
+        options: LDBookItInitializeOptions
+    ) => void
+    setFormProvider: React.Dispatch<React.SetStateAction<string>>
+    setFormTarget: React.Dispatch<React.SetStateAction<Element>>
 }
 
 interface ChiliPiperAPIProps {
@@ -121,6 +136,7 @@ const jQueryScript = '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
 const clearbitScript =
     '!function(e){var o=document.getElementsByTagName("script")[0];if("object"==typeof e.ClearbitForHubspot)return console.log("Clearbit For HubSpot included more than once"),!1;e.ClearbitForHubspot={},e.ClearbitForHubspot.forms=[],e.ClearbitForHubspot.addForm=function(o){var t=o[0];"function"==typeof e.ClearbitForHubspot.onFormReady?e.ClearbitForHubspot.onFormReady(t):e.ClearbitForHubspot.forms.push(t)};var t=document.createElement("script");t.async=!0,t.src="https://hubspot.clearbit.com/v1/forms/pk_a66b9ed76e62c713c06aab39bfae7234/forms.js",o.parentNode.insertBefore(t,o),e.addEventListener("message",function(o){if("hsFormCallback"===o.data.type&&"onFormReady"===o.data.eventName)if(document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\').length>0)e.ClearbitForHubspot.addForm(document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\'));else if(document.querySelectorAll("iframe.hs-form-iframe").length>0){document.querySelectorAll("iframe.hs-form-iframe").forEach(function(t){t.contentWindow.document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\').length>0&&e.ClearbitForHubspot.addForm(t.contentWindow.document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\'))})}})}(window);'
 const chiliPiperScript = '//js.chilipiper.com/marketing.js'
+const bookItScript = '//cdn.leandata.com/js-snippet/ld-book-v2.js'
 
 // Gets a script element by its id
 const getScriptElement = (id: string): HTMLScriptElement | Element | null => document.querySelector(`#${id}`)
@@ -133,6 +149,7 @@ const getScriptElement = (id: string): HTMLScriptElement | Element | null => doc
  * @param innerHTML - whether or not to assign the script to the script tag's src attribute or append to it's innerHTML
  * @returns - an HTML Script Element
  */
+
 const loadScriptElement = (
     id: string,
     script: string,
@@ -145,6 +162,7 @@ const loadScriptElement = (
             const newScriptElement = document.createElement('script')
             newScriptElement.setAttribute('id', id)
             newScriptElement.setAttribute('async', '')
+
             if (innerHTML) {
                 newScriptElement.innerHTML = script
             } else {
@@ -162,7 +180,8 @@ const loadScriptElement = (
  *
  * @param chiliPiper - boolean to enable ChiliPiper
  */
-const loadAllScripts = async (chiliPiper?: boolean): Promise<void> => {
+
+const loadAllScripts = async (chiliPiper?: boolean, bookIt?: boolean): Promise<void> => {
     const loadingScripts: Promise<HTMLScriptElement | Element | null>[] = []
 
     if (!window.hbspt) {
@@ -176,6 +195,9 @@ const loadAllScripts = async (chiliPiper?: boolean): Promise<void> => {
     }
     if (chiliPiper && !window.ChiliPiper) {
         loadingScripts.push(loadScriptElement('chilipiper', chiliPiperScript))
+    }
+    if (bookIt && !window.LDBookItV2) {
+        loadingScripts.push(loadScriptElement('bookIt', bookItScript))
     }
 
     await Promise.all(loadingScripts)
@@ -191,6 +213,24 @@ const loadAllScripts = async (chiliPiper?: boolean): Promise<void> => {
  * @param CreateHubSpotFormProps.onFormSubmitted - callback after data is sent
  * @param CreateHubSpotFormProps.inlineMessage - form submission message
  */
+
+function trySettingFormTarget(form: HTMLFormElement): void {
+    if (window?.LDBookItV2 && window.LDBookItV2.setFormTarget) {
+        window.LDBookItV2.setFormTarget(form.id ? form : form[0])
+        const _ld_scriptEl = document.createElement('script')
+        _ld_scriptEl.src = 'https://cdn.leandata.com/js-snippet/ld-book-v2.js'
+        _ld_scriptEl.addEventListener('load', () => {
+            window.LDBookItV2?.initialize('00D3t000000hHKtEAM', 'New Prospect', 'ld_bookit_log_id', {
+                autoSubmit: true,
+            })
+            window.LDBookItV2?.setFormProvider('hubspot_embed')
+        })
+        document.body.append(_ld_scriptEl)
+    } else {
+        window.setTimeout(() => trySettingFormTarget(form), 2000)
+    }
+}
+
 function createHubSpotForm({ formId, onFormReady, onFormSubmitted, inlineMessage }: CreateHubSpotFormProps): void {
     const hbsptCreateForm = (): void => {
         window.hbspt?.forms.create({
@@ -264,6 +304,7 @@ const onFormReady = (form: HTMLFormElement): void => {
  * @param options.overrideFormShorten - a boolean prop to override `display:none` made by clearbitScript
  * @returns - a div element with an id where the HubSpot form renders
  */
+
 export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
     formId,
     masterFormName,
@@ -272,6 +313,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
     chiliPiper,
     overrideFormShorten,
     form_submission_source,
+    bookIt,
 }) => {
     const router = useRouter()
 
@@ -306,12 +348,12 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
 
         // Load all scripts
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        loadAllScripts(chiliPiper)
+        loadAllScripts(chiliPiper, true)
 
         if (!formCreated) {
             createHubSpotForm({
                 formId: formId || masterFormId,
-                onFormReady,
+                onFormReady: trySettingFormTarget ?? onFormReady,
                 onFormSubmitted,
                 inlineMessage,
             })
@@ -327,7 +369,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
             if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
                 const lead = data.data.reduce((object, item) => Object.assign(object, { [item.name]: item.value }), {})
 
-                // Prevent schdulder from opening twice
+                // Prevent schedulder from opening twice
                 const scheduler = document.querySelector('.chilipiper-popup')
 
                 if (!window.ChiliPiper || scheduler) {
@@ -350,10 +392,24 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
             window.addEventListener('message', handleMessage)
         }
 
+        const onScriptLoad = (): void => {
+            if (window.LDBookItV2) {
+                // Perform initialization and setup
+                window.LDBookItV2.initialize('00D3t000000hHKtEAM', 'New Prospect', 'ld_bookit_log_id', {
+                    autoSubmit: true,
+                })
+                window.LDBookItV2.setFormProvider('hubspot_embed')
+            }
+        }
+        if (bookIt) {
+            window.addEventListener('message', onScriptLoad)
+        }
+
         return () => {
             window.removeEventListener('message', handleMessage)
+            window.removeEventListener('message', onScriptLoad)
         }
-    }, [formId, masterFormName, onFormSubmitted, inlineMessage, chiliPiper, formCreated])
+    }, [formId, masterFormName, onFormSubmitted, inlineMessage, chiliPiper, formCreated, bookIt])
 
     return (
         <div
