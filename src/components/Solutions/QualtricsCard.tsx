@@ -42,7 +42,7 @@ export const QualtricsCard = (): JSX.Element => (
         </div>
         <div className="flex max-h-[24px] whitespace-nowrap md:self-end md:px-0 lg:px-10">
             <Link
-                href="https://sourcegraph.com/case-studies/lyft-monolith-to-microservices"
+                href="https://sourcegraph.com/case-studies/qualtrics-speeds-up-unit-tests-and-code-understanding-with-cody"
                 title="Case study"
                 className="btn p-0 text-violet-500 hover:underline"
             >
