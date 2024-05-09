@@ -8,7 +8,7 @@ published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/may-2024/sourcegraph-may2024-release-image.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/may-2024/sourcegraph-may2024-release-image.png
 changelogItems:
-  - description: "Increased both the performance and the default timeout for language usage insights, which will significantly reduce pain for customers with large repos. Both are configurable using environment variables on the frontend container."
+  - description: "Improved the performance of language stats insights by 50-70%, significantly reducing pain for customers with large repos. The timeout for language stats insights has also been raised from 3 to 5 minutes. Both are configurable using environment variables on the frontend container."
     url: https://sourcegraph.com/docs/code_insights/explanations/administration_and_security_of_code_insights#language-stats-performance-configuration
     category: Code Insights
   - description: "Improved Zoekt CPU usage and scalability for customers with a large number of repos."
