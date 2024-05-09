@@ -28,7 +28,7 @@ const ComparePage: FunctionComponent = () => (
         className="bg-gray-50"
     >
         <ContentSection>
-            <div className="mt-10 flex flex-col gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12 md:mt-0 md:flex-row">
+            <div className="mt-10 flex flex-col gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12">
                 {/* left side */}
                 <div>
                     <h3 className="text-xl">May 9</h3>
