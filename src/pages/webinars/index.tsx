@@ -30,7 +30,7 @@ const ComparePage: FunctionComponent = () => (
         <ContentSection>
             <div className="mt-10 flex flex-row gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12 md:mt-0 md:flex-row">
                 {/* left side */}
-                {/*}
+                {/* 
                 <div className="w-full">
                     <h3 className="text-xl">May 9</h3>
                     <h2 className="mt-4">Getting Started with AI Coding</h2>
