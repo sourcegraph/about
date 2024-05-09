@@ -1,28 +1,22 @@
-import { FunctionComponent, useEffect, useRef } from 'react'
-
-import classNames from 'classnames'
-import Link from 'next/link'
+import { FunctionComponent, useEffect } from 'react'
 
 import {
     ContentSection,
     Heading,
     Layout,
-    HubSpotForm,
-    CodyAutocomplete,
     CodyImageTab,
     CodyCta,
     CodyIde,
     CodyChat,
-    ContextAnimation,
     CodyPartners,
     CodyTestimonials,
+    Video,
+    SourcegraphPowered,
 } from '../../components'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
 import { EventName, getEventLogger } from '../../hooks/eventLogger'
 import { useWindowWidth } from '../../hooks/windowWidth'
-
-import styles from '../../styles/CustomHubspotForm.module.scss'
 
 declare global {
     interface Window {
@@ -57,8 +51,6 @@ const DemoCodyPage: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
 
-    const formContainerRef = useRef<HTMLDivElement | null>(null)
-
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (): void => openModal('cody')
@@ -81,14 +73,13 @@ const DemoCodyPage: FunctionComponent = () => {
                 image: 'https://about.sourcegraph.com/cody/cody-og.png',
             }}
             headerColorTheme="purple"
-            childrenClassName={isMobile ? 'sg-bg-gradient-cody-mobile' : 'sg-bg-gradient-cody'}
             displayChildrenUnderNav={true}
             customFooterClassName="!bg-transparent"
         >
             {/* Hero Section */}
             <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 md:mt-0 md:pt-[22px] md:pb-9">
-                <div className="flex flex-col justify-between gap-y-6 px-sm lg:flex-row lg:gap-x-[70px] lg:gap-y-0">
-                    <div className="w-full max-w-[656px]">
+                <div className="flex flex-col items-center justify-between gap-y-6 px-sm lg:flex-row lg:gap-x-6 lg:gap-y-0">
+                    <div className="w-full md:max-w-[554px] lg:max-w-[616px]">
                         <div className="center flex items-center gap-x-4">
                             <Heading size="h1" className="!text-[53px] text-white md:!text-[62px]">
                                 Meet Cody{' '}
@@ -118,38 +109,61 @@ const DemoCodyPage: FunctionComponent = () => {
                                 Get Cody for free
                             </button>
                         </div>
-                        <p className="mt-6 text-[14px] text-violet-300 opacity-70">
-                            By registering, you agree to our{' '}
-                            <Link
-                                className="text-violet-300 underline"
-                                target="_blank"
-                                href="https://about.sourcegraph.com/terms"
-                            >
-                                Terms of Service
-                            </Link>{' '}
-                            and{' '}
-                            <Link
-                                className="text-violet-300 underline"
-                                target="_blank"
-                                href="https://about.sourcegraph.com/terms/privacy"
-                            >
-                                Privacy Policy
-                            </Link>
-                        </p>
                     </div>
-                    <div className={classNames('w-full max-w-[554px]', styles.codyForm)} ref={formContainerRef}>
-                        <Heading size="h3" className="mb-4 !text-2xl font-semibold text-white">
-                            Request Cody Demo
-                        </Heading>
-                        <HubSpotForm
-                            formId="255d54c8-65db-435e-b131-d8dc4ab9ea96"
-                            onFormSubmitted={() => window?.saq?.('conv', 'KGsR2v3IRYg4bqhsRm62Hc')}
+                    <div className="w-full">
+                        <Video
+                            host="self"
+                            loop={false}
+                            controls={true}
+                            autoPlay={false}
+                            thumbnail="https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase_SplashScreen.webp"
+                            title="Cody - the AI coding assistant that knows your entire codebase"
+                            source={{
+                                mp4: 'https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase',
+                                webm: 'https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase',
+                            }}
+                            className="w-full rounded-lg"
                         />
                     </div>
                 </div>
             </ContentSection>
 
-            <CodyAutocomplete className="sg-bg-gradient-cody-hero" />
+            <ContentSection
+                parentClassName="!py-0 md:!pt-[73px] !px-0"
+                className="relative mx-auto mt-16 flex w-full flex-col gap-[15px] overflow-hidden border-y border-gray-200 border-opacity-50 bg-violet-700 py-16 px-0 md:mt-0 md:flex-row md:rounded-lg md:border md:pb-[47px] md:pl-[62px] xl:max-w-[1280px]"
+            >
+                <div className="mb-[24px] flex w-full flex-col px-6 md:my-[66px] md:mb-0 md:w-[543px]">
+                    <img className="h-[46px] w-[46px]" src="/cody/completions-brand-icon.svg" alt="Cody Icon" />
+                    <Heading
+                        size="h2"
+                        className="pt-4 text-left !text-5xl font-semibold leading-10 tracking-[-1px] text-white"
+                    >
+                        Code faster with AI-assisted autocomplete
+                    </Heading>
+                    <Heading
+                        size="h3"
+                        className="max-w-[510px] pt-4 pb-5 text-left !text-lg !leading-[27px] !tracking-[-0.25px] text-gray-200 md:!text-2xl md:!leading-[30px]"
+                    >
+                        Cody autocompletes single lines, or whole functions, in any programming language, configuration
+                        file, or documentation.
+                    </Heading>
+                    <div className="flex w-full items-center justify-center rounded-lg bg-gray-50 p-6 md:w-[459px]">
+                        <Heading
+                            size="h5"
+                            className="font-[590px] mb-0 w-full text-center !text-xl font-semibold !leading-[25px] !tracking-[-0.25px] text-gray-500 md:w-[313px]"
+                        >
+                            Every day, Cody helps developers write &gt; 150,000 lines of code
+                        </Heading>
+                    </div>
+                </div>
+                <div className="relative w-[670px] overflow-hidden">
+                    <img
+                        className="relative top-4 -right-4 w-[670px]"
+                        src="https://storage.googleapis.com/sourcegraph-assets/blog/single-line-autocomplete_ty-arp242.svg"
+                        alt="Cody auto complete"
+                    />
+                </div>
+            </ContentSection>
 
             <CodyIde />
 
@@ -173,32 +187,7 @@ const DemoCodyPage: FunctionComponent = () => {
                 tabContent={IMAGE_TAB_CONTENT}
             />
 
-            <ContentSection
-                parentClassName="!p-0 !m-0"
-                className="m-0 flex flex-col gap-5 px-6 py-16 md:flex-row md:justify-between md:gap-12 md:px-0 lg:py-28"
-            >
-                <div className="flex w-full flex-col md:mx-[29px] ">
-                    <Heading size="h2" className="mb-1 text-[40px] font-normal leading-10 tracking-[-1px] text-white">
-                        Sourcegraph powered <span className="cody-heading bg-clip-text text-transparent">context</span>
-                    </Heading>
-
-                    <p className="mb-0 mt-3 text-2xl font-normal leading-[30px] tracking-[-0.25px] text-white md:max-w-[501px]">
-                        Sourcegraph’s code graph and analysis tools allows Cody to autocomplete, explain, and edit your
-                        code with additional context.
-                    </p>
-                    <img
-                        src="/cody/context_illustration.svg"
-                        className="mt-6 md:max-w-[501px]"
-                        alt="cody context illustration"
-                    />
-                </div>
-                <div className="hidden md:flex">
-                    <ContextAnimation />
-                </div>
-                <div className="md:hidden md:h-[333px] md:w-[538px] md:min-w-[399px]">
-                    <img src="/cody/context_illustration_details.svg" alt="cody context illustration details" />
-                </div>
-            </ContentSection>
+            <SourcegraphPowered />
 
             <CodyCta source="Cody page" isCodyPage={true} />
         </Layout>
