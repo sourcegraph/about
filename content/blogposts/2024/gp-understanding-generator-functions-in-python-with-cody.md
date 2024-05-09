@@ -80,8 +80,8 @@ In the above code, `read_large_file` is a generator function that reads a file l
 2. The function opens the file in binary mode (`'rb'`) using the with statement, which ensures that the file is properly closed after the operation is complete.
 3. Inside the with block, the function enters an infinite loop using while True.
 4. In each iteration of the loop, the function reads a chunk of data from the file using the `file.read(chunk_size)` method. The `chunk_size` argument specifies the maximum number of bytes to read.
-5. If the chunk is empty (i.e., the end of the file has been reached), the loop is terminated using the break statement.
-6. If the chunk is not empty, it is yielded using the yield keyword, allowing the caller to consume the chunk.
+5. If the `chunk` is empty (i.e., the end of the file has been reached), the loop is terminated using the break statement.
+6. If the `chunk` is not empty, it is yielded using the yield keyword, allowing the caller to consume the `chunk`.
 
 To use this generator function, you can iterate over the chunks like this:
 
@@ -94,7 +94,7 @@ for chunk in read_large_file(file_path):
 
 This approach is memory-efficient because it reads the file line by line, only loading one line into memory at a time instead of simultaneously loading the entire file into memory. This is particularly useful when working with large files that may not fit in available memory.
 
-Note that the** ‘chunk’** yielded by the generator function is a bytes object, so you may need to decode it to a string if you're working with text data. Additionally, you can adjust the chunk_size parameter to manage the trade-off between memory usage and performance based on your specific requirements.
+Note that the `chunk` yielded by the generator function is a bytes object, so you may need to decode it to a string if you're working with text data. Additionally, you can adjust the `chunk_size` parameter to manage the trade-off between memory usage and performance based on your specific requirements.
 
 Cody AI's code search capabilities are a powerful tool for learning and understanding Python programming concepts.
 
