@@ -116,11 +116,11 @@ const DemoCodyPage: FunctionComponent = () => {
                             loop={false}
                             controls={true}
                             autoPlay={false}
-                            thumbnail="/assets/cody/Cody_the_AI_the_knows_your_codebase.webp"
+                            thumbnail="https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase_SplashScreen.webp"
                             title="Cody - the AI coding assistant that knows your entire codebase"
                             source={{
-                                mp4: '/assets/cody/Cody_the_AI_the_knows_your_codebase',
-                                webm: '/assets/cody/Cody_the_AI_the_knows_your_codebase',
+                                mp4: 'https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase',
+                                webm: 'https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase',
                             }}
                             className="w-full rounded-lg"
                         />
