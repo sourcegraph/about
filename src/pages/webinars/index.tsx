@@ -28,9 +28,10 @@ const ComparePage: FunctionComponent = () => (
         className="bg-gray-50"
     >
         <ContentSection>
-            <div className="mt-10 flex flex-col gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12 md:mt-0 md:flex-row">
+            <div className="mt-10 flex flex-row gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12 md:mt-0 md:flex-row">
                 {/* left side */}
-                <div>
+                {/*}
+                <div className="w-full">
                     <h3 className="text-xl">May 9</h3>
                     <h2 className="mt-4">Getting Started with AI Coding</h2>
                     <p className="mt-6 text-lg text-gray-600">
@@ -45,6 +46,7 @@ const ComparePage: FunctionComponent = () => (
 
                     <p className="mt-4 text-lg text-gray-600">You'll learn to be a more productive developer!</p>
                 </div>
+                *}
 
                 {/* right side */}
                 <div className="relative h-0 w-full overflow-hidden rounded pb-[56.25%]">
