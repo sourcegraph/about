@@ -66,5 +66,6 @@ Sourcegraph 5.4.0 now supports syntax highlighting for the Pkl configuration lan
   alt="Toggling Pkl syntax highlighting"
 />
 
+<br/>
 
 Sourcegraph 5.4.0 is now available and users self-hosting Sourcegraph can upgrade their instances. Sourcegraph Cloud users will receive this update within the coming days.
