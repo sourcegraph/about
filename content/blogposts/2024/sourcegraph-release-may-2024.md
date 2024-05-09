@@ -1,6 +1,6 @@
 ---
 title: "Sourcegraph May 2024 release"
-publishDate: 2024-05-07T10:00-07:00
+publishDate: 2024-05-09T10:00-07:00
 description: "The latest Sourcegraph release includes a new point-in-time search filter for Code Search."
 tags: [blog, release]
 slug: "release/May-2024"
@@ -33,6 +33,7 @@ changelogItems:
 
 Sourcegraph 5.4.0 brings improvements to Code Search with a new search filter [rev:at.time()](https://sourcegraph.com/docs/code-search/queries#structural-search) that provides point-in-time searching. This allows for searching a repo’s state at a specific timestamp rather than at a specific commit, branch, or tag.
 
+
 <Video 
   source={{
     mp4: 'blog/release-post/may-2024/rev-at-time'
@@ -40,6 +41,7 @@ Sourcegraph 5.4.0 brings improvements to Code Search with a new search filter [r
   loop={true}
   title="Searching by the new point-in-time search filter"
 />
+
 
 
 <br/>
@@ -57,6 +59,7 @@ Code Insights chart drill-downs now utilize the new point-in-time search filter 
 <br/>
 
 Sourcegraph 5.4.0 now supports syntax highlighting for the Pkl configuration language.
+
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/may-2024/Pklsyntaxhighlighting.gif"
