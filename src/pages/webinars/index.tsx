@@ -31,6 +31,37 @@ const ComparePage: FunctionComponent = () => (
             <div className="mt-10 flex flex-col gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12">
                 {/* left side */}
                 <div>
+                    <h3 className="text-xl">May 16</h3>
+                    <h2 className="mt-4">Advanced AI Coding Techniques</h2>
+                    <p className="mt-6 text-lg text-gray-600">
+                    Learn how to get the most out of Cody by diving deeper into the features and capabilities of the most powerful AI coding assistant.
+                    </p>
+
+                    <p className="mt-4 text-lg text-gray-600">
+                    This webinar will show you how to refactor code with AI, handle debugging and error resolution, and help you with code exploration and learning.
+                    </p>
+
+                    <p className="mt-4 text-lg text-gray-600">You'll learn to be a more productive developer!</p>
+                </div>
+
+                {/* right side */}
+                <div className="relative h-0 w-full overflow-hidden rounded pb-[56.25%]">
+                    <iframe
+                        title="StreamYard Embed"
+                        src="https://streamyard.com/watch/XrC9TmJ4reNx?embed=true"
+                        width="100%"
+                        height="100%"
+                        frameBorder="0"
+                        allow="autoplay; fullscreen"
+                        className="absolute left-0 top-0 h-full w-full overflow-hidden"
+                    />
+                </div>
+            </div>
+        </ContentSection>
+        <ContentSection>
+            <div className="mt-10 flex flex-col gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12">
+                {/* left side */}
+                <div>
                     <h3 className="text-xl">May 9</h3>
                     <h2 className="mt-4">Getting Started with AI Coding</h2>
                     <p className="mt-6 text-lg text-gray-600">
