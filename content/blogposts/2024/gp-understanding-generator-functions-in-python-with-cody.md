@@ -32,7 +32,7 @@ A generator function in Python is a particular type of function that returns an 
 
 ### Introduction to Cody
 
-Cody's key features are its ability to facilitate code exploration and navigation. It employs machine learning algorithms to understand code structures, dependencies, and patterns, making it easier for developers to navigate complex codebases. 
+Cody's key features are its ability to facilitate code exploration and navigation. It employs machine learning algorithms to understand code structures, dependencies, and patterns, making it easier for developers to navigate complex codebases.
 
 With Cody, you can quickly find relevant code snippets, understand how different parts of your code interact, and quickly navigate to definitions and references. Whether you're a seasoned developer or a newbie, Cody can significantly enhance your coding experience. Now, let's take this journey of understanding generator functions in Python to the next level with Cody.
 
