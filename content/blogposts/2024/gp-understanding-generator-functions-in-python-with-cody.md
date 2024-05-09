@@ -5,7 +5,7 @@ authors:
     url: https://twitter.com/Coding_Happinex
   
 publishDate: 2024-05-08T10:00-07:00
-description: "🔴"
+description: "This article aims to bridge the gap, offering a clear and comprehensive guide to understanding generator functions in Python. We'll cover what generator functions are, how they work, and provide examples to demonstrate their use."
 tags: [blog, guest-post]
 slug: "gp-understanding-generator-functions-in-python-with-cody"
 published: true
@@ -38,7 +38,7 @@ With Cody, you can quickly find relevant code snippets, understand how different
 
 ![Introduction to Cody](https://storage.googleapis.com/sourcegraph-assets/blog/gp-understanding-generator-functions-in-python-with-cody/image_001.jpg)
 
-### Demonstration of how Cody can assist in understanding and working with Generator functions
+### Demonstration of how Cody can assist in understanding and working with generator functions
 
 Let's see how Cody AI can help you navigate through generator functions. Suppose you want to create a generator that generates the Fibonacci series. Here is how you can do it:
 
@@ -54,7 +54,9 @@ The Fibonacci series is a mathematical sequence that begins with `0` and `1`, wi
 
 In the above example, `fibonacci` is a generator function. The yield keyword generates a series of values, pausing after each one until the next one is requested by calling `next()` on the generator object.
 
-Using Cody, you can ask specific questions or request clarifications about this code. For instance, you might ask, "**Identify potential areas for improvement related to code smells, readability, maintainability, performance, security, etc.”**
+Using Cody, you can ask specific questions or request clarifications about this code. For instance, you might ask
+
+> Identify potential areas for improvement related to code smells, readability, maintainability, performance, security, etc.
 
 ![Using Cody, you can ask specific questions](https://storage.googleapis.com/sourcegraph-assets/blog/gp-understanding-generator-functions-in-python-with-cody/image_002.jpg)
 
