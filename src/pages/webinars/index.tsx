@@ -31,7 +31,7 @@ const ComparePage: FunctionComponent = () => (
             <div className="mt-10 flex flex-col gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12">
                 {/* left side */}
                 <div>
-                    <h3 className="text-xl">May 16</h3>
+                    <h3 className="text-xl">May 16 <span className="text-white bg-violet-400 rounded-lg px-2 py-1 text-xs">Upcoming</span></h3>
                     <h2 className="mt-4">Advanced AI Coding Techniques</h2>
                     <p className="mt-6 text-lg text-gray-600">
                     Learn how to get the most out of Cody by diving deeper into the features and capabilities of the most powerful AI coding assistant.
@@ -62,7 +62,7 @@ const ComparePage: FunctionComponent = () => (
             <div className="mt-10 flex flex-col gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12">
                 {/* left side */}
                 <div>
-                    <h3 className="text-xl">May 9</h3>
+                    <h3 className="text-xl">May 9 <span className="text-white rounded-lg px-2 py-1 text-xs bg-vermillion-300">On-Demand</span></h3>
                     <h2 className="mt-4">Getting Started with AI Coding</h2>
                     <p className="mt-6 text-lg text-gray-600">
                         Learn how to get started with AI coding and how to use Sourcegraph Cody to get the most out of
