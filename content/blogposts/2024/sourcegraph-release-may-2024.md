@@ -25,6 +25,8 @@ changelogItems:
 
 ---
 
+Sourcegraph provides visibility into massive codebases across every code host, and with the release of 5.4.0 this extends across time, too. The new rev:at.time() filter gives you full context into how your codebase has evolved over time and lets you pinpoint code at any point in the past, while improved Code Insights charts now let you drill down to an exact timestamp.
+
 <br/>
 
 ### Point-in-time search filter for Code Search
@@ -62,7 +64,7 @@ Code Insights chart drill-downs now use the new point-in-time search filter to m
   source={{
     mp4: 'blog/release-post/may-2024/code-insights-rev_at-time-search'
   }}
-  loop={true}
+  controls={true}
   title="Using the new point-in-time filter to drill down in a code insight"
 />
 
@@ -77,9 +79,12 @@ Code Insights chart drill-downs now use the new point-in-time search filter to m
 Sourcegraph 5.4.0 now supports syntax highlighting for the Pkl configuration language.
 
 
-<Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/may-2024/Pklsyntaxhighlighting.gif"
-  alt="Toggling Pkl syntax highlighting"
+<Video 
+  source={{
+    mp4: 'blog/release-post/may-2024/pkl-syntax-highlighting'
+  }}
+  loop={true}
+  title="Pkl syntax highlighting in Sourcegraph"
 />
 
 <br/>
