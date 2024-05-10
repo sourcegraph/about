@@ -56,7 +56,7 @@ The new filter works with both timestamps and natural language:
 
 <br/>
 
-Code Insights chart drill-downs now utilize the new point-in-time search filter to more accurately represent the results that produced a data point on a chart. Previously a diff search was used to show the difference between a selected point in time on a chart and the one before it, but Code Insights can now show a repository’s state at that exact timestamp. This functionality is useful for those searching large repositories or repositories with lots of history.
+Code Insights chart drill-downs now use the new point-in-time search filter to more accurately represent the results that produced a data point on a chart. Previously a diff search was used to show the difference between a selected point in time on a chart and the one before it, but Code Insights can now show a repository’s state at that exact timestamp. This functionality is useful for searching large repositories or repositories with lots of history.
 
 <Video 
   source={{
