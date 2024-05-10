@@ -1,6 +1,13 @@
 ---
 title: "Sourcegraph May 2024 release"
 publishDate: 2024-05-10T10:00-07:00
+authors:
+  - name: Alex Isken
+    url: https://handbook.sourcegraph.com/team/#alex-isken
+  - name: Justin Dorfman
+    url: https://handbook.sourcegraph.com/team/#justin-dorfman
+  - name: Kelvin Yap
+    url: https://handbook.sourcegraph.com/team/#sts=Kelvin%20Yap
 description: "The latest Sourcegraph release includes a new point-in-time search filter for Code Search, plus new Code Insights drill-downs to see exactly what your codebase looked like at given timestamps."
 tags: [blog, release]
 slug: "release/May-2024"
@@ -63,6 +70,7 @@ Code Insights chart drill-downs now use the new point-in-time search filter to m
     mp4: 'blog/release-post/may-2024/code-insights-rev_at-time-search'
   }}
   controls={true}
+  autoPlay={false}
   title="Using the new point-in-time filter to drill down in a code insight"
 />
 
