@@ -20,12 +20,9 @@ changelogItems:
   - description: "Search Jobs now supports diff, commit, and path searches. Before, only file searches were supported."
     url:
     category: Source
- 
-
-
 ---
 
-Sourcegraph provides visibility into massive codebases across every code host, and with the release of 5.4.0 this extends across time, too. The new rev:at.time() filter gives you full context into how your codebase has evolved over time and lets you pinpoint code at any point in the past, while improved Code Insights charts now let you drill down to an exact timestamp.
+Sourcegraph provides visibility into massive codebases across every code host, and with the release of 5.4.0 this extends across time, too. The new `rev:at.time()` filter gives you full context into how your codebase has evolved over time and lets you pinpoint code at any point in the past, while improved Code Insights charts now let you drill down to an exact timestamp.
 
 <br/>
 
