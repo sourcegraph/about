@@ -45,7 +45,7 @@ The new filter works with both timestamps and natural language:
 - `rev:at.time(3 days ago)`
 - `rev:at.time(2022-05-05)`
 
-
+<br/>
 
 <Video 
   source={{
