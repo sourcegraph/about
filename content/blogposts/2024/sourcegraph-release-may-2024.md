@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph May 2024 release"
 publishDate: 2024-05-10T10:00-07:00
-description: "The latest Sourcegraph release includes a new point-in-time search filter for Code Search."
+description: "The latest Sourcegraph release includes a new point-in-time search filter for Code Search, plus new Code Insights drill-downs to see exactly what your codebase looked like at given timestamps."
 tags: [blog, release]
 slug: "release/May-2024"
 published: true
