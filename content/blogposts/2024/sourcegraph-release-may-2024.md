@@ -1,6 +1,6 @@
 ---
 title: "Sourcegraph May 2024 release"
-publishDate: 2024-05-09T10:00-07:00
+publishDate: 2024-05-10T10:00-07:00
 description: "The latest Sourcegraph release includes a new point-in-time search filter for Code Search."
 tags: [blog, release]
 slug: "release/May-2024"
