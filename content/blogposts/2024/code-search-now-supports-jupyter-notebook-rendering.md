@@ -6,7 +6,7 @@ authors:
     url: https://handbook.sourcegraph.com/team/#alex-isken
   - name: Justin Dorfman
     url: https://handbook.sourcegraph.com/team/#justin-dorfman
-description: "Sourcegraph's Code Search now supports read-only rendering of Jupyter Notebooks (.ipynb files), allowing users to view rich text, mathematics, plots, and media directly in the file view. "
+description: "Sourcegraph's Code Search now supports read-only rendering of Jupyter Notebooks (.ipynb files), allowing users to view rich text, and media directly in the file view. "
 tags: [blog]
 slug: "code-search-now-supports-jupyter-notebook-rendering.md"
 published: true
@@ -16,9 +16,9 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/code-search-
 
 We are excited to announce Code Search now has read-only support for all `.ipynb` files aka Jupyter Notebooks. This update comes to Sourcegraph thanks to a community contribution from Dyma Solovei.
 
-Jupyter Notebook (formerly known as the IPython Notebook) is an interactive computational environment in which you can combine code execution, rich text, mathematics, plots, and rich media.
+Jupyter Notebook (formerly known as the IPython Notebook) is an interactive computational environment in which you can combine code execution, rich text, and rich media.
 
-Before this update, Sourcegraph rendered these files as JSON. Now, you can view rich text, mathematics, plots, and rich media directly in the file view. The only thing you won’t be able to do is execute code.
+Before this update, Sourcegraph rendered these files as JSON. Now, you can view rich text, and rich media directly in the file view. The only thing you won’t be able to do is execute code.
 
 This update is available now on [sourcegraph.com/search](http://Sourcegraph.com/search), our public code search utility, and it’ll be coming soon to Sourcegraph Enterprise instances.
 
