@@ -31,7 +31,7 @@ export const ScalableSection: FunctionComponent = () => (
                 </div>
                 <div>
                     <p className="mb-0 font-sans text-[40px] font-semibold leading-[93.75px] -tracking-[0.25px] sm:text-[75px]">
-                        100,000+
+                        600,000+
                     </p>
                     <Heading size="h3" className="!leading-[30px] !tracking-[-0.25px]">
                         Repositories at finance industry customer
