@@ -7,7 +7,7 @@ authors:
   - name: Justin Dorfman
     url: https://handbook.sourcegraph.com/team/#justin-dorfman
 description: "Sourcegraph's Code Search now supports read-only rendering of Jupyter Notebooks (.ipynb files), allowing users to view rich text, mathematics, plots, and media directly in the file view. "
-tags: [blog, release]
+tags: [blog]
 slug: "code-search-now-supports-jupyter-notebook-rendering.md"
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/code-search-now-supports-jupyter-notebook-rendering/code-search-now-supports-jupyter-notebook-rendering-og.jpg
