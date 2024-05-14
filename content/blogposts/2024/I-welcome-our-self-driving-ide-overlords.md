@@ -3,7 +3,7 @@ title: "I, for one, welcome our new Self-Driving IDE overlords"
 authors:
   - name: Steve Yegge
     url: https://handbook.sourcegraph.com/team/#steve-yegge
-publishDate: 2024-05-13T10:00-07:00
+publishDate: 2024-05-14T10:00-07:00
 description: "I’ve got something new for you today. At least, it’s new to me, and hopefully it’s new to most of you as well. It is a powerful idea that is emerging in the Coding Assistant space, as we build out the Cody experience and learn our way around this new world. "
 tags: [blog]
 slug: 'i-for-one-welcome-our-new-self-driving-ide-overlords'
