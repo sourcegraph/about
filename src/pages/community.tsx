@@ -16,6 +16,12 @@ const socialMediaStyles = 'text-xl text-gray-400 hover:text-gray-300 transition-
 const events = {
     upcoming: [
         {
+            title: 'AI Dev Tools Night',
+            location: 'San Francisco, CA',
+            date: 'Jun 24, 2024',
+            link: 'https://lu.ma/v7u0t96p',
+        },
+        {
             title: 'designFAO',
             location: 'Portugal',
             date: 'Oct 11, 2024',
