@@ -12,19 +12,15 @@ description: "Cody for VS Code v1.18 is now available."
 tags: [blog]
 slug: "cody-vscode-1-18-0-release"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-16-release/cody-vscode-1.18.0-og-image.jpg
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-18-release/cody-vscode-1.18.0-og-image.jpg
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-18-release/cody-vscode-1.18.0-og-image.jpg
 --- 
 
-[Cody for VS Code v1.18](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) is now available. 
+[Cody for VS Code v1.18](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) is now available. This update adds GPT-4o support for Cody Pro users, the super fast new model from OpenAI. We’ve also added a new way for you to add files to Cody chat context directly from your file tree.
 
-<YouTube
-  id="?"
-  showTitle={true}
-/>
+## GPT-4o support for Cody Pro
 
-## GPT-4o
-
+## Add files as context directly from the file tree
 
 ## Changelog
 
