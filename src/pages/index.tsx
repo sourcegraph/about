@@ -62,9 +62,8 @@ const Home: FunctionComponent = () => {
                             <Heading size="h1">Cody</Heading>
                         </div>
                         <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
-                            Write, fix, and maintain code with the most powerful & accurate AI coding assistant. Cody
-                            uses the code graph to understand your entire codebase and help developers focus on writing
-                            and shipping code.
+                            Write and fix code faster with Cody, the AI coding assistant. Cody uses code search and
+                            codebase context to help you ship code without the toil.
                         </Heading>
                     </div>
                     <div className="pb-8">
@@ -329,7 +328,7 @@ const Home: FunctionComponent = () => {
                             </Heading>
                             <p className="mb-0 text-lg text-[#FFFFFFCC]">
                                 Cody Enterprise provides additional security, scalability, and control for your
-                                organization. Unlimited usage and context-awareness of your entire codebase.
+                                organization. Unlimited usage and context retrieval of your entire codebase.
                             </p>
                             <div className="mt-8 flex flex-col items-center gap-4 md:flex-row">
                                 <Link
