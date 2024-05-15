@@ -119,7 +119,7 @@ The historical driver for our protocol design was that we wanted the VS Code Cod
 
 To make a very long story short, what we came up with is probably closest in spirit to LSP. Our Cody client backend acts a bit like an advanced LSP server, but instead of serving up code intelligence metadata, it mediates interactions with the AI.
 
-The fastest approach for the VS Code Cody team was to code directly against [VS Code’s API](https://code.visualstudio.com/api/references/vscode-api), without worrying about some intermediate facade that we’d be building in parallel for other clients. So the Cody platform engineers, led by the inimitable , didn’t bother with an intermediate parallel API. They just made VS Code’s API the platform.
+The fastest approach for the VS Code Cody team was to code directly against [VS Code’s API](https://code.visualstudio.com/api/references/vscode-api), without worrying about some intermediate facade that we’d be building in parallel for other clients. So the Cody platform engineers, led by the inimitable Olaf Geirrson, didn’t bother with an intermediate parallel API. They just made VS Code’s API the platform.
 
 A good extension API should be general. It should be able to hook into just about anything the IDE can do, augment or change it, and bring entirely new functionality altogether, possibly in novel ways suitable to the new domain. Nearly all IDEs have an extension API that can do all these things, and as such could have been our design archetype. But nearly all of them made decisions, both in their APIs and in their extension languages, that [haven’t aged all that well](https://docs.oracle.com/javase/tutorial/uiswing/).
 
