@@ -78,7 +78,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
                     })}
                 >
                     Cody Enterprise provides additional security, scalability, and control for your organization.
-                    Unlimited usage and context retrieval of your entire codebase.
+                    Unlimited usage and context retrieval for your entire codebase.
                 </Heading>
                 <div className="flex max-w-[356px] flex-col flex-wrap gap-4 md:flex-row">
                     <Link
