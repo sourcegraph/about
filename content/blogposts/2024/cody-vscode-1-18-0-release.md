@@ -56,6 +56,12 @@ If you don’t already have a Cody chat window open, this option will appear as 
   alt="Adding context to Cody chat from the file tree"
 />
 
+## 🧪 Experimental model support including Gemini 1.5 Pro
+
+You can now add experimental models to Cody using your own API key, including [Google's latest version of Gemini 1.5 Pro](https://blog.google/technology/developers/gemini-gemma-developer-updates-may-2024/).
+
+This feature is experimental and available for Cody Free & Pro users. [Read the docs](https://sourcegraph.com/docs/cody/clients/install-vscode#experimental-models) on how to enable this in your VS Code user settings config and [leave questions and feedback on the support forum post](https://community.sourcegraph.com/t/gemini-1-5-pro-support-experimental-feature/290).
+
 ## Changelog
 
 See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.18.0) and [GitHub releases](https://github.com/sourcegraph/cody/releases) for a complete list of changes.
