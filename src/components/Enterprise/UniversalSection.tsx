@@ -4,7 +4,7 @@ import { ContentSection, Heading } from '..'
 
 import { DevPlatformsSection } from './DevPlatformsSection'
 
-export const UniversalSection: FunctionComponent = () => (
+export const UniversalSection: FunctionComponent = () => 
     <ContentSection
         className="flex max-w-[1232px] flex-col justify-between overflow-hidden  rounded-2xl  border-1 border-gray-200 bg-white px-6 md:flex-row md:px-16"
         parentClassName="md:px-[80px] !py-0"
@@ -15,10 +15,9 @@ export const UniversalSection: FunctionComponent = () => (
                 Universal
             </Heading>
             <p className="mb-0 text-[24px] leading-[30px] -tracking-[0.25px]">
-                You don't have to compromise. Sourcegraph works with all major code hosts and IDEs to understand all
-                your code.
+                You don't have to compromise. Sourcegraph works with all major code hosts and many of the most popular IDEs.
             </p>
         </div>
         <DevPlatformsSection />
     </ContentSection>
-)
+
