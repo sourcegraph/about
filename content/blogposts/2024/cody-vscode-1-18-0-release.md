@@ -12,8 +12,8 @@ description: "Cody for VS Code v1.18 is now available. We’ve added GPT-4o supp
 tags: [blog]
 slug: 'cody-vscode-1-18-0-release'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-18-release/cody-vscode-1.18.0-og-image.jpg
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-18-release/cody-vscode-1.18.0-og-image.jpg
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-18-release/cody-vscode-1.18.0-og-image.jpeg
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-18-release/cody-vscode-1.18.0-og-image.jpeg
 ---
 
 [Cody for VS Code v1.18](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) is now available. This update adds GPT-4o support for Cody Pro users, the super-fast new model from OpenAI. We’ve also added a new way for you to add files to Cody chat context directly from your file tree.
@@ -26,7 +26,22 @@ From our (very early) testing, GPT-4o is a super fast and powerful model to use 
 
 We’ll roll out GPT-4o to Cody Enterprise users in a future release. You can also try out GPT-4o in [s0.dev](https://s0.dev/).
 
-[GIF of 4o]
+<Video 
+  source={{
+    mp4: 'blog/cody-vscode-1-18-release/turbo-vs-gpt-4o'
+  }}
+  loop={true}
+  title="GPT-4 Turbo vs GPT-4o performance"
+/>
+
+## The model selection window gets a refresh
+
+We’ve given the model selection dropdown a new coat of paint. Models are now organized for their strengths—speed versus accuracy—so you can make more informed decisions as you try them out for different use cases.
+
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-18-release/new-llm-menu.png"
+  alt="Cody's model selector with new layout"
+/>
 
 ## Add files as context directly from the file tree
 
@@ -34,9 +49,12 @@ Like human developers, Cody is more capable when using context relevant to a tas
 
 You can now add files as context for Cody directly from the file tree. Just right-click a file → `Add File to Cody Chat`, and the file path will populate as an `@-mention `in the chat window.
 
-If you don’t already have a Cody chat window open, this option will appear as `right-click` → `New Chat with File.`
+If you don’t already have a Cody chat window open, this option will appear as right click → `New Chat with File.`
 
-[Feature GIF]
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-18-release/right-click-context.png"
+  alt="Adding context to Cody chat from the file tree"
+/>
 
 ## Changelog
 
