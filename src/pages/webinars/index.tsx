@@ -27,11 +27,41 @@ const ComparePage: FunctionComponent = () => (
         }
         className="bg-gray-50"
     >
+
+<ContentSection>
+            <div className="mt-10 flex flex-col gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12">
+                {/* left side */}
+                <div>
+                    <h3 className="text-xl">May 23 <span className="text-white bg-violet-400 rounded-lg px-2 py-1 text-xs">Upcoming</span></h3>
+                    <h2 className="mt-4">Live Coding with AI</h2>
+                    <p className="mt-6 text-lg text-gray-600">
+                    Join <a href="https://twitter.com/chris__sev" target="_blank">Chris Sev</a> as he live codes a new feature for <a href="https://s0.dev" target="_blank">s0.dev</a>. 
+                    </p>
+
+                    <p className="mt-4 text-lg text-gray-600">
+                    We'll use Cody every step of the way using autocomplete, chat, and commands. This will be a great way to see how AI can help write and document code from start to finish.
+                    </p>
+                </div>
+
+                {/* right side */}
+                <div className="relative h-0 w-full overflow-hidden rounded pb-[56.25%]">
+                    <iframe
+                        title="StreamYard Embed"
+                        src="https://streamyard.com/watch/jgB6guKQKQw2?embed=true"
+                        width="100%"
+                        height="100%"
+                        frameBorder="0"
+                        allow="autoplay; fullscreen"
+                        className="absolute left-0 top-0 h-full w-full overflow-hidden"
+                    />
+                </div>
+            </div>
+        </ContentSection>
         <ContentSection>
             <div className="mt-10 flex flex-col gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12">
                 {/* left side */}
                 <div>
-                    <h3 className="text-xl">May 16 <span className="text-white bg-violet-400 rounded-lg px-2 py-1 text-xs">Upcoming</span></h3>
+                    <h3 className="text-xl">May 16 <span className="text-white rounded-lg px-2 py-1 text-xs bg-vermillion-300">On-Demand</span></h3>
                     <h2 className="mt-4">Advanced AI Coding Techniques</h2>
                     <p className="mt-6 text-lg text-gray-600">
                     Learn how to get the most out of Cody by diving deeper into the features and capabilities of the most powerful AI coding assistant.
