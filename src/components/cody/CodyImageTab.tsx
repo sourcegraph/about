@@ -17,7 +17,8 @@ export const CodyImageTab: FunctionComponent<{
             desktop: string
         }
     }[]
-}> = ({ icon, headerText, description, tabContent }) => {
+    isLight?: boolean
+}> = ({ icon, headerText, description, tabContent, isLight = false }) => {
     const [selectedContentIndex, setSelectedContentIndex] = useState(0)
     const windowWidth = useWindowWidth()
     const isSmallTablet = windowWidth > 1140
@@ -25,20 +26,37 @@ export const CodyImageTab: FunctionComponent<{
     return (
         <ContentSection
             parentClassName="!px-0 !pb-0"
-            className={classNames(
-                ' h-[auto] overflow-hidden border-y border-white border-opacity-20 bg-violet-700 md:rounded-lg md:border p-6 md:py-0  md:pt-8 md:pb-0 md:pl-[60px]',
-                {
-                    'h-[1080px] md:h-auto': isSmallTablet,
-                }
-            )}
+            className={classNames('h-[auto] overflow-hidden md:rounded-lg md:border md:py-0 md:pt-8 md:pb-0', {
+                'h-[1080px] border-y md:h-auto': isSmallTablet,
+                'border-y border-white border-opacity-20 bg-violet-700 p-6 md:pl-[60px]': !isLight,
+                'mx-[24px] rounded-[8px] border border-gray-200 bg-[#FFFFFF] py-6 md:mx-auto md:pl-[29px]': isLight,
+            })}
         >
             <div>
-                <img className="h-[48px] w-[48px]" src={icon} alt="Cody logo" />
-                <Heading size="h2" className="mt-[18px] !text-4xl text-white">
+                <img
+                    className={classNames('h-[48px] w-[48px]', { 'mx-6 mt-[7px] md:mt-[39px]': isLight })}
+                    src={icon}
+                    alt="Cody logo"
+                />
+                <Heading
+                    size="h2"
+                    className={classNames('mt-[18px]', {
+                        '!text-4xl text-white': !isLight,
+                        'px-6 !text-[36px] !font-semibold !leading-[40px] !tracking-[-1px] text-[#0F111A] md:!text-[40px]':
+                            isLight,
+                    })}
+                >
                     {headerText}
                 </Heading>
                 {typeof description === 'string' ? (
-                    <p className="mt-[18px] mb-0 text-lg text-gray-200">{description}</p>
+                    <p
+                        className={classNames('mt-[18px] mb-0 text-lg', {
+                            'px-6 text-[#343A4D]': isLight,
+                            'text-gray-200': !isLight,
+                        })}
+                    >
+                        {description}
+                    </p>
                 ) : (
                     description
                 )}
@@ -48,17 +66,23 @@ export const CodyImageTab: FunctionComponent<{
                         'flex-col': !isSmallTablet,
                     })}
                 >
-                    <div className="mb-8 flex min-w-fit flex-grow flex-col gap-[18px] md:mt-6 md:mb-0">
+                    <div
+                        className={classNames('mb-8 flex min-w-fit flex-grow flex-col gap-[18px] md:mt-6 md:mb-0', {
+                            'mx-6': isLight,
+                        })}
+                    >
                         {tabContent.map((content, index) => (
                             <button
                                 key={index}
                                 onClick={() => setSelectedContentIndex(index)}
-                                className={classNames(
-                                    'rounded px-[10px] py-2 text-left text-white hover:bg-violet-600 hover:bg-opacity-40 md:rounded-r-none',
-                                    {
-                                        'bg-violet-600 hover:bg-opacity-100': selectedContentIndex === index,
-                                    }
-                                )}
+                                className={classNames('rounded px-[10px] py-2 text-left md:rounded-r-none', {
+                                    'bg-violet-600 text-white hover:bg-opacity-100 ':
+                                        selectedContentIndex === index && !isLight,
+                                    'rounded-[4px] border border-gray-200 bg-none text-[#0F111A] hover:bg-opacity-100':
+                                        selectedContentIndex === index && isLight,
+                                    'text-white hover:bg-violet-600 hover:bg-opacity-40': !isLight,
+                                    'text-[#0F111A] hover:bg-[#F5F7FB] hover:bg-opacity-100': isLight,
+                                })}
                                 type="button"
                             >
                                 <Heading size="h5">{content.header}</Heading>
@@ -67,19 +91,18 @@ export const CodyImageTab: FunctionComponent<{
                         ))}
                     </div>
                     <div
-                        className={classNames(
-                            ' bottom-0 h-auto w-full max-w-[800px] md:ml-[-24px] md:mr-0 md:h-[426px] md:w-auto',
-                            {
-                                'md:absolute md:top-0 md:right-[-50px]': isSmallTablet,
-                                'pb-16': !isSmallTablet,
-                            }
-                        )}
+                        className={classNames('bottom-0 h-auto w-full md:ml-[-24px] md:mr-0 md:h-[426px] md:w-auto', {
+                            'max-w-[800px] md:absolute md:top-0 md:right-[-50px]': isSmallTablet,
+                            'flex max-w-[800px] pb-16': !isSmallTablet && !isLight,
+                            'pb-0': !isSmallTablet && isLight,
+                        })}
                     >
                         {tabContent.map((content, index) => (
                             <img
                                 key={index}
                                 className={classNames({
                                     hidden: selectedContentIndex !== index,
+                                    'h-full w-full md:h-auto md:w-auto': isLight,
                                 })}
                                 src={!isSmallTablet ? content.imageSrc.mobile : content.imageSrc.desktop}
                                 alt={content.header}
