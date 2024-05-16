@@ -2,9 +2,10 @@ import { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
 import { useRouter } from 'next/router'
+import posthog from 'posthog-js'
+import { useFeatureFlagVariantKey } from 'posthog-js/react'
 
 import {
-    ContentSection,
     Heading,
     Layout,
     HubSpotForm,
@@ -18,6 +19,7 @@ import {
     CodyTestimonials,
     SourcegraphPowered,
 } from '../components'
+import { CodyHeadline } from '../components/cody/CodyHeadline'
 import { HowCodyWorks } from '../components/cody/HowCodyWorks'
 import { ChooseYourLlmSection } from '../components/Enterprise/ChooseYourLlmSection'
 import { useAuthModal } from '../context/AuthModalContext'
@@ -72,7 +74,14 @@ const CodyPage: FunctionComponent = () => {
             'Cody supports the latest LLMs including Claude 3, GPT-4 Turbo, and Mixtral-8x7B. You can also bring your own LLM key with Amazon Bedrock and Azure OpenAI.',
     }
 
+    const userFlag = useFeatureFlagVariantKey('cody-value-headline-test')
+
+    const [flagReady, setFlagReady] = useState(false)
+
     useEffect(() => {
+        posthog.onFeatureFlags(() => {
+            setFlagReady(true)
+        })
         const eventArguments = {
             description: 'About - Cody page view',
             source: 'about-cody',
@@ -81,6 +90,22 @@ const CodyPage: FunctionComponent = () => {
         getEventLogger()?.log(EventName.VIEW_ABOUT_CODY, eventArguments, eventArguments)
     }, [])
 
+    useEffect(() => {
+        const headlineTestEventArguments = {
+            testName: 'ValueHeadlineTestEnrolled',
+            group: (userFlag as string) ?? 'undefined',
+        }
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        getEventLogger()?.log(
+            EventName.VALUE_HEADLINE_TEST_ENROLLED,
+            headlineTestEventArguments,
+            headlineTestEventArguments
+        )
+    }, [userFlag])
+
+    if (!flagReady) {
+        return <></>
+    }
     return (
         <Layout
             meta={{
@@ -95,31 +120,7 @@ const CodyPage: FunctionComponent = () => {
             customFooterClassName="!bg-transparent"
             className="w-full !overflow-hidden"
         >
-            <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 text-center md:mt-0 md:pt-[22px]">
-                <div className="mx-auto w-full px-6 md:w-[849px] lg:w-[895px]">
-                    <h1 className="mx-auto w-full pt-6 text-[48px] font-semibold leading-[48px] text-white md:text-[72px] md:leading-[86px]">
-                        Code more, type&nbsp;less
-                    </h1>
-                    <Heading
-                        size="h3"
-                        className="mx-auto mb-8 mt-6  max-w-[700px] leading-[30px] !tracking-[-0.25px] text-[#FFFFFFbb]"
-                    >
-                        Cody is a coding AI assistant that uses AI and a deep understanding of your codebase to help you
-                        write and understand code faster.
-                    </Heading>
-                    <button
-                        type="button"
-                        className="btn btn-inverted-primary px-5 py-3 text-violet-500"
-                        title="Get Cody for free"
-                        onClick={handleOpenModal}
-                    >
-                        <div className="flex items-center justify-center">
-                            <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Get
-                            Cody for free
-                        </div>
-                    </button>
-                </div>
-            </ContentSection>
+            <CodyHeadline userGroup={userFlag as string} handleOpenModal={handleOpenModal} />
 
             <CodyAutocomplete className="sg-bg-gradient-cody-hero" />
 
