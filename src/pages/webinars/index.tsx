@@ -35,7 +35,7 @@ const ComparePage: FunctionComponent = () => (
                     <h3 className="text-xl">May 23 <span className="text-white bg-violet-400 rounded-lg px-2 py-1 text-xs">Upcoming</span></h3>
                     <h2 className="mt-4">Live Coding with AI</h2>
                     <p className="mt-6 text-lg text-gray-600">
-                    Join <a href="https://twitter.com/chris__sev" target="_blank">Chris Sev</a> as he live codes a new feature for <a href="https://s0.dev" target="_blank">s0.dev</a>. 
+                    Join <a href="https://twitter.com/chris__sev" target="_blank" rel="noreferrer">Chris Sev</a> as he live codes a new feature for <a href="https://s0.dev" target="_blank" rel="noreferrer">s0.dev</a>. 
                     </p>
 
                     <p className="mt-4 text-lg text-gray-600">
