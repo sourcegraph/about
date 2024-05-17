@@ -6,7 +6,7 @@ authors:
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
 publishDate: 2024-05-17T10:00-01:00
-description: 'This update overhauls Cody’s command functionality, with new unit test, documentation, and code edit commands. We’ve also added GPT-4o support.'
+description: 'This update overhauls Cody’s command functionality with new unit test, documentation, and code edit commands. We’ve also added GPT-4o support.'
 tags: [blog]
 slug: 'cody-jetbrains-5-5-1-release'
 published: true
@@ -18,9 +18,9 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/jetbrains-5.
 
 ## Fix and refactor code with inline code edits
 
-Cody in JetBrains has grown beyond the chat window and can now edit code directly in your files! We’ve used this to power the new edit code function. You can prompt Cody to perform direct edits, like refactors or bug fixes, to any selection of code.
+Cody in JetBrains has grown beyond the chat window and can now edit code directly in your files! You can prompt Cody to perform direct edits, like refactors or bug fixes, to any selection of code.
 
-Select code to edit and press <kbd>Shift + Ctrl + Enter</kbd>. This will pop open a floating edit box where you can describe the change you want to make. You can also reposition the edit box on your screen.
+Select a code snippet (or entire file) to edit and press <kbd>Shift + Ctrl + Enter</kbd>. This will pop open a floating edit box where you can describe the change you want to make. You can also reposition the edit box on your screen.
 
 Once you submit your prompt, Cody will implement the change. You can accept, undo, or view a diff for the change. You can also iterate on your prompt and have Cody retry the change.
 
