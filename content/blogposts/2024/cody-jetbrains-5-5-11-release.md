@@ -14,7 +14,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/jetbrains-5.5.
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/jetbrains-5.5.11/cody-jetbrains-5.5.11-og-image.jpg
 ---
 
-[Cody for JetBrains v5.5.11](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) is now available! This update overhauls Cody’s command functionality, with new unit test, documentation, and code edit commands. We’ve also added GPT-4o support, giving you a super-fast LLM option for chat, commands, and inline edits.
+[Cody for JetBrains v5.5.11](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) is now available! This update overhauls Cody’s command functionality with new unit test, documentation, and code edit commands. We’ve also added GPT-4o support, giving you a super-fast LLM option for chat, commands, and inline edits.
 
 ## Fix and refactor code with inline code edits
 
