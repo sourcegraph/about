@@ -8,8 +8,8 @@ description: "It's annoying for humans to bop between tools while coding. It's i
 tags: [blog]
 slug: 'openctx-at-mentions-for-code-ai'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/OpenCtx-May2024/openctx-og-image-1.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/OpenCtx-May2024/openctx-og-image-1.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/OpenCtx-May2024/openctx-og-image.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/OpenCtx-May2024/openctx-og-image.png
 ---
 
 For devs, it’s quite annoying to switch among tons of different tools when coding: open the issue in Linear or Jira, jump into Figma, find the PR, look up the error on Sentry, check the traces on Jaeger, and so on.
