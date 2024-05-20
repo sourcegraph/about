@@ -25,7 +25,7 @@ const events = {
             title: 'AI Dev Tools Night',
             location: 'San Francisco, CA',
             date: 'Jun 24, 2024',
-            link: 'https://lu.ma/v7u0t96p',
+            link: 'https://lu.ma/ai-devtools-night',
         },
         {
             title: 'AI Engineer World’s Fair',
