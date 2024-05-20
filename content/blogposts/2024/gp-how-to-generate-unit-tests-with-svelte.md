@@ -16,7 +16,7 @@ This article will break down complex concepts in a manner that is easily underst
 
 If you have no prior knowledge of unit testing and you guessed the meaning to be the testing of unit components, then you’re 80% correct. Just before we dive into unit testing, let’s have a recap on what testing is all about. Testing, a stage in the [Software Development Life Cycle(SDLC)](https://en.wikipedia.org/wiki/Systems_development_life_cycle), entails checking a particular application for bugs and whether or not it meets the customer’s requirements.
 
-Unit Testing is a type of software testing that tests the functionality of the smallest parts of a particular application in isolation or as a **unit**. It ensures individual parts of components of an application work as expected and meet its requirements. In a bit, we’ll see how to implement this functionality and test components in a Svelte application.
+Unit Testing is a type of software testing that tests the functionality of the smallest parts of a particular application in isolation or as a **unit**. It ensures individual parts of components of an application work as expected and meets its requirements. In a bit, we’ll see how to implement this functionality and test components in a Svelte application.
 
 ## Setting up Our Environment
 
@@ -40,7 +40,7 @@ npm install -D @testing-library/svelte @testing-library/user-event vite vitest
 ```
 Here’s a quick breakdown of the library and tools we have installed in the above code:
 
-- **@testing-library/svelte**: Svelte testing library that provides the basic functionality of rendering svelte test components, querying the output, firing events with the fireEvent function, and monitoring updates.
+- **@testing-library/svelte**: Svelte testing library that provides the basic functionality of rendering svelte test components, querying the output, firing events with the `fireEvent` function, and monitoring updates.
 - **@testing-library/user-event**: a library for simulating user events(such as clicking and typing) in testing.
 - **Vitest**: a Vite test runner to run our unit tests.
 
@@ -59,7 +59,7 @@ export default defineConfig({
   },
 });
 ```
-Finally, in your package.json file, add the scripts to run your tests:
+Finally, in your `package.json` file, add the scripts to run your tests:
 ```
 "test": "npx vitest run",  
 "test:watch": "npm run test -- --watch"
@@ -123,11 +123,11 @@ And voila! We’ve successfully written our first unit test in Svelte. Don’t b
 
 First, we import the render and screen functions from the Svelte testing library(remember we installed this earlier). The render function renders the component to be tested into a simulated DOM environment while the screen function allows us to perform operations to query and interact with the rendered component. In simpler terms, the render function provides the component for the screen function to act on it.
 
-The test function takes two arguments; a string which is usually a descriptive name of how the test should behave and the actual function which contains the logic and assertions of the test case. In our test, we have the first argument of the test function as “says hello dev!” which basically implies I should expect the result to be a text that says “Hello Dev!”. It doesn’t end there. The second argument, which you can say is the most important, defines the logic that confirms whether or not a text named “Hello Dev!” is present in the DOM.
+The test function takes two arguments; a string which is usually a descriptive name of how the test should behave and the actual function which contains the logic and assertions of the test case. In our test, we have the first argument of the test function as “says hello dev!” which basically implies we should expect the result to be a text that says “Hello Dev!”. It doesn’t end there. The second argument, which you can say is the most important, defines the logic that confirms whether or not a text named “Hello Dev!” is present in the DOM.
 
 In the test function, we render our App component, which creates a version of it to be tested in a simulated DOM environment. The next logic gets a match of “Hello Dev!” and then confirms if it is in the document. Let’s see the result when we run the test.
 
-To run this test, we use the npm run test command. Remember we configured the test command in our package.json file while we were setting up our environment. Here’s the result:
+To run this test, we use the `npm run test` command. Remember we configured the test command in our package.json file while we were setting up our environment. Here’s the result:
 ![Output Demo](svelte-test-pass-1.png)
 
 And there! We have a successful test since a text named “Hello Dev!” is present in the DOM.
@@ -177,13 +177,13 @@ test("App dispatches a click event with the correct count", async () => {
   expect(button).toHaveTextContent("Clicked 2 times");
 });
 ```
-In the code above, we simulated different stages of user interaction(in this case, clicking the button) by using the fireEvent function. What we’re trying to achieve here is to get the correct count with each click event from the user. So, when we call the fireEvent, we expect the count to have increased by one, which would mean the user has successfully interacted with the button. When we run the test command on this, here’s the result:
+In the code above, we simulated different stages of user interaction(in this case, clicking the button) by using the `fireEvent` function. What we’re trying to achieve here is to get the correct count with each click event from the user. So, when we call the `fireEvent`, we expect the count to have increased by one, meaning the user has successfully interacted with the button. When we run the test command on this, here’s the result:
 ![Output Demo](svelte-test-pass-2.png)
 And there! We have a passed test on a component event.
 
 ## Testing the Context API
 
-Moving forward, let’s see how we would run unit tests on the context API in Svelte. The context API provides an efficient way for elements to communicate with each other without having to pass data and functions as props. Let’s create a logic that toggles between light and dark mode using context API. For easy readability and to have a well-structured codebase, we’ll create a separate file to handle our context data.
+Moving forward, we'll see how to run unit tests on the context API in Svelte. The context API provides an efficient way for elements to communicate with each other without having to pass data and functions as props. Let’s create a logic that toggles between light and dark mode using context API. For easy readability and to have a well-structured codebase, we’ll create a separate file to handle our context data.
 ```
 // ThemeContext.svelte
 
@@ -206,7 +206,7 @@ Moving forward, let’s see how we would run unit tests on the context API in Sv
 
 <button on:click={toggleTheme}>Toggle Theme</button>
 ```
-Here, we create the logic to control the behaviour and toggle between light and dark when the button is clicked on. We can then use this inside our App.svelte file:
+Here, we create the logic to control the behaviour and toggle between light and dark when the button is clicked on. We can then use this inside our `App.svelte` file:
 ```
 //App.svelte
 <script>
@@ -244,12 +244,11 @@ test("toggles theme between light and dark", async () => {
    expect(themeDisplay).toHaveTextContent("Current theme: light");
 });
 ```
-Similar to how we tested component events in the previous section, we use the fireEvent function to simulate a button click which controls the light and dark themes. First, we write an assertion that confirms the theme is set to a light theme when the page is loaded. If the assertion is true, then proceed to simulate a button click that should change the theme(set to light by default) to dark. We then simulate another button click which should change the theme(currently on a dark theme due to the first button click) to a light theme. If all of these assertions align with the actual behaviour, then the test passes. When we run our test, here’s the result:
+Similar to how we tested component events in the previous section, we use the `fireEvent` function to simulate a button click which controls the light and dark themes. First, we write an assertion that confirms the theme is set to a light theme when the page is loaded. If the assertion is true, then proceed to simulate a button click that should change the theme(set to light by default) to dark. We then simulate another button click which should change the theme(currently on a dark theme due to the first button click) to a light theme. If all of these assertions align with the actual behaviour, then the test passes. When we run our test, here’s the result:
 ![Output Demo](svelte-test-pass-3.png)
 There! It works as expected and the test passes.
 
 ## Automating Unit Tests
-
 Let’s face it, sometimes all we want to do is write the code for a particular functionality and see it work on a browser without worrying about writing tests. We’ve all been there. Luckily, [Cody](https://sourcegraph.com/cody), an AI code assistant comes to the rescue! Cody has a feature to generate a unit test, all you need to do is highlight the code you want to generate a unit test for and allow Cody to do its job. The great news is that it doesn’t just generate unit tests for Svelte components but also for all other languages! Let’s see how it works. We can go ahead and create a simple “Guess the number” game in Svelte:
 ```
  <script>
@@ -291,5 +290,4 @@ _Using Cody to generate unit tests_
 We can see in the screencast above that a unit test was generated for our sample code in seconds. What Cody really does is allow you to code more while typing less.
 
 ## Conclusion
-
 In this article, we learned about unit tests and how to generate unit tests in Svelte. We went further by writing a basic test, writing unit tests for component events, writing unit tests for the context API and automating the process of writing unit tests with [Cody](https://sourcegraph.com/cody). Happy Coding!
