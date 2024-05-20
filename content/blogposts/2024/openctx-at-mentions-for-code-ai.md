@@ -42,7 +42,7 @@ OpenCtx can help with all of these things by making other dev tools’ informati
 
 # Next: @-mentions for code AI to consume
 
-But the problem's getting worse. Now it’s not just human devs who need to bop between all their dev tools. Code AI tools (like our [Cody](https://cody.dev) also need to tap all these tools for context:
+But the problem's getting worse. Now it’s not just human devs who need to bop between all their dev tools. Code AI tools (like our [Cody](https://cody.dev)) also need to tap all these tools for context:
 
 - To fix the damn bug, the code AI needs to see the error message from Sentry or Splunk or Datadog.
 - To build a new feature, the code AI needs to see the Linear or Jira or GitHub issue and the Figma mocks.
