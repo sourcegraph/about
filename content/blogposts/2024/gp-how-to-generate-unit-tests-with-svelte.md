@@ -222,7 +222,7 @@ And there! We have a passed test on a component event.
 
 ## Testing the Context API
 
-Moving forward, we'll see how to run unit tests on the context API in Svelte. The context API provides an efficient way for elements to communicate with each other without having to pass data and functions as props. Let’s create a logic that toggles between light and dark mode using context API. For easy readability and to have a well-structured codebase, we’ll create a separate file to handle our context data.
+Moving forward, we'll see how to run unit tests on the context API in Svelte. The context API provides an efficient way for elements to communicate with each other without having to pass data and functions as props. Using context API, let's create a logic that toggles between light and dark mode. For easy readability and to have a well-structured codebase, we'll create a separate file to handle our context data.
 
 ```javascript
 // ThemeContext.svelte
