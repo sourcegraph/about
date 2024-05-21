@@ -62,8 +62,8 @@ const Home: FunctionComponent = () => {
                             <Heading size="h1">Cody</Heading>
                         </div>
                         <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
-                            Write and fix code faster with Cody, the AI coding assistant. Cody uses code search and
-                            codebase context to help you ship code without the toil.
+                            Ship code faster with Cody, the AI coding assistant. Cody uses advanced search and
+                            codebase context to help you write and fix code.
                         </Heading>
                     </div>
                     <div className="pb-8">
