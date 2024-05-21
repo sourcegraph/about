@@ -4,7 +4,7 @@ authors:
   - name: James Amoo
   
 publishDate: 2024-05-21T10:00-07:00
-description: "Unit testing is all about and why it's a crucial part of the software development process. Discover how to implement unit tests for individual components in a Svelte application and ensure your code is bug-free and meets requirements."
+description: "Discover how to implement unit tests for individual components in a Svelte application and ensure your code is bug-free and meets requirements."
 tags: [blog, guest-post]
 slug: "how-to-write-unit-tests-for-svelte-web-apps"
 published: true
