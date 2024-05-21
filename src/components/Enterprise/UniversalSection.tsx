@@ -15,8 +15,7 @@ export const UniversalSection: FunctionComponent = () => (
                 Universal
             </Heading>
             <p className="mb-0 text-[24px] leading-[30px] -tracking-[0.25px]">
-                You don't have to compromise. Sourcegraph works with all major code hosts and IDEs to understand all
-                your code.
+                You don't have to compromise. Sourcegraph works with all major code hosts and many of the most popular IDEs.
             </p>
         </div>
         <DevPlatformsSection />
