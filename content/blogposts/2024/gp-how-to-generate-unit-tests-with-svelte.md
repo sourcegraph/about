@@ -289,7 +289,7 @@ test("toggles theme between light and dark", async () => {
 });
 ```
 
-Similar to how we tested component events in the previous section, we use the `fireEvent` function to simulate a button click which controls the light and dark themes. First, we write an assertion that confirms the theme is set to a light theme when the page is loaded. If the assertion is true, then proceed to simulate a button click that should change the theme (set to light by default) to dark. We then simulate another button click which should change the theme (currently on a dark theme due to the first button click) to a light theme. If all of these assertions align with the actual behaviour, then the test passes. When we run our test, here’s the result:
+Similar to how we tested component events in the previous section, we use the `fireEvent` function to simulate a button click, which controls the light and dark themes. First, we write an assertion that confirms the theme is set to a light theme when the page is loaded. If the assertion is true, then proceed to simulate a button click that should change the theme (set to light by default) to dark. We then simulate another button click, which should change the theme (currently on a dark theme due to the first button click) to a light theme. If all of these assertions align with the actual behavior, then the test passes. When we run our test, here’s the result:
 
 ![Output Demo](https://storage.googleapis.com/sourcegraph-assets/blog/gp-how-to-write-unit-tests-for-svelte-web-apps/svelte-test-pass-3.png)
 
