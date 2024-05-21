@@ -328,7 +328,7 @@ const Home: FunctionComponent = () => {
                             </Heading>
                             <p className="mb-0 text-lg text-[#FFFFFFCC]">
                                 Cody Enterprise provides additional security, scalability, and control for your
-                                organization. Unlimited usage and context retrieval for your entire codebase.
+                                organization. Unlimited usage and context search for your entire codebase.
                             </p>
                             <div className="mt-8 flex flex-col items-center gap-4 md:flex-row">
                                 <Link
