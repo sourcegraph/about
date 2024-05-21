@@ -193,7 +193,7 @@ test("App dispatches a click event with the correct count", async () => {
 });
 
 ```
-In the code above, we simulated different stages of user interaction(in this case, clicking the button) by using the `fireEvent` function. What we’re trying to achieve here is to get the correct count with each click event from the user. So, when we call the `fireEvent`, we expect the count to have increased by one, meaning the user has successfully interacted with the button. When we run the test command on this, here’s the result:
+In the code above, we simulated different stages of user interaction (in this case, clicking the button) by using the `fireEvent` function. What we’re trying to achieve here is to get the correct count with each click event from the user. So, when we call the `fireEvent`, we expect the count to have increased by one, meaning the user has successfully interacted with the button. When we run the test command on this, here’s the result:
 
 ![Output Demo](svelte-test-pass-2.png)
 
