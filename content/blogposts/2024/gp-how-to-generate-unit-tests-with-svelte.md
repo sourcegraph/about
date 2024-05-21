@@ -147,13 +147,13 @@ import App from "./App.svelte";
   });
 ```
 
-And voila! We’ve successfully written our first unit test in Svelte. Don’t be scared, I’ll be explaining every bit of this code and we’ll see if the test passes or fails.
+And voila! We’ve successfully written our first unit test in Svelte. Don’t be scared. I’ll explain every bit of this code, and we’ll see if the test passes or fails.
 
 First, we import the render and screen functions from the Svelte testing library (remember we installed this earlier). The render function renders the component to be tested into a simulated DOM environment. In contrast, the screen function allows us to perform operations to query and interact with the rendered component. In simpler terms, the render function provides the component for operations by the screen function.
 
-The test function takes two arguments; a string which is usually a descriptive name of how the test should behave and the actual function which contains the logic and assertions of the test case. In our test, we have the first argument of the test function as “says hello dev!” which basically implies we should expect the result to be a text that says “Hello Dev!”. It doesn’t end there. The second argument, which you can say is the most important, defines the logic that confirms whether or not a text named “Hello Dev!” is present in the DOM.
+The test function takes two arguments: a string, which is usually a descriptive name of how the test should behave, and the actual function, which contains the logic and assertions of the test case. In our test, we have the first argument of the test function as “says hello dev!” which implies we should expect the result to be a text that says “Hello Dev!”. It doesn’t end there. The second argument, which you can say is the most important, defines the logic that confirms whether or not a text named “Hello Dev!” is present in the DOM.
 
-In the test function, we render our App component, which creates a version of it to be tested in a simulated DOM environment. The next logic gets a match of “Hello Dev!” and then confirms if it is in the document. Let’s see the result when we run the test.
+In the test function, we render our App component, which creates a version of it to be tested in a simulated DOM environment. The following logic gets a match of “Hello Dev!” and then confirms if it is in the document. Let’s see the result when we run the test.
 
 To run this test, we use the `npm run test` command. Remember we configured the test command in our `package.json` file while we were setting up our environment. Here’s the result:
 
