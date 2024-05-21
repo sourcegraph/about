@@ -342,7 +342,7 @@ The screencast above shows that a unit test was generated for our sample code in
 
 ## Conclusion
 
-In this article, we learned about unit tests and how to generate them in Svelte. We then went on to write a basic test, unit tests for component events, unit tests for the context API, and unit tests for the context API, and we automated the process of writing unit tests with [Cody](https://sourcegraph.com/cody). Happy Coding!
+In this article, we learned about unit tests and how to generate them in Svelte. We then went on to write a basic test, unit tests for component events, unit tests for the context API, and we automated the process of writing unit tests with [Cody](https://sourcegraph.com/cody). Happy Coding!
 
 ---
 
