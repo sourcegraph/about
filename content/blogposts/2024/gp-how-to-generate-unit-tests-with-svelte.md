@@ -186,7 +186,7 @@ Now that we know how to write a basic unit test in Svelte, let’s see how we wo
 
 ```
 
-This simple piece of function starts counting from 0 and increases by one every time a user clicks on the button. Now, we want to test if this works. The text should reflect the number of times the user clicks the button. Let’s see how we write a test for this in Svelte:
+This simple function starts counting from 0 and increases by one every time a user clicks on the button. Now, we want to test if this works. The text should reflect the number of times the user clicks the button. Let’s see how we write a test for this in Svelte:
 
 ```javascript
 import { render, fireEvent } from "@testing-library/svelte";
