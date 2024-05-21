@@ -26,13 +26,13 @@ This article will break down complex concepts in a manner that is easily underst
 
 ## Unit testing — What’s that about?
 
-If you have no prior knowledge of unit testing and you guessed the meaning to be the testing of unit components, then you’re 80% correct. Just before we dive into unit testing, let’s have a recap on what testing is all about. Testing, a stage in the [Software Development Life Cycle(SDLC)](https://sourcegraph.com/blog/developer-productivity-thoughts), entails checking a particular application for bugs and whether or not it meets the customer’s requirements.
+If you have no prior knowledge of unit testing and you guessed the meaning to be the testing of unit components, then you’re 80% correct. Just before we dive into unit testing, let’s have a recap on what testing is all about. Testing, a stage in the [Software Development Life Cycle (SDLC)](https://sourcegraph.com/blog/developer-productivity-thoughts), entails checking a particular application for bugs and whether or not it meets the customer’s requirements.
 
 Unit Testing is a type of software testing that tests the functionality of the smallest parts of a particular application in isolation or as a **unit**. It ensures individual parts of components of an application work as expected and meets its requirements. In a bit, we’ll see how to implement this functionality and test components in a Svelte application.
 
 ## Setting up our environment
 
-Now that we have discussed the basic concept of unit testing, we can proceed to set up our Svelte environment. In this tutorial, we’ll be using [degit](https://www.npmjs.com/package/degit?activeTab=dependencies), a project scaffolding tool, to set up our Svelte app. You can do so by running the following command in your terminal:
+Now that we have discussed the basic concept of unit testing, we can proceed to set up our Svelte environment. In this tutorial, we’ll be using [degit](https://sourcegraph.com/github.com/Rich-Harris/degit), a project scaffolding tool, to set up our Svelte app. You can do so by running the following command in your terminal:
 
 ```bash
 npx degit sveltejs/template svelte-test-app
