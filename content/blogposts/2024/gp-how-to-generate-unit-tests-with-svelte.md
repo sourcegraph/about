@@ -296,7 +296,8 @@ Similar to how we tested component events in the previous section, we use the `f
 There! It works as expected and the test passes.
 
 ## Automating unit tests
-Let’s face it, sometimes all we want to do is write the code for a particular functionality and see it work on a browser without worrying about writing tests. We’ve all been there. Luckily, [Cody](https://sourcegraph.com/cody), an AI code assistant comes to the rescue! Cody has a feature to generate a unit test, all you need to do is highlight the code you want to generate a unit test for and allow Cody to do its job. The great news is that it doesn’t just generate unit tests for Svelte components but also for all other languages! Let’s see how it works. We can go ahead and create a simple “Guess the number” game in Svelte:
+
+Let’s face it: sometimes, all we want to do is write the code for a particular functionality and see it work on a browser without worrying about writing tests. We’ve all been there. Luckily, [Cody](https://sourcegraph.com/cody), an AI code assistant, comes to the rescue! Cody has a feature to generate a unit test. All you need to do is highlight the code you want to generate a unit test and allow Cody to do its job. The great news is that it doesn’t just generate unit tests for Svelte components but also for all other languages! Let’s see how it works. We can go ahead and create a simple “Guess the number” game in Svelte:
 
 ```javascript
  <script>
@@ -331,17 +332,17 @@ Let’s face it, sometimes all we want to do is write the code for a particular 
 </main>
 ```
 
-Already thinking of how to generate a unit test for a code like this? Well, don’t. We just let Cody think and of course, generate the code. Here:
+Already thinking of how to generate a unit test for a code like this? Well, don’t. We just let Cody think and, of course, generate the code. Here:
 
 ![Output Demo](https://storage.googleapis.com/sourcegraph-assets/blog/gp-how-to-write-unit-tests-for-svelte-web-apps/screendemo.gif)
 
 _Using Cody to generate unit tests_
 
-We can see in the screencast above that a unit test was generated for our sample code in seconds. What Cody really does is allow you to code more while typing less.
+The screencast above shows that a unit test was generated for our sample code in seconds. Cody allows you to code more while typing less.
 
 ## Conclusion
 
-In this article, we learned about unit tests and how to generate unit tests in Svelte. We went further by writing a basic test, writing unit tests for component events, writing unit tests for the context API and automating the process of writing unit tests with [Cody](https://sourcegraph.com/cody). Happy Coding!
+In this article, we learned about unit tests and how to generate them in Svelte. We then went on to write a basic test, unit tests for component events, unit tests for the context API, and unit tests for the context API, and we automated the process of writing unit tests with [Cody](https://sourcegraph.com/cody). Happy Coding!
 
 ---
 
