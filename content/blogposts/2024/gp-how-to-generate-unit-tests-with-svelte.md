@@ -1,6 +1,18 @@
-# How to write unit tests for Svelte web apps
+---
+title: "How to write unit tests for Svelte web apps"
+authors:
+  - name: James Amoo
+  
+publishDate: 2024-05-21T10:00-07:00
+description: "🔴"
+tags: [blog, guest-post]
+slug: "how-to-write-unit-tests-for-svelte-web-apps"
+published: true
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/gp-exploring-data-visualization-with-d3-cody/image_og.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/gp-exploring-data-visualization-with-d3-cody/image_og.png
+---
 
-Writing codes for front end applications is undoubtedly a crucial aspect in the development of an application. However, an equally crucial aspect developers often overlook is writing tests for an application. The usability of an application is one of the main factors you should consider in development, so it is important to ensure an application is bug-free, of the best code quality, and works efficiently. We can verify this factor through testing, which basically entails testing our application to ensure it works as expected just before it gets to the end user.
+Writing code for front end applications is undoubtedly a crucial aspect in the development of an application. However, an equally crucial aspect developers often overlook is writing tests for an application. The usability of an application is one of the main factors you should consider in development, so it is important to ensure an application is bug-free, of the best code quality, and works efficiently. We can verify this factor through testing, which basically entails testing our application to ensure it works as expected just before it gets to the end user.
 
 In this article, you will learn about writing unit tests in [Svelte](https://svelte.dev/), a JavaScript framework.
 
@@ -22,29 +34,35 @@ Unit Testing is a type of software testing that tests the functionality of the s
 
 Now that we have discussed the basic concept of unit testing, we can proceed to set up our Svelte environment. In this tutorial, we’ll be using [degit](https://www.npmjs.com/package/degit?activeTab=dependencies), a project scaffolding tool, to set up our Svelte app. You can do so by running the following command in your terminal:
 
-```
+```bash
 npx degit sveltejs/template svelte-test-app
 ```
+
 Navigate to the svelte-test-app project directory:
-```
+
+```bash
 cd svelte-test-app
 ```
+
 Install the dependencies and run the command to execute the starter project:
-```
+
+```bash
 npm install
 
 npm run dev
 ```
 
 We’ll work with the [Svelte testing library](https://testing-library.com/docs/svelte-testing-library/intro/) and [Vitest](https://vitest.dev/) as a test runner. We can install these libraries by running this command:
+
 ```
 npm install -D @testing-library/svelte @testing-library/user-event vite vitest
 ```
+
 Here’s a quick breakdown of the library and tools we have installed in the above code:
 
-- **@testing-library/svelte**: Svelte testing library that provides the basic functionality of rendering svelte test components, querying the output, firing events with the `fireEvent` function, and monitoring updates.
-- **@testing-library/user-event**: a library for simulating user events(such as clicking and typing) in testing.
-- **Vitest**: a Vite test runner to run our unit tests.
+* **@testing-library/svelte**: Svelte testing library that provides the basic functionality of rendering svelte test components, querying the output, firing events with the `fireEvent` function, and monitoring updates.
+* **@testing-library/user-event**: a library for simulating user events(such as clicking and typing) in testing.
+* **Vitest**: a Vite test runner to run our unit tests.
 
 ## Further configuration
 
@@ -65,7 +83,7 @@ export default defineConfig({
 
 Finally, in your `package.json` file, add the scripts to run your tests:
 
-```
+```bash
 "test": "npx vitest run",  
 "test:watch": "npm run test -- --watch"
 ```
@@ -85,7 +103,7 @@ A test is successful and will pass if there’s a perfect match between a compon
 
 In this section, you’ll see how to write a basic unit test in Svelte. We already established that we must have a component or piece of code to be tested before we proceed to writing tests. Let’s create a simple Svelte component that renders some text:
 
-```javascript
+```html
 //App.svelte
 <script>
   export let name;
@@ -100,6 +118,7 @@ In this section, you’ll see how to write a basic unit test in Svelte. We alrea
   }
 </style>
 ```
+
 We also write this code in our `main.js` file:
 
 ```javascript
@@ -138,13 +157,13 @@ In the test function, we render our App component, which creates a version of it
 
 To run this test, we use the `npm run test` command. Remember we configured the test command in our `package.json` file while we were setting up our environment. Here’s the result:
 
-![Output Demo](svelte-test-pass-1.png)
+![Output Demo](https://storage.googleapis.com/sourcegraph-assets/blog/gp-how-to-write-unit-tests-for-svelte-web-apps/svelte-test-pass-1.png)
 
 And there! We have a successful test since a text named “Hello Dev!” is present in the DOM.
 
 An important tip to note when working with text-based tests is case sensitivity. The text in the DOM should be the exact match of the text being passed in the test function. Here’s what happens when we pass a string of “Hello dev!” instead:
 
-![Output Demo](svelte-test-fail-1.png)
+![Output Demo](https://storage.googleapis.com/sourcegraph-assets/blog/gp-how-to-write-unit-tests-for-svelte-web-apps/svelte-test-fail-1.png)
 
 As expected, the test fails because we’re searching for a string that does not exist in the DOM.
 
@@ -166,6 +185,7 @@ Now that we know how to write a basic unit test in Svelte, let’s see how we wo
 </button>
 
 ```
+
 This simple piece of function starts counting from 0 and increases by one every time a user clicks on the button. Now, we want to test if this works. The text should reflect the number of times the user clicks the button. Let’s see how we write a test for this in Svelte:
 
 ```javascript
@@ -193,9 +213,10 @@ test("App dispatches a click event with the correct count", async () => {
 });
 
 ```
+
 In the code above, we simulated different stages of user interaction (in this case, clicking the button) by using the `fireEvent` function. What we’re trying to achieve here is to get the correct count with each click event from the user. So, when we call the `fireEvent`, we expect the count to have increased by one, meaning the user has successfully interacted with the button. When we run the test command on this, here’s the result:
 
-![Output Demo](svelte-test-pass-2.png)
+![Output Demo](https://storage.googleapis.com/sourcegraph-assets/blog/gp-how-to-write-unit-tests-for-svelte-web-apps/svelte-test-pass-2.png)
 
 And there! We have a passed test on a component event.
 
@@ -270,7 +291,7 @@ test("toggles theme between light and dark", async () => {
 
 Similar to how we tested component events in the previous section, we use the `fireEvent` function to simulate a button click which controls the light and dark themes. First, we write an assertion that confirms the theme is set to a light theme when the page is loaded. If the assertion is true, then proceed to simulate a button click that should change the theme (set to light by default) to dark. We then simulate another button click which should change the theme (currently on a dark theme due to the first button click) to a light theme. If all of these assertions align with the actual behaviour, then the test passes. When we run our test, here’s the result:
 
-![Output Demo](svelte-test-pass-3.png)
+![Output Demo](https://storage.googleapis.com/sourcegraph-assets/blog/gp-how-to-write-unit-tests-for-svelte-web-apps/svelte-test-pass-3.png)
 
 There! It works as expected and the test passes.
 
@@ -312,11 +333,16 @@ Let’s face it, sometimes all we want to do is write the code for a particular 
 
 Already thinking of how to generate a unit test for a code like this? Well, don’t. We just let Cody think and of course, generate the code. Here:
 
-![Output Demo](screendemo.gif)
+![Output Demo](https://storage.googleapis.com/sourcegraph-assets/blog/gp-how-to-write-unit-tests-for-svelte-web-apps/screendemo.gif)
 
 _Using Cody to generate unit tests_
 
 We can see in the screencast above that a unit test was generated for our sample code in seconds. What Cody really does is allow you to code more while typing less.
 
 ## Conclusion
+
 In this article, we learned about unit tests and how to generate unit tests in Svelte. We went further by writing a basic test, writing unit tests for component events, writing unit tests for the context API and automating the process of writing unit tests with [Cody](https://sourcegraph.com/cody). Happy Coding!
+
+---
+
+Cody can help you code faster, improve your productivity, and unlock new knowledge. Give [Cody](https://sourcegraph.com/cody) a try today!
