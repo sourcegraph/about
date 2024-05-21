@@ -8,11 +8,11 @@ description: "🔴"
 tags: [blog, guest-post]
 slug: "how-to-write-unit-tests-for-svelte-web-apps"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/gp-exploring-data-visualization-with-d3-cody/image_og.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/gp-exploring-data-visualization-with-d3-cody/image_og.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/gp-how-to-write-unit-tests-for-svelte-web-apps/how-to-write-unit-tests-for-svelte-web-apps.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/gp-how-to-write-unit-tests-for-svelte-web-apps/how-to-write-unit-tests-for-svelte-web-apps.png
 ---
 
-Writing code for front end applications is undoubtedly a crucial aspect in the development of an application. However, an equally crucial aspect developers often overlook is writing tests for an application. The usability of an application is one of the main factors you should consider in development, so it is important to ensure an application is bug-free, of the best code quality, and works efficiently. We can verify this factor through testing, which basically entails testing our application to ensure it works as expected just before it gets to the end user.
+Writing code for front-end applications is undoubtedly a crucial aspect of application development. However, an equally crucial aspect developers often overlook is writing tests for an application. An application's usability is one of the main factors you should consider in development, so it is important to ensure it is bug-free, has the best code quality, and works efficiently. We can verify this factor through testing, which basically entails testing our application to ensure it works as expected just before it gets to the end user.
 
 In this article, you will learn about writing unit tests in [Svelte](https://svelte.dev/), a JavaScript framework.
 
