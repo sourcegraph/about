@@ -6,8 +6,8 @@ const EventsPage: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Sourcegraph Events',
-            description: 'Join us for live events .',
-            image: 'https://sourcegraph.com/assets/webinars/webinar-og.png',
+            description: 'Join us for live events.',
+            image: 'https://sourcegraph.com/assets/events/ai-dev-tools-night.png',
         }}
         hero={
             <div className="relative isolate bg-gray-50 px-6 pt-20 lg:px-8">
