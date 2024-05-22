@@ -41,8 +41,9 @@ func (opts UpdateCustomerOptions) Validate() error {`,
     '}',
 ]
 
-export const CodyAnimation: FunctionComponent<{className?: string}> = ({className}) => {
+export const CodyAnimation: FunctionComponent<{ className?: string; isLight?: boolean }> = ({ className, isLight }) => {
     const [startAnimation, setStartAnimation] = useState(false)
+    const [initialAnimationRun, setInitialAnimationRun] = useState(true)
     const [nextLine, setNextLine] = useState(false)
     const [showSuggestion, setShowSuggestion] = useState(false)
     const [applySuggestion, setApplySuggestion] = useState(false)
@@ -68,9 +69,19 @@ export const CodyAnimation: FunctionComponent<{className?: string}> = ({classNam
     const acceptHandler = (): void => {
         setTimeout(() => setApplySuggestion(true), timingFrames.frame3)
     }
+    useEffect(() => {
+        if (initialAnimationRun) {
+            const animationTimeoutId = setTimeout(() => {
+                setStartAnimation(true)
+            }, 500)
+            setInitialAnimationRun(false)
+            return () => clearTimeout(animationTimeoutId)
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
     useEffect(() => {
-        if (isCodyAnimationRefInView && !applySuggestion) {
+        if (isCodyAnimationRefInView && !applySuggestion && !initialAnimationRun) {
             setStartAnimation(true)
         }
 
@@ -80,65 +91,71 @@ export const CodyAnimation: FunctionComponent<{className?: string}> = ({classNam
             setShowSuggestion(false)
             setApplySuggestion(false)
         }
-    }, [isCodyAnimationRefInView, applySuggestion])
+    }, [isCodyAnimationRefInView, applySuggestion, initialAnimationRun])
 
     const lineNumbers = countTotalLines(codes) + 2
-    const activeLine = (showSuggestion || applySuggestion) ? lineNumbers : startAnimation ? (typingCodeLines + 1) : 1
+    const activeLine = showSuggestion || applySuggestion ? lineNumbers : startAnimation ? typingCodeLines + 1 : 1
 
     return (
-        <>
-            <div className={classNames('relative overflow-hidden md:overflow-visible', className)} ref={codyAnimationRef}>
-                <div className="relative left-[81px] mx-auto flex min-h-[412px] w-[728px] rounded-md border border-[#343A4D] bg-[#191B21] py-4 pl-4 text-sm leading-[19.6px] md:left-[0px]">
-                    <SideSection
-                        activeLine={activeLine}
-                        codyStartFrom={10}
-                        codyEndFrom={20}
-                        showCodyPointer={applySuggestion || showSuggestion}
-                        totalLines={lineNumbers}
-                    />
-                    <div className="relative ml-[9px] flex-1 ">
-                        <Line
-                            className={classNames('flex flex-row items-center ', {
-                                'cody-multiple-lines': !nextLine,
-                            })}
-                        >
-                            {startAnimation ? (
-                                <TypingAnimation
-                                    speed={16}
-                                    showCursor={!nextLine}
-                                    code={codes[0]}
-                                    onCompleted={showSuggestionHandler}
-                                    setCodeLines={setTypingCodeLines}
-                                />
-                            ) : (
-                                <div className="m-0 p-0 inline-flex">
-                                    <BlinkCursor />
-                                </div>
+        <div className={classNames('relative overflow-hidden md:overflow-visible', className)} ref={codyAnimationRef}>
+            <div
+                className={classNames(
+                    'relative left-[81px] !z-[999] mx-auto flex min-h-[412px] w-[728px] rounded-md border border-[#343A4D] py-4 pl-4 text-sm leading-[19.6px] md:left-[0px]',
+                    {
+                        'bg-[#191B21]': !isLight || isMobile,
+                        'bg-violet-700': isLight && !isMobile,
+                    }
+                )}
+            >
+                <SideSection
+                    activeLine={activeLine}
+                    codyStartFrom={10}
+                    codyEndFrom={20}
+                    showCodyPointer={applySuggestion || showSuggestion}
+                    totalLines={lineNumbers}
+                />
+                <div className="relative ml-[9px] flex-1 ">
+                    <Line
+                        className={classNames('flex flex-row items-center ', {
+                            'cody-multiple-lines': !nextLine,
+                        })}
+                    >
+                        {startAnimation ? (
+                            <TypingAnimation
+                                speed={16}
+                                showCursor={!nextLine}
+                                code={codes[0]}
+                                onCompleted={showSuggestionHandler}
+                                setCodeLines={setTypingCodeLines}
+                            />
+                        ) : (
+                            <div className="m-0 inline-flex p-0">
+                                <BlinkCursor />
+                            </div>
+                        )}
+                    </Line>
+                    {nextLine && (
+                        <Line active={nextLine && !applySuggestion} className="flex flex-row items-center">
+                            {!applySuggestion && <BlinkCursor className="ml-[-2px]" />}
+                            {showSuggestion && (
+                                <>
+                                    <CodeHighlighter highlighted={applySuggestion}>{codes[1]}</CodeHighlighter>
+                                </>
                             )}
                         </Line>
-                        {nextLine && (
-                            <Line active={nextLine && !applySuggestion} className="flex flex-row items-center">
-                                {!applySuggestion && <BlinkCursor className="ml-[-2px]" />}
-                                {showSuggestion && (
-                                    <>
-                                        <CodeHighlighter highlighted={applySuggestion}>{codes[1]}</CodeHighlighter>
-                                    </>
-                                )}
+                    )}
+                    {showSuggestion && (
+                        <>
+                            <CodeHighlighter highlighted={applySuggestion}>{codes[2]}</CodeHighlighter>
+                            <Line active={applySuggestion} className="flex flex-row items-center">
+                                <CodeHighlighter highlighted={applySuggestion}>{codes[3]}</CodeHighlighter>
+                                {applySuggestion && <BlinkCursor />}
                             </Line>
-                        )}
-                        {showSuggestion && (
-                            <>
-                                <CodeHighlighter highlighted={applySuggestion}>{codes[2]}</CodeHighlighter>
-                                <Line active={applySuggestion} className="flex flex-row items-center">
-                                    <CodeHighlighter highlighted={applySuggestion}>{codes[3]}</CodeHighlighter>
-                                    {applySuggestion && <BlinkCursor />}
-                                </Line>
-                            </>
-                        )}
-                    </div>
+                        </>
+                    )}
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
