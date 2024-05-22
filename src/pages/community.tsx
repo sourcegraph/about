@@ -4,13 +4,13 @@ import { GetStaticProps } from 'next'
 import Link from 'next/link'
 import { FaDiscord, FaGithub } from 'react-icons/fa'
 
-import { ContentSection, Layout, Tabs, Heading } from '../components'
+import { ContentSection, Layout, Heading } from '../components'
 import { PostsList } from '../components/Blog/PostsList'
+import EventsList from '../components/EventsList'
 import { buttonStyle, buttonLocation } from '../data/tracking'
 import { useLoadMoreAndSearch } from '../hooks/loadMoreAndSearch'
 import { Post, PostIndexComponentProps } from '../interfaces/posts'
 import { getAllPublishedBlogPosts } from '../lib'
-import EventsList from '../components/EventsList'
 
 const socialMediaStyles = 'text-xl text-gray-400 hover:text-gray-300 transition-colors duration-300'
 
