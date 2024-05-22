@@ -61,10 +61,9 @@ const EventsPage: FunctionComponent = () => (
                         width="100%"
                         height="450"
                         className="rounded-xl"
-                        allowFullScreen
-                        aria-hidden="false"
-                        tabIndex="0"
-                    ></iframe>
+                        allowFullScreen={false}
+                        aria-hidden={false}
+                    />
                 </div>
             </div>
         </ContentSection>
