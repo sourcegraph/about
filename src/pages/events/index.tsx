@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import { ContentSection, Layout } from '../../components'
+import EventsList from '../../components/EventsList'
 
 const EventsPage: FunctionComponent = () => (
     <Layout
@@ -86,6 +87,8 @@ const EventsPage: FunctionComponent = () => (
                 />
             </div>
         </ContentSection>
+
+        <EventsList />
     </Layout>
 )
 
